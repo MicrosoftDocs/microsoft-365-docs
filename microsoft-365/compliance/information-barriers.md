@@ -85,10 +85,9 @@ IB policies are based on [Exchange Online Address Book Policies (ABPs)](/exchang
 
 Before you define and apply IB policies, you must remove all existing Exchange address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). Once IB policies are enabled and if you have hierarchical address book enabled, all users not included in an IB segment will see the [hierarchical address book](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange online.
 
-
-
 ## Ready to get started?
 
 - [Get started with information barriers](information-barriers-policies.md)
 - [Manage IB policies](information-barriers-edit-segments-policies.md)
+- [Use multi-segment support in information barriers](information-barriers-multi-support.md)
 - [See the attributes that can be used for IB policies](information-barriers-attributes.md)

@@ -65,8 +65,7 @@ When you configure IB, you'll work with several objects and concepts.
     Your organization can have up to 5,000 segments and users can be assigned to a maximum of 10 segments. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
 
     > [!IMPORTANT]
-    > Support for 5,000 segments and assigning users to multiple segments is only available when enabling information barriers in your organization after February 15, 2023. For organization enabling information barriers after February 15, 2023, to enable assigning users to multiple segments requires an additional action to change organization information barriers mode, see [Enable multiple segment support for users (optional)](enable-multiple-segment-support-for-users-optional) for details. 
-    <br><br> Organizations that have enabled IB prior to February 15, 2023 are on the older version of information barriers and the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to February 15, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
+    > Support for 5,000 segments and assigning users to multiple segments is only available when enabling information barriers in your organization after February 15, 2023. For organization enabling information barriers after February 15, 2023, to enable assigning users to multiple segments requires an additional action to change organization information barriers mode, see [Enable multiple segment support for users (optional)](enable-multiple-segment-support-for-users-optional) for details. <br><br> Organizations that have enabled IB prior to February 15, 2023 are on the older version of information barriers and the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to February 15, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
 
 - **IB policies** determine communication limits or restrictions. When you define IB policies, you choose from two kinds of policies:
   - *Block* policies prevent one segment from communicating with another segment.
@@ -169,13 +168,9 @@ Determine which attributes in your organization's directory data you'll use to d
 ### Enable multiple segment support for users (optional)
 
 > [!IMPORTANT]
-> Support for assigning users to multiple segments is only available when enabling information barriers in your organization after February 15, 2023. <br><br> Organizations that have enabled IB prior to February 15, 2023 are on the older version of information barriers and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to February 15, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
+> Support for assigning users to multiple segments is only available when enabling information barriers in your organization after February 15, 2023. <br><br> Organizations that have enabled IB prior to February 15, 2023 are on the older version of information barriers and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to February 15, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
 
-If you want to support assigning users to multiple segments, run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps). If you enable multiple segments in your organization, you cannot revert to single segment support.
-
-```powershell
-Enable-ExoInformationBarrierMultiSegment
-```
+If you want to support assigning users to multiple segments, see [Use multi-segment support in information barriers](information-barriers-multi-segment.md)
 
 ### Define segments using the compliance portal
 
@@ -511,6 +506,7 @@ When the cmdlet finishes, Contoso is compliant with industry requirements.
 ## Resources
 
 - [Learn about information barriers](information-barriers.md)
+- [Use multi-segment support in information barriers](information-barriers-multi-support.md)
 - [Learn more about information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [Learn more about information barriers in SharePoint Online](/sharepoint/information-barriers)
 - [Learn more about information barriers in OneDrive](/onedrive/information-barriers)
