@@ -363,8 +363,6 @@ Use the Remove-OrganizationRelationship (/exchange/sharing/organization-relation
 
 You should update the targetAddress (RemoteRoutingAddress/ExternalEmailAddress) of the source on-premises users when the source tenant mailbox moves to target tenant. While mail routing can follow the referrals across multiple mail users with different targetAddresses, Free/Busy lookups for mail users MUST target the location of the mailbox user. Free/Busy lookups will not chase multiple redirects.
 
-\#TODO What should we do with the remote mailbox left behind on the source tenant? Should we tell customers to disable and create a mailuser?
-
 #### Target Exchange Organization
 
 In a Hybrid Organization after migration is complete if you want your users to have remote mailboxes on-premises then you can run `Get-MailUser -Identity <Migrate Mail User> | Enable-RemoteMailbox`
@@ -398,8 +396,6 @@ Get-Mailbox -Filter "CustomAttribute1 -like 'Cross-Tenant-Project'" -ResultSize 
 $mailboxes = Get-Content $outFileUsers
 $mailboxes | ForEach-Object {Get-Mailbox $_} | Select-Object PrimarySMTPAddress,Alias,SamAccountName,FirstName,LastName,DisplayName,Name,ExchangeGuid,ArchiveGuid,LegacyExchangeDn,EmailAddresses | Export-Clixml $outFileUsersXML
 ```
-
-\#TODO Need to test updated script
 
 ```PowerShell
 # Copy the file $outfile to the desktop of the target on-premises then run the below to create MEU in Target
@@ -655,8 +651,6 @@ ProxyTest@contoso.com          ProxyTest@contoso.com          SMTP:ProxyTest@con
 ```
 
 - When msExchRemoteRecipientType is set to 8 (DeprovisionMailbox), for on-premises MailUsers that are migrated to the target tenant, the proxy scrubbing logic in Azure will remove non-owned domains and reset the primarySMTP to an owned domain. By clearing msExchRemoteRecipientType in the on-premises MailUser, the proxy scrub logic no longer applies.
-
-  \#TODO Clarification on this one is needed. The on-premises Object does not get updated since this values is not [written back](https://learn.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized#exchange-hybrid-writeback) do we even need this line. Since even if we could change this the object in Exchange would not get updated. Since this is unsupported, we should delete this line.
 
   - Below is the full set of current service plans that include Exchange Online.
 
