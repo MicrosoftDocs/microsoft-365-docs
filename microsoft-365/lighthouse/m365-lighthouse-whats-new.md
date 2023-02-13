@@ -123,7 +123,7 @@ You can now act on the incidents and alerts shown on the **Device security** > *
 
 ### View and manage inactive user accounts
 
-Microsoft 365 Lighthouse now provides a list of all the inactive user accounts in your managed tenants. To access the list, select **Users** > **Inactive users** from the left navigation pane in Microsoft 365 Lighthouse. You can reduce security risks by using this list to track and clean up accounts that are still enabled but that haven't been used in the past six months.
+Microsoft 365 Lighthouse now provides a list of all the inactive user accounts in your managed tenants. To access the list, select **Users** > **Inactive users** in the left navigation pane in Microsoft 365 Lighthouse. You can reduce security risks by using this list to track and clean up accounts that are still enabled but that haven't been used in the past six months.
 
 ### Microsoft Edge policy deployment
 
@@ -209,7 +209,7 @@ Now that Microsoft 365 Lighthouse is in General Availability, we require our cur
 
 ### Granular Delegated Access Permissions (GDAP) roles
 
-Microsoft 365 Lighthouse now includes the capability for MSPs to use Granular Delegated Admin Privileges (GDAP) roles. With the latest update, MSPs can leverage GDAP roles for their technicians that enable the principle of least privilege access in Microsoft 365 Lighthouse. This capability reduces the risks inherent in the broad permissions of the Delegated Access Permissions (DAP) role of the Admin Agent by enabling granular controls on the customers' data and settings that each technician will be able to work with.
+Microsoft 365 Lighthouse now includes the capability for MSPs to use Granular Delegated Admin Privileges (GDAP) roles. With the latest update, MSPs can leverage GDAP by assigning roles to their technicians to enforce the principle of least privilege access in Microsoft 365 Lighthouse. This capability reduces the risks inherent in the broad permissions of the Delegated Access Permissions (DAP) role of the Admin Agent by enabling granular controls on the customers' data and settings that each technician will be able to work with.
 
 To learn more about GDAP in Microsoft 365 Lighthouse, see [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md).
 
@@ -304,7 +304,7 @@ We've made some changes to the tenant filtering experience to help you quickly v
 
 ### In-product email workflows to communicate with users
 
-We've made it easier to communicate with users in your customer tenants about actions they're required to take. From the list of users not registered for multifactor authentication (MFA) or self-service password reset, you can now select one or more users and send them an email message using a downloadable email template.
+We've made it easier to communicate with users in your customer tenants about actions they're required to take. From the list of users not registered for multifactor authentication (MFA) or self-service password reset (SSPR), you can now select one or more users and send them an email message using a downloadable email template.
 
 ### Capability to take action on noncompliant devices
 

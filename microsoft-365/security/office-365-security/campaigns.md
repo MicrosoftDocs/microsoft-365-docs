@@ -297,7 +297,7 @@ The tabs in the campaign details view allow you to further investigate the campa
 
 <sup>\*</sup> Clicking on this value opens a new flyout that contains more details about the specified item (user, URL, etc.) on top of the campaign details view. To return to the campaign details view, click **Done** in the new flyout.
 
-### Attitional Actions
+### Additional Actions
 
 The buttons at the bottom the campaign details view allows you to investigate and record details about the campaign:
 
