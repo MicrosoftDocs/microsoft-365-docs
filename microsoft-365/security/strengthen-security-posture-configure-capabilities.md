@@ -38,4 +38,4 @@ This table includes information on the capabilities you can configure within the
 
 ## Next step
 
-- Proceed to [Phase 2: Assess and protect](strengthen-security-posture-assess-protect.md)
+- [Phase 2: Assess and protect](strengthen-security-posture-assess-protect.md)
