@@ -215,8 +215,6 @@ For standard retention labels (they don't mark items as a [record or regulatory 
 
 - Admins and end users can manually change or remove an existing retention label that's applied on content.
 
-- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with one possible exception: The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed.
-
 - When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with two possible exceptions:
 
   - The existing label is configured to automatically apply a different retention label at the end of the retention period.
