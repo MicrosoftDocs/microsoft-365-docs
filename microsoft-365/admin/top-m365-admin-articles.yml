@@ -11,7 +11,7 @@ metadata:
   ms.author: sharik #Required; microsoft alias of author; optional team alias.
   manager: scotv
   ms.date: 02/02/2023 #Required; mm/dd/yyyy format.
-  ms.localizationpriority: high
+  ms.localizationpriority: medium
   ms.custom: 
   - VSBFY23
   - AdminSurgePortfolio

@@ -9,9 +9,10 @@ metadata:
   ms.service: bookings #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   author: dmaguire #Required; your GitHub user alias, with correct capitalization.
-  ms.author: dmaguire #Required; microsoft alias of author; optional team alias.
+  ms.author: camillepack #Required; microsoft alias of author; optional team alias.
   manager: scotv
   audience: Admin
+  ms.localizationpriority: high
   ms.collection: 
   - scotvorg
   ms.date: 07/21/2020 #Required; mm/dd/yyyy format.

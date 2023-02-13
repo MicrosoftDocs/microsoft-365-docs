@@ -11,6 +11,7 @@ f1.keywords:
 ms.reviewer: TracyTughanMSFT
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 ---
 

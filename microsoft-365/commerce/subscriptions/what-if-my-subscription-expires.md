@@ -9,7 +9,7 @@ ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Tier1 
 - scotvorg

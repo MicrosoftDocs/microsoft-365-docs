@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 6/29/2018
 audience: Admin
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:

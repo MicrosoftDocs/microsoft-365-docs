@@ -9,7 +9,7 @@ ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - highpri
 - Strat_O365_Enterprise

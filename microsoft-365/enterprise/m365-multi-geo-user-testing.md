@@ -12,6 +12,7 @@ f1.keywords:
 ms.date: 
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ---

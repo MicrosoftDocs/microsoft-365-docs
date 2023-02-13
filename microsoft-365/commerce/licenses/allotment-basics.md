@@ -9,7 +9,7 @@ ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
-ms.localizationpriority: null
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - scotvorg

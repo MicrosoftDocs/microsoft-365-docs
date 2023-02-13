@@ -2,7 +2,7 @@
 title: "Session timeouts for Microsoft 365"
 ms.author: tracyp
 author: MSFTTracyP
-manager: scotv
+manager: dansimp
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: reference

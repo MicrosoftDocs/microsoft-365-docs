@@ -13,6 +13,7 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 ms.collection: scotvorg
+ms.localizationpriority: medium
 description: The roadmap to set up device management for Microsoft 365.
 ---
 

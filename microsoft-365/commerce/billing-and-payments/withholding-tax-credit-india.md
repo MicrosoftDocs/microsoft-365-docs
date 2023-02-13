@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
-ms.localizationpriority: null
+ms.localizationpriority: medium
 ms.collection: 
 - Tier2
 - scotvorg
