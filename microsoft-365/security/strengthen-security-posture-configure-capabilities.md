@@ -1,6 +1,6 @@
 ---
 
-title: "Strengthen your security posture Phase 1: Configure capabilities"
+title: "Strengthen your security posture - Configure capabilities"
 f1.keywords:
 - security posture
 - strengthen security posture
@@ -26,7 +26,7 @@ ms.collection:
 
 # Strengthen your security posture - Configure capabilities
 
-Welcome to **Phase 1: Configure capabilities** to **[Strengthen your security posture](../security/security-posture-solution-overview.md)**.
+Welcome to Phase 1 of [Strengthen your security posture](../security/security-posture-solution-overview.md): **Configure capabilities**.
 
 This table includes information on the capabilities you can configure within the Microsoft 365 Defender portal to discover and protect the devices in your organization against threats.
 

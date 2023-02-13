@@ -1,6 +1,6 @@
 ---
 
-title: "Strengthen your security posture Phase 3: Investigate and improve"
+title: "Strengthen your security posture - Investigate and improve"
 f1.keywords:
 - security posture
 - strengthen security posture
@@ -24,9 +24,9 @@ ms.collection:
 - tier1
 ---
 
-# Strengthen your security posture - Phase 3: Investigate and improve
+# Strengthen your security posture - Investigate and improve
 
-Welcome to **Phase 3: Investigate and improve** in our **[Strengthen your security posture](../security/security-posture-solution-overview.md)** solution.
+Welcome to Phase 3 of [Strengthen your security posture](../security/security-posture-solution-overview.md): **Investigate and improve**.
 
 This article describes the following capabilities that you can use to measure your current security posture and actions you can take to start improving it:
 

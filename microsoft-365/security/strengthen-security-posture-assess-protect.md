@@ -1,6 +1,6 @@
 ---
 
-title: "Strengthen your security posture Phase 2: Assess and protect"
+title: "Strengthen your security posture - Assess and protect"
 f1.keywords:
 - security posture
 - strengthen security posture
@@ -24,9 +24,9 @@ ms.collection:
 - tier1
 ---
 
-# Strengthen your security posture - Phase 2: Assess and protect
+# Strengthen your security posture - Assess and protect
 
-Welcome to **Phase 2: Assess and protect** in our **[Strengthen your security posture](../security/security-posture-solution-overview.md)** solution.
+Welcome to Phase 2 of [Strengthen your security posture](../security/security-posture-solution-overview.md): **Assess and protect**.
 
 Central to understanding your security posture is having a comprehensive inventory of all your assets. This article describes the following capabilities that you can use to get an accurate view of the assets in your network and ways to help you protect them:
 

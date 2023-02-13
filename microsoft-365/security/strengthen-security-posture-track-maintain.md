@@ -1,6 +1,6 @@
 ---
 
-title: "Strengthen your security posture Phase 4: Track and maintain"
+title: "Strengthen your security posture - Track and maintain"
 f1.keywords:
 - security posture
 - strengthen security posture
@@ -24,9 +24,9 @@ ms.collection:
 - tier1
 ---
 
-# Strengthen your security posture - Phase 4: Track and maintain
+# Strengthen your security posture - Track and maintain
 
-Welcome to **Phase 4: Track and maintain** in our **[Strengthen your security posture](../security/security-posture-solution-overview.md)** solution.
+Welcome to Phase 4 of [Strengthen your security posture](../security/security-posture-solution-overview.md):**Track and maintain**.
 
 This phase provides guidance on how you can continue to assess and protect your organization with the following features:
 
