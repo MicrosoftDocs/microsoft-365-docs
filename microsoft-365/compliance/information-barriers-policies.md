@@ -65,20 +65,20 @@ When you configure IB, you'll work with several objects and concepts.
     Your organization can have up to 5,000 segments and users can be assigned to a maximum of 10 segments. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
 
     > [!IMPORTANT]
-    > Support for 5,000 segments and assigning users to multiple segments is only available when enabling information barriers in your organization after January 31, 2023. For organization enabling information barriers after January 31, 2023, to enable assigning users to multiple segments requires an additional action to change organization information barriers mode, see [Enable multiple segment support for users (optional)](enable-multiple-segment-support-for-users-optional) for details. 
-    <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
+    > Support for 5,000 segments and assigning users to multiple segments is only available when enabling information barriers in your organization after February 15, 2023. For organization enabling information barriers after February 15, 2023, to enable assigning users to multiple segments requires an additional action to change organization information barriers mode, see [Enable multiple segment support for users (optional)](enable-multiple-segment-support-for-users-optional) for details. 
+    <br><br> Organizations that have enabled IB prior to February 15, 2023 are on the older version of information barriers and the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to February 15, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
 
 - **IB policies** determine communication limits or restrictions. When you define IB policies, you choose from two kinds of policies:
   - *Block* policies prevent one segment from communicating with another segment.
   - *Allow* policies allow one segment to communicate with only certain other segments.
 
     > [!NOTE]
-    > **For organizations that have enabled IB prior to January 31, 2023**: Non-IB groups and users **will not be visible** to users included in IB segments and policies for *allow* policies. If you need non-IB groups and users to be visible to users included in IB segments and policies, you must use *block* policies. <br><br> **For organizations that have enabled IB after to January 31, 2023**: Non-IB groups and users **will be visible** to users included in IB segments and policies for *allow* policies.
+    > **For organizations that have enabled IB prior to February 15, 2023**: Non-IB groups and users **will not be visible** to users included in IB segments and policies for *allow* policies. If you need non-IB groups and users to be visible to users included in IB segments and policies, you must use *block* policies. <br><br> **For organizations that have enabled IB after to February 15, 2023**: Non-IB groups and users **will be visible** to users included in IB segments and policies for *allow* policies.
 
 - **Policy application** is done after all IB policies are defined, and you're ready to apply them in your organization.
 - **Visibility of non-IB users and groups**: Non-IB users and groups are users and groups excluded from IB segments and policies. Depending on when you configure IB policies in your organization and the type of IB policies (block or allow), the behavior for these users and group will differ in Microsoft Teams, SharePoint, OneDrive, and in your global address list.
-    - **For organizations that have enabled IB prior to January 31, 2023**: For users defined in *allow* policies, non-IB groups and users won't be visible to users included in IB segments and policies. For users defined in *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
-    - **For organizations that have enabled IB after to January 31, 2023**: For users defined in *allow* and *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
+    - **For organizations that have enabled IB prior to February 15, 2023**: For users defined in *allow* policies, non-IB groups and users won't be visible to users included in IB segments and policies. For users defined in *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
+    - **For organizations that have enabled IB after to February 15, 2023**: For users defined in *allow* and *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
 - **Group support**. Only Modern Groups are currently supported in IB and Distribution Lists/Security Groups are treated as non-IB groups.
 - **Hidden/disabled user accounts**. For hidden/disabled accounts in your organization, the *HiddenFromAddressListEnabled* parameter is automatically set to *True* when the users accounts are hidden or disabled. In IB-enabled organizations, these accounts are prevented from communicating with all other user accounts.
 
@@ -108,8 +108,8 @@ In addition to the required subscriptions and permissions, make sure that the fo
 - **Verify audit logging is enabled**: In order to look up the status of an IB policy application, audit logging must be turned on. Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step. For more information, see [Turn the audit log search on or off](audit-log-enable-disable.md).
 
 - **Remove existing Exchange Online address book policies (optional)**:
-    - **For organizations that have enabled IB prior to January 31, 2023**: Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
-    - **For organizations that have enabled IB after to January 31, 2023**: Information barriers is no longer based on Exchange Online Address Book Policies (ABPs). Organizations using ABPs will not have any impact to the existing ABPs when enabling information barriers.
+    - **For organizations that have enabled IB prior to February 15, 2023**: Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
+    - **For organizations that have enabled IB after to February 15, 2023**: Information barriers is no longer based on Exchange Online Address Book Policies (ABPs). Organizations using ABPs will not have any impact to the existing ABPs when enabling information barriers.
 
 - **Manage using PowerShell (optional)**: IB segments and policies can be defined and managed in the compliance portal, but you can also use the Office 365 Security & Compliance PowerShell if preferred or needed. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters if you choose to use PowerShell to configure and manage IB segments and policies. You'll also need the Azure Active Directory PowerShell module if you choose this configuration option.
   - [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
@@ -159,7 +159,7 @@ When you have your initial list of needed groups and policies, proceed to identi
 In addition to your initial list of policies, make a list of segments for your organization. Users who will be included in IB policies should belong to at least one segment. Users can be assigned to multiple segments if needed. You can have up to 5,000 segments in your organization and each segment can have only one IB policy applied.
 
 > [!IMPORTANT]
-> A user can only be in one segment for organizations that have enabled IB prior to January 31, 2023 or organizations enabling IB after January 31, 2023 with IB mode being *Single*.
+> A user can only be in one segment for organizations that have enabled IB prior to February 15, 2023 or organizations enabling IB after February 15, 2023 with IB mode being *Single*.
 
 Determine which attributes in your organization's directory data you'll use to define segments. You can use *Department*, *MemberOf*, or any of the supported IB attributes. Make sure that you have values in the attribute you select for users. For more information, see the [supported attributes for IB](information-barriers-attributes.md).
 
@@ -169,7 +169,7 @@ Determine which attributes in your organization's directory data you'll use to d
 ### Enable multiple segment support for users (optional)
 
 > [!IMPORTANT]
-> Support for assigning users to multiple segments is only available when enabling information barriers in your organization after January 31, 2023. <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
+> Support for assigning users to multiple segments is only available when enabling information barriers in your organization after February 15, 2023. <br><br> Organizations that have enabled IB prior to February 15, 2023 are on the older version of information barriers and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to February 15, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
 
 If you want to support assigning users to multiple segments, run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps). If you enable multiple segments in your organization, you cannot revert to single segment support.
 
@@ -446,7 +446,7 @@ For more information about IB modes and how they're configured across services, 
 Information barriers policies allow administrators to enable or disable search restrictions in the people picker. By default, the people picker restriction is enabled for IB policies. For example, IB policies that block two specific users from communication can also restrict the users from seeing each other when using the people picker.
 
 > [!IMPORTANT]
-> Support for enabling or disabling search restrictions is only available when enabling information barriers in your organization after January 31, 2023. <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and cannot enable or disable search restrictions. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
+> Support for enabling or disabling search restrictions is only available when enabling information barriers in your organization after February 15, 2023. <br><br> Organizations that have enabled IB prior to February 15, 2023 are on the older version of information barriers and cannot enable or disable search restrictions. Organizations with information barriers configured prior to February 15, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
 
 To disable the people picker search restriction using PowerShell, complete the following steps:
 
@@ -507,55 +507,6 @@ Contoso defines three IB policies, as described in the following table:
 With segments and policies defined, Contoso applies the policies by running the **Start-InformationBarrierPoliciesApplication** cmdlet.
 
 When the cmdlet finishes, Contoso is compliant with industry requirements.
-
-## Example scenario 2: North School District's schools, segments, and policies
-
-The North School District has two schools, School 1 and School 2. The district policy is to allow students and teachers to communicate with each other only if they are both in same school. For example, a student and teacher that are both in School 1 can communicate, but a student in School 1 cannot communicate with a teacher in School 2.
-
-For this scenario, multiple segments are configured to support this district policy:
-
-### North School District's schools and plan
-
-North School District's has two schools:
-
-| **Segment** | **Allowed communication** | **Prevented communication** |
-|:------------|:--------------------------|:----------------------------|
-| School 1 | Students and teachers in School 1 | Students and teachers in School 2 |
-| School 2 | Students and teachers in School 2 | Students and teachers in School 1 |
-||||
-
-For this structure, North School District's plan includes three IB policies:
-
-1. An IB policy designed to prevent 
-2. Another IB policy to prevent 
-3. An IB policy designed to allow 
-
-### North School District's defined segments
-
-North School District will use the *Department* attribute in Azure Active Directory to define segments, as follows:
-
-| Segment | Segment Definition |
-|:-------|:-------------------|
-| School1 | `New-OrganizationSegment -Name "School1" -UserGroupFilter "Department -eq 'School1'"` |
-| School2 | `New-OrganizationSegment -Name "School2" -UserGroupFilter "Department -eq 'School2'"`  |
-| AllTeachers | `New-OrganizationSegment -Name "AllTeachers" -UserGroupFilter "MemberOfGroup -eq 'AllTeachersgroup@northschoolsdistrict.com'"` |
-||||
-
-With the segments defined, Contoso proceeds to define the IB policies.
-
-### North School District's IB policies
-
-North School District defines three IB policies, as described in the following table:
-
-| Policy | Policy Definition |
-|:-------|:------------------|
-| **Policy 1: Students and teachers in School 1 can communicate with each other** | `New-InformationBarrierPolicy -Name School1Policy -SegmentsAllowed 'School1' -AssignedSegment 'School1' -State Active` <p> In this example, the IB policy is called *School1Policy*. When this policy is active and applied, it will enable students and teachers in School 1 to communicate with each other. This policy is a one-way policy; it won't prevent students and teachers in School 1 from communicating with School 2. For that, Policy 2 is needed. |
-| **Policy 2: Students and teachers in School 2 can communicate with each other** | `New-InformationBarrierPolicy -Name School2Policy -SegmentsAllowed 'School2' -AssignedSegment 'School2' -State Active` <p> In this example, the IB policy is called *School2Policy*. When this policy is active and applied, it will enable students and teachers in School 2 to communicate with each other. |
-| **Policy 3: Teachers in different schools can communicate with each other** | `New-InformationBarrierPolicy -Name AllTeachersPolicy -SegmentsAllowed 'AllTeachers' -AssignedSegment 'AllTeachers' -State Active` <p> In this case, the IB policy is called *AllTeachersPolicy*. When this policy is active and applied, teachers in School 1 and School 2 can communicate with each other. |
-
-With segments and policies defined, the North School District applies the policies by running the **Start-InformationBarrierPoliciesApplication** cmdlet.
-
-When the cmdlet finishes, the North School District has implemented their communication policy for students and teachers.
 
 ## Resources
 

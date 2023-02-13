@@ -75,11 +75,11 @@ For more information, see [Information barriers in SharePoint](/sharepoint/infor
 
 IB policies aren't available to restrict communication and collaboration between groups and users in email messages. Only Exchange Online deployments are currently supported for IB policies. If your organization needs to define and control email communications, consider using [Exchange mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
-### Information barriers enabled after to January 31, 2023
+### Information barriers enabled after to February 15, 2023
 
 Information barriers is no longer based on Exchange Online Address Book Policies (ABPs). Organizations using ABPs will not have any impact to the existing ABPs when enabling information barriers. However, we recommend that your ABPs are consistent with the segments you configure in information barriers. You should try to avoid user visibility differences between your existing ABPs and your new information barriers configuration.
 
-### Information barriers enabled prior to January 31, 2023
+### Information barriers enabled prior to February 15, 2023
 
 IB policies are based on [Exchange Online Address Book Policies (ABPs)](/exchange/address-books/address-book-policies/address-book-policies). ABPs allow organizations to virtually assign users into specific groups in order to provide customized views of the organization's global address book (GAL). When IB policies are created, ABPs for the policies are automatically created. As IB policies are added in your organization, the structure and behavior of your GAL will change to comply with IB policies.
 
