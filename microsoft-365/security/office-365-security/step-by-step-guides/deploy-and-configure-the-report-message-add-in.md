@@ -55,7 +55,7 @@ Depending on whether you are licensed for Defender for Office 365, you'll also g
 
 1. **Login** to the Microsoft Security portal at <https://security.microsoft.com>.
 2. On the left nav, select **Settings** and choose **Email & collaboration**.
-3.  Select **User reported message settings**
+3.  Select **User reported message settings**.
 5. Ensure **Microsoft Outlook Report Message button** is toggled to **On**.
 6. Under **Send the reported messages to** choose **Microsoft** (Recommended).
 7. Ensure **Let users choose if they want to report** is unchecked and **Always report the message** is selected.
