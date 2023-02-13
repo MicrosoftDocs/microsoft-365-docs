@@ -50,7 +50,7 @@ Once you're ready, you can start onboarding these devices by choosing the **Onbo
 
 :::image type="content" source="../media/content-understanding/onboard-device-security-recommendation.png" alt-text="onboard devices security recommendation" lightbox="../media/content-understanding/onboard-device-security-recommendation.png":::
 
-To learn more about how to request remediation to onboard your devices using this security recommendation, see [request remediation](..security/defender-vulnerability-management/tvm-security-recommendation?view=o365-worldwide&branch=siosulli-security-posture-solution#how-to-request-remediation).
+To learn more about how to request remediation to onboard your devices using this security recommendation, see [request remediation](../security/defender-vulnerability-management/tvm-security-recommendation#how-to-request-remediation).
 
 ## 3. Assign device value
 
