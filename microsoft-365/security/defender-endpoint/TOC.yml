@@ -399,7 +399,7 @@
         - name: Network devices
           href: network-devices.md
         - name: Windows authenticated scan
-          href: windows-authenticated-scan.md
+          href: ../defender-vulnerability-management/windows-authenticated-scan.md
 
       - name: Devices
         items:
@@ -712,6 +712,101 @@
             href: collect-diagnostic-data-update-compliance.md
           - name: Improve performance of Microsoft Defender Antivirus
             href: tune-performance-defender-antivirus.md
+
+        - name: Troubleshooting Microsoft Defender Antivirus
+          items:
+          - name: Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus
+            href: troubleshoot-microsoft-defender-antivirus.md
+          - name: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
+            href: troubleshoot-microsoft-defender-antivirus-when-migrating.md
+
+        - name: Behavioral blocking and containment
+          items:
+          - name: Behavioral blocking and containment
+            href: behavioral-blocking-containment.md
+          - name: Client behavioral blocking
+            href: client-behavioral-blocking.md
+          - name: Feedback-loop blocking
+            href: feedback-loop-blocking.md
+
+      - name: Address false positives/negatives in Microsoft Defender for Endpoint
+        href: defender-endpoint-false-positives-negatives.md
+
+      - name: Manage device configuration
+        items:
+        - name: Increase compliance to the security baseline
+          href: configure-machines-security-baseline.md
+        - name: Optimize attack surface reduction rule deployment and detections
+          href: configure-machines-asr.md
+
+    - name: Investigate and respond to threats
+      items:
+      - name: Endpoint detection and response
+        items:
+        - name: Endpoint detection and response overview
+          href: overview-endpoint-detection-response.md
+        - name: Submit files
+          href: admin-submissions-mde.md
+        - name: Incidents queue
+          items:
+          - name: View and organize the Incidents queue
+            href: view-incidents-queue.md
+          - name: Manage incidents
+            href: manage-incidents.md
+          - name: Investigate incidents
+            href: investigate-incidents.md
+
+        - name: Alerts queue
+          items:
+          - name: Alerts queue in Microsoft 365 Defender
+            href: alerts-queue-endpoint-detection-response.md
+          - name: View and organize the Alerts queue
+            href: alerts-queue.md
+          - name: Review alerts
+            href: review-alerts.md
+          - name: Manage alerts
+            href: manage-alerts.md
+          - name: Investigate alerts
+            href: investigate-alerts.md
+          - name: Investigate files
+            href: investigate-files.md
+          - name: Investigate devices
+            href: investigate-machines.md
+          - name: Investigate an IP address
+            href: investigate-ip.md
+            items:
+            - name: Investigate connection events that occur behind forward proxies
+              href: investigate-behind-proxy.md
+          - name: Investigate a user account
+            href: investigate-user.md
+
+        - name: Take response actions
+          items:
+          - name: Take response actions on a device
+            items:
+            - name: Response actions on devices
+              href: respond-machine-alerts.md
+            - name: Manage tags
+              href: respond-machine-alerts.md#manage-tags
+            - name: Start an automated investigation
+              href: respond-machine-alerts.md#initiate-automated-investigation
+            - name: Start a Live Response session
+              href: respond-machine-alerts.md#initiate-live-response-session
+            - name: Collect investigation package
+              href: respond-machine-alerts.md#collect-investigation-package-from-devices
+            - name: Run antivirus scan
+              href: respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-devices
+            - name: Restrict app execution
+              href: respond-machine-alerts.md#restrict-app-execution
+            - name: Isolate devices from the network
+              href: respond-machine-alerts.md#isolate-devices-from-the-network
+            - name: Contain devices from the network
+              href: respond-machine-alerts.md#contain-devices-from-the-network
+            - name: Contain devices from the network
+              href: respond-machine-alerts.md#contain-devices-from-the-network
+            - name: Contain devices from the network
+              href: respond-machine-alerts.md#contain-devices-from-the-network
+
 
 
 
