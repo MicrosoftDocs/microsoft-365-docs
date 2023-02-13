@@ -183,6 +183,9 @@ Web protection helps to secure devices against web threats and protect users fro
 
 4. Include or exclude the groups you want the policy to apply to. Proceed to review and submit the policy.
 
+>[!NOTE]
+>Users need to enable location permission (which is an optional permission); this enables Defender for Endpoint to scan their networks and alert them when there are WIFI-related threats. If the location permission is denied by the user, Defender for Endpoint will only be able to provide limited protection against network threats and will only protect the users from rogue certificates.  
+
 ## Configure privacy controls
 
 Admins can use the following steps to enable privacy and not collect the domain name, app details and network information as part of the alert report for corresponding threats.
