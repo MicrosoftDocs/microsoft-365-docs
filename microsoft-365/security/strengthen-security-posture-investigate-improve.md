@@ -36,7 +36,7 @@ This article describes the following capabilities that you can use to measure yo
 
 ## 1. Review Microsoft Secure Score
 
-Microsoft Secure Score reports on the current state of an organization's security posture. To learn more about Secure Score, see [Secure Score Overview](../security/defender/microsoft-secure-score.md)
+Microsoft Secure Score reports on the current state of an organization's security posture. To learn more about Secure Score, see [Secure Score Overview](../security/defender/microsoft-secure-score.md).
 
 To get started with assessing your own security posture, see [Assess your security posture with Microsoft Secure Score](../security/defender/microsoft-secure-score-improvement-actions.md).
   
