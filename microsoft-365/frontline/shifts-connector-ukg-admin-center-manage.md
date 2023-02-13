@@ -26,7 +26,7 @@ ms.date: 10/28/2022
 
 The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate the Shifts app in Microsoft Teams with UKG Dimensions. Your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
 
-You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connector instances. After they're set up, you can manage them in the Microsoft 365 admin center. The Connector Management Console page lists each connection and connector instance that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create a new connection and connector instances or make changes to any of your existing ones. For example, you can update sync settings and team mappings.
+You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center. The Connector Management Console page lists each connection and connection instance that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create a new connection and connection instances or make changes to any of your existing ones. For example, you can update sync settings and team mappings.
 
 > [!NOTE]
 > You can also use PowerShell to manage a connection. For example, you can view an error report, change connection settings, and disable sync. To learn more, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
@@ -36,7 +36,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
 1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then under **Featured collections**, select **Frontline workers**.
 2. Select **Connector Management Console**.
 
-    Here, you'll see a list of all the connections and connector instances you've set up through the wizard or PowerShell, along with information about each one.
+    Here, you'll see a list of all the connections and connection instances you've set up through the wizard or PowerShell, along with information about each one.
 
     :::image type="content" source="media/shifts-connector-ukg-manage.png" alt-text="Screenshot of the Connector Management page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-ukg-manage.png":::
 
@@ -45,16 +45,16 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
   - To create a new connection, select **Add connection** at the top of the page.
   - To update connection settings, choose **Edit** next to an existing connection. You'll see the Connection settings pane, where you can update the settings that you want.
 
-### Manage your connector instances
+### Manage your connection instances
 
-  - To create a new connector instance, select **Create instance**.
-  - To view more details about an existing connector instance, click the instance name. On the details page, you'll see health information, including mapping and account authorization errors (if any), the list of mappings (if any), and more. You can also choose **Edit** to update settings in the wizard.
+  - To create a new connection instance, select **Create instance**.
+  - To view more details about an existing connection instance, click the instance name. On the details page, you'll see health information, including mapping and account authorization errors (if any), the list of mappings (if any), and more. You can also choose **Edit** to update settings in the wizard.
 
     :::image type="content" source="media/shifts-connector-ukg-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-ukg-manage-details.png":::
 
  For a complete list of error messages and how to resolve them, see [List of error messages](#list-of-error-messages) later in this article.
 
-  - To make changes to an existing connector instance, choose **Edit** next to the instance name. You'll be taken to the wizard, where you can update the settings that you want.
+  - To make changes to an existing connection instance, choose **Edit** next to the instance name. You'll be taken to the wizard, where you can update the settings that you want.
   
 > [!NOTE]
 > You can also go directly to the Connector Management Console page when you select the **Connector Management** button on the last page of the wizard during connection setup.
@@ -74,9 +74,9 @@ Here's the list of error messages that you may encounter and information to help
 |Error details |Resolution |
 |-------|-------|
 |This designated actor profile doesn't have team ownership privileges. |Make sure your Microsoft 365 system account (also known as designated actor) is added as a team owner.<br>If you’ve changed your Microsoft 365 system account, add that account as a team owner, and update the connection settings to use that account.|
-|This team is already mapped to an existing connector instance. |Unmap the team from the existing connector instance by using the [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap) cmdlet. Or, create a new connection to remap the team.|
-|This timezone is invalid. The timezone passed in is not using tz database format.|Make sure that the time zone is correct, and then remap the team.|
-|We can't find this connector instance.|Map the team to an existing connector instance.|
+|This team is already mapped to an existing connection instance. |Unmap the team from the existing connection instance by using the [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap) cmdlet. Or, create a new connection to remap the team.|
+|This timezone is invalid. The timezone passed in isn't using tz database format.|Make sure that the time zone is correct, and then remap the team.|
+|This connection instance couldn't be found.|Map the team to an existing connection instance.|
 |This AAD team couldn't be found.|Make sure that the team exists or create a new team.|
 
 ## Related articles
