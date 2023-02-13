@@ -261,7 +261,7 @@ After you have started applying information barriers policies, if you want to st
 ## Enable or disable user discoverability
 
 > [!IMPORTANT]
-> Support for enabling or disabling search restrictions is only available when enabling information barriers in your organization after February 15, 2023. <br><br> Organizations that have enabled IB prior to February 15, 2023 are on the older version of information barriers and cannot enable or disable search restrictions. Organizations with information barriers configured prior to February 15, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
+> Support for enabling or disabling search restrictions is only available when enabling information barriers in your organization after February 15, 2023. <br><br> Organizations that have enabled IB prior to February 15, 2023 are on the older version of information barriers and cannot enable or disable search restrictions. Organizations with information barriers configured prior to February 15, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
 
 To enable the people picker search restriction using PowerShell, complete the following steps:
 
