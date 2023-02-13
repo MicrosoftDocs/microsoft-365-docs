@@ -329,6 +329,8 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 
 > [!NOTE]
 > This capability is currently rolling out for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions that support this feature by using the [capabilities tables](sensitivity-labels-versions.md), and the row **Scope labels to files or emails**.
+> 
+> Until this capability is supported on all the platforms used by your users, they will have an inconsistent labeling experience. For example, Word on one platform doesn't display a label that they see on a different platform.
 
 This configuration is an extension to the **Items** scope, when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) in the Microsoft Purview compliance center. When you define the scope for the label, next to the **Items** check box, select **More options**.
 
@@ -353,7 +355,7 @@ Be aware that this configuration affects both client apps and services, manual l
     - If the scope doesn't include email, you won't be able to select the encryption options of **Do Not Forward** or **Encrypt-Only**.
     - If the scope doesn't include files, you won't be able to select the encryption option **In Word, PowerPoint, and Excel, prompt users to specify permissions**.
 
-In addition, if a label has been previously applied but then removed from one of the scopes, users will no longer see that label applied for the scope in apps that support this feature. It's as if the label is no longer published to them, although the label remains on the item itself.
+In addition, if a label has been previously applied but then removed from one of the scopes, users will no longer see that label applied for the scope in apps that support this feature.
 
 **Limitation for this preview:**
 
