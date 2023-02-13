@@ -144,7 +144,7 @@ Deep dive into your content to scan specific repositories for sensitive content.
     For example: `http://sp2013/SharedDocuments`
     - Specify **Documents** in the path when you want to scan all documents and all folders from a subfolder under Shared Documents.
     For example: `http://sp2013/Documents/SalesReports`
-    - Or, specify only the **FQDN** of your Sharepoint, for example `http://sp2013` to [discover and scan all SharePoint sites and subsites under a specific URL](deploy-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) and subtitles under this URL. Grant scanner **Site Collector Auditor** rights to enable this.
+    - Or, specify only the **FQDN** of your SharePoint, for example `http://sp2013` to [discover and scan all SharePoint sites and subsites under a specific URL](deploy-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) and subtitles under this URL. Grant scanner **Site Collector Auditor** rights to enable this.
     >
 
 
@@ -507,7 +507,7 @@ For more information, see [Supported PowerShell cmdlets](#supported-powershell-c
     For example: `http://sp2013/SharedDocuments`
     - Specify **Documents** in the path when you want to scan all documents and all folders from a subfolder under Shared Documents.
     For example: `http://sp2013/Documents/SalesReports`
-    - Or, specify only the **FQDN** of your Sharepoint, for example `http://sp2013` to [discover and scan all SharePoint sites and subsites under a specific URL](deploy-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) and subtitles under this URL. Grant scanner **Site Collector Auditor** rights to enable this.
+    - Or, specify only the **FQDN** of your SharePoint, for example `http://sp2013` to [discover and scan all SharePoint sites and subsites under a specific URL](deploy-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) and subtitles under this URL. Grant scanner **Site Collector Auditor** rights to enable this.
 
 
     Use the following syntax when adding SharePoint paths:
