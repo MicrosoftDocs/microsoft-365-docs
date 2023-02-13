@@ -18,7 +18,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 1/03/2023
+ms.date: 02/01/2023
 ---
 
 # Set up Microsoft 365 for frontline workers
@@ -223,7 +223,7 @@ The table below shows Teams applications commonly utilized in frontline solution
 
 **Scenarios and apps**
 
-| Scenario | Approvals | Virtual Appointments (Preview) or Bookings | Lists | Praise | Shifts | Tasks | Updates |
+| Scenario | Approvals | Virtual Appointments or Bookings | Lists | Praise | Shifts | Tasks | Updates |
 | :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [Team communication and collaboration](flw-team-collaboration.md) | &#x2705; | &nbsp; | &#x2705; | &#x2705; | &nbsp; | &#x2705; | &#x2705; |
 | [Corporate communications](flw-corp-comms.md) |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |

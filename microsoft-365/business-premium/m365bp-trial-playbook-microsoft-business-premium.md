@@ -12,7 +12,8 @@ ms.collection:
 - tier1
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 10/18/2022
+ms.date: 02/08/2023
+ms.reviewer: jomaun
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
@@ -35,7 +36,9 @@ When you [start a trial or purchase Microsoft 365 Business Premium](get-microsof
 
    After you've initiated the trial and completed the setup process, it can take up to two hours for changes to take effect.
 
-2. Use your [preset security policies](/security/office-365-security/preset-security-policies.md). These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
+2. [Turn on Multi-Factor Authentication](m365bp-conditional-access.md) (MFA). You can use security defaults to get set up right away, or use Conditional Access policies to meet more stringent requirements.
+
+3. Use your [preset security policies](../security/office-365-security/preset-security-policies.md). These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
 
    - [Safe Links](../security/office-365-security/safe-links-about.md), [Safe Attachments](../security/office-365-security/safe-attachments-about.md) and [Anti-Phishing](../security/office-365-security/anti-phishing-protection-about.md) policies that are scoped to the entire tenant or the subset of users you may have chosen during the trial setup process. (Your trial subscription is for up to 25 users.)
 

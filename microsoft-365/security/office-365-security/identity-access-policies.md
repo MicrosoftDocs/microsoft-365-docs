@@ -23,7 +23,9 @@ ms.collection:
   - highpri
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 10/08/2020
 ---
+
 # Common security policies for Microsoft 365 organizations
 
 Organizations have lots to worry about when deploying Microsoft 365 for their organization. The Conditional Access, app protection, and device compliance policies referenced in this article are based on Microsoft's recommendations and the three guiding principles of [Zero Trust](/security/zero-trust/zero-trust-overview):
@@ -326,7 +328,7 @@ The following steps will help create a Conditional Access policy to require devi
 
 #### Subscription activation
 
-Organizations using the [Subscription Activation](/windows/deployment/windows-10-subscription-activation) feature to enable users to “step-up” from one version of Windows to another, may want to exclude the Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f from their device compliance policy.
+Organizations using the [Subscription Activation](/windows/deployment/windows-10-subscription-activation) feature to enable users to "step-up" from one version of Windows to another, may want to exclude the Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f from their device compliance policy.
 
 ### Always require MFA
 

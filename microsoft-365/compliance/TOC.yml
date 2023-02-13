@@ -22,8 +22,6 @@
       href: microsoft-365-compliance-center-permissions.md
     - name: Roles and role groups in the Microsoft Purview compliance portal
       href: /microsoft-365/security/office-365-security/scc-permissions?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
-    - name: Redirecting users to the Microsoft Purview compliance portal
-      href: microsoft-365-compliance-center-redirection.md
     - name: Use your free Azure Active Directory subscription
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
@@ -256,6 +254,8 @@
           href: insider-risk-management-configure.md
         - name: Get started with insider risk settings
           href: insider-risk-management-settings.md
+        - name: Learn about policy templates
+          href: insider-risk-management-policy-templates.md
         - name: Create and manage insider risk policies
           href: insider-risk-management-policies.md
         - name: Investigate insider risk activities
@@ -270,6 +270,8 @@
             href: insider-risk-management-forensic-evidence-configure.md
           - name: Manage forensic evidence (preview)
             href: insider-risk-management-forensic-evidence-manage.md
+        - name: Help dynamically mitigate risks with Adaptive Protection (preview)
+          href: insider-risk-management-adaptive-protection.md
         - name: Learn about and configure browser signal detection
           href: insider-risk-management-browser-support.md
         - name: Review activities with the insider risk audit log
@@ -642,7 +644,7 @@
                 href: sit-defn-eu-tax-identification-number.md
               - name: Finland drivers license number
                 href: sit-defn-finland-drivers-license-number.md
-              - name: Finland european health insurance number
+              - name: Finland European health insurance number
                 href: sit-defn-finland-european-health-insurance-number.md
               - name: Finland national ID
                 href: sit-defn-finland-national-id.md
@@ -1070,6 +1072,8 @@
           href: sensitivity-labels-default-sharing-link.md
         - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
+        - name: Minimum versions for sensitivity labels in Office apps
+          href: sensitivity-labels-versions.md
     - name: Encryption
       items: 
         - name: Understand encryption
@@ -1173,10 +1177,16 @@
             href: dlp-teams-default-policy.md
           - name: Learn about data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-learn.md
-          - name: Learn about the Microsoft Purview Extension
+          - name: Learn about the Microsoft Purview Chrome Extension
             href: dlp-chrome-learn-about.md
+          - name: Learn about the Microsoft Purview Firefox Extension (preview)
+            href: dlp-firefox-extension-learn.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
+          - name: Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec
+            href: dlp-migration-assistant-for-symantec-learn.md
+          - name: Learn about adaptive protection in data loss prevention (preview)
+            href: dlp-adaptive-protection-learn.md
         - name: Plan for DLP
           items:
           - name: Plan for data loss prevention
@@ -1187,26 +1197,28 @@
             href: dlp-policy-reference.md 
         - name: Get started with DLP
           items:
+          - name: Create and deploy data loss prevention policies
+            href: dlp-create-deploy-policy.md
           - name: Configure endpoint data loss prevention settings
             href: dlp-configure-endpoint-settings.md
           - name: Get started with the default DLP policy
             href: get-started-with-the-default-dlp-policy.md
-          - name: Create a DLP policy from a template
-            href: create-a-dlp-policy-from-a-template.md
-          - name: Create, test, and tune a DLP policy
-            href: create-test-tune-dlp-policy.md
           - name: Get started with data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-get-started.md
           - name: Get started with Endpoint data loss prevention
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Information Protection
             href: device-onboarding-configure-proxy.md
-          - name: Get started with the Microsoft Purview Extension
+          - name: Get started with the Microsoft Purview Chrome Extension
             href: dlp-chrome-get-started.md
+          - name: Get started with the Microsoft Purview Firefox extension (preview)
+            href: dlp-firefox-extension-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
           - name: Get started with Data loss prevention policies for Power BI (preview)
             href: dlp-powerbi-get-started.md
+          - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec
+            href: dlp-migration-assistant-for-symantec-get-started.md  
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -1241,6 +1253,10 @@
               href: dlp-policy-tips-reference.md
             - name: Share DLP Alerts (preview)
               href: dlp-share-alerts.md
+            - name: Test your DLP policies (preview)
+              href: dlp-test-dlp-policies.md
+            - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec
+              href: dlp-migration-assistant-for-symantec-use.md       
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
@@ -1727,12 +1743,12 @@
           href: compliance-manager-assessments.md
         - name: Learn about assessment templates
           href: compliance-manager-templates.md
-        - name: Create assessment templates
+        - name: Create a custom template
           href: compliance-manager-templates-create.md
-        - name: Extend assessment templates
-          href: compliance-manager-templates-extend.md
-        - name: Modify assessment templates
+        - name: Modify a custom template
           href: compliance-manager-templates-modify.md
+        - name: Extend a Microsoft template
+          href: compliance-manager-templates-extend.md
         - name: Format template data in Excel
           href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list

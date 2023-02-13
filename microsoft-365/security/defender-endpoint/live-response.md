@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Investigate entities on devices using live response
@@ -174,7 +175,7 @@ The following commands are available for user roles that are granted the ability
 | scheduledtasks  | Shows all scheduled tasks on the device.  | Y  | N  | N  |
 | services  | Shows all services on the device.  | Y  | N  | N  |
 | startupfolders  | Shows all known files in startup folders on the device.  | Y  | N  | N  |
-| status  | Shows the status and output of specific command.  | Y  | N  | N  |
+| status  | Shows the status and output of specific command.  | Y  | Y  | Y  |
 | trace  | Sets the terminal's logging mode to debug.  | Y  | Y  | Y  |
 
 ### Advanced commands
@@ -192,7 +193,7 @@ The following commands are available for user roles that are granted the ability
 | putfile  | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.  | Y  | Y  | Y  |
 | remediate  | Remediates an entity on the device. The remediation action will vary depending on the entity type:  File: delete  Process: stop, delete image file  Service: stop, delete image file  Registry entry: delete  Scheduled task: remove  Startup folder item: delete file  NOTE: This command has a prerequisite command. You can use the -auto command in conjunction with remediate to automatically run the prerequisite command.  | Y  | Y  | Y  |
 | scan | Runs an antivirus scan to help identify and remediate malware. | N | Y | Y |
-| undo  | Restores an entity that was remediated.  | Y  | Y  | Y  |
+| undo  | Restores an entity that was remediated.  | Y  | N  | N  |
 
 ## Use live response commands
 

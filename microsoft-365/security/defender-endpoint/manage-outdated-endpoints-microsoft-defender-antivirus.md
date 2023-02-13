@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
+ms.date: 04/08/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date
