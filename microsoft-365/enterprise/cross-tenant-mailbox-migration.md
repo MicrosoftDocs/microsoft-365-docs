@@ -42,7 +42,7 @@ This article describes the process for cross-tenant mailbox moves and provides g
 
 ## Licensing
 
-Cross Tenant User Data Migration is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers. User licenses are per migration (onetime fee). Please contact your Microsoft account team for details.
+Cross Tenant User Data Migration is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers. User licenses are per migration (onetime fee) and can be assigned either on the source or target user object. This license also covers the OneDrive for Business migration. Please contact your Microsoft account team for details.
 
 Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/A3/E5/A5; Office 365 F3/E1/A1/E3/A3/E5/A5; Exchange Online; SharePoint Online; OneDrive for Business.
 
@@ -396,7 +396,11 @@ The meetings will move, however the Teams meeting URL does not update when items
 
 ### Does the Teams chat folder content migrate cross-tenant?
 
-No, the Teams chat folder content does not migrate cross-tenant. When a mailbox is migrated cross-tenant with this feature, only user visible content in the mailbox (email, contacts, calendar, tasks, and notes) is migrated.
+No, the Teams chat folder content does not migrate cross-tenant. However, once the mailbox has been migrated cross-tenant, the Teams chat folder content will be available for source tenant admins to search and export using a content search.
+
+### What content is migrated cross-tenant then?
+
+When a mailbox is migrated cross-tenant with this feature, only user visible content in the mailbox, also known as Top Of Information Store (email, contacts, calendar, tasks, and notes) and recoverable items subfolders except SubstrateHolds is migrated.  
 
 ### How can I see just moves that are cross-tenant moves, not my onboarding and off-boarding moves?
 
@@ -580,7 +584,7 @@ However, there are some things you need to be aware of.
 
 - **Issue: Post migration Teams functionality in the source tenant will be limited.** After the mailbox is migrated to the target tenant, Teams in the source tenant will no longer have access to the user's mailbox. So, if a user logs into Teams with the source tenant credential, then there will be a loss of functionality such as the inability to update your profile picture, no calendar application, and an inability to search and join public teams.
 
-- **Issue: Auto Expanded archives cannot be migrated.** The cross-tenant migration feature supports migrations of the primary mailbox and archive mailbox for a specific user. If the user in the source however has an auto expanded archive – meaning more than one archive mailbox, the feature is unable to migrate the additional archives and should fail.
+- **Issue: Auto Expanded archives cannot be migrated.** The cross-tenant migration feature supports migrations of the primary mailbox and archive mailbox for a specific user. If the user in the source however has an auto expanded archive enabled – meaning more than one archive mailbox (aux archives), the feature is able to migrate them as long as there's no more than 10 aux archives, if there's more than 10 aux archives the migration will fail.
 
 - **Issue: Cloud MailUsers with non-owned smtp proxyAddress block MRS moves background.** When creating target tenant MailUser objects, you must ensure that all SMTP proxy addresses belong to the target tenant organization. If an SMTP proxyAddress exists on the target mail user that does not belong to the local tenant, the conversion of the MailUser to Mailbox is prevented. This is due to our assurance that mailbox objects can only send mail from domains for which the tenant is authoritative (domains claimed by the tenant):
 
@@ -709,3 +713,4 @@ However, there are some things you need to be aware of.
       | Microsoft Defender for Office 365 (Plan 2)       |
       | Office 365 Privileged Access Management          |
       | Premium Encryption in Office 365                 |
+      
