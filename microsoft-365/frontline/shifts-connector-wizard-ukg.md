@@ -100,7 +100,11 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
     :::image type="content" source="media/shifts-connector-wizard-ukg-sync-settings.png" alt-text="Screenshot of the Sync settings page of the wizard, showing sync settings." lightbox="media/shifts-connector-wizard-ukg-sync-settings.png":::
 <a name="email"> </a>
 1. Under **Email notification recipients**, choose who receives email notifications about this connection instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connection instance is set up.
-1. Next you'll need to choose what UKG Dimensions data your users can see and change. Choose your settings for:
+1. Next you'll need to choose what UKG Dimensions data your users can see and change. For each field you can choose from the following options:
+    1. **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts.
+    1. **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts.
+    1. **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
+1. Choose your settings for:
     1. **Schedules, groups, shifts, and activities**
     1. **Open shifts**
     1. **Time off**
