@@ -22,11 +22,11 @@ recommendations: false
 description: "All credentials sensitive information type entity definition."
 ---
 
-# All credential sensitive information types
+# All credentials sensitive information types
 
-All credentials is a bundled entity sensitive information type (SIT). It detects credentials from all supported services and environments, which include Amazon, Azure, GitHub, Google, Microsoft general, Slack and more.
+"All credentials" is a bundled-entity sensitive information type (SIT). It detects credentials from all supported services and environments, which include Amazon, Azure, GitHub, Google, Microsoft general, Slack and more.
 
-For information about implementing bundled SITs, see [Learn about named entities](https://learn.microsoft.com/microsoft-365/compliance/named-entities-learn) For infromation about configuring endpointsa and the supported file types, see [Configure endpoint data loss prevention settings](https://learn.microsoft.com/microsoft-365/compliance/dlp-configure-endpoint-settings?view=o365-worldwide#advanced-classification-scanning-and-protection).
+For information about implementing bundled SITs, see [Learn about named entities](https://learn.microsoft.com/microsoft-365/compliance/named-entities-learn). For information about configuring endpoints and the supported file types, see [Configure endpoint data loss prevention settings](https://learn.microsoft.com/microsoft-365/compliance/dlp-configure-endpoint-settings?view=o365-worldwide#advanced-classification-scanning-and-protection).
 
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
