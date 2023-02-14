@@ -53,6 +53,8 @@ The following table lists the basic requirements you need to configure and use D
 > [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) is used to manage user permissions and device groups. Azure AD is included in your Defender for Business subscription. 
 > - If you don't have a Microsoft 365 subscription before you start your trial, Azure AD will be provisioned for you during the activation process. 
 > - If you do have another Microsoft 365 subscription when you start your Defender for Business trial, you can use your existing Azure AD service. 
+> 
+> Security defaults are included in Defender for Business. If you prefer to use Conditional Access policies instead, you'll need Azure AD Premium Plan 1 (included in [Microsoft 365 Business Premium](../../business-premium/index.md)). To learn more, see [Multi-factor authentication](../../business-premium/m365bp-conditional-access.md).
 
 ## Next steps
 
