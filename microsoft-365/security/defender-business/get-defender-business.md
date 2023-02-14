@@ -53,7 +53,7 @@ Defender for Business provides advanced security protection for your company's d
    It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
 
 > [!NOTE]
-> If you have Microsoft 365 Business Premium and you haven't set it up yet, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md). This guidance walks you through how to set up and configure everything, including Defender for Business.
+> If you have Microsoft 365 Business Premium and you haven't set it up yet, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md). This guidance walks you through how to set up and configure all of your productivity and security capabilities, including Defender for Business.
 
 
 # [Get Microsoft 365 Business Premium](#tab/getpremium)
