@@ -18,6 +18,7 @@ ms.custom:
 description: Admins can learn about the Advanced Spam Filter (ASF) settings that are available in anti-spam policies in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/01/2022
 ---
 
 # Advanced Spam Filter (ASF) settings in EOP
@@ -59,7 +60,7 @@ For each ASF setting, the following options are available in anti-spam policies:
 
 ## Increase spam score settings
 
-The following **Increase spam score** ASF settings set the spam confidence level (SCL) of detected messages to 5 or 6, which corresponds to a **Spam** filter verdict and the corresponding action in anti-spam policies.
+The following **Increase spam score** ASF settings result in an increase in spam score and therefore a higher chance of getting marked as spam with a spam confidence level (SCL) of 5 or 6, which corresponds to a **Spam** filter verdict and the corresponding action in anti-spam policies. Not every email that matches the following settings will be marked as spam.
 
 |Anti-spam policy setting|Description|X-header added|
 |---|---|---|

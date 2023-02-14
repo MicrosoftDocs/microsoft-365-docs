@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: Admin
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid:
   - MOE150
@@ -23,6 +21,7 @@ ms.custom:
 description: Admins can learn about quarantine in Exchange Online Protection (EOP) that holds potentially dangerous or unwanted messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/02/2022
 ---
 
 # Quarantined email messages in EOP and Defender for Office 365

@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 07/18/2021
 ---
 
 # Deploy Microsoft Defender for Endpoint on iOS with Mobile Application Manager

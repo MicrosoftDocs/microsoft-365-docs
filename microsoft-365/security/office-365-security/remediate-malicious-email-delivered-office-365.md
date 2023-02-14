@@ -9,11 +9,11 @@ audience: admin
 f1.keywords: 
   - NOCSH
 ms.localizationpriority: medium
-MS.collection: 
 search.appverid: MET150
 description: Threat remediation
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 07/10/2020
 ---
 
 # Remediate malicious email delivered in Office 365

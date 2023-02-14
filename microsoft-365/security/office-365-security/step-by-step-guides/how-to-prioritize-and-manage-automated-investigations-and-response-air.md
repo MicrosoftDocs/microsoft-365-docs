@@ -20,6 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 05/24/2022
 ---
 
 # Prioritize and manage Automated Investigations and Response (AIR)

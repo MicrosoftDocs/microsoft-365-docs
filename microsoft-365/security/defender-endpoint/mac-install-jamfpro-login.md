@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Log in to Jamf Pro
@@ -38,7 +39,7 @@ search.appverid: met150
 
    :::image type="content" source="images/jamf-pro-dashboard.png" alt-text="The Jamf Pro dashboard2" lightbox="images/jamf-pro-dashboard.png":::
 
-3. You will see the settings that are available.
+3. You'll see the settings that are available.
 
    :::image type="content" source="images/jamfpro-settings.png" alt-text="The Jamf Pro dashboard3" lightbox="images/jamfpro-settings.png":::
 

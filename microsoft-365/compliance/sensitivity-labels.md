@@ -57,7 +57,7 @@ You can use sensitivity labels to:
 
 - **Protect content in Office apps across different platforms and devices.** Supported by Word, Excel, PowerPoint, and Outlook on the Office desktop apps and Office on the web. Supported on Windows, macOS, iOS, and Android.
 
-- **Protect content in third-party apps and services** by using Microsoft Defender for Cloud Apps. With Defender for Cloud Apps, you can detect, classify, label, and protect content in third-party apps and services, such as SalesForce, Box, or DropBox, even if the third-party app or service does not read or support sensitivity labels.
+- **Protect content in third-party apps and services** by using Microsoft Defender for Cloud Apps. With Defender for Cloud Apps, you can detect, classify, label, and protect content in third-party apps and services, such as SalesForce, Box, or DropBox, even if the third-party app or service doesn't read or support sensitivity labels.
 
 - **Protect containers** that include Teams, Microsoft 365 Groups, and SharePoint sites. For example, set privacy settings, external user access and external sharing, and access from unmanaged devices.
 
@@ -69,7 +69,7 @@ You can use sensitivity labels to:
 
 - **Extend sensitivity labels to third-party apps and services.** Using the Microsoft Information Protection SDK, third-party apps can read sensitivity labels and apply protection settings.
 
-- **Label content without using any protection settings.** You can also simply apply a label as a result of identifying the sensitivity of the data. This provides users with a visual mapping of your organization's data sensitivity, and can use the labels to generate usage reports and see activity data for data that has different levels of sensitivity. Based on this information, you can always choose to apply protection settings later.
+- **Label content without using any protection settings.** You can also just apply a label as a result of identifying the sensitivity of the data. This action provides users with a visual mapping of your organization's data sensitivity, and the labels can generate usage reports and activity data for data that has different levels of sensitivity. Based on this information, you can always choose to apply protection settings later.
 
 In all these cases, sensitivity labels from Microsoft Purview can help you take the right actions on the right content. With sensitivity labels, you can identify the sensitivity of data across your organization, and the label can enforce protection settings that are appropriate for the sensitivity of that data. That protection then stays with the content.
 
@@ -112,7 +112,7 @@ After a sensitivity label is applied to an email, meeting invite (in preview), o
     
     If you have templates or workflows that are based on specific documents, test those documents with your chosen content markings before you make the label available for users. Some string length restrictions to be aware of:
     
-    Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except in Excel. Excel has a total limit of 255 characters for headers and footers but this limit includes characters that aren't visible, such as formatting codes. If that limit is reached, the string you enter is not displayed in Excel.
+    Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except in Excel. Excel has a total limit of 255 characters for headers and footers but this limit includes characters that aren't visible, such as formatting codes. If that limit is reached, the string you enter isn't displayed in Excel.
 
 - **Protect content in containers such as sites and groups** when you enable the capability to [use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
     
@@ -126,9 +126,11 @@ After a sensitivity label is applied to an email, meeting invite (in preview), o
 
 - **Set the default sharing link type** for SharePoint sites and individual documents. To help prevent users oversharing, set the [default scope and permissions](sensitivity-labels-default-sharing-link.md) for when users share documents from SharePoint and OneDrive.
 
+For more label configurations, see [Manage sensitivity labels for Office apps](sensitivity-labels-office-apps.md).
+
 ### Label scopes
 
-When you create a sensitivity label, you're asked to configure the label's scope which determines two things:
+When you create a sensitivity label, you're asked to configure the label's scope, which determines two things:
 - Which label settings you can configure for that label
 - Where the label will be visible to users
 
@@ -152,7 +154,7 @@ For these pages that have unavailable options, select **Next** to continue. Or, 
 
 When you create your sensitivity labels in the Microsoft Purview compliance portal, they appear in a list on the **Sensitivity** tab on the **Labels** page. In this list, the order of the labels is important because it reflects their priority. You want your most restrictive sensitivity label, such as Highly Confidential, to appear at the **bottom** of the list, and your least restrictive sensitivity label, such as Public, to appear at the **top**.
 
-You can apply just one sensitivity label to an item such as a document, email, or container. If you set an option that requires your users to provide a justification for changing a label to a lower classification, the order of this list identifies the lower classifications. However, this option does not apply to sublabels that share the priority of their parent label.
+You can apply just one sensitivity label to an item such as a document, email, or container. If you set an option that requires your users to provide a justification for changing a label to a lower classification, the order of this list identifies the lower classifications. However, this option doesn't apply to sublabels that share the priority of their parent label.
 
 The ordering of sublabels is used with [automatic labeling](apply-sensitivity-label-automatically.md), though. When you configure auto-labeling policies, multiple matches can result for more than one label. Then, the last sensitive label is selected, and then if applicable, the last sublabel. When you configure sublabels themselves (rather than auto-labeling policies) for automatic or recommended labeling, the behavior is a little different when sublabels share the same parent label. For example, a sublabel configured for automatic labeling is preferred over a sublabel configured for recommended labeling. For more information, see [How multiple conditions are evaluated when they apply to more than one label](apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label).
 
@@ -218,9 +220,11 @@ When you configure a label policy, you can:
 
     ![Learn more link on Sensitivity button on Ribbon.](../media/Sensitivity-label-learn-more.png)
 
+For more label policy configurations, see [Manage sensitivity labels for Office apps](sensitivity-labels-office-apps.md).
+
 After you create a label policy that assigns new sensitivity labels to users and groups, users start to see those labels in their Office apps. Allow up to 24 hours for the latest changes to replicate throughout your organization.
 
-There is no limit to the number of sensitivity labels that you can create and publish, with one exception: If the label applies encryption that specifies the users and permissions, there is a maximum of 500 labels supported with this configuration. However, as a best practice to lower admin overheads and reduce complexity for your users, try to keep the number of labels to a minimum. Real-world deployments have proved effectiveness to be noticeably reduced when users have more than five main labels or more than five sublabels per main label.
+There's no limit to the number of sensitivity labels that you can create and publish, with one exception: If the label applies encryption that specifies the users and permissions, there's a maximum of 500 labels supported with this configuration. However, as a best practice to lower admin overheads and reduce complexity for your users, try to keep the number of labels to a minimum. Real-world deployments have proved effectiveness to be noticeably reduced when users have more than five main labels or more than five sublabels per main label.
 
 ### Label policy priority (order matters)
 
@@ -232,15 +236,15 @@ A label policy consists of:
 - The users and groups that will be assigned the policy with labels.
 - The scope of the policy and policy settings for that scope (such as default label for files and emails).
 
-You can include a user in multiple label policies, and the user will get all the sensitivity labels and settings from those policies. If there is a conflict in settings from multiple policies, the settings from the policy with the highest priority (highest order number) is applied. In other words, the highest priority wins for each setting.
+You can include a user in multiple label policies, and the user will get all the sensitivity labels and settings from those policies. If there's a conflict in settings from multiple policies, the settings from the policy with the highest priority (highest order number) is applied. In other words, the highest priority wins for each setting.
 
 If you're not seeing the label policy setting behavior that you expect for a user or group, check the order of the sensitivity label policies. You might need to move the policy down. To reorder the label policies, select a sensitivity label policy > choose the Actions ellipsis for that entry > **Move down** or **Move up**. For example:
 
 ![Move option on the page for sensitivity label policies.](../media/sensitivity-label-policy-priority.png)
 
-From our screenshot example that shows three label policies, all users are assigned the standard label policy, so it's appropriate that it has the lowest priority (lowest order number of 0). Only users in the IT department are assigned the second policy that has the order number 1. For these users, if there are any conflicts in settings between their policy and the standard policy, the settings from their policy wins because it has a higher order number. 
+From our screenshot example that shows three label policies, all users are assigned the standard label policy, so it's appropriate it has the lowest priority (lowest order number of 0). Only users in the IT department are assigned the second policy that has the order number 1. For these users, if there are any conflicts in settings between their policy and the standard policy, the settings from their policy wins because it has a higher order number. 
 
-Similarly for users in the legal department, who are assigned the third policy with distinct settings. It's likely that these users will have more stringent settings, so it's appropriate that their policy has the highest order number. It's unlikely that a user from the legal department will be in a group that's also assigned to the policy for the IT department. But if they are, the order number 2 (highest order number) ensures that the settings from the legal department always take priority if there's a conflict.
+Similarly for users in the legal department, who are assigned the third policy with distinct settings. It's likely these users will have more stringent settings, so it's appropriate that their policy has the highest order number. It's unlikely a user from the legal department will be in a group that's also assigned to the policy for the IT department. But if they are, the order number 2 (highest order number) ensures the settings from the legal department always take priority if there's a conflict.
 
 > [!NOTE]
 > Remember: If there is a conflict of settings for a user who has multiple policies assigned to them, the setting from the assigned policy with the highest order number is applied.
@@ -250,12 +254,6 @@ Similarly for users in the legal department, who are assigned the third policy w
 The sensitivity labels that are built into Microsoft 365 Apps on Windows, macOS, iOS, and Android look and behave very similarly across these devices to provide users with a consistent labeling experience. However, on Windows computers, you can also use the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2). The AIP Office add-in component from this client is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070) and when installed, is no longer the default labeling client for the latest Office apps.
 
 If you're using the AIP add-in for labeling in Office apps, we recommend you move to built-in labeling. For more information, see [Migrate the Azure Information Protection (AIP) add-in to built-in labeling for Office apps](sensitivity-labels-aip.md).
-
-### Azure Information Protection labels
-
-Label management for Azure Information Protection labels in the Azure portal was deprecated **March 31, 2021**. Learn more from the official [deprecation notice](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
-
-If your tenant isn't yet on the [unified labeling platform](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), you must first activate unified labeling before you can use sensitivity labels. For instructions, see [How to migrate Azure Information Protection labels to unified sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
 
 ## Sensitivity labels and the Microsoft Information Protection SDK
 

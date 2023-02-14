@@ -7,7 +7,6 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date: 
 ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid: 
@@ -21,6 +20,7 @@ ms.custom: migrationguides
 description: "Prerequisite steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 10/28/2021
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 1: Prepare

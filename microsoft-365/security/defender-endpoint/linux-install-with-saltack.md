@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 01/19/2023
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Saltstack

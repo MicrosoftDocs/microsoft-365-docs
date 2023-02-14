@@ -14,6 +14,7 @@ ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 12/01/2022
 ---
 
 # Simulate a phishing attack with Attack simulation training in Defender for Office 365
