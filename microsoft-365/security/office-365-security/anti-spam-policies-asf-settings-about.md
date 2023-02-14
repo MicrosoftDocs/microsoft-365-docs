@@ -60,7 +60,7 @@ For each ASF setting, the following options are available in anti-spam policies:
 
 ## Increase spam score settings
 
-The following **Increase spam score** ASF settings result in an increase in spam score and therefore a higher chance of getting marked as spam with a spam confidence level (SCL) of 5 or 6, which corresponds to a **Spam** filter verdict and the corresponding action in anti-spam policies. Note that not every email that matches the following settings will be marked as spam.
+The following **Increase spam score** ASF settings result in an increase in spam score and therefore a higher chance of getting marked as spam with a spam confidence level (SCL) of 5 or 6, which corresponds to a **Spam** filter verdict and the corresponding action in anti-spam policies. Not every email that matches the following settings will be marked as spam.
 
 |Anti-spam policy setting|Description|X-header added|
 |---|---|---|
