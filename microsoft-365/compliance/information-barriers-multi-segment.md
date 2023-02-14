@@ -130,7 +130,7 @@ For more information about managing IB for SharePoint, see [Use information barr
 
 ## Multi-segment support for users in Microsoft Teams
 
-If you've enabled information barriers in your organization after February 15, 2023 and configured OneDrive for information barriers for multi-segment support, the Microsoft Teams user experience is as follows:
+If you've enabled information barriers in your organization after February 15, 2023 and configured Teams for information barriers for multi-segment support, the Microsoft Teams user experience is as follows:
 
 - **Team creation**: When a multi-segment user creates a team, the team is automatically set to *Implicit* mode by default.
 - **Team member addition**: All users in the team must have one segment which is compatible with all other users.
