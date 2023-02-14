@@ -55,6 +55,17 @@ You must be a Security Administrator, Conditional Access administrator, or Globa
 
    :::image type="content" source="media/mdb-manage-azuread.png" alt-text="Screenshot showing the View button under the heading Manage Azure Active Directory." lightbox="media/mdb-manage-azuread.png":::
 
+3. In the navigation pane, select **Properties**, and then select **Manage security defaults**.
+
+   :::image type="content" source="media/mdb-azuread-properties.png" alt-text="Screenshot showing Properties and Manage Security Defaults for Azure Active Directory." lightbox="media/mdb-azuread-properties.png":::
+
+4. On the right side of the screen, in the **Security defaults** pane, see whether security defaults are turned on (**Enabled**) or off (**Disabled**). To turn security defaults on, use the drop-down menu to select **Enabled**. 
+
+   > [!CAUTION]
+   > If your organization is using Conditional Access policies, you won't be able to enable security defaults. You'll see a message that indicates you're using classic policies instead. You can use *either* security defaults *or* Conditional Access, but not both. To learn more, see [Multi-factor authentication](../../business-premium/m365bp-conditional-access.md) (in the Microsoft 365 Business Premium documentation).
+
+5. Save your changes.
+
 ## Next steps
 
 - Proceed to [Step 3: Assign security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
