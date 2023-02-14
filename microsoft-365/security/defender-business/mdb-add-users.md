@@ -47,7 +47,10 @@ As soon as you have signed up for Defender for Business, your first step is to a
 
 ## Make sure MFA is enabled
 
-You must be a Security Administrator, Conditional Access administrator, or Global Administrator to perform this task.
+If your tenant was created on or after October 22, 2019, security defaults might be enabled in your tenant. The following procedure can be used to confirm or enable security defaults.
+
+> [!IMPORTANT]
+> You must be a Security Administrator, Conditional Access administrator, or Global Administrator to perform this task.
 
 1. Go to the Azure portal ([https://portal.azure.com/](https://portal.azure.com/)) and sign in.
 
