@@ -400,7 +400,7 @@ No, the Teams chat folder content does not migrate cross-tenant. However, once t
 
 ### What content is migrated cross-tenant then?
 
-When a mailbox is migrated cross-tenant with this feature, only user visible content in the mailbox, also known as Top Of Information Store (email, contacts, calendar, tasks, and notes) and recoverable items subfolders except SubstrateHolds is migrated.  
+When a mailbox is migrated cross-tenant with this feature, only user-visible content in the mailbox, also known as Top of Information Store (email, contacts, calendar, tasks, and notes), and recoverable items subfolders except SubstrateHolds are migrated.  
 
 ### How can I see just moves that are cross-tenant moves, not my onboarding and off-boarding moves?
 
