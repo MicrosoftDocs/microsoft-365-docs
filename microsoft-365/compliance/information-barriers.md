@@ -77,7 +77,7 @@ IB policies aren't available to restrict communication and collaboration between
 
 ### Information barriers enabled after to February 15, 2023
 
-Information barriers is no longer based on Exchange Online Address Book Policies (ABPs). Organizations using ABPs will not have any impact to the existing ABPs when enabling information barriers. However, we recommend that your ABPs are consistent with the segments you configure in information barriers. You should try to avoid user visibility differences between your existing ABPs and your new information barriers configuration.
+Information barriers is no longer based on Exchange Online Address Book Policies (ABPs). Organizations using ABPs will not have any impact to the existing ABPs when enabling information barriers. If there's no ABP defined for users with associated IB segments and policies, an ABP is automatically created with empty address lists for these users. You can change these ABPs as needed. We recommend that your ABPs are consistent with the segments you configure in information barriers. You should try to avoid user visibility differences between your existing ABPs and your new information barriers configuration.
 
 ### Information barriers enabled prior to February 15, 2023
 
