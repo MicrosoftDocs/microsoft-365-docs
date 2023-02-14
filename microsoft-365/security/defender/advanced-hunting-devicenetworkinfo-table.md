@@ -55,6 +55,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DefaultGateways` | `string` | Default gateway addresses in JSON array format |
 | `IPAddresses` | `string` | JSON array containing all the IP addresses assigned to the adapter, along with their respective subnet prefix and IP address space, such as public, private, or link-local |
 | `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
+| `NetworkAdapterVendor` | `string` | Name of the manufacturer or vendor of the network adapter |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

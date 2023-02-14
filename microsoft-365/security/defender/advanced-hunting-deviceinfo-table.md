@@ -34,6 +34,9 @@ ms.date: 02/16/2021
 
 The `DeviceInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about devices in the organization, including OS version, active users, and computer name. Use this reference to construct queries that return information from this table.
 
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
@@ -64,6 +67,13 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`OSVersionInfo` | `string` | Additional information about the OS version, such as the popular name, code name, or version number |
 |`MergedDeviceIds` | `string` | Previous device IDs that have been assigned to the same device |
 |`MergedToDeviceId` | `string` | The most recent device ID assigned to a device |
+|`SensorHealthState` | `string` | Indicates health of the device’s EDR sensor, if onboarded to Microsoft Defender For Endpoint |
+| `IsInternetFacing`| `bool` | Indicates whether the device is internet-facing and might be susceptible to external communication |
+|	`IsExcluded`| `bool` | Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences |
+|`ExclusionReason` | `string` | Indicates the reason for device exclusion |
+|	`AssetValue`| `string` | Indicates the value of a device as assigned by the user |
+|	`ExposureLevel` | `string` | Indicates the exposure level of a device |
+
 
 The `DeviceInfo` table provides device information based on heartbeats, which are periodic reports or signals from a device. Every fifteen minutes, the device sends a partial heartbeat that contains frequently changing attributes like `LoggedOnUsers`. Once a day, a full heartbeat containing the device's attributes is sent.
 
