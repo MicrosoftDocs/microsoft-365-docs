@@ -27,6 +27,9 @@ Defender for Business is an endpoint security solution that was designed especia
 
 This article describes what's included in Defender for Business and provides links to learn more about these features and capabilities.
 
+> [!TIP]
+> To learn more about Microsoft 365 Business Premium, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md).
+
 ## Video: Enterprise-grade protection for small- and medium-sized businesses
 
 Watch the following video to learn more about Defender for Business: <br/><br/>
