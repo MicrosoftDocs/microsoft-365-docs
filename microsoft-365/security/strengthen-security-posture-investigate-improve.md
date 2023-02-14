@@ -61,7 +61,7 @@ Minimize attack surface and improve your posture by undertaking configuration ha
 3. Select **Configuration changes** remediation type.
 4. Prioritize the configuration changes related recommendations that will lower your exposure score and raise your Secure Score the most.
 
-For more information on how to request remediation, see [request remediation](../security/defender-vulnerability-management/tvm-security-recommendation#how-to-request-remediation).
+For more information on how to request remediation, see [request remediation](../security/defender-vulnerability-management/tvm-security-recommendation.md#how-to-request-remediation).
 
 ## Next step
 
