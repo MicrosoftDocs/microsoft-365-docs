@@ -47,7 +47,7 @@ As soon as you have signed up for Defender for Business, your first step is to a
 
 ## Make sure MFA is enabled
 
-Security defaults make sure MFA is enabled for all users. If your tenant was created on or after October 22, 2019, security defaults might be enabled in your tenant. The following procedure can be used to confirm or enable security defaults.
+One good way to make sure MFA is enabled for all users is by using security defaults. If your tenant was created on or after October 22, 2019, security defaults might be enabled automatically in your tenant. Use the following procedure to confirm or enable security defaults.
 
 > [!IMPORTANT]
 > You must be a security administrator, Conditional Access administrator, or Global Administrator to perform this task.
