@@ -89,5 +89,5 @@ Before you define and apply IB policies, you must remove all existing Exchange a
 
 - [Get started with information barriers](information-barriers-policies.md)
 - [Manage IB policies](information-barriers-edit-segments-policies.md)
-- [Use multi-segment support in information barriers](information-barriers-multi-support.md)
+- [Use multi-segment support in information barriers](information-barriers-multi-segment.md)
 - [See the attributes that can be used for IB policies](information-barriers-attributes.md)

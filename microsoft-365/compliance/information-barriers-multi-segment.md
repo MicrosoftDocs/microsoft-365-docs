@@ -35,7 +35,7 @@ When configured for multi-segment support, compatibility for users depending on 
 | User A | Segment 1, Segment 2 |
 | User B | Segment 3, Segment 4 |
 | User C | Segment 2, Segment 4 |
-|||
+||
 
 ## Multi-segment example: North School District's schools, segments, and policies
 
@@ -49,7 +49,7 @@ North School District's has two schools:
 |:------------|:--------------------------|:----------------------------|
 | School 1 | Students and teachers in School 1 | Students and teachers in School 2 |
 | School 2 | Students and teachers in School 2 | Students and teachers in School 1 |
-||||
+|||
 
 For this structure, North School District's plan includes three IB policies:
 
@@ -61,12 +61,12 @@ For this structure, North School District's plan includes three IB policies:
 
 North School District will use the *Department* attribute in Azure Active Directory to define segments, as follows:
 
-| Segment | Segment Definition |
-|:-------|:-------------------|
+| **Segment** | **Segment definition** |
+|:------------|:-----------------------|
 | School1 | `New-OrganizationSegment -Name "School1" -UserGroupFilter "Department -eq 'School1'"` |
 | School2 | `New-OrganizationSegment -Name "School2" -UserGroupFilter "Department -eq 'School2'"`  |
 | AllTeachers | `New-OrganizationSegment -Name "AllTeachers" -UserGroupFilter "MemberOfGroup -eq 'AllTeachersgroup@northschoolsdistrict.com'"` |
-||||
+||
 
 With the segments defined, Contoso proceeds to define the IB policies.
 
@@ -79,6 +79,7 @@ North School District defines three IB policies, as described in the following t
 | **Policy 1: Students and teachers in School 1 can communicate with each other** | `New-InformationBarrierPolicy -Name School1Policy -SegmentsAllowed 'School1' -AssignedSegment 'School1' -State Active` <p> In this example, the IB policy is called *School1Policy*. When this policy is active and applied, it will enable students and teachers in School 1 to communicate with each other. This policy is a one-way policy; it won't prevent students and teachers in School 1 from communicating with School 2. For that, Policy 2 is needed. |
 | **Policy 2: Students and teachers in School 2 can communicate with each other** | `New-InformationBarrierPolicy -Name School2Policy -SegmentsAllowed 'School2' -AssignedSegment 'School2' -State Active` <p> In this example, the IB policy is called *School2Policy*. When this policy is active and applied, it will enable students and teachers in School 2 to communicate with each other. |
 | **Policy 3: Teachers in different schools can communicate with each other** | `New-InformationBarrierPolicy -Name AllTeachersPolicy -SegmentsAllowed 'AllTeachers' -AssignedSegment 'AllTeachers' -State Active` <p> In this case, the IB policy is called *AllTeachersPolicy*. When this policy is active and applied, teachers in School 1 and School 2 can communicate with each other. |
+||
 
 With segments and policies defined, the North School District applies the policies by running the **Start-InformationBarrierPoliciesApplication** cmdlet. When the cmdlet finishes, the North School District has implemented their communication policy for students and teachers.
 
