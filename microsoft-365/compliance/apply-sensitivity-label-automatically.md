@@ -310,8 +310,6 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
     - **Solutions** > **Information protection**
 
-    If you don't immediately see this option, first select **Show all**.
-
 2. Select the **Auto-labeling** tab:
 
     ![Auto-labeling tab.](../media/auto-labeling-tab.png)
@@ -323,7 +321,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
     ![New policy configuration for auto-labeling.](../media/auto-labeling-wizard.png)
 
-4. For the page **Choose info you want this label applied to**: Select one of the templates, such as **Financial** or **Privacy**. You can refine your search by using the **Show options for** dropdown. Or, select **Custom policy** if the templates don't meet your requirements. Select **Next**.
+4. For the page **Choose info you want this label applied to**: Select one of the templates, such as **Financial** or **Privacy**. You can refine your search by using the search or dropdown box for countries or regions. Or, select **Custom policy** if the templates don't meet your requirements. Select **Next**.
 
 5. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
 
@@ -354,8 +352,13 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     The rules use conditions that include [sensitive information types](sensitive-information-type-learn-about.md), [trainable classifiers](classifier-learn-about.md), and sharing options:
     - To select a sensitive information type or trainable classifier as a condition, under **Content contains**, select **Add**, and then choose **Sensitive info types** or **Trainable classifiers**.
     - To select sharing options as a condition, under **Content is shared**, choose either **only with people inside my organization** or **with people outside my organization**.
+    - Other conditions that you can select:
+        - File extension is
+        - Document name contains words or phrases
+        - Document property is
+        - Document size equals or is greater than
 
-    If your location is **Exchange** and you selected **Advanced rules**, there are other conditions that you can select:
+    If your location is **Exchange** and you selected **Advanced rules**, there are other conditions that you can select, and then specifiy exceptions for them:
     - Sender IP address is
     - Recipient domain is
     - Recipient is
@@ -371,8 +374,12 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     - Sender domain is
     - Recipient is a member of
     - Sender is
+    - Attachment name contains words or phrases
+    - Attachment property is
+    - Attachment size equals or is greater than
 
-    For each of these conditions, you can then specify exceptions.
+    If your location is **SharePoint sites** or **OneDrive accounts** and you selected **Advanced rules**, there is one other condition that you can select and then specifiy exceptions:
+    - Document created by
 
 9. Depending on your previous choices, you'll now have an opportunity to create new rules by using conditions and exceptions.
 
