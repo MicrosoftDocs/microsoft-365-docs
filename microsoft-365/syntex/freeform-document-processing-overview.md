@@ -5,7 +5,8 @@ author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
-ms.topic: article
+ms.topic: conceptual
+ms.custom: intro-overview
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
