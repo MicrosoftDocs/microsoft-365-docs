@@ -1334,108 +1334,108 @@
     - name: Resources for Microsoft Defender for Endpoint on Linux
       href: linux-resources.md
 
-    - name: Troubleshoot
+  - name: Troubleshoot
+    items:
+    - name: Troubleshoot onboarding issues
       items:
-      - name: Troubleshoot onboarding issues
-        items:
-        - name: Troubleshoot issues during onboarding
-          href: troubleshoot-onboarding.md
-        - name: Troubleshoot subscription and portal access issues
-          href: troubleshoot-onboarding-error-messages.md
-        - name: Troubleshoot security configuration management onboarding issues
-          href: troubleshoot-security-config-mgt.md
+      - name: Troubleshoot issues during onboarding
+        href: troubleshoot-onboarding.md
+      - name: Troubleshoot subscription and portal access issues
+        href: troubleshoot-onboarding-error-messages.md
+      - name: Troubleshoot security configuration management onboarding issues
+        href: troubleshoot-security-config-mgt.md
 
-      - name: Troubleshooting migration issues
-        href: switch-to-mde-troubleshooting.md
+    - name: Troubleshooting migration issues
+      href: switch-to-mde-troubleshooting.md
 
-      - name: Troubleshoot sensor state
-        items:
-        - name: Check sensor state
-          href: check-sensor-status.md
-        - name: Fix unhealthy sensors
-          href: fix-unhealthy-sensors.md
-        - name: Inactive devices
-          href: fix-unhealthy-sensors.md#inactive-devices
-        - name: Misconfigured devices
-          href: fix-unhealthy-sensors.md#misconfigured-devices
-        - name: Review sensor events and errors on machines using Event Viewer
-          href: event-error-codes.md
+    - name: Troubleshoot sensor state
+      items:
+      - name: Check sensor state
+        href: check-sensor-status.md
+      - name: Fix unhealthy sensors
+        href: fix-unhealthy-sensors.md
+      - name: Inactive devices
+        href: fix-unhealthy-sensors.md#inactive-devices
+      - name: Misconfigured devices
+        href: fix-unhealthy-sensors.md#misconfigured-devices
+      - name: Review sensor events and errors on machines using Event Viewer
+        href: event-error-codes.md
 
-      - name: Troubleshoot Microsoft Defender for Endpoint on macOS
-        items:
-        - name: Troubleshoot installation issues
-          href: mac-support-install.md
-        - name: Troubleshoot performance issues
-          href: mac-support-perf.md
-        - name: Troubleshoot cloud connectivity
-          href: troubleshoot-cloud-connect-mdemac.md
-        - name: Troubleshoot kernel extension issues
-          href: mac-support-kext.md
-        - name: Troubleshoot license issues
-          href: mac-support-license.md
+    - name: Troubleshoot Microsoft Defender for Endpoint on macOS
+      items:
+      - name: Troubleshoot installation issues
+        href: mac-support-install.md
+      - name: Troubleshoot performance issues
+        href: mac-support-perf.md
+      - name: Troubleshoot cloud connectivity
+        href: troubleshoot-cloud-connect-mdemac.md
+      - name: Troubleshoot kernel extension issues
+        href: mac-support-kext.md
+      - name: Troubleshoot license issues
+        href: mac-support-license.md
 
-      - name: Troubleshoot Microsoft Defender for Endpoint on Linux
-        items:
-        - name: Troubleshoot installation issues
-          href: linux-support-install.md
-        - name: Investigate agent health issues
-          href: health-status.md
-        - name: Troubleshoot cloud connectivity issues
-          href: linux-support-connectivity.md
-        - name: Troubleshoot RHEL 6 installation issues
-          href: linux-support-rhel.md
-        - name: Troubleshoot performance issues
-          href: linux-support-perf.md
-        - name: Troubleshoot missing events issues
-          href: linux-support-events.md
+    - name: Troubleshoot Microsoft Defender for Endpoint on Linux
+      items:
+      - name: Troubleshoot installation issues
+        href: linux-support-install.md
+      - name: Investigate agent health issues
+        href: health-status.md
+      - name: Troubleshoot cloud connectivity issues
+        href: linux-support-connectivity.md
+      - name: Troubleshoot RHEL 6 installation issues
+        href: linux-support-rhel.md
+      - name: Troubleshoot performance issues
+        href: linux-support-perf.md
+      - name: Troubleshoot missing events issues
+        href: linux-support-events.md
 
 
 
-      - name: Troubleshoot Mobile Threat Defense
-        items:
-        - name: Troubleshoot Microsoft Defender for Endpoint on Android issues
-          href: android-support-signin.md
-        - name: Troubleshoot Microsoft Defender for Endpoint on iOS issues
-          href: ios-troubleshoot.md
+    - name: Troubleshoot Mobile Threat Defense
+      items:
+      - name: Troubleshoot Microsoft Defender for Endpoint on Android issues
+        href: android-support-signin.md
+      - name: Troubleshoot Microsoft Defender for Endpoint on iOS issues
+        href: ios-troubleshoot.md
 
-      - name: Troubleshoot sensor health issues using Client Analyzer
-        items:
-        - name: Client analyzer overview
-          href: overview-client-analyzer.md
-        - name: Download and run the client analyzer
-          href: download-client-analyzer.md
-        - name: Run the client analyzer on Windows
-          href: run-analyzer-windows.md
-        - name: Run the client analyzer on macOS or Linux
-          href: run-analyzer-macos-linux.md
-        - name: Data collection for advanced troubleshooting on Windows
-          href: data-collection-analyzer.md
-        - name: Understand the analyzer HTML report
-          href: analyzer-report.md
-        - name: Provide feedback on the client analyzer tool
-          href: analyzer-feedback.md
+    - name: Troubleshoot sensor health issues using Client Analyzer
+      items:
+      - name: Client analyzer overview
+        href: overview-client-analyzer.md
+      - name: Download and run the client analyzer
+        href: download-client-analyzer.md
+      - name: Run the client analyzer on Windows
+        href: run-analyzer-windows.md
+      - name: Run the client analyzer on macOS or Linux
+        href: run-analyzer-macos-linux.md
+      - name: Data collection for advanced troubleshooting on Windows
+        href: data-collection-analyzer.md
+      - name: Understand the analyzer HTML report
+        href: analyzer-report.md
+      - name: Provide feedback on the client analyzer tool
+        href: analyzer-feedback.md
 
-      - name: Troubleshoot Microsoft Defender for Endpoint service issues
-        items:
-        - name: Troubleshoot service issues
-          href: troubleshoot-mdatp.md
-        - name: Contact Microsoft Defender for Endpoint support
-          href: contact-support.md
+    - name: Troubleshoot Microsoft Defender for Endpoint service issues
+      items:
+      - name: Troubleshoot service issues
+        href: troubleshoot-mdatp.md
+      - name: Contact Microsoft Defender for Endpoint support
+        href: contact-support.md
 
-      - name: Troubleshoot live response issues
-        href: troubleshoot-live-response.md
+    - name: Troubleshoot live response issues
+      href: troubleshoot-live-response.md
 
-      - name: Collect support logs using LiveAnalyzer
-        href: troubleshoot-collect-support-log.md
+    - name: Collect support logs using LiveAnalyzer
+      href: troubleshoot-collect-support-log.md
 
-      - name: Troubleshoot attack surface reduction issues
-        items:
-        - name: Network protection
-          href: troubleshoot-np.md
-        - name: Attack surface reduction rules
-          href: troubleshoot-asr.md
-        - name: Migrate to Attack surface reduction rules
-          href: migrating-asr-rules.md
+    - name: Troubleshoot attack surface reduction issues
+      items:
+      - name: Network protection
+        href: troubleshoot-np.md
+      - name: Attack surface reduction rules
+        href: troubleshoot-asr.md
+      - name: Migrate to Attack surface reduction rules
+        href: migrating-asr-rules.md
 
 - name: Microsoft 365 Defender docs
   items:
