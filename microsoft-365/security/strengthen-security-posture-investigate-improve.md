@@ -32,9 +32,36 @@ This article describes capabilities you can use to measure your current security
 
 |Capability |Description|Get started|
 |:----------|:------------|:--------|-------|
-|**Review Microsoft Secure Score** |Microsoft Secure Score reports on the current state of an organization's security posture, with a higher number indicating more recommended actions taken. You'll see recommended actions for [products included in Secure Score](../security/defender/microsoft-secure-score#products-included-in-secure-score) which you have licenses for and you're given points for taking actions. Your score updated is to reflect the actions you take.|[Secure Score Overview](../security/defender/microsoft-secure-score.md)  <br /><br /> [Check your score](../security/defender/microsoft-secure-score-improvement-actions#check-your-current-score)|
-|**Take Secure Score recommended actions** | |[Take actions to improve your Secure Score](../security/defender/microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score).|
-|**Security recommendations** | |[Security recommendations](../security/defender/microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score).|
+|**Review Microsoft Secure Score** |Microsoft Secure Score reports on the current state of an organization's security posture, with a higher number indicating more recommended actions taken. You'll see recommended actions for the [products included in Secure Score](../security/defender/microsoft-secure-score#products-included-in-secure-score) you have licenses for. You're given points for taking actions and your score updated to reflect the actions you take.|[Secure Score Overview](../security/defender/microsoft-secure-score.md)  <br /><br /> [Check your score](../security/defender/microsoft-secure-score-improvement-actions#check-your-current-score).|
+|**Take Secure Score recommended actions** | Review the recommended actions tab for a list of improvement actions you can take to strengthen your posture and improve your score. By default this is sorted by score impact, with the most impactful actions appearing at the top. You can use filters or group by product, status, license, or category to help focus your efforts. |[Take actions to improve your Secure Score](../security/defender/microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score).|
+
+## Address vulnerabilities with Microsoft Defender Vulnerability Management
+
+Defender Vulnerability Management provides security recommendations to address cybersecurity weaknesses identified in your organization. To learn more, see [Security Recommendations](../security/defender-vulnerability-management/tvm-security-recommendation.md).
+
+Use the **Remediation type** filter to review recommendations you can take to improve your organization's security posture by lowering your exposure to these vulnerabilities.
+
+### Address software and firmware security recommendations
+
+Keeping your software and firmware up to date can help mitigate known vulnerabilities affecting your devices. To review software and firmware security recommendations:
+
+1. Go to the Vulnerability management navigation menu in the [Microsoft 365 Defender portal](https://security.microsoft.com) and select **Recommendations**.
+2. Select **Filter**.
+3. Select the Firmware and Software related remediation types:
+
+:::image type="content" source="../media/content-understanding/remediation-type.png" alt-text="security recommendation remediation types" lightbox="../media/content-understanding/remediation-type.png":::
+4. Prioritize the software and firmware related recommendations that will lower your exposure score and raise your Secure Score the most.
+
+### Address configuration change security recommendations
+
+Minimize attack surface and improve your posture by undertaking configuration hardening actions to avoid your the risks of devices being vulnerable to malicious attacks.
+
+1. Go to the Vulnerability management navigation menu in the [Microsoft 365 Defender portal](https://security.microsoft.com) and select **Recommendations**.
+2. Select **Filter**.
+3. Select **Configuration changes** remediation type.
+4. Prioritize the configuration changes related recommendations that will lower your exposure score and raise your Secure Score the most.
+
+For more information on how to request remediation, see [request remediation](../security/defender-vulnerability-management/tvm-security-recommendation#how-to-request-remediation).
 
 ## Next step
 
