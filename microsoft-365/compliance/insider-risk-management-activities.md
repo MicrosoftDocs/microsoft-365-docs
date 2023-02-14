@@ -222,7 +222,7 @@ Use the *Activity scope*, *Risk factor*, and *Review status* filters to display 
 
 - **Review status**: Filters activity review status.
   - All
-  - Not yet reviewed (filters out any activity that was already reviewed in a past alert for a policy) 
+  - Not yet reviewed (filters out any activity that was part of a dismissed or resolved alert)
 
 ![Insider risk management activity explorer overview](../media/insider-risk-activity-explorer.png)
 
