@@ -85,11 +85,13 @@ All our updates contain
 
 ### January-2023 (Platform: 4.18.2301.6 | Engine: 1.1.120000.2)
 
-- Security intelligence update version: **1.379.1493.x** 
+- Security intelligence update version: **1.379.1493.x**
 - Release date: **February 14, 2023**
-- Platform: **4.18.2301.6** 
+- Platform: **4.18.2301.6**
 - Engine: **1.1.120000.2**
 - Support phase: **Security and Critical Updates**
+
+#### What's new
 
 - Improved [ASR rule](attack-surface-reduction-rules-reference.md) processing logic
 - Updated Sense token hardening
