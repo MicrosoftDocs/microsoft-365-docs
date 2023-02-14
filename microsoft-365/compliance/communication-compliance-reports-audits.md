@@ -108,9 +108,12 @@ To create a new message details report, complete the following steps:
 1. Sign into the Microsoft Purview compliance portal with an account that is a member of the *Communication Compliance Investigators* role group.
 2. Navigate to the **Policies** tab, select a policy, and then select **Create message details report**.
 3. On the **Create message details report** pane, enter a name for the report in the **Report name** field.
-4. In **Choose a date range**, select a *Start date* and *End date* for the report.
-5. Select **Create**.
-6. The report creation confirmation is displayed.
+4. Under **Users in report**, select one of the following:
+   - **All users**. Select this option if you want to create a report with message information for all users in the policy. 
+   - **Select users**. Select this option, and then select specific users from the list to create a report with messages sent by those specific users. Only the users who have sent a message that has been flagged will be available in the list.
+5. In **Choose a date range**, select a *Start date* and *End date* for the report.
+6. Select **Create**.
+7. The report creation confirmation is displayed.
 
 Depending on the number of items in the report, it can take a few minutes to hours before the report is ready to be downloaded. You can check progress on the Message details reports tab. Report status is *In progress* or *Ready to download*. You can have up to 15 separate reports processing simultaneously. To download a report, select a report in the *Ready to download* state and select **Download report**.
 
@@ -140,7 +143,7 @@ Message details reports contain the following information for each message item 
 
 ## Audit
 
-In some instances, you must provide information to regulatory or compliance auditors to prove supervision of user activities and communications. This information may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
+In some instances, you must provide information to regulatory or compliance auditors to prove that user activities and communications are scoped. This information may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of scoped procedures.
 
 > [!IMPORTANT]
 > Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log). When activities trigger events that are captured in the Microsoft 365 Audit log, it may take up to 48 hours before these events can be viewed in communication compliance policies.
@@ -165,7 +168,7 @@ To view communication compliance review activities for a policy, select the **Ex
 
 You can also view audit activities in the unified audit log or with the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet. To learn more about audit log retention policies, see [Manage audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies).
 
-For example, the following example returns the activities for all the supervisory review activities (policies and rules):
+For example, the following example returns the activities for all the scoped review activities (policies and rules):
 
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType AeD -Operations SupervisoryReviewTag
@@ -183,9 +186,9 @@ This example returns activities that match your current communication compliance
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch
 ```
 
-Communication compliance policy matches are stored in a supervision mailbox for each policy. In some cases, you may need to check the size of your supervision mailbox for a policy to make sure you aren't approaching the current 100-GB storage size or 1 million message limit. If the mailbox limit is reached, policy matches aren't captured and you'll need to create a new policy (with the same settings) to continue to capture matches for the same activities.
+Communication compliance policy matches are stored in a scoped mailbox for each policy. In some cases, you may need to check the size of your scoped mailbox for a policy to make sure you aren't approaching the current 100-GB storage size or 1 million message limit. If the mailbox limit is reached, policy matches aren't captured and you'll need to create a new policy (with the same settings) to continue to capture matches for the same activities.
 
-To check the size of a supervision mailbox for a policy, complete the following steps:
+To check the size of a scoped mailbox for a policy, complete the following steps:
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 2. Run the following command:

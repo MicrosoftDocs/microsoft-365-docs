@@ -22,6 +22,7 @@ ms.collection:
   - highpri
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 10/08/2020
 ---
 
 # Prerequisite work for implementing Zero Trust identity and device access policies

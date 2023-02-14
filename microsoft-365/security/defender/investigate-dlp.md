@@ -18,6 +18,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - met150
+ms.date: 05/23/2022
 ---
 
 # Investigate data loss incidents with Microsoft 365 Defender

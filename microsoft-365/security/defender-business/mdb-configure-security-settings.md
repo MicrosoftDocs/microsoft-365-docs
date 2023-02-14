@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 01/31/2023
+ms.date: 02/07/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -32,7 +32,7 @@ Security policies to review and configure include:
 
 - **[Next-generation protection policies](#view-or-edit-your-next-generation-protection-policies)**, which determine antivirus and antimalware protection for your company's devices
 - **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to and from your company's devices
-- **[Attack surface reduction rules](#enable-standard-attack-surface-reduction-rules)**, which help protect your network and devices from cyberthreats and attacks
+- **[Attack surface reduction rules](#enable-standard-attack-surface-reduction-rules)** (rolling out now), which help protect your network and devices from cyberthreats and attacks
 - **[Web content filtering](#set-up-web-content-filtering)**, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
 - **[Advanced features](#review-settings-for-advanced-features)**, such as automated investigation and response and endpoint detection and response (EDR) in block mode
 
@@ -52,7 +52,6 @@ Use this article as a guide to managing your security policies and settings.
 6. [Review settings for advanced features](#review-settings-for-advanced-features).
 7. [View other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
 8. [Proceed to your next steps](#next-steps).
-
 
 ## Choose where to manage security policies and devices
 
@@ -92,9 +91,9 @@ Depending on whether you're using the Microsoft 365 Defender portal or Intune to
 
 - Attack surface reduction rules (see [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules)). 
 - Controlled folder access (see [Set up controlled folder access](mdb-asr.md#set-up-controlled-folder-access)).
-- Network protection (on by default with [next-generation protection](mdb-next-gen-configuration-settings.md)).
-- Web protection (on by default with [web content filtering](#set-up-web-content-filtering)).
-- Firewall protection (on by default with [firewall policies](mdb-firewall.md)).
+- Network protection (turned on by default with [next-generation protection](mdb-next-gen-configuration-settings.md)).
+- Web protection (turned on by default with [web content filtering](#set-up-web-content-filtering)).
+- Firewall protection (turned on by default with [firewall policies](mdb-firewall.md)).
 
 There are three standard attack surface reduction rules you should turn on as soon as possible. See [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules).
 

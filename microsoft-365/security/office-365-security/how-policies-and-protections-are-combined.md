@@ -6,10 +6,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
@@ -19,6 +17,7 @@ description: Admins can learn about the application order of protections in Exch
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 09/17/2019
 ---
 
 # Order and precedence of email protection

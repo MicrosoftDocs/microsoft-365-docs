@@ -5,8 +5,8 @@ author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
-ms.topic: article
-ms.date: 
+ms.topic: conceptual
+ms.date: 10/28/2022
 ms.service: microsoft-syntex
 ms.collection:
 - m365solution-managecontracts
@@ -89,7 +89,7 @@ This solution relies on the following functionality, all available as part of a 
 
 New to Microsoft Syntex? Learn how to use Syntex to manage content using AI.
 
-The [Get started with Microsoft Syntex](/training/paths/syntex-get-started) learning path will teach how you can use unstructured, freeform, and unstructured document processing models to classify documents, extract text, and label your documents for quick and easy knowledge management.
+The [Introduction to Microsoft Syntex](/training/modules/syntex-intro) learning path will teach how you can use unstructured, freeform, and unstructured document processing models to classify documents, extract text, and label your documents for quick and easy knowledge management.
 
 ## Create the solution
 
