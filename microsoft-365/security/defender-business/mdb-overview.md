@@ -73,3 +73,4 @@ With Defender for Business, you can help protect the devices and data your busin
 - [Try the interactive guide: Get started with Defender for Business](https://aka.ms/MDB-GetStartedGuide)
 - [Learn more about the simplified configuration process in Defender for Business](mdb-simplified-configuration.md)
 - [Find out how to get Defender for Business](get-defender-business.md)
+- [Get an overview of Microsoft 365 Business Premium](../../business-premium/index.md)
