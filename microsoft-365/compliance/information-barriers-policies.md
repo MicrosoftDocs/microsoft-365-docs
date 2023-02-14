@@ -506,7 +506,7 @@ When the cmdlet finishes, Contoso is compliant with industry requirements.
 ## Resources
 
 - [Learn about information barriers](information-barriers.md)
-- [Use multi-segment support in information barriers](information-barriers-multi-support.md)
+- [Use multi-segment support in information barriers](information-barriers-multi-segment.md)
 - [Learn more about information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [Learn more about information barriers in SharePoint Online](/sharepoint/information-barriers)
 - [Learn more about information barriers in OneDrive](/onedrive/information-barriers)
