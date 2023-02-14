@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 01/23/2023
+ms.date: 02/14/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -83,24 +83,21 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
-### November-2022 (Platform: 4.18.2211.5 | Engine: 1.1.19900.2)
+### January-2023
 
-- Security intelligence update version: **1.381.144.0** 
-- Release date: **December 8, 2022**
-- Platform: **4.18.2211.5** 
-- Engine: **1.1.19900.2**
+### November-2022  (Platform: 4.18.2301.6 | Engine: 1.1.120000.2)
+
+- Security intelligence update version: **1.379.1493.x** 
+- Release date: **February 14, 2023**
+- Platform: **4.18.2301.6** 
+- Engine: **1.1.120000.2**
 - Support phase: **Security and Critical Updates**
 
 #### What's new
 
-- Enhanced threat protection capabilities
-- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities
-- Enhanced enabling of tamper protection for newly onboarded devices
-- Improved reporting for [cloud protection](cloud-protection-microsoft-defender-antivirus.md)
-- Improved [controlled folder access](controlled-folders.md) notifications
-- Improved scanning of network shares
-- Enhanced processing of host files containing a wild card
-- Improved performance for [scan events](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- Improved [ASR rule](attack-surface-reduction-rules-reference.md) processing logic
+- Updated Sense token hardening
+- Improved [Defender CSP](/windows/client-management/mdm/defender-csp) module update channel logic
 
 #### Known Issues
 
@@ -132,15 +129,19 @@ All our updates contain
 
 - None  
 
-### September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.
+
+#### September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)
 
 - Security intelligence update version: **1.377.8.0**
 - Release date: **October 10, 2022**
 - Platform: **4.18.2209.7**
 - Engine: **1.1.19700.3**
-- Support phase: **Security and Critical Updates**
+- Support phase: **Technical upgrade support (only)**
 
-#### What's new
+##### What's new
 
 - Improved processing of Defender fallback order on Server SKU
 - Fixed Defender updates during OOBE process
@@ -155,13 +156,9 @@ All our updates contain
 - Improved logging for scanning FilesStash location
 - Beginning with platform version 4.18.2208.0 and later: If a server has been [onboarded to Microsoft Defender for Endpoint](onboard-configure.md#onboard-devices-to-the-service), the "Turn off Windows Defender" [group policy setting](configure-endpoints-gp.md#update-endpoint-protection-configuration) will no longer completely disable Windows Defender Antivirus on Windows Server 2012 R2 and later operating systems. Instead, it will be either ignored (if [ForceDefenderPassiveMode](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) is configured explicitly) or it will place Microsoft Defender Antivirus into [passive mode](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) (if `ForceDefenderPassiveMode` isn't configured). Moreover, [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) will allow a switch to active mode via changing `ForceDefenderPassiveMode` to `0`, but not to passive mode. These changes apply only to servers onboarded to Microsoft Defender for Endpoint. For more information, please refer to [Microsoft Defender Antivirus compatibility with other security products](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
 
-#### Known Issues
+##### Known Issues
 
 - Some customers might have received platform updates 4.18.2209.2 from preview. It can cause the service to get stuck at the start state after the update.  
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.
 
 #### August-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)
 
