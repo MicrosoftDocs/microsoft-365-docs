@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 01/26/2023
+ms.date: 02/14/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -33,6 +33,8 @@ To get Defender for Business, you can choose from several options:
 - Try or buy the standalone version of Defender for Business.
 - Get Microsoft 365 Business Premium, which includes Defender for Business.
 - Work with a Microsoft partner who can help you get everything set up and configured.
+
+Use the following tabs to learn more about each option.
 
 # [Get Defender for Business (standalone)](#tab/getmdb)
 
