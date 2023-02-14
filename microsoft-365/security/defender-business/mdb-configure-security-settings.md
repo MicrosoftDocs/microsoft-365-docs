@@ -99,13 +99,15 @@ There are three standard attack surface reduction rules you should turn on as so
 
 ## Set up web content filtering
 
-Web content filtering enables your security team to track and regulate access to websites based on content categories, such as:
+Web content filtering enables your security team to track and regulate access to websites based on content categories, as described in the following table:
 
-- Adult content: Sites that are related to cults, gambling, nudity, pornography, sexually explicit material, or violence
-- High bandwidth: Download sites, image sharing sites, or peer-to-peer hosts
-- Legal liability: Sites that include child abuse images, promote illegal activities, foster plagiarism or school cheating, or that promote harmful activities
-- Leisure: Sites that provide web-based chat rooms, online gaming, web-based email, or social networking
-- Uncategorized: Sites that have no content or that are newly registered
+| Category | Description |
+|:---|:---|
+| Adult content | Sites that are related to cults, gambling, nudity, pornography, sexually explicit material, or violence |
+| High bandwidth | Download sites, image sharing sites, or peer-to-peer hosts |
+| Legal liability | Sites that include child abuse images, promote illegal activities, foster plagiarism or school cheating, or that promote harmful activities |
+| Leisure | Sites that provide web-based chat rooms, online gaming, web-based email, or social networking |
+| Uncategorized | Sites that have no content or that are newly registered |
 
 Not all websites in these categories are malicious, but they could be problematic for your company because of compliance regulations, bandwidth usage, or other concerns. You can create an audit-only policy to get a better understanding of whether your security team should block any website categories.
 
