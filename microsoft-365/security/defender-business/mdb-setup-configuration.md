@@ -35,7 +35,8 @@ Defender for Business provides a streamlined setup and configuration experience,
 
 The following diagram depicts the overall setup and configuration process for Defender for Business. 
 
-If you used the setup wizard, then you've likely already completed steps 1-3, and possibly step 4. 
+> [!TIP]
+> If you used the setup wizard, then you've likely already completed steps 1-3, and possibly step 4. 
 
 :::image type="content" source="media/mdb-setup-process.png" alt-text="Setup and configuration for Defender for Business.":::
 
