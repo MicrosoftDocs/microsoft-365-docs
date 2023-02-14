@@ -6,9 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date: 
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -24,6 +22,7 @@ ms.custom:
 description: Learn about Microsoft Defender for Office 365 for files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/05/2022
 ---
 
 # Safe Attachments for SharePoint, OneDrive, and Microsoft Teams

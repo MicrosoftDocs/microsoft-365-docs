@@ -80,8 +80,6 @@
          href: archive-linkedin-data.md
        - name: Physical badging data (preview)
          href: import-physical-badging-data.md
-       - name: Slack eDiscovery (preview)
-         href: archive-slack-data-microsoft.md
        - name: Twitter (preview)
          href: archive-twitter-data-with-sample-connector.md
    - name: Veritas data connectors
@@ -270,6 +268,8 @@
             href: insider-risk-management-forensic-evidence-configure.md
           - name: Manage forensic evidence (preview)
             href: insider-risk-management-forensic-evidence-manage.md
+        - name: Help dynamically mitigate risks with Adaptive Protection (preview)
+          href: insider-risk-management-adaptive-protection.md
         - name: Learn about and configure browser signal detection
           href: insider-risk-management-browser-support.md
         - name: Review activities with the insider risk audit log
@@ -1181,8 +1181,10 @@
             href: dlp-firefox-extension-learn.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
-          - name: Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
+          - name: Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec
             href: dlp-migration-assistant-for-symantec-learn.md
+          - name: Learn about adaptive protection in data loss prevention (preview)
+            href: dlp-adaptive-protection-learn.md
         - name: Plan for DLP
           items:
           - name: Plan for data loss prevention
@@ -1193,14 +1195,12 @@
             href: dlp-policy-reference.md 
         - name: Get started with DLP
           items:
+          - name: Create and deploy data loss prevention policies
+            href: dlp-create-deploy-policy.md
           - name: Configure endpoint data loss prevention settings
             href: dlp-configure-endpoint-settings.md
           - name: Get started with the default DLP policy
             href: get-started-with-the-default-dlp-policy.md
-          - name: Create a DLP policy from a template
-            href: create-a-dlp-policy-from-a-template.md
-          - name: Create, test, and tune a DLP policy
-            href: create-test-tune-dlp-policy.md
           - name: Get started with data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-get-started.md
           - name: Get started with Endpoint data loss prevention
@@ -1215,7 +1215,7 @@
             href: dlp-alerts-dashboard-get-started.md
           - name: Get started with Data loss prevention policies for Power BI (preview)
             href: dlp-powerbi-get-started.md
-          - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
+          - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec
             href: dlp-migration-assistant-for-symantec-get-started.md  
         - name: Use DLP
           items:
@@ -1253,7 +1253,7 @@
               href: dlp-share-alerts.md
             - name: Test your DLP policies (preview)
               href: dlp-test-dlp-policies.md
-            - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
+            - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec
               href: dlp-migration-assistant-for-symantec-use.md       
 - name: Manage data lifecycle & records
   items: 

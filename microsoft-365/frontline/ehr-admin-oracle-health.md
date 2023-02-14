@@ -1,8 +1,8 @@
 ---
-title: Virtual Appointments with Teams - Integration into Cerner EHR
-author: LanaChin
-ms.author: v-lanachin
-manager: samanro
+title: Virtual Appointments with Teams - Integration into Oracle Health EHR
+author: samanro
+ms.author: samanro
+manager: pamgreen
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -26,28 +26,28 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.reviewer: ansantam 
-description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Cerner EHR system.
+description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Oracle Health EHR system.
 ms.date: 01/11/2023
 ---
 
-# Virtual Appointments with Teams - Integration into Cerner EHR
+# Virtual Appointments with Teams - Integration into Oracle Health EHR
 
-The Microsoft Teams Electronic Health Record (EHR) connector makes it easy for clinicians to launch a virtual patient appointment or consult with another provider in Microsoft Teams directly from the Cerner EHR system. Built on the Microsoft 365 cloud, Teams enables simple, secure collaboration and communication with chat, video, voice, and healthcare tools in a single hub that supports compliance with HIPAA, HITECH certification, and more.
+The Microsoft Teams Electronic Health Record (EHR) connector makes it easy for clinicians to launch a virtual patient appointment or consult with another provider in Microsoft Teams directly from the Oracle Health EHR system. Built on the Microsoft 365 cloud, Teams enables simple, secure collaboration and communication with chat, video, voice, and healthcare tools in a single hub that supports compliance with HIPAA, HITECH certification, and more.
 
 The communication and collaboration platform of Teams makes it easy for clinicians to cut through the clutter of fragmented systems so they can focus on providing the best possible care. With the Teams EHR connector, you can:
 
-- Conduct Teams Virtual Appointments from your Cerner EHR system with an integrated clinical workflow.
+- Conduct Teams Virtual Appointments from your Oracle Health EHR system with an integrated clinical workflow.
 - Enable patients to join Teams Virtual Appointments from email or SMS notifications.
 - View consumption data reports and customizable Call Quality information for EHR-connected appointments.
 
-This article describes how to set up and configure the Teams EHR connector to integrate with the Cerner platform. It also gives you an overview of the Teams Virtual Appointments experience from the Cerner EHR system.
+This article describes how to set up and configure the Teams EHR connector to integrate with the Oracle Health platform. It also gives you an overview of the Teams Virtual Appointments experience from the Oracle Health EHR system.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d6gj]
 
 ## Before you begin
 
 > [!NOTE]
-> Make sure you talk to your Cerner representative and review your Cerner integration guide before you enable the integration.
+> Make sure you talk to your Oracle Health representative and review your Oracle Health integration guide before you enable the integration.
 
 ### Prerequisites
 
@@ -58,7 +58,7 @@ Before you integrate the Teams EHR connector in your healthcare organization, yo
 - Teams is adopted and used in your healthcare organization.
 - Identified a person in your organization who is a Microsoft 365 global admin with access to the [Teams admin center](https://admin.teams.microsoft.com).
 - Your systems meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
-- Cerner version November 2018 or later
+- Oracle Health version November 2018 or later
 
 ## Set up the Teams EHR connector
 
@@ -76,11 +76,11 @@ The connector setup requires that you:
 
 To get started, your Microsoft 365 admin launches the [EHR connector configuration portal](https://ehrconnector.teams.microsoft.com) and signs in using their Microsoft credentials.
 
-Your Microsoft 365 admin can configure a single department or multiple departments to test the integration. Configure the test and production URL in the configuration portal. Make sure to test the integration from the Cerner test environment before moving to production.
+Your Microsoft 365 admin can configure a single department or multiple departments to test the integration. Configure the test and production URL in the configuration portal. Make sure to test the integration from the Oracle Health test environment before moving to production.
 
 ### Enter configuration information
 
-Next, to set up the integration, your Microsoft 365 admin adds a Fast Health Interoperability Resources (FHIR) base URL from Cerner and specifies the environment. Configure as many FHIR base URLs as needed, depending on your organization’s needs and the environments you want to test.
+Next, to set up the integration, your Microsoft 365 admin adds a Fast Health Interoperability Resources (FHIR) base URL from Oracle Health and specifies the environment. Configure as many FHIR base URLs as needed, depending on your organization’s needs and the environments you want to test.
 
 :::image type="content" source="media/ehr-admin-cerner-configuration.png" alt-text="Screenshot of the Configuration information page of the Teams EHR connector configuration portal." lightbox="media/ehr-admin-cerner-configuration.png":::
 
@@ -123,19 +123,19 @@ To enable SMS notifications, your Microsoft 365 admin completes the following st
 
 ### Review and finish the configuration
 
-You'll be presented with integration records for patient and provider launch. These records are necessary to complete the virtual appointments configuration in Cerner. For more information, see the Cerner-Microsoft Teams Telehealth Integration guide.
+You'll be presented with integration records for patient and provider launch. These records are necessary to complete the virtual appointments configuration in Oracle Health. For more information, see the Oracle Health-Microsoft Teams Telehealth Integration guide.
 
 > [!NOTE]
 > At any time, your Microsoft 365 admin can sign in to the configuration portal to view integration records and change configuration settings, if needed.
 
 ## Launch Teams Virtual Appointments
 
-After completing the EHR connector steps and Cerner configuration steps, your organization is ready to support video appointments with Teams.
+After completing the EHR connector steps and Oracle Health configuration steps, your organization is ready to support video appointments with Teams.
 
 ### Virtual Appointments prerequisites
 
 - Your systems must meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
-- You completed the integration setup between the Cerner organization and your Microsoft 365 organization.
+- You completed the integration setup between the Oracle Health organization and your Microsoft 365 organization.
 
 ### Provider experience
 

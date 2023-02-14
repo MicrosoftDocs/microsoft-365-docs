@@ -22,7 +22,9 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 05/26/2021
 ---
+
 # Microsoft 365 Defender integration with Microsoft Sentinel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]

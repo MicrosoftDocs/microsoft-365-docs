@@ -11,7 +11,7 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: MET150
-mscollection:
+ms.collection:
 - tier3
 - purview-compliance
 ms.custom:
@@ -55,17 +55,15 @@ When you sign up for either a free trial, or a subscription, you must enable Azu
 
 ## Using the Service Trust Portal
 
-The Service Trust Portal features and content are accessible from the main menu.
+The Service Trust Portal features and content are accessible from the main menu. The following sections describe each item in the main menu.
 
-![Service Trust Portal - Service Trust Portal main menu.](../media/86b754e1-c63c-4514-89ac-d014bf334140-2.png)
-
-The following sections describe each item in the main menu.
+:::image type="content" alt-text="Screenshot of the Service Trust Portal - main menu." source="../media/stp-menu.png":::
 
 ### Service Trust Portal
 
 The **Service Trust Portal** link displays the home page. It provides a quick way to get back to the home page.
 
-### Certifications, Regulations and Standards
+#### Certifications, Regulations and Standards
 
 Provides a wealth of security implementation and design information with the goal of making it easier for you to meet regulatory compliance objectives by understanding how Microsoft Cloud services keep your data secure. To review content, select one of the following tiles.
 
@@ -79,7 +77,7 @@ Provides a wealth of security implementation and design information with the goa
 - **Singapore MTCS** - Multi-Tier Cloud Security (MTCS) Singapore Standard
 - **Spain ENS** - Spain Esquema Nacional de Seguridad (ENS)
 
-### Reports, Whitepapers, and Artifacts
+#### Reports, Whitepapers, and Artifacts
 
 General documents relating to the following categories:
 
@@ -88,7 +86,7 @@ General documents relating to the following categories:
 - **Privacy and Data Protection** - Privacy and Data Protection Resources
 - **FAQ and Whitepapers** - Whitepapers and answers to frequently asked questions
 
-### Industry and Regional Resources
+#### Industry and Regional Resources
 
 Documents the apply to the following industries and regions:
 
@@ -98,7 +96,7 @@ Documents the apply to the following industries and regions:
 - **United States Government** - Resources exclusively for US Government customers
 - **Regional Resources** - Documents describing compliance of Microsoft's online services with various regional policies and regulations
 
-### Resources for your Organization
+#### Resources for your Organization
 
 Documents applying to your organization (restricted by tenant).
 
@@ -119,11 +117,15 @@ Document download view - When viewing the available documents, you can filter th
 > [!NOTE]
 > Many of the files on the STP require acceptance of a license agreement. Some browser-based PDF viewers do not allow Javascript to run, which prevents the license agreement from being displayed and the file from opening.
 
-### All Documents
+#### All Documents
 
 This section displays all available documents. Select the documents to save into your My Library section. Documents are sorted under the same categories shown under Certifications, Standards, Regulations, and Industry Resources. To view all resources for a particular cloud service use the **Cloud Service** filter.
 
-### Search
+#### Restricted Documents
+
+The Service Trust Portal has documents that, given the nature of their content, are available for users with specific permissions. Users with Tenant Admin, Compliance Viewer role or the user set in database are able to see the restricted documents. 
+
+#### Search
 
 Click the magnifying glass in the upper right-hand corner of the Service Trust Portal page to expand the box, enter your search terms, and press **Enter**. The **Search** page is displayed, with the search term displayed in the search box and the search results listed below.
 
