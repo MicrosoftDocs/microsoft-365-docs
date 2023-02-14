@@ -26,7 +26,7 @@ ms.collection:
 
 # Strengthen your security posture - Track and maintain
 
-Welcome to Phase 4 of [Strengthen your security posture](../security/security-posture-solution-overview.md):**Track and maintain**.
+Welcome to Phase 4 of [Strengthen your security posture](../security/security-posture-solution-overview.md): **Track and maintain**.
 
 This article describes tasks you can undertake to continue to assess and protect your organization.
 
