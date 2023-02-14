@@ -46,7 +46,7 @@ Use this article to guide you in creating automations that are triggered by an e
 
 The following example demonstrates how to create a Flow that is triggered any time a new Alert occurs on your tenant. You'll be guided on defining what event starts the flow and what next action will be taken when that trigger occurs.  
 
-1. Log in to [Microsoft Power Automate](https://flow.microsoft.com).
+1. Log in to [Microsoft Power Automate](https://make.powerautomate.com).
 
 2. Go to **My flows** \> **New** \> **Automated-from blank**.
 
