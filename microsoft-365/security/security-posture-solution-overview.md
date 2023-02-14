@@ -74,4 +74,4 @@ For more information, see [Strengthen your security posture - Track and maintain
 
 ## Next step
 
-- [Strengthen your security posture - Configure capabilities](strengthen-security-posture-configure-capabilities.md)
+- [Phase 1: Configure capabilities](strengthen-security-posture-configure-capabilities.md)
