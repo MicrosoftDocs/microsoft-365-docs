@@ -32,7 +32,7 @@ This article describes capabilities you can use to measure your current security
 
 |Capability |Description|Get started|
 |:----------|:------------|:--------|-------|
-|**Review Microsoft Secure Score** | Microsoft Secure Score reports on the current state of an organization's security posture.|[Secure Score Overview](../security/defender/microsoft-secure-score.md)|
+|**Review Microsoft Secure Score** |Microsoft Secure Score reports on the current state of an organization's security posture, with a higher number indicating more recommended actions taken. You'll see recommended actions for [products included in Secure Score](../security/defender/microsoft-secure-score#products-included-in-secure-score) which you have licenses for and you're given points for taking actions. Your score updated is to reflect the actions you take.|[Secure Score Overview](../security/defender/microsoft-secure-score.md)  <br /><br /> [Check your score](../security/defender/microsoft-secure-score-improvement-actions#check-your-current-score)|
 |**Take Secure Score recommended actions** | |[Take actions to improve your Secure Score](../security/defender/microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score).|
 |**Security recommendations** | |[Security recommendations](../security/defender/microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score).|
 
