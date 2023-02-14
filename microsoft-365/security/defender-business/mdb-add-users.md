@@ -45,6 +45,16 @@ As soon as you have signed up for Defender for Business, your first step is to a
 
 6. On the **Review and finish** page, review the details, and then select **Finish adding** to add the user. If you need to make any changes, choose **Back** to go back to a previous page.
 
+## Make sure MFA is enabled
+
+You must be a Security Administrator, Conditional Access administrator, or Global Administrator to perform this task.
+
+1. Go to the Azure portal ([https://portal.azure.com/](https://portal.azure.com/)) and sign in.
+
+2. Under **Manage Azure Active Directory**, select **View**.
+
+   :::image type="content" source="media/mdb-manage-azuread.png" alt-text="Screenshot showing the View button under the heading Manage Azure Active Directory." lightbox="media/mdb-manage-azuread.png":::
+
 ## Next steps
 
 - Proceed to [Step 3: Assign security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
