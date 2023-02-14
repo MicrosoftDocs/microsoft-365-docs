@@ -60,7 +60,7 @@ For more information, see [Strengthen your security posture - Assess and protect
 
 ## 3. Investigate and improve
 
-Now that you've started to get to know your assets and taken some initial steps to protect them, it's a good time to take a measurement of your current security posture with Microsoft Secure Score. Secure Score reports on the current state of an organization's security posture, when you understand where you are, you can target where you would like to be. Secure score provides visibility into vulnerabilities in your organization and guidance around taking recommended actions. The more recommended actions you take, the higher your score will be.
+Now that you've started to get to know your assets and taken some initial steps to protect them, it's a good time to take a measurement of your current security posture with Microsoft Secure Score. Secure Score reports on the current state of an organization's security posture, provides visibility into vulnerabilities in your organization, and guidance around taking recommended actions. The more recommended actions you take, the higher your score will be.
 
 Defender Vulnerability Management also provides security recommendations for cybersecurity weaknesses identified in your organization and maps them to actionable security recommendations that can be prioritized.
 
@@ -68,7 +68,7 @@ For more information on how to start taking action to investigate and protect ag
 
 ## 4. Track and maintain
 
-Capabilities we already discussed like continually onboarding newly discovered devices and reviewing and prioritizing security recommendations can help to maintain and continue to improve your security posture. The Microsoft 365 Defender portal also provides capabilities to help you keep up to date with new vulnerabilities and provides tools to proactively explore your network for threats.
+Capabilities we already discussed like continually onboarding newly discovered devices and reviewing and prioritizing security recommendations can help to maintain, and continue to improve, your security posture. The Microsoft 365 Defender portal also provides capabilities to help you keep up to date with new vulnerabilities and provides tools to proactively explore your network for threats.
 
 For more information, see [Strengthen your security posture - Track and maintain](strengthen-security-posture-track-maintain.md).
 
