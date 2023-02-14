@@ -347,18 +347,18 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     - For OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls) to help you specify individual OneDrive accounts to include or exclude.
 
-8. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
+8. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including some rules that are only available for Exchange, or SharePoint sites and OneDrive accounts, select **Advanced rules**. Then select **Next**.
 
-    The rules use conditions that include [sensitive information types](sensitive-information-type-learn-about.md), [trainable classifiers](classifier-learn-about.md), and sharing options:
+    The rules use conditions that include [sensitive information types](sensitive-information-type-learn-about.md), [trainable classifiers](classifier-learn-about.md), sharing options, and other conditions that are currently in preview:
     - To select a sensitive information type or trainable classifier as a condition, under **Content contains**, select **Add**, and then choose **Sensitive info types** or **Trainable classifiers**.
     - To select sharing options as a condition, under **Content is shared**, choose either **only with people inside my organization** or **with people outside my organization**.
-    - Other conditions that you can select:
+    - Other conditions (in preview) that you can select:
         - File extension is
         - Document name contains words or phrases
         - Document property is
         - Document size equals or is greater than
 
-    If your location is **Exchange** and you selected **Advanced rules**, there are other conditions that you can select, and then specifiy exceptions for them:
+    If your location is **Exchange** and you selected **Advanced rules**, there are additional conditions that you can select:
     - Sender IP address is
     - Recipient domain is
     - Recipient is
@@ -374,12 +374,12 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     - Sender domain is
     - Recipient is a member of
     - Sender is
-    - Attachment name contains words or phrases
-    - Attachment property is
-    - Attachment size equals or is greater than
+    - Attachment name contains words or phrases (in preview)
+    - Attachment property is (in preview)
+    - Attachment size equals or is greater than (in preview)
 
-    If your location is **SharePoint sites** or **OneDrive accounts** and you selected **Advanced rules**, there is one other condition that you can select and then specifiy exceptions:
-    - Document created by
+    If your location is **SharePoint sites** or **OneDrive accounts** and you selected **Advanced rules**, there is one other condition that you can select:
+    - Document created by (in preview)
 
 9. Depending on your previous choices, you'll now have an opportunity to create new rules by using conditions and exceptions.
 
