@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 12/07/2022
+ms.date: 02/14/2023
 ms.collection: 
 - m365-security
 - tier1
@@ -20,7 +20,7 @@ f1.keywords: NOCSH
 
 # Add users and assign licenses in Microsoft Defender for Business
 
-As soon as you have signed up for Defender for Business, your first step is to add users and assign licenses. This article describes how to add users and includes next steps.
+As soon as you have signed up for Defender for Business, your first step is to add users and assign licenses. This article describes how to add users and assign licenses, and how to make sure multifactor authentication (MFA) is enabled. 
 
 ## Add users and assign licenses
 
@@ -65,7 +65,9 @@ If your tenant was created on or after October 22, 2019, security defaults might
 4. On the right side of the screen, in the **Security defaults** pane, see whether security defaults are turned on (**Enabled**) or off (**Disabled**). To turn security defaults on, use the drop-down menu to select **Enabled**. 
 
    > [!CAUTION]
-   > If your organization is using Conditional Access policies, you won't be able to enable security defaults. You'll see a message that indicates you're using classic policies instead. You can use *either* security defaults *or* Conditional Access, but not both. To learn more, see [Multi-factor authentication](../../business-premium/m365bp-conditional-access.md) (in the Microsoft 365 Business Premium documentation).
+   > If your organization is using Conditional Access policies, you won't be able to enable security defaults. You'll see a message that indicates you're using classic policies instead. You can use *either* security defaults *or* Conditional Access, but not both. For most organizations, security defaults offer a good level of sign-in security. But if your organization must meet more stringent requirements, you can use Conditional Access policies instead. To learn more, see the following articles:
+   > - [Multi-factor authentication](../../business-premium/m365bp-conditional-access.md) (in the Microsoft 365 Business Premium documentation)
+   > - [Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 5. Save your changes.
 
