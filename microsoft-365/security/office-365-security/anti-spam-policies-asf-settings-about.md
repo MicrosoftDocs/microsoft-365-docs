@@ -66,7 +66,7 @@ The following **Increase spam score** ASF settings result in an increase in spam
 |---|---|---|
 |**Image links to remote websites** <p> *IncreaseScoreWithImageLinks*|Messages that contain `<Img>` HTML tag links to remote sites (for example, using http) are marked as spam.|`X-CustomSpam: Image links to remote sites`|
 |**Numeric IP address in URL** <p> *IncreaseScoreWithNumericIps*|Messages that contain numeric-based URLs (typically, IP addresses) are marked as spam.|`X-CustomSpam: Numeric IP in URL`|
-|**URL redirect to other port** <p> *IncreaseScoreWithRedirectToOtherPort*|Message that contain hyperlinks that redirect to TCP ports other than 80 (HTTP), 8080 (alternate HTTP), or 443 (HTTPS) are marked as spam.|`X-CustomSpam: URL redirect to other port`|
+|**URL redirect to other port** <p> *IncreaseScoreWithRedirectToOtherPort*|Messages that contain hyperlinks that redirect to TCP ports other than 80 (HTTP), 8080 (alternate HTTP), or 443 (HTTPS) are marked as spam.|`X-CustomSpam: URL redirect to other port`|
 |**Links to .biz or .info websites** <p> *IncreaseScoreWithBizOrInfoUrls*|Messages that contain `.biz` or `.info` links in the body of the message are marked as spam.|`X-CustomSpam: URL to .biz or .info websites`|
 
 ## Mark as spam settings
@@ -76,7 +76,7 @@ The following **Mark as spam** ASF settings set the SCL of detected messages to 
 |Anti-spam policy setting|Description|X-header added|
 |---|---|---|
 |**Empty messages** <p> *MarkAsSpamEmptyMessages*|Messages with no subject, no content in the message body, and no attachments are marked as high confidence spam.|`X-CustomSpam: Empty Message`|
-|**Embedded tags in HTML** <p> *MarkAsSpamEmbedTagsInHtml*|Message that contain `<embed>` HTML tags are marked as high confidence spam. <p> This tag allows the embedding of different kinds of documents in an HTML document (for example, sounds, videos, or pictures).|`X-CustomSpam: Embed tag in html`|
+|**Embedded tags in HTML** <p> *MarkAsSpamEmbedTagsInHtml*|Messages that contain `<embed>` HTML tags are marked as high confidence spam. <p> This tag allows the embedding of different kinds of documents in an HTML document (for example, sounds, videos, or pictures).|`X-CustomSpam: Embed tag in html`|
 |**JavaScript or VBScript in HTML** <p> *MarkAsSpamJavaScriptInHtml*|Messages that use JavaScript or Visual Basic Script Edition in HTML are marked as high confidence spam. <p> These scripting languages are used in email messages to cause specific actions to automatically occur.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
 |**Form tags in HTML** <p> *MarkAsSpamFormTagsInHtml*|Messages that contain `<form>` HTML tags are marked as high confidence spam. <p> This tag is used to create website forms. Email advertisements often include this tag to solicit information from the recipient.|`X-CustomSpam: Form tag in html`|
 |**Frame or iframe tags in HTML** <p> *MarkAsSpamFramesInHtml*|Messages that contain `<frame>` or `<iframe>` HTML tags are marked as high confidence spam. <p> These tags are used in email messages to format the page for displaying text or graphics.|`X-CustomSpam: IFRAME or FRAME in HTML`|
