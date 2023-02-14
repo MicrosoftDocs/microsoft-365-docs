@@ -77,9 +77,7 @@ Here's a list of applicable role groups that you can use. To learn more about th
 - Information Protection Investigators
 - Information Protection Readers
 
-<!--
-> [!IMPORTANT]
-> Access to Activity explorer via the Security Reader or Device Management role groups or other has been removed--> 
+<!--- Access to Activity explorer via the Security Reader or Device Management role groups or other has been removed ---> 
 
 **Microsoft 365 role groups**
 
