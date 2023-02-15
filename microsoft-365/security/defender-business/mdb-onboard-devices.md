@@ -173,7 +173,7 @@ When you run the local script on Mac:
 
 ```bash
 /usr/bin/unzip WindowsDefenderATPOnboardingPackage.zip \
-&& /bin/chmod -x MicrosoftDefenderATPOnboardingMacOs.sh \
+&& /bin/chmod +x MicrosoftDefenderATPOnboardingMacOs.sh \
 && /bin/bash -c MicrosoftDefenderATPOnboardingMacOs.sh
 ```
 
