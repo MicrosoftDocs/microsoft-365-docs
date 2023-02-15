@@ -109,14 +109,16 @@ You can view and explore a list of capture clips from several places in Microsof
 |All activities performed by users included in forensic evidence policies|User activity report dashboard|
 |Alerts that are escalated to cases|Cases dashboard|
 
-You can also explore a complete list of capture clips from the top-level **Forensics evidence** tab. 
+You can also explore a complete list of capture clips from the top-level **Forensics evidence** tab by selecting the **Investigate forensic captures** button. 
 
 > [!IMPORTANT]
-> You must have the Insider Risk Management Investigator's role and the admin role? to view capture clips. [Learn more about role groups](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
+> You must have the Insider Risk Management Investigator's role ???and the admin role??? to view capture clips. You won't see the **Investigate forensic captures** button and you won't be able to access capture clips from the Alerts dashboard, User activity dashboard, or Cases dashboard if you don't have both of these roles. [Learn more about role groups](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
+
+Each capture clip contains events to help focus your review on specific activities for the capturing session/
 
 SCREENSHOT GOES HERE SHOWING DEFAULT VIEW
 
-Each capture clip contains events to help focus your review on specific activities for the capturing session, which includes the following information:
+The capture clips list includes the following information:
 
 - **Date/time (UTC)**: The date, time (UTC), and duration of the capture.
 - **Device**: The name of the device in Windows 10/11.
@@ -132,10 +134,6 @@ When you select any row in the capture list, Microsoft Purview Insider Risk Mana
 
 >[!IMPORTANT]
 >Forensic evidence clips are deleted 120 days after they're captured. You can download or transfer forensic evidence clips before they're deleted.
-
-
-
-Selecting the **Investigate forensic recordings** button provides immediate access to all available captures. 
 
 ### Delete a clip
 
