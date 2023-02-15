@@ -75,7 +75,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 |	`ExposureLevel` | `string` | Indicates the exposure level of a device |
 
 
-The `DeviceInfo` table provides device information based on heartbeats, which are periodic reports or signals from a device. Every fifteen minutes, the device sends a partial heartbeat that contains frequently changing attributes like `LoggedOnUsers`. Once a day, a full heartbeat containing the device's attributes is sent.
+The `DeviceInfo` table provides device information based on periodic reports or signals (heartbeats) from a device. Complete reports are sent every hour and every time a change happens to a previous heartbeat. 
 
 You can use the following sample query to get the latest state of a device:
 
