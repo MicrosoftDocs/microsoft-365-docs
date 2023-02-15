@@ -64,7 +64,7 @@ For information about setting site collection storage limits, see [Manage site c
 If you haven't yet bought extra storage for your subscription, you can do that.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. On the **Your Products** page, select the subscription that contains **Sharepoint Online Plan 1** or **Sharepoint Online Plan 2**.
+2. On the **Your Products** page, select the subscription that contains **SharePoint Online Plan 1** or **SharePoint Online Plan 2**.
 3. In the **Product details and upgrade** section, select **View apps and services included with this subscription**.
 4. Select the **Add-ons** tab,  find **Office 365 Extra File Storage**, and select **Details**.
 5. On the product details page, select **Next** and **Enter the number of gigabytes of storage** you want to add.
