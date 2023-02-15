@@ -101,38 +101,41 @@ To delete an existing notification template, select a template and select **Dele
 
 ## Viewing capture clips
 
-You can view captured clips by selecting the **Investigate forensic recordings** button when you're using the **Forensic evidence (preview)** tab.  
+You can view and explore a list of capture clips from several places in Microsoft Purview Insider Risk Management. The following table shows where you can access the capture clips:
 
-SCREENSHOT OF BUTTON GOES HERE
+|Type of capture|Where the capture appears|
+------------------------------|----------------------------------------------|
+|Specific activities defined by indicators selected in forensic evidence policies|Alerts dashboard|
+|All activities performed by users included in forensic evidence policies|User activity report dashboard|
+|Alerts that are escalated to cases|Cases dashboard|
+
+You can also explore a complete list of capture clips from the top-level **Forensics evidence** tab. 
 
 > [!IMPORTANT]
-> This button only appears if you're a member of the Insider Risk Management Investigator's role or the Insider Risk Management role. [Learn more about role groups](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
-
-Selecting the **Investigate forensic recordings** button provides immediate access to all available captures. 
+> You must have the Insider Risk Management Investigator's role and the admin role? to view capture clips. [Learn more about role groups](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
 
 SCREENSHOT GOES HERE SHOWING DEFAULT VIEW
 
-Each capture contains events within the capture to help focus your review on specific activities for the capturing session, which includes the following information:
+Each capture clip contains events to help focus your review on specific activities for the capturing session, which includes the following information:
 
-- **Date**: The date, time (UTC), and duration of the capture.
-- **User**: The name of the user.
-- **Device name**: The name of the device in Windows 10/11.
-- **Activity**: The insider risk management activity type included in the capture. These activities are based on global and policy indicators assigned to the associated policy.
-- **Application accessed**: The application that the user was accessing when the event took place.
-- **URL accessed**: The URL that the user was accessing when the event took place.
+- **Date/time (UTC)**: The date, time (UTC), and duration of the capture.
+- **Device**: The name of the device in Windows 10/11.
+- **Activities**: The insider risk management activity type included in the capture. These activities are based on global and policy indicators assigned to the associated policy.
+- **User**: The name of the user().
+- **URL**: The URL that the user was accessing when the event took place.
+- **Application**: The application that the user was accessing when the event took place.
 - **Active window title**: The title of the window that the user was accessing when the event took place.
 
-You can use the filters at the top of the screen to filter for the user or users that you want to focus on. 
-When you apply filters, you see:
+You can also use the filters at the top of the screen to filter for the specific activities and information that you want to focus on.
 
-- A list of capture events on the left
-- A clip player in the middle of the screen
-- A transcript to the right of the clip player that appears when you select a capture event. A set of filters appears above the transcript so you can filter the transcript. 
-
-SCREENSHOT GOES HERE SHOWING FILTER APPLIED
+When you select any row in the capture list, Microsoft Purview Insider Risk Management displays a clip player in the middle of the screen and a transcript to the right of the clip player. A set of filters appears above the transcript to help you filter for specfiic events and activities within the transcript. 
 
 >[!IMPORTANT]
->Forensic evidence clips are deleted 120 days after they're captured or at the end of the preview period, whichever is sooner. You can download or transfer forensic evidence clips before they're deleted.
+>Forensic evidence clips are deleted 120 days after they're captured. You can download or transfer forensic evidence clips before they're deleted.
+
+
+
+Selecting the **Investigate forensic recordings** button provides immediate access to all available captures. 
 
 ### Delete a clip
 
