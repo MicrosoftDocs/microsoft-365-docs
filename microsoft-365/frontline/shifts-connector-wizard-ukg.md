@@ -100,22 +100,15 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
     :::image type="content" source="media/shifts-connector-wizard-ukg-sync-settings.png" alt-text="Screenshot of the Sync settings page of the wizard, showing sync settings." lightbox="media/shifts-connector-wizard-ukg-sync-settings.png":::
 <a name="email"> </a>
 1. Under **Email notification recipients**, choose who receives email notifications about this connection instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connection instance is set up.
-1. Next you'll need to choose what UKG Dimensions data your users can see and change. For each field you can choose from the following options:
-    1. **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts.
-    1. **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts.
-    1. **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
-1. Choose your settings for:
-    1. **Schedules, groups, shifts, and activities**
-    1. **Open shifts**
-    1. **Time off**
-    1. **Employee availability**
-1. Then choose your sync frequency.
-1. Under **Time card**, choose whether users can post time card entries.
-1. Under **Requests**, choose your settings for:
-    1. **Swap requests**
-    1. **Offer shifts requests**
-    1. **Open shifts requests**
-    1. **Time off requests**
+
+> [!TIP]
+> You'll be given the following options for the next group of settings:
+> **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts.
+> **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts.
+> **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
+
+1. Choose your basic, **Time card**, and **Request** settings from the options listed above.
+1. Then, choose your sync frequency.
 
     > [!IMPORTANT]
     > If you chose any of the following options to disable open shifts, open shift requests, swap requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
@@ -133,20 +126,21 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
 
 Choose the UKG Dimensions instances that you want to connect to Shifts, and then map each WFM instance to a team in Teams. You can map up to 400 instances.
 
-- [Manually map instances to teams](#manually-map-instances-to-teams)
-
-<a name="map_manual"> </a>
-##### Manually map instances to teams
-
 :::image type="content" source="media/shifts-connector-wizard-ukg-sites.png" alt-text="Screenshot of wizard, showing the list of UKG Dimensions instances." lightbox="media/shifts-connector-wizard-ukg-sites.png":::
 
 :::image type="content" source="media/shifts-connector-wizard-ukg-search-team.png" alt-text="Screenshot of the pane showing the search team option and create a new team option." lightbox="media/shifts-connector-wizard-ukg-search-team.png":::
 
-[!INCLUDE [shifts-connector-manually-map-instances](includes/shifts-connector-manually-map-instances.md)]
+1. On the **Mapping** page, start by choosing which WFM instance(s) you want to map to Microsoft Teams team(s).
+1. Tick the checkbox for each WFM instance you want to map. Instances will only map if you check their boxes.
+1. Next, search for and choose the correct Microsoft Teams team.
+
+    Keep in mind that teams that are already mapped to a WFM instance in this connection instance won't be available to map again.
+1. Choose the time zone. The closest city will be automatically filled in, but you can change it.
+1. When you've mapped all your teams, select **Next**.
 
 ### Review and finish
 
-Before finishing, review the summary of the connection instance creation process. If you need to make changes to any team mappings, choose **Edit**. When you're ready, select **Finish**.
+Before finishing, review the summary of the connection instance creation process. If you need to make changes to any team mappings, choose **Back**. When you're ready, select **Finish**.
 
 :::image type="content" source="media/shifts-connector-wizard-ukg-review.png" alt-text="Screenshot of the Review page of the wizard, showing mappings." lightbox="media/shifts-connector-wizard-ukg-review.png":::
 
@@ -154,7 +148,9 @@ You’ll see a message to confirm that we received your request.
 
 :::image type="content" source="media/shifts-connector-wizard-ukg-operation-id.png" alt-text="Screenshot of the wizard page, showing confirmation message and operation ID." lightbox="media/shifts-connector-wizard-ukg-operation-id.png":::
 
-The wizard starts the process to set up the connection instance. This process may take some time to complete. The email notification recipients you chose will receive email notifications about setup status in case there are any errors. You'll also receive email confirmation that your request was received, along with a link to how you can check setup status.
+The wizard starts the process to set up the connection instance. This process may take some time to complete. If you try to edit the connection instance before the setup is complete, you won't be able to conclude the process.
+
+The email notification recipients you chose will receive email notifications about setup status in case there are any errors.
 
 Select **Done** to exit the wizard.
 
