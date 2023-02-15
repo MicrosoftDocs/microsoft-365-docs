@@ -59,7 +59,7 @@ We understand that taking automatic action sometimes comes with hesitation from 
 Investigations are integral to monitoring our signals and the attack threat landscape to ensure high quality and accurate protection.
 
 > [!TIP]
-> This article describes how attack disruption works. To configure these capabilities, see [Configure attack disruption capabilities in Microsoft 365 Defender.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
+> This article describes how attack disruption works. To configure these capabilities, see [Configure attack disruption capabilities in Microsoft 365 Defender.](/microsoft-365/security/defender/configure-attack-disruption.md)
 
 ## Automated response actions
 In automatic attack disruption, we leverage Microsoft-based XDR response actions. Examples of these actions are:
