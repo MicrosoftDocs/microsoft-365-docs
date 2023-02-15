@@ -174,20 +174,20 @@ For step-by-step instructions to turn on auditing, see [Turn audit log search on
 
 ## Step 3 (optional): Set up groups for communication compliance
 
- When you create a communication compliance policy, you define who has their communications reviewed and who performs reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, you can create groups for people who have their communication reviewed and groups for people who review those communications. If you're using groups, you may need several. For example, if you want to detect communications between two distinct groups of people or if you want to specify a group that isn't going to be supervised.
+ When you create a communication compliance policy, you define who has their communications reviewed and who performs reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, you can create groups for people who have their communication reviewed and groups for people who review those communications. If you're using groups, you may need several. For example, if you want to detect communications between two distinct groups of people or if you want to specify a group that isn't going to be scoped.
 
 Use the following chart to help you configure groups in your organization for communication compliance policies:
 
 | **Policy Member** | **Supported Groups** | **Unsupported Groups** |
 |:-----|:-----|:-----|
-|Supervised users <br> Excluded users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups <br> Shared mailbox <br> Nested distribution groups <br> Mail-enabled security groups <br> Microsoft 365 groups with dynamic membership |
+|Scoped users <br> Excluded users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups <br> Shared mailbox <br> Nested distribution groups <br> Mail-enabled security groups <br> Microsoft 365 groups with dynamic membership |
 | Reviewers | None | Distribution groups <br> Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups |
 
 When you assign a *distribution group* in the policy, the policy detects all emails and Teams chats from each user in the *distribution group*. When you assign a *Microsoft 365 group* in the policy, the policy detects all emails and Teams chats sent to the *Microsoft 365 group*,* not the individual emails and chats received by each group member. Using distribution groups in communication compliance policies are recommended so that individual emails and Teams chats from each user are automatically detected.
 
-If you're an organization with an Exchange on-premises deployment or an external email provider and you want to detect Microsoft Teams chats for your users, you must create a distribution group for the users with on-premises or external mailboxes. Later in these steps, you'll assign this distribution group as the **Supervised users and groups** selection in the policy wizard. For more information about the requirements and limitations for enabling cloud-based storage and Teams support for on-premises users, see [Search for Teams chat data for on-premises users](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
+If you're an organization with an Exchange on-premises deployment or an external email provider and you want to detect Microsoft Teams chats for your users, you must create a distribution group for the users with on-premises or external mailboxes. Later in these steps, you'll assign this distribution group by using the **Choose users and groups** selection in the policy wizard. For more information about the requirements and limitations for enabling cloud-based storage and Teams support for on-premises users, see [Search for Teams chat data for on-premises users](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
-To manage supervised users in large enterprise organizations, you may need to detect messages for all users across large groups. You can use PowerShell to configure a distribution group for a global communication compliance policy for the assigned group. This enables you to detect messages for thousands of users with a single policy and keep the communication compliance policy updated as new employees join your organization.
+To manage scoped users in large enterprise organizations, you may need to detect messages for all users across large groups. You can use PowerShell to configure a distribution group for a global communication compliance policy for the assigned group. This enables you to detect messages for thousands of users with a single policy and keep the communication compliance policy updated as new employees join your organization.
 
 1. Create a dedicated [distribution group](/powershell/module/exchange/new-distributiongroup) for your global communication compliance policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
 
@@ -250,7 +250,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Confirm or update the policy name. Policy names can't be changed once the policy is created.
 
-    - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude. When using the conflict of interest template, you'll select two groups or two users to detect internal communications.
+    - Choose the users or groups to apply the policy to, including the users or groups you'd like to exclude. When using the conflict of interest template, you'll select two groups or two users to detect internal communications.
 
     - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 
@@ -263,7 +263,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Give the policy a name and description. Policy names can't be changed once the policy is created.
 
-    - Choose the users or groups to supervise, including all users in your organization, specific users and groups, or other users and groups you'd like to exclude.
+    - Choose the users or groups to apply the policy to, including all users in your organization, specific users and groups, or other users and groups you'd like to exclude.
 
     - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 
@@ -275,7 +275,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Choose if you'd like to include sensitive information types. This step is where you can select default and custom sensitive info types. Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard. You can create these items before running the wizard if needed. You can also create new sensitive information types from within the communication compliance policy wizard.
     
-    - Choose if you'd like to enable classifiers. Classifiers can detect potentially inappropriate language and images sent or received in the body of email messages or other types of text. You can choose the following built-in classifiers: *Threat*, *Profanity*, *Targeted harassment*, *Adult images*, *Racy images*, and *Gory images*.
+    - Choose if you'd like to enable classifiers. Classifiers can detect potentially inappropriate language and images sent or received in the body of email messages or other types of text. You can choose the following built-in classifiers: *Targeted threat*, *Profanity*, *Targeted harassment*, *Adult images*, *Racy images*, and *Gory images*.
 
     - Enable [optical character recognition (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) to identify embedded or attached images in messages for printed or handwritten text that match policy conditions. For custom policies, one or more conditional settings associated with text, keywords, classifiers, or sensitive info types must be configured in the policy to enable the selection of optical character recognition (OCR) documents.
 
@@ -340,7 +340,7 @@ After you create a communication compliance policy, it's a good idea to test it 
 
 Follow these steps to test your communication compliance policy:
 
-1. Open an email client, Microsoft Teams, or Yammer while signed in as a supervised user defined in the policy you want to test.
+1. Open an email client, Microsoft Teams, or Yammer while signed in as a scoped user defined in the policy you want to test.
 
 2. Send an email, Microsoft Teams chat, or Yammer message that meets the criteria you've defined in the communication compliance policy. This test can be a keyword, attachment size, domain, etc. Make sure you determine if your configured conditional settings in the policy are too restrictive or too lenient.
 

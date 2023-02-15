@@ -41,8 +41,6 @@ Today's threat landscape is overrun by [fileless malware](/windows/security/thre
 
 Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution. Next-generation protection, EDR, and Defender for Endpoint components and features work together in behavioral blocking and containment capabilities.
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="The Behavioral blocking and containment in the Microsoft Defender ATP portal" lightbox="images/mdatp-next-gen-EDR-behavblockcontain.png":::
-
 Behavioral blocking and containment capabilities work with multiple components and features of Defender for Endpoint to stop attacks immediately and prevent attacks from progressing.
 
 - [Next-generation protection](microsoft-defender-antivirus-in-windows-10.md) (which includes Microsoft Defender Antivirus) can detect threats by analyzing behaviors, and stop threats that have started running.

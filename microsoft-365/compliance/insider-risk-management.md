@@ -94,14 +94,13 @@ You can select from the following policy templates to quickly get started with i
 - [Data theft by departing users](insider-risk-management-policy-templates.md#data-theft-by-departing-users)
 - [Data leaks](insider-risk-management-policy-templates.md#data-leaks)
 - [Data leaks by priority users (preview)](insider-risk-management-policy-templates.md#data-leaks-by-priority-users-preview)
-- [Security policy violations (preview)](insider-risk-management-policy-templates.md#security-policy-violations-preview)
-- [Patient data misuse (preview)](insider-risk-management-policy-templates.md#patient-data-misuse-preview)
 - [Data leaks by risky users (preview)](insider-risk-management-policy-templates.md#data-leaks-by-risky-users-preview)
 - [Security policy violations (preview)](insider-risk-management-policy-templates.md#security-policy-violations-preview)
-- [Patient data misuse (preview)](insider-risk-management-policy-templates.md#patient-data-misuse-preview)
 - [Security policy violations by departing users (preview)](insider-risk-management-policy-templates.md#security-policy-violations-by-departing-users-preview)
-- [Security policy violations by priority users (preview)](insider-risk-management-policy-templates.md#security-policy-violations-by-priority-users-preview)
 - [Security policy violations by risky users (preview)](insider-risk-management-policy-templates.md#security-policy-violations-by-risky-users-preview)
+- [Security policy violations by priority users (preview)](insider-risk-management-policy-templates.md#security-policy-violations-by-priority-users-preview)
+- [Patient data misuse (preview)](insider-risk-management-policy-templates.md#patient-data-misuse-preview)
+- [Risky browser usage (preview)](insider-risk-management-policy-templates.md#risky-browser-usage-preview)
 
 ![Insider risk management policy dashboard.](../media/insider-risk-policy-dashboard.png)
 

@@ -176,12 +176,14 @@ The Microsoft 365 support integration app executes tests to make sure the integr
 
 Microsoft 365 support integration is enabled for the user with one of these roles:
 
-- x_mioms_m365_assis.insights_user
+- **x_mioms_m365_assis.insights_user**—This role is required to view the **Recommended Solutions & Articles** and **Microsoft Service Health** features in your ServiceNow instance.
 
-- x_mioms_m365_assis.administrator
+- **x_mioms_m365_assis.administrator**—This role is required to escalate your ServiceNow incidents to Microsoft support using your linked Microsoft 365 Admin account. Continue to the following section to link your admin account in the app's settings.
 
-### \[OPTIONAL\] [The user with role x_mioms_m365_assis.administrator link] Link Microsoft 365 Admin account
+### Link Microsoft 365 Admin account
 
-If any user has the role x_mioms_m365_assis.administrator and is using different Microsoft 365 accounts to manage a Microsoft 365 support case, they must set up their Microsoft 365 admin email by going to Microsoft 365 support \> **Link Account**.
+Continue with these instructions if you are looking to escalate your ServiceNow incidents to Microsoft support from your ServiceNow instance via the app.
+
+If any users are provisioned with the role **x_mioms_m365_assis.administrator** and are using different Microsoft 365 accounts to manage a Microsoft 365 support case, they must set up their Microsoft 365 admin email account by navigating to **Microsoft 365 support** > **Link Account**.
 
 :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image21.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image21.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::
