@@ -20,6 +20,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Track and respond to emerging threats through threat analytics

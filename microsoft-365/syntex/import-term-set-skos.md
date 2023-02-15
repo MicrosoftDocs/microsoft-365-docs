@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.service: microsoft-syntex
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
