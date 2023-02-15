@@ -27,7 +27,7 @@ ms.date: 02/15/2023
 
 # Manage self-service purchases and trials (for Admins)
 
-As an admin, you can use the Microsoft 365 admin center to see self-service purchases and trials (referred to in this article as "purchases and trials") made by people in your organization. You can see the product name, purchaser name, subscriptions purchased, expiration date, purchase price, and assigned users for each purchase or trial subscription. You have the same data management and access policies over products bought through self-service purchase or centrally.
+As an admin, you can use the Microsoft 365 admin center to see self-service purchases and trials (referred to in this article as *purchases and trials*) made by people in your organization. You can see the product name, purchaser name, subscriptions purchased, expiration date, purchase price, and assigned users for each purchase or trial subscription. You have the same data management and access policies over products bought through self-service purchase or centrally.
 
 You can also control whether users in your organization can make purchases or sign up for trials. To learn how to manage these settings, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
