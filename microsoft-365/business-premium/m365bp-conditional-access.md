@@ -51,23 +51,26 @@ Security defaults were designed to help protect your company's user accounts fro
 MFA is an important first step in securing your company, and security defaults make enabling MFA easy to implement. If your subscription was created on or after October 22, 2019, security defaults might have been automatically enabled for you&mdash;you should check your settings to confirm.
 
 > [!TIP]
-> For more information about security defaults and the policies they enforce, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+> For more information about security defaults and the policies they enforce, see [Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ### To enable security defaults (or confirm they're already enabled)
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> with security administrator, Conditional Access administrator, or Global admin credentials.
+> [!IMPORTANT]
+> You must be a Security Administrator, Conditional Access administrator, or Global Administrator to perform this task.
 
-2. In the left pane, select **Show All,** and then under **Admin centers**, select **Azure Active Directory**.
+1. Go to the Azure portal ([https://portal.azure.com/](https://portal.azure.com/)) and sign in.
 
-3. In the left pane of the **Azure Active Directory admin center,** select **Azure Active Directory**.
+2. Under **Manage Azure Active Directory**, select **View**.
 
-4. From the left menu of the Dashboard, in the **Manage** section, select **Properties**.
+   :::image type="content" source="../security/defender-business/media/mdb-manage-azuread.png" alt-text="Screenshot showing the VIew button under Manage Azure Active Directory." lightbox="../security/defender-business/media/mdb-manage-azuread.png":::
 
-    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Screenshot of the Azure Active Directory admin center showing the location of the Properties menu item.":::
+3. In the navigation pane, select **Properties**, and then select **Manage security defaults**.
 
-5. At the bottom of the **Properties** page, select **Manage Security defaults**.
+   :::image type="content" source="../security/defender-business/media/mdb-azuread-properties.png" alt-text="Screenshot showing Properties and Manage Security Defaults for Azure Active Directory." lightbox="../security/defender-business/media/mdb-azuread-properties.png":::
 
-6. In the right pane, you'll see the **Enable Security defaults** setting. If **Yes** is selected, then security defaults are already enabled and no further action is required. If security defaults are not currently enabled, then select **Yes** to enable them, and then select **Save**.
+4. On the right side of the screen, in the **Security defaults** pane, see whether security defaults are turned on (**Enabled**) or off (**Disabled**). To turn security defaults on, use the drop-down menu to select **Enabled**. 
+
+5. Save your changes.
 
 # [Conditional Access](#tab/condit)
 
