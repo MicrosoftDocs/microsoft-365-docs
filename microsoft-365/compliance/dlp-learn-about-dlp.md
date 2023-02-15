@@ -81,7 +81,7 @@ A DLP implementation typically follows these major phases.
 
 ### Plan for DLP
 
-DLP monitoring and protection are native to the applications that users use every day. This helps to protect your organizations' sensitive items from risky activities even if your users are unaccustomed to data loss prevention thinking and practices. If your organization and your users are new to data loss prevention practices, the adoption of DLP may require a change to your business processes and there will be a culture shift for your users. But, with proper planning, testing and tuning, your DLP policies will protect your sensitive items while minimizing any potential business process disruptions.
+DLP monitoring and protection are native to the applications that users use every day. This helps to protect your organization's sensitive items from risky activities, even if your users are unaccustomed to data loss prevention thinking and practices. If your organization and your users are new to data loss prevention practices, the adoption of DLP may require a change to your business processes and there will be a culture shift for your users. But, with proper planning, testing and tuning, your DLP policies will protect your sensitive items while minimizing any potential business process disruptions.
 
 **Technology planning for DLP**
 
