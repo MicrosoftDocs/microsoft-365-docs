@@ -327,19 +327,19 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-1.png" alt-text="Select Domains and SSL.":::
 
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-2.png" alt-text="Select DNS from the drop-down list.":::
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
 
 1. Select the **SRV** section.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SRV.png" alt-text="Select the SRV section.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-srv.png" alt-text="Select the SRV section.":::
 
 1. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -350,7 +350,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Save**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SRV-Save.png" alt-text="Select Save.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-srv-save.png" alt-text="Select Save.":::
 
 1. Add the other SRV record.
 
@@ -370,11 +370,11 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-1.png" alt-text="Select Domains and SSL.":::
 
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-2.png" alt-text="Select DNS from the drop-down list.":::
 
    Now you'll create two subdomains and set an **Alias** value for each.
 
@@ -384,11 +384,11 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Select **Subdomains**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Subdomains.png" alt-text="Select Subdomain.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-subdomains.png" alt-text="Select Subdomain.":::
 
 1. Select **Add subdomain**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="Select Add subdomains.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-add-subdomains.png" alt-text="Select Add subdomains.":::
 
 1. In the **Add subdomain** box for the new subdomain, type or copy and paste only the **Add subdomain** value from the following table. (You'll add the **Alias** value in a later step.)
 
@@ -418,7 +418,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
 
 1. Select the **CNAME** section.
 
