@@ -168,7 +168,7 @@ Determine which attributes in your organization's directory data you'll use to d
 ### Enable multiple segment support for users (optional)
 
 > [!IMPORTANT]
-> Support for assigning users to multiple segments is only available when enabling information barriers in your organization after February 15, 2023. <br><br> Organizations that have enabled IB prior to February 15, 2023 are on the older version of information barriers and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to February 15, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
+> Support for assigning users to multiple segments is only available when enabling information barriers in your organization after February 28, 2023. <br><br> Organizations that have enabled IB prior to February 28, 2023 are on the older version of information barriers and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to February 28, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
 
 If you want to support assigning users to multiple segments, see [Use multi-segment support in information barriers](information-barriers-multi-segment.md)
 

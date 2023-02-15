@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 # Use multi-segment support in information barriers
 
 > [!IMPORTANT]
-> Support for assigning users to multiple segments is only available when enabling information barriers in your organization after February 15, 2023. <br><br> Organizations that have enabled IB prior to February 15, 2023 are on the older version of information barriers and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to February 15, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
+> Support for assigning users to multiple segments is only available when enabling information barriers in your organization after February 28, 2023. <br><br> Organizations that have enabled IB prior to February 28, 2023 are on the older version of information barriers and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to February 28, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
 
 The multi-segment support mode enables you to assign users in your organization to up to 10 segments in information barriers instead of being limited to just one segment. This allows support for more diverse communication rules between individuals and groups to support more complex organizational and operational scenarios. For organizations using multi-segment support, all information barriers policies must be defined with an allow list.
 
@@ -85,14 +85,24 @@ With segments and policies defined, the North School District applies the polici
 
 ## Enable multiple segment support for users
 
-If you want to support assigning users to multiple segments, run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+1. If you want to support assigning users to multiple segments, you'll need to verify that your IB organization supports multiple segments. Run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps):
 
-```powershell
-Enable-ExoInformationBarrierMultiSegment
-```
+    ```powershell
+    Get-PolicyConfig
+    ```
 
-> [!IMPORTANT]
-> If you enable multiple segments in your organization, you cannot revert to single segment support.
+    If the value of the `InformationBarrierMode` property is *SingleSegment*, you can enable multi-segment support in Step 2. If the value of the `InformationBarrierMode` property is *MultiSegment*, you can skip Step 2 in this section. Multi-segment support is already enabled for your organization.
+
+    If the value of the `InformationBarrierMode` property is *Legacy*, enabling multi-segment isn't supported for your organization. *Legacy* organizations will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers)
+
+2. To enable multi-segment support for your organization, run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+
+    ```powershell
+    Enable-ExoInformationBarrierMultiSegment
+    ```
+
+    > [!IMPORTANT]
+    > If you enable multiple segments in your organization, you cannot revert to single segment support.
 
 ## Multi-segment support for users in OneDrive
 
