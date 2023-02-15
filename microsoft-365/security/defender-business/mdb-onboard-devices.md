@@ -169,7 +169,13 @@ When you run the local script on Mac:
 
 9. You'll be prompted to allow installation of a driver from Microsoft (either "System Extension Blocked" or "Installation is on hold", or both). You must allow the driver installation: Select **Open Security Preferences** or **Open System Preferences** > **Security & Privacy**, and then select **Allow**.
 
-10. Use the following Python command in Bash to run the onboarding package: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
+10. Use the following Bash command to run the onboarding package:
+
+```bash
+/usr/bin/unzip WindowsDefenderATPOnboardingPackage.zip \
+&& /bin/chmod -x MicrosoftDefenderATPOnboardingMacOs.sh \
+&& /bin/bash -c MicrosoftDefenderATPOnboardingMacOs.sh
+```
 
 After Mac is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
