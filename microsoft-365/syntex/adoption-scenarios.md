@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: lauris
 ms.date: 
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic
