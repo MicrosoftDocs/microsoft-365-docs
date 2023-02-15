@@ -101,11 +101,11 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
 <a name="email"> </a>
 1. Under **Email notification recipients**, choose who receives email notifications about this connection instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connection instance is set up.
 
-> [!TIP]
-> You'll be given the following options for the next group of settings:
-> **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts.
-> **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts.
-> **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
+  > [!TIP]
+  > You'll be given the following options for the next group of settings: <br>
+  > **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts. <br>
+  > **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts. <br>
+  > **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
 
 1. Choose your basic, **Time card**, and **Request** settings from the options listed above.
 1. Then, choose your sync frequency.
@@ -180,7 +180,7 @@ After a connection is set up, you can manage and make changes to it in the Micro
 
 ### Use the Microsoft 365 admin center
 
-The Connector Management Console page lists each connection and connector instance that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create new connections and connection instances and make changes to any of your existing ones. For example, you can update sync settings and team mappings.
+The Connector Management Console page lists each connection and connection instance that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create new connections and connection instances and make changes to any of your existing ones. For example, you can update sync settings and team mappings.
 
 To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-admin-center-manage.md).
 
