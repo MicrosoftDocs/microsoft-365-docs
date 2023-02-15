@@ -390,6 +390,7 @@ To consider when auto-applying retention labels to cloud attachments:
     - Not supported for files that are uploaded to Yammer and from there, shared as URLs via email or Teams messages (typically have "https://web.yammer.com" at the beginning of the URL)
     - Not supported for previous responses in the same thread, only the current message
     - Total limit of 25 attachments in a single message, where this maximum can be any combination of cloud attachments and shared documents from URL text links
+    - Not supported beyond 5,000 characters in the initial email body or Teams message
 
 - The following items aren't supported as attachments that can be retained:
   - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages.
