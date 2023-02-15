@@ -1,5 +1,5 @@
 ---
-title: Get started with insider risk management forensic evidence (preview)
+title: Get started with insider risk management forensic evidence 
 description: Get started with insider risk management forensic evidence in Microsoft Purview. Forensic evidence is an investigative tool for viewing captured security-related user activity to help determine whether the user's actions pose a risk and may lead to a security incident.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Get started with insider risk management forensic evidence (preview)
+# Get started with insider risk management forensic evidence
 
 >[!IMPORTANT]
 >Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
@@ -42,11 +42,11 @@ User devices eligible for forensic evidence capturing must be onboarded to the [
 >[!IMPORTANT]
 >The Microsoft Purview Client automatically collects general diagnostic data related to device configuration and performance metrics. This includes data on critical errors, RAM consumption, process failures, and other data. This data helps us assess the client's health and identify any issues. For more details about how diagnostic data may be used, see the Use of Software with Online Services on the [Microsoft Product Terms](https://www.microsoft.com/licensing/product-licensing/products).
 
-For a list of device and configuration requirements, see [Learn about forensic evidence (preview)](insider-risk-management-forensic-evidence.md#device-and-configuration-requirements). To onboard supported devices, complete the steps outlined in the [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview) article. 
+For a list of device and configuration requirements, see [Learn about forensic evidence](insider-risk-management-forensic-evidence.md#device-and-configuration-requirements). To onboard supported devices, complete the steps outlined in the [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview) article. 
 
 To install the Microsoft Purview Client, complete the following steps:
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Client installation**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **Client installation**.
 2. Select **Download installer package (x64 version)** to download the installation package for Windows.
 3. After downloading the installation package, use your preferred method to install the client on users' devices. These options may include manually installing the client on devices or tools to help automate the client installation:
 
@@ -60,7 +60,7 @@ Forensic evidence has several configuration settings that provide flexibility fo
 
 To configure forensic evidence settings, complete the following steps:
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Forensic evidence settings**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **Forensic evidence settings**.
 2. Select **Forensic evidence capturing** to enable capturing support in your forensic evidence policies. If this is turned off later, this will remove all previously added users for forensic evidence policies.
 
     >[!IMPORTANT]
@@ -76,12 +76,12 @@ To configure forensic evidence settings, complete the following steps:
 
 Forensic evidence policies define the scope of security-related user activity to capture on configured devices. You can have one policy that captures all activities approved users perform on their devices and additional policies that capture only specific activities (such as printing or exfiltrating files). Once created, you'll include these policies in forensic evidence requests to control what activity to capture for users whose requests are approved.
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Forensic evidence policies**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **Forensic evidence policies**.
 2. Select **Create forensic evidence policy**.
 3. On the **Scope** page, you'll choose the scope of security-related user activity to capture. Select one of the following options:
 
-    - **Specific activities**: This option only captures activities detected by policies that users are included in. These activities are defined by the indicators selected in forensic evidence policies. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **Alerts** or **Cases** dashboard.
-    - **All activities**: This option captures any activity performed by users. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **User activity reports (preview)** dashboard.
+    - **Specific activities**: This option only captures activities detected by policies that users are included in. These activities are defined by the indicators selected in forensic evidence policies. Captures for this option will be available for review on the **Forensic evidence** tab on the **Alerts** or **Cases** dashboard.
+    - **All activities**: This option captures any activity performed by users. Captures for this option will be available for review on the **Forensic evidence** tab on the **User activity reports (preview)** dashboard.
 4. Select **Next**.
 5. On the **Name and description** page, complete the following fields:
     - **Name (required)**: Enter a friendly name for the forensic evidence policy. This name can't be changed after the policy is created.

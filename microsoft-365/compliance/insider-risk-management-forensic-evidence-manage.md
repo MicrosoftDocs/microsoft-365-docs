@@ -1,5 +1,5 @@
 ---
-title: Manage insider risk management forensic evidence (preview)
+title: Manage insider risk management forensic evidence
 description: Manage insider risk management forensic evidence in Microsoft Purview. Forensic evidence is an investigative tool for viewing captured security-related user activity to help determine whether the user's actions pose a risk and may lead to a security incident.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Manage insider risk management forensic evidence (preview)
+# Manage insider risk management forensic evidence
 
 >[!IMPORTANT]
 >Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
@@ -39,7 +39,7 @@ You must request that forensic evidence capturing be turned on for specific user
 
 To configure approved users for forensic evidence capturing, complete the following steps:
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **User management**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **User management**.
 2. Select the **Manage forensic evidence requests** tab.
 3. Select **Create request**.
 4. On the **Users** page, select **Add users**.
@@ -54,15 +54,15 @@ To configure approved users for forensic evidence capturing, complete the follow
 10. Select **Next**.
 11. On the **Finish** page, review your settings before submitting the request. Select **Edit users** or **Edit justification** to change any of the request values or select **Submit** to create and send the request to reviewers.
 
-To view pending approval requests, navigate to **Insider risk management** > **Forensic evidence (preview)** > **Pending requests**. Here you'll see the users with pending requests, their email address, the request submission date, and who submitted the approval request. If no users are displayed, there aren't any pending approval requests for any users.
+To view pending approval requests, navigate to **Insider risk management** > **Forensic evidence** > **Pending requests**. Here you'll see the users with pending requests, their email address, the request submission date, and who submitted the approval request. If no users are displayed, there aren't any pending approval requests for any users.
 
-Users assigned to the *Insider Risk Management Approvers* role group can select a user on the **Forensic evidence request (preview)** tab and review the request. After reviewing the request, these users can approve or reject the forensic evidence capturing request. Approving or rejecting the capturing request removes the pending request for users from this view.
+Users assigned to the *Insider Risk Management Approvers* role group can select a user on the **Forensic evidence request** tab and review the request. After reviewing the request, these users can approve or reject the forensic evidence capturing request. Approving or rejecting the capturing request removes the pending request for users from this view.
 
 ### Approve or reject capturing requests
 
 After requests are complete, users assigned to the *Insider Risk Management Approvers* role group will receive an email notification for the approval request. To approve or reject requests, reviewers must complete the following steps:
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Pending requests**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **Pending requests**.
 2. Select a user to review.
 3. On the **Review forensic evidence request (preview)** pane, review the justification submitted by the requestor. Select **Approve** or **Reject** as applicable.
 4. On the **Request approved** or **Request rejected** page, select **Close**.
@@ -75,7 +75,7 @@ If needed, you can revoke approval for specific users and exclude them from fore
 
 To revoke approvals for users, users assigned to the *Insider Risk Management Approvers* role group must complete the following steps:
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **User management**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **User management**.
 2. Select the **Approved users** tab.
 3. Select a user, then select **Remove**.
 4. On the removal confirmation page, select **Remove** to revoke capturing approval or select **Cancel** to close the confirmation page.
@@ -88,7 +88,7 @@ You can create and use a notification template to send an email to users letting
 
 To create a new notification template, complete the following steps:
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Notification templates**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **Notification templates**.
 2. Select **Create notification template**.
 3. On the **New email notification template** pane, complete the following required fields:
     - Template name
@@ -147,11 +147,11 @@ When you select any row in the capture list, Microsoft Purview Insider Risk Mana
 XXXXXXX
 ### Reviewing capture clips included with alerts
 
-For alerts generated by policies, forensic evidence captures for users are available for review on the **Forensic evidence (preview)** tab on the **Alerts** dashboard. If one or more captures are available for the alert, you'll also see a **View forensic evidence** notification in the Activity that generated this alert header section. You can select the notification link or the **Forensic evidence (preview)** tab to review the activity captures.
+For alerts generated by policies, forensic evidence captures for users are available for review on the **Forensic evidence** tab on the **Alerts** dashboard. If one or more captures are available for the alert, you'll also see a **View forensic evidence** notification in the Activity that generated this alert header section. You can select the notification link or the **Forensic evidence** tab to review the activity captures.
 
 ![Insider risk management forensic evidence user activity.](../media/insider-risk-forensic-evidence-user-activity.png)
 
-Overall, reviewing an alert for potentially risky activity that may contain forensic evidence captures is essentially the same as reviewing an alert without forensic evidence captures. The significant difference is the inclusion of any applicable captures. The **Forensic evidence (preview)** tab provides access to all available captures associated with the alert. Each capture is displayed and includes the following information:
+Overall, reviewing an alert for potentially risky activity that may contain forensic evidence captures is essentially the same as reviewing an alert without forensic evidence captures. The significant difference is the inclusion of any applicable captures. The **Forensic evidence** tab provides access to all available captures associated with the alert. Each capture is displayed and includes the following information:
 
 - **Date/time (UTC)**: The date, time (UTC), and duration of the capture.
 - **Device**: The name of the device in Windows 10/11.
@@ -174,16 +174,16 @@ If alerts are escalated to cases, all associated forensic evidence captures are 
 
 To view clips for activity not associated with alerts, you'll use [User activity reports](/microsoft-365/compliance/insider-risk-management-activities#user-activity-reports). User activity reports allow you to examine activities for specific users for a defined time period without having to assign them temporarily or explicitly to an insider risk management policy. If these user activities include activities supported by forensic evidence capturing, clips are included with the user activity.
 
-If you've configured forensic evidence to capture all security-related user activity, regardless of whether they're included in a forensic evidence policy, you'll review these captures by selecting **Insider risk management** > **User activity reports** and then selecting a specific user and selecting the **Forensic evidence (preview)** tab.
+If you've configured forensic evidence to capture all security-related user activity, regardless of whether they're included in a forensic evidence policy, you'll review these captures by selecting **Insider risk management** > **User activity reports** and then selecting a specific user and selecting the **Forensic evidence ** tab.
 XXXXXXX
 
 ## Device health report (preview)
 
-After devices are configured to support forensic evidence, you can review the Microsoft Purview Client health status for all devices in your organization by navigating to **Insider risk management** > **Forensic evidence (preview)** > **Device health**.
+After devices are configured to support forensic evidence, you can review the Microsoft Purview Client health status for all devices in your organization by navigating to **Insider risk management** > **Forensic evidence** > **Device health**.
 
 ![Insider risk management forensic evidence device health.](../media/insider-risk-forensic-evidence-device-health.png)
 
-For a list of minimum device and configuration requirements, see [Learn about forensic evidence (preview)](insider-risk-management-forensic-evidence.md#device-and-configuration-requirements). To onboard supported devices, complete the steps outlined in the [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview) article. 
+For a list of minimum device and configuration requirements, see [Learn about forensic evidence](insider-risk-management-forensic-evidence.md#device-and-configuration-requirements). To onboard supported devices, complete the steps outlined in the [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview) article. 
 
 The Device health report allows you to view the status and health of all devices that have the forensic evidence agent installed. Each report widget on the report displays information for last 24 hours.
 
@@ -233,7 +233,7 @@ When forensic evidence is configured, you'll be prompted to sign up for 20 GB of
 
 To sign up for free storage:
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Storage and billing**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **Storage and billing**.
 2. Under **Storage and billing**, select **Claim 20 GB storage space**, and then follow the prompts.
 
 After you've signed up for free storage, you can analyze your storage needs to see how much storage you're using each month and to see how much free space you have left.
