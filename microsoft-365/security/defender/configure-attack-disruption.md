@@ -31,7 +31,7 @@ This article describes how to configure automatic attack disruption capabilities
 
 1. [Review the prerequisites](#prerequisites-for-automatic-attack-disruption-in-microsoft-365-defender).
 2. [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups).
-3. [Review or change the automated response exclusions for users](#review-or-change-the-automated-response-exclusions-for-users).
+3. [Review or change the automated response exclusions for users](#review-or-change-automated-response-exclusions-for-users).
 
 Then, after you're all set up, you can view and manage containment actions in Incidents and the Action center. And, if necessary, you can make changes to settings.
 
