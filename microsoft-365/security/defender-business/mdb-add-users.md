@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 02/14/2023
+ms.date: 02/15/2023
 ms.collection: 
 - m365-security
 - tier1
@@ -47,7 +47,7 @@ As soon as you have signed up for Defender for Business, your first step is to a
 
 ## Make sure MFA is enabled
 
-One good way to make sure MFA is enabled for all users is by using security defaults. If your tenant was created on or after October 22, 2019, security defaults might be enabled automatically in your tenant. Use the following procedure to confirm or enable security defaults.
+One good way to make sure MFA is enabled for all users is by using [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). If your tenant was created on or after October 22, 2019, security defaults might be enabled automatically in your tenant. Use the following procedure to confirm or enable security defaults.
 
 > [!IMPORTANT]
 > You must be a security administrator, Conditional Access administrator, or Global Administrator to perform this task.
