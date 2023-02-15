@@ -92,5 +92,5 @@ For more information see ‘view attack disruption details and results’.
 
 ## Next steps
 
-- [Configuring automatic attack disruption in Microsoft 365 Defender](incidents-overview.md)
-- [View details and results](incident-queue.md)
+- [Configuring automatic attack disruption in Microsoft 365 Defender](/microsoft-365/security/defender/configure-attack-disruption.md)
+- [View details and results](/microsoft-365/security/defender/autoad-results.md)
