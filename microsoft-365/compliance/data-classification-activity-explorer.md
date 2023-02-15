@@ -79,7 +79,7 @@ Here's a list of applicable role groups that you can use. To learn more about th
 
 <!--
 > [!IMPORTANT]
-> Access to Activity explorer via the Security reader or Device Management role groups or other has been removed-->
+> Access to Activity explorer via the Security Reader or Device Management role groups or other has been removed--> 
 
 **Microsoft 365 role groups**
 
@@ -93,6 +93,9 @@ Here's a list of applicable role groups that you can use. To learn more about th
 - Compliance administrator
 - Security administrator
 - Security Reader
+
+> [!NOTE]
+> Roles other than Global Admin and/or Compliance Admin, can only view activities and are not allowed to view the sensitive content.
 
 ## Activity types
 
