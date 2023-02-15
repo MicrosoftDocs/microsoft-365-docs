@@ -74,7 +74,7 @@ Typical workflow for an auto-labeling policy:
 
 1. Create and configure an auto-labeling retention policy.
 
-2. Run the policy in simulation mode, which typically completes within one or two days, depending on the amount of data to analyze. The completed simulation triggers an email notification that's sent to the user configured to receive activity alerts.
+2. Run the policy in simulation mode, and wait for it to complete.
 
 3. Review the results, and if necessary, refine your policy and rerun simulation. Wait for it to complete again.
 
@@ -100,7 +100,7 @@ Other considerations for simulation mode for auto-apply retention policies:
 
 On the **Label policies** page, the **Status** column displays **In simulation** for auto-labeling policies that are running in simulation, or configured for simulation and complete. 
 
-Simulation typically completes in a day. The completed simulation triggers an email notification that's sent to the user configured to receive [activity alerts](alert-policies.md).
+Simulation typically completes within one or two days, depending on the amount of data to analyze. The completed simulation triggers an email notification that's sent to the user configured to receive [activity alerts](alert-policies.md).
 
 To view the simulation results, select the policy from the **Label policies** page, and from the flyout pane, select **View simulation**. You can then view any samples, review the number of matching items and the locations, edit the policy, turn on the policy, or restart the simulation.
 
