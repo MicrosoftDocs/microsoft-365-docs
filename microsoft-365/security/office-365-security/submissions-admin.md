@@ -38,6 +38,8 @@ When you submit an email message for analysis, you will get:
 - **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
 
 > [!IMPORTANT]
+> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), admins can't use the **Submissions** page in the Microsoft 365 Defender portal to submit messages to Microsoft. Instead, admins in those organizations need to open a support case to submit messages.
+>
 > Payload reputation/detonation and grader analysis are not done in all tenants. Information is blocked from going outside the organization when data is not supposed to leave the tenant boundary for compliance purposes.
 
 For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
