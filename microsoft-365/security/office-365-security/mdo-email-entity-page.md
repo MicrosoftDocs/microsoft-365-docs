@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 10/14/2022
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-security
