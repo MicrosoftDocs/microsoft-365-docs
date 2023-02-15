@@ -85,7 +85,7 @@ We use the directory data to provide the user with a license and to send email a
 4. The **Users** list is grouped by the names of people who made purchases or started trials.
 5. To export a list of users with licenses for these subscriptions, choose the subscriptions that you want to export, then choose **Export users**.
 
-## Enable pr disable purchases and trials
+## Enable or disable purchases and trials
 
 You can enable or disable purchases and trials for users in your organization. The **MSCommerce** PowerShell module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make purchases or start trials, and for which products.
 
