@@ -18,7 +18,7 @@ ms.topic: reference
 ms.collection: 
 - m365-security
 - tier2
-ms.date: 1/11/2023
+ms.date: 02/09/2023
 search.appverid: met150
 ---
 
@@ -487,7 +487,7 @@ This rule prevents malware from abusing WMI to attain persistence on a device.
 
 Fileless threats employ various tactics to stay hidden, to avoid being seen in the file system, and to gain periodic execution control. Some threats can abuse the WMI repository and event model to stay hidden.
 
-Intune name: Not available
+Intune name: `Persistence through WMI event subscription`
 
 Configuration Manager name: Not available
 
