@@ -19,7 +19,7 @@ ms.collection:
 description: Admins can learn about the Safe Attachments feature in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/05/2022
+ms.date: 1/31/2023
 ---
 
 # Safe Attachments in Microsoft Defender for Office 365
