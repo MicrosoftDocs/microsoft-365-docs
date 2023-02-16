@@ -23,6 +23,7 @@ ms.collection:
   - highpri
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Zero Trust identity and device access configurations
@@ -100,7 +101,7 @@ Your organization may be subject to regulatory or other compliance requirements,
 
 We've done our best to account for a wide variety of organizational protection requirements, but we're not able to account for all possible requirements or for all the unique aspects of your organization.
 
-## Three tiers of protection
+## Three levels of protection
 
 Most organizations have specific requirements regarding security and data protection. These requirements vary by industry segment and by job functions within organizations. For example, your legal department and administrators might require additional security and information protection controls around their email correspondence that are not required for other business units.
 
@@ -180,9 +181,9 @@ This guidance shows you how to implement a set of policies to protect access to 
 
 Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 11 or Windows 10 because Azure is designed to provide the smoothest experience possible for both on-premises and Azure AD. Windows 11 or Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for Conditional Access. These apps also include enhanced compliance and security tools.
 
-## Applying these capabilities across the three tiers of protection
+## Applying these capabilities across the three levels of protection
 
-The following table summarizes our recommendations for using these capabilities across the three tiers of protection.
+The following table summarizes our recommendations for using these capabilities across the three levels of protection.
 
 |Protection mechanism|Starting point|Enterprise|Specialized security|
 |---|---|---|---|

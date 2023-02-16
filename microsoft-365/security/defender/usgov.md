@@ -18,6 +18,7 @@ ms.collection:
 - m365-security-compliance
 - tier3
 ms.topic: conceptual
+ms.date: 12/07/2021
 ---
 
 # Microsoft 365 Defender for US Government customers

@@ -20,6 +20,7 @@ ms.collection:
 - tier3
 - m365-security
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # DeviceInfo

@@ -56,7 +56,7 @@ To test the MTO People Search feature, it is assumed that you already have the f
 
 - Two Azure AD/Microsoft 365 tenants
 - Both tenants have the **Azure AD Cross-tenant Synchronization** feature enabled (currently in private preview - make sure you sign up for both preview features)
-- Provisioned users from home to target tenants as described in [Instructions to enable Tenant-to-Tenant Sync](https://github.com/ArvindHarinder1/CrossTenantSynchronization/blob/main/CrossTenantSynchronization.md)
+- Provisioned users from home to target tenants.
 
 ## Use Cases
 
@@ -70,7 +70,7 @@ Multi-tenant organization people search is supported across a range of scenarios
    - Nestor types in "Megan" in the _cc_ line of the email and can get the result for <megan@fabrikam.com>.
    - Nestor can hover and/or click on Megan's profile picture/initials to view Megan's limited people card.
 
-2. **Microsoft OneDrive/Sharepoint**
+2. **Microsoft OneDrive/SharePoint**
 
    - Nestor (<nestor@contoso.com>) searches for "Megan" in the centralized search bar on SharePoint and can get the result for <megan@fabrikam.com>.
    - Nestor can hover and/or click on Megan's profile picture/initials to view Megan's limited people card.

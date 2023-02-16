@@ -19,7 +19,7 @@ ms.custom:
 description: Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 06/10/2021
+ms.date: 1/31/2023
 ---
 
 # Review and manage remediation actions in Office 365
