@@ -22,7 +22,9 @@ search.appverid:
 
 # Create a collection estimate in eDiscovery (Premium)
 
-After you've identified custodians and any non-custodian data sources for the case, you're ready to identify and locate a set of documents that are relevant. You do this by using the Collections tool to search data sources for relevant content. You can create a collection that searches specified data sources for content that matches your search criteria. You must create a *collection estimate*, which is an estimate of the items are found. When you create a collection estimate, you can views information about the estimated results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also review a sample of items that were returned by the collection. Using these statistics, you can change the search query and rerun the collection estimate to narrow your results. Once you're satisfied with the collection results, you can commit the collection to a review set. When you commit a collection estimate, the items returned by the collection are added to a review set for review, analysis, and export.
+After you've identified custodians and any non-custodian data sources for the case, you're ready to identify and locate a set of documents that are relevant. You do this by using the Collections tool to search data sources for relevant content. You can create a collection that searches specified data sources for content that matches your search criteria. You must create a *collection estimate*, which is an estimate of the items are found. 
+
+When you create a collection estimate, you can views information about the estimated results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also review a sample of items that were returned by the collection. Using these statistics, you can change the search query and rerun the collection estimate to narrow your results. Once you're satisfied with the collection results, you can commit the collection to a review set. When you commit a collection estimate, the items returned by the collection are added to a review set for review, analysis, and export.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -33,6 +35,8 @@ After you've identified custodians and any non-custodian data sources for the ca
     This is recommended so that you can quickly select the data sources when you create a collection estimate in the wizard. If you choose to skip adding custodians or non-custodial data sources, you'll have the option to search for these and any additional data sources (ones that haven't been added to the case as custodial or non-custodial locations) in a collection estimate for content that may be relevant to the case. These data sources might include mailboxes, SharePoint sites, and Teams. If this situation is applicable to your case, use additional locations to add these sources to your collection.
 
 - Verify that you have [permissions](/microsoft-365/compliance/ediscovery-assign-permissions) to create a collection estimate for a case.
+
+- When configuring a new collection, you can save your progress in the wizard as a draft collection and complete it later if needed. Just select **Save and close** on any page in the collection wizard to save your progress as a draft. The collection is added to the collection list with a status of *Draft*. To resume working on the collection, select the draft collection, select **Actions**, then select **Edit collection**.
 
 ## Create a collection estimate
 
@@ -56,11 +60,18 @@ After you've identified custodians and any non-custodian data sources for the ca
 
    - Select the **Select all** toggle to select all non-custodial data sources that were added to the case.
 
-7. On the **Additional locations** page, you can select other mailboxes and sites to search as part of the collection. These types of data sources weren't added as custodial or non-custodial data locations in the case. You also have two options when searching additional data sources:
+7. On the **Additional locations** page, you can select other mailboxes and sites to search as part of the collection. You can also choose additional search options for additional search locations (defined in eDiscovery settings) to include in the collection.
 
-   - To search all content locations for a specific service (Exchange mailboxes, SharePoint and OneDrive sites, or Exchange public folders), select the corresponding **Select all** toggle in the **Status** column. This option will search all content locations in the selected service.
+    Use the **Additional locations** options to choose the types of data sources weren't added as custodial or non-custodial data locations in the case. You also have two options when searching additional data sources:
 
-   - To search specific content location for a service, select the corresponding **Select all** toggle in the **Status** column, and then select **Users, groups or teams** (for Exchange mailboxes) or **Choose sites** for (SharePoint and OneDrive sites) to search specific content locations.
+    - To search all content locations for a specific service (Exchange mailboxes, SharePoint and OneDrive sites, or Exchange public folders), select the corresponding **Select all** toggle in the **Status** column. This option will search all content locations in the selected service.
+
+    - To search specific content location for a service, select the corresponding **Select all** toggle in the **Status** column, and then select **Users, groups or teams** (for Exchange mailboxes) or **Choose sites** for (SharePoint and OneDrive sites) to search specific content locations.
+
+    Use the **Additional search options** options to include other search locations. The options available here are set by your admin in eDiscovery global settings. Search options that aren't defined by your eDiscovery admin aren't selectable or available. Search options enabled by your eDiscovery admin can be selected and included in the collection as applicable. You have two choices for additional search options:
+
+    - **Guest mailboxes**: Select to include guest mailboxes during tenant-wide searches.
+    - **Shared Teams channels**: Select to include shared channels during tenant-wide searches.
 
 8. On the **Conditions** page, you can create the search query that is used to collect items from the data sources that you've identified in the previous wizard pages. You can search for keywords, property:value pairs, or use a keyword list. You can also add various search conditions to narrow the scope of the collection. For more information, see [Build search queries for collections](ediscovery-building-search-queries.md).
 
@@ -87,7 +98,7 @@ Additionally, you can now monitor the progress of the estimate that shows how ma
 
 When the collection is complete, the following columns and corresponding values on the **Collection** page are updated:
 
-![Status states for a collection estimate.](../media/DraftCollectionStatus.png)
+![Status states for a collection estimate.](../media/ediscovery-draft-collection-status.png)
 
 - **Status**: Indicates the status and type of collection. A value of **Estimated** indicates that a collection estimate is complete. This same value also indicates that the collection is a collection estimate, and that it hasn't been added to a review set. A value of **Committed** in the **Status** column indicates that the collection has been added to a review set.
 
@@ -111,6 +122,8 @@ Here's a list of things you can do from the collection flyout page:
 - Select the **Data sources** tab to view a list of custodians and non-custodial data sources) that were searched in the collection. Any additional content locations that were search are listed under **Locations** on the **Summary** tab.
 
 - Select the **Search statistics** tab to view statistics about the collection. This includes the total number and size of items found in each service (for example, Exchange mailboxes or SharePoint sites) and a condition report that displays statistics about the number of items returned by different components of the search query used by the collection. For more information, see [Collection statistics and reports](ediscovery-collection-statistics-reports.md).
+
+- Select the **Collection options** tab to view information about the included collection options. This includes a summary of the additional locations and retrieval options chosen in the collection wizard.  
 
 - Select **Review sample** (located at the bottom of the flyout page) to preview a sample of the items returned by the collection.
 
