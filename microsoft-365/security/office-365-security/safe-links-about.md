@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ms.collection:
   - Strat_O365_IP
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 ms.custom:
   - seo-marvel-apr2020
 search.appverid:
