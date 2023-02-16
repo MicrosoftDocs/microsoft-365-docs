@@ -107,7 +107,7 @@ For more information, see [Create documents using content assembly in Microsoft 
 
 This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
-For more information, see [Search for metadata in document libraries in Microsoft Syntex](metadata-search.md).
+[Learn more about using content query to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md).
 
 ## Annotations
 
@@ -121,7 +121,7 @@ For more information, see [Search for metadata in document libraries in Microsof
 :::row-end:::
 
 
-For more information, see [Comment and collaborate using annotations in Microsoft Syntex](annotations.md).
+[Learn more about using annotations in Microsoft Syntex.](annotations.md).
 
 ## Content compliance
 
