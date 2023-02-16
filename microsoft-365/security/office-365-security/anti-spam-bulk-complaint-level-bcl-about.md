@@ -16,7 +16,7 @@ ms.collection:
 description: Admins can learn about bulk complaint level (BCL) values that are used in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/01/2022
+ms.date: 1/31/2023
 ---
 
 # Bulk complaint level (BCL) in EOP
