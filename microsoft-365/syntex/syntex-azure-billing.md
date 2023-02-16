@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 ms.reviewer: kkamath
 manager: serdars
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic

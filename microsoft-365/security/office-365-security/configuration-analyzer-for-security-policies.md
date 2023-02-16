@@ -14,11 +14,12 @@ search.appverid:
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
 description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the settings in Standard protection and Strict protection in preset security policies.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 07/23/2020
+ms.date: 1/31/2023
 ---
 
 # Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365

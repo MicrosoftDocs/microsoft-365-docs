@@ -55,10 +55,10 @@ Refer to the following screenshot to see a sample Defender Experts Notification:
 
 ### Where you'll find Defender Experts Notifications
 
-You can receive Defender Experts Notifications from Defender Experts through the following mediums: 
+You can receive Defender Experts Notifications from Defender Experts through the following mediums:
 
-- The Microsoft 365 Defender portal's [Incidents](https://security.microsoft.com/incidents?tid=f839b112-d9d7-4d27-9bf6-94542403f21c) page
-- The Microsoft 365 Defender portal's [Alerts](https://security.microsoft.com/alerts?tid=f839b112-d9d7-4d27-9bf6-94542403f21c) page
+- The Microsoft 365 Defender portal's [Incidents](https://security.microsoft.com/incidents) page
+- The Microsoft 365 Defender portal's [Alerts](https://security.microsoft.com/alerts) page
 - OData alerting [API](../../security/defender-endpoint/get-alerts.md) and [REST API](../defender-endpoint/configure-siem.md)
 - [DeviceAlertEvents](../../security/defender-endpoint/advanced-hunting-devicealertevents-table.md) table in Advanced hunting
 
