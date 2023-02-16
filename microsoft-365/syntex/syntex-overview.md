@@ -166,7 +166,8 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
    :::column-end:::
 :::row-end:::
 
-[Learn more about how to use Syntex to streamline processes in your organization.](adoption-scenarios.md).
-<br><br>
+[Learn more about how to use Syntex to streamline processes in your organization.](adoption-scenarios.md)
+<!---<br><br>
 > [!div class="nextstepaction"]
 > [Learn more about model types in Microsoft Syntex](model-types-overview.md)
+--->
