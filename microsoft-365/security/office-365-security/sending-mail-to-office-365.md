@@ -13,6 +13,7 @@ search.appverid:
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection: 
   - m365-security
+  - tier2
 ms.custom: 
   - seo-marvel-apr2020
 description: Learn as a guest sender, how can you increase the ability to deliver email to users in Microsoft 365. Also learn how to report junk email & phishing attempts as a guest.
