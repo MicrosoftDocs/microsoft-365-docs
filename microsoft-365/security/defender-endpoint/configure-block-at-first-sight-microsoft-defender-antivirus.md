@@ -158,7 +158,7 @@ You might choose to disable block at first sight if you want to retain the prere
 
 ### Turn off block at first sight with Microsoft Endpoint Manager
 
-1. Go to Microsoft Intune admin center (<https://endpoint.microsoft.com>) and sign in.
+1. Go to the Microsoft Intune admin center (<https://endpoint.microsoft.com>) and sign in.
 
 2. Go to **Endpoint security** \> **Antivirus**, and then select your Microsoft Defender Antivirus policy.
 

@@ -26,7 +26,7 @@ In Microsoft 365 Business Premium, security settings for managed devices are con
 **This guidance describes how to**:
 
 - Get an overview of your default policies
-- Work with device policies in either the Microsoft 365 Defender portal or the Microsoft Intune admin center (Intune).
+- Work with device policies in either the Microsoft 365 Defender portal or the Microsoft Intune admin center.
 
 ## About the default device protection policies
 

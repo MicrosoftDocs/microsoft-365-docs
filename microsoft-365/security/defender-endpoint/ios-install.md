@@ -36,7 +36,7 @@ This topic describes deploying Defender for Endpoint on iOS on Microsoft Endpoin
 
 ## Before you begin
 
-- Ensure you have access to [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+- Ensure you have access to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 - Ensure iOS enrollment is done for your users. Users need to have a Defender for Endpoint license assigned in order to use Defender for Endpoint on iOS. Refer to [Assign licenses to users](/azure/active-directory/users-groups-roles/licensing-groups-assign) for instructions on how to assign licenses.
 
@@ -61,7 +61,7 @@ Deploy Defender for Endpoint on iOS via Microsoft Endpoint Manager Company Porta
 
 ### Add iOS store app
 
-1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** > **iOS/iPadOS** > **Add** > **iOS store app** and click **Select**.
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** > **iOS/iPadOS** > **Add** > **iOS store app** and click **Select**.
 
    :::image type="content" source="images/ios-deploy-1.png" alt-text="The Add applications tab in the Microsoft Intune admin center" lightbox="images/ios-deploy-1.png":::
 
@@ -162,7 +162,7 @@ Admins can automate the Defender onboarding for users in two different ways with
 
 Admins can configure Microsoft Defender for Endpoint to deploy and activate silently. In this flow, the administrator creates a deployment profile and the user is simply notified of the installation. Defender for Endpoint is automatically installed without the need for the user to open the app. Follow the steps below to set up zero-touch or silent deployment of Defender for Endpoint on enrolled iOS devices:
 
-1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Configuration Profiles** > **Create Profile**.
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Configuration Profiles** > **Create Profile**.
 1. Choose **Platform** as **iOS/iPadOS** and **Profile type** as **VPN**. Select **Create**.
 1. Type a name for the profile and select **Next**.
 1. Select **Custom VPN** for Connection Type and in the **Base VPN** section, enter the following:
@@ -202,7 +202,7 @@ For unsupervised devices, a VPN is used to provide the Web Protection feature. T
 
 Admins can configure auto-setup of VPN profile. This will automatically set up the Defender for Endpoint VPN profile without having the user to do so while onboarding.
 
-1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Configuration Profiles** > **Create Profile**.
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Configuration Profiles** > **Create Profile**.
 1. Choose **Platform** as **iOS/iPadOS** and **Profile type** as **VPN**. Click **Create**.
 1. Type a name for the profile and click **Next**.
 1. Select **Custom VPN** for Connection Type and in the **Base VPN** section, enter the following:
