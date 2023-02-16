@@ -48,7 +48,7 @@ To start routing accounts to Microsoft 365 Defender:
 1. Make sure you have global administrator, security admin or Cloud App Security admin permissions in Azure Active Directory, or you're a local global admin in Microsoft Defender for Cloud Apps.
 1. You can select **Configure automatic redirection** from the banner in the Microsoft Defender for Cloud Apps portal.
 1. Alternatively, sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
-1. Then navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft 365 Defender** or [go here](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
+1. Then navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft 365 Defender** or [go directly to the Redirection setting](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
 
     :::image type="content" source="../../media/defender-cloud-apps-portal-redirection.png" alt-text="Portal redirection."lightbox="../../media/defender-cloud-apps-portal-redirection.png":::
 
@@ -68,9 +68,9 @@ To revert to the former Microsoft Defender for Cloud Apps portal:
 
 1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a global administrator, security administrator or Cloud App Security administrator in Azure Active directory, or a local global admin in Microsoft Defender for Cloud Apps.
 
-2. Navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft 365 Defender** or [go here](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
+1. Navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft 365 Defender** or [go directly to the Redirection setting](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
 
-3. Toggle the Automatic redirection setting to **Off**.
+1. Toggle the Automatic redirection setting to **Off**.
 
 This setting can be enabled again at any time.
 
