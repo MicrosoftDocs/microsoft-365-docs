@@ -356,7 +356,6 @@ The available context options change depending on which location you choose. If 
 - Document created by
 - Document created by member of
 - Document name contains words or phrases
-- Document name matches patterns
 - Document size over
 - Document property is
 - File extension is
@@ -368,7 +367,6 @@ The available context options change depending on which location you choose. If 
 - Document created by
 - Document created by member of
 - Document name contains words or phrases
-- Document name matches patterns
 - Document size over
 - Document property is
 - File extension is
