@@ -21,6 +21,7 @@ ms.collection:
   - m365solution-scenario
   - zerotrust-solution
   - highpri
+  - tier1
 ms.subservice: mdo
 search.appverid: met150
 ---

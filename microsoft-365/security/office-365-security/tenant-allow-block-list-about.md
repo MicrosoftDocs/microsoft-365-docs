@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 ms.collection:
 - m365-security
+- tier1
 ms.custom:
 description: Learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
 ms.subservice: mdo

@@ -14,6 +14,7 @@ search.appverid:
   - MOE150
 ms.collection: 
   - m365-security
+  - tier2
 description: Learn more about the secure by default setting in Exchange Online Protection (EOP)
 ms.subservice: mdo
 ms.service: microsoft-365-security
