@@ -16,7 +16,7 @@ description: Admins can learn how to use the Mail flow map in the Mail flow dash
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 09/13/2019
+ms.date: 1/31/2023
 ---
 
 # Mail flow map in the Security & Compliance Center

@@ -21,7 +21,7 @@ ms.custom:
 description: Best setup of Microsoft Defender for Office 365 including Safe Attachments, Safe Links, advanced anti-phishing tools, reporting tools, and threat intelligence capabilities.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 01/15/2021
+ms.date: 01/31/2023
 ---
 
 # Microsoft Defender for Office 365
