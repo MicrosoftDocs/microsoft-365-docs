@@ -92,11 +92,11 @@ For more information about custom and prebuilt models, see [Overview of model ty
 
 For more information, see [Create documents using content assembly in Microsoft Syntex](content-assembly.md).
 
-## Advanced metadata search
+## Content query
 
 :::row:::
    :::column span="3":::
-      The advanced metadata search feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries.
+      The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries.
 
       You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.    
    :::column-end:::
@@ -108,6 +108,12 @@ For more information, see [Create documents using content assembly in Microsoft 
 This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
 For more information, see [Search for metadata in document libraries in Microsoft Syntex](metadata-search.md).
+
+## Annotations
+
+Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
+
+For more information, see [Comment and collaborate using annotations in Microsoft Syntex](annotations.md).
 
 ## Content compliance
 

@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier3
 ms.custom:
   - seo-marvel-apr2020
 description: In this article, you'll learn how to use the delist portal to remove yourself from the Microsoft 365 blocked senders list. This is the best response to address 5.7.511 Access denied errors.

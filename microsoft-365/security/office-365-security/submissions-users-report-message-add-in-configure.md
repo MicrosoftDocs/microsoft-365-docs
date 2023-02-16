@@ -16,6 +16,7 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
   - m365-security
+  - tier2
 description: Learn how to enable the Report Message or the Report Phishing add-ins for Outlook and Outlook on the web, for individual users, or for your entire organization.
 ms.subservice: mdo
 ms.service: microsoft-365-security

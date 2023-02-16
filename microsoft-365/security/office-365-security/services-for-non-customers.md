@@ -13,10 +13,11 @@ search.appverid:
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
   - m365-security
+  - tier2
 description: To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 09/13/2019
+ms.date: 1/31/2023
 ---
 
 # Services for non-customers sending mail to Microsoft 365

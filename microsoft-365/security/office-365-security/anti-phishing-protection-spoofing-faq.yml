@@ -16,7 +16,7 @@ metadata:
   ms.assetid: 
   ms.collection: 
     - m365-security
-    - m365initiative-defender-office365
+    - tier2
   description: Admins can view frequently asked questions and answers about anti-spoofing protection in Exchange Online Protection (EOP).
   ms.subservice: mdo
   ms.service: microsoft-365-security

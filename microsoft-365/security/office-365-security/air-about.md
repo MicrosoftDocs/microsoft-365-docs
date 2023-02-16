@@ -8,14 +8,14 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 11/22/2022
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
 - m365-security
-- m365initiative-defender-office365
+- tier2
 description: Get started using automated investigation and response capabilities in Microsoft Defender for Office 365.
 ms.custom:
 - air
