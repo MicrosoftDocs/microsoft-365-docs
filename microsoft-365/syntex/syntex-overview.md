@@ -113,7 +113,7 @@ For more information, see [Search for metadata in document libraries in Microsof
 
 :::row:::
    :::column span="":::
-      ![Image of generic compliance icon.](../media/content-understanding/annotation-image.png) 
+      ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png) 
    :::column-end:::
    :::column span="3":::
       Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
@@ -139,13 +139,13 @@ For more information, see [Apply a retention label to a model in Microsoft Synte
 ## Premium taxonomy services
 
 :::row:::
+   :::column span="":::
+      ![Image of generic taxonomy icon.](../media/content-understanding/taxonomy-image.png)
+   :::column-end:::
    :::column span="3":::
       Having one or more Syntex licenses in your organization enables the following additional term store features for admins:<br><br>
        
       - [SKOS-based term set import](import-term-set-skos.md), which lets you import a term set using a SKOS-based format.      
-   :::column-end:::
-   :::column span="":::
-      ![Image of generic taxonomy icon.](../media/content-understanding/taxonomy-image.png)
    :::column-end:::
 :::row-end:::
 
