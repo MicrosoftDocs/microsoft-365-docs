@@ -59,7 +59,7 @@ You build custom models to understand the layout of your files from example docu
 | Unstructured<br>document processing  | Freeform<br>document processing  | Structured<br>document processing  |
 | ------------- | ------------- | ------------- |
 |  ![Icon for unstructured document processing model.](../media/content-understanding/custom-classify-and-extract-by-text-pattern.png) | ![Icon for freeform document processing model.](../media/content-understanding/custom-extract-by-text-pattern-and-layout.png) |  ![Icon for structured document processing model.](../media/content-understanding/custom-extract-by-layout.png) |
-| Use this custom model to automatically classify documents and extract information from them. Use the patterns of the text in example documents to train the model. Best for Office files and automatic classification of files. <br>[Learn more about unstructured models](document-understanding-overview.md) | Use this custom model to automatically extract information from unstructured documents. Use the patterns of the text or the layout in example documents to train the model. Best for a mix of both text and layout needs. <br>[Learn more about freeform models](freeform-document-processing-overview.md) |  Use this custom model to automatically identify field and table values from structured or semi-structured documents like forms. Best for most languages and files that include form layouts or tables. <br>[Learn more about structured models](form-processing-overview.md) |
+| Use this custom model to automatically classify documents and extract information from them. Use the patterns of the text in example documents to train the model. Best for Office files and automatic classification of files. <br>[Learn more about unstructured models.](document-understanding-overview.md) | Use this custom model to automatically extract information from unstructured documents. Use the patterns of the text or the layout in example documents to train the model. Best for a mix of both text and layout needs. <br>[Learn more about freeform models.](freeform-document-processing-overview.md) |  Use this custom model to automatically identify field and table values from structured or semi-structured documents like forms. Best for most languages and files that include form layouts or tables. <br>[Learn more about structured models.](form-processing-overview.md) |
 
 ### Prebuilt models
 
@@ -71,7 +71,7 @@ If you don't need to build a custom model, you can use a [prebuilt model](prebui
 | Invoice processing | Receipt processing | 
 | ------------- | ------------- |
 | ![Icon for Invoices model.](../media/content-understanding/trained-invoices-model.png) | ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) |
-| Use this prebuilt model to save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more about invoice models](prebuilt-model-invoice.md) | Use this prebuilt model to save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more about receipt models](prebuilt-model-receipt.md) | 
+| Use this prebuilt model to save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more about invoice models.](prebuilt-model-invoice.md) | Use this prebuilt model to save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more about receipt models.](prebuilt-model-receipt.md) | 
 
 [Learn more about custom and prebuilt models in Microsoft Syntex.](model-types-overview.md)
 
@@ -133,7 +133,7 @@ This feature is useful when you have a specific piece of information you want to
    :::column-end:::
 :::row-end:::
 
-For more information, see [Apply a retention label to a model in Microsoft Syntex](apply-a-retention-label-to-a-model.md) and [Apply a sensitivity label to a model in Microsoft Syntex](apply-a-sensitivity-label-to-a-model.md).
+Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
 
 ## Premium taxonomy services
 
@@ -166,7 +166,7 @@ For more information, see [Apply a retention label to a model in Microsoft Synte
    :::column-end:::
 :::row-end:::
 
-To prompt ideas about how you can use Syntex in your organization, see [Scenarios and use cases for Microsoft Syntex](adoption-scenarios.md).
+[Learn more about how to use Syntex to streamline processes in your organization.](adoption-scenarios.md).
 <br><br>
 > [!div class="nextstepaction"]
-> [Learn more about models in Microsoft Syntex](model-types-overview.md)
+> [Learn more about model types in Microsoft Syntex](model-types-overview.md)
