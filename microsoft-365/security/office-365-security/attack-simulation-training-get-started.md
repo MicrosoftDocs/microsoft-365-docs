@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid:
 ms.collection: 
   - m365-security
-  - m365initiative-m365-defender
+  - tier2
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
