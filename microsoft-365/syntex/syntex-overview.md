@@ -126,11 +126,11 @@ For more information, see [Comment and collaborate using annotations in Microsof
 ## Content compliance
 
 :::row:::
-   :::column span="":::
-      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png) 
-   :::column-end:::
    :::column span="3":::
       Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png) 
    :::column-end:::
 :::row-end:::
 
