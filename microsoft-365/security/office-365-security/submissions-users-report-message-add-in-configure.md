@@ -6,8 +6,9 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
+ms.reviewer: dhagarwal
 ms.topic: how-to
-ms.date: 12/12/2022
+ms.date: 12/15/2022
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -15,6 +16,7 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
   - m365-security
+  - tier2
 description: Learn how to enable the Report Message or the Report Phishing add-ins for Outlook and Outlook on the web, for individual users, or for your entire organization.
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -187,7 +189,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 3. Select **I have a URL for the manifest file**. Use the following URLs:
 
    - **Report Message**: <https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml>
-   - **Report Phishing**: <https://ipagave.azurewebsites.net/ReportMessageManifest/ReportPhishingAzure.xml>
+   - **Report Phishing**: <https://ipagave.azurewebsites.net/ReportPhishingManifest/ReportPhishingAzure.xml>
 
 4. Choose which users will have access to the add-in, select a deployment method, and then select **Deploy**.
 

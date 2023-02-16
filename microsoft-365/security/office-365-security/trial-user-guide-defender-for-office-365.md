@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Defender for Office 365 trial user guide"
+title: Microsoft Defender for Office 365 trial user guide
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,7 +7,9 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier1
 ms.localizationpriority: high
 ms.service: microsoft-365-security
 search.appverid:
@@ -16,6 +18,7 @@ search.appverid:
 description: "Microsoft Defender for Office 365 solutions trial user guide."
 ms.subservice: mdo
 ms.custom: trial-user guide
+ms.date: 1/31/2023
 ---
 
 # Trial user guide: Microsoft Defender for Office 365
@@ -153,7 +156,7 @@ Watch this video to learn more: [Campaign Views in Microsoft Defender for Office
 
 Respond efficiently using Automated investigation and response (AIR) to review, prioritize, and respond to threats.
 
-- [Learn more](automated-investigation-response-office.md) about investigation user guides.
+- [Learn more](air-about-office.md) about investigation user guides.
 - [View details and results](email-analysis-investigations.md) of an investigation.
 - Eliminate threats by [approving remediation actions](air-remediation-actions.md).
 

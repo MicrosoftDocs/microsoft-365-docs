@@ -11,17 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Manage portal access using role-based access control
 
->[!Note]
+> [!NOTE]
 > If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](../defender/manage-rbac.md).
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -41,14 +42,14 @@ Using role-based access control (RBAC), you can create roles and groups within y
 
 Large geo-distributed security operations teams typically adopt a tier-based model to assign and authorize access to security portals. Typical tiers include the following three levels:
 
-|Tier |Description  |
-|---------|---------|
-|Tier 1    | **Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.        |
-|Tier 2    | **Regional security operations team** <br> This team can see all the devices for their region and perform remediation actions.        |
-|Tier 3     |**Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.         |
+|Tier|Description|
+|---|---|
+|Tier 1|**Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.|
+|Tier 2|**Regional security operations team** <br> This team can see all the devices for their region and perform remediation actions.|
+|Tier 3|**Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.|
 
 > [!NOTE]
-> For Tier 0 assets, refer to [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) for security admins to provide more granular control of Microsoft Defender for Endpoint and Microsoft 365 Defender.  
+> For Tier 0 assets, refer to [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) for security admins to provide more granular control of Microsoft Defender for Endpoint and Microsoft 365 Defender.
 
 Defender for Endpoint RBAC is designed to support your tier- or role-based model of choice and gives you granular control over what roles can see, devices they can access, and actions they can take. The RBAC framework is centered around the following controls:
 
@@ -56,28 +57,29 @@ Defender for Endpoint RBAC is designed to support your tier- or role-based model
   - Create custom roles and control what Defender for Endpoint capabilities they can access with granularity.
 - **Control who can see information on specific device group or groups**
   - [Create device groups](machine-groups.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific  Azure Active Directory (Azure AD) user group.
+
     > [!NOTE]
-    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
+    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure AD user groups assigned to the roles.
 
-### Before you begin
+## Before you begin
 
 Before using RBAC, it's important that you understand the roles that can grant permissions and the consequences of turning on RBAC.
 
 > [!WARNING]
-> Before enabling the feature, it's important that you have a Global Administrator role or Security Administrator role in Azure AD and that you have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
+> Before enabling the feature, it's important that you have a Global Administrator role or Security Administrator role in Azure AD and that you have your Azure AD groups ready to reduce the risk of being locked out of the portal.
 
-When you first log in to the Microsoft 365 Defender portal, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
+When you first log in to the Microsoft 365 Defender portal, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD.
 
 Someone with a Defender for Endpoint Global administrator role has unrestricted access to all devices, regardless of their device group association and the Azure AD user groups assignments.
 
 > [!WARNING]
 > Initially, only those with Azure AD Global Administrator or Security Administrator rights will be able to create and assign roles in the Microsoft 365 Defender portal, therefore, having the right groups ready in Azure AD is important.
 >
-> **Turning on role-based access control will cause users with read-only permissions (for example, users assigned to Azure AD Security reader role) to lose access until they are assigned to a role.** 
+> **Turning on role-based access control will cause users with read-only permissions (for example, users assigned to Azure AD Security reader role) to lose access until they are assigned to a role.**
 >
->Users with admin permissions are automatically assigned the default built-in Defender for Endpoint global administrator role with full permissions. After opting in to use RBAC, you can assign additional users that are not Azure AD Global or Security Administrators to the Defender for Endpoint global administrator role. 
+> Users with admin permissions are automatically assigned the default built-in Defender for Endpoint global administrator role with full permissions. After opting in to use RBAC, you can assign additional users that are not Azure AD Global or Security Administrators to the Defender for Endpoint global administrator role.
 >
 > After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal.
 

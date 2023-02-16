@@ -20,6 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Prioritize, Manage, Investigate & Respond to Incidents in Microsoft 365 Defender
@@ -63,6 +64,6 @@ You can start using *Action Center* to act on pending action items from all inci
 
 [Manage incidents in Microsoft 365 Defender | Microsoft Docs](../../defender/manage-incidents.md)
 
-[How automated investigation and response works in Microsoft Defender for Office 365](../automated-investigation-response-office.md)
+[How automated investigation and response works in Microsoft Defender for Office 365](../air-about-office.md)
 
 [Remediation actions in Microsoft Defender for Office 365](../air-remediation-actions.md)

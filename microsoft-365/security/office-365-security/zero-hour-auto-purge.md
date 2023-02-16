@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: Admin
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid: 
   - MOE150
@@ -18,11 +16,13 @@ search.appverid:
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection: 
   - m365-security
+  - tier2
 ms.custom: 
   - seo-marvel-apr2020
 description: Zero-hour auto purge (ZAP) retroactively moves delivered messages in an Exchange Online mailbox to the Junk Email folder or quarantine that are found to be spam, phishing, or that contain malware after delivery.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Zero-hour auto purge (ZAP) in Exchange Online
@@ -55,7 +55,7 @@ Watch this short video to learn how ZAP in Microsoft Defender for Office 365 aut
 
 For **read or unread messages** that are found to contain malware after delivery, ZAP quarantines the message that contains the malware attachment. By default, only admins can view and manage quarantined malware messages. But, admins can create and use _quarantine policies_ to define what users are allowed to do to messages that were quarantined as malware. For more information, see [Quarantine policies](quarantine-policies.md).
 
-ZAP for malware is enabled by default in anti-malware policies. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+ZAP for malware is enabled by default in anti-malware policies. For more information, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 ### Zero-hour auto purge (ZAP) for phishing
 

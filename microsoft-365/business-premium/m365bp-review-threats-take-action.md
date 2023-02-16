@@ -7,7 +7,7 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual 
 ms.service: microsoft-365-security
-ms.subservice: other
+ms.subservice: m365bp
 ms.date: 09/15/2022
 ms.localizationpriority: medium
 ms.collection:
@@ -56,7 +56,7 @@ When you view details about specific threats or devices, you'll see recommendati
 
 1. In the table, you can filter the alerts according to a number of criteria.
 
-## Manage threat detections in Microsoft InTune
+## Manage threat detections in Microsoft Intune
 
 You can use Microsoft Endpoint Manager to manage threat detections as well. First, all devices whether Windows, iOS or Android, must be [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods) (part of Microsoft Endpoint Manager).
 

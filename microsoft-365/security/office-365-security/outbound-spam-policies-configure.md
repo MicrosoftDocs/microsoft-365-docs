@@ -5,21 +5,21 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
   - m365-security
+  - tier2
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn how to view, create, modify, and delete outbound spam policies in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 2/7/2023
 ---
 
 # Configure outbound spam filtering in EOP
@@ -100,7 +100,7 @@ Creating a custom outbound spam policy in the Microsoft 365 Defender portal crea
 4. On the **Users, groups, and domains** page that appears, identify the internal senders that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts.
    - **Groups**:
-     - Members of the specified distribution groups or mail-enabled security groups.
+     - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
      - The specified Microsoft 365 Groups.
    - **Domains**: All senders in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 

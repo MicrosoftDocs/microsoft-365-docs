@@ -1,14 +1,16 @@
 ---
-title: Configuring and controlling external email forwarding in Microsoft 365.
+title: Configuring and controlling external email forwarding in Microsoft 365
 f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 08/18/2022
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: overview
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 ms.localizationpriority: medium
 ms.assetid:
 ms.custom:

@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: Admin
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -16,12 +14,13 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn about the anti-spam settings and filters that will help prevent spam in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 02/09/2023
 ---
 
 # Anti-spam protection in EOP
@@ -60,7 +59,7 @@ The anti-spam settings in EOP are made of the following technologies:
 
 - **Outbound spam filtering**: EOP also checks to make sure that your users don't send spam, either in outbound message content or by exceeding outbound message limits. For more information, see [Configure outbound spam filtering in Microsoft 365](outbound-spam-policies-configure.md).
 
-- **Spoof intelligence**: For more information, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
+- **Spoof intelligence**: For more information, see [Anti-spoofing protection in EOP](anti-phishing-protection-spoofing-about.md).
 
 ## Manage errors in spam filtering
 
@@ -88,6 +87,10 @@ Here are some best practices that apply to either scenario:
 
 ### Prevent the delivery of spam to the Inbox
 
+For steps to help prevent false negatives, see [How to handle malicious emails that are delivered to recipients (False Negatives), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md).
+
+You can also use the following suggestions to help prevent false negatives:
+
 - **Verify your organization settings**: Watch out for settings that allow messages to skip spam filtering (for example, if you add your own domain to the allowed domains list in anti-spam policies). For our recommended settings, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md) and [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
 - **Use the available blocked sender lists**: For information, see [Create blocked sender lists](create-block-sender-lists-in-office-365.md).
@@ -98,12 +101,12 @@ Here are some best practices that apply to either scenario:
 
 ### Prevent good email from being identified as spam
 
-Here are some steps that you can take to help prevent false positives:
+For steps to help prevent false positives, see [How to handle Legitimate emails getting blocked (False Positive), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md).
+
+You can also use the following suggestions to help prevent false positives:
 
 - **Verify the user's Outlook Junk Email Filter settings**:
-
-  - **Verify the Outlook Junk Email Filter is disabled**: When the Outlook Junk Email Filter is set to the default value **No automatic filtering**, Outlook doesn't attempt to classify messages as spam.  When it's set to **Low** or **High**, the Outlook Junk Email Filter uses its own SmartScreen filter technology to identify and move spam to the Junk Email folder, so you could get false positives. Note that Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook in November, 2016. The existing SmartScreen spam definitions were left in place, but their effectiveness will likely degrade over time.
-
+  - **Verify the Outlook Junk Email Filter is disabled**: When the Outlook Junk Email Filter is set to the default value **No automatic filtering**, Outlook doesn't attempt to classify messages as spam.  When it's set to **Low** or **High**, the Outlook Junk Email Filter uses its own SmartScreen filter technology to identify and move spam to the Junk Email folder, so you could get false positives. Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook in November 2016. The existing SmartScreen spam definitions were left in place, but their effectiveness is likely degraded.
   - **Verify the Outlook 'Safe Lists Only' setting is disabled**: When this setting is enabled, only messages from senders in the user's Safe Senders list or Safe Recipients list are delivered to the Inbox; email from everyone else is automatically moved to the Junk Email folder.
 
   For more information about these settings, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
@@ -112,7 +115,7 @@ Here are some steps that you can take to help prevent false positives:
 
 - **Verify users are within the sending and receiving limits** as described in [Receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) in the Exchange Online service description.
 
-- **Standalone EOP: use directory synchronization**: If you use standalone EOP to help protect your on-premises Exchange organization, you should sync user settings with the service by using directory synchronization. Doing this ensures that your users' Safe Senders lists are respected by EOP. For more information, see [Use directory synchronization to manage mail users](/exchange/standalone-eop/manage-mail-users-in-eop#synchronize-directories-with-azure-active-directory-connect-aad-connect).
+- **Standalone EOP: use directory synchronization**: If you use standalone EOP to help protect your on-premises Exchange organization, you should sync user settings with the service by using directory synchronization. This configuration ensures that your users' Safe Senders lists are respected by EOP. For more information, see [Use directory synchronization to manage mail users](/exchange/standalone-eop/manage-mail-users-in-eop#synchronize-directories-with-azure-active-directory-connect-aad-connect).
 
 ## Anti-spam legislation
 

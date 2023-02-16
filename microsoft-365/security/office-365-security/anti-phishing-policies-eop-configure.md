@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
-
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier2
 ms.custom:
 description: Admins can learn how to create, modify, and delete the anti-phishing policies that are available in Exchange Online Protection (EOP) organizations with or without Exchange Online mailboxes.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 11/30/2022
 ---
 
 # Configure anti-phishing policies in EOP
@@ -98,7 +98,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 4. On the **Users, groups, and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts.
    - **Groups**:
-     - Members of the specified distribution groups or mail-enabled security groups.
+     - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 

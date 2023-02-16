@@ -6,10 +6,10 @@ metadata:
   ms.author: chrisda
   author: chrisda
   manager: dansimp
-  ms.date: 
+  ms.date: 1/31/2023
   audience: ITPro
   ms.topic: faq
-  
+  ms.collection: tier3
   ms.localizationpriority: medium
   ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
   ms.custom: 
@@ -34,7 +34,7 @@ summary: |
   
   - [Quarantine FAQ](quarantine-faq.yml)
   
-  - [Anti-malware protection FAQ](anti-malware-protection-faq-eop.yml)
+  - [Anti-malware protection FAQ](anti-malware-protection-faq.yml)
   
   - [Message Trace FAQ](/exchange/monitoring/trace-an-email-message/message-trace-faq)
   

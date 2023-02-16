@@ -11,8 +11,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -24,6 +24,7 @@ ms.custom:
   - intro-overview
 ms.topic: conceptual
 adobe-target: true
+ms.date: 02/17/2021
 ---
 
 # What is Microsoft 365 Defender?

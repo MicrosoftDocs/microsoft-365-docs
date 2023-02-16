@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid: 
   - OWC150
@@ -16,10 +14,12 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection: 
   - m365-security
+  - tier2
 description: Admins can learn about the types of email addresses that are accepted or rejected by Exchange Online Protection (EOP) and Outlook.com to help prevent phishing.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 11/30/2022
 ---
 
 # How EOP validates the From address to prevent phishing
@@ -31,7 +31,7 @@ ms.service: microsoft-365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Phishing attacks are a constant threat to any email organization. In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Exchange Online Protection (EOP) and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this article. This enforcement was enabled in November 2017.
+Phishing attacks are a constant threat to any email organization. In addition to using [spoofed (forged) sender email addresses](anti-phishing-protection-spoofing-about.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Exchange Online Protection (EOP) and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this article. This enforcement was enabled in November 2017.
 
 **Notes**:
 

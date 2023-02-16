@@ -8,14 +8,15 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.localizationpriority: medium
-ms.date: 06/22/2021
+ms.date: 1/31/2023
 search.appverid: 
   - MOE150
   - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
+  - highpri
 description: Admins can learn about threat protection in Microsoft 365 and configure how to use it for your organization.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
@@ -90,7 +91,7 @@ For more information about the recommended settings for anti-malware, see [EOP a
 
 4. Back on the policy details flyout, click **Close**.
 
-For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 ## Part 2 - Anti-phishing protection in EOP and Defender for Office 365
 

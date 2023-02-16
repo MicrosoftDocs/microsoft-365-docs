@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Configure Defender for Endpoint on Android features
@@ -100,6 +101,9 @@ Any other separation characters are invalid.
     |Manage Network protection Detection for Certificates|0 - Disable , 1 - Audit mode (default) , 2 - Enable ; When network protection is enabled, Audit mode for certificate detection is enabled by default. In audit mode, notification alerts are sent to SOC admins, but no end user notifications is displayed to the user when defender detects a bad certificate.Admins can however disable this detection with 0 as the value and enable full feature functionality by setting 2 as the value ,when the feature is enabled with value as 2, end user notifications are sent to the user when defender detects a bad certificate and alerts are also sent to the SOC Admin|
 6. Add the required groups on which the policy will have to be applied. Review and create the policy.
 
+> [!NOTE]
+> Users need to enable location permission (which is an optional permission); this enables Defender for Endpoint to scan their networks and alert them when there are WIFI-related threats. If the location permission is denied by the user, Defender for Endpoint will only be able to provide limited protection against network threats and will only protect the users from rogue certificates. 
+
 ## Privacy Controls
 
 Following privacy controls are available for configuring the data that is sent by Defender for Endpoint from Android devices:
@@ -108,7 +112,7 @@ Following privacy controls are available for configuring the data that is sent b
 |--------------------|-------------|
 |Malware report |Admins can set up privacy control for malware report - If privacy is enabled, then Defender for Endpoint will not send the malware app name and other app details as part of the malware alert report |
 |Phish report |Admins can set up privacy control for phish report - If privacy is enabled, then Defender for Endpoint will not send the domain name and details of the unsafe website as part of the phish alert report |
-|Vulnerability assessment of apps (Android-only) |By default only information about apps installed in the work profile is sent for vulnerability assessment. Admins can disable privacy to include personal apps|
+|Vulnerability assessment of apps |By default only information about apps installed in the work profile is sent for vulnerability assessment. Admins can disable privacy to include personal apps|
 |Network Protection (preview)| Admins can enable or disable privacy in network protection - If enabled, then Defender will not send network details.|
 
 ### Configure privacy alert report

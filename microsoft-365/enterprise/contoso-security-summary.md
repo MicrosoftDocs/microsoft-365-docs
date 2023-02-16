@@ -86,15 +86,15 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
   Contoso is using [Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) for malware protection and anti-malware management for PCs and devices running Windows 10 Enterprise.
 
-- Secure email flow and mailbox audit logging with Microsoft Defender for Office 365 
+- Secure email flow and mailbox audit logging with Microsoft Defender for Office 365
 
-  Contoso is using Exchange Online Protection and [Defender for Office 365](/office365/securitycompliance/office-365-atp) to protect against unknown malware, viruses, and malicious URLs transmitted through emails.
+  Contoso is using Exchange Online Protection and [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) to protect against unknown malware, viruses, and malicious URLs transmitted through emails.
 
   Contoso also enabled mailbox audit logging to identify who logs in to user mailboxes, sends messages, and does other activities performed by the mailbox owner, a delegated user, or an administrator.
 
 - Attack monitoring and prevention with Office 365 threat investigation and response
 
-  Contoso uses [Office 365 threat investigation and response](/office365/securitycompliance/office-365-ti) to protect users by making it easy to identify and address attacks, and to prevent future attacks.
+  Contoso uses [Office 365 threat investigation and response](/microsoft-365/security/office-365-security/office-365-ti) to protect users by making it easy to identify and address attacks, and to prevent future attacks.
 
 - Protection from sophisticated attacks with Advanced Threat Analytics
 

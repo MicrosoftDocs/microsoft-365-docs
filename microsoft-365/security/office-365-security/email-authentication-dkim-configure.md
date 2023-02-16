@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/05/2021
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 
@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 ms.custom:
   - seo-marvel-apr2020
 description: Learn how to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure messages sent from your custom domain are trusted by the destination email systems.
@@ -419,6 +419,6 @@ Next, see [**Use DMARC to validate email**](email-authentication-dmarc-configure
 
 Key rotation via PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Use DMARC to validate email](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
+[Use DMARC to validate email](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure)
 
 [Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders)

@@ -23,6 +23,7 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
+ms.date: 03/15/2021
 ---
 
 # View the details and results of an automated investigation
@@ -34,7 +35,7 @@ With Microsoft Defender for Endpoint, when an [automated investigation](automate
 
 ## (NEW!) Unified investigation page
 
-The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)  and [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp).
+The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)  and [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365).
 
 > [!TIP]
 > To learn more about what's changing, see [(NEW!) Unified investigation page](/microsoft-365/security/mtp/mtp-autoir-results).

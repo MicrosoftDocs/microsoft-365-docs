@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: how-to
 f1_keywords: 
@@ -16,11 +15,13 @@ search.appverid:
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection: 
   - m365-security
+  - tier2
 description: Admins can learn how to remove users from the Restricted users page in the Microsoft 365 Defender portal. Users are added to the Restricted users portal for sending outbound spam, typically as a result of account compromise.
 ms.custom: 
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Remove blocked users from the Restricted users portal in Microsoft 365
@@ -91,7 +92,7 @@ There are 2 types of restricted entities:
 6. Click **Yes** to confirm the change.
 
    > [!NOTE]
-   > It might take up to 24 hours for all restrictions to be removed from the user.
+   > Under most circumstances, all restrictions should be removed from the user within one hour. Transient technical issues might cause a longer wait time, but the total wait should be no longer than 24 hours.
 
 ## Verify the alert settings for restricted users
 

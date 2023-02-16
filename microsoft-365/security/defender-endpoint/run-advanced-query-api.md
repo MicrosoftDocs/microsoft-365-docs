@@ -19,17 +19,18 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Advanced hunting API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Applies to:** 
+**Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> For the full available Advanced Hunting API experience across all Microsoft Defenders’ products, visit [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
+> For the full available Advanced Hunting API experience across all Microsoft Defenders' products, visit [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -164,7 +165,7 @@ Here is an example of the response.
 
 ## Related topics
 
-- [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Microsoft Defender for Endpoint APIs introduction](apis-intro.md)
 - [Advanced Hunting from Portal](advanced-hunting-query-language.md)

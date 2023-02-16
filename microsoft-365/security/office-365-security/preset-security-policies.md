@@ -7,16 +7,17 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
 description: Admins can learn how to apply Standard and Strict policy settings across the protection features of Exchange Online Protection (EOP) and Microsoft Defender for Office 365
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Preset security policies in EOP and Microsoft Defender for Office 365
@@ -55,12 +56,8 @@ A profile determines the level of protection. The following profiles are availab
 
   - **Users**: The specified mailboxes, mail users, or mail contacts.
   - **Groups**:
-    - Members of the specified distribution groups or mail-enabled security groups.
+    - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
     - The specified Microsoft 365 Groups.
-
-    > [!NOTE]
-    >  Dynamic distribution groups are not supported.
-
   - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
   You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
@@ -77,7 +74,10 @@ A profile determines the level of protection. The following profiles are availab
 
 - **Built-in protection** (Defender for Office 365 only): A profile that enables Safe Links and Safe Attachments protection only. This profile effectively provides default policies for Safe Links and Safe Attachments, which never had default policies.
 
-  For **Built-in protection**, the preset security policy is on by default for all Defender for Office 365 customers. Although we don't recommend it, you can also configure exceptions based on **Users**, **Groups**, and **Domains** so the protection isn't applied to specific users.
+  For **Built-in protection**, the preset security policy is on by default for all Defender for Office 365 customers. You can also configure exceptions based on **Users**, **Groups**, and **Domains** so the protection isn't applied to specific users.
+
+  > [!IMPORTANT]
+  > Unless you configure exceptions to **Built-in protection**, all recipients in the organization will receive Safe Links and Safe Attachments protection.
 
 Until you assign the policies to users, the **Standard** and **Strict** preset security policies are assigned to no one. In contrast, the **Built-in protection** preset security policy is assigned to all recipients by default, but you can configure exceptions.
 
@@ -88,7 +88,7 @@ Preset security policies use the corresponding policies from the various protect
 - **Exchange Online Protection (EOP) policies**: These policies are in all Microsoft 365 organizations with Exchange Online mailboxes and standalone EOP organizations without Exchange Online mailboxes:
 
   - [Anti-spam policies](anti-spam-policies-configure.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
-  - [Anti-malware policies](configure-anti-malware-policies.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
+  - [Anti-malware policies](anti-malware-policies-configure.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
   - [Anti-phishing policies (spoofing protection)](anti-phishing-policies-about.md#spoof-settings) named **Standard Preset Security Policy** and **Strict Preset Security Policy** (spoof settings).
 
   > [!NOTE]
@@ -100,7 +100,7 @@ Preset security policies use the corresponding policies from the various protect
     - [Impersonation settings](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Advanced phishing thresholds](anti-phishing-policies-about.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
   - [Safe Links policies](safe-links-policies-configure.md) named **Standard Preset Security Policy**, **Strict Preset Security Policy**, and **Built-in Protection Policy**.
-  - [Safe Attachments policies](set-up-safe-attachments-policies.md) named **Standard Preset Security Policy**, **Strict Preset Security Policy**, and **Built-in Protection Policy**.
+  - [Safe Attachments policies](safe-attachments-policies-configure.md) named **Standard Preset Security Policy**, **Strict Preset Security Policy**, and **Built-in Protection Policy**.
 
 You can apply EOP protections to different users than Defender for Office 365 protections, or you can apply EOP and Defender for Office 365 to the same recipients.
 
@@ -164,11 +164,8 @@ You might want to apply the **Standard** or **Strict** preset security policies 
    - **Specific recipients**:
      - **Users**
      - **Groups**:
-       - Members of the specified distribution groups or mail-enabled security groups.
+       - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
        - The specified Microsoft 365 Groups.
-
-       Dynamic distribution groups are not supported.
-
    - **Domains**
 
      Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
@@ -251,11 +248,8 @@ Therefore, we typically don't recommend exceptions to the **Built-in protection*
 3. On the **Exclude from Built-in protection** flyout that appears, identify the internal recipients that are excluded from the built-in Safe Links and Safe Attachments protection:
    - **Users**
    - **Groups**:
-       - Members of the specified distribution groups or mail-enabled security groups.
+       - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
        - The specified Microsoft 365 Groups.
-
-     Dynamic distribution groups are not supported.
-
    - **Domains**
 
    Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove exclusions from Built-in protection icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.

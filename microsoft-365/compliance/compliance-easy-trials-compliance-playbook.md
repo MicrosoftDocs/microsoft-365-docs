@@ -351,24 +351,24 @@ Take advantage of an end-to-end workflow for preserving, collecting, analyzing, 
 
 To access eDiscovery (Premium) or be added as a member of an eDiscovery (Premium) case, a user must be assigned the appropriate permissions.
 
-1. [Set up eDiscovery (Premium) – Assign eDiscovery permissions](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
-1. [Add or remove members from a case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
+1. [Set up eDiscovery (Premium) – Assign eDiscovery permissions](ediscovery-premium-get-started.md#step-2-assign-ediscovery-permissions)
+1. [Add or remove members from a case](ediscovery-add-or-remove-members-from-a-case.md)
 
 ### Step 2 (required): Create a Case
 
 More organizations use the eDiscovery (Premium) solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
 
 1. Manage eDiscovery (Premium) – [learn how to configure eDiscovery (Premium), manage cases by using the Security & Compliance Center, manage a workflow in Advanced eDiscovery, and analyze Advanced eDiscovery search results](/training/modules/manage-advanced-ediscovery).
-1. [Create an eDiscovery case](advanced-ediscovery-new-case-format.md) using eDiscovery Premium’s new case format
-1. [Close or delete a case](close-or-delete-case.md) - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
+1. [Create an eDiscovery case](ediscovery-new-case-format.md) using eDiscovery Premium’s new case format
+1. [Close or delete a case](ediscovery-close-or-delete-case.md) - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
 
 ### Step 3 (optional): Settings
 
 To allow people in your organization start to create and use cases, you must configure global settings that apply to all cases in your organization. You can manage settings such as attorney-client privilege detection, historical versions and many more.
 
-1. [Configure global settings for eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
-1. [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
-1. [Manage jobs in eDiscovery (Premium)](managing-jobs-ediscovery20.md)
+1. [Configure global settings for eDiscovery (Premium)](ediscovery-premium-get-started.md#step-3-configure-global-settings-for-ediscovery-premium)
+1. [Configure search and analytics settings](ediscovery-configure-search-and-analytics-settings.md)
+1. [Manage jobs in eDiscovery (Premium)](ediscovery-managing-jobs.md)
 
 ### Step 4 (optional): Compliance Boundaries
 
@@ -378,16 +378,16 @@ Compliance boundaries create logical boundaries within an organization that cont
 
 Set up compliance boundaries for eDiscovery investigations:
 
-1. [Identify a user attribute to define your agencies](set-up-compliance-boundaries.md#step-1-identify-a-user-attribute-to-define-your-agencies)
-1. [Create a role group for each agency](set-up-compliance-boundaries.md#step-2-create-a-role-group-for-each-agency)
-1. [Create a search permissions filter to enforce the compliance boundary](set-up-compliance-boundaries.md#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
-1. [Create an eDiscovery case for an intra-agency investigations](set-up-compliance-boundaries.md#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
+1. [Identify a user attribute to define your agencies](ediscovery-set-up-compliance-boundaries.md#step-1-identify-a-user-attribute-to-define-your-agencies)
+1. [Create a role group for each agency](ediscovery-set-up-compliance-boundaries.md#step-2-create-a-role-group-for-each-agency)
+1. [Create a search permissions filter to enforce the compliance boundary](ediscovery-set-up-compliance-boundaries.md#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
+1. [Create an eDiscovery case for an intra-agency investigations](ediscovery-set-up-compliance-boundaries.md#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
 
 ### Step 5 (optional): eDiscovery Premium’s collection tool
 
-Use the [eDiscovery (Premium) collection workflow](create-draft-collection.md#create-a-collection-estimate) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
+Use the [eDiscovery (Premium) collection workflow](ediscovery-create-draft-collection.md#create-a-collection-estimate) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
 
-[Learn more about collection queries and estimates.](building-search-queries.md)
+[Learn more about collection queries and estimates.](ediscovery-building-search-queries.md)
 
 ## Microsoft Purview Audit (Premium)
 

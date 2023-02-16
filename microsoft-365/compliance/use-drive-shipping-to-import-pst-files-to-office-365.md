@@ -436,7 +436,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
 
   - Enable [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-autoexpanding-archiving.md) to give users more mailbox storage space for the data. 
 
-  - Place mailboxes on [Litigation Hold](./create-a-litigation-hold.md) to retain the data. 
+  - Place mailboxes on [Litigation Hold](./ediscovery-create-a-litigation-hold.md) to retain the data. 
 
   - Use Microsoft [eDiscovery tools](search-for-content.md) to search the data. 
 

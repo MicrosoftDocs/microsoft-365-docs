@@ -14,10 +14,12 @@ search.appverid:
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
   - m365-security
+  - tier2
 description: Learn about how to define Safe Attachments policies to protect your organization from malicious files in email.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/05/2022
 ---
 
 # Set up Safe Attachments policies in Microsoft Defender for Office 365
@@ -31,7 +33,7 @@ ms.service: microsoft-365-security
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](defender-for-office-365-whats-new.md). If you're a home user looking for information about attachment scanning in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Safe Attachments is a feature in [Microsoft Defender for Office 365](defender-for-office-365-whats-new.md) that uses a virtual environment to check attachments in inbound email messages after they've been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md), but before delivery to recipients. For more information, see [Safe Attachments in Microsoft Defender for Office 365](safe-attachments-about.md).
+Safe Attachments is a feature in [Microsoft Defender for Office 365](defender-for-office-365-whats-new.md) that uses a virtual environment to check attachments in inbound email messages after they've been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection-about.md), but before delivery to recipients. For more information, see [Safe Attachments in Microsoft Defender for Office 365](safe-attachments-about.md).
 
 Although there's no default Safe Attachments policy, the **Built-in protection** preset security policy provides Safe Attachments protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or custom Safe Attachments policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also use the procedures in this article to create Safe Attachments policies that apply to specific users, group, or domains.
 
@@ -91,7 +93,7 @@ Creating a custom Safe Attachments policy in the Microsoft 365 Defender portal c
 4. On the **Users and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts.
    - **Groups**:
-     - Members of the specified distribution groups or mail-enabled security groups.
+     - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
