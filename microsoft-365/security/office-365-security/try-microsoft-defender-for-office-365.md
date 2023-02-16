@@ -19,7 +19,7 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS:
-ms.date: 03/28/2022
+ms.date: 1/31/2023
 ---
 
 # Try Microsoft Defender for Office 365
