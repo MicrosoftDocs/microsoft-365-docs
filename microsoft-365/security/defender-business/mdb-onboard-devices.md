@@ -171,11 +171,11 @@ When you run the local script on Mac:
 
 10. Use the following Bash command to run the onboarding package:
 
-```bash
-/usr/bin/unzip WindowsDefenderATPOnboardingPackage.zip \
-&& /bin/chmod +x MicrosoftDefenderATPOnboardingMacOs.sh \
-&& /bin/bash -c MicrosoftDefenderATPOnboardingMacOs.sh
-```
+   ```bash
+   /usr/bin/unzip WindowsDefenderATPOnboardingPackage.zip \
+   && /bin/chmod +x MicrosoftDefenderATPOnboardingMacOs.sh \
+   && /bin/bash -c MicrosoftDefenderATPOnboardingMacOs.sh
+   ```
 
 After Mac is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
