@@ -68,14 +68,20 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 ### Create a connection
 
 1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then under **Featured collections**, select **Frontline workers**.
+
 1. Select **Connector Management Console**.
     :::image type="content" source="media/shifts-connector-wizard-get-started.png" alt-text="Screenshot of the details page for the Shifts connector wizard in the Microsoft 365 admin center." lightbox="media/shifts-connector-wizard-get-started.png":::
+
 1. To create a new connection, choose **Add connection**.
+
 1. In the Choose your connector pane, choose **Blue Yonder Workforce Management**, and then select **Next** to create a Blue Yonder WFM connection.
 <a name="connection_details"> </a>
+
 1. In the Connection settings pane, give your connection a unique name. It can't be longer than 100 characters or have any special characters.
     :::image type="content" source="media/shifts-connector-wizard-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-connection-details.png":::
+
 1. Enter your Blue Yonder WFM service account name and password and service URLs. If you don't know one or more of your connection details, contact your Blue Yonder WFM partner.
+
 1. When you're done, select **Save connection**.
 
 > [!NOTE]
@@ -93,10 +99,13 @@ You'll see all the connections you've created on your **Connector Management Con
 On the Settings page, you choose the information to sync from Blue Yonder WFM to Shifts, the sync frequency, and whether Shifts users can make changes to the data.
 
 1. Enter a name for your connection instance. It can't be longer than 100 characters or have any special characters.
+
 1. Enter your Microsoft 365 system account. This is the [account that you created as a prerequisite](#prerequisites) that is a team owner of all the teams you want to map.
     :::image type="content" source="media/shifts-connector-wizard-sync-settings.png" alt-text="Screenshot of the Sync settings page of the wizard, showing sync settings." lightbox="media/shifts-connector-wizard-sync-settings.png":::
+
 <a name="email"> </a>
-1. Under **Email notification recipients**, choose who receives email notifications about this connection instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connection instance is set up.
+
+3. Under **Email notification recipients**, choose who receives email notifications about this connection instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connection instance is set up.
 
   > [!TIP]
   > You'll be given the following options for the next group of settings: <br>
@@ -104,8 +113,9 @@ On the Settings page, you choose the information to sync from Blue Yonder WFM to
   > **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts. <br>
   > **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
 
-1. Choose your basic, **Time card**, and **Request** settings from the options listed above.
-1. Then, choose your sync frequency.
+4. Choose your basic, **Time card**, and **Request** settings from the options listed above.
+
+5. Then, choose your sync frequency.
 
     > [!IMPORTANT]
     > If you chose any of the following options to disable open shifts, open shift requests, swap requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
@@ -115,8 +125,8 @@ On the Settings page, you choose the information to sync from Blue Yonder WFM to
     > - Time off requests: **Feature is disabled for all users**
     >
     > After you run the wizard, make sure you follow the steps in the [Disable open shifts, open shifts requests, swap requests, and time off requests](#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests) section later in this article.
- 
-1. When you're done choosing your settings, select **Next**.
+
+6. When you're done choosing your settings, select **Next**.
 
 #### Map Blue Yonder Workforce Management instances to teams
 <a name="sites"> </a>
@@ -130,22 +140,23 @@ Then, map each instance to a team in Teams. You can map an instance to an existi
 :::image type="content" source="media/shifts-connector-wizard-search-team.png" alt-text="Screenshot of the pane showing the search team option and create a new team option." lightbox="media/shifts-connector-wizard-search-team.png":::
 
 1. On the **Mapping** page, start by choosing which WFM instance(s) you want to map to Microsoft Teams team(s).
-1. Tick the checkbox for each WFM instance you want to map. Instances will only map if you check their boxes.
-1. Next, search for and choose the correct Microsoft Teams team.
 
+1. Tick the checkbox for each WFM instance you want to map. Instances will only map if you check their boxes.
+
+1. Next, search for and choose the correct Microsoft Teams team.
     Keep in mind that teams that are already mapped to a WFM instance in this connection instance won't be available to map again.
+
 1. Choose the time zone. The closest city will be automatically filled in, but you can change it.
+
 1. When you've mapped all your teams, select **Next**.
 
 ### Review and finish
 
 Before finishing, review the summary of the connection instance creation process. If you need to make changes to any team mappings, choose **Back**. When you're ready, select **Finish**.
 
-:::image type="content" source="media/shifts-connector-wizard-review.png" alt-text="Screenshot of the Review page of the wizard, showing mappings." lightbox="media/shifts-connector-wizard-review.png":::
+:::image type="content" source="media/shifts-connector-wizard-ukg-review.png" alt-text="Screenshot of the Review page of the wizard, showing mappings." lightbox="media/shifts-connector-wizard-ukg-review.png":::
 
-You’ll see a message to confirm that we received your request.
-
-:::image type="content" source="media/shifts-connector-wizard-operation-id.png" alt-text="Screenshot of the wizard page, showing confirmation message and operation ID." lightbox="media/shifts-connector-wizard-operation-id.png":::
+:::image type="content" source="media/shifts-connector-wizard-ukg-operation-id.png" alt-text="Screenshot of the wizard page, showing confirmation message and operation ID." lightbox="media/shifts-connector-wizard-ukg-operation-id.png":::
 
 The wizard starts the process to set up the connection instance. This process may take some time to complete. If you try to edit the connection instance before the setup is complete, you won't be able to conclude the process.
 
