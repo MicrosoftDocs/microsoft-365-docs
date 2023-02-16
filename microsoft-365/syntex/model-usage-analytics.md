@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -19,13 +19,11 @@ description: Learn how to find more information about how your AI models are per
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhX]  
 
 </br>
---->
 
 Your content center in Microsoft Syntex provides you model usage analytics to provide more information about how your models that have been published from the content center are being used. The **How your models are performing in the last 30 days** section of the content center includes a 30 day roll-up of usage analytics data provided in the following charts and lists:
 

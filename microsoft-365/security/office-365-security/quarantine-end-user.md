@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: Consumer/IW
 ms.topic: how-to
-
 ms.localizationpriority: high
 search.appverid:
   - MET150
@@ -16,12 +14,14 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
   - seo-marvel-apr2020
 description: Users can learn how to view and manage quarantined messages in Exchange Online Protection (EOP) that should have been delivered to them.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
+ms.date: 12/02/2022
 ---
 
 # Find and release quarantined messages as a user in EOP

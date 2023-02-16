@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/09/2019
+ms.date: 1/31/2023
 audience: Admin
 ms.topic: overview
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 ms.custom:
   - seo-marvel-apr2020
 description: Learn about threat investigation and response capabilities in Microsoft Defender for Office 365 Plan.

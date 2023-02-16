@@ -19,6 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
+ms.date: 05/05/2022
 ---
 
 # Microsoft Defender Experts for Hunting

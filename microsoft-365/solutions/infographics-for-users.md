@@ -7,12 +7,13 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.date: 02/11/2022
+ms.date: 09/22/2022
 ms.localizationpriority: medium
 ms.collection: 
 - highpri
 - M365solutions
 f1.keywords: NOCSH
+
 ---
 
 # Microsoft 365 and Microsoft Teams infographics for your users
