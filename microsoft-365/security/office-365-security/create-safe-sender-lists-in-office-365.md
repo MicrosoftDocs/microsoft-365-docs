@@ -7,7 +7,9 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 ms.localizationpriority: medium
 search.appverid:
   - MET150s

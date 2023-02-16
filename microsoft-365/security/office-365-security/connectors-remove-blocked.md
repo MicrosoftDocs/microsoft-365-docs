@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier2
 ms.custom:
 description: Learn how to remove blocked connectors in Microsoft 365 Defender.
 ms.subservice: mdo

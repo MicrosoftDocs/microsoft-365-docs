@@ -5,7 +5,6 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-
 ms.localizationpriority: high
 search.appverid:
   - MET150
@@ -13,7 +12,7 @@ search.appverid:
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
   - highpri
 ms.custom:
   - seo-marvel-apr2020

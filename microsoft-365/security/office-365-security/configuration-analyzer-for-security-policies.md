@@ -14,6 +14,7 @@ search.appverid:
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
 description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the settings in Standard protection and Strict protection in preset security policies.
 ms.subservice: mdo

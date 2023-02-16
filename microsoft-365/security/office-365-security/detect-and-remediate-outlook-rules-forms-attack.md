@@ -9,7 +9,7 @@ ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 ms.collection:
-  - o365_security_incident_response
+  - tier2
   - m365-security
 
 ms.localizationpriority: medium
