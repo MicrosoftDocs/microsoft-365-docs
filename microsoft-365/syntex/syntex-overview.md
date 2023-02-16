@@ -111,7 +111,15 @@ For more information, see [Search for metadata in document libraries in Microsof
 
 ## Annotations
 
-Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
+:::row:::
+   :::column span="":::
+      ![Image of generic compliance icon.](../media/content-understanding/annotation-image.png) 
+   :::column-end:::
+   :::column span="3":::
+      Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
+   :::column-end:::
+:::row-end:::
+
 
 For more information, see [Comment and collaborate using annotations in Microsoft Syntex](annotations.md).
 
