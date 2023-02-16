@@ -73,7 +73,7 @@ If you don't need to build a custom model, you can use a [prebuilt model](prebui
 | ![Icon for Invoices model.](../media/content-understanding/trained-invoices-model.png) | ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) |
 | Use this prebuilt model to save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more](prebuilt-model-invoice.md) | Use this prebuilt model to save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more](prebuilt-model-receipt.md) | 
 
-For more information about custom and prebuilt models, see [Overview of model types in Microsoft Syntex](model-types-overview.md).
+[Learn more about custom and prebuilt models in Microsoft Syntex.](model-types-overview.md)
 
 ## Content assembly
 
@@ -90,7 +90,7 @@ For more information about custom and prebuilt models, see [Overview of model ty
 
  This process lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
 
-For more information, see [Create documents using content assembly in Microsoft Syntex](content-assembly.md).
+[Learn more about how to generate documents using content assembly.](content-assembly.md)
 
 ## Content query
 
@@ -107,7 +107,7 @@ For more information, see [Create documents using content assembly in Microsoft 
 
 This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
-[Learn more about using content query to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md).
+[Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
 
 ## Annotations
 
@@ -120,8 +120,7 @@ This feature is useful when you have a specific piece of information you want to
    :::column-end:::
 :::row-end:::
 
-
-[Learn more about using annotations in Microsoft Syntex.](annotations.md).
+[Learn more about using annotations in Microsoft Syntex.](annotations.md)
 
 ## Content compliance
 
