@@ -54,7 +54,7 @@ Use the following options to configure the export. Not all options are allowed f
   - All filtered documents: This option exports the documents in an active filter. This option is only available when a filter is applied to the review set.
   - All documents in the review set: This option exports all documents in the review set.
 
-- **Expand selection**: Use the following options to export additional items that are related to filtered items in the review set:
+- **Expand selection**: Use the following options to export additional items that are related to filtered/selected items in the review set:
 
     - *None*: This option doesn't export the family items or conversation items. It only exports the items that are selected or to all items in the review set list.
     - *Include associated family items*: This option includes associated family items. Family items are items that share the same [*FamilyId* metadata property](/microsoft-365/compliance/ediscovery-document-metadata-fields) value. For example, a document that's attached to an email message shares the same *FamilyId* as the email message. If this option is selected, the email message and the document are exported in this example, even though the document might not be included in the list of review set items.
