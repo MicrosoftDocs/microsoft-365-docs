@@ -79,8 +79,8 @@ The following are the Microsoft 365 Defender portal URLs for US Government custo
 |Customer type|Portal URL|
 |---|---|
 |GCC|<https://security.microsoft.com>|
-|GCC High|https://security.microsoft.us|
-|DoD|https://security.apps.mil|
+|GCC High|[https://security.microsoft.us](https://security.microsoft.us)|
+|DoD|[https://security.apps.mil](https://security.apps.mil)|
 |
 > [!NOTE]
 > If you are a GCC customer and in the process of moving from Microsoft Defender for Endpoint commercial to GCC, use https://transition.security.microsoft.com to access your Microsoft Defender for Endpoint commercial data.
