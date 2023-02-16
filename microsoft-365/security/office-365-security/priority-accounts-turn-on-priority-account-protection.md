@@ -13,6 +13,7 @@ search.appverid:
   - MET150
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
 description: Learn how to identify critical people in an organization and add the priority account tag to provide them with extra protection.
 ms.subservice: mdo

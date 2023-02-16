@@ -109,6 +109,12 @@ This feature is useful when you have a specific piece of information you want to
 
 For more information, see [Search for metadata in document libraries in Microsoft Syntex](metadata-search.md).
 
+## Annotations
+
+Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
+
+For more information, see [Comment and collaborate using annotations in Microsoft Syntex](annotations.md).
+
 ## Content compliance
 
 :::row:::

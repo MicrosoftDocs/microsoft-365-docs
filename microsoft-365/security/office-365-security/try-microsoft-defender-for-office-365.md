@@ -15,6 +15,7 @@ search.appverid:
   - MOE150
 ms.collection:
   - m365-security
+  - tier1
 ms.custom: 
 ms.subservice: mdo
 ms.service: microsoft-365-security

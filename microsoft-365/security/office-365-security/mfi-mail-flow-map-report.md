@@ -7,7 +7,9 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.collection: m365-security
+ms.collection: 
+ - m365-security
+ - tier3
 ms.localizationpriority: medium
 ms.assetid: 
 ms.custom: 

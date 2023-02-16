@@ -1,5 +1,5 @@
 ---
-title: "The Microsoft Defender for Office 365 email entity page"
+title: Microsoft Defender for Office 365 email entity page
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -13,7 +13,8 @@ ms.subservice: mdo
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
-- m365initiative-defender-office365
+- tier1
+- highpri
 ms.custom: 
 description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can see email details in all Microsoft Defender for Office 365 experiences including the email headers for copy, Detection details, Threats detected, Latest and Original delivery locations, Delivery actions, and IDs like Alert Id, Network Message ID and more.
 search.appverid: met150

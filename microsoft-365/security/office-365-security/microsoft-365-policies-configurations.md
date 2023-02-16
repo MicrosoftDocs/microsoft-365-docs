@@ -21,6 +21,7 @@ ms.collection:
   - m365solution-zero-trust
   - zerotrust-solution
   - highpri
+  - tier1
 ms.subservice: mdo
 search.appverid: met150
 ms.date: 1/31/2023

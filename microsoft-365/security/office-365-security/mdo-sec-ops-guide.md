@@ -13,6 +13,7 @@ search.appverid:
   - MOE150
 ms.collection: 
   - m365-security
+  - tier1
 ms.custom:
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Office 365.
 ms.subservice: mdo
