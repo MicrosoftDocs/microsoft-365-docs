@@ -11,7 +11,7 @@ ms.date: 1/31/2023
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 description: View and investigate malware phishing attempts.
 ms.custom: 
 - seo-marvel-apr2020
