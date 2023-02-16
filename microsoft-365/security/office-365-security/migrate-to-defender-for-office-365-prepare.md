@@ -16,6 +16,7 @@ ms.collection:
   - m365-security
   - m365solution-mdo-migration
   - highpri
+  - tier1
 ms.custom: migrationguides
 description: "Prerequisite steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
 ms.subservice: mdo

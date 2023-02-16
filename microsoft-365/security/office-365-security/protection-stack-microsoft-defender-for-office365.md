@@ -13,7 +13,9 @@ ms.localizationpriority: medium
 description: Follow the path of an incoming message through the threat filtering stack in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 search.appverid: met150
 ---
 

@@ -13,6 +13,7 @@ ms.collection:
   - m365initiative-defender-office365
   - m365solution-ransomware
   - highpri
+  - tier1
 description: Microsoft 365 admins can learn how to recover from a ransomware attack.
 ms.subservice: mdo
 ms.service: microsoft-365-security
