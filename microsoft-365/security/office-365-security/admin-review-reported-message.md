@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
+  - tier2
 ms.custom:
 description: Learn how to review messages that are reported and give feedback to your users.
 ms.subservice: mdo
