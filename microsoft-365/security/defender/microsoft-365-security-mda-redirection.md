@@ -39,27 +39,26 @@ Once the redirection setting is enabled, any requests to the standalone Defender
 
 ## When does this take effect?
 
-Once enabled, this update might take effect almost immediately for some accounts. But the redirection might take longer to propagate to every account in your organization. Accounts in active sessions while this setting is applied won't be ejected from their session and will only be routed to Microsoft 365 Defender after ending their current session and signing back in again.  
+Once enabled, this update might take effect almost immediately for some accounts. But the redirection might take longer to propagate to every account in your organization. Accounts in active sessions while this setting is applied won't be ejected from their session and will only be routed to Microsoft 365 Defender after ending their current session or opening a new tab.  
 
 ### Set up portal redirection
 
 To start routing accounts to Microsoft 365 Defender:
 
-1. Make sure you're a global administrator or have security administrator permissions in Azure Active Directory.
-
-1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
-
-1. Navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft 365 Defender** or [go here](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
+1. Make sure you have global administrator, security admin, MCAS admin permissions in Azure Active Directory or you’re local global admin in Microsoft Defender for Cloud Apps.
+2. You can select “Configure automatic redirection” from the banner in the Microsoft Defender for Cloud Apps portal.
+3. Alternatively, sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
+4. Navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft 365 Defender** or [go here](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
 
     :::image type="content" source="../../media/defender-cloud-apps-portal-redirection.png" alt-text="Portal redirection."lightbox="../../media/defender-cloud-apps-portal-redirection.png":::
 
-1. Toggle the Automatic redirection setting to **On**.
+5. Toggle the Automatic redirection setting to **On**.
 
 >[!IMPORTANT]
->Enabling this setting will not terminate active user sessions. Accounts who are in an active session while this setting is applied will only be directed to Microsoft 365 Defender after ending their current session and signing in again.
+>Enabling this setting will not terminate active user sessions. Accounts who are in an active session while this setting is applied will only be directed to Microsoft 365 Defender after ending their current session or opening a new tab.
 
 >[!NOTE]
->You must be a global administrator or have security administrator permissions in Azure Active Directory to enable or disable this setting.  
+>To enable or disable this setting, you must have a global administrator, security admin, MCAS admin permissions in Azure Active Directory or local global admin in Microsoft Defender for Cloud Apps.  
 
 ## Can I go back to using the former portal?
 
@@ -67,7 +66,7 @@ If something isn't working for you or if there's anything you're unable to compl
 
 To revert to the former Microsoft Defender for Cloud Apps portal:
 
-1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a global administrator or using and account with security administrator permissions in Azure Active directory.
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a global administrator or using the account with security administrator or MCAS admin permissions permissions in Azure Active directory; or local global admin in Microsoft Defender for Cloud Apps.
 
 2. Navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft 365 Defender** or [go here](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
 
