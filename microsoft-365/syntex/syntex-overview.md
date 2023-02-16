@@ -144,11 +144,11 @@ For more information, see [Apply a retention label to a model in Microsoft Synte
    :::column-end:::
    :::column span="3":::
       Having one or more Syntex licenses in your organization enables the following additional term store features for admins:<br><br>
-       
-      - [SKOS-based term set import](import-term-set-skos.md), which lets you import a term set using a SKOS-based format.      
+             
    :::column-end:::
 :::row-end:::
 
+- [SKOS-based term set import](import-term-set-skos.md), which lets you import a term set using a SKOS-based format.
 
 - [Pushing enterprise content types to a hub site](push-content-type-to-hub.md), which also adds them to the associated sites and any newly created lists or libraries.
 
@@ -157,13 +157,13 @@ For more information, see [Apply a retention label to a model in Microsoft Synte
 ## Scenarios and use cases
 
 :::row:::
-   :::column span="":::
-      ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png) 
-   :::column-end:::
    :::column span="3":::
       Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.
 
       With content AI services and capabilities, you can build content understanding and classification directly into the content management flow.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png) 
    :::column-end:::
 :::row-end:::
 
