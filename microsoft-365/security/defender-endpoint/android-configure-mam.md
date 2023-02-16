@@ -18,7 +18,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 09/29/2021
+ms.date: 01/13/2023
 ---
 
 # Configure Microsoft Defender for Endpoint on Android risk signals using App Protection Policies (MAM)
@@ -182,6 +182,9 @@ Web protection helps to secure devices against web threats and protect users fro
    | `DefenderNetworkProtectionPrivacy` | String | true | true - enable, false - disable; This setting is managed by IT admins to enable or disable privacy in network protection. |
 
 4. Include or exclude the groups you want the policy to apply to. Proceed to review and submit the policy.
+
+> [!NOTE]
+> Users need to enable location permission (which is an optional permission); this enables Defender for Endpoint to scan their networks and alert them when there are WiFi-related threats. If the location permission is denied by the user, Defender for Endpoint will only be able to provide limited protection against network threats and will only protect the users from rogue certificates.  
 
 ## Configure privacy controls
 

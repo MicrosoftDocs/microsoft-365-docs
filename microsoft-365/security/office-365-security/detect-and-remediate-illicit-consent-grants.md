@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.collection:
 - o365_security_incident_response
 - m365-security
-ms.date: 07/28/2022
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 search.appverid:
   - MET150

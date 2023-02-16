@@ -5,7 +5,7 @@ author: jameseccles
 ms.reviewer: ssquires
 manager: ssquires
 audience: admin
-ms.topic: article
+ms.topic: reference
 ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic
