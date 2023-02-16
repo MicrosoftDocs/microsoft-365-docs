@@ -93,7 +93,7 @@ Download the onboarding packages from Microsoft 365 Defender portal:
 ## Create System Configuration profiles
 
 The next step is to create system configuration profiles that Microsoft Defender for Endpoint needs.
-In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Devices** \> **Configuration profiles**.
+In the [Microsoft Intune admin center](https://endpoint.microsoft.com/), open **Devices** \> **Configuration profiles**.
 
 ### Onboarding blob
 
@@ -198,7 +198,7 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 
 This step enables deploying Microsoft Defender for Endpoint to enrolled machines.
 
-1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Apps**.
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com/), open **Apps**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-8-app-before.png" alt-text="The application's overview page" lightbox="images/mdatp-8-app-before.png":::

@@ -61,7 +61,7 @@ ms.date: 03/22/2021
 
 - Access to the Microsoft 365 Defender portal.
 
-- Access to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to:
+- Access to [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to:
    - Deploy the app to enrolled user groups in your organization.
    - Configure Microsoft Defender for Endpoint risk signals in app protection policy (MAM)
 

@@ -200,7 +200,7 @@ Some rules don't work well if un-signed, internally developed application and sc
 
 ### Management sites
 
-[Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home)
+[Microsoft Intune admin center](https://endpoint.microsoft.com/#home)
 
 [Attack surface reduction](https://security.microsoft.com/asr?viewid=detections)
 

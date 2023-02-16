@@ -136,7 +136,7 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
  After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
 
-1. Sign in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com).
+1. Sign in to the Microsoft Intune admin center (https://endpoint.microsoft.com).
 
 2. Navigate to Configuration Profiles.
 

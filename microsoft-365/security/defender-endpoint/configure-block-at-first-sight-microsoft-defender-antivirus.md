@@ -74,7 +74,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 > [!TIP]
 > Microsoft Intune is now part of Microsoft Endpoint Manager.
 
-1. In the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>), navigate to **Devices** \> **Configuration profiles**.
+1. In the Microsoft Intune admin center (<https://endpoint.microsoft.com>), navigate to **Devices** \> **Configuration profiles**.
 
 2. Select or create a profile using the **Device restrictions** profile type.
 
@@ -158,7 +158,7 @@ You might choose to disable block at first sight if you want to retain the prere
 
 ### Turn off block at first sight with Microsoft Endpoint Manager
 
-1. Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
+1. Go to Microsoft Intune admin center (<https://endpoint.microsoft.com>) and sign in.
 
 2. Go to **Endpoint security** \> **Antivirus**, and then select your Microsoft Defender Antivirus policy.
 

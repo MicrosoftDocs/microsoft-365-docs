@@ -64,7 +64,7 @@ As with built-in roles, in order to create, edit, or assign roles, your account 
 
 To create a custom role:
 
-1. In the Microsoft Endpoint Manager admin center, choose **Tenant administration > Roles > All roles > Create**.
+1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles > Create**.
 
 1. On the **Basics** page, enter a name and description for the new role, then choose **Next**.
 
@@ -76,7 +76,7 @@ To create a custom role:
 
 To copy a role:
 
-1. In the Microsoft Endpoint Manager admin center, choose **Tenant administration > Roles > All roles >** select the checkbox for a role in the list > **Duplicate**.
+1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles >** select the checkbox for a role in the list > **Duplicate**.
 
 1. On the **Basics** page, enter a name. Make sure to use a unique name.
 
@@ -94,7 +94,7 @@ You can assign a built-in or custom role to an Intune user. To create, edit, or 
 - **Global Administrator**
 - **Intune Service Administrator** (also known as **Intune Administrator** but not to be confused with the built-in **Intune Role Administrator** role.)
 
-1. In the Microsoft Endpoint Manager admin center, choose **Tenant administration > Roles > All roles**.
+1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles**.
 
 1. On the **Endpoint Manager roles - All roles** blade, choose the built-in role you want to assign > Assignments > + Assign.
 
