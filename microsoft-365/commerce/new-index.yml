@@ -43,7 +43,7 @@ landingContent:
           - text: Paying for your subscription with a billing profile
             url: billing-and-payments/pay-for-subscription-billing-profile.md
           - text: Understand your bill or invoice
-            url: billing-and-payments/understand-your-invoice2.md
+            url: billing-and-payments/understand-your-invoice.md
           - text: Turn recurring billing on or off
             url: subscriptions/renew-your-subscription.md
 
