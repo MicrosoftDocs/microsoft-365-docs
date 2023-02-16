@@ -17,7 +17,7 @@ ms.custom:
 description: Admins can learn about the available and preferred options to allow inbound messages in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 09/13/2019
+ms.date: 1/31/2023
 ---
 
 # Create safe sender lists in EOP
