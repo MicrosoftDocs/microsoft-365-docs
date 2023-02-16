@@ -66,7 +66,7 @@ When you're satisfied with the items you've collected in a collection estimate a
 
       - **Add only collection sample to review set**: Select this option to add a sample of the collection results to the review set instead of adding all results. If you select this option, select **Edit sample parameters** and choose one of the following options:
 
-         - **Sample based on confidence**: Items from the collection are added to the review set will be determined by the statistical parameters that you set. If you typically use a confidence level and confidecne interval when sampling results, specify them in the drop-down boxes. Otherwise, use the default settings.
+         - **Sample based on confidence**: Items from the collection are added to the review set will be determined by the statistical parameters that you set. If you typically use a confidence level and confidence interval when sampling results, specify them in the drop-down boxes. Otherwise, use the default settings.
          - **Randomly sample**: Items from the collection are added to the review set based on a random selection of the specified sample size percentage of the total number of items returned by the search.
 
 7. Select **Submit** to commit the collection to the review set.
@@ -93,6 +93,6 @@ When you commit a collection estimate to a review set, the following things happ
 
 ## Optical character recognition
 
-When you commit a collection to a review set, optical character recognition (OCR) functionality in eDiscovery (Premium) automatically extracts text from images, and includes the image text with the content that's added to a review set. You can view the extracted text in the Text viewer of the selected image file in the review set. This lets you conduct further review and analysis on text in images. OCR is supported for loose files, email attachments, and embedded images. For a list of image file formats that are supported for OCR, see [Supported file types in eDiscovery (Premium)](ediscovery-supported-file-types.md#image).
+When you commit a collection to a review set, optical character recognition (OCR) functionality in eDiscovery (Premium) automatically extracts text from images, and includes the image text with the content that's added to a review set. You can view the extracted text in the Text viewer of the selected image file in the review set. This lets you conduct further review and analysis on text in images. OCR supports loose files, email attachments, and embedded images. For a list of OCR-supported image file formats, see [Supported file types in eDiscovery (Premium)](ediscovery-supported-file-types.md#image).
 
 You have to enable OCR functionality for each case that you create in eDiscovery (Premium). For more information, see [Configure search and analytics settings](ediscovery-configure-search-and-analytics-settings.md#optical-character-recognition-ocr).
