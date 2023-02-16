@@ -16,7 +16,7 @@ ms.collection:
 - m365-security
 - m365initiative-defender-office365
 description: "Learn about remediation actions following automated investigation in Microsoft Defender for Office 365."
-ms.date: 04/30/2021
+ms.date: 1/31/2023
 ms.custom: 
 - air
 ms.subservice: mdo
