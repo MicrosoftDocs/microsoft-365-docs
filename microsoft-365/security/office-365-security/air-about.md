@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 ms.collection:
 - m365-security
-- m365initiative-defender-office365
+- tier2
 description: Get started using automated investigation and response capabilities in Microsoft Defender for Office 365.
 ms.custom:
 - air

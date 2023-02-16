@@ -12,7 +12,7 @@ search.appverid:
 ms.assetid:
 ms.collection:
   - m365-security
-  - Strat_O365_IP
+  - tier2
 ms.custom: TopSMBIssues
 ms.localizationpriority: high
 description: Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam.

@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 ms.collection:
 - m365-security
-- m365initiative-defender-office365
+- tier2
 ms.custom:
 description: Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
