@@ -16,7 +16,7 @@ ms.collection:
 - m365-security
 - m365initiative-defender-office365
 description: During and after an automated investigation in Microsoft 365, you can view the results and key findings.
-ms.date: 01/29/2021
+ms.date: 01/31/2023
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
