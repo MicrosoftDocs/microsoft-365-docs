@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 09/18/2020
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: overview
 ms.collection: m365-security
