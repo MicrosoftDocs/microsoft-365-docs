@@ -13,6 +13,7 @@ search.appverid:
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection: 
   - m365-security
+  - tier2
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn about the spam confidence level (SCL) that applied to messages in Exchange Online Protection (EOP).
