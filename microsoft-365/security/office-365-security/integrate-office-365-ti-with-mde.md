@@ -15,6 +15,7 @@ search.appverid:
   - MOE150
 ms.collection:
   - m365-security
+  - tier3
 description: Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint to get more detailed information about threats against your devices and email content.
 ms.custom:
 - seo-marvel-apr2020

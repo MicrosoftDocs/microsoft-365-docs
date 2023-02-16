@@ -11,7 +11,8 @@ ms.date: 1/31/2023
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
+  - highpri
 description: Use Explorer or Real-time detections to investigate and respond to threats efficiently.
 ms.custom: 
 - seo-marvel-apr2020
