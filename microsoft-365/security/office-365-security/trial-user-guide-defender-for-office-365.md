@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Defender for Office 365 trial user guide"
+title: Microsoft Defender for Office 365 trial user guide
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,7 +7,9 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier1
 ms.localizationpriority: high
 ms.service: microsoft-365-security
 search.appverid:
@@ -16,7 +18,7 @@ search.appverid:
 description: "Microsoft Defender for Office 365 solutions trial user guide."
 ms.subservice: mdo
 ms.custom: trial-user guide
-ms.date: 11/03/2022
+ms.date: 1/31/2023
 ---
 
 # Trial user guide: Microsoft Defender for Office 365
