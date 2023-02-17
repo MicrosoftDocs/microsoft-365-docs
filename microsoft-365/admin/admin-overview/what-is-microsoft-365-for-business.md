@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 description: "Learn about Microsoft 365 for business, a subscription service that takes care of the IT part for you."
 feedback_system: None
-ms.date:
+ms.date: 04/27/2022
 ---
 
 # What is Microsoft 365 for business

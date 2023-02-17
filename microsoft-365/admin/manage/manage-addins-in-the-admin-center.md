@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 07/06/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -156,4 +157,3 @@ If the deployed add-in doesn't support add-in commands or if you want to view al
 ## Related content
 
 [Minors and acquiring add-ins from the Microsoft Store](./minors-and-acquiring-addins-from-the-store.md)
-

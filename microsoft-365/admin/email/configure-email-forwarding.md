@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -102,5 +103,3 @@ You must be an Exchange administrator or Global administrator in Microsoft 365 t
 [Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)\
 [Control automatic external email forwarding in Microsoft 365](/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding) (article)
-
-

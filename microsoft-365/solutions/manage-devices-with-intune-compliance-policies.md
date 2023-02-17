@@ -6,6 +6,7 @@ f1.keywords:
 - Create compliance policies
 - Intune device compliance policy
 manager: dougeby
+ms.date: 10/20/2021
 audience: ITPro
 description: Learn how to create device compliance policies that specify the minimum requirements for a device to access your environment.
 ms.topic: article
