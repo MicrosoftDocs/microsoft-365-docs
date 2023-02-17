@@ -19,7 +19,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.date: 08/09/2022
+ms.date: 02/17/2023
 ---
 
 <!--v-jweston/jweston-1 is to resume authorship appx. April/May 2023.-->
@@ -93,7 +93,7 @@ To onboard the device, you must download the Python onboarding package for Linux
 sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
 ```
 
-### Manually enable network protection
+<!---### Manually enable network protection
 
 1. Turn on the "networkProtection" feature, edit the "/etc/opt/microsoft/mdatp/wdavcfg" and set **networkProtection** to **enabled**.
 2. Restart the mdatp service by running the following command:
@@ -127,7 +127,7 @@ To confirm Network Protection has successfully started, run the following comman
 ```bash
 mdatp health --field network_protection_status
 ```
-
+--->
 ### Validation
 
 A. Check Network Protection has effect on always blocked sites:
