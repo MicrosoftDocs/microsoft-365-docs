@@ -128,7 +128,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
      - IP range: For example, 192.168.0.1-192.168.0.254.
      - CIDR IP: For example, 192.168.0.1/25.
 
-   - **Simulation URLs to allow**: Expand this setting and optionally enter specific URLs that are part of your phishing simulation campaign that should not be blocked or detonated by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. You can add up to 30 entries. For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#url-syntax-for-the-tenant-allowblock-list). These URLs are wrapped at the time of click, but they aren't blocked.
+   - **Simulation URLs to allow**: Expand this setting and enter specific URLs that are part of your phishing simulation campaign that should not be blocked or detonated by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. You can add up to 30 entries. For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#url-syntax-for-the-tenant-allowblock-list). These URLs are wrapped at the time of click, but they aren't blocked.
 
    To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
@@ -140,9 +140,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
    >   - The DKIM domain.
    > - At least one **Sending IP**.
    >
-   > You can optionally include **Simulation URLs to allow** to ensure that URLs in simulation messages are not blocked.
-   >
-   > You can specify up to 10 entries for each field.
+   > You should also add URLs that will be present in your phishing simulation messages in the **Simulation URLs to allow** field to ensure that these URLs are not treated as a real threat at time of click. This ensures URLs will not blocked, detonated, and URL click alerts and resulting incidents are also not generated. You can specify up to 30 entries for this field and use wildcards(*) in URL entries for this field as defined in syntax guidance [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#url-syntax-for-the-tenant-allowblock-list)
    >
    > There must be a match on at least one **Domain** and one **Sending IP**, but no association between values is maintained.
    >
