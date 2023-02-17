@@ -1,7 +1,7 @@
 ---
 title: Manage devices for frontline workers
-author: lanachin
-ms.author: v-lanachin
+author: samanro
+ms.author: samanro
 ms.reviewer: mabolan
 manager: samanro
 ms.topic: conceptual
