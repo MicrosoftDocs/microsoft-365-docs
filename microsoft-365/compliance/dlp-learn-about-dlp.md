@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/20/2021
+ms.date: 02/14/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
