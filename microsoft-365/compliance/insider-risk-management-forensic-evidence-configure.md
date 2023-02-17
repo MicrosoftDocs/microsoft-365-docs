@@ -100,9 +100,6 @@ After you've completed the policy configuration steps, continue to Step 5.
 
 Before security-related user activities can be captured, admins must follow the dual authorization process in forensic evidence. This process mandates that enabling visual capturing for specific users is both defined and approved by applicable people in your organization.
 
->[!IMPORTANT]
->For the preview release, a maximum of 5 concurrent users are eligible for forensic evidence capturing. Capturing for groups isn't supported in the preview release.
-
 You must request that forensic evidence capturing is enabled for specific users. When a request is submitted, approvers in your organization are notified in email and can approve or reject the request. If approved, the user will appear on the **Approved users** tab and will be eligible for capturing.
 
 - To request approval for forensic evidence capturing for users, complete [these configuration steps](/microsoft-365/compliance/insider-risk-management-forensic-evidence-manage#request-capturing-approvals).
