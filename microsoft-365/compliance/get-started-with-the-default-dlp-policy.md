@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 09/17/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -86,4 +86,3 @@ Note that rule matches can take up to 48 hours to be available to the widget, so
   
 Finally, after you use the widget to refine the default DLP policy, the widget disappears from the **Home** page. 
   
-

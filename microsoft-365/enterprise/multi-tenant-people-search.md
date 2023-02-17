@@ -3,6 +3,7 @@ title: "Microsoft 365 Multi-Tenant Organization People Search"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 07/26/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration

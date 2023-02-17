@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date:
+ms.date: 08/24/2022
 ms.localizationpriority: medium
 ms.collection:
 - tier1
@@ -64,6 +64,3 @@ For a scanned item to satisfy rule criteria, the number of unique instances of a
   - Any - Use `Any` when you want the unique instance count criteria to be satisfied when an undefined number of unique instances of a SIT are found in a scanned item and that number of unique instances meets or exceeds the minimum number of unique instances value. In other words, the unique instance count criteria are met as long as the min value is met.
 
 For example, if you want the rule to trigger a match when at least 500 unique instances of a SIT are found in a single item, set the **min** value to `500` and the **max** value to `Any`.
-
-
-
