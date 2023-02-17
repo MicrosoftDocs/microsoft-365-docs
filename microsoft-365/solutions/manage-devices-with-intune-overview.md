@@ -8,6 +8,7 @@ f1.keywords:
 - zero trust deployment stack
 - device management with zero trust
 manager: dougeby
+ms.date: 10/20/2021
 audience: ITPro
 ms.topic: article
 description: Enroll your endpoint devices in Microsoft Intune as part of your Zero Trust security architecture, protecting against ransomware while building in protection for remote workers.

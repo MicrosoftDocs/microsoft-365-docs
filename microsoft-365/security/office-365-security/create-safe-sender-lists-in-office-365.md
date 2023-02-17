@@ -5,10 +5,11 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: how-to
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 ms.localizationpriority: medium
 search.appverid:
   - MET150s
@@ -18,6 +19,7 @@ ms.custom:
 description: Admins can learn about the available and preferred options to allow inbound messages in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Create safe sender lists in EOP
@@ -68,8 +70,9 @@ The following example assumes you need email from contoso.com to skip spam filte
 1. **Condition**: **The sender** \> **domain is** \> contoso.com.
 
 2. Configure either of the following settings:
-
-   - **Mail flow rule condition**: **A message header** \> **includes any of these words** \> **Header name**: `Authentication-Results` \> **Header value**: `dmarc=pass` or `dmarc=bestguesspass`.
+   - **Mail flow rule condition**: **The message headers** \> **includes any of these words**:
+     - **Header name**: `Authentication-Results`
+     - **Header value**: `dmarc=pass` or `dmarc=bestguesspass` (add both values).
 
      This condition checks the email authentication status of the sending email domain to ensure that the sending domain is not being spoofed. For more information about email authentication, see [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md).
 
@@ -86,20 +89,20 @@ The following example assumes you need email from contoso.com to skip spam filte
    > - If you allow an IP address that's behind a network address translation (NAT) gateway, you need to know the servers that are involved in the NAT pool in order to know the scope of your IP Allow List. IP addresses and NAT participants can change. You need to periodically check your IP Allow List entries as part of your standard maintenance procedures.
 
 3. **Optional conditions**:
-
    - **The sender** \> **is internal/external** \> **Outside the organization**: This condition is implicit, but it's OK to use it to account for on-premises email servers that might not be correctly configured.
    - **The subject or body** \> **subject or body includes any of these words** \> \<keywords\>: If you can further restrict the messages by keywords or phrases in the subject line or message body, you can use those words as a condition.
 
-4. **Action**: Configure both of these actions in the rule:
-
+4. **Action**: Configure both of the following actions in the rule:
    1. **Modify the message properties** \> **set the spam confidence level (SCL)** \> **Bypass spam filtering**.
-   2. **Modify the message properties** \> **set a message header**: **Set the message header** \<CustomHeaderName\> **to the value** \<CustomHeaderValue\>.
+   2. **Modify the message properties** \> **set a message header**:
+      - **Header name**: For example, `X-ETR`.
+      - **Heaver value**: For example, `Bypass spam filtering for authenticated sender 'contoso.com'`.
 
-      For example, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. If you have more than one domain in the rule, you can customize the header text as appropriate.
+      If you have more than one domain in the rule, you can customize the header text as appropriate.
 
-      When a message skips spam filtering due to a mail flow rule, the value `SFV:SKN` value is stamped in the **X-Forefront-Antispam-Report** header. If the message is from a source that's on the IP Allow List, the value `IPV:CAL` is also added. These values can help you with troubleshooting.
+When a message skips spam filtering due to a mail flow rule, the value `SFV:SKN` value is stamped in the **X-Forefront-Antispam-Report** header. If the message is from a source that's on the IP Allow List, the value `IPV:CAL` is also added. These values can help you with troubleshooting.
 
-      :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="The Mail flow rule settings in the EAC for bypassing spam filtering" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
+:::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="Example mail flow rule settings in the new EAC to bypassing spam filtering." lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
 
 ## Use Outlook Safe Senders
 

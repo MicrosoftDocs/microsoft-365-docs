@@ -22,6 +22,7 @@ ms.collection:
   - tier1
 ms.custom: intro-get-started
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Get started with Microsoft 365 Defender

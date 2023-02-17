@@ -18,6 +18,7 @@ ms.collection:
 - m365-security-compliance
 - tier3
 ms.topic: conceptual
+ms.date: 12/07/2021
 ---
 
 # Microsoft 365 Defender for US Government customers
@@ -78,8 +79,8 @@ The following are the Microsoft 365 Defender portal URLs for US Government custo
 |Customer type|Portal URL|
 |---|---|
 |GCC|<https://security.microsoft.com>|
-|GCC High|Rolling out|
-|DoD|Rolling out|
+|GCC High|[https://security.microsoft.us](https://security.microsoft.us)|
+|DoD|[https://security.apps.mil](https://security.apps.mil)|
 |
 > [!NOTE]
 > If you are a GCC customer and in the process of moving from Microsoft Defender for Endpoint commercial to GCC, use https://transition.security.microsoft.com to access your Microsoft Defender for Endpoint commercial data.
@@ -110,7 +111,6 @@ These are the known gaps:
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Integrations: Microsoft Sentinel (Incidents & Raw data)|![Yes](../defender-endpoint/images/svg/check-yes.svg) In public preview|![Yes](../defender-endpoint/images/svg/check-yes.svg) In public preview|![Yes](../defender-endpoint/images/svg/check-yes.svg) In public preview|
 |Microsoft Threat Experts|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|
 
 For detailed list of Event Streaming API tables, see [Microsoft 365 Defender streaming event types supported in Event Streaming API](supported-event-types.md).

@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 10/02/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -25,7 +26,7 @@ search.appverid:
 # Investigate and remediate communication compliance alerts
 
 > [!IMPORTANT]
-> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
+> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance (for example, SEC or FINRA) and business conduct violations such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
 
 After you've configured your [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies), you'll begin receiving alerts in the [Microsoft Purview compliance portal](https://compliance.microsoft.com) for message issues that match your policy conditions. To view and act on alerts, users must be assigned to the following permissions:
 
@@ -43,6 +44,9 @@ The first step to investigate issues detected by your policies is to review aler
 - **Communication compliance policy page**: When you sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, select **Communication compliance** to display the communication compliance **Policy** page. This page displays communication compliance policies configured for your Microsoft 365 organization and links to recommended policy templates. Each policy listed includes the count of alerts that need review, the number of escalated and resolved items, status of the policy, and the date and Coordinated Universal Time (UTC) of the last policy check. Select a policy to display all pending alerts for matches to the policy, then select a specific alert to launch the policy details page and to start remediation actions.
 - **Alerts**: Navigate to **Communication compliance** > **Alerts** to display the last 30 days of alerts grouped by policy matches. This view allows you to quickly see which communication compliance policies are generating the most alerts ordered by severity. To start remediation actions, select the policy associated with the alert to launch the **Policy details** page. From the **Policy details** page, you can review a summary of the activities on the **Overview** page, review and act on alert messages on the **Pending** tab, or review the history of closed alerts on the **Resolved** tab.
 - **Reports**: Navigate to **Communication compliance** > **Reports** to display communication compliance report widgets. Each widget provides an overview of communication compliance activities and statuses, including access to deeper insights about policy matches and remediation actions.
+
+> [!NOTE]
+> If you select the **Pending** tab, you may notice that the count of policy matches in the **Pending** tab heading doesn't match the number of messages in the table (with attachments filtered out) in the lower part of the screen. This is due to new entries in the table that are not reflected in the **Pending** tab. Refresh the page to update both.
 
 ### Using filters
 

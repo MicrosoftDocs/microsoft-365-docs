@@ -11,8 +11,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -24,6 +24,7 @@ ms.custom:
   - intro-overview
 ms.topic: conceptual
 adobe-target: true
+ms.date: 02/17/2021
 ---
 
 # What is Microsoft 365 Defender?
@@ -46,7 +47,6 @@ Here's a list of the different Microsoft 365 Defender products and solutions:
 - [**Azure Active Directory Identity Protection**](/azure/active-directory/identity-protection/overview-identity-protection)
 - [**Microsoft Data Loss Prevention**](/microsoft-365/compliance/dlp-learn-about-dlp)
 - [**App Governance**](/defender-cloud-apps/app-governance-manage-app-governance)
-- [**Microsoft Defender for Cloud**](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
 Note that Azure Active Directory Identity Protection (AAD IP) is in public preview and may be substantially modified before it's commercially released. AAD IP is available to customers only if they already have Microsoft 365 Defender. 
 

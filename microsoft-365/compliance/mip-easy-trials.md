@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 10/25/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -175,7 +175,7 @@ This policy is unobtrusive to users with no policy tip visible and no messages b
 
 To see the results of this policy, use [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
 
-If you want to edit the DLP policy, see [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md).
+If you want to edit the DLP policy, see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md).
 
 ## DLP for devices
 
@@ -199,7 +199,7 @@ This policy is unobtrusive to users with no policy tip visible and no actions bl
 
 To see the results of this policy, use [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
 
-If you want to edit the DLP policy, see [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md).
+If you want to edit the DLP policy, see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md).
 
 ## Additional resources
 
