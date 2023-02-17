@@ -148,7 +148,7 @@ The third-party phishing simulation entries that you configured are displayed on
 >
 > There must be a match on at least one **Domain** and one **Sending IP**, but no association between values is maintained.
 >
-> If your MX record does not point to Microsoft 365, the IP address in the `Authentication-results` header must match the IP address in the advanced delivery policy. If the IP addresses don't match, you might need to configure [Enhanced Filtering for Connectors]/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) in order for the correct IP address to be detected.
+> If your MX record does not point to Microsoft 365, the IP address in the `Authentication-results` header must match the IP address in the advanced delivery policy. If the IP addresses don't match, you might need to configure [Enhanced Filtering for Connectors](Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) in order for the correct IP address to be detected.
 
 ## Use the Microsoft 365 Defender portal to modify or remove third-party phishing simulations in the advanced delivery policy
 
