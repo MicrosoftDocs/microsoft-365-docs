@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -58,4 +59,3 @@ Learn to [send email as a distribution group in Microsoft 365](../manage/send-em
 
 [Manage clutter for your organization](configure-clutter.md) (article)\
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)
-

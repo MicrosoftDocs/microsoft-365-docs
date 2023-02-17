@@ -3,6 +3,7 @@ title: "Bookings with me"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 05/02/2022
 audience: Admin
 ms.topic: article
 ms.service: bookings
