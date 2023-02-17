@@ -132,23 +132,23 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
 
    To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
-   > [!NOTE]
-   > To configure a third-party phishing simulation in Advanced Delivery, you need to provide the following information:
-   >
-   > - At least one **Domain** from either of the following sources:
-   >   - The `5321.MailFrom` address (also known as the MAIL FROM address, P1 sender, or envelope sender).
-   >   - The DKIM domain.
-   > - At least one **Sending IP**.
-   >
-   > You should also add URLs that will be present in your phishing simulation messages in the **Simulation URLs to allow** field to ensure that these URLs are not treated as a real threat at time of click. This ensures URLs will not blocked, detonated, and URL click alerts and resulting incidents are also not generated. You can specify up to 30 entries for this field and use wildcards(*) in URL entries for this field as defined in syntax guidance [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#url-syntax-for-the-tenant-allowblock-list)
-   >
-   > There must be a match on at least one **Domain** and one **Sending IP**, but no association between values is maintained.
-   >
-   > If your MX record does not point to Microsoft 365, the IP address in the `Authentication-results` header must match the IP address in the advanced delivery policy. If the IP addresses don't match, you might need to configure [Enhanced Filtering for Connectors]/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) in order for the correct IP address to be detected.
-
 4. When you're finished, click **Add**, and then click **Close**.
 
 The third-party phishing simulation entries that you configured are displayed on the **Phishing simulation** tab.
+
+> [!IMPORTANT]
+> To configure a third-party phishing simulation in Advanced Delivery, you need to provide the following information:
+>
+> - At least one **Domain** from either of the following sources:
+>   - The `5321.MailFrom` address (also known as the MAIL FROM address, P1 sender, or envelope sender).
+>   - The DKIM domain.
+> - At least one **Sending IP**.
+>
+> You should also add URLs that will be used in your phishing simulation messages in **Simulation URLs to allow**. This action ensures that these URLs are not treated as real threats at time of click: the URLs will not be blocked or detonated, and no URL click alerts or resulting incidents are generated. You can specify up to 30 URL entries and use wildcards (\*) as described in the [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#url-syntax-for-the-tenant-allowblock-list) section later in this article.
+>
+> There must be a match on at least one **Domain** and one **Sending IP**, but no association between values is maintained.
+>
+> If your MX record does not point to Microsoft 365, the IP address in the `Authentication-results` header must match the IP address in the advanced delivery policy. If the IP addresses don't match, you might need to configure [Enhanced Filtering for Connectors]/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) in order for the correct IP address to be detected.
 
 ## Use the Microsoft 365 Defender portal to modify or remove third-party phishing simulations in the advanced delivery policy
 
