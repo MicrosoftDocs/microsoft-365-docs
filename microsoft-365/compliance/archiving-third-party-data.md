@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date:
+ms.date: 09/12/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -20,7 +20,6 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-
 ---
 
 # Learn about connectors for third-party data
