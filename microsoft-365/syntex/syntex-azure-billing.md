@@ -3,6 +3,7 @@ title: Configure Microsoft Syntex for pay-as-you-go billing in Azure (Preview)
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: kkamath
+ms.date: 10/07/2022
 manager: serdars
 audience: admin
 ms.topic: conceptual
@@ -116,4 +117,3 @@ Filter the csv on **consumedService** = *Microsoft.Syntex*. The following column
 [Overview of Microsoft Syntex](syntex-overview.md)
 
 [Licensing for Microsoft Syntex](syntex-licensing.md)
-

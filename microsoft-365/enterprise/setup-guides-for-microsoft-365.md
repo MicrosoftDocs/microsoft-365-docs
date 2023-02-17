@@ -3,6 +3,7 @@ title: "Advanced deployment guides for Microsoft 365 and Office 365 services"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise

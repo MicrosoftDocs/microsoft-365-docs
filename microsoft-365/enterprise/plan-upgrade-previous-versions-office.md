@@ -3,6 +3,7 @@ title: "Plan your upgrade from Office 2007 or 2010 servers and clients"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: overview
 ms.service: microsoft-365-enterprise
