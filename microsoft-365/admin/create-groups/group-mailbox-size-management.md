@@ -8,6 +8,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 search.appverid: 
 ms.reviewer: 
+ms.date: 08/03/2022
 author: serdars
 ms.author: serdars
 ---
@@ -65,4 +66,3 @@ As mentioned earlier, the group mailbox is used for various applications to stor
 
 5. If there's no special folder occupying the group mailbox size, [apply the group mailbox retention policy,](/microsoft-365/compliance/create-retention-policies) and wait for retention policy to clean up the emails from group mailbox. 
   
-
