@@ -133,6 +133,10 @@ You don't have admin access to the [EHR connector configuration portal](https://
 
 Contact an admin in your organization to either grant you admin access or set up the integration in the portal.  
 
+### My organization wants to share the FHIR base URL with other organizations in my network
+
+If you want to share your FHIR base URL with other organizations within your network, please email us at [TeamsForHealthcare](mailto:teamsforhealthcare@service.microsoft.com).
+
 ## Virtual Desktop Infrastructure (VDI) support
 
 ### My organization uses a Citrix environment. How do I configure it to use the EHR connector?
