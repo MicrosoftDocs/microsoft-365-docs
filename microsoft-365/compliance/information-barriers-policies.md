@@ -5,6 +5,7 @@ keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 09/17/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp

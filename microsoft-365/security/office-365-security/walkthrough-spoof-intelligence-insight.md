@@ -14,13 +14,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
   - m365-security
+  - tier2
 description: Admins can learn how to use the spoof intelligence policy and the spoof intelligence insight to allow or block detected spoofed senders.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 09/13/2019
+ms.date: 1/31/2023
 ---
 
 # Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP

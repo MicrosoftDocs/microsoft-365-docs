@@ -13,10 +13,11 @@ ms.collection:
   - m365initiative-defender-office365
   - m365solution-ransomware
   - highpri
+  - tier1
 description: Microsoft 365 admins can learn how to recover from a ransomware attack.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 01/21/2020
+ms.date: 1/31/2023
 ---
 
 # Recover from a ransomware attack in Microsoft 365

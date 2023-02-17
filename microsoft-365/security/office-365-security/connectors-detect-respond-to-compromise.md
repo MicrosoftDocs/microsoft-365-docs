@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier2
 ms.custom:
 description: Learn how to recognize and respond to a compromised connector in Microsoft 365.
 ms.subservice: mdo
