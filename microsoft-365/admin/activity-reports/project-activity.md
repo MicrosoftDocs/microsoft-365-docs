@@ -3,6 +3,7 @@ title: "Microsoft 365 admin center Project activity "
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 06/07/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
