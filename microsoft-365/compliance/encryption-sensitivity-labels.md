@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 09/17/2019
+ms.date: 02/17/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -361,7 +361,9 @@ For built-in labeling, and for the Azure Information Protection unified labeling
 
 #### Support for organization-wide custom permissions
 
-Now rolling out in preview for built-in labeling in Windows, users can specify a domain name that will apply to all users in an organization that owns the domain and it is in Azure Active Directory. This capability provides [parity with the Azure Information Protection unified labeling client](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps):
+Now available for built-in labeling in Windows, users can specify a domain name that will apply to all users in an organization that owns the domain and it is in Azure Active Directory. To identify the minimum versions that support this setting, use the [capabilities table](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Let users assign permissions:- Prompt users for custom permissions (users, groups, and organizations)**. 
+
+This capability provides [parity with the Azure Information Protection unified labeling client](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps):
 
 ![Updated dialog box to support organization-wide custom permissions.](../media/org-wide-custom-permissions-dialog.png)
 
