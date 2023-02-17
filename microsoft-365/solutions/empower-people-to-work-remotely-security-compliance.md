@@ -5,6 +5,7 @@ f1.keywords:
 author: dansimp
 ms.author: dansimp
 manager: dansimp
+ms.date: 06/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
