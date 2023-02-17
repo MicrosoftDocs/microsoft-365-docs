@@ -3,7 +3,7 @@ title: "Service advisories for eDiscovery throttling in Exchange Online monitori
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.date: 10/14/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
