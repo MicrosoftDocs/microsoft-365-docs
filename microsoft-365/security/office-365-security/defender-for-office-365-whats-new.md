@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand

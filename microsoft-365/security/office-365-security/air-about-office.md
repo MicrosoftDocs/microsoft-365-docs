@@ -13,7 +13,7 @@ search.appverid:
 - MOE150
 ms.collection:
 - m365-security
-- m365initiative-defender-office365
+- tier2
 keywords: automated incident response, investigation, remediation, threat protection
 ms.date: 01/17/2023
 description: See how automated investigation and response capabilities work in Microsoft Defender for Office 365
