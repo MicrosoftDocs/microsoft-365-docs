@@ -68,8 +68,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Sensitivity labels
 
 - **General availability (GA)**: Protected meetings by [labeling calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md). Outlook remains in preview for this scenario.
+- **General availability (GA)**: For Windows, built-in labeling supports [organization-wide custom permissions](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) as a parity feature for the AIP add-in.
 - **In preview**: [Support for Azure Active Directory administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units).
-- **In preview**: Now supported for labeling built into Windows, macOS, iOS, and Android, auditing details for sensitivity labels include encryption details such as a change in the encryption status and settings, and the Rights Management owner.
+- **In preview**: Now supported for labeling built into Windows, macOS, iOS, and Android, auditing actions for sensitivity labels include encryption details such as a change in the encryption status and settings, and the Rights Management owner.
 
 ## January 2023
 
