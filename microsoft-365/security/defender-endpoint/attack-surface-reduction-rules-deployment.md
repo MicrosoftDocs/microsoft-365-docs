@@ -10,8 +10,8 @@ ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: dansimp
+ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
@@ -200,7 +200,7 @@ Some rules don't work well if un-signed, internally developed application and sc
 
 ### Management sites
 
-[Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home)
+[Microsoft Intune admin center](https://endpoint.microsoft.com/#home)
 
 [Attack surface reduction](https://security.microsoft.com/asr?viewid=detections)
 

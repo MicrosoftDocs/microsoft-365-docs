@@ -39,7 +39,7 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
 
 ## Use Microsoft Endpoint Manager to specify the level of cloud protection
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
 2. Choose **Endpoint security** \> **Antivirus**.
 

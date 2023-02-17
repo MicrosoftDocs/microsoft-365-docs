@@ -40,7 +40,7 @@ You can use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to conf
 
 ## Configure Microsoft Defender Antivirus scans in Endpoint Manager
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
+1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
 
 2. Navigate to **Endpoint Security**.
 

@@ -125,7 +125,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 Microsoft Endpoint DLP is installed as a component of Microsoft Defender for Endpoint (MDE) on macOS. This procedure applies to onboarding devices into Microsoft Purview solutions
 
-1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Apps**.
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com/), open **Apps**.
 
 1. Select By platform > macOS > Add.
 

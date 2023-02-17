@@ -40,7 +40,7 @@ Combined with always-on, real-time protection, which reviews files when they are
 
 ## Use Microsoft Endpoint Manager to run a scan
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
 
 2. Choose **Endpoint security** \> **Antivirus**.
 
@@ -65,7 +65,7 @@ For more information about how to use the tool and additional parameters, includ
 
 ## Use Microsoft Intune to run a scan
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
 
 2. From the sidebar, select **Devices** \> **All Devices** and choose the device you want to scan.
 

@@ -43,7 +43,7 @@ The default period that the file is [blocked](configure-block-at-first-sight-mic
 
 You can specify the cloud block timeout period with an [endpoint security policy in Microsoft Endpoint Manager](/mem/intune/protect/endpoint-security-policy).
 
-1. Go to the Endpoint Manager admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) and sign in.
+1. Go to the Intune admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) and sign in.
 
 2. Select **Endpoint security**, and then under **Manage**, choose **Antivirus**.
 

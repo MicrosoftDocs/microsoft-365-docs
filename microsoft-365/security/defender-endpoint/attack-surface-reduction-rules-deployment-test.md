@@ -52,7 +52,7 @@ Begin the testing phase by turning on the ASR rules with the rules set to Audit,
 
 You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure custom ASR rules.
 
-1. Open [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home).
+1. Open [Microsoft Intune admin center](https://endpoint.microsoft.com/#home).
 2. Go to **Endpoint Security** > **Attack surface reduction**.
 3. Select **Create Policy**.
 4. In **Platform**, select **Windows 10 and later**, and in **Profile**, select **Attack surface reduction rules**.
@@ -148,7 +148,7 @@ On the Configurations tab, you can check—on a per-device basis—which ASR rul
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png" alt-text="Screenshot that shows the ASR rules fly-out to add ASR rules to devices." lightbox="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png":::
 
-The **Get started** link opens the Microsoft Endpoint Manager admin center, where you can create or modify an endpoint protection policy for ASR:
+The **Get started** link opens the Microsoft Intune admin center, where you can create or modify an endpoint protection policy for ASR:
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-05b-mem1.png" alt-text="The *Endpoint security menu item on the Overview page" lightbox="images/asr-defender365-05b-mem1.png":::
@@ -191,7 +191,7 @@ ASR rules now provide the capability to configure rule-specific exclusions, know
 
 To configure per-rule exclusions:
 
-1. Open [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home) console, and navigate to **Home** > **Endpoint security** > **Attack surface reduction**.
+1. Open [Microsoft Intune admin center](https://endpoint.microsoft.com/#home) console, and navigate to **Home** > **Endpoint security** > **Attack surface reduction**.
 1. If it is not already configured, set the rule for which you want to configure exclusions to **Block*.
 1. In **ASR Only Per Rule Exclusion**, click the toggle to change from **Not configured** to **Configured.**
 1. Enter the names of the files or application that you want to exclude.

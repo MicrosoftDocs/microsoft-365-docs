@@ -102,7 +102,7 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/
 
 #### Microsoft Defender for Endpoint Baseline method
 
-1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com).
+1. Sign into the Microsoft Intune admin center (https://endpoint.microsoft.com).
 2. Go to **Endpoint security** > **Security baselines** > **Microsoft Defender for Endpoint Baseline**.
 3. Select **Create a profile**, then provide a name for your profile, and then select **Next**.
 4. In the **Configuration settings** section, go to **Attack Surface Reduction Rules** > set **Block**, **Enable** or **Audit** for **Enable network protection**. Select **Next**.
@@ -110,7 +110,7 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/
 7. Review all the information, and then select **Create**.
 
 #### Antivirus policy method
-1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com).
+1. Sign into the Microsoft Intune admin center (https://endpoint.microsoft.com).
 2. Go to **Endpoint security** > **Antivirus**
 3. Select **Create a policy**
 4. In the **Create a policy** flyout, choose **Windows 10, Windows 11, and Windows Server** from the **Platform** list.
@@ -122,7 +122,7 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/
 
 #### Configuration profile method
 
-1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com).
+1. Sign into the Microsoft Intune admin center (https://endpoint.microsoft.com).
 
 2. Go to **Devices** > **Configuration profiles** > **Create profile**.
 

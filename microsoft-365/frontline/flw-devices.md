@@ -1,7 +1,7 @@
 ---
 title: Manage devices for frontline workers
-author: lanachin
-ms.author: v-lanachin
+author: samanro
+ms.author: samanro
 ms.reviewer: mabolan
 manager: samanro
 ms.topic: conceptual
@@ -125,7 +125,7 @@ Intune is recommended for BYOD scenarios because it provides the best support an
 
 ### Enroll Android and iOS personal devices
 
-In addition to your company-owned devices, you can [enroll](/mem/intune/enrollment/device-enrollment) users' personally owned devices into management in Intune. For BYOD enrollment, you add device users in the Microsoft Endpoint Manager admin center, configure their enrollment experience, and set up Intune policies. Users complete enrollment themselves in the Intune Company Portal app that's installed on their device.
+In addition to your company-owned devices, you can [enroll](/mem/intune/enrollment/device-enrollment) users' personally owned devices into management in Intune. For BYOD enrollment, you add device users in the Microsoft Intune admin center, configure their enrollment experience, and set up Intune policies. Users complete enrollment themselves in the Intune Company Portal app that's installed on their device.
 
 In some cases, users may be reluctant to enroll their personal devices into management. If device enrollment isn't an option, you can choose a mobile application management (MAM) approach and use [app protection policies](/mem/intune/apps/app-protection-policies) to manage apps that contain corporate data. For example, you can apply app protection policies to Teams and Office mobile apps to prevent company data from being copied to personal apps on the device.
 
