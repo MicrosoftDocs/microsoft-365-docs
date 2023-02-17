@@ -312,6 +312,9 @@ If you haven't already done so, you can copy the values for the **Azure App ID**
 
 You can also select **Edit** to change the Azure App ID or the column header names that you defined on the **File mapping** page.
 
+> [!NOTE]
+> If you have trouble running the HR connector script, you can whitelist the URL 'https://webhook.ingestion.office.com' and try again.
+
 ## Step 4: Run the sample script to upload your HR data
 
 The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 1) to the Microsoft cloud. Specifically, the script uploads the data to the HR connector. After you run the script, the HR connector that you created in Step 3 imports the HR data to your Microsoft 365 organization where it can be accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
