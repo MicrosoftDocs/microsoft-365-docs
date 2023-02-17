@@ -121,11 +121,18 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
 5. Then, choose your sync frequency.
 
     > [!IMPORTANT]
+    > Before you disable a feature by selecting the option **Shifts users will not see provider data**, be aware that:
+    >
+    > - If the setting **Schedules, groups, shifts, and activities** is disabled, then all other settings, such as **Time off** and **Employee availability**, and more, will also be disabled.
+    > - If the setting **Open shift** is disabled, **Open shift request** will also be disabled.
+    > - If the setting **Time off** is disabled, **Time off request** will also be disabled.
+
+    > [!IMPORTANT]
     > If you chose any of the following options to disable open shifts, open shift requests, swap requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
     >
-    > - Open shifts: **Shifts users will not see UKG Dimensions data**
-    > - Swap requests: **Feature is disabled for all users**
-    > - Time off requests: **Feature is disabled for all users**
+    > - Open shifts: **Shifts users will not see provider data**
+    > - Swap requests: **Shifts users will not see provider data**
+    > - Time off requests: **Shifts users will not see provider data**
     >
     > After you run the wizard, make sure you follow the steps in the [Disable open shifts, open shifts requests, swap requests, and time off requests](#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests) section later in this article.
 
@@ -158,15 +165,11 @@ Before finishing, review the summary of the connection instance creation process
 
 :::image type="content" source="media/shifts-connector-wizard-ukg-review.png" alt-text="Screenshot of the Review page of the wizard, showing mappings." lightbox="media/shifts-connector-wizard-ukg-review.png":::
 
-You’ll see a message to confirm that we received your request.
-
 :::image type="content" source="media/shifts-connector-wizard-ukg-operation-id.png" alt-text="Screenshot of the wizard page, showing confirmation message and operation ID." lightbox="media/shifts-connector-wizard-ukg-operation-id.png":::
 
 The wizard starts the process to set up the connection instance. This process may take some time to complete. If you try to edit the connection instance before the setup is complete, you won't be able to conclude the process.
 
 The email notification recipients you chose will receive email notifications about setup status in case there are any errors.
-
-Select **Done** to exit the wizard.
 
 ## Disable open shifts, open shifts requests, swap requests, and time off requests
 

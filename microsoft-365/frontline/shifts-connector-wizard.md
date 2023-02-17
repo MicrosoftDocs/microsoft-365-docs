@@ -118,11 +118,18 @@ On the Settings page, you choose the information to sync from Blue Yonder WFM to
 5. Then, choose your sync frequency.
 
     > [!IMPORTANT]
+    > Before you disable a feature by selecting the option **Shifts users will not see provider data**, be aware that:
+    >
+    > - If the setting **Schedules, groups, shifts, and activities** is disabled, then all other settings, such as **Time off** and **Employee availability**, and more, will also be disabled.
+    > - If the setting **Open shift** is disabled, **Open shift request** will also be disabled.
+    > - If the setting **Time off** is disabled, **Time off request** will also be disabled.
+
+    > [!IMPORTANT]
     > If you chose any of the following options to disable open shifts, open shift requests, swap requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
     >
-    > - Open shifts: **Shifts users will not see Blue Yonder WFM data**
-    > - Swap requests: **Feature is disabled for all users**
-    > - Time off requests: **Feature is disabled for all users**
+    > - Open shifts: **Shifts users will not see provider data**
+    > - Swap requests: **Shifts users will not see provider data**
+    > - Time off requests: **Shifts users will not see provider data**
     >
     > After you run the wizard, make sure you follow the steps in the [Disable open shifts, open shifts requests, swap requests, and time off requests](#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests) section later in this article.
 

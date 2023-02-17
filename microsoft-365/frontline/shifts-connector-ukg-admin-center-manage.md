@@ -59,6 +59,28 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
 > [!NOTE]
 > You can also go directly to the Connector Management Console page when you select the **Connector Management** button on the last page of the wizard during connection setup.
 
+#### Connection instance settings
+
+You'll need to choose the data that your Shifts users can see and change. You'll be given the following options for these settings:
+
+- **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts. <br>
+- **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts. <br>
+- **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
+
+> [!IMPORTANT]
+> Before you disable a feature by selecting the option **Shifts users will not see provider data**, be aware that:
+>
+> - If the setting **Schedules, groups, shifts, and activities** is disabled, then all other settings, such as **Time off** and **Employee availability**, and more, will also be disabled.
+> - If the setting **Open shift** is disabled, **Open shift request** will also be disabled.
+> - If the setting **Time off** is disabled, **Time off request** will also be disabled.
+
+> [!IMPORTANT]
+> If you chose any of the following options to disable open shifts, open shift requests, swap requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
+>
+> - Open shifts: **Shifts users will not see provider data**
+> - Swap requests: **Shifts users will not see provider data**
+> - Time off requests: **Shifts users will not see provider data**
+
 ## List of error messages
 
 Here's the list of error messages that you may encounter and information to help you resolve them.
