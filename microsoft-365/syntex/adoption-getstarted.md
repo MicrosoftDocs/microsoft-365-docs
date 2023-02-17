@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 ms.date: 
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
 - enabler-strategic

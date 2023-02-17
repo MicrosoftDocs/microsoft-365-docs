@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: 
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 ms.custom:
 description: Learn about Campaigns in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 10/16/2019
+ms.date: 2/9/2023
 ---
 
 # Campaigns in Microsoft Defender for Office 365
