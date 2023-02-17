@@ -135,7 +135,7 @@ Contact an admin in your organization to either grant you admin access or set up
 
 ### My organization wants to share the FHIR base URL with other organizations in my network
 
-If you want to share your FHIR base URL with other organizations within your network, please email us at [TeamsForHealthcare](mailto:teamsforhealthcare@service.microsoft.com).
+Organizations in a healthcare network, such as a hospital with regional branches or related medical offices, might want to share an FHIR base URL. If you want to share your FHIR base URL, please email us at [TeamsForHealthcare](mailto:teamsforhealthcare@service.microsoft.com).
 
 ## Virtual Desktop Infrastructure (VDI) support
 
