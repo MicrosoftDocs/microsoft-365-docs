@@ -125,9 +125,12 @@ Depending on the needs of your organization or where you're currently configured
 
 ### Quick setup
 
-The quick setup option is fastest way to get started with Adaptive Protection. With this option, you don't need any pre-existing insider risk management or DLP policies, settings, features configured. If your organization doesn't have a current subscription or license that supports insider risk management or DLP, you'll need to sign up for a [Microsoft Purview risk and compliance solutions trial](/microsoft-365/compliance/compliance-easy-trials) before starting the quick setup process.
+The quick setup option is the fastest way to get started with Adaptive Protection. With this option, you don't need any pre-existing insider risk management or DLP policies, settings, features configured. If your organization doesn't have a current subscription or license that supports insider risk management or DLP, you'll need to sign up for a [Microsoft Purview risk and compliance solutions trial](/microsoft-365/compliance/compliance-easy-trials) before starting the quick setup process.
 
 Available on Adaptive Protection cards on the compliance portal home page and DLP overview pages, you can get started by selecting **Turn on Adaptive Protection**. You can also get started with the quick setup process by navigating to **Insider risk management** > **Adaptive Protection** > **Dashboard** and selecting **Quick setup**.
+
+> [!NOTE]
+> If you're already a [scoped admin](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for Microsoft Purview, you can't turn on quick setup. 
 
 Here's what is configured when you use the quick setup process for Adaptive Protection:
 
