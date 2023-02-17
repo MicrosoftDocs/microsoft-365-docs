@@ -8,11 +8,12 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 1/31/2023
 search.appverid:
 - MET150
 ms.collection:
 - m365-security
+- tier1
 ms.custom:
 description: Learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
 ms.subservice: mdo
