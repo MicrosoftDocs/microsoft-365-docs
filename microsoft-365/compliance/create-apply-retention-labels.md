@@ -286,6 +286,13 @@ However, it can take up to two days for content explorer to show the items that 
 
 If you need to ensure that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
 
+## Troubleshooting retention label policies
+
+If your retention label policies are not working as expected or you see errors related to these policies, use the following troubleshooting resources:
+
+- [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
+- [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)
+
 ## Next steps
 
 To help you track the labels applied from your published retention labeling policies:
