@@ -25,7 +25,7 @@ description: Create auto-labeling retention policies so you can automatically ap
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This scenario is not supported for [regulatory records](records-management.md#records) or default labels for an organizing structure such as a document set or library in SharePoint, or a folder in Exchange. These scenarios require a [published retention label policy](create-apply-retention-labels.md).
+> This scenario isn't supported for [regulatory records](records-management.md#records) or default labels for an organizing structure such as a document set or library in SharePoint, or a folder in Exchange. These scenarios require a [published retention label policy](create-apply-retention-labels.md).
 
 One of the most powerful features of [retention labels](retention.md) is the ability to apply them automatically to content that matches specified conditions. In this case, people in your organization don't need to apply the retention labels. Microsoft 365 does the work for them.
 
@@ -92,7 +92,7 @@ Other considerations for simulation mode for auto-apply retention policies:
 - A maximum of 100 item samples can be collected per mailbox.
 - If you use [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) for your policy, a maximum of 20,000 locations (any combination of sites and mailboxes)
 - You might need to be assigned additional permissions to see the simulation results. For information about the required roles, see the next section, [Before you begin](#before-you-begin).
-- Simulation counts all items matching the policy criteria at time of simulation. However, when the policy is turned on, only content that is not already labeled will be eligible for auto-applying retention labels.
+- Simulation counts all items matching the policy criteria at time of simulation. However, when the policy is turned on, only content that isn't already labeled will be eligible for auto-applying retention labels.
 - Because simulation for Exchange locations always runs against emails stored in mailboxes, rather than emails sent and received, you won't see simulation results for emails when the policy condition is for sensitive information types.
 - Because simulation results are based on items available in the specified locations at the time the simulation job runs, remember to take the following considerations into account when you turn on the policy:
     - Items that are no longer within the specified location won't be labeled.
@@ -126,10 +126,10 @@ When you create an auto-apply policy, you select a retention label to automatica
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to one of the following locations:
 
-    - If you are using records management:
+    - If you're using records management:
         - **Solutions** \> **Records management** \> **Label policies** tab \> **Auto-apply a label**
 
-    - If you are using data lifecycle management:
+    - If you're using data lifecycle management:
         - **Solutions** \> **Data lifecycle management** \> **Microsoft 365** \> **Label policies** tab \> **Auto-apply a label**
 
     Don't immediately see your solution in the navigation pane? First select **Show all**.
@@ -138,7 +138,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 
 3. For **Choose the type of content you want to apply this label to**, select one of the available conditions. For more information about the choices, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
 
-4. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the wizard with this option.
+4. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the policy configuration with this option.
 
 5. Depending on your selected scope:
 
@@ -148,7 +148,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 
     For information about the location choices, see [Locations](retention-settings.md#locations).
 
-6. Follow the prompts in the wizard to select a retention label, whether to run the policy in [simulation mode](#learn-about-simulation-mode) or turn it on (if applicable for your chosen condition), and then review and submit your configuration choices.
+6. Follow the prompts to select a retention label, whether to run the policy in [simulation mode](#learn-about-simulation-mode) or turn it on (if applicable for your chosen condition), and then review and submit your configuration choices.
 
 To edit an existing retention label policy (the policy type is **Auto-apply**), select it, and then select the **Edit** option to start the **Edit retention policy** configuration.
 
@@ -202,7 +202,7 @@ When you create auto-apply retention label policies for sensitive information, y
 
 ![Policy templates with sensitive information types.](../media/sensitive-info-configuration.png)
 
-To learn more about the sensitivity information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Currently, [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) and [document fingerprinting](document-fingerprinting.md) are not supported for this scenario.
+To learn more about the sensitivity information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Currently, [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) and [document fingerprinting](document-fingerprinting.md) aren't supported for this scenario.
 
 After you select a policy template, you can add or remove any types of sensitive information, and you can change the confidence level and instance count. In the previous example screenshot, these options have been changed so that a retention label will be auto-applied only when:
 
@@ -247,7 +247,7 @@ Some things to consider when using keywords or searchable properties to auto-app
 
 - Be aware that partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](ediscovery-partially-indexed-items-in-content-search.md).
 
-- We recommend that you don't use spaces between words in RefinableStrings values on documents. RefinableString is not a word-break property.
+- We recommend that you don't use spaces between words in RefinableStrings values on documents. RefinableString isn't a word-break property.
 
 Examples queries:
 
@@ -304,7 +304,7 @@ To identify Microsoft Teams meeting recordings that are stored in users' OneDriv
 ProgID:Media AND ProgID:Meeting
 ```
 
-Most of the time, meeting recordings are saved to OneDrive. But for channel meetings, they are saved in SharePoint.
+Most of the time, meeting recordings are saved to OneDrive. But for channel meetings, they're saved in SharePoint.
 
 ##### Identify files and emails that have a sensitivity label
 
@@ -352,9 +352,9 @@ You might need to use this option if you're required to capture and retain all c
 > [!IMPORTANT]
 > When you select a label to use for auto-applying retention labels for cloud attachments, ensure that the label retention setting **Start the retention period based on** is **When items were labeled**.
 
-Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) and [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
+Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments aren't attached copies of a file or a URL text link to a file. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) and [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
 
-When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be [identified using eDiscovery](ediscovery-cloud-attachments.md). Users are not aware of the copy that is stored in the Preservation Hold library. The retention label is not applied to the message itself, or to the original file.
+When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be [identified using eDiscovery](ediscovery-cloud-attachments.md). Users aren't aware of the copy that is stored in the Preservation Hold library. The retention label isn't applied to the message itself, or to the original file.
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library. For more information, including why you should use the **When items were labeled** label setting, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
@@ -424,7 +424,7 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
 
-For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
+For retention labels that you can delete, if they've been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
 
 However, it can take up to two days for content explorer to show the items that are labeled. In this scenario, the retention label might be deleted without showing you the link to content explorer.
 
@@ -434,7 +434,7 @@ If you need to ensure that no one can turn off the policy, delete the policy, or
 
 ## Troubleshooting retention label policies
 
-If your auto-apply retention label policies are not working as expected or you see errors related to these policies, use the following troubleshooting resources:
+If your auto-apply retention label policies aren't working as expected or you see errors related to these policies, use the following troubleshooting resources:
 
 - [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
 - [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)
