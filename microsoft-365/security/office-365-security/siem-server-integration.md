@@ -7,10 +7,11 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 11/18/2019
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
+  - tier2
 ms.custom: 
   - Ent_Solutions
   - SIEM

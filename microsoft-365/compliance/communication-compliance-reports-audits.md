@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 10/12/2021
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -108,9 +109,12 @@ To create a new message details report, complete the following steps:
 1. Sign into the Microsoft Purview compliance portal with an account that is a member of the *Communication Compliance Investigators* role group.
 2. Navigate to the **Policies** tab, select a policy, and then select **Create message details report**.
 3. On the **Create message details report** pane, enter a name for the report in the **Report name** field.
-4. In **Choose a date range**, select a *Start date* and *End date* for the report.
-5. Select **Create**.
-6. The report creation confirmation is displayed.
+4. Under **Users in report**, select one of the following:
+   - **All users**. Select this option if you want to create a report with message information for all users in the policy. 
+   - **Select users**. Select this option, and then select specific users from the list to create a report with messages sent by those specific users. Only the users who have sent a message that has been flagged will be available in the list.
+5. In **Choose a date range**, select a *Start date* and *End date* for the report.
+6. Select **Create**.
+7. The report creation confirmation is displayed.
 
 Depending on the number of items in the report, it can take a few minutes to hours before the report is ready to be downloaded. You can check progress on the Message details reports tab. Report status is *In progress* or *Ready to download*. You can have up to 15 separate reports processing simultaneously. To download a report, select a report in the *Ready to download* state and select **Download report**.
 

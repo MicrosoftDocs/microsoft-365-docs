@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date:
+ms.date: 04/03/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -74,7 +74,7 @@ Typical workflow for an auto-labeling policy:
 
 1. Create and configure an auto-labeling retention policy.
 
-2. Run the policy in simulation mode, which typically completes within a day. The completed simulation triggers an email notification that's sent to the user configured to receive activity alerts.
+2. Run the policy in simulation mode, and wait for it to complete.
 
 3. Review the results, and if necessary, refine your policy and rerun simulation. Wait for it to complete again.
 
@@ -100,11 +100,13 @@ Other considerations for simulation mode for auto-apply retention policies:
 
 On the **Label policies** page, the **Status** column displays **In simulation** for auto-labeling policies that are running in simulation, or configured for simulation and complete. 
 
-Simulation typically completes in a day. The completed simulation triggers an email notification that's sent to the user configured to receive [activity alerts](alert-policies.md).
+Simulation typically completes within one or two days, depending on the amount of data to analyze. The completed simulation triggers an email notification that's sent to the user configured to receive [activity alerts](alert-policies.md).
 
 To view the simulation results, select the policy from the **Label policies** page, and from the flyout pane, select **View simulation**. You can then view any samples, review the number of matching items and the locations, edit the policy, turn on the policy, or restart the simulation.
 
-![An example of simulation mode for an auto-apply retention label policy.](../media/simulation-mode-animated.gif)
+Watch the following example (no audio) where an auto-labeling policy named **Personal Information** has been selected, and from the flyout pane, **View simulation** is selected. This pane is then collapsed to better see the simulation results of the policy with the available actions to turn on or restart the policy, edit or delete it. The simulation results from the overview page are displayed in three sections, **Simulation status**, **Total matches**, and **Locations**. As the **Samples for review** tab is selected, you see a list of documents that haven't yet been filtered by location. The demonstration ends but at this stage, you could select one of the listed samples to view it in the preview pane, or first filter the results.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWQKr]
 
 ## Before you begin
 

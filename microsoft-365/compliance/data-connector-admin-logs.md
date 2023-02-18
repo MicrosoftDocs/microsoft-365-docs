@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date:
+ms.date: 04/13/2022
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp

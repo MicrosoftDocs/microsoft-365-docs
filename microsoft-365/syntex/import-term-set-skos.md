@@ -4,16 +4,16 @@ description: Learn how to Import a term set using a SKOS-based format.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 09/14/2020
 audience: admin
 ms.service: microsoft-syntex
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 search.appverid: 
 ms.localizationpriority: high
-
 ---
 
 # Import a term set using a SKOS-based format
