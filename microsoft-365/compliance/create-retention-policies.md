@@ -240,7 +240,7 @@ Some settings can't be changed after the policy is created and saved, which incl
 
 ## Troubleshooting retention policies
 
-If your retention policies are not working as expected or you see errors related to your retention policies, use the following troubleshooting resources:
+If your retention policies aren't working as expected or you see errors related to your retention policies, use the following troubleshooting resources:
 
 - [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
 - [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)

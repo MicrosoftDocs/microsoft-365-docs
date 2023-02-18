@@ -288,7 +288,7 @@ If you need to ensure that no one can turn off the policy, delete the policy, or
 
 ## Troubleshooting retention label policies
 
-If your retention label policies are not working as expected or you see errors related to these policies, use the following troubleshooting resources:
+If your retention label policies aren't working as expected or you see errors related to these policies, use the following troubleshooting resources:
 
 - [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
 - [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)
