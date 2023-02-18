@@ -332,16 +332,17 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 > 
 > Until this capability is supported on all the platforms used by your users, they will have an inconsistent labeling experience. For example, Word on one platform doesn't display a label that they see on a different platform.
 
-This configuration is an extension to the **Items** scope, when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) in the Microsoft Purview compliance center. When you define the scope for the label, next to the **Items** check box, select **More options**.
+This configuration is an extension to the **Items** scope, when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) in the Microsoft Purview compliance center. When you define the scope for the label for items, you can further refine the scope to just files or emails, and to [meetings](sensitivity-labels-meetings.md):
 
-On the flyout pane for **Use the label for email or files only**, remove the options for **Emails** or **Files**, or reselect them to return to the default values.
-
-- To scope labels to just Word, Excel, and PowerPoint: Make sure the option for **Emails** is selected, and not the option for **Files**.  
+- To scope labels to just Word, Excel, and PowerPoint: Make sure the option for **Files** is selected, and not the option for **Emails**.  
 - To scope labels to just Outlook, make sure the option for **Emails** is selected, and not the option for **Files**.
 
-Make sure both options are selected if you don't want to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook. 
+Make sure both options are selected if you don't want to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook.
 
-Be aware that this configuration affects both client apps and services, manual labeling and automatic labeling. For example, both options are required for [Teams meetings and chat](sensitivity-labels-meetings.md).  Other examples:
+> [!NOTE]
+> The **Files** option can include other items that support this scoping option, such as Power BI files. Check the application's documentation to verify, and remember to test all labeling apps and services used by your organization.
+
+Be aware that this configuration affects both client apps and services, manual labeling and automatic labeling. For example:
 
 - Default labels:
     - If the scope doesn't include email, a configured default label for email won't be applied.
@@ -357,9 +358,16 @@ Be aware that this configuration affects both client apps and services, manual l
 
 In addition, if a label has been previously applied but then removed from one of the scopes, users will no longer see that label applied for the scope in the apps that support this feature.
 
+Because of the impact of scoping labels to just files or emails, some existing labeling configurations will prevent you from removing the scope options for **Files** and **Emails**:
+- Default label in label policies
+- Default label to apply in channel meetings
+- Label selected for auto-labeling policies
+
+Before you can scope a label to just files or emails, you must first remove it if it's configured as one of these default labels, and remove it from any auto-labeling policies.
+
 **Limitation for this preview:**
 
-- To change the scope for a label that's published, you must first remove the label from all policies. You can then make the label change, and publish the label again. Be aware that for the scope or scopes you want to keep, these labels will temporarily disappear for users until they see the republished labels.
+- If the label is configured as the default label, and Outlook isn't configured with its own default label, you can't remove the scope for **Email**.
 
 ## Configure a label to apply S/MIME protection in Outlook
 

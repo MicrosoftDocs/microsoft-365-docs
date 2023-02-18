@@ -147,11 +147,11 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
 
 ## How to configure a sensitivity label to protect calendar items, Teams meetings, and chat
 
-1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Items** for the label's scope, and also select **Include meetings**: 
+1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Items** for the label's scope, and also select **Meetings**: 
     
     ![Sensitivity label scope options for files and emails.](../media/itemswithmeetings-scope-options-sensitivity-label.png)
     
-    If this option is unavailable, check the **More options** configuration that lets you [scope labels to just Word, Excel, and PowerPoint, or to just Outlook](sensitivity-labels-office-apps.md#scope-labels-to-just-word-excel-and-powerpoint-or-to-just-outlook). When either or both of the **Emails** or **Files** scope options are removed, the **Include meetings** option becomes unavailable.
+    If this option is unavailable, make sure **Files** and **Emails** are also selected.
 
 2. On the **Choose protection settings for labeled items** page:
     - Select **Encrypt items** if you want to encrypt meeting invites and responses, and any Office attachment in that calendar item
