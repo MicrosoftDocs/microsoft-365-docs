@@ -238,6 +238,13 @@ When settings from the retention policy are already applied to content, a change
 
 Some settings can't be changed after the policy is created and saved, which include the name of the retention policy, the scope type (adaptive or static), and the retention settings except the retention period.
 
+## Troubleshooting retention policies
+
+If your retention policies are not working as expected or you see errors related to your retention policies, use the following troubleshooting resources:
+
+- [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
+- [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)
+
 ## Next steps
 
 If some items for Exchange, SharePoint, OneDrive, or Microsoft 365 Groups need different retention settings from the retention policy settings you've configured, [create retention labels for these exceptions](create-retention-labels-data-lifecycle-management.md).
