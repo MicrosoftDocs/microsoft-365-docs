@@ -128,7 +128,7 @@ Be sure to review the following items before you start searching the audit log.
 
 - Microsoft doesn't guarantee a specific time after an event occurs for the corresponding audit record to be returned in the results of an audit log search. For core services (such as Exchange, SharePoint, OneDrive, and Teams), audit record availability is typically 60 to 90 minutes after an event occurs. For other services, audit record availability may be longer. However, some issues that are unavoidable (such as a server outage) may occur outside of the audit service that delays the availability of audit records. For this reason, Microsoft doesn't commit to a specific time.
 
-- Audit logging for Power BI isn't enabled by default. To search for Power BI activities in the audit log, you have to enable auditing in the Power BI admin portal. For instructions, see the "Audit logs" section in [Power BI admin portal](/power-bi/service-admin-portal#audit-logs).
+- To search for Power BI activities in the audit log, you have to enable auditing in the Power BI admin portal. For instructions, see the "Audit logs" section in [Power BI admin portal](/power-bi/service-admin-portal#audit-logs).
 
 ## Search the audit log
 
