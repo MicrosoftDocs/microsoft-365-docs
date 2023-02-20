@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/14/2022
 ---
 
 # Get all scan agents
@@ -104,13 +105,19 @@ Here is an example of the response.
             "id": "47df41a0c-asad-4fd6d3-bbea-a93dbc0bfcaa_4edd75b2407a5b64d704b4e53d74f15",
             "machineId": "4ejh675b240118fbehiuiy5b64d704b4e53d15",
             "lastSeen": "2022-05-08T12:18:41.538203Z",
-            "computerDnsName": "TEST_DOMAIN"
+            "computerDnsName": "TEST_DOMAIN",
+            "AssignedApplicationId": "9E0FA0EB-0A51-4357-9C87-C21BFBE07571",
+            "ScannerSoftwareVersion": "7.1.1",
+            "LastCommandExecutionTimestamp": "2022-05-08T12:18:41.538203Z",
         },
         {
             "id": "47d41a0c-1dfd-46d3-bbea-a93dbc0bfcaa_eb663a27ae9d032f61bc268oiu4c4b90f77",
             "machineId": "eb663a27ae9d032sdf9dfd79eedf14c4b90f77",
             "lastSeen": "2022-12-19T20:29:04.8242449Z",
-            "computerDnsName": "TEST_DOMAIN2"
+            "computerDnsName": "TEST_DOMAIN2",
+            "AssignedApplicationId": "9E0FA0EB-0A51-4357-9C87-C21BFBE07571",
+            "ScannerSoftwareVersion": "7.1.1",
+            "LastCommandExecutionTimestamp": "2022-12-19T20:29:04.8242449Z",
         },
     ]
 }

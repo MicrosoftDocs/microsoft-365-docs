@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 05/02/2022
 ---
 
 # Export certificate inventory per device
@@ -110,7 +111,7 @@ Property (ID)|Data type|Description
 ### 1.6.1 Request example
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAssessmentByMachine
+GET https://api.securitycenter.microsoft.com/api/machines/CertificateAssessmentByMachine
 ```
 
 ### 1.6.2 Response example

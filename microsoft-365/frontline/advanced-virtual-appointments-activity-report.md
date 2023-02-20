@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams Advanced Virtual Appointments activity report
-author: LanaChin
-ms.author: v-lanachin
+author: daisyfell
+ms.author: daisyfeller
 manager: samanro
 audience: Admin
 ms.topic: article
@@ -15,18 +15,19 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - m365initiative-meetings
+  - tier1
 description: Learn how to use the Advanced Virtual Appointments activity report, which provides usage information for advanced Virtual Appointments capabilities that are available with Teams Premium.
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.date: 12/16/2022
+ms.date: 02/01/2023
 ---
 # Microsoft Teams Advanced Virtual Appointments activity report
 
-![Information icon](media/info.png) **This feature is part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview). To access this feature during the preview period, a Teams Premium trial license is required.**
+![Information icon](media/info.png) **This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
-The Advanced Virtual Appointments activity report in the Microsoft Teams admin center provides user activity information for advanced Virtual Appointments capabilities that are available with [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview).
+The Advanced Virtual Appointments activity report in the Microsoft Teams admin center provides user activity information for advanced Virtual Appointments capabilities that are available with [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 
 To view the report, you must be a Global admin, Teams admin, Global reader, or Report reader, and your organization must be using advanced Virtual Appointments capabilities.
 

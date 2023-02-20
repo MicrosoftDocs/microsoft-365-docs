@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 12/07/2022
+ms.date: 01/26/2023
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -40,8 +40,8 @@ The following table describes each experience.
 
 | Portal experience  | Description  |
 |---------|---------|
-| The simplified configuration experience in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))  | The simplified configuration experience includes a [wizard-like experience](mdb-use-wizard.md) to help you set up and configure Defender for Business. Simplified configuration also includes default security settings and policies to help protect your company's devices as soon as they're onboarded to Defender for Business. You can view and edit your default policies to suit your business needs. To learn more, see [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-policies.md).<br/><br/>With the simplified experience, your security team uses the Microsoft 365 Defender portal as a one-stop shop to: <ul><li>Set up and configure Defender for Business</li><li>View and manage incidents</li><li>Respond to and mitigate threats</li><li>View reports</li><li>Review pending or completed actions  |
-| The Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  | Microsoft Intune is a cloud-based mobile device management (MDM) and mobile application management (MAM) provider for apps and devices. If you're already using Intune, you can continue to use the Endpoint Manager admin center to manage devices such as mobile phones, tablets, and laptops. See [Microsoft Intune: Device management](/mem/intune/fundamentals/what-is-device-management).  |
+| The simplified configuration experience in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))  | The simplified configuration experience includes a [wizard-like experience](mdb-use-wizard.md) to help you set up and configure Defender for Business. Simplified configuration also includes default security settings and policies to help protect your company's devices as soon as they're onboarded to Defender for Business. You can view and edit your default policies to suit your business needs. To learn more, see [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-policies.md).<br/><br/>With the simplified experience, your security team uses the Microsoft 365 Defender portal as a one-stop shop to:  <br/>- Set up and configure Defender for Business <br/>- View and manage incidents <br/>- Respond to and mitigate threats <br/>- View reports <br/>- Review pending or completed actions  |
+| The Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com))  | Microsoft Intune is a cloud-based mobile device management (MDM) and mobile application management (MAM) provider for apps and devices. If you're already using Intune, you can continue to use it to manage devices such as mobile phones, tablets, and laptops. See [Microsoft Intune: Device management](/mem/intune/fundamentals/what-is-device-management).  |
 
 ## Next steps
 

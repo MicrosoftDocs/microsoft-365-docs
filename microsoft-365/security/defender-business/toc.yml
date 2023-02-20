@@ -5,13 +5,12 @@
       items:
       - name: What is Microsoft Defender for Business?
         href: mdb-overview.md
-        items:
-        - name: Simplified configuration
-          href: mdb-simplified-configuration.md
-        - name: Requirements
-          href: mdb-requirements.md
-        - name: Compare plans for small and medium-sized businesses
-          href: compare-mdb-m365-plans.md
+      - name: Simplified configuration
+        href: mdb-simplified-configuration.md
+      - name: Requirements
+        href: mdb-requirements.md
+      - name: Compare plans for small and medium-sized businesses
+        href: compare-mdb-m365-plans.md
       - name: What's new in Defender for Business?
         href: ../../business-premium/m365bp-mdb-whats-new.md?toc=/microsoft-365/security/defender-business/toc.json&bc=/microsoft-365/security/defender-business/breadcrumb/toc.json
       - name: Preview features
@@ -64,6 +63,8 @@
         href: mdb-view-edit-create-policies.md
       - name: Policy order
         href: mdb-policy-order.md
+      - name: Attack surface reduction capabilities
+        href: mdb-asr.md
       - name: Next-generation protection settings
         href: mdb-next-gen-configuration-settings.md
       - name: Firewall settings

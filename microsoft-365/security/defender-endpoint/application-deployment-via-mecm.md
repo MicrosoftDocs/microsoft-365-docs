@@ -17,8 +17,8 @@ ms.collection:
 - m365-security
 - tier1
 ms.topic: conceptual
+ms.date: 06/27/2022
 ---
-
 
 # Migrating servers from Microsoft Monitoring Agent to the unified solution
 

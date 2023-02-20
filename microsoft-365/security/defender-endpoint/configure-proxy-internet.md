@@ -18,6 +18,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Configure device proxy and Internet connectivity settings
@@ -288,6 +289,8 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 
 ## Related articles
 
+- [Disconnected environments, proxies and Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/disconnected-environments-proxies-and-microsoft-defender-for/ba-p/3710502)
 - [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
 - [Onboard Windows devices](configure-endpoints.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+- [Onboard devices without Internet access to Microsoft Defender for Endpoint](onboard-offline-machines.md)

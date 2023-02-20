@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 11/02/2020
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -67,11 +68,14 @@ The following table describes the decryption supported by eDiscovery (Standard) 
 | Encrypted email | Decryption to file | Yes | Yes |
 | Encrypted mail and attachment | Search | No | Yes (with advanced indexing)<sup>1</sup> |
 | Encrypted mail and attachment | Decryption to .pst | No | Yes |
-| Encrypted mail and attachment | Decryption to file | Yes | Yes |
-| File in SharePoint with MIP label | Search | Yes | Yes |
+| Encrypted mail and attachment | Decryption to file | No | Yes |
+| File in SharePoint with MIP label | Search | No | Yes |
 | File in SharePoint with MIP label | Decryption | No | Yes |
 | File in SharePoint with other encryption<sup>2</sup> | Search, Decryption | No  | No |
 |||||
+
+> [!IMPORTANT]
+> eDiscovery (Standard) doesn't support legacy encryption protocols.
 
 ## Decryption limitations with sensitivity labels in SharePoint and OneDrive
 

@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: magarlan, chrigreen
+ms.date: 03/25/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -66,7 +67,7 @@ For customers with DAP and no GDAP, the Admin Agent role grants permissions to v
 
 The Helpdesk Agent role grants permissions to view all tenant data and take limited action in Lighthouse, such as resetting user passwords, blocking user sign-ins, and updating customer contact information and websites.
 
-Given the broad permissions granted to partner users with DAP roles, we recommend adopting GDAP as soon as possible. 
+Given the broad permissions granted to partner tenant users with DAP roles, we recommend adopting GDAP as soon as possible. 
 
 ## Permissions in the partner tenant
 
