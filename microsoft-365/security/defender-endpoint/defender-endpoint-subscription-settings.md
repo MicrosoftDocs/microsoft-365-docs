@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 02/14/2023
+ms.date: 02/20/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -21,7 +21,7 @@ ms.collection:
 
 # Manage Microsoft Defender for Endpoint subscription settings across devices
 
-A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is a situation in which an organization is using a mix of enterprise Microsoft endpoint security subscriptions, such as Defender for Endpoint Plan 1 and Plan 2. Until recently, mixed-licensing scenarios weren't supported; in cases of multiple subscriptions, the highest functional subscription would take precedence for your tenant. Now, **the ability to manage your subscription settings to accommodate mixed licensing scenarios is currently in preview**! These capabilities enable you to:
+A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is a situation in which an organization is using a mix of Defender for Endpoint Plan 1 and Plan 2 licenses. Until recently, mixed-licensing scenarios weren't supported; in cases of multiple subscriptions, the highest functional subscription would take precedence for your tenant. Now, **the ability to manage your subscription settings to accommodate mixed licensing scenarios is currently in preview**! These capabilities enable you to:
 
 - **Set your tenant to mixed mode and tag devices** to determine which devices will receive features and capabilities from each plan (we call this option *mixed mode*); **OR**,
 - **Use the features and capabilities from one plan across all your devices**. 
@@ -31,10 +31,10 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 ## Set your tenant to mixed mode and tag devices
 
 > [!IMPORTANT]
-> - Mixed-mode settings apply to client endpoints only. Tagging server devices won’t change their subscription state. All server devices running Windows Server or Linux should have relevant [Defender for Servers Plan 2 licenses and capabilities](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). 
-> - Make sure to follow the procedures in this article to try mixed-license scenarios in your environment. Assigning user licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) doesn't set your tenant to mixed mode. 
-> - You should have active trial or paid licenses for both Defender for Endpoint Plan 1 and Plan 2. 
+> - **Mixed-mode settings apply to client endpoints only**. Tagging server devices won’t change their subscription state. All server devices running Windows Server or Linux should have relevant [Defender for Servers Plan 2 licenses and capabilities](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). 
+> - **Make sure to follow the procedures in this article to try mixed-license scenarios in your environment**. Assigning user licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) doesn't set your tenant to mixed mode. 
 > - Make sure that you have opted in to receive [preview features](preview.md).
+> - **You should have active trial or paid licenses for both Defender for Endpoint Plan 1 and Plan 2**. 
 > - To access license information, you must have one of the following roles assigned in Azure Active Directory (Azure AD):
 >    - Global Admin
 >    - Security Admin
@@ -42,7 +42,7 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 
 1. As an admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Go to **Settings** > **Endpoints** > **Licenses**. Your usage report 
+2. Go to **Settings** > **Endpoints** > **Licenses**. Your usage report report opens and displays information about your organization’s Defender for Endpoint licenses.
 
 3. Under **Subscription state**, select **Manage subscription settings**. (If you don't see **Manage subscription settings**, it's because you have only one subscription applied to your tenant, and no further action is needed.)
 
