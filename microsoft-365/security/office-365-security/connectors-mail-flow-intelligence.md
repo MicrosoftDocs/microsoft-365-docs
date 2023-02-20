@@ -15,7 +15,9 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Admins can learn about the error codes that are associated with message delivery using connectors (also known as mail flow intelligence).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 ms.date: 12/01/2022
 ---
 
