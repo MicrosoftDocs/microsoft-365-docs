@@ -76,10 +76,10 @@ A mixed-licensing scenario is a situation in which an organization is using a mi
 | *Mixed trial* | Try a premium level subscription for some users. Examples include: <br/>- Defender for Endpoint Plan 1 (purchased for all users), and Defender for Endpoint Plan 2 (a trial subscription has been started for some users)<br/>- Microsoft 365 E3 (purchased for all users), and Microsoft 365 E5 (a trial subscription has been started for some users) |
 | *Phased upgrades* | Upgrade user licenses in phases. Examples include:<br/>- Moving groups of users from Defender for Endpoint Plan 1 to Plan 2<br/>- Moving groups of users from Microsoft 365 E3 to E5  |
 
-**If you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, the ability to manage your subscription settings across devices is now in preview**! This new capability enables you to:
+**If you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, the ability to manage your subscription settings across client devices is now in preview**! This new capability enables you to:
 
-- Apply *either* Defender for Endpoint Plan 1 *or* Plan 2 settings to all your devices; or
-- Use mixed mode, and apply Defender for Endpoint Plan 1 settings to some devices, and Defender for Endpoint Plan 2 to other devices.
+- Apply *either* Defender for Endpoint Plan 1 *or* Plan 2 settings to all your client devices; or
+- Use mixed mode, and apply Defender for Endpoint Plan 1 settings to some client devices, and Defender for Endpoint Plan 2 to other client devices.
 
 You can also use a newly added license usage report to track status. 
 
