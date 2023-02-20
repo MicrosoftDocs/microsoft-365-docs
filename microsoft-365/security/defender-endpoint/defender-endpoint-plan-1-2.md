@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 02/14/2023
+ms.date: 02/20/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -68,13 +68,13 @@ Defender for Endpoint Plan 1 and 2 (standalone), Defender for Business (standalo
 
 ## Mixed-licensing scenarios
 
-A mixed-licensing scenario is a situation in which an organization is using a mix of enterprise Microsoft endpoint security subscriptions. The following table describes examples of mixed-licensing scenarios: 
+A mixed-licensing scenario is a situation in which an organization is using a mix of Defender for Endpoint Plan 1 and Plan 2 licenses. The following table describes examples of mixed-licensing scenarios: 
 
 | Scenario | Description |
 |:---|:---|
-| *Mixed tenant* | Use different sets of capabilities for groups of users and their devices. Examples include:<ul><li>Defender for Endpoint Plan 1 and Defender for Endpoint Plan 2</li><li>Microsoft 365 E3 and Microsoft 365 E5</li></ul>  |
-| *Mixed trial* | Try a premium level subscription for some users. Examples include: <ul><li>Defender for Endpoint Plan 1 (purchased for all users), and Defender for Endpoint Plan 2 (a trial subscription has been started for some users)</li><li>Microsoft 365 E3 (purchased for all users), and Microsoft 365 E5 (a trial subscription has been started for some users)</li></ul> |
-| *Phased upgrades* | Upgrade user licenses in phases. Examples include:<ul><li>Moving groups of users from Defender for Endpoint Plan 1 to Plan 2</li><li>Moving groups of users from Microsoft 365 E3 to E5 </li></ul>  |
+| *Mixed tenant* | Use different sets of capabilities for groups of users and their devices. Examples include:<br/>- Defender for Endpoint Plan 1 and Defender for Endpoint Plan 2<br/>- Microsoft 365 E3 and Microsoft 365 E5  |
+| *Mixed trial* | Try a premium level subscription for some users. Examples include: <br/>- Defender for Endpoint Plan 1 (purchased for all users), and Defender for Endpoint Plan 2 (a trial subscription has been started for some users)<br/>- Microsoft 365 E3 (purchased for all users), and Microsoft 365 E5 (a trial subscription has been started for some users) |
+| *Phased upgrades* | Upgrade user licenses in phases. Examples include:<br/>- Moving groups of users from Defender for Endpoint Plan 1 to Plan 2<br/>- Moving groups of users from Microsoft 365 E3 to E5  |
 
 **If you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, the ability to manage your subscription settings across devices is now in preview**! This new capability enables you to:
 
