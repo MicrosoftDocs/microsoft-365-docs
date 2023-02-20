@@ -11,13 +11,13 @@ f1.keywords:
 author: dansimp
 ms.author: dansimp
 ms.service: microsoft-365-security
-ms.date: 01/29/2021
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- m365initiative-defender-office365
+- tier2
 ms.topic: how-to
 ms.custom: 
 - autoir

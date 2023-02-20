@@ -5,6 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
+ms.date: 02/01/2022
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
@@ -85,5 +86,3 @@ See how content is used to illustrate model activity and to provide more informa
 ### Find additional resources
 
 Discover additional resources and scenarios to help you learn more about Syntex.
-
-

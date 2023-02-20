@@ -7,6 +7,7 @@ f1.keywords:
 - Windows security baselines for Intune
 - customize configuration profiles
 manager: dougeby
+ms.date: 10/20/2021
 audience: ITPro
 description: Get started with configuration profiles to enforce secure settings on devices using Intune to transition these security controls to the cloud.
 ms.topic: article
