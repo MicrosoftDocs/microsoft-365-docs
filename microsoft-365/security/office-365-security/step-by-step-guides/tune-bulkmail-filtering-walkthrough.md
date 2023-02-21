@@ -57,24 +57,24 @@ Bulk mail is usually advertising emails or marketing messages, which can be more
 
 > [!TIP]
 > Review this step-by-step guide for more details on allowing senders with TABL (Tenant Allow Block List): [How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365 - Office 365 | Microsoft Learn
-](https://learn.microsoft.com/microsoft-365/security/office-365-security/step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365)
+](how-to-handle-false-positives-in-microsoft-defender-for-office-365.md)
 
-## More aggressive strategies for managing bulk senders.
+## More aggressive strategies for managing bulk senders
 
 In some cases, the sender of bulk mail doesn't generate enough complaints for their messages to be assigned a BCL value high enough to be caught by your tuned threshold value. In this situation, it's possible to use transport rules to take an aggressive approach; however, caution should be applied, as false positives (unwanted blocking) will occur, so these rules need tuning with exceptions and management to stay relevant for your organizations mail patterns.
 > [!TIP]
 >To better protect certain groups of users such as your c-suite and priority accounts who may be more vulnerable to unsolicited emails due to their email addresses being readily accessible in the public domain, you can create a specialized policy specifically scoped to them and set a higher BCL threshold.
 
-[Use mail flow rules to filter bulk email in Exchange Online | Microsoft Learn](https://learn.microsoft.com/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail)
+[Use mail flow rules to filter bulk email in Exchange Online | Microsoft Learn](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail.md)
 
 ## For customers with Microsoft Defender for Office 365
 
 - Customers with Microsoft Defender for Office 365 Plan 1 or higher can use the email entity page to discover the BCL value of messages instead of interrogating headers. [Learn more here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-email-entity-page-in-microsoft-defender-for/ba-p/2275420)
 
-- Customers with Microsoft Defender for Office 365 Plan 2 can interrogate bulk values at scale using advanced hunting. See more details here: [Use advanced hunting to discover bulk emails](https://learn.microsoft.com/microsoft-365/security/office-365-security/anti-spam-spam-vs-bulk-about#how-to-tune-bulk-email)
+- Customers with Microsoft Defender for Office 365 Plan 2 can interrogate bulk values at scale using advanced hunting. See more details here: [Use advanced hunting to discover bulk emails](/microsoft-365/security/office-365-security/anti-spam-spam-vs-bulk-about#how-to-tune-bulk-email.md)
 
 ## More Information
 
 [Email Protection Basics in Microsoft 365: Bulk Email - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/email-protection-basics-in-microsoft-365-bulk-email/ba-p/3445337)
 
-[What's the difference between junk email and bulk email? - Office 365 | Microsoft Learn](https://learn.microsoft.com/microsoft-365/security/office-365-security/anti-spam-spam-vs-bulk-about)
+[What's the difference between junk email and bulk email? - Office 365 | Microsoft Learn](/microsoft-365/security/office-365-security/anti-spam-spam-vs-bulk-about.md)
