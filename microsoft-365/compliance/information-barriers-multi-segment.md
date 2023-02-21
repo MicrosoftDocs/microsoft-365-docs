@@ -24,9 +24,9 @@ ms.custom: seo-marvel-apr2020
 # Use multi-segment support in information barriers
 
 > [!IMPORTANT]
-> Support for assigning users to multiple segments is only available when enabling information barriers in your organization after February 28, 2023. <br><br> Organizations that have enabled IB prior to February 28, 2023 are on the older version of information barriers and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to February 28, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
+> Support for assigning users to multiple segments is only available when your organization isn't in *Legacy* mode. To determine if your organization is in *Legacy* mode, see [Enable multiple segment support for users](#enable-multiple-segment-support-for-users) and check the value of the `InformationBarrierMode` property. <br><br> Users are restricted to being assigned to only one segment for organizations in *Legacy* mode. Organizations in *Legacy* mode will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
 
-The multi-segment support mode enables you to assign users in your organization to up to 10 segments in information barriers instead of being limited to just one segment. This allows support for more diverse communication rules between individuals and groups to support more complex organizational and operational scenarios. For organizations using multi-segment support, all information barriers policies must be defined with an allow list.
+The multi-segment mode enables you to assign users in your organization to up to 10 segments in information barriers instead of being limited to just one segment. This allows support for more diverse communication rules between individuals and groups to support more complex organizational and operational scenarios. For organizations using multi-segment support, all information barriers policies must be defined with an allow list.
 
 When configured for multi-segment support, compatibility for users depending on each user's assignment to a shared segment. If users share assignment to the same segment, they are compatible. For example, the following table shows that User A and User B aren't compatible because they don't share an assigned segment. However, User A is compatible with User C and User B is compatible with User C because they each have an assigned segment in common.
 
@@ -92,8 +92,6 @@ With segments and policies defined, the North School District applies the polici
     ```
 
     If the value of the `InformationBarrierMode` property is *SingleSegment*, you can enable multi-segment support in Step 2. If the value of the `InformationBarrierMode` property is *MultiSegment*, you can skip Step 2 in this section. Multi-segment support is already enabled for your organization.
-    
-    
 
     If the value of the `InformationBarrierMode` property is *Legacy*, enabling multi-segment isn't supported for your organization. *Legacy* organizations will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers)
 
@@ -108,7 +106,7 @@ With segments and policies defined, the North School District applies the polici
 
 ## Multi-segment support for users in OneDrive
 
-If you've enabled information barriers in your organization after February 15, 2023 and configured OneDrive for information barriers for multi-segment support, the OneDrive user experience is as follows:
+If your IB organization isn't in *LegacyMode* mode and you've configured OneDrive for information barriers for multi-segment support, the OneDrive user experience is as follows:
 
 - **OneDrive IB policy**: A multi-segment user's OneDrive ia automatically set to *Owner Moderated* mode by default.
 - **OneDrive site access by a multi-segment user**:
@@ -125,7 +123,7 @@ For more information about managing IB for OneDrive, see [Use information barrie
 
 ## Multi-segment support for users in SharePoint Online
 
-If you've enabled information barriers in your organization after February 15, 2023 and configured OneDrive for information barriers for multi-segment support, the SharePoint user experience is as follows:
+If your IB organization isn't in *LegacyMode* mode and you've configured SharePoint for information barriers for multi-segment support, the SharePoint user experience is as follows:
 
 - **Site creation**: When a multi-segment user creates a SharePoint site (a Microsoft 365 group connected or non-group site), the site is automatically set to *Owner moderated* mode.
 - **SharePoint site access by a multi-segment user**:
@@ -143,7 +141,7 @@ For more information about managing IB for SharePoint, see [Use information barr
 
 ## Multi-segment support for users in Microsoft Teams
 
-If you've enabled information barriers in your organization after February 15, 2023 and configured Teams for information barriers for multi-segment support, the Microsoft Teams user experience is as follows:
+If your IB organization isn't in *LegacyMode* mode and you've configured Teams for information barriers for multi-segment support, the Microsoft Teams user experience is as follows:
 
 - **Team creation**: When a multi-segment user creates a team, the team is automatically set to *Implicit* mode by default.
 - **Team member addition**: All users in the team must have one segment which is compatible with all other users.
