@@ -56,19 +56,18 @@ Whether automated investigations run, and whether remediation actions are taken 
 
 ## Review or change automated response exclusions for users
 
-Automatic attack disruption enables the exclusion of specific user accounts from automated containment actions. Excluded users won’t be affected by automated actions triggered by attack disruption.
-
-You must be a global administrator or security administrator to perform the following procedure:
+Automatic attack disruption enables the exclusion of specific user accounts from automated containment actions. Excluded users won’t be affected by automated actions triggered by attack disruption. You must be a global administrator or security administrator to perform the following procedure:
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Go to **Settings** > **Identities** > **Automated response exclusions**.
+2. Go to **Settings** > **Identities** > **Automated response exclusions**. Check the user list to exclude accounts.
+:::image type="content" source="../../media/automatic-attack-disruption/Fig2-exclude-specific-users.png" alt-text="Selecting user accounts for automated response exclusion" lightbox="../../media/automatic-attack-disruption/Fig2-exclude-specific-users.png":::
 
-Note that excluding user accounts is not recommended, and accounts added to this list won’t be suspended in all supported attack types like business email compromise (BEC) and human-operated ransomware.
+Excluding user accounts is not recommended, and accounts added to this list won’t be suspended in all supported attack types like business email compromise (BEC) and human-operated ransomware.
 
 ## Next step
 
-- View details and results
+- [View details and results](/microsoft-365/security/defender/autoad-results.md)
 
 ## See also
 
