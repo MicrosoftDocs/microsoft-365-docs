@@ -48,18 +48,14 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
 ### Manage your connection instances
 
   - To create a new connection instance, select **Create instance**.
-  - To view more details about an existing connection instance, select the instance name. On the details page, you'll see health information, including mapping and account authorization errors (if any), the list of mappings (if any), and more. You can also choose **Edit** to update settings in the wizard.
+  - To make changes to an existing connection instance, choose **Edit** next to the instance name. You'll be taken to the wizard, where you can update the settings and mappings.
+  - To view more details about an existing connection instance, select its name. On the details page, you'll see health information, including ongoing errors (if any), and mappings. You can also choose **Edit** to update settings in the wizard or **Back** to return to the Connector Management Console.
 
     :::image type="content" source="media/shifts-connector-ukg-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-ukg-manage-details.png":::
 
  For a complete list of error messages and how to resolve them, see [List of error messages](#list-of-error-messages) later in this article.
 
-  - To make changes to an existing connection instance, choose **Edit** next to the instance name. You'll be taken to the wizard, where you can update the settings that you want.
-  
-> [!NOTE]
-> You can also go directly to the Connector Management Console page when you select the **Connector Management** button on the last page of the wizard during connection setup.
-
-#### Connection instance settings
+#### Edit connection instance settings
 
 You'll need to choose the data that your Shifts users can see and change. You'll be given the following options for these settings:
 
@@ -80,6 +76,8 @@ You'll need to choose the data that your Shifts users can see and change. You'll
 > - Open shifts: **Shifts users will not see provider data**
 > - Swap requests: **Shifts users will not see provider data**
 > - Time off requests: **Shifts users will not see provider data**
+>
+> After you edit your settings, make sure you follow the steps to [Disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard-ukg?branch=v-lanachin-shiftscon&view=o365-worldwide#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
 
 ## List of error messages
 
