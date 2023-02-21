@@ -47,12 +47,8 @@ Here are some examples of what it looks like:
 
 To release a user account or a device from containment, click on the contained asset and click **release from containment** for a device or **enable user** for a user account.
 
-(image)
-
 ## Track the actions in the Action center
 
 The Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together [remediation](m365d-remediation-actions.md) and response actions across your devices, email & collaboration content, and identities. Actions listed include remediation actions that were taken automatically or manually. You can view automatic attack disruption actions in the Action center.
 
 After you mitigate the risk and complete the investigation of an incident, you can release the contained assets from the action details pane (e.g., enable a disabled user account or release a device from containment). For more information about the action center, see [Action center](/m365d-action-center.md).
-
-## Get attack disruption notifications
