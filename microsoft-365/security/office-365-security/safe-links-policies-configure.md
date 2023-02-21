@@ -163,9 +163,6 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
    - **Teams** section:
      - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams. URLs are not rewritten**: Select this option to enable Safe Links protection for links in Teams. Note that this setting might take up to 24 hours to take effect. This setting affects time of click protection.
 
-     > [!NOTE]
-     > Currently, Safe Links protection for Microsoft Teams is not available in Microsoft 365 GCC High or Microsoft 365 DoD.
-
    - **Office 365 apps** section:
      - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps. URLs are not rewritten.**: Select this option to enable Safe Links protection for links in files in supported Office desktop, mobile, and web apps. This setting affects time of click protection.
 
