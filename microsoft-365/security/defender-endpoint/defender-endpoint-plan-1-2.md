@@ -83,7 +83,7 @@ A mixed-licensing scenario is a situation in which an organization is using a mi
 
 You can also use a newly added license usage report to track status. 
 
-**For more information, see [Manage your Defender for Endpoint subscription settings across devices](defender-endpoint-subscription-settings.md)**.
+**For more information, including how to use mixed-licensing scenarios in your tenant, see [Manage your Defender for Endpoint subscription settings across devices](defender-endpoint-subscription-settings.md)**.
 
 > [!TIP]
 > If your organization is a small or medium-sized business, see [What happens if I have a mix of Microsoft endpoint security subscriptions](/microsoft-365/security/defender-business/mdb-faq#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
