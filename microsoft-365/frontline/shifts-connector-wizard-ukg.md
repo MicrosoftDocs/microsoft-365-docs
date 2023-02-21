@@ -82,9 +82,9 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 <a name="connection_details"> </a>
 
 1. In the Connection settings pane, give your connection a unique name. It can't be longer than 100 characters or have any special characters.
-    :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
 
 1. Enter your UKG Dimensions service account name (which enables access to all instances created in UKG Dimensions) and password and service URLs. If you don't know one or more of your connection details, contact your UKG Dimensions delivery partner or account manager.
+    :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
 
 1. When you're done, select **Save connection**.
 
@@ -95,17 +95,19 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 
 After you create a connection, you can set up one or more connection instances in that connection.
 
-You'll see all the connections you've created on your **Connector Management Console**. Under the connection where you want to create a new instance, select **Create instance**.
+You'll see all the connections you've created on your **Connector Management Console**. Under the connection where you want to create a new instance, select **Create instance**
+    :::image type="content" source="media/shifts-connector-wizard-ukg-create-instance.png" alt-text="Screenshot of the Connector Management Console showing existing connections." lightbox="media/shifts-connector-wizard-ukg-create-instance.png":::
 
 <a name="sync"> </a>
 #### Choose settings
 
 On the Settings page, you choose the information to sync from UKG Dimensions to Shifts, the sync frequency, and whether Shifts users can make changes to the data.
+    :::image type="content" source="media/shifts-connector-wizard-sync-settings.png" alt-text="Screenshot of the Sync settings page of the wizard, showing sync settings." lightbox="media/shifts-connector-wizard-sync-settings.png":::
 
 1. Enter a name for your connection instance. It can't be longer than 100 characters or have any special characters.
 
 1. Enter your Microsoft 365 system account. This is the [account that you created as a prerequisite](#before-you-begin) that is a team owner of all the teams you want to map.
-    :::image type="content" source="media/shifts-connector-wizard-ukg-sync-settings.png" alt-text="Screenshot of the Sync settings page of the wizard, showing sync settings." lightbox="media/shifts-connector-wizard-ukg-sync-settings.png":::
+
 <a name="email"> </a>
 
 1. Under **Email notification recipients**, choose who receives email notifications about this connection instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connection instance is set up.
@@ -143,9 +145,7 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
 
 Choose the UKG Dimensions instances that you want to connect to Shifts, and then map each WFM instance to a team in Teams. You can map up to 400 instances.
 
-:::image type="content" source="media/shifts-connector-wizard-ukg-sites.png" alt-text="Screenshot of wizard, showing the list of UKG Dimensions instances." lightbox="media/shifts-connector-wizard-ukg-sites.png":::
-
-:::image type="content" source="media/shifts-connector-wizard-ukg-search-team.png" alt-text="Screenshot of the pane showing the search team option and create a new team option." lightbox="media/shifts-connector-wizard-ukg-search-team.png":::
+:::image type="content" source="media/shifts-connector-wizard-ukg-map.png" alt-text="Screenshot of wizard, showing the list of UKG Dimensions instances." lightbox="media/shifts-connector-wizard-ukg-map.png":::
 
 1. On the **Mapping** page, start by choosing which WFM instance(s) you want to map to Microsoft Teams team(s).
 
@@ -164,8 +164,6 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 Before finishing, review the summary of the connection instance creation process. If you need to make changes during the connection instance creation process, choose **Back**. When you're ready, select **Finish**.
 
 :::image type="content" source="media/shifts-connector-wizard-ukg-review.png" alt-text="Screenshot of the Review page of the wizard, showing mappings." lightbox="media/shifts-connector-wizard-ukg-review.png":::
-
-:::image type="content" source="media/shifts-connector-wizard-ukg-operation-id.png" alt-text="Screenshot of the wizard page, showing confirmation message and operation ID." lightbox="media/shifts-connector-wizard-ukg-operation-id.png":::
 
 The wizard starts the process to set up the connection instance, which may take some time to complete. If you try to edit the connection instance before the setup is complete, you most likely won't be able to view the mappings you created previously.
 
