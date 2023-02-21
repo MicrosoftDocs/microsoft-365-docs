@@ -44,7 +44,12 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 
 2. Go to **Settings** > **Endpoints** > **Licenses**. Your usage report report opens and displays information about your organization’s Defender for Endpoint licenses.
 
-3. Under **Subscription state**, select **Manage subscription settings**. (If you don't see **Manage subscription settings**, it's because you have only one subscription applied to your tenant, and no further action is needed.)
+3. Under **Subscription state**, select **Manage subscription settings**. 
+
+   > [!NOTE]
+   > If you don't see **Manage subscription settings**, at least one of the following conditions is true:
+   > - You have Defender for Endpoint Plan 1 or Plan 2 (but not both); or 
+   > - Mixed-license capabilities haven't rolled out to your tenant yet.
 
 4. A **Subscription settings** flyout opens. Choose the option to use Defender for Endpoint Plan 1 and Plan 2. (No changes will occur until devices are tagged as per the next step.)
 
