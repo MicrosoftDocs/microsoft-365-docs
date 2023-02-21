@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 ms.reviewer: nickrob  
-ms.date: 09/12/2019
+ms.date: 01/01/2023
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -65,7 +65,7 @@ After you've identified custodians and any non-custodian data sources for the ca
 
 8. On the **Conditions** page, you can create the search query that is used to collect items from the data sources that you've identified in the previous wizard pages. You can search for keywords, property:value pairs, or use a keyword list. You can also add various search conditions to narrow the scope of the collection. For more information, see [Build search queries for collections](ediscovery-building-search-queries.md).
 
-9. On the **Review your collection and get estimates** page, you'll see a summary of the collection estimate process. Note that the collection estimate will be saved for further review and refinement, but the results won't be automatically committed to a review set. You'll need to decide to commit to a review set later.
+9. On the **Review your collection and get estimates** page, you'll see a summary of the collection estimate process. The collection estimate will be saved for further review and refinement, but the results won't be automatically committed to a review set. You'll need to decide to commit to a review set later.
 
 10. On the **Review your collection** page, you can review and update the collection selection, data sources, and conditions that you configured on the previous pages. Select **Edit** for any of the selections and update if needed.
 
@@ -80,7 +80,7 @@ Additionally, you can now monitor the progress of the estimate that shows how ma
 - **Status**: The status of the estimate. Values are *In progress*, *Successful*, or *UNSUCCESSFUL VALUE?*
 - **Sources searched**: The number of sources searched in the estimate.
     - **Sources with Hits**: Sources in the estimate that meet the conditions configured for the collection.
-    - **Sources with No Hits**: Sources in the estimate that do not have any items that meet the conditions configured for the collection.
+    - **Sources with No Hits**: Sources in the estimate that don't have any items that meet the conditions configured for the collection.
     - **Sources Unavailable**: Sources that were unavailable during the period that the estimate was in progress.
 - **Collection estimate items and size**: The number of items and size of the collection estimate.
 
@@ -106,7 +106,7 @@ Here's a list of things you can do from the collection flyout page:
 
 - Select the **Summary** tab to view summary information about the collection and the estimated search results returned by the collection. This includes:
 
-    - **Collection overview (preview)** section: This section includes the **Locations with hits** sub-section that provides data on the total number of locations searched and the number of locations that contained items resulting in hits. For example, a collection scoped to Exchange Online mailboxes and SharePoint sites may summarize results by the number of mailboxes and sites searched, and the combined number of mailboxes and sites that had hits. This section also includes the **Pre-collection estimate** sub-section that displays the total number of items and size of the estimated search results. You have the option to add these items to the review set for inspection.
+    - **Collection overview (preview)** section: This section includes the **Locations with hits** subsection that provides data on the total number of locations searched and the number of locations that contained items resulting in hits. For example, a collection scoped to Exchange Online mailboxes and SharePoint sites may summarize results by the number of mailboxes and sites searched, and the combined number of mailboxes and sites that had hits. This section also includes the **Pre-collection estimate** subsection that displays the total number of items and size of the estimated search results. You have the option to add these items to the review set for inspection.
     - **Collection parameters** section: This section includes information about additional locations, when the collection was created and modified, and a summary of the estimate items, size, and any unindexed items and size.
 
 - Select the **Data sources** tab to view a list of custodians and non-custodial data sources) that were searched in the collection. Any additional content locations that were search are listed under **Locations** on the **Summary** tab.

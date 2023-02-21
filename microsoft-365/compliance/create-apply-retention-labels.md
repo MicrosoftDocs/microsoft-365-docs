@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 06/26/2020
+ms.date: 02/18/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -285,6 +285,13 @@ However, it can take up to two days for content explorer to show the items that 
 ## Locking the policy to prevent changes
 
 If you need to ensure that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
+
+## Troubleshooting retention label policies
+
+If your retention label policies aren't working as expected or you see errors related to these policies, use the following troubleshooting resources:
+
+- [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
+- [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)
 
 ## Next steps
 
