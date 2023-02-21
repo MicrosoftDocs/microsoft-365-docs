@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about quarantine in Exchange Online Protection (EOP) that holds potentially dangerous or unwanted messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/02/2022
+ms.date: 1/31/2023
 ---
 
 # Quarantined email messages in EOP and Defender for Office 365
