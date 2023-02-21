@@ -24,7 +24,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of the Windows 365 (Cloud PCs) page in Microsoft 365 Lighthouse  
   
-Windows 365 is a cloud-based service that lets Microsoft Endpoint Manager (MEM) admins provision and manage Cloud PCs for their users who have a Windows 365 license. Windows 365 is fully integrated with MEM for device management, and with Microsoft 365 Lighthouse for Managed Service Provider (MSP) management of Cloud PCs across all their customer tenants.
+Windows 365 is a cloud-based service that lets Microsoft Intune admins provision and manage Cloud PCs for their users who have a Windows 365 license. Windows 365 is fully integrated with MEM for device management, and with Microsoft 365 Lighthouse for Managed Service Provider (MSP) management of Cloud PCs across all their customer tenants.
 
 For more information about Windows 365, see [What is Windows 365?](/windows-365/overview) For a list of Windows 365 requirements, see [Requirements for Windows 365](/windows-365/enterprise/requirements).
 

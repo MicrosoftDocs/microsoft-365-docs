@@ -78,11 +78,11 @@ You can enable attack surface reduction rules by using any of these methods:
 
 - [Microsoft Intune](#intune)
 - [Mobile Device Management (MDM)](#mdm)
-- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Microsoft Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [Group Policy](#group-policy)
 - [PowerShell](#powershell)
 
-Enterprise-level management such as Intune or Microsoft Endpoint Manager is recommended. Enterprise-level management will overwrite any conflicting Group Policy or PowerShell settings on startup.
+Enterprise-level management such as Intune or Microsoft Configuration Manager is recommended. Enterprise-level management will overwrite any conflicting Group Policy or PowerShell settings on startup.
 
 ## Exclude files and folders from ASR rules
 
@@ -120,7 +120,7 @@ This section provides configuration details for the following configuration meth
 - [Intune](#intune)
 - [MEM](#mem)
 - [MDM](#mdm)
-- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Microsoft Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [Group Policy](#group-policy)
 - [PowerShell](#powershell)
 
@@ -154,9 +154,9 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 ### MEM
 
-You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
+You can use Microsoft Intune OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
 
-1. Open the Microsoft Endpoint Manager (MEM) admin center. In the **Home** menu, click  **Devices**, select **Configuration profiles**, and then click **Create profile**.
+1. Open the Microsoft Intune admin center. In the **Home** menu, click  **Devices**, select **Configuration profiles**, and then click **Create profile**.
 
     :::image type="content" source="images/mem01-create-profile.png" alt-text="The Create profile page in the Microsoft Intune admin center portal" lightbox="images/mem01-create-profile.png":::
 
@@ -258,9 +258,9 @@ Example:
 > [!NOTE]
 > Be sure to enter OMA-URI values without spaces.
 
-### Microsoft Endpoint Configuration Manager
+### Microsoft Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
+1. In Microsoft Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
 
 2. Select **Home** \> **Create Exploit Guard Policy**.
 

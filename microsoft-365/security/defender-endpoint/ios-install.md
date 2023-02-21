@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Defender for Endpoint on iOS with Microsoft Endpoint Manager
+title: Deploy Microsoft Defender for Endpoint on iOS with Microsoft Intune
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on iOS using an app.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 12/18/2020
 ---
 
-# Deploy Microsoft Defender for Endpoint on iOS with Microsoft Endpoint Manager
+# Deploy Microsoft Defender for Endpoint on iOS with Microsoft Intune
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.date: 12/18/2020
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-This topic describes deploying Defender for Endpoint on iOS on Microsoft Endpoint Manager (also known as Intune) Company Portal enrolled devices. For more information about Microsoft Endpoint Manager device enrollment, see [Enroll iOS/iPadOS devices in Microsoft Endpoint Manager](/mem/intune/enrollment/ios-enroll).
+This topic describes deploying Defender for Endpoint on iOS on Microsoft Intune Company Portal enrolled devices. For more information about Microsoft Intune device enrollment, see [Enroll iOS/iPadOS devices in Microsoft Intune](/mem/intune/enrollment/ios-enroll).
 
 ## Before you begin
 
@@ -45,7 +45,7 @@ This topic describes deploying Defender for Endpoint on iOS on Microsoft Endpoin
 
 This section covers:
 
-1. **Deployment steps** (applicable for both **Supervised** and **Unsupervised** devices)- Admins can deploy Defender for Endpoint on iOS via Microsoft Endpoint Manager Company Portal. This step is not needed for VPP (volume purchase) apps.
+1. **Deployment steps** (applicable for both **Supervised** and **Unsupervised** devices)- Admins can deploy Defender for Endpoint on iOS via Microsoft Intune Company Portal. This step is not needed for VPP (volume purchase) apps.
 
 1. **Complete deployment** (only for Supervised devices)- Admins can select to deploy any one of the given profiles.
     1. **Zero touch (Silent) Control Filter** - Provides Web Protection without the local loopback VPN and also enables silent onboarding for users. App is automatically installed  and activated without the need for user to open the app.
@@ -57,7 +57,7 @@ This section covers:
 
 ## Deployment steps (applicable for both Supervised and Unsupervised devices)
 
-Deploy Defender for Endpoint on iOS via Microsoft Endpoint Manager Company Portal.
+Deploy Defender for Endpoint on iOS via Microsoft Intune Company Portal.
 
 ### Add iOS store app
 
@@ -72,7 +72,7 @@ Deploy Defender for Endpoint on iOS via Microsoft Endpoint Manager Company Porta
 1. In the **Assignments** section, go to the **Required** section and select **Add group**. You can then choose the user group(s) that you would like to target Defender for Endpoint on iOS app. Click **Select** and then **Next**.
 
     > [!NOTE]
-    > The selected user group should consist of Microsoft Endpoint Manager (Intune) enrolled users.
+    > The selected user group should consist of Microsoft Intune enrolled users.
 
    :::image type="content" source="images/ios-deploy-2.png" alt-text="The Add group tab in the Microsoft Intune admin center" lightbox="images/ios-deploy-2.png":::
 
@@ -88,7 +88,7 @@ The Microsoft Defender for Endpoint on iOS app has specialized ability on superv
 
 Admins can use the following steps to configure supervised devices.
 
-### Configure Supervised Mode via Microsoft Endpoint Manager (Intune)
+### Configure Supervised Mode via Microsoft Intune
 
 Configure the supervised mode for Defender for Endpoint app through an App configuration policy and Device configuration profile.
 
@@ -99,21 +99,21 @@ Configure the supervised mode for Defender for Endpoint app through an App confi
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** \> **App configuration policies** \> **Add**. Select **Managed devices**.
 
-   :::image type="content" source="images/ios-deploy-4.png" alt-text="Image of Microsoft Endpoint Manager Admin Center4." lightbox="images/ios-deploy-4.png":::
+   :::image type="content" source="images/ios-deploy-4.png" alt-text="Image of Microsoft Intune admin center4." lightbox="images/ios-deploy-4.png":::
 
 1. In the *Create app configuration policy* page, provide the following information:
     - Policy Name
     - Platform: Select iOS/iPadOS
     - Targeted app: Select **Microsoft Defender for Endpoint** from the list
 
-    :::image type="content" source="images/ios-deploy-5.png" alt-text="Image of Microsoft Endpoint Manager Admin Center5." lightbox="images/ios-deploy-5.png":::
+    :::image type="content" source="images/ios-deploy-5.png" alt-text="Image of Microsoft Intune admin center5." lightbox="images/ios-deploy-5.png":::
 
 1. In the next screen, select **Use configuration designer** as the format. Specify the following properties:
     - Configuration Key: `issupervised`
     - Value type: String
     - Configuration Value: `{{issupervised}}`
 
-    :::image type="content" source="images/ios-deploy-6.png" alt-text="Image of Microsoft Endpoint Manager Admin Center6." lightbox="images/ios-deploy-6.png":::
+    :::image type="content" source="images/ios-deploy-6.png" alt-text="Image of Microsoft Intune admin center6." lightbox="images/ios-deploy-6.png":::
 
 1. Select **Next** to open the **Scope tags** page. Scope tags are optional. Select **Next** to continue.
 
@@ -141,7 +141,7 @@ Once the profile has been downloaded, deploy the custom profile. Follow the step
 1. Navigate to **Devices** > **iOS/iPadOS** > **Configuration profiles** > **Create Profile**.
 1. Select **Profile Type** > **Templates** and **Template name** > **Custom**.
 
-   :::image type="content" source="images/ios-deploy-7.png" alt-text="Image of Microsoft Endpoint Manager Admin Center7." lightbox="images/ios-deploy-7.png":::
+   :::image type="content" source="images/ios-deploy-7.png" alt-text="Image of Microsoft Intune admin center7." lightbox="images/ios-deploy-7.png":::
 
 1. Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded from the previous step.
 1. In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Select **Next**.

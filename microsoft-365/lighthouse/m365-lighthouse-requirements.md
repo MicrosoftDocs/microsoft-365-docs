@@ -52,7 +52,7 @@ For customer data to show up in reports on user management pages, including Risk
 
 ## Requirements for enabling threat management
 
-To view customer tenant devices and threats on the threat management pages, you must enroll all customer tenant devices in Microsoft Endpoint Manager (MEM) and protect them by running Microsoft Defender Antivirus.
+To view customer tenant devices and threats on the threat management pages, you must enroll all customer tenant devices in Microsoft Intune and protect them by running Microsoft Defender Antivirus.
 
 For more information, see [Enroll devices in Microsoft Intune](/mem/intune/enrollment/).
 

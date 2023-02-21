@@ -65,7 +65,7 @@ To manage external storage, use removable storage access control instead of [dev
 **Windows 10 and Windows 11 support details**:
 
 - Applied at the device level: the same policy applies for any logged on user.
-- Supports Microsoft Endpoint Manager and Group Policy Objects.
+- Supports Microsoft Configuration Manager and Group Policy Objects.
 - For more information on Windows, see [How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
 
 **Supported Platform** - Windows 10, Windows 11

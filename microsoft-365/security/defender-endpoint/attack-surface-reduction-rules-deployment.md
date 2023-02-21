@@ -99,14 +99,14 @@ As outlined in [Use attack surface reduction rules to prevent malware infection]
 Although multiple methods of implementing ASR rules are possible, this guide is based on an infrastructure consisting of:
 
 - Azure Active Directory
-- Microsoft Endpoint Management (MEM)
+- Microsoft Intune
 - Windows 10 and Windows 11 devices
 - Microsoft Defender for Endpoint E5 or Windows E5 licenses
 
 To take full advantage of ASR rules and reporting, we recommend using a Microsoft 365 Defender E5 or Windows E5 license, and A5. Learn more: [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
 
 > [!NOTE]
-> There are multiple methods to configure ASR rules. ASR rules can be configured using: Microsoft Endpoint Manager (MEM), PowerShell, Group Policy, Microsoft Endpoint Configuration Manager (ConfigMgr), MEM OMA-URI.
+> There are multiple methods to configure ASR rules. ASR rules can be configured using: Microsoft Intune, PowerShell, Group Policy, Microsoft Endpoint Configuration Manager (ConfigMgr), MEM OMA-URI.
 > If you are using a different infrastructure configuration than what is listed for _Infrastructure requirements_ (above), you can learn more about deploying attack surface reduction rules using other configurations here: [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 
 ### ASR rules dependencies

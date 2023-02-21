@@ -105,7 +105,7 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
 
 Follow the below steps for setting up MDM configuration for enrolled devices for Network protection.
 
-1. In Microsoft Endpoint Manager Admin, navigate to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+1. In the Microsoft Intune admin center, navigate to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
 1. Provide name and description for the policy. In Platform choose **iOS/iPad**.
 1. In targeted app choose **Microsoft Defender for Endpoint**.
 1. In the Settings page, choose configuration settings format **Use configuration designer**.
@@ -163,7 +163,7 @@ Microsoft Defender for Endpoint can be configured to send threat signals to be u
 
 The steps to set up app protection policies with Microsoft Defender for Endpoint are below:
 
-1. Set up the connection from your Microsoft Endpoint Manager tenant to Microsoft Defender for Endpoint. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Tenant Administration** \> **Connectors and tokens** \> **Microsoft Defender for Endpoint** (under Cross platform) or **Endpoint Security** \> **Microsoft Defender for Endpoint** (under Setup) and turn on the toggles under **App Protection Policy Settings for iOS**.
+1. Set up the connection from your Microsoft Intune tenant to Microsoft Defender for Endpoint. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Tenant Administration** \> **Connectors and tokens** \> **Microsoft Defender for Endpoint** (under Cross platform) or **Endpoint Security** \> **Microsoft Defender for Endpoint** (under Setup) and turn on the toggles under **App Protection Policy Settings for iOS**.
 
 2. Select **Save**. You should see **Connection status** is now set to **Enabled**.
 

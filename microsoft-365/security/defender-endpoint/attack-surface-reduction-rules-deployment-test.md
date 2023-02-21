@@ -50,9 +50,9 @@ Begin the testing phase by turning on the ASR rules with the rules set to Audit,
 
 ### Configure ASR rules using MEM
 
-You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure custom ASR rules.
+You can use Microsoft Intune Endpoint Security to configure custom ASR rules.
 
-1. Open [Microsoft Intune admin center](https://endpoint.microsoft.com/#home).
+1. Open the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Go to **Endpoint Security** > **Attack surface reduction**.
 3. Select **Create Policy**.
 4. In **Platform**, select **Windows 10 and later**, and in **Profile**, select **Attack surface reduction rules**.
@@ -187,11 +187,11 @@ ASR rules now provide the capability to configure rule-specific exclusions, know
 
 > [!NOTE]
 > Per-rule exclusions cannot currently be configured by using PowerShell or Group Policy.
-> In Microsoft Endpoint Manager (MEM), per-rule exclusions cannot be added to the existing policy. As it is currently implemented, in order to configure per-rule exclusions, you must create a new policy in MEM to replace the existing policy.
+> In Microsoft Intune, per-rule exclusions cannot be added to the existing policy. As it is currently implemented, in order to configure per-rule exclusions, you must create a new policy in MEM to replace the existing policy.
 
 To configure per-rule exclusions:
 
-1. Open [Microsoft Intune admin center](https://endpoint.microsoft.com/#home) console, and navigate to **Home** > **Endpoint security** > **Attack surface reduction**.
+1. Open the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), and navigate to **Home** > **Endpoint security** > **Attack surface reduction**.
 1. If it is not already configured, set the rule for which you want to configure exclusions to **Block*.
 1. In **ASR Only Per Rule Exclusion**, click the toggle to change from **Not configured** to **Configured.**
 1. Enter the names of the files or application that you want to exclude.
