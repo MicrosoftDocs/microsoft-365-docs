@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 08/04/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -131,4 +131,3 @@ To help you track the retention labels with this configuration:
 - [Auditing retention actions](retention.md#auditing-retention-actions)
 
 To confirm there weren't any failures or errors with your flow, go to the [Power Automate dashboard](https://make.powerautomate.com), select **My flows**, and then select your flow to review the 28-day run history.
-

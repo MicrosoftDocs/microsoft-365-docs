@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.date:
+ms.date: 09/14/2021
 ms.localizationpriority: medium
 ms.collection:
 - tier1
@@ -19,7 +19,6 @@ search.appverid:
 - MET150
 description: Get an overview of creating exact data match based sensitive information types.
 ms.custom: seo-marvel-apr2020
-
 ---
 # Get started with exact data match based sensitive information types
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 02/21/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -58,21 +58,19 @@ Although a retention policy can support multiple services that are identified as
 - Yammer community messages
 - Yammer user messages
 
-If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. This means that the instructions to follow depend on whether you need to include the Teams or Yammer locations:
-
-- [Instructions for a retention policy for Teams locations](#retention-policy-for-teams-locations)
-- [Instructions for a retention policy for Yammer locations](#retention-policy-for-yammer-locations)
-- [Instructions for a retention policy for locations other than Teams and Yammer](#retention-policy-for-locations-other-than-teams-and-yammer)
+If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. This means that the instructions to follow depend on whether you need to include the Teams or Yammer locations.
 
 > [!NOTE]
 > When you use adaptive policies instead of static policies, you can configure a single retention policy to include both Teams and Yammer locations. This isn't the case for static policies where Teams and Yammer locations require their own retention policy.
 
 When you've more than one retention policy, and when you also use retention labels, see [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) to understand the outcome when multiple retention settings apply to the same content.
 
-### Retention policy for Teams locations
+Select the tab for instructions to create a retention policy for Teams, Yammer, or the other supported services (Exchange, SharePoint, OneDrive, Microsoft 365 Groups, Skype for Business):
+
+# [Retention policy for Teams](#tab/teams-retention)
 
 > [!NOTE]
-> Retention policies support [shared channels](/MicrosoftTeams/shared-channels). When you configure retention settings for the **Teams channel message** location, if a team has any shared channels, they inherit retention settings from their parent team.
+> Retention policies for Teams support [shared channels](/MicrosoftTeams/shared-channels). When you configure retention settings for the **Teams channel message** location, if a team has any shared channels, they inherit retention settings from their parent team.
 > 
 > Retention policies also support newly created call data records, which are system-generated messages that contain [metadata for meetings and calls](/MicrosoftTeams/ediscovery-investigation#teams-metadata). All call data records are always included with the **Teams chats** location, even call data records for Teams channel messages and Teams private channel messages.
 
@@ -111,7 +109,6 @@ For technical details about how retention works for Teams, including what elemen
 
 - To include newly created call data records for Teams channel messages and Teams private channel messages, you must select the **Teams chats** location, instead of the **Teams channel messages** and **Teams private channel messages** locations.
 
-
 #### Additional retention policy needed to support Teams
 
 Teams is more than just chats and channel messages. If you have teams that were created from a Microsoft 365 group (formerly Office 365 group), you should additionally configure a retention policy that includes that Microsoft 365 group by using the **Microsoft 365 Groups** location. This retention policy applies to content in the group's mailbox, site, and files.
@@ -127,7 +124,7 @@ If you have team sites that aren't connected to a Microsoft 365 group, you need 
 
 It's possible that a retention policy that's applied to Microsoft 365 groups, SharePoint sites, or OneDrive accounts could delete a file that's referenced in a Teams chat or channel message before those messages get deleted. In this scenario, the file still displays in the Teams message, but when users select the file, they get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint or OneDrive.
 
-### Retention policy for Yammer locations
+# [Retention policy for Yammer](#tab/yammer-retention)
 
 > [!NOTE]
 > Retention policies for Yammer currently do not inform users when messages are deleted as a result of a retention policy.
@@ -174,7 +171,7 @@ This location will also include files that are uploaded to Yammer communities. T
 
 It's possible that a retention policy that's applied to SharePoint sites could delete a file that's referenced in a Yammer message before those messages get deleted. In this scenario, the file still displays in the Yammer message, but when users select the file, they get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint.
 
-### Retention policy for locations other than Teams and Yammer
+# [Retention policy for all other services](#tab/other-retention)
 
 Use the following instructions for retention policies that apply to any of these services:
 
@@ -208,6 +205,8 @@ Use the following instructions for retention policies that apply to any of these
 
 6. Complete the configuration and save your settings.
 
+---
+
 ## How long it takes for retention policies to take effect
 
 When you create and submit a retention policy, it can take up to seven days for the retention policy to be applied:
@@ -237,6 +236,13 @@ First, the retention policy needs to be distributed to the locations that you se
 When settings from the retention policy are already applied to content, a change in configuration to the policy will be automatically applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the policy is created and saved, which include the name of the retention policy, the scope type (adaptive or static), and the retention settings except the retention period.
+
+## Troubleshooting retention policies
+
+If your retention policies aren't working as expected or you see errors related to your retention policies, use the following troubleshooting resources:
+
+- [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
+- [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)
 
 ## Next steps
 
