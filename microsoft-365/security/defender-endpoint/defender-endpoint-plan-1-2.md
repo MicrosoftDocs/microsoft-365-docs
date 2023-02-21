@@ -68,7 +68,7 @@ Defender for Endpoint Plan 1 and 2 (standalone), Defender for Business (standalo
 
 ## Mixed-licensing scenarios
 
-A mixed-licensing scenario is a situation in which an organization is using a mix of Defender for Endpoint Plan 1 and Plan 2 licenses. The following table describes examples of mixed-licensing scenarios: 
+A mixed-licensing scenario is a situation in which an organization is using a mix of subscriptions, such as Defender for Endpoint Plan 1 and Plan 2. The following table describes examples of mixed-licensing scenarios: 
 
 | Scenario | Description |
 |:---|:---|

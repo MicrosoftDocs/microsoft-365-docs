@@ -87,19 +87,12 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 
 ## Validate that a device is receiving only Defender for Endpoint Plan 1 capabilities
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Assets** > **Devices**, and select a device. A flyout opens.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Assets** > **Devices**.
 
-2. In the flyout, select the link to view the device details page.
-
-3. On the device details page, confirm the following conditions:
-
-   - You do not see vulnerabilities or security recommendations for the device; and 
-   - A new field called **Device subscription state** has been added to the device properties. 
-   
-Additionally, you can run a [simulated attack](attack-simulations.md) and confirm that it doesn't result in [EDR detections](overview-endpoint-detection-response.md).
+2. Select a device that is tagged with `License MDE P1`. You should see that Defender for Endpoint Plan 1 is assigned to the device.
 
 > [!NOTE]
-> Devices that are receiving Defender for Endpoint Plan 2 capabilities will have vulnerabilities and security recommendations listed. And running a simulated attack will result in alerts and EDR detections.
+> Devices that are assigned Defender for Endpoint Plan 1 capabilities will not have vulnerabilities or security recommendations listed.
 
 ## Review license usage
 
