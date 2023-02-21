@@ -4,6 +4,7 @@ ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer:
+ms.date: 11/04/2021
 audience: admin
 ms.topic: article
 ms.custom:
@@ -12,7 +13,6 @@ search.appverid: MET150
 ms.collection:
 ms.localizationpriority: medium
 description: Learn how to manage sharing for Microsoft Whiteboard.
-
 ---
 
 # Manage sharing for Microsoft Whiteboard

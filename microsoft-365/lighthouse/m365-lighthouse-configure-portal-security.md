@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: vivkuma
+ms.date: 07/09/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse

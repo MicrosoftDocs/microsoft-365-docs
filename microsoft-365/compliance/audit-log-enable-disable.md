@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -52,13 +52,13 @@ Your organization may have reasons for not wanting to record and retain audit lo
 To verify that auditing is turned on for your organization, you can run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
-Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+Get-AdminAuditLogConfig | Format-List UnifiedAuditLogIngestionEnabled
 ```
 
 A value of `True` for the *UnifiedAuditLogIngestionEnabled* property indicates that auditing is turned on. A value of `False` indicates that auditing isn't turned on.
 
-> [!NOTE]
-> Be sure to run the previous command in Exchange Online PowerShell. You can't use Security & Compliance PowerShell to run this command.
+> [!IMPORTANT]
+> Be sure to run the previous command in Exchange Online PowerShell. Although the **Get-AdminAuditLogConfig** cmdlet is also available in Security & Compliance PowerShell, the *UnifiedAuditLogIngestionEnabled* property is always `False`, even when auditing is turned on.
 
 ## Turn on auditing
 
@@ -66,11 +66,9 @@ If auditing isn't turned on for your organization, you can turn it on in the com
   
 ### Use the compliance portal to turn on auditing
 
-1. Go to <https://compliance.microsoft.com> and sign in.
+1. In the Microsoft Purview compliance portal at <https://compliance.microsoft.com>, go to **Solutions** \> **Audit**. Or to go directly to the **Audit** page, use <https://compliance.microsoft.com/auditlogsearch>.
 
-2. In the left navigation pane of the compliance portal, select **Audit**.
-
-   If auditing isn't turned on for your organization, a banner is displayed prompting you start recording user and admin activity.
+2. If auditing isn't turned on for your organization, a banner is displayed prompting you start recording user and admin activity.
 
    ![Banner on Audit page.](../media/AuditingBanner.png)
 
