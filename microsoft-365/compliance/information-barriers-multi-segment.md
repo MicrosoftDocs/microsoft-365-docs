@@ -92,6 +92,8 @@ With segments and policies defined, the North School District applies the polici
     ```
 
     If the value of the `InformationBarrierMode` property is *SingleSegment*, you can enable multi-segment support in Step 2. If the value of the `InformationBarrierMode` property is *MultiSegment*, you can skip Step 2 in this section. Multi-segment support is already enabled for your organization.
+    
+    
 
     If the value of the `InformationBarrierMode` property is *Legacy*, enabling multi-segment isn't supported for your organization. *Legacy* organizations will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers)
 
