@@ -217,7 +217,15 @@
               - name: View details and results
                 href: m365d-autoir-results.md
               - name: Address false positives and negatives
-                href: m365d-autoir-report-false-positives-negatives.md   
+                href: m365d-autoir-report-false-positives-negatives.md
+       - name: Manage automatic attack disruption
+         items: 
+              - name: Overview
+                href: automatic-attack-disruption.md
+              - name: Configure capabilities
+                href: configure-attack-disruption.md
+              - name: View details and results
+                href: autoad-results.md             
        - name: Search for threats with advanced hunting
          items: 
              - name: Overview
