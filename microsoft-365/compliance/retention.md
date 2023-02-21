@@ -74,7 +74,7 @@ When content has retention settings assigned to it, that content remains in its 
 > [!NOTE]
 > Because the Preservation Hold library is included in the site's storage quota, you might need to increase your storage when you use retention settings for SharePoint and Microsoft 365 groups.
 >
-These secure locations and the retained content are not visible to most people. In most cases, people do not even need to know that their content is subject to retention settings.
+These secure locations and the retained content aren't visible to most people. In most cases, people don't even need to know that their content is subject to retention settings.
 
 For more detailed information about how retention settings work for different workloads, see the following articles:
 
@@ -161,7 +161,7 @@ With retention labels, you can:
 
 - **Mark items as a record** as part of your [records management](records-management.md) strategy. When this labeled content remains in Microsoft 365, further restrictions are placed on the content that might be needed for regulatory reasons. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
-Retention labels, unlike [sensitivity labels](sensitivity-labels.md), do not persist if the content is moved outside Microsoft 365.
+Retention labels, unlike [sensitivity labels](sensitivity-labels.md), don't persist if the content is moved outside Microsoft 365.
 
 #### Classifying content without applying any actions
 
@@ -200,7 +200,7 @@ Retention labels can be published to different locations, depending on what the 
 |Auto-applied based on keywords or a query  |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  |
 |Auto-applied to cloud attachments  |SharePoint, OneDrive, Microsoft 365 Groups  |
 
-Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete content from these locations, use retention policies instead.
+Exchange public folders, Skype, Teams and Yammer messages don't support retention labels. To retain and delete content from these locations, use retention policies instead.
 
 #### Only one retention label at a time
 
@@ -349,7 +349,7 @@ Advantages of using static scopes over adaptive scopes:
 
 - Simpler configuration if you want all instances automatically selected for a workload.
 
-    For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers of instances that you have to specify are low and do not change. However, when these number of instances start to increase and you have frequent changes in your organization that require you to reconfigure your policies, adaptive scopes can be simpler to configure and much easier to maintain.
+    For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers of instances that you have to specify are low and don't change. However, when these number of instances start to increase and you have frequent changes in your organization that require you to reconfigure your policies, adaptive scopes can be simpler to configure and much easier to maintain.
 
 - The **Skype for Business** and **Exchange public folders** locations don't support adaptive scopes. For those locations, you must use a static scope.
 
