@@ -71,6 +71,8 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
 ## Turn on block at first sight with Microsoft Intune
 
+### Create a device configuration profile
+
 1. In the Microsoft Intune admin center (<https://endpoint.microsoft.com>), navigate to **Devices** \> **Configuration profiles**.
 
 2. Select or create a profile using the **Device restrictions** profile type.
@@ -92,7 +94,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 > - For more information about configuring Microsoft Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
 > - For a list of Microsoft Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
-## Turn on block at first sight with Microsoft Intune
+### Create an endpoint security policy
 
 1. In the Microsoft Intune admin center (<https://endpoint.microsoft.com>), go to **Endpoint security** \> **Antivirus**.
 

@@ -78,7 +78,7 @@ You can enable attack surface reduction rules by using any of these methods:
 
 - [Microsoft Intune](#intune)
 - [Mobile Device Management (MDM)](#mdm)
-- [Microsoft Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Microsoft Configuration Manager](#microsoft-configuration-manager)
 - [Group Policy](#group-policy)
 - [PowerShell](#powershell)
 
@@ -104,7 +104,7 @@ ASR rules support environment variables and wildcards. For information about usi
 
 1. If a conflicting policy is applied via MDM and GP, the setting applied from MDM will take precedence.
 
-2. Attack surface reduction rules for MEM-managed devices now support behavior for merger of settings from different policies, to create a superset of policy for each device. Only the settings that are not in conflict are merged, while those that are in conflict are not added to the superset of rules. Previously, if two policies included conflicts for a single setting, both policies were flagged as being in conflict, and no settings from either profile would be deployed. Attack surface reduction rule merge behavior is as follows:
+2. Attack surface reduction rules for managed devices now support behavior for merger of settings from different policies, to create a superset of policy for each device. Only the settings that are not in conflict are merged, while those that are in conflict are not added to the superset of rules. Previously, if two policies included conflicts for a single setting, both policies were flagged as being in conflict, and no settings from either profile would be deployed. Attack surface reduction rule merge behavior is as follows:
    - Attack surface reduction rules from the following profiles are evaluated for each device to which the rules apply:
      - Devices > Configuration policy > Endpoint protection profile > **Microsoft Defender Exploit Guard** > [Attack Surface Reduction](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
      - Endpoint security > **Attack surface reduction policy** > [Attack surface reduction rules](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
@@ -118,9 +118,9 @@ ASR rules support environment variables and wildcards. For information about usi
 This section provides configuration details for the following configuration methods:
 
 - [Intune](#intune)
-- [MEM](#mem)
+- [Custom profile in Intune](#custom-profile-in-intune)
 - [MDM](#mdm)
-- [Microsoft Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Microsoft Configuration Manager](#microsoft-configuration-manager)
 - [Group Policy](#group-policy)
 - [PowerShell](#powershell)
 
@@ -152,7 +152,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 4. Select **Next** on the three configuration panes, then select **Create** if you're creating a new policy or **Save** if you're editing an existing policy.
 
-### MEM
+### Custom profile in Intune
 
 You can use Microsoft Intune OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
 

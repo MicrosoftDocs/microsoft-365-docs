@@ -62,7 +62,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
 - **Enable Microsoft Defender for Endpoint on Android Connector for App Protection Policy (APP)**.
 
-  Configure the connector on Intune Microsoft Intune for App protection policies:
+  Configure the connector on Microsoft Intune for App protection policies:
 
   a. Go to **Tenant Administration > Connectors and Tokens > Microsoft Defender for Endpoint**.
 
