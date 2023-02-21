@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 09/17/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -307,7 +307,7 @@ You can customize the text for policy tips separately from the email notificatio
 ## More information
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [DLP policy conditions, exceptions, and actions (preview)](./dlp-microsoft-teams.md)
 - [Create a DLP policy to protect documents with FCI or other properties](protect-documents-that-have-fci-or-other-properties.md)
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)

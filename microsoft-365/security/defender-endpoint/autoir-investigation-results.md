@@ -23,6 +23,7 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
+ms.date: 03/15/2021
 ---
 
 # View the details and results of an automated investigation

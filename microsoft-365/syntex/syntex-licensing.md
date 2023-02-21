@@ -3,9 +3,10 @@ title: Licensing for Microsoft Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: ssquires
+ms.date: 08/02/2021
 manager: serdars
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic

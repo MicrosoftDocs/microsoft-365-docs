@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 01/20/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 09/17/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -58,7 +58,7 @@ To quickly refine the default DLP policy, you can choose to have it:
     
 - Block access to the content containing the sensitive information, but allow the user to override and share or send if they need to.
     
-For more information on incident reports or restricting access, see [Data loss prevention reference](data-loss-prevention-policies.md).
+For more information on incident reports or restricting access, see [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference).
   
 If you want to change these options later, you can edit the default DLP policy at any time - see the next section.
   
@@ -86,4 +86,3 @@ Note that rule matches can take up to 48 hours to be available to the widget, so
   
 Finally, after you use the widget to refine the default DLP policy, the widget disappears from the **Home** page. 
   
-

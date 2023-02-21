@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: chrisda
 author: dansimp
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -13,9 +12,11 @@ search.appverid:
   - MET150manage-tenant-allows.md
 ms.collection:
   - m365-security
+  - tier1
 description: Admins can learn how to allow or block URLs in the Tenant Allow/Block List in the Security portal.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/05/2022
 ---
 
 # Allow or block URLs using the Tenant Allow/Block List

@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: Admin
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MOE150
@@ -16,11 +14,13 @@ search.appverid:
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
   - m365-security
+  - tier2
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about the spoof intelligence insight in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/01/2022
 ---
 
 # Spoof intelligence insight in EOP

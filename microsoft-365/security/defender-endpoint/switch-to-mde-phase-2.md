@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 01/12/2023
+ms.date: 02/16/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -71,6 +71,8 @@ As you're making the switch to Defender for Endpoint, you might need to take cer
    - Set the DWORD's value to **1**.
 
    - Under **Base**, select **Hexadecimal**.
+
+If Microsoft Defender Antivirus features and installation files were previously removed from Windows Server 2016, follow the guidance in [Configure a Windows Repair Source](/windows-hardware/manufacture/desktop/configure-a-windows-repair-source) to restore the feature installation files.
 
 > [!NOTE]
 > After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on Windows Server. To validate that passive mode was set as expected, search for **Event 5007** in the **Microsoft-Windows-Windows Defender Operational** log (located at `C:\Windows\System32\winevt\Logs`), and confirm that either the **ForceDefenderPassiveMode** or **PassiveMode** registry keys were set to **0x1**.

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -35,8 +35,7 @@ To use Microsoft Purview Extension, the device must be onboarded into endpoint D
 
 - [Learn about Microsoft Purview Firefox Extension](dlp-firefox-extension-learn.md)
 - [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 - [Onboarding tools and methods for Windows 10 devices](device-onboarding-overview.md)
@@ -240,7 +239,7 @@ Now that you have onboarded devices and can view the activity data in Activity e
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
 - [Onboarding tools and methods for Windows 10 machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
