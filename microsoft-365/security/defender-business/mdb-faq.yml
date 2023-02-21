@@ -11,8 +11,8 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.localizationpriority: medium
-  ms.date: 01/31/2023
-  ms.reviewer: efratka
+  ms.date: 02/07/2023
+  ms.reviewer: efratka. jomaun. oogunrinde
   f1.keywords: NOCSH 
   ms.collection: 
   - SMB
@@ -103,7 +103,7 @@ sections:
 
       - question: How do I configure attack surface reduction rules and capabilities in Defender for Business?
         answer: |
-          You can configure standard protection rules in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can also use Intune to configure your attack surface reduction policies. See [Attack surface reduction capabilities in Defender for Business](mdb-asr.md).
+          Use Intune to configure your attack surface reduction rules. Other attack surface reduction capabilities can be configured in the Microsoft 365 Defender protal. See [Attack surface reduction capabilities in Defender for Business](mdb-asr.md).
 
       - question: How does Microsoft Intune work with Defender for Business? 
         answer: |

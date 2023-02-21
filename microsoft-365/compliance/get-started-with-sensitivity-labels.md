@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 02/13/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -78,7 +78,7 @@ These permissions are required only to create and configure sensitivity labels a
 
 ## Support for administrative units
 
-Now in preview, sensitivity labels support [administrative units that have been configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
+Now rolling out in preview, sensitivity labels support [administrative units that have been configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
 
 - You can assign administrative units to members of role groups that are used with Microsoft Purview Information Protection. Edit these role groups and select individual members, and then the **Assign admin units** option to select administrative units from Azure Active Directory. These administrators are now restricted to managing just the users in those administrative units.
 

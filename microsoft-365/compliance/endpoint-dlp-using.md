@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -416,7 +416,7 @@ In this scenario, we'll define a list of VPNs that hybrid workers use for access
 
 ### Create and use a Network exception
 
-Network exceptions enables you to configure Allow, Audit only, Block with override, and Block actions to the file activities based on the network that users are accessing the file from. You can select from the [VPN settings](dlp-configure-endpoint-settings.md#vpn-settings-preview) list you defined and **Corporate network** option. The actions can be applied individually or collectively to these user activities:
+Network exceptions enables you to configure Allow, Audit only, Block with override, and Block actions to the file activities based on the network that users are accessing the file from. You can select from the [VPN settings](dlp-configure-endpoint-settings.md#vpn-settings) list you defined and **Corporate network** option. The actions can be applied individually or collectively to these user activities:
 
 - Copy to clipboard
 - Copy to a USB removable device
@@ -503,4 +503,3 @@ Get-VpnConnection
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
 - [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
 - [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
-
