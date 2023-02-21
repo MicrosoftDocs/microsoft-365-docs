@@ -23,13 +23,13 @@ ms.collection:
 
 # Information barriers
 
-Microsoft 365 enables communication and collaboration across groups and organizations and supports ways to restrict communication and collaboration among specific groups of users when necessary. This may include situations or scenarios where you want to restrict communication and collaboration between two groups to avoid a conflict of interest from occurring in your organization. This may also include situations when you need to restrict communication and collaboration between certain people inside your organization to safeguard internal information.
+Microsoft 365 enables communication and collaboration across groups and organizations and supports ways to restrict communication and collaboration among specific groups of users when necessary. This requirement may include situations or scenarios where you want to restrict communication and collaboration between two groups to avoid a conflict of interest from occurring in your organization. This scenario may also include situations when you need to restrict communication and collaboration between certain people inside your organization to safeguard internal information.
 
-Microsoft Purview Information Barriers (IB) is supported in Microsoft Teams, SharePoint Online, and OneDrive for Business. A compliance administrator or IB administrator can define policies to allow or prevent communications between groups of users in Microsoft Teams. IB policies can be used for situations like these:
+Microsoft Purview Information Barriers (IB) is supported in Microsoft Teams, SharePoint Online, and OneDrive for Business. A compliance administrator or IB administrator can define policies to allow or prevent communications between groups of users in Microsoft Teams. Use IB policies for situations like these:
 
-- User in the day trader group should not communicate or share files with the marketing team
-- Finance personnel working on confidential company information should not communicate or share files with certain groups within their organization
-- An internal team with trade secret material should not call or chat online with people in certain groups within their organization
+- User in the day trader group shouldn't communicate or share files with the marketing team
+- Finance personnel working on confidential company information shouldn't communicate or share files with certain groups within their organization
+- An internal team with trade secret material shouldn't call or chat online with people in certain groups within their organization
 - A research team should only call or chat online with a product development team
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
