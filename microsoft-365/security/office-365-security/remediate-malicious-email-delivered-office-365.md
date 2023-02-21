@@ -4,7 +4,9 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: conceptual
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier1
 audience: admin
 f1.keywords: 
   - NOCSH
@@ -13,7 +15,7 @@ search.appverid: MET150
 description: Threat remediation
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 07/10/2020
+ms.date: 1/31/2023
 ---
 
 # Remediate malicious email delivered in Office 365
