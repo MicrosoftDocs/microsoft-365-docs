@@ -21,10 +21,10 @@ ms.collection:
 
 # Manage Microsoft Defender for Endpoint subscription settings across devices
 
-A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is a situation in which an organization is using a mix of Defender for Endpoint Plan 1 and Plan 2 licenses. Until recently, mixed-licensing scenarios weren't supported; in cases of multiple subscriptions, the highest functional subscription would take precedence for your tenant. Now, **the ability to manage your subscription settings to accommodate mixed licensing scenarios is currently in preview**! These capabilities enable you to:
+A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is a situation in which an organization is using a mix of Defender for Endpoint Plan 1 and Plan 2 licenses. Until recently, mixed-licensing scenarios weren't supported; in cases of multiple subscriptions, the highest functional subscription would take precedence for your tenant. Now, **the ability to manage your subscription settings to accommodate mixed licensing scenarios across client devices is currently in preview**! These capabilities enable you to:
 
-- **Set your tenant to mixed mode and tag devices** to determine which devices will receive features and capabilities from each plan (we call this option *mixed mode*); **OR**,
-- **Use the features and capabilities from one plan across all your devices**. 
+- **Set your tenant to mixed mode and tag devices** to determine which client devices will receive features and capabilities from each plan (we call this option *mixed mode*); **OR**,
+- **Use the features and capabilities from one plan across all your client devices**. 
 
 ## [**Use mixed mode**](#tab/mixed)
 
@@ -50,13 +50,10 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 
 5. Tag the devices that will receive Defender for Endpoint Plan 1 capabilities (all other devices will receive Defender for Endpoint Plan 2). You can choose to tag your devices manually or by using a dynamic rule.
 
-   - **To tag devices manually**, create a tag called `License MDE P1` and apply it to devices. To get help with this step, see [Create and manage device tags](machine-tags.md).
-   - **To use a dynamic rule**, specify a set of criteria based on device name, domain, operating system platform, and/or device tags. Devices that meet the specified criteria will receive the `License MDE P1` tag. <br/>
-      - You can use the following condition operators: `Equals` / `Not equals`; `Starts with`; or `Contains` / `Does not contain`.
-      - For **Device name**, you can use freeform text.
-      - For **Domain**, select from a list of domains.
-      - For **OS platform**, select from a list of operating systems.
-      - For **Tag**, use freeform text (Note that the `License MDE P1` tag must be used to tag the devices that should receive Defender for Endpoint Plan 1 capabilities).
+   | Method | What to do |
+   |:---|:---|
+   | Tag devices manually | To tag devices manually, create a tag called `License MDE P1` and apply it to devices. To get help with this step, see [Create and manage device tags](machine-tags.md). |
+   | Use a dynamic rule | To use a dynamic rule, specify a set of criteria based on device name, domain, operating system platform, and/or device tags. Devices that meet the specified criteria will receive the `License MDE P1` tag. <br/><br/>You can use the following condition operators: <br/>- `Equals` / `Not equals`<br/>- `Starts with`<br/>- `Contains` / `Does not contain` <br/><br/>For **Device name**, you can use freeform text.<br/><br/>For **Domain**, select from a list of domains.<br/><br/>For **OS platform**, select from a list of operating systems.<br/><br/>For **Tag**, use freeform text (Note that the `License MDE P1` tag must be used to tag the devices that should receive Defender for Endpoint Plan 1 capabilities). |
  
    Device tags are visible in the **Device inventory** view and in the [Defender for Endpoint APIs](apis-intro.md).
 
