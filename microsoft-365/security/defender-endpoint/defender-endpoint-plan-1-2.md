@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 02/20/2023
+ms.date: 02/21/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
