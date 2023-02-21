@@ -1,11 +1,11 @@
 ---
-title: "Get started with data loss prevention on-premises scanner"
+title: "Get started with data loss prevention on-premises repositories"
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 01/11/2021
+ms.date: 02/21/2023
 audience: ITPro
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +21,12 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MET150
-description: "This article describes the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises scanner."
+description: "This article describes the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises repositories."
 ---
 
-# Get started with the data loss prevention on-premises scanner
+# Get started with the data loss prevention on-premises repositories
 
-This article walks you through the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises scanner.
+This article walks you through the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises repositories.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -34,7 +34,7 @@ This article walks you through the prerequisites and configuration for the Micro
 
 ### SKU/subscriptions licensing
 
-Before you get started with DLP on-premises scanner, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) and any add-ons. The admin account that sets up the DLP rules must be assigned one of the following licenses:
+Before you get started with DLP on-premises repositories, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) and any add-ons. The admin account that sets up the DLP rules must be assigned one of the following licenses:
 
 - Microsoft 365 E5
 - Microsoft 365 E5 Compliance
@@ -48,7 +48,7 @@ For full licensing details see: [Microsoft 365 licensing guidance for security &
 
 ### Permissions
 
-Data from DLP on-premises scanner can be viewed in [Activity explorer](data-classification-activity-explorer.md). There are four roles that grant permission to activity explorer, the account you use for accessing the data must be a member of any one of them.
+Data from DLP can be viewed in [Activity explorer](data-classification-activity-explorer.md). There are four roles that grant permission to activity explorer, the account you use for accessing the data must be a member of any one of them.
 
 - Global administrator
 - Compliance administrator
@@ -74,7 +74,7 @@ Here's a list of applicable role groups that are in preview. To learn more about
 - Information Protection Investigators
 - Information Protection Readers
 
-### DLP on-premises scanner prerequisites
+### DLP on-premises repositories prerequisites
 
 - The Azure Information Protection (AIP) scanner implements DLP policy matching and policy enforcement. The scanner is installed as part of the AIP client so your installation must meet all the prerequisites  for AIP, the AIP client, and the AIP unified labeling scanner.
 - Deploy the AIP  client and scanner. For more information see, [Install the AIP unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) and, [Configuring and installing the information protection scanner](deploy-scanner-configure-install.md).
@@ -99,10 +99,10 @@ Here's a list of applicable role groups that are in preview. To learn more about
    > [!IMPORTANT]
    > Remember that the scanner runs a delta scan of the repository by default and the files that were already scanned in the previous scan cycle will be skipped unless the file was changed or you initiated a full rescan. Full rescan can be initiated by using **Rescan all files** option in the UI or by running **Start-AIPScan-Reset**.
 
-6.  Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) in the Microsoft Purview compliance portal.
+6. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) in the Microsoft Purview compliance portal.
 
 7. Choose **Create policy** and create a test DLP policy. See [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) if you need help creating a policy. Be sure to run it in test until you are comfortable with this feature. Use these parameters for your policy:
-    1. Scope the DLP on-premises scanner rule to specific locations if needed. If you scope **locations** to **All**, all files scanned by the scanner will be subject to the DLP rule matching and enforcement.
+    1. Scope the DLP on-premises repositories rule to specific locations if needed. If you scope **locations** to **All**, all files scanned by the scanner will be subject to the DLP rule matching and enforcement.
     1. When specifying the locations, you can use either exclusion or inclusion list. You can either define that the rule is relevant only to paths matching one of the patterns listed in inclusion list or, all files, except the files matching the pattern listed in inclusion list. No local paths are supported. Here are some examples of valid paths:
       - \\\server\share
       - \\\server\share\folder1\subfolderabc
@@ -121,16 +121,16 @@ Here's a list of applicable role groups that are in preview. To learn more about
 > [!IMPORTANT]
 > The exclusion list takes precedence over the inclusions list.
 
-### Viewing DLP on-premises scanner alerts in DLP Alerts Management dashboard
+### Viewing DLP alerts in DLP Alerts Management dashboard
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) in the Microsoft Purview compliance portal and select **Alerts**.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your on-premises DLP policies.
 
-### Viewing DLP on-premises scanner in activity explorer and audit log
+### Viewing DLP data in activity explorer and audit log
 
 > [!NOTE]
-> The on-premises scanner requires that auditing be enabled. In Microsoft 365 auditing is enabled by default.
+> The Information Protection scanner requires that auditing be enabled. In Microsoft 365 auditing is enabled by default.
 
 1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft Purview compliance portal and select Activity explorer.
 
@@ -146,8 +146,8 @@ Now that you have deployed a test policy for DLP on-premises locations and can v
 
 ## See also
 
-- [Learn about DLP on-premises scanner](dlp-on-premises-scanner-learn.md)
-- [Use DLP on-premises scanner](dlp-on-premises-scanner-use.md)
+- [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md)
+- [Use the data loss prevention on-premises repositories](dlp-on-premises-scanner-use.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)

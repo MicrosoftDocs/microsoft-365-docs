@@ -1,11 +1,11 @@
 ---
-title: "Learn about data loss prevention on-premises scanner"
+title: "Learn about data loss prevention on-premises repositories"
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 01/15/2021
+ms.date: 02/21/2023
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -31,7 +31,7 @@ When you select the **On-premises repositories** location Microsoft Purview data
 
 ## DLP relies on Microsoft Purview Information Protection scanner
 
-The DLP relies on a full implementation of the Information Protection scanner to monitor, label and protect sensitive items. If you aren't familiar with the Information Protection scanner, we strongly recommend familiarizing yourself with it. See these articles:
+DLP relies on a full implementation of the Information Protection scanner to monitor, label and protect sensitive items. If you aren't familiar with the Information Protection scanner, we strongly recommend familiarizing yourself with it. See these articles:
 
 - [What is Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Learn about the information protection scanner](deploy-scanner.md)
@@ -63,7 +63,7 @@ There are a few extra concepts that you need to be aware of before you dig into 
 
 ### AIP repositories and content scan jobs
 
-You must create an AIP content scan jobs and identify the repositories that host the files that you want to be evaluated by DLP engine. Make sure you enable DLP rules in the created AIP content scan job.
+You must create an AIP content scan jobs and identify the repositories that host the files that you want to be evaluated by DLP. Make sure you enable DLP rules in the created AIP content scan job.
 
 ### Policy tips
 
@@ -72,13 +72,13 @@ You must create an AIP content scan jobs and identify the repositories that host
 
 ### Viewing DLP on-premises scanner events
 
-You view DLP on-premises scanner data in the M365 Compliance Center [activity explorer](data-classification-activity-explorer.md). 
+You view DLP data in the Microsoft Purview Compliance portal [activity explorer](data-classification-activity-explorer.md). 
 
 ## Next steps
 
-Now that you've learned about DLP on-premises scanner, your next steps are:
+Now that you've learned about the Information Protection on-premises scanner, your next steps are:
 
-1. [Get started with the DLP on-premises scanner](dlp-on-premises-scanner-get-started.md)
+1. [Get started with the On-premises repositories location](dlp-on-premises-scanner-get-started.md)
 2. [Use the DLP on-premises scanner](dlp-on-premises-scanner-use.md)
 -->
 ## See also

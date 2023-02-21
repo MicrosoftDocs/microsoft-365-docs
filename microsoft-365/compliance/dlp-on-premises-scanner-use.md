@@ -1,5 +1,5 @@
 ---
-title: "Use data loss prevention on-premises scanner"
+title: "Use data loss prevention on-premises repositories"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,10 +20,10 @@ ms.collection:
 - highpri
 search.appverid:
 - MET150
-description: "Learn how to use the data loss prevention on premises scanner to scan data at rest and implement protective actions for on premises file shares and on-premises SharePoint folders and document libraries."
+description: "Learn how to use data loss prevention on premises repositories location to scan data at rest and implement protective actions for on premises file shares and on-premises SharePoint folders and document libraries."
 ---
 
-# Use the data loss prevention on-premises scanner
+# Use the data loss prevention on-premises repositories location
 
 To help familiarize you with Microsoft Purview Data Loss Prevention on-premises features and how they surface in DLP policies, we've put together some scenarios for you to follow.
 
@@ -36,11 +36,11 @@ To help familiarize you with Microsoft Purview Data Loss Prevention on-premises 
 
 ### Scenario: Discover files matching DLP rules
 
-Data from DLP on-premises scanner surfaces in several areas
+Data from DLP surfaces in several areas
 
 #### Activity explorer
 
- Microsoft DLP for on-premises detects DLP rule matches and reports them to [Activity Explorer](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer).
+ Microsoft DLP for on-premises repositories DLP rule matches and reports them to [Activity Explorer](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer).
 
 #### Microsoft 365 Audit log
 
@@ -78,8 +78,8 @@ If you want to enforce DLP rules on the scanned files, enforcement must be enabl
 
 ## See also
 
-- [Learn about DLP on-premises scanner](dlp-on-premises-scanner-learn.md)
-- [Get started with  DLP on-premises scanner](dlp-on-premises-scanner-get-started.md)
+- [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md)
+- [Get started with data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
