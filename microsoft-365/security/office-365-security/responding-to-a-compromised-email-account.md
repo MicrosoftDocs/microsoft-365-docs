@@ -12,6 +12,7 @@ ms.collection:
   - m365-security
   - m365solution-smb
   - highpri
+  - tier1
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
@@ -21,7 +22,9 @@ search.appverid:
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
+
 # Responding to a Compromised Email Account
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
@@ -66,7 +69,7 @@ If a user reports any of the above symptoms, you should perform further investig
 
 ## How to secure and restore email function to a suspected compromised Microsoft 365 account and mailbox
 
-> [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
+<!--- [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false] --->
 
 Even after you've regained access to your account, the attacker may have added back-door entries that enable the attacker to resume control of the account.
 

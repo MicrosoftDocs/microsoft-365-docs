@@ -12,9 +12,10 @@ search.appverid:
   - MET150
   - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
-ms.date: 08/21/2020
+ms.date: 1/31/2023
 ms.collection:
   - m365-security
+  - tier2
 description: Integrate your organization's SIEM server with Microsoft Defender for Office 365 and related threat events in the Office 365 Activity Management API.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo

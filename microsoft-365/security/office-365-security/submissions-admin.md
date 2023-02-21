@@ -12,11 +12,12 @@ search.appverid:
   - MET150
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 ms.custom: seo-marvel-apr2020
 description: Admins can learn how to use the Submissions portal in the Microsoft 365 Defender portal to submit legitimate email getting blocked, suspicious email, suspected phishing email, spam, other potentially harmful messages, URLs, and email attachments to Microsoft for rescanning.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/05/2022
 ---
 
 # Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft
@@ -37,6 +38,8 @@ When you submit an email message for analysis, you will get:
 - **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
 
 > [!IMPORTANT]
+> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), admins can't use the **Submissions** page in the Microsoft 365 Defender portal to submit messages to Microsoft. Instead, admins in those organizations need to open a support case to submit messages.
+>
 > Payload reputation/detonation and grader analysis are not done in all tenants. Information is blocked from going outside the organization when data is not supposed to leave the tenant boundary for compliance purposes.
 
 For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).

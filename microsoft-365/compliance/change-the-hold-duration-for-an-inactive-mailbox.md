@@ -215,7 +215,7 @@ Once you know the name of the policy, you can simply modify the retention policy
 > [!IMPORTANT]
 > Retention policies with [preservation lock](retention-preservation-lock.md) enabled can have the retention period extended, but not decreased or removed.
 
-If the intention is to modify the retention period for only inactive mailboxes, or only specific inactive mailboxes, you may consider deploying [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention), which can be used to individually target specific mailboxes - or mailbox types, such as inactive mailboxes - using Azure AD and Exchange attributes and properties.
+If the intention is to modify the retention period for only inactive mailboxes, or only specific inactive mailboxes, you may consider deploying [adaptive policy scopes](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes), which can be used to individually target specific mailboxes - or mailbox types, such as inactive mailboxes - using Azure AD and Exchange attributes and properties.
 
 ### Change the duration for a Microsoft 365 retention label
 

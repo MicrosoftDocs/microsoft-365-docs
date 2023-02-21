@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date:
+ms.date: 09/13/2021
 ms.localizationpriority: medium
 ms.collection:
 - tier1
@@ -91,16 +91,16 @@ Every SIT has a rule package. You use the rule package in an EDM SIT to define:
 
 ### You supply your own schema and data
 
-[Microsoft Purview comes with many predefined SITS](sensitive-information-type-entity-definitions.md). These SITS come with schemas, regex patterns, keywords and confidence levels. But, with EDM SITs, you are responsible for defining the schema as well as primary and secondary fields that identify sensitive items. Because the schema and primary and secondary data values are highly sensitive, you'll be encrypting them via a [hash](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) function that includes a randomly generated or self-supplied [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) value. Only the hashed values are uploaded to the service, so your sensitive data is never in the open.
+[Microsoft Purview comes with many predefined SITs](sensitive-information-type-entity-definitions.md). These SITs come with schemas, regex patterns, keywords and confidence levels. But, with EDM SITs, you are responsible for defining the schema as well as primary and secondary fields that identify sensitive items. Because the schema and primary and secondary data values are highly sensitive, you'll be encrypting them via a [hash](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) function that includes a randomly generated or self-supplied [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) value. Only the hashed values are uploaded to the service, so your sensitive data is never in the open.
 
 ### Primary and secondary support elements
 
-When you create an EDM SIT, you define a *primary element* field in the rule package. All content will be search for the primary element. EDM requires that the primary element be discoverable through an existing SIT. 
+When you create an EDM SIT, you define a *primary element* field in the rule package. All content will be searched for the primary element. EDM requires that the primary element be discoverable through an existing SIT. 
 
 > [!NOTE]
 > See, [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of the available SITs.  
 
-You'll have to find a predefined SIT that detects the sensitive information that you want your EDM SIT to detect. For example, if your EDM SIT schema has U.S. social security number as the primary element, when you create your EDM schema, you'd associated it with the [U.S. social security number (SSN)](sit-defn-us-social-security-number.md) SIT. Primary elements need to follow a defined pattern in order to be detected.
+You'll have to find a predefined SIT that detects the sensitive information that you want your EDM SIT to detect. For example, if your EDM SIT schema has U.S. *social security number* as the primary element, when you create your EDM schema, you'd associated it with the [U.S. social security number (SSN)](sit-defn-us-social-security-number.md) SIT. Primary elements need to follow a defined pattern in order to be detected.
 
 When the primary element is found in a scanned item, EDM will then look for *secondary* or supporting elements. Secondary elements don't need to follow a pattern unless they contain multiple tokens (which requires association to a SIT, similar to primary elements), but do need to be within a certain proximity to the primary element.
 
@@ -110,7 +110,7 @@ EDM works by comparing strings in your documents and emails against values in th
 
 
 > [!TIP]
-> You can use both EDM SITs and the predefined SITs that they are based on, together, in DLP rules for better detection. Use the EDM SIT with higher confidence levels, and the predefined SIT with lower confidence levels. For example use an EDM SIT that looks for social security number and other supporting data with strict requirements with high confidence. Using the high confidence will generate a DLP match when few instances are detected. Then use a predefined SIT, like the U.S. Social Security Number, with lower confidence levels that will trigger a DLP match when higher numbers of occurrences are detected.  
+> You can use both EDM SITs, and the predefined SITs that they are based on, together in DLP rules for better detection. Use the EDM SIT with higher confidence levels, and the predefined SIT with lower confidence levels. For example use an EDM SIT that looks for social security number and other supporting data with strict requirements with high confidence. Using the high confidence will generate a DLP match when few instances are detected. Then use a predefined SIT, like the U.S. Social Security Number, with lower confidence levels that will trigger a DLP match when higher numbers of occurrences are detected.  
 
 ## Services that EDM supports
 

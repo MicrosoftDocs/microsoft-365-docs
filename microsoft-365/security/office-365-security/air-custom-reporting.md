@@ -14,9 +14,9 @@ search.appverid:
 - MOE150
 ms.collection: 
 - m365-security
-- m365initiative-defender-office365
+- tier2
 description: Learn how to integrate automated investigation and response with a custom or third-party reporting solution.
-ms.date: 01/29/2021
+ms.date: 1/31/2023
 ms.custom: 
 - air
 ms.subservice: mdo

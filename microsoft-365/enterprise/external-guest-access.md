@@ -1,8 +1,9 @@
 ---
-title: "Overview of external collaboration options in Microsoft 365"
+title: "Overview of external collaboration options in Microsoft 365 (IT admins)"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 04/07/2022
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,7 +16,7 @@ ms.localizationpriority: medium
 description: "Learn about how people outside your organization can access your Microsoft 365 subscription for meetings, guest sharing, chat, and collaboration."
 ---
 
-# Overview of external collaboration options in Microsoft 365
+# Overview of external collaboration options in Microsoft 365 (IT admins)
 
 With Microsoft 365, your users can collaborate with people outside your organization in a variety of ways. Users can share files, invite guests to teams, have meetings with external participants, and chat with people from other organizations. This article covers the external collaboration options available and links to the content you need to configure each.
 
@@ -89,16 +90,16 @@ For information about how to set up Microsoft 365 for external chat and meetings
 People from outside your organization can join meetings in the following ways:
 
 - If they're logged in to your organization with a guest account, they join meetings as a guest.
-- If they're logged in to a different organization with a work or school account, and your organization has enabled external access, they join meetings as an external participant.
+- If they're logged in to a different organization with a work or school account, and both organizations have set up external access, they join meetings as an external participant.
 - If they're not a guest or external participant, they must join meetings anonymously.
 
 If the anonymous join setting is enabled for your organization, anonymous users can only join a meeting using a meeting link that has been shared with them (such as a link in the meeting invitation). They will be prompted to enter a display name of their choosing when joining the meeting anonymously. Depending on the lobby settings, the anonymous user may be automatically admitted to the meeting, or be added to a lobby where the meeting organizer (or meeting participants with the presenter role) can allow or deny access to the meeting. 
 
 It is not possible to verify the identity of anonymous users before, during or after the meeting. 
 
-You can control anonymous users' ability to join meetings at the organization level. If it'ss enabled for the organization, meeting organizers can control anonymous join through meeting policy settings.
+You can control anonymous users' ability to join meetings at the organization level. If it's enabled for the organization, meeting organizers can control anonymous join through meeting policy settings.
 
-For information about configuring anonymous join for meetings, see [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams).
+For information about configuring anonymous join for meetings, see [Manage anonymous participant access to Teams meetings](/microsoftteams/anonymous-users-in-meetings).
 
 ## Unauthenticated file and folder access
 
@@ -124,3 +125,5 @@ For information about working with anonymous file and folder sharing, see the fo
 [Limit guest sharing to specific organizations](/microsoft-365/solutions/limit-guest-sharing-to-specific-organization)
 
 [Limit organizations where users can have guest accounts](/microsoft-365/solutions/limit-organizations-where-users-have-guest-accounts)
+
+[Control who can bypass the meeting lobby in Microsoft Teams](/microsoftteams/who-can-bypass-meeting-lobby)
