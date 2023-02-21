@@ -42,18 +42,18 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
 
 ### Manage your connection
 
-  - To create a new connection, select **Add connection** at the top of the page.
-  - To update connection settings, choose **Edit** next to an existing connection. You'll see the Connection settings pane, where you can update the settings that you want.
+- To create a new connection, select **Add connection** at the top of the page.
+- To update connection settings, choose **Edit** next to an existing connection. You'll see the Connection settings pane, where you can update the settings that you want.
 
 ### Manage your connection instances
 
-  - To create a new connection instance, select **Create instance**.
-  - To make changes to an existing connection instance, choose **Edit** next to the instance name. You'll be taken to the wizard, where you can update the settings and mappings.
-  - To view more details about an existing connection instance, select its name. On the details page, you'll see health information, including ongoing errors (if any), and mappings. You can also choose **Edit** to update settings in the wizard or **Back** to return to the Connector Management Console.
+- To create a new connection instance, select **Create instance**.
+- To make changes to an existing connection instance, choose **Edit** next to the instance name. You'll be taken to the wizard, where you can update the settings and mappings.
+- To view more details about an existing connection instance, select its name. On the details page, you'll see health information, including ongoing errors (if any), and mappings. You can also choose **Edit** to update settings in the wizard or **Back** to return to the Connector Management Console.
 
-    :::image type="content" source="media/shifts-connector-ukg-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-ukg-manage-details.png":::
+  :::image type="content" source="media/shifts-connector-ukg-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-ukg-manage-details.png":::
 
- For a complete list of error messages and how to resolve them, see [List of error messages](#list-of-error-messages) later in this article.
+For a complete list of error messages and how to resolve them, see [List of error messages](#list-of-error-messages) later in this article.
 
 #### Edit connection instance settings
 
