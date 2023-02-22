@@ -43,7 +43,7 @@ For more information about how to set up Defender for Endpoint on Android and Co
 Defender for Endpoint on Android enables admins to configure custom indicators to support Android devices as well. For more information on how to configure custom indicators, see [Manage indicators](manage-indicators.md).
 
 ## Configure web protection
-Defender for Endpoint on Android allows IT Administrators the ability to configure the web protection feature. This capability is available within the Microsoft Endpoint Manager Admin center.
+Defender for Endpoint on Android allows IT Administrators the ability to configure the web protection feature. This capability is available within the Microsoft Intune admin center.
 
 [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Note that anti-phishing and custom indicators (URL and IP addresses) are supported as part of web protection. Web content filtering is currently not supported on mobile platforms.
 
@@ -53,13 +53,13 @@ Defender for Endpoint on Android allows IT Administrators the ability to configu
 
 ## Network Protection
 
-This feature provides protection against rogue Wi-Fi related threats and rogue certificates which are the primary attack vector for Wi-Fi networks. Admins can list the root Certificate Authority (CA) and private root CA certificates in Microsoft Endpoint Manager Admin center and establish trust with endpoints. It provides the user a guided experience to connect to secure networks and also notifies them if a related threat is detected. 
+This feature provides protection against rogue Wi-Fi related threats and rogue certificates which are the primary attack vector for Wi-Fi networks. Admins can list the root Certificate Authority (CA) and private root CA certificates in Microsoft Intune admin center and establish trust with endpoints. It provides the user a guided experience to connect to secure networks and also notifies them if a related threat is detected. 
 
-It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Endpoint Manager Admin center as well as add trusted certificates. Admins can also enable [privacy controls](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) to configure the data that is sent by Defender for Endpoint from Android devices.
+It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Intune admin center as well as add trusted certificates. Admins can also enable [privacy controls](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) to configure the data that is sent by Defender for Endpoint from Android devices.
 
 Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to **configure Network protection in Android devices.**
 
-1. In Microsoft Endpoint Manager Admin, navigate to Apps > App configuration policies. Create a new App configuration policy.
+1. In the Microsoft Intune admin center, navigate to Apps > App configuration policies. Create a new App configuration policy.
     > [!div class="mx-imgBorder"]
     > ![Image of how to create a policy.](images/android-mem.png)
 1. Provide a name and description to uniquely identify the policy. Select **'Android Enterprise'** as the platform and **'Personally-owned work profile only'** as the profile type and **'Microsoft Defender'** as the Targeted app.
@@ -120,7 +120,7 @@ Admins can now enable privacy control for the phish report, malware report and n
 
 Admin Privacy Controls (MDM) Use the following steps to enable privacy.
 
-1. In Microsoft Endpoint Manager admin center, go to **Apps > App configuration policies > Add > Managed devices**.
+1. In Microsoft Intune admin center, go to **Apps > App configuration policies > Add > Managed devices**.
 
 2. Give the policy a **name, Platform > Android enterprise, select the profile type**.
 
@@ -161,7 +161,7 @@ From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, you'll
 **Notes about privacy related to apps from personal devices (BYOD):**
 
 - For Android Enterprise with a work profile, only apps installed on the work profile will be supported.
-- For other BYOD modes, by default, vulnerability assessment of apps will **not** be enabled. However, when the device is on administrator mode, admins can explicitly enable this feature through Microsoft Endpoint Manager to get the list of apps installed on the device. For more information, see details below.
+- For other BYOD modes, by default, vulnerability assessment of apps will **not** be enabled. However, when the device is on administrator mode, admins can explicitly enable this feature through Microsoft Intune to get the list of apps installed on the device. For more information, see details below.
 
 ### Configure privacy for device administrator mode
 
@@ -170,7 +170,7 @@ Use the following steps to **enable vulnerability assessment of apps** from devi
 > [!NOTE]
 > By default, this is turned off for devices enrolled with device admin mode.
 
-1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
+1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
 
    - **Platform**: Select Android device administrator
    - **Profile**: Select "Custom" and click Create
@@ -190,7 +190,7 @@ Use the following steps to **enable vulnerability assessment of apps** from devi
 
 Defender for Endpoint supports vulnerability assessment of apps in the work profile. However, in case you want to turn this feature off for targeted users, you can use the following steps:
 
-1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
 2. Give the policy a name; **Platform > Android Enterprise**; select the profile type.
 3. Select **Microsoft Defender for Endpoint** as the target app.
 4. In Settings page, select **Use configuration designer** and add **DefenderTVMPrivacyMode** as the key and value type as **Integer**
@@ -208,7 +208,7 @@ Privacy control for phish report can be used to disable the collection of domain
 
 Use the following steps to turn it on for targeted users:
 
-1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
+1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
 
    - **Platform**: Select Android device administrator.
    - **Profile**: Select "Custom" and click **Create**.
@@ -230,7 +230,7 @@ Using this privacy control will not impact the device compliance check or condit
 
 Use the following steps to turn on privacy for targeted users in the work profile:
 
-1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
 2. Give the policy a name, **Platform > Android Enterprise**, select the profile type.
 3. Select **Microsoft Defender for Endpoint** as the target app.
 4. In Settings page, select **Use configuration designer** and add **DefenderExcludeURLInReport** as the key and value type as **Integer**.
@@ -247,7 +247,7 @@ Privacy control for malware threat report can be used to disable the collection 
 
 Use the following steps to turn it on for targeted users:
 
-1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
+1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
 
    - **Platform**: Select Android device administrator.
    - **Profile**: Select "Custom" and click **Create**.
@@ -269,7 +269,7 @@ Using this privacy control will not impact the device compliance check or condit
 
 Use the following steps to turn on privacy for targeted users in the work profile:
 
-1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
 2. Give the policy a name, **Platform > Android Enterprise**, select the profile type.
 3. Select **Microsoft Defender for Endpoint** as the target app.
 4. In Settings page, select **Use configuration designer** and add **DefenderExcludeAppInReport** as the key and value type as **Integer**
