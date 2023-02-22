@@ -110,14 +110,14 @@ You can view and explore captured clips from several places in Microsoft Purview
 
 You can also explore a complete list of captured clips from the top-level **Forensics evidence** tab by selecting the **Review captured clips** button. 
 
-![Insider risk management forensic evidence device health.](../media/insider-risk-management-review-captured-clips.png)
+![Insider risk management forensic evidence Review captured clips button.](../media/insider-risk-management-review-captured-clips.png)
 
 > [!IMPORTANT]
 > You must be assigned to both the *Insider Risk Management Investigators* role group and the *Insider Risk Management Admins* role group to view captured clips. You won't see the **Review captured clips** button if you aren't a member of both role groups. [Learn more about role groups](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
 
 When you select the **Review captured clips** button, captured clips and associated information are displayed in a list. If you select a capture in the list on the left, a video player appears in the center of the screen, and a transcript of activities and events from the clip are displayed to the right of the video player. 
 
-![Insider risk management forensic evidence device health.](../media/insider-risk-management-capture-explore.png)
+![Insider risk management forensic evidence captured clips list.](../media/insider-risk-management-capture-explore.png)
 
 Each captured clip includes the following information:
 
@@ -270,4 +270,4 @@ If you use up the 20 GB of free capacity and don't subsequently purchase the For
 
 After purchasing capacity (or signing up for 20 GB of free capacity as described above), you can use the **Capacity** page to analyze how much capacity that you have used and the amount of capacity remaining. You can also analyze the amount of capacity you're using each month by selecting from the **Capacity usage in GB** list or by selecting **View all capacity usage**.
 
-![Insider risk management forensic evidence device health.](../media/insider-risk-management-capacity-billing.png)
+![Insider risk management forensic evidence Capacity page.](../media/insider-risk-management-capacity-billing.png)
