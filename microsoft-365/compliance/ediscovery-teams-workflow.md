@@ -72,19 +72,20 @@ The first step to managing Teams content in eDiscovery (Premium) is to create a 
 
 For more information about the increased case limits, see [Use the new case format in eDiscovery (Premium)](ediscovery-new-case-format.md).
 
-To create a case:
-
 1. Go to <https://compliance.microsoft.com> and sign in.
 
 2. In the left navigation pane of the Microsoft Purview compliance portal, click **eDiscovery > Premium**.
 
 3. On the **eDiscovery (Premium)** page, click the **Cases** tab, and then click **Create a case**.
 
-   The **New eDiscovery case** flyout page is displayed. The **Case format** section provides the option to create a case using the new case format.
+   The **New eDiscovery case** flyout page is displayed. The **Case format** section provides the option to create a case using the new case format, Click **Next** to proceed to the **Members and settings** Page.
 
    ![Large case option on the New eDiscovery case page.](..\media\AeDNewCaseFormat1.png)
+   
+ 4. On the **Members and Settings** Page, Add team members and configure settings and Click on **next** to proceed to the **Summary** page
+   ![Members and settings page](..\media\membersandsettings.png
 
-4. After naming the case, select the **New** option, and then click **Save** to create the case.
+4. On the Summary of the Case, Review the settings and click **Submit** to create the case.
 
 ## Add Teams custodial data sources and preserve Teams content  
 
