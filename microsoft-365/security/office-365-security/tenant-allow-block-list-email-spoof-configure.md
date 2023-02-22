@@ -59,7 +59,8 @@ You manage allow and block entries for email in the Microsoft 365 Defender Porta
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  > [!Note]
+  > [!NOTE]
+  >
   > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions *and* permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
@@ -72,7 +73,7 @@ You have the following options to create block entries for domains and email add
 - [The Submissions page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-domains-and-email-addresses-in-the-submissions-portal)
 - The Tenant Allow/Block List in [the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list) or in [PowerShell](#use-powershell-to-create-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list)
 
-To create block entries for spoofed senders, see the [Use the Microsoft 365 Defender portal to view allow or block entries for spoofed senders in the Tenant Allow/Block List](#use-the-microsoft-365-defender-portal-to-view-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list) section later in this article.
+To create block entries for spoofed senders, see the [Use the Microsoft 365 Defender portal to view existing allow or block entries for domains and email addresses in the Tenant Allow/Block List](#use-the-microsoft-365-defender-portal-to-view-existing-allow-or-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list) section later in this article.
 
 #### Use the Microsoft 365 Defender portal to create block entries for domains and email addresses in the Submissions portal
 
@@ -143,7 +144,7 @@ For instructions, see [Report good email to Microsoft](submissions-admin.md#repo
 >
 > During mail flow, if messages from the domain or email address pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message from a sender in the allow entry will be delivered.
 
-### Use the Microsoft 365 Defender portal to view allow or block entries for domains and email addresses in the Tenant Allow/Block List
+### Use the Microsoft 365 Defender portal to view existing allow or block entries for domains and email addresses in the Tenant Allow/Block List
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -171,7 +172,7 @@ For instructions, see [Report good email to Microsoft](submissions-admin.md#repo
 
    When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
-#### Use PowerShell to view allow or block entries for domains and email addresses in the Tenant Allow/Block List
+#### Use PowerShell to view existing allow or block entries for domains and email addresses in the Tenant Allow/Block List
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
@@ -193,7 +194,7 @@ Get-TenantAllowBlockListItems -ListType Sender -Block
 
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
-### Use the Microsoft 365 Defender portal to modify allow or block entries for domains and email addresses in the Tenant Allow/Block List
+### Use the Microsoft 365 Defender portal to modify existing allow or block entries for domains and email addresses in the Tenant Allow/Block List
 
 You can make the following modifications to entries for domains and email addresses in the Tenant Allow/Block list:
 
@@ -219,7 +220,7 @@ If Microsoft has learned from the allow, the allow will be removed and you will 
 > [!NOTE]
 > For allow entries only, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that appears to go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
 
-#### Use PowerShell to modify allow or block entries for domains and email addresses in the Tenant Allow/Block List
+#### Use PowerShell to modify existing allow or block entries for domains and email addresses in the Tenant Allow/Block List
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
@@ -235,7 +236,7 @@ Set-TenantAllowBlockListItems -ListType Sender -Entries "julia@fabrikam.com" -Ex
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### Use the Microsoft 365 Defender portal to remove allow or block entries for domains and email addresses in the Tenant Allow/Block List
+### Use the Microsoft 365 Defender portal to remove existing allow or block entries for domains and email addresses in the Tenant Allow/Block List
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -251,7 +252,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 > [!NOTE]
 > You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Value** column header.
 
-#### Use PowerShell to remove allow or block entries for domains and email addresses from the Tenant Allow/Block List
+#### Use PowerShell to remove existing allow or block entries for domains and email addresses from the Tenant Allow/Block List
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
@@ -365,7 +366,7 @@ New-TenantAllowBlockListSpoofItems -Identity Default -Action Allow -SendingInfra
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).
 
-### Use the Microsoft 365 Defender portal to view allow or block entries for spoofed senders in the Tenant Allow/Block List
+### Use the Microsoft 365 Defender portal to view existing allow or block entries for spoofed senders in the Tenant Allow/Block List
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -389,7 +390,7 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoo
 
    When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
-#### Use PowerShell to view allow or block entries for spoofed senders in the Tenant Allow/Block List
+#### Use PowerShell to view existing allow or block entries for spoofed senders in the Tenant Allow/Block List
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
@@ -417,7 +418,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoofItems](/powershell/module/exchange/get-tenantallowblocklistspoofitems).
 
-### Use the Microsoft 365 Defender portal to modify allow or block entries for spoofed senders in the Tenant Allow/Block List
+### Use the Microsoft 365 Defender portal to modify existing allow or block entries for spoofed senders in the Tenant Allow/Block List
 
 When you modify an allow or block entry for spoofed senders in the Tenant Allow/Block list, you can only change the entry from **Allow** to **Block**, or vice-versa.
 
@@ -431,7 +432,7 @@ When you modify an allow or block entry for spoofed senders in the Tenant Allow/
 
 5. When you're finished, click **Save**.
 
-#### Use PowerShell to modify allow or block entries for spoofed senders in the Tenant Allow/Block List
+#### Use PowerShell to modify existing allow or block entries for spoofed senders in the Tenant Allow/Block List
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
@@ -447,7 +448,7 @@ Set-TenantAllowBlockListItems -Identity Default -Ids 3429424b-781a-53c3-17f9-c0b
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
 
-### Use the Microsoft 365 Defender portal to remove allow or block entries for spoofed senders in the Tenant Allow/Block List
+### Use the Microsoft 365 Defender portal to remove existing allow or block entries for spoofed senders in the Tenant Allow/Block List
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -460,7 +461,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoo
 > [!NOTE]
 > You can select multiple entries by selecting each check box, or selecting all entries by selecting the check box next to the **Spoofed user** column header.
 
-#### Use PowerShell to remove allow or block entries for spoofed senders from the Tenant Allow/Block List
+#### Use PowerShell to remove existing allow or block entries for spoofed senders from the Tenant Allow/Block List
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
