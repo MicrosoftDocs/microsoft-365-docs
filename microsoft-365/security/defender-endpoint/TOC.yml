@@ -106,9 +106,9 @@
         href: onboarding.md
       - name: Deployment rings
         href: deployment-rings.md
-      - name: Onboarding using Microsoft Endpoint Configuration Manager
+      - name: Onboarding using Microsoft Configuration Manager
         href: onboarding-endpoint-configuration-manager.md
-      - name: Onboarding using Microsoft Endpoint Manager
+      - name: Onboarding using Microsoft Intune
         href: onboarding-endpoint-manager.md
 
   - name: Migration guides
@@ -159,7 +159,7 @@
         href: onboard-windows-client.md
       - name: Onboard Windows devices to Defender for Endpoint using Intune
         href: configure-endpoints-mdm.md
-      - name: Onboard Windows devices to Defender for Endpoint using Microsoft Endpoint Configuration Manager
+      - name: Onboard Windows devices to Defender for Endpoint using Microsoft Configuration Manager
         href: configure-endpoints-sccm.md
       - name: Onboard Windows devices to Defender for Endpoint using Group Policy
         href: configure-endpoints-gp.md
@@ -196,7 +196,7 @@
         items:
         - name: Deploy
           items:
-          - name: Deployment with Microsoft Endpoint Manager
+          - name: Deployment with Microsoft Intune
             href: mac-install-with-intune.md
           - name: JAMF Pro-based deployment
             items:
@@ -243,9 +243,9 @@
           href: mtd.md
         - name: Deploy
           items:
-          - name: Deployment on Android with Microsoft Endpoint Manager
+          - name: Deployment on Android with Microsoft Intune
             href: android-intune.md
-          - name: Deployment on iOS via Microsoft Endpoint Manager
+          - name: Deployment on iOS via Microsoft Intune
             href: ios-install.md
           - name: Deployment on iOS with Mobile Application Manager
             href: ios-install-unmanaged.md
@@ -312,7 +312,7 @@
     - name: Create an onboarding or offboarding notification rule
       href: onboarding-notification.md
 
-    - name: Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager
+    - name: Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Intune
       href: security-config-management.md
 
 
@@ -641,7 +641,7 @@
       - name: Manage Microsoft Defender Antivirus for your organization
         href: configuration-management-reference-microsoft-defender-antivirus.md
         items:
-        - name: Use Microsoft Endpoint Manager to manage Microsoft Defender Antivirus
+        - name: Use Microsoft Intune to manage Microsoft Defender Antivirus
           href: use-intune-config-manager-microsoft-defender-antivirus.md
         - name: Use Group Policy settings to manage Microsoft Defender Antivirus
           href: use-group-policy-microsoft-defender-antivirus.md

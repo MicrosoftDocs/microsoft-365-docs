@@ -38,7 +38,7 @@ Combined with always-on, real-time protection, which reviews files when they are
 > [!IMPORTANT]
 > Microsoft Defender Antivirus runs in the context of the [LocalSystem](/windows/win32/services/localsystem-account) account when performing a local scan. For network scans, it uses the context of the device account. If the domain device account doesn't have appropriate permissions to access the share, the scan won't work. Ensure that the device has permissions to the access network share.
 
-## Use Microsoft Endpoint Manager to run a scan
+## Use Microsoft Intune to run a scan
 
 1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
 
@@ -51,7 +51,7 @@ Combined with always-on, real-time protection, which reviews files when they are
    [![Scan options on the Windows 10 unhealthy endpoints tab.](images/mem-antivirus-scan-on-demand.png)](images/mem-antivirus-scan-on-demand.png#lightbox)
 
 > [!TIP]
-> For more information about using Microsoft Endpoint Manager to run a scan, see [Antimalware and firewall tasks: How to perform an on-demand scan](/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).
+> For more information about using Microsoft Configuration Manager to run a scan, see [Antimalware and firewall tasks: How to perform an on-demand scan](/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).
 
 ## Use the mpcmdrun.exe command-line utility to run a scan
 

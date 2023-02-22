@@ -86,7 +86,7 @@ ms.date: 03/22/2021
 
 Deployment of Microsoft Defender for Endpoint on iOS can be done via Microsoft Intune and both supervised and unsupervised devices are supported. End-users can also directly install the app from the [Apple app store](https://aka.ms/mdatpiosappstore).
 
-- For information on deploying on enrolled devices through Microsoft Endpoint Manager or Intune, see [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).
+- For information on deploying on enrolled devices through Microsoft Configuration Manager or Intune, see [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).
 - For information on using Defender for Endpoint in app protection policy (MAM), see [Configure app protection policy to include Defender for Endpoint risk signals (MAM)](ios-install-unmanaged.md)
 
 ## Resources
