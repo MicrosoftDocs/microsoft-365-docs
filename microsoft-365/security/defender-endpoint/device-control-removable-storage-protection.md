@@ -45,7 +45,7 @@ To manage external storage, use removable storage access control instead of [dev
 **Windows 10 and Windows 11 support details**:
 
 - Applied at either the device level, user level. or both. Only allow specific people performing Read/Write/Execute access to specific removable storage on specific machine.
-- Support MEM OMA-URI and GPO.
+- Support Intune OMA-URI and GPO.
 - For Windows devices, see [Removable storage Access Control](device-control-removable-storage-access-control.md).
 
 **Supported Platform** - Windows 10, Windows 11

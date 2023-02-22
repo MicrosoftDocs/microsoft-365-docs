@@ -102,7 +102,7 @@ Managed Service Providers (MSPs) can now deploy app protection policies for thei
 
 ### Device health monitoring
 
-We've added a new deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, Endpoint analytics in Microsoft Endpoint Manager will be able to analyze device data and can recommend software, help improve startup performance, and fix common support issues.
+We've added a new deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, Endpoint analytics in Microsoft Intune will be able to analyze device data and can recommend software, help improve startup performance, and fix common support issues.
 
 For more information, see [What is Endpoint analytics?](/mem/analytics/overview).
 
@@ -338,7 +338,7 @@ With the new baselines feature, you can now deploy standard configurations to he
 - Require MFA for admins
 - Require MFA for users
 - Block Legacy Authentication
-- Enroll Windows Devices in Microsoft Endpoint Manager – Azure AD Join
+- Enroll Windows Devices in Microsoft Intune – Azure AD Join
 - Configure Defender AV policy for Windows devices
 - Configure Compliance Policy for Windows devices
 

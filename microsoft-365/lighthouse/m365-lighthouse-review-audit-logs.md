@@ -72,13 +72,13 @@ The following table lists activities captured within Lighthouse audit logs. The 
 | **dismissUsersRisk** | Users | Dismiss user risk | Azure AD |
 | **resetUserPassword** | Users | Reset password | Azure AD |
 | **setCustomerSecurityDefaultsEnabledStatus** | Users | Enable multifactor authentication (MFA) with security defaults | Azure AD |
-| **restartDevice** | Devices | Restart | MEM |
-| **syncDevice** | Devices | Sync | MEM |
-| **rebootNow** | Threat management | Reboot | MEM |
+| **restartDevice** | Devices | Restart | Microsoft Intune |
+| **syncDevice** | Devices | Sync | Microsoft Intune |
+| **rebootNow** | Threat management | Reboot | Microsoft Intune |
 | **reprovision** | Windows 365 | Retry provisioning | Windows 365 |
-| **windowsDefenderScanFull** | Threat management | Full scan | MEM |
-| **windowsDefenderScan** | Threat management | Quick scan | MEM |
-| **windowsDefenderUpdateSignatures** | Threat management | Update antivirus | MEM |
+| **windowsDefenderScanFull** | Threat management | Full scan | Microsoft Intune |
+| **windowsDefenderScan** | Threat management | Quick scan | Microsoft Intune |
+| **windowsDefenderUpdateSignatures** | Threat management | Update antivirus | Microsoft Intune |
 
 ## Next steps
 

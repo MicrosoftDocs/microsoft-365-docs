@@ -51,7 +51,7 @@ In this phase, you create a device compliance policy for Windows 10 devices. Thi
 
     If a message similar to **You haven't enabled device management yet** message is shown, then select Intune as the MDM authority. For the specific steps, see [Set the mobile device management authority](/mem/intune/fundamentals/mdm-authority-set).
 
-    The Intune admin center focuses on device management and app management. For a tour of this admin center, see [Tutorial: Walkthrough Intune in Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
+    The Intune admin center focuses on device management and app management. For a tour of this admin center, see [Tutorial: Walkthrough the Microsoft Intune admin center](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
 
 2. In **Groups**, add a new **Microsoft 365** or **Security** group named **Managed Windows 10 device users**, with an **Assigned** membership type. In the next steps, you'll assign your compliance policy to this group. 
 
