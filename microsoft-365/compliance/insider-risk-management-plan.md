@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/21/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -71,6 +72,8 @@ Choose from the following role group options and solution actions when working w
 |Create forensic evidence capturing request|Yes|Yes|No|No|No|No|
 |Approve forensic evidence capturing requests|Yes|No|No|No|No|Yes|
 |View device health report|Yes|Yes|No|No|No|No|
+|Configure Adaptive Protection|Yes|Yes|No|No|No|No|
+|View Adaptive Protection users tab|Yes|No|Yes|Yes|No|No|
 
 > [!IMPORTANT]
 > Make sure you always have at least one user in the *Insider Risk Management* or *Insider Risk Management Admins* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
@@ -96,7 +99,7 @@ If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try i
 **Policy template requirements:** Depending on the policy template you choose, you need to be sure you understand the following requirements and plan accordingly prior to configuring insider risk management in your organization:
 
 - When using the **Data theft by departing users** template, you must configure a Microsoft 365 HR connector to periodically import resignation and termination date information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector.
-- When using the **Data leaks** template, you must configure at least one Microsoft Purview Data Loss Prevention (DLP) policy to define sensitive information in your organization and to receive insider risk alerts for High Severity DLP policy alerts. See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article for step-by-step guidance to configure DLP policies.
+- When using the **Data leaks** template, you must configure at least one Microsoft Purview Data Loss Prevention (DLP) policy to define sensitive information in your organization and to receive insider risk alerts for High Severity DLP policy alerts. See the [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) article for step-by-step guidance to configure DLP policies.
 - When using the **Security policy violation** template, you must enable Microsoft Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For step-by-step guidance to enable Defender for Endpoint integration with insider risk management, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features).
 - When using the **Risky user** template, you must configure a Microsoft 365 HR connector to periodically import performance or demotion status information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector.
 

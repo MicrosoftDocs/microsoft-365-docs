@@ -1,6 +1,6 @@
 ---
 title: Migrate to Microsoft Defender for Endpoint - Setup
-description: Make the switch to Defender for Endpoint. Review the setup process, which includes installing Microsoft Defender Antivirus.
+description: Move to Defender for Endpoint. Review the setup process, which includes installing Microsoft Defender Antivirus.
 keywords: migration, Microsoft Defender for Endpoint, antivirus, passive mode, setup process
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 01/10/2023
+ms.date: 02/16/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -71,6 +71,8 @@ As you're making the switch to Defender for Endpoint, you might need to take cer
    - Set the DWORD's value to **1**.
 
    - Under **Base**, select **Hexadecimal**.
+
+If Microsoft Defender Antivirus features and installation files were previously removed from Windows Server 2016, follow the guidance in [Configure a Windows Repair Source](/windows-hardware/manufacture/desktop/configure-a-windows-repair-source) to restore the feature installation files.
 
 > [!NOTE]
 > After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on Windows Server. To validate that passive mode was set as expected, search for **Event 5007** in the **Microsoft-Windows-Windows Defender Operational** log (located at `C:\Windows\System32\winevt\Logs`), and confirm that either the **ForceDefenderPassiveMode** or **PassiveMode** registry keys were set to **0x1**.
@@ -200,6 +202,6 @@ Device groups, device collections, and organizational units enable your security
 
 ## Next step
 
-**Congratulations**! You've completed the Setup phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
+**Congratulations**! You've completed the Setup phase of [migrating to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
 - [Proceed to Phase 3: Onboard to Defender for Endpoint](switch-to-mde-phase-3.md)

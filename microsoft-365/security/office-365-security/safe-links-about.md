@@ -9,12 +9,12 @@ audience: Admin
 ms.topic: overview
 f1_keywords:
   - '197503'
-ms.date: 09/08/2021
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 ms.collection:
   - Strat_O365_IP
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 ms.custom:
   - seo-marvel-apr2020
 search.appverid:
@@ -66,9 +66,6 @@ Safe Links protection is available in the following locations:
 - **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels is controlled by Safe Links policies.
 
   For more information about Safe Links protection in Teams, see the [Safe Links settings for Microsoft Teams](#safe-links-settings-for-microsoft-teams) section later in this article.
-
-  > [!NOTE]
-  > Currently, Safe Links protection for Microsoft Teams is not available in Microsoft 365 GCC High or Microsoft 365 DoD.
 
 - **Office apps**: Safe Links protection for supported Office desktop, mobile, and web apps is controlled by Safe Links policies.
 
@@ -134,7 +131,7 @@ As long as Safe Links protection is turned on, URLs are scanned prior to message
 
 The settings in Safe Links policies that apply to email messages are described in the following list:
 
-- **On: Safe Links checks a list of known, malicious links when users click links in email**:  Turn on or turn off Safe Links scanning in email messages. The recommended value is selected (on), and results in the following actions:
+- **On: Safe Links checks a list of known, malicious links when users click links in email. URLs are rewritten by default.**: Turn on or turn off Safe Links scanning in email messages. The recommended value is selected (on), and results in the following actions:
   - Safe Links scanning is turned on in Outlook (C2R) on Windows.
   - URLs are rewritten and users are routed through Safe Links protection when they click URLs in messages.
   - When clicked, URLs are checked against a list of known malicious URLs and the ["Block the following URLs" list](#block-the-following-urls-list-for-safe-links).
@@ -172,12 +169,10 @@ At a high level, here's how Safe Links protection works on URLs in email message
 
 ## Safe Links settings for Microsoft Teams
 
-You turn on or turn off Safe Links protection for Microsoft Teams in Safe Links policies. Specifically, you use the **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams** setting. The recommended value is on (selected).
+You turn on or turn off Safe Links protection for Microsoft Teams in Safe Links policies. Specifically, you use the **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams. URLs are not rewritten** setting in the **Teams** section. The recommended value is on (selected).
 
 > [!NOTE]
 > When you turn on or turn off Safe Links protection for Teams, it might take up to 24 hours for the change to take effect.
->
-> Currently, Safe Links protection for Microsoft Teams is not available in Microsoft 365 GCC High or Microsoft 365 DoD.
 
 After you turn on Safe Links protection for Microsoft Teams, URLs in Teams are checked against a list of known malicious links when the protected user clicks the link (time-of-click protection). URLs are not rewritten. If a link is found to be malicious, users will have the following experiences:
 
@@ -205,7 +200,7 @@ At a high level, here's how Safe Links protection works for URLs in Microsoft Te
 
 Safe Links protection for Office apps checks links in Office documents, not links in email messages. But, it can check links in attached Office documents in email messages after the document is opened.
 
-You turn on or turn off Safe Links protection for Office apps in Safe Links policies. Specifically, you use the **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps** setting. The recommended value is on (selected).
+You turn on or turn off Safe Links protection for Office apps in Safe Links policies. Specifically, you use the **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps. URLs are not rewritten** setting in the **Office 365 apps** section. The recommended value is on (selected).
 
 Safe Links protection for Office apps has the following client requirements:
 

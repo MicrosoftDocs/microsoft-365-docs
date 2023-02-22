@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 09/17/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -40,7 +40,7 @@ In Microsoft 365, you can create a DLP policy that identifies documents that hav
 
 A DLP policy simply looks for a specific property name/value pair. Any document property can be used, as long as the property has a corresponding managed property for SharePoint search. For example, a SharePoint site collection might use a content type named **Trip Report** with a required field named **Customer**. Whenever a person creates a trip report, they must enter the customer name. This property name/value pair can also be used in a DLP policy—for example, if you want a rule that blocks access to the document for guests when the **Customer** field contains **Contoso**.
 
-If you want to apply your DLP policy to content with specific Microsoft 365 labels, you should not follow the steps here. Instead, learn how to [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+If you want to apply your DLP policy to content with specific Microsoft 365 labels, you should not follow the steps here. Instead, refer to l[Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md#create-and-deploy-data-loss-prevention-policies).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -151,11 +151,7 @@ For more information, see [Manually request crawling and re-indexing of a site, 
 ## More information
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
-
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Send notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md)
-
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
-
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)

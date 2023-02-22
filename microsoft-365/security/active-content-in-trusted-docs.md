@@ -16,6 +16,7 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
 description: "Admins can learn how to create policies to block active content in Office documents"
+ms.date: 1/31/2023
 ---
 
 # Manage active content in Office documents

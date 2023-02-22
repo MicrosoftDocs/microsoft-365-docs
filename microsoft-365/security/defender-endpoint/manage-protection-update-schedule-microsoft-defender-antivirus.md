@@ -51,9 +51,10 @@ You can also randomize the times when each endpoint checks and downloads protect
 2. Go to the **Security intelligence updates** section.
 
 3. To check and download updates at a certain time:
-      1. Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to **0**.
-      2. Set **Check for Endpoint Protection security intelligence updates daily at...** to the time when updates should be checked.
-      3
+
+   - Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to **0**.
+   - Set **Check for Endpoint Protection security intelligence updates daily at...** to the time when updates should be checked.
+      
 4. To check and download updates on a continual interval, Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to the number of hours that should occur between updates.
 
 5. [Deploy the updated policy as usual](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
