@@ -26,7 +26,7 @@ ms.date: 07/14/2022
 # Tuning your filtering for Bulk (grey-mail)
 
 
-This guide describes the process of tuning your bulk email filtering settings in Microsoft Defender for Office 365. This process includes the delivery location of bulk mail and some transport rules used to achieve a more aggressive stance should this suit your organization's needs.
+This guide describes the process of tuning your bulk email filtering settings in Exchange Online or Microsoft Defender for Office 365. This process includes configuring the delivery location of detected bulk mail and if required some optional transport rules used to achieve a more aggressive stance should this suit your organization's needs.
 
 ## What you'll need
 
@@ -43,7 +43,7 @@ Bulk mail is usually advertising emails or marketing messages, which can be more
 ## Checking the BCL value of an email, and the threshold in your policies
 
 1. Take the headers of a message you're concerned with and search for the **"X-Microsoft-Antispam:"** header, which contains a **BCL value**. Note of this number.
-1. Repeat this process until you have an average BCL value that's used as the threshold.
+1. Repeat this process until you have an average BCL value which we will use as the threshold, any mail with a **BCL** value **above** this number will be impacted by the changes we make,
 1. **Login** to the Microsoft Security portal at https://security.microsoft.com.
 1. On the **left nav**, under **Email & collaboration**, select **Policies & rules**.
 1. Select **Threat policies**, then **Anti-Spam**.
@@ -63,7 +63,7 @@ Bulk mail is usually advertising emails or marketing messages, which can be more
 
 In some cases, the sender of bulk mail doesn't generate enough complaints for their messages to be assigned a BCL value high enough to be caught by your tuned threshold value. In this situation, it's possible to use transport rules to take an aggressive approach; however, caution should be applied, as false positives (unwanted blocking) will occur, so these rules need tuning with exceptions and management to stay relevant for your organizations mail patterns.
 > [!TIP]
->To better protect certain groups of users such as your c-suite and priority accounts who may be more vulnerable to unsolicited emails due to their email addresses being readily accessible in the public domain, you can create a specialized policy specifically scoped to them and set a higher BCL threshold.
+>To better protect certain groups of users such as your c-suite and priority accounts who may be more vulnerable to unsolicited emails due to their email addresses being readily accessible in the public domain, you can create a specialized policy specifically scoped to them and set a higher BCL threshold, alongisde a seperate transport rule if applicable too.
 
 [Use mail flow rules to filter bulk email in Exchange Online | Microsoft Learn](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail.md)
 
