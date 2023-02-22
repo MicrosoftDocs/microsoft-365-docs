@@ -31,7 +31,7 @@ When you select the **On-premises repositories** location Microsoft Purview Data
 
 ## DLP relies on Microsoft Purview Information Protection scanner
 
-DLP relies on a full implementation of the Information Protection scanner to monitor, label and protect sensitive items. If you aren't familiar with the Information Protection scanner, we strongly recommend familiarizing yourself with it. See these articles:
+DLP relies on a full implementation of the Microsoft Purview Information Protection scanner to monitor, label and protect sensitive items. If you haven't implemented Information Protection scanner, must do so first. See these articles:
 
 - [What is Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Learn about the information protection scanner](deploy-scanner.md)

@@ -26,7 +26,7 @@ description: "This article describes the prerequisites and configuration for the
 
 # Get started with the data loss prevention on-premises repositories
 
-This article walks you through the prerequisites and configuration for the Microsoft Purview Data Loss Prevention on-premises repositories.
+This article walks you through the prerequisites and configuration for using the Microsoft Purview Data Loss Prevention on-premises repositories location in a DLP policy.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

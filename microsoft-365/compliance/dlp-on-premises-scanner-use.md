@@ -25,7 +25,7 @@ description: "Learn how to use data loss prevention on premises repositories loc
 
 # Use the data loss prevention on-premises repositories location
 
-To help familiarize you with Microsoft Purview Data Loss Prevention on-premises features and how they surface in DLP policies, we've put together some scenarios for you to follow.
+To help familiarize you with Microsoft Purview Data Loss Prevention on-premises features and how they surface in DLP policies, we've put together a scenario for you to follow.
 
 > [!IMPORTANT]
 > These DLP on-premises scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:
@@ -40,11 +40,11 @@ Data from DLP surfaces in several areas
 
 #### Activity explorer
 
- Microsoft DLP for on-premises repositories DLP rule matches and reports them to [Activity Explorer](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer).
+ DLP reports rule matches in [Activity Explorer](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer).
 
 #### Microsoft 365 Audit log
 
-The DLP rule matches are available in Audit log UI, see [Search the audit log in the Microsoft Purview compliance portal](audit-log-search.md)  or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
+The DLP rule matches are also available in Audit log UI, see [Search the audit log in the Microsoft Purview compliance portal](audit-log-search.md) or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
 
 #### AIP
 
