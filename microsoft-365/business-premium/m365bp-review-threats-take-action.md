@@ -19,7 +19,7 @@ description: "Learn how to review and manage threats detected by Microsoft Defen
 
 # Review detected threats
 
-As soon as a malicious file or software is detected, Microsoft Defender blocks it and prevents it from running. And with cloud-delivered protection turned on, newly detected threats are added to the antivirus and antimalware engine so that your other devices and users are protected, as well.
+As soon as Microsoft Defender detects a malicious file or software, Microsoft Defender blocks it and prevents it from running. And with cloud-delivered protection turned on, newly detected threats are added to the antivirus and antimalware engine so that your other devices and users are protected, as well.
 
 Microsoft Defender Antivirus detects and protects against the following kinds of threats:
 
@@ -27,7 +27,7 @@ Microsoft Defender Antivirus detects and protects against the following kinds of
 - Phishing attempts
 - Data theft attempts
 
-As an IT professional/admin, you can view information about threat detections across [Windows devices that are enrolled in Intune](/mem/intune/enrollment/device-enrollment) in the Microsoft 365 admin center. You'll see summary information, such as:
+As an IT professional/admin, you can view information about threat detections across [Windows devices enrolled in Intune](/mem/intune/enrollment/device-enrollment) in the Microsoft 365 admin center. You'll see summary information, such as:
 
 - How many devices need antivirus protection
 - How many devices aren't in compliance with security policies
@@ -50,7 +50,7 @@ When you view details about specific threats or devices, you'll see recommendati
 
 1. Go to the ([Microsoft 365 Defender portal](https://security.microsoft.com)) and sign in.
 
-1. In the navigation pane, choose **Threat Analytics** to see all the current threats. They are categorized by threat severity and type.
+1. In the navigation pane, choose **Threat Analytics** to see all the current threats. Threads are categorized by threat severity and type.
 
 1. Click on a threat to see more details about the threat.
 
