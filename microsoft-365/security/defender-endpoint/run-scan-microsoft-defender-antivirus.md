@@ -40,6 +40,8 @@ Combined with always-on, real-time protection, which reviews files when they are
 
 ## Use Microsoft Intune to run a scan
 
+### Use endpoint security to run a scan on Windows devices
+
 1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
 
 2. Choose **Endpoint security** \> **Antivirus**.
@@ -53,6 +55,14 @@ Combined with always-on, real-time protection, which reviews files when they are
 > [!TIP]
 > For more information about using Microsoft Configuration Manager to run a scan, see [Antimalware and firewall tasks: How to perform an on-demand scan](/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).
 
+### Use devices to run a scan on a single device
+
+1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+
+2. From the sidebar, select **Devices** \> **All Devices** and choose the device you want to scan.
+
+3. Select **...More**. From the options, select **Quick Scan** (recommended) or **Full Scan**.
+
 ## Use the mpcmdrun.exe command-line utility to run a scan
 
 Use the following `-scan` parameter:
@@ -62,14 +72,6 @@ mpcmdrun.exe -scan -scantype 1
 ```
 
 For more information about how to use the tool and additional parameters, including starting a full scan, or defining paths, see [Use the mpcmdrun.exe commandline tool to configure and manage Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md).
-
-## Use Microsoft Intune to run a scan
-
-1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
-
-2. From the sidebar, select **Devices** \> **All Devices** and choose the device you want to scan.
-
-3. Select **...More**. From the options, select **Quick Scan** (recommended) or **Full Scan**.
 
 ## Use the Windows Security app to run a scan
 
