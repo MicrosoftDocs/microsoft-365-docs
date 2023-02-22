@@ -104,7 +104,7 @@ To delete an existing notification template, select a template and select **Dele
 
 You can view and explore captured clips from several places in Microsoft Purview Insider Risk Management: 
 
-- **Alerts dashboard.** Clips accessible from the **Alerts** dashboard correspond to the option to capture  **specific user activities** when creating the forensic evidence policy. The captured clips are defined by indicators selected in the forensic evidence policy. 
+- **Alerts dashboard.** Clips accessible from the **Alerts** dashboard correspond to the option to capture  **specific user activities** when the forensic evidence policy is created. The captured clips are defined by indicators selected in the forensic evidence policy. 
 - **User activity reports.** Clips accessible from **User activity** reports correspond to the option to capture **any security-related activity** performed by users included in forensic evidence policies.
 - **Cases dashboard.** Clips accessible from the **Cases** dashboard are alerts that have been escalated to cases. 
 
@@ -115,7 +115,7 @@ You can also explore a complete list of captured clips from the top-level **Fore
 > [!IMPORTANT]
 > You must be assigned to both the *Insider Risk Management Investigators* role group and the *Insider Risk Management Admins* role group to view captured clips. You won't see the **Review captured clips** button if you aren't a member of both role groups. [Learn more about role groups](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
 
-When you select the **Review captured clips** button, captured clips and associated information are displayed in a list. If you select a capture in the list on the left, a video player appears in the center of the screen, and a transcript of activities and events from the clip are displayed to the right of the video player. 
+When you select the **Review captured clips** button, captured clips and associated information are displayed in a list. If you select a captured clip in the list, a video player appears in the center of the screen, and a transcript of activities and events from the clip are displayed to the right of the video player. 
 
 ![Insider risk management forensic evidence captured clips list.](../media/insider-risk-management-capture-explore.png)
 
@@ -158,7 +158,7 @@ Users assigned to the *Insider Risk Management Investigators* role group can del
 Users assigned to the *Insider Risk Management Admins* role group can do bulk deletions through settings. To do this:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **Forensic evidence settings**.
-2. Make sure that the **Allow deletion of forensic user data by an Administrator** option is set to **On**. 
+2. Make sure that the **Allow deletion of forensic user data by an Administrator or Investigator** option is set to **On**. 
 3. Under **Delete a user's** data, click **Select a user**, and then select the user that you want to delete clips for. 
 
 > [!IMPORTANT]
@@ -241,7 +241,7 @@ Contact Microsoft Support if the recommended actions don't resolve issues with t
 
 When forensic evidence is configured, you can opt in to purchase the Forensic add-on for Insider Risk Management to store your capture clips. The add-on is available for organizations with any of the following licenses: Microsoft 365 E5, Microsoft 365 E5 Compliance, or Microsoft 365 E5 Insider Risk Management. 
 
-You can purchase the Forensic add-on for Insider Risk Management in units of 100 GB per month. The purchased capacity is metered based on forensic evidence captures at the tenant level for users included in forensic evidence policies. 100 GB is roughly equal to around 1,100 hours of forensic evidence captures per tenant, assuming a video resolution of 1080p. Each license of forensic evidence add-on for Insider Risk Management is valid for one month (30 days) from the date of purchase. You can purchase multiple licenses at the same time, but each forensic evidence add-on license is valid for just one month from the date of purchase. 
+You can purchase the add-on in units of 100 GB per month. The purchased capacity is metered based on forensic evidence captures at the tenant level for users included in forensic evidence policies. 100 GB is roughly equal to around 1,100 hours of forensic evidence captures per tenant, assuming a video resolution of 1080p. Each add-on license is valid for one month (30 days) from the date of purchase. You can purchase multiple licenses at the same time, but each forensic evidence add-on license is valid for just one month from the date of purchase. 
 
 The 100 GB is calculated based on the volume of forensic evidence captured from endpoints. Once the forensic evidence is captured, it will be retained for 120 days. You can export forensic evidence if needed after the 120-day retention period. 
 
@@ -251,7 +251,7 @@ Each tenant that has a Microsoft 365 E5, Microsoft 365 E5 Compliance, or Microso
 
 If you use up the 20 GB of free capacity and don't subsequently purchase the Forensic add-on for Insider Risk Management, you'll be able to view any clips that you've already captured but won't be able to capture any new clips. 
 
-#### Sign up for 20 GB of trial capacity
+#### Sign up for free 20 GB of capacity
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **Capacity and billing**.
 
