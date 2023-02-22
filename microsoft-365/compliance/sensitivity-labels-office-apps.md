@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 02/22/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -404,7 +404,9 @@ When Word, Excel, and PowerPoint support this feature, sensitivity labels are di
 
 ![Sensitivity labels on the window title bar.](../media/sensitivity-bar-example.png)
 
-When Outlook supports this feature, the sensitivity bar is displayed on the **Subject** line of the email.
+When Outlook supports this feature, the sensitivity bar is displayed on the **Subject** line of the email. For example:
+
+![Sensitivity labels on the Outlook Subject line.](../media/sensitivity-bar-example-outlook.png)
 
 Information about the labels and the ability to select or change a label are also integrated into user workflows that includes save and rename, export, share, print, and [convert to PDF](#pdf-support). For more information and example screenshots, see the blog post announcement, [New sensitivity bar in Office for Windows](https://insider.office.com/blog/sensitivity-bar-in-office-for-windows).
 
