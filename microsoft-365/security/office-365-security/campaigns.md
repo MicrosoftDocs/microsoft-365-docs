@@ -29,15 +29,16 @@ ms.date: 2/9/2023
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-Campaigns in the Microsoft 365 Defender portal identifies and categorizes coordinated email attacks including phishing and malware. Campaigns can help you to:
+Campaigns in the Microsoft 365 Defender portal identifies and categorizes coordinated email attacks, including phishing and malware. Microsoft's management of email attacks into discreet campaigns will help you to:
 
 - Efficiently investigate and respond to phishing and malware attacks, delivered via email.
-- Better understand the scope of the email attack targetting your organization.
+- Better understand the scope of the email attack targeting your organization.
 - Show value of Microsoft Defender for Office to decision makers in preventing email threats.
 
 Campaigns lets you see the big picture of an email attack faster and more complete than any human.
 
-Watch this short video on how campaigns in Microsoft Defender for Office 365 help you understand coordinated email attacks targeting your organization.  
+Watch this short video on how campaigns in Microsoft Defender for Office 365 help you understand coordinated email attacks targeting your organization.
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGBL8]
 
 ## What is a campaign?
