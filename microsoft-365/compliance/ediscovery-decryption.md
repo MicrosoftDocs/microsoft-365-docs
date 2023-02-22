@@ -99,13 +99,13 @@ Documents encrypted with the previous settings can still be returned by an eDisc
 
 ## Decrypting RMS-protected email messages and encrypted file attachments using Content search or eDiscovery (Standard)
 
-Any rights-protected (RMS-protected) email messages included in the results of a Content search will be decrypted when you export them. Additionally, any file that's encrypted with a [Microsoft encryption technology](encryption.md) and is attached to an email message that's included in the search results will be decrypted when it's exported. This decryption capability is enabled by default for members of the eDiscovery Manager role group. This is because the RMS Decrypt management role is assigned to this role group by default. 
+Any rights-protected (RMS-protected) email messages included in the results of a Content search will be decrypted when you export them. This decryption capability is enabled by default for members of the eDiscovery Manager role group. This is because the RMS Decrypt management role is assigned to this role group by default. 
 
 Keep the following things in mind when exporting encrypted email messages and attachments:
   
-- If you enable decryption of RMS-protected messages when you export them, you have to export the search results as individual messages. If you export search results to a PST file, RMS-protected messages will be exported as individual email messages.
-- Attachments encrypted separately from an email aren't decrypted. For example, a user encrypts a Word document and then attaches to an email message that isn't also encrypted. This attachment isn't decrypted.
-- Attachments encrypted as part of the encryption of the associated email message are decrypted. For example, a user creates an email message, attached a Word document, and then encrypts the message (including the attachment). This attachment is decrypted.
+- If you enable decryption of RMS-protected messages when you export them, you have to export the search results as individual messages to support decryption.
+- Attachments encrypted separately from an email aren't decrypted. For example, if a user encrypts a Word document and then attaches to an email message that isn't encrypted, this attachment isn't decrypted.
+- Attachments encrypted as part of the encryption of the associated email message are decrypted. For example, if a user creates an email message, attaches an unencrypted Word document, and then encrypts the message (including the attachment), this attachment is decrypted.
 - Messages that are decrypted are identified in the **ResultsLog** report. This report contains a column named **Decode Status**, and a value of **Decoded** identifies the messages that were decrypted.
 - In addition to decrypting file attachments when exporting search results, you can also preview the decrypted file when previewing search results. You can only view the rights-protected email message after you export it.
 - If you need to prevent someone from decrypting RMS-protect messages and encrypted file attachments, you have to create a custom role group (by copying the built-in eDiscovery Manager role group), and then remove the RMS Decrypt management role from the custom role group. Then add the person who you don't want to decrypt messages as a member of the custom role group.
