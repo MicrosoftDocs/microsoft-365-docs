@@ -355,7 +355,7 @@ For more help in specifying PowerShell advanced settings, see [PowerShell tips f
 > [!NOTE]
 > This capability is currently rolling out in preview for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook), and the row **Label inheritance from email attachments**.
 
-Turn on email inheritance for when users attach labeled documents or labeled emails to an email message that isn't manually labeled. With this configuration, a sensitivity label is dynamically selected for the email message, based on the sensitivity labels that are applied to the attachments and published to the user. The [highest priority label](sensitivity-labels.md#label-priority-order-matters) is dynamically selected when it's supported by Outlook.
+Turn on email inheritance for when users attach labeled documents to an email message that isn't manually labeled. With this configuration, a sensitivity label is dynamically selected for the email message, based on the sensitivity labels that are applied to the attachments and published to the user. The [highest priority label](sensitivity-labels.md#label-priority-order-matters) is dynamically selected when it's supported by Outlook.
 
 Whether this label inheritance will override an existing label on the email message:
 
@@ -365,7 +365,7 @@ Whether this label inheritance will override an existing label on the email mess
 
 You configure this setting in the sensitivity label policy, on the **Default settings for emails** page. For the section Inherit label from attachments, select the checkbox **Email inherits highest priority label from attachments**. The attachment must be a physical file, and can't be a link to a file (for example, a link to a file on Microsoft SharePoint or OneDrive).
 
-When you select this checkbox, you can further select the following option: **Recommend users apply the attachement's label instead of automatically appplying it.** Without this selection, the label is automatically applied but users can still remove the label or select a different label before sending the email.
+When you select this checkbox, you can then further select the following option: **Recommend users apply the attachement's label instead of automatically appplying it.** Without this selection, the label is automatically applied but users can still remove the label or select a different label before sending the email.
 
 > [!NOTE]
 > If you've configured the PowerShell advanced setting **AttachmentAction** for the Azure Information Protection (AIP) unified labeling client to be Automatic or Recommended, these options are automatically reflected in the compliance portal. However, the **AttachmentActionTip** advanced setting for a customized recommendation message doesn't have a corresponding entry in the compliance portal and isn't supported by built-in labeling.
@@ -389,7 +389,6 @@ However, take into consideration the outcome when an email client doesn't suppor
     - **Custom permissions for Word, PowerPoint, and Excel**: If the highest priority label applies just user-defined permissions for Word, PowerPoint, and Excel (the option **Let users assign permissions when they apply the label** and **In Word, PowerPoint, and Excel, prompt users to specify permissions**), no label or protection is selected for the email message because Outlook doesn't support this label configuration.
 
     - **Encrypt-Only**: If the highest priority label applies the encryption setting for Encrypt-Only, no label or protection is selected for the email message because the AIP unified labeling client doesn't support this setting.
-
 
 ## PDF support
 
@@ -518,4 +517,5 @@ You can also create custom reports with your choice of security information and 
 - [Automatically apply or recommend sensitivity labels to your files and emails in Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [Known issues with automatically applying or recommending sensitivity labels](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
-- [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4)
+- [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482
+- -49e7-b746-a385e48d01e4)
