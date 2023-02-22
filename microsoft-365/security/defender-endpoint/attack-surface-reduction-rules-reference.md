@@ -328,7 +328,7 @@ This rule blocks the following file types from launching from email opened withi
 
 Intune name: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft Endpoint Manager name: `Block executable content from email client and webmail`
+Microsoft Configuration Manager name: `Block executable content from email client and webmail`
 
 GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
@@ -343,7 +343,7 @@ Dependencies: Microsoft Defender Antivirus
 > The rule **Block executable content from email client and webmail** has the following alternative descriptions, depending on which application you use:
 >
 > - Intune (Configuration Profiles): Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions).
-> - Endpoint Manager: Block executable content download from email and webmail clients.
+> - Configuration Manager: Block executable content download from email and webmail clients.
 > - Group Policy: Block executable content from email client and webmail.
 
 ### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
