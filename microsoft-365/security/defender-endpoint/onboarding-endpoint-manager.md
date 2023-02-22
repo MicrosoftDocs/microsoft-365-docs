@@ -67,7 +67,7 @@ Here are the links you'll need for the rest of the process:
 
 For more information about Microsoft Intune, go to [Microsoft Intune securely manages identities, manages apps, and manages devices](/mem/intune/fundamentals/what-is-intune).
 
-## Step 1: Onboard devices by creating a group in MEM to assign configurations on
+## Step 1: Onboard devices by creating a group in Intune to assign configurations on
 
 ### Identify target devices or users
 

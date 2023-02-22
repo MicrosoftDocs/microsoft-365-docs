@@ -43,7 +43,7 @@ Customer tenants that don't meet these requirements will have access to only a l
 
 To view customer tenant devices on the device management pages, an MSP must:
 
-- Enroll all customer devices in Microsoft Endpoint Manager (MEM). For more information, see [Enroll devices in Microsoft Intune](/mem/intune/enrollment/).
+- Enroll all customer devices in Microsoft Intune. For more information, see [Enroll devices in Microsoft Intune](/mem/intune/enrollment/).
 - Assign compliance policies to all customer devices. For more information, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 ## Requirements for enabling user management

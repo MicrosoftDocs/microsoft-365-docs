@@ -42,7 +42,7 @@ When you view details about specific threats or devices, you'll see recommendati
 | Configure protection | Your threat protection policies need to be configured. Select the link to go to your policy configuration page.<br><br>Need help? See [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). |
 | Update policy | Your antivirus and real-time protection policies need to be updated or configured. Select the link to go to the policy configuration page.<br><br>Need help? See [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). |
 | Run quick scan | Starts a quick antivirus scan on the device, focusing on common locations where malware might be registered, such as registry keys and known Windows startup folders. |
-| Run full scan | Starts a full antivirus scan on the device, focusing on common locations where malware might be registered, and including every file and folder on the device. Results are sent to [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
+| Run full scan | Starts a full antivirus scan on the device, focusing on common locations where malware might be registered, and including every file and folder on the device. Results are sent to [Microsoft Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Update antivirus | Requires the device to get [security intelligence updates](https://go.microsoft.com/fwlink/?linkid=2149926) for antivirus and antimalware protection. |
 | Restart device | Forces a Windows device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user isn't automatically notified of the restart and could lose unsaved work. |
 
@@ -58,7 +58,7 @@ When you view details about specific threats or devices, you'll see recommendati
 
 ## Manage threat detections in Microsoft Intune
 
-You can use Microsoft Endpoint Manager to manage threat detections as well. First, all devices whether Windows, iOS or Android, must be [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods) (part of Microsoft Endpoint Manager).
+You can use Microsoft Intune to manage threat detections as well. First, all devices whether Windows, iOS or Android, must be [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods).
 
 1. Go to the Microsoft Intune admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> and sign in.
 
@@ -70,14 +70,14 @@ You can use Microsoft Endpoint Manager to manage threat detections as well. Firs
 
 For example, suppose that devices are listed on the **Active malware** tab. When you select a device, you'll have certain actions available, such as **Restart**, **Quick Scan**, **Full Scan**, **Sync**, or **Update signatures**. Select an action for that device.
 
-The following table describes the actions you might see in Microsoft Endpoint Manager.<br><br>
+The following table describes the actions you might see in Microsoft Intune.<br><br>
 
 | Action | Description |
 |--|--|
 | Restart | Forces a Windows device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user isn't automatically notified of the restart and could lose unsaved work. |
-| Quick Scan | Starts a quick antivirus scan on the device, focusing on common locations where malware might be registered, such as registry keys and known Windows startup folders. Results are sent to [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
-| Full Scan | Starts a full antivirus scan on the device, focusing on common locations where malware might be registered, and including every file and folder on the device. Results are sent to [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
-| Sync | Requires a device to check in with Intune (part of Microsoft Endpoint Manager). When the device checks in, the device receives any pending actions or policies assigned to the device. |
+| Quick Scan | Starts a quick antivirus scan on the device, focusing on common locations where malware might be registered, such as registry keys and known Windows startup folders. Results are sent to [Microsoft Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
+| Full Scan | Starts a full antivirus scan on the device, focusing on common locations where malware might be registered, and including every file and folder on the device. Results are sent to [Microsoft Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
+| Sync | Requires a device to check in with Intune. When the device checks in, the device receives any pending actions or policies assigned to the device. |
 | Update signatures | Requires the device to get [security intelligence updates](https://go.microsoft.com/fwlink/?linkid=2149926) for antivirus and antimalware protection. |
 
 > [!TIP]
