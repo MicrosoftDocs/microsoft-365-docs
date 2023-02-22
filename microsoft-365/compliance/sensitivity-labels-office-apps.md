@@ -388,9 +388,9 @@ For end user documentation, see [Create protected PDFs from Office files](https:
 
 ## Sensitivity bar
 
-Supported in preview for built-in labeling in Windows, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support this feature.
+Supported in preview for built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support this feature.
 
-When Word, Excel, and PowerPoint support this feature, sensitivity labels are now displayed in a sensitivity bar, next to the file name on the top window bar. For example:
+When Word, Excel, and PowerPoint support this feature, sensitivity labels are displayed in a sensitivity bar, next to the file name on the top window bar. For example:
 
 ![Sensitivity labels on the window title bar.](../media/sensitivity-bar-example.png)
 
