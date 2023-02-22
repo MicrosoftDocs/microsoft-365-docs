@@ -63,7 +63,7 @@ In some cases, the sender of bulk mail doesn't generate enough complaints for th
 > [!TIP]
 >To better protect certain groups of users such as your c-suite and priority accounts, you can create a specialized policy specifically scoped to them and set a higher BCL threshold, alongside a separate transport rule (if applicable). These groups of users might be more vulnerable to unsolicited emails due to their email addresses being readily accessible in the public domain.
 
-[Use mail flow rules to filter bulk email in Exchange Online | Microsoft Learn](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail.md)
+[Use mail flow rules to filter bulk email in Exchange Online | Microsoft Learn](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail)
 
 ## For customers with Microsoft Defender for Office 365
 
@@ -75,4 +75,4 @@ In some cases, the sender of bulk mail doesn't generate enough complaints for th
 
 [Email Protection Basics in Microsoft 365: Bulk Email - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/email-protection-basics-in-microsoft-365-bulk-email/ba-p/3445337)
 
-[What's the difference between junk email and bulk email? - Office 365 | Microsoft Learn](/microsoft-365/security/office-365-security/anti-spam-spam-vs-bulk-about.md)
+[What's the difference between junk email and bulk email? - Office 365 | Microsoft Learn](../anti-spam-spam-vs-bulk-about.md)
