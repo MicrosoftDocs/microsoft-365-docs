@@ -49,7 +49,7 @@ The following table lists the specific store app types and how you can add them 
 | Microsoft Edge, version 77 and later for macOS | Store app | Windows | Select **macOS** under **Microsoft Edge, version 77 and later** as the **app type**. |
 | Microsoft Defender for Endpoint (macOS) | Store app (Microsoft Defender ATP) | macOS | Select **macOS** under **Microsoft Defender for Endpoint** as the app type and then continue by setting up the app in Intune.  |
 
-You can add an app in from [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) in the **Apps** workload. You can find free apps in the apps store by selecting **Search the App Store**.
+You can add an app in from [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) in the **Apps** workload. You can find free apps in the apps store by selecting **Search the App Store**.
 
 :::image type="content" border="true" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-01.png" alt-text="Add apps to Intune from the console.":::
 

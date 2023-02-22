@@ -27,9 +27,15 @@ You can add the following store app types to Intune.
 | App type | Description |
 |---|---|
 | Android store apps | Android store apps are available to add to Intune from the [Google Play store](https://play.google.com/store/apps). Intune can deploy these apps to Android devices. |
-| Managed Google Play apps | Managed Google Play apps are available to add to Intune from the managed Google Play Store. Intune can deploy these apps specifically to Android Enterprise devices. Intune provides an app type specifically for Managed Google Play apps, which makes it easy to add this type of app. There are three types of Managed Google Play apps:<ul><li>Managed Google Play store app</li><li>Managed Google Play private app</li><li>Managed Google Play web apps</li></ul>   |
-| iOS/iPadOS store apps | iOS store apps are available to add to Intune from [Apple's app store](https://www.apple.com/app-store/). Intune can deploy these apps to iOS devices. | 
+| Managed Google Play apps | Managed Google Play apps are available to add to Intune from the [Managed Google Play store](https://play.google.com/work). Intune can deploy these apps specifically to Android Enterprise devices. Intune provides an app type specifically for Managed Google Play apps, which makes it easy to add this type of app. There are three types of Managed Google Play apps:<ul><li>Managed Google Play store app</li><li>Managed Google Play private app</li><li>Managed Google Play web apps</li></ul>   |
+| iOS/iPadOS store apps | iOS store apps are available to add to Intune from [Apple's app store](https://www.apple.com/app-store/). Intune can deploy these apps to iOS/iPadOS devices. | 
 | Microsoft store apps | Microsoft store apps are available to add to Intune from the [Microsoft app store](https://apps.microsoft.com/store/apps). Intune can deploy these apps to Windows devices. |
-| Microsoft store for business | Microsoft store apps are available to add to Intune from the [Microsoft store for business](https://www.microsoft.com/business-store). You can either obtain free apps or purchase apps for your organization, for you individually, or in-volume. Intune can deploy these apps to Windows devices. **NOTE:** Microsoft Store for Business will be retired in the first quarter of 2023. |
+
+Store app can be added to Intune by first selecting the app type.
+
+:::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-08.png" alt-text="Intune app types" border="true" :::
+ 
+> [!NOTE]
+> Microsoft Store for Business will be retired in the first quarter of 2023. However, admins can still leverage the connection to Store for Business and Education from their UEM solution to deploy apps to managed Windows 11 devices until they are retired in 2023.
 
 Intune integrates directly with the app stores when adding apps for many app scenarios. In addition, Intune provides capabilities to assign, configure, protect, manage, and retire the apps that you need to manage. Also, Intune provides several reports to keep track of app protection, installation, and licensing.

@@ -115,9 +115,9 @@ Before you distribute a managed app to the members of your organization, you fir
 
 ## What's in this solution
 
-This solution steps you through the process of adding managed apps to Microsoft Intune. Adding managed apps to Intune is the first step you take before you configure, protect, and deploy the apps to members of your organization. By managing apps at your organization, you help to protect and secure your organization’s data.
+This solution steps you through the process of adding managed apps to Microsoft Intune. Adding managed apps to Intune is the first step you take before you configure, protect, and deploy the apps so that members of your organization can safely use them. By managing apps at your organization, you help to protect and secure your organization’s data.
 
-:::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-02.png" alt-text="Steps used to purchase and add apps to Microsoft Intune.":::
+:::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-02.png" alt-text="Steps used to purchase and add apps to Microsoft Intune." border="false" :::
 
 <!--
 ## Additional app resources
