@@ -42,7 +42,9 @@ This article provides an overview of automated attack disruption and includes li
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Automatic attack disruption is designed to contain attacks in progress, limit the impact on an organization’s assets, and provide more time for the SOC to remediate the attack fully. Unlike known protection methods such as prevention and blocking based on a single indicator of compromise, the attack disruption in Microsoft 365 Defender leverages the full breadth of our XDR signal to act at the incident level, taking the entire attack into account. While many XDR and SOAR solutions allow you to create your automatic response actions, the key difference to Microsoft 365 Defender’s automatic attack disruption is that it is built-in and uses insights from our security researchers and advanced AI models to counteract the complexities of advanced attacks. It considers the entire context of signals from different sources to determine compromised assets.
+Automatic attack disruption is designed to contain attacks in progress, limit the impact on an organization’s assets, and provide more time for the SOC to remediate the attack fully. Unlike known protection methods such as prevention and blocking based on a single indicator of compromise, the attack disruption in Microsoft 365 Defender leverages the full breadth of our XDR signal to act at the incident level, taking the entire attack into account. 
+
+While many XDR and SOAR solutions allow you to create your automatic response actions, the key difference to Microsoft 365 Defender’s automatic attack disruption is that it is built-in and uses insights from our security researchers and advanced AI models to counteract the complexities of advanced attacks. It considers the entire context of signals from different sources to determine compromised assets.
 
 Automatic attack disruption operates in three key stages:
 
@@ -59,7 +61,7 @@ We understand that taking automatic action sometimes comes with hesitation from 
 Investigations are integral to monitoring our signals and the attack threat landscape to ensure high quality and accurate protection.
 
 > [!TIP]
-> This article describes how attack disruption works. To configure these capabilities, see [Configure attack disruption capabilities in Microsoft 365 Defender.](/microsoft-365/security/defender/configure-attack-disruption.md)
+> This article describes how attack disruption works. To configure these capabilities, see [Configure attack disruption capabilities](configure-attack-disruption.md) in Microsoft 365 Defender.
 
 ## Automated response actions
 In automatic attack disruption, we leverage Microsoft-based XDR response actions. Examples of these actions are:
@@ -67,7 +69,7 @@ In automatic attack disruption, we leverage Microsoft-based XDR response actions
 - [Device contain](/microsoft-365/security/defender-endpoint/respond-machine-alerts#contain-devices-from-the-network) - based on Microsoft Defender for Endpoint’s capability, this action is an automatic containment of a suspicious device to block any incoming/outgoing communication with the said device.
 - [Disable user](/defender-for-identity/remediation-actions) - based on Microsoft Defender for Identity’s capability, this action is an automatic suspension of a compromised account to prevent additional damage like lateral movement, malicious mailbox use, or malware execution.
 
-For more information, see [remediation actions](/microsoft-365/security/defender/m365d-remediation-actions.md) in Microsoft 365 Defender.
+For more information, see [remediation actions](m365d-remediation-actions.md) in Microsoft 365 Defender.
 
 ## Identify when an attack disruption happens in your environment
 
@@ -92,5 +94,5 @@ For more information see ‘view attack disruption details and results’.
 
 ## Next steps
 
-- [Configuring automatic attack disruption in Microsoft 365 Defender](/microsoft-365/security/defender/configure-attack-disruption.md)
-- [View details and results](/microsoft-365/security/defender/autoad-results.md)
+- [Configuring automatic attack disruption in Microsoft 365 Defender](configure-attack-disruption.md)
+- [View details and results](autoad-results.md)
