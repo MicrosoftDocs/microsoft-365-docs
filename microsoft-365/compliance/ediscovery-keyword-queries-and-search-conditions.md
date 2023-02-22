@@ -26,7 +26,7 @@ ms.custom:
 
 # Keyword queries and search conditions for eDiscovery
 
-This article describes the available properties that can be used to find content across email and chat in Exchange Online and documents and files stored on SharePoint and OneDrive for Business using the eDiscovery search tools in the Microsoft Purview compliance portal.
+This article describes the properties available to help find content across email and chat in Exchange Online and documents and files stored on SharePoint and OneDrive for Business using the eDiscovery search tools in the Microsoft Purview compliance portal.
 
 This includes Content search, Microsoft Purview eDiscovery (Standard), and Microsoft Purview eDiscovery (Premium) (eDiscovery searches in eDiscovery (Premium) are called *collections*). You can also use the **\*-ComplianceSearch** cmdlets in [Security & Compliance PowerShell](/powershell/exchange/scc-powershell) to search for these properties.
 
@@ -53,7 +53,7 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 - Keyword searches aren't case-sensitive. For example, **cat** and **CAT** return the same results.
 - The Boolean operators **AND**, **OR**, **NOT**, and **NEAR** must be uppercase.
 - A space between two keywords or two  `property:value` expressions is the same as using **AND**. For example,  `from:"Sara Davis" subject:reorganization` returns all messages sent by Sara Davis that contain the word reorganization in the subject line.
-- Use syntax that matches the `property:value` format. Values aren't case-sensitive, and they can't have a space after the operator. If there's a space, your intended value will be a full-text search. For example `to: pilarp` searches for "pilarp" as a keyword, rather than for messages that were sent to pilarp.
+- Use syntax that matches the `property:value` format. Values aren't case-sensitive, and they can't have a space after the operator. If there's a space, your intended value will be a full-text search. For example `to: pilarp` searches for "pilarp" as a keyword, rather than for messages sent to pilarp.
 - When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
 - You can use only prefix searches; for example, **cat\*** or **set\***. Suffix searches (**\*cat**), infix searches (**c\*t**), and substring searches (**\*cat\***) aren't supported.
 - When searching a property, use double quotation marks ("  ") if the search value consists of multiple words. For example, `subject:budget Q1` returns messages that contain **budget** in the subject line and that contain **Q1** anywhere in the message or in any of the message properties. Using `subject:"budget Q1"` returns all messages that contain **budget Q1** anywhere in the subject line.
@@ -190,28 +190,6 @@ The following table lists the contact properties that are indexed and that you c
 |OtherAddress|The value for the **Other** address property.|
 |Surname|The name in the **Last** name property.|
 |Title|The title in the **Job title** property.|
-
-<!--## Searchable sensitive data types
-
-You can use eDiscovery search tools in the compliance portal to search for sensitive data, such as credit card numbers or social security numbers, that is stored in documents on SharePoint and OneDrive for Business sites. You can do this by using the `SensitiveType` property and the name (or ID) of a sensitive information type in a keyword query. For example, the query `SensitiveType:"Credit Card Number"` returns documents that contain a credit card number. The query  `SensitiveType:"U.S. Social Security Number (SSN)"` returns documents that contain a U.S. social security number.
-
-To see a list of the sensitive information types that you can search for, go to **Data classifications** \> **Sensitive info types** in the compliance portal. Or you can use the **Get-DlpSensitiveInformationType** cmdlet in Security & Compliance PowerShell to display a list of sensitive information types.
-
-For more information about creating queries using the `SensitiveType` property, see [Form a query to find sensitive data stored on sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
-
-<!--### Limitations for searching sensitive data types
-
-- To search for custom sensitive information types, you have to specify the ID of the sensitive information type in the `SensitiveType` property. Using the name of a custom sensitive information type (as shown in the example for built-in sensitive information types in the previous section) will return no results. Use the **Publisher** column on the **Sensitive info types** page in the compliance center (or the **Publisher** property in PowerShell) to differentiate between built-in and custom sensitive information types. Built-in sensitive data types have a value of `Microsoft Corporation` for the **Publisher** property.
-
-  To display the name and ID for the custom sensitive data types in your organization, run the following command in Security & Compliance PowerShell:
-
-  ```powershell
-  Get-DlpSensitiveInformationType | Where-Object {$_.Publisher -ne "Microsoft Corporation"} | FT Name,Id
-  ```
-
-  Then you can use the ID in the `SensitiveType` search property to return documents that contain the custom sensitive data type; for example, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
-
-- You can't use sensitive information types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. This includes 1:1 chat messages, 1:N group chat messages, and team channel conversations in Microsoft Teams because all of this content is stored in mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive email data in transit. For more information, see [Learn about data loss prevention](dlp-learn-about-dlp.md) and [Search for and find personal data](/compliance/regulatory/gdpr).-->
 
 ## Search operators
 
