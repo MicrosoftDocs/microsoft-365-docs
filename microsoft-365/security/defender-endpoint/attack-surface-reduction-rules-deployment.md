@@ -51,7 +51,7 @@ This deployment collection provides information about the following aspects of M
 
 As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to be methodical in your planning and implementation. Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully.  
 
-> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="Plan Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules, test MDE ASR rules, Enable MDE ASR rules, maintain ASR rules." lightbox="images/asr-rules-deployment-phases.png":::
+  :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="Plan Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules, test MDE ASR rules, Enable MDE ASR rules, maintain ASR rules." lightbox="images/asr-rules-deployment-phases.png":::
 
 ## Important pre-deployment caveat
 
@@ -61,7 +61,7 @@ While you're going through the process of planning, auditing, and enable ASR rul
 - [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 - [Block persistence through Windows Management Instrumentation (WMI) event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
 
-Typically, you can enable the standard protection rules with minimal-to-no noticeable impact to the end user. For an easy method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option)
+Typically, you can enable the standard protection rules with minimal-to-no noticeable impact to the end user. For an easy method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
 
 > [!NOTE]
 > For Customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules: Microsoft advises customers to run their HIPS solution side-by-side with their ASR rules deployment until the moment you shift from Audit to Block mode. Keep in mind that you must reach out to your 3rd-party antivirus vendor for exclusion recommendations.
@@ -96,14 +96,14 @@ As outlined in [Use attack surface reduction rules to prevent malware infection]
 
 ### ASR infrastructure requirements
 
-Although multiple methods of implementing ASR rules are possible, this guide is based on an infrastructure consisting of:
+Although multiple methods of implementing ASR rules are possible, this guide is based on an infrastructure consisting of
 
 - Azure Active Directory
 - Microsoft Intune
 - Windows 10 and Windows 11 devices
 - Microsoft Defender for Endpoint E5 or Windows E5 licenses
 
-To take full advantage of ASR rules and reporting, we recommend using a Microsoft 365 Defender E5 or Windows E5 license, and A5. Learn more: [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
+To take full advantage of ASR rules and reporting, we recommend using a Microsoft 365 Defender E5 or Windows E5 license, and A5. Learn more at [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
 
 > [!NOTE]
 > There are multiple methods to configure ASR rules. ASR rules can be configured using: Microsoft Intune, PowerShell, Group Policy, Microsoft Configuration Manager (ConfigMgr), Intune OMA-URI.
@@ -123,7 +123,7 @@ Microsoft Defender Antivirus must not be in any of the following modes:
 - Limited periodic scanning (LPS)
 - Off
 
-See: [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md).
+See [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md) for more.
 
 ### Cloud Protection (MAPS) must be enabled to enable ASR rules
 
