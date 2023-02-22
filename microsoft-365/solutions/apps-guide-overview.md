@@ -21,6 +21,28 @@ To help protect and secure your organization’s data, you can provide the membe
 > [!NOTE]
 > Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, servers, and shared devices that your organization uses. Examples of shared and specialized devices include retail point of sale devices, ruggedized devices, digital interactive whiteboards, conference room devices, and holographic wearable computers. Additionally, endpoints also include the apps used by your organization.
 
+Deploying Microsoft Intune commonly involves the following steps:
+- Step 1 - Set up Intune
+- Step 2 - Set up managed apps
+    - Add managed apps
+    - Configure managed apps
+    - Protect managed apps
+- Step 3 - Use device compliance and conditional access
+- Step 4 - Create device configuration profiles
+- Step 5 - Enroll your devices to be managed
+<!-- 
+Add graphic
+-->
+
+The content provided in this solution focuses on adding managed apps to Intune. You will learn about the following app areas in Intune:
+- Types of managed apps
+- Methods to acquire and purchase managed apps
+- Licenses for managed apps
+- Steps to add manage apps
+<!-- 
+Add graphic
+-->
+
 ## MAM configurations
 
 When apps are used without restrictions, company and personal data can get intermingled. Company data can end up in locations like personal storage or transferred to apps beyond your purview and result in data exposure and data loss. One of the primary reasons to use either **MAM without device enrollment** or **MAM with device enrollment** is to help protect your organization's data.
@@ -31,7 +53,7 @@ Microsoft Endpoint Manager supports two MAM configurations:
 
 ### MAM without device management
 
-Managing the apps that the members of your organization uses on their devices is called mobile application management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed. This configuration allows your organization's apps to be managed by Intune, but doesn't enroll the devices to be managed by Intune. This configuration is commonly referred to as **MAM without device enrollment**, or **MAM-WE**. IT administrators can manage apps using MAM by using Intune configuration and protection policies on devices not enrolled with Intune Mobile Device Management (MDM). In the MAM scenario, the apps are managed based on the signed-in user of the app on the device. MAM is ideal to help protect organization data on devices used by members of your organization for both personal and work tasks.
+Managing the apps that the members of your organization uses on their devices is called mobile application management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed. This configuration allows your organization's apps to be managed by Intune, but doesn't enroll the devices to be managed by Intune. This configuration is commonly referred to as **MAM without device enrollment**, or **MAM-WE**. IT administrators can manage apps using MAM by using Intune configuration and protection policies on devices not enrolled with Intune Mobile Device Management (MDM). In the MAM scenario, the apps are managed based on the signed-in user of the app on the device. MAM is ideal to help protect organization data on devices used by members of your organization for both personal and work tasks. MAM without MDM is popular for organizations that enable members of their organization to work remotely on their own devices (BYOD).
 
 > [!TIP]
 >  Many productivity apps, such as the Microsoft Office apps, can be managed by Intune MAM. See the official list of [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps) available for public use.
@@ -93,9 +115,9 @@ Before you distribute a managed app to your workforce, you first need to add the
 
 ## What's in this solution
 
-This solution steps you through the process of adding managed apps to Microsoft Intune. Adding managed apps to Intune is the first step you take before you configuring, protecting, and deploying the apps to members of your organization. By managing apps at your organization, you help to protect and secure your organization’s data.
+This solution steps you through the process of adding managed apps to Microsoft Intune. Adding managed apps to Intune is the first step you take before you configure, protect, and deploy the apps to members of your organization. By managing apps at your organization, you help to protect and secure your organization’s data.
 
-:::image type="content" border="true" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-02.png" alt-text="Steps used to purchase and add apps to Microsoft Intune.":::
+:::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-02.png" alt-text="Steps used to purchase and add apps to Microsoft Intune.":::
 
 <!--
 ## Additional app resources

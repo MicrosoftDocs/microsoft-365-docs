@@ -65,11 +65,11 @@ When you purchase a plan that includes Microsoft Intune, there are [Microsoft ap
 | **Automation, app building, and chatbots** | Power Apps for Microsoft 365, Power Automate for Microsoft 365, and more |
 | **Information protection** | Azure Information Protection, Automatic sensitivity labeling in Office 365 apps, Endpoint Data Loss Prevention, and more |
 | **Threat protection** | Microsoft Defender Antimalware, Microsoft Defender Firewall, Application Guard for Office 365, and more |
-| **Clock access security broker** | Microsoft Defender for Cloud Apps Discovery, Microsoft Developer for Cloud Apps, Office 365 Cloud App Security |
+| **Access and security** | Microsoft Defender for Cloud Apps Discovery, Microsoft Developer for Cloud Apps, Office 365 Cloud App Security |
 | **Identity and access management** | Azure Active Directory Premium, Multi Factor Authentication, Microsoft Advanced Threat Analytics, and more |
 | **Data lifecycle management** | Rules-based Retention Policies, Machine Learning-bsaed Retention, and more |
 | **eDiscovery and auditing** | Content Search, eDiscovery, and more |
-| **Insider rick management** | Communication Compliance, Priviledged Access Management, and more |
+| **Risk management** | Communication Compliance, Priviledged Access Management, and more |
 | **Windows** | Windows 11 Edition, Azure Virtual Desktop, and Universal Print |
 
 

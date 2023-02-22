@@ -120,6 +120,6 @@ Use the following steps to add line-of-business apps to Intune:
 
 ## Next step
 
-[![Step 5 to manage apps and licenses](../media/purchase-add-managed-apps/purchase-add-managed-apps-06.png)](apps-add-step-5.md)
+[![Step 5 to manage apps and licenses](../media/purchase-add-managed-apps/purchase-add-managed-apps-07.png)](apps-add-step-5.md)
 
 Continue with [Step 5](apps-add-step-5.md) to manage apps and licenses in Microsoft Intune.
