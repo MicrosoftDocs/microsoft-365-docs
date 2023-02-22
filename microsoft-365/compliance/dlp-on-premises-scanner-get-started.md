@@ -21,12 +21,12 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MET150
-description: "This article describes the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises repositories."
+description: "This article describes the prerequisites and configuration for the Microsoft Purview Data Loss Prevention on-premises repositories."
 ---
 
 # Get started with the data loss prevention on-premises repositories
 
-This article walks you through the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises repositories.
+This article walks you through the prerequisites and configuration for the Microsoft Purview Data Loss Prevention on-premises repositories.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -41,7 +41,7 @@ Before you get started with DLP on-premises repositories, you should confirm you
 - Microsoft 365 E5 Information Protection & Governance 
 
 
-For full licensing details see: [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+For full licensing details, see: [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 > [!IMPORTANT]
 > All users who contribute to the scanned location either by adding files or consuming files need to have a license, not just the scanner user.
@@ -77,7 +77,7 @@ Here's a list of applicable role groups that are in preview. To learn more about
 ### DLP on-premises repositories prerequisites
 
 - The Azure Information Protection (AIP) scanner implements DLP policy matching and policy enforcement. The scanner is installed as part of the AIP client so your installation must meet all the prerequisites  for AIP, the AIP client, and the AIP unified labeling scanner.
-- Deploy the AIP  client and scanner. For more information see, [Install the AIP unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) and, [Configuring and installing the information protection scanner](deploy-scanner-configure-install.md).
+- Deploy the AIP  client and scanner. For more information, see, [Install the AIP unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) and, [Configuring and installing the information protection scanner](deploy-scanner-configure-install.md).
 - There must be at least one label and policy published in the tenant, even if all your detection rules are based on sensitive information types only.
 
 ## Deploy the DLP on-premises scanner
@@ -87,7 +87,7 @@ Here's a list of applicable role groups that are in preview. To learn more about
     1. Network discovery jobs configuration is an optional step. You can skip it and define specific repositories to be scanned in your content scan job.
     2. You must create content scan job and specify the repositories that host files that need to be evaluated by the DLP engine.
     3. Enable DLP rules in the created Content scan job, and set the **Enforce** option to **Off**, unless you want to proceed directly to the DLP enforcement stage.
-3. Verify that you content scan job is assigned to the right cluster. If you still did not create a content scan job create a new one and assign it to the cluster that contains the scanner nodes.
+3. Verify that your content scan job is assigned to the right cluster. If you still didn't create a content scan job create a new one and assign it to the cluster that contains the scanner nodes.
 
 4. Connect to the [Azure Information Protection extension in Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) and add your repositories to the content scan job that will perform the scan.
 
@@ -101,7 +101,7 @@ Here's a list of applicable role groups that are in preview. To learn more about
 
 6. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) in the Microsoft Purview compliance portal.
 
-7. Choose **Create policy** and create a test DLP policy. See [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) if you need help creating a policy. Be sure to run it in test until you are comfortable with this feature. Use these parameters for your policy:
+7. Choose **Create policy** and create a test DLP policy. See [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) if you need help with creating a policy. Be sure to run it in test until you're comfortable with this feature. Use these parameters for your policy:
     1. Scope the DLP on-premises repositories rule to specific locations if needed. If you scope **locations** to **All**, all files scanned by the scanner will be subject to the DLP rule matching and enforcement.
     1. When specifying the locations, you can use either exclusion or inclusion list. You can either define that the rule is relevant only to paths matching one of the patterns listed in inclusion list or, all files, except the files matching the pattern listed in inclusion list. No local paths are supported. Here are some examples of valid paths:
       - \\\server\share
@@ -140,7 +140,7 @@ Here's a list of applicable role groups that are in preview. To learn more about
 
 
 ## Next steps
-Now that you have deployed a test policy for DLP on-premises locations and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
+Now that you've deployed a test policy for DLP on-premises locations and can view the activity data in Activity explorer, you're ready to move on to your next step where you create DLP policies that protect your sensitive items.
 
 - [Using DLP on-premises](dlp-on-premises-scanner-use.md)
 
