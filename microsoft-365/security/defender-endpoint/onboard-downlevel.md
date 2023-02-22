@@ -156,15 +156,13 @@ Verify that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are
 > [!NOTE]
 > Running Microsoft Defender Antivirus is not required but it is recommended. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode. You can only confirm that passive mode is on after verifying that Microsoft Defender for Endpoint sensor (SENSE) is running. 
 >
+> As Microsoft Defender Antivirus is only supported for Windows 10 and Windows 11, step 1 does not apply when running Windows Server 2008 R2 SP1.
 
 1. Run the following command to verify that Microsoft Defender Antivirus is installed:
 
-> [!NOTE]
-> Microsoft Defender Antivirus is only supported for Windows 10 and Windows 11. This step does not apply when running Windows Server 2008 R2 SP1.
-
    ```sc.exe query Windefend```
-
-    If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender Antivirus. For more information, see [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-windows.md).
+   
+ If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender Antivirus. For more information, see [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-windows.md).
 
     For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
 
