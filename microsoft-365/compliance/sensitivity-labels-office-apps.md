@@ -386,13 +386,25 @@ For more information about this capability, see the announcement [Apply sensitiv
 
 For end user documentation, see [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4).
 
+### Disabling PDF support
+
+If you need to disable the PDF support in Office apps for Word, Excel, and PowerPoint, you can do so by using an Office setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**:
+
+- **Use the Sensitivity feature in Office to apply sensitivity labels to PDFs**
+
+Set the value to **0**.
+
+Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
+
 ## Sensitivity bar
 
-Supported in preview for built-in labeling in Windows, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support this feature.
+Supported in preview for built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support this feature.
 
-For the supported apps, sensitivity labels are now displayed in a sensitivity bar, next to the file name on the top window bar. For example:
+When Word, Excel, and PowerPoint support this feature, sensitivity labels are displayed in a sensitivity bar, next to the file name on the top window bar. For example:
 
 ![Sensitivity labels on the window title bar.](../media/sensitivity-bar-example.png)
+
+When Outlook supports this feature, the sensitivity bar is displayed on the **Subject** line of the email.
 
 Information about the labels and the ability to select or change a label are also integrated into user workflows that includes save and rename, export, share, print, and [convert to PDF](#pdf-support). For more information and example screenshots, see the blog post announcement, [New sensitivity bar in Office for Windows](https://insider.office.com/blog/sensitivity-bar-in-office-for-windows).
 

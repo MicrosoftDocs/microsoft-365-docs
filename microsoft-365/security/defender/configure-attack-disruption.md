@@ -25,7 +25,7 @@ f1.keywords: CSH
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 365 Defender includes powerful [automated attack disruption](/microsoft-365/security/defender/) capabilities that can protect your environment from sophisticated, high-impact attacks.
+Microsoft 365 Defender includes powerful [automated attack disruption](automatic-attack-disruption.md) capabilities that can protect your environment from sophisticated, high-impact attacks.
 
 This article describes how to configure automatic attack disruption capabilities in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> with these steps:
 
@@ -66,8 +66,8 @@ Excluding user accounts is not recommended, and accounts added to this list wonâ
 
 ## Next step
 
-- [View details and results](/microsoft-365/security/defender/autoad-results.md)
+- [View details and results](autoad-results.md)
 
 ## See also
 
-- [Automatic attack disruption in Microsoft 365 Defender](/microsoft-365/security/defender/automatic-attack-disruption.md)
+- [Automatic attack disruption in Microsoft 365 Defender](automatic-attack-disruption.md)
