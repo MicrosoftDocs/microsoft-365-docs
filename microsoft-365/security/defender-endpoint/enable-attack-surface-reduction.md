@@ -158,7 +158,7 @@ You can use Microsoft Intune OMA-URI to configure custom ASR rules. The followin
 
 1. Open the Microsoft Intune admin center. In the **Home** menu, click  **Devices**, select **Configuration profiles**, and then click **Create profile**.
 
-    :::image type="content" source="images/mem01-create-profile.png" alt-text="The Create profile page in the Microsoft Intune admin center portal" lightbox="images/mem01-create-profile.png":::
+    :::image type="content" source="images/mem01-create-profile.png" alt-text="The Create profile page in the Microsoft Intune admin center portal." lightbox="images/mem01-create-profile.png":::
 
 2. In **Create a profile**, in the following two drop-down lists, select the following:
 
@@ -168,7 +168,7 @@ You can use Microsoft Intune OMA-URI to configure custom ASR rules. The followin
 
    Select **Custom**, and then select **Create**.
 
-    :::image type="content" source="images/mem02-profile-attributes.png" alt-text="The rule profile attributes in the Microsoft Intune admin center portal" lightbox="images/mem02-profile-attributes.png":::
+    :::image type="content" source="images/mem02-profile-attributes.png" alt-text="The rule profile attributes in the Microsoft Intune admin center portal." lightbox="images/mem02-profile-attributes.png":::
 
 3. The Custom template tool opens to step **1 Basics**. In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional).
 
@@ -176,7 +176,7 @@ You can use Microsoft Intune OMA-URI to configure custom ASR rules. The followin
 
 4. Click **Next**. Step **2 Configuration settings** opens. For OMA-URI Settings, click **Add**. Two options now appear: **Add** and **Export**.
 
-    :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="The configuration settings in the Microsoft Intune admin center portal" lightbox="images/mem04-2-configuration-settings.png":::
+    :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="The configuration settings in the Microsoft Intune admin center portal." lightbox="images/mem04-2-configuration-settings.png":::
 
 5. Click **Add** again. The **Add Row OMA-URI Settings** opens. In **Add Row**, do the following:
 
