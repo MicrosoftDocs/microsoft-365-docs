@@ -45,7 +45,7 @@ Bulk mail is typically advertising emails or marketing messages. These emails ca
 1. **Login** to the Microsoft Security portal at https://security.microsoft.com.
 1. On the **left nav**, under **Email & collaboration**, select **Policies & rules**.
 1. Select **Threat policies** and then **Anti-Spam**.
-1. When the page loads, the next action you'll take depend on the type of policy you're using:
+1. When the page loads, the next action you'll take depends on the type of policy you're using:
    1. Preset Policies can't be edited. The threshold is 6 in standard, 5 in strict.
    1. The default (inbuilt) policy is 7
    1. Custom policies are set to 7 by default unless another value is provided.
