@@ -47,7 +47,7 @@ While Defender for Endpoint supports onboarding of various endpoints and tools, 
 
 This topic guides users in:
 
-- Step 1: Onboarding devices to the service by creating a group in Microsoft Endpoint Manager (MEM) to assign configurations on
+- Step 1: Onboarding devices to the service by creating a group in Microsoft Intune to assign configurations on
 - Step 2: Configuring Defender for Endpoint capabilities using Microsoft Endpoint Manager
 
 This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Endpoint Manager:

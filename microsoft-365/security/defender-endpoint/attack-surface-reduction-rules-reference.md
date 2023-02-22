@@ -152,8 +152,8 @@ Links to information about configuration management system versions referenced i
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
-- [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
-- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM is now Microsoft Endpoint Configuration Manager._
+- [Microsoft Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
+- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM is now Microsoft Configuration Manager._
 
 ## Per ASR rule alert and notification details
 
@@ -232,7 +232,7 @@ The **Block abuse of exploited vulnerable signed drivers** rule doesn't block a 
 
 > [!NOTE]
 >
-> You can configure this rule using MEM OMA-URI. See [MEM OMA-URI](enable-attack-surface-reduction.md#mem) for configuring custom rules.
+> You can configure this rule using Intune OMA-URI. See [Intune OMA-URI](enable-attack-surface-reduction.md#custom-profile-in-intune) for configuring custom rules.
 >
 > You can also configure this rule using [PowerShell](enable-attack-surface-reduction.md#powershell).
 >

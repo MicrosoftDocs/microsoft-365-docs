@@ -1,6 +1,6 @@
 ---
-title: Deploy Microsoft Defender for Endpoint on Android with Microsoft Endpoint Manager 
-description: Describes how to deploy Microsoft Defender for Endpoint on Android with Microsoft Endpoint Manager
+title: Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune 
+description: Describes how to deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, installation, deploy, uninstallation,
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -20,7 +20,7 @@ search.appverid: met150
 ms.date: 12/18/2020
 ---
 
-# Deploy Microsoft Defender for Endpoint on Android with Microsoft Endpoint Manager
+# Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,18 +31,18 @@ ms.date: 12/18/2020
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Learn how to deploy Defender for Endpoint on Android on Microsoft Endpoint Manager (also known as Intune) Company Portal enrolled devices. For more information about Microsoft Endpoint Manager device enrollment, see [Enroll your device](/mem/intune/user-help/enroll-device-android-company-portal).
+Learn how to deploy Defender for Endpoint on Android on Microsoft Intune Company Portal enrolled devices. For more information about Microsoft Intune device enrollment, see [Enroll your device](/mem/intune/user-help/enroll-device-android-company-portal).
 
 > [!NOTE]
 > **Defender for Endpoint on Android is now available on [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx)**
 >
-> You can connect to Google Play from Microsoft Endpoint Manager to deploy Defender for Endpoint app across Device Administrator and Android Enterprise enrollment modes.
+> You can connect to Google Play from Microsoft Intune to deploy Defender for Endpoint app across Device Administrator and Android Enterprise enrollment modes.
 >
 > Updates to the app are automatic via Google Play.
 
 ## Deploy on Device Administrator enrolled devices
 
-Learn how to deploy Defender for Endpoint on Android with Microsoft Endpoint Manager Company Portal - Device Administrator enrolled devices.
+Learn how to deploy Defender for Endpoint on Android with Microsoft Intune Company Portal - Device Administrator enrolled devices.
 
 ### Add as Android store app
 
@@ -95,7 +95,7 @@ Learn how to deploy Defender for Endpoint on Android with Microsoft Endpoint Man
 
 Defender for Endpoint on Android supports Android Enterprise enrolled devices.
 
-For more information on the enrollment options supported by Microsoft Endpoint Manager (Intune), see [Enrollment Options](/mem/intune/enrollment/android-enroll).
+For more information on the enrollment options supported by Microsoft Intune, see [Enrollment Options](/mem/intune/enrollment/android-enroll).
 
 **Currently, Personally owned devices with work profile and Corporate-owned fully managed user device enrollments are supported for deployment.**
 
@@ -140,7 +140,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     :::image type="content" source="images/fa4ac18a6333335db3775630b8e6b353.png" alt-text="The page displaying the synced application" lightbox="images/fa4ac18a6333335db3775630b8e6b353.png":::
 
-9. Defender for Endpoint supports App configuration policies for managed devices via Microsoft Endpoint Manager (Intune). This capability can be leveraged to select different configurations for Defender.
+9. Defender for Endpoint supports App configuration policies for managed devices via Microsoft Intune. This capability can be leveraged to select different configurations for Defender.
 
     1. In the **Apps** page, go to **Policy > App configuration policies > Add > Managed devices**.
 
@@ -197,7 +197,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
 ### Auto Setup of Always-on VPN
 
-Defender for Endpoint supports Device configuration policies for managed devices via Microsoft Endpoint Manager (Intune). This capability can be leveraged to **Auto setup of Always-on VPN** on Android Enterprise enrolled devices, so the end user does not need to set up VPN service while onboarding.
+Defender for Endpoint supports Device configuration policies for managed devices via Microsoft Intune. This capability can be leveraged to **Auto setup of Always-on VPN** on Android Enterprise enrolled devices, so the end user does not need to set up VPN service while onboarding.
 
 1. On **Devices**, select **Configuration Profiles** \> **Create Profile** \> **Platform** \> **Android Enterprise**
 

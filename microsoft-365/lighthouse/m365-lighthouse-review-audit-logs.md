@@ -58,7 +58,7 @@ The following table lists activities captured within Lighthouse audit logs. The 
 
 | Activity name | Area in Lighthouse | Action initiated | Service impacted |
 |--|--|--|--|
-| **apply** or **deploy** | Tenants | Apply a deployment plan | Azure AD, Microsoft Endpoint Manager (MEM) |
+| **apply** or **deploy** | Tenants | Apply a deployment plan | Azure AD, Microsoft Intune |
 | **assignTag** | Tenants | Apply a tag from a customer | Lighthouse |
 | **changeDeploymentStatus** or **assign** | Tenants | Update action plan status for deployment plan | Lighthouse |
 | **offboardTenant** | Tenants | Inactivate a customer | Lighthouse |

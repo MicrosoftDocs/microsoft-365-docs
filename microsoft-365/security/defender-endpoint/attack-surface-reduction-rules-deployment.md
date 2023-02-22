@@ -90,7 +90,7 @@ As outlined in [Use attack surface reduction rules to prevent malware infection]
 | Use advanced protection against ransomware | Block persistence through WMI event subscription | Block Office apps from injecting code into other processes | Block Office communication apps from creating child processes | | |
 | | | Block Adobe Reader from creating child processes | | | |
 
-(<a id="fn1">1</a>) _Block abuse of exploited vulnerable signed drivers_ isn't currently available in MEM Endpoint security. You can configure this rule using [MEM OMA-URI](enable-attack-surface-reduction.md#mem).
+(<a id="fn1">1</a>) _Block abuse of exploited vulnerable signed drivers_ isn't currently available in Intune Endpoint security. You can configure this rule using [Intune OMA-URI](enable-attack-surface-reduction.md#custom-profile-in-intune).
 
 (<a id="fn1">2</a>) Some ASR rules generate considerable noise, but won't block functionality. For example, if you're updating Chrome; Chrome will access lsass.exe; passwords are stored in lsass on the device. However, Chrome should not be accessing local device lsass.exe. If you enable the rule to block access to lsass, it will generate a lot of events. Those events are good events because the software update process should not access lsass.exe. Enabling this rule will block Chrome updates from accessing lsass, but will not block Chrome from updating; this is also true of other applications that make unnecessary calls to lsass.exe. The _block access to lsass_ rule will block unnecessary calls to lsass, but won't block the application from running.
 
@@ -99,14 +99,14 @@ As outlined in [Use attack surface reduction rules to prevent malware infection]
 Although multiple methods of implementing ASR rules are possible, this guide is based on an infrastructure consisting of:
 
 - Azure Active Directory
-- Microsoft Endpoint Management (MEM)
+- Microsoft Intune
 - Windows 10 and Windows 11 devices
 - Microsoft Defender for Endpoint E5 or Windows E5 licenses
 
 To take full advantage of ASR rules and reporting, we recommend using a Microsoft 365 Defender E5 or Windows E5 license, and A5. Learn more: [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
 
 > [!NOTE]
-> There are multiple methods to configure ASR rules. ASR rules can be configured using: Microsoft Endpoint Manager (MEM), PowerShell, Group Policy, Microsoft Endpoint Configuration Manager (ConfigMgr), MEM OMA-URI.
+> There are multiple methods to configure ASR rules. ASR rules can be configured using: Microsoft Intune, PowerShell, Group Policy, Microsoft Endpoint Configuration Manager (ConfigMgr), MEM OMA-URI.
 > If you are using a different infrastructure configuration than what is listed for _Infrastructure requirements_ (above), you can learn more about deploying attack surface reduction rules using other configurations here: [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 
 ### ASR rules dependencies

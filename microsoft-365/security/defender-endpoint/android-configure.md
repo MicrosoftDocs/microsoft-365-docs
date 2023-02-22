@@ -59,7 +59,7 @@ It includes several admin controls to offer flexibility, such as the ability to 
 
 Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to **configure Network protection in Android devices.**
 
-1. In Microsoft Endpoint Manager Admin, navigate to Apps > App configuration policies. Create a new App configuration policy.
+1. In the Microsoft Intune admin center, navigate to Apps > App configuration policies. Create a new App configuration policy.
     > [!div class="mx-imgBorder"]
     > ![Image of how to create a policy.](images/android-mem.png)
 1. Provide a name and description to uniquely identify the policy. Select **'Android Enterprise'** as the platform and **'Personally-owned work profile only'** as the profile type and **'Microsoft Defender'** as the Targeted app.
@@ -161,7 +161,7 @@ From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, you'll
 **Notes about privacy related to apps from personal devices (BYOD):**
 
 - For Android Enterprise with a work profile, only apps installed on the work profile will be supported.
-- For other BYOD modes, by default, vulnerability assessment of apps will **not** be enabled. However, when the device is on administrator mode, admins can explicitly enable this feature through Microsoft Endpoint Manager to get the list of apps installed on the device. For more information, see details below.
+- For other BYOD modes, by default, vulnerability assessment of apps will **not** be enabled. However, when the device is on administrator mode, admins can explicitly enable this feature through Microsoft Intune to get the list of apps installed on the device. For more information, see details below.
 
 ### Configure privacy for device administrator mode
 
