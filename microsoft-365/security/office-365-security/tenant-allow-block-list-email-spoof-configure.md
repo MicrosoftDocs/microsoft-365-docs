@@ -130,14 +130,14 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 You can't create allow entries for domains and email addresses directly in the Tenant Allow/Block List. Instead, you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report the message as a false positive, which also adds an allow entry for the sender on the **Domains & addresses** tab in the Tenant Allow/Block List.
 
-By default, allow entries for domains and email addresses, files and URLs are created for 30 days, while allow entries for spoofed senders never expire. Microsoft will either learn from the allow entries for domains and email addresses, files and URLs within those 30 days, or automatically extend it for you.
+By default, allow entries for domains and email addresses, files, and URLs exist for 30 days, while allow entries for spoofed senders never expire. Within those 30 days, Microsoft will learn from the allow entries or automatically extend the allow entries for you.
 
 For instructions, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
 > [!NOTE]
-> Microsoft does not allow you to create allow entries directly as it leads to creation of allows that are not needed, thus exposing your organization to malicious email which might otherwise have been filtered by the system.
+> Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
-> Microsoft manages the allow creation process from Submission by creating allows for those entities (domains or email addresses, spoofed senders, URLs, files) which were determined to be malicious by filters during mail flow. For example, if the sender and a URL in the message were determined to be bad, an allow entry is created for the sender, and an allow entry is created for the URL.
+> Microsoft manages the allow creation process from Submission by creating allows for those entities (domains or email addresses, spoofed senders, URLs, or files) which were determined to be malicious by filters during mail flow. For example, if the sender and a URL in the message were determined to be bad, an allow entry is created for the sender, and an allow entry is created for the URL.
 >
 > When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are skipped.
 >
