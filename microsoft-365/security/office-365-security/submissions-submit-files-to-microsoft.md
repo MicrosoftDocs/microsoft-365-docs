@@ -5,19 +5,19 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: 12eba50e-661d-44b8-ae94-a34bc47fb84d
 ms.collection: 
   - m365-security
+  - tier1
 description: Admins and end-users can learn about submitting undetected malware or mis-identified malware attachments to Microsoft for analysis.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/05/2022
 ---
 
 # Submit malware, non-malware, and other suspicious files to Microsoft for analysis
