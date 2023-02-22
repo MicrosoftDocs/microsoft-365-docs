@@ -4,8 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 01/10/2023
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -18,6 +19,8 @@ description: Learn how to create a rule to move or copy a file to another ShareP
 # Create a rule to move or copy a file from one document library to another in Microsoft Syntex
 
 Microsoft Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models. 
+
+   ![Diagram of the create rules workflow.](../media/content-understanding/create-rule.png)
 
 You'll choose a condition that triggers the rule and the action that the rule will take. 
 For example, you can create a rule to move files tagged with a specific customer to a specific library or folder. These rules help you structure your content architecture with the power of AI-driven processing.
@@ -58,13 +61,13 @@ To move or copy a file from one document library to another, follow these steps.
 
     3. Select **Choose a library**, and then select the document library you want the file moved or copied to.
 
-       ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-choose-a-library.png)
+       ![Screenshot of the rule statement page showing the choose a library option highlighted.](../media/content-understanding/content-rule-choose-a-library.png)
 
           When you select **Choose a library**, you can either select from the list of suggested libraries or enter the name of another library.
 
        > [!NOTE]
-       > If you try to set up a rule to move or copy a file to a library that already has a move  or copy rule applied, you'll receive a message saying that you need to disable all move or copy rules on the destination library. To disable a rule, see [Manage a rule](#manage-a-rule).<br>      
-       >![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-disable-rules.png)
+       > If you try to set up a rule to move or copy a file to a library that already has a move or copy rule applied, you'll receive a message saying that you need to disable all move or copy rules on the destination library. To disable a rule, see [Manage a rule](#manage-a-rule).<br>      
+       >![Screenshot of the rule statement page with the message stating that the library already has a rule applied.](../media/content-understanding/content-rule-disable-rules.png)
 
 4. When your rule statement is complete, select **Create**. You'll see the new rule on the **Manage rules** page.
 

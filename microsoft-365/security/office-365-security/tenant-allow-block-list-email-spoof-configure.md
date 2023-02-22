@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -13,9 +12,11 @@ search.appverid:
   - MET150
 ms.collection:
   - m365-security
+  - tier1
 description: Admins can learn how to allow or block email and spoofed sender entries in the Tenant Allow/Block List in the Security portal.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/05/2022
 ---
 
 # Allow or block email using the Tenant Allow/Block List
@@ -209,7 +210,7 @@ You can make the following modifications to entries for domains and email addres
 
    When you're finished, click **Save**.
 
-Note that with **allow expiry management**, if Microsoft has not learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again. If Microsoft does not learn within 90 calendar days from the date of allow creation, Microsoft will remove the allow.
+An allow is created by default for 30 days so that Microsoft could learn from it and then remove it. With **[allow expiry management](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447)**, if Microsoft has not learned from the allow entry, Microsoft will automatically extend the expiry time of allow entries that will soon expire by another 30 days. This extension helps to prevent legitimate email from going to junk or quarantine again. If Microsoft does not learn within 90 calendar days from the date of the original creation of the allow entry, Microsoft will remove the allow entry. You will be kept informed throughout the process using emails.
 
 If Microsoft has learned from the allow, the allow will be removed and you will get an alert informing you about it.
 

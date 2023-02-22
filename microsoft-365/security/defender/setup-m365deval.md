@@ -21,6 +21,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
+ms.date: 02/17/2021
 ---
 
 # Set up your Microsoft 365 Defender trial in a lab environment 

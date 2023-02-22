@@ -1,9 +1,14 @@
 {
   "redirections": [
     {
-      "source_path": "microsoft-365/frontline/bookings-virtual-visits.md",
-      "redirect_url": "/microsoft-365/frontline/bookings-virtual-appointments",
+      "source_path": "microsoft-365/frontline/bookings-virtual-appointments.md",
+      "redirect_url": "/microsoft-365/frontline/virtual-appointments-app",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/frontline/bookings-virtual-visits.md",
+      "redirect_url": "/microsoft-365/frontline/virtual-appointments-app",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/frontline/virtual-visits-usage-report.md",
@@ -4496,6 +4501,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/admin/setup/employee-quick-setup.md",
+      "redirect_url": "https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/apply-labels-to-personal-data-in-office-365.md",
       "redirect_url": "/compliance/regulatory/gdpr",
       "redirect_document_id": false
@@ -7967,7 +7977,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/employee-quick-setup.md",
-      "redirect_url": "/microsoft-365/admin/setup/employee-quick-setup",
+      "redirect_url": "https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1",
       "redirect_document_id": false
     },
     {
@@ -9261,6 +9271,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/troubleshoot-auditd-performance-issues.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/linux-support-perf",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management.md",
       "redirect_url": "/microsoft-365/security/defender-vulnerability-management/trial-user-guide-defender-vulnerability-management",
       "redirect_document_id": true
@@ -9753,6 +9768,11 @@
     {
       "source_path": "microsoft-365/security/office-365-security/priority accounts-security-recommendations.md",
       "redirect_url": "/microsoft-365/security/office-365-security/priority-accounts-security-recommendations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/monitor-for-leaks-of-personal-data.md",
+      "redirect_url": "/microsoft-365/compliance/dlp-learn-about-dlp",
       "redirect_document_id": false
     },
     {
@@ -10659,6 +10679,36 @@
       "source_path": "microsoft-365/compliance/microsoft-365-compliance-center-redirection.md",
       "redirect_url": "/microsoft-365/compliance/microsoft-365-compliance-center",
       "redirect_document_id": false
+  },
+  {
+      "source_path": "microsoft-365/compliance/create-a-dlp-policy-from-a-template.md",
+      "redirect_url": "microsoft-365/compliance/dlp-create-deploy-policy",
+      "redirect_document_id": false 
+  },
+  {
+      "source_path": "microsoft-365/compliance/create-test-tune-dlp-policy.md",
+      "redirect_url": "microsoft-365/compliance/create-deploy-policy",
+      "redirect_document_id": false 
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/configure-email-notifications.md",
+    "redirect_url": "microsoft-365/security/defender/configure-email-notifications",
+    "redirect_document_id": false 
+  },
+  {
+    "source_path": "microsoft-365/compliance/data-loss-prevention-policies.md",
+    "redirect_url": "microsoft-365/compliance/dlp-learn-about-dlp",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/frontline/ehr-admin-cerner.md",
+    "redirect_url": "/microsoft-365/frontline/ehr-admin-oracle-health",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/archive-slack-data-microsoft.md",
+    "redirect_url": "/microsoft-365/compliance/archiving-third-party-data",
+    "redirect_document_id": false
   }
  ]
 }

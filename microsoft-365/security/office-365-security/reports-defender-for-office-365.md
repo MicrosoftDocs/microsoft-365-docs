@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -15,12 +14,13 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 description: Admins can learn how to find and use the Defender for Office 365 reports that are available in the Microsoft 365 Defender portal.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/02/2022
 ---
 
 # View Defender for Office 365 reports in the Microsoft 365 Defender portal

@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 05/15/2021
 ---
 
 # Troubleshoot issues and find answers to FAQs on Microsoft Defender for Endpoint on iOS
@@ -32,7 +33,7 @@ search.appverid: met150
 
 > [!NOTE]
 > **Control Filter not working as expected on Supervised devices**
-Control Filter is not working as expected from iOS 16.1 onwards. This has impacted the Web Protection capability for Supervised devices without local loopback VPN. The issue has been acknowledge by iOS platform. As a temporary fix, the loopback VPN has been enabled for the affected devices where the users will be asked to setup the loopback VPN. The  fix is available with the new version - 1.1.36120102. The issue is expected to be resolved with iOS 16.3. Once the issue is resolved by Apple, we will re-enable the support for Control filter.
+Control Filter is not working as expected from iOS 16.1 onwards. This has impacted the Web Protection capability for Supervised devices without local loopback VPN. The issue has been resolved with iOS 16.3. Support for Control Filter is re-enabled with the new version - 1.1.38010102.
  
 
 This topic provides troubleshooting information to help you address issues that may arise as you use Microsoft Defender for Endpoint on iOS.

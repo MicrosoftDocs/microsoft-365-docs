@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 02/21/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -386,13 +386,25 @@ For more information about this capability, see the announcement [Apply sensitiv
 
 For end user documentation, see [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4).
 
+### Disabling PDF support
+
+If you need to disable the PDF support in Office apps for Word, Excel, and PowerPoint, you can do so by using an Office setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**:
+
+- **Use the Sensitivity feature in Office to apply sensitivity labels to PDFs**
+
+Set the value to **0**.
+
+Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
+
 ## Sensitivity bar
 
-Newly supported in preview for built-in labels in Word, Excel, and PowerPoint, but not yet for Outlook or Office for the web, see the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support this feature.
+Supported in preview for built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support this feature.
 
-For the supported apps, sensitivity labels are now displayed in a sensitivity bar, next to the file name on the top window bar. For example:
+When Word, Excel, and PowerPoint support this feature, sensitivity labels are displayed in a sensitivity bar, next to the file name on the top window bar. For example:
 
 ![Sensitivity labels on the window title bar.](../media/sensitivity-bar-example.png)
+
+When Outlook supports this feature, the sensitivity bar is displayed on the **Subject** line of the email.
 
 Information about the labels and the ability to select or change a label are also integrated into user workflows that includes save and rename, export, share, print, and [convert to PDF](#pdf-support). For more information and example screenshots, see the blog post announcement, [New sensitivity bar in Office for Windows](https://insider.office.com/blog/sensitivity-bar-in-office-for-windows).
 
@@ -403,7 +415,7 @@ As part of this high visibility, these labels also support colors. For more info
 > [!IMPORTANT]
 > If your labeling apps don't support this capability, they don't display the configured label colors.
 > 
-> The Azure Information Protection unified labeling client supports label colors. For labeling built in to Office, label colors are currently supported in preview for Word, Excel, and PowerPoint on Windows, but not yet for Outlook, macOS, or Office for the web. For more information, see the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md).
+> The Azure Information Protection unified labeling client supports label colors. For labeling built in to Office, label colors are currently supported in preview for Windows, but not yet for macOS, or Office for the web. For more information, see the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md).
 
 Newly created labels don't have a color by default. If your labels were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) or you configured label colors for the Azure Information Protection unified labeling client, these label colors are now displayed in apps that support them.
 
@@ -438,7 +450,15 @@ For more information to help you specify PowerShell advanced settings for sensit
 
 This configuration is not available in the Microsoft Purview compliance portal. You must use the PowerShell advanced setting *DefaultSubLabelId* with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-When you add a sublabel to a label, users can no longer apply the parent label to a document or email. By default, users select the parent label to see the sublabels that they can apply, and then select one of those sublabels. If you specify a default sublabel for a parent label, when users select the parent label, a sublabel is automatically selected and applied for them.
+When you add a sublabel to a label, users can no longer apply the parent label to an item. By default, users select the parent label to see the sublabels that they can apply, and then select one of those sublabels. If you specify a default sublabel for a parent label, when users select the parent label, a sublabel is automatically selected and applied for them.
+
+As an example, the parent label **Confidential** is configured with a default sublabel, **All Employees**. The next parent label, **Highly Confidential**, doesn't have a default sublabel configured. You can tell the difference with the end of label bar for **Confidential** that isn't visible for **Highly Confidential**:
+
+![Example that shows the parent label Confidential is configured for a default sublabel.](../media/default-sublabel-example.png)
+
+When users select to the left of that vertical bar, they are selecting **Confidential**\\**All Employees** automatically with a single selection. If they need a different sublabel, they must select to the right of the vertical bar to select the label expansion that then displays all the sublabels for selection. In comparison, if they select **Highly Confidential**, the sublabels for that label are always displayed for selection.
+
+After you configure this label setting, remember to update your end-user documentation accordingly.
 
 Example PowerShell command, where the parent sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e** and its sublabel that you want to specify as the default is **1ace2cc3-14bc-4142-9125-bf946a70542c**:
 
@@ -452,7 +472,7 @@ For more help in specifying PowerShell advanced settings, see [PowerShell tips f
 
 For information about the auditing events that are generated by sensitivity label activities, see the [Sensitivity label activities](audit-log-activities.md#sensitivity-label-activities) section from [Search the audit log in the Microsoft Purview compliance portal](audit-log-search.md).
 
-This auditing information is visually represented in [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md) to help you understand how your sensitivity labels are being used and where this labeled content is located. 
+This auditing information is visually represented in [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md) to help you understand how your sensitivity labels are being used and where this labeled content is located.
 
 You can also create custom reports with your choice of security information and event management (SIEM) software when you [export and configure the audit log records](audit-log-export-records.md). For larger-scale reporting solutions, see the [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference).
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 02/21/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -98,7 +98,7 @@ For the latest Office apps, the AIP add-in is disabled by default, so there's no
 
 - Currently in preview: [Current Channel (Preview)](https://office.com/insider)
 - **Current Channel** and **Monthly Enterprise Channel**: Not before version 2302+ (not yet released) 
-- **Semi-Annual Channel**: Not before version 2301+ (not yet released)
+- **Semi-Annual Channel**: Not before version 2302+ (not yet released)
 
 If you have a version that disabled the AIP add-in by default, and you need to use the AIP add-in rather than built-in labeling, you must [configure a new setting to override the default](#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in).
 
@@ -181,8 +181,7 @@ Use the following information to help you identify if the features you use with 
 |Per app visual marking|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)|
 |**Category: Encryption**||
 |Admin-defined permissions|![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#assign-permissions-now)|
-|User-defined permissions <br> - Do Not Forward for Outlook <br> - User and group custom permissions for Word, Excel, PowerPoint|![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#let-users-assign-permissions)|
-|User-defined permissions <br> - Organization-wide custom permissions by specifying domains for Word, Excel, PowerPoint|[In preview](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)|
+|User-defined permissions <br> - Do Not Forward for Outlook <br> - Users and groups, or organization-wide custom permissions for Word, Excel, PowerPoint|![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#let-users-assign-permissions)|
 |Co-authoring and AutoSave|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-coauthoring.md)|
 
 Remember to use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) to identify and track new features in development.

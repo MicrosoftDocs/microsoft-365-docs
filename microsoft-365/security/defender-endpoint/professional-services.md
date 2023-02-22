@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 09/28/2022
 ---
 
 # Professional services supported by Microsoft 365 Defender
@@ -31,7 +32,7 @@ search.appverid: met150
 - Microsoft Defender for Cloud Apps
 
 > [!NOTE]
-> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 The following professional services can be integrated with Microsoft Defenders' products:
 
@@ -96,7 +97,7 @@ Respond to security incidents quickly, effectively and at scale with complete in
 |[BlueVoyant MDR for Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2202673)|BlueVoyant|BlueVoyant's MDR (Managed Detection and Response) for Microsoft 365 Defender combines the power of Microsoft's Defender product suite with BlueVoyant's elite 24x7 security operations team to identify, investigate and eradicate today's most sophisticated and advanced cyberattacks. In addition to MDR, services can include implementation, assessments, training, concierge, third party integrations, and more.|
 |[White Hat Managed Security Services](https://go.microsoft.com/fwlink/?linkid=2202391)|White Hat IT Security|White Hat MSS offers zero trust approach to managed security on every platform – scalable and adaptive security from true experts.|
 |[eSentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2202582)|eSentire|MDR you can trust that provides 24/7 threat investigations and responses via Microsoft 365 Defender suite.|
-|[Aujas Managed Security Services](https://go.microsoft.com/fwlink/?linkid=2202672)|Aujas Cybersecurity|Managed security services that assist organisations to detect threats early and help minimize the impact of a breach.|
+|[Aujas Managed Security Services](https://go.microsoft.com/fwlink/?linkid=2202672)|Aujas Cybersecurity|Managed security services that assist organizations to detect threats early and help minimize the impact of a breach.|
 |[Accenture Managed Extended Detection & Response (MxDR)](https://go.microsoft.com/fwlink/?linkid=2202842)|Accenture|Accenture's Managed Extended Detection & Response (MxDR) service provides a fully managed service that proactively finds and mitigates advanced cyber-attacks and malicious activity before they cause material business impact across IT and OT environments, both in the cloud and on-premises.|
 |[Taegis XDR](https://go.microsoft.com/fwlink/?linkid=2202848)|Secureworks|Taegis™ ManagedXDR is Secureworks® 24x7 managed detection and response service, which helps you detect advanced threats and take the right action. Included threat hunting and incident response capabilities help you scale your security operations as Secureworks uses threat data collected across thousands of customers to improve your security posture. Secureworks' combination of proprietary security analytics software, SecOps expertise, incident response and threat hunting experience, threat intelligence capabilities, and 20-year history of service excellence helps reduce risk to your business.|
 |[Cloud Control - Managed Detection & Response](https://go.microsoft.com/fwlink/?linkid=2202678)|The Collective|The Collective's Cloud Control Managed Protection, Detection and Response services is an enterprise grade managed service, delivering true Security Operations Center-as-a-Service (SOC) experience with a personal touch.|
@@ -191,6 +192,6 @@ Mature and maintain your internal team's security capabilities to prevent, detec
 
 ## Related topics
 
-- [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Configure managed service security provider integration](configure-mssp-support.md)
