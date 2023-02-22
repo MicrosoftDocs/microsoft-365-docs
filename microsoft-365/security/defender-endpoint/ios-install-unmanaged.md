@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Defender for Endpoint on iOS with Mobile Application Manager
+title: Deploy Microsoft Defender for Endpoint on iOS with Mobile Application Management
 description: Describes how to deploy Microsoft Defender for Endpoint on unenrolled iOS devices.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, configure, features, ios
 ms.service: microsoft-365-security
@@ -20,7 +20,7 @@ search.appverid: met150
 ms.date: 07/18/2021
 ---
 
-# Deploy Microsoft Defender for Endpoint on iOS with Mobile Application Manager
+# Deploy Microsoft Defender for Endpoint on iOS with Mobile Application Management
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
