@@ -32,11 +32,11 @@ This guide describes how to tune your bulk email filtering settings in Exchange 
 - Exchange Online as a minimum. (Microsoft Defender for Office 365 offers extra functionality)
 - Sufficient permissions. (Security Administrator)
 - Basic understanding of checking message headers (for more information, see [View internet message headers in Outlook](https://support.microsoft.com/office/view-internet-message-headers-in-outlook-cd039382-dc6e-4264-ac74-c048563d212c))
-- 30 minutes to complete the following steps.
+- 30 minutes to complete the following steps
 
 ## Understanding the bulk (BCL) value
 
-Bulk mail is typically advertising emails or marketing messages. These emails can be more challenging to filter as some customers want these emails. Other customers consider these emails as spam and don't want to receive them. We add a "BCL" value stamp on emails based on the number of complaints we get about that sender and allow you to select the threshold to accept so you can tune the number of bulk messages you receive.
+Bulk mail is typically advertising emails or marketing messages. These emails can be more challenging to filter as some customers want these emails. Other customers consider these emails spam and don't want to receive them. We add a "BCL" value stamp on emails based on the number of complaints we get about that sender and allow you to select the threshold to accept so you can tune the number of bulk messages you receive.
 
 ## Check the BCL value of an email and the threshold in your policies
 
@@ -47,29 +47,29 @@ Bulk mail is typically advertising emails or marketing messages. These emails ca
 1. Select **Threat policies** and then **Anti-Spam**.
 1. When the page loads, the next action you'll take depends on the type of policy you're using:
    1. Preset Policies can't be edited. The threshold is 6 in standard, 5 in strict.
-   1. The default (inbuilt) policy is 7
+   1. The default (inbuilt) policy is 7. 
    1. Custom policies are set to 7 by default unless another value is provided.
-1. **Edit** (or create a custom policy) to set the BCL threshold, which meets your needs. For example, if most the messages you collected (which were all unwanted) have a BCL value of 4 or higher, setting the BCL value to 4 in the policy would filter out these messages for your end users.
-1. Within that policy, under the **"Edit actions"** section, select the **"bulk message action"** and select what to do when the threshold is exceeded, for example you could select Quarantine if you would like to keep all bulk out the mailbox, or Junk email folder for a less aggressive stance.
-1. If you receive complaints from users about too much bulk being blocked, you can adjust this threshold, or alternatively submit the message to us which will also add the sender to TABL (Tenant Allow Block List).
+1. **Edit** (or create a custom policy) to set the BCL threshold that meets your needs. For example, if most of the messages you collected (which were all unwanted) have a BCL value of 4 or higher, setting the BCL value to 4 in the policy would filter out these messages for your end users.
+1. Within that policy, under the **"Edit actions"** section, select the **"bulk message action"** and select what to do when the threshold is exceeded. For example, you could select Quarantine if you would like to keep all bulk out of the mailbox or use the Junk email folder for a less aggressive stance.
+1. If you receive complaints from users about too many bulk emails being blocked, you can adjust this threshold, or alternatively, submit the message to us, which will also add the sender to the TABL (Tenant Allow Block List).
 
 > [!TIP]
-> Review this step-by-step guide for more details on allowing senders with TABL (Tenant Allow Block List): [How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365](how-to-handle-false-positives-in-microsoft-defender-for-office-365.md)
+> Review this step-by-step guide for more details on allowing senders using the TABL (Tenant Allow Block List): [How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365](how-to-handle-false-positives-in-microsoft-defender-for-office-365.md).
 
 ## More aggressive strategies for managing bulk senders
 
-In some cases, the sender of bulk mail doesn't generate enough complaints for their messages to be assigned a BCL value high enough to be caught by your tuned threshold value. In this situation, it's possible to use transport rules to take an aggressive approach; however, use caution, as false positives (unwanted blocking) will occur, so these rules need tuning with exceptions and management to stay relevant for your organizations mail patterns.
+In some cases, the sender of bulk mail doesn't generate enough complaints for its messages to be assigned a BCL value high enough to be caught by your tuned threshold value. In this situation, it's possible to use transport rules to take an aggressive approach; however, use caution, as false positives (unwanted blocking) will occur. Tune the rules with exceptions and management to stay relevant for your organization's mail patterns.
 
 > [!TIP]
->To better protect certain groups of users such as your c-suite and priority accounts, you can create a specialized policy specifically scoped to them and set a higher BCL threshold, alongside a separate transport rule (if applicable). These groups of users might be more vulnerable to unsolicited emails due to their email addresses being readily accessible in the public domain.
+>To better protect certain groups of users, such as your c-suite and priority accounts, you can create a specialized policy specifically scoped to them and set a higher BCL threshold, alongside a separate transport rule (if applicable). These groups of users might be more vulnerable to unsolicited emails due to their email addresses being readily accessible in the public domain.
 
 [Use mail flow rules to filter bulk email in Exchange Online | Microsoft Learn](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail)
 
 ## For customers with Microsoft Defender for Office 365
 
-- Customers with Microsoft Defender for Office 365 Plan 1 or higher can use the email entity page to discover the BCL value of messages instead of interrogating headers. [Learn more here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-email-entity-page-in-microsoft-defender-for/ba-p/2275420)
+- Customers with Microsoft Defender for Office 365 Plan 1 or higher can use the [email entity page](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-email-entity-page-in-microsoft-defender-for/ba-p/2275420) to discover the BCL value of messages instead of interrogating headers.
 
-- Customers with Microsoft Defender for Office 365 Plan 2 can interrogate bulk values at scale using advanced hunting. See more details here: [Use advanced hunting to discover bulk emails](/microsoft-365/security/office-365-security/anti-spam-spam-vs-bulk-about#how-to-tune-bulk-email.md)
+- Customers with Microsoft Defender for Office 365 Plan 2 can interrogate bulk values at scale using [advanced hunting](/microsoft-365/security/office-365-security/anti-spam-spam-vs-bulk-about#how-to-tune-bulk-email.md). 
 
 ## More Information
 
