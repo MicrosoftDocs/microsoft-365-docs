@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
+  - tier1
 description: Learn how to report false positives and false negatives in Outlook using the Report Message feature.
 ms.subservice: mdo
 ms.service: microsoft-365-security

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/05/2021
+ms.date: 1/31/2023
 ms.reviewer: gigarrub
 audience: ITPro
 ms.topic: conceptual
@@ -13,7 +13,9 @@ ms.localizationpriority: medium
 description: Follow the path of an incoming message through the threat filtering stack in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 search.appverid: met150
 ---
 
