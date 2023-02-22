@@ -103,7 +103,7 @@ sections:
 
       - question: How do I configure attack surface reduction rules and capabilities in Defender for Business?
         answer: |
-          Use Intune to configure your attack surface reduction rules. Other attack surface reduction capabilities can be configured in the Microsoft 365 Defender protal. See [Attack surface reduction capabilities in Defender for Business](mdb-asr.md).
+          Use Intune to configure your attack surface reduction rules. Other attack surface reduction capabilities can be configured in the Microsoft 365 Defender portal. See [Attack surface reduction capabilities in Defender for Business](mdb-asr.md).
 
       - question: How does Microsoft Intune work with Defender for Business? 
         answer: |
