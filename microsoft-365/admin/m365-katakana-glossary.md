@@ -54,6 +54,7 @@ Explanations have been added to the main katakana terms used in the Microsoft 36
 Refers to an identifying name assigned to an individual within an organization/company for the purpose of using Microsoft 365. It is created for each organization/company and a separate account is usually assigned to each individual. Use this account to use Microsoft 365 services.
 
 [Add users and assign licenses](add-users/add-users.md)
+
 ## Add-on
 
 ![Add-on](../media/katanaglossary/002_1_addon.png)
@@ -107,7 +108,8 @@ If you wish to appoint an administrator with limited administrative functions (e
 Someone from outside the organization/company who can view or change certain authorized files or information, or participate in authorized meetings.
 
 [Sharing with external or guest in OneDrive, SharePoint, and Lists](https://support.microsoft.com/office/7aa070b8-d094-4921-9dd9-86392f2a79e7)
-[Guest access with Microsoft Teams](microsoftteams/guest-access.md)
+
+[Guest access with Microsoft Teams](../../microsoftteams/guest-access.md)
 
 ## Collaboration and communication
 
@@ -121,11 +123,11 @@ A computer or software function that is provided over a network (Internet). It i
 
 ## Website address
 
-In M365, it refers to the URL of the SharePoint site.
+In Microsoft 365, it refers to the URL of the SharePoint site.
 
 ## Sign-in
 
-To make the service available for use from the account via authentication, or to allow the service to recognize the user. M365 services becomes available by signing in.
+To make the service available for use from the account via authentication, or to allow the service to recognize the user. Microsoft 365 services becomes available by signing in.
 
 ## Subscription
 
@@ -143,6 +145,7 @@ E.g.: contoso.com part of www.contoso.com and mail@contoso.com.
 ## Training and guide
 
 ![Training and guide](../media/katanaglossary/008_trainingguide.png)
+
 Refers to learning texts and videos for using and managing Microsoft 365 provided by Microsoft.
 
 ## Public
