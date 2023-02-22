@@ -163,7 +163,7 @@ Verify that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are
 
    ```sc.exe query Windefend```
    
- If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender Antivirus. For more information, see [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-windows.md).
+If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender Antivirus. For more information, see [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-windows.md).
 
 For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
 
@@ -172,7 +172,7 @@ For information on how to use Group Policy to configure and manage Microsoft Def
 
     ```sc.exe query sense```
     
-    The result should show it is running. If you encounter issues with onboarding, see [Troubleshoot onboarding](troubleshoot-onboarding.md).
+The result should show it is running. If you encounter issues with onboarding, see [Troubleshoot onboarding](troubleshoot-onboarding.md).
 
 ## Run a detection test
 Follow the steps in [Run a detection test on a newly onboarded device](run-detection-test.md) to verify that the server is reporting to Defender for the Endpoint service.
