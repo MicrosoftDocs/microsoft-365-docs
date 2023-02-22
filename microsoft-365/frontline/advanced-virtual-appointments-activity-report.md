@@ -25,7 +25,7 @@ ms.date: 02/22/2023
 ---
 # Microsoft Teams Advanced Virtual Appointments activity report
 
-![Information icon](media/info.png) **This feature requires TEST TEST TEST [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
+![Information icon](media/info.png) **This feature requires your organization to have one Teams Premium license assigned. Learn more about [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
 The Advanced Virtual Appointments activity report in the Microsoft Teams admin center provides user activity information for advanced Virtual Appointments capabilities that are available with [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 
@@ -72,7 +72,7 @@ The graph provides an overview of feature utilization. It changes depending on t
 |**1**   |Each report has a date for when the report was generated. The reports usually reflect a 24 to 48-hour latency from time of activity. |
 |**2**   |The X axis is the selected date range for the report. The Y axis is the number of active users per feature.<br>Hover over a dot on a given date to see the number of users using that feature on that date.|
 |**3**   |You can filter what you see on the chart by selecting an item. For example, select **Text message users** or **On-demand users** to see only the info related to each one. Changing this selection doesn’t change the information in the table.|
-|**4**   |This table shows detailed usage information for each user in your organization during the selected date range. <br> - **Display Name** shows the name assigned to each user. <br> - **Total Appointments** shows how many virtual appointments in which this user utilized an advanced feature. <br>  - **SMS** shows the total number of times this user utilized SMS in a virtual appointment. <br> -  **Lobby chat**  shows the total number of times this user utilized lobby chat during a virtual appointment (coming soon). <br>  -  **On-demand** shows the total number of times this user has utilized on-demand appointments.|
+|**4**   |This table shows detailed usage information for each user in your organization during the selected date range. <br> - **Display Name** shows the name assigned to each user. <br> - **Total Appointments** shows how many virtual appointments in which this user utilized an advanced feature. <br>  - **SMS** shows the total number of times this user utilized SMS in a virtual appointment. <br>  -  **On-demand** shows the total number of times this user has utilized on-demand appointments.|
 
 ## Related articles
 
