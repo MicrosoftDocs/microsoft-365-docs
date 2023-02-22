@@ -22,14 +22,14 @@ To help protect and secure your organization’s data, you can provide the membe
 > Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, servers, and shared devices that your organization uses. Examples of shared and specialized devices include retail point of sale devices, ruggedized devices, digital interactive whiteboards, conference room devices, and holographic wearable computers. Additionally, endpoints also include the apps used by your organization.
 
 Deploying Microsoft Intune commonly involves the following steps:
-- Step 1 - Set up Intune
-- Step 2 - Set up managed apps
-    - Add managed apps
-    - Configure managed apps
-    - Protect managed apps
-- Step 3 - Use device compliance and conditional access
-- Step 4 - Create device configuration profiles
-- Step 5 - Enroll your devices to be managed
+1. Set up Intune
+2. Set up managed apps
+   - Add managed apps to Intune
+   - Configure managed apps
+   - Protect managed apps
+3. Use device compliance and conditional access
+4. Create device configuration profiles
+5. Enroll your devices to be managed
 <!-- 
 Add graphic
 -->
@@ -59,9 +59,9 @@ Managing the apps that the members of your organization uses on their devices is
 >  Many productivity apps, such as the Microsoft Office apps, can be managed by Intune MAM. See the official list of [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps) available for public use.
 
 If you choose to use MAM without device enrollment, there are some limitations to be aware of, such as:
-- You can't specifically deploy apps directly to the device. The end user has to get the apps from the store.
-- You can't provision certificate profiles on these unmanaged devices.
-- You can't provision company Wi-Fi and VPN settings on these unmanged devices.
+- You can't specifically deploy apps directly to the device. The end user (member of your organization) retrieves the apps from the store.
+- You can't provision [certificate profiles](/mem/intune/protect/certificates-configure) on these unmanaged devices.
+- You can't provision company [Wi-Fi](/mem/intune/configuration/wi-fi-settings-configure) and [VPN](/mem/intune/configuration/vpn-settings-configure) settings on these unmanged devices.
 
 > [!NOTE]
 > The MAM configuration includes managing apps with Intune on devices enrolled with third-party enterprise mobility management (EMM) providers. You can use Intune app configuration and protection policies independent of any MDM solution. This independence helps you protect your company's data with or without enrolling devices in a device management solution. By implementing app-level policies, you can restrict access to company resources and keep data within the purview of your IT department.
@@ -93,7 +93,7 @@ When apps are managed in Intune, administrators can do the following:
 - **Configure apps to start or run with specific settings enabled.** In addition, you can update existing apps already on the device.
 - **Assign policies to limit access and prevent data from being used outside your organization.** You choose the setting for these policies based on your organization's requirements. For example, you can:
   - Require a PIN to open an app in a work context.
-  - Block managed apps from running on jailbroken or rooted devices
+  - Block managed apps from running on jailbroken or rooted devices.
   - Control the sharing of data between apps.
   - Prevent the saving of company app data to a personal storage location by using data relocation policies like  **Save copies of org data**, and **Restrict cut, copy, and paste**..
 - **Support apps on a variety of platforms and operating systems.** Each platform is different. Intune provides available settings specifically for each supported platform.
@@ -103,15 +103,15 @@ When apps are managed in Intune, administrators can do the following:
 
 ## Understand app types
 
-The users of apps and devices at your company (your company's workforce) might have several app requirements. Before adding apps to Intune and making them available to your workforce, you may find it helpful to assess and understand a few app fundamentals. There are various types of apps that are available for Intune. You must determine app requirements that are needed by the users at your company, such as the platforms and capabilities that your workforce needs. You must determine whether to use Intune to manage the devices (including apps) or have Intune manage the apps without managing the devices. Also, you must determine the apps and capabilities that your workforce needs, and who needs them. For more information, see [App types for managed environments](apps-type-overview.md) or an overview.
+The users of apps and devices at your organization might have several app requirements. Before adding apps to Intune and making them available to the members of your organization, you may find it helpful to assess and understand a few app fundamentals. There are various types of apps that are available for Intune. You must determine app requirements that are needed by the users at your organization, such as the platforms and capabilities that the members of your organization needs. You must determine whether to use Intune to manage the devices (including apps) or have Intune manage the apps without managing the devices. Also, you must determine the apps and capabilities that the members of your organization needs, and who needs them. For more information, see [App types for managed environments](apps-type-overview.md) or an overview.
 
 ## Purchase apps
 
-Often times, before you can distribute an app to your workforce, you must either purchase the app, purchase a license to use the app, or acquire a license to use the app. Some apps are free, however you may still need to follow the purchase process in order to distribute those apps to your workforce. For more information, see [Purchase apps for Intune](apps-purchase-overview.md) for an overview.
+Often times, before you can distribute an app to the members of your organization, you must either purchase the app, purchase a license to use the app, or acquire a license to use the app. Many apps are free, however you may still need to follow the purchase process in order to distribute those apps to the members of your organization. For more information, see [Purchase apps for Intune](apps-purchase-overview.md) for an overview.
 
 ## Add apps to Intune
 
-Before you distribute a managed app to your workforce, you first need to add the app to Intune. Once added, you can create both configuration and protection policies to support the app. When you're ready, you can assign the apps to the members of your organization. For more information, see [Add apps to Microsoft Intune Overview](apps-add-overview.md)
+Before you distribute a managed app to the members of your organization, you first need to add the app to Intune. Once added, you can create both configuration and protection policies to support the app. When you're ready, you can assign the apps to the members of your organization. For more information, see [Add apps to Microsoft Intune Overview](apps-add-overview.md)
 
 ## What's in this solution
 

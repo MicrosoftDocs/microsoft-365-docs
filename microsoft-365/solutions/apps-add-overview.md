@@ -20,11 +20,11 @@ Before you can add apps to Microsoft Intune, you must first set up Intune. If yo
 
 As an IT admin, you can use Intune to manage the apps that members of your organization use. This functionality is in addition to managing devices and protecting data. One of your priorities as an admin is to ensure that end users have access to the apps they need to do their work. This goal can be a challenge because:
 - There are a wide range of device platforms and app types.
-- You might need to manage apps on both company devices and users' personal devices.
+- You might need to manage apps on both organization (company) devices and users' personal devices.
 - You must ensure that your network and your data remain secure.
 - Additionally, you might want to assign and manage apps on devices that are not enrolled with Intune.
 
-The end users of apps and devices at your organization might have several app requirements. Before adding apps to Intune and making them available to members of your organization, you may find it helpful to assess and understand a few app fundamentals. There are various types of apps that are available for Intune. You must determine app requirements that are needed by the end users at your organization, such as the platforms and capabilities that your workforce needs. You must determine whether to use Intune to manage the devices (including apps) or have Intune manage the apps without managing the devices. Also, you must determine the apps and capabilities that your workforce needs, and who needs them.
+The end users of apps and devices at your organization might have several app requirements. Before adding apps to Intune and making them available to members of your organization, you may find it helpful to assess and understand a few app fundamentals. There are various types of apps that are available for Intune. You must determine app requirements that are needed by the end users at your organization, such as the platforms and capabilities that the members of your organization needs. You must determine whether to use Intune to manage the devices (including apps) or have Intune manage the apps without managing the devices. Also, you must determine the apps and capabilities that the members of your organization needs, and who needs them.
 
 This topic helps you do the following:
 - Determine app requirements and app questions that you should consider

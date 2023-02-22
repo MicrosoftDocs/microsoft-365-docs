@@ -16,7 +16,7 @@ keywords:
 
 # Step 1. Assess app requirements
 
-As an IT admin, before adding apps to Intune and making them available to the members of your organization, you may find it helpful to determine a few app requirements for your organization up front. You must determine app requirements such as the platforms and capabilities that your workforce needs. For instance, you must determine whether to use Intune to manage the devices and also the apps, or have Intune manage just the apps without managing the devices. Intune supports both of these types of management. In addition, you should determine the apps and capabilities that your workforce should use and who needs them. This step helps you assess and consider how you will provide apps to your organization.
+As an IT admin, before adding apps to Intune and making them available to the members of your organization, you may find it helpful to determine a few app requirements for your organization up front. You must determine app requirements such as the platforms and capabilities that the members of your organization needs. For instance, you must determine whether to use Intune to manage the devices and also the apps, or have Intune manage just the apps without managing the devices. Intune supports both of these types of management. In addition, you should determine the apps and capabilities that the members of your organization should use and who needs them. This step helps you assess and consider how you will provide apps to your organization.
 
 To start, first determine your organization's requirements by asking the questions presented in the table below:
 
@@ -33,7 +33,7 @@ To start, first determine your organization's requirements by asking the questio
 
 Managing the apps that the members of your organization uses on their devices is called mobile application management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed. This configuration allows your organization's apps to be managed by Intune, but doesn't enroll the devices to be managed by Intune. 
 
-Managing devices at an organization is known as mobile device management (MDM). Whn you manage both the apps and devices at your organization it is commonly referred to as **MAM + MDM**. There are additional benefits to using MDM with app protection policies. For example, a member of your organization could have both a phone issued by the company, as well as their own personal tablet. The company phone could be enrolled in MDM and protected by app protection policies while the personal device is protected by app protection policies only.
+Managing devices at an organization is known as mobile device management (MDM). Whn you manage both the apps and devices at your organization it is commonly referred to as **MAM + MDM**. There are additional benefits to using MDM with app protection policies. For example, a member of your organization could have both a phone issued by your organization, as well as their own personal tablet. The company phone could be enrolled in MDM and protected by app protection policies while the personal device is protected by app protection policies only.
 
 For more information, see [MAM configurations](apps-guide-overview.md#mam-configurations).
 
@@ -77,7 +77,7 @@ For more information, see [Determine the type of app for your solution](/mem/int
 
 Intune uses Azure Active Directory (Azure AD) groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs. Create groups to organize users or devices by geographic location, department, or hardware characteristics. Use groups to manage tasks at scale. For example, you can set policies for many users or deploy apps to a set of devices.
 
-As you're determining which apps your workforce needs, consider the various groups of users and the various apps they use. Knowing these groups is also helpful after you've added an app. As you add an app to Intune, you assign a group of users that can use the app.
+As you're determining which apps the members of your organization needs, consider the various groups of users and the various apps they use. Knowing these groups is also helpful after you've added an app. As you add an app to Intune, you assign a group of users that can use the app.
 
 To help determine the app users, see [Determine who will use the app](/mem/intune/apps/apps-add#assess-app-requirements). For details about adding groups of users, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add).
 
