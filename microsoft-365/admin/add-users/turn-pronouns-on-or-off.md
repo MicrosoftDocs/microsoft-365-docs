@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.date: 02/07/2023
 audience: Admin
 ms.topic: how-to 
 ms.service: microsoft-365-business
@@ -66,4 +67,5 @@ Consider notifying your users about the availability of the pronouns feature. We
 
 [Pronouns best practices](https://support.microsoft.com/office/pronouns-best-practices-ef1701ad-711d-4c6e-b664-64c3ee188d68) (article)\
 [Frequently asked questions about pronouns in Microsoft 365](https://support.microsoft.com/office/frequently-asked-questions-about-pronouns-in-microsoft-365-48135f04-e822-49b5-ba6b-e9bae2ce503a) (article)\
-[Profile cards in Microsoft 365](https://support.microsoft.com/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) (article)
+[Profile cards in Microsoft 365](https://support.microsoft.com/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) (article)\
+[Pronouns on your profile in Microsoft 365](https://support.microsoft.com/topic/232c3bfb-a947-4310-86db-b22d63663d85) (article)

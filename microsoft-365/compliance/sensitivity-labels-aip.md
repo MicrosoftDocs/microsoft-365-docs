@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 02/21/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -181,8 +181,7 @@ Use the following information to help you identify if the features you use with 
 |Per app visual marking|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)|
 |**Category: Encryption**||
 |Admin-defined permissions|![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#assign-permissions-now)|
-|User-defined permissions <br> - Do Not Forward for Outlook <br> - User and group custom permissions for Word, Excel, PowerPoint|![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#let-users-assign-permissions)|
-|User-defined permissions <br> - Organization-wide custom permissions by specifying domains for Word, Excel, PowerPoint|[In preview](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)|
+|User-defined permissions <br> - Do Not Forward for Outlook <br> - Users and groups, or organization-wide custom permissions for Word, Excel, PowerPoint|![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#let-users-assign-permissions)|
 |Co-authoring and AutoSave|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-coauthoring.md)|
 
 Remember to use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) to identify and track new features in development.

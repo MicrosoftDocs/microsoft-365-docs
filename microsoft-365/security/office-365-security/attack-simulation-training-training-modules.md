@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 description: Admins can learn about the Training modules that are available to use in Training campaigns in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150

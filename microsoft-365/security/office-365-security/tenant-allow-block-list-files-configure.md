@@ -12,6 +12,7 @@ search.appverid:
   - MET150
 ms.collection:
   - m365-security
+  - tier1
 description: Admins can learn how to allow or block files in the Tenant Allow/Block List in the Security portal.
 ms.subservice: mdo
 ms.service: microsoft-365-security

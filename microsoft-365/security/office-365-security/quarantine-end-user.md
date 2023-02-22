@@ -14,6 +14,7 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
   - seo-marvel-apr2020
 description: Users can learn how to view and manage quarantined messages in Exchange Online Protection (EOP) that should have been delivered to them.
