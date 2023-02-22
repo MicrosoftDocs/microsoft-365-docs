@@ -51,7 +51,7 @@ To install the Microsoft Purview Client, complete the following steps:
 2. Select **Download installer package (x64 version)** to download the installation package for Windows.
 3. After downloading the installation package, use your preferred method to install the client on users' devices. These options may include manually installing the client on devices or tools to help automate the client installation:
 
-    - **Microsoft Endpoint Manager**: [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) is an integrated solution for managing all of your devices. Microsoft brings together [Configuration Manager](/mem/configmgr/core/understand/introduction) and [Intune](/mem/intune/fundamentals/what-is-intune), without a complex migration, and with simplified licensing.
+    - **Microsoft Intune**: Microsoft Intune is an integrated solution for managing all of your devices. Microsoft brings together [Configuration Manager](/mem/configmgr/core/understand/introduction) and [Intune](/mem/intune/fundamentals/what-is-intune), without a complex migration, and with simplified licensing.
     - **Third-party device management solutions**: If your organization is using third-party device management solutions, see the documentation for these tools to install the client.
 
 
