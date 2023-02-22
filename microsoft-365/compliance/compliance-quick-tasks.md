@@ -4,7 +4,7 @@ description: "Learn about tasks that will help you quickly get started with comp
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/08/2020
+ms.date: 01/01/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp

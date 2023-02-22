@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 09/17/2019
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -50,6 +50,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - **Rolling out in preview**: Auto-labeling retention policies now support [simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode), so you can test out your policy configuration and view results before deploying in production.
+- New troubleshooting resources:
+    - [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
+    - [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)
 
 ### Data Loss Prevention
 
@@ -70,6 +73,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **General availability (GA)**: Protected meetings by [labeling calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md). Outlook remains in preview for this scenario.
 - **General availability (GA)**: For Windows, built-in labeling supports [organization-wide custom permissions](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) as a parity feature for the AIP add-in.
 - **In preview**: [Support for Azure Active Directory administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units).
+- **In preview**: Previously available in preview for Word, Excel, and PowerPoint, the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) with support for [label colors](sensitivity-labels-office-apps.md#label-colors) is now also in preview for Outlook on Windows.
 - **In preview**: Now supported for labeling built into Windows, macOS, iOS, and Android, auditing actions for sensitivity labels include encryption details such as a change in the encryption status and settings, and the Rights Management owner.
 - **In preview**: As a parity feature for the AIP add-in, built-in labeling for Windows supports [label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments).
 
