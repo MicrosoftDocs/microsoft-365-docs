@@ -144,7 +144,7 @@ Microsoft Endpoint DLP is installed as a component of Microsoft Defender for End
 > [!NOTE]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to six months.
 
-1. In **Microsoft Intune admin center**, open **Devices** > **Configuration profiles**, you should see your created profiles there.
+1. In the **Microsoft Intune admin center**, open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
 1. In the **Configuration profiles** page, choose the *wdav.pkg.intunemac* profile.
 
