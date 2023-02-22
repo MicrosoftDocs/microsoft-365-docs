@@ -258,7 +258,7 @@ If you use up the 20 GB of free capacity and don't subsequently purchase the For
    > [!NOTE]
    > You can also sign up for free storage from the **Insider risk management** > **Forensic evidence** > **Dashboard** tab.
 
-2. Under **Capacity and billing**, select **Claim 20 GB storage space**.
+2. Select **Claim 20 GB of capacity**.
 3. Follow the prompts in the Microsoft 365 admin center.
 
 ### Purchase the Forensic add-on for Insider Risk Management
