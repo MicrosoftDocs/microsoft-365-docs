@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.author: v-smandalika
 author: v-smandalika
 ms.localizationpriority: medium
-ms.reviewer: pahuijbr
+ms.reviewer: pahuijbr, mkaminska, v-vutrieu
 ms.date: 02/23/2023
 manager: dansimp
 audience: ITPro
