@@ -3,6 +3,7 @@ title: "Microsoft 365 admin center apps usage reports"
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 09/09/2019
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

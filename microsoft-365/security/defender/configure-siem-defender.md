@@ -39,7 +39,7 @@ ms.date: 10/25/2021
 > - [Microsoft 365 Defender Incidents](incident-queue.md) consists of collections of correlated alerts and their evidence.
 > - [Microsoft 365 Defender Streaming API](streaming-api.md) streams event data from Microsoft 365 Defender to event hubs or Azure storage accounts.
 
-Microsoft 365 Defender supports security information and event management (SIEM) tools ingesting information from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for a registered AAD application representing the specific SIEM solution or connector installed in your environment.
+Microsoft 365 Defender supports security information and event management (SIEM) tools ingesting information from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for a registered AAD application representing the specific SIEM solution or connector installed in your environment. 
 
 For more information, see:
 
@@ -94,10 +94,15 @@ For more information on the new ArcSight SmartConnector for Microsoft 365 Defend
 
 The SmartConnector replaces the previous FlexConnector for Microsoft Defender for Endpoint that has been deprecated.
   
+### Elastic
+
+Elastic Security combines SIEM threat detection features with endpoint prevention and response capabilities in one solution.
+The Elastic integration for Microsoft 365 Defender and Defender for Endpoint enables organizations to leverage incidents and alerts from Defender within Elastic Security to perform investigations and incident response. Elastic correlates this data with other data sources, including cloud, network, and endpoint sources using robust detection rules to find threats quickly.
+For more information on the Elastic connector, see: [Microsoft M365 Defender | Elastic docs](https://docs.elastic.co/integrations/m365_defender)
 
 ## Ingesting streaming event data via Event Hubs
 
-First you need to stream events from your AAD tenant to your Event Hubs or Azure Storage Account. For more information, see [Streaming API](../defender/streaming-api.md).
+First you need to stream events from your Azure AD tenant to your Event Hubs or Azure Storage Account. For more information, see [Streaming API](../defender/streaming-api.md).
 
 For more information on the event types supported by the Streaming API, see [Supported streaming event types](../defender/supported-event-types.md).
 
@@ -111,6 +116,10 @@ For more information on the Splunk Add-on for Microsoft Cloud Services, see the 
 ### IBM QRadar
 >Use the new IBM QRadar Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products via Event Hubs or Azure Storage Account. For more information on supported event types, see [Supported event types](supported-event-types.md).
 
-## Related topics
+### Elastic
+
+For more information on the Elastic streaming API integration, see [Microsoft M365 Defender | Elastic docs](https://docs.elastic.co/integrations/m365_defender).
+
+## Related articles
 
 [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)

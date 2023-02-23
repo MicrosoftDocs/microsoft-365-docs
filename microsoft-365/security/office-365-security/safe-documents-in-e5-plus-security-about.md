@@ -12,6 +12,7 @@ search.appverid:
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier1
 description: Learn about Safe Documents in Microsoft 365 A5 or E5 Security.
 ms.subservice: mdo
 ms.service: microsoft-365-security

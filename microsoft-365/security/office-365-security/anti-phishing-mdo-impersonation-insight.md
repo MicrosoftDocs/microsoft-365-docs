@@ -14,6 +14,7 @@ search.appverid:
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier2
 description: Admins can learn how the impersonation insight works. They can quickly determine which senders are legitimately sending email into their organizations from domains that don't pass email authentication checks (SPF, DKIM, or DMARC).
 ms.custom: 
 - seo-marvel-apr2020

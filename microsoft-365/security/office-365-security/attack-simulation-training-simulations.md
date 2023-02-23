@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo

@@ -14,6 +14,7 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
 description: Admins can learn how to view, create, modify, and delete Safe Links policies and global Safe Links settings in Microsoft Defender for Office 365.
 ms.subservice: mdo
@@ -160,13 +161,10 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
           When you're finished, click **Done**.
 
    - **Teams** section:
-     - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams. URLs are not rewritten**: Select this option to enable Safe Links protection for links in Teams. Note that this setting might take up to 24 hours to take effect. This setting affects time of click protection.
-
-     > [!NOTE]
-     > Currently, Safe Links protection for Microsoft Teams is not available in Microsoft 365 GCC High or Microsoft 365 DoD.
+     - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams. URLs are not rewritten.**: Select this option to enable Safe Links protection for links in Teams. Note that this setting might take up to 24 hours to take effect. This setting affects time of click protection.
 
    - **Office 365 apps** section:
-     - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps. URLs are not rewritten**: Select this option to enable Safe Links protection for links in files in supported Office desktop, mobile, and web apps. This setting affects time of click protection.
+     - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps. URLs are not rewritten.**: Select this option to enable Safe Links protection for links in files in supported Office desktop, mobile, and web apps. This setting affects time of click protection.
 
    - **Click protection settings** section:
      - **Track user clicks**: Leave this option selected to enable the tracking user clicks on URLs. If you select this option, the following options are available:
