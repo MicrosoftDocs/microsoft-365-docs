@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/21/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -71,6 +72,8 @@ Choose from the following role group options and solution actions when working w
 |Create forensic evidence capturing request|Yes|Yes|No|No|No|No|
 |Approve forensic evidence capturing requests|Yes|No|No|No|No|Yes|
 |View device health report|Yes|Yes|No|No|No|No|
+|Configure Adaptive Protection|Yes|Yes|No|No|No|No|
+|View Adaptive Protection users tab|Yes|No|Yes|Yes|No|No|
 
 > [!IMPORTANT]
 > Make sure you always have at least one user in the *Insider Risk Management* or *Insider Risk Management Admins* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.

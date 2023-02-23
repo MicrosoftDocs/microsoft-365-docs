@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -16,11 +14,13 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
   - m365-security
+  - tier2
 description: Admins can learn how to find and use the email security reports that are available in the Microsoft 365 Defender portal.
 ms.custom: 
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/02/2022
 ---
 
 # View email security reports in the Microsoft 365 Defender portal
@@ -1017,16 +1017,14 @@ On the **User reported messages** page, the ![Export icon.](../../media/m365-cc-
 
 ## What permissions are needed to view these reports?
 
-In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Microsoft 365 Defender portal:
-
-- **Organization Management**
-- **Security Administrator**
-- **Security Reader**
-- **Global Reader**
-
-For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
-
-**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- You need to be assigned permissions before you can view and use the reports that are described in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
+    - **Organization Management**
+    - **Security Administrator**
+    - **Security Reader**
+    - **Global Reader**
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## What if the reports aren't showing data?
 

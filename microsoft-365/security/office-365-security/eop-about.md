@@ -5,10 +5,12 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 09/18/2020
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: overview
-ms.collection: m365-security
+ms.collection: 
+  - m365-security
+  - tier2
 ms.localizationpriority: medium
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom: 

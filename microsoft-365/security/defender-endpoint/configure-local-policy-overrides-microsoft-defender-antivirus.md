@@ -91,9 +91,9 @@ By default, lists that have been configured in local group policy and the Window
 
 4. Double-click **Configure local administrator merge behavior for lists** and set the option to **Disabled**. Then select **OK**.
 
-### Use Microsoft Endpoint Manager to disable local list merging
+### Use Microsoft Intune to disable local list merging
 
-1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), select **Endpoint security** > **Antivirus**.
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), select **Endpoint security** > **Antivirus**.
 
 2. Choose **Create Policy**, or modify an existing Microsoft Defender Antivirus policy.
 
@@ -114,6 +114,6 @@ By default, lists that have been configured in local group policy and the Window
 
 ## Related topics
 
-- [Microsoft Endpoint Manager](/mem/endpoint-manager-overview)
+- [Microsoft Intune](/protect/advanced-threat-protection-configure)
 - [Microsoft Defender Antivirus in Windows](microsoft-defender-antivirus-in-windows-10.md)
 - [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)

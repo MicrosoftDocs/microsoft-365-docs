@@ -1,9 +1,14 @@
 {
   "redirections": [
     {
-      "source_path": "microsoft-365/frontline/bookings-virtual-visits.md",
-      "redirect_url": "/microsoft-365/frontline/bookings-virtual-appointments",
+      "source_path": "microsoft-365/frontline/bookings-virtual-appointments.md",
+      "redirect_url": "/microsoft-365/frontline/virtual-appointments-app",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/frontline/bookings-virtual-visits.md",
+      "redirect_url": "/microsoft-365/frontline/virtual-appointments-app",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/frontline/virtual-visits-usage-report.md",
@@ -10684,7 +10689,26 @@
       "source_path": "microsoft-365/compliance/create-test-tune-dlp-policy.md",
       "redirect_url": "microsoft-365/compliance/create-deploy-policy",
       "redirect_document_id": false 
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/configure-email-notifications.md",
+    "redirect_url": "microsoft-365/security/defender/configure-email-notifications",
+    "redirect_document_id": false 
+  },
+  {
+    "source_path": "microsoft-365/compliance/data-loss-prevention-policies.md",
+    "redirect_url": "microsoft-365/compliance/dlp-learn-about-dlp",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/frontline/ehr-admin-cerner.md",
+    "redirect_url": "/microsoft-365/frontline/ehr-admin-oracle-health",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/archive-slack-data-microsoft.md",
+    "redirect_url": "/microsoft-365/compliance/archiving-third-party-data",
+    "redirect_document_id": false
   }
-
  ]
 }

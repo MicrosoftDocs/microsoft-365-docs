@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 11/07/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -228,9 +229,9 @@ A: As the frequency of the messages is at most once a week, the recommended mini
 
 A: Not currently, but additional customization options will be enabled in future releases.
 
-## Organizational Messages in Microsoft Intune (Windows Endpoint Manager)
+## Organizational Messages in Microsoft Intune
 
-Organizational messages in Windows Endpoint Manager enable organizations to deliver branded personalized messages to their employees via native Windows 11 surfaces, such as Notification Center and the Get started app. These messages are intended to help people ramp up in new roles quicker, learn more about their organization, and stay informed of new updates and trainings. [Learn more about Organizational messages in Windows Endpoint Manager](/mem/intune/remote-actions/organizational-messages-prerequisites).
+Organizational messages in Intune enable organizations to deliver branded personalized messages to their employees via native Windows 11 surfaces, such as Notification Center and the Get started app. These messages are intended to help people ramp up in new roles quicker, learn more about their organization, and stay informed of new updates and trainings. [Learn more about Organizational messages in Microsoft Intune](/mem/intune/remote-actions/organizational-messages-prerequisites).
 
 ## Appendix
 

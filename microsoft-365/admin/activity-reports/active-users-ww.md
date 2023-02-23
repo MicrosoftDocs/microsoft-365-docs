@@ -3,6 +3,7 @@ title: "Assess the Microsoft 365 Active Users report"
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
