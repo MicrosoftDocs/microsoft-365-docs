@@ -78,7 +78,7 @@ For more information about the increased case limits, see [Use the new case form
 
 3. On the **eDiscovery (Premium)** page, click the **Cases** tab, and then click **Create a case**.
 
-   The **New eDiscovery case** flyout page is displayed. The **Case format** section provides the option to create a case using the new case format, Click **Next** to proceed to the **Members and settings** Page.
+   The **New eDiscovery case** flyout page is displayed. The **Case format** section provides the option to create a case using the new case format. Select **Next** to proceed to the **Members and settings** page.
 
    ![Large case option on the New eDiscovery case page.](..\media\AeDNewCaseFormat1.png)
    
