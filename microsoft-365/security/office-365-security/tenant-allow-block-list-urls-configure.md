@@ -137,8 +137,10 @@ By default, allow entries for domains and email addresses, files and URLs are cr
 > When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are overriden.
 >
 > During mail flow, if messages containing the URL pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message containing the URL in the allow entry will be delivered. 
-> During time of click, the URL allow overrides all filters associated with the URL entity, allowing the end user to access the content on the URL.
-> Adding a URL to allow list does not prevent it from being wrapped by safe links. Check out [Do not rewrite list in SafeLinks]([email-authentication-about.md](https://learn.microsoft.com/microsoft-365/security/office-365-security/safe-links-about?do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
+>
+> During time of click, the URL allow entry overrides all filters associated with the URL entity, allowing the user to access the content in the URL.
+>
+> Adding an allow entry for a URL does not prevent it from being wrapped by Safe Links. For more information, see [Do not rewrite list in SafeLinks](safe-links-about.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
 
 ## Use the Microsoft 365 Defender portal to view existing allow or block entries for URLs in the Tenant Allow/Block List
 
