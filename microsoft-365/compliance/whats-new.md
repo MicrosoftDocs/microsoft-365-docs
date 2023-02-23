@@ -70,7 +70,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 
-- **General availability (GA)**: Protected meetings by [labeling calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md). Outlook remains in preview for this scenario.
+- **General availability (GA)**: Protected meetings by [labeling calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md). Although Outlook for Mac is now rolling out in general availability, Outlook for Windows remains in preview for this scenario.
 - **General availability (GA)**: For Windows, built-in labeling supports [organization-wide custom permissions](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) as a parity feature for the AIP add-in.
 - **In preview**: [Support for Azure Active Directory administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units).
 - **In preview**: Previously available in preview for Word, Excel, and PowerPoint, the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) with support for [label colors](sensitivity-labels-office-apps.md#label-colors) is now also in preview for Outlook on Windows.
