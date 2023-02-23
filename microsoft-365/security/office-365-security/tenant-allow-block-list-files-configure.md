@@ -202,7 +202,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 
 You can make the following modifications to entries for files in the Tenant Allow/Block list:
 
-- **Block enries**: The expiration date and notes.
+- **Block entries**: The expiration date and notes.
 - **Allow entries**: Notes.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
