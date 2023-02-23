@@ -316,10 +316,10 @@ After a few moments, the allow entry will appear on the **URL** tab on the **Ten
 
 > [!NOTE]
 >
-> - By default, allow entries for domains and email addresses, files and URLs are created for 30 days, while allow entries for spoofed senders never expire. 
-> - Microsoft will either learn from the allow entries for domains and email addresses, files and URLs within those 30 days, or automatically extend it for you.
-> - When the URL is encounterd again during mailflow, [Safe Links](safe-links-about.md) detonation or URL reputation checks, and all other URL-based filters are overriden. If all the other entities in the email are found clean by the filtering system, the email will be delivered. 
-> - During time of click, all URL-based filters including [Safe Links](safe-links-about.md) detonation or URL reputation checks are overriden, allow end user user to access content hosted by the URL.
+> - By default, allow entries for domains and email addresses, files, and URLs are created for 30 days, while allow entries for spoofed senders never expire. 
+> - Microsoft will either learn from the allow entries for domains and email addresses, files, and URLs within those 30 days or automatically extend it for you.
+> - When the URL is encountered again during mailflow, [Safe Links](safe-links-about.md) detonation or URL reputation checks, and all other URL-based filters are overridden. If all the other entities in the email are found clean by the filtering system, the email will be delivered. 
+> - During selection, all URL-based filters, including [Safe Links](safe-links-about.md) detonation or URL reputation checks are overridden, allowing the end user to access content hosted by the URL.
 
 ## View email admin submissions to Microsoft
 
