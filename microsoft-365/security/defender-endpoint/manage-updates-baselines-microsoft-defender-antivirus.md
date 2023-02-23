@@ -1,5 +1,5 @@
 ---
-title: Manage Microsoft Defender Antivirus updates and apply baselines
+title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 ms.service: microsoft-365-security
@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 02/14/2023
+ms.date: 02/23/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -22,7 +22,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Manage Microsoft Defender Antivirus updates and apply baselines
+# Microsoft Defender Antivirus security intelligence and product updates
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plans 1 and 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -41,7 +41,7 @@ Keeping Microsoft Defender Antivirus up to date is critical to assure your devic
 
 ## Security intelligence updates
 
-Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads dynamic security intelligence updates to provide more protection. These dynamic updates don't take the place of regular security intelligence updates via security intelligence update KB2267602.
+Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the *Microsoft Advanced Protection Service*, or MAPS) and periodically downloads dynamic security intelligence updates to provide more protection. These dynamic updates don't take the place of regular security intelligence updates via security intelligence update KB2267602.
 
 > [!NOTE]
 > Updates are released under the following KBs:
@@ -56,13 +56,13 @@ Engine updates are included with security intelligence updates and are released 
 
 ## Product updates
 
-Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) known as *platform updates*.
+Microsoft Defender Antivirus requires monthly updates (KB4052623) known as *platform updates*.
 
 You can manage the distribution of updates through one of the following methods:
 
 - [Windows Server Update Service (WSUS)](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
-- [Microsoft Endpoint Configuration Manager](/configmgr/sum/understand/software-updates-introduction)
-- The usual method you use to deploy Microsoft and Windows updates to endpoints in your network.
+- [Microsoft Configuration Manager](/configmgr/sum/understand/software-updates-introduction)
+- The usual methods you use to deploy Microsoft and Windows updates to endpoints in your network.
 
 For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
@@ -71,7 +71,7 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 > - This article lists changes that are included in the broad release channel. [See the latest broad channel release here](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 > - To learn more about the gradual rollout process, and to see more information about the next release, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
 > - To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
-> - If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)**, and then select the **Microsoft Defender Processes** worksheet. The mde-urls workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
+> - If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)**, and then select the **Microsoft Defender Processes** worksheet. The `mde-urls` workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
 
 ## Monthly platform and engine versions
 
