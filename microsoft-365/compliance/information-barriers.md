@@ -79,7 +79,7 @@ IB policies aren't available to restrict communication and collaboration between
 
 If your organization is in [*single* or *multi-segment* mode](information-barriers-multi-segment.md#enable-multiple-segment-support-for-users), information barriers is no longer based on Exchange Online Address Book Policies (ABPs). Organizations using ABPs will not have any impact to the existing ABPs when enabling information barriers. If there's no ABP defined for users with associated IB segments and policies, an ABP is automatically created with empty address lists for these users. You can change these ABPs as needed. We recommend that your ABPs are consistent with the segments you configure in information barriers. You should try to avoid user visibility differences between your existing ABPs and your new information barriers configuration.
 
-### Information barriers and Exchange for legacy modes
+### Information barriers and Exchange for legacy mode
 
 If your organization is in [*legacy* mode]((information-barriers-multi-segment.md#enable-multiple-segment-support-for-users)), IB policies are based on [Exchange Online Address Book Policies (ABPs)](/exchange/address-books/address-book-policies/address-book-policies). ABPs allow organizations to virtually assign users into specific groups in order to provide customized views of the organization's global address book (GAL). When IB policies are created, ABPs for the policies are automatically created. As IB policies are added in your organization, the structure and behavior of your GAL will change to comply with IB policies.
 
