@@ -65,7 +65,7 @@ Select **View details** to view the report.
 
 The graph provides an overview of feature utilization. It changes depending on the date range you select. The table shows usage of advanced features by individual users
 
-:::image type="content" source="media/advanced-va-activity-report.png" alt-text="Screenshot of the Advanced Virtual Appointments activity report." lightbox="media/advanced-va-activity-report.png":::
+:::image type="content" source="media/va-advanced-features-report.png" alt-text="Screenshot of the Advanced Virtual Appointments activity report." lightbox="media/va-advanced-features-report.png":::
 
 |Callout |Description  |
 |--------|-------------|
