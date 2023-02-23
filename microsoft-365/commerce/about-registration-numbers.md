@@ -26,7 +26,7 @@ ms.date: 02/02/2022
 
 # About registration numbers and under review notifications
 
-This article only applies to commercial customers who buy or activate products or services directly from Microsoft. This article doesn't apply to Volume Licensing, or cloud solution provider (CSP) customers who work directly with a partner.
+This article only applies to commercial customers who buy or activate products or services directly from Microsoft.
 
 ## What is a registration number?  
 

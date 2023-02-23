@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Microsoft 365 Defender portal.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo

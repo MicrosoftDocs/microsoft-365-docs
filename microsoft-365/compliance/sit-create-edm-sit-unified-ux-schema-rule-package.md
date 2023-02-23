@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.date:
+ms.date: 09/14/2021
 ms.localizationpriority: medium
 ms.collection:
 - tier1
@@ -100,4 +100,3 @@ When you select **Submit**, EDM will create the schema and rule package. The nam
 ## Next step
 
 - **For new experience**: [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md)
-

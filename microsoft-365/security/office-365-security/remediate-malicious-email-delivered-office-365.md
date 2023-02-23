@@ -4,7 +4,9 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: conceptual
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier1
 audience: admin
 f1.keywords: 
   - NOCSH

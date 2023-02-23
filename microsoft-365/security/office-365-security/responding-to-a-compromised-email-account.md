@@ -12,6 +12,7 @@ ms.collection:
   - m365-security
   - m365solution-smb
   - highpri
+  - tier1
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
