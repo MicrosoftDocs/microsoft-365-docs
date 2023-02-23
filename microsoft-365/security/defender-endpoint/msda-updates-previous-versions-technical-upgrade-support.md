@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Antivirus updates - Previous versions for technical upgrade support
-description: Understand the licensing requirements and requirements for onboarding devices to the service
+description: Understand the type of technical support offered for previous versions of Microsoft Defender Antivirus
 keywords: minimum requirements, licensing, comparison table
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
