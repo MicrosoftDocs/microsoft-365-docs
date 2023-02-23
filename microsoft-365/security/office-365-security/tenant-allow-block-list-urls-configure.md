@@ -23,6 +23,11 @@ ms.date: 12/05/2022
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
+> [!NOTE]
+> 
+> - To allow phishing URLs that are part of third-party attack simulation training, use the [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md) to specify the URLs. Don't use the Tenant Allow/Block List.
+
+
 **Applies to**
 - [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -31,9 +36,6 @@ ms.date: 12/05/2022
 This article describes how to create and manage URL allow and block entries that are available in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
 You manage allow and block entries for URLs in the Microsoft 365 Defender Portal or in Exchange Online PowerShell. Messages containing the blocked URLs are quarantined.
-
-> [!NOTE]
-> To allow phishing URLs that are part of third-party attack simulation training, use the [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md) to specify the URLs. Don't use the Tenant Allow/Block List.
 
 ## What do you need to know before you begin?
 
