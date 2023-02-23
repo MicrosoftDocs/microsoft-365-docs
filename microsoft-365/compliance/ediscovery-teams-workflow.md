@@ -168,7 +168,7 @@ To create a collection of Teams content:
 
 8. On the **Conditions** wizard page, configure the search query to collect Teams content from the data sources that you specified on the previous wizard pages. You can use various keywords and search conditions to narrow the scope of the collection. For more information, see [Build search queries for collections](ediscovery-building-search-queries.md).
 
-   To help ensure the most comprehensive collection of Teams chat conversations (including 1:1, group, and channel chats) use the **Message Kind** condition and select **Equals Any of** option and type **Microsoftteams**. We also recommend including a date range or several keywords to narrow the scope of the collection to items relevant to your investigation. Here's a screenshot of a sample query using the **Type** and **Date** options:
+   To help ensure the most comprehensive collection of Teams chat conversations (including 1:1, group, and channel chats), use the **Message Kind** condition, select the **Equals any of** option, and enter **Microsoftteams**. We also recommend including a date range or several keywords to narrow the scope of the collection to items relevant to your investigation. Here's a screenshot of a sample query using the **Type** and **Date** options:
 
 9. On the **Save draft or collect** wizard page, do one of the following depending on whether you want to create a collection estimate or commit the collection to a review set.
 
