@@ -100,7 +100,8 @@ The following list describes what happens in the Tenant Allow/Block List when yo
 
   - If the message was not blocked due to filtering, no allow entries are created anywhere.
 
-By default, allow entries for **domains and email addresses**, **files** and **URLs** are created for 30 days, while allow entries for **spoofed senders** never expire. Microsoft will either learn from the allow entries for **domains and email addresses**, **files** and **URLs** within those 30 days, or automatically extend it for you. Once Microsoft learn, email containing these entities will be delivered to the inbox provided something else in the email is not malicious.
+By default, allow entries for **domains and email addresses**, **files** and **URLs** are created for 30 days, while allow entries for **spoofed senders** never expire. Microsoft will either learn from the allow entries for **domains and email addresses**, **files** and **URLs** within those 30 days, or automatically extend it for you. Once Microsoft learn, email containing these entities will be delivered to the inbox provided something else in the email is not malicious.  Moreover these entities by default will open at time of click.
+
 
 > [!NOTE]
 > Microsoft does not allow you to create allow entries directly as it leads to creation of allows that are not needed, thus exposing the customer's tenant to malicious emails which might otherwise have been filtered by the system.
@@ -117,4 +118,4 @@ After you add an allow or block entry through the Submissions portal or a block 
 
 An allow is created by default for a period of 30 calendar days so that Microsoft could learn from it and then remove it. With **[allow expiry management](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447)**, if Microsoft has not learned from the allow entry, Microsoft will automatically extend the expiry time of allow entries that will soon expire by another 30 days. This extension  prevents legitimate email from going to junk or quarantine or legitimate URL or file from being blocked at time of click. If Microsoft does not learn within 90 calendar days from the date of the original creation of the allow entry, Microsoft will remove the allow entry. You will be kept informed throughout the process using emails.
 
-If Microsoft has learned from the allow entry, the entry will be removed, and you'll get an alert informing you about it.
+If Microsoft has learned from the allow entry, the entry will be removed, and you'll get an alert informing you about it. Once Microsoft learn, email containing these entities will be delivered to the inbox provided something else in the email is not malicious.  Moreover these entities by default will open at time of click.
