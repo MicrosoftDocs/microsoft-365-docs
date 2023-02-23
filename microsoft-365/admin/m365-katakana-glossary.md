@@ -8,42 +8,18 @@ ms.reviewer: tadaom
 audience: Admin
 ms.topic: reference
 ms.service: microsoft-365-business
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Tier3
 - Adm_O365
 - scotvorg
 ROBOTS: NOINDEX, NOFOLLOW 
 description: "Learn how to view the Japanese katakana glossary for the Microsoft 365 admin center."
-ms.date: 2/22/2023
-ms.openlocfilehash: 06594439dd669dc36e236a4ba35926d03f2af001
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68057527"
+ms.date: 2/23/2023
 ---
 <!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.REVIEWER -->
 
 # Microsoft 365 admin center katakana glossary
-
-<!--
-These images are included for the ja-jp article only
-
-:::image type="content" source="../media/katanaglossary/001_account.png" alt-text="Image used for Japanese article only":::
-:::image type="content" source="../media/katanaglossary/002_1_addon.png" alt-text="Image used for Japanese article only":::
-:::image type="content" source="../media/katanaglossary/003_customdomain.png" alt-text="Image used for Japanese article only":::
-:::image type="content" source="../media/katanaglossary/004_cloudstorage.png" alt-text="Image used for Japanese article only":::
-:::image type="content" source="../media/katanaglossary/005_group_updated.png" alt-text="Image used for Japanese article only":::
-:::image type="content" source="../media/katanaglossary/006_globaladmin.png" alt-text="Image used for Japanese article only":::
-:::image type="content" source="../media/katanaglossary/007_collabo-commu.png" alt-text="Image used for Japanese article only":::
-:::image type="content" source="../media/katanaglossary/008_trainingguide.png" alt-text="Image used for Japanese article only":::
-:::image type="content" source="../media/katanaglossary/009_feedback.png" alt-text="Image used for Japanese article only":::
-:::image type="content" source="../media/katanaglossary/010_privacy_updated.png" alt-text="Image used for Japanese article only":::
-:::image type="content" source="../media/katanaglossary/011_billpayments.png" alt-text="Image used for Japanese article only":::
-:::image type="content" source="../media/katanaglossary/012_domain.png" alt-text="Image used for Japanese article only":::
-:::image type="content" source="../media/katanaglossary/013_licenses.png" alt-text="Image used for Japanese article only":::
--->
 
 Explanations have been added to the main katakana terms used in the Microsoft 365 Management Center. For more detailed information, please refer to the text in the link on each item.
 
@@ -109,7 +85,7 @@ Someone from outside the organization/company who can view or change certain aut
 
 [Sharing with external or guest in OneDrive, SharePoint, and Lists](https://support.microsoft.com/office/7aa070b8-d094-4921-9dd9-86392f2a79e7)
 
-[Guest access with Microsoft Teams](../../microsoftteams/guest-access.md)
+[Guest access with Microsoft Teams](/microsoftteams/guest-access.md)
 
 ## Collaboration and communication
 
