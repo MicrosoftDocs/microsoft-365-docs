@@ -24,7 +24,6 @@ ms.date: 12/05/2022
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 > [!NOTE]
-> 
 > - To allow phishing URLs that are part of third-party attack simulation training, use the [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md) to specify the URLs. Don't use the Tenant Allow/Block List.
 
 
