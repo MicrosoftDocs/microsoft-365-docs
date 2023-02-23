@@ -231,7 +231,7 @@ After a few moments, the block entry will appear on the **URL** tab on the **Ten
 
    :::image type="content" source="../../media/admin-submission-email-allow.png" alt-text="Submit a false positive (good) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-allow.png":::
 
-After a few moments, the allow entries will appear on the **Domains & addresses** or **Spoofed senders** or **URL** or **Files** tab on the **Tenant Allow/Block List** page. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+After a few moments, the allow entries will appear on the **Domains & addresses**, **Spoofed senders**, **URL**, or **Files** tab on the **Tenant Allow/Block List** page. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
 > [!NOTE]
 >
@@ -239,10 +239,9 @@ After a few moments, the allow entries will appear on the **Domains & addresses*
 > - If the sender has not already been blocked, submitting the email message to Microsoft won't create an allow entry in the Tenant Allow/Block List.
 > - Allows are added during mail flow, based on which filters determined the message to be malicious. For example, if the sender and a URL in the message were determined to be bad, an allow entry is created for the sender, and an allow entry is created for the URL.
 > - When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are skipped. For an email, all other entities are still evaluated by the filtering system before making a decision.
-> - For messages that were incorrectly blocked by [domain or user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), the allow entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
+> - For messages that were incorrectly blocked by [domain or user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), the allow entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains** section in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
 > - During mail flow, if messages from the domain or email address pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message from a sender in the allow entry will be delivered.
-> - By default, allow entries for domains and email addresses, files, and URLs are created for 30 days, while allow entries for spoofed senders never expire. 
-> - Microsoft will either learn from the allow entries for domains and email addresses, files, and URLs within those 30 days or automatically extend it for you.
+> - By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries or automatically extend them for you. By default, allow entries for spoofed senders never expire.
 
 ## Report good email attachments to Microsoft
 
@@ -277,10 +276,9 @@ After a few moments, the allow entries will appear on the **Domains & addresses*
 After a few moments, the allow entry will appear on the **Files** tab on the **Tenant Allow/Block List** page. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
 > [!NOTE]
-> - By default, allow entries for domains and email addresses, files, and URLs are created for 30 days, while allow entries for spoofed senders never expire. 
-> - Microsoft will either learn from the allow entries for domains and email addresses, files, and URLs within those 30 days or automatically extend it for you.
-> - When the file is encountered again during mailflow, [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks and all other file-based filters are overridden. If all the other entities in the email are found clean by the filtering system, the email will be delivered. 
-> - During selection, all file-based filters, including [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks are overridden, allowing the end user to access the file.
+> - By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries or automatically extend them for you. By default, allow entries for spoofed senders never expire.
+> - When the file is encountered again during mail flow, [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks and all other file-based filters are overridden. If the filtering system determines that all other entities in the email message are clean, the message will be delivered.
+> - During selection, all file-based filters, including [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks are overridden, allowing user access the file.
 
 ## Report good URLs to Microsoft
 
@@ -316,10 +314,9 @@ After a few moments, the allow entry will appear on the **URL** tab on the **Ten
 
 > [!NOTE]
 >
-> - By default, allow entries for domains and email addresses, files, and URLs are created for 30 days, while allow entries for spoofed senders never expire. 
-> - Microsoft will either learn from the allow entries for domains and email addresses, files, and URLs within those 30 days or automatically extend it for you.
-> - When the URL is encountered again during mailflow, [Safe Links](safe-links-about.md) detonation or URL reputation checks, and all other URL-based filters are overridden. If all the other entities in the email are found clean by the filtering system, the email will be delivered. 
-> - During selection, all URL-based filters, including [Safe Links](safe-links-about.md) detonation or URL reputation checks are overridden, allowing the end user to access content hosted by the URL.
+> - By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries or automatically extend them for you. By default, allow entries for spoofed senders never expire. 
+> - When the URL is encountered again during mail flow, [Safe Links](safe-links-about.md) detonation or URL reputation checks, and all other URL-based filters are overridden. If the filtering system determines that all other entities in the email message are clean, the message will be delivered.
+> - During selection, all URL-based filters, including [Safe Links](safe-links-about.md) detonation or URL reputation checks are overridden, allowing user access to content hosted by the URL.
 
 ## View email admin submissions to Microsoft
 
