@@ -382,7 +382,7 @@
   - name: Detect threats and protect endpoints
     items:
     - name: Microsoft Defender Vulnerability Management
-      href: index.yml
+      href: ../defender-vulnerability-management/index.yml
     - name: Device discovery
       items:
       - name: Device discovery overview
@@ -620,9 +620,11 @@
       - name: Find malware detection names for Microsoft Defender for Endpoint
         href: find-defender-malware-name.md
 
-      - name: Get your antivirus and antimalware updates
+      - name: Microsoft Defender Antivirus security intelligence and product updates
         href: manage-updates-baselines-microsoft-defender-antivirus.md
         items:
+        - name: Previous versions for technical upgrade support only
+          href: msda-updates-previous-versions-technical-upgrade-support.md
         - name: Manage the sources for Microsoft Defender Antivirus protection updates
           href: manage-protection-updates-microsoft-defender-antivirus.md
         - name: Manage the schedule for when protection updates should be downloaded and applied
