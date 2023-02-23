@@ -51,7 +51,7 @@ Because Microsoft wants to keep our customers secure by default, some tenants ov
 - IP Allow List (connection filtering)
 - Exchange mail flow rules (also known as transport rules)
 
-If you might want to temporarily allow certain messages that are still being blocked by Microsoft, do it [via Admin submissions](https://learn.microsoft.com/microsoft-365/security/office-365-security/submissions-admin?view=o365-worldwide#report-good-email-to-microsoft). 
+If you want to temporarily allow certain messages that are still being blocked by Microsoft, do it [via Admin submissions](/microsoft-365/security/office-365-security/submissions-admin#report-good-email-to-microsoft). 
 
 More information on these overrides can be found in [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
