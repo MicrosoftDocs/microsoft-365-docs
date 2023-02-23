@@ -65,7 +65,7 @@ This article describes how to configure the default connection filter policy in 
 
 - To find the source IP addresses of the email servers (senders) that you want to allow or block, you can check the connecting IP (**CIP**) header field in the message header. To view a message header in various email clients, see [View internet message headers in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
-- The IP Allow List takes precedence over the IP Block List (an address on both lists is not blocked).
+- The IP Allow List takes precedence over the IP Block List (an address on both lists isn't blocked).
 
 - The IP Allow List and the IP Block List each support a maximum of 1273 entries, where an entry is a single IP address, an IP address range, or a Classless InterDomain Routing (CIDR) IP.
 
@@ -176,7 +176,7 @@ You can audit the rule, test the rule, activate the rule during a specific time 
 
 ### Skip spam filtering on selective email domains from the same source
 
-Typically, adding an IP address or address range to the IP Allow List means you trust all incoming messages from that email source. But what if that source sends email from multiple domains, and you want to skip spam filtering for some of those domains, but not others? You can't use the IP Allow List alone to do this, but you can use the IP Allow List in combination with a mail flow rule.
+Typically, adding an IP address or address range to the IP Allow List means you trust all incoming messages from that email source. What if that source sends email from multiple domains, and you want to skip spam filtering for some of those domains, but not others? You can use the IP Allow List in combination with a mail flow rule.
 
 For example, the source email server 192.168.1.25 sends email from the domains contoso.com, fabrikam.com, and tailspintoys.com, but you only want to skip spam filtering for messages from senders in fabrikam.com:
 
@@ -193,7 +193,7 @@ Messages from an email server in your IP Allow List are still subject to spam fi
 
 - An IP address in your IP Allow List is also configured in an on-premises, IP-based inbound connector in *any* tenant in Microsoft 365 (let's call this Tenant A), **and** Tenant A and the EOP server that first encounters the message both happen to be in *the same* Active Directory forest in the Microsoft datacenters. In this scenario, **IPV:CAL** *is* added to the message's [anti-spam message headers](message-headers-eop-mdo.md) (indicating the message bypassed spam filtering), but the message is still subject to spam filtering.
 
-- Your tenant that contains the IP Allow List and the EOP server that first encounters the message both happen to be in *different* Active Directory forests in the Microsoft datacenters. In this scenario, **IPV:CAL** *is not* added to the message headers, so the message is still subject to spam filtering.
+- Your tenant that contains the IP Allow List and the EOP server that first encounters the message both happen to be in *different* Active Directory forests in the Microsoft datacenters. In this scenario, **IPV:CAL** *isn't* added to the message headers, so the message is still subject to spam filtering.
 
 If you encounter either of these scenarios, you can create a mail flow rule with the following settings (at a minimum) to ensure that messages from the problematic IP addresses will skip spam filtering:
 
