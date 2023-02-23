@@ -61,6 +61,11 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
+## February 2023
+    
+- The Microsoft Defender for Identity integration toggle is now removed from the MDE Settings -> Advanced features page. As Defender for Identity is now integrated with Microsoft 365 Defender, this toggle is no longer required, and you do not need to manually configure integration between services. For more information, see [What's new - Microsoft Defender for Identity | Microsoft Learn](/defender-for-identity/whats-new#defender-for-identity-release-2194).
+
+
 ## January 2023
 
 - [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) can now protect exclusions when deployed with Microsoft Intune. See [What about exclusions](prevent-changes-to-security-settings-with-tamper-protection.md#what-about-exclusions)?
