@@ -131,6 +131,8 @@
         href: virtual-appointments-usage-report.md
       - name: Advanced Virtual Appointments activity report
         href: advanced-virtual-appointments-activity-report.md
+      - name: SMS notifications usage report
+        href: sms-notifications-usage-report.md
       - name: EHR connector Virtual Appointments report
         href: ehr-connector-report.md  
       - name: Virtual appointments Call Quality Dashboard
