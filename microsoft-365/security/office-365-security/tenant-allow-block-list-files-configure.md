@@ -127,16 +127,16 @@ You can't create allow entries for files directly in the Tenant Allow/Block List
 
 For instructions, see [Report good email attachments to Microsoft](submissions-admin.md#report-good-email-attachments-to-microsoft).
 
-By default, allow entries for domains and email addresses, files and URLs are created for 30 days, while allow entries for spoofed senders never expire. Microsoft will either learn from the allow entries for domains and email addresses, files and URLs within those 30 days, or automatically extend it for you.
+By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.
 
 > [!NOTE]
 > Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
 > Microsoft manages the allow creation process from Submission by creating allows for those entities (domains or email addresses, spoofed senders, URLs, or files) which were determined to be malicious by filters during mail flow. For example, if a file being submitted was determined to be bad by our filtering, an allow entry is created for that file.
 >
-> When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are overriden.
+> When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are overridden.
 >
-> During mail flow, if messages containing the file pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message containing the file in the allow entry will be delivered. 
+> During mail flow, if messages containing the file pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message containing the file in the allow entry will be delivered.
 > During time of click, the file allow overrides all filters associated with the file entity, allowing the end user to access the file.
 
 ## Use the Microsoft 365 Defender portal to view existing allow or block entries for files in the Tenant Allow/Block List
