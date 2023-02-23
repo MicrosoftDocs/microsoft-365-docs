@@ -127,10 +127,22 @@ You can't create URL allow entries directly in the Tenant Allow/Block List. Inst
 
 For instructions, see [Report good URLs to Microsoft](submissions-admin.md#report-good-urls-to-microsoft).
 
-> [!IMPORTANT]
-> Because Microsoft manages allow entries for you, unneeded URL allow entries will be removed. This behavior protects your organization and helps prevent misconfigured allow entries. If you disagree with the verdict, you might need to open a support case to help determine why a URL is still considered bad.
+By default, allow entries for domains and email addresses, files and URLs are created for 30 days, while allow entries for spoofed senders never expire. Microsoft will either learn from the allow entries for domains and email addresses, files and URLs within those 30 days, or automatically extend it for you. 
 
-## Use the Microsoft 365 Defender portal to view allow or block entries for URLs in the Tenant Allow/Block List
+> [!NOTE]
+> Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
+>
+> Microsoft manages the allow creation process from Submission by creating allows for those entities (domains or email addresses, spoofed senders, URLs, or files) which were determined to be malicious by filters during mail flow or time of click. For example, if a URL being submitted was determined to be bad by our filtering, an allow entry is created for that URL.
+>
+> When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are overriden.
+>
+> During mail flow, if messages containing the URL pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message containing the URL in the allow entry will be delivered. 
+>
+> During time of click, the URL allow entry overrides all filters associated with the URL entity, allowing the user to access the content in the URL.
+>
+> Adding an allow entry for a URL does not prevent it from being wrapped by Safe Links. For more information, see [Do not rewrite list in SafeLinks](safe-links-about.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
+
+## Use the Microsoft 365 Defender portal to view existing allow or block entries for URLs in the Tenant Allow/Block List
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -158,7 +170,7 @@ For instructions, see [Report good URLs to Microsoft](submissions-admin.md#repor
 
    When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
-### Use PowerShell to view allow or block entries for URLs in the Tenant Allow/Block List
+### Use PowerShell to view existing allow or block entries for URLs in the Tenant Allow/Block List
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
@@ -180,11 +192,11 @@ Get-TenantAllowBlockListItems -ListType Url -Block
 
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
-## Use the Microsoft 365 Defender portal to modify allow or block entries for URLs in the Tenant Allow/Block List
+## Use the Microsoft 365 Defender portal to modify existing allow or block entries for URLs in the Tenant Allow/Block List
 
 You can make the following modifications to entries for URLs in the Tenant Allow/Block list:
 
-- **Block enries**: The expiration date and notes.
+- **Block entries**: The expiration date and notes.
 - **Allow entries**: Notes.
 - 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
@@ -202,7 +214,7 @@ You can make the following modifications to entries for URLs in the Tenant Allow
 > [!NOTE]
 > For allow entries only, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that appears to go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
 
-### Use PowerShell to modify allow or block entries for URLs in the Tenant Allow/Block List
+### Use PowerShell to modify existing allow or block entries for URLs in the Tenant Allow/Block List
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
@@ -218,7 +230,7 @@ Set-TenantAllowBlockListItems -ListType Url -Entries "~contoso.com" -ExpirationD
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-## Use the Microsoft 365 Defender portal to remove allow or block entries for URLs from the Tenant Allow/Block List
+## Use the Microsoft 365 Defender portal to remove existing allow or block entries for URLs from the Tenant Allow/Block List
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -234,7 +246,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 > [!NOTE]
 > You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Value** column header.
 
-### Use PowerShell to remove allow or block entries for URLs from the Tenant Allow/Block List
+### Use PowerShell to remove existing allow or block entries for URLs from the Tenant Allow/Block List
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
