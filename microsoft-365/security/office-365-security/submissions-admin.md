@@ -277,12 +277,10 @@ After a few moments, the allow entries will appear on the **Domains & addresses*
 After a few moments, the allow entry will appear on the **Files** tab on the **Tenant Allow/Block List** page. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
 > [!NOTE]
-> 
-> - By default, allow entries for domains and email addresses, files and URLs are created for 30 days, while allow entries for spoofed senders never expire. 
-> - Microsoft will either learn from the allow entries for domains and email addresses, files and URLs within those 30 days, or automatically extend it for you.
-> - When the file is encountered again during mailflow, [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks, and all other file-based filters are overriden. If all the other entities in the email are found clean by the filtering system, the email will be delivered. 
-> - During time of click, all file-based filters including [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks are overriden, allowing end user to access the file.
-
+> - By default, allow entries for domains and email addresses, files, and URLs are created for 30 days, while allow entries for spoofed senders never expire. 
+> - Microsoft will either learn from the allow entries for domains and email addresses, files, and URLs within those 30 days or automatically extend it for you.
+> - When the file is encountered again during mailflow, [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks and all other file-based filters are overridden. If all the other entities in the email are found clean by the filtering system, the email will be delivered. 
+> - During selection, all file-based filters, including [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks are overridden, allowing the end user to access the file.
 
 ## Report good URLs to Microsoft
 
