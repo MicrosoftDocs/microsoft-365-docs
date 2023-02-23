@@ -63,7 +63,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## February 2023
     
-- The Microsoft Defender for Identity integration toggle is now removed from the MDE Settings -> Advanced features page. As Defender for Identity is now integrated with Microsoft 365 Defender, this toggle is no longer required, and you do not need to manually configure integration between services. For more information, see [What's new - Microsoft Defender for Identity | Microsoft Learn](/defender-for-identity/whats-new#defender-for-identity-release-2194).
+- The Microsoft Defender for Identity integration toggle is now removed from the MDE Settings -> Advanced features page. As Defender for Identity is now integrated with Microsoft 365 Defender, this toggle is no longer required, and you don't need to manually configure integration between services. For more information, see [What's new - Microsoft Defender for Identity | Microsoft Learn](/defender-for-identity/whats-new#defender-for-identity-release-2194).
 
 
 ## January 2023
