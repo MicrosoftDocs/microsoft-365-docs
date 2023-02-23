@@ -151,7 +151,7 @@ All our updates contain
 
 ### Previous version updates: Technical upgrade support only
 
-After a new package version is released, support for the previous two versions is reduced to technical support only. For more information about previous versions, see [Microsoft Defender Antivirus updates: Previous versions for technical upgrade support](msda-updates-previous-versions-technical-upgrade-support.md#microsoft-defender-antivirus-updates---previous-versions-for-technical-upgrade-support).
+After a new package version is released, support for the previous two versions is reduced to technical support only. For more information about previous versions, see [Microsoft Defender Antivirus updates: Previous versions for technical upgrade support](msda-updates-previous-versions-technical-upgrade-support.md).
 
 ## Microsoft Defender Antivirus platform support
 
