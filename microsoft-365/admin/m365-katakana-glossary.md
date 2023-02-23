@@ -85,7 +85,7 @@ Someone from outside the organization/company who can view or change certain aut
 
 [Sharing with external or guest in OneDrive, SharePoint, and Lists](https://support.microsoft.com/office/7aa070b8-d094-4921-9dd9-86392f2a79e7)
 
-[Guest access with Microsoft Teams](/microsoftteams/guest-access.md)
+[Guest access with Microsoft Teams](/microsoftteams/guest-access)
 
 ## Collaboration and communication
 
