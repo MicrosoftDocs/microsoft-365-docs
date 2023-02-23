@@ -82,7 +82,7 @@ For more information about the increased case limits, see [Use the new case form
 
    ![Large case option on the New eDiscovery case page.](..\media\AeDNewCaseFormat1.png)
    
- 4. On the **Members and Settings** Page, Add team members and configure settings and Click on **next** to proceed to the **Summary** page
+ 4. On the **Members and Settings** page, add team members and configure settings, then select **next** to proceed to the **Summary** page.
    ![Members and settings page](..\media\membersandsettings.png
 
 4. On the Summary of the Case, Review the settings and click **Submit** to create the case.
