@@ -298,7 +298,7 @@ Designate the reporting mailbox where user reported messages are sent on the **U
 When a user reported message arrives in the reporting mailbox, Defender for Office 365 automatically generates the alert named **Email reported by user as malware or phish**. This alert launches an [AIR playbook](air-about-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). The playbook performs a series of automated investigations steps:
 
 - Gather data about the specified email.
-- Gather data about the threats and entities related to that email. Entities can include files, URLs, and recipients.
+- Gather data about the threats and _entities_ related to that email (for example, files, URLs, and recipients).
 - Provide recommended actions for the SecOps team to take based on the investigation findings.
 
 **Email reported by user as malware or phish** alerts, automated investigations and their recommended actions are automatically correlated to incidents in Microsoft 365 Defender. This correlation further simplifies the triage and response process for security teams. If multiple users report the same or similar messages, all of the users and messages are correlated into the same incident.

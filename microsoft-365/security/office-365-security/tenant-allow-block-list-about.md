@@ -15,12 +15,12 @@ ms.collection:
 - m365-security
 - tier1
 ms.custom:
-description: Learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
+description: Learn how to manage allow entries and block entries in the Tenant Allow/Block List in the Security portal.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
 
-# Manage your allows and blocks in the Tenant Allow/Block List
+# Manage allows and blocks in the Tenant Allow/Block List
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -99,13 +99,13 @@ The following list describes what happens in the Tenant Allow/Block List when yo
 By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.
 
 > [!NOTE]
-> Microsoft does not allow you to create allow entries directly as it leads to creation of allows that are not needed, thus exposing the customer's tenant to malicious emails which might otherwise have been filtered by the system.
+> Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
-> Microsoft manages the allow creation process from Submission by creating allows for those entities (domains or email addresses, spoofed senders, URLs, files) which were determined to be malicious by filters during mail flow. For example, if the sender and a URL in the message were determined to be bad, an allow entry is created for the sender, and an allow entry is created for the URL.
+> Microsoft manages the creation of allow entries from the Submission page. Allow entries are created for the domains or email addresses, spoofed senders, URLs, or files (*entities*) that were determined to be malicious during mail flow. For example, if the sender and a URL in a message were determined to be bad, allow entries are created for the sender and the URL.
 >
-> When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are skipped.
+> When the entity in the allow entry is encountered again, all filters that are associated with the entity are skipped. Other entities that are associated with the message are still evaluated by the filtering system before making a decision.
 >
-> During mail flow, if messages from the domain or email address pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message from a sender in the allow entry will be delivered.
+> If messages from the domain or email address pass other checks in the filtering stack during mail flow, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message from a sender in the allow entry will be delivered.
 
 ## What to expect after you add an allow or block entry
 
