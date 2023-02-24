@@ -49,8 +49,7 @@ Microsoft 365 Defender helps you apply the principles of Zero Trust in the follo
 | --- | --- |
 | Verify explicitly | Microsoft 365 Defender provides extended detection and response across users, identities, devices, apps, and emails.  |
 | Use least privileged access |If used with Azure Active Directory Identity Protection, Microsoft 365 Defender blocks users based on the level of risk posed by an identity. Azure AD Identity Protection is licensed separately from Microsoft 365 Defender. It is included with Azure Active Directory Premium P2.  |
-| Assume breach | Microsoft 365 Defender continuously scans the environment for threats and vulnerabilities. It can implement automated remediation tasks, including automated investigations and isolating endpoints.
-  |
+| Assume breach | Microsoft 365 Defender continuously scans the environment for threats and vulnerabilities. It can implement automated remediation tasks, including automated investigations and isolating endpoints. |
 
 
 To add Microsoft 365 Defender to your Zero Trust strategy and architecture, go to [**_Evaluate and pilot Microsoft 365 Defender_**](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components. The following table summarizes what these topics include.
