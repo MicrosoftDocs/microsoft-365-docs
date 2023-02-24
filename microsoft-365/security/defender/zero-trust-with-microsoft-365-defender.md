@@ -62,8 +62,3 @@ To add Microsoft 365 Defender to your Zero Trust strategy and architecture, go t
 To learn more about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture, see [Zero Trust deployment plan with Microsoft 365](../Microsoft-365-zero-trust.md).
 
 To learn more about Zero Trust and how to build an enterprise-scale strategy and architecture, see the [Zero Trust Guidance Center](/security/zero-trust). 
-
-
-
-
-
