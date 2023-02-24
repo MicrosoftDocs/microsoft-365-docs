@@ -138,7 +138,6 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
-
 ### View quarantined message details
 
 When you select quarantined message from the list, the following information is available in the details flyout that appears.
