@@ -40,7 +40,7 @@ Bulk mail is typically advertising emails or marketing messages. These emails ca
 
 ## Check the BCL value of an email and the threshold in your policies
 
-1. Take the headers of a message you're concerned with and search for the **"X-Microsoft-Antispam:"** header, which contains a **BCL value**. Note this number.
+1. Take the headers of a message you're concerned with and search for the **"X-Microsoft-Antispam:"** header, which contains a **BCL value**. Make a note of this number.
 1. Repeat this process until you have an average BCL value. We'll use this value as the threshold. Any mail with a **BCL** value **above** this number will be impacted by the changes we make.
 1. **Login** to the Microsoft Security portal at https://security.microsoft.com.
 1. On the **left nav**, under **Email & collaboration**, select **Policies & rules**.

@@ -52,21 +52,18 @@ You manage allow and block entries for files in the Microsoft 365 Defender Porta
 
 - An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
 
-- You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
-  - To add and remove values from the Tenant Allow/Block List, you need to be a member of one of the following role groups:
-    - **Organization Management** or **Security Administrator** role group (**Security admin role**)
-    - **Security Operator** role group (**Tenant AllowBlockList Manager**).
-  - For read-only access to the Tenant Allow/Block List, you need to be a member of one of the following role groups:
-    - **Global Reader**  role group
-    - **Security Reader** role group
-    - **View-Only configuration** role group
-
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  **Notes**:
-
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions *and* permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Add and remove entries from the Tenant Allow/Block List_: Membership in one of the following role groups:
+      - **Organization Management** or **Security Administrator** (Security admin role).
+      - **Security Operator** (Tenant AllowBlockList Manager).
+    - _Read-only access to the Tenant Allow/Block List_: Membership in one of the following role groups:
+      - **Global Reader**
+      - **Security Reader**
+      - **View-Only Configuration**
+      - **View-Only Organization Management**
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Create block entries for files
 
@@ -130,16 +127,16 @@ You can't create allow entries for files directly in the Tenant Allow/Block List
 
 For instructions, see [Report good email attachments to Microsoft](submissions-admin.md#report-good-email-attachments-to-microsoft).
 
-By default, allow entries for domains and email addresses, files and URLs are created for 30 days, while allow entries for spoofed senders never expire. Microsoft will either learn from the allow entries for domains and email addresses, files and URLs within those 30 days, or automatically extend it for you.
+By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.
 
 > [!NOTE]
 > Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
 > Microsoft manages the allow creation process from Submission by creating allows for those entities (domains or email addresses, spoofed senders, URLs, or files) which were determined to be malicious by filters during mail flow. For example, if a file being submitted was determined to be bad by our filtering, an allow entry is created for that file.
 >
-> When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are overriden.
+> When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are overridden.
 >
-> During mail flow, if messages containing the file pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message containing the file in the allow entry will be delivered. 
+> During mail flow, if messages containing the file pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message containing the file in the allow entry will be delivered.
 > During time of click, the file allow overrides all filters associated with the file entity, allowing the end user to access the file.
 
 ## Use the Microsoft 365 Defender portal to view existing allow or block entries for files in the Tenant Allow/Block List
