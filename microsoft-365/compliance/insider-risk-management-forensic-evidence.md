@@ -32,7 +32,7 @@ Having visual context is crucial for security teams during forensic investigatio
 - **User-centric policy targeting** means that security and compliance teams can focus on activity by user, not device, for better contextual insights.
 - **Strong role-based access controls (RBAC)** mean that the ability to set up and review forensic clips is tightly controlled and only available to individuals in the organization with the right permissions.
 - **Deep integration with current insider risk management features**, making for easier onboarding and more familiar workflows for insider risk management administrators and a trusted single-platform approach.
-- **Free storage (up to 20 GB)** for capture clips, with quick access to storage utilization and ability to purchase additional storage.
+- **Trial capacity (up to 20 GB)** for captured clips, with quick access to capacity utilization and the ability to purchase additional capacity.
 
 ## Device and configuration requirements
 

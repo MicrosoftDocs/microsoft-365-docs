@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 03/01/2023
 audience: itpro
 ms.collection: m365-security-compliance
 ---
@@ -235,35 +235,42 @@ Contact Microsoft Support if the recommended actions don't resolve issues with t
 
 ## Capacity and billing
 
-When forensic evidence is configured, you can opt in to purchase the Forensic add-on for Insider Risk Management to store your capture clips. The add-on is available for organizations with any of the following licenses: Microsoft 365 E5, Microsoft 365 E5 Compliance, or Microsoft 365 E5 Insider Risk Management. 
+When forensic evidence is configured, you can opt in to purchase the forensic evidence add-on for Insider Risk Management for your captured clips. The add-on is available for organizations with any of the following licenses: Microsoft 365 E5, Microsoft 365 E5 Compliance, or Microsoft 365 E5 Insider Risk Management. 
 
-You can purchase the add-on in units of 100 GB per month. The purchased capacity is metered based on forensic evidence captures at the tenant level for users included in forensic evidence policies. 100 GB is roughly equal to around 1,100 hours of forensic evidence captures per tenant, assuming a video resolution of 1080p. Each add-on license is valid for one month (30 days) from the date of purchase. You can purchase multiple licenses at the same time, but each forensic evidence add-on license is valid for just one month from the date of purchase. 
+You can purchase the add-on in units of 100 GB per month. The purchased capacity is metered based on forensic evidence captures at the tenant level for users included in forensic evidence policies. 100 GB is roughly equal to around 1,100 hours of forensic evidence captures per tenant, at a video resolution of 1080p. You can [download the capacity calculator](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2f%2fwww.microsoft.com%2fen-us%2fdownload%2fdetails.aspx%3Fid%3D105023&data=05%7C01%7Cv-jeffbo%40microsoft.com%7Cf7f028afc02f44aa8a9208db15f6eb64%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638127922472919546%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=LyofMcJOvda1XX7Nb5Q%2BNXi%2f9UGTCi1DlA8OMDIQMJ4%3D&reserved=0) to help estimate the number of GBs needed per month. 
+
+Each add-on license is valid for one month (30 days) from the date of purchase. You can purchase multiple licenses at the same time, but each forensic evidence add-on license is valid for just one month from the date of purchase. The unused capacity is forfeited when the license expires.   
 
 The 100 GB is calculated based on the volume of forensic evidence captured from endpoints. Once the forensic evidence is captured, it will be retained for 120 days. You can export forensic evidence if needed after the 120-day retention period. 
 
 ### Can I try the forensic capability before purchasing it?
 
-Each tenant that has a Microsoft 365 E5, Microsoft 365 E5 Compliance, or Microsoft 365 E5 Insider Risk Management license can sign up at no cost for 20 GB of capacity to try out the forensic evidence capability. The free capacity doesn't have any time limit and is available until you use up the 20 GB. If you don't use up the 20 GB in one year, you can reactivate it. If you purchase a forensic evidence add-on license prior to using the free capacity, you will be able to use the remaining free capacity until it’s used up before the system starts metering the purchased capacity.    
+Each tenant that has a Microsoft 365 E5, Microsoft 365 E5 Compliance, or Microsoft 365 E5 Insider Risk Management license can sign up for a 20-GB trial license to try out the forensic evidence capability. 
 
-If you use up the 20 GB of free capacity and don't subsequently purchase the Forensic add-on for Insider Risk Management, you'll be able to view any clips that you've already captured but won't be able to capture any new clips. 
+> [!NOTE]
+> The 20-GB trial license is only available for customers on the legacy commerce platform. 
 
-#### Sign up for free 20 GB of capacity
+The 20 GB of capacity available through the trial license doesn't have any time limit and is available until you use up the full 20 GB. If you don't use up the full 20 GB in one year, you can reactivate it. If you purchase a forensic evidence add-on license prior to using the trial capacity, you will be able to use the remaining trial capacity until it’s used up before the system starts metering the purchased capacity.    
+
+If you use up the 20 GB of trial capacity and don't subsequently purchase the forensic add-on for Insider Risk Management, you'll be able to view any clips that you've already captured but won't be able to capture any new clips. 
+
+#### Sign up for the 20-GB trial license
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **Capacity and billing**.
 
    > [!NOTE]
-   > You can also sign up for free storage from the **Insider risk management** > **Forensic evidence** > **Dashboard** tab.
+   > You can also sign up for the trial license from the **Insider risk management** > **Forensic evidence** > **Dashboard** tab.
 
 2. Select **Claim 20 GB of capacity**.
 3. Follow the prompts in the Microsoft 365 admin center.
 
-### Purchase the Forensic add-on for Insider Risk Management
+### Purchase the forensic add-on for Insider Risk Management
 
 1. Go to **Microsoft 365 admin center** > **Marketplace** > **All products**.
 2. Search for "forensic evidence". 
 
 ### Analyze your capacity
 
-After purchasing capacity (or signing up for 20 GB of free capacity as described above), you can use the **Capacity** page to analyze how much capacity that you have used and the amount of capacity remaining. You can also analyze the amount of capacity you're using each month by selecting from the **Capacity usage in GB** list or by selecting **View all capacity usage**.
+After purchasing capacity (or signing up for the 20-GB trial license), you can use the **Capacity** page to analyze how much capacity that you have used and the amount of capacity remaining. You can also analyze the amount of capacity you're using each month by selecting from the **Capacity usage in GB** list or by selecting **View all capacity usage**.
 
 ![Insider risk management forensic evidence Capacity page.](../media/insider-risk-management-capacity-billing.png)
