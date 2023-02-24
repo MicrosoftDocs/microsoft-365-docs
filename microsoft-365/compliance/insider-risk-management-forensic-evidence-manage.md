@@ -102,20 +102,16 @@ To delete an existing notification template, select a template and select **Dele
 
 ## Viewing captured clips
 
-You can view and explore captured clips from several places in Microsoft Purview Insider Risk Management: 
+You can view and explore captured clips by selecting the **Forensics evidence** tab when you open Microsoft Purview Insider Risk Management. You can also select the **Forensics evidence** tab from other areas in the solution to view a list of captured clips in context:
 
 - **Alerts dashboard.** Clips accessible from the **Alerts** dashboard correspond to the option to capture  **specific user activities** when the forensic evidence policy is created. The captured clips are defined by indicators selected in the forensic evidence policy. 
 - **User activity reports.** Clips accessible from **User activity** reports correspond to the option to capture **any security-related activity** performed by users included in forensic evidence policies.
 - **Cases dashboard.** Clips accessible from the **Cases** dashboard are alerts that have been escalated to cases. 
 
-You can also explore a complete list of captured clips from the top-level **Forensics evidence** tab by selecting the **Review captured clips** button. 
+> [!NOTE]
+> If you're a member of both the *Insider Risk Management Investigators* role group and the *Insider Risk Management Admins* role group, you'll see a **Review captured clips** button when you open Microsoft Purview Insider Risk Management. If you select the **Review captured clips** button, it changes to the **Open forensic evidence settings** button. The purpose of this button is to go back and forth between the list of captured clips and settings if you have both roles. [Learn more about role groups](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
 
-![Insider risk management forensic evidence Review captured clips button.](../media/insider-risk-management-review-captured-clips.png)
-
-> [!IMPORTANT]
-> You must be assigned to both the *Insider Risk Management Investigators* role group and the *Insider Risk Management Admins* role group to view captured clips. You won't see the **Review captured clips** button if you aren't a member of both role groups. [Learn more about role groups](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
-
-When you select the **Review captured clips** button, captured clips and associated information are displayed in a list. If you select a captured clip in the list, a video player appears in the center of the screen, and a transcript of activities and events from the clip are displayed to the right of the video player. 
+When you select the **Forensics evidence** tab, captured clips and associated information are displayed in a list. If you select a captured clip in the list, a video player appears in the center of the screen, and a transcript of activities and events from the clip are displayed to the right of the video player. 
 
 ![Insider risk management forensic evidence captured clips list.](../media/insider-risk-management-capture-explore.png)
 
@@ -129,12 +125,12 @@ Each captured clip includes the following information:
 - **Application**: The application that the user was accessing when the activity took place.
 - **Active window title**: The title of the window that the user was accessing when the activity took place.
 
-To view a capture clip:
+To view a captured clip:
 
 1. If needed, configure the filters at the top of the list. 
 2. Select a clip from the list. 
 3. Using the video player controls, select the *Play control* to review the entire clip from beginning to end.
-4. To scope the review to a specific activity or event in the clip, select the activity or event in the transcript. You can also use the filters above the transcript to filter for specific activities or events.
+4. To scope the review to a specific activity or event in the clip, select the activity or event in the transcript. You can also use the search box above the transcript to search for specific activities or events.
 
    > [!NOTE]
    > A red triangle in the transcript denotes an activity. 
@@ -144,7 +140,7 @@ To view a capture clip:
 You can use the filters above the captured clips list to filter for specific activities and information. 
 
 - Each filter supports up to 10 unique IDs so, for example, you can filter on up to 10 users at one time. 
-- Use the **URL name** filter to match a domain name or to search for any keyword. For example, entering "SharePoint" as a keyword returns any URL that includes "SharePoint" anywhere in the URL.  
+- Use the **URL name** filter to match a domain name or to search for any keyword after matching a domain. For example, entering "SharePoint" as a keyword returns any URL that includes "SharePoint" anywhere in the URL.  
 - With the **App name** filter, you can filter by **Contains any of** or **Contains all of**. For example, if you select **Contains any of** and enter "Google.com,Facebook.com", you could have one clip that captures Google.com and another that captures Facebook.com. If you select **Contains all of** and enter "Google.com,Facebook.com", any captures would have to contain both domains. 
 - The **Active window title** filter behaves the same way as the **App name** filter. 
 
