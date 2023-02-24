@@ -143,7 +143,7 @@ Many customers use custom keyword lists for compliance scenarios. Understanding 
 
 ##### Combine trainable classifiers
 
-Consider combining two or more [trainable classifiers](classifier-learn-about.md#classifiers) together. For example, combine the [Threat](classifier-tc-definitions.md#threat) and [Profanity](classifier-tc-definitions.md#profanity) classifiers or the [Targeted harassment](classifier-tc-definitions.md#targeted-harassment) and [Profanity](classifier-tc-definitions.md#profanity) classifiers to raise the threshold for messages captured.
+Consider combining two or more [trainable classifiers](classifier-learn-about.md#classifiers) together. For example, combine the [Threat](classifier-tc-definitions.md#targeted-threat) and [Profanity](classifier-tc-definitions.md#profanity) classifiers or the [Targeted harassment](classifier-tc-definitions.md#harassment) and [Profanity](classifier-tc-definitions.md#profanity) classifiers to raise the threshold for messages captured.
 
 ##### Data classification dashboard
 
