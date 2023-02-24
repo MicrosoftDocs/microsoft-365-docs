@@ -15,7 +15,7 @@ ms.collection:
 - scotvorg
 ROBOTS: NOINDEX, NOFOLLOW 
 description: "Learn how to view the Japanese katakana glossary for the Microsoft 365 admin center."
-ms.date: 2/23/2023
+ms.date: 2/24/2023
 ---
 <!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.REVIEWER -->
 
@@ -128,7 +128,7 @@ Refers to learning texts and videos for using and managing Microsoft 365 provide
 
 In Microsoft 365, it refers to the state of being viewable or editable by all users in the organization. E.g.: Public group: A group in which anyone in the organization can participate.
 
-## Feedback
+## Give feedback
 
 ![Feedback](../media/katanaglossary/009_feedback.png)
 
