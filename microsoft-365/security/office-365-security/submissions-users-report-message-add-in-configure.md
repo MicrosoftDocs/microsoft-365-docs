@@ -110,7 +110,12 @@ After the add-in is installed and enabled, users will see the following icons:
 - Currently, reporting messages in shared mailboxes or other mailboxes by a delegate using the add-ins is not supported. Messages are not sent to the [reporting mailbox](submissions-user-reported-messages-files-custom-mailbox.md) or to Microsoft. Built-in reporting in Outlook on the web sends messages reported by a delegate to the reporting mailbox and/or to Microsoft.
 
 > [!IMPORTANT]
-> To view messages reported to Microsoft on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>, leave the toggle **On** (![Toggle on.](../../media/scc-toggle-on.png)) at the top of the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission>.
+> Admins can view reported messages on the **Submissions** page at <https://security.microsoft.com/reportsubmission> **only** if both of the following settings are configured on the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission>:
+>
+> - The toggle on the **User reported** page is **On** ![Toggle on.](../../media/scc-toggle-on.png).
+> - **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options** is selected.
+
+## Use the built-in Report button in Outlook on the web
 
 ## Admin instructions
 

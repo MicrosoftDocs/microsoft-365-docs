@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier1
-description: Learn how to report false positives and false negatives in Outlook using the Report Message feature.
+description: Learn how to report false positives and false negatives in Outlook client using the Report feature.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
@@ -60,8 +60,8 @@ For more information about reporting messages to Microsoft, see [Report messages
 
 ### Use the built-in Report button in Outlook on the web to report junk and phishing messages
 
-- You can report junk messages from the Inbox or any email folder other than Junk Email.
-- You can report phishing messages from any email folder.
+- You can report a message as junk from the Inbox or any email folder other than Junk folder.
+- You can report a message as phishing from any email folder.
 
 In Outlook on the web, select one or more messages, click **Report**, and then select **Report phishing** or **Report junk** in the dropdown list.
 
@@ -80,7 +80,7 @@ In Outlook on the web, select one or more messages in the Junk Email folder, cli
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/owa-report-as-not-junk.png" alt-text="The results of clicking the Report button after selecting multiple messages in the Junk Email folder in Outlook on the web." lightbox="../../media/owa-report-as-not-junk.png":::
 
-Based on the [user reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) in your organization, the messages are sent to the reporting mailbox, to Microsoft, or both. The messages are also moved out of Junk Email to the Inbox or another specified folder.
+Based on the [user reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) in your organization, the messages are sent to the reporting mailbox, to Microsoft, or both. The messages are also moved out of Junk Email to the Inbox.
 
 ## Use the Report Message and Report Phishing add-ins in Outlook
 
@@ -91,8 +91,8 @@ Based on the [user reported message settings](submissions-user-reported-messages
 
 ### Use the Report Message add-in to report junk and phishing messages in Outlook
 
-- You can report junk messages from the Inbox or any email folder other than Junk Email.
-- You can report phishing messages from any email folder.
+- You can report a message as junk from the Inbox or any email folder other than Junk folder.
+- You can report a message as phishing from any email folder.
 
 1. In Outlook, do one of the following steps:
    - Select an email message from the list.
@@ -129,7 +129,7 @@ Based on the [user reported message settings](submissions-user-reported-messages
      > [!div class="mx-imgBorder"]
      > :::image type="content" source="../../media/OutlookReportMessage-simplified-expanded.png" alt-text="Select a message in the Junk Email folder, and then click the Report Message button in the Simplified Ribbon in Outlook." lightbox="../../media/OutlookReportMessage-simplified-expanded.png":::
 
-Based on the [user reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) in your organization, the messages are sent to the reporting mailbox, to Microsoft, or both. The messages are also moved out of Junk Email to the Inbox or another specified folder.
+Based on the [user reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) in your organization, the messages are sent to the reporting mailbox, to Microsoft, or both. The messages are also moved out of Junk Email to the Inbox.
 
 ### Use the Report Phishing add-in to report phishing messages in Outlook
 
@@ -149,6 +149,8 @@ You can report phishing messages from any email folder.
 
      > [!div class="mx-imgBorder"]
      > :::image type="content" source="../../media/Outlook-ReportPhishing-simplified.png" alt-text="Select a message and then click the Report Phishing button in the Simplified Ribbon in Outlook." lightbox="../../media/Outlook-ReportPhishing-simplified.png":::
+
+Based on the [user reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) in your organization, the messages are sent to the reporting mailbox, to Microsoft, or both. The messages are also deleted.
 
 ## Review reported messages
 
