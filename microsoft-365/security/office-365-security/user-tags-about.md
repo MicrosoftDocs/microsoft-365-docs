@@ -30,13 +30,17 @@ ms.service: microsoft-365-security
 
 User tags are identifiers for specific groups of users in [Microsoft Defender for Office 365](defender-for-office-365.md). There are two types of user tags:
 
-- **System tags**: Currently, [Priority accounts](../../admin/setup/priority-accounts.md) is the only type of system tag.
+- **System tags**: Currently, [Priority account](../../admin/setup/priority-accounts.md) is the only type of system tag.
 - **Custom tags**: You create these user tags yourself.
 
-If your organization has Defender for Office 365 Plan 2 (included in your subscription or as an add-on), you can create custom user tags in addition to using the priority accounts tag.
+If your organization has Defender for Office 365 Plan 2 (included in your subscription or as an add-on), you can create custom user tags in addition to using the Priority account tag.
 
 > [!NOTE]
-> Currently, you can only apply user tags to mailbox users.
+> Currently, you can only apply user tags to mailbox users. 
+> 
+> Your organization can tag a maximum of 250 users using the Priority account system tag. 
+> 
+> Each custom tag has a maximum of 10,000 users per tag and your organization can create up to 500 custom tags.
 
 After you apply system tags or custom tags to users, you can use those tags as filters in alerts, incidents, reports, and investigations:
 
