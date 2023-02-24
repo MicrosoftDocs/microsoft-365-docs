@@ -40,7 +40,7 @@ Admins can remove connectors from the Restricted entities page in Microsoft 365 
 
 ## Learn more on restricted entities
 
-A restricted entity is an entity that has been blocked from sending email because either it has been potentially compromised, or it has exceeded sending limit.
+A restricted entity is an entity that has been blocked from sending email because either it has been potentially compromised, or it has exceeded a sending limit.
 
 There are two types of restricted entities:
 
@@ -107,16 +107,16 @@ To view the list of connectors that are restricted from sending email, run the f
 Get-BlockedConnector
 ```
 
-To view details about a specific blocked connector, replace \<ConnectorId\> with the name of the connector, and then run the following command:
+To view details about a specific blocked connector, replace \<ConnectorID\> with the GUID value of the connector, and then run the following command:
 
 ```powershell
-Get-BlockedConnector -ConnectorId <connectorId>
+Get-BlockedConnector -ConnectorId <ConnectorID> | Format-List
 ```
 
-To remove a connector from the Restricted entities list, replace \<ConnectorId\> and run the following command:
+To remove a connector from the Restricted entities list, replace \<ConnectorID\> with the GUID value, and then run the following command:
 
 ```powershell
-Remove-BlockedConnector -ConnectorId <connectorId>
+Remove-BlockedConnector -ConnectorId <ConnectorID>
 ```
 
 ## More information
