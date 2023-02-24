@@ -48,21 +48,18 @@ You manage allow and block entries for email in the Microsoft 365 Defender Porta
 
 - An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
 
-- You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
-  - To add and remove values from the Tenant Allow/Block List, you need to be a member of one of the following role groups:
-    - **Organization Management** or **Security Administrator** role group (**Security admin role**)
-    - **Security Operator** role group (**Tenant AllowBlockList Manager**).
-  - For read-only access to the Tenant Allow/Block List, you need to be a member of one of the following role groups:
-    - **Global Reader**  role group
-    - **Security Reader** role group
-    - **View-Only configuration** role group
-
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  > [!NOTE]
-  >
-  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions *and* permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Add and remove entries from the Tenant Allow/Block List_: Membership in one of the following role groups:
+      - **Organization Management** or **Security Administrator** (Security admin role).
+      - **Security Operator** (Tenant AllowBlockList Manager).
+    - _Read-only access to the Tenant Allow/Block List_: Membership in one of the following role groups:
+      - **Global Reader**
+      - **Security Reader**
+      - **View-Only Configuration**
+      - **View-Only Organization Management**
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Domains and email addresses in the Tenant Allow/Block List
 
@@ -131,7 +128,7 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 You can't create allow entries for domains and email addresses directly in the Tenant Allow/Block List. Instead, you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report the message as a false positive, which also adds an allow entry for the sender on the **Domains & addresses** tab in the Tenant Allow/Block List.
 
-By default, allow entries for domains and email addresses, files, and URLs exist for 30 days, while allow entries for spoofed senders never expire. Within those 30 days, Microsoft will learn from the allow entries or automatically extend the allow entries for you.
+By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.
 
 For instructions, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
@@ -213,9 +210,7 @@ You can make the following modifications to entries for domains and email addres
 
    When you're finished, click **Save**.
 
-An allow is created by default for 30 days so that Microsoft could learn from it and then remove it. With **[allow expiry management](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447)**, if Microsoft has not learned from the allow entry, Microsoft will automatically extend the expiry time of allow entries that will soon expire by another 30 days. This extension helps to prevent legitimate email from going to junk or quarantine again. If Microsoft does not learn within 90 calendar days from the date of the original creation of the allow entry, Microsoft will remove the allow entry. You will be kept informed throughout the process using emails.
-
-If Microsoft has learned from the allow, the allow will be removed and you will get an alert informing you about it.
+By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.
 
 > [!NOTE]
 > For allow entries only, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that appears to go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
