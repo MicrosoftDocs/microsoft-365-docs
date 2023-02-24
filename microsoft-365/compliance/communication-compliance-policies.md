@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/07/2023
+ms.date: 02/24/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -42,7 +42,7 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 
 |**Area**|**Policy Template**|**Details**|
 |:-----|:-----|:-----|
-| **Inappropriate text** | Detect inappropriate text | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Threat, Discrimination, and Targeted harassment classifiers |
+| **Inappropriate text** | Detect inappropriate text | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Targeted hreat, Discrimination, and Targeted harassment classifiers |
 | **Inappropriate images** | Detect inappropriate images | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Adult and Racy image classifiers |
 | **Sensitive information** | Detect sensitive info types | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns, and types, custom dictionary option, attachments larger than 1 MB |
 | **Regulatory compliance** | Detect financial regulatory compliance | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: custom dictionary option, attachments larger than 1 MB |
@@ -86,7 +86,7 @@ The *Report a concern* option is enabled by default and can be controlled via Te
 
 When users experience employment stressors, they may engage in risky activities. Workplace stress may lead to uncharacteristic or malicious behavior by some users that could surface as potentially inappropriate behavior on your organization's messaging systems. Communication compliance can provide risk signals detected in applicable messages to [insider risk management](/microsoft-365/compliance/insider-risk-management) risky user policies by using a dedicated [Detect inappropriate text](#policy-templates) policy. This policy is automatically created (if selected as an option) during configuration of a [Data leaks by risky employees](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-risky-users-preview) or [Security policy violations by risky employees](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-risky-users-preview) policy in insider risk management.
 
-When configured for an insider risk management policy, a dedicated policy named *Risky users in messages - (date created)* is created in communication compliance and automatically includes all organization users in the policy. This policy starts detecting risky behavior in messages by using the built-in [Threat, Harassment, and Discrimination classifiers](#classifiers) and automatically sends these signals to insider risk management. If needed, this policy can be edited to update the scope of included users and the policy conditions and classifiers.  
+When configured for an insider risk management policy, a dedicated policy named *Risky users in messages - (date created)* is created in communication compliance and automatically includes all organization users in the policy. This policy starts detecting risky behavior in messages by using the built-in [Targeted threat, Harassment, and Discrimination classifiers](#classifiers) and automatically sends these signals to insider risk management. If needed, this policy can be edited to update the scope of included users and the policy conditions and classifiers.  
 
 Users that send 5 or more messages classified as potentially risky within 24 hours are automatically brought in-scope for insider risk management policies that include this option. Once in-scope, the insider risk management policy detects potentially risky activities configured in the policy and generates alerts as applicable. It may take up to 48 hours from the time risky messages are sent until the time a user is brought in-scope in an insider risk management policy. If an alert is generated for a potentially risky activity detected by the insider risk management policy, the triggering event for the alert is identified as being sourced from the communication compliance risky activity.
 
@@ -250,7 +250,7 @@ Communication compliance policies using classifiers inspect and evaluate message
 | [Profanity](classifier-tc-definitions.md#profanity) | Detects potentially profane content in multiple languages that would likely offend most people. |
 | [Regulatory collusion (preview)](classifier-tc-definitions.md#regulatory-collusion-preview) | Detects messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and the Robinson-Patman Act. |
 | [Stock manipulation (preview)](classifier-tc-definitions.md#stock-manipulation-preview) | Detects signs of possible stock manipulation, such as recommendations to buy, sell or hold stocks that may suggest an attempt to manipulate the stock price. This classifier can help customers manage regulatory compliance obligations such as the Securities Exchange Act of 1934, FINRA Rule 2372, and FINRA Rule 5270. |
-| [Threat](classifier-tc-definitions.md#threat) | Detects potential threatening content in multiple languages aimed at committing violence or physical harm to a person or property. | 
+| [Targeted threat](classifier-tc-definitions.md#targeted-threat) | Detects potential threatening content in multiple languages aimed at committing violence or physical harm to a person or property. | 
 | [Unauthorized disclosure (preview)](classifier-tc-definitions.md#unauthorized-disclosure-preview) | Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. |
 
 > [!IMPORTANT]
