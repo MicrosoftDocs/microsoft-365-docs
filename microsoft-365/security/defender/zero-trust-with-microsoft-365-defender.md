@@ -35,7 +35,7 @@ adobe-target: true
 
 Microsoft 365 Defender contributes to a strong Zero Trust strategy and architecture by providing extended detection and response. Microsoft 365 Defender works together with other Microsoft extended detection and response (XDR) tools and can also be integrated with Microsoft Sentinel.
 
-:::image type="content" source="../../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="The process of adding Microsoft 365 Defender to the Zero Trust architecture" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
+:::image type="content" source="../../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="The process of adding Microsoft 365 Defender to the Zero Trust architecture" lightbox="../../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
 In the illustration: Microsoft 365 Defender provides XDR capabilities for protecting:
 - Endpoints, including laptops and mobile devices
