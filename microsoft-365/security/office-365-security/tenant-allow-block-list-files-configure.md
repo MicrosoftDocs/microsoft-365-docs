@@ -136,7 +136,7 @@ By default, allow entries for files are created for 30 days. Microsoft will eith
 >
 > Microsoft manages the allow creation process from Submission by creating allows for those entities (domains or email addresses, spoofed senders, URLs, or files) which were determined to be malicious by filters during mail flow. For example, if a file being submitted was determined to be bad by our filtering, an allow entry is created for that file.
 >
-> When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are overriden.
+> When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are overridden.
 >
 > During mail flow, if messages containing the file pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message containing the file in the allow entry will be delivered.
 >

@@ -94,6 +94,10 @@ The following list describes what happens in the Tenant Allow/Block List when yo
   - If the message was blocked for any other reason, an allow entry for the sender email address or domain is created, and the entry appears on the **Domains & addresses** tab in the Tenant Allow Block List.
   - If the message was not blocked due to filtering, no allow entries are created anywhere.
 
+  - If the message was blocked for other reasons, an allow entry for the sender is created, and it appears on the **Domains & addresses** tab in the Tenant Allow Block List.
+
+  - If the message was not blocked, and an allow entry for the sender is not created, it won't show on the **Spoofed senders** tab or the **Domains & addresses** tab.
+
 By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from these allow entries, messages that contain these entities will be delivered, unless something else is the message is detected as malicious. By default, allow entries for spoofed senders never expire. 
 
 > [!NOTE]
