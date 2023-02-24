@@ -140,7 +140,7 @@ For matters that require customer support attention in accordance with your supp
 
 ![Privacy](../media/katanaglossary/010_privacy_updated.png)
 
-A function to set the scope of disclosure of files and information related to the protection of personal information. Different disclosure ranges can be set, such as making files and information available to everyone in the organization (public), or just available to a few designated people (private).
+A function to set the scope of disclosure of files and information related to the protection of personal information. Different disclosure ranges can be set, such as making files and information available to everyone in the organization (public), or only available to a few designated people (private).
 
 [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](../solutions/data-privacy-protection.md)
 
