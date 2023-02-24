@@ -20,10 +20,10 @@ ms.collection:
   - m365solution-identitydevice
   - m365solution-scenario
   - zerotrust-solution
-  - highpri
+  - tier2
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 10/08/2020
+ms.date: 1/31/2023
 ---
 
 # Common security policies for Microsoft 365 organizations
@@ -171,7 +171,7 @@ You must create a policy for each PC, phone, or tablet platform. This article wi
 
 ### Create device compliance policies
 
-To create device compliance policies, sign in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com), and navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
+To create device compliance policies, sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com), and navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
 
 For step-by-step guidance on creating compliance policies in Intune, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 

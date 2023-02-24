@@ -3,7 +3,7 @@ title: "Content delivery networks"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise

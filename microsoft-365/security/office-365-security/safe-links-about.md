@@ -9,12 +9,12 @@ audience: Admin
 ms.topic: overview
 f1_keywords:
   - '197503'
-ms.date: 09/08/2021
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 ms.collection:
   - Strat_O365_IP
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 ms.custom:
   - seo-marvel-apr2020
 search.appverid:
@@ -66,9 +66,6 @@ Safe Links protection is available in the following locations:
 - **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels is controlled by Safe Links policies.
 
   For more information about Safe Links protection in Teams, see the [Safe Links settings for Microsoft Teams](#safe-links-settings-for-microsoft-teams) section later in this article.
-
-  > [!NOTE]
-  > Currently, Safe Links protection for Microsoft Teams is not available in Microsoft 365 GCC High or Microsoft 365 DoD.
 
 - **Office apps**: Safe Links protection for supported Office desktop, mobile, and web apps is controlled by Safe Links policies.
 
@@ -176,8 +173,6 @@ You turn on or turn off Safe Links protection for Microsoft Teams in Safe Links 
 
 > [!NOTE]
 > When you turn on or turn off Safe Links protection for Teams, it might take up to 24 hours for the change to take effect.
->
-> Currently, Safe Links protection for Microsoft Teams is not available in Microsoft 365 GCC High or Microsoft 365 DoD.
 
 After you turn on Safe Links protection for Microsoft Teams, URLs in Teams are checked against a list of known malicious links when the protected user clicks the link (time-of-click protection). URLs are not rewritten. If a link is found to be malicious, users will have the following experiences:
 

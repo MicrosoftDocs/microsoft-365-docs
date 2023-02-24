@@ -56,7 +56,7 @@ Devices that are onboarded to Microsoft Defender for Endpoint will have Microsof
 
 If you're an organization using [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint), you should be able to manage tamper protection in Intune similar to how you manage other endpoint protection features. See the following sections of this article:
 
-- [Manage tamper protection using Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md)
+- [Manage tamper protection using Microsoft Intune](manage-tamper-protection-microsoft-endpoint-manager.md)
 - [Manage tamper protection using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)
 
 If you're a home user, see [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md).
@@ -99,9 +99,9 @@ You can use a registry key to determine whether the functionality to protect Mic
 > [!CAUTION]
 > Do not change the value of **TPExclusions**. Use the preceding procedure for information only. Changing the key will have no effect on whether tamper protection applies to exclusions.
 
-## Can I configure tamper protection with Microsoft Endpoint Configuration Manager?
+## Can I configure tamper protection with Microsoft Configuration Manager?
 
-If you're using tenant attach, you can use Microsoft Endpoint Configuration Manager. See the following resources:
+If you're using tenant attach, you can use Microsoft Configuration Manager. See the following resources:
 
 - [Manage tamper protection using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)
 - [Tech Community blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
