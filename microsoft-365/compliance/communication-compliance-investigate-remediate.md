@@ -139,7 +139,7 @@ One of the biggest challenges in Microsoft Purview Communication Compliance is m
 
 ##### Understand keyword list volumes
 
-Many customers use custom keyword lists for compliance scenarios. Understanding the volume of policy matches for each keyword will help you tune your policies. Use the [Sensitive information type per location report](communication-compliance-reports-audits.md#detailed-reports) to analyze keyword lists to see which keywords trigger the majority of matches. You can then investigate further to see if those keywords have high false-positive rates. You can also use the [Message details reports](communication-compliance-reports-audits.md#message-details-report) to get data on keyword matches for a specific policy.
+Many customers use custom keyword lists for compliance scenarios. Understanding the volume of policy matches for each keyword can help you tune your policies. Use the [Sensitive information type per location report](communication-compliance-reports-audits.md#detailed-reports) to analyze keyword lists to see which keywords trigger the majority of matches. You can then investigate further to see if those keywords have high false-positive rates. You can also use the [Message details reports](communication-compliance-reports-audits.md#message-details-report) to get data on keyword matches for a specific policy.
 
 ##### Combine trainable classifiers
 
@@ -155,7 +155,7 @@ You can [filter out email messages](communication-compliance-configure.md#step-5
 
 ##### Filter out email signatures/disclaimers 
 
-Sensitive information types can be triggered from footers in emails (such as disclaimers). If many of your non-actionable alerts come from a specific set of sentences or phrases in an email signature or disclaimer, you can [filter them out](sit-common-scenarios.md#ignore-a-disclaimer-notice). 
+Sensitive information types can be triggered from footers in emails, such as disclaimers. If many of your non-actionable alerts come from a specific set of sentences or phrases in an email signature or disclaimer, you can [filter out the email signature or disclaimer](sit-common-scenarios.md#ignore-a-disclaimer-notice). 
 
 ##### Understand trainable classifiers volume level
 
@@ -189,15 +189,15 @@ Messages in alerts include [sentiment evaluation](communication-compliance-inves
 
 ##### Filter out specific senders by using a condition
 
-If you have senders that consistently trigger detections (for example, through newsletters, automated mails, and so on), you can filter out these particular senders using the following conditional setting [“Message is not received from any of these domains”](communication-compliance-policies.md#conditional-settings). 
+If you have senders that consistently trigger detections (for example, through newsletters, automated mails, and so on), you can filter out these particular senders using the following conditional setting: [Message is not received from any of these domains](communication-compliance-policies.md#conditional-settings). 
 
 ##### Use communication direction to target a particular set of users
 
-If you’re detecting standards of business conduct scenarios and only care about communications from your employees (not from external users), consider using a policy that detects only [outbound communications](communication-compliance-policies.md#direction). Make the entire organization in scope to ensure that just your users are not sending harassing communications.
+If you’re detecting standards of business conduct scenarios and only care about communications from your employees (not from external users), consider using a policy that detects only [outbound communications](communication-compliance-policies.md#direction). If you make the entire organization in scope, you can ensure that all of the users in your organization are covered but exclude users from outside your organization.
 
 ##### Lower the percentage of reviewed communications
 
-If you just want to sample a subset of all the messages that trigger alerts, you can [specify a percentage of communications to review](communication-compliance-policies.md#review-percentage). 
+If you just want to sample a subset of all the messages that trigger alerts, [specify a percentage of communications to review](communication-compliance-policies.md#review-percentage). 
 
 ### Step 4: Determine if message details should be archived outside of communication compliance
 
