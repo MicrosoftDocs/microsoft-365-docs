@@ -84,7 +84,7 @@ Communication compliance offers several important features to help address compl
 Intelligent customizable templates in communication compliance allow you to apply machine learning to intelligently detect communication violations in your organization.
 
 - **Customizable pre-configured templates**: Policy templates help address the most common communications risks. Initial policy creation and follow-on updating are now quicker with pre-defined templates to analyze and mitigate potentially inappropriate content, sensitive information, conflict of interest, and regulatory compliance issues.
-- **New machine learning support**: Built-in [classifiers](/microsoft-365/compliance/classifier-get-started-with) to analyze and mitigate discrimination, insider risks that may lead to a security incident, harassment, profanity, and potentially inappropriate images and help reduce misclassified content in communication messages, saving reviewers time during the investigation and remediation process.
+- **New machine learning support**: Built-in [classifiers](/microsoft-365/compliance/classifier-get-started-with) to analyze and mitigate discrimination, threats, harassment, profanity, and potentially inappropriate images and help reduce misclassified content in communication messages, saving reviewers time during the investigation and remediation process.
 - **Improved condition builder**: Configure policy conditions that are now streamlined into a single, integrated experience in the policy wizard, reducing confusion in how conditions are applied for policies.
 
 ### Flexible remediation workflows
