@@ -143,7 +143,7 @@ Many customers use custom keyword lists for compliance scenarios. Understanding 
 
 ##### Combine trainable classifiers
 
-Consider combining two or more [trainable classifiers](compliance/classifier-learn-about.md#classifiers) together. For example, combine the [Threat](compliance/classifier-tc-definitions.md#threat) and [Profanity](compliance/classifier-tc-definitions.md#profanity) classifiers or the [Targeted harassment](classifier-tc-definitions.md#targeted-harassment) and [Profanity](classifier-tc-definitions.md#profanity) classifiers to raise the threshold for messages captured.
+Consider combining two or more [trainable classifiers](classifier-learn-about.md#classifiers) together. For example, combine the [Threat](classifier-tc-definitions.md#threat) and [Profanity](classifier-tc-definitions.md#profanity) classifiers or the [Targeted harassment](classifier-tc-definitions.md#targeted-harassment) and [Profanity](classifier-tc-definitions.md#profanity) classifiers to raise the threshold for messages captured.
 
 ##### Data classification dashboard
 
@@ -151,7 +151,7 @@ It’s important to understand the volume of items classified by trainable class
 
 ##### Filter email blasts
 
-You can [filter out email messages](microsoft-365/compliance/communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) that are generic and intended for mass communication. For example, filter out spam, newsletters, and so on. 
+You can [filter out email messages](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) that are generic and intended for mass communication. For example, filter out spam, newsletters, and so on. 
 
 ##### Email signatures/disclaimers 
 
