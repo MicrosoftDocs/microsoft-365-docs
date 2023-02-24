@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 02/21/2023
+ms.date: 02/24/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -58,11 +58,20 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
    | Method | Details |
    |:---|:---|
    | Tag devices manually | To tag devices manually, create a tag called `License MDE P1` and apply it to devices. To get help with this step, see [Create and manage device tags](machine-tags.md). |
-   | Tag devices automatically by using a dynamic rule | *Dynamic rule functionality is new! It allows you to apply a dynamic but granular level of control over how you manage devices*. <br/><br/>To use a dynamic rule, specify a set of criteria based on device name, domain, operating system platform, and/or device tags. Devices that meet the specified criteria will receive the `License MDE P1` tag. <br/><br/>As you define your criteria, you can use the following condition operators: <br/>- `Equals` / `Not equals`<br/>- `Starts with`<br/>- `Contains` / `Does not contain` <br/><br/>For **Device name**, you can use freeform text.<br/><br/>For **Domain**, select from a list of domains.<br/><br/>For **OS platform**, select from a list of operating systems.<br/><br/>For **Tag**, use the freeform text option. Note that the `License MDE P1` tag must be used to tag the devices that should receive Defender for Endpoint Plan 1 capabilities. |
+   | Tag devices automatically by using a dynamic rule | *Dynamic rule functionality is new! It allows you to apply a dynamic but granular level of control over how you manage devices*. <br/><br/>To use a dynamic rule, you specify a set of criteria based on device name, domain, operating system platform, and/or device tags. Devices that meet the specified criteria will receive the `License MDE P1` tag. <br/><br/>As you define your criteria, you can use the following condition operators: <br/>- `Equals` / `Not equals`<br/>- `Starts with`<br/>- `Contains` / `Does not contain` <br/><br/>For **Device name**, you can use freeform text.<br/><br/>For **Domain**, select from a list of domains.<br/><br/>For **OS platform**, select from a list of operating systems.<br/><br/>For **Tag**, use the freeform text option. Type the tag that corresponds to the devices that should receive Defender for Endpoint Plan 1 capabilities. |
  
    Device tags are visible in the **Device inventory** view and in the [Defender for Endpoint APIs](apis-intro.md).
 
 6. Save your rule and wait for up to three (3) hours for tags to be applied. Then, proceed to [Validate that a device is receiving only Defender for Endpoint Plan 1 capabilities](#validate-that-a-device-is-receiving-only-defender-for-endpoint-plan-1-capabilities).
+
+### More details about device tagging
+
+The Tag property allows you to control, with great flexibility, the set of devices that should receive Defender for Endpoint Plan 1 capabilities.  the P1 device set.  
+For example you can define that all of the devices that are not marked with a Tag: “VIP” will be receiving P1 functionality: 
+(1) To utilize the dynamic rule based on tags you first need to make sure that the relevant machines have the “VIP” tag applied and there are a number of methods to achieve this: Manual tagging , Registry tagging ,  Tagging VIA API , Setting the tag via Intune )
+(2) You can then create a Dynamic rule: “Tag” Does not contain “VIP” 
+(3) All non VIP devices will be receiving License MDE P1 Tag and the appropriate functionality 
+
 
 ## [**Use one plan**](#tab/oneplan)
 
