@@ -56,12 +56,12 @@ To add Microsoft 365 Defender to your Zero Trust strategy and architecture, go t
 
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|
-|Set up the evaluation and pilot environment for all components: <ul><li>Defender for Identity</li><li>Defender for Office 365</li><li>Defender for Endpoint</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> Protect against threats <br><br> Investigate and respond to threats|See the guidance to read about the architecture requirements for each component of Microsoft 365 Defender.| Azure AD Identity Protection is not included in this solution guide. It is included in [Step 1. Configure Zero Trust identity and device access protection](#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies).|
+|Set up the evaluation and pilot environment for all components: <ul><li>Defender for Identity</li><li>Defender for Office 365</li><li>Defender for Endpoint</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> Protect against threats <br><br> Investigate and respond to threats|See the guidance to read about the architecture requirements for each component of Microsoft 365 Defender.| Azure AD Identity Protection is not included in this solution guide. It is included in [Step 1. Configure Zero Trust identity and device access protection](/security/microsoft-365-zero-trust#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies).|
 
 
 To learn more about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture, see [Zero Trust deployment plan with Microsoft 365](../Microsoft-365-zero-trust.md).
 
-To learn more about Zero Trust and how to build an enterprise-scale strategy and architecture, see the [Zero Trust Guidance Center](/security/zero-trust/?view=o365-worldwide). 
+To learn more about Zero Trust and how to build an enterprise-scale strategy and architecture, see the [Zero Trust Guidance Center](/security/zero-trust). 
 
 
 
