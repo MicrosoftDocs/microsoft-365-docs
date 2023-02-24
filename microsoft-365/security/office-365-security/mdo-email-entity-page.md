@@ -1,11 +1,11 @@
 ---
-title: "The Microsoft Defender for Office 365 email entity page"
+title: Microsoft Defender for Office 365 email entity page
 f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 10/14/2022
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-security
@@ -13,7 +13,8 @@ ms.subservice: mdo
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
-- m365initiative-defender-office365
+- tier1
+- highpri
 ms.custom: 
 description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can see email details in all Microsoft Defender for Office 365 experiences including the email headers for copy, Detection details, Threats detected, Latest and Original delivery locations, Delivery actions, and IDs like Alert Id, Network Message ID and more.
 search.appverid: met150
@@ -60,7 +61,7 @@ One way to get to the email entity page is Threat Explorer, but the steps remain
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="The graphic of the email entity page that focuses on headings that you'll see" lightbox="../../media/email-entities-2-eep.png":::
 
 > [!NOTE]
-> The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or Security Reader. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+> The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or Security Reader. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 ## How to read the email entity page
 
@@ -97,7 +98,7 @@ Here are some helpful specifics to get started.
 Admins can preview and download emails in Cloud mailboxes, ***if*** the mails are still accessible to Microsoft in an Exchange Online mailbox. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), the emails are no longer present in the Exchange Online mailbox. In that case, admins won't be able to preview or download those specific emails. Emails that were dropped, or where delivery failed, never made it into the mailbox and as a result, admins won't be able to preview or download those emails either.
 
 > [!WARNING]
-> Previewing and downloading emails requires a special role called **Preview**. You can add this role in the Microsoft 365 Defender portal as described in [Email & collaboration roles in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). You might need to create a new **Email & collaboration** role group there and add the **Preview** role to that new role group or add the **Preview** role to a role group that allows admins in your organization to work in **Explorer**.
+> Previewing and downloading emails requires a special role called **Preview**. You can add this role in the Microsoft 365 Defender portal as described in [Email & collaboration roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). You might need to create a new **Email & collaboration** role group there and add the **Preview** role to that new role group or add the **Preview** role to a role group that allows admins in your organization to work in **Explorer**.
 
 ### Detonation details
 
@@ -191,7 +192,7 @@ In the Action wizard you can take email actions, email submissions, block sender
 We are also bringing Tenant level block URL and attachment to the respective Email entity URL and Attachments tabs. Upon approval, all the Tenant Allow and Block Lists (or TABL) block URL and block attachments can be tracked under TABL/URL and TABL/file pages. 
 ![Take block URL action from entity page.](../../media/Block-URL-Email-entity.png)
 
-See [permissions](permissions-microsoft-365-security-center.md) required to take these actions. 
+See [permissions](mdo-portal-permissions.md) required to take these actions. 
 
  
 ### The Email summary panel
@@ -230,10 +231,10 @@ In addition to the above sections, you will also see sections specific to few ex
 
 - Quarantine:  
 
-    - *Quarantine details*: Contains quarantine-specific details. For more information, see [Manage quarantined messages](manage-quarantined-messages-and-files.md#view-quarantined-message-details).
+    - *Quarantine details*: Contains quarantine-specific details. For more information, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#view-quarantined-message-details).
 
         - Expires: The date/time when the message will be automatically and permanently deleted from quarantine.
         - Released to: All email addresses (if any) to which the message has been released.
         - Not yet released to: All email addresses (if any) to which the message has not yet been released.
 
-    - *Quarantine actions*: For more information on different quarantine actions, see [Manage quarantined messages](manage-quarantined-messages-and-files.md#take-action-on-quarantined-email).
+    - *Quarantine actions*: For more information on different quarantine actions, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-email).

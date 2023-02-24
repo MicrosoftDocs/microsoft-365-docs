@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 
+ms.date: 09/20/2022
 ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
@@ -61,6 +61,9 @@ Multi-Geo capabilities in OneDrive and SharePoint Online enable control of share
 Each user, Group mailbox, and SharePoint site have a Preferred Data Location (PDL) which denotes the _Macro Region Geography_ or _Local Region Geography_ (location where related data is to be stored. Users' personal data (Exchange mailbox and OneDrive) along with any Microsoft 365 Groups or SharePoint sites that they create can be stored in the specified _Macro Region Geography_ or _Local Region Geographies_ location to meet data residency requirements. You can specify different administrators for each _Macro Region Geography_ or _Local Region Geographies_ location.
 
 Users get a seamless experience when using Microsoft 365 services, including Office applications, OneDrive, and Search. See User experience in a Multi-Geo environment for details.
+
+>[!NOTE]
+>Once your tenant has enabled the Multi-Geo add-on, changing the default location for the tenant is not supported. This applies even for the [Data Residency Legacy Move Program](/microsoft-365/enterprise/m365-dr-legacy-move-program) and the Advanced Data Residency add-on.
 
 ### **OneDrive**
 
@@ -457,7 +460,7 @@ OneNote win32 client and UWP (Universal) App will automatically detect and seaml
 #### **Teams (applicable to Microsoft 365 group connected sites)**
 
 When the SharePoint site _Geography_ move completes, users will have access to their Microsoft 365 group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to _Geography_ move will continue to work after move is complete.
-SharePoint site _Geography_ move does not support moving Private Channels from one _Geography_ to another. Private channels remain in the original _Geography_.
+SharePoint site _Geography_ move does not support moving sites backing Private and Shared Channels from one _Geography_ to another, when using the `Start-SPOUnifiedGroupMove` command. Sites backing Private and Shared Channels remain in the original _Geography_. To move those sites individually, admins can initiate direct moves using the `Start-SPOSiteContentMove` command.
 
 #### **SharePoint Mobile App (iOS/Android)**
 The SharePoint Mobile App is cross _Geography_ compatible and able to detect the site's new _Geography_ location.

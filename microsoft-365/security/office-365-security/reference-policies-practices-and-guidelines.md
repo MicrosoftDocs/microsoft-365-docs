@@ -5,19 +5,19 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection: 
   - m365-security
+  - tier2
 description: Microsoft has developed various policies, procedures, and adopted several industry best practices to help protect our users from abusive, unwanted, or malicious email.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Reference: Policies, practices, and guidelines
@@ -25,7 +25,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -93,7 +93,7 @@ Microsoft actively works with industry bodies and service providers in order to 
 
 ## Abuse and spam reporting
 
-To report unlawful, abusive, unwanted or malicious email, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md). Sending these types of communications is a violation of Microsoft policy, and appropriate action will be taken on confirmed reports.
+To report unlawful, abusive, unwanted or malicious email, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md). Sending these types of communications is a violation of Microsoft policy, and appropriate action will be taken on confirmed reports.
 
 ## Law enforcement
 

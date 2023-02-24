@@ -9,6 +9,7 @@ f1.keywords:
 - MAM
 - set up mobile ap protection
 manager: dougeby
+ms.date: 10/20/2021
 audience: ITPro
 ms.topic: article
 description: Configure mobile app protection with App Protection policies (APP) to prevent specified corporate data from being copied and pasted to other apps. 
@@ -52,8 +53,8 @@ To configure these policies, use the recommended guidance and settings prescribe
 
 |Step  |Policies  |More information  |Licensing  |
 |---------|---------|---------|---------|
-|1   |  [Apply Application Protection Policies (APP) data protection](../security/office-365-security/identity-access-policies.md#apply-app-data-protection-policies)       | One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).        | Microsoft 365 E3 or E5        |
-|2     | [Require approved apps and app protection ](../security/office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)       |  Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.   |  Microsoft 365 E3 or E5       |
+|1   |  [Apply Application Protection Policies (APP) data protection](../security/office-365-security/identity-access-policies.md#app-protection-policies)       | One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).        | Microsoft 365 E3 or E5        |
+|2     | [Require approved apps and app protection ](../security/office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection-policies)       |  Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.   |  Microsoft 365 E3 or E5       |
 | | | | |
 
 ## Next steps

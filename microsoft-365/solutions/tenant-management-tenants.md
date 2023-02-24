@@ -3,7 +3,8 @@ title: Step 1. Your Microsoft 365 for enterprise tenants
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.audience: ITPro
+ms.date: 12/01/2020
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
@@ -24,7 +25,7 @@ description: "Deploy and manage single or multiple Microsoft 365 tenants, with o
 One of your first tenant decisions is how many to have. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. Its corresponding Azure AD tenant is also distinct, unique, and separate from all other Microsoft 365 tenants.
 
 ## Single tenant
-Having a single tenant simplifies many aspects of your organization’s use of Microsoft 365. A single tenant means a single Azure AD tenant with a single set of accounts, groups, and policies. Permissions and sharing of resources across your organization can be done through this central identity provider.
+Having a single tenant simplifies many aspects of your organization's use of Microsoft 365. A single tenant means a single Azure AD tenant with a single set of accounts, groups, and policies. Permissions and sharing of resources across your organization can be done through this central identity provider.
 
 A single tenant provides the most feature-rich and simplified collaboration and productivity experience for your users.
 

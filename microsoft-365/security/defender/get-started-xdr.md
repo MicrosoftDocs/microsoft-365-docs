@@ -1,7 +1,7 @@
 ---
 title: Get started with Microsoft Defender Experts for XDR
 ms.reviewer:
-description: Once the Defender Experts for XDR team are ready to onboard you, we’ll reach out to get you started.
+description: Once the Defender Experts for XDR team are ready to onboard you, we'll reach out to get you started.
 keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Microsoft Defender Experts for hunting, threat hunting and analysis, Microsoft XDR service
 search.product: Windows 10
 ms.service: microsoft-365-security
@@ -19,6 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
+ms.date: 11/17/2022
 ---
 
 # Get started with Microsoft Defender Experts for XDR
@@ -31,7 +32,7 @@ search.appverid: met150
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Once the Defender Experts for XDR team is ready to onboard you, we’ll reach out to get you started.
+Once the Defender Experts for XDR team is ready to onboard you, we'll reach out to get you started.
 
 ## Activate your trial license
 
@@ -65,4 +66,3 @@ Follow these steps to grant our experts additional permissions:
 ## Go to the next step
 
 [Start using Microsoft Defender Experts for XDR preview service](start-using-mdex-xdr.md)
-

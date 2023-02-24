@@ -20,6 +20,7 @@ ms.collection:
 - tier3
 ms.topic: how-to
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Deploy and configure the report message add-in to users
@@ -53,9 +54,8 @@ Depending on whether you are licensed for Defender for Office 365, you'll also g
 ## Configure the add-in for users
 
 1. **Login** to the Microsoft Security portal at <https://security.microsoft.com>.
-2. On the left nav, under **Email & collaboration**, select **Policies & rules**.
-3. Select **Threat policies**.
-4. Select **User reported message settings** underneath the **Others** heading.
+2. On the left nav, select **Settings** and choose **Email & collaboration**.
+3.  Select **User reported message settings**.
 5. Ensure **Microsoft Outlook Report Message button** is toggled to **On**.
 6. Under **Send the reported messages to** choose **Microsoft** (Recommended).
 7. Ensure **Let users choose if they want to report** is unchecked and **Always report the message** is selected.
@@ -70,6 +70,6 @@ Depending on whether you are licensed for Defender for Office 365, you'll also g
 
 ### Further reading
 
-Learn more about user reported message settings [User reported message settings - Office 365 | Microsoft Docs](../user-submission.md)
+Learn more about user reported message settings [User reported message settings - Office 365 | Microsoft Docs](../submissions-user-reported-messages-files-custom-mailbox.md)
 
-Enable the report message or report phishing add-in [Enable the Report Message or the Report Phishing add-ins - Office 365 | Microsoft Docs](../enable-the-report-message-add-in.md)
+Enable the report message or report phishing add-in [Enable the Microsoft Report Message or Report Phishing add-ins - Office 365 | Microsoft Docs](../submissions-users-report-message-add-in-configure.md)

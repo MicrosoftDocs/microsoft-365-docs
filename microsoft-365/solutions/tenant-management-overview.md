@@ -3,7 +3,8 @@ title: Tenant management for Microsoft 365 for enterprise
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.audience: ITPro
+ms.date: 12/01/2020
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
@@ -109,7 +110,7 @@ The following sections and table list the key capabilities and licensing for the
 |Capability or feature|Description|Licensing|
 |---|---|---|
 |Synchronize on-premises Active Directory Domain Services (AD DS) with your Azure AD tenant|Leverage your on-premises identity provider for user accounts, groups, and other objects.|Microsoft 365 E3 or E5|
-|MFA enforced with security defaults|Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults requires MFA for all user accounts.|Microsoft 365 E3 or E5|
+|MFA enforced with security defaults|Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults require MFA for all user accounts.|Microsoft 365 E3 or E5|
 |MFA enforced with Conditional Access|Require MFA based on the attributes of the sign-in with Conditional Access policies.|Microsoft 365 E3 or E5|
 |MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity.|Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses|
 |Self-Service Password Reset (SSPR)|Allow your users to reset or unlock their passwords or accounts.|Microsoft 365 E3 or E5|
@@ -128,7 +129,7 @@ The following sections and table list the key capabilities and licensing for the
 
 |Capability or feature|Description|Licensing|
 |---|---|---|
-|Microsoft Intune|A cloud-based service that provides mobile device management (MDM) and mobile application management (MAM) to control how your organization’s application and the devices are used, including mobile phones, tablets, and laptops.|Microsoft 365 E3 or E5|
+|Microsoft Intune|A cloud-based service that provides mobile device management (MDM) and mobile application management (MAM) to control how your organization's application and the devices are used, including mobile phones, tablets, and laptops.|Microsoft 365 E3 or E5|
 |Basic Mobility and Security|Secure and manage your users' mobile devices like iPhones, iPads, Androids, and Windows phones with this built-in service.|Microsoft 365 E3 or E5|
 ||||
 

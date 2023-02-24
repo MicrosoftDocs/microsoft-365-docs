@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 01/10/2023
 ms.author: dansimp
 author: lovina-saldanha
 ms.reviewer: dansimp
@@ -25,6 +26,9 @@ search.appverid: met150
 **Applies to**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+> [!NOTE]
+> If you want to manage printers, see [Microsoft Defender for Endpoint Device Control Printer Protection](printer-protection-overview.md).
 
 Microsoft Defender for Endpoint Device Control Printer Protection blocks people from printing via non-corporate printers or non-approved USB printer.
 
@@ -58,7 +62,7 @@ Make sure that the Windows 10 or Windows 11 devices that you plan on deploying P
     - For Windows 1909: install Windows Update [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1)
     - For Windows 2004 or later
 
-2. If you're planning to deploy policy via Group Policy, the device must be onboarded to Microsoft Defender for Endpoint joined; if you're planning to deploy policy via Microsoft Endpoint Manager, the device must be joined by using Microsoft Intune.
+2. If you're planning to deploy policy via Group Policy, the device must be onboarded to Microsoft Defender for Endpoint joined; if you're planning to deploy policy via Microsoft Intune, the device must be joined by using Microsoft Intune.
 
 ## Deploy Device Control Printer Protection policy
 

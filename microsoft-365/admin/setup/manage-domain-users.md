@@ -2,9 +2,10 @@
 title: "Synchronize domain users to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 06/02/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
