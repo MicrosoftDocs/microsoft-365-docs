@@ -23,7 +23,7 @@ ms.custom:
 
 The Microsoft Purview compliance portal supports directly  managing permissions for users who perform compliance tasks in Microsoft 365. This update means you'll no longer have to use the Office 365 Security & Compliance Center to manage permissions for compliance solutions. Using the new **Permissions** page in the compliance portal, you can manage permissions to users for compliance tasks in features like device management, Microsoft Purview Data Loss Prevention, eDiscovery, insider risk management, retention, and many others. Users can perform only the compliance tasks that you explicitly grant them access to.
 
-To view the **Permissions** tab in the compliance portal, users need to be a global administrator or need to be assigned the *Role Management* role (this role is assigned only to the Organization Management role group by default). The *Role Management* role allows users to view, create, and modify role groups.
+To view the **Permissions** tab in the compliance portal, users need to be a global administrator or need to be assigned the *Role Management* role (this role is assigned only to the *Organization Management* role group by default). The *Role Management* role allows users to view, create, and modify role groups.
 
 ![Permissions page in Microsoft Purview compliance portal.](../media/m365-compliance-center-permissions.png)
 
