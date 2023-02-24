@@ -125,7 +125,7 @@ At this point, you can't reactivate the subscription. However, as a global or bi
 > [!NOTE]
 >
 > - Adding a new subscription of the same type that was deleted doesn't restore the data that was associated with the deleted subscription.
-> - If a Cloud Solution Provider (CSP) license is suspended, there's no 30-day Expired stage, and services are disabled immediately. Data is deleted after 90 days if the tenant isn't reactivated by adding a new license.
+> - If a legacy Cloud Solution Provider (CSP) license is suspended, there's no 30-day Expired stage, and services are disabled immediately. Data is deleted after 90 days if the tenant isn't reactivated by adding a new license. For New Commerce (NCE) licenses sold via CSPs the same "expired" state as described in this article applies when subscription are not renewed. See [Subscription Lifecycle](/partner-center/subscription-lifecycle) for more information. When NCE licenses in CSP are suspended, they licenses move into disabled state until 90 days after original subscription term end date.
 
 ### What happens when my trial ends?
 
