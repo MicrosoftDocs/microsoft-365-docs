@@ -18,7 +18,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 1/03/2023
+ms.date: 02/01/2023
 ---
 
 # Set up Microsoft 365 for frontline workers
@@ -122,7 +122,7 @@ Registering devices in Azure AD creates a unique identity that can be used to se
 
 ### Shared device enrollment with Intune
 
-**Android:** Automatically enroll Android devices into shared device mode with [Microsoft Endpoint Manager](/mem/intune/fundamentals/whats-new#intune-support-for-provisioning-azure-active-directory-shared-devices). [Learn more about enrolling shared devices in Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/enroll-android-enterprise-dedicated-devices-into-azure-ad-shared/ba-p/1820093).
+**Android:** Automatically enroll Android devices into shared device mode with [Microsoft Intune](/mem/intune/enrollment/android-kiosk-enroll). [Learn more about enrolling shared devices in Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/enroll-android-enterprise-dedicated-devices-into-azure-ad-shared/ba-p/1820093).
 
 **iOS:** Not currently available.
 
@@ -223,7 +223,7 @@ The table below shows Teams applications commonly utilized in frontline solution
 
 **Scenarios and apps**
 
-| Scenario | Approvals | Virtual Appointments (Preview) or Bookings | Lists | Praise | Shifts | Tasks | Updates |
+| Scenario | Approvals | Virtual Appointments or Bookings | Lists | Praise | Shifts | Tasks | Updates |
 | :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [Team communication and collaboration](flw-team-collaboration.md) | &#x2705; | &nbsp; | &#x2705; | &#x2705; | &nbsp; | &#x2705; | &#x2705; |
 | [Corporate communications](flw-corp-comms.md) |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |

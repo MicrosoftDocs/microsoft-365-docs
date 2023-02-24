@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -16,11 +14,13 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
   - m365-security
+  - tier2
 description: Admins can learn how to find and use the email security reports that are available in the Microsoft 365 Defender portal.
 ms.custom: 
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/02/2022
 ---
 
 # View email security reports in the Microsoft 365 Defender portal
@@ -918,7 +918,7 @@ On the **Top malware** page, the ![Create schedule icon.](../../media/m365-cc-sc
 
 The **Top senders and recipients** report is available in both EOP and Defender for Office 365; however, the reports contain different data. For example, EOP customers can view information about top malware, spam, and phishing (spoofing) recipients, but not information about malware detected by [Safe Attachments](safe-attachments-about.md) or phishing detected by [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-The **Top senders and recipients** shows the top messages senders in your organization, as well as the top recipients for messages that were detected by EOP and Defender for Office 365 protection features. By default, the report shows data for the last week, but data is available for the last 90 days.
+The **Top senders and recipients** report shows the top 20 message senders in your organization, as well as the top 20 recipients for messages that were detected by EOP and Defender for Office 365 protection features. By default, the report shows data for the last week, but data is available for the last 90 days.
 
 To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Top senders and recipients report** and then click **View details**. To go directly to the report, open one of the following URLs:
 
@@ -1017,16 +1017,14 @@ On the **User reported messages** page, the ![Export icon.](../../media/m365-cc-
 
 ## What permissions are needed to view these reports?
 
-In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Microsoft 365 Defender portal:
-
-- **Organization Management**
-- **Security Administrator**
-- **Security Reader**
-- **Global Reader**
-
-For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
-
-**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- You need to be assigned permissions before you can view and use the reports that are described in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
+    - **Organization Management**
+    - **Security Administrator**
+    - **Security Reader**
+    - **Global Reader**
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## What if the reports aren't showing data?
 
@@ -1034,7 +1032,10 @@ If you are not seeing data in your reports, check the filters that you're using 
 
 ## Schedule report
 
-1. On the main page for the specific report, click ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **Create schedule**.
+> [!NOTE]
+> To create or manage report schedules, you need to be a member of the **Organization management** role.
+
+1. On the main page for the specific report, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create schedule**.
 2. The **Create scheduled report** wizard opens. On the **Name scheduled report** page, review or customize the **Name** value, and then click **Next**.
 3. On the **Set preferences** page, configure the following settings:
    - **Frequency**: Select one of the following values:
