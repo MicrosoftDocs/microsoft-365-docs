@@ -52,7 +52,7 @@ Microsoft 365 Defender helps you apply the principles of Zero Trust in the follo
 | Assume breach | Microsoft 365 Defender continuously scans the environment for threats and vulnerabilities. It can implement automated remediation tasks, including automated investigations and isolating endpoints. |
 
 
-To add Microsoft 365 Defender to your Zero Trust strategy and architecture, go to [**_Evaluate and pilot Microsoft 365 Defender_**](eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components. The following table summarizes what these topics include.
+To add Microsoft 365 Defender to your Zero Trust strategy and architecture, go to ***[Evaluate and pilot Microsoft 365 Defender](eval-overview.md)*** for a methodical guide to piloting and deploying Microsoft 365 Defender components. The following table summarizes what these topics include.
 
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|
