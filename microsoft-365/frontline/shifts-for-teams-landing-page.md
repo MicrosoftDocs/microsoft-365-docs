@@ -2,10 +2,10 @@
 title: Shifts for frontline workers
 description: Get the admin guidance you need to set up and manage Shifts, the schedule management tool, in Microsoft Teams.
 ms.topic: conceptual
-author: LanaChin
-ms.author: v-lanachin
+author: samanro
+ms.author: samanro
 audience: admin
-manager: samanro
+manager: pamgreen
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
