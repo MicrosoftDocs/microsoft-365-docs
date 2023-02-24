@@ -134,7 +134,7 @@ In Microsoft 365, it refers to the state of being viewable or editable by all us
 
 Refers to sending comments or requests to Microsoft from users of the service.
 
-For matters that require customer support attention in accordance with your support contract, please use the "Help and Support" link at the top of the page, and for non-support related issues such as usability or new feature suggestions, please use this feedback form to send your suggestions. The development team looks directly at the content. The more specific your comments and requests are, the more likely it will be implemented.
+For matters that require customer support attention in accordance with your support contract, please use the "Help and Support" link at the top of the page. For non-support related issues such as usability or new feature suggestions, please use this feedback form to send your suggestions. The development team looks directly at the content. The more specific your comments and requests are, the more likely it will be implemented.
 
 ## Privacy
 
