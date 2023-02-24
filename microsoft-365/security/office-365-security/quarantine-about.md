@@ -51,7 +51,7 @@ Both users and admins can work with quarantined messages:
 
 - Admins can report false positives to Microsoft from quarantine. For more information, see [Take action on quarantined email](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-email) and [Take action on quarantined files](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-files).
 
-- Depending on the [user reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) in the organization (specifically, the **Let your organization report messages from quarantine** setting), users can report false positives to Microsoft from quarantine.
+- Depending on the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in the organization (specifically, the **Let your organization report messages from quarantine** setting), users can report false positives to Microsoft from quarantine.
 
 - How long quarantined messages are held in quarantine before they expire varies based on why the message was quarantined. The features that quarantine messages and their corresponding retention periods are described in the following table:
 
