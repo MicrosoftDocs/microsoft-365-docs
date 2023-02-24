@@ -171,7 +171,7 @@ You must create a policy for each PC, phone, or tablet platform. This article wi
 
 ### Create device compliance policies
 
-To create device compliance policies, sign in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com), and navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
+To create device compliance policies, sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com), and navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
 
 For step-by-step guidance on creating compliance policies in Intune, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
