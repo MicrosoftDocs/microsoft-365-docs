@@ -46,11 +46,13 @@ You manage allow and block entries for files in the Microsoft 365 Defender Porta
 
   An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values are not supported.
 
-- For files, the maximum number of allow entries is 500, and the maximum number of block entries is 500 (1000 file entries total).
+- For files, the maximum number of allow entries is 500, and the maximum number of block entries is 500 (1000 file entries in total).
 
 - You can enter a maximum of 64 characters in a file entry.
 
 - An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
+
+- By default, allow entries for **files** are created for 30 days. Microsoft will either learn from the allow entries for **files** within those 30 days, or automatically extend it for you. Once Microsoft learns, email containing these files will be delivered to the inbox provided something else in the email is not malicious. Moreover these files by default will open at time of click.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
@@ -127,7 +129,7 @@ You can't create allow entries for files directly in the Tenant Allow/Block List
 
 For instructions, see [Report good email attachments to Microsoft](submissions-admin.md#report-good-email-attachments-to-microsoft).
 
-By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.
+By default, allow entries for files are created for 30 days. Microsoft will either learn from the allow entries for files within those 30 days, or automatically extend it for you.  Once Microsoft learns, email containing these files will be delivered to the inbox provided something else in the email is not malicious. Moreover these files by default will open at time of click.
 
 > [!NOTE]
 > Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
@@ -137,6 +139,7 @@ By default, allow entries for domains and email addresses, files, and URLs exist
 > When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are overridden.
 >
 > During mail flow, if messages containing the file pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message containing the file in the allow entry will be delivered.
+>
 > During time of click, the file allow overrides all filters associated with the file entity, allowing the end user to access the file.
 
 ## Use the Microsoft 365 Defender portal to view existing allow or block entries for files in the Tenant Allow/Block List
