@@ -36,7 +36,7 @@ The Incidents and alerts tab provides a multi-tenant view of incidents and alert
 
 ## Devices tab
 
-The Devices tab lists all of the devices in your managed tenants that have been onboarded to Microsoft Defender for Endpoint. This list includes devices that are managed by Microsoft Endpoint Manager and Microsoft Defender for Endpoint.
+The Devices tab lists all of the devices in your managed tenants that have been onboarded to Microsoft Defender for Endpoint. This list includes devices that are managed by Microsoft Intune and Microsoft Defender for Endpoint.
 
 The Devices tab also includes the following options:
 
