@@ -74,7 +74,7 @@ When content has retention settings assigned to it, that content remains in its 
 > [!NOTE]
 > Because the Preservation Hold library is included in the site's storage quota, you might need to increase your storage when you use retention settings for SharePoint and Microsoft 365 groups.
 >
-These secure locations and the retained content are not visible to most people. In most cases, people do not even need to know that their content is subject to retention settings.
+These secure locations and the retained content aren't visible to most people. In most cases, people don't even need to know that their content is subject to retention settings.
 
 For more detailed information about how retention settings work for different workloads, see the following articles:
 
@@ -161,7 +161,7 @@ With retention labels, you can:
 
 - **Mark items as a record** as part of your [records management](records-management.md) strategy. When this labeled content remains in Microsoft 365, further restrictions are placed on the content that might be needed for regulatory reasons. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
-Retention labels, unlike [sensitivity labels](sensitivity-labels.md), do not persist if the content is moved outside Microsoft 365.
+Retention labels, unlike [sensitivity labels](sensitivity-labels.md), don't persist if the content is moved outside Microsoft 365.
 
 #### Classifying content without applying any actions
 
@@ -200,7 +200,7 @@ Retention labels can be published to different locations, depending on what the 
 |Auto-applied based on keywords or a query  |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  |
 |Auto-applied to cloud attachments  |SharePoint, OneDrive, Microsoft 365 Groups  |
 
-Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete content from these locations, use retention policies instead.
+Exchange public folders, Skype, Teams and Yammer messages don't support retention labels. To retain and delete content from these locations, use retention policies instead.
 
 #### Only one retention label at a time
 
@@ -337,27 +337,23 @@ When you create a retention policy or retention label policy, you must choose be
 
     OneDrive URLs are particularly challenging to reliably specify because by default, these URLs aren't created until the user accesses their OneDrive for the first time. And if a user's UPN changes, which you might not know about, their OneDrive URL automatically changes.
 
-Advantages of using adaptive scopes:
+Advantages of using adaptive scopes over static scopes:
 
 - No limits on the [number of items per policy](retention-limits.md#maximum-number-of-items-per-policy). Although adaptive policies are still subject to the [maximum number of policies per tenant](retention-limits.md#maximum-number-of-policies-per-tenant) limitations, the more flexible configuration will likely result in far fewer policies.
 
-- More powerful targeting for your retention requirements. For example, you can assign different retention settings to users according to their geographical location by using existing Azure AD attributes without the administrative overhead of creating and maintaining groups for this purpose.
-
-- Query-based membership provides resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
-
-- A single retention policy can include locations for both Microsoft Teams and Yammer, whereas when you use a static scope, these locations require their own retention policy.
-
 - You can apply specific retention settings to just inactive mailboxes. This configuration isn't possible with a static scope because at the time the policy is assigned, static scopes don't support the specific inclusion of recipients with inactive mailboxes.
 
-Advantages of using static scopes:
+For more advantages of using adaptive scopes, see [Adaptive scopes](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
+
+Advantages of using static scopes over adaptive scopes:
 
 - Simpler configuration if you want all instances automatically selected for a workload.
 
-    For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers of instances that you have to specify are low and do not change. However, when these number of instances start to increase and you have frequent changes in your organization that require you to reconfigure your policies, adaptive scopes can be simpler to configure and much easier to maintain.
+    For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers of instances that you have to specify are low and don't change. However, when these number of instances start to increase and you have frequent changes in your organization that require you to reconfigure your policies, adaptive scopes can be simpler to configure and much easier to maintain.
 
 - The **Skype for Business** and **Exchange public folders** locations don't support adaptive scopes. For those locations, you must use a static scope.
 
-For configuration information, see [Configuring adaptive scopes](retention-settings.md#configuration-information-for-adaptive-scopes).
+For configuration information, see [Configuring adaptive scopes](purview-adaptive-scopes.md#configure-adaptive-scopes).
 
 To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
 
@@ -615,7 +611,7 @@ If you currently use these older features, they will continue to work side by si
 
 - [Use policies for site closure and deletion](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (deletion only)
 
-- [Information management policies](intro-to-info-mgmt-policies.md) (deletion only)
+- [Information management policies](/sharepoint/intro-to-info-mgmt-policies) (deletion only)
 
 If you have configured SharePoint sites for content type policies or information management policies to retain content for a list or library, those policies are ignored while a retention policy or retention label policy is in effect.
 
