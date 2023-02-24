@@ -84,7 +84,7 @@ To configure an adaptive scope:
 
 Before you configure your adaptive scope, use the previous section to identify what type of scope to create and what attributes and values you'll use. You might need to work with other administrators to confirm this information. 
 
-You also need to assign the correct role groups to admins to create an adaptive scope. Any role group with the role ScopeManager is allowed to create an adaptive scopes. This includes the following built-in role groups:
+You'll need to assign the correct role groups to admins to create an adaptive scope. Any role group with the *Scope Manager* role is allowed to create an adaptive scopes. The *Scope Manger* role is included in the following built-in role groups:
  - Compliance Administrator
 - Compliance Data Administrator
 - eDiscovery Manager
