@@ -611,7 +611,7 @@ If you currently use these older features, they will continue to work side by si
 
 - [Use policies for site closure and deletion](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (deletion only)
 
-- [Information management policies](intro-to-info-mgmt-policies.md) (deletion only)
+- [Information management policies](/sharepoint/intro-to-info-mgmt-policies) (deletion only)
 
 If you have configured SharePoint sites for content type policies or information management policies to retain content for a list or library, those policies are ignored while a retention policy or retention label policy is in effect.
 
