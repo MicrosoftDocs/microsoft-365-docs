@@ -99,11 +99,11 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
 ## Manage the availability of Office Scripts in Excel desktop by using Group Policy
 
-Group Policy has a setting to control whether Office Scripts (including the relevant commands on the Automate tab) are available for use.
+Group Policy has a setting to control whether Office Scripts (including the relevant commands on the **Automate** tab) are available for use.
 
-If you enable this policy setting, Office Scripts will not be available for use on the installed Excel app on a desktop. You'll find Office Scripts settings under User Configuration\Administrative Templates\Microsoft Excel 2016\Miscellaneous in the Group Policy Management Console.  
+If you enable this policy setting, Office Scripts won't be available for use in the installed Excel app on a desktop. You'll find Office Scripts settings under User Configuration\Administrative Templates\Microsoft Excel 2016\Miscellaneous in the Group Policy Management Console.  
 
-After applying this policy setting, the **Automate** tab will still show but the Office Scripts and Automate options will be greyed out except for the "Record Actions" button, which when clicked, will display a message on the right, "You don't have access to Office Scripts. Your organization's admin may have turned off this feature, or you don't meet the requirements."
+After applying this policy setting, users will still see the **Automate** tab, but the **Office Scripts** and **Automate** options will be greyed out. They can select the **Record Actions** button, but if they do, they'll see the following message: "You don't have access to Office Scripts. Your organization's admin may have turned off this feature, or you don't meet the requirements."
 
 To learn more, see [Use Group Policy to configure update settings for Microsoft 365 Apps](/deployoffice/configure-update-settings-microsoft-365-apps#use-group-policy-to-configure-update-settings-for-microsoft-365-apps).
 
