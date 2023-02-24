@@ -14,13 +14,13 @@ ms.collection:
   - m365-security
   - tier1
 ms.custom: seo-marvel-apr2020
-description: Admins can learn how to use the Submissions portal in the Microsoft 365 Defender portal to submit legitimate email getting blocked, suspicious email, suspected phishing email, spam, malware other potentially harmful messages, URLs, and email attachments to Microsoft for analysis.
+description: "Admins can learn how to use the Submissions page in the Microsoft 365 Defender portal to submit messages, URLs, and email attachments to Microsoft for analysis. Reasons for submission include: legitimate messages that were blocked, suspicious messages that were allowed, suspected phishing email, spam, malware, and other potentially harmful messages."
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/05/2022
+ms.date: 2/24/2023
 ---
 
-# Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft
+# Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -29,9 +29,9 @@ ms.date: 12/05/2022
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the Submissions portal in the Microsoft 365 Defender portal to submit email messages, URLs, and attachments to Microsoft for analysis.
+In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the Submissions page in the Microsoft 365 Defender portal to submit email messages, URLs, and attachments to Microsoft for analysis.
 
-When you submit an email message for analysis, Microsoft checks the following:
+When you submit an email message for analysis, Microsoft does the following checks:
 
 - **Email authentication check**: Whether email authentication passed or failed when it was delivered.
 - **Policy hits**: Information about any policies or overrides that may have allowed or blocked the incoming email into your tenant, overriding our service filter verdicts.
@@ -52,7 +52,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-- To submit messages, URLs and email attachments to Microsoft, you need to have one of following roles:
+- To submit messages, URLs, and email attachments to Microsoft, you need to have one of following roles:
   - **Security Administrator** or **Security Reader** in the [Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
     Note that one of these roles is required to [View user reported messages](#view-user-reported-messages-to-microsoft) as described later in this article.
@@ -84,13 +84,13 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      - **Upload the email file (.msg or .eml)**: Click **Browse files**. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
 
-   - **Choose a recipient who had an issue**: Specify the recipient(s) that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies or override.
+   - **Choose a recipient who had an issue**: Specify the recipients that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies or override.
 
    - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
 
      - **The email should have been categorized as**: Select **Phish**, **Malware**, or **Spam**. If you're not sure, use your best judgment.
 
-     - **Block all emails from this sender or domain**: Select this option to create a block entry for the sender email address or domain in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+     - **Block all emails from this sender or domain**: Select this option to create a block entry for the sender domain or email address in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
        After you select this option, the following settings are available:
 
@@ -102,7 +102,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
            - **30 days**
            - **90 days**
            - **Never expire**
-           - **Specific date**:  The maximum value is 90 days from today
+           - **Specific date**: The maximum value is 90 days from today.
 
        - **Block entry note**: Enter optional information about why you're blocking this email.
 
@@ -140,7 +140,7 @@ After a few moments, the block entry will appear on the **Domains & addresses** 
            - **30 days**
            - **90 days**
            - **Never expire**
-           - **Specific date**:  The maximum value is 90 days from today
+           - **Specific date**: The maximum value is 90 days from today.
 
        - **Block entry note**: Enter optional information about why you're blocking this file.
 
@@ -178,7 +178,7 @@ After a few moments, the block entry will appear on the **Files** tab on the **T
            - **30 days**
            - **90 days**
            - **Never expire**
-           - **Specific date**:  The maximum value is 90 days from today
+           - **Specific date**: The maximum value is 90 days from today.
 
        - **Block entry note**: Enter optional information about why you're blocking this URL.
 
@@ -220,7 +220,7 @@ After a few moments, the block entry will appear on the **URL** tab on the **Ten
 
            For spoofed senders, this value is meaningless, because entries for spoofed senders never expire.
 
-         - **Allow entry note**: Enter optional information about why you're allowing the malicious entities in email by submitting.
+         - **Allow entry note**: EEnter optional information about why you're allowing and submitting this email message.
 
            For spoofed senders, any value you enter here is not shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block List**.
 
@@ -232,13 +232,13 @@ After a few moments, the allow entries will appear on the **Domains & addresses*
 
 > [!IMPORTANT]
 >
-> - Allows are added during mail flow, based on which filters determined the message to be malicious. For example, if the sender email address and a URL in the message were determined to be bad, an allow entry is created for the sender email address(or domain), and an allow entry is created for the URL.
+> - Allow entries are added during mail flow based on the filters that determined the message was malicious. For example, if the sender email address and a URL in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the URL.
 > - If the sender email address is not found to be malicious by our filtering system, submitting the email message to Microsoft won't create an allow entry in the Tenant Allow/Block List.
-> - When that entity (domain or email address, spoofed sender, URL, file) is encountered again, all filters associated with that entity are skipped. For an email, all other entities are still evaluated by the filtering system before making a decision.
+> - When an allowed domain or email address, spoofed sender, URL, or file (_entity_) is encountered again, all filters that are associated with the entity are skipped. For email messages, all other entities are still evaluated by the filtering system before making a decision.
 > - During mail flow, if messages from the domain or email address pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message from a sender in the allow entry will be delivered.
 > - By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.
 > - For messages that were incorrectly blocked by [domain or user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), the allow entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains** section in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
-> - When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** tab in the Tenant Allow/Block List. 
+> - When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** tab in the Tenant Allow/Block List.
 
 ## Report good email attachments to Microsoft
 
@@ -264,7 +264,7 @@ After a few moments, the allow entries will appear on the **Domains & addresses*
            - **30 days**
            - **Specific date**: The maximum value is 30 days from today.
 
-         - **Allow entry note**: Enter optional information about why you're allowing this file by submitting.
+         - **Allow entry note**: Enter optional information about why you're allowing and submitting this file.
 
    When you're finished, click **Submit**, and then click **Done**.
 
@@ -276,7 +276,7 @@ After a few moments, the allow entry will appear on the **Files** tab on the **T
 >
 > - By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.
 > - When the file is encountered again during mail flow, [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks and all other file-based filters are overridden. If the filtering system determines that all other entities in the email message are clean, the message will be delivered.
-> - During selection, all file-based filters, including [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks are overridden, allowing user to access the file.
+> - During selection, all file-based filters, including [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks are overridden, allowing user access to the file.
 
 ## Report good URLs to Microsoft
 
@@ -290,7 +290,7 @@ After a few moments, the allow entry will appear on the **Files** tab on the **T
 
    - **Select the submission type**: Verify the value **URL** is selected.
 
-   - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can also provide a top level domain (for example, `https://www.fabrikam.com/*`), and then select it in the box that appears. You can enter upto 50 URL at once. 
+   - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can also provide a top level domain (for example, `https://www.fabrikam.com/*`), and then select it in the box that appears. You can enter up to 50 URL at once.
 
    - **Select a reason for submitting to Microsoft**: Select **Should not have been blocked (False positive)**, and then configure the following settings:
 
@@ -302,7 +302,7 @@ After a few moments, the allow entry will appear on the **Files** tab on the **T
            - **30 days**
            - **Specific date**: The maximum value is 30 days from today.
 
-         - **Allow entry note**: Enter optional information about why you're allowing this URL by submitting.
+         - **Allow entry note**: Enter optional information about why you're allowing and submitting this URL.
 
    When you're finished, click **Submit**, and then click **Done**.
 
@@ -314,7 +314,7 @@ After a few moments, the allow entry will appear on the **URL** tab on the **Ten
 >
 > - By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.
 > - When the URL is encountered again during mail flow, [Safe Links](safe-links-about.md) detonation or URL reputation checks and all other URL-based filters are overridden. If the filtering system determines that all other entities in the email message are clean, the message will be delivered.
-> - During selection, all URL-based filters, including [Safe Links](safe-links-about.md) detonation or URL reputation checks are overridden, allowing user to access the content hosted by the URL.
+> - During selection, all URL-based filters, including [Safe Links](safe-links-about.md) detonation or URL reputation checks are overridden, allowing user access to content at the URL.
 
 ## View email admin submissions to Microsoft
 
@@ -407,7 +407,7 @@ After a few moments, the allow entry will appear on the **URL** tab on the **Ten
      - **Submission ID**: A GUID value that's assigned to every submission.
      - **Attachment filename**
      - **Submitted by**
-     - **Reason for submitting**: : The values are **Not junk**, **Phish**, **Malware**, and **Spam**.
+     - **Reason for submitting**: The values are **Not junk**, **Phish**, **Malware**, and **Spam**.
      - **Status**: The values are **Pending** and **Completed**.
      - **Tags**: The default value is **All** or select a [user tag](user-tags-about.md) from the drop-down list.
 
@@ -478,11 +478,11 @@ After a few moments, the allow entry will appear on the **URL** tab on the **Ten
 Messages that are submitted in admin submissions are reviewed by Microsoft and results shown in the submissions detail flyout:
 
 - If there was a failure in the sender's email authentication at the time of delivery.
-- Information about any policy or override that could have affected or overridden the message verdict from filtering system.
+- Information about any policies or overrides that could have affected or overridden the message verdict from filtering system.
 - Current detonation results to see if the URLs or files contained in the message were malicious or not.
 - Feedback from graders.
 
-If an override or policy configuration was found, the result should be available in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override or policy, then the detonation and feedback from graders could take up to a day.
+If an override or policy configuration was found, the result should be available in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override or policy, the detonation and feedback from graders could take up to a day.
 
 ## View user reported messages to Microsoft
 
@@ -542,14 +542,14 @@ If you've deployed the [Microsoft Report Message or Report Phishing add-ins](sub
 
    - To export the entries, click ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export**. In the dialog that appears, save the .csv file.
 
-   - To notify users, see [Admin Review for Reported messages](admin-review-reported-message.md)
+   - To notify users, see [Admin Review for Reported messages](submissions-admin-review-user-reported-messages.md)
 
 > [!NOTE]
-> User reported messages that are sent only to the [reporting mailbox](submissions-user-reported-messages-files-custom-mailbox.md) (not to Microsoft) appear on the **User reported** tab on the **Submissions** page, but the **Result** value for those entries is **Not Submitted to Microsoft** (because these messages aren't analyzed by Microsoft).
+> User reported messages that are sent only to the [reporting mailbox](submissions-user-reported-messages-custom-mailbox.md) (not to Microsoft) appear on the **User reported** tab on the **Submissions** page, but the **Result** value for those entries is **Not Submitted to Microsoft** (because these messages aren't analyzed by Microsoft).
 
 ## Undo user reported messages
 
-Once a user reports a suspicious message that's delivered to the reporting mailbox or Microsoft or both, the user and admins can't undo the reported message. The user can recover the messages from their Deleted Items or Junk Email folders.
+Once a user reports a suspicious message that's delivered to the reporting mailbox, to Microsoft, or both, the user or admins can't undo the reported message. The user can recover the messages from their Deleted Items or Junk Email folders.
 
 ## Convert user reported messages in the reporting mailbox into admin submissions
 
@@ -572,7 +572,6 @@ If the message is reported to Microsoft, the **Converted to admin submission** v
 ## View associated alert for user and admin email submissions
 
 > [!NOTE]
->
 > The information in this section applies only to Defender for Office 365 Plan 2 or higher.
 
 For each user reported message and admin email submission, a corresponding alert is generated.

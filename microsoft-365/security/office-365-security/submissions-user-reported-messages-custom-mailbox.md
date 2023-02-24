@@ -14,7 +14,7 @@ ms.collection:
   - m365-security
   - tier1
 ms.custom:
-description: "Admins can configure where user reported messages go for analysis: to an internal reporting mailbox, to Microsoft, or to both. Other settings complete the reporting experience for users when they report good or spam or phish messages from outlook."
+description: "Admins can configure where user reported messages go for analysis: to an internal reporting mailbox, to Microsoft, or both. Other settings complete the reporting experience for users when they report good messages, spam, or phishing messages from Outlook."
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 12/05/2022
@@ -68,7 +68,7 @@ Before you get started, you need to configure Exchange Online Protection and Def
 
 - If you have data loss prevention (DLP), exclude the reporting mailbox from DLP. For instructions, see [Creating exceptions in DLP](/microsoft-365/compliance/dlp-conditions-and-exceptions).
 
-After you've verified that the reporting mailbox meets all of these requirements, use the rest of the instructions in this article to identify the reporting mailbox and to configure related settings for user reported message.
+After you've verified that the reporting mailbox meets all of these requirements, use the rest of the instructions in this article to identify the reporting mailbox and to configure related settings.
 
 ## What do you need to know before you begin?
 
@@ -76,7 +76,7 @@ After you've verified that the reporting mailbox meets all of these requirements
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- To modify the settings for user reported messages, you need to be a member of one of the following role groups:
+- To modify the user reported settings, you need to be a member of one of the following role groups:
 
   - **Organization Management** or **Security Administrator** in the [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
@@ -89,7 +89,7 @@ After you've verified that the reporting mailbox meets all of these requirements
   - [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Client Access Rules in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## Use the Microsoft 365 Defender portal to user reported settings
+## Use the Microsoft 365 Defender portal to configure user reported settings
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **User reported** tab. To go directly to the **User reported** page, use <https://security.microsoft.com/securitysettings/userSubmission>.
 
@@ -128,14 +128,14 @@ When the toggle is **On** :::image type="icon" source="../../media/scc-toggle-on
 
   - **Microsoft and my reporting mailbox**: User reported messages go to Microsoft for analysis and to the reporting mailbox for an admin or security operations team to analyze.
 
-    In the **Add a mailbox to send reported messages to** box that appears, enter the email address of an existing Exchange Online mailbox to use as the reporting mailbox. Distribution groups and routing to an external or on-premises mailbox are not allowed.
+    In the **Add a mailbox to send reported messages to** box that appears, enter the email address of an existing Exchange Online mailbox to use as the reporting mailbox. Distribution groups and routing to external or on-premises mailboxes is not allowed.
 
   > [!IMPORTANT]
   >
-  > - If you select **My reporting mailbox only**, the **Result** value of messages entries on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user> will be **Not Submitted to Microsoft**, because the messages were not analyzed by Microsoft. 
+  > - If you select **My reporting mailbox only**, the **Result** value of messages entries on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user> will be **Not Submitted to Microsoft**, because the messages were not analyzed by Microsoft.
   > - In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), the only available selection in the **Send the reported messages to** section is **My reporting mailbox only**. The other two options are grayed out due to compliance reasons.
   >
-  > - If you use [Attack simulation training](attack-simulation-training-get-started.md) or a third-party product to do phishing simulations and are sending user reported messages to reporting mailbox, you must configure the reporting mailbox as a SecOps mailbox as previously described in the [Configuration requirements for the reporting mailbox](#configuration-requirements-for-the-reporting-mailbox) section earlier in this article. If you don't, a user reporting a message might trigger a training assignment in the phishing simulation product.
+  > - If you use [Attack simulation training](attack-simulation-training-get-started.md) or a third-party product to do phishing simulations, and you're sending user reported messages to a reporting mailbox, you need to configure the reporting mailbox as a SecOps mailbox as described in the [Configuration requirements for the reporting mailbox](#configuration-requirements-for-the-reporting-mailbox) section earlier in this article. If you don't, a user reported message might trigger a training assignment by the phishing simulation product.
 
 The following settings are also available on the page:
 
@@ -151,9 +151,8 @@ The following settings are also available on the page:
 
   When you're finished, click **Confirm** to return to th **User reported** page.
 
-  > [!WARNING]
-  >
-  > - Currently, users who report messages from Outlook on the web using the built-in **Report** button don't get these before or after pop-up messages. The pop-ups work for users who report messages using the Microsoft Report Message and Report Phishing add-ins.
+  > [!IMPORTANT]
+  > Currently, users who report messages from Outlook on the web using the built-in **Report** button don't get these before or after pop-up messages. The pop-ups work for users who report messages using the Microsoft Report Message and Report Phishing add-ins.
 
 - **Email sent to user after admin review** section: The following settings are available:
 
@@ -216,16 +215,16 @@ To specify the reason why the original, attached messages were reported, message
 
   Messages that don't follow this format will not display properly on the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
 
-## Use Exchange Online PowerShell to configure the user reported message settings
+## Use Exchange Online PowerShell to configure the reported message settings
 
-After you [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), you use the **\*-ReportSubmissionPolicy** and **\*-ReportSubmissionRule** cmdlets to manage and configure the user reported message settings.
+After you [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), you use the **\*-ReportSubmissionPolicy** and **\*-ReportSubmissionRule** cmdlets to manage and configure the user reported settings.
 
-In Exchange Online PowerShell, the basic elements of the user reported message settings are:
+In Exchange Online PowerShell, the basic elements of the user reported settings are:
 
 - **The report submission policy**: Turns the Microsoft integrated reporting experience on or off, turns sending reported messages to Microsoft on or off, turns sending reported messages to the reporting mailbox on or off, and most other settings.
 - **The report submission rule**: Specifies the email address of the reporting mailbox or a blank value when the reporting mailbox isn't used (report messages to Microsoft only).
 
-The difference between these two elements isn't obvious when you manage the user reported message settings in the Microsoft 365 Defender portal:
+The difference between these two elements isn't obvious when you manage the user reported settings in the Microsoft 365 Defender portal:
 
 - There's only one report submission policy named DefaultReportSubmissionPolicy and one report submission rule named DefaultReportSubmissionRule by default.
 
