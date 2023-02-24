@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 02/22/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -26,7 +26,7 @@ ms.custom:
 
 # Manage holds in eDiscovery (Premium)
 
-You can use a Microsoft Purview eDiscovery (Premium) case to create holds to preserve content that might be relevant to your case. Using the eDiscovery (Premium) hold capabilities, you can place holds on custodians and their data sources. Additionally, you can place a non-custodial hold on mailboxes and OneDrive for Business sites. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for a Microsoft 365 Group. Similarly, you can place a hold on the mailbox and site that are associated with Microsoft Teams. When you place content locations on hold, content is held until you release the custodian, remove a specific data location, or delete the hold policy entirely.
+You can use a Microsoft Purview eDiscovery (Premium) case to create holds to preserve content that might be relevant to your case. Using the eDiscovery (Premium) hold capabilities, you can place holds on custodians and their data sources. Additionally, you can place a non-custodial hold on mailboxes and OneDrive for Business sites. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for a Microsoft 365 group. Similarly, you can place a hold on the mailbox and site that are associated with Microsoft Teams. When you place content locations on hold, content is held until you release the custodian, remove a specific data location, or delete the hold policy entirely.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -69,12 +69,12 @@ To create a non-custodial hold for an eDiscovery (Premium) case:
   
 8. Choose the content locations that you want to place on hold. You can place mailboxes, sites, and public folders on hold.
 
-   1. **Exchange email** - select **Choose users, groups, or teams** and then select **Choose users, groups, or teams** again to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for a Microsoft 365 Group or a Microsoft Team. Select the user, group, team check box, select **Choose**, and then select **Done**.
+   1. **Exchange email** - select **Choose users, groups, or teams** and then select **Choose users, groups, or teams** again to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for a Microsoft 365 group or a Microsoft Team. Select the user, group, team check box, select **Choose**, and then select **Done**.
 
       > [!NOTE]
       > When you select **Choose users, groups, or teams** to specify mailboxes to place on hold, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add people to this list, type a name (a minimum of 3 characters) in the search box.
 
-   1. **SharePoint Sites** - select **Choose sites** and then select **Choose sites** again to specify SharePoint and OneDrive for Business sites to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft 365 Group or a Microsoft Team. Select **Choose**, and then select **Done**.
+   1. **SharePoint Sites** - select **Choose sites** and then select **Choose sites** again to specify SharePoint and OneDrive for Business sites to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft 365 group or a Microsoft Team. Select **Choose**, and then select **Done**.
 
       > [!NOTE]
       > The URL for a user's OneDrive account includes their user principal name (UPN) (for example, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`). In the rare case that a person's UPN is changed, their OneDrive URL will also change to incorporate the new UPN. If a user's OneDrive account is part of a non-custodial hold and their UPN is changed, you need to update the hold and point to the new OneDrive URL. If the URL for the OneDrive site changes, previously placed holds on the site remain effective and content is preserved.  For more information, see [How UPN changes affect the OneDrive URL](/onedrive/upn-changes).
@@ -101,15 +101,15 @@ To create a non-custodial hold for an eDiscovery (Premium) case:
 > [!NOTE]
 > If the SMTP address of the user changes after you place the user's mailbox on hold, the mailbox will remain on hold. To use the new SMTP address to place hold, create a new hold.
 
-## Place a hold on Microsoft Teams and Office 365 Groups
+## Place a hold on Microsoft Teams and Microsoft 365 groups
 
-Microsoft Teams is built on Office 365 Groups. Therefore, placing them on hold in eDiscovery (Premium) is similar.
+Microsoft Teams is built on Microsoft 365 groups. Therefore, placing them on hold in eDiscovery (Premium) is similar.
 
-- **How do I map an additional Microsoft 365 Groups or Microsoft Teams site to a custodian? And what about placing a non-Custodial hold on Microsoft 365 Groups and Microsoft Teams?** Microsoft Teams is built on Microsoft 365 Groups. Therefore, placing them on hold in an eDiscovery case is similar. Keep the following things in mind when placing Microsoft 365 Groups and Microsoft Teams on hold.
+- **How do I map an additional Microsoft 365 groups or Microsoft Teams site to a custodian? And what about placing a non-Custodial hold on Microsoft 365 groups and Microsoft Teams?** Microsoft Teams is built on Microsoft 365 groups. Therefore, placing them on hold in an eDiscovery case is similar. Keep the following things in mind when placing Microsoft 365 groups and Microsoft Teams on hold.
 
-  - To place content located in Microsoft 365 Groups and Microsoft Teams on hold, you have to specify the mailbox and SharePoint site that associated with a group or team.
+  - To place content located in Microsoft 365 groups and Microsoft Teams on hold, you have to specify the mailbox and SharePoint site that associated with a group or team.
   
-  - Run the **Get-UnifiedGroup** cmdlet in Exchange Online to view properties for a Microsoft 365 Group or Microsoft Team. This is a good way to get the URL for the site that's associated with a Microsoft 365 Group or a Microsoft Team. For example, the following command displays selected properties for a Microsoft 365 Group named Senior Leadership Team:
+  - Run the **Get-UnifiedGroup** cmdlet in Exchange Online to view properties for a Microsoft 365 group or Microsoft Team. This is a good way to get the URL for the site that's associated with a Microsoft 365 group or a Microsoft Team. For example, the following command displays selected properties for a Microsoft 365 group named Senior Leadership Team:
 
     ```console
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -122,8 +122,8 @@ Microsoft Teams is built on Office 365 Groups. Therefore, placing them on hold i
     > [!NOTE]
     > To run the Get-UnifiedGroup cmdlet, you have to be assigned the View-Only Recipients role in Exchange Online or be a member of a role group that's assigned the View-Only Recipients role.
 
-  - When a user's mailbox is searched, any Microsoft 365 Group or Microsoft Team that the user is a member of won't be searched. Similarly, when you place a Microsoft 365 Group or Microsoft Team hold, only the group mailbox and group site are placed on hold; the mailboxes and OneDrive for Business sites of group members aren't placed on hold unless you explicitly add them as custodians or place their data sources hold. Therefore, if you need to place a Microsoft 365 Group or Microsoft Team on hold for a specific custodian, consider mapping the group site and group mailbox to the custodian (See Managing Custodians in eDiscovery (Premium)). If the Microsoft 365 Group or Microsoft Team isn't attributable to a single custodian, consider adding the source to a non-custodial hold.
-  - To get a list of the members of a Microsoft 365 Group or Microsoft Team, you can view the properties on the **Home** > [**Groups**](https://go.microsoft.com/fwlink/p/?linkid=2052855) page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
+  - When a user's mailbox is searched, any Microsoft 365 group or Microsoft Team that the user is a member of won't be searched. Similarly, when you place a Microsoft 365 group or Microsoft Team hold, only the group mailbox and group site are placed on hold; the mailboxes and OneDrive for Business sites of group members aren't placed on hold unless you explicitly add them as custodians or place their data sources hold. Therefore, if you need to place a Microsoft 365 group or Microsoft Team on hold for a specific custodian, consider mapping the group site and group mailbox to the custodian (See Managing Custodians in eDiscovery (Premium)). If the Microsoft 365 group or Microsoft Team isn't attributable to a single custodian, consider adding the source to a non-custodial hold.
+  - To get a list of the members of a Microsoft 365 group or Microsoft Team, you can view the properties on the **Home** > [**Groups**](https://go.microsoft.com/fwlink/p/?linkid=2052855) page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
 
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
