@@ -85,6 +85,7 @@ To configure an adaptive scope:
 Before you configure your adaptive scope, use the previous section to identify what type of scope to create and what attributes and values you'll use. You might need to work with other administrators to confirm this information. 
 
 You'll need to assign the correct role groups to admins to create an adaptive scope. Any role group with the *Scope Manager* role is allowed to create an adaptive scopes. The *Scope Manger* role is included in the following built-in role groups:
+
 - Compliance Administrator
 - Compliance Data Administrator
 - eDiscovery Manager
@@ -92,8 +93,6 @@ You'll need to assign the correct role groups to admins to create an adaptive sc
 - Records Management
 - Communication Compliance
 - Communication Compliance Admins
-
-
 
 Specifically for SharePoint sites, there might be additional SharePoint configuration needed if you plan to use [custom site properties](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
