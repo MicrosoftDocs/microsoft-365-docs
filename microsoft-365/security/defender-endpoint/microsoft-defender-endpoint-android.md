@@ -49,7 +49,7 @@ This topic describes how to install, configure, update, and use Defender for End
 
 - **For Administrators**:
    - Access to the Microsoft 365 Defender portal.
-   - Access [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) to:
+   - Access to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) to:
      - Deploy the app to enrolled user groups in your organization.
      - Configure Microsoft Defender for Endpoint risk signals in app protection policy.
   
