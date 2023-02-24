@@ -1,9 +1,9 @@
 ---
 title: Shifts connectors
-author: lanachin
-ms.author: v-lanachin
+author: samanro
+ms.author: samanro
 ms.reviewer: aaku
-manager: samanro
+manager: pamgreen
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
