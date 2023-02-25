@@ -53,7 +53,7 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 
 4. A **Subscription settings** flyout opens. Choose the option to use Defender for Endpoint Plan 1 and Plan 2. (No changes will occur until devices are tagged as per the next step.)
 
-5. Tag the devices that will receive Defender for Endpoint Plan 1 capabilities (all other devices will receive Defender for Endpoint Plan 2). You can choose to tag your devices manually or by using a dynamic rule.
+5. Tag the devices that will receive Defender for Endpoint Plan 1 capabilities (all other devices will receive Defender for Endpoint Plan 2). You can choose to tag your devices manually or by using a dynamic rule. (See [More details about device tagging](#more-details-about-device-tagging).)
 
    | Method | Details |
    |:---|:---|
@@ -66,8 +66,22 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 
 ### More details about device tagging
 
-The Tag property allows you to control, with great flexibility, the set of devices that should receive Defender for Endpoint Plan 1 capabilities.  the P1 device set.  
-For example you can define that all of the devices that are not marked with a Tag: “VIP” will be receiving P1 functionality: 
+As described in [Tech Community blog: How to use tagging effectively](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/how-to-use-tagging-effectively-part-1/ba-p/1964058), device tagging provides you with granular control over devices. With device tags, you can:
+
+- Display certain devices to individual users in the Microsoft 365 Defender portal so that they see only the devices they're responsible for.
+- Include or exclude devices from specific security policies.
+- Determine which devices should receive Defender for Endpoint Plan 1 or Plan 2 capabilities. (*This capability is now in preview!*)
+
+For example, suppose that you want to use a tag called `VIP` for all the devices that should receive Defender for Endpoint Plan 2 capabilities. Here's what you would do:
+
+1. Create a device tag called `VIP`, and apply it to all the devices that should receive Defender for Endpoint Plan 2 capabilities. Use one of the following methods to create your device tag:
+
+   - [Add and manage device tags using the Microsoft 365 Defender portal](machine-tags.md#add-and-manage-device-tags-using-the-portal).
+   - [Add device tags by setting a registry key value](machine-tags.md#add-device-tags-by-setting-a-registry-key-value).
+   - [Add or remove machine tags by using the Defender for Endpoint API](add-or-remove-machine-tags.md).
+   - [Create a profile with custom settings in Intune](/mem/intune/configuration/custom-settings-configure)
+
+For example, you can  you can define that all of the devices that are not marked with a Tag: “VIP” will be receiving P1 functionality: 
 (1) To utilize the dynamic rule based on tags you first need to make sure that the relevant machines have the “VIP” tag applied and there are a number of methods to achieve this: Manual tagging , Registry tagging ,  Tagging VIA API , Setting the tag via Intune )
 (2) You can then create a Dynamic rule: “Tag” Does not contain “VIP” 
 (3) All non VIP devices will be receiving License MDE P1 Tag and the appropriate functionality 
