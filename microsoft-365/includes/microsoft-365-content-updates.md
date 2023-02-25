@@ -1,5 +1,6 @@
 <!-- This file is generated automatically each week. Changes made to this file will be overwritten.-->
-
+
+
 
 
 ## Week of February 13, 2023
@@ -79,7 +80,7 @@
 | 2/8/2023 | [Microsoft Teams Virtual Appointments Call Quality Dashboard](/microsoft-365/frontline/virtual-appointments-call-quality?view=o365-worldwide) | modified |
 | 2/8/2023 | [Run the client analyzer on macOS or Linux](/microsoft-365/security/defender-endpoint/run-analyzer-macos-linux?view=o365-worldwide) | modified |
 | 2/8/2023 | [Report spam, non-spam, phishing, suspicious emails and files to Microsoft](/microsoft-365/security/office-365-security/submissions-report-messages-files-to-microsoft?view=o365-worldwide) | modified |
-| 2/8/2023 | [User reported message settings](/microsoft-365/security/office-365-security/submissions-user-reported-messages-files-custom-mailbox?view=o365-worldwide) | modified |
+| 2/8/2023 | [User reported message settings](/microsoft-365/security/office-365-security/submissions-user-reported-messages-custom-mailbox?view=o365-worldwide) | modified |
 | 2/8/2023 | [Deploy a task automatically in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-deploy-task-automatically?view=o365-worldwide) | modified |
 | 2/8/2023 | [Set up GDAP for your customers](/microsoft-365/lighthouse/m365-lighthouse-setup-gdap?view=o365-worldwide) | modified |
 | 2/8/2023 | [Turn on cloud protection in Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus?view=o365-worldwide) | modified |
@@ -126,12 +127,12 @@
 | 1/31/2023 | [Training campaigns in Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-training-campaigns?view=o365-worldwide) | added |
 | 1/31/2023 | [Training modules for Training campaigns in Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-training-modules?view=o365-worldwide) | added |
 | 1/31/2023 | [View and edit your security settings in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-configure-security-settings?view=o365-worldwide) | modified |
-| 1/31/2023 | [Deploy Microsoft Defender for Endpoint on Android with Microsoft Endpoint Manager](/microsoft-365/security/defender-endpoint/android-intune?view=o365-worldwide) | modified |
+| 1/31/2023 | [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](/microsoft-365/security/defender-endpoint/android-intune?view=o365-worldwide) | modified |
 | 1/31/2023 | [Microsoft Defender for Endpoint Device Control Removable Storage frequently asked questions](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control-faq?view=o365-worldwide) | modified |
 | 1/31/2023 | [Protect your organization's data with device control](/microsoft-365/security/defender-endpoint/device-control-report?view=o365-worldwide) | modified |
-| 1/31/2023 | [Deploy Microsoft Defender for Endpoint on iOS with Microsoft Endpoint Manager](/microsoft-365/security/defender-endpoint/ios-install?view=o365-worldwide) | modified |
+| 1/31/2023 | [Deploy Microsoft Defender for Endpoint on iOS with Microsoft Intune](/microsoft-365/security/defender-endpoint/ios-install?view=o365-worldwide) | modified |
 | 1/31/2023 | [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-perf?view=o365-worldwide) | modified |
-| 1/31/2023 | [Deploy Microsoft Defender for Endpoint on macOS with Microsoft Endpoint Manager](/microsoft-365/security/defender-endpoint/mac-install-with-intune?view=o365-worldwide) | modified |
+| 1/31/2023 | [Deploy Microsoft Defender for Endpoint on macOS with Microsoft Intune](/microsoft-365/security/defender-endpoint/mac-install-with-intune?view=o365-worldwide) | modified |
 | 1/31/2023 | [Set up and configure Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/mde-p1-setup-configuration?view=o365-worldwide) | modified |
 | 1/31/2023 | [Onboard devices and configure Microsoft Defender for Endpoint capabilities](/microsoft-365/security/defender-endpoint/onboard-configure?view=o365-worldwide) | modified |
 | 1/31/2023 | [Onboard to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/onboarding?view=o365-worldwide) | modified |
