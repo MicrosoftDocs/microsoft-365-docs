@@ -53,7 +53,7 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 
 4. A **Subscription settings** flyout opens. Choose the option to use Defender for Endpoint Plan 1 and Plan 2. (No changes will occur until devices are tagged as per the next step.)
 
-5. Tag the devices that will receive Defender for Endpoint Plan 1 capabilities (all other devices will receive Defender for Endpoint Plan 2). You can choose to tag your devices manually or by using a dynamic rule. (See [More details about device tagging](#more-details-about-device-tagging).)
+5. Tag the devices that should receive either Defender for Endpoint Plan 1 or Plan 2 capabilities. You can choose to tag your devices manually or by using a dynamic rule. [Learn more about device tagging](#more-details-about-device-tagging).
 
    | Method | Details |
    |:---|:---|
