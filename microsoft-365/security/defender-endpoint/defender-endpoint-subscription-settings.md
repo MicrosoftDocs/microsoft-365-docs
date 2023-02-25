@@ -137,7 +137,7 @@ The license usage report is estimated based on sign-in activities on the device.
 
 2. Choose **Settings** > **Endpoints** > **Licenses**.
 
-3. Review your available and assigned licenses.
+3. Review your available and assigned licenses. The calculation is based on detected users who have accessed devices that are onboarded to Defender for Endpoint.
 
 ## More resources
 
