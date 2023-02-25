@@ -79,11 +79,9 @@ For example, suppose that you want to use a tag called `VIP` for all the devices
    - [Add and manage device tags using the Microsoft 365 Defender portal](machine-tags.md#add-and-manage-device-tags-using-the-portal).
    - [Add device tags by setting a registry key value](machine-tags.md#add-device-tags-by-setting-a-registry-key-value).
    - [Add or remove machine tags by using the Defender for Endpoint API](add-or-remove-machine-tags.md).
-   - [Create a profile with custom settings in Intune](/mem/intune/configuration/custom-settings-configure)
+   - [Add device tags by creating a custom profile in Microsoft Intune](machine-tags.md#add-device-tags-by-creating-a-custom-profile-in-microsoft-intune).
 
-For example, you can  you can define that all of the devices that are not marked with a Tag: “VIP” will be receiving P1 functionality: 
-(1) To utilize the dynamic rule based on tags you first need to make sure that the relevant machines have the “VIP” tag applied and there are a number of methods to achieve this: Manual tagging , Registry tagging ,  Tagging VIA API , Setting the tag via Intune )
-(2) You can then create a Dynamic rule: “Tag” Does not contain “VIP” 
+2. Set up ) You can then create a Dynamic rule: “Tag” Does not contain “VIP” 
 (3) All non VIP devices will be receiving License MDE P1 Tag and the appropriate functionality 
 
 
