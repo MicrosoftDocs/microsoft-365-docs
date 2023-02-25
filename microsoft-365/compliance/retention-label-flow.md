@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 08/04/2022
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -86,7 +86,7 @@ When the retention period expires, your configured flow runs.
 
 Power Automate is a workflow service that automates actions across applications and services. Specific to running a Power Automate flow at the end of the retention period:
 
-- You must have a Power Automate plan that includes premium connectors, separate from your Microsoft 365 compliance plan. 
+- You must have a [Power Automate plan](/power-platform/admin/power-automate-licensing/types) that includes premium connectors, separate from your Microsoft 365 compliance plan. 
 - The Power Automate flow must be an automated cloud flow that is created from blank, and configured to use the trigger **When the retention period expires**.
 
 For more information about how to use and configure the dependent automated cloud flows, see the [Microsoft Power Automate Documentation](/power-automate).
