@@ -88,7 +88,7 @@ The information below will detail how to get the most out of your investment, br
 
 **Read more here:** [Advanced delivery](../skip-filtering-phishing-simulations-sec-ops-mailboxes.md)
 
-- You can configure user reported message settings to allow users to report good or bad messages to Microsoft, to a designated reporting mailbox (to integrate with current security workflows) or both. Admins can use the **User reported** tab on the **Submissions** page to triage false positives and false negative user reported messages.
+- You can configure user reported settings to allow users to report good or bad messages to Microsoft, to a designated reporting mailbox (to integrate with current security workflows) or both. Admins can use the **User reported** tab on the **Submissions** page to triage false positives and false negative user reported messages.
 
 **Read more here:** [Deploy and configure the report message add-in to users](deploy-and-configure-the-report-message-add-in.md)
 

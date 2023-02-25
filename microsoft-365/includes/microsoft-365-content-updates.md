@@ -80,7 +80,7 @@
 | 2/8/2023 | [Microsoft Teams Virtual Appointments Call Quality Dashboard](/microsoft-365/frontline/virtual-appointments-call-quality?view=o365-worldwide) | modified |
 | 2/8/2023 | [Run the client analyzer on macOS or Linux](/microsoft-365/security/defender-endpoint/run-analyzer-macos-linux?view=o365-worldwide) | modified |
 | 2/8/2023 | [Report spam, non-spam, phishing, suspicious emails and files to Microsoft](/microsoft-365/security/office-365-security/submissions-report-messages-files-to-microsoft?view=o365-worldwide) | modified |
-| 2/8/2023 | [User reported message settings](/microsoft-365/security/office-365-security/submissions-user-reported-messages-files-custom-mailbox?view=o365-worldwide) | modified |
+| 2/8/2023 | [User reported message settings](/microsoft-365/security/office-365-security/submissions-user-reported-messages-custom-mailbox?view=o365-worldwide) | modified |
 | 2/8/2023 | [Deploy a task automatically in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-deploy-task-automatically?view=o365-worldwide) | modified |
 | 2/8/2023 | [Set up GDAP for your customers](/microsoft-365/lighthouse/m365-lighthouse-setup-gdap?view=o365-worldwide) | modified |
 | 2/8/2023 | [Turn on cloud protection in Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus?view=o365-worldwide) | modified |
