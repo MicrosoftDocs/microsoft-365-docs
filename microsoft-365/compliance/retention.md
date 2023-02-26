@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 09/17/2019
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -355,10 +355,10 @@ Advantages of using static scopes over adaptive scopes:
 
 For configuration information, see [Configuring adaptive scopes](purview-adaptive-scopes.md#configure-adaptive-scopes).
 
-To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
+> [!NOTE]
+> In [February 2023](whats-new.md#february-2023), the configuration of adaptive scopes moved in the Microsoft Purview compliance portal to **Roles & Scopes**.
 
-> [!IMPORTANT]
-> Currently, adaptive scopes don't support [Preservation Lock to restrict changes to retention policies and retention label policies](#use-preservation-lock-to-restrict-changes-to-policies).
+Currently, adaptive scopes don't support [Preservation Lock to restrict changes to retention policies and retention label policies](#use-preservation-lock-to-restrict-changes-to-policies).
 
 ## Policy lookup
 
@@ -583,7 +583,7 @@ If you are using older eDiscovery tools to preserve data, see the following reso
 
 If you need to proactively retain or delete content in Microsoft 365 for data lifecycle management, we recommend that you use Microsoft 365 retention policies and retention labels instead of the following older features.
 
-If you currently use these older features, they will continue to work side by side with Microsoft 365 retention policies and retention labels. However, we recommend that going forward, you use Microsoft 365 retention policies and retention labels to benefit from a single solution to manage both retention and deletion of content across multiple workloads in Microsoft 365.
+If you currently use these older features, they will usually work side by side with Microsoft 365 retention policies and retention labels. Check their specific documentation for any restrictions. However, we recommend that going forward, you use Microsoft 365 retention policies and retention labels to benefit from a single solution to manage both retention and deletion of content across multiple workloads in Microsoft 365.
 
 **Older features from Exchange Online:**
 
