@@ -126,7 +126,7 @@ When you save a new rule, it runs and checks for matches from the past 30 days o
 - **Every 12 hours**—runs every 12 hours, checking data from the past 48 hours
 - **Every 3 hours**—runs every 3 hours, checking data from the past 12 hours
 - **Every hour**—runs hourly, checking data from the past 4 hours
-- **Continuous**—runs continuously, checking data from events as they are collected and processed in near real-time
+- **Continuous (NRT)**—runs continuously, checking data from events as they are collected and processed in near real-time
 
 >[!NOTE]
 >If you choose the continuous frequency, make sure that the query references one table only and uses an operator from the [list of supported KQL operators](/azure/azure-monitor/essentials/data-collection-transformations-structure#supported-kql-features). You cannot use unions or joins. The `externaldata` operator is not supported.
@@ -139,6 +139,26 @@ When you edit a rule, it will run with the applied changes in the next run time 
 > Match the time filters in your query with the lookback duration. Results outside of the lookback duration are ignored.  
 
 Select the frequency that matches how closely you want to monitor detections. Consider your organization's capacity to respond to the alerts.
+
+##### Tables that support Continuous (NRT) frequency
+
+Near real-time detections are supported for the following tables: 
+- AlertEvidence
+- DeviceEvents 
+- DeviceFileCertificateInfo 
+- DeviceFileEvents 
+- DeviceImageLoadEvents 
+- eviceLogonEvents 
+- DeviceNetworkEvents 
+- DeviceNetworkInfo 
+- DeviceInfo 
+- DeviceProcessEvents 
+- DeviceRegistryEvents 
+- EmailAttachmentInfo 
+- EmailEvents 
+- EmailPostDeliveryEvents 
+- EmailUrlInfo 
+- UrlClickEvents 
 
 ### 3. Choose the impacted entities.
 Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses. Identifying which of these columns represent the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.
