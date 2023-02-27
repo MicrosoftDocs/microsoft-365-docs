@@ -77,7 +77,7 @@ You'll need to choose the data that your Shifts users can see and change. You'll
 > - Swap requests: **Shifts users will not see provider data**
 > - Time off requests: **Shifts users will not see provider data**
 >
-> After you edit your settings, make sure you follow the steps to [Disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard-ukg?branch=v-lanachin-shiftscon&view=o365-worldwide#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
+> After you edit your settings, make sure you follow the steps to [Disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard-ukg#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
 
 ## List of error messages
 
