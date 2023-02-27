@@ -27,9 +27,9 @@ search.appverid:
 - MOE150
 ---
 
-# Best practices for managing your communication compliance alert queue
+# Best practices for managing the volume of alerts in communication compliance
 
-One of the biggest challenges in Microsoft Purview Communication Compliance is managing the volume of alerts. Use the list of best practices below to help you create policies that cover as many users as possible while reducing the number of non-actionable alerts.
+One of the biggest challenges in Microsoft Purview Communication Compliance is managing the volume of alerts. Use the list of best practices in this article to help you create policies that cover as many users as possible while reducing the number of non-actionable alerts.
 
 ## Understand keyword list volumes
 
