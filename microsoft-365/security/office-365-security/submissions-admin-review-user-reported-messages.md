@@ -1,5 +1,5 @@
 ---
-title: Admin review for reported messages
+title: Admin review for user reported messages
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -12,22 +12,23 @@ ms.collection:
   - m365-security
   - tier2
 ms.custom:
-description: Learn how to review messages that are reported and give feedback to your users.
+description: Admins can learn how to review messages that were reported by users and give them feedback.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 2/24/2023
 ---
 
-# Admin review for reported messages
+# Admin review for user reported messages
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with Exchange Online mailboxes and Microsoft Defender for Office 365, admins can send templated messages back to end users after they review reported messages. The templates can be customized for your organization and based on your admin's verdict as well.
+In Microsoft 365 organizations with Exchange Online mailboxes and Microsoft Defender for Office 365, admins can send templated messages back to end users after an admin has reviewed the reported messages. You can customize the templates for your organization and for the admin verdict.
 
 The feature is designed to give feedback to your users but doesn't change the verdicts of messages in the system. To help Microsoft update and improve its filters, you need to submit messages for analysis using [Admin submission](submissions-admin.md).
 
@@ -52,12 +53,12 @@ You will only be able to mark and notify users of review results if the message 
 2. On the **User reported** tab, find and select the message, select **Mark as and notify**, and then select one of the following values from the dropdown list:
    - **No threats found**
    - **Phishing**
-   - **Junk**
+   - **Spam**
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/admin-review-send-message-from-portal.png" alt-text="The page displaying the user-reported messages" lightbox="../../media/admin-review-send-message-from-portal.png":::
 
-The reported message will be marked as either false positive or false negative, and an email will be automatically sent from within the portal notifying the user who reported the message.
+The reported message will be marked as **No threats found**, **Phishing**, or **Spam**, and an email will be automatically sent to notify the user who reported the message.
 
 ## Customize the messages used to notify users
 
