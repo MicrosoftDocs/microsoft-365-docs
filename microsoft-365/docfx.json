@@ -16,7 +16,7 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices",
-          "contentunderstanding/**",
+          "syntex/**",
           "knowledge/**"
         ]
       },
@@ -105,7 +105,7 @@
         "business/**/*.md": "Microsoft 365 Business",
         "admin/**/*.md": "Microsoft 365 admin",
         "lighthouse/**/*.md": "Microsoft 365 Lighthouse",
-        "contentunderstanding/**/*.md": "Microsoft Syntex",
+        "syntex/**/*.md": "Microsoft Syntex",
         "frontline/**/*.md": "Microsoft 365 for frontline workers"
       },
       "feedback_product_url": {
@@ -118,7 +118,7 @@
         "business-premium/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "solutions/**.*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "commerce/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "contentunderstanding/**/*.md":"https://aka.ms/syntex/feedback",
+        "syntex/**/*.md":"https://aka.ms/syntex/feedback",
         "enterprise/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "solutions/**.*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "lighthouse/":"https://feedbackportal.microsoft.com/feedback/forum/d6a21c42-fe1b-ec11-b6e7-0022481f8472",
@@ -131,12 +131,12 @@
         "business-video/**/*.md": ["Microsoft 365"],
         "commerce/**/*.md": ["Microsoft 365"],
         "compliance/**/*.md": ["Microsoft 365"],
-        "contentunderstanding/**/*.md":["Microsoft Syntex"],
         "lighthouse/**/*.md": ["Microsoft 365 Lighthouse"],
         "frontline/**/*.md": ["Microsoft 365 for frontline workers"],
         "enterprise/**/*.md": ["Microsoft 365"],
         "security/**/*.md": ["Microsoft 365"],
-        "solutions/**.*.md": ["Microsoft 365"]
+        "solutions/**.*.md": ["Microsoft 365"],
+        "syntex/**.*.md": ["Microsoft Syntex"]
       }
     },
     "template": [],

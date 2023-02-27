@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.date: 02/07/2023
 audience: Admin
 ms.topic: how-to 
 ms.service: microsoft-365-business
@@ -45,7 +46,7 @@ You must be a Global admin to do the task in this article. For more information,
 >
 > Before you decide to turn the pronouns feature on or off, consider the following:
 >
->- When you turn the pronouns feature on or off, it can take up to six hours for users to see changes. For example, if you turn on the pronouns feature, users can't see the option to add pronouns on their profile for up to six hours. If you turn off the pronouns feature, any previously set pronouns might stay visible in Microsoft 365 (for example, on profiles) for up to six hours.
+>- When you turn the pronouns feature on or off, it can take up to seven hours for users to see changes. For example, if you turn on the pronouns feature, users can't see the option to add pronouns on their profile for up to seven hours. If you turn off the pronouns feature, any previously set pronouns might stay visible in Microsoft 365 (for example, on profiles) for up to seven hours.
 >- When you turn the pronouns feature off, all the pronouns data created by users is deleted. The data deletion process could take up to 30 days to complete. If you turn the pronouns feature back on within that period, any hidden pronouns that haven't yet been deleted from Microsoft servers become visible in Microsoft 365 experiences, such as profiles.
 >- After a user adds pronouns to their profile, the pronouns are visible to everyone in your organization. Users can't control who can see their pronouns in Microsoft 365 in your organization. However, pronouns aren't visible to people outside the organization.
 
@@ -66,4 +67,5 @@ Consider notifying your users about the availability of the pronouns feature. We
 
 [Pronouns best practices](https://support.microsoft.com/office/pronouns-best-practices-ef1701ad-711d-4c6e-b664-64c3ee188d68) (article)\
 [Frequently asked questions about pronouns in Microsoft 365](https://support.microsoft.com/office/frequently-asked-questions-about-pronouns-in-microsoft-365-48135f04-e822-49b5-ba6b-e9bae2ce503a) (article)\
-[Profile cards in Microsoft 365](https://support.microsoft.com/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) (article)
+[Profile cards in Microsoft 365](https://support.microsoft.com/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) (article)\
+[Pronouns on your profile in Microsoft 365](https://support.microsoft.com/topic/232c3bfb-a947-4310-86db-b22d63663d85) (article)

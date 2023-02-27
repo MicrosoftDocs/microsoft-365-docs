@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -86,8 +86,7 @@ When the retention period expires, your configured flow runs.
 
 Power Automate is a workflow service that automates actions across applications and services. Specific to running a Power Automate flow at the end of the retention period:
 
-- You must have a Power Automate per user plan that includes premium connectors, separate from your Microsoft 365 compliance plan. For more information, see the [Power Automate per user plan](https://admin.microsoft.com/AdminPortal/Home?ref=/catalog/offer-details/power-automate-per-user-plan/7CF37992-A897-4DB2-82C1-BDA8C1C3EB76) details in the Microsoft 365 admin center, where you can also start a free trial.
-
+- You must have a [Power Automate plan](/power-platform/admin/power-automate-licensing/types) that includes premium connectors, separate from your Microsoft 365 compliance plan. 
 - The Power Automate flow must be an automated cloud flow that is created from blank, and configured to use the trigger **When the retention period expires**.
 
 For more information about how to use and configure the dependent automated cloud flows, see the [Microsoft Power Automate Documentation](/power-automate).
@@ -130,5 +129,4 @@ To help you track the retention labels with this configuration:
 - [Using Content Search to find all content with a specific retention label](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
 - [Auditing retention actions](retention.md#auditing-retention-actions)
 
-To confirm there weren't any failures or errors with your flow, go to the [Power Automate dashboard](https://flow.microsoft.com), select **My flows**, and then select your flow to review the 28-day run history.
-
+To confirm there weren't any failures or errors with your flow, go to the [Power Automate dashboard](https://make.powerautomate.com), select **My flows**, and then select your flow to review the 28-day run history.

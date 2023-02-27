@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 ms.reviewer: nickrob
+ms.date: 01/01/2023
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,7 +19,6 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-
 ---
 
 # Learn about collections in eDiscovery (Premium)
@@ -39,7 +39,7 @@ To get started using collections in eDiscovery (Premium), here's a basic workflo
 
 ![Collections workflow in eDiscovery (Premium).](../media/ediscovery-collection-workflow.png)
 
-1. **Create and run a collection estimate**. The first step is to create a collection estimate and define the custodial and non-custodial data sources to search. You can also search other data sources that haven't been added to the case. After you add the data sources, you configure the search query to search the data sources for content relevant to the case. You can keywords, properties, and conditions to build search queries that return content that's likely most relevant to the case. For more information, see [Create a collection estimate](ediscovery-create-draft-collection.md).
+1. **Create and run a collection estimate**. The first step is to create a collection estimate and define the custodial and non-custodial data sources to search. You can also search other data sources that haven't been added to the case. After you add the data sources, you configure the search query to search the data sources for content relevant to the case. You can use keywords, properties, and conditions to build search queries that return content that's likely most relevant to the case. For more information, see [Create a collection estimate](ediscovery-create-draft-collection.md).
 
 2. **Review estimate and statistics**. After you create a collection estimate and run it, the next step is to view collection statistics to help you verify whether relevant content is being found and the content locations with the most hits. You can also review a sample of the search results to further help you determine if the content is within scope of your investigation. For more information, see [Search statistics for collection estimates](ediscovery-collection-statistics-reports.md#search-statistics-for-collection-estimates).
 
