@@ -20,7 +20,7 @@ ms.collection:
 - tier3
 ms.topic: how-to
 search.appverid: met150
-ms.date: 05/24/2022
+ms.date: 1/31/2023
 ---
 
 # Connect Microsoft Defender for Office 365 to Microsoft Sentinel

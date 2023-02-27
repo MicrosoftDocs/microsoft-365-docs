@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 06/04/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -24,7 +24,7 @@ description: "Use Preservation Lock with retention policies and retention label 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!IMPORTANT]
-> Currently, [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) don't support Preservation Lock.
+> Currently, [adaptive policy scopes](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes) don't support Preservation Lock.
 
 Preservation Lock locks a retention policy or retention label policy so that no one—including a global admin—can turn off the policy, delete the policy, or make it less restrictive. This configuration might be needed for regulatory requirements and can help safeguard against rogue administrators.
 

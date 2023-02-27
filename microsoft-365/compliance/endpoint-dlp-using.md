@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -503,4 +503,3 @@ Get-VpnConnection
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
 - [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
 - [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
-

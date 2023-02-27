@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 02/14/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -16,7 +16,7 @@ ms.collection:
 - purview-compliance
 search.appverid:
 - MET150
-description: "Learn how to protect your sensitive information using Microsoft Purview data loss prevention policies and tools and take a tour through the DLP lifecycle."
+description: "Learn how to protect your sensitive information using Microsoft Purview Data Loss Prevention policies and tools and take a tour through the DLP lifecycle."
 ---
 
 # Learn about data loss prevention
@@ -37,10 +37,10 @@ DLP detects sensitive items by using deep content analysis, not by just a simple
 
 ## Before you begin
 
-If you are new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
+If you're new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
 
 1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
-1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article you are reading now introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
+1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article you're reading now introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
     1. [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
@@ -56,7 +56,7 @@ See the [licensing requirements for Information Protection](/office365/servicede
 
 ## DLP is part of the larger Microsoft Purview offering
 
-DLP is just one of the Microsoft Purview tools that you will use to help protect your sensitive items wherever they live or travel. You should understand the other tools in the Microsoft Purview tools set, how they interrelate, and work better together.  See, [Microsoft Purview tools](protect-information.md) to learn more about the information protection process.
+DLP is just one of the Microsoft Purview tools that you'll use to help protect your sensitive items wherever they live or travel. You should understand the other tools in the Microsoft Purview tools set, how they interrelate, and work better together.  See, [Microsoft Purview tools](protect-information.md) to learn more about the information protection process.
 
 ## Protective actions of DLP policies
 
@@ -66,7 +66,7 @@ DLP policies are how you monitor the activities that users take on sensitive ite
 - block the sharing and, via a policy tip, allow the user to override the block and capture the users' justification
 - block the sharing without the override option
 - for data at rest, sensitive items can be locked and moved to a secure quarantine location
-- for Teams chat, the sensitive information will not be displayed
+- for Teams chat, the sensitive information won't be displayed
 
 All DLP monitored activities are recorded to the [Microsoft 365 Audit log](audit-log-search.md) by default and routed to [Activity explorer](data-classification-activity-explorer.md). When a user performs an action that meets the criteria of a DLP policy, and you have alerts configured, DLP provides alerts in the [DLP alert management dashboard](dlp-configure-view-alerts-policies.md).
 
@@ -81,7 +81,7 @@ A DLP implementation typically follows these major phases.
 
 ### Plan for DLP
 
-DLP monitoring and protection are native to the applications that users use every day. This helps to protect your organizations' sensitive items from risky activities even if your users are unaccustomed to data loss prevention thinking and practices. If your organization and your users are new to data loss prevention practices, the adoption of DLP may require a change to your business processes and there will be a culture shift for your users. But, with proper planning, testing and tuning, your DLP policies will protect your sensitive items while minimizing any potential business process disruptions.
+DLP monitoring and protection are native to the applications that users use every day. This helps to protect your organization's sensitive items from risky activities, even if your users are unaccustomed to data loss prevention thinking and practices. If your organization and your users are new to data loss prevention practices, the adoption of DLP may require a change to your business processes, and there will be a culture shift for your users. But, with proper planning, testing and tuning, your DLP policies will protect your sensitive items while minimizing any potential business process disruptions.
 
 **Technology planning for DLP**
 
@@ -108,7 +108,7 @@ You can apply DLP policies to data at rest, data in use, and data in motion in l
 - Microsoft Defender for Cloud Apps
 - Windows 10, Windows 11, and macOS (three latest released versions) devices
 - On-premises repositories
-- PowerBI sites
+- Power BI sites
 
 Each one has different pre-requisites. Sensitive items in some locations, like Exchange online, can be brought under the DLP umbrella by just configuring a policy that applies to them. Others, such as on-premises file repositories require a deployment of Azure Information Protection (AIP) scanner. You'll need to prepare your environment, code draft policies, and test them thoroughly before activating any blocking actions.
 
@@ -120,7 +120,7 @@ Start by defining your control objectives, and how they apply across each respec
 
 #### Implement policy in test mode
 
-Evaluate the impact of the controls by implementing them with a DLP policy in test mode. Actions defined in a policy are not applied while the policy is in test mode. It's ok to apply the policy to all workloads in test mode, so that you can get the full breadth of results, but you can start with one workload if you need to.
+Evaluate the impact of the controls by implementing them with a DLP policy in test mode. Actions defined in a policy aren't applied while the policy is in test mode. It's ok to apply the policy to all workloads in test mode, so that you can get the full breadth of results, but you can start with one workload if you need to.
 
 #### Monitor outcomes and fine-tune the policy
 
@@ -152,7 +152,7 @@ You have flexibility in how you create and configure your DLP policies. You can 
     - A predefined policy template: Financial data, Medical and health data, Privacy data all for various countries and regions.
     - A custom policy that uses the available sensitive information types, retention labels, and sensitivity labels.
 
-2. **Choose administrative scoping** - DLP supports assigning [Administrative Units](/azure/active-directory/roles/administrative-units) to policies (preview). Administrators who are assigned to an administrative unit can only create and manage polices for the users, groups, distribution groups, and accounts that they are assigned to. Consequently, policies can be applied to all users and groups by an unrestricted administrator, or they can be scoped to administrative units. See, [Policy Scoping](dlp-policy-reference.md#policy-scoping) for more DLP specific details. See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for the details on administrative units across Microsoft Purview information protection.
+2. **Choose administrative scoping** - DLP supports assigning [Administrative Units](/azure/active-directory/roles/administrative-units) to policies (preview). Administrators who are assigned to an administrative unit can only create and manage policies for the users, groups, distribution groups, and accounts that they're assigned to. So, policies can be applied to all users and groups by an unrestricted administrator, or they can be scoped to administrative units. See, [Policy Scoping](dlp-policy-reference.md#policy-scoping) for more DLP specific details. See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for the details on administrative units across Microsoft Purview Information Protection.
 
 3. **Choose where you want to monitor** - You pick one or more locations that you want DLP to monitor for sensitive information. You can monitor:
 
@@ -165,7 +165,7 @@ location | include/exclude by|
 |Windows 10, Windows 11, and macOS (three latest released versions)  devices |user or group |
 |Microsoft Cloud App Security |instance |
 |On-premises repositories| repository file path|
-|PowerBI (preview)| workspaces|
+|Power BI (preview)| workspaces|
 
 4. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept pre-configured conditions or define custom conditions. Some examples are:
 
@@ -175,11 +175,11 @@ location | include/exclude by|
 
 5. **Choose the action to take when the policy conditions are met** - The actions depend on the location where the activity is happening.  Some examples are:
 
-- SharePoint/Exchange/OneDrive: Block people who are outside your organization form accessing the content. Show the user a tip and send them an email notification that they are taking an action that is prohibited by the DLP policy.
+- SharePoint/Exchange/OneDrive: Block people who are outside your organization form accessing the content. Show the user a tip and send them an email notification that they're taking an action that is prohibited by the DLP policy.
 - Teams Chat and Channel: Block sensitive information from being shared in the chat or channel
 - Windows 10, Windows 11, and macOS (three latest released versions)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
-- Office Apps: Show a popup notifying the user that they are engaging in a risky behavior and block or block but allow override.
-- On-premises file shares: move the file from where it is stored to a quarantine folder
+- Office Apps: Show a popup notifying the user that they're engaging in a risky behavior and block or block but allow override.
+- On-premises file shares: move the file from where it's stored to a quarantine folder
 
 > [!NOTE]
 > The conditions and the actions to take are defined in an object called a Rule.
@@ -188,7 +188,7 @@ location | include/exclude by|
 
 All DLP policies are created and maintained in the Microsoft Purview center. See, INSERT LINK TO ARTICLE THAT WILL START WALKING THEM THROUGH THE POLICY CREATION PROCEDURES for more information.-->
 
-After you create a DLP policy in the Compliance Center, it's stored in a central policy store, and then synced to the various content sources, including:
+After you create a DLP policy in the compliance portal, it's stored in a central policy store, and then synced to the various content sources, including:
 
 - Exchange Online, and from there to Outlook on the web and Outlook.
 - OneDrive for Business sites.
@@ -204,7 +204,7 @@ DLP reports a vast amount of information into Microsoft Purview from monitoring,
 
 ### DLP Alerts Dashboard
 
-When DLP takes an action on a sensitive item, you can be notified of that action via a configurable alert. Rather than having these alerts pile up in a mailbox for you to sift through, the Compliance center makes them available in the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). Use the DLP Alerts dashboard to configure alerts, review them, triage them and track resolution of DLP Alerts. Here's an example of alerts generated by policy matches and activities from Windows 10 devices.
+When DLP takes an action on a sensitive item, you can be notified of that action via a configurable alert. Rather than having these alerts pile up in a mailbox for you to sift through, the compliance portal makes them available in the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). Use the DLP Alerts dashboard to configure alerts, review them, triage them and track resolution of DLP Alerts. Here's an example of alerts generated by policy matches and activities from Windows 10 devices.
 
 > [!div class="mx-imgBorder"]
 > ![Alert info.](../media/Alert-info-1.png)
@@ -248,5 +248,3 @@ To learn more about Microsoft Purview DLP, see:
 - [Learn about the data loss prevention Alerts dashboard](dlp-alerts-dashboard-learn.md)
 
 To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft Purview](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
-
-
