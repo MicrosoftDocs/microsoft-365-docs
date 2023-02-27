@@ -66,7 +66,7 @@ Discovery data is available in a local report in csv format which is stored unde
 
 ### Scenario: Enforce DLP rule
 
-If you want to enforce DLP rules on the scanned files, enforcement must be enabled on both the content scan job in AIP and at the policy level in DLP.
+If you want to enforce DLP rules on scanned files, enforcement must be enabled on both the content scan job and at the policy level in DLP.
 
 #### Configure DLP to enforce policy actions
 

@@ -63,7 +63,7 @@ There are a few extra concepts that you need to be aware of before you dig into 
 
 ### AIP repositories and content scan jobs
 
-You must create an AIP content scan job and identify the repositories that host the files that you want to be evaluated by DLP. Make sure you enable DLP rules in the created AIP content scan job.
+You must create a content scan job in the information protection scanner and identify the repositories that host the files that you want to be evaluated by DLP. Make sure you enable DLP rules in the created AIP content scan job.
 
 ### Policy tips
 
