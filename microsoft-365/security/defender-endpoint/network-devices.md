@@ -160,7 +160,7 @@ It's possible to disable automatic updates of the scanner by going to the **MDAT
 
         |Authentication Method|Azure KeyVault secret name|
         |:----|:----:|
-        |AuthPriv| Username; AuthPassword; PrivPassword|
+        |AuthPriv|Username; AuthPassword; PrivPassword|
         |AuthNoPriv|Username; AuthPassword|
         |CommunityString |CommunityString|
 
