@@ -9,7 +9,6 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 01/31/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
