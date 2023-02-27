@@ -83,26 +83,28 @@ North School District defines three IB policies, as described in the following t
 
 With segments and policies defined, the North School District applies the policies by running the **Start-InformationBarrierPoliciesApplication** cmdlet. When the cmdlet finishes, the North School District has implemented their communication policy for students and teachers.
 
-## Enable multiple segment support for users
+## Check the IB mode for your organization
 
-1. If you want to support assigning users to multiple segments, you'll need to verify that your IB organization supports multiple segments. Run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps):
+If you want to support assigning users to multiple segments, you'll need to verify that your IB organization supports multiple segments. Run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps):
 
     ```powershell
     Get-PolicyConfig
     ```
 
-    If the value of the `InformationBarrierMode` property is *SingleSegment*, you can enable multi-segment support in Step 2. If the value of the `InformationBarrierMode` property is *MultiSegment*, you can skip Step 2 in this section. Multi-segment support is already enabled for your organization.
+If the value of the `InformationBarrierMode` property is *SingleSegment*, you can enable multi-segment support in Step 2. If the value of the `InformationBarrierMode` property is *MultiSegment*, you can skip Step 2 in this section. Multi-segment support is already enabled for your organization.
 
-    If the value of the `InformationBarrierMode` property is *Legacy*, enabling multi-segment isn't supported for your organization. *Legacy* organizations will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers)
+If the value of the `InformationBarrierMode` property is *Legacy*, enabling multi-segment isn't supported for your organization. *Legacy* organizations will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers)
 
-2. To enable multi-segment support for your organization, run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+## Enable multiple segment support for users
+
+To enable multi-segment support for your organization, run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
 
     ```powershell
     Enable-ExoInformationBarrierMultiSegment
     ```
 
-    > [!IMPORTANT]
-    > If you enable multiple segments in your organization, you cannot revert to single segment support.
+> [!IMPORTANT]
+> If you enable multiple segments in your organization, you cannot revert to single segment support.
 
 ## Multi-segment support for users in OneDrive
 
