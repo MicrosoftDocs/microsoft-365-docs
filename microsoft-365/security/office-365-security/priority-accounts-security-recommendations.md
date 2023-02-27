@@ -22,7 +22,7 @@ ms.custom:
 description: Admins can learn how to elevate the security settings and use reports, alerts, and investigations for priority accounts in their Microsoft 365 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/08/2022
+ms.date: 2/28/2023
 ---
 
 # Security recommendations for priority accounts in Microsoft 365
@@ -34,6 +34,8 @@ ms.date: 12/08/2022
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Not all user accounts have access to the same company information. Some accounts have access to sensitive information, such as financial data, product development information, partner access to critical build systems, and more. If compromised, accounts that have access to highly confidential information pose a serious threat. We call these types of accounts _priority accounts_. Priority accounts include (but aren't limited to) CEOs, CISOs, CFOs, infrastructure admin accounts, build system accounts, and more.
+
+Microsoft Defender for Office 365 supports priority accounts as tags that can be used in filters in alerts, reports, and investigations. For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 
 For attackers, ordinary phishing attacks that cast a random net for ordinary or unknown users are inefficient. On the other hand, _spear phishing_ or _whaling_ attacks that target priority accounts are very rewarding for attackers. So, priority accounts require stronger than ordinary protection to help prevent account compromise.
 
@@ -123,4 +125,7 @@ In addition, Microsoft recommends that users take the actions described in this 
 
 ## See also
 
-[Announcing Priority Account Protection in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)
+- [User tags in Microsoft Defender for Office 365](user-tags-about.md)
+- [Configure and review priority accounts](protection-stack-microsoft-defender-for-office365.md)
+- [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)
+- [Announcing Priority Account Protection in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)
