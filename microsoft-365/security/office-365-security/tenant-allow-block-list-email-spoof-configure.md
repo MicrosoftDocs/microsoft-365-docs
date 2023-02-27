@@ -73,14 +73,14 @@ You manage allow and block entries for email in the Microsoft 365 Defender Porta
 
 You have the following options to create block entries for domains and email addresses:
 
-- [The Submissions page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-domains-and-email-addresses-in-the-submissions-portal)
+- [The Submissions page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-domains-and-email-addresses-on-the-submissions-page)
 - The Tenant Allow/Block List in [the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list) or in [PowerShell](#use-powershell-to-create-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list)
 
 To create block entries for spoofed senders, see the [Use the Microsoft 365 Defender portal to view existing allow or block entries for domains and email addresses in the Tenant Allow/Block List](#use-the-microsoft-365-defender-portal-to-view-existing-allow-or-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list) section later in this article.
 
-#### Use the Microsoft 365 Defender portal to create block entries for domains and email addresses in the Submissions portal
+#### Use the Microsoft 365 Defender portal to create block entries for domains and email addresses on the Submissions page
 
-When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report email messages as **Should have been blocked (False negative)**, you can select **Block all emails from this recipient** to add a block entry for the sender on the **Domains & addresses** tab in the Tenant Allow/Block List.
+When you use the Submissions page at <https://security.microsoft.com/reportsubmission> to report email messages as **Should have been blocked (False negative)**, you can select **Block all emails from this recipient** to add a block entry for the sender on the **Domains & addresses** tab in the Tenant Allow/Block List.
 
 For instructions, see [Report questionable email to Microsoft](submissions-admin.md#report-questionable-email-to-microsoft).
 
@@ -130,9 +130,9 @@ New-TenantAllowBlockListItems -ListType Sender -Block -Entries "test@badattacker
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal
+### Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses on the Submissions page
 
-You can't create allow entries for domains and email addresses directly in the Tenant Allow/Block List. Instead, you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report the message as a false positive, which also adds an allow entry for the sender on the **Domains & addresses** tab in the Tenant Allow/Block List.
+You can't create allow entries for domains and email addresses directly in the Tenant Allow/Block List. Instead, you use the Submissions page at <https://security.microsoft.com/reportsubmission> to report the message as a false positive, which also adds an allow entry for the sender on the **Domains & addresses** tab in the Tenant Allow/Block List.
 
 By default, allow entries for domains and email addresses, files, and URLs exist for 30 days, while allow entries for spoofed senders never expire. Within those 30 days, Microsoft will learn from the allow entries or automatically extend the allow entries for you. Once Microsoft learns, email containing these entities will be delivered to the inbox provided something else in the email is not malicious. Moreover these entities by default will open at time of click.
 
@@ -275,7 +275,7 @@ For detailed syntax and parameter information, see [Remove-TenantAllowBlockListI
 
 You have the following options to create block entries for spoofed senders:
 
-- [The Submissions page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal)
+- [The Submissions page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-on-the-submissions-page)
 - The Tenant Allow/Block List in [the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list) or in [PowerShell](#use-powershell-to-create-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
 
 > [!NOTE]
@@ -287,7 +287,7 @@ You have the following options to create block entries for spoofed senders:
 >
 > Allow entries for spoofed senders never expire.
 
-#### Use the Microsoft 365 Defender portal to create allow entries for spoofed senders in the Submissions portal
+#### Use the Microsoft 365 Defender portal to create allow entries for spoofed senders on the Submissions page
 
 Submitting messages that were blocked by [spoof intelligence](anti-spoofing-spoof-intelligence.md) to Microsoft in the **Submissions** portal at <https://security.microsoft.com/reportsubmission> adds the sender as an allow entry for the sender on the **Spoofed senders** tab in Tenant Allow/Block List.
 
@@ -347,7 +347,7 @@ You create block entries for spoofed senders directly in the Tenant Allow/Block 
 >
 > Block entries for spoofed senders never expire.
 
-The instructions to report the message are nearly identical to the steps in [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
+The instructions to report the message are nearly identical to the steps in [Use the Microsoft 365 Defender page to create allow entries for domains and email addresses on the Submissions page](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-on-the-submissions-page).
 
 The only difference is: for the **Action** value in Step 4, choose **Block** instead of **Allow**.
 
@@ -514,11 +514,11 @@ Only messages from that domain *and* sending infrastructure pair are allowed to 
 
 In organizations with Microsoft Defender for Office 365, you can't create allow entries in the Tenant/Allow/Block List for messages that were detected as impersonation by [domain or sender impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-Reporting a message that was incorrectly blocked as impersonation in the Submissions portal at <https://security.microsoft.com/reportsubmission> does not add the sender or domain as an allow entry in the Tenant Allow/Block List.
+Reporting a message that was incorrectly blocked as impersonation on the Submissions page at <https://security.microsoft.com/reportsubmission> does not add the sender or domain as an allow entry in the Tenant Allow/Block List.
 
 Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
 
-The instructions to report the message are identical to the steps in [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
+The instructions to report the message are identical to the steps in [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions page](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-on-the-submissions-page).
 
 > [!NOTE]
 > 
@@ -526,7 +526,7 @@ The instructions to report the message are identical to the steps in [Use the Mi
 
 ## Related articles
 
-- [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](submissions-admin.md)
+- [Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](submissions-admin.md)
 - [Report false positives and false negatives](submissions-outlook-report-messages.md)
 - [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md)
 - [Allow or block files in the Tenant Allow/Block List](tenant-allow-block-list-files-configure.md)
