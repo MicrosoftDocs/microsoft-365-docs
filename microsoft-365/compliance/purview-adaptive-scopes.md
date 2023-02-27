@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date:
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -41,8 +41,6 @@ For specific advantages of using adaptive scopes specific to policies for retent
 
 For configuration information, see [Configuring adaptive scopes](#configure-adaptive-scopes).
 
-To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
-
 ### Maximums for adaptive policy scopes
 
 There's no limit to the number of adaptive policy scopes that you can add to a policy, but there are some maximum limits for the query that defines each adaptive scope:
@@ -74,11 +72,6 @@ The attribute names for users and groups are based on [(https://learn.microsoft.
 - **Email addresses** maps to the LDAP name **proxyAddresses** that displays as **Proxy address** in the Azure AD admin center.
 
 The attributes and properties listed in the table can be easily specified when you configure an adaptive scope by using the simple query builder. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
-
-> [!TIP]
-> For more information about using the advanced query builder, see the following webinars: 
-> - [Building Advanced Queries for Users and Groups with Adaptive Policy Scopes](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
-> - [Building Advanced Queries for SharePoint Sites with Adaptive Policy Scopes](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
 
 To configure an adaptive scope:
 
