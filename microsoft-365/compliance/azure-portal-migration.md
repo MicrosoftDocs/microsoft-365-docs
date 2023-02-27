@@ -50,7 +50,7 @@ Use the following table to help you identify which functionality is deprecated, 
 |Configure analytics | The analytics feature is deprecated.|
 |Languages | [Configure a sensitivity label for different languages using PowerShell](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) 
 |Protection activation | [Activate protection using Enable-AipService PowerShell cmdlet](/powershell/module/aipservice/enable-aipservice)|
-|Unified labeling | Currently, the ability to migrate the older labels used by the AIP classic client (deprecated) remains available.|
+|Unified labeling | Currently, the ability to migrate the older labels used by the AIP classic client (deprecated) remains available only to select customers by agreement, so they can finish their migration to unified labeling.|
 
 ## Next steps
 
