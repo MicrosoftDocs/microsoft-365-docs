@@ -1,7 +1,7 @@
 ---
-title: Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management
-author: samanro
-ms.author: samanro
+title: Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management (Preview)
+author: daisyfell
+ms.author: daisyfeller
 ms.reviewer: imarquesgil
 manager: pamgreen
 ms.topic: how-to
@@ -17,16 +17,16 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 2/22/2023
+ms.date: 2/27/2023
 ---
 
-# Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management
+# Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management (Preview)
 
 ## Overview
 
-The [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) enables you to integrate the Shifts app in Microsoft Teams with Blue Yonder Workforce Management (Blue Yonder WFM). Your frontline workers can seamlessly view and manage their schedules in Blue Yonder WFM from within Shifts.
+The [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) (Preview) enables you to integrate the Shifts app in Microsoft Teams with Blue Yonder Workforce Management (Blue Yonder WFM). Your frontline workers can seamlessly view and manage their schedules in Blue Yonder WFM from within Shifts.
 
-You can use the [Shifts connector wizard](shifts-connector-wizard.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center. The Connector Management Console page lists each connection and connection instance that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create a new connection and connection instances or make changes to any of your existing ones. For example, you can update sync settings and team mappings.
+You can use the [Shifts connector wizard](shifts-connector-wizard.md) (Preview) in the Microsoft 365 admin center or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center. The Connector Management Console page lists each connection and connection instance that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create a new connection and connection instances or make changes to any of your existing ones. For example, you can update sync settings and team mappings.
 
 > [!NOTE]
 > You can also use PowerShell to manage a connection. For example, you can view an error report, change connection settings, and disable sync. To learn more, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).

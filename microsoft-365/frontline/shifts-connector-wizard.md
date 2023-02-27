@@ -1,7 +1,7 @@
 ---
-title: Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management
-author: samanro
-ms.author: samanro
+title: Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management (Preview)
+author: daisyfell
+ms.author: daisyfeller
 ms.reviewer: imarquesgil
 manager: pamgreen
 ms.topic: how-to
@@ -18,10 +18,10 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 2/22/2023
+ms.date: 2/27/2023
 ---
 
-# Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management
+# Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management (Preview)
 
 ## Overview
 
