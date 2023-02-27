@@ -53,7 +53,7 @@ Managing permissions in Defender for Office 365 or Purview compliance gives user
 
 |Role group|Description|Default roles assigned|
 |---|---|---|
-|**Attack Simulation Administrators**|Don't use this role group in these portals. Use the corresponding role in Azure AD.|Attack Simulator Admin|
+|**Attack Simulator Administrators**|Don't use this role group in these portals. Use the corresponding role in Azure AD.|Attack Simulator Admin|
 |**Attack Simulator Payload Authors**|Don't use this role group in these portals. Use the corresponding role in Azure AD.|Attack Simulator Payload Author|
 |**Communication Compliance**|Provides permission to all the communication compliance roles: administrator, analyst, investigator, and viewer.|Case Management <br/><br/> Communication Compliance Admin <br/><br/> Communication Compliance Analysis <br/><br/> Communication Compliance Case Management <br/><br/> Communication Compliance Investigation <br/><br/> Communication Compliance Viewer <br/><br/> Data Classification Feedback Provider <br/><br/> Data Connector Admin <br/><br/> Scope Manager <br/><br/> View-Only Case|
 |**Communication Compliance Administrators**|Administrators of communication compliance that can create/edit policies and define global settings.|Communication Compliance Admin <br/><br/> Communication Compliance Case Management <br/><br/> Data Connector Admin <br/><br/> Scope Manager|
