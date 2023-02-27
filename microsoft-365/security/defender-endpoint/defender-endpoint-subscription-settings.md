@@ -114,7 +114,7 @@ For example, suppose that you want to use a tag called `VIP` for all the devices
 
 ## Validate that a device is receiving only Defender for Endpoint Plan 1 capabilities
 
-After you have assigned Defender for Endpoint Plan 1 capabilities to some or all devices, you can verify that an individual devices is receiving those capabilities.
+After you have assigned Defender for Endpoint Plan 1 capabilities to some or all devices, you can verify that an individual device is receiving those capabilities.
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Assets** > **Devices**.
 
