@@ -33,7 +33,7 @@ One of the biggest challenges in Microsoft Purview Communication Compliance is m
 
 ## Understand keyword list volumes
 
-Many customers use custom keyword lists for compliance scenarios. Understanding the volume of policy matches for each keyword can help you tune your policies. Use the [Sensitive information type per location report](communication-compliance-reports-audits.md#detailed-reports) to analyze keyword lists to see which keywords trigger the majority of matches. You can then investigate further to see if those keywords have high false-positive rates. You can also use the [Message details reports](communication-compliance-reports-audits.md#message-details-report) to get data on keyword matches for a specific policy.
+Many customers use custom keyword lists for compliance scenarios. Understanding the volume of policy matches for each keyword can help you tune your policies. Use the [Sensitive information type per location report](communication-compliance-reports-audits.md#detailed-reports) to analyze keyword lists to see which keywords trigger most matches. You can then investigate further to see if those keywords have high false-positive rates. You can also use the [Message details reports](communication-compliance-reports-audits.md#message-details-report) to get data on keyword matches for a specific policy.
 
 ## Combine trainable classifiers
 
@@ -53,7 +53,7 @@ Sensitive information types can be triggered from footers in emails, such as dis
 
 ## Understand trainable classifiers volume level
 
-When you first start using trainable classifiers, you might not get enough matches or you might get too many matches. The following table shows the volume level to expect for different types of trainable classifiers.
+When you first start using trainable classifiers, you might not get enough matches, or you might get too many matches. The following table shows the volume level to expect for different types of trainable classifiers.
 
 |Trainable classifier|Volume|
 |----------------------------------|------------------|
@@ -75,7 +75,7 @@ Consider using the Adult images classifier instead of the Racy images classifier
 
 ## Use sentiment evaluation
 
-Messages in alerts include [sentiment evaluation](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details) to help you quickly prioritize potentially riskier messages to address first. Using sentiment evaluation will not reduce your detection volumes but will make it easier to prioritize detections. Messages are flagged as Positive, Negative, or Neutral sentiment. For some organizations, messages with Positive sentiment may be determined to be a lower priority, allowing you to spend more time on other message alerts.  
+Messages in alerts include [sentiment evaluation](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details) to help you quickly prioritize potentially riskier messages to address first. Using sentiment evaluation won't reduce your detection volumes but will make it easier to prioritize detections. Messages are flagged as Positive, Negative, or Neutral sentiment. For some organizations, messages with Positive sentiment may be determined to be a lower priority, allowing you to spend more time on other message alerts.  
 
 ## Report messages as misclassified
 
