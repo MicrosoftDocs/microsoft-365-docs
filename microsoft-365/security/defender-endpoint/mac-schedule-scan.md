@@ -9,6 +9,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 01/31/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -146,6 +147,6 @@ The following code shows the schema you need to use to schedule a quick scan.
 
 ## Schedule a scan with Intune
 
-You can also schedule scans with Microsoft Intune. The [runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/macOS/Config/MDATP) shell script available at [Scripts for Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) will persist when the device resumes from sleep mode. 
+You can also schedule scans with Microsoft Intune. The runMDATPQuickScan.sh shell script available at [Scripts for Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/macOS/Config/MDATP) will persist when the device resumes from sleep mode. 
 
 See [Use shell scripts on macOS devices in Intune](/mem/intune/apps/macos-shell-scripts) for more detailed instructions on how to use this script in your enterprise.
