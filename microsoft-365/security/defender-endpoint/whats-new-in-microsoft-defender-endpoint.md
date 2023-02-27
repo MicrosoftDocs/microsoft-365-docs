@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 02/14/2023
+ms.date: 02/27/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -61,7 +61,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
-## February 2023
+## February/March 2023
 
 - [Mixed-licensing scenarios](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) are now in preview, enabling you to [Manage Microsoft Defender for Endpoint subscription settings across devices](defender-endpoint-subscription-settings.md).
 
