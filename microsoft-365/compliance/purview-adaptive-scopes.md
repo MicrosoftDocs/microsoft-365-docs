@@ -41,8 +41,6 @@ For specific advantages of using adaptive scopes specific to policies for retent
 
 For configuration information, see [Configuring adaptive scopes](#configure-adaptive-scopes).
 
-To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
-
 ### Maximums for adaptive policy scopes
 
 There's no limit to the number of adaptive policy scopes that you can add to a policy, but there are some maximum limits for the query that defines each adaptive scope:
