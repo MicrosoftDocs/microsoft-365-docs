@@ -73,13 +73,28 @@ Centralized Deployment doesn't support the following:
 
     *MSI versions of Outlook show admin-installed add-ins in the appropriate Outlook ribbon, not the "My add-ins" section.
 
-### Exchange Online requirements
+### Exchange Online Requirements
 
 Microsoft Exchange stores the add-in manifests within your organization's tenant. The admin deploying add-ins and the users receiving those add-ins must be on a version of Exchange Online that supports OAuth authentication.
 
 Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet.
 
-### Admin requirements
+### Exchange Online User Role Requirements
+
+Use the classic Exchange Admin Center (EAC) to assign permissions to users. The permissions required to view and modify deployed add-ins are below.
+
+1.	Log in to the classic EAC as a global administrator.
+2.	Go to **Permissions**, and then select **User Roles**.
+3.	Select an existing role assignment policy or create a new one.
+4.	Type a name for the policy if you are creating a new one.
+5.	Select the following roles: **My Custom Apps**, **My MarketPlace Apps**, and **My ReadWriteMailbox Apps**.
+6.	Click Save.
+
+*Note: These roles are selected by default.* 
+
+For detailed information about how to do this, see [Manage role groups in Exchange Online](https://learn.microsoft.com/en-us/exchange/permissions-exo/role-groups). For detailed description of the different roles, see [Role assignment policies in Exchange Online](https://learn.microsoft.com/en-us/exchange/permissions-exo/role-assignment-policies).
+
+### Admin Requirements
 
 In order to deploy an add-in via Centralized Deployment, you need to be either a Global admin or an Exchange admin in the organization.
 
