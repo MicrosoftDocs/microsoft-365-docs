@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 02/27/2023
 ---
 
 # Create and manage device tags
@@ -104,3 +104,13 @@ Use the following registry key entry to add a tag on a device:
 > The device tag is part of the device information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new device information report.
 >
 > If you need to remove a tag that was added using the above Registry key, clear the contents of the Registry key data instead of removing the 'Group' key.
+
+## Add device tags by creating a custom profile in Microsoft Intune
+
+You can use Microsoft Intune to define and apply device tags. You can perform this task by creating a device configuration profile using custom settings in Intune. For more information, see [Create a profile with custom settings in Intune](/mem/intune/configuration/custom-settings-configure).
+
+- In the [Create the profile](/mem/intune/configuration/custom-settings-configure) procedure, for step 3, choose either [macOS](/mem/intune/configuration/custom-settings-macos) or [Windows 10 and later](/mem/intune/configuration/custom-settings-windows-10), depending on the devices you want to tag.
+
+- **For Windows 10 or later**, in the [OMA-IRU settings](/mem/intune/configuration/custom-settings-windows-10) section, for **Data type**, choose **String**. For **Value**, type (or paste) `./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/DeviceTagging/Group`.
+
+- **For macOS**, follow the guidance in [Use custom settings for macOS devices in Microsoft Intune](/mem/intune/configuration/custom-settings-macos).
