@@ -61,7 +61,7 @@ ms.date: 03/22/2021
 
 - Access to the Microsoft 365 Defender portal.
 
-- Access to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to:
+- Access to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to:
    - Deploy the app to enrolled user groups in your organization.
    - Configure Microsoft Defender for Endpoint risk signals in app protection policy (MAM)
 
@@ -84,9 +84,9 @@ ms.date: 03/22/2021
 
 ## Installation instructions
 
-Deployment of Microsoft Defender for Endpoint on iOS can be done via Microsoft Endpoint Manager (MEM) and both supervised and unsupervised devices are supported. End-users can also directly install the app from the [Apple app store](https://aka.ms/mdatpiosappstore).
+Deployment of Microsoft Defender for Endpoint on iOS can be done via Microsoft Intune and both supervised and unsupervised devices are supported. End-users can also directly install the app from the [Apple app store](https://aka.ms/mdatpiosappstore).
 
-- For information on deploying on enrolled devices through Microsoft Endpoint Manager or Intune, see [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).
+- For information on deploying on enrolled devices through Microsoft Configuration Manager or Intune, see [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).
 - For information on using Defender for Endpoint in app protection policy (MAM), see [Configure app protection policy to include Defender for Endpoint risk signals (MAM)](ios-install-unmanaged.md)
 
 ## Resources
