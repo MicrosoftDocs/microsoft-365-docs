@@ -25,8 +25,6 @@ ms.date: 09/19/2022
 search.appverid: met150
 ---
 
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
-
 # Enable attack surface reduction (ASR) rules
 
 Implementing attack surface reduction (ASR) rules moves the first test ring into an enabled, functional state.

@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Configure Conditional Access in Microsoft Defender for Endpoint
@@ -112,8 +113,7 @@ Take the following steps to enable Conditional Access:
 6. Select **Enable policy**, and then **Create** to save your changes.
 
 > [!NOTE]
-> You can use the Microsoft Defender for Endpoint app along with the Approved Client app policy in Intune to set Device Compliance and  Conditional Access policies. There's no exclusion required for the Microsoft Defender for Endpoint app while setting up Conditional Access. Although Microsoft Defender for Endpoint on Android & iOS  (App ID - dd47d17a-3194-4d86-bfd5-c6ae6f5651e3) isn't an approved app, it has permission to report device security posture. This permission enables the flow for compliance information to Conditional Access.
-> Please note that this change will be available starting September 30, 2022.
+> You can use the Microsoft Defender for Endpoint app along with the Approved Client app and Compliant Device (Require device to be marked as compliant) controls in Azure AD Conditional Access policies. There's no exclusion required for the Microsoft Defender for Endpoint app while setting up Conditional Access. Although Microsoft Defender for Endpoint on Android & iOS (App ID - dd47d17a-3194-4d86-bfd5-c6ae6f5651e3) isn't an approved app, it is able to report device security posture in both these grant permissions. This permission enables the flow for compliance information to Conditional Access.
 
 For more information, see [Enforce compliance for Microsoft Defender for Endpoint with Conditional Access in Intune](/intune/advanced-threat-protection).
 

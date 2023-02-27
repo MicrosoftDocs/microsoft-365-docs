@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: Kwekua
 author: Kwekua
 manager: scotv
+ms.date: 03/26/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -37,6 +38,10 @@ We use NPS surveys and feedback from your end-users to provide you with insights
 - See end-user comments on the top products and issues.
 - Export feedback and survey information to a CSV file.
 
+## Watch: NPS feedback and insights
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWSNo]
+
 ## Before you begin
 
 You need to be an [administrator](../add-users/about-admin-roles.md) to view and read survey reports. Your organization needs to have feedback surveys turned on to view and read survey reports. Check out [Manage Microsoft feedback for your organization](manage-feedback-ms-org.md) to learn more.
@@ -53,7 +58,7 @@ You need to be an [administrator](../add-users/about-admin-roles.md) to view and
 
 ### Top topic filters
 
-We've identified the common themes from user feedback. Then we used machine learning models that train the data sets and automatically organize the feedback into **Top Topics**. You can then identify the top five topics with the most volume of verbatim feedback.  
+We've identified the common themes from user feedback. Then we used machine learning models that train the data sets and automatically organize the feedback into **Top Topics**. You can then identify the top five topics with the most volume of verbatim feedback.
 
 :::image type="content" source="../../media/top-topics-filter.png" alt-text="Screenshot: Top five topics with the most verbatim feedback" lightbox="../../media/top-topics-filter.png":::
 

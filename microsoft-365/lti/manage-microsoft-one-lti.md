@@ -4,12 +4,15 @@ ms.author: danismith
 author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman 
+ms.date: 04/04/2022
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-business
 f1.keywords:
 - CSH
-ms.collection: M365-modern-desktop
+ms.collection: 
+- M365-modern-desktop
+- tier2
 ms.localizationpriority: medium
 description: Learn how to conduct key Microsoft LMS Gateway management tasks including viewing, deleting, editing, and troubleshooting.
 ---
@@ -52,12 +55,14 @@ If you would like to delete an LTI registration, follow the steps below.
 
 ## Edit an LTI registration
 
-Currently, we don't support editing an existing LTI registration after it's added.
+If you would like to edit an LTI registration, follow the steps below.
 
-To change an LTI registration, you'll need to:
-
-1. [Delete the existing registration](#delete-an-lti-registration).
-2. Add a new registration.
+1. Visit the [Microsoft LMS Gateway](https://lti.microsoft.com/).
+2. Sign in with a Microsoft 365 administrator account.
+3. In the registration list, find the LTI registration you wish to edit.
+4. Select the **edit pencil icon** next to the listing.
+5. Edit the registration details.
+6. Select the **Save and exit** button.
 
 ## Troubleshoot issues with Microsoft LMS Gateway
 

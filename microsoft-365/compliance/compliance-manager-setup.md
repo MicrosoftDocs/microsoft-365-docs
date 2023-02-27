@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 01/25/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -19,7 +20,7 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "Set Microsoft Purview Compliance Manager user permissions and roles, and configure automated testing of actions. Manage user history and filter your dashboard view."
+description: "Set up user permissions and roles, and set up automated testing, for Microsoft Purview Compliance Manager."
 ---
 
 # Get started with Compliance Manager
@@ -45,16 +46,18 @@ The direct link to access Compliance Manager is [https://compliance.microsoft.co
 
 ## Set user permissions and assign roles
 
-Compliance Manager uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Manager, and the actions allowed by each user are restricted by [role type](#role-types).
+Compliance Manager uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Manager, and the actions allowed by each user are restricted by [role type](#role-types). Our RBAC model also allows you to grant user access to individual assessments. See [role-based access to assessments](#role-based-access-to-assessments) below to learn more.
 
-### Where to set permissions
 
-The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in the Microsoft Purview compliance portal as well as in Azure Active Directory (Azure AD).
+The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in either of the following places:
+
+- The Microsoft Purview compliance portal ([instructions](#setting-permissions-in-the-microsoft-purview-compliance-portal))
+- Azure Active Directory (Azure AD) ([instructions](#setting-permissions-in-azure-ad))
 
 > [!NOTE]
 > Customers in US Government Community (GCC) High and Department of Defense (DoD) environments can only set user permissions and roles for Compliance Manager in Azure AD. See below for Azure AD instructions and role type definitions.
 
-To set permissions and assign roles in the Microsoft Purview compliance portal, follow the steps below:
+#### Setting permissions in the Microsoft Purview compliance portal
 
 1. Go to the Microsoft Purview compliance portal, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
 
@@ -72,9 +75,9 @@ To set permissions and assign roles in the Microsoft Purview compliance portal, 
 
 8. When you’re done assigning users, select **Done**, then select **Save**, then **Close**.
 
-#### More about Azure AD
+#### Setting permissions in Azure AD
 
-To assign roles and set permissions in Azure AD, see [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+To set permissions and assign roles in Azure AD, see [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 Users with Azure AD identities who don't have Office 365 or Microsoft 365 subscriptions won't be able to access Compliance Manager in the Microsoft Purview compliance portal. To seek assistance in accessing Compliance Manager, contact [cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
 
@@ -82,12 +85,26 @@ Users with Azure AD identities who don't have Office 365 or Microsoft 365 subscr
 
 The table below shows the functions allowed by each role in Compliance Manager. The table also shows how each [Azure AD role](/azure/active-directory/roles/permissions-reference) maps to Compliance Manager roles. Users will need at least the Compliance Manager reader role, or Azure AD global reader role, to access Compliance Manager.
 
+A user can only hold one role at a time. Any change in a user's role will override their previous role.
+
 | User can: | Compliance Manager role | Azure AD role | 
 | :------------- | :-------------: | :------------: |
 | **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader |
-| **Edit data**| Compliance Manager Contribution | Compliance Administrator |
-| **Edit test results**| Compliance Manager Assessor | Compliance Administrator |
+| **Edit data - for example, can create an assessment and edit improvement action data**| Compliance Manager Contribution | Compliance Administrator |
+| **Edit improvement action testing notes**| Compliance Manager Assessor | Compliance Administrator |
 | **Manage assessments, templates, and tenant data; assign improvement actions**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
+
+### Role-based access to assessments
+
+You can assign roles to users in order to grant access to specific assessments. Granting access to individual assessments is useful when you need to ensure that only the people working on certain regulatory requirements have access to that data. You can grant access to individual assessments to users outside of your organization, which helps when you have external auditors. For users outside your organization, you'll need to assign them an Azure AD role. For instructions, see [More about Azure AD](#setting-permissions-in-azure-ad).
+
+The four roles listed in table above provide access to assessments: Compliance Manager Reader, Compliance Manager Contribution, Compliance Manager Assessor, and Compliance Manager Administration. What you can do with each assessment remains restricted based on which activities the role allows.
+
+To grant users access to an assessment, open the assessment's details page and select **Manage users access** to add users by role. If a user has a role assigned to them in the Microsoft Purview compliance portal for overall access to Compliance Manager, any role you assign them for a specific assessment will apply only to that assessment.
+
+**More information**:
+- See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed information and instructions.
+- Learn more about [managing all users' access to assessments](#user-access) in Compliance Manager settings.
 
 ## Start a premium assessments trial
 
@@ -110,32 +127,54 @@ You can start your trial directly from Compliance Manager and set up recommended
 
 Learn more about getting started with assessments by visiting the [Assessments page](#assessments-page) section below.
 
-## Settings for automated testing and user history
+## Compliance Manager settings
 
-The Compliance Manager settings in the Microsoft Purview compliance portal allow you to enable and disable automatic testing of improvement actions. The settings also allow you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different user.  Only people with a global administrator or Compliance Manager Administrator role can access the Compliance Manager settings.
+You can find settings for specific Compliance Manager functions by selecting **Compliance Manager settings** in the upper-right of the screen. The types of settings include:
+
+- [Testing source](#testing-source-for-automated-testing): allows you to turn off or on the automatic testing of improvement actions
+- [Manage user history](#manage-user-history): allows you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different user
+- [User access](#user-access): allows you to view and manage user roles for access to assessments or assessment templates
+
+Compliance Manager settings can only be accessed by users who hold a global administrator or Compliance Manager Administrator role.
 
 > [!NOTE]
 > The automated testing feature is not available to customers in GCC High and DoD environments because Secure Score isn't available in these environments. GCC High and DoD customers will need to manually implement and test their improvement actions.
 
-### Set up automated testing
+## Testing source for automated testing
 
-Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
+Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from Microsoft Priva (this capability is in preview; [learn more](/privacy/priva/priva-overview#how-priva-works-with-microsoft-purview-risk-and-compliance-solutions)). Compliance Manager also detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Using these signals, Compliance Manager can automatically test certain improvement actions in order to provide you with continuous control assessment. When an improvement action is successfully tested and implemented, you receive the maximum possible points for that action, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
-Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full amount of points, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
+#### Initial settings
 
-**Automatic testing is turned on by default for organizations new to Compliance Manager.** When you first deploy Microsoft 365 or Office 365, it takes approximately seven days to fully collect data and factor it into your compliance score. When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration. See [Manage automated testing settings](#manage-automated-testing-settings) below to edit or turn off this setting.
+While automated testing helps maximize efficiency in your compliance activities, you have full control over whether to apply automated testing. Here's what's initially set up by Compliance Manager and how you can make changes:
+
+- The first time you use Compliance Manager, automatic testing is turned on by default for all actions that can be automatically tested. It takes approximately seven days to fully collect data and factor that data into your compliance score.
+
+- You can turn off automatic testing for all actions, which disables all automated activity on improvement actions by Compliance Manager. You can also select individual improvement actions for automatic testing. See [Manage automated testing settings](#manage-automated-testing-settings) for instructions.
 
 #### How to tell which actions are tested automatically
 
-On your **Improvement actions** page, find the **Testing source** column. If the value is listed as **Automatic**, then the action is automatically tested by Compliance Manager.  If the value is **Manual**, then the action is tested by your organization. If the value is **Parent**, then the action inherits the testing status of another action to which it's linked. Get details about [improvement action testing source](compliance-manager-improvement-actions.md#update-testing-source).
+On your **Improvement actions** page, find the **Testing source** column. If the value is listed as **Automatic**, then the action is automatically tested by Compliance Manager. If the value is **Manual**, then the action is tested by your organization. If the value is **Parent**, then the action inherits the testing status of another action to which it's linked. Get details about [improvement action testing source](compliance-manager-improvement-actions.md#update-testing-source).
 
-#### Which actions can't be tested automatically
+Note that improvement actions in templates that aren't scoped to Microsoft 365, such as templates for Microsoft Azure or Microsoft Dynamics, aren't currently eligible for automatic testing.
 
-Improvement actions in templates not scoped to Microsoft 365 are currently not eligible for automatic testing. For example, universal templates, or a template for Microsoft Azure or Microsoft Dynamics, won't have actions that can be tested automatically. Learn more about [assessment templates](compliance-manager-templates.md).
+#### When actions are added or updated
+
+When automation becomes available for existing improvement actions, or when new automated improvement actions are added, the default behavior depends on your current settings and whether or not you've [brought data into an improvement action](compliance-manager-update-actions.md). When you add your own testing data or evidence into an improvement action, automatic testing is turned off for that action to ensure that Compliance Manager doesn't overwrite any of your data.
+
+If you've added data to an existing improvement action:
+- Automated testing remains **off** by default for the action. You can choose to turn it back on.
+
+If you haven't added data to an improvement action, or when new automated actions are added to Compliance Manager, the testing behavior follows your current settings:
+- Automated testing is **on** if your setting is **on** for **all actions** or **per action**.
+- Automated testing is **off** if your setting is **off for all actions**.
 
 #### Manage automated testing settings
 
 The global administrator for your organization can change the settings for automated testing at any time. You can turn off automated testing for common improvement actions, or turn it on for individual actions. Follow the instructions below to change your automated testing settings.
+
+> [!NOTE]
+> Only the global administrator can turn on or off automatic updates for all improvement actions. The Compliance Manager Administrator can turn on automatic updates for individual actions, but not for all actions.
 
 1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview compliance portal.
 
@@ -143,16 +182,16 @@ The global administrator for your organization can change the settings for autom
 
 3. Select **Testing source** from the left navigation.
 
-4. Select the applicable button to turn on automatic testing for all improvement actions, turn it off for all actions, or turn on by individual action.
+4. Select your desired option for testing improvement actions:
+    1. Turn on automatic testing for all actions
+    1. Turn off automatic testing for all actions
+    1. Turn on automatic testing per action
 
-5. If you select **Turn on per improvement action**, a list will show all the available improvement actions to choose from.  Check the box next to any action you want automatically tested.
+5. If you select **Turn on per improvement action**, a list will display showing all the improvement actions that are eligible for testing. All actions will be checked by default, so you'll need to uncheck the actions you **don't** want to be automatically tested.
 
 6. Select **Save** to save your settings. You’ll receive a confirmation message at the top of your screen that your selection was saved. If you receive a failure notice, try again.
 
-> [!NOTE]
-> Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager Administrator can turn on automatic updates for individual actions, but not for all actions globally.
-
-### Manage user history
+## Manage user history
 
 The **Manage user history** settings help you quickly identify which users have worked with improvement actions in Compliance Manager. The identifiable user data associated with improvement actions includes the status of the improvement actions and  documents they uploaded. Understanding and retrieving this type of data may be necessary for your organization’s own compliance needs.
 
@@ -206,7 +245,7 @@ You can reassign improvement actions from one user to another. When you reassign
 
 5. From the **Select** drop-down menu, choose **Reassign improvement actions**. The **Reassign improvement actions** flyout pane will appear.
 
-6. In the **Search users** field, enter the name or email address of the user you want assign the improvement actions *to*.
+6. In the **Search users** field, enter the name or email address of the user to whom you're assigning the improvement actions.
 
 7. When you see the name of your intended user under **Improvement actions will be assigned to**, select the user, then select **Assign actions**.
 
@@ -223,19 +262,41 @@ Deleting a user’s history will remove them as an owner of improvement actions,
 
 To delete a user’s history, follow the steps below:
 
-1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview compliance portal.
+1. In **Compliance Manager settings,** select **Manage user history**.
 
-2. On the settings page, select **Compliance Manager**.
+1. Find a user by searching the list email addresses on the page, or by selecting **Search** and entering that user’s email address.
 
-3. Select **Manage user history** from the navigation at left.
+1. From the **Select** drop-down menu, choose **Delete history**.
 
-4. Find a user by searching the list email addresses, or by selecting **Search** and entering that user’s email address.
+1. A window appears asking you to confirm the permanent deletion of the user’s history. To continue with deletion, select **Delete history**. To leave without deleting the history, select **Cancel**.
 
-5. From the **Select** drop-down menu, choose **Delete history**.
+1. You’ll arrive back at the **Manage user history** page with a confirmation message at the top that the history for the user was deleted.
 
-6. A window appears asking you to confirm the permanent deletion of the user’s history. To continue with deletion, select **Delete history**. To leave without deleting the history, select **Cancel**.
+## User access
 
-7. You’ll arrive back at the **Manage user history** page with a confirmation message at the top that the history for the user was deleted.
+The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. From this page, you can make changes to assessment-based role assignments. To add or remove such roles for users, follow the steps below:
+
+1. In **Compliance Manager settings,** select **User access**.
+
+1. Select the checkbox next to the name of one or more users whose role you want to edit.
+
+1. From the **Edit assessment roles** dropdown menu above the list of names, select **Add assessment permissions** or **Remove assessment permissions**.
+
+1. **For adding a role**: From the flyout pane, go to the tab that corresponds to the role you want to add (Reader, Assessor, or Contributor), then select **Add assessments**. On the next flyout pane, choose the checkbox next to the assessments and select **Apply**, then select **Save**.
+
+1. **For removing a role**: From the flyout pane, go to the tab that corresponds to the role you want to remove (Reader, Assessor, or Contributor). Select the button next to the assessments for which you want to remove access, and select the X mark in the **Remove** column.
+
+   1. A **Remove access?** confirmation box appears. Select **Confirm** to remove the user's role, or select **Cancel** to cancel. The name of the assessments will now be removed from the role tab.
+
+   1. Select **Save** on the flyout pane. The role removal won't be completed until you select the **Save** button. Selecting **Close** will cancel out of the process without saving the role removal.
+
+The user list on the **User access** page will now reflect the changes you made.
+
+> [!NOTE]
+> Admins whose permissions for Compliance Manager were set in Azure AD won't appear on the **User access** page. This means that if a user has access to one or more assessments, and their role is Global Administrator, Compliance Administrator, Compliance Data Administrator, or Security Administrator, they won't appear on this page. Learn more about [setting Compliance Manager permissions in Azure AD](#setting-permissions-in-azure-ad).
+
+**More information**:
+- [Visit these instructions](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for assigning user roles from an assessment's details page.
 
 ## Understand the Compliance Manager dashboard
 
@@ -290,7 +351,7 @@ To remove filters:
 
 The Compliance Manager dashboard shows your key improvement actions. To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, which brings you to your improvement actions page. You can also select **View all improvement actions** underneath the list of key improvement actions on your dashboard to get to your improvement actions page.
 
-The improvement actions page shows all of the improvement actions that are managed by your organization. Actions that are managed by Microsoft can be viewed within each assessment (learn more about [Microsoft actions](compliance-manager-assessments.md#microsoft-actions-tab)).
+The improvement actions page shows all of the improvement actions managed by your organization. Actions managed by Microsoft can be viewed within each assessment (learn more about [Microsoft actions](compliance-manager-assessments.md#microsoft-actions-tab)).
 
 If you have a long list of actions on your improvement actions page, it may be helpful to filter your view. Select **Filter** at the upper-right corner of the actions list. When the **Filters** flyout pane appears, select your criteria from the available options. You can also customize your view by selecting **Group** in the upper-right corner. From the drop-down menu, select to view by group, solution, category, action type, or status.
 
@@ -298,13 +359,13 @@ The default view for this page does not show improvement actions with a test sta
 
 The improvement actions page shows the following data points for each improvement action:
 
-- **Products**: the product being evaluated.
-- **Points achieved**: the number of points achieved out of the total available by completing the action
-- **Regulations**: the regulations or standards pertaining to the action
-- **Group**: the group to which you assigned the action
-- **Solutions**: the solution where you can go to perform the action
-- **Assessments**: the assessments that contain the action
-- **Categories**: the related data protection category (such as, protect information, manage devices, etc.)
+- **Products**: The product being evaluated.
+- **Points achieved**: The number of points achieved out of the total available by completing the action.
+- **Regulations**: The regulations or standards pertaining to the action.
+- **Group**: The group to which you assigned the action.
+- **Solutions**: The solution where you can go to perform the action.
+- **Assessments**: The number of assessments that contain the action. Select the number to see the list of related assessments; you'll see only the assessments to which you have access ([learn more](#role-based-access-to-assessments)).
+- **Categories**: The related data protection category (such as, protect information, manage devices, etc.).
 - **Test status**:
   - **None** – no status update recorded
   - **Not assessed** - testing hasn't started
@@ -312,15 +373,15 @@ The improvement actions page shows the following data points for each improvemen
   - **Failed low risk** - testing failed, low risk
   - **Failed medium risk** - testing failed, medium risk
   - **Failed high risk** - testing failed, high risk
-  - **Out of scope** – the action is not in scope for the assessment and doesn't impact your score
+  - **Out of scope** – the action isn't in scope for the assessment and doesn't impact your score
   - **To be detected** - for manual test, indicates an action has been implemented but not tested; for automated test, indicates an action is waiting for automation result
   - **Could not be detected** - automated status can't be determined
   - **Partially tested** – automated scoring that awards partial points
-- **Action type**: indicates whether the improvement action is technical, meaning it can be implemented within a solution or product, or non-technical, which would be implemented outside of a technical solution
-- **Assigned to**: the person this action has been assigned to, if applicable
-- **Testing source**: indicates whether the testing source for the action is manual, automatic, or inherited from a parent
+- **Action type**: Indicates whether the improvement action is technical, meaning it can be implemented within a solution or product, or non-technical, which would be implemented outside of a technical solution.
+- **Assigned to**: The user assigned to the action to perform work.
+- **Testing source**: Indicates whether the testing source for the action is manual, automatic, or inherited from a parent.
 
-**Learn more:** [See how to assign and perform work on improvement actions](compliance-manager-improvement-actions.md).
+Learn [how to assign and perform work on improvement actions](compliance-manager-improvement-actions.md).
 
 ## Solutions page
 
@@ -360,7 +421,7 @@ The assessments page summarizes key information about each assessment:
 - **Status**:
   - **Complete** - all controls have a status of “passed,” or at least one is passed and the rest are “out of scope”
   - **Incomplete** – at least one control has a status of “failed"
-  - **None** - all controls have have not been tested
+  - **None** - all controls haven't been tested
   - **In progress** - improvement actions have any other status, including “in progress,” “partial credit,” or “undetected
 - **Assessment progress**: the percentage of the work done toward completion, as measured by the number of controls successfully tested
 - **Your improvement actions**: the number of completed actions to satisfy implementation of your controls
@@ -385,9 +446,9 @@ By default, you'll see the [Data Protection Baseline](compliance-manager-assessm
 
 ## Assessment templates page
 
-A template is a framework for creating an assessment in Compliance Manager. The assessment templates page displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, and who created it.
+A template is a framework for creating an assessment in Compliance Manager. The assessment templates page displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created.
 
-The **activated templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information.
+The **Activated/Licensed templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information.
 
 Select a template from its row to bring up its details page, which contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
 

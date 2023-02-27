@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -38,7 +39,7 @@ A user can give access only to apps they own that access their Office 365 inform
 
 Here's how to turn User consent to apps on or off.
 
-1. In the admin center, go to the **Settings** \> **Org settings** > [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) page, and then select **User consent to apps**.
+1. In the  [Microsoft 365 admin center](https://admin.microsoft.com), go to the **Settings** > **Org settings** > [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) page, and then select **User consent to apps**.
 
 2. On the **User consent to apps** page, select the option to turn user consent on or off.
 

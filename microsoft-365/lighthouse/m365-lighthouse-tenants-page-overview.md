@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: kywirpel
+ms.date: 11/19/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -46,7 +47,7 @@ The tenant list lets you:
 - Export the tenant list.
 - Assign and manage tags.
 - Search for tenants by name.
-- Filter tenants by status, delegated administrative privilege (DAP), and tags.
+- Filter tenants by status, delegated admin privilege (DAP), and tags.
 
 To inactivate the tenant or view and manage tags, select the three dots (more actions) next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
 
@@ -137,4 +138,3 @@ The Deployment Plan tab also includes the following options:
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Manage your tenant list in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md) (article)\
 [Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
-[Deploy Microsoft 365 Lighthouse baselines](m365-lighthouse-deploy-baselines.md) (article)

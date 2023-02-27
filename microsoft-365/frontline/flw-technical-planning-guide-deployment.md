@@ -14,6 +14,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
+  - tier2
 appliesto: 
   - Microsoft 365 for frontline workers
 ms.date: 10/28/2022

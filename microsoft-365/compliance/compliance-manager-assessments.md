@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 01/11/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -33,7 +34,7 @@ Compliance Manager helps you create assessments that evaluate your compliance wi
 All of your assessments are listed on the assessments tab of Compliance Manager. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
 
 > [!IMPORTANT]
-> The templates available to your organization for building assessments depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> The assessment templates that are included by default for your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## Data Protection Baseline default assessment
 
@@ -75,9 +76,7 @@ You can create a group while creating a new assessment. Groups can't be created 
 
 ## Understand templates before creating assessments
 
-Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Your organization starts out with at least one and possibly more **included** templates available to use, depending on your licensing agreement. Your organization may also purchase additional **premium** templates.
-
-Each template exists in two versions: one for use with Microsoft 365 (or other Microsoft products as available), and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
+Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Each template exists in two versions: one for use with Microsoft 365 (or other Microsoft products as available), and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
 
 Get more details more about templates at [Learn about assessment templates in Compliance Manager](compliance-manager-templates.md).
 
@@ -92,7 +91,7 @@ To create an assessment, you'll use a guided process to select a template and de
 
 #### Create assessments based on recommendations for your org type
 
-Compliance Manager can indicate which assessments may be most relevant to your organization. When you provide basic information about your organization's industry and locations, we'll recommend which templates to use from our library of over 300 templates. Simply choose among the recommended templates for quick setup of multiple assessments all at once.
+Compliance Manager can indicate which assessments may be most relevant to your organization. When you provide basic information about your organization's industry and locations, we'll recommend which templates to use from our library of over 300 templates. Choose among the recommended templates for quick setup of multiple assessments all at once.
 
 To create one or more assessments based on our recommendations, select **Add Recommended Assessments** from your **Assessments** page and follow these steps:
 
@@ -103,7 +102,7 @@ To create one or more assessments based on our recommendations, select **Add Rec
 
 #### Create an assessment using a guided process
 
-1. From your **Assessments** page, select **Add assessment**. This will put you into the assessment creation wizard.
+1. From your **Assessments** page, select **Add assessment** to begin the assessment creation wizard.
 
 2. On the **Base template** screen, select **Select template** to choose the template for your assessment.
 
@@ -111,7 +110,7 @@ To create one or more assessments based on our recommendations, select **Add Rec
 
 4. **Product, name, and group:** Set these properties to identify your assessment, choose which product it will be evaluating, and assign it to a group.
 
-    - **Product**: Select the product you want your assessment to apply to. If you are using a Microsoft template, such as one designed for Microsoft 365, this field will be populated for you to indicate the appropriate product and cannot be changed. If you're using a universal template, select whether you're creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. Note that you cannot select a pre-defined Microsoft product when using a universal template.
+    - **Product**: Select the product you want your assessment to apply to. If you're using a Microsoft template, such as one designed for Microsoft 365, this field will be populated for you to indicate the appropriate product and can't be changed. If you're using a universal template, select whether you're creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. You can't select a pre-defined Microsoft product when using a universal template.
     - **Assessment name**: Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you'll receive an error asking you to create a different name.
     - **Group**: Assign your assessment to a group. You can either:
         - Select **Use existing group** to assign it to a group you've already created; or
@@ -174,6 +173,60 @@ Select an improvement action to view its details page, and select the **Launch n
 The Microsoft actions tab appears for assessments based on templates that support Microsoft products. It lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
 
 Learn more about [how controls and improvement actions are tracked and scored.](compliance-score-calculation.md)
+
+## Grant user access to individual assessments
+
+When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can view or edit data within all assessments by default (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). You can restrict user access to only certain assessments by managing user roles from within an assessment or assessment template. Restricting access in this way can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties.
+
+External users who need access for auditing or other purposes can also be assigned a role for viewing assessments and editing test data. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#setting-permissions-in-azure-ad).
+
+#### Steps for granting access
+
+Follow the steps to grant user access to an assessment.
+
+1. From your **Assessments** page, find the assessment you want to grant access to. Select it to open its details page.
+
+1. In the upper-right corner, select **Manage user access**.
+
+1. A **Manage user access** flyout pane appears. It has three tabs, one for each role of Readers, Assessors, and Contributors. Navigate to the tab for the role you want your user to hold for this assessment.  Users who currently have access to the assessment will have a blue box with a check mark to the left of their name.
+
+1. Select the **+ Add** command for the role tab you're on: **Add reader**, or **Add assessor** or **Add contributor**.
+
+1. Another flyout pane appears which lists all the users in your organization. You can select the checkbox next to the username you want to add, or you can enter their name in the search bar and select the user from there. You can select multiple users at once.
+
+1. After making all your selections, select **Add**.
+    > [!NOTE]
+    > If you assign a role to someone who already has an existing role, the new role assignment you choose will override their existing role. In this case, you'll see a confirmation box asking you to confirm the change in role.
+
+1. The flyout pane will close and you'll arrive back at your assessment details page. A confirmation message at the top will confirm the new role assignment for that assessment.
+
+#### Steps for removing access
+
+You can remove a user's access to individual assessments by following the steps below:
+
+1. On the assessment's details page, select **Manage user access**.
+1. On the **Manage user access** flyout pane, go the tab corresponding to the user's role you want to remove.
+
+1. Find the user whose role you want to remove. Check the circle to the left of their name, then select the **Remove** command just below the role tab. To remove all users at once, simply select the **Remove all** command without checking the circle next to every user's name.
+
+1. A **Remove access?** dialog appears, asking you to confirm the removal. Select **Remove access** to confirm the role removal.
+
+1. Select **Save** on the flyout pane. The users' roles will now be removed from the assessment.
+
+Learn how to get a broad [view of all users with access to assessments](compliance-manager-setup.md#user-access).
+
+##### Note about multiple roles
+
+- A user can have one role that applies to an assessment, while also holding another role that applies broadly to overall Compliance Manager access.
+
+    - For example, if you've assigned a user a **Compliance Manager Reader** role in Microsoft Purview compliance portal **Permissions,** you can also assign that user a **Compliance Manager Assessor** role for a specific assessment. In effect, the user will hold the two roles at the same time, but their ability to edit data will be limited to the assessment to which they've been assigned the **Assessor** role.
+    - Removing an assessment-based role won't remove the user's overall Compliance Manager role if they have one. If you want to change a user's overall role, you'll have to change it from the **Permissions** page in the Microsoft Purview compliance portal.
+
+- For an individual assessment, one user can only hold one assessment-based role at a time.
+    - For example, if a user holds a reader role for a GDPR assessment and you want to change them to a contributor role, you'll first need to remove their reader role, and then re-assign them the reader role.
+
+> [!NOTE]
+> Admins whose permissions for Compliance Manager were set in Azure AD won't appear on the **Manage user access** flyout pane. This means that if a user has access to one or more assessments, and their role is Global Administrator, Compliance Administrator, Compliance Data Administrator, or Security Administrator, they won't appear on this pane. Learn more about [setting Compliance Manager permissions and roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 ## Accept updates to assessments
 

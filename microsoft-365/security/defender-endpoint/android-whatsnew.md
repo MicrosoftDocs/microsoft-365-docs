@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
+ms.date: 11/01/2021
 ---
 
 # What's new in Microsoft Defender for Endpoint on Android
@@ -35,7 +36,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 > If users can't access the play store, the app can be updated through the company portal. 
 
 ## Microsoft Defender for Endpoint on Company-owned personally enabled devices
-MDE is now generally available on AE COPE devices. Enterprises can onboard devices on COPE mode and push MDE to user's devices through the [Microsoft Endpoint Manager Admin center](https://endpoint.microsoft.com). With this support, Android Enterprise COPE devices will get the full capabilities of our offering on Android including phishing and web protection, malware scanning, Network protection (preview) and additional breach prevention through integration with Microsoft Endpoint Manager and Conditional Access. Read the announcement [here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-is-now-available-on-android/ba-p/3626100).
+MDE is now generally available on AE COPE devices. Enterprises can onboard devices on COPE mode and push MDE to user's devices through the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431). With this support, Android Enterprise COPE devices will get the full capabilities of our offering on Android including phishing and web protection, malware scanning, Network protection (preview) and additional breach prevention through integration with Microsoft Intune and Conditional Access. Read the announcement [here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-is-now-available-on-android/ba-p/3626100).
 
 ## Privacy Controls
 
@@ -52,7 +53,7 @@ Microsoft Defender for Endpoint is now supported on Android Enterprise personal 
 ## Network protection
 Network Protection on Microsoft Defender for Endpoint is now available. Network protection provides protection against rogue Wi-Fi related threats, rogue hardware like pineapple devices and notifies the user if a related threat is detected. Users will also see a guided experience to connect to secure networks and change networks when they are connected to an unsecure connection.
 
-It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Endpoint Manager Admin center. Admins can also enable privacy controls to configure the data that is sent by Defender for Endpoint from Android devices. 
+It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Intune admin center. Admins can also enable privacy controls to configure the data that is sent by Defender for Endpoint from Android devices. 
 
 If you are interested in participating in this public preview, please share your tenant id with us on networkprotection@microsoft.com. For more information, see [network protection](/microsoft-365/security/defender-endpoint/android-configure).
 
@@ -83,7 +84,7 @@ Microsoft Defender for Endpoint has released this update required by [Google](ht
 These changes will take effect if you are using Microsoft Defender for Endpoint on devices running Android 11 or later and updated Defender for Endpoint to release build 1.0.3501.0301 or later.
 
 > [!NOTE]
-> The new storage permissions cannot be configured by admin to 'Auto Approve' through Microsoft Endpoint Manager. User will need to take action to provide access to this permission.
+> The new storage permissions cannot be configured by admin to 'Auto Approve' through Microsoft Intune. User will need to take action to provide access to this permission.
 
 - **User experience:** Users will receive a notification indicating a missing permission for app security. If the user denies this permission, the 'App security' functionality will be turned off on the device. If user doesn't accept or deny permission, they will continue to receive the prompt when unlocking their device or opening the app, until it has been approved.
 

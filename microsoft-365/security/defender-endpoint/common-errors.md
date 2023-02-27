@@ -18,16 +18,18 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
-# Common REST API error codes
-
-
+# Handling REST API errors 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+HTTP error responses are divided into two categories:
+* Client error (400-code level) – the client sent an invalid request or the request is not in accordance with definitions.
+* Server error (500-level) – the server temporarily failed to fulfill the request or a server error occurred. Try sending the HTTP request again.
 
-* The error codes listed in the following table may be returned by an operation on any of Microsoft Defender for Endpoint APIs.
+The error codes listed in the following table may be returned by an operation on any of Microsoft Defender for Endpoint APIs.
 * In addition to the error code, every error response contains an error message, which can help resolve the problem.
 * The message is a free text that can be changed.
 * At the bottom of the page, you can find response examples.
@@ -59,8 +61,15 @@ DisabledFeature|Forbidden (403)|Tenant feature is not enabled.
 DisallowedOperation|Forbidden (403)|{the disallowed operation and the reason}.
 NotFound|Not Found (404)|General Not Found error message.
 ResourceNotFound|Not Found (404)|Resource {the requested resource} was not found.
-InternalServerError|Internal Server Error (500)|(No error message, retry the operation)
 TooManyRequests|Too Many Requests (429)|Response will represent reaching quota limit either by number of requests or by CPU.
+InternalServerError|Internal Server Error (500)|(No error message, retry the operation.)
+
+## Throttling   
+The HTTP client may receive a 'Too Many Requests error (429)' when the number of HTTP requests in a given time frame exceeds the allowed number of calls per API.
+
+The HTTP client should delay resubmitting further HTTPS requests and then submit them in a way that complies with the rate limitations. A Retry-After in the response header indicating how long to wait (in seconds) before making a new request
+
+Ignoring the 429 response or trying to resubmit HTTP requests in a shorter time frame will cause a return of the 429 error code.
 
 ## Body parameters are case-sensitive
 

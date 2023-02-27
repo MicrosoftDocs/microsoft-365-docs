@@ -3,7 +3,8 @@ title: Step 5. Device and app management for your Microsoft 365 for enterprise t
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.audience: ITPro
+ms.date: 12/01/2020
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium

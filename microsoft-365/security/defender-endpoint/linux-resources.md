@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Resources
@@ -77,7 +78,7 @@ If an error occurs during installation, the installer will only report a general
 The detailed log will be saved to `/var/log/microsoft/mdatp/install.log`.
 If you experience issues during installation, send us this file so we can help diagnose the cause.
 
-## Uninstall
+## Uninstall Defender for Endpoint on Linux
 
 There are several ways to uninstall Defender for Endpoint on Linux. If you are using a configuration tool such as Puppet, follow the package uninstallation instructions for the configuration tool.
 

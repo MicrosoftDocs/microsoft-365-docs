@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/21/2023
 audience: itpro
 ms.collection: 
 - purview-compliance
@@ -85,7 +86,7 @@ User this option to configure the extension and requirements for your organizati
 
 For the Intune setup option, complete the following steps:
 
-1. Sign-in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) using Administrator permissions.
+1. Sign-in to the [Microsoft Intune admin center](https://endpoint.microsoft.com) using Administrator permissions.
 2. Navigate to **Configuration Profiles**.
 3. Select **Create Profile**.
 4. Choose **Windows 10** as the platform.
@@ -166,7 +167,7 @@ For the Intune setup option, complete the following steps:
 Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 ```
 
-2. Sign-in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
+2. Sign-in to the [Microsoft Intune admin center](https://endpoint.microsoft.com).
 3. Navigate to **Devices** \> **Scripts** and select **Add.**
 4. Browse to the location of the script created when prompted.
 5. Select the following settings:
@@ -181,7 +182,7 @@ Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Conf
 
 Before adding the Microsoft DLP Chrome extension to the list of force installed extensions, you must install the Chrome Administrative Template (.admx) file for Intune management. For step-by-step guidance, see [Manage Chrome Browser with Microsoft Intune](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune). After installing the Administrative Template file, complete the following steps:
 
-1. Sign-in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
+1. Sign-in to the [Microsoft Intune admin center](https://endpoint.microsoft.com).
 2. Navigate to **Configuration Profiles**.
 3. Select **Create Profile**.
 4. Choose **Windows 10** as the *Platform*.

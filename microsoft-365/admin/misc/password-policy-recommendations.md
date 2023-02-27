@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -152,8 +153,6 @@ Want to know more about managing passwords? Here is some recommended reading:
 - [Choosing Secure Passwords](https://go.microsoft.com/fwlink/p/?linkid=861016)
 
 - [Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018)
-
-- [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
 ## Related content
 

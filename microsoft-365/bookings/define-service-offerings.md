@@ -3,6 +3,7 @@ title: "Define your Bookings service offerings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 06/18/2020
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -34,7 +35,7 @@ You can also add customized information and URLs to the email confirmation and r
 
    **Service name**: enter the name of your service. This is the name that will appear in the drop-down menu on the Calendar page. This name will also appear when anyone manually adds an appointment on the Calendar page, and it will appear as a tile on the Self-service page.
 
-   **Description**: The description you enter is what will appear when a user clicks the information icon on the Self-service page.
+   **Description**: The description you enter is what will appear when a user selects the information icon on the Self-service page.
 
    **Default location**: This location is what will be displayed on confirmation and reminder emails for both staff and customers, and it will be displayed on the calendar event created for the booking.
 
@@ -60,9 +61,9 @@ You can also add customized information and URLs to the email confirmation and r
 
    **Price not set**: Select the price options that will display on the Self-Service page. If **Price not set** is selected, then no price or reference to cost or pricing will appear.
 
-   **Notes**: This field appears in the booking event for booked staff, as well as on the event that appears on the Calendar tab in the Bookings web app.
+   **Notes**: This field appears in the booking event for booked staff, and on the event that appears on the Calendar tab in the Bookings web app.
 
-   **Maximum attendees per event**: This setting allows you to create services that require the ability for multiple people to book the same appointment time and the same staff (such as a fitness class). The appointment time slot for the selected service, staff, and time will be available to book until the maximum number of attendees, specified by you, has been reached. Current appointment capacity and attendees can be viewed in the Calendar tab in the Bookings Web app.
+   **Maximum attendees per event**: This setting allows you to create services that require the ability for multiple people to book the same appointment time and the same staff (such as a fitness class). The appointment time slot for the selected service, staff, and time will be available to book until the maximum number of attendees, specified by you, has been reached. Current appointment capacity and attendees can be viewed in the Calendar tab in the Bookings Web app. We refer to this as 1:N booking service.
 
    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings":::
 
@@ -78,7 +79,7 @@ You can also add customized information and URLs to the email confirmation and r
 
         :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="The Manage Bookings button in Bookings.":::
 
-      We only recommend leaving this setting enabled if you are comfortable with customers accessing the Self-Service page.
+      We only recommend leaving this setting enabled if you're comfortable with customers accessing the Self-Service page.
 
    - Disabled:
 
@@ -88,32 +89,37 @@ You can also add customized information and URLs to the email confirmation and r
 
 4. On the **Availability options** page, you can see the options you've selected from your **Booking page** for your scheduling policy and availability for your staff. For more information, see [Set your scheduling policies](set-scheduling-policies.md).
 
-5. **Default price**  This is the price that will display on the Self-Service page. If **Price not set** is selected, then no price or reference to cost or pricing will appear.
+5. On the revamped **Assign staff** page, you can smoothly assign and remove assigned staff members from a service. There are two more controls added on this page:
 
-6. **Notes** This field appears in the booking event for booked staff, as well as on the event that appears on the Calendar tab in the Bookings web app.
+    - **Single staff** When this option is selected, the booking will be scheduled with a single staff member.
+    - **Multiple staff** This feature allows you to create a service with multiple staff members. The booking will be scheduled with all of the assigned staff members of the service. You can refer to this service as N:1 booking service.
 
-7. **Custom fields** can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews. These fields will appear on the Booking page when your customers book appointments with you and your staff.
+> [!NOTE]
+> For Multiple staff, you can only create a booking when all assigned staff members are available to attend.
 
-   Customer email, phone number, address, and notes are non-removable fields, but you can make them optional by deselecting **Required** beside each field.
+6. **Custom fields** can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews. These fields will appear on the Booking page when your customers book appointments with you and your staff.
 
-8. On the **Reminders and Confirmations** page, you can set up reminders and notifications you send. Reminders and notifications are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
+    - Customer email, phone number, address, and notes are non-removable fields, but you can make them optional by deselecting **Required** beside each field.
+
+7. On the **Notifications** page, you can send SMS messages, set up reminders, and send notifications.
+
+    - **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
+    - **Reminders and notifications** are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
 
    :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="A confirmation email from Bookings.":::
 
    You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
 
-   :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email.":::
+   :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email." lightbox="media/bookings-additional-info.jpg":::
+  
+  Opt-in box on the manual booking and Self-Service Page:
 
-9. **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
+:::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings.":::
 
-   - Opt-in box on the manual booking and Self-Service Page:
+  Text message notifications will look like the following (note that SMS notifications are currently only available in North America):
 
-     :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings.":::
+:::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings":::
 
-   - Text message notifications will look like the following (note that SMS notifications are currently only available in North America):
-
-     :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings.":::
-
-10. The **Default scheduling options** is on by default. Turn the toggle off if you want to customize how customers book a particular staff member.
-
-11. **Publishing options** Choose whether to have this service appear as bookable on the Self-Service page, or to make the service bookable only on the Calendar tab within the Bookings Web app.
+8. There are two more controls available to ease your Service creation journey:
+    - **Default scheduling options** is on by default. Turn the toggle off if you want to customize how customers book a particular staff member.
+    - **Publishing options** Choose whether to have this service appear as bookable on the Self-Service page, or to make the service bookable only on the Calendar tab within the Bookings Web app.

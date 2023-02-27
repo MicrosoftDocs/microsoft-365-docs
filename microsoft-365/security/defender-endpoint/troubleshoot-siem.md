@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Troubleshoot SIEM tool integration issues
@@ -29,8 +30,13 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+
+> [!NOTE]
+> The new Microsoft 365 Defender alerts API, released to public preview in MS Graph, is the official and recommended API for customers migrating from the SIEM API. See [Migrate from the MDE SIEM API to the Microsoft 365 Defender alerts API](configure-siem.md).
 
 You might need to troubleshoot issues while pulling detections in your SIEM tools.
 
@@ -40,7 +46,7 @@ This page provides detailed steps to troubleshoot issues you might encounter.
 
 If your client secret expires or if you've misplaced the copy provided when you were enabling the SIEM tool application,  you'll need to get a new secret.
 
-1. Login to the [Azure management portal](https://portal.azure.com).
+1. Log in to the [Azure management portal](https://portal.azure.com).
 
 2. Select **Azure Active Directory**.
 
@@ -58,7 +64,7 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 If you encounter an error when trying to get a refresh token when using the threat intelligence API or SIEM tools, you'll need to add reply URL for relevant application in Azure Active Directory.
 
-1. Login to the [Azure management portal](https://ms.portal.azure.com).
+1. Log in to the [Azure management portal](https://ms.portal.azure.com).
 
 2. Select **Azure Active Directory**.
 
@@ -81,5 +87,6 @@ If you encounter an error when trying to enable the SIEM connector application, 
 
 ## Related topics
 
-- [Pull detections to your SIEM tools](configure-siem.md)
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
+- [Pull detections to your SIEM tools](configure-siem.md)

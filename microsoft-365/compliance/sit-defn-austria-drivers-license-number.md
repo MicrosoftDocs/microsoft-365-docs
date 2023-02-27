@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 05/05/2022
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -188,4 +188,3 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Führerscheine
 - Führerscheinnummer
 - Führerscheinnummern
-

@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
+ms.date: 09/09/2021
 ---
 
 # Supported Microsoft 365 Defender streaming event types in event streaming API
@@ -26,6 +27,9 @@ ms.topic: conceptual
 
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -56,8 +60,12 @@ The following table only includes the list of the tables supported in the stream
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |GA |GA |GA |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |GA |GA |GA |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |GA |GA |GA |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)**|GA|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
-| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)**|GA|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)**|GA|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
-| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)**|GA|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
-| **[UrlClickEvents](advanced-hunting-urlclickevents-table.md)**|GA |GA |GA |GA |
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)**|GA |GA |GA |GA |
+| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)**|GA |GA |GA |GA |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)**|GA |GA |GA |GA |
+| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)**|GA |GA |GA |GA |
+| **[UrlClickEvents](advanced-hunting-urlclickevents-table.md)**|Public preview |Not available |Not available |Not available |
+
+## Related topics
+
+[Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)

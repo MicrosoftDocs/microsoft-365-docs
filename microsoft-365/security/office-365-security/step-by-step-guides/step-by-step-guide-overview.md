@@ -20,6 +20,7 @@ ms.collection:
 ms.topic: overview
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Welcome to the Microsoft Defender for Office 365 step-by-step guides
