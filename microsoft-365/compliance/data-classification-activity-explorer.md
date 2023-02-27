@@ -96,6 +96,7 @@ Here's a list of applicable role groups that you can use. To learn more about th
 
 > [NOTE]
 > Roles other than Global Admin and Compliance Admin can only view activities and are not allowed to view sensitive content.
+
 ## Activity types
 
 Activity explorer gathers activity information from the audit logs on multiple sources of activities. For more detailed information on what labeling activity makes it to Activity explorer, see [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).
