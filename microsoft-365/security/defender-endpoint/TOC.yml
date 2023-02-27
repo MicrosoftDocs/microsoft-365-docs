@@ -153,6 +153,8 @@
     items:
     - name: Onboard devices and configure Microsoft Defender for Endpoint capabilities
       href: onboard-configure.md
+    - name: Manage Defender for Endpoint P1/P2 across devices
+      href: defender-endpoint-subscription-settings.md
     - name: Onboarding Windows Client
       items:
       - name: Onboarding Windows Client overview
@@ -323,7 +325,7 @@
       - name: General
         items:
         - name: Configure alert notifications
-          href: configure-email-notifications.md
+          href: ../defender/configure-email-notifications.md
         - name: Configure vulnerability email notifications
           href: configure-vulnerability-email-notifications.md
         - name: Configure advanced features
@@ -620,9 +622,11 @@
       - name: Find malware detection names for Microsoft Defender for Endpoint
         href: find-defender-malware-name.md
 
-      - name: Get your antivirus and antimalware updates
+      - name: Microsoft Defender Antivirus security intelligence and product updates
         href: manage-updates-baselines-microsoft-defender-antivirus.md
         items:
+        - name: Previous versions for technical upgrade support only
+          href: msda-updates-previous-versions-technical-upgrade-support.md
         - name: Manage the sources for Microsoft Defender Antivirus protection updates
           href: manage-protection-updates-microsoft-defender-antivirus.md
         - name: Manage the schedule for when protection updates should be downloaded and applied
