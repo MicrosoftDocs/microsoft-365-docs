@@ -143,22 +143,22 @@ Select the frequency that matches how closely you want to monitor detections. Co
 ##### Tables that support Continuous (NRT) frequency
 
 Near real-time detections are supported for the following tables: 
-- AlertEvidence
-- DeviceEvents 
-- DeviceFileCertificateInfo 
-- DeviceFileEvents 
-- DeviceImageLoadEvents 
-- eviceLogonEvents 
-- DeviceNetworkEvents 
-- DeviceNetworkInfo 
-- DeviceInfo 
-- DeviceProcessEvents 
-- DeviceRegistryEvents 
-- EmailAttachmentInfo 
-- EmailEvents 
-- EmailPostDeliveryEvents 
-- EmailUrlInfo 
-- UrlClickEvents 
+- `AlertEvidence`
+- `DeviceEvents` 
+- `DeviceFileCertificateInfo` 
+- `DeviceFileEvents` 
+- `DeviceImageLoadEvents` 
+- `DeviceLogonEvents` 
+- `DeviceNetworkEvents` 
+- `DeviceNetworkInfo` 
+- `DeviceInfo` 
+- `DeviceProcessEvents` 
+- `DeviceRegistryEvents` 
+- `EmailAttachmentInfo` 
+- `EmailEvents` 
+- `EmailPostDeliveryEvents` 
+- `EmailUrlInfo` 
+- `UrlClickEvents` 
 
 ### 3. Choose the impacted entities.
 Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses. Identifying which of these columns represent the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.
