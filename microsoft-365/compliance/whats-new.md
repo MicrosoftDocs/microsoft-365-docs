@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -50,7 +50,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - **Rolling out in preview**: Auto-labeling retention policies now support [simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode), so you can test out your policy configuration and view results before deploying in production.
-- The configuration and management of [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) is moving to a new location in the Microsoft Purview compliance portal: **Roles & Scopes** \> **Adaptive scopes**. Additionally, a new role, **Scope Manager**, is required to create and manage adaptive scopes. This new role is included in the **Records Management** role group and other built-in role groups, such as **Compliance Administrator**. However, if you have a custom role group, for example to manage retention policies and retention labels with their policies for data lifecycle management, you'll likely need to add the new Scope Manager role to your group.
+- The configuration and management of [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) is moving to a new location in the Microsoft Purview compliance portal: **Roles & Scopes** \> **Adaptive scopes**. Additionally, a new role, **Scope Manager**, is required to create and manage adaptive scopes. This new role is included in the **Records Management** role group and other built-in role groups, such as **Compliance Administrator**.
 - New troubleshooting resources:
     - [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
     - [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)
@@ -64,6 +64,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Insider risk management
 
 - **In preview**: New [Adaptive Protection guidance](/microsoft-365/compliance/insider-risk-management-adaptive-protection). Adaptive Protection in Microsoft Purview uses machine learning to identify and mitigate the most critical risks with the most effective [data loss prevention (DLP)](/microsoft-365/compliance/dlp-adaptive-protection-learn) protection controls dynamically, saving security teams valuable time while ensuring better data security.
+
+### On-premises scanner
+
+- You can no longer configure the scanner in the Azure portal. To help you locate the equivalent configuration in the Microsoft Purview compliance portal, see [Configuration that you used to do in the Azure portal for Azure Information Protection](azure-portal-migration.md).
 
 ### Permissions
 
