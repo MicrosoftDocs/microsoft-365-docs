@@ -1,9 +1,9 @@
 ---
 title: Teams Shifts connector for Blue Yonder known issues
-author: LanaChin
-ms.author: v-lanachin
-ms.reviewer:
-manager: samanro
+author: daisyfell
+ms.author: daisyfeller
+ms.reviewer: imarquesgil
+manager: pamgreen
 ms.topic: troubleshooting
 audience: admin
 ms.service: microsoft-365-frontline

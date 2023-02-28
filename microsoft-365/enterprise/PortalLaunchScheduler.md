@@ -3,6 +3,7 @@ title: Launch your portal using the Portal launch scheduler
 ms.author: jhendr
 author: jhendr
 manager: pamgreen
+ms.date: 11/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise

@@ -63,7 +63,7 @@ Use the tables in the following sections to learn more about how your existing i
 |Live response capabilities - advanced|Security operations \ Advanced live response (manage)|
 |Manage security settings in the Security Center|Authorization and settings \ Security setting (All permissions)|
 |Manage portal system settings|Authorization and settings \ System setting (All permissions)|
-|Manage endpoint security settings in Microsoft Endpoint Manager|Not supported - this permission is managed in the Microsoft Endpoint Management portal|
+|Manage endpoint security settings in Microsoft Intune|Not supported - this permission is managed in the Microsoft Intune admin center|
 
 ### Map Defender for Office 365 (Exchange Online Protection) roles to the Microsoft 365 Defender RBAC permissions
 
