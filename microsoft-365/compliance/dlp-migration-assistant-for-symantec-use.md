@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 11/25/2022
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -21,7 +21,7 @@ search.appverid:
 description: "Learn how to use the Microsoft Purview Data Loss Prevention migration assistant for Symantec to migrate your DLP policies from other DLP platforms to Microsoft's DLP platform."
 ---
 
-# Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
+# Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec
 
 This article takes you through using the [Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-learn.md).
 

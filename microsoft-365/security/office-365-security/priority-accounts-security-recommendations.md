@@ -7,8 +7,6 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.date: 
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -19,10 +17,12 @@ ms.collection:
   - m365solution-overview
   - m365solution-protecthve
   - highpri
+  - tier1
 ms.custom:
 description: Admins can learn how to elevate the security settings and use reports, alerts, and investigations for priority accounts in their Microsoft 365 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/08/2022
 ---
 
 # Security recommendations for priority accounts in Microsoft 365

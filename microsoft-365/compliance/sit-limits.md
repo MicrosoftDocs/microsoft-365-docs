@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date:
+ms.date: 08/24/2022
 ms.localizationpriority: medium
 ms.collection:
 - tier1
@@ -38,7 +38,20 @@ To ensure high performance and lower latency, there are limitations in custom SI
 |maximum number of terms in keyword list| 2048|
 |maximum number of distinct regexes per sensitive information type| 20|
 |maximum size of a keyword dictionary (post compression)| 1MB (~1,000,000 characters)|
-|maximum number of keyword dictionary based SITs in a tenant|50 |
+|maximum number of keyword dictionary based SITs in a tenant| 50 |
+|maximum number of MIP+MIG ppolicies in a tenant| 10,000 |
+|maximum number of DLP rules in a policy | Limited by the size of policy (100KB) |
+|maximum number of DLP rules in a tenant | 600 |
+|maximum size of an individual DLP rule | 80KB |
+|maximum size of a DLP policy | 100KB |
+|Policy name character limit | 64 |
+|Policy rule character limit | 64 |
+|Comments character limit | 1024 |
+|Description character limit | 1024 |
+|GIR evidence limit | 100 with each SIT evidence in proportion of occurence |
+|Text extraction limit | 1MB |
+|Regex size limit (for all matches predicates) | 20KB |
+
 
 > [!NOTE]
 > If you have a business need to create more than 500 custom SITs, please raise a support ticket.
@@ -64,6 +77,3 @@ For a scanned item to satisfy rule criteria, the number of unique instances of a
   - Any - Use `Any` when you want the unique instance count criteria to be satisfied when an undefined number of unique instances of a SIT are found in a scanned item and that number of unique instances meets or exceeds the minimum number of unique instances value. In other words, the unique instance count criteria are met as long as the min value is met.
 
 For example, if you want the rule to trigger a match when at least 500 unique instances of a SIT are found in a single item, set the **min** value to `500` and the **max** value to `Any`.
-
-
-

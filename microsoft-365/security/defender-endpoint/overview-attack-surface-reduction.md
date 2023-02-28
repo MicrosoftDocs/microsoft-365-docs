@@ -7,8 +7,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: jweston-1
-ms.author: v-jweston
+author: dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -76,7 +76,8 @@ To configure attack surface reduction in your environment, follow these steps:
 > [!TIP]
 > In most cases, when you configure attack surface reduction capabilities, you can choose from among several methods:
 >
-> - Microsoft Endpoint Manager (which now includes Microsoft Intune and Microsoft Endpoint Configuration Manager)
+> - Microsoft Intune
+> - Microsoft Configuration Manager
 > - Group Policy
 > - PowerShell cmdlets
 

@@ -3,6 +3,7 @@ title: "Set Bookings language and time zones"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 06/24/2020
 audience: Admin
 ms.topic: article
 ms.service: bookings

@@ -6,6 +6,8 @@
       items:
       - name: What is Microsoft 365 Defender
         href: microsoft-365-defender.md
+      - name: Zero Trust with Microsoft 365 Defender
+        href: zero-trust-with-microsoft-365-defender.md  
       - name: Microsoft 365 Defender portal
         href: microsoft-365-defender-portal.md
       - name: What's new in Microsoft 365 Defender
@@ -217,7 +219,15 @@
               - name: View details and results
                 href: m365d-autoir-results.md
               - name: Address false positives and negatives
-                href: m365d-autoir-report-false-positives-negatives.md   
+                href: m365d-autoir-report-false-positives-negatives.md
+       - name: Manage automatic attack disruption
+         items: 
+              - name: Overview
+                href: automatic-attack-disruption.md
+              - name: Configure capabilities
+                href: configure-attack-disruption.md
+              - name: View details and results
+                href: autoad-results.md             
        - name: Search for threats with advanced hunting
          items: 
              - name: Overview
@@ -442,6 +452,8 @@
               href: device-profile.md
             - name: Troubleshoot Microsoft 365 Defender service issues
               href: troubleshoot.md
+            - name: Configure alert notifications
+              href: configure-email-notifications.md
             - name: Provide feedback
               href: feedback.md
             - name: Provide managed service provider (MSSP) access

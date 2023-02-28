@@ -3,9 +3,10 @@ title: Set up Microsoft Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: ssquires
+ms.date: 07/08/2020
 manager: serdars
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
 - enabler-strategic

@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: api
 search.appverid: met150
+ms.date: 03/15/2021
 ---
 
 # Batch update alerts
