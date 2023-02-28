@@ -43,7 +43,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Audit
 
-- Clarification for audit log activities for [messages with reactions](/microsoft-365/compliance/audit-log-activities?view=o365-worldwide#yammer-activities) in Yammer.
+- Clarification for audit log activities for [messages with reactions](/microsoft-365/compliance/audit-log-activities#yammer-activities) in Yammer.
 - [Clarification](/microsoft-365/compliance/audit-log-retention-policies#before-you-create-an-audit-log-retention-policy) on customized retention policies and licensing requirements.
 - Updates to [export limits](/microsoft-365/compliance/audit-new-search#audit-search-results-overview) for all search job items in Audit (Premium).
 - Clarification for [OneDrive for Business support](/microsoft-365/compliance/audit-premium) in Audit (Premium).
