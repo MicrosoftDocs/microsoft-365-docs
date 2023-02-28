@@ -29,15 +29,15 @@ search.appverid:
 
 # Best practices for managing the volume of alerts in communication compliance
 
-One of the biggest challenges in Microsoft Purview Communication Compliance is managing the volume of alerts. Use the list of best practices in this article to help you create policies that cover as many users as possible while reducing the number of non-actionable alerts.
+After configuring Microsoft Purview Communication Compliance, you may want to make adjustments to manage the volume of alerts that you receive. Use the list of best practices in this article to help you create policies that cover as many users as possible while reducing the number of non-actionable alerts.
 
 ## Understand keyword list volumes
 
 Many customers use custom keyword lists for compliance scenarios. Understanding the volume of policy matches for each keyword can help you tune your policies. Use the [Sensitive information type per location report](communication-compliance-reports-audits.md#detailed-reports) to analyze keyword lists to see which keywords trigger most matches. You can then investigate further to see if those keywords have high false-positive rates. You can also use the [Message details reports](communication-compliance-reports-audits.md#message-details-report) to get data on keyword matches for a specific policy.
 
-## Use the Data classification dashboard
+## Use the data classification dashboard
 
-It’s important to understand the volume of items classified by trainable classifiers and sensitive information types. You can use the [Content explorer](data-classification-content-explorer.md) in the Data classification dashboard to help you understand the volume that you can expect for your organization. 
+It’s important to understand the volume of items classified by trainable classifiers and sensitive information types. You can use the [Content explorer](data-classification-content-explorer.md) in the data classification dashboard to help you understand the volume that you can expect for your organization. 
 
 ## Filter email blasts
 
