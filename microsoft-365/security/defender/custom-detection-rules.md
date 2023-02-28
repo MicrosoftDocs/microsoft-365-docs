@@ -180,7 +180,7 @@ For more details on user actions, read [Remediation actions in Microsoft Defende
 
 - Alternatively, you can select **Delete email** and then choose to either move the emails to Deleted Items (**Soft delete**) or delete the selected emails permanently (**Hard delete**).
 
-The columns `NetworkMessageId` and `RecipientEmailAddress` must be present to apply actions to email messages.
+The columns `NetworkMessageId` and `RecipientEmailAddress` must be present in the query output to apply actions to email messages.
 
 
 ### 5. Set the rule scope.

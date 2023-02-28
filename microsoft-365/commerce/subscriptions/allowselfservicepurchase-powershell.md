@@ -100,6 +100,7 @@ The following table lists the available products and their **ProductId**. It als
 | Power BI Pro | CFQ7TTC0L3PB | No |
 | Project Plan 1* | CFQ7TTC0HDB1 | Yes |
 | Project Plan 3* | CFQ7TTC0HDB0 | No |
+| Teams Exploratory | CFQ7TTC0J1FV | Yes |
 | Visio Plan 1* | CFQ7TTC0HD33 | No |
 | Visio Plan 2* | CFQ7TTC0HD32 | No |
 | Viva Goals | CFQ7TTC0PW0V | Yes |

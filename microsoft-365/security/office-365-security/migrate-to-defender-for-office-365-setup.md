@@ -37,7 +37,7 @@ ms.date: 1/31/2023
 Welcome to **Phase 2: Setup** of your **[migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md#the-migration-process)**! This migration phase includes the following steps:
 
 1. [Create distribution groups for pilot users](#step-1-create-distribution-groups-for-pilot-users)
-2. [Configure user user reported message settings](#step-2-configure-user-reported-message-settings)
+2. [Configure user reported message settings](#step-2-configure-user-reported-message-settings)
 3. [Maintain or create the SCL=-1 mail flow rule](#step-3-maintain-or-create-the-scl-1-mail-flow-rule)
 4. [Configure Enhanced Filtering for Connectors](#step-4-configure-enhanced-filtering-for-connectors)
 5. [Create pilot protection policies](#step-5-create-pilot-protection-policies)
@@ -76,13 +76,13 @@ When you're ready to begin testing, add these groups as exceptions to [the SCL=-
 
 The ability for users to report false positives or false negatives from Defender for Office 365 is an important part of the migration.
 
-You can specify an Exchange Online mailbox to receive messages that users report as malicious or not malicious. For instructions, see [User reported message settings](submissions-user-reported-messages-files-custom-mailbox.md). This mailbox can receive copies of messages that your users submitted to Microsoft, or the mailbox can intercept messages without reporting them to Microsoft (you're security team can manually analyze and submit the messages themselves). However, the interception approach does not allow the service to automatically tune and learn.
+You can specify an Exchange Online mailbox to receive messages that users report as malicious or not malicious. For instructions, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md). This mailbox can receive copies of messages that your users submitted to Microsoft, or the mailbox can intercept messages without reporting them to Microsoft (you're security team can manually analyze and submit the messages themselves). However, the interception approach does not allow the service to automatically tune and learn.
 
 You should also confirm that all users in the pilot have a supported way to report messages that received an incorrect verdict from Defender for Office 365. These options include:
 
 - [The built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web)
 - [The Report Message and Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook)
-- Supported third party reporting tools as described [here](submissions-user-reported-messages-files-custom-mailbox.md#message-submission-format).
+- Supported third party reporting tools as described [here](submissions-user-reported-messages-custom-mailbox.md#message-submission-format).
 
 Don't underestimate the importance of this step. Data from user reported messages will give you the feedback loop that you need to verify a good, consistent end-user experience before and after the migration. This feedback helps you to make informed policy configuration decisions, as well as provide data-backed reports to management that the migration went smoothly.
 
@@ -142,8 +142,6 @@ By creating production policies, even if they aren't applied to all users, you c
 - Extremely low chance of false positives.
 - Similar behavior to anti-malware protection, which is always on and not affected by the SCL=-1 mail flow rule.
 
-Create a Safe Attachments policy for your pilot users.
-
 For the recommended settings, see [Recommended Safe Attachments policy settings](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Attachments policies](safe-attachments-policies-configure.md). Be sure to use the group **MDOPilot\_SafeAttachments** as the condition of the policy (who the policy applies to).
 
 > [!NOTE]
@@ -154,7 +152,7 @@ For the recommended settings, see [Recommended Safe Attachments policy settings]
 > [!NOTE]
 > We do not support wrapping or rewriting already wrapped or rewritten links. If your current protection service already wraps or rewrites links in email messages, you need to turn off this feature for your pilot users. One way to ensure this doesn't happen is to exclude the URL domain of the other service in the Safe Links policy.
 
-Create a Safe Links policy for your pilot users. Chances for false positives in Safe Links are also pretty low, but you should consider testing the feature on a smaller number of pilot users than Safe Attachments. Because the feature impacts the user experience, you should consider a plan to educate users.
+Chances for false positives in Safe Links are also pretty low, but you should consider testing the feature on a smaller number of pilot users than Safe Attachments. Because the feature impacts the user experience, you should consider a plan to educate users.
 
 For the recommended settings, see [Recommended Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-settings). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Links policies](safe-links-policies-configure.md). Be sure to use the group **MDOPilot\_SafeLinks** as the condition of the policy (who the policy applies to).
 
