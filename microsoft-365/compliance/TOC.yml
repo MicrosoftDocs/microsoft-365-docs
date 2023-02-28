@@ -1739,9 +1739,9 @@
           items:
             - name: Overview
               href: compliance-manager.md
-            - name: What's new in Compliance Manager
+            - name: What's new
               href: compliance-manager-whats-new.md
-            - name: Details of Compliance Manager changes for multi-cloud
+            - name: How Compliance Manager supports multi-cloud
               href: compliance-manager-whats-new.md
             - name: Glossary
               href: compliance-manager-whats-new.md
