@@ -56,7 +56,7 @@ The following table summarizes identified risk activities and extension support 
 
 ## Forensic evidence
 
-For forensic evidence, all types of browsing activities can be captured; you're not limited to the browsing indicators of the [Risky browser usage template](/microsoft-365/compliance/insider-risk-management-policy-templates#risky-browser-usage-preview). You can specify the desktop apps and websites that you want to include or exclude. For capturing browsing activity for forensic evidence, you must install the extensions as described in this topic, and you must also turn on at least one risky browsing indicator in the insider risk settings. 
+For forensic evidence, all types of browsing activities can be captured; you're not limited to the browsing indicators of the [Risky browser usage template](/microsoft-365/compliance/insider-risk-management-policy-templates#risky-browser-usage-preview). You can specify the desktop apps and websites that you want to include or exclude. To capture browsing activity for forensic evidence, you must install the extensions as described in this topic, and you must also turn on at least one risky browsing indicator in the insider risk settings. 
 
 ## Common requirements
 

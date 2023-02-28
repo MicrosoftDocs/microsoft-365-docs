@@ -77,12 +77,12 @@ To configure forensic evidence settings, complete the following steps:
 Forensic evidence policies define the scope of security-related user activity to capture for configured devices. There are two options for capturing forensic evidence:
 
 - **Capture only specific activities (such as printing or exfiltrating files).** With this option, you can choose the device activities that you want to capture and only the selected activities will be captured by the policy. You can also choose to capture activity for specific desktop apps and/or websites. This way you can focus on just the activities, apps, and websites that present risk. 
-- **Capture all activities that approved users perform on their devices.** This option is typically used for a specific period of time, for example, when a particular user is potentially involved in risky activity that may lead to a security incident. To preserve storage space and user privacy, you can choose to exclude specific desktop apps and/or websites from the capture. 
+- **Capture all activities that approved users perform on their devices.** This option is typically used for a specific period of time, for example, when a particular user is potentially involved in risky activity that may lead to a security incident. To preserve capacity and user privacy, you can choose to exclude specific desktop apps and/or websites from the capture. 
 
 After you create a policy, you'll include it in forensic evidence requests to control what activity to capture for users whose requests are approved.
 
 > [!NOTE]
-> Continuous forensic policies (capturing all activities) take precedence over selective forensic evidence policies(capturing only specific activities). 
+> Continuous forensic policies (capturing all activities) take precedence over selective forensic evidence policies (capturing only specific activities). 
 
 #### Capture only specific activities
 
