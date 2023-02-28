@@ -18,7 +18,7 @@ keywords:
 
 Many of the standard store apps displayed from within Microsoft Intune are freely available for you to add and deploy to members of your organization. In addition, you can purchase store apps for each device platform.
 
-::: image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-14.png" alt-text="iOS store apps in Microsoft Intune." border="false" :::
+:::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-14.png" alt-text="iOS store apps in Microsoft Intune." border="false" :::
 
 The following table provides the different categories available for store apps:
 
