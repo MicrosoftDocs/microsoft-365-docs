@@ -66,7 +66,7 @@ To configure forensic evidence settings, complete the following steps:
     >[!IMPORTANT]
     >The Microsoft Purview Client used to capture activity on users' devices is licensed under the Use of Software with the Online Services on the [Microsoft Product Terms](https://www.microsoft.com/licensing/product-licensing/products). Note that customers are solely responsible for using the insider risk management solution, including the Microsoft Purview Client, in compliance with all applicable laws.
  
-1. In the **Capturing window** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*. For capturing specific URLs of interest, options are based at the tenant level (not the policy level), and for the time duration set for the active window. 
+1. In the **Capturing window** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*. 
 1. In the **Upload bandwidth limit** section, define the amount of capture data to upload into your data storage account per user, per day. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
 1. In the **Offline capturing** section, enable offline capturing if needed. When enabled, users' offline activity is captured and uploaded to your data storage account the next time they're online.
 1. In the **Offline capturing cache limit** section, define the maximum cache size to store on users' devices when offline capturing is enabled. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
@@ -76,16 +76,13 @@ To configure forensic evidence settings, complete the following steps:
 
 Forensic evidence policies define the scope of security-related user activity to capture for configured devices. There are two options for capturing forensic evidence:
 
-- **Capture only specific activities (such as printing or exfiltrating files).** When using this option, to preserve storage space and user privacy, you can also choose to capture just specific desktop apps and/or websites. This way you can focus on just the activities, apps, and websites that present risk.
+- **Capture only specific activities (such as printing or exfiltrating files).** With this option, you can choose the device activities that you want to capture and only the selected activities will be captured by the policy. You can also choose to capture activity for specific desktop apps and/or websites. This way you can focus on just the activities, apps, and websites that present risk. 
 - **Capture all activities that approved users perform on their devices.** This option is typically used for a specific period of time, for example, when a particular user is potentially involved in risky activity that may lead to a security incident. To preserve storage space and user privacy, you can choose to exclude specific desktop apps and/or websites from the capture. 
-
-> [!IMPORTANT]
-> If you want to capture browsing activities (to include or exclude specific URLs in your forensic evidence policies), make sure to [install the necessary browser extensions](insider-risk-management-browser-support.md). You also need to turn on at least one browsing indicator. If you haven't already turned on one or more browsing indicators, you'll be prompted to do so if you choose to include or exclude desktop apps or websites. 
 
 After you create a policy, you'll include it in forensic evidence requests to control what activity to capture for users whose requests are approved.
 
 > [!NOTE]
-> Continuous recording policies (capturing all activities) takes precedence over app-recording and event-driven policies (capturing only specific activities). 
+> Continuous forensic policies (capturing all activities) take precedence over selective forensic evidence policies(capturing only specific activities). 
 
 #### Capture only specific activities
 
@@ -101,10 +98,18 @@ After you create a policy, you'll include it in forensic evidence requests to co
    1. Select any device activities that you want to capture. Only the selected activities will be captured by the policy. 
       > [!NOTE] 
       > If the indicators aren't selectable, you'll be prompted to turn them on. 
-   2. If you want to limit the capture to just particular desktop apps or websites in your policy, under **App and web browsing activities to capture**, select the **Opening a specific app or website** check box.  
+   2. You can also choose to capture activity for particular desktop apps and/or websites in your policy by selecting the  **Opening a specific app or website** check box under **App and web browsing activities to capture**. 
+
+   > [!IMPORTANT]
+   > If you want to capture browsing activities (to include or exclude specific URLs in your forensic evidence policies), make sure to [install the necessary browser extensions](insider-risk-management-browser-support.md). You also need to turn on at least one browsing indicator. If you haven't already turned on one or more browsing indicators, you'll be prompted to do so if you choose to include or exclude desktop apps or websites. 
+
    3. Select **Next**.
-8. (Optional) If you chose to limit the capture to just particular desktop apps and websites, in the **Add apps and websites you want to capture activity for** page:
-    1. To add a desktop app, select **Add desktop apps**, enter the name of an executable file (for example, teams.exe), and then select **Add**. Repeat this process for each desktop app that you want to add (up to 25 apps). To find the name of an executable file, open the Task Manager, and then view the properties for the app. Here's a list of common applications to consider including: Microsoft Edge (msedge.exe), Microsoft Excel (Excel.exe), the Snipping tool (SnippingTool.exe), Microsoft Teams (Teams.exe), Microsoft Word (WinWord.exe), and Microsoft Remote Desktop Connection (mstsc.exe).
+8. (Optional) If you chose to capture activity for particular desktop apps and websites, in the **Add apps and websites you want to capture activity for** page:
+    1. To add a desktop app, select **Add desktop apps**, enter the name of an executable file (for example, teams.exe), and then select **Add**. Repeat this process for each desktop app that you want to add (up to 25 apps). To find the name of an executable file for the app, open the Task Manager, and then view the properties for the app. Here's a list of exe names for some of the common applications: Microsoft Edge (msedge.exe), Microsoft Excel (Excel.exe), the Snipping tool (SnippingTool.exe), Microsoft Teams (Teams.exe), Microsoft Word (WinWord.exe), and Microsoft Remote Desktop Connection (mstsc.exe).
+
+    > [!NOTE]
+    > Sometimes, the exe names for an app might differ based on the device and the permissions with which the app was opened. For example, on a Windows 11 enterprise device, when Windows PowerShell is opened without administrator permissions, the exe name is WindowsTerminal.exe but when opened with administrator permissions, the exe name changes to powershell.exe. Make sure to include/exclude both exe names in such scenarios.
+
     2. To add a web app or website, select **Add web apps and websites**, enter a URL (for example, https://teams.microsoft.com), and then select **Add**. Repeat this process for each web app or website that you want to add. You can add up to 25 URLs with a character length of 100 for each URL. 
 
     > [!TIP]
@@ -127,7 +132,7 @@ After you create a policy, you'll include it in forensic evidence requests to co
 7. On the **Choose device activities to capture** page, if you want to exclude certain desktop apps and/or web apps or websites from the capture, under **App and web browsing activities to capture**, select the **Exclude specific apps or websites** check box. 
 9. Select **Next**.
 10. If you chose to exclude particular desktop apps and websites from the capture, in the **Exclude applications/URLs** page:
-    - To exclude a desktop app from the capture, select **Exclude desktop apps**, enter the name of an executable file (for example, teams.exe), and then select **Add**. Repeat this process for each desktop app that you want to exclude (up to 25 apps). To find the name of an executable file, open the Task Manager, and then view the properties for the app. 
+    - To exclude a desktop app from the capture, select **Exclude desktop apps**, enter the name of an executable file (for example, teams.exe), and then select **Add**. Repeat this process for each desktop app that you want to exclude (up to 25 apps). To find the name of an executable file for an app, open the Task Manager, and then view the properties for the app. 
     - To exclude a web app or website, select **Exclude web apps and websites**, enter a URL (for example, https://teams.microsoft.com), and then select **Add**. Repeat this process for each web app or website that you want to exclude. You can exclude up to 25 URLs with a character length of 100 for each URL. 
 
     > [!TIP]

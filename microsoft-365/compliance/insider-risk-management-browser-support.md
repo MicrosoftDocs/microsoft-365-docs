@@ -27,9 +27,9 @@ ms.collection:
 In Microsoft Purview Insider Risk Management, browser signal detection is used for:
 
 - The [Risky browser usage template](/microsoft-365/compliance/insider-risk-management-policy-templates#risky-browser-usage-preview)
-- [Session captures](/microsoft-365/compliance/insider-risk-management-forensic-evidence#capturing-options)
+- [Forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence#capturing-options)
 
-## Risky browsing usage template
+## Risky browser usage template
 
 Web browsers are often used by users to access both sensitive and non-sensitive files within an organization. Insider risk management allows your organization to detect and act on browser exfiltration signals for all non-executable files viewed in [Microsoft Edge](https://www.microsoft.com/edge) and [Google Chrome](https://www.google.com/chrome) browsers. With these signals, analysts and investigators can quickly act when any of the following risk activities are performed by in-scope policy users when using these browsers:
 
@@ -54,9 +54,9 @@ The following table summarizes identified risk activities and extension support 
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Session captures
+## Forensic evidence
 
-For session captures, you can capture everything, not just the items available through the [Risky browser usage template](/microsoft-365/compliance/insider-risk-management-policy-templates#risky-browser-usage-preview). You can also specify the desktop apps and websites that you want to include or exclude. For session captures you must install the extensions as described in this topic, and you must also turn on at least one browsing indicator. 
+For forensic evidence, all types of browsing activities can be captured; you're not limited to the browsing indicators of the [Risky browser usage template](/microsoft-365/compliance/insider-risk-management-policy-templates#risky-browser-usage-preview). You can specify the desktop apps and websites that you want to include or exclude. For capturing browsing activity for forensic evidence, you must install the extensions as described in this topic, and you must also turn on at least one risky browsing indicator in the insider risk settings. 
 
 ## Common requirements
 
