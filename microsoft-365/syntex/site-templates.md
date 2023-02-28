@@ -21,6 +21,16 @@ description: Learn how to provision, use, and customize the site templates for M
 SharePoint site templates for Microsoft Syntex are prebuilt, ready-to-deploy, and customizable. Use these templates to create a professional site to manage, process, and track the status of business documents in your organization.
 
 
+|Site template name |Description  |
+|---------|---------|
+|![Thumbnail image for the accounts payable site template.](../media/content-understanding/site-template-accounts-payable-thumbnail.png)<br>**Accounts payable**      |**Accounts payable**<br>
+Manage, process, and track purchase orders, invoices, and related files. <br>[Find in the SharePoint site template library](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f)         |
+|Row2     |         |
+|Row3     |         |
+
+
+
+
 |Site template  |Description  |Site capabilites  |
 |---------|---------|---------|
 |![Thumbnail image for the accounts payable site template.](../media/content-understanding/site-template-accounts-payable-thumbnail.png)<br>**Accounts payable**    | **Accounts payable**<br>
