@@ -262,7 +262,7 @@ To help minimize the number of older items that provide limited current value, t
 |Active cases (and associated artifacts)|Indefinite retention, never expire|
 |Resolved cases (and associated artifacts)|120 days from case resolution, then automatically deleted|
 |Maximum number of active cases|100|
-|User activities reports|30 days from report creation, then automatically deleted|
+|User activities reports|120 days from activity creation, then automatically deleted|
 
 ## Get help managing your insider risk alert queue
 
