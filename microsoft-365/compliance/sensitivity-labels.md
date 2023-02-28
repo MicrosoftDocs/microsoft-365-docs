@@ -130,15 +130,18 @@ For more label configurations, see [Manage sensitivity labels for Office apps](s
 
 ### Label scopes
 
-When you create a sensitivity label, you're asked to configure the label's scope, which determines two things:
+When you create a sensitivity label, you're asked to configure the label's scope, which determines three things:
 - Which label settings you can configure for that label
 - Where the label will be visible to users
+- Whether the label is available to apps and services
 
-This scope configuration lets you have sensitivity labels that are just for items such as documents and emails, and can't be selected for containers. And similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. You can also select the scope for schematized data assets for Microsoft Purview Data Map:
+This scope configuration lets you have sensitivity labels that are just for items such as documents and emails, and can't be selected for containers. Similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. You can also select the scope for schematized data assets for Microsoft Purview Data Map:
 
-![Scope options for sensitivity labels.](../media/sensitivity-labels-scopes.png)
+:::image type="content" source="../media/sensitivity-labels-scopes.png" alt-text="Scope options for sensitivity labels..":::
 
-By default, the **Items** scope (previously named **Files & emails**) is always selected. Optionally, include meetings with this scope for calendar events, Teams meetings options, and Team chat. The other scopes are selected by default when the features are enabled for your tenant:
+The **Items** scope can further be refined to [files  and emails](sensitivity-labels-office-apps.md#scope-labels-to-just-word-excel-and-powerpoint-or-to-just-outlook), and to [meetings](sensitivity-labels-meetings.md) that includes calendar events, Teams meetings options, and Team chat. For example, use this refinement when you want a sensitivity label to be available for emails only.
+
+By default, the **Items** scope is always selected. Optionally, include meetings with this scope for calendar events, Teams meetings options, and Team chat. The other scopes are selected by default when the features are enabled for your tenant:
 
 - **Groups & sites**: See [Enable sensitivity labels for containers and synchronize labels](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
