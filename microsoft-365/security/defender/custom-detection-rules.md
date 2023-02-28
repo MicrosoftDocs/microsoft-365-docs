@@ -161,7 +161,7 @@ Near real-time detections are supported for the following tables:
 - `UrlClickEvents` 
 
 >[!NOTE]
-> Only columns that are generally available can support continuous frequency.
+> Only columns that are generally available can support **Continuous (NRT)** frequency.
 
 ### 3. Choose the impacted entities.
 Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses. Identifying which of these columns represent the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.

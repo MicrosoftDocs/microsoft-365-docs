@@ -40,10 +40,13 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## March 2023
+
+- (Preview) [Continuous frequency](custom-detection-rules.md) is now available for public preview in advanced hunting custom detections. Continuous (NRT) frequency checks data from events as they are collected and processed in near real-time.
 ## February 2023
 
 - (GA) The [query resources report in advanced hunting](advanced-hunting-limits.md#view-query-resources-report-to-find-inefficient-queries) is now generally available.
-- (Preview) [Continuous frequency](custom-detection-rules.md) is now available for public preview in advanced hunting custom detections. Continuous frequency checks data from events as they are collected and processed in near real-time.
+
 
 ## January 2023
 
