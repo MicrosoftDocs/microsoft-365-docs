@@ -39,6 +39,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## March 2023
+
+### Sensitivity labels
+
+- **General availability (GA)**: [Default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md).
+
 ## February 2023
 
 ### Communication compliance
