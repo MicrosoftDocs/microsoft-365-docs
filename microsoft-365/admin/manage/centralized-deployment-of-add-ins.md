@@ -79,7 +79,7 @@ Microsoft Exchange stores the add-in manifests within your organization's tenant
 
 Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet.
 
-### Exchange Online User Role Requirements
+### Exchange Online user role requirements
 
 Use the classic Exchange Admin Center (EAC) to assign permissions to users. The permissions required to view and modify deployed add-ins are below.
 
