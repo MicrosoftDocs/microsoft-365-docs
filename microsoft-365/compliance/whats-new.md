@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/27/2023
+ms.date: 02/28/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -65,6 +65,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **In preview**: New [Adaptive Protection guidance](/microsoft-365/compliance/insider-risk-management-adaptive-protection). Adaptive Protection in Microsoft Purview uses machine learning to identify and mitigate the most critical risks with the most effective [data loss prevention (DLP)](/microsoft-365/compliance/dlp-adaptive-protection-learn) protection controls dynamically, saving security teams valuable time while ensuring better data security.
 
+### On-premises scanner
+
+- You can no longer configure the scanner in the Azure portal. To help you locate the equivalent configuration in the Microsoft Purview compliance portal, see [Configuration that you used to do in the Azure portal for Azure Information Protection](azure-portal-migration.md).
+
 ### Permissions
 
 - **In preview**: [Support for Azure Active Directory administrative units](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#administrative-units-preview). Administrative units let you subdivide your organization into smaller units, and then assign specific administrators that can manage only the members of those units.
@@ -76,7 +80,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **In preview**: [Support for Azure Active Directory administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units).
 - **In preview**: Previously available in preview for Word, Excel, and PowerPoint, the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) with support for [label colors](sensitivity-labels-office-apps.md#label-colors) is now also in preview for Outlook on Windows.
 - **In preview**: Now supported for labeling built into Windows, macOS, iOS, and Android, auditing actions for sensitivity labels include encryption details such as a change in the encryption status and settings, and the Rights Management owner.
-- New Office setting if you need to [disable the PDF support in Office apps for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#disabling-pdf-support).
+- **New Office setting**: Available with Group Policy and the Cloud Policy service for Microsoft 365, a new setting if you need to [disable the PDF support in Office apps for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#disabling-pdf-support).
+- **Rolling out**: In the Microsoft Purview compliance portal, the horizontal tabs for **Overview**, **Labels**, **Label policies**, and **Auto-labeling** now display as vertical options in the left navigation pane when you expand **Information protection**.
 
 ## January 2023
 
