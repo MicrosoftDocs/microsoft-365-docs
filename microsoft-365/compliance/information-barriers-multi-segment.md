@@ -85,7 +85,7 @@ With segments and policies defined, the North School District applies the polici
 
 ## Check the IB mode for your organization
 
-If you want to support assigning users to multiple segments, you'll need to verify that your IB organization supports multiple segments. Run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps):
+If you want to support assigning users to multiple segments, you'll need to verify that your IB organization supports multiple segments. Run the following cmdlet to verify your IB mode:
 
 ```powershell
 Get-PolicyConfig
@@ -97,7 +97,7 @@ If the value of the `InformationBarrierMode` property is *Legacy*, enabling mult
 
 ## Enable multiple segment support for users
 
-To enable multi-segment support for your organization, run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+To enable multi-segment support for organizations in *SingleSegment* mode, run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
 
 ```powershell
 Enable-ExoInformationBarrierMultiSegment
