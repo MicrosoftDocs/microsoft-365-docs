@@ -15,12 +15,12 @@ ms.collection:
 - m365-security
 - tier1
 ms.custom:
-description: Learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
+description: Learn how to manage allow entries and block entries in the Tenant Allow/Block List in the Security portal.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
 
-# Manage your allows and blocks in the Tenant Allow/Block List
+# Manage allows and blocks in the Tenant Allow/Block List
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -51,7 +51,7 @@ These articles contain procedures in the Microsoft 365 Defender Portal and in Po
 > [!NOTE]
 > In the Tenant Allow/Block List, block entries take precedence over allow entries.
 
-Use the Submissions portal (also known as *admin submission*) at <https://security.microsoft.com/reportsubmission> to create block entries for the following types of items as you report them as false negatives to Microsoft:
+Use the Submissions page (also known as *admin submission*) at <https://security.microsoft.com/reportsubmission> to create block entries for the following types of items as you report them as false negatives to Microsoft:
 
 - **Domains and email addresses**:
   - Email messages from these senders are marked as *high confidence spam* (SCL = 9). What happens to the messages is determined by the [anti-spam policy](anti-spam-policies-configure.md) that detected the message for the recipient. In the default anti-spam policy and new custom policies, messages that are marked as high confidence spam are delivered to the Junk Email folder by default. In Standard and Strict [preset security policies](preset-security-policies.md), high confidence spam messages are quarantined.
@@ -60,7 +60,7 @@ Use the Submissions portal (also known as *admin submission*) at <https://securi
   > [!NOTE]
   > To block only spam from a specific sender, add the email address or domain to the block list in [anti-spam policies](anti-spam-policies-configure.md). To block all email from the sender, use **Domains and email addresses** in the Tenant Allow/Block List.
 
-- **Files**: Email messages that contain these blocked files are marked as malware and moved to quarantine.
+- **Files**: Email messages that contain these blocked files are blocked as *malware*. Messages contatining the blocked files are quarantined.
 
 - **URLs**: Email messages that contain these blocked URLs are blocked as *high confidence phishing*. Messages containing the blocked URLs are quarantined.
 
@@ -76,41 +76,43 @@ By default, block entries for **domains and email addresses**, **files** and **U
 
 In most cases, you can't directly create allow entries in the Tenant Allow/Block List:
 
-- **Domains and email addresses**, **files**, and **URLs**: You can't create allow entries directly in the Tenant Allow/Block List. Instead you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report the **email**, **email attachment**, or **URL** to Microsoft as **Should not have been blocked (False positive)**.
+- **Domains and email addresses**, **files**, and **URLs**: You can't create allow entries directly in the Tenant Allow/Block List. Instead you use the Submissions page at <https://security.microsoft.com/reportsubmission> to report the **email**, **email attachment**, or **URL** to Microsoft as **Should not have been blocked (False positive)**.
 
 - **Spoofed senders**:
-  - If spoof intelligence has already blocked the message as spoofing, use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report the **email** to Microsoft as **Should not have been blocked (False positive)**.
+  - If spoof intelligence has already blocked the message as spoofing, use the Submissions page at <https://security.microsoft.com/reportsubmission> to report the **email** to Microsoft as **Should not have been blocked (False positive)**.
   - You can proactively create an allow entry for a spoofed sender on the **Spoofed sender** tab in the Tenant Allow/Block List before [spoof intelligence](anti-spoofing-spoof-intelligence.md) identifies and blocks the message as spoofing.
 
-The following list describes what happens in the Tenant Allow/Block List when you report something to Microsoft as a false positive in the Submissions portal:
+The following list describes what happens in the Tenant Allow/Block List when you report something to Microsoft as a false positive on the Submissions page:
 
-- **Email attachments** and **URLs**: An allow entry is created and it appears on the **Files** or **URLs** tab in the Tenant Allow/Block List.
+- **Email attachments** and **URLs**: An allow entry is created and the entry appears on the **Files** or **URLs** tab in the Tenant Allow/Block List.
 
 - **Email**: If a message was blocked by the Microsoft 365 filtering stack, an allow entry might be created in the Tenant Allow/Block List:
-
-  - If the message was blocked by [spoof intelligence](anti-spoofing-spoof-intelligence.md), an allow entry for the sender is created, and it appears on the **Spoofed senders** tab in the Tenant Allow Block List.
-
+  - If the message was blocked by [spoof intelligence](anti-spoofing-spoof-intelligence.md), an allow entry for the sender is created, and the entry appears on the **Spoofed senders** tab in the Tenant Allow Block List.
   - If the message was blocked by [domain or user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Defender for Office 365, an allow entry is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
+  - If the message was blocked due to file-based filers, an allow entry for the file is created, and the entry appears on the **Files** tab in the Tenant Allow Block List.
+  - If the message was blocked due to URL-based filters, an allow entry for the URL is created, and the entry appears on the **URL** tab in the Tenant Allow Block List.
+  - If the message was blocked for any other reason, an allow entry for the sender email address or domain is created, and the entry appears on the **Domains & addresses** tab in the Tenant Allow Block List.
+  - If the message was not blocked due to filtering, no allow entries are created anywhere.
 
   - If the message was blocked for other reasons, an allow entry for the sender is created, and it appears on the **Domains & addresses** tab in the Tenant Allow Block List.
 
   - If the message was not blocked, and an allow entry for the sender is not created, it won't show on the **Spoofed senders** tab or the **Domains & addresses** tab.
 
-By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.
+By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from these allow entries, messages that contain these entities will be delivered, unless something else is the message is detected as malicious. By default, allow entries for spoofed senders never expire.
 
 > [!NOTE]
-> Microsoft does not allow you to create allow entries directly as it leads to creation of allows that are not needed, thus exposing the customer's tenant to malicious emails which might otherwise have been filtered by the system.
+> Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
-> Microsoft manages the allow creation process from Submission by creating allows for those entities (domains or email addresses, spoofed senders, URLs, files) which were determined to be malicious by filters during mail flow. For example, if the sender and a URL in the message were determined to be bad, an allow entry is created for the sender, and an allow entry is created for the URL.
+> Microsoft manages the creation of allow entries from the Submissions page. Allow entries are added during mail flow based on the filters that determined the message was malicious. For example, if the sender email address and a URL in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the URL.
 >
-> When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are skipped.
+> When that domain, email address, file, or URL (*entity*) is encountered again (during mail flow or time of click), all filters associated with that entity are skipped.
 >
-> During mail flow, if messages from the domain or email address pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message from a sender in the allow entry will be delivered.
+> During mail flow, if messages containing the entity in the allow entry pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md), URL filtering and file filter pass the checks, a message from a sender email address in the allow entry will be delivered.
 
 ## What to expect after you add an allow or block entry
 
-After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately 99.999% of the time. For the rest, it could take up to 24 hours.
+After you add an allow entry on the Submissions page or a block entry in the Tenant Allow/Block List, the entry should start working immediately 99.999% of the time. For the rest, it could take up to 24 hours.
 
-An allow is created by default for a period of 30 calendar days so that Microsoft could learn from it and then remove it. With **[allow expiry management](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447)**, if Microsoft has not learned from the allow entry, Microsoft will automatically extend the expiry time of allow entries that will soon expire by another 30 days. This extension helps to prevent legitimate email from going to junk or quarantine again. If Microsoft does not learn within 90 calendar days from the date of the original creation of the allow entry, Microsoft will remove the allow entry. You will be kept informed throughout the process using emails.
+An allow is created by default for a period of 30 calendar days so that Microsoft could learn from it and then remove it. With **[allow expiry management](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447)**, if Microsoft has not learned from the allow entry, Microsoft will automatically extend the expiry time of allow entries that will soon expire by another 30 days. This extension  prevents legitimate email from going to junk or quarantine or legitimate URL or file from being blocked at time of click. If Microsoft does not learn within 90 calendar days from the date of the original creation of the allow entry, Microsoft will remove the allow entry. You will be kept informed throughout the process using emails.
 
 If Microsoft has learned from the allow entry, the entry will be removed, and you'll get an alert informing you about it.
