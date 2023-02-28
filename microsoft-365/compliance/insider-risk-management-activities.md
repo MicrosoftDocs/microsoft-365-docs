@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/16/2023
+ms.date: 02/28/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -208,13 +208,13 @@ The Activity explorer provides risk investigators and analysts with a comprehens
 
 To filter alerts on the Activity explorer for column information, select the Filter control. You can filter alerts by one or more attributes listed in the details pane for the alert. Activity explorer also supports customizable columns to help investigators and analysts focus the dashboard on the information most important to them.
 
-Use the *Activity scope* and *Risk insight* filters to display and sort activities and insights for the following areas.
+Use the *Activity scope*, *Risk factor*, and *Review status* filters to display and sort activities and insights for the following areas.
 
-- **Activity scope filters**: Filters all scored activities for the user.
+- **Activity scope**: Filters all scored activities for the user.
   - All scored activity for this user
   - Only scored activity in this alert
 
-- **Risk factor filters**: Filters for risk factor activity applicable for all policies assigning risk scores This includes all activity for all policies for in-scope users.
+- **Risk factor**: Filters for risk factor activity applicable for all policies assigning risk scores This includes all activity for all policies for in-scope users.
   - Unusual activity
   - Includes events with priority content
   - Includes events with unallowed domain
@@ -222,6 +222,10 @@ Use the *Activity scope* and *Risk insight* filters to display and sort activiti
   - Cumulative exfiltration activities
   - Health record access activities
   - Risky browser usage
+
+- **Review status**: Filters activity review status.
+  - All
+  - Not yet reviewed (filters out any activity that was part of a dismissed or resolved alert)
 
 ![Insider risk management activity explorer overview](../media/insider-risk-activity-explorer.png)
 
