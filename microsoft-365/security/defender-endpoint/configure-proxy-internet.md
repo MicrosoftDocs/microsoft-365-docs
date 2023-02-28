@@ -192,7 +192,7 @@ In your firewall, open all the URLs where the geography column is WW. For rows w
 > URLs that include v20 in them are only needed if you have Windows devices running version 1803 or later. For example, `us-v20.events.data.microsoft.com` is needed for a Windows device running version 1803 or later and onboarded to US Data Storage region.
 >
 
-If a proxy or firewall is blocking anonymous traffic as Defender for Endpoint sensor, and it's connecting from system context to make sure anonymous traffic is permitted in the previously listed URLs.
+If a proxy or firewall is blocking anonymous traffic from the Defender for Endpoint sensor, and it's connecting from system context , it's important to make sure anonymous traffic is permitted in your proxy or firewall for the previously listed URLs.
 
 > [!NOTE]
 > Microsoft does not provide a proxy server. These URLs are accessible via the proxy server that you configure.
