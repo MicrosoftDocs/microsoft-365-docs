@@ -15,12 +15,12 @@ ms.collection:
 - m365-security
 - tier1
 ms.custom:
-description: Learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
+description: Learn how to manage allow entries and block entries in the Tenant Allow/Block List in the Security portal.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
 
-# Manage your allows and blocks in the Tenant Allow/Block List
+# Manage allows and blocks in the Tenant Allow/Block List
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -98,16 +98,16 @@ The following list describes what happens in the Tenant Allow/Block List when yo
 
   - If the message was not blocked, and an allow entry for the sender is not created, it won't show on the **Spoofed senders** tab or the **Domains & addresses** tab.
 
-By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from these allow entries, messages that contain these entities will be delivered, unless something else is the message is detected as malicious. By default, allow entries for spoofed senders never expire. 
+By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from these allow entries, messages that contain these entities will be delivered, unless something else is the message is detected as malicious. By default, allow entries for spoofed senders never expire.
 
 > [!NOTE]
-> Microsoft does not allow you to create allow entries directly as it leads to creation of allows that are not needed, thus exposing the customer's tenant to malicious emails which might otherwise have been filtered by the system.
+> Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
-> Microsoft manages the creation of allow entries from the Submissions page. Allow entries are created for domains or email addresses, spoofed senders, files, or URLs (_entities_) that were determined to be malicious by filters during mail flow. For example, if the sender and a URL in the message are both determined to be bad, an allow entry for the sender email address and an allow entry for the URL are created.
+> Microsoft manages the creation of allow entries from the Submissions page. Allow entries are added during mail flow based on the filters that determined the message was malicious. For example, if the sender email address and a URL in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the URL.
 >
-> When that entity (domain or email address, URL, file) is encountered again either during mailflow or time of click, all filters associated with that entity are skipped.
+> When that domain, email address, file, or URL (*entity*) is encountered again (during mail flow or time of click), all filters associated with that entity are skipped.
 >
-> During mail flow, if messages containing the allow entity passes the other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) and URL and file based filtering passes, a message from a sender email address in the allow entry will be delivered.
+> During mail flow, if messages containing the entity in the allow entry pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md), URL filtering and file filter pass the checks, a message from a sender email address in the allow entry will be delivered.
 
 ## What to expect after you add an allow or block entry
 
