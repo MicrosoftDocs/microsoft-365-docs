@@ -39,16 +39,6 @@ Many customers use custom keyword lists for compliance scenarios. Understanding 
 
 It’s important to understand the volume of items classified by trainable classifiers and sensitive information types. You can use the [Content explorer](data-classification-content-explorer.md) in the data classification dashboard to help you understand the volume that you can expect for your organization. 
 
-## Filter email blasts
-
-You can [filter out email messages](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) that are generic and intended for mass communication. For example, filter out spam, newsletters, and so on. 
-
-## Filter out email signatures/disclaimers 
-
-Sensitive information types can be triggered from footers in emails, such as disclaimers. If many of your non-actionable alerts come from a specific set of sentences or phrases in an email signature or disclaimer, you can [filter out the email signature or disclaimer](sit-common-scenarios.md#ignore-a-disclaimer-notice). 
-
-## Understand trainable classifiers volume level
-
 When you first start using trainable classifiers, you might not get enough matches, or you might get too many matches. The following table shows the volume level to expect for different types of trainable classifiers.
 
 |Trainable classifier|Volume|
@@ -68,6 +58,14 @@ When you first start using trainable classifiers, you might not get enough match
 |Unauthorized disclosure (preview)|High|
 
 Consider using the Adult images classifier instead of the Racy images classifier since the Adult images classifier detects a more explicit image. You can use the Content explorer page to help you understand the volume that you can expect for your organization for each of the trainable classifiers.
+
+## Filter email blasts
+
+You can [filter out email messages](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) that are generic and intended for mass communication. For example, filter out spam, newsletters, and so on. 
+
+## Filter out email signatures/disclaimers 
+
+Sensitive information types can be triggered from footers in emails, such as disclaimers. If many of your non-actionable alerts come from a specific set of sentences or phrases in an email signature or disclaimer, you can [filter out the email signature or disclaimer](sit-common-scenarios.md#ignore-a-disclaimer-notice).
 
 ## Use sentiment evaluation
 
