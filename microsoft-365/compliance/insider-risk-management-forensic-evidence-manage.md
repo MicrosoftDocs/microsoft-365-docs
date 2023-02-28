@@ -18,7 +18,7 @@ ms.collection: m365-security-compliance
 # Manage insider risk management forensic evidence
 
 > [!IMPORTANT]
-> Forensic evidence is an opt-in add-in feature in Insider Risk Management that gives security teams visual insights into potential insider data security incidents, with user privacy built in. Forensic evidence includes customizable event triggers and built-in user privacy protection controls, enabling security teams to better investigate, understand and respond to potential insider data risks like unauthorized data exfiltration of sensitive data.
+> Forensic evidence is an opt-in add-on feature in Insider Risk Management that gives security teams visual insights into potential insider data security incidents, with user privacy built in. Forensic evidence includes customizable event triggers and built-in user privacy protection controls, enabling security teams to better investigate, understand and respond to potential insider data risks like unauthorized data exfiltration of sensitive data.
 >
 > Organizations set the right policies for themselves, including what risky events are highest priority for capturing forensic evidence and what data is most sensitive.   Forensic evidence is off by default, policy creation requires dual authorization and usernames can be masked with pseudonymization (which is on by default for Insider Risk Management).  Setting up policies and reviewing security alerts within Insider Risk Management leverages strong role-based access controls (RBAC), ensuring that the designated individuals in the organization are taking the right actions with additional auditing capabilities.
 
@@ -126,8 +126,8 @@ Each captured clip includes the following information:
 - **Device**: The name of the device in Windows 10/11.
 - **Activities**: The insider risk management activity type included in the capture. These activities are based on global and policy indicators assigned to the associated policy.
 - **User**: The name of the user.
-- **URL**: The URL that the user was accessing when the activity took place.
-- **Application**: The application that the user was accessing when the activity took place.
+- **URL** (if applicable): The URL that the user was accessing when the activity took place.
+- **Application** (if applicable): The application that the user was accessing when the activity took place.
 - **Active window title**: The title of the window that the user was accessing when the activity took place.
 
 To view a captured clip:
@@ -146,7 +146,7 @@ You can use the filters above the captured clips list to filter for specific act
 
 - Each filter supports up to 10 unique IDs so, for example, you can filter on up to 10 users at one time. 
 - Use the **URL name** filter to match a domain name or to search for any keyword after matching a domain. For example, entering "SharePoint" as a keyword returns any URL that includes "SharePoint" anywhere in the URL.  
-- With the **App name** filter, you can filter by **Contains any of** or **Contains all of**. For example, if you select **Contains any of** and enter "Google.com,Facebook.com", you could have one clip that captures Google.com and another that captures Facebook.com. If you select **Contains all of** and enter "Google.com,Facebook.com", any captures would have to contain both domains. 
+- With the **App name** filter, you can filter by **Contains any of** or **Contains all of**. For example, if you select **Contains any of** and enter "Contoso.com,Contoso2.com", you could have one clip that captures Contoso.com and another that captures Contoso2.com. If you select **Contains all of** and enter "Contoso.com,Contoso2.com", any captures would have to contain both domains. 
 - The **Active window title** filter behaves the same way as the **App name** filter. 
 
 #### Deleting clips 
@@ -163,7 +163,7 @@ Users assigned to the *Insider Risk Management Admins* role group can do bulk de
 3. Under **Delete a user's** data, click **Select a user**, and then select the user that you want to delete clips for. 
 
 > [!IMPORTANT]
-> Forensic evidence clips are deleted 120 days after they're captured. You can download or transfer forensic evidence clips before they're deleted.
+> Forensic evidence clips are deleted 120 days after they're captured. You can export or transfer forensic evidence clips before they're deleted.
 
 ### Alerts dashboard
 
@@ -242,11 +242,18 @@ Contact Microsoft Support if the recommended actions don't resolve issues with t
 
 When forensic evidence is configured, you can opt in to purchase the forensic evidence add-on for Insider Risk Management for your captured clips. The add-on is available for organizations with any of the following licenses: Microsoft 365 E5, Microsoft 365 E5 Compliance, or Microsoft 365 E5 Insider Risk Management. 
 
-You can purchase the add-on in units of 100 GB per month. The purchased capacity is metered based on forensic evidence captures at the tenant level for users included in forensic evidence policies. 100 GB is roughly equal to around 1,100 hours of forensic evidence captures per tenant, at a video resolution of 1080p. You can [download the capacity calculator](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2f%2fwww.microsoft.com%2fen-us%2fdownload%2fdetails.aspx%3Fid%3D105023&data=05%7C01%7Cv-jeffbo%40microsoft.com%7Cf7f028afc02f44aa8a9208db15f6eb64%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638127922472919546%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=LyofMcJOvda1XX7Nb5Q%2BNXi%2f9UGTCi1DlA8OMDIQMJ4%3D&reserved=0) to help estimate the number of GBs needed per month. 
+You can purchase the add-on in units of 100 GB per month. The purchased capacity is metered based on forensic evidence ingested at the tenant level for users included in forensic evidence policies. 100 GB is roughly equal to around 1,100 hours of forensic evidence captures per tenant, at a video resolution of 1080p. You can [download the capacity calculator](https://aka.ms/ForensicEvidenceCapacityCalculator) to help estimate the number of GBs needed per month. 
 
 Each add-on license is valid for one month (30 days) from the date of purchase. You can purchase multiple licenses at the same time, but each forensic evidence add-on license is valid for just one month from the date of purchase. The unused capacity is forfeited when the license expires.   
 
-The 100 GB is calculated based on the volume of forensic evidence captured from endpoints. Once the forensic evidence is captured, it will be retained for 120 days. You can export forensic evidence if needed after the 120-day retention period. 
+The 100 GB is calculated based on the volume of forensic evidence ingested from endpoints. Once the forensic evidence is ingested, it will be retained for 120 days. You can export forensic evidence if needed after the 120-day retention period. 
+
+### Payment plans
+
+There are two payment plans available when purchasing the add-on through the Microsoft 365 admin center:
+
+- **Pay yearly (available in all channels).** The annual commitment option allows you to buy the number of licenses you specify each month for 12 months. It’s suitable for customers who want to ensure they have capacity available each month to ingest forensic evidence without interruption. This payment plan will automatically replenish the number of licenses purchased each month. The license is still valid for one month from the date of purchase, and the unused capacity will be forfeited when the license expires. Customers can choose to be billed one time or split the bill into 12 monthly payments.
+- **Pay monthly (only available in web direct).** If you don't want to make an annual commitment, you can buy the number of licenses needed each month. The license is valid for one month from the date of purchase and the unused capacity will be forfeited when the license expires.
 
 ### Can I try the forensic capability before purchasing it?
 
@@ -257,7 +264,7 @@ Each tenant that has a Microsoft 365 E5, Microsoft 365 E5 Compliance, or Microso
 
 The 20 GB of capacity available through the trial license doesn't have any time limit and is available until you use up the full 20 GB. If you don't use up the full 20 GB in one year, you can reactivate it. If you purchase a forensic evidence add-on license prior to using the trial capacity, you will be able to use the remaining trial capacity until it’s used up before the system starts metering the purchased capacity.    
 
-If you use up the 20 GB of trial capacity and don't subsequently purchase the forensic add-on for Insider Risk Management, you'll be able to view any clips that you've already captured but won't be able to capture any new clips. 
+If you use up the 20 GB of trial capacity and don't subsequently purchase the forensic add-on for Insider Risk Management, you'll be able to view any clips that you've already ingested but won't be able to ingest any new clips. 
 
 #### Sign up for the 20-GB trial license
 
