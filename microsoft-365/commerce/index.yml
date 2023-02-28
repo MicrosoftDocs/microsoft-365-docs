@@ -19,7 +19,7 @@ metadata:
   author: cmcatee-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: cmcatee #Required; microsoft alias of author; optional team alias.
   manager: scotv
-  ms.date: 02/15/2023 #Required; mm/dd/yyyy format.
+  ms.date: 02/28/2023 #Required; mm/dd/yyyy format.
   ms.localizationpriority: medium
   search.appverid: MET150
 
@@ -41,8 +41,7 @@ landingContent:
             url: billing-and-payments/pay-for-your-subscription.md
           - text: Understand your bill or invoice
             url: billing-and-payments/understand-your-invoice2.md
-          - text: Turn recurring billing on or off
-            url: subscriptions/renew-your-subscription.md
+
       - linkListType: video
         links:
           - text: Understand your bill or invoice
@@ -81,6 +80,8 @@ landingContent:
             url: ../admin/get-help-with-domains/buy-a-domain-name.md
 #          - text: Upgrade to a different plan 
 #            url: subscriptions/upgrade-to-different-plan.md
+          - text: Turn recurring billing on or off
+            url: subscriptions/renew-your-subscription.md
           - text: Cancel your subscription
             url: subscriptions/cancel-your-subscription.md
           - text: Close your account
