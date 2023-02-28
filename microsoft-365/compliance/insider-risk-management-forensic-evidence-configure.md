@@ -42,7 +42,7 @@ Additionally, you'll need to add the following domain to your firewall allowlist
 Captures and capture data are stored at this domain and is assigned only to your organization. No other Microsoft 365 organization has access to forensic evidence captures for your organization.
 
 > [!NOTE]
-> Forensic evidence is stored in one region where your Exchange Online Protection (EOP) or exchange region is set.
+> Forensic evidence data is stored in one region where your Exchange Online Protection (EOP) or exchange region is set.
 
 ### Step 2: Configure supported devices
 
