@@ -70,9 +70,7 @@ For more information, see [User tags in Microsoft Defender for Office 365](user-
 
 > [!NOTE]
 > Currently, you can only apply user tags to mailbox users. 
-> 
-> Your organization can tag a maximum of 250 users using the Priority account system tag. 
-> 
+> Your organization can tag a maximum of 250 users using the Priority account tag. 
 > Each custom tag has a maximum of 10,000 users per tag and your organization can create up to 500 custom tags.
 
 ## Review differentiated protection from priority account protection
