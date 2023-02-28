@@ -73,7 +73,7 @@ Centralized Deployment doesn't support the following:
 
     *MSI versions of Outlook show admin-installed add-ins in the appropriate Outlook ribbon, not the "My add-ins" section.
 
-### Exchange Online Requirements
+### Exchange Online requirements
 
 Microsoft Exchange stores the add-in manifests within your organization's tenant. The admin deploying add-ins and the users receiving those add-ins must be on a version of Exchange Online that supports OAuth authentication.
 
