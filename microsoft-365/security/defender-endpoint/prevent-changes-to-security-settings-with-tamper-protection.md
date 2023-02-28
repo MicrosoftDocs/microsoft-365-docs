@@ -119,7 +119,7 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 
 ### How to determine whether the functionality to protect exclusions is enabled on a Windows device
 
-You can use a registry key to determine whether the functionality to protect Microsoft Defender Antivirus exclusions is enabled.
+You can use a registry key to determine whether the functionality to protect Microsoft Defender Antivirus exclusions is enabled. Note that the following procedure describes how to view, but not change, tamper protection status.
 
 1. On a Windows device open Registry Editor. (Read-only mode is fine; you won't be editing the registry key.)
 
@@ -133,7 +133,7 @@ You can use a registry key to determine whether the functionality to protect Mic
    | **TPExclusions** | 0 | Tamper protection isn't currently protecting exclusions on the device. |
 
 > [!CAUTION]
-> Do not change the value of **TPExclusions**. Use the preceding procedure for information only. Changing the key will have no effect on whether tamper protection applies to exclusions.
+> Do not change the value of the registry keys. Use the preceding procedure for information only. Changing keys will have no effect on whether tamper protection applies to exclusions.
 
 ## Are you using Windows Server 2012 R2, 2016, or Windows version 1709, 1803, or 1809?
 
