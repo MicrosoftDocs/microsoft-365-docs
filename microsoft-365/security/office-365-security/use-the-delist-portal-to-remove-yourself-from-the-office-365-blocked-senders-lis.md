@@ -78,7 +78,7 @@ See [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)
  
 When there's a problem delivering an email message that you sent, Microsoft 365 or Office 365 sends an email notification to let you know. The email notification is known a delivery status notification or DSN. The most common type of DSN is a non-delivery report (also known as an NDR or bounce message) that tells you that a message wasn't delivered. In certain situations, Microsoft must conduct additional investigations against traffic from your IP address. If you receive and NDR with code 5.7.511, you **will not** be able to use the delist portal.
  
->	550 5.7.511 Access denied, banned sender[xxx.xxx.xxx.xxx]. To request removal from this list, forward this message to delist@messaging.microsoft.com. For more information, go to https://go.microsoft.com/fwlink/?LinkId=526653. 
+>	550 5.7.511 Access denied, banned sender[xxx.xxx.xxx.xxx]. To request removal from this list, forward this message to delist@microsoft.com. For more information, go to https://go.microsoft.com/fwlink/?LinkId=526653. 
  
 In the email to request removal from this list, provide the full NDR code and IP address. Microsoft will contact you within 48 hours with the next steps. 
 
