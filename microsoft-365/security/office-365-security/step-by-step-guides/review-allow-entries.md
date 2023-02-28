@@ -49,7 +49,7 @@ Historically, allow lists have told Exchange Online Protection to ignore the sig
 
 Use this query to find where the most unnecessary overrides are located. This query looks for emails that have been overridden without any detection that needed an override.
 
-```kql
+```kusto
 EmailEvents
 | where OrgLevelAction == "Allow"
 | summarize count() by OrgLevelPolicy, ThreatTypes
@@ -59,7 +59,7 @@ EmailEvents
 
 Use this query to find the most overridden types of threat detected. This query looks for emails that had the detected threat overridden, DMARC, or Spoof indicates email authentication issues that can be fixed to remove the *need* for the override.
 
-```kql
+```kusto
 EmailEvents
 | where OrgLevelAction == "Allow" and ThreatTypes != ""
 |summarize count() by DetectionMethods
@@ -69,7 +69,7 @@ EmailEvents
 
 This query looks for emails that have been overridden by IP, without any detection that called for an override.
 
-```kql
+```kusto
 EmailEvents
 | where OrgLevelAction == "Allow" and ThreatTypes != ""
 |summarize count() by SenderIPv4
@@ -80,7 +80,7 @@ EmailEvents
 
 This query looks for emails that have been overridden by sending domain without any detection that called for an override. **(Change to SenderMailFromDomain to check the 5321.MailFrom)**
 
-```kql
+```kusto
 EmailEvents
 | where OrgLevelAction == "Allow" and ThreatTypes != ""
 |summarize count() by SenderFromDomain
@@ -91,7 +91,7 @@ EmailEvents
 
 This query looks for emails that have been overridden by sending address without any detection that requires an override. **(Change to SenderMailFromAddress to check the 5321.MailFrom)**
 
-```kql
+```kusto
 EmailEvents
 | where OrgLevelAction == "Allow" and ThreatTypes != ""
 |summarize count() by SenderFromAddress
