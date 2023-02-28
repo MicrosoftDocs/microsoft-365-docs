@@ -1745,6 +1745,8 @@
               href: compliance-manager-whats-new.md
             - name: Glossary
               href: compliance-manager-whats-new.md
+            - name: Frequently asked questions (FAQ)
+              href: compliance-manager-faq.yml
         - name: Get started with Compliance Manager
           items:
             - name: Permissions and settings
@@ -1753,30 +1755,24 @@
               href: compliance-manager-quickstart.md
             - name: Configuration Analyzer for Microsoft Purview
               href: compliance-manager-mcca.md
-        - name: Build and manage assessments
-          href: compliance-manager-assessments.md
-        - name: Learn about assessment templates
-          href: compliance-manager-templates.md
-        - name: Create a custom template
-          href: compliance-manager-templates-create.md
-        - name: Modify a custom template
-          href: compliance-manager-templates-modify.md
-        - name: Extend a Microsoft template
-          href: compliance-manager-templates-extend.md
-        - name: Format template data in Excel
-          href: compliance-manager-templates-format-excel.md
-        - name: Compliance Manager templates list
-          href: compliance-manager-templates-list.md
-        - name: Working with improvement actions
-          href: compliance-manager-improvement-actions.md
-        - name: Updating improvement actions
-          href: compliance-manager-update-actions.md
+        - name: Create assessments
+          items:
+            - name: Build and manage assessments
+              href: compliance-manager-assessments.md
+            - name: Working with custom content
+              href: compliance-manager-assessments.md
+            - name: Regulations list
+              href: compliance-manager-templates-list.md
+        - name: Improvement actions and automation
+          items:
+            - name: Working with improvement actions
+              href: compliance-manager-improvement-actions.md
+            - name: Updating improvement actions
+              href: compliance-manager-update-actions.md
         - name: Create and manage alert policies
           href: compliance-manager-alert-policies.md
-        - name: How your compliance score is calculated
+        - name: Scoring
           href: compliance-score-calculation.md
-        - name: Frequently asked questions (FAQ)
-          href: compliance-manager-faq.yml
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
     - name: Industry-specific guidance
