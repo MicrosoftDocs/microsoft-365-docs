@@ -177,27 +177,27 @@ The **User activity** chart is one of the most powerful tools for internal risk 
 
 ![Insider risk management user activity](../media/insider-risk-user-activities.png)
 
-1. **Time filters**: By default, the last three months of potentially risky activities displayed in the User activity chart. You can easily filter the chart view by selecting the *6 Months*, *3 Months*, or *1 Month* tabs on the bubble chart.
-2. **Risk alert activity and details**: Potentially risky activities are visually displayed as colored bubbles in the User activity chart. Bubbles are created for different categories of risk and. Select a bubble to display the details for each potentially risky activity. Details include:
-    - **Date** of the risk activity.
-    - The **risk activity category**. For example, *Email(s) with attachments sent outside the organization* or *File(s) downloaded from SharePoint Online*.
-    - **Risk score** for the alert. This score is the numerical score for the alert risk severity level.
-    - Number of events associated with the alert. Links to each file or email associated with the risk activity are also available.
+1. **Case actions**: Options for resolving the case are on the case action toolbar. When viewing in a case, you can resolve a case, send an email notice to the user, or escalate the case for a data or user investigation.
+2. **Risk activity chronology**: The full chronology of all risk alerts associated with the case are listed, including all the details available in the corresponding alert bubble.
 3. **Filters and sorting (preview)**:
     - **Risk category**: Filter activities by the following risk categories: *Activities with risk scores > 15 (unless in a sequence)* and *Sequence activities*.
     - **Activity Type**: Filter activities by the following types: *Access*, *Deletion*, *Collection*, *Exfiltration*, *Infiltration*, *Obfuscation*, and *Security*.
     - **Sort by**: List the timeline of potentially risky activities by *Date occurred* or *Risk score*.
-4. **Risk sequence**: The chronological order of potentially risky activities is an important aspect of risk investigation and identifying these related activities is an important part of evaluating overall risk for your organization. Alert activities that are related are displayed with connecting lines to highlight that these activities are associated with a larger risk area. Sequences are also identified in this view by an icon positioned above the sequence activities relative to the risk score for the sequence. Hover over the icon to see the date and time of the risky activity associated with this sequence. This view of activities can help investigators literally 'connect the dots' for risk activities that could have been viewed as isolated or one-off events. Select the icon or any bubble in the sequence to display details for all the associated risk activities. Details include:
+4. **Time filters**: By default, the last three months of potentially risky activities are displayed in the User activity chart. You can easily filter the chart view by selecting the *6 Months*, *3 Months*, or *1 Month* tabs on the bubble chart.
+5. **Risk sequence**: The chronological order of potentially risky activities is an important aspect of risk investigation and identifying these related activities is an important part of evaluating overall risk for your organization. Alert activities that are related are displayed with connecting lines to highlight that these activities are associated with a larger risk area. Sequences are also identified in this view by an icon positioned above the sequence activities relative to the risk score for the sequence. Hover over the icon to see the date and time of the risky activity associated with this sequence. This view of activities can help investigators literally 'connect the dots' for risk activities that could have been viewed as isolated or one-off events. Select the icon or any bubble in the sequence to display details for all the associated risk activities. Details include:
 
     - **Name** of the sequence.
     - **Date** or **Date range** of the sequence.
     - **Risk score** for the sequence. This score is the numerical score for the sequence of the combined alert risk severity levels for each related activity in the sequence.
     - **Number of events associated with each alert in the sequence**. Links to each file or email associated with each potentially risky activity are also available.
-    - **Show activities in sequence**. Displays sequence as a highlight line on the bubble chart and expands the alert details to display all related alerts in the sequence.
-
-5. **Risk activity legend**: Across the bottom of the user activity chart, a color-coded legend helps you quickly determine risk category for each alert.
-6. **Risk activity chronology**: The full chronology of all risk alerts associated with the case are listed, including all the details available in the corresponding alert bubble.
-7. **Case actions**: Options for resolving the case are on the case action toolbar. When viewing in a case, you can resolve a case, send an email notice to the user, or escalate the case for a data or user investigation.
+    - **Show activities in sequence**. Displays the sequence as a highlight line on the bubble chart and expands the alert details to display all related alerts in the sequence.
+6. **Risk alert activity and details**: Potentially risky activities are visually displayed as colored bubbles in the User activity chart. Bubbles are created for different categories of risk. Select a bubble to display the details for each potentially risky activity. Details include:
+    - **Date** of the risk activity.
+    - The **risk activity category**. For example, *Email(s) with attachments sent outside the organization* or *File(s) downloaded from SharePoint Online*.
+    - **Risk score** for the alert. This score is the numerical score for the alert risk severity level.
+    - Number of events associated with the alert. Links to each file or email associated with the risk activity are also available.
+7. **Cumulative exfiltration activities**: Select this button to view a visual chart of how activity is building over time for the user.
+8. **Risk activity legend**: Across the bottom of the user activity chart, a color-coded legend helps you quickly determine risk category for each alert.
 
 ## Activity explorer
 
