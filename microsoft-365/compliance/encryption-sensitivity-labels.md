@@ -89,9 +89,9 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
 
 ## How to configure a label for encryption
 
-1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Items** is selected for the label's scope: 
+1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Items** is selected for the [label's scope](sensitivity-labels.md#label-scopes): 
     
-    ![Sensitivity label scope options for files and emails.](../media/filesandemails-scope-options-sensitivity-label.png)
+    :::image type="content" source="../media/filesandemails-scope-options-sensitivity-label.png" alt-text="Sensitivity label scope option Items for encryption.":::
 
 2. Then, on the **Choose protection settings for labeled items** page, make sure you select **Encrypt items**. Additionally, select **Include meetings** if the settings should extend to [meeting invites and replies](sensitivity-labels-meetings.md).
     
