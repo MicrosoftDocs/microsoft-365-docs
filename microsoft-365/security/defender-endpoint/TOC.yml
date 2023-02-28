@@ -323,7 +323,7 @@
       - name: General
         items:
         - name: Configure alert notifications
-          href: configure-email-notifications.md
+          href: ../defender/configure-email-notifications.md
         - name: Configure vulnerability email notifications
           href: configure-vulnerability-email-notifications.md
         - name: Configure advanced features
