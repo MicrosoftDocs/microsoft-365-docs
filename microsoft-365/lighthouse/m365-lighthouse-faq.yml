@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 07/12/2021
+  ms.date: 02/28/2023
   title: "Microsoft 365 Lighthouse frequently asked questions (FAQs)"
   f1.keywords: NOCSH
   ms.author: sharik
@@ -23,7 +23,7 @@ metadata:
   description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse."
 title: Microsoft 365 Lighthouse frequently asked questions (FAQs)
 summary: |
-  Last updated February 22, 2023. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
+  Last updated February 28, 2023. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
   
   If you can't find an answer to your question, let us know by leaving a comment and we'll add it to this article.
   
@@ -59,7 +59,9 @@ sections:
 
       - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business?
         answer: |
-          Lighthouse helps you manage customer tenants that have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license. Lighthouse capabilities will vary based on the licenses assigned to the user. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).        
+         You can use Lighthouse to actively manage users and devices within your customer tenants if they have at least one license of Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business. Customer tenants that don't have the required licenses will have access to only a limited set of experiences in Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health.
+         
+         Lighthouse capabilities will vary based on the licenses assigned to the user. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).        
           
   - name: Managing customer tenants
     questions:          
