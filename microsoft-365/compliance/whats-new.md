@@ -65,6 +65,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **In preview**: New [Adaptive Protection guidance](/microsoft-365/compliance/insider-risk-management-adaptive-protection). Adaptive Protection in Microsoft Purview uses machine learning to identify and mitigate the most critical risks with the most effective [data loss prevention (DLP)](/microsoft-365/compliance/dlp-adaptive-protection-learn) protection controls dynamically, saving security teams valuable time while ensuring better data security.
 
+### On-premises scanner
+
+- You can no longer configure the scanner in the Azure portal. To help you locate the equivalent configuration in the Microsoft Purview compliance portal, see [Configuration that you used to do in the Azure portal for Azure Information Protection](azure-portal-migration.md).
+
 ### Permissions
 
 - **In preview**: [Support for Azure Active Directory administrative units](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#administrative-units-preview). Administrative units let you subdivide your organization into smaller units, and then assign specific administrators that can manage only the members of those units.

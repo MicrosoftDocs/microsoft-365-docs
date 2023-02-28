@@ -61,9 +61,11 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
-## February/March 2023
-
+## February 2023
 - [Mixed-licensing scenarios](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) are now in preview, enabling you to [Manage Microsoft Defender for Endpoint subscription settings across devices](defender-endpoint-subscription-settings.md).
+ 
+- The Microsoft Defender for Identity integration toggle is now removed from the MDE Settings > Advanced features page. Because Defender for Identity is now integrated with Microsoft 365 Defender, this toggle is no longer required. You don't need to manually configure integration between services. See [What's new - Microsoft Defender for Identity](/defender-for-identity/whats-new#defender-for-identity-release-2194).
+
 
 ## January 2023
 
