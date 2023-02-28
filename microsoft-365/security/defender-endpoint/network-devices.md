@@ -102,6 +102,9 @@ To configure scan jobs, the following user permission option is required: **Mana
 
 The scanner is supported on Windows 10, version 1903 and Windows Server, version 1903 and later. For more information, see [Windows 10, version 1903 and Windows Server, version 1903](https://support.microsoft.com/topic/windows-10-update-history-e6058e7c-4116-38f1-b984-4fcacfba5e5d).
 
+> [!NOTE]
+> There's a limit of 40 scanner installations per tenant. 
+
 ## Install the scanner
 
 1. Go to **Microsoft 365 security** \> **Settings** \> **Device discovery** \> **Authenticated scans**.

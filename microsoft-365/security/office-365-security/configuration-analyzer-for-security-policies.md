@@ -56,16 +56,13 @@ The Standard and Strict policy setting values that are used as baselines are des
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
-  - To use the configuration analyzer **and** make updates to security policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - For read-only access to the configuration analyzer, you need to be a member of the **Global Reader** or **Security Reader** role groups.
-
-  For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
-
-  > [!NOTE]
-  >
-  > - Adding users to the corresponding Azure Active Directory role gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md):
+    - _Use the configuration analyzer and update the affected security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
+    - _Read-only access to the configuration analyzer_: Membership in the **Global Reader** or **Security Reader** role groups.
+  - [Exchange Online RBAC](/Exchange/permissions-exo/permissions-exo): Membership in the **View-Only Organization Management** role group gives read-only access to the configuration analyzer.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gies users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Use the configuration analyzer in the Microsoft 365 Defender portal
 
