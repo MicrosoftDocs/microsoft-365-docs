@@ -147,6 +147,5 @@ If your IB organization isn't in *LegacyMode* mode and you've configured Teams f
 
 - **Team creation**: When a multi-segment user creates a team, the team is automatically set to *Implicit* mode by default.
 - **Team member addition**: All users in the team must have one segment which is compatible with all other users.
-- **Owner moderated team**: When a multi-segment user wants to create an *Owner Moderated* team, use the [Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup) cmdlet with the *InformationBarrierMode* parameter to update the mode of the team to *Owner Moderated*. There should be an overlap between the segments of the members with one of the owners. This is applicable for the owner as well as the members getting added to the group.
 
 For more information about managing IB for Microsoft Teams, see [Use information barriers with Microsoft Teams](/microsoftteams/information-barriers-in-teams).
