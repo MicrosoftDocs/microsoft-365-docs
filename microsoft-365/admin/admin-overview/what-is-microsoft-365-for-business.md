@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 description: "Learn about Microsoft 365 for business, a subscription service that takes care of the IT part for you."
 feedback_system: None
-ms.date:
+ms.date: 04/27/2022
 ---
 
 # What is Microsoft 365 for business
@@ -46,7 +46,7 @@ Microsoft 365 for business provides the following plans to select from to help y
 
 ### Need help with choosing a plan?
 
-Deciding on a plan can depend on your specific business needs. The Microsoft 365 plan chooser is designed to help you with this. The chooser will make recommendations based on your answers to questions such as the size of your business, your field of work, the devices you use, and what kind of features, IT support, and security you're looking for. See [Help me find the right plan for my business](https://go.microsoft.com/fwlink/p/?linkid=2224417).
+Deciding on a plan can depend on your specific business needs. The Microsoft 365 plan chooser is designed to help you with this. The chooser will make recommendations based on your answers to questions such as the size of your business, your field of work, the devices you use, and what kind of features, IT support, and security you're looking for. See [Help me find the right plan for my business](https://go.microsoft.com/fwlink/p/?linkid=2224175).
 
 You can also [compare plans](https://www.microsoft.com/microsoft-365/business#coreui-heading-hiatrep) yourself.
 

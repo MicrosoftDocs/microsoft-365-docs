@@ -7,6 +7,7 @@ f1.keywords:
 - data loss prevention
 - dlp policies
 manager: dougeby
+ms.date: 10/20/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions

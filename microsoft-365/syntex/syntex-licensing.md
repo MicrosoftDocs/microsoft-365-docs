@@ -3,9 +3,10 @@ title: Licensing for Microsoft Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: ssquires
+ms.date: 08/02/2021
 manager: serdars
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic
@@ -32,7 +33,8 @@ The following tasks require a [Syntex license](https://www.microsoft.com/microso
 - Run an unstructured document processing model on-demand
 - Create a modern template with content assembly
 - Generate a document from a modern template
-- Use of advanced metadata search
+- Use of content query to search for metadata
+- Use of annotations to add notes and comments
 - Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
 
 Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.
