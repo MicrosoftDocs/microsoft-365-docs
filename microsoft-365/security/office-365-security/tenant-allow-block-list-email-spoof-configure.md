@@ -40,9 +40,9 @@ You manage allow and block entries for email in the Microsoft 365 Defender Porta
 
 - For domains and email addresses, the maximum number of allow entries is 500, and the maximum number of block entries is 500 (1000 domain and email address entries in total).
 
-- For spoofed senders, the maximum number of entries is 1024 (including both allow and block).
+- For spoofed senders, the maximum number of allow entries and block entries is 1024 (1024 allow entries and no block entries, 512 allow entries and 512 block entries, etc.).
 
-- By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447).  Once Microsoft learns, email containing these entities will be delivered to the inbox provided nothing else in the email is malicious. By default, allow entries for spoofed senders never expire.
+- By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those domains or email addresses, files, or URLs (*entities*) will be delivered, unless something else in the message is detected as malicious. By default, allow entries for spoofed senders never expire.
 
 - Entries for spoofed senders never expire.
 
@@ -106,7 +106,7 @@ Email messages from these senders are marked as *high confidence spam* (SCL = 9)
      - **Never expire**
      - **Specific date**: The maximum value is 90 days from today.
 
-   - **Optional note**: Enter descriptive text for why you are blocking these email addresses or domains.
+   - **Optional note**: Enter descriptive text for why you're blocking the email addresses or domains.
 
 5. When you're finished, click **Add**.
 
@@ -132,16 +132,16 @@ You can't create allow entries for domains and email addresses directly in the T
 
 For instructions, see [Submit good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
-By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447).  Once Microsoft learns, email containing these entities will be delivered to the inbox provided nothing else in the email is malicious. By default, allow entries for spoofed senders never expire.
+By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those entities will be delivered, unless something else in the message is detected as malicious.
 
-> [!WARNING]
+> [!IMPORTANT]
 > Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
 > Microsoft manages the creation of allow entries from the Submissions page. Allow entries are added during mail flow based on the filters that determined the message was malicious. For example, if the sender email address and a URL in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the URL.
 >
-> When that domain, email address, or file, or URL (*entity*) is encountered again (during mail flow or time of click), all filters associated with that entity are skipped.
+> When the entity in the allow entry is encountered again (during mail flow or time of click), all filters associated with that entity are skipped.
 >
-> During mail flow, if messages containing the allow entity passes other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md), URL filtering and file filter check passes, a message from an allowed sender email address will be delivered.
+> During mail flow, if messages containing the entity in the allow entry pass other checks in the filtering stack, the messages will be delivered. For example, if a message passes [email authentication checks](email-authentication-about.md), URL filtering, and file filtering, a message from an allowed sender email address will be delivered.
 
 ### Use the Microsoft 365 Defender portal to view existing allow or block entries for domains and email addresses in the Tenant Allow/Block List
 
@@ -213,10 +213,10 @@ You can make the following modifications to entries for domains and email addres
 
    When you're finished, click **Save**.
 
-By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447).  Once Microsoft learns, email containing these entities will be delivered to the inbox provided nothing else in the email is malicious. By default, allow entries for spoofed senders never expire.
+By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those entities will be delivered, unless something else in the message is detected as malicious. By default, allow entries for spoofed senders never expire.
 
 > [!TIP]
-> For entries added via submission, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that opens up. It takes you to the submission details that added the entry.
+> For entries added via submission, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that opens, which takes you to the submission details that added the entry.
 
 #### Use PowerShell to modify existing allow or block entries for domains and email addresses in the Tenant Allow/Block List
 
@@ -226,7 +226,7 @@ In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-
 Set-TenantAllowBlockListItems -ListType Sender <-Ids <Identity value> | -Entries <Value value>> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
 ```
 
-This example changes the expiration date of the specified block entry for sender email address.
+This example changes the expiration date of the specified block entry for the sender email address.
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType Sender -Entries "julia@fabrikam.com" -ExpirationDate "9/1/2022"
@@ -333,7 +333,7 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoo
 
 ### Use the Microsoft 365 Defender portal to create block entries for spoofed senders in the Tenant Allow/Block List
 
-You can create block entries for spoofed senders directly in the Tenant Allow/Block List. The steps are nearly identical to [Use the Microsoft 365 Defender portal to create allow entries for spoofed senders in the Tenant Allow/Block List](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list).
+You can create block entries for spoofed senders directly in the Tenant Allow/Block List. The steps are nearly identical to [creating allow entries for spoofed senders ](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list) as previously described in this article.
 
 The only difference is: for the **Action** value in Step 3, choose **Block** instead of **Allow**.
 
@@ -507,7 +507,7 @@ Only messages from that domain *and* sending infrastructure pair are allowed to 
 
 ## About impersonated domains or senders
 
-In organizations with Microsoft Defender for Office or Exchange Online Protection, you can't create allow entries in the Tenant/Allow/Block List for messages that were detected as impersonation by [domain or sender impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+You can't create allow entries in the Tenant Allow/Block List for messages that were detected as [domain or sender impersonation protection in Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
 Submitting a message that was incorrectly blocked as impersonation on the Submissions page at <https://security.microsoft.com/reportsubmission> does not add the sender or domain as an allow entry in the Tenant Allow/Block List.
 
