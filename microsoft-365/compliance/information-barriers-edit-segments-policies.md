@@ -287,5 +287,6 @@ Set-PolicyConfig -InformationBarrierPeopleSearchRestriction 'Disabled'
 - [Learn more about information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [Learn more about information barriers in SharePoint Online](/sharepoint/information-barriers)
 - [Learn more about information barriers in OneDrive](/onedrive/information-barriers)
+- [Use multi-segment support in information barriers](information-barriers-multi-segment.md)
 - [Attributes for IB policies](information-barriers-attributes.md)
 - [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)

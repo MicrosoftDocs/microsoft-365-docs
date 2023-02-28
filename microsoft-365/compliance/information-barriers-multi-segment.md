@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 # Use multi-segment support in information barriers
 
 > [!IMPORTANT]
-> Support for assigning users to multiple segments is only available when your organization isn't in *Legacy* mode. To determine if your organization is in *Legacy* mode, see [Enable multiple segment support for users](#enable-multiple-segment-support-for-users) and check the value of the `InformationBarrierMode` property. <br><br> Users are restricted to being assigned to only one segment for organizations in *Legacy* mode. Organizations in *Legacy* mode will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
+> Support for assigning users to multiple segments is only available when your organization isn't in *Legacy* mode. To determine if your organization is in *Legacy* mode, see [Check the IB mode for your organization](#check-the-ib-mode-for-your-organization) and check the value of the `InformationBarrierMode` property. <br><br> Users are restricted to being assigned to only one segment for organizations in *Legacy* mode. Organizations in *Legacy* mode will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
 
 The multi-segment mode enables you to assign users in your organization to up to 10 segments in information barriers instead of being limited to just one segment. This allows support for more diverse communication rules between individuals and groups to support more complex organizational and operational scenarios. For organizations using multi-segment support, all information barriers policies must be defined with an allow list.
 
@@ -91,7 +91,7 @@ If you want to support assigning users to multiple segments, you'll need to veri
     Get-PolicyConfig
     ```
 
-If the value of the `InformationBarrierMode` property is *SingleSegment*, you can enable multi-segment support in Step 2. If the value of the `InformationBarrierMode` property is *MultiSegment*, you can skip Step 2 in this section. Multi-segment support is already enabled for your organization.
+If the value of the `InformationBarrierMode` property is *SingleSegment*, you can enable multi-segment support by following the guidance in the [Enable multiple segment support for users](#enable-multiple-segment-support-for-users) section in this article. If the value of the `InformationBarrierMode` property is *MultiSegment*, you can skip enabling support for multi-segment, it's already enabled for your organization.
 
 If the value of the `InformationBarrierMode` property is *Legacy*, enabling multi-segment isn't supported for your organization. *Legacy* organizations will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers)
 

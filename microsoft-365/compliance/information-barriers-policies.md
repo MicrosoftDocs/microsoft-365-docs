@@ -66,19 +66,19 @@ When you configure IB, you'll work with several objects and concepts.
     Your organization can have up to 5,000 segments and users can be assigned to a maximum of 10 segments. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
 
     > [!IMPORTANT]
-    > Support for 5,000 segments and assigning users to multiple segments is only available when your organization isn't in *Legacy* mode. Assigning users to multiple segments requires additional actions to change the information barriers mode for your organization. For more information, see [Use multi-segment support in information barriers)](information-barriers-multi-segment.md) for details. <br><br> For organizations in *Legacy* mode, the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations in *Legacy* mode will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
+    > Support for 5,000 segments and assigning users to multiple segments is only available when your organization isn't in *Legacy* mode. Assigning users to multiple segments requires additional actions to change the information barriers mode for your organization. For more information, see [Use multi-segment support in information barriers](information-barriers-multi-segment.md) for details. <br><br> For organizations in *Legacy* mode, the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations in *Legacy* mode will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
 
 - **IB policies** determine communication limits or restrictions. When you define IB policies, you choose from two kinds of policies:
   - *Block* policies prevent one segment from communicating with another segment.
   - *Allow* policies allow one segment to communicate with only certain other segments.
 
     > [!NOTE]
-    > **For organizations in *Legacy* mode**: Non-IB groups and users **will not be visible** to users included in IB segments and policies for *allow* policies. If you need non-IB groups and users to be visible to users included in IB segments and policies, you must use *block* policies. <br><br> **For organizations in *SingleSegment* or *MultiSegment* mode**: Non-IB groups and users **will be visible** to users included in IB segments and policies for *allow* policies. <br><br> To verify your IB mode, see [Enable multiple segment support for users](information-barriers-multi-segment.md#enable-multiple-segment-support-for-users).
+    > **For organizations in *Legacy* mode**: Non-IB groups and users **will not be visible** to users included in IB segments and policies for *allow* policies. If you need non-IB groups and users to be visible to users included in IB segments and policies, you must use *block* policies. <br><br> **For organizations in *SingleSegment* or *MultiSegment* mode**: Non-IB groups and users **will be visible** to users included in IB segments and policies for *allow* policies. <br><br> To verify your IB mode, see [Check the IB mode for your organization](/microsoft-365/compliance/information-barriers-multi-segment#check-the-ib-mode-for-your-organization).
 
 - **Policy application** is done after all IB policies are defined, and you're ready to apply them in your organization.
 - **Visibility of non-IB users and groups**: Non-IB users and groups are users and groups excluded from IB segments and policies. Depending on when you configure IB policies in your organization and the type of IB policies (block or allow), the behavior for these users and group will differ in Microsoft Teams, SharePoint, OneDrive, and in your global address list.
     - **For organizations in *Legacy* mode**: For users defined in *allow* policies, non-IB groups and users won't be visible to users included in IB segments and policies. For users defined in *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
-    - ****For organizations in *SingleSegment* or *MultiSegment* mode**: For users defined in *allow* and *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
+    - **For organizations in *SingleSegment* or *MultiSegment* mode**: For users defined in *allow* and *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
 - **Group support**. Only Modern Groups are currently supported in IB and Distribution Lists/Security Groups are treated as non-IB groups.
 - **Hidden/disabled user accounts**. For hidden/disabled accounts in your organization, the *HiddenFromAddressListEnabled* parameter is automatically set to *True* when the users accounts are hidden or disabled. In IB-enabled organizations, these accounts are prevented from communicating with all other user accounts.
 
@@ -86,7 +86,7 @@ When you configure IB, you'll work with several objects and concepts.
 
 | **Steps** | **What's involved** |
 |:------|:----------------|
-| **Step 1**: [Make sure prerequisites are met](#step-1-make-sure-prerequisites-are-met) | - Verify that you have the required subscriptions and permissions <br/>- Verify that your directory includes data for segmenting users<br/>- Enable [search by name for Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>- Make sure audit logging is turned on<br/>- Configure how Exchange address book policies are implemented  (depending on when you've enable IB in your organization) <br/>- Provide admin consent for Microsoft Teams (steps are included) |
+| **Step 1**: [Make sure prerequisites are met](#step-1-make-sure-prerequisites-are-met) | - Verify that you have the required subscriptions and permissions <br/>- Verify that your directory includes data for segmenting users<br/>- Enable [search by name for Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>- Make sure audit logging is turned on <br/> - Check the IB mode for your organization <br/>- Configure how Exchange address book policies are implemented  (depending on when you've enable IB in your organization) <br/>- Provide admin consent for Microsoft Teams (steps are included) |
 | **Step 2**: [Segment users in your organization](#step-2-segment-users-in-your-organization) | - Determine what policies are needed<br/>- Make a list of segments to define<br/>- Identify which attributes to use<br/>- Define segments in terms of policy filters |
 | **Step 3**: [Create information barriers policies](#step-3-create-ib-policies) | - Create your policies (don't apply yet)<br/>- Choose from two kinds (block or allow) |
 | **Step 4**: [Apply information barriers policies](#step-4-apply-ib-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
@@ -106,6 +106,8 @@ In addition to the required subscriptions and permissions, make sure that the fo
 - **Scoped directory search**: Before you define your organization's first IB policy, you must [enable scoped directory search in Microsoft Teams](/MicrosoftTeams/teams-scoped-directory-search). Wait at least 24 hours after enabling scoped directory search before you set up or define IB policies.
 
 - **Verify audit logging is enabled**: In order to look up the status of an IB policy application, audit logging must be turned on. Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step. For more information, see [Turn the audit log search on or off](audit-log-enable-disable.md).
+
+- **Check the IB mode for your organization**: Support for multiple segments, people discoverability options, Exchange ABPs, and other features is determined by the IB mode for your organization. To verify the IB mode for your organization, see [Check the IB mode for your organization](/microsoft-365/compliance/information-barriers-multi-segment#check-the-ib-mode-for-your-organization).
 
 - **Remove existing Exchange Online address book policies (optional)**:
     - **For organizations in *Legacy* mode**: Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
@@ -159,12 +161,12 @@ When you have your initial list of needed groups and policies, proceed to identi
 In addition to your initial list of policies, make a list of segments for your organization. Users who will be included in IB policies should belong to at least one segment. Users can be assigned to multiple segments if needed. You can have up to 5,000 segments in your organization and each segment can have only one IB policy applied.
 
 > [!IMPORTANT]
-> A user can only be in one segment for organizations in *Legacy* or *SingleSegement* modes. To verify your IB mode, see [Enable multiple segment support for users](information-barriers-multi-segment.md#enable-multiple-segment-support-for-users).
+> A user can only be in one segment for organizations in *Legacy* or *SingleSegement* modes. To verify your IB mode, see [Check the IB mode for your organization](/microsoft-365/compliance/information-barriers-multi-segment#check-the-ib-mode-for-your-organization).
 
 Determine which attributes in your organization's directory data you'll use to define segments. You can use *Department*, *MemberOf*, or any of the supported IB attributes. Make sure that you have values in the attribute you select for users. For more information, see the [supported attributes for IB](information-barriers-attributes.md).
 
 > [!IMPORTANT]
-> **Before you proceed to the next section, make sure your directory data has values for attributes that you can use to define segments**. If your directory data does not have values for the attributes you want to use, then the user accounts must be updated to include that information before you proceed with configuring IB. To get help with this, see the following resources:<br/>- [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Add or update a user's profile information using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Before you proceed to the next section, make sure your directory data has values for attributes that you can use to define segments**. If your directory data does not have values for the attributes you want to use, then the user accounts must be updated to include that information before you proceed with configuring IB. To get help with this, see the following resources: <br/><br/>- [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Add or update a user's profile information using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### Enable multiple segment support for users (optional)
 
@@ -235,7 +237,7 @@ In addition to defining segments using "equals" or "not equals", you can define 
 When you create your IB policies, you'll determine whether you need to prevent communications between certain segments or limit communications to certain segments. Ideally, you'll use the minimum number of IB policies to ensure your organization is compliant with internal, legal, and industry requirements. You can use the compliance portal or PowerShell to create and apply IB policies.
 
 > [!TIP]
-> For user experience consistency, we recommend using Block policies for most scenarios if possible.
+> For user experience consistency, we recommend using *Block* policies for most scenarios if possible.
 
 With your list of user segments and the IB policies you want to define, select a scenario, and then follow the steps.
 
@@ -434,11 +436,9 @@ The following IB modes are supported on Microsoft 365 resources:
 
 ### Implicit mode updates
 
-Depending on when you've enable IB in your organization, your organization will be in either *Legacy*, *SingleSegment*, or *MultiSegment* organization mode. To verify your mode, see LINK TO VERSION CHECK
+Depending on when you've enable IB in your organization, your organization will be in either *Legacy*, *SingleSegment*, or *MultiSegment* organization mode. To verify your mode, see [Check the IB mode for your organization](/microsoft-365/compliance/information-barriers-multi-segment#check-the-ib-mode-for-your-organization).
 
-CHECK FOR PREVIEW REMOVAL ON MIXED AND OWNER MODERATED
-
-If your organization is not in *Legacy* mode and the information barrier mode of the Teams group is *Implicit*, the Teams-connected groups/sites will not have any segments associated with it.
+If your organization is in *SingleSegment* or *MultiSegment* mode and the information barriers mode of the Teams group is *Implicit*, the Teams-connected groups/sites won't have any segments associated with it.
 
 For more information about IB modes and how they're configured across services, see the following articles:
 

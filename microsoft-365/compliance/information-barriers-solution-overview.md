@@ -51,3 +51,4 @@ Use the following steps to configure IB for your organization:
 
 - [Attributes for IB policies](information-barriers-attributes.md)
 - [Edit or remove IB policies](information-barriers-edit-segments-policies.md)
+- [Use multi-segment support in information barriers](information-barriers-multi-segment.md)
