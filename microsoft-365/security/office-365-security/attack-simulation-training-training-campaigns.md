@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
   - m365-security
   - tier2
 description: Admins can learn how to create training campaigns in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
@@ -237,7 +237,7 @@ When you're finished, click **Next**.
 The **Training reminder notification** page is available only if you selected **Customized end user notifications** on the **[Select end user notification](#select-end-user-notification)** page.
 
 - **Set frequency for reminder notification**: Select **Weekly** (default) or **Twice a week**.
-  - Reminder notifications will stop at the end of the campaign   
+  - Reminder notifications will stop at the end of the campaign.
 
 - **Select a reminder notification**: This section shows the following notifications and their configured languages:
 
