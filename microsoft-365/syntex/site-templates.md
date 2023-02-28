@@ -21,9 +21,10 @@ description: Learn how to provision, use, and customize the site templates for M
 SharePoint site templates for Microsoft Syntex are prebuilt, ready-to-deploy, and customizable. Use these templates to create a professional site to manage, process, and track the status of business documents in your organization.
 
 
-|Site template name |Description  |
+|Site template |Description  |
 |---------|---------|
-|[**Accounts payable**](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f)<br>![Thumbnail image for the accounts payable site template.](../media/content-understanding/site-template-accounts-payable-thumbnail.png)<br>**Accounts payable**      |Manage, process, and track purchase orders, invoices, and related files.  <br> - Use Microsoft Syntex to organize and classify files.<br> - Extract key information from invoices using a prebuilt invoice model.<br> - Share important information, such as updates to agreements or new policies.<br> - Store purchase orders and invoices in preconfigured document libraries.<br> - Generate files efficiently using modern templates.  <br>[Learn more about the accounts payable site template](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f)      |
+|[**Accounts payable**](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f)<br>![Thumbnail image for the accounts payable site template.](../media/content-understanding/site-template-accounts-payable-thumbnail.png)    |
+|Manage, process, and track purchase orders, invoices, and related files.  <br> - Use Microsoft Syntex to organize and classify files.<br> - Extract key information from invoices using a prebuilt invoice model.<br> - Share important information, such as updates to agreements or new policies.<br> - Store purchase orders and invoices in preconfigured document libraries.<br> - Generate files efficiently using modern templates.  <br>[Learn more about the accounts payable site template](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f)      |
 |Row2     |         |
 |Row3     |         |
 
@@ -32,8 +33,8 @@ SharePoint site templates for Microsoft Syntex are prebuilt, ready-to-deploy, an
 
 |Site template  |Description  |Site capabilites  |
 |---------|---------|---------|
-|[**Accounts payable**](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f)<br>![Thumbnail image for the accounts payable site template.](../media/content-understanding/site-template-accounts-payable-thumbnail.png)   | 
-Manage, process, and track purchase orders, invoices, and related files. <br>[Learn more about the accounts payable site template](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f) <br>  |
+|[**Accounts payable**](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f)<br>![Thumbnail image for the accounts payable site template.](../media/content-understanding/site-template-accounts-payable-thumbnail.png)   |
+|Manage, process, and track purchase orders, invoices, and related files.<br> [Learn more about the accounts payable site template](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f) <br>  |
 |- Use Microsoft Syntex to organize and classify files.<br> - Extract key information from invoices using a prebuilt invoice model.<br> - Share important information, such as updates to agreements or new policies.<br> - Store purchase orders and invoices in preconfigured document libraries.<br> - Generate files efficiently using modern templates.         |
 |![Thumbnail image for the contracts management site template.](../media/content-understanding/site-template-contracts-management-thumbnail.png)<br> **Contracts management**    |**Contracts management**<br> Manage, process, and track contracts. <br>[Find in the SharePoint site template library](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f) <br> [Provision from the SharePoint look book service](use-contracts-management-site.md)   |
 |- Use Microsoft Syntex to organize and classify files.<br>
