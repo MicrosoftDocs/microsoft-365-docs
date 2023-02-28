@@ -58,10 +58,10 @@ The following table shows the different statuses and their meaning. For informat
 
 | Status           | Description                                                                                                        |
 |------------------|--------------------------------------------------------------------------------------------------------------------|
-| Active           | This tenant can be actively managed and monitored in Lighthouse for users and devices with required licenses.      |
+| Active           | This customer tenant can be actively managed and monitored in Lighthouse for users and devices with required licenses.      |
 | Inactive         | Your organization has excluded this customer tenant from Lighthouse management.                                    |
-| Limited          | This tenant has access to only a limited set of experiences in Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health. <br> Select the tenant name to see a detailed status of Lighthouse management requirements. See [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).|
-| In process       | An error occurred during the onboarding process for this tenant and we’re working on a fix. If this error persists for more than 24 hours, please contact Support. |
+| Limited          | This customer tenant has access to only a limited set of experiences in Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health. <br> Select the tenant name to see a detailed status of Lighthouse management requirements. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).|
+| In process       | An error occurred during the onboarding process for this customer tenant and we're working on a fix. If this error persists for more than 24 hours, please contact Support. |
 
 Once you inactivate a tenant, you can't take action on the tenant until the inactivation process completes. It may take up to 48 hours for inactivation to complete. If you decide to reactivate a tenant, it may take up to 48 hours for data to reappear.
 
