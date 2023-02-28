@@ -24,7 +24,7 @@ SharePoint site templates for Microsoft Syntex are prebuilt, ready-to-deploy, an
 |Site template |Description  |
 |---------|---------|
 |[**Accounts payable**](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f)<br>![Thumbnail image for the accounts payable site template.](../media/content-understanding/site-template-accounts-payable-thumbnail.png)   |Manage, process, and track purchase orders, invoices, and related files. <br> - Use Microsoft Syntex to organize and classify files.<br> - Extract key information from invoices using a prebuilt invoice model.<br> - Share important information, such as updates to agreements or new policies.<br> - Store purchase orders and invoices in preconfigured document libraries.<br> - Generate files efficiently using modern templates.  <br>[Learn more about the accounts payable site template](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f)      |
-|Row2     |         |
+|[**Contracts management**](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f)<br>![Thumbnail image for the contracts management site template.](../media/content-understanding/site-template-contracts-management-thumbnail.png)    |Manage, process, store, and track contracts. <br> - Use Microsoft Syntex to organize and classify files.<br> - Use prebuilt document libraries as your contract repositories.<br> - Generate files efficiently using modern templates.<br> - Provide templates for each contract type. - Add other workflows to streamline your processes.<br>[Learn more about the contracts management site template](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f)       |
 |Row3     |         |
 
 
