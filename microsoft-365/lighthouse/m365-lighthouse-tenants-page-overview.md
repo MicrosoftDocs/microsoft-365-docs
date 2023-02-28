@@ -33,7 +33,7 @@ The Tenants page also includes the following options:
 - **Assign Tags:** Select to assign a tag to a tenant.
 - **Search:** Enter keywords to quickly locate a specific tenant in the list.
 
-:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png" alt-text="Screenshot of the Tenant page.":::
+:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png" alt-text="Screenshot of the Tenants page." lightbox="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png":::
 
 ## Tenant list
 
@@ -47,7 +47,7 @@ The tenant list lets you:
 - Export the tenant list.
 - Assign and manage tags.
 - Search for tenants by name.
-- Filter tenants by status, delegated administrative privilege (DAP), and tags.
+- Filter tenants by status, delegated admin privilege (DAP), and tags.
 
 To inactivate the tenant or view and manage tags, select the three dots (more actions) next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
 
@@ -80,7 +80,7 @@ To help organize your tenants and easily filter the existing views, you can crea
 
 To view detailed tenant information, select a tenant from the list of tenants. The tenant details page contains contact information and deployment plan status.
 
-:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Screenshot of the Tenant details page.":::
+:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Screenshot of the Tenant details page." lightbox="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png":::
 
 ### Overview tab
 
