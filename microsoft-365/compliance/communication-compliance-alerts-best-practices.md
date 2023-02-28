@@ -35,10 +35,6 @@ One of the biggest challenges in Microsoft Purview Communication Compliance is m
 
 Many customers use custom keyword lists for compliance scenarios. Understanding the volume of policy matches for each keyword can help you tune your policies. Use the [Sensitive information type per location report](communication-compliance-reports-audits.md#detailed-reports) to analyze keyword lists to see which keywords trigger most matches. You can then investigate further to see if those keywords have high false-positive rates. You can also use the [Message details reports](communication-compliance-reports-audits.md#message-details-report) to get data on keyword matches for a specific policy.
 
-## Combine trainable classifiers
-
-Consider combining two or more [trainable classifiers](classifier-learn-about.md#classifiers) together. For example, combine the [Threat](classifier-tc-definitions.md#threat) and [Profanity](classifier-tc-definitions.md#profanity) classifiers or the [Targeted harassment](classifier-tc-definitions.md#harassment) and [Profanity](classifier-tc-definitions.md#profanity) classifiers to raise the threshold for messages captured.
-
 ## Use the Data classification dashboard
 
 It’s important to understand the volume of items classified by trainable classifiers and sensitive information types. You can use the [Content explorer](data-classification-content-explorer.md) in the Data classification dashboard to help you understand the volume that you can expect for your organization. 
@@ -88,6 +84,10 @@ If you have senders that consistently trigger detections (for example, through n
 ## Use communication direction to target a particular set of users
 
 If you’re detecting standards of business conduct scenarios and only care about communications from your employees (not from external users), consider using a policy that detects only [outbound communications](communication-compliance-policies.md#direction). If you make the entire organization in scope, you can ensure that all of the users in your organization are covered but exclude users from outside your organization.
+
+## Combine trainable classifiers
+
+Consider combining two or more [trainable classifiers](classifier-learn-about.md#classifiers) together. For example, combine the [Threat](classifier-tc-definitions.md#threat) and [Profanity](classifier-tc-definitions.md#profanity) classifiers or the [Targeted harassment](classifier-tc-definitions.md#harassment) and [Profanity](classifier-tc-definitions.md#profanity) classifiers to raise the threshold for messages captured.
 
 ## Lower the percentage of reviewed communications
 
