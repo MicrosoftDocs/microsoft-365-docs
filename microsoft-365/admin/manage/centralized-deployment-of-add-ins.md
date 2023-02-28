@@ -93,7 +93,7 @@ Use the classic Exchange admin center (EAC) to assign permissions to users. The 
 > [!NOTE]
 > These roles are selected by default.
 
-For detailed information about how to do this, see [Manage role groups in Exchange Online](https://learn.microsoft.com/exchange/permissions-exo/role-groups). For detailed description of the different roles, see [Role assignment policies in Exchange Online](https://learn.microsoft.com/exchange/permissions-exo/role-assignment-policies).
+For more information, see [Manage role groups in Exchange Online](/exchange/permissions-exo/role-groups). For a detailed description of the different roles, see [Role assignment policies in Exchange Online](/exchange/permissions-exo/role-assignment-policies).
 
 ### Admin Requirements
 
