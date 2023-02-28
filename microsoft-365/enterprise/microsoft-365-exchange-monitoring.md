@@ -3,13 +3,15 @@ title: "Exchange Online monitoring for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 09/03/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC

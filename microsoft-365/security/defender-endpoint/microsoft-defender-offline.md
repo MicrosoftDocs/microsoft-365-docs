@@ -2,20 +2,23 @@
 title: Microsoft Defender Offline in Windows
 description: You can use Microsoft Defender Offline straight from the Microsoft Defender Antivirus app. You can also manage how it is deployed in your network.
 keywords: scan, defender, offline
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 07/28/2022
+ms.date: 08/30/2022
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Run and review the results of a Microsoft Defender Offline scan
@@ -61,7 +64,7 @@ See the [Manage Microsoft Defender Antivirus Security intelligence  updates](man
 
 In Windows 10, version 1607, you can manually force an offline scan. Alternatively, if Windows Defender determines that Microsoft Defender Offline needs to run, it will prompt the user on the endpoint.
 
-The need to perform an offline scan will also be revealed in Microsoft Endpoint Manager if you're using it to manage your endpoints.
+The need to perform an offline scan will also be revealed in Microsoft Intune if you're using it to manage your endpoints.
 
 The prompt can occur via a notification, similar to the following:
 
@@ -136,6 +139,14 @@ See the following for more information:
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
+### Where can I find the scan results?
+
+To see the Microsoft Defender Offline scan results:
+
+1. Select **Start**, and then select **Settings**  > **Update & Security**  > **Windows Security**  > **Virus & threat protection**.
+
+2. On the **Virus & threat protection** screen, under **Current threats**, select **Scan options**, and then select **Protection history**.
 
 ## Related articles
 

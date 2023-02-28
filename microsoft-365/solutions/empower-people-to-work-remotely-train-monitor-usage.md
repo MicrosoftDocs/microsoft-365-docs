@@ -5,11 +5,13 @@ f1.keywords:
 author: dansimp
 ms.author: dansimp
 manager: dansimp
+ms.date: 05/01/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection: 
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework

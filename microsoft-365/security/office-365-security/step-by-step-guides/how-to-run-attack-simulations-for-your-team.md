@@ -2,8 +2,7 @@
 title: How to run attack simulations for your team
 description: The steps to send an Attack Simulation payload to your target users for your team or organization for training. Simulated attacks can help you identify and find vulnerable users, policies and practices before a real attack impacts your organization.
 search.product: 
-search.appverid: 
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +13,14 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
+search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # How to run attack simulations for your team
@@ -31,7 +35,7 @@ Attack simulation training allows you to run realistic but benign cyber attack s
 
 ## Send a payload to target users
 
-1. Navigate to [Attack Simulation Training](https://security.microsoft.com/attacksimulator ) in your subscription.
+1. Navigate to [Attack Simulation Training](https://security.microsoft.com/attacksimulator) in your subscription.
 1. Choose **Simulations** from the top navigation bar.
 1. Select **Launch a simulation**.
 1. Pick the technique you'd like to use from the flyout, and press **Next**.
@@ -53,4 +57,4 @@ Attack simulation training allows you to run realistic but benign cyber attack s
 
 ### Further reading
 
-To learn how Attack Simulation works see [Simulate a phishing attack with Attack simulation training - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training.md)
+To learn how Attack Simulation works see [Simulate a phishing attack with Attack simulation training - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training-simulations.md)

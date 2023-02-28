@@ -5,11 +5,13 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
+ms.date: 09/13/2018
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -75,4 +77,3 @@ Learn how Contoso uses the [information protection capabilities](contoso-info-pr
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)
-

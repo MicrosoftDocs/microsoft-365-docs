@@ -4,24 +4,27 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
+ms.date: 10/21/2021
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to manage self-service password reset."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to manage self-service password reset (SSPR)."
 ---
 
 # Manage self-service password reset in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse lets partners manage Azure Active Directory (Azure AD) self-service password reset (SSPR). SSPR gives users the ability to change or reset their password with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
+Microsoft 365 Lighthouse lets Managed Service Providers (MSPs) manage Azure Active Directory (Azure AD) self-service password reset (SSPR). SSPR gives users the ability to change or reset their password with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
 
 ## Before you begin
 
@@ -35,13 +38,13 @@ The following conditions must be met before a tenant will appear in the list:
 
 - In the left navigation pane in Lighthouse, select **Users** > **Password reset**.
 
-The Password reset tab provides an overview of the tenants that have enabled SSPR through the recommended settings, the number of users who haven't registered for SSPR, and a detailed breakdown by tenant of the SSPR deployment progress across the organizations that you manage.
+The Password reset page provides an overview of the tenants that have enabled SSPR through the recommended settings, the number of users who haven't registered for SSPR, and a detailed breakdown by tenant of the SSPR deployment progress across the organizations that you manage.
 
 ## Enable SSPR for a tenant
 
 1. In the left navigation pane in Lighthouse, select **Users** > **Password reset**.
 
-2. On the **Password reset** tab, select a tenant from the list to open the details pane.
+2. On the **Password reset** page, select a tenant from the list to open the details pane.
 
 3. Select **Edit SSPR settings in Azure Active Directory** to go to Azure Active Directory (Azure AD).
 
@@ -51,7 +54,7 @@ The Password reset tab provides an overview of the tenants that have enabled SSP
 
 1. In the left navigation pane in Lighthouse, select **Users** > **Password reset**.
 
-2. On the **Password reset** tab, select a tenant from the list to open the details pane.
+2. On the **Password reset** page, select a tenant from the list to open the details pane.
 
 3. Select the users that you want to notify.
 

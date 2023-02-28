@@ -5,11 +5,15 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier3
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -55,4 +59,3 @@ Learn to [send email as a distribution group in Microsoft 365](../manage/send-em
 
 [Manage clutter for your organization](configure-clutter.md) (article)\
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)
-

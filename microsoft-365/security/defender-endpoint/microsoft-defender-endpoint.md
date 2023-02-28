@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint
 description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats.
 keywords: introduction to Microsoft Defender for Endpoint, introduction to Microsoft Defender for Endpoint, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, Microsoft 365 Defender, cyber threat hunting
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,11 +12,13 @@ ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier1
 ms.custom: intro-overview
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
+ms.date: 03/24/2021
 ---
 
 # Microsoft Defender for Endpoint
@@ -167,4 +169,4 @@ With this learning path from Microsoft Learn, you can understand Defender for En
 |![Microsoft 365 Defender training icon.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Defender for Endpoint is an endpoint security solution that offers vulnerability management, endpoint protection, endpoint detection and response, mobile threat defense, and managed services in a single, unified platform.<p> 2 hr 25 min - Learning Path - 9 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/paths/defender-endpoint-fundamentals/)
+> [Start >](/training/paths/defender-endpoint-fundamentals/)

@@ -4,13 +4,15 @@ f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 05/01/2020
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.service: o365-solutions
 ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
+- highpri
 - Ent_O365
 - Strat_O365_Enterprise
 - m365solution-3tiersprotection

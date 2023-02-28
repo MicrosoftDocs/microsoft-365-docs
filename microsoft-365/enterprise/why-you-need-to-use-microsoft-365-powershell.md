@@ -6,9 +6,11 @@ manager: scotv
 ms.date: 07/17/2020
 audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: 
+- Ent_O365
+- scotvorg
 f1.keywords:
 - CSH
 ms.custom: admindeeplinkEXCHANGE

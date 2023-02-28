@@ -2,14 +2,19 @@
 title: "What is a domain?"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier2 
+- ContentEngagementFY23
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 search.appverid:
@@ -65,5 +70,3 @@ Call Microsoft Support - [Get help setting up a domain](../../business-video/get
 [Add a domain to Microsoft 365](../setup/add-domain.md) (article)
 
 [Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)
-
-

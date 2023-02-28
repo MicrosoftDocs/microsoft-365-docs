@@ -3,7 +3,8 @@ title: Prepare your security posture for your first incident
 description: Set up your Microsoft 365 tenant's security posture for your first incident in Microsoft 365 Defender.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +16,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-firstincident
+  - highpri
+  - tier1
 ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.technology: m365d
+ms.date: 04/20/2021
 ---
+
 # Prepare your security posture for your first incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]

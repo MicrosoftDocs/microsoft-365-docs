@@ -3,9 +3,10 @@ title: Launch your portal using the Portal launch scheduler
 ms.author: jhendr
 author: jhendr
 manager: pamgreen
+ms.date: 11/11/2020
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -22,8 +23,8 @@ description: This article describes how you can launch your portal using the Por
 # Launch your portal using the SharePoint Portal launch scheduler
 
 A portal is a SharePoint communication site on your intranet that is high-traffic – a site that has anywhere from 10,000 to over 100,000 viewers over the course of several weeks. Use the Portal launch scheduler to launch your portal to ensure users have a smooth viewing experience when accessing your new SharePoint portal.
-<br>
-<br>
+
+
 The Portal launch scheduler is designed to help you follow a phased roll-out approach by batching viewers in waves and managing the URL redirects for the new portal. During the launch of each wave, you can gather user feedback, monitor portal performance, and pause the launch to resolve issues before proceeding with the next wave. Learn more about how to [plan a portal launch in SharePoint](/microsoft-365/Enterprise/Planportallaunchroll-out).
 
 **There are two types of redirections:**
@@ -116,20 +117,20 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
 ### Launch a portal with over 100k users
 
-If you are planning to launch a portal with over 100,000 users, submit a support request following the steps listed below. Make sure to include all the requested information.
+If you are planning to launch a portal with over 100,000 users, submit a support request following the steps listed below within 10-14 days prior to the launch. Make sure to include all the requested information.
 
 > [!NOTE]
 >
 > - This process should only be followed if you meet the following requirements:
 > - The Launch Page has been completed.
 > - [Portal Health Guidance](https://aka.ms/portalhealth) has been followed.
-> - The Launch date is within 14 days.
+> - The Launch date is within 10-14 days.
 
 **Follow these steps:**
 
-1. As an administrator , click the following link which will populate a help query in the admin center.
+1. As an administrator, select the following link to populate a help query in the admin center.
 
-[Launch SharePoint Portal with 100k users](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
+   [Launch SharePoint Portal with 100k users](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
 
 2. At the bottom of the pane, select **Contact Support**, and then select **New Service Request**.
 

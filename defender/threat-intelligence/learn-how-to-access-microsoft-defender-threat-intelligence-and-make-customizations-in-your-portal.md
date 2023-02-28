@@ -3,6 +3,7 @@ title: 'Quickstart: Accessing the Microsoft Defender Threat Intelligence (Defend
 description: 'In this quickstart, learn how to configure your profile and preferences and access Defender TI’s help resources using Microsoft Defender Threat Intelligence (Defender TI).'
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence 
 ms.topic: quickstart
 ms.date: 08/02/2022

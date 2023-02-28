@@ -2,14 +2,17 @@
 title: "Synchronize domain users to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 06/02/2020
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_TOC 
 ms.custom:

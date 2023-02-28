@@ -5,11 +5,15 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
+- Tier2 
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -137,7 +141,7 @@ If you choose to store personal data in the cloud, such as through Microsoft 365
 
 #### Microsoft 365 features that can help
 
-You can use [Set up compliance features](../../business-premium/m365bp-set-up-compliance.md) to help to protect your business's sensitive information. Compliance Manager can help you get started right away! For example, you can [set up a DLP policy](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) that uses the [GDPR template](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
+You can use [Set up compliance features](../../business-premium/m365bp-set-up-compliance.md) to help to protect your business's sensitive information. Compliance Manager can help you get started right away! For example, you can [Create and Deploy data loss prevention policies](../../compliance/dlp-create-deploy-policy.md) that uses the [GDPR template](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
 
 ### Step 5: Keep documentation on your data processing activities
 

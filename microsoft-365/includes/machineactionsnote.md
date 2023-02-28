@@ -6,7 +6,7 @@ ms.reviewer:
 manager: dansimp
 ms.author: macapara
 author: mjcaparas
-ms.prod: w10
+ms.service: microsoft-365-security
 ---
 
 > [!NOTE]

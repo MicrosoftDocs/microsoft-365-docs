@@ -4,7 +4,7 @@ description: Turn on definition retirement for Microsoft Defender Antivirus.
 keywords: Microsoft Defender Antivirus, antimalware, security, defender, definition retirement
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,9 +14,12 @@ ms.date: 06/10/2021
 ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
-ms.topic: article
-ms.collection: m365-security-compliance
+ms.subservice: mde
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Turn on definition retirement
@@ -44,4 +47,4 @@ You can configure definition retirement using Group Policy. Definition retiremen
 6. Deploy your updated Group Policy Object. See [Group Policy Management Console](/windows/win32/srvnodes/group-policy).
 
 > [!TIP]
-> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](/mem/intune/configuration/group-policy-analytics).
+> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Intune](/mem/intune/configuration/group-policy-analytics).

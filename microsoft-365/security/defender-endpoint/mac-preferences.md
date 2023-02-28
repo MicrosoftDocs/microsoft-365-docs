@@ -1,8 +1,8 @@
 ---
 title: Set preferences for Microsoft Defender for Endpoint on Mac
 description: Configure Microsoft Defender for Endpoint on Mac in enterprise organizations.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, management, preferences, enterprise, intune, jamf, macos,  big sur, monterey, ventura, mde for mac
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Set preferences for Microsoft Defender for Endpoint on macOS
@@ -89,15 +92,15 @@ Specifies the enforcement preference of antivirus engine. There are three values
 
 #### Configure file hash computation feature
 
-Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint will compute hashes for files it scans. Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
+Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint will compute hashes for files it scans to enable better matching against the indicator rules. On macOS, only the script and Mach-O (32 and 64 bit) files are considered for this hash computation (from engine version 1.1.20000.2 or higher). Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
 
 |Section|Value|
 |---|---|
 |**Domain**|`com.microsoft.wdav`|
 |**Key**|enableFileHashComputation|
-|**Data type**|String|
-|**Possible values**|disabled (default) <p> enabled|
-|**Comments**|Available in Defender for Endpoint version 101.73.77 or higher.|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Available in Defender for Endpoint version 101.86.81 or higher.|
 
 #### Run a scan after definitions are updated
 

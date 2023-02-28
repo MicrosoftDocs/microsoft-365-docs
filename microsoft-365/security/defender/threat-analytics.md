@@ -3,7 +3,8 @@ title: Threat analytics in Microsoft 365 Defender
 ms.reviewer: 
 description: Learn about emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
 keywords: threat analytics, risk evaluation, Microsoft 365 Defender, M365D, mitigation status, secure configuration, Microsoft Defender for Office 365, Microsoft Defender for Office 365 threat analytics, MDO threat analytics, integrated MDE and MDO threat analytics data, threat analytics data integration, integrated Microsoft 365 Defender threat analytics   
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,10 +16,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
+- m365-security 
 - m365initiative-m365-defender 
-ms.topic: article
+- tier1
+ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
+search.appverid: met150
+ms.date: 02/16/2021
 ---
 
 # Threat analytics in Microsoft 365 Defender
@@ -238,7 +242,7 @@ To set up email notifications for threat analytics reports, perform the followin
 ## Additional report details and limitations
 
 > [!NOTE]
-> As part of the unified security experience, threat analytics is now available not just for Microsoft Defender for Endpoint, but also for Microsoft Defender for Office E5 license holders.
+> As part of the unified security experience, threat analytics is now available not just for Microsoft Defender for Endpoint, but also for Microsoft Defender for Office 365 license holders.
 >
 > If you are not using the Microsoft 365 security portal (Microsoft 365 Defender), you can also see the report details (without the Microsoft Defender for Office data) in the Microsoft Defender Security Center portal (Microsoft Defender for Endpoint).
 

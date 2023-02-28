@@ -5,9 +5,10 @@ f1.keywords:
 ms.author: loreenl
 author: LoreenLa
 manager: pamgreen
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
@@ -28,4 +29,3 @@ Here's a list of Microsoft Cloud Solution Providers in Russia.
     
 - [Softline](https://softline.ru/)
     
-

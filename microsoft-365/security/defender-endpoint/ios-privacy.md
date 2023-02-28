@@ -3,7 +3,7 @@ title: Privacy information - Microsoft Defender for Endpoint on iOS
 ms.reviewer:
 description: Describes privacy information for Microsoft Defender for Endpoint on iOS
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, policy, overview
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Privacy information - Microsoft Defender for Endpoint on iOS
@@ -44,7 +47,7 @@ Here is a list of the types of data being collected:
 
 ### Web page or Network information
 
-- Domain name and IP address of the website only when a malicious connection or web page is detected.
+- Domain name and IP address of the website only when a malicious connection or web page is detected. Information is collected only when Privacy setting is disabled or turned off.
 
 ### Device and account information
 

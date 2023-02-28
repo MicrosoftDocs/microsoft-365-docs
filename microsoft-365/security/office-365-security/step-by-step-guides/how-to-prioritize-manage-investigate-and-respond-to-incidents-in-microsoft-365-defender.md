@@ -2,8 +2,7 @@
 title: How to prioritize, Manage, Investigate & Respond to Incidents in Microsoft 365 Defender
 description: The steps to manage alerts triggered in Microsoft 365 Defender. Automated investigation and response (AIR) hunt across the subscription and determines the impact and scope of a threat, and combines the information into a single Incident.
 search.product: 
-search.appverid: 
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +13,14 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
+search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Prioritize, Manage, Investigate & Respond to Incidents in Microsoft 365 Defender
@@ -26,7 +30,7 @@ When alerts are triggered in Microsoft 365 Defender, automated investigation and
 ## What you'll need
 
 - Microsoft Defender for Office 365 Plan 2 or higher
-- Sufficient permissions (Security reader, security operations, or security administrator, plus [Search and purge](../permissions-microsoft-365-security-center.md) role)
+- Sufficient permissions (Security reader, security operations, or security administrator, plus [Search and purge](../mdo-portal-permissions.md) role)
 
 ## Prioritize & manage Incidents
 
@@ -60,6 +64,6 @@ You can start using *Action Center* to act on pending action items from all inci
 
 [Manage incidents in Microsoft 365 Defender | Microsoft Docs](../../defender/manage-incidents.md)
 
-[How automated investigation and response works in Microsoft Defender for Office 365](../automated-investigation-response-office.md)
+[How automated investigation and response works in Microsoft Defender for Office 365](../air-about-office.md)
 
 [Remediation actions in Microsoft Defender for Office 365](../air-remediation-actions.md)

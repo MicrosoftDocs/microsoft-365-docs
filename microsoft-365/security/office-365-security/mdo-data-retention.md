@@ -5,17 +5,18 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 
+ms.date: 1/31/2023
 audience: ITPro
-ms.topic: article
-ms.prod: m365-security
-ms.technology: mdo
+ms.topic: conceptual
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.localizationpriority: medium
-search.appverid:
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.custom: 
 description: Microsoft Defender for Office 365 data retention informationThreat Explorer/ Real-Time detections 
+search.appverid: met150
 ---
 
 # Data retention information for Microsoft Defender for Office 365

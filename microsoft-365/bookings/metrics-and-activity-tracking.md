@@ -3,10 +3,14 @@ title: "Metrics and activity tracking in Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 06/24/2020
 audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- Tier2
+- scotvorg
 ms.assetid: 060a9781-c8a2-4e85-a769-31e6417d05b3
 description: "Various metrics are available on the main Bookings page, allowing you to easily track revenue and customer activity."
 ---

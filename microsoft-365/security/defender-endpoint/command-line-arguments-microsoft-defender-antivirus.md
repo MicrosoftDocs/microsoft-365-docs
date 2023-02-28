@@ -2,7 +2,7 @@
 title: Use the command line to manage Microsoft Defender Antivirus
 description: Run Microsoft Defender Antivirus scans and configure next-generation protection with a dedicated command-line utility.
 keywords: run windows defender scan, run antivirus scan from command line, run windows defender scan from command line, mpcmdrun, defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,9 +12,12 @@ ms.custom: nextgen
 ms.reviewer: ksarens
 manager: dansimp
 ms.date: 05/24/2021
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Configure and manage Microsoft Defender Antivirus with the mpcmdrun.exe command-line tool
@@ -72,7 +75,7 @@ The following table lists common errors that can occur while using the MpCmdRun 
 
 |Error message|Possible reason|
 |---|---|
-|**ValidateMapsConnection failed (800106BA)** or **0x800106BA**|The Microsoft Defender Antivirus service is disabled. Enable the service and try again. If you need help re-enabling Microsoft Defender Antivirus, see [Reinstall/enable Microsoft Defender Antivirus on your endpoints](switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).<p> **TIP**: In Windows 10 1909 or older, and Windows Server 2019 or older, the service was formerly called *Windows Defender Antivirus*.|
+|**ValidateMapsConnection failed (800106BA)** or **0x800106BA**|The Microsoft Defender Antivirus service is disabled. Enable the service and try again. If you need help re-enabling Microsoft Defender Antivirus, see [Reinstall/enable Microsoft Defender Antivirus on your endpoints](switch-to-mde-phase-2.md#step-1-reinstallenable-microsoft-defender-antivirus-on-your-endpoints).<p> **TIP**: In Windows 10 1909 or older, and Windows Server 2019 or older, the service was formerly called *Windows Defender Antivirus*.|
 |**0x80070667**|You're running the `-ValidateMapsConnection` command from a computer that is Windows 10 version 1607 or older, or Windows Server 2016 or older. Run the command from a machine that is Windows 10 version 1703 or newer, or Windows Server 2019 or newer.|
 |**MpCmdRun is not recognized as an internal or external command, operable program, or batch file.**|The tool must be run from either `%ProgramFiles%\Windows Defender` or `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` (where `2012.4-0` might differ since platform updates are monthly except for March)|
 |**ValidateMapsConnection failed to establish a connection to MAPS (hr=80070005 httpcode=450)**|The command was attempted using insufficient privileges. Use the command prompt (cmd.exe) as an administrator.|
@@ -94,6 +97,7 @@ The following table lists common errors that can occur while using the MpCmdRun 
 
 ## See also
 
+- [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 - [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
 - [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)

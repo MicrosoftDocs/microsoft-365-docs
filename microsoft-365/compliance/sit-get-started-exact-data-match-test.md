@@ -8,18 +8,21 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.date:
+ms.date: 09/24/2021
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
-description: configure services
+description: Test an EDM using the test function in the sensitive information types section in the Compliance center.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Test an exact data match sensitive information type
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Applies to
 
@@ -68,7 +71,7 @@ You can see where your EDM SIT is being used and how accurate it is in productio
 
 Once you're satisfied with the results of your testing and tuning, your EDM based custom SIT is ready for use in information protection policies, like:
 
-- [DLP policies](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
+- [DLP policies](dlp-create-deploy-policy.md)
 - [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/data-protection-policies)
 

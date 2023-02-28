@@ -8,10 +8,11 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.date:
+ms.date: 09/14/2021
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -20,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Create exact data match sensitive information type/rule package
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Applies to
 

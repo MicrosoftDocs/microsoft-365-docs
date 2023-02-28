@@ -2,10 +2,10 @@
 title: "Use your free Azure Active Directory subscription"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
-ms.date:
+ms.date: 09/12/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -24,6 +24,8 @@ ms.custom:
 # Use your free Azure Active Directory subscription
 
 If your organization has a paid subscription to Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Microsoft Azure Active Directory. You and other admins can use Azure AD to create and manage user and group accounts. To use Azure AD, just go to the Azure portal and sign in to your account.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Open a private browsing session
 

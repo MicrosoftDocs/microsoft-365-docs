@@ -7,13 +7,16 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: m365bp
+ms.date: 01/18/2023
 ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
 - M365-Campaigns
 - m365solution-smb
+- tier1
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration

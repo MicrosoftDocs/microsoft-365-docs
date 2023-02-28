@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 05/09/2022
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -22,6 +23,8 @@ description: "Canada social insurance number sensitive information type entity d
 ---
 
 # Canada social insurance number
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -48,34 +51,32 @@ Yes
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
 - The function Func_canadian_sin finds content that matches the pattern.
-- At least two of the following patterns:
-    - A keyword from `Keyword_sin` is found.
-    - A keyword from `Keyword_sin_collaborative` is found.
-    - The function `Func_eu_date` finds a date in the right date format.
+- At least one of the following patterns:
+    - A keyword from Keyword_sin is found.
+    - A keyword from Keyword_sin_collaborative is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
 - The function Func_unformatted_canadian_sin finds content that matches the pattern.
-- A keyword from `Keyword_sin` is found.
+- A keyword from Keyword_sin is found.
 - The checksum passes.
 
 ```xml
-<!-- Canada Social Insurance Number -->
-<Entity id="a2f29c85-ecb8-4514-a610-364790c0773e" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="85">
+    <!-- Canada Social Insurance Number -->
+    <Entity id="a2f29c85-ecb8-4514-a610-364790c0773e" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_canadian_sin" />
-        <Any minMatches="2">
+        <Any minMatches="1">
           <Match idRef="Keyword_sin" />
           <Match idRef="Keyword_sin_collaborative" />
-          <Match idRef="Func_eu_date" />
         </Any>
-  </Pattern>
-  <Pattern confidenceLevel="75">
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_canadian_sin" />
         <Match idRef="Keyword_sin" />
-  </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ## Keywords
@@ -95,6 +96,11 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - sin#
 - soc ins
 - social ins
+- NAS (case sensitive)
+- numéro d’assurance social
+- numéro d’assurance sociale
+- assurance social
+- carte d’assurance sociale
 
 ### Keyword_sin_collaborative
 

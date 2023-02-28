@@ -4,7 +4,8 @@ description: Learn how to use the go hunt tool on to quickly query for relevant 
 keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,10 +17,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
-ms.topic: article
-ms.technology: m365d
+  - m365-security
+  - tier1
+ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Quickly hunt for entity or event information with go hunt
@@ -29,11 +30,10 @@ ms.technology: m365d
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
 
 With the *go hunt* action, you can quickly investigate events and various entity types using powerful query-based [advanced hunting](advanced-hunting-overview.md) capabilities. This action automatically runs an advanced hunting query to find relevant information about the selected event or entity.
 
-The *go hunt* action is available in various sections of the Defender for Cloud. This action is available to view once event or entity details are displayed. For example, you can use the *go hunt* option from the following sections:
+The *go hunt* action is available in various sections of Microsoft 365 Defender. This action is available to view once event or entity details are displayed. For example, you can use the *go hunt* option from the following sections:
 
 - In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information and the various actions you could take on that entity. In the example below, a mailbox is selected, showing details about the mailbox and the option to hunt for more information about the mailbox.
 

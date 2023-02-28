@@ -4,8 +4,8 @@ description: Describes Microsoft recommendations and core concepts for deploying
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.prod: m365-security
-ms.topic: article
+ms.service: microsoft-365-security
+ms.topic: conceptual
 audience: Admin
 f1.keywords: 
   - NOCSH
@@ -15,13 +15,18 @@ ms.custom:
   - goldenconfig
 ms.collection: 
   - M365-identity-device-management
-  - M365-security-compliance
+  - m365-security
   - m365solution-identitydevice
   - m365solution-overview
   - m365solution-zero-trust
   - zerotrust-solution
-ms.technology: mdo
+  - highpri
+  - tier1
+ms.subservice: mdo
+search.appverid: met150
+ms.date: 1/31/2023
 ---
+
 # Zero Trust identity and device access configurations
 
 Security architectures that rely on network firewalls and virtual private networks (VPNs) to isolate and restrict access to an organization's technology resources and services are no longer sufficient for a workforce that regularly requires access to applications and resources that exist beyond traditional corporate network boundaries.
@@ -81,7 +86,7 @@ Watch this video for a quick overview of identity and device access configuratio
 
 ## Intended audience
 
-These recommendations are intended for enterprise architects and IT professionals who are familiar with Microsoft 365 cloud productivity and security services, which includes Azure AD (identity), Microsoft Intune (device management), and Microsoft Purview Information Protection (data protection).
+These recommendations are intended for enterprise architects and IT professionals who are familiar with Microsoft 365 cloud productivity and security services, which include Azure AD (identity), Microsoft Intune (device management), and Microsoft Purview Information Protection (data protection).
 
 ### Customer environment
 
@@ -97,7 +102,7 @@ Your organization may be subject to regulatory or other compliance requirements,
 
 We've done our best to account for a wide variety of organizational protection requirements, but we're not able to account for all possible requirements or for all the unique aspects of your organization.
 
-## Three tiers of protection
+## Three levels of protection
 
 Most organizations have specific requirements regarding security and data protection. These requirements vary by industry segment and by job functions within organizations. For example, your legal department and administrators might require additional security and information protection controls around their email correspondence that are not required for other business units.
 
@@ -173,19 +178,13 @@ This guidance shows you how to implement a set of policies to protect access to 
 
 - [Configure your tenant for increased security](tenant-wide-setup-for-increased-security.md)
 
-  Recommendations that apply to starting point security for your tenant.
-
-- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md)
-
-  Recommendations that include logging, data governance, admin access, and threat protection.
-
 ### Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise
 
 Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 11 or Windows 10 because Azure is designed to provide the smoothest experience possible for both on-premises and Azure AD. Windows 11 or Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for Conditional Access. These apps also include enhanced compliance and security tools.
 
-## Applying these capabilities across the three tiers of protection
+## Applying these capabilities across the three levels of protection
 
-The following table summarizes our recommendations for using these capabilities across the three tiers of protection.
+The following table summarizes our recommendations for using these capabilities across the three levels of protection.
 
 |Protection mechanism|Starting point|Enterprise|Specialized security|
 |---|---|---|---|

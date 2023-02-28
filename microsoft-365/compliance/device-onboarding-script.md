@@ -5,18 +5,18 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 10/06/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance 
+- tier1
+- purview-compliance 
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
 description: Use a local script to deploy the configuration package on devices so that they are onboarded to the service.
-
 ---
 
 # Onboard Windows 10 and Windows 11 devices using a local script
@@ -32,6 +32,8 @@ You can also manually onboard individual devices to Microsoft 365. You might wan
 > This script has been optimized for use on up to 10 devices.
 >
 > To deploy at scale, use [other deployment options](device-onboarding-overview.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Onboard devices
  

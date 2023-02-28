@@ -1,25 +1,25 @@
 ---
 title: "Microsoft Purview extensibility"
+description: "Learn about extending Microsoft Purview solutions by using third-party data connectors and Microsoft Graph APIs."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 08/18/2020
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 search.appverid: 
 - MOE150
-- MET150
-ms.assetid: 
+- MET150 
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about extending Microsoft Purview solutions by using third-party data connectors and Microsoft Graph APIs."
 ---
 
 # Microsoft Purview and Microsoft Priva extensibility
@@ -31,6 +31,8 @@ There are two key building blocks for compliance extensibility:
 - **Data connectors**. Use to import and archive non-Microsoft data so you can apply Microsoft 365 protection and governance capabilities to third-party data.
 
 - **APIs**. Enables programmatic access to Microsoft Purview capabilities.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Data connectors
 
@@ -82,7 +84,7 @@ For the licensing requirements for Teams DLP, see [Microsoft 365 licensing guida
 
 ### Microsoft Graph API for eDiscovery (preview)
 
-With [eDiscovery (Premium)](overview-ediscovery-20.md), organizations can discover data where it lives, and manage more end-to-end eDiscovery workflows with intelligent machine learning and analytics capabilities to reduce data to the relevant set – all while the data stays within the Microsoft 365 security and compliance boundary.
+With [eDiscovery (Premium)](ediscovery-overview.md), organizations can discover data where it lives, and manage more end-to-end eDiscovery workflows with intelligent machine learning and analytics capabilities to reduce data to the relevant set – all while the data stays within the Microsoft 365 security and compliance boundary.
 
 Graph APIs for eDiscovery (Premium) can be used to create and manage cases, review sets, and review set queries in a scalable and repeatable manner. This enables customers and partners to create apps and workflows to automate common and repetitive processes such as creating cases and managing custodians and legal holds.
 

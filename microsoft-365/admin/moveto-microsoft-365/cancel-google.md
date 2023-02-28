@@ -5,11 +5,15 @@ f1.keywords:
 ms.author: twerner
 author: twernermsft
 manager: scotv
+ms.date: 01/07/2021
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 ms.custom:

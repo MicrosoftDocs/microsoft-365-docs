@@ -4,7 +4,8 @@ description: How to redirect accounts and sessions from Defender for Identity to
 keywords: Microsoft 365 Defender, Getting started with Microsoft 365 Defender, security center redirection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,11 +17,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
+  - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
-ms.technology: m365d
+ms.topic: conceptual
+ms.date: 04/28/2022
 ---
+
 # Redirecting accounts from Microsoft Defender for Identity to Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -34,7 +37,7 @@ This guide explains how to route accounts to Microsoft 365 Defender by enabling 
 
 ## What to expect
 
-Once automatic redirection is enabled, accounts accessing the former Microsoft Defender for Identity portal at portal.atp.azure.com, will be automatically routed to the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">security.microsoft.com</a>.
+Starting January 31, 2023, the portal redirection setting will be automatically enabled for each tenant. Once the redirection setting is enabled, any requests to the standalone Defender for Identity portal (`portal.atp.azure.com`) will be redirected to Microsoft 365 Defender (<https://security.microsoft.com>) along with any direct links to its functionality. Accounts accessing the former Microsoft Defender for Identity portal will be automatically routed to the Microsoft 365 Defender portal.
 
 ## When does this take effect?
 
@@ -48,7 +51,7 @@ To start routing accounts to Microsoft 365 Defender:
 
 1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
-1. Navigate to **Settings** > **Identities** > **General** > **Portal redirection** or [click here](https://security.microsoft.com/preferences2/portal_redirection).
+1. Navigate to **Settings** > **Identities** > **General** > **Portal redirection** or [go here](https://security.microsoft.com/preferences2/portal_redirection).
 
     :::image type="content" source="../../media/portal-redirection.png" alt-text="Portal redirection."lightbox="../../media/portal-redirection.png":::
 
@@ -79,5 +82,6 @@ Once disabled, accounts will no longer be routed to security.microsoft.com.
 ## Related information
 
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
+- [Deploy Microsoft Defender for Identity with Microsoft 365 Defender](/defender-for-identity/deploy-defender-identity)
 - [About Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender)
 - [Microsoft security portals and admin centers](portals.md)

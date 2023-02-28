@@ -5,11 +5,13 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 06/04/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier1
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
@@ -25,6 +27,8 @@ Use the resources on this page to help you meet specific regulatory requirements
 
 These resources are available to download from the [Data Protection Resources, FAQ, and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) page of the Service Trust Portal.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## New Zealand Public Records Act
 
 **Supporting New Zealand's Public Records Act compliance obligations with Microsoft 365** - [Download assessment](https://aka.ms/NZPRA)
@@ -39,7 +43,7 @@ This report helps you understand how the system aspects of the New Zealand Publi
 
 ## SEC 17a-4(f), FINRA 4511(c), and CFTC 1.31(c)-(d)
 
-**Cohasset Assessment - Microsoft 365 - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Exchange, Teams, and Yammer** - [Download assessment](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+**Cohasset Assessment - Microsoft 365 - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Exchange, Teams, and Yammer** - [Download assessment](https://servicetrust.microsoft.com/DocumentPage/f028b699-8e39-451e-8af4-e8a66426068b)
 
 Applicable workloads: SharePoint, OneDrive, Teams, Exchange, and Yammer
 

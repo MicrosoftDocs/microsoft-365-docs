@@ -2,7 +2,7 @@
 title: Manage automation file uploads
 description: Enable content analysis and configure the file extension and email attachment extensions that will be submitted for analysis
 keywords: automation, file, uploads, content, analysis, file, extension, email, attachment
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Manage automation file uploads
@@ -35,7 +39,9 @@ For example, if you add *exe* and *bat* as file or attachment extension names, t
 
 ## Add file extension names and attachment extension names.
 
-1. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Automation uploads**.
+1. Log in to [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) using an account with the Security administrator or Global administrator role assigned.
+
+2. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Automation uploads**.
 
 2. Toggle the content analysis setting between **On** and **Off**.
 

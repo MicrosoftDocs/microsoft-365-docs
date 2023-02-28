@@ -2,7 +2,7 @@
 title: Device discovery overview
 description: Learn how to leverage endpoint discovery in Microsoft 365 Defender to find unmanaged devices in your network
 keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +14,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
 - m365-initiative-defender-endpoint
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: m365d
+ms.subservice: mde
+search.appverid: met150
+ms.date: 03/23/2021
 ---
 
 # Device discovery overview
@@ -99,7 +102,7 @@ To address the challenge of gaining enough visibility to locate, identify, and s
 
 - **Corelight**: Microsoft has partnered with Corelight to receive data from Corelight network appliances. This provides Microsoft 365 Defender with increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks. for more information, see [Enable Corelight data integration](corelight-integration.md).
 
-- **Microsoft Defender for IoT**: This integration combines Microsoft Defender for Endpoint's device discovery capabilities, with the agentless monitoring capabilities of Microsoft Defender for IoT, to secure enterprise IoT devices connected to an IT network (for example, Voice over Internet Protocol (VoIP), printers, and smart TVs). For more information, see [Enable Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md).
+- **Microsoft Defender for IoT**: This integration combines Microsoft Defender for Endpoint's device discovery capabilities, with the agentless monitoring capabilities of Microsoft Defender for IoT, to secure enterprise IoT devices connected to an IT network (for example, Voice over Internet Protocol (VoIP), printers, and smart TVs). For more information, see [Enable Enterprise IoT security with Defender for Endpoint](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint/).
 
 ## Vulnerability assessment on discovered devices
 

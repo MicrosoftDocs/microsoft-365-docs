@@ -2,22 +2,24 @@
 title: Microsoft Defender for Identity in Microsoft 365 Defender
 description: Learn about changes from the Microsoft Defender for Identity to Microsoft 365 Defender
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Identity, NDI
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: dacurwin
-author: dcurwin
+ms.author: diannegali
+author: diannegali
 manager: dansimp
 ms.date: 07/06/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid: 
 - MOE150
 - MET150
 ms.collection: 
-- M365-security-compliance 
+- m365-security 
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ---
 
@@ -48,7 +50,7 @@ The table below lists the changes in navigation between Microsoft Defender for I
 | Alert page                 | Microsoft 365 Defender Alert page                            |
 | Search                     | Microsoft 365 Defender Search                                |
 | Health center              | Settings -> Identities -> Sensors                            |
-| Entity Activities          | Advanced hunting                                             |
+| Entity Activities          | Advanced hunting <br> Device timeline <br> Identity timeline                                             |
 | Settings                   | Settings -> Identities                                       |
 | Users and accounts         | Assets -> Identities                                         |
 | Identity security posture  | [Microsoft Defender for Identity's security posture assessments](/defender-for-identity/security-assessment) |

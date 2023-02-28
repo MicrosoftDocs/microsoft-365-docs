@@ -5,11 +5,14 @@ f1.keywords:
 ms.author: sharik
 author: skjerland
 manager: scotv
+ms.date: 02/24/2020
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
@@ -47,5 +50,3 @@ A few Office app for iOS features isn't available for Office 365 operated by 21V
 ## Security considerations
 
 If your organization pushes apps to employee mobile devices, we suggest replacing the Word, Excel, and PowerPoint apps with the Office app for iOS.  
-
-

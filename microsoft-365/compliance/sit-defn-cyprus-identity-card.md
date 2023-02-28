@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 05/09/2022
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -23,6 +24,8 @@ description: "Cyprus identity card sensitive information type entity definition.
 
 
 # Cyprus identity card
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

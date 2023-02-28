@@ -6,11 +6,12 @@ manager: scotv
 ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 description: "Microsoft 365 Network Insights"

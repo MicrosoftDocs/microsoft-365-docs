@@ -6,8 +6,9 @@ manager: serdars
 ms.date: 11/10/2021
 audience: ITPro
 ms.topic: conceptual
-ms.prod: sharepoint-server-itpro
+ms.service: microsoft-365-enterprise
 ms.collection:
+- scotvorg
 - Ent_O365
 search.appverid:
 - MET150

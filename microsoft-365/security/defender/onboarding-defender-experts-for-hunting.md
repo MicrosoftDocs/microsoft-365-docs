@@ -4,7 +4,8 @@ ms.reviewer:
 description: If you're new to Microsoft 365 Defender and Defender Experts for Hunting, this is how you subscribe
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, targeted attack notification, defender experts notifications, endpoint attack notifications, Microsoft Defender Experts for hunting, threat hunting and analysis.
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,10 +15,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-security
+  - tier1 
 ms.topic: conceptual
-ms.technology: mde
+search.appverid: met150
+ms.date: 07/26/2022
 ---
 
 # Start using Microsoft Defender Experts for Hunting
@@ -53,10 +55,10 @@ Refer to the following screenshot to see a sample Defender Experts Notification:
 
 ### Where you'll find Defender Experts Notifications
 
-You can receive Defender Experts Notifications from Defender Experts through the following mediums: 
+You can receive Defender Experts Notifications from Defender Experts through the following mediums:
 
-- The Microsoft 365 Defender portal's [Incidents](https://security.microsoft.com/incidents?tid=f839b112-d9d7-4d27-9bf6-94542403f21c) page
-- The Microsoft 365 Defender portal's [Alerts](https://security.microsoft.com/alerts?tid=f839b112-d9d7-4d27-9bf6-94542403f21c) page
+- The Microsoft 365 Defender portal's [Incidents](https://security.microsoft.com/incidents) page
+- The Microsoft 365 Defender portal's [Alerts](https://security.microsoft.com/alerts) page
 - OData alerting [API](../../security/defender-endpoint/get-alerts.md) and [REST API](../defender-endpoint/configure-siem.md)
 - [DeviceAlertEvents](../../security/defender-endpoint/advanced-hunting-devicealertevents-table.md) table in Advanced hunting
 
@@ -121,7 +123,7 @@ The option to **Ask Defender Experts** is available in several places throughout
 - We recently saw a blog post about a threat that is targeting our industry. Can you help us understand what protection Microsoft 365 Defender provides against this threat actor?
 - We recently observed a phishing campaign conducted against our organization. Can you tell us if this was targeted specifically to our company or vertical?
 
-### Microsoft Defender Experts for Hunting' alert communications
+### Microsoft Defender Experts for Hunting alert communications
 
 - Can your incident response team help us address the Defender Experts Notification that we got?
 - We received this Defender Experts Notification from Microsoft Defender Experts for Hunting. We don't have our own incident response team. What can we do now, and how can we contain the incident?

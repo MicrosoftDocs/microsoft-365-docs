@@ -1,22 +1,26 @@
 ---
-title: "Upgrade Windows devices to Windows 10 Pro"
+title: "Upgrade Windows devices to Windows 10 or 11 Pro"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: conceptual
+ms.service: microsoft-365-security
+ms.subservice: m365bp
+ms.collection:
+- tier1
+- m365-security
+ms.date: 09/15/2022
 localization_priority: Normal
-ms.date: 07/19/2022
 search.appverid:
 - MET150
 - MOE150
-description: "Learn how to upgrade your Windows devices to Windows 10 Pro with Microsoft 365 Business Premium."
+description: "Learn how to upgrade your Windows devices to Windows 10 or 11 Pro with Microsoft 365 Business Premium."
 ---
 
-# Upgrade Windows devices to Windows 10 Pro
+# Upgrade Windows devices to Windows 10 or 11 Pro
 
 If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business Premium subscription entitles you to upgrade those devices to Windows 10 or 11 Pro.  
 

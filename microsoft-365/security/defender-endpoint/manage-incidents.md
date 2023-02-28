@@ -4,7 +4,7 @@ description: Manage incidents by assigning it, updating its status, or setting i
 keywords: incidents, manage, assign, status, classification, true alert, false alert
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,10 +14,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
-ms.topic: article
-ms.technology: mde
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Manage Microsoft Defender for Endpoint incidents
@@ -58,9 +59,9 @@ If an incident has not been assigned yet, you can select **Assign to me** to ass
 ### Incident status
 You can categorize incidents (as **Active**, or **Resolved**) by changing their status as your investigation progresses. This helps you organize and manage how your team can respond to incidents.
 
-For example, your SoC analyst can review the urgent **Active** incidents for the day, and decide to assign them to himself for investigation.
+For example, your SOC analyst can review the urgent **Active** incidents for the day, and decide to assign them to himself for investigation.
 
-Alternatively, your SoC analyst might set the incident as **Resolved** if the incident has been remediated. 
+Alternatively, your SOC analyst might set the incident as **Resolved** if the incident has been remediated. 
 
 ### Classification
 You can choose not to set a classification, or decide to specify whether an incident is true or false. Doing so helps the team see patterns and learn from them.

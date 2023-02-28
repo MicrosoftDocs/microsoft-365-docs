@@ -4,15 +4,15 @@ ms.author: v-jdeweese
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
+ms.date: 05/05/2022
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to enable, disable, and manage Whiteboard data.
-
 ---
 
 # Manage access to Microsoft Whiteboard for GCC High environments
@@ -42,7 +42,7 @@ You can control access to Whiteboard in the following ways:
 - Require conditional access policies for accessing Whiteboard using the Azure Active Directory admin center.
 
 >[!NOTE]
-> Whiteboard on OneDrive for Business doesn't appear in the Microsoft 365 admin center. Teams meeting policy only hides Whiteboard entry points, it doesn't prevent users from using Whiteboard. Conditional access ploicies prevent access to Whiteboard, but doesn't hide the entry points.
+> Whiteboard on OneDrive for Business doesn't appear in the Microsoft 365 admin center. Teams meeting policy only hides Whiteboard entry points, it doesn't prevent users from using Whiteboard. Conditional access policies prevent access to Whiteboard, but doesn't hide the entry points.
 
 ## Enable or disable Whiteboard
 
@@ -72,7 +72,3 @@ To show or hide Whiteboard in meetings, see [Meeting policy settings](/microsoft
 [Manage sharing for Whiteboard - GCC High](manage-sharing-gcc-high.md)
 
 [Manage clients for Whiteboard - GCC High](manage-clients-gcc-high.md)
-
-
-
-

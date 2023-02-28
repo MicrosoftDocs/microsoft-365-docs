@@ -4,7 +4,8 @@ description: Learn how to use the FileProfile() to enrich information about file
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +16,11 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
-ms.technology: m365d
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # FileProfile()
@@ -49,6 +52,10 @@ The `FileProfile()` function is an enrichment function in [advanced hunting](adv
 | `ThreatName` | `string` | Detection name for any malware or other threats found |
 | `Publisher` | `string` | Name of the organization that published the file |
 | `SoftwareName` | `string` | Name of the software product |
+| `ProfileAvailability` | `string` | Indicates the availability status of the profile data for the file: Available - profile was successfully queried and file data returned, Missing - profile was successfully queried but no file info was found, Error - error in querying the file info or maximum allotted time was exceeded before query could be completed, or an empty value - if file ID is invalid or the maximum number of files was reached |
+
+
+
 
 ## Syntax
 

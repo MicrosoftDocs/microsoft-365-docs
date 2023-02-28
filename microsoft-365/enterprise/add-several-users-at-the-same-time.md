@@ -3,9 +3,10 @@ title: "Add several users at the same time to Microsoft 365 - Admin Help"
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -15,6 +16,9 @@ ms.custom:
 - 'O365M_AddUsersCSV'
 - 'O365E_AddUsersCSV'
 - admindeeplinkMAC
+ms.collection: 
+- Tier1
+- scotvorg
 search.appverid:
 - MET150
 - MOP150

@@ -3,7 +3,7 @@ title: Why cloud protection should be enabled for Microsoft Defender Antivirus
 description: See why cloud protection should be turned on for Microsoft Defender Antivirus. It helps many security features in Microsoft Defender for Endpoint work
 keywords: Microsoft Defender Antivirus, cloud protection, security features, sample submission
 search.product: 
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,12 +12,13 @@ ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
-ms.topic: article
+ms.subservice: mde
+ms.topic: conceptual
 ms.date: 10/22/2021
 ms.collection: 
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Why cloud protection should be enabled for Microsoft Defender Antivirus
@@ -55,15 +56,15 @@ The following table summarizes the features and capabilities that depend on clou
 
 Now that you have an overview of cloud protection and its role in Microsoft Defender Antivirus, here are some next steps:
 
-1. **[Enable cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md)**. You can enable cloud protection with Microsoft Endpoint Manager (which now includes Microsoft Endpoint Configuration Manager and Microsoft Intune), Group Policy, or PowerShell cmdlets.
+1. **[Enable cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md)**. You can enable cloud protection with Microsoft Configuration Manager, Microsoft Intune, Group Policy, or PowerShell cmdlets.
 
-2. **[Specify the cloud protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)**. You can specify the level of protection offered by the cloud by using Microsoft Endpoint Manager or Group Policy. The protection level affects the amount of information shared with the cloud and how aggressively new files are blocked.
+2. **[Specify the cloud protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)**. You can specify the level of protection offered by the cloud by using Microsoft Intune, Configuration Manager, or Group Policy. The protection level affects the amount of information shared with the cloud and how aggressively new files are blocked.
 
 3. **[Configure and validate network connections for Microsoft Defender Antivirus](configure-network-connections-microsoft-defender-antivirus.md)**. There are certain Microsoft URLs that your network and endpoints must be able to connect to for cloud protection to work effectively. This article lists the URLs that should be allowed via firewall or network filtering rules, and instructions for confirming your network is properly enrolled in cloud protection.
 
-4. **[Configure the "block at first sight" feature](configure-block-at-first-sight-microsoft-defender-antivirus.md)**. The "block at first sight" feature can block new malware within seconds, without having to wait hours for traditional Security intelligence. You can enable and configure it by using Microsoft Endpoint Manager or Group Policy.
+4. **[Configure the "block at first sight" feature](configure-block-at-first-sight-microsoft-defender-antivirus.md)**. The "block at first sight" feature can block new malware within seconds, without having to wait hours for traditional Security intelligence. You can enable and configure it by using Microsoft Intune, Configuration Manager, or Group Policy.
 
-5. **[Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)**. Microsoft Defender Antivirus can block suspicious files from running while it queries our cloud protection service. You can configure the amount of time the file will be prevented from running by using Microsoft Endpoint Manager or Group Policy.
+5. **[Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)**. Microsoft Defender Antivirus can block suspicious files from running while it queries our cloud protection service. You can configure the amount of time the file will be prevented from running by using Microsoft Intune, Configuration Manager, or Group Policy.
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:

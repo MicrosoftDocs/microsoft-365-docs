@@ -5,17 +5,21 @@ keywords: evaluate Microsoft Defender for Endpoint, evaluation, lab, simulation,
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-evalutatemtp
-ms.topic: article
-ms.technology: mde
+  - highpri
+  - tier1
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Microsoft Defender for Endpoint evaluation lab

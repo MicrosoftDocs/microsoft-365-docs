@@ -1,19 +1,23 @@
----
+﻿---
 title: Take response actions on a device in Microsoft Defender for Endpoint
-description: Take response actions on a device such as isolating devices, collecting an investigation package, managing tags, running av scan, and restricting app execution.
+description: Take response actions on a device such as isolating devices, collecting an investigation package, managing tags, running an av scan, and restricting app execution.
 keywords: respond, isolate, isolate device, collect investigation package, action center, restrict, manage tags, av scan, restrict app
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 01/06/2023
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Take response actions on a device
@@ -45,23 +49,24 @@ Response actions run along the top of a specific device page and include:
 [![Image of response actions.](images/response-actions.png)](images/response-actions.png#lightbox)
 
 > [!IMPORTANT]
-> [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) and [Microsoft Defender for Business](../defender-business/mdb-overview.md) include only the following manual response actions:
+> [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) includes only the following manual response actions:
 > - Run antivirus scan
 > - Isolate device
 > - Stop and quarantine a file
-> - Add an indicator to block or allow a file
-> Your subscription must include Defender for Endpoint Plan 2 to have all of the response actions described in this article.
+> - Add an indicator to block or allow a file.
+> 
+>  [Microsoft Defender for Business](../defender-business/mdb-overview.md) does not include the "Stop and quarantine a file" action at this time.
+>  Your subscription must include Defender for Endpoint Plan 2 to have all of the response actions described in this article.
 
  You can find device pages from any of the following views:
 
-- **Security operations dashboard** - Select a device name from the Devices at risk card.
 - **Alerts queue** - Select the device name beside the device icon from the alerts queue.
 - **Devices list** - Select the heading of the device name from the devices list.
 - **Search box** - Select Device from the drop-down menu and enter the device name.
 
 > [!IMPORTANT]
 > - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2019, and Windows Server 2022.
-> - For non-Windows platforms, response capabilities (such as Device isolation) are dependent on the third-party capabilities.
+> - For non-Windows platforms, response capabilities (such as isolate device) are dependent on the third-party capabilities.
 > - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
 ## Manage tags
@@ -121,7 +126,7 @@ The package contains the following folders:
 |Scheduled tasks|Contains a .CSV file listing the scheduled tasks, which can be used to identify routines performed automatically on a chosen device to look for suspicious code that was set to run automatically.|
 |Security event log|Contains the security event log, which contains records of login or logout activity, or other security-related events specified by the system's audit policy. <p><div class="alert"><b>NOTE:</b> Open the event log file using Event viewer.</div>|
 |Services|Contains a .CSV file that lists services and their states.|
-|Windows Server Message Block (SMB) sessions|Lists shared access to files, printers, and serial ports and miscellaneous communications between nodes on a network. This can help identify data exfiltration or lateral movement. <p> Contains files for SMBInboundSessions and SMBOutboundSession. <p> <div class="alert"><b>NOTE:</b> If there are no sessions (inbound or outbound), you'll get a text file that tell you that there are no SMB sessions found.</div>|
+|Windows Server Message Block (SMB) sessions|Lists shared access to files, printers, and serial ports and miscellaneous communications between nodes on a network. This can help identify data exfiltration or lateral movement. <p> Contains files for SMBInboundSessions and SMBOutboundSession. <p> <div class="alert"><b>NOTE:</b> If there are no sessions (inbound or outbound), you'll get a text file that tells you that there are no SMB sessions found.</div>|
 |System Information|Contains a SystemInformation.txt file that lists system information such as OS version and network cards.|
 |Temp Directories|Contains a set of text files that lists the files located in %Temp% for every user in the system. <p> This can help to track suspicious files that an attacker may have dropped on the system. <p> <div class="alert"><b>NOTE:</b> If the file contains the following message: "The system cannot find the path specified", it means that there is no temp directory for this user, and might be because the user didn't log in to the system.</div>|
 |Users and Groups|Provides a list of files that each represent a group and its members.|
@@ -172,25 +177,36 @@ When an app is restricted, the following notification is displayed to inform the
 
 :::image type="content" source="images/atp-app-restriction.png" alt-text="The application restriction message" lightbox="images/atp-app-restriction.png":::
 
-> [!NOTE]
-> The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
+>[!NOTE]
+>The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
 
 ## Isolate devices from the network
 
 Depending on the severity of the attack and the sensitivity of the device, you might want to isolate the device from the network. This action can help prevent the attacker from controlling the compromised device and performing further activities such as data exfiltration and lateral movement.
 
+
+
 > [!IMPORTANT]
-> - Isolating devices from the network is not currently supported for devices running macOS or Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md).
+> - Isolating devices from the network is not currently supported for devices running macOS. For macOS, use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md).
 > - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, and Windows Server 2016.
+>- You can use the device isolation capability **in public preview** on all supported Microsoft Defender for Endpoint on Linux listed in [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
 > - Selective isolation is available for devices running Windows 10, version 1709 or later, and Windows 11.
 > - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
+>- The feature supports VPN connection.
+>- You must have at least one the following role permissions: 'Active remediation actions'. For more information, see [Create and manage roles](user-roles.md).
+>- You must have access to the device based on the device group settings. For more information, see [Create and manage device groups](machine-groups.md).
+>- Exclusion for Linux isolation is not supported.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 
+
 On Windows 10, version 1709 or later, you'll have more control over the network isolation level. You can also choose to enable Outlook, Microsoft Teams, and Skype for Business connectivity (a.k.a 'Selective Isolation').
+
 
 > [!NOTE]
 > You'll be able to reconnect the device back to the network at any time. The button on the device page will change to say **Release from isolation**, and then you take the same steps as isolating the device.
+
+
 
 Once you have selected **Isolate device** on the device page, type a comment and select **Confirm**. The Action center will show the scan information and the device timeline will include a new event.
 
@@ -204,6 +220,10 @@ Once you have selected **Isolate device** on the device page, type a comment and
 When a device is being isolated, the following notification is displayed to inform the user that the device is being isolated from the network:
 
 :::image type="content" source="images/atp-notification-isolate.png" alt-text="A no network connection message" lightbox="images/atp-notification-isolate.png":::
+
+
+>[!NOTE]
+>The notification is not available on non-Windows platforms.
 
 ## Contain devices from the network
  

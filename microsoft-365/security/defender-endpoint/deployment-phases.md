@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint deployment overview
 description: Learn how to deploy Microsoft Defender for Endpoint by preparing, setting up, and onboarding endpoints to that service
 keywords: deploy, prepare, setup, onboard, phase, deployment, deploying, adoption, configuring
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,11 +12,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-endpointprotect
   - m365solution-overview
-ms.topic: article
-ms.technology: mde
+  - highpri
+  - tier1
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Microsoft Defender for Endpoint deployment overview
@@ -76,7 +80,7 @@ All these capabilities are available for Microsoft Defender for Endpoint license
 
 ### In scope
 
-- Use of Microsoft Endpoint Manager and Microsoft Endpoint Configuration Manager to onboard endpoints into the service and configure capabilities
+- Use of Microsoft Intune and Microsoft Configuration Manager to onboard endpoints into the service and configure capabilities
 - Enabling Defender for Endpoint endpoint detection and response (EDR)  capabilities
 - Enabling Defender for Endpoint endpoint protection platform (EPP) capabilities
   - Next-generation protection

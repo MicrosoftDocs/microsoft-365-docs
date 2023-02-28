@@ -3,9 +3,10 @@ title: "Language translation for Service health dashboard"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 07/26/2021
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -17,6 +18,8 @@ ms.custom:
 - 'O365E_ServiceHealthModern'
 - 'seo-marvel-apr2020'
 ms.collection:
+- Tier3
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:

@@ -1,44 +1,44 @@
 ---
-title: Campaign Views in Microsoft Defender for Office 365 Plan
+title: Campaigns in Microsoft Defender for Office 365 Plan
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer: mcostea
-ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: 
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-defender-office365
+  - m365-security
+  - tier1
 ms.custom:
-description: Learn about Campaign Views in Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+description: Learn about Campaigns in Microsoft Defender for Office 365.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.date: 2/9/2023
 ---
 
-# Campaign Views in Microsoft Defender for Office 365
+# Campaigns in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for example, Microsoft 365 E5 or organizations with a Defender for Office 365 Plan 2 add-on). Campaign Views in the Microsoft 365 Defender portal identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
+Campaigns in the Microsoft 365 Defender portal identifies and categorizes coordinated email attacks, including phishing and malware. Microsoft's management of email attacks into discreet campaigns will help you to:
 
-- Efficiently investigate and respond to phishing attacks.
-- Better understand the scope of the attack.
-- Show value to decision makers.
+- Efficiently investigate and respond to phishing and malware attacks, delivered via email.
+- Better understand the scope of the email attack targeting your organization.
+- Show value of Microsoft Defender for Office to decision makers in preventing email threats.
 
-Campaign Views lets you see the big picture of an attack faster and more complete than any human.
+Campaigns lets you see the big picture of an email attack faster and more complete than any human.
 
-Watch this short video on how campaign views in Microsoft Defender for Office 365 help you understand attack campaigns targeting your organization.  
+Watch this short video on how campaigns in Microsoft Defender for Office 365 help you understand coordinated email attacks targeting your organization.
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGBL8]
 
 ## What is a campaign?
@@ -54,29 +54,32 @@ Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malwa
 
 A campaign might be short-lived, or could span several days, weeks, or months with active and inactive periods. A campaign might be launched against your specific organization, or your organization might be part of a larger campaign across multiple companies.
 
-## Campaign Views in the Microsoft 365 Defender portal
+## Campaigns in the Microsoft 365 Defender portal
 
-Campaign Views is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Campaigns**, or directly at <https://security.microsoft.com/campaigns>.
+Campaigns is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Campaigns**, or directly at <https://security.microsoft.com/campaigns>.
 
-:::image type="content" source="../../media/campaigns-overview.png" alt-text="The Campaigns overview in the Microsoft 365 Defender portal" lightbox="../../media/campaigns-overview.png":::
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="Screenshot that shows the Campaigns in the Microsoft 365 Defender portal." lightbox="../../media/campaigns-overview.png":::
 
-You can also get to Campaign Views from:
+You can also view Campaigns from:
 
 - **Email & collaboration** \> **Explorer** \> **View** \> **Campaigns**
 - **Email & collaboration** \> **Explorer** \> **View** \> **All email** \> **Campaign** tab
 - **Email & collaboration** \> **Explorer** \> **View** \> **Phish** \> **Campaign** tab
 - **Email & collaboration** \> **Explorer** \> **View** \> **Malware** \> **Campaign** tab
 
-To access Campaign Views, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+## Required licenses and permissions
+
+- Campaigns is available in Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5).
+- To access Campaigns, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 ## Campaigns overview
 
-The overview page shows information about all campaigns.
+The main Campaigns page is a threat report with all campaigns targeting your organizations.
 
 On the default **Campaign** tab, the **Campaign type** area shows a bar graph that shows the number of recipients per day. By default, the graph shows both **Phish** and **Malware** data.
 
 > [!TIP]
-> If you don't see any campaign data, try changing the date range or [filters](#filters-and-settings).
+> If you don't see any campaign data, or very limited data, try changing the date range or [filters](#filters-and-settings).
 
 The table below the graph on the overview page shows the following information on the **Campaign** tab:
 
@@ -130,7 +133,7 @@ The filterable campaign properties that are available in the **Campaign type** b
   - **Subject**
   - **Attachment filename**
   - **Malware family**
-  - **Tags**: Users or groups that have had the specified user tag applied (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+  - **Tags**: Users or groups that have had the specified user tag applied (including priority accounts). For more information about user tags, see [User tags](user-tags-about.md).
   - **Delivery action**
   - **Additional action**
   - **Directionality**
@@ -208,7 +211,7 @@ The diagram contains the following information:
 
 - **Sender IPs**
 - **Sender domains**
-- **Filter verdicts**: Verdict values are related to the available phishing and spam filtering verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). The available values are described in the following table:
+- **Filter verdicts**: Verdict values are related to the available phishing and spam filtering verdicts as described in [Anti-spam message headers](message-headers-eop-mdo.md). The available values are described in the following table:
 
   |Value|Spam filter verdict|Description|
   |---|---|---|
@@ -221,13 +224,13 @@ The diagram contains the following information:
   |**Tenant Block**<sup>\*\*</sup>|`SFV:SKA`|The message was blocked by spam filtering because of the settings in an anti-spam policy. For example, the sender was in the allowed sender list or allowed domain list.|
   |**User Allow**<sup>\*</sup>|`SFV:SFE`|The message skipped spam filtering because the sender was in a user's Safe Senders list.|
   |**User Block**<sup>\*\*</sup>|`SFV:BLK`|The message was blocked by spam filtering because the sender was in a user's Blocked Senders list.|
-  |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) moved the delivered message to the Junk Email folder or quarantine. You configure the action in [anti-spam policies](configure-your-spam-filter-policies.md).|
+  |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) moved the delivered message to the Junk Email folder or quarantine. You configure the action in [anti-spam policies](anti-spam-policies-configure.md).|
 
   <sup>\*</sup> Review your anti-spam policies, because the allowed message would have likely been blocked by the service.
 
   <sup>\*\*</sup> Review your anti-spam policies, because these messages should be quarantined, not delivered.
 
-- **Message destinations**: You'll likely want to investigate messages that were delivered to recipients (either to the Inbox or the Junk Email folder), even if users didn't click on the payload URL in the message. You can also remove the quarantined messages from quarantine. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).
+- **Message destinations**: You'll likely want to investigate messages that were delivered to recipients (either to the Inbox or the Junk Email folder), even if users didn't click on the payload URL in the message. You can also remove the quarantined messages from quarantine. For more information, see [Quarantined email messages in EOP](quarantine-about.md).
   - **Deleted folder**
   - **Dropped**
   - **External**: The recipient is located in your on-premises email organization in hybrid environments.
@@ -250,8 +253,8 @@ When a phishing message is delivered to a recipient's Inbox or Junk Email folder
 If a user clicked on the payload URL in the phishing message, the actions are displayed in the **URL clicks** area of the diagram in the campaign details view.
 
 - **Allowed**
-- **BlockPage**: The recipient clicked on the payload URL, but their access to the malicious website was blocked by a [Safe Links](safe-links.md) policy in your organization.
-- **BlockPageOverride**: The recipient clicked on the payload URL in the message, Safe Links tried to stop them, but they were allowed to override the block. Inspect your [Safe Links policies](set-up-safe-links-policies.md) to see why users are allowed to override the Safe Links verdict and continue to the malicious website.
+- **BlockPage**: The recipient clicked on the payload URL, but their access to the malicious website was blocked by a [Safe Links](safe-links-about.md) policy in your organization.
+- **BlockPageOverride**: The recipient clicked on the payload URL in the message, Safe Links tried to stop them, but they were allowed to override the block. Inspect your [Safe Links policies](safe-links-policies-configure.md) to see why users are allowed to override the Safe Links verdict and continue to the malicious website.
 - **PendingDetonationPage**: Safe Attachments in Microsoft Defender for Office 365 is in the process of opening and investigating the payload URL in a virtual computer environment.
 - **PendingDetonationPageOverride**: The recipient was allowed to override the payload detonation process and open the URL without waiting for the results.
 
@@ -273,15 +276,15 @@ The tabs in the campaign details view allow you to further investigate the campa
   - **Total count**
   - **Inboxed**
   - **Not Inboxed**
-  - **SPF passed**: The sender was authenticated by the [Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md). A sender that doesn't pass SPF validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
+  - **SPF passed**: The sender was authenticated by the [Sender Policy Framework (SPF)](email-authentication-anti-spoofing.md). A sender that doesn't pass SPF validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
 
 - **Senders**
   - **Sender**: This is the actual sender address in the SMTP MAIL FROM command, which is not necessarily the From: email address that users see in their email clients.
   - **Total count**
   - **Inboxed**
   - **Not Inboxed**
-  - **DKIM passed**: The sender was authenticated by [Domain Keys Identified Mail (DKIM)](support-for-validation-of-dkim-signed-messages.md). A sender that doesn't pass DKIM validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
-  - **DMARC passed**: The sender was authenticated by [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](use-dmarc-to-validate-email.md). A sender that doesn't pass DMARC validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
+  - **DKIM passed**: The sender was authenticated by [Domain Keys Identified Mail (DKIM)](email-authentication-dkim-support-about.md). A sender that doesn't pass DKIM validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
+  - **DMARC passed**: The sender was authenticated by [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](email-authentication-dmarc-configure.md). A sender that doesn't pass DMARC validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
 
 - **Attachments**
   - **Filename**
@@ -295,9 +298,9 @@ The tabs in the campaign details view allow you to further investigate the campa
 
 <sup>\*</sup> Clicking on this value opens a new flyout that contains more details about the specified item (user, URL, etc.) on top of the campaign details view. To return to the campaign details view, click **Done** in the new flyout.
 
-### Buttons
+### Additional Actions
 
-The buttons at the bottom the campaign details view allow you to investigate and record details about the campaign:
+The buttons at the bottom the campaign details view allows you to investigate and record details about the campaign:
 
 - **Explore messages**: Use the power of Threat Explorer to further investigate the campaign:
   - **All messages**: Opens a new Threat Explorer search tab using the **Campaign ID** value as the search filter.

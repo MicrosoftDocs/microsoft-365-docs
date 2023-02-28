@@ -3,10 +3,12 @@ title: "Collaborate with external participants in a shared channel"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 09/09/2021
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-ms.collection: 
+ms.service: o365-solutions
+ms.collection:
+- highpri 
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection

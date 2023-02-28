@@ -5,13 +5,14 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 10/06/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance 
+- tier1
+- purview-compliance 
 search.appverid:
 - MET150 
 description: Learn about onboarding macOS devices into Compliance solutions
@@ -26,9 +27,11 @@ MacOS devices can be onboarded into Microsoft Purview solutions using either Int
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
-Before you get started with Endpoint DLP on macOS devices (Catalina 10.15 or later), you should familiarize yourself with these articles:
+Before you get started with Endpoint DLP on macOS devices (three latest released versions), you should familiarize yourself with these articles:
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
@@ -48,11 +51,11 @@ Your macOS devices must already be managed through Intune or JAMF Pro.
  
 - To onboard into Intune, see [Deployment guide: Manage macOS devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and [Enroll your Mac with Intune Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - To onboard into JAMF Pro see, [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) and [JAMF Pro Installation and Configuration Guide for Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
-<!--- Install the v95+ Edge browser on your macOS devices--> 
+
 
 ### Supported browsers
 
-Endpoint DLP supports these browsers on macOS Catalina 10.15 or higher:
+Endpoint DLP supports these browsers on macOS (three latest released versions):
 
 - Microsoft Edge (latest version)
 - Safari (latest version, macOS only)

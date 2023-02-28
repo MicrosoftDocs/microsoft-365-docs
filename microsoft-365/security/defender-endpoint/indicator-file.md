@@ -3,7 +3,7 @@ title: Create indicators for files
 ms.reviewer:
 description: Create indicators for a file hash that define the detection, prevention, and exclusion of entities.
 keywords: file, hash, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,12 @@ ms.localizationpriority: medium
 ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Create indicators for files
@@ -73,6 +76,8 @@ This feature is designed to prevent suspected malware (or potentially malicious 
     - Indicator - Specify the entity details and define the expiration of the indicator.
     - Action - Specify the action to be taken and provide a description.
     - Scope - Define the scope of the device group (scoping isn't available in [Defender for Business](../defender-business/mdb-overview.md)).
+        > [!NOTE]
+        > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2
 
 5. Review the details in the Summary tab, then select **Save**.
 
@@ -165,10 +170,6 @@ Microsoft Defender Vulnerability Management's block vulnerable application featu
 
 ### Examples
 
-<br>
-
-****
-
 |Component|Component enforcement|File indicator Action|Result|
 |---|---|---|---|
 |Attack surface reduction file path exclusion|Allow|Block|Block|
@@ -184,3 +185,4 @@ Microsoft Defender Vulnerability Management's block vulnerable application featu
 - [Create indicators for IPs and URLs/domains](indicator-ip-domain.md)
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

@@ -5,11 +5,14 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 08/26/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier3
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -43,7 +46,7 @@ Basic Mobility and Security for Microsoft 365 hosted by the Intune service works
 If your device is not listed above, and you need to use it with Basic Mobility and Security, contact your work or school administrator.
 
 > [!TIP]
-> If you're having trouble enrolling your device, see [Troubleshoot Basic Mobility and Security](troubleshoot.md).
+> If you're having trouble enrolling your device, see [Troubleshoot Basic Mobility and Security](frequently-asked-questions.yml).
 
 ## Set up your mobile device with Intune and Basic Mobility and Security
 

@@ -4,15 +4,15 @@ ms.author: v-jdeweese
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
+ms.date: 07/05/2022
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn about compliance and how to configure privacy settings in Microsoft Whiteboard.
-
 ---
 
 # Configure privacy settings in Microsoft Whiteboard

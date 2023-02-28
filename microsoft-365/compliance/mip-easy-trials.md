@@ -5,10 +5,13 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 02/28/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
+ms.collection:
+- purview-compliance
+- tier1
 ms.localizationpriority: high
 description: Learn about the default labels and policies for Microsoft Purview Information Protection to classify and protect sensitive content.
 ---
@@ -40,14 +43,14 @@ Eligibility includes customers who have a [free trial for Microsoft Purview](com
     |DLP for Teams | At least one DLP policy for Teams|
     |DLP for devices | At least one DLP policy for devices|
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Activate the default labels and policies
 
 To get these preconfigured labels and policies: 
 
 1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
-    
-    If you don't immediately see this option, first select **Show all** from the navigation pane. 
-    
+
 2. If you are eligible for the Microsoft Purview Information Protection default labels and policies, you'll see the following information, where you can activate the default labels and policies. For example:
     
     :::image type="content" alt-text="Microsoft Purview Information Protection activation for preconfigured labels and policies." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
@@ -56,7 +59,7 @@ To get these preconfigured labels and policies:
 
 3. Now enable sensitivity labels for SharePoint and OneDrive. This step is a prerequisite to use sensitivity labels in Office for the web, and auto-labeling policies for SharePoint and OneDrive.
    
-    Use the following banner at the top of the Information Protection **Overview** tab, and select **Turn on now**. If you don't see this banner, sensitivity labels for SharePoint and OneDrive have already been enabled for your tenant.
+    Use the following banner at the top of the **Information Protection** \> **Overview** page, and select **Turn on now**. If you don't see this banner, sensitivity labels for SharePoint and OneDrive have already been enabled for your tenant.
     
     ![Enable sensitivity labels for SharePoint and OneDrive banner.](../media/turn-on-mip-labels.png)
     
@@ -170,7 +173,7 @@ This policy is unobtrusive to users with no policy tip visible and no messages b
 
 To see the results of this policy, use [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
 
-If you want to edit the DLP policy, see [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md).
+If you want to edit the DLP policy, see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md).
 
 ## DLP for devices
 
@@ -194,7 +197,7 @@ This policy is unobtrusive to users with no policy tip visible and no actions bl
 
 To see the results of this policy, use [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
 
-If you want to edit the DLP policy, see [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md).
+If you want to edit the DLP policy, see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md).
 
 ## Additional resources
 

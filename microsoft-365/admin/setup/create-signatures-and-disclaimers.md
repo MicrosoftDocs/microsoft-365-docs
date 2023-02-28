@@ -5,11 +5,15 @@ f1.keywords:
 ms.author: twerner
 author: twernermsft
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -123,4 +127,3 @@ For information about using PowerShell, see [Organization-wide message disclaime
 [Migrate email and contacts to Microsoft 365](migrate-email-and-contacts-admin.md) (video)\
 [User email settings](../email/office-365-user-email-settings.md) (article)\
 [Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)
-

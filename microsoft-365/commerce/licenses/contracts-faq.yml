@@ -8,8 +8,9 @@ metadata:
   ms.date: 05/25/2022
   audience: Admin
   ms.topic: faq
-  ms.service: o365-administration
+  ms.service: microsoft-365-business
   ms.custom: commerce_vl
+  ms.collection: scotvorg
   ms.localizationpriority: medium
   description: "Frequently asked questions about Microsoft 365 licensing agreements."
 title: Contracts Frequently Asked Questions
@@ -51,7 +52,7 @@ sections:
           - You’re listed as a contact for the agreements in a legal Volume Licensing Program form. Contact types include Primary Contact, Notices Correspondent, Online Access Contact, Software Assurance Manager, Online Services Manager, or Subscriptions Manager.
           - You’re Administrator with access to the agreements.
           
-          For more information about Volume Licensing permission roles and their allowable actions, see the [Permissions FAQ](https://docs.microsoft.com/licensing/permissions-faq). 
+          For more information about Volume Licensing permission roles and their allowable actions, see the [Permissions FAQ](/licensing/permissions-faq). 
 
       - question: |
           How long does it take for new license orders to appear in the contracts list?
@@ -159,4 +160,4 @@ sections:
       - question: |
           How can I contact Microsoft Support?
         answer: |
-          To contact support by phone or by Web Form, see [Contact Us](https://docs.microsoft.com/licensing/contact-us). Microsoft responds to Web Form submissions within 24 hours.
+          To contact support by phone or by Web Form, see [Contact Us](/licensing/contact-us). Microsoft responds to Web Form submissions within 24 hours.

@@ -8,9 +8,10 @@ manager: scotv
 ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection: 
+- highpri
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom:

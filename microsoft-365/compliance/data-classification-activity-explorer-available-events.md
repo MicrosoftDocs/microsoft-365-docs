@@ -5,15 +5,17 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 10/02/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid: 
 - MOE150
 - MET150
@@ -21,6 +23,8 @@ description: "A list of labeling activities that are available in Activity explo
 ---
 
 # Labeling activities that are available in Activity explorer
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Sensitivity label applied
 

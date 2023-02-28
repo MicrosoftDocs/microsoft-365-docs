@@ -5,11 +5,15 @@ f1.keywords:
 ms.author: sharik
 author: skjerland
 manager: scotv
+ms.date: 10/08/2018
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier2
+- scotvorg
+- highpri 
 - M365-subscription-management
 - M365-identity-device-management
 - Adm_TOC 

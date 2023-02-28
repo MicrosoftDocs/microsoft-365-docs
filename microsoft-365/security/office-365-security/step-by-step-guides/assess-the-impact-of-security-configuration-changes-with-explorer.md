@@ -2,8 +2,8 @@
 title: Assess the impact of security configuration changes with Explorer
 description: Examples and walkthrough of using Explorer to determine the impact of a security control (configuration) change in Microsoft Defender for Office 365
 search.product:
-search.appverid:
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,13 @@ author: MSFTBen
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
-ms.technology: mdo
+search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Assess the impact of security configuration changes with Explorer
@@ -38,7 +42,7 @@ This step-by-step guide will take you through assessing a change, and exporting 
 1. Press the **filter** button (defaulted to *Sender*) and select **Phish confidence level**.
 1. Select the **Phish confidence level** of **Normal**.
 1. Add an additional **filter** of **Original delivery location** set as **Junk folder**.
-1. Press **Refresh**. Explorer is now filtered to show all the mail that is detected as *high confidence phish* and gets delivered to the Junk folder due to the settings in the anti-spam policy.
+1. Press **Refresh**. Explorer is now filtered to show all the mail that is detected as *normal confidence phish* and gets delivered to the Junk folder due to the settings in the anti-spam policy.
 1. If you wish to pivot the data displayed in the chart, you can do by using the **data slicer top left of the chart (defaulted to *Delivery action*)**, selecting useful data such as **Sender IP**, or **Sender domain** to spot trends and top affected senders.
 1. Below the chart section, where the affected emails are displayed, select **Export email list**, which will generate a CSV for offline analysis. **This is a list of the emails which would be quarantined if the phish action was changed to Quarantine (recommended change for both standard and strict presets)**.
 
@@ -57,6 +61,6 @@ This step-by-step guide will take you through assessing a change, and exporting 
 
 Consider using secure presets [Ensuring you always have the optimal security controls with preset security policies](/microsoft-365/security/office-365-security/step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies)
 
-You can also manage email authentication issues with spoof intelligence [Spoof intelligence insight](/microsoft-365/security/office-365-security/learn-about-spoof-intelligence)
+You can also manage email authentication issues with spoof intelligence [Spoof intelligence insight](/microsoft-365/security/office-365-security/anti-spoofing-spoof-intelligence)
 
-Learn more about email authentication [Email Authentication in Exchange Online Protection](/microsoft-365/security/office-365-security/email-validation-and-authentication)
+Learn more about email authentication [Email Authentication in Exchange Online Protection](/microsoft-365/security/office-365-security/email-authentication-abou)

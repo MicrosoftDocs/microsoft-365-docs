@@ -3,7 +3,7 @@ title: Integrate Microsoft Defender for Endpoint with other Microsoft solutions
 description: Learn how Microsoft Defender for Endpoint integrates with other Microsoft solutions, including Microsoft Defender for Identity and Microsoft Defender for Cloud.
 author: mjcaparas
 ms.author: macapara
-ms.prod: m365-security
+ms.service: microsoft-365-security
 keywords: microsoft 365 defender, conditional access, office, Microsoft Defender for Endpoint, microsoft defender for identity, microsoft defender for office, Microsoft Defender for Cloud, microsoft cloud app security, azure sentinel
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,9 +11,13 @@ ms.pagetype: security
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Microsoft Defender for Endpoint and other Microsoft solutions
@@ -33,7 +37,7 @@ Microsoft Defender for Endpoint directly integrates with various Microsoft solut
 
 ### Microsoft Defender for Cloud
 
-Microsoft Defender for Endpoint provides a comprehensive server protection solution, including endpoint detection and response (EDR) capabilities on Windows Servers.
+Microsoft Defender for Cloud provides a comprehensive server protection solution, including endpoint detection and response (EDR) capabilities on Windows Servers.
 
 ### Microsoft Sentinel
 
@@ -57,7 +61,7 @@ Suspicious activities are processes running under a user context. The integratio
 
 ### Microsoft Defender for Office
 
-[Defender for Office 365](/office365/securitycompliance/office-365-atp) helps protect your organization from malware in email messages or files through Safe Links, Safe Attachments, advanced Anti-Phishing, and spoof intelligence capabilities. The integration between Microsoft Defender for Office 365 and Microsoft Defender for Endpoint enables security analysts to go upstream to investigate the entry point of an attack. Through threat intelligence sharing, attacks can be contained and blocked.
+[Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) helps protect your organization from malware in email messages or files through Safe Links, Safe Attachments, advanced Anti-Phishing, and spoof intelligence capabilities. The integration between Microsoft Defender for Office 365 and Microsoft Defender for Endpoint enables security analysts to go upstream to investigate the entry point of an attack. Through threat intelligence sharing, attacks can be contained and blocked.
 
 > [!NOTE]
 > Defender for Office 365 data is displayed for events within the last 30 days. For alerts, Defender for Office 365 data is displayed based on first activity time. After that, the data is no longer available in Defender for Office 365.
