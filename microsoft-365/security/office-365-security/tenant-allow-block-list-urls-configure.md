@@ -124,16 +124,16 @@ You can't create URL allow entries directly in the Tenant Allow/Block List. Inst
 
 For instructions, see [Submit good URLs to Microsoft](submissions-admin.md#report-good-urls-to-microsoft).
 
-By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those entities will be delivered, unless something else in the message is detected as malicious. By default, allow entries for spoofed senders never expire.
-
 > [!IMPORTANT]
 > Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
 > Microsoft manages the allow creation process from Submission by creating allows for those entities (domains or email addresses, spoofed senders, URLs, or files) which were determined to be malicious by filters during mail flow or time of click. For example, if a URL being submitted was determined to be bad by our filtering, an allow entry is created for that URL.
 >
-> When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are overridden.
-
-> During mail flow, if messages containing the URL in the allow entry pass other checks in the filtering stack, the messages will be delivered. For example, if a message passes [email authentication checks](email-authentication-about.md) and file filtering, a message containing an allowed URL will be delivered.
+> When that entity is encountered again, all filters associated with that entity are overridden.
+>
+> By default, allow entries for URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those URLs will be delivered, unless something else in the message is detected as malicious.
+>
+> During mail flow, if messages containing the allowed URL pass other checks in the filtering stack, the messages will be delivered. For example, if a message passes [email authentication checks](email-authentication-about.md) and file filtering, a message containing an allowed URL will be delivered.
 >
 > During time of click, the URL allow entry overrides all filters associated with the URL entity, allowing the user to access the content in the URL.
 >
@@ -208,8 +208,6 @@ You can make the following modifications to entries for URLs in the Tenant Allow
    - **Optional note**
 
    When you're finished, click **Save**.
-
-By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those entities will be delivered, unless something else in the message is detected as malicious. By default, allow entries for spoofed senders never expire.
 
 > [!TIP]
 > For entries added via submission, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that opens up. It takes you to the submission details that added the entry.

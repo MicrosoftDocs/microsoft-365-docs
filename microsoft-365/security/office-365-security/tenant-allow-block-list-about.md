@@ -103,12 +103,10 @@ By default, allow entries for domains and email addresses, files, and URLs exist
 >
 > When the entity is encountered again (during mail flow or time of click), all filters associated with that entity are skipped.
 >
-> During mail flow, if messages containing the entity in the allow entry pass other checks in the filtering stack, the messages will be delivered. For example, if a message passes [email authentication checks](email-authentication-about.md), URL filtering, and file filtering, a message from an allowed sender email address will be delivered.
+> During mail flow, if messages containing the allowed entity pass other checks in the filtering stack, the messages will be delivered. For example, if a message passes [email authentication checks](email-authentication-about.md), URL filtering, and file filtering, a message from an allowed sender email address will be delivered.
 
 ## What to expect after you add an allow or block entry
 
 After you add an allow entry on the Submissions page or a block entry in the Tenant Allow/Block List, the entry should start working immediately 99.999% of the time. For the rest, it could take up to 24 hours.
-
-By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those entities will be delivered, unless something else in the message is detected as malicious.
 
 If Microsoft has learned from the allow entry, the entry will be removed, and you'll get an alert informing you about it.

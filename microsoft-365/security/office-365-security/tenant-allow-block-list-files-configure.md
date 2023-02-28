@@ -52,8 +52,6 @@ You manage allow and block entries for files in the Microsoft 365 Defender Porta
 
 - An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
 
-- By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those domains or email addresses, files, or URLs (*entities*) will be delivered, unless something else in the message is detected as malicious. By default, allow entries for spoofed senders never expire.
-
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
@@ -129,8 +127,6 @@ You can't create allow entries for files directly in the Tenant Allow/Block List
 
 For instructions, see [Submit good email attachments to Microsoft](submissions-admin.md#report-good-email-attachments-to-microsoft).
 
-By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those entities will be delivered, unless something else in the message is detected as malicious. By default, allow entries for spoofed senders never expire.
-
 > [!IMPORTANT]
 > Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
@@ -138,7 +134,9 @@ By default, allow entries for domains and email addresses, files, and URLs exist
 >
 > When that entity is encountered again, all filters associated with that entity are overridden.
 >
-> During mail flow, if messages containing the allowed file entity passes other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message containing the allowed file entity will be delivered.
+> By default, allow entries for files exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those files will be delivered, unless something else in the message is detected as malicious.
+>
+> During mail flow, if messages containing the allowed file pass other checks in the filtering stack, the messages will be delivered. For example, if a message passes [email authentication checks](email-authentication-about.md), a message containing an allowed file will be delivered.
 >
 > During time of click, the file allow overrides all filters associated with the file entity, allowing the end user to access the file.
 
@@ -217,9 +215,6 @@ You can make the following modifications to entries for files in the Tenant Allo
    - **Optional note**
 
    When you're finished, click **Save**.
-
-By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those entities will be delivered, unless something else in the message is detected as malicious.
- By default, allow entries for spoofed senders never expire.
 
 > [!TIP]
 > For entries added via submission, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that opens, which takes you to the submission details that added the entry.
