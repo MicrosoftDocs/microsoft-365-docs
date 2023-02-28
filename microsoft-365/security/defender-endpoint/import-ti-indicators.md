@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.custom: api
 ms.subservice: mde
 search.appverid: met150
+ms.date: 02/02/2021
 ---
 
 # Import Indicators API

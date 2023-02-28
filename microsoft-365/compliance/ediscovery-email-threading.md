@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -31,11 +32,8 @@ Consider an email conversation that has been going on for a while. In most cases
 Email threading parses each email thread and deconstructs it to individual messages. Each email thread is a chain of individual messages. Microsoft Purview eDiscovery (Premium) analyzes all email messages in the review set to determine whether an email message has unique content or if the chain (parent messages) are wholly contained in the final message in the email thread. Email messages are divided into four inclusive values:
 
 - **Inclusive**: An *Inclusive* email is the final email message in an email thread and contains all the previous content of that email thread.
-
 - **Inclusive minus**: An email message is designated as *Inclusive minus* if there are one or more attachments associated with the specific message within the email thread. A reviewer can use the Inclusive minus value to determine which specific email message within the thread has associated attachments. 
-
 - **Inclusive copy**: An email message is considered an *Inclusive copy* if it's an exact copy of an Inclusive or Inclusive minus message. 
-
 - **None**: The *None* value indicates that the content of the message is wholly contained in at least one other email message that is marked as Inclusive or Inclusive minus.
 
 ## How is it different from conversations in Outlook?

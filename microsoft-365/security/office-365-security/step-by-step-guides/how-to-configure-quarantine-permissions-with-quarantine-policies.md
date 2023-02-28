@@ -20,6 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # How to configure quarantine permissions and policies
@@ -60,7 +61,7 @@ Once it has been decided the categories of items users can triage or not-triage,
 1. Repeat these same steps for the other policies: **Anti-phishing policy**, **Anti-Malware policy**, and **Safe Attachment policy**.
 
 > [!TIP]
-> For more detailed information on what you've learned so far, see [Configure spam filter policies - Office 365 | Microsoft Docs ](../../office-365-security/anti-spam-policies-configure.md)| [Configure anti-phishing policies in EOP - Office 365 | Microsoft Docs](../../office-365-security/anti-phishing-policies-eop-configure.md) | [Configure anti-malware policies - Office 365 | Microsoft Docs](../../office-365-security/configure-anti-malware-policies.md)| [Set up Safe Attachments policies in Microsoft Defender for Office 365 - Office 365 | Microsoft Docs](../../office-365-security/set-up-safe-attachments-policies.md)
+> For more detailed information on what you've learned so far, see [Configure spam filter policies - Office 365 | Microsoft Docs ](../../office-365-security/anti-spam-policies-configure.md)| [Configure anti-phishing policies in EOP - Office 365 | Microsoft Docs](../../office-365-security/anti-phishing-policies-eop-configure.md) | [Configure anti-malware policies - Office 365 | Microsoft Docs](../../office-365-security/anti-malware-policies-configure.md)| [Set up Safe Attachments policies in Microsoft Defender for Office 365 - Office 365 | Microsoft Docs](../../office-365-security/safe-attachments-policies-configure.md)
 
 ## Next Steps
 

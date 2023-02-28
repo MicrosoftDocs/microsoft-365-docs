@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -27,16 +28,16 @@ As a result of recent changes to the newest version of Microsoft Edge, ClickOnce
 ## Enable ClickOnce support in Microsoft Edge
 
 1. In Microsoft Edge, go to **edge://flags/#edge-click-once**.
-
 2. If the existing value is set to **Default** or **Disabled** in the dropdown list, change it to **Enabled**.
 
-   ![Select Enabled from dropdown list.](../media/ClickOnceimage1.png)
+    ![Select Enabled from dropdown list.](../media/ClickOnceimage1.png)
 
 3. Scroll down to the bottom of the browser window and select **Restart** to restart Microsoft Edge.
 
-   ![Click Restart.](../media/ClickOnceimage2.png)
+    ![Select Restart.](../media/ClickOnceimage2.png)
 
-**Note:** Organizations can use Group Policy to disable ClickOnce support. To check if there's an organizational policy for ClickOnce support, go to **edge://policy**. The following screenshot shows that ClickOnce is enabled across the entire organization. If this policy value is set to **false**, you'll need to contact an admin in your organization.
+> [!NOTE]
+> Organizations can use Group Policy to disable ClickOnce support. To check if there's an organizational policy for ClickOnce support, go to **edge://policy**. The following screenshot shows that ClickOnce is enabled across the entire organization. If this policy value is set to **false**, you'll need to contact an admin in your organization.
 
 ![List of Edge organizational policies.](../media/ClickOnceimage3.png)
 
@@ -44,20 +45,15 @@ As a result of recent changes to the newest version of Microsoft Edge, ClickOnce
 
 1. Select **Download results** on the flyout page of an export in Content Search or an eDiscovery case.
 
-   ![Click Download results on the flyout page to download search results.](../media/ClickOnceExport1.png)
+    ![Select Download results on the flyout page to download search results.](../media/ClickOnceExport1.png)
 
-2. You'll be prompted with a confirmation to launch the tool, select **Open**.
+1. You'll be prompted with a confirmation to launch the tool, select **Open**. If the eDiscovery Export Tool isn't installed, you'll be prompted with a Security Warning.
 
-   ![Click Open to launch the eDiscovery Export Tool.](../media/ClickOnceimage4.png)
+    ![Select Open to launch the eDiscovery Export Tool.](../media/ClickOnceimage4.png)
 
-   If the eDiscovery Export Tool isn't installed, you'll be prompted with a Security Warning, 
-
-   ![Click Install to install the eDiscovery Export Tool.](../media/ClickOnceimage5.png)
-
-3. Select **Install**. After it's installed, the export tool will launch automatically.
+1. Select **Install**. After it's installed, the export tool will launch automatically.
 
 For more information, see the following articles:
 
 - [Export Content Search results](export-search-results.md)
-
 - [How to enable experiment flags in Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)

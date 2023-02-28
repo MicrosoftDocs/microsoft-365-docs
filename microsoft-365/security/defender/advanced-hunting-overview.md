@@ -21,6 +21,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
+ms.date: 02/16/2021
 ---
 
 # Proactively hunt for threats with advanced hunting in Microsoft 365 Defender
@@ -86,4 +87,5 @@ Advanced hunting results are converted to the [timezone](m365d-time-zone.md) set
 - [Build hunting queries using guided mode](advanced-hunting-query-builder.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
+- [Microsoft Graph security API](/graph/api/resources/security-api-overview#advanced-hunting)
 - [Custom detections overview](custom-detections-overview.md)

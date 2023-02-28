@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -78,9 +79,9 @@ The following table describes the Content Search and eDiscovery (Standard) activ
 |Changed eDiscovery case membership  <br/> |CaseMemberUpdated  <br/> |Update-ComplianceCaseMember  <br/> |The membership list of an eDiscovery case was changed. This activity is logged when all members are replaced with a group of new users. If a single member is added or removed, CaseMemberAdded or CaseMemberRemoved operation is logged.  <br/> |
 |Changed search permissions filter  <br/> |SearchPermissionUpdated  <br/> |Set-ComplianceSecurityFilter  <br/> |A search permissions filter was changed.  <br/> |
 |Changed search query for eDiscovery case hold  <br/> |HoldUpdated  <br/> |Set-CaseHoldRule  <br/> |A query-based hold associated with an eDiscovery case was changed. Possible changes include editing the query or date range for a query-based hold.  <br/> |
-|Content search preview item downloaded  <br/> |PreviewItemDownloaded  <br/> |N/A  <br/> |A user downloaded an item to their local computer (by clicking the **Download original item** link) when previewing search results.  <br/> |
-|Content search preview item listed  <br/> |PreviewItemListed  <br/> |N/A  <br/> |A user clicked **Preview search results** to display the preview search results page, which lists up to 1,000 items from the results of a search.  <br/> |
-|Content search preview item viewed  <br/> |PreviewItemRendered  <br/> |N/A  <br/> |An eDiscovery manager viewed an item by clicking it when previewing search results.  <br/> |
+|Content search preview item downloaded  <br/> |PreviewItemDownloaded  <br/> |N/A  <br/> |A user downloaded an item to their local computer (by selecting the **Download original item** link) when previewing search results.  <br/> |
+|Content search preview item listed  <br/> |PreviewItemListed  <br/> |N/A  <br/> |A user selected **Preview search results** to display the preview search results page, which lists up to 1,000 items from the results of a search.  <br/> |
+|Content search preview item viewed  <br/> |PreviewItemRendered  <br/> |N/A  <br/> |An eDiscovery manager viewed an item by selecting it when previewing search results.  <br/> |
 |Created content search  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |A new content search was created.  <br/> |
 |Created eDiscovery administrator  <br/> |CaseAdminAdded  <br/> |Add-eDiscoveryCaseAdmin  <br/> |A user was added as an eDiscovery Administrator in the organization.  <br/> |
 |Created eDiscovery case  <br/> |CaseAdded  <br/> |New-ComplianceCase  <br/> |An eDiscovery case was created. When a case is created, you only have to give it a name. Other case-related tasks such as adding members, creating holds, and creating content searches associated with the case result in additional events being logged.  <br/> |

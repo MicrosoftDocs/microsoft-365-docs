@@ -7,7 +7,8 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 01/01/2023
+
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -26,24 +27,20 @@ search.appverid:
 Review sets are a static set of documents where you can analyze, query, view, tag, and export data in a case. For more information about performing these tasks, see:
 
 - [Analyze data in a review set](ediscovery-analyzing-data-in-review-set.md)
-
 - [Query the data in a review set](ediscovery-review-set-search.md)
-
 - [View documents in a review set](ediscovery-view-documents-in-review-set.md)
-
 - [Tag documents in a review set](ediscovery-tagging-documents.md)
-
 - [Export case data](ediscovery-exporting-data.md)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create a review set
 
-Review sets can be created on the **Review sets** tab by clicking **+ Add review set**.
+Review sets can be created on the **Review sets** tab by selecting **+ Add review set**.
 
 ![Add review set.](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-On the **Add review set** flyout page, type a name for the review set and then click **Save**. The new review set is displayed in the list on the **Review sets** tab.
+On the **Add review set** flyout page, type a name for the review set and then select **Save**. The new review set is displayed in the list on the **Review sets** tab.
 
 ![New review set listed on Review set tab.](../media/AeDnewreviewset.png)
 

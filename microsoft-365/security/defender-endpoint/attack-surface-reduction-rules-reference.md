@@ -18,7 +18,7 @@ ms.topic: reference
 ms.collection: 
 - m365-security
 - tier2
-- ms.date: 10/07/2022
+ms.date: 02/09/2023
 search.appverid: met150
 ---
 
@@ -88,7 +88,7 @@ Following is a list of ASR rules that honor Microsoft Defender Antivirus exclusi
 | [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |
 
 > [!NOTE]
-> See: [Configure ASR rules per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-rules-per-rule-exclusions) for information about configuring ASR rules per-rule exclusions.
+> For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md).
 
 ## ASR rules supported operating systems
 
@@ -152,8 +152,8 @@ Links to information about configuration management system versions referenced i
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
-- [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
-- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM is now Microsoft Endpoint Configuration Manager._
+- [Microsoft Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
+- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM is now Microsoft Configuration Manager._
 
 ## Per ASR rule alert and notification details
 
@@ -232,7 +232,7 @@ The **Block abuse of exploited vulnerable signed drivers** rule doesn't block a 
 
 > [!NOTE]
 >
-> You can configure this rule using MEM OMA-URI. See [MEM OMA-URI](enable-attack-surface-reduction.md#mem) for configuring custom rules.
+> You can configure this rule using Intune OMA-URI. See [Intune OMA-URI](enable-attack-surface-reduction.md#custom-profile-in-intune) for configuring custom rules.
 >
 > You can also configure this rule using [PowerShell](enable-attack-surface-reduction.md#powershell).
 >
@@ -328,7 +328,7 @@ This rule blocks the following file types from launching from email opened withi
 
 Intune name: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft Endpoint Manager name: `Block executable content from email client and webmail`
+Microsoft Configuration Manager name: `Block executable content from email client and webmail`
 
 GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
@@ -343,7 +343,7 @@ Dependencies: Microsoft Defender Antivirus
 > The rule **Block executable content from email client and webmail** has the following alternative descriptions, depending on which application you use:
 >
 > - Intune (Configuration Profiles): Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions).
-> - Endpoint Manager: Block executable content download from email and webmail clients.
+> - Configuration Manager: Block executable content download from email and webmail clients.
 > - Group Policy: Block executable content from email client and webmail.
 
 ### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
@@ -487,7 +487,7 @@ This rule prevents malware from abusing WMI to attain persistence on a device.
 
 Fileless threats employ various tactics to stay hidden, to avoid being seen in the file system, and to gain periodic execution control. Some threats can abuse the WMI repository and event model to stay hidden.
 
-Intune name: Not available
+Intune name: `Persistence through WMI event subscription`
 
 Configuration Manager name: Not available
 

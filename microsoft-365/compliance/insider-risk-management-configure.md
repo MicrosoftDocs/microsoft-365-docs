@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/21/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -84,8 +85,8 @@ There are six role groups used to configure insider risk management features. To
 
 - Azure Active Directory [*Global Administrator*](/azure/active-directory/roles/permissions-reference#global-administrator) role
 - Azure Active Directory [*Compliance Administrator*](/azure/active-directory/roles/permissions-reference#compliance-administrator) role
-- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
-- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
+- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/scc-permissions) role group
+- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/scc-permissions) role group
 - *Insider Risk Management* role group
 - *Insider Risk Management Admins* role group
 
@@ -105,7 +106,8 @@ You'll choose from these role group options and solution actions when working wi
 |Access & view forensic evidence captures|Yes|No|No|Yes|No|No|
 |Create forensic evidence capturing request|Yes|Yes|No|No|No|No|
 |Approve forensic evidence capturing requests|Yes|No|No|No|No|Yes|
-|View device health report|Yes|Yes|No|No|No|No|
+|Configure Adaptive Protection|Yes|Yes|No|No|No|No|
+|View Adaptive Protection users tab|Yes|No|Yes|Yes|No|No|
 
 > [!IMPORTANT]
 > Make sure you always have at least one user in the built-in *Insider Risk Management* or *Insider Risk Management Admins* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get into a 'zero administrator' scenario if specific users leave your organization.
@@ -125,16 +127,11 @@ Members of the following roles can assign users to insider risk management role 
 Complete the following steps to add users to this role group:
 
 1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
-
 2. Select **Permissions** in the left nav, and select **Roles** under the **Microsoft Purview solutions** list.
-
 3. Select the *Insider Risk Management* role group, then select **Edit**.
-
 4. Select the **Choose users** tab, then select the checkbox for all users you want to add to the role group.
-
-6. Choose **Select**, then **Next**.
-
-7. Select **Save** to add the users to the role group. Select **Done** to complete the steps.
+5. Choose **Select**, then **Next**.
+6. Select **Save** to add the users to the role group. Select **Done** to complete the steps.
 
 ## Step 2 (required): Enable the Microsoft 365 audit log
 
@@ -190,7 +187,7 @@ See the [Set up a connector to import healthcare data](import-healthcare-data.md
 
 Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties for High severity level DLP alerts. When configuring an insider risk management policy with any of the **Data leaks** templates, you have the option to assign a specific DLP policy to the policy for these types of alerts.
 
-Data loss policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policies.md#data-leaks).
+Data loss policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policy-templates.md#data-leaks).
 
 > [!IMPORTANT]
 > Make sure you've completed the following:
@@ -203,7 +200,7 @@ A DLP policy is optional when using the following policy templates:
 - Data leaks
 - Data leaks by priority users
 
-See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article  for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
+See the [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) article  for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
 
 ### Configure priority user groups
 

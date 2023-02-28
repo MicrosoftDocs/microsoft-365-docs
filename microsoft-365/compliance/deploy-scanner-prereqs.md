@@ -4,7 +4,7 @@ f1.keywords:
 ms.author: libarson
 author: libarson
 manager: aashishr
-ms.date: 
+ms.date: 10/15/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -202,9 +202,9 @@ However, in a production environment, your organization's policies may be differ
 
 - [Restriction: Your labels do not have auto-labeling conditions](#restriction-your-labels-do-not-have-auto-labeling-conditions)
 
-### Discover and scan all Sharepoint sites and subsites under a specific URL
+### Discover and scan all SharePoint sites and subsites under a specific URL
 
-The scanner can discover and scan all Sharepoint sites and subsites under a specific URL with the following configuration:
+The scanner can discover and scan all SharePoint sites and subsites under a specific URL with the following configuration:
 
 1. Start **SharePoint Central Administration**.
 

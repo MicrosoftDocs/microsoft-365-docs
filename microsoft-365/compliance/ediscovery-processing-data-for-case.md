@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -33,7 +33,5 @@ The **Processing** tab in eDiscovery (Premium) provides insight into the status 
 For more information, see the following articles:
 
 - [Advanced indexing of custodian data](ediscovery-indexing-custodian-data.md)
-
 - [Error remediation when processing data](ediscovery-error-remediation-when-processing-data.md)
-
 - [Single item error remediation](ediscovery-single-item-error-remediation.md)

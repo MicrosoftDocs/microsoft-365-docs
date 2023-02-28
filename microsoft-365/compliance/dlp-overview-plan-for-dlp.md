@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 04/20/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -24,6 +24,20 @@ description: "Overview of the planning process for data loss prevention"
 Every organization will plan for and implement data loss prevention (DLP) differently, because every organization's business needs, goals, resources, and situation are unique to them. However, there are elements that are common to all successful DLP implementations. This article presents the best practices that are used by organizations in their DLP planning.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Before you begin
+
+If you are new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
+
+1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
+1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
+1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article that you're reading now, you will:
+    1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+    1. [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+    1. [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+1. [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) - this article introduces all the components of a DLP policy and how each one influences the behavior of a policy
+1. [Design a DLP policy](dlp-policy-design.md) - this article walks you through creating a policy intent statement and mapping it to a specific policy configuration. 
+1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options.
 
 ## Multiple starting points
 
@@ -135,6 +149,10 @@ Once your organization knows where it stands in terms of regulatory compliance n
 
 **Example** To get started quickly, you pick the `U.K. Financial Data` policy template, which includes the `Credit Card Number`, `EU Debit Card Number`, and `SWIFT Code` sensitive information types. 
 
+##### How you want your policies scoped
+
+If your organization has implemented [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) (preview) you can scope your DLP policies by administrative unit or leave the default full directory scoping. See, [Policy Scoping](dlp-policy-reference.md#policy-scoping)(preview) for more details.
+
 ##### Where are the sensitive items and what business processes are they involved in?
 
 The items that contain your organizations sensitive information are used every day in the course of doing business. You need to know where instances of that sensitive information may occur and what business processes they are used in. This will help you choose the right locations to apply your DLP policies to. DLP policies are applied to locations:
@@ -154,6 +172,9 @@ The items that contain your organizations sensitive information are used every d
 Different groups in your organization may have different views on what's an acceptable level of sensitive item leakage and what's not. Achieving the perfection of zero leakage may come at too high a cost to the business.
 
 **Example** Your organizations' security group, along with the legal team both feel that there should be no sharing of credit card numbers with anyone outside the org and insist on zero leakage. But, as part of regular review of credit card number activity, the internal auditors must share some credit card numbers with third-party auditors. If your DLP policy prohibits all sharing of credit card numbers outside the org, there will be a significant business process disruption and added cost to mitigate the disruption in order for the internal auditors to complete their tracking. This extra cost is unacceptable to the executive leadership. To resolve this, there needs to be an internal conversation to decide an acceptable level of leakage. Once that is decided the policy can provide exceptions for certain individuals to share the information or it can be applied in audit only mode.
+
+> [!IMPORTANT]
+> To learn how to create a policy intent statement and map it to policy configurations see, [Design a data loss prevention policy](dlp-policy-design.md#design-a-data-loss-prevention-policy)
 
 #### Planning for prerequisites
 
@@ -202,24 +223,12 @@ The regulations, laws, and industry standards that your organization is subject 
 |**TailSpin Toys** doesn’t know what they have or where it is, and have little to no resource depth. They use Teams, OneDrive for Business and Exchange extensively.     |- Start with simple policies on the prioritized locations. </br>- Monitor what gets identified </br>- Apply sensitivity labels accordingly </br>- Refine policies, train users       |
 |**Fabrikam** is a small startup and wants to protect its intellectual property, and must move quickly. They are willing to dedicate some resources, but can't afford to hire outside experts. </br>- Sensitive items are all in Microsoft 365 OneDrive for Business/SharePoint </br>- Adoption of OneDrive for Business and SharePoint is slow, employees/shadow IT use DropBox and Google drive to share/store items </br>- Employees value speed of work over data protection discipline </br>- Customer splurged and bought all 18 employees new Windows devices     |- Take advantage of the default DLP policy in Teams </br>- Use restricted by default setting for SharePoint items </br>- Deploy policies that prevent external sharing </br>- Deploy policies to prioritized locations </br>- Deploy policies to Windows devices </br>- Block uploads to non-OneDrive for Business cloud storage      |
 
-<!--
+## Next steps
 
-## Planning for workloads
 
-### Exchange
 
-### SharePoint
-
-### OneDrive for Business
-
-### Teams
-
-### Windows 10 Devices
-
-### Microsoft Cloud App Security (MCAS)
-
-### On-premises Scanner
--->
+> [!IMPORTANT]
+> To learn more about DLP policy deployment, see [Deployment](dlp-create-deploy-policy.md#deployment)
 
 ## See also
 - [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)

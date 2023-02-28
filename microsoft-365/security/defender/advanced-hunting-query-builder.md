@@ -20,6 +20,7 @@ ms.collection:
   - m365-security
   - tier2
 ms.topic: conceptual
+ms.date: 08/11/2022
 ---
 
 # Build hunting queries using guided mode in Microsoft 365 Defender
@@ -57,7 +58,7 @@ You can choose from:
 - All domains - to look through all available data in your query
 - Endpoints - to look through endpoint data as provided by Microsoft Defender for Endpoint
 - Apps and identities - to look through application and identity data as provided by Microsoft Defender for Cloud Apps and Microsoft Defender for Identity; users familiar with [Activity log](/defender-cloud-apps/activity-filters) can find the same data here
-- Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with [Threat Explorer](/office-365-security/threat-explorer) can find the same data here
+- Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with [Threat Explorer](/office-365-security/threat-explorer-about) can find the same data here
 
 ## Use basic filters
 

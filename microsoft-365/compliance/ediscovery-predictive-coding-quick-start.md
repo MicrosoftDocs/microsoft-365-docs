@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 ms.reviewer: jefwan
+ms.date: 01/01/2023
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -39,15 +40,15 @@ The first step is to create a new predictive coding model in the review set
 
 1. In the Microsoft Purview compliance portal, open an eDiscovery (Premium) case and then select the **Review sets** tab.
 
-2. Open a review set and then click **Analytics** > **Manage predictive coding (preview)**.
+2. Open a review set and then select **Analytics** > **Manage predictive coding (preview)**.
 
-   ![Click the Analyze dropdown menu in review set to go to the Predictive coding page.](..\media\ManagePredictiveCoding.png)
+   ![Select the Analyze dropdown menu in review set to go to the Predictive coding page.](..\media\ManagePredictiveCoding.png)
 
-3. On the **Predictive coding models (preview)** page, click **New model**.
+3. On the **Predictive coding models (preview)** page, select **New model**.
 
 4. On the flyout page, type a name for the model and an optional description.
 
-5. Click **Save** to create the model.
+5. Select **Save** to create the model.
 
    It will take a couple minutes for the system to prepare your model. After it's ready, you can perform the first round of training.
 
@@ -57,11 +58,11 @@ For more detailed instructions, see [Create a predictive coding model](ediscover
 
 After you create the model, the next step is to complete the first training round by labeling items as relevant or not relevant.
 
-1. Open the review set and then click **Analytics** > **Manage predictive coding (preview)**.
+1. Open the review set and then select **Analytics** > **Manage predictive coding (preview)**.
 
 2. On the **Predictive coding models (preview)** page, select the model that you want to train.
 
-3. On the **Overview** tab, under **Round 1**, click **Start next training round**.
+3. On the **Overview** tab, under **Round 1**, select **Start next training round**.
 
    The **Training** tab is displayed and contains 50 items for you to label.
 
@@ -69,7 +70,7 @@ After you create the model, the next step is to complete the first training roun
 
    ![Label each document as relevant or not relevant.](..\media\TrainModel1.png)
 
-5. After you've labeled all 50 items, click **Finish**.
+5. After you've labeled all 50 items, select **Finish**.
 
     It will take a couple minutes for the system to "learn" from your labeling and update the model. When this process is complete, a status of **Ready** is displayed for the model on the **Predictive coding models (preview)** page.
 
@@ -81,11 +82,11 @@ After you perform at lease one training round, you can apply the prediction scor
 
 1. Open the review set.
 
-   ![Click Filters to display the Filters flyout page.](..\media\PredictionScoreFilter0.png)
+   ![Select Filters to display the Filters flyout page.](..\media\PredictionScoreFilter0.png)
 
    The pre-loaded default filters are displayed at the top of the review set page. You can leave these set to **Any**.
 
-2. Click **Filters** to display the **Filters** flyout page.
+2. Select **Filters** to display the **Filters** flyout page.
 
 3. Expand the **Analytics & predictive coding** section to display a set of filters.
 
@@ -93,13 +94,13 @@ After you perform at lease one training round, you can apply the prediction scor
 
    The naming convention for prediction score filters is **Prediction score (model name)**. For example, the prediction score filter name for a model named **Model A** is **Prediction score (Model A)**.
 
-4. Select the prediction score filter that you want to use and then click **Done**.
+4. Select the prediction score filter that you want to use and then select **Done**.
 
-5. On the review set page, click the dropdown for the prediction score filter and type minimum and maximum values for the prediction score range. For example, the following screenshot shows a prediction score range between **.5** and **1.0**.
+5. On the review set page, select the dropdown for the prediction score filter and type minimum and maximum values for the prediction score range. For example, the following screenshot shows a prediction score range between **.5** and **1.0**.
 
    ![Minimum and maximum values for the prediction score filter.](..\media\PredictionScoreFilter2.png)
 
-6. Click outside the filter to automatically apply the filter to the review set.
+6. Select outside the filter to automatically apply the filter to the review set.
 
   A list of documents with a prediction score within the range you specified is displayed on the review set page.
 
