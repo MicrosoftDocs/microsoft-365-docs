@@ -47,7 +47,7 @@ Add graphic
 
 When apps are used without restrictions, company and personal data can get intermingled. Company data can end up in locations like personal storage or transferred to apps beyond your purview and result in data exposure and data loss. One of the primary reasons to use either **MAM without device enrollment** or **MAM with device enrollment** is to help protect your organization's data.
 
-Microsoft Endpoint Manager supports two MAM configurations:
+The Microsoft Intune service supports two MAM configurations:
 - **[MAM without device management](#mam-without-device-management)**
 - **[MAM with device management](#mam-with-device-management)**
 
