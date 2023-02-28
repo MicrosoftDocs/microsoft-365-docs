@@ -32,7 +32,7 @@ ms.service: microsoft-365-security
 > [!IMPORTANT]
 > To allow phishing URLs that are part of third-party attack simulation training, use the [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md) to specify the URLs. Don't use the Tenant Allow/Block List.
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP or Microsoft Defender for Office filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP or Defender for Office 365 filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
 The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way to manually override the Microsoft Defender for Office or Exchange Online Protection filtering verdicts. The Tenant Allow/Block List is used during mail flow for incoming messages from external senders. Note that it doesn't apply to messages within the organization.
 
