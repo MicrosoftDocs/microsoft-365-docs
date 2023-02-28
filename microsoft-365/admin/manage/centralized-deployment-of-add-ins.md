@@ -95,7 +95,7 @@ Use the classic Exchange admin center (EAC) to assign permissions to users. The 
 
 For more information, see [Manage role groups in Exchange Online](/exchange/permissions-exo/role-groups). For a detailed description of the different roles, see [Role assignment policies in Exchange Online](/exchange/permissions-exo/role-assignment-policies).
 
-### Admin Requirements
+### Admin requirements
 
 In order to deploy an add-in via Centralized Deployment, you need to be either a Global admin or an Exchange admin in the organization.
 
