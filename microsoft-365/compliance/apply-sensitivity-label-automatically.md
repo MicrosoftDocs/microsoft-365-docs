@@ -340,7 +340,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     - For OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls) to help you specify individual OneDrive accounts to include or exclude.
 
-8. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
+7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
     
     The rules use conditions that include [sensitive information types](sensitive-information-type-learn-about.md), [trainable classifiers](classifier-learn-about.md), and sharing options:
     - To select a sensitive information type or trainable classifier as a condition, under **Content contains**, select **Add**, and then choose **Sensitive info types** or **Trainable classifiers**.
@@ -365,15 +365,15 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     For each of these conditions, you can then specify exceptions.
     
-9. Depending on your previous choices, you'll now have an opportunity to create new rules by using conditions and exceptions.
+8. Depending on your previous choices, you'll now have an opportunity to create new rules by using conditions and exceptions.
     
     The configuration options for sensitive information types are the same as those you select for auto-labeling for Office apps. If you need more information, see [Configuring sensitive info types for a label](#configuring-sensitive-info-types-for-a-label).
     
     When you've defined all the rules you need, and confirmed their status is on, select **Next** to move on to choosing a label to auto-apply.
 
-10. For the **Choose a label to auto-apply** page: Select **+ Choose a label**, select a label from the **Choose a sensitivity label** pane, and then select **Next**.
+9. For the **Choose a label to auto-apply** page: Select **+ Choose a label**, select a label from the **Choose a sensitivity label** pane, and then select **Next**.
 
-11. If your policy includes the Exchange location: Specify optional configurations on the **Additional settings for email** page:
+10. If your policy includes the Exchange location: Specify optional configurations on the **Additional settings for email** page:
     
     - **Automatically replace existing labels that have the same or lower priority**: Applicable for both incoming and outgoing emails, when you select this setting, it ensures a matching sensitivity label will always be applied. If you don't select this setting, a matching sensitivity label won't be applied to emails that have an existing sensitivity label with a [higher priority](sensitivity-labels.md#label-priority-order-matters) or that were manually labeled.
     
@@ -381,13 +381,13 @@ Finally, you can use simulation mode to provide an approximation of the time nee
         
         For **Assign a Rights Management owner**, specify a single user by an email address that's owned by your organization. Don't specify a mail contact, a shared mailbox, or any group type, because these aren't supported for this role.
 
-12. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Then decide whether to automatically turn on the policy if it's not edited for 7 days:
+11. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Then decide whether to automatically turn on the policy if it's not edited for 7 days:
     
     ![Test out the configured auto-labeling policy.](../media/simulation-mode-auto-labeling-wizard.png)
     
     If you're not ready to run simulation, select **Leave policy turned off**. 
 
-13. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the configuration.
+12. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the configuration.
 
 Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
 
