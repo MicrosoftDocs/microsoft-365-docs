@@ -1751,7 +1751,7 @@
               href: compliance-manager-setup.md
             - name: Compliance Manager quickstart
               href: compliance-manager-quickstart.md
-              name: Configuration Analyzer for Microsoft Purview
+            - name: Configuration Analyzer for Microsoft Purview
               href: compliance-manager-mcca.md
         - name: Build and manage assessments
           href: compliance-manager-assessments.md
