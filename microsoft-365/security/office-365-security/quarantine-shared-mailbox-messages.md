@@ -4,16 +4,15 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer: 
-ms.date: 
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: 
 ms.collection: 
   - m365-security
+  - tier1
 description: Users can learn how to view and act on quarantined messages that were sent to shared mailboxes that they have permissions to.
 ms.subservice: mdo
 ms.service: microsoft-365-security

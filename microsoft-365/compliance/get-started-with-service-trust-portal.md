@@ -6,12 +6,13 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 09/12/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: MET150
-mscollection:
+ms.collection:
 - tier3
 - purview-compliance
 ms.custom:

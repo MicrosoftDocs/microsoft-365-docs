@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 10/20/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -87,4 +88,3 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
 |Secure link for guest count  |The number of times documents or folders are shared using "specific people" on the site.  |
 |Secure link for member count  |The number of times documents or folders are shared using "specific people" on the site.  |
 |Root Web Template  |The template used for creating the site.  <br/> NOTE: If you want to filter the data by different site types, then export the data and use the Root Web Template column. |
-

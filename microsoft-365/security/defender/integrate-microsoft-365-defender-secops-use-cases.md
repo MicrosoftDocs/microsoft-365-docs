@@ -23,7 +23,9 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
+ms.date: 07/15/2021
 ---
+
 # Step 5. Develop and test use cases
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]

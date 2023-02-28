@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: Admin
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid:
   - MOE150
@@ -17,12 +15,12 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about end-user spam notifications for quarantined messages in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/02/2022
 ms.date: 12/02/2022
 ---
 
