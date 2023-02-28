@@ -101,7 +101,7 @@ After you create a policy, you'll include it in forensic evidence requests to co
    2. You can also choose to capture activity for particular desktop apps and/or websites in your policy by selecting the  **Opening a specific app or website** check box under **App and web browsing activities to capture**. 
 
    > [!IMPORTANT]
-   > If you want to capture browsing activities (to include or exclude specific URLs in your forensic evidence policies), make sure to [install the necessary browser extensions](insider-risk-management-browser-support.md). You also need to turn on at least one browsing indicator. If you haven't already turned on one or more browsing indicators, you'll be prompted to do so if you choose to include or exclude desktop apps or websites. 
+   > If you want to capture browsing activities (to include or exclude specific URLs in your forensic evidence policies), make sure to [install the necessary browser extensions](insider-risk-management-browser-support.md). You also need to turn on at least one browsing indicator. If you haven't already turned on one or more browsing indicators, you'll be prompted to do so if you choose to include or exclude desktop apps or websites. The triggering event for capturing browsing activities is a URL update in the URL bar that contains the specified URL.
 
    3. Select **Next**.
 8. (Optional) If you chose to capture activity for particular desktop apps and websites, in the **Add apps and websites you want to capture activity for** page:
