@@ -152,8 +152,8 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
     :::image type="content" source="../media/itemswithmeetings-scope-options-sensitivity-label.png" alt-text="Sensitivity label scope options for Items that include Files, Emails, and Meetings.":::
 
 2. On the **Choose protection settings for labeled items** page:
-    - Select **Encrypt items** if you want to encrypt meeting invites and responses, and any Office attachment in that calendar item
-    - Select **Mark items** if you want to add headers or footers to meeting invites and responses
+    - Select **Apply or remove encryption** if you want to encrypt meeting invites and responses, and any Office attachment in that calendar item
+    - Select **Apply content marking** if you want to add headers or footers to meeting invites and responses
     - Select **Protect Teams meetings and chat** to display the label in Teams meetings and enforce Teams-specific settings for the Teams meeting itself and chat messages
 
 3. On the subsequent pages, configure settings for the options you've selected.
