@@ -23,8 +23,7 @@ SharePoint site templates for Microsoft Syntex are prebuilt, ready-to-deploy, an
 
 |Site template name |Description  |
 |---------|---------|
-|![Thumbnail image for the accounts payable site template.](../media/content-understanding/site-template-accounts-payable-thumbnail.png)<br>**Accounts payable**      |**Accounts payable**<br>
-Manage, process, and track purchase orders, invoices, and related files. <br>[Find in the SharePoint site template library](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f)         |
+|**Accounts payable**<br>![Thumbnail image for the accounts payable site template.](../media/content-understanding/site-template-accounts-payable-thumbnail.png)<br>**Accounts payable**      |**Accounts payable**<br> Manage, process, and track purchase orders, invoices, and related files. <br>[Find in the SharePoint site template library](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f) <br> - Use Microsoft Syntex to organize and classify files.<br> - Extract key information from invoices using a prebuilt invoice model.<br> - Share important information, such as updates to agreements or new policies.<br> - Store purchase orders and invoices in preconfigured document libraries.<br> - Generate files efficiently using modern templates.        |
 |Row2     |         |
 |Row3     |         |
 
@@ -34,7 +33,7 @@ Manage, process, and track purchase orders, invoices, and related files. <br>[Fi
 |Site template  |Description  |Site capabilites  |
 |---------|---------|---------|
 |![Thumbnail image for the accounts payable site template.](../media/content-understanding/site-template-accounts-payable-thumbnail.png)<br>**Accounts payable**    | **Accounts payable**<br>
-Manage, process, and track purchase orders, invoices, and related files. <br>[Find in the SharePoint site template library](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f)   |
+Manage, process, and track purchase orders, invoices, and related files. <br>[Find in the SharePoint site template library](https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f) <br>  |
 |- Use Microsoft Syntex to organize and classify files.<br>
 - Extract key information from invoices using a prebuilt invoice model.<br>
 - Share important information, such as updates to agreements or new policies.<br>
