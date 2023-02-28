@@ -9,10 +9,11 @@ ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 description: Admins can learn how to create training campaigns in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 01/13/2023
 ---
 
 # Training campaigns in Attack simulation training

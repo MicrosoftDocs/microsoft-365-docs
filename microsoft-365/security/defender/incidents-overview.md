@@ -23,6 +23,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
+ms.date: 02/16/2021
 ---
 
 # Incident response with Microsoft 365 Defender

@@ -135,7 +135,9 @@ For specific guidance, see:
 
 The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
 
-- Microsoft 365 for E5 reporting
+- Microsoft 365 E5
+- Microsoft Defender for Endpoint Plan 2
+  
 
 If `AuditAllowed` or `AuditDenied` is configured in your policy and **Send event** is selected in **Options**, an event will be sent to Advanced hunting or the Device control report for every covered access (`AccessMask` in the entry), regardless of whether it was initiated by the system or by the user who signed in.
 

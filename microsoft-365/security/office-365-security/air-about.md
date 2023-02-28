@@ -8,14 +8,14 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 11/22/2022
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
 - m365-security
-- m365initiative-defender-office365
+- tier2
 description: Get started using automated investigation and response capabilities in Microsoft Defender for Office 365.
 ms.custom:
 - air
@@ -51,7 +51,7 @@ An alert is triggered, and a security playbook starts an automated investigation
 1. An automated investigation is initiated in one of the following ways:
    - Either [an alert is triggered](#which-alert-policies-trigger-automated-investigations) by something suspicious in email (such as a message, attachment, URL, or compromised user account). An incident is created, and an automated investigation begins; or
    - A security analyst [starts an automated investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) while using [Explorer](threat-explorer-about.md).
-2. While an automated investigation runs, it gathers data about the email in question and entities related to that email. Such entities can include files, URLs, and recipients. The investigation's scope can increase as new and related alerts are triggered.
+2. While an automated investigation runs, it gathers data about the email in question and _entities_ related to that email (for example, files, URLs, and recipients). The investigation's scope can increase as new and related alerts are triggered.
 
 3. During and after an automated investigation, [details and results](air-view-investigation-results.md) are available to view. Results might include [recommended actions](air-remediation-actions.md) that can be taken to respond to and remediate any existing threats that were found.
 

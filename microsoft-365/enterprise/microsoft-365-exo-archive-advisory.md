@@ -3,6 +3,7 @@ title: "Service advisories for auto-expanding archive utilization in Exchange On
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 12/28/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
