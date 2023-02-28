@@ -98,7 +98,7 @@ After you secure and tag your priority users, you can use the available reports,
 |---|---|
 |Alerts|The user tags of affected users are visible and available as filters on the **Alerts** page in the Microsoft 365 Defender portal. For more information, see [Viewing alerts](../../compliance/alert-policies.md#view-alerts).|
 |Incidents|The user tags for all correlated alerts are visible on the **Incidents** page in the Microsoft 365 Defender portal. For more information, see [Manage incidents and alerts](mdo-sec-ops-manage-incidents-and-alerts.md).|
-|Custom alert policies|You can create alert policies based on user tags in the Microsoft 365 Defender portal. For more information, see [Alert policies in Microsoft 365](../../compliance/alert-policies).|
+|Custom alert policies|You can create alert policies based on user tags in the Microsoft 365 Defender portal. For more information, see [Alert policies in Microsoft 365](../../compliance/alert-policies.md).|
 |Explorer <p> Real-time detections|In **Explorer** (Defender for Office 365 Plan 2) or **Real-time detections** (Defender for Office 365 Plan 1), user tags are visible in the Email grid view and the Email details flyout. User tags are also available as a filterable property. For more information, see  [Tags in Explorer](threat-explorer-about.md#tags-in-threat-explorer).|
 |Email entity page|You can filter emails based on applied user tags in Microsoft Defender for Office 365 E5, and Defender for Office P1 and P2. For more information, see [Email entity page](mdo-email-entity-page.md).| 
 |Campaign Views|User tags are one of many filterable properties in Campaign Views in Microsoft Defender for Office 365 Plan 2. For more information, see [Campaign Views](campaigns.md).|
