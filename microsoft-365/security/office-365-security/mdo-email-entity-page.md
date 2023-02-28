@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier1
 - highpri
-ms.custom: 
+ms.custom:
 description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can see email details in all Microsoft Defender for Office 365 experiences including the email headers for copy, Detection details, Threats detected, Latest and Original delivery locations, Delivery actions, and IDs like Alert Id, Network Message ID and more.
 search.appverid: met150
 ---
@@ -40,7 +40,8 @@ See email details in the experiences below, including [previewing and downloadin
 
 ## How to get to the email entity page
 
-Anywhere you find email details throughout the Microsoft Defender for Office 365, the email entity details are available. This includes: 
+Anywhere you find email details throughout the Microsoft Defender for Office 365, the email entity details are available. This includes:
+
 - Threat Explorer
 - Advanced Hunting
 - Alerts
@@ -106,7 +107,7 @@ These details are specific to email attachments and URLs. Users can see these de
 
 Users will see enriched detonation details for known malicious attachments or URLs found in their emails, which got detonated for their specific tenant. It will include the Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
 
-1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs affected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.  
+1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs affected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.
 
     > [!NOTE]
     > This may show just the top level item if none of the entities linked to it were found to be problematic, or were detonated.
@@ -130,9 +131,9 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 - *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. Mail flow rules are created and modified in the Exchange admin center at <https://admin.exchange.microsoft.com/#/transportrules>, but if any mail flow rule applies to a message, the rule name and GUID will be shown here. Valuable information for tracking purposes.
 
-- *Primary Override: Source*: Primary override and source refer to the tenant or user setting which impacted the delivery of the email, overriding the delivery location given by the system (as per the threat and detection technology). As an example, this could be an email blocked due to a tenant configured transport rule or an email allowed due to an end-user setting for Safe Senders. 
+- *Primary Override: Source*: Primary override and source refer to the tenant or user setting which impacted the delivery of the email, overriding the delivery location given by the system (as per the threat and detection technology). As an example, this could be an email blocked due to a tenant configured transport rule or an email allowed due to an end-user setting for Safe Senders.
 
-- *All Overrides*: All Overrides refer to the list of overrides (tenant or user settings) that was applied on the email, which may or may not have impacted the delivery of an email. As an example, if a tenant configured transport rule, as well as a tenant configured policy setting (for example, from the Tenant Allow Block lists), is applied to an email, then both will be listed in this field. You can check the primary override field to determine the setting that impacted the delivery of the email. 
+- *All Overrides*: All Overrides refer to the list of overrides (tenant or user settings) that was applied on the email, which may or may not have impacted the delivery of an email. As an example, if a tenant configured transport rule, as well as a tenant configured policy setting (for example, from the Tenant Allow Block lists), is applied to an email, then both will be listed in this field. You can check the primary override field to determine the setting that impacted the delivery of the email.
 
 - *Bulk Complaint Level (BCL)*: The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
 
@@ -142,7 +143,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 - *Forwarding*: For scenarios with autoforwarding, it indicates the forwarding user as well as the forwarding type like ETR or SMTP forwarding.
 
-- *Distribution list*: Shows the distribution list, if the recipient received the email as a member of the list. It shows the top level distribution list if there are nested distribution lists involved.  
+- *Distribution list*: Shows the distribution list, if the recipient received the email as a member of the list. It shows the top level distribution list if there are nested distribution lists involved.
 
 - *To, Cc*: Indicates the addresses that are listed in To, Cc fields of an email. The information in these fields is restricted to 5000 characters.
 
@@ -180,21 +181,20 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 ## Actions you can take on the Email entity Page
 
-Security teams can now take email actions like soft delete and hard delete, move to junk, move to inbox, trigger an investigation, submit to Microsoft for review in line, and et cetera. **Tenant level block** actions like file and URL or sender can also be triggered from the Email entity page.  
+Security teams can now take email actions like soft delete and hard delete, move to junk, move to inbox, trigger an investigation, submit to Microsoft for review in line, and et cetera. **Tenant level block** actions like file and URL or sender can also be triggered from the Email entity page.
 
-You will be able to select **Take actions** from the top right corner of the entity page and this will open the Action wizard for you to select the specific action you need. 
+You will be able to select **Take actions** from the top right corner of the entity page and this will open the Action wizard for you to select the specific action you need.
 ![Take action from entity page.](../../media/Take-ActionWizard-Email-entity.png)
 
-In the Action wizard you can take email actions, email submissions, block sender and sender domain, investigative actions and two step approval (add to remediation) in the same side pane. This follows a consistent flow for ease of use. The Action wizard uses the same system as is used by Explorer actions (for Delete, Submissions, and Investigation actions), for example. You will be able to see and track these actions in the 
- [Unified action center](https://security.microsoft.com/action-center/history) (for deleted emails), in the 
-  [Submission portal](https://security.microsoft.com/reportsubmission) (for submissions), and in [Tenant Allow/Block Lists](https://security.microsoft.com/tenantAllowBlockList) page for (TABL blocks). 
+In the Action wizard you can take email actions, email submissions, block sender and sender domain, investigative actions and two step approval (add to remediation) in the same side pane. This follows a consistent flow for ease of use. The Action wizard uses the same system as is used by Explorer actions (for Delete, Submissions, and Investigation actions), for example. You will be able to see and track these actions in the
+ [Unified action center](https://security.microsoft.com/action-center/history) (for deleted emails), in the
+  [Submission portal](https://security.microsoft.com/reportsubmission) (for submissions), and in [Tenant Allow/Block Lists](https://security.microsoft.com/tenantAllowBlockList) page for (TABL blocks).
 
-We are also bringing Tenant level block URL and attachment to the respective Email entity URL and Attachments tabs. Upon approval, all the Tenant Allow and Block Lists (or TABL) block URL and block attachments can be tracked under TABL/URL and TABL/file pages. 
+We are also bringing Tenant level block URL and attachment to the respective Email entity URL and Attachments tabs. Upon approval, all the Tenant Allow and Block Lists (or TABL) block URL and block attachments can be tracked under TABL/URL and TABL/file pages.
 ![Take block URL action from entity page.](../../media/Block-URL-Email-entity.png)
 
-See [permissions](mdo-portal-permissions.md) required to take these actions. 
+See [permissions](mdo-portal-permissions.md) required to take these actions.
 
- 
 ### The Email summary panel
 
 The email summary panel is a summarized view of the full email entity page. It contains standardized details about the email (for example, detections), as well as context-specific information (for example, for Quarantine or Submissions metadata). The email summary panel replaces the traditional email flyouts throughout Microsoft Defender for Office 365.
@@ -203,38 +203,38 @@ The email summary panel is a summarized view of the full email entity page. It c
 > ![Open the email entity link.](../../media/open-email-entity-mdo.png)
 
 > [!NOTE]
-> To view all the components, click on the **Open email entity** link to open the full email entity page.  
+> To view all the components, click on the **Open email entity** link to open the full email entity page.
 
-The email summary panel is divided into the following sections:  
+The email summary panel is divided into the following sections:
 
 - *Delivery details*: Contains information about threats and corresponding confidence level, detection technologies, and original and latest delivery location.
 
 - *Email details*: Contains information about email properties like sender name, sender address, time received, authentication details, and other several other details.
 
-- *URLs*: By default, you will see 3 URLs and their corresponding threats. You can always select **View all URLs** to expand and see all URLs and export them.  
+- *URLs*: By default, you will see 3 URLs and their corresponding threats. You can always select **View all URLs** to expand and see all URLs and export them.
 
-- *Attachments*: By default, you will see 3 attachments. You can always select **View all attachments** to expand and see all attachments. 
+- *Attachments*: By default, you will see 3 attachments. You can always select **View all attachments** to expand and see all attachments.
 
-In addition to the above sections, you will also see sections specific to few experiences that are integrated with the summary panel: 
+In addition to the above sections, you will also see sections specific to few experiences that are integrated with the summary panel:
 
-- Submissions: 
+- Submissions:
 
-    - *Submission details*: Contains information about the specific submissions such as:
-        - Date submitted
-        - Subject
-        - Submission type
-        - Reason for submitting
-        - Submission ID
-        - Submitted by
+  - *Submission details*: Contains information about the specific submissions such as:
+    - Date submitted
+    - Subject
+    - Submission type
+    - Reason for submitting
+    - Submission ID
+    - Submitted by
 
-    - *Result details*: Messages that are submitted are reviewed. You can see the result of your submission as well as any recommended next steps.
+  - *Result details*: Messages that are submitted are reviewed. You can see the result of your submission as well as any recommended next steps.
 
-- Quarantine:  
+- Quarantine:
 
-    - *Quarantine details*: Contains quarantine-specific details. For more information, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#view-quarantined-message-details).
+  - *Quarantine details*: Contains quarantine-specific details. For more information, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#view-quarantined-message-details).
 
-        - Expires: The date/time when the message will be automatically and permanently deleted from quarantine.
-        - Released to: All email addresses (if any) to which the message has been released.
-        - Not yet released to: All email addresses (if any) to which the message has not yet been released.
+    - Expires: The date/time when the message will be automatically and permanently deleted from quarantine.
+    - Released to: All email addresses (if any) to which the message has been released.
+    - Not yet released to: All email addresses (if any) to which the message has not yet been released.
 
-    - *Quarantine actions*: For more information on different quarantine actions, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-email).
+  - *Quarantine actions*: For more information on different quarantine actions, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-email).
