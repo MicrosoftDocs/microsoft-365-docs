@@ -81,7 +81,7 @@ Check with your organization's Exchange admin to find out which configuration is
 
 ### Exchange Online user role requirements
 
-Use the classic Exchange Admin Center (EAC) to assign permissions to users. The permissions required to view and modify deployed add-ins are below.
+Use the classic Exchange admin center (EAC) to assign permissions to users. The permissions required to view and modify deployed add-ins are detailed in the following steps.
 
 1.	Log in to the classic EAC as a global administrator.
 2.	Go to **Permissions**, and then select **User Roles**.
