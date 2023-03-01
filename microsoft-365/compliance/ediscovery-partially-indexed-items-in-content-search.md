@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/01/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -83,14 +83,14 @@ Keep the following in mind about partially indexed items:
 
   |**Export configuration**|**Indexed items that match search query**|**Partially indexed items that match search query**|**Partially indexed items that don't match search query**|
   |:-----|:-----|:-----|:-----|
-  |Export only indexed items  <br/> |Exported<br/> |Exported (included with the indexed items that are exported)<br/>  |Not exported <br/>|
+  |Export only indexed items  <br/> |Exported<br/> |Exported (included with the indexed items exported)<br/>  |Not exported <br/>|
   |Export only partially indexed items  <br/> |Not exported  <br/> |Exported (as partially indexed items)<br/> |Exported (as partially indexed items)|
-  |Export indexed and partially indexed items  <br/> |Exported<br/> |Exported (included with the indexed items that are exported)<br/>  |Exported (as partially indexed items)<br/>|
+  |Export indexed and partially indexed items  <br/> |Exported<br/> |Exported (included with the indexed items exported)<br/>  |Exported (as partially indexed items)<br/>|
   ||||
   
 ## Workaround for using a date range to exclude partially indexed items
 
-In Content search and Microsoft Purview eDiscovery (Standard), you can't use a date range to exclude partially indexed items from being returned by a search query. In other words, partially indexed items that fall outside of a date range are still included as partially indexed items in the search statistics and when you export partially indexed items. In eDiscovery (Premium), you can exclude partially indexed items by using a date range in a search query.
+In Content search and Microsoft Purview eDiscovery, you can't use a date range to exclude partially indexed items from being returned by a search query. In other words, partially indexed items that fall outside of a date range are still included as partially indexed items in the search statistics and when you export partially indexed items.
 
 As a workaround for this limitation, we recommend the following procedure.
 
