@@ -450,8 +450,6 @@
             href: attack-surface-reduction-rules-deployment-implement.md
           - name: Operationalize attack surface reduction (ASR) rules
             href: attack-surface-reduction-rules-deployment-operationalize.md
-          - name: Operationalize attack surface reduction (ASR) rules
-            href: attack-surface-reduction-rules-deployment-operationalize.md
         - name: Attack surface reduction (ASR) rules reference
           href: attack-surface-reduction-rules-reference.md
         - name: Attack surface reduction rules report
