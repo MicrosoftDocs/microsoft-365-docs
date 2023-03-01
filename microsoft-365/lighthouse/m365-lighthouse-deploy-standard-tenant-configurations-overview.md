@@ -36,7 +36,7 @@ To view the Microsoft 365 Lighthouse default baseline that applies to all tenant
 
 The Microsoft 365 Lighthouse default baseline is designed to ensure all managed tenants are healthy and secure. To view the tasks included in the default baseline, select **Default baseline** from the list. Select any of the tasks to view additional details about the task and the associated user impact.
 
-:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Lighthouse default baseline":::
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Screenshot of the Default baseline page." lightbox="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png":::
 
 ### Default Lighthouse configurations
 
