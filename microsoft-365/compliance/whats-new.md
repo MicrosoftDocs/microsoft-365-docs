@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/27/2023
+ms.date: 03/01/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -41,6 +41,13 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## February 2023
 
+### Audit
+
+- Clarification for audit log activities for [messages with reactions](/microsoft-365/compliance/audit-log-activities#yammer-activities) in Yammer.
+- [Clarification](/microsoft-365/compliance/audit-log-retention-policies#before-you-create-an-audit-log-retention-policy) on customized retention policies and licensing requirements.
+- Updates to [export limits](/microsoft-365/compliance/audit-new-search#audit-search-results-overview) for all search job items in Audit (Premium).
+- Clarification for [OneDrive for Business support](/microsoft-365/compliance/audit-premium) in Audit (Premium).
+
 ### Communication compliance
 
 - **Mark a policy as a favorite**: [Mark a policy as a favorite and then filter and sort your policy lists](communication-compliance-policies.md#mark-a-policy-as-a-favorite).
@@ -61,6 +68,27 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **Adaptive Protection (preview)** - [Learn about Adaptive Protection in Data Loss Prevention (preview)](dlp-adaptive-protection-learn.md)
 - **DLP migration assistant for Symantec GA** - [Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-learn.md)
 
+### eDiscovery
+
+- Updates and clarifications for [decryption support](/microsoft-365/compliance/ediscovery-decryption) in eDiscovery solutions.
+- Updates and clarification for [keyword queries and search conditions](/microsoft-365/compliance/ediscovery-keyword-queries-and-search-conditions) in eDiscovery.
+- Updates for new collection management features, including new review set as column links, including the review set name in collection overviews, saving collections as a draft to capture progress and return to complete later, and more:
+    - *Updated*: [Learn about collections in eDiscovery (Premium)](/microsoft-365/compliance/ediscovery-collections)
+    - *Updated*:[Create a collection estimate in eDiscovery (Premium)](/microsoft-365/compliance/ediscovery-create-draft-collection)
+    - *Updated*: [Commit a collection estimate to a review set in eDiscovery (Premium)](/microsoft-365/compliance/ediscovery-commit-draft-collection)
+- New description section for [expand selection](/microsoft-365/compliance/ediscovery-export-documents-from-review-set#export-options) option for filtered and selected documents in export options.
+- Updates for graph API endpoints in the [Search and purge chat messages in Teams](/microsoft-365/compliance/ediscovery-search-and-delete-teams-chat-messages) article.
+- Updates to clarify how to [verify the deletion of purged messages](/microsoft-365/compliance/ediscovery-search-and-delete-teams-chat-messages#step-6-verify-chat-messages-are-purged) in Microsoft Teams without having to view as a specific user.
+
+### Information barriers
+
+- New support for multi-segments, people discoverability options, Exchange ABP integration, and more:
+    - *New*: [Use multi-segment support in information barriers](/microsoft-365/compliance/information-barriers-multi-segment)
+    - *Updated*: [Use information barriers with OneDrive](/sharepoint/information-barriers-onedrive)
+    - *Updated*: [Use information barriers with SharePoint](/sharepoint/information-barriers)
+    - *Updated*: [Use information barriers in Microsoft Teams](/microsoftteams/information-barriers-in-teams)
+- Clarifications for [policy application processing](/microsoftteams/information-barriers-in-teams#ib-policy-application-in-teams) for IB in Microsoft Teams.
+
 ### Insider risk management
 
 - **In preview**: New [Adaptive Protection guidance](/microsoft-365/compliance/insider-risk-management-adaptive-protection). Adaptive Protection in Microsoft Purview uses machine learning to identify and mitigate the most critical risks with the most effective [data loss prevention (DLP)](/microsoft-365/compliance/dlp-adaptive-protection-learn) protection controls dynamically, saving security teams valuable time while ensuring better data security.
@@ -80,7 +108,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **In preview**: [Support for Azure Active Directory administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units).
 - **In preview**: Previously available in preview for Word, Excel, and PowerPoint, the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) with support for [label colors](sensitivity-labels-office-apps.md#label-colors) is now also in preview for Outlook on Windows.
 - **In preview**: Now supported for labeling built into Windows, macOS, iOS, and Android, auditing actions for sensitivity labels include encryption details such as a change in the encryption status and settings, and the Rights Management owner.
-- New Office setting if you need to [disable the PDF support in Office apps for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#disabling-pdf-support).
+- **New Office setting**: Available with Group Policy and the Cloud Policy service for Microsoft 365, a new setting if you need to [disable the PDF support in Office apps for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#disabling-pdf-support).
+- **Rolling out**: In the Microsoft Purview compliance portal, the horizontal tabs for **Overview**, **Labels**, **Label policies**, and **Auto-labeling** now display as vertical options in the left navigation pane when you expand **Information protection**.
 
 ## January 2023
 
@@ -94,6 +123,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Updates to [conditional settings](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) and the required formatting for multi-value conditions.
 - New section that outlines [limitations](/microsoft-365/compliance/communication-compliance-channels#channel-limits) for supported channels.
 
+### Compliance Manager
+- Compliance Manager now has [improvement actions related to Microsoft Priva](/microsoft-365/compliance/compliance-manager-setup#testing-source-for-automated-testing) (**in preview**).
+
 ### eDiscovery
 
 - Updated with a clarification for searches for [inactive mailboxes](/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
@@ -106,6 +138,19 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Updated with [clarifications](/microsoft-365/compliance/insider-risk-management-forensic-evidence) for forensic evidence about timelines in the user activity reports and the *all activities* capturing option.
 - Updated *obfuscation* examples for [insider risk management policies](/microsoft-365/compliance/insider-risk-management-policies).
 - Restructured documentation and moved [policy template guidance](/microsoft-365/compliance/insider-risk-management-policy-templates) into a new article.
+
+### Microsoft Priva
+
+- Two additional roles are now permitted to start a [Priva trial](/privacy/priva/priva-trial): Compliance Admin and Info Protection Admin.
+- There are new recommended alert settings (**in preview**) in [Privacy Risk Management policies](/privacy/priva/risk-management-policies) that allow users to choose more actionable and relevant alerts to reduce noise and alert fatigue.
+- There are new Compliance Manager improvement actions related to Priva (in preview); see [these instructions](/privacy/priva/priva-overview#microsoft-purview-compliance-manager) for how to access Compliance Manager and how to see the actions.
+- When [creating a subject rights request](/privacy/priva/subject-rights-requests-create), it's now optional to enter the data subject's name. A new flyout pane lets you add more identifiers. A new "Conditions" flyout pane appears during search refinement that lets users set multiple search conditions at once.
+- Update to clarify that a subject rights request will automatically pause at the [data estimate stage](/privacy/priva/subject-rights-requests-data-retrieval) if over 10K items or 100 GB of data are likekly to be retrieved.
+- Updates for [reviewing data and collaborating on subject rights requests](/privacy/priva/subject-rights-requests-data-review):
+    - There are new filtering options when reviewing data, including keywords supporting multiple words and wildcard.
+    - The "Plain text" view in the content review area now highlights all the data subject identifiers provided. 
+    - Clarifications that the search function in the annotate view can jump to search results within the view. 
+    - Individual collaborators can now be removed from dedicated Teams channel
 
 ### Sensitivity labels
 

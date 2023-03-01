@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 05/05/2022
+ms.date: 02/28/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -28,6 +28,48 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
+
+## February 2023
+
+### App insights from Endpoint analytics  
+
+We've added insights from Endpoint analytics to Microsoft 365 Lighthouse to help you proactively take measures to improve the health of user devices and apps within managed tenants. The insights from Endpoint analytics inform a deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, select **Apps** > **App performance** in the left navigation pane in Microsoft 365 Lighthouse to see the Endpoint analytics insights.  
+
+For more information, see [What is Endpoint analytics?](/mem/analytics/overview).
+
+### Device insights from Endpoint analytics  
+
+We've added insights from Endpoint analytics to Microsoft 365 Lighthouse to help you proactively take measures to improve the health of user devices and apps within managed tenants. The insights from Endpoint analytics inform a deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, select **Devices** > **Device health** in the left navigation pane in Microsoft 365 Lighthouse to see the Endpoint analytics insights.  
+
+For more information, see [What is Endpoint analytics?](/mem/analytics/overview).
+
+### Multi-tenant exposure score and recommendations  
+
+We've brought multi-tenant threat and vulnerability management capabilities from Microsoft Defender for Endpoint (MDE) into Microsoft 365 Lighthouse. To see the exposure levels of all your managed tenants onboarded to MDE, go to **Devices** > **Vulnerability management** in Microsoft 365 Lighthouse.  
+
+### Persistent deployment status detection and configuration drift analysis 
+
+We've enhanced Microsoft 365 Lighthouse to provide persistent configuration detection and deployment status to monitor your tenants&mdash;even when you're offline&mdash;and identify any updates to a tenant configuration that results in a regression of the deployment status for any of the assigned tasks.   
+
+Microsoft 365 Lighthouse also provides *who*, *where*, and *when* details about user activity that caused the detected drift so that you can efficiently and effectively restore the tenant to the desired state.  
+
+This insight helps you effectively engage fellow tenant admins&mdash;either in your organization or in the customer's organization&mdash;to educate them about the impact of their activity and how to mitigate future risks associated with configuration drift.   
+
+### Enhanced deployment insights for licensing  
+
+Microsoft 365 Lighthouse now provides insights around which deployment tasks can't be completed for which users due to insufficient licensing. These insights help you adjust the licensing or the deployment plan accordingly to complete your deployment.
+
+:::image type="content" source="../media/m365-lighthouse-whats-new/required-licenses-tab.png" alt-text="Screenshot of the Required licenses tab in the tenant details pane." lightbox="../media/m365-lighthouse-whats-new/required-licenses-tab.png"::: 
+
+### Deployment insights Home page card 
+
+The Microsoft 365 Lighthouse Home page now includes a Deployment insights card that provides actionable insights around the deployment state of the tenants you manage. These insights can help identify where to focus deployment activities to optimize tenant health and security.
+
+:::image type="content" source="../media/m365-lighthouse-whats-new/deployment-insights-card.png" alt-text="Screenshot of the Deployment insights card on the Home page.":::
+
+### Deployment progress by user  
+
+Microsoft 365 Lighthouse now reports deployment progress by user so you can see the deployment status for every applicable deployment task. The ability to see which users are compliant with, not compliant with, not targeted for, not licensed for, or excluded from each deployment task across all your managed tenants can help you to more efficiently and effectively help each user be secure and productive. 
 
 ## January 2023
 
