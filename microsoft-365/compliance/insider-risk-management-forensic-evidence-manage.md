@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 03/01/2023
 audience: itpro
 ms.collection: m365-security-compliance
 ---
@@ -50,7 +50,7 @@ To configure approved users for forensic evidence capturing, complete the follow
 8. On the **Justification** page, let the reviewer know why you're requesting that capturing be enabled for the users you added in the **Justification for turning on forensic evidence capturing** text box. This is a required field. When complete, select **Next**.
 9. On the **Email notifications** page, you can use a notification template to send an email to users letting them know that forensic evidence capturing will be turned on for their device in accordance with your organization's policies. The email will be sent to users only if their request is approved.
 
-    Select the **Send an email notification to approved users** checkbox. Choose an existing template o create a new one. To create a new template, select **Create a notification template** and complete the following required fields in the **New email notification template** pane.
+    Select the **Send an email notification to approved users** check box. Choose an existing template or create a new one. To create a new template, select **Create a notification template** and complete the following required fields in the **New email notification template** pane.
 
 10. Select **Next**.
 11. On the **Finish** page, review your settings before submitting the request. Select **Edit users** or **Edit justification** to change any of the request values or select **Submit** to create and send the request to reviewers.
@@ -96,7 +96,7 @@ To create a new notification template, complete the following steps:
     - Send from
     - Subject
     - Message body
-4. Select **Save**
+4. Select **Save**.
 
 To delete an existing notification template, select a template and select **Delete**.
 
