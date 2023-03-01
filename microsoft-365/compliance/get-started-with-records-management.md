@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 06/27/2020
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -54,7 +54,7 @@ To see the options for licensing your users to benefit from Microsoft Purview fe
 
 ## Permissions
 
-Members of your compliance team who are responsible for records management need permissions to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Records Management** admin role group, which grants permissions for all features related to records management, including [disposition review and verification](disposition.md).
+Members of your compliance team who are responsible for records management need permissions to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Records Management** admin role group. This role group grants permissions for all features related to records management, which include the permissions to create and manage [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention), and [disposition review and verification](disposition.md).
 
 For a read-only role, you can create a new role group and add the **View-Only Record Management** role to this group.
 
