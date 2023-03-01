@@ -120,6 +120,16 @@ To map sensitivity label GUIDs to label names, use the [Get-Label](/powershell/m
     ```powershell
     Get-Label -Identity "<GUID>" | Name
 
+## How to turn off this feature
+
+If you need to, you can turn off this feature that supports a default sensitivity label for SharePoint document libraries. This is a tenant-level setting that requires you to use the [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *DisableDocumentLibraryDefaultLabeling* parameter set to **True** by using the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online):
+
+```powershell
+Set-SpoTenant -DisableDocumentLibraryDefaultLabeling $true
+```
+
+After you run this command, you won't see the UI configuration to configure the **Default sensitivity labels** option. You won't be able to select a default label for new or existing libraries and for libraries that were previously configured, the label selection remains but won't be newly applied to files.
+
 ## Next steps
 
 Default labeling ensures a minimum level of protection but doesn't take into account the file contents that might require a higher level of protection. Consider supplementing this labeling method with [automatic labeling](apply-sensitivity-label-automatically.md) that uses content inspection, and encourage [manual labeling](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) for users to replace the default label when needed.
