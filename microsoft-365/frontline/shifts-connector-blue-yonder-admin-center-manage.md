@@ -47,8 +47,11 @@ You can use the [Shifts connector wizard](shifts-connector-wizard.md) (Preview) 
 
 ### Manage your connection instances
 
-- To create a new connection instance, select **Create instance**. You'll be taken to the wizard, where you can [choose your settings and create mappings](shifts-connector-wizard#create-a-connection-instance).
-- To make changes to an existing connection instance, choose **Edit** next to the instance name. You'll be taken to the wizard, where you can [update the settings and mappings](shifts-connector-wizard#create-a-connection-instance).
+> [!IMPORTANT]
+> Before mapping a Blue Yonder WFM instance to a Microsoft team, check if the team has scheduled entities such as shifts or time off. If the team has an existing schedule with scheduled entities, [remove the scheduled entities from the team](shifts-connector-wizard.md#remove-scheduled-entities-from-teams-you-want-to-map) before you map a Blue Yonder WFM instance to it. If you don't remove scheduled entities before mapping, you'll see duplicate shifts.
+
+- To create a new connection instance, select **Create instance**. You'll be taken to the wizard, where you can [choose your settings and create mappings](shifts-connector-wizard.md#create-a-connection-instance).
+- To make changes to an existing connection instance, choose **Edit** next to the instance name. You'll be taken to the wizard, where you can [update the settings and mappings](shifts-connector-wizard.md#create-a-connection-instance).
 - To view more details about an existing connection instance, select its name. On the details page, you'll see health information, including ongoing errors (if any), and mappings. You can also choose **Edit** to update settings in the wizard or **Back** to return to the Connector Management Console.
 
   :::image type="content" source="media/shifts-connector-blue-yonder-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-blue-yonder-manage-details.png":::
