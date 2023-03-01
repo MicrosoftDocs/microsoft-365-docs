@@ -209,7 +209,7 @@ you can use the following XML:
   </Keyword>
 ```
 
-SImilarly, to include occurrences that have **credit card** and **card #** strings before the credit card number, in a list like this:
+Similarly, to include occurrences that have **credit card** and **card #** strings before the credit card number, in a list like this:
 
 - Credit card 45-124576532-123 
 - 45-124576532-123  (which could be phone number)
@@ -266,7 +266,7 @@ you can use this XML:
   </Keyword>
 ```
 
-SImilarly, to include an occurrence only if it is followed by **cvv** or **expires**, such as the two in this list:
+Similarly, to include an occurrence only if it is followed by **cvv** or **expires**, such as the two in this list:
 
 - 45-124576532-123 
 - 45-124576532-123  cvv 966

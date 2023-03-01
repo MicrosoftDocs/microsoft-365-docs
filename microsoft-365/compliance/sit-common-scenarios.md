@@ -80,7 +80,7 @@ Contoso Bank has noticed some of their employees share credit card numbers with 
 
 ## Ignore a disclaimer notice
 
-Many organizations add legal disclaimers, disclosure statements, signatures, etc., or other information to the top or bottom of email messages that enter or leave their organizations. In some cases emails sent within an organization itself can contain such text. For example, employees may add signatures with motivational quotes, social messages, and so on. A disclaimer or signature can contain the terms that are present in the lexicon of a CC and and may generate many false positives.  
+Many organizations add legal disclaimers, disclosure statements, signatures, etc., or other information to the top or bottom of email messages that enter or leave their organizations. In some cases, emails sent within an organization itself can contain such text. For example, employees may add signatures with motivational quotes, social messages, and so on. A disclaimer or signature can contain the terms that are present in the lexicon of a CC and may generate many false positives.  
 
 For example, a typical disclaimer might contain words like *sensitive*, or *confidential* and a policy looking for sensitive info will detect it as an incident, leading to lot of false positives. Thus providing customers with an option to ignore disclaimers can reduce the number of false positives and increase the efficiency of the compliance team.
 
