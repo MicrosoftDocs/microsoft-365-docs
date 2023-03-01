@@ -11,6 +11,7 @@ audience: Admin
 ms.localizationpriority: high
 ms.collection: 
   - m365-security
+  - tier1
 search.appverid: 
   - MOE150
   - MET150

@@ -17,7 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- m365initiative-defender-office365
+- tier2
 ms.topic: how-to
 ms.custom: 
 - autoir

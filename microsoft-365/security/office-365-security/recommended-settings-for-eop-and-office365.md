@@ -15,6 +15,8 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
   - m365-security
   - m365initiative-defender-office365
+  - highpri
+  - tier1
 description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -300,7 +302,7 @@ In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new
 |**Apply real-time URL scanning for suspicious links and links that point to files** <br><br> _ScanUrls_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Wait for URL scanning to complete before delivering the message** <br><br> _DeliverMessageAfterScan_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Do not rewrite URLs, do checks via Safe Links API only** <br><br> _DisableURLRewrite_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Not selected <br><br> `$false`|Not selected <br><br> `$false`||
-|**Do not rewrite the following URLs in email** <br><br> _DoNotRewriteUrls_|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`|We have no specific recommendation for this setting. <br><br> **Note**: Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [allow URL entries in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) so URLs are not scanned or wrapped by Safe Links during mail flow _and_ at time of click.|
+|**Do not rewrite the following URLs in email** <br><br> _DoNotRewriteUrls_|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`|We have no specific recommendation for this setting. <br><br> **Note**: Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [allow URL entries in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-on-the-submissions-page) so URLs are not scanned or wrapped by Safe Links during mail flow _and_ at time of click.|
 |**Teams**|||||The setting in this section affects time of click protection in Microsoft Teams.|
 |**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams. URLs are not rewritten.** <br><br> _EnableSafeLinksForTeams_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Office 365 apps**|||||The setting in this section affects time of click protection in Office apps.|

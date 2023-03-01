@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 09/03/2021
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: high
@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 ms.custom:
   - seo-marvel-apr2020
 description: Learn to integrate Azure PIM in order to grant just-in-time, time limited access to users to do elevated privilege tasks in Microsoft Defender for Office 365, lowering risk to your data.
@@ -45,7 +45,7 @@ In this example we will configure "Alex", a member of our security team who will
 3. Set the '**Activation maximum duration (hours)**' to a normal working day and 'On activation' to require **Azure MFA**.
 4. As this is Alex's normal privilege level for day-to-day operations, we will Uncheck **Require justification on activation**' > **Update**.
 5. Select **Add Assignments** > **No member selected** > select or type the name to search for the correct member.
-6. Click the **Select** button to choose the member you need to add for PIM privileges > click **Next** > make no changes on the Add Assignment page (both assignment type *Eligible* and duration *Permanently Eligible* will be defaults ) and **Assign**.
+6. Click the **Select** button to choose the member you need to add for PIM privileges > click **Next** > make no changes on the Add Assignment page (both assignment type *Eligible* and duration *Permanently Eligible* will be defaults) and **Assign**.
 
 The name of your user (here 'Alex') will appear under Eligible assignments on the next page, this means they are able to PIM into the role with the settings configured earlier.
 

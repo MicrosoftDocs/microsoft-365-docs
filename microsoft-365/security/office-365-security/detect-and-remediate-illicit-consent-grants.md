@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.collection:
-- o365_security_incident_response
+- tier2
 - m365-security
 ms.date: 1/31/2023
 ms.localizationpriority: medium

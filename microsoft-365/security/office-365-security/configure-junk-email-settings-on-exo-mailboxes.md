@@ -13,6 +13,7 @@ search.appverid:
   - MET150
 ms.collection: 
   - m365-security
+  - tier2
 description: Admins can learn how to configure the junk email settings in Exchange Online mailboxes. Many of these settings are available to users in Outlook or Outlook on the web.
 ms.subservice: mdo
 ms.service: microsoft-365-security

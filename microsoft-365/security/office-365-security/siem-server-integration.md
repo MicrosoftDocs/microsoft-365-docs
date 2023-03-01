@@ -11,6 +11,7 @@ ms.date: 1/31/2023
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
+  - tier2
 ms.custom: 
   - Ent_Solutions
   - SIEM

@@ -20,7 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 05/10/2022
+ms.date: 1/31/2023
 ---
 
 # Protect your c-suite with priority account protection
@@ -28,11 +28,13 @@ ms.date: 05/10/2022
 Priority account protection helps IT and security teams ensure a high quality of service and protection for the critical people within your organization. Tagging an account as a priority account will enable the additional protection tuned for the mail flow patterns targeting company executives, along with extra visibility in reports, alerts, and investigations.
 
 ## What you'll need
+
 - Microsoft Defender for Office 365 Plan 2 (included as part of E5 plans)
 - Sufficient permissions (Security Administrator role)
 - 5 minutes to perform the steps below.
 
 ## Tag Priority users
+
 1. Identify the users, groups, or domains you would like to tag as priority accounts.
 1. Login to the [Microsoft Security Portal](https://security.microsoft.com/) and navigate to Settings on the left navigation bar.
 1. Select Email & collaboration on the page that loads and then click User tags
@@ -45,10 +47,13 @@ Priority account protection helps IT and security teams ensure a high quality of
 To learn what priority account tags are see [Manage and monitor priority accounts - Microsoft 365 admin | Microsoft Docs](../../../admin/setup/priority-accounts.md).
 
 ## Next Steps
+
 [Review the differentiated protection for users tagged as priority accounts](../../office-365-security/priority-accounts-turn-on-priority-account-protection.md).
 
 ## PowerShell configuration
-If you want to achieve these steps via [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), you can do this using the following cmdlets:
-1. View a list of priority accounts: **Get-User -IsVIP | select Identity**
-1. Add user to list of priority accounts: **Set-User -VIP:$true -Identity \<Identity\>**
-1. Remove user from list of priority accounts: **Set-User -VIP:$false -Identity \<Identity\>**
+
+If you want to achieve these steps via [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), you can do this using the following commands:
+
+- View a list of priority accounts: `Get-User -IsVIP | select Identity`
+- Add user to list of priority accounts: `Set-User -VIP $true -Identity <Identity>`
+- Remove user from list of priority accounts: `Set-User -VIP $false -Identity <Identity>`
