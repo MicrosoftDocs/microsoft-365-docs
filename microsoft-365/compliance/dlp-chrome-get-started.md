@@ -132,7 +132,7 @@ Use this setup method for organization-wide deployments.
 
 #### Microsoft Intune Force Install Steps
 
-Settings Catalog can be used now to manage the Chrome extensions.
+Using the settings catalog, follow these steps to manage Chrome extensions:
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
