@@ -128,11 +128,11 @@ If you need to, you can turn off this feature that supports a default sensitivit
 Set-SpoTenant -DisableDocumentLibraryDefaultLabeling $true
 ```
 
-After you run this command, you won't see the option to configure  **Default sensitivity labels** for a document library, so you won't be able to select a default label for new or existing libraries. 
+After you run this command, you won't see the option to configure  **Default sensitivity labels** for a document library. You won't be able to select a default sensitivity label for new or existing libraries.
 
 For document libraries that were previously configured for a default sensitivity label:
 
-- The default sensitivity label selection for the document library remains but is deactivated so new files won't have the selected sensitivity label applied.
+- The label selection for the document library remains but is deactivated so new files won't have the selected sensitivity label applied.
 - Sensitivity labels that were applied as a default label aren't removed.
 
 As with all tenant-level configuration changes for SharePoint, it takes about 15 minutes for the change to take effect.
