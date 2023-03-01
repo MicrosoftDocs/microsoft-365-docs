@@ -65,13 +65,13 @@ This insight helps you effectively engage fellow tenant admins&mdash;either in y
 
 Microsoft 365 Lighthouse now provides insights around which deployment tasks can't be completed for which users due to insufficient licensing. These insights help you adjust the licensing or the deployment plan accordingly to complete your deployment.
 
-:::image type="content" source="../media/m365-lighthouse-whats-new/required-licenses-tab.png" alt-text="Required licenses tab in Microsoft 365 Lighthouse." lightbox="../media/m365-lighthouse-whats-new/required-licenses-tab.png"::: 
+:::image type="content" source="../media/m365-lighthouse-whats-new/required-licenses-tab.png" alt-text="Screenshot of the Required licenses tab in the tenant details pane." lightbox="../media/m365-lighthouse-whats-new/required-licenses-tab.png"::: 
 
 ### Deployment insights Home page card 
 
 The Microsoft 365 Lighthouse Home page now includes a Deployment insights card that provides actionable insights around the deployment state of the tenants you manage. These insights can help identify where to focus deployment activities to optimize tenant health and security.
 
-:::image type="content" source="../media/m365-lighthouse-whats-new/deployment-insights-card.png" alt-text="Deployment insights card on the Home page in Microsoft 365 Lighthouse.":::
+:::image type="content" source="../media/m365-lighthouse-whats-new/deployment-insights-card.png" alt-text="Screenshot of the Deployment insights card on the Home page.":::
 
 ### Deployment progress by user  
 
