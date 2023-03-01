@@ -296,6 +296,9 @@ For more information about configuring Yammer in Native Mode, see:
 
 7. The **Your policy was created** page is displayed with guidelines on when policy will be activated and which communications will be captured.
 
+> [!TIP]
+> After configuring your policy, [learn about best practices for managing the volume of alerts](communication-compliance-alerts-best-practices.md). 
+
 ## Step 6 (optional): Update compliance boundaries for communication compliance policies
 
 [Compliance boundaries](/microsoft-365/compliance/set-up-compliance-boundaries) create logical boundaries within an organization that control the user content locations (such as mailboxes, OneDrive accounts, and SharePoint sites) that eDiscovery managers can search.
