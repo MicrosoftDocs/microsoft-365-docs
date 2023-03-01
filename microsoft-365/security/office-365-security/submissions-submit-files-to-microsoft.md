@@ -1,6 +1,6 @@
 ---
 title: Submit malware and non-malware to Microsoft for analysis
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
@@ -8,10 +8,10 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
 ms.assetid: 12eba50e-661d-44b8-ae94-a34bc47fb84d
-ms.collection: 
+ms.collection:
   - m365-security
   - tier1
 description: Admins and end-users can learn about submitting undetected malware or mis-identified malware attachments to Microsoft for analysis.
@@ -48,7 +48,7 @@ But what can you do if you receive a message with a suspicious attachment or hav
 
 - Messages with links to malicious sites are considered spam. For more information about reporting spam and non-spam messages, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
-- Files that block you from your accessing your system and demand money to open them are considered ransomware. 
+- Files that block you from your accessing your system and demand money to open them are considered ransomware.
 
 ## Submit malware files to Microsoft
 
