@@ -17,7 +17,7 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 2/27/2023
+ms.date: 3/01/2023
 ---
 
 # Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management (Preview)
@@ -36,7 +36,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard.md) (Preview) 
 1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then under **Featured collections**, select **Frontline workers**.
 2. Select **Connector Management Console**.
 
-    Here, you'll see a list of all the connections and connection instances you've set up through the wizard or PowerShell, along with information about each one.
+    Here, you'll see a list of all the connections and connection instances if you've already set them up through the wizard or PowerShell, along with information about each one.
 
     :::image type="content" source="media/shifts-connector-blue-yonder-manage.png" alt-text="Screenshot of the Connector Management page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-blue-yonder-manage.png":::
 
@@ -47,8 +47,8 @@ You can use the [Shifts connector wizard](shifts-connector-wizard.md) (Preview) 
 
 ### Manage your connection instances
 
-- To create a new connection instance, select **Create instance**.
-- To make changes to an existing connection instance, choose **Edit** next to the instance name. You'll be taken to the wizard, where you can update the settings and mappings.
+- To create a new connection instance, select **Create instance**. You'll be taken to the wizard, where you can [choose your settings and create mappings](shifts-connector-wizard#create-a-connection-instance).
+- To make changes to an existing connection instance, choose **Edit** next to the instance name. You'll be taken to the wizard, where you can [update the settings and mappings](shifts-connector-wizard#create-a-connection-instance).
 - To view more details about an existing connection instance, select its name. On the details page, you'll see health information, including ongoing errors (if any), and mappings. You can also choose **Edit** to update settings in the wizard or **Back** to return to the Connector Management Console.
 
   :::image type="content" source="media/shifts-connector-blue-yonder-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-blue-yonder-manage-details.png":::
