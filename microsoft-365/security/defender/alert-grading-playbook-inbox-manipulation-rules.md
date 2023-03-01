@@ -22,6 +22,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
+ms.date: 01/21/2022
 ---
 
 # Alert grading for suspicious inbox manipulation rules
@@ -137,7 +138,7 @@ CloudAppEvents
 | where Timestamp between (start_date .. end_date)
 | where AccountObjectId == user_id
 | where Application == @"Microsoft Exchange Online"
-| where ActionType in ("Set-Mailbox", "New-InboxRule", "Set-InboxRule") //set new inbox rule related operations
+| where ActionType in ("Set-Mailbox", "New-InboxRule", "Set-InboxRule", "UpdateInboxRules") //set new inbox rule related operations
 | project Timestamp, ActionType, CountryCode, City, ISP, IPAddress, RuleConfig = RawEventData.Parameters, RawEventData
 ```
 

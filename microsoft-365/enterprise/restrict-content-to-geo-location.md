@@ -1,6 +1,7 @@
 ---
 title: "Restrict SharePoint site content to a geo location"
 ms.reviewer: adwood
+ms.date: 08/10/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen

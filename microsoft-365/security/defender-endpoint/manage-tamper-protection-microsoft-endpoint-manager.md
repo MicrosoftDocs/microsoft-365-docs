@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 01/12/2023
+ms.date: 02/28/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -35,7 +35,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can turn tamper protection on (or off) for your organization in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com). Use Intune when you want to fine-tune tamper protection settings. For example, if you want to enable tamper protection on some devices, but not all, use Intune.
+If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can turn tamper protection on (or off) for your organization in the [Intune admin center](https://endpoint.microsoft.com). Use Intune when you want to fine-tune tamper protection settings. For example, if you want to enable tamper protection on some devices, but not all, use Intune.
 
 Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md).
 
@@ -62,7 +62,7 @@ Tamper protection is part of anti-tampering capabilities that include [standard 
 
 :::image type="content" source="images/turnontamperprotectinmem.png" alt-text="Turn tamper protection turned on with Intune" lightbox="images/turnontamperprotectinmem.png":::
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** \> **Antivirus**, and then choose **+ Create Policy**.
+1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** \> **Antivirus**, and then choose **+ Create Policy**.
 
    - In the **Platform** list, select **Windows 10, Windows 11, and Windows Server**.
    - In the **Profile** list, select **Windows Security experience**.
@@ -72,6 +72,20 @@ Tamper protection is part of anti-tampering capabilities that include [standard 
     - **TamperProtection (Device): Enable**
 
 3. Assign the profile to one or more groups.
+
+## How to tell if a Windows device is managed by Intune
+
+You can use a registry key to confirm whether a Windows device is managed by Intune, or co-managed by Intune and Configuration Manager. 
+
+1. On a Windows device open Registry Editor. (Read-only mode is fine; you won't be editing the registry key.)
+
+2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` (or `HKLM\SOFTWARE\Microsoft\Windows Defender`), and look for a `REG_DWORD` entry called **ManagedDefenderProductType**. 
+
+   - If **ManagedDefenderProductType** has a value of `6`, then the device is managed by Intune.
+   - If **ManagedDefenderProductType** has a value of `7`, then the device is co-managed by Intune and Configuration Manager.
+
+> [!CAUTION]
+> Do not change the value of **ManagedDefenderProductType**. Use the preceding procedure for information only. Changing the key will have no effect on how the device is managed.
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:

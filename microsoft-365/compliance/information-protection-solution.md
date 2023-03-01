@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -37,8 +37,6 @@ Microsoft Purview Information Protection (formerly Microsoft Information Protect
 Use Microsoft Purview Information Protection to help you discover, classify, protect, and govern sensitive information wherever it lives or travels.
 
 ![Microsoft Purview Information Protection solution overview](../media/mip-solution-overview-extended.png)
-
-Watch the following Ignite session to see how these capabilities support and build on each other: [Know your data, protect your data, and prevent data loss with Microsoft Information Protection](https://myignite.microsoft.com/archives/IG20-OD273).
 
 For data governance, see [Deploy a data governance solution with Microsoft Purview](data-governance-solution.md).
 
@@ -91,8 +89,8 @@ Deploy Microsoft Purview Data Loss Prevention (DLP) policies to govern and preve
 |:---|:----------|:---------------|
 |1|Learn about DLP. <br /><br /> Organizations have sensitive information under their control, such as financial data, proprietary data, credit card numbers, health records, or social security numbers. To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it. This practice is called data loss prevention (DLP).| [Learn about data loss prevention](dlp-learn-about-dlp.md)|
 |2|Plan your DLP implementation. <br /><br /> Every organization will plan for and implement data loss prevention (DLP) differently, because every organization's business needs, goals, resources, and situation are unique to them. However, there are elements that are common to all successful DLP implementations. | [Plan for data loss prevention](dlp-overview-plan-for-dlp.md)|
-|3|Design and create a DLP policy. <br /><br /> Creating a data loss prevention (DLP) policy is quick and easy, but getting a policy to yield the intended results can be time consuming if you have to do a lot of tuning. Taking the time to design a policy before you implement it will get you to the desired results faster, and with fewer unintended issues, than tuning by trial and error alone.| [Design a DLP policy](dlp-policy-design.md) <p> [DLP policy reference](dlp-policy-reference.md) <p>[Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)|
-|4|Tune your DLP policies. <br /><br /> After you deploy a DLP policy, you'll see how well it meets the intended purpose. Use that information to adjust your policy settings for better performance. | [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)|
+|3|Design and create a DLP policy. <br /><br /> Creating a data loss prevention (DLP) policy is quick and easy, but getting a policy to yield the intended results can be time consuming if you have to do a lot of tuning. Taking the time to design a policy before you implement it will get you to the desired results faster, and with fewer unintended issues, than tuning by trial and error alone.| [Design a DLP policy](dlp-policy-design.md) <p> [DLP policy reference](dlp-policy-reference.md) <p>[Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)|
+|4|Tune your DLP policies. <br /><br /> After you deploy a DLP policy, you'll see how well it meets the intended purpose. Use that information to adjust your policy settings for better performance. | [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)|
 
 
 ## Training resources

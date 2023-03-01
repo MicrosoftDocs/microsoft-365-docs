@@ -218,7 +218,7 @@ To upload your rule, you need to do the following.
    Get-DlpSensitiveInformationType
    ```
 
-To start using the new rule to detect sensitive information, you need to add the rule to a DLP policy. To learn how to add the rule to a policy, see [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md).
+To start using the new rule to detect sensitive information, you need to add the rule to a DLP policy. To learn how to add the rule to a policy, see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md).
 
 ## Term glossary
 

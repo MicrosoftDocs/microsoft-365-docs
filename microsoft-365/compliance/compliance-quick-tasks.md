@@ -4,6 +4,7 @@ description: "Learn about tasks that will help you quickly get started with comp
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -149,7 +150,7 @@ For step-by-step guidance to define custom sensitive information types, see [Cre
 
 [Microsoft Purview Data Loss Prevention (DLP) policies](/microsoft-365/compliance/dlp-learn-about-dlp) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive items across Microsoft services, prevent the accidental sharing of sensitive items, and help users learn how to stay compliant without interrupting their workflow.
 
-For step-by-step guidance to configure DLP policies, [Create, test, and tune a DLP policy](/microsoft-365/compliance/create-test-tune-dlp-policy). For data loss management licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+For step-by-step guidance to configure DLP policies, [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md). For data loss management licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ### Detect and act on insider risks
 

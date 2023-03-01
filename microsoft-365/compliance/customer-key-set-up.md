@@ -3,6 +3,7 @@ title: "Set up Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
+ms.date: 09/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp

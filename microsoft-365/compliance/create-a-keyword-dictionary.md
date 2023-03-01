@@ -19,7 +19,7 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: "Learn the basic steps to creating a keyword dictionary in the Microsoft Purview comliance portal."
+description: "Learn the basic steps to creating a keyword dictionary in the Microsoft Purview compliance portal."
 ---
 
 # Create a keyword dictionary
