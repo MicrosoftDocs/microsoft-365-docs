@@ -151,11 +151,11 @@ Settings Catalog can be used now to manage the Chrome extensions.
 8. Enter a name and optional description on the **Basics** tab and select **Next**.
 
 9. Select **Add settings** on the **Configuration settings** tab.
-10. Select "Administrative Templates \ Google \ Google Chrome \ Extensions"
-11. Select "Configure the list of force-installed apps and extensions"
-12. Change the toggle to enabled
-13. Enter the following value for the Extension/App IDs and update URL:
-     echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx
+10. Select **Administrative Templates** > **Google** > **Google Chrome** > **Extensions**.
+11. Select **Configure the list of force-installed apps and extensions**.
+12. Change the toggle to **Enabled**.
+13. Enter the following value for the extensions and app IDs and update URL:
+     `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`.
 
     
 11. Select **Next**.
