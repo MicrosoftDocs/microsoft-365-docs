@@ -44,9 +44,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Insider risk management
 
 - **Forensic Evidence GA**: With the GA release of Forensic Evidence, you can now:
-   - [Specify websites or desktop apps to include or exclude when you create a policy](insider-risk-management-forensic-evidence-configure#step-4-create-a-policy)
+   - [Specify websites or desktop apps to include or exclude when you create a policy](insider-risk-management-forensic-evidence-configure.md#step-4-create-a-policy)
    - [View and explore a list of captured clips and filter the list to find just the information you need](insider-risk-management-forensic-evidence-manage.md#viewing-captured-clips)
-   - [Purchase/analyze capacity for captured clips and/or sign up for 20 GB of trial capacity](insider-risk-management-forensic-evidence-manage#capacity-and-billing)
+   - [Purchase/analyze capacity for captured clips and/or sign up for 20 GB of trial capacity](insider-risk-management-forensic-evidence-manage.md#capacity-and-billing)
 
 ## February 2023
 
