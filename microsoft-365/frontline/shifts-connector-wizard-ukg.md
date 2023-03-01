@@ -26,6 +26,14 @@ ms.date: 2/27/2023
 
 [!INCLUDE [shifts-connector-wizard-intro](includes/shifts-connector-wizard-intro.md)]
 
+### Terms used in this article
+
+|Term |Definition |
+|-----|-----------|
+|Connection |This is where you configure your UKG Dimensions details by providing your service account name, password, and service URLs. This enables access to all your WFM (workforce management) instances created in your UKG Dimensions WFM system. |
+|Connection instance |This is where you configure: <br> - The synchronization settings that determine how and which schedule information syncs between UKG Dimensions and Shifts <br> - Team mappings to define the relationship between your WFM instances and teams in Microsoft Teams |
+|WFM instance | This term refers to a team within your UKG Dimensions WFM system, which is different than a team in Microsoft Teams. |
+
 ## Integrate Shifts with UKG Dimensions
 
 The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection and a connection instance to UKG Dimensions through the connector.
@@ -41,19 +49,19 @@ You must be a Microsoft 365 global admin to run the wizard.
 ### Prerequisites
 [!INCLUDE [shifts-connector-ukg-prerequisites](includes/shifts-connector-ukg-prerequisites.md)]
 
-- The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule from the team](#remove-schedules-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
+- The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
 
 ### Configure single sign-on
 
 [!INCLUDE [shifts-connector-ukg-sso](includes/shifts-connector-ukg-sso.md)]
 
 <a name="remove_schedules"> </a>
-## Remove schedules from teams you want to map
+## Remove schedule entities from teams you want to map
 
 > [!NOTE]
-> Complete this step if you're mapping UKG Dimensions instances to existing teams that have schedules. If you're mapping to teams that don't have any schedules or if you've already created new teams to map to, you can skip this step.
+> Complete this step if you're mapping UKG Dimensions instances to existing teams that have schedule entities. If you're mapping to teams that don't have any schedules or if you've already created new teams to map to, you can skip this step.
 
-Use PowerShell to remove schedules from teams.
+Use PowerShell to remove schedule entities from teams.
 
 1. First, you'll need to install the PowerShell modules and get set up. Follow the steps to [set up your environment](shifts-connector-ukg-powershell-manage.md#set-up-your-environment)
 
@@ -106,21 +114,21 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
 
 1. Enter a name for your connection instance. It can't be longer than 100 characters or have any special characters.
 
-1. Enter your Microsoft 365 system account. This is the [account that you created as a prerequisite](#before-you-begin) that is a team owner of all the teams you want to map.
-
-<a name="email"> </a>
-
-1. Under **Email notification recipients**, choose who receives email notifications about this connection instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connection instance is set up.
-
   > [!TIP]
   > You'll be given the following options for the next group of settings: <br>
   > **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts. <br>
   > **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts. <br>
   > **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
 
-4. Choose your basic, **Time card**, and **Request** settings from the options listed above.
+2. Choose your basic, **Time card**, and **Request** settings from the options listed above.
 
-5. Then, choose your sync frequency.
+3. Then, choose your sync frequency.
+
+4. Enter your Microsoft 365 system account. This is the [account that you created as a prerequisite](#before-you-begin) that is a team owner of all the teams you want to map.
+
+<a name="email"> </a>
+
+5. Under **Email notification recipients**, choose who receives email notifications about this connection instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connection instance is set up.
 
     > [!IMPORTANT]
     > Before you disable a feature by selecting the option **Shifts users will not see provider data**, be aware that:
