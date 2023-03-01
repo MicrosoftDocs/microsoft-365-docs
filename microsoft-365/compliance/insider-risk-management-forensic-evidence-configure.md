@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/07/2023
+ms.date: 03/01/2023
 audience: itpro
 ms.collection: m365-security-compliance
 ---
@@ -22,7 +22,7 @@ ms.collection: m365-security-compliance
 
 ## Configure forensic evidence
 
-Configuring forensic evidence in your organization is similar to configuring other policies from insider risk management policy templates. In general, you'll follow the same basic configuration steps to set up forensic evidence, but there are a few areas that need feature-specific configuration actions before your get started with the basic configuration steps.
+Configuring forensic evidence in your organization is similar to configuring other policies from insider risk management policy templates. In general, you'll follow the same basic configuration steps to set up forensic evidence, but there are a few areas that need feature-specific configuration actions before you get started with the basic configuration steps.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -67,7 +67,7 @@ To configure forensic evidence settings, complete the following steps:
     >[!IMPORTANT]
     >The Microsoft Purview Client used to capture activity on users' devices is licensed under the Use of Software with the Online Services on the [Microsoft Product Terms](https://www.microsoft.com/licensing/product-licensing/products). Note that customers are solely responsible for using the insider risk management solution, including the Microsoft Purview Client, in compliance with all applicable laws.
  
-1. In the **Capturing window** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*.
+1. In the **Capturing window** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*. 
 1. In the **Upload bandwidth limit** section, define the amount of capture data to upload into your data storage account per user, per day. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
 1. In the **Offline capturing** section, enable offline capturing if needed. When enabled, users' offline activity is captured and uploaded to your data storage account the next time they're online.
 1. In the **Offline capturing cache limit** section, define the maximum cache size to store on users' devices when offline capturing is enabled. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
@@ -75,27 +75,72 @@ To configure forensic evidence settings, complete the following steps:
 
 ### Step 4: Create a policy
 
-Forensic evidence policies define the scope of security-related user activity to capture on configured devices. You can have one policy that captures all activities approved users perform on their devices and additional policies that capture only specific activities (such as printing or exfiltrating files). Once created, you'll include these policies in forensic evidence requests to control what activity to capture for users whose requests are approved.
+Forensic evidence policies define the scope of security-related user activity to capture for configured devices. There are two options for capturing forensic evidence:
+
+- **Capture only specific activities (such as printing or exfiltrating files).** With this option, you can choose the device activities that you want to capture and only the selected activities will be captured by the policy. You can also choose to capture activity for specific desktop apps and/or websites. This way you can focus on just the activities, apps, and websites that present risk. 
+- **Capture all activities that approved users perform on their devices.** This option is typically used for a specific period of time, for example, when a particular user is potentially involved in risky activity that may lead to a security incident. To preserve capacity and user privacy, you can choose to exclude specific desktop apps and/or websites from the capture. 
+
+After you create a policy, you'll include it in forensic evidence requests to control what activity to capture for users whose requests are approved.
+
+> [!NOTE]
+> Continuous forensic policies (capturing all activities) take precedence over selective forensic evidence policies (capturing only specific activities). 
+
+#### Capture only specific activities
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Forensic evidence policies**.
 2. Select **Create forensic evidence policy**.
-3. On the **Scope** page, you'll choose the scope of security-related user activity to capture. Select one of the following options:
-
-    - **Specific activities**: This option only captures activities detected by policies that users are included in. These activities are defined by the indicators selected in forensic evidence policies. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **Alerts** or **Cases** dashboard.
-    - **All activities**: This option captures any activity performed by users. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **User activity reports (preview)** dashboard.
+3. On the **Scope** page, select **Specific activities**. This option only captures activities detected by policies that users are included in. These activities are defined by the indicators selected in forensic evidence policies. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **Alerts** or **Cases** dashboard.    
 4. Select **Next**.
 5. On the **Name and description** page, complete the following fields:
     - **Name (required)**: Enter a friendly name for the forensic evidence policy. This name can't be changed after the policy is created.
     - **Description (optional)**: Enter a description for the forensic evidence policy.
 6. Select **Next**.
-7. If you've selected the **All Activities** option in Step 3, the **Device activities** page directs you the final step in the policy wizard. There aren't any device activities to configure when the **All activities** option is selected.
+7. On the **Choose device activities to capture** page:
+   1. Select any device activities that you want to capture. Only the selected activities will be captured by the policy. 
+      > [!NOTE] 
+      > If the indicators aren't selectable, you'll be prompted to turn them on. 
+   2. You can also choose to capture activity for particular desktop apps and/or websites in your policy by selecting the  **Opening a specific app or website** check box under **App and web browsing activities to capture**. 
 
-    If you've selected the **Specific activities** option in Step 3, you'll select device activities to capture on the **Device activities** page. Only the activities selected will be captured by the policy. If the indicators aren't selectable, you'll need to turn on these indicators for your organization before you can select these indicators in the forensic evidence policy. 
+   > [!IMPORTANT]
+   > If you want to capture browsing activities (to include or exclude specific URLs in your forensic evidence policies), make sure to [install the necessary browser extensions](insider-risk-management-browser-support.md). You also need to turn on at least one browsing indicator. If you haven't already turned on one or more browsing indicators, you'll be prompted to do so if you choose to include or exclude desktop apps or websites. The triggering event for capturing browsing activities is a URL update in the URL bar that contains the specified URL.
 
-    After you've selected indicators, select **Next**.
-8. On the **Finish** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
+   3. Select **Next**.
+8. (Optional) If you chose to capture activity for particular desktop apps and websites, in the **Add apps and websites you want to capture activity for** page:
+    1. To add a desktop app, select **Add desktop apps**, enter the name of an executable file (for example, teams.exe), and then select **Add**. Repeat this process for each desktop app that you want to add (up to 25 apps). To find the name of an executable file for the app, open the Task Manager, and then view the properties for the app. Here's a list of exe names for some of the common applications: Microsoft Edge (msedge.exe), Microsoft Excel (Excel.exe), the Snipping tool (SnippingTool.exe), Microsoft Teams (Teams.exe), Microsoft Word (WinWord.exe), and Microsoft Remote Desktop Connection (mstsc.exe).
 
-After you've completed the policy configuration steps, continue to Step 5.
+    > [!NOTE]
+    > Sometimes, the exe names for an app might differ based on the device and the permissions with which the app was opened. For example, on a Windows 11 enterprise device, when Windows PowerShell is opened without administrator permissions, the exe name is WindowsTerminal.exe but when opened with administrator permissions, the exe name changes to powershell.exe. Make sure to include/exclude both exe names in such scenarios.
+
+    2. To add a web app or website, select **Add web apps and websites**, enter a URL (for example, https://teams.microsoft.com), and then select **Add**. Repeat this process for each web app or website that you want to add. You can add up to 25 URLs with a character length of 100 for each URL. 
+
+    > [!TIP]
+    > If an app has a desktop and web version, be sure to add both the desktop executable and the web URL to make sure you capture activity for both. 
+
+    3. Select **Next**.
+9. On the **Review settings and finish** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Edit any of the policy values or select **Submit** to create and activate the policy.
+10. After you've completed the policy configuration steps, continue to Step 5.
+
+#### Capture all activities
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Forensic evidence policies**.
+2. Select **Create forensic evidence policy**.
+3. On the **Scope** page, select **All activities**. This option captures any activity performed by users. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **User activity reports (preview)** dashboard.    
+4. Select **Next**.
+5. On the **Name and description** page, complete the following fields:
+    - **Name (required)**: Enter a friendly name for the forensic evidence policy. This name can't be changed after the policy is created.
+    - **Description (optional)**: Enter a description for the forensic evidence policy.
+6. Select **Next**.
+7. On the **Choose device activities to capture** page, if you want to exclude certain desktop apps and/or web apps or websites from the capture, under **App and web browsing activities to capture**, select the **Exclude specific apps or websites** check box. 
+9. Select **Next**.
+10. If you chose to exclude particular desktop apps and websites from the capture, in the **Exclude applications/URLs** page:
+    - To exclude a desktop app from the capture, select **Exclude desktop apps**, enter the name of an executable file (for example, teams.exe), and then select **Add**. Repeat this process for each desktop app that you want to exclude (up to 25 apps). To find the name of an executable file for an app, open the Task Manager, and then view the properties for the app. 
+    - To exclude a web app or website, select **Exclude web apps and websites**, enter a URL (for example, https://teams.microsoft.com), and then select **Add**. Repeat this process for each web app or website that you want to exclude. You can exclude up to 25 URLs with a character length of 100 for each URL. 
+
+    > [!TIP]
+    > If an app has a desktop and web version, be sure to add both the desktop executable and the web URL to make sure you exclude both. 
+
+11. On the **Review settings and finish** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Edit any of the policy values or select **Submit** to create and activate the policy.
+12. After you've completed the policy configuration steps, continue to Step 5.
 
 ### Step 5: Define and approve users for capturing
 

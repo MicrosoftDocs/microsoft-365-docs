@@ -427,7 +427,6 @@ Valid URL entries and their results are described in the following sections.
   - contoso.com/b/a/c
   - test.com/contoso.com
 
-
 - **Allow not matched** and **Block not matched**:
 
   - 123contoso.com

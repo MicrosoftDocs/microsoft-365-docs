@@ -53,7 +53,7 @@ Before you get started, you need to configure Exchange Online Protection and Def
   - Turn off Zero-hour auto purge (ZAP) for malware (**Protection settings** section \> **Enable zero-hour auto purge for malware** is not selected or `-ZapEnabled $false` in PowerShell).
 
   - Turn off common attachments filtering (**Protection settings** section \> **Enable the common attachments filter** is not selected or `-EnableFileFilter $false` in PowerShell).
-  
+
   For instructions, see [Create an anti-malware policy](anti-malware-policies-configure.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies).
 
 - Verify that the reporting mailbox is not included in the **Standard** or **Strict** preset security policies. For instructions, see [Preset security policies](preset-security-policies.md).
@@ -173,7 +173,7 @@ When the toggle is **On** :::image type="icon" source="../../media/scc-toggle-on
 - **Add a mailbox to send reported messages to** in the **Reported message destinations** section: Enter the email address of an existing Exchange Online mailbox to use as the reporting mailbox that holds user-reported messages from third-party reporting tools. These messages are not submitted to Microsoft.
 
   These user-reported messages appear on the **User reported** tab of the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>. The **Result** value for these entries is **Not Submitted to Microsoft**.
-  
+
   Messages sent to the reporting mailbox must include the original user reported message as an uncompressed .EML or .MSG attachment. Don't forward the original user-reported message to the reporting mailbox.
 
   > [!CAUTION]
@@ -326,7 +326,7 @@ The remaining settings are the default values in "Other settings" as described i
 ```powershell
 $usersub = "reportedmessages@contoso.com"
 
-New-ReportSubmissionPolicy -ReportJunkToCustomizedAddress $true -ReportJunkAddresses $usersub -ReportNotJunkToCustomizedAddress $true -ReportNotJunkAddresses $usersub -ReportPhishToCustomizedAddress $true -ReportPhishAddresses $usersub 
+New-ReportSubmissionPolicy -ReportJunkToCustomizedAddress $true -ReportJunkAddresses $usersub -ReportNotJunkToCustomizedAddress $true -ReportNotJunkAddresses $usersub -ReportPhishToCustomizedAddress $true -ReportPhishAddresses $usersub
 
 New-ReportSubmissionRule -Name DefaultReportSubmissionRule -ReportSubmissionPolicy DefaultReportSubmissionPolicy -SentTo $usersub
 ```
