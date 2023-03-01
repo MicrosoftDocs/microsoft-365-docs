@@ -346,7 +346,7 @@ Be aware that this configuration affects both client apps and services, manual l
 
 - Default labels:
     - If the scope doesn't include email, a configured default label for email won't be applied.
-    - If the scope doesn't include files, a configured default label for email won't be applied and can't be selected as a default sensitivity label for a SharePoint document library.
+    - If the scope doesn't include files, a configured default label for files won't be applied and can't be selected as a default sensitivity label for a SharePoint document library.
 
 - Auto-labeling policies:
     - If the scope doesn't include email, you can't select the label for an auto-labeling policy that includes the Exchange location.
