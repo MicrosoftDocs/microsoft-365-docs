@@ -31,12 +31,6 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 ## February 2023
 
-### New GDAP management capabilities 
-
-Managed Service Provider (MSP) technicians responsible for managing granular delegated admin privileges (GDAP) can now get at-a-glance details of all their customers' delegated relationships in Microsoft 365 Lighthouse. This new feature helps ensure GDAP is set up correctly for all of your customers. 
-
-To view the status of your customers' delegated relationships, including delegated access type, whether a GDAP template has been assigned, number of active and pending relationships, nearest expiration date, and security groups with access to manage the customer tenant, go to **Permissions** > **Delegated access**. 
-
 ### App insights from Endpoint analytics  
 
 We've added insights from Endpoint analytics to Microsoft 365 Lighthouse to help you proactively take measures to improve the health of user devices and apps within managed tenants. The insights from Endpoint analytics inform a deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, select **Apps** > **App performance** in the left navigation pane in Microsoft 365 Lighthouse to see the Endpoint analytics insights.  
