@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 # Sensitive information type REGEX validators and additional check
 
 > [!IMPORTANT]
-> Microsoft Customer Service & Support can't assist with creating custom classifications or regular expression patterns. Support engineers can provide limited support for the feature, such as, providing sample regular expression patterns for testing purposes, or assisting with troubleshooting an existing regular expression pattern that's not triggering as expected. However, they can't provide assurances that any custom content-matching development will fulfill your requirements or obligations.
+> Microsoft Customer Service & Support can't assist with creating custom classifications or regular expression patterns. Support engineers can provide limited support for the feature, such as providing sample regular expression patterns for testing the feature, or assisting with troubleshooting an existing regular expression pattern that's not triggering as expected. However, support engineers can't assure you that any custom content-matching development fulfills your requirements or obligations.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -30,7 +30,7 @@ ms.custom: seo-marvel-apr2020
 
 ### Checksum validator
 
-If you need to run a checksum on a digit in a regular expression, you can use the *checksum validator*. For example, say you need to create a SIT for an eight digit license number where the last digit is a checksum digit validated using a mod 9 calculation. You've set up the checksum algorithm like this:
+To run a checksum on a digit in a regular expression, you can use the *checksum validator*. For example, if you need to create a SIT for an eight-digit license number where the last digit is a checksum digit validated using a mod 9 calculation, set up the checksum algorithm like this:
 
 ```console
 Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8
@@ -47,18 +47,18 @@ If Mod value != digit 8
    \d{8}
    ```
 
-2. Next, add the checksum validator.
+2. Add the checksum validator.
 
 3. Add the weight values separated by commas, the position of the check digit, and the mod value. For more information on the Modulo operation, see [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
 
    > [!NOTE]
-   > If the check digit is not part of the checksum calculation, use 0 as the weight for the check digit. For example, in the above case, weight 8 will be equal to 0 if the check digit won't be used for calculating the check digit.
+   > If the check digit isn't part of the checksum calculation, use 0 as the weight for the check digit. For example, in the previous case, weight 8 will be equal to 0 if the check digit won't be used for calculating the check digit.
 
    :::image type="content" alt-text="screenshot of configured checksum validator." source="../media/checksum-validator.png" lightbox="../media/checksum-validator.png":::
 
 ### Date validator
 
-If a date value that is embedded in regular expression is part of a new pattern you're creating, you can use the *date validator* to test whether it meets your criteria. For example, say you want to create a SIT for a nine digit employee identification number. The first six digits are the date of hire in DDMMYY format and the last three are randomly generated numbers. Take the following steps to validate that the first six digits are in the correct format:
+If a date value that's embedded in a regular expression is part of a new pattern you're creating, you can use the *date validator* to test whether that date value meets your criteria. For example, you want to create a SIT for a nine-digit employee identification number. The first six digits are the date of hire in DDMMYY format and the last three are randomly generated numbers. Take the following steps to validate that the first six digits are in the correct format:
 
 1. Define the primary element with this regular expression:
 
