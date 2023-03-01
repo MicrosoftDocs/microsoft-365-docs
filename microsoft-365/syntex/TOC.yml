@@ -161,7 +161,7 @@
         - name: Run a trial
           href: trial-syntex.md
         - name: Site templates
-              href: site-templates.md 
+          href: site-templates.md 
         - name: Solutions
           items:
             - name: Manage contracts in Microsoft 365
