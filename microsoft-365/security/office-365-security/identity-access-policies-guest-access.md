@@ -7,13 +7,13 @@ ms.author: dansimp
 author: dansimp
 audience: Admin
 manager: Laurawi
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.reviewer: martincoetzer
-ms.custom: 
+ms.custom:
   - it-pro
   - goldenconfig
-ms.collection: 
+ms.collection:
   - M365-identity-device-management
   - m365-security
   - m365solution-identitydevice
@@ -88,4 +88,3 @@ Configure Conditional Access policies for:
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)
 - [Microsoft Defender for Cloud Apps](mcas-saas-access-policies.md)
- 

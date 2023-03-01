@@ -100,7 +100,7 @@ If the value of the `InformationBarrierMode` property is *Legacy*, enabling mult
 To enable multi-segment support for organizations in *SingleSegment* mode, run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
 
 ```powershell
-Enable-ExoInformationBarrierMultiSegment
+Enable-ExoInformationBarriersMultiSegment [-Organization] <tenantIdentity>
 ```
 
 > [!IMPORTANT]
