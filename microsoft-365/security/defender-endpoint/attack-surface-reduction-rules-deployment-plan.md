@@ -11,7 +11,7 @@ ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
-ms.author: v-jweston
+ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
@@ -21,7 +21,7 @@ ms.collection:
  - m365solution-asr-rules
  - highpri
  - tier1
-ms.date: 1/18/2022
+ms.date: 12/18/2022
 search.appverid: met150
 ---
 
