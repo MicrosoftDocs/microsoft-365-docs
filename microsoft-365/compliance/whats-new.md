@@ -41,6 +41,13 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## February 2023
 
+### Audit
+
+- Clarification for audit log activities for [messages with reactions](/microsoft-365/compliance/audit-log-activities#yammer-activities) in Yammer.
+- [Clarification](/microsoft-365/compliance/audit-log-retention-policies#before-you-create-an-audit-log-retention-policy) on customized retention policies and licensing requirements.
+- Updates to [export limits](/microsoft-365/compliance/audit-new-search#audit-search-results-overview) for all search job items in Audit (Premium).
+- Clarification for [OneDrive for Business support](/microsoft-365/compliance/audit-premium) in Audit (Premium).
+
 ### Communication compliance
 
 - **Mark a policy as a favorite**: [Mark a policy as a favorite and then filter and sort your policy lists](communication-compliance-policies.md#mark-a-policy-as-a-favorite).
@@ -60,6 +67,27 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **Support for administrative units in DLP (preview)** - [Policy Scoping](dlp-policy-reference.md#policy-scoping)
 - **Adaptive Protection (preview)** - [Learn about Adaptive Protection in Data Loss Prevention (preview)](dlp-adaptive-protection-learn.md)
 - **DLP migration assistant for Symantec GA** - [Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-learn.md)
+
+### eDiscovery
+
+- Updates and clarifications for [decryption support](/microsoft-365/compliance/ediscovery-decryption) in eDiscovery solutions.
+- Updates and clarification for [keyword queries and search conditions](/microsoft-365/compliance/ediscovery-keyword-queries-and-search-conditions) in eDiscovery.
+- Updates for new collection management features, including new review set as column links, including the review set name in collection overviews, saving collections as a draft to capture progress and return to complete later, and more:
+    - *Updated*: [Learn about collections in eDiscovery (Premium)](/microsoft-365/compliance/ediscovery-collections)
+    - *Updated*:[Create a collection estimate in eDiscovery (Premium)](/microsoft-365/compliance/ediscovery-create-draft-collection)
+    - *Updated*: [Commit a collection estimate to a review set in eDiscovery (Premium)](/microsoft-365/compliance/ediscovery-commit-draft-collection)
+- New description section for [expand selection](/microsoft-365/compliance/ediscovery-export-documents-from-review-set#export-options) option for filtered and selected documents in export options.
+- Updates for graph API endpoints in the [Search and purge chat messages in Teams](/microsoft-365/compliance/ediscovery-search-and-delete-teams-chat-messages) article.
+- Updates to clarify how to [verify the deletion of purged messages](/microsoft-365/compliance/ediscovery-search-and-delete-teams-chat-messages#step-6-verify-chat-messages-are-purged) in Microsoft Teams without having to view as a specific user.
+
+### Information barriers
+
+- New support for multi-segments, people discoverability options, Exchange ABP integration, and more:
+    - *New*: [Use multi-segment support in information barriers](/microsoft-365/compliance/information-barriers-multi-segment)
+    - *Updated*: [Use information barriers with OneDrive](/sharepoint/information-barriers-onedrive)
+    - *Updated*: [Use information barriers with SharePoint](/sharepoint/information-barriers)
+    - *Updated*: [Use information barriers in Microsoft Teams](/microsoftteams/information-barriers-in-teams)
+- Clarifications for [policy application processing](/microsoftteams/information-barriers-in-teams#ib-policy-application-in-teams) for IB in Microsoft Teams.
 
 ### Insider risk management
 

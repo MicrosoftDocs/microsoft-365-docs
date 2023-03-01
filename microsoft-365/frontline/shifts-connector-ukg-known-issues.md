@@ -1,9 +1,9 @@
 ---
 title: Team Shifts connector for UKG Dimensions known issues
-author: LanaChin
-ms.author: v-lanachin
-ms.reviewer:
-manager: samanro
+author: daisyfell
+ms.author: daisyfeller
+ms.reviewer: imarquesgil
+manager: pamgreen
 ms.topic: troubleshooting
 audience: admin
 ms.service: microsoft-365-frontline
@@ -21,8 +21,6 @@ ms.date: 10/28/2022
 ---
 
 # Known issues: Team Shifts connector for UKG Dimensions
-
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
 
 This article lists known issues for the [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions).
 
