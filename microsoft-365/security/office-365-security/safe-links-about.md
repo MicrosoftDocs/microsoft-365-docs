@@ -52,7 +52,7 @@ Watch this short video on how to protect against malicious links with Safe Links
 
 Safe Links protection is available in the following locations:
 
-- **Email messages**: Safe Links protections for links in email messages is controlled by Safe Links policies.
+- **Email messages**: Safe Links protections for links in email messages are controlled by Safe Links policies.
 
   For more information about Safe Links protection for email messages, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.
 
