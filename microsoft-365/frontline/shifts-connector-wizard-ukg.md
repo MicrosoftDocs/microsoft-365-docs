@@ -114,21 +114,21 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
 
 1. Enter a name for your connection instance. It can't be longer than 100 characters or have any special characters.
 
-1. Enter your Microsoft 365 system account. This is the [account that you created as a prerequisite](#before-you-begin) that is a team owner of all the teams you want to map.
-
-<a name="email"> </a>
-
-1. Under **Email notification recipients**, choose who receives email notifications about this connection instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connection instance is set up.
-
   > [!TIP]
   > You'll be given the following options for the next group of settings: <br>
   > **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts. <br>
   > **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts. <br>
   > **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
 
-4. Choose your basic, **Time card**, and **Request** settings from the options listed above.
+2. Choose your basic, **Time card**, and **Request** settings from the options listed above.
 
-5. Then, choose your sync frequency.
+3. Then, choose your sync frequency.
+
+4. Enter your Microsoft 365 system account. This is the [account that you created as a prerequisite](#before-you-begin) that is a team owner of all the teams you want to map.
+
+<a name="email"> </a>
+
+5. Under **Email notification recipients**, choose who receives email notifications about this connection instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connection instance is set up.
 
     > [!IMPORTANT]
     > Before you disable a feature by selecting the option **Shifts users will not see provider data**, be aware that:
