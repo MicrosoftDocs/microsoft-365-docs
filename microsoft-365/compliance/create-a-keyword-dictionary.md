@@ -91,7 +91,7 @@ Use the following steps to create and import keywords for a custom dictionary:
 4. You can use your keyword dictionary as either the primary element or a secondary element. To use a keyword dictionary as the primary element, in the **Primary Element** field, select **Add Primary Element** and then select **Keyword dictionary** in the dropdown list.
 
 5. On the **Add keyword dictionary** page, you can choose from existing dictionaries, upload a dictionary, or create a dictionary.
-    1. To use an existing dictionary,choose **Choose fromm existing dictionaries**.
+    1. To use an existing dictionary,choose **Choose from existing dictionaries**.
     1. To upload a keyword dictionary, choose **Upload a dictionary** and follow the prompts to upload either a TXT or CSV file.
     1. To create a dictionary:
         1. Enter a **Name** for your custom dictionary.
@@ -100,11 +100,11 @@ Use the following steps to create and import keywords for a custom dictionary:
 
 6. On the next page, choose **Create**.
 
-7. If you want to add additional patterns to your sensitive information type, you can do so on the next page. When finished, choose **Netxt**.
+7. If you want to add additional patterns to your sensitive information type, you can do so on the next page. When finished, choose **Next**.
 
 8. Confirm the confidence level for your sensitive information type and choose **Next**.
 
-9. Review and finalize your sensitive info type selections, then select **Crfeate** and then **Done**.
+9. Review and finalize your sensitive info type selections, then select **Create** and then **Done**.
 
 ## Create a keyword dictionary from a file using PowerShell
 

@@ -80,7 +80,7 @@ Use this procedure to create a new sensitive information type that you fully def
     > [!IMPORTANT]
     > Microsoft 365 uses the search crawler to identify and classify sensitive information in SharePoint Online and OneDrive for Business sites. To identify your new custom sensitive information type in existing content, the content must be re-crawled. Content is crawled based on a schedule, but you can manually re-crawl content for a site collection, list, or library. For more information, see [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
 
-13. The **Sensitive infor types** tab of the **Classifiers** page, lists all of the sensitive information typesd. Choose **Refresh** and then browse for or use the search tool to find the sensitive information type you created.
+13. The **Sensitive info types** tab of the **Classifiers** page, lists all of the sensitive information types. Choose **Refresh** and then browse for or use the search tool to find the sensitive information type you created.
 
 ### Copy and modify a sensitive information type
 
