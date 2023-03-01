@@ -170,7 +170,7 @@ When you label a document or email, the label is stored as metadata that include
 
 This implementation means that if you share documents with another organization that uses different label names, each organization can apply and see their own label applied to the document. 
 
-The same is true for email (and labeled calendar events) sent by Outlook. However, email clients other than Outlook can remove the label metadata from the email headers. For example, users replying or forwarding from another organization that doesn't use Outlook will likely result in the original email label no longer visible to the original organization because the label metadata has been deleted. If that label applied encryption, the encryption persists to protect the contents.
+The same is true for email (and labeled calendar events) sent by Outlook. However, email clients other than Outlook might not retain the label metadata in the email headers. For example, users replying or forwarding from another organization that doesn't use Outlook will likely result in the original email label no longer visible to the original organization because the label metadata hasn't been retained. If that label applied encryption, the encryption persists to protect the contents.
 
 The following elements from an applied label are visible to users outside your organization:
 
