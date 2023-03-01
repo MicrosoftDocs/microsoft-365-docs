@@ -48,17 +48,6 @@ To access the report, you must be a Global admin, Teams admin, Global reader, or
 
 Here's what you'll see on each tab of the report.
 
-### Delivery
-
-[placeholder for screenshot]
-
-|Callout |Description  |
-|--------|-------------|
-|**1**   |Each report has a date for when the report was generated. The reports usually reflect a 24 to 48-hour latency from time of activity. |
-|**2**   |The X axis is the selected date range for the report,, by month. The Y axis is the number of SMS notifications.<br>Hover over the dot on a given date to see the number of SMS notifications delivered on that date.|
-|**3**   |You can filter what you see on the chart by selecting an item. For example, select **Deliver successful**, **Deliver failed**, or **Send failed** to see only the info related to each one. Changing this selection doesn’t change the information in the table.|
-|**4**   |The table gives you detailed information about each SMS notification that was sent during the selected date range. <ul><li>**Sent time (UTC)** is the date and time when the notification was sent.</li> <li>**Sent from** indicates the source of the notification.</li> <li>**SMS notification type** shows whether the notification is an appointment reminder or confirmation.</li> <li>**Product type** indicates whether the virtual appointment was scheduled through Bookings or the Teams EHR connector.</li> <li>**Status** shows the delivery status.</li></ul> |
-
 ### Distribution
 
 [placeholder for screenshot]
