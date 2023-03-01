@@ -1,5 +1,5 @@
 ---
-title: Get started with insider risk management forensic evidence (preview)
+title: Get started with insider risk management forensic evidence 
 description: Get started with insider risk management forensic evidence in Microsoft Purview. Forensic evidence is an investigative tool for viewing captured security-related user activity to help determine whether the user's actions pose a risk and may lead to a security incident.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -15,7 +15,12 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Get started with insider risk management forensic evidence (preview)
+# Get started with insider risk management forensic evidence
+
+> [!IMPORTANT]
+> Forensic evidence is an opt-in add-on feature in Insider Risk Management that gives security teams visual insights into potential insider data security incidents, with user privacy built in. Forensic evidence includes customizable event triggers and built-in user privacy protection controls, enabling security teams to better investigate, understand and respond to potential insider data risks like unauthorized data exfiltration of sensitive data.
+>
+> Organizations set the right policies for themselves, including what risky events are highest priority for capturing forensic evidence and what data is most sensitive.   Forensic evidence is off by default, policy creation requires dual authorization and usernames can be masked with pseudonymization (which is on by default for Insider Risk Management).  Setting up policies and reviewing security alerts within Insider Risk Management leverages strong role-based access controls (RBAC), ensuring that the designated individuals in the organization are taking the right actions with additional auditing capabilities.
 
 >[!IMPORTANT]
 >Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
@@ -36,6 +41,9 @@ Additionally, you'll need to add the following domain to your firewall allowlist
 
 Captures and capture data are stored at this domain and is assigned only to your organization. No other Microsoft 365 organization has access to forensic evidence captures for your organization.
 
+> [!NOTE]
+> Forensic evidence data is stored in one region where your Exchange Online Protection (EOP) or exchange region is set.
+
 ### Step 2: Configure supported devices
 
 User devices eligible for forensic evidence capturing must be onboarded to the [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center) and must have the Microsoft Purview Client installed. 
@@ -43,11 +51,11 @@ User devices eligible for forensic evidence capturing must be onboarded to the [
 >[!IMPORTANT]
 >The Microsoft Purview Client automatically collects general diagnostic data related to device configuration and performance metrics. This includes data on critical errors, RAM consumption, process failures, and other data. This data helps us assess the client's health and identify any issues. For more details about how diagnostic data may be used, see the Use of Software with Online Services on the [Microsoft Product Terms](https://www.microsoft.com/licensing/product-licensing/products).
 
-For a list of device and configuration requirements, see [Learn about forensic evidence (preview)](insider-risk-management-forensic-evidence.md#device-and-configuration-requirements). To onboard supported devices, complete the steps outlined in the [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview) article. 
+For a list of device and configuration requirements, see [Learn about forensic evidence](insider-risk-management-forensic-evidence.md#device-and-configuration-requirements). To onboard supported devices, complete the steps outlined in the [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview) article. 
 
 To install the Microsoft Purview Client, complete the following steps:
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Client installation**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **Client installation**.
 2. Select **Download installer package (x64 version)** to download the installation package for Windows.
 3. After downloading the installation package, use your preferred method to install the client on users' devices. These options may include manually installing the client on devices or tools to help automate the client installation:
 
@@ -61,7 +69,7 @@ Forensic evidence has several configuration settings that provide flexibility fo
 
 To configure forensic evidence settings, complete the following steps:
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Forensic evidence settings**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **Forensic evidence settings**.
 2. Select **Forensic evidence capturing** to enable capturing support in your forensic evidence policies. If this is turned off later, this will remove all previously added users for forensic evidence policies.
 
     >[!IMPORTANT]
@@ -69,7 +77,6 @@ To configure forensic evidence settings, complete the following steps:
  
 1. In the **Capturing window** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*. 
 1. In the **Upload bandwidth limit** section, define the amount of capture data to upload into your data storage account per user, per day. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
-1. In the **Offline capturing** section, enable offline capturing if needed. When enabled, users' offline activity is captured and uploaded to your data storage account the next time they're online.
 1. In the **Offline capturing cache limit** section, define the maximum cache size to store on users' devices when offline capturing is enabled. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
 1. Select **Save**.
 
@@ -87,7 +94,7 @@ After you create a policy, you'll include it in forensic evidence requests to co
 
 #### Capture only specific activities
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Forensic evidence policies**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence** > **Forensic evidence policies**.
 2. Select **Create forensic evidence policy**.
 3. On the **Scope** page, select **Specific activities**. This option only captures activities detected by policies that users are included in. These activities are defined by the indicators selected in forensic evidence policies. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **Alerts** or **Cases** dashboard.    
 4. Select **Next**.
@@ -145,9 +152,6 @@ After you create a policy, you'll include it in forensic evidence requests to co
 ### Step 5: Define and approve users for capturing
 
 Before security-related user activities can be captured, admins must follow the dual authorization process in forensic evidence. This process mandates that enabling visual capturing for specific users is both defined and approved by applicable people in your organization.
-
->[!IMPORTANT]
->For the preview release, a maximum of 5 concurrent users are eligible for forensic evidence capturing. Capturing for groups isn't supported in the preview release.
 
 You must request that forensic evidence capturing is enabled for specific users. When a request is submitted, approvers in your organization are notified in email and can approve or reject the request. If approved, the user will appear on the **Approved users** tab and will be eligible for capturing.
 
