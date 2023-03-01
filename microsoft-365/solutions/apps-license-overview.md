@@ -38,11 +38,11 @@ For more information, see [Add apps to Microsoft Intune Overview](apps-add-overv
 
 ## Acquire app licenses
 
-You can purchase or acquire app licenses in-volume through a volume purchase program (VPP). Each device platform provides a VPP method. Apple lets you purchase multiple app licenses using Apple Business Manager. Google provides the Manage Google Play store to approve and acquire app licenses. Depending on your Microsoft Intune license, you may already have Microsoft app licenses for specific apps available to add and deploy. Microsoft also offers the Microsoft Store for Business. Once you've connected your VPP app license with Intune, you can find and add those apps using the regular 'add app' process. For more information, see [Understanding licensed apps](/mem/intune/apps/apps-add#understanding-licensed-apps) and [Purchase apps in-volume for Intune](apps-purchase-volume.md).
+For iOS apps, you can purchase or acquire app licenses in-volume through Apple's volume purchase program (VPP). Apple lets you purchase multiple app licenses using [Apple Business Manager](https://business.apple.com/). Depending on your Microsoft Intune license, you may already have Microsoft app licenses for specific apps available to add and deploy. Once you've connected your VPP app license with Intune, you can find and add those apps using the regular [Add app](apps-add-overview.md) process. For more information, see [Understanding licensed apps](/mem/intune/apps/apps-add#understanding-licensed-apps) and [Purchase apps in-volume for Intune](apps-purchase-volume.md).
 
 ## Apps requiring account, subscription, or license from the app vendor
 
-You can freely add and deploy the apps provided within [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), but there are apps that require an account, subscription, or license from the app vendor to use.
+You can freely add and deploy most apps provided within [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), but there are apps that require an account, subscription, or license from the app vendor to use. After [assessing your organization's app requirements](apps-add-step-1.md), you must contact the app vendor for apps that you cannot purchase through a VPP program.
 
 ## Microsoft app licenses included with Intune
 

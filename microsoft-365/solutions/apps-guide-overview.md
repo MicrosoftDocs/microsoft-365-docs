@@ -43,17 +43,17 @@ The content provided in this solution focuses on adding managed apps to Intune. 
 Add graphic
 -->
 
-## MAM configurations
+## Mobile Application Management configurations
 
-When apps are used without restrictions, company and personal data can get intermingled. Company data can end up in locations like personal storage or transferred to apps beyond your purview and result in data exposure and data loss. One of the primary reasons to use either **MAM without device enrollment** or **MAM with device enrollment** is to help protect your organization's data.
+When apps are used without restrictions, company and personal data can get intermingled. Company data can end up in locations like personal storage or transferred to apps beyond your purview and result in data exposure and data loss. Managing the apps that the members of your organization use on their devices is called Mobile Application Management (MAM). MAM allows you to provide data protection on unenrolled devices. Unenrolled devices are personal devices that are used by members of your organization to access corporate data. It's important to understand that these personal devices are not managed, but still need protection. One of the primary reasons to use either **MAM without device enrollment** or **MAM with device enrollment** is to help protect your organization's data.
 
-The Microsoft Intune service supports two MAM configurations:
+The Microsoft Intune service supports two Mobile Application Management (MAM) configurations:
 - **[MAM without device management](#mam-without-device-management)**
 - **[MAM with device management](#mam-with-device-management)**
 
 ### MAM without device management
 
-Managing the apps that the members of your organization uses on their devices is called mobile application management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed. This configuration allows your organization's apps to be managed by Intune, but doesn't enroll the devices to be managed by Intune. This configuration is commonly referred to as **MAM without device enrollment**, or **MAM-WE**. IT administrators can manage apps using MAM by using Intune configuration and protection policies on devices not enrolled with Intune Mobile Device Management (MDM). In the MAM scenario, the apps are managed based on the signed-in user of the app on the device. MAM is ideal to help protect organization data on devices used by members of your organization for both personal and work tasks. MAM without MDM is popular for organizations that enable members of their organization to work remotely on their own devices (BYOD).
+MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed. This configuration allows your organization's apps to be managed by Intune, but doesn't enroll the devices to be managed by Intune. This configuration is commonly referred to as **MAM without device enrollment**, or **MAM-WE**. IT administrators can manage apps using MAM by using Intune configuration and protection policies on devices not enrolled with Intune Mobile Device Management (MDM). In the MAM scenario, the apps are managed based on the signed-in user of the app on the device. MAM is ideal to help protect organization data on devices used by members of your organization for both personal and work tasks. MAM without MDM is popular for organizations that enable members of their organization to work remotely on their own devices (BYOD).
 
 > [!TIP]
 >  Many productivity apps, such as the Microsoft Office apps, can be managed by Intune MAM. See the official list of [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps) available for public use.

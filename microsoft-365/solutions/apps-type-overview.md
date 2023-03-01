@@ -16,7 +16,7 @@ keywords:
 
 # App types for managed environments
 
-There are many types of apps you may want to use at your organization that can either be acquired or created. By understanding and grouping apps based the types presented in this topic, you'll have a better understanding of apps that can be managed by Microsoft Intune. An app that can be managed supports Intune's [app protection policies (APP)](/mem/intune/apps/app-protection-policy). App protection policies are rules that ensure that your organization's data remains safe and contained in your managed apps. This overview provide a view of app types based on how apps are acquired, created, used, installed, and run.
+There are many types of apps you may want to use at your organization that can either be acquired or created. By understanding and grouping apps based the types presented in this topic, you'll have a better understanding of apps that can be managed by Microsoft Intune. An app that can be managed supports Intune's [app protection policies](/mem/intune/apps/app-protection-policy). App protection policies are rules that ensure that your organization's data remains safe and contained in your managed apps. This overview provide a view of app types based on how apps are acquired, created, used, installed, and run.
 
 > [!NOTE]
 > Managed apps are enhanced by being integrated to support the [Intune App SDK](/mem/intune/developer/app-sdk) or wrapped using the [Intune App Wrapping Tool](/mem/intune/developer/apps-prepare-mobile-application-management). This integration allows managed apps to support Microsoft Intune's app protection policies. 

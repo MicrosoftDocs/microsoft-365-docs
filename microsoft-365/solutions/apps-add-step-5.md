@@ -55,3 +55,15 @@ The following list provides Intune reports that are specific to apps:
 - [User Install Status for apps report (Operational)](/mem/intune/fundamentals/reports#user-install-status-for-apps-report-operational)
 
 For additional app information, see [Manage apps](/mem/intune/apps/).
+
+## After adding apps to Intune
+
+Once you have completed the above steps, you'll be ready to configure, protect, assign, and monitor the managed apps your organization uses.
+
+For more information about how to proceed, see the following topics:
+- [App configuration policies for Microsoft Intune](/mem/intune/apps/app-configuration-policies-overview)
+- [App protection policies overview](/mem/intune/apps/app-protection-policy)
+- [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy)
+- [Monitor app information and assignments with Microsoft Intune](/mem/intune/apps/apps-monitor)
+
+
