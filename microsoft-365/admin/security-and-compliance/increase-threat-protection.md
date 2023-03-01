@@ -39,9 +39,9 @@ description: "Make choices to safeguard sensitive organizational data against ph
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-This article suggests top tasks to increase the protection available in your Microsoft 365 subscription against phishing, malware, and other threats. These recommendations are also appropriate for organizations with an increased need for security, like law offices and health care clinics.
+This article suggests top tasks for small businesses to increase protection available against phishing, malware, and other threats with a Microsoft 365 subscription. These recommendations are also appropriate for organizations with an increased need for security, like law offices and health care clinics.
 
-Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your organization's security based on your regular activities and security settings, and assigns a score. Begin by taking note of your current score. To increase your score, complete the actions recommended in this article. The goal isn't to achieve the maximum score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users.
+Before you begin, note your current Office 365 Secure Score. The goal isn't to achieve the maximum score, but to be aware of opportunities to protect your small organization that don't negatively affect productivity for your users. Office 365 Secure Score analyzes your organization's security based on your regular activities and security settings, and assigns a score. To increase your score, complete the actions recommended in this article.
 
 For more information, see [Microsoft Secure Score](../../security/defender/microsoft-secure-score.md).
 
@@ -59,4 +59,4 @@ For additional details about securing data and managed devices in Microsoft 365 
 
 ## Related content
 
-- 
+- [How to secure your business data with Microsoft 365 for business](secure-your-business-data.md) 
