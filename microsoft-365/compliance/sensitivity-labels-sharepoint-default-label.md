@@ -128,7 +128,7 @@ If you need to, you can turn off this feature that supports a default sensitivit
 Set-SpoTenant -DisableDocumentLibraryDefaultLabeling $true
 ```
 
-After you run this command, you won't see the UI configuration to configure the **Default sensitivity labels** option. You won't be able to select a default label for new or existing libraries and for libraries that were previously configured, the label selection remains but won't be newly applied to files.
+After you run this command, you won't see the UI configuration to configure the **Default sensitivity labels** option. You won't be able to select a default label for new or existing libraries and for libraries that were previously configured, sensitivity labels aren't removed but won't be newly applied to files.
 
 ## Next steps
 
