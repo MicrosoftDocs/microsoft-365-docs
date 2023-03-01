@@ -130,6 +130,8 @@ Set-SpoTenant -DisableDocumentLibraryDefaultLabeling $true
 
 After you run this command, you won't see the UI configuration to configure the **Default sensitivity labels** option. You won't be able to select a default label for new or existing libraries and for libraries that were previously configured, sensitivity labels aren't removed but won't be newly applied to files.
 
+As with all tenant-level configuration changes for SharePoint and OneDrive, it takes about 15 minutes for the change to take effect.
+
 ## Next steps
 
 Default labeling ensures a minimum level of protection but doesn't take into account the file contents that might require a higher level of protection. Consider supplementing this labeling method with [automatic labeling](apply-sensitivity-label-automatically.md) that uses content inspection, and encourage [manual labeling](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) for users to replace the default label when needed.
