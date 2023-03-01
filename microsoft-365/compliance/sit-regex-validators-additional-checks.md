@@ -30,7 +30,7 @@ ms.custom: seo-marvel-apr2020
 
 ### Checksum validator
 
-To run a checksum on a digit in a regular expression, you can use the *checksum validator*. For example, say you need to create a SIT for an eight-digit license number where the last digit is a checksum digit validated using a mod 9 calculation, set up the checksum algorithm like this:
+To run a checksum on a digit in a regular expression, you can use the *checksum validator*. For example, if you need to create a SIT for an eight-digit license number where the last digit is a checksum digit validated using a mod 9 calculation, set up the checksum algorithm like this:
 
 ```console
 Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8
@@ -58,7 +58,7 @@ If Mod value != digit 8
 
 ### Date validator
 
-If a date value that is embedded in regular expression is part of a new pattern you're creating, you can use the *date validator* to test whether it meets your criteria. For example, say you want to create a SIT for a nine-digit employee identification number. The first six digits are the date of hire in DDMMYY format and the last three are randomly generated numbers. Take the following steps to validate that the first six digits are in the correct format:
+If a date value that's embedded in a regular expression is part of a new pattern you're creating, you can use the *date validator* to test whether that date value meets your criteria. For example, you want to create a SIT for a nine-digit employee identification number. The first six digits are the date of hire in DDMMYY format and the last three are randomly generated numbers. Take the following steps to validate that the first six digits are in the correct format:
 
 1. Define the primary element with this regular expression:
 
