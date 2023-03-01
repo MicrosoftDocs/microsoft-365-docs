@@ -48,7 +48,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard.md) (Preview) 
 ### Manage your connection instances
 
 > [!IMPORTANT]
-> Before mapping a Blue Yonder WFM instance to a Microsoft team, check if the team has scheduled entities such as shifts or time off. If the team has an existing schedule with scheduled entities, [remove the scheduled entities from the team](shifts-connector-wizard.md#remove-scheduled-entities-from-teams-you-want-to-map) before you map a Blue Yonder WFM instance to it. If you don't remove scheduled entities before mapping, you'll see duplicate shifts.
+> Before mapping a Blue Yonder WFM instance to a Microsoft team, check if the team has schedule entities such as shifts or time off. If the team has an existing schedule with schedule entities, [remove the schedule entities from the team](shifts-connector-wizard.md#remove-schedule-entities-from-teams-you-want-to-map) before you map a Blue Yonder WFM instance to it. If you don't remove schedule entities before mapping, you'll see duplicate shifts.
 
 - To create a new connection instance, select **Create instance**. You'll be taken to the wizard, where you can [choose your settings and create mappings](shifts-connector-wizard.md#create-a-connection-instance).
 - To make changes to an existing connection instance, choose **Edit** next to the instance name. You'll be taken to the wizard, where you can [update the settings and mappings](shifts-connector-wizard.md#create-a-connection-instance).
