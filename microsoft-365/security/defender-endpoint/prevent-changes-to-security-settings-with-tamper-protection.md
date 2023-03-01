@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 02/27/2023
+ms.date: 02/28/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -85,9 +85,9 @@ Depending on the method or management tool you use to enable tamper protection, 
 
 | How tamper protection is enabled | Dependency on cloud protection? |
 |---|---|
-|Microsoft Intune|No|
-|Microsoft Endpoint Configuration Manager with Tenant Attach|No|
-|Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))|Yes|
+| Microsoft Intune | No |
+| Microsoft Configuration Manager with Tenant Attach | No |
+| Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | Yes |
 
 ## Methods to configure tamper protection
 
@@ -119,17 +119,21 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 
 ### How to determine whether the functionality to protect exclusions is enabled on a Windows device
 
-You can use a registry key to determine whether the functionality to protect Microsoft Defender Antivirus exclusions is enabled.
+You can use a registry key to determine whether the functionality to protect Microsoft Defender Antivirus exclusions is enabled. Note that the following procedure describes how to view, but not change, tamper protection status.
 
 1. On a Windows device open Registry Editor. (Read-only mode is fine; you won't be editing the registry key.)
 
-2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called **TPExclusions**. 
+2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for the `REG_DWORD` entries that are listed in the following table: 
 
-   - If **TPExclusions** has a value of `1`, then all required conditions are met, and the new functionality to protect exclusions is enabled on the device. In this case, exclusions are tamper protected.
-   - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device.
+   | REG_DWORD | Value | What it means |
+   |:---|:---|:---|
+   | **TamperProtection** | 5 | Tamper protection is deployed. |
+   | **TamperProtectionSource** | 64 | Tamper protection is managed by Intune. |
+   | **TPExclusions** | 1 | Required conditions are met, and the new functionality to protect exclusions is enabled on the device. In this case, exclusions are tamper protected. |
+   | **TPExclusions** | 0 | Tamper protection isn't currently protecting exclusions on the device. |
 
 > [!CAUTION]
-> Do not change the value of **TPExclusions**. Use the preceding procedure for information only. Changing the key will have no effect on whether tamper protection applies to exclusions.
+> Do not change the value of the registry keys. Use the preceding procedure for information only. Changing keys will have no effect on whether tamper protection applies to exclusions.
 
 ## Are you using Windows Server 2012 R2, 2016, or Windows version 1709, 1803, or 1809?
 
