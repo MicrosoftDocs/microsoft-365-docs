@@ -135,7 +135,7 @@ If messages that users reported as phishing aren't captured in Attack simulation
 
 ### Users are assigned training after they report a simulated message
 
-If users are assigned training after they report a phishing simulation message, check to see if your organization uses a reporting mailbox to receive user reported messages at <https://security.microsoft.com/securitysettings/userSubmission>. The reporting mailbox needs to be configured to skip many security checks as described in the [reporting mailbox prerequisites](submissions-user-reported-messages-files-custom-mailbox.md#configuration-requirements-for-the-reporting-mailbox).
+If users are assigned training after they report a phishing simulation message, check to see if your organization uses a reporting mailbox to receive user reported messages at <https://security.microsoft.com/securitysettings/userSubmission>. The reporting mailbox needs to be configured to skip many security checks as described in the [reporting mailbox prerequisites](submissions-user-reported-messages-custom-mailbox.md#configuration-requirements-for-the-reporting-mailbox).
 
 If you don't configure the required exclusions for the custom reporting mailbox, these messages might be detonated by Safe Links or Safe Attachments protection, which will cause training assignments.
 
@@ -193,7 +193,6 @@ A: Region aware delivery uses the TimeZone attribute of the targeted user's mail
 At 9:00 AM on the same day, the simulation message is sent to UserB. With region-aware delivery, the message is not sent to UserA on the same day, because 9:00 AM Pacific time is 12:00 PM Eastern time. Instead, the message is sent to UserA at 9:00 AM Eastern time on the following day.
 
 So, on the initial run of a campaign with region aware delivery enabled, it might appear that the simulation message was sent only to users in a specific time zone. But, as time passes and more users come into scope, the targeted users will increase.
-
 
 ### Q: Does Microsoft collect or store any information that users enter at the Credential Harvest sign-in page, used in the Credential Harvest simulation technique?
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/18/2023
+ms.date: 02/28/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -438,6 +438,8 @@ If your auto-apply retention label policies aren't working as expected or you se
 
 - [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
 - [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)
+
+Additionally, if you're also using the older feature, [MRM retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies), see [Auto-apply retention label doesn't apply to items in a mailbox](/microsoft-365/troubleshoot/retention/auto-apply-retention-label-not-apply-messages).
 
 ## Next steps
 
