@@ -173,11 +173,7 @@
                - name: Step 3. Use Power Automate
                  href: solution-manage-contracts-step3.md
         - name: Site templates
-          items:
-            - name: Contracts management template
-              href: use-contracts-management-site.md 
-            - name: Content center template
-              href: use-content-center-site.md 
+              href: site-templates.md 
 
     - name: Extensibility
       items: 
