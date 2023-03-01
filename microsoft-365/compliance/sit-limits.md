@@ -70,7 +70,7 @@ The SIT instance count limit applies when using SITs in these solutions:
 
 For a scanned item to satisfy the rule criteria, the number of unique instances of a SIT in any single item must fall between the min and max values. This is called the **Instance count**.
 
-- **Min** field: the lower limit (minimum number) of unique instances of a SIT that must be found in an item to trigger a match. The min field supports values of 1 to 500
+- **Min** field: the lower limit (minimum number) of unique instances of a SIT that must be found in an item to trigger a match. The min field supports values of 1 to 500.
 - **Max** field: the upper limit on the number of unique instances of a SIT that can be found in an item and still trigger a match. The max field supports the following values:
   - 1 to 500  - Use a value between `1` and `500` when you want to set a specific upper limit of 500 or less on the number of instances of a SIT in an item.
   - Any - Use `Any` when you want the ensure that the unique instance count criteria is satisfied when an undefined number of unique instances of a SIT are found in a scanned item and that the specified number of unique instances meets or exceeds the minimum number of unique instances value. In other words, the unique instance count criteria are met as long as the min value is met.
