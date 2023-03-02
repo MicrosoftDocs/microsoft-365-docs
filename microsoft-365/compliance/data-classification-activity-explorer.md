@@ -62,7 +62,7 @@ An account must be explicitly assigned membership in any one of these role group
 
 There are roles and role groups that you can use to fine-tune your access controls. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
-| Microsoft Purview Roles | Microsoft Purview Role Groups | Microsoft 365 Roles | Microsoft 365 Role Groups
+| Microsoft Purview Roles | Microsoft Purview Role Groups | Microsoft 365 Roles | Microsoft 365 Role Groups |
 |:------------------------|:------------------------------|:--------------------|:-------------------------|
 | Information Protection Admin| Information Protection | Global Admins |Compliance Administrator |
 | Information Protection Analyst | Information Protection Admins | Compliance Admins | Security Administrator |
