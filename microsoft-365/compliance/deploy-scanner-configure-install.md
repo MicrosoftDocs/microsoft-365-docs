@@ -232,7 +232,7 @@ For more information, see [How to label files non-interactively for Azure Inform
     > If your scanner service account cannot be granted the **Log on locally** right for the installation, use the *OnBehalfOf* parameter with [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), as described in [How to label files non-interactively for Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
     >
 
-The scanner now has a token to authenticate to Azure AD. This token is valid for one year, two years, or never, according to your configuration of the **Web app /API** client secret in Azure AD. When the token expires, you must repeat this procedure.
+The scanner now has a token to authenticate to Azure AD. This token can be valid for a maximum of 2 years, but is set according to your configuration of the **Web app /API** client secret in Azure AD. When the token expires, you must repeat this procedure.
 
 Continue using one of the following steps, depending on whether you're using the compliance portal to configure your scanner, or PowerShell only:
 
