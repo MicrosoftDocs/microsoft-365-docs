@@ -22,7 +22,7 @@ To start, first determine your organization's requirements by answering the foll
 
 | Questions | Details |
 |---|---|
-| Does my organization need to use Mobile Application Management (MAM) or Mobile Device Management (MDM)? | Intune supports both MAM and MDM. [MAM without device management](apps-guide-overview.md#mam-without-device-management) allows just your organization's apps to be managed by Intune, without enrolling the devices to be managed by Intune. [MAM with device management](apps-guide-overview#mam-with-device-management) (also known as MDM) allows your organization's apps and devices to be managed. There's advantages to each management method. For more information, see [Understanding MAM and MDM](#understanding-mam-and-mdm).  |
+| Does my organization need to use Mobile Application Management (MAM) or Mobile Device Management (MDM)?                        | Intune supports both MAM and MDM. [MAM without device management](apps-guide-overview.md#mam-without-device-management) allows just your organization's apps to be managed by Intune, without enrolling the devices to be managed by Intune. [MAM with device management](apps-guide-overview#mam-with-device-management) (also known as MDM) allows your organization's apps and devices to be managed. There's advantages to each management method. For more information, see [Understanding MAM and MDM](#understanding-mam-and-mdm).  |
 | What platforms do members of my organization use? | Intune supports a number of device platforms. You should consider supporting all possible device platforms that members of your organization use to access corporate data. For more information, see [Determine the platforms needed for each app](#determine-the-platforms-needed-for-each-app). |
 | Which apps are needed to access organization information and data? | Determine which apps are currently used by members of your organization and which apps need to be available or added. For more information, see [Determine apps needed for your organization](apps-add-step-1.md#determine-apps-needed-for-your-organization).
 | Which security apps are needed by your organization? | Determine which apps are currently used to protect your organization. Check if the security apps, such as [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint), is available based on your licensing for Microsoft Intune.
@@ -35,7 +35,7 @@ Managing the apps that the members of your organization use on their devices is 
 
 Managing devices at an organization is known as mobile device management (MDM). When you manage both the apps and devices at your organization, it's often referred to as **MAM + MDM**. There are additional benefits to using MDM with app protection policies. For example, a member of your organization could have both a phone issued by your organization, as well as their own personal tablet. The company phone could be enrolled in MDM where it's protected at the device level and also protected by app protection policies, while the personal device is protected by app protection policies only.
 
-For more information, see [MAM configurations](apps-guide-overview.md#mam-configurations).
+For more information, see [MAM configurations](apps-guide-overview.md#mobile-application-management-configurations).
 
 ## Determine the platforms needed for each app
 
