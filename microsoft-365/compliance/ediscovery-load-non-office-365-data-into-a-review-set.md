@@ -48,7 +48,7 @@ Using the upload non-Microsoft 365 feature described in this article requires th
    ![Non-Microsoft 365 data upload folder structure.](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
 - An account that is assigned to the eDiscovery Manager role group (and added as eDiscovery Administrator).
-- The AzCopy v10 tool installed on a computer that has access to the non-Microsoft 365 content folder structure. To install AzCopy, see [Transfer data with the AzCopy v10 on Windows](/azure/storage/common/storage-use-azcopy-v10). Be sure to install AzCopy in the default location, which is **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. You must use AzCopy v10. Other versions of AzCopy may not work when loading non-Microsoft 365 data in eDiscovery (Premium).
+- The AzCopy v8.1 tool installed on a computer that has access to the non-Microsoft 365 content folder structure. To install AzCopy, see [Transfer data with the AzCopy v8.1 on Windows](/previous-versions/azure/storage/storage-use-azcopy). Be sure to install AzCopy in the default location, which is **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. You must use AzCopy v8.1. Other versions of AzCopy may not work when loading non-Microsoft 365 data in eDiscovery (Premium).
 
 ## Upload non-Microsoft 365 content into eDiscovery (Premium)
 
@@ -78,7 +78,7 @@ Using the upload non-Microsoft 365 feature described in this article requires th
    ![Non-Microsoft 365 Import: AzCopy.](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
-   > As previously stated, you must use AzCopy v10 to successfully use the command that's provided on the **Upload files** page. If the supplied AzCopy command fails, please see [Troubleshoot AzCopy in eDiscovery (Premium)](ediscovery-troubleshooting-azcopy.md).
+   > As previously stated, you must use AzCopy v8.1 to successfully use the command that's provided on the **Upload files** page. If the supplied AzCopy command fails, please see [Troubleshoot AzCopy in eDiscovery (Premium)](ediscovery-troubleshooting-azcopy.md).
 
 9. Go back to the Microsoft Purview compliance portal, and select **Next: Process files** in the wizard.  This initiates processing, text extraction, and indexing of the non-Microsoft 365 files that were uploaded to the Azure Storage location.  
 
