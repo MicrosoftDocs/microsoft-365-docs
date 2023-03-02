@@ -48,7 +48,7 @@ To ensure high performance and lower latency, there are limitations in custom SI
 |Policy rule character limit | 64 |
 |Comments character limit | 1024 |
 |Description character limit | 1024 |
-|GIR evidence limit | 100 with each SIT evidence in proportion to the number of occurences |
+|GIR evidence limit | 100 with each SIT evidence in proportion to the number of occurrences |
 |Text extraction limit | 1MB |
 |Regex size limit (for all matches predicates) | 20KB |
 
