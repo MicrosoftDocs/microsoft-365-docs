@@ -468,6 +468,8 @@ Although auto-labeling is one of the most efficient ways to classify, label, and
 
 - With Microsoft Syntex, you can [apply a sensitivity label to a document understanding model](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), so that identified documents in a SharePoint document library are automatically labeled.
 
+- For Outlook messages, you can [apply a sensitivity label based on attachments that are labeled](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments).
+
 - When you use the [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2):
 
   - For files in on-premises data stores, such as network shares and SharePoint Server libraries: Use the [scanner](deploy-scanner.md) to discover sensitive information in these files and label them appropriately. If you're planning to migrate or upload these files to SharePoint in Microsoft 365, use the scanner to label the files before you move them to the cloud.
