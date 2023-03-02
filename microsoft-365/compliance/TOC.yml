@@ -10,6 +10,14 @@
       href: compliance-easy-trials.md
     - name: About the free trial for Microsoft Purview Compliance Manager premium assessments
       href: compliance-easy-trials-compliance-manager-assessments.md
+- name: Permission, roles, and adaptive scopes
+  items: 
+    - name: Permissions in the Microsoft Purview compliance portal
+      href: microsoft-365-compliance-center-permissions.md
+    - name: Roles and role groups in the Microsoft Purview compliance portal
+      href: /microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+    - name: Adaptive scopes
+      href: purview-adaptive-scopes.md
 - name: Get started
   items: 
     - name: Quick tasks to get started with compliance in Microsoft Purview
@@ -18,10 +26,6 @@
       href: microsoft-365-solution-catalog.md
     - name: Microsoft Purview compliance portal
       href: microsoft-365-compliance-center.md
-    - name: Permissions in the Microsoft Purview compliance portal
-      href: microsoft-365-compliance-center-permissions.md
-    - name: Roles and role groups in the Microsoft Purview compliance portal
-      href: /microsoft-365/security/office-365-security/scc-permissions?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
     - name: Use your free Azure Active Directory subscription
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
@@ -80,8 +84,6 @@
          href: archive-linkedin-data.md
        - name: Physical badging data (preview)
          href: import-physical-badging-data.md
-       - name: Slack eDiscovery (preview)
-         href: archive-slack-data-microsoft.md
        - name: Twitter (preview)
          href: archive-twitter-data-with-sample-connector.md
    - name: Veritas data connectors
@@ -236,6 +238,8 @@
           href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
+        - name: Best practices for managing alert volume
+          href: communication-compliance-alerts-best-practices.md
         - name: Use communication compliance reports & audits
           href: communication-compliance-reports-audits.md
         - name: Use communication compliance with SIEM solutions 
@@ -262,13 +266,13 @@
           href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
-        - name: Capture clips with forensic evidence (preview)
+        - name: Capture clips with forensic evidence
           items:
-          - name: Learn about forensic evidence (preview)
+          - name: Learn about forensic evidence
             href: insider-risk-management-forensic-evidence.md
-          - name: Get started with forensic evidence (preview)
+          - name: Get started with forensic evidence
             href: insider-risk-management-forensic-evidence-configure.md
-          - name: Manage forensic evidence (preview)
+          - name: Manage forensic evidence
             href: insider-risk-management-forensic-evidence-manage.md
         - name: Help dynamically mitigate risks with Adaptive Protection (preview)
           href: insider-risk-management-adaptive-protection.md
@@ -292,6 +296,8 @@
           href: information-barriers-policies.md
         - name: Manage information barriers
           href: information-barriers-edit-segments-policies.md
+        - name: Use multi-segment support in information barriers
+          href: information-barriers-multi-segment.md
         - name: Information barriers attributes
           href: information-barriers-attributes.md
         - name: Information barriers & Microsoft 365 services
@@ -320,6 +326,8 @@
       href: information-protection.md
     - name: Deploy an information protection solution
       href: information-protection-solution.md
+    - name: Migrate from the Azure portal
+      href: azure-portal-migration.md
     - name: Default labels and policies to protect your data
       href: mip-easy-trials.md
     - name: Sensitive information types

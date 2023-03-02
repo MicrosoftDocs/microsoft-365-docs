@@ -3,6 +3,7 @@ title: "Custom domain support in Bookings"
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 11/21/2022
 audience: Admin
 ms.topic: article
 ms.service: bookings

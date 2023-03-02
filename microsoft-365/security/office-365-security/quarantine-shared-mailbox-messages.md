@@ -12,6 +12,7 @@ search.appverid:
 ms.assetid: 
 ms.collection: 
   - m365-security
+  - tier1
 description: Users can learn how to view and act on quarantined messages that were sent to shared mailboxes that they have permissions to.
 ms.subservice: mdo
 ms.service: microsoft-365-security

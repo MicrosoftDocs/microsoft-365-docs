@@ -6,7 +6,7 @@ metadata:
   ms.author: chrisda
   author: chrisda
   manager: dansimp
-  ms.date:
+  ms.date: 1/31/2023
   audience: ITPro
   ms.topic: faq
 
@@ -16,7 +16,7 @@ metadata:
   ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
   ms.collection:
     - m365-security
-    - m365initiative-defender-office365
+    - tier2
   description: Admins can view frequently asked questions and answers about quarantined messages in Exchange Online Protection (EOP).
   ms.custom: seo-marvel-apr2020
   ms.subservice: mdo

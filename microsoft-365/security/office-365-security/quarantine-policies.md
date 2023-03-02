@@ -12,6 +12,7 @@ search.appverid:
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
 ms.subservice: mdo
