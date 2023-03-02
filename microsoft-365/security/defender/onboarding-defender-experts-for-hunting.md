@@ -83,7 +83,7 @@ You can set up Microsoft 365 Defender to notify you or your staff with an email 
 
     - **Source** – Choose **Microsoft Defender Experts** under **Microsoft 365 Defender** and **Microsoft Defender for Endpoint**
 
-   - **Alert severity** – Choose the alert severities that will trigger an incident notification. For example, if you only want to be informed about high-severity incidents, select High.
+    - **Alert severity** – Choose the alert severities that will trigger an incident notification. For example, if you only want to be informed about high-severity incidents, select High.
 
 ### Collaborate with Experts on Demand
 
