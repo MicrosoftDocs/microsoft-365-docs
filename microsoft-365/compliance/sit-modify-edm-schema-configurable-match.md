@@ -16,7 +16,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Learn how to modify an edm schema to use configurable match.
+description: Learn how to modify an EDM schema to use configurable match.
 ms.custom: seo-marvel-apr2020
 ---
 # Modify Exact Data Match schema to use configurable match

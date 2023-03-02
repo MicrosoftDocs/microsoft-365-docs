@@ -73,7 +73,7 @@ To connect to Security & Compliance PowerShell, see [Security & Compliance Power
 
 ## Step 2: Modify the sensitive information type in the exported XML file
 
-Find more information about about modifying sensitive information types via XML in [Customize a built-in sensitive information type](https://learn.microsoft.com/microsoft-365/compliance/customize-a-built-in-sensitive-information-type).
+Find more information about about modifying sensitive information types via XML in [Customize a built-in sensitive information type](/compliance/customize-a-built-in-sensitive-information-type).
 
 ## Step 3: Import the updated XML file back into the existing rule package
 

@@ -39,7 +39,7 @@ To ensure high performance and lower latency, there are limitations in custom SI
 |maximum number of distinct regexes per sensitive information type| 20|
 |maximum size of a keyword dictionary (post compression)| 1MB (~1,000,000 characters)|
 |maximum number of keyword dictionary based SITs in a tenant| 50 |
-|maximum number of MIP+MIG ppolicies in a tenant| 10,000 |
+|maximum number of MIP+MIG policies in a tenant| 10,000 |
 |maximum number of DLP rules in a policy | Limited by the size of policy (100KB) |
 |maximum number of DLP rules in a tenant | 600 |
 |maximum size of an individual DLP rule | 80KB |
@@ -48,7 +48,7 @@ To ensure high performance and lower latency, there are limitations in custom SI
 |Policy rule character limit | 64 |
 |Comments character limit | 1024 |
 |Description character limit | 1024 |
-|GIR evidence limit | 100 with each SIT evidence in proportion of occurence |
+|GIR evidence limit | 100 with each SIT evidence in proportion to the number of occurences |
 |Text extraction limit | 1MB |
 |Regex size limit (for all matches predicates) | 20KB |
 
@@ -73,6 +73,6 @@ For a scanned item to satisfy the rule criteria, the number of unique instances 
 - **Min** field: the lower limit (minimum number) of unique instances of a SIT that must be found in an item to trigger a match. The min field supports values of 1 to 500.
 - **Max** field: the upper limit on the number of unique instances of a SIT that can be found in an item and still trigger a match. The max field supports the following values:
   - 1 to 500  - Use a value between `1` and `500` when you want to set a specific upper limit of 500 or less on the number of instances of a SIT in an item.
-  - Any - Use `Any` when you want the ensure that the unique instance count criteria is satisfied when an undefined number of unique instances of a SIT are found in a scanned item and that the specified number of unique instances meets or exceeds the minimum number of unique instances value. In other words, the unique instance count criteria are met as long as the min value is met.
+  - Any - Use `Any` when you want to ensure that the unique instance count criterion is satisfied when an undefined number of unique instances of a SIT are found in a scanned item and that the specified number of unique instances meets or exceeds the minimum number of unique instances value. In other words, the unique instance count criteria are met as long as the min value is met.
 
 For example, if you want the rule to trigger a match when at least 500 unique instances of a SIT are found in a single item, set the **min** value to `500` and the **max** value to `Any`.
