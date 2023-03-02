@@ -27,6 +27,6 @@ Download offers a simple way to download content from a review set in native for
 
 To download content from a review set in an eDiscovery (Premium) case, start by selecting the files you want to download then select **Action items** > **Download**.
 
-Total file size or maximum number of documents downloaded from a review set is 3 MB or 50 documents respectively. 
+The total file size or the maximum number of documents downloaded from a review set is 3 MB or 50 documents respectively. 
 
 ![Download action in eDiscovery (Premium) review set.](../media/eDiscoDownload.png)
