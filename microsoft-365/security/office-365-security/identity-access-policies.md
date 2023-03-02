@@ -171,7 +171,7 @@ You must create a policy for each PC, phone, or tablet platform. This article wi
 
 ### Create device compliance policies
 
-To create device compliance policies, sign in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com), and navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
+To create device compliance policies, sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com), and navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
 
 For step-by-step guidance on creating compliance policies in Intune, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
@@ -316,7 +316,7 @@ The following steps will help create a Conditional Access policy to require devi
 1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 1. Under **Assignments**, select **Users or workload identities**.
    1. Under **Include**, select **All users**.
-   1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts. 
+   1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
 1. Under **Cloud apps or actions** > **Include**, select **All cloud apps**.
    1. If you must exclude specific applications from your policy, you can choose them from the **Exclude** tab under **Select excluded cloud apps** and choose **Select**.
 1. Under **Access controls** > **Grant**.

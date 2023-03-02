@@ -53,7 +53,7 @@ The encryption settings are available when you [create a sensitivity label](crea
 
 ## Understand how the encryption works
 
-Unless you're using [S/MIME for Outlook](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook), encryption that's applied by sensitivity labels to documents, emails, and meeting invites uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
+Unless you're using [S/MIME for Outlook](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook), encryption that's applied by sensitivity labels to documents, emails, and meeting invites all use the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
 
 When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](/azure/information-protection/configure-super-users).
 
@@ -367,9 +367,12 @@ This capability provides [parity with the Azure Information Protection unified l
 
 ![Updated dialog box to support organization-wide custom permissions.](../media/org-wide-custom-permissions-dialog.png)
 
-For example, a user types "@contoso.com" (or "contoso.com") and grants read access. Because Contoso Corporation owns the contoso.com domain, all users in that domain and all other domains that the organization owns in Azure Active Directory will be granted read access.
+For example, a user types **@contoso.com** (or **contoso.com**) and grants read access. Because Contoso Corporation owns the contoso.com domain, all users in that domain and all other domains that the organization owns in Azure Active Directory will be granted read access.
 
-It's important to let users know that access isn't restricted to just the users in the domain specified. For example, "@sales.contoso.com" wouldn't restrict access to users in just the sales subdomain, but also grant access to users in the marketing.contoso.com domain, and even users with a disjoint namespace in the same Azure Active Directory tenant.
+> [!NOTE]
+> When you specify these values, don't surround them with quotation marks.
+
+It's important to let users know that access isn't restricted to just the users in the domain specified. For example, **@sales.contoso.com** wouldn't restrict access to users in just the sales subdomain, but also grant access to users in the marketing.contoso.com domain, and even users with a disjoint namespace in the same Azure Active Directory tenant.
 
 ## Example configurations for the encryption settings
 

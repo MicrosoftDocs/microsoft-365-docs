@@ -1,23 +1,23 @@
 ---
 title: Remove blocked users from the Restricted users portal
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-f1_keywords: 
+f1_keywords:
   - 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
 ms.localizationpriority: high
-search.appverid: 
+search.appverid:
   - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
-ms.collection: 
+ms.collection:
   - m365-security
   - tier2
 description: Admins can learn how to remove users from the Restricted users page in the Microsoft 365 Defender portal. Users are added to the Restricted users portal for sending outbound spam, typically as a result of account compromise.
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -45,13 +45,13 @@ Admins can remove users from the **Restricted users** page in the Microsoft 365 
 
 ## Learn more on Restricted entities
 
-A restricted entity is an entity that has been blocked from sending email because either it has been potentially compromised, or it has exceeded sending limit.
+A restricted entity is an entity that has been blocked from sending email because either it has been potentially compromised, or it has exceeded a sending limit.
 
-There are 2 types of restricted entities: 
+There are two types of restricted entities:
 
-- **Restricted user**: Learn about why a user can be restricted and how to handle restricted users (this article).  
+- **Restricted user**: Learn about why a user can be restricted and how to handle restricted users (this article).
 
-- **Restricted connector**: For more information about why a connector can be restricted and how to handle restricted connectors, see [Remove blocked connectors from the Restricted entities portal](connectors-remove-blocked.md). 
+- **Restricted connector**: For more information about why a connector can be restricted and how to handle restricted connectors, see [Remove blocked connectors from the Restricted entities portal](connectors-remove-blocked.md).
 
 ## What do you need to know before you begin?
 
@@ -59,17 +59,12 @@ There are 2 types of restricted entities:
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To remove users from the Restricted users portal, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - For read-only access to the Restricted users portal, you need to be a member of the **Global Reader** or **Security Reader** role groups.
-
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  > [!NOTE]
-  >
-  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  >
-  > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Add, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
+    - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - A sender exceeding the outbound email limits is an indicator of a compromised account. Before you remove the user from the Restricted users portal, be sure to follow the required steps to regain control of their account. For more information, see [Responding to a compromised email account in Office 365](responding-to-a-compromised-email-account.md).
 

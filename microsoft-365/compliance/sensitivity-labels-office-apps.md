@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 03/01/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -168,11 +168,15 @@ To use the Office built-in labeling client with Office on the web for documents 
 
 When you label a document or email, the label is stored as metadata that includes your tenant and a label GUID. When a labeled document or email is opened by an Office app that supports sensitivity labels, this metadata is read and only if the user belongs to the same tenant, the label displays in their app. For example, for built-in labeling for Word, PowerPoint, and Excel, the label name displays on the status bar. 
 
-This means that if you share documents with another organization that uses different label names, each organization can apply and see their own label applied to the document. However, the following elements from an applied label are visible to users outside your organization:
+This implementation means that if you share documents with another organization that uses different label names, each organization can apply and see their own label applied to the document. 
+
+The same is true for email (and labeled calendar events) sent by Outlook. However, email clients other than Outlook might not retain the label metadata in the email headers. For example, users replying or forwarding from another organization that doesn't use Outlook will likely result in the original email label no longer visible to the original organization because the label metadata hasn't been retained. If that label applied encryption, the encryption persists to protect the contents.
+
+The following elements from an applied label are visible to users outside your organization:
 
 - Content markings. When a label applies a header, footer, or watermark, these are added directly to the content and remain visible until somebody modifies or deletes them.
 
-- The name and description of the underlying protection template from a label that applied encryption. This information displays in a message bar at the top of the document, to provide information about who is authorized to open the document, and their usage rights for that document.
+- The name and description of the underlying protection template from a label that applied encryption. This information displays in a message bar at the top of the content, to provide information about who is authorized to view the content, and their usage rights for that content.
 
 ### Sharing encrypted documents with external users
 
@@ -400,11 +404,13 @@ Deploy this setting by using Group Policy, or by using the [Cloud Policy service
 
 Supported in preview for built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support this feature.
 
-When Word, Excel, and PowerPoint support this feature, sensitivity labels are displayed in a sensitivity bar, next to the file name on the top window bar. For example:
+When Word, Excel, and PowerPoint support this feature, sensitivity labels are displayed in a sensitivity bar next to the file name on the top window bar. For example:
 
 ![Sensitivity labels on the window title bar.](../media/sensitivity-bar-example.png)
 
-When Outlook supports this feature, the sensitivity bar is displayed on the **Subject** line of the email.
+When Outlook supports this feature, the sensitivity bar is displayed on the **Subject** line of the email. For example:
+
+![Sensitivity labels on the Outlook Subject line.](../media/sensitivity-bar-example-outlook.png)
 
 Information about the labels and the ability to select or change a label are also integrated into user workflows that includes save and rename, export, share, print, and [convert to PDF](#pdf-support). For more information and example screenshots, see the blog post announcement, [New sensitivity bar in Office for Windows](https://insider.office.com/blog/sensitivity-bar-in-office-for-windows).
 
@@ -415,7 +421,7 @@ As part of this high visibility, these labels also support colors. For more info
 > [!IMPORTANT]
 > If your labeling apps don't support this capability, they don't display the configured label colors.
 > 
-> The Azure Information Protection unified labeling client supports label colors. For labeling built in to Office, label colors are currently supported in preview for Windows, but not yet for macOS, or Office for the web. For more information, see the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md).
+> The Azure Information Protection unified labeling client supports label colors. For labeling built in to Office apps, see the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md).
 
 Newly created labels don't have a color by default. If your labels were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) or you configured label colors for the Azure Information Protection unified labeling client, these label colors are now displayed in apps that support them.
 
