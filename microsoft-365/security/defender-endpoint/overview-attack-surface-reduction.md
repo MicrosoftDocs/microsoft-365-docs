@@ -18,7 +18,7 @@ ms.subservice: mde
 ms.collection: 
 - m365-security
 - tier2
-ms.date: 05/16/2022
+ms.date: 01/16/2023
 search.appverid: met150
 ---
 
