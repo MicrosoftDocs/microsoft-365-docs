@@ -71,7 +71,7 @@ There are roles and role groups that you can use to fine-tune your access contro
 |                   | Information Protection Readers   |   |            |
 
 > [!NOTE]
-> Roles other than Global Admin and Compliance Admin can only view activities. They are not allowed to view the sensitive content itself.
+> Roles, other than the Global Admin and Compliance Admin roles, can view activities only, not the sensitive content itself.
 
 ## Activity types
 
