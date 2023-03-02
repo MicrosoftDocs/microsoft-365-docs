@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 02/28/2023
+ms.date: 03/01/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -110,7 +110,7 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 
 - `DisableLocalAdminMerge` is enabled. (See [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp).)
 - Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. (See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
-- Tamper protection is deployed and managed by using Intune, and devices are managed by Intune. (See [Manage tamper protection for your organization using Microsoft Intune](manage-tamper-protection-microsoft-endpoint-manager.md).)
+- Tamper protection is deployed and managed by using Intune, and devices are managed by Intune. (See [How to tell if a Windows device is managed by Intune](manage-tamper-protection-microsoft-endpoint-manager.md#how-to-tell-if-a-windows-device-is-managed-by-intune).)
 - Devices are running Windows Defender platform `4.18.2211.5` or later. (See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).)
 - Functionality to protect exclusions is enabled on devices. (See [How to determine whether the functionality is enabled on a Windows device](#how-to-determine-whether-the-functionality-to-protect-exclusions-is-enabled-on-a-windows-device).)
 
@@ -123,11 +123,16 @@ You can use a registry key to determine whether the functionality to protect Mic
 
 1. On a Windows device open Registry Editor. (Read-only mode is fine; you won't be editing the registry key.)
 
-2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for the `REG_DWORD` entries that are listed in the following table: 
+2. To confirm that the device is managed by Intune only, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` (or `HKLM\SOFTWARE\Microsoft\Windows Defender`), and look for a `REG_DWORD` entry called **ManagedDefenderProductType**. 
+
+   - If **ManagedDefenderProductType** has a value of `6`, then the device is managed by Intune only (*this value is required for exclusions to be tamper protected*).
+   - If **ManagedDefenderProductType** has a value of `7`, then the device is co-managed, such as by Intune and Configuration Manager.
+
+3. To confirm that tamper protection is deployed and that exclusions are tamper protected, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for the `REG_DWORD` entries that are listed in the following table: 
 
    | REG_DWORD | Value | What it means |
    |:---|:---|:---|
-   | **TamperProtection** | 5 | Tamper protection is deployed. |
+   | **TamperProtection** | 5 | Tamper protection is deployed to the device. |
    | **TamperProtectionSource** | 64 | Tamper protection is managed by Intune. |
    | **TPExclusions** | 1 | Required conditions are met, and the new functionality to protect exclusions is enabled on the device. In this case, exclusions are tamper protected. |
    | **TPExclusions** | 0 | Tamper protection isn't currently protecting exclusions on the device. |
