@@ -26,13 +26,12 @@ There are two areas of Intune used to manage app licenses:
 
 ### Connector status
 
-Connectors are connections you configure from Intune to external services, such as Apple Volume Purchase Program service. **Connector status** is provided as part of the tenant status in Intune. When you view the **Connector status** in Intune, you are provided with connectors that are unhealthy, connectors with warnings, and connectors that are healthy. In addition, Intune lists connectors that are **Not Enabled**.
+Connectors are connections you configure from Intune to external services, such as the Apple Volume Purchase Program service. **Connector status** is provided as part of the tenant status in Intune. When you view the **Connector status** in Intune, you are provided with connectors that are unhealthy, connectors with warnings, and connectors that are healthy. In addition, Intune lists connectors that are **Not Enabled**.
+
+:::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-16.png" alt-text="Connector status in Intune" border="false" :::
 
 > [!TIP]
-> A tenant is an instance of Azure Active Directory (Azure AD). Your subscription to Intune is hosted by an Azure AD Tenant. For more information, see [Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) in the Azure AD documentation.
-
-Use the following steps to add in-volume apps to Intune:
-1. Confirm that the connectors your Intune tenant is using are healthy.
+> A tenant is an instance of Azure Active Directory (Azure AD). When you set up Microsoft Intune a tenant is created for you. Your subscription to Intune is hosted by an Azure AD tenant.
 
 ### Monitor app licenses
 
@@ -41,6 +40,8 @@ Using Intune, you can view the licenses in-use, the available licenses, and the 
 ## Manage apps
 
 You can view a list of all apps that have been added to Intune. This list provides details about each apps, such as the type, status, and verision. Also, the list shows whether the app has been assigned to members of your organization.
+
+:::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-17.png" alt-text="App licenses in Intune" border="false" :::
 
 ### App reports
 
@@ -65,5 +66,3 @@ For more information about how to proceed, see the following topics:
 - [App protection policies overview](/mem/intune/apps/app-protection-policy)
 - [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy)
 - [Monitor app information and assignments with Microsoft Intune](/mem/intune/apps/apps-monitor)
-
-
