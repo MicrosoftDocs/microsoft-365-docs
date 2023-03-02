@@ -348,8 +348,7 @@ Download the onboarding package from Microsoft 365 Defender portal.
     > To run this command, you must have `python`  or `python3` installed on the device depending on the distro and version. If needed, see [Step-by-step Instructions for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
     
     > [!NOTE]
-    > #### Re-onboarding
-    > If you wish to `re-onboard`(onboarding after offboarding) the device, make sure to first remove mdatp_offboard.json file located at /etc/opt/microsoft/mdatp.
+    > To onboard a device that was previously offboarded you must remove the mdatp_offboard.json file located at /etc/opt/microsoft/mdatp.
 
     If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
 
