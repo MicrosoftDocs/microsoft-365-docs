@@ -7,10 +7,11 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 11/18/2019
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
+  - tier2
 ms.custom: 
   - Ent_Solutions
   - SIEM
@@ -24,7 +25,7 @@ search.appverid: met150
 # Security Information and Event Management (SIEM) server integration with Microsoft 365 services and applications
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 

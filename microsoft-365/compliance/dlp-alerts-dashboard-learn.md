@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 02/28/2023
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -99,7 +99,20 @@ Here are some of the events associated with an alert. In the UI, you can choose 
 |user overrode policy |did the user override the policy via a policy tip | all events|
 |use override justification |the text of the reason provided by the user for the override | all events|   
 
+## Investigate DLP incidents in Microsoft 365 Defender portal
+
+Incidents for Microsoft Purview Data Loss Prevention (DLP) can be managed in the Microsoft 365 Defender portal. See, [Investigate data loss incidents with Microsoft 365 Defender](../security/defender/investigate-dlp.md) for details. You can manage DLP incidents along with security incidents from **Incidents & alerts** > **Incidents** on the quick launch of the Microsoft 365 Defender portal.
+
+From this page, you can:
+
+- View all your DLP alerts grouped under incidents in the Microsoft 365 Defender incident queue.
+- View intelligent inter-solution (DLP-MDE, DLP-MDO) and intra-solution (DLP-DLP) correlated alerts under a single incident.
+- Hunt for compliance logs along with security under Advanced Hunting.
+- In-place admin remediation actions on user, file, and device.
+- Associate custom tags to DLP incidents and filter by them.
+- Filter by DLP policy name, tag, Date, service source, incident status, and user on the unified incident queue.
+
 ## See Also
 
 - [Get started with the data loss prevention alert dashboard](dlp-alerts-dashboard-get-started.md)
-- [Where to start with data loss prevention](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)

@@ -23,6 +23,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
+ms.date: 05/14/2021
 ---
 
 # Enable the evaluation environment for Microsoft Defender for Cloud Apps

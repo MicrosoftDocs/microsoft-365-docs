@@ -6,6 +6,8 @@
       items:
       - name: What is Microsoft 365 Defender
         href: microsoft-365-defender.md
+      - name: Zero Trust with Microsoft 365 Defender
+        href: zero-trust-with-microsoft-365-defender.md  
       - name: Microsoft 365 Defender portal
         href: microsoft-365-defender-portal.md
       - name: What's new in Microsoft 365 Defender
@@ -112,14 +114,16 @@
       items: 
       - name: Microsoft Secure Score
         items: 
+          - name: What's new
+            href: microsoft-secure-score-whats-new.md
           - name: Secure Score overview
             href: microsoft-secure-score.md
           - name: Assess your security posture
             href: microsoft-secure-score-improvement-actions.md
           - name: Track your score history and meet goals
             href: microsoft-secure-score-history-metrics-trends.md
-          - name: What's new
-            href: microsoft-secure-score-whats-new.md
+          - name: Secure Score data storage and privacy
+            href: secure-score-data-storage-privacy.md
       - name: Protect your endpoints 
         href: ../defender-endpoint/index.yml
       - name: Protect your identities
@@ -215,7 +219,15 @@
               - name: View details and results
                 href: m365d-autoir-results.md
               - name: Address false positives and negatives
-                href: m365d-autoir-report-false-positives-negatives.md   
+                href: m365d-autoir-report-false-positives-negatives.md
+       - name: Manage automatic attack disruption
+         items: 
+              - name: Overview
+                href: automatic-attack-disruption.md
+              - name: Configure capabilities
+                href: configure-attack-disruption.md
+              - name: View details and results
+                href: autoad-results.md             
        - name: Search for threats with advanced hunting
          items: 
              - name: Overview
@@ -410,18 +422,38 @@
          href: integrate-microsoft-365-defender-secops-tasks.md
     - name: Reference
       items: 
-        - name: Permissions & settings
-          items: 
-            - name: Manage access
+      - name: Manage roles and permissions
+        items: 
+            - name: Manage access to Microsoft 365 Defender
               href: m365d-permissions.md
             - name: Custom roles in role-based access 
               href: custom-roles.md
+            - name: Manage permissions with Microsoft 365 Defender RBAC
+              items: 
+              - name: Overview
+                href: manage-rbac.md
+              - name: Create custom roles 
+                href: create-custom-rbac-roles.md
+              - name: Import roles
+                href: Import-rbac-roles.md
+              - name: Activate Microsoft 365 Defender RBAC 
+                href: activate-defender-rbac.md
+              - name: Edit and delete roles
+                href: edit-delete-rbac-roles.md
+              - name: Map RBAC permission
+                href: compare-rbac-roles.md
+              - name: About RBAC custom permission
+                href: custom-permissions-details.md
+      - name: Portal settings
+        items: 
             - name: Set time zone
               href: m365d-time-zone.md
             - name: View device profiles
               href: device-profile.md
             - name: Troubleshoot Microsoft 365 Defender service issues
               href: troubleshoot.md
+            - name: Configure alert notifications
+              href: configure-email-notifications.md
             - name: Provide feedback
               href: feedback.md
             - name: Provide managed service provider (MSSP) access
@@ -430,8 +462,8 @@
               items: 
                - name: ServiceNow integration overview
                  href: ./tickets.md
-        - name: Microsoft 365 Defender APIs
-          items: 
+      - name: Microsoft 365 Defender APIs
+        items: 
             - name: Overview of Microsoft 365 Defender APIs
               href: api-overview.md
             - name: Supported Microsoft 365 Defender APIs
@@ -496,8 +528,8 @@
                  href: ../defender-endpoint/professional-services.md           
             - name: Understand threat intelligence concepts
               href: ../defender-endpoint/threat-indicator-concepts.md 
-        - name: Security intelligence
-          items: 
+      - name: Security intelligence
+        items: 
           - name: Safety Scanner download
             href: ../intelligence/safety-scanner-download.md
           - name: Understand malware & other threats

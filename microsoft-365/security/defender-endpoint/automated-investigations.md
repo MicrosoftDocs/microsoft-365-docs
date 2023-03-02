@@ -107,5 +107,5 @@ Currently, AIR only supports the following OS versions:
 ## See also
 
 - [PUA protection](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Automated investigation and response in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-air)
+- [Automated investigation and response in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-about)
 - [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)

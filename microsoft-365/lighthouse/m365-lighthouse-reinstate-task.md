@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: kywirpel
+ms.date: 10/24/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -26,7 +27,7 @@ You can reinstate a dismissed deployment task within Microsoft 365 Lighthouse.
 
 ## Before you begin
 
-Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
 Additionally, each partner tenant user must meet the following requirements:
 
@@ -44,7 +45,7 @@ Additionally, each partner tenant user must meet the following requirements:
 2. Select the appropriate tenant from the list.
 3. Select **Deployment plan** tab.
 4. From the task list, select the task you want to reinstate.
-5. From the task details pane, select **Reinstate.**
+5. From the task details pane, select **Reinstate**.
 6. From the **Reinstate task** dialog box, select **Reinstate**.
 
 You can also select **More actions** (ellipsis icon) option directly from the task list to reinstate the task. Once a task is reinstated, status detection and reporting will update accordingly.
@@ -52,7 +53,7 @@ You can also select **More actions** (ellipsis icon) option directly from the ta
 ## Related content
 
 [Dismiss a task in Microsoft 365 Lighthouse](m365-lighthouse-dismiss-task.md) (article)\
-[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
 [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\
-[Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

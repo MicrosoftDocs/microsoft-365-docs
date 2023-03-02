@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection:
 - m365-security
-- m365initiative-defender-office365
+- tier2
 ms.custom:
 description: Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 06/10/2021
+ms.date: 1/31/2023
 ---
 
 # Review and manage remediation actions in Office 365
@@ -50,10 +50,13 @@ There are four different ways to find and take auto investigation actions:
 ## Incident queue
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Incidents** page at **Incidents & alerts** \> **Incidents**. To go directly to the **Incidents** page, use <https://security.microsoft.com/incidents>.
-2. On the **Incidents** page, select an incident name to open its summary page.
-3. Select the **Evidence and Response** tab.
-4. Select an item in the list. Its side pane opens.
-5. In the side pane, take approve or reject actions.
+2. Filter on **Pending action** for the Automated investigation state (optional).
+3. On the **Incidents** page, select an incident name to open its summary page.
+4. Select the **Evidence and Response** tab.
+5. Select an item in the list to open its flyout pane.
+6. Review the information, and then take one of the following steps:
+   - Select the Approve pending action option to initiate a pending action.
+   - Select the Reject pending action option to prevent a pending action from being taken.
 
 ## Action center
 
@@ -93,7 +96,7 @@ There are two different ways to reconsider submitted actions:
 
 ## Next steps
 
-- [Use Threat Explorer](threat-explorer.md)
+- [Use Threat Explorer](threat-explorer-about.md)
 - [Admin /Manual Actions](remediate-malicious-email-delivered-office-365.md)
 - [How to report false positives/negatives in automated investigation and response capabilities](air-report-false-positives-negatives.md)
 
