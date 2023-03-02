@@ -69,7 +69,6 @@ There are roles and role groups that you can use to fine-tune your access contro
 | Information Protection Investigator | Information Protection Investigators |Security Admins | Security Reader |
 | Information Protection Reader | Information Protection Analysts | Compliance Data Admins |  |
 |                   | Information Protection Readers   |   |            |            |
-|                   |                     |   |            |            |
 
 > [!NOTE]
 > Roles other than Global Admin and Compliance Admin can only view activities. They are not allowed to view the sensitive content itself.
