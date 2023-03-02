@@ -313,7 +313,7 @@ If you haven't already done so, you can copy the values for the **Azure App ID**
 You can also select **Edit** to change the Azure App ID or the column header names that you defined on the **File mapping** page.
 
 > [!NOTE]
-> If you have trouble running the HR connector script, you can whitelist the URL 'https://webhook.ingestion.office.com' and try again.
+> If you have trouble running the HR connector script, you can add the URL 'https://webhook.ingestion.office.com' to the allowlist and try again.
 
 ## Step 4: Run the sample script to upload your HR data
 
