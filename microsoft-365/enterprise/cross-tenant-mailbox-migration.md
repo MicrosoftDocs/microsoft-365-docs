@@ -385,7 +385,7 @@ While Teams meetings are moved, the meeting URL isn't updated when items migrate
 
 ### What content is migrated cross-tenant?
 
-When a mailbox is migrated cross-tenant with this feature, only user-visible content in the mailbox, also known as Top of Information Store (email, contacts, calendar, tasks, and notes), and the Recoverable Items folders Deletions, Versions and Purges is migrated.  
+When a mailbox is migrated cross-tenant with this feature, only user-visible content in the mailbox, also known as Top of Information Store (email, contacts, calendar, tasks, and notes), and the Recoverable Items folders Deletions, Versions, and Purges is migrated.  
 
 ### Does the Teams chat folder content migrate cross-tenant?
 
