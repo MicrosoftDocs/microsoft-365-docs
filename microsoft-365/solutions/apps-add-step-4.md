@@ -16,7 +16,7 @@ keywords:
 
 # Step 4. Add apps to Intune
 
-Once you have assessed your app requirements, created categories for your apps in Intune, and purchased any needed apps that aren't freely available, you can add the apps to Intune.
+Once you've assessed your app requirements, created categories for your apps in Intune, and purchased any needed apps that aren't freely available, you can add the apps to Intune.
 
 You use [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) to find, select, and add apps to Intune. When you add an app to Intune, you start by selecting the **app type**, such as **iOS store app**. Then, you can find and select the app that you need to add. Once you've select the app, you can add information about the app the members of your organization will see, such as app name, description, and minimum operating system needed. Additionally, if you already have groups of users available, you can assign those. Lastly, you create the app, which adds it to Intune.
 
@@ -35,7 +35,7 @@ For instance, if you have a Microsoft 365 E5 license, consider adding the follow
 - Microsoft Outlook
 - Microsoft  Teams
 
-These apps support the core Intune app protection policy settings and are also capable of supporting advanced app protection policy and app configuration policy settings. Each app has a different protection and configuration capabilities. These capabilities include the following:
+These apps support the core Intune app protection policy settings and are also capable of supporting advanced app protection policy and app configuration policy settings. Each app has a different protection and configuration capabilities. These include the following capabilities:
 
 - Core app protection policy settings
 - App configuration
@@ -67,13 +67,13 @@ For more information, see the following resources:
 
 ## Add volume purchased apps to Intune
 
-Once you have added the apps included with you're Intune license to the Intune console, consider adding the apps that the members of your organization use most often. Those apps may be store apps, line-of-business apps, or web apps. Store apps can be purchased or acquired in-volume for iOS/iPadOS devices.
+Once you've added the apps included with you're Intune license to the Intune console, consider adding the apps that the members of your organization use most often. Those apps may be store apps, line-of-business apps, or web apps. Store apps can be purchased or acquired in-volume for iOS/iPadOS devices.
 
 Use the following steps to add in-volume apps to Intune:
 
 1. Determine which apps are used by members of your organization.
 2. Narrow your app list to focus on the apps that are most used and most needed.
-3. Determine which apps require your organization to have a license for the apps and that are not already included as part of your Intune license.
+3. Determine which apps require your organization to have a license for the apps and that aren't already included as part of your Intune license.
 4. Determine which apps are available in the Apple app stores as part of their [volume purchase program](apps-purchase-volume.md). 
 
     > [!NOTE]

@@ -35,13 +35,13 @@ App licenses that you purchase in-volume are purchased through a volume purchase
 
 ### Set up Apple Business Manager<!-- How to set up? -->
 
-You can purchase app licenses from Apple Business Manager in-volume. Before purchasing licenses, first determine the number of licenses you need. Once you have purchased the app licenses, you can then synchronize your volume purchase information with Intune and track your volume-purchased app use. Purchasing app licenses helps you efficiently manage apps within your company and retain ownership and control of purchased apps. Before you use Microsoft Intune to manage the iOS/iPadOS and macOS apps that your organization would like to use, you must follow Apple's guidelines to check requirements, sign-up, and purchase apps.
+You can purchase app licenses from Apple Business Manager in-volume. Before purchasing licenses, first determine the number of licenses you need. Once you've purchased the app licenses, you can then synchronize your volume purchase information with Intune and track your volume-purchased app use. Purchasing app licenses helps you efficiently manage apps within your company and retain ownership and control of purchased apps. Before you use Microsoft Intune to manage the iOS/iPadOS and macOS apps that your organization would like to use, you must follow Apple's guidelines to check requirements, sign-up, and purchase apps.
 
 Follow Apple's guidelines to set up Apple Business Manager:
 1. Confirm you meet the [requirements](https://support.apple.com/guide/apple-business-manager/program-requirements-axm6d9dc7acf/web) to use Apple Business Manager.
 2. [Sign up for Apple Business Manager](https://support.apple.com/guide/apple-business-manager/sign-up-axm402206497).
 
-After you have signed up to use Apple Business Manager and purchased your app licenses, you can sync from Microsoft Intune to manage your Apple apps on the Apple devices used at your organization. Managing apps with Intune includes setting the app configuration policies, setting the app protection policies, assigning the apps, and monitor the apps. 
+After you've signed up to use Apple Business Manager and purchased your app licenses, you can sync from Microsoft Intune to manage your Apple apps on the Apple devices used at your organization. Managing apps with Intune includes setting the app configuration policies, setting the app protection policies, assigning the apps, and monitor the apps. 
 
 ### Purchase apps using Apple Business Manager<!-- How do you buy apps? -->
 
@@ -60,9 +60,9 @@ For related information about purchasing apps, see [Intro to purchasing content 
 
 ### Sync purchased Apple app licenses with Microsoft Intune<!-- What does sync mean (certs)? How to sync? -->
 
-Microsoft Intune helps you manage apps you purchased from Apple Business Manager by synchronizing app license information (location tokens) you download from Apple Business Manager. Location tokens are volume purchase licenses that were commonly known as Volume Purchase Program (VPP) tokens. With VPP tokens you can assign and manage licenses purchased using Apple Business Manager. These tokens are then downloaded from Apple Business Manager and uploaded into Microsoft Intune. Each token is commonly valid for one year.
+Microsoft Intune helps you manage apps you purchased from Apple Business Manager by synchronizing app license information (location tokens) you download from Apple Business Manager. Location tokens are volume purchase licenses that were commonly known as Volume Purchase Program (VPP) tokens. With VPP tokens, you can assign and manage licenses purchased using Apple Business Manager. These tokens are then downloaded from Apple Business Manager and uploaded into Microsoft Intune. Each token is commonly valid for one year.
 
-Follow the Intune guidelines to upload and sync a Apple VPP token:
+Follow the Intune guidelines to upload and sync an Apple VPP token:
 - Upload multiple location tokens per tenant](/mem/intune/apps/vpp-apps-ios#upload-an-apple-vpp-or-apple-business-manager-location-token) using Intune.
 
 In addition to synchronizing location tokens, Intune help you track how many licenses are available and have been used for purchased apps, and helps you install apps up to the number of licenses you own.
@@ -81,11 +81,11 @@ Follow the Intune guidelines to assign iOS/iPadOS apps:
 
 ## Microsoft Store<!-- What is it? -->
 
-[Microsoft Store](https://www.microsoft.com/business-store) is a web-based portal that allows you to find apps that can be managed by Intune. Admins can browse, deploy, and monitor Microsoft Store applications inside Intune. Upon deployment, Intune automatically keeps the apps up to date when a new version becomes available. The Microsoft Store supports UWP apps, desktop apps packaged in .msix, and now Win32 apps packaged in .exe or .msi installers.
+[Microsoft Store](https://www.microsoft.com/business-store) is a web-based portal that allows you to find apps that can be managed by Intune. Admins can browse, deploy, and monitor Microsoft Store applications inside Intune. Upon deployment, Intune automatically keeps the apps up to date when a new version becomes available. The Microsoft Store supports UWP apps, desktop apps packaged in *.msix*, and now Win32 apps packaged in *.exe* or *.msi* installers.
 
 ### Access Microsoft Store<!-- How to set up? -->
 
-You can add free apps to Microsoft Intune from the Microsoft store. Often times, those free apps that require a license can be added to Intune and distributed to your organization. However, you may need a license, subscription, or user account to use the app. Before you use Microsoft Intune to manage the apps your purchase, you should check requirements. 
+You can add free apps to Microsoft Intune from the Microsoft store. Oftentimes, those free apps that require a license can be added to Intune and distributed to your organization. However, you may need a license, subscription, or user account to use the app. Before you use Microsoft Intune to manage the apps your purchase, you should check requirements. 
 
 Microsoft Store requirements:
 - Confirm that your [mobile device management (MDM) authority](/mem/intune/fundamentals/mdm-authority-set) is set to **Microsoft Intune**.
@@ -101,7 +101,7 @@ Select apps that you want to include in Intune:
 
 ## Managed Google Play<!-- What is it? -->
 
-Managed Google Play apps are available to add to Intune from the [Managed Google Play store](https://play.google.com/work). Intune can deploy these apps specifically to Android Enterprise devices. You can use Intune to deploy apps through the Managed Google Play store for any Android Enterprise device scenarios, including personally-owned work profile, dedicated, fully managed, and corporate-owned work profile enrollments. 
+Managed Google Play apps are available to add to Intune from the [Managed Google Play store](https://play.google.com/work). Intune can deploy these apps specifically to Android Enterprise devices. You can use Intune to deploy apps through the Managed Google Play store for any Android Enterprise device scenarios, including personally owned work profile, dedicated, fully managed, and corporate-owned work profile enrollments. 
 
 There are three types of Managed Google Play apps:
 - [Managed Google Play store app](/mem/intune/apps/apps-add-android-for-work#managed-google-play-store-apps)
@@ -110,7 +110,7 @@ There are three types of Managed Google Play apps:
 
 ### Add a Managed Google Play store app to Intune
 
-Managed Google Play apps are available to add to Intune from the managed Google Play Store. Intune can deploy these apps specifically to Android Enterprise devices. Intune provides the **Managed Google Play app** type as an option within Intune which makes it easy to add these apps to Intune. You can browse and approve Managed Google Play apps in a view hosted within Intune. You don't have to reauthenticate with a different account when adding these apps.
+Managed Google Play apps are available to add to Intune from the managed Google Play Store. Intune can deploy these apps specifically to Android Enterprise devices. Intune provides the **Managed Google Play app** type as an option within Intune, which makes it easy to add these apps to Intune. You can browse and approve Managed Google Play apps in a view hosted within Intune. You don't have to reauthenticate with a different account when adding these apps.
 
 Follow the Intune guidelines to add Managed Google Play apps:
 - Confirm that your [mobile device management (MDM) authority](/mem/intune/fundamentals/mdm-authority-set) is set to **Microsoft Intune**.
@@ -120,9 +120,9 @@ Follow the Intune guidelines to add Managed Google Play apps:
 > [!NOTE]
 > As an alternative, you can specifically connect Your Intune tenant to Managed Google Play, approve Managed Google Play apps, and sync those apps with Microsoft Intune. This process follows similar steps used to approve and sync apps for other platforms. For more information, see [Add a Managed Google Play store app in the Managed Google Play console (Alternative)](/mem/intune/apps/apps-add-android-for-work#add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative).
 
-To make it easier for you to configure and use Android Enterprise management, upon connecting your Intune tenant to Managed Google Play, Intune will automatically add four common Android Enterprise related apps to the Intune admin center. The four apps are the following:
+To make it easier for you to configure and use Android Enterprise management, upon connecting your Intune tenant to Managed Google Play, Intune will automatically add four common Android Enterprise related apps to the Intune admin center. The four are the following apps:
 
 - **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - Used for Android Enterprise fully managed scenarios. This app is automatically installed to fully managed devices during the device enrollment process.
 - **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** - Helps you sign-in to your accounts if you use two-factor verification. This app is automatically installed to fully managed devices during the device enrollment process.
-- **[Intune Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - Used for App Protection Policies and Android Enterprise personally-owned work profile scenarios. This app is automatically installed to fully managed devices during the device enrollment process.
+- **[Intune Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - Used for App Protection Policies and Android Enterprise personally owned work profile scenarios. This app is automatically installed to fully managed devices during the device enrollment process.
 - **[Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise)** - Used for Android Enterprise dedicated multi-app kiosk scenarios. IT admins should create an assignment to install this app on dedicated devices that are going to be used in multi-app kiosk scenarios.

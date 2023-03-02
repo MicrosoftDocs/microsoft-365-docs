@@ -16,7 +16,7 @@ keywords:
 
 # Purchase apps for Intune
 
-There are a variety of apps that you can use with Microsoft Intune. Some apps are free for the members of your organization to use, while other apps require either a license and/or an account for each user to use the app. For instance, Microsoft Outlook requires both a license and an account to use the app. Within [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), you can select store apps and freely add them to Intune. Based on the supported integration with Intune, you can then configure these apps so that the members of your organization can easily set them up and use them based on your unique company requirements. Also, you can add app protection policies for each app to protect your company's data on a variety of levels.
+There are a variety of apps that you can use with Microsoft Intune. Some apps are free for the members of your organization to use, while other apps require either a license and/or an account for each user to use the app. For instance, Microsoft Outlook requires both a license and an account to use the app. Within [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), you can select store apps and freely add them to Intune. Based on the supported integration with Intune, you can then configure these apps so that the members of your organization can easily set them up and use them based on your unique company requirements. Also, you can add app protection policies for each app to protect your company's data on various levels.
 
 > [!NOTE]
 > Many of the apps available from Intune are free to add to Intune and assign to members of your organization. Apps that you must purchase to add to Intune are available through a volume purchase program. For app licensing information, see [Understand app licenses used in Intune](apps-license-overview.md).
@@ -46,7 +46,7 @@ For more information about store apps, see [Purchase store apps for Intune](apps
 
 ### Volume purchased apps
 
-The Apple stores give you the ability to purchase multiple licenses for an app (or book) that you want to distribute to the members of your organization. Buying licenses in bulk can help you reduce the administrative overhead of tracking multiple purchased copies of apps. Microsoft Intune helps you manage apps and books that you purchased through such a program. You import license information from the store vendor, and track how many licenses you have used. This process helps to ensure that you don't install more copies of the app than you own.
+The Apple stores give you the ability to purchase multiple licenses for an app (or book) that you want to distribute to the members of your organization. Buying licenses in bulk can help you reduce the administrative overhead of tracking multiple purchased copies of apps. Microsoft Intune helps you manage apps and books that you purchased through such a program. You import license information from the store vendor, and track how many licenses you've used. This process helps to ensure that you don't install more copies of the app than you own.
 
 > [!NOTE]
 > You can use Intune policies to block end-users from accessing the app store on their devices. You can also remove purchase restriction by allowing end-users to add new accounts to their device. Doing so will enable end-users to be able to purchase store apps for their personal use.
@@ -63,9 +63,9 @@ For more information about volume purchased apps, see [Purchase apps in volume f
 
 ### Partner productivity apps
 
-There are several [Intune partner productivity apps](/mem/intune/apps/apps-supported-intune-apps.md#partner-productivity-apps) that support Intune configuration and protection. These apps are available from a variety of sources and often provide support for both iOS/iPadOS and Android devices. For apps that require you to purchase a license, subscription, or account for each user to use the app, you will need to work directly with the app vendor.
+There are several [Intune partner productivity apps](/mem/intune/apps/apps-supported-intune-apps.md#partner-productivity-apps) that support Intune configuration and protection. These apps are available from various sources and often provide support for both iOS/iPadOS and Android devices. For apps that require you to purchase a license, subscription, or account for each user to use the app, you'll need to work directly with the app vendor.
 
-Areas of support include the following:
+Areas of support include the following settings:
 - [Core Intune app protection policy settings](/mem/intune/apps/apps-supported-intune-apps.md#core-app-settings)
 - [Advanced Intune app protection policy and app configuration policy settings](/mem/intune/apps/apps-supported-intune-apps.md#advanced-app-settings)
 
@@ -75,7 +75,7 @@ In addition to standard store apps that can be managed, you can add specific [pa
 
 ### In-app purchases
 
-Many apps offer core functionality for free, however there are those apps that provide additional capabilities that you can purchase from within the app. Purchasing additional app functionality within an app is called "in-app purchases".
+Many apps offer core functionality for free, however there are those apps that provide more capabilities that you can purchase from within the app. Purchasing additional app functionality within an app is called "in-app purchases".
 
 #### iOS in-app purchase settings
 
@@ -83,8 +83,8 @@ You can choose to block in-app purchases specifically for iOS devices using devi
 
 #### Android in-app purchase settings
 
-On Android devices, you can allow access to all apps in Google Play store by allowing users to add new accounts to the device. However, doing so will enable end users not only to have the ability to conduct in-app purchases from the Google Play store using personal accounts, but purchase apps as well.
+On Android devices, you can allow access to all apps in Google Play store by allowing users to add new accounts to the device. However, doing so enables end users not only to have the ability to conduct in-app purchases from the Google Play store using personal accounts, but purchase apps as well.
 
 ## Verify purchased apps in Intune
 
-You can verify the apps that you have purchased to use with Intune by checking details within Intune. You can manage app store tokens, view app store connectors, and monitor app licenses from Intune. For more information, see [Manage app licenses used in Intune](apps-license-manage.md).
+You can verify the apps that you've purchased to use with Intune by checking details within Intune. You can manage app store tokens, view app store connectors, and monitor app licenses from Intune. For more information, see [Manage app licenses used in Intune](apps-license-manage.md).

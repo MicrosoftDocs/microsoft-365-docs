@@ -22,7 +22,7 @@ The following table provides the primary ways to obtain app licenses that you ca
 
 | App   license type | Description |
 |---|---|
-| Standard license included with app | You can freely add these apps to Intune and deploy them to the members of your organization. These apps do not require any additional cost to use.  |
+| Standard license included with app | You can freely add these apps to Intune and deploy them to the members of your organization. These apps don't require any additional cost to use.  |
 | Purchased app license  | You must purchase licenses for these apps before adding them to Intune and deploying them to members of your   organization. Each device platform (Windows, iOS, Android) offers a standard method to purchase licenses for these apps. In addition, Intune provides methods to manage the app license for each member (end user) of your organization. |
 | License   for apps that requiring an account, subscription, or license from the app   developer | You can freely add and deploy the app from Intune, but the app requires an account, subscription, or license from the app vendor to use. |
 | Microsoft app license of apps included with your Intune license | Based on your Microsoft Intune license, you may already have Microsoft app licenses available, allowing you to add and deploy apps to members of your organization. |
@@ -42,11 +42,11 @@ For iOS apps, you can purchase or acquire app licenses in-volume through Apple's
 
 ## Apps requiring account, subscription, or license from the app vendor
 
-You can freely add and deploy most apps provided within [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), but there are apps that require an account, subscription, or license from the app vendor to use. After [assessing your organization's app requirements](apps-add-step-1.md), you must contact the app vendor for apps that you cannot purchase through a VPP program.
+You can freely add and deploy most apps provided within [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), but there are apps that require an account, subscription, or license from the app vendor to use. After [assessing your organization's app requirements](apps-add-step-1.md), you must contact the app vendor for apps that you can't purchase through a VPP program.
 
 ## Microsoft app licenses included with Intune
 
-Intune includes a number of Microsoft apps based on the Microsoft license that you use for Intune. To learn more about the different Microsoft enterprise license available that include Intune, see [Microsoft Intune licensing](/mem/intune/fundamentals/licenses). To compare the different Microsoft apps that are available with Microsoft 365, see the [licensing options available with Microsoft 365](/microsoft-365/compare-microsoft-365-enterprise-plans). To see all the options for each plan (including the available Microsoft apps), download the full [Microsoft subscription comparison table](https://go.microsoft.com/fwlink/?linkid=2139145) and locate the plans that include Microsoft Intune.
+Intune includes several Microsoft apps based on the Microsoft license that you use for Intune. To learn more about the different Microsoft enterprise license available that includes Intune, see [Microsoft Intune licensing](/mem/intune/fundamentals/licenses). To compare the different Microsoft apps that are available with Microsoft 365, see the [licensing options available with Microsoft 365](/microsoft-365/compare-microsoft-365-enterprise-plans). To see all the options for each plan (including the available Microsoft apps), download the full [Microsoft subscription comparison table](https://go.microsoft.com/fwlink/?linkid=2139145) and locate the plans that include Microsoft Intune.
 
 ### App functionality included with Microsoft 365 E5 license
 
@@ -69,7 +69,7 @@ When you purchase a plan that includes Microsoft Intune, there are [Microsoft ap
 | **Identity and access management** | Azure Active Directory Premium, Multi Factor Authentication, Microsoft Advanced Threat Analytics, and more |
 | **Data lifecycle management** | Rules-based Retention Policies, Machine Learning-bsaed Retention, and more |
 | **eDiscovery and auditing** | Content Search, eDiscovery, and more |
-| **Risk management** | Communication Compliance, Priviledged Access Management, and more |
+| **Risk management** | Communication Compliance, Privileged Access Management, and more |
 | **Windows** | Windows 11 Edition, Azure Virtual Desktop, and Universal Print |
 
 

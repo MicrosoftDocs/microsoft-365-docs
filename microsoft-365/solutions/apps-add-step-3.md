@@ -20,12 +20,12 @@ When your organization purchases a license to use Microsoft Intune, there are Mi
 
 ## Determine if you need to purchase apps
 
-If the app you need to add to Intune is not freely available as a store app or as part of your Intune license, you can consider purchasing the app.
+If the app you need to add to Intune isn't freely available as a store app or as part of your Intune license, you can consider purchasing the app.
 
 There are three primary ways you would purchase an app:
 - Purchase Apple store apps in-volume using [Apple Business Manager](apps-purchase-volume.md#apple-business-manager). Apple Business Manager provides an app Volume Purchase Program (VPP) that enables you to [purchase apps in-volume for Intune](apps-purchase-volume.md). 
-- Work with a app vendor to purchase a [subscription or license](apps-license-overview.md#apps-requiring-account-subscription-or-license-from-the-app-vendor) to use a specific app based on platform. For a list of apps that have been designed to work with Intune, see [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps).
-- Purchase a [line-of-business](apps-type-lob.md) (LOB) app from an app developer or vendor. You must work directly with the app developer or vender to purchase the app. LOB apps commonly have the following characteristics:
+- Work with an app vendor to purchase a [subscription or license](apps-license-overview.md#apps-requiring-account-subscription-or-license-from-the-app-vendor) to use a specific app based on platform. For a list of apps that have been designed to work with Intune, see [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps).
+- Purchase a [line-of-business](apps-type-lob.md) (LOB) app from an app developer or vendor. You must work directly with the app developer or vendor to purchase the app. LOB apps commonly have the following characteristics:
     - A customized app that has been specifically designed or modified for your organization.
     - An app that has been created specifically for your organization by an app developer.
 
@@ -59,7 +59,7 @@ You may need to work directly with an app developer or vendor to use an app that
 
 ## Purchase a LOB app from an app developer or vendor
 
-A line-of-business (LOB) app is an custom app that you add to Microsoft Intune from an app installation file. These apps are either developed in-house by your organization, or designed and developed by a third-party for your organization. These apps are unique to your organization. You need to work directly with the app developer to create the app for your organization. For more information, see [Understand line-of-business apps for Intune](apps-type-lob.md).
+A line-of-business (LOB) app is a custom app that you add to Microsoft Intune from an app installation file. These apps are either developed in-house by your organization, or designed and developed by a third-party for your organization. These apps are unique to your organization. You need to work directly with the app developer to create the app for your organization. For more information, see [Understand line-of-business apps for Intune](apps-type-lob.md).
 
 ## Next step
 

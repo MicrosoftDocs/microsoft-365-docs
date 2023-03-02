@@ -20,12 +20,12 @@ The [built-in app type](/mem/intune/apps/apps-add-built-in) makes it easy for yo
 
 When possible, instead of using store app types, we recommend that you use the built-in app type. By using the built-in app type, you have the additional flexibility to edit and delete Microsoft 365 apps.
 
-## Apps that are built-in
+## Apps that are built in
 
 | App type | Description |
 |---|---|
 | Built-in iOS/iPadOS app | Built-in iOS/iPadOS apps are specific apps that have been designed to work with Microsoft Intune.   |
-| Built-in Android app | Built-in Android app are specific apps that have been designed to work with Microsoft Intune. |
+| Built-in Android app | Built-in Android apps are specific apps that have been designed to work with Microsoft Intune. |
 
 *Built-in* apps can be added to Intune by selecting **Built-In app**.
 
