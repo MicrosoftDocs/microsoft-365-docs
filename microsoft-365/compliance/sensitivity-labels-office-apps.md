@@ -367,7 +367,7 @@ Whether this label inheritance will override an existing label on the email mess
 
 - Label inheritance from email attachments will replace a lower priority sensitivity label that is automatically applied or applied as a default label, but won't override a higher priority label.
 
-You configure this setting in the sensitivity label policy, on the **Default settings for emails** page. For the section Inherit label from attachments, select the checkbox **Email inherits highest priority label from attachments**. The attachment must be a physical file, and can't be a link to a file (for example, a link to a file on Microsoft SharePoint or OneDrive).
+You configure this setting in the sensitivity label policy, on the **Default settings for emails** page. For the section **Inherit label from attachments**, select the checkbox **Email inherits highest priority label from attachments**. The attachment must be a physical file, and can't be a link to a file (for example, a link to a file on Microsoft SharePoint or OneDrive).
 
 When you select this checkbox, you can then further select the following option: **Recommend users apply the attachement's label instead of automatically appplying it.** Without this selection, the label is automatically applied but users can still remove the label or select a different label before sending the email.
 
