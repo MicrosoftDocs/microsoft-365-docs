@@ -18,7 +18,7 @@ description: Admins can learn about the anti-phishing policies that are availabl
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 11/30/2022
+ms.date: 3/2/2023
 ---
 
 # Anti-phishing policies in Microsoft 365
