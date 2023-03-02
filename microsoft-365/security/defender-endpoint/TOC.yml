@@ -153,8 +153,6 @@
     items:
     - name: Onboard devices and configure Microsoft Defender for Endpoint capabilities
       href: onboard-configure.md
-    - name: Manage Defender for Endpoint P1/P2 across devices
-      href: defender-endpoint-subscription-settings.md
     - name: Onboarding Windows Client
       items:
       - name: Onboarding Windows Client overview
@@ -448,8 +446,6 @@
             href: attack-surface-reduction-rules-deployment-test.md
           - name: Enable attack surface reduction (ASR) rules
             href: attack-surface-reduction-rules-deployment-implement.md
-          - name: Operationalize attack surface reduction (ASR) rules
-            href: attack-surface-reduction-rules-deployment-operationalize.md
           - name: Operationalize attack surface reduction (ASR) rules
             href: attack-surface-reduction-rules-deployment-operationalize.md
         - name: Attack surface reduction (ASR) rules reference
