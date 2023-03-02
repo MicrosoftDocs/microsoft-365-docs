@@ -48,6 +48,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 |Forms|MicrosoftForms|
 |Information barriers|InformationBarrierPolicyApplication|
 |Microsoft 365 Defender|AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection|
+|Microsoft Defender for Identity (MDI)|MicrosoftDefenderForIdentityAudit|
 |Microsoft Teams|MicrosoftTeams|
 |MyAnalytics|MyAnalyticsSettings|
 |OneDrive for Business|OneDrive|
