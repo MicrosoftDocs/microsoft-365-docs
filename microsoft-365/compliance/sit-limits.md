@@ -21,29 +21,29 @@ ms.custom: seo-marvel-apr2020
 ---
 # Sensitive information type limits
 
-These limits apply to all sensitive information types (SIT) except exact data match sensitive information types that support up to 100 STIs.
+These limits apply to all sensitive information types (SIT) except exact data match (EDM) sensitive information types that support up to 100 STIs.
 
 > [!NOTE]
-> We support up to 100 exact data match (EDM) evaluations. Policies that use EDM SITs should not be written with a **min** or **max** instance count value greater than 100.
+> We support up to 100 exact data match evaluations. Policies that use EDM SITs should not be written with a **min** or **max** instance count value greater than 100.
 
 These limits apply to all Microsoft Purview policies that use SITs.
 
-To ensure high performance and lower latency, there are limitations in custom SIT configurations.
+To ensure high performance and lower latency, there are limitations in custom SIT configurations, as described in the following table.
 
 |Limit|Value|
 |---|---|
-|maximum number of custom SITs created through the Microsoft Purview compliance portal| 500 |
-|maximum length of regular expression| 1024 characters|
-|maximum length for a given term in a keyword list| 50 characters|
-|maximum number of terms in keyword list| 2048|
-|maximum number of distinct regexes per sensitive information type| 20|
-|maximum size of a keyword dictionary (post compression)| 1MB (~1,000,000 characters)|
-|maximum number of keyword dictionary based SITs in a tenant| 50 |
-|maximum number of MIP+MIG policies in a tenant| 10,000 |
-|maximum number of DLP rules in a policy | Limited by the size of policy (100KB) |
-|maximum number of DLP rules in a tenant | 600 |
-|maximum size of an individual DLP rule | 80KB |
-|maximum size of a DLP policy | 100KB |
+|Maximum number of custom SITs created through the Microsoft Purview compliance portal| 500 |
+|Maximum length of regular expression| 1024 characters|
+|Maximum length for a given term in a keyword list| 50 characters|
+|Maximum number of terms in keyword list| 2048|
+|Maximum number of distinct regexes per SIT| 20|
+|Maximum size of a keyword dictionary (post compression)| 1MB (~1,000,000 characters)|
+|Maximum number of keyword dictionary based SITs in a tenant| 50 |
+|Maximum number of MIP+MIG policies in a tenant| 10,000 |
+|Maximum number of DLP rules in a policy | Limited by the size of policy (100KB) |
+|Maximum number of DLP rules in a tenant | 600 |
+|Maximum size of an individual DLP rule | 80KB |
+|Maximum size of a DLP policy | 100KB |
 |Policy name character limit | 64 |
 |Policy rule character limit | 64 |
 |Comments character limit | 1024 |
