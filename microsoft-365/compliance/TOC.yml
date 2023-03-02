@@ -238,6 +238,8 @@
           href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
+        - name: Best practices for managing alert volume
+          href: communication-compliance-alerts-best-practices.md
         - name: Use communication compliance reports & audits
           href: communication-compliance-reports-audits.md
         - name: Use communication compliance with SIEM solutions 
@@ -264,13 +266,13 @@
           href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
-        - name: Capture clips with forensic evidence (preview)
+        - name: Capture clips with forensic evidence
           items:
-          - name: Learn about forensic evidence (preview)
+          - name: Learn about forensic evidence
             href: insider-risk-management-forensic-evidence.md
-          - name: Get started with forensic evidence (preview)
+          - name: Get started with forensic evidence
             href: insider-risk-management-forensic-evidence-configure.md
-          - name: Manage forensic evidence (preview)
+          - name: Manage forensic evidence
             href: insider-risk-management-forensic-evidence-manage.md
         - name: Help dynamically mitigate risks with Adaptive Protection (preview)
           href: insider-risk-management-adaptive-protection.md
@@ -294,6 +296,8 @@
           href: information-barriers-policies.md
         - name: Manage information barriers
           href: information-barriers-edit-segments-policies.md
+        - name: Use multi-segment support in information barriers
+          href: information-barriers-multi-segment.md
         - name: Information barriers attributes
           href: information-barriers-attributes.md
         - name: Information barriers & Microsoft 365 services

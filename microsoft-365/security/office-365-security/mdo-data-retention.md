@@ -14,8 +14,8 @@ ms.localizationpriority: medium
 ms.collection:
 - m365-security
 - tier2
-ms.custom: 
-description: Microsoft Defender for Office 365 data retention informationThreat Explorer/ Real-Time detections 
+ms.custom:
+description: Microsoft Defender for Office 365 data retention informationThreat Explorer/ Real-Time detections
 search.appverid: met150
 ---
 

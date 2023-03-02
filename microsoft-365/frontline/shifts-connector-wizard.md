@@ -27,6 +27,14 @@ ms.date: 2/27/2023
 
 [!INCLUDE [shifts-connector-wizard-intro](includes/shifts-connector-wizard-intro.md)]
 
+### Terms used in this article
+
+|Term |Definition |
+|-----|-----------|
+|Connection |This is where you configure your Blue Yonder WFM details by providing your service account name, password, and service URLs. This enables access to all your WFM (workforce management) instances created in your Blue Yonder WFM system. |
+|Connection instance |This is where you configure: <br> - The synchronization settings that determine how and which schedule information syncs between Blue Yonder WFM and Shifts <br> - Team mappings to define the relationship between your WFM instances and teams in Microsoft Teams |
+|WFM instance | This term refers to a site within your Blue Yonder WFM system. |
+
 ## Integrate Shifts with Blue Yonder Workforce Management
 
 The [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) enables you to integrate Shifts with Blue Yonder Workforce Management (Blue Yonder WFM) to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection and connection instance to Blue Yonder WFM through the connector.
@@ -42,15 +50,15 @@ You must be a Microsoft 365 global admin to run the wizard.
 <a name="prerequisites"> </a>
 [!INCLUDE [shifts-connector-prerequisites](includes/shifts-connector-prerequisites.md)]
 
-- The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule from the team](#remove-schedules-from-teams-you-want-to-map) before you map a Blue Yonder WFM instance to it. Otherwise, you'll see duplicate shifts.
+- The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) before you map a Blue Yonder WFM instance to it. Otherwise, you'll see duplicate shifts.
 
-## Remove schedules from teams you want to map
+## Remove schedule entities from teams you want to map
 <a name="remove_schedules"> </a>
 
 > [!NOTE]
-> Complete this step if you're mapping Blue Yonder WFM instances to existing teams that have schedules. If you're mapping to teams that don't have any schedules or if you're creating new teams to map to, you can skip this step.
+> Complete this step if you're mapping Blue Yonder WFM instances to existing teams that have schedule entities. If you're mapping to teams that don't have any schedules or if you're creating new teams to map to, you can skip this step.
 
-Use PowerShell to remove schedules from teams.
+Use PowerShell to remove schedule entities from teams.
 
 1. First, you'll need to install the PowerShell modules and get set up. Follow the steps to [set up your environment](shifts-connector-powershell-manage.md#set-up-your-environment)
 1. Run the following command:
