@@ -1,5 +1,5 @@
 ---
-title: "Purchase and add apps in your managed environment"
+title: "Purchase and add apps in Microsoft Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Purchase and add apps in your managed environment
+# Purchase and add apps in Microsoft Intune
 
 To help protect and secure your organization’s data, you can provide the members of your organization with managed apps so they can safely collaborate and be productive. Managed apps are those apps that have been enhanced to support special configuration and protection capabilities. These capabilities are managed and maintained by a endpoint management solution, such as Microsoft Intune. Intune provides a web-based console to manage, protect, and monitor all of your organization's endpoints, whether those endpoints are devices or apps. The capabilities provided by Intune helps to keep your organization's cloud and on-premises devices, apps, and data secure. The Microsoft Intune product family integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, and Windows Autopilot.
 
