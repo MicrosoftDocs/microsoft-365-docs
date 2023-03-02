@@ -77,9 +77,9 @@ You can set up Microsoft 365 Defender to notify you or your staff with an email 
 
 1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Microsoft 365 Defender** > **Email notifications** > **Incidents**.
 
-2. Update your existing email notification rules or create a new one. [Learn more about creating a rule for email notifications](/microsoft-365/security/defender/incidents-overview#create-a-rule-for-email-notifications)
+2. Update your existing email notification rules or create a new one. [Learn more about creating a rule for email notifications](/microsoft-365/security/defender/incidents-overview#create-a-rule-for-email-notifications).
 
-3. On the rule’s **Notification settings** page, make sure to configure the following: 
+3. On the rule’s **Notification settings** page, make sure to configure the following:
 
    - **Source** – Choose **Microsoft Defender Experts** under **Microsoft 365 Defender** and **Microsoft Defender for Endpoint**
 
