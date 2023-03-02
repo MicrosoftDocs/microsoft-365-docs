@@ -154,7 +154,7 @@ From the device page, you can gather additional information about the device, su
 
 ### Users
 
-The **Users** tab lists all the users that have been identified to be part of or related to the incident. Here's an example.
+The **Users** view lists all the users that have been identified to be part of or related to the incident. Here's an example.
 
 :::image type="content" source="../../media/investigate-incidents/incident-users2.png" alt-text="The Users page in the Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incident-users2.png":::
 
@@ -164,7 +164,7 @@ Learn how to view additional user information and manage the users of an inciden
 
 ### Mailboxes
 
-The **Mailboxes** tab lists all the mailboxes that have been identified to be part of or related to the incident. Here's an example.
+The **Mailboxes** view lists all the mailboxes that have been identified to be part of or related to the incident. Here's an example.
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes2.png" alt-text="The Mailboxes page for an incident in the Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incident-mailboxes2.png":::
 
@@ -172,7 +172,11 @@ You can select the check mark for a mailbox to see a list of active alerts. Sele
 
 ### Apps
 
-The **Apps** tab
+The **Apps** view lists all the apps identified to be part of or related to the incident. Here's an example.
+
+:::image type="content" source="../../media/investigate-incidents/incident-apps.png" alt-text="The Apps page for an incident in the Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incident-apps.png":::
+
+You can select the check mark for an app to see a list of active alerts. Select the app name to see additional  details on the Explorer page for Defender for Cloud Apps.
 
 ## Investigations
 
