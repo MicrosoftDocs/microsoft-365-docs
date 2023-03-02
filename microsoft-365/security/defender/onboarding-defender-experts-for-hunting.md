@@ -61,7 +61,7 @@ You can receive Defender Experts Notifications from Defender Experts through the
 - The Microsoft 365 Defender portal's [Alerts](https://security.microsoft.com/alerts) page
 - OData alerting [API](../../security/defender-endpoint/get-alerts.md) and [REST API](../defender-endpoint/configure-siem.md)
 - [DeviceAlertEvents](../../security/defender-endpoint/advanced-hunting-devicealertevents-table.md) table in Advanced hunting
-- Your email if you [configure an email notifications rule](/microsoft-365/security/defender/incidents-overview#get-incident-notifications-by-email)
+- Your email if you [configure an email notifications rule](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting#Set-up-Defender-Experts-email-notifications)
 
 ### Filter to view just the Defender Experts Notifications
 
@@ -81,7 +81,7 @@ You can set up Microsoft 365 Defender to notify you or your staff with an email 
 
 3. On the rule’s **Notification settings** page, make sure to configure the following:
 
-   - **Source** – Choose **Microsoft Defender Experts** under **Microsoft 365 Defender** and **Microsoft Defender for Endpoint**
+    - **Source** – Choose **Microsoft Defender Experts** under **Microsoft 365 Defender** and **Microsoft Defender for Endpoint**
 
    - **Alert severity** – Choose the alert severities that will trigger an incident notification. For example, if you only want to be informed about high-severity incidents, select High.
 
