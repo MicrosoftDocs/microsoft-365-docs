@@ -56,7 +56,7 @@ To view these notifications, select **View Defender Experts Notifications**. Thi
 > [!NOTE]
 > The **View Defender Experts Notifications** button only appears if the number of threats identified is at least 1.
 
-All other identified suspicious activities are summarized in a table in the **Threat categories** section of the report. The columns represent the different threat attack tactics and categories to help you visualize what an activity is trying to achieve in each attack phase so you can plan the corresponding containment and remediation actions.
+All other identified activities are summarized in a table in the **Threat categories** section of the report. The columns represent the different threat attack tactics and categories to help you visualize what an activity is trying to achieve in each attack phase so you can plan the corresponding containment and remediation actions.
 
 You can filter the activities displayed in the table by choosing any of the following options in the dropdown menu:
 
