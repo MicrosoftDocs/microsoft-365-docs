@@ -32,7 +32,7 @@ You can access the Device security page in Microsoft 365 Lighthouse from the **S
 
 The Incidents and alerts tab provides a multi-tenant view of incidents and alerts that were flagged from devices in your customers' network. By default, the tab displays any active incidents seen in the last 30 days. You can select any incident or alert to open the details pane to view more information. From the details pane, you can also resolve the incident or alert, or assign it to yourself.
 
-:::image type="content" source="../media/m365-lighthouse-device-security-overview/device-security-incidents-and-alerts-tab.png" alt-text="Incidents and alerts tab on the Device security page.":::
+:::image type="content" source="../media/m365-lighthouse-device-security-overview/device-security-incidents-and-alerts-tab.png" alt-text="Screenshot of the Incidents and alerts tab on the Device security page." lightbox="../media/m365-lighthouse-device-security-overview/device-security-incidents-and-alerts-tab.png":::
 
 ## Devices tab
 
@@ -43,7 +43,7 @@ The Devices tab also includes the following options:
 - **Export**: Select to export device compliance data to an Excel comma-separated values (.csv) file.
 - **Search**: Enter keywords to quickly locate a specific device in the list.
 
-:::image type="content" source="../media/m365-lighthouse-device-security-overview/device-security-devices-tab.png" alt-text="Devices tab on the Device security page.":::
+:::image type="content" source="../media/m365-lighthouse-device-security-overview/device-security-devices-tab.png" alt-text="Screenshot of the Devices tab on the Device security page." lightbox="../media/m365-lighthouse-device-security-overview/device-security-devices-tab.png":::
 
 ## Related content
 [Manage Microsoft Defender for Endpoint incidents](../security/defender-endpoint/manage-incidents.md) (article)\
