@@ -50,7 +50,7 @@ No. Non-Microsoft antivirus offerings will continue to register with the Windows
 
 ## What happens if Microsoft Defender Antivirus isn't active on a device?
 
-Devices that are onboarded to Microsoft Defender for Endpoint will have Microsoft Defender Antivirus running in passive mode. In these cases, tamper protection will continue to protect the service and its features.
+Devices that are onboarded to Microsoft Defender for Endpoint have Microsoft Defender Antivirus running in passive mode. In these cases, tamper protection continues to protect the service and its features.
 
 ## How do I turn tamper protection on or off?
 
@@ -67,7 +67,7 @@ New functionality is rolling out now to protect Microsoft Defender Antivirus exc
 
 ## How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus with Group Policy?
 
-If you're currently using Intune to configure and manage tamper protection, you should continue using Intune. When tamper protection is turned on and you use Group Policy to make changes to Microsoft Defender Antivirus settings, any settings that are protected by tamper protection will be ignored. 
+If you're currently using Intune to configure and manage tamper protection, you should continue using Intune. When tamper protection is turned on and you use Group Policy to make changes to Microsoft Defender Antivirus settings, any settings that are protected by tamper protection are ignored. 
 
 ## If we use Microsoft Intune to configure tamper protection, does it apply only to the entire organization?
 
