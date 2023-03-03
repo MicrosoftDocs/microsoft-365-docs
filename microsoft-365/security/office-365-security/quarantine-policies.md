@@ -17,7 +17,7 @@ ms.custom:
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 02/10/2023
+ms.date: 3/2/2023
 ---
 
 # Quarantine policies
@@ -67,6 +67,8 @@ The default quarantine policies, their associated permission groups, and whether
 
 <sup>\*\*</sup>This policy is used in [preset security policies](preset-security-policies.md).
 
+<sup>\*</sup>See [the next section](#full-access-permissions-and-quarantine-notifications) for more information about this policy.
+
 If you don't like the default permissions in the preset permission groups, or if you want to enable quarantine notifications, create and use custom quarantine policies. For more information about what each permission does, see the [Quarantine policy permission details](#quarantine-policy-permission-details) section later in this article.
 
 You create and assign quarantine policies in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with Exchange Online mailboxes; standalone EOP PowerShell in EOP organizations without Exchange Online mailboxes).
@@ -78,7 +80,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 ## Full access permissions and quarantine notifications
 
-The built-in quarantine policy named NotificationEnabledPolicy is not available in all environments. You'll have the NotificationEnabledPolicy quarantine policy if your organization meets both of the following requirements:
+The quarantine policy named NotificationEnabledPolicy is not available in all environments. You'll have the NotificationEnabledPolicy quarantine policy if your organization meets both of the following requirements:
 
 - Your organization existed before the quarantine policy feature was turned on (late July/early August 2021).
 - The **Enable end-user spam notifications** setting was turned on in one or more [anti-spam policies](anti-spam-policies-configure.md) (in the default anti-spam policy or in custom anti-spam policies).

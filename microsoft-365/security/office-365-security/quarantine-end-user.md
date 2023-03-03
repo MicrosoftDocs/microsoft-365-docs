@@ -21,7 +21,7 @@ description: Users can learn how to view and manage quarantined messages in Exch
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.date: 12/02/2022
+ms.date: 3/2/2023
 ---
 
 # Find and release quarantined messages as a user in EOP
@@ -40,16 +40,16 @@ As an ordinary user (not an admin), the **default** capabilities that are availa
 |Quarantine reason|View|Release|Delete|
 |---|:---:|:---:|:---:|
 |**Anti-spam policies**||||
-|&nbsp;&nbsp;&nbsp;Bulk|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|&nbsp;&nbsp;&nbsp;Spam|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|&nbsp;&nbsp;&nbsp;High confidence spam|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|&nbsp;&nbsp;&nbsp;Phishing|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|&nbsp;&nbsp;&nbsp;Bulk|✔|✔|✔|
+|&nbsp;&nbsp;&nbsp;Spam|✔|✔|✔|
+|&nbsp;&nbsp;&nbsp;High confidence spam|✔|✔|✔|
+|&nbsp;&nbsp;&nbsp;Phishing|✔|![Check mark](../../media/checkmark.png)|✔|
 |&nbsp;&nbsp;&nbsp;High confidence phishing||||
 |**Anti-phishing policies**||||
-|&nbsp;&nbsp;&nbsp;Spoof intelligence protection in EOP|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|&nbsp;&nbsp;&nbsp;Impersonated user protection in Defender for Office 365|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|&nbsp;&nbsp;&nbsp;Impersonated domain protection in Defender for Office 365|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|&nbsp;&nbsp;&nbsp;Mailbox intelligence impersonation protection in Defender for Office 365|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|&nbsp;&nbsp;&nbsp;Spoof intelligence protection in EOP|✔|✔|✔|
+|&nbsp;&nbsp;&nbsp;Impersonated user protection in Defender for Office 365|✔|✔|✔|
+|&nbsp;&nbsp;&nbsp;Impersonated domain protection in Defender for Office 365|✔|✔|✔|
+|&nbsp;&nbsp;&nbsp;Mailbox intelligence impersonation protection in Defender for Office 365|✔|✔|✔|
 |**Anti-malware policies**||||
 |&nbsp;&nbsp;&nbsp;Email messages with attachments that are quarantined as malware.||||
 |**Safe Attachments in Defender for Office 365**||||
