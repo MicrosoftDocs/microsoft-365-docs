@@ -23,3 +23,7 @@ When you use Microsoft Syntex, services are billed using Syntex meters in the Az
 |:----|:--------------|:-------------|
 |Unstructured document processing|The number of pages processed for Word, PDF, or TIFF files; the number of sheets for Excel files; the number of slides for PowerPoint files; or the number of files for other file types. You will not be charged for model training. You will be charged for processing whether or not there is a positive classification, or any entities extracted.<br><br>Processing occurs on document upload and on subsequent updates. Processing is counted for each model applied. For example, if you have two models and you upload or update a five-page document, the total pages processed is ten.|$0.10/page|
 |Prebuilt document processing|The number of pages processed for Word, PDF, or TIFF files; the number of sheets for Excel files; the number of slides for PowerPoint files; or the number of files for other file types. You will not be charged for model training. You will be charged for processing whether or not there is a positive classification, or any entities extracted.<br><br>Processing occurs on document upload and on subsequent updates. Processing is counted for each model applied. For example, if you have two models and you upload or update a five-page document, the total pages processed is ten.|$0.01/page|
+
+## Related topics
+
+[Microsoft Syntex - SharePoint Advanced Management overview](/sharepoint/advanced-management)
