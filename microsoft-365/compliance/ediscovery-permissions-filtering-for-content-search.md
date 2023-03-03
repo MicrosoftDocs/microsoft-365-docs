@@ -115,12 +115,13 @@ The  _Filters_ parameter specifies the search criteria for the compliance securi
   > [!IMPORTANT]
   > A single search filter can't contain a mailbox filter and a mailbox content filter. To combine these in a single filter, you have to use a [filters list](#using-a-filters-list-to-combine-filter-types).  But a filter can contain a more complex query of the same type. For example, `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`
 
-- **Site and site content filtering:** There are two SharePoint- and OneDrive-related filters that you can use to specify what site or site content the assigned users can search.
+- **Site and site content filtering:** 
 
-  - **Site_**_SearchableSiteProperty_
-  - **SiteContent_**_SearchableSiteProperty_
+**DocumentLink_**_SearchableSiteProperty_
+The path (URL) of a specific folder on a SharePoint or OneDrive for Business site. If you use this property, be sure to search the site that the specified folder is located in. We recommend using this property instead of the Site and Path properties.
+To return items located in subfolders of the folder that you specify for the documentlink property, you have to add /* to the URL of the specified folder;  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`
 
-   These two filters are interchangeable. For example, `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` and  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` return the same results. For a list of searchable site properties, see [Keyword queries and search conditions for eDiscovery](ediscovery-keyword-queries-and-search-conditions.md#searchable-site-properties)  For a more complete list, see [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Properties marked with a **Yes** in the **Queryable** column can be used to create a site or site content filter.
+-  For a list of searchable site properties, see [Keyword queries and search conditions for eDiscovery](ediscovery-keyword-queries-and-search-conditions.md#searchable-site-properties)  For a more complete list, see [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Properties marked with a **Yes** in the **Queryable** column can be used to create a site or site content filter.
 
   > [!IMPORTANT]
   > Setting up a site filter with one of the supported properties doesn't mean the site property in the filter will propagate to all documents on that site. This means the user is still responsible for populating the specific property fields associated with the documents on that site in order for the site filter to work and capture the right content. For example, if the user has a security filter "Site_RefineableString00 -eq 'abc'" applied and then the user runs a search using keyword query "xyz". The security filter gets appended to the query and the actual query running would be "xyz **AND RefineableString0:'abc'**". The user needs to ensure that documents on the site indeed have values in the RefineableString00 field as"abc". If not, the search query won't return any results.
