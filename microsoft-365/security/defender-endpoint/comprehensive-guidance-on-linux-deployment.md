@@ -95,7 +95,7 @@ Use the following steps to check the network connectivity of Microsoft Defender 
 
 1. See [Allow URLs for the Microsoft Defender for Endpoint traffic](#step-1-allow-urls-for-the-microsoft-defender-for-endpoint-traffic) that are allowed for the Microsoft Defender for Endpoint traffic.
 2. If the Linux servers are behind a proxy, then set the proxy settings. For more information, see [Set up proxy settings](#step-2-set-up-proxy-settings).
-3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection is not being performed on the network traffic](#step-3-verify-ssl-inspection-isnt-being-performed-on-the-network-traffic).
+3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection isn't being performed on the network traffic](#step-3-verify-ssl-inspection-isnt-being-performed-on-the-network-traffic).
 
 #### Step 1. Allow URLs for the Microsoft Defender for Endpoint traffic
 
@@ -129,7 +129,7 @@ The following table lists the supported proxy settings:
 
 #### Step 3. Verify SSL inspection isn't being performed on the network traffic
 
-To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You'll have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
+To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
 
 ##### Troubleshoot cloud connectivity issues
 
@@ -137,7 +137,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 
 ## 2. Capture performance data from the endpoint
 
-Capture performance data from the endpoints that will have Defender for Endpoint installed. This includes disk space availability on all mounted partitions, memory usage, process list, and CPU usage (aggregate across all cores).
+Capture performance data from the endpoints that have Defender for Endpoint installed. This includes disk space availability on all mounted partitions, memory usage, process list, and CPU usage (aggregate across all cores).
 
 ## 3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk)
 
@@ -177,7 +177,7 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 
 - Your ability to run Microsoft Defender for Endpoint on Linux alongside a non-Microsoft antimalware product depends on the implementation details of that product. If the other antimalware product leverages fanotify, it has to be uninstalled to eliminate performance and stability side effects resulting from running two conflicting agents.
 
-- To check if there is a non-Microsoft antimalware that is running FANotify, you can run `mdatp health`, then check the result:
+- To check if there's a non-Microsoft antimalware that is running FANotify, you can run `mdatp health`, then check the result:
 
   :::image type="content" source="images/mdatp-health-result.png" alt-text="Image of mdatp health result":::
 
@@ -245,7 +245,7 @@ Set up your device groups, device collections, and organizational units Device g
   - [Configure from the command line](linux-resources.md#configure-from-the-command-line).
   - [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md).
 
-- If you're testing on multiple machines, then use the following `mdatp_managed.json` file. If you are coming from Windows, this like a 'group policy' for Defender for Endpoint on Linux.
+- If you're testing on multiple machines, then use the following `mdatp_managed.json` file. If you're coming from Windows, this like a 'group policy' for Defender for Endpoint on Linux.
 
   You can consider modifying the file based on your needs:
 
@@ -393,9 +393,9 @@ The following table describes the settings that are recommended as part of `mdat
 
 ### Applications that Microsoft Defender for Endpoint can impact
 
-High I/O workloads such as Postgres, OracleDB, Jira, and Jenkins may require additional exclusions depending on the amount of activity that is being processed (which is then monitored by Defender for Endpoint). It is best to follow guidance from third party application providers for exclusions if you experience performance degredation after installing Defender for Endpoint. Also keep in mind [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
+High I/O workloads such as Postgres, OracleDB, Jira, and Jenkins may require additional exclusions depending on the amount of activity that is being processed (which is then monitored by Defender for Endpoint). It's best to follow guidance from third party application providers for exclusions if you experience performance degradation after installing Defender for Endpoint. Also keep in mind [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
 
-You can refer to these documents for more information if you experience performance degredation:
+You can refer to these documents for more information if you experience performance degradation:
 
 - [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).
 - [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux ](troubleshoot-auditd-performance-issues.md).
@@ -411,7 +411,7 @@ After downloading this package, you can follow the [manual installation instruct
 
 ## 12. Ansible, Puppet, and Chef examples to manage Microsoft Defender for Endpoint on Linux
 
-Defender for Endpoint on Linux is designed to allow almost any management solution to easily deploy and manage Defender for Endpoint settings on Linux. A few common Linux management platforms are Ansible, Puppet, and Chef. Below are documents that contain examples on how to configure these management platforms to deploy and configure Defender for Endpoint on Linux.
+Defender for Endpoint on Linux is designed to allow almost any management solution to easily deploy and manage Defender for Endpoint settings on Linux. A few common Linux management platforms are Ansible, Puppet, and Chef. The following documents contain examples on how to configure these management platforms to deploy and configure Defender for Endpoint on Linux.
 
 [Deploy Microsoft Defender for Endpoint on Linux with Puppet](linux-install-with-puppet.md)
 
@@ -497,7 +497,7 @@ The choice of the channel determines the type and frequency of updates that are 
 
 :::image type="content" source="images/insider-rings.png" alt-text="The insider rings." lightbox="images/insider-rings.png":::
 
-In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either Beta or Preview.
+In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either Beta or Preview.
 
 > [!WARNING]
 > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
@@ -529,7 +529,7 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 
 ## 20. Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux
 
-For more information see, [Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux](linux-support-events.md).
+For more information, see, [Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux](linux-support-events.md).
 
 ## 21. Troubleshoot High CPU utilization by ISVs, Linux apps, or scripts
 

@@ -69,7 +69,7 @@ Each ASR rule contains one of four settings:
 - **Audit**: Evaluate how the ASR rule would impact your organization if enabled
 - **Warn**: Enable the ASR rule but allow the end user to bypass the block
 
-We recommend using ASR rules with a Windows E5 license (or similar licensing SKU) to take advantage of the advanced monitoring and reporting capabilities available in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint). However, if you have another license, such as Windows Professional or Windows E3 that don't include advanced monitoring and reporting capabilities, you can develop your own monitoring and reporting tools on top of the events that are generated at each endpoint when ASR rules are triggered (for example, Event Forwarding).
+We recommend using ASR rules with a Windows E5 license (or similar licensing SKU) to take advantage of the advanced monitoring and reporting capabilities available in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint). However, if you have another license, such as Windows Professional or Windows E3 that doesn't include advanced monitoring and reporting capabilities, you can develop your own monitoring and reporting tools on top of the events that are generated at each endpoint when ASR rules are triggered (for example, Event Forwarding).
 
 > [!TIP]
 > To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -82,11 +82,11 @@ You can enable attack surface reduction rules by using any of these methods:
 - [Group Policy](#group-policy)
 - [PowerShell](#powershell)
 
-Enterprise-level management such as Intune or Microsoft Configuration Manager is recommended. Enterprise-level management will overwrite any conflicting Group Policy or PowerShell settings on startup.
+Enterprise-level management such as Intune or Microsoft Configuration Manager is recommended. Enterprise-level management overwrites any conflicting Group Policy or PowerShell settings on startup.
 
 ## Exclude files and folders from ASR rules
 
-You can exclude files and folders from being evaluated by most attack surface reduction rules. This means that even if an ASR rule determines the file or folder contains malicious behavior, it will not block the file from running. This could potentially allow unsafe files to run and infect your devices.
+You can exclude files and folders from being evaluated by most attack surface reduction rules. This means that even if an ASR rule determines the file or folder contains malicious behavior, it doesn't block the file from running. This could potentially allow unsafe files to run and infect your devices.
 
 You can also exclude ASR rules from triggering based on certificate and file hashes by allowing specified Defender for Endpoint file and certificate indicators. (See [Manage indicators](manage-indicators.md).)
 
@@ -94,23 +94,23 @@ You can also exclude ASR rules from triggering based on certificate and file has
 > Excluding files or folders can severely reduce the protection provided by ASR rules. Excluded files will be allowed to run, and no report or event will be recorded.
 > If ASR rules are detecting files that you believe shouldn't be detected, you should [use audit mode first to test the rule](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit).
 
-You can specify individual files or folders (using folder paths or fully qualified resource names). An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
+You can specify individual files or folders (using folder paths or fully qualified resource names). An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service continues to trigger events until the service is stopped and restarted.
 
-For information about per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+For information about per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the article [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
 
 ASR rules support environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
 
 ## Policy Conflict
 
-1. If a conflicting policy is applied via MDM and GP, the setting applied from MDM will take precedence.
+1. If a conflicting policy is applied via MDM and GP, the setting applied from MDM takes precedence.
 
-2. Attack surface reduction rules for managed devices now support behavior for merger of settings from different policies, to create a superset of policy for each device. Only the settings that are not in conflict are merged, while those that are in conflict are not added to the superset of rules. Previously, if two policies included conflicts for a single setting, both policies were flagged as being in conflict, and no settings from either profile would be deployed. Attack surface reduction rule merge behavior is as follows:
+2. Attack surface reduction rules for managed devices now support behavior for merger of settings from different policies, to create a superset of policy for each device. Only the settings that aren't in conflict are merged, while those that are in conflict aren't added to the superset of rules. Previously, if two policies included conflicts for a single setting, both policies were flagged as being in conflict, and no settings from either profile would be deployed. Attack surface reduction rule merge behavior is as follows:
    - Attack surface reduction rules from the following profiles are evaluated for each device to which the rules apply:
      - Devices > Configuration policy > Endpoint protection profile > **Microsoft Defender Exploit Guard** > [Attack Surface Reduction](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
      - Endpoint security > **Attack surface reduction policy** > [Attack surface reduction rules](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
      - Endpoint security > Security baselines > **Microsoft Defender ATP Baseline** > [Attack Surface Reduction Rules](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules).
-   - Settings that do not have conflicts are added to a superset of policy for the device.
-   - When two or more policies have conflicting settings, the conflicting settings are not added to the combined policy, while settings that don't conflict are added to the superset policy that applies to a device.
+   - Settings that don't have conflicts are added to a superset of policy for the device.
+   - When two or more policies have conflicting settings, the conflicting settings aren't added to the combined policy, while settings that don't conflict are added to the superset policy that applies to a device.
    - Only the configurations for conflicting settings are held back.
 
 ## Configuration methods
@@ -182,14 +182,14 @@ You can use Microsoft Intune OMA-URI to configure custom ASR rules. The followin
 
    - In **Name**, type a name for the rule.
    - In **Description**, type a brief description.
-   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding. Refer to the MDM section in this article for the OMA-URI to use for this example rule. For attack surface reduction rule GUIDS, see [Per rule descriptions](attack-surface-reduction-rules-reference.md#per-rule-descriptions) in the topic: Attack surface reduction rules.
+   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you're adding. Refer to the MDM section in this article for the OMA-URI to use for this example rule. For attack surface reduction rule GUIDS, see [Per rule descriptions](attack-surface-reduction-rules-reference.md#per-rule-descriptions) in the article: Attack surface reduction rules.
    - In **Data type**, select **String**.
    - In **Value**, type or paste the GUID value, the \= sign and the State value with no spaces (_GUID=StateValue_). Where:
 
-     - 0 : Disable (Disable the ASR rule)
-     - 1 : Block (Enable the ASR rule)
-     - 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
-     - 6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)
+     - 0: Disable (Disable the ASR rule)
+     - 1: Block (Enable the ASR rule)
+     - 2: Audit (Evaluate how the ASR rule would impact your organization if enabled)
+     - 6: Warn (Enable the ASR rule but allow the end-user to bypass the block)
 
      :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="The OMA URI configuration in the Microsoft Intune admin center portal" lightbox="images/mem05-add-row-oma-uri.png":::
 
@@ -216,7 +216,7 @@ You can use Microsoft Intune OMA-URI to configure custom ASR rules. The followin
 
      :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="The applicability rules in the Microsoft Intune admin center portal" lightbox="images/mem07-5-applicability-rules.png":::
 
-10. Select **Next**. In step **6 Review + create**, review the settings and information you have selected and entered, and then select **Create**.
+10. Select **Next**. In step **6 Review + create**, review the settings and information you've selected and entered, and then select **Create**.
 
     :::image type="content" source="images/mem08-6-review-create.png" alt-text="The Review and create option in the Microsoft Intune admin center portal" lightbox="images/mem08-6-review-create.png":::
 
@@ -242,10 +242,10 @@ The following is a sample for reference, using GUID values for [Attack surface r
 
 The values to enable (Block), disable, warn, or enable in audit mode are:
 
-- 0 : Disable (Disable the ASR rule)
-- 1 : Block (Enable the ASR rule)
-- 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
-- 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block). Warn mode is available for most of the ASR rules.
+- 0: Disable (Disable the ASR rule)
+- 1: Block (Enable the ASR rule)
+- 2: Audit (Evaluate how the ASR rule would impact your organization if enabled)
+- 6: Warn  (Enable the ASR rule but allow the end-user to bypass the block). Warn mode is available for most of the ASR rules.
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) configuration service provider (CSP) to add exclusions.
 
@@ -288,10 +288,10 @@ Example:
 
 4. Select **Configure Attack surface reduction rules** and select **Enabled**. You can then set the individual state for each rule in the options section. Select **Show...** and enter the rule ID in the **Value name** column and your chosen state in the **Value** column as follows:
 
-   - 0 : Disable (Disable the ASR rule)
-   - 1 : Block (Enable the ASR rule)
-   - 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
-   - 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block)
+   - 0: Disable (Disable the ASR rule)
+   - 1: Block (Enable the ASR rule)
+   - 2: Audit (Evaluate how the ASR rule would impact your organization if enabled)
+   - 6: Warn  (Enable the ASR rule but allow the end-user to bypass the block)
 
    :::image type="content" source="images/asr-rules-gp.png" alt-text="ASR rules in Group Policy" lightbox="images/asr-rules-gp.png":::
 
@@ -312,7 +312,7 @@ Example:
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
 
-2. Type one of the following cmdlets. (Refer to [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md) for more details, such as rule ID.)
+2. Type one of the following cmdlets. (For more information, such as rule ID, refer to [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md).)
 
     ```PowerShell
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled

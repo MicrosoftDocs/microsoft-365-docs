@@ -63,7 +63,7 @@ Set-ExecutionPolicy Unrestricted
 
 You can perform these manual steps instead:
 
-1. Turn on CFA using powershell command:
+1. Turn on CFA using PowerShell command:
 
   ```powershell
   Set-MpPreference -EnableControlledFolderAccess Enabled
