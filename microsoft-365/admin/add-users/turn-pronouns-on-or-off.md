@@ -59,7 +59,7 @@ Use the following steps to turn the pronouns feature on or off in the Microsoft 
 3. To turn on the pronouns feature, in the **Pronouns** pane, select the **Turn on and allow pronouns** checkbox. To turn off the pronouns feature, clear the checkbox.
 4. Select **Save**.
 
-To turn the pronouns feature on or off for your organization using MS Graph, see [Manage pronouns settings for an organization using the Microsoft graph API](.../graph/pronouns-configure-pronouns-availability.md).
+To turn the pronouns feature on or off for your organization using MS Graph, see [Manage pronouns settings for an organization using the Microsoft graph API](/graph/pronouns-configure-pronouns-availability.md).
 
 ## Next steps
 
