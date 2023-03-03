@@ -133,7 +133,7 @@ For more information on parent labels and sublabels, see [Sublabels (grouping la
 
 To automatically apply a sensitivity label to content, the [label's scope](sensitivity-labels.md#label-scopes) must include **Items**. If you refine this selection further, you must include **Files** if you want to automatically apply a label to documents, and **Emails** to automatically apply a label to emails.
 
-For more information about refining the **Items** label scope, see [Scope labels to just Word, Excel, and PowerPoint, or to just Outlook](sensitivity-labels-office-apps.md#scope-labels-to-just-word-excel-and-powerpoint-or-to-just-outlook).
+For more information about refining the **Items** label scope, see [Scope labels to just files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails).
 
 ## Will an existing label be overridden?
 

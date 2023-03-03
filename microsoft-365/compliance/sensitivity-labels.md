@@ -138,7 +138,7 @@ This scope configuration lets you have sensitivity labels that are just for item
 
 :::image type="content" source="../media/sensitivity-labels-scopes.png" alt-text="Scope options for sensitivity labels..":::
 
-The **Items** scope can further be refined to [files  and emails](sensitivity-labels-office-apps.md#scope-labels-to-just-word-excel-and-powerpoint-or-to-just-outlook), and to [meetings](sensitivity-labels-meetings.md) that includes calendar events, Teams meetings options, and Team chat. For example, use this refinement when you want a sensitivity label to be available for emails only.
+The **Items** scope can further be refined to [files  and emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails), and to [meetings](sensitivity-labels-meetings.md) that includes calendar events, Teams meetings options, and Team chat. For example, use this refinement when you want a sensitivity label to be available for emails only.
 
 By default, the **Items** scope is always selected for a new label. The other scopes are selected by default when the features are enabled for your tenant:
 
