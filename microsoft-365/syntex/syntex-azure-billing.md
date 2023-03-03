@@ -63,55 +63,25 @@ If you have not previously configured Microsoft Syntex, read [Set up Microsoft S
 
 ## Monitor your Microsoft Syntex pay-as-you-go usage
 
-You can monitor your Microsoft Syntex pay-as-you-go usage in Azure Cost Management.
+You can monitor your Microsoft Syntex pay-as-you-go usage in Azure Cost Management. You must have at least *read* access to the resource group that you specified for Microsoft Syntex.
 
-To run the report, the customer must have at least *read* access to the resource group and *contributor* access to the storage container.
-
-Pages processed are counted for every time the model runs against the document for all pages processed in the document regardless of whether there was a positive classification. This includes when a document is processed after being updated.
-
-Model training does not count toward pages processed.
-
-To create a report
+To see the charges applied to the Syntex meters
 1. Sign in to [Azure Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/overview).
-1. Under **Settings**, select **Exports**.
-1. Select **Add**.
-1. Type a name for the export.
-1. Select the **Metric** that you want to report on.
-1. Choose an **Export type** and the dates for the export.
-1. In the **Storage** section, choose the subscription that you're using for Microsoft Syntex billing.
-1. In the **Storage account** dropdown, choose a storage account to which you have contributor access.
-1. Type a name for the container where the report will be stored.
-1. Type the path within the container where you want to export the report.
-1. Select **Create**.
+1. Under **Cost Management**, select **Cost analysis**.
+1. Select **Add filter**, choose **Product** from the list, and then choose the product (listed below) that you want to filter on.
+1. Select **Add filter**, choose **Tag** from the list, and then choose the tag (listed below) that you want to filter on.
 
-Once the report has been created, it will run on the date you specified. You can also run it manually.
+The following Microsoft Syntex products are available:
+- Syntex Unstructured Document Processing
+- Syntex Prebuilt Document Processing
 
-To run a report
-1. In the Azure Cost Management Exports list, select the report that you want to run.
-1. Select **Run now**.
+The following tags are available:
+- Site
 
-The report may take up to an hour to run.
-
-To access the report
-1. In the Azure Cost Management Exports list, select the report.
-1. Select the storage account.
-1. Under **Data storage**, select **Containers**.
-1. Select the container where you stored the report.
-1. Navigate to the csv file for the report that you want to view.
-1. Select the csv, and then select **Download**.
-
-Filter the csv on **consumedService** = *Microsoft.Syntex*. The following columns include Microsoft Syntex transaction information:
-
-- meterName
-- meterCategory
-- meterSubCategory
-- ProductName
-- quantity
-- tags (site and library information)
+For more information about filter options in Cost Management, see [Group and filter options in Cost analysis](/azure/cost-management-billing/costs/group-filter).
 
 ## Related topics
 
 [Overview of Microsoft Syntex](syntex-overview.md)
 
 [Licensing for Microsoft Syntex](syntex-licensing.md)
-
