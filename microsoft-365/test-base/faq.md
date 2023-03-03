@@ -41,7 +41,7 @@ The Out-of-box (OOB) tests provide you with standardized telemetry on your appli
 
 **Q: How long does KB installation take?**
 
-**A:** The KB installation times can vary,the KB installation happens in between the install and launch scripts for OOB tests.
+**A:** The KB installation time can vary, the KB installation happens in between the install and launch scripts for OOB tests.
 
 ## Testing
 
