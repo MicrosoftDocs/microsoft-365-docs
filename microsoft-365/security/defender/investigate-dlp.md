@@ -86,6 +86,10 @@ Before you start, [turn on alerts for all your DLP policies](/microsoft-365/comp
 
 10. Go to the incident summary page and select **Manage Incident** to add incident tags, assign, or resolve an incident.
 
+> [!NOTE] 
+> In Public Preview, DLP supports associating policies and alert management with administrative units in the Purview Portal. See [Administrative units](https://learn.microsoft.com/en-us/microsoft-365/compliance/microsoft-365-compliance-center-permissions?view=o365-worldwide#administrative-units-preview) for implementation details in the Microsoft Purview compliance portal. Until Admin Units are supported in M365 Defender in a later release, if an Admin Unit Restricted DLP Administrator navigates to the M365 Defender portal, the DLP alerts are surpressed to limit overexposure. Unrestricted DLP Administrators will continue to see all DLP alerts. 
+
+
 ## DLP investigation experience in Microsoft Sentinel
 
 You can use the Microsoft 365 Defender connector in Microsoft Sentinel to import all DLP incidents into Sentinel to extend your correlation, detection, and investigation across other data sources and extend your automated orchestration flows using Sentinel's native SOAR capabilities. 
