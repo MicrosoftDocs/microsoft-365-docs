@@ -4,6 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 04/21/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -75,4 +76,3 @@ For example, all financial documents that your model identifies also will have t
 ## See also
 
 [Apply a retention label](apply-a-retention-label-to-a-model.md)
-

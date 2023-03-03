@@ -4,6 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 10/12/2022
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
@@ -56,4 +57,3 @@ For information about requirements to consider when choosing this model, see [Re
 ## See also
 
 [Compare custom models](difference-between-document-understanding-and-form-processing-model.md)
-

@@ -4,6 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 07/01/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -132,6 +133,3 @@ You can add a retention label to an existing structured document processing mode
 ## See also
 
 [Apply a sensitivity label to a model in Microsoft Syntex](create-a-classifier.md)
-
-
-

@@ -14,11 +14,12 @@ ms.collection:
   - m365initiative-defender-office365
   - EngageScoreSep2022
   - ContentEngagementFY23
+  - tier1
 description: Security in Office 365, from EOP to Defender for Office 365 Plans 1 and 2, Standard vs. Strict security configurations, and more. Understand what you have, and how to secure your properties.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.date: 09/15/2022
+ms.date: 1/31/2023
 ---
 
 # Microsoft Defender for Office 365 security product overview

@@ -4,6 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 07/01/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -138,4 +139,3 @@ To run the flow:
 [Discover other trained models](discover-other-trained-models.md)
 
 [Choose the view in a document library](choose-library-view.md)
-

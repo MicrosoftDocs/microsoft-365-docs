@@ -4,6 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 11/05/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -13,7 +14,6 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 description: Learn how to use a prebuilt invoices model in Microsoft Syntex.
-
 ---
 
 # Use a prebuilt model to extract information from invoices in Microsoft Syntex
