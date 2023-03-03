@@ -106,7 +106,7 @@ In addition, using **Endpoint data loss prevention (DLP)**, Activity explorer ga
 - Copy to network share
 - Access by an unallowed app
 
-Understanding the actions that are taken on content with sensitivity labels helps you determine whether the controls that you have in place, such as [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) policies, are effective. If not, or if you discover something unexpected--such as a large number of items that are labeled `highly confidential` and are downgraded to `general`--you can manage your policies and take new actions to restrict the undesired behavior.
+Understanding the actions that are taken on content with sensitivity labels helps you determine whether the controls that you have in place, such as [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) policies, are effective. If not, or if you discover something unexpected—such as a large number of items that are labeled `highly confidential` and are downgraded to `general`—you can manage your policies and take new actions to restrict the undesired behavior.
 
 > [!NOTE]
 > Activity explorer doesn't currently monitor retention activities for Exchange Online.
