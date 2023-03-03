@@ -19,5 +19,9 @@ description: Watch to learn about the different features in Microsoft Syntex.
 
 # Microsoft Syntex video library
 
-## Models
+## Model types
 
+|Overview of Syntex models  |Unstructured document processing models  |
+|---------|---------|
+|[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS]    |[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7]         |
+|Row2     |         |
