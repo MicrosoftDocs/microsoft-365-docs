@@ -82,7 +82,7 @@ The *Report a concern* option is enabled by default and can be controlled via Te
 >[!IMPORTANT]
 >If you're using PowerShell to turn on or turn off the **End user reporting** option in the Teams Admin Center, you must use [Microsoft Teams cmdlets module version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) or later.
 
-## Policy for insider risk management integration (preview)
+## Policy for insider risk management integration
 
 When users experience employment stressors, they may engage in risky activities. Workplace stress may lead to uncharacteristic or malicious behavior by some users that could surface as potentially inappropriate behavior on your organization's messaging systems. Communication compliance can provide risk signals detected in applicable messages to [insider risk management](/microsoft-365/compliance/insider-risk-management) risky user policies by using a dedicated [Detect inappropriate text](#policy-templates) policy. This policy is automatically created (if selected as an option) during configuration of a [Data leaks by risky employees](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-risky-users-preview) or [Security policy violations by risky employees](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-risky-users-preview) policy in insider risk management.
 
@@ -172,7 +172,7 @@ For existing policies created before July 31, 2022 it may take up to 24 hours to
 
 To identify an older policy, review *Last policy scan* column on the **Policy** page. Older policies will display a full date for the scan while policies created after July 31, 2022 will display *1 hour ago* for the scan. Another option to reduce latency is to wait until February 28, 2023 for your existing policies to be automatically migrated to the new detection criteria.
 
-## Storage limit notification (preview)
+## Storage limit notification
 
 Each communication compliance policy has a storage limit size of 100 GB or 1 million messages, whichever is reached first. As the policy approaches these limits, notification emails are automatically sent to users assigned to the *Communication Compliance* or *Communication Compliance Admins* role groups. Notifications messages are sent when the storage size or message count reach 80, 90, and 95 percent of the limit. When the policy limit is reached, the policy is automatically deactivated, and the policy stops processing messages for alerts.
 
