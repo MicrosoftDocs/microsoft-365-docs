@@ -27,7 +27,7 @@ The features available for each license type are described below. You can use bo
 In the future, most new Microsoft Syntex features will be added to pay-as-you-go.
 
 > [!NOTE] 
-> Microsof Syntex is an add-on and requires users also to have a license for Microsoft 365.
+> Microsoft Syntex is an add-on and requires users also to have a license for Microsoft 365.
 
 ## Microsoft Syntex pay-as-you-go
 
@@ -54,6 +54,7 @@ The following tasks require a [Syntex per-user license](https://www.microsoft.co
 - Generate a document from a modern template
 - Use of advanced metadata search
 - Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
+- Use the document library rules to move or copy content
 
 Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.
  

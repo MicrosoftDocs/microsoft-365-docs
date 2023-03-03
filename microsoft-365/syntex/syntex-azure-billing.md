@@ -21,6 +21,8 @@ Some Microsoft Syntex features are billed on a pay-as-you-go basis. These featur
 
 For a list of Microsoft Syntex features that use pay-as-you-go, see [Licensing for Microsoft Syntex](syntex-licensing.md)
 
+Note that if you use [Microsoft Syntex per-user licensing](set-up-content-understanding.md) you can't sign up for pay-as-you-go.
+
 ## Prerequisites
 
 To use Microsoft Syntex pay-as-you go, you need:
