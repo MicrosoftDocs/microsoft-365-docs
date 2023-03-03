@@ -363,6 +363,10 @@ You can create up to five customized options that will appear when users interac
 |Show false positive option     |**The information in these files is not sensitive** or you can enter customized text          |
 |option 5    |**Other** or you can enter customized text         |
 
+#### Just in time protection configuration
+
+
+
 ### Always audit file activity for devices
 
 By default, when devices are onboarded, activity for Office, PDF, and CSV files is automatically audited and available for review in activity explorer. Turn this feature off if you want this activity to be audited only when onboarded devices are included in an active policy.
