@@ -363,9 +363,11 @@ You can create up to five customized options that will appear when users interac
 |Show false positive option     |**The information in these files is not sensitive** or you can enter customized text          |
 |option 5    |**Other** or you can enter customized text         |
 
-#### Just in time protection configuration
+#### Just in time protection configuration (preview)
 
+Just in time protection blocks all attempts to move or copy all new or existing files off of an onboarded Windows 10 or 11 device until policy evaluation completes successfully. See, [Just in time protection (preview)](endpoint-dlp-learn-about.md#just-in-time-protection-preview) for details on enabling just in time protection.
 
+You can prevent a file from being permanently blocked if policy evaluation starts on a file, but doesn't complete. Use this **Just in time protection configuration** fallback setting to either **Allow** or **Block** egress activities if policy evaluation doesn't complete in 30 seconds.
 
 ### Always audit file activity for devices
 
