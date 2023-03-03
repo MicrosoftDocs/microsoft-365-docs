@@ -22,7 +22,7 @@ Microsoft Syntex has two licensing models to choose from:
 - SharePoint Syntex per-user licensing
 - Microsoft Syntex pay-as-you-go
 
-The features available for each license type are described below. You can use both licenses if you need to.
+The features available for each license type are described below. <!-- You can use both licenses if you need to.-->
 
 In the future, most new Microsoft Syntex features will be added to pay-as-you-go.
 
