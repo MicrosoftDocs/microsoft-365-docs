@@ -16,7 +16,7 @@ ms.collection:
 description: Users can learn how to view and act on quarantined messages that were sent to shared mailboxes that they have permissions to.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/02/2022
+ms.date: 3/3/2023
 ---
 
 # View and release quarantined messages from shared mailboxes

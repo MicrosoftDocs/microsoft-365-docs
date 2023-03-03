@@ -21,7 +21,7 @@ ms.custom:
 description: Admins can learn about quarantine in Exchange Online Protection (EOP) that holds potentially dangerous or unwanted messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 3/2/2023
+ms.date: 3/3/2023
 ---
 
 # Quarantined email messages in EOP and Defender for Office 365

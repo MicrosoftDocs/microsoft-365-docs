@@ -17,7 +17,7 @@ description: Admins can learn how to apply Standard and Strict policy settings a
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 02/10/2023
+ms.date: 3/3/2023
 ---
 
 # Preset security policies in EOP and Microsoft Defender for Office 365
