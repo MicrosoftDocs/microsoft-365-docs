@@ -46,11 +46,11 @@ The individual quarantine policy permissions that are contained in the preset pe
 
 |Permission|No access|Limited access|Full access|
 |---|:---:|:---:|:---:|
-|**Block sender** (_PermissionToBlockSender_)||![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|**Delete** (_PermissionToDelete_)||![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|**Preview** (_PermissionToPreview_)||![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)<sup>\*</sup>|||![Check mark.](../../media/checkmark.png)|
-|**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/checkmark.png)||
+|**Block sender** (_PermissionToBlockSender_)||✔|✔|
+|**Delete** (_PermissionToDelete_)||✔|✔|
+|**Preview** (_PermissionToPreview_)||✔|✔|
+|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)<sup>\*</sup>|||✔|
+|**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||✔||
 
 <sup>\*</sup>The **Allow recipients to release a message from quarantine** permission is not honored for messages that were quarantined as malware (anti-malware policies or Safe Attachments policies) or as high confidence phishing (anti-spam policies). Users cannot release their own malware or high confidence phishing messages from quarantine. At best, you can use the **Allow recipients to request a message to be released from quarantine** permission.
 
