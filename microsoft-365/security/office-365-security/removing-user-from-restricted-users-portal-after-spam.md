@@ -1,23 +1,23 @@
 ---
 title: Remove blocked users from the Restricted users portal
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-f1_keywords: 
+f1_keywords:
   - 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
 ms.localizationpriority: high
-search.appverid: 
+search.appverid:
   - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
-ms.collection: 
+ms.collection:
   - m365-security
   - tier2
 description: Admins can learn how to remove users from the Restricted users page in the Microsoft 365 Defender portal. Users are added to the Restricted users portal for sending outbound spam, typically as a result of account compromise.
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -45,13 +45,13 @@ Admins can remove users from the **Restricted users** page in the Microsoft 365 
 
 ## Learn more on Restricted entities
 
-A restricted entity is an entity that has been blocked from sending email because either it has been potentially compromised, or it has exceeded sending limit.
+A restricted entity is an entity that has been blocked from sending email because either it has been potentially compromised, or it has exceeded a sending limit.
 
-There are 2 types of restricted entities: 
+There are two types of restricted entities:
 
-- **Restricted user**: Learn about why a user can be restricted and how to handle restricted users (this article).  
+- **Restricted user**: Learn about why a user can be restricted and how to handle restricted users (this article).
 
-- **Restricted connector**: For more information about why a connector can be restricted and how to handle restricted connectors, see [Remove blocked connectors from the Restricted entities portal](connectors-remove-blocked.md). 
+- **Restricted connector**: For more information about why a connector can be restricted and how to handle restricted connectors, see [Remove blocked connectors from the Restricted entities portal](connectors-remove-blocked.md).
 
 ## What do you need to know before you begin?
 

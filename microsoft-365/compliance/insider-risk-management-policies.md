@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/07/2023
+ms.date: 02/28/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -86,7 +86,7 @@ Risk management activities may not occur as isolated events. These risks are fre
 
 These insider risk management policies can use specific indicators and the order that they occur to detect each step in a sequence of risk. For policies created from the *Data leaks* and *Data leaks by priority user* templates, you can also select which sequences trigger the policy. File names are used when mapping activities across a sequence. These risks are organized into four main categories of activity:
 
-- **Collection**: Detects download activities by in-scope policy users. Example risk management activities include downloading files from SharePoint sites or moving files into a compressed folder.
+- **Collection**: Detects download activities by in-scope policy users. Example risk management activities include downloading files from SharePoint sites, third-party cloud services, unallowed domains, or moving files into a compressed folder.
 - **Exfiltration**: Detects sharing or extraction activities to internal and external sources by in-scope policy users. An example risk management activity includes sending emails with attachments from your organization to external recipients.
 - **Obfuscation**: Detects the masking of potentially risky activities by in-scope policy users. An example risk management activity includes renaming files on a device.
 - **Clean-up**: Detects deletion activities by in-scope policy users. An example risk management activity includes deleting files from a device.
