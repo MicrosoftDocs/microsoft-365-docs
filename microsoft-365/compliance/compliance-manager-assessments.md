@@ -25,6 +25,8 @@ description: "Build assessments in Microsoft Purview Compliance Manager to help 
 
 **In this article:** Learn how to customize Compliance Manager for your organization by creating and managing **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, accepting **updates**, and exporting assessment **reports**.
 
+**New**: Compliance Manager integrates connectors for third-party data, so you can build assessments that cover services from Microsoft and others to help you manage compliance across your digital estate. See XYZ below for details.
+
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Introduction to assessments
@@ -44,7 +46,15 @@ This assessment is used to calculate your initial compliance score the first tim
 
 Compliance Manager becomes more helpful as you build and manage your own assessments to meet your organization's particular needs.
 
-## Understand groups before creating assessments
+## Initial steps before creating assessments
+
+Before getting started, review the initial steps below so that you'll be ready during the assessment creation process:
+
+- [Prepare to assign your assessment to a group](#understand-groups-before-creating-assessments)
+- [Understand how assessment templates work](#understand-templates-before-creating-assessments)
+- Set up connectors if you're assessing services from other companies
+
+### Understand groups before creating assessments
 
 When you create an assessment, you'll need to assign it to a group. Groups are containers that allow you to organize assessments in a way that is logical to you, such as by year or regulation, or based on your organization's divisions or geographies. This is why we recommend planning a grouping strategy before you create assessments.
 
@@ -58,11 +68,9 @@ Below are examples of two groups and their underlying assessments:
 
 Different assessments within a group or groups may share improvement actions. Improvement actions may be changes you make within technical solutions mapped to your tenant, like turning on two-factor authentication, or to non-technical actions you perform outside the system, like instituting a new workplace policy. Any updates in details or status that you make to a technical improvement action will be picked up by assessments across all groups. Non-technical improvement action updates will be recognized by assessments within the group where you apply them. This allows you to implement one improvement action and meet several requirements simultaneously.
 
-### Create a group
+#### Create a group
 
-You can create a group while creating a new assessment. Groups can't be created as standalone entities.
-
-### What to know when working with groups
+Groups are created during the process of building a new assessment. Here are important things to know when working with groups:
 
 - A group must contain at least one assessment.
 - Group names must be unique within your organization.
@@ -74,11 +82,18 @@ You can create a group while creating a new assessment. Groups can't be created 
 - Deleting an assessment breaks the relationship between that assessment and the group.
 - Groups can't be deleted.
 
-## Understand templates before creating assessments
+### Understand templates before creating assessments
 
 Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Each template exists in two versions: one for use with Microsoft 365 (or other Microsoft products as available), and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
 
 Get more details more about templates at [Learn about assessment templates in Compliance Manager](compliance-manager-templates.md).
+
+### Set up connectors
+
+Compliance Manager integrates third-party data connectors so that you can build assessments that cover services other than Microsoft, such as SalesForce or Dropbox. You can select the connectors you need within Compliance Manager. Then when you build your assessment, you'll select from among the connectors you've already set up.
+
+- Details about when and how to set up connectors for your assessments are covered in step XYZ of the [guided process for creating assessments](#create-an-assessment-using-a-guided-process), below.
+- Get more general information about [third-party data connectors](archiving-third-party-data.md).
 
 ## Create assessments
 
