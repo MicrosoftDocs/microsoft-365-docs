@@ -25,7 +25,7 @@ description: "Build assessments in Microsoft Purview Compliance Manager to help 
 
 **In this article:** Learn how to customize Compliance Manager for your organization by creating and managing **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, accepting **updates**, and exporting assessment **reports**.
 
-**New**: Compliance Manager integrates connectors for third-party data, so you can build assessments that cover services from Microsoft and others to help you manage compliance across your digital estate. See XYZ below for details.
+**New**: With integrated third-party data connectors, you can now can build assessments for services other than Microsoft to help you manage compliance across your digital estate. See [Set up connectors](#set-up-connectors) below for details.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -52,7 +52,7 @@ Before getting started, review the initial steps below so that you'll be ready d
 
 - [Prepare to assign your assessment to a group](#understand-groups-before-creating-assessments)
 - [Understand how assessment templates work](#understand-templates-before-creating-assessments)
-- Set up connectors if you're assessing services from other companies
+- [Set up connectors if you're assessing services from other companies](#set-up-connectors)
 
 ### Understand groups before creating assessments
 
