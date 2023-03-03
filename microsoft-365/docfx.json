@@ -74,7 +74,7 @@
       "breadcrumb_path": "/microsoft-365/breadcrumb/toc.json",
       "recommendations": true,
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "searchScope": ["Microsoft 365", "Microsoft Bookings", "Microsoft Syntex", "Microsoft 365 for frontline workers"],
+      "searchScope": ["Microsoft Bookings", "Microsoft 365 Lighthouse", "Microsoft 365 for frontline workers", "Microsoft Syntex", "Microsoft 365"],
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 
@@ -132,8 +132,8 @@
         "commerce/**/*.md": ["Microsoft 365"],
         "compliance/**/*.md": ["Microsoft 365"],
         "lighthouse/**/*.md": ["Microsoft 365 Lighthouse"],
-        "frontline/**/*.md": ["Microsoft 365 for frontline workers"],
         "enterprise/**/*.md": ["Microsoft 365"],
+        "frontline/**/*.md": ["Microsoft 365 for frontline workers"],
         "security/**/*.md": ["Microsoft 365"],
         "solutions/**.*.md": ["Microsoft 365"],
         "syntex/**.*.md": ["Microsoft Syntex"]
