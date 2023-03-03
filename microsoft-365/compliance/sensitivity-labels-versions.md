@@ -65,7 +65,7 @@ The numbers listed are the minimum Office application versions required for each
 |[PDF support](sensitivity-labels-office-apps.md#pdf-support)| Current Channel: 2208+ <br /><br> Monthly Enterprise Channel: 2209+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |  Under review | Under review | Under review | Under review |
 |[Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [display label color](sensitivity-labels-office-apps.md#label-colors) | Preview: [Current Channel (Preview)](https://office.com/insider) | Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | Under review |
 |[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)| Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) |  Under review | Under review | Under review | Under review |
-|[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails) | 2301+ | 16.69+ | Preview: Rolling out to [Beta Channel](https://insider.office.com/join/ios) | Preview: Rolling out to [Beta Channel](https://insider.office.com/join/android)| [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails) | Current Channel: 2301+ | 16.69+ | Preview: Rolling out to [Beta Channel](https://insider.office.com/join/ios) | Preview: Rolling out to [Beta Channel](https://insider.office.com/join/android)| [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 
 ## Sensitivity label capabilities in Outlook
 
