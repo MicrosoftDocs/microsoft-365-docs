@@ -43,7 +43,7 @@ As an ordinary user (not an admin), the **default** capabilities that are availa
 |&nbsp;&nbsp;&nbsp;Bulk|✔|✔|✔|
 |&nbsp;&nbsp;&nbsp;Spam|✔|✔|✔|
 |&nbsp;&nbsp;&nbsp;High confidence spam|✔|✔|✔|
-|&nbsp;&nbsp;&nbsp;Phishing|✔|![Check mark](../../media/checkmark.png)|✔|
+|&nbsp;&nbsp;&nbsp;Phishing|✔|✔|✔|
 |&nbsp;&nbsp;&nbsp;High confidence phishing||||
 |**Anti-phishing policies**||||
 |&nbsp;&nbsp;&nbsp;Spoof intelligence protection in EOP|✔|✔|✔|

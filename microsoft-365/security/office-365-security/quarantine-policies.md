@@ -46,11 +46,11 @@ The individual quarantine policy permissions that are contained in the preset pe
 
 |Permission|No access|Limited access|Full access|
 |---|:---:|:---:|:---:|
-|**Block sender** (_PermissionToBlockSender_)||![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|**Delete** (_PermissionToDelete_)||![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|**Preview** (_PermissionToPreview_)||![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)<sup>\*</sup>|||![Check mark.](../../media/checkmark.png)|
-|**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/checkmark.png)||
+|**Block sender** (_PermissionToBlockSender_)||✔|✔|
+|**Delete** (_PermissionToDelete_)||✔|✔|
+|**Preview** (_PermissionToPreview_)||✔|✔|
+|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)<sup>\*</sup>|||✔|
+|**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||✔||
 
 <sup>\*</sup>The **Allow recipients to release a message from quarantine** permission is not honored for messages that were quarantined as malware (anti-malware policies or Safe Attachments policies) or as high confidence phishing (anti-spam policies). Users cannot release their own malware or high confidence phishing messages from quarantine. At best, you can use the **Allow recipients to request a message to be released from quarantine** permission.
 
@@ -216,7 +216,7 @@ The default quarantine policies, preset permission groups, and permissions are d
 ## Assign quarantine policies in supported policies in the Microsoft 365 Defender portal
 
 > [!NOTE]
-> > Users can't release their own messages that were quarantined as malware (anti-malware policies or Safe Attachments policies) or high confidence phishing (anti-spam policies), regardless of how the quarantine policy is configured. At best, admins can configure the quarantine policy so users can request the release of their quarantined malware or high confidence phishing messages.
+> Users can't release their own messages that were quarantined as malware (anti-malware policies or Safe Attachments policies) or high confidence phishing (anti-spam policies), regardless of how the quarantine policy is configured. At best, admins can configure the quarantine policy so users can request the release of their quarantined malware or high confidence phishing messages.
 
 ### Anti-spam policies
 
@@ -739,7 +739,7 @@ The **Preview** permission (_PermissionToPreview_) controls the ability to of us
 #### Allow recipients to release a message from quarantine permission
 
 > [!NOTE]
-> > This permission is not honored for messages that were quarantined as malware (anti-malware policies or Safe Attachments policies) or as high confidence phishing (anti-spam policies). Users cannot release their own malware or high confidence phishing messages from quarantine. At best, you can use the [Allow recipients to request a message to be released from quarantine permission](#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission) permission.
+> This permission is not honored for messages that were quarantined as malware (anti-malware policies or Safe Attachments policies) or as high confidence phishing (anti-spam policies). Users cannot release their own malware or high confidence phishing messages from quarantine. At best, you can use the [Allow recipients to request a message to be released from quarantine permission](#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission) permission.
 
 The **Allow recipients to release a message from quarantine** permission (_PermissionToRelease_) controls the ability of users to release their quarantined messages directly and without the approval of an admin.
 
