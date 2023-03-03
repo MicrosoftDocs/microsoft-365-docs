@@ -23,5 +23,5 @@ description: Watch to learn about the different features in Microsoft Syntex.
 
 |Overview of Syntex models  |Unstructured document processing models  |
 |---------|---------|
-|[:::image type="content" source="site-template-accounts-payable-thumbnail.png" alt-text="Thumbnail image of overview of Syntex models video":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)    |[:::image type="content" source="site-template-contracts-management-thumbnail.png" alt-text="Thumbnail image of overview of unstructured document processing video":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)         |
+|[:::image type="content" source="video-thumbnail-model-types.png" alt-text="Thumbnail image of overview of Syntex models video":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)    |[:::image type="content" source="video-thumbnail-model-types.png" alt-text="Thumbnail image of overview of unstructured document processing video":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)         |
 |Row2     |         |
