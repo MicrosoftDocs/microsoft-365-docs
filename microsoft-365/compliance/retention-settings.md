@@ -181,6 +181,8 @@ Unlike Exchange email, you can't toggle the status of the Skype location on to a
 
 ![Choose Skype location for retention policies.](../media/skype-location-retention-policies.png)
 
+:::image type="content" source="../media/skype-location-retention-policies.png" alt-text="The Skype for Business retention policy location requires you to manually add users.":::
+
 After you select this **Edit** option, in the **Skype for Business** pane you can quickly include all users by selecting the hidden box before the **Name** column. However, it's important to understand that each user counts as a specific inclusion in the policy. So if you include 1,000 users by selecting this box, it's the same as if you manually selected 1,000 users to include, which is the maximum supported for Skype for Business.
 
 Be aware that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
