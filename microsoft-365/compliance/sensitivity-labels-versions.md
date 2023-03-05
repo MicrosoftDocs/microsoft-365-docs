@@ -6,7 +6,7 @@ ms.author: cabailey
 author: cabailey
 ms.reviewer: alejandros
 manager: laurawi
-ms.date: 03/03/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -98,7 +98,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) | Current Channel: 2211+ <br /><br> Monthly Enterprise Channel: 2211+ <br /><br> Semi-Annual Enterprise Channel: 2302+ | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | Under review |
 |[Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [display label color](sensitivity-labels-office-apps.md#label-colors) | Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | Under review | Under review |
 |[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)| Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | Under review | Under review |
-|[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails) | Preview: [Current Channel (Preview)](https://office.com/insider) | Rolling out: 16.70+ <sup>\*</sup> | Rolling out 4.2309+| Rolling out 4.2309+ | Yes |
+|[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails) | Current Channel: 2301+ | Rolling out: 16.70+ <sup>\*</sup> | Rolling out 4.2309+| Rolling out 4.2309+ | Yes |
 
 **Footnotes:**
 
