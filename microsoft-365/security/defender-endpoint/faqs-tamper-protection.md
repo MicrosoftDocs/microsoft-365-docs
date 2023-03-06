@@ -52,15 +52,13 @@ If you're an organization using [Microsoft Defender for Endpoint](/microsoft-365
 
 For more information, see [How do I configure or manage tamper protection?](prevent-changes-to-security-settings-with-tamper-protection.md#how-do-i-configure-or-manage-tamper-protection).
 
+## Tamper protection is preventing my security team from managing a device. What should we do?
 
-## Will tamper protection affect non-Microsoft antivirus registration in the Windows Security app?
+If tamper protection prevents your IT or security team from performing a necessary task on a device, consider using [troubleshooting mode](enable-troubleshooting-mode.md). We recommend keeping tamper protection turned on for your organization.
 
-No. Non-Microsoft antivirus offerings will continue to register with the Windows Security application.
+## Can I change individual tamper-protected settings?
 
-## What happens if Microsoft Defender Antivirus isn't active on a device?
-
-Devices that are onboarded to Microsoft Defender for Endpoint will have Microsoft Defender Antivirus running in passive mode. In these cases, tamper protection will continue to protect the service and its features.
-
+If tamper protection is turned on for your organization, you won't be able to make changes to individual settings that are tamper protected. However, if you're managing tamper protection and devices in Intune, you can edit exclusions for Microsoft Defender Antivirus. See [Tamper protection for exclusions](manage-tamper-protection-intune.md#tamper-protection-for-exclusions).
 
 ## Does tamper protection apply to Microsoft Defender Antivirus exclusions?
 
@@ -107,6 +105,14 @@ If you're using tenant attach, you can use Microsoft Configuration Manager. See 
 - [Manage tamper protection using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)
 - [Tech Community blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
+## Will tamper protection affect non-Microsoft antivirus registration in the Windows Security app?
+
+No. Non-Microsoft antivirus offerings will continue to register with the Windows Security application.
+
+## What happens if Microsoft Defender Antivirus isn't active on a device?
+
+Devices that are onboarded to Microsoft Defender for Endpoint will have Microsoft Defender Antivirus running in passive mode. In these cases, tamper protection will continue to protect the service and its features.
+
 ## I have the Windows E3 enrollment. Can I use configuring tamper protection in Intune?
 
 Currently, configuring tamper protection in Intune is only available for customers whose subscriptions include [Microsoft Defender for Endpoint Plan 1 or Plan 2](/microsoft-365/security/defender-endpoint).
@@ -127,12 +133,6 @@ Your security operations team can also use hunting queries, such as the followin
 
 `AlertInfo|where Title == "Tamper Protection bypass"`
 
-## What are all the options for configuring tamper protection?
-
-
-## Tamper protection is preventing my security team from managing a device. What should we do?
-
-If tamper protection prevents your IT or security team from performing a necessary task on a device, consider using [troubleshooting mode](enable-troubleshooting-mode.md). We recommend keeping tamper protection turned on for your organization.
 
 ## Does tamper protection require cloud protection?
   
