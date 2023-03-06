@@ -17,7 +17,7 @@ description: Admins can learn how to apply Standard and Strict policy settings a
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 3/3/2023
 ---
 
 # Preset security policies in EOP and Microsoft Defender for Office 365
@@ -106,7 +106,7 @@ You can apply EOP protections to different users than Defender for Office 365 pr
 
 ### Policy settings in preset security policies
 
-You can't modify the policy settings in the protection profiles. The **Standard**, **Strict**, and **Built-in protection** policy setting values are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+You can't modify the policy settings in the protection profiles. The **Standard**, **Strict**, and **Built-in protection** policy setting values, including the default [quarantine policies](quarantine-policies.md) that are used, are listed in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
 > [!NOTE]
 > In Defender for Office 365 protections, you need to identify the senders for [user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) and the internal or external domains for [domain impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
