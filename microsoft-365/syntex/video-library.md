@@ -23,11 +23,11 @@ description: Watch to learn about the different features in Microsoft Syntex.
 
 |Overview of model types  |Create a content center  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about Syntex models](model-types-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-create-content-center.png" alt-text="Thumbnail image of create a content center video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about creating a content center](create-a-content-center.md)         |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about Syntex models.](model-types-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-create-content-center.png" alt-text="Thumbnail image of create a content center video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about creating content centers.](create-a-content-center.md)         |
 
 |Unstructured document processing  |Apply a model to a document library  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about unstructured document processing](document-understanding-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-apply-a-model.png" alt-text="Thumbnail image of apply a model video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about applying a model](apply-a-model.md)         |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about unstructured models](document-understanding-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-apply-a-model.png" alt-text="Thumbnail image of apply a model video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about applying a model](apply-a-model.md)         |
 
 
 |Apply a model to a document library  |Create a content center  |
