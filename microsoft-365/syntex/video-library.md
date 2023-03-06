@@ -29,7 +29,7 @@ description: Watch to learn about the different features in Microsoft Syntex.
 
 |Create and train a classifier  |Import a training set  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-create-classifier.png" alt-text="Thumbnail image of create and train a classifier video.":::](https://www.microsoft.com/videoplayer/embed/RE4CL0R)<br>[Learn more about creating a classifier](create-a-classifier.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-import-training-set.png" alt-text="Thumbnail image of import a training set video.":::](https://www.microsoft.com/videoplayer/embed/RE4D0iX)<br>[Learn more about importing a training set](create-a-content-center.md)     |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-create-classifier.png" alt-text="Thumbnail image of create and train a classifier video.":::](https://www.microsoft.com/videoplayer/embed/RE4CL0R)<br>[Learn more about creating a classifier](create-a-classifier.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-import-training-set.png" alt-text="Thumbnail image of import a training set video.":::](https://www.microsoft.com/videoplayer/embed/RE4D0iX)<br>[Learn more about importing a training set](create-a-classifier.md#add-your-example-files)     |
 
 |Apply a retention label  |Manage contracts solution  |
 |---------|---------|
