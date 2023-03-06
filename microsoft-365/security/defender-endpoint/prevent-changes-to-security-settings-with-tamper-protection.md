@@ -40,7 +40,7 @@ Tamper protection helps protect your security settings from being disabled or ch
 
 ## What happens when tamper protection is turned on?
 
-When tamper protection is turned on, tamper protected settings cannot be changed from their default values:
+When tamper protection is turned on, tamper protected settings cannot be changed from their default values.
 
 - Virus and threat protection are enabled
 - Real-time protection is turned on
@@ -62,7 +62,7 @@ Tamper protection is available for devices that are running one of the following
 - Windows Server 2022, Windows Server 2019, and Windows Server, version 1803 or later
 - Windows Server 2016 and Windows Server 2012 R2 (using the modern, unified solution)
 
-Tamper protection is also available for Mac. See [Protect macOS security settings with tamper protection](tamperprotection-macos.md).
+Tamper protection is also available for Mac. For more information, see [Protect macOS security settings with tamper protection](tamperprotection-macos.md).
 
 > [!IMPORTANT]
 > Built-in protection includes turning tamper protection on by default. To learn more about built-in protection, see:
