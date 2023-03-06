@@ -4,10 +4,7 @@ ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Frequently asked questions on configuring tamper protection.
 keywords: malware, defender, antivirus, tamper protection
-ms.pagetype: security
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 ms.date: 03/06/2023
 audience: ITPro
