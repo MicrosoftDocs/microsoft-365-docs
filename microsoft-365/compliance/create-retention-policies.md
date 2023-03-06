@@ -194,9 +194,9 @@ Use the following instructions for retention policies that apply to any of these
     - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations except the locations for Teams and Yammer. For each location, you can leave it at the default to [apply the policy to the entire location](retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
     
     Information specific to locations:
-    - [Exchange email and Exchange public folders](retention-settings.md#configuration-information-for-exchange-email-and-exchange-public-folders)
+    - [Exchange mailboxes and Exchange public folders](retention-settings.md#configuration-information-for-exchange-mailboxes-and-exchange-public-folders)
     - [SharePoint sites and OneDrive accounts](retention-settings.md#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
-    - [Microsoft 365 Groups](retention-settings.md#configuration-information-for-microsoft-365-groups)
+    - [Microsoft 365 Group mailboxes & sites](retention-settings.md#configuration-information-for-microsoft-365-group-mailboxes--sites)
     - [Skype for Business](retention-settings.md#configuration-information-for-skype-for-business)
 
 5. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
