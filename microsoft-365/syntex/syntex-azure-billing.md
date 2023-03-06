@@ -3,9 +3,10 @@ title: Configure Microsoft Syntex for pay-as-you-go billing in Azure
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: kkamath
+ms.date: 10/07/2022
 manager: serdars
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic

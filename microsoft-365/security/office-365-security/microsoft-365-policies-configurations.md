@@ -7,13 +7,13 @@ manager: dansimp
 ms.service: microsoft-365-security
 ms.topic: conceptual
 audience: Admin
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.reviewer: martincoetzer
-ms.custom: 
+ms.custom:
   - it-pro
   - goldenconfig
-ms.collection: 
+ms.collection:
   - M365-identity-device-management
   - m365-security
   - m365solution-identitydevice
@@ -21,8 +21,10 @@ ms.collection:
   - m365solution-zero-trust
   - zerotrust-solution
   - highpri
+  - tier1
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Zero Trust identity and device access configurations
@@ -100,7 +102,7 @@ Your organization may be subject to regulatory or other compliance requirements,
 
 We've done our best to account for a wide variety of organizational protection requirements, but we're not able to account for all possible requirements or for all the unique aspects of your organization.
 
-## Three tiers of protection
+## Three levels of protection
 
 Most organizations have specific requirements regarding security and data protection. These requirements vary by industry segment and by job functions within organizations. For example, your legal department and administrators might require additional security and information protection controls around their email correspondence that are not required for other business units.
 
@@ -114,14 +116,14 @@ Each industry also has their own set of specialized regulations. Rather than pro
 
 This guidance shows you how to implement Zero Trust protection for identities and devices for each of these levels of protection. Use this guidance as a minimum for your organization and adjust the policies to meet your organization's specific requirements.
 
-It's important to use consistent levels of protection across your identities, devices, and data. For example, protection for users with priority accounts&mdash;such as executives, leaders, managers, and others&mdash;should include the same level of protection for their identities, their devices, and the data they access. 
+It's important to use consistent levels of protection across your identities, devices, and data. For example, protection for users with priority accounts&mdash;such as executives, leaders, managers, and others&mdash;should include the same level of protection for their identities, their devices, and the data they access.
 <!--
 
 The **Zero Trust identity and device protection for Microsoft 365** architecture model shows you which capabilities are comparable.
 
 [![Thumb image for Zero Trust Identity and device protection for Microsoft 365 poster.](../../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-thumbnail.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [View as a PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)
 
---> 
+-->
 
 Additionally, see the [Deploy information protection for data privacy regulations](../../solutions/information-protection-deploy.md) solution to protect information stored in Microsoft 365.
 
@@ -180,9 +182,9 @@ This guidance shows you how to implement a set of policies to protect access to 
 
 Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 11 or Windows 10 because Azure is designed to provide the smoothest experience possible for both on-premises and Azure AD. Windows 11 or Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for Conditional Access. These apps also include enhanced compliance and security tools.
 
-## Applying these capabilities across the three tiers of protection
+## Applying these capabilities across the three levels of protection
 
-The following table summarizes our recommendations for using these capabilities across the three tiers of protection.
+The following table summarizes our recommendations for using these capabilities across the three levels of protection.
 
 |Protection mechanism|Starting point|Enterprise|Specialized security|
 |---|---|---|---|
@@ -223,7 +225,7 @@ Microsoft recommends that you do not create policy sets that apply to all apps b
 1. Configure prerequisite identity features and their settings.
 2. Configure the common identity and access Conditional Access policies.
 3. Configure Conditional Access policies for guest and external users.
-4. Configure Conditional Access policies for Microsoft 365 cloud apps&mdash;such as Microsoft Teams, Exchange, and SharePoint&mdash;and Microsoft Defender for Cloud Apps policies.
+4. Configure Conditional Access policies for Microsoft 365 cloud apps—such as Microsoft Teams, Exchange, and SharePoint—and Microsoft Defender for Cloud Apps policies.
 
 After you have configured Zero Trust identity and device access, see the [Azure AD feature deployment guide](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for a phased checklist of additional features to consider and [Azure AD Identity Governance](/azure/active-directory/governance/) to protect, monitor, and audit access.
 
