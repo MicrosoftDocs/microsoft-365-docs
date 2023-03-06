@@ -39,5 +39,7 @@ description: Watch to learn about the different features in Microsoft Syntex.
 |---------|---------|
 |[:::image type="content" source="../media/content-understanding/video-thumbnail-apply-retention-label.png" alt-text="Thumbnail image of apply a retention label video.":::](https://www.microsoft.com/videoplayer/embed/RE4GydO)<br>[Learn more about creating a classifier](apply-a-retention-label-to-a-model.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-manage-contracts.png" alt-text="Thumbnail image of manage contracts using a Microsoft 365 solution video.":::](https://www.microsoft.com/videoplayer/embed/RWJUR0)<br>[Learn more about managing contracts](solution-manage-contracts-in-microsoft-365.md)     |
 
-
+|Model usage analytics  |Leverage term store taxonomy  |
+|---------|---------|
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-model-usage-analytics.png" alt-text="Thumbnail image of model usage analytics video.":::](https://www.microsoft.com/videoplayer/embed/RE4GnhX)<br>[Learn more about model usage analytics](model-usage-analytics.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-leverage-taxonomy.png" alt-text="Thumbnail image of leverage term store taxonomy video.":::](https://www.microsoft.com/videoplayer/embed/RE4GpJJ)<br>[Learn more about leveraging taxonomy](leverage-term-store-taxonomy.md)     |
 
