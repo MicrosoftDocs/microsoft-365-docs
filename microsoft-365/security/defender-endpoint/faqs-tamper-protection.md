@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 02/07/2023
+ms.date: 03/06/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -56,7 +56,7 @@ Devices that are onboarded to Microsoft Defender for Endpoint will have Microsof
 
 If you're an organization using [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint), you should be able to manage tamper protection in Intune similar to how you manage other endpoint protection features. See the following sections of this article:
 
-- [Manage tamper protection using Microsoft Intune](manage-tamper-protection-microsoft-endpoint-manager.md)
+- [Manage tamper protection using Microsoft Intune](manage-tamper-protection-intune.md)
 - [Manage tamper protection using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)
 
 If you're a home user, see [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md).
