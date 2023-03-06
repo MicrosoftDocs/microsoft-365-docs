@@ -7,6 +7,8 @@
               href: syntex-overview.md 
             - name: Licensing for Syntex
               href: syntex-licensing.md
+            - name: Pricing for pay-as-you-go
+              href: syntex-pay-as-you-go-services.md
             - name: Set up pay-as-you-go billing
               href: syntex-azure-billing.md
             - name: Set up per-user licenses
