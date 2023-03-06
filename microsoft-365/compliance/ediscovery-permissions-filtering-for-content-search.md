@@ -117,7 +117,7 @@ The  _Filters_ parameter specifies the search criteria for the compliance securi
 
 - **Site and site content filtering:** 
 
-**DocumentLink_**_SearchableSiteProperty_
+   **DocumentLink_**_SearchableSiteProperty_
 
    The path (URL) of a specific folder on a SharePoint or OneDrive site. If you use this property, be sure to search the site where the specified folder is located in. We recommend using this property instead of the Site and Path properties.
 
