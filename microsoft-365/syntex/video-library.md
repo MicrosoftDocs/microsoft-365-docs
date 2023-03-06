@@ -19,20 +19,15 @@ description: Watch to learn about the different features in Microsoft Syntex.
 
 # Microsoft Syntex video library
 
-## Model types
+## Get started
 
 |Overview of Syntex models  |Unstructured document processing models  |
 |---------|---------|
 |[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)         |
-|Row2     |         |
 
+|Apply a model to a document library  |Create a content center  |
+|---------|---------|
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of apply a model video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of create a content center video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)         |
 
-|Row2     |
+## Train a model
 
-## Overview of model types
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7]
-
-## Unstructured document processing
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7]
