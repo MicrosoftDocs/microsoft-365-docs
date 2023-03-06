@@ -21,7 +21,7 @@ description: Users can learn how to view and manage quarantined messages in Exch
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.date: 3/2/2023
+ms.date: 3/3/2023
 ---
 
 # Find and release quarantined messages as a user in EOP
@@ -73,7 +73,7 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 ## View your quarantined messages
 
 > [!NOTE]
-> Your ability to view quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the quarantined message type (which might be the [default quarantine policy for the quarantine reason](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)).
+> Your ability to view quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the reason why the message was quarantined (which might be the default quarantine policy as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)).
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine**. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
 
@@ -166,7 +166,7 @@ To take action on the message, see the next section.
 ### Take action on quarantined email
 
 > [!NOTE]
-> Your ability to take action on quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the quarantined message type (which might be the [default quarantine policy for the quarantine reason](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). This section describes all available actions.
+> Your ability to view quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the reason why the message was quarantined (which might be the default quarantine policy as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)). This section describes all available actions.
 
 After you select a quarantined message from the list, the following actions are available in the details flyout:
 
