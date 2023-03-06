@@ -131,6 +131,16 @@ You can use any of the following methods to configure tamper protection:
 
 If tamper protection prevents your IT or security team from performing a necessary task on a device, consider using [troubleshooting mode](enable-troubleshooting-mode.md). We recommend keeping tamper protection turned on for your organization.
 
+## Does tamper protection require cloud protection?
+  
+Depending on the method or management tool you use to enable tamper protection, there might be a dependency on [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md). Cloud-delivered protection is also referred to as cloud protection, or Microsoft Advanced Protection Service (MAPS). The following table summarizes whether there's a dependency on cloud protection.
+
+| How tamper protection is enabled | Dependency on cloud protection? |
+|---|---|
+| Microsoft Intune | No |
+| Microsoft Configuration Manager with Tenant Attach | No |
+| Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | Yes |
+
 ## See also
 
 - [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
