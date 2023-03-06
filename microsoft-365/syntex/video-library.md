@@ -21,13 +21,24 @@ description: Watch to learn about the different features in Microsoft Syntex.
 
 ## Get started
 
+|Overview of model types  |Create a content center  |
+|---------|---------|
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about Syntex models](model-types-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-create-content-center.png" alt-text="Thumbnail image of overview of create a content center.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about a content center](create-a-content-center.md)         |
+
 |Overview of model types  |Unstructured document processing  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about Syntex models](model-types-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>Related article: [Overview of unstructured document processing](document-understanding-overview.md)         |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about Syntex models](model-types-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about unstructured document processing](document-understanding-overview.md)         |
 
 |Apply a model to a document library  |Create a content center  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of apply a model video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of create a content center video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)         |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-apply-a-model.png" alt-text="Thumbnail image of apply a model video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-create-content-center.png" alt-text="Thumbnail image of overview of create a content center video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)         |
+
+
+|Apply a model to a document library  |Create a content center  |
+|---------|---------|
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-apply-a-model.png" alt-text="Thumbnail image of apply a model video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-create-content-center.png" alt-text="Thumbnail image of overview of create a content center video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)         |
+
+
 
 ## Train a model
 
