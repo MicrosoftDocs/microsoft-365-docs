@@ -85,8 +85,8 @@ You can use Microsoft Intune and other methods to configure or manage tamper pro
 
 | Method | Description |
 |:---|:---|
-| The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | Turn tamper protection on or off, tenant wide. For more information, see [Manage tamper protection for your organization using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md). |
-| Intune ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) | Turn tamper protection on or off, or fine-tune tamper protection settings in your organization. For more information, see [Manage tamper protection for your organization using Intune](manage-tamper-protection-intune.md). |
+| The [Microsoft 365 Defender portal](https://security.microsoft.com) | Turn tamper protection on or off, tenant wide. For more information, see [Manage tamper protection for your organization using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md). |
+| The [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) | Turn tamper protection on or off, or fine-tune tamper protection settings in your organization. For more information, see [Manage tamper protection for your organization using Intune](manage-tamper-protection-intune.md). |
 | Configuration Manager | Turn tamper protection on or off by using Configuration Manager. For more information, see [Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md). |
 | Windows Security app | Turn tamper protection on or off on an individual device that is not managed by a security team (such as devices for home use). For more information, see [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md). |
 
