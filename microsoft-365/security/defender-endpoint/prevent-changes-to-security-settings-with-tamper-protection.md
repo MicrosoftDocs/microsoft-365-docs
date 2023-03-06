@@ -36,7 +36,9 @@ search.appverid: met150
 
 ## What is tamper protection?
 
-Tamper protection is a capability in Microsoft Defender for Endpoint that helps protect certain security settings from being disabled or changed. During some kinds of cyber attacks, bad actors try to disable security features, such as antivirus protection, on devices. Disabling security features provides bad actors with easier access to your data, the ability to install malware, and the ability to exploit your data, identity, and devices. Tamper protection helps guard against these types of activities. Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md), and is an important part of [Built-in protection](built-in-protection.md).
+Tamper protection is a capability in Microsoft Defender for Endpoint that helps protect certain security settings from being disabled or changed. During some kinds of cyber attacks, bad actors try to disable security features, such as antivirus protection, on devices. Disabling security features provides bad actors with easier access to your data, the ability to install malware, and the ability to exploit your data, identity, and devices. Tamper protection helps guard against these types of activities. 
+
+Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md), and is an important part of [Built-in protection](built-in-protection.md).
 
 ## What happens when tamper protection is turned on?
 
@@ -119,10 +121,7 @@ To learn more about Microsoft Defender Vulnerability Management, see [Dashboard 
 
 ## See also
 
-- [Frequently asked questions on tamper protection](faqs-tamper-protection.md)
+- [Protect macOS security settings with tamper protection](tamperprotection-macos.md)
 - [Built-in protection helps guard against ransomware](built-in-protection.md)
+- [Frequently asked questions on tamper protection](faqs-tamper-protection.md)
 - [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
-- [Get an overview of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)
-- [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
-- [Enable troubleshooting mode](enable-troubleshooting-mode.md)
-- [Troubleshooting mode scenarios](troubleshooting-mode-scenarios.md)
