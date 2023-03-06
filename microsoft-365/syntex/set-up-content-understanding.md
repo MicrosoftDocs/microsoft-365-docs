@@ -22,7 +22,7 @@ description: Set up Microsoft Syntex per-user licensing.
 
 If you plan to use Microsoft Syntex with per-user licensing, follow the steps in this article to set up your licenses, and then read [Set up Microsoft Syntex](set-up-microsoft-syntex.md) to set up Microsoft Syntex features.
 
-For an overview of licensing options for Microsft Syntex, see [Licensing for Microsoft Syntex](syntex-licensing.md).
+For an overview of licensing options for Microsoft Syntex, see [Licensing for Microsoft Syntex](syntex-licensing.md).
 
 ## Plan for per-user licenses
 
