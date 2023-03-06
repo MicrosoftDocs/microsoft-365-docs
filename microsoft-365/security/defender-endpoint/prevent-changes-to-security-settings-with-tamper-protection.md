@@ -29,21 +29,13 @@ search.appverid: met150
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1 and Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 **Platforms**
 - Windows
 - [macOS](tamperprotection-macos.md)
 
-Tamper protection is available for devices that are running one of the following versions of Windows:
-
-- Windows 10 and 11 (including Enterprise multi-session)
-- Windows Server 2022, Windows Server 2019, and Windows Server, version 1803 or later
-- Windows Server 2016 and Windows Server 2012 R2 (using the modern, unified solution)
-
-Tamper protection is also available for Mac. See [Protect macOS security settings with tamper protection](tamperprotection-macos.md).
 
 ## What is tamper protection?
 
@@ -59,6 +51,16 @@ Tamper protection helps protect your security settings from being disabled or ch
 - Notifications are visible in the Windows Security app on Windows devices
 - Archives and network files can be scanned
 
+Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Defender for Endpoint, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team.
+
+Tamper protection is available for devices that are running one of the following versions of Windows:
+
+- Windows 10 and 11 (including Enterprise multi-session)
+- Windows Server 2022, Windows Server 2019, and Windows Server, version 1803 or later
+- Windows Server 2016 and Windows Server 2012 R2 (using the modern, unified solution)
+
+Tamper protection is also available for Mac. See [Protect macOS security settings with tamper protection](tamperprotection-macos.md).
+
 > [!IMPORTANT]
 > Built-in protection includes turning tamper protection on by default. To learn more about built-in protection, see:
 > - [Built-in protection helps guard against ransomware](built-in-protection.md) (article)
@@ -69,15 +71,6 @@ Tamper protection helps protect your security settings from being disabled or ch
 > If you're using Microsoft Intune to manage Defender for Endpoint settings, we recommend setting [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on devices, and deploy using Intune.
 >
 > When tamper protection is turned on, tamper protected settings cannot be changed from their default value. Changes might appear to be successful in Intune, but will not actually be allowed by tamper protection. For the most current list of tamper protected settings, contact support.
-
-## How tamper protection works
-
-Tamper protection essentially locks Microsoft Defender Antivirus to its secure, default values, and prevents your security settings from being changed through apps and methods such as:
-
-- Configuring settings in Registry Editor on your Windows device
-- Changing settings through PowerShell cmdlets on your device
-
-Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Defender for Endpoint, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team.
 
 ## Tamper protection and cloud protection  
   
