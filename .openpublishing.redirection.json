@@ -10723,7 +10723,7 @@
   {
     "source_path": "microsoft-365/security/defender-endpoint/manage-tamper-protection-microsoft-endpoint-manager.md",
     "redirect_url": "/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune",
-    "redirect_document_id": true
+    "redirect_document_id": false
   }
  ]
 }
