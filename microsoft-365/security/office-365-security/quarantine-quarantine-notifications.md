@@ -37,9 +37,12 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 _Quarantine policies_ define what users are allowed to do or not do to quarantined messages based on why the message was quarantined for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Default quarantine policies enforce the historical capabilities for the security feature that quarantined the message as described in the table [here](quarantine-end-user.md). Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).
 
-Quarantine notifications are not turned on in the built-in quarantine notifications named AdminOnlyAccessPolicy or DefaultFullAccessPolicy. Quarantine notifications are turned on in the built-in quarantine policy named NotificationEnabledPolicy [if your organization has it](quarantine-policies.md#full-access-permissions-and-quarantine-notifications). Otherwise, to turn on quarantine notifications in quarantine policies, you need to [create and configure a new quarantine policy](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
+Quarantine notifications are not turned on in the built-in quarantine notifications named AdminOnlyAccessPolicy or DefaultFullAccessPolicy. Quarantine notifications are turned on in the following built-in quarantine policies:
 
-In addition, to allow the 'Block sender' option in quarantine notifications to work correctly, users need to be enabled for remote Powershell. For instructions, see [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell).
+- **NotificationEnabledPolicy** [if your organization has it](quarantine-policies.md#full-access-permissions-and-quarantine-notifications).
+- **DefaultFullAccessWithNotificationPolicy** that's used in [preset security policies](preset-security-policies.md).
+
+Otherwise, to turn on quarantine notifications in quarantine policies, you need to [create and configure a new quarantine policy](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
 Admins can also use the global settings in quarantine policies to customize the sender's display name, disclaimer text in different languages, and the company logo that's used in quarantine notifications. For instructions, see [Configure global quarantine notification settings](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
 
