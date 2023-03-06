@@ -54,7 +54,7 @@ Delegated (work or school account)|Ip.Read.All|'Read IP address profiles'
 
 > [!NOTE]
 > When obtaining a token using user credentials:
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+> - The user needs to have at least the following role permission: 'View Data' (For more information, see [Create and manage roles](user-roles.md))
 
 ## HTTP request
 
@@ -80,13 +80,13 @@ Empty
 
 ## Response
 
-If successful and ip exists - 200 OK with statistical data in the body. IP is valid but does not exist - organizationPrevalence 0, IP is invalid - HTTP 400.
+If successful and ip exists - 200 OK with statistical data in the body. IP is valid but doesn't exist - organizationPrevalence 0, IP is invalid - HTTP 400.
 
 ## Example
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats?lookBackHours=48
@@ -94,7 +94,7 @@ GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats?lookBac
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 {

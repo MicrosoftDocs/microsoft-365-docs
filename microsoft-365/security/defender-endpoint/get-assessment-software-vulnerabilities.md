@@ -417,7 +417,7 @@ VulnerabilitySeverityLevel|String|Severity level that is assigned to the securit
    1. Fixed: CVE-A on version 1.0 was fixed.
    1. New: CVE-A on version 2.0 was added.
 
-- If a specific vulnerability (for example, CVE-A) was first seen at a specific time (for example, January 10) on software with version 1.0, and a few days later that software was updated to version 2.0 which also exposed to the same CVE-A, you will receive these two separated events:
+- If a specific vulnerability (for example, CVE-A) was first seen at a specific time (for example, January 10) on software with version 1.0, and a few days later that software was updated to version 2.0 which also exposed to the same CVE-A, you'll receive these two separated events:
    1. Fixed: CVE-X, FirstSeenTimestamp January 10, version 1,0.
    1. New: CVE-X, FirstSeenTimestamp January 10, version 2.0.
 

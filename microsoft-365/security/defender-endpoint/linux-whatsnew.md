@@ -60,7 +60,7 @@ This article is updated frequently to let you know what's new in the latest rele
 **Known issues**
 
 
-- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines needs to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
 
 
 ```bash
@@ -107,9 +107,9 @@ sudo systemctl disable mdatp
 	- V2 engine is default with this release and V1 engine bits are completely removed for enhanced security.
 	- V2 engine support configuration path for AV definitions. (mdatp definition set path)
 	- Removed external packages dependencies from MDE package. Removed dependencies are libatomic1, libselinux, libseccomp, libfuse, and libuuid
-	- In case crash collection is disabled by configuration, crash monitoring process will not be launched.
+	- In case crash collection is disabled by configuration, crash monitoring process won't be launched.
 	- Performance fixes to optimally use system events for AV capabilities.
-	- Stability improvement in case of mdatp restart and loading of epsext issues.
+	- Stability improvement if there is mdatp restart and loading of epsext issues.
 	- Other fixes
 
 **Known issues**
@@ -149,7 +149,7 @@ sudo systemctl disable mdatp
 
 **What's new**
 
-- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA, this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) aren't impacted by this issue. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
 	
 **Known issues**
 
@@ -268,7 +268,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 - On RHEL 6, product can now be installed on devices running Unbreakable Enterprise Kernel (UEK)
 - Fixed an issue where the process name was sometimes incorrectly displayed as `unknown` when running `mdatp diagnostic real-time-protection-statistics`
 - Fixed a bug where the product sometimes was incorrectly detecting files inside the quarantine folder
-- Fixed an issue where the `mdatp` command-line tool was not working when `/opt` was mounted as a soft-link
+- Fixed an issue where the `mdatp` command-line tool wasn't working when `/opt` was mounted as a soft-link
 - Performance improvements & bug fixes
 </br>
 
@@ -418,7 +418,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
    
   <p><b>What's new</b></p>
 
-  - Starting with this version, we are bringing Microsoft Defender for Endpoint support to the following distros:
+  - Starting with this version, we're bringing Microsoft Defender for Endpoint support to the following distros:
 
     - RHEL6.7-6.10 and CentOS6.7-6.10 versions.
     - Amazon Linux 2
