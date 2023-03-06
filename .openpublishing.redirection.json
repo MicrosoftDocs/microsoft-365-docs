@@ -9652,7 +9652,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/user-submission.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/submissions-user-reported-messages-files-custom-mailbox",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-user-reported-messages-custom-mailbox",
       "redirect_document_id": true
     },
     {
@@ -9773,6 +9773,16 @@
     {
       "source_path": "microsoft-365/security/office-365-security/monitor-for-leaks-of-personal-data.md",
       "redirect_url": "/microsoft-365/compliance/dlp-learn-about-dlp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/admin-review-reported-message.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-admin-review-user-reported-messages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/submissions-user-reported-messages-files-custom-mailbox.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-user-reported-messages-custom-mailbox",
       "redirect_document_id": false
     },
     {
@@ -10698,6 +10708,11 @@
   {
     "source_path": "microsoft-365/compliance/data-loss-prevention-policies.md",
     "redirect_url": "microsoft-365/compliance/dlp-learn-about-dlp",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/frontline/ehr-admin-cerner.md",
+    "redirect_url": "/microsoft-365/frontline/ehr-admin-oracle-health",
     "redirect_document_id": false
   },
   {

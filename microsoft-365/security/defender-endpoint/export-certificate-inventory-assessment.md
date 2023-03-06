@@ -63,8 +63,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Software.Read.All|'Read Threat and Vulnerability Management software information'
-Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management software information'
+Application|Vulnerability.Read.All|'Read Threat and Vulnerability Management software information'
+Delegated (work or school account)|Vulnerability.Read|'Read Threat and Vulnerability Management software information'
 
 ### 1.3 URL
 
@@ -111,7 +111,7 @@ Property (ID)|Data type|Description
 ### 1.6.1 Request example
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAssessmentByMachine
+GET https://api.securitycenter.microsoft.com/api/machines/CertificateAssessmentByMachine
 ```
 
 ### 1.6.2 Response example
@@ -158,8 +158,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Software.Read.All|'Read Threat and Vulnerability Management software information'
-Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management software information'
+Application|Vulnerability.Read.All|'Read Threat and Vulnerability Management software information'
+Delegated (work or school account)|Vulnerability.Read|'Read Threat and Vulnerability Management software information'
 
 ### 2.3 URL
 

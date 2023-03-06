@@ -9,6 +9,7 @@ f1.keywords:
 - MAM
 - set up mobile ap protection
 manager: dougeby
+ms.date: 10/20/2021
 audience: ITPro
 ms.topic: article
 description: Configure mobile app protection with App Protection policies (APP) to prevent specified corporate data from being copied and pasted to other apps. 

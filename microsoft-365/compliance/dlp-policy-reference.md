@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -34,6 +34,7 @@ If you're new to Microsoft Purview DLP, here's a list of the core articles you'l
 
 1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
+1. [Sensitive Information Type Limits](/microsoft-365/compliance/sit-limits) - these limits apply to all Microsoft Purview policies that use sensitive information types.
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
     1. [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
@@ -165,7 +166,7 @@ A DLP policy can find and protect items that contain sensitive information acros
 |Teams chat and channel messages|Yes     | account or distribution group |data-in-motion </br> data-in-use |  No       |
 |Microsoft Defender for Cloud Apps|No   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |Devices|Yes  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|On-premises repositories (file shares and SharePoint)|No    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|On-premises repositories (file shares and SharePoint)|No    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-repositories) |
 |Power BI |No| workspaces | data-in-use | No|
 
 If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the emails sent by members of that group. Similarly excluding a distribution group will exclude all the emails sent by the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.

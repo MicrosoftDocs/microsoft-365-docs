@@ -1,6 +1,7 @@
-﻿---
+---
 title: "Add or remove a geo administrator"
 ms.reviewer: adwood
+ms.date: 08/10/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen

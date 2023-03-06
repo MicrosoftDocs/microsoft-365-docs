@@ -3,6 +3,7 @@ title: "Microsoft 365 Multi-Tenant Organization People Search"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 07/26/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -70,7 +71,7 @@ Multi-tenant organization people search is supported across a range of scenarios
    - Nestor types in "Megan" in the _cc_ line of the email and can get the result for <megan@fabrikam.com>.
    - Nestor can hover and/or click on Megan's profile picture/initials to view Megan's limited people card.
 
-2. **Microsoft OneDrive/Sharepoint**
+2. **Microsoft OneDrive/SharePoint**
 
    - Nestor (<nestor@contoso.com>) searches for "Megan" in the centralized search bar on SharePoint and can get the result for <megan@fabrikam.com>.
    - Nestor can hover and/or click on Megan's profile picture/initials to view Megan's limited people card.

@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/07/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -93,7 +94,7 @@ Built-in remediation workflows allow you to quickly identify and take action on 
 - **Flexible remediation workflow**: New remediation workflow helps you quickly take action on policy matches, including new options to escalate messages to other reviewers and to send email notifications to users with policy matches.
 - **Conversation policy matching**: Messages in conversations are grouped by policy matches to give you more visibility about how conversations relate to your communication policies. For example, conversation policy matching in the *Pending Alerts* view will automatically show all messages in a Teams channel that have matches for your communications policies for analyzing and mitigating potentially inappropriate messages. Other messages in conversations that don't match your communications policies wouldn't be displayed.
 - **Keyword highlighting**: Terms matching policy conditions are highlighted in the message text view to help reviewers quickly analyze and remediate policy alerts.
-- **Optical character recognition (OCR) (preview)**: Check, detect, and investigate printed and handwritten text within images embedded or attached to email or Microsoft Teams chat messages.
+- **Optical character recognition (OCR)**: Check, detect, and investigate printed and handwritten text within images embedded or attached to email or Microsoft Teams chat messages.
 - **New filters**: Investigate and remediate policy alerts faster with message filters for several fields, including sender, recipient, date, domains, and many more.
 - **Improved message views**: Investigation and remediation actions are now quicker with new message source and text views. Message attachments are now viewable to provide complete context when taking remediation actions.
 - **User history**: Historical view of all user message remediation activities, such as past notifications and escalations for policy matches, now provides reviewers with more context during the remediation workflow process. First-time or repeat instances of policy matches for users are now archived and easily viewable.
@@ -120,20 +121,23 @@ Communication compliance policies check, detect, and capture messages across sev
 
 To learn more about messaging channel support in communication compliance policies, see [Detect channel signals with communication compliance](/microsoft-365/compliance/communication-compliance-channels).
 
-## Integration with insider risk management (preview)
+## Integration with insider risk management
 
 Communication compliance can provide risk signals detected in messages to insider risk management risky user policies. Using a dedicated [Detect inappropriate text](/microsoft-365/compliance/communication-compliance-policies#policy-templates) policy in communication compliance, you can choose to add this policy to a [Data leaks by risky employees](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-risky-users-preview) or [Security policy violations by risky employees](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-risky-users-preview) policy in insider risk management. Risky users detected in messages by the communication compliance policy act as a triggering event to bring users into scope for the insider risk management policies.
 
 To learn more about integration with insider risk management, see [Create and manage communication compliance policies](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview).
 To learn more about insider risk management, see [Learn about insider risk management](/microsoft-365/compliance/insider-risk-management).
 
-## Get started with recommended actions (preview)
+## Get started with recommended actions
 
-Whether you're setting up communication compliance for the first time or getting started with creating new policies, the new [recommended actions](/microsoft-365/compliance/communication-compliance-configure#recommended-actions-preview) experience can help you get the most out of communication compliance capabilities. Recommended actions include setting up permissions, creating distribution groups, creating policies, and more.
+Whether you're setting up communication compliance for the first time or getting started with creating new policies, the new [recommended actions](/microsoft-365/compliance/communication-compliance-configure#recommended-actions) experience can help you get the most out of communication compliance capabilities. Recommended actions include setting up permissions, creating distribution groups, creating policies, and more.
 
 ## Workflow
 
 Communication compliance helps you address common pain points associated with complying with internal policies and regulatory compliance requirements. With focused policy templates and a flexible workflow, you can use actionable insights to quickly resolve detected compliance issues.
+
+Before you create a policy, you can decide whether you want to apply an **adaptive scope**. For more information, see [Adaptive policy scopes for compliance solutions](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes). If you decide to create an adaptive policy, you must create one or more adaptive scopes before you create your policy, and then select them during the create new policy process. For instructions, see [Configuration information for adaptive scopes](purview-adaptive-scopes.md#configure-adaptive-scopes).
+
 
 Identifying and resolving compliance issues with communication compliance uses the following workflow:
 
@@ -178,7 +182,7 @@ The next step is to remediate communication compliance issues you've investigate
 - **Notify the user**: Often, users accidentally or inadvertently violate a communication compliance policy. You can use the notify feature to provide a warning notice to the user and to resolve the issue.
 - **Escalate to another reviewer**: Sometimes, the initial reviewer of an issue needs input from other reviewers to help resolve the incident. You can easily escalate message issues to reviewers in other areas of your organization as part of the resolution process.
 - **Report as misclassified**: Messages incorrectly detected as matches of compliance policies will occasionally slip through to the review process. You can mark these types of alerts as misclassified, submit feedback to Microsoft about the misclassification to help improve global classifiers, and automatically resolve the issue.
-- **Remove message in Teams (preview)**: Potentially inappropriate messages may be removed from displaying in Microsoft Teams channels or personal and group chat messages. Those identified messages that are removed are replaced with a notification that the message has been removed for a policy violation.
+- **Remove message in Teams**: Potentially inappropriate messages may be removed from displaying in Microsoft Teams channels or personal and group chat messages. Those identified messages that are removed are replaced with a notification that the message has been removed for a policy violation.
 - **Escalate for investigation**: In the most serious situations, you may need to share communication compliance information with other reviewers in your organization. Communication compliance is tightly integrated with other Microsoft Purview features to help you with end-to-end risk resolution. Escalating a case for investigation allows you to transfer data and management of the case to Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It allows legal teams to manage the entire legal hold notification workflow. To learn more about eDiscovery (Premium) cases, see [Overview of Microsoft Purview eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20).
 
 ### Maintain
