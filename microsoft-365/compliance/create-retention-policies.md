@@ -46,17 +46,17 @@ Decide before you create your retention policy whether it will be **adaptive** o
 
 Although a retention policy can support multiple services that are identified as "locations" in the retention policy, you can't create a single retention policy that includes all the supported locations:
 
-- Exchange email
-- SharePoint site
-- OneDrive accounts
-- Microsoft 365 groups
-- Skype for Business
-- Exchange public folders
-- Teams channel messages
-- Teams chats
-- Teams private channel messages
-- Yammer community messages
-- Yammer user messages
+- **Exchange mailboxes**
+- **SharePoint sites** or **SharePoint classic and communication sites**
+- **OneDrive accounts**
+- **Microsoft 365 Group mailboxes and sites**
+- **Skype for Business**
+- **Exchange public folders**
+- **Teams channel messages**
+- **Teams chats**
+- **Teams private channel messages**
+- **Yammer community messages**
+- **Yammer user messages**
 
 If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. This means that the instructions to follow depend on whether you need to include the Teams or Yammer locations.
 
