@@ -133,11 +133,11 @@ If tamper protection prevents your IT or security team from performing a necessa
 
 ## See also
 
+- [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
+- [Manage tamper protection for your organization using Microsoft Intune](manage-tamper-protection-intune.md)
+- [Manage tamper protection for your organization using Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md)
+
 If you're looking for Antivirus related information for other platforms, see:
 - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-- [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-- [Configure Defender for Endpoint on Android features](android-configure.md)
-- [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
