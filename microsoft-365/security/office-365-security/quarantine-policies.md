@@ -67,8 +67,6 @@ The default quarantine policies, their associated permission groups, and whether
 
 <sup>\*\*</sup>This policy is used in [preset security policies](preset-security-policies.md).
 
-<sup>\*</sup>See [the next section](#full-access-permissions-and-quarantine-notifications) for more information about this policy.
-
 If you don't like the default permissions in the preset permission groups, or if you want to enable quarantine notifications, create and use custom quarantine policies. For more information about what each permission does, see the [Quarantine policy permission details](#quarantine-policy-permission-details) section later in this article.
 
 You create and assign quarantine policies in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with Exchange Online mailboxes; standalone EOP PowerShell in EOP organizations without Exchange Online mailboxes).
