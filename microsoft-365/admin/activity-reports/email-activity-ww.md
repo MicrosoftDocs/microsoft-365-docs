@@ -29,7 +29,7 @@ description: "Learn how to get an email activity report and understand user emai
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
 
 > [!NOTE] 
-> The information and data on the Microsoft 365 Experience insights dashboard will help you better understand and improve your users' overall experience with Microsoft 365. [Learn more](https://learn.microsoft.com/microsoft-365/admin/misc/experience-insights-dashboard).
+> The information and data on the Microsoft 365 Experience insights dashboard will help you better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
   
 For example, you can get a high level view of email traffic within your organization from the Reports page, and then you can drill into the Email activity widget to understand the trends and per user level details of the email activity within your organization.
 
