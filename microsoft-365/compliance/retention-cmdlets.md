@@ -37,7 +37,7 @@ When you use retention labels, these contain the retention settings and their po
 
 ## Retention cmdlets for most locations
 
-Use the cmdlets in the following table when the locations are **Exchange email**, **SharePoint sites**, **OneDrive accounts**, **Microsoft 365 Groups**, **Skype for Business**, **Exchange public folders**, **Teams chat messages**, or **Teams channel messages**.
+Use the cmdlets in the following table when the locations are **Exchange mailboxes**, **SharePoint classic and communications sites**, **OneDrive accounts**, **Microosft 365 Group mailboxes & sites**, **Skype for Business**, **Exchange public folders**, **Teams chat messages**, or **Teams channel messages**.
 
 Don't use these cmdlets when the locations are for Teams private channel messages, Yammer user messages, or Yammer community messages. These locations have alternative cmdlets that are identified in the [next section](#retention-cmdlets-specific-to-teams-private-channels-and-yammer).
 
