@@ -54,7 +54,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FolderPath` | `string` | Folder containing the file that the behavior applies to|
 | `SHA1` | `string` | SHA-1 of the file that the behavior applies to|
 | `SHA256` | `string` | SHA-256 of the file that the behavior applies to|
-| `FileSize` | `long` | Size, in bytes, of the file that the behavior applies to|
+| `FileSize` | `long` | Size, in bytes, of the file that the behavior applies to |
 |`ThreatFamily`|`string`| xxx |
 |`RemoteIP`|`string` |xxx |
 |`RemoteUrl`|`string` |xxx |
@@ -64,8 +64,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountObjectId` | `string` | Unique identifier for the account in Azure AD |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `DeviceId` | `string` | Unique identifier for the machine in the service |
-|`DeviceName`|`string` |xxx |
-|`LocalIP`|`string` |xxx |
+|`DeviceName`|`string` | xxx |
+|`LocalIP`|`string` | xxx |
 |`NetworkMessageId`|`string`| xxx |
 |`EmailSubject`|`string`| xxx |
 |`EmailClusterId`|`string`| xxx |
