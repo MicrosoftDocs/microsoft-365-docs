@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -111,7 +111,7 @@ For technical details about how retention works for Teams, including what elemen
 
 #### Additional retention policy needed to support Teams
 
-Teams is more than just chats and channel messages. If you have teams that were created from a Microsoft 365 group (formerly Office 365 group), you should additionally configure a retention policy that includes that Microsoft 365 group by using the **Microosft 365 Group mailboxes & sites** location. This retention policy applies to content in the group's mailbox, site, and files.
+Teams is more than just chats and channel messages. If you have teams that were created from a Microsoft 365 group (formerly Office 365 group), you should additionally configure a retention policy that includes that Microsoft 365 group by using the **Microsoft 365 Group mailboxes & sites** location. This retention policy applies to content in the group's mailbox, site, and files.
 
 If you have team sites that aren't connected to a Microsoft 365 group, you need a retention policy that includes the **SharePoint classic and communications sites** or **OneDrive accounts** locations to retain and delete files in Teams:
 
@@ -165,7 +165,7 @@ For technical details about how retention works for Yammer, including what eleme
 
 #### Additional retention policies needed to support Yammer
 
-Yammer is more than just community messages and private messages. To retain and delete email messages for your Yammer network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Yammer, by using the **Microosft 365 Group mailboxes & sites** location.
+Yammer is more than just community messages and private messages. To retain and delete email messages for your Yammer network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Yammer, by using the **Microsoft 365 Group mailboxes & sites** location.
 
 This location will also include files that are uploaded to Yammer communities. These files are stored in the group-connected SharePoint site for the Yammer community.
 

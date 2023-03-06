@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/16/2021
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -82,7 +82,7 @@ Both the **Exchange mailboxes** location and the **Exchange public folders** loc
 
 The **Exchange mailboxes** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox. Shared mailboxes and resource mailboxes for equipment and rooms are also supported.
 
-Email contacts and Microsoft 365 group mailboxes aren't supported for Exchange email. For Microsoft 365 group mailboxes, select the **Microosft 365 Group mailboxes & sites** location instead. Although the Exchange location initially allows a group mailbox to be selected for a static scope, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" isn't a valid selection for this location.
+Email contacts and Microsoft 365 group mailboxes aren't supported for Exchange email. For Microsoft 365 group mailboxes, select the **Microsoft 365 Group mailboxes & sites** location instead. Although the Exchange location initially allows a group mailbox to be selected for a static scope, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" isn't a valid selection for this location.
 
 Depending on your policy configuration, [inactive mailboxes](inactive-mailboxes-in-office-365.md) might be included or not:
 
@@ -111,7 +111,7 @@ When you configure an auto-apply policy that uses sensitive information types an
 The location name for the SharePoint sites location changes, depending on whether you're using [adaptive policy scopes or static policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention). The name change reflects what type of sites are included:
 
 - Static policy scopes: **SharePoint classic and communications sites**
-    - Can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microosft 365 Group mailboxes & sites** location that applies to content in the group's mailbox, site, and files.
+    - Can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 Group mailboxes & sites** location that applies to content in the group's mailbox, site, and files.
 
 - Adaptive policy scopes: **SharePoint sites** 
     - Can retain and delete documents in OneDrive sites and Microsoft 365 group-connected sites in addition to SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites.
@@ -135,7 +135,7 @@ To specify individual OneDrive accounts, see [Get a list of all user OneDrive UR
 
 ### Configuration information for Microsoft 365 Group mailboxes & sites
 
-To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Microosft 365 Group mailboxes & sites** location. For retention policies, this location includes the group mailbox and SharePoint teams site. For retention labels, this location includes the SharePoint teams site only.
+To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Microsoft 365 Group mailboxes & sites** location. For retention policies, this location includes the group mailbox and SharePoint teams site. For retention labels, this location includes the SharePoint teams site only.
 
 For detailed information about which items are included and excluded for Microsoft 365 Groups:
 - For group mailboxes, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion) for Exchange retention.
@@ -159,7 +159,7 @@ To return to the default value of both the mailbox and SharePoint site for the s
 
 #### Exceptions for auto-apply policies configured for sensitive information types
 
-When you configure an auto-apply policy that uses sensitive information types and select the **Microosft 365 Group mailboxes & sites** location:
+When you configure an auto-apply policy that uses sensitive information types and select the **Microsoft 365 Group mailboxes & sites** location:
 
 - Microsoft 365 group mailboxes aren't included. To include these mailboxes in your policy, select the **Exchange mailboxes** location instead.
 
@@ -167,7 +167,7 @@ When you configure an auto-apply policy that uses sensitive information types an
 
 When a policy for retention (static policy scope or adaptive) is applied to a Microsoft 365 group, and that group is then deleted from Azure Active Directory:
 
-- The group-connected SharePoint site is preserved and continues to be managed by the retention policy with the **Microosft 365 Group mailboxes & sites** location. The site is still accessible to the people who had access to it before the group was deleted, and any new permissions must now be managed via SharePoint.
+- The group-connected SharePoint site is preserved and continues to be managed by the retention policy with the **Microsoft 365 Group mailboxes & sites** location. The site is still accessible to the people who had access to it before the group was deleted, and any new permissions must now be managed via SharePoint.
     
     At this point, you can't exclude the site from the Microsoft 365 Groups location, because you can't specify the deleted group. If you need to release the retention policy from this site, contact Microsoft Support. For example, [open a support request in the Microsoft 365 Admin Center](/microsoft-365/admin/get-help-support#online-support).
 
