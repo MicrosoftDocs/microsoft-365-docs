@@ -10,8 +10,8 @@ ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: Dansimp
+ms.author: Daniel.Simpson
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr

@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: jweston-1
+author: Dansimp
+ms.author: Daniel.Simpson
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
