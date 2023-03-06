@@ -100,7 +100,7 @@ If you're using tenant attach, you can use Microsoft Configuration Manager. See 
 
 ## I have the Windows E3 enrollment. Can I use configuring tamper protection in Intune?
 
-Currently, configuring tamper protection in Intune is only available for customers whose subscriptions include [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint).
+Currently, configuring tamper protection in Intune is only available for customers whose subscriptions include [Microsoft Defender for Endpoint Plan 1 or Plan 2](/microsoft-365/security/defender-endpoint).
 
 ## I'm an enterprise customer. Can local admins change tamper protection on their devices?
 
@@ -127,16 +127,17 @@ You can use any of the following methods to configure tamper protection:
 - [Configuration Manager](manage-tamper-protection-configuration-manager.md) (with tenant attach, you can configure tamper protection for some or all devices by using the Windows Security experience profile)
 - [Windows Security app](manage-tamper-protection-individual-device.md) (for an individual device used at home or that isn't centrally managed by a security team)
 
-> [!NOTE]
-> We recommend keeping tamper protection turned on for your whole organization. If tamper protection prevents your IT or security team from performing a necessary task on a device, consider using [troubleshooting mode](enable-troubleshooting-mode.md) instead of disabling tamper protection.
+## Tamper protection is preventing my security team from managing a device. What should we do?
 
+If tamper protection prevents your IT or security team from performing a necessary task on a device, consider using [troubleshooting mode](enable-troubleshooting-mode.md). We recommend keeping tamper protection turned on for your organization.
 
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+## See also
+
+If you're looking for Antivirus related information for other platforms, see:
+- [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+- [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+- [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+- [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+- [Configure Defender for Endpoint on Android features](android-configure.md)
+- [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
