@@ -52,7 +52,7 @@ When tamper protection is turned on, tamper protected settings cannot be changed
 - Notifications are visible in the Windows Security app on Windows devices
 - Archives and network files can be scanned
 
-Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Defender for Endpoint, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team. (See [Choose from several methods to configure tamper protection](#choose-from-several-methods-to-configure-tamper-protection).)
+Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Defender for Endpoint, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team. (See [How do I configure or manage tamper protection](#how-do-i-configure-or-manage-tamper-protection)?)
 
 ## On what devices can tamper protection be enabled?
 
