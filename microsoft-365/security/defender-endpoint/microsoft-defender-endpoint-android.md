@@ -68,9 +68,7 @@ This topic describes how to install, configure, update, and use Defender for End
 - Intune Company Portal app is downloaded from [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) and installed. Device enrollment is required for Intune device compliance policies to be enforced.
 
  > [!NOTE]
->
-> - Microsoft Defender for Endpoint on Android isn't supported on user-less or shared devices.
-
+ > Microsoft Defender for Endpoint on Android isn't supported on userless or shared devices.
 
 ### Installation instructions
 
