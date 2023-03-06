@@ -4,10 +4,7 @@ ms.reviewer: mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Turn tamper protection on or off for your organization in Microsoft Intune.
 keywords: malware, defender, antivirus, tamper protection, Microsoft Intune
-ms.pagetype: security
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 ms.date: 03/06/2023
 audience: ITPro
@@ -34,7 +31,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect your security settings from being disabled or changed. If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). With Intune, you can fine-tune tamper protection settings, such as by enabling tamper protection on some, but not all devices.
+[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect your security settings from being disabled or changed. If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). With Intune, you can enable tamper protection on some, but not all devices. You can also tamper protect exclusions that are defined for Microsoft Defender Antivirus.
 
 Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md).
 
