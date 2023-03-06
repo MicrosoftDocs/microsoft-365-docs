@@ -118,8 +118,10 @@ The  _Filters_ parameter specifies the search criteria for the compliance securi
 - **Site and site content filtering:** 
 
 **DocumentLink_**_SearchableSiteProperty_
-The path (URL) of a specific folder on a SharePoint or OneDrive for Business site. If you use this property, be sure to search the site that the specified folder is located in. We recommend using this property instead of the Site and Path properties.
-To return items located in subfolders of the folder that you specify for the documentlink property, you have to add /* to the URL of the specified folder;  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`
+
+The path (URL) of a specific folder on a SharePoint or OneDrive site. If you use this property, be sure to search the site where the specified folder is located in. We recommend using this property instead of the Site and Path properties.
+
+To return items located in subfolders of the folder that you specify for the documentlink property, you have to add /* to the URL of the specified folder; `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`
 
 
 For a list of searchable site properties, see [Keyword queries and search conditions for eDiscovery](ediscovery-keyword-queries-and-search-conditions.md#searchable-site-properties). For a more complete list, see [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Properties marked with a **Yes** in the **Queryable** column can be used to create a site or site content filter.
