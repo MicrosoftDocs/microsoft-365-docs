@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -131,7 +131,7 @@ The limits described in this section are related to exporting documents out of a
 
 |Description of limit|Limit|
 |:---|:---|
-|Maximum number of items displayed per page in a review set.|10,000|
+|Maximum number of items displayed per page in a review set.|1,000|
 
 > [!NOTE]
 > Use default or custom filters to [adjust the displayed items](/microsoft-365/compliance/review-set-search) in a review set as needed.
