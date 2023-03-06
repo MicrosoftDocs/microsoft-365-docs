@@ -70,6 +70,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Data lifecycle management and records management
 
+- **Configuration improvements**: The configuration for retention policies and retention label policies in the Microsoft Purview compliance portal has been improved for the selection and configuration of locations. Some of the location names have changed to better reflect what's included for the location, and a new **Applicable Content** column is added for additional information.
 - **Rolling out in preview**: Auto-labeling retention policies now support [simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode), so you can test out your policy configuration and view results before deploying in production.
 - The configuration and management of [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) is moving to a new location in the Microsoft Purview compliance portal: **Roles & Scopes** \> **Adaptive scopes**. Additionally, a new role, **Scope Manager**, is required to create and manage adaptive scopes. This new role is included in the **Records Management** role group and other built-in role groups, such as **Compliance Administrator**.
 - New troubleshooting resources:
