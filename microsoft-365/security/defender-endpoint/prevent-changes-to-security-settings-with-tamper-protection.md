@@ -45,19 +45,19 @@ Tamper protection is available for devices that are running one of the following
 
 Tamper protection is also available for Mac. See [Protect macOS security settings with tamper protection](tamperprotection-macos.md).
 
-## Overview
+## What is tamper protection?
 
-During some kinds of cyber attacks, bad actors try to disable security features, such as antivirus protection, on your machines. Bad actors like to disable your security features to get easier access to your data, to install malware, or to otherwise exploit your data, identity, and devices. Tamper protection helps prevent these kinds of things from occurring. With tamper protection, malicious apps are prevented from taking actions such as:
+Tamper protection helps protect your security settings from being disabled or changed. During some kinds of cyber attacks, bad actors try to disable security features, such as antivirus protection, on devices. Disabling security features provides bad actors with easier access to your data, the ability to install malware, and the ability to exploit your data, identity, and devices. Tamper protection helps guard against these types of activities. When tamper protection is turned on, tamper protected settings cannot be changed from their default values:
 
-- Disabling virus and threat protection
-- Disabling real-time protection
-- Turning off behavior monitoring
-- Disabling antivirus protection, such as IOfficeAntivirus (IOAV)
-- Disabling cloud-delivered protection
-- Removing security intelligence updates
-- Disabling automatic actions on detected threats
-- Suppressing notifications in the Windows Security app
-- Disabling scanning of archives and network files
+- Virus and threat protection are enabled
+- Real-time protection is turned on
+- Behavior monitoring is turned on
+- Antivirus protection, including IOfficeAntivirus (IOAV) is enabled
+- Cloud-delivered protection is enabled
+- Security intelligence updates occur as expected
+- Automatic actions are taken on detected threats
+- Notifications are visible in the Windows Security app on Windows devices
+- Archives and network files can be scanned
 
 > [!IMPORTANT]
 > Built-in protection includes turning tamper protection on by default. To learn more about built-in protection, see:
