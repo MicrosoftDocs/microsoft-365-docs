@@ -49,20 +49,34 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DataSources` | `list` | Products or services that provided information for the behavior |
 | `EntityType` | `string` | Type of object, such as a file, a process, a device, or a user |
 | `EntityRole` | `string` | Indicates whether the entity is impacted or merely related |
-
-
-
-
-| `DeviceId` | `string` | Unique identifier for the machine in the service |
-| `AccountUpn` | `string` | User principal name (UPN) of the account |
+| `DetailedEntityRole` | `string` | The roles of the entity in the behavior|
+| `FileName` | `string` | Name of the file that the behavior applies to|
+| `FolderPath` | `string` | Folder containing the file that the behavior applies to|
+| `SHA1` | `string` | SHA-1 of the file that the behavior applies to|
+| `SHA256` | `string` | SHA-256 of the file that the behavior applies to|
+| `FileSize` | `long` | Size, in bytes, of the file that the behavior applies to|
+|`ThreatFamily`|`string`| xxx |
+|`RemoteIP`|`string` |xxx |
+|`RemoteUrl`|`string` |xxx |
+|`AccountName`|`string` |xxx |
+|`AccountDomain`|`string` |xxx |
+|`AccountSid`|`string` |xxx |
 | `AccountObjectId` | `string` | Unique identifier for the account in Azure AD |
-| `StartTime` | `datetime` | Date and time of the first activity related to the behavior|
-| `EndTime` | `datetime` | Date and time of the last activity related to the behavior|
+| `AccountUpn` | `string` | User principal name (UPN) of the account |
+| `DeviceId` | `string` | Unique identifier for the machine in the service |
+|`DeviceName`|`string` |xxx |
+|`LocalIP`|`string` |xxx |
+|`NetworkMessageId`|`string`| xxx |
+|`EmailSubject`|`string`| xxx |
+|`EmailClusterId`|`string`| xxx |
+|`Application`|`string`| xxx |
+|`ApplicationId	`|`int`| xxx |
+|`OAuthApplicationId`|`string`| xxx |
+|`ProcessCommandLine`|`string`| xxx |
+|`RegistryKey`|`string`| xxx |
+|`RegistryValueName`|`string`| xxx |
+|`RegistryValueData	`|`string`| xxx |
 | `AdditionalFields` | `string` | Additional information about the behavior|
-
-
-
-
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
