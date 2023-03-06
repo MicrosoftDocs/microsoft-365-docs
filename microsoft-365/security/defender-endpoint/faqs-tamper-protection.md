@@ -133,7 +133,6 @@ Your security operations team can also use hunting queries, such as the followin
 
 `AlertInfo|where Title == "Tamper Protection bypass"`
 
-
 ## Does tamper protection require cloud protection?
   
 Depending on the method or management tool you use to enable tamper protection, there might be a dependency on [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md). Cloud-delivered protection is also referred to as cloud protection, or Microsoft Advanced Protection Service (MAPS). The following table summarizes whether there's a dependency on cloud protection.
