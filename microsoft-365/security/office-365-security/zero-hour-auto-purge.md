@@ -95,6 +95,10 @@ For more information about configuring spam filtering verdicts, see [Configure a
 
 ZAP will not quarantine any message that's in the process of [Dynamic Delivery](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies) in Safe Attachments policy scanning. If a phishing or spam signal is received for messages in this state, and the filtering verdict in the anti-spam policy is set to take some action on the message (Move to Junk, Redirect, Delete, or Quarantine) then ZAP will default to a 'Move to Junk' action.
 
+## Zero-hour auto purge (ZAP) for Microsoft Teams
+
+For chat messages that are identified as potentially phishing or malicious, ZAP removes the massage and quarantines it. Admins can view and manage quarantined messages. For more information on quarantine, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams). 
+
 ## How to see if ZAP moved your message
 
 To determine if ZAP moved your message, you have the following options:

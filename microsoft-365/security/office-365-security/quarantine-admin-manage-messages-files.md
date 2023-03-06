@@ -22,7 +22,7 @@ ms.service: microsoft-365-security
 ms.date: 12/02/2022
 ---
 
-# Manage quarantined messages and files as an admin in EOP
+# Manage quarantined messages and files as an admin
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -376,6 +376,12 @@ The cmdlets that you use to view and manage messages and files in quarantine are
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 - [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): Note that this cmdlet is only for messages, not quarantined files from Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
+
+## Use the Microsoft 365 Defender portal to manage quarantined messages in Microsoft Teams
+
+There should be specific Admin roles eligible to view the quarantine teams items for the organization and those roles should be global Administrators, security administrators, and quarantine administrators  
+
+We will add a new workload Tab for quarantine items in the quarantine chrome view
 
 ## For more information
 
