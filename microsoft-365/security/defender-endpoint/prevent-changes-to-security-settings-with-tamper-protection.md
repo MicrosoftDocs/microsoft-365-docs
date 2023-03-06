@@ -54,6 +54,8 @@ When tamper protection is turned on, tamper protected settings cannot be changed
 
 Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Defender for Endpoint, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team. (See [Choose from several methods to configure tamper protection](#choose-from-several-methods-to-configure-tamper-protection).)
 
+## On what devices can tamper protection be enabled?
+
 Tamper protection is available for devices that are running one of the following versions of Windows:
 
 - Windows 10 and 11 (including Enterprise multi-session)
@@ -67,7 +69,7 @@ Tamper protection is also available for Mac. See [Protect macOS security setting
 > - [Built-in protection helps guard against ransomware](built-in-protection.md) (article)
 > - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)
 
-## Tamper protection and cloud protection  
+## Does tamper protection require cloud protection?   
   
 Depending on the method or management tool you use to enable tamper protection, there might be a dependency on [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md). Cloud-delivered protection is also referred to as cloud protection, or Microsoft Advanced Protection Service (MAPS). The following table summarizes whether there's a dependency on cloud protection.
 
@@ -77,7 +79,7 @@ Depending on the method or management tool you use to enable tamper protection, 
 | Microsoft Configuration Manager with Tenant Attach | No |
 | Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | Yes |
 
-## Choose from several methods to configure tamper protection
+## How do I configure or manage tamper protection?
 
 You can use Microsoft Intune and other methods to configure or manage tamper protection. The following table lists the various methods you can use:
 
