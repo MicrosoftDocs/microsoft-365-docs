@@ -19,6 +19,9 @@ Each Microsoft 365 group comes equipped with a dedicated mailbox that stores the
 
 The following ways help you understand how the quota calculation works, best practices or proactive approach taken to ensure the group mailbox doesn't reach its quota. And the course of action to be performed if the group mailbox as reached or exceeded its quota.
 
+> [!NOTE]
+> When added to outlook, group mailbox is always on Online mode and maintains a direct connection to an Exchange server. It is important to keep the size within limits to avoid latency.
+
 ## Proactive approach to keep group mailbox size in check 
 
 You can create retention policies to ensure older email from groups are removed automatically upon reaching the specified time limit. For more information, on steps to create retention policy for Microsoft 365 Group, see [Create and configure retention policies](/microsoft-365/compliance/create-retention-policies). The retention policies take longer work cycle to clean up the data, hence must be applied during the creation of a group mailbox. The retention policies can't be used as tool to immediately flush or remove the data from a group mailbox.
