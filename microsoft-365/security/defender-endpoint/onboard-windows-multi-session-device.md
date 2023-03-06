@@ -19,7 +19,7 @@ ms.collection:
 - tier3
 ms.subservice: mde
 search.appverid: met150
-ms.date: 10/04/2021
+ms.date: 03/06/2023
 ---
 
 # Onboard Windows devices in Azure Virtual Desktop
