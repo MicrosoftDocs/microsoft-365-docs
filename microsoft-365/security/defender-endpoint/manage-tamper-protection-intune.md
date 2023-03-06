@@ -90,9 +90,9 @@ You can use a registry key to confirm whether a Windows device is managed by Int
 
 If your organization has [exclusions defined for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md), tamper protection will protect those exclusions, provided all of the following conditions are met:
 
+- Tamper protection is deployed and managed by using Intune, and devices are managed by Intune.
 - `DisableLocalAdminMerge` is enabled. (See [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp).)
 - Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. (See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
-- Tamper protection is deployed and managed by using Intune, and devices are managed by Intune. (See [How to tell if a Windows device is managed by Intune](manage-tamper-protection-microsoft-endpoint-manager.md#how-to-tell-if-a-windows-device-is-managed-by-intune).)
 - Devices are running Windows Defender platform `4.18.2211.5` or later. (See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).)
 - Functionality to protect exclusions is enabled on devices. (See [How to determine whether the functionality is enabled on a Windows device](#how-to-determine-whether-the-functionality-to-protect-exclusions-is-enabled-on-a-windows-device).)
 
