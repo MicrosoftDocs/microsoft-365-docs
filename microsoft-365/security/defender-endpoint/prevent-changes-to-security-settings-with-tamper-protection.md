@@ -69,19 +69,9 @@ Tamper protection is also available for Mac. For more information, see [Protect 
 > - [Built-in protection helps guard against ransomware](built-in-protection.md) (article)
 > - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)
 
-## Does tamper protection require cloud protection?   
-  
-Depending on the method or management tool you use to enable tamper protection, there might be a dependency on [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md). Cloud-delivered protection is also referred to as cloud protection, or Microsoft Advanced Protection Service (MAPS). The following table summarizes whether there's a dependency on cloud protection.
-
-| How tamper protection is enabled | Dependency on cloud protection? |
-|---|---|
-| Microsoft Intune | No |
-| Microsoft Configuration Manager with Tenant Attach | No |
-| Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | Yes |
-
 ## How do I configure or manage tamper protection?
 
-You can use Microsoft Intune and other methods to configure or manage tamper protection. The following table lists the various methods you can use:
+You can use Microsoft Intune and other methods to configure or manage tamper protection, as listed in the following table:
 
 | Method | Description |
 |:---|:---|
