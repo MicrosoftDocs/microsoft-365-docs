@@ -35,7 +35,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can turn tamper protection on (or off) for your organization in the [Intune admin center](https://endpoint.microsoft.com). Use Intune when you want to fine-tune tamper protection settings. For example, if you want to enable tamper protection on some devices, but not all, use Intune.
+[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect your security settings from being disabled or changed. If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). With Intune, you can fine-tune tamper protection settings, such as by enabling tamper protection on some, but not all devices.
 
 Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md).
 
