@@ -41,6 +41,18 @@ search.appverid: met150
   
 If you're using Configuration Manager, version 2006, with tenant attach, tamper protection can be extended to Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).
 
+## How do I turn tamper protection on or off?
+
+If you're an organization using [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint), you can choose from several options to manage tamper protection:
+
+- The [Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md) (turn tamper protection on or off, tenant wide)
+- [Intune](manage-tamper-protection-intune.md) (turn tamper protection on or off, and/or configure tamper protection for some or all users)
+- [Configuration Manager](manage-tamper-protection-configuration-manager.md) (with tenant attach, you can configure tamper protection for some or all devices by using the Windows Security experience profile)
+- [Windows Security app](manage-tamper-protection-individual-device.md) (for an individual device used at home or that isn't centrally managed by a security team)
+
+For more information, see [How do I configure or manage tamper protection?](prevent-changes-to-security-settings-with-tamper-protection.md#how-do-i-configure-or-manage-tamper-protection).
+
+
 ## Will tamper protection affect non-Microsoft antivirus registration in the Windows Security app?
 
 No. Non-Microsoft antivirus offerings will continue to register with the Windows Security application.
@@ -49,9 +61,6 @@ No. Non-Microsoft antivirus offerings will continue to register with the Windows
 
 Devices that are onboarded to Microsoft Defender for Endpoint will have Microsoft Defender Antivirus running in passive mode. In these cases, tamper protection will continue to protect the service and its features.
 
-## How do I turn tamper protection on or off?
-
-If you're an organization using [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint), you can choose from several options to manage tamper protection. See [How do I configure or manage tamper protection?](prevent-changes-to-security-settings-with-tamper-protection.md#how-do-i-configure-or-manage-tamper-protection).
 
 ## Does tamper protection apply to Microsoft Defender Antivirus exclusions?
 
@@ -120,12 +129,6 @@ Your security operations team can also use hunting queries, such as the followin
 
 ## What are all the options for configuring tamper protection?
 
-You can use any of the following methods to configure tamper protection:
-
-- The [Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md) (turn tamper protection on or off, tenant wide)
-- [Intune](manage-tamper-protection-intune.md) (turn tamper protection on or off, and/or configure tamper protection for some or all users)
-- [Configuration Manager](manage-tamper-protection-configuration-manager.md) (with tenant attach, you can configure tamper protection for some or all devices by using the Windows Security experience profile)
-- [Windows Security app](manage-tamper-protection-individual-device.md) (for an individual device used at home or that isn't centrally managed by a security team)
 
 ## Tamper protection is preventing my security team from managing a device. What should we do?
 
