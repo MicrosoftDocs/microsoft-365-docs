@@ -457,10 +457,10 @@ To learn more about how Purview DLP implements booleans and nested groups see, [
 |Sender is | EXO | Individual email length <=256; Count <=50> | Count <= 600|   Medium |
 |Sender is a member of | EXO | Number of groups <=50| Count <=600 | High | 
 |Sender domain is | EXO | Domain name length <=67; Domain count <=50| Count <=600 |Low |
-|Sender address contains words | EXO | Individual word length <=128 char; Count <=10| Low |
+|Sender address contains words | EXO | Individual word length <=128 char; Count <=10| | Low |
 |Sender address matches patterns | EXO | Regex length <= 128 char; Count<=10 | Count <=600 | Low |
 |Sender AD attribute contains words | EXO | Individual word length <=128 char; count <=50| Count <=600 | Medium |
-|Sender AD attribute matches patterns | EXO | Regex length <=128 char; Count <=10 |Count <=600 |
+|Sender AD attribute matches patterns | EXO | Regex length <=128 char; Count <=10 |Count <=600 | Medium |
 |Content of email attachment(s) can't be scanned|EXO| [Supported file types](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection_) |  | Low |
 |Incomplete scan of email attachment content | EXO | Size > 1MB |  | Low |
 |Attachment is password-protected | EXO | File types: Microsoft Office files, ZIP, and 7z |   |Low|
@@ -474,18 +474,18 @@ To learn more about how Purview DLP implements booleans and nested groups see, [
 |Document Name matches patterns| EXO |Individual word lenth <=128 char; Count <=50 | Count <=300  |Low| 
 |Document property is | EXO/SPO/ODB | | | Low | 
 |Document size equals or is greater than | EXO | 0 | | Low|
-|Subject contains words or phrases | EXO |Individual word lenth <=128 char; Count <=50 | Count <=600  |Low|  
+|Subject contains words or phrases | EXO |Individual word lenth <=128 char; Count <=50 | Count <=600| Low|  
 |Hedader contains words or phrases | EXO| Individual word lenth <=128 char; Count <=50 | Count <=600  |Low| 
-|Subject or body contains words or phrases | Individual word lenth <=128 char; Count <=50 | Count <=600  |Low|
-Content character set contains words | Max = 50 words | Count <=600  |Low|
-|Header matches patterns |Regex length <=128 char; Count <=10| Count <=300  | Low|
-|Subject matches patterns| Regex length <=128 char; Count <=10| Count <=300  | Low|
-|Subject or body matches patterns |Regex length <=128 char; Count <=10| Count <=300  | Low|
+|Subject or body contains words or phrases |EXO| Individual word lenth <=128 char; Count <=50 | Count <=600  |Low|
+|Content character set contains words |EXO| Max = 50 words | Count <=600  |Low|
+|Header matches patterns |EXO|Regex length <=128 char; Count <=10| Count <=300  | Low|
+|Subject matches patterns|EXO| Regex length <=128 char; Count <=10| Count <=300  | Low|
+|Subject or body matches patterns |EXO|Regex length <=128 char; Count <=10| Count <=300 | Low|
 |Message type is | EXO| Predefined list of 8 message types |  | Low| 
 |Message size over | EXO | >0 |  | Low|
 |With importance | EXO | Low/Medium/High | | Low|
-|Sender AD attritbute contains words | Each attribute key-value pair:<=128 char; Count <=50 | Count <=600 | Medium |
-|Sender AD attribute matches patterns | Each attribute key-value pair has Regex length <=128 char; Count <=10 | | Medium|
+|Sender AD attritbute contains words |EXO| Each attribute key-value pair:<=128 char; Count <=50 | Count <=600 | Medium |
+|Sender AD attribute matches patterns |EXO| Each attribute key-value pair has Regex length <=128 char; Count <=10 | | Medium|
 |Document contains words | EXO | Individual word lenth <=128 char; Count <=50 | Count <=600  |  Medium| 
 |Document matches patterns| EXO| Regex length <=128 char; Count <=10| Count <=300  | Medium|
 
