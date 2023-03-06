@@ -35,5 +35,9 @@ description: Watch to learn about the different features in Microsoft Syntex.
 |---------|---------|
 |[:::image type="content" source="../media/content-understanding/video-thumbnail-create-classifier.png" alt-text="Thumbnail image of create and train a classifier video.":::](https://www.microsoft.com/videoplayer/embed/RE4CL0R)<br>[Learn more about creating a classifier](create-a-classifier.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-import-training-set.png" alt-text="Thumbnail image of import a training set video.":::](https://www.microsoft.com/videoplayer/embed/RE4D0iX)<br>[Learn more about importing a training set](create-a-content-center.md)     |
 
+|Apply a retention label  |Manage contracts solution  |
+|---------|---------|
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-apply-retention-label.png" alt-text="Thumbnail image of apply a retention label video.":::](https://www.microsoft.com/videoplayer/embed/RE4GydO)<br>[Learn more about creating a classifier](apply-a-retention-label-to-a-model.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-manage-contracts.png" alt-text="Thumbnail image of manage contracts using a Microsoft 365 solution video.":::](https://www.microsoft.com/videoplayer/embed/RWJUR0)<br>[Learn more about managing contracts](solution-manage-contracts-in-microsoft-365.md)     |
+
 
 
