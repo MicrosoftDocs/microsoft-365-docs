@@ -50,7 +50,7 @@ If you're an organization using [Microsoft Defender for Endpoint](/microsoft-365
 - [Configuration Manager](manage-tamper-protection-configuration-manager.md) (with tenant attach, you can configure tamper protection for some or all devices by using the Windows Security experience profile)
 - [Windows Security app](manage-tamper-protection-individual-device.md) (for an individual device used at home or that isn't centrally managed by a security team)
 
-For more information, see [How do I configure or manage tamper protection?](prevent-changes-to-security-settings-with-tamper-protection.md#how-do-i-configure-or-manage-tamper-protection).
+For more information, see [How do I configure or manage tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md#how-do-i-configure-or-manage-tamper-protection)?
 
 ## Tamper protection is preventing my security team from managing a device. What should we do?
 
