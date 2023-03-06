@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 02/27/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -42,6 +42,22 @@ If you're new to Microsoft Purview DLP, here's a list of the core articles you'l
 1. [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) - this article that you're reading now introduces all the components of a DLP policy and how each one influences the behavior of a policy
 1. [Design a DLP policy](dlp-policy-design.md) - this article walks you through creating a policy intent statement and mapping it to a specific policy configuration. 
 1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options.
+
+Also, you need to be aware of the following constraints of the platform:
+
+- Maximum number of MIP + MIG policies in a tenant: 10,000
+- Maximum size of a DLP policy (100 KB)
+- Maximum number of DLP rules:
+    - In a policy: Limited by the size of the policy
+    - In a tenant: 600
+- Maximum size of an individual DLP rule: 80 KB
+- GIR evidence limit: 100, with each SIT evidence, in proportion of occurence
+- Text extraction limit: 1 MB
+- Regex size limit for all matches predictes: 20 KB
+- Policy name length limit: 64 characters
+- Policy rule length limit: 64 characters
+- Comment length limit: 1024 characters
+- Description length limit: 1024 characters
 
 ## Policy templates
 
@@ -431,6 +447,49 @@ The first group contains the SITs that identify an individual and the second gro
 Conditions can be grouped and joined by boolean operators (AND, OR, NOT) so that you defining a rule by stating what should be included and then define exclusions in a different group joined to the first by a NOT.
 To learn more about how Purview DLP implements booleans and nested groups see, [Complex rule design](dlp-policy-design.md#complex-rule-design).
 
+#### DLP Platform Limitations for Conditions
+|Predicate | Workload | Old Limit | Limit (as of Aug. 2021) | Cost of Evaluation |
+|---------|---------|---------|---------|---------|
+|Content Contains | EXO/SPO/ODB | 125 SITs per rule | |  | High |
+|Content is shared from Microsoft 365 | EXO/SPO/ODB |  |  | High | 
+|Sender IP address is | EXO | Individual range length <=128; Count<=50 |Count <=600|Low|
+|Has sender overridden the policy tip |EXO | True/False |  | Low |
+|Sender is | EXO | Individual email length <=256; Count <=50> | Count <= 600|   Medium |
+|Sender is a member of | EXO | Number of groups <=50| Count <=600 | High | 
+|Sender domain is | EXO | Domain name length <=67; Domain count <=50| Count <=600 |Low |
+|Sender address contains words | EXO | Individual word length <=128 char; Count <=10| Low |
+|Sender address matches patterns | EXO | Regex length <= 128 char; Count<=10 | Count <=600 | Low |
+|Sender AD attribute contains words | EXO | Individual word length <=128 char; count <=50| Count <=600 | Medium |
+|Sender AD attribute matches patterns | EXO | Regex length <=128 char; Count <=10 |Count <=600 |
+|Content of email attachment(s) can't be scanned|EXO| [Supported file types](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection_) |  | Low |
+|Incomplete scan of email attachment content | EXO | Size > 1MB |  | Low |
+|Attachment is password-protected | EXO | File types: Microsoft Office files, ZIP, and 7z |   |Low|
+|Attachment's file extension is |EXO/SPO/ODB | Count <=50 |  | High|
+|Recipient is a member of |EXO |Count <=50 | Count <=600 | High |
+|Recipient domain is | EXO| Domain name length <=67; Domain count <=50| No limit | Low |
+|Recipient is| EXO | Individual email length <=256; Count <=50 | Count <=600 |Low |
+|Recipient address contains words | EXO | Individual word lenth <=128 char; Count <=50 |Count <=600 | Low |
+|Recipient address matches patterns | EXO | Regex length <=128 char; Count <=10| Count <=300  | Low|
+|Document name contains words or phrases | EXO| Individual word lenth <=128 char; Count <=50 | Count <=300  |Low|
+|Document Name matches patterns| EXO |Individual word lenth <=128 char; Count <=50 | Count <=300  |Low| 
+|Document property is | EXO/SPO/ODB | | | Low | 
+|Document size equals or is greater than | EXO | 0 | | Low|
+|Subject contains words or phrases | EXO |Individual word lenth <=128 char; Count <=50 | Count <=600  |Low|  
+|Hedader contains words or phrases | EXO| Individual word lenth <=128 char; Count <=50 | Count <=600  |Low| 
+|Subject or body contains words or phrases | Individual word lenth <=128 char; Count <=50 | Count <=600  |Low|
+Content character set contains words | Max = 50 words | Count <=600  |Low|
+|Header matches patterns |Regex length <=128 char; Count <=10| Count <=300  | Low|
+|Subject matches patterns| Regex length <=128 char; Count <=10| Count <=300  | Low|
+|Subject or body matches patterns |Regex length <=128 char; Count <=10| Count <=300  | Low|
+|Message type is | EXO| Predefined list of 8 message types |  | Low| 
+|Message size over | EXO | >0 |  | Low|
+|With importance | EXO | Low/Medium/High | | Low|
+|Sender AD attritbute contains words | Each attribute key-value pair:<=128 char; Count <=50 | Count <=600 | Medium |
+|Sender AD attribute matches patterns | Each attribute key-value pair has Regex length <=128 char; Count <=10 | | Medium|
+|Document contains words | EXO | Individual word lenth <=128 char; Count <=50 | Count <=600  |  Medium| 
+|Document matches patterns| EXO| Regex length <=128 char; Count <=10| Count <=300  | Medium|
+
+
 <!--### Exceptions
 
 > [!IMPORTANT]
@@ -592,6 +651,25 @@ If you select Devices and Microsoft Defender for Cloud Apps, these actions will 
 Whether an action takes effect or not depends on how you configure the mode of the policy. You can choose to run the policy in test mode with or without showing policy tip by selecting the **Test it out first** option. You choose to run the policy as soon as an hour after it's created by selecting the **Turn it on right away** option, or you can choose to just save it and come back to it later by selecting the **Keep it off** option.
 
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
+
+#### DLP Platform Limitations for Actions
+
+|Action Name | Workload   | Limits     |
+|------------|------------|------------|
+|Restrict access or encrypt content in Microsoft 365| EXO/SPO/ODB |  |
+|Set headers | EXO | |
+|Remove header | EXO | |
+|Redirect the message to specific users | EXO| Total of 100 across all DLP rules. Cannot be DL/SG|
+|Forward the message for aproval to sender's manager | EXO | Manager should be defined in AD|
+|Forward the message for approval to specific approvers |EXO | Groups are not supported|
+|Add recipient to the **To** box | EXO | Recipient count <=10; Cannot be DL/SG|
+|Add recipient to the **Cc** box | EXO | Recipient count <=10; Cannot be DL/SG|
+|Add recipient to the **Bcc** box | EXO | Recipient count <=10; Cannot be DL/SG|
+|Add the senders's manager as recipient | EXO | Manager attribute should be defined in AD|
+|Apply HTML disclaimer| EXO| |
+|Prepend subject| EXO| |
+|Apply OME| EXO |  |
+|Remove OME | EXO | |
 
 ### User notifications and policy tips
 
