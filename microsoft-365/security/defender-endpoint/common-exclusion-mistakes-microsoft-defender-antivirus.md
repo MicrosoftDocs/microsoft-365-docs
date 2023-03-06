@@ -140,6 +140,8 @@ In general, don't define exclusions for the following processes:
 - `bitsadmin.exe`
 - `cdb.exe`
 - `csi.exe`
+- `cmd.exe`
+- `cscript.exe`
 - `dbghost.exe`
 - `dbgsvc.exe`
 - `dnx.exe`
@@ -166,6 +168,7 @@ In general, don't define exclusions for the following processes:
 - `windbg.exe`
 - `winword.exe`
 - `wmic.exe`
+- `wscript.exe`
 - `wuauclt.exe`
 
 > [!NOTE]
