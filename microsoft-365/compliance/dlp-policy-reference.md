@@ -450,7 +450,7 @@ To learn more about how Purview DLP implements booleans and nested groups see, [
 #### DLP Platform Limitations for Conditions
 |Predicate | Workload | Old Limit | Limit (as of Aug. 2021) | Cost of Evaluation |
 |---------|---------|---------|---------|---------|
-|Content Contains | EXO/SPO/ODB | 125 SITs per rule | |  | High |
+|Content Contains | EXO/SPO/ODB | 125 SITs per rule | |   High |
 |Content is shared from Microsoft 365 | EXO/SPO/ODB |  |  | High | 
 |Sender IP address is | EXO | Individual range length <=128; Count<=50 |Count <=600|Low|
 |Has sender overridden the policy tip |EXO | True/False |  | Low |
@@ -461,7 +461,7 @@ To learn more about how Purview DLP implements booleans and nested groups see, [
 |Sender address matches patterns | EXO | Regex length <= 128 char; Count<=10 | Count <=600 | Low |
 |Sender AD attribute contains words | EXO | Individual word length <=128 char; count <=50| Count <=600 | Medium |
 |Sender AD attribute matches patterns | EXO | Regex length <=128 char; Count <=10 |Count <=600 |
-|Content of email attachment(s) can't be scanned|EXO| [Supported file types](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection_) |  | Low |
+|Content of email attachment(s) can't be scanned|EXO| [Supported file types](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection_) |  | Low |
 |Incomplete scan of email attachment content | EXO | Size > 1MB |  | Low |
 |Attachment is password-protected | EXO | File types: Microsoft Office files, ZIP, and 7z |   |Low|
 |Attachment's file extension is |EXO/SPO/ODB | Count <=50 |  | High|
