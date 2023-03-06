@@ -78,7 +78,7 @@ You can use a registry key to confirm whether a Windows device is managed by Int
 2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` (or `HKLM\SOFTWARE\Microsoft\Windows Defender`), and look for a `REG_DWORD` entry called **ManagedDefenderProductType**. 
 
    - If **ManagedDefenderProductType** has a value of `6`, then the device is managed by Intune.
-   - If **ManagedDefenderProductType** has a value of `7`, then the device is co-managed by Intune and Configuration Manager.
+   - If **ManagedDefenderProductType** has a value of `7`, then the device is [co-managed](/mem/configmgr/comanage/overview) by Intune and Configuration Manager.
 
 > [!CAUTION]
 > Do not change the value of **ManagedDefenderProductType**. Use the preceding procedure for information only. Changing the key will have no effect on how the device is managed.
