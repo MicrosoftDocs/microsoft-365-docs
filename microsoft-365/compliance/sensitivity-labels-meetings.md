@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/01/2023
+ms.date: 03/06/2023
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
@@ -147,13 +147,13 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
 
 ## How to configure a sensitivity label to protect calendar items, Teams meetings, and chat
 
-1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Items** for the label's scope, and also select **Include meetings**: 
+1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Items** is selected for the [label's scope](sensitivity-labels.md#label-scopes), and also the options for **Files**, **Emails**, and **Meetings**: 
     
-    ![Sensitivity label scope options for files and emails.](../media/itemswithmeetings-scope-options-sensitivity-label.png)
+    :::image type="content" source="../media/itemswithmeetings-scope-options-sensitivity-label.png" alt-text="Sensitivity label scope options for Items that include Files, Emails, and Meetings.":::
 
 2. On the **Choose protection settings for labeled items** page:
-    - Select **Encrypt items** if you want to encrypt meeting invites and responses, and any Office attachment in that calendar item
-    - Select **Mark items** if you want to add headers or footers to meeting invites and responses
+    - Select **Apply or remove encryption** if you want to encrypt meeting invites and responses, and any Office attachment in that calendar item
+    - Select **Apply content marking** if you want to add headers or footers to meeting invites and responses
     - Select **Protect Teams meetings and chat** to display the label in Teams meetings and enforce Teams-specific settings for the Teams meeting itself and chat messages
 
 3. On the subsequent pages, configure settings for the options you've selected.
