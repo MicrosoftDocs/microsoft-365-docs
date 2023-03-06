@@ -18,7 +18,7 @@ description: Learn about licensing for Microsoft Syntex.
 
 # Licensing for Microsoft Syntex
 
-Microsoft Syntex has two licensing models to choose from:
+Microsoft Syntex has two types of product offerings to choose from:
 
 - SharePoint Syntex per-user licensing
 - Microsoft Syntex pay-as-you-go

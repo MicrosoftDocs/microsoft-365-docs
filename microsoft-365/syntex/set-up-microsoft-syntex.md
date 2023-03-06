@@ -21,7 +21,7 @@ description: Set up Microsoft Syntex.
 
 This article covers the initial setup experience for Microsoft Syntex. Before following the steps in this article, configure your [billing and licensing options](syntex-licensing.md) as follows:
 
-- If you are using pay-as-you-go billing, follow the steps in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](syntex-azure-billing.md).
+- If you are using Microsoft Syntex pay-as-you-go, follow the steps in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](syntex-azure-billing.md).
 - If you are using per-user licensing, follow the steps in [Set up Microsoft Syntex per-user licensing](set-up-content-understanding.md).
 
 ## Requirements 
