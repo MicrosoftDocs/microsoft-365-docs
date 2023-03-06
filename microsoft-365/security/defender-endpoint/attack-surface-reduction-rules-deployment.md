@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-s.reviewer: oogunrinde, sugamar
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.topic: conceptual
