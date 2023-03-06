@@ -4,10 +4,7 @@ ms.reviewer: mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
 keywords: malware, defender, antivirus, tamper protection
-ms.pagetype: security
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 ms.date: 03/06/2023
 audience: ITPro
@@ -87,10 +84,8 @@ You can use Microsoft Intune and other methods to configure or manage tamper pro
 | The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | Turn tamper protection on or off, tenant wide. For more information, see [Manage tamper protection for your organization using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md). |
 | Intune ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) | Turn tamper protection on or off, or fine-tune tamper protection settings in your organization. For more information, see [Manage tamper protection for your organization using Intune](manage-tamper-protection-intune.md). |
 | Configuration Manager | Turn tamper protection on or off by using Configuration Manager. For more information, see [Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md). |
-| 
+| Windows Security app | Turn tamper protection on or off on an individual device that is not managed by a security team (such as devices for home use). For more information, see [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md). |
 
-|Turn tamper protection on (or off) for an individual device (for home users or devices that aren't managed by a security team)|[Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)|
-|View details about tampering attempts on devices|[View information about tampering attempts in Microsoft 365 Defender](#view-information-about-tampering-attempts)|
 |Review your security recommendations |[Review security recommendations](#review-your-security-recommendations)|
 |Review the list of frequently asked questions (FAQs)|[Browse the FAQs](faqs-tamper-protection.md)|
 
@@ -128,15 +123,9 @@ Tamper protection integrates with [Microsoft Defender Vulnerability Management](
 To learn more about Microsoft Defender Vulnerability Management, see [Dashboard insights - Defender Vulnerability Management](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
 
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
-
 ## See also
 
+- [Frequently asked questions on tamper protection](faqs-tamper-protection.md)
 - [Built-in protection helps guard against ransomware](built-in-protection.md)
 - [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Get an overview of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)
