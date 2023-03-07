@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: Dansimp
-ms.author: Daniel.Simpson
+ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.subservice: mde
