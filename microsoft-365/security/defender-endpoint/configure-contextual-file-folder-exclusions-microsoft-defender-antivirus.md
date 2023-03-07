@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: Dansimp
-ms.author: Daniel.Simpson
+ms.author: dansimp
 ms.localizationpriority: medium
 ms.date: 08/25/2022
 manager: dansimp
