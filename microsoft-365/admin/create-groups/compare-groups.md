@@ -71,8 +71,6 @@ Microsoft 365 Groups can be added to one of the three SharePoint groups (Owners,
 
 Distribution groups are best for situations where you need to broadcast information to a set group of people, such as "People in Building A" or "Everyone at Contoso."
 
-Distribution groups can be [upgraded to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md).
-
 Distribution groups can be added to a team in Microsoft Teams, though only the members are added and not the group itself.
 
 Microsoft 365 Groups can't be members of distribution groups.
