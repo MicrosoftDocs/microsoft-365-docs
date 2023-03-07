@@ -2,8 +2,8 @@
 title: "Support for optical character recognition in Microsoft Purview"
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: kmkoenen
+ms.author: v-katykoenen
+author: chrfox
 manager: laurawi
 audience: Admin
 ms.topic: how-to
