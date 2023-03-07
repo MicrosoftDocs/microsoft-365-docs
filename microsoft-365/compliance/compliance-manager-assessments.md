@@ -52,7 +52,7 @@ Listed below are details about steps and information that will help you prepare 
 
 - Plan a [grouping strategy](#groups-for-assessments) for your assesssments.
 - Learn how [assessment templates](compliance-manager-templates.md) work. Templates contain the controls and action recommendations for assessments.
-- Set up [connectors](#set-up-connectors) if you're assessing services from other companies.
+- Set up [connectors (preview)](#set-up-connectors-preview) if you're assessing services from other companies.
 
 ## Groups for assessments
 
@@ -107,7 +107,7 @@ The Compliance Manager integrated connectors currently available in preview are 
 
 #### How to set up connectors
 
-Follow the steps below to set up the integrated connectors:
+Follow the steps below to set up Compliance Manager connectors:
 
 1. In Compliance Manager, select **Data connectors** in the upper right of your screen. 
 1. You'll arrive at the Compliance Manager page within the **Data connectors** section of the Microsoft Purview compliance portal. This page lists the available connectors. Select the checkbox next to the name of the connector you want to add.
