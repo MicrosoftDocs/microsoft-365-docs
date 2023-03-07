@@ -1,9 +1,9 @@
 ---
 title: Use PowerShell to connect Shifts to UKG Dimensions
-author: LanaChin
-ms.author: v-lanachin
-ms.reviewer:
-manager: samanro
+author: samanro
+ms.author: samanro
+ms.reviewer: imarquesgil
+manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -24,9 +24,7 @@ ms.date: 10/28/2022
 
 ## Overview
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
-
-Use the [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) to integrate the Shifts app in Microsoft Teams with UKG Dimensions. After a connection is set up, your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
+Use the [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) to integrate the Shifts app in Microsoft Teams with UKG Dimensions. Your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
 
 In this article, we walk you through how to use PowerShell to set up and configure the connector to integrate Shifts with UKG Dimensions.
 
@@ -46,6 +44,10 @@ With UKG Dimensions as the system of record, your frontline workers can efficien
 ### Prerequisites
 
 [!INCLUDE [shifts-connector-ukg-prerequisites](includes/shifts-connector-ukg-prerequisites.md)]
+
+### Configure single sign-on
+
+[!INCLUDE [shifts-connector-ukg-sso](includes/shifts-connector-ukg-sso.md)]
 
 ### Admin role to manage the connector using PowerShell
 

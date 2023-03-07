@@ -179,4 +179,6 @@ However, when you select a particular day, up to 28 days from the current date, 
 ## Related content
 
 [Microsoft 365 usage analytics](../usage-analytics/usage-analytics.md) (article)\
-[Customize the reports in Microsoft 365 usage analytics](../usage-analytics/customize-reports.md) (article)
+[Customize the reports in Microsoft 365 usage analytics](../usage-analytics/customize-reports.md) (article)\
+[Working with Microsoft 365 usage reports in Microsoft Graph beta](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true) (article)\
+[Working with Microsoft 365 usage reports in Microsoft Graph v1.0](/graph/api/resources/report?view=graph-rest-1.0&preserve-view=true) (article)
