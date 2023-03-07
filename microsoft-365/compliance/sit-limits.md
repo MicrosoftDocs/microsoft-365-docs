@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Sensitive information type limits
 
-These limits apply to all sensitive information types (SIT) except exact data match (EDM) sensitive information types that support up to 100 STIs.
+These limits apply to all sensitive information types (SIT) except exact data match (EDM) sensitive information types that support up to 100 SITs.
 
 > [!NOTE]
 > We support up to 100 exact data match evaluations. Policies that use EDM SITs should not be written with a **min** or **max** instance count value greater than 100.

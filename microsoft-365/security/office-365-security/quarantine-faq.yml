@@ -62,7 +62,7 @@ sections:
       - question: |
           What messages can end users access in quarantine?
         answer: |
-          Quarantine policies define whether users can access quarantined messages based on why the message was quarantined (for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). For more information, see [Quarantine policies](quarantine-policies.md).
+          Quarantine policies define whether users can access quarantined messages based on why the message was quarantined for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). For more information, see [Quarantine policies](quarantine-policies.md).
 
           By default, users can access the following types of quarantined messages where they're a recipient:
 

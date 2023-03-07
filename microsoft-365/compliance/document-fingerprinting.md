@@ -66,6 +66,7 @@ Document Fingerprinting won't detect sensitive information in the following case
 - Files that contain only images
 - Documents that don't contain all the text from the original form used to create the document fingerprint
 - Files greater than 10 MB
+- Fingerprints are stored in a separate rule pack that has a maximum size limit of 150 KB. Given this limit, you can create around 50 fingerprints per tenant.
 
 ## Use PowerShell to create a classification rule package based on document fingerprinting
 
