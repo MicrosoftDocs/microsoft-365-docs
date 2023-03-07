@@ -160,7 +160,7 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 
 (<a id="fn4">4</a>) In general, when Microsoft Defender Antivirus is in passive mode, real-time protection doesn't provide any blocking or enforcement, even though it's enabled and in passive mode.
 
-(<a id="fn5">5</a>) When Microsoft Defender Antivirus is in passive mode, scans aren't scheduled.
+(<a id="fn5">5</a>) When Microsoft Defender Antivirus is in passive mode, scans aren't scheduled. Note that scan tasks in Windows Task Scheduler that are enabled will continue to run according to their schedule. If you have such scheduled tasks, you can remove these if preferred.
 
 (<a id="fn6">6</a>) When Microsoft Defender Antivirus is in passive mode, it doesn't remediate threats. However, threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md). In this case, you might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode.
 
