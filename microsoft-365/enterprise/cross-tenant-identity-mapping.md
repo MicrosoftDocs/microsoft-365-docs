@@ -41,7 +41,7 @@ We would like to provide information commonly asked so you may evaluate if you w
 - Data processing (storage, compute, transfer, etc.) is currently within the European Union, and within the Exchange Online home region of the organizations participating in the migration.
   - For Multi-Geo enabled organizations, the organization's home geo for Exchange Online will be used.
 - This feature can currently only be enabled in the worldwide Microsoft 365 offering. It doesn't work in GCC, GCC High, DoD, Office 365 by 21 Vianet, etc.
-- Cross-Tenant Identity Mapping does **not** create the Mail Enabled User objects in the target tenant for you. These objects must still be created with a minimal attribute set. Once created, then Cross-Tenant Identity Mapping will deocrate their attributes correctly for a mailbox migration to proceed.
+- Cross-Tenant Identity Mapping does **not** create the Mail Enabled User objects in the target tenant for you. These objects must still be created with a minimal attribute set. Once created, then Cross-Tenant Identity Mapping will decorate their attributes correctly for a mailbox migration to proceed.
 - Some familiarity with PowerShell is currently required as the feature is PowerShell-based
 - The feature communicates over an encrypted connection to a REST endpoint.
 - The feature currently requires the Global Administrator role for initial setup. This behavior may change in a future update.

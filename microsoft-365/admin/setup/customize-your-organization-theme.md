@@ -122,9 +122,6 @@ Up to five themes can be created. A default theme and four group themes.
 
 No, new group themes must be mapped to one or more Microsoft 365 groups and not security groups or distribution groups.
 
-> [!NOTE]
-> You can convert [distribution groups to Microsoft 365 groups](../manage/upgrade-distribution-lists.md) in Outlook.
-
 ### Can I manually assign a theme independent of Microsoft 365 Groups?  
 
 No, new group themes must be mapped to one or more Microsoft 365 groups. Users who are members of the Microsoft 365 group will get the theme applied to their group. You can [create and add new members to a Microsoft 365 Group](../create-groups/create-groups.md) by going to the **Settings** > **Groups** in the admin center.
