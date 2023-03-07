@@ -11,7 +11,7 @@ ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: Dansimp
-ms.author: Daniel.Simpson
+ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
