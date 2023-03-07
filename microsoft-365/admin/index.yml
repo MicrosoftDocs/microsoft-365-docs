@@ -50,7 +50,7 @@ productDirectory:
     # Card
     - title: Small business help & learning
       imageSrc: /office/media/icons/education-tutorial-blue.svg
-      summary: All the Microsoft 365 information a small business needs. 
+      summary: Discover all the Microsoft 365 help resources a small business needs. 
       url: https://go.microsoft.com/fwlink/?linkid=2224585
     # Card
     - title: YouTube - Microsoft 365 help for small businesses
