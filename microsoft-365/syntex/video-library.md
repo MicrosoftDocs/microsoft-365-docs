@@ -21,7 +21,7 @@ description: Watch to learn about the different features in Microsoft Syntex.
 
 |Overview of model types  |Create a content center  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about Syntex models](model-types-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-create-content-center.png" alt-text="Thumbnail image of create a content center video.":::](https://www.microsoft.com/videoplayer/embed/RE4CPSF)<br>[Learn more about creating content centers](create-a-content-center.md)         |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about Syntex models](model-types-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-create-content-center.png" alt-text="Thumbnail image of create a content center video.":::](https://www.microsoft.com/videoplayer/embed/RE4CPSF)<br>[Learn more about content centers](create-a-content-center.md)         |
 
 |Unstructured document processing  |Apply a model to a document library  |
 |---------|---------|
