@@ -198,7 +198,7 @@ Employment stressor events can impact user behavior in several ways that relate 
 - [Data leaks by risky users (preview)](insider-risk-management-policy-templates.md#data-leaks-by-risky-users-preview)
 - [Security policy violations by risky users (preview)](insider-risk-management-policy-templates.md#security-policy-violations-by-risky-users-preview)
 
-### Visual context for potentially risky user activities with forensic evidence (preview)
+### Visual context for potentially risky user activities with forensic evidence
 
 Having visual context is crucial for security teams during forensic investigations to get better insights into potentially risky user activities that may lead to a security incident. This may include visual capturing of these activities to help evaluate if they are indeed risky or taken out of context and not potentially risky. For activities that are determined to be risky, having forensic evidence captures can help investigators and your organization better mitigate, understand, and respond to these activities. To help with this scenario, [enable forensic evidence capturing](insider-risk-management-forensic-evidence.md) for online and offline devices in your organization.
 
