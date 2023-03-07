@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/25/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -82,6 +83,11 @@ You can control how users install these apps from the store on Integrated Apps i
 1. Sign in to Microsoft 365 Admin Center as a Global Administrator.
 2. Select **Settings**, then select **Integrated Apps**.
 3. Select the **Available Apps** or **Blocked Apps** list. Here you can view the status of all Enhanced Teams Apps in the public catalog and any custom line-of-business apps uploaded from Teams Admin Center or Microsoft 365 Admin Center.
+
+    :::image type="content" alt-text="Available apps list." source="../../media/apps-status.png" lightbox="../../media/apps-status.png":::
+
+    :::image type="content" alt-text="Blocked apps list." source="../../media/blocked-apps.png" lightbox="../../media/blocked-apps.png":::
+
 4. Select an Enhanced Teams App to view more details about the app, applicable host products, and availability status within your organization.
 
 Custom line-of-business Enhanced Teams Apps uploaded from Teams Admin Center or Microsoft 365 Admin Center can be viewed on Integrated Apps. These apps will appear in the store for Teams, Microsoft 365, and Outlook based on the policies set for the app, similar to public apps submitted via the Partner Center.
@@ -105,6 +111,8 @@ You can block an app for all users in your organization to restrict them from do
 
 When you choose to block an app, it will be blocked for all users in your organization. Blocking an app overrides any previous admin deployment or user installation in Microsoft 365 and Outlook so that the app can no longer be used.
 
+:::image type="content" alt-text="How to block an app." source="../../media/to-block-app.png" lightbox="../../media/to-block-app.png":::
+
 > [!NOTE]
 > Currently, the Enhanced Teams App will only be blocked in Microsoft 365 and Outlook. Teams will continue to honor the current setting for Teams Apps made in the Teams Admin Center and for Outlook add-ins made in the Exchange Admin Center.
 
@@ -119,6 +127,8 @@ You can unblock an Enhanced Teams App so that it can start showing up in Microso
 5. Select **Unblock app**.
 6. Read the availability and deployment status that the app will revert to after unblocking. These are the last saved statuses of the app before it was blocked.
 7. Select **Unblock**. You can now see this app in the **Available Apps** list and/or the **Deployed Apps** list.
+
+    :::image type="content" alt-text="How to unblock an app." source="../../media/to-unblock-app.png" lightbox="../../media/to-unblock-app.png":::
 
 ### What happens to your existing settings for Teams and Outlook?
 

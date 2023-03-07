@@ -7,22 +7,22 @@ ms.author: dansimp
 author: dansimp
 audience: Admin
 manager: Laurawi
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.reviewer: martincoetzer
-ms.custom: 
+ms.custom:
   - it-pro
   - goldenconfig
-ms.collection: 
+ms.collection:
   - M365-identity-device-management
   - m365-security
   - m365solution-identitydevice
   - m365solution-scenario
   - zerotrust-solution
-  - highpri
+  - tier2
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 10/08/2020
+ms.date: 1/31/2023
 ---
 
 # Policies for allowing guest access and B2B external user access
@@ -88,4 +88,3 @@ Configure Conditional Access policies for:
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)
 - [Microsoft Defender for Cloud Apps](mcas-saas-access-policies.md)
- 

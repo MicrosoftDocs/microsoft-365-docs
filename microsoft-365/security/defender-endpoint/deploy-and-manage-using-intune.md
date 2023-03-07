@@ -43,7 +43,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ## Deploy using Intune OMA-URI
 
-Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) > **Devices** > **Configuration profiles** > **Create profile** > **Platform: Windows 10 and later, Profile type: Templates** > **Custom** > **Create**.
+Go to the Microsoft Intune admin center (<https://endpoint.microsoft.com/>) > **Devices** > **Configuration profiles** > **Create profile** > **Platform: Windows 10 and later, Profile type: Templates** > **Custom** > **Create**.
 
 1. Enable or Disable Device control (Optional):
 
@@ -169,18 +169,18 @@ You can download the files here, [Printer Protection Samples](https://github.com
 
    1. Create **Allow** and **Audit** policy for allowed-file printer group.
 
-      :::image type="content" source="media/188243425-c0772ed4-6537-4c6a-9a1d-1dbb48018578.png" alt-text="A screenshot of policy 1." lightbox= "media/188243425-c0772ed4-6537-4c6a-9a1d-1dbb48018578.png":::
+       :::image type="content" source="media/188243425-c0772ed4-6537-4c6a-9a1d-1dbb48018578.png" alt-text="A screenshot of policy 1." lightbox= "media/188243425-c0772ed4-6537-4c6a-9a1d-1dbb48018578.png":::
 
       Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Printer%20Protection%20Samples/Intune%20OMA-URI/Allow%20PDF_XPS%20Printer.xml). See step 4 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
 
    2. Create policy to allow authorized USB printer only when the machine is Corporate Network OR VPN connected.
 
-      :::image type="content" source="media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png" alt-text="A screenshot of policy 2." lightbox= "media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png":::
+       :::image type="content" source="media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png" alt-text="A screenshot of policy 2." lightbox= "media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png":::
 
       Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Printer%20Protection%20Samples/Intune%20OMA-URI/Allow%20Authorized%20USB%20Printer.xml). See step 4 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
 
    3. Create Default Deny custom policy for any other printers.
 
-      :::image type="content" source="media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png" alt-text="A screenshot of policy 3." lightbox= "media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png":::
+      :::image type="content" source="media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png" alt-text="A screenshot of policy 2." lightbox= "media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png":::
 
       Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Printer%20Protection%20Samples/Intune%20OMA-URI/Default%20Deny%20-%20custom%20policy.xml). See step 4 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.

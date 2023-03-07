@@ -1,6 +1,7 @@
 ---
 title: "Multi-Geo Capabilities in Microsoft Teams"
 ms.reviewer: daro
+ms.date: 03/12/2021
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars

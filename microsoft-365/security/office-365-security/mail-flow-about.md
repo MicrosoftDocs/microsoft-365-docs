@@ -14,7 +14,9 @@ ms.custom:
 description: Admin can learn about the options for configuring mail flow and routing in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier3
 search.appverid: met150
 ms.date: 12/02/2022
 ---
