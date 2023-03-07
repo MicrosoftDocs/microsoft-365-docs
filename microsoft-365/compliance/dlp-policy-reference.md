@@ -448,8 +448,9 @@ Conditions can be grouped and joined by boolean operators (AND, OR, NOT) so that
 To learn more about how Purview DLP implements booleans and nested groups see, [Complex rule design](dlp-policy-design.md#complex-rule-design).
 
 #### DLP Platform Limitations for Conditions
+
 |Predicate | Workload |  Limit | Cost of Evaluation |
-|---------|---------|---------|--------|
+|----------|----------|--------|--------------------|
 |Content Contains | EXO/SPO/ODB |  |   High |
 |Content is shared from Microsoft 365 | EXO/SPO/ODB |  | High | 
 |Sender IP address is | EXO | Count <=600|Low|
