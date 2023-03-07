@@ -6,7 +6,7 @@ description: Use tamper protection to prevent malicious apps from changing impor
 keywords: malware, defender, antivirus, tamper protection
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/06/2023
+ms.date: 03/07/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -38,21 +38,21 @@ search.appverid: met150
 
 Tamper protection is a capability in Microsoft Defender for Endpoint that helps protect certain security settings from being disabled or changed. During some kinds of cyber attacks, bad actors try to disable security features, such as antivirus protection, on devices. Disabling security features provides bad actors with easier access to your data, the ability to install malware, and the ability to exploit your data, identity, and devices. Tamper protection helps guard against these types of activities. 
 
-Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md), and is an important part of [Built-in protection](built-in-protection.md).
+Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md). Tamper protection is an important part of [built-in protection](built-in-protection.md).
 
 ## What happens when tamper protection is turned on?
 
 When tamper protection is turned on, tamper protected settings cannot be changed from their default values.
 
-- Virus and threat protection are enabled
-- Real-time protection is turned on
-- Behavior monitoring is turned on
-- Antivirus protection, including IOfficeAntivirus (IOAV) is enabled
-- Cloud protection is enabled
-- Security intelligence updates occur
-- Automatic actions are taken on detected threats
-- Notifications are visible in the Windows Security app on Windows devices
-- Archives and network files can be scanned
+- Virus and threat protection are enabled.
+- Real-time protection is turned on.
+- Behavior monitoring is turned on.
+- Antivirus protection, including IOfficeAntivirus (IOAV) is enabled.
+- Cloud protection is enabled.
+- Security intelligence updates occur.
+- Automatic actions are taken on detected threats.
+- Notifications are visible in the Windows Security app on Windows devices.
+- Archives and network files can be scanned.
 
 Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Defender for Endpoint, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team. (See [How do I configure or manage tamper protection](#how-do-i-configure-or-manage-tamper-protection)?)
 
@@ -114,7 +114,7 @@ Using [endpoint detection and response](overview-endpoint-detection-response.md)
 
 ## Review your security recommendations
 
-Tamper protection integrates with [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md) capabilities. [Security recommendations](tvm-security-recommendation.md) include making sure tamper protection is turned on. For example, you can search on *tamper*. In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
+Tamper protection integrates with [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md) capabilities. [Security recommendations](tvm-security-recommendation.md) include making sure tamper protection is turned on. For example, in your [Vulnerability Management dashboard](/microsoft-365/security/defender-vulnerability-management/tvm-dashboard-insights#vulnerability-management-dashboard), you can search on *tamper*. In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
 
 To learn more about Microsoft Defender Vulnerability Management, see [Dashboard insights - Defender Vulnerability Management](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
