@@ -41,8 +41,8 @@ Learn about the general guidance on a typical Microsoft Defender for Endpoint on
 
 [2. Capture performance data from the endpoint.](#2-capture-performance-data-from-the-endpoint)
 
-    > [!NOTE]
-    > Consider doing the following optional items, even though they are not Microsoft Defender for Endpoint specific, they tend to improve performance in Linux systems.
+> [!NOTE]
+> Consider doing the following optional items, even though they are not Microsoft Defender for Endpoint specific, they tend to improve performance in Linux systems.
 
 [3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk).](#3-optional-check-for-filesystem-errors-fsck-akin-to-chkdsk)
 
