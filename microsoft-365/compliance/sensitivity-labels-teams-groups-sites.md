@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 10/11/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -86,7 +86,7 @@ After sensitivity labels are enabled for containers as described in the previous
 
 1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Groups & sites** for the label's scope: 
     
-    ![Sensitivity label scope options for files and emails.](../media/groupsandsites-scope-options-sensitivity-label.png)
+    :::image type="content" source="../media/groupsandsites-scope-options-sensitivity-label.png" alt-text="Sensitivity label scope option for Groups & sites.":::
     
     When only this scope is selected for the label, the label won't be displayed in Office apps that support sensitivity labels and can't be applied to files and emails. Having this separation of labels can be helpful for both users and administrators, but can also add to the complexity of your label deployment.
     

@@ -14,13 +14,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
   - m365-security
+  - tier2
 description: Admins can learn how to use the spoof intelligence policy and the spoof intelligence insight to allow or block detected spoofed senders.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 09/13/2019
+ms.date: 1/31/2023
 ---
 
 # Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP
@@ -34,11 +35,11 @@ ms.date: 09/13/2019
 >
 > Spoofed sender management in Exchange Online PowerShell or Standalone EOP PowerShell is in the process of being migrated exclusively to the related **\*-TenantAllowBlockListSpoofItems**, **Get-SpoofIntelligenceInsight**, and **Get-SpoofMailReport** cmdlets. For procedures using these cmdlets, see the following articles:
 >
-> - [Use PowerShell to view allow or block entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-view-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
-> - [Use PowerShell to create allow entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
-> - [Use PowerShell to create block entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-create-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
-> - [Use PowerShell to modify allow or block entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-modify-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
-> - [Use PowerShell to remove allow or block entries for spoofed senders from the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-remove-allow-or-block-entries-for-spoofed-senders-from-the-tenant-allowblock-list)
+> - [Use PowerShell to view existing allow or block entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-view-existing-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Use PowerShell to create allow entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Use PowerShell to create block entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-create-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Use PowerShell to modify existing allow or block entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-modify-existing-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Use PowerShell to remove existing allow or block entries for spoofed senders from the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-remove-existing-allow-or-block-entries-for-spoofed-senders-from-the-tenant-allowblock-list)
 >
 > The older spoofed sender management experience using the **Get-PhishFilterPolicy** and **Set-PhishFilterPolicy** cmdlets is in the process of being deprecated, but is still presented in this article for completeness until the cmdlets are removed everywhere.
 
@@ -46,18 +47,14 @@ ms.date: 09/13/2019
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To modify the spoof intelligence policy or enable or disable spoof intelligence, you need to be a member of:
-    - **Organization Management**
-    - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
-  - For read-only access to the spoof intelligence policy, you need to be a member of the **Global Reader** or **Security Reader** role groups.
-
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  **Notes**:
-
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Modify the spoof intelligence policy or turn on or turn off spoof intelligence_: Membership in one of the following role groups:
+      - **Organization Management**
+      - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
+    - _Read-only access to the spoof intelligence policy_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - The options for spoof intelligence are described in [Spoof settings in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings).
 

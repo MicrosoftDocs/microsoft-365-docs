@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date:
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,7 +20,6 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-
 ---
 
 # Work with a partner to archive third-party data

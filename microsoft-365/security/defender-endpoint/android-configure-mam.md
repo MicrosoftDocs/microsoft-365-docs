@@ -38,7 +38,7 @@ Microsoft Defender for Endpoint on Android supports both the configurations of M
 
 - **Intune MDM + MAM**: IT administrators can only manage apps using App Protection Policies on devices that are enrolled with Intune mobile device management (MDM).
 - **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using [App Protection Policies](/mem/intune/apps/app-protection-policy) on devices not enrolled with Intune MDM. This provision means that apps can be managed by Intune on devices enrolled with third-party EMM providers.
-To manage apps in both these configurations customers should use Intune in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+To manage apps in both these configurations customers should use Intune in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 To enable this capability an administrator needs to configure the connection between Microsoft Defender for Endpoint and Intune, create the app protection policy, and apply the policy on targeted devices and applications.
 
@@ -56,13 +56,13 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
      :::image type="content" source="images/enable-intune-connection.png" alt-text="The Advanced features section in the Microsoft 365 Defender portal." lightbox="images/enable-intune-connection.png":::
 
-  d. Go to **Microsoft Endpoint Manager (Intune)** and Validate whether Microsoft Defender for Endpoint-Intune connector is enabled.
+  d. Go to the **Microsoft Intune admin center** and Validate whether Microsoft Defender for Endpoint-Intune connector is enabled.
 
      :::image type="content" source="images/validate-intune-connector.png" alt-text="The intune-connector status pane in the Microsoft 365 Defender portal." lightbox="images/validate-intune-connector.png":::
 
 - **Enable Microsoft Defender for Endpoint on Android Connector for App Protection Policy (APP)**.
 
-  Configure the connector on Intune Microsoft Endpoint Manager for App protection policies:
+  Configure the connector on Microsoft Intune for App protection policies:
 
   a. Go to **Tenant Administration > Connectors and Tokens > Microsoft Defender for Endpoint**.
 
@@ -137,11 +137,11 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
 ## Configure Web protection
 
-Defender for Endpoint on Android allows IT Administrators to configure web protection. Web protection is available within the [Microsoft Endpoint Manager Admin center](https://endpoint.microsoft.com).
+Defender for Endpoint on Android allows IT Administrators to configure web protection. Web protection is available within the [Microsoft Intune admin center](https://endpoint.microsoft.com).
 
 Web protection helps to secure devices against web threats and protect users from phishing attacks. Note that anti-phishing and custom indicators (URL and IP addresses) are supported as part of web protection. Web content filtering is currently not supported on mobile platforms.
 
-1. In the Microsoft Endpoint Manager admin center, go to **Apps > App configuration policies > Add > Managed apps**.
+1. In the Microsoft Intune admin center, go to **Apps > App configuration policies > Add > Managed apps**.
 
 2. Give the policy a **name**.
 
@@ -165,7 +165,7 @@ Web protection helps to secure devices against web threats and protect users fro
 
 ## Configure Network Protection
 
-1. In Microsoft Endpoint Manager Admin center, navigate to **Apps** \> **App configuration policies**. Create a new App configuration policy. Click Managed Apps.
+1. In Microsoft Intune admin center, navigate to **Apps** \> **App configuration policies**. Create a new App configuration policy. Click Managed Apps.
 
 2. Provide a name and description to uniquely identify the policy. Target the policy to **'Selected apps'** and search for **'Microsoft Defender Endpoint for Android'**. Click the entry and then click **Select** and then **Next**.
 
@@ -184,13 +184,13 @@ Web protection helps to secure devices against web threats and protect users fro
 4. Include or exclude the groups you want the policy to apply to. Proceed to review and submit the policy.
 
 > [!NOTE]
-> Users need to enable location permission (which is an optional permission); this enables Defender for Endpoint to scan their networks and alert them when there are WiFi-related threats. If the location permission is denied by the user, Defender for Endpoint will only be able to provide limited protection against network threats and will only protect the users from rogue certificates.  
+> Users need to enable location permission (which is an optional permission); this enables Defender for Endpoint to scan their networks and alert them when there are WiFi-related threats. If the location permission is denied by the user, Defender for Endpoint will only be able to provide limited protection against network threats and will only protect the users from rogue certificates.
 
 ## Configure privacy controls
 
 Admins can use the following steps to enable privacy and not collect the domain name, app details and network information as part of the alert report for corresponding threats.
 
-1. In Microsoft Endpoint Manager admin center, go to **Apps > App configuration policies > Add > Managed apps**.
+1. In Microsoft Intune admin center, go to **Apps > App configuration policies > Add > Managed apps**.
 
 1. Give the policy a **name**.
 
@@ -212,7 +212,7 @@ Microsoft Defender for Endpoint on Android enables Optional Permissions in the o
 
 Use the following steps to enable Optional permissions for devices.
 
-1. In Microsoft Endpoint Manager admin center, go to **Apps > App configuration policies > Add > Managed apps**.
+1. In Microsoft Intune admin center, go to **Apps > App configuration policies > Add > Managed apps**.
 
 1. Give the policy a **name**.
 
