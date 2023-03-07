@@ -49,6 +49,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 |Information barriers|InformationBarrierPolicyApplication|
 |Microsoft 365 Defender|AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection|
 |Microsoft Teams|MicrosoftTeams|
+|Microsoft Planner|PlannerCopyPlan, PlannerPlan, PlannerPlanList, PlannerRoster, PlannerRosterSensitivityLabel, PlannerTask, PlannerTaskList, PlannerTenantSettings |
 |MyAnalytics|MyAnalyticsSettings|
 |OneDrive for Business|OneDrive|
 |Power Apps|PowerAppsApp, PowerAppsPlan|
