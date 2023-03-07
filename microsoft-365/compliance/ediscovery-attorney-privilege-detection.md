@@ -82,7 +82,7 @@ To upload an attorney list for use by the attorney-client privilege detection mo
 4. Select **Save** to upload the attorney list.
 
 > [!NOTE]
-> Once the attorney CSV file has been uploaded, it is not possible to view or download the attorney list. It is recommended to keep the CSV file for reference.
+> Once the attorney CSV file has been uploaded, it is not possible to view or download the attorney list. We recommend keeping the CSV file for reference.
 
 ## Use the attorney-client privilege detection model
 
