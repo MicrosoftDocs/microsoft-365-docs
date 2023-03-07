@@ -189,6 +189,9 @@ Select one of the following links to go to a specific table.
     :::column:::
         [Viva Goals activities](#viva-goals-activities)
     :::column-end:::
+    :::column:::
+        [Microsoft Planner](#microsoft-planner-activities)
+    :::column-end:::
 :::row-end:::
 
 
@@ -926,3 +929,29 @@ The following table lists the user and admin activities in Viva Goals that are l
 |Dashboard created |Dashboard created |User has created a new dashboard on Viva Goals |
 |Dashboard updated |Dashboard updated |User has updated a dashboard on Viva Goals |
 |Dashboard deleted |Dashboard deleted |User has deleted a dashboard on Viva Goals.  |
+
+## Microsoft Planner activities
+
+The following table lists the user and admin activities in Microsoft Planner that are logged for auditing. The table includes the friendly name that's displayed in the **Activities** column and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results.
+
+| Friendly name | Operation | Description |
+|:--------------|:----------|:------------|
+| Read a plan | PlanRead | A plan is read by a user or an app. If the read operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ContainerType indicates ContainerType.Invalid and ContainerId indicates null. |
+| Created a plan | PlanCreated | A plan is created by a user or an app. If the create operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ObjectId indicates null, ContainerType indicates ContainerType.Invalid and ContainerId indicates null. |
+| Modified a plan | PlanModified | A plan is modified by a user or an app. |
+| Deleted a plan | PlanDeleted | A plan is deleted by a user or an app. |
+| Copied a plan | PlanCopied | A plan is copied by a user or an app. If the copy operation is a ResultStatus.Failure or ResultStatus.Failure, newPlanId indicates null, newContainerType indicates ContainerType.Invalid, and newContainerId indicates null. |
+| Read a task | TaskRead | A task is read by a user or an app. If the read operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, PlanId indicates null. |
+| Created a task | TaskCreated | A task is created by a user or an app. If the create operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ObjectId indicates null and PlanId indicates null. |
+| Modified a task | TaskModified | A task is modified by a user or an app. |
+| Deleted a task | TaskDeleted | A task is deleted by a user or an app. |
+| Assigned a task | TaskAssigned | A task's assignee is modified by a user or an app. This can be an unassigned task getting assigned or an assigned task has a new assignee. |
+| Completed a task | TaskCompleted | A task is marked completed by a user or an app. |
+| Created a roster | RosterCreated | A roster is created by a user or an app. If the create operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ObjectId indicates null, MemberIds indicates an empty string. |
+| Deleted a roster | RosterDeleted | A roster is deleted by a user or an app. |
+| Added a member(s) to a roster | RosterMemberAdded | A member(s) is added to a roster. If the add operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, MemberIds indicates the list of member IDs attempted. |
+| Removed a member(s) to a roster | RosterMemberDeleted | A member(s) is removed from a roster. If the remove operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, MemberIds indicates the list of member IDs attempted. |
+| Read a list of plans | PlanListRead | A list of plans is queried by a user or an app. If the query operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, PlanList indicates an empty string. |
+| Read a list of tasks | TaskListRead | A list of tasks is queried by a user or an app. If the query operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, TaskList indicates an empty string. |
+| Updated tenant settings | TenantSettingsUpdated | Tenant settings are updated by a tenant admin. If the update operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ObjectId indicates the original settings, and TenantSettings indicates the tenant settings attempted. |
+| Updated a roster's sensitivity label | RosterSensitivityLabelUpdated | A user or an app updates a roster's sensitivity label. |
