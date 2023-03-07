@@ -20,7 +20,7 @@ Each Microsoft 365 group comes equipped with a dedicated mailbox that stores the
 The following ways help you understand how the quota calculation works, best practices or proactive approach taken to ensure the group mailbox doesn't reach its quota. And the course of action to be performed if the group mailbox as reached or exceeded its quota.
 
 > [!NOTE]
-> When added to outlook, group mailbox is always on Online mode and maintains a direct connection to an Exchange server. It is important to keep the size within limits to avoid latency.
+> When added to Outlook, the group mailbox is always in online mode and maintains a direct connection to Exchange Server. It is important to keep the size within limits to avoid latency.
 
 ## Proactive approach to keep group mailbox size in check 
 
