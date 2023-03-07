@@ -74,11 +74,6 @@
             "source_path": "microsoft-365/security/defender-endpoint/manage-tamper-protection-microsoft-endpoint-manager.md",
             "redirect_url": "/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune",
             "redirect_document_id": true
-        },
-        {
-            "source_path": "admin/manage/upgrade-distribution-lists.md",
-            "redirect_url": "https://support.microsoft.com/office/learn-about-microsoft-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2",
-            "redirect_document_id": false
         }
     ]
 }
