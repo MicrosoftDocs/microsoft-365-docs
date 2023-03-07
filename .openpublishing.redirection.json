@@ -10719,6 +10719,11 @@
     "source_path": "microsoft-365/compliance/archive-slack-data-microsoft.md",
     "redirect_url": "/microsoft-365/compliance/archiving-third-party-data",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/manage-tamper-protection-microsoft-endpoint-manager.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune",
+    "redirect_document_id": false
   }
  ]
 }
