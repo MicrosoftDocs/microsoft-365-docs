@@ -4,17 +4,17 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 03/15/2023
+ms.date: 03/06/2023
 audience: admin
-ms.topic: overview
-ms.custom: intro-overview
+ms.topic: conceptual
+ms.custom: 
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Watch to learn about the different features in Microsoft Syntex.
+description: Watch videos to learn about some of the different features in Microsoft Syntex.
 ---
 
 # Microsoft Syntex video library
