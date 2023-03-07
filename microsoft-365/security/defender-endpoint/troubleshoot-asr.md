@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
 author: Dansimp
-ms.author: Daniel.Simpson
+ms.author: dansimp
 ms.date: 03/27/2019
 ms.reviewer:
 manager: dansimp
