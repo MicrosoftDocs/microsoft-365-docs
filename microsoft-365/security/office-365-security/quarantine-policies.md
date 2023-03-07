@@ -61,8 +61,11 @@ The default quarantine policies, their associated permission groups, and whether
 |AdminOnlyAccessPolicy|No access|No|
 |DefaultFullAccessPolicy|Full access|No|
 |NotificationEnabledPolicy<sup>\*</sup>|Full access|Yes|
+|DefaultFullAccessWithNotificationPolicy<sup>\*\*</sup>|Full access|Yes|
 
 <sup>\*</sup>See [the next section](#full-access-permissions-and-quarantine-notifications) for more information about this policy.
+
+<sup>\*\*</sup>This policy is used in [preset security policies](preset-security-policies.md).
 
 If you don't like the default permissions in the preset permission groups, or if you want to enable quarantine notifications, create and use custom quarantine policies. For more information about what each permission does, see the [Quarantine policy permission details](#quarantine-policy-permission-details) section later in this article.
 
@@ -84,7 +87,10 @@ As described earlier, quarantine notifications in quarantine policies replace en
 
 To provide the permissions of DefaultFullAccessPolicy but with quarantine notifications turned on, we created the policy named NotificationEnabledPolicy to use in place of DefaultFullAccessPolicy for those organizations that needed it (organizations where end-user spam notifications were turned on).
 
-New organizations or older organization where end-user spam notifications where never turned on in anti-spam polices don't have the quarantine policy named NotificationEnabledPolicy. To turn on quarantine notifications for quarantine polices that use **Full access** permissions in organizations that don't have the NotificationEnabledPolicy, you can create and use custom quarantine policies with **Full access** permissions where quarantine notifications are turned on.
+New organizations or older organization where end-user spam notifications where never turned on in anti-spam polices don't have the quarantine policy named NotificationEnabledPolicy. To turn on quarantine notifications for quarantine polices that use **Full access** permissions in organizations that don't have the NotificationEnabledPolicy, you can use either of the following methods:
+
+- Create and use custom quarantine policies with **Full access** permissions where quarantine notifications are turned on.
+- Use the DefaultFullAccessWithNotificationPolicy.
 
 ## What do you need to know before you begin?
 
@@ -195,8 +201,6 @@ For custom permissions, use the previous table to get the binary value that corr
 For detailed syntax and parameter information, see [New-QuarantinePolicy](/powershell/module/exchange/new-quarantinepolicy).
 
 ## Step 2: Assign a quarantine policy to supported features
-
-In _supported_ protection features that quarantine email messages, you can assign a quarantine policy to the available quarantine actions. Features that quarantine messages and the availability of quarantine policies are described in the following table:
 
 In _supported_ protection features that quarantine email messages, you can assign a quarantine policy that defines what users can do to quarantine messages and whether notifications for quarantined messages are turned on. Features that quarantine messages and the availability of quarantine policies are described in the following table:
 
@@ -590,7 +594,7 @@ For detailed syntax and parameter information, see [Get-HostedContentFilterPolic
 
 ## Modify quarantine policies in the Microsoft 365 Defender portal
 
-You can't modify the built-in quarantine policies named AdminOnlyAccessPolicy or DefaultFullAccessPolicy. You can modify the built-in policy named NotificationEnabledPolicy ([if you have it](#full-access-permissions-and-quarantine-notifications)) and custom quarantine policies.
+You can't modify the built-in quarantine policies named AdminOnlyAccessPolicy, DefaultFullAccessPolicy, or DefaultFullAccessWithNotificationPolicy. You can modify the built-in policy named NotificationEnabledPolicy ([if you have it](#full-access-permissions-and-quarantine-notifications)) and custom quarantine policies.
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
@@ -620,7 +624,7 @@ For detailed syntax and parameter information, see [Set-QuarantinePolicy](/power
 
 **Notes**:
 
-- You can't remove the built-in quarantine policies named AdminOnlyAccessPolicy or DefaultFullAccessPolicy. You can remove the built-in policy named NotificationEnabledPolicy ([if you have it](#full-access-permissions-and-quarantine-notifications)) and custom quarantine policies.
+- You can't remove the built-in quarantine policies named AdminOnlyAccessPolicy, DefaultFullAccessPolicy, or DefaultFullAccessWithNotificationPolicy. You can remove the built-in policy named NotificationEnabledPolicy ([if you have it](#full-access-permissions-and-quarantine-notifications)) and custom quarantine policies.
 - Before you remove a quarantine policy, verify that it's not being used. For example, run the following command in PowerShell:
 
   ```powershell

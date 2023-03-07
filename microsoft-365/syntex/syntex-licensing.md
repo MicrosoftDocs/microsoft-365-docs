@@ -3,7 +3,7 @@ title: Licensing for Microsoft Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: ssquires
-ms.date: 08/02/2021
+ms.date: 03/06/2023
 manager: serdars
 audience: admin
 ms.topic: conceptual
@@ -80,7 +80,9 @@ Having one or more Syntex per-user licenses in your organization enables the fol
 - Pushing enterprise content types to a hub site, which also adds them to the associated sites and any newly created lists or libraries
 - Term store reports providing insights into published term sets and their use across your tenant
 
-## See also
+## Related topics
+
+[Microsoft Syntex - SharePoint Advanced Management overview](/sharepoint/advanced-management)
 
 [Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus)
 
