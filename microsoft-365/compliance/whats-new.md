@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/02/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -51,6 +51,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Sensitivity labels
 
 - **General availability (GA)**: Outlook for Mac is now rolling out in general availability for [protected meetings](sensitivity-labels-meetings.md).
+- **General availability (GA)**: Now rolling out in general availability for built-in labeling for Windows, support for a [default sublabel for a parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label) as a parity feature for the AIP add-in.
  - **Rolling out**: The ability to [scope labels to files and emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails), so that for example, a sensitivity label is visible to users in Outlook but not in Word, Excel, or PowerPoint. This configuration can be used as a parity feature for the AIP add-in, which could be disabled per app.
 
 ## February 2023
