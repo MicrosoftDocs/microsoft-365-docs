@@ -14,7 +14,7 @@ ms.reviewer:
 manager: dansimp
 ms.subservice: mde
 ms.topic: conceptual
-ms.date: 06/16/2022
+ms.date: 03/06/2023
 ms.collection: 
 - m365-security
 - tier2
@@ -140,6 +140,8 @@ In general, don't define exclusions for the following processes:
 - `bitsadmin.exe`
 - `cdb.exe`
 - `csi.exe`
+- `cmd.exe`
+- `cscript.exe`
 - `dbghost.exe`
 - `dbgsvc.exe`
 - `dnx.exe`
@@ -166,6 +168,7 @@ In general, don't define exclusions for the following processes:
 - `windbg.exe`
 - `winword.exe`
 - `wmic.exe`
+- `wscript.exe`
 - `wuauclt.exe`
 
 > [!NOTE]
