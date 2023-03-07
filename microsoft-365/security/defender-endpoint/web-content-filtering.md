@@ -191,9 +191,10 @@ To add a new policy, follow these steps:
    > [!IMPORTANT]
    > If you're using either Microsoft 365 Business Premium or Defender for Business, your web content filtering policy is applied to all users by default. Scoping does not apply.
 
-5. Review the summary and save the policy. The policy refresh might take up to 2 hours to apply to your selected devices.
+5. Review the summary and save the policy.
 
 > [!NOTE]
+> - There may be up to 2 hours of latency between the time a policy is created and the policy being enforced on the device.
 > - You can deploy a policy without selecting any category on a device group. This action will create an audit only policy to help you understand user behavior before creating a block policy.
 > - If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
 > - Blocking the "Uncategorized" category could lead to unexpected and undesired results.
