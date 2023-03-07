@@ -48,13 +48,13 @@ Compliance Manager becomes more helpful as you build and manage your own assessm
 
 ## Initial steps before creating assessments
 
-Before getting started, review the initial steps below so that you'll be ready during the assessment creation process:
+Listed below are details about steps and information that will help you prepare for creating an assessment:
 
-- [Prepare to assign your assessment to a group](#understand-groups-before-creating-assessments)
-- [Understand how assessment templates work](#understand-templates-before-creating-assessments)
-- [Set up connectors if you're assessing services from other companies](#set-up-connectors)
+- Plan a [grouping strategy](#groups-for-assessments) for your assesssments.
+- Learn how [assessment templates](compliance-manager-templates.md) work. Templates contain the controls and action recommendations for assessments.
+- Set up [connectors](#set-up-connectors) if you're assessing services from other companies.
 
-### Understand groups before creating assessments
+## Groups for assessments
 
 When you create an assessment, you'll need to assign it to a group. Groups are containers that allow you to organize assessments in a way that is logical to you, such as by year or regulation, or based on your organization's divisions or geographies. This is why we recommend planning a grouping strategy before you create assessments.
 
@@ -70,7 +70,7 @@ Different assessments within a group or groups may share improvement actions. Im
 
 #### Create a group
 
-Groups are created during the process of building a new assessment. Here are important things to know when working with groups:
+You create a group during the process of building a new assessment. Here are important things to know when working with groups:
 
 - A group must contain at least one assessment.
 - Group names must be unique within your organization.
@@ -82,18 +82,36 @@ Groups are created during the process of building a new assessment. Here are imp
 - Deleting an assessment breaks the relationship between that assessment and the group.
 - Groups can't be deleted.
 
-### Understand templates before creating assessments
+## Set up connectors (preview)
 
-Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Each template exists in two versions: one for use with Microsoft 365 (or other Microsoft products as available), and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
-
-Get more details more about templates at [Learn about assessment templates in Compliance Manager](compliance-manager-templates.md).
-
-### Set up connectors
-
-Compliance Manager integrates third-party data connectors so that you can build assessments that cover services other than Microsoft, such as SalesForce or Dropbox. You can select the connectors you need within Compliance Manager. Then when you build your assessment, you'll select from among the connectors you've already set up.
+Compliance Manager has an integrated set of third-party data connectors so that you can build assessments that cover services other than Microsoft, such as SalesForce or Dropbox. You can select the connectors you need within Compliance Manager. Then when you build your assessment, you'll select from among the connectors you've already set up.
 
 - Details about when and how to set up connectors for your assessments are covered in step XYZ of the [guided process for creating assessments](#create-an-assessment-using-a-guided-process), below.
 - Get more general information about [third-party data connectors](archiving-third-party-data.md).
+
+#### Available connectors
+The Compliance Manager integrated connectors currently available in preview are are:
+
+- Adobe Experience Manager
+- Adobe Experience Platform
+- Box
+- Confluence
+- DocuSign
+- Dropbox
+- Jira
+- QuickBooks
+- Salesforce
+- Shopify
+- Webex
+- Zoom
+
+#### How to set up connectors
+
+Follow the steps below to set up the integrated connectors:
+
+1. In Compliance Manager, select **Data connectors** in the upper right of your screen. 
+1. You'll arrive at the Compliance Manager page within the **Data connectors** section of the Microsoft Purview compliance portal. This page lists the available connectors. Select the checkbox next to the name of the connector you want to add.
+1. 
 
 ## Create assessments
 
