@@ -98,7 +98,7 @@ If the value of the `InformationBarrierMode` property is *Legacy*, enabling mult
 
 ## Enable multiple segment support for users
 
-To enable multi-segment support for organizations in *SingleSegment* mode, run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+To enable multi-segment support for organizations in *SingleSegment* mode, run the following cmdlet.
 
 ```powershell
 Set-PolicyConfig -InformationBarrierMode 'MultiSegment'
