@@ -33,7 +33,7 @@ description: Watch to learn about the different features in Microsoft Syntex.
 
 |Create and train an extractor  |Apply a retention label  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-create-extractor.png" alt-text="Thumbnail image of create and train an extractor video.":::](https://www.microsoft.com/videoplayer/embed/RE4CL2G)<br>[Learn more about creating an etractor](create-an-extractor.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-apply-retention-label.png" alt-text="Thumbnail image of apply a retention label video.":::](https://www.microsoft.com/videoplayer/embed/RE4GydO)<br>[Learn more about creating a classifier](apply-a-retention-label-to-a-model.md)     |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-create-extractor.png" alt-text="Thumbnail image of create and train an extractor video.":::](https://www.microsoft.com/videoplayer/embed/RE4CL2G)<br>[Learn more about creating an extractor](create-an-extractor.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-apply-retention-label.png" alt-text="Thumbnail image of apply a retention label video.":::](https://www.microsoft.com/videoplayer/embed/RE4GydO)<br>[Learn more about retention labels](apply-a-retention-label-to-a-model.md)     |
 
 |Model usage analytics  |Manage contracts solution  |
 |---------|---------|
