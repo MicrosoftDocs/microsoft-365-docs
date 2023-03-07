@@ -5,7 +5,7 @@ keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, vi
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 12/05/2022
+ms.date: 03/06/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -73,7 +73,7 @@ New-Item -ItemType Directory -Force -Path $vdmpath | Out-Null
 
 Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?LinkID=121721&arch=x64' -OutFile $vdmpackage
 
-cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
+Start-Process -FilePath $vdmpackage -WorkingDirectory $vdmpath -ArgumentList "/x"
 ```
 
 You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs will receive the new update.
