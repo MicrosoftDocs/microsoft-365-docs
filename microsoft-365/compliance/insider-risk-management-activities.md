@@ -54,7 +54,7 @@ New reports typically take up to 10 hours before they're ready for review. When 
 
 ![Insider risk management user activity report](../media/insider-risk-user-activity-report.png)
 
-The **User activity report** for the selected user contains the **User activity**, **Activity explorer**, and **Forensic evidence (preview)** tabs:
+The **User activity report** for the selected user contains the **User activity**, **Activity explorer**, and **Forensic evidence** tabs:
 
 - **User activity**: Use this chart view to investigate potentially risky activities and view potentially related activities that occur in sequences. This tab is structured to enable quick review of a case, including a historical timeline of all activities, activity details, the current risk score for the user in the case, the sequence of risk events, and filtering controls to help with investigative efforts.
 - **Activity explorer**: This tab provides risk investigators with a comprehensive analytics tool that provides detailed information about activities. With the Activity explorer, reviewers can quickly review a timeline of detected risky activity and identify and filter all potentially risky activities associated with alerts. To learn more about using the Activity explorer, see the *Activity explorer* section later in this article.
@@ -269,7 +269,7 @@ To help minimize the number of older items that provide limited current value, t
 |Active cases (and associated artifacts)|Indefinite retention, never expire|
 |Resolved cases (and associated artifacts)|120 days from case resolution, then automatically deleted|
 |Maximum number of active cases|100|
-|User activities reports|120 days from activity detection, then automatically deleted|
+|User activities reports|120 days from report creation, then automatically deleted|
 
 ## Get help managing your insider risk alert queue
 
