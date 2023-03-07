@@ -10726,9 +10726,9 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "admin/manage/upgrade-distribution-lists.md",
+    "source_path": "microsoft-365/admin/manage/upgrade-distribution-lists.md",
     "redirect_url": "microsoft-365/admin/create-groups/office-365-groups",
     "redirect_document_id": false
-}
+  }
  ]
 }
