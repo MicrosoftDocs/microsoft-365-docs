@@ -1,5 +1,5 @@
 ---
-title: "Common usage scenarios for sensitive information types"
+title: "Support for optical character recognition in Microsoft Purview"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
