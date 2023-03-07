@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/7/2023
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
@@ -63,6 +63,9 @@ The roles that appear in the **Azure AD** > **Roles** section of the compliance 
 |
 
 ## Administrative units (preview)
+
+> [!IMPORTANT]
+> Administrative units are supported only in Microsoft 365 commercial cloud organizations for public preview.
 
 Administrative units let you subdivide your organization into smaller units, and then assign specific administrators that can manage only the members of those units. They also allow you to assign administrative units to members of role groups in Microsoft Purview solutions, so that these administrators can manage only the members (and associated features) of those assigned administrative units.
 
