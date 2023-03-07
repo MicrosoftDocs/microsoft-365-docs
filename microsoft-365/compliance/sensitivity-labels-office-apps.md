@@ -371,7 +371,7 @@ Before you can scope a label to just files or emails, you must first remove it i
 
 **Limitation for this preview:**
 
-- If the label is configured as the default label, and Outlook isn't configured with its own default label, you can't remove the scope for **Email**. As a workaround,  you must first remove the default label, and then you can remove the email scope.
+- If the label is configured as the default label in one or more label policies, and Outlook isn't configured with its own default label in the same policy, you can't remove the scope for **Email**. As a workaround, remove this label as the default label, and then you can remove the email scope.
 
 ## Configure a label to apply S/MIME protection in Outlook
 
