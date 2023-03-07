@@ -119,7 +119,7 @@ The  _Filters_ parameter specifies the search criteria for the compliance securi
 
    **DocumentLink_**_SearchableSiteProperty_
 
-   The path (URL) of a specific folder on a SharePoint or OneDrive site. If you use this property, be sure to search the site where the specified folder is located in. We recommend using this property instead of the Site and Path properties.
+   The path (URL) of a specific folder on a SharePoint or OneDrive site. If you use this property, be sure to search the site in which the specified folder is located. We recommend using this property instead of the Site and Path properties.
 
    To return items located in subfolders of the folder that you specify for the documentlink property, you have to add /* to the URL of the specified folder; `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`
 
