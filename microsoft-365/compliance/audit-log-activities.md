@@ -932,7 +932,7 @@ The following table lists the user and admin activities in Viva Goals that are l
 
 ## Microsoft Planner activities
 
-The following table lists the user and admin activities in Microsoft Planner that are logged for auditing. The table includes the friendly name that's displayed in the **Activities** column and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results.
+The following table lists the user and admin activities in [Microsoft Planner](/office365/planner/planner-for-admins) that are logged for auditing. The table includes the friendly name that's displayed in the **Activities** column and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results.
 
 | Friendly name | Operation | Description |
 |:--------------|:----------|:------------|
