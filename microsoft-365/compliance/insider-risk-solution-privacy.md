@@ -1,6 +1,6 @@
---
+---
 title: Microsoft Purview Insider Risk Management and Communication Compliance Privacy Guide
-description: Learn how Microsoft Purview Insider Risk Management and Microsoft Purview Communication Compliance are built with privacy by design and balance user privacy with tools that help detect and mitigate organizational risks. 
+description: Learn how Microsoft Purview Insider Risk Management and Microsoft Purview Communication Compliance are built with privacy by design, and the solutions balance user privacy with tools that help detect and mitigate organizational risks. 
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -46,13 +46,13 @@ Whether your organization chooses a single role group or multiple role groups to
 Learn more about role group options for each solution:   
 
 - [Get started with communication compliance - Microsoft Purview (compliance) | Microsoft Learn](communication-compliance-configure#step-1-required-enable-permissions-for-communication-compliance) 
-- [Get started with insider risk management - Microsoft Purview (compliance) | Microsoft Learn](compliance/insider-risk-management-configure#step-1-required-enable-permissions-for-insider-risk-management) 
+- [Get started with insider risk management - Microsoft Purview (compliance) | Microsoft Learn](insider-risk-management-configure#step-1-required-enable-permissions-for-insider-risk-management) 
 
 ## Admin explicit opt-in 
 
-Insider Risk Management and Communication Compliance policies are setup to detect risky activities/communications and potential policy violations that could result in a security incident. Employees can only be explicitly scoped into a policy by an admin with the right permissions.  
+Insider Risk Management and Communication Compliance policies are set up to detect risky activities/communications and potential policy violations that could result in a security incident. Employees can only be explicitly scoped into a policy by an admin with the right permissions.  
 
-Additionally, Insider Risk Management and Communication Compliance indicators that help detect risky activities and communications that may lead to potential data security incidents are disabled by default. For example, indicators like “downloading content from OneDrive”, “sharing SharePoint files with people outside the organization”, or sending sensitive information or harassing messages are off by default. Insider Risk Management and Communication Compliance do not detect those activities without admin’s explicit opt-in. Admins with the right permissions must explicitly select and opt in one or more indicators in settings before a policy can detect those activities.  
+Additionally, Insider Risk Management and Communication Compliance indicators that help detect risky activities and communications that may lead to potential data security incidents are disabled by default. For example, indicators like “downloading content from OneDrive”, “sharing SharePoint files with people outside the organization”, or "sending sensitive information or harassing messages" are off by default. Insider Risk Management and Communication Compliance do not detect those activities without admin’s explicit opt-in. Admins with the right permissions must explicitly select and opt in one or more indicators in settings before a policy can detect those activities.  
 
 Admin explicit opt-in controls help safeguard end-user privacy by ensuring the solutions are only flagging alerts and policy violations for users and indicators specified in the policies.   
 
@@ -64,8 +64,8 @@ Audit logs are enabled for all Microsoft 365 organizations by default to ensure 
 
 Learn more about audit logs capabilities for each solution: 
 
-- [Use communication compliance reports and audits - Microsoft Purview (compliance) | Microsoft Learn](compliance/communication-compliance-reports-audits#audit) 
-- [Review activities with the insider risk management audit log - Microsoft Purview (compliance) | Microsoft Learn](compliance/insider-risk-management-audit-log) 
+- [Use communication compliance reports and audits - Microsoft Purview (compliance) | Microsoft Learn](communication-compliance-reports-audits#audit) 
+- [Review activities with the insider risk management audit log - Microsoft Purview (compliance) | Microsoft Learn](insider-risk-management-audit-log) 
 
 ## Protect user trust and build a holistic insider risk program 
 
