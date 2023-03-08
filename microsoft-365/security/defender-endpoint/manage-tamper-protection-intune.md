@@ -6,7 +6,7 @@ description: Turn tamper protection on or off for your organization in Microsoft
 keywords: malware, defender, antivirus, tamper protection, Microsoft Intune
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/06/2023
+ms.date: 03/08/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -38,15 +38,15 @@ Tamper protection is part of anti-tampering capabilities that include [standard 
 > [!IMPORTANT]
 > If you're using Microsoft Intune to manage Defender for Endpoint settings, we recommend setting [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on devices.
 >
-> When tamper protection is turned on, tamper protected settings cannot be changed from their default value. Changes might appear to be successful in Intune, but will not actually be allowed by tamper protection. For the most current list of tamper protected settings, contact support.
+> When tamper protection is turned on, changes cannot be made to tamper-protected settings, except for changes to Microsoft Defender Antivirus exclusions. Other changes might appear to be successful in Intune, but will not actually be allowed by tamper protection. For more information, see [What happens when tamper protection is turned on?](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on).
 
 ## Requirements for managing tamper protection in Intune
 
-- You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access) assigned, such as global admin, security admin, or security operations.
-- Your organization uses [Intune to manage devices](/mem/endpoint-manager-getting-started). (Intune licenses are required; Intune is included in Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Government G3/G5, and corresponding education licenses.)
+- You must have appropriate permissions assigned through roles, such as Global Administrator or Security Administrator. (See [Azure Active Directory roles with Intune access](/mem/intune/fundamentals/role-based-access-control#azure-active-directory-roles-with-intune-access).)
+- Your organization uses [Intune to manage devices](/mem/intune/fundamentals/manage-devices). (Intune licenses are required; Intune is included in Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Government G3/G5, and corresponding education licenses.)
 - Your Windows devices must be running Windows 10 [version 1709 or later](/lifecycle/announcements/revised-end-of-service-windows-10-1709) or Windows 11. (For more information about releases, see [Windows release information](/windows/release-health/release-information).)
 - You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or above).
-- Your devices must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version `1.1.15500.X` (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
+- Your devices must be using anti-malware platform version `4.18.1906.3` (or above) and anti-malware engine version `1.1.15500.X` (or above). (See [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
 - Your Intune and Defender for Endpoint tenants must share the same Microsoft Entra (Azure Active Directory) infrastructure.
 - Your devices must be onboarded to Defender for Endpoint.
 
@@ -87,14 +87,14 @@ You can use a registry key to confirm whether a Windows device is managed by Int
 
 If your organization has [exclusions defined for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md), tamper protection will protect those exclusions, provided all of the following conditions are met:
 
-- Tamper protection is deployed and managed by using Intune, and devices are managed by Intune.
+- Tamper protection is deployed through Intune, and devices are managed by Intune only.
 - `DisableLocalAdminMerge` is enabled. (See [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp).)
 - Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. (See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
 - Devices are running Windows Defender platform `4.18.2211.5` or later. (See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).)
-- Functionality to protect exclusions is enabled on devices. (See [How to determine whether the functionality is enabled on a Windows device](#how-to-determine-whether-the-functionality-to-protect-exclusions-is-enabled-on-a-windows-device).)
+- Functionality to protect Microsoft Defender Antivirus exclusions is enabled on devices. (See [How to determine whether the functionality is enabled on a Windows device](#how-to-determine-whether-the-functionality-to-protect-exclusions-is-enabled-on-a-windows-device).)
 
 > [!TIP]
-> For more detailed information about exclusions, see [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
+> For more detailed information about Microsoft Defender Antivirus exclusions, see [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
 ### How to determine whether the functionality to protect exclusions is enabled on a Windows device
 
