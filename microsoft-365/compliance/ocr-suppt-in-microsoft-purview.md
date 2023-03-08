@@ -2,7 +2,7 @@
 title: "Support for optical character recognition in Microsoft Purview"
 f1.keywords:
 - NOCSH
-ms.author: v-katykoenen
+ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
@@ -46,7 +46,7 @@ This new functionality supports scanning images in the following file types:
 
 ## Prerequisites
 
-OCR scanning is an optional feature in Microsoft Purview. During the preview, it's available for free. When the preview is over, to continue to use OCR scans, your organization must have an account that includes this feature.
+OCR scanning is an optional feature in Microsoft Purview. During the preview, it's available for free. When the preview is over, to continue to use OCR scans, your organization must have an Azure account that includes this feature. For information on creating an account, refer to [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/microsoft-365/syntex/syntex-azure-billing)
 
 ## Configuring OCR Scans
 
