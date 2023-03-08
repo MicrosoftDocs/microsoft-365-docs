@@ -158,8 +158,8 @@ Cert and File IoC policy handling conflict will follow the below order:
 - Else if the file is blocked by ASR rules, CFA, AV, SmartScreen, then **Block**
 - Else **Allow** (passes Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
 
->[!NOTE]
-> In situations when Microsoft Defender Antivirus is set to **Block**, but Defender for Endpoint is set to **Allow**, the policy will default to **Allow**.
+> [!NOTE]
+> In situations when Microsoft Defender Antivirus is set to **Block**, but Defender for Endpoint - Indicators - File hash or Certificate is set to **Allow**, the policy will default to **Allow**.
 
 If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure (meaning longer) hash will be applied. For example, an SHA-256 file hash IoC policy will win over an MD5 file hash IoC policy if both hash types define the same file.
 
