@@ -25,7 +25,7 @@ ms.service: microsoft-365-security
 ms.date: 1/31/2023
 ---
 
-# Zero-hour auto purge (ZAP) in Exchange Online
+# Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365
 
 **Applies to**
 - [Exchange Online Protection](eop-about.md)
