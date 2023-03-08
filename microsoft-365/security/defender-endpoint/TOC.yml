@@ -696,7 +696,7 @@
         - name: Common mistakes to avoid
           href: common-exclusion-mistakes-microsoft-defender-antivirus.md
 
-      -  name: Troubleshooting mode for Defender for Endpoint
+      - name: Troubleshooting mode for Defender for Endpoint
          items:
           - name: Get started with troubleshooting mode
             href: enable-troubleshooting-mode.md
