@@ -41,6 +41,8 @@ Using Configuration Manager with tenant attach, you can turn tamper protection o
 > [!IMPORTANT]
 > When tamper protection is turned on, tamper-protected settings cannot be changed from their default values. To avoid breaking management experiences, including Intune and Configuration Manager, keep in mind that changes to tamper-protected settings might appear to succeed but are actually blocked by tamper protection. You can use [Intune](manage-tamper-protection-intune.md) and Configuration Manager to exclude devices from tamper protection. And, if you're managing tamper protection through Intune, you can change [tamper-protected antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions).
 
+:::image type="content" source="media/tamper-protect-configmgr.png" alt-text="Screenshot showing Windows Security settings with tamper protection enabled.":::
+
 1. Set up tenant attach. To learn more, see [Get started: Create and deploy endpoint security policies from the admin center](/mem/configmgr/tenant-attach/endpoint-security-get-started).
 
 2. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** \> **Antivirus**, and then choose **+ Create Policy**.
