@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
@@ -345,6 +346,9 @@ Download the onboarding package from Microsoft 365 Defender portal.
 
     > [!NOTE]
     > To run this command, you must have `python`  or `python3` installed on the device depending on the distro and version. If needed, see [Step-by-step Instructions for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
+    
+    > [!NOTE]
+    > To onboard a device that was previously offboarded you must remove the mdatp_offboard.json file located at /etc/opt/microsoft/mdatp.
 
     If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
 

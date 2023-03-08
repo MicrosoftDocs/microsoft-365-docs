@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 11/24/2022
 ---
 
 # Export Hardware and firmware assessment inventory per device
@@ -128,7 +129,7 @@ GET https://api.security.microsoft.com/api/machines/HardwareFirmwareInventoryPro
     
 ```
 
-## 2. Export certificate assessment (via files)
+## 2. Export hardware and firmware assessment (via files)
 
 ### 2.1 API method description
 

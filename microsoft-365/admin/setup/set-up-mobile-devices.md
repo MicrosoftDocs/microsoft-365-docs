@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: skjerland
 manager: scotv
+ms.date: 10/08/2018
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew, catalina, big sur, monterey, ventura, mde for mac
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 01/11/2023
+ms.date: 01/17/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -33,17 +33,40 @@ search.appverid: met150
 For more information on Microsoft Defender for Endpoint on other operating systems:
 
 - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
-- [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)</br>
+- [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)
+
+**Mac devices to soon receive built-in protection**
+
+Tamper protection will extend to macOS devices and will be turned on in block mode by default to help secure your Mac against threats. To learn more, see [Protect macOS security settings with tamper protection](built-in-protection.md).
 
 **Known issues**
 
-Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update.
-The issue impacts Microsoft Defender for endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
+Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Microsoft Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.<br>
+<br>
+**Catalina Deprecation**<br>
+Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as Apple ended support for Catalina (10.15) in December 2022.
+</br>
+
+### Feb-2023 (Build: 101.97.94  | Release version: 20.123011.19794.0)
+
+| Build:             | **101.97.94**         |
+|--------------------|-----------------------|
+| Release version:   | **20.123011.19794.0** |
+| Engine version:    | **1.1.20000.2**       |
+| Signature version: | **1.383.104.0**       |
+
+##### What's new
+
+- Improved performance, stability, and security
+- Bug fixes
+- Discontinued support macOS Catalina [10.15]
+
+<br/>
 
 <details>
-  <summary>Jan-2023 (Build: 101.94.13  | Release version: 20.122112.19413.0)</summary>
+  <summary>Jan-2023 (Build: 101.96.85  | Release version: 20.122112.19413.0)</summary>
 
-&ensp;Build: **101.94.13**<br/>
+&ensp;Build: **101.96.85**<br/>
 &ensp;Release version: **20.122112.19413.0**<br/>
 &ensp;Engine version: **1.1.19900.2**<br/>
 &ensp;Signature version: **1.381.2029.0**<br/>
@@ -54,7 +77,6 @@ The issue impacts Microsoft Defender for endpoint security extensions, and might
 
 <br/>
 </details>
-
 
 <details>
   <summary>Dec-2022 (Build: 101.90.97  | Release version: 20.122102.19097.0)</summary>
@@ -417,7 +439,7 @@ The issue impacts Microsoft Defender for endpoint security extensions, and might
 
 **What's new**
 
-- Fix for a system freeze occurring on shutdown on macOS Mojave and macOS Catalina.
+- Fix for a system freeze occurring on shutdown on macOS Mojave and macOS Catalina. 
 
 <br/>
 </details>
@@ -549,7 +571,7 @@ The issue impacts Microsoft Defender for endpoint security extensions, and might
 
 **What's new**
 
-- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Microsoft Defender Vulnerability Management (MDVM) functionality.
+- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Microsoft Defender Vulnerability Management (MDVM) functionality. 
 
 <br/>
 </details>

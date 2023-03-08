@@ -1,12 +1,12 @@
 ---
-title: Recommended Microsoft Defender for Cloud Apps policies for SaaS apps - Microsoft 365 Enterprise | Microsoft Docs
+title: Recommended Microsoft Defender for Cloud Apps policies for SaaS apps
 description: Describes recommended policies for integration with Microsoft Defender for Cloud Apps.
 author: BrendaCarter
 manager: laurawi
 ms.topic: conceptual
 audience: Admin
 ms.author: bcarter
-ms.date: 03/22/2021
+ms.date: 1/31/2023
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -15,6 +15,7 @@ ms.collection:
 - M365-identity-device-management
 - m365-security
 - zerotrust-solution
+- tier2
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
@@ -98,7 +99,7 @@ The following illustration and table provide several examples of policies that c
 
 |Protection level|Example policies|
 |---|---|
-|Starting point|Alert when files containing this sensitive information type ("Credit Card Number") are shared outside the organization <p> >Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices|
+|Starting point|Alert when files containing this sensitive information type ("Credit Card Number") are shared outside the organization <p> Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices|
 |Enterprise|Protect downloads of files containing this sensitive information type ("Credit card number") to managed devices <p> Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices <p> Alert when a file with on of these labels is uploaded to OneDrive for Business or Box (Customer data, Human Resources: Salary Data,Human Resources, Employee data)|
 |Specialized security|Alert when files with this label ("Highly classified") are downloaded to managed devices <p> Block downloads of files with this label ("Highly classified") to unmanaged devices|
 |||

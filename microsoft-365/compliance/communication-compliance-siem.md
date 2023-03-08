@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/21/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -24,7 +25,7 @@ search.appverid:
 # Use communication compliance with SIEM solutions
 
 > [!IMPORTANT]
-> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
+> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance (for example, SEC or FINRA) and business conduct violations such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
 
 [Communication compliance](/microsoft-365/compliance/communication-compliance) is an insider risk solution in Microsoft Purview that helps minimize communication risks by helping you detect, capture, and act on potentially inappropriate messages in your organization. Security information and event management (SIEM) solutions such as [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) or [Splunk](https://www.splunk.com/) are commonly used to aggregate and track threats within an organization.
 

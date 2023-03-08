@@ -4,8 +4,9 @@ description: Learn how to report on term store activity.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 09/15/2020
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -44,9 +45,3 @@ View the number of terms in each of the added working languages that don't have 
 
 
   
-
-
-
-
-
-

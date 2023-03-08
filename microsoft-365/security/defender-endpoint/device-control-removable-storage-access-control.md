@@ -112,7 +112,7 @@ The following table lists the properties you can use in **Entry**:
 | **Type** | Defines the action for the removable storage groups in IncludedIDList. <p>Enforcement: Allow or Deny <p>Audit: AuditAllowed or AuditDenied<p> | Allow<p>Deny <p>AuditAllowed: Defines notification and event when access is allowed <p>AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.<p> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**. |
 | **Sid** | Local user Sid or user Sid group or the Sid of the AD object or the Object ID of the Azure AD object, defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the machine. |  |
 | **ComputerSid** | Local computer Sid or computer Sid group or the Sid of the AD object or the Object Id of the AAD object, defines whether to apply this policy over a specific machine or machine group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both SID and ComputerSID into the same Entry. |  |
-| **Options** | Defines whether to display notification or not |**When Type Allow is selected**: <p>0: nothing<p>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Allow** happens and the AuditAllowed is setting configured, the system won't send event. <p>8: capture file information and have a copy of the file as evidence for Write access. <p>16: capture file information for Write access. <p>**When Type Deny is selected**: <p>0: nothing<p>4: disable **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system won't show notification. <p>**When Type **AuditAllowed** is selected**: <p>0: nothing <p>1: nothing <p>2: send event<p> **When Type **AuditDenied** is selected**: <p>0: nothing <p>1: show notification <p>2: send event<p>3: show notification and send event |
+| **Options** | Defines whether to display notification or not |**When Type Allow is selected**: <p>0: nothing<p>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Allow** happens and the AuditAllowed is setting configured, the system won't send event. <p>8: create a copy of the file as evidence, and fire "RemovableStorageFileEvent" event, this has to be used together with 'Set location for a copy of the file' setting through Intune or Group Policy. <p>**When Type Deny is selected**: <p>0: nothing<p>4: disable **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system won't show notification. <p>**When Type **AuditAllowed** is selected**: <p>0: nothing <p>1: nothing <p>2: send event<p> **When Type **AuditDenied** is selected**: <p>0: nothing <p>1: show notification <p>2: send event<p>3: show notification and send event |
 |AccessMask|Defines the access. | **Disk level access**: <p>1: Read <p>2: Write <p>4: Execute <p>**File system level access**: <p>8: File system Read <p>16: File system Write <p>32: File system Execute <p><p>You can have multiple access by performing binary OR operation, for example, the AccessMask for Read and Write and Execute will be 7; the AccessMask for Read and Write will be 3.|
 |Parameters|Condition for this Entry, for example Network condition. | Can add groups (non Devices type) or even put Parameters into Parameters. See Parameters properties table below to get details.|
 
@@ -135,12 +135,14 @@ For specific guidance, see:
 
 The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
 
-- Microsoft 365 for E5 reporting
+- Microsoft 365 E5
+- Microsoft Defender for Endpoint Plan 2
+  
 
 If `AuditAllowed` or `AuditDenied` is configured in your policy and **Send event** is selected in **Options**, an event will be sent to Advanced hunting or the Device control report for every covered access (`AccessMask` in the entry), regardless of whether it was initiated by the system or by the user who signed in.
 
 ```kusto
-//RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
+//RemovableStoragePolicyTriggered: event triggered by Disk and file system level enforcement
 DeviceEvents
 | where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
@@ -161,7 +163,7 @@ DeviceEvents
 ```
 
 ```kusto
-//information of file written to removable storage
+//information of the evidence file
 DeviceEvents
 | where ActionType contains "RemovableStorageFileEvent"
 | extend parsed=parse_json(AdditionalFields)

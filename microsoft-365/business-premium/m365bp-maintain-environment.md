@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 09/15/2022
+ms.date: 02/08/2023
 ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
@@ -27,9 +27,11 @@ description: "Maintain your systems, user accounts, and policies to help protect
 
 # Maintain your environment
 
-As you know, security incident management is important. As threats are detected, those threats must be reviewed and addressed. Your business also needs a maintenance and operations plan. The missions you completed during the setup and configuration process were all about getting your systems, users, and data secured. Now, you'll need to perform certain tasks, such as adding or removing users, resetting passwords, and resetting devices to factory settings as needed. This is what maintaining your environment is all about.
+As you know, security incident management is important. As threats are detected, those threats must be reviewed and addressed. Your business also needs a maintenance and operations plan. 
 
-See the following articles for more details: 
+The missions you completed during the setup and configuration process were all about getting your systems, users, and data secured. Now, you'll need to perform certain tasks, such as adding or removing users, resetting passwords, and resetting devices to factory settings as needed. These kinds of tasks are what maintaining your environment is all about.
+
+For more information, see the following articles: 
 
 - [Review the Microsoft 365 Business Premium security operations guide](m365bp-security-incident-quick-start.md).
 - [Add new users](m365bp-add-users.md).
