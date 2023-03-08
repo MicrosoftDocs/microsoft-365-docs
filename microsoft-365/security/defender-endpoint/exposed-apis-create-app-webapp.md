@@ -166,8 +166,8 @@ The following code was tested with NuGet Microsoft.Identity.Client 3.19.8.
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
-    const string authority = https://login.microsoftonline.com;
-    const string audience = https://api.securitycenter.microsoft.com;
+    const string authority = "https://login.microsoftonline.com";
+    const string audience = "https://api.securitycenter.microsoft.com";
 
     IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
