@@ -130,9 +130,11 @@
      
     - name: Content processing
       items: 
+        - name: Overview 
+          href: content-processing-overview.md
         - name: Move or copy a file 
           href: content-processing-create-rules.md
-     
+
     - name: Content query
       items: 
         - name: Use metadata to find content in document libraries 
