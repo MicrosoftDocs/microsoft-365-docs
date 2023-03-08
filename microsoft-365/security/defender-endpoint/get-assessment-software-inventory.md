@@ -100,7 +100,6 @@ DeviceName|string|Fully qualified domain name (FQDN) of the device.|johnlaptop.e
 DiskPaths|Array[string]|Disk evidence that the product is installed on the device.|[ "C:\\Program Files (x86)\\Microsoft\\Silverlight\\Application\\silverlight.exe" ]
 EndOfSupportDate|string|The date in which support for this software has or will end.|2020-12-30
 EndOfSupportStatus|string|End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.|Upcoming EOS
-Id|string|Unique identifier for the record.|123ABG55_573AG&mnp!
 NumberOfWeaknesses|int|Number of weaknesses on this software on this device|3
 OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See Microsoft Defender Vulnerability Management supported operating systems and platforms for details.|Windows10 and Windows 11
 RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
