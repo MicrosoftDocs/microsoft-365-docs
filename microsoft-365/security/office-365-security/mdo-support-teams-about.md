@@ -28,11 +28,14 @@ ms.date: 3/6/2023
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Teams](/microsoftteams/teams-overview)
 
 > [!NOTE]
 > This article lists new features in the latest release of Microsoft Defender for Office 365. These features are currently in preview.
 
-The use of collaboration tools, particularly Microsoft Teams, has increased over the recent years. The more customers use these tools, the more malicious attacks follow. Microsoft Defender for Office 365 already provides protection against malicious URLs in Teams through Safe Links, and now Microsoft is extending this protection with a new set of capabilities designed to disrupt the attack chain. 
+Every Microsoft Defender for Office 365 subscription comes with security capabilities that builds on the core protections offered by EOP. 
+
+With the increased use of collaboration tools like Microsoft Teams, the possibility of malicious attacks using URLs and messages has increased as well. Microsoft Defender for Office 365 already provides protection against malicious URLs in Teams through [Safe Links](safe-links-about.md), and now Microsoft is extending this protection with a new set of capabilities designed to disrupt the attack chain. 
 
 - **Reporting suspicious messages and files to admins and Microsoft**: Users will have the ability to report potential malicious messages to their admins. The admins can review these messages and report them to Microsoft. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
@@ -48,4 +51,4 @@ The use of collaboration tools, particularly Microsoft Teams, has increased over
 
 ## See also
 
-- [Microsoft Teams](https://learn.microsoft.com/microsoftteams/teams-overview)
+- [Microsoft Teams](/microsoftteams/teams-overview)
