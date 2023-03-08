@@ -69,7 +69,7 @@ invoke FileProfile(x,y)
 - **y**—limit to the number of records to enrich, 1-1000; function uses 100 if unspecified
 
 
->[!TIP]
+> [!TIP]
 > Enrichment functions will show supplemental information only when they are available. Availability of information is varied and depends on a lot of factors. Make sure to consider this when using FileProfile() in your queries or in creating custom detections. For best results, we recommend using the FileProfile() function with SHA1.
 
 ## Examples

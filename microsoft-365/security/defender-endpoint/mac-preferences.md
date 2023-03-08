@@ -43,7 +43,7 @@ This article describes the structure of the configuration profile, includes a re
 The configuration profile is a *.plist* file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
 
 > [!CAUTION]
->The layout of the configuration profile depends on the management console that you are using. The following sections contain examples of configuration profiles for JAMF and Intune.
+> The layout of the configuration profile depends on the management console that you are using. The following sections contain examples of configuration profiles for JAMF and Intune.
 
 The top level of the configuration profile includes product-wide preferences and entries for subareas of Microsoft Defender for Endpoint, which are explained in more detail in the next sections.
 
@@ -51,17 +51,12 @@ The top level of the configuration profile includes product-wide preferences and
 
 The *antivirusEngine* section of the configuration profile is used to manage the preferences of the antivirus component of Microsoft Defender for Endpoint.
 
-<br>
-
-****
-
 |Section|Value|
 |---|---|
 |**Domain**|`com.microsoft.wdav`|
 |**Key**|antivirusEngine|
 |**Data type**|Dictionary (nested preference)|
 |**Comments**|See the following sections for a description of the dictionary contents.|
-|||
 
 #### Enforcement level for antivirus engine
 
