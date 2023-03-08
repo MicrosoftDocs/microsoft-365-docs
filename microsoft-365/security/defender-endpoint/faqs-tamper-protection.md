@@ -6,7 +6,7 @@ description: Frequently asked questions on configuring tamper protection.
 keywords: malware, defender, antivirus, tamper protection
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/06/2023
+ms.date: 03/08/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
