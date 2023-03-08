@@ -94,7 +94,7 @@ If you're using Windows Server 2012 R2 using the modern unified solution, Window
 
 You can use Microsoft Intune and other methods to configure or manage tamper protection, as listed in the following table:
 
-| Method | Description |
+| Method | What you can do |
 |:---|:---|
 | The [Microsoft 365 Defender portal](https://security.microsoft.com) | Turn tamper protection on (or off), tenant wide. This method won't override settings that are managed in Microsoft Intune or Configuration Manager with tenant attach. <br/><br/>See [Manage tamper protection for your organization using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md). |
 | The [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) | Turn tamper protection on (or off), tenant wide, for some or all devices. Using this method, you can also [tamper protect antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions) that are defined for Microsoft Defender Antivirus. <br/><br/>See [Manage tamper protection for your organization using Intune](manage-tamper-protection-intune.md). |
