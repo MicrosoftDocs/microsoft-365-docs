@@ -940,7 +940,7 @@ The following table lists the user and admin activities in [Microsoft Planner](/
 | Created a plan | PlanCreated | A plan is created by a user or an app. If the create operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ObjectId indicates null, ContainerType indicates ContainerType.Invalid and ContainerId indicates null. |
 | Modified a plan | PlanModified | A plan is modified by a user or an app. |
 | Deleted a plan | PlanDeleted | A plan is deleted by a user or an app. |
-| Copied a plan | PlanCopied | A plan is copied by a user or an app. If the copy operation is a ResultStatus.Failure or ResultStatus.Failure, newPlanId indicates null, newContainerType indicates ContainerType.Invalid, and newContainerId indicates null. |
+| Copied a plan | PlanCopied | A plan is copied by a user or an app. If the copy operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, newPlanId indicates null, newContainerType indicates ContainerType.Invalid, and newContainerId indicates null. |
 | Read a task | TaskRead | A task is read by a user or an app. If the read operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, PlanId indicates null. |
 | Created a task | TaskCreated | A task is created by a user or an app. If the create operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ObjectId indicates null and PlanId indicates null. |
 | Modified a task | TaskModified | A task is modified by a user or an app. |
