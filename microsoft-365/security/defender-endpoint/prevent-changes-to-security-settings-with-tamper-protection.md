@@ -36,13 +36,13 @@ search.appverid: met150
 
 ## What is tamper protection?
 
-Tamper protection is a capability in Microsoft Defender for Endpoint that helps protect certain security settings from being disabled or changed. During some kinds of cyber attacks, bad actors try to disable security features, such as antivirus protection, on devices. Disabling security features provides bad actors with easier access to your data, the ability to install malware, and the ability to exploit your data, identity, and devices. Tamper protection helps guard against these types of activities. 
+Tamper protection is a capability in Microsoft Defender for Endpoint that helps protect certain security settings, such as virus and threat protection, from being disabled or changed. During some kinds of cyber attacks, bad actors try to disable security features on devices. Disabling security features provides bad actors with easier access to your data, the ability to install malware, and the ability to exploit your data, identity, and devices. Tamper protection helps guard against these types of activities. 
 
 Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md). Tamper protection is an important part of [built-in protection](built-in-protection.md).
 
 ## What happens when tamper protection is turned on?
 
-When tamper protection is turned on, tamper protected settings cannot be changed from their default values.
+When tamper protection is turned on, tamper-protected settings cannot be changed from their default values.
 
 - Virus and threat protection are enabled.
 - Real-time protection is turned on.
@@ -57,7 +57,7 @@ When tamper protection is turned on, tamper protected settings cannot be changed
 Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Defender for Endpoint, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team. (See [How do I configure or manage tamper protection](#how-do-i-configure-or-manage-tamper-protection)?)
 
 > [!IMPORTANT]
-> When tamper protection is turned on, changes cannot be made to tamper-protected settings, including changes made through Intune and Configuration Manager. If you're managing tamper protection through Intune, you can change tamper-protected exclusions that are defined for Microsoft Defender Antivirus (see [Tamper protection for exclusions](manage-tamper-protection-intune.md#tamper-protection-for-exclusions)).
+> When tamper protection is turned on, tamper-protected settings cannot be changed from their default values. To avoid breaking management experiences, including Intune and Configuration Manager, keep in mind that changes to tamper-protected settings might appear to succeed but are actually blocked by tamper protection. You can use Intune and Configuration Manager to exclude devices from tamper protection. If you're managing tamper protection through Intune, you can change tamper-protected exclusions that are defined for Microsoft Defender Antivirus (see [Tamper protection for exclusions](manage-tamper-protection-intune.md#tamper-protection-for-exclusions)).
 
 ## On what devices can tamper protection be enabled?
 
@@ -70,7 +70,7 @@ Tamper protection is available for devices that are running one of the following
 Tamper protection is also available for Mac. For more information, see [Protect macOS security settings with tamper protection](tamperprotection-macos.md).
 
 > [!IMPORTANT]
-> Built-in protection includes turning tamper protection on by default. To learn more about built-in protection, see:
+> [Built-in protection](built-in-protection.md) includes turning tamper protection on by default. For more information, see:
 > - [Built-in protection helps guard against ransomware](built-in-protection.md) (article)
 > - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)
 
