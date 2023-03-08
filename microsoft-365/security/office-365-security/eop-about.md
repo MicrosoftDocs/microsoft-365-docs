@@ -5,10 +5,12 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 09/18/2020
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: overview
-ms.collection: m365-security
+ms.collection: 
+  - m365-security
+  - tier2
 ms.localizationpriority: medium
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom: 
@@ -95,7 +97,7 @@ For information about requirements, important limits, and feature availability a
 |Directory Based Edge Blocking (DBEB)|[Use Directory Based Edge Blocking to reject messages sent to invalid recipients](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|
 |**Quarantine and submissions**||
 |Admin submission|[Use Admin submission to submit suspected spam, phish, URLs, and files to Microsoft](submissions-admin.md)|
-|User reported message settings|[User reported message settings](submissions-user-reported-messages-files-custom-mailbox.md)|
+|User reported message settings|[User reported settings](submissions-user-reported-messages-custom-mailbox.md)|
 |Quarantine - admins|[Manage quarantined messages and files as an admin in EOP](quarantine-admin-manage-messages-files.md) <p> [Quarantined messages FAQ](quarantine-faq.yml) <p> [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md) <p> [Anti-spam message headers in Microsoft 365](message-headers-eop-mdo.md) <p> You can analyze the message headers of quarantined messages using the [Message Header Analyzer at](https://mha.azurewebsites.net/).|
 |Quarantine - end-users|[Find and release quarantined messages as a user in EOP](quarantine-end-user.md) <p> [Use quarantine notifications to release and report quarantined messages](quarantine-quarantine-notifications.md) <p> [Quarantine policies](quarantine-policies.md)|
 |**Mail flow**||

@@ -24,6 +24,7 @@ ms.custom:
   - intro-overview
 ms.topic: conceptual
 adobe-target: true
+ms.date: 07/01/2022
 ---
 
 # Microsoft 365 Defender portal

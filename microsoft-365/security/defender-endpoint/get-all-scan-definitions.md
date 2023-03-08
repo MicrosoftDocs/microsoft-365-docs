@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/14/2022
 ---
 
 # Get scan definitions
@@ -121,7 +122,10 @@ Here is an example of the response.
         "id": "47d41a0c-xxx-46d3-bbea-93dbc0bfcaa_1bc268a79eedf14c4b90f77",
         "machineId": "eb663asadf345dfg4bc268a79eedf14c4b90f77",
         "machineName": "DESKTOP-TEST",
-        "lastSeen": "2021-12-19T20:29:04.8242449Z"
+        "lastSeen": "2021-12-19T20:29:04.8242449Z",
+        "AssignedApplicationId": "9E0FA0EB-0A51-4357-9C87-C21BFBE07571",
+        "ScannerSoftwareVersion": "7.1.1",
+        "LastCommandExecutionTimestamp": "2021-12-19T20:29:04.8242449Z",
         },
     "latestScan": {
         "status": "Fail",
@@ -149,11 +153,14 @@ Here is an example of the response.
         "communityString": "community-string"
             },
     "scannerAgent": {
-    "id": "4asdff0c-3344-46d3-bxxe-a9334rtgfcaa_eb6df89dfdf9032f61eedf14c4b90f77",
-    "machineId": "eb663a27676kjhj61bc268a79eedf14c4t78u7",
-    "machineName": "DESKTOP-Test",
-    "lastSeen": "2022-12-21T14:34:19.5698988Z"
-            },
+        "id": "4asdff0c-3344-46d3-bxxe-a9334rtgfcaa_eb6df89dfdf9032f61eedf14c4b90f77",
+        "machineId": "eb663a27676kjhj61bc268a79eedf14c4t78u7",
+        "machineName": "DESKTOP-Test",
+        "lastSeen": "2022-12-21T14:34:19.5698988Z",
+        "AssignedApplicationId": "9E0FA0EB-0A51-4357-9C87-C21BFBE07571",
+        "ScannerSoftwareVersion": "7.1.1",
+        "LastCommandExecutionTimestamp": "2022-12-21T14:34:19.5698988Z",
+                },
     "latestScan": {
     "status": "Fail",
     "failureReason": null,

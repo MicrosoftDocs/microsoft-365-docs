@@ -15,12 +15,13 @@ search.appverid:
 ms.assetid:
 ms.collection: 
   - m365-security
-  - m365initiative-m365-defender
+  - tier2
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Get started using Attack simulation training in Defender for Office 365
@@ -46,15 +47,14 @@ Watch this short video to learn more about Attack simulation training.
 
 - For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- You need to be assigned permissions in **Azure Active Directory** before you can do the procedures in this article. Specifically, you need to be a member of one of the following roles:
-  - **Global Administrator**
-  - **Security Administrator**
-  - **Attack Simulation Administrators**<sup>\*</sup>: Create and manage all aspects of attack simulation campaigns.
-  - **Attack Payload Author**<sup>\*</sup>: Create attack payloads that an admin can initiate later.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): You need membership in one of the following roles:
+    - **Global Administrator**
+    - **Security Administrator**
+    - **Attack Simulation Administrators**<sup>\*</sup>: Create and manage all aspects of attack simulation campaigns.
+    - **Attack Payload Author**<sup>\*</sup>: Create attack payloads that an admin can initiate later.
 
-  <sup>\*</sup> Adding users to this role in the Microsoft 365 Defender portal is currently unsupported.
-
-  For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md) or [About admin roles](../../admin/add-users/about-admin-roles.md).
+    <sup>\*</sup> Adding users to this role in [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md) is currently unsupported.
 
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 

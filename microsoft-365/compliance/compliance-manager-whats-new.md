@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 01/25/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,6 +26,11 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 **In this article:** Learn about recent updates in Compliance Manager.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## January 2023
+
+In preview: Compliance Manager has new improvement actions that correspond to actions taken in Microsoft Priva to bolster your organization's compliance with data privacy regulations. Learn more about [Priva](/privacy/priva/priva-overview) and get details about [automatic testing and monitoring of improvement actions](compliance-manager-setup.md#testing-source-for-automated-testing) in Compliance Manager.
+
 
 ## December 2022
 

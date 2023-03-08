@@ -20,6 +20,7 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Take action on advanced hunting query results

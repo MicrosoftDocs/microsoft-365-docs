@@ -10,8 +10,8 @@ ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: Dansimp
+ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
@@ -21,7 +21,7 @@ ms.collection:
  - m365solution-asr-rules
  - highpri
  - tier1
-ms.date: 1/18/2022
+ms.date: 02/10/2023
 search.appverid: met150
 ---
 
@@ -51,8 +51,12 @@ Through advanced hunting, it is possible to extract ASR rules information, creat
 
 ASR events shown in the advancing hunting portal are throttled to unique processes seen every hour. The time of the ASR event is the first time the event is seen within that hour.
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting3.png" alt-text="The Advanced hunting query command line in the Microsoft 365 Defender portal" lightbox="images/asr-defender365-advanced-hunting3.png":::
+```kusto
+DeviceEvents
+| where Timestamp > ago(30d)
+| where ActionType startswith "Asr"
+| summarize EventCount=counst() by ActionType
+```
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-advanced-hunting4.png" alt-text="The Advanced hunting query results in the Microsoft 365 Defender portal" lightbox="images/asr-defender365-advanced-hunting4.png":::
@@ -66,8 +70,12 @@ The above shows that 187 events were registered for AsrLsassCredentialTheft:
 
 If you want to focus on the AsrOfficeChildProcess rule and get details on the actual files and processes involved, change the filter for ActionType and replace the summarize line with a projection of the wanted fields (in this case they are DeviceName, FileName, FolderPath, etc.).
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting4b.png" alt-text="The Advanced hunting query focused example in the Microsoft 365 Defender portal" lightbox="images/asr-defender365-advanced-hunting4b.png":::
+```kusto
+DeviceEvents
+| where (Actiontype startswith "AsrOfficechild")
+| extend RuleId=extractison("$Ruleid", AdditionalFields, typeof(string))
+| project DeviceName, FileName, FolderPath, ProcessCommandLine, InitiatingProcessFileName, InitiatingProcessCommandLine
+```
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-advanced-hunting5b.png" alt-text="The Advanced hunting query focused results in the Microsoft 365 Defender portal" lightbox="images/asr-defender365-advanced-hunting5b.png":::

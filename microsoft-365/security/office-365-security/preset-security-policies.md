@@ -7,16 +7,17 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
 description: Admins can learn how to apply Standard and Strict policy settings across the protection features of Exchange Online Protection (EOP) and Microsoft Defender for Office 365
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 3/3/2023
 ---
 
 # Preset security policies in EOP and Microsoft Defender for Office 365
@@ -73,7 +74,10 @@ A profile determines the level of protection. The following profiles are availab
 
 - **Built-in protection** (Defender for Office 365 only): A profile that enables Safe Links and Safe Attachments protection only. This profile effectively provides default policies for Safe Links and Safe Attachments, which never had default policies.
 
-  For **Built-in protection**, the preset security policy is on by default for all Defender for Office 365 customers. Although we don't recommend it, you can also configure exceptions based on **Users**, **Groups**, and **Domains** so the protection isn't applied to specific users.
+  For **Built-in protection**, the preset security policy is on by default for all Defender for Office 365 customers. You can also configure exceptions based on **Users**, **Groups**, and **Domains** so the protection isn't applied to specific users.
+
+  > [!IMPORTANT]
+  > Unless you configure exceptions to **Built-in protection**, all recipients in the organization will receive Safe Links and Safe Attachments protection.
 
 Until you assign the policies to users, the **Standard** and **Strict** preset security policies are assigned to no one. In contrast, the **Built-in protection** preset security policy is assigned to all recipients by default, but you can configure exceptions.
 
@@ -102,7 +106,7 @@ You can apply EOP protections to different users than Defender for Office 365 pr
 
 ### Policy settings in preset security policies
 
-You can't modify the policy settings in the protection profiles. The **Standard**, **Strict**, and **Built-in protection** policy setting values are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+You can't modify the policy settings in the protection profiles. The **Standard**, **Strict**, and **Built-in protection** policy setting values, including the default [quarantine policies](quarantine-policies.md) that are used, are listed in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
 > [!NOTE]
 > In Defender for Office 365 protections, you need to identify the senders for [user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) and the internal or external domains for [domain impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
@@ -139,13 +143,12 @@ You might want to apply the **Standard** or **Strict** preset security policies 
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To configure preset security policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - For read-only access to preset security policies, you need to be a member of the **Global Reader** role group.
-
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Configure preset security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
+    - _Read-only access to preset security policies_: Membership in the **Global Reader** role group.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ### Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users
 

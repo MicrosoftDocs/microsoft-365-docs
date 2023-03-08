@@ -7,8 +7,6 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date:
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -16,10 +14,12 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
 description: Admins can learn how to view, create, modify, and delete Safe Links policies and global Safe Links settings in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/05/2022
 ---
 
 # Set up Safe Links policies in Microsoft Defender for Office 365
@@ -66,16 +66,14 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can do the procedures in this article:
-  - To create, modify, and delete Safe Links policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Microsoft 365 Defender portal **and** a member of the **Organization Management** role group in Exchange Online.
-  - For read-only access to Safe Links policies, you need to be a member of the **Global Reader** or **Security Reader** role groups.
-
-  For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  > [!NOTE]
-  >
-  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  . - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md) and [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Create, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups in Email & collaboration RBAC <u>and</u> membership in the **Organization Management** role group in Exchange Online RBAC.
+    - _Read-only access to policies_: Membership in one of the following role groups:
+      - **Global Reader** or **Security Reader** in Email & collaboration RBAC.
+      - **View-Only Organization Management** in Exchange Online RBAC.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For our recommended settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
@@ -127,49 +125,46 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
 5. On the **URL & click protection settings** page that appears, configure the following settings:
 
-   - **Action on potentially malicious URLs within Emails (Email & Time of Click)** section:
-     - **On: Safe Links checks a list of known, malicious links when users click links in email**: Select this option to turn on Safe Links protection for links in email messages. If you select this option, the following settings are available:
-       - **Apply Safe Links to email messages sent within the organization (Email – Intraorg & Time of Click)**: Select this option to apply the Safe Links policy to messages between internal senders and internal recipients. Turning this on will enable link wrapping for all intraorg messages.
-       - **Apply real-time URL scanning for suspicious links and links that point to files (Email)**: Select this option to turn on real-time scanning of links in email messages from external senders. If you select this option, the following setting is available:
-         - **Wait for URL scanning to complete before delivering the message (Email)**: Select this option to wait for real-time URL scanning to complete before delivering the message from external senders. The recommended setting is **On**.
-       - **Do not rewrite URLs, do checks via SafeLinks API only (Time of Click)**: Select this option to prevent URL wrapping and skip reputation check during mail flow. Safe Links is called exclusively via APIs at the time of URL click by Outlook clients that support it.
+   - **Email** section:
+     - **On: Safe Links checks a list of known, malicious links when users click links in email. URLs are rewritten by default**: Select this option to turn on Safe Links protection for links in email messages (URL rewriting and time of click protection). If you select this option, the following settings are available:
+       - **Apply Safe Links to email messages sent within the organization**: Select this option to apply the Safe Links policy to messages between internal senders and internal recipients. Turning this on will enable link wrapping for all intra-organization messages.
+       - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this option to turn on real-time scanning of links in email messages from external senders. If you select this option, the following setting is available:
+         - **Wait for URL scanning to complete before delivering the message**: Select this option to wait for real-time URL scanning to complete before delivering the message from external senders. The recommended setting is **On**.
+       - **Do not rewrite URLs, do checks via SafeLinks API only**: Select this option to prevent URL wrapping and skip reputation check during mail flow. Safe Links is called exclusively via APIs at the time of URL click by Outlook clients that support it.
 
-       - **Do not rewrite the following URLs in email** section: Click **Manage (nn) URLs** to allow access to specific URLs that would otherwise be blocked by Safe Links.
+     - **Do not rewrite the following URLs in email** section: Click **Manage (nn) URLs** to allow access to specific URLs that would otherwise be blocked by Safe Links.
 
-         > [!NOTE]
-         > Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [URL allow entries in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) to override the Safe Links URL verdict.
+       > [!NOTE]
+       > Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [URL allow entries in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-on-the-submissions-page) to override the Safe Links URL verdict.
 
-     1. In the **Manage URLs to not rewrite** flyout that appears, click ![Add URLs icon.](../../media/m365-cc-sc-create-icon.png) **Add URLs**.
-     2. In the **Add URLs** flyout that appears, type the URL or value that you want, select the entry that appears below the box, and then click **Save**. Repeat this step as many times as necessary.
+       1. In the **Manage URLs to not rewrite** flyout that appears, click ![Add URLs icon.](../../media/m365-cc-sc-create-icon.png) **Add URLs**.
+       2. In the **Add URLs** flyout that appears, type the URL or value that you want, select the entry that appears below the box, and then click **Save**. Repeat this step as many times as necessary.
 
-        For entry syntax, see [Entry syntax for the "Do not rewrite the following URLs" list](safe-links-about.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
+          For entry syntax, see [Entry syntax for the "Do not rewrite the following URLs" list](safe-links-about.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
 
-        To remove an entry, click ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the entry.
+          To remove an entry, click ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the entry.
 
-        When you're finished, click **Save**.
+          When you're finished, click **Save**.
 
-     3. Back on the **Manage URLs to not rewrite** flyout, click **Done** or do maintenance on the list of entries:
+       3. Back on the **Manage URLs to not rewrite** flyout, click **Done** or do maintenance on the list of entries:
 
-        To remove entries from the list, can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the entry.
+          To remove entries from the list, can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the entry.
 
-        To select a single entry, click on the value in the **URLs** column.
+          To select a single entry, click on the value in the **URLs** column.
 
-        To select multiple entries one at a time, click the blank area to the left of the value.
+          To select multiple entries one at a time, click the blank area to the left of the value.
 
-        To select all entries at one, click the blank area to the left of the **URLs** column header.
+          To select all entries at one, click the blank area to the left of the **URLs** column header.
 
-        With one or more entries selected, click the ![Add URLs icon.](../../media/m365-cc-sc-create-icon.png) or ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) icons that appear.
+          With one or more entries selected, click the ![Add URLs icon.](../../media/m365-cc-sc-create-icon.png) or ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) icons that appear.
 
-        When you're finished, click **Done**.
+          When you're finished, click **Done**.
 
-   - **Actions for potentially malicious URLs in Microsoft Teams (Time of Click)** section:
-     - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams**: Select this option to enable Safe Links protection for links in Teams. Note that this setting might take up to 24 hours to take effect.
+   - **Teams** section:
+     - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams. URLs are not rewritten.**: Select this option to enable Safe Links protection for links in Teams. Note that this setting might take up to 24 hours to take effect. This setting affects time of click protection.
 
-     > [!NOTE]
-     > Currently, Safe Links protection for Microsoft Teams is not available in Microsoft 365 GCC High or Microsoft 365 DoD.
-
-   - **Actions for potentially malicious URLs in Microsoft Office apps (Time of Click)** section:
-     - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps**: Select this option to enable Safe Links protection for links in files in supported Office desktop, mobile, and web apps.
+   - **Office 365 apps** section:
+     - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps. URLs are not rewritten.**: Select this option to enable Safe Links protection for links in files in supported Office desktop, mobile, and web apps. This setting affects time of click protection.
 
    - **Click protection settings** section:
      - **Track user clicks**: Leave this option selected to enable the tracking user clicks on URLs. If you select this option, the following options are available:

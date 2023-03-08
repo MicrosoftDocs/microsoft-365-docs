@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
+ms.date: 04/08/2021
 ---
 
 # Manage the sources for Microsoft Defender Antivirus protection updates
@@ -91,7 +92,7 @@ Each source has typical scenarios that depend on how your network is configured,
 |Windows Server Update Service|You are using Windows Server Update Service to manage updates for your network.|
 |Microsoft Update|You want your endpoints to connect directly to Microsoft Update. This can be useful for endpoints that irregularly connect to your enterprise network, or if you do not use Windows Server Update Service to manage your updates.|
 |File share|You have non-Internet-connected devices (such as VMs). You can use your Internet-connected VM host to download the updates to a network share, from which the VMs can obtain the updates. See the [VDI deployment guide](deployment-vdi-microsoft-defender-antivirus.md) for how file shares can be used in virtual desktop infrastructure (VDI) environments.|
-|Microsoft Endpoint Manager|You are using Microsoft Endpoint Manager to update your endpoints.|
+|Microsoft Configuration Manager|You are using Microsoft Configuration Manager to update your endpoints.|
 |Security intelligence updates and platform updates for Microsoft Defender Antivirus and other Microsoft anti-malware (formerly referred to as MMPC)|[Make sure your devices are updated to support SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Microsoft Defender Antivirus Security intelligence and platform updates are delivered through Windows Update, and starting Monday October 21, 2019 security intelligence updates and platform updates will be SHA-2 signed exclusively. <br/>Download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-microsoft-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source. It will only be used if updates cannot be downloaded from Windows Server Update Service or Microsoft Update for [a specified number of days](/microsoft-365/security/defender-endpoint/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
 You can manage the order in which update sources are used with Group Policy, Microsoft Endpoint Configuration Manager, PowerShell cmdlets, and WMI.
@@ -131,7 +132,7 @@ The procedures in this article first describe how to set the order, and then how
 
 ## Use Configuration Manager to manage the update location
 
-See [Configure Security intelligence Updates for Endpoint Protection](/configmgr/protect/deploy-use/endpoint-definition-updates) for details on configuring Microsoft Endpoint Manager (current branch).
+See [Configure Security intelligence Updates for Endpoint Protection](/configmgr/protect/deploy-use/endpoint-definition-updates) for details on configuring Microsoft Configuration Manager (current branch).
 
 ## Use PowerShell cmdlets to manage the update location
 

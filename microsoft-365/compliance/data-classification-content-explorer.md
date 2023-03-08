@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 10/02/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -50,7 +50,7 @@ In order to get access to the content explorer tab, an account must be assigned 
 > [!IMPORTANT]
 > Only Global admins can manage or assign permissions to other users in the compliance portal. For more information, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 > 
-### Required permissions to access items in content explorer
+**Required permissions to access items in content explorer**
 
 Access to content explorer is highly restricted because it lets you read the contents of scanned files.
 
@@ -71,7 +71,7 @@ A Global admin, can assign the necessary Content Explorer List Viewer, and Conte
 
 #### Roles and Role Groups
 
-There are roles and role groups that you useto fine tune your access controls.
+There are roles and role groups that you use to fine tune your access controls.
 
 Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 

@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Troubleshooting issues on Microsoft Defender for Endpoint on Android
@@ -103,7 +104,6 @@ Enable the required permission on Xiaomi devices.
 
 ## Unable to allow permission for 'Permanent protection' during onboarding on some OEM devices
 
-
 **Applies to:** Specific OEM devices only.
 
 - **Xiaomi**
@@ -116,9 +116,8 @@ Xiaomi changed the battery optimization permissions in Android 11. Defender for 
 
 **Solution:**
 
->[!IMPORTANT]
->This issue has been resolved. Please update to the latest app version to complete the onboarding process. If the issue persists, please send an **[in-app feedback](/microsoft-365/security/defender-endpoint/android-support-signin#send-in-app-feedback)**.
-
+> [!IMPORTANT]
+> This issue has been resolved. Please update to the latest app version to complete the onboarding process. If the issue persists, please send an **[in-app feedback](/microsoft-365/security/defender-endpoint/android-support-signin#send-in-app-feedback)**.
 
 ## Send in-app feedback
 
@@ -145,4 +144,3 @@ If a user faces an issue which is not already addressed in the above sections or
     :::image type="content" source="images/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="images/finalsubmit5.png":::
 
 6. Click on "Submit" to successfully send the feedback.
-
