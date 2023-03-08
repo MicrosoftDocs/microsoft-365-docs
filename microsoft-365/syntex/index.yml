@@ -116,7 +116,7 @@ landingContent:
           - text: Content query
             url: metadata-search.md
           - text: Content processing
-            url: content-processing-create-rules.md
+            url: content-processing-overview.md
 
     # Card 7
   - title: Adoption

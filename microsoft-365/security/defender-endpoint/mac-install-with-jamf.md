@@ -34,6 +34,7 @@ ms.date: 12/18/2020
 
 Learn how to deploy Microsoft Defender for Endpoint on macOS with Jamf Pro.
 
+[!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../../includes/support.md)]
 
 This is a multi-step process. You'll need to complete all of the following steps:
 

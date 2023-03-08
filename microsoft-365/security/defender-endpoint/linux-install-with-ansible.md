@@ -39,6 +39,9 @@ This article describes how to deploy Defender for Endpoint on Linux using Ansibl
 - [Deployment](#deployment)
 - [References](#references)
 
+
+[!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../../includes/support.md)]
+
 ## Prerequisites and system requirements
 
 Before you get started, see [the main Defender for Endpoint on Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
