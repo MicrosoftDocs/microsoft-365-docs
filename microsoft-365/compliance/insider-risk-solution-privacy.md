@@ -45,8 +45,8 @@ Whether your organization chooses a single role group or multiple role groups to
 
 Learn more about role group options for each solution:   
 
-- [Get started with communication compliance - Microsoft Purview (compliance) | Microsoft Learn](communication-compliance-configure#step-1-required-enable-permissions-for-communication-compliance) 
-- [Get started with insider risk management - Microsoft Purview (compliance) | Microsoft Learn](insider-risk-management-configure#step-1-required-enable-permissions-for-insider-risk-management) 
+- [Get started with communication compliance - Microsoft Purview (compliance) | Microsoft Learn](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) 
+- [Get started with insider risk management - Microsoft Purview (compliance) | Microsoft Learn](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) 
 
 ## Admin explicit opt-in 
 
@@ -64,8 +64,8 @@ Audit logs are enabled for all Microsoft 365 organizations by default to ensure 
 
 Learn more about audit logs capabilities for each solution: 
 
-- [Use communication compliance reports and audits - Microsoft Purview (compliance) | Microsoft Learn](communication-compliance-reports-audits#audit) 
-- [Review activities with the insider risk management audit log - Microsoft Purview (compliance) | Microsoft Learn](insider-risk-management-audit-log) 
+- [Use communication compliance reports and audits - Microsoft Purview (compliance) | Microsoft Learn](communication-compliance-reports-audits.md#audit) 
+- [Review activities with the insider risk management audit log - Microsoft Purview (compliance) | Microsoft Learn](insider-risk-management-audit-log.md) 
 
 ## Protect user trust and build a holistic insider risk program 
 
