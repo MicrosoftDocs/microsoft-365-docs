@@ -48,7 +48,11 @@ Using Configuration Manager with tenant attach, you can turn tamper protection o
    - In the **Platform** list, select **Windows 10, Windows 11, and Windows Server (ConfigMgr)**.
    - In the **Profile** list, select **Windows Security experience (preview)**.
 
-3. Deploy the policy to your device collection.
+3. On the **Configuration settings** step, under **Windows Security**, set **Enable tamper protection to prevent Microsoft Defender from being disabled** to **Enabled**.
+
+4. Finish selecting options and settings for your policy.
+
+5. Deploy the policy to your device collection.
 
 ## See also
 
