@@ -6,7 +6,7 @@ ms.author: cabailey
 author: cabailey
 ms.reviewer: alejandros
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 03/08/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
