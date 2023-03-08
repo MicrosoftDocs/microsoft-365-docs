@@ -30,6 +30,8 @@ Compliance Manager has an integrated set of third-party data connectors so that 
 - Setting up connectors for your assessments are covered in step XYZ of the [guided process for creating assessments](compliance-manager-assessments.md#create-an-assessment-using-a-guided-process), below.
 - Get more general information about [third-party data connectors](archiving-third-party-data.md).
 
+TO ADD - where to find your connectors in CM. Go to **Data connectors** in upper right corner of screen. Once you're here, what od you do - add or activate connectors?
+
 ## Available connectors
 The Compliance Manager integrated connectors currently available in preview are are:
 
@@ -46,7 +48,11 @@ The Compliance Manager integrated connectors currently available in preview are 
 - Webex
 - Zoom
 
-## Connector setup
+## How connectors work
+
+Get into elliot's service instance and programmatic mapping docs - define service instance. Actually, not sure that we need to go into depth here based on his 
+
+## Set up data connectors
 
 Before creating an assessment, you'll need to set up a connector for the service you're assessing. Follow the steps below to set up Compliance Manager connectors:
 
@@ -54,6 +60,12 @@ Before creating an assessment, you'll need to set up a connector for the service
 1. You'll arrive at the Compliance Manager page within the **Data connectors** section of the Microsoft Purview compliance portal. This page lists the available connectors. Select the checkbox next to the name of the connector you want to add.
 1. 
 
-## How connectors work
+? - I"m seeing the phrase "activate connector" and also seeing a command (button with a plus sign) to do this. What does it mean to "activate" a connector? Does this mean just adding the connector to your CM so that you see it in your list when yo ugo to choose from them in 
+
+## Using connectors when creating assessments
 
 Get into elliot's service instance doc - define service instance.
+
+When you get to the "Select servies" page in the assessment creation wizard, choose **Select services**....
+
+? for Nisha - When you select **Add new service**, what happens? Is this something you can add directly here, or does it take you into "data connectors" in CM?

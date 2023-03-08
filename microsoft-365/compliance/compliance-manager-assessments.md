@@ -52,7 +52,7 @@ Listed below are details about steps and information that will help you prepare 
 
 - Plan a [grouping strategy](#groups-for-assessments) for your assesssments.
 - Learn how [assessment templates](compliance-manager-templates.md) work. Templates contain the controls and action recommendations for assessments.
-- Set up [connectors (preview)](#set-up-connectors-preview) if you're assessing services from other companies.
+- Set up [data connectors (preview)](#set-up-data-connectors-preview) if you're assessing services from other companies.
 
 ## Groups for assessments
 
@@ -82,7 +82,7 @@ You create a group during the process of building a new assessment. Here are imp
 - Deleting an assessment breaks the relationship between that assessment and the group.
 - Groups can't be deleted.
 
-## Set up connectors (preview)
+## Set up data connectors (preview)
 
 Compliance Manager has an integrated set of third-party data connectors so that you can build assessments that cover services other than Microsoft, such as SalesForce and Dropbox. You can select the connectors you need within Compliance Manager. Then when you build your assessment, you'll select from among the connectors you've already set up.
 
