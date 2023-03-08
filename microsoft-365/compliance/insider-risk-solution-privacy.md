@@ -65,7 +65,7 @@ Audit logs are enabled for all Microsoft 365 organizations by default to ensure 
 Learn more about audit logs capabilities for each solution: 
 
 - [Use communication compliance reports and audits](communication-compliance-reports-audits.md#audit) 
-- [Review activities with the insider risk management audit log - Microsoft Purview (compliance) | Microsoft Learn](insider-risk-management-audit-log.md) 
+- [Review activities with the insider risk management audit log](insider-risk-management-audit-log.md) 
 
 ## Protect user trust and build a holistic insider risk program 
 
