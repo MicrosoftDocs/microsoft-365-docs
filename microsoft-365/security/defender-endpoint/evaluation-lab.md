@@ -152,30 +152,25 @@ Automated investigation settings will be dependent on tenant settings. It will b
 5. See the status of test devices, the risk and exposure levels, and the status of simulator installations by selecting the **Devices** tab.
 
    :::image type="content" source="images/machines-tab.png" alt-text="The devices tab" lightbox="images/machines-tab.png":::
-    
 
    > [!TIP]
    > In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
 
-
-## Add a domain controller 
+## Add a domain controller
 
 Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.
 
-
->[!NOTE]
->Domain support is only available in the Microsoft 365 Defender portal (security.microsoft.com).
+> [!NOTE]
+> Domain support is only available in the Microsoft 365 Defender portal (security.microsoft.com).
 
 1. From the dashboard, select **Add device**.
 
-2. Select **Windows Server 2019**, then select **Set as domain controller**. 
+2. Select **Windows Server 2019**, then select **Set as domain controller**.
 
-3. When your domain controller has been provisioned, you'll be able to create domain-joined devices by clicking **Add device**. Then select Windows 10 / Windows 11, and select **Join to domain**. 
+3. When your domain controller has been provisioned, you'll be able to create domain-joined devices by clicking **Add device**. Then select Windows 10 / Windows 11, and select **Join to domain**.
 
->[!NOTE]
->Only one domain controller can be live at a time. The domain controller device will remain live as long as there is a live device connected to it.
-
-
+> [!NOTE]
+> Only one domain controller can be live at a time. The domain controller device will remain live as long as there is a live device connected to it.
 
 ## Request for more devices
 
@@ -219,11 +214,9 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
     :::image type="content" source="images/test-machine-table.png" alt-text="The Connect button for the test devices" lightbox="images/test-machine-table.png":::
 
-
    :::image type="content" source="images/remote-connection.png" alt-text="The remote desktop connection screen" lightbox="images/remote-connection.png":::
 
-    For **Linux devices**: you'll need to use a local SSH client and the provided command. 
-
+    For **Linux devices**: you'll need to use a local SSH client and the provided command.
 
     > [!NOTE]
     > If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
@@ -232,11 +225,11 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
     >
     > The device will change it's state to "Executing password reset", then you'll be presented with your new password in a few minutes.
 
-3. Enter the password that was displayed during the device creation step.
+2. Enter the password that was displayed during the device creation step.
 
    :::image type="content" source="images/enter-password.png" alt-text="The screen on which you enter credentials" lightbox="images/enter-password.png":::
 
-4. Run Do-it-yourself attack simulations on the device.
+3. Run Do-it-yourself attack simulations on the device.
 
 ### Threat simulator scenarios
 
