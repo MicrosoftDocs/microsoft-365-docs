@@ -4,7 +4,7 @@ ms.author: alexfaulkner
 author: alexfaulkner
 manager: alexfaulkner
 ms.reviewer: 
-ms.date: 11/04/2021
+ms.date: 03/08/2023
 audience: admin
 ms.topic: article
 ms.custom: 
@@ -77,26 +77,26 @@ Data controls planned for future releases:
 - Analytics
 - More eDiscovery support
 
-### Transferring whiteboard when a user leaves the company
+### Transfer whiteboard when a user leaves the company
 
 To preserve a former user's OneDrive files, including .whiteboard files, first give yourself access to their OneDrive, and then move the files you want to keep. 
 
-- In the admin center, go to the **Users** > [Active users](https://go.microsoft.com/fwlink/p/?linkid=834822) page. 
-- Select a user. 
-- On the user properties page, select **OneDrive**. Under Get access to files, select **Create link to files**. 
-- Select the link to open the file location.  
-- Select the files or folders that you want to move, and then select **Move to**. 
+1. In the admin center, go to the **Users** > [Active users](https://go.microsoft.com/fwlink/p/?linkid=834822) page. 
+2. Select a user. 
+3. On the user properties page, select **OneDrive**. Under **Get access to files**, select **Create link to files**. 
+4. Select the link to open the file location.  
+5. Select the files or folders that you want to move, and then select **Move to**. 
 
-Learn more about preserving former user’s content: [Step 5 - Give another employee access to OneDrive and Outlook data - Microsoft 365 admin | Microsoft Learn](/admin/add-users/remove-former-employee-step-5)
+Learn more about preserving a former user’s content: [Step 5 - Give another employee access to OneDrive and Outlook data - Microsoft 365 admin | Microsoft Learn](/admin/add-users/remove-former-employee-step-5)
 
-### Managing moved whiteboards
+### Manage moved whiteboards
 
-Once the .whiteboard file appears in the OneDrive for Business of the new owner, they can open, edit, rename or delete the files. 
+Once the .whiteboard file appears in the OneDrive for Business of the new owner, they can open, edit, rename, or delete the files. 
 
-- Open office.com and in the app launcher, select OneDrive. 
-- In the left-hand navigation pane, select My Files. 
-- Open the folder called Whiteboards. 
-- In the list of files, select the moved file and click the ... button to get rename, delete and other options. 
+1. Open office.com and in the app launcher, select **OneDrive**. 
+2. In the left-hand navigation pane, select **My Files**. 
+3. Open the folder named **Whiteboards**. 
+4. In the list of files, select the moved file and select the **...** button to get rename, delete, and other options. 
 
 ## See also
 
