@@ -34,7 +34,7 @@ ms.date: 02/16/2021
 
 The `DeviceFileEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about file creation, modification, and other file system events. Use this reference to construct queries that return information from this table.
 
->[!TIP]
+> [!TIP]
 > For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in Microsoft 365 Defender.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
@@ -95,7 +95,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 | `AppGuardContainerId` | `string` | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | `AdditionalFields` | `string` | Additional information about the entity or event |
->[!NOTE]
+> [!NOTE]
 > File hash information will always be shown when it is available. However, there are several possible reasons why a SHA1, SHA256, or MD5 cannot be calculated. For instance, the file might be located in remote storage, locked by another process, compressed, or marked as virtual. In these scenarios, the file hash information appears empty.
 
 ## Related topics
