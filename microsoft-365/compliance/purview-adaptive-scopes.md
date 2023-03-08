@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/27/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -57,9 +57,10 @@ When you choose to use adaptive scopes, you're prompted to select what type of a
 
 | Adaptive scope type | Attributes or properties supported include |
 |:--------------------|:-------------------------------------------|
-|**Users** - applies to:  <br/> - Exchange email <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages (<br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
-|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages (standard and shared) <br/> - Yammer community messages <br> |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
+|**Users** - applies to:  <br/> - Exchange mailboxes <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
+|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Group mailboxes & sites <br/> - Teams channel messages (standard and shared) <br/> - Yammer community messages <br> |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
+
 
 > [!NOTE]
 > For communications compliance policies, SharePoint sites and OneDrive accounts are not suported. Also, excluded users and Microsoft 365 groups are supported.

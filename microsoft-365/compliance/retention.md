@@ -109,20 +109,17 @@ Unlike retention policies, retention settings from retention labels travel with 
 
 Retention policies can be applied to the following locations:
 
-- Exchange email
-- SharePoint site
+- Exchange mailboxes
+- SharePoint classic and communication sites
 - OneDrive accounts
-- Microsoft 365 Groups
+- Microsoft 365 Group mailboxes and sites
 - Skype for Business
 - Exchange public folders
-- Teams channel messages
+- Teams channel messages (standard channels and [shared channels](/MicrosoftTeams/shared-channels))
 - Teams chats
 - Teams private channel messages
 - Yammer community messages
 - Yammer user messages
-
-> [!NOTE]
-> Teams channel messages now include [shared channels](/MicrosoftTeams/shared-channels) (currently in preview) as well as standard channels.
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
 
@@ -429,7 +426,7 @@ Explanation for the four different principles:
 
     2. When you have retention policies only: If a retention policy for a location uses an adaptive scope or a static scope that includes specific instances (such as specific users for Exchange email) that retention policy takes precedence over a static scope that is configured for all instances for the same location.
 
-        A static scope that is configured for all instances for a location is sometimes referred to as an "org-wide policy". For example, **Exchange email** and the default setting of **All recipients**. Or, **SharePoint sites** and the default setting of **All sites**. When retention policies aren't org-wide but have been configured with an adaptive scope or a static scope that includes specific instances, they have equal precedence at this level.
+        A static scope that is configured for all instances for a location is sometimes referred to as an "org-wide policy". For example, **Exchange mailboxes** and the default setting of **All mailboxes**. Or, **SharePoint classic and communication sites** and the default setting of **All sites**. When retention policies aren't org-wide but have been configured with an adaptive scope or a static scope that includes specific instances, they have equal precedence at this level.
 
         **Example 1 for this third principle (policies)**: An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
 
@@ -508,7 +505,7 @@ Additional information for specific locations:
 
   - If the retention policy is implicitly applied to a mailbox and the configured retention action is to retain, the retention policy continues to apply and an inactive mailbox never becomes eligible for automatic deletion. When the retain action no longer applies because the retention period has expired, the Exchange admin can now [manually delete the inactive mailbox](delete-an-inactive-mailbox.md)
 
-    An implicit retention policy requires a static policy scope with the **All recipients** (for Exchange email) or **All groups** (for Microsoft 365 Groups) configuration.
+    An implicit retention policy requires a static policy scope with the **All mailboxes** (for Exchange email) or **All groups** (for Microsoft 365 Groups) configuration.
 
     For more information about inactive mailboxes that have retention policies applied, see [Inactive mailboxes and Microsoft 365 retention](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
 
