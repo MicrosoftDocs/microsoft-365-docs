@@ -7,7 +7,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 12/05/2022
+ms.date: 03/07/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -160,7 +160,7 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 
 (<a id="fn4">4</a>) In general, when Microsoft Defender Antivirus is in passive mode, real-time protection doesn't provide any blocking or enforcement, even though it's enabled and in passive mode.
 
-(<a id="fn5">5</a>) When Microsoft Defender Antivirus is in passive mode, scans aren't scheduled.
+(<a id="fn5">5</a>) When Microsoft Defender Antivirus is in passive mode, scans aren't scheduled. Note that scan tasks that are enabled in Windows Task Scheduler will continue to run according to their schedule. If you have such scheduled tasks, you can remove these if preferred.
 
 (<a id="fn6">6</a>) When Microsoft Defender Antivirus is in passive mode, it doesn't remediate threats. However, threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md). In this case, you might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode.
 
@@ -245,7 +245,7 @@ The following sections describe what to expect when Microsoft Defender Antivirus
 
 ### Active mode
 
-In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. Settings that are configured by using Configuration Manager, Group Policy, Microsoft Intune, or other management products will apply. Files are scanned, threats are remediated, and detection information is reported in your configuration tool (such as in the Microsoft Endpoint Manager admin center or the Microsoft Defender Antivirus app on the endpoint).  
+In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. Settings that are configured by using Configuration Manager, Group Policy, Microsoft Intune, or other management products will apply. Files are scanned, threats are remediated, and detection information is reported in your configuration tool (such as in the Microsoft Intune admin center or the Microsoft Defender Antivirus app on the endpoint).  
 
 ### Passive mode or EDR Block mode
 

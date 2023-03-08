@@ -22,6 +22,7 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
+ms.date: 12/05/2022
 ---
 
 # Report and troubleshoot Microsoft Defender for Endpoint ASR Rules

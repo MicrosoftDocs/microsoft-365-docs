@@ -7,12 +7,13 @@ audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 description: Admins can learn how to create automated simulations that contain specific techniques and payloads that launch when the specified conditions are met in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Simulation automations for Attack simulation training
@@ -21,6 +22,8 @@ search.appverid: met150
 
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
+
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, simulation automations allow you to run multiple benign cyberattack simulations in your organization. Simulation automations can contain multiple payloads and start on an automated schedule. Creating a simulation automation is very similar to [creating an individual simulation](attack-simulation-training-simulations.md), except you also select the payloads and the automation schedule.
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
@@ -570,7 +573,7 @@ This section contains some of the most common questions about Simulation automat
 
 ### Why is the Status value under Automation showing Completed, but the Status value under Simulation showing In progress?
 
-**Completed** on the **Simulation automation** page means the job of simulation automation is complete, and no more simulations will be created by it. Simulation is a separate entity that will complete after 30 days of simulation launch time. 
+**Completed** on the **Simulation automation** page means the job of simulation automation is complete, and no more simulations will be created by it. Simulation is a separate entity that will complete after 30 days of simulation launch time.
 
 ### Why is the simulation end date 30 days after creation, even though I selected an automation end date of one week?
 
@@ -579,7 +582,7 @@ A one week end date for the simulation automation means no new simulations will 
 ### If we have multiple payload techniques (for example, Credential harvest, Link to Malware, and Drive by URL) targeting 300 users, how are the techniques sent to users? Do all payload techniques go to all users, or is the selection random?
 
 If you don't select the **Target All Selected Users In Every Run** option, all targeted users will be distributed over the maximum number of simulations that are created by the simulation automation.
-  
+
 If you select **Target All Selected Users In Every Run**, all targeted users will be part of every simulation that's created by the simulation automation.
 
 ### How does the Randomize option on the Simulation schedule page work?

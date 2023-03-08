@@ -4,19 +4,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer: 
-ms.date: 
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: 
 ms.collection: 
   - m365-security
+  - tier1
 description: Users can learn how to view and act on quarantined messages that were sent to shared mailboxes that they have permissions to.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 3/3/2023
 ---
 
 # View and release quarantined messages from shared mailboxes
@@ -45,7 +45,7 @@ Now, automapping is no longer required for users to manage quarantined messages 
 
 ## Things to keep in mind
 
-- _Quarantine policies_ define what users are allowed to do or not do to quarantined messages based on why the message was quarantined (for supported features). Default quarantine policies enforce the historical capabilities that allow recipients to view and act on messages. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).
+- _Quarantine policies_ define what users are allowed to do or not do to quarantined messages based on why the message was quarantined for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Default quarantine policies enforce the historical capabilities for the security feature that quarantined the message as described in the table [here](quarantine-end-user.md). Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).
 
 - The first user to act on the quarantined message decides the fate of the message for everyone who uses the shared mailbox. For example, if a shared mailbox is accessed by 10 users, and a user decides to delete the quarantine message, the message is deleted for all 10 users. Likewise, if a user decides to release the message, it's released to the shared mailbox and is accessible by all other users of the shared mailbox.
 

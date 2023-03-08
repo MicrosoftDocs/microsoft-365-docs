@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 05/10/2022
 ---
 
 # Protect macOS security settings with tamper protection
