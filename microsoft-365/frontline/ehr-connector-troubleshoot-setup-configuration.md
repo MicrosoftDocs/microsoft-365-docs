@@ -32,7 +32,7 @@ ms.date: 01/11/2023
 
 # Troubleshoot Microsoft Teams EHR connector setup and configuration
 
-This article provides guidance for how to troubleshoot common setup and configuration issues for the Microsoft Teams Electronic Health Record (EHR) connector. Use it to help resolve blockers that you may experience when you set up and configure the EHR connector to integrate with your [Oracle Health EHR](ehr-admin-cerner.md) or [Epic EHR](ehr-admin-epic.md) system.
+This article provides guidance for how to troubleshoot common setup and configuration issues for the Microsoft Teams Electronic Health Record (EHR) connector. Use it to help resolve blockers that you may experience when you set up and configure the EHR connector to integrate with your [Oracle Health EHR](ehr-admin-oracle-health.md) or [Epic EHR](ehr-admin-epic.md) system.
 
 ## FHIR URL isn't working
 
@@ -110,7 +110,7 @@ After the web browser join setting is turned on, patients can join virtual appoi
 
 ### Patients can send chat messages to providers in Teams after the virtual appointment ends from within the appointment. How can we block this?
 
-This scenario can happen because of several reasons. 
+This scenario can happen because of several reasons.
 
 #### The provider leaves the appointment but didn't end it
 
@@ -150,7 +150,7 @@ To learn more, see the following Citrix documentation:
 
 ## Related articles
 
-- [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-cerner.md)
+- [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md)
 - [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
 - [EHR connector Virtual Appointments report](ehr-connector-report.md)
 - [Get started with Microsoft 365 for healthcare organizations](teams-in-hc.md)
