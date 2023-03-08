@@ -163,7 +163,7 @@ If you click **Filters**, you can modify the report and the details table by sel
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
-The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 7 days:
+The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 30 days:
 
 - **Click time**
 - **User**
