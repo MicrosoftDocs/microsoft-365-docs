@@ -33,8 +33,8 @@ search.appverid: met150
 
 [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). With Intune, you can:
 
-- Turn tamper protection on (or off) for some or all devices. 
-- Tamper protect antivirus exclusions that are defined for Microsoft Defender Antivirus.
+- [Turn tamper protection on (or off) for some or all devices](#turn-tamper-protection-on-or-off-in-microsoft-intune). 
+- [Tamper protect antivirus exclusions](#tamper-protection-for-antivirus-exclusions) that are defined for Microsoft Defender Antivirus.
 
 > [!IMPORTANT]
 > If you're using Microsoft Intune to manage Defender for Endpoint settings, we recommend setting [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on devices.
@@ -90,7 +90,7 @@ You can use a registry key to confirm whether a Windows device is managed by Int
 > [!CAUTION]
 > Do not change the value of **ManagedDefenderProductType**. Use the preceding procedure for information only. Changing the key will have no effect on how the device is managed.
 
-## Tamper protection for exclusions
+## Tamper protection for antivirus exclusions
 
 If your organization has [exclusions defined for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md), tamper protection will protect those exclusions, provided all of the following conditions are met:
 
