@@ -90,7 +90,7 @@ You can use Microsoft Intune and other methods to configure or manage tamper pro
 
 ## What about exclusions?
 
-Under certain conditions, tamper protection can now protect exclusions that are defined for Microsoft Defender Antivirus. For more information, see [Tamper protection for exclusions](manage-tamper-protection-intune.md#tamper-protection-for-exclusions).
+Under certain conditions, tamper protection can now protect antivirus exclusions that are defined for Microsoft Defender Antivirus. For more information, see [Tamper protection for exclusions](manage-tamper-protection-intune.md#tamper-protection-for-exclusions).
 
 ## Are you using Windows Server 2012 R2, 2016, or Windows version 1709, 1803, or 1809?
 
