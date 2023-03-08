@@ -74,7 +74,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **Rolling out in preview**: Auto-labeling retention policies now support [simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode), so you can test out your policy configuration and view results before deploying in production.
 - **Configuration improvements**: The configuration for retention policies and retention label policies in the Microsoft Purview compliance portal has been improved for the selection and configuration of locations. Some of the location names have changed to better reflect what's included for the location, and a new **Applicable Content** column is added for additional information.
-- The configuration and management of [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) is moving to a new location in the Microsoft Purview compliance portal: **Roles & Scopes** \> **Adaptive scopes**.
+- **Relocation for adaptive scopes**: The configuration and management of [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) is moving to a new location in the Microsoft Purview compliance portal: **Roles & Scopes** \> **Adaptive scopes**.
 - New troubleshooting resources:
     - [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
     - [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)
