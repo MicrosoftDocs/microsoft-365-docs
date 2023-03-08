@@ -65,11 +65,11 @@ search.appverid: met150
 
 ## Important points to keep in mind
 
-- When you enable tamper protection in the Microsoft 365 Defender portal, the setting is applied tenant wide. To turn tamper protection on for some devices but off for others, use either [Microsoft Intune](manage-tamper-protection-intune.md) or [Configuration Manager, version 2006 with tenant attach](manage-tamper-protection-configuration-manager.md).
+- When you enable tamper protection in the Microsoft 365 Defender portal, the setting is applied tenant wide. To exclude devices from tamper protection, you can use either [Microsoft Intune](manage-tamper-protection-intune.md) or [Configuration Manager, version 2006 with tenant attach](manage-tamper-protection-configuration-manager.md).
 
 - Currently, the option to manage tamper protection in the Microsoft 365 Defender portal is on by default for new deployments. For existing deployments, tamper protection is available on an opt-in basis. To opt in, in the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), choose **Settings** \> **Endpoints** \> **Advanced features** \> **Tamper protection**.
 
-- If you're using the Microsoft 365 Defender portal to manage tamper protection, you can still use Intune or Configuration Manager with tenant attach to exclude devices from tamper protection. 
+- If you're using the Microsoft 365 Defender portal to manage tamper protection, you can still use [Intune](manage-tamper-protection-intune.md) or [Configuration Manager with tenant attach](manage-tamper-protection-configuration-manager.md) to exclude devices from tamper protection. You can also use Intune to [tamper-protect antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions).
 
 - If your organization is currently using Microsoft Intune to manage security settings (such as tamper protection), turning tamper protection on or off in the Microsoft 365 Defender won't impact the state of tamper protection. It will restrict tamper protected settings to their secure defaults.
 
