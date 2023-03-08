@@ -72,7 +72,7 @@ Tamper protection is available for devices that are running one of the following
 
 Tamper protection is also available for Mac. For more information, see [Protect macOS security settings with tamper protection](tamperprotection-macos.md).
 
-> [!IMPORTANT]
+> [!TIP]
 > [Built-in protection](built-in-protection.md) includes turning tamper protection on by default. For more information, see:
 > - [Built-in protection helps guard against ransomware](built-in-protection.md) (article)
 > - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)
