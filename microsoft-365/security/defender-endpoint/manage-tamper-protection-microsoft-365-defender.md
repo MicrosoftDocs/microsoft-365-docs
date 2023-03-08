@@ -65,7 +65,7 @@ search.appverid: met150
 
 ## Important points to keep in mind
 
-- When you manage tamper protection in the Microsoft 365 Defender portal, the setting is applied tenant wide. To turn tamper protection on for some devices but off for others, use either [Microsoft Intune](manage-tamper-protection-intune.md) or [Configuration Manager, version 2006 with tenant attach](manage-tamper-protection-configuration-manager.md).
+- When you enable tamper protection in the Microsoft 365 Defender portal, the setting is applied tenant wide. To turn tamper protection on for some devices but off for others, use either [Microsoft Intune](manage-tamper-protection-intune.md) or [Configuration Manager, version 2006 with tenant attach](manage-tamper-protection-configuration-manager.md).
 
 - Currently, the option to manage tamper protection in the Microsoft 365 Defender portal is on by default for new deployments. For existing deployments, tamper protection is available on an opt-in basis. To opt in, in the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), choose **Settings** \> **Endpoints** \> **Advanced features** \> **Tamper protection**.
 
