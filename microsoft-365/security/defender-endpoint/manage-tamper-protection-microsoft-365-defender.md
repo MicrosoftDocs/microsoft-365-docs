@@ -35,7 +35,7 @@ search.appverid: met150
 [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, you can turn tamper protection on (or off) tenant wide by using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
 > [!IMPORTANT]
-> If tamper protection is [deployed and managed through Intune](manage-tamper-protection-intune.md), turning tamper protection on or off in the Microsoft 365 Defender portal won't override settings in Intune.
+> If tamper protection is [deployed and managed through Intune](manage-tamper-protection-intune.md), turning tamper protection on or off in the Microsoft 365 Defender portal won't impact the state of tamper protection. It will restrict tamper-protected settings to their secure default values. For more information, see [What happens when tamper protection is turned on?](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
 
 ## Requirements for managing tamper protection in the Microsoft 365 Defender portal
 
