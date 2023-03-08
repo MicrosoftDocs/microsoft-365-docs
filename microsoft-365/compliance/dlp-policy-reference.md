@@ -451,44 +451,44 @@ To learn more about how Purview DLP implements booleans and nested groups see, [
 
 |Predicate | Workload |  Limit | Cost of Evaluation |
 |----------|----------|--------|--------------------|
-|Content Contains | EXO/SPO/ODB |  | High |
-|Content is shared from Microsoft 365 | EXO/SPO/ODB |  | High | 
-|Sender IP address is | EXO | Count <=600|Low|
-|Has sender overridden the policy tip |EXO |  | Low |
-|Sender is | EXO | Count <= 600|   Medium |
-|Sender is a member of | EXO |  Count <=600 | High | 
-|Sender domain is | EXO | Count <=600 |Low |
-|Sender address contains words | EXO | | Low |
-|Sender address matches patterns | EXO |Count <=600 | Low |
-|Sender AD attribute contains words | EXO | Count <=600 | Medium |
-|Sender AD attribute matches patterns | EXO | Count <=600 | Medium |
-|Content of email attachment(s) can't be scanned|EXO|  | Low |
-|Incomplete scan of email attachment content | EXO |  | Low |
-|Attachment is password-protected | EXO |    |Low|
+|Content Contains | EXO/SPO/ODB | 125 SITs per rule | High |
+|Content is shared from Microsoft 365 | EXO/SPO/ODB |  - | High |
+|Sender IP address is | EXO | Individual range length <=128; Count <= 600 |Low|
+|Has sender overridden the policy tip |EXO |  - | Low |
+|Sender is | EXO | Individual email length<=256; Count <= 600|   Medium |
+|Sender is a member of | EXO | Count <=600 | High |
+|Sender domain is | EXO | Domain name length<=67; Count <=600 |Low |
+|Sender address contains words | EXO |Individual word length<=128; Count <=600 | Low |
+|Sender address matches patterns | EXO |Regex length <= 128 char; Count <=600 | Low |
+|Sender AD attribute contains words | EXO | Individual word length<=128; Count <=600 | Medium |
+|Sender AD attribute matches patterns | EXO | Regex length <= 128 char; Count <=600 | Medium |
+|Content of email attachment(s) can't be scanned|EXO| [Supported file types](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)  | Low |
+|Incomplete scan of email attachment content | EXO | Size >1MB  | Low |
+|Attachment is password-protected | EXO | File types: Office files, ZIP, and 7z |Low|
 |Attachment's file extension is |EXO/SPO/ODB | Count <=50 | High|
 |Recipient is a member of |EXO | Count <=600 | High |
-|Recipient domain is | EXO| No limit | Low |
-|Recipient is| EXO | Count <=600 |Low |
-|Recipient address contains words | EXO | Count <=600 | Low |
-|Recipient address matches patterns | EXO | | Low|
-|Document name contains words or phrases | EXO | Count <=300  |Low|
-|Document Name matches patterns| EXO | Count <=300  |Low|
-|Document property is | EXO/SPO/ODB | | Low | 
-|Document size equals or is greater than | EXO | | Low|
-|Subject contains words or phrases | EXO |Count <=600| Low|  
-|Header contains words or phrases | EXO |  Count <=600  |Low| 
-|Subject or body contains words or phrases |EXO| Count <=600  |Low|
+|Recipient domain is | EXO| Domain name length<=67; Count <= 5000  | Low |
+|Recipient is | EXO | Individual email length<=256; Count <=600 |Low |
+|Recipient address contains words | EXO | Individual word length<=128; Count <=600 | Low |
+|Recipient address matches patterns | EXO | Count <= 300 | Low|
+|Document name contains words or phrases | EXO | Individual word length<=128; Count <=600  |Low|
+|Document Name matches patterns| EXO | Regex length <= 128 char; Count <=300  |Low|
+|Document property is | EXO/SPO/ODB | - | Low | 
+|Document size equals or is greater than | EXO | - | Low|
+|Subject contains words or phrases | EXO | Individual word length<=128; Count <=600| Low|  
+|Header contains words or phrases | EXO | Individual word length<=128; Count <=600  |Low| 
+|Subject or body contains words or phrases |EXO| Individual word length<=128; Count <=600  |Low|
 |Content character set contains words |EXO | Count <=600  |Low|
-|Header matches patterns |EXO | Count <=300  | Low|
-|Subject matches patterns|EXO | Count <=300  | Low|
-|Subject or body matches patterns |EXO |Count <=300 | Low|
-|Message type is | EXO|   | Low| 
-|Message size over | EXO |  | Low|
-|With importance | EXO |  | Low|
-|Sender AD attritbute contains words |EXO| Count <=600 | Medium |
-|Sender AD attribute matches patterns |EXO |  | Medium|
-|Document contains words | EXO | Count <=600  |  Medium|
-|Document matches patterns| EXO| Count <=300  | Medium|
+|Header matches patterns |EXO | Regex length <= 128 char; Count <=300  | Low|
+|Subject matches patterns|EXO | Regex length <= 128 char;  Count <=300  | Low|
+|Subject or body matches patterns |EXO |Regex length <= 128 char;  Count <=300 | Low|
+|Message type is | EXO| - | Low| 
+|Message size over | EXO | - | Low|
+|With importance | EXO | -  | Low|
+|Sender AD attribute contains words |EXO| Each attribute key value pair: has Regex length <= 128 char; Count <=600 | Medium |
+|Sender AD attribute matches patterns |EXO | Each attribute key value pair: has Regex length <= 128 char; Count <=300  | Medium|
+|Document contains words | EXO | Individual word length<=128; Count <=600  |  Medium|
+|Document matches patterns| EXO| Regex length <= 128 char; Count <=300  | Medium|
 
 
 <!--### Exceptions
