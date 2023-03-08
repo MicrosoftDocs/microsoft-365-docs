@@ -130,9 +130,11 @@
      
     - name: Content processing
       items: 
+        - name: Overview 
+          href: content-processing-overview.md
         - name: Move or copy a file 
           href: content-processing-create-rules.md
-     
+
     - name: Content query
       items: 
         - name: Use metadata to find content in document libraries 
@@ -182,6 +184,9 @@
               href: use-contracts-management-site.md 
             - name: Content center template
               href: use-content-center-site.md 
+
+    - name: Video library 
+      href: video-library.md
 
     - name: Extensibility
       items: 
