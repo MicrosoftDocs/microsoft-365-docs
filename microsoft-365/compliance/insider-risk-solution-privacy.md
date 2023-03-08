@@ -46,7 +46,7 @@ Whether your organization chooses a single role group or multiple role groups to
 Learn more about role group options for each solution:   
 
 - [Get started with communication compliance ](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) 
-- [Get started with insider risk management - Microsoft Purview (compliance) | Microsoft Learn](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) 
+- [Get started with insider risk management](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) 
 
 ## Admin explicit opt-in 
 
