@@ -74,9 +74,11 @@ Using Intune, you can:
 
 2. Create a profile that includes the following setting:
 
-    - **TamperProtection (Device): Enable**
+    - **TamperProtection (Device): On**
 
-3. Assign the profile to one or more groups.
+3. Finish selecting options and settings for your policy.
+
+4. Deploy the policy to your devices.
 
 ## How to tell if a Windows device is managed by Intune
 
