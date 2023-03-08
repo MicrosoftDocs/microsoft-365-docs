@@ -32,7 +32,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect your security settings from being disabled or changed. If you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection for devices by using a method called *tenant attach*. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Intune admin center, and then deliver endpoint security configuration policies to on-premises collections & devices. Using Configuration Manager with tenant attach, you can turn tamper protection on (or off) for some or all devices. 
+[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, and you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection for devices by using a method called *tenant attach*. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Intune admin center, and then deliver endpoint security configuration policies to on-premises collections & devices. Using Configuration Manager with tenant attach, you can turn tamper protection on (or off) for some or all devices. 
 
 > [!IMPORTANT]
 > When tamper protection is turned on, tamper-protected settings cannot be changed from their default values. Changes might appear to be successful in Configuration Manager or Microsoft Intune, but will not actually be allowed by tamper protection. For more information, see [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
@@ -45,8 +45,6 @@ search.appverid: met150
    - In the **Profile** list, select **Windows Security experience (preview)**.
 
 3. Deploy the policy to your device collection.
-
-
 
 ## See also
 
