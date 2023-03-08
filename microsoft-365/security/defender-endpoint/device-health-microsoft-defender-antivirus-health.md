@@ -11,10 +11,10 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 localization_priority: Normal
-ms.date: 09/06/2022 
+ms.date: 09/06/2022
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
@@ -101,8 +101,9 @@ Up-to-date reporting generates information for devices that meet the following c
 - Cloud protection enabled
 - MsSense.exe version 10.8210.x or later
 - Windows OS - Windows 10 1809 or later
-   >[!Note]
-   >Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
+
+  > [!NOTE]
+  > Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
 
 :::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Shows the Microsoft Defender Antivirus Health tab." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
@@ -346,9 +347,8 @@ The following table lays out the possible up to date report values for **Securit
 >   - top scans per file
 >   - top scans per file per process
 >
-> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
+> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions.
 > See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
->
 
 - [Export device antivirus health details API methods and properties](device-health-api-methods-properties.md)
 - [Export device antivirus health report](device-health-api-methods-properties.md)
