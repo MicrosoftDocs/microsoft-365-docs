@@ -183,6 +183,9 @@
             - name: Content center template
               href: use-content-center-site.md 
 
+    - name: Video library 
+      href: video-library.md
+
     - name: Extensibility
       items: 
         - name: Microsoft Syntex REST API 

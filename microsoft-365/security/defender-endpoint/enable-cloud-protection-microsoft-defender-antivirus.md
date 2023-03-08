@@ -90,7 +90,7 @@ For more information about the specific network-connectivity requirements to ens
    - **Send safe samples** (1)
    - **Send all samples** (3)
 
-   >[!NOTE]
+   > [!NOTE]
    > The **Send safe samples** (1) option means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
    > Setting the option to **Always Prompt** (0) will lower the protection state of the device. Setting it to **Never send** (2) means that the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender for Endpoint won't work.
 
