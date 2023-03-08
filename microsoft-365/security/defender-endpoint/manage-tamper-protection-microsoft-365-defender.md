@@ -32,9 +32,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain security settings from being disabled or changed. Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md). Tamper protection is an important part of your security strategy, as it helps prevent important security settings from being disabled or turned off. For more details, see [What happens when tamper protection is turned on?](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on).
-
-If you're part of your organization's security team, you can turn tamper protection on (or off) tenant wide by using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, you can turn tamper protection on (or off) tenant wide by using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
 > [!IMPORTANT]
 > If tamper protection is [deployed and managed through Intune](manage-tamper-protection-intune.md), turning tamper protection on or off in the Microsoft 365 Defender portal won't override settings in Intune.
@@ -43,19 +41,7 @@ If you're part of your organization's security team, you can turn tamper protect
 
 - You must have appropriate permissions assigned through roles, such as Global Administrator or Security Administrator. (See [Microsoft 365 Defender role-based access control (RBAC)](../defender/manage-rbac.md).)
 
-- Windows devices must be running one of the following versions of Windows:
-  
-  - Windows 11
-  - Windows 11 Enterprise multi-session 
-  - Windows 10
-  - Windows 10 Enterprise multi-session
-  - Windows Server 2022
-  - Windows Server 2019
-  - Windows Server, version 1803 or later
-  - Windows Server 2016
-  - Windows Server 2012 R2
-
-      For more information about releases, see [Windows 10 release information](/windows/release-health/release-information).
+- Devices must be running certain versions of Windows or macOS. (See [On what devices can tamper protection be enabled?](prevent-changes-to-security-settings-with-tamper-protection.md#on-what-devices-can-tamper-protection-be-enabled).)
 
 - Devices must be [onboarded to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding).
 
@@ -65,7 +51,7 @@ If you're part of your organization's security team, you can turn tamper protect
 
 > [!NOTE]
 > When tamper protection is enabled via the Microsoft 365 Defender portal, [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) is required, so that the enabled state of tamper protection can be controlled.  
-> Starting with the November 2021 update (platform version `4.18.2111.5`), if cloud-delivered protection is not turned on for a device and tamper protection is turned on in the Microsoft 365 Defender portal, then cloud-delivered protection will be automatically turned on for that device together with tamper protection.   
+> Starting with the November 2021 update (platform version `4.18.2111.5`), if cloud-delivered protection is not already turned on for a device, and tamper protection is turned on in the Microsoft 365 Defender portal, then cloud-delivered protection will be turned on automatically, together with tamper protection on the device.   
 
 ## Turn tamper protection on (or off) in the Microsoft 365 Defender portal
 
