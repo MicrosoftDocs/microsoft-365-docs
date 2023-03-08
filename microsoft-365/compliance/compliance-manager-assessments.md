@@ -86,7 +86,8 @@ You create a group during the process of building a new assessment. Here are imp
 
 Compliance Manager has an integrated set of third-party data connectors so that you can build assessments that cover services other than Microsoft, such as SalesForce or Dropbox. You can select the connectors you need within Compliance Manager. Then when you build your assessment, you'll select from among the connectors you've already set up.
 
-- Details about when and how to set up connectors for your assessments are covered in step XYZ of the [guided process for creating assessments](#create-an-assessment-using-a-guided-process), below.
+- Visit [Working with data connectors](compliance-manager-connectors.md) for details about when and how to set up connectors
+- Setting up connectors for your assessments are covered in step XYZ of the [guided process for creating assessments](#create-an-assessment-using-a-guided-process), below.
 - Get more general information about [third-party data connectors](archiving-third-party-data.md).
 
 #### Available connectors
