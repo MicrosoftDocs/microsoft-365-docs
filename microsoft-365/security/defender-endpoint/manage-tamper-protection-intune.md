@@ -34,7 +34,7 @@ search.appverid: met150
 [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). With Intune, you can:
 
 - Turn tamper protection on (or off) for some or all devices. 
-- Tamper protect exclusions that are defined for Microsoft Defender Antivirus.
+- Tamper protect antivirus exclusions that are defined for Microsoft Defender Antivirus.
 
 > [!IMPORTANT]
 > If you're using Microsoft Intune to manage Defender for Endpoint settings, we recommend setting [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on devices.
@@ -102,12 +102,12 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 
 - Devices are running Windows Defender platform `4.18.2211.5` or later. (See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).)
 
-- Functionality to protect Microsoft Defender Antivirus exclusions is enabled on devices. (See [How to determine whether the functionality is enabled on a Windows device](#how-to-determine-whether-the-functionality-to-protect-exclusions-is-enabled-on-a-windows-device).)
+- Functionality to protect Microsoft Defender Antivirus exclusions is enabled on devices. (See [How to determine whether the functionality is enabled on a Windows device](#how-to-determine-whether-antivirus-exclusions-are-tamper-protected-on-a-windows-device).)
 
 > [!TIP]
 > For more detailed information about Microsoft Defender Antivirus exclusions, see [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
-### How to determine whether the functionality to protect exclusions is enabled on a Windows device
+### How to determine whether antivirus exclusions are tamper protected on a Windows device
 
 You can use a registry key to determine whether the functionality to protect Microsoft Defender Antivirus exclusions is enabled. Note that the following procedure describes how to view, but not change, tamper protection status.
 
