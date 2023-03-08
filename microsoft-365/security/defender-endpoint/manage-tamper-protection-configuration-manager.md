@@ -32,10 +32,10 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-If you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection settings on Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022 by using a method called *tenant attach*. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Intune admin center, and then deliver endpoint security configuration policies to on-premises collections & devices.
+[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect your security settings from being disabled or changed. If you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection for devices by using a method called *tenant attach*. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Intune admin center, and then deliver endpoint security configuration policies to on-premises collections & devices. Using Configuration Manager with tenant attach, you can turn tamper protection on (or off) for some or all devices. 
 
-> [!NOTE]
-> The procedure can be used to extend tamper protection to devices running Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2019, and Windows Server 2022. Make sure to review the prerequisites and other information in the resources mentioned in this procedure. For Windows Server 2012 R2 running the modern, unified solution [version 2203 of Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2203) is required.
+> [!IMPORTANT]
+> When tamper protection is turned on, tamper-protected settings cannot be changed from their default values. Changes might appear to be successful in Configuration Manager or Microsoft Intune, but will not actually be allowed by tamper protection. For more information, see [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
 
 1. Set up tenant attach. To learn more, see [Get started: Create and deploy endpoint security policies from the admin center](/mem/configmgr/tenant-attach/endpoint-security-get-started).
 
@@ -46,9 +46,9 @@ If you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan
 
 3. Deploy the policy to your device collection.
 
-## Need help with this method?
 
-See the following resources:
+
+## See also
 
 - [Settings for the Windows Security experience profile in Microsoft Intune](/mem/intune/protect/antivirus-security-experience-windows-settings)
 - [Tech Community Blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
