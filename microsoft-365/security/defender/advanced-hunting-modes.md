@@ -7,14 +7,14 @@ ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security
   - m365initiative-m365-defender
   - tier2
@@ -28,17 +28,17 @@ ms.date: 08/04/2022
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - Microsoft 365 Defender
 
-You can find the **advanced hunting** page by going to the left navigation bar in Microsoft 365 Defender and selecting **Hunting** > **Advanced hunting**. If the navigation bar is collapsed, select the hunting icon ![hunting icon](../../media/guided-hunting/hunting-icon.png). 
+You can find the **advanced hunting** page by going to the left navigation bar in Microsoft 365 Defender and selecting **Hunting** > **Advanced hunting**. If the navigation bar is collapsed, select the hunting icon ![hunting icon](../../media/guided-hunting/hunting-icon.png).
 
 In the **advanced hunting** page, two modes are supported:
+
 - **Guided mode** – to query using the query builder
 - **Advanced mode** – to query using the query editor using Kusto Query Language (KQL)
 
-The main difference between the two modes is that the guided mode *does not* require the hunter to know KQL to query the database, while advanced mode requires KQL knowledge. 
+The main difference between the two modes is that the guided mode *does not* require the hunter to know KQL to query the database, while advanced mode requires KQL knowledge.
 
 Guided mode features a query builder that has an easy-to-use, visual, building-block style of constructing queries through dropdown menus containing available filters and conditions. To use guided mode, see [Get started with guided hunting mode](advanced-hunting-modes.md#get-started-with-guided-hunting-mode).
 
@@ -49,12 +49,11 @@ Advanced mode features a query editor area where users can create queries from s
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-When you open the advanced hunting page for the first time after guided hunting is made available to you, you are invited to take the tour to learn more about the different parts of the page like the tabs and query areas. 
+When you open the advanced hunting page for the first time after guided hunting is made available to you, you are invited to take the tour to learn more about the different parts of the page like the tabs and query areas.
 
 To take the tour, select **Take tour** when this banner appears:
 
-
-[ ![banner inviting user to take the tour](../../media/guided-hunting/1-guided-hunting-banner-tb.png) ](../../media/guided-hunting/1-guided-hunting-banner.png#lightbox)
+[![banner inviting user to take the tour](../../media/guided-hunting/1-guided-hunting-banner-tb.png)](../../media/guided-hunting/1-guided-hunting-banner.png#lightbox)
 
 Follow the blue teaching bubbles that appear throughout the page and select **Next** to move from one step to the next.
 
@@ -62,9 +61,7 @@ You can take the tour again at any time by going to **Help resources** > **Learn
 
 ![Screenshot of help resources](../../media/guided-hunting/help-resources.png)
 
-
 You can then start building your query to hunt for threats. The following articles can help you get the most out of hunting in guided mode:
-
 
 | Learning goal | Description | Resource |
 |--|--|--|
@@ -74,7 +71,8 @@ You can then start building your query to hunt for threats. The following articl
 | **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and take response actions automatically. | - [Custom detections overview](custom-detections-overview.md) <br />- [Custom detection rules](custom-detection-rules.md) |
 
 ## Get started with advanced hunting mode
-We recommend going through these steps to quickly get started with advanced hunting: 
+
+We recommend going through these steps to quickly get started with advanced hunting:
 
 | Learning goal | Description | Resource |
 |--|--|--|
@@ -86,6 +84,7 @@ We recommend going through these steps to quickly get started with advanced hunt
 | **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and take response actions automatically. | - [Custom detections overview](custom-detections-overview.md) <br />- [Custom detection rules](custom-detection-rules.md)|
 
 ## See also
+
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Build hunting queries using guided mode](advanced-hunting-query-builder.md)
 - [Learn the query language](advanced-hunting-query-language.md)

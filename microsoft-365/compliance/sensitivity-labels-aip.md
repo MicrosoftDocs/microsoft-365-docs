@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -163,7 +163,8 @@ Use the following information to help you identify if the features you use with 
 |**Category: General**||
 |Central reporting and auditing|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#auditing-labeling-activities)|
 |Government Cloud|![Supported.](../media/yes-icon.png)|
-|Admin can disable labeling for all apps|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
+|Admin can disable labeling for all apps|  ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
+|Admin can display labels for just files or just emails| [Rolling out](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails)|
 |**Category: User Experience**||
 |Labeling button on the ribbon|![Supported.](../media/yes-icon.png)|
 |Multilanguage support for label names and tooltips|![Supported.](../media/yes-icon.png) <br>[Learn more](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages)|

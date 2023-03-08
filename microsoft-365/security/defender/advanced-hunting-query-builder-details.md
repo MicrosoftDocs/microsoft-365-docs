@@ -84,7 +84,7 @@ Selecting EventType under Registry Events allows you to choose from different re
 
 ![Screenshot of EventType RegistryValueDeleted](../../media/guided-hunting/hunt-specific-events-2.png)
 
->[!NOTE] 
+> [!NOTE] 
 >`EventType` is the equivalent of `ActionType` in the data schema, which users of advanced mode might be more familiar with.
 
 ## Test your query with a smaller sample size

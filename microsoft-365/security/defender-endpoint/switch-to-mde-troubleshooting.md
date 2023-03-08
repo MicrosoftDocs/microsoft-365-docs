@@ -58,7 +58,6 @@ Certain exclusions for Defender for Endpoint must be defined in your existing no
 
 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollection`
 
-
 ### Set Microsoft Defender Antivirus to passive mode manually
 
 On Windows Server 2022, Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, or Windows Server 2012 R2, you must set Microsoft Defender Antivirus to passive mode manually. This action helps prevent problems caused by having multiple antivirus products installed on a server. You can set Microsoft Defender Antivirus to passive mode using PowerShell, Group Policy, or a registry key.
@@ -95,7 +94,7 @@ If Microsoft Defender Antivirus is stuck in passive mode, set it to active mode 
 
 ## I am having trouble re-enabling Microsoft Defender Antivirus on Windows Server 2016
 
-If you are using a non-Microsoft antivirus/antimalware solution on Windows Server 2016, your existing solution might have required Microsoft Defender Antivirus to be disabled or uninstalled. You can use the[ Malware Protection Command-Line Utility](command-line-arguments-microsoft-defender-antivirus.md) to re-enable Microsoft Defender Antivirus on Windows Server 2016.
+If you are using a non-Microsoft antivirus/antimalware solution on Windows Server 2016, your existing solution might have required Microsoft Defender Antivirus to be disabled or uninstalled. You can use the [Malware Protection Command-Line Utility](command-line-arguments-microsoft-defender-antivirus.md) to re-enable Microsoft Defender Antivirus on Windows Server 2016.
 
 1. As a local administrator on the server, open Command Prompt.
 
@@ -107,4 +106,4 @@ If you are using a non-Microsoft antivirus/antimalware solution on Windows Serve
 
 - [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
 
-- [Onboarding tools and methods for Windows devices in Defender for Endpoint](configure-endpoints.md) 
+- [Onboarding tools and methods for Windows devices in Defender for Endpoint](configure-endpoints.md)
