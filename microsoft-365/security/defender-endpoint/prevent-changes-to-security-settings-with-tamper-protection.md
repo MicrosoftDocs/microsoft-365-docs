@@ -6,7 +6,7 @@ description: Use tamper protection to prevent malicious apps from changing impor
 keywords: malware, defender, antivirus, tamper protection
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/07/2023
+ms.date: 03/08/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -55,6 +55,9 @@ When tamper protection is turned on, tamper protected settings cannot be changed
 - Archives and network files can be scanned.
 
 Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Defender for Endpoint, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team. (See [How do I configure or manage tamper protection](#how-do-i-configure-or-manage-tamper-protection)?)
+
+> [!IMPORTANT]
+> When tamper protection is turned on, changes cannot be made to tamper-protected settings, including changes made through Intune and Configuration Manager.
 
 ## On what devices can tamper protection be enabled?
 
