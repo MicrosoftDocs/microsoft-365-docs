@@ -1,6 +1,7 @@
 ---
 title: "Manage a group in the admin center"
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT

@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -68,7 +68,7 @@ If the command to enable the auditing of search queries was previously run in a 
 
 ## Step 3: Set up audit retention policies
 
-In additional to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
+In additional to the default policy that retains Azure AD, Exchange, OneDrive, and SharePoint audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
 
 ## Step 4: Search for Audit (Premium) events
 

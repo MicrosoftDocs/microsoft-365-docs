@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -30,9 +30,11 @@ Microsoft Purview Data Loss Prevention (DLP) policies have many components to co
 
 ## Before you begin
 
-If you are new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
+If you're new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
 
+1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
+1. [Sensitive Information Type Limits](/microsoft-365/compliance/sit-limits) - these limits apply to all Microsoft Purview policies that use sensitive information types.
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
     1. [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
@@ -106,22 +108,68 @@ This table lists all policy templates and the sensitive information types (SIT) 
 |Privacy| U.S. State Breach Notification Laws|- [Credit card number](sit-defn-credit-card-number.md) </br> - [U.S. bank account number](sit-defn-us-bank-account-number.md)</br> -[U.S. driver's license number](sit-defn-us-drivers-license-number.md) </br> - [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)|
 |Privacy| U.S. State Social Security Number Confidentiality Laws|- [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)|
 
-## Locations
+## Policy Scoping
+
+See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to make sure you understand the difference between an unrestricted admin and an administrative unit restricted admin.
+
+DLP policies are scoped at two different levels. The first level lets an unrestricted admin scope policies to all:
+
+- users
+- groups
+- distribution groups
+- accounts
+- sites
+- cloud app instances
+- on-premises repositories
+- Power BI workspaces
+
+in your organization (depending on the locations that are selected) or to subgroups of your organization called [Administrative Unit restricted policies (preview)](#administrative-unit-restricted-policies-preview). 
+
+At this level an administrative unit restricted admin will only be able to pick from the administrative units that they're assigned to.
+
+The second level of DLP policy scoping is by the [locations](#locations) that DLP supports. At this level, both unrestricted and administrative unit restricted administrators will see only the users, distribution groups, groups, and accounts that were included in the first level of policy scoping and are available in for that location. 
+
+### Unrestricted policies
+
+Unrestricted policies are created and managed by users in these role groups:
+
+- Compliance administrator
+- Compliance data administrator
+- Information Protection
+- Information Protection Admin
+- Security administrator
+
+See, [Permissions](dlp-create-deploy-policy.md#permissions) for more details. 
+
+Unrestricted administrators can manage all policies and see all the alerts and events that flow from policy matches into the [Alerts dashboard](dlp-alerts-dashboard-learn.md#learn-about-the-data-loss-prevention-alerts-dashboard) and [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
+
+### Administrative Unit restricted policies (preview)
+
+Administrative units are subsets of your Azure Active Directory and are created for the purposes of managing collections of users, groups, distribution groups, and accounts. These collections are typically created along business group lines or geopolitical areas. Administrative units have a delegated administrator who is associated with an administrative unit in the role group. These are called administrative unit restricted admins.
+  
+DLP supports associating policies with administrative units. See [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for implementation details in the Microsoft Purview compliance portal. Administrative unit admins need to be assigned to one of the same roles or role groups as administrators of unrestricted DLP policies in order to create and manage DLP policies for their administrative unit
+
+|DLP Administrative Role Group  |Can |
+|---------|---------|
+|Unrestricted administrator |- create and scope DLP policies to entire organization</br>- edit all DLP policies </br>- create and scope DLP policies to administrative units </br>- view all alerts and events from all DLP policies          |
+|Administrative Unit Restricted administrator </br>- must be a member of/assigned to a role group/role that can administer DLP    |- create and scope DLP policies only to the administrative unit that they're assigned to </br>- edit DLP policies that are associated to their administrative unit </br>- view alerts and events only from the DLP policies that are scoped to their administrative unit         |
+
+### Locations
 
 A DLP policy can find and protect items that contain sensitive information across multiple locations.
 
-|Location  |Include/Exclude scope  |Data state  |Additional pre-requisites |
-|---------|---------|---------|---------|
-|Exchange email online |distribution group | data-in-motion| No |
-|SharePoint online sites   |sites       | data-at-rest </br> data-in-use | No|
-|OneDrive for Business accounts| account or distribution group |data-at-rest </br> data-in-use|No|
-|Teams chat and channel messages     | account or distribution group |data-in-motion </br> data-in-use |  No       |
-|Microsoft Defender for Cloud Apps   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Devices  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|On-premises repositories (file shares and SharePoint)    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
-|Power BI| workspaces | data-in-use | No|
+|Location |Supports Administrative Units |Include/Exclude scope  |Data state  |Additional pre-requisites |
+|---------|---------|---------|---------|---------|
+|Exchange email online|Yes |distribution group | data-in-motion| No |
+|SharePoint online sites|No   |sites       | data-at-rest </br> data-in-use | No|
+|OneDrive for Business accounts|Yes| account or distribution group |data-at-rest </br> data-in-use|No|
+|Teams chat and channel messages|Yes     | account or distribution group |data-in-motion </br> data-in-use |  No       |
+|Microsoft Defender for Cloud Apps|No   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
+|Devices|Yes  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|On-premises repositories (file shares and SharePoint)|No    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-repositories) |
+|Power BI |No| workspaces | data-in-use | No|
 
-If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the members of that group. Similarly excluding a distribution group will exclude all the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
+If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the emails sent by members of that group. Similarly excluding a distribution group will exclude all the emails sent by the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
 
 If you choose to include or exclude specific SharePoint sites or OneDrive accounts, a DLP policy can contain no more than 100 such inclusions and exclusions. Although this limit exists, you can exceed this limit by applying either an org-wide policy or a policy that applies to entire locations.
 
@@ -163,9 +211,6 @@ DLP supports using trainable classifiers as a condition to detect sensitive docu
 Rules are the business logic of DLP policies. They consist of:
 
 - [**Conditions**](#conditions) that when matched, trigger the policy
-<!--- [**Exceptions**](#exceptions) to the conditions
-> [!IMPORTANT]
-> The **Exceptions** UI is only available in **Classic rule builder** mode. If you have switched to the **New DLP rule builder** [mode](dlp-policy-design.md#complex-rule-design), exceptions are displayed as nested groups and joined to the other conditions by a boolean NOT function.-->  
 - [**Actions**](#actions) to take when the policy is triggered
 - [**User notifications**](#user-notifications-and-policy-tips) to inform your users when they're doing something that triggers a policy and help educate them on how your organization wants sensitive information treated
 - [**User Overrides**](#user-overrides) when configured by an admin, allow users to selectively override a blocking action
@@ -173,6 +218,10 @@ Rules are the business logic of DLP policies. They consist of:
 - [**Additional Options**](#additional-options) which define the priority for rule evaluation and can stop further rule and policy processing.
 
  A policy contains one or more rules. Rules are executed sequentially, starting with the highest-priority rule in each policy.
+
+<!--- [**Exceptions**](#exceptions) to the conditions
+> [!IMPORTANT]
+> The **Exceptions** UI is only available in **Classic rule builder** mode. If you have switched to the **New DLP rule builder** [mode](dlp-policy-design.md#complex-rule-design), exceptions are displayed as nested groups and joined to the other conditions by a boolean NOT function.-->
 
 ### The priority by which rules are processed
 
@@ -240,6 +289,20 @@ SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videopl
 
 > [!IMPORTANT]
 > SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
+
+#### Adaptive Protection in Microsoft Purview (preview)
+
+Adaptive protection integrates Microsoft Purview Insider Risk Management risk profiles into DLP policies so that DLP can help protect against dynamically identified risky behaviors. When configured in insider risk management, the **User's risk level for adaptive protection is** will show up as condition for Exchange Online, Devices, and Teams locations. Refer to [Learn about Adaptive Protection in Data Loss Prevention (preview)](dlp-adaptive-protection-learn.md) for more details.
+
+##### Conditions that adaptive protection supports
+
+- User's risk level for adaptive protection is
+
+with these values:
+
+- Elevated risk level
+- Moderate risk level
+- Minor risk level
 
 #### Condition context
 
@@ -323,8 +386,8 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Devices supports
 
 - Content contains
-- (preview) Document or attachment is password protected (.pdf, Office files and Symantec PGP encrypted files are fully supported).This predicate doesn’t detect digital rights managed (DRM) encrypted or permission protected files.
-- (preview) Content is not labeled (.pdf, Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
+- Document or attachment is password protected (.pdf, Office files, .zip, and Symantec PGP encrypted files are fully supported). This predicate detects only open protected files.
+- Content is not labeled (.pdf and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
 - (preview) The user accessed a sensitive website from Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 - File extension is
 - File type is
@@ -341,13 +404,13 @@ The available context options change depending on which location you choose. If 
 - File extension is
 - Document property is
 
-##### Conditions PowerBI supports
+##### Conditions Power BI supports
 
 - Content contains
 
 #### Condition groups
 
-Sometimes you need a rule to only identify one thing, like all content that contains a U.S. Social Security Number, which is defined by a single SIT. But in many scenarios, where the types of items you are trying to identify are more complex and therefore harder to define, more flexibility in defining conditions is required.
+Sometimes you need a rule to only identify one thing, like all content that contains a U.S. Social Security Number, which is defined by a single SIT. But in many scenarios, where the types of items you're trying to identify are more complex and therefore harder to define, more flexibility in defining conditions is required.
 
 For example, to identify content subject to the U.S. Health Insurance Act (HIPAA), you need to look for:
 
@@ -488,7 +551,7 @@ See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restric
 
 - Restrict access or remove on-premises files
 
-#### PowerBI actions
+#### Power BI actions
 
 - Notify users with email and policy tips
 - Send alerts to Administrator
@@ -526,7 +589,7 @@ If you select Devices and Microsoft Defender for Cloud Apps, these actions will 
 - Audit or restrict activities on Windows devices
 - Restrict Third Party Apps
 
-Whether an action takes effect or not depends on how you configure the mode of the policy. You can choose to run the policy in test mode with or without showing policy tip by selecting the **Test it out first** option. You choose to run the policy as soon as an hour after it is created by selecting the **Turn it on right away** option, or you can choose to just save it and come back to it later by selecting the **Keep it off** option.
+Whether an action takes effect or not depends on how you configure the mode of the policy. You can choose to run the policy in test mode with or without showing policy tip by selecting the **Test it out first** option. You choose to run the policy as soon as an hour after it's created by selecting the **Turn it on right away** option, or you can choose to just save it and come back to it later by selecting the **Keep it off** option.
 
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
 
@@ -591,7 +654,7 @@ and customize the email text, subject, and the policy tip text.
 
 ![User notification and policy tip configuration options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel, and Defender for Cloud Apps](../media/dlp-user-notification-non-devices.png)
 
-If you selected Devices only, you will get all the same options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel and Defender for Cloud Apps plus the option to customize the notification title and content that appears on the Windows 10 device.
+If you selected Devices only, you'll get all the same options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel and Defender for Cloud Apps plus the option to customize the notification title and content that appears on the Windows 10 device.
 
 ![User notification and policy tip configuration options that are available for Devices](../media/dlp-user-notification-devices.png)
 
@@ -620,7 +683,7 @@ You can customize the title and body of text with using these parameters. The bo
 
 Using this customized text
 
-*%%AppliedActions%% File name %%FileName%% via %%ProcessName%% is not allowed by your organization. Click  'Allow' if you want to bypass the policy %%PolicyName%%*
+*%%AppliedActions%% File name %%FileName%% via %%ProcessName%% is not allowed by your organization. Select  'Allow' if you want to bypass the policy %%PolicyName%%*
 
 produces this text in the customized notification:
 
@@ -665,7 +728,7 @@ This table shows the DLP blocking and notification behavior for policies that ar
 |---------|---------|---------|---------|---------|
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization**     |No actions are configured         |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         |- **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** set to **On** </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**         |- Notifications will be sent only when a file is shared with an external user and an external user access the file.  |
 |- **Content is shared from Microsoft 365** </br>- **only with people inside my organization**        | No actions are configured         |-  **User notifications** set to **On**   </br>- **Notify users in Office 365 service with a policy tip** is selected  </br>- **Notify the user who sent, shared, or last modified the content** is selected    |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |- Notifications are sent when a file is uploaded |
-|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**    | - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** is selected </br>- **Block only people outside your organization** is selected          |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected  |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**             | - Access to a sensitive file is blocked as soon as it is uploaded </br>- Notifications sent when content is shared from Microsoft 365 with people outside my organization         |
+|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**    | - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** is selected </br>- **Block only people outside your organization** is selected          |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected  |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**             | - Access to a sensitive file is blocked as soon as it's uploaded </br>- Notifications sent when content is shared from Microsoft 365 with people outside my organization         |
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization** |  - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** is selected </br>- **Block everyone** is selected        | - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         | - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**        |Notifications are sent when a file is shared with an external user and an external user access that file.         |
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization**     |- **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block only people who were given access to the content through the "Anyone with the link" option** is selected.         |  - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected.  </br>- **Notify the user who sent, shared, or last modified the content** is selected     |- **Send an alert to admins when a rule match occurs** set to **On**   </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |Notifications are sent as soon as a file is uploaded         |
 
@@ -699,7 +762,7 @@ To learn more about user overrides, see:
 
 When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. The report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
 
-DLP feeds incident information to other Microsoft Purview information protection services, like [insider risk management](insider-risk-management.md). In order to get incident information to insider risk management, you must set the **Incident reports** severity level to **High**.
+DLP feeds incident information to other Microsoft Purview Information Protection services, like [insider risk management](insider-risk-management.md). In order to get incident information to insider risk management, you must set the **Incident reports** severity level to **High**.
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 
@@ -711,11 +774,10 @@ DLP scans email differently than it does SharePoint Online or OneDrive for Busin
 
 ### Additional options
 
-If you have multiple rules in a policy, you can use the **Additional options** to control further rule processing if there is a match to the rule you are editing as well as setting the priority for evaluation of the rule.
+If you have multiple rules in a policy, you can use the **Additional options** to control further rule processing if there's a match to the rule you're editing as well as setting the priority for evaluation of the rule.
 
 ## See also
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md#create-a-dlp-policy-from-a-template)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md

@@ -112,12 +112,13 @@ The following table describes key roles to consider for Defender for Endpoint in
 
 When you're ready to onboard your organization's endpoints, you can choose from several methods, as listed in the following table: <br/><br/>
 
-|Endpoint Operating System | Onboarding methods|
+|Endpoint|Deployment tool|
 |---|---|
-| Windows 10 | [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Intune/ Mobile Device Manager](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)  |
-| macOS | [Local scripts](mac-install-manually.md) <br> [Intune](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
-| iOS |[App-based](ios-install.md) |
-| Android | [Intune](android-intune.md) |
+|**Windows**|[Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Intune/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)|
+|**macOS**|[Local script](mac-install-manually.md) <br> [Microsoft Intune](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
+|**Android**|[Microsoft Intune](android-intune.md)|
+|**iOS**|[Microsoft Intune](ios-install.md) <br> [Mobile Application Manager](ios-install-unmanaged.md) |
+
 
 Then, proceed to configure your next-generation protection and attack surface reduction capabilities.
 

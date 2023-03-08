@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 08/04/2021
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
@@ -97,10 +98,7 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
 - **Data Lifecycle Management**
 
-  Microsoft Purview Data Lifecycle Management premium capabilities give you more automation and deeper customizations for how you manage the lifecycle of data – keeping what you need and getting rid of what you don’t need across the broad scale of your organization with:
- 
-   - Adaptive policy scopes – govern data dynamically across your org by deploying retention policies and labels to groups of users, SharePoint sites, and Microsoft 365 Groups (including Microsoft Teams) using scopes that target policies to locations against attributes and properties that you define.
-  - Auto-apply retention labels – reduce manual processes by using retention labels that automatically apply to items matching your specified criteria.
+  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. Learn more about [adaptive policy scopes](purview-adaptive-scopes.md).
 
   Learn more about [Microsoft Purview Data Lifecycle Management](data-lifecycle-management.md).
  

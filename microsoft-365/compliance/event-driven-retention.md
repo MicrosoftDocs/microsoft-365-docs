@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 09/17/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -216,7 +216,7 @@ A REST API is a service endpoint that supports sets of HTTP operations (methods)
 
 There are two options for using the REST API:
 
-- **Microsoft Power Automate or a similar application** to trigger the occurrence of an event automatically. Microsoft Power Automate is an orchestrator for connecting to other systems, so you don't need to write a custom solution. For more information, see the [Power Automate website](https://flow.microsoft.com/en-us/).
+- **Microsoft Power Automate or a similar application** to trigger the occurrence of an event automatically. Microsoft Power Automate is an orchestrator for connecting to other systems, so you don't need to write a custom solution. For more information, see the [Power Automate website](https://make.powerautomate.com/).
 
 - **PowerShell or an HTTP client to call the REST API** to create events by using PowerShell (version 6 or later), which is part of a custom solution.
 

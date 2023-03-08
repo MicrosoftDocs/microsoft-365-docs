@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Onboard devices without Internet access to Microsoft Defender for Endpoint
@@ -43,9 +44,9 @@ For devices with no direct internet connection, the use of a proxy solution is t
 
 Depending on the operating system, the proxy to be used for Microsoft Defender for Endpoint can be configured automatically, typically through the use of autodiscovery or an autoconfig file, or statically specific to Defender for Endpoint services running on the device.
 
-- For Windows devices, please reference [Configure device proxy and Internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet)
-- For Linux devices, please reference [Configure Microsoft Defender for Endpoint on Linux for static proxy discovery](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration)
-- For macOS devices, please reference [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac#network-connections)
+- For Windows devices, see [Configure device proxy and Internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet)
+- For Linux devices, see [Configure Microsoft Defender for Endpoint on Linux for static proxy discovery](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration)
+- For macOS devices, see [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac#network-connections)
 
 ## Windows devices running the previous MMA-based solution
 

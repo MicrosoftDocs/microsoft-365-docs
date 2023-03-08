@@ -10,10 +10,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
+  - tier1
 description: Learn about the errors that admins might encounter when they try to report email, URLs, and email attachments to Microsoft as false positives and false negatives.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 01/12/2023
 ---
 
 # Errors during admin submissions

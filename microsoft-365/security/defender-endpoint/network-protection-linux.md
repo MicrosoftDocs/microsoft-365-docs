@@ -18,9 +18,10 @@ ms.topic: overview
 ms.collection: 
 - m365-security
 - tier2
-ms.date:
 search.appverid: met150
+ms.date: 02/17/2023
 ---
+
 <!--v-jweston/jweston-1 is to resume authorship appx. April/May 2023.-->
 
 # Network protection for Linux
@@ -90,41 +91,6 @@ To onboard the device, you must download the Python onboarding package for Linux
 
 ```bash
 sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
-```
-
-### Manually enable network protection
-
-1. Turn on the "networkProtection" feature, edit the "/etc/opt/microsoft/mdatp/wdavcfg" and set **networkProtection** to **enabled**.
-2. Restart the mdatp service by running the following command:
-
-```bash
-sudo systemctl restart mdatp
-```
-
-> :::image type="content" source="images/network-protection-linux-mdatp-restart.png" alt-text="Shows Linux mdatp restart." lightbox="images/network-protection-linux-mdatp-restart.png":::
-
-### Configure the enforcement level
-
-Network protection is disabled by default, but it can be configured to run in one of the following modes (also called enforcement levels):
-
-- **Audit**: useful to make sure it doesn't affect line-of-business apps, or get an idea of how often blocks occur
-- **Block**: network protection prevents connection to malicious websites
-- **Disabled**: all components associated with Network Protection are disabled
-
-```bash
-sudo mdatp config network-protection enforcement-level --value block
-```
-
-or
-
-```bash
-sudo mdatp config network-protection enforcement-level --value audit
-```
-
-To confirm Network Protection has successfully started, run the following command from the Terminal; verify that it prints "started":
-
-```bash
-mdatp health --field network_protection_status
 ```
 
 ### Validation
