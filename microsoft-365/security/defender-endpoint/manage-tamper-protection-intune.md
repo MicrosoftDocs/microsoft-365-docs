@@ -78,7 +78,7 @@ Using Intune, you can:
 
 3. Finish selecting options and settings for your policy.
 
-4. Deploy the policy to your devices.
+4. Deploy the policy to devices.
 
 ## How to tell if a Windows device is managed by Intune
 
