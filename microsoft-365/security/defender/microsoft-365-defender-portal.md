@@ -19,7 +19,7 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
-ms.custom: 
+ms.custom:
   - admindeeplinkDEFENDER
   - intro-overview
 ms.topic: conceptual
@@ -36,7 +36,7 @@ The [Microsoft 365 Defender portal](https://sip.security.microsoft.com/homepage)
 - **[Microsoft Defender for Identity](/defender-for-identity/what-is)** is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 
-Watch this short video to learn about the Microsoft 365 Defender portal.  
+Watch this short video to learn about the Microsoft 365 Defender portal.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
 ## What to expect
@@ -52,7 +52,7 @@ The Microsoft 365 Defender portal helps security teams investigate and respond t
 - Trials
 - Partner catalog
 
-Microsoft 365 Defender emphasizes *unity, clarity, and common goals*. 
+Microsoft 365 Defender emphasizes *unity, clarity, and common goals*.
 
 > [!NOTE]
 > The Microsoft 365 Defender portal is accessible without any need for customers to take migration steps or purchase a new license. For example, this new portal is accessible to administrators with an E3 subscription, just as it is to those with Microsoft Defender for Office 365 Plan 1 and Plan 2; however, Exchange Online Protection, or Defender for Office 365 Plan 1 customers see only the security features their subscription license supports. The goal of the portal is to centralize security.
@@ -108,20 +108,20 @@ You can add and remove different cards depending on your needs.
 
 ### Search across entities (Preview)
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 The search bar is located at the top of the page. As you type, suggestions are provided so that it's easier to find entities. The enhanced search results page centralizes the results from all entities.
 
-You can search across the following entities in Defender for Endpoint and Defender for Identity: 
+You can search across the following entities in Defender for Endpoint and Defender for Identity:
 
-- **Devices** - supported for both Defender for Endpoint and Defender for Identity. Supports use of search operators. 
-- **Users** - supported for Defender for Endpoint, Defender for Identity, and Defender for Cloud Apps. 
+- **Devices** - supported for both Defender for Endpoint and Defender for Identity. Supports use of search operators.
+- **Users** - supported for Defender for Endpoint, Defender for Identity, and Defender for Cloud Apps.
 - **Files, IPs, and URLs** - same capabilities as in Defender for Endpoint.
 
-    >[!NOTE]
-    >IP and URL searches are exact match and don't appear in the search results page – they lead directly to the entity page. 
+  > [!NOTE]
+  > IP and URL searches are exact match and don't appear in the search results page – they lead directly to the entity page.
 
-- **MDVM** -  same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations). 
+- **MDVM** - same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations).
 
 ## Threat analytics
 
@@ -149,9 +149,9 @@ Threat analytics is the Microsoft 365 Defender threat intelligence solution from
 ## Partner catalog
 
 Microsoft 365 Defender supports two types of partners:
-- Third-party integrations to help secure users with effective threat protection, detection, investigation, and response in various security fields of endpoints, vulnerability management, email, identities, and cloud apps.
-- Professional services where organizations can enhance the detection, investigation, and threat intelligence capabilities of the platform. 
 
+- Third-party integrations to help secure users with effective threat protection, detection, investigation, and response in various security fields of endpoints, vulnerability management, email, identities, and cloud apps.
+- Professional services where organizations can enhance the detection, investigation, and threat intelligence capabilities of the platform.
 
 ## Send us your feedback
 
@@ -179,7 +179,6 @@ With this learning path from Microsoft Learn, you can understand Microsoft 365 D
 
 > [!div class="nextstepaction"]
 > [Start >](/training/paths/defender-detect-respond/)
-
 
 ## See also
 
