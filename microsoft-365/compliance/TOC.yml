@@ -1759,7 +1759,7 @@
           href: compliance-manager-templates-extend.md
         - name: Format template data in Excel
           href: compliance-manager-templates-format-excel.md
-        - name: Working with data connectors
+        - name: Working with data connectors (preview)
           href: compliance-manager-connectors.md
         - name: Compliance Manager templates list
           href: compliance-manager-templates-list.md
