@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 12/03/2022
+ms.date: 03/06/2023
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
@@ -21,7 +21,7 @@ description: "Configure sensitivity labels to protect calendar items, and Teams 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> For this scenario, Outlook calendar events remain in preview and subject to change.
+> For this scenario, Outlook calendar events remain in preview for Windows, and rolling out in general availability for macOS.
 > 
 > You won't be able to configure all the options referenced on this page if a [Teams Premium license](/MicrosoftTeams/enhanced-teams-experience) isn't found for your tenant. For those settings, you'll see an information bar in the Microsoft Purview compliance portal that your organization doesn't have this license.
 
@@ -65,7 +65,7 @@ Example showing a Teams meeting invite that has the label **Highly confidential*
 To apply a sensitivity label to meeting invites and appointments using Outlook, users must use Outlook on the web from a desktop computer, or use built-in labeling from Microsoft 365 Apps for enterprise:
 
 - **Outlook for Windows**: Rolling out to Current Channel (Preview)
-- **Outlook for Mac**: Rolling out to Current Channel (Preview)
+- **Outlook for Mac**: Rolling out to version 16.70+
 
 The AIP add-in for Outlook doesn't support applying labels to meeting invites.
 
@@ -147,13 +147,13 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
 
 ## How to configure a sensitivity label to protect calendar items, Teams meetings, and chat
 
-1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Items** for the label's scope, and also select **Include meetings**: 
+1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Items** is selected for the [label's scope](sensitivity-labels.md#label-scopes), and also the options for **Files**, **Emails**, and **Meetings**: 
     
-    ![Sensitivity label scope options for files and emails.](../media/itemswithmeetings-scope-options-sensitivity-label.png)
+    :::image type="content" source="../media/itemswithmeetings-scope-options-sensitivity-label.png" alt-text="Sensitivity label scope options for Items that include Files, Emails, and Meetings.":::
 
 2. On the **Choose protection settings for labeled items** page:
-    - Select **Encrypt items** if you want to encrypt meeting invites and responses, and any Office attachment in that calendar item
-    - Select **Mark items** if you want to add headers or footers to meeting invites and responses
+    - Select **Apply or remove encryption** if you want to encrypt meeting invites and responses, and any Office attachment in that calendar item
+    - Select **Apply content marking** if you want to add headers or footers to meeting invites and responses
     - Select **Protect Teams meetings and chat** to display the label in Teams meetings and enforce Teams-specific settings for the Teams meeting itself and chat messages
 
 3. On the subsequent pages, configure settings for the options you've selected.
@@ -186,8 +186,6 @@ Other label policy settings that are specific just to calendar items, Teams meet
 #### Prevent copying chat to the clipboard label setting
 
 The label setting to prevent copying chat to the clipboard is enforced for all channel chats, even outside channel meetings. For non-channel meetings, it's enforced only for meetings.
-
-Currently, this setting isn't supported for users outside your organization, which includes anonymous users and external users. It is supported for guest user accounts in your tenant. For meetings, it's also not supported for users who join the chat but weren't invited to the meeting.
 
 This setting is currently unsupported for virtual desktop infrastructure (VDI).
 
