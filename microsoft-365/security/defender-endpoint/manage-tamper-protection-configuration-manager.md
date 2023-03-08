@@ -52,7 +52,7 @@ Using Configuration Manager with tenant attach, you can turn tamper protection o
 
 4. Finish selecting options and settings for your policy.
 
-5. Deploy the policy to your device collection.
+5. Deploy the policy to your devices.
 
 ## See also
 
