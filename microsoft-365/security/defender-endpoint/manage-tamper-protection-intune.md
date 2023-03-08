@@ -31,7 +31,10 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect your security settings from being disabled or changed. If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). With Intune, you can enable tamper protection for some or all devices. You can also tamper protect exclusions that are defined for Microsoft Defender Antivirus.
+[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). With Intune, you can:
+
+- Turn tamper protection on (or off) for some or all devices. 
+- Tamper protect exclusions that are defined for Microsoft Defender Antivirus.
 
 > [!IMPORTANT]
 > If you're using Microsoft Intune to manage Defender for Endpoint settings, we recommend setting [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on devices.
