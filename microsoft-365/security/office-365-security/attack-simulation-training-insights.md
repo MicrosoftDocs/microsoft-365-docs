@@ -59,7 +59,7 @@ The **Behavior impact on compromise rate** card on the **Overview** tab shows ho
 
 The chart data itself shows the following information:
 
-- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this simulation (users compromised / total number of users who receive the simulation). Learn more about Predicted compromise rate over here <[<https://security.microsoft.com/attacksimulator?viewid=overview#Predicted-Compromise-Rate](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/attack-simulation-training-get-started)>.
+- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this simulation (users compromised / total number of users who receive the simulation). Learn more about Predicted compromise rate over here <[<https://security.microsoft.com/attacksimulator?viewid=overview#Predicted-Compromise-Rate](/microsoft-365/security/office-365-security/attack-simulation-training-get-started)>.
 
 - **Actual compromise rate**: The actual percentage of people who were compromised by the simulation (actual users compromised / total number of users in your organization who received the simulation).
 
