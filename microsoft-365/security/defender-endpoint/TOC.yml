@@ -153,8 +153,6 @@
     items:
     - name: Onboard devices and configure Microsoft Defender for Endpoint capabilities
       href: onboard-configure.md
-    - name: Manage Defender for Endpoint P1/P2 across devices
-      href: defender-endpoint-subscription-settings.md
     - name: Onboarding Windows Client
       items:
       - name: Onboarding Windows Client overview
@@ -450,8 +448,6 @@
             href: attack-surface-reduction-rules-deployment-implement.md
           - name: Operationalize attack surface reduction (ASR) rules
             href: attack-surface-reduction-rules-deployment-operationalize.md
-          - name: Operationalize attack surface reduction (ASR) rules
-            href: attack-surface-reduction-rules-deployment-operationalize.md
         - name: Attack surface reduction (ASR) rules reference
           href: attack-surface-reduction-rules-reference.md
         - name: Attack surface reduction rules report
@@ -587,7 +583,7 @@
         - name: Manage tamper protection using Microsoft 365 Defender
           href: manage-tamper-protection-microsoft-365-defender.md
         - name: Manage tamper protection using Microsoft Intune
-          href: manage-tamper-protection-microsoft-endpoint-manager.md
+          href: manage-tamper-protection-intune.md
         - name: Manage tamper protection with Configuration Manager
           href: manage-tamper-protection-configuration-manager.md
         - name: Manage tamper protection on an individual device
@@ -700,12 +696,12 @@
         - name: Common mistakes to avoid
           href: common-exclusion-mistakes-microsoft-defender-antivirus.md
 
-      -  name: Troubleshooting mode for Defender for Endpoint
-         items:
-          - name: Get started with troubleshooting mode
-            href: enable-troubleshooting-mode.md
-          - name: Troubleshooting mode scenarios
-            href: troubleshooting-mode-scenarios.md
+      - name: Troubleshooting mode for Defender for Endpoint
+        items:
+        - name: Get started with troubleshooting mode
+          href: enable-troubleshooting-mode.md
+        - name: Troubleshooting mode scenarios
+          href: troubleshooting-mode-scenarios.md
 
       - name: Diagnostics and performance for Microsoft Defender Antivirus
         items:

@@ -226,7 +226,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by user impersonation protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
 
          A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for user impersonation detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown.
-  
+
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
 
