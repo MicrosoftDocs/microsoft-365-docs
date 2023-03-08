@@ -110,7 +110,7 @@ When you configure an auto-apply policy that uses sensitive information types an
 
 The location name for the SharePoint sites location changes, depending on whether you're using [adaptive policy scopes or static policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention). The name change reflects what type of sites are included:
 
-- Static policy scopes: **SharePoint classic and communications sites**
+- Static policy scopes: **SharePoint classic and communication sites**
     - Can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 Group mailboxes & sites** location that applies to content in the group's mailbox, site, and files.
 
 - Adaptive policy scopes: **SharePoint sites** 

@@ -426,7 +426,7 @@ Explanation for the four different principles:
 
     2. When you have retention policies only: If a retention policy for a location uses an adaptive scope or a static scope that includes specific instances (such as specific users for Exchange email) that retention policy takes precedence over a static scope that is configured for all instances for the same location.
 
-        A static scope that is configured for all instances for a location is sometimes referred to as an "org-wide policy". For example, **Exchange mailboxes** and the default setting of **All mailboxes**. Or, **SharePoint classic and communications sites** and the default setting of **All sites**. When retention policies aren't org-wide but have been configured with an adaptive scope or a static scope that includes specific instances, they have equal precedence at this level.
+        A static scope that is configured for all instances for a location is sometimes referred to as an "org-wide policy". For example, **Exchange mailboxes** and the default setting of **All mailboxes**. Or, **SharePoint classic and communication sites** and the default setting of **All sites**. When retention policies aren't org-wide but have been configured with an adaptive scope or a static scope that includes specific instances, they have equal precedence at this level.
 
         **Example 1 for this third principle (policies)**: An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
 
