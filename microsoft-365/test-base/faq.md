@@ -39,6 +39,10 @@ The Out-of-box (OOB) tests provide you with standardized telemetry on your appli
 **A:** Yes, customers can also upload application packages for **functional tests** via the self-serve portal dashboard.
 **Functional tests** are tests that enable customers to execute their scripts to run custom functionality on their application.
 
+**Q: How long does KB installation take?**
+
+**A:** The KB installation time can vary, the KB installation happens in between the install and launch scripts for OOB tests.
+
 ## Testing
 
 **Q: Do you support functional tests?**

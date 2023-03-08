@@ -64,7 +64,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Current Channel: 2107+ <br /><br> Monthly Enterprise Channel: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[PDF support](sensitivity-labels-office-apps.md#pdf-support)| Current Channel: 2208+ <br /><br> Monthly Enterprise Channel: 2209+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |  Under review | Under review | Under review | Under review |
 |[Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [display label color](sensitivity-labels-office-apps.md#label-colors) | Preview: [Current Channel (Preview)](https://office.com/insider) | Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | Under review |
-|[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)| Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) |  Under review | Under review | Under review | Under review |
+|[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)| Current Channel: Rolling out to 2302+ |  Under review | Under review | Under review | Under review |
 |[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails) | Current Channel: 2301+ | 16.69+ | Preview: Rolling out to [Beta Channel](https://insider.office.com/join/ios) | Preview: Rolling out to [Beta Channel](https://insider.office.com/join/android)| [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 
 ## Sensitivity label capabilities in Outlook
@@ -97,7 +97,7 @@ The numbers listed are the minimum Office application versions required for each
 |[PDF support](sensitivity-labels-office-apps.md#pdf-support) | Current Channel: 2205+ <br /><br> Monthly Enterprise Channel: 2205+ <br /><br> Semi-Annual Enterprise Channel: Under review|  Under review | Under review | Under review | Under review |
 |[Apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) | Current Channel: 2211+ <br /><br> Monthly Enterprise Channel: 2211+ <br /><br> Semi-Annual Enterprise Channel: 2302+ | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | Under review |
 |[Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [display label color](sensitivity-labels-office-apps.md#label-colors) | Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | Under review | Under review |
-|[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)| Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | Under review | Under review |
+|[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)| Current Channel: Rolling out to 2302+ | Under review | Under review | Under review | Under review |
 |[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails) | Current Channel: 2301+ | Rolling out: 16.70+ <sup>\*</sup> | Rolling out 4.2309+| Rolling out 4.2309+ | Yes |
 
 **Footnotes:**
