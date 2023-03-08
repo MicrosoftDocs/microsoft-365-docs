@@ -25,7 +25,7 @@ description: "Build assessments in Microsoft Purview Compliance Manager to help 
 
 **In this article:** Learn how to customize Compliance Manager for your organization by creating and managing **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, accepting **updates**, and exporting assessment **reports**.
 
-**New**: With integrated third-party data connectors, you can now can build assessments for services other than Microsoft to help you manage compliance across your digital estate. See [Set up connectors](#set-up-connectors) below for details.
+**New**: With integrated third-party data connectors, you can now can build assessments for services other than Microsoft to help you manage compliance across your digital estate. See [Set up connectors (preview)](#set-up-connectors-preview) below for details.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -84,42 +84,18 @@ You create a group during the process of building a new assessment. Here are imp
 
 ## Set up connectors (preview)
 
-Compliance Manager has an integrated set of third-party data connectors so that you can build assessments that cover services other than Microsoft, such as SalesForce or Dropbox. You can select the connectors you need within Compliance Manager. Then when you build your assessment, you'll select from among the connectors you've already set up.
+Compliance Manager has an integrated set of third-party data connectors so that you can build assessments that cover services other than Microsoft, such as SalesForce and Dropbox. You can select the connectors you need within Compliance Manager. Then when you build your assessment, you'll select from among the connectors you've already set up.
 
-- Visit [Working with data connectors](compliance-manager-connectors.md) for details about when and how to set up connectors
+- Visit [Working with data connectors](compliance-manager-connectors.md) to learn which connectors are available and how to set them up.
 - Setting up connectors for your assessments are covered in step XYZ of the [guided process for creating assessments](#create-an-assessment-using-a-guided-process), below.
 - Get more general information about [third-party data connectors](archiving-third-party-data.md).
-
-#### Available connectors
-The Compliance Manager integrated connectors currently available in preview are are:
-
-- Adobe Experience Manager
-- Adobe Experience Platform
-- Box
-- Confluence
-- DocuSign
-- Dropbox
-- Jira
-- QuickBooks
-- Salesforce
-- Shopify
-- Webex
-- Zoom
-
-#### How to set up connectors
-
-Follow the steps below to set up Compliance Manager connectors:
-
-1. In Compliance Manager, select **Data connectors** in the upper right of your screen. 
-1. You'll arrive at the Compliance Manager page within the **Data connectors** section of the Microsoft Purview compliance portal. This page lists the available connectors. Select the checkbox next to the name of the connector you want to add.
-1. 
 
 ## Create assessments
 
 > [!NOTE]
 > Only users who hold a Global Administrator, Compliance Manager Administration, or Compliance Manager Assessor role can create and modify assessments. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-Before you begin, be sure you know which group you'll assign it to, or be prepared to create a new group for this assessment. Read details about [groups and assessments](#understand-groups-before-creating-assessments).
+Before you begin, be sure you know which group you'll assign it to, or be prepared to create a new group for this assessment. Read details about [groups and assessments](#groups-for-assessments).
 
 To create an assessment, you'll use a guided process to select a template and designate the associated product. On your **Assessments** page, we suggest starting with **Add Recommended Assessments**, which helps you identify and quickly set up the most relevant assessments for your organization all at once. You can also set up assessments one at a time by selecting **Add assessment**. Follow the steps below to begin building assessments.
 

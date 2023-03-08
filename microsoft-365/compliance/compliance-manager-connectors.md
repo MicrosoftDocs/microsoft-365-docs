@@ -48,8 +48,12 @@ The Compliance Manager integrated connectors currently available in preview are 
 
 ## Connector setup
 
-Follow the steps below to set up Compliance Manager connectors:
+Before creating an assessment, you'll need to set up a connector for the service you're assessing. Follow the steps below to set up Compliance Manager connectors:
 
 1. In Compliance Manager, select **Data connectors** in the upper right of your screen. 
 1. You'll arrive at the Compliance Manager page within the **Data connectors** section of the Microsoft Purview compliance portal. This page lists the available connectors. Select the checkbox next to the name of the connector you want to add.
 1. 
+
+## How connectors work
+
+Get into elliot's service instance doc - define service instance.
