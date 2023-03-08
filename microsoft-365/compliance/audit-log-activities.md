@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -41,153 +42,161 @@ Select one of the following links to go to a specific table.
 
 :::row:::
     :::column:::
+        [Sensitive information types  ](#sensitive-information-types)
+    :::column-end:::
+    :::column:::
         [Sharing and access request activities](#sharing-and-access-request-activities)
     :::column-end:::
     :::column:::
         [Synchronization activities](#synchronization-activities)
     :::column-end:::
-    :::column:::
-        [Site permissions activities](#site-permissions-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Site permissions activities](#site-permissions-activities)
+    :::column-end:::
     :::column:::
         [Site administration activities](#site-administration-activities)
     :::column-end:::
     :::column:::
         [Exchange mailbox activities](#exchange-mailbox-activities)
     :::column-end:::
-    :::column:::
-        [User administration activities](#user-administration-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [User administration activities](#user-administration-activities)
+    :::column-end:::
     :::column:::
         [Azure AD group administration activities](#azure-ad-group-administration-activities)
     :::column-end:::
     :::column:::
         [Application administration activities](#application-administration-activities)
     :::column-end:::
-    :::column:::
-        [Role administration activities](#role-administration-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Role administration activities](#role-administration-activities)
+    :::column-end:::
     :::column:::
         [Directory administration activities](#directory-administration-activities)
     :::column-end:::
     :::column:::
         [eDiscovery activities](#ediscovery-activities)
     :::column-end:::
-    :::column:::
-        [eDiscovery (Premium) activities](#ediscovery-premium-activities)
-    :::column-end:::
+
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [eDiscovery (Premium) activities](#ediscovery-premium-activities)
+    :::column-end:::
     :::column:::
         [Power BI activities](#power-bi-activities)
     :::column-end:::
     :::column:::
         [Microsoft Workplace Analytics](#workplace-analytics-activities)
     :::column-end:::
-    :::column:::
-        [Microsoft Teams activities](#microsoft-teams-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Microsoft Teams activities](#microsoft-teams-activities)
+    :::column-end:::
     :::column:::
         [Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)
     :::column-end:::
     :::column:::
         [Microsoft Teams Shifts activities](#microsoft-teams-shifts-activities)
     :::column-end:::
-    :::column:::
-        [Yammer activities](#yammer-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Yammer activities](#yammer-activities)
+    :::column-end:::
     :::column:::
         [Microsoft Power Automate activities](#microsoft-power-automate-activities)
     :::column-end:::
     :::column:::
         [Microsoft Power Apps activities](#microsoft-power-apps-activities)
     :::column-end:::
-    :::column:::
-        [Microsoft Stream activities](#microsoft-stream-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Microsoft Stream activities](#microsoft-stream-activities)
+    :::column-end:::
     :::column:::
         [Content explorer activities](#content-explorer-activities)
     :::column-end:::
     :::column:::
         [Quarantine activities](#quarantine-activities)
     :::column-end:::
-    :::column:::
-        [Microsoft Forms activities](#microsoft-forms-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Microsoft Forms activities](#microsoft-forms-activities)
+    :::column-end:::
     :::column:::
         [Sensitivity label activities](#sensitivity-label-activities)
     :::column-end:::
     :::column:::
         [Retention policy and retention label activities](#retention-policy-and-retention-label-activities)
     :::column-end:::
-    :::column:::
-        [Briefing email activities](#briefing-email-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
+        [Briefing email activities](#briefing-email-activities)
+    :::column-end:::
+       :::column:::
         [MyAnalytics activities](#myanalytics-activities)
     :::column-end:::
     :::column:::
         [Information barriers activities](#information-barriers-activities)
-    :::column-end:::
-    :::column:::
-        [Disposition review activities](#disposition-review-activities)
-    :::column-end:::
+    :::column-end::: 
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Disposition review activities](#disposition-review-activities)
+    :::column-end:::
     :::column:::
         [Communication compliance activities](#communication-compliance-activities)
     :::column-end:::
     :::column:::
         [Report activities](#report-activities)
     :::column-end:::
-    :::column:::
-        [Exchange admin activities](#exchange-admin-audit-log)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Exchange admin activities](#exchange-admin-audit-log)
+    :::column-end:::
     :::column:::
         [Encrypted message portal activities](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
         [SystemSync activities](#systemsync-activities)
     :::column-end:::
+:::row-end:::
+
+:::row:::
     :::column:::
-        
+        [Viva Goals activities](#viva-goals-activities)
     :::column-end:::
 :::row-end:::
+
 
 ## File and page activities
 
 The following table describes the file and page activities in SharePoint Online and OneDrive for Business.
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Accessed file|FileAccessed|User or system account accesses a file. Once a user accesses a file, the FileAccessed event isn't logged again for the same user for same file for the next five minutes.|
 |(none)|FileAccessedExtended|This is related to the "Accessed file" (FileAccessed) activity. A FileAccessedExtended event is logged when the same person continually accesses a file for an extended period (up to 3 hours). <br/><br/> The purpose of logging FileAccessedExtended events is to reduce the number of FileAccessed events that are logged when a file is continually accessed. This helps reduce the noise of multiple FileAccessed records for what is essentially the same user activity, and lets you focus on the initial (and more important) FileAccessed event.|
@@ -259,7 +268,7 @@ In these and other scenarios, you'll also notice that multiple audit records wit
 
 The following table describes the folder activities in SharePoint Online and OneDrive for Business. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Copied folder|FolderCopied|User copies a folder from a site to another location in SharePoint or OneDrive for Business.|
 |Created folder|FolderCreated|User creates a folder on a site.|
@@ -271,11 +280,20 @@ The following table describes the folder activities in SharePoint Online and One
 |Renamed folder|FolderRenamed|User renames a folder on a site.|
 |Restored folder|FolderRestored|User restores a deleted folder from the recycle bin on a site.|
 
+## Sensitive information types
+The following table describes the audit events for activities involving creation and updating of [sensitive information types](/microsoft-365/compliance/create-a-custom-sensitive-information-type).
+
+|Friendly name|Operation|Description|
+|:-----|:-----|:-----|
+|Created new sensitive information type| CreateRulePackage /  EditRulePackage* | A new sensitive information type was [created](/microsoft-365/compliance/create-a-custom-sensitive-information-type). This includes SIT created by copying an [out of the box SIT](/microsoft-365/compliance/create-a-custom-sensitive-information-type). </br><p>**Note**: This activity will surface under the audit activities “Created rule package” or “Edited rule package.” </p>|
+|Edited a sensitive information type|EditRulePackage| An existing sensitive information type was edited. This can include operations like adding/removing a pattern and editing the regex/keyword associated with the sensitive information type. </br><p>**Note:** This activity will surface under the audit activity "Edited rule package."</p> |
+| Deleted a sensitive information type|EditRulePackage / RemoveRulePackage | An existing sensitive information type was deleted. </br><p>**Note:** This activity will surface under the audit activity “Edited rule package” or “Removed rule package.”</p> |
+
 ## SharePoint list activities
 
 The following table describes activities related to when users interact with lists and list items in SharePoint Online. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Created list|ListCreated|A user created a SharePoint list.|
 |Created list column|ListColumnCreated|A user created a SharePoint list column. A list column is a column that's attached to one or more SharePoint lists.|
@@ -306,7 +324,7 @@ The following table describes the user sharing and access request activities in 
 > [!NOTE]
 > Users can be either  *members*  or  *guests*  based on the UserType property of the user object. A member is usually an employee, and a guest is usually a collaborator outside of your organization. When a user accepts a sharing invitation (and isn't already part of your organization), a guest account is created for them in your organization's directory. Once the guest user has an account in your directory, resources may be shared directly with them (without requiring an invitation).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Added permission level to site collection|PermissionLevelAdded|A permission level was added to a site collection.|
 |Accepted access request|AccessRequestAccepted|An access request to a site, folder, or document was accepted and the requesting user has been granted access.|
@@ -337,7 +355,7 @@ The following table describes the user sharing and access request activities in 
 
 The following table lists file synchronization activities in SharePoint Online and OneDrive for Business.
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Allowed computer to sync files|ManagedSyncClientAllowed|User successfully establishes a sync relationship with a site. The sync relationship is successful because the user's computer is a member of a domain that's been added to the list of domains (called the *safe recipients list*) that can access document libraries in your organization. <br/><br/> For more information about this feature, see [Use PowerShell cmdlets to enable OneDrive sync for domains that are on the safe recipients list](/powershell/module/sharepoint-online/).|
 |Blocked computer from syncing files|UnmanagedSyncClientBlocked|User tries to establish a sync relationship with a site from a computer that isn't a member of your organization's domain or is a member of a domain that hasn't been added to the list of domains (called the  *safe recipients list)*  that can access document libraries in your organization. The sync relationship isn't allowed, and the user's computer is blocked from syncing, downloading, or uploading files on a document library. <br/><br/> For information about this feature, see [Use PowerShell cmdlets to enable OneDrive sync for domains that are on the safe recipients list](/powershell/module/sharepoint-online/).|
@@ -350,7 +368,7 @@ The following table lists file synchronization activities in SharePoint Online a
 
 The following table lists events related to assigning permissions in SharePoint and using groups to give (and revoke) access to sites. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Added site collection admin|SiteCollectionAdminAdded|Site collection administrator or owner adds a person as a site collection administrator for a site. Site collection administrators have full control permissions for the site collection and all subsites. This activity is also logged when an admin gives themselves access to a user's OneDrive account (by editing the user profile in the SharePoint admin center or by [using the Microsoft 365 admin center](/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)).|
 |Added user or group to SharePoint group|AddedToGroup|User added a member or guest to a SharePoint group. This might have been an intentional action or the result of another activity, such as a sharing event.|
@@ -373,7 +391,7 @@ The following table lists events related to assigning permissions in SharePoint 
 
 The following table lists events that result from site administration tasks in SharePoint Online. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Added allowed data location|AllowedDataLocationAdded|A SharePoint or global administrator added an allowed data location in a multi-geo environment.|
 |Added exempt user agent|ExemptUserAgentSet|A SharePoint or global administrator added a user agent to the list of exempt user agents in the SharePoint admin center.|
@@ -413,7 +431,7 @@ The following table lists the activities that can be logged by mailbox audit log
 
  You can also search for mailbox activities by using the [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Accessed mailbox items|MailItemsAccessed|Messages were read or accessed in mailbox. Audit records for this activity are triggered in one of two ways: when a mail client (such as Outlook) performs a bind operation on messages or when mail protocols (such as Exchange ActiveSync or IMAP) sync items in a mail folder. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. Analyzing audit records for this activity is useful when investigating compromised email account. For more information, see the "Audit (Premium) events" section in [Audit (Premium)](audit-premium.md#audit-premium-events). |
 |Added delegate mailbox permissions|Add-MailboxPermission|An administrator assigned the FullAccess mailbox permission to a user (known as a delegate) to another person's mailbox. The FullAccess permission allows the delegate to open the other person's mailbox, and read and manage the contents of the mailbox. The audit record for this activity is also generated when a system account in the Microsoft 365 service periodically performs maintenance tasks in behalf of your organization. A common task performed by a system account is updating the permissions for system mailboxes. For more information, see [System accounts in Exchange mailbox audit records](#system-accounts-in-exchange-mailbox-audit-records).|
@@ -452,7 +470,7 @@ The following table lists user administration activities that are logged when an
 > [!NOTE]
 > The operation names listed in the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
 
-|**Activity**|**Operation**|**Description**|
+|Activity|Operation|Description|
 |:-----|:-----|:-----|
 |Added user|Add user.|A user account was created.|
 |Changed user license|Change user license.|The license assigned to a user what changed. To see what licenses were changes, see the corresponding **Updated user** activity.|
@@ -470,7 +488,7 @@ The following table lists group administration activities that are logged when a
 > [!NOTE]
 > The operation names listed in the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Added group|Add group.|A group was created.|
 |Added member to group|Add member to group.|A member was added to a group.|
@@ -485,7 +503,7 @@ The following table lists application admin activities that are logged when an a
 > [!NOTE]
 > The operation names listed in the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Added delegation entry|Add delegation entry.|An authentication permission was created/granted to an application in Azure AD.|
 |Added service principal|Add service principal.|An application was registered in Azure AD. An application is represented by a service principal in the directory.|
@@ -502,7 +520,7 @@ The following table lists Azure AD role administration activities that are logge
 > [!NOTE]
 > The operation names listed in the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
 
-|**Friendly name**|Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Add member to Role|Add member to role.|Added a user to an admin role in Microsoft 365.|
 |Removed a user from a directory role|Remove member from role.|Removed a user to from an admin role in Microsoft 365.|
@@ -515,7 +533,7 @@ The following table lists Azure AD directory and domain-related activities that 
 > [!NOTE]
 > The operation names listed in the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Added domain to company|Add domain to company.|Added a domain to your organization.|
 |Added a partner to the directory|Add partner to company.|Added a partner (delegated administrator) to your organization.|
@@ -559,7 +577,7 @@ Audit logging for Power BI isn't enabled by default. To search for Power BI acti
 
 Workplace Analytics provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](/workplace-analytics/index-orig).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Accessed OData link|AccessedOdataLink|Analyst accessed the OData link for a query.|
 |Canceled query|CanceledQuery|Analyst canceled a running query.|
@@ -602,7 +620,7 @@ The following table lists the user and admin activities in Yammer that are logge
 > [!NOTE]
 > Some Yammer audit activities are only available in Audit (Premium). That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Audit (Premium), see [Audit (Premium) in Microsoft 365](audit-premium.md#audit-premium-events). For Audit (Premium) licensing requirements, see [Auditing solutions in Microsoft 365](audit-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Audit (Premium) activities are highlighted with an asterisk (*).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Changed data retention policy|SoftDeleteSettingsUpdated|Verified admin updates the setting for the network data retention policy to either Hard Delete or Soft Delete. Only verified admins can perform this operation.|
 |Changed network configuration|NetworkConfigurationUpdated|Network or verified admin changes the Yammer network's configuration. This includes setting the interval for exporting data and enabling chat.|
@@ -619,6 +637,7 @@ The following table lists the user and admin activities in Yammer that are logge
 |Failed to access community<sup>*</sup>|CommunityAccessFailure|User failed to access a community.|
 |Failed to access file<sup>*</sup>|FileAccessFailure|User failed to access a file.|
 |Failed to access message<sup>*</sup>|MessageAccessFailure|User failed to access a message.|
+|Reacted to message|MarkedMessageChanged|User reacted to a message.|
 |Shared file|FileShared|User shares a file with another user.|
 |Suspended network user|NetworkUserSuspended|Network or verified admin suspends (deactivates) a user from Yammer.|
 |Suspended user|UserSuspension|User account is suspended (deactivated).|
@@ -644,7 +663,7 @@ You can search the audit log for activities in Microsoft Stream. These activitie
 
 The following table lists the activities in content explorer that are logged in the audit log. Content explorer, which is accessed on the Data classifications tool in the compliance portal. For more information, see [Using data classification content explorer](data-classification-content-explorer.md).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Accessed item|LabelContentExplorerAccessedItem|An admin (or a user who's a member of the Content Explorer Content Viewer role group) uses content explorer to view an email message or SharePoint/OneDrive document.|
 
@@ -652,7 +671,7 @@ The following table lists the activities in content explorer that are logged in 
 
 The following table lists the quarantine activities that you can search for in the audit log. For more information about quarantine, see [Quarantine email messages](../security/office-365-security/quarantine-about.md).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Deleted quarantine message|QuarantineDelete|An Admin or user deleted an email message that was deemed to be harmful.|
 |Exported quarantine message|QuarantineExport|An Admin or  user exported an email message that was deemed to be harmful.|
@@ -670,7 +689,7 @@ If a Forms activity is performed by a coauthor or an anonymous responder, it wil
 > [!NOTE]
 > Some Forms audit activities are only available in Audit (Premium). That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Audit (Premium), see [Audit (Premium) in Microsoft 365](advanced-audit.md#audit-premium-events). For Audit (Premium) licensing requirements, see [Auditing solutions in Microsoft 365](audit-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Audit (Premium) activities are highlighted with an asterisk (*).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Created comment|CreateComment|Form owner adds comment or score to a quiz.|
 |Created form|CreateForm|Form owner creates a new form. <br><br>Property DataMode:string indicates the current form is set to sync with a new or existing Excel workbook if the property value equals DataSync. Property ExcelWorkbookLink:string indicates the associated Excel workbook ID of the current form.|
@@ -725,7 +744,7 @@ Forms supports collaboration when forms are designed and when analyzing response
 
 The following table describes the auditing activities and information in the audit record for activities performed by coauthors and anonymous responders.
 
-|**Activity type**|**Internal or external user**|**User ID that's logged**|**Organization logged in to**|**Forms user type**|
+|Activity type|Internal or external user|User ID that's logged|Organization logged in to|Forms user type|
 |:-----|:-----|:-----|:-----|:-----|
 |Coauthoring activities|Internal|UPN|Form owner's org|Coauthor|
 |Coauthoring activities|External|UPN<br>|Coauthor's org<br>|Coauthor|
@@ -736,22 +755,29 @@ The following table describes the auditing activities and information in the aud
 
 ## Sensitivity label activities
 
-The following table lists events that result from using [sensitivity labels](sensitivity-labels.md).
+The following table lists events that result from using [sensitivity labels](sensitivity-labels.md) with sites and items that are managed by Microsoft Purview. Items include documents, emails, and calendar events. For auto-labeling policies, items also include files and schematized data assets in Microsoft Purview Data Map.
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Applied sensitivity label to site|SiteSensitivityLabelApplied|A sensitivity label was applied to a SharePoint or Teams site.|
-|Removed sensitivity label from site|SiteSensitivityLabelRemoved|A sensitivity label was removed from a SharePoint or Teams site.|
-|Applied sensitivity label to file|FileSensitivityLabelApplied|A sensitivity label was applied to a document by using Microsoft 365 apps, Office on the web, or an auto-labeling policy.|
-|Changed sensitivity label applied to file|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|A different sensitivity label was applied to a document. <br /><br>The operations for this activity are different depending on how the label was changed:<br /> - Office on the web or an auto-labeling policy (FileSensitivityLabelChanged) <br /> - Microsoft 365 apps (SensitivityLabelUpdated)|
-|Changed sensitivity label on a site|SiteSensitivityLabelChanged|A different sensitivity label was applied to a SharePoint or Teams site.|
-|Removed sensitivity label from file|FileSensitivityLabelRemoved|A sensitivity label was removed from a document by using Microsoft 365 apps, Office on the web, an auto-labeling policy, or the [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet.|
+|Applied sensitivity label to site|SiteSensitivityLabelApplied|A sensitivity label was applied to a SharePoint site or Teams site that isn't group-connected.|
+|Removed sensitivity label from site|SiteSensitivityLabelRemoved|A sensitivity label was removed from a SharePoint site or Teams site that isn't group-connected.|
+|Applied sensitivity label to file|FileSensitivityLabelApplied <br /><br> SensitivityLabelApplied|A sensitivity label was applied to an item by using Microsoft 365 apps, Office on the web, or an auto-labeling policy. <br /><br>The operations for this activity are different depending on how the label was applied:<br /> - Office on the web or an auto-labeling policy (FileSensitivityLabelApplied) <br /> - Microsoft 365 apps (SensitivityLabelApplied)|
+|Changed sensitivity label applied to file|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|A different sensitivity label was applied to an item. <br /><br>The operations for this activity are different depending on how the label was changed:<br /> - Office on the web or an auto-labeling policy (FileSensitivityLabelChanged) <br /> - Microsoft 365 apps (SensitivityLabelUpdated)|
+|Changed sensitivity label on a site|SiteSensitivityLabelChanged|A different sensitivity label was applied to a SharePoint site or Teams site that isn't group-connected.|
+|Removed sensitivity label from file|FileSensitivityLabelRemoved <br /><br> SensitivityLabelRemoved|A sensitivity label was removed from an item by using Microsoft 365 apps, Office on the web, an auto-labeling policy, or the [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet. <br /><br>The operations for this activity are different depending on how the label was removed:<br /> - Office on the web or an auto-labeling policy (FileSensitivityLabelRemoved) <br /> - Microsoft 365 apps (SensitivityLabelRemoved)|
+
+Additional auditing information for sensitivity labels:
+- When you use sensitivity labels for Microsoft 365 Groups, and therefore Teams sites that are group-connected, the labels are audited with group management in Azure Active Directory. For more information, see [Audit logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
+- When you use sensitivity labels for Teams meeting invites, and Teams meeting options and chat, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events).
+- When you use sensitivity labels with Power BI, see [Audit schema for sensitivity labels in Power BI](/power-bi/enterprise/service-security-sensitivity-label-audit-schema).
+- When you use sensitivity labels with Microsoft Defender for cloud apps, see [Governing connected apps](/defender-cloud-apps/governance-actions) and the labeling information for file governance actions.
+- When you apply sensitivity labels by using the Azure Information Protection client or scanner, or the Microsoft Purview Information Protection (MIP) SDK, see [Azure Information Protection audit log reference](/azure/information-protection/audit-logs).
 
 ## Retention policy and retention label activities
 
 The following table describes the configuration activities for [retention policies and retention labels](retention.md) when they were created, reconfigured, or deleted.
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 | Changed adaptive scope membership |ApplicableAdaptiveScopeChange |Users, sites, or groups were added to or removed from the adaptive scope. These changes are the results of running the scope's query. Because the changes are system-initiated, the reported user displays as a GUID rather than a user account.|
 | Configured settings for a retention policy |NewRetentionComplianceRule |Administrator configured the retention settings for a new retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) cmdlet.|
@@ -775,7 +801,7 @@ The following table lists the activities in Briefing email that are logged in th
 - [Overview of Briefing email](/Briefing/be-overview)
 - [Configure Briefing email](/Briefing/be-admin)
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:----|:-----|:-----|
 |Updated organization privacy settings|UpdatedOrganizationBriefingSettings|Admin updates the organization privacy settings for Briefing email. |
 |Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email.
@@ -784,7 +810,7 @@ The following table lists the activities in Briefing email that are logged in th
 
 The following table lists the activities in MyAnalytics that are logged in the Microsoft 365 audit log. For more information about MyAnalytics, see [MyAnalytics for admins](/workplace-analytics/myanalytics/overview/mya-for-admins).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for MyAnalytics. |
 |Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for MyAnalytics.|
@@ -793,7 +819,7 @@ The following table lists the activities in MyAnalytics that are logged in the M
 
 The following table lists the activities in information barriers that are logged in the Microsoft 365 audit log. For more information about information barriers, see [Learn about information barriers in Microsoft 365](information-barriers.md).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:----------------|:------------|:--------------|
 | Added segments to a site | SegmentsAdded | A SharePoint, global administrator, or site owner added one or more information barriers segments to a site. |
 | Changed segments of a site | SegmentsChanged | A SharePoint or global administrator changed one or more information barriers segments for a site. |
@@ -803,7 +829,7 @@ The following table lists the activities in information barriers that are logged
 
 The following table lists the activities a disposition reviewer took when an item reached the end of its configured retention period. For more information, see [Viewing and disposing of content](disposition.md#viewing-and-disposing-of-content).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Approved disposal|ApproveDisposal|A disposition reviewer approved the disposition of the item to move it to the next disposition stage. If the item was in the only or final stage of disposition review, the disposition approval marked the item as eligible for permanent deletion.|
 |Extended retention period|ExtendRetention|A disposition reviewer extended the retention period of the item.|
@@ -814,7 +840,7 @@ The following table lists the activities a disposition reviewer took when an ite
 
 The following table lists communication compliance activities that are logged in the Microsoft 365 audit log. For more information, see [Learn about Microsoft Purview Communication Compliance](communication-compliance.md).
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Policy update|SupervisionPolicyCreated, SupervisionPolicyUpdated, SupervisionPolicyDeleted|A communication compliance administrator has performed a policy update.|
 |Policy match|SupervisionRuleMatch|A user has sent a message that matches a policy's condition.|
@@ -867,9 +893,36 @@ Each audit entry for a tracked message will contain the following fields:
 
 The following table lists the activities for SystemSync that are logged in the Microsoft 365 audit log.
 
-|**Friendly name**|**Operation**|**Description**|
+|Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Data Share Created|DataShareCreated|When the data export is created by the user.|
 |Data Share Deleted|DataShareDeleted|When the data export is deleted by the user.|
 |Generate Copy Of Lake Data|GenerateCopyOfLakeData|When the copy of Lake Data is generated.|
 |Download Copy Of Lake Data|DownloadCopyOfLakeData|When the copy of Lake Data is downloaded.|
+
+## Viva Goals activities
+
+The following table lists the user and admin activities in Viva Goals that are logged for auditing. The table includes the friendly name that's displayed in the Activities column and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results.
+
+[Search the audit log in the Microsoft Purview compliance portal](audit-log-search.md) details how you can search for the audit logs from the compliance portal. The user needs to be a global admin or have audit read permissions to access audit logs. You can use the Activities filter to search for specific activities and to list all Viva Goals activities you can choose 'VivaGoals' in the Record type filter. You can also use the date range boxes and the Users list to narrow the search results further.
+
+|Friendly name|Operation|Description|
+|:-----|:-----|:-----|
+|Organization created  |Organization created  |Admin or the user has created a new organization on Viva Goals.  |
+|User added |User added |A new user has been added to an organization on Viva Goals.  |
+|User deactivated |User deactivated |A user has been deactivated in an organization. |
+|User deleted |User deleted|A user has been deleted from an organization on Viva Goals. |
+|User logged in |User logged in |User has logged into Viva Goals. |
+|Team added |Team added |A new team has been created within an organization on Viva Goals. |
+|Team updated |Team updated |A team within an organization on Viva Goals has been modified or updated.  |
+|Team deleted |Team deleted |A team within an organization on Viva Goals has been deleted by the user.|
+|Data exported |Data exported |A user has exported list of OKRs or list of users in an organization on Viva Goals.|
+|Goals policy updated |Goals policy updated |The global admin has modified the policy or settings at the tenant level on Viva Goals. For example, the global admin has configured who can create organizations on Viva Goals.  |
+|Organization settings updated |Organization settings updated |The user (typically Organization owners or admins) has updated organization specific settings on Viva Goals.  |
+|Organization  integrations updated |Organization  integrations updated |The user (typically Organization owners or admins) has configured a third party integration or updated an existing third party integration for an organization on Viva Goals.  |
+|OKR or Project created |OKR or Project created |User has created an OKR or Project on Viva Goals.  |
+|OKR or Project updated |OKR or Project updated |An OKR/Project has been modified or a check-in has been made by the user or an integration on Viva Goals.  |
+|OKR or Project deleted |OKR or Project deleted |User has deleted an OKR or Project.  |
+|Dashboard created |Dashboard created |User has created a new dashboard on Viva Goals |
+|Dashboard updated |Dashboard updated |User has updated a dashboard on Viva Goals |
+|Dashboard deleted |Dashboard deleted |User has deleted a dashboard on Viva Goals.  |

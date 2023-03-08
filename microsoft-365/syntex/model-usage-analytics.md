@@ -4,8 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 09/23/2022
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -19,13 +20,11 @@ description: Learn how to find more information about how your AI models are per
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhX]  
 
 </br>
---->
 
 Your content center in Microsoft Syntex provides you model usage analytics to provide more information about how your models that have been published from the content center are being used. The **How your models are performing in the last 30 days** section of the content center includes a 30 day roll-up of usage analytics data provided in the following charts and lists:
 
@@ -72,4 +71,3 @@ Each model in the model usage list will show the usage data:
 - Classified item count: Number of files processed by the model.
 - Average confidence score: Average accuracy score of the model when run against files.
 - Target list URL: The SharePoint document library to which the model is applied.
-

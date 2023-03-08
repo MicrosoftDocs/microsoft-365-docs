@@ -3,7 +3,7 @@ title: "Microsoft Purview support for double byte character set release notes"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 08/05/2020
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp

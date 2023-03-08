@@ -4,12 +4,14 @@ ms.author: danismith
 author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman 
+ms.date: 10/31/2022
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu
+- tier2
 ms.localizationpriority: medium
 description: Learn how you can integrate Microsoft Teams Meetings LTI with any LMS that is LTI 1.3 compliant.
 ---

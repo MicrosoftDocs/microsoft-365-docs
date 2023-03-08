@@ -23,7 +23,9 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 07/15/2021
 ---
+
 # Step 2. Perform a SOC integration readiness assessment using the Zero Trust Framework
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+ms.date: 09/17/2019
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -20,7 +21,7 @@ description: "This article presents a list of the filters that can be encoded in
 
 # Custom sensitive information type filters reference
 
-In Microsoft you can define filters or other checks while creating a custom sensitive information types (SIT).
+In Microsoft Purview, you can define filters or other checks while creating a custom sensitive information type (SIT).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -28,16 +29,16 @@ In Microsoft you can define filters or other checks while creating a custom sens
 
 ### AllDigitsSame Exclude
 
-Description: Allows you to exclude matches that have all digits as duplicate digits, like 111111111 or 111-111-111
+Description: Allows you to exclude matches that have all digits as duplicate digits, such as 111111111 or 111-111-111
 
-Defining filters
+Defining filters:
 ```xml
 <Filters id="ssn_filters">
     <Filter type="AllDigitsSameFilter"></Filter>
 </Filters>
 ```
 
-Using it in rule package at the entity level
+Using it in rule package at the entity level:
 ```xml
 <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85"  filters="ssn_filters">
       <Pattern confidenceLevel="85">
@@ -46,7 +47,7 @@ Using it in rule package at the entity level
 </Entity>
 ```
 
-Using it in rule package at the pattern level
+Using it in rule package at the pattern level:
 ```xml
 <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85"  filters="ssn_filters">
@@ -57,9 +58,9 @@ Using it in rule package at the pattern level
 
 ### TextMatchFilter StartsWith 
 
-Description: Allows you to define the starting characters for the entity. It has two variants, include and exclude.
+Description: Allows you to define the starting characters for the entity. It has two variants, *exclude* and *include*.
 
-For example to exclude the numbers starting with 0500, 91, 091, 010 in a list like this:
+For example, to *exclude* the numbers starting with 0500, 91, 091, 010 in a list like this:
 
 - 0500-4500-027
 - 91564721450
@@ -68,7 +69,7 @@ For example to exclude the numbers starting with 0500, 91, 091, 010 in a list li
 - 1000-3265-9874
 - 0100-7892-3012
 
-You can use the following xml
+you can use the following XML:
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -85,7 +86,7 @@ You can use the following xml
     </Group>
   </Keyword>
 ```
-For example, to include the numbers starting with 0500, 91, 091, 0100 in a list like this: 
+Similarly, to *include* the numbers starting with 0500, 91, 091, 0100 in a list like this: 
 
 - 0500-4500-027
 - 91564721450
@@ -94,7 +95,7 @@ For example, to include the numbers starting with 0500, 91, 091, 0100 in a list 
 - 1000-3265-9874
 - 0100-7892-3012
 
-You can use the following xml
+you can use the following XML:
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -102,18 +103,18 @@ You can use the following xml
 </Filter>
 ```
 
-### TextMatchFilter EndsWith 
+### TextMatchFilter EndsWith
 
-Description: Allows you to define the ending characters for the entity. 
+Description: Allows you to define the ending characters for the entity.
 
-For example, to exclude the numbers ending with 0500,91,091, 0100 in a list like this:
+For example, to *exclude* the numbers ending with 0500,91,091, 0100 in a list like this:
 
 - 1234567891
 - 1234-5678-0091
 - 1234.4567.7091
 - 1234-8091-4564
 
-You can use the following xml
+you can use the following XML:
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -130,14 +131,14 @@ You can use the following xml
   </Keyword>
 ```
 
-For example, to include the numbers ending with 0500, 91, 091, 0100, in a list like this:
+For example, to *include* the numbers ending with 0500, 91, 091, 0100, in a list like this:
 
 - 1234567891
 - 1234-5678-0091
 - 1234.4567.7091
 - 1234-8091-4564
 
-You can use the following xml
+You can use the following XML:
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -147,15 +148,15 @@ You can use the following xml
 
 ### TextMatchFilter Full
 
-Description: Allows you to prohibit certain matches to prevent them from triggering the rule. For example, exclude 4111111111111111 from the list of valid credit card matches.
+Description: Allows you to prohibit certain matches to prevent them from triggering the rule, such as excluding 4111111111111111 from the list of valid credit card matches.
 
-For example, to exclude credit card numbers like 4111111111111111 and 3241891031113111 in a list like this:
+For example, to *exclude* credit card numbers like 4111111111111111 and 3241891031113111 in a list like this:
 
 - 4485 3647 3952 7352
 - 4111111111111111
 - 3241891031113111
 
-You can use the following xml
+you can use the following XML:
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -170,13 +171,13 @@ You can use the following xml
   </Keyword>
 ```
 
-For example, to include credit card numbers like 4111111111111111 and 3241891031113111 in a list like this:
+Likewise, to *include* credit card numbers like 4111111111111111 and 3241891031113111 in a list like this:
 
 - 4485 3647 3952 7352
 - 4111111111111111
 - 3241891031113111
 
-You can use the following xml
+you can use the following XML:
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -186,7 +187,7 @@ You can use the following xml
 
 ### TextMatchFilter Prefix
 
-Description: Allows you to define the preceding characters that should be always included or excluded. For example, if Credit card number is preceded by ‘Order ID:’ then remove the match from the valid matches.
+Description: Allows you to define the preceding characters that should be always excluded or included. For example, if **Credit card number** is preceded by ‘Order ID:’, then remove the match from the valid matches.
 
 For example, to exclude occurrences of phone numbers that have **Phone number** and **call me at** strings before the phone number, in a list like this:
 
@@ -194,7 +195,7 @@ For example, to exclude occurrences of phone numbers that have **Phone number** 
 - Phone 45-124576532-123
 - 45-124576532-123
 
-You can use the following xml
+you can use the following XML:
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -208,12 +209,12 @@ You can use the following xml
   </Keyword>
 ```
 
-For example, to include occurrences that have **credit card** and **card #** strings before the credit card number, in a list like this:
+Similarly, to include occurrences that have **credit card** and **card #** strings before the credit card number, in a list like this:
 
 - Credit card 45-124576532-123 
 - 45-124576532-123  (which could be phone number)
 
-You can use the following xml
+you can use the following XML:
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -230,14 +231,14 @@ You can use the following xml
 
 ### TextMatchFilter Suffix
 
-Description: Allows you to define the following characters that should be always included or excluded. For example, if Credit card number is followed by ‘/xuid’ then remove the match from the valid matches.
+Description: Allows you to define the following characters that should be always excluded or included. For example, if Credit card number is followed by ‘/xuid’ then remove the match from the valid matches.
 
 For example, top exclude occurrences if there are five more instances of four digits as suffix in a list like this:
 
 - 1234-5678-9321 4500 9870 6321 48925566
 - 1234-5678-9321
 
-You can use the following xml
+you can use the following XML:
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -246,12 +247,12 @@ You can use the following xml
 
   <Regexid="Regex_false_positives_suffix">(\d{4}){5,}</Regex>
 ```
-For example, to exclude occurrences if they are followed by **/xuidsuffix**, like one in this list:
+You can also exclude occurrences if they are followed by **/xuidsuffix**, like the one in this list:
 
 - 1234-5678-9321 /xuid
 - 1234-5678-9321
 
-You can use this xml
+you can use this XML:
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -265,13 +266,13 @@ You can use this xml
   </Keyword>
 ```
 
-For example, to include an occurrence only if it is followed by **cvv** or **expires**, like two in this list:
+Similarly, to include an occurrence only if it is followed by **cvv** or **expires**, such as the two in this list:
 
 - 45-124576532-123 
 - 45-124576532-123  cvv 966
 - 45-124576532-123  expires 03/23
 
-You can use this xml
+you can use this XML:
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -288,13 +289,13 @@ You can use this xml
 
 ## Using filters in rule packages
 
-Filters can be defined on the entire SIT or on a pattern. Here are some code snippets examples. 
+Filters can be defined on the entire SIT or on a pattern. Here are some examples.
 
-### At sensitive information type level
+### At the sensitive information type level
 
 Filters at Entity - will cover all child patterns
 
-The filters will be applied on **all** the instances classified by any of the patterns in that entity / sensitive type
+The filters will be applied to **all** the instances classified by any of the patterns in that entity / sensitive information type.
 
 ```xml
 <Entity id="6443b88f-2808-482a-8e1a-3ae5026645e1" patternsProximity="300" recommendedConfidence="85" filters="CompositeFiltersAtEntityLevel">
@@ -308,7 +309,7 @@ The filters will be applied on **all** the instances classified by any of the pa
 
 Filters only at the pattern level.
 
-The filter will be applied on the instances matched by the pattern.
+The filter will be applied to only the instances matched by the pattern.
 
 ```xml
 <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
@@ -319,11 +320,11 @@ The filter will be applied on the instances matched by the pattern.
 ```
 
 
-### At sensitive information type level and an additional filter on some of the patterns of that entity
+### At the sensitive information type level with an additional filter on some of the patterns of that entity
 
 Filters at Entity + pattern
 
-The filters will be applied on **all** the instances classified by any of the patterns in that entity / sensitive type. The pattern level filter will filter the instances matched by that pattern.
+The filters will be applied to **all** the instances classified by any of the patterns in that entity / sensitive information type. The pattern level filter will filter the instances matched by that pattern.
 
 ```xml
 <Entity id="6443b88f-2808-482a-8e1a-3ae5026645e1" patternsProximity="300" recommendedConfidence="85" filters="CompositeFiltersAtEntityLevel">
@@ -331,9 +332,7 @@ The filters will be applied on **all** the instances classified by any of the pa
         <IdMatch idRef="Regex_denmark_id" />
       </Pattern>
 </Entity>
-``` 
-
- 
+```
 
 ## More information
 

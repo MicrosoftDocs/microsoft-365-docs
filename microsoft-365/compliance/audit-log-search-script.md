@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -74,7 +75,7 @@ After you've connected to Exchange Online PowerShell, the next step is to create
    
    #Start script
    [DateTime]$currentStart = $start
-   [DateTime]$currentEnd = $start
+   [DateTime]$currentEnd = $end
    
    Function Write-LogFile ([String]$Message)
    {

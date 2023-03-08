@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: dacurwin
-author: dcurwin
+ms.author: diannegali
+author: diannegali
 manager: dansimp
 ms.date: 07/06/2022
 audience: ITPro
@@ -50,7 +50,7 @@ The table below lists the changes in navigation between Microsoft Defender for I
 | Alert page                 | Microsoft 365 Defender Alert page                            |
 | Search                     | Microsoft 365 Defender Search                                |
 | Health center              | Settings -> Identities -> Sensors                            |
-| Entity Activities          | Advanced hunting                                             |
+| Entity Activities          | Advanced hunting <br> Device timeline <br> Identity timeline                                             |
 | Settings                   | Settings -> Identities                                       |
 | Users and accounts         | Assets -> Identities                                         |
 | Identity security posture  | [Microsoft Defender for Identity's security posture assessments](/defender-for-identity/security-assessment) |

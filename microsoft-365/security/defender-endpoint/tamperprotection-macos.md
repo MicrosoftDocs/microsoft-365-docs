@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 05/10/2022
 ---
 
 # Protect macOS security settings with tamper protection
@@ -217,7 +218,7 @@ Configure tamper protection mode in Microsoft Defender for Endpoint [configurati
 ```
 
 > [!NOTE]
-> If you already have a configuration profile for Microsoft Defender for Endpoint then you need to *add* settings to it. You don't need to create a second configuration profile.
+> If you already have a configuration profile for Microsoft Defender for Endpoint then you need to *add* settings to it. You should not create a second configuration profile.
 
 ### Intune
 

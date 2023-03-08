@@ -1,6 +1,6 @@
 ---
-title: Switch to Microsoft Defender for Endpoint - Prepare
-description: Get ready to make the switch to Microsoft Defender for Endpoint. Update your devices and configure your network connections.
+title: Migrate to Microsoft Defender for Endpoint - Prepare
+description: Get ready to move to Microsoft Defender for Endpoint. Update your devices and configure your network connections.
 keywords: migration, Microsoft Defender for Endpoint, best practice
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER
-ms.date: 01/06/2023
+ms.date: 01/12/2023
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
 ---
 
-# Switch to Microsoft Defender for Endpoint - Phase 1: Prepare
+# Migrate to Microsoft Defender for Endpoint - Phase 1: Prepare
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -37,16 +37,16 @@ search.appverid: met150
 |--|--|--|
 |*You are here!*| | |
 
-**Welcome to the Prepare phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**.
+**Welcome to the Prepare phase of [migrating to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**.
 
 This migration phase includes the following steps:
 
-1. [Get and deploy updates across your organization's devices](#get-and-deploy-updates-across-your-organizations-devices).
-2. [Get Microsoft Defender for Endpoint Plan 1 or Plan 2](#get-microsoft-defender-for-endpoint-plan-1-or-plan-2).
-3. [Grant access to the Microsoft 365 Defender portal](#grant-access-to-the-microsoft-365-defender-portal).
-4. [Review more information about device proxy and internet connectivity settings](#more-information-about-device-proxy-and-internet-connectivity-settings).
+1. [Get and deploy updates across your organization's devices](#step-1-get-and-deploy-updates-across-your-organizations-devices).
+2. [Get Microsoft Defender for Endpoint Plan 1 or Plan 2](#step-2-get-microsoft-defender-for-endpoint-plan-1-or-plan-2).
+3. [Grant access to the Microsoft 365 Defender portal](#step-3-grant-access-to-the-microsoft-365-defender-portal).
+4. [Review more information about device proxy and internet connectivity settings](#step-4-view-information-about-device-proxy-and-internet-connectivity-settings).
 
-## Get and deploy updates across your organization's devices
+## Step 1: Get and deploy updates across your organization's devices
 
 As a best practice, keep your organization's devices and endpoints up to date. Make sure your existing endpoint protection and antivirus solution is up to date, and that your organization's operating systems and apps also have the latest updates. Getting updates installed now can help prevent problems later as you migrate to Defender for Endpoint and employ Microsoft Defender Antivirus on all your devices.
 
@@ -66,7 +66,7 @@ Need help with updating your organization's devices? See the following resources
 |Android|[Check & update your Android version](https://support.google.com/android/answer/7680439)|
 |Linux|[Linux 101: Updating Your System](https://www.linux.com/training-tutorials/linux-101-updating-your-system)|
 
-## Get Microsoft Defender for Endpoint Plan 1 or Plan 2
+## Step 2: Get Microsoft Defender for Endpoint Plan 1 or Plan 2
 
 Now that you've updated your organization's devices, the next step is to get Defender for Endpoint, assign licenses, and make sure the service is provisioned.
 
@@ -83,7 +83,7 @@ At this point, you're ready to grant access to your security administrators and 
 > [!TIP]
 > The Microsoft 365 Defender portal is accessed at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. The former Microsoft Defender Security Center (https://securitycenter.windows.com) now redirects to the Microsoft 365 Defender portal. To learn more, see [Microsoft 365 Defender portal overview](portal-overview.md).
 
-## Grant access to the Microsoft 365 Defender portal
+## Step 3: Grant access to the Microsoft 365 Defender portal
 
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> is where you and your security team will access and configure features and capabilities of Defender for Endpoint. To learn more, see [Overview of the Microsoft 365 Defender portal](use.md).
 
@@ -101,7 +101,7 @@ Permissions to the Microsoft 365 Defender portal can be granted by using either 
 
 3. Grant your security team access to the Microsoft 365 Defender portal. (Need help? See [Manage portal access using RBAC](rbac.md).
 
-## More information about device proxy and internet connectivity settings
+## Step 4: View information about device proxy and internet connectivity settings
 
 To enable communication between your devices and Defender for Endpoint, you might have to configure proxy and internet settings. The following table includes links to resources you can use to configure your proxy and internet settings for various operating systems:
 
@@ -117,7 +117,7 @@ To enable communication between your devices and Defender for Endpoint, you migh
 \* Windows Server 2016 and Windows Server 2012 R2 require installation of the modern, unified solution for Windows Server 2012 R2 and 2016. For more information, see [Onboard Windows servers to Defender for Endpoint: Windows Server 2012 R2 and Windows Server 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016).
 
 > [!IMPORTANT]
-> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, you'll need an additional license, such as [Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). 
+> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, you'll need an additional license, such as either Defender for Endpoint for Servers, or [Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
 ## Next step
 

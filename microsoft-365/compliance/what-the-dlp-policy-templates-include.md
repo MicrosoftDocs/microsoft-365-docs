@@ -134,7 +134,15 @@ Microsoft Purview Data Loss Prevention (DLP) in the Microsoft Purview compliance
 |:-----|:-----|:-----|
 |Low volume EU Sensitive content found  <br/> | Content contains sensitive information:  <br/>  EU Debit Card Number - Min count 1, Max count 9  <br/>  EU Driver's License Number - Min count 1, Max count 9  <br/>  EU National Identification Number - Min count 1, Max count 9  <br/>  EU Passport Number - Min count 1, Max count 9  <br/>  EU Social Security Number (SSN) or Equivalent ID - Min count 1, Max count 9  <br/>  EU Tax Identification Number (TIN) - Min count 1, Max count 9  <br/>  Content is shared with:  <br/>  People outside my organization  <br/> |Send incident reports to Administrator  <br/> |
 |High volume of EU Sensitive content found  <br/> | Content contains sensitive information:  <br/>  EU Debit Card Number - Min count 10, Max count 500  <br/>  EU Driver's License Number - Min count 10, Max count 500  <br/>  EU National Identification Number - Min count 10, Max count 500  <br/>  EU Passport Number - Min count 10, Max count 500  <br/>  EU Social Security Number (SSN) or Equivalent ID - Min count 10, Max count 500  <br/>  EU Tax Identification Number (TIN) - Min count 10, Max count 500  <br/>  Content is shared with:  <br/>  People outside my organization  <br/> | Restrict access to the content for external users  <br/>  Notify users with email and policy tips  <br/>  Allow override  <br/>  Require business justification  <br/>  Send incident reports to Administrator  <br/> |
-   
+
+
+## Enhanced General Data Protection Regulation (GDPR)
+
+|**Rule name**|**Conditions  <br/> (including sensitive information types & trainable classifiers)**|**Actions**|
+|:-----|:-----|:-----|
+|Low volume EU Sensitive content found  <br/> | Content contains sensitive information:  <br/>  EU Debit Card Number - Min count 1, Max count 9  <br/>  EU Driver's License Number - Min count 1, Max count 9  <br/>  EU National Identification Number - Min count 1, Max count 9  <br/>  EU Passport Number - Min count 1, Max count 9  <br/>  EU Social Security Number (SSN) or Equivalent ID - Min count 1, Max count 9  <br/>  EU Tax Identification Number (TIN) - Min count 1, Max count 9  <br/> Contains content matching any of the following trainable classifiers: <br/> HR <br/> Tax <br/> Invoice <br/> Healthcare <br/> Health/Medical Forms <br/> Employee disciplinary action files<br/> Legal affairs <br/> Agreements <br/> Content is shared with:  <br/>  People outside my organization  <br/> |Send incident reports to Administrator  <br/> |
+|High volume of EU Sensitive content found  <br/> | Content contains sensitive information:  <br/>  EU Debit Card Number - Min count 10, Max count 500  <br/>  EU Driver's License Number - Min count 10, Max count 500  <br/>  EU National Identification Number - Min count 10, Max count 500  <br/>  EU Passport Number - Min count 10, Max count 500  <br/>  EU Social Security Number (SSN) or Equivalent ID - Min count 10, Max count 500  <br/>  EU Tax Identification Number (TIN) - Min count 10, Max count 500  <br/> Contains content matching any of the following trainable classifiers: <br/> HR <br/> Tax <br/> Invoice <br/> Healthcare <br/> Health/Medical Forms <br/> Employee disciplinary action files<br/> Legal affairs <br/> Agreements <br/> Content is shared with:  <br/>  People outside my organization  <br/> | Restrict access to the content for external users  <br/>  Notify users with email and policy tips  <br/>  Allow override  <br/>  Require business justification  <br/>  Send incident reports to Administrator  <br/> |
+     
 ## Germany Financial Data
 
 |**Rule name**|**Conditions  <br/> (including sensitive information types)**|**Actions**|
@@ -281,12 +289,25 @@ Microsoft Purview Data Loss Prevention (DLP) in the Microsoft Purview compliance
 |:-----|:-----|:-----|
 |U.S. GLBA: Scan content shared outside - low count  <br/> | Content contains sensitive information:  <br/>  Credit Card Number - Min count 1, Max count 9  <br/>  U.S. Bank Account Number - Min count 1, Max count 9  <br/>  U.S. Individual Taxpayer Identification Number (ITIN) - Min count 1, Max count 9  <br/>  U.S. Social Security Number (SSN) - Min count 1, Max count 9  <br/>  Content is shared with:  <br/>  People outside my organization  <br/> |Send a notification  <br/> |
 |U.S. GLBA: Scan content shared outside - high count  <br/> | Content contains sensitive information:  <br/>  Credit Card Number - Min count 10, Max count 500  <br/>  U.S. Bank Account Number - Min count 10, Max count 500  <br/>  U.S. Individual Taxpayer Identification Number (ITIN) - Min count 10, Max count 500  <br/>  U.S. Social Security Number (SSN) - Min count 10, Max count 500  <br/>  Content is shared with:  <br/>  People outside my organization  <br/> | Block access to content  <br/>  Send a notification  <br/>  Allow override  <br/>  Require business justification  <br/>  Send incident report  <br/> |
+
+## Enhanced U.S. Gramm-Leach-Bliley Act (GLBA)
+
+|**Rule name**|**Conditions  <br/> (including sensitive information types & trainable classifiers)**|**Actions**|
+|:-----|:-----|:-----|
+|U.S. GLBA: Scan content shared outside - low count  <br/> | Content contains sensitive information:  <br/>  Credit Card Number - Min count 1, Max count 9  <br/>  U.S. Bank Account Number - Min count 1, Max count 9  <br/>  U.S. Individual Taxpayer Identification Number (ITIN) - Min count 1, Max count 9  <br/>  U.S. Social Security Number (SSN) - Min count 1, Max count 9  <br/> Contains content matching any of the following trainable classifiers: <br/> Tax <br/> Finance <br/> Budget <br/> Content is shared with:  <br/>  People outside my organization  <br/> |Send a notification  <br/> |
+|U.S. GLBA: Scan content shared outside - high count  <br/> | Content contains sensitive information:  <br/>  Credit Card Number - Min count 10, Max count 500  <br/>  U.S. Bank Account Number - Min count 10, Max count 500  <br/>  U.S. Individual Taxpayer Identification Number (ITIN) - Min count 10, Max count 500  <br/>  U.S. Social Security Number (SSN) - Min count 10, Max count 500  <br/>  Contains content matching any of the following trainable classifiers: <br/> Tax <br/> Finance <br/> Budget <br/> Content is shared with:  <br/>  People outside my organization  <br/> | Block access to content  <br/>  Send a notification  <br/>  Allow override  <br/>  Require business justification  <br/>  Send incident report  <br/> |
    
 ## U.S. Health Insurance Act (HIPAA)
 
 |**Rule name**|**Conditions  <br/> (including sensitive information types)**|**Actions**|
 |:-----|:-----|:-----|
 |Content matches U.S. HIPAA  <br/> | Contains any of the following sensitive information:  <br/>  U.S. Social Security Number (SSN) - Min count 1, Max count any  <br/>  Drug Enforcement Agency (DEA) Number - Min count 1, Max count any  <br/> **AND** <br/>  Content contains any of these terms:  <br/>  International Classification of Diseases (ICD-9-CM) - Min count 1, Max count any  <br/>  International Classification of Diseases (ICD-10-CM) - Min count 1, Max count any  <br/>  Content is shared with:  <br/>  People outside my organization  <br/> |Send a notification  <br/> |
+
+## Enhanced U.S. Health Insurance Act (HIPAA)
+
+|**Rule name**|**Conditions  <br/> (including sensitive information types & trainable classifiers)**|**Actions**|
+|:-----|:-----|:-----|
+|Content matches U.S. HIPAA  <br/> | Contains any of the following sensitive information:  <br/>  U.S. Social Security Number (SSN) - Min count 1, Max count any  <br/>  Drug Enforcement Agency (DEA) Number - Min count 1, Max count any  <br/> **AND** <br/>  Content contains any of these terms:  <br/>  International Classification of Diseases (ICD-9-CM) - Min count 1, Max count any  <br/>  International Classification of Diseases (ICD-10-CM) - Min count 1, Max count any  <br/> Contains content matching any of the following trainable classifiers: <br/> Healthcare <br/> Employee Insurance Files <br/> Health/Medical Forms </br> Content is shared with:  <br/>  People outside my organization  <br/> |Send a notification  <br/> |
    
 ## U.S. Patriot Act
 
@@ -301,6 +322,13 @@ Microsoft Purview Data Loss Prevention (DLP) in the Microsoft Purview compliance
 |:-----|:-----|:-----|
 |U.S. PII: Scan content shared outside - low count  <br/> | Content contains sensitive information:  <br/>  U.S. Individual Taxpayer Identification Number (ITIN) - Min count 1, Max count 9  <br/>  U.S. Social Security Number (SSN) - Min count 1, Max count 9  <br/>  U.S. / U.K. Passport Number - Min count 1, Max count 9  <br/>  Content is shared with:  <br/>  People outside my organization  <br/> |Send a notification  <br/> |
 |U.S. PII: Scan content shared outside - high count  <br/> | Content contains sensitive information:  <br/>  U.S. Individual Taxpayer Identification Number (ITIN) - Min count 10, Max count 500  <br/>  U.S. Social Security Number (SSN) - Min count 10, Max count 500  <br/>  U.S. / U.K. Passport Number - Min count 10, Max count 500  <br/>  Content is shared with:  <br/>  People outside my organization  <br/> | Block access to content  <br/>  Send a notification  <br/>  Allow override  <br/>  Require business justification  <br/>  Send incident report  <br/> |
+
+## Enhanced U.S. Personally Identifiable Information (PII) Data
+
+|**Rule name**|**Conditions  <br/> (including sensitive information types & trainable classifiers)**|**Actions**|
+|:-----|:-----|:-----|
+|U.S. PII: Scan content shared outside - low count  <br/> | Content contains sensitive information:  <br/>  U.S. Individual Taxpayer Identification Number (ITIN) - Min count 1, Max count 9  <br/>  U.S. Social Security Number (SSN) - Min count 1, Max count 9  <br/>  U.S. / U.K. Passport Number - Min count 1, Max count 9  <br/> Contains content matching any of the following trainable classifiers: <br/> HR <br/> Tax <br/> Invoice <br/> Healthcare <br/> Health/Medical Forms <br/> Employee disciplinary action files <br/> Legal affairs <br/> Agreements <br/> Content is shared with:  <br/>  People outside my organization  <br/> |Send a notification  <br/> |
+|U.S. PII: Scan content shared outside - high count  <br/> | Content contains sensitive information:  <br/>  U.S. Individual Taxpayer Identification Number (ITIN) - Min count 10, Max count 500  <br/>  U.S. Social Security Number (SSN) - Min count 10, Max count 500  <br/>  U.S. / U.K. Passport Number - Min count 10, Max count 500  <br/> Contains content matching any of the following trainable classifiers: <br/> HR <br/> Tax <br/> Invoice <br/> Healthcare <br/> Health/Medical Forms <br/> Employee disciplinary action files <br/> Legal affairs <br/> Agreements <br/> Content is shared with:  <br/>  People outside my organization  <br/> | Block access to content  <br/>  Send a notification  <br/>  Allow override  <br/>  Require business justification  <br/>  Send incident report  <br/> |
    
 ## U.S. State Breach Notification Laws
 

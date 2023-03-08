@@ -3,9 +3,10 @@ title: Work with explanations for unstructured document processing models in Pow
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
+ms.date: 06/18/2022
 manager: ssquires
 audience: admin
-ms.topic: article
+ms.topic: reference
 ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic

@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+author: Dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 06/04/2021
 ---
 
 # Export software vulnerabilities assessment per device
@@ -368,7 +369,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 ### 3.4 Parameters
 
-- sinceTime (required): The data between a selected time and today.
+- sinceTime (required): The start time from which you want to see data changes. Vulnerability management generates data on new and updated vulnerabilities every 6 hours. The data returned will include all the changes captured in the 6 hour period the specified sinceTime falls into, along with the changes in any subsequent 6 hour periods up to and including the most recently generated data.
 - pageSize (default = 50,000): number of results in response.
 - $top: number of results to return (doesn't return @odata.nextLink and so doesn't pull all the data).
 

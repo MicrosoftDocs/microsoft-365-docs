@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 04/15/2021
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -43,6 +43,7 @@ DLP policy tips in Outlook Web Access is supported for all the conditions, and a
 - Document name matches patterns
 - Document content contains words or phrases
 - Document content matches patterns
+- Any email attachment's content didn't complete scanning
 
 **Actions:**
 

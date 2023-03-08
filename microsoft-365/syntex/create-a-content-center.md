@@ -4,8 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 07/01/2022
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.custom: admindeeplinkSPO
@@ -20,19 +21,17 @@ description: Learn how to create a content center in Microsoft Syntex.
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CPSF]
 
 </br>
---->
 
 To create and manage enterprise models, you first need a content center. The content center is the model creation interface and also contains information about which document libraries published models have been applied to.
 
-   ![Select a doc library.](../media/content-understanding/content-center-page.png)
-
 You create a default content center during [setup](set-up-content-understanding.md). But a SharePoint admin can also choose to create additional centers as needed. While a single content center might be fine for environments for which you want a roll-up of all model activity, you might want to have additional centers for multiple departments within your organization, which might have different needs and permission requirements for their models.
+
+   ![Select a doc library.](../media/content-understanding/content-center-page.png)
 
 Additionally, if you want to try Syntex, you can create a content center using the instructions in this article without purchasing licenses. Unlicensed users can create models but can't apply them to a document library.
 
@@ -78,5 +77,3 @@ The **Models** library in the default content center view groups the created mod
 ## See also
 
 [Overview of model types](model-types-overview.md)
-
-
