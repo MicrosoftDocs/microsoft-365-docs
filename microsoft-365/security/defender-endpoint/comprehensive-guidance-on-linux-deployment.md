@@ -27,6 +27,7 @@ This article provides advanced deployment guidance for Microsoft Defender for En
 For information about Microsoft Defender for Endpoint capabilities, see [Advanced Microsoft Defender for Endpoint capabilities](#advanced-microsoft-defender-for-endpoint-capabilities).
 
 To learn about other ways to deploy Microsoft Defender for Endpoint on Linux, see:
+
 - [Manual deployment](linux-install-manually.md)
 - [Puppet based deployment](linux-install-with-puppet.md)
 - [Ansible based deployment](linux-install-with-ansible.md)
@@ -40,8 +41,8 @@ Learn about the general guidance on a typical Microsoft Defender for Endpoint on
 
 [2. Capture performance data from the endpoint.](#2-capture-performance-data-from-the-endpoint)
 
->[!NOTE]
->Consider doing the following optional items, even though they are not Microsoft Defender for Endpoint specific, they tend to improve performance in Linux systems.
+> [!NOTE]
+> Consider doing the following optional items, even though they are not Microsoft Defender for Endpoint specific, they tend to improve performance in Linux systems.
 
 [3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk).](#3-optional-check-for-filesystem-errors-fsck-akin-to-chkdsk)
 
@@ -106,8 +107,8 @@ Use the following steps to check the network connectivity of Microsoft Defender 
     - WW
     - (Blanks)
 
-    >[!NOTE]
-    >You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an allow rule specifically for them.
+    > [!NOTE]
+    > You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an allow rule specifically for them.
 
 3. Work with the Firewall/Proxy/Networking admins to allow the relevant URLs.
 
@@ -306,7 +307,7 @@ Set up your device groups, device collections, and organizational units Device g
   }
   ```
 
-  **Recommendations**:
+**Recommendations**:
 
   ```JSON
          {
@@ -398,7 +399,7 @@ High I/O workloads such as Postgres, OracleDB, Jira, and Jenkins may require add
 You can refer to these documents for more information if you experience performance degredation:
 
 - [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).
-- [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux ](troubleshoot-auditd-performance-issues.md).
+- [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](troubleshoot-auditd-performance-issues.md).
 
 ## 11. Download the Microsoft Defender for Endpoint on Linux onboarding package
 
