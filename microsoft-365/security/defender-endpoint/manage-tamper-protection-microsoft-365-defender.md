@@ -6,7 +6,7 @@ description: Turn tamper protection on or off for your tenant using the Microsof
 keywords: malware, defender, antivirus, tamper protection, Microsoft 365 Defender
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/08/2023
+ms.date: 03/09/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
