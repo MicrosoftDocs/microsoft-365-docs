@@ -251,7 +251,7 @@ Endpoint
 Endpoint + Teams
 -->
 
-### Scenario 2 Show policy tip as oversharing popup
+### Scenario 2 Show policy tip as oversharing popup (preview)
 
 > [!IMPORTANT]
 > This is a hypothetical scenario with hypothetical values. It's only for illustrative purposes. You should substitute your own sensitive information types, sensitivity labels, distribution groups and users.
