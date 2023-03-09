@@ -91,7 +91,8 @@ On the incident page:
 - A yellow banner at the top of the page that highlights the automatic action taken
 - The current asset status is shown in the incident graph if an action is done on an asset, e.g., account disabled or device contained
 
-For more information see 'view attack disruption details and results'.
+For more information see [view attack disruption details and results](autoad-results.md).
+
 
 ## Next steps
 
