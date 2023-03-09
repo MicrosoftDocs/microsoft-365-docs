@@ -50,7 +50,7 @@ OCR scanning is an optional feature in Microsoft Purview. When you enable optica
 
 OCR is first enabled at the tenant level, and then you select which services you want to enable it for. For this preview, image scanning is available for stand-alone images in Exchange Online, Teams, SharePoint Online, OneDrive for business and Windows endpoint devices.
 
-During the preview, this feature is available for free. When the preview is over, to continue to use OCR scans, your organization must have an Azure account that includes this feature. For information on creating an account, refer to [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/syntex/syntex-azure-billing)
+During the preview, this feature is available for free. When the preview is over, to continue to use OCR scans, your organization must have an Azure account that includes this feature. The instructions for setting up an account for the OCR feature are the same as those described in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/syntex/syntex-azure-billing)
 
 ## Limits
 
