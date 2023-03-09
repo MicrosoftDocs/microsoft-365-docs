@@ -71,7 +71,7 @@ To add an authentication context
 
 3. Type a name and description and select the **Publish to apps** check box.
 
-    ![Screenshot of add authentication context UI](../media/aad-add-authentication-context.png)
+    ![Screenshot of add authentication context UI.](../media/aad-add-authentication-context.png)
 
 4. Click **Save**.
 
