@@ -29,3 +29,7 @@ Document libraries can have multiple move and copy rules to support moving and c
 
 > [!NOTE]
 > This feature is available only for users who are licensed for Syntex.
+
+## See also
+
+[Create a rule to move or copy a file from one document library to another](content-processing-create-rules.md)
