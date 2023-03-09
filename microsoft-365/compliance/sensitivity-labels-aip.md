@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 03/09/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -197,9 +197,9 @@ The following configurations from the AIP add-in that aren't yet supported by bu
 
 - [Label inheritance from email attachments](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 - [Oversharing popup messages for Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
-    - The equivalent of this configuration is now rolling out in preview. For more information, see the scenario guidance to [show a policy tip when users overshare](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup)
+    - The equivalent of this configuration is now rolling out in preview. For more information, see the scenario guidance to [show a policy tip as oversharing popup](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup)
 - [Default sublabel for a parent label](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#specify-a-default-sublabel-for-a-parent-label)
-    - This option is currently rolling out in preview. For more information, see [Specify a default sublabel for a parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)
+    - This option is currently rolling out in preview. For more information, see [Specify a default sublabel for a parent label](sensitivity-labels-office-apps.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)
 - [Remove external content markings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution)
 
 ## Features not planned to be supported by built-in labeling for Office apps
