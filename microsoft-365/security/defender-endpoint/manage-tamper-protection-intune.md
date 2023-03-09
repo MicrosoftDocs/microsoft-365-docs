@@ -114,7 +114,7 @@ You can use a registry key to determine whether the functionality to protect Mic
    - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device. (*If you meet all the requirements and this state seems incorrect, contact support*.)
 
 > [!CAUTION]
-> Do not change the value of the registry keys. Use the preceding procedure for information only. Changing keys will have no effect on whether tamper protection applies to exclusions.
+> **Do not change the value of the registry keys**. Use the preceding procedure for information only. Changing keys will have no effect on whether tamper protection applies to exclusions.
 
 ## See also
 
