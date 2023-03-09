@@ -35,14 +35,27 @@ When you create or edit an eDiscovery search for a collection, the option to dis
 
 ## Using the query builder
 
-The following sections outline the steps to get started with the query builder and examples of how the query builder can create custom filtering for your search queries.
+After you've selected **Use new query builder***, you're ready to get started. To create a query and custom filtering for your search, you'll use the following controls:
 
-### Create filters in the query builder
+- **AND/OR**: This operator allows you to select the query operator that applies to specific filters and filter subgroups.
+- **Select a filter**: Allows you to select filters for the specific data sources and location content selected for the collection.
+- **Add filter**: Allows you to add multiple filters to your query. Is available after you've defined at least one query filter.
+- **Select an operator**: Depending on the selected filter, the operators compatible for the filter are available to select. For example, if the *Date* filter is selected, the available operators are *Before*, *After*, and *Between*. If the *Size (in bytes)* filter is selected, the available operators are *Greater than*, *Greater or equal*, *Less than*, *Less or equal*, *Between*, and *Equal*.
+- **Value**: Depending on the selected filter, the values compatible for the filter are available. Additionally, some filters support multiple values and some filters support one specific value. For example, if the *Date* filter is selected, you'll select date values. If the *Size (in bytes)* filter is selected, you'll select a value for bytes.
+- **Add subgroup**: After you've defined a filter, you can add a subgroup to refine the results returned by the filter. You can add also add a subgroup to a subgroup for multi-layered query refinement.
+- **Clear all**: 
+- **Remove a filter condition**
 
-### Create filters with subgroups in the query builder
+### Scenario example
 
-### Using the AND / OR operators
+The eDiscovery administrator needs to create a query to find emails from Aimee Miller to Adam Eham, Adele Vance, or Aditya Dash that were sent between February 9, 2023 and March 9, 2023 that contain the keywords *compliance* and *audit*. For this example, the administrator creates the following query using the new query builder:
 
-### Scenario example 1
+1. For the first filter, the administrator selects *Sender*, then selects the *Equals any of* operator, then selects *Aimee Miller* from the list of users available in the **Value** control.
+2. Next, the administrator selects **Add subgroup** and the **OR** operator to define the other users that Aimee may have sent an email to about the compliance audit.
+3. In the subgroup, the administrator selects the *To* filter, the *Equals any of* operator, and the *Value (user)* for each of the other users that Aimee may have sent email to about the compliance audit. In this example, the administrators creates a filter in the subgroup for Adam Eham, Adele Vance, and Aditya Dash.
+4. To define the date range, the administrator selects **Add filter** and selects the *Date* filter, the *Between* operator, and start and ending dates for the *Value*.
+5. Finally, the administrator selects the *Keyword list* filter, the *Equal* operator, and *compliance, audit* as the keyword *Value*.
 
-### Scenario example 2
+ 
+
+
