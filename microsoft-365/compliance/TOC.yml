@@ -222,7 +222,7 @@
   items:
     - name: Microsoft Purview insider risk solutions
       href: insider-risk-solution-overview.md
-    - name: Privacy Guide
+    - name: Privacy guide
       href: insider-risk-solution-privacy.md
     - name: Communication compliance
       items:
