@@ -18,16 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
+ms.date: 03/15/2023
 ---
 
 # Use the query builder to create search queries (preview)
 
-The query builder option in Microsoft Purview eDiscovery tools search provides a visual filtering experience when you build search queries in eDiscovery (Premium). MORE INFO....
-  
-Here are the key benefits to using the query builder:
-
-- AND/OR filtering.....
-- Subgroups....
+The query builder option in Microsoft Purview eDiscovery search provides a visual filtering experience when you build search queries in eDiscovery (Premium). Use the new query builder to construct complex queries with additional functionality, including AND, OR, and grouping of conditions. These features in the query builder help you build queries more effectively, provide a visual interface for grouping sub-queries, and provide additional space for complex keyword queries to be constructed and reviewed.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
