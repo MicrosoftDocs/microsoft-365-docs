@@ -6,7 +6,7 @@ description: Frequently asked questions on configuring tamper protection.
 keywords: malware, defender, antivirus, tamper protection
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/06/2023
+ms.date: 03/08/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -46,7 +46,7 @@ If you're using Configuration Manager, version 2006, with tenant attach, tamper 
 If you're an organization using [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint), you can choose from several options to manage tamper protection:
 
 - The [Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md) (turn tamper protection on or off, tenant wide)
-- [Intune](manage-tamper-protection-intune.md) (turn tamper protection on or off, and/or configure tamper protection for some or all users)
+- [Intune](manage-tamper-protection-intune.md) (turn tamper protection on or off for some or all devices, and edit tamper-protected antivirus exclusions)
 - [Configuration Manager](manage-tamper-protection-configuration-manager.md) (with tenant attach, you can configure tamper protection for some or all devices by using the Windows Security experience profile)
 - [Windows Security app](manage-tamper-protection-individual-device.md) (for an individual device used at home or that isn't centrally managed by a security team)
 
@@ -58,11 +58,11 @@ If tamper protection prevents your IT or security team from performing a necessa
 
 ## Can I change individual tamper-protected settings?
 
-If tamper protection is turned on for your organization, you won't be able to make changes to individual settings that are tamper protected. However, if you're managing tamper protection and devices in Intune, you can edit exclusions for Microsoft Defender Antivirus. See [Tamper protection for exclusions](manage-tamper-protection-intune.md#tamper-protection-for-exclusions).
+If tamper protection is turned on for your organization, you won't be able to make changes to individual settings that are tamper protected. However, if you're using Intune or Configuration Manager, you can exclude devices from tamper protection. And if you're using Intune, you can edit exclusions for Microsoft Defender Antivirus. See [Tamper protection for antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions).
 
 ## Does tamper protection apply to Microsoft Defender Antivirus exclusions?
 
-New functionality is rolling out now to protect Microsoft Defender Antivirus exclusions on devices that are managed by Intune. Certain conditions must be met. See [What about exclusions](prevent-changes-to-security-settings-with-tamper-protection.md#what-about-exclusions)?
+New functionality is rolling out now to protect Microsoft Defender Antivirus exclusions on devices that are managed by Intune. Certain conditions must be met. See [Tamper protection for antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions).
 
 ## How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus with Group Policy?
 
@@ -74,7 +74,9 @@ If you're using Intune to configure and manage tamper protection, you can target
 
 ## What settings can't be changed when tamper protection is turned on?
 
-When tamper protection is turned on, tamper-protected settings can't be changed from their default value, even if you're using Intune to manage your security settings. Changes might appear to be successful in Intune, but won't actually be allowed by tamper protection. For the most current list of tamper protected settings, contact support.
+When tamper protection is turned on, tamper-protected settings can't be changed from their default value, even if you're using Intune or Configuration Manager to manage your security settings. Changes might appear to be successful in Intune or Configuration Manager, but won't actually be allowed by tamper protection. See [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
+
+For the most current list of tamper protected settings, contact support.
 
 ## If tamper protection is turned on in Microsoft 365 Defender, can Intune override it?
 

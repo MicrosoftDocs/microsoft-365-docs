@@ -119,7 +119,7 @@
 - name: Reference
   items:
     - name: Top 10 ways to secure your business data
-      href: secure-your-business-data.md
+      href: ../admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Glossary of security terms
       href: m365bp-glossary.yml
     - name: Microsoft 365 Business Premium FAQ
