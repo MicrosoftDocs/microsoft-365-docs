@@ -43,6 +43,8 @@ The configurations in this article align with Microsoft's recommendations for th
 
 For more information about these tiers and capabilities recommended for each tier, see [Microsoft cloud for enterprise architects illustrations](./cloud-architecture-models.md)
 
+For information about creating a Teams meeting environment that meets your compliance requirements, see [Configure Teams meetings with three tiers of protection](/MicrosoftTeams/configure-meetings-three-tiers-protection).
+
 ## Three tiers at a glance
 
 The following table summarizes the configurations for each tier. Use these configurations as starting point recommendations and adjust the configurations to meet the needs of your organization. You may not need every tier.
@@ -142,7 +144,7 @@ Using a policy that affects all Microsoft 365 services can lead to better securi
 
 Start by [configuring the baseline level of protection](configure-teams-baseline-protection.md). If needed you can add [sensitive protection](configure-teams-sensitive-protection.md) and [highly sensitive protection](configure-teams-highly-sensitive-protection.md) on top of the baseline.
 
-## See also
+## Related topics
 
 [Security and compliance in Microsoft Teams](/microsoftteams/security-compliance-overview)
 
