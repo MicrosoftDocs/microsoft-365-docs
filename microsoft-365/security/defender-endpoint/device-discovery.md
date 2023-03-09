@@ -22,6 +22,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 03/23/2021
 ---
 
 # Device discovery overview

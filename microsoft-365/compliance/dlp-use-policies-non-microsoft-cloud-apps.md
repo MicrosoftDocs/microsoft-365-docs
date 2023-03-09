@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 10/09/2020
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -64,7 +64,7 @@ After you connect your cloud apps to Defender for Cloud Apps, you can create DLP
 
 ## Create a DLP policy scoped to a non-Microsoft cloud app
 
-Refer to [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) for the procedures to create a DLP policy. Keep these points in mind as you configure your policy.
+Refer to [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) for the procedures to create a DLP policy. Keep these points in mind as you configure your policy.
 
 - Select the turn on the **Microsoft Defender for Cloud Apps** location.
 - To select a specific app or instance, select **Choose instance**. If you don't select an instance, the policy will be scoped to all connected apps in your Microsoft Defender for Cloud Apps tenant.
@@ -77,6 +77,6 @@ Refer to [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) f
 
 ## See Also
 
-- [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Get started with the default DLP policy](./get-started-with-the-default-dlp-policy.md)
-- [Create a DLP policy from a template](./create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)

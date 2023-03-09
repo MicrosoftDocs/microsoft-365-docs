@@ -1,7 +1,7 @@
 ---
 title: Deploy updates for Microsoft Defender for Endpoint on Mac
 description: Control updates for Microsoft Defender for Endpoint on Mac in enterprise environments.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, updates, deploy, catalina, big sur, monterey, ventura, mde for mac
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, updates, deploy, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Deploy updates for Microsoft Defender for Endpoint on macOS
@@ -35,7 +36,7 @@ search.appverid: met150
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
-To update Microsoft Defender for Endpoint on macOS, a program named Microsoft AutoUpdate (MAU) is used. MAU checks daily for updates, and automatically downloads and installs them.
+To update Microsoft Defender for Endpoint on macOS, a program named Microsoft AutoUpdate (MAU) is used. MAU checks updates periodically, and automatically downloads and installs them.
 
 :::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
 
@@ -65,9 +66,9 @@ The `Current` channel contains the most stable version of the product.
 > [!IMPORTANT]
 > Prior to Microsoft AutoUpdate version 4.29, channels had different names:
 >
-> - `Beta` was named `InsiderFast` (Insider Fast)
-> - `Preview` was named `External` (Insider Slow)
-> - `Current` was named `Production`
+> - `Beta Channel` was named `InsiderFast` (Insider Fast)
+> - `Current Channel` (Preview) was named `External` (Insider Slow)
+> - `Current Channel` was named `Production`
 
 > [!TIP]
 > In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.

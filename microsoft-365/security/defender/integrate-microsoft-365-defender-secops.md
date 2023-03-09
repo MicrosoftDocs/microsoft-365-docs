@@ -24,7 +24,9 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 07/15/2021
 ---
+
 # Integrating Microsoft 365 Defender into your security operations
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]

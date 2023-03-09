@@ -4,8 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 09/23/2022
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -70,4 +71,3 @@ Each model in the model usage list will show the usage data:
 - Classified item count: Number of files processed by the model.
 - Average confidence score: Average accuracy score of the model when run against files.
 - Target list URL: The SharePoint document library to which the model is applied.
-

@@ -22,6 +22,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
+ms.date: 02/16/2021
 ---
 
 # Threat analytics in Microsoft 365 Defender

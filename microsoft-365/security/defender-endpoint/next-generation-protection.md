@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier1
 search.appverid: met150
+ms.date: 07/06/2021
 ---
 
 # Next-generation protection overview

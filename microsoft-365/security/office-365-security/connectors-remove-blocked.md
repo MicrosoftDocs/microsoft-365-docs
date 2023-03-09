@@ -7,16 +7,17 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier2
 ms.custom:
 description: Learn how to remove blocked connectors in Microsoft 365 Defender.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 12/01/2022
 ---
 
 # Remove blocked connectors from the Restricted entities portal
@@ -39,13 +40,13 @@ Admins can remove connectors from the Restricted entities page in Microsoft 365 
 
 ## Learn more on restricted entities
 
-A restricted entity is an entity that has been blocked from sending email because either it has been potentially compromised, or it has exceeded sending limit.
+A restricted entity is an entity that has been blocked from sending email because either it has been potentially compromised, or it has exceeded a sending limit.
 
-There are 2 types of restricted entities:
+There are two types of restricted entities:
 
-- **Restricted user**: For more information about why a user can be restricted and how to handle restricted users, see [Remove blocked users from the Restricted entities portal](removing-user-from-restricted-users-portal-after-spam.md).
+- **Restricted users**: For more information about why a user can be restricted and how to handle restricted users, see [Remove blocked users from the Restricted entities portal](removing-user-from-restricted-users-portal-after-spam.md).
 
-- **Restricted connector**: Learn about why a connector can be restricted and how to handle restricted connectors (this article).
+- **Restricted connectors**: Learn about why a connector can be restricted and how to handle restricted connectors (this article).
 
 ## What do you need to know before you begin?
 
@@ -53,23 +54,17 @@ There are 2 types of restricted entities:
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You must have permissions in **Exchange Online** before you can follow the procedures mentioned in this article:
-  - To remove connectors from the Restricted entities portal, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - For read-only access to the Restricted entities portal, you need to be a member of the **Global Reader** or **Security Reader** role groups.
-
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  > [!NOTE]
-  >
-  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  >
-  > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Remove connectors from the Restricted entities portal_: Membership in the **Organization Management** or **Security Administrator** role groups.
+    - _Read-only access to the Restricted entities portal_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - Before you remove the connector from the Restricted entities portal, be sure to follow the required steps to regain control of the connector. For more information, see [Respond to a compromised connector](connectors-detect-respond-to-compromise.md).
 
 ## Use the Microsoft 365 Defender portal to remove a connector from the Restricted entities list
 
-1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Email & collaboration** \> **Review** \> **Restricted entities**. To go directly to the **Restricted entities** page, use <https://security.microsoft.com/restrictedentities>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Restricted entities**. To go directly to the **Restricted entities** page, use <https://security.microsoft.com/restrictedentities>.
 
 2. On the **Restricted entities** page, find and select the connector that you want to unblock by clicking on the connector.
 
@@ -89,7 +84,7 @@ The default alert policy named **Suspicious connector activity** will automatica
 > [!IMPORTANT]
 > For alerts to work, audit log search must to be turned on. For more information, see [Turn the audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Alert policy**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Alert policy**.
 
 2. On the **Alert policy** page, find and select the alert named **Suspicious connector activity**. You can sort the policies by name, or use the **Search box** to find the policy.
 
@@ -106,22 +101,22 @@ The default alert policy named **Suspicious connector activity** will automatica
 
 ## Use Exchange Online PowerShell to view and remove connectors from the Restricted entities list
 
-To view the list of connectors that are restricted from sending email, run the following command:
+To view the list of connectors that are restricted from sending email, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Get-BlockedConnector
 ```
 
-To view details about a specific connector, replace \<connectorId\> and run the following command:
+To view details about a specific blocked connector, replace \<ConnectorID\> with the GUID value of the connector, and then run the following command:
 
 ```powershell
-Get-BlockedConnector -ConnectorId <connectorId>
+Get-BlockedConnector -ConnectorId <ConnectorID> | Format-List
 ```
 
-To remove a connector from the Restricted entities list, replace \<connectorId\> and run the following command:
+To remove a connector from the Restricted entities list, replace \<ConnectorID\> with the GUID value, and then run the following command:
 
 ```powershell
-Remove-BlockedConnector -ConnectorId <connectorId>
+Remove-BlockedConnector -ConnectorId <ConnectorID>
 ```
 
 ## More information

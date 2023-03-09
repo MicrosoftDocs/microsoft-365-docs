@@ -18,6 +18,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 11/12/2021
 ---
 
 # Onboard with Microsoft Defender for IoT

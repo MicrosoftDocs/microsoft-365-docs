@@ -22,6 +22,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
+ms.date: 02/16/2021
 ---
 
 # Understand the analyst report in threat analytics in Microsoft 365 Defender

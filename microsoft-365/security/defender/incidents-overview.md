@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,6 +23,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
+ms.date: 03/06/2023
 ---
 
 # Incident response with Microsoft 365 Defender
@@ -72,17 +73,9 @@ The additional tabs for an incident are:
 
   All the alerts related to the incident and their information.
 
-- Devices
+- Assets
 
-  All the devices that have been identified to be part of or related to the incident.
-
-- Users
-
-  All the users that have been identified to be part of or related to the incident.
-
-- Mailboxes
-
-  All the mailboxes that have been identified to be part of or related to the incident.
+  All the assets (devices, users, mailboxes, and apps) that have been identified to be part of or related to the incident.
 
 - Investigations
 

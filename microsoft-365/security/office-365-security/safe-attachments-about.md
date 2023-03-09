@@ -6,9 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date: 
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -16,11 +14,11 @@ search.appverid:
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
-  - seo-marvel-apr2020
+  - tier1
 description: Admins can learn about the Safe Attachments feature in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Safe Attachments in Microsoft Defender for Office 365

@@ -1,6 +1,7 @@
 ---
 title: "Allow members to send as or send on behalf of a group"
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT

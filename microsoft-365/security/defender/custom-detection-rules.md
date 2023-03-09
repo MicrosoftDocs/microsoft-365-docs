@@ -21,6 +21,7 @@ ms.collection:
   - m365initiative-m365-defender
   - tier2
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Create and manage custom detections rules
@@ -36,7 +37,7 @@ Custom detection rules are rules you can design and tweak using [advanced huntin
 ## Required permissions for managing custom detections
 
 To manage custom detections, you need to be assigned one of these roles:
-
+- **Security settings (manage)**—Users with this [Microsoft 365 Defender permission](/microsoft-365/security/defender/manage-rbac) can manage security settings in the Microsoft 365 Defender portal.
 - **Security administrator**—Users with this [Azure Active Directory role](/azure/active-directory/roles/permissions-reference#security-administrator) can manage security settings in the Microsoft 365 Defender portal and other portals and services.
 
 - **Security operator**—Users with this [Azure Active Directory role](/azure/active-directory/roles/permissions-reference#security-operator) can manage alerts and have global read-only access to security-related features, including all information in the Microsoft 365 Defender portal. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender for Endpoint. If you have RBAC configured, you also need the **manage security settings** permission for Defender for Endpoint.
@@ -125,6 +126,10 @@ When you save a new rule, it runs and checks for matches from the past 30 days o
 - **Every 12 hours**—runs every 12 hours, checking data from the past 48 hours
 - **Every 3 hours**—runs every 3 hours, checking data from the past 12 hours
 - **Every hour**—runs hourly, checking data from the past 4 hours
+- **Continuous (NRT)**—runs continuously, checking data from events as they are collected and processed in near real-time
+
+>[!NOTE]
+>If you choose the continuous frequency, make sure that the query references one table only and uses an operator from the [list of supported KQL operators](/azure/azure-monitor/essentials/data-collection-transformations-structure#supported-kql-features). You cannot use unions or joins. The `externaldata` operator is not supported.
 
 When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The rule frequency is based on the event timestamp and not the ingestion time.
 
@@ -134,6 +139,29 @@ When you edit a rule, it will run with the applied changes in the next run time 
 > Match the time filters in your query with the lookback duration. Results outside of the lookback duration are ignored.  
 
 Select the frequency that matches how closely you want to monitor detections. Consider your organization's capacity to respond to the alerts.
+
+##### Tables that support Continuous (NRT) frequency
+
+Near real-time detections are supported for the following tables: 
+- `AlertEvidence`
+- `DeviceEvents` 
+- `DeviceFileCertificateInfo` 
+- `DeviceFileEvents` 
+- `DeviceImageLoadEvents` 
+- `DeviceLogonEvents` 
+- `DeviceNetworkEvents` 
+- `DeviceNetworkInfo` 
+- `DeviceInfo` 
+- `DeviceProcessEvents` 
+- `DeviceRegistryEvents` 
+- `EmailAttachmentInfo` 
+- `EmailEvents` 
+- `EmailPostDeliveryEvents` 
+- `EmailUrlInfo` 
+- `UrlClickEvents` 
+
+>[!NOTE]
+> Only columns that are generally available can support **Continuous (NRT)** frequency.
 
 ### 3. Choose the impacted entities.
 Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses. Identifying which of these columns represent the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.
@@ -179,7 +207,7 @@ For more details on user actions, read [Remediation actions in Microsoft Defende
 
 - Alternatively, you can select **Delete email** and then choose to either move the emails to Deleted Items (**Soft delete**) or delete the selected emails permanently (**Hard delete**).
 
-The columns `NetworkMessageId` and `RecipientEmailAddress` must be present to apply actions to email messages.
+The columns `NetworkMessageId` and `RecipientEmailAddress` must be present in the query output to apply actions to email messages.
 
 
 ### 5. Set the rule scope.
@@ -218,7 +246,7 @@ To view all existing custom detection rules, navigate to **Hunting** > **Custom 
 
 ### View rule details, modify rule, and run rule
 
-To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detection rules** and then select the name of rule. You can then view general information about the rule, including information its run status and scope. The page also provides the list of triggered alerts and actions.
+To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detection rules** and then select the name of rule. You can then view general information about the rule, including information, its run status, and scope. The page also provides the list of triggered alerts and actions.
 
 :::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="The Custom detection rule details page in the Microsoft 365 Defender portal" lightbox="../../media/custom-detect-rules-view.png":::<br>
 *Custom detection rule details*

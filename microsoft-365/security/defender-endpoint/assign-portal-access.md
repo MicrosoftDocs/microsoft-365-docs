@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
+ms.date: 12/18/2020
 ---
 
 # Assign user access to Microsoft Defender Security Center

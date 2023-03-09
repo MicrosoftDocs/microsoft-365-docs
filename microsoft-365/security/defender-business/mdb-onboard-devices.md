@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 01/23/2023
+ms.date: 02/21/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -39,6 +39,14 @@ Onboard your business devices to protect them right away. You can choose from se
 
 ## Windows 10 and 11
 
+> [!NOTE]
+> Windows devices must be running one of the following operating systems:  
+> - Windows 10 or 11 Business
+> - Windows 10 or 11 Professional
+> - Windows 10 or 11 Enterprise
+> 
+> For more details, see [Microsoft Defender for Business requirements](mdb-requirements.md).
+> 
 Choose one of the following options to onboard Windows client devices to Defender for Business:
 
 - [Local script](#local-script-for-windows-10-and-11) (for onboarding devices manually in the Microsoft 365 Defender portal)
@@ -74,7 +82,7 @@ If you prefer to use Group Policy to onboard Windows clients, follow the guidanc
 
 ### Intune for Windows 10 and 11
 
-You can onboard Windows clients and other devices in Intune by using the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). There are several methods available for enrolling devices in Intune. We recommend using one of the following methods:
+You can onboard Windows clients and other devices in Intune by using the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)). There are several methods available for enrolling devices in Intune. We recommend using one of the following methods:
 
 - [Enable Windows automatic enrollment for company-owned or company-managed devices](#enable-automatic-enrollment-for-windows-10-and-11)
 - [Ask users to enroll their own Windows 10/11 devices in Intune](#ask-users-to-enroll-their-windows-10-and-11-devices)
@@ -169,13 +177,19 @@ When you run the local script on Mac:
 
 9. You'll be prompted to allow installation of a driver from Microsoft (either "System Extension Blocked" or "Installation is on hold", or both). You must allow the driver installation: Select **Open Security Preferences** or **Open System Preferences** > **Security & Privacy**, and then select **Allow**.
 
-10. Use the following Python command in Bash to run the onboarding package: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
+10. Use the following Bash command to run the onboarding package:
+
+   ```bash
+   /usr/bin/unzip WindowsDefenderATPOnboardingPackage.zip \
+   && /bin/chmod +x MicrosoftDefenderATPOnboardingMacOs.sh \
+   && /bin/bash -c MicrosoftDefenderATPOnboardingMacOs.sh
+   ```
 
 After Mac is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
 ### Intune for Mac
 
-If you already have Intune, you can enroll Mac computers by using the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). There are several methods available for enrolling Mac in Intune. We recommend one of the following methods:
+If you already have Intune, you can enroll Mac computers by using the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)). There are several methods available for enrolling Mac in Intune. We recommend one of the following methods:
 
 - [Choose an option for company-owned Mac](#options-for-company-owned-mac)
 - [Ask users to enroll their own Mac in Intune](#ask-users-to-enroll-their-own-mac-in-intune)

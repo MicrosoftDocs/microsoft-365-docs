@@ -3,6 +3,7 @@ title: "Add staff to Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 06/18/2020
 audience: Admin
 ms.topic: article
 ms.service: bookings
