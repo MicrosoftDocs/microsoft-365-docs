@@ -70,7 +70,7 @@ Teams for sensitive and highly sensitive protection are private teams in which s
 
 ## Sensitivity labels
 
-The sensitive and highly sensitive tiers use sensitivity labels to help secure the team and its files. To implement these tiers, you must enable [sensitivity labels to protect content in Microsoft Teams, Office 365 Groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
+The sensitive and highly sensitive tiers use sensitivity labels to help secure the team and its files. To implement these tiers, you must enable [sensitivity labels to protect content in Microsoft Teams, Microsoft 365 Groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 While the baseline tier does not require sensitivity labels, consider creating a "general" label and then requiring that all teams be labeled. This will help ensure that users make a conscious choice about sensitivity when they create a team. If you plan to deploy the sensitive or highly sensitive tiers, we do recommend creating a "general" label that you can use for baseline teams and for files that are not sensitive. For the highly sensitive tier, we'll also specify a default sensitivity label for document libraries so that Office files and other compatible files will have that label automatically applied when they're uploaded.
 
@@ -114,7 +114,7 @@ In the highly sensitive tier, we configure the default library sensitivity label
 
 We highly recommend that you leave guest sharing on for the baseline tier and for the sensitive or highly sensitive tiers if you need to collaborate with people outside your organization. The guest sharing features in Microsoft 365 provide a much more secure and governable sharing experience than sending files as attachments in email messages. It also reduces the risk of shadow IT where users use ungoverned consumer products to share with legitimate external collaborators.
 
-If you regularly collaborate with other organizations that use Azure AD, shared channels may be a good option. Shared channels appear seamlessly in the other organization's Teams client and allow external participants to use their regular user account for their organization rather than having to log in in separately using a guest account.
+If you regularly collaborate with other organizations that use Azure AD, shared channels may be a good option. Shared channels appear seamlessly in the other organization's Teams client and allow external participants to use their regular user account for their organization rather than having to log in separately using a guest account.
 
 See the following references to create a secure and productive guest sharing environment for your organization:
 
