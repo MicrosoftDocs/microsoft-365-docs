@@ -134,7 +134,7 @@ For the highly sensitive tier, we'll use [Azure Active Directory authentication 
 
 The conditional access settings in sensitivity labels only affect SharePoint access. If you want to expand conditional access beyond SharePoint, you can [Create an Azure Active Directory conditional access policy for all apps and services in your organization](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device) instead. To configure this policy specifically for [Microsoft 365 services](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365), select the **Office 365** cloud app under **Cloud apps or actions**.
 
-![Screenshot of the Office 365 cloud app in an Azure Active Directory conditional access policy.](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+![Screenshot of the Office 365 cloud app in an Azure Active Directory conditional access policy.](../media/azure-ca-office365-policy.png)
 
 Using a policy that affects all Microsoft 365 services can lead to better security and a better experience for your users. For example, when you block access to unmanaged devices in SharePoint only, users can access the chat in a team with an unmanaged device, but will lose access when they try to access the **Files** tab. Using the Office 365 cloud app helps avoid issues with [service dependencies](/azure/active-directory/conditional-access/service-dependencies).
 

@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 05/01/2020
+ms.date: 03/09/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -25,6 +25,8 @@ description: "Learn how to deploy teams with protection for highly sensitive dat
 ---
 
 # Configure teams with protection for highly sensitive data
+
+[!INCLUDE[Advanced Management](../includes/advanced-management.md)]
 
 In this article, we look at setting up a team for a highly sensitive level of protection. Be sure you've completed the steps in [Deploy teams with baseline protection](configure-teams-baseline-protection.md) before following the steps in this article.
 
@@ -168,7 +170,7 @@ Each time you create a new team with the highly sensitive label, there are two s
 
 ### Restrict site access to team members
 
-Each time you create a new team with the highly sensitive label, you need to turn on restricted site access on the associated SharePoint site. This prevents people from outside the team from accessing the site or its content.
+Each time you create a new team with the highly sensitive label, you need to turn on restricted site access on the associated SharePoint site. This prevents people from outside the team from accessing the site or its content. (This requires a Microsoft Syntex - SharePoint Advanced Management license.)
 
 [SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell) is required to configure restricted site access.
 
@@ -191,7 +193,7 @@ Set-SPOSite -Identity <siteurl> -RestrictedAccessControl $true
 
 ### Choose a default sensitivity label for files
 
-We'll use the sensitivity label that we created as the default sensitivity label for the site document library that is connected to Teams. This will automatically apply the highly sensitive label to any new label-compatible files that are uploaded to the library, encrypting them.
+We'll use the sensitivity label that we created as the default sensitivity label for the site document library that is connected to Teams. This will automatically apply the highly sensitive label to any new label-compatible files that are uploaded to the library, encrypting them. (This requires a Microsoft Syntex - SharePoint Advanced Management license.)
 
 To set a default sensitivity label for a document library
 
