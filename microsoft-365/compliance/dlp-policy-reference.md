@@ -53,7 +53,7 @@ Also, you need to be aware of the following constraints of the platform:
 - Maximum size of an individual DLP rule: 80 KB
 - GIR evidence limit: 100, with each SIT evidence, in proportion of occurrence
 - Text extraction limit: 1 MB
-- Regex size limit for all matches predicts: 20 KB
+- Regex size limit for all matches predicted: 20 KB
 - Policy name length limit: 64 characters
 - Policy rule length limit: 64 characters
 - Comment length limit: 1024 characters
