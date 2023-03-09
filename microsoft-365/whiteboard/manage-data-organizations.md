@@ -4,6 +4,7 @@ ms.author: alexfaulkner
 author: alexfaulkner
 manager: alexfaulkner
 ms.reviewer: 
+ms.date: 11/04/2021
 audience: admin
 ms.topic: article
 ms.custom: 
@@ -12,7 +13,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn about data retention for Microsoft Whiteboard in Azure and OneDrive for Business.
-
 ---
 
 # Manage data for Microsoft Whiteboard
@@ -76,6 +76,27 @@ Data controls planned for future releases:
 - Sensitivity labels
 - Analytics
 - More eDiscovery support
+
+### Transferring whiteboard when a user leaves the company
+
+To preserve a former user's OneDrive files, including .whiteboard files, first give yourself access to their OneDrive, and then move the files you want to keep. 
+
+- In the admin center, go to the **Users** > [Active users](https://go.microsoft.com/fwlink/p/?linkid=834822) page. 
+- Select a user. 
+- On the user properties page, select **OneDrive**. Under Get access to files, select **Create link to files**. 
+- Select the link to open the file location.  
+- Select the files or folders that you want to move, and then select **Move to**. 
+
+Learn more about preserving former user’s content: [Step 5 - Give another employee access to OneDrive and Outlook data - Microsoft 365 admin | Microsoft Learn](/admin/add-users/remove-former-employee-step-5)
+
+### Managing moved whiteboards
+
+Once the .whiteboard file appears in the OneDrive for Business of the new owner, they can open, edit, rename or delete the files. 
+
+- Open office.com and in the app launcher, select OneDrive. 
+- In the left-hand navigation pane, select My Files. 
+- Open the folder called Whiteboards. 
+- In the list of files, select the moved file and click the ... button to get rename, delete and other options. 
 
 ## See also
 

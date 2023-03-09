@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Configure automated investigation and remediation capabilities in Microsoft Defender for Endpoint

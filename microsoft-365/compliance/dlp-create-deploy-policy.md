@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 01/11/2021
 audience: ITPro
 ms.topic: how-to
 f1_keywords:
@@ -38,6 +38,7 @@ How you deploy a policy is as important policy design. You have [multiple option
 
 If you're new to Microsoft Purview DLP, here's a list of the core articles you should be familiar with as you implement DLP:
 
+1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - The article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP.
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - By working through this article you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
@@ -56,18 +57,24 @@ For full licensing details, see: [Microsoft 365 licensing guidance for security 
 
 ### Permissions 
 
-The account you use to create and deploy policies must be a member of one of these roles/role groups
+The account you use to create and deploy policies must be a member of one of these role groups
 
 - Compliance administrator
 - Compliance data administrator
+- Information Protection
+- Information Protection Admin
 - Security administrator
 
-#### Roles and Role Groups
+> [!IMPORTANT]
+> Be sure you understand the difference between an unrestricted administrator and an administrative unit restricted administrator [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) before you start.
+
+#### Granular Roles and Role Groups
 
 There are roles and role groups that you can use to fine tune your access controls.
 
 Here's a list of applicable roles. To learn more, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
+- DLP Compliance Management
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
@@ -109,7 +116,7 @@ This procedure uses a hypothetical distribution group *Finance team* at Contoso.
 
 |Statement|Configuration question answered and configuration mapping|
 |---|---|
-|"We need to block emails to all recipients..."|- **Where to monitor**: Exchange </br> - **Action**: Restrict access or encrypt the content in Microsoft 365 locations > Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files > Block everyone |
+|"We need to block emails to all recipients..."|- **Where to monitor**: Exchange </br>- **Administrative scope**: Full directory </br>- **Action**: Restrict access or encrypt the content in Microsoft 365 locations > Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files > Block everyone |
 |"...that contain credit card numbers or have the 'highly confidential' sensitivity label applied..."| - **What to monitor** use the Custom template </br> - **Conditions for a match** edit it to add the *highly confidential* sensitivity label|
 |"...except if..."| **Condition group configuration** - Create a nested boolean NOT condition group joined to the first conditions using a boolean AND|
 |"...the email is sent from someone on the finance team..."| **Condition for match**: Sender is a member of|
@@ -142,6 +149,8 @@ This procedure uses a hypothetical distribution group *Finance team* at Contoso.
 5. Fill in a description. You can use the policy intent statement here.
 
 1. Select **Next**.
+
+1. Select **Full directory** under **Admin units**.
 
 1. Set the **Exchange email** location status to **On**. Set all the other location status to **Off**.
 
@@ -212,7 +221,7 @@ This scenario requires that you already have devices onboarded and reporting int
 1. Type in the appropriate value in the **Add new service domains to this group**. You can add multiple websites to a group and use wildcards to cover subdomains.  For example, `www.contoso.com` for just the top level website or \*.contoso.com for corp.contoso.com, hr.contoso.com, fin.contoso.com
 1. Select **Save**.
 1. Select **Policies**.
-1. Create and scope a policy that is applied only to **Devices**. See, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) for more information on how to create a policy.
+1. Create and scope a policy that is applied only to **Devices**. See, [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)) for more information on how to create a policy.
 1. Create a rule that uses the **the user accessed a sensitive site from Edge**, and the action **Audit or restrict activities when users access sensitive sites in Microsoft Edge browser on Windows devices**.
 1. In the action select **Add or remove Sensitive site groups**.
 1. Select the **Sensitive site groups** you want. Any website under the group(s) you select here will be redirected to Edge when opened in Chrome browser (with Purview extension installed).

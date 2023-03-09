@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/08/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -94,14 +95,13 @@ You can select from the following policy templates to quickly get started with i
 - [Data theft by departing users](insider-risk-management-policy-templates.md#data-theft-by-departing-users)
 - [Data leaks](insider-risk-management-policy-templates.md#data-leaks)
 - [Data leaks by priority users (preview)](insider-risk-management-policy-templates.md#data-leaks-by-priority-users-preview)
-- [Security policy violations (preview)](insider-risk-management-policy-templates.md#security-policy-violations-preview)
-- [Patient data misuse (preview)](insider-risk-management-policy-templates.md#patient-data-misuse-preview)
 - [Data leaks by risky users (preview)](insider-risk-management-policy-templates.md#data-leaks-by-risky-users-preview)
 - [Security policy violations (preview)](insider-risk-management-policy-templates.md#security-policy-violations-preview)
-- [Patient data misuse (preview)](insider-risk-management-policy-templates.md#patient-data-misuse-preview)
 - [Security policy violations by departing users (preview)](insider-risk-management-policy-templates.md#security-policy-violations-by-departing-users-preview)
-- [Security policy violations by priority users (preview)](insider-risk-management-policy-templates.md#security-policy-violations-by-priority-users-preview)
 - [Security policy violations by risky users (preview)](insider-risk-management-policy-templates.md#security-policy-violations-by-risky-users-preview)
+- [Security policy violations by priority users (preview)](insider-risk-management-policy-templates.md#security-policy-violations-by-priority-users-preview)
+- [Patient data misuse (preview)](insider-risk-management-policy-templates.md#patient-data-misuse-preview)
+- [Risky browser usage (preview)](insider-risk-management-policy-templates.md#risky-browser-usage-preview)
 
 ![Insider risk management policy dashboard.](../media/insider-risk-policy-dashboard.png)
 
@@ -198,7 +198,7 @@ Employment stressor events can impact user behavior in several ways that relate 
 - [Data leaks by risky users (preview)](insider-risk-management-policy-templates.md#data-leaks-by-risky-users-preview)
 - [Security policy violations by risky users (preview)](insider-risk-management-policy-templates.md#security-policy-violations-by-risky-users-preview)
 
-### Visual context for potentially risky user activities with forensic evidence (preview)
+### Visual context for potentially risky user activities with forensic evidence
 
 Having visual context is crucial for security teams during forensic investigations to get better insights into potentially risky user activities that may lead to a security incident. This may include visual capturing of these activities to help evaluate if they are indeed risky or taken out of context and not potentially risky. For activities that are determined to be risky, having forensic evidence captures can help investigators and your organization better mitigate, understand, and respond to these activities. To help with this scenario, [enable forensic evidence capturing](insider-risk-management-forensic-evidence.md) for online and offline devices in your organization.
 

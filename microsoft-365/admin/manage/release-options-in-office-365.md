@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -38,9 +39,9 @@ With Microsoft 365, you receive new product updates and features as they become 
 ## How it works - release validation
 
 Any new release is first tested and validated by the feature team, then by the entire Microsoft 365 feature team, followed by all of Microsoft. After internal testing and validation, the next step is a **Targeted release** (formerly known as First release) to customers who opt in. At each release ring, Microsoft collects feedback and further validates quality by monitoring key usage metrics. This series of progressive validation is in place to make sure the worldwide-release is as robust as possible. The releases are pictured in the following figure.
-  
-![Release validation rings for Microsoft 365.](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
-  
+
+![Release management validation rings for Microsoft 365.](../../media\Rings_Of_Progression.png)
+
 For significant updates, customers are initially notified by the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap). As an update gets closer to rolling out, it is communicated through your [Microsoft 365 Message center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
@@ -106,8 +107,8 @@ You can change how your organization receives Microsoft 365 updates by following
 
 9. When you're done adding users, select **Save changes**.
 
-![Image to set up release option in the Microsoft 365 admin center.](../../media/release_option_admincenter.png)
-  
+![Screenshot: Showing the set up release option in the Microsoft 365 admin.](../../media/release_option_admincenter.png)
+
 ## Next steps
 
 Discover how to [manage messages](/office365/admin/manage/message-center) in your [Microsoft 365 Message center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) to get notifications about upcoming Microsoft 365 updates and releases.

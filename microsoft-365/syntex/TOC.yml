@@ -7,10 +7,14 @@
               href: syntex-overview.md 
             - name: Licensing for Syntex
               href: syntex-licensing.md
+            - name: Pricing for pay-as-you-go
+              href: syntex-pay-as-you-go-services.md
             - name: Set up pay-as-you-go billing
               href: syntex-azure-billing.md
-            - name: Set up Syntex
+            - name: Set up per-user licenses
               href: set-up-content-understanding.md
+            - name: Set up Microsoft Syntex
+              href: set-up-microsoft-syntex.md
             - name: Create a content center 
               href: create-a-content-center.md
 
@@ -134,6 +138,11 @@
         - name: Use metadata to find content in document libraries 
           href: metadata-search.md
      
+    - name: Annotations
+      items: 
+        - name: Use annotations to collaborate 
+          href: annotations.md
+
     - name: Taxonomy
       items:
         - name: Import using SKOS
@@ -173,6 +182,9 @@
               href: use-contracts-management-site.md 
             - name: Content center template
               href: use-content-center-site.md 
+
+    - name: Video library 
+      href: video-library.md
 
     - name: Extensibility
       items: 

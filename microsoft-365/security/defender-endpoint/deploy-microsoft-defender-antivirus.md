@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
+ms.date: 04/08/2021
 ---
 
 # Deploy and enable Microsoft Defender Antivirus

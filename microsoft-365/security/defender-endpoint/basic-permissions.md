@@ -17,6 +17,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Use basic permissions to access the portal

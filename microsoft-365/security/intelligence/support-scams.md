@@ -17,7 +17,9 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
+ms.date: 03/18/2022
 ---
+
 # Tech support scams
 
 Tech support scams are an industry-wide issue where scammers use scare tactics to trick users into paying for unnecessary technical support services that supposedly fix contrived device, platform, or software problems.

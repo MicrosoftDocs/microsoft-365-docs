@@ -23,6 +23,7 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
+ms.date: 01/14/2022
 ---
 
 # Alert grading playbooks
