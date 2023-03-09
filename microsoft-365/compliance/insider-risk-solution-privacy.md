@@ -69,4 +69,4 @@ Learn more about audit logs capabilities for each solution:
 
 ## Protect user trust and build a holistic insider risk program 
 
-We strongly believe that user privacy and trust are essential for organizations to establish a holistic insider risk program. The right set of tools can help you address risks in a way that meets security needs. Learn how to [build a holistic insider risk management program](https://aka.ms/insiderriskreport) with five elements that help companies have stronger data protection while ensuring user trust. 
+We strongly believe that user privacy and trust are essential for organizations to establish a holistic insider risk program. The right set of tools can help you address risks in a way that meets security needs. Learn how to [build a holistic insider risk management program](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE59jhs) with five elements that help companies have stronger data protection while ensuring user trust. 
