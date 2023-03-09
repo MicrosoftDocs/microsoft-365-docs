@@ -135,10 +135,10 @@ One rule blocks access to content where the **Personally Identifiable Informatio
 
 Doing the steps in the previous sections will create a DLP policy that will quickly detect content with that property, but only if that content is newly uploaded (so that the content's indexed), or if that content is old but just edited (so that the content's re-indexed).
 
-To detect content with that property everywhere, you may want to manually request that your library, site, or site collection be re-indexed, so that the DLP policy is aware of all the content with that property. In SharePoint Online, content is automatically crawled based on a defined crawl schedule. The crawler picks up content that has changed since the last crawl and updates the index. If you need your DLP policy to protect content before the next scheduled crawl, you can take these steps.
+To detect content with that property everywhere, you may want to manually request that your library, site, or site collection be re-indexed, so that the DLP policy is aware of all the content with that property. In SharePoint Online, content is automatically crawled when content is edited. Specific SharePoint sites can't be manually re-indexed. 
 
 > [!CAUTION]
-> Re-indexing a site can cause a massive load on the search system. Don't re-index your site unless your scenario absolutely requires it.
+> Re-indexing a site for DLP scenarios is not possible.
 
 For more information, see [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
 
