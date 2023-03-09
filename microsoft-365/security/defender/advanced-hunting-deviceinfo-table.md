@@ -68,7 +68,6 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`MergedDeviceIds` | `string` | Previous device IDs that have been assigned to the same device |
 |`MergedToDeviceId` | `string` | The most recent device ID assigned to a device |
 |`SensorHealthState` | `string` | Indicates health of the device’s EDR sensor, if onboarded to Microsoft Defender For Endpoint |
-| `IsInternetFacing`| `bool` | Indicates whether the device is internet-facing and might be susceptible to external communication |
 |	`IsExcluded`| `bool` | Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences |
 |`ExclusionReason` | `string` | Indicates the reason for device exclusion |
 |	`AssetValue`| `string` | Indicates the value of a device as assigned by the user |
