@@ -60,12 +60,22 @@ During the preview, this feature is available for free. When the preview is over
 - The preview only supports images with machine-typed text
 - Only images uploaded after OCR has been enabled will be scanned.
 
-## Configuring OCR Scans
+## Enable OCR scanning
 
-To configure OCR scans for your tenant:
-
-1. Turn on OCR for your tenant. Open **Settings** and select **Optical character recognition (OCR) (preview)**.
-2. Select the places where you wish to scan images. (Endpoint Windows devices, EXO, ODB, SPT, Teams)
-3. For each workload, define the scope (users/groups/sites) for the OCR scans.
+1. In the Microsoft Purview compliance portal, go to **Settings**.
+2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
+3. Select the locations where you wish to scan images. Available locations are:
+    - Endpoint
+    - Windows devices,
+    - Exchange Online (EXO)
+    - OneDrive for Business (ODB)
+    - SharePoint Online (SPO)
+    - Teams
+4. For each location and scope, define the scope (users/groups/sites) for the OCR scans.
 
 Once the OCR settings are configured, your existing data loss protection (DLP), auto-labeling, and insider risk policies are applied to both images and documents. For example, if you've configured the DLP condition "content contains sensitive information" and have included a data classifier such as the "Credit Card" sensitive information type (SIT), Microsoft Purview not only scans for credit card numbers in text at those locations, it also scans images at those locations for credit card numbers as well.
+
+##See also
+[Learn about data loss prevention](/compliance/dlp-learn-about-dlp)
+[Plan for data loss prevention](/compliance/dlp-overview-plan-for-dlp)
+[Design a data loss prevention policy](/compliance/dlp-policy-design)
