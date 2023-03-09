@@ -56,6 +56,4 @@ The eDiscovery administrator needs to create a query to find emails from Aimee M
 4. To define the date range, the administrator selects **Add filter** and selects the *Date* filter, the *Between* operator, and start and ending dates for the *Value*.
 5. Finally, the administrator selects the *Keyword list* filter, the *Equal* operator, and *compliance, audit* as the keyword *Value*.
 
- 
-
-
+![Query builder example.](../media/ediscovery-query-builder-example.png)
