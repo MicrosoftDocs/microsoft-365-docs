@@ -61,11 +61,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "test-base/testbase-for-m365-product-terms-changehistory.md",
-            "redirect_url": "https://learn.microsoft.com/legal/test-base/testbase-for-m365-product-terms-changehistory",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "compliance/create-info-mgmt-policies.md",
             "redirect_url": "https://support.microsoft.com/office/eb501fe9-2ef6-4150-945a-65a6451ee9e9",
             "redirect_document_id": false
