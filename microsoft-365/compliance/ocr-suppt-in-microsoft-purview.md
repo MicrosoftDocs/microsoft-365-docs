@@ -46,9 +46,9 @@ This new functionality supports scanning images in the following file types:
 
 ## Prerequisites
 
-OCR scanning is an optional feature in Microsoft Purview. When you enable optical character recognition (OCR) in Microsoft Purview compliance portal settings, data classifiers, such as sensitive information types, and trainable classifiers, will be able to detect characters that are in images. 
+OCR scanning is an optional feature in Microsoft Purview. When you enable optical character recognition (OCR) data classifiers, such as sensitive information types and trainable classifiers, can detect characters that are in images.
 
-OCR is first enabled at the tenant level, and then you select which services you want to enable it for. For this preview, image scanning is available for stand alone images in Exchange Online, Teams, SharePoint Online, OneDrive for business and Windows endpoint devices. 
+OCR is first enabled at the tenant level, and then you select which services you want to enable it for. For this preview, image scanning is available for stand-alone images in Exchange Online, Teams, SharePoint Online, OneDrive for business and Windows endpoint devices. 
 
 During the preview, this feature is available for free. When the preview is over, to continue to use OCR scans, your organization must have an Azure account that includes this feature. For information on creating an account, refer to [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/microsoft-365/syntex/syntex-azure-billing)
 
@@ -56,9 +56,9 @@ During the preview, this feature is available for free. When the preview is over
 
 - Images that are embedded in Office documents aren't supported.
 - Image file sizes must be less than 20 MB
-- Images must be at least 50 x 50 pixels and not larger than 16000 x 16000 px.
+- Images must be at least 50 x 50 pixels and not larger than 16000 x 16,000 px.
 - The preview only supports images with machine-typed text
-- Only images uploaded after OCR has been enabled will be scanned.
+- Only images uploaded after OCR has been enabled are scanned.
 
 ## Enable OCR scanning
 
@@ -73,9 +73,10 @@ During the preview, this feature is available for free. When the preview is over
     - Teams
 4. For each location and scope, define the scope (users/groups/sites) for the OCR scans.
 
-Once the OCR settings are configured, your existing data loss protection (DLP), auto-labeling, and insider risk policies are applied to both images and documents. For example, if you've configured the DLP condition "content contains sensitive information" and have included a data classifier such as the "Credit Card" sensitive information type (SIT), Microsoft Purview not only scans for credit card numbers in text at those locations, it also scans images at those locations for credit card numbers as well.
+Once the OCR settings are configured, your existing data loss protection (DLP), auto-labeling, and insider risk policies are applied to both images and documents. For example, if you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT), Microsoft Purview not only scans for credit card numbers in text at those locations, it also scans images at those locations for credit card numbers.
 
-##See also
-[Learn about data loss prevention](/compliance/dlp-learn-about-dlp)
-[Plan for data loss prevention](/compliance/dlp-overview-plan-for-dlp)
-[Design a data loss prevention policy](/compliance/dlp-policy-design)
+## See also
+
+- [Learn about data loss prevention](/compliance/dlp-learn-about-dlp)
+- [Plan for data loss prevention](/compliance/dlp-overview-plan-for-dlp)
+- [Design a data loss prevention policy](/compliance/dlp-policy-design)
