@@ -62,6 +62,8 @@ Before creating an assessment, you'll need to set up a connector for the service
 
 ? - I"m seeing the phrase "activate connector" and also seeing a command (button with a plus sign) to do this. What does it mean to "activate" a connector? Does this mean just adding the connector to your CM so that you see it in your list when yo ugo to choose from them in 
 
+? - each connector will have its own separate setup page, like current connectors do?
+
 ## Using connectors when creating assessments
 
 Get into elliot's service instance doc - define service instance.
@@ -69,3 +71,8 @@ Get into elliot's service instance doc - define service instance.
 When you get to the "Select servies" page in the assessment creation wizard, choose **Select services**....
 
 ? for Nisha - When you select **Add new service**, what happens? Is this something you can add directly here, or does it take you into "data connectors" in CM?
+
+## Scoring
+
+How to interpret assessment and improvement action scores with connectors.
+
