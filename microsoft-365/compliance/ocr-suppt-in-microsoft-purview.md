@@ -73,7 +73,7 @@ During the preview, this feature is available for free. When the preview is over
     - Teams
 4. For each location and scope, define the scope (users/groups/sites) for the OCR scans.
 
-Once the OCR settings are configured, your existing data loss protection (DLP), auto-labeling, and insider risk policies are applied to both images and documents. For example, if you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT), Microsoft Purview not only scans for credit card numbers in text at those locations, it also scans images at those locations for credit card numbers.
+Once the OCR settings are configured, your existing data loss protection (DLP), auto-labeling, and insider risk policies are applied to both images and documents. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier, such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview not only scans for credit card numbers in text at those locations, it also scans images at those locations for credit card numbers.
 
 ## See also
 
