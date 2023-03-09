@@ -99,7 +99,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [display label color](sensitivity-labels-office-apps.md#label-colors) | Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | Under review | Under review |
 |[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)| Current Channel: Rolling out to 2302+ | Under review | Under review | Under review | Under review |
 |[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails) | Current Channel: 2301+ | Rolling out: 16.70+ <sup>\*</sup> | Rolling out 4.2309+| Rolling out 4.2309+ | Yes |
-|[Preventing oversharing as DLP configuration](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)| Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
+|[Preventing oversharing as DLP policy tip](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)| Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
 
 **Footnotes:**
 
