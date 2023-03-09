@@ -53,9 +53,8 @@ This article is updated frequently to let you know what's new in the latest rele
 		- AuditD stop path clean-up: 
 		- Improve the stability of mdatp stop flow.
 	- Added new field to wdavstate to keep track of platform update time.
-	- Make logging less revealing of product details to prevent attacks.
 	- Stability improvements to parsing Defender for Endpoint onboarding blob.
-	- No scan if the valid license is not present (fixed)
+	- Scan does not proceed if a valid license is not present (fixed)
 	- Added performance tracing option to xPlatClientAnalyzer, with tracing enabled mdatp process will be dumping the flow in all_process.zip file that can be used for analysis of performance issues.
 	- Added support in Defender for Endpoint for the below RHEL-6 kernel versions
 		- 2.6.32-754.43.1.el6.x86_64
