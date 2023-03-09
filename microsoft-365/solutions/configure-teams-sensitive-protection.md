@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 05/01/2020
+ms.date: 03/09/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 ms.collection: 
 - highpri
+- Tier1
 - Ent_O365
 - Strat_O365_Enterprise
 - m365solution-3tiersprotection
@@ -25,6 +26,8 @@ description: "Learn how to deploy teams with protection for sensitive data."
 ---
 
 # Configure teams with protection for sensitive data
+
+[!INCLUDE[Advanced Management](../includes/advanced-management.md)]
 
 In this article, we look at setting up a team for a sensitive level of protection. Be sure you've completed the steps in [Deploy teams with baseline protection](configure-teams-baseline-protection.md) before following the steps in this article. The sensitive tier offers the following additional protections over the baseline tier:
 
@@ -148,7 +151,7 @@ To configure owners-only site sharing
 
 ### Choose a default sensitivity label for files
 
-We'll use the sensitivity label that we created as the default sensitivity label for the site document library that is connected to Teams. This will automatically apply the highly sensitive label to any new label-compatible files that are uploaded to the library.
+We'll use the sensitivity label that we created as the default sensitivity label for the site document library that is connected to Teams. This will automatically apply the highly sensitive label to any new label-compatible files that are uploaded to the library. (This requires a Microsoft Syntex - SharePoint Advanced Management license.)
 
 To set a default sensitivity label for a document library
 

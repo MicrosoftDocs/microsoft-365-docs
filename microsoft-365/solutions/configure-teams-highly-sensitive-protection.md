@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 ms.collection: 
 - highpri
+- Tier1
 - Ent_O365
 - Strat_O365_Enterprise
 - m365solution-3tiersprotection
