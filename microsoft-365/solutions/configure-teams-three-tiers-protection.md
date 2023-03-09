@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 05/01/2020
+ms.date: 03/09/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -21,12 +21,13 @@ ms.collection:
 ms.custom:
 - Ent_Architecture
 - seo-marvel-jun2020
-ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Learn how to configure Teams for better file sharing security using three tiers of protection, balancing security with ease of collaboration.
 ---
 
 # Configure Teams with three tiers of protection
+
+[!INCLUDE[Advanced Management](../includes/advanced-management.md)]
 
 The articles in this series provide recommendations for configuring teams in Microsoft Teams, and their associated SharePoint sites, for file protection that balances security with ease of collaboration.
 
