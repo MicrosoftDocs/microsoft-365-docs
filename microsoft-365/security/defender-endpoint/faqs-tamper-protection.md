@@ -6,7 +6,7 @@ description: Frequently asked questions on configuring tamper protection.
 keywords: malware, defender, antivirus, tamper protection
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/08/2023
+ms.date: 03/09/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -74,9 +74,7 @@ If you're using Intune to configure and manage tamper protection, you can target
 
 ## What settings can't be changed when tamper protection is turned on?
 
-When tamper protection is turned on, tamper-protected settings can't be changed from their default value, even if you're using Intune or Configuration Manager to manage your security settings. Changes might appear to be successful in Intune or Configuration Manager, but won't actually be allowed by tamper protection. See [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
-
-For the most current list of tamper protected settings, contact support.
+When tamper protection is turned on, tamper-protected settings can't be changed from their default value, even if you're using Intune or Configuration Manager to manage your security settings. Changes might appear to be successful in Intune or Configuration Manager, but won't actually be allowed by tamper protection. For a list of settings, see [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
 
 ## If tamper protection is turned on in Microsoft 365 Defender, can Intune override it?
 

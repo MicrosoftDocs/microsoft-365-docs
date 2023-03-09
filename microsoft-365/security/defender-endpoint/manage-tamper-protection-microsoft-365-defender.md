@@ -31,6 +31,7 @@ search.appverid: met150
 
 **Platforms**
 - Windows
+- macOS
 
 [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, you can turn tamper protection on (or off) tenant wide by using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
@@ -65,13 +66,12 @@ search.appverid: met150
 
 ## Important points to keep in mind
 
-- When you enable tamper protection in the Microsoft 365 Defender portal, the setting is applied tenant wide. To exclude devices from tamper protection, you can use either [Microsoft Intune](manage-tamper-protection-intune.md) or [Configuration Manager, version 2006 with tenant attach](manage-tamper-protection-configuration-manager.md).
+- When you enable tamper protection in the Microsoft 365 Defender portal, the setting is applied tenant wide, and will restrict [tamper-protected settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on) to their secure defaults. You can use [Intune](manage-tamper-protection-intune.md) or [Configuration Manager with tenant attach](manage-tamper-protection-configuration-manager.md) to exclude devices from tamper protection. You can also use Intune to [tamper-protect antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions). 
 
-- Currently, the option to manage tamper protection in the Microsoft 365 Defender portal is on by default for new deployments. For existing deployments, tamper protection is available on an opt-in basis. To opt in, in the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), choose **Settings** \> **Endpoints** \> **Advanced features** \> **Tamper protection**.
+- Currently, the option to manage tamper protection in the Microsoft 365 Defender portal is on by default for new deployments, as part of [built-in protection, which helps guard against ransomware](built-in-protection.md). For existing deployments, tamper protection is available on an opt-in basis. To opt in, in the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), choose **Settings** \> **Endpoints** \> **Advanced features** \> **Tamper protection**. 
 
-- If you're using the Microsoft 365 Defender portal to manage tamper protection, you can still use [Intune](manage-tamper-protection-intune.md) or [Configuration Manager with tenant attach](manage-tamper-protection-configuration-manager.md) to exclude devices from tamper protection. You can also use Intune to [tamper-protect antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions).
+## See also
 
-- If your organization is currently using Microsoft Intune to manage security settings (such as tamper protection), turning tamper protection on or off in the Microsoft 365 Defender won't impact the state of tamper protection. It will restrict tamper protected settings to their secure defaults.
-
-- Tamper protection settings configured in Intune take precedence over settings configured in the Microsoft 365 Defender portal.
-
+- [Built-in protection helps guard against ransomware](built-in-protection.md)
+- [What happens when tamper protection is turned on?](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)
+- [Protect macOS security settings with tamper protection](tamperprotection-macos.md)
