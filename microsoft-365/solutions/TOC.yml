@@ -119,22 +119,18 @@
         href: ransomware-protection-microsoft-365-devices.md
       - name: Step 5. Protect information
         href: ransomware-protection-microsoft-365-information.md
-    - name: Deploy information protection for data privacy regulations
+    - name: Manage data privacy and data protection
       items:
       - name: Overview
-        href: information-protection-deploy.md
-      - name: Plan
-        href: information-protection-deploy-assess.md
-      - name: Track
-        href: information-protection-deploy-compliance.md
-      - name: Prevent
-        href: information-protection-deploy-identity-device-threat.md
-      - name: Protect
-        href: information-protection-deploy-protect-information.md
-      - name: Retain
-        href: information-protection-deploy-govern.md
-      - name: Investigate
-        href: information-protection-deploy-monitor-respond.md
+        href: data-privacy-protection.md
+      - name: Step 1. Assess data and risks
+        href: data-privacy-protection-assess.md
+      - name: Step 2. Protect and govern data
+        href: data-privacy-protection-protect-govern.md
+      - name: Step 3. Stay on track with privacy regulations
+        href: data-privacy-protection-regulations.md
+      - name: Step 4. Respond to incidents and subject requests
+        href: data-privacy-protection-respond-requests.md
 - name: Workload solutions and scenarios
   items: 
     - name: Overview
@@ -377,7 +373,7 @@
       - name: Switch from a non-Microsoft protection tool to Microsoft Defender for Office 365
         href: ../security/office-365-security/migrate-to-defender-for-office-365.md        
       - name: Security recommendations for priority accounts in Microsoft 365
-        href: ../security/office-365-security/priority accounts-security-recommendations.md
+        href: ../security/office-365-security/priority-accounts-security-recommendations.md
       - name: Remove a former employee and secure data
         href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
    

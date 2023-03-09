@@ -1,5 +1,5 @@
 ---
-title: Insider risk management cases
+title: Take action on insider risk management cases
 description: Learn about insider risk management cases in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/21/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -17,7 +18,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Insider risk management cases
+# Take action on insider risk management cases
 
 >[!IMPORTANT]
 >Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
@@ -130,9 +131,9 @@ The **Activity explorer** tab allows risk analysts and investigators to review c
 
 For more information about the Activity explorer, see the [Insider risk management activities](insider-risk-management-activities.md#activity-explorer) article.
 
-## Forensic evidence (preview)
+## Forensic evidence
 
-The **Forensic evidence (preview)** tab allows risk investigators to review visual captures associated with risk activities included in cases. For example, as part of the case management actions, investigators may need to help clarify the context of the user activity under review. Viewing the actual clips of the activity can help the investigator determine if the user activity is potentially risky and may lead to a security incident.
+The **Forensic evidence ** tab allows risk investigators to review visual captures associated with risk activities included in cases. For example, as part of the case management actions, investigators may need to help clarify the context of the user activity under review. Viewing the actual clips of the activity can help the investigator determine if the user activity is potentially risky and may lead to a security incident.
 
 For more information about forensic evidence, see the [Learn about insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence) article.
 
@@ -195,7 +196,7 @@ To send a notice to the user assigned to a case:
 
 ### Escalate for investigation
 
-Escalate the case for user investigation in situations where additional legal review is needed for the user's risk activity. This escalation opens a new Microsoft Purview eDiscovery (Premium) case in your Microsoft 365 organization. eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external legal investigations. It also lets your legal team manage the entire legal hold notification workflow to communicate with custodians involved in a case. Escalating to an eDiscovery (Premium) case from an insider risk management case helps your legal team take appropriate action and manage content preservation. To learn more about eDiscovery (Premium) cases, see [Overview of Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
+Escalate the case for user investigation in situations where additional legal review is needed for the user's risk activity. This escalation opens a new Microsoft Purview eDiscovery (Premium) case in your Microsoft 365 organization. eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external legal investigations. It also lets your legal team manage the entire legal hold notification workflow to communicate with custodians involved in a case. Escalating to an eDiscovery (Premium) case from an insider risk management case helps your legal team take appropriate action and manage content preservation. To learn more about eDiscovery (Premium) cases, see [Overview of Microsoft Purview eDiscovery (Premium)](ediscovery-overview.md).
 
 To escalate a case to a user investigation:
 

@@ -8,10 +8,10 @@ manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
-ms.subservice: other
-ms.date: 09/15/2022
+ms.subservice: m365bp
+ms.date: 01/18/2023
 ms.localizationpriority: high
-ms.reviewer: shlomiakirav
+ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -70,9 +70,7 @@ See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enroll
 
 ## What about servers?
 
-By default, servers are not supported in Microsoft 365 Business Premium and the standalone version of Defender for Business. However, **the ability to onboard a server, such as an endpoint running Windows Server or Linux Server, is now in preview**! 
-
-See [How to get Microsoft Defender for Business servers (preview)](../security/defender-business/get-defender-business-servers.md).
+To onboard servers, an additional license, such as Microsoft Defender for Business servers, is required. See [How to get Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md).
 
 ## Run a detection test on a Windows device
 

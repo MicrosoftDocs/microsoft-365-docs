@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+author: Dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 06/04/2021
 ---
 
 # Export software vulnerabilities assessment per device
@@ -101,7 +102,7 @@ CveId|String|Unique identifier assigned to the security vulnerability under the 
 CvssScore|String|The CVSS score of the CVE.|6.2
 DeviceId|String|Unique identifier for the device in the service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|String|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com
-DiskPaths|Array\[string\]|Disk evidence that the product is installed on the device.|[ "C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
+DiskPaths|Array\[string\]|Disk evidence that the product is installed on the device.|["C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe"]
 ExploitabilityLevel|String|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
 FirstSeenTimestamp|String|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880
 Id|String|Unique identifier for the record.|123ABG55_573AG&mnp!
@@ -111,7 +112,7 @@ RbacGroupName|String|The role-based access control (RBAC) group. If this device 
 RecommendationReference|String|A reference to the recommendation ID related to this software.|va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (optional)|String|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates
 RecommendedSecurityUpdateId (optional)|String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961
-RegistryPaths|Array\[string\]|Registry evidence that the product is installed in the device.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
+RegistryPaths|Array\[string\]|Registry evidence that the product is installed in the device.|["HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight"]
 SecurityUpdateAvailable|Boolean|Indicates whether a security update is available for the software.| Possible values are true or false.
 SoftwareName|String|Name of the software product.|Chrome
 SoftwareVendor|String|Name of the software vendor.|Google
@@ -368,7 +369,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 ### 3.4 Parameters
 
-- sinceTime (required): The data between a selected time and today.
+- sinceTime (required): The start time from which you want to see data changes. Vulnerability management generates data on new and updated vulnerabilities every 6 hours. The data returned will include all the changes captured in the 6 hour period the specified sinceTime falls into, along with the changes in any subsequent 6 hour periods up to and including the most recently generated data.
 - pageSize (default = 50,000): number of results in response.
 - $top: number of results to return (doesn't return @odata.nextLink and so doesn't pull all the data).
 
@@ -402,7 +403,7 @@ RbacGroupName|String|The role-based access control (RBAC) group. If this device 
 RecommendationReference|string|A reference to the recommendation ID related to this software.|va--microsoft--silverlight  
 RecommendedSecurityUpdate |String|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates  
 RecommendedSecurityUpdateId |String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961  
-RegistryPaths |Array[string]|Registry evidence that the product is installed in the device.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
+RegistryPaths |Array[string]|Registry evidence that the product is installed in the device.|["HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome"]  
 SoftwareName|String|Name of the software product.|Chrome  
 SoftwareVendor|String|Name of the software vendor.|Google  
 SoftwareVersion|String|Version number of the software product.|81.0.4044.138  

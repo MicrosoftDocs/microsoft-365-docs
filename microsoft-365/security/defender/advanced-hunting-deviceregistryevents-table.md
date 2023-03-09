@@ -20,6 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # DeviceRegistryEvents
@@ -33,8 +34,8 @@ ms.topic: conceptual
 
 The `DeviceRegistryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about the creation and modification of registry entries. Use this reference to construct queries that return information from this table.
 
->[!TIP]
-> For detailed information about the events types (`ActionType` values) supported by a table, use the  built-in schema reference available in the Defender for Cloud.
+> [!TIP]
+> For detailed information about the events types (`ActionType` values) supported by a table, use the  built-in schema reference available in Microsoft 365 Defender.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 

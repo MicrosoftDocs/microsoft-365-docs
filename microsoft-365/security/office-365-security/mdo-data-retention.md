@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 09/14/2022
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-security
@@ -13,8 +13,9 @@ ms.subservice: mdo
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
-ms.custom: 
-description: Microsoft Defender for Office 365 data retention informationThreat Explorer/ Real-Time detections 
+- tier2
+ms.custom:
+description: Microsoft Defender for Office 365 data retention informationThreat Explorer/ Real-Time detections
 search.appverid: met150
 ---
 

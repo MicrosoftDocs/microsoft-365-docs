@@ -6,10 +6,11 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - tier1
 - purview-compliance
@@ -38,9 +39,9 @@ The Audit New Search builds upon the existing search functionalities and include
 
 View the available Microsoft Purview Audit documentation as the search job creation and export experiences have many parallels with the current search experience:
 
-- [Search the audit log in the Microsoft Purview compliance portal](search-the-audit-log-in-security-and-compliance.md) (note that PowerShell isn't yet compatible with Audit Search V2)
-- [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
-- [Export, configure, and view audit log records](export-view-audit-log-records.md)
+- [Search the audit log in the Microsoft Purview compliance portal](audit-log-search.md) (note that PowerShell isn't yet compatible with Audit Search V2)
+- [Detailed properties in the audit log](audit-log-detailed-properties.md)
+- [Export, configure, and view audit log records](audit-log-export-records.md)
 
 Additional information:
 
@@ -107,7 +108,7 @@ Some examples of different searches include the following criteria. Explore thes
 - Information about the date, IP Address, User, Activity, and Item can be found in the search job results page for each item
 - Select an activity to see a fly-out window with more details about the activity
 - The filtering feature for search job results can help to parse through results.
-- Export is fully functional and exports all search job items to a .csv file. Export supports results up to  500 KB (500,000 rows).
+- Export all search job items to a .csv file as needed. Export supports results up to 50 KB for Audit (Standard) and up to 500 KB (500,000 rows) for Audit (Premium).
 
 ## Frequently asked questions
 

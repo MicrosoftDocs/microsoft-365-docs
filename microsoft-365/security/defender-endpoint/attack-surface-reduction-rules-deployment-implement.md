@@ -21,11 +21,9 @@ ms.collection:
  - m365solution-asr-rules
  - highpri
  - tier1
-ms.date: 09/19/2022
+ms.date: 12/19/2022
 search.appverid: met150
 ---
-
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Enable attack surface reduction (ASR) rules
 

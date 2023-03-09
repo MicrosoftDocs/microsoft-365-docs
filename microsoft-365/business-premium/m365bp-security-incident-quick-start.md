@@ -8,8 +8,8 @@ manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
-ms.subservice: other
-ms.date: 09/15/2022
+ms.subservice: m365bp
+ms.date: 01/18/2023
 ms.localizationpriority: high
 ms.collection:
 - m365solution-smb
@@ -59,7 +59,7 @@ The following table summarizes remediation actions that are available in Microso
 | Source  | Actions  |
 |---------|---------|
 | Automated investigations      | <ul><li>Quarantine a file</li><li>Remove a registry key</li><li>Kill a process</li><li>Stop a service</li><li>Disable a driver</li><li>Remove a scheduled task </li></ul>       |
-| Manual response actions   | <ul><li>Run antivirus scan</li><li>Isolate device</li><li>Stop and quarantine</li><li>Add an indicator to block or allow a file </li></ul>      |
+| Manual response actions   | <ul><li>Run antivirus scan</li><li>Isolate device</li><li>Add an indicator to block or allow a file </li></ul>      |
 | Live response  | <ul><li>Collect forensic data</li><li>Analyze a file</li><li>Run a script</li><li>Send a suspicious entity to Microsoft for analysis</li><li>Remediate a file</li><li>Proactively hunt for threats</li></ul>  |
 
 

@@ -3,6 +3,7 @@ title: "Limit who can invite guests"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 12/08/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions

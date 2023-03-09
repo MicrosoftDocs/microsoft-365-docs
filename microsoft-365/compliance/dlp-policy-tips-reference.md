@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 04/15/2021
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -43,6 +43,7 @@ DLP policy tips in Outlook Web Access is supported for all the conditions, and a
 - Document name matches patterns
 - Document content contains words or phrases
 - Document content matches patterns
+- Any email attachment's content didn't complete scanning
 
 **Actions:**
 
@@ -175,7 +176,7 @@ The list of out-of-the-box sensitive information types that will be detected for
 Note that some custom sensitive information types are also supported for DLP policy tips in addition to the above out-of-the-box sensitive information types.
 
 > [!NOTE]
-> Not all elements of custom sensitive information types are compatible with every version of Office. Entity elements for Custom SITs, such as Functions, may cause incompatibility.
+> Not all elements of custom sensitive information types are compatible with every version of Office. Entity elements for Custom SITs, such as Functions, may cause incompatibility. Office 2019 supports custom SITs that use Regular Expressions, Keyword Lists, and Keyword Dictionary only.
 
 ## Data Loss Prevention on endpoint devices supports policy tips for only some sensitive information types
 

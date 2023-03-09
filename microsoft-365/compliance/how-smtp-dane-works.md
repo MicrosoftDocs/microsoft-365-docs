@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: v-mathavale
 author: v-mathavale
 manager: dansimp
+ms.date: 01/19/2022
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -82,7 +83,7 @@ As an Exchange Online customer, there isn't anything you need to do to configure
 
 ## How can Exchange Online customers use SMTP DANE inbound?
 
-Currently, inbound SMTP DANE isn't supported for Exchange Online. Support is expected to be released at the end of 2022.
+Currently, inbound SMTP DANE isn't supported for Exchange Online. Support for inbound SMTP DANE will be available in the near future.
 
 ## What is the recommended TLSA record configuration?
 
@@ -105,9 +106,9 @@ There are only two scenarios where an SMTP DANE failure will result in the email
 |Technology|Additional Information|
 |---|---|
 |**Mail Transfer Agent - Strict Transport Security (MTA-STS)** helps thwart downgrade and Man-in-the-Middle attacks by providing a mechanism for setting domain policies that specify whether the destination email server supports TLS and what to do when TLS can't be negotiated, for example stop the transmission.|More information about Exchange Online's upcoming support for inbound and outbound MTA-STS will be published later this year. <br/><br/> [Exchange Online Transport News from Microsoft Ignite 2020 - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699) <br/><br/> [rfc8461 (ietf.org)](https://datatracker.ietf.org/doc/html/rfc8461)|
-|**Sender Policy Framework (SPF)** uses IP information to ensure that destination email systems trust messages sent from your custom domain.|[How Sender Policy Framework (SPF) prevents spoofing](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)|
-|**DomainKeys Identified Mail (DKIM)** uses X.509 certificate information to ensure that destination email systems trust messages sent outbound from your custom domain.|[How to use DKIM for email in your custom domain](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)|
-|**Domain-based Message Authentication, Reporting, and Conformance (DMARC)** works with Sender Policy Framework and DomainKeys Identified Mail to authenticate mail senders and ensure that destination email systems trust messages sent from your domain.|[Use DMARC to validate email, setup steps](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)|
+|**Sender Policy Framework (SPF)** uses IP information to ensure that destination email systems trust messages sent from your custom domain.|[How Sender Policy Framework (SPF) prevents spoofing](/microsoft-365/security/office-365-security/email-authentication-anti-spoofing)|
+|**DomainKeys Identified Mail (DKIM)** uses X.509 certificate information to ensure that destination email systems trust messages sent outbound from your custom domain.|[How to use DKIM for email in your custom domain](/microsoft-365/security/office-365-security/email-authentication-dkim-configure)|
+|**Domain-based Message Authentication, Reporting, and Conformance (DMARC)** works with Sender Policy Framework and DomainKeys Identified Mail to authenticate mail senders and ensure that destination email systems trust messages sent from your domain.|[Use DMARC to validate email, setup steps](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure)|
 
 ## Troubleshooting Sending Emails with SMTP DANE
 
@@ -321,11 +322,11 @@ DNSSEC isn't fully resistant to Man-in-the-Middle attacks and downgrade (from TL
 
 [Overview of DNSSEC | Microsoft Docs](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11))
 
-[Use DMARC to validate email, setup steps - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
+[Use DMARC to validate email, setup steps - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure)
 
-[How to use DKIM for email in your custom domain - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)
+[How to use DKIM for email in your custom domain - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/email-authentication-dkim-configure)
 
-[How Sender Policy Framework (SPF) prevents spoofing - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)
+[How Sender Policy Framework (SPF) prevents spoofing - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/email-authentication-anti-spoofing)
 
 [Exchange Online Transport News from Microsoft Ignite 2020 - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699)
 

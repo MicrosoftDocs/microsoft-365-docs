@@ -22,6 +22,7 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
+ms.date: 12/05/2022
 ---
 
 # Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
@@ -85,7 +86,7 @@ To expand the above information on ASR rules, you can use the properties **Attac
 Example:
 
 ```powershell
-Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ids
+Get-MPPreference | Select-Object -ExpandProperty AttackSurfaceReductionRules_Ids
 ```
 
 :::image type="content" source="images/getmpref-examplenew.png" alt-text="The get mpreference example" lightbox="images/getmpref-examplenew.png":::
@@ -95,7 +96,7 @@ The above shows all the IDs for ASR rules that have a setting different from 0 (
 The next step is then to list the actual actions (Block or Audit) that each rule is configured with.
 
 ```powershell
-Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions
+Get-MPPreference | Select-Object -ExpandProperty AttackSurfaceReductionRules_Actions
 ```
 
 :::image type="content" source="images/getmpref-example2new.png" alt-text="The get mppreference example2" lightbox="images/getmpref-example2new.png":::

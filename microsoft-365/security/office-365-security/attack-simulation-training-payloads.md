@@ -7,13 +7,14 @@ audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 ms.custom:
 description: Admins can learn how to create and manage payloads for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Payloads in Attack simulation training in Defender for Office 365
@@ -23,7 +24,7 @@ search.appverid: met150
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-In Attack simulation training, a _payload_ is the phishing email message and links or attachment content that's are presented to users in simulations. Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 offers a robust built-in payload catalog for the available social engineering techniques. However, you might want to create custom payloads that will work better for your organization.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, a _payload_ is the phishing email message and links or attachment content that's are presented to users in simulations. Attack simulation training offers a robust built-in payload catalog for the available social engineering techniques. However, you might want to create custom payloads that will work better for your organization.
 
 To see the available payloads, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> and then select **Payloads**. To go directly to the **Simulation content library** tab where you can select **Payloads**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
@@ -42,7 +43,7 @@ The following information is shown for each payload:
 - **Compromised rate (%)**: For built-in payloads, this value is the predicted average compromise rate for Attack simulation training simulations that use the same type of payload across all other Microsoft 365 organizations.
 - **Created by**: For built-in payloads, the value is **Microsoft**. For custom payloads, the value is the UPN of the user who created the payload.
 - **Last modified**
-- **Technique**: One of the available [social engineering techniques](attack-simulation-training.md#select-a-social-engineering-technique):
+- **Technique**: One of the available [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
   - **Credential harvest**
   - **Malware attachment**
   - **Link in attachment**
@@ -99,7 +100,7 @@ When you select a payload from the list, a details flyout appears with the follo
    ![Create a payload on the Tenant payloads tab in Payloads in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-payload-create.png)
 
    > [!NOTE]
-   > ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** is also available on the **Select payload and login page** step of the simulation creation wizard. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training.md#select-a-payload-and-login-page).
+   > ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** is also available on the **Select payload and login page** step of the simulation creation wizard. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page).
    >
    > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the payload later. You can pick up where you left off by selecting the notification on the **Tenant payloads** tab in **Payloads**, and then clicking ![Edit payload icon.](../../media/m365-cc-sc-edit-icon.png) **Edit payload**. The partially-completed payload will have the **Status** value **Draft**.
 
@@ -116,7 +117,7 @@ When you select a payload from the list, a details flyout appears with the follo
    - **Drive-by URL**
    - **OAuth Consent Grant**
 
-   For more information, see [Simulate a phishing attack with Attack simulation training in Defender for Office 365](attack-simulation-training.md).
+   For more information, see [Simulate a phishing attack with Attack simulation training in Defender for Office 365](attack-simulation-training-simulations.md).
 
    When you're finished, click **Next**.
 
@@ -151,7 +152,7 @@ When you select a payload from the list, a details flyout appears with the follo
      For **Link in attachment**, the name of the box is **Select a URL in this attachment that you want to be your phishing link**. Later, you'll embed the URL in the attachment.
 
      Select one of the available URL values:
-  
+
      - <https://www.mcsharepoint.com>
      - <https://www.attemplate.com>
      - <https://www.doctricant.com>
@@ -189,11 +190,11 @@ When you select a payload from the list, a details flyout appears with the follo
    - Common settings on the **Configure payload** page:
 
      - **Add tag(s)**
-  
+
      - **Theme**: The available values are: **Account Activation**, **Account Verification**, **Billing**, **Clean up Mail**, **Document Received**, **Expense**, **Fax**, **Finance Report**, **Incoming Messages**, **Invoice**, **Item Received**, **Login Alert**, **Mail Received**, **Other**, **Password**, **Payment**, **Payroll**, **Personalized Offer**, **Quarantine**, **Remote Work**, **Review Message**, **Security Update**, **Service Suspended**, **Signature Required**, **Upgrade Mailbox Storage**, **Verify mailbox**, or **Voicemail**.
-  
+
      - **Brand**: The available values are: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud**, or **Other**.
-  
+
      - **Industry**: The available values are: **Banking**, **Business services**, **Consumer services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real estate**, or **Other**.
 
      - **Current event**: The available values are **Yes** or **No**.
@@ -271,7 +272,7 @@ When you select a payload from the list, a details flyout appears with the follo
      |**Unprofessional looking design or formatting**|Message body|
      |**URL hyperlinking**|Message body|
      |**You're special**|Message body|
-  
+
      This list is curated to contain the most common clues that appear in phishing messages.
 
      If you select the email message subject or the message body as the location for the indicator, a **Select text** button appears. Click this button to select the text in the message subject or message body where you want the indicator to appear. When you're finished, click **Select**.
@@ -338,6 +339,6 @@ Select the payload from the list by clicking the check box, and then click the !
 
 [Get started using Attack simulation training](attack-simulation-training-get-started.md)
 
-[Create a phishing attack simulation](attack-simulation-training.md)
+[Create a phishing attack simulation](attack-simulation-training-simulations.md)
 
 [Gain insights through Attack simulation training](attack-simulation-training-insights.md)

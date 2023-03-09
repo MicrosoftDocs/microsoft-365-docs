@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: Consumer/IW
 ms.topic: how-to
-
 ms.localizationpriority: high
 search.appverid:
   - MET150
@@ -16,12 +14,14 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
   - seo-marvel-apr2020
 description: Users can learn how to view and manage quarantined messages in Exchange Online Protection (EOP) that should have been delivered to them.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
+ms.date: 3/3/2023
 ---
 
 # Find and release quarantined messages as a user in EOP
@@ -29,7 +29,7 @@ adobe-target: true
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -40,25 +40,25 @@ As an ordinary user (not an admin), the **default** capabilities that are availa
 |Quarantine reason|View|Release|Delete|
 |---|:---:|:---:|:---:|
 |**Anti-spam policies**||||
-|Bulk|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|Spam|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|High confidence spam|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|Phishing|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|High confidence phishing||||
+|&nbsp;&nbsp;&nbsp;Bulk|✔|✔|✔|
+|&nbsp;&nbsp;&nbsp;Spam|✔|✔|✔|
+|&nbsp;&nbsp;&nbsp;High confidence spam|✔|✔|✔|
+|&nbsp;&nbsp;&nbsp;Phishing|✔|✔|✔|
+|&nbsp;&nbsp;&nbsp;High confidence phishing||||
 |**Anti-phishing policies**||||
-|Spoof intelligence protection in EOP|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|Impersonated user protection in Defender for Office 365|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|Impersonated domain protection in Defender for Office 365|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|Mailbox intelligence protection in Defender for Office 365|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|&nbsp;&nbsp;&nbsp;Spoof intelligence protection in EOP|✔|✔|✔|
+|&nbsp;&nbsp;&nbsp;Impersonated user protection in Defender for Office 365|✔|✔|✔|
+|&nbsp;&nbsp;&nbsp;Impersonated domain protection in Defender for Office 365|✔|✔|✔|
+|&nbsp;&nbsp;&nbsp;Mailbox intelligence impersonation protection in Defender for Office 365|✔|✔|✔|
 |**Anti-malware policies**||||
-|Email messages with attachments that are quarantined as malware.||||
+|&nbsp;&nbsp;&nbsp;Email messages with attachments that are quarantined as malware.||||
 |**Safe Attachments in Defender for Office 365**||||
-|Safe Attachments policies that quarantine email messages with malicious attachments as malware.||||
-|Safe Attachments for SharePoint, OneDrive, and Microsoft Teams that quarantines malicious files as malware.||||
+|&nbsp;&nbsp;&nbsp;Safe Attachments policies that quarantine email messages with malicious attachments as malware.||||
+|&nbsp;&nbsp;&nbsp;Safe Attachments for SharePoint, OneDrive, and Microsoft Teams that quarantines malicious files as malware.||||
 |**Mail flow rules (transport rules)**||||
-|Mail flow rules that quarantine email messages.||||
+|&nbsp;&nbsp;&nbsp;Mail flow rules that quarantine email messages.||||
 
-_Quarantine policies_ define what users are allowed to do to quarantined messages based on why the message was quarantined in [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Default quarantine policies enforce the historical capabilities as described in the previous table. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users in supported features. For more information, see [Quarantine policies](quarantine-policies.md).
+_Quarantine policies_ define what users are allowed to do to quarantined messages based on why the message was quarantined in [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Default quarantine policies enforce the historical capabilities for messages that were quarantined by the security feature as described in the previous table. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users in supported features. For more information, see [Quarantine policies](quarantine-policies.md).
 
 You view and manage your quarantined messages in the Microsoft 365 Defender portal or (if an admin has set this up) quarantine notifications from quarantine policies.
 
@@ -66,14 +66,14 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 
 - To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
 
-- Admins can configure how long messages are kept in quarantine before they're permanently deleted in anti-spam policies. Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+- Admins can configure how long messages are kept in quarantine before they're permanently deleted in anti-spam policies. Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
-- By default, messages that were quarantined for high confidence phishing, malware, or by mail flow rules are only available to admins, and aren't visible to users. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
+- By default, messages that were quarantined for high confidence phishing, malware, or by mail flow rules are only available to admins, and aren't visible to users. For more information, see [Manage quarantined messages and files as an admin in EOP](quarantine-admin-manage-messages-files.md).
 
 ## View your quarantined messages
 
 > [!NOTE]
-> Your ability to view quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the quarantined message type (which might be the [default quarantine policy for the quarantine reason](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)).
+> Your ability to view quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the reason why the message was quarantined (which might be the default quarantine policy as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)).
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine**. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
 
@@ -108,7 +108,7 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
    - **Quarantine reason**:
      - **Bulk**
      - **Spam**
-     - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](set-up-anti-phishing-policies.md#spoof-settings) or [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
+     - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](anti-phishing-policies-about.md#spoof-settings) or [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **High confidence phishing**
    - **Release status**: Any of the following values:
      - **Needs review**
@@ -138,7 +138,6 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
-
 ### View quarantined message details
 
 When you select quarantined message from the list, the following information is available in the details flyout that appears.
@@ -167,7 +166,7 @@ To take action on the message, see the next section.
 ### Take action on quarantined email
 
 > [!NOTE]
-> Your ability to take action on quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the quarantined message type (which might be the [default quarantine policy for the quarantine reason](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). This section describes all available actions.
+> Your ability to view quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the reason why the message was quarantined (which might be the default quarantine policy as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)). This section describes all available actions.
 
 After you select a quarantined message from the list, the following actions are available in the details flyout:
 

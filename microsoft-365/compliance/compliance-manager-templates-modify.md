@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 01/18/2023
 audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
@@ -21,21 +22,20 @@ search.appverid:
 description: "Understand how to modify assessment templates in Microsoft Purview Compliance Manager."
 ---
 
-# Modify assessment templates in Microsoft Purview Compliance Manager
+# Modify a custom assessment template
 
-When working with assessments in Compliance Manager, you may want to modify an assessment template that you've created. The process is similar to the [template creation](compliance-manager-templates-create.md) process in that you'll upload a formatted Excel file with your template data.
+If you want to modify a custom template you created, you'll follow a process similar to the [template creation](compliance-manager-templates-create.md) process of uploading a [formatted Excel file](compliance-manager-templates-format-excel.md) containing your template data. However, there are key details to know as you format your Excel file to change to existing template data. **We recommend you review these instructions carefully to ensure you don't overwrite any existing data that you want to retain.**
 
-However, there are details to be aware of as you format your file with changes to existing template data. **We recommend you review these instructions carefully to ensure you don't overwrite any existing data that you want to retain.**
-
-To learn more about the format of this spreadsheet, see [Format your template data with Excel](compliance-manager-templates-format-excel.md).
+> [!NOTE]
+> This template modification process can only be used for a custom template you have created. If you want to add controls or actions to a Compliance Manager template that Microsoft created, follow the instructions to [extend a Microsoft template](compliance-manager-templates-extend.md).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Format your Excel file to modify an existing template
+## Steps to modify a template
 
-From your **assessment templates** page, select the template you want to modify, which will bring up its details page. Then select **Export to Excel**. An Excel file with all your template data will download. Save the file to your local machine.
-
-To work with this file, jump to a section below to quickly find the instructions you need:
+1. In Compliance Manager, go to the **Assessment templates** page. Select the template you want to modify, which will bring up its details page. 
+2. Select **Export to Excel** in the upper right corner. An Excel file with all your template data will download. Save the file to your local machine.
+3. Edit your Excel file. Depending on which data you need to modify, jump to a section below for the instructions you need:
 
 - [Edit the main template attributes](#edit-the-main-template-attributes)
 - [Add an improvement action](#add-an-improvement-action)
@@ -43,6 +43,8 @@ To work with this file, jump to a section below to quickly find the instructions
 - [Change an improvement action's name](#change-an-improvement-actions-name)
 - [Remove an improvement action](#remove-an-improvement-action)
 - [Remove a control](#remove-a-control)
+
+4. When you're done editing your Excel file, save it to your local machine. You'll complete the process by re-uploading the Excel file using the [upload modified template information instructions](#modify-template-info-in-compliance-manager) below.
 
 ### Edit the main template attributes
 

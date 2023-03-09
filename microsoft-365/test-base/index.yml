@@ -60,6 +60,10 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
+          - text: Test Base for Microsoft 365 Product Terms
+            url: /legal/test-base/testbase-for-m365-product-terms
+          - text: Test Base for Microsoft 365 Product Terms Change History
+            url: /legal/test-base/testbase-for-m365-product-terms-changehistory
           - text: Frequently Asked Questions
             url: faq.md 
    

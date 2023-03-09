@@ -1,6 +1,7 @@
 ---
 title: "Exchange Multi-Geo"
 ms.reviewer: adwood
+ms.date: 08/10/2020
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -25,6 +26,9 @@ You can place mailboxes in satellite geo locations by:
 - Moving an existing Exchange Online mailbox to a satellite geo location by changing the user's preferred data location.
 
 - Onboarding a mailbox from an on-premises Exchange organization directly into a satellite geo location.
+
+> [!NOTE]
+> This feature does not guarantee email routing through a dedicated geo-specific region (data in transit).
 
 ## Mailbox placement and moves
 
@@ -54,4 +58,4 @@ Exchange Online synchronizes the **PreferredDataLocation** property from Azure A
 
 - Public folders are supported in multi-geo organizations. However, the public folders must remain in the central geo location. You can't move public folders to satellite geo locations.
 
-- In a multi-geo environment, cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different geo location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. Exchange admin audit events are also only available for the default location. For more information, see [Manage mailbox auditing](../compliance/enable-mailbox-auditing.md).
+- In a multi-geo environment, cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different geo location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. Exchange admin audit events are available for all locations via [Microsoft Purview](/microsoft-365/compliance/audit-solutions-overview) and the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet. For more information, see [Manage mailbox auditing](../compliance/enable-mailbox-auditing.md).

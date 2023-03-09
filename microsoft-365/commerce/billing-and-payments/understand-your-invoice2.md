@@ -32,6 +32,9 @@ ms.date: 05/24/2022
 
 Your bill or invoice provides a summary of charges for your subscription and includes instructions for how to make a payment.
 
+> [!IMPORTANT]
+> Starting on April 1, 2023, we will stop accepting checks as a payment method for subscriptions paid by invoice. Beginning on that date, pay by check will no longer be available as a payment option, and check payment instructions will be removed from invoices. You can still pay for your invoice by electronic funds transfer (EFT). See your invoice for EFT payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by EFT, and avoid possible service disruption.
+
 > [!NOTE]
 > If you have other subscriptions instead of or in addition to Microsoft 365, see [Understand your bill or invoice](understand-your-invoice.md).
 
@@ -103,7 +106,7 @@ On page one of your invoice, the **Product** is "Online Services," the generic t
 
 **Billing Period** is the period since the last invoice date.
 
-**Payment Terms** is the number of days from the invoice date when payment is due. The standard payment term is 30 days.
+**Payment Terms** is the number of days from the invoice date when payment is due.
 
 **Due Date** is the date when the invoice payment is due. If your subscription is paid with a credit card or bank account, we charge your card or account the day after the Invoice Date.
 

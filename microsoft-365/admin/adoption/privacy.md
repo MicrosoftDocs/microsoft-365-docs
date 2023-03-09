@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 09/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -59,7 +60,7 @@ Users with the Reports Reader role can view usage reporting data and the reports
 
 ## Capability to choose specific users or certain groups
 
-You can choose the users and groups whose data will be used to determine your org's people experiences insights. Omitting some groups will affect the insights calculations. You have to be a Global admin to opt your organization out of the people experiences reports. It can take up to 24 hours for change to apply.
+You can choose the users and groups whose data will be used to determine your org's people experiences insights. Omitting some groups will affect the insights calculations. You have to be a Global admin to opt your organization out of the people experiences reports. You must be a Global admin to change this setting. It can take up to 24 hours for change to apply.
 
 To omit certain groups:
 
@@ -85,11 +86,11 @@ To opt out:
 
 ## Capability to display insights at the group level
 
-By default, insights are shown in aggregate in at the organizational level. You can also display insights at the group level, such as department or region. If you opt out people experience, you can't turn on this control. [Learn more about Group Level Aggregates](group-level-aggregates.md).
+By default, insights are shown in aggregate at the organizational level. You can also display insights at the group level, such as department or region. If you opt out of people experiences, you can't turn on this control. You must be a Global admin to turn on group-level insights, run AAD data accuracy evaluation, and approve. [Learn more about Group Level Aggregates](group-level-aggregates.md).
 
 To turn on group-level insights:
 
-1. In the admin center, go to **Settings** > **Org Settings** > **Adoption Score**.
+1. In the admin center, go to **Settings** \> **Org Settings** \> **Adoption Score**.
 1. Select **All users** or **Specific users**.
 1. Select **Turn on group-level insights**.
 
@@ -113,12 +114,12 @@ The Organizational Message Writer Role is a new built-in role that allows assign
 
 To turn on organizational messages:
 
-- In the admin center, go to **Settings** > **Org Settings** > **Adoption Score**.
+- In the admin center, go to **Settings** \> **Org Settings** \> **Adoption Score**.
 - Under the Organizational Messages tab, select **All approved admins to send in-product recommendations to specific users**.
 
 :::image type="content" source="../../media/privacy-organizational-messages.png" alt-text="Screenshot: Enable Organizational Messages in Adoption Score":::
 
->[!NOTE]
+> [!NOTE]
 > Both roles can sign up or opt for a tenant for organizational messages. Other roles can read and see the results of the messages. If you opt out of people experience, you cannot turn on this control.
 
 ## Related content

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 11/16/2021
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
@@ -79,7 +80,7 @@ Start working with assessments and taking improvement actions to implement contr
 > - ISO/IEC 27001,
 > - NIST 800-53
 
-Compliance Manager includes 300+ regulatory or premium templates that can be purchased as an add-on with [Compliance Manager premium assessments add-on](compliance-easy-trials-compliance-manager-assessments.md). With any [premium templates](compliance-manager-templates-list.md) (included with your subscription or purchased as add-on) you will receive the universal version of those templates, allowing you to manage your compliance with any product or service
+Compliance Manager includes 300+ regulatory or premium templates that can be purchased as an add-on with [Compliance Manager premium assessments add-on](compliance-easy-trials-compliance-manager-assessments.md). With any [premium templates](compliance-manager-templates-list.md) (included with your subscription or purchased as add-on) you'll receive the universal version of those templates, allowing you to manage your compliance with any product or service
 
 ### Step 3: Scaling up: use advanced functionality to meet your custom needs
 
@@ -109,7 +110,7 @@ Get data visibility and protection starting with Information Protection and Data
 
 **Discover, classify and protect your sensitive data**
 
-One of the main concerns for most organizations, regarding compliance regulations, is how to classify their sensitive data, how to protect it, and prevent data loss. Purview Information Protection and Data Loss Prevention solutions allow customers to discover and classify their sensitive data, to protect their sensitive data using sensitivity labels, and finally to setup data loss prevention policies to prevent unauthorized sharing, use, or transfer of sensitive data through multiple egress points. The classification, labeling, and DLP capabilities are natively built-in Microsoft 365 workloads such as SharePoint Online, Exchange Online, OneDrive for Business, and Teams. You can extend these to non-Microsoft workloads.
+One of the main concerns for most organizations, regarding compliance regulations, is how to classify their sensitive data, how to protect it, and prevent data loss. Purview Information Protection and Data Loss Prevention solutions allow customers to discover and classify their sensitive data, to protect their sensitive data using sensitivity labels, and finally to set up data loss prevention policies to prevent unauthorized sharing, use, or transfer of sensitive data through multiple egress points. The classification, labeling, and DLP capabilities are natively built-in Microsoft 365 workloads such as SharePoint Online, Exchange Online, OneDrive for Business, and Teams. You can extend these to non-Microsoft workloads.
 
 ### Set up your information protection and data loss prevention trial
 
@@ -167,7 +168,7 @@ Microsoft Purview DLP for endpoints allows you to detect and prevent when sensit
 
 1. Prepare your endpoints - make sure that the Windows 10 and macOS devices that you plan on deploying Endpoint DLP [meet these requirements](endpoint-dlp-getting-started.md#skusubscriptions-licensing).
 1. [Onboard devices into device management](endpoint-dlp-getting-started.md#windows-10-and-windows-11-onboarding-procedures) - You must onboard your endpoints before you can detect and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview compliance portal.
-   - Scenario 1 – Onboarding devices that have not been onboarded yet.
+   - Scenario 1 – Onboarding devices that haven't been onboarded yet.
    - Scenario 2 - Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list.
 1. [Configure our default DLP policy for devices or define a new DLP policy for devices](mip-easy-trials.md#dlp-for-devices).
 1. [View Endpoint DLP alerts](dlp-configure-view-alerts-policies.md) in DLP Alerts Management dashboard.
@@ -175,7 +176,7 @@ Microsoft Purview DLP for endpoints allows you to detect and prevent when sensit
 
 ### Step 3: Expand policies in scope or protection
 
-You have flexibility in how you configure your DLP policies. You can start with our default DLP policy for Teams and devices and expand those policies to protect additional locations, sensitive information types, or labels. Note customers can run a DLP policy in test mode to understand or fine tune how the policy is working before it is turned on. In addition, you can expand upon the policy actions and customize alerting.
+You have flexibility in how you configure your DLP policies. You can start with our default DLP policy for Teams and devices and expand those policies to protect additional locations, sensitive information types, or labels. Note customers can run a DLP policy in test mode to understand or fine tune how the policy is working before it's turned on. In addition, you can expand upon the policy actions and customize alerting.
 
 1. Add locations
 1. Add sensitive information types or labels to protect
@@ -220,7 +221,7 @@ First, identify the content you would like to manage and the location of the con
 
 Many customers want to target a retention policy to specific users or mailboxes. For example, they may want to apply a longer retention period to the mailboxes of people in leadership roles or apply shorter retention to shared mailboxes. Adaptive policy scopes allow you to do this by using their AD attributes to target the policy. If one of the attribute values changes then the retention policy will automatically update its membership.
 
-First, [decide what attributes you will use to target](retention-settings.md#configuration-information-for-adaptive-scopes) the users or mailboxes that you want to include or exclude from your policy. Next, [Create an Adaptive Policy Scope and use it with a retention policy](retention.md#adaptive-or-static-policy-scopes-for-retention).
+First, [decide what attributes you'll use to target](purview-adaptive-scopes.md#configure-adaptive-scopes) the users or mailboxes that you want to include or exclude from your policy. Next, [Create an Adaptive Policy Scope and use it with a retention policy](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
 
 ## Microsoft Purview Records Management
 
@@ -241,15 +242,15 @@ First, decide the metadata properties you would like to use, the locations where
 
 ### Step 2: Review content to approve before it's permanently deleted
 
-Some organizations have a requirement to review content at the end of its retention period before it is permanently deleted. Using Records Management, users you specify ("reviewers") can be notified to review the content and approve the permanent disposal action. Reviewers can also choose to assign a different retention period to the content or postpone deletion. Learn more here:   Disposition of content.
+Some organizations have a requirement to review content at the end of its retention period before it's permanently deleted. Using Records Management, users you specify ("reviewers") can be notified to review the content and approve the permanent disposal action. Reviewers can also choose to assign a different retention period to the content or postpone deletion. Learn more here:   Disposition of content.
 
 ### Step 3: Make content immutable to prevent users from editing it
 
-Some content has a lifecycle phase where both the file and the metadata should not be available for editing, often called declaring the content as an immutable record. Learn how to configure this option in Records Management: [Create a retention label that declares content as a record or a regulatory record](declare-records.md).
+Some content has a lifecycle phase where both the file and the metadata shouldn't be available for editing, often called declaring the content as an immutable record. Learn how to configure this option in Records Management: [Create a retention label that declares content as a record or a regulatory record](declare-records.md).
 
 ## Manage insider risks
 
-The third organizational concern we hear is how to protect your data and respond to potential insider data security incident risks, which may include data theft and inappropriate sharing of confidential information across all platforms like email and IM (e.g. Microsoft Teams).
+The third organizational concern we hear is how to protect your data and respond to potential insider data security incident risks, which may include data theft and inappropriate sharing of confidential information across all platforms like email and IM (for example, Microsoft Teams).
   
 Using Insider Risk Management and Communication Compliance you can quickly identify and act on insider data security incidents and regulatory requirement risks, empowering you to collaborate with your Security, HR, Legal and other teams, depending on your organization.
 
@@ -269,13 +270,13 @@ There are four role groups used to configure permissions to manage Insider Risk 
 
 [Add users to the Insider Risk Management role group](insider-risk-management-configure.md#add-users-to-the-insider-risk-management-role-group)
 
-If you are not able to see permissions, please talk to your tenant admin to assign the correct roles.
+If you aren't able to see permissions, please talk to your tenant admin to assign the correct roles.
 
 ### Step 2 (required): Enable the Microsoft 365 audit log
 
 Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it’s OK to turn auditing back on when completing this step.
 
-For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about  using the Microsoft 365 audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](audit-log-enable-disable.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about  using the Microsoft 365 audit log, see [Search the audit log](audit-log-search.md).
 
 ### Step 3 (recommended): Enable and view Insider Risk Management analytics insights
 
@@ -306,7 +307,7 @@ To fully leverage the functionality of Insider Risk Management, we recommend set
 
 **Identify regulatory compliance policy violations**
 
-Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (e.g. SEC or FINRA), such as  sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
+Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example, SEC or FINRA), such as  sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
 
 ### Step 1: Enable permissions for communication compliance
 
@@ -314,7 +315,7 @@ Assign users communication compliance roles to be able to use the product. The "
 
 ### Step 2: Enable the audit log
 
-To use this feature, turn on auditing. When you turn this on actions will be available in the audit log and view in a report. To learn more, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
+To use this feature, turn on auditing. When you turn this on actions will be available in the audit log and view in a report. To learn more, see [Turn audit log search on or off](audit-log-enable-disable.md).
 
 ### Step 3: Review recommended actions insights
 
@@ -351,24 +352,24 @@ Take advantage of an end-to-end workflow for preserving, collecting, analyzing, 
 
 To access eDiscovery (Premium) or be added as a member of an eDiscovery (Premium) case, a user must be assigned the appropriate permissions.
 
-1. [Set up eDiscovery (Premium) – Assign eDiscovery permissions](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
-1. [Add or remove members from a case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
+1. [Set up eDiscovery (Premium) – Assign eDiscovery permissions](ediscovery-premium-get-started.md#step-2-assign-ediscovery-permissions)
+1. [Add or remove members from a case](ediscovery-add-or-remove-members-from-a-case.md)
 
 ### Step 2 (required): Create a Case
 
 More organizations use the eDiscovery (Premium) solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
 
-1. Manage eDiscovery (Premium) – [learn how to configure eDiscovery (Premium), manage cases by using the Security & Compliance Center, manage a workflow in Advanced eDiscovery, and analyze Advanced eDiscovery search results](/training/modules/manage-advanced-ediscovery).
-1. [Create an eDiscovery case](advanced-ediscovery-new-case-format.md) using eDiscovery Premium’s new case format
-1. [Close or delete a case](close-or-delete-case.md) - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
+1. Manage eDiscovery (Premium) – [learn how to configure eDiscovery (Premium), manage cases by using the Microsoft Purview compliance portal, manage a workflow in eDiscovery, and analyze eDiscovery search results](/training/modules/manage-advanced-ediscovery).
+1. [Create an eDiscovery case](ediscovery-new-case-format.md) using eDiscovery Premium’s new case format
+1. [Close or delete a case](ediscovery-close-or-delete-case.md) - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
 
 ### Step 3 (optional): Settings
 
 To allow people in your organization start to create and use cases, you must configure global settings that apply to all cases in your organization. You can manage settings such as attorney-client privilege detection, historical versions and many more.
 
-1. [Configure global settings for eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
-1. [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
-1. [Manage jobs in eDiscovery (Premium)](managing-jobs-ediscovery20.md)
+1. [Configure global settings for eDiscovery (Premium)](ediscovery-premium-get-started.md#step-3-configure-global-settings-for-ediscovery-premium)
+1. [Configure search and analytics settings](ediscovery-configure-search-and-analytics-settings.md)
+1. [Manage jobs in eDiscovery (Premium)](ediscovery-managing-jobs.md)
 
 ### Step 4 (optional): Compliance Boundaries
 
@@ -378,32 +379,32 @@ Compliance boundaries create logical boundaries within an organization that cont
 
 Set up compliance boundaries for eDiscovery investigations:
 
-1. [Identify a user attribute to define your agencies](set-up-compliance-boundaries.md#step-1-identify-a-user-attribute-to-define-your-agencies)
-1. [Create a role group for each agency](set-up-compliance-boundaries.md#step-2-create-a-role-group-for-each-agency)
-1. [Create a search permissions filter to enforce the compliance boundary](set-up-compliance-boundaries.md#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
-1. [Create an eDiscovery case for an intra-agency investigations](set-up-compliance-boundaries.md#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
+1. [Identify a user attribute to define your agencies](ediscovery-set-up-compliance-boundaries.md#step-1-identify-a-user-attribute-to-define-your-agencies)
+1. [Create a role group for each agency](ediscovery-set-up-compliance-boundaries.md#step-2-create-a-role-group-for-each-agency)
+1. [Create a search permissions filter to enforce the compliance boundary](ediscovery-set-up-compliance-boundaries.md#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
+1. [Create an eDiscovery case for an intra-agency investigations](ediscovery-set-up-compliance-boundaries.md#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
 
 ### Step 5 (optional): eDiscovery Premium’s collection tool
 
-Use the [eDiscovery (Premium) collection workflow](create-draft-collection.md#create-a-collection-estimate) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
+Use the [eDiscovery (Premium) collection workflow](ediscovery-create-draft-collection.md#create-a-collection-estimate) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
 
-[Learn more about collection queries and estimates.](building-search-queries.md)
+[Learn more about collection queries and estimates.](ediscovery-building-search-queries.md)
 
 ## Microsoft Purview Audit (Premium)
 
 **Conduct investigations**
 
-Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and providing faster access to the Office 365 Management Activity API.
+Audit (Premium) helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and providing faster access to the Office 365 Management Activity API.
 
 ### Step 1: Apply the E5 license to each user for which you’d like to generate E5 events
 
 Audit (Premium) features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users.
 
-Set up Audit (Premium) for users - to verify that the Advanced Auditing app is assigned to users, [perform the following steps for each user](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users).
+Set up Audit (Premium) for users - to verify that the Advanced Auditing app is assigned to users, [perform the following steps for each user](audit-premium-setup.md#step-1-set-up-audit-premium-for-users).
 
-1. Enable Audit (Premium) events - [enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-audit-premium-events) to be audited for each user in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
-1. Set up audit retention policies - [create additional audit log retention policies](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) to meet the requirements of your organization’s security operations, IT, and compliance teams.
-1. Search for Audit (Premium) events - [search for crucial Audit (Premium) events](set-up-advanced-audit.md#step-4-search-for-audit-premium-events) and other activities when conducting forensic investigations.
+1. Enable Audit (Premium) events - [enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint](audit-premium-setup.md#step-2-enable-audit-premium-events) to be audited for each user in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Set up audit retention policies - [create additional audit log retention policies](audit-premium-setup.md#step-3-set-up-audit-retention-policies) to meet the requirements of your organization’s security operations, IT, and compliance teams.
+1. Search for Audit (Premium) events - [search for crucial Audit (Premium) events](audit-premium-setup.md#step-4-search-for-audit-premium-events) and other activities when conducting forensic investigations.
 
 ### Step 2: Create new Audit Log policies to specify how long to retain audit logs in your org for activities performed by users and define priority levels for your policies
 

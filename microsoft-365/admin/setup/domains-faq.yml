@@ -1,10 +1,11 @@
 ### YamlMime:FAQ
 metadata:
+  ms.date: 12/10/2020
   title: Domains Frequently Asked Questions
   f1.keywords:
   - NOCSH
-  ms.author: efrene
-  author: efrene
+  ms.author: nkagole
+  author: nataliekagole
   manager: scotv
   audience: Admin
   ms.topic: faq
@@ -84,17 +85,19 @@ sections:
             
           Providers that support all required DNS records:
             
+          - Cloudflare
+                    
           - Dynadot
               
           - eNomCentral
               
-          - Europe Registry
-          
-          - Cloudflare
+          - Europe Registry  
               
           - GoDaddy
               
           - Hover
+          
+          - INWX.com
               
           - MyHosting.com
               
@@ -159,7 +162,7 @@ sections:
           
           ::: moniker-end
           
-          Typically, you can add up to 900 domains to your Microsoft 365 subscription.
+          Typically, you could add up to 5,000 domains to your Microsoft 365 subscription.
             
           For example, you could add the domains contoso.com and contosomarketing.com, and then add the subdomains `www.contoso.com`, `www.partners.contoso.com`, `www.marketing.partners.contoso.com`, and so on.
             

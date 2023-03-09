@@ -3,6 +3,7 @@ title: "Best practices for unauthenticated sharing"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 03/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -156,7 +157,7 @@ With content marking enabled for the label, the text you specified will be added
 
 ## See Also
 
-[Overview of sensitivity labels](/Office365/SecurityCompliance/sensitivity-labels)
+[Overview of sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
 
 [Limit accidental exposure to files when sharing with guests](share-limit-accidental-exposure.md)
 

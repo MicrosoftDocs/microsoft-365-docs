@@ -10,7 +10,7 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 08/04/2022
+ms.date: 01/13/2023
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
@@ -1325,6 +1325,44 @@ Microsoft Defender Antivirus client is up and running in a healthy state.
 <td></td>
 <td >
 <div class="alert"><b>Note: This event will only be logged if the following policy is set: <b>ThreatFileHashLogging     unsigned</b>.</div>
+<div> </div>
+</td>
+</tr>
+<tr>
+<th colspan="2">Event ID: 1121</th>
+</tr>
+<tr><td>
+Symbolic name:
+</td>
+<td >
+<b>(TBD)</b>
+</td>
+</tr>
+<tr>
+<td>
+Message:
+</td>
+<td >
+<b>Event when an attack surface reduction rule fires in block mode.</b>
+</td>
+</tr>
+<tr>
+<td>
+Description:
+</td>
+<td >
+TBD.
+<dl>
+<dt>Current Platform Version: &lt;Current platform version&gt;</dt>
+<dt>Threat Resource Path: &lt;Path&gt;</dt>
+<dt>Hashes: &lt;Hashes&gt;</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<td></td>
+<td >
+<div class="alert"><b>Note: whatgoeshere?: <b>TBD</b>.</div>
 <div> </div>
 </td>
 </tr>

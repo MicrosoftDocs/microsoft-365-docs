@@ -5,19 +5,19 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection: 
   - m365-security
+  - tier2
 description: Learn how the delivery pools are used to protect the reputation of email servers in the Microsoft 365 datacenters.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 2/7/2023
 ---
 
 # Outbound delivery pools
@@ -25,7 +25,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -80,7 +80,7 @@ You can tell that a message was sent via the relay pool by looking at the outbou
 
 In cases where we can authenticate the sender, we use Sender Rewriting Scheme (SRS) to help the recipient email system know that the forwarded message is from a trusted source. You can read more about how that works and what you can do to help make sure the sending domain passes authentication in [Sender Rewriting Scheme (SRS) in Office 365](/office365/troubleshoot/antispam/sender-rewriting-scheme).
 
-For DKIM to work, make sure you enable DKIM for sending domain. For example, fabrikam.com is part of contoso.com and is defined in the accepted domains of the organization. If the message sender is sender@fabrikam.com, DKIM needs to be enabled for fabrikam.com. you can read on how to enable at [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md).
+For DKIM to work, make sure you enable DKIM for sending domain. For example, fabrikam.com is part of contoso.com and is defined in the accepted domains of the organization. If the message sender is sender@fabrikam.com, DKIM needs to be enabled for fabrikam.com. you can read on how to enable at [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
 
 To add a custom domains follow the steps in [Add a domain to Microsoft 365](../../admin/setup/add-domain.md).
 
