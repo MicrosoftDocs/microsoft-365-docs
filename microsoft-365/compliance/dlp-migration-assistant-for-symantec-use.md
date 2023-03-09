@@ -323,7 +323,7 @@ If you see an error on welcome screen after selecting **Get Started**, follow th
  3. Check if you're running the tool in admin mode using **Run as administrator** option while starting the application.
  4. Check if your PowerShell module path is set correctly using these steps:
     1. Go to edit system environment variables.
-    2. Add this path in PsModulePath system variable: `C:\Program Files\PowerShell\7\Modules`.
+    2. Add this path in PsModulePath user variable: `C:\Program Files\PowerShell\7\Modules`.
     3. Move this up and keep at top.
     4. Restart the tool in admin mode.
 
