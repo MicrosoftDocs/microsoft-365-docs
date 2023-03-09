@@ -77,6 +77,6 @@ Once the OCR settings are configured, your existing data loss protection (DLP), 
 
 ## See also
 
-- [Learn about data loss prevention](dlp-learn-about-dlp)
-- [Plan for data loss prevention](dlp-overview-plan-for-dlp)
-- [Design a data loss prevention policy](dlp-policy-design)
+- [Learn about data loss prevention](/dlp-learn-about-dlp)
+- [Plan for data loss prevention](/dlp-overview-plan-for-dlp)
+- [Design a data loss prevention policy](/dlp-policy-design)
