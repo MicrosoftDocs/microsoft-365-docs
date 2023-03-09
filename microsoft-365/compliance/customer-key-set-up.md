@@ -239,7 +239,9 @@ You'll need to define three separate sets of permissions for each key vault, dep
    Get-AzKeyVault -VaultName <vault name> | fl
    ```  
 
-> [!Tip]
+  - If you are using **Role-Based Access Control (RBAC)** for assinging wrapKey, unwrapkey and get permissions, you must assign “*Key Vault Crypto Service Encryption User*” role to the corresponding M365 app. See [Grant permission to applications to access an Azure key vault using Azure RBAC | Microsoft Learn](<https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide?tabs=azure-cli>)
+
+> [!TIP]
 > Before moving on, make sure the permissions are configured properly for the key vault, the *Permissions to Keys* will return **wrapKey, unwrapKey, get**.
 > Make sure to correct the permissions to the correct service you are onboarding to. The *Display Name* for each service is listed below:  
   >
@@ -286,7 +288,7 @@ To enable Soft Delete on your key vaults, complete these steps:
 
 ### Add a key to each key vault either by creating or importing a key
 
-There are two ways to add keys to an Azure Key Vault; you can create a key directly in Key Vault, or you can import a key. Creating a key directly in Key Vault is less complicated, but importing a key provides total control over how the key is generated. Use the RSA keys. Azure Key Vault doesn't support wrapping and unwrapping with elliptical curve keys.
+There are two ways to add keys to an Azure Key Vault; you can create a key directly in Key Vault, or you can import a key. Creating a key directly in Key Vault is less complicated, but importing a key provides total control over how the key is generated. Use the RSA keys. Customer Key supports RSA Key lengths up to 4096. Azure Key Vault doesn't support wrapping and unwrapping with elliptical curve keys.
 
 For instructions to add a key to each vault, see [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey).
 
