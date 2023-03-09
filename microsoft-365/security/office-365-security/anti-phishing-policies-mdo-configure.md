@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier2
 ms.custom:
 description: Admins can learn how to create, modify, and delete the advanced anti-phishing policies that are available in organizations with Microsoft Defender for Office 365.
 ms.subservice: mdo
@@ -62,16 +63,12 @@ To increase the effectiveness of anti-phishing protection in Defender for Office
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To add, modify, and delete anti-phishing policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - For read-only access to anti-phishing policies, you need to be a member of the **Global Reader** or **Security Reader** role groups<sup>\*</sup>.
-
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  **Notes**:
-
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Add, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
+    - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For our recommended settings for anti-phishing policies in Defender for Office 365, see [Anti-phishing policy in Defender for Office 365 settings](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
@@ -229,7 +226,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by user impersonation protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
 
          A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for user impersonation detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown.
-  
+
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
 

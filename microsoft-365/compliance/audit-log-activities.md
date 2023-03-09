@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -636,6 +637,7 @@ The following table lists the user and admin activities in Yammer that are logge
 |Failed to access community<sup>*</sup>|CommunityAccessFailure|User failed to access a community.|
 |Failed to access file<sup>*</sup>|FileAccessFailure|User failed to access a file.|
 |Failed to access message<sup>*</sup>|MessageAccessFailure|User failed to access a message.|
+|Reacted to message|MarkedMessageChanged|User reacted to a message.|
 |Shared file|FileShared|User shares a file with another user.|
 |Suspended network user|NetworkUserSuspended|Network or verified admin suspends (deactivates) a user from Yammer.|
 |Suspended user|UserSuspension|User account is suspended (deactivated).|
@@ -769,7 +771,7 @@ Additional auditing information for sensitivity labels:
 - When you use sensitivity labels for Teams meeting invites, and Teams meeting options and chat, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events).
 - When you use sensitivity labels with Power BI, see [Audit schema for sensitivity labels in Power BI](/power-bi/enterprise/service-security-sensitivity-label-audit-schema).
 - When you use sensitivity labels with Microsoft Defender for cloud apps, see [Governing connected apps](/defender-cloud-apps/governance-actions) and the labeling information for file governance actions.
-- When you apply sensitivity labels by using the Azure Information Protection client or scanner, or the Microsoft Information Protection (MIP) SDK, see [Azure Information Protection audit log reference](/azure/information-protection/audit-logs).
+- When you apply sensitivity labels by using the Azure Information Protection client or scanner, or the Microsoft Purview Information Protection (MIP) SDK, see [Azure Information Protection audit log reference](/azure/information-protection/audit-logs).
 
 ## Retention policy and retention label activities
 
@@ -902,7 +904,7 @@ The following table lists the activities for SystemSync that are logged in the M
 
 The following table lists the user and admin activities in Viva Goals that are logged for auditing. The table includes the friendly name that's displayed in the Activities column and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results.
 
-[Search the audit log in the Security & Compliance Center](audit-log-search.md) details how you can search for the audit logs from the compliance portal. The user needs to be a global admin or have audit read permissions to access audit logs. You can use the Activities filter to search for specific activities and to list all Viva Goals activities you can choose ‘VivaGoals’ in the Record type filter. You can also use the date range boxes and the Users list to narrow the search results further.
+[Search the audit log in the Microsoft Purview compliance portal](audit-log-search.md) details how you can search for the audit logs from the compliance portal. The user needs to be a global admin or have audit read permissions to access audit logs. You can use the Activities filter to search for specific activities and to list all Viva Goals activities you can choose 'VivaGoals' in the Record type filter. You can also use the date range boxes and the Users list to narrow the search results further.
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|

@@ -3,6 +3,7 @@ title: "Collaborate with guests in a site"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
+ms.date: 03/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions

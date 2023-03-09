@@ -17,7 +17,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments."
-ms.date: 03/23/2020
+ms.date: 1/31/2023
 ---
 
 # Top 12 tasks for security teams to support working from home

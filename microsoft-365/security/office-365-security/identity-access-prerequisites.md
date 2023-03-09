@@ -19,10 +19,10 @@ ms.collection:
   - m365solution-identitydevice
   - m365solution-scenario
   - zerotrust-solution
-  - highpri
+  - tier2
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 10/08/2020
+ms.date: 1/31/2023
 ---
 
 # Prerequisite work for implementing Zero Trust identity and device access policies

@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier2
-ms.date: 08/25/2022
+ms.date: 01/05/2023
 search.appverid: met150
 ---
 
@@ -119,7 +119,7 @@ Clicking on the **ASR rules detections** link at the top of the card also opens 
 
 **The top section** focuses on three recommended rules, which protect against common attack techniques. This card shows current-state information about the computers in your organization that have the following [Three \(ASR\) standard protection rules](#simplified-standard-protection-option) set in **Block mode**, **Audit mode**, or **off** (not configured).The **Protect devices** button will show full configuration details for only the three rules; customers can quickly take action to enable these rules.
 
-**The bottom section** surfaces six rules based on the number of unprotected devices per rule. The "View configuration" button surfaces all configuration details for all ASR rules. The "Add exclusion" button shows the add exclusion page with all detected file/process names listed for Security Operation Center (SOC) to evaluate. The **Add exclusion** page is linked to Microsoft Endpoint Manager (MEM).
+**The bottom section** surfaces six rules based on the number of unprotected devices per rule. The "View configuration" button surfaces all configuration details for all ASR rules. The "Add exclusion" button shows the add exclusion page with all detected file/process names listed for Security Operation Center (SOC) to evaluate. The **Add exclusion** page is linked to Microsoft Intune.
 
 Provides two 'action' buttons:
 
@@ -287,7 +287,7 @@ When you select a file, a **Summary & expected impact** fly out opens, presentin
 
 The Add exclusion page has two buttons for actions that can be used on any detected files (after selection). You can:
 
-- **Add exclusion** which will open Microsoft Endpoint Manager (MEM) ASR policy page. For more information, see: [MEM](https://enable-attack-surface-reduction.md#mem) in "Enable ASR rules alternate configuration methods."
+- **Add exclusion** which will open Microsoft Intune ASR policy page. For more information, see: [Intune](https://enable-attack-surface-reduction.md#mem) in "Enable ASR rules alternate configuration methods."
 - **Get exclusion paths** which will download file paths in a csv format
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png" alt-text="Shows the ASR rules report add exclusions tab flyout impact summary" lightbox="images/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png":::

@@ -35,9 +35,9 @@ search.appverid: met150
 
 For more information, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
-## Use Microsoft Endpoint Manager to configure scanning options
+## Use Microsoft Configuration Manager to configure scanning options
 
-For details on configuring Microsoft Endpoint Manager (current branch), see [How to create and deploy antimalware policies: Scan settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
+For details on configuring Microsoft Configuration Manager (current branch), see [How to create and deploy antimalware policies: Scan settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
 
 ## Use Group Policy to configure scanning options
 

@@ -9,9 +9,11 @@ metadata:
   ms.date: 1/31/2023
   audience: ITPro
   ms.topic: faq
-
   ms.localizationpriority: medium
   ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
+  ms.collection:
+  - m365-security
+  - tier3
   ms.custom:
     - seo-marvel-apr2020
   description: Admins can view frequently asked questions and answers about delegated administration tasks in Microsoft 365 for Microsoft partners and resellers.
