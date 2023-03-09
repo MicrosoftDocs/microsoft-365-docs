@@ -50,7 +50,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 
-- **General availability (GA)**: Outlook for Mac is now rolling out in general availability for [protected meetings](sensitivity-labels-meetings.md).
+- **General availability (GA)**: Both Outlook for Windows and Outlook for Mac are rolling out in general availability for [protected meetings](sensitivity-labels-meetings.md).
 - **General availability (GA)**: Now rolling out in general availability for built-in labeling for Windows, support for a [default sublabel for a parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label) as a parity feature for the AIP add-in.
  - **Rolling out**: The ability to [scope labels to files and emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails), so that for example, a sensitivity label is visible to users in Outlook but not in Word, Excel, or PowerPoint. This configuration can be used as a parity feature for the AIP add-in, which could be disabled per app.
  - **Removal of restrictions for prevent copying chat for protected meetings**: The label setting that [prevents copying chat to the clipboard](sensitivity-labels-meetings.md#prevent-copying-chat-to-the-clipboard-label-setting) now supports users outside your organization and also users who join a chat but weren't invited to the meeting.
@@ -73,7 +73,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - **Rolling out in preview**: Auto-labeling retention policies now support [simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode), so you can test out your policy configuration and view results before deploying in production.
-- The configuration and management of [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) is moving to a new location in the Microsoft Purview compliance portal: **Roles & Scopes** \> **Adaptive scopes**.
+- **Configuration improvements**: The configuration for retention policies and retention label policies in the Microsoft Purview compliance portal has been improved for the selection and configuration of locations. Some of the location names have changed to better reflect what's included for the location, and a new **Applicable Content** column is added for additional information.
+- **Relocation for adaptive scopes**: The configuration and management of [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) is moving to a new location in the Microsoft Purview compliance portal: **Roles & Scopes** \> **Adaptive scopes**.
 - New troubleshooting resources:
     - [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
     - [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)
