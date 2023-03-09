@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.localizationpriority: medium
-ms.date: 02/09/2023
+ms.date: 02/22/2023
 ms.collection:
 - m365-security
 - tier2
@@ -71,3 +71,9 @@ Excluding user accounts is not recommended, and accounts added to this list won'
 ## See also
 
 - [Automatic attack disruption in Microsoft 365 Defender](automatic-attack-disruption.md)
+
+> [!VIDEO > [!VIDEO https://learn-video.azurefd.net/vod/player?show=beginners-series-to-web-apis&ep=what-are-web-apis-1-of-18--beginners-series-to-web-apis#time=1m]
+
+[Watch the announcement at Ignite 2022](https://youtu.be/Nl62K9fVDds)
+
+<iframe width="967" height="544" src="https://www.youtube.com/embed/Nl62K9fVDds" title="What’s new in SIEM and XDR: Attack disruption and SOC empowerment | BRK52" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

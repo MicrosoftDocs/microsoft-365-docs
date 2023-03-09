@@ -21,7 +21,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 02/09/2023
+ms.date: 02/22/2023
 ---
 
 # Automatic attack disruption in Microsoft 365 Defender
