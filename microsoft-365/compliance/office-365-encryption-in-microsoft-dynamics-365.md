@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
+ms.date: 09/17/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp

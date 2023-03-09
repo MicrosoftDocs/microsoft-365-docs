@@ -33,6 +33,8 @@ landingContent:
             url: model-types-overview.md
       - linkListType: learn
         links:
+          - text: Intro to Syntex
+            url: /training/modules/syntex-intro
           - text: Syntex on LinkedIn Learning
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
 
@@ -105,6 +107,18 @@ landingContent:
             url: automate-document-generation.md
 
     # Card 6
+  - title: More features
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Annotations
+            url: annotations.md
+          - text: Content query
+            url: metadata-search.md
+          - text: Content processing
+            url: content-processing-overview.md
+
+    # Card 7
   - title: Adoption
     linkLists:
       - linkListType: overview
@@ -120,7 +134,7 @@ landingContent:
           - text: Run a trial
             url: trial-syntex.md
 
-    # Card 7
+    # Card 8
   - title: Get support
     linkLists:
       - linkListType: overview
@@ -130,7 +144,7 @@ landingContent:
           - text: FAQ
             url: https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:faqtab
 
-    # Card 8
+    # Card 9
   - title: Extensibility
     linkLists:
       - linkListType: reference
@@ -139,4 +153,6 @@ landingContent:
             url: powershell-syntex-intro.md
           - text: Syntex Model REST API
             url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
-
+          - text: Syntex-SharePoint Advanced Management
+            url: /sharepoint/advanced-management
+ 

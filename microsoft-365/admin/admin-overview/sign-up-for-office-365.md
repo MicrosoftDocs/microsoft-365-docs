@@ -70,7 +70,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ### Need help with choosing a plan?
 
-Deciding on a plan can depend on your specific business needs. The Microsoft 365 plan chooser is designed to help you with this. The chooser will make recommendations based on your answers to questions such as the size of your business, your field of work, the devices you use, and what kind of features, IT support, and security you're looking for. See [Help me find the right plan for my business](https://go.microsoft.com/fwlink/p/?linkid=2224417).
+Deciding on a plan can depend on your specific business needs. The Microsoft 365 plan chooser is designed to help you with this. The chooser will make recommendations based on your answers to questions such as the size of your business, your field of work, the devices you use, and what kind of features, IT support, and security you're looking for. See [Help me find the right plan for my business](https://go.microsoft.com/fwlink/p/?linkid=2224286).
 
 Sales consultants are available to answer your questions. Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) and choose one of the contact support options listed at the left side of the page.
   

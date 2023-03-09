@@ -4,6 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.reviewer: dmwmsft
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -25,7 +26,7 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 
 See the following links to understand workload data location.
 
-- Exchange Online (EXO)  [Exchange Online Data Location](m365-dr-workload-exo.md#how-can-i-determine-customer-data-location)
+- Exchange Online [Data Residency for Exchange Online](/microsoft-365/enterprise/m365-dr-workload-exo)
 - SharePoint Online (ODSP) and OneDrive for Business [Data Location](m365-dr-workload-spo.md#how-can-i-determine-customer-data-location)
 - Microsoft Teams [Data Location](m365-dr-workload-teams.md#how-can-i-determine-customer-data-location)
 - Microsoft Defender for Office (MDO P1)  [Data Location](m365-dr-workload-mdo-p1.md#how-can-i-determine-customer-data-location)

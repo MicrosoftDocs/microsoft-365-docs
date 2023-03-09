@@ -43,7 +43,7 @@ This article describes the structure of the configuration profile, includes a re
 The configuration profile is a *.plist* file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
 
 > [!CAUTION]
->The layout of the configuration profile depends on the management console that you are using. The following sections contain examples of configuration profiles for JAMF and Intune.
+> The layout of the configuration profile depends on the management console that you are using. The following sections contain examples of configuration profiles for JAMF and Intune.
 
 The top level of the configuration profile includes product-wide preferences and entries for subareas of Microsoft Defender for Endpoint, which are explained in more detail in the next sections.
 
@@ -51,17 +51,12 @@ The top level of the configuration profile includes product-wide preferences and
 
 The *antivirusEngine* section of the configuration profile is used to manage the preferences of the antivirus component of Microsoft Defender for Endpoint.
 
-<br>
-
-****
-
 |Section|Value|
 |---|---|
 |**Domain**|`com.microsoft.wdav`|
 |**Key**|antivirusEngine|
 |**Data type**|Dictionary (nested preference)|
 |**Comments**|See the following sections for a description of the dictionary contents.|
-|||
 
 #### Enforcement level for antivirus engine
 
@@ -92,7 +87,7 @@ Specifies the enforcement preference of antivirus engine. There are three values
 
 #### Configure file hash computation feature
 
-Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint will compute hashes for files it scans. Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
+Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint will compute hashes for files it scans to enable better matching against the indicator rules. On macOS, only the script and Mach-O (32 and 64 bit) files are considered for this hash computation (from engine version 1.1.20000.2 or higher). Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
 
 |Section|Value|
 |---|---|
@@ -100,7 +95,7 @@ Enables or disables file hash computation feature. When this feature is enabled,
 |**Key**|enableFileHashComputation|
 |**Data type**|Boolean|
 |**Possible values**|false (default) <p> true|
-|**Comments**|Available in Defender for Endpoint version 101.73.77 or higher.|
+|**Comments**|Available in Defender for Endpoint version 101.86.81 or higher.|
 
 #### Run a scan after definitions are updated
 

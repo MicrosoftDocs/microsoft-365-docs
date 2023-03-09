@@ -20,10 +20,10 @@ ms.collection:
   - m365solution-identitydevice
   - m365solution-scenario
   - zerotrust-solution
-  - highpri
+  - tier2
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 10/08/2020
+ms.date: 1/31/2023
 ---
 
 # Common security policies for Microsoft 365 organizations
@@ -42,9 +42,11 @@ We group these policies into three protection levels based on where you are on y
 - **Enterprise** - Enhanced controls that introduce device compliance.
 - **Specialized security** - Policies that require multifactor authentication every time for specific data sets or users.
 
-The following diagram shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices.
+The following diagram shows which level of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="A Diagram showing common identity and device policies that support Zero Trust principles." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
+
+You can download this diagram as a [PDF](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) file.
 
 <!--
 
@@ -169,7 +171,7 @@ You must create a policy for each PC, phone, or tablet platform. This article wi
 
 ### Create device compliance policies
 
-To create device compliance policies, sign in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com), and navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
+To create device compliance policies, sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com), and navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
 
 For step-by-step guidance on creating compliance policies in Intune, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
@@ -182,8 +184,8 @@ iOS/iPadOS supports several enrollment scenarios, two of which are covered as pa
 
 Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md):
 
-- The [starting point](#starting-point) and [enterprise](#enterprise) protection tiers map closely with the level 2 enhanced security settings.
-- The [specialized](#specialized-security) security protection tier maps closely to the level 3 high security settings.
+- The [starting point](#starting-point) and [enterprise](#enterprise) protection levels map closely with the level 2 enhanced security settings.
+- The [specialized](#specialized-security) security protection level maps closely to the level 3 high security settings.
 
 ##### Compliance settings for personally enrolled devices
 
@@ -208,8 +210,8 @@ The Android Enterprise security configuration framework is organized into severa
 
 Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md):
 
-- The [starting point](#starting-point) and [enterprise](#enterprise) protection tiers map closely with the level 2 enhanced security settings.
-- The [specialized](#specialized-security) security protection tier maps closely to the level 3 high security settings.
+- The [starting point](#starting-point) and [enterprise](#enterprise) protection levels map closely with the level 2 enhanced security settings.
+- The [specialized](#specialized-security) security protection level maps closely to the level 3 high security settings.
 
 ##### Compliance settings for Android Enterprise work profile devices
 
@@ -314,7 +316,7 @@ The following steps will help create a Conditional Access policy to require devi
 1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 1. Under **Assignments**, select **Users or workload identities**.
    1. Under **Include**, select **All users**.
-   1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts. 
+   1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
 1. Under **Cloud apps or actions** > **Include**, select **All cloud apps**.
    1. If you must exclude specific applications from your policy, you can choose them from the **Exclude** tab under **Select excluded cloud apps** and choose **Select**.
 1. Under **Access controls** > **Grant**.
@@ -328,7 +330,7 @@ The following steps will help create a Conditional Access policy to require devi
 
 #### Subscription activation
 
-Organizations using the [Subscription Activation](/windows/deployment/windows-10-subscription-activation) feature to enable users to “step-up” from one version of Windows to another, may want to exclude the Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f from their device compliance policy.
+Organizations using the [Subscription Activation](/windows/deployment/windows-10-subscription-activation) feature to enable users to "step-up" from one version of Windows to another, may want to exclude the Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f from their device compliance policy.
 
 ### Always require MFA
 

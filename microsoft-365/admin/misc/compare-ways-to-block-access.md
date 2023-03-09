@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: twerner
 author: twernermsft
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -43,4 +44,3 @@ When an employee leaves your organization, on good terms or bad, you need to blo
     
 [Remove licenses from users in Microsoft 365 for business](../manage/remove-licenses-from-users.md)
     
-

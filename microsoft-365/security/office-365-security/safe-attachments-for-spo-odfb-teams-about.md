@@ -15,7 +15,7 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection: 
   - m365-security
   - SPO_Content
-  - m365initiative-defender-office365
+  - tier2
 ms.custom: 
   - seo-marvel-apr2020
   - seo-marvel-jun2020

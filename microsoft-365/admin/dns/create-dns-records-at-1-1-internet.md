@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -47,11 +48,11 @@ Follow these steps to automatically verify and set up your IONOS by 1&1 domain w
 
 1. In the Microsoft 365 admin center, select **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, and select the domain you want to set up.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-1.png" alt-text="Select your domain in Microsoft 365.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domainconnects-1.png" alt-text="Select your domain in Microsoft 365.":::
 
 1. Select the three dots (more actions) >  choose **Start setup**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domainconnects-2.png" alt-text="Select Start setup.":::
 
 1. On the How do you want to connect your domain? page, select **Continue**.
 
@@ -59,7 +60,7 @@ Follow these steps to automatically verify and set up your IONOS by 1&1 domain w
 
 1. On the IONOS by 1&1 login page, sign in to your account, and select **Connect**, and **Allow**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-3.png" alt-text="Select Connect, and then Allow.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domainconnects-3.png" alt-text="Select Connect, and then Allow.":::
 
     This completes your domain setup for Microsoft 365.
 
@@ -85,19 +86,19 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-1.png" alt-text="Select Domains and SSL.":::
 
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-2.png" alt-text="Select DNS from the drop-down list.":::
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
 
 1. Select the **TXT** section.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-4.png" alt-text="Select the TXT section.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-4.png" alt-text="Select the TXT section.":::
 
 1. On the Add a DNS record page, in the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -107,7 +108,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. Select **Save**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-5.png" alt-text="Select Save.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-5.png" alt-text="Select Save.":::
 
     Wait a few minutes before you continue, so that the record you just created can update across the Internet.
 
@@ -119,7 +120,7 @@ To verify the record in Microsoft 365:
 
 1. On the Domains page, select the domain that you're verifying, and select **Start setup**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domainconnects-2.png" alt-text="Select Start setup.":::
 
 1. Select **Continue**.
 
@@ -137,19 +138,19 @@ To verify the record in Microsoft 365:
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-1.png" alt-text="Select Domains and SSL.":::
 
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-2.png" alt-text="Select DNS from the drop-down list.":::
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
 
 1. Select the **MX** section.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-MX.png" alt-text="Select the MX section.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-mx.png" alt-text="Select the MX section.":::
 
 1. On the Add a DNS record page, in the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -159,11 +160,11 @@ To verify the record in Microsoft 365:
 
 1. Select **Save**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-MX-Save.png" alt-text="Select Save.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-mx-save.png" alt-text="Select Save.":::
 
 1. If there are any MX records already listed, delete each of them by selecting the **Delete record** trash can on the **Add record** page.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Delete.png" alt-text="Select Delete record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-delete.png" alt-text="Select Delete record.":::
 
 ### Add the CNAME record required for Microsoft
 
@@ -174,11 +175,11 @@ To verify the record in Microsoft 365:
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-1.png" alt-text="Select Domains and SSL.":::
 
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-2.png" alt-text="Select DNS from the drop-down list.":::
 
    Now you'll create two subdomains and set an **Alias** value for each.
 
@@ -188,11 +189,11 @@ To verify the record in Microsoft 365:
 
 1. Select **Subdomains**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Subdomains.png" alt-text="Select Subdomain.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-subdomains.png" alt-text="Select Subdomain.":::
 
 1. Select **Add subdomain**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="Select Add subdomains.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-add-subdomains.png" alt-text="Select Add subdomains.":::
 
 1. In the **Add subdomain** box for the new subdomain, type or copy and paste only the **Add subdomain** value from the following table. (You'll add the **Alias** value in a later step.)
 
@@ -224,19 +225,19 @@ To verify the record in Microsoft 365:
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-1.png" alt-text="Select Domains and SSL.":::
 
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-2.png" alt-text="Select DNS from the drop-down list.":::
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
 
 1. Select the **SPF (TXT)** section.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SPFTXT.png" alt-text="Select the SPF (TXT) section.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-spftxt.png" alt-text="Select the SPF (TXT) section.":::
 
 1. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -246,7 +247,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SPFTXT-Save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-spftxt-save.png" alt-text="Select Save.":::
 
 ## Advanced option: Skype for Business
 
@@ -258,11 +259,11 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-1.png" alt-text="Select Domains and SSL.":::
 
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-2.png" alt-text="Select DNS from the drop-down list.":::
 
    Now you'll create two subdomains and set an **Alias** value for each.
 
@@ -272,11 +273,11 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Subdomains**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Subdomains.png" alt-text="Select Subdomain.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-subdomains.png" alt-text="Select Subdomain.":::
 
 1. Select **Add subdomain**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="Select Add subdomains.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-add-subdomains.png" alt-text="Select Add subdomains.":::
 
 1. In the **Add subdomain** box for the new subdomain, type or copy and paste only the **Add subdomain** value from the following table. (You'll add the **Alias** value in a later step.)
 
@@ -306,7 +307,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
 
 1. Select the **CNAME** section.
 
@@ -327,19 +328,19 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-1.png" alt-text="Select Domains and SSL.":::
 
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-2.png" alt-text="Select DNS from the drop-down list.":::
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
 
 1. Select the **SRV** section.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SRV.png" alt-text="Select the SRV section.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-srv.png" alt-text="Select the SRV section.":::
 
 1. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -350,7 +351,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Save**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SRV-Save.png" alt-text="Select Save.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-srv-save.png" alt-text="Select Save.":::
 
 1. Add the other SRV record.
 
@@ -370,11 +371,11 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-1.png" alt-text="Select Domains and SSL.":::
 
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-2.png" alt-text="Select DNS from the drop-down list.":::
 
    Now you'll create two subdomains and set an **Alias** value for each.
 
@@ -384,11 +385,11 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Select **Subdomains**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Subdomains.png" alt-text="Select Subdomain.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-subdomains.png" alt-text="Select Subdomain.":::
 
 1. Select **Add subdomain**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="Select Add subdomains.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-add-subdomains.png" alt-text="Select Add subdomains.":::
 
 1. In the **Add subdomain** box for the new subdomain, type or copy and paste only the **Add subdomain** value from the following table. (You'll add the **Alias** value in a later step.)
 
@@ -418,7 +419,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
 
 1. Select the **CNAME** section.
 

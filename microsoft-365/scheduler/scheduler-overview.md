@@ -3,6 +3,7 @@ title: "Scheduler for Microsoft 365 Overview"
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
+ms.date: 04/15/2021
 audience: Admin
 ms.topic: article
 ms.service: scheduler
@@ -57,4 +58,3 @@ Learn more:  [Scheduler for Microsoft 365 licensing](https://www.microsoft.com/m
 
 >[Note: 
 >Meeting attendees do not need a Scheduler or Microsoft 365 license. <br>The Scheduler assistant mailbox does not require a Microsoft 365 or a Scheduler license.
-

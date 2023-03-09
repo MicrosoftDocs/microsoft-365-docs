@@ -3,6 +3,7 @@ title: "Microsoft 365 endpoints"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: landing-page
 ms.service: microsoft-365-enterprise
