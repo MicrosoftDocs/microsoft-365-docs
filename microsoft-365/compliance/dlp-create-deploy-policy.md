@@ -278,7 +278,7 @@ This procedure uses a hypothetical company domain at Contoso.com.
 |"...except if..."| **Condition group configuration** - Create a nested boolean NOT condition group joined to the first conditions using a boolean AND|
 |"...the recipient domain is contoso.com."| **Condition for match**: Recipient domain is|
 |"...Notify..."|**User notifications**: enabled|
-|"...the user on send with a popup dialogue..."| **Policy tips**: selected </br> - **Show policy tip as a dialog for the end user before send**: selected </br> **Email notifications**: not selected|
+|"...the user on send with a popup dialogue..."| **Policy tips**: selected </br> - **Show policy tip as a dialog for the end user before send**: selected|
 |"...and no one can be allowed to override the block...| **Allow overrides from M365 Services**: not selected|
 
 
@@ -329,8 +329,6 @@ This procedure uses a hypothetical company domain at Contoso.com.
 1. Set **User notifications** to **On**.
  
 1. Select **Policy tips** > **Show the policy tip as a dialog for the end user before send**.
-
-1. Make sure that **Email notifications** *isn't* selected.
  
 1. Make sure that **Allow override from M365 services** *isn't* selected.
  
