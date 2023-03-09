@@ -52,7 +52,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **General availability (GA)**: Both Outlook for Windows and Outlook for Mac are rolling out in general availability for [protected meetings](sensitivity-labels-meetings.md).
 - **General availability (GA)**: Now rolling out in general availability for built-in labeling for Windows, support for a [default sublabel for a parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label) as a parity feature for the AIP add-in.
-- - **General availability (GA)**: For labeling built into Windows, macOS, iOS, and Android, auditing actions for sensitivity labels include encryption details such as a change in the encryption status and settings, and the Rights Management owner.
+- **General availability (GA)**: For labeling built into Windows, macOS, iOS, and Android, auditing actions for sensitivity labels include encryption details such as a change in the encryption status and settings, and the Rights Management owner.
  - **Rolling out**: The ability to [scope labels to files and emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails), so that for example, a sensitivity label is visible to users in Outlook but not in Word, Excel, or PowerPoint. This configuration can be used as a parity feature for the AIP add-in, which could be disabled per app.
  - **Removal of restrictions for prevent copying chat for protected meetings**: The label setting that [prevents copying chat to the clipboard](sensitivity-labels-meetings.md#prevent-copying-chat-to-the-clipboard-label-setting) now supports users outside your organization and also users who join a chat but weren't invited to the meeting.
 
