@@ -63,7 +63,7 @@ To move or copy a file from one document library to another, follow these steps.
 
    ![Screenshot of the document library showing the Automate > Rules > Manage rules option.](../media/content-understanding/content-processing-manage-rule.png)
 
-2. On the **Manage rules** page, you can see the rules that have been applied. You can turn on or off a rule or [create a new rule](#move-or-copy-a-file) to automate actions on a specific document library.
+2. On the **Manage rules** page, you can see the rules that have been applied. You can turn on or off a rule or [create a new rule](#create-a-rule-to-move-or-copy-a-file-from-one-document-library-to-another-in-microsoft-syntex) to automate actions on a specific document library.
 
    ![Screenshot of the Manage rules page showing the rule and actions.](../media/content-understanding/content-processing-manage-rules-page.png)
 
@@ -78,3 +78,6 @@ In the document library, in the upper-right corner of the page, select the detai
 > [!NOTE]
 > Currently, the activity feed shows only move activity. Copy activity will be available in a future release.
 
+## See also
+
+[Overview of content processing](content-processing-overview.md)
