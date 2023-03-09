@@ -98,9 +98,7 @@ If the value of the `InformationBarrierMode` property is *Legacy*, enabling mult
 
 ## Enable multiple segment support for users
 
-To enable multiple segment support for organizations in *SingleSegment* mode, you must not have any IB segments or policies currently defined for your organization. 
-
-Run the following cmdlet to enable multiple segment support in your organization:
+To enable multiple segment support for organizations in *SingleSegment* mode, you must not have any IB segments or policies currently defined for your organization. Run the following cmdlet to enable multiple segment support in your organization:
 
 ```powershell
 Set-PolicyConfig -InformationBarrierMode 'MultiSegment'
