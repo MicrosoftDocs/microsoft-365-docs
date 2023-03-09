@@ -78,9 +78,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
 
   > [!NOTE]
-  > Only admins and users who have "Manage Portal Settings" permissions can enable live response. 
-  >
-  > Automated Investigation must be enabled in the [Advanced features settings](advanced-features.md) prior to enabling live response.
+  > Only admins and users who have "Manage Portal Settings" permissions can enable live response.
 
 - **Enable live response for servers from the advanced settings page** (recommended).
 
