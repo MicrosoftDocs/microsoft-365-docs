@@ -46,7 +46,19 @@ This new functionality supports scanning images in the following file types:
 
 ## Prerequisites
 
-OCR scanning is an optional feature in Microsoft Purview. During the preview, it's available for free. When the preview is over, to continue to use OCR scans, your organization must have an Azure account that includes this feature. For information on creating an account, refer to [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/microsoft-365/syntex/syntex-azure-billing)
+OCR scanning is an optional feature in Microsoft Purview. When you enable optical character recognition (OCR) in Microsoft Purview compliance portal settings, data classifiers, such as sensitive information types, and trainable classifiers, will be able to detect characters that are in images. 
+
+OCR is first enabled at the tenant level, and then you select which services you want to enable it for. For this preview, image scanning is available for stand alone images in Exchange Online, Teams, SharePoint Online, OneDrive for business and Windows endpoint devices. 
+
+During the preview, this feature is available for free. When the preview is over, to continue to use OCR scans, your organization must have an Azure account that includes this feature. For information on creating an account, refer to [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/microsoft-365/syntex/syntex-azure-billing)
+
+## Limits
+
+- Images that are embedded in Office documents aren't supported.
+- Image file sizes must be less than 20 MB
+- Images must be at least 50 x 50 pixels and not larger than 16000 x 16000 px.
+- The preview only supports images with machine-typed text
+- Only images uploaded after OCR has been enabled will be scanned.
 
 ## Configuring OCR Scans
 
