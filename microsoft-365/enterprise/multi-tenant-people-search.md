@@ -95,7 +95,3 @@ Multi-tenant organization people search is supported across a range of scenarios
   A tenant can be both home and resource tenant simultaneously.
 
 - _Cross-Tenant synchronization_ is a feature that enables multi-tenant organizations to grant users access to applications in other tenants within the organization. It achieves this by synchronizing internal member users from a home tenant into a resource tenant as external B2B users.
-
-## Contact us
-
-You can contact the Cross Tenant People Search team via email at [MTOPeopleSearchPreview@service.microsoft.com](mailto:MTOPeopleSearchPreview@service.microsoft.com).
