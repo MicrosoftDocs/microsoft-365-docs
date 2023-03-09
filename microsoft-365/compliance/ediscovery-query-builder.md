@@ -48,7 +48,7 @@ After you've selected **Use new query builder***, you're ready to get started. T
 
 ### Scenario example
 
-The eDiscovery administrator needs to create a query to find emails from Aimee Miller to Adam Eham, Adele Vance, or Aditya Dash that were sent between February 9, 2023 and March 9, 2023 that contain the keywords *compliance* and *audit*. For this example, the administrator creates the following query using the new query builder:
+The eDiscovery administrator needs to create a query to find emails sent from Aimee Miller to Adam Eham, Adele Vance, or Aditya Dash that were sent between February 9, 2023 and March 9, 2023 that contain the keywords *compliance* and *audit*. For this example, the administrator creates the following query using the new query builder:
 
 1. For the first filter, the administrator selects *Sender*, then selects the *Equals any of* operator, then selects *Aimee Miller* from the list of users available in the **Value** control.
 2. Next, the administrator selects **Add subgroup** and the **OR** operator to define the other users that Aimee may have sent an email to about the compliance audit.
