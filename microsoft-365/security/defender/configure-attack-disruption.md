@@ -72,7 +72,7 @@ Excluding user accounts is not recommended, and accounts added to this list won'
 
 - [Automatic attack disruption in Microsoft 365 Defender](automatic-attack-disruption.md)
 
-> [!VIDEO > [!VIDEO https://learn-video.azurefd.net/vod/player?show=beginners-series-to-web-apis&ep=what-are-web-apis-1-of-18--beginners-series-to-web-apis#time=1m]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=beginners-series-to-web-apis&ep=what-are-web-apis-1-of-18--beginners-series-to-web-apis#time=1m]
 
 [Watch the announcement at Ignite 2022](https://youtu.be/Nl62K9fVDds)
 
