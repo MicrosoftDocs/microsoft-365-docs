@@ -13,11 +13,11 @@ author: jweston-1
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
-ms.custom: 
+ms.custom:
 - asr
 - admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
@@ -69,11 +69,11 @@ See [Requirements](enable-attack-surface-reduction.md#requirements) in the "Enab
 
 ### Audit mode
 
-Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would affect your organization if enabled. Run all rules in audit mode first so you can understand how they affect your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they might perform tasks in ways that seem similar to malware. 
+Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would affect your organization if enabled. Run all rules in audit mode first so you can understand how they affect your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they might perform tasks in ways that seem similar to malware.
 
 ### Exclusions
 
-By monitoring audit data and [adding exclusions](attack-surface-reduction-rules-deployment-test.md) for necessary applications, you can deploy attack surface reduction rules without reducing productivity. 
+By monitoring audit data and [adding exclusions](attack-surface-reduction-rules-deployment-test.md) for necessary applications, you can deploy attack surface reduction rules without reducing productivity.
 
 ### Per-rule exclusions
 
@@ -141,8 +141,8 @@ You can set attack surface reduction rules for devices that are running any of t
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh801901(v=ws.11))
 
-  >[!NOTE]
-  >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work.
+  > [!NOTE]
+  > Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work.
 
 Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), if you have Windows E5, you get advanced management capabilities. The advanced capabilities - available only in Windows E5 - include:
 
@@ -155,7 +155,7 @@ These advanced capabilities aren't available with a Windows Professional or Wind
 
 Defender for Endpoint provides detailed reporting for events and blocks as part of alert investigation scenarios.
 
-You can query Defender for Endpoint data in [Microsoft 365 Defender](microsoft-defender-endpoint.md) by using [advanced hunting](/microsoft-365/security/defender/advanced-hunting-query-language). 
+You can query Defender for Endpoint data in [Microsoft 365 Defender](microsoft-defender-endpoint.md) by using [advanced hunting](/microsoft-365/security/defender/advanced-hunting-query-language).
 
 Here is an example query:
 
