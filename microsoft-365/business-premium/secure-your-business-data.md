@@ -35,7 +35,7 @@ search.appverid:
 description: "Learn best pratices to protect your business from ransomware, phishing, and malicious URLs or attachments with Microsoft 365 for business."
 ---
 
-# How to secure your business data with Microsoft 365 for business
+# Secure your business data with Microsoft 365 for business
 
 **Applies to**
 
