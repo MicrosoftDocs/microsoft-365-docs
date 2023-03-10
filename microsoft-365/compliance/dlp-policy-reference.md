@@ -346,22 +346,22 @@ An item on a monitored device contains credit card number, so it matches policy 
 |Actions applied at runtime|Audit|Audit|**Auth group A - BLock**|Audit|Audit|**Auth group A - Block, Auth group B - Block**|Audit|Audit|
 
 
-<!--Priority for rules on endpoints is also assigned according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on.
+<!--Priority for rules on endpoints is also assigned according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on.-->
 
-When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with most restrictive enforcement on the [endpoint activities](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) is the one that gets enforced on the content. For example, if content matches all of the following rules, then rule 2 takes precedence over the other rules since it's the most restrictive.
+<!--When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with most restrictive enforcement on the [endpoint activities](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) is the one that gets enforced on the content. For example, if content matches all of the following rules, then rule 2 takes precedence over the other rules since it's the most restrictive.-->
 
-- Rule 1: only audits all activity
+<!--- Rule 1: only audits all activity
 - *Rule 2: blocks all activity*
-- Rule 3: blocks all activity with option for end user to override
+- Rule 3: blocks all activity with option for end user to override-->
 
-In the below example, Rule 1 takes precedence over the other matching rules since it's the most restrictive.
+<!--In the below example, Rule 1 takes precedence over the other matching rules since it's the most restrictive.-->
 
-- *Rule 1: blocks activity and doesn't allow user override*
+<!--- *Rule 1: blocks activity and doesn't allow user override*
 - Rule 2: blocks activity and allows user overrides
 - Rule 3: only audits all activity
-- Rule 4: no enforcement
+- Rule 4: no enforcement-->
 
-All the other rules are evaluated but their actions aren't enforced. Audit logs will show the most restrictive rule applied on the file. If there's more than one rule that matches and they're equally restrictive, then policy and rule priority governs which rule would be applied on the file.-->
+<!--All the other rules are evaluated but their actions aren't enforced. Audit logs will show the most restrictive rule applied on the file. If there's more than one rule that matches and they're equally restrictive, then policy and rule priority governs which rule would be applied on the file.-->
 
 ### Conditions
 
