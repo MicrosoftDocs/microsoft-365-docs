@@ -137,7 +137,7 @@ Watch this short video to learn how to manage quarantined messages as an adminis
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
-#### View quarantined email details
+### View quarantined email details
 
 When you select quarantined message from the list, the following information is available in the details flyout that appears.
 
@@ -286,7 +286,7 @@ In organizations with Defender for Office 365, admins can manage files that were
 > [!NOTE]
 > Files quarantined in SharePoint or OneDrive are removed fom quarantine after 30 days, but the blocked files remain in SharePoint or OneDrive in the blocked state.
 
-### View quarantined files
+### View quarantined files in Defender for Office 365
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine**. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
 
@@ -315,7 +315,7 @@ In organizations with Defender for Office 365, admins can manage files that were
 
 After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the file).
 
-#### View quarantined file details
+### View quarantined file details in Defender for Office 365
 
 When you select a quarantined file from the list, the following information is available in the details flyout that opens:
 
@@ -342,7 +342,7 @@ To take action on the file, see the next section.
 >
 > :::image type="content" source="../../media/quarantine-file-details-flyout-up-down-arrows.png" alt-text="The up and down arrows in the details flyout of quarantined files" lightbox="../../media/quarantine-file-details-flyout-up-down-arrows.png":::
 
-### Take action on quarantined files
+### Take action on quarantined files in Defender for Office 365
 
 After you select a quarantined file from the list, the following actions are available in the details flyout:
 
@@ -377,7 +377,7 @@ When a potentially malicious message is detected in a chat message in Microsoft 
 
 For the preview release, this feature is enabled by default. 
 
-### View quarantined messages
+### View quarantined messages in Microsoft Teams
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine**. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
 
@@ -399,7 +399,7 @@ For the preview release, this feature is enabled by default.
 
 4. To filter the results, click **Filter**. Select the columns you need, and then click **Apply**.
 
-### View quarantined message details
+### View quarantined message details in Microsoft Teams
 
 When you select a quarantined message from the list, the following information is available in the details flyout that opens:
 
@@ -412,7 +412,7 @@ When you select a quarantined message from the list, the following information i
 
 To take action on the message, see the next section.
 
-### Take action on quarantined messages 
+### Take action on quarantined messages in Microsoft Teams
 
 After you select a quarantined message from the list, the following actions are available in the details flyout:
 
@@ -426,6 +426,10 @@ After you select a quarantined message from the list, the following actions are 
 - **Submit for review**: Allows the admin to submit the message to Microsoft for review.
 
 If you don't release or remove the file, it will be deleted after the default quarantine retention period expires (30 days).
+
+#### Take action on multiple quarantined messages
+
+[Need info]
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to view and manage quarantined messages and files
 
