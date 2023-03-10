@@ -1,6 +1,6 @@
 ---
 title: Protect security settings with tamper protection
-ms.reviewer: mattcall, pahuijbr, hayhov, oogunrinde
+ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
 keywords: malware, defender, antivirus, tamper protection
@@ -11,7 +11,6 @@ audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.reviwer: joshbregman
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
