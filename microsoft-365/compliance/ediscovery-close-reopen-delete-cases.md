@@ -1,12 +1,12 @@
 ---
-title: "Close, reopen, and delete eDiscovery (Standard) cases"
+title: "Close, reopen, delete, or upgrade an eDiscovery (Standard) cases"
 description: "This article describes how to manage eDiscovery (Standard) cases. This includes closing a case, reopening a closed case, and deleting a case."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/24/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,9 +20,9 @@ search.appverid:
 - MET150
 ---
 
-# Close, reopen, and delete a eDiscovery (Standard) case
+# Close, reopen, delete, or upgrade an eDiscovery (Standard) case
 
-This article describes how to close, reopen, and delete Microsoft Purview eDiscovery (Standard) cases in Microsoft 365.
+This article describes how to close, reopen, delete, or upgrade a Microsoft Purview eDiscovery (Standard) cases in Microsoft Purview.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -88,9 +88,7 @@ Before you can delete a case (whether it's active or closed), you must first del
 To delete an eDiscovery hold:
 
 1. Go to the **Holds** tab in the case that you want to delete.
-
 2. Select the hold that you want to delete.
-
 3. On the flyout page, select **Delete**.
 
       ![Delete an eDiscovery hold.](../media/DeleteeDiscoveryHold.png)
@@ -98,11 +96,38 @@ To delete an eDiscovery hold:
 To delete a case:
 
 1. In the compliance portal, select **eDiscovery** > **eDiscovery (Standard)** to display the list of eDiscovery (Standard) cases in your organization.
-
 2. Select the name of the case that you want to delete.
-
 3. On the case home page, under **Status**, select **Delete case**.
 
       ![Delete a case.](../media/eDiscoveryCaseHomePageDelete.png)
 
 If the case you're trying to delete still contains eDiscovery holds, you'll receive an error message. You'll have to delete all holds associated with the case and then try again to delete the case.
+
+## Upgrade a case to eDiscovery (Premium)
+
+After working with an existing eDiscovery (Standard) case, you may need the additional case functionality provided with eDiscovery (Premium) cases. This may include the need for more robust content searches, collection, and review set functionality.
+
+Before you upgrade a case from eDiscovery (Standard) to eDiscovery (Premium), make sure you review and understand the following:
+
+- After an eDiscovery (Standard) case is upgraded to eDiscovery (Premium), it can't be reversed to an eDiscovery (Standard) case.
+- Only eDiscovery Administrators can upgrade cases to eDiscovery (Premium). You'll need to sign in to the compliance portal with an account with the *eDiscovery Administrators* role.
+- Changes to searched aren't available while the case is upgrading to to eDiscovery (Premium). Changes to searches are available in the draft collection once the upgrade is completed.
+- Jobs in the eDiscovery (Standard) case are maintained after the upgrade, but the job names will keep the case job names as when they were in eDiscovery (Standard). For example....
+- Hold policies for the case are migrated, no holds are removed or recreated in the new eDiscovery (Premium) case. This ensures that case data isn't lost or deleted during the upgrade.
+- The search conditions for the eDiscovery (Standard) case are added to a draft collection in the new eDiscovery (Premium) case. You'll run the draft collection in the new eDiscovery (Premium) case to collect the latest content.
+
+To upgrade an eDiscovery (Standard) case to eDiscovery (Premium), complete the following steps:
+
+1. In the compliance portal, select **eDiscovery** > **eDiscovery (Standard)** to display the list of eDiscovery (Standard) cases in your organization.
+2. For the case that you want to upgrade, select the ellipsis control and then select **Upgrade case to Premium**. You can upgrade one case at a time, bulk upgrading of multiple cases isn't supported.
+3. On the **Upgrade cases (preview)** dialog box, select **Continue upgrade**.
+
+   ![Upgrade a case notification.](../media/ediscovery-upgrade-case-notification.png)
+
+4. While the case is being upgraded, you'll see a banner at the top of the **eDiscovery (Standard)** case page.
+
+   ![Case upgrade is in-progress banner.](../media/ediscovery-upgrade-case-notification-pending.png)
+
+5. After the case upgrade is finished, you'll see a banner at the top of the **eDiscovery (Standard)** case page.
+
+   ![Case upgrade is completed banner.](../media/ediscovery-upgrade-case-notification-completed.png)
