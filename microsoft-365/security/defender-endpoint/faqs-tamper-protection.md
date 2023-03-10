@@ -6,7 +6,7 @@ description: Frequently asked questions on configuring tamper protection.
 keywords: malware, defender, antivirus, tamper protection
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/08/2023
+ms.date: 03/09/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -74,9 +74,7 @@ If you're using Intune to configure and manage tamper protection, you can target
 
 ## What settings can't be changed when tamper protection is turned on?
 
-When tamper protection is turned on, tamper-protected settings can't be changed from their default value, even if you're using Intune or Configuration Manager to manage your security settings. Changes might appear to be successful in Intune or Configuration Manager, but won't actually be allowed by tamper protection. See [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
-
-For the most current list of tamper protected settings, contact support.
+When tamper protection is turned on, tamper-protected settings can't be changed from their default value, even if you're using Intune or Configuration Manager to manage your security settings. Changes might appear to be successful in Intune or Configuration Manager, but won't actually be allowed by tamper protection. For a list of settings, see [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
 
 ## If tamper protection is turned on in Microsoft 365 Defender, can Intune override it?
 
@@ -88,17 +86,7 @@ Use Intune to deploy [DisableLocalAdminMerge](/windows/client-management/mdm/def
 
 ## How can I confirm whether exclusions are tamper protected on a Windows device?
 
-You can use a registry key to determine whether the functionality to protect Microsoft Defender Antivirus exclusions is enabled.
-
-1. On a Windows device open Registry Editor. (Read-only mode is fine; you won't be editing the registry key.)
-
-2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called **TPExclusions**. 
-
-   - If **TPExclusions** has a value of `1`, then all required conditions are met, and the new functionality to protect exclusions is enabled on the device. In this case, exclusions are tamper protected.
-   - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device.
-
-> [!CAUTION]
-> Do not change the value of **TPExclusions**. Use the preceding procedure for information only. Changing the key will have no effect on whether tamper protection applies to exclusions.
+See [How to determine whether antivirus exclusions are tamper protected on a Windows device](manage-tamper-protection-intune.md#how-to-determine-whether-antivirus-exclusions-are-tamper-protected-on-a-windows-device).
 
 ## Can I configure tamper protection with Microsoft Configuration Manager?
 

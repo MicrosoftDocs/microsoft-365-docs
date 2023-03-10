@@ -18,6 +18,10 @@ description: Learn how to create a rule to move or copy a file to another ShareP
 
 # Create a rule to move or copy a file from one document library to another in Microsoft Syntex
 
+Document libraries can have multiple move and copy rules to support moving and copying files to different destination libraries based on metadata criteria. 
+
+## Move or copy a file
+
 To move or copy a file from one document library to another, follow these steps.
 
 1. In the document library, select **Automate** > **Rules** > **Create a rule**.
