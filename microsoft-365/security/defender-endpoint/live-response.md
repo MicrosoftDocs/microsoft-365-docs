@@ -87,11 +87,10 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   > [!NOTE]
   > Only admins and users who have "Manage Portal Settings" permissions can enable live response.
 
-
 - **Enable live response unsigned script execution** (optional).
 
-  >[!IMPORTANT]
-  >Signature verification only applies for PowerShell scripts.
+  > [!IMPORTANT]
+  > Signature verification only applies for PowerShell scripts.
 
   > [!WARNING]
   > Allowing the use of unsigned scripts may increase your exposure to threats.
@@ -212,10 +211,6 @@ To enable your security operations team to continue investigating an impacted de
 - To bring a file download to the foreground, in the live response command console, type `fg <command_id>`.
 
 Here are some examples:
-
-<br>
-
-****
 
 |Command|What it does|
 |---|---|
