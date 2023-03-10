@@ -23,7 +23,7 @@ description: For Office 365 apps, understand the migration of the Azure Informat
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-When you use [sensitivity labels](sensitivity-labels.md) in Microsoft 365 Apps on Windows computers, we recommend you use you labeling that's built into Office apps, even if you have the [Azure Information Protection (AIP) unified labeling client](/azure/information-protection/rms-client/aip-clientv2) installed. Moving forward, the AIP add-in will be disabled by default in the latest versions of Office apps.
+When you use [sensitivity labels](sensitivity-labels.md) in Microsoft 365 Apps on Windows computers, we recommend you use you labeling that's built into Office apps, even if you have the [Azure Information Protection (AIP) unified labeling client](/azure/information-protection/rms-client/aip-clientv2) installed. Moving forward, the AIP add-in is disabled by default in the latest versions of Office apps.
 
 To prepare for this change, use this article to understand the benefits of using built-in labeling, which main features have parity, and how to control the migration from the AIP add-in to the newer labeling experience.
 
@@ -94,10 +94,10 @@ To keep informed when new labeling capabilities become available for built-in la
 
 ## How to disable the AIP add-in to use built-in labeling for Office apps
 
-For the latest Office apps, the AIP add-in is disabled by default, so there's nothing for you to configure:
+For the latest Office apps, the AIP add-in is disabled by default, so there's nothing for you to configure for these versions:
 
-- Currently in preview: [Current Channel (Preview)](https://office.com/insider)
-- **Current Channel** and **Monthly Enterprise Channel**: Not before version 2302+ (not yet released) 
+- **Current Channel**: version 2302+ 
+- **Monthly Enterprise Channel**: Not before version 2302+ (not yet released) 
 - **Semi-Annual Channel**: Not before version 2302+ (not yet released)
 
 If you have a version that disabled the AIP add-in by default, and you need to use the AIP add-in rather than built-in labeling, you must [configure a new setting to override the default](#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in).
