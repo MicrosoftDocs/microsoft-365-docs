@@ -1,9 +1,9 @@
 ---
-title: "Support for optical character recognition in Microsoft Purview"
+title: "Support for optical character recognition in Microsoft Purview (preview)"
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: v-katykoenen
+author: kmkoenen
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -16,21 +16,33 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: How to implement use optical character recognition (OCR) with MS Purview.
+description: How to implement this preview of optical character recognition (OCR) within MS Purview.
 ---
 
-# Support for optical character recognition in Microsoft Purview
+# Support for optical character recognition in Microsoft Purview (preview)
 
-Data loss prevention policies in Microsoft Purview can scan for sensitive content in documents to help protect those documents from inappropriate exposure. Historically, scanning for sensitive information has been limited to text in various types of documents. We're now adding support for optical character recognition (OCR) scanning to detect sensitive content in images. With OCR scans enabled, you can apply policies to protect the information in those images.
+Microsoft Purview can scan for sensitive content in documents to help protect those documents from inappropriate exposure. Historically, scanning for sensitive information has been limited to text in various types of documents. In this preview, we've added support for optical character recognition (OCR) scanning to detect sensitive content in stand-alone images. With OCR scans enabled, you can apply policies to protect the information in those images.
+
+Once the OCR settings are configured, your existing data loss protection (DLP), auto-labeling, and insider risk policies are applied to both images and documents. For example, if you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT), Microsoft Purview not only scans for credit card numbers in text at those locations, it also scans images at those locations for credit card numbers.
+
+OCR scans are supported in the following areas:
+
+| Preview supports OCR in | Preview does **not** support OCR in |
+|-------------------------------|--------------------|
+| Data loss prevention          | Communication compliance|
+| Insider Risk | eDiscovery <!-- True? --> |
+| JIT <!-- what is this? --> |  |
+| MIP
+ <!-- what is this? --> |  |
 
 ## Where is OCR scanning supported?
 
 OCR scanning is available in the following workflows:
 
 - Endpoint devices (Windows)
-- Exchange Online (EXO)
-- OneDrive for Business (ODB)
-- SharePoint Online (SPO)
+- Exchange Online
+- OneDrive for Business
+- SharePoint Online
 - Teams
 
 ## What file types are supported?
@@ -67,13 +79,12 @@ During the preview, this feature is available for free. When the preview is over
 3. Select the locations where you wish to scan images. Available locations are:
     - Endpoint
     - Windows devices,
-    - Exchange Online (EXO)
-    - OneDrive for Business (ODB)
-    - SharePoint Online (SPO)
+    - Exchange Online
+    - OneDrive for Business
+    - SharePoint Online
     - Teams
 4. For each location and scope, define the scope (users/groups/sites) for the OCR scans.
 
-Once the OCR settings are configured, your existing data loss protection (DLP), auto-labeling, and insider risk policies are applied to both images and documents. For example, if you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT), Microsoft Purview not only scans for credit card numbers in text at those locations, it also scans images at those locations for credit card numbers.
 
 ## See also
 
