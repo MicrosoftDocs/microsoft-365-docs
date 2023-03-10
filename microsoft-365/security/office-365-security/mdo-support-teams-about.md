@@ -11,14 +11,13 @@ ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
-ms.assetid: 
 ms.collection: 
   - m365-security
   - tier1
 description: Admins can learn about Microsoft Teams features in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 3/6/2023
+ms.date: 3/28/2023
 ---
 
 # Microsoft Defender for Office 365 support for Microsoft Teams (Preview)
