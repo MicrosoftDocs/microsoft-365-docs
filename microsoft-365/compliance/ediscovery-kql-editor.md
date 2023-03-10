@@ -45,7 +45,7 @@ When you create or edit an eDiscovery search, the option to display and use the 
 
 ### KQL editor in eDiscovery (Premium)
 
-![KQL editor in eDiscovery (Premium)](../media/KQLEditorAdvanced.png)
+![KQL editor in eDiscovery (Premium)](../media/ediscovery-kql-premium.png)
 
 ## Using the KQL editor
 
