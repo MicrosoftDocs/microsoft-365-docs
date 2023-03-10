@@ -45,8 +45,9 @@ If you are not already familiar with Microsoft 365 Defender, see these articles:
 
 If your organization has already implemented some aspects of Microsoft 365 Defender, these articles can either affirm or help improve your existing architecture and processes.
 
-> [!NOTE]
-> As a Microsoft partner, Protiviti contributed to and provided material feedback to this article.
+>[!Note]
+>As a Microsoft partner, Protiviti contributed to and provided material feedback to this article.
+>
 
 ## Target audience
 
