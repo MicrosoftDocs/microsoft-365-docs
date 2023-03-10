@@ -142,7 +142,6 @@ In SharePoint Online, content is automatically crawled based on a defined crawl 
 
 For more information, see [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
 
-
 ## More information
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
