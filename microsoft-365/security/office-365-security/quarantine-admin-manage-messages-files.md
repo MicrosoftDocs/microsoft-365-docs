@@ -286,7 +286,7 @@ In organizations with Defender for Office 365, admins can manage files that were
 > [!NOTE]
 > Files quarantined in SharePoint or OneDrive are removed fom quarantine after 30 days, but the blocked files remain in SharePoint or OneDrive in the blocked state.
 
-### View quarantined files in Defender for Office 365
+### View quarantined files
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine**. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
 
@@ -315,7 +315,7 @@ In organizations with Defender for Office 365, admins can manage files that were
 
 After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the file).
 
-### View quarantined file details in Defender for Office 365
+### View quarantined file details
 
 When you select a quarantined file from the list, the following information is available in the details flyout that opens:
 
@@ -342,7 +342,7 @@ To take action on the file, see the next section.
 >
 > :::image type="content" source="../../media/quarantine-file-details-flyout-up-down-arrows.png" alt-text="The up and down arrows in the details flyout of quarantined files" lightbox="../../media/quarantine-file-details-flyout-up-down-arrows.png":::
 
-### Take action on quarantined files in Defender for Office 365
+### Take action on quarantined files
 
 After you select a quarantined file from the list, the following actions are available in the details flyout:
 
