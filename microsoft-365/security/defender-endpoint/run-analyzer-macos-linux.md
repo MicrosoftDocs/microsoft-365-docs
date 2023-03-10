@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ms.date: 01/18/2023
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
@@ -24,7 +24,6 @@ search.appverid: met150
 
 # Run the client analyzer on macOS and Linux
 
-
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -32,6 +31,7 @@ search.appverid: met150
 The XMDEClientAnalyzer is used for diagnosing Microsoft Defender for Endpoint health or reliability issues on onboarded devices running either Linux, or macOS.
 
 There are two ways to run the client analyzer tool:
+
 1. Using a binary version (no Python dependency)
 2. Using a Python-based solution
 
@@ -40,17 +40,16 @@ There are two ways to run the client analyzer tool:
 1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS or Linux machine you need to investigate.\
 If using a terminal download using the command:
 
-    ```
+    ```console
     wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
     ```
 
 2. Verify the download
 
-    >[!NOTE]
-    >The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '550EAE6FAA26972D49D3013520644E551AFA846E92CD59F5C6A6A72A6B77E9E9'
+    > [!NOTE]
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '550EAE6FAA26972D49D3013520644E551AFA846E92CD59F5C6A6A72A6B77E9E9'
 
-
-    ```
+    ```console
     echo '550EAE6FAA26972D49D3013520644E551AFA846E92CD59F5C6A6A72A6B77E9E9  XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
@@ -58,13 +57,13 @@ If using a terminal download using the command:
 
     If using a terminal download using the command:
 
-    ```
-    unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary 
+    ```console
+    unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
     ```
 
 4. Change to the tool's directory using the following command:
 
-    ```
+    ```console
     cd XMDEClientAnalyzerBinary
     ```
 
@@ -77,136 +76,137 @@ If using a terminal download using the command:
 When using a terminal, unzip the file using one of the following commands based on machine type:
 
    - Linux
-   
-   ```
+
+   ```console
    unzip -q SupportToolLinuxBinary.zip
    ```
 
    - Intel based Mac
-   
-   ```
+
+   ```console
    unzip -q SupportToolmacOSBinary.zip
    ```
 
    - For Arm based Mac devices
-   
-   ```
+
+   ```console
    unzip -q SupportToolmacOS-armBinary.zip
    ```
 
 7. Run the tool as <i>root</i> to generate diagnostic package:
 
-   ```
+   ```console
    sudo ./MDESupportTool -d
    ```
 
    > [!NOTE]
-   > The binary is currently unsigned. To allow the package run on MacOS, you will need to use the command 
+   > The binary is currently unsigned. To allow the package run on MacOS, you will need to use the command
    >
    > `spctl --add /Path/To/MDESupportTool`
-   > 
-
-
-
+   >
 
 ## Running the Python-based client analyzer
 
 > [!NOTE]
->- The analyzer depends on few extra pip packages(sh, distro, lxml, pandas) to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml). 
-> 
+>
+> - The analyzer depends on few extra pip packages(sh, distro, lxml, pandas) to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
+>
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
 > - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example:
-> `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
-> 
-
+.
+>   `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
     If using a terminal, download by running the command:
 
-    ```
+    ```console
     wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer
     ```
-  
+
 2. Verify the download
 
-    ```
+    ```console
     echo 'E3119C47975A3E50A5144B0751F59BFC42327A151BDA5D8334D1ED64F7898A7F  XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\
     If using a terminal unzip using the command:
 
-    ```
+    ```console
     unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer
     ```
+
 4. Change directory to the extracted location.
 
-    ```
+    ```console
     cd XMDEClientAnalyzer
     ```
 
 5. Give the tool executable permission:
 
-    ```
+    ```console
     chmod a+x mde_support_tool.sh
     ```
+
 6. Run as a non-root user to install required dependencies:
 
-    ```
+    ```console
     ./mde_support_tool.sh
     ```
 
-5. To collect actual diagnostic package and generate the result archive file run again as root:
+7. To collect actual diagnostic package and generate the result archive file run again as root:
 
-    ```
+    ```console
     sudo ./mde_support_tool.sh -d
     ```
 
 ## Command line options
-   
+
 ### Primary command lines
 
-  Use this for getting machine diagnostic
+Use this for getting machine diagnostic
 
-  ```
-  -h, --help            show this help message and exit
-  --output OUTPUT, -o OUTPUT
+```console
+-h, --help            show this help message and exit
+--output OUTPUT, -o OUTPUT
                       Output path to export report
-  --no-zip, -nz         If set a directory will be created instead of an archive file
-  --force, -f           Will overwrite if output directory exists
-  --diagnostic, -d      Collect extensive machine diagnostic information
-  --bypass-disclaimer   Do not display disclaimer banner
-  --mdatp-log {info,trace,error,warning,debug,verbose}
+--no-zip, -nz         If set a directory will be created instead of an archive file
+--force, -f           Will overwrite if output directory exists
+--diagnostic, -d      Collect extensive machine diagnostic information
+--bypass-disclaimer   Do not display disclaimer banner
+--mdatp-log {info,trace,error,warning,debug,verbose}
                       Set MDATP log level
-  --max-log-size MAX_LOG_SIZE
+--max-log-size MAX_LOG_SIZE
                       Maximum log file size in MB before rotating(Will restart mdatp)
-  ```
-  
-  Usage example: `sudo ./MDESupportTool -d`
-  
+```
+
+Usage example: `sudo ./MDESupportTool -d`
+
 ### Positional arguments
 
-#### Collect performance info 
-  Collect extensive machine performance tracing for analysis of a performance scenario that can be reproduced on demand
-  ```
+#### Collect performance info
+
+Collect extensive machine performance tracing for analysis of a performance scenario that can be reproduced on demand
+
+```console
 -h, --help            show this help message and exit
 --frequency FREQUENCY
                       profile at this frequency
 --length LENGTH       length of time to collect (in seconds)
-  ```
-  Usage example: `sudo ./MDESupportTool performance --frequency 2`
+```
 
+Usage example: `sudo ./MDESupportTool performance --frequency 2`
 
 #### Use OS trace (for macOS only)
+
 Use OS tracing facilities to record Defender for Endpoint performance traces.
-  
+
 > [!NOTE]
 > This functionality exists in the Python solution only.
 
-
-```
+```console
 -h, --help       show this help message and exit
 --length LENGTH  Length of time to record the trace (in seconds).
 --mask MASK      Mask to select with event to trace. Defaults to all
@@ -214,19 +214,18 @@ Use OS tracing facilities to record Defender for Endpoint performance traces.
 
 On running this command for the first time, it will install a Profile configuration.
 
-Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/en-in/guide/mac-help/mh35561/mac#:~:text=Choose%20Apple%20menu%20%3E%20System%20Settings,%2C%20double%2Dclick%20the%20profile.)
+Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/guide/mac-help/mh35561/mac#:~:text=Choose%20Apple%20menu%20%3E%20System%20Settings,%2C%20double%2Dclick%20the%20profile.)
 
 Usage example `./mde_support_tool.sh trace --length 5`
 
-
 #### Exclude mode
+
 Add exclusions for audit-d monitoring.
-  
+
 > [!NOTE]
-> This functionality exists for Linux only 
- 
-  
-```
+> This functionality exists for Linux only
+
+```console
 -h, --help            show this help message and exit
 -e <executable>, --exe <executable>
                       exclude by executable name, i.e: bash
@@ -243,9 +242,9 @@ Add exclusions for audit-d monitoring.
 -s, --stat            get statistics about common executables
 -l, --list            list auditd rules
 ```
-  
+
 Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`
-      
+
 ## Result package contents on macOS and Linux
 
 - report.html
@@ -283,4 +282,3 @@ Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`
 - perf_benchmark.tar.gz
 
   Description: The performance test reports. You will see this only if you are using the performance parameter.
-  

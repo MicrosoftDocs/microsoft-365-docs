@@ -130,9 +130,6 @@ To view the report, open the [Microsoft 365 Defender portal](https://security.mi
 
 The available views on the **URL protection** report page are described in the following sections.
 
-> [!NOTE]
-> This is a *protection trend report*, meaning data represents trends in a larger dataset. As a result, the data in the charts is not available in real time here, but the data in the details table is, so you may see a slight discrepancy between the two. The charts are refreshed once every four hours and contain data for the last 90 days. For detailed real-time information, see [View phishing URL and click verdict data](threat-explorer-about.md#view-phishing-url-and-click-verdict-data).
-
 ### View data by URL click protection action
 
 :::image type="content" source="../../media/url-threat-protection-report-url-click-protection-action-view.png" alt-text="The view namely URL click protection action in the URL protection report" lightbox="../../media/url-threat-protection-report-url-click-protection-action-view.png":::
@@ -166,7 +163,7 @@ If you click **Filters**, you can modify the report and the details table by sel
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
-The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 7 days:
+The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 30 days:
 
 - **Click time**
 - **User**

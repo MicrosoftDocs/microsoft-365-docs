@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: 02/27/2023
+ms.date: 03/06/2023
 ms.localizationpriority: high
 ms.collection:
 - purview-compliance
@@ -117,13 +117,23 @@ However, the behavior is a little different for client-side auto-labeling (auto-
 
 For more information about label priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
 
-## Don't configure a parent label to be applied automatically or recommended
+## Considerations for label configurations
+
+The following considerations apply to both client-side labeling and service-side labeling.
+
+### Don't configure a parent label to be applied automatically or recommended
 
 Remember, you can't apply a parent label (a label with sublabels) to content. Make sure that you don't configure a parent label to be auto-applied or recommended in Office apps, and don't select a parent label for an auto-labeling policy. If you do, the parent label won't be applied to content.
 
 To use automatic labeling with sublabels, make sure you publish both the parent label and the sublabel.
 
 For more information on parent labels and sublabels, see [Sublabels (grouping labels)](sensitivity-labels.md#sublabels-grouping-labels).
+
+### Label scoping that excludes files or emails
+
+To automatically apply a sensitivity label to content, the [label's scope](sensitivity-labels.md#label-scopes) must include **Items**. If you refine this selection further, you must include **Files** if you want to automatically apply a label to documents, and **Emails** to automatically apply a label to emails.
+
+For more information about refining the **Items** label scope, see [Scope labels to just files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails).
 
 ## Will an existing label be overridden?
 
@@ -157,9 +167,9 @@ For built-in labeling in Office apps, check the [minimum versions required](sens
 
 The Azure Information Protection unified labeling client supports automatic labeling only for built-in and custom sensitive info types, and doesn't support trainable classifiers or sensitive info types that use Exact Data Match (EDM) or named entities.
 
-The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). Make sure **Items** is selected for the label's scope:
+The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). Make sure **Items** is selected for the label's scope. Then make sure **Files** are also selected to auto-label documents, and **Emails** are selected to auto-label emails. For example:
 
-![Sensitivity label scope options for files and emails.](../media/filesandemails-scope-options-sensitivity-label.png)
+:::image type="content" source="../media/filesandemails-scope-options-sensitivity-label.png" alt-text="Sensitivity label scope options for Items that includes Files and Email.":::
 
 As you move through the configuration, you see the **Auto-labeling for files and emails** page where you can choose from a list of sensitive info types or trainable classifiers:
 

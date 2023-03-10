@@ -90,4 +90,3 @@ After creating a new group and adding members, you can further configure your gr
 
 [Manage guest access to Microsoft 365 groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (article)\
 [Choose the domain to use when creating Microsoft 365 groups](../../solutions/choose-domain-to-create-groups.md) (article)\
-[Upgrade distribution lists to Microsoft 365 groups](../manage/upgrade-distribution-lists.md) (article)

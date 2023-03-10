@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/01/2023
+ms.date: 03/07/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -73,6 +73,9 @@ If you later need to revert this configuration, change the value to **1**. You m
 Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service). The setting takes effect when these Office apps restart. 
 
 Because this setting is specific to Windows Office apps, it has no impact on other apps on Windows that support sensitivity labels (such as Power BI) or other platforms (such as macOS, mobile devices, and Office for the web). If you don't want some or all users to see and use sensitivity labels across all apps and all platforms, don't assign a sensitivity label policy to those users.
+
+> [!TIP]
+> If you want to stop displaying built-in labels for Word, Excel, and PowerPoint, and display them just for Outlook, or the other way around, you can achieve this outcome with a per-label setting. For more information, see [Scope labels to just files or emails](#scope-labels-to-just-files-or-emails).
 
 ## Office file types supported
 
@@ -325,6 +328,50 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 > If you have configured the PowerShell advanced settings **OutlookDefaultLabel** and **DisableMandatoryInOutlook** by using the [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) or [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) cmdlets:
 > 
 > Your chosen values for these PowerShell settings are reflected in the label policy configuration in the Microsoft Purview compliance portal, and they automatically work for Outlook apps that support these settings. The other PowerShell advanced settings remain supported for the Azure Information Protection unified labeling client only.
+
+## Scope labels to just files or emails
+
+> [!NOTE]
+> This capability is currently rolling out for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions that support this feature by using the [capabilities tables](sensitivity-labels-versions.md), and the row **Scope labels to files or emails**.
+> 
+> Until this capability is supported on all the platforms used by your users, they will have an inconsistent labeling experience. For example, Word on one platform doesn't display a label that they see on a different platform.
+
+This configuration is an extension to the **Items** scope, when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) in the Microsoft Purview compliance center. When you define the scope for the label for items, you can further refine the scope to just files or emails, and to [meetings](sensitivity-labels-meetings.md):
+
+- To scope labels to just Word, Excel, and PowerPoint: Make sure the option for **Files** is selected, and not the option for **Emails**.  
+- To scope labels to just Outlook, make sure the option for **Emails** is selected, and not the option for **Files**.
+
+Make sure both options are selected if you don't want to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook.
+
+> [!NOTE]
+> The **Files** option can include other items that support this scoping option, such as Power BI files. Check the application's documentation to verify, and remember to test all labeling apps and services used by your organization.
+
+Be aware that this configuration affects both client apps and services, manual labeling and automatic labeling. For example:
+
+- Default labels:
+    - If the scope doesn't include email, a configured default label for email won't be applied.
+    - If the scope doesn't include files, a configured default label for files won't be applied and can't be selected as a default sensitivity label for a SharePoint document library.
+
+- Auto-labeling policies:
+    - If the scope doesn't include email, you can't select the label for an auto-labeling policy that includes the Exchange location.
+    - If the scope doesn't include files, you can't select the label for an auto-labeling policy that includes the SharePoint and OneDrive locations.
+
+- [Encryption that lets users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions): 
+    - If the scope doesn't include email, you won't be able to select the encryption options of **Do Not Forward** or **Encrypt-Only**.
+    - If the scope doesn't include files, you won't be able to select the encryption option **In Word, PowerPoint, and Excel, prompt users to specify permissions**.
+
+In addition, if a label has been previously applied but then removed from one of the scopes, users will no longer see that label applied for the scope in the apps that support this feature.
+
+Because of the impact of scoping labels to just files or emails, some existing labeling configurations will prevent you from removing the scope options for **Files** and **Emails**:
+- Default label in label policies
+- Default label to apply in channel meetings
+- Label selected for auto-labeling policies
+
+Before you can scope a label to just files or emails, you must first remove it if it's configured as one of these default labels, and remove it from any auto-labeling policies.
+
+**Limitation for this preview:**
+
+- If the label is configured as the default label in one or more label policies, and Outlook isn't configured with its own default label in the same policy, you can't remove the scope for **Email**. As a workaround, first remove this label as the default label. You'll then be able to remove the email scope. Finally, reselect the now modified label as the default label for documents.
 
 ## Configure a label to apply S/MIME protection in Outlook
 
