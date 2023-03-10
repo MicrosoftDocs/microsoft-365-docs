@@ -949,9 +949,9 @@ The following table lists the user and admin activities in [Microsoft Planner](/
 | Completed task | TaskCompleted | A task is marked completed by a user or an app. |
 | Created roster | RosterCreated | A roster is created by a user or an app. If the create operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ObjectId indicates null, MemberIds indicates an empty string. |
 | Deleted roster | RosterDeleted | A roster is deleted by a user or an app. |
-| Added member to a roster | RosterMemberAdded | A member(s) is added to a roster. If the add operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, MemberIds indicates the list of member IDs attempted. |
-| Removed member to a roster | RosterMemberDeleted | A member(s) is removed from a roster. If the remove operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, MemberIds indicates the list of member IDs attempted. |
-| Read list of plans | PlanListRead | A list of plans is queried by a user or an app. If the query operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, PlanList indicates an empty string. |
-| Read list of tasks | TaskListRead | A list of tasks is queried by a user or an app. If the query operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, TaskList indicates an empty string. |
+| Added member to roster | RosterMemberAdded | A member(s) is added to a roster. If the add operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, MemberIds indicates the list of member IDs attempted. |
+| Removed member to roster | RosterMemberDeleted | A member(s) is removed from a roster. If the remove operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, MemberIds indicates the list of member IDs attempted. |
+| Read plan list | PlanListRead | A list of plans is queried by a user or an app. If the query operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, PlanList indicates an empty string. |
+| Read task list | TaskListRead | A list of tasks is queried by a user or an app. If the query operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, TaskList indicates an empty string. |
 | Updated tenant settings | TenantSettingsUpdated | Tenant settings are updated by a tenant admin. If the update operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ObjectId indicates the original settings, and TenantSettings indicates the tenant settings attempted. |
-| Updated roster's sensitivity label | RosterSensitivityLabelUpdated | A user or an app updates a roster's sensitivity label. |
+| Updated roster sensitivity label | RosterSensitivityLabelUpdated | A user or an app updates a roster's sensitivity label. |
