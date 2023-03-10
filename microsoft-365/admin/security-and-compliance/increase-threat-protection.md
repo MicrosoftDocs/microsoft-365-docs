@@ -46,7 +46,7 @@ Before you begin, note your current Microsoft Secure Score. The goal isn't to ac
 
 For more information, see [Microsoft Secure Score](../../security/defender/microsoft-secure-score.md).
 
-For additional details about securing data and managed devices in Microsoft 365 Business Premium, see [How to secure your business data with Microsoft 365 for business](secure-your-business-data.md).
+For additional details about securing data and managed devices in Microsoft 365 Business Premium, see [How to secure your business data with Microsoft 365 for business](../../business-premium/secure-your-business-data.md).
 
 ## Top tasks to make sure your subscription is secure
 
@@ -60,4 +60,4 @@ For additional details about securing data and managed devices in Microsoft 365 
 
 ## Related content
 
-- [How to secure your business data with Microsoft 365 for business](secure-your-business-data.md) 
+- [How to secure your business data with Microsoft 365 for business](../../business-premium/secure-your-business-data.md) 
