@@ -1,6 +1,6 @@
 ---
-title: "Close, reopen, delete, or upgrade an eDiscovery (Standard) cases"
-description: "This article describes how to manage eDiscovery (Standard) cases. This includes closing a case, reopening a closed case, and deleting a case."
+title: "Close, reopen, delete, or upgrade eDiscovery (Standard) cases"
+description: "This article describes how to manage eDiscovery (Standard) cases. This includes closing a case, reopening a closed case, deleting a case, and upgrading a case to eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -30,7 +30,7 @@ This article describes how to close, reopen, delete, or upgrade a Microsoft Purv
 
 When the legal case or investigation supported by a eDiscovery (Standard) case is completed, you can close the case. Here's what happens when you close a case:
   
-- If the case contains any eDiscovery holds, they will be turned off. After the hold is turned off, a 30-day grace period (called a *delay hold*) is applied to content locations that were on hold. This helps prevent content from being immediately deleted and provides admins the opportunity to search for and restore content before it may be permanently deleted after the delay hold period expires. For more information, see [Removing content locations from an eDiscovery hold](ediscovery-create-holds.md#removing-content-locations-from-an-ediscovery-hold).
+- If the case contains any eDiscovery holds, they'll be turned off. After the hold is turned off, a 30-day grace period (called a *delay hold*) is applied to content locations that were on hold. This helps prevent content from being immediately deleted and provides admins the opportunity to search for and restore content before it may be permanently deleted after the delay hold period expires. For more information, see [Removing content locations from an eDiscovery hold](ediscovery-create-holds.md#removing-content-locations-from-an-ediscovery-hold).
 - Closing a case only turns off the holds that are associated with that case. If other holds are placed on a content location (such as a Litigation Hold, a retention policy, or a hold from a different eDiscovery (Standard) case) those holds will still be maintained.
 - The case is still listed on the eDiscovery (Standard) page in the Microsoft Purview compliance portal. The details, holds, searches, and members of a closed case are retained.
 - You can edit a case after it's closed. For example, you can add or remove members, create searches, and export search results. The primary difference between active and closed cases is that eDiscovery holds are turned off when a case is closed.
@@ -111,7 +111,7 @@ Before you upgrade a case from eDiscovery (Standard) to eDiscovery (Premium), ma
 
 - After an eDiscovery (Standard) case is upgraded to eDiscovery (Premium), it can't be reversed to an eDiscovery (Standard) case.
 - Only eDiscovery Administrators can upgrade cases to eDiscovery (Premium). You'll need to sign in to the compliance portal with an account with the *eDiscovery Administrators* role.
-- Changes to searched aren't available while the case is upgrading to to eDiscovery (Premium). Changes to searches are available in the draft collection once the upgrade is completed.
+- Changes to searched aren't available while the case is upgrading to eDiscovery (Premium). Changes to searches are available in the draft collection once the upgrade is completed.
 - Jobs in the eDiscovery (Standard) case are maintained after the upgrade, but the job names will keep the case job names as when they were in eDiscovery (Standard). For example....
 - Hold policies for the case are migrated, no holds are removed or recreated in the new eDiscovery (Premium) case. This ensures that case data isn't lost or deleted during the upgrade.
 - The search conditions for the eDiscovery (Standard) case are added to a draft collection in the new eDiscovery (Premium) case. You'll run the draft collection in the new eDiscovery (Premium) case to collect the latest content.
