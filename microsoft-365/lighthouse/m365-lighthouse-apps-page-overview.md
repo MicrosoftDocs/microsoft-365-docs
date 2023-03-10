@@ -58,7 +58,7 @@ The App performance tab also includes the following options:
 
 - **Search**: Enter keywords to quickly locate a specific name or publisher in the list.
 
-:::image type="content" source="../media/m365-lighthouse-apps-page/apps-performance-page.png" alt-text="Screenshot of apps performance tab." lightbox="../media/m365-lighthouse-apps-page/apps-performance-page.png" alt-text="Screenshot of apps performance tab.":::
+:::image type="content" source="../media/m365-lighthouse-apps-page/apps-performance-page.png" alt-text="Screenshot of apps performance tab." lightbox="../media/m365-lighthouse-apps-page/apps-performance-page.png":::
 
 
 ## Related content
