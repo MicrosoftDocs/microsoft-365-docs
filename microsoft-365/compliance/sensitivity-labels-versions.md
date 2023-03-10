@@ -6,7 +6,7 @@ ms.author: cabailey
 author: cabailey
 ms.reviewer: alejandros
 manager: laurawi
-ms.date: 03/09/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -78,7 +78,7 @@ The numbers listed are the minimum Office application versions required for each
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
 |[AIP add-in disabled by default](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in)| Preview: [Current Channel (Preview)](https://office.com/insider) | Not relevant  | Not relevant | Not relevant| Not relevant |
 |Manually apply, change, or remove label <br /> - [Files and emails](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|Manually apply, change, or remove label <br /> - [Calendar items](sensitivity-labels-meetings.md)| Current Channel: Rolling to 2302+ | Rolling out: 16.70+ <sup>\*</sup> | Under review | Under review | Yes |
+|Manually apply, change, or remove label <br /> - [Calendar items](sensitivity-labels-meetings.md)| Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Rolling out: 16.70+ <sup>\*</sup> | Under review | Under review | Yes |
 |[Multi-language support](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+ | 4.7.1+ | 4.0.39+ | Yes |
 |[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
@@ -99,7 +99,6 @@ The numbers listed are the minimum Office application versions required for each
 |[Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [display label color](sensitivity-labels-office-apps.md#label-colors) | Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | Under review | Under review |
 |[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)| Current Channel: Rolling out to 2302+ | Under review | Under review | Under review | Under review |
 |[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails) | Current Channel: 2301+ | Rolling out: 16.70+ <sup>\*</sup> | Rolling out 4.2309+| Rolling out 4.2309+ | Yes |
-|[Preventing oversharing as DLP policy tip](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)| Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
 
 **Footnotes:**
 
