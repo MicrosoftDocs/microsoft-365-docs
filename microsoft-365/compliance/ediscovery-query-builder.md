@@ -46,8 +46,7 @@ After you've selected **Use new query builder***, you're ready to get started. T
 - **Remove a filter condition**: To remove an individual filter or subgroup, select the remove icon to the right of each filter line or subgroup.
 - **Clear all**: To clear the entire query of all filters and subgroups, select **Clear all**.
 
-
-### Scenario example
+## Scenario example
 
 The eDiscovery administrator needs to create a query to find emails sent from Aimee Miller to Adam Eham, Adele Vance, or Aditya Dash that were sent between February 9, 2023 and March 9, 2023 that contains the keywords *compliance* and *audit*. For this example, the administrator creates the following query using the new query builder:
 
