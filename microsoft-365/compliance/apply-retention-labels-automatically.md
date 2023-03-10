@@ -142,7 +142,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 
 5. Depending on your selected scope:
 
-    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Exchange email** but not **SharePoint sites**.
+    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Exchange mailboxes** but not **SharePoint sites**.
     
     - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations. For each location, you can leave it at the default to [apply the policy to the entire location](retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
 
@@ -219,7 +219,7 @@ To consider when using sensitive information types to auto-apply retention label
 
 - If you use custom sensitive information types, these can't auto-label existing items in SharePoint and OneDrive.
 
-- For emails, you can't select specific recipients to include or exclude; only the **All recipients** setting is supported and for this configuration only, it includes mailboxes from Microsoft 365 groups.
+- For emails, you can't select specific recipients to include or exclude; only the **All mailboxes** setting is supported and for this configuration only, it includes mailboxes from Microsoft 365 groups.
 
 #### Auto-apply labels to content with keywords or searchable properties
 
@@ -366,7 +366,7 @@ When you select a label to use for auto-applying retention labels for cloud atta
 
 When you configure the locations for this option, you can select:
 
-- **SharePoint sites** for shared files stored in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites.
+- **SharePoint classic and communication sites** for shared files stored in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites.
 - **Microsoft 365 Groups** for shared files that are stored in team sites connected by Microsoft 365 groups.
 - **OneDrive accounts** for shared files stored in users' OneDrive.
 
