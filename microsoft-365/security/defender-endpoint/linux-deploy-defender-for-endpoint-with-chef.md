@@ -26,6 +26,8 @@ ms.date: 04/07/2021
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+[!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../../includes/support.md)]
+
 Before you begin: Install unzip if it's not already installed.
 
 The Chef components are already installed and a Chef repository exists (chef generate repo \<reponame\>) to store the cookbook that will be used to deploy to Defender for Endpoint on Chef managed Linux servers.

@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
+author: Dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
