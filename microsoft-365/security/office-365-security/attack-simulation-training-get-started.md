@@ -128,5 +128,15 @@ For step by step instructions on how to create a payload for use within a simula
 
 For step by step instructions on how to gain insights with reporting, see [Gain insights through Attack simulation training](attack-simulation-training-insights.md).
 
+### Predicted compromise rate
+
+One of the most crucial elements in a phishing simulation is the payload selection. If you're tracking only click-through as a quality metric, there's an incentive to decrease the click rate by selecting easier-to-spot phishing payloads. Eventually, it's less likely that the user will change their behavior when a real phishing messages comes along.
+
+To combat the tendency to use low click rate payloads and to maximize educational returns, we've created a new piece of metadata for every global payload called the predicted compromise rate (PCR). 
+
+PCR uses historical data across Microsoft 365 that predicts the percentage of people who will be compromised by the payload. The formula is: users compromised / total number of users who receive the simulation. PCR is an intelligent mechanism that's built on information like payload content, compromise rates (aggregated and anonymized), and payload metadata. PCR predicts a more accurate potential compromise rate when the payload is used within a simulation. The benefit of PCR comes from predicting actual vs. predicted click through for a given simulation and payload.
+
+You can also review the overall performance of your organization by measuring the difference between the predicted compromise rate and the actual compromise rate across simulations using the Training efficacy report.
+
 > [!NOTE]
 > Attack Simulator uses Safe Links in Defender for Office 365 to securely track click data for the URL in the payload message that's sent to targeted recipients of a phishing campaign, even if the **Track user clicks** setting in Safe Links policies is turned off.

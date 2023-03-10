@@ -21,7 +21,7 @@ description: "Configure sensitivity labels to protect calendar items, and Teams 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> For this scenario, Outlook calendar events remain in preview for Windows, and rolling out in general availability for macOS.
+> For this scenario, Outlook calendar events are still rolling out in general availability for Windows and macOS.
 > 
 > You won't be able to configure all the options referenced on this page if a [Teams Premium license](/MicrosoftTeams/enhanced-teams-experience) isn't found for your tenant. For those settings, you'll see an information bar in the Microsoft Purview compliance portal that your organization doesn't have this license.
 
@@ -64,7 +64,7 @@ Example showing a Teams meeting invite that has the label **Highly confidential*
 
 To apply a sensitivity label to meeting invites and appointments using Outlook, users must use Outlook on the web from a desktop computer, or use built-in labeling from Microsoft 365 Apps for enterprise:
 
-- **Outlook for Windows**: Rolling out to Current Channel (Preview)
+- **Outlook for Windows**: Rolling out to Current Channel, version 2302+
 - **Outlook for Mac**: Rolling out to version 16.70+
 
 The AIP add-in for Outlook doesn't support applying labels to meeting invites.
@@ -186,8 +186,6 @@ Other label policy settings that are specific just to calendar items, Teams meet
 #### Prevent copying chat to the clipboard label setting
 
 The label setting to prevent copying chat to the clipboard is enforced for all channel chats, even outside channel meetings. For non-channel meetings, it's enforced only for meetings.
-
-Currently, this setting isn't supported for users outside your organization, which includes anonymous users and external users. It is supported for guest user accounts in your tenant. For meetings, it's also not supported for users who join the chat but weren't invited to the meeting.
 
 This setting is currently unsupported for virtual desktop infrastructure (VDI).
 
