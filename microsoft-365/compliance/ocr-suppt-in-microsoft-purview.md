@@ -67,7 +67,7 @@ During the preview, this feature is available for free. When the preview is over
 <!-- this is largely the same as /syntex/syntex-azure-billing#set-up-microsoft-syntex-billing-in-azure, just with tweaks to change "Microsoft Syntex" to "OCR". -->
  Once you set up OCR billing in Azure, events are sent to the Azure meter in your account, and you'll be able to view the images scanned.
 
-- You must have Global Administrator or SharePoint Administrator permissions to be able to access the Microsoft 365 admin center and set up Syntex.
+- You must have Global Administrator or SharePoint Administrator permissions to be able to access the Microsoft 365 admin center and set up OCR in the Microsoft Syntex section of the Admin center.
 - You must have owner or contributor rights to the Azure subscription that you want to use for OCR billing.
 
 To configure OCR billing:
