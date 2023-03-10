@@ -238,6 +238,8 @@
           href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
+        - name: Best practices for managing alert volume
+          href: communication-compliance-alerts-best-practices.md
         - name: Use communication compliance reports & audits
           href: communication-compliance-reports-audits.md
         - name: Use communication compliance with SIEM solutions 

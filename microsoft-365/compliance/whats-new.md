@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/28/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -39,6 +39,24 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## March 2023
+
+### Insider risk management
+
+- **Forensic Evidence GA**: With the GA release of Forensic Evidence, you can now:
+   - [Specify websites or desktop apps to include or exclude when you create a policy](insider-risk-management-forensic-evidence-configure.md#step-4-create-a-policy)
+   - [View and explore a list of captured clips and filter the list to find just the information you need](insider-risk-management-forensic-evidence-manage.md#viewing-captured-clips)
+   - [Purchase/analyze capacity for captured clips and/or sign up for 20 GB of trial capacity](insider-risk-management-forensic-evidence-manage.md#capacity-and-billing)
+
+### Sensitivity labels
+
+- **General availability (GA)**: Outlook for Mac is now rolling out in general availability for [protected meetings](sensitivity-labels-meetings.md).
+- **General availability (GA)**: Now rolling out in general availability for built-in labeling for Windows, support for a [default sublabel for a parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label) as a parity feature for the AIP add-in.
+- **General availability (GA)**: For labeling built into Windows, macOS, iOS, and Android, auditing actions for sensitivity labels include encryption details such as a change in the encryption status and settings, and the Rights Management owner.
+- **In preview**: The ability to [scope labels to files and emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails), so that for example, a sensitivity label is visible to users in Outlook but not in Word, Excel, or PowerPoint. This configuration can be used as a parity feature for the AIP add-in, which could be disabled per app.
+- **In preview**: Prevent [oversharing of labeled emails as a DLP policy tip](dlp-create-deploy-policy.md). This DLP policy configuration is an equivalent for the AIP add-in with PowerShell advanced settings that implement pop-up messages in Outlook that warn, justify, or block emails being sent.
+- **Removal of restrictions for prevent copying chat for protected meetings**: The label setting that [prevents copying chat to the clipboard](sensitivity-labels-meetings.md#prevent-copying-chat-to-the-clipboard-label-setting) now supports users outside your organization and also users who join a chat but weren't invited to the meeting.
+
 ## February 2023
 
 ### Audit
@@ -57,7 +75,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - **Rolling out in preview**: Auto-labeling retention policies now support [simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode), so you can test out your policy configuration and view results before deploying in production.
-- The configuration and management of [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) is moving to a new location in the Microsoft Purview compliance portal: **Roles & Scopes** \> **Adaptive scopes**. Additionally, a new role, **Scope Manager**, is required to create and manage adaptive scopes. This new role is included in the **Records Management** role group and other built-in role groups, such as **Compliance Administrator**.
+- **Configuration improvements**: The configuration for retention policies and retention label policies in the Microsoft Purview compliance portal has been improved for the selection and configuration of locations. Some of the location names have changed to better reflect what's included for the location, and a new **Applicable Content** column is added for additional information.
+- **Relocation for adaptive scopes**: The configuration and management of [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) is moving to a new location in the Microsoft Purview compliance portal: **Roles & Scopes** \> **Adaptive scopes**.
 - New troubleshooting resources:
     - [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
     - [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)
@@ -92,6 +111,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Insider risk management
 
 - **In preview**: New [Adaptive Protection guidance](/microsoft-365/compliance/insider-risk-management-adaptive-protection). Adaptive Protection in Microsoft Purview uses machine learning to identify and mitigate the most critical risks with the most effective [data loss prevention (DLP)](/microsoft-365/compliance/dlp-adaptive-protection-learn) protection controls dynamically, saving security teams valuable time while ensuring better data security.
+- **New sequences**: [Added sequence detection for third-party cloud services and unallowed domains](insider-risk-management-policies.md#sequence-detection-preview)
+- **New cumulative exfiltration button**: [The new cumulative exfiltration button on the user activity chart provides a visual chart of how activity is building over time for a user](insider-risk-management-activities.md#user-activity)
+- **Filter out activity that has already been reviewed**: [Use the Review status filter to filter out any activity that was part of a dismissed or resolved alert](insider-risk-management-activities.md#activity-explorer-1).
+- [Clarification for why user activity data outside the selected calendar control range might be included](insider-risk-management-activities.md#user-activity-reports) 
+- [Clarification that scoped admins cannot select the quick setup option for Adaptive Protection](insider-risk-management-adaptive-protection.md#quick-setup)
+
 
 ### On-premises scanner
 
@@ -103,7 +128,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 
-- **General availability (GA)**: Protected meetings by [labeling calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md). Outlook remains in preview for this scenario.
+- **General availability (GA)**: Protected meetings by [labeling calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md). Although Outlook for Mac is now rolling out in general availability, Outlook for Windows remains in preview for this scenario.
 - **General availability (GA)**: For Windows, built-in labeling supports [organization-wide custom permissions](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) as a parity feature for the AIP add-in.
 - **In preview**: [Support for Azure Active Directory administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units).
 - **In preview**: Previously available in preview for Word, Excel, and PowerPoint, the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) with support for [label colors](sensitivity-labels-office-apps.md#label-colors) is now also in preview for Outlook on Windows.
@@ -123,6 +148,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Updates to [conditional settings](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) and the required formatting for multi-value conditions.
 - New section that outlines [limitations](/microsoft-365/compliance/communication-compliance-channels#channel-limits) for supported channels.
 
+### Compliance Manager
+- Compliance Manager now has [improvement actions related to Microsoft Priva](/microsoft-365/compliance/compliance-manager-setup#testing-source-for-automated-testing) (**in preview**).
+
 ### eDiscovery
 
 - Updated with a clarification for searches for [inactive mailboxes](/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
@@ -135,6 +163,21 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Updated with [clarifications](/microsoft-365/compliance/insider-risk-management-forensic-evidence) for forensic evidence about timelines in the user activity reports and the *all activities* capturing option.
 - Updated *obfuscation* examples for [insider risk management policies](/microsoft-365/compliance/insider-risk-management-policies).
 - Restructured documentation and moved [policy template guidance](/microsoft-365/compliance/insider-risk-management-policy-templates) into a new article.
+
+### Microsoft Priva
+
+- Two additional roles are now permitted to start a [Priva trial](/privacy/priva/priva-trial): Compliance Admin and Info Protection Admin.
+- There are new recommended alert settings (**in preview**) in [Privacy Risk Management policies](/privacy/priva/risk-management-policies#alert-frequency-and-thresholds) that allow users to choose more actionable and relevant alerts to reduce noise and alert fatigue.
+- There are new Compliance Manager improvement actions related to Priva (in preview); see [these instructions](/privacy/priva/priva-overview#microsoft-purview-compliance-manager) for how to access Compliance Manager and how to see the actions.
+- Updates for [creating a subject rights request](/privacy/priva/subject-rights-requests-create):
+    - During the [custom setup process](/privacy/priva/subject-rights-requests-create#custom-setup-guided-process-to-choose-all-settings), it's now optional to enter the data subject's name. A new flyout pane lets you add more identifiers.
+    - When refining your search, a new [Conditions](/privacy/priva/subject-rights-requests-create#conditions) flyout pane appears during search refinement lets users set multiple search conditions at once.
+- Update to clarify that a subject rights request will automatically pause at the [data estimate stage](/privacy/priva/subject-rights-requests-data-retrieval) if over 10K items or 100 GB of data are likekly to be retrieved.
+- Updates for [reviewing data and collaborating on subject rights requests](/privacy/priva/subject-rights-requests-data-review):
+    - There are new filtering options when reviewing data, including keywords supporting multiple words and wildcard.
+    - The "Plain text" view in the content review area now highlights all the data subject identifiers provided. 
+    - Clarifications that the search function in the annotate view can jump to search results within the view. 
+    - Individual collaborators can now be removed from dedicated Teams channel
 
 ### Sensitivity labels
 

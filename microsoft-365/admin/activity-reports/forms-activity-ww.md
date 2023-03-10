@@ -32,7 +32,7 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
 For example, you can understand the activity of every user licensed to use Microsoft Forms by looking at their interaction with forms. It also helps you to understand the level of collaboration going on by looking at the number of forms created and forms the user responded to.
 
 > [!NOTE]
-> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](https://learn.microsoft.com/microsoft-365/admin/misc/experience-insights-dashboard).
+> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
   
 ## How to get to the Forms activity report
 

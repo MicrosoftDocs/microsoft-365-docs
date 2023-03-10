@@ -168,7 +168,7 @@ Quickly see how Defender for Business works by trying a tutorial.
 
 Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to use the simulation file and what to watch for in the Microsoft 365 Defender portal.
 
->[!NOTE]
+> [!NOTE]
 > This tutorial requires Microsoft Word to be installed on your test device.
 
 To access the tutorial, do the following:

@@ -33,7 +33,7 @@ For example, you can understand the activity of each user licensed to use Micros
 > Shared computer activations are not included in this report.
 
 > [!NOTE] 
-> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](https://learn.microsoft.com/microsoft-365/admin/misc/experience-insights-dashboard).
+> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
 
 ## How to get to the Microsoft 365 Apps usage report
 

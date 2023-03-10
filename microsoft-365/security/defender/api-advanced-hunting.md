@@ -65,7 +65,7 @@ Permission type | Permission | Permission display name
 Application | AdvancedHunting.Read.All| Run advanced queries
 Delegated (work or school account) | AdvancedHunting.Read | Run advanced queries
 
->[!Note]
+> [!NOTE]
 > When obtaining a token using user credentials:
 >
 >- The user needs to have the 'View Data' role.

@@ -30,7 +30,7 @@ description: "Get the Yammer Activity report and know more about the number of u
 As Microsoft 365 admin, the Reports dashboard shows you data on the usage of the products within your organization. Check out [activity reports in the admin center](activity-reports.md). With the **Yammer Activity report**, you can understand the level of engagement of your organization with Yammer by looking at the number of unique users using Yammer to post, like or read a message and the amount of activity generated across the organization.
 
 > [!NOTE]
-> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](https://learn.microsoft.com/microsoft-365/admin/misc/experience-insights-dashboard).
+> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
  
 ## How do I get to the Yammer activity report?
 
