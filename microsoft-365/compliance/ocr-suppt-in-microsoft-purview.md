@@ -27,13 +27,12 @@ Once the OCR settings are configured, your existing data loss protection (DLP), 
 
 OCR scans are supported in the following areas:
 
-| Preview supports OCR in | Preview does **not** support OCR in |
+| Preview supports OCR in: | Preview does *not* support OCR in: |
 |-------------------------------|--------------------|
-| Data loss prevention          | Communication compliance|
-| Insider Risk | eDiscovery <!-- True? --> |
-| JIT <!-- what is this? --> |  |
-| MIP
- <!-- what is this? --> |  |
+| Auto-labeling | Communications compliance |
+| Data loss prevention          |Just-in-time protection|
+| Digital lifecycle management  | eDiscovery <!-- True? --> |
+| Insider risk management|  |
 
 ## Where is OCR scanning supported?
 
@@ -60,9 +59,32 @@ This new functionality supports scanning images in the following file types:
 
 OCR scanning is an optional feature in Microsoft Purview. When you enable optical character recognition (OCR) data classifiers, such as sensitive information types and trainable classifiers, can detect characters that are in images.
 
-OCR is first enabled at the tenant level, and then you select which services you want to enable it for. For this preview, image scanning is available for stand-alone images in Exchange Online, Teams, SharePoint Online, OneDrive for business and Windows endpoint devices. 
+OCR is first enabled at the tenant level, and then you select which services you want to enable it for. For this preview, image scanning is available for stand-alone images in Exchange Online, SharePoint Online, OneDrive for business, Teams, and Windows endpoint devices.
 
-During the preview, this feature is available for free. When the preview is over, to continue to use OCR scans, your organization must have an Azure account that includes this feature. For information on creating an account, refer to [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/microsoft-365/syntex/syntex-azure-billing)
+During the preview, this feature is available for free. When the preview is over, to continue to use OCR scans, your organization must have a pay-as-you-go Microsoft Azure subscription in the same tenant where you want to scan images. For information about how to create an Azure subscription, see [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions))
+
+### Set up OCR Billing in Azure 
+<!-- this is largely the same as /syntex/syntex-azure-billing#set-up-microsoft-syntex-billing-in-azure, just with tweaks to change "Microsoft Syntex" to "OCR". -->
+When you set up OCR billing in Azure, events will be sent to the Azure meter in your account and you will be able to view the images scanned.
+
+- You must have Global Administrator or SharePoint Administrator permissions to be able to access the Microsoft 365 admin center and set up Syntex.
+- You must have owner or contributor rights to the Azure subscription that you want to use for OCR billing.
+
+To configure OCR billing:
+
+1. In the Microsoft 365 admin center, select [Setup](https://go.microsoft.com/fwlink/p/?linkid=2171997), and then view the **Files and content** section.
+
+2. In the **Files and content** section, select *Use content AI with Microsoft Syntex* <!-- is this still true? Shouldn't they choose something that says OCR? -->.
+
+3. On the **OCR** page, select **Configure billing** to walk through the setup process.
+
+4. On the **Enter your Azure subscription** panel, choose an Azure subscription from the **Azure subscription** dropdown.
+
+5. Choose a resource group and region. (The region determines where your tenant ID and where usage information,, such as site names, will be stored.)
+
+6. Select **Save**.
+
+<!-- Do we have instructions for how to monitor OCR usage? Or will that come later? -->
 
 ## Limits
 
@@ -72,7 +94,7 @@ During the preview, this feature is available for free. When the preview is over
 - The preview only supports images with machine-typed text
 - Only images uploaded after OCR has been enabled are scanned.
 
-## Enable OCR scanning
+## Configure OCR scanning
 
 1. In the Microsoft Purview compliance portal, go to **Settings**.
 2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
@@ -88,6 +110,11 @@ During the preview, this feature is available for free. When the preview is over
 
 ## See also
 
+- [Apply a sensitivity label to content automatically](/compliance/apply-sensitivity-label-automatically)
 - [Learn about data loss prevention](/compliance/dlp-learn-about-dlp)
 - [Plan for data loss prevention](/compliance/dlp-overview-plan-for-dlp)
 - [Design a data loss prevention policy](/compliance/dlp-policy-design)
+- [Learn about insider risk management](/compliance/insider-risk-management)
+- [Learn about data lifecycle management](/compliance/data-lifecycle-management)
+- [Plan for insider risk management](/compliance/insider-risk-management-plan)
+- [Create and manage insider risk policies](/compliance/insider-risk-management-policies)
