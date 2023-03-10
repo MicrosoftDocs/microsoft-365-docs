@@ -23,13 +23,13 @@ description: How to implement this preview of optical character recognition (OCR
 
 Microsoft Purview can scan for sensitive content in documents to help protect those documents from inappropriate exposure. Historically, scanning for sensitive information has been limited to text in various types of documents. In this preview, we've added support for optical character recognition (OCR) scanning to detect sensitive content in stand-alone images. With OCR scans enabled, you can apply policies to protect the information in those images.
 
-Once the OCR settings are configured, your existing data loss protection (DLP), auto-labeling, and insider risk policies are applied to both images and documents. For example, if you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT), Microsoft Purview not only scans for credit card numbers in text at those locations, it also scans images at those locations for credit card numbers.
+Once the OCR settings are configured, your existing data loss protection (DLP), autolabeling, and insider risk policies are applied to both images and documents. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview not only scans for credit card numbers in text at those locations, it also scans images at those locations for credit card numbers.
 
 OCR scans are supported in the following areas:
 
-| Preview supports OCR in: | Preview does *not* support OCR in: |
+| Preview supports OCR in: | Preview doesn't* support OCR in: |
 |-------------------------------|--------------------|
-| Auto-labeling | Communications compliance |
+| Autolabeling | Communications compliance |
 | Data loss prevention          |Just-in-time protection|
 | Digital lifecycle management  | eDiscovery <!-- True? --> |
 | Insider risk management|  |
@@ -61,11 +61,11 @@ OCR scanning is an optional feature in Microsoft Purview. When you enable optica
 
 OCR is first enabled at the tenant level, and then you select which services you want to enable it for. For this preview, image scanning is available for stand-alone images in Exchange Online, SharePoint Online, OneDrive for business, Teams, and Windows endpoint devices.
 
-During the preview, this feature is available for free. When the preview is over, to continue to use OCR scans, your organization must have a pay-as-you-go Microsoft Azure subscription in the same tenant where you want to scan images. For information about how to create an Azure subscription, see [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions))
+During the preview, this feature is available for free. When the preview is over, to continue to use OCR scans, your organization must have a pay-as-you-go Microsoft Azure subscription. For information about how to create an Azure subscription, see [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions))
 
 ### Set up OCR Billing in Azure 
 <!-- this is largely the same as /syntex/syntex-azure-billing#set-up-microsoft-syntex-billing-in-azure, just with tweaks to change "Microsoft Syntex" to "OCR". -->
-When you set up OCR billing in Azure, events will be sent to the Azure meter in your account and you will be able to view the images scanned.
+ Once you set up OCR billing in Azure, events are sent to the Azure meter in your account, and you'll be able to view the images scanned.
 
 - You must have Global Administrator or SharePoint Administrator permissions to be able to access the Microsoft 365 admin center and set up Syntex.
 - You must have owner or contributor rights to the Azure subscription that you want to use for OCR billing.
@@ -74,13 +74,13 @@ To configure OCR billing:
 
 1. In the Microsoft 365 admin center, select [Setup](https://go.microsoft.com/fwlink/p/?linkid=2171997), and then view the **Files and content** section.
 
-2. In the **Files and content** section, select *Use content AI with Microsoft Syntex* <!-- is this still true? Shouldn't they choose something that says OCR? -->.
+2. In the **Files and content** section, select *Use content AI with Microsoft Syntex.
 
 3. On the **OCR** page, select **Configure billing** to walk through the setup process.
 
 4. On the **Enter your Azure subscription** panel, choose an Azure subscription from the **Azure subscription** dropdown.
 
-5. Choose a resource group and region. (The region determines where your tenant ID and where usage information,, such as site names, will be stored.)
+5. Choose a resource group and region. (The region determines where your tenant ID and where usage information, such as site names, will be stored.)
 
 6. Select **Save**.
 
