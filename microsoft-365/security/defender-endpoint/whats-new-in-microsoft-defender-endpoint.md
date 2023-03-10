@@ -100,7 +100,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
    - [KB5016690](https://support.microsoft.com/topic/august-23-2022-kb5016690-os-build-17763-3346-preview-b81d1ac5-75c7-42c1-b638-f13aa4242f42)
 
    > [!NOTE]
-   > This integration doesn’t currently support the use of custom scripts to gain visibility into extra signals.
+   > This integration doesn't currently support the use of custom scripts to gain visibility into extra signals.
 
 
 ## October 2022
