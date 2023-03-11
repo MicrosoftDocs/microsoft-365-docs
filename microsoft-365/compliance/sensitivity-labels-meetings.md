@@ -43,7 +43,7 @@ Meeting settings that you can apply with a sensitivity label
 - Encryption for meeting video and audio
 - Automatically record
 - Video watermark for screen sharing and camera streams
-- Prevent or allow chat
+- Prevent copy of meeting chat
 - Prevent or allow copying chat contents to the clipboard
 
 Users can apply sensitivity labels to meeting invites when they use Outlook or Teams:
@@ -131,14 +131,14 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
     - Encryption for meeting video and audio
     - Automatically record
     - Video watermark for screen sharing and camera streams
-    - Prevent or allow chat
+    - Prevent copy of meeting chat
 
 - The following meeting options won't take effect for a Meet Now meeting:
     - Who can record
     - Encryption for meeting video and audio
     - Automatically record
     - Video watermark for screen sharing and camera streams
-    - Prevent or allow chat
+    - Prevent copy of meeting chat
 
 - Sensitivity labels can't be applied to live events and webinars.
 
