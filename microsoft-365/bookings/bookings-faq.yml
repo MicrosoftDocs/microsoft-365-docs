@@ -246,7 +246,7 @@ sections:
       - question: |
           Is it possible to share only one service on the Self-service page at a time?
         answer: |
-          Yes, you can either create separate Bookings calendars for each service, or you can go to the Services tab, edit a service, and at the top of the page you'll see an option to share a URL only for that specific service.
+          Yes, you can either create separate Bookings calendars for each service, or you can go to the Services tab,  and select Service details and you'll see a URL only for that specific service under Service booking page. You can share the URL which will be for that specific service.
 
       - question: |
           What options are available for embedding a consent form or disclosure for those booking an appointment?
