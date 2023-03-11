@@ -27,7 +27,3 @@ For example, you can create a rule to move files tagged with a specific customer
 
 > [!NOTE]
 > This feature is available only for users who are licensed for Syntex.
-
-## See also
-
-[Create a rule to move or copy a file from one document library to another](content-processing-create-rules.md)
