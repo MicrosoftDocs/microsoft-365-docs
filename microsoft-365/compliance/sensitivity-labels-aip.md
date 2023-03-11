@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/09/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -94,11 +94,7 @@ To keep informed when new labeling capabilities become available for built-in la
 
 ## How to disable the AIP add-in to use built-in labeling for Office apps
 
-For the latest Office apps, the AIP add-in is disabled by default, so there's nothing for you to configure for these versions:
-
-- **Current Channel**: version 2302+ 
-- **Monthly Enterprise Channel**: Not before version 2302+ (not yet released) 
-- **Semi-Annual Channel**: Not before version 2302+ (not yet released)
+Starting with **version 2302** for all Office deployment channels, the AIP add-in is disabled by default, so there's nothing for you to configure for these versions:
 
 If you have a version that disabled the AIP add-in by default, and you need to use the AIP add-in rather than built-in labeling, you must [configure a new setting to override the default](#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in).
 
@@ -111,7 +107,7 @@ Remember, when the AIP add-in is disabled, you can still use the AIP client to e
 
 ### How to configure older versions of Office to disable the AIP add-in
 
-For Office apps older than the versions listed in the previous section, to prevent the AIP add-in from loading in Office apps, use the Group Policy setting **List of managed add-ins** as documented in [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
+For Office apps older than version 2302, to prevent the AIP add-in from loading in Office apps, use the Group Policy setting **List of managed add-ins** as documented in [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
 For your Windows Office apps that support built-in labeling, use the configuration for Microsoft Word 2016, Excel 2016, PowerPoint 2016, and Outlook 2016, specify the following programmatic identifiers (ProgID) for the AIP client, and set the option to **0: The add-in is always disabled (blocked)**
 
