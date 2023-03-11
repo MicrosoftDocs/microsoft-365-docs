@@ -336,12 +336,17 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 > 
 > Until this capability is supported on all the platforms used by your users, they will have an inconsistent labeling experience. For example, Word on one platform doesn't display a label that they see on a different platform.
 
-This configuration is an extension to the **Items** scope, when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) in the Microsoft Purview compliance center. When you define the scope for the label for items, you can further refine the scope to just files or emails, and to [meetings](sensitivity-labels-meetings.md):
+This configuration is an extension to the **Items** scope, when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) in the Microsoft Purview compliance portal. When you define the scope for the label for items, you can further refine the scope to just files or emails, and to [meetings](sensitivity-labels-meetings.md):
 
 - To scope labels to just Word, Excel, and PowerPoint: Make sure the option for **Files** is selected, and not the option for **Emails**.  
 - To scope labels to just Outlook, make sure the option for **Emails** is selected, and not the option for **Files**.
 
-Make sure both options are selected if you don't want to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook.
+> [!CAUTION]
+> Although you can edit an existing label and remove the **Files** scope, we don't recommend you do this because existing configurations might no longer work as expected. For example, a SharePoint site admin wouldn't understand why a sensitivity label that they selected as a default label for a document library no longer applies the label.
+> 
+> Instead, if you want a sensitivity label just for emails, create a new label with just the **Emails** scope rather than edit an existing label.
+
+Make sure both options are selected if you don't need to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook.
 
 > [!NOTE]
 > The **Files** option can include other items that support this scoping option, such as Power BI files. Check the application's documentation to verify, and remember to test all labeling apps and services used by your organization.
