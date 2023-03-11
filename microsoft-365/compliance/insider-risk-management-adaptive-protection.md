@@ -154,7 +154,7 @@ Complete the following steps to configure Adaptive Protection using the custom s
 
 #### Step 1: Create insider risk management policy
 
-Risk levels are assigned to users when a policy assigned in Adaptive Protection either detects user activity or generates alerts that match the risk level conditions you define in the next step. If you don't want to use an existing insider risk management policy (selected in Step 2), you must create a new insider risk management policy. Your insider risk management policy for Adaptive Protection should include:
+Risk levels are assigned to users when a policy assigned in Adaptive Protection either detects user activity or generates alerts that match the risk level conditions you define in the next step. Your insider risk management policy for Adaptive Protection should include:
 
 - **Users whose activity you want to detect**. This can be all users and groups in your organization or just a subset for specific risk mitigation scenarios or testing purposes.
 - **Activities you consider risky and custom thresholds that influence an activity's risk score**. Risky activities might include emailing people outside your organization or copying files to USB devices.
