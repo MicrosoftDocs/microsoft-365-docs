@@ -162,7 +162,7 @@ To work with the DLP alert management dashboard:
 
 ### Other matched conditions (preview)
 
- Microsoft Purview support showing additional details about any other matched conditions in a DLP event. This information will show up in:
+Microsoft Purview support showing additional details about any other matched conditions in a DLP event. This information will show up in:
 
 - DLP Alerts console
 - [Activity explorer](data-classification-activity-explorer.md#get-started-with-activity-explorer)
@@ -170,7 +170,13 @@ To work with the DLP alert management dashboard:
 
 In the **Events** tab open **Details** to see **Other matched conditions**.
 
-Other matched events infomration is supported for these conditions
+#### Prerequisites
+
+- Matched conditions data is available for valid E3 and E5 license holders
+- Enable [Auditing](audit-log-enable-disable.md#turn-auditing-on-or-off).
+- Enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
+
+Other matched events information is supported for these conditions
 
 |Condition|Exchange|Sharepoint </br>OneDrive for Business|Teams|Endpoint|
 |-----|-----|-----|-----|-----|
