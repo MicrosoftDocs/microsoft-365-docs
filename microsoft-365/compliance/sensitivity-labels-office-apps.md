@@ -341,10 +341,10 @@ This configuration is an extension to the **Items** scope, when you [create or e
 - To scope labels to just Word, Excel, and PowerPoint: Make sure the option for **Files** is selected, and not the option for **Emails**.  
 - To scope labels to just Outlook, make sure the option for **Emails** is selected, and not the option for **Files**.
 
-> [!CAUTION]
+> [!WARNING]
 > Although you can edit an existing label and remove the **Files** scope, we don't recommend you do this because existing configurations might no longer work as expected. For example, a SharePoint site admin wouldn't understand why a sensitivity label that they selected as a default label for a document library no longer applies the label.
 > 
-> Instead, if you want a sensitivity label just for emails, create a new label with just the **Emails** scope rather than edit an existing label.
+> If you want a sensitivity label just for emails, create a new label with just the **Emails** scope rather than edit an existing label.
 
 Make sure both options are selected if you don't need to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook.
 
