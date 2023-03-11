@@ -159,3 +159,60 @@ To work with the DLP alert management dashboard:
 
     -   To see the history of workflow management, choose **Management log**.
     -   After you take the required action for the alert, set the status of the alert to **Resolved**.
+
+### Other matched conditions (preview)
+
+ Microsoft Purview support showing additional details about any other matched conditions in a DLP event. This information will show up in:
+
+- DLP Alerts console
+- [Activity explorer](data-classification-activity-explorer.md#get-started-with-activity-explorer)
+- [Microsoft Defender for Business portal](../security/defender-business/mdb-view-manage-incidents.md#view-and-manage-incidents-in-microsoft-defender-for-business)
+
+In the **Events** tab open **Details** to see **Other matched conditions**.
+
+Other matched events infomration is supported for these conditions
+
+|Condition|Exchange|Sharepoint </br>OneDrive for Business|Teams|Endpoint|
+|-----|-----|-----|-----|-----|
+|Sender is|Yes|No|Yes|No|
+|Sender domain is|Yes|No|Yes|No|
+|Sender address contains words|Yes|No|No|No|
+|Sender address matches patterns|Yes|No|No|No|
+|Sender is a member of|Yes|No|No|No|
+|Sender IP address is|Yes|No|No|No|
+|Has sender overriden the policy tip|Yes|No|No|No|
+|SenderAdAttribute Contains words|Yes|No|No|No|
+|SenderAdAttribute Matches patterns|Yes|No|No|No|
+|Recipient is|Yes|No|Yes|No|
+|Recipient domain is|Yes|No|Yes|No|
+|Recipient address contains words|Yes|No|No|No|
+|Recipient address matches patterns|Yes|No|No|No|
+|Recipient is a member of|Yes|No|No|No|
+|RecipientAdAttribute Contains words |Yes|No|No|No|
+|RecipientAdAttribute Matches patterns|Yes|No|No|No|
+|Document created by (user/group)|Yes|No|No|No|
+|Document is password protected|Yes|No|No|Yes|
+|Document could not be scanned|Yes|No|No|No|
+|Document did not complete scanning|Yes|No|No|No|
+|Document name contains words|Yes|Yes|No|No|
+|Document name matches patterns|Yes|No|No|No|
+|Document property is|Yes|Yes|No|No|
+|Document size over|Yes|Yes|No|No|
+|Document content contains words|Yes|No|No|No|
+|Document content matches patterns|Yes|Yes|No|No|
+|Document type is|Yes|No|No|Yes|
+|Document extension is|Yes|Yes|No|Yes|
+|Content contains|Yes|Yes|Yes|Yes|
+|Content is shared from M365|Yes|Yes|Yes|No|
+|Content is received from|Yes|No|No|No|
+|Content character set contains words|Yes|No|No|No|
+|Subject contains words|Yes|No|No|No|
+|Subject matches patterns|Yes|No|No|No|
+|Subject or body contains words|Yes|No|No|No|
+|Subject or body matches patterns|Yes|No|No|No|
+|Header contains words|Yes|No|No|No|
+|Header matches patterns|Yes|No|No|No|
+|Message size over|Yes|No|No|No|
+|Message type is|Yes|No|No|No|
+|Message importance is|Yes|No|No|No|
+|The user accesses a sensitive site in Edge|No|No|No|Yes|
