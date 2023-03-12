@@ -30,28 +30,33 @@ ms.date: 03/7/2023
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-Mapping your organization’s external attack surface is a key part of security posture management as threat actors continuously scan the web to detect exposed devices they can exploit to gain a foothold in internal corporate networks. Internet facing devices can serve as an easy entry point to an organization’s environment and identifying these devices is a top priority for many security teams.
+As threat actors continuously scan the web to detect exposed devices they can exploit to gain a foothold in internal corporate networks, mapping your organization’s external attack surface is a key part of security posture management. Internet facing devices can serve as an easy entry point to an organization’s environment making identifying these devices a top priority for many security teams.
 
 Microsoft Defender for Endpoint automatically identifies and flags onboarded, exposed, internet facing devices in the [Microsoft 365 Defender portal](https://security.microsoft.com/). This critical information provides better visibility into the organizations external attack surface and deep insights into asset exploitability.
 
 > [!NOTE]
 > The ability to identify internet facing is only available for Windows devices onboarded to Microsoft Defender for Endpoint.
 
-## How we discover and flag internet facing devices
+## How we discover internet facing devices
 
-Device network connections, captured as part of Defender for Endpoint signals, help to identify external incoming connections reach internal devices, indicating where a device is internet facing.
+We determine whether a device is internet facing is by checking its IP range.
 
-We determine which subnets are part of the corporate network and protected by Defender for Endpoint. By identifying external IPs that are communicating with internal devices, we can determine whether a connection captured by Microsoft Defender for Endpoint is internal, or external.
+To identify the external IPs that are communicating with internal devices, we need to determine which subnets are part of the corporate network. We can see subnets for machines that are protected by Defender for Endpoint. This information helps to determine whether a connection captured by Microsoft Defender for Endpoint is internal, or external.
 
-Devices will be flagged as internet facing if they were successfully connected via TCP or reachable via UDP.
+Device network connections, captured as part of Defender for Endpoint signals, help to identify external incoming connections that reach internal devices, indicating which devices are internet facing.
 
-The internet-facing tag will be applied to identified devices that appear in the [device inventory](https://security.microsoft.com/machines/). The use of the tag helps support the mapping of your network and they can be used as a filter in the Device inventory view, or to group devices.
+Devices will be flagged as internet facing if they were successfully connected to through TCP or host reachable by UDP.
 
-## What devices get flagged
-
-Or devices that will are will be flagged like make it simpler. Devices will be flagged flagged as Internet facing if they were identified as if they were successfully connected via TCP or reachable via UDP. Nimrod does that. Answers like does that covers it.
+> [!NOTE]
+>Internet facing signals are constantly processed:
+>
+> - The scan to discover internet facing devices runs every 24 hours.
+> - The internet facing tag is updated on device change or every 12 hours.
+> - If no new signals are received on the internet facing device for 48 hours, the tag will be removed.
 
 ## View internet facing devices
+
+The internet-facing tag will be applied to identified devices that appear in the [device inventory](https://security.microsoft.com/machines/). The use of the tag helps support the mapping of your network and they can be used as a filter in the Device inventory view, or to group devices.
 
 For each onboarded device, identified as internet facing, you'll see the internet facing tag in the **Tags** column.
 
@@ -59,11 +64,12 @@ For each onboarded device, identified as internet facing, you'll see the interne
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-tag.png" alt-text="Screenshot of the Browser extensions page" lightbox="../../media/defender-vulnerability-management/internet-facing-tag.png":::
 
-Hover over the tag to see the reason for the tag was applied. This will be either: 
+Hover over the tag to see the reason for the tag was applied. The tag was applied because:
 
+- **This device was detected by an external scan**: An external scan identified the device as internet facing. For devices identified by the external scanner, the tag is applied straight away.
+- **This device was detected by external network connection** - Defender for Endpoint network signals processing identified the device as internet facing. Extra processing wil take place for these devices before they are tagged as internet facing. 
 
-
-At the top of the page, you can view the number of devices that have been identified as internet facing and are potentially less secure and 
+At the top of the page, you can view a counter displaying the number of devices that have been identified as internet facing and are potentially less secure.
 
 ## Use the filter to focus on internet facing devices
 
@@ -76,6 +82,27 @@ You can use filters to only view internet facing devices. This can help you focu
 Select an internet facing device to open its flyout pane, where you can learn more about the device:
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-details.png" alt-text="Screenshot of the Browser extensions page" lightbox="../../media/defender-vulnerability-management/internet-facing-details.png":::
+
+The information in this pane helps you understand how the device was identified as an internet facing device along with details of the port and protocol for both the internal and external devices. In the above example, we can tell that this device was successfully connected to as it was through TCP.
+
+For UDP, devices will be flagged as internet facing if they are host reachable via UDP.
+
+## Use advanced hunting
+
+You can use advanced hunting queries to gain visibility into internet facing devices in your organization. Run the following query:
+
+```kusto
+// Find all devices that are internet facing, replace ComponentVersion with what you are looking for
+DeviceInfo 
+| where IsInternetFacing == true 
+| summarize arg_max(Timestamp, *) by DeviceId 
+```
+
+This will return the internet facing devices with their aggregated evidence in the “AdditionalFields” column.
+
+- **InternetFacingLastSeen** – last time the device was updated as internet facing.
+- **InternetFacingReason** – the detection method used to identify internet facing.
+- **InternetFacingPublicScannedIp** – what the external address is, in case NAT was detected.
 
 ## See also
 
