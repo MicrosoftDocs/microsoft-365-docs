@@ -179,7 +179,7 @@ Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability
 ### 2.3 URL
 
 ```http
-GET /api/machines/Api/Machines/SoftwareInventoryNonCpeExport
+GET /api/machines/SoftwareInventoryNonCpeExport
 ```
 
 ### Parameters
