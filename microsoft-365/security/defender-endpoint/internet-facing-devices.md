@@ -35,7 +35,7 @@ As threat actors continuously scan the web to detect exposed devices they can ex
 Microsoft Defender for Endpoint automatically identifies and flags onboarded, exposed, internet facing devices in the [Microsoft 365 Defender portal](https://security.microsoft.com/). This critical information provides better visibility into the organizations external attack surface and deep insights into asset exploitability.
 
 > [!NOTE]
-> The ability to identify internet facing is only available for Windows devices onboarded to Microsoft Defender for Endpoint.
+> Only Windows devices onboarded to Microsoft Defender for Endpoint can be identified as internet facing.
 
 ## How we discover internet facing devices
 
@@ -56,18 +56,16 @@ Devices will be flagged as internet facing if they were successfully connected t
 
 ## View internet facing devices
 
-The internet-facing tag will be applied to identified devices that appear in the [device inventory](https://security.microsoft.com/machines/). The use of the tag helps support the mapping of your network and they can be used as a filter in the Device inventory view, or to group devices.
-
-For each onboarded device, identified as internet facing, you'll see the internet facing tag in the **Tags** column.
+For each onboarded device identified as internet facing, you'll see the internet facing tag in the **Tags** column in the [device inventory](https://security.microsoft.com/machines/). To view internet facing devices:
 
 1. Go to **Assets** \> **Device inventory** in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-tag.png" alt-text="Screenshot of the Browser extensions page" lightbox="../../media/defender-vulnerability-management/internet-facing-tag.png":::
 
-Hover over the tag to see the reason for the tag was applied. The tag was applied because:
+Hover over the tag to see why the tag was applied:
 
 - **This device was detected by an external scan**: An external scan identified the device as internet facing. For devices identified by the external scanner, the tag is applied straight away.
-- **This device was detected by external network connection** - Defender for Endpoint network signals processing identified the device as internet facing. Extra processing wil take place for these devices before they are tagged as internet facing. 
+- **This device was detected by external network connection** - Defender for Endpoint network signals processing identified the device as internet facing. Extra processing wil take place to verify these devices are internet facing before the tag is applied.
 
 At the top of the page, you can view a counter displaying the number of devices that have been identified as internet facing and are potentially less secure.
 
@@ -83,13 +81,13 @@ Select an internet facing device to open its flyout pane, where you can learn mo
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-details.png" alt-text="Screenshot of the Browser extensions page" lightbox="../../media/defender-vulnerability-management/internet-facing-details.png":::
 
-The information in this pane helps you understand how the device was identified as an internet facing device along with details of the port and protocol for both the internal and external devices. In the above example, we can tell that this device was successfully connected to as it was through TCP.
+The information in this pane helps you understand how the device was identified as an internet facing device along with details of the port and protocol for both the internal and external device. In the above example, we can tell that this device was successfully connected to as it was through TCP.
 
 For UDP, devices will be flagged as internet facing if they are host reachable via UDP.
 
 ## Use advanced hunting
 
-You can use advanced hunting queries to gain visibility into internet facing devices in your organization. Run the following query:
+You can use advanced hunting queries to gain visibility into internet facing devices in your organization, for example:
 
 ```kusto
 // Find all devices that are internet facing, replace ComponentVersion with what you are looking for
