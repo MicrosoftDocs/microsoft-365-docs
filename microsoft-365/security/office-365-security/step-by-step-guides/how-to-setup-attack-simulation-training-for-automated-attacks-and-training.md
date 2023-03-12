@@ -1,25 +1,26 @@
 ---
-title: How to setup automated attacks and training within Attack simulation training 
+title: How to setup automated attacks and training within Attack simulation training
 description: The steps to automate Attack Simulation training and send a payload to target users. By following this guide, you will learn to create automated attack flows with specific techniques and payloads.
-search.product: 
+search.product:
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-guidance-templates
 - m365-security
 - tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # How to setup automated attacks and training within Attack simulation training

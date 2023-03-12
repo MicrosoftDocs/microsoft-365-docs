@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 10/26/2022
+ms.date: 01/18/2023
 ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
@@ -25,17 +25,19 @@ search.appverid:
 description: "Learn how security defaults can help protect your organization from identity-related attacks by providing preconfigured security settings for Microsoft 365 Business Premium."
 ---
 
-# Security defaults and multi-factor authentication
+# Multi-factor authentication
 
-Microsoft 365 Business Premium was designed to help protect your company's user accounts with preconfigured security settings. These settings include enabling multi-factor authentication (MFA) for all your admins and user accounts. For most organizations, security defaults offer a good level of sign-in security. For organizations who must meet more stringent requirements, Conditional Access can be used.
+Multi-factor authentication (MFA) is a very important first step in securing your organization. Microsoft 365 Business Premium includes the option to use security defaults or Conditional Access policies to turn on MFA for your admins and user accounts. For most organizations, security defaults offer a good level of sign-in security. But if your organization must meet more stringent requirements, you can use Conditional Access policies instead.
 
 This article provides information about:
 
-- **[Security defaults](#security-defaults)** (suitable for most businesses)
-- **[Conditional Access](#conditional-access)** (for businesses with more stringent security requirements)
+- **Security defaults** (suitable for most businesses)
+- **Conditional Access** (for businesses with more stringent security requirements)
 
 > [!NOTE]
 > You can use *either* security defaults *or* Conditional Access policies, but you can't use both at the same time.
+
+# [Security defaults](#tab/secdefaults)
 
 ## Security defaults
 
@@ -49,28 +51,30 @@ Security defaults were designed to help protect your company's user accounts fro
 MFA is an important first step in securing your company, and security defaults make enabling MFA easy to implement. If your subscription was created on or after October 22, 2019, security defaults might have been automatically enabled for you&mdash;you should check your settings to confirm.
 
 > [!TIP]
-> For more information about security defaults and the policies they enforce, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+> For more information about security defaults and the policies they enforce, see [Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ### To enable security defaults (or confirm they're already enabled)
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> with security administrator, Conditional Access administrator, or Global admin credentials.
+> [!IMPORTANT]
+> You must be a Security Administrator, Conditional Access administrator, or Global Administrator to perform this task.
 
-2. In the left pane, select **Show All,** and then under **Admin centers**, select **Azure Active Directory**.
+1. Go to the Azure portal ([https://portal.azure.com/](https://portal.azure.com/)) and sign in.
 
-3. In the left pane of the **Azure Active Directory admin center,** select **Azure Active Directory**.
+2. Under **Manage Azure Active Directory**, select **View**.
 
-4. From the left menu of the Dashboard, in the **Manage** section, select **Properties**.
+   :::image type="content" source="../security/defender-business/media/mdb-manage-azuread.png" alt-text="Screenshot showing the VIew button under Manage Azure Active Directory." lightbox="../security/defender-business/media/mdb-manage-azuread.png":::
 
-    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Screenshot of the Azure Active Directory admin center showing the location of the Properties menu item.":::
+3. In the navigation pane, select **Properties**, and then select **Manage security defaults**.
 
-5. At the bottom of the **Properties** page, select **Manage Security defaults**.
+   :::image type="content" source="../security/defender-business/media/mdb-azuread-properties.png" alt-text="Screenshot showing Properties and Manage Security Defaults for Azure Active Directory." lightbox="../security/defender-business/media/mdb-azuread-properties.png":::
 
-6. In the right pane, you'll see the **Enable Security defaults** setting. If **Yes** is selected, then security defaults are already enabled and no further action is required. If security defaults are not currently enabled, then select **Yes** to enable them, and then select **Save**.
+4. On the right side of the screen, in the **Security defaults** pane, see whether security defaults are turned on (**Enabled**) or off (**Disabled**). To turn security defaults on, use the drop-down menu to select **Enabled**. 
+
+5. Save your changes.
+
+# [Conditional Access](#tab/condit)
 
 ## Conditional Access
-
-> [!NOTE]
-> If you've been using security defaults, you'll need to turn them off before using Conditional Access. You can use either security defaults or Conditional Access policies, but you can't use both at the same time.
 
 If your company or business has complex security requirements or you need more granular control over your security policies, then you should consider using Conditional Access instead of security defaults to achieve a similar or higher security posture.
 
@@ -95,6 +99,8 @@ To learn more about Conditional Access, see [What is Conditional Access?](/azure
 
 > [!NOTE]
 > If you have a plan or license that provides Conditional Access but haven't yet created any Conditional Access policies, you're welcome to use security defaults. However, you'll need to turn off security defaults before you can use Conditional Access policies.
+
+---
 
 ## Next objective
 

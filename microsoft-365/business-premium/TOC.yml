@@ -24,11 +24,11 @@
         href: m365bp-setup.md
       - name: Set up Microsoft 365 Business for Campaigns
         href: m365-campaigns-setup.md
-  - name: Bump up security protection
+  - name: Boost your security protection
     items: 
       - name: Overview
         href: m365bp-security-overview.md
-      - name: Turn on security defaults (MFA)
+      - name: Turn on MFA
         href: m365bp-conditional-access.md
       - name: Protect your admin accounts
         href: m365bp-protect-admin-accounts.md
@@ -72,7 +72,7 @@
     items:
       - name: Overview
         href: m365bp-protect-devices.md
-      - name: Upgrade to Windows 10 Pro (if needed)
+      - name: Upgrade to Windows 10 or 11 Pro (if needed)
         href: m365bp-upgrade-windows-10-pro.md    
       - name: Onboard enrolled devices and apply policies
         href: m365bp-onboard-devices-mdb.md

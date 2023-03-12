@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 02/14/2023
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -23,10 +23,12 @@ ms.custom: intro-overview
 
 # What is Microsoft Defender for Business?
 
-Defender for Business is a new endpoint security solution that was designed especially for the small- and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. 
+Defender for Business is an endpoint security solution that was designed especially for the small- and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. Defender for Business is available as a standalone subscription and is included in [Microsoft 365 Business Premium](../../business-premium/index.md).
 
-This article describes what's included in Defender for Business, with links to learn more about these features and capabilities.
+This article describes what's included in Defender for Business and provides links to learn more about these features and capabilities.
 
+> [!TIP]
+> To learn more about Microsoft 365 Business Premium, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md).
 
 ## Video: Enterprise-grade protection for small- and medium-sized businesses
 
@@ -74,3 +76,4 @@ With Defender for Business, you can help protect the devices and data your busin
 - [Try the interactive guide: Get started with Defender for Business](https://aka.ms/MDB-GetStartedGuide)
 - [Learn more about the simplified configuration process in Defender for Business](mdb-simplified-configuration.md)
 - [Find out how to get Defender for Business](get-defender-business.md)
+- [Get an overview of Microsoft 365 Business Premium](../../business-premium/index.md)

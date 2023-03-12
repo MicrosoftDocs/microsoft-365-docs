@@ -21,6 +21,7 @@ ms.custom:
 - seo-marvel-mar2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 2/7/2023
 ---
 
 # Email analysis in investigations for Microsoft Defender for Office 365

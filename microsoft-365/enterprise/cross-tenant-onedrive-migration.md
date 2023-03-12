@@ -3,6 +3,7 @@ title: Cross-tenant OneDrive migration overview
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
+ms.date: 10/10/2022
 recommendations: true
 audience: ITPro
 ms.topic: article

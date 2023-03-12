@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -111,7 +112,7 @@ On your hosting provider's website, add a new MX record. Make sure that the fiel
 
 Save the record, and then remove any other MX records.
 
-### Add CNAME records to connect other services (Teams, Exchange Online, AAD, MDM)
+### Add CNAME records to connect other services (Teams, Exchange Online, MDM)
 
 You'll get the information for the CNAME records from the admin center domain setup wizard.
 

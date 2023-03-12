@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 03/02/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -28,11 +28,15 @@ description: "France national ID card (CNI) sensitive information type entity de
 
 ## Format
 
-12 digits
+Twelve digits
+Twelve letters and digits
+Nine letters and digits
 
 ## Pattern
 
-12 digits
+Twelve digits
+Combination of twelve digits and letters
+Combination of nine digits and letters
 
 ## Checksum
 

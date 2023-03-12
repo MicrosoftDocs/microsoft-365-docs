@@ -91,8 +91,8 @@ To access and manage roles and permissions, without being a Global Administrator
 3. Select **Roles** under Microsoft 365 Defender.
 4. Select **Create custom role**.
 5. Enter the Role name and description.
-6. Select **Next** and choose the **Configuration** option.
-7. On the Configuration category flyout, choose **Select custom permissions** and under **Authorization** select either:
+6. Select **Next** and choose the **Authorization and settings** option.
+7. On the Authorization and settings category flyout, choose **Select custom permissions** and under **Authorization** select either:
     - Select all permissions - users will be able to create and manage roles and permissions.
     - Read-only - uses will be able to access and view roles and permissions in a read-only mode.
 

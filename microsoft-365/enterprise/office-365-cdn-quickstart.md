@@ -28,6 +28,9 @@ You can use the built-in **Office 365 Content Delivery Network (CDN)** to host s
 
 For more detailed information guidance see [Use the Office 365 Content Delivery Network (CDN) with SharePoint Online](use-microsoft-365-cdn-with-spo.md).
 
+> [!CAUTION]
+> Private CDN configuration is in the process of deprecation. You are no longer required to configure a private CDN. Image file types are served through a private CDN out of the box. However, if a private CDN is in use for other file types, like JS or CSS, we recommend using a public CDN for better performance. Going forward, non-image file types will not be supported through private CDNs.
+
 >[!NOTE]
 >The Office 365 CDN is only available to tenants in the production (worldwide) cloud. Tenants in the US Government, China and Germany clouds do not currently support the Office 365 CDN.
 

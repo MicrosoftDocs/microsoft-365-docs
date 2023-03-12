@@ -76,7 +76,7 @@ Permissions for managing the organization's security posture and performing thre
 |Application handling|Manage|Manage vulnerable applications and software, including blocking and unblocking them in threat and vulnerability management.|
 |Security baseline assessment|Manage|Create and manage profiles so you can assess if your devices comply to security industry baselines.|
 
-### Configuration
+### Authorization and settings
 
 Permissions to manages the security and system settings and to create and assign roles.
 

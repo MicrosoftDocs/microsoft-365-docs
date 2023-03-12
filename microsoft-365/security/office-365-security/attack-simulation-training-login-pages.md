@@ -9,10 +9,11 @@ ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 description: Admins can learn how to create and manage login pages for simulated phishing attacks in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Login pages in Attack simulation training
@@ -20,7 +21,7 @@ search.appverid: met150
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, login pages are displayed to users in simulations that use the **Credential harvest** and **Link in attachment** [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique).
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, login pages are shown to users in simulations that use **Credential harvest** and **Link in attachment** [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique).
 
 To see the available login pages, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> and then select **Login pages**. To go directly to the **Simulation content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 

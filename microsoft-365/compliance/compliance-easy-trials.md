@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 08/04/2021
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
@@ -97,8 +98,10 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
 - **Data Lifecycle Management**
 
-  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes aren't subject to location limits. Learn more about [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention).
+  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. Learn more about [adaptive policy scopes](purview-adaptive-scopes.md).
 
+  Learn more about [Microsoft Purview Data Lifecycle Management](data-lifecycle-management.md).
+ 
 - **Data Loss Prevention**
 
   Microsoft Purview Data Loss Prevention (DLP) helps you control sharing and use of sensitive info on devices, apps, and services. With trials, you can extend coverage of DLP policies to Teams and devices, protect even more sensitive content using trainable classifiers and exact data match (EDM), and get started quickly with our recommended DLP policies.  [Learn more about Data Loss Prevention](dlp-learn-about-dlp.md)
@@ -140,14 +143,14 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
 - **Records Management**
 
-  Use integrated Microsoft Purview Records Management features to:
+  Use integrated Microsoft Purview Records Management features to automate the retention schedule for organizational regulatory, legal, and business-critical records. Get full content lifecycle support, from creation to collaboration, record declaration, retention, and disposition:
 
   - Classify content as a record to prevent users from editing, as required by regulations, laws, or organizational policy
   - Apply retention labels to content automatically when it matches criteria you specify, using auto-apply label policies
   - Use adaptive scope policies to dynamically target your retention label policies to locations, with no limit on how many locations are included
   - Get full content lifecycle support, including the ability to perform disposition review on contents before they're permanently deleted at the end
 
-  For more information on the full range of feature for Microsoft Records Management, learn more about [Records Management](records-management.md)
+  For more information on the full range of features for Microsoft Purview Records Management, learn more about [Records Management](records-management.md)
 
 ## Terms and conditions
 

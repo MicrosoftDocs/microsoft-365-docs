@@ -12,12 +12,13 @@ search.appverid:
   - MET150
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 ms.custom:
   - seo-marvel-apr2020
 description: Authenticated Received Chain (ARC) is email authentication that tries to preserve authentication results across devices and any indirect mailflows that come between the sender and recipient. Here's how to make exceptions for your trusted ARC Senders.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Make a list of trusted ARC Senders to trust *legitimate* indirect mailflows
@@ -32,7 +33,7 @@ Email authentication mechanisms like [SPF](email-authentication-spf-configure.md
 
 ## Authenticated Received Chain (ARC) in Microsoft 365 Defender for Office
 
-Services that modify message content in transit before delivery to your organization can invalidate DKIM email signatures and affect authentication of the message. When these intermediary services perform such actions, they can use ARC to provide details of the original authentication before the modifications occurred. Your organization can then trust these details to help with authenticating the message.  
+Services that modify message content in transit before delivery to your organization can invalidate DKIM email signatures and affect authentication of the message. When these intermediary services perform such actions, they can use ARC to provide details of the original authentication before the modifications occurred. Your organization can then trust these details to help with authenticating the message.
 
 **Trusted ARC sealers lets admins add a list of *trusted* intermediaries into the Microsoft 365 Defender portal.** Trusted ARC sealers allows Microsoft to honor ARC signatures from these trusted intermediaries, preventing these legitimate messages from failing the authentication chain.
 
@@ -45,10 +46,10 @@ A list of trusted ARC sealers is only needed where intermediaries are part of an
 
 1. May modify the email header or email contents.
 2. May cause authentication to fail for other reasons (example, by removing attachments).
- 
+
 By adding a trusted ARC sealer, Office 365 will validate and trust the authentication results that the sealer provides when delivering mail to your tenant in Office 365.
 
-**Administrators should add *only legitimate services* as trusted ARC sealers.** Adding only services the organization expressly uses and knows will help messages that must first go through a service to pass email authentication checks, and prevent legitimate messages 
+**Administrators should add *only legitimate services* as trusted ARC sealers.** Adding only services the organization expressly uses and knows will help messages that must first go through a service to pass email authentication checks, and prevent legitimate messages
 from being sent to *Junk* due to authentication failures.
 
 ## Steps to add a trusted ARC sealer to Microsoft 365 Defender
@@ -77,7 +78,7 @@ An ARC header that lists an 'oda' of 1 indicates that previous ARC has been *ver
 
 See the email authentication methods at the end of this header-block for the oda result.
 
-``
+```text
 ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
 40.107.65.78) smtp.rcpttodomain=microsoft.com
 smtp.mailfrom=sampledoamin.onmicrosoft.com; dmarc=bestguesspass action=none
@@ -86,18 +87,18 @@ arc=pass (0 oda=1 ltdi=1
 spf=[1,1,smtp.mailfrom=sampledoamin.onmicrosoft.com]
 dkim=[1,1,header.d=sampledoamin.onmicrosoft.com]
 dmarc=[1,1,header.from=sampledoamin.onmicrosoft.com])
-``
+```
 
 To check whether the ARC result was used to override a DMARC failure, look for *compauth* result and a *reason of code(130)* in the header.
 
 See the last entry in this header-block to find *compauth* and *reason*.
 
-``
+```text
 Authentication-Results: spf=fail (sender IP is 51.163.158.241)
 smtp.mailfrom=contoso.com; dkim=fail (body hash did not verify)
 header.d=contoso.com;dmarc=fail action=none
 header.from=contoso.com;compauth=pass reason=130
-``
+```
 
 ## PowerShell steps to add or remove a trusted ARC sealer
 
@@ -106,29 +107,34 @@ header.from=contoso.com;compauth=pass reason=130
 1. Connect to Exchange Online PowerShell.
 2. Connect-ExchangeOnline.
 3. To add or update a domain into a trusted ARC sealer:
-</br>
-``
-Set-ArcConfig -Identity default -ArcTrustedSealers {a list of arc signing domains split by comma}
-``
-</br>or</br>
-``
-Set-ArcConfig -Identity {tenant name/tenanid}\default -ArcTrustedSealers {a list of arc signing domains split by comma}
-``
-</br>You need to provide identity parameter *-Identity* default when running *Set-ArcConfig*. The trusted sealers should be matched to the value of the 'd' tag in the *ARC-Seal header*.
+
+   ```powershell
+   Set-ArcConfig -Identity default -ArcTrustedSealers {a list of arc signing domains split by comma}
+   ```
+
+   or
+
+   ```powershell
+   Set-ArcConfig -Identity {tenant name/tenanid}\default -ArcTrustedSealers {a list of arc signing domains split by comma}
+   ```
+
+   You need to provide identity parameter *-Identity* default when running *Set-ArcConfig*. The trusted sealers should be matched to the value of the 'd' tag in the *ARC-Seal header*.
 
 4. View the trusted ARC sealers:
-</br>
-``
-Get-ArcConfig
-``
-or
-``
-Get-ArcConfig - Organization {tenant name}
-``
+
+   ```powershell
+   Get-ArcConfig
+   ```
+
+   or
+
+   ```powershell
+   Get-ArcConfig - Organization {tenant name}
+   ```
 
 ## Trusted ARC sealer mailflow graphics
 
-These diagrams contrast mailflow operations with and without a trusted ARC sealer, when using any of SPF, DKIM, and DMARC email authentication. In both graphics, there are legitimate services used by the company that must intervene in mailflow, sometimes violating email authentication standards by changing sending IPs, and writing to the email header. **In the first case, the indirect mailflow traffic demonstrates the result *before* admins add a trusted ARC sealer.**
+These diagrams contrast mail flow operations with and without a trusted ARC sealer, when using any of SPF, DKIM, and DMARC email authentication. In both graphics, there are legitimate services used by the company that must intervene in mail flow, sometimes violating email authentication standards by changing sending IPs, and writing to the email header. **In the first case, the indirect mail flow traffic demonstrates the result *before* admins add a trusted ARC sealer.**
 
 :::image type="content" source="../../media/m365d-indirect-traffic-flow-without-trusted-arc-sealer.PNG" alt-text="In this graphic Contoso publishes SPF, DKIM, and DMARC as part of standard email security. A sender using SPF sends mail from inside contoso.com to fabrikam.com, and this mail passes through a third party service Contoso has hired, and that service modifies the sending IP address in the email header. The mail fails SPF due to the altered IP, and DKIM because the content was modified at a third party, during the DNS check at EOP. DMARC fails because of the SPF and DKIM failures. The message is sent to Junk, Quarantine, or Rejected.":::
 

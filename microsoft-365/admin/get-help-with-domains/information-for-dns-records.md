@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -48,7 +49,7 @@ description: "Gather the values/information you need to create DNS records to co
 
 ::: moniker-end
     
-2. On the **Domains** page, select your domain, then select **Start setup**. You'll go back to the domains setup wizard to see the specific value you need to add.
+2. On the **Domains** page, select your domain, then select **Continue setup**. You'll go back to the domains setup wizard to see the specific value you need to add.
     
 3. On the **Domain Verification** page, select **Add a TXT record to the domain's DNS records**, then select **Continue**.
     

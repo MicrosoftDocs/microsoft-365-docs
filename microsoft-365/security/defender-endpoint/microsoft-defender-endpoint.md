@@ -18,6 +18,7 @@ ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 03/24/2021
 ---
 
 # Microsoft Defender for Endpoint
