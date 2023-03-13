@@ -35,7 +35,7 @@ Microsoft Defender Antivirus is built into Windows 10, Windows 11, Windows Serve
 
 With Microsoft Defender Antivirus, you have several options for reviewing protection status and alerts. You can use Microsoft Configuration Manager to [monitor Microsoft Defender Antivirus](/configmgr/protect/deploy-use/monitor-endpoint-protection) or [create email alerts](/configmgr/protect/deploy-use/endpoint-configure-alerts). Or, you can monitor protection using [Microsoft Intune](/intune/introduction-intune). When endpoints are onboarded to Defender for Endpoint, alerts are visible in Microsoft 365 Defender [unified alert and incident queues](/microsoft-365/security/defender/incident-queue).
 
-Within the Microsoft 365 Defender portal, reporting is also available for MDE onboarded endpoints accross platforms that include AV Engine version, Security Intelligence versions and MDAV Platform versions via the [Device Health Reports](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/device-health-reports)
+Within the Microsoft 365 Defender portal, reporting is also available for MDE onboarded endpoints across platforms that include AV Engine versions, Security Intelligence versions, and MDAV Platform versions via [Device Health reports](/microsoft-365/security/defender-endpoint/device-health-reports).
 
 If you have a third-party security information and event management (SIEM) server, you can also consume [Windows Defender client events](/windows/win32/events/windows-events).
 
