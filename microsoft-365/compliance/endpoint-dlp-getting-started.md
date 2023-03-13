@@ -68,7 +68,7 @@ Article | Description
 [Onboard Windows 10 or 11 devices using a local script](device-onboarding-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
 [Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md) | Learn how to use the configuration package to configure VDI devices.
 
-### Endpoint DLP support for virtualized environments
+### Endpoint DLP support for virtualized environments (preview)
 
 You can onboard virtual machines as monitored devices in Microsoft Purview compliance portal. There is no change to the onboarding procedures listed above.
 
