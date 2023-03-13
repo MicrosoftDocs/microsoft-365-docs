@@ -71,10 +71,9 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
 ## Turn on block at first sight with Microsoft Intune
 
-> [!TIP]
-> Microsoft Intune is now part of Microsoft Endpoint Manager.
+### Create a device configuration profile
 
-1. In the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>), navigate to **Devices** \> **Configuration profiles**.
+1. In the Microsoft Intune admin center (<https://endpoint.microsoft.com>), navigate to **Devices** \> **Configuration profiles**.
 
 2. Select or create a profile using the **Device restrictions** profile type.
 
@@ -95,12 +94,9 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 > - For more information about configuring Microsoft Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
 > - For a list of Microsoft Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
-## Turn on block at first sight with Microsoft Endpoint Manager
+### Create an endpoint security policy
 
-> [!TIP]
-> If you're looking for Microsoft Endpoint Configuration Manager, it's now part of Microsoft Endpoint Manager.
-
-1. In Microsoft Endpoint Manager (<https://endpoint.microsoft.com>), go to **Endpoint security** \> **Antivirus**.
+1. In the Microsoft Intune admin center (<https://endpoint.microsoft.com>), go to **Endpoint security** \> **Antivirus**.
 
 2. Select an existing policy, or create a new policy using the **Microsoft Defender Antivirus** profile type.
 
@@ -110,14 +106,14 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
    - **Cloud-delivered protection level**: High
    - **Microsoft Defender Antivirus Extended Timeout in Seconds**: 50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Block at first sight settings in the Microsoft Endpoint Manager portal" lightbox="images/endpointmgr-antivirus-cloudprotection.png":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Block at first sight settings in the Microsoft Intune admin center portal" lightbox="images/endpointmgr-antivirus-cloudprotection.png":::
 
 4. Apply the Microsoft Defender Antivirus profile to a group, such as **All users**, **All devices**, or **All users and devices**.
 
 ## Turn on block at first sight with Group Policy
 
 > [!NOTE]
-> We recommend using Intune or Microsoft Endpoint Manager to turn on block at first sight.
+> We recommend using Intune or Microsoft Configuration Manager to turn on block at first sight.
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
 
@@ -156,9 +152,9 @@ You can confirm that block at first sight is enabled on individual client device
 
 You might choose to disable block at first sight if you want to retain the prerequisite settings without actually using block at first sight protection. You might temporarily turn block at first sight off to see how this feature affects your network. However, we do not recommend disabling block at first sight protection permanently.
 
-### Turn off block at first sight with Microsoft Endpoint Manager
+### Turn off block at first sight with Microsoft Intune
 
-1. Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
+1. Go to the Microsoft Intune admin center (<https://endpoint.microsoft.com>) and sign in.
 
 2. Go to **Endpoint security** \> **Antivirus**, and then select your Microsoft Defender Antivirus policy.
 

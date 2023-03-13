@@ -2,9 +2,10 @@
 title: "Connect your domain to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 12/11/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

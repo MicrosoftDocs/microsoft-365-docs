@@ -5,7 +5,6 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-
 ms.localizationpriority: high
 search.appverid:
   - MET150
@@ -13,7 +12,7 @@ search.appverid:
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
   - highpri
 ms.custom:
   - seo-marvel-apr2020
@@ -21,19 +20,19 @@ ms.custom:
 description: Best setup of Microsoft Defender for Office 365 including Safe Attachments, Safe Links, advanced anti-phishing tools, reporting tools, and threat intelligence capabilities.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 01/31/2023
 ---
+
 # Microsoft Defender for Office 365
+
+> [!IMPORTANT]
+> If your browser is being blocked by Safe Links and Safe Attachment pages, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!IMPORTANT]
-> This article is for **business customers**.
->
-> But if you're using Outlook.com, ***Microsoft 365 Family, or Microsoft 365 Personal***, and you need info about ***Safe Links or Safe Attachments in Outlook*** blocking emails, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
 
 Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Defender for Office 365 includes:
 
@@ -45,7 +44,7 @@ Microsoft Defender for Office 365 safeguards your organization against malicious
 
 - **[Threat investigation and response capabilities](#use-threat-investigation-and-response-capabilities)**: Use leading-edge tools to investigate, understand, simulate, and prevent threats.
 
-- **[Automated investigation and response capabilities](office-365-air.md)**: Save time and effort investigating and mitigating threats.
+- **[Automated investigation and response capabilities](air-about.md)**: Save time and effort investigating and mitigating threats.
 
 ## Interactive guide to Microsoft Defender for Office 365
 
@@ -102,8 +101,6 @@ It's recommended that you configure with preset security policies, but some orga
 
 With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Policies & rules** \> **Threat policies**. Or, you can go directly to the **Threat policies** page by using <https://security.microsoft.com/threatpolicy>.
 
-Learn more by watching [this video](https://www.youtube.com/watch?v=vivvTmWJ_3c).
-
 > [!TIP]
 > For a quick list of policies to define, see [Protect against threats](protect-against-threats.md).
 
@@ -145,9 +142,9 @@ Microsoft Defender for Office 365 Plan 2 includes best-of-class [threat investig
 
 When you are investigating a potential cyberattack, time is of the essence. The sooner you can identify and mitigate threats, the better off your organization will be.
 
-[Automated investigation and response](office-365-air.md) (AIR) capabilities include a set of security playbooks that can be launched automatically, such as when an alert is triggered, or manually, such as from a view in Explorer.
+[Automated investigation and response](air-about.md) (AIR) capabilities include a set of security playbooks that can be launched automatically, such as when an alert is triggered, or manually, such as from a view in Explorer.
 
-AIR can save your security operations team time and effort in mitigating threats effectively and efficiently. To learn more, see [AIR in Office 365](office-365-air.md).
+AIR can save your security operations team time and effort in mitigating threats effectively and efficiently. To learn more, see [AIR in Office 365](air-about.md).
 
 ## Permissions required to use Microsoft Defender for Office 365 features
 

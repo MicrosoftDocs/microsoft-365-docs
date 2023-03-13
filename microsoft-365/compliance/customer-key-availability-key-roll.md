@@ -3,6 +3,7 @@ title: "Roll or rotate a Customer Key or an availability key"
 ms.author: krowley
 author: kccross
 manager: laurawi
+ms.date: 09/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp

@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Take response actions on a file
@@ -41,7 +42,8 @@ Response actions run along the top of the file page, and include:
 
 - Stop and Quarantine File
 - Add Indicator
-- Download file
+- Download file 
+- Collect file
 - Ask Defender Experts
 - Action center
 
@@ -145,6 +147,21 @@ Selecting **Download file** from the response actions allows you to download a l
 
 By default, you should be able to download files that are in quarantine.
 
+The **Download file** button can have the following states:
+
+- **Active** - You'll be able to collect the file. 
+
+- **Disabled** - If the button is grayed out or disabled during an active collection attempt, you may not have appropriate RBAC permissions to collect files.
+
+  The following permissions are required: 
+
+    For Portable Executable file (.exe, .sys, .dll, and others)
+    - Global admin or Advanced live response or Alerts 
+
+    Non-Portable Executable file (.txt, .docx, and others) 
+    - Global admin or Advanced live response
+
+
 :::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
 
 ### Download quarantined files
@@ -172,7 +189,27 @@ This feature won't work if sample submission is turned off. If automatic sample 
 
 ### Collect files
 
-If a file isn't already stored by Microsoft Defender for Endpoint, you can't download it. Instead, you'll see a **Collect file** button in the same location. If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled.
+If a file isn't already stored by Microsoft Defender for Endpoint, you can't download it. Instead, you'll see a **Collect file** button in the same location.
+
+The **Collect file** button can have the following states:
+
+- **Active** - You'll be able to collect the file. 
+
+- **Disabled** - If the button is grayed out or disabled during an active collection attempt, you may not have appropriate RBAC permissions to collect files. 
+
+
+    The following permissions are required: 
+
+    For Portable Executable file (.exe, .sys, .dll, and others)
+    - Global admin or Advanced live response or Alerts 
+
+    Non-Portable Executable file (.txt, .docx, and others) 
+    - Global admin or Advanced live response
+
+
+If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled. 
+
+
 > [!Important]
 > A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired.
 

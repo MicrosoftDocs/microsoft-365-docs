@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -331,7 +332,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
 
   - Enabling [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-autoexpanding-archiving.md) to give users additional mailbox storage space to store the data that you imported.
 
-  - Placing mailboxes on [Litigation Hold](./create-a-litigation-hold.md) to retain the data that you imported.
+  - Placing mailboxes on [Litigation Hold](./ediscovery-create-a-litigation-hold.md) to retain the data that you imported.
 
   - Using Microsoft [eDiscovery tools](search-for-content.md) to search the data that you imported.
 

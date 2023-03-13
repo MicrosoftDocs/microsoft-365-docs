@@ -24,7 +24,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to cancel your Dynamics 365, Intune, Power Platform, and Microsoft 365 for business trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 11/28/2022
+ms.date: 01/10/2023
 ---
 
 # Cancel your Microsoft business subscription
@@ -118,6 +118,9 @@ If you're unable to cancel your subscription, [contact support](../../admin/get-
 4. Select **Save**.
 
 Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For information about what you can expect when you cancel a paid Microsoft 365 for business subscription, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
+
+> [!NOTE]
+> If you're a partner who's an admin on behalf of (AOBO) a customer, and you've canceled a subscription, it can take up to 90 days for the admin center to reflect the status change.
 
 > [!WARNING]
 > If you explicitly delete a subscription, it skips the **Expired** and **Disabled** states and the SharePoint Online data and content, including OneDrive content, is deleted immediately.

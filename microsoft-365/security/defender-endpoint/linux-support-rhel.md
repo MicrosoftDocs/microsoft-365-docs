@@ -18,6 +18,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 10/06/2021
 ---
 
 # Troubleshoot issues for Microsoft Defender for Endpoint on Linux RHEL6

@@ -19,8 +19,8 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
+ms.date: 11/17/2022
 ---
-
 
 # Start using Defender Experts for XDR preview service
 
@@ -34,13 +34,13 @@ search.appverid: met150
 
 ## Run initial Defender readiness checks
 
-Apart from onboarding service delivery, our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to run an initial readiness engagement to help you get the most out of your Microsoft security products. This engagement will be based on your [Microsoft Secure Score](microsoft-secure-score.md) and Defender Experts’ policy recommendations. Our experts will help prioritizing and customizing our recommendations to fit your environment. They'll request your engagement to get those configurations implemented.
+Apart from onboarding service delivery, our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to run an initial readiness engagement to help you get the most out of your Microsoft security products. This engagement will be based on your [Microsoft Secure Score](microsoft-secure-score.md) and Defender Experts' policy recommendations. Our experts will help prioritizing and customizing our recommendations to fit your environment. They'll request your engagement to get those configurations implemented.
 
 ## Managed detection and response
 
 Through a combination of automation and human expertise, our service triages Microsoft 365 Defender incidents, prioritizes them on your behalf, filters out the noise, carries out detailed investigations, and provides detailed guided response to your security operations center (SOC) teams. Alternatively, our analysts can take a response step on your behalf.
 
-You'll receive detailed response playbooks via emails. You'll also be able to filter the Microsoft 365 Defender portal incident view using the _Defender Experts_ tag to see the current state of the incidents Defender Experts are actively investigating, or the incidents that require your action. Our analysts will also add relevant comments in Microsoft 365 Defender portal’s **Comments & history** section so you and your SOC analysts can track the investigation progress.
+You'll receive detailed response playbooks via emails. You'll also be able to filter the Microsoft 365 Defender portal incident view using the _Defender Experts_ tag to see the current state of the incidents Defender Experts are actively investigating, or the incidents that require your action. Our analysts will also add relevant comments in Microsoft 365 Defender portal's **Comments & history** section so you and your SOC analysts can track the investigation progress.
 
 Response recommendations include, but aren't limited to:
 
@@ -59,7 +59,7 @@ Defender Experts for XDR will include an interactive, on-demand report that prov
 
 ## Collaborate with a trusted advisor
 
-The service delivery manager (SDM) is responsible for managing the overall relationship for your organization with the Defender Experts for XDR service. They are your trusted advisor working along with XDR experts’ team to help you protect your organization.
+The service delivery manager (SDM) is responsible for managing the overall relationship for your organization with the Defender Experts for XDR service. They are your trusted advisor working along with XDR experts' team to help you protect your organization.
 
 The SDM provides the following services:
 
@@ -73,9 +73,11 @@ The SDM provides the following services:
   - Serve as a single point of contact for feedback and escalations related to Defender Experts Service.
 
 ## Proactive managed hunting
+
 Defender Experts for XDR also includes proactive threat hunting offered by [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md). Defender Experts for Hunting was created for customers who have a robust security operations center but want Microsoft to help them proactively hunt threats using Microsoft Defender data. This proactive threat hunting service goes beyond the endpoint to hunt across endpoints, Office 365, cloud applications, and identity. Our experts investigate anything they find, then hand off the contextual alert information along with remediation instructions, so you can quickly respond.
 
 ## Request advanced threat expertise on demand
+
 Select **Ask Defender Experts** directly inside the Microsoft 365 security portal to get swift and accurate responses to all your threat questions. Experts can provide insights to better understand the complex threats your organization may face. Consult an expert to:
 
 - Gather additional information on alerts and incidents, including root causes and scope
@@ -87,13 +89,13 @@ Select **Ask Defender Experts** directly inside the Microsoft 365 security porta
 
 The option to **Ask Defender Experts** is available in the incidents and alerts pages for you to ask contextual questions about a specific incident or alert:
 
-- ***Alerts page flyout menu***
+- _**Alerts page flyout menu**_:
 
-![Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/alerts-flyout-menu.png)
+  ![Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/alerts-flyout-menu.png)
 
-- ***Incidents page actions menu***
+- _**Incidents page actions menu**_:
 
-![Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
+  ![Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
 
 ## Opt out of preview
 

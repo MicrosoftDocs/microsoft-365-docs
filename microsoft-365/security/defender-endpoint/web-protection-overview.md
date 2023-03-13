@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/25/2022
+ms.date: 12/16/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -196,7 +196,7 @@ In any case, no block pages are shown in third-party browsers, and the user sees
 
 To report a false positive for sites that have been deemed dangerous by SmartScreen, use the link that appears on the block page in Microsoft Edge (as shown above).
 
-For WCF, you can dispute the category of a domain. Navigate to the **Domains** tab of the WCF reports and then click **Report Inaccuracy**. A flyout will open. Set the priority of the incident and provide some additional details, such as the suggested category. For more information on how to turn on WCF and how to dispute categories, see [Web content filtering](web-content-filtering.md).
+For WCF, you can dispute the category of a domain. Navigate to the **Domains** tab of the WCF reports. You will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**. A flyout will open. Set the priority of the incident and provide some additional details, such as the suggested category. For more information on how to turn on WCF and how to dispute categories, see [Web content filtering](web-content-filtering.md).
 
 For more information on how to submit false positives/negatives, see [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 

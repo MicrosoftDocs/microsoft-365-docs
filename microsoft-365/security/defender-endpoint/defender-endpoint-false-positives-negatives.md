@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 11/30/2022
+ms.date: 01/27/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -217,7 +217,7 @@ In general, you shouldn't need to define exclusions for Microsoft Defender Antiv
 
 #### Use Intune to manage antivirus exclusions (for existing policies)
 
-1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-create-a-new-antivirus-policy-with-exclusions)).
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-create-a-new-antivirus-policy-with-exclusions)).
 
 2. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 
@@ -227,7 +227,7 @@ In general, you shouldn't need to define exclusions for Microsoft Defender Antiv
 
 #### Use Intune to create a new antivirus policy with exclusions
 
-1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
 
 2. Select a platform (such as **Windows 10 and later**, **macOS**, or **Windows 10 and Windows Server**).
 
@@ -354,7 +354,7 @@ We recommend using [Intune](/mem/intune/fundamentals/what-is-intune) to edit or 
 
 #### Use Intune to review and edit cloud-delivered protection settings (for existing policies)
 
-1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
 
 2. Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
 
@@ -364,7 +364,7 @@ We recommend using [Intune](/mem/intune/fundamentals/what-is-intune) to edit or 
 
 #### Use Intune to set cloud-delivered protection settings (for a new policy)
 
-1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create policy**.
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create policy**.
 
 2. For **Platform**, select an option, and then for **Profile**, select **Antivirus** or **Microsoft Defender Antivirus** (the specific option depends on what you selected for **Platform**.) Then choose **Create**.
 
@@ -394,7 +394,7 @@ We recommend using [Intune](/mem/endpoint-manager-overview) to edit or set PUA p
 
 #### Use Intune to edit PUA protection (for existing configuration profiles)
 
-1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices** \> **Configuration profiles**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-set-pua-protection-for-a-new-configuration-profile).)
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Devices** \> **Configuration profiles**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-set-pua-protection-for-a-new-configuration-profile).)
 
 2. Under **Manage**, choose **Properties**, and then, next to **Configuration settings**, choose **Edit**.
 
@@ -406,7 +406,7 @@ We recommend using [Intune](/mem/endpoint-manager-overview) to edit or set PUA p
 
 #### Use Intune to set PUA protection (for a new configuration profile)
 
-1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices** \> **Configuration profiles** \> **+ Create profile**.
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Devices** \> **Configuration profiles** \> **+ Create profile**.
 
 2. For the **Platform**, choose **Windows 10 and later**, and for **Profile**, select **Device restrictions**.
 

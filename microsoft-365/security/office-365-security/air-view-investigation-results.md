@@ -14,9 +14,9 @@ search.appverid:
 - MOE150
 ms.collection: 
 - m365-security
-- m365initiative-defender-office365
+- tier2
 description: During and after an automated investigation in Microsoft 365, you can view the results and key findings.
-ms.date: 01/29/2021
+ms.date: 01/31/2023
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
@@ -28,7 +28,7 @@ ms.service: microsoft-365-security
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-When an [automated investigation](office-365-air.md) occurs in [Microsoft Defender for Office 365](defender-for-office-365.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft 365 Defender portal. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
+When an [automated investigation](air-about.md) occurs in [Microsoft Defender for Office 365](defender-for-office-365.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft 365 Defender portal. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
 
 > [!TIP]
 > Check out the new, unified investigation page in the Microsoft 365 Defender portal. To learn more, see [(NEW!) Unified investigation page](../defender/m365d-autoir-results.md#new-unified-investigation-page).
@@ -49,7 +49,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 |**Partially Remediated**|The investigation resulted in remediation actions, and some were approved and completed. Other actions are still [pending](air-review-approve-pending-completed-actions.md).|
 |**Failed**|At least one investigation analyzer ran into a problem where it couldn't complete properly. <p> **NOTE** If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. View the investigation details.|
 |**Queued By Throttling**|An investigation is being held in a queue. When other investigations complete, queued investigations begin. Throttling helps avoid poor service performance.  <p> **TIP**: Pending actions can limit how many new investigations can run. Make sure to [approve (or reject) pending actions](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
-|**Terminated By Throttling**|If an investigation is held in the queue too long, it stops. <p> **TIP**: You can [start an investigation from Threat Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
+|**Terminated By Throttling**|If an investigation is held in the queue too long, it stops. <p> **TIP**: You can [start an investigation from Threat Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
 
 ## View details of an investigation
 
@@ -61,7 +61,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 ## View details about an alert related to an investigation
 
-Certain kinds of alerts trigger automated investigation in Microsoft 365. To learn more, see [alert policies that trigger automated investigations](office-365-air.md#which-alert-policies-trigger-automated-investigations).
+Certain kinds of alerts trigger automated investigation in Microsoft 365. To learn more, see [alert policies that trigger automated investigations](air-about.md#which-alert-policies-trigger-automated-investigations).
 
 1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, select **Action center**.

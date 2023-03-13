@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Troubleshoot network protection
@@ -122,7 +123,7 @@ Set-MpPreference -ProxyServer <proxy IP address: Port>
 Set-MpPreference -ProxyPacUrl <Proxy PAC url>
 ```
 
-You can configure the registry key by using PowerShell, Microsoft Endpoint Manager, or Group Policy. Here are some resources to help:
+You can configure the registry key by using PowerShell, Microsoft Configuration Manager, or Group Policy. Here are some resources to help:
 
 - [Working with Registry Keys](/powershell/scripting/samples/working-with-registry-keys)
 - [Configure custom client settings for Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)

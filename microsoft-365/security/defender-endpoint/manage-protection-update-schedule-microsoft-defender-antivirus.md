@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 12/20/2022
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -45,14 +46,15 @@ You can also randomize the times when each endpoint checks and downloads protect
 
 ## Use Configuration Manager to schedule protection updates
 
-1. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
+1. On your Microsoft Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
 
 2. Go to the **Security intelligence updates** section.
 
 3. To check and download updates at a certain time:
-      1. Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to **0**.
-      2. Set **Check for Endpoint Protection security intelligence updates daily at...** to the time when updates should be checked.
-      3
+
+   - Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to **0**.
+   - Set **Check for Endpoint Protection security intelligence updates daily at...** to the time when updates should be checked.
+      
 4. To check and download updates on a continual interval, Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to the number of hours that should occur between updates.
 
 5. [Deploy the updated policy as usual](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
@@ -69,7 +71,7 @@ Enabling these settings will override that default.
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Signature Updates** and configure the following settings:
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates** and configure the following settings:
 
     1. Double-click the **Specify the day of the week to check for security intelligence updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
 

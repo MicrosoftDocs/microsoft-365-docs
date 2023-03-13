@@ -1,28 +1,28 @@
 ---
 title: Zero-hour auto purge in Microsoft Defender for Office 365
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: Admin
 ms.topic: conceptual
-
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MOE150
   - MED150
   - MBS150
   - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
-ms.collection: 
+ms.collection:
   - m365-security
-ms.custom: 
+  - tier2
+ms.custom:
   - seo-marvel-apr2020
 description: Zero-hour auto purge (ZAP) retroactively moves delivered messages in an Exchange Online mailbox to the Junk Email folder or quarantine that are found to be spam, phishing, or that contain malware after delivery.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Zero-hour auto purge (ZAP) in Exchange Online
@@ -48,14 +48,14 @@ The ZAP action is seamless for the user; they aren't notified if a message is de
 
 [Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP. Similar to what happens in mail flow, this means that even if the service determines the delivered message needs ZAP, the message is not acted on because of the safe senders configuration. This is another reason to be careful about configuring messages to bypass filtering.
 
-Watch this short video to learn how ZAP in Microsoft Defender for Office 365 automatically detects and neutralizes threats in email. 
+Watch this short video to learn how ZAP in Microsoft Defender for Office 365 automatically detects and neutralizes threats in email.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGrLg]
 
 ### Zero-hour auto purge (ZAP) for malware
 
 For **read or unread messages** that are found to contain malware after delivery, ZAP quarantines the message that contains the malware attachment. By default, only admins can view and manage quarantined malware messages. But, admins can create and use _quarantine policies_ to define what users are allowed to do to messages that were quarantined as malware. For more information, see [Quarantine policies](quarantine-policies.md).
 
-ZAP for malware is enabled by default in anti-malware policies. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+ZAP for malware is enabled by default in anti-malware policies. For more information, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 ### Zero-hour auto purge (ZAP) for phishing
 
