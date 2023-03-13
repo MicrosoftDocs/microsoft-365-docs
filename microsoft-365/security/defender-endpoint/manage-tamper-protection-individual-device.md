@@ -1,6 +1,6 @@
 ---
 title: Manage tamper protection on an individual device
-ms.reviewer: mattcall, pahuijbr, hayhov, oogunrinde
+ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Turn tamper protection on or off for an individual device.
 keywords: malware, defender, antivirus, tamper protection
