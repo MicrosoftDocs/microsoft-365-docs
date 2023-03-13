@@ -29,6 +29,7 @@ Teams uses the Preferred Data Location (PDL) for users and groups to determine w
 
 > [!NOTE]
 > Multi-Geo capabilities in Teams rolled out in July 2021. Your chat and channel messages will be automatically migrated to the correct geo location over the next few quarters. Any new PDL changes will be processed after the tenant has completed the initial sync, and new PDL changes beyond that will be queued and processed in the order they are received.
+> Note: Enable port 8653 to allow execution of this command.
 
 ## User chat
 
@@ -61,7 +62,7 @@ To find the current location of a team's data, [connect to Teams PowerShell](/po
 ```PowerShell
 Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>
 ```
-Note: Enable port 8653 to allow execution of this command.
+
 ## User Experience
 
 Teams Multi-Geo is seamless to the end user. Once you change the PDL of a user or a group, the respective data will queue for migration and the migration will occur automatically with no impact to the user or their Teams client even if they’re active while the migration occurs.
