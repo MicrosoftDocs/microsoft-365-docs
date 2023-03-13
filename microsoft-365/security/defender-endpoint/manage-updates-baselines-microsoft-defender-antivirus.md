@@ -172,7 +172,7 @@ During the technical support (only) phase, commercially reasonable support incid
 ## How to roll back this update
 
 In the unfortunate event that you encounter issues after a platform update, you can roll back to the previous or the inbox version of the Microsoft Defender platform.  
-- To roll back to the previous verion, run the following command:<br>
+- To roll back to the previous version, run the following command:<br>
 `"%programdata%\Microsoft\Windows Defender\Platofrm\<version>\MpCmdRun.exe" -RevertPlatform`
 - To roll back this update to the version shipped with the Operating System ("%ProgramFiles%\Windows Defender")<br>
 `"%programdata%\Microsoft\Windows Defender\Platofrm\<version>\MpCmdRun.exe" -ResetPlatform`
