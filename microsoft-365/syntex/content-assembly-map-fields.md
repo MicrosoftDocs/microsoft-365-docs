@@ -1,5 +1,5 @@
 ---
-title: Map fields of your template to library columns in Microsoft Syntex
+title: Map fields of a modern template to library columns in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -16,11 +16,11 @@ ms.localizationpriority:  medium
 description: Learn how to map fields of a modern template to library columns in Microsoft Syntex.
 ---
 
-# Map fields of your template to library columns in Microsoft Syntex
+# Map fields of a modern template to library columns in Microsoft Syntex
 
-You can map fields of your modern template as library columns and add it to a custom view of the library. Once configured, every time a document is created from this template, the field values will automatically get extracted and filled in against the library columns and be part of the document metadata.
+You can map fields of a modern template as library columns and then add the fields to a custom view of the library. Once configured, every time a document is created from this template, the field values will automatically get extracted and filled in against the library columns and be part of the document metadata.
 
-No more training and building AI models to extract the information already configured as fields while creating modern templates. With just a few clicks, all the relevant metadata for your generated documents will be available at a glance in your document library.
+You no longer have to train and build AI models to extract the information already configured as fields while creating modern templates. With just a few clicks, all the relevant metadata for your generated documents will be available at a glance in your document library.
 
 ## Map fields to custom view of your library
 
@@ -28,7 +28,6 @@ No more training and building AI models to extract the information already confi
 
    ![Screenshot of the Publish template panel and template document.](../media/content-understanding/content-assembly-map-fields-1.png)
 
- 
 2. You can choose fields that you want to map in the custom view that will get created for your modern template. You can also rename the template by entering value in the **Template name** text box.
 
    Once done, select **Publish** to publish the modern template. If you have selected the **Set the default view of the library** option (selected by default), the library default view will be set to the **Template name** view.
