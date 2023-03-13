@@ -23,14 +23,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at GoDaddy for Microsoft."
+description: "Learn to verify your domain and set up DNS records for email, Teams, and other services at GoDaddy for Microsoft."
 ---
 
 # Connect your DNS records at GoDaddy to Microsoft 365
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 
-If GoDaddy is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
+If GoDaddy is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Teams, and so on.
 
 ## Before you begin
 
@@ -219,7 +219,7 @@ To verify the record in Microsoft 365:
 
 ## Advanced option: Skype for Business
 
-Only select this option if your organization uses Skype for Business for online communication services like chat, conference calls, and video calls, in addition to Microsoft Teams. Skype needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
+Only select this option if your organization uses Microsoft Teams. Teams needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
 
 ### Add the two required SRV records
 
