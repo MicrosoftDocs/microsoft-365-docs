@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 03/07/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -371,7 +371,7 @@ Before you can scope a label to just files or emails, you must first remove it i
 
 **Limitation for this preview:**
 
-- If the label is configured as the default label in one or more label policies, and Outlook isn't configured with its own default label in the same policy, you can't remove the scope for **Email**. As a workaround, remove this label as the default label, and then you can remove the email scope.
+- If the label is configured as the default label in one or more label policies, and Outlook isn't configured with its own default label in the same policy, you can't remove the scope for **Email**. As a workaround, first remove this label as the default label. You'll then be able to remove the email scope. Finally, reselect the now modified label as the default label for documents.
 
 ## Configure a label to apply S/MIME protection in Outlook
 
