@@ -169,7 +169,7 @@ During the technical support (only) phase, commercially reasonable support incid
 > [!NOTE]
 > If you are manually deploying Microsoft Defender Antivirus Platform Update, or if you are using a script or a non-Microsoft management product to deploy Microsoft Defender Antivirus Platform Update, make sure that version `4.18.2001.10` is installed from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) before the latest version of Platform Update (N-2) is installed.
 
-## How to roll back this update
+## How to roll back an update
 
 In the unfortunate event that you encounter issues after a platform update, you can roll back to the previous or the inbox version of the Microsoft Defender platform.  
 - To roll back to the previous version, run the following command:<br>
@@ -177,8 +177,7 @@ In the unfortunate event that you encounter issues after a platform update, you 
 - To roll back this update to the version shipped with the Operating System ("%ProgramFiles%\Windows Defender")<br>
 `"%programdata%\Microsoft\Windows Defender\Platofrm\<version>\MpCmdRun.exe" -ResetPlatform`
 
-
-### Platform version included with Windows 10 releases
+## Platform version included with Windows 10 releases
 
 The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:
 
