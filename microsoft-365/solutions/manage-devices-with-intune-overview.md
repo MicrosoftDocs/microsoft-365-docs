@@ -33,7 +33,7 @@ While Microsoft 365 includes several tools and methodologies for managing and pr
 - Plan to manually enroll devices into Intune.
 - Allow BYOD devices with plans to implement protection for apps and data and/or enroll these devices to Intune.
 
-On the other hand, if your environment includes plans for co-management including Microsoft Endpoint Configuration Manager, see [Co-management documentation](/mem/configmgr/comanage/) to develop the best path for your organization. If your environment includes plans for Windows 365 Cloud PC, see [Windows 365 Enterprise documentation](/windows-365/enterprise/) to develop the best path for your organization.
+On the other hand, if your environment includes plans for co-management including Microsoft Configuration Manager, see [Co-management documentation](/mem/configmgr/comanage/) to develop the best path for your organization. If your environment includes plans for Windows 365 Cloud PC, see [Windows 365 Enterprise documentation](/windows-365/enterprise/) to develop the best path for your organization.
 
 Watch this video for an overview of the deployment process.
 <br>
@@ -75,7 +75,7 @@ In this illustration:
 
 This guidance is tightly coordinated with the recommended [**Zero Trust identity and device access policies**](../security/office-365-security/microsoft-365-policies-configurations.md). You will be working with your identity team to carry through protection that you configure with Intune into Conditional Access policies in Azure AD.
 
-Here’s an illustration of the recommended policy set with step callouts for the work you will do in Intune/MEM and the related Conditional Access policies you will help coordinate in Azure AD.
+Here’s an illustration of the recommended policy set with step callouts for the work you will do in Intune and the related Conditional Access policies you will help coordinate in Azure AD.
 
 [![Zero Trust identity and device access policies](../media/devices/identity-device-overview-steps.png#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/devices/identity-device-overview-steps.png)
 
@@ -119,10 +119,10 @@ Note that only Intune is managing devices. Onboarding refers to the ability for 
 
 ## Learning for administrators
 
-The following resources help administrators learn concepts about using MEM and Intune.
+The following resources help administrators learn concepts about using Intune.
 
-[Simplify device management with Microsoft Endpoint Manager](/training/modules/simplify-device-management-with-microsoft-endpoint-manager/)
-Description: Learn about modern management and the Microsoft Endpoint Manager and how the business management tools in Microsoft 365 can simplify management of all your devices.
+[Simplify device management with Microsoft Intune](/training/modules/simplify-device-management-with-microsoft-endpoint-manager/)
+Description: Learn about modern management and the Microsoft Intune family of products, and how the business management tools in Microsoft 365 can simplify management of all your devices.
 
 [Set up Microsoft Intune](/training/modules/set-up-microsoft-intune/)
-Description: Microsoft Intune, which is a part of Microsoft Endpoint Manager, helps you protect the devices, apps, and data that the people at your organization use to be productive. After completing this module, you will have set up Microsoft Intune. Set up includes reviewing the supported configurations, signing up for Intune, adding users and groups, assigning licenses to users, granting admin permissions, and setting the MDM authority.
+Description: Microsoft Intune helps you protect the devices, apps, and data that the people at your organization use to be productive. After completing this module, you will have set up Microsoft Intune. Set up includes reviewing the supported configurations, signing up for Intune, adding users and groups, assigning licenses to users, granting admin permissions, and setting the MDM authority.

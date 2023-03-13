@@ -107,10 +107,15 @@ After the add-in is installed and enabled, users will see the following icons:
 
 - Organizations that have a URL filtering or security solution (such as a proxy and/or firewall) in place, must have ipagave.azurewebsites.net and outlook.office.com endpoints allowed to be reached on HTTPS protocol.
 
-- Currently, reporting messages in shared mailboxes or other mailboxes by a delegate using the add-ins is not supported. Messages are not sent to the [reporting mailbox](submissions-user-reported-messages-files-custom-mailbox.md) or to Microsoft. Built-in reporting in Outlook on the web sends messages reported by a delegate to the reporting mailbox and/or to Microsoft.
+- Currently, reporting messages in shared mailboxes or other mailboxes by a delegate using the add-ins is not supported. Messages are not sent to the [reporting mailbox](submissions-user-reported-messages-custom-mailbox.md) or to Microsoft. Built-in reporting in Outlook on the web sends messages reported by a delegate to the reporting mailbox and/or to Microsoft.
 
 > [!IMPORTANT]
-> To view messages reported to Microsoft on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>, leave the toggle **On** (![Toggle on.](../../media/scc-toggle-on.png)) at the top of the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission>.
+> Admins can view reported messages on the **Submissions** page at <https://security.microsoft.com/reportsubmission> **only** if both of the following settings are configured on the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission>:
+>
+> - The toggle on the **User reported** page is **On** ![Toggle on.](../../media/scc-toggle-on.png).
+> - **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options"** is selected.
+
+## Use the built-in Report button in Outlook on the web
 
 ## Admin instructions
 
@@ -184,7 +189,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 
 1. In the Microsoft 365 admin center at <https://portal.office365.us/adminportal>, go to **Organization** \> **Add-ins**, and select **Deploy Add-In**.
 
-2. In the **Deploy a new add-in** flyout that opens, click **Next**, and then select **Upload custom apps**.  
+2. In the **Deploy a new add-in** flyout that opens, click **Next**, and then select **Upload custom apps**.
 
 3. Select **I have a URL for the manifest file**. Use the following URLs:
 
@@ -193,7 +198,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 
 4. Choose which users will have access to the add-in, select a deployment method, and then select **Deploy**.
 
-5. To fully configure the settings, see [User reported message settings](submissions-user-reported-messages-files-custom-mailbox.md).
+5. To fully configure the settings, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 ### View and edit settings for the Report Message or Report Phishing add-ins
 

@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 02/16/2023
+ms.date: 02/21/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -39,6 +39,14 @@ Onboard your business devices to protect them right away. You can choose from se
 
 ## Windows 10 and 11
 
+> [!NOTE]
+> Windows devices must be running one of the following operating systems:  
+> - Windows 10 or 11 Business
+> - Windows 10 or 11 Professional
+> - Windows 10 or 11 Enterprise
+> 
+> For more details, see [Microsoft Defender for Business requirements](mdb-requirements.md).
+> 
 Choose one of the following options to onboard Windows client devices to Defender for Business:
 
 - [Local script](#local-script-for-windows-10-and-11) (for onboarding devices manually in the Microsoft 365 Defender portal)

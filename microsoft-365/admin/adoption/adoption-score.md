@@ -151,25 +151,6 @@ The details pages are:
 - [Microsoft 365 Apps health – technology experiences](apps-health.md)
 - [Endpoint Analytics](/mem/analytics/productivity-score)
 
-## Business resilience special report
-
-The Business resilience report is a limited-time Workplace Intelligence report available to all Microsoft 365 customers to help them guide their organizations during this challenging time.  
-
-This report helps organizations understand: 
-
-- How collaboration and communication are affected by the shift to remote work. 
-
-- The impact on work-life balance as people adjust to working from home. 
-
-- Whether remote meetings support effective decision-making.
-
-[Learn more about the Business resilience report](/Workplace-Analytics/tutorials/bcrps)
-
-[Learn more about Microsoft Graph](/graph/)
-
-> [!NOTE]
-> Users also have the option to get productivity insights from the [MyAnalytics dashboard](/workplace-analytics/myanalytics/use/dashboard-2).
-
 ## Group Level Aggregates
 
 The group-level filters functionality helps admins and adoption strategists understand how different groups, based on data from Azure Active Directory, are performing on the people experiencing insights. It's used to provide higher granularity of insights and actions.

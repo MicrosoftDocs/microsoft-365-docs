@@ -3,7 +3,7 @@ title: Get started driving adoption of Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.date: 09/30/2020
+ms.date: 09/30/2021
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

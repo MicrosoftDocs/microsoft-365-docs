@@ -23,7 +23,10 @@ ms.custom: seo-marvel-apr2020
 
 # Supported file types in eDiscovery (Premium)
 
-Microsoft Purview eDiscovery (Premium) supports many file types at many different levels. The support files types are described in the following tables in this article. This list isn't finalized, and we will add new file types as we continue our validation testing. These tables indicate if a file type is supported for text extraction (and Optical Character Recognition or OCR text extraction for image files), viewable in the native viewer and also support in the Annotate viewer in eDiscovery (Premium).
+Microsoft Purview eDiscovery (Premium) supports many file types at many different levels. The currently supported files types are described in the following tables in this article. These tables indicate if a file type is supported for text extraction (and Optical Character Recognition or OCR text extraction for image files), viewable in the native viewer, and also supported in the Annotate viewer in eDiscovery (Premium).
+
+> [!IMPORTANT]
+> If a file type isn't listed in the following tables, it isn't currently supported in eDiscovery solutions.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
