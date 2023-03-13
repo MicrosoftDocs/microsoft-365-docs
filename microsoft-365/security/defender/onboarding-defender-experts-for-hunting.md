@@ -16,7 +16,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security
-  - tier1 
+  - tier1
 ms.topic: conceptual
 search.appverid: met150
 ms.date: 07/26/2022
@@ -32,11 +32,11 @@ ms.date: 07/26/2022
 
 ## Onboarding
 
-If you're new to Microsoft 365 Defender and Defender Experts for Hunting:  
+If you're new to Microsoft 365 Defender and Defender Experts for Hunting:
 
 1. Upon getting your welcome email, select **Log into Microsoft 365 Defender**.
 2. Sign in if you already have a Microsoft account. If none, create one.
-3. The Microsoft 365 Defender quick tour will get you familiar with the security suite, where the capabilities are and how important they are. Select **Take a quick tour**.  
+3. The Microsoft 365 Defender quick tour will get you familiar with the security suite, where the capabilities are and how important they are. Select **Take a quick tour**.
 4. Read the short descriptions about what the Microsoft Defender Experts service is and the capabilities it provides. Select **Next**. You'll see the welcome page:
 
 ![Screenshot of the Microsoft 365 Defender welcome page with a card for the Defender Experts for Hunting service.](../../media/mte/defenderexperts/start-using-defender-experts-for-hunting.png)
@@ -44,10 +44,11 @@ If you're new to Microsoft 365 Defender and Defender Experts for Hunting:
 ## Receive Defender Experts Notifications
 
 The Defender Experts Notifications service includes:
+
 - Threat monitoring and analysis, reducing dwell time and the risk to your business
-- Hunter-trained artificial intelligence to discover and target both known attacks and emerging threats 
-- Identification of the most pertinent risks, helping SOCs maximize their effectiveness 
-- Help in scoping compromises and as much context as can be quickly delivered to enable a swift SOC response 
+- Hunter-trained artificial intelligence to discover and target both known attacks and emerging threats
+- Identification of the most pertinent risks, helping SOCs maximize their effectiveness
+- Help in scoping compromises and as much context as can be quickly delivered to enable a swift SOC response
 
 Refer to the following screenshot to see a sample Defender Experts Notification:
 
@@ -73,7 +74,7 @@ You can filter your incidents and alerts if you want to only see the Defender Ex
 
 ### Set up Defender Experts email notifications
 
-You can set up Microsoft 365 Defender to notify you or your staff with an email about new incidents or updates to existing incidents, including those observed by Microsoft Defender Experts. [Learn more about getting incident notifications by email](/microsoft-365/security/defender/incidents-overview#get-incident-notifications-by-email) 
+You can set up Microsoft 365 Defender to notify you or your staff with an email about new incidents or updates to existing incidents, including those observed by Microsoft Defender Experts. [Learn more about getting incident notifications by email](/microsoft-365/security/defender/incidents-overview#get-incident-notifications-by-email)
 
 1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Microsoft 365 Defender** > **Email notifications** > **Incidents**.
 2. Update your existing email notification rules or create a new one. [Learn more about creating a rule for email notifications](/microsoft-365/security/defender/incidents-overview#create-a-rule-for-email-notifications)
@@ -86,7 +87,7 @@ You can set up Microsoft 365 Defender to notify you or your staff with an email 
 > [!NOTE]
 > Experts on Demand is included in your Defender Experts for Hunting subscription with [monthly allocations](/microsoft-365/security/defender/before-you-begin-defender-experts#eligibility-and-licensing). However, it's not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
-Select **Ask Defender Experts** directly inside the Microsoft 365 security portal to get swift and accurate responses to all your threat hunting questions. Experts can provide insight to better understand the complex threats your organization may face. Experts on Demand can help to: 
+Select **Ask Defender Experts** directly inside the Microsoft 365 security portal to get swift and accurate responses to all your threat hunting questions. Experts can provide insight to better understand the complex threats your organization may face. Experts on Demand can help to:
 
 - Gather additional information on alerts and incidents, including root causes and scope
 - Gain clarity into suspicious devices, alerts, or incidents and take next steps if faced with an advanced attacker

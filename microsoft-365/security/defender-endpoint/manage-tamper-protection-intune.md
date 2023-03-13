@@ -1,6 +1,6 @@
 ---
 title: Manage tamper protection for your organization using Microsoft Intune
-ms.reviewer: mattcall, pahuijbr, hayhov, oogunrinde
+ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Turn tamper protection on or off for your organization in Microsoft Intune.
 keywords: malware, defender, antivirus, tamper protection, Microsoft Intune

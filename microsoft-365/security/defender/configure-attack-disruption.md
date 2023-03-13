@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.localizationpriority: medium
-ms.date: 02/09/2023
+ms.date: 02/22/2023
 ms.collection:
 - m365-security
 - tier2

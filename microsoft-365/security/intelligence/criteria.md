@@ -28,7 +28,7 @@ You can assist Microsoft by [submitting unknown or suspicious software for analy
 
 The next sections provide an overview of the classifications we use for applications and the types of behaviors that lead to that classification.
 
->[!NOTE]
+> [!NOTE]
 > New forms of malware and potentially unwanted applications are being developed and distributed rapidly. The following list may not be comprehensive, and Microsoft reserves the right to adjust, expand, and update these without prior notice or announcement.
 
 ## Unknown – Unrecognized software  
