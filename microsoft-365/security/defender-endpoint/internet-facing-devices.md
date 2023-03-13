@@ -30,7 +30,7 @@ ms.date: 03/7/2023
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-As threat actors continuously scan the web to detect exposed devices they can exploit to gain a foothold in internal corporate networks, mapping your organization’s external attack surface is a key part of security posture management. Internet facing devices can serve as an easy entry point to an organization’s environment, which makes identifying them a top priority for many security teams.
+As threat actors continuously scan the web to detect exposed devices they can exploit to gain a foothold in internal corporate networks, mapping your organization’s external attack surface is a key part of your security posture management. Internet facing devices can serve as an easy entry point to an organization’s environment, which makes identifying them a top priority for many security teams.
 
 Microsoft Defender for Endpoint automatically identifies and flags onboarded, exposed, internet facing devices in the [Microsoft 365 Defender portal](https://security.microsoft.com/). This critical information provides better visibility into the organizations external attack surface and deep insights into asset exploitability.
 
@@ -62,12 +62,12 @@ For each onboarded device identified as internet facing, the internet facing tag
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-tag.png" alt-text="Screenshot of the Browser extensions page" lightbox="../../media/defender-vulnerability-management/internet-facing-tag.png":::
 
-Hover over the tag to see why the tag was applied:
+Hover over the tag to see why it was applied:
 
 - **This device was detected by an external scan**: An external scan identified the device as internet facing. For devices identified by the external scanner, the tag is applied straight away.
 - **This device was detected by external network connection** - Defender for Endpoint network signals processing identified the device as internet facing. Extra processing takes place to verify these devices are internet facing before the tag is applied.
 
-At the top of the page, you can view a counter displaying the number of devices that have been identified as internet facing and are potentially less secure.
+At the top of the page, you can view a counter that shows the number of devices that have been identified as internet facing and are potentially less secure.
 
 ## Use the filter to focus on internet facing devices
 
