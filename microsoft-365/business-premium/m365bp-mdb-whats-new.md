@@ -30,11 +30,11 @@ This article lists new features in the latest release of [Microsoft 365 Business
 
 ## March 2023
 
-- **Mobile threat defense (preview) is added to Defender for Business**. The ability to [onboard iOS and Android devices](../security/defender-business/mdb-onboard-devices.md) to the standalone version of Defender for Business is now in preview! These capabilities provide OS-level threat and vulnerability management, web protection, and app security to help you and employees stay more secure on the go. 
+- **Mobile threat defense (preview) is added to Defender for Business**. The ability to [onboard iOS and Android devices](../security/defender-business/mdb-onboard-devices.md) to the standalone version of Defender for Business is now in preview! These capabilities provide OS-level threat and vulnerability management, web protection, and app security to help you and employees stay more secure on the go. See [Mobile threat defense capabilities in Microsoft Defender for Business](../security/defender-business/mdb-mtd.md).
 
-- **Simplified insights are added to Defender for Business**. Improved reporting shows how secure your organization is across identity, devices, information, and apps. You can view threats detected (and blocked) by Defender for Business together with your current status from Microsoft Secure Score. Recommendations to improve your security are also provided.
+- **Simplified insights are added to Defender for Business**. Improved reporting shows how secure your organization is across identity, devices, information, and apps. You can view threats detected (and blocked) by Defender for Business together with your current status from Microsoft Secure Score. Recommendations to improve your security are also provided. See [Reports in Microsoft Defender for Business](../security/defender-business/mdb-reports.md).
 
-- **Device exposure score is now visible in Microsoft 365 Lighthouse**. Microsoft Cloud Solution Providers (CSPs) who are using [Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-overview.md) can now view and manage device exposure scores across customer tenants. These capabilities enable partners to discover which customers' devices are at risk because of vulnerabilities. 
+- **Device exposure score is now visible in Microsoft 365 Lighthouse**. Microsoft Cloud Solution Providers (CSPs) who are using [Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-overview.md) can now view and manage device exposure scores across customer tenants. These capabilities enable partners to discover which customers' devices are at risk because of vulnerabilities. See [Microsoft 365 Lighthouse and Microsoft Defender for Business](../security/defender-business/mdb-lighthouse-integration.md).
 
 ## January 2023
 
