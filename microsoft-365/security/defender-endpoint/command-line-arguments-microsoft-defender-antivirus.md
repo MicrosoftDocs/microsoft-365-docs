@@ -56,6 +56,7 @@ In our example, the MpCmdRun utility starts a full antivirus scan on the device.
 |`-?` **or** `-h`|Displays all available options for the MpCmdRun tool|
 |`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|Scans for malicious software. Values for **ScanType** are:<p>**0** Default, according to your configuration<p>**1** Quick scan<p>**2** Full scan<p>**3** File and directory custom scan.<p>CpuThrottling runs according to policy configurations|
 |`-Trace [-Grouping #] [-Level #]`|Starts diagnostic tracing|
+|`-CaptureNetworkTrace -Path <path>`|Captures all the network input into the Network Protection service and saves it to a file at <path>.<BR>Supply an empty path to stop tracing|
 |`-GetFiles [-SupportLogLocation <path>]`|Collects support information. See '[collecting diagnostic data](collect-diagnostic-data.md)'|
 |`-GetFilesDiagTrack`|Same as `-GetFiles`, but outputs to temporary DiagTrack folder|
 |`-RemoveDefinitions [-All]`|Restores the installed Security intelligence to a previous backup copy or to the original default set|
@@ -68,6 +69,8 @@ In our example, the MpCmdRun utility starts a full antivirus scan on the device.
 |`-RemoveDynamicSignature [-SignatureSetID]`|Removes dynamic Security intelligence|
 |`-CheckExclusion -path <path>`|Checks whether a path is excluded|
 |`-ValidateMapsConnection`|Verifies that your network can communicate with the Microsoft Defender Antivirus cloud service. This command will only work on Windows 10, version 1703 or higher.|
+|`-ResetPlatform`| Revert platform binaries back to the previous installed version of the Defender platform|
+|`-RevertPlatform`|reset platform binaries back to "%ProgramFiles%\Windows Defender|
 
 ## Common errors in running commands via mpcmdrun.exe
 
