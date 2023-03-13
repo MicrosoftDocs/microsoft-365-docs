@@ -136,7 +136,7 @@ When you create a sensitivity label, you're asked to configure the label's scope
 
 This scope configuration lets you have sensitivity labels that are just for items such as documents and emails, and can't be selected for containers. Similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. You can also select the scope for schematized data assets for Microsoft Purview Data Map:
 
-:::image type="content" source="../media/sensitivity-labels-scopes.png" alt-text="Scope options for sensitivity labels..":::
+:::image type="content" source="../media/sensitivity-labels-scopes.png" alt-text="Screenshot that shows scope options for sensitivity labels.":::
 
 The **Items** scope can further be refined to [files  and emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails), and to [meetings](sensitivity-labels-meetings.md) that includes calendar events, Teams meetings options, and Team chat. For example, use this refinement when you want a sensitivity label to be available for emails only.
 
