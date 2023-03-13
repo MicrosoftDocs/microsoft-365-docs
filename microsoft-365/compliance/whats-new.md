@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/09/2023
+ms.date: 03/13/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -55,6 +55,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **General availability (GA)**: For labeling built into Windows, macOS, iOS, and Android, auditing actions for sensitivity labels include encryption details such as a change in the encryption status and settings, and the Rights Management owner.
 - **In preview**: The ability to [scope labels to files and emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails), so that for example, a sensitivity label is visible to users in Outlook but not in Word, Excel, or PowerPoint. This configuration can be used as a parity feature for the AIP add-in, which could be disabled per app.
 - **In preview**: Prevent [oversharing of labeled emails as a DLP policy tip](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview). This DLP policy configuration is an equivalent for the AIP add-in with PowerShell advanced settings that implement pop-up messages in Outlook that warn, justify, or block emails being sent.
+- **In preview**: As a parity feature for the AIP add-in, built-in labeling for Windows supports [label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments).
 - **Removal of restrictions for prevent copying chat for protected meetings**: The label setting that [prevents copying chat to the clipboard](sensitivity-labels-meetings.md#prevent-copying-chat-to-the-clipboard-label-setting) now supports users outside your organization and also users who join a chat but weren't invited to the meeting.
 
 ## February 2023
@@ -172,7 +173,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Updates for [creating a subject rights request](/privacy/priva/subject-rights-requests-create):
     - During the [custom setup process](/privacy/priva/subject-rights-requests-create#custom-setup-guided-process-to-choose-all-settings), it's now optional to enter the data subject's name. A new flyout pane lets you add more identifiers.
     - When refining your search, a new [Conditions](/privacy/priva/subject-rights-requests-create#conditions) flyout pane appears during search refinement lets users set multiple search conditions at once.
-- Update to clarify that a subject rights request will automatically pause at the [data estimate stage](/privacy/priva/subject-rights-requests-data-retrieval) if over 10K items or 100 GB of data are likekly to be retrieved.
+- Update to clarify that a subject rights request will automatically pause at the [data estimate stage](/privacy/priva/subject-rights-requests-data-retrieval) if over 10K items or 100 GB of data are likely to be retrieved.
 - Updates for [reviewing data and collaborating on subject rights requests](/privacy/priva/subject-rights-requests-data-review):
     - There are new filtering options when reviewing data, including keywords supporting multiple words and wildcard.
     - The "Plain text" view in the content review area now highlights all the data subject identifiers provided. 
@@ -365,7 +366,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - For records management items undergoing disposition review, when you select that item in the Disposition area of the compliance portal, a new Progress column displays the item's status. That status can be "Approved for deletion, 'Awaiting deletion from SharePoint/OneDrive' or 'Awaiting deletion from Exchange', or "Permanently Deleted". When an item is approved for permanent deletion as part of the disposition review process, that deletion can take up to 15 days to complete and this new column helps you to track its progress.
 - The configuration to [enable a mailbox for archiving](enable-archive-mailboxes.md) is moving to the new Exchange admin center (EAC) and instructions have been updated accordingly.
 - Currently, trainable classifiers for auto-apply retention labels aren't supported with adaptive scopes. As a workaround, use static scopes for this configuration combination.
-- Instructions to [Customize an archive and deletion policy for mailboxes](set-up-an-archive-and-deletion-policy-for-mailboxes.md) are updated to include only retention tags that that have an outcome that can't be achieved with Microsoft 365 retention.
+- Instructions to [Customize an archive and deletion policy for mailboxes](set-up-an-archive-and-deletion-policy-for-mailboxes.md) are updated to include only retention tags that have an outcome that can't be achieved with Microsoft 365 retention.
 
 ### Data loss prevention
 
