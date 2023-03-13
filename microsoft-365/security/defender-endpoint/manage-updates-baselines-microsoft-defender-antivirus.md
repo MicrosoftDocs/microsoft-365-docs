@@ -169,7 +169,7 @@ During the technical support (only) phase, commercially reasonable support incid
 > [!NOTE]
 > If you are manually deploying Microsoft Defender Antivirus Platform Update, or if you are using a script or a non-Microsoft management product to deploy Microsoft Defender Antivirus Platform Update, make sure that version `4.18.2001.10` is installed from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) before the latest version of Platform Update (N-2) is installed.
 
-## How to roll back this update
+## How to roll back an update
 
 In the unfortunate event that you encounter issues after a platform update, you can roll back to the previous or the inbox version of the Microsoft Defender platform.  
 - To roll back to the previous version, run the following command:<br>
@@ -177,8 +177,7 @@ In the unfortunate event that you encounter issues after a platform update, you 
 - To roll back this update to the version shipped with the Operating System ("%ProgramFiles%\Windows Defender")<br>
 `"%programdata%\Microsoft\Windows Defender\Platofrm\<version>\MpCmdRun.exe" -ResetPlatform`
 
-
-### Platform version included with Windows 10 releases
+## Platform version included with Windows 10 releases
 
 The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:
 
@@ -187,7 +186,7 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 |2004  (20H1/20H2) | `4.18.1909.6` | `1.1.17000.2` | Technical upgrade support (only) |
 |1909  (19H2) |`4.18.1902.5` |`1.1.16700.3` | Technical upgrade support (only) |
 |1903  (19H1) |`4.18.1902.5` |`1.1.15600.4` | Technical upgrade support (only) |
-|1809  (RS5) |`4.18.1807.1807`5 |`1.1.15000.2` | Technical upgrade support (only) |
+|1809  (RS5) |`4.18.1807.5` |`1.1.15000.2` | Technical upgrade support (only) |
 |1803  (RS4) |`4.13.17134.1` |`1.1.14600.4` | Technical upgrade support (only) |
 |1709  (RS3) |`4.12.16299.15` |`1.1.14104.0` | Technical upgrade support (only) |
 |1703  (RS2) |`4.11.15603.2` |`1.1.13504.0` | Technical upgrade support (only) |
@@ -201,6 +200,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
+
+### 20230308.1
+
+- Defender package version: **20230308.1**
+- Security intelligence version: **1.383.1321.0**
+- Engine version: **1.1.20000.2**
+- Platform version: **4.18.2301.6**
+
+#### Fixes
+
+- None
+
+#### Additional information
+
+- None
 
 ### 20230215.1
 
