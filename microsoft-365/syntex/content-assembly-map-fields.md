@@ -47,9 +47,9 @@ After you generate the document, the values against the mapped fields will autom
    ![Screenshot of document library showing the mapped fields in the library view.](../media/content-understanding/content-assembly-map-fields-4.png)
 
    > [!NOTE]
-   > - You can only choose to map fields when you publish a template or re-publish an already published template.<br>
- - You can deselect or reselect fields to be mapped as library columns every time you republish a modern template.<br>
- - If you change the name of a mapped field and republish the template with the new settings, we reflect the new name changes in the corresponding library column.<br>
- - If you change the data type of a mapped field and re-publish the template with the new settings, we reflect the new changes in the corresponding library column.<br> If you choose to proceed with [incompatible data type change such as **Single line of text** to **Number**, or **Number** to **Date and time**](https://support.microsoft.com/office/0d8ddb7b-7dc7-414d-a283-ee9dca891df7), we will deselect the mapped field by default to prevent potential loss of data from the column. If you still choose to re-select the field to be mapped to column, you might lose data from the column values of previously created documents. The content of the already generated documents will not be affected.<br>
- - We do not support image and table fields to be mapped as part of library columns. 
+   > - You can only choose to map fields when you publish a new template or republish an existing template.<br>
+   > - You can deselect or reselect fields to be mapped as library columns every time you republish a modern template.<br>
+ - If you change the name of a mapped field and republish the template with the new settings, the new name changes are reflected in the corresponding library column.<br>
+ - If you change the data type of a mapped field and republish the template with the new settings, the new changes are reflected in the corresponding library column.<br> If you choose to proceed with [incompatible data type change such as **Single line of text** to **Number**, or **Number** to **Date and time**](https://support.microsoft.com/office/0d8ddb7b-7dc7-414d-a283-ee9dca891df7), the mapped field will be deslected by default to prevent potential loss of data from the column. If you still choose to reselect the field to be mapped to column, you might lose data from the column values of previously created documents. The content of the documents that are already been generated will not be affected.<br>
+ - Mapping image and table fields to library columns is not supported. 
  
