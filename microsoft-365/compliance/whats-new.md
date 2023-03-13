@@ -173,7 +173,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Updates for [creating a subject rights request](/privacy/priva/subject-rights-requests-create):
     - During the [custom setup process](/privacy/priva/subject-rights-requests-create#custom-setup-guided-process-to-choose-all-settings), it's now optional to enter the data subject's name. A new flyout pane lets you add more identifiers.
     - When refining your search, a new [Conditions](/privacy/priva/subject-rights-requests-create#conditions) flyout pane appears during search refinement lets users set multiple search conditions at once.
-- Update to clarify that a subject rights request will automatically pause at the [data estimate stage](/privacy/priva/subject-rights-requests-data-retrieval) if over 10K items or 100 GB of data are likekly to be retrieved.
+- Update to clarify that a subject rights request will automatically pause at the [data estimate stage](/privacy/priva/subject-rights-requests-data-retrieval) if over 10K items or 100 GB of data are likely to be retrieved.
 - Updates for [reviewing data and collaborating on subject rights requests](/privacy/priva/subject-rights-requests-data-review):
     - There are new filtering options when reviewing data, including keywords supporting multiple words and wildcard.
     - The "Plain text" view in the content review area now highlights all the data subject identifiers provided. 
