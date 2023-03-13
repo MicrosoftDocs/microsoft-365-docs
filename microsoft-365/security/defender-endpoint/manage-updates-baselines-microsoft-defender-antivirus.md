@@ -186,7 +186,7 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 |2004  (20H1/20H2) | `4.18.1909.6` | `1.1.17000.2` | Technical upgrade support (only) |
 |1909  (19H2) |`4.18.1902.5` |`1.1.16700.3` | Technical upgrade support (only) |
 |1903  (19H1) |`4.18.1902.5` |`1.1.15600.4` | Technical upgrade support (only) |
-|1809  (RS5) |`4.18.1807.1807`5 |`1.1.15000.2` | Technical upgrade support (only) |
+|1809  (RS5) |`4.18.1807.5` |`1.1.15000.2` | Technical upgrade support (only) |
 |1803  (RS4) |`4.13.17134.1` |`1.1.14600.4` | Technical upgrade support (only) |
 |1709  (RS3) |`4.12.16299.15` |`1.1.14104.0` | Technical upgrade support (only) |
 |1703  (RS2) |`4.11.15603.2` |`1.1.13504.0` | Technical upgrade support (only) |
