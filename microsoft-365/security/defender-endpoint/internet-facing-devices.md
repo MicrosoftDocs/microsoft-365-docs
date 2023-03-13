@@ -71,7 +71,7 @@ At the top of the page, you can view a counter that shows the number of devices 
 
 ## Use the filter to focus on internet facing devices
 
-You can use filters to only view internet facing devices. This can help you focus in on these devices and investigate the risk they may introduce into your organization.
+You can use filters to focus in on internet facing devices and investigate the risk they may introduce into your organization.
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-filter.png" alt-text="Screenshot of the Browser extensions page" lightbox="../../media/defender-vulnerability-management/internet-facing-filter.png":::
 
@@ -83,7 +83,7 @@ Select an internet facing device to open its flyout pane, where you can learn mo
 
 The information in this pane helps you understand how the device was identified as an internet facing device along with details of the port and protocol for both the internal and external device. In the above example, we can tell that this device was successfully connected to as it was through TCP.
 
-For UDP, devices are flagged as internet facing if they're host reachable via UDP.
+Devices are flagged as internet facing if they are host reachable via UDP.
 
 ## Use advanced hunting
 
