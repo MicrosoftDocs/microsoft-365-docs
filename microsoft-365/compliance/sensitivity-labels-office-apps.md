@@ -419,7 +419,7 @@ Whether this label inheritance will override an existing label on the email mess
 
 You configure this setting in the sensitivity label policy, on the **Default settings for emails** page. For the section **Inherit label from attachments**, select the checkbox **Email inherits highest priority label from attachments**. The attachment must be a physical file, and can't be a link to a file (for example, a link to a file on Microsoft SharePoint or OneDrive).
 
-When you select this checkbox, you can then further select the following option: **Recommend users apply the attachement's label instead of automatically appplying it.** Without this selection, the label is automatically applied but users can still remove the label or select a different label before sending the email.
+When you select this checkbox, you can then further select the following option: **Recommend users apply the attachement's label instead of automatically applying it.** Without this selection, the label is automatically applied but users can still remove the label or select a different label before sending the email.
 
 > [!NOTE]
 > If you've configured the PowerShell advanced setting **AttachmentAction** for the Azure Information Protection (AIP) unified labeling client to be Automatic or Recommended, these options are automatically reflected in the compliance portal. However, the **AttachmentActionTip** advanced setting for a customized recommendation message doesn't have a corresponding entry in the compliance portal and isn't supported by built-in labeling.
