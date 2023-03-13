@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/09/2023
+ms.date: 03/13/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -192,6 +192,7 @@ However, you might find you don't need to use PowerShell to configure the suppor
 The following configurations from the AIP add-in that aren't yet supported by built-in labeling include:
 
 - [Label inheritance from email attachments](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
+    - This option is currently rolling out in preview. For more information, see [Configure label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments)
 
 - [Oversharing popup messages for Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
     - The equivalent of this configuration is now rolling out in preview. For more information, see the [migration playbook to configure oversharing popups](https://microsoft.github.io/ComplianceCxE/playbooks/AIP2MIP/Features/Collaboration/OversharingPopups/)
