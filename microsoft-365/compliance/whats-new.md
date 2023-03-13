@@ -366,7 +366,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - For records management items undergoing disposition review, when you select that item in the Disposition area of the compliance portal, a new Progress column displays the item's status. That status can be "Approved for deletion, 'Awaiting deletion from SharePoint/OneDrive' or 'Awaiting deletion from Exchange', or "Permanently Deleted". When an item is approved for permanent deletion as part of the disposition review process, that deletion can take up to 15 days to complete and this new column helps you to track its progress.
 - The configuration to [enable a mailbox for archiving](enable-archive-mailboxes.md) is moving to the new Exchange admin center (EAC) and instructions have been updated accordingly.
 - Currently, trainable classifiers for auto-apply retention labels aren't supported with adaptive scopes. As a workaround, use static scopes for this configuration combination.
-- Instructions to [Customize an archive and deletion policy for mailboxes](set-up-an-archive-and-deletion-policy-for-mailboxes.md) are updated to include only retention tags that that have an outcome that can't be achieved with Microsoft 365 retention.
+- Instructions to [Customize an archive and deletion policy for mailboxes](set-up-an-archive-and-deletion-policy-for-mailboxes.md) are updated to include only retention tags that have an outcome that can't be achieved with Microsoft 365 retention.
 
 ### Data loss prevention
 
