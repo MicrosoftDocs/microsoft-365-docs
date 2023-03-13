@@ -96,11 +96,11 @@ Multi-tenant organization people search is supported across a range of scenarios
 Use this [form][https://aka.ms/MTOpeoplesearchpreviewfeedback] to provide feedback to the MTO people search team. https://aka.ms/MTOpeoplesearchpreviewfeedback
 
 ## Frequently asked questions
-If you have questions regarding cross tenant synchronization, see [Cross Tenants Synchronization FAQs] [https://learn.microsoft.com/en-us/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview#frequently-asked-questions]
+If you have questions regarding cross tenant synchronization, see [Cross Tenants Synchronization FAQs] [/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview#frequently-asked-questions]
 
 1. What are the license requirements for MTO people search?
 
-A: Cross-tenant Synchronization is a pre-requisite to Multi-tenant people search feature. The licensing requirements for cross tenant synchronization can be found here. [License requirements] [https://learn.microsoft.com/en-us/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview#license-requirements]
+A: Cross-tenant Synchronization is a pre-requisite to Multi-tenant people search feature. The licensing requirements for cross tenant synchronization can be found here. [License requirements] [/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview#license-requirements]
 
 2.	What is the sync schedule?
 
@@ -116,11 +116,11 @@ A: Cross-tenant synchronization will sync commonly used attributes on the user o
 - What attributes can't be synchronized?
 
 Attributes including (but not limited to) managers, photos, custom security attributes, and user attributes outside of the directory can't be synchronized by cross-tenant synchronization. 
-All synced attributes will be displayed on the people card if available. [For more information on attribute syncing] [https://learn.microsoft.com/en-us/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview#attributes]
+All synced attributes will be displayed on the people card if available. [For more information on attribute syncing] /azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview#attributes]
 
 7. Is there a limit to how many tenants we can apply this to? 
 A: No
 8. Is there a limit on the number of user objects that can be synced?
-A: No. However, it is important to note that if there are more users to be synced in a single job, it will take longer to complete. [How long will it take to provision users] [https://learn.microsoft.com/en-us/azure/active-directory/app-provisioning/application-provisioning-when-will-provisioning-finish-specific-user#how-long-will-it-take-to-provision-users]
+A: No. However, it is important to note that if there are more users to be synced in a single job, it will take longer to complete. [How long will it take to provision users] [/azure/active-directory/app-provisioning/application-provisioning-when-will-provisioning-finish-specific-user#how-long-will-it-take-to-provision-users]
 9. Can I sync users as guests rather than members?
 A: Yes. However, to enable M365 MTO people search and future MTO scenarios, we require you to sync users as members. Guests are intended for cross-company scenarios, whereas members are intended for tenants within the same company.
