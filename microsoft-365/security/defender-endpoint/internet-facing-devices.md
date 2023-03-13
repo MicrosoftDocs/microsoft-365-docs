@@ -35,13 +35,23 @@ As threat actors continuously scan the web to detect exposed devices they can ex
 Microsoft Defender for Endpoint automatically identifies and flags onboarded, exposed, internet facing devices in the [Microsoft 365 Defender portal](https://security.microsoft.com/). This critical information provides better visibility into the organizations external attack surface and deep insights into asset exploitability.
 
 > [!NOTE]
-> Only Windows devices onboarded to Microsoft Defender for Endpoint can be identified as internet facing.
+> Currently, only Windows devices onboarded to Microsoft Defender for Endpoint can be identified as internet facing. Support for cross platform will be available upcoming release.
 
 ## How we discover internet facing devices
 
-We determine whether a device is internet facing is by checking its IP range.
+With many organizations employing public IP ranges, it's easy to assume the most straightforward approach to determine whether a device is internet facing is by checking its IP range. In reality, combining numerous data sources, together with employing different classification logics, is required to get maximum coverage and optimal accuracy.
 
-To identify the external IPs that are communicating with internal devices, we need to determine which subnets are part of the corporate network. We can see subnets for machines that are protected by Defender for Endpoint. This information helps to determine whether a connection captured by Microsoft Defender for Endpoint is internal, or external.
+To identify the external IPs that are communicating with internal devices, we need to determine which subnets are part of the corporate network. We can identify subnets for machines that are protected by Defender for Endpoint. This information helps to determine whether a connection captured by Microsoft Defender for Endpoint is internal, or external.
+
+1.	Using multiple methods to identify IF devices.
+2.	Top methods include (1) external scans to identify which devices are approachable from the outside and (2) internal logics to identify devices communicating with internal IP addresses.
+a.	External scan overview – @Sinead O'Sullivan, should we remind RiskIQ as a powerup here? - @Nimrod Roimy, can you please write a short, simple paragraph so Sinead could finalize?
+b.	Identifying devices communicating with internal IP addresses - @Nimrod Roimy, can you please write a short, simple paragraph so Sinead could finalize?
+3.	Summary
+
+Last sentence re TCP & UDP should be in a note and have rational (e.g., why do we identify UDP approachable devices as IF? Because the fact a device is approachable still poses a certain threat.)
+
+
 
 Device network connections, captured as part of Defender for Endpoint signals, help to identify external incoming connections that reach internal devices, indicating which devices are internet facing.
 
