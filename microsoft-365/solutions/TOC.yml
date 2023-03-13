@@ -61,6 +61,8 @@
           href: configure-teams-sensitive-protection.md
         - name: Configure highly sensitive protection
           href: configure-teams-highly-sensitive-protection.md
+        - name: Configure a team with a unique sensitivity label
+          href: secure-teams-security-isolation.md
       - name: Configure external sharing
         items:
         - name: External sharing overview
