@@ -64,7 +64,7 @@ If you have not previously configured Microsoft Syntex, read [Set up Microsoft S
 
 ## Monitor your Microsoft Syntex pay-as-you-go usage
 
-You can monitor your Microsoft Syntex pay-as-you-go usage in Azure Cost Management. You must have at least *read* access to the resource group that you specified for Microsoft Syntex.
+You can monitor your Microsoft Syntex pay-as-you-go usage in Azure Cost Management. You must have at least *read* access to the resource group that you specified for Microsoft Syntex. Note that usage information may take up to 24 hours to appear in Cost Maangement.
 
 To see the charges applied to the Syntex meters
 1. Sign in to [Azure Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/overview).
