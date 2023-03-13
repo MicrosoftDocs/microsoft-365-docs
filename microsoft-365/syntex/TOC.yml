@@ -121,7 +121,7 @@
           href: content-assembly.md
         - name: Create a modern template
           href: content-assembly-modern-template.md
-        - name: Map template fields to library view
+        - name: Map template fields to library columns
           href: content-assembly-map-fields.md
         - name: Edit a modern template
           href: content-assembly-edit-template.md
