@@ -24,7 +24,7 @@ You no longer have to train and build AI models to extract the information alrea
 
 ## Map fields to a custom view of your library
 
-1. Once you select **Publish** to publish a modern template after creating the necessary fields, you can choose to add some or all of the created fields into a custom view of the library.
+1. When you select **Publish** to publish a modern template after creating the necessary fields, you can choose to add some or all of the created fields into a custom view of the library.
 
    ![Screenshot of the Publish template panel and template document.](../media/content-understanding/content-assembly-map-fields-1.png)
 
