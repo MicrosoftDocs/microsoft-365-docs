@@ -239,7 +239,7 @@ For detected domain impersonation attempts, the following actions are available:
 - **Don't apply any action**: This is the default value.
 - **Redirect message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
 - **Move messages to the recipients' Junk Email folders**: The message is delivered to the mailbox and moved to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
-  
+
 - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
   - [Quarantine in Microsoft 365](quarantine-email-messages.md)
   - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
@@ -272,7 +272,7 @@ For impersonation attempts detected by mailbox intelligence, the following actio
 - **Quarantine the message**: If you select this action, you can also select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
 - **Deliver the message and add other addresses to the Bcc line**
 - **Delete the message before it's delivered**
-  
+
 #### Impersonation safety tips
 
 Impersonation safety tips appear to users when messages are identified as impersonation attempts. The following safety tips are available:

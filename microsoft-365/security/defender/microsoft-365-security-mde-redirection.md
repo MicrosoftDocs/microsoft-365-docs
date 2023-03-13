@@ -9,14 +9,14 @@ ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security
   - tier2
 ms.custom: admindeeplinkDEFENDER
@@ -45,7 +45,7 @@ Once automatic redirection is enabled, accounts accessing the former Microsoft D
 
 Learn more about what's changed: [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md).
 
-This includes redirection for direct access to the former portal via browser, including links pointing towards the former securitycenter.windows.com portal - such as links in email notifications, and links returned by SIEM API calls.  
+This includes redirection for direct access to the former portal via browser, including links pointing towards the former securitycenter.windows.com portal - such as links in email notifications, and links returned by SIEM API calls.
 
  External links from email notifications or SIEM APIs currently contain links to both portals. Once redirection is enabled, both links will point to Microsoft 365 Defender until the old link is eventually removed. We encourage you to adopt the new link pointing to Microsoft 365 Defender.
 
@@ -70,7 +70,7 @@ Refer to the table below for more on links and routing.
 
 ## When does this take effect?
 
-Once enabled, this update might take effect almost immediately for some accounts. But the redirection might take longer to propagate to every account in your organization. Accounts in active sessions while this setting is applied will not be ejected from their session and will only be routed to Microsoft 365 Defender after ending their current session and signing back in again.  
+Once enabled, this update might take effect almost immediately for some accounts. But the redirection might take longer to propagate to every account in your organization. Accounts in active sessions while this setting is applied will not be ejected from their session and will only be routed to Microsoft 365 Defender after ending their current session and signing back in again.
 
 ### Set up portal redirection
 
@@ -80,17 +80,17 @@ To start routing accounts to Microsoft 365 Defender:
 
 2. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
-3. Navigate to **Settings** > **Endpoints** > **General** > **Portal redirection** or [click here](https://security.microsoft.com/preferences2/portal_redirection).  
+3. Navigate to **Settings** \> **Endpoints** \> **General** \> **Portal redirection** or [click here](https://security.microsoft.com/preferences2/portal_redirection).
 
 4. Toggle the Automatic redirection setting to **On**.
 
 5. Click **Enable** to apply automatic redirection to Microsoft 365 Defender.
 
->[!IMPORTANT]
->Enabling this setting will not terminate active user sessions. Accounts who are in an active session while this setting is applied will only be directed to Microsoft 365 Defender after ending their current session and signing in again.
+> [!IMPORTANT]
+> Enabling this setting will not terminate active user sessions. Accounts who are in an active session while this setting is applied will only be directed to Microsoft 365 Defender after ending their current session and signing in again.
 
->[!NOTE]
->You must be a global administrator or have security administrator permissions in Azure Active Directory to enable or disable this setting.  
+> [!NOTE]
+> You must be a global administrator or have security administrator permissions in Azure Active Directory to enable or disable this setting.
 
 ## Can I go back to using the former portal?
 
@@ -100,21 +100,22 @@ To revert to the former Microsoft Defender for Endpoint portal:
 
 1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a global administrator or using and account with security administrator permissions in Azure Active directory.
 
-2. Navigate to **Settings** > **Endpoints** > **General** > **Portal redirection** or [open the page here](https://security.microsoft.com/preferences2/portal_redirection).  
+2. Navigate to **Settings** \> **Endpoints** \> **General** \> **Portal redirection** or [open the page here](https://security.microsoft.com/preferences2/portal_redirection).
 
 3. Toggle the Automatic redirection setting to **Off**.
 
 4. Click **Disable** & share feedback when prompted.
 
-This setting can be enabled again at any time. 
+This setting can be enabled again at any time.
 
-Once disabled, accounts will no longer be routed to security.microsoft.com, and you will once again have access to the former portal - securitycenter.windows.com or securitycenter.microsoft.com. 
+Once disabled, accounts will no longer be routed to security.microsoft.com, and you will once again have access to the former portal - securitycenter.windows.com or securitycenter.microsoft.com.
 
 ## Related information
+
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
-- [Microsoft delivers unified SIEM and XDR to modernize security operations](https://www.microsoft.com/security/blog/?p=91813) 
-- [XDR versus SIEM infographic](https://afrait.com/blog/xdr-versus-siem/) 
-- [`The New Defender`](https://afrait.com/blog/the-new-defender/) 
-- [About Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender) 
+- [Microsoft delivers unified SIEM and XDR to modernize security operations](https://www.microsoft.com/security/blog/?p=91813)
+- [XDR versus SIEM infographic](https://afrait.com/blog/xdr-versus-siem/)
+- [`The New Defender`](https://afrait.com/blog/the-new-defender/)
+- [About Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender)
 - [Microsoft security portals and admin centers](portals.md)
