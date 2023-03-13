@@ -6,7 +6,7 @@ ms.author: cabailey
 author: cabailey
 ms.reviewer: alejandros
 manager: laurawi
-ms.date: 03/09/2023
+ms.date: 03/13/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -41,7 +41,7 @@ The numbers listed are the minimum Office application versions required for each
 
 > [!NOTE]
 > For Windows and the Semi-Annual Enterprise Channel, the minimum supported version numbers might not yet be released. [Learn more](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
- 
+
 |Capability |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
 |[AIP add-in disabled by default](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in)| Preview: [Current Channel (Preview)](https://office.com/insider) | Not relevant  | Not relevant | Not relevant| Not relevant |
@@ -101,6 +101,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)| Current Channel: Rolling out to 2302+ | Under review | Under review | Under review | Under review |
 |[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails) | Current Channel: 2301+ | Rolling out: 16.70+ <sup>\*</sup> | Rolling out 4.2309+| Rolling out 4.2309+ | Yes |
 |[Preventing oversharing as DLP policy tip](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)| Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
+|[Label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Yes |
 
 **Footnotes:**
 
