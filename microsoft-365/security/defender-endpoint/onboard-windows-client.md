@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 05/19/2022
 ---
 
 # Defender for Endpoint onboarding Windows Client

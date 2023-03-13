@@ -3,6 +3,7 @@ title: "Active user in Microsoft 365 usage reports"
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

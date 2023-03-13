@@ -11,18 +11,16 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 localization_priority: Normal
-ms.date: 09/06/2022 
+ms.date: 09/06/2022
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
 ms.reviewer: mkaminska
 ---
-
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Device health, Microsoft Defender Antivirus health report
 
@@ -42,6 +40,7 @@ The Device Health report provides information about the devices in your organiza
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**. The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on the following aspects of Microsoft Defender Antivirus:
+
 - [Antivirus mode card](#antivirus-mode-card)
 - [Antivirus engine version card](#antivirus-engine-version-card)
 - [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card)
@@ -71,7 +70,8 @@ To Assign these permissions:
 
 For more information about user role management, see [Create and manage roles for role-based access control](user-roles.md).
 
-## Microsoft Defender Antivirus health tab 
+## Microsoft Defender Antivirus health tab
+
 The Microsoft Defender Antivirus health tab contains eight cards that report on several aspects of Microsoft Defender Antivirus in your organization:
 
 Two cards, [Antivirus mode card](#antivirus-mode-card) and [Recent antivirus scan results card](#recent-antivirus-scan-results-card), report about Microsoft Defender Antivirus functions.
@@ -99,9 +99,11 @@ Up-to-date reporting generates information for devices that meet the following c
 - Engine version: 1.1.19300.2+
 - Platform version: 4.18.2202.1+
 - Cloud protection enabled
-- Windows OS
-   >[!Note]
-   >Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
+- MsSense.exe version 10.8210.x or later
+- Windows OS - Windows 10 1809 or later
+
+  > [!NOTE]
+  > Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
 
 :::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Shows the Microsoft Defender Antivirus Health tab." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
@@ -143,7 +145,7 @@ There are two different export csv functionalities through the portal:
 
 - **Top level export**. You can use the top-level **Export** button to gather an all-up Microsoft Defender Antivirus health report (500-K limit).
 
-   ::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Shows the top-level export report button" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Screenshot that shows the top-level export report button." lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
 
 - **Flyout level export**. You can use the **Export** button within the flyouts to export a report to an Excel spreadsheet (100-K limit).
 
@@ -156,9 +158,9 @@ For information on exporting using API, see the following articles:
 
 > [!IMPORTANT]
 >
-> Currently, only the **Antivirus Health JSON Response** is generally available. **Antivirus Health API via files** is only available in public preview.
+> Currently, only the [Antivirus Health JSON Response](device-health-api-methods-properties.md#13-export-device-antivirus-health-details-api-properties-json-response) is generally available. [Antivirus Health API via files](device-health-api-methods-properties.md#14-export-device-antivirus-health-details-api-properties-via-files) is only available in public preview.
 >
-> **Advanced Hunting custom query** is currently only available in public preview, even if the queries are still visible.
+> [Advanced Hunting custom query](run-advanced-query-api.md) is currently only available in public preview, even if the queries are visible.
 
 ### Microsoft Defender Antivirus version and update cards functionality
 
@@ -330,6 +332,23 @@ The following table lays out the possible up to date report values for **Securit
 | <7 days (new) | <7 days (new) | Up to date |
 
 ## See also
+
+> [!TIP]
+> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
+>
+> - Top paths that impact scan time
+> - Top files that impact scan time
+> - Top processes that impact scan time
+> - Top file extensions that impact scan time
+> - Combinations – for example:
+>   - top files per extension
+>   - top paths per extension
+>   - top processes per path
+>   - top scans per file
+>   - top scans per file per process
+>
+> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions.
+> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 
 - [Export device antivirus health details API methods and properties](device-health-api-methods-properties.md)
 - [Export device antivirus health report](device-health-api-methods-properties.md)

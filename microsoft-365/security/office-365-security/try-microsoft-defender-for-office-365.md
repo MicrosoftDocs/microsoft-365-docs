@@ -15,10 +15,12 @@ search.appverid:
   - MOE150
 ms.collection:
   - m365-security
+  - tier1
 ms.custom: 
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS:
+ms.date: 1/31/2023
 ---
 
 # Try Microsoft Defender for Office 365
@@ -63,7 +65,7 @@ The protection features of EOP and Defender for Office 365 are implemented using
 
 Your eligibility for an evaluation or trial means you already have EOP. **No new or special EOP policies are created for your evaluation or trial of Defender for Office 365 Plan 2**. Existing EOP policies in your Microsoft 365 organization are able to act on messages (for example, send messages to the Junk Email folder or to quarantine):
 
-- [Anti-malware policies](anti-malware-protection.md)
+- [Anti-malware policies](anti-malware-protection-about.md)
 - [Inbound anti-spam protection](anti-spam-protection-about.md)
 - [Anti-spoofing protection in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings)
 
@@ -184,7 +186,7 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
 
             [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as *skip listing*) is automatically configured on the connector that you specify.
 
-            When a third-party service or device sits in front of email flowing into Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-spoofing-protection.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer-about.md) and [Automated Investigation & Response (AIR)](automated-investigation-response-office.md).
+            When a third-party service or device sits in front of email flowing into Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-phishing-protection-spoofing-about.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer-about.md) and [Automated Investigation & Response (AIR)](air-about-office.md).
 
           - **List each gateway IP address your messages pass through**: This setting is available only if you selected **Other** for **Select a third party service provider**. Enter a comma-separated list of the IP addresses that are used by the third-party protection service or device to send mail into Microsoft 365.
 
@@ -196,7 +198,7 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
 
           As explained in the previous step, Enhanced Filtering for Connectors is automatically configured on the connector that you specify as the source of mail from the protection service.
 
-          Turning on Enhanced Filtering for Connectors without an SCL=-1 rule for incoming mail from the protection service will vastly improve the detection capabilities of EOP protection features like [spoof intelligence](anti-spoofing-protection.md), and could impact the delivery of those newly detected messages (for example, move to the Junk Email folder or to quarantine). This impact is limited to EOP policies; as previously explained, Defender for Office 365 policies are created in audit mode.
+          Turning on Enhanced Filtering for Connectors without an SCL=-1 rule for incoming mail from the protection service will vastly improve the detection capabilities of EOP protection features like [spoof intelligence](anti-phishing-protection-spoofing-about.md), and could impact the delivery of those newly detected messages (for example, move to the Junk Email folder or to quarantine). This impact is limited to EOP policies; as previously explained, Defender for Office 365 policies are created in audit mode.
 
           To create an SCL=-1 mail flow rule or to review your existing rules, click the **Go to Exchange admin center** button on the page. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
@@ -319,7 +321,7 @@ In **blocking mode**, the following reports show detections by Defender for Offi
 
   - [View data by Content \> Malware](reports-email-security.md#view-data-by-content--malware)
 
-    Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) appear in **MDO detonation**.
+    Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md) appear in **MDO detonation**.
 
   - The [Top senders and recipients report](reports-email-security.md#top-senders-and-recipients-report)
 

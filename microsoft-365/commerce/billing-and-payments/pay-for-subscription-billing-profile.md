@@ -30,6 +30,9 @@ When you buy a subscription, you pay for it with a billing profile. The billing 
 
 If you're not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md). If you don't have a billing profile, see [How to pay for your subscription](pay-for-your-subscription.md).
 
+> [!IMPORTANT]
+> Starting on April 1, 2023, we will stop accepting checks as a payment method for subscriptions paid by invoice. Beginning on that date, pay by check will no longer be available as a payment option, and check payment instructions will be removed from invoices. You can still pay for your invoice by electronic funds transfer (EFT). See your invoice for EFT payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by EFT, and avoid possible service disruption.
+
 ## Paying with recurring billing turned on or off
 
 By default, recurring billing is automatically turned on for all paid subscriptions. Every billing period, we automatically charge the payment method associated with the billing profile to pay for any subscriptions that use that billing profile. If your payment method is declined, you can use the **Pay now** button on the invoice summary in the Microsoft 365 admin center to make a one-time payment for your subscription.

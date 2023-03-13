@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date:
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -74,7 +74,7 @@ When content has retention settings assigned to it, that content remains in its 
 > [!NOTE]
 > Because the Preservation Hold library is included in the site's storage quota, you might need to increase your storage when you use retention settings for SharePoint and Microsoft 365 groups.
 >
-These secure locations and the retained content are not visible to most people. In most cases, people do not even need to know that their content is subject to retention settings.
+These secure locations and the retained content aren't visible to most people. In most cases, people don't even need to know that their content is subject to retention settings.
 
 For more detailed information about how retention settings work for different workloads, see the following articles:
 
@@ -109,20 +109,17 @@ Unlike retention policies, retention settings from retention labels travel with 
 
 Retention policies can be applied to the following locations:
 
-- Exchange email
-- SharePoint site
+- Exchange mailboxes
+- SharePoint classic and communication sites
 - OneDrive accounts
-- Microsoft 365 Groups
+- Microsoft 365 Group mailboxes and sites
 - Skype for Business
 - Exchange public folders
-- Teams channel messages
+- Teams channel messages (standard channels and [shared channels](/MicrosoftTeams/shared-channels))
 - Teams chats
 - Teams private channel messages
 - Yammer community messages
 - Yammer user messages
-
-> [!NOTE]
-> Teams channel messages now include [shared channels](/MicrosoftTeams/shared-channels) (currently in preview) as well as standard channels.
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
 
@@ -161,7 +158,7 @@ With retention labels, you can:
 
 - **Mark items as a record** as part of your [records management](records-management.md) strategy. When this labeled content remains in Microsoft 365, further restrictions are placed on the content that might be needed for regulatory reasons. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
-Retention labels, unlike [sensitivity labels](sensitivity-labels.md), do not persist if the content is moved outside Microsoft 365.
+Retention labels, unlike [sensitivity labels](sensitivity-labels.md), don't persist if the content is moved outside Microsoft 365.
 
 #### Classifying content without applying any actions
 
@@ -175,7 +172,7 @@ For example, you can create and apply a retention label named "Review later" wit
 
 You can specify a retention label as a condition in a Microsoft Purview Data Loss Prevention (DLP) policy for documents in SharePoint. For example, configure a DLP policy to prevent documents from being shared outside the organization if they have a specified retention label applied to it.
 
-For more information, see [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+For more information, see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md#create-and-deploy-data-loss-prevention-policies).
 
 #### Retention labels and policies that apply them
 
@@ -200,14 +197,14 @@ Retention labels can be published to different locations, depending on what the 
 |Auto-applied based on keywords or a query  |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  |
 |Auto-applied to cloud attachments  |SharePoint, OneDrive, Microsoft 365 Groups  |
 
-Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete content from these locations, use retention policies instead.
+Exchange public folders, Skype, Teams and Yammer messages don't support retention labels. To retain and delete content from these locations, use retention policies instead.
 
 #### Only one retention label at a time
 
 An email or document can have only a single retention label applied to it at a time. A retention label can be applied [manually](create-apply-retention-labels.md#manually-apply-retention-labels) by an end user or admin, or automatically by using any of the following methods:
 
 - [Auto-apply label policy](apply-retention-labels-automatically.md)
-- [Document understanding model for SharePoint Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
+- [Document understanding model for Microsoft Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
 - [Default label for SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 - [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
 
@@ -215,17 +212,16 @@ For standard retention labels (they don't mark items as a [record or regulatory 
 
 - Admins and end users can manually change or remove an existing retention label that's applied on content.
 
-- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with one possible exception: The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed.
-
 - When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with two possible exceptions:
 
   - The existing label is configured to automatically apply a different retention label at the end of the retention period.
+    
   - The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed.
-
-  For more information about the label behavior when it's applied by using a default label:
-
-  - Default label for SharePoint: [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-  - Default label for Outlook: [Applying a default retention label to an Outlook folder](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+    
+    For more information about the label behavior when it's applied by using a default label:
+    
+      - Default label for SharePoint: [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+      - Default label for Outlook: [Applying a default retention label to an Outlook folder](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
 - If there are multiple auto-apply label policies that could apply a retention label, and content meets the conditions of multiple policies, the retention label for the oldest auto-apply label policy (by date created) is applied.
 
@@ -244,7 +240,7 @@ You can then drill down into details by using [content explorer](data-classifica
 
 After retention labels are applied to content, either by users or auto-applied, you can use content search to find all items that have a specific retention label applied.
 
-When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
 
 ![Retention label condition.](../media/retention-label-condition.png)
 
@@ -338,32 +334,28 @@ When you create a retention policy or retention label policy, you must choose be
 
     OneDrive URLs are particularly challenging to reliably specify because by default, these URLs aren't created until the user accesses their OneDrive for the first time. And if a user's UPN changes, which you might not know about, their OneDrive URL automatically changes.
 
-Advantages of using adaptive scopes:
+Advantages of using adaptive scopes over static scopes:
 
 - No limits on the [number of items per policy](retention-limits.md#maximum-number-of-items-per-policy). Although adaptive policies are still subject to the [maximum number of policies per tenant](retention-limits.md#maximum-number-of-policies-per-tenant) limitations, the more flexible configuration will likely result in far fewer policies.
 
-- More powerful targeting for your retention requirements. For example, you can assign different retention settings to users according to their geographical location by using existing Azure AD attributes without the administrative overhead of creating and maintaining groups for this purpose.
-
-- Query-based membership provides resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
-
-- A single retention policy can include locations for both Microsoft Teams and Yammer, whereas when you use a static scope, these locations require their own retention policy.
-
 - You can apply specific retention settings to just inactive mailboxes. This configuration isn't possible with a static scope because at the time the policy is assigned, static scopes don't support the specific inclusion of recipients with inactive mailboxes.
 
-Advantages of using static scopes:
+For more advantages of using adaptive scopes, see [Adaptive scopes](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
+
+Advantages of using static scopes over adaptive scopes:
 
 - Simpler configuration if you want all instances automatically selected for a workload.
 
-    For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers of instances that you have to specify are low and do not change. However, when these number of instances start to increase and you have frequent changes in your organization that require you to reconfigure your policies, adaptive scopes can be simpler to configure and much easier to maintain.
+    For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers of instances that you have to specify are low and don't change. However, when these number of instances start to increase and you have frequent changes in your organization that require you to reconfigure your policies, adaptive scopes can be simpler to configure and much easier to maintain.
 
 - The **Skype for Business** and **Exchange public folders** locations don't support adaptive scopes. For those locations, you must use a static scope.
 
-For configuration information, see [Configuring adaptive scopes](retention-settings.md#configuration-information-for-adaptive-scopes).
+For configuration information, see [Configuring adaptive scopes](purview-adaptive-scopes.md#configure-adaptive-scopes).
 
-To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
+> [!NOTE]
+> In [February 2023](whats-new.md#february-2023), the configuration of adaptive scopes moved in the Microsoft Purview compliance portal to **Roles & Scopes**.
 
-> [!IMPORTANT]
-> Currently, adaptive scopes don't support [Preservation Lock to restrict changes to retention policies and retention label policies](#use-preservation-lock-to-restrict-changes-to-policies).
+Currently, adaptive scopes don't support [Preservation Lock to restrict changes to retention policies and retention label policies](#use-preservation-lock-to-restrict-changes-to-policies).
 
 ## Policy lookup
 
@@ -434,7 +426,7 @@ Explanation for the four different principles:
 
     2. When you have retention policies only: If a retention policy for a location uses an adaptive scope or a static scope that includes specific instances (such as specific users for Exchange email) that retention policy takes precedence over a static scope that is configured for all instances for the same location.
 
-        A static scope that is configured for all instances for a location is sometimes referred to as an "org-wide policy". For example, **Exchange email** and the default setting of **All recipients**. Or, **SharePoint sites** and the default setting of **All sites**. When retention policies aren't org-wide but have been configured with an adaptive scope or a static scope that includes specific instances, they have equal precedence at this level.
+        A static scope that is configured for all instances for a location is sometimes referred to as an "org-wide policy". For example, **Exchange mailboxes** and the default setting of **All mailboxes**. Or, **SharePoint classic and communication sites** and the default setting of **All sites**. When retention policies aren't org-wide but have been configured with an adaptive scope or a static scope that includes specific instances, they have equal precedence at this level.
 
         **Example 1 for this third principle (policies)**: An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
 
@@ -513,7 +505,7 @@ Additional information for specific locations:
 
   - If the retention policy is implicitly applied to a mailbox and the configured retention action is to retain, the retention policy continues to apply and an inactive mailbox never becomes eligible for automatic deletion. When the retain action no longer applies because the retention period has expired, the Exchange admin can now [manually delete the inactive mailbox](delete-an-inactive-mailbox.md)
 
-    An implicit retention policy requires a static policy scope with the **All recipients** (for Exchange email) or **All groups** (for Microsoft 365 Groups) configuration.
+    An implicit retention policy requires a static policy scope with the **All mailboxes** (for Exchange email) or **All groups** (for Microsoft 365 Groups) configuration.
 
     For more information about inactive mailboxes that have retention policies applied, see [Inactive mailboxes and Microsoft 365 retention](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
 
@@ -554,7 +546,7 @@ For a list of available cmdlets, and to identify which ones are supported for th
 
 ## When to use retention policies and retention labels or eDiscovery holds
 
-Although retention settings and [holds that you create with an eDiscovery case](create-ediscovery-holds.md) can both prevent data from being permanently deleted, they are designed for different scenarios. To help you understand the differences and decide which to use, use the following guidance:
+Although retention settings and [holds that you create with an eDiscovery case](ediscovery-create-holds.md) can both prevent data from being permanently deleted, they are designed for different scenarios. To help you understand the differences and decide which to use, use the following guidance:
 
 - Retention settings that you specify in retention policies and retention labels are designed for a long-term data lifecycle management strategy to retain or delete data for compliance requirements. The scope is usually broad with the main focus being the location and content rather than individual users. The start and end of the retention period is configurable, with the option to automatically delete content without additional administrator intervention.
 
@@ -577,18 +569,18 @@ If you are using older eDiscovery tools to preserve data, see the following reso
 
 - Exchange:
   - [In-Place Hold and Litigation Hold](/exchange/security-and-compliance/in-place-and-litigation-holds)
-  - [How to identify the type of hold placed on an Exchange Online mailbox](./identify-a-hold-on-an-exchange-online-mailbox.md)
+  - [How to identify the type of hold placed on an Exchange Online mailbox](./ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md)
 
 - SharePoint and OneDrive:
   - [Add content to a case and place sources on hold in the eDiscovery Center](/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
 
-- [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md)
+- [Retirement of legacy eDiscovery tools](ediscovery-legacy-retirement.md)
 
 ## Use retention policies and retention labels instead of older features
 
 If you need to proactively retain or delete content in Microsoft 365 for data lifecycle management, we recommend that you use Microsoft 365 retention policies and retention labels instead of the following older features.
 
-If you currently use these older features, they will continue to work side by side with Microsoft 365 retention policies and retention labels. However, we recommend that going forward, you use Microsoft 365 retention policies and retention labels to benefit from a single solution to manage both retention and deletion of content across multiple workloads in Microsoft 365.
+If you currently use these older features, they will usually work side by side with Microsoft 365 retention policies and retention labels. Check their specific documentation for any restrictions. However, we recommend that going forward, you use Microsoft 365 retention policies and retention labels to benefit from a single solution to manage both retention and deletion of content across multiple workloads in Microsoft 365.
 
 **Older features from Exchange Online:**
 
@@ -604,7 +596,7 @@ If you currently use these older features, they will continue to work side by si
     
     Might be required to integrate with third-party solutions and copies of email messages and their data communication are stored outside Exchange Online. Because you're moving data outside Microsoft 365, you must take extra precautions to secure it and also resolve any duplications that might result from this solution. It will be your responsibility to monitor and follow up on any non-delivery receipts to the journaling mailbox that can occur because of external and dependent services. You don't have these additional administrative overheads when you use Microsoft 365 retention and other Microsoft Purview compliance solutions that also aren't limited to just email messages.
 
-- [Litigation hold](create-a-litigation-hold.md) (retention only)
+- [Litigation hold](ediscovery-create-a-litigation-hold.md) (retention only)
 
    Although Litigation holds are still supported, we recommend you use Microsoft 365 retention or eDiscovery holds, [as appropriate](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
 
@@ -616,9 +608,9 @@ If you currently use these older features, they will continue to work side by si
 
 - [Use policies for site closure and deletion](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (deletion only)
 
-- [Information management policies](intro-to-info-mgmt-policies.md) (deletion only)
+- [Information management policies](/sharepoint/intro-to-info-mgmt-policies) (deletion only)
 
-If you have configured SharePoint sites for content type policies or information management policies to retain content for a list or library, those policies are ignored while a retention policy is in effect.
+If you have configured SharePoint sites for content type policies or information management policies to retain content for a list or library, those policies are ignored while a retention policy or retention label policy is in effect.
 
 ## Related information
 

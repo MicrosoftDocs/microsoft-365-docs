@@ -3,6 +3,7 @@ title: "Manage Microsoft 365 user accounts"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise

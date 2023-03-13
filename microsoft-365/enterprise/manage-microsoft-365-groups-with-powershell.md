@@ -3,6 +3,7 @@ title: "Manage Microsoft 365 Groups with PowerShell"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise

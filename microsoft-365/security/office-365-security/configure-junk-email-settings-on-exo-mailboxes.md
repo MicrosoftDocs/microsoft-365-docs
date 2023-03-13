@@ -3,10 +3,8 @@ title: Configure junk email settings on Exchange Online mailboxes
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: Admin
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid: 
   - MOE150
@@ -15,9 +13,11 @@ search.appverid:
   - MET150
 ms.collection: 
   - m365-security
+  - tier2
 description: Admins can learn how to configure the junk email settings in Exchange Online mailboxes. Many of these settings are available to users in Outlook or Outlook on the web.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Configure junk email settings on Exchange Online mailboxes
@@ -74,8 +74,8 @@ The safelist collection on a mailbox includes the Safe Senders list, the Safe Re
   - **Move messages to Junk Email folder**: Domain entries and sender email address entries are honored. Messages from those senders are not moved to the Junk Email folder.
   - **Quarantine**: Domain entries are not honored (messages from those senders are quarantined). Email address entries are honored (messages from those senders are not quarantined) if either of the following statements are true:
     - The message is not identified as malware or high confidence phishing (malware and high confidence phishing messages are quarantined).
-    - The email address is not also in a block entry in the [Tenant Allow/Block List](tenant-allow-block-list-about.md) (messages from those senders will be quarantined).
-- In standalone EOP with directory synchronization, domain entries aren't synchronized by default, but you can enable synchronization for domains. For more information, see [KB3019657](https://support.microsoft.com/help/3019657).
+    - The email address is not also in a block entry in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) (messages from those senders will be quarantined).
+- In standalone EOP with directory synchronization, domain entries aren't synchronized by default, but you can enable synchronization for domains. For more information, see [Configure Content Filtering to Use Safe Domain Data: Exchange 2013 Help | Microsoft Learn](/exchange/configure-content-filtering-to-use-safe-domain-data-exchange-2013-help).
 - You can't directly modify the Safe Recipients list by using the **Set-MailboxJunkEmailConfiguration** cmdlet (the _TrustedRecipientsAndDomains_ parameter doesn't work). You modify the Safe Senders list, and those changes are synchronized to the Safe Recipients list.
 
 To configure the safelist collection on a mailbox, use the following syntax:

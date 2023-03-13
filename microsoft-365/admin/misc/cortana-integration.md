@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -169,20 +170,6 @@ Individuals can opt out of Play My Emails using the following steps.
 4. Move the toggle to off on the accounts you want to disable.
 
 [Learn more about Play My Emails](https://support.microsoft.com/help/4558256)
-
-### Briefing email
-
-Cortana sends a personalized briefing email with tasks and commitments you made with a convenient way to mark them as **done** or schedule focus time to get them done. It also includes a summary of your meetings and relevant documents for your day. Cortana extracts information from a user’s email messages and stores it in their Exchange Online mailbox until it’s consolidated into the Briefing email. At no time is personal data accessible outside of your Exchange Online mailbox. Users get access to the Briefing email only if they have licenses that include the Exchange Online service plan.
-
-### How to opt out of Briefing email
-
-Admins can configure Briefing for their organization using [PowerShell](/briefing/be-admin) in Exchange Online. Individuals can opt out of Cortana's Briefing email by selecting **Unsubscribe** in the footer of the message.
-
-[Learn more about the Briefing email](https://support.microsoft.com/help/4558259)
-
-We'll continue to introduce more experiences like the above to help increase your organization's productivity.
-
-[Learn more about Microsoft Compliance offerings](/compliance/regulatory/offering-home)
 
 ## How is the delivery of Cortana enterprise services different from the delivery of other Cortana features I may have previously experienced?
 

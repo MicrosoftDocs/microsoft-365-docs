@@ -20,6 +20,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.custom: api
+ms.date: 06/03/2021
 ---
 
 # Cancel machine action API
