@@ -57,8 +57,8 @@ Megan's user account has been synced from the _Fabrikam_ tenant to the target te
 To test the MTO People Search feature, it is assumed that you already have the following settings:
 
 - Two Azure AD/Microsoft 365 tenants
-- Both tenants have the **Azure AD Cross-tenant Synchronization** feature enabled (currently in private preview - make sure you sign up for both preview features)
-- Provisioned users from home to target tenants.
+- Both tenants have the **Azure AD Cross-tenant Synchronization** feature enabled
+- Provisioned users from home to target tenants
 
 ## Use Cases
 
