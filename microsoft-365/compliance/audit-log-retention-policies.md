@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/13/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -32,7 +32,7 @@ You can create and manage audit log retention policies in the Microsoft Purview 
 
 ## Default audit log retention policy
 
-Audit (Premium) in Microsoft 365 provides a default audit log retention policy for all organizations. This policy retains all Exchange Online, SharePoint Online, OneDrive for Business, and Azure Active Directory audit records for one year. This default policy retains audit records that contain the value of **AzureActiveDirectory**, **Exchange**, **OneDrive**, and **SharePoint** for the **Workload** property (which is the service in which the activity occurred). The default policy can't be modified. See the [More information](#more-information) section in this article for a list of record types for each workload that are included in the default policy.
+Audit (Premium) in Microsoft 365 provides a default audit log retention policy for all organizations. This policy can't be modified and retains all Exchange Online, SharePoint Online, OneDrive for Business, and Azure Active Directory audit records for one year. This default policy retains audit records that contain the value of **AzureActiveDirectory**, **Exchange**, **OneDrive**, and **SharePoint** for the **Workload** property (which is the service in which the activity occurred). The retention period for all data in the default policy is 1 year for organizations with a Microsoft 365 E5 license, only specific workload and record type retention policies can be changed to a 90 days retention period. See the [More information](#more-information) section in this article for a list of record types for each workload that are included in the default policy.
 
 > [!NOTE]
 > The default audit log retention policy only applies to audit records for activity performed by users who are assigned an Office 365 or Microsoft 365 E5 license or have a Microsoft 365 E5 Compliance or E5 eDiscovery and Audit add-on license. If you have non-E5 users or guest users in your organization, their corresponding audit records are retained for 90 days.
@@ -47,6 +47,7 @@ Audit (Premium) in Microsoft 365 provides a default audit log retention policy f
     >If the user generating the audit log doesn't meet these licensing requirements, data is retained according to the highest priority retention policy. This may be either the default retention policy for the user's license or the highest priority policy that matches the user and its record type.
 
 - All custom audit log retention policies (created by your organization) take priority over the default retention policy. For example, if you create an audit log retention policy for Exchange mailbox activity that has a retention period that's shorter than one year, audit records for Exchange mailbox activities will be retained for the shorter duration specified by the custom policy.
+- The audit item lifetime for data is determined when it is added to the auditing pipeline and is based on the licensing defaults or applicable retention policies. Any changes to licensing or applicable retention policies change the expiration time of the audit data after updating. These change don't change any previously committed items.
 
 ## Create an audit log retention policy
 
@@ -161,7 +162,7 @@ Use the [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remo
 
 ## More information
 
-As previously stated, audit records for operations in Azure Active Directory, Exchange Online, SharePoint Online, and OneDrive for Business, are retained for one year by default. The following table lists all the record types (for each of these services) included in the default audit log retention policy. This means that audit logs for any operation with this record type are retained for one year unless a custom audit log retention policy takes precedence for a specific record type, operation, or user. The Enum value (which is displayed as the value for the RecordType property in an audit record) for each record type is shown in parentheses.
+Audit records for operations in Azure Active Directory, Exchange Online, SharePoint Online, and OneDrive for Business, are retained for one year by default. The following table lists all the record types (for each of these services) included in the default audit log retention policy. This means that audit logs for any operation with this record type are retained for one year unless a custom audit log retention policy takes precedence for a specific record type, operation, or user. The Enum value (which is displayed as the value for the RecordType property in an audit record) for each record type is shown in parentheses.
 
 <br>
 
