@@ -56,7 +56,7 @@ In our example, the MpCmdRun utility starts a full antivirus scan on the device.
 |`-?` **or** `-h`|Displays all available options for the MpCmdRun tool|
 |`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|Scans for malicious software. Values for **ScanType** are:<p>**0** Default, according to your configuration<p>**1** Quick scan<p>**2** Full scan<p>**3** File and directory custom scan.<p>CpuThrottling runs according to policy configurations.|
 |`-Trace [-Grouping #] [-Level #]`|Starts diagnostic tracing|
-|`-CaptureNetworkTrace -Path <path>`|Captures all the network input into the Network Protection service and saves it to a file at <path>.<BR>Supply an empty path to stop tracing.|
+|`-CaptureNetworkTrace -Path <path>`|Captures all the network input into the Network Protection service and saves it to a file at `<path>`. <br/>Supply an empty path to stop tracing.|
 |`-GetFiles [-SupportLogLocation <path>]`|Collects support information. See [collecting diagnostic data](collect-diagnostic-data.md).|
 |`-GetFilesDiagTrack`|Same as `-GetFiles`, but outputs to temporary DiagTrack folder.|
 |`-RemoveDefinitions [-All]`|Restores the installed security intelligence to a previous backup copy or to the original default set.|
