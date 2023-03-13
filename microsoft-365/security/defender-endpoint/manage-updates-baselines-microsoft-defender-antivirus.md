@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 02/23/2023
+ms.date: 03/13/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -165,8 +165,18 @@ Platform and engine updates are provided on a monthly cadence. To be fully suppo
 
 During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft's managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (*).
 
+
 > [!NOTE]
 > If you are manually deploying Microsoft Defender Antivirus Platform Update, or if you are using a script or a non-Microsoft management product to deploy Microsoft Defender Antivirus Platform Update, make sure that version `4.18.2001.10` is installed from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) before the latest version of Platform Update (N-2) is installed.
+
+## How to roll back this update
+
+In the unfortunate event that you encounter issues after a platform update, you can roll back to the previous or the inbox version of the Microsoft Defender platform.  
+- To roll back to the previous version, run the following command:<br>
+`"%programdata%\Microsoft\Windows Defender\Platofrm\<version>\MpCmdRun.exe" -RevertPlatform`
+- To roll back this update to the version shipped with the Operating System ("%ProgramFiles%\Windows Defender")<br>
+`"%programdata%\Microsoft\Windows Defender\Platofrm\<version>\MpCmdRun.exe" -ResetPlatform`
+
 
 ### Platform version included with Windows 10 releases
 
