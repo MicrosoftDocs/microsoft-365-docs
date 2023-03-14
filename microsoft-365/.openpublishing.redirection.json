@@ -79,6 +79,11 @@
             "source_path": "microsoft-365/security/defender-endpoint/manage-tamper-protection-microsoft-endpoint-manager.md",
             "redirect_url": "/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "microsoft-365/admin/security-and-compliance/secure-your-business-data.md",
+            "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
+            "redirect_document_id": true
         }
     ]
 }
