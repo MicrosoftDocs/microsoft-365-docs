@@ -113,6 +113,10 @@ Complete the following steps to configure and use administrative units with Micr
 
 1. [Create administrative units](/azure/active-directory/roles/admin-units-manage#create-an-administrative-unit) to restrict the scope of role permissions in Azure Active Directory (Azure AD).
 2. [Add users and distribution groups](/azure/active-directory/roles/admin-units-members-add) to administrative units.
+
+    >[!NOTE]
+    >Members of Dynamic Distribution Groups don't automatically become members of an administrative unit.
+
 3. If creating a geographic region or department-based administrative units, configure administrative units with [dynamic membership rules](/azure/active-directory/roles/admin-units-members-dynamic).
 
     >[!NOTE]
