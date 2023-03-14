@@ -32,8 +32,7 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
-<details>
-  <summary>March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)</summary>
+#### March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)
 
 &ensp;Released: **March , 08,2023**<br/>
 &ensp;Published: **March 08, 2023**<br/>
@@ -92,7 +91,7 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-</details>
+
 	
 <details>
   <summary>Jan-2023 (Build: 101.94.13 | Release version: 30.122112.19413.0)</summary>
