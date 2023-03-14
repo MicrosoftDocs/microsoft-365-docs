@@ -89,6 +89,9 @@ When you assign role groups, you can select individual members or groups, and th
 
 ![Assign admin units option when you edit role groups.](../media/assign-admin-units.png)
 
+> [!IMPORTANT]
+> **Assign admin units** is always available when you've created custom role groups. You can assign administrative units for any custom role group. When you add users and groups to buil-in user groups, **Assign admin units** is also available for any built-in role group that includes roles that support administrative units.
+
 These administrators, referred to as restricted administrators, can now select one or more of their assigned administrative units to automatically define the initial scope of policies that they create or edit. Only if administrators don't have administrative units assigned (unrestricted administrators), will they be able to assign policies to the entire directory without selecting individual administrative units.
 
 > [!IMPORTANT]
@@ -148,6 +151,10 @@ Complete the following steps to add users or groups to a Microsoft Purview role 
 6. Select **Select**.
 7. If the selected users or groups need organization-wide access as part of this role group assignment, go to Step 10.
 8. If the selected users or groups need to be assigned to administrative units, select the users or groups and select **Assign admin units**.
+
+    > [!IMPORTANT]
+    > Administrative units are supported only in Microsoft 365 commercial cloud organizations for public preview.
+
 9. On the **Assign admin units (preview)** pane, select the checkbox for all the administrative units you want to assign to the users or groups. Select **Select**.
 10. Select **Next** and **Save** to add the users or groups to the role group. Select **Done** to complete the steps.
 
@@ -178,6 +185,10 @@ Complete the following steps to create a custom Microsoft Purview role group:
 10. Select **Next** to continue.
 11. If the selected users or groups need organization-wide access as part of this role group assignment, go to Step 14.
 12. If the selected users or groups need to be assigned to administrative units, select the users or groups and select **Assign admin units**.
+
+    > [!IMPORTANT]
+    > Administrative units are supported only in Microsoft 365 commercial cloud organizations for public preview.
+
 13. On the **Assign admin units (preview)** pane, select the checkbox for all the administrative units you want to assign to the users or groups. Select **Select**.
 14. Select **Next**.
 15. On the **Review the role group and finish** page, review the details for the custom role group. If you need to edit the information, select **Edit** in the appropriate section. When all the settings are correct, select **Create** to create the custom role group or select **Cancel** to discard the changes and not create the custom role group.
