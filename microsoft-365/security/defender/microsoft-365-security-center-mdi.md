@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Identity in Microsoft 365 Defender
 description: Learn about changes from the Microsoft Defender for Identity to Microsoft 365 Defender
-keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Identity, NDI
+keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Identity, MDI
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -43,7 +43,7 @@ The table below lists the changes in navigation between Microsoft Defender for I
 | **Defender for** Identity  | **Microsoft 365 Defender**                                   |
 | -------------------------- | ------------------------------------------------------------ |
 | Timeline                   | Microsoft 365 Defender Alerts/Incidents queue                |
-| Reports                    |Lateral movement path and passwords exposed in cleartext reports are covered by the [Identity security posture assessment](https://learn.microsoft.com/en-us/defender-for-identity/security-assessment#assessment-reports)s (ISPM)<br>Health issues are available in Settings -> Identities -> Health issues<br>Summary of alerts can be found by exporting the alerts queue or using Advanced Hunting (30 days of data)<br>Modification to sensitive groups can be found by using Advanced hunting<br>Customized reports can be created in Microsoft 365 Defender portal using Advanced hunting                                                                            |
+| Reports                    |Lateral movement path and passwords exposed in cleartext reports are covered by the [Identity security posture assessments](https://learn.microsoft.com/en-us/defender-for-identity/security-assessment#assessment-reports) (ISPM)<br>Health issues are available in Settings -> Identities -> Health issues<br>Summary of alerts can be found by exporting the alerts queue or using Advanced Hunting (30 days of data)<br>Modification to sensitive groups can be found by using Advanced hunting<br>Customized reports can be created in Microsoft 365 Defender portal using Advanced hunting                                                                            |
 | User page                  | Microsoft 365 Defender User page                             |
 | Device page                | Microsoft 365 Defender Device page                           |
 | Group page                 | Microsoft 365 Defender groups side pane                      |
