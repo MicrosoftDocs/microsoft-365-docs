@@ -332,13 +332,9 @@ Mobile threat defense capabilities are now available to Defender for Business cu
 
 | Device | Procedure |
 |:---|:---|
-| Android | 1. On the device, sign into Google Play.<br/><br/>2. Search for the Microsoft Defender app <br/><br/>3. On the app page, scroll down and select **Join the beta** > **Join**.<br/><br/>4. Wait for the process to complete. It might up to a few hours for the process of joining the beta program to complete.  You'll see text that says, “Joining the beta…”<br/><br/>5. After you have enrolled into the beta, verify that the beta version of the app looks like `1.0.xxxx.0201`, and then install the app.<br/><br/>6. Open the app, sign in, and complete the onboarding process. |
-| iOS | 1. Download Authenticator
-Sign in and Register the device
-Download Defender 
-Sign into the app and install
-Approve necessary permission
-Run a phishing test
+| Android | 1. On the device, go to the Google Play store.<br/><br/>2. Search for the Microsoft Defender app. <br/><br/>3. On the app page, scroll down and select **Join the beta** > **Join**.<br/><br/>4. Wait for the process to complete. It might up to a few hours for the process of joining the beta program to complete.  You'll see text that says, “Joining the beta…”<br/><br/>5. After you have enrolled into the beta, verify that the beta version of the app looks like `1.0.xxxx.0201`, and then install the app.<br/><br/>6. Open the app, sign in, and complete the onboarding process. |
+| iOS | 1. On the devie, go to the Apple App Store. <br/><br/>2. Search for the Microsoft Defender app.<br/><br/>3. Sign into the app and install it. <br/><br/>4. Agree to the terms of use to continue. <br/><br/>5. Allow the Microsoft Defender app to set up a VPN connection and add VPN configurations. <br/><br/>6. Choose whether to allow notifications (such as alerts).  |
+
 
 
 ### Use Microsoft Intune
