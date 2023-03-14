@@ -3,7 +3,7 @@ title: Overview of the OCR service in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: kkameth; mikeplum
+ms.reviewer: kkameth
 ms.date: 02/15/2023
 audience: admin
 ms.topic: conceptual
@@ -50,7 +50,7 @@ The compliance admin can also specify which SharePoint sites to enable OCR to ma
 
 In the compliance center, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SPO and ODB image only PDF and TIFF, EXO all PDF and TIFF, and endpoint image only PDF and TIFF and images.  If the compliance admin has configured OCR, you'll be able to see a message in the Syntex set up area indicating that something has been configured in compliance. 
 
-[Setup and manage will be mostly likely moved to an admin article, in which case it will just be linked to.]
+[Setup and manage will be mostly likely moved to an admin article, in which case it will just be linked to here.]
 
 ## Requirements and limitations
 
