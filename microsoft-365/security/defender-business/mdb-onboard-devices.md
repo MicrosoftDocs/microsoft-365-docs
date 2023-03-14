@@ -30,8 +30,8 @@ Onboard your business devices to protect them right away. You can choose from se
 1. Select a tab: 
    - **Windows 10 and 11**
    - **Mac**
+   - **Mobile** (new capabilities are in preview for iOS and Android devices!
    - **Servers** (Windows Server or Linux Server)
-   - **Mobile** (for iOS/iPadOS or Android devices)
 2. View your onboarding options, and follow the guidance on the selected tab.
 3. Proceed to your next steps.
 
@@ -228,6 +228,42 @@ If your business prefers to have people enroll their own devices in Intune, dire
 
 After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
+## [**Mobile devices**](#tab/mobiles)
+
+## Mobile devices
+
+You can use the following methods to onboard mobile devices, such as Android and iOS devices:
+
+- [Use the Microsoft Defender app (preview)](#use-the-microsoft-defender-app-preview)
+- [Use Microsoft Intune](#use-microsoft-intune)
+
+### Use the Microsoft Defender app (preview)
+
+Mobile threat defense capabilities are now available to Defender for Business customers who have opted in to receive [preview](mdb-preview.md) features. With these capabilities, users can download the Microsoft Defender app from Google Play or the Apple App Store, sign in, and complete onboarding steps.
+
+> [!TIP]
+> Make sure that users have downloaded the Microsoft Authenticator app on their device, and have registered their device using their work or school account for Microsoft 365.
+
+| Device | Procedure |
+|:---|:---|
+| Android | 1. On the device, go to the Google Play store.<br/><br/>2. Search for the Microsoft Defender app. <br/><br/>3. On the app page, scroll down and select **Join the beta** > **Join**.<br/><br/>4. Wait for the process to complete. It might up to a few hours for the process of joining the beta program to complete.  You'll see text that says, “Joining the beta…”<br/><br/>5. After you have enrolled into the beta, verify that the beta version of the app looks like `1.0.xxxx.0201`, and then install the app.<br/><br/>6. Open the app, sign in, and complete the onboarding process. |
+| iOS | 1. On the devie, go to the Apple App Store. <br/><br/>2. Search for the Microsoft Defender app.<br/><br/>3. Sign into the app and install it. <br/><br/>4. Agree to the terms of use to continue. <br/><br/>5. Allow the Microsoft Defender app to set up a VPN connection and add VPN configurations. <br/><br/>6. Choose whether to allow notifications (such as alerts).  |
+
+> [!TIP]
+> After you have onboarded mobile devices using the Microsoft Defender app, proceed to [run a phishing test on a device](#run-a-phishing-test-on-a-device).
+
+### Use Microsoft Intune
+
+If your subscription includes Microsoft Intune, you can use it to onboard mobile devices, such as Android and iOS/iPadOS devices. See the following resources to get help enrolling these devices into Intune:
+
+- [Enroll Android devices](/mem/intune/enrollment/android-enroll)
+- [Enroll iOS or iPadOS devices](/mem/intune/enrollment/ios-enroll)
+
+After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
+
+> [!NOTE]
+> The standalone version of Defender for Business does not include the Intune license that is required to onboard iOS and Android devices. You can add Intune to your Defender for Business subscription to onboard mobile devices. Intune is included in Microsoft 365 Business Premium.
+
 ## [**Servers**](#tab/Servers)
 
 ## Servers
@@ -313,41 +349,6 @@ You can use the following methods to onboard an instance of Linux Server to Defe
 
 > [!NOTE]
 > Onboarding an instance of Linux Server to Defender for Business is the same as onboarding to [Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md).
-
-## [**Mobile devices**](#tab/mobiles)
-
-## Mobile devices
-
-You can use the following methods to onboard mobile devices, such as Android and iOS devices:
-
-- [Use the Microsoft Defender app (preview)](#use-the-microsoft-defender-app-preview)
-- [Use Microsoft Intune](#use-microsoft-intune)
-
-### Use the Microsoft Defender app (preview)
-
-Mobile threat defense capabilities are now available to Defender for Business customers who have opted in to receive [preview](mdb-preview.md) features. With these capabilities, users can download the Microsoft Defender app from Google Play or the Apple App Store, sign in, and complete onboarding steps.
-
-> [!TIP]
-> Make sure that users have downloaded the Microsoft Authenticator app on their device, and have registered their device using their work or school account for Microsoft 365.
-
-| Device | Procedure |
-|:---|:---|
-| Android | 1. On the device, go to the Google Play store.<br/><br/>2. Search for the Microsoft Defender app. <br/><br/>3. On the app page, scroll down and select **Join the beta** > **Join**.<br/><br/>4. Wait for the process to complete. It might up to a few hours for the process of joining the beta program to complete.  You'll see text that says, “Joining the beta…”<br/><br/>5. After you have enrolled into the beta, verify that the beta version of the app looks like `1.0.xxxx.0201`, and then install the app.<br/><br/>6. Open the app, sign in, and complete the onboarding process. |
-| iOS | 1. On the devie, go to the Apple App Store. <br/><br/>2. Search for the Microsoft Defender app.<br/><br/>3. Sign into the app and install it. <br/><br/>4. Agree to the terms of use to continue. <br/><br/>5. Allow the Microsoft Defender app to set up a VPN connection and add VPN configurations. <br/><br/>6. Choose whether to allow notifications (such as alerts).  |
-
-After you have onboarded mobile devices using the Microsoft Defender app, proceed to [run a phishing test on a device](#run-a-phishing-test-on-a-device).
-
-### Use Microsoft Intune
-
-If your subscription includes Microsoft Intune, you can use it to onboard mobile devices, such as Android and iOS/iPadOS devices. See the following resources to get help enrolling these devices into Intune:
-
-- [Enroll Android devices](/mem/intune/enrollment/android-enroll)
-- [Enroll iOS or iPadOS devices](/mem/intune/enrollment/ios-enroll)
-
-After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
-
-> [!NOTE]
-> The standalone version of Defender for Business does not include the Intune license that is required to onboard iOS and Android devices. You can add Intune to your Defender for Business subscription to onboard mobile devices. Intune is included in Microsoft 365 Business Premium.
 
 ---
 
