@@ -23,7 +23,7 @@ description: For Office 365 apps, understand the migration of the Azure Informat
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-When you use [sensitivity labels](sensitivity-labels.md) in Microsoft 365 Apps on Windows computers, we recommend you use you labeling that's built into Office apps, even if you have the [Azure Information Protection (AIP) unified labeling client](/azure/information-protection/rms-client/aip-clientv2) installed. Moving forward, the AIP add-in is disabled by default in the latest versions of Office apps.
+When you use [sensitivity labels](sensitivity-labels.md) in Microsoft 365 Apps on Windows computers, we recommend you use you labeling that's built into Office apps, even if you have the [Azure Information Protection (AIP) unified labeling client](/azure/information-protection/rms-client/aip-clientv2) installed. The AIP add-in is now disabled by default in the latest versions of Office apps.
 
 To prepare for this change, use this article to understand the benefits of using built-in labeling, which main features have parity, and how to control the migration from the AIP add-in to the newer labeling experience.
 
@@ -35,7 +35,7 @@ Built-in labeling forms the cornerstone of a [Microsoft Purview Information Prot
 
 Because built-in labels don't use an Office add-in, they benefit from more stability and better performance. They also support the latest Microsoft Purview features, such as advanced classifiers.
 
-Up until recently, built-in labeling was turned off by default in Office for Windows apps when the AIP client was installed. This default will no longer be the case for newer versions of Office. You can control the default behavior by using the instructions in the following section, [How to disable the AIP add-in to use built-in labeling for Office apps](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps). For example, disable the add-in for initial testing on a couple of computers, and then move onto a pilot for a few users. When you're ready, migrate all users to the newer labeling experience.
+Up until recently, built-in labeling was turned off by default in Office for Windows apps when the AIP client was installed. This default is no longer the case for newer versions of Office. You can control the default behavior by using the instructions in the following section, [How to disable the AIP add-in to use built-in labeling for Office apps](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps). For example, disable the add-in for initial testing on a couple of computers, and then move onto a pilot for a few users. When you're ready, migrate all users to the newer labeling experience.
 
 When you keep the AIP client installed but disabled in Office apps, the other capabilities of the AIP client remain supported:
 
@@ -78,9 +78,9 @@ Some features are only supported by built-in labeling for Office apps, and won't
   - Access to intelligent classification services that include [trainable classifiers](classifier-learn-about.md), [exact data match (EDM)](sit-learn-about-exact-data-match-based-sits.md), and [named entities](named-entities-learn.md)
   - Detection of sensitive information as users enter the text
   - In Word, users can review and remove the identified sensitive content
-- [Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) that is integrated into existing user workflows
+- [Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) that's integrated into existing user workflows
 - [PDF support](sensitivity-labels-office-apps.md#pdf-support)
-- [Protect meeting invites, with their attachments and responses](sensitivity-labels-meetings.md) (in preview)
+- [Protect meeting invites, with their attachments and responses](sensitivity-labels-meetings.md)
 - For labels that let users assign permissions, different permissions (Read or Change) can be granted to users or groups
 - Encrypt-Only for emails
 - Support for account switching
@@ -94,12 +94,10 @@ To keep informed when new labeling capabilities become available for built-in la
 
 ## How to disable the AIP add-in to use built-in labeling for Office apps
 
-Starting with **version 2302** for all Office deployment channels, the AIP add-in is disabled by default, so there's nothing for you to configure for these versions:
-
-If you have a version that disabled the AIP add-in by default, and you need to use the AIP add-in rather than built-in labeling, you must [configure a new setting to override the default](#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in).
+Starting with **version 2302** for all Office deployment channels, the AIP add-in is disabled by default. For these versions, there's nothing for you to configure for users to benefit from built-in labels. If you need to use the AIP add-in rather than built-in labeling, you must [configure a new setting to override the default](#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in).
 
 > [!IMPORTANT]
-> If you’ve previously used the AIP add-in as the default labeling client in Office apps and use Office versions identified in this section, the AIP add-in could be automatically disabled and replaced by built-in labeling.
+> If you’ve previously used the AIP add-in as the default labeling client in Office apps and use Office versions 2302 or later, by default, the AIP add-in is automatically disabled and replaced by built-in labeling.
 
 To disable the AIP add-in for older versions, see the next section.
 
@@ -148,11 +146,11 @@ Additional Office settings you might need to configure:
 
 ## Feature parity for built-in labeling and the AIP add-in for Office apps
 
-Many of the labeling features supported by the AIP add-in are now supported by built-in labeling. For a more detailed list of available capabilities, minimum versions that might be needed, and configuration information, see [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md). To support a specific feature, you might need to change your [Office update channel](/deployoffice/overview-update-channels).
+Many of the labeling features supported by the AIP add-in are now supported by built-in labeling. For a more detailed list of available capabilities and configuration information, see [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md). To support a specific feature, you might need to change your [Office update channel](/deployoffice/overview-update-channels).
 
 More features are planned and in development. If there's a specific feature that you're interested in, check the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) and consider joining the [Microsoft Information Protection in Office Private Preview](https://aka.ms/MIP/PreviewRing).
 
-Use the following information to help you identify if the features you use with the AIP add-in is currently available with built-in labeling. Features that aren't yet available but in planning or deployment might delay your final migration for users, but you can begin testing the other features now to expedite a later migration.
+Use the following information to help you identify if the features you use with the AIP add-in is currently available with built-in labeling. Any features that aren't yet available but in planning or deployment might delay your final migration for users, but you can begin testing the other features now to expedite a later migration.
 
 |AIP add-in feature or capability|Built-in labeling|
 |---|:---:|
