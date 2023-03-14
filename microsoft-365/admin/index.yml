@@ -113,10 +113,6 @@ additionalContent:
           summary: Manage bills, subscriptions, and product licenses, update payment methods, and purchase additional services and storage.
           url: ../commerce/index.yml
         # Card
-        - title: Secure your organization
-          summary: Learn about the best ways to secure your organization like setting up multifactor authentication (MFA), Microsoft Secure Score, and GDPR.
-          url:  security-and-compliance/secure-your-business-data.md
-        # Card
         - title: Work with customers
           summary: Share documents and use Teams to collaborate and meet.
           url:  manage/share-calendars-with-external-users.md
