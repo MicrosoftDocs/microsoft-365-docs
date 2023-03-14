@@ -92,10 +92,6 @@ By default, spam ZAP is enabled in anti-spam policies, and the default action fo
 
 For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Microsoft 365](anti-spam-policies-configure.md).
 
-### Zero-hour auto purge (ZAP) considerations for Microsoft Defender for Office 365
-
-ZAP will not quarantine any message that's in the process of [Dynamic Delivery](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies) in Safe Attachments policy scanning. If a phishing or spam signal is received for messages in this state, and the filtering verdict in the anti-spam policy is set to take some action on the message (Move to Junk, Redirect, Delete, or Quarantine) then ZAP will default to a 'Move to Junk' action.
-
 ### How to see if ZAP moved your message
 
 To determine if ZAP moved your message, you have the following options:
@@ -105,6 +101,10 @@ To determine if ZAP moved your message, you have the following options:
 
 > [!NOTE]
 > ZAP is not logged in the Exchange mailbox audit logs as a system action.
+
+### Zero-hour auto purge (ZAP) considerations for Microsoft Defender for Office 365
+
+ZAP will not quarantine any message that's in the process of [Dynamic Delivery](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies) in Safe Attachments policy scanning. If a phishing or spam signal is received for messages in this state, and the filtering verdict in the anti-spam policy is set to take some action on the message (Move to Junk, Redirect, Delete, or Quarantine) then ZAP will default to a 'Move to Junk' action.
 
 ## Zero-hour auto purge (ZAP) in Microsoft Teams
 
@@ -131,11 +131,11 @@ For messages that are identified as malware, ZAP blocks and quarantines the 
 > [!NOTE]
 > For this release, ZAP is available only to messages that are identified as high confidence phish or malware.  
 
-### How to see if ZAP blocked your message
+### How to see if ZAP blocked your message in Teams
 
 To determine if ZAP blocked your message, you have the following options:  
 
-- **Quarantine**: [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams).
+- **Quarantine**: For more in formation, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams).
 
 - **Message details**: Use advanced hunting to post-delivery message. [Add link to new content] 
 
