@@ -30,7 +30,7 @@ Onboard your business devices to protect them right away. You can choose from se
 1. Select a tab: 
    - **Windows 10 and 11**
    - **Mac**
-   - **Mobile** (new capabilities are in preview for iOS and Android devices!
+   - **Mobile** (new capabilities are in preview for iOS and Android devices!)
    - **Servers** (Windows Server or Linux Server)
 2. View your onboarding options, and follow the guidance on the selected tab.
 3. Proceed to your next steps.
