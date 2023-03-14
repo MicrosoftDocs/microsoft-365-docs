@@ -130,13 +130,13 @@ An allowed application or service only has write access to a controlled folder a
 
 3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Windows Defender Exploit Guard** \> **Controlled folder access**.
 
-4. Double-click the **Configure allowed applications** setting and set the option to **Enabled**. Select **Show**.
+4. Double-click the **Configure allowed applications** setting and then set the option to **Enabled**. Select **Show**.
 
-5.  Add the full path to the executable in **Value name**. Set **Value** to 0. For example, to allow the Command Prompt set **Value name** as C:\Windows\System32\cmd.exe and **Value** should be set as 0.
+5.  Add the full path to the executable in **Value name**. Set **Value** to `0`. For example, to allow the Command Prompt set **Value name** as `C:\Windows\System32\cmd.exe`. **Value** should be set to `0`.
 
 ### Use PowerShell to allow specific apps
 
-1. Type **PowerShell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
+1. Type **PowerShell** in the Start menu, right-click **Windows PowerShell** and then select **Run as administrator**
 2. Enter the following cmdlet:
 
     ```PowerShell
