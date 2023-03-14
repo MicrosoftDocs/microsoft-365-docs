@@ -198,7 +198,7 @@ Policy timeframes allow you to define past and future review periods that are tr
 - **Past activity detection**: Available for all policy templates, the *Past activity detection* is the defined number of days that the window activates **before** a triggering event. For activities in the audit log, the window activates for 0 to 90 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Past activity detection* to 90 days. Several months have passed since you configured the policy, and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Past activity detection* and the policy gathers historic activities for that user for 90 days prior to the triggering event. 
 
    > [!NOTE]
-   > For email log activities, the lookback period is 0 to 10 days. 
+   > For email activities, the past activity detection period is 10 days. 
 
 ![Insider risk management timeframe settings.](../media/insider-risk-settings-timeframes.png)
 
