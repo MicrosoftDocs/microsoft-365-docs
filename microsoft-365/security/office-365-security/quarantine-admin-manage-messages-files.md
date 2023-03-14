@@ -377,6 +377,9 @@ When a potentially malicious message is detected in a chat message in Microsoft 
 
 For the preview release, this feature is enabled by default. 
 
+> [!NOTE]
+> Quarantine in Microsoft Teams is available only to customers with Microsoft Defender for Office 365 E5 and Defender for Office P2 subscriptions.
+
 ### View quarantined messages in Microsoft Teams
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine**. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
