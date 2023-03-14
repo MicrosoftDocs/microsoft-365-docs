@@ -35,18 +35,19 @@ Insider risk management and communication compliance are built with privacy by d
 
 ## Pseudonymization 
 
-Pseudonymization helps protect end-user privacy by removing identifiable user details like user name or email address. Pseudonymization also helps prevent potential bias and conflicts of interest by removing identifiable user details (name, email) and personal data (title, department or location) exposed in the solution. For example, an employee named John Smith would be pseudonymized into a non-personal  identifier such as ANON2340. Pseudonyms are on by default for specific roles such as Communication Compliance Analyst, who review policy alerts, and Insider Risk Management Analyst and Investigator roles, who review alerts and take action respectively. 
+Pseudonymization helps protect end-user privacy by removing identifiable user details like user name or email address. Pseudonymization also helps prevent potential bias and conflicts of interest by removing identifiable user details (name, email) and personal data (title, department or location) exposed in the solution. For example, an employee named John Smith would be pseudonymized into a non-personal identifier such as ANON2340. Pseudonyms are on by default for specific roles such as Insider Risk Management Analyst and Investigator roles, who review alerts and take action respectively, and Communication Compliance Analyst, who review policy alerts. 
 
 ## Role-based access controls 
 
-We also implement stringent role-based access controls, so only authorized communication compliance and insider risk management roles can use and access alerts and insights into potential policy violations. By default, global administrators do not have access to communication compliance and insider risk management features. This helps ensure that only the appropriate stakeholders can access the solution and details specific to their role permissions. Organizations have the option to assign users to specific role groups to manage different sets of features based on their responsibilities. For example, communication compliance and insider risk management admins can create, configure, and delete policies but can’t access or investigate alerts or cases. On the other hand, communication compliance and insider risk management investigators can access and investigate alerts and cases but can’t configure policies.  
+We also implement stringent role-based access controls, so only authorized insider risk management and communication compliance roles can use and access alerts and insights into potential policy violations. By default, global administrators do not have access to insider risk management and communication compliance features. This helps ensure that only the appropriate stakeholders can access the solution and details specific to their role permissions. Organizations have the option to assign users to specific role groups to manage different sets of features based on their responsibilities. For example, insider risk management and communication compliance admins can create, configure, and delete policies but can’t access or investigate alerts or cases. On the other hand, insider risk management and communication compliance investigators can access and investigate alerts and cases but can’t configure policies.  
 
-Whether your organization chooses a single role group or multiple role groups to fit your organizations’ compliance and privacy requirements, both communication compliance and insider risk management allow admins to choose from predefined role group options within each solution. 
+Whether your organization chooses a single role group or multiple role groups to fit your organizations’ compliance and privacy requirements, both insider risk management and communication compliance allow admins to choose from predefined role group options within each solution. 
 
 Learn more about role group options for each solution:   
 
-- [Get started with communication compliance](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) 
 - [Get started with insider risk management](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) 
+- [Get started with communication compliance](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) 
+
 
 ## Admin explicit opt-in 
 
@@ -64,8 +65,9 @@ Audit logs are enabled for all Microsoft 365 organizations by default to ensure 
 
 Learn more about audit logs capabilities for each solution: 
 
-- [Use communication compliance reports and audits](communication-compliance-reports-audits.md#audit) 
 - [Review activities with the insider risk management audit log](insider-risk-management-audit-log.md) 
+- [Use communication compliance reports and audits](communication-compliance-reports-audits.md#audit) 
+
 
 ## Protect user trust and build a holistic insider risk program 
 
