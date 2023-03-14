@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 02/21/2023
+ms.date: 03/14/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -30,7 +30,7 @@ Onboard your business devices to protect them right away. You can choose from se
 1. Select a tab: 
    - **Windows 10 and 11**
    - **Mac**
-   - **Servers** (NEW! Windows Server or Linux Server)
+   - **Servers** (Windows Server or Linux Server)
    - **Mobile** (for iOS/iPadOS or Android devices)
 2. View your onboarding options, and follow the guidance on the selected tab.
 3. Proceed to your next steps.
