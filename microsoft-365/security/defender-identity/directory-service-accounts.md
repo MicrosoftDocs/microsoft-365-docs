@@ -21,8 +21,8 @@ search.appverid: met150
 
 This article explains how to configure the [Microsoft Defender for Identity](/defender-for-identity) Directory Services account in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
->[!IMPORTANT]
->As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
+> [!IMPORTANT]
+> As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
 ## Configure Directory Services account
 

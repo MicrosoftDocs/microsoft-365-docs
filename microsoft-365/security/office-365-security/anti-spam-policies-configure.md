@@ -17,7 +17,7 @@ ms.custom:
 description: Admins can learn how to view, create, modify, and delete anti-spam policies in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 3/2/2023
+ms.date: 3/3/2023
 ---
 
 # Configure anti-spam policies in EOP
@@ -169,7 +169,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      >
      > <sup>2</sup> You can this use value as a condition in mail flow rules to filter or route the message.
      >
-     > <sup>3</sup> A blank **Select a policy** value means the default quarantine policy for that particular verdict is used. When you later edit the anti-spam policy or view the settings, the actual quarantine policy name is shown. For more information about default quarantine policies that are used for the spam filter verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
+     > <sup>3</sup> A blank **Select quarantine policy** value means the default quarantine policy for that particular verdict is used. When you later edit the anti-spam policy or view the settings, the actual quarantine policy name is shown. For more information about default quarantine policies that are used for spam filter verdicts, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
      >
      > <sup>4</sup> For **High confidence phishing**, the action **Move message to Junk Email folder** has effectively been deprecated. Although you might be able to select **Move message to Junk Email folder**, high confidence phishing messages are always quarantined (equivalent to selecting **Quarantine message**).
      >

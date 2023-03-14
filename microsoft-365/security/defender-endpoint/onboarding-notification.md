@@ -203,7 +203,7 @@ The following image is an example of an email notification.
     - Take all devices last seen in the past 7 days.
 
 - For each device:
-  - If last seen property is on the one hour interval of [-7 days, -7days + 60 minutes ] -> Alert for offboarding possibility.
+  - If last seen property is on the one hour interval of [-7 days, -7days + 60 minutes] -> Alert for offboarding possibility.
   - If first seen is on the past hour -> Alert for onboarding.
 
 In this solution you will not have duplicate alerts:

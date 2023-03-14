@@ -18,17 +18,7 @@ description: Learn how to create a rule to move or copy a file to another ShareP
 
 # Create a rule to move or copy a file from one document library to another in Microsoft Syntex
 
-Microsoft Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models. 
-
-   ![Diagram of the create rules workflow.](../media/content-understanding/create-rule.png)
-
-You'll choose a condition that triggers the rule and the action that the rule will take. 
-For example, you can create a rule to move files tagged with a specific customer to a specific library or folder. These rules help you structure your content architecture with the power of AI-driven processing.
-
 Document libraries can have multiple move and copy rules to support moving and copying files to different destination libraries based on metadata criteria. 
-
-> [!NOTE]
-> This feature is available only for users who are licensed for Syntex.
 
 ## Move or copy a file
 
@@ -77,7 +67,7 @@ To move or copy a file from one document library to another, follow these steps.
 
    ![Screenshot of the document library showing the Automate > Rules > Manage rules option.](../media/content-understanding/content-processing-manage-rule.png)
 
-2. On the **Manage rules** page, you can see the rules that have been applied. You can turn on or off a rule or [create a new rule](#move-or-copy-a-file) to automate actions on a specific document library.
+2. On the **Manage rules** page, you can see the rules that have been applied. You can turn on or off a rule or [create a new rule](#create-a-rule-to-move-or-copy-a-file-from-one-document-library-to-another-in-microsoft-syntex) to automate actions on a specific document library.
 
    ![Screenshot of the Manage rules page showing the rule and actions.](../media/content-understanding/content-processing-manage-rules-page.png)
 
@@ -91,3 +81,7 @@ In the document library, in the upper-right corner of the page, select the detai
 
 > [!NOTE]
 > Currently, the activity feed shows only move activity. Copy activity will be available in a future release.
+
+## See also
+
+[Overview of content processing](content-processing-overview.md)
