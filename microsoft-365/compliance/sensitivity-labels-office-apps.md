@@ -308,6 +308,11 @@ For guidance about when to use this setting, see the information about [policy s
 > 
 > Now rolling out: Office apps that use built-in labeling and support a default label for existing documents. For details, see the [capabilities table](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) for Word, Excel, and PowerPoint.
 
+### For Outlook Mobile, change when users are prompted for a label
+
+Now available in the Beta Channel for Android, and not yet for iOS, you can 
+
+
 ## Outlook-specific options for default label and mandatory labeling
 
 For built-in labeling, identify the minimum versions of Outlook that support these features by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook) and the row **Different settings for default label and mandatory labeling**. All versions of the Azure Information Protection unified labeling client support these Outlook-specific options.
