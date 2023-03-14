@@ -145,6 +145,11 @@
         - name: Use annotations to collaborate 
           href: annotations.md
 
+    - name: OCR
+      items: 
+        - name: Overview 
+          href: ocr.md
+
     - name: Taxonomy
       items:
         - name: Import using SKOS
