@@ -158,12 +158,12 @@ Use the following information to help you identify if the features you use with 
 |Central reporting and auditing|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#auditing-labeling-activities)|
 |Government Cloud|![Supported.](../media/yes-icon.png)|
 |Admin can disable labeling for all apps|  ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
-|Admin can display labels for just files or just emails| [Learn more](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails)|
+|Admin can display labels for just files or just emails| ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails)|
 |**Category: User Experience**||
 |Labeling button on the ribbon|![Supported.](../media/yes-icon.png)|
 |Multilanguage support for label names and tooltips|![Supported.](../media/yes-icon.png) <br>[Learn more](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages)|
-|Visibility of labels on a toolbar|[Learn more](sensitivity-labels-office-apps.md#sensitivity-bar)|
-|Label colors|[Learn more](sensitivity-labels-office-apps.md#label-colors)|
+|Visibility of labels on a toolbar|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#sensitivity-bar)|
+|Label colors|[![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#label-colors)|
 |**Category: Labeling actions**||
 |Manual labeling|![Supported.](../media/yes-icon.png) <br>[Learn more](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)|
 |Mandatory labeling|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels.md#what-label-policies-can-do)|
