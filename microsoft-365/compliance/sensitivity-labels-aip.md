@@ -146,11 +146,11 @@ Additional Office settings you might need to configure:
 
 ## Feature parity for built-in labeling and the AIP add-in for Office apps
 
-Many of the labeling features supported by the AIP add-in are now supported by built-in labeling. For a more detailed list of available capabilities and configuration information, see [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md). To support a specific feature, you might need to change your [Office update channel](/deployoffice/overview-update-channels).
+Many of the labeling features supported by the AIP add-in are now supported by built-in labeling. For a detailed list of available capabilities and configuration information, see [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md). To support a specific feature, you might need to change your [Office update channel](/deployoffice/overview-update-channels).
 
 More features are planned and in development. If there's a specific feature that you're interested in, check the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) and consider joining the [Microsoft Information Protection in Office Private Preview](https://aka.ms/MIP/PreviewRing).
 
-Use the following information to help you identify if the features you use with the AIP add-in is currently available with built-in labeling. Any features that aren't yet available but in planning or deployment might delay your final migration for users, but you can begin testing the other features now to expedite a later migration.
+Use the following information to help you identify if the features you use with the AIP add-in is available with built-in labeling. Additional features that aren't yet available but in planning or deployment might delay your final migration for users, but you can begin testing the other features now to expedite a later migration.
 
 |AIP add-in feature or capability|Built-in labeling|
 |---|:---:|
