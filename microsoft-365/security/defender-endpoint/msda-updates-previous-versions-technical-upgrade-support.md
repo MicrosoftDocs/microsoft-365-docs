@@ -23,7 +23,7 @@ search.appverid: met150
 
 # Microsoft Defender Antivirus updates - Previous versions for technical upgrade support only
 
-Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
 
 ## September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)
 
