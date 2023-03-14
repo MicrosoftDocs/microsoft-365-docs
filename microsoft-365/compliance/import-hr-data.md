@@ -43,7 +43,7 @@ Setting up a connector for HR data that insider risk management policies can use
 
 - This connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore aren't covered by the Microsoft Purview and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant. For step-by-step instructions for setting up an HR connector in a GCC environment, see [Set up a connector to import HR data in US Government](import-hr-data-US-government.md).
 
-- Add the following domain to your firewall allowlist for your organization: webhook.ingestion.office.com
+- Add the *webhook.ingestion.office.com* domain to your firewall allowlist for your organization.
 
 ## Step 1: Prepare a CSV file with your HR data
 
@@ -317,7 +317,7 @@ You can also select **Edit** to change the Azure App ID or the column header nam
 ## Step 4: Run the sample script to upload your HR data
 
 > [!IMPORTANT]
-> You must add the following domain to your firewall allowlist for your organization: webhook.ingestion.office.com. If this domain is blocked, the script won't run. 
+> You must add the *webhook.ingestion.office.com* domain to your firewall allowlist for your organization. If this domain is blocked, the script won't run. 
 
 The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 1) to the Microsoft cloud. Specifically, the script uploads the data to the HR connector. After you run the script, the HR connector that you created in Step 3 imports the HR data to your Microsoft 365 organization where it can be accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
