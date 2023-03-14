@@ -133,7 +133,7 @@ Complete the following steps to configure and use administrative units with Micr
 2. [Add users and distribution groups](/azure/active-directory/roles/admin-units-members-add) to administrative units.
 
     >[!IMPORTANT]
-    >Members of Dynamic Distribution Groups don't automatically become members of an administrative unit.
+    >Members of [Dynamic Distribution Groups](/azure/active-directory/roles/administrative-units#groups) don't automatically become members of an administrative unit.
 
 3. If creating a geographic region or department-based administrative units, configure administrative units with [dynamic membership rules](/azure/active-directory/roles/admin-units-members-dynamic).
 
