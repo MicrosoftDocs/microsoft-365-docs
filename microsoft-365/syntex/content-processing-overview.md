@@ -25,8 +25,6 @@ Microsoft Syntex lets you build simple rules-driven actions in document librarie
 You'll choose a condition that triggers the rule and the action that the rule will take. 
 For example, you can create a rule to move files tagged with a specific customer to a specific library or folder. These rules help you structure your content architecture with the power of AI-driven processing.
 
-Document libraries can have multiple move and copy rules to support moving and copying files to different destination libraries based on metadata criteria. 
-
 > [!NOTE]
 > This feature is available only for users who are licensed for Syntex.
 

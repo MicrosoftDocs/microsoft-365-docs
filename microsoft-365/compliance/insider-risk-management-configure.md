@@ -61,7 +61,7 @@ Recommended actions can help your organization quickly get with insider risk man
 The following recommendations are available to help you get started with or maximize your insider risk management configuration:
 
 - **Turn on auditing**: When turned on, user and admin activity in your organization is recorded to the Microsoft 365 audit log. Insider risk policies and analytics scans use this log to detect risk activities.
-- **Get permissions to user risk management**: The level of access you have to insider risk management features depends on which role group you were assigned. To access and configure recommended actions, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Admins* role groups.
+- **Get permissions to use insider risk management**: The level of access you have to insider risk management features depends on which role group you were assigned. To access and configure recommended actions, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Admins* role groups.
 - **Choose policy indicators**: Indicators are essentially the risk management activities you want to detect and investigate. You can choose indicators to track activity across several Microsoft 365 locations and services.
 - **Scan for potential insider risks**: Run an analytics scan to discover potential insider risks occurring in your org. After evaluating results, review recommended policies to set up.
 - **Assign permissions to others**: If there are additional team members who will be responsible for managing insider risk features, you'll need to assign them to the appropriate role groups.
@@ -143,8 +143,7 @@ For step-by-step instructions to turn on auditing, see [Turn audit log search on
 
 ## Step 3 (optional): Enable and view insider risk analytics insights
 
-Insider risk management analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. This evaluation may also help you determine needs for additional licensing or future optimization of existing policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics) and check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help understand how analytics can help accelerate the identification of potential insider risks and help you to quickly take action.
-
+Insider tisk management analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. This evaluation may also help you determine needs for additional licensing or future optimization of existing policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics) and check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help understand how analytics can help accelerate the identification of potential insider risks and help you to quickly take action.
 To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or Microsoft 365 *Global admin* role group.
 
 Complete the following steps to enable insider risk analytics:
@@ -261,9 +260,6 @@ Before configuring a policy, define the following insider risk settings:
     - [File path exclusions](insider-risk-management-settings.md#file-path-exclusions)
     - [Site exclusions](insider-risk-management-settings.md#site-exclusions)
     - [Keyword exclusion](insider-risk-management-settings.md#keyword-exclusion)
-    
-    > [!NOTE]
-    > As you make intelligent detections adjustments for domains, sensitive info types, trainable classifiers, file types, and SharePoint sites, to help you understand the effect of those changes for your policies, Microsoft Purview Insider Risk Management calculates the number of users and the number of activities affected. It takes 24 hours for the changes to appear.  
     
 6. On the **Export alerts** page, enable export of insider risk alert information using the Office 365 Management APIs if needed.
 7. On the **Priority user groups** page, create a priority user group and add users if not created in **Step 3**.

@@ -317,6 +317,8 @@
     - name: Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Intune
       href: security-config-management.md
 
+    - name: Manage Defender for Endpoint P1/P2 across devices
+      href: defender-endpoint-subscription-settings.md
 
     - name: Configure portal settings
       items:
@@ -377,6 +379,7 @@
           href: configure-machines.md
         - name: Monitor and increase device onboarding
           href: configure-machines-onboarding.md
+
 
       - name: Configure Microsoft Defender Security Center time zone settings
         href: time-settings.md
