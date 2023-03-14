@@ -1,6 +1,6 @@
 ---
-title: Zero Trust with Microsoft 365 Defender for Endpoint
-description: Microsoft 365 Defender for Endpoint contributes to a strong Zero Trust strategy and architecture
+title: Zero Trust with Microsoft Defender for Endpoint
+description: Microsoft Defender for Endpoint contributes to a strong Zero Trust strategy and architecture.
 keywords: Zero Trust, Microsoft 365 Defender for Endpoint, Microsoft 365 Defender, security architecture, security strategy, cyber security, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,11 @@ ms.collection:
   - tier1
   - zerotrust-services
 ms.custom: 
-
 ms.topic: conceptual
 adobe-target: true
 ---
 
-# Zero Trust with Microsoft 365 Defender for Endpoint
+# Zero Trust with Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -68,11 +67,13 @@ Defender for Endpoint provides the following threat protections:
 
 ## Next steps
 
-See the following Microsoft 365 solution guidance:
+For the steps to deploy Intune for Microsoft 365, see the [Manage devices with Intune and Microsoft 365](../../solutions/manage-devices-with-intune-overview.md) solution guidance.
 
-- Endpoints [Manage devices with Intune and Microsoft 365](../../solutions/manage-devices-with-intune-overview.md).
+See the following for Zero Trust-specific solution guidance:
 
-- Other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture, see [Zero Trust deployment plan with Microsoft 365](../microsoft-365-zero-trust.md).
+- For endpoint protection concepts and deployment objectives, see [Secure endpoints with Zero Trust](/security/zero-trust/deploy/endpoints).
+
+- For other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture, see [Zero Trust deployment plan with Microsoft 365](../microsoft-365-zero-trust.md).
 
 Learn more about Zero Trust concepts and deployment objectives for endpoints with [Secure endpoints with Zero Trust](/security/zero-trust/deploy/endpoints).
 

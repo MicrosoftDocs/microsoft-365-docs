@@ -1,7 +1,7 @@
 ---
-title: Zero Trust with Microsoft 365 Defender for Office 365
-description: Microsoft 365 Defender for Office 365 contributes to a strong Zero Trust strategy and architecture
-keywords: Zero Trust, Microsoft 365 Defender for Office 365, Microsoft 365 Defender, security architecture, security strategy, cyber security, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation
+title: Zero Trust with Microsoft Defender for Office 365
+description: Microsoft Defender for Office 365 contributes to a strong Zero Trust strategy and architecture
+keywords: Zero Trust, Microsoft Defender for Office 365, Microsoft 365 Defender, security architecture, security strategy, cyber security, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -26,13 +26,13 @@ ms.topic: conceptual
 adobe-target: true
 ---
 
-# Zero Trust with Microsoft 365 Defender for Office 365
+# Zero Trust with Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender for Office 365
+- Microsoft Defender for Office 365
 
 Microsoft Defender for Office 365 is a cloud-based email filtering service that helps protect your organization against advanced threats to email and collaboration tools, like Phishing, business email compromise, and Malware attacks. Defender for Office 365 also provides investigation, Threat Hunting, and remediation capabilities to help security teams efficiently identify, prioritize, investigate, and respond to threats.
 
@@ -65,6 +65,6 @@ The Microsoft Defender for Office 365 is also secure by default by quarantining 
 
 Learn how to set up your SecOps team with [Microsoft Defender for Office 365 Security Operations Guide](mdo-sec-ops-guide.md).
 
-Learn more about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture with [Zero Trust deployment plan with Microsoft 365](../Microsoft-365-zero-trust.md).
+Learn more about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture with [Zero Trust deployment plan with Microsoft 365](../microsoft-365-zero-trust.md).
 
 Learn more about Zero Trust and how to build an enterprise-scale strategy and architecture with the [Zero Trust Guidance Center](/security/zero-trust).
