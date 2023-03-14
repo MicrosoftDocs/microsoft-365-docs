@@ -1,6 +1,6 @@
 ---
-title: Microsoft Purview Insider Risk Management and Communication Compliance Privacy Guide
-description: Learn how Microsoft Purview Insider Risk Management and Microsoft Purview Communication Compliance are built with privacy by design, and the solutions balance user privacy with tools that help detect and mitigate organizational risks. 
+title: Microsoft Purview Insider Risk Management and Communication Compliance privacy guide
+description: Learn how Microsoft Purview Insider Risk Management and Microsoft Purview Communication Compliance are built with privacy by design, and how the solutions balance user privacy with tools that help detect and mitigate organizational risks. 
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -23,7 +23,7 @@ ms.collection:
 
 Microsoft Purview insider risk solutions provide organizations with the capability to help detect and mitigate potential risks and policy violations. The Microsoft Purview insider risk solutions include: 
 
-- **Microsoft Purview Insider Risk Management** correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance.  
+- **Microsoft Purview Insider Risk Management** correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider risk management enables customers to create policies to manage security and compliance.  
 - **Microsoft Purview Communication Compliance** provides tools to help organizations detect potential regulatory compliance (for example SEC or FINRA) and business conduct violations such as sensitive or confidential information, harassing or threatening language, and sharing of adult content.  
 
 Insider risk management and communication compliance are built with privacy by design and balance user privacy with tools that help detect and mitigate organizational risks. We are committed to protecting user trust and maintaining user-level privacy through our core privacy principles: 
@@ -35,13 +35,13 @@ Insider risk management and communication compliance are built with privacy by d
 
 ## Pseudonymization 
 
-Pseudonymization helps protect end-user privacy by removing identifiable user details like user name or email address. Pseudonymization also helps prevent potential bias and conflicts of interest by removing identifiable user details (name, email) and personal data (title, department or location) exposed in the solution. For example, an employee named John Smith would be pseudonymized into a non-personal identifier such as ANON2340. Pseudonyms are on by default for specific roles such as Insider Risk Management Analyst and Investigator roles, who review alerts and take action respectively, and Communication Compliance Analyst, who review policy alerts. 
+Pseudonymization helps protect end-user privacy by removing identifiable user details like user name or email address. Pseudonymization also helps prevent potential bias and conflicts of interest by removing identifiable user details (name, email) and personal data (title, department or location) exposed in the solution. For example, an employee named John Smith would be pseudonymized into a non-personal identifier such as ANON2340. Pseudonyms are on by default for specific roles such as *Insider Risk Management Analysts* and *Insider Risk Management Investigators* (review alerts and take action respectively) and *Communication Compliance Analysts* (review policy alerts). 
 
 ## Role-based access controls 
 
 We also implement stringent role-based access controls, so only authorized insider risk management and communication compliance roles can use and access alerts and insights into potential policy violations. By default, global administrators do not have access to insider risk management and communication compliance features. This helps ensure that only the appropriate stakeholders can access the solution and details specific to their role permissions. Organizations have the option to assign users to specific role groups to manage different sets of features based on their responsibilities. For example, insider risk management and communication compliance admins can create, configure, and delete policies but can’t access or investigate alerts or cases. On the other hand, insider risk management and communication compliance investigators can access and investigate alerts and cases but can’t configure policies.  
 
-Whether your organization chooses a single role group or multiple role groups to fit your organizations’ compliance and privacy requirements, both insider risk management and communication compliance allow admins to choose from predefined role group options within each solution. 
+Whether your organization chooses a single role group or multiple role groups to fit your organization's compliance and privacy requirements, both insider risk management and communication compliance allow admins to choose from predefined role group options within each solution. 
 
 Learn more about role group options for each solution:   
 
