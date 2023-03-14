@@ -12,15 +12,15 @@ ms.author: siosulli
 author: siosulli
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - Adm_TOC
 - tier2
 ms.topic: conceptual
-search.appverid: 
+search.appverid:
   - MOE150
   - MET150
-ms.custom: 
+ms.custom:
   - seo-marvel-apr2020
   - seo-marvel-jun2020
 ms.date: 02/16/2021
@@ -34,11 +34,11 @@ Microsoft Secure Score is a measurement of an organization's security posture, w
 
 Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
 
-Secure Score helps organizations:  
+Secure Score helps organizations:
 
-* Report on the current state of the organization's security posture.
-* Improve their security posture by providing discoverability, visibility, guidance, and control.  
-* Compare with benchmarks and establish key performance indicators (KPIs).
+- Report on the current state of the organization's security posture.
+- Improve their security posture by providing discoverability, visibility, guidance, and control.
+- Compare with benchmarks and establish key performance indicators (KPIs).
 
 Watch this video for a quick overview of Secure score.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWUPrP]
@@ -47,8 +47,8 @@ Organizations gain access to robust visualizations of metrics and trends, integr
 
 :::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="The Microsoft Secure Score homepage in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
->[!Note]
-> Currently, the Azure Active Directory related Microsoft Secure Score recommendations are not available for customer tenants registered in the following Azure Active Directory regions: 
+> [!NOTE]
+> Currently, the Azure Active Directory related Microsoft Secure Score recommendations are not available for customer tenants registered in the following Azure Active Directory regions:
 Japan, Australia, New Zealand, Fiji, Canada, United Kingdom, South Korea, France, United Arab Emirates, South America, Switzerland, Lichtenstein, Norway, Germany, Brazil, Sweden and Qatar.
 
 ## How it works
@@ -65,9 +65,8 @@ If you have a license for one of the supported Microsoft products, then you'll s
 
 Your score is updated in real time to reflect the information presented in the visualizations and recommended action pages. Secure Score also syncs daily to receive system data about your achieved points for each action.
 
->[!Note]
+> [!NOTE]
 > For Microsoft Teams related recommendations, the recommendation state will get updated when changes occur in the configuration state. In addition, the recommendation state is refreshed once a month.
-
 
 ### Key scenarios
 
@@ -105,8 +104,8 @@ If you turn on security defaults, you'll be awarded full points for the followin
 - Require MFA for administrative roles (10 points)
 - Enable policy to block legacy authentication (7 points)
 
->[!IMPORTANT]
->Security defaults include security features that provide similar security to the "sign-in risk policy" and "user risk policy" recommended actions. Instead of setting up these policies on top of the security defaults, we recommend updating their statuses to "Resolved through alternative mitigation."
+> [!IMPORTANT]
+> Security defaults include security features that provide similar security to the "sign-in risk policy" and "user risk policy" recommended actions. Instead of setting up these policies on top of the security defaults, we recommend updating their statuses to "Resolved through alternative mitigation."
 
 ## Required permissions
 
@@ -116,21 +115,21 @@ To have permission to access Microsoft Secure Score, you must be assigned one of
 
 With read and write access, you can make changes and directly interact with Secure Score. You can also assign read-only access to other users.
 
-* Global administrator
-* Security administrator
-* Exchange administrator
-* SharePoint administrator
+- Global administrator
+- Security administrator
+- Exchange administrator
+- SharePoint administrator
 
 ### Read-only roles
 
 With read-only access, you aren't able to edit status or notes for a recommended action, edit score zones, or edit custom comparisons.
 
-* Helpdesk administrator
-* User administrator
-* Service support administrator
-* Security reader
-* Security operator
-* Global reader
+- Helpdesk administrator
+- User administrator
+- Service support administrator
+- Security reader
+- Security operator
+- Global reader
 
 ## Risk awareness
 

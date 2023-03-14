@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune 
+title: Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
 description: Describes how to deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, installation, deploy, uninstallation,
 ms.service: microsoft-365-security
@@ -11,7 +11,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
@@ -47,7 +47,7 @@ Learn how to deploy Defender for Endpoint on Android with Microsoft Intune Compa
 ### Add as Android store app
 
 1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
-**Android Apps** \> **Add \> Android store app** and choose **Select**.
+**Android Apps** \> **Add** \> **Android store app** and choose **Select**.
 
    :::image type="content" source="images/mda-addandroidstoreapp.png" alt-text="The Add Android store application pane in the Microsoft Intune admin center portal"  lightbox="images/mda-addandroidstoreapp.png":::
 
@@ -154,15 +154,15 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
         - Click **Select App**, choose **Microsoft Defender**, select **OK** and then **Next**.
 
         :::image type="content" source="images/android-create-app.png" alt-text=" Screenshot of the Associated app details pane." lightbox="images/android-create-app.png":::
-     
-    1. Select **Permissions > Add**. From the list, select the available app permissions > **OK**.
-    2. Select an option for each permission to grant with this policy:
 
-       - **Prompt** -  Prompts the user to accept or deny.
+    1. Select **Permissions** \> **Add**. From the list, select the available app permissions \> **OK**.
+    1. Select an option for each permission to grant with this policy:
+
+       - **Prompt** - Prompts the user to accept or deny.
        - **Auto grant** - Automatically approves without notifying the user.
-       - **Auto deny** - Automatically denies without notifying the user. 
+       - **Auto deny** - Automatically denies without notifying the user.
 
-    1. Go to the **Configuration settings** section and choose **'Use configuration designer'** in Configuration settings format. 
+    1. Go to the **Configuration settings** section and choose **'Use configuration designer'** in Configuration settings format.
 
        :::image type="content" alt-text="Image of android create app configuration policy." source="images/configurationformat.png" lightbox="images/configurationformat.png":::
 
@@ -181,7 +181,6 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
     1. In the **Review + Create** page that comes up next, review all the information and then select **Create**.
 
         The app configuration policy for Defender for Endpoint is now assigned to the selected user group.
-
 
 10. Select **Microsoft Defender** app in the list \> **Properties** \>
 **Assignments** \> **Edit**.
