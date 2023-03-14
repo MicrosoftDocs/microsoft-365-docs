@@ -262,7 +262,7 @@ If your subscription includes Microsoft Intune, you can use it to onboard mobile
 After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
 > [!NOTE]
-> The standalone version of Defender for Business does not include the Intune license that is required to onboard iOS and Android devices. You can add Intune to your Defender for Business subscription to onboard mobile devices. Intune is included in Microsoft 365 Business Premium.
+> The standalone version of Defender for Business does not include the Intune license that is required to onboard iOS and Android devices in the Intune admin center. However, if your tenant is receiving [preview features](mdb-preview.md), you can now use the Microsoft Defender app as part of [mobile threat defense capabilities](mdb-mtd.md) (currently in preview in Defender for Business). Or, you can add Intune to your Defender for Business subscription. Intune is included in Microsoft 365 Business Premium.
 
 ## [**Servers**](#tab/Servers)
 
