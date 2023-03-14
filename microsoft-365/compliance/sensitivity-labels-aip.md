@@ -163,7 +163,7 @@ Use the following information to help you identify if the features you use with 
 |Labeling button on the ribbon|![Supported.](../media/yes-icon.png)|
 |Multilanguage support for label names and tooltips|![Supported.](../media/yes-icon.png) <br>[Learn more](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages)|
 |Visibility of labels on a toolbar|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#sensitivity-bar)|
-|Label colors|[![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#label-colors)|
+|Label colors|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#label-colors)|
 |**Category: Labeling actions**||
 |Manual labeling|![Supported.](../media/yes-icon.png) <br>[Learn more](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)|
 |Mandatory labeling|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels.md#what-label-policies-can-do)|
