@@ -24,10 +24,6 @@ The text is typically extracted as words, text lines, and paragraphs or text blo
 
 ## Requirements
 
-You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up OCR in Syntex.
-
-## Requirements
-
 ### Permissions
 
 You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up OCR in Syntex.
