@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 01/18/2023
+ms.date: 03/14/2023
 ms.localizationpriority: high
 ms.reviewer: efratka
 f1.keywords: NOCSH 
@@ -31,7 +31,7 @@ To onboard devices to Defender for Business, you can choose from several options
 
 This article also includes:
 
-- [What about servers?](#what-about-servers) (NEW!)
+- [What about servers?](#what-about-servers)
 - [How to run a detection test on a Windows device](#run-a-detection-test-on-a-windows-device)
 - [How to onboard devices gradually](#onboard-devices-gradually)
 - [How to offboard a device](#offboard-a-device) if a device is replaced or someone leaves the organization
