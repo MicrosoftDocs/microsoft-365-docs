@@ -40,7 +40,7 @@ To get their work done, people in your organization collaborate with others both
 
 Sensitivity labels from Microsoft Purview Information Protection let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered.
 
-The following example from Excel shows some sensitivity labels that have been made available to users. In this case, the **Highly Confidential** label has been applied to the spreadsheet, but users can change the label by using the **Sensitivity** button from the **Home** tab on the Ribbon.
+The following example from Excel shows how users might see an applied sensitivity label from the window bar, and how they can easily change the label by using the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) that's available with the latest versions of Office. The labels are also available from the **Sensitivity** button on the **Home** tab from the ribbon.
 
 ![Sensitivity label on the Excel ribbon and status bar.](../media/Sensitivity-label-in-Excel.png)
 
@@ -220,7 +220,7 @@ When you configure a label policy, you can:
     
     Consider using this option to help increase your labeling coverage. However, without user training, these settings can result in inaccurate labeling. In addition, unless you also set a corresponding default label, mandatory labeling can frustrate your users with the frequent prompts.
 
-- **Provide help link to a custom help page.** If your users aren't sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears at the bottom of the **Sensitivity label** menu in the Office apps:
+- **Provide help link to a custom help page.** If your users aren't sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears after the list of available sensitivity labels in the Office apps. For example:
 
     ![Learn more link on Sensitivity button on Ribbon.](../media/Sensitivity-label-learn-more.png)
 
