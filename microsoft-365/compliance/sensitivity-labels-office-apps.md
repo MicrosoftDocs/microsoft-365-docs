@@ -318,8 +318,7 @@ This configuration requires you to specify the following key/value pair:
 
 |Key|Value|
 |--- |--- |
-|com.microsoft.outlook.Mail.LouderMandatoryLabelEnabled|true| Immediately |
-
+|com.microsoft.outlook.Mail.LouderMandatoryLabelEnabled|true|
 
 ## Outlook-specific options for default label and mandatory labeling
 
