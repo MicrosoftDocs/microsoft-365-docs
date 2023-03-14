@@ -315,8 +315,11 @@ Now available in the Beta Channel for Android, and not yet for iOS, you can use 
 Instead of prompting for a label on send when mandatory labeling is configuring for emails, this configuration results in prompting for a label when a user first composes a message.
 
 This configuration requires you to specify the following key/value pair:
-- **Key**: `com.microsoft.outlook.Mail.LouderMandatoryLabelEnabled`
-- **Value**: `true`
+
+|Key|Value|
+|--- |--- |
+|com.microsoft.outlook.Mail.LouderMandatoryLabelEnabled|true| Immediately |
+
 
 ## Outlook-specific options for default label and mandatory labeling
 
