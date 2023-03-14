@@ -19,7 +19,7 @@ ms.collection:
 - highpri
 ---
 
-# Microsoft Purview Insider Risk Management and Communication Compliance Privacy Guide 
+# Microsoft Purview Insider Risk Management and Communication Compliance privacy guide 
 
 Microsoft Purview insider risk solutions provide organizations with the capability to help detect and mitigate potential risks and policy violations. The Microsoft Purview insider risk solutions include: 
 
