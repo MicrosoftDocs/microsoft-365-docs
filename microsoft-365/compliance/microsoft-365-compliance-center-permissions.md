@@ -85,12 +85,27 @@ For these solutions, the following features also support administrative units:
 - Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) alerts are visible only from users in assigned administrative units
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
 
+Administrative units are also supported for some built-in role groups. You can add users and groups to administrative units for the following built-in role groups:
+
+- Compliance Administrator
+- Compliance Data Administrators
+- Global Reader
+- Information Protection
+- Information Protection Admins
+- Information Protection Analyst
+- Information Protection Investigators
+- Information Protection Readers
+- Organization Management
+- Security Administrator
+- Security Operator
+- Security Reader
+
 When you assign role groups, you can select individual members or groups, and then the **Assign admin units** option to select administrative units that have been defined in Azure Active Directory:
 
 ![Assign admin units option when you edit role groups.](../media/assign-admin-units.png)
 
 > [!IMPORTANT]
-> **Assign admin units** is always available when you've created custom role groups. You can assign administrative units for any custom role group. When you add users and groups to buil-in user groups, **Assign admin units** is also available for any built-in role group that includes roles that support administrative units.
+> **Assign admin units** is always available when you've created custom role groups. You can assign administrative units for any custom role group.
 
 These administrators, referred to as restricted administrators, can now select one or more of their assigned administrative units to automatically define the initial scope of policies that they create or edit. Only if administrators don't have administrative units assigned (unrestricted administrators), will they be able to assign policies to the entire directory without selecting individual administrative units.
 
