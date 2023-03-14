@@ -40,6 +40,19 @@ sections:
           
           We recommend using Microsoft Defender Antivirus together with Defender for Business to get better protection that's coordinated across products and services. To learn more, see [Better together - Microsoft Defender Antivirus and Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/why-use-microsoft-defender-antivirus). 
 
+      - question: Users are unable to onboard mobile devices using the Microsoft Defender app.
+        answer: |
+
+          If Defender for Business hasn't finished provisioning, users might not be able to onboard their mobile devices using the Microsoft Defender app. To confirm whether provisioning has completed, follow these steps:
+
+          1. Go to the [Microsoft 365 Defender portal](https://security.microsoft.com) and sign in. 
+          
+          2. In the navigation bar, go to **Assets** > **Devices**. 
+
+             - If you see a message that says, "Hang on! We're preparing new spaces for your data and connecting them," it means that Defender for Business hasn't finished provisioning. This process is happening now, and can take up to 24 hours to complete.
+
+             - If you see a list of devices, or you're prompted to onboard devices, it means Defender for Business provisioning has completed. Users should now be able to onboard their mobile devices as expected.
+
       - question: I need to resolve a policy conflict
         answer: |
 
