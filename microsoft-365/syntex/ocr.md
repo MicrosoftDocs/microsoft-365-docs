@@ -1,5 +1,5 @@
 ---
-title: Overview of OCR in Microsoft Syntex
+title: Overview of the OCR service in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 description: Learn about optical character recognition in Microsoft Syntex.
 ---
 
-# Use the OCR service in Microsoft Syntex
+# Overview of the OCR service in Microsoft Syntex
 
 Optical character recognition (OCR) in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.
 
@@ -49,6 +49,8 @@ When OCR is applied, text is extracted from images within the files and indexed 
 The compliance admin can also specify which SharePoint sites to enable OCR to make that text available for DLP policies. If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance center configuration of OCR, see [link to article when available].
 
 In the compliance center, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SPO and ODB image only PDF and TIFF, EXO all PDF and TIFF, and endpoint image only PDF and TIFF and images.  If the compliance admin has configured OCR, you'll be able to see a message in the Syntex set up area indicating that something has been configured in compliance. 
+
+[Setup and manage will be mostly likely moved to an admin article, in which case it will just be linked to.]
 
 ## Requirements and limitations
 
