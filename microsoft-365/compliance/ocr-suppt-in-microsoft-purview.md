@@ -94,5 +94,5 @@ OCR scanning supports more than [150 languages](/azure/cognitive-services/comput
 
 - [Apply a sensitivity label to content automatically](/microsoft-365/compliance/apply-sensitivity-label-automatically)
 - [Learn about data loss prevention](/compliance/dlp-learn-about-dlp)
-- [Learn about insider risk management](/compliance/insider-risk-management)
+- [Learn about insider risk management](/microsoft-365/compliance/insider-risk-management)
 - [Learn about data lifecycle management](/compliance/data-lifecycle-management)
