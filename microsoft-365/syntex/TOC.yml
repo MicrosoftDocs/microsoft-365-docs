@@ -138,14 +138,10 @@
           href: content-processing-create-rules.md
 
     - name: Content query
-      items: 
-        - name: Use metadata to find content in document libraries 
-          href: metadata-search.md
+      href: metadata-search.md
      
     - name: Annotations
-      items: 
-        - name: Use annotations to collaborate 
-          href: annotations.md
+      href: annotations.md
 
     - name: OCR 
       href: ocr.md
