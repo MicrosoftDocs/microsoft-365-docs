@@ -310,11 +310,11 @@ For guidance about when to use this setting, see the information about [policy s
 
 ### For Outlook Mobile, change when users are prompted for a label
 
-Now available in the Beta Channel for Android, and not yet for iOS, you can use an Intune [managed apps app configuration policy](/mem/intune/apps/app-configuration-policies-managed-app#add-a-managed-apps-app-configuration-policy) with the Intune App Software Development Kit (SDK) to configure a setting that changes when users are prompted to select a sensitivity label for Outlook Mobile.
+Now available in the Beta Channel for Android, and not yet for iOS, you can use a Microsoft Intune [Managed apps app configuration policy](/mem/intune/apps/app-configuration-policies-managed-app#add-a-managed-apps-app-configuration-policy) with the Intune App Software Development Kit (SDK) to configure a setting that changes when users are prompted to select a sensitivity label for Outlook Mobile.
 
 Instead of prompting for a label on send when mandatory labeling is configuring for emails, this configuration results in prompting for a label when a user first composes a message.
 
-This configuration requires you to specify the following key/value pair as a setting in the policy:
+This configuration requires you to specify the following key/value pair as a gGeneral configuration setting in the policy:
 
 |Key|Value|
 |--- |--- |
