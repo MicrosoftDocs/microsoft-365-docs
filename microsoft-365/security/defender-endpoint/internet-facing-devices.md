@@ -42,17 +42,17 @@ Microsoft Defender for Endpoint automatically identifies and flags onboarded, ex
 Devices that can be connected to or are approachable from the outside pose a threat to your organization. Devices that are successfully connected through TCP or identified as host reachable by UDP will be flagged as internet facing in the [Microsoft 365 Defender portal](https://security.microsoft.com). Defender for Endpoint uses different data sources  to identify the devices to flag:
 
 - External scans are used to identify which devices are approachable from the outside.
-- Device network connections, captured as part of Defender for Endpoint signals, help to identify external incoming connections that reach internal devices and devices with a public IP address that's exposed to the internet.
+- Device network connections, captured as part of Defender for Endpoint signals, help to identify external incoming connections that reach internal devices, and devices with a public IP address that's exposed to the internet.
 
 ## View internet facing devices
 
-For each onboarded device identified as internet facing, the internet facing tag appears in the **Tags** column in the [device inventory](https://security.microsoft.com/machines/). To view internet facing devices:
+For each onboarded device identified as internet facing, the internet facing tag appears in the **Tags** column in the Device inventory in the Microsoft 365 Defender portal. To view internet facing devices:
 
-1. Go to **Assets** \> **Device** in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+1. Go to **Assets** \> **Device** in the [Microsoft 365 Defender portal](https://security.microsoft.com/machines/).
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-tag.png" alt-text="Screenshot of the Browser extensions page" lightbox="../../media/defender-vulnerability-management/internet-facing-tag.png":::
 
-Hover over the internet facing tag to see why it was applied:
+Hover over the internet facing tag to see why it was applied, possible reasons are:
 
 - This device has a public IP address that's exposed to the internet
 - This device was detected by an external scan
