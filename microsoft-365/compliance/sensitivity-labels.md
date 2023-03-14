@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 03/14/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -40,7 +40,7 @@ To get their work done, people in your organization collaborate with others both
 
 Sensitivity labels from Microsoft Purview Information Protection let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered.
 
-The following example from Excel shows some sensitivity labels that have been made available to users. In this case, the **Highly Confidential** label has been applied to the spreadsheet, but users can change the label by using the **Sensitivity** button from the **Home** tab on the Ribbon.
+The following example from Excel shows how users might see an applied sensitivity label from the window bar, and how they can easily change the label by using the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) that's available with the latest versions of Office. The labels are also available from the **Sensitivity** button on the **Home** tab from the ribbon.
 
 ![Sensitivity label on the Excel ribbon and status bar.](../media/Sensitivity-label-in-Excel.png)
 
@@ -136,7 +136,7 @@ When you create a sensitivity label, you're asked to configure the label's scope
 
 This scope configuration lets you have sensitivity labels that are just for items such as documents and emails, and can't be selected for containers. Similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. You can also select the scope for schematized data assets for Microsoft Purview Data Map:
 
-:::image type="content" source="../media/sensitivity-labels-scopes.png" alt-text="Scope options for sensitivity labels..":::
+:::image type="content" source="../media/sensitivity-labels-scopes.png" alt-text="Screenshot that shows scope options for sensitivity labels.":::
 
 The **Items** scope can further be refined to [files  and emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails), and to [meetings](sensitivity-labels-meetings.md) that includes calendar events, Teams meetings options, and Team chat. For example, use this refinement when you want a sensitivity label to be available for emails only.
 
@@ -159,6 +159,8 @@ When you create your sensitivity labels in the Microsoft Purview compliance port
 You can apply just one sensitivity label to an item such as a document, email, or container. If you set an option that requires your users to provide a justification for changing a label to a lower classification, the order of this list identifies the lower classifications. However, this option doesn't apply to sublabels that share the priority of their parent label.
 
 The ordering of sublabels is used with [automatic labeling](apply-sensitivity-label-automatically.md), though. When you configure auto-labeling policies, multiple matches can result for more than one label. Then, the last sensitive label is selected, and then if applicable, the last sublabel. When you configure sublabels themselves (rather than auto-labeling policies) for automatic or recommended labeling, the behavior is a little different when sublabels share the same parent label. For example, a sublabel configured for automatic labeling is preferred over a sublabel configured for recommended labeling. For more information, see [How multiple conditions are evaluated when they apply to more than one label](apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label).
+
+The ordering of sublabels is also used with [label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments).
 
 ![Option to create a sublabel.](../media/Sensitivity-label-sublabel-options.png)
 
@@ -218,7 +220,7 @@ When you configure a label policy, you can:
     
     Consider using this option to help increase your labeling coverage. However, without user training, these settings can result in inaccurate labeling. In addition, unless you also set a corresponding default label, mandatory labeling can frustrate your users with the frequent prompts.
 
-- **Provide help link to a custom help page.** If your users aren't sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears at the bottom of the **Sensitivity label** menu in the Office apps:
+- **Provide help link to a custom help page.** If your users aren't sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears after the list of available sensitivity labels in the Office apps. For example:
 
     ![Learn more link on Sensitivity button on Ribbon.](../media/Sensitivity-label-learn-more.png)
 

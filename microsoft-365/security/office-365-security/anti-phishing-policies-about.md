@@ -18,7 +18,7 @@ description: Admins can learn about the anti-phishing policies that are availabl
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 3/2/2023
+ms.date: 3/13/2023
 ---
 
 # Anti-phishing policies in Microsoft 365
@@ -198,9 +198,11 @@ User impersonation protection prevents specific internal or external email addre
 You can use protected users to add internal and external sender email addresses to protect from impersonation. This list of **senders** that are protected from user impersonation is different from the list of **recipients** that the policy applies to (all recipients for the default policy; specific recipients as configured in the **Users, groups, and domains** setting in the [Common policy settings](#common-policy-settings) section).
 
 > [!NOTE]
+> You can specify a maximum of 350 users for user impersonation protection in each anti-phishing policy.
 >
-> - In each anti-phishing policy, you can specify a maximum of 350 protected users (sender email addresses). You can't specify the same protected user in multiple policies. So, regardless of how many policies apply to a recipient, the maximum number of protected users (sender email addresses) for each individual recipient is 350. For more information about policy priority and how policy processing stops after the first policy is applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
-> - User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message can be identified as an impersonation attempt.
+> User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message can be identified as an impersonation attempt.
+>
+> You might get the error "The email address already exists" if you try to add a user to user impersonation protection when that email address is already specified for user impersonation protection in another anti-phishing policy. This error occurs only in the Defender portal. You won't get the error if you use the corresponding _TargetedUsersToProtect_ parameter in the **New-AntiPhishPolicy** or **Set-AntiPhishPolicy** cmdlets in Exchange Online PowerShell.
 
 By default, no sender email addresses are configured for impersonation protection, either in the default policy or in custom policies.
 
@@ -226,7 +228,7 @@ For detected user impersonation attempts, the following actions are available:
 Domain impersonation protection prevents specific domains **in the sender's email address** from being impersonated. For example, all domains that you own ([accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific custom domains (domains you own or partner domains). **Sender domains** that are protected from impersonation is different from the list of **recipients** that the policy applies to (all recipients for the default policy; specific recipients as configured in the **Users, groups, and domains** setting in the [Common policy settings](#common-policy-settings) section).
 
 > [!NOTE]
-> You can specify a maximum of 50 custom domains in each anti-phishing policy.
+> You can specify a maximum of 50 custom domains for domain impersonation protection in each anti-phishing policy.
 
 Messages from **senders** in the specified domains are subject to impersonation protection checks. The message is checked for impersonation **if** the message is sent to a **recipient** that the policy applies to (all recipients for the default policy; **Users, groups, and domains** recipients in custom policies). If impersonation is detected in the domain of the sender's email address, the action for domain impersonation is applied to the message.
 
@@ -287,13 +289,13 @@ Impersonation safety tips appear to users when messages are identified as impers
 Trusted senders and domain are exceptions to the impersonation protection settings. Messages from the specified senders and sender domains are never classified as impersonation-based attacks by the policy. In other words, the action for protected senders, protected domains, or mailbox intelligence protection aren't applied to these trusted senders or sender domains. The maximum limit for these lists is 1024 entries.
 
 > [!NOTE]
+> Trusted domain entries don't include subdomains of the specified domain. You need to add an entry for each subdomain.
 >
-> - Trusted domain entries don't include subdomains of the specified domain. You need to add an entry for each subdomain.
+> If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
 >
-> - If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
->   - `noreply@email.teams.microsoft.com`
->   - `noreply@emeaemail.teams.microsoft.com`
->   - `no-reply@sharepointonline.com`
+> - `noreply@email.teams.microsoft.com`
+> - `noreply@emeaemail.teams.microsoft.com`
+> - `no-reply@sharepointonline.com`
 
 ### Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365
 
