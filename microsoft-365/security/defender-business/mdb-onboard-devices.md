@@ -318,7 +318,32 @@ You can use the following methods to onboard an instance of Linux Server to Defe
 
 ## Mobile devices
 
-Use Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. See the following resources to get help enrolling these devices into Intune:
+You can use the following methods to onboard mobile devices, such as Android and iOS devices:
+
+- [Use the Microsoft Defender app (preview)](#use-the-microsoft-defender-app-preview)
+- [Use Microsoft Intune](#use-microsoft-intune)
+
+### Use the Microsoft Defender app (preview)
+
+Mobile threat defense capabilities are now available to Defender for Business customers who have opted in to receive [preview](mdb-preview.md) features. With these capabilities, users can download the Microsoft Defender app from Google Play or the Apple App Store, sign in, and complete onboarding steps.
+
+> [!TIP]
+> Make sure that users have downloaded an app, such as the Microsoft Authenticator app, on their device and have registered their device with their work or school account for Microsoft 365.
+
+| Device | Procedure |
+|:---|:---|
+| Android | 1. On the device, sign into Google Play.<br/><br/>2. Search for the Microsoft Defender app <br/><br/>3. On the app page, scroll down and select **Join the beta** > **Join**.<br/><br/>4. Wait for the process to complete. It might up to a few hours for the process of joining the beta program to complete.  You'll see text that says, “Joining the beta…”<br/><br/>5. After you have enrolled into the beta, verify that the beta version of the app looks like `1.0.xxxx.0201`, and then install the app.<br/><br/>6. Open the app, sign in, and complete the onboarding process. |
+| iOS | 1. Download Authenticator
+Sign in and Register the device
+Download Defender 
+Sign into the app and install
+Approve necessary permission
+Run a phishing test
+
+
+### Use Microsoft Intune
+
+If your subscription includes Microsoft Intune, you can use it to onboard mobile devices, such as Android and iOS/iPadOS devices. See the following resources to get help enrolling these devices into Intune:
 
 - [Enroll Android devices](/mem/intune/enrollment/android-enroll)
 - [Enroll iOS or iPadOS devices](/mem/intune/enrollment/ios-enroll)
