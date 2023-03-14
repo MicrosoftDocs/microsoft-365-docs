@@ -119,10 +119,42 @@ You can use the options in the **Actions** menu on the flyout page of a collecti
 
 ![Options on Actions menu for collection estimate.](../media/ediscovery-collection-estimate-actions-menu.png)
 
-Here's the descriptions of the management options.
+Here's the descriptions of the pre-collection estimate management options.
 
 - **Edit collection**: Change the settings of the collection estimate. After you make changes, you can rerun the collection and update the search estimates and statistics. As previously explained, you use this option to commit a collection estimate to a review set.  
 - **Commit collection**: Commit a collection to a review set. This means that you rerun the collection (using the current settings) and add the items returned by the collection to a review set. As previously explained, you can also configure additional settings (such as conversation threading and cloud-based attachments) when you add the collection to a review set. For more information and step-by-step instructions, see [Commit a collection estimate to a review set](ediscovery-commit-draft-collection.md).
+- **Export item report**: Similar to the [exporting items in Content search](/microsoft-365/compliance/ediscovery-export-a-content-search-report), you can choose this option to export the results of the report that is based on the actual items that can be retrieved from the source. After selecting, you have the following export options for collected items:
+
+    - **Types of collected items to include in the export**: Choose to export collected items with search hits, items with search hits and partially indexed items without hits, or only partially indexed items without search hits. You can also choose to one or more of the following options for collected items:
+
+        - Include Microsoft Teams and Yammer conversations
+        - Include cloud attachments
+        - Remove duplicates from Exchange content
+        - Include all existing versions of Microsoft 365 documents on SharePoint
+        - Include subfolder contents (outside of a matched folder)
+        - Include files in SharePoint lists (and their child items)
+
+- **Export collected items**: Export the collected items without adding the items to the review set. This option is useful in scenarios where data residency requirements associated with data storage may be prohibitive and you need collected data as a download. After selecting, you have the following export options for collected items:
+
+    - **Types of collected items to include in the export**: Choose to export collected items with search hits, items with search hits and partially indexed items without hits, or only partially indexed items without search hits. You can also choose to one or more of the following options for collected items:
+
+        - Include Microsoft Teams and Yammer conversations
+        - Include cloud attachments
+        - Remove duplicates from Exchange content
+        - Include all existing versions of Microsoft 365 documents on SharePoint
+        - Include subfolder contents (outside of a matched folder)
+        - Include files in SharePoint lists (and their child items)
+
+    - **How to format emails**: Choose an option of how collected emails should be formatted:
+
+        - Individual .eml files for each message
+        - Individual .pst files for each mailbox
+        - Single .pst file containing all messages in existing folders
+        - Single .pst file containing all messages in a single folder
+        - Place individual messages and Microsoft 365 documents in a .zip file
+
+    When the collected items are exported
+
 - **Delete collection**: Delete a collection estimate. After you commit a collection estimate to a review set, it can't be deleted.
 - **Refresh estimates**: Rerun the query (against the data sources) specified in the collection estimate to update the search estimates and statistics.
 - **Export as report**: Exports information about the collection estimate to a CSV file that you can download to your local computer. The export report contains the following information:
@@ -135,4 +167,4 @@ Here's the descriptions of the management options.
 - **Copy collection**: Create a new collection estimate by copying the settings from an existing collection. You have to use a different name for the new collection. You also have the option to modify the settings before you submit the new collection. After you submit it, the search query runs and new estimates and statistics are generated. This is a good way to quickly create additional collection estimate and then modify selected settings as necessary while still preserving information in the original collection. This also lets you easily compare the results of two similar collections.
 
 > [!NOTE]
-> After a collection estimate is committed to a review set, you can only copy the collection and export a report.
+> After a collection estimate is committed to a review set, you can only select **Copy collection** and **Export as report**.
