@@ -492,7 +492,7 @@ Deploy this setting by using Group Policy, or by using the [Cloud Policy service
 
 ## Sensitivity bar
 
-Supported in preview for built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support this feature.
+Use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support the sensitivity bar.
 
 When Word, Excel, and PowerPoint support this feature, sensitivity labels are displayed in a sensitivity bar next to the file name on the top window bar. For example:
 
