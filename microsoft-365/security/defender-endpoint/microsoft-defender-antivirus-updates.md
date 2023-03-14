@@ -80,6 +80,26 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### February-2023 (Platform: 4.18.2302.x | Engine: 1.1.20100.3)
+
+- Security intelligence update version: **1.383.1864.0**
+- Release date: **March 14, 2023**
+- Platform: **4.18.2302.x**
+- Engine: **1.1.20100.3**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Improvements in the contextual exclusions syntax
+- Improved scheduled scan robustness
+- Improved serviceability for internal database files
+- Enhanced certificate indicators determination logic
+- Enhanced memory usage
+
+#### Known Issues
+
+- None  
+
 ### January-2023 (Platform: 4.18.2301.6 | Engine: 1.1.20000.2)
 
 - Security intelligence update version: **1.383.26.0**
@@ -115,32 +135,6 @@ All our updates contain
 - Improved scanning of network shares
 - Enhanced processing of host files containing a wild card
 - Improved performance for [scan events](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-
-#### Known Issues
-
-- None  
-
-### October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)
-
-- Security intelligence update version: **1.379.4.0**
-- Release date: **November 10, 2022**
-- Platform: **4.18.2210.6**
-- Engine: **1.1.19800.4**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Addressed a quality issue that could result in poor responsiveness/usability
-- Improved hang detection in antivirus engine 
-- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capability 
-- Changed threat & vulnerability management (TVM)-warn and TVM-block action to block to resolve Intune's report 
-- Removed Clean Action from Intune policy for `ThreadSeverityDefaultAction` 
-- Added randomize scheduled task times configuration to Intune policy 
-- Added manageability for `DisableSMTPParsing` network protection 
-- Added improvement for behavior monitoring 
-- Normalized date format for event 1151 for Windows Defender 
-- Fixed a deadlock related to updating `\device\cdrom*` exclusions upon mounting a cdrom drive under certain conditions 
-- Improved PID information for threat detection 
 
 #### Known Issues
 
