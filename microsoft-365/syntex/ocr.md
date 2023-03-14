@@ -20,9 +20,9 @@ description: Learn about optical character recognition in Microsoft Syntex.
 
 Optical character recognition (OCR) in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.
 
-The text is typically extracted as words, text lines, and paragraphs or text blocks, enabling access to digital version of the scanned text. This makes it possible for the information to be available as metadata in search and in document libraries.
+The text is typically extracted as words, text lines, and paragraphs or text blocks, enabling access to digital version of the scanned text. This makes it possible for the extracted information to be available as metadata in search and in document libraries.
 
-## Requirements
+## Set up OCR
 
 ### Permissions
 
@@ -30,24 +30,54 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 ### Licensing
 
-To use OCR in Syntex, you must enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Syntex OCR is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). 
+Before you can use the OCR service in Syntex, you must first enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). OCR in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). 
 
-## Set up OCR
+### To set up OCR
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
-1. In the **Files and content** section, select **Use content AI with Microsoft Syntex**.
+2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**. 
 
+3. On the **Manage Microsoft Syntex** page, select **OCR**.
 
-Once that step is completed, Global and SharePoint admins can enter SharePoint sites where they would like OCR to be applied through the Set up Syntex flow. (The choices are no sites, selected sites, all sites).  The default is no sites. When OCR is applied, text is extracted from images within the files and indexed in search and made available for compliance features like DLP. 
+4. On the **OCR** page, select the SharePoint libraries where you want to enable OCR. The default is no SharePoint libraries, but you can select **Edit** to choose selected SharePoint libraries or all SharePoint libraries.
 
-Once the Azure subscription in entered, the compliance admin can also specify which SharePoint sites to OCR to make that text available for DLP. If there are different sites specified in the two set up locations, the maximum number of sites will be OCRed and the customer will not be double charged for processing. To learn more about the compliance center configuration of OCR,  (Read more here) In the compliance center, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SPO and ODB image only PDF and TIFF, EXO all PDF and TIFF, endpoint image only PDF and TIFF and images.  If compliance admin has configured OCR, you will be able to tell from the Syntex set up area that something has been configured in compliance. 
- 
-## OCR supported languages
+When OCR is applied, text is extracted from images within the files and indexed in search and made available for compliance features like data loss prevention (DLP). 
+
+### Compliance center
+
+The compliance admin can also specify which SharePoint sites to enable OCR to make that text available for DLP policies. If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance center configuration of OCR, see [link to article when available].
+
+In the compliance center, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SPO and ODB image only PDF and TIFF, EXO all PDF and TIFF, and endpoint image only PDF and TIFF and images.  If the compliance admin has configured OCR, you'll be able to see a message in the Syntex set up area indicating that something has been configured in compliance. 
+
+## Other requirements
+
+### Supported file types
+
+The OCR service is available for the following file types:
+
+- JPEG
+- JPG
+- PNG
+- BMP
+- TIFF
+- PDF (image only)
+
+### Supported languages
 
 OCR for printed text includes support for the following languages: TBD
 
 OCR for handwritten text includes support for the following languages: TBD
+
+### Limitations
+
+- Image file sizes must be less than 20 MB.
+
+- Images must be at least 50 x 50 pixels and not larger than 16,000 x 16,000 pixels.
+
+- Only images uploaded after OCR has been enabled are scanned.
+
+- Images that are embedded in Office documents are not currently supported.
 
 
 Syntex OCR is billed based on transactions.  (See pricing page) 
