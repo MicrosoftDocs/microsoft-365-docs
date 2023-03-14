@@ -64,7 +64,7 @@ During the preview, this feature is available for free. When the preview is over
 | Teams | -Autolabeling <br> -Data loss prevention <br> -Digital lifecycle management <br> -Insider risk management |
 
 > [!NOTE]
-> For information on OCR functionality in Communications Compliance, see the [Optical Character](/communication-compliance-policies?view=o365-worldwide#optical-character-recognition-ocr) Recognition section of [Create and Manage communication compliance policies](/communication-compliance-policies).
+> For information on OCR functionality in Communications Compliance, see the [Optical Character](/communication-compliance-policies?view=o365-worldwide#optical-character-recognition-ocr&preserve-view=true) Recognition section of [Create and Manage communication compliance policies](/communication-compliance-policies).
 
 ## What file types are supported?
 
