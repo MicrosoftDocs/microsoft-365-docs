@@ -27,6 +27,7 @@ To onboard devices to Defender for Business, you can choose from several options
 
 - [Automatic onboarding for Windows devices that are already enrolled in Microsoft Intune](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune)
 - [A local script to onboard Windows and Mac devices to Defender for Business](#use-a-local-script-to-onboard-windows-and-mac-devices-to-defender-for-business) (for devices that are not already enrolled in Intune)
+- [Onboard mobile devices using the Microsoft Defender app](#onboard-mobile-devices-using-the-microsoft-defender-app) (currently in preview!)
 - [Intune for enrolling new devices, including mobile devices](#use-intune-to-enroll-devices) (Windows, Mac, iOS, and Android) and then apply Defender for Business policies to those devices
 
 This article also includes:
@@ -59,6 +60,12 @@ To learn more about automatic onboarding, see [Use the wizard to set up Microsof
 You can use a local script to onboard Windows and Mac devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Intune (if it isn't already enrolled), and then onboards the device to Defender for Business. You can onboard up to 10 devices at a time using the local script.
 
 See [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md) for detailed instructions.
+
+## Onboard mobile devices using the Microsoft Defender app
+
+If you have opted in to receive preview features, you can now onboard Android and iOS devices using the Microsoft Defender app. With mobile threat defense capabilities in Defender for Business, users download the Microsoft Defender app from Google Play or the Apple App Store, sign in, and complete onboarding steps. To learn more about onboarding devices using this method, see [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md).
+
+To learn more about mobile threat defense, see [Mobile threat defense capabilities in Microsoft Defender for Business](../security/defender-business/mdb-mtd.md).
 
 ## Use Intune to enroll devices
 
