@@ -29,7 +29,7 @@ Once the OCR settings are configured, your existing data loss protection (DLP), 
 
 | Phase | What's needed|
 |-------|--------------|
-|**Phase 1:** Create your initial Azure subscription | If your organization does not already have an Azure subscription for your tenant, your Global admin will need to start by creating an [Azure account](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions). |
+|**Phase 1:** Create your initial Azure subscription | If your organization doesn't already have an Azure subscription for your tenant, your Global admin needs to start by creating an [Azure account](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions). |
 |**Phase 2:** Set up OCR scans for pay-as-you-go billing | Your Global or SharePoint admin follows the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure (preview)](/syntex/syntex-azure-billing) to add a subscription for OCR scans. |
 |**Phase 3:** Configure OCR scanning settings | Your Compliance admin configures the OCR settings for your tenant.|
 
@@ -44,60 +44,51 @@ OCR is first enabled at the tenant level, and then you select which services you
 
 During the preview, this feature is available for free. When the preview is over, to continue to use OCR scans, your organization must have a pay-as-you-go Microsoft Azure subscription. For information about how to create an Azure subscription, see [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions) and then follow the pay-as-you-go instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure (preview)](/syntex/syntex-azure-billing).
 
+> [!NOTE]
+> When you go to the Microsoft Syntex billing page to sign up for your OCR subscription, you do **not** need to also sign up for a Microsoft Syntex account subscription.
+
 <!-- Do we have instructions for how to monitor OCR usage? Or will that come later? -->
+
 ## Phase 3: Configure your OCR settings
 
 1. In the Microsoft Purview compliance portal, go to **Settings**.
 2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
-3. Select the locations where you wish to scan images. Available locations are:
-    - Endpoint
-    - Windows devices,
-    - Exchange Online
-    - OneDrive for Business
-    - SharePoint Online
-    - Teams
-4. For each location and scope, define the scope (users/groups/sites) for the OCR scans.
+3. Select the locations where you wish to scan images. And then, for each location and workload, define the scope (users/groups/sites) for the OCR scans. Supported locations and workflows are:
 
-## Where is OCR scanning supported?
+| Location     | Workflow(s)   |
+|--------------|---------------|
+| Endpoint Windows devices | -Autolabeling <br> -Data loss prevention <br> -Digital lifecycle management <br> -Insider risk management |
+| Exchange Online | -Autolabeling <br> -Data loss prevention <br> -Digital lifecycle management <br> -Insider risk management |
+| OneDrive for Business | -Autolabeling <br> -Data loss prevention <br> -Digital lifecycle management <br> -Insider risk management |
+| SharePoint Online | -Autolabeling <br> -Data loss prevention <br> -Digital lifecycle management <br> -Insider risk management |
+| Teams | -Autolabeling <br> -Data loss prevention <br> -Digital lifecycle management <br> -Insider risk management |
 
-OCR scanning is available in the following locations:
-
-- Endpoint devices (Windows)  <!-- Create a matrix here --> 
-- Exchange Online
-- OneDrive for Business
-- SharePoint Online
-- Teams
-
-OCR scans are supported for the following workflows:
-
-- Autolabeling <!-- if you'd applied an AL policy in EXO, it will also check OCR Talk to Carol -->
-- Data loss prevention
-- Digital lifecycle management
-- Insider risk management  
-
-For information on OCR functionality in Communications Compliance, see the [Optical Character](/communication-compliance-policies?view=o365-worldwide#optical-character-recognition-ocr) Recognition section of [Create and Manage communication compliance policies](/communication-compliance-policies).
+> [!NOTE]
+> For information on OCR functionality in Communications Compliance, see the [Optical Character](/communication-compliance-policies?view=o365-worldwide#optical-character-recognition-ocr) Recognition section of [Create and Manage communication compliance policies](/communication-compliance-policies).
 
 ## What file types are supported?
 
-This new functionality supports scanning images in the following file types:
+This new functionality supports scanning images in the following file types, with the noted requirements:
 
-- JPEG
-- JPG
-- PNG
-- BMP
-- TIFF
-- PDF (image only)
+| Supported file types | Image requirements  |
+|----------------------|---------------------|
+| JPEG, JPG, PNG, and BMP, TIFF, and PDF (image only) | - Images that are embedded in Microsoft Office documents aren't supported. <br>  - Image file sizes must be at least 100 KB and no larger than 20 MB. <br> - Images must be at least 50 x 50 pixels and not larger than 16000 x 16,000 px.  in Exchange Online and in Teams. For SharePoint Online, OneDrive for Business, and Windows Endpoints, the maximum image file size is 50 MB. <br> 
+
+>[!NOTE]
+> - For the preview, SharePoint Online and OneDrive for Business support only the following file types: JPEG, JPG, PNG, and BMP.
+> - Data loss protection policy tips are not supported for images in Exchange Online.
+> - The preview only supports images with machine-typed text
+> - Only images uploaded after OCR has been enabled are scanned.
+> - OCR scans of images that are embedded in Office documents isn't supported.
 
 ## What languages are supported?
 OCR scanning supports more than [150 languages](/azure/cognitive-services/computer-vision/language-support#print-text).
 
-## Limits
+## Summary
 
-- Images that are embedded in Office documents aren't supported.
-- Image file sizes must be at least 20 MB
-- Images must be at least 50 x 50 pixels and not larger than 16000 x 16,000 px.
-- The preview only supports images with machine-typed text
-- Only images uploaded after OCR has been enabled are scanned.
+- You can subscribe to OCR scanning without subscribing to Microsoft Syntex.
+- Configuring OCR scanning occurs at the tenant level, so once OCR scans are configured, they apply to all workflows.
+- You don't need to create separate classifiers for OCR scans. Once OCR is configured, existing sensitive information types (SITs), exact data matches, trainable classifiers, and fingerprint SITs will scan images as well.
 
 ## See also
 
