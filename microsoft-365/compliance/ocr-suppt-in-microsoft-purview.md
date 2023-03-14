@@ -72,7 +72,7 @@ This new functionality supports scanning images in the following file types, wit
 
 | Supported file types | Image requirements  |
 |----------------------|---------------------|
-| JPEG, JPG, PNG, and BMP, TIFF, and PDF (image only) | - Images that are embedded in Microsoft Office documents aren't supported. <br>  - Image file sizes must be at least 100 KB and no larger than 20 MB. <br> - Images must be at least 50 x 50 pixels and not larger than 16000 x 16,000 px.  in Exchange Online and in Teams. For SharePoint Online, OneDrive for Business, and Windows Endpoints, the maximum image file size is 50 MB. <br> 
+| JPEG, JPG, PNG, and BMP, TIFF, and PDF (image only) | - Images that are embedded in Microsoft Office documents aren't supported. <br>  - Image file sizes must be at least 100 KB and no larger than 20 MB. <br> - Images must be at least 50 x 50 pixels and not larger than 16000 x 16000 px.  in Exchange Online and in Teams. For SharePoint Online, OneDrive for Business, and Windows Endpoints, the maximum image file size is 50 MB. <br> 
 
 >[!NOTE]
 > - For the preview, SharePoint Online and OneDrive for Business support only the following file types: JPEG, JPG, PNG, and BMP.
