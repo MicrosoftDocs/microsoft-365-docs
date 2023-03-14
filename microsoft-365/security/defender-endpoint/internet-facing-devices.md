@@ -44,8 +44,6 @@ Devices that can be connected to or are approachable from the outside pose a thr
 - External scans are used to identify which devices are approachable from the outside.
 - Device network connections, captured as part of Defender for Endpoint signals, help to identify external incoming connections that reach internal devices, indicating which devices are internet facing and devices with a public IP address that's exposed to the internet.
 
-[Microsoft 365 Defender portal](https://security.microsoft.com) 
-
 ## View internet facing devices
 
 For each onboarded device identified as internet facing, the internet facing tag appears in the **Tags** column in the [device inventory](https://security.microsoft.com/machines/). To view internet facing devices:
