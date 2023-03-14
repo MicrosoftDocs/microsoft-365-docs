@@ -26,13 +26,18 @@ The text is typically extracted as words, text lines, and paragraphs or text blo
 
 ### Permissions
 
-You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up OCR in Syntex.
+You must have Global admin or SharePoint admin permissions to be able to access the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and set up OCR in Syntex.
 
 ### Licensing
 
 To use OCR in Syntex, you must enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Syntex OCR is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). 
 
 ## Set up OCR
+
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
+
+1. In the **Files and content** section, select **Use content AI with Microsoft Syntex**.
+
 
 Once that step is completed, Global and SharePoint admins can enter SharePoint sites where they would like OCR to be applied through the Set up Syntex flow. (The choices are no sites, selected sites, all sites).  The default is no sites. When OCR is applied, text is extracted from images within the files and indexed in search and made available for compliance features like DLP. 
 
