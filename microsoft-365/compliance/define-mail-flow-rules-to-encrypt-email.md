@@ -114,7 +114,7 @@ You can remove encryption from messages that was applied by your organization. Y
 
 5. In **Name**, type a name for the rule, such as `Remove encryption from outgoing mail`.
 
-6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The sender is located** \> **Inside the organization** for sending mail _or_ **The recipient is located** \> **Inside the organization** for receiving mail.
+6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Start by adding **The sender is located** \> **Inside the organization** for sending mail out to any recipients _or_ start by adding **The recipient is located** \> **Inside the organization** for receiving mail replies from outside the organization.
 
 7. In **Do the following**, select **Modify the message security** \> **Remove Office 365 Message Encryption and rights protection applied by the organization**.
 
