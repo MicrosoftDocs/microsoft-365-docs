@@ -27,7 +27,9 @@ search.appverid: met150
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender Antivirus
+- [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
+- [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md)
 
 **Platforms**
 - Windows
@@ -40,6 +42,10 @@ search.appverid: met150
 - Windows 10 Enterprise multi-session
   
 If you're using Configuration Manager, version 2006, with tenant attach, tamper protection can be extended to Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).
+
+## Is tamper protection available on Mac?
+
+Yes. See [Protect macOS security settings with tamper protection](tamperprotection-macos.md).
 
 ## How do I turn tamper protection on or off?
 
