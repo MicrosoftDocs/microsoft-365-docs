@@ -44,7 +44,7 @@ Before you can use the OCR service in Syntex, you must first enter your Azure su
 
 4. On the **OCR** page, select the SharePoint libraries where you want to enable OCR. The default is no SharePoint libraries, but you can select **Edit** to choose specific SharePoint libraries or to choose all SharePoint libraries.
 
-[Setup and manage will be mostly likely moved to a separate admin article, in which case it will just be linked to here.]
+[Setup and manage will be mostly likely moved to a separate admin article, in which case it will just be linked to from here.]
 
 ### Compliance center
 
