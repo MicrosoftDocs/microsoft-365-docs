@@ -75,7 +75,7 @@ The individual fields and values are described in the following table.
 |`SFV:SFE`|Filtering was skipped and the message was allowed because it was sent from an address in a user's Safe Senders list. <p> For more information about how admins can manage a user's Safe Senders list, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).|
 |`SFV:SKA`|The message skipped spam filtering and was delivered to the Inbox because the sender was in the allowed senders list or allowed domains list in an anti-spam policy. For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md).|
 |`SFV:SKB`|The message was marked as spam because it matched a sender in the blocked senders list or blocked domains list in an anti-spam policy. For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md).|
-|`SFV:SKI`|Similar to SFV:SKN, the message skipped spam filtering for another reason (for example, an intra-organizational email within a tenant).|
+|`SFV:SKI`|The message was marked based on content of the intra-organizational message. For example, the message was marked as SCL 1 for non-spam or SCL 5 to 9 for spam.|
 |`SFV:SKN`|The message was marked as non-spam prior to being processed by spam filtering. For example, the message was marked as SCL -1 or **Bypass spam filtering** by a mail flow rule.|
 |`SFV:SKQ`|The message was released from the quarantine and was sent to the intended recipients.|
 |`SFV:SKS`|The message was marked as spam prior to being processed by spam filtering. For example, the message was marked as SCL 5 to 9 by a mail flow rule.|

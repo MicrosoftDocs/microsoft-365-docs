@@ -30,7 +30,7 @@ As an Microsoft 365 admin, the Reports dashboard shows you the activity overview
 For example, you can understand the activity of your licensed Viva Learning users by looking at their interactions. It also helps you to understand the type of features being used within the Learning App.
 
 > [!NOTE]
-> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](https://learn.microsoft.com/microsoft-365/admin/misc/experience-insights-dashboard).
+> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
 
 ## How do I get to the to the Viva Learning activity report?  
 

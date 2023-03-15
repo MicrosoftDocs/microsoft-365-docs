@@ -80,6 +80,8 @@
       href: m365-lighthouse-compare-compliance-policies.md
     - name: Overview of the Windows 365 (Cloud PCs) page
       href: m365-lighthouse-win365-page-overview.md
+    - name: Overview of the Device health page
+      href: m365-lighthouse-device-health-overview.md
     - name: Reprovision a Windows 365 Cloud PC
       href: m365-lighthouse-reprovision-cloudpc.md
     - name: Change a Windows 365 Cloud PC account type
@@ -96,6 +98,8 @@
       href: m365-lighthouse-device-security-overview.md
     - name: Overview of quarantined messages
       href: m365-lighthouse-quarantine-messages-overview.md
+    - name: Overview of the Apps page
+      href: m365-lighthouse-apps-page-overview.md
 - name: Get help and support
   items: 
     - name: Get help and support
