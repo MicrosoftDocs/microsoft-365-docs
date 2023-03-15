@@ -151,7 +151,7 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 | [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | Yes | No | No | 
 | [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes <sup>[[5](#fn5)]</sup> | No | Yes | 
 | [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | See note <sup>[[6](#fn6)]</sup> | No | Yes | 
-| [Security intelligence updates](manage-updates-baselines-microsoft-defender-antivirus.md) | Yes | Yes <sup>[[7](#fn7)]</sup> | No | Yes <sup>[[7](#fn7)]</sup> | 
+| [Security intelligence updates](microsoft-defender-antivirus-updates.md) | Yes | Yes <sup>[[7](#fn7)]</sup> | No | Yes <sup>[[7](#fn7)]</sup> | 
 | [Data Loss Prevention](../../compliance/endpoint-dlp-learn-about.md) | Yes | Yes | No | No |
 | [Controlled folder access](controlled-folders.md) | Yes |No | No | No |
 | [Web content filtering](web-content-filtering.md) | Yes | See note <sup>[[8](#fn8)]</sup> | No | No |
@@ -185,7 +185,7 @@ You can use one of several methods to confirm the state of Microsoft Defender An
 - [Use Windows PowerShell to confirm that antivirus protection is running](#use-windows-powershell-to-confirm-that-antivirus-protection-is-running).
 
 > [!IMPORTANT]
-> Beginning with [platform version 4.18.2208.0 and later](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions): If a server has been onboarded to Microsoft Defender for Endpoint, the "Turn off Windows Defender" [group policy](configure-endpoints-gp.md#update-endpoint-protection-configuration) setting will no longer completely disable Windows Defender Antivirus on Windows Server 2012 R2 and later. Instead, it will place it into passive mode. In addition, the [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) feature will allow a switch to active mode but not to passive mode.
+> Beginning with [platform version 4.18.2208.0 and later](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions): If a server has been onboarded to Microsoft Defender for Endpoint, the "Turn off Windows Defender" [group policy](configure-endpoints-gp.md#update-endpoint-protection-configuration) setting will no longer completely disable Windows Defender Antivirus on Windows Server 2012 R2 and later. Instead, it will place it into passive mode. In addition, the [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) feature will allow a switch to active mode but not to passive mode.
 > 
 > - If "Turn off Windows Defender" is already in place before onboarding to Microsoft Defender for Endpoint, there will be no change and Defender Antivirus will remain disabled.
 > - To switch Defender Antivirus to passive mode, even if it was disabled before onboarding, you can apply the [ForceDefenderPassiveMode configuration](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) with a value of `1`. To place it into active mode, switch this value to `0` instead.
@@ -251,9 +251,9 @@ In active mode, Microsoft Defender Antivirus is used as the antivirus app on the
 
 In passive mode, Microsoft Defender Antivirus isn't used as the antivirus app, and threats are *not* remediated by Microsoft Defender Antivirus. However, threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md). Files are scanned by EDR, and reports are provided for threat detections that are shared with the Defender for Endpoint service. You might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode. 
 
-When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have a non-Microsoft antivirus product that is providing real-time protection from malware.
+When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have a non-Microsoft antivirus product that is providing real-time protection from malware.
 
-**Make sure to get your antivirus and antimalware updates, even if Microsoft Defender Antivirus is running in passive mode**. See [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).<br/><br/>Note that passive mode is only supported on Windows Server 2012 R2 & 2016 when the machine is onboarded using the [modern, unified solution](/microsoft-365/security/defender-endpoint/configure-server-endpoints). 
+**Make sure to get your antivirus and antimalware updates, even if Microsoft Defender Antivirus is running in passive mode**. See [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).<br/><br/>Note that passive mode is only supported on Windows Server 2012 R2 & 2016 when the machine is onboarded using the [modern, unified solution](/microsoft-365/security/defender-endpoint/configure-server-endpoints). 
 
 ### Disabled or uninstalled
 
