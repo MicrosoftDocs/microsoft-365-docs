@@ -32,7 +32,7 @@ The following table summarizes the capabilities that are included in mobile thre
 
 | Capability | Android | iOS |
 |:---|:---|:---|
-| Web Protection <br/>Anti-phishing, blocking unsafe network connections, and support for custom indicators. | Yes | Yes |
+| Web Protection <br/>Anti-phishing, blocking unsafe network connections, and support for custom indicators. Web protection is turned on by default with [web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering) | Yes | Yes |
 | Malware Protection (Android-only) <br/>Scanning for malicious apps. | Yes | No |
 | Jailbreak Detection (iOS-only) <br/>Detection of jailbroken devices. | No | Yes |
 | Microsoft Defender Vulnerability Management (MDVM) <br/>Vulnerability assessment of onboarded mobile devices. Includes OS and Apps vulnerabilities assessment for both Android and iOS. See [Use your vulnerability management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md). | Yes |  See note |
