@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/14/2023
+ms.date: 03/15/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -60,6 +60,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **In preview**: As a parity feature for the AIP add-in, built-in labeling for Windows supports [label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments).
 - **In preview**: Preview versions of Outlook for Mac now support [label colors](sensitivity-labels-office-apps.md#label-colors) but don't yet support the sensitivity bar.
 - **In preview**: For mandatory labeling, Outlook for Android in the Beta Channel supports a setting that you can configure with Microsoft Intune to [prompt users to select a sensitivity label when they first compose an email](sensitivity-labels-office-apps.md#for-outlook-mobile-change-when-users-are-prompted-for-a-label) instead of when they send it.
+- **In preview**: Now rolling out in preview to SharePoint and Teams, users can select and change a sensitivity label from the details pane from these apps when [sensitivity labels are enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 - **Removal of restrictions for prevent copying chat for protected meetings**: The label setting that [prevents copying chat to the clipboard](sensitivity-labels-meetings.md#prevent-copying-chat-to-the-clipboard-label-setting) now supports users outside your organization and also users who join a chat but weren't invited to the meeting.
 
 ## February 2023
