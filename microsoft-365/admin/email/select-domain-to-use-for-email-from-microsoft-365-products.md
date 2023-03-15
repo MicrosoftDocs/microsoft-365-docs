@@ -30,7 +30,7 @@ ms.assetid:
 description: "Let Microsoft send notification messages from an email address within your organization instead of Microsoft's default external email address."
 ---
 
-# Use your custom domain for emails sent from Microsoft 365 products
+# Select the domain to use for email from Microsoft 365 products
 
 > [!NOTE]
 > The following feature will be rolling out to public preview shortly, and may currently not be available to you.
