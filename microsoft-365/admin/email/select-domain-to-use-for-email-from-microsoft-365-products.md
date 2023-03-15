@@ -30,7 +30,7 @@ ms.assetid:
 description: "Let Microsoft send notification messages from an email address within your organization instead of Microsoft's default external email address."
 ---
 
-# Use your custom domain for emails sent from Microsoft 365 products
+# Select the domain to use for email from Microsoft 365 products
 
 > [!NOTE]
 > The following feature will be rolling out to public preview shortly, and may currently not be available to you.
@@ -55,7 +55,7 @@ The setting is available via the Microsoft 365 Admin Center Settings menu item. 
 > - The recommendation is to use a domain that has the appropriate DNS records to facilitate email validation, like SPF, DKIM, DMARC, and MX as this then complies with the [RFC compliance](https://www.ietf.org/rfc/rfc2142.txt) for sending and receiving email. Please see [Learn more about Exchange Online Email Routing](/exchange/mail-flow-best-practices/mail-flow-best-practices) for more information.
 > - Please ensure that you comply with all privacy, compliance and security requirements and policies within your organization. 
 
-**To configure the Send email notifications from your domain setting:**
+**To configure the "Send email notifications from your domain" setting:**
 
 1. In the Microsoft 365 admin center, in the navigation pane select **Settings**.
 2. Select **Org settings**.
