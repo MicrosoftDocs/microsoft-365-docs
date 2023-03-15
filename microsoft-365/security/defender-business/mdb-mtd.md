@@ -32,15 +32,15 @@ The following table summarizes the capabilities that are included in mobile thre
 
 | Capability | Android | iOS |
 |:---|:---|:---|
-| Web Protection <br/>Anti-phishing, blocking unsafe network connections, and support for custom indicators. Web protection is turned on by default with [web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering) | Yes | Yes |
-| Malware Protection (Android-only) <br/>Scanning for malicious apps. | Yes | No |
-| Jailbreak Detection (iOS-only) <br/>Detection of jailbroken devices. | No | Yes |
-| Microsoft Defender Vulnerability Management (MDVM) <br/>Vulnerability assessment of onboarded mobile devices. Includes OS and Apps vulnerabilities assessment for both Android and iOS. See [Use your vulnerability management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md). | Yes |  See note |
+| **Web Protection** <br/>Anti-phishing, blocking unsafe network connections, and support for custom indicators. Web protection is turned on by default with [web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering) | Yes | Yes |
+| **Malware protection** (Android-only) <br/>Scanning for malicious apps. | Yes | No |
+| **Jailbreak detection** (iOS-only) <br/>Detection of jailbroken devices. | No | Yes |
+| **Microsoft Defender Vulnerability Management** (MDVM) <br/>Vulnerability assessment of onboarded mobile devices. Includes OS and Apps vulnerabilities assessment for both Android and iOS. See [Use your vulnerability management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md). | Yes |  See note <sup>[[a](#fna)]</sup>|
 | Network Protection <br/>Protection against rogue Wi-Fi related threats and rogue certificates; ability to allow list the root CA and private root CA certificates in Intune; establish trust with endpoints. | Requires Intune | Requires Intune |
 | Unified alerting <br/>Alerts from all platforms in the unified Microsoft 365 Defender portal. | Yes | Yes |
 | Conditional Access, Conditional launch <br/>Blocking risky devices from accessing corporate resources. Defender for Business risk signals can also be added to app protection policies (MAM). | Requires Intune | Requires Intune |
 | Privacy Controls <br/>Configure privacy in the threat reports by controlling the data sent by Microsoft Defender for Endpoint. Privacy controls are available for admin and end users. It's there for enrolled and unenrolled devices as well. | Requires Intune | Requires Intune |
 | Integration with Microsoft Tunnel <br/>Integration with Microsoft Tunnel, a VPN gateway solution. | Requires Intune VPN Tunnel | Requires Intune VPN Tunnel |
 
-Note 1: Dependency on Intune for Software/App vulnerability, OS vulnerability will be there
+(<a id="fna">a</a>) Intune is required for software/app vulnerabilities to be reported. Operating system vulnerabilities are included by default.
 
