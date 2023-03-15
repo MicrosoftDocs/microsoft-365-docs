@@ -70,7 +70,7 @@ The following table summarizes what to expect:
 
 - Login to Windows Server with administrator account.
 - Right click Start and click Windows PowerShell (admin).
-- Enter the below command 
+- Enter the following command: 
 
 ```powershell
 Uninstall-WindowsFeature Windows-Defender
