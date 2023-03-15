@@ -204,7 +204,7 @@ When you create auto-apply retention label policies for sensitive information, y
 
 To learn more about the sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Currently, [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) and [document fingerprinting](document-fingerprinting.md) aren't supported for this scenario.
 
-Now in preview, you can extend your selected sensitive information types to images in documents and emails when these items are scanned at rest. For more information and how to configure this support, see [Support for optical character recognition in Microsoft Purview](ocr-suppt-in-microsoft-purview.md).
+Now in preview, you can extend your selected sensitive information types to images in existing documents. For more information and how to configure this support, see [Support for optical character recognition in Microsoft Purview](ocr-suppt-in-microsoft-purview.md).
 
 After you select a policy template, you can add or remove any types of sensitive information, and you can change the confidence level and instance count. In the previous example screenshot, these options have been changed so that a retention label will be auto-applied only when:
 
