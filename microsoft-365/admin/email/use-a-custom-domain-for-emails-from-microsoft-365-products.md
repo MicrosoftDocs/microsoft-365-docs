@@ -47,7 +47,7 @@ Opting into this feature and selecting a domain owned by your organization means
 
 The setting is available via the Microsoft 365 Admin Center Settings menu item. Select Settings and then choose the Organization Profile tab as illustrated below. 
 
-:::image type="content" alt-text="Microsoft browser usage report." source="../../media/send-email-notifications-org-settings.png" lightbox="../../media/send-email-notifications-org-settings.png":::
+:::image type="content" alt-text="Org Settings - Send email notifications setting" source="../../media/send-email-notifications-org-settings.png" lightbox="../../media/send-email-notifications-org-settings.png":::
 
 > [!NOTE]
 > - This setting is an opt-in setting which allows the Microsoft 365 system administrators to select a verified domain within the tenant. This means that the domain has been validated for ownership.
@@ -65,7 +65,7 @@ The setting is available via the Microsoft 365 Admin Center Settings menu item. 
 7. For **Custom username**, you can optionally choose to change it from the default value of **no-reply**, if needed.
 8. Select **Save**.  Changes will take a few minutes to complete.
 
-:::image type="content" alt-text="Microsoft browser usage report." source="../../media/save-email-notifications-domain.png" lightbox="../../media/save-email-notifications-domain.png":::
+:::image type="content" alt-text="Send email notifications setting." source="../../media/save-email-notifications-domain.png" lightbox="../../media/save-email-notifications-domain.png":::
 
 > [!NOTE]
 > If you make a mistake or would like to roll-back the change, de-select the **Use a custom send-from domain address** checkbox and then select **Save**. The setting will revert to the original configuration.
