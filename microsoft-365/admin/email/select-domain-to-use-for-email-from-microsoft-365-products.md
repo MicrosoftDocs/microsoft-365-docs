@@ -1,5 +1,5 @@
 ---
-title: "Use your custom domain for emails sent from Microsoft 365 products"
+title: "Select the domain to use for email from Microsoft 365 products"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -32,20 +32,21 @@ description: "Let Microsoft send notification messages from an email address wit
 
 # Use your custom domain for emails sent from Microsoft 365 products
 
+> [!NOTE]
+> The following feature will be rolling out to public preview shortly, and may currently not be available to you.
+
 Emails sent out to users as they interact with each other and across various products within Microsoft 365 are designed to provide insights and information about their organization. These emails are typically sent out between users based on those interactions, which means that they are often sent from the user’s email address. Those emails will remain unchanged and will continue to work as they do today.
 
-There are several scenarios where emails are sent from a “no-reply” system-based product account. For example, batched comments, news, digests, and system notification emails are currently sent from a no-reply product address. These include addresses such no-reply@sharepointonline.com, no-reply@planner.com, no-reply@project.com. Users receive these emails as **[EXTERNAL]**, as they are sent by Microsoft on behalf of your organization.  
+There are several scenarios where emails are sent from a “no-reply” system-based product account. For example, batched comments, news, digests, and system notification emails are currently sent from a no-reply product address. These include addresses such no-reply@sharepointonline.com, no-reply@planner.com, no-reply@project.com.
 
-You can choose to change the notifications sent out by the system-based product accounts to use an email address using your custom domain. For example, users at Contoso who would receive Planner notifications from an external email address of no-reply@planner.com, instead would receive an internal email from no-reply@contoso.com.
-
-Opting into this feature and selecting a domain owned by your organization means that emails will be routed to Exchange Online configured within your Microsoft 365 tenant. As they are no longer sent on behalf of the organization, they are internal emails which your Exchange Online instance will send out to your users.
+The default option is that users receive no-reply emails sent by Microsoft on behalf of your organization, which users receive as [EXTERNAL] notifications. You now have the option to use a custom domain as the sender of these notifications. Using this feature means that emails will now be sent from your own Exchange Online instance and they become internal communication. For example, **no-reply@sharepointonline.com [External]** could become **no-reply@contoso.com**, if the **Contoso.com**) the domain that has been selected.
 
 > [!NOTE]
-> Only domains registered within your tenant can be used and you must be the domain owner. 
+> Only domains registered within your tenant can be used and you must be the domain owner.
 
-## Configure the Send email notifications from your domain setting
+## Configure the "Send email notifications from your domain" setting
 
-The setting is available via the Microsoft 365 Admin Center Settings menu item. Select Settings and then choose the Organization Profile tab as illustrated below. 
+The setting is available via the Microsoft 365 Admin Center Settings menu item. Select Settings, select Org Settings, and then the Organizational Settings profile tab as illustrated below. 
 
 :::image type="content" alt-text="Org Settings - Send email notifications setting" source="../../media/send-email-notifications-org-settings.png" lightbox="../../media/send-email-notifications-org-settings.png":::
 
@@ -62,7 +63,7 @@ The setting is available via the Microsoft 365 Admin Center Settings menu item. 
 4. On the **Organizational profile** page, select **Send email notifications from your domain**.
 5. In the **Send email notifications from your domain** page, select **Use a custom send-from domain address**.
 6. The **Domains** menu, select the domain that you want to use for your email replies.The domains listed in the menu includes verified complete and incomplete domains as Microsoft 365 allows DNS settings to be configured and managed outside of the tenant. Your System or Exchange administrator must ensure that they follow and meet all DNS and domain requirements. 
-7. For **Custom username**, you can optionally choose to change it from the default value of **no-reply**, if needed.
+7. For **Custom username**, administrators can optionally configure the no-reply prefix. They could then create a matching email address in Exchange, if they would like to monitor responses from users.
 8. Select **Save**.  Changes will take a few minutes to complete.
 
 :::image type="content" alt-text="Send email notifications setting." source="../../media/save-email-notifications-domain.png" lightbox="../../media/save-email-notifications-domain.png":::
@@ -79,7 +80,6 @@ Please note that the following products currently support this feature:
 - Planner
 - Project
 - Viva Connections
-- Viva Pulse
 - Viva Topics
 - Viva Amplify
 
