@@ -49,3 +49,9 @@ The following table summarizes the capabilities that are included in mobile thre
 (<a id="fnc">c</a>) Intune is included in [Microsoft 365 Business Premium](../../business-premium/index.md). Intune can be added on to Defender for Business.
 
 (<a id="fnd">d</a>) See [Prerequisites for the Microsoft Tunnel in Intune](/mem/intune/protect/microsoft-tunnel-prerequisites)
+
+## See also
+
+[View and edit security policies and settings in Microsoft Defender for Business](mdb-configure-security-settings.md)
+
+[What's new in Microsoft 365 Business Premium and Microsoft Defender for Business](../../business-premium/m365bp-mdb-whats-new.md)
