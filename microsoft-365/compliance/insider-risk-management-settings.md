@@ -192,13 +192,15 @@ Another option for policy thresholds is to assign the policy triggering event to
 
 #### Use real-time analytics (preview) to manage alert volume 
 
-You can use real-time analytics (preview) to predict the number of users affected by changes to threshold settings before pushing your policies live. This can save a lot of time otherwise spent doing manual policy tuning. For example, when real-time analytics is turned on, when you choose the **Customize thresholds** option when creating a policy, you'll see:
+You can use real-time analytics (preview) to predict the number of users affected by changes to threshold settings before pushing your policies live. This can save a lot of time otherwise spent doing manual policy tuning. When real-time analytics is turned on, when you choose the **Customize thresholds** option when creating a policy, you'll see:
 
-- A gauge that shows the number of distinct users who have exceeded thresholds for at least one indicator in the policy. 
-- A list of the top five activities that are contributing to alert generation. If your policies are generating a lot of alerts, these are the indicators to focus on to reduce "noise".
-- An insight for each set of thresholds, displayed below the threshold. The initial insights are based on the default threshold values. For example, if the low threshold setting for *Downloading content from SharePoint* is set to 100, the insight shows how many users in the policy are doing more than 100 download activities. If you adjust a threshold setting, the insight changes in real time so you can see the number of estimated users that will be affected by the threshold change. 
+- **A**. A gauge that shows the number of distinct users who have exceeded thresholds for at least one indicator in the policy. 
+- **B**. A list of the top five activities that are contributing to alert generation. If your policies are generating a lot of alerts, these are the indicators to focus on to reduce "noise".
+- **C**. An insight for each set of thresholds, displayed below the threshold. The initial insights are based on the default threshold values. For example, if the low threshold setting for *Downloading content from SharePoint* is set to 100, the insight shows how many users in the policy are doing more than 100 download activities. If you adjust a threshold setting, the insight changes in real time so you can see the number of estimated users that will be affected by the threshold change. This helps you achieve the highest level of alert effectiveness before pushing your policies live. 
 
    ![Insider risk management real-time analytics](../media/insider-risk-management-real-time-analytics.png)
+
+Real-time analytics (preview) is based on the last 10 days of audit data in your tenant and [global exclusions (intelligent detections) are taken into account](#intelligent-detections). 
 
 ##### Prerequisites for using real-time analytics
 
@@ -660,10 +662,17 @@ Depending on the number of users assigned to insider risk management role groups
 
 ## Analytics
 
+Enabling insider risk analytics offers two important benefits. When analytics is enabled, you can:
+
+- Conduct an evaluation of potential insider risks in your organization without configuring any insider risk polices.
+- Predict the effect of changes to your policies in real time
+
+### Conduct an evaluation of insider risks in your organization
+
 Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. Analytics scans offer the following advantages for your organization:
 
 - Easy to configure: To get started with analytics scans, you can select Run scan when prompted by the analytics recommendation or go to **Insider risk settings** > **Analytics** and enable analytics.
-- Privacy by design: Scan results and insights are returned as aggregated and anonymized user activity, individual user names aren't identifiable by reviewers.
+- Privacy by design: Scan results and insights are returned as aggregated and anonymized user activity; individual user names aren't identifiable by reviewers.
 - Understand potential risks through consolidated insights: Scan results can help you quickly identify potential risk areas for your users and which policy would be best to help mitigate these risks.
 
 Check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help understand how analytics can help accelerate the identification of potential insider risks and help you to quickly take action.
@@ -677,7 +686,11 @@ Analytics scans for risk management activity from several sources to help identi
 
 Analytics insights from scans are based on the same risk management activity signals used by insider risk management policies and report results based on both single and sequence user activities. However, the risk scoring for analytics is based on up to 10 days of activity while insider risk policies use daily activity for insights. When you first enable and run analytics in your organization, you'll see the scan results for one day. If you leave analytics enabled, you'll see the results of each daily scan added to the insight reports for a maximum range of the previous 10 days of activity.
 
-### Enable analytics and start your scan
+### Predict the effect of changes to threshold settings in real time
+
+Manually tuning policies to reduce alert "noise" can be very time-consuming. If analytics is turned on, when you customize threshold settings in your policies, insider risk management uses real-time analytics (preview) to estimate the number of affected users that could potentially match a given set of policy conditions. You can adjust the settings to achieve the highest level of alert effectiveness before pushing your policies live. Real-time analytics (preview) is based on the last 10 days of audit data in your tenant and global exclusions are taken into account. [Learn more about customizing threshold settings and using real-time analytics](#indicator-level-settings) 
+
+### Enable analytics and start a scan of potential insider risks in your organization
 
 To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or *Microsoft 365 Global admin* role group.
 Complete the following steps to enable insider risk analytics:
@@ -688,7 +701,7 @@ Complete the following steps to enable insider risk analytics:
 
 ![Insider risk management analytics settings](../media/insider-risk-settings-analytics-enable.png)
 
-### Viewing analytics insights and creating new policies
+### Viewing analytics insights after the first analytics scan
 
 After the first analytics scan is complete for your organization, members of the *Insider Risk Management Admins* role group will automatically receive an email notification and can view the initial insights and recommendations for potentially risky activities by your users. Daily scans continue unless you turn off analytics for your organization. Email notifications to admins are provided for each of the three in-scope categories for analytics (data leaks, theft, and exfiltration) after the first instance of potentially risky activity in your organization. Email notifications aren't sent to admins for follow-up risk management activity detection resulting from the daily scans. If analytics in **Insider risk management** > **Settings** > **Analytics** are disabled and then re-enabled in your organization, automatic email notifications are reset and emails are sent to members of the *Insider Risk Management Admins* role group for new scanning insights.
 
@@ -710,7 +723,10 @@ To display more information for an insight, select **View details** to display t
 
 ### Turn off analytics
 
-To turn off insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or Microsoft 365 *Global admin* role group. After you disable analytics, analytics insight reports will remain static and not be updated for new risks.
+To turn off insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or Microsoft 365 *Global admin* role group. After you disable analytics:
+
+- Analytics insight reports will remain static and will not be updated for new risks. 
+- You won't be able to [see real-time analytics when you customize thresholds for your policies](#indicator-level-settings).
 
 Complete the following steps to turn off insider risk analytics:
 
