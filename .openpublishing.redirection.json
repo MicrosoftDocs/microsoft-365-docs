@@ -1692,8 +1692,8 @@
     },
     {
       "source_path": "microsoft-365/business/security-features.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/secure-your-business-data",
-      "redirect_document_id": false
+      "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/upgrade-to-windows-pro-creators-update.md",
@@ -2767,7 +2767,7 @@
     },
     {
       "source_path": "microsoft-365/security-and-compliance/index.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/secure-your-business-data",
+      "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
       "redirect_document_id": false
     },
     {
@@ -7892,7 +7892,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/overview-m365-security.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/secure-your-business-data",
+      "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
       "redirect_document_id": false
     },
     {
@@ -10743,7 +10743,7 @@
   {
     "source_path": "microsoft-365/admin/security-and-compliance/secure-your-business-data.md",
     "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
-    "redirect_document_id": true
+    "redirect_document_id": false
   }
  ]
 }
