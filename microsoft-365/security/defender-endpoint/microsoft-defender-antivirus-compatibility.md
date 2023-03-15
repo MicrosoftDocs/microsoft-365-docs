@@ -76,7 +76,7 @@ The following table summarizes what to expect:
 Uninstall-WindowsFeature Windows-Defender
 ```
 
-- Restart the server to remove the Windows Defender feature.
+- Restart the server to remove Microsoft Defender Antivirus.
 
 If the device is onboarded to Microsoft Defender for Endpoint, you can use Microsoft Defender Antivirus in passive mode as described later in this article.
 
