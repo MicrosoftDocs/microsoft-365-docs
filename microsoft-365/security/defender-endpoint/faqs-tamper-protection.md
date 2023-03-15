@@ -110,21 +110,27 @@ No. Non-Microsoft antivirus offerings will continue to register with the Windows
 
 Devices that are onboarded to Microsoft Defender for Endpoint will have Microsoft Defender Antivirus running in passive mode. In these cases, tamper protection will continue to protect the service and its features.
 
-## I have the Windows E3 enrollment. Can I use configuring tamper protection in Intune?
+## What subscriptions include tamper protection?
 
-Currently, configuring tamper protection in Intune is only available for customers whose subscriptions include [Microsoft Defender for Endpoint Plan 1 or Plan 2](/microsoft-365/security/defender-endpoint).
+Tamper protection is included in the following subscriptions:
+
+- [Microsoft Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
+- [Microsoft 365 Business Premium](../../business-premium/index.md)
+
+If your subscription includes Intune, you can use Intune to configure tamper protection. You can also turn tamper protection on tenant-wide using the Microsoft 365 Defender portal. See [Use PowerShell to determine whether tamper protection and real-time protection are turned on](prevent-changes-to-security-settings-with-tamper-protection.md#use-powershell-to-determine-whether-tamper-protection-and-real-time-protection-are-turned-on).
 
 ## I'm an enterprise customer. Can local admins change tamper protection on their devices?
 
 In general, tamper protection helps protect against users being able to change security settings directly on devices. Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md). To further prevent malware from running in kernel, consider using  [driver block rules with Application Control for Windows](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules).
 
-## What happens if my device is onboarded with Microsoft Defender for Endpoint and then goes into an off-boarded state?
+## What happens if my device is onboarded to Defender for Endpoint and then goes into an off-boarded state?
 
 If a device is off-boarded from Microsoft Defender for Endpoint, tamper protection is turned on, which is the default state for unmanaged devices.
 
 ## If the status of tamper protection changes, are alerts shown in the Microsoft 365 Defender portal?
 
-Alerts should be listed in the [Microsoft 365 Defender portal](https://security.microsoft.com) under **Alerts**.
+Alerts should be listed in the [Microsoft 365 Defender portal](https://security.microsoft.com) under **Incidents**.
 
 Your security operations team can also use hunting queries, such as the following example:
 
