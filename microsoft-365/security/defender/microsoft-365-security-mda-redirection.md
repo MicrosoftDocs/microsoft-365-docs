@@ -50,7 +50,7 @@ To start routing accounts to Microsoft 365 Defender:
 1. Alternatively, sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 1. Then navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft 365 Defender** or [go directly to the Redirection setting](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
 
-    :::image type="content" source="../../media/defender-cloud-apps-portal-redirection.png" alt-text="Portal redirection."lightbox="../../media/defender-cloud-apps-portal-redirection.png":::
+    :::image type="content" source="../../media/defender-cloud-apps-portal-redirection.png" alt-text="Screenshot that shows Portal redirection."lightbox="../../media/defender-cloud-apps-portal-redirection.png":::
 
 1. Toggle the Automatic redirection setting to **On**.
 
