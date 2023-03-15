@@ -244,7 +244,9 @@ You can use the following methods to onboard mobile devices, such as Android and
 > [!IMPORTANT]
 > Make sure that all of the following requirements are met before onboarding devices:
 > 1. Your organization has signed up to receive preview features for your tenant. See [Microsoft Defender for Business preview features](mdb-preview.md).
-> 2. Defender for Business has finished provisioning. See [How to get Microsoft Defender for Business](get-defender-business.md#how-to-get-microsoft-defender-for-business).
+> 2. Defender for Business has finished provisioning. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Assets** > **Devices**. 
+>   - If you see a message that says, "Hang on! We're preparing new spaces for your data and connecting them," it means that Defender for Business hasn't finished provisioning. This process is happening now, and can take up to 24 hours to complete.
+>   - If you see a list of devices, or you're prompted to onboard devices, it means Defender for Business provisioning has completed. 
 > 3. Users have downloaded the Microsoft Authenticator app on their device, and have registered their device using their work or school account for Microsoft 365.
 
 | Device | Procedure |
