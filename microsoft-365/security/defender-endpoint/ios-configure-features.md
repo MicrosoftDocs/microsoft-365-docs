@@ -301,6 +301,7 @@ Defender for Endpoint on iOS enables admins to configure custom indicators on iO
 
 > [!NOTE]
 > Defender for Endpoint on iOS supports creating custom indicators only for IP addresses and URLs/domains.
+>
 > For iOS, no alerts are generated on Microsoft 365 Defender when the URL or IP set in the indicator is accessed.
 
 ## Configure vulnerability assessment of apps
