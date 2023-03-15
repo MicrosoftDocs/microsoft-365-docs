@@ -36,7 +36,7 @@ Endpoint DLP allows you to monitor Windows 10 or Windows 11 devices and detect w
 
 Insider risk management uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks. For more information, see [Learn about insider risk management](insider-risk-management.md).
 
-Device onboarding is shared across Microsoft 365 and Microsoft Defender for Endpoint (MDE). If you've already onboarded devices to MDE, they will appear in the managed devices list and no further steps are necessary to onboard those specific devices. Onboarding devices in Compliance center also onboards them into MDE.
+Device onboarding is shared across Microsoft 365 and Microsoft Defender for Endpoint (MDE). If you've already onboarded devices to MDE, they will appear in the managed devices list and no further steps are necessary to onboard those specific devices. Onboarding devices in Compliance portal also onboards them into MDE.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -119,7 +119,7 @@ In this deployment scenario, you'll onboard Windows 10 or Windows 11 devices tha
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
-2. Open the Compliance Center settings page and choose **Turn on Windows device monitoring**.
+2. Open the Microsoft Purview Compliance portal settings page and choose **Turn on Windows device monitoring**.
 
 3. Choose **Device management** to open the **Devices** list. 
 
@@ -139,6 +139,22 @@ In this deployment scenario, you'll onboard Windows 10 or Windows 11 devices tha
 |[Group Policy](device-onboarding-gp.md) | Use Group Policy to deploy the configuration package on devices.
 [Local script](device-onboarding-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
 [Virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md) | Learn how to use the configuration package to configure VDI devices.
+
+## Device configuration and policy sync status (preview)
+
+You can check the **Configuration status** and the **Policy sync status** of all your onboarded devices in the **Devices** list. For more information on the configuration and policy status, select an onboarded device to open the details pane.
+
+**Configuration status** shows you if the device is configured correctly, is sending a heartbeat signal to Purview, and the last time the configuration was validated. For Windows devices configuration includes checking the status of [Microsoft Defender Antivirus always-on protection and behavior monitoring](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus).
+
+**Policy sync status** shows you if the most current versions of the endpoint DLP policies have been synchronized to the device and the last time a policy sync occurred.
+
+
+|Field value  |Configuration status  |Policy sync status  |
+|---------|---------|---------|
+|Updated    |Device health parameters are enabled and correctly set.   |Device has been updated with the current versions of policies.         |
+|Not updated    | You need to enable the configuration settings for this device. Follow the procedures in [Microsoft Defender Antivirus always-on protection](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)|This device has not synced the latest policy updates. If the policy update was made within the last 2 hours, wait for the policy to reach your device. |
+|Not available  | Device properties are not available in the device list. This is could be because the device doesn't meet the minimum OS version, or configuration or if the device was just onboarded.        |Device properties are not available in the device list. This is could be because the device doesn't meet the minimum OS version, or configuration or if the device was just onboarded.|
+
 
 ## See also
 
