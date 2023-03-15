@@ -45,7 +45,7 @@ Onboard your business devices to protect them right away. You can choose from se
 > - Windows 10 or 11 Professional
 > - Windows 10 or 11 Enterprise
 > 
-> For more details, see [Microsoft Defender for Business requirements](mdb-requirements.md).
+> For more information, see [Microsoft Defender for Business requirements](mdb-requirements.md).
 > 
 Choose one of the following options to onboard Windows client devices to Defender for Business:
 
@@ -137,7 +137,7 @@ After you've onboarded Windows devices to Defender for Business, you can run a d
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-After the command runs, the Command Prompt window will close automatically. If successful, the detection test will be marked as completed, and a new alert will appear in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about 10 minutes.
+After the command runs, the Command Prompt window closes automatically. If successful, the detection test is marked as completed, and a new alert appears in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device within about 10 minutes.
 
 ## [**Mac**](#tab/mac)
 
@@ -175,7 +175,7 @@ When you run the local script on Mac:
 
 8. Select **Continue**, agree with the license terms, and then enter your password when prompted.
 
-9. You'll be prompted to allow installation of a driver from Microsoft (either "System Extension Blocked" or "Installation is on hold", or both). You must allow the driver installation: Select **Open Security Preferences** or **Open System Preferences** > **Security & Privacy**, and then select **Allow**.
+9. You're prompted to allow installation of a driver from Microsoft (either "System Extension Blocked" or "Installation is on hold", or both). You must allow the driver installation: Select **Open Security Preferences** or **Open System Preferences** > **Security & Privacy**, and then select **Allow**.
 
 10. Use the following Bash command to run the onboarding package:
 
