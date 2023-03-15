@@ -79,7 +79,7 @@ New functionality is rolling out now to protect Microsoft Defender Antivirus exc
 
 If you're currently using Intune to configure and manage tamper protection, you should continue using Intune. 
 
-When tamper protection is turned on, and you use Group Policy to make changes to Microsoft Defender Antivirus settings, changes to settings that are tamper protected will be ignored. See [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
+When tamper protection is turned on, and you use Group Policy to make changes to Microsoft Defender Antivirus settings, any changes to settings that are tamper protected will be ignored. See [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
 
 ## If we use Microsoft Intune to configure tamper protection, does it apply only to the entire organization?
 
