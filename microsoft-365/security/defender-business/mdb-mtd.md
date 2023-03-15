@@ -36,11 +36,12 @@ The following table summarizes the capabilities that are included in mobile thre
 | **Malware protection** (Android-only) <br/>Scanning for malicious apps. | Yes | No |
 | **Jailbreak detection** (iOS-only) <br/>Detection of jailbroken devices. | No | Yes |
 | **Microsoft Defender Vulnerability Management** (MDVM) <br/>Vulnerability assessment of onboarded mobile devices. Includes OS and Apps vulnerabilities assessment for both Android and iOS. See [Use your vulnerability management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md). | Yes |  See note <sup>[[a](#fna)]</sup>|
-| Network Protection <br/>Protection against rogue Wi-Fi related threats and rogue certificates; ability to allow list the root CA and private root CA certificates in Intune; establish trust with endpoints. | Requires Intune | Requires Intune |
+| **Network Protection** <br/>Protection against rogue Wi-Fi related threats and rogue certificates. Includes the ability to allow root certification authority and private root certification authority certificates in Intune. Also establishes trust with endpoints. | Requires Intune | Requires Intune |
 | Unified alerting <br/>Alerts from all platforms in the unified Microsoft 365 Defender portal. | Yes | Yes |
-| Conditional Access, Conditional launch <br/>Blocking risky devices from accessing corporate resources. Defender for Business risk signals can also be added to app protection policies (MAM). | Requires Intune | Requires Intune |
+| Conditional Access, Conditional launch <br/>Blocking risky devices from accessing corporate resources. Defender for Business risk signals can also be added to app protection policies (MAM). | Requires Intune <sup>[[b](#fnb)]</sup> | Requires Intune <sup>[[b](#fnb)]</sup> |
 | Privacy Controls <br/>Configure privacy in the threat reports by controlling the data sent by Microsoft Defender for Endpoint. Privacy controls are available for admin and end users. It's there for enrolled and unenrolled devices as well. | Requires Intune | Requires Intune |
 | Integration with Microsoft Tunnel <br/>Integration with Microsoft Tunnel, a VPN gateway solution. | Requires Intune VPN Tunnel | Requires Intune VPN Tunnel |
 
 (<a id="fna">a</a>) Intune is required for software/app vulnerabilities to be reported. Operating system vulnerabilities are included by default.
 
+(<a id="fnb">b</a>) Intune is included in [Microsoft 365 Business Premium](../../business-premium/index.md). Intune can be added on to Defender for Business.
