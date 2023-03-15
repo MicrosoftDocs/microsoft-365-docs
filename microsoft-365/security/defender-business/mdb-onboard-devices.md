@@ -361,7 +361,7 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 
 ## Run a phishing test on a device
 
-After you have onboarded a device, you can run a quick phishing test to make sure the device is connected and that alerts are generated as expected.
+After you've onboarded a device, you can run a quick phishing test to make sure the device is connected and that alerts are generated as expected.
 
 1. On a device, go to [https://smartscreentestratings2.net](https://smartscreentestratings2.net). Defender for Business should block that URL on the user's device.
 
