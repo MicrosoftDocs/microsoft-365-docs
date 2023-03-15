@@ -20,7 +20,9 @@ description: Learn about optical character recognition in Microsoft Syntex.
 
 Optical character recognition (OCR) in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.
 
-The text is typically extracted as words, text lines, and paragraphs or text blocks, enabling access to digital version of the scanned text. This makes it possible for the extracted information to be available as metadata in search and in document libraries.
+The text is typically extracted as words, text lines, and paragraphs or text blocks, enabling access to digital version of the scanned text. The extracted information is indexed in search and can be made available for [compliance features like data loss prevention (DLP)](#compliance-center).
+
+For example, you have an image file in your document library. With the OCR service enabled, Syntex automatically scans the image, extracts the relevant text, and makes the text from the image available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
 
 ## Prerequisites
 
