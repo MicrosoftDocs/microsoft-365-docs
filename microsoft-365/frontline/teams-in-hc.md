@@ -60,9 +60,9 @@ To get the most benefit for your healthcare organization, you first choose which
 
 Facilitate and centralize collaboration among care teams and across your entire healthcare organization.
 
-[Provide seamless virtual visits](#provide-seamless-virtual-visits)
-[Connect and engage the healthcare workforce](#connect-and-engage-the-healthcare-workforce)
-[Efficiently manage and motivate care teams](#efficiently-manage-and-motivate-care-teams)
+- [Provide seamless virtual visits](#provide-seamless-virtual-visits)
+- [Connect and engage the healthcare workforce](#connect-and-engage-the-healthcare-workforce)
+- [Efficiently manage and motivate care teams](#efficiently-manage-and-motivate-care-teams)
 
 The following scenarios support these goals:
 
