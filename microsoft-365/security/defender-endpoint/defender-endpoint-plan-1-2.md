@@ -72,6 +72,9 @@ You can also use a newly added license usage report to track status.
 
 **For more information, including how to use mixed-licensing scenarios in your tenant, see [Manage your Defender for Endpoint subscription settings across devices](defender-endpoint-subscription-settings.md)**.
 
+> [!NOTE]
+> Mixed-license scenarios are not currently supported for Microsoft Defender for Business. See [What happens if I have a mix of Microsoft endpoint security subscriptions](/microsoft-365/security/defender-business/mdb-faq?#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
+
 ## Options for onboarding servers
 
 Defender for Endpoint Plan 1 and 2 (standalone), Defender for Business (standalone), and Microsoft 365 Business Premium don't include server licenses. To onboard servers, choose from the following options:

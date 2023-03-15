@@ -324,11 +324,6 @@ When the Outlook app supports turning off mandatory labeling:
 
 When the Outlook app doesn't support turning off mandatory labeling: If you select **Require users to apply a label to their email or documents** as a policy setting, Outlook will always prompt users to select a label for unlabeled emails.
 
-> [!NOTE]
-> If you have configured the PowerShell advanced settings **OutlookDefaultLabel** and **DisableMandatoryInOutlook** by using the [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) or [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) cmdlets:
-> 
-> Your chosen values for these PowerShell settings are reflected in the label policy configuration in the Microsoft Purview compliance portal, and they automatically work for Outlook apps that support these settings. The other PowerShell advanced settings remain supported for the Azure Information Protection unified labeling client only.
-
 ## Scope labels to just files or emails
 
 > [!NOTE]
@@ -336,12 +331,17 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 > 
 > Until this capability is supported on all the platforms used by your users, they will have an inconsistent labeling experience. For example, Word on one platform doesn't display a label that they see on a different platform.
 
-This configuration is an extension to the **Items** scope, when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) in the Microsoft Purview compliance center. When you define the scope for the label for items, you can further refine the scope to just files or emails, and to [meetings](sensitivity-labels-meetings.md):
+This configuration is an extension to the **Items** scope, when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) in the Microsoft Purview compliance portal. When you define the scope for the label for items, you can further refine the scope to just files or emails, and to [meetings](sensitivity-labels-meetings.md):
 
 - To scope labels to just Word, Excel, and PowerPoint: Make sure the option for **Files** is selected, and not the option for **Emails**.  
 - To scope labels to just Outlook, make sure the option for **Emails** is selected, and not the option for **Files**.
 
-Make sure both options are selected if you don't want to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook.
+> [!WARNING]
+> Although you can edit an existing label and remove the **Files** scope, we don't recommend you do this because existing configurations might no longer work as expected. For example, a SharePoint site admin wouldn't understand why a sensitivity label that they selected as a default label for a document library no longer applies the label.
+> 
+> If you want a sensitivity label just for emails, create a new label with just the **Emails** scope rather than edit an existing label.
+
+Make sure both options are selected if you don't need to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook.
 
 > [!NOTE]
 > The **Files** option can include other items that support this scoping option, such as Power BI files. Check the application's documentation to verify, and remember to test all labeling apps and services used by your organization.
@@ -492,7 +492,7 @@ Deploy this setting by using Group Policy, or by using the [Cloud Policy service
 
 ## Sensitivity bar
 
-Supported in preview for built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support this feature.
+Use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support the sensitivity bar.
 
 When Word, Excel, and PowerPoint support this feature, sensitivity labels are displayed in a sensitivity bar next to the file name on the top window bar. For example:
 
