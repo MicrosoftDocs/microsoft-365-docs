@@ -249,7 +249,7 @@ You can use the following methods to onboard mobile devices, such as Android and
 
 | Device | Procedure |
 |:---|:---|
-| Android | 1. On the device, go to the Google Play store.<br/><br/>2. Search for the Microsoft Defender app. <br/><br/>3. On the app page, scroll down and select **Join the beta** > **Join**.<br/><br/>4. Wait for the process to complete. It might take a few hours for the process of joining the beta program to complete.  You'll see text that says, “Joining the beta…”<br/><br/>5. After you have enrolled into the beta, verify that the beta version of the app looks like `1.0.xxxx.0201`, and then install the app.<br/><br/>6. Open the app, sign in, and complete the onboarding process. |
+| Android | 1. On the device, go to the Google Play store.<br/><br/>2. Search for the Microsoft Defender app. <br/><br/>3. On the app page, scroll down and select **Join the beta** > **Join**.<br/><br/>4. Wait for the process to complete. It might take a few hours for the process of joining the beta program to complete.  You'll see text that says, “Joining the beta…”<br/><br/>5. After you've enrolled into the beta, verify that the beta version of the app looks like `1.0.xxxx.0201`, and then install the app.<br/><br/>6. Open the app, sign in, and complete the onboarding process. |
 | iOS | 1. On the device, go to the Apple App Store. <br/><br/>2. Search for the Microsoft Defender app.<br/><br/>3. Sign into the app and install it. <br/><br/>4. Agree to the terms of use to continue. <br/><br/>5. Allow the Microsoft Defender app to set up a VPN connection and add VPN configurations. <br/><br/>6. Choose whether to allow notifications (such as alerts).  |
 
 > [!TIP]
@@ -296,7 +296,7 @@ You can onboard an instance of Windows Server to Defender for Business by using 
 
 3. Select an operating system, such as **Windows Server 1803, 2019, and 2022**, and then in the **Deployment method** section, choose **Local script**. 
 
-   If you select **Windows Server 2012 R2 and 2016**, you'll have two packages to download and run: an installation package and an onboarding package. The installation package contains an MSI file that installs the Defender for Business agent. The onboarding package contains the script to onboard your Windows Server endpoint to Defender for Business.
+   If you select **Windows Server 2012 R2 and 2016**, you have two packages to download and run: an installation package and an onboarding package. The installation package contains an MSI file that installs the Defender for Business agent. The onboarding package contains the script to onboard your Windows Server endpoint to Defender for Business.
 
 4. Select **Download onboarding package**. We recommend that you save the onboarding package to a removable drive.
 
