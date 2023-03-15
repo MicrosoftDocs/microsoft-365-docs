@@ -171,12 +171,14 @@ Or, you can automatically apply retention labels to newly shared [cloud attachme
 
 When you configure retention labels to auto-apply based on sensitive information, keywords or searchable properties, or trainable classifiers, use the following table to identify when retention labels can be automatically applied.
 
+> [!NOTE]
+> When sensitive information types are supported, they apply only to content that's created or modified after these information types have been [created or modified](audit-log-activities.md#sensitive-information-types). For existing items, this restriction applies to all custom sensitive information types and any new built-in information types.
+
 Exchange:
 
 |Condition|Items in transit (sent or received) |Existing items (data at rest)|
 |:-----|:-----|:-----|
-|Sensitive info types - built-in| Yes | No |
-|Sensitive info types - custom| Yes | No |
+|Sensitive info types | Yes | No |
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
@@ -185,7 +187,6 @@ SharePoint and OneDrive:
 |Condition|New or modified items |Existing items |
 |:-----|:-----|:-----|
 |Sensitive info types - built-in| Yes | Yes |
-|Sensitive info types - custom| Yes | No |
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
