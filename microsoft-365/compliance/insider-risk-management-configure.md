@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 04/01/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -236,6 +236,19 @@ See the [Configure advanced features in Defender for Endpoint](/windows/security
 Having visual context is crucial for security teams during forensic investigations to get better insights into risky user activities that may lead to a security incident. With customizable event triggers and built-in user privacy protection controls, forensic evidence enables customizable capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data.
 
 See the [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) article for step-by-step guidance to configure forensic evidence for your organization.
+
+### Configure optical character recognition (optional)
+
+Microsoft Purview can scan for sensitive content in documents to help protect those documents from inappropriate exposure. When you enable optical character recognition (OCR) in Microsoft Purview, data classifiers, such as sensitive information types and trainable classifiers, can also detect characters in stand-alone images. After configuring OCR settings (preview), your existing insider risk policies will be applied to both images and documents. 
+
+For the OCR preview, insider risk management supports scanning in the following locations: Windows endpoint devices, SharePoint Online, OneDrive for Business, and Teams. 
+
+> [!NOTE] 
+> For the OCR preview, Exchange Online is not supported as a scanning location for insider risk management.  
+
+OCR settings do not apply to forensic evidence clips in insider risk management. 
+
+[Learn more about setting up OCR scanning and pay-as-you-go billing](ocr-suppt-in-microsoft-purview.md). 
 
 ## Step 5 (required): Configure insider risk settings
 
