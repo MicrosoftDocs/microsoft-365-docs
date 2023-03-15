@@ -55,13 +55,12 @@ During the preview, this feature is available for free. When the preview is over
 2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
 3. Select the locations where you wish to scan images. And then, for each location and workload, define the scope (users/groups/sites) for the OCR scans. Supported locations and workflows are:
 
-| Location     | Workflow(s)   |
+|Feature area | Location   |
 |--------------|---------------|
-| Endpoint Windows devices | -Autolabeling <br> -Data loss prevention <br> -Digital lifecycle management <br> -Insider risk management |
-| Exchange Online | -Autolabeling <br> -Data loss prevention <br> -Digital lifecycle management <br> -Insider risk management |
-| OneDrive for Business | -Autolabeling <br> -Data loss prevention <br> -Digital lifecycle management <br> -Insider risk management |
-| SharePoint Online | -Autolabeling <br> -Data loss prevention <br> -Digital lifecycle management <br> -Insider risk management |
-| Teams | -Autolabeling <br> -Data loss prevention <br> -Digital lifecycle management <br> -Insider risk management |
+| Data lifecycle management (Automatically-applied retention labels) | Exchange Online <br> SharePoint Online |
+| Data loss prevention policies | Endpoint Windows devices <br> Exchange Online <br> OneDrive for Business <br> SharePoint Online <br> Teams |
+| Information protection (Autolabeling) | Exchange Online <br> OneDrive for Business |
+| Insider risk management policies | Endpoint Windows devices <br> Exchange Online <br> OneDrive for Business <br> SharePoint Online <br> Teams |
 
 > [!NOTE]
 > For information on OCR functionality in Communications Compliance, see the [Optical Character](/communication-compliance-policies?view=o365-worldwide#optical-character-recognition-ocr&preserve-view=true) Recognition section of [Create and Manage communication compliance policies](/communication-compliance-policies).
