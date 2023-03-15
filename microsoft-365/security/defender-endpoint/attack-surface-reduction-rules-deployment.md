@@ -138,7 +138,7 @@ The following Microsoft Defender Antivirus component versions must be no more th
 - **Microsoft Defender Antivirus engine version** - Microsoft Defender Antivirus engine is updated monthly.
 - **Microsoft Defender Antivirus security intelligence** - Microsoft continually updates Microsoft Defender security intelligence (also known as, definition and signature) to address the latest threats, and to refine detection logic.
 
-Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules false positive results and improves Microsoft Defender Antivirus detection capabilities. For more details on the current versions and how to update the different Microsoft Defender Antivirus components visit [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
+Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules false positive results and improves Microsoft Defender Antivirus detection capabilities. For more details on the current versions and how to update the different Microsoft Defender Antivirus components visit [Microsoft Defender Antivirus platform support](microsoft-defender-antivirus-updates.md).
 
 ### Caveat
 
@@ -188,7 +188,7 @@ Some rules don't work well if un-signed, internally developed application and sc
 
 [Configure and validate exclusions based on extension, name, or location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
-[Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
+[Microsoft Defender Antivirus platform support](microsoft-defender-antivirus-updates.md)
 
 [Overview of inventory in the Microsoft 365 Apps admin center](/deployoffice/admincenter/inventory)
 
