@@ -66,7 +66,7 @@ If your machines are receiving Defender updates from Windows Update, the gradual
 
 For machines receiving updates through, for example, Windows Server Update Services (WSUS) or Microsoft Configuration Manager, more options are available to all Windows updates, including options  for Microsoft Defender for Endpoint.
 
-- Read more about how to use a solution like WSUS, MECM to manage the distribution and application of updates at [Manage Microsoft Defender Antivirus updates and apply baselines - Windows security](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
+- Read more about how to use a solution like WSUS, MECM to manage the distribution and application of updates at [Manage Microsoft Defender Antivirus updates and apply baselines - Windows security](microsoft-defender-antivirus-updates.md#product-updates).
 
 ## Update channels for monthly updates
 

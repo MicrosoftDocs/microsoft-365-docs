@@ -187,18 +187,30 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 > [!NOTE]
 > It could take up to 24 hours for the add-in to appear in your organization.
 
-1. In the Microsoft 365 admin center at <https://portal.office365.us/adminportal>, go to **Organization** \> **Add-ins**, and select **Deploy Add-In**.
+1. In the Microsoft 365 admin center at <https://portal.office365.us/adminportal> open the Exchange admin center (EAC) by selecting **Exchange** in the **Admin centers** section.
 
-2. In the **Deploy a new add-in** flyout that opens, click **Next**, and then select **Upload custom apps**.
+2. In the EAC, select **Organization** \> **Add-ins**.
 
-3. Select **I have a URL for the manifest file**. Use the following URLs:
+3. On the **Add-ins page**, click ![New icon.](../../media/ITPro-EAC-AddIcon.png) **New**, and then select **Add from URL**.
 
+4. In the **Add from URL** dialog that opens, enter one of the following URLs:
    - **Report Message**: <https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml>
    - **Report Phishing**: <https://ipagave.azurewebsites.net/ReportPhishingManifest/ReportPhishingAzure.xml>
 
-4. Choose which users will have access to the add-in, select a deployment method, and then select **Deploy**.
+   When you're finished, click **Install**. In the success dialog, click **OK**.
 
-5. To fully configure the settings, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+5. Back on the **Add-ins** page, select the add-in you just installed, and then click ![Edit icon.](../../media/ITPro-EAC-EditIcon.png) **Edit**.
+
+6. In the add-in properties dialog that opens, confirm or modify the following settings:
+   - **Make this add-in available to users in your organization**.
+   - **Specify user defaults**: Select one of the following settings:
+     - **Optional, enabled by default**.
+     - **Optional, disabled by default**.
+     - **Mandatory, always enabled. Users can't disable this add-in**.
+
+   When you're finished, click **Save**.
+
+7. To fully configure user reported message settings, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 ### View and edit settings for the Report Message or Report Phishing add-ins
 
