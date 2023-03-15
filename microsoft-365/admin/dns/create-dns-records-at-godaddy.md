@@ -138,8 +138,6 @@ To verify the record in Microsoft 365:
 
 4. Choose **MX** option from the filter box.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-MX-values.png" alt-text="Select MX from the Type drop-down list."::: 
-
 5. In the boxes for the new record, type or copy and paste the values from the following table.
 
    (Choose the **Type** and **TTL** values from the drop-down list.)
@@ -267,8 +265,6 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
    If you're prompted to log in, use your login credentials, select your login name in the upper right, and then select **My Products**.
 
 2. Under **Domains**, select the three dots next to the domain you want to verify, and then select **Manage DNS**.
-
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 3. Under **Records**, select **ADD**.
 
