@@ -10734,6 +10734,11 @@
     "source_path": "microsoft-365/bookings/metrics-and-activity-tracking.md",
     "redirect_url": "/microsoft-365/bookings/bookings-overview",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates",
+    "redirect_document_id": false
   }
  ]
 }
