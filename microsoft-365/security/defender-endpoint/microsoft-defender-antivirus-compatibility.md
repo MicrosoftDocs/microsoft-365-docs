@@ -68,7 +68,7 @@ The following table summarizes what to expect:
 
 (<a id="fn1">1</a>) On Windows Server, if you're running a non-Microsoft antivirus product, you can uninstall Microsoft Defender Antivirus to prevent conflict. 
 
-- Login to Windows Server with administrator account.
+- Sign in to Windows Server as an administrator.
 - Right click Start and click Windows PowerShell (admin).
 - Enter the following command: 
 
