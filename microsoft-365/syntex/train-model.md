@@ -31,7 +31,7 @@ The steps to train your model depends on the type of model you are using.
 [:::image type="content" source="../media/content-understanding/layout-method-tile-2.png" alt-text="Tile for layout method.":::](create-a-form-processing-model.md)
 
 
-|Model type  |Use these steps to train  |
+|Model type  |Use the steps in this article to train  |
 |---------|---------|---------|
 |**Unstructured document processing**<br>[:::image type="content" source="../media/content-understanding/teaching-method-tile-2.png" alt-text="Tile for teaching method.":::](create-a-classifier.md) |[Train your unstructured document processing model](create-a-classifier.md)   |
 |**Freeform document processing**<br>![:::image type="content" source="../media/content-understanding/freeform-selection-method-tile-2.png" alt-text="Tile for freeform seletion method.":::](train-freeform-document-processing-model.md)       |
