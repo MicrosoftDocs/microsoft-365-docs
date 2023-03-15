@@ -190,6 +190,24 @@ For the first daily event level, you set the threshold at *10 or more events per
 
 Another option for policy thresholds is to assign the policy triggering event to risk management activity that is above the typical daily number of users. Instead of being defined by specific threshold settings, each threshold is dynamically customized for anomalous activities detected for in-scope policy users. If threshold activity for anomalous activities is supported for an individual indicator, you can select **Activity is above user's usual activity for the day** in the policy wizard for that indicator. If this option isn't listed, anomalous activity triggering isn't available for the indicator. If the **Activity is above user's usual activity for the day** option is listed for an indicator, but not selectable, you need to enable this option in **Insider risk settings** > **Policy indicators**.
 
+#### Use real-time analytics (preview) to manage alert volume 
+
+You can use real-time analytics (preview) to predict the number of users affected by changes to threshold settings before pushing your policies live. This can save a lot of time otherwise spent doing manual policy tuning. For example, when real-time analytics is turned on, when you choose the **Customize thresholds** option when creating a policy, you'll see:
+
+- A gauge that shows the number of distinct users who have exceeded thresholds for at least one indicator in the policy. 
+- A list of the top five activities that are contributing to alert generation. If your policies are generating a lot of alerts, these are the indicators to focus on to reduce "noise".
+- An insight for each set of thresholds, displayed below the threshold. The initial insights are based on the default threshold values. For example, if the low threshold setting for *Downloading content from SharePoint* is set to 100, the insight shows how many users in the policy are doing more than 100 download activities. If you adjust a threshold setting, the insight changes in real time so you can see the number of estimated users that will be affected by the threshold change. 
+
+   ![Insider risk management real-time analytics](../media/insider-risk-management-real-time-analytics.png)
+
+##### Prerequisites for using real-time analytics
+
+To use real-time analytics (preview), you must:
+
+1. [Enable insider risk analytics insights](insider-risk-management-configure.md#step-3-optional-enable-and-view-insider-risk-analytics-insights).
+2. Choose the **Include all users and groups** option when you create the policy.
+3. Choose the **I don't want to specify priority content right now** option when you create the policy. 
+
 ## Policy timeframes
 
 Policy timeframes allow you to define past and future review periods that are triggered after policy matches based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following policy timeframes are available:
