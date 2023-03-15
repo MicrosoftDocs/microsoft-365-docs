@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/14/2023
+ms.date: 03/15/2023
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
@@ -162,6 +162,10 @@ Complete the following steps to add users or groups to a Microsoft Purview role 
 2. Expand the **Microsoft Purview solutions** section and select **Roles**.
 3. On the **Role groups for Microsoft Purview solutions** page, select a Microsoft Purview role group you want to add users to, then select **Edit** on the control bar.
 4. On the **Edit members of the role group** page, select **Choose users** or **Choose groups**.
+
+    > [!IMPORTANT]
+    > Security groups are supported only in Microsoft 365 commercial cloud organizations.
+
 5. Select the checkbox for all users or groups you want to add to the role group.
 6. Select **Select**.
 7. If the selected users or groups need organization-wide access as part of this role group assignment, go to Step 10.
@@ -196,6 +200,10 @@ Complete the following steps to create a custom Microsoft Purview role group:
 6. Select the checkboxes for the roles to add to the custom role group. Select **Select**.
 7. Select **Next** to continue.
 8. On the **Add members to the role group** page, select **Choose users** (or **Choose groups** if applicable).
+
+    > [!IMPORTANT]
+    > Security groups are supported only in Microsoft 365 commercial cloud organizations.
+
 9. Select the checkboxes for the users (or groups) to add to the custom role group. Select **Select**.
 10. Select **Next** to continue.
 11. If the selected users or groups need organization-wide access as part of this role group assignment, go to Step 14.
