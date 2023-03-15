@@ -7,7 +7,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 03/07/2023
+ms.date: 03/15/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -66,17 +66,7 @@ The following table summarizes what to expect:
 |Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server, version 1803, or newer <br/> Windows Server 2016 <br/> Windows Server 2012 R2 |Microsoft Defender Antivirus|Active mode|
 |Windows Server 2022<br/>Windows Server 2019<br/>Windows Server, version 1803, or newer <br/> Windows Server 2016 |A non-Microsoft antivirus/antimalware solution|Disabled (set manually) <sup>[[1](#fn1)]</sup>|
 
-(<a id="fn1">1</a>) On Windows Server, if you're running a non-Microsoft antivirus product, you can uninstall Microsoft Defender Antivirus to prevent conflict by following these steps: 
-
-- Sign in to Windows Server as an administrator.
-- Right-click **Start** and select **Windows PowerShell (admin)**.
-- Enter the following command: 
-
-```powershell
-Uninstall-WindowsFeature Windows-Defender
-```
-
-- Restart the server to remove Microsoft Defender Antivirus.
+(<a id="fn1">1</a>) On Windows Server, if you're running a non-Microsoft antivirus product, you can uninstall Microsoft Defender Antivirus. Sign in to Windows Server as an administrator. Right-click on **Start**, and then select **Windows PowerShell (admin)**. Type the following command: `Uninstall-WindowsFeature Windows-Defender`. Then restart your server to remove Microsoft Defender Antivirus.
 
 If the device is onboarded to Microsoft Defender for Endpoint, you can use Microsoft Defender Antivirus in passive mode as described later in this article.
 
