@@ -239,7 +239,7 @@ You can use the following methods to onboard mobile devices, such as Android and
 
 ### Use the Microsoft Defender app (preview)
 
-[Mobile threat defense capabilities](mdb-mtd.md) are now available to Defender for Business customers who have opted in to receive [preview](mdb-preview.md) features. With these capabilities, users can download the Microsoft Defender app from Google Play or the Apple App Store, sign in, and complete onboarding steps.
+[Mobile threat defense capabilities](mdb-mtd.md) are now available to Defender for Business customers who have opted in to receive [preview](mdb-preview.md) features. With these capabilities, you can now onboard mobile devices (such as Android and iOS) by using the Microsoft Defender app. With this method, users download the app from Google Play or the Apple App Store, sign in, and complete onboarding steps.
 
 > [!TIP]
 > Make sure that users have downloaded the Microsoft Authenticator app on their device, and have registered their device using their work or school account for Microsoft 365.
