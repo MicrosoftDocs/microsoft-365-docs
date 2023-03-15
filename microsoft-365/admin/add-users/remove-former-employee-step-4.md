@@ -56,6 +56,10 @@ Follow these steps to [convert the user's mailbox to a shared mailbox](../email/
 5. Select **Save**.
 6. Remember, don't delete the former employee's account.
 
+> [!IMPORTANT]
+> In Scenarios where in the mailbox is Inactive for complaince reasons, the mail forwarding or converting it to a shared mailbox would not work.
+
+
 ### Cancel Outlook meetings
 
 Make sure to cancel all meetings that the former user had on their calendar. This lets people remove the meetings created by the former user.
