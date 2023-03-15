@@ -75,6 +75,7 @@ The setting is available via the Microsoft 365 Admin Center Settings menu item. 
 
 Please note that the following products currently support this feature: 
 - SharePoint Online
+- OneDrive for Business
 - Office
 - Stream
 - Planner
