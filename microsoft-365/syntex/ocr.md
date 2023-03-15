@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: kkameth
-ms.date: 02/15/2023
+ms.date: 03/15/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -45,8 +45,6 @@ Before you can use the OCR service in Syntex, you must first enter your Azure su
 4. On the **OCR** page, select the SharePoint libraries where you want to enable OCR. The default is no SharePoint libraries, but you can select **Edit** to choose specific SharePoint libraries or to choose all SharePoint libraries.
 
 [Setup and manage will be mostly likely moved to a separate admin article, in which case it will just be linked to here.]
-
-When OCR is applied, text is extracted from images within the files and indexed in search and made available for compliance features like data loss prevention (DLP). 
 
 ### Compliance center
 
