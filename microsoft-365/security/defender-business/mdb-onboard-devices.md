@@ -242,7 +242,7 @@ You can use the following methods to onboard mobile devices, such as Android and
 [Mobile threat defense capabilities](mdb-mtd.md) are now available to Defender for Business customers who have opted in to receive [preview](mdb-preview.md) features. With these capabilities, you can now onboard mobile devices (such as Android and iOS) by using the Microsoft Defender app. With this method, users download the app from Google Play or the Apple App Store, sign in, and complete onboarding steps.
 
 > [!IMPORTANT]
-> Make sure that all of the following requirements are met before onboarding devices:
+> Make sure that all of the following requirements are met before onboarding mobile devices:
 > 1. Your organization has signed up to receive preview features for your tenant. See [Microsoft Defender for Business preview features](mdb-preview.md).
 > 2. Defender for Business has finished provisioning. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Assets** > **Devices**. 
 >   - If you see a message that says, "Hang on! We're preparing new spaces for your data and connecting them," it means that Defender for Business hasn't finished provisioning. This process is happening now, and can take up to 24 hours to complete.
