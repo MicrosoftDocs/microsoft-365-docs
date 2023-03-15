@@ -67,7 +67,7 @@ Microsoft Configuration Manager ([1](#fn1))|Use the [Endpoint Protection point s
 Article | Description
 ---|---
 [Deploy and enable Microsoft Defender Antivirus protection](deploy-microsoft-defender-antivirus.md) | While the client is installed as a core part of Windows 10 or Windows 11, and traditional deployment doesn't apply, you'll still need to enable the client on your endpoints with Microsoft Configuration Manager, Microsoft Intune, or Group Policy Objects.
-[Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md) | There are two parts to updating Microsoft Defender Antivirus: updating the client on endpoints (product updates), and updating Security intelligence (protection updates). You can update Security intelligence in many ways, using Microsoft Configuration Manager, Group Policy, PowerShell, and WMI.
+[Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md) | There are two parts to updating Microsoft Defender Antivirus: updating the client on endpoints (product updates), and updating Security intelligence (protection updates). You can update Security intelligence in many ways, using Microsoft Configuration Manager, Group Policy, PowerShell, and WMI.
 [Monitor and report on Microsoft Defender Antivirus protection](report-monitor-microsoft-defender-antivirus.md) | You can use Microsoft Intune, Microsoft Configuration Manager, the Update Compliance add-in for Microsoft Operations Management Suite, or a third-party SIEM product (by consuming Windows event logs) to monitor protection status and create reports about endpoint protection.
 
 > [!TIP]
