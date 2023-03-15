@@ -42,6 +42,8 @@ Before you can use the OCR service in Syntex, you must first enter your Azure su
 
 4. On the **OCR** page, select the SharePoint libraries where you want to enable OCR. The default is no SharePoint libraries, but you can select **Edit** to choose specific SharePoint libraries or to choose all SharePoint libraries.
 
+[Setup and manage will be mostly likely moved to a separate admin article, in which case it will just be linked to here.]
+
 When OCR is applied, text is extracted from images within the files and indexed in search and made available for compliance features like data loss prevention (DLP). 
 
 ### Compliance center
@@ -49,8 +51,6 @@ When OCR is applied, text is extracted from images within the files and indexed 
 The compliance admin can also specify which SharePoint sites to enable OCR to make that text available for DLP policies. If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance center configuration of OCR, see [link to article when available].
 
 In the compliance center, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SPO and ODB image only PDF and TIFF, EXO all PDF and TIFF, and endpoint image only PDF and TIFF and images.  If the compliance admin has configured OCR, you'll be able to see a message in the Syntex set up area indicating that something has been configured in compliance. 
-
-[Setup and manage will be mostly likely moved to a separate admin article, in which case it will just be linked to here.]
 
 ## Requirements and limitations
 
