@@ -92,6 +92,7 @@ Use the following table to help you identify the differences in behavior for the
 |Restrict by location|No |Yes |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Conditions: Exceptions|No |Yes (email only) |
+|Conditions: Sensitive info types [in images](ocr-suppt-in-microsoft-purview.md) |No |Yes (documents only) |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
 |Simulation mode|No |Yes |
 |Exchange attachments checked for conditions|No | Yes|
@@ -275,10 +276,10 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 - To auto-label files in SharePoint and OneDrive:
   - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
   - At the time the auto-labeling policy runs, the file mustn't be open by another process or user. A file that's checked out for editing falls into this category.
-
 - If you plan to use [sensitive information types](sensitive-information-type-learn-about.md):
   - The sensitive information types you select will apply only to content that's created or modified after these information types are [created or modified](audit-log-activities.md#sensitive-information-types). This restriction applies to all custom sensitive information types and any new built-in information types.
   - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
+  - To scan for your selected sensitive info types in images, see [Support for optical character recognition in Microsoft Purview](ocr-suppt-in-microsoft-purview.md).
 
 - One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
   - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction.
