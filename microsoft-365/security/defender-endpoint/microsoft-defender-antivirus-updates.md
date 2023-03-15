@@ -4,7 +4,7 @@ description: Manage how Microsoft Defender Antivirus receives protection and pro
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 03/14/2023
+ms.date: 03/15/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -82,7 +82,7 @@ All our updates contain
 
 ### February-2023 (Platform: 4.18.2302.x | Engine: 1.1.20100.6)
 
-- Security intelligence update version: **1.383.1864.0**
+- Security intelligence update version: **1.385.68.0**
 - Release date: **March 14, 2023**
 - Platform: **4.18.2302.x**
 - Engine: **1.1.20100.6**
