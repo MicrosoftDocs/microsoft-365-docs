@@ -33,6 +33,8 @@ description: "Learn how to set up your Microsoft 365 Apps for business subscript
 
 # Set up Microsoft 365 Apps for business
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 ## Add users and assign licenses
 
 You can add users in the wizard, but you can also [add users later](../add-users/add-users.md) in the admin center.
