@@ -42,7 +42,7 @@ Microsoft Defender for Endpoint automatically identifies and flags onboarded, ex
 Devices that can be connected to or are approachable from the outside pose a threat to your organization. Devices that are successfully connected through TCP or identified as host reachable by UDP will be flagged as internet facing in the [Microsoft 365 Defender portal](https://security.microsoft.com). Defender for Endpoint uses different data sources  to identify the devices to flag:
 
 - External scans are used to identify which devices are approachable from the outside.
-- Device network connections, captured as part of Defender for Endpoint signals, help to identify external incoming connections that reach internal devices, and devices with a public IP address that's exposed to the internet.
+- Device network connections, captured as part of Defender for Endpoint signals, help to identify external incoming connections that reach internal devices.
 
 ## View internet facing devices
 
@@ -54,7 +54,6 @@ For each onboarded device identified as internet facing, the internet facing tag
 
 Hover over the internet facing tag to see why it was applied, possible reasons are:
 
-- This device has a public IP address that's exposed to the internet
 - This device was detected by an external scan
 - This device received external incoming communication
 
@@ -66,15 +65,45 @@ You can use filters to focus in on internet facing devices and investigate the r
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-filter.png" alt-text="Screenshot of the Browser extensions page" lightbox="../../media/defender-vulnerability-management/internet-facing-filter.png":::
 
-## Get more information on internet facing devices
+## Understand your internet facing devices
 
-Select an internet facing device to open its flyout pane and learn more about the device:
+Devices can be classified as internet facing device for different reasons, including a misconfigured firewall rule, or when applications or services are identified as listening on a device.
+
+A misconfigured firewall rule, which could be host firewall rule or enterprise firewall rule, can result in internal devices being reachable from the outside.
+
+Identifying applications or services that are listening on a device can help you distinguish between those that are intentionally internet facing and those that may compromise your organization by providing an attacker with unauthorized entry point to your network.
+
+Understanding your firewall policy and identifying these application and services provides critical information when it comes to mapping your organization’s external attack surface.
+
+To see insights on the IP addresses, ports and connection protocols for a flagged device:
+
+- Select an internet facing device to open its flyout pane:
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-details.png" alt-text="Screenshot of the Browser extensions page" lightbox="../../media/defender-vulnerability-management/internet-facing-details.png":::
 
-The information in this pane helps you understand how the device was identified as an internet facing device along with details of the port and protocol for both the internal and external device. In the above example, we can tell that this device was successfully connected to as it was through TCP.
+The information in this pane helps you understand how the device was detected as an internet facing device along with details of the port and protocol for both the internal and external device. In the above example, we can tell that this device was successfully connected to as it was through TCP.
 
+For TCP connections, you can use advanced hunting to gain further insights into applications or services identified as listening on a device by querying [DeviceNetworkEvents](../defender/advanced-hunting-devicenetworkevents-table.md). Use the following example as a starting point:
+
+```kusto
+DeviceNetworkEvents
+| where Timestamp > ago(7d)
+| where DeviceId == ""
+| where not(InitiatingProcessCommandLine has_any ("TaniumClient.exe", "ZSATunnel.exe", "MsSense.exe"))
+| where ActionType =="InboundConnectionAccepted"
+| extend LocalIP = replace(@"::ffff:", "", LocalIP),RemoteIP = replace(@"::ffff:", "", RemoteIP)
+| where LocalIP!=RemoteIP and RemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") and not(ipv4_is_private( RemoteIP ))
+| project-reorder DeviceId, LocalIP, LocalPort, RemoteIP, RemotePort, InitiatingProcessCommandLine,InitiatingProcessId, DeviceName
+``` 
 If a device is flagged as internet facing through UDP it means this device was identified as host reachable.
+
+>[!NOTE]
+>Currently UDP information is not available in Advanced hunting.
+
+ 
+
+On cases that the above query fails to provide the relevant connections, use socket collection methods to retrieve the source process (netstat/live response *add link to live response docs*)
+
 
 ## Use advanced hunting
 
