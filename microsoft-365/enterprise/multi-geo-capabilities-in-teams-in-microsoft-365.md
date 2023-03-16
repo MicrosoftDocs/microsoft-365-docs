@@ -31,7 +31,6 @@ Teams uses the Preferred Data Location (PDL) for users and groups to determine w
 > Multi-Geo capabilities in Teams rolled out in July 2021. Your chat and channel messages will be automatically migrated to the correct geo location over the next few quarters. Any new PDL changes will be processed after the tenant has completed the initial sync, and new PDL changes beyond that will be queued and processed in the order they are received.
 >
 
-
 ## User chat
 
 User chat includes one-to-one, one-to-many, and private meeting messages.
@@ -48,6 +47,7 @@ To find the current location of a user's Teams data, [connect to Teams PowerShel
 Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 ```
 Enable port 8653 to allow execution of this command.
+
 ## Channel messages
 
 Each Microsoft 365 group has a Preferred Data Location (PDL) which denotes the geo location where related data is to be stored. Teams uses the PDL for the group associated with each team to determine where to store channel messaging data for that team. This includes private channels and chat that occurs within a channel meeting.
