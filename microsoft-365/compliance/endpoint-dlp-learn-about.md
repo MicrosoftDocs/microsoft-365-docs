@@ -50,7 +50,7 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 |Copy to a network share    | When this activity is detected, you can block, warn, or audit the copying or moving of protected files from an endpoint device to any network share. |Supported|Supported         |Auditable and restrictable|
 |Print a document    |When this activity is detected, you can block, warn, or audit the printing of protected files from an endpoint device. |Supported|Supported|Auditable and restrictable         |
 |Copy to a remote session|Detects when a user attempts to copy an item to a remote desktop session. |Supported|Not supported|  Auditable and restrictable|
-|Copy to a Bluetooth device|Detects when a user attempts to copy an item to an unallowed Bluetooth app (as defined in the list of unallowed Bluetooth aps in Endpoint DLP settings).|Supported|Supported| Auditable and restrictable|
+|Copy to a Bluetooth device|Detects when a user attempts to copy an item to an unallowed Bluetooth app (as defined in the list of unallowed Bluetooth aps in Endpoint DLP settings).|Supported|Supported (preview)| Auditable and restrictable|
 |Create an item|Detects when a user creates an item.|Supported |Supported |Auditable|
 |Rename an item|Detects when a user renames an item.|Supported |Supported |Auditable|
 |Copy to clipboard| When this activity is detected, you can block, warn, or audit data the copying of protected files to a clipboard on an endpoint device. |Supported | Supported|Auditable and restrictable|
