@@ -109,5 +109,5 @@ Different from AD group, the Sid is using Object ID for Azure AD group. You can 
  
 ## Why i see duplicate events from RemovableStoragePolicyTriggered and PrintJobBlocked?
 
-PrintJobBlocked is designed for [Printer Protection V1](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/printer-protection?view=o365-worldwide). Since the new Printer Protection solution is built based on that solution, the system will still fire the PrintJobBlocked. If you are using the [new Printer Protection](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/printer-protection-overview?view=o365-worldwide), please use the RemovableStoragePolicyTriggered to track the event.
+PrintJobBlocked is designed for [Printer Protection V1](printer-protection.md). Since the new Printer Protection solution is built based on that solution, the system will still fire the PrintJobBlocked. If you are using the [new Printer Protection](printer-protection-overview.md), please use the RemovableStoragePolicyTriggered to track the event.
 
