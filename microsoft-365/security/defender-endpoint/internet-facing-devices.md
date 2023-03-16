@@ -68,7 +68,7 @@ You can use filters to focus in on internet facing devices and investigate the r
 Devices can be classified as internet facing device for different reasons, including a misconfigured firewall rule, or when applications or services are identified as listening on a device.
 
 - A misconfigured firewall rule, which could be host firewall rule or enterprise firewall rule, can result in internal devices being reachable from the outside.
-- Identifying applications or services that are listening on a device can help you distinguish between those that are intentionally internet facing and those that may compromise your organization by providing an attacker with unauthorized entry point to your network.
+- Identifying applications or services that are listening on a device, can help you distinguish between those that are intentionally internet facing and those that may compromise your organization by providing an attacker with unauthorized entry point to your network.
 
 Understanding your firewall policy and identifying these application and services provides critical information when it comes to mapping your organization’s external attack surface.
 
