@@ -207,8 +207,8 @@ Real-time analytics (preview) is based on the last 10 days of audit data in your
 To use real-time analytics (preview), you must:
 
 1. [Enable insider risk analytics insights](insider-risk-management-configure.md#step-3-optional-enable-and-view-insider-risk-analytics-insights).
-2. Choose the **Include all users and groups** option when you create the policy.
-3. Choose the **I don't want to specify priority content right now** option when you create the policy. 
+2. Choose the **Include all users and groups** option when you [create the policy](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy).
+3. Choose the **I don't want to specify priority content right now** option when you [create the policy](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy). 
 
 ## Policy timeframes
 
@@ -667,8 +667,8 @@ Depending on the number of users assigned to insider risk management role groups
 
 Enabling insider risk analytics offers two important benefits. When analytics is enabled, you can:
 
-- Conduct an evaluation of potential insider risks in your organization without configuring any insider risk polices.
-- Predict the effect of changes to your policies in real time
+- Conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies.
+- Predict the effect of changes to threshold settings in real time.
 
 ### Conduct an evaluation of insider risks in your organization
 
@@ -729,7 +729,7 @@ To display more information for an insight, select **View details** to display t
 To turn off insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or Microsoft 365 *Global admin* role group. After you disable analytics:
 
 - Analytics insight reports will remain static and will not be updated for new risks. 
-- You won't be able to [see real-time analytics when you customize thresholds for your policies](#indicator-level-settings).
+- You won't be able to [see real-time analytics when you customize threshold settings for your policies](#indicator-level-settings).
 
 Complete the following steps to turn off insider risk analytics:
 
