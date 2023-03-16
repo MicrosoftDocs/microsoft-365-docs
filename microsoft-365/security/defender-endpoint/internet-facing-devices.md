@@ -91,15 +91,13 @@ DeviceNetworkEvents
 |where LocalIP!=RemoteIP and RemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") and not(ipv4_is_private( RemoteIP ))
 |project-reorder DeviceId, LocalIP, LocalPort, RemoteIP, RemotePort, InitiatingProcessCommandLine,InitiatingProcessId, DeviceName
 ``` 
+
+If the above query fails to provide the relevant connections, you can use socket collection methods to retrieve the source process(netstat/live response *add link to live response docs*).
+
 If a device is flagged as internet facing through UDP it means this device was identified as host reachable.
 
 >[!NOTE]
->Currently UDP information is not available in Advanced hunting.
-
- 
-
-On cases that the above query fails to provide the relevant connections, use socket collection methods to retrieve the source process (netstat/live response *add link to live response docs*)
-
+> Currently UDP information is not available in advanced hunting.
 
 ## Use advanced hunting
 
