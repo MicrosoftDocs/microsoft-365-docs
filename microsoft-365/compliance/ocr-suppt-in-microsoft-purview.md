@@ -82,7 +82,7 @@ This new functionality supports scanning images in the following file types, wit
 > - Data loss protection policy tips are not supported for images in Exchange.
 > - Only images with machine-typed text are supported
 > - Only images uploaded after OCR has been enabled are scanned.
-> - OCR scans are not supported for images embedded in Office documents and compressed files (such as ZIP and 7z).
+> - OCR scans are not supported for images embedded in Office documents or compressed files (such as ZIP and 7z).
 
 ## What languages are supported?
 OCR scanning supports more than [150 languages](/azure/cognitive-services/computer-vision/language-support#print-text).
