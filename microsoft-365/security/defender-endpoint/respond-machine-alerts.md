@@ -6,10 +6,10 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
-ms.date: 01/06/2023
+ms.date: 03/16/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -99,15 +99,15 @@ As part of the investigation or response process, you can collect an investigati
 > [!IMPORTANT]
 > These actions are not currently supported for devices running macOS or Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
 
-To download the package (Zip file) and investigate the events that occurred on a device
+To download the package (Zip file) and investigate the events that occurred on a device:
 
 1. Select **Collect investigation package** from the row of response actions at the top of the device page.
 
 2. Specify in the text box why you want to perform this action. Select **Confirm**.
 
-3. The zip file will download
+3. The zip file downloads.
 
-Alternate way:
+Alternate steps:
 
 1. Select **Action center** from the response actions section of the device page.
 
