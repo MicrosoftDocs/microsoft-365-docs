@@ -34,6 +34,8 @@ ms.date: 01/10/2023
 
 # Assign Microsoft 365 licenses to users
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 You can assign licenses to users on either the **Active users** page, or on the **Licenses** page. The method you use depends on whether you want to assign product licenses to specific users or assign users licenses to a specific product.
 
 > [!NOTE]
