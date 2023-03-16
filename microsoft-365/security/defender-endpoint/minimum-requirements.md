@@ -40,7 +40,7 @@ There are some minimum requirements for onboarding devices to the service. Learn
 
 ## Licensing requirements
 
-The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md), even when they are included as part of other Microsoft 365 plans, do not include server licenses. To onboard servers to those plans, you'll need either Microsoft Defender for Endpoint for Servers or Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md), even when they're included as part of other Microsoft 365 plans, don't include server licenses. To onboard servers to those plans, you need either Microsoft Defender for Endpoint for Servers or Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
 For information licensing requirements for Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint licensing information](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
@@ -109,9 +109,9 @@ For more information on supported versions of Windows 10, see [Windows 10 releas
 >
 > - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need either Defender for Endpoint for Servers, or Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
-When components are up-to-date on Microsoft Windows operating systems, Microsoft Defender for Endpoint support will follow the respective operating system's lifecycle. For more information, see [Lifecycle FAQ](/lifecycle/faq/general-lifecycle). New features or capabilities are typically provided only on operating systems that have not yet reached the end of their lifecycle. Security intelligence updates (definition and engine updates) and detection logic will continue to be provided until at least:
+When components are up-to-date on Microsoft Windows operating systems, Microsoft Defender for Endpoint support follows the respective operating system's lifecycle. For more information, see [Lifecycle FAQ](/lifecycle/faq/general-lifecycle). New features or capabilities are typically provided only on operating systems that haven't yet reached the end of their lifecycle. Security intelligence updates (definition and engine updates) and detection logic continues to be provided until at least:
 
-- The [end of support date](/lifecycle/products/) (for operating systems that do not have an Extended Security Updates (ESU) program).
+- The [end of support date](/lifecycle/products/) (for operating systems that don't have an Extended Security Updates (ESU) program).
 - The [end of ESU date](/lifecycle/faq/extended-security-updates) (for operating systems that have an ESU program).
 
 ### Other supported operating systems
@@ -158,7 +158,7 @@ If you're onboarding servers and Microsoft Defender Antivirus isn't the active a
 
 If you're running Microsoft Defender Antivirus as the primary antimalware product on your devices, the Defender for Endpoint agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Configuration Manager (current branch), you'll need to ensure the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Configuration Manager (current branch), you need to ensure the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## Related topics
 

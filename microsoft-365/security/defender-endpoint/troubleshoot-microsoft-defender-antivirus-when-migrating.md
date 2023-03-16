@@ -42,7 +42,7 @@ You can find help here if you encounter issues while migrating from a third-part
 
 1. From there, select **Open** underneath **Operational**.
 
-    Selecting an event from the details pane will show you more information about an event in the lower pane, under the **General** and **Details** tabs.
+    Selecting an event from the details pane shows you more information about an event in the lower pane, under the **General** and **Details** tabs.
 
 ## Microsoft Defender Antivirus won't start
 
@@ -53,12 +53,12 @@ This issue can manifest in the form of  several different event IDs, all of whic
 Event ID|Log name|Description|Source
 ---|---|---|---
 15|Application|Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_OFF.|Security Center
-5007|Microsoft-Windows-Windows Defender/Operational|Microsoft Defender Antivirus Configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware. <p> **Old value:** Default\IsServiceRunning = 0x0 <p> **New value:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
+5007|Microsoft-Windows-Windows Defender/Operational|Microsoft Defender Antivirus Configuration has changed. If this is an unexpected event, you should review the settings as this may be the result of malware. <p> **Old value:** Default\IsServiceRunning = 0x0 <p> **New value:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/Operational|Microsoft Defender Antivirus scanning for spyware and other potentially unwanted software is disabled.|Windows Defender
 
 ### How to tell if Microsoft Defender Antivirus won't start because a third-party antivirus is installed
 
-On a Windows 10 or Windows 11 device, if you are not using Microsoft Defender for Endpoint, and you have a third-party antivirus installed, then Microsoft Defender Antivirus will be automatically turned off. If you are using Microsoft Defender for Endpoint with a third-party antivirus installed, Microsoft Defender Antivirus will start in passive mode, with reduced functionality.
+On a Windows 10 or Windows 11 device, if you aren't using Microsoft Defender for Endpoint, and you have a third-party antivirus installed, then Microsoft Defender Antivirus is automatically turned off. If you're using Microsoft Defender for Endpoint with a third-party antivirus installed, Microsoft Defender Antivirus starts in passive mode, with reduced functionality.
 
 > [!TIP]
 > The scenario just described applies only to Windows 10 and Windows 11. Other versions of Windows have [different responses](microsoft-defender-antivirus-compatibility.md) to Microsoft Defender Antivirus being run alongside third-party security software.
@@ -67,9 +67,9 @@ On a Windows 10 or Windows 11 device, if you are not using Microsoft Defender fo
 
 To open the Services app, select the **Search** icon from the taskbar and search for *services*. You can also open the app from the command-line by typing *services.msc*.
 
-Information about Microsoft Defender Antivirus will be listed within the Services app under **Windows Defender** \> **Operational**. The antivirus service name is *Microsoft Defender Antivirus Service*.
+Information about Microsoft Defender Antivirus is listed within the Services app under **Windows Defender** \> **Operational**. The antivirus service name is *Microsoft Defender Antivirus Service*.
 
-While checking the app, you may see that *Microsoft Defender Antivirus Service* is set to manual, but when you try to start this service manually, you get a warning stating, *The Microsoft Defender Antivirus Service service on Local Computer started and then stopped. Some services stop automatically if they are not in use by other services or programs.*
+While checking the app, you may see that *Microsoft Defender Antivirus Service* is set to manual, but when you try to start this service manually, you get a warning stating, *The Microsoft Defender Antivirus Service service on Local Computer started and then stopped. Some services stop automatically if they aren't in use by other services or programs.*
 
 This indicates that Microsoft Defender Antivirus has been automatically turned off to preserve compatibility with a third-party antivirus.
 
@@ -81,11 +81,11 @@ You can generate a detailed report about currently active group policies by open
 GPresult.exe /h gpresult.html
 ```
 
-This will generate a report located at *./gpresult.html*. Open this file and you might see the following results, depending on how Microsoft Defender Antivirus was turned off.
+This generates a report located at *./gpresult.html*. Open this file and you might see the following results, depending on how Microsoft Defender Antivirus was turned off.
 
 ##### Group policy results
 
-##### If security settings are implemented via group policy (GPO) at the domain or local level, or though System center configuration manager (SCCM)
+##### If security settings are implemented via group policy (GPO) at the domain or local level, or through System center configuration manager (SCCM)
 
 Within the GPResults report, under the heading, *Windows Components/Microsoft Defender Antivirus*, you may see something like the following entry, indicating that Microsoft Defender Antivirus is turned off.
 
@@ -125,12 +125,12 @@ Your imagining admin might have set the security policy, **[DisableAntiSpyware](
 
 ### Turn Microsoft Defender Antivirus back on
 
-Microsoft Defender Antivirus will automatically turn on if no other antivirus is currently active. You'll need to turn the third-party antivirus completely off to ensure Microsoft Defender Antivirus can run with full functionality.
+Microsoft Defender Antivirus will automatically turn on if no other antivirus is currently active. You need to turn the third-party antivirus completely off to ensure Microsoft Defender Antivirus can run with full functionality.
 
 > [!WARNING]
 > Solutions suggesting that you edit the *Windows Defender* start values for *wdboot*, *wdfilter*, *wdnisdrv*, *wdnissvc*, and *windefend* in  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services are unsupported, and may force you to re-image your system.
 
-Passive mode is available if you start using Microsoft Defender for Endpoint and a third-party antivirus together with Microsoft Defender Antivirus. Passive mode allows Microsoft Defender Antivirus to scan files and update itself, but it will not remediate threats. In addition, behavior monitoring via [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md) is not available under passive mode, unless [Endpoint data loss prevention (DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) is deployed.
+Passive mode is available if you start using Microsoft Defender for Endpoint and a third-party antivirus together with Microsoft Defender Antivirus. Passive mode allows Microsoft Defender Antivirus to scan files and update itself, but it will not remediate threats. In addition, behavior monitoring via [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md) isn't available under passive mode, unless [Endpoint data loss prevention (DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) is deployed.
 
 Another feature, known as [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), is available to end-users when Microsoft Defender Antivirus is set to automatically turn off. This feature allows Microsoft Defender Antivirus to scan files periodically alongside a third-party antivirus, using a limited number of detections.
 

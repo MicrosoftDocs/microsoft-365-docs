@@ -61,7 +61,7 @@ When tamper protection is set to audit or block mode, you can expect the followi
 - Renaming of Defender for Endpoint files is blocked
 - Commands to stop the agent fail
 
-Here is an example of a system message in response to a blocked action:
+Here's an example of a system message in response to a blocked action:
 
 ![Image of operation blocked](images/operation-blocked.png)
 
@@ -288,7 +288,7 @@ Check the tamper protection status by running the following command:
 
 `mdatp health --field tamper_protection`
 
-The result will show "block" if tamper protection is on:
+The result shows "block" if tamper protection is on:
 
 ![Image of tamper protection in block mode](images/tp-block-mode.png)
 
@@ -306,7 +306,7 @@ Tampering alert is raised in the Microsoft 365 Defender portal
 
 ### Verify block mode and audit modes
 
-- Using Advanced hunting, you'll see tampering alerts appear
+- Using Advanced hunting, you see tampering alerts appear
 - Tampering events can be found in the local device logs: `sudo grep -F '[{tamperProtection}]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
 
 ![Image of tamper protection log](images/tamper-protection-log.png)
@@ -427,4 +427,4 @@ $ sudo grep -F '\[{tamperProtection}\]: Feature state:' /Library/Logs/Microsoft/
 
 ```
 
-The mode must be "block" (or "audit"). If it is not, then you haven't set the tamper protection mode either through `mdatp config` command or through Intune.
+The mode must be "block" (or "audit"). If it isn't, then you haven't set the tamper protection mode either through `mdatp config` command or through Intune.
