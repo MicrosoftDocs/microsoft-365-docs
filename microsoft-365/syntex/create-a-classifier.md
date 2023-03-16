@@ -44,11 +44,11 @@ When creating the classifier, you need to create *explanations* to define the mo
 Use examples of the document type ("example files") to "train" your model to identify files that have the same content type.
 
 To create a classifier, you need to:
-1. Name your model.
-2. Add your example files.
-3. Label your example files.
-4. Create an explanation.
-5. Test your model.
+1. [Name your model.](#name-your-model)
+2. [Add your example files.](#add-your-example-files)
+3. [Label your example files.](#label-your-example-files)
+4. [Create an explanation.](#create-an-explanation)
+5. [Test your model.](#test-your-model)
 
 > [!NOTE]
 > While your model uses a classifier to identify and classify document types, you can also choose to pull specific pieces of information from each file identified by the model. Do this by creating an **extractor** to add to your model. See [Create an extractor](create-an-extractor.md).
