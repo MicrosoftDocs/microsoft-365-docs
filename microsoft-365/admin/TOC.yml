@@ -3,8 +3,6 @@
   items: 
     - name: Small business help & learning
       href: https://go.microsoft.com/fwlink/?linkid=2224585
-    - name: Top 20 admin help articles
-      href: top-m365-admin-articles.yml
     - name: YouTube - Microsoft 365 help for small businesses
       href: https://go.microsoft.com/fwlink/?linkid=2197659
     - name: Get started

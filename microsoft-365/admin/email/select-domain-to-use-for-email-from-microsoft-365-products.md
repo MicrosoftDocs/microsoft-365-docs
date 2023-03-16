@@ -39,7 +39,7 @@ Emails sent out to users as they interact with each other and across various pro
 
 There are several scenarios where emails are sent from a “no-reply” system-based product account. For example, batched comments, news, digests, and system notification emails are currently sent from a no-reply product address. These include addresses such no-reply@sharepointonline.com, no-reply@planner.com, no-reply@project.com.
 
-The default option is that users receive no-reply emails sent by Microsoft on behalf of your organization, which users receive as [EXTERNAL] notifications. You now have the option to use a custom domain as the sender of these notifications. Using this feature means that emails will now be sent from your own Exchange Online instance and they become internal communication. For example, **no-reply@sharepointonline.com [External]** could become **no-reply@contoso.com**, if the **Contoso.com**) the domain that has been selected.
+The default option is that users receive no-reply emails sent by Microsoft on behalf of your organization, which users receive as [EXTERNAL] notifications. You now have the option to use a custom domain as the sender of these notifications. Using this feature means that emails will now be sent from your own Exchange Online instance and they become internal communication. For example, **no-reply@sharepointonline.com [External]** could become **no-reply@contoso.com**, if **Contoso.com** is the domain that has been selected.
 
 > [!NOTE]
 > Only domains registered within your tenant can be used and you must be the domain owner.
@@ -75,6 +75,7 @@ The setting is available via the Microsoft 365 Admin Center Settings menu item. 
 
 Please note that the following products currently support this feature: 
 - SharePoint Online
+- OneDrive for Business
 - Office
 - Stream
 - Planner
