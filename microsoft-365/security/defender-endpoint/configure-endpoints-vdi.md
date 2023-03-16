@@ -183,7 +183,7 @@ The following configuration settings are recommended:
   - `%Programfiles%\FSLogix\Apps\frxsvc.exe`
 
 - File extensions to exclude from scans and real-time protection:
-  -  `%Programfiles%\FSLogix\Apps\frxccd.sys`
+  - `%Programfiles%\FSLogix\Apps\frxccd.sys`
   - `%Programfiles%\FSLogix\Apps\frxdrv.sys`
   - `%Programfiles%\FSLogix\Apps\frxdrvvt.sys`
   - `%TEMP%*.VHD`
@@ -191,7 +191,7 @@ The following configuration settings are recommended:
   - `%Windir%\TEMP*.VHD`
   - `%Windir%\TEMP*.VHDX`
   - `\\storageaccount.file.core.windows.net\share**.VHD`
-  -  `\\storageaccount.file.core.windows.net\share**.VHDX`
+  - `\\storageaccount.file.core.windows.net\share**.VHDX`
 
 #### Real-time Protection
 
