@@ -72,6 +72,17 @@ Apply the label using either of the following methods:
 
 When the retention period expires, your configured flow runs.
 
+> [!NOTE]
+> In a Power Automate flow, you can also select the action **Apply a retention label on the item**. This action is independent from this scenario that takes actions at the end of the retention period. Instead, it's the equivalent to manually applying a retention label.
+
+## The action to trigger a new instance of the flow if an item can't be located
+
+Although optional, we recommend you add the **Trigger a new instance of the flow if an item can't be located** action before **Relabel an item at the end of retention** and **Deletes an item at the end of retention**.
+
+This action is for files that have been moved or renamed after the flow has been triggered but your specified compliance actions haven't completed. Without it, a renamed or moved file would result in the flow failing because it can't find the file.
+
+Because you won't know when files are renamed or moved, adding this action before **Relabel an item at the end of retention** and **Deletes an item at the end of retention** improves the reliability of the compliance actions succeeding because the current path and name of the file is retrieved just before the selected actions run.
+
 ## Limitations for this scenario
 
 - Not currently supported for [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo).
