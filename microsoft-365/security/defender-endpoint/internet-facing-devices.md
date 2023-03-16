@@ -39,14 +39,14 @@ Microsoft Defender for Endpoint automatically identifies and flags onboarded, ex
 
 ## Devices flagged as internet-facing
 
-Devices that can be connected to or are approachable from the outside pose a threat to your organization. Devices that are successfully connected through TCP or identified as host reachable by UDP will be flagged as internet-facing in the [Microsoft 365 Defender portal](https://security.microsoft.com). Defender for Endpoint uses different data sources  to identify the devices to flag:
+Devices that can be connected to or are approachable from the outside pose a threat to your organization. Devices that are successfully connected through TCP or identified as host reachable through UDP will be flagged as internet-facing in the [Microsoft 365 Defender portal](https://security.microsoft.com). Defender for Endpoint uses different data sources  to identify the devices to flag:
 
 - External scans are used to identify which devices are approachable from the outside.
 - Device network connections, captured as part of Defender for Endpoint signals, help to identify external incoming connections that reach internal devices.
 
 ## View internet-facing devices
 
-For each onboarded device identified as internet-facing, the internet-facing tag appears in the **Tags** column in the device inventory in the Microsoft 365 Defender portal. To view internet-facing devices:
+For each onboarded device identified as internet-facing, the internet facing tag appears in the **Tags** column in the device inventory in the Microsoft 365 Defender portal. To view internet-facing devices:
 
 1. Go to **Assets** \> **Device** in the [Microsoft 365 Defender portal](https://security.microsoft.com/machines/).
 
@@ -91,8 +91,6 @@ DeviceNetworkEvents
 |where LocalIP!=RemoteIP and RemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") and not(ipv4_is_private( RemoteIP ))
 |project-reorder DeviceId, LocalIP, LocalPort, RemoteIP, RemotePort, InitiatingProcessCommandLine,InitiatingProcessId, DeviceName
 ```
-
-If the above query fails to provide the relevant connections, you can use socket collection methods to retrieve the source process(netstat/live response *add link to live response docs*).
 
 >[!NOTE]
 > Currently UDP information is not available in advanced hunting.
