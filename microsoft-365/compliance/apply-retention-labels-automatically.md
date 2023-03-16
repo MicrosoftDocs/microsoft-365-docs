@@ -171,7 +171,7 @@ Or, you can automatically apply retention labels to newly shared [cloud attachme
 
 When you configure retention labels to auto-apply based on sensitive information, keywords or searchable properties, or trainable classifiers, use the following table to identify when retention labels can be automatically applied.
 
-Additionally, SharePoint items that are in draft or that have never been published aren't supported for this scenario.
+SharePoint items that are in draft or that have never been published aren't supported for this scenario.
 
 Exchange:
 
