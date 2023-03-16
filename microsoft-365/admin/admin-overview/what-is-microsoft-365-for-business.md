@@ -29,6 +29,8 @@ ms.date: 04/27/2022
 
 # What is Microsoft 365 for business
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U5xs?autoplay=false]
 
 [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business) is a subscription service that lets you run your organization in the cloud while Microsoft takes care of the IT for you. It connects employees to the people, information, and content they need to do their best work, from any device.
