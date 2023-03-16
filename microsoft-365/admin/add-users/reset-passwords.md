@@ -39,6 +39,8 @@ description: "Sign in with your Microsoft 365 admin account to reset passwords f
 
 # Reset passwords in Microsoft 365 for business
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 This article explains how to reset passwords for yourself and for your users when you have a Microsoft 365 for business subscription.
