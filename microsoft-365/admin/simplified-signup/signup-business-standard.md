@@ -23,6 +23,8 @@ description: "Purchase Microsoft 365 Business Standard and set up your organizat
 
 # Sign up for a Microsoft 365 Business Standard subscription
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Want to sign up for a Microsoft 365 Business Standard subscription?
 
 There are a couple of ways to get started:
