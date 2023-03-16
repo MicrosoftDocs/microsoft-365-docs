@@ -3,11 +3,8 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 02/23/2023
+ms.date: 03/15/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -83,6 +80,26 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### February-2023 (Platform: 4.18.2302.x | Engine: 1.1.20100.6)
+
+- Security intelligence update version: **1.385.68.0**
+- Release date: **March 14, 2023**
+- Platform: **4.18.2302.x**
+- Engine: **1.1.20100.6**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Improvements in the contextual exclusions syntax
+- Improved scheduled scan robustness
+- Improved serviceability for internal database files
+- Enhanced certificate indicators determination logic
+- Enhanced memory usage
+
+#### Known Issues
+
+- None  
+
 ### January-2023 (Platform: 4.18.2301.6 | Engine: 1.1.20000.2)
 
 - Security intelligence update version: **1.383.26.0**
@@ -123,32 +140,6 @@ All our updates contain
 
 - None  
 
-### October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)
-
-- Security intelligence update version: **1.379.4.0**
-- Release date: **November 10, 2022**
-- Platform: **4.18.2210.6**
-- Engine: **1.1.19800.4**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Addressed a quality issue that could result in poor responsiveness/usability
-- Improved hang detection in antivirus engine 
-- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capability 
-- Changed threat & vulnerability management (TVM)-warn and TVM-block action to block to resolve Intune's report 
-- Removed Clean Action from Intune policy for `ThreadSeverityDefaultAction` 
-- Added randomize scheduled task times configuration to Intune policy 
-- Added manageability for `DisableSMTPParsing` network protection 
-- Added improvement for behavior monitoring 
-- Normalized date format for event 1151 for Windows Defender 
-- Fixed a deadlock related to updating `\device\cdrom*` exclusions upon mounting a cdrom drive under certain conditions 
-- Improved PID information for threat detection 
-
-#### Known Issues
-
-- None  
-
 ### Previous version updates: Technical upgrade support only
 
 After a new package version is released, support for the previous two versions is reduced to technical support only. For more information about previous versions, see [Microsoft Defender Antivirus updates: Previous versions for technical upgrade support](msda-updates-previous-versions-technical-upgrade-support.md).
@@ -165,10 +156,19 @@ Platform and engine updates are provided on a monthly cadence. To be fully suppo
 
 During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft's managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (*).
 
+
 > [!NOTE]
 > If you are manually deploying Microsoft Defender Antivirus Platform Update, or if you are using a script or a non-Microsoft management product to deploy Microsoft Defender Antivirus Platform Update, make sure that version `4.18.2001.10` is installed from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) before the latest version of Platform Update (N-2) is installed.
 
-### Platform version included with Windows 10 releases
+## How to roll back an update
+
+In the unfortunate event that you encounter issues after a platform update, you can roll back to the previous or the inbox version of the Microsoft Defender platform.  
+- To roll back to the previous version, run the following command:<br>
+`"%programdata%\Microsoft\Windows Defender\Platform\<version>\MpCmdRun.exe" -RevertPlatform`
+- To roll back this update to the version shipped with the Operating System ("%ProgramFiles%\Windows Defender")<br>
+`"%programdata%\Microsoft\Windows Defender\Platform\<version>\MpCmdRun.exe" -ResetPlatform`
+
+## Platform version included with Windows 10 releases
 
 The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:
 
@@ -177,7 +177,7 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 |2004  (20H1/20H2) | `4.18.1909.6` | `1.1.17000.2` | Technical upgrade support (only) |
 |1909  (19H2) |`4.18.1902.5` |`1.1.16700.3` | Technical upgrade support (only) |
 |1903  (19H1) |`4.18.1902.5` |`1.1.15600.4` | Technical upgrade support (only) |
-|1809  (RS5) |`4.18.1807.1807`5 |`1.1.15000.2` | Technical upgrade support (only) |
+|1809  (RS5) |`4.18.1807.5` |`1.1.15000.2` | Technical upgrade support (only) |
 |1803  (RS4) |`4.13.17134.1` |`1.1.14600.4` | Technical upgrade support (only) |
 |1709  (RS3) |`4.12.16299.15` |`1.1.14104.0` | Technical upgrade support (only) |
 |1703  (RS2) |`4.11.15603.2` |`1.1.13504.0` | Technical upgrade support (only) |
@@ -191,6 +191,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
+
+### 20230308.1
+
+- Defender package version: **20230308.1**
+- Security intelligence version: **1.383.1321.0**
+- Engine version: **1.1.20000.2**
+- Platform version: **4.18.2301.6**
+
+#### Fixes
+
+- None
+
+#### Additional information
+
+- None
 
 ### 20230215.1
 
