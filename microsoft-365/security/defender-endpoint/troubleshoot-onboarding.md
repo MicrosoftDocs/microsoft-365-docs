@@ -279,7 +279,7 @@ To ensure that sensor has service connectivity, follow the steps described in th
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet.md) topic.
 
-### Ensure that Microsoft Defender Antivirus isn't disabled by a policy
+### Ensure that Microsoft Defender Antivirus is not disabled by a policy
 
 > [!IMPORTANT]
 > The following only applies to devices that have **not** yet received the August 2020 (version 4.18.2007.8) update to Microsoft Defender Antivirus.
