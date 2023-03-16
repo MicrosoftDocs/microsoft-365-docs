@@ -1,5 +1,5 @@
 ---
-title: Create a classifier in Microsoft Syntex
+title: Train an unstructured document processsing model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,11 +17,13 @@ ms.localizationpriority:  medium
 description: Learn how to create a classifier in Microsoft Syntex.
 ---
 
-# Create a classifier in Microsoft Syntex
+# Train an unstructured document processsing model in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create an unstructured document processing model in a content center. Or, follow the instructions in [Create a model on a local SharePoint site](create-local-model.md) to create the model on a local site. Then start with this article to begin training your model.
+
+## Create a classifier
 
 </br>
 
