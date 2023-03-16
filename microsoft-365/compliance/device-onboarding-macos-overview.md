@@ -66,22 +66,6 @@ Endpoint DLP supports these browsers on macOS (three latest released versions):
 
 See, [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
-## Activities that can be audited and restricted on macOS 
-
-Once a macOS device is onboarded into Microsoft Purview solutions, you can monitor and restrict these actions with data loss prevention (DLP) policies.
-
-**Copy to a USB removable media** – when enforced, this action blocks, warns or audits the copying or moving of protected files from an endpoint device to USB removable media 
-
-**Copy to network shares** – when enforced, this action blocks, warns, or audits the copying or moving of protected files from an endpoint device to any network share 
-
-**Print** – when enforced, this action blocks, warns, or audits when protected files are printed from an endpoint device 
-
-**Copy to clipboard** – when enforced, this action blocks, warns, or audits data in protected file that is being copied to a clipboard on an endpoint device 
-
-**Upload to cloud** – this action blocks, warns, or audits when protected files are prevented from or allowed to be uploaded to cloud services based on the allow/unallowed domains list in global settings. When this action is set to warn or block, other browsers (defined on unallowed browsers list under Global settings) are blocked from accessing the file. 
-
-**Accessed by unallowed apps** – when enforced, this action prevents applications that are on the unallowed apps list (as defined in Global settings) from accessing protected files on an endpoint device. Sample scenarios 
-
 ## Onboarding devices into device management
 
 You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview compliance portal.

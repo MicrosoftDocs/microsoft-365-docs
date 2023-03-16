@@ -44,15 +44,18 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 
 |Activity |Description  |Windows 10 1809 and later/ Windows 11| macOS three latest released versions | Auditable/restrictable|
 |---------|---------|---------|---------|---------|
-|upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they are using a browser that is listed in DLP as an unallowed browser, the upload activity will be blocked and the user is redirected to use Microsoft Edge. Microsoft Edge will then either allow or block the upload or access based on the DLP policy configuration         |supported | supported|auditable and restrictable|
-|copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. It also detects when a user copies and pastes content among files within the same app, process or item for Word, Excel, and PowerPoint.|supported|supported         | auditable and restrictable|
-|copy to USB removable media |Detects when a user attempts to copy an item or information to removable media or USB device.|supported|supported         | auditable and restrictable|
-|copy to a network share    |Detects when a user attempts to copy an item to a network share or mapped network drive |supported|supported         |auditable and restrictable|
-|print a document    |Detects when a user attempts to print a protected item to a local or network printer.|supported|supported|auditable and restrictable         |
-|copy to a remote session|Detects when a user attempts to copy an item to a remote desktop session |supported|not supported|  auditable and restrictable|
-|copy to a Bluetooth device|Detects when a user attempts to copy an item to an unallowed Bluetooth app (as defined in the list of unallowed Bluetooth aps in Endpoint DLP settings).|supported|not supported| auditable and restrictable|
-|create an item|Detects when a user creates an item|supported |supported |auditable|
-|rename an item|Detects when a user renames an item|supported |supported |auditable|
+|Upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they're using a browser that is listed in DLP as an unallowed browser, the upload activity will be blocked and the user is redirected to use Microsoft Edge. Microsoft Edge will then either allow or block the upload or access based on the DLP policy configuration. You can block, warn, or audit when protected files are prevented from or allowed to be uploaded to cloud services based on the allow/unallowed domains list in global settings. When the configured action is set to warn or block, other browsers (defined on unallowed browsers list under Global settings) are blocked from accessing the file.         |Supported |Supported|Auditable and restrictable|
+|Copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. It also detects when a user copies and pastes content among files within the same app, process or item for Word, Excel, and PowerPoint.|Supported|Supported         | Auditable and restrictable|
+|Copy to USB removable media |When this activity is detected, you can block, warn or audit the copying or moving of protected files from an endpoint device to USB removable media.|Supported|Supported  |Auditable and restrictable|
+|Copy to a network share    | When this activity is detected, you can block, warn, or audit the copying or moving of protected files from an endpoint device to any network share. |Supported|Supported         |Auditable and restrictable|
+|Print a document    |When this activity is detected, you can block, warn, or audit the printing of protected files from an endpoint device. |Supported|Supported|Auditable and restrictable         |
+|Copy to a remote session|Detects when a user attempts to copy an item to a remote desktop session. |Supported|Not supported|  Auditable and restrictable|
+|Copy to a Bluetooth device|Detects when a user attempts to copy an item to an unallowed Bluetooth app (as defined in the list of unallowed Bluetooth aps in Endpoint DLP settings).|Supported|Supported| Auditable and restrictable|
+|Create an item|Detects when a user creates an item.|Supported |Supported |Auditable|
+|Rename an item|Detects when a user renames an item.|Supported |Supported |Auditable|
+|Copy to clipboard| When this activity is detected, you can block, warn, or audit data the copying of protected files to a clipboard on an endpoint device. |Supported | Supported|Auditable and restrictable|
+|Access by unallowed apps| Detects when an application that is on the unallowed apps list (as defined in [restricted apps and app groups](dlp-configure-endpoint-settings.md)) attempts to access protected files on an endpoint device. |Supported |Supported|
+
 
 ## Best practice for endpoint DLP policies
 
@@ -123,7 +126,7 @@ If the extension is changed only to supported file extensions:
 
 ### File types
 
-File Types are a grouping of file formats which are utilized to protect specific workflows or areas of business. You can use one or more File types as conditions in your DLP policies.
+File Types are a grouping of file formats, which are utilized to protect specific workflows or areas of business. You can use one or more File types as conditions in your DLP policies.
 
 |File Type |App  |monitored file extensions  |
 |---------|---------|---------|
