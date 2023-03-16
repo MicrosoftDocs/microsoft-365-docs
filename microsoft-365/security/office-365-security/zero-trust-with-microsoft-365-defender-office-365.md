@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: macapara
+ms.author: tracyp
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
