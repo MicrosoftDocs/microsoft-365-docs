@@ -21,11 +21,11 @@ description: How to implement this preview of optical character recognition (OCR
 
 # Support for optical character recognition in Microsoft Purview (preview)
 
-Microsoft Purview can scan for sensitive content in documents to help protect those documents from inappropriate exposure. Microsoft Purview supports optical character recognition (OCR) scanning to detect sensitive content in stand-alone images. With OCR scans enabled, you can apply policies to protect the information in those images.
+Microsoft Purview can scan for <!--sensitive--> content in documents to help protect those documents from inappropriate exposure. Microsoft Purview supports optical character recognition (OCR) scanning to detect <!--sensitive--> content in stand-alone images. With OCR scans enabled, you can apply policies to protect the information in those images.
 
 OCR scanning is an optional feature in Microsoft Purview. When you enable optical character recognition (OCR) data classifiers, such as sensitive information types and trainable classifiers, can detect characters that are in images. To set up pay-as-you-go billing for OCR scans, 
 
-OCR is first enabled at the tenant level, and then you select which services you want to enable it for. Image scanning is available for images in Exchange Online, SharePoint Online, OneDrive for business, Teams, and Windows endpoint devices
+OCR is first enabled at the tenant level, and then you select which services you want to enable it for. Image scanning is available for images in Exchange, SharePoint, OneDrive for Business, Teams, and Windows endpoint devices
 
 Once the OCR settings are configured, your existing data loss protection (DLP), data lifecycle management, autolabeling, and insider risk policies are applied to both images and documents. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview not only scans for credit card numbers in text at those locations, it also scans images at those locations for credit card numbers.
 
@@ -34,7 +34,7 @@ Once the OCR settings are configured, your existing data loss protection (DLP), 
 | Phase | What's needed|
 |-------|--------------|
 |**Phase 1:** Create your initial Azure subscription | If your organization doesn't already have an Azure pay-as-you-go subscription for your tenant, your Global admin needs to start by creating an [Azure account](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions). |
-|**Phase 2:** Set up pay as you go billing to enable OCR scans | Your Global or SharePoint admin follows the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure (preview)](/syntex/syntex-azure-billing) to add a subscription for OCR scans. |
+|**Phase 2:** Set up pay as you go billing to enable OCR scans | Your Global or SharePoint admin must follow the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure (preview)](/syntex/syntex-azure-billing) to add a subscription for OCR scans. |
 |**Phase 3:** Configure OCR scanning settings | Your Compliance admin configures the OCR settings for your tenant.|
 
 
@@ -60,10 +60,10 @@ To use OCR scans, your organization must have a pay-as-you-go Microsoft Azure su
 
 | Feature area | Location   |
 |--------------|---------------|
-| Scanning of images for sensitive information is supported in data lifecycle management policies (automatically applied retention labels) that are scoped to these locations: |  Exchange Online <br> SharePoint Online |
-| Scanning of images for sensitive information is supported in data loss protection policies that are scoped to these locations:| Endpoint Windows devices <br> Exchange Online <br> OneDrive for Business <br> SharePoint Online <br> Teams |
-| Scanning of images for sensitive information is supported in insider risk management polices that are scoped to these locations: | Endpoint Windows devices <br> Exchange Online <br> OneDrive for Business <br> SharePoint Online <br> Teams |
-| Scanning of images for sensitive information is supported in information protection autolabeling polices that are scoped to these locations: |  Exchange Online <br> OneDrive for Business <br>SharePoint Online |
+| Scanning of images for <!--sensitive-->  information is supported in data lifecycle management policies (automatically applied retention labels) that are scoped to these locations: |  Exchange <br> SharePoint |
+| Scanning of images for <!--sensitive-->  information is supported in data loss protection policies that are scoped to these locations:| Endpoint Windows devices <br> Exchange  <br> OneDrive for Business <br> SharePoint  <br> Teams |
+| Scanning of images for <!--sensitive-->  information is supported in insider risk management policies that are scoped to these locations: | Endpoint Windows devices <br> Exchange  <br> OneDrive for Business <br> SharePoint  <br> Teams |
+| Scanning of images for <!--sensitive-->  information is supported in information protection autolabeling policies that are scoped to these locations: |  Exchange  <br> OneDrive for Business <br>SharePoint  |
 
 > [!NOTE]
 > For information on OCR functionality in Communications Compliance, see the [Optical Character](/communication-compliance-policies?view=o365-worldwide#optical-character-recognition-ocr&preserve-view=true) Recognition section of [Create and Manage communication compliance policies](/communication-compliance-policies).
@@ -74,14 +74,15 @@ This new functionality supports scanning images in the following file types, wit
 
 | Supported file types | Image requirements  |
 |----------------------|---------------------|
-| JPEG, JPG, PNG, and BMP, TIFF, and PDF (image only) | - Images that are embedded in Microsoft Office documents aren't supported. <br>  - Image file sizes must be no larger than 20 MB. Additionally, in Exchange Online and in Teams, images must be at least 50 x 50 pixels and not larger than 16000 x 16,000 px. For SharePoint Online, OneDrive for Business, and Windows Endpoints, the maximum image file size is 50 MB. <br> 
+| JPEG, JPG, PNG, and BMP, TIFF, and PDF (image only) | - Images that are embedded in Microsoft Office documents aren't supported. <br>  - Image file sizes must be no larger than 20 MB. Additionally, in Exchange and in Teams, images must be at least 50 x 50 pixels and not larger than 16000 x 16,000 px. For SharePoint, OneDrive for Business, and Windows Endpoints, the maximum image file size is 50 MB.|
 
 >[!NOTE]
-> - SharePoint Online and OneDrive for Business support only the following file types: JPEG, JPG, PNG, and BMP.
-> - Data loss protection policy tips are not supported for images in Exchange Online.
+>
+> - SharePoint and OneDrive for Business support only the following file types: JPEG, JPG, PNG, and BMP.
+> - Data loss protection policy tips are not supported for images in Exchange.
 > - Only images with machine-typed text are supported
 > - Only images uploaded after OCR has been enabled are scanned.
-> - OCR scans of images that are embedded in Office documents and compressed files (such as ZIP and 7z) aren't supported.
+> - OCR scans are not supported for images embedded in Office documents and compressed files (such as ZIP and 7z).
 
 ## What languages are supported?
 OCR scanning supports more than [150 languages](/azure/cognitive-services/computer-vision/language-support#print-text).
@@ -90,7 +91,7 @@ OCR scanning supports more than [150 languages](/azure/cognitive-services/comput
 
 - You can subscribe to OCR scanning without subscribing to Microsoft Syntex.
 - Configuring OCR scanning occurs at the tenant level, so once OCR scans are configured, they apply to all workflows.
-- You don't need to create separate classifiers for OCR scans. Once OCR is configured, existing sensitive information types (SITs), exact data matches, trainable classifiers, and fingerprint SITs will scan images as well.
+- You don't need to create separate classifiers for OCR scans. Once OCR is configured, existing sensitive information types (SITs), exact data matches, trainable classifiers, and fingerprint SITs scan images as well.
 
 ## See also
 
