@@ -85,7 +85,7 @@ If you decide not to upgrade to the E5 level solutions, unless stated otherwise 
 The Purview solutions trial includes the solutions listed below.
 
 > [!NOTE]
-> Certain Purview features may show up in other Microsoft products that require a subscription. Refer to each solution's licensing details at [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Certain Purview features may appear in other Microsoft products for which a license is needed. Refer to each Purview solution's licensing details at [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 - **Audit**
 
