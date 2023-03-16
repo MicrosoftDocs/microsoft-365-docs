@@ -21,9 +21,17 @@ To help protect and secure your organization’s data, you can provide the membe
 > [!NOTE]
 > Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, servers, apps, and shared devices that your organization uses. Examples of shared and specialized devices include retail point of sale devices, ruggedized devices, digital interactive whiteboards, conference room devices, and holographic wearable computers. Additionally, endpoints also include the apps used by your organization.
 
-Depending on the apps your organization needs, you may want to purchase licenses for specific apps. This content helps you understand the different types of apps available to Intune. The apps can be managed or  Also, you'll learn about how to purchase managed apps and manage app licenses. These concepts are all an important part of the process to add managed apps to Intune.
+Depending on the apps your organization needs, you may want to purchase licenses for specific apps. This content helps you understand the different types of apps available to Intune. Additionally, you can add apps to be managed using configuration and protection policies, or apps that you can just deploy to members of your organization. You'll learn about purchasing apps and app licenses. These concepts are all an important part of the process to add apps to Intune.
 
-Deploying Microsoft Intune commonly involves the following steps:
+## What's in this solution
+
+This solution steps you through the process of adding managed apps to Microsoft Intune. Adding managed apps to Intune is the first step you take before you configure, protect, and deploy the apps so that members of your organization can safely use them. By managing apps at your organization, you help to protect and secure your organization’s data.
+
+:::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-02.png" alt-text="Steps used to purchase and add apps to Microsoft Intune." border="false" :::
+
+## Deploying Intune
+
+You should understand how to set up and deploy the capabilities of Intune before you start adding and assigning apps. Deploying Intune commonly involves the following steps:
 
 :::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-18.png" alt-text="Steps to setup and deploy Intune" border="false" :::
 
@@ -34,15 +42,6 @@ Deploying Microsoft Intune commonly involves the following steps:
 | 3 | Create device compliance and conditional access policies | You'll understand how to create device compliance policies and conditional access policies. When you complete this step, you'll understand device compliance and conditional access, as well as understand how to handle noncompliance. Additionally, you'll understand the different levels of device compliance.  |
 | 4 | Create device configuration policies | You'll understand how to configure device features and settings to secure devices and access resources. When you complete this step, you'll understand the different levels of device configuration and protection. |
 | 5 | Enroll your devices to be managed | When you complete this step, you'll understand the how to configure devices for enrollment and understand enrollment policies and restrictions. You'll also understand how to use enrollment profiles and Windows Autopilot. |
-
-The content provided in this solution focuses on adding managed apps to Intune. You'll learn about the following app areas in Intune:
-- Types of managed apps
-- Methods to acquire and purchase managed apps
-- Licenses for managed apps
-- Steps to add managed apps
-<!-- 
-Add graphic
--->
 
 ## Mobile Application Management configurations
 
@@ -113,12 +112,6 @@ Often, before you can distribute an app to the members of your organization, you
 ## Add apps to Intune
 
 Before you distribute a managed app to the members of your organization, you first need to add the app to Intune. Once added, you can create both configuration and protection policies to support the app. When you're ready, you can assign the apps to the members of your organization. For more information, see [Add apps to Microsoft Intune Overview](apps-add-overview.md)
-
-## What's in this solution
-
-This solution steps you through the process of adding managed apps to Microsoft Intune. Adding managed apps to Intune is the first step you take before you configure, protect, and deploy the apps so that members of your organization can safely use them. By managing apps at your organization, you help to protect and secure your organization’s data.
-
-:::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-02.png" alt-text="Steps used to purchase and add apps to Microsoft Intune." border="false" :::
 
 <!--
 ## Additional app resources
