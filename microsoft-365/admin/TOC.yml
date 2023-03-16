@@ -1,6 +1,8 @@
 - name: Microsoft 365 admin center help
   href: index.yml
   items: 
+    - name: Small business help & learning
+      href: https://go.microsoft.com/fwlink/?linkid=2224585
     - name: Top 20 admin help articles
       href: top-m365-admin-articles.yml
     - name: YouTube - Microsoft 365 help for small businesses
@@ -199,6 +201,8 @@
           href: email/add-another-email-alias-for-a-user.md
         - name: Use your custom domain
           href: email/change-email-address.md
+        - name: Select the domain to use for email from Microsoft 365 products
+          href: email/select-domain-to-use-for-email-from-microsoft-365-products.md          
         - name: Migrate email and contacts to Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: Create signatures and disclaimers
@@ -384,8 +388,6 @@
       href: ../commerce/index.yml
     - name: Secure your organization
       items: 
-        - name: Top 10 ways to secure your business data
-          href: security-and-compliance/secure-your-business-data.md
         - name: Multi-factor authentication for Microsoft 365
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
         - name: Set up multi-factor authentication
