@@ -92,7 +92,7 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 
 Devices on your network must be running one of these editions.
 
-The hardware requirements for Defender for Endpoint on devices are the same as the one of the Windows Operating System it self (meaning they are not in addition of requirements of the Operating System) for the supported editions.
+The hardware requirements for Defender for Endpoint on devices are the same as the requirements for the Windows operating system itself (that is, they are not in addition to the requirements for the operating system) for supported editions.
 
 > Cores: 2 minimum, 4 preferred
 > Memory: 1 GB minimum, 4 preferred
