@@ -42,7 +42,7 @@ The following table lists the specific store app types and how you can add them 
 | --- | --- | --- |
 | Android store apps  | Store app  | Android | Select **Android store app** as the **App type**, click **Select**, then enter the Google Play store URL for the app. |
 | iOS/iPadOS store apps  | Store app  | iOS/iPadOS | Select **iOS store app** as the **app type**, search for the app, and select the app in Intune. |
-| Microsoft Store apps  | Store app  | Windows | Select **Microsoft store app** as the **app type**, and search the Microsoft store for the app. <br>**NOTE:** For legacy store apps, you must enter a Microsoft store URL. |
+| Microsoft Store apps  | Store app  | Windows | Select **Microsoft Store app** as the **app type**, and search the Microsoft Store for the app. <br>**NOTE:** For legacy store apps, you must enter a Microsoft Store URL. |
 | Managed Google Play apps | Store app  | Android Enterprise | Select **Managed Google Play** as the **app type**, search for the app, and select the app in Intune. Managed Google Play apps must be approved using your Google account. Then, Intune must sync with the Managed Google Play store before you can select these apps in Intune. |
 | Android Enterprise apps  | Store app  | Android  | Select **Managed Google Play** as the **app type**, search for the app, and select the app in Intune. |
 | Microsoft 365 apps for Windows 10 and later  | Store app (Microsoft 365) | Windows | Select **Windows 10 and later** under **Microsoft 365 Apps** as the **app type**, and then select the Microsoft 365 app that you want to install.  |

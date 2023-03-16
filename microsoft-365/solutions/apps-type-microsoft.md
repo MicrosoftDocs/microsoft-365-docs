@@ -32,6 +32,9 @@ You and the members of your organization may use Microsoft Office, OneDrive, Exc
 - Open data into Org documents (iOS, Android)
 - Save copies of org data (iOS, Android)
 
+> [!NOTE]
+> Many of the Microsoft apps connect the user to services, such as OneDrive. 
+
 For complete list of supported Microsoft apps, see [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps).
 
 ## Specific Microsoft apps

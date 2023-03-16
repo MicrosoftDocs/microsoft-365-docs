@@ -99,7 +99,7 @@ Use the following steps to add store apps to Intune:
 4. Determine which apps are available in the Microsoft, Apple, or Google app stores.
 5. [Add store apps](apps-purchase-store.md#add-store-apps-based-on-platform) to Intune based on your [organization's app platform needs](apps-add-step-1.md#determine-the-platforms-needed-for-each-app).
 
-For more information, see [Android store apps](/mem/intune/apps/store-apps-android), [iOS/iPadOS store apps](/mem/intune/apps/store-apps-ios), [Microsoft store apps](/mem/intune/apps/store-apps-microsoft), and [Managed Google Play apps](/mem/intune/apps/apps-add-android-for-work).
+For more information, see [Android store apps](/mem/intune/apps/store-apps-android), [iOS/iPadOS store apps](/mem/intune/apps/store-apps-ios), [Microsoft Store apps](/mem/intune/apps/store-apps-microsoft), and [Managed Google Play apps](/mem/intune/apps/apps-add-android-for-work).
 
 ## Add line-of-business apps to Intune
 

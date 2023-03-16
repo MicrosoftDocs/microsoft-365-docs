@@ -29,7 +29,7 @@ You can add the following store app types to Intune.
 | Android store apps | Android store apps are available to add to Intune from the [Google Play store](https://play.google.com/store/apps). Intune can deploy these apps to Android devices. |
 | Managed Google Play apps | Managed Google Play apps are available to add to Intune from the [Managed Google Play store](https://play.google.com/work). Intune can deploy these apps specifically to Android Enterprise devices. Intune provides an app type specifically for Managed Google Play apps, which makes it easy to add this type of app. There are three types of Managed Google Play apps:<ul><li>Managed Google Play store app</li><li>Managed Google Play private app</li><li>Managed Google Play web apps</li></ul>   |
 | iOS/iPadOS store apps | iOS store apps are available to add to Intune from [Apple's app store](https://www.apple.com/app-store/). Intune can deploy these apps to iOS/iPadOS devices. | 
-| Microsoft store apps | Microsoft store apps are available to add to Intune from the [Microsoft app store](https://apps.microsoft.com/store/apps). Intune can deploy these apps to Windows devices. |
+| Microsoft Store apps | Microsoft Store apps are available to add to Intune from the [Microsoft app store](https://apps.microsoft.com/store/apps). Intune can deploy these apps to Windows devices. |
 
 Store app can be added to Intune by first selecting the app type.
 

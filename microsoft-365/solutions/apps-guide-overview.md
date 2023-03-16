@@ -1,11 +1,11 @@
 ---
-title: "Purchase and add apps in Microsoft Intune"
+title: "Purchase and add apps for Microsoft Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Purchase and add managed apps as part of your managed environment.
+description: Purchase and add managed apps for your managed environment.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,25 +14,26 @@ ms.custom:
 keywords:
 ---
 
-# Purchase and add apps in Microsoft Intune
+# Purchase and add apps for Microsoft Intune
 
-To help protect and secure your organization’s data, you can provide the members of your organization with managed apps so they can safely collaborate and be productive. Managed apps are those apps that have been enhanced to support special configuration and protection capabilities. These capabilities are managed and maintained by an endpoint management solution, such as Microsoft Intune. Intune provides a web-based console to manage, protect, and monitor all of your organization's endpoints, whether those endpoints are devices or apps. The capabilities provided by Intune helps to keep your organization's cloud and on-premises devices, apps, and data secure. The Microsoft Intune product family integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, and Windows Autopilot.
+To help protect and secure your organization’s data, you can provide the members of your organization with managed apps so they can safely collaborate and be productive. Managed apps are a subset of client apps that you install and manage on the devices of members of your organization. These apps that have been enhanced to support special configuration and protection capabilities. These capabilities are managed and maintained by an endpoint management solution, such as Microsoft Intune. Intune provides a web-based console to manage, protect, and monitor all of your organization's endpoints, whether those endpoints are devices or apps. The capabilities provided by Intune helps to keep your organization's cloud and on-premises devices, apps, and data secure. The Microsoft Intune product family integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, and Windows Autopilot.
 
 > [!NOTE]
-> Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, servers, and shared devices that your organization uses. Examples of shared and specialized devices include retail point of sale devices, ruggedized devices, digital interactive whiteboards, conference room devices, and holographic wearable computers. Additionally, endpoints also include the apps used by your organization.
+> Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, servers, apps, and shared devices that your organization uses. Examples of shared and specialized devices include retail point of sale devices, ruggedized devices, digital interactive whiteboards, conference room devices, and holographic wearable computers. Additionally, endpoints also include the apps used by your organization.
+
+Depending on the apps your organization needs, you may want to purchase licenses for specific apps. This content helps you understand the different types of apps available to Intune. The apps can be managed or  Also, you'll learn about how to purchase managed apps and manage app licenses. These concepts are all an important part of the process to add managed apps to Intune.
 
 Deploying Microsoft Intune commonly involves the following steps:
-1. Set up Intune
-2. Set up managed apps
-   - Add managed apps to Intune
-   - Configure managed apps
-   - Protect managed apps
-3. Use device compliance and conditional access
-4. Create device configuration profiles
-5. Enroll your devices to be managed
-<!-- 
-Add graphic
--->
+
+:::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-18.png" alt-text="Steps to setup and deploy Intune" border="false" :::
+
+| Step | Action | Description |
+|---|---|---|
+| 1 | Set up Intune | You can [try Intune for free](/mem/intune/fundamentals/free-trial-sign-up) by following the steps to get started fast. When you're finished with this step, you'll have completed the following:<br><li>Created a free Intune tenant. A tenant is a dedicated instance of Azure Active Directory (Azure AD) where your subscription to Intune is hosted.</li><li>Created a user in Intune and assign the user a license.</li><li>Created a group to manage users</li><li>Set up automatic enrollment for Windows 10/11 devices.</li><li>Understand how to enroll a device.</li><li>Understand how to create a password compliance policy for Android Enterprise devices.</li><li>Understand how to send notifications to noncompliant devices.</li><li>Added and assign a app.</li><li>Created and assigned an app protection policy.</li><li>Created and assigned a custom role.</li><li>Created an email device profile for iOS/iPadOS.</li></ul>   |
+| 2 | Set up apps | [Add, configure, and protect the apps](/mem/intune/fundamentals/deployment-plan-protect-apps) your organization uses. When you're finished with this step, you'll have completed the following:<ul><li>Understand how to add managed and unmanaged apps</li><li>Understand which apps to add to your tenant first</li><li>Understand how to configure apps in Intune</li><li>Understand how to protect apps using Intune</li><li>Understand the different levels of app protection</li></ul>  |
+| 3 | Create device compliance and conditional access policies | You'll understand how to create device compliance policies and conditional access policies. When you complete this step, you'll understand device compliance and conditional access, as well as understand how to handle noncompliance. Additionally, you'll understand the different levels of device compliance.  |
+| 4 | Create device configuration policies | You'll understand how to configure device features and settings to secure devices and access resources. When you complete this step, you'll understand the different levels of device configuration and protection. |
+| 5 | Enroll your devices to be managed | When you complete this step, you'll understand the how to configure devices for enrollment and understand enrollment policies and restrictions. You'll also understand how to use enrollment profiles and Windows Autopilot. |
 
 The content provided in this solution focuses on adding managed apps to Intune. You'll learn about the following app areas in Intune:
 - Types of managed apps
@@ -74,7 +75,7 @@ MDM, in addition to MAM, makes sure that the device is protected. For example, y
 
 There are additional benefits to using MDM with app protection policies. For example, a member of your organization could have both a phone issued by the company, as well as their own personal tablet. The company phone could be enrolled in MDM and protected by app protection policies while the personal device is protected by app protection policies only.
 
-On enrolled devices that use an MDM service, app protection policies can add an extra layer of protection. For example, a user signs in to a device with their organization credentials. Their organization identity allows access to data that's tied to their personal identity. As that organization data is used, app protection policies control how the data is saved and shared. When users sign in with their personal identity, those same protections (access and restrictions) aren't applied. In this way, IT has control of organization data, while end users maintain control and privacy over their personal data.
+On enrolled devices that use an MDM service, app protection policies can add an extra layer of protection. For example, a user signs in to a device with their organization credentials. As that organization data is used, app protection policies control how the data is saved and shared. When users sign in with their personal identity, those same protections (access and restrictions) aren't applied. In this way, IT has control of organization data, while end users maintain control and privacy over their personal data.
 
 The MDM solution adds value by providing the following capabilities:
 - Enrolls the device
@@ -107,7 +108,7 @@ The users of apps and devices at your organization might have several app requir
 
 ## Purchase apps
 
-Often, before you can distribute an app to the members of your organization, you must either purchase the app, purchase a license to use the app, or acquire a license to use the app. Many apps are free, however you may still need to follow the purchase process in order to distribute those apps to the members of your organization. For more information, see [Purchase apps for Intune](apps-purchase-overview.md) for an overview.
+Often, before you can distribute an app to the members of your organization, you must either purchase the app, purchase a license to use the app, or acquire a license to use the app. Many apps are free, however you may still need to follow the purchase process in order to distribute those apps to the members of your organization. Of those free apps, most are not designed to be protected and configured with Intune. For more information, see [Purchase apps for Intune](apps-purchase-overview.md) for an overview.
 
 ## Add apps to Intune
 

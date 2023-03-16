@@ -24,7 +24,7 @@ keywords:
 App licenses that you purchase in-volume are purchased through a volume purchase program (VPP). Apple lets you purchase multiple app licenses using Apple Business Manager](https://support.apple.com/guide/apple-business-manager/sign-up-axm402206497). Depending on your Microsoft Intune license, you may already have Microsoft app licenses available to add and deploy.
 
 > [!NOTE]
-> The Managed Google Play store and Microsoft store only supports free apps. For more information, see [Managed Google Play](apps-purchase-volume.md#managed-google-play) and [Microsoft store](apps-purchase-volume.md#microsoft-store).
+> The Managed Google Play store and Microsoft Store only supports free apps. For more information, see [Managed Google Play](apps-purchase-volume.md#managed-google-play) and [Microsoft Store](apps-purchase-volume.md#microsoft-store).
 
 ## Apple Business Manager<!-- What is it? -->
 
@@ -60,7 +60,10 @@ For related information about purchasing apps, see [Intro to purchasing content 
 
 ### Sync purchased Apple app licenses with Microsoft Intune<!-- What does sync mean (certs)? How to sync? -->
 
-Microsoft Intune helps you manage apps you purchased from Apple Business Manager by synchronizing app license information (location tokens) you download from Apple Business Manager. Location tokens are volume purchase licenses that were commonly known as Volume Purchase Program (VPP) tokens. With VPP tokens, you can assign and manage licenses purchased using Apple Business Manager. These tokens are then downloaded from Apple Business Manager and uploaded into Microsoft Intune. Each token is commonly valid for one year.
+Microsoft Intune helps you manage apps you purchased from Apple Business Manager by synchronizing app license information (location tokens) you download from Apple Business Manager. Location tokens are volume purchase licenses that were commonly known as Volume Purchase Program (VPP) tokens. With VPP tokens, you can assign and manage licenses purchased using Apple Business Manager. These tokens are then downloaded from Apple Business Manager and uploaded (synched) into Microsoft Intune. Each token is commonly valid for one year.  
+
+> [!NOTE]
+> VPP apps can only be added via a connector to the service. The connnector syncs the location tokens. 
 
 Follow the Intune guidelines to upload and sync an Apple VPP token:
 - Upload multiple location tokens per tenant](/mem/intune/apps/vpp-apps-ios#upload-an-apple-vpp-or-apple-business-manager-location-token) using Intune.
@@ -85,10 +88,13 @@ Follow the Intune guidelines to assign iOS/iPadOS apps:
 
 ### Access Microsoft Store<!-- How to set up? -->
 
-You can add free apps to Microsoft Intune from the Microsoft store. Oftentimes, those free apps that require a license can be added to Intune and distributed to your organization. However, you may need a license, subscription, or user account to use the app. Before you use Microsoft Intune to manage the apps your purchase, you should check requirements. 
+You can add free apps to Microsoft Intune from the Microsoft Store. Oftentimes, those free apps that require a license can be added to Intune and distributed to your organization. However, you may need a license, subscription, or user account to use the app. Before you use Microsoft Intune to manage the apps your purchase, you should check requirements. 
 
 Microsoft Store requirements:
 - Confirm that your [mobile device management (MDM) authority](/mem/intune/fundamentals/mdm-authority-set) is set to **Microsoft Intune**.
+
+> [!NOTE]
+> The Microsoft Store for Business no longer supports purchasing apps.
 
 ### Acquiring apps using Microsoft Store<!-- How do you buy apps? -->
 
@@ -107,6 +113,9 @@ There are three types of Managed Google Play apps:
 - [Managed Google Play store app](/mem/intune/apps/apps-add-android-for-work#managed-google-play-store-apps)
 - [Managed Google Play private app](/mem/intune/apps/apps-add-android-for-work#managed-google-play-private-lob-apps)
 - [Managed Google Play web apps](/mem/intune/apps/apps-add-android-for-work#managed-google-play-web-links)
+
+> [!NOTE]
+> The Managed Google Play store no longer supports purchasing apps. You can still purchase apps from developers and add them to your private store.
 
 ### Add a Managed Google Play store app to Intune
 
