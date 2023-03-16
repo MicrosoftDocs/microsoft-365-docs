@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/16/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -28,7 +28,7 @@ When you export the results of an audit log search from the Microsoft Purview co
   
  When your export all results for an audit log search, the raw data from the unified audit log is copied to a comma-separated value (CSV) file that is downloaded to your local computer. This file contains additional information from each audit record in a column named **AuditData**. This column contains a multi-value property for multiple properties from the audit log record. Each of the **property: value** pairs in this multi-value property are separated by a comma. 
   
-The following table describes the properties that are included (depending on the service in which an event occurs) in the multi-property **AuditData** column. The **Office 365 service that has this property** column indicates the service and type of activity (user or admin) that includes the property. For more detailed information about these properties or about properties that may not be listed in this topic, see [Management Activity API Schema](/office/office-365-management-api/office-365-management-activity-api-schema).
+The following table describes the properties that are included (depending on the service in which an event occurs) in the multi-property **AuditData** column. The **Office 365 service that has this property** column indicates the service and type of activity (user or admin) that includes the property. For more detailed information about these properties or about properties that may not be listed in this article, see [Management Activity API Schema](/office/office-365-management-api/office-365-management-activity-api-schema).
   
 > [!TIP]
 > You can use the JSON transform feature in Power Query in Excel to split the **AuditData** column into multiple columns so that each property has its own column. This lets you sort and filter on one or more of these properties. To learn how to do this, see [Export, configure, and view audit log records](audit-log-export-records.md).
@@ -67,7 +67,7 @@ The following table describes the properties that are included (depending on the
 |Parameters|For Exchange admin activity, the name and value for all parameters that were used with the cmdlet that is identified in the Operation property.|Exchange (admin activity)|
 |RecordType|The type of operation indicated by the record. This property indicates the service or feature that the operation was triggered in. For a list of record types and their corresponding ENUM value (which is the value displayed in the **RecordType** property in an audit record), see [Audit log record type](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).| 
 |ResultStatus|Indicates whether the action (specified in the **Operation** property) was successful or not.  <br/> For Exchange admin activity, the value is either **True** (successful) or **False** (failed).|All  <br/>|
-|SecurityComplianceCenterEventType|Indicates that the activity was a compliance portal event. All compliance center activities will have a value of **0** for this property.|Security & Compliance Center|
+|SecurityComplianceCenterEventType|Indicates that the activity was a compliance portal event. All compliance portal activities will have a value of **0** for this property.|Microsoft Purview compliance portal|
 |SharingType|The type of sharing permissions that was assigned to the user that the resource was shared with. This user is identified in the **UserSharedWith** property.|SharePoint|
 |Site|The GUID of the site where the file or folder accessed by the user is located.|SharePoint|
 |SiteUrl|The URL of the site where the file or folder accessed by the user is located.|SharePoint|
@@ -82,8 +82,8 @@ The following table describes the properties that are included (depending on the
 |UserAgent|Information about the user's browser. This information is provided by the browser.|SharePoint|
 |UserDomain|Identity information about the tenant organization of the user (actor) who performed the action.|Azure Active Directory|
 |UserId|The user who performed the action (specified in the **Operation** property) that resulted in the record being logged. Audit records for activity performed by system accounts (such as SHAREPOINT\system or NT AUTHORITY\SYSTEM) are also included in the audit log. Another common value for the UserId property is app@sharepoint. This indicates that the "user" who performed the activity was an application that has the necessary permissions in SharePoint to perform organization-wide actions (such as search a SharePoint site or OneDrive account) on behalf of a user, admin, or service. <br/><br/>For more information, see:<br/> [The app\@sharepoint user in audit records](audit-log-activities.md#the-appsharepoint-user-in-audit-records)<br/> or <br/>[System accounts in Exchange mailbox audit records](audit-log-activities.md#system-accounts-in-exchange-mailbox-audit-records). |All|
-|UserKey|An alternative ID for the user identified in the **UserID** property. For example, this property is populated with the passport unique ID (PUID) for events performed by users in SharePoint. This property also might specify the same value as the **UserID** property for events occurring in other services and events performed by system accounts.|All|
-|UserType|The type of user that performed the operation. The following values indicate the user type. <br/> <br/> **0** - A regular user. <br/>**2** - An administrator in your Microsoft 365 organization.<sup>1</sup> <br/>**3** - A Microsoft datacenter administrator or datacenter system account. <br/>**4** - A system account. <br/>**5** - An application. <br/>**6** - A service principal.<br/>**7** - A custom policy.<br/>**8** - A system policy.|All|
+|UserKey| Contains a valid Azure Active Directory Object ID in GUID format or hex format. For scenarios where the primary actor isn't a user, the *UserKey* is an empty string.<br><br> Also, an alternative ID for the user identified in the **UserID** property. For example, this property is populated with the passport unique ID (PUID) for events performed by users in SharePoint. This property also might specify the same value as the **UserID** property for events occurring in other services and events performed by system accounts.|All|
+|UserType|The type of user that performed the operation. The following values indicate the user type. <br/> <br/> **0** - A regular user without admin permissions. <br/>**2** - An administrator in your Microsoft 365 organization.<sup>1</sup> <br/>**3** - A Microsoft datacenter administrator or datacenter system account. <br/>**4** - An audit event triggered by server-side logic. For example, Windows services or background processes.  <br/>**5** - An audit event triggered by an AAD application. <br/>**6** - A service principal. <br/>**7** - A customer created or managed policy. <br/>**8** - A Microsoft-managed or system policy. <br/>**9** - A partner tenant's user working on behalf of the customer tenant (in [GDAP](/partner-center/gdap-introduction) scenarios). <br/>**10** - A guest or anonymous user. |All|
 |Version|Indicates the version number of the activity (identified by the **Operation** property) that's logged.|All|
 |Workload|The Microsoft 365 service where the activity occurred.|All|
 ||||
