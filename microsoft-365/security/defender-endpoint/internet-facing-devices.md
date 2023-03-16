@@ -94,8 +94,6 @@ DeviceNetworkEvents
 
 If the above query fails to provide the relevant connections, you can use socket collection methods to retrieve the source process(netstat/live response *add link to live response docs*).
 
-If a device is flagged as internet-facing through UDP it means this device was identified as host reachable.
-
 >[!NOTE]
 > Currently UDP information is not available in advanced hunting.
 
