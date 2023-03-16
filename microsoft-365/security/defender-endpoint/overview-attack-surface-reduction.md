@@ -7,7 +7,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: dansimp
+author: Dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
@@ -279,7 +279,7 @@ You can access these events in Windows Event viewer:
 |Attack surface reduction|Windows Defender (Operational)|1122|Event when rule fires in Audit-mode|
 |Attack surface reduction|Windows Defender (Operational)|1121|Event when rule fires in Block-mode|
 
->[!NOTE]
+> [!NOTE]
 > From the user's perspective, ASR Warn mode notifications are made as a Windows Toast Notification for attack surface reduction rules.
 >
 > In ASR, Network Protection provides only Audit and Block modes.
