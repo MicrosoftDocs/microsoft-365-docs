@@ -35,7 +35,7 @@ As threat actors continuously scan the web to detect exposed devices they can ex
 Microsoft Defender for Endpoint automatically identifies and flags onboarded, exposed, internet facing devices in the [Microsoft 365 Defender portal](https://security.microsoft.com/). This critical information provides increased visibility into an organizations external attack surface and insights into asset exploitability.
 
 > [!NOTE]
-> Currently, only Windows devices onboarded to Microsoft Defender for Endpoint can be identified as internet facing. Support for other platforms will be available an upcoming releases.
+> Currently, only Windows devices onboarded to Microsoft Defender for Endpoint can be identified as internet facing. Support for other platforms will be available in upcoming releases.
 
 ## Devices flagged as internet facing
 
@@ -46,7 +46,7 @@ Devices that can be connected to or are approachable from the outside pose a thr
 
 ## View internet facing devices
 
-For each onboarded device identified as internet facing, the internet facing tag appears in the **Tags** column in the Device inventory in the Microsoft 365 Defender portal. To view internet facing devices:
+For each onboarded device identified as internet facing, the internet facing tag appears in the **Tags** column in the device inventory in the Microsoft 365 Defender portal. To view internet facing devices:
 
 1. Go to **Assets** \> **Device** in the [Microsoft 365 Defender portal](https://security.microsoft.com/machines/).
 
@@ -59,8 +59,6 @@ Hover over the internet facing tag to see why it was applied, possible reasons a
 
 At the top of the page, you can view a counter that shows the number of devices that have been identified as internet facing and are potentially less secure.
 
-## Use the filter to focus on internet facing devices
-
 You can use filters to focus in on internet facing devices and investigate the risk they may introduce into your organization.
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-filter.png" alt-text="Screenshot of the Browser extensions page" lightbox="../../media/defender-vulnerability-management/internet-facing-filter.png":::
@@ -69,15 +67,12 @@ You can use filters to focus in on internet facing devices and investigate the r
 
 Devices can be classified as internet facing device for different reasons, including a misconfigured firewall rule, or when applications or services are identified as listening on a device.
 
-A misconfigured firewall rule, which could be host firewall rule or enterprise firewall rule, can result in internal devices being reachable from the outside.
-
-Identifying applications or services that are listening on a device can help you distinguish between those that are intentionally internet facing and those that may compromise your organization by providing an attacker with unauthorized entry point to your network.
+- A misconfigured firewall rule, which could be host firewall rule or enterprise firewall rule, can result in internal devices being reachable from the outside.
+- Identifying applications or services that are listening on a device can help you distinguish between those that are intentionally internet facing and those that may compromise your organization by providing an attacker with unauthorized entry point to your network.
 
 Understanding your firewall policy and identifying these application and services provides critical information when it comes to mapping your organization’s external attack surface.
 
-To see insights on the IP addresses, ports and connection protocols for a flagged device:
-
-- Select an internet facing device to open its flyout pane:
+To see insights on the IP addresses, ports and connection protocols for a flagged device, select an internet facing device in the device inventory to open its flyout pane:
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-details.png" alt-text="Screenshot of the Browser extensions page" lightbox="../../media/defender-vulnerability-management/internet-facing-details.png":::
 
@@ -86,14 +81,15 @@ The information in this pane helps you understand how the device was detected as
 For TCP connections, you can use advanced hunting to gain further insights into applications or services identified as listening on a device by querying [DeviceNetworkEvents](../defender/advanced-hunting-devicenetworkevents-table.md). Use the following example as a starting point:
 
 ```kusto
+// Query on inbound connection accepted events
 DeviceNetworkEvents
-| where Timestamp > ago(7d)
-| where DeviceId == ""
-| where not(InitiatingProcessCommandLine has_any ("TaniumClient.exe", "ZSATunnel.exe", "MsSense.exe"))
-| where ActionType =="InboundConnectionAccepted"
-| extend LocalIP = replace(@"::ffff:", "", LocalIP),RemoteIP = replace(@"::ffff:", "", RemoteIP)
-| where LocalIP!=RemoteIP and RemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") and not(ipv4_is_private( RemoteIP ))
-| project-reorder DeviceId, LocalIP, LocalPort, RemoteIP, RemotePort, InitiatingProcessCommandLine,InitiatingProcessId, DeviceName
+|where Timestamp > ago(7d)
+|where DeviceId == ""
+|where not(InitiatingProcessCommandLine has_any ("TaniumClient.exe", "ZSATunnel.exe", "MsSense.exe"))
+|where ActionType =="InboundConnectionAccepted"
+|extend LocalIP = replace(@"::ffff:", "", LocalIP),RemoteIP = replace(@"::ffff:", "", RemoteIP)
+|where LocalIP!=RemoteIP and RemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") and not(ipv4_is_private( RemoteIP ))
+|project-reorder DeviceId, LocalIP, LocalPort, RemoteIP, RemotePort, InitiatingProcessCommandLine,InitiatingProcessId, DeviceName
 ``` 
 If a device is flagged as internet facing through UDP it means this device was identified as host reachable.
 
