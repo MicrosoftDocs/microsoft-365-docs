@@ -210,6 +210,9 @@ To use real-time analytics (preview), you must:
 2. Choose the **Include all users and groups** option when you [create the policy](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy).
 3. Choose the **I don't want to specify priority content right now** option when you [create the policy](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy). 
 
+> [!NOTE]
+> For a policy to come into scope for real-time analytics, there must also be at least one triggering event. 
+
 ## Policy timeframes
 
 Policy timeframes allow you to define past and future review periods that are triggered after policy matches based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following policy timeframes are available:
