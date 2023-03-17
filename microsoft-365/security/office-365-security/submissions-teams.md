@@ -172,3 +172,5 @@ The availability of Teams messages on the **User reported** tab on the **Submiss
     - The **Customize sender and branding** subsection contains the options to specify the sender email address and custom branding:
       - **Specify a Microsoft 365 mailbox to use as the From address of email notifications** (formerly **Specify an Office 365 mailbox to send email notifications from**).
       - **Replace the Microsoft logo with my organization's logo across all reporting experiences** (formerly **Replace the Microsoft logo with my company logo**).
+
+- As described in the **Reporting from quarantine** section on the **User reported settings** page at <https://security.microsoft.com/securitysettings/userSubmission>, only admins can report quarantined Teams messages to Microsoft.
