@@ -56,14 +56,13 @@ To use OCR scans, your organization must have a pay-as-you-go Microsoft Azure su
 1. In the Microsoft Purview compliance portal, go to **Settings**.
 2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
 3. Select the locations where you wish to scan images. And then, for each location and workload, define the scope (users/groups/sites) for the OCR scans. Supported locations and workflows are:
-1. 
 
-| Feature area | Location   |
-|--------------|---------------|
-| Scanning of images for <!--sensitive-->  information is supported in data lifecycle management policies (automatically applied retention labels) that are scoped to these locations: |  Exchange <br> SharePoint |
-| Scanning of images for <!--sensitive-->  information is supported in data loss protection policies that are scoped to these locations:| Endpoint Windows devices <br> Exchange  <br> OneDrive for Business <br> SharePoint  <br> Teams |
-| Scanning of images for <!--sensitive-->  information is supported in insider risk management policies that are scoped to these locations: | Endpoint Windows devices <br> Exchange  <br> OneDrive for Business <br> SharePoint  <br> Teams |
-| Scanning of images for <!--sensitive-->  information is supported in information protection autolabeling policies that are scoped to these locations: |  Exchange  <br> OneDrive for Business <br>SharePoint  |
+| Feature area | Location |
+|--------------|----------|
+| Scanning of images for <!--sensitive-->  information is supported in data lifecycle management policies <br> (automatically applied retention labels) that are scoped to these locations: |  Exchange <br> SharePoint |
+| Scanning of images for <!--sensitive-->  information is supported in data loss protection policies that <br>  are scoped to these locations:| Endpoint Windows devices <br> Exchange  <br> OneDrive for Business <br> SharePoint  <br> Teams |
+| Scanning of images for <!--sensitive-->  information is supported in insider risk management policies that <br>  are scoped to these locations: | Endpoint Windows devices <br> Exchange  <br> OneDrive for Business <br> SharePoint  <br> Teams |
+| Scanning of images for <!--sensitive-->  information is supported in information protection autolabeling <br> policies that are scoped to these locations: |  Exchange  <br> OneDrive for Business <br>SharePoint  |
 
 > [!NOTE]
 > For information on OCR functionality in Communications Compliance, see the [Optical Character](/communication-compliance-policies?view=o365-worldwide#optical-character-recognition-ocr&preserve-view=true) Recognition section of [Create and Manage communication compliance policies](/communication-compliance-policies).
