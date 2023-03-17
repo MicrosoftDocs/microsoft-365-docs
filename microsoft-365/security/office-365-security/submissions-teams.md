@@ -33,7 +33,7 @@ ms.date:
 
 In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft 365 Defender, admins can decide whether users can report malicious messages in Microsoft Teams. Admins can also get visibility into the Teams messages that users are reporting.
 
-Users can report messages in Teams from **internal** chats, meeting conversations, and channels. Users can only report messages as malicious.
+Users can report messages in Teams from **internal** chats, meeting conversations. Users can only report messages as malicious.
 
 > [!NOTE]
 > User reporting of messages in Teams is not supported in U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD).
@@ -74,7 +74,7 @@ The value of this setting is meaningful only if message reporting is turned on i
 
    As previously described, this setting is turned on by default, and you typically leave it turned on if message reporting is also turned on in Teams admin center.
 
-For more information about user reported message settings ind the Defender portal, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+For more information about user reported message settings in the Defender portal, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 ## How users report messages in Teams
 
@@ -108,7 +108,7 @@ For more information about user reported message settings ind the Defender porta
 
 What happens to a user reported Teams message depends on the settings in the **Reported message destinations** section on the **User reported settings** page at <https://security.microsoft.com/securitysettings/userSubmission>:
 
-- **Send reported messages to** \> **Microsoft and my reporting mailbox**: For Microsoft 365 organizations that were created after ???, this is the default value. The default user reporting mailbox is the Exchange Online mailbox of the global admin. The selection for older Microsoft 365 organizations are unchanged.
+- **Send reported messages to** \> **Microsoft and my reporting mailbox**: For Microsoft 365 organizations that were created after 1st March 2023, this is the default value. The default user reporting mailbox is the Exchange Online mailbox of the global admin. The selection for older Microsoft 365 organizations are unchanged.
 - **Send reported messages to** \> **Microsoft only**
 - **Send reported messages to** \> **My reporting mailbox only**
 
@@ -141,7 +141,7 @@ The availability of Teams messages on the **User reported** tab on the **Submiss
   - **Phish simulation** is not available.
 
 - The **Result** column contains the following information for reported Teams messages based on the [user reported settings](submissions-user-reported-messages-custom-mailbox.md):
-  - **Send reported messages to** \> **Microsoft and my reporting mailbox** or **Microsoft only**: The **Result** column contains one of the following values:
+  - **Send reported messages to** \> **Microsoft and my reporting mailbox** or **Microsoft only**: The **Result** column contains values derived from the following analysis:
     - **Policy hits**: Information about any policies or overrides that may have allowed or blocked the incoming messages, including overrides to our filtering verdicts. The result should be available within several minutes. Otherwise, detonation and feedback from graders could take up to one day.
     - **Payload reputation/detonation**: Up-to-date examination of any URLs and files in the message.
     - **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
