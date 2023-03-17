@@ -315,7 +315,7 @@ When you list a website in Sensitive services domains you can audit, block with 
 
 For the print, copy data and save actions, each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. For the upload action, the user can be using Microsoft Edge or Google Chrome with the Purview extension. Sensitive service domains is used in conjunction with a DLP policy for Devices. You can also define website groups that you want to assign policy actions to that are different from the global website group actions. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 
-You can add maximun 50 websites into one group and can create maximum 20 groups.
+You can add maximum 50 websites into one group and can create maximum 20 groups.
 
 
 ##### Supported syntax for designating websites in a website group
@@ -424,7 +424,7 @@ The most common use case is to use printers groups as an allowlist as in the abo
 
 Use this setting to define groups of removable storage devices, like USB thumb drives, that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block copying of items with engineering specifications to all removeable storage devices, except for USB connected hard drives that are used to back up data and are then sent offsite.
 
-You can add maximun 50 removable storages into one group and can create maximum 20 groups.
+You can add maximum 50 removable storages into one group and can create maximum 20 groups.
 
 This feature is available for devices running any of the following Windows versions:  
 
