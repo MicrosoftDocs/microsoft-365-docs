@@ -375,7 +375,7 @@ File activity will always be audited for onboarded devices, regardless of whethe
 
 Use this setting to define groups of printers that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block printing of contracts to all printers, except for printers that are in the legal department.
 
-You can add maximun 50 printers into one group and can create maximum 20 groups.
+You can add maximum 50 printers into one group and can create maximum 20 groups.
 
 This feature is available for devices running any of the following Windows versions:  
 - Windows 10 and later (20H2, 21H1, 21H2, and later) - [KB5020030](https://support.microsoft.com/en-us/topic/november-15-2022-kb5020030-os-builds-19042-2311-19043-2311-19044-2311-and-19045-2311-preview-237a9048-f853-4e29-a3a2-62efdbea95e2)
