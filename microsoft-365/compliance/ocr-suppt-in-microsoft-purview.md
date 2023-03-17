@@ -59,10 +59,10 @@ To use OCR scans, your organization must have a pay-as-you-go Microsoft Azure su
 
 | Feature area | Location |
 |--------------|----------|
-| Scanning of images for <!--sensitive-->  information is supported in data lifecycle management policies <br> (automatically applied retention labels) that are scoped to these locations: |  Exchange <br> SharePoint |
-| Scanning of images for <!--sensitive-->  information is supported in data loss protection policies that <br>  are scoped to these locations:| Endpoint Windows devices <br> Exchange  <br> OneDrive for Business <br> SharePoint  <br> Teams |
-| Scanning of images for <!--sensitive-->  information is supported in insider risk management policies that <br>  are scoped to these locations: | Endpoint Windows devices <br> Exchange  <br> OneDrive for Business <br> SharePoint  <br> Teams |
-| Scanning of images for <!--sensitive-->  information is supported in information protection autolabeling <br> policies that are scoped to these locations: |  Exchange  <br> OneDrive for Business <br>SharePoint  |
+| Scanning of images for <!--sensitive-->  information is supported in <br>data lifecycle management policies (automatically <br> applied retention labels) that are scoped to these locations: |  -Exchange <br> -SharePoint |
+| Scanning of images for <!--sensitive-->  information is supported in <br> data loss protection policies that are scoped to <br>  these locations:| -Endpoint Windows devices <br> -Exchange  <br> -OneDrive for Business <br> -SharePoint  <br> -Teams |
+| Scanning of images for <!--sensitive-->  information is supported in <br> insider risk management policies that are scoped to <br> these locations: | -Endpoint Windows devices <br> -Exchange  <br> -OneDrive for Business <br> -SharePoint  <br> -Teams |
+| Scanning of images for <!--sensitive-->  information is supported in <br> information protection autolabeling  policies that <br> are scoped to these locations: |  -Exchange  <br> -OneDrive for Business <br>-SharePoint  |
 
 > [!NOTE]
 > For information on OCR functionality in Communications Compliance, see the [Optical Character](/communication-compliance-policies?view=o365-worldwide#optical-character-recognition-ocr&preserve-view=true) Recognition section of [Create and Manage communication compliance policies](/communication-compliance-policies).
