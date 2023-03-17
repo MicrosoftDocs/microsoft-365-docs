@@ -40,6 +40,8 @@ description: "Learn to import contacts, calendars, and emails from Gmail or anot
 
 # Migrate email and contacts to Microsoft 365
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 Import or migrate email from Gmail or another email provider to Microsoft 365.
