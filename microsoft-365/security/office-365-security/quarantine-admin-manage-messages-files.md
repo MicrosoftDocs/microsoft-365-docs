@@ -30,7 +30,7 @@ ms.date: 3/28/2023
 - [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantined email messages in EOP](quarantine-about.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes and in Microsoft Teams, quarantine holds potentially dangerous or unwanted messages. 
 
 Admins can view, release, and delete all types of quarantined messages for all users. Admins can also report false positives to Microsoft.
 
@@ -382,29 +382,30 @@ For the preview release, this feature is enabled by default.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine**. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
 
-2. On the **Quarantine** page, select the **Teams messages** tab (**Email** is the default tab).
+2. On the **Quarantine** page, select the **Teams messages** tab.
 
-   [Add image] 
+   :::image type="content" source="../../media/admin-quarantine-teams-message-tab.png" alt-text="The Teams messages tab in quarantine" lightbox="../../media/admin-quarantine-teams-message-tab.png"::: 
 
-3. Here are short descriptions for the available columns: 
-   - **Teams message text**: Contains the subject for the teams message. 
-   - **Date quarantine**: Date when the message is quarantined.
-   - **Quarantined status**: The available options are "Needs review", "Released", and "Processing release". 
-   - **Participant**: The total number of users who received the message.
+3. You can sort the results by clicking on an available column header. Click **Customize columns** to change the columns that are shown. 
+   - **Teams message text**: Contains the subject for the teams message.
+   - **Time received**: The time the message is received by the recipient. 
+   - **Release status**: Shows whether the message is already reviewed and released or needs review. 
+   - **Participants**: The total number of users who received the message.
    - **Sender**: The person who sent the message that was quarantined.
-   - **Quarantine reason**: Available options are "High confidence phish" and "Malware". 
-   - **Policy name**: There's no policy name as this protection is enabled by default. 
-   - **Expires**: Indicates the time after which the message is removed from quarantine. By default, this is 30 days. 
+   - **Quarantine reason**: Available options are "High confidence phish" and "Malware".
+   - **Policy type**: Date when the message is quarantined.
+   - **Quarantined status**: The available options are "Needs review", "Released", and "Processing release".  
+   - **Expires**: Indicates the time after which the message is removed from quarantine. By default, this is 30 days.
+   - **Recipient address**: Email address of the recipients.
+   - **Message ID**: Includes the chat message ID.
 
-    [Add image]
-
-4. To filter the results, click **Filter**. Select the columns you need, and then click **Apply**.
+4. To filter the results, click **Filter**. Select the columns you want, and then click **Apply**.
 
 ### View quarantined message details in Microsoft Teams
 
 When you select a quarantined message from the list, the following information is available in the details flyout that opens:
 
-[Add image]
+:::image type="content" source="../../media/admin-quarantine-teams-details-flyout.png" alt-text="The Bulk actions drop down list for files in quarantine" lightbox="../../media/admin-quarantine-teams-details-flyout.png":::
 
 - **Message details**: Includes the primary threat reason, date and time of the message sent, and the quarantine status. Also includes the Teams message ID and the submission status.
 - **Sender**: Includes the sender name, their domain location, and whether the sender is from outside the organization.
@@ -417,7 +418,7 @@ To take action on the message, see the next section.
 
 After you select a quarantined message from the list, the following actions are available in the details flyout:
 
-[Add image]
+:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions drop down list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
 
 - **Release from quarantine**: Allows the admin to release the message only to the recipient in their organization.
 - **Preview message**: Preview the message in quarantine before taking any action.
@@ -431,6 +432,8 @@ If you don't release or remove the file, it will be deleted after the default qu
 #### Take action on multiple quarantined messages
 
 [Need info]
+
+:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions drop down list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to view and manage quarantined messages and files
 
