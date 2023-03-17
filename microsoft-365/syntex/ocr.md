@@ -71,7 +71,7 @@ OCR for printed text includes support for the following languages: TBD
 
 OCR for handwritten text includes support for the following languages: TBD
 
-### Limitations
+### File limitations
 
 - Image file sizes must be less than 20 MB.
 
