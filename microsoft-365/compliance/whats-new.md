@@ -41,6 +41,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## March 2023
 
+### Data lifecycle management and records management
+
+- **General availability (GA)**: Rolling out in general availability, [Microsoft Graph Records Management APIs](/graph/api/resources/security-recordsmanagement-overview) to support the management of retention labels and event-based retention.
+
 ### Insider risk management
 
 - **Forensic Evidence GA**: With the GA release of Forensic Evidence, you can now:
