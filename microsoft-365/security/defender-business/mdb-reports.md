@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 02/03/2023
+ms.date: 03/17/2023
 ms.reviewer: efratka, oogunrinde
 f1.keywords: NOCSH 
 ms.collection: 
@@ -22,6 +22,8 @@ ms.collection:
 # Reports in Microsoft Defender for Business
 
 Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article describes these reports, how you can use them, and how to find them.
+
+## Simplified insights
 
 ## Reports in Defender for Business
 
