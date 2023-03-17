@@ -405,7 +405,7 @@ For the preview release, this feature is enabled by default.
 
 When you select a quarantined message from the list, the following information is available in the details flyout that opens:
 
-:::image type="content" source="../../media/admin-quarantine-teams-details-flyout.png" alt-text="The Bulk actions drop down list for files in quarantine" lightbox="../../media/admin-quarantine-teams-details-flyout.png":::
+:::image type="content" source="../../media/admin-quarantine-teams-details-flyout.png" alt-text="The teams message details flyout in quarantine" lightbox="../../media/admin-quarantine-teams-details-flyout.png":::
 
 - **Message details**: Includes the primary threat reason, date and time of the message sent, and the quarantine status. Also includes the Teams message ID and the submission status.
 - **Sender**: Includes the sender name, their domain location, and whether the sender is from outside the organization.
