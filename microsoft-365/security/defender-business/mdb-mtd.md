@@ -50,8 +50,27 @@ The following table summarizes the capabilities that are included in mobile thre
 
 (<a id="fnd">d</a>) See [Prerequisites for the Microsoft Tunnel in Intune](/mem/intune/protect/microsoft-tunnel-prerequisites).
 
+## How to get mobile threat defense capabilities
+
+Mobile threat defense capabilities are currently in preview for [Defender for Business](get-defender-business.md) customers. Here's how to get these capabilities for your organization:
+
+1. Make sure your organization has signed up to receive preview features for your tenant. See [Microsoft Defender for Business preview features](mdb-preview.md).
+
+2. Make sure that Defender for Business has finished provisioning. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Assets** > **Devices**.
+
+   - If you see a message that says, "Hang on! We're preparing new spaces for your data and connecting them," it means that Defender for Business hasn't finished provisioning. This process is happening now, and can take up to 24 hours to complete. 
+   - If you see a list of devices, or you're prompted to onboard devices, it means Defender for Business provisioning has completed. 
+
+3. Review, and if necessary, edit your [next-generation protection policies](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies).
+
+4. Review, and if necessary, edit your [firewall policies and custom rules](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules).
+
+5. Review, and if necessary, edit your [web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering) policy.
+
+6. To onboard mobile devices, see the "Use the Microsoft Defender app" procedures in [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+
 ## See also
 
-[View and edit security policies and settings in Microsoft Defender for Business](mdb-configure-security-settings.md)
-
-[What's new in Microsoft 365 Business Premium and Microsoft Defender for Business](../../business-premium/m365bp-mdb-whats-new.md)
+- [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
+- [View and edit security policies and settings in Microsoft Defender for Business](mdb-configure-security-settings.md)
+- [What's new in Microsoft 365 Business Premium and Microsoft Defender for Business](../../business-premium/m365bp-mdb-whats-new.md)
