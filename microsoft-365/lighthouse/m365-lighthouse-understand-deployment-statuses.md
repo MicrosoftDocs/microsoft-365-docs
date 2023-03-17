@@ -32,7 +32,7 @@ Tasks can have the following statuses:
 |Task  Status|Description|
 |---|---|
 |Compliant|<ul><li>All settings included in the subtask are Compliant.</li><li>There are no settings that are Not compliant.</li><li>There are no settings that are Missing from all existing configurations. A task can be Compliant if a setting is Compliant in one or more existing configurations without being Not compliant in another.</li><li>There may be Extra settings detected within existing configurations.</li></ul>|
-|Not compliant|<ul><li>One or more settings included in the subtask are Not compliant.</li><li>One or more settings are Missing from all existing configurations.</li><li>There may be Extra settings detected within existing configurations.</li><p>**Note:** Does not apply to subtasks that are not licensed. </p></ul>|
+|Not compliant|<ul><li>One or more settings included in the subtask are Not compliant.</li><li>One or more settings are Missing from all existing configurations.</li><li>There may be Extra settings detected within existing configurations.</li><p>**NOTE:** Does not apply to subtasks that are not licensed. </p></ul>|
 |Not licensed|The tenant is not licensed for the services required to deploy the configuration associated with the subtask.|
 |Dismissed|The subtask has been Dismissed by a Lighthouse user.<p>**NOTE:** Not licensed subtasks may be dismissed by a Lighthouse user.</p>|
 
