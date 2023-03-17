@@ -419,7 +419,7 @@ To take action on the message, see the next section.
 
 After you select a quarantined message from the list, the following actions are available in the details flyout:
 
-:::image type="content" source="../../media/admin-quarantine-teams-actions-details.png" alt-text="The actions menu for messages in quarantine" lightbox="../../media/admin-quarantine-teams-action-details.png":::
+:::image type="content" source="../../media/admin-quarantine-teams-actions-details.png" alt-text="The actions menu for messages in quarantine" lightbox="../../media/admin-quarantine-teams-actions-details.png":::
 
 - **Release**: Allows the admin to release the message only to the recipients within the organization.
 - **Preview message**: Preview the message in quarantine before taking any action.
@@ -440,7 +440,7 @@ When you select multiple quarantined files in the list by clicking the checkbox 
 - **Submit for review**: Select this option to submit the message to Microsoft for review.
 - **Download messages**: Select this option to save a local copy of the message.
 
-## Use Exchange Online PowerShell or standalone EOP PowerShell to manage quarantined email messages
+## Use Exchange Online PowerShell or standalone EOP PowerShell to manage quarantined messages
 
 The cmdlets that you use to view and manage messages and files in quarantine are described in this section.
 
@@ -450,7 +450,7 @@ The cmdlets that you use to view and manage messages and files in quarantine are
 - [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): Note that this cmdlet is only for messages, not quarantined files from Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
 
-## Use PowerShell to manage quarantined messages in Microsoft Teams
+### Use PowerShell to manage quarantined messages in Microsoft Teams
 
 To manage quarantined messages for the Microsoft Teams chat, the admin will need to use the [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) cmdlet with the following parameters to identify the messages.
 
