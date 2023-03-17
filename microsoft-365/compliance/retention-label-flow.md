@@ -77,11 +77,11 @@ When the retention period expires, your configured flow runs.
 
 ## Add resilience to your flow
 
-Although optional, we recommend you add the **Trigger a new instance of the flow if an item can't be located** action before **Relabel an item at the end of retention** and **Deletes an item at the end of retention**.
+Although optional, we recommend you always add the **Trigger a new instance of the flow if an item can't be located** action before **Relabel an item at the end of retention** and **Deletes an item at the end of retention**.
 
-This additional action is for files that have been moved or renamed after the flow has been triggered but your specified compliance actions haven't completed. Without it, a renamed or moved file would result in the flow failing because it can't find the file.
+This additional action is required for files that have been moved or renamed after the flow has been triggered but your specified compliance actions haven't completed. Without it, a renamed or moved file would result in the flow failing because it can't find the file.
 
-Because you won't know when files are renamed or moved, adding this action before **Relabel an item at the end of retention** and **Deletes an item at the end of retention** improves the reliability of the compliance actions succeeding because the current path and name of the file is retrieved just before the selected actions run.
+Although renaming and moving files are an unusual occurrence, adding this recommended action improves the reliability of the compliance actions succeeding because the current path and name of the file is retrieved just before the selected actions run.
 
 ## Limitations for this scenario
 

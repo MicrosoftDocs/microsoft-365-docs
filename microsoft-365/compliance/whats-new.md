@@ -41,6 +41,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## March 2023
 
+### Data lifecycle management and records management
+
+- **Improvements that support Power Automate flows**: To support the scenario of [customizing what happens at the end of the retention period](retention-label-flow.md), the existing Power Automate compliance actions have been renamed to more accurately describe their purpose. **Apply label on the item** is renamed **Relabel an item at the end of retention**, and **Deletes the item** is renamed **Deletes an item at the end of retention**. Additionally:
+    - New compliance action to [improve the resilience of your flow](retention-label-flow.md#add-resilience-to-your-flow)
+    - New compliance action of **Apply a retention label on the item** to apply a retention label independently from this scenario, as if manually applying a label. The retention label's applied immediately.
+
 ### Insider risk management
 
 - **Forensic Evidence GA**: With the GA release of Forensic Evidence, you can now:
