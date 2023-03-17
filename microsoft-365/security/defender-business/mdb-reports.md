@@ -23,7 +23,13 @@ ms.collection:
 
 Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article describes these reports, how you can use them, and how to find them.
 
-## Simplified insights
+## Simplified insights (NEW!)
+
+Microsoft Defender for Business now includes simplified insights, which helps you better understand how secure you are across identity, devices, information, and apps. The report shows:
+
+- Threats that were detected and prevented by Defender for Business, so you can see how the service is working for you.
+- Your current status from [Microsoft Secure Score](../defender/microsoft-secure-score.md), which gives you an indication of your organization's security posture. 
+- Recommended actions you can take to improve your score and your security posture.
 
 ## Reports in Defender for Business
 
