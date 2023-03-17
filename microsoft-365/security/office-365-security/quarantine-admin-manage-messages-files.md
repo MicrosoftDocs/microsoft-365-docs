@@ -407,7 +407,8 @@ When you select a quarantined message from the list, the following information i
 
 :::image type="content" source="../../media/admin-quarantine-teams-details-flyout.png" alt-text="The teams message details flyout in quarantine" lightbox="../../media/admin-quarantine-teams-details-flyout.png":::
 
-- **Message details**: Includes the primary threat reason, date and time of the message sent, and the quarantine status. Also includes the Teams message ID and the submission status.
+- **Quarantine details**: Includes quarantine reason, expiry date, quarantine policy type, and other information.
+- **Message details**: Includes the primary threat reason, date and time of the message sent, and the sender address. Also includes the Teams message ID and the detection technology.
 - **Sender**: Includes the sender name, their domain location, and whether the sender is from outside the organization.
 - **Participants**: The names and email IDs of all the people who received the same message.
 - **URLs**: Includes the details of any malicious URls that were detected in the chat message.
@@ -418,12 +419,11 @@ To take action on the message, see the next section.
 
 After you select a quarantined message from the list, the following actions are available in the details flyout:
 
-:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions drop down list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
+:::image type="content" source="../../media/admin-quarantine-teams-actions-details.png" alt-text="The actions menu for messages in quarantine" lightbox="../../media/admin-quarantine-teams-action-details.png":::
 
-- **Release from quarantine**: Allows the admin to release the message only to the recipient in their organization.
+- **Release**: Allows the admin to release the message only to the recipients within the organization.
 - **Preview message**: Preview the message in quarantine before taking any action.
-- **Delete**:  Deletes the message permanently from quarantine for all users in the organization.
-- **Share**: Shares the content of the message, including the URLs, into a plain .txt file to send it in an email. 
+- **Delete from quarantine**:  Deletes the message permanently from quarantine for all users in the organization.
 - **Download message**: Downloads the message as a plain .txt for the admin. 
 - **Submit for review**: Allows the admin to submit the message to Microsoft for review.
 
@@ -431,19 +431,46 @@ If you don't release or remove the file, it will be deleted after the default qu
 
 #### Take action on multiple quarantined messages
 
-[Need info]
+When you select multiple quarantined files in the list by clicking the checkbox next to the messages, the **More** option appears:
 
-:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions drop down list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
+:::image type="content" source="../../media/admin-quarantine-teams-bulk-action.png" alt-text="The Bulk action options for files in quarantine" lightbox="../../media/admin-quarantine-teams-bulk-action.png":::
 
-## Use Exchange Online PowerShell or standalone EOP PowerShell to view and manage quarantined messages and files
+- **Release**: Select this option to release message to the intended recipients within the organization.
+- **Delete messages**: Select this option to delete the message permanently from quarantine.
+- **Submit for review**: Select this option to submit the message to Microsoft for review.
+- **Download messages**: Select this option to save a local copy of the message.
 
-The cmdlets that you use to view and manage messages and files in quarantine are described in the following list:
+## Use Exchange Online PowerShell or standalone EOP PowerShell to manage quarantined email messages
+
+The cmdlets that you use to view and manage messages and files in quarantine are described in this section.
 
 - [Delete-QuarantineMessage](/powershell/module/exchange/delete-quarantinemessage)
 - [Export-QuarantineMessage](/powershell/module/exchange/export-quarantinemessage)
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 - [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): Note that this cmdlet is only for messages, not quarantined files from Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
+
+## Use PowerShell to manage quarantined messages in Microsoft Teams
+
+To manage quarantined messages for the Microsoft Teams chat, the admin will need to use the [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) cmdlet with the following parameters to identify the messages.
+
+The available parameters for the QuarantineScenarios are Email, SPO, and Teams.
+
+Similarly, the parameters for EmailQuarantineTypes are Bulk, HighConfPhish, Malware, Phish, Spam, and TransportRule
+
+The parameter for SPOQuarantineTypes is Malware.
+
+And the parameters for TeamsQuarantineTypes are HighConfPhish and Malware.
+
+Then, the admin can select a quarantined message from the list to view or take action on.
+
+**Example**:
+
+```powershell
+  Get-QuarantineMessage
+   -Identity <c14401cf-aa9a-465b-cfd5-08d0f0ca37c5\4c2ca98e-94ea-db3a-7eb8-3b63657d4db7>
+   [-Email]
+```
 
 ## For more information
 
