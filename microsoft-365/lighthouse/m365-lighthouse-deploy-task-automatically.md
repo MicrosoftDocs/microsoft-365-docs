@@ -51,7 +51,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 5. In the task details pane, select **Deploy**.
 
-6. In the **Review deployment task** page, edit the default configuration as needed.
+6. On the **Review deployment task** page, edit the default configuration as needed.
 
    1. If applicable, select whether to deploy the configuration as **Enable** or **Report Only** mode.
 
