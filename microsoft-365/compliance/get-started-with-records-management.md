@@ -62,6 +62,29 @@ For instructions to add users to the default roles or create your own role group
 
 These permissions are required only to create, configure, and apply retention labels that declare records, and manage disposition. The person configuring these labels doesn't require access to the content.
 
+## Support for administrative units
+
+Now rolling out in preview, records management supports [administrative units that have been configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
+
+- You can assign administrative units to members of role groups that are used with Microsoft Purview Records Management. Edit the Records Management role group or other role groups that support administrative units. From these role groups, select individual members, and then the **Assign admin units** option to select administrative units from Azure Active Directory. These administrators are now restricted to managing just the users in those administrative units.
+
+- You can define the initial scope of retention policies and retention label policies when you create or edit these policies. When you select administrative units, only the users in those administrative units will be eligible for the policy.
+
+> [!IMPORTANT]
+> Don't select administrative units for a policy that you want to apply to SharePoint sites or Exchange public folders. Because administrative units support only users and groups, if you configure policy for retention to use administrative units, you won't be able to select the locations for SharePoint sites or Exchange public folders.
+
+- Both adaptive scopes and static scopes support administrative units.
+
+- Additional impact for restricted administrators
+    - [Policy lookup](retention.md#policy-lookup): Restricted administrators will see policies only from users within their assigned administrative units
+    - [Disposition review and verification](disposition.md): Restricted administrators will be able to add reviewers only from within their assigned administrative units, and see disposition reviews and items disposed only from users within their assigned administrative units
+
+- Currently, retention labels don't support administrative units.
+
+- Currently, inactive mailboxes aren't supported in a policy when you select one or more administrative units. To include inactive mailboxes in the policy, you must be an unrestricted administrator and select **Full directory**.
+
+For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview).
+
 ## Common scenarios
 
 Use the following table to help you map your business requirements to the scenarios that are supported by records management.

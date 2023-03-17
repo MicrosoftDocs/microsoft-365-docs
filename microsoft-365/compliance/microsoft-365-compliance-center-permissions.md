@@ -77,7 +77,9 @@ The following Microsoft Purview compliance solutions support administrative unit
 
 |**Solution**|**Description of support**|
 |:-----------|:-------------------------|
+| [Data lifecycle management](data-lifecycle-management.md) | Role groups, retention policies, retention label policies, and policy lookup |
 | [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) |
+| [Records management](records-management.md) | Role groups, retention policies, retention label policies, policy lookup, disposition review and verification |
 | [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | Role groups and [labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
 
 For these solutions, the following features also support administrative units:
@@ -96,6 +98,7 @@ Administrative units are also supported for some built-in role groups. You can a
 - Information Protection Investigators
 - Information Protection Readers
 - Organization Management
+- Records Management
 - Security Administrator
 - Security Operator
 - Security Reader
@@ -151,7 +154,9 @@ Further into the policy configuration, administrators who selected administrativ
 
 For information about administrative units that is specific to each supported solution, see the following sections:
 
+- For data lifecycle management: [Support for administrative units](get-started-with-data-lifecycle-management.md#support-for-administrative-units)
 - For DLP: [Administrative Unit restricted policies](dlp-policy-reference.md#administrative-unit-restricted-policies-preview)
+- For records management:[Support for administrative units](get-started-with-records-management.md#support-for-administrative-units)
 - For sensitivity labeling: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units)
 
 ## Add users or groups to a Microsoft Purview built-in role group
