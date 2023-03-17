@@ -622,7 +622,7 @@
         href: find-defender-malware-name.md
 
       - name: Microsoft Defender Antivirus security intelligence and product updates
-        href: manage-updates-baselines-microsoft-defender-antivirus.md
+        href: microsoft-defender-antivirus-updates.md
         items:
         - name: Previous versions for technical upgrade support only
           href: msda-updates-previous-versions-technical-upgrade-support.md

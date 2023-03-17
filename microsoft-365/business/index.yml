@@ -200,7 +200,7 @@ conceptualContent:
         - url: ../business-premium/m365bp-mdb-whats-new.md
           itemType: overview
           text: See what's new in Microsoft 365 Business Premium and Defender for Business
-        - url: ../admin/security-and-compliance/secure-your-business-data.md
+        - url: ../business-premium/secure-your-business-data.md
           itemType: how-to-guide
           text: See top 10 ways to secure my business
         - url: ../business-premium/m365bp-trial-playbook-microsoft-business-premium.md
