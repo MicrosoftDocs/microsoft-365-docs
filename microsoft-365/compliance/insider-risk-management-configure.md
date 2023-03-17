@@ -255,7 +255,7 @@ Before configuring a policy, define the following insider risk settings:
     - [Alert volume](insider-risk-management-settings.md#alert-volume)
     - [Microsoft Defender for Endpoint alert statuses](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses)
     - [Domains](insider-risk-management-settings.md#domains)
-    - [Sensitive info type exclusion](insider-risk-management-settings.md#sensitive-info-types-exclusion-preview)
+    - [Sensitive info type exclusion](insider-risk-management-settings.md#sensitive-info-type-exclusion-preview)
     - [Trainable classifiers exclusion](insider-risk-management-settings.md#trainable-classifier-exclusion-preview)
     - [File path exclusions](insider-risk-management-settings.md#file-path-exclusions)
     - [Site exclusions](insider-risk-management-settings.md#site-exclusions)
@@ -320,7 +320,7 @@ Insider risk management policies include assigned users and define which types o
 17. Select **Next** to continue.
 18. If you've selected **Use custom thresholds for the triggering events**, for each triggering event indicator that you selected in Step 13, choose the appropriate level to generate the desired level of activity alerts. You can use the recommended thresholds, custom thresholds, or thresholds based on anomalous activities (for certain indicators) above the daily norm for users.
 19. Select **Next** to continue.
-20. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
+20. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#policy-indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
 
     > [!IMPORTANT]
     > If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies. You can use the **Turn on indicators** button in the wizard or select indicators on the **Insider risk management** > **Settings** > **Policy indicators** page.

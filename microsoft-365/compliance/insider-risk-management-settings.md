@@ -30,7 +30,7 @@ ms.custom: admindeeplinkCOMPLIANCE
 Insider risk management settings apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management pages. These settings control policy components for the following areas:
 
 - [Privacy](#privacy)
-- [Indicators](#indicators)
+- [Indicators](#policy-indicators)
 - [Policy timeframes](#policy-timeframes)
 - [Intelligent detections](#intelligent-detections)
 - [Export alerts](#export-alerts)
