@@ -32,7 +32,7 @@ Twelve alphanumeric characters
 
 ## Pattern
 
-Twelve alphanumberic characters:
+Twelve alphanumeric characters:
 
 - Eight digits
 - An optional space or dash "-"
