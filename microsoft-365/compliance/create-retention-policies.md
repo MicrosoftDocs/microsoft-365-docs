@@ -49,7 +49,7 @@ Although a retention policy can support multiple services that are identified as
 - **Exchange mailboxes**
 - **SharePoint sites** or **SharePoint classic and communication sites**
 - **OneDrive accounts**
-- **Microsoft 365 Group mailboxes and sites**
+- **Microsoft 365 Group mailboxes & sites**
 - **Skype for Business**
 - **Exchange public folders**
 - **Teams channel messages**
