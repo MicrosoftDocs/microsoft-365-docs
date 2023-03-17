@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: kkameth
-ms.date: 03/15/2023
+ms.date: 03/17/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -26,13 +26,13 @@ For example, you have an image file in your document library. With the OCR servi
 
 ## Prerequisites
 
-### Permissions
-
-You must have Global admin or SharePoint admin permissions to be able to access the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and set up the OCR service in Syntex.
-
 ### Licensing
 
 Before you can use the OCR service in Syntex, you must first enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). OCR in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). 
+
+### Permissions
+
+You must have Global admin or SharePoint admin permissions to be able to access the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and set up the OCR service in Syntex.
 
 ## Set up OCR
 
@@ -46,11 +46,11 @@ Before you can use the OCR service in Syntex, you must first enter your Azure su
 
 [Setup and manage will be mostly likely moved to a separate admin article, in which case it will just be linked to from here.]
 
-### Compliance center
+### Compliance portal
 
-The compliance admin can also specify which SharePoint sites to enable OCR to make that text available for DLP policies. If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance center configuration of OCR, see [link to article when available].
+The compliance admin can also specify which SharePoint sites to enable OCR to make that text available for DLP policies. If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance portal configuration of OCR, see [link to article when available].
 
-In the compliance center, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SPO and ODB image only PDF and TIFF, EXO all PDF and TIFF, and endpoint image only PDF and TIFF and images.  If the compliance admin has configured OCR, you'll be able to see a message in the Syntex set up area indicating that something has been configured in compliance. 
+In the compliance portal, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SPO and ODB image-only PDF and TIFF, EXO all PDF and TIFF, and endpoint image-only PDF and TIFF and images. If the compliance admin has configured OCR, you'll be able to see a message in the Syntex set up area indicating that something has been configured in compliance. 
 
 ## Requirements and limitations
 
@@ -79,7 +79,7 @@ OCR for handwritten text includes support for the following languages: TBD
 
 - Only images uploaded after OCR has been enabled are scanned.
 
-- Images that are embedded in Office documents are not currently supported.
+- Images that are embedded in Office documents aren't currently supported.
 
 
 
