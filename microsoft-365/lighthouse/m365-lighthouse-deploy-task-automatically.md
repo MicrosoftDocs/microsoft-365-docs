@@ -66,7 +66,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 7. Select **Next**.
 
-8. In the **Review tenant configuration** page, review intersecting configurations. Intersecting configurations are common properties with settings that are also included in the deployment task.
+8. On the **Review tenant configuration** page, review intersecting configurations. Intersecting configurations are common properties with settings that are also included in the deployment task.
 
    The **Review tenant configurations** page is provided for eligible tasks and lists any intersecting configurations detected within the tenant. From this page, you may edit the existing configurations or deploy a new configuration through Lighthouse to fulfill the task's requirements.
 
@@ -94,9 +94,9 @@ Additionally, each partner tenant user must meet the following requirements:
 
 10. Select **Next**.
 
-11. From the **Confirm configuration** page, confirm the configuration and select **Confirm**.
+11. On the **Confirm configuration** page, confirm the configuration and select **Confirm**.
 
-12. From the **Complete** confirmation page, select **Close**.
+12. On the **Complete** confirmation page, select **Close**.
 
 Deploying a new configuration through Lighthouse will ensure that the security configuration is enforced but doesn't modify any existing configurations. This may result in settings with duplicate or conflicting values for users, which may prevent the status of the task from being updated to **Compliant**. To make the task compliant, you'll need to edit or delete the settings that aren't compliant with the deployment task.
 
