@@ -196,7 +196,7 @@ Additionally, SharePoint items that are in draft or that have never been publish
 > [!IMPORTANT]
 > For emails that you auto-apply by identifying sensitive information, all mailboxes are automatically included, which includes mailboxes from Microsoft 365 groups. By default, the **Exchange mailboxes** location isn't selected for adaptive scopes when you have this configuration. Even if you can select the location, retention labels won't apply to the Exchange items.
 >
-> Although group mailboxes would usually be included by selecting the **Microsoft 365 Group mailboxes and sites** location, for this specific policy configuration, the groups location includes only SharePoint sites connected to a Microsoft 365 group.
+> Although group mailboxes would usually be included by selecting the **Microsoft 365 Group mailboxes & sites** location, for this specific policy configuration, the groups location includes only SharePoint sites connected to a Microsoft 365 group.
 
 When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a Microsoft Purview Data Loss Prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. In the following example, the sensitive info types are from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
 
