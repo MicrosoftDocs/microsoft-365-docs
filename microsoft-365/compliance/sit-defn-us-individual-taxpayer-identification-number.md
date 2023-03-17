@@ -45,7 +45,7 @@ unformatted:
 
 - the digit "9"
 - two digits
-- two digits "50" to "65", "70" to "88", “90” to “92” and “94” to “99” for the fourth and fifth digit
+- two digits "50" to "65", "70" to "88", “90” to “92”, and “94” to “99” for the fourth and fifth digits
 - four digits
 
 ## Checksum
