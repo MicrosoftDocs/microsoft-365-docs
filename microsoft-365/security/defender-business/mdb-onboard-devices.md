@@ -35,7 +35,7 @@ Onboard your business devices to protect them right away. You can choose from se
 2. View your onboarding options, and follow the guidance on the selected tab.
 3. [View a list of onboarded devices](#view-a-list-of-onboarded-devices).
 4. [Run a phishing test on a device](#run-a-phishing-test-on-a-device). 
-5. Proceed to your next steps.
+5. Proceed to your [next steps](#next-steps).
 
 ## [**Windows 10 and 11**](#tab/Windows10and11)
 
