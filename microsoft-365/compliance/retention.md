@@ -112,7 +112,7 @@ Retention policies can be applied to the following locations:
 - Exchange mailboxes
 - SharePoint classic and communication sites
 - OneDrive accounts
-- Microsoft 365 Group mailboxes and sites
+- Microsoft 365 Group mailboxes & sites
 - Skype for Business
 - Exchange public folders
 - Teams channel messages (standard channels and [shared channels](/MicrosoftTeams/shared-channels))

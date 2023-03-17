@@ -23,6 +23,8 @@ description: "Sign up for Microsoft 365 Apps for business."
 
 # Sign up for a Microsoft 365 Apps for business subscription
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Want to sign up for a Microsoft 365 Apps for business subscription?
 
 There are a couple of ways to get started:
