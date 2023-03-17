@@ -32,6 +32,8 @@ description: "Make choices to safeguard sensitive organizational data against ph
 ---
 # Increase threat protection for Microsoft 365 for business
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 **Applies to**
 
 - Microsoft 365 Business Basic
