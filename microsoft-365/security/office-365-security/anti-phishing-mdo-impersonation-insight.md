@@ -55,7 +55,7 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
     - **Global Reader**
   - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Security Reader**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-- You enable and configure impersonation protection in anti-phishing policies in Microsoft Defender for Office 365. Impersonation protection is not enabled by default. For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md).
+- You enable and configure impersonation protection in anti-phishing policies in Microsoft Defender for Office 365. Impersonation protection isn't enabled by default. For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 ## Open the impersonation insight in the Microsoft 365 Defender portal
 
@@ -68,7 +68,7 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
    The insight has two modes:
 
     - **Insight mode**: If impersonation protection is enabled and configured in any anti-phishing policies, the insight shows the number of detected messages from impersonated domains and impersonated users (senders) over the past seven days. This is the total of all detected impersonated senders from all anti-phishing policies.
-    - **What if mode**: If impersonation protection is not enabled and configured in any active anti-phishing policies, the insight shows you how many messages *would* have been detected by our impersonation protection capabilities over the past seven days.
+    - **What if mode**: If impersonation protection isn't enabled and configured in any active anti-phishing policies, the insight shows you how many messages *would* have been detected by our impersonation protection capabilities over the past seven days.
 
 To view information about the impersonation detections, click **View impersonations** in the impersonation insight.
 
@@ -127,7 +127,7 @@ To filter the results, you can use the **Filter sender** box to enter a comma-se
 
 On the **Users** tab on the **Impersonation insight** page, select one of the available impersonation detections. The details flyout that appears contains the following information and features:
 
-- **Selection impersonation policy to modify**: Select the affected anti-phishing policy that you want to modify. Only polices where the impersonated sender is defined in the policy are available. Refer to the previous page to see which policy was actually responsible for detecting the impersonated sender (likely based on the recipient and the priority of the policy).
+- **Selection impersonation policy to modify**: Select the affected anti-phishing policy that you want to modify. Only policies where the impersonated sender is defined in the policy are available. Refer to the previous page to see which policy was actually responsible for detecting the impersonated sender (likely based on the recipient and the priority of the policy).
 - **Add to the allowed to impersonation list**: Use this toggle to add or remove the sender from the **Trusted senders and domains** (impersonation exceptions) for the anti-phishing policy that you selected:
   - If the **Allowed to impersonate** value for this entry was **No**, the toggle is off. To exempt the sender from evaluation by impersonation protection, slide the toggle to on: ![Toggle on.](../../media/scc-toggle-on.png). The sender is added to the **Trusted users** list in the impersonation protection settings of the anti-phishing policy.
   - If the **Allowed to impersonate** value for this entry was **Yes**, the toggle is on. To return the sender to evaluation by impersonation protection, slide the toggle to off: ![Toggle off.](../../media/scc-toggle-off.png). The sender is removed from the **Trusted users** list in the impersonation protection settings of the anti-phishing policy.

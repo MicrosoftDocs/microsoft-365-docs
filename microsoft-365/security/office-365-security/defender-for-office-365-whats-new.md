@@ -44,8 +44,8 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## January 2023
 
-- [Automatic Tenant Allow/Block List expiration management is now available in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447): Microsoft will now automatically remove entries from the allow list once the system has learned from it. Alternatively, Microsoft will extend the expiration time of the allows if the system has not learned yet. This will prevent your legitimate emails from going to junk or quarantine.
-- **Configuring third-party phishing simulations in Advanced Delivery:** We have expanded "Simulation URLs to allow" limit to 30 URLs. To learn how to configure, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md)
+- [Automatic Tenant Allow/Block List expiration management is now available in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447): Microsoft will now automatically remove entries from the allow list once the system has learned from it. Alternatively, Microsoft extends the expiration time of the allows if the system hasn't learned yet. This prevents your legitimate emails from going to junk or quarantine.
+- **Configuring third-party phishing simulations in Advanced Delivery:** We've expanded "Simulation URLs to allow" limit to 30 URLs. To learn how to configure, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md)
 
 ## December 2022
 
@@ -64,7 +64,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## September 2022
 
 - **Anti-spoofing enhancement for internal domains and senders:**
-  - For spoofing protection, the allowed senders or domains defined in the [anti-spam policy](anti-spam-policies-configure.md) and within user allow lists must now pass authentication in order for the allowed messages to be honored. The change only impacts messages that are considered to be internal (the sender or sender's domain is in an accepted domain in the organization). All other messages will continue to be handled as they are today.
+  - For spoofing protection, the allowed senders or domains defined in the [anti-spam policy](anti-spam-policies-configure.md) and within user allow lists must now pass authentication in order for the allowed messages to be honored. The change only impacts messages that are considered to be internal (the sender or sender's domain is in an accepted domain in the organization). All other messages will continue to be handled as they're today.
 
 **Automatic redirection from Office 365 Security & Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security & Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports.
 

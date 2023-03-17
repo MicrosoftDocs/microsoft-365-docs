@@ -45,7 +45,7 @@ A URL reputation service might identify one or more of the URLs that are used by
 
 :::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="The Deceptive site ahead warning in Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
-Note that this issue does not affect Microsoft Edge.
+Note that this issue doesn't affect Microsoft Edge.
 
 As part of the planning phase, be sure to check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign. If the URLs are blocked by Google Safe Browsing, [follow this guidance](https://support.google.com/chrome/a/answer/7532419) from Google to allow access to the URLs.
 
@@ -80,12 +80,12 @@ Only valid, non-guest users with a valid mailbox will be included in simulations
 
 ### Attack simulation training reports do not contain any activity details
 
-Attack simulation training comes with rich, actionable insights that keep you informed of the threat readiness progress of your employees. If Attack simulation training reports are not populated with data, verify that audit log search is turned on in your organization (it's on by default).
+Attack simulation training comes with rich, actionable insights that keep you informed of the threat readiness progress of your employees. If Attack simulation training reports aren't populated with data, verify that audit log search is turned on in your organization (it's on by default).
 
 Audit log search is required by Attack simulation training so events can be captured, recorded, and read back. Turning off audit log search has the following consequences for Attack simulation training:
 
-- Reporting data is not available across all reports. The reports will appear empty.
-- Training assignments are blocked, because data is not available.
+- Reporting data isn't available across all reports. The reports will appear empty.
+- Training assignments are blocked, because data isn't available.
 
 To turn on audit log search, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
@@ -94,15 +94,15 @@ To turn on audit log search, see [Turn audit log search on or off](../../complia
 
 ### Simulation reports are not updated immediately
 
-Detailed simulation reports are not updated immediately after you launch a campaign. Don't worry; this behavior is expected.
+Detailed simulation reports aren't updated immediately after you launch a campaign. Don't worry; this behavior is expected.
 
 Every simulation campaign has a lifecycle. When first created, the simulation is in the **Scheduled** state. When the simulation starts, it transitions to the **In progress** state. When completed, the simulation transitions to the **Completed** state.
 
-While a simulation is in the **Scheduled** state, the simulation reports will be mostly empty. During this stage, the simulation engine is resolving the target user email addresses, expanding distribution groups, removing guest users from the list, etc.:
+While a simulation is in the **Scheduled** state, the simulation reports are mostly empty. During this stage, the simulation engine is resolving the target user email addresses, expanding distribution groups, removing guest users from the list, etc.:
 
 :::image type="content" source="../../media/attack-sim-training-faq-scheduled-state.png" alt-text="Simulation details showing the simulation in the Scheduled state" lightbox="../../media/attack-sim-training-faq-scheduled-state.png":::
 
-Once the simulation enters the **In progress** stage, you will notice information starting to trickle into the reporting:
+Once the simulation enters the **In progress** stage, you'll notice information starting to trickle into the reporting:
 
 :::image type="content" source="../../media/attack-sim-training-faq-in-progress-state.png" alt-text="Simulation details showing the simulation in the In progress state" lightbox="../../media/attack-sim-training-faq-in-progress-state.png":::
 
@@ -158,11 +158,11 @@ A: The limit for importing recipients from a CSV file or adding individual recip
 
 A recipient can be an individual user or a group. A group might contain hundreds or thousands of recipients, so an actual limit isn't placed on the number of individual users.
 
-Managing a large CSV file or adding many individual recipients can be cumbersome. Using Azure AD groups will simplify the overall management of the simulation.
+Managing a large CSV file or adding many individual recipients can be cumbersome. Using Azure AD groups simplify the overall management of the simulation.
 
 ### Q: Does Microsoft provide payloads in other languages?
 
-A: Currently, there are 40+ localized payloads available in 10+ languages: Chinese (Simplified), Chinese (Traditional), English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish and Dutch. We've noticed that any direct or machine translations of existing payloads to other languages will lead to inaccuracies and decreased relevance.
+A: Currently, there are 40+ localized payloads available in 10+ languages: Chinese (Simplified), Chinese (Traditional), English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish and Dutch. We've noticed that any direct or machine translations of existing payloads to other languages lead to inaccuracies and decreased relevance.
 
 That being said, you can create your own payload in the language of your choice using the custom payload authoring experience. We also strongly recommend that you harvest existing payloads that were used to target users in a specific geography. In other words, let the attackers localize the content for you.
 
@@ -174,13 +174,13 @@ Note that the configuration change might take up to 30 minutes to synchronize ac
 
 ### Q: Can I trigger a test simulation to understand what it looks like prior to launching a full-fledged campaign?
 
-A: Yes you can! On the very last **Review Simulation** page in the wizard to create a new simulation, there's an option to **Send a test**. This option will send a sample phishing simulation message to the currently logged in user. After you validate the phishing message in your Inbox, you can submit the simulation.
+A: Yes you can! On the very last **Review Simulation** page in the wizard to create a new simulation, there's an option to **Send a test**. This option sends a sample phishing simulation message to the currently logged in user. After you validate the phishing message in your Inbox, you can submit the simulation.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="The Send a test button on the Review simulation page" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
 
 ### Q: Can I target users that belong to a different tenant as part of the same simulation campaign?
 
-A: No. Currently, cross-tenant simulations are not supported. Verify that all of your targeted users are in the same tenant. Any cross-tenant users or guest users will be excluded from the simulation campaign.
+A: No. Currently, cross-tenant simulations aren't supported. Verify that all of your targeted users are in the same tenant. Any cross-tenant users or guest users are excluded from the simulation campaign.
 
 ### Q: How does region aware delivery work?
 
@@ -190,10 +190,10 @@ A: Region aware delivery uses the TimeZone attribute of the targeted user's mail
 - UserA is in the Eastern time zone (UTC-5).
 - UserB is also in the Pacific time zone.
 
-At 9:00 AM on the same day, the simulation message is sent to UserB. With region-aware delivery, the message is not sent to UserA on the same day, because 9:00 AM Pacific time is 12:00 PM Eastern time. Instead, the message is sent to UserA at 9:00 AM Eastern time on the following day.
+At 9:00 AM on the same day, the simulation message is sent to UserB. With region-aware delivery, the message isn't sent to UserA on the same day, because 9:00 AM Pacific time is 12:00 PM Eastern time. Instead, the message is sent to UserA at 9:00 AM Eastern time on the following day.
 
-So, on the initial run of a campaign with region aware delivery enabled, it might appear that the simulation message was sent only to users in a specific time zone. But, as time passes and more users come into scope, the targeted users will increase.
+So, on the initial run of a campaign with region aware delivery enabled, it might appear that the simulation message was sent only to users in a specific time zone. But, as time passes and more users come into scope, the targeted users increase.
 
 ### Q: Does Microsoft collect or store any information that users enter at the Credential Harvest sign-in page, used in the Credential Harvest simulation technique?
 
-A: No. Any information entered at the credential harvest login page is discarded silently. Only the 'click' is recorded to capture the compromise event. Microsoft does not collect, log or store any details that users enter at this step.
+A: No. Any information entered at the credential harvest login page is discarded silently. Only the 'click' is recorded to capture the compromise event. Microsoft doesn't collect, log or store any details that users enter at this step.
