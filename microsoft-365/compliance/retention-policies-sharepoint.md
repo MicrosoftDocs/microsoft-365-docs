@@ -62,7 +62,7 @@ For retention policies and auto-apply label policies: SharePoint sites must be i
 
 ## How retention works for SharePoint and OneDrive
 
-To store content that needs to be retained, SharePoint and OneDrive create a Preservation Hold library if one doesn't exist for the site. The Preservation Hold library isn't designed to be used interactively but instead, automatically stores files when this is needed for compliance reasons. It's not supported to edit, delete, or move these files yourself.
+To store content that needs to be retained, SharePoint and OneDrive create a Preservation Hold library if one doesn't exist for the site. The Preservation Hold library isn't designed to be used interactively but instead, automatically stores files when this is needed for compliance reasons. It's not supported to edit, delete, or move these automatically retained files yourself.
 
 The Preservation Hold library works in the following way:
 
