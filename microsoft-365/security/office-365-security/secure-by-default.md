@@ -1,6 +1,6 @@
 ---
 title: Secure by default in Office 365
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
@@ -9,10 +9,10 @@ ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
-ms.collection: 
+ms.collection:
   - m365-security
   - tier2
 description: Learn more about the secure by default setting in Exchange Online Protection (EOP)
@@ -51,7 +51,7 @@ Because Microsoft wants to keep our customers secure by default, some tenants ov
 - IP Allow List (connection filtering)
 - Exchange mail flow rules (also known as transport rules)
 
-If you want to temporarily allow certain messages that are still being blocked by Microsoft, do so using [admin submissions](submissions-admin.md#report-good-email-to-microsoft). 
+If you want to temporarily allow certain messages that are still being blocked by Microsoft, do so using [admin submissions](submissions-admin.md#report-good-email-to-microsoft).
 
 More information on these overrides can be found in [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 

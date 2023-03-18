@@ -129,7 +129,7 @@ GET https://api.security.microsoft.com/api/machines/HardwareFirmwareInventoryPro
     
 ```
 
-## 2. Export certificate assessment (via files)
+## 2. Export hardware and firmware assessment (via files)
 
 ### 2.1 API method description
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 12/20/2021
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -37,8 +37,6 @@ Microsoft Purview Information Protection (formerly Microsoft Information Protect
 Use Microsoft Purview Information Protection to help you discover, classify, protect, and govern sensitive information wherever it lives or travels.
 
 ![Microsoft Purview Information Protection solution overview](../media/mip-solution-overview-extended.png)
-
-Watch the following Ignite session to see how these capabilities support and build on each other: [Know your data, protect your data, and prevent data loss with Microsoft Information Protection](https://myignite.microsoft.com/archives/IG20-OD273).
 
 For data governance, see [Deploy a data governance solution with Microsoft Purview](data-governance-solution.md).
 

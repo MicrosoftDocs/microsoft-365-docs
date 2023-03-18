@@ -93,9 +93,9 @@ Defender for Office 365 enables users to report messages to their security teams
 
 - Deploy the [Report Message add-in or the Report Phishing add-in](submissions-users-report-message-add-in-configure.md).
 - Establish a workflow to [Report false positives and false negatives](submissions-outlook-report-messages.md).
-- Use the [Submissions portal](submissions-admin.md).
+- Use the [Submissions page](submissions-admin.md).
 
-Watch this video to learn more: [Learn how to use the Submissions portal to submit messages for analysis - YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
+Watch this video to learn more: [Learn how to use the Submissions page to submit messages for analysis - YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
 
 #### Review reports to understand the threat landscape in blocking mode
 
@@ -199,9 +199,9 @@ Defender for Office 365 enables users to report messages to their security teams
 
 - Deploy the [Report Message add-in or the Report Phishing add-in](submissions-users-report-message-add-in-configure.md).
 - Establish a workflow to [Report false positives and false negatives](submissions-outlook-report-messages.md).
-- Use the [Submissions portal](submissions-admin.md).
+- Use the [Submissions page](submissions-admin.md).
 
-Watch this video to learn more: [Learn how to use the Submissions portal to submit messages for analysis - YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
+Watch this video to learn more: [Learn how to use the Submissions page to submit messages for analysis - YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
 
 #### Review reports to understand the threat landscape in auditing mode
 

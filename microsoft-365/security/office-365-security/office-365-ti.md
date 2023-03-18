@@ -75,7 +75,6 @@ Use the Incidents list (this is also called Investigations) to see a list of in 
 
 To view the list of current incidents for your organization in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Incidents & alerts** \> **Incidents**. Or, to go directly to the **Incidents** page, use <https://security.microsoft.com/incidents>.
 
-
 ### Attack simulation training
 
 Use Attack simulation training to set up and run realistic cyberattacks in your organization, and identify vulnerable people before a real cyberattack affects your business. To learn more, see [Simulate a phishing attack](attack-simulation-training-simulations.md).

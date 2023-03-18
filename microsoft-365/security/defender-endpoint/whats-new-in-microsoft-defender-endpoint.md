@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 01/10/2023
+ms.date: 02/28/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -61,6 +61,11 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
+## February 2023
+ 
+- The Microsoft Defender for Identity integration toggle is now removed from the MDE Settings > Advanced features page. Because Defender for Identity is now integrated with Microsoft 365 Defender, this toggle is no longer required. You don't need to manually configure integration between services. See [What's new - Microsoft Defender for Identity](/defender-for-identity/whats-new#defender-for-identity-release-2194).
+
+
 ## January 2023
 
 - [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) can now protect exclusions when deployed with Microsoft Intune. See [What about exclusions](prevent-changes-to-security-settings-with-tamper-protection.md#what-about-exclusions)?
@@ -74,7 +79,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - Microsoft Defender for Endpoint Device control removable storage access control updates:
     1. Microsoft Intune support for removable storage access control is now available. See [Deploy Removable Storage Access Control by using Intune user interface](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-user-interface)
     2. The new default enforcement policy of removable storage access control is designed for all device control features. Printer Protection is now available for this policy. If you create a Default Deny policy, printers will be blocked in your organization.
-        - Intune:*./Vendor/MSFT/Defender/Configuration/DefaultEnforcement* <br> See [Deploy and manage Removable Storage Access Control using Intune](deploy-manage-removable-storage-intune.md)
+        - Intune: *./Vendor/MSFT/Defender/Configuration/DefaultEnforcement* <br> See [Deploy and manage Removable Storage Access Control using Intune](deploy-manage-removable-storage-intune.md)
         - Group policy: *Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus > Features > Device Control > Select Device Control Default Enforcement*<br> See [Deploy and manage Removable Storage Access Control using group policy](deploy-manage-removable-storage-group-policy.md)
 
 - Microsoft Defender for Endpoint Device control New Printer Protection solution to manage printer is now available. For more information, see
@@ -95,7 +100,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
    - [KB5016690](https://support.microsoft.com/topic/august-23-2022-kb5016690-os-build-17763-3346-preview-b81d1ac5-75c7-42c1-b638-f13aa4242f42)
 
    > [!NOTE]
-   > This integration doesn’t currently support the use of custom scripts to gain visibility into extra signals.
+   > This integration doesn't currently support the use of custom scripts to gain visibility into extra signals.
 
 
 ## October 2022

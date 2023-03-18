@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/07/2023
+ms.date: 02/24/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -57,7 +57,7 @@ If you don't have an existing Office 365 Enterprise E5 plan and want to try comm
 > [!NOTE]
 > Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
-## Recommended actions (preview)
+## Recommended actions
 
 Recommended actions can help your organization quickly get started with communication compliance. Included on the **Overview** page, recommended actions will help guide you through the steps to configure and deploy policies.
 
@@ -296,6 +296,9 @@ For more information about configuring Yammer in Native Mode, see:
 
 7. The **Your policy was created** page is displayed with guidelines on when policy will be activated and which communications will be captured.
 
+> [!TIP]
+> After configuring your policy, [learn about best practices for managing the volume of alerts](communication-compliance-alerts-best-practices.md). 
+
 ## Step 6 (optional): Update compliance boundaries for communication compliance policies
 
 [Compliance boundaries](/microsoft-365/compliance/set-up-compliance-boundaries) create logical boundaries within an organization that control the user content locations (such as mailboxes, OneDrive accounts, and SharePoint sites) that eDiscovery managers can search.
@@ -343,7 +346,7 @@ You can also choose to enable anonymization for displayed usernames when investi
 
 ## Step 8 (optional): Test your communication compliance policy
 
-After you create a communication compliance policy, it's a good idea to test it to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your Microsoft Purview Data Loss Prevention (DLP) policies (preview)](dlp-test-dlp-policies.md) if your communication compliance policies include sensitive information types. Make sure you give your policies time to activate so that the communications you want to test are captured.
+After you create a communication compliance policy, it's a good idea to test it to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your Microsoft Purview Data Loss Prevention (DLP) policies](dlp-test-dlp-policies.md) if your communication compliance policies include sensitive information types. Make sure you give your policies time to activate so that the communications you want to test are captured.
 
 Follow these steps to test your communication compliance policy:
 

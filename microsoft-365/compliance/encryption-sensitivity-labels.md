@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/17/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -89,11 +89,11 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
 
 ## How to configure a label for encryption
 
-1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Items** is selected for the label's scope: 
+1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Items** is selected for the [label's scope](sensitivity-labels.md#label-scopes): 
     
-    ![Sensitivity label scope options for files and emails.](../media/filesandemails-scope-options-sensitivity-label.png)
+    :::image type="content" source="../media/filesandemails-scope-options-sensitivity-label.png" alt-text="Sensitivity label scope option Items for encryption.":::
 
-2. Then, on the **Choose protection settings for labeled items** page, make sure you select **Encrypt items**. Additionally, select **Include meetings** if the settings should extend to [meeting invites and replies](sensitivity-labels-meetings.md).
+2. Then, on the **Choose protection settings for labeled items** page, make sure you select **Apply or remove encryption**.
     
     :::image type="content" source="../media/protection-options-sensitivity-label.png" alt-text="Sensitivity label protection options for items." Lightbox="../media/protection-options-sensitivity-label.png":::
 
@@ -304,6 +304,9 @@ You can use the following options to let users assign permissions when they manu
     This option is supported by the Azure Information Protection unified labeling client and by some apps that use built-in labeling. For apps that don't support this capability, the label either won't be visible for users, or the label is visible for consistency but it can't be applied with an explanation message to users.
     
     To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the rows for **Let users assign permissions**.
+
+> [!NOTE]
+> You won't be able to use these configurations if the label scope excludes email (for Do Not Forward and Encrypt-Only) or excludes files (for prompting users in Word, PowerPoint, and Excel). For more information, see [Scope labels to just files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails).
 
 When the options are supported, use the following table to identify when users see the sensitivity label:
 

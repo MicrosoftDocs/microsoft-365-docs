@@ -28,7 +28,7 @@ ms.date: 12/05/2022
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-This article describes how to manage file allow and block entries that are available in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+This article describes how to manage file allow and block entries that are available in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
 You manage allow and block entries for files in the Microsoft 365 Defender Portal or in Exchange Online PowerShell.
 
@@ -46,7 +46,7 @@ You manage allow and block entries for files in the Microsoft 365 Defender Porta
 
   An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values are not supported.
 
-- For files, the maximum number of allow entries is 500, and the maximum number of block entries is 500 (1000 file entries total).
+- For files, the maximum number of allow entries is 500, and the maximum number of block entries is 500 (1000 file entries in total).
 
 - You can enter a maximum of 64 characters in a file entry.
 
@@ -67,22 +67,22 @@ You manage allow and block entries for files in the Microsoft 365 Defender Porta
 
 ## Create block entries for files
 
+Email messages that contain these blocked files are blocked as *malware*. Messages containing the blocked files are quarantined.
+
 You have the following options to create block entries for files:
 
-- [The Submissions page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-submissions-portal)
+- [The Submissions page in the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-on-the-submissions-page)
 - The Tenant Allow/Block List in [the Microsoft 365 Defender portal](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-tenant-allowblock-list) or in [PowerShell](#use-powershell-to-create-block-entries-for-files-in-the-tenant-allowblock-list)
 
-### Use the Microsoft 365 Defender portal to create block entries for files in the Submissions portal
+### Use the Microsoft 365 Defender portal to create block entries for files on the Submissions page
 
-When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report files as **Should have been blocked (False negative)**, you can select **Block this file** to add a block entry on the **Files** tab in the Tenant Allow/Block List.
+When you use the Submissions page at <https://security.microsoft.com/reportsubmission> to submit files as **Should have been blocked (False negative)**, you can select **Block this file** to add a block entry on the **Files** tab in the Tenant Allow/Block List.
 
-For instructions, see [Report questionable email attachments to Microsoft](submissions-admin.md#report-questionable-email-attachments-to-microsoft).
+For instructions, see [Submit questionable email attachments to Microsoft](submissions-admin.md#report-questionable-email-attachments-to-microsoft).
 
 ### Use the Microsoft 365 Defender portal to create block entries for files in the Tenant Allow/Block List
 
 You can create block entries for files directly in the Tenant Allow/Block List.
-
-Email messages that contain these blocked files are blocked as *malware*.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -101,7 +101,7 @@ Email messages that contain these blocked files are blocked as *malware*.
      - **Never expire**
      - **Specific date**: The maximum value is 90 days from today.
 
-   - **Optional note**: Enter descriptive text for the entries.
+   - **Optional note**: Enter descriptive text for why you're blocking the files.
 
 5. When you're finished, click **Add**.
 
@@ -121,22 +121,23 @@ New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695e
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-## Use the Microsoft 365 Defender portal to create allow entries for files in the Submissions portal
+## Use the Microsoft 365 Defender portal to create allow entries for files on the Submissions page
 
-You can't create allow entries for files directly in the Tenant Allow/Block List. Instead, you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report the message attachment as a false positive, which also adds an allow entry on the **Files** tab in the Tenant Allow/Block List.
+You can't create allow entries for files directly in the Tenant Allow/Block List. Instead, you use the Submissions page at <https://security.microsoft.com/reportsubmission> to submit the message attachment as a false positive, which also adds an allow entry on the **Files** tab in the Tenant Allow/Block List.
 
-For instructions, see [Report good email attachments to Microsoft](submissions-admin.md#report-good-email-attachments-to-microsoft).
+For instructions, see [Submit good email attachments to Microsoft](submissions-admin.md#report-good-email-attachments-to-microsoft).
 
-By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.
-
-> [!NOTE]
+> [!IMPORTANT]
 > Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
-> Microsoft manages the allow creation process from Submission by creating allows for those entities (domains or email addresses, spoofed senders, URLs, or files) which were determined to be malicious by filters during mail flow. For example, if a file being submitted was determined to be bad by our filtering, an allow entry is created for that file.
+> Microsoft manages the creation of allow entries from the Submissions page. Allow entries are added during mail flow based on the filters that determined the message was malicious. For example, if the sender email address and a file in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the file.
 >
-> When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are overridden.
+> When that entity is encountered again, all filters associated with that entity are overridden.
 >
-> During mail flow, if messages containing the file pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message containing the file in the allow entry will be delivered.
+> By default, allow entries for files exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those files will be delivered, unless something else in the message is detected as malicious.
+>
+> During mail flow, if messages containing the allowed file pass other checks in the filtering stack, the messages will be delivered. For example, if a message passes [email authentication checks](email-authentication-about.md), a message containing an allowed file will be delivered.
+>
 > During time of click, the file allow overrides all filters associated with the file entity, allowing the end user to access the file.
 
 ## Use the Microsoft 365 Defender portal to view existing allow or block entries for files in the Tenant Allow/Block List
@@ -146,7 +147,7 @@ By default, allow entries for domains and email addresses, files, and URLs exist
 2. Select the **Files** tab. The following columns are available:
 
    - **Value**: The file hash.
-   - **Action**: The value **Allow** or **Block**.
+   - **Action**: The values are  **Allow** or **Block**.
    - **Modified by**
    - **Last updated**
    - **Remove on**: The expiration date.
@@ -160,7 +161,7 @@ By default, allow entries for domains and email addresses, files, and URLs exist
 
    Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the results. The following values are available in the **Filter** flyout that appears:
 
-   - **Action**: **Allow** and **Block**.
+   - **Action**: The values are **Allow** and **Block**.
    - **Never expire**: ![Toggle on.](../../media/scc-toggle-on.png) or ![Toggle off.](../../media/scc-toggle-off.png)
    - **Last updated**: Select **From** and **To** dates.
    - **Remove on**: Select **From** and **To** dates.
@@ -200,7 +201,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 You can make the following modifications to entries for files in the Tenant Allow/Block list:
 
 - **Block entries**: The expiration date and notes.
-- **Allow entries**: Notes.
+- **Allow entries**: The expiration date and notes.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -209,13 +210,14 @@ You can make the following modifications to entries for files in the Tenant Allo
 3. On the **Files** tab, select the check box of the entry that you want to modify, and then click the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** button that appears.
 
 4. The following settings are available in the **Edit file** flyout that appears:
-   - **Remove block entry after**: You can extend block entries for a maximum of 90 days after the creation date or set them to **Never expire**.
+   - **Remove block entry after**: You can extend block entries for a maximum of 90 days from the system date or set them to **Never expire**.
+   - **Remove allow entry after**: You can extend allow entries for a maximum of 30 days from the system date.
    - **Optional note**
 
    When you're finished, click **Save**.
 
-> [!NOTE]
-> For allow entries only, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that appears to go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
+> [!TIP]
+> For entries added via submission, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that opens, which takes you to the submission details that added the entry.
 
 ### Use PowerShell to modify existing allow or block entries for files in the Tenant Allow/Block List
 
@@ -246,7 +248,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 
 4. In the warning dialog that appears, click **Delete**.
 
-> [!NOTE]
+> [!TIP]
 > You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Value** column header.
 
 ### Use PowerShell to remove existing allow or block entries for files from the Tenant Allow/Block List
@@ -267,8 +269,8 @@ For detailed syntax and parameter information, see [Remove-TenantAllowBlockListI
 
 ## Related articles
 
-- [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](submissions-admin.md)
+- [Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](submissions-admin.md)
 - [Report false positives and false negatives](submissions-outlook-report-messages.md)
-- [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md)
+- [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md)
 - [Allow or block emails in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md)
 - [Allow or block URLs in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md)
