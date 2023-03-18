@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/18/2020
+ms.date: 03/18/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
