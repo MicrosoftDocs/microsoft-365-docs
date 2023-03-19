@@ -86,6 +86,7 @@ For these solutions, the following features also support administrative units:
 
 - Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) alerts are visible only from users in assigned administrative units
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
+- [Adaptive scopes](purview-adaptive-scopes.md): When adaptive scopes are supported by a solution, restricted administrators can select, create, edit, and view adaptive scopes only from users in assigned administrative units
 
 Administrative units are also supported for some built-in role groups. You can add users and groups to administrative units for the following built-in role groups:
 

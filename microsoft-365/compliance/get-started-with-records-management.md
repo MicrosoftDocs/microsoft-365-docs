@@ -79,7 +79,7 @@ Now rolling out in preview, records management supports [administrative units th
     - [Policy lookup](retention.md#policy-lookup): Restricted administrators will see policies only from users within their assigned administrative units
     - [Disposition review and verification](disposition.md): Restricted administrators will be able to add reviewers only from within their assigned administrative units, and see disposition reviews and items disposed only from users within their assigned administrative units
 
-- Currently, retention labels don't support administrative units.
+- Currently, retention labels and [events](event-driven-retention.md) don't support administrative units.
 
 - Currently, inactive mailboxes aren't supported in a policy when you select one or more administrative units. To include inactive mailboxes in the policy, you must be an unrestricted administrator and select **Full directory**.
 
