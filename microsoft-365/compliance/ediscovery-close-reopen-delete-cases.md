@@ -105,16 +105,16 @@ If the case you're trying to delete still contains eDiscovery holds, you'll rece
 
 ## Upgrade a case to eDiscovery (Premium)
 
-After working with an existing eDiscovery (Standard) case, you may need the additional case functionality provided with eDiscovery (Premium) cases. This may include the need for more robust content searches, collection, and review set functionality.
+After working with an existing eDiscovery (Standard) case, you may need the additional case functionality provided with eDiscovery (Premium) cases. This may include the need for more robust collections and review set functionality.
 
 Before you upgrade a case from eDiscovery (Standard) to eDiscovery (Premium), make sure you review and understand the following:
 
 - After an eDiscovery (Standard) case is upgraded to eDiscovery (Premium), it can't be reversed to an eDiscovery (Standard) case.
-- Only eDiscovery Administrators can upgrade cases to eDiscovery (Premium). You'll need to sign in to the compliance portal with an account with the *eDiscovery Administrators* role.
-- Changes to searched aren't available while the case is upgrading to eDiscovery (Premium). Changes to searches are available in the draft collection once the upgrade is completed.
-- Jobs in the eDiscovery (Standard) case are maintained after the upgrade, but the job names will keep the case job names as when they were in eDiscovery (Standard). For example....
-- Hold policies for the case are migrated, no holds are removed or recreated in the new eDiscovery (Premium) case. This ensures that case data isn't lost or deleted during the upgrade.
-- The search conditions for the eDiscovery (Standard) case are added to a draft collection in the new eDiscovery (Premium) case. You'll run the draft collection in the new eDiscovery (Premium) case to collect the latest content.
+- Only eDiscovery Administrators can upgrade cases to eDiscovery (Premium).
+- Changes to searches aren't available while the case is upgrading to eDiscovery (Premium). Once a case is upgraded, searches are available under the **Collections** section in the eDiscovery (Premium) case.
+- Information for jobs created in the eDiscovery (Standard) case are maintained after the upgrade, however the job names retain the eDiscovery (Standard) case job names.
+- Holds in the Standard case are maintained in the upgraded Premium case. No holds are removed or recreated during the upgrade process. This ensures that holds aren't lost or deleted during the upgrade.
+- The search conditions from the eDiscovery (Standard) case are copied to a collection in the new eDiscovery (Premium) case. You can refresh/rerun the estimates, however this replaces all previous search statistics for the search.
 
 To upgrade an eDiscovery (Standard) case to eDiscovery (Premium), complete the following steps:
 
