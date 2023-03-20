@@ -51,7 +51,7 @@ You can specify additional definition sets for network traffic inspection using 
 7. Select **OK**, and then deploy your updated Group Policy Object. See [Group Policy Management Console](/windows/win32/srvnodes/group-policy).
 
 > [!TIP]
-> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](/mem/intune/configuration/group-policy-analytics).
+> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Intune](/mem/intune/configuration/group-policy-analytics).
 
 ## Related articles
 

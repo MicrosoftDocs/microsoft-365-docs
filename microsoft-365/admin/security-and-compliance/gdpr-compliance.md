@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -27,6 +28,8 @@ description: "Learn how Microsoft 365 for business can help you with the General
 ---
 
 # GDPR simplified: A guide for your small business
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
  *Using Microsoft 365 for business to help you to mitigate and manage GDPR compliance* 
   

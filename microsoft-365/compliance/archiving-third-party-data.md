@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date:
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -20,7 +20,6 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-
 ---
 
 # Learn about connectors for third-party data
@@ -64,7 +63,6 @@ Click the link in the **Third-party data** column to go the step-by-step instruc
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Physical badging](import-physical-badging-data.md) ||||||![Check mark](../media/checkmark.png)|
-|[Slack eDiscovery](archive-slack-data-microsoft.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 ||||||||
 

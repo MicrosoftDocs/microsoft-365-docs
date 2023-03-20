@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -45,6 +46,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new in the Microsoft Purview compliance portal](/microsoft-365/compliance/whats-new)
 - [What's new in Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
+- [What's new for Teams admins](/OfficeUpdates/teams-admin)
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
@@ -185,7 +187,7 @@ With the sentiment feature on the NPS survey insights dashboard you'll be able t
 
 Three sentiments are available:
 
-:::image type="content" source="../media/sentiment-examples.png" alt-text="Screenshot: Sentiment examples and descriptions":::
+:::image type="content" source="../media/sentiment-examples.png" alt-text="Screenshot: Sentiment examples and descriptions. The sentiments available are positive, negative, and other. Each sentiment includes a description and an example. The description of positive is comments that contain satisfactory emotions or experiences. The example is I love how Word lets me check my grammar while drafting my documents." lightbox="../media/sentiment-examples.png":::
 
 To provide you with a better experience using the NPS survey insight dashboard, we suggest checking the following items:
 
@@ -204,13 +206,13 @@ You can now view all search results in a separate browser page by searching in g
 
 With our new separate page of search results, you can explore a more comprehensive list of results and easily return to the browser page for a more efficient search experience.
 
-:::image type="content" source="../media/whats-new-search-page.png" alt-text="Screenshot: New Microsoft 365 admin center browser search page":::
+:::image type="content" source="../media/whats-new-search-page.png" alt-text="Screenshot: New Microsoft 365 admin center browser search page showing sections All, Navigation, Actions, Settings, Roles, and Documentation." lightbox="../media/whats-new-search-page.png":::
 
 ### Search in distribution lists to add Priority Accounts
 
 Previously, you could only tag priority accounts by searching for them using the person's name, e-mail address or job title. With this update, you can now search for people to add to priority accounts in a distribution list. This allows you to bulk add people in an efficient way and reduces the time needed to tag individual people in your organization.
 
-:::image type="content" source="../media/search-by-distribution-list-priority-accounts.png" alt-text="Screenshot: Search for priority accounts to add using a distribution list":::
+:::image type="content" source="../media/search-by-distribution-list-priority-accounts.png" alt-text="This screenshot shows the interface in whichy users can search for priority accounts to add using a distribution list." lightbox="../media/search-by-distribution-list-priority-accounts.png":::
 
 - You can tag up to 50 users from a distribution list as priority accounts in a single action.
 
@@ -224,7 +226,7 @@ Previously, you could only tag priority accounts by searching for them using the
 
 Small and medium businesses often rely on trusted IT partners to manage their IT environments. We’re making it easier for partners to secure customers at scale with the general availability of [Microsoft 365 Lighthouse](https://aka.ms/March1SMBPartnerBlog), a multi-tenant administration portal for Managed Service Providers (MSPs). Microsoft 365 Lighthouse provides a complete experience for customers by empowering their partners to quickly identify and act on threats, anomalous sign-ins, and device compliance alerts to keep them safe.
 
-:::image type="content" source="../media/lighthouse.png" alt-text="Screenshot: Microsoft 365 Lighthouse dashboard":::
+:::image type="content" source="../media/lighthouse.png" alt-text="Screenshot: Microsoft 365 Lighthouse dashboard." lightbox="../media/lighthouse.png":::
 
 Microsoft 365 Lighthouse is an IT partner service only, and it’s available to partners who are enrolled in the Cloud Solution Provider (CSP) program and are managing customers who have up to 1000 licensed users with Microsoft 365 Business Premium, Microsoft 365 E3, or Microsoft Defender for Business (in preview) subscriptions. If you’re a Microsoft CSP-enrolled IT Partner, Microsoft 365 Lighthouse is available at no cost to your organization and is designed to help your business scale and grow. Check out the [Microsoft 365 Lighthouse help library](../lighthouse/m365-lighthouse-overview.md) for more information.
 
@@ -238,13 +240,13 @@ You can now view NPS survey data and insights from your users in the Microsoft 3
 
 In the admin center, go to **Health** > **Product feedback** > **NPS survey insights**.
 
-:::image type="content" source="../media/feedback-whatsnew.png" alt-text="Screenshot: Showing the Feedback page in the Microsoft 365 admin center":::
+:::image type="content" source="../media/feedback-whatsnew.png" alt-text="This screenshot shows the Feedback page in the Microsoft 365 admin center." lightbox="../media/feedback-whatsnew.png":::
 
 We've identified the common themes from user feedback. Then we used machine learning models techniques to train the data sets and automatically organize the feedback into Top Topics.
 
 There are nine topics available. Look out for more topics in future updates.
 
-:::image type="content" source="../media/feedback-nine-topics.png" alt-text="Screenshot: Showning the 9 new feedback topics":::
+:::image type="content" source="../media/feedback-nine-topics.png" alt-text="This screenshot shows the 9 new feedback topics: change management, collaboration, complexity, general praise, navigation, performance, reliability, user education, and value." lightbox="../media/feedback-nine-topics.png":::
 
 The NPS survey insight dashboard also contains these three new reports and pivots:
 
@@ -267,7 +269,7 @@ Learn more at [Microsoft product NPS feedback and insights for your organization
 
 We've updated our Microsoft 365 admin center video training. Go to the [Admin training video library](https://go.microsoft.com/fwlink/?linkid=2197659) page to learn how to set up and manage Microsoft 365 for your business.
 
-:::image type="content" source="../media/admin-library-vid-training.png" alt-text="Screenshot: Showing the admin center video training library":::
+:::image type="content" source="../media/admin-library-vid-training.png" alt-text="The screenshot shows the admin center video training library." lightbox="../media/admin-library-vid-training.png":::
 
 ## July 2021
 

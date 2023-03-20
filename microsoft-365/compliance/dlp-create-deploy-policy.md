@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 01/11/2021
 audience: ITPro
 ms.topic: how-to
 f1_keywords:
@@ -250,6 +250,92 @@ Endpoint
 
 Endpoint + Teams
 -->
+
+### Scenario 2 Show policy tip as oversharing popup (preview)
+
+> [!IMPORTANT]
+> This is a hypothetical scenario with hypothetical values. It's only for illustrative purposes. You should substitute your own sensitive information types, sensitivity labels, distribution groups and users.
+
+#### Scenario 2 pre-requisites and assumptions
+
+This scenario uses the *Highly confidential* sensitivity label, so it requires that you have created and published sensitivity labels. To learn more, see:
+
+- [Learn about sensitivity labels](sensitivity-labels.md)
+- [Get started with sensitivity labels](get-started-with-sensitivity-labels.md)
+- [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md)
+
+This procedure uses a hypothetical company domain at Contoso.com.
+
+#### Scenario 2 policy intent and mapping
+
+*We need to block emails to all recipients that have the ‘highly confidential’ sensitivity label applied except if the recipient domain is contoso.com. We want to notify the user on send with a popup dialogue and no one can be allowed to override the block.*
+
+
+|Statement|Configuration question answered and configuration mapping|
+|---|---|
+|"We need to block emails to all recipients..."|- **Where to monitor**: Exchange </br>- **Administrative scope**: Full directory </br>- **Action**: Restrict access or encrypt the content in Microsoft 365 locations > Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files > Block everyone |
+|"...that have the 'highly confidential' sensitivity label applied..."| - **What to monitor**: use the Custom template </br> - **Conditions for a match**: edit it to add the *highly confidential* sensitivity label|
+|"...except if..."| **Condition group configuration** - Create a nested boolean NOT condition group joined to the first conditions using a boolean AND|
+|"...the recipient domain is contoso.com."| **Condition for match**: Recipient domain is|
+|"...Notify..."|**User notifications**: enabled|
+|"...the user on send with a popup dialogue..."| **Policy tips**: selected </br> - **Show policy tip as a dialog for the end user before send**: selected|
+|"...and no one can be allowed to override the block...| **Allow overrides from M365 Services**: not selected|
+
+
+#### Steps to create policy for scenario 2
+
+> [!IMPORTANT]
+> For the purposes of this policy creation procedure, you'll accept the default include/exclude values and leave the policy turned off. You'll be changing these when you deploy the policy.
+
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
+
+1. In the Microsoft Purview compliance portal \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
+
+1. Select **Custom** from the **Categories** list.
+ 
+1. Select **Custom** from the **Templates** list.
+ 
+1. Give the policy a name. 
+
+> [!IMPORTANT]
+> Policies cannot be renamed.
+
+5. Fill in a description. You can use the policy intent statement here.
+
+1. Select **Next**.
+
+1. Select **Full directory** under **Admin units**.
+
+1. Set the **Exchange email** location status to **On**. Set all the other location status to **Off**.
+
+1. Select **Next**.
+
+1. Accept the default values for **Include** = **All** and **Exclude** = **None**.
+ 
+1. The **Create or customize advanced DLP rules** option should already be selected.
+ 
+1. Select **Next**.
+ 
+1. Select **Create rule**. Name the rule and provide a description.
+
+1. Select **Add condition** > **Content contains** > **Add** > **Sensitivity labels** > **Highly confidential**. Choose **Add**.
+ 
+1. Select **Add group** > **AND** > **NOT** > **Add condition**.
+
+1. Select **Recipient domain is** > **contoso.com**. Choose **Add**.
+ 
+1. Select **Add and action** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams file.** > **Block everyone**.
+ 
+1. Set **User notifications** to **On**.
+ 
+1. Select **Policy tips** > **Show the policy tip as a dialog for the end user before send**.
+ 
+1. Make sure that **Allow override from M365 services** *isn't* selected.
+ 
+1. Choose **Save**.
+ 
+1. Choose **Next** > **Keep it off** > **Next** > **Submit**.
+
 
 ## Deployment
 

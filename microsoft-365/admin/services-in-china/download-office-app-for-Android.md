@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: skjerland
 manager: scotv
+ms.date: 02/24/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -56,5 +57,3 @@ Download the Office app for Android phones from any of these China stores:
 ## Security considerations
 
 If your organization pushes apps to employee mobile devices, we suggest replacing the Word, Excel, and PowerPoint apps with the Office app for Android.  
-
-
