@@ -42,6 +42,12 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
+## March 2023
+
+- **Built-in Protection: Safe Links time of click protection enabled for email:** Microsoft will now by default protect URLs present in email messages at time of click as part of this update to the Safe Links setting (_EnableSafeLinksForEmail_) within the Built-in protection default policy. To learn about the specific Safe Links protections set in the built-in protection policy, see [Safe Links policy settings](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide#safe-links-policy-settings)
+- **Quarantine Notifications enabled for Preset Security Policies:** If your organization has enabled preset security policies or enables in the future, these will be automatically updated to include the quarantine notification policies (DefaultFullAccessWithNotificationPolicy) for the standard and strict preset profiles. To learn more about quaratine notifications, see [Quarantine notifications (end-user spam notifications)](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/quarantine-quarantine-notifications?view=o365-worldwide) and for specific controls set in the Preset security policies, see [Microsoft recommendations for EOP and Defender for Office 365 security settings](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide)
+
+
 ## January 2023
 
 - [Automatic Tenant Allow/Block List expiration management is now available in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447): Microsoft will now automatically remove entries from the allow list once the system has learned from it. Alternatively, Microsoft will extend the expiration time of the allows if the system has not learned yet. This will prevent your legitimate emails from going to junk or quarantine.
