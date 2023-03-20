@@ -59,9 +59,6 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">
 
 When you create an auto-claim policy, you can add a backup product to it. If the primary product is out of licenses, the backup product is used to assign licenses to users. You can add up to four backup products and [change the order in which they're used](#change-the-assigning-order-for-backup-products). To learn more, see [Add or remove backup products](#add-or-remove-backup-products).
 
-> [!NOTE]
-> Currently, you can only create one auto-claim policy. The number of policies you can create will increase as more products are able to use this feature.
-
 1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
 2. Select **Add a policy**.
 3. On the **Name this auto-claim policy** page, enter a name for the policy, then select **Next**.
