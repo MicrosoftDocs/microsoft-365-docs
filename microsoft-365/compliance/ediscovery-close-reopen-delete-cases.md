@@ -1,5 +1,5 @@
 ---
-title: "Close, reopen, delete, or upgrade eDiscovery (Standard) cases"
+title: "Upgrade, close, reopen, or delete eDiscovery (Standard) cases"
 description: "This article describes how to manage eDiscovery (Standard) cases. This includes closing a case, reopening a closed case, deleting a case, and upgrading a case to eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
@@ -20,11 +20,40 @@ search.appverid:
 - MET150
 ---
 
-# Close, reopen, delete, or upgrade an eDiscovery (Standard) case
+# Upgrade, close, reopen, or delete eDiscovery (Standard) cases
 
 This article describes how to close, reopen, delete, or upgrade a Microsoft Purview eDiscovery (Standard) cases in Microsoft Purview.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Upgrade a case to eDiscovery (Premium)
+
+After working with an existing eDiscovery (Standard) case, you may need the additional case functionality provided with eDiscovery (Premium) cases. This work may include the need for more robust collections and review set functionality.
+
+Before you upgrade a case from eDiscovery (Standard) to eDiscovery (Premium), make sure you review and understand the following:
+
+- After an eDiscovery (Standard) case is upgraded to eDiscovery (Premium), it can't be reversed to an eDiscovery (Standard) case.
+- Only eDiscovery Administrators can upgrade cases to eDiscovery (Premium).
+- Changes to searches aren't available while the case is upgrading to eDiscovery (Premium). Once a case is upgraded, searches are available under the **Collections** section in the eDiscovery (Premium) case.
+- Information for jobs created in the eDiscovery (Standard) case are maintained after the upgrade, however the job names retain the eDiscovery (Standard) case job names.
+- Holds in the Standard case are maintained in the upgraded Premium case. No holds are removed or recreated during the upgrade process. This ensures that holds aren't lost or deleted during the upgrade.
+- The search conditions from the eDiscovery (Standard) case are copied to a collection in the new eDiscovery (Premium) case. You can refresh/rerun the estimates, however this replaces all previous search statistics for the search.
+
+To upgrade an eDiscovery (Standard) case to eDiscovery (Premium), complete the following steps:
+
+1. In the compliance portal, select **eDiscovery** > **eDiscovery (Standard)** to display the list of eDiscovery (Standard) cases in your organization.
+2. For the case that you want to upgrade, select the ellipsis control and then select **Upgrade case to Premium**. You can upgrade one case at a time, bulk upgrading of multiple cases isn't supported.
+3. On the **Upgrade cases (preview)** dialog box, select **Continue upgrade**.
+
+   ![Upgrade a case notification.](../media/ediscovery-upgrade-case-notification.png)
+
+4. While the case is being upgraded, you'll see a banner at the top of the **eDiscovery (Standard)** case page.
+
+   ![Case upgrade is in-progress banner.](../media/ediscovery-upgrade-case-notification-pending.png)
+
+5. After the case upgrade is finished, you'll see a banner at the top of the **eDiscovery (Standard)** case page.
+
+   ![Case upgrade is completed banner.](../media/ediscovery-upgrade-case-notification-completed.png)
 
 ## Close a case
 
@@ -102,32 +131,3 @@ To delete a case:
       ![Delete a case.](../media/eDiscoveryCaseHomePageDelete.png)
 
 If the case you're trying to delete still contains eDiscovery holds, you'll receive an error message. You'll have to delete all holds associated with the case and then try again to delete the case.
-
-## Upgrade a case to eDiscovery (Premium)
-
-After working with an existing eDiscovery (Standard) case, you may need the additional case functionality provided with eDiscovery (Premium) cases. This may include the need for more robust collections and review set functionality.
-
-Before you upgrade a case from eDiscovery (Standard) to eDiscovery (Premium), make sure you review and understand the following:
-
-- After an eDiscovery (Standard) case is upgraded to eDiscovery (Premium), it can't be reversed to an eDiscovery (Standard) case.
-- Only eDiscovery Administrators can upgrade cases to eDiscovery (Premium).
-- Changes to searches aren't available while the case is upgrading to eDiscovery (Premium). Once a case is upgraded, searches are available under the **Collections** section in the eDiscovery (Premium) case.
-- Information for jobs created in the eDiscovery (Standard) case are maintained after the upgrade, however the job names retain the eDiscovery (Standard) case job names.
-- Holds in the Standard case are maintained in the upgraded Premium case. No holds are removed or recreated during the upgrade process. This ensures that holds aren't lost or deleted during the upgrade.
-- The search conditions from the eDiscovery (Standard) case are copied to a collection in the new eDiscovery (Premium) case. You can refresh/rerun the estimates, however this replaces all previous search statistics for the search.
-
-To upgrade an eDiscovery (Standard) case to eDiscovery (Premium), complete the following steps:
-
-1. In the compliance portal, select **eDiscovery** > **eDiscovery (Standard)** to display the list of eDiscovery (Standard) cases in your organization.
-2. For the case that you want to upgrade, select the ellipsis control and then select **Upgrade case to Premium**. You can upgrade one case at a time, bulk upgrading of multiple cases isn't supported.
-3. On the **Upgrade cases (preview)** dialog box, select **Continue upgrade**.
-
-   ![Upgrade a case notification.](../media/ediscovery-upgrade-case-notification.png)
-
-4. While the case is being upgraded, you'll see a banner at the top of the **eDiscovery (Standard)** case page.
-
-   ![Case upgrade is in-progress banner.](../media/ediscovery-upgrade-case-notification-pending.png)
-
-5. After the case upgrade is finished, you'll see a banner at the top of the **eDiscovery (Standard)** case page.
-
-   ![Case upgrade is completed banner.](../media/ediscovery-upgrade-case-notification-completed.png)
