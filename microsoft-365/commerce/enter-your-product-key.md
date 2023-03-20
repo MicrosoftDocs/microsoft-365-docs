@@ -30,6 +30,8 @@ ms.date: 08/18/2022
 
 # Enter your product key for Microsoft 365 Business Standard
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 If you bought Microsoft 365 Business Standard from a retail store, this article helps you activate your subscription.
   
  **Need something else?**
