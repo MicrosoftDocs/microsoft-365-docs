@@ -178,7 +178,7 @@ In the **Events** tab open **Details** to see **Other matched conditions**.
 
 Other matched events information is supported for these conditions
 
-|Condition|Exchange|Sharepoint </br>OneDrive for Business|Teams|Endpoint|
+|Condition|Exchange|Sharepoint|Teams|Endpoint|
 |-----|-----|-----|-----|-----|
 |Sender is|Yes|No|Yes|No|
 |Sender domain is|Yes|No|Yes|No|
