@@ -84,7 +84,7 @@ You can start a new general purpose automated investigation on the device if nee
 
 For more information on automated investigations, see [Overview of Automated investigations](automated-investigations.md).
 
-## Initiate live response Session
+## Initiate live response session
 
 Live response is a capability that gives you instantaneous access to a device by using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time.
 
