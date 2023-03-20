@@ -270,7 +270,7 @@ When an item matches multiple DLP rules, DLP goes uses through a complex algorit
 When an item matches multiple policies and those policies have identical actions, the actions from the highest priority policy is applied.
 
 **Rule priority order**
-When an item matches multiple rules and those rules have identical actions, the actions from the highest priority rule is applied.
+When an item matches multiple rules in a policy and those rules have identical actions, the actions from the highest priority rule is applied.
 
 [**Mode of the policy**](/microsoft-365/compliance/dlp-create-deploy-policy#state) 
 When an item matches multiple policies and those policies have identical actions, the actions from all policies that are in *Turn it on* state (enforce mode) are applied preferentially over the policies in *Test with policy tips* and *Test* state.
