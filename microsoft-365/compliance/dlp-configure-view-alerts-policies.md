@@ -219,4 +219,4 @@ Matched events information is supported for these conditions
 |Message size over|Yes|No|No|No|
 |Message type is|Yes|No|No|No|
 |Message importance is|Yes|No|No|No|
-|The user accesses a sensitive site in Edge|No|No|No|Yes|
+
