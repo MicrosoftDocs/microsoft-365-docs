@@ -32,7 +32,21 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
-#### March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)
+<details>
+	<summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
+
+&ensp;Released: **March , 20,2023**<br/>
+&ensp;Published: **March 20, 2023**<br/>
+&ensp;Build: **101.98.30**<br/>
+&ensp;Release version: **30.123012.19830.0**<br/>
+&ensp;Engine version: **1.1.19900.2**<br/>
+&ensp;Signature version: **1.379.1299.0**<br/>
+**What's new**
+- This new relase is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customer. There is no change for other customers and upgrade is optional. 
+</details>
+	
+<details>
+	<summary> March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)</summary>
 
 &ensp;Released: **March , 08,2023**<br/>
 &ensp;Published: **March 08, 2023**<br/>
@@ -90,7 +104,7 @@ Caution: Some customers(<1%) are experiencing issues with this method.
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
-
+</details>
 
 	
 <details>
