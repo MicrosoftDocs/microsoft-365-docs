@@ -1,5 +1,5 @@
 ---
-title: Get scan details by definition
+title: Get scan details by agent
 description: Learn how to use the get scan details by agent api
 keywords: apis, graph api, supported apis, scan history, definition
 ms.service: microsoft-365-security
