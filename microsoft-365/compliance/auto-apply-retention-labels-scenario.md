@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - purview-compliance
-- tier1
+- tier2
 - SPO_Content
 ms.custom: 
 - admindeeplinkCOMPLIANCE
