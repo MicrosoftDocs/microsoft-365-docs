@@ -53,7 +53,7 @@ Communications are scanned every 24 hours from the time policies are created. Fo
 ## User-reported messages policy
 
 > [!NOTE]
-> The user-reported messages policy is implemented for your organization after you create your first communication compliance policy. It can take up to thirty days for this feature to be available after you create your first policy. 
+> The *User-reported messages* policy is implemented for your organization after you create your first communication compliance policy. It can take up to thirty days for this feature to be available after you create your first policy. 
 
 As part of a layered defense to detect and remediate inappropriate messages in your organization, you can supplement communication compliance policies with user-reported messages in Microsoft Teams. This feature empowers users in your organization to self-report inappropriate internal personal and group chat messages, such as harassing or threatening language, sharing of adult content, and sharing of sensitive or confidential information, to help foster a safe and compliant work environment.
 
