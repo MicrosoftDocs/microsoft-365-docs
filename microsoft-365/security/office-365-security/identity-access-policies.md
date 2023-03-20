@@ -287,8 +287,6 @@ When configuring your policy, use the following risk levels.
 
 Follow the guidance in the article [Common Conditional Access policy: Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) to block legacy authentication.
 
-For Exchange Online, you can use authentication policies to [disable Basic authentication](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), which forces all client access requests to use modern authentication.
-
 ### High risk users must change password
 
 Follow the guidance in the article [Common Conditional Access policy: User risk-based password change](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) to require users with compromised credentials to change their password.
