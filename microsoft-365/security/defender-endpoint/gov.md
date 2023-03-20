@@ -24,6 +24,7 @@ ms.subservice: mde
 # Microsoft Defender for Endpoint for US Government customers
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -186,7 +187,8 @@ These are the features and known gaps for [Mobile Threat Defense (Microsoft Defe
 |Conditional Access/Conditional Launch|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Support for MAM|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Privacy Controls|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Microsoft Defender Vulnerability Management|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Microsoft Defender Vulnerability Management core capabilities (included in Defender for Endpoint Plan 2)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Microsoft Defender Vulnerability Management premium capabilities|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
 
 > [!NOTE]
 > The Microsoft Defender Vulnerability Management Report inaccuracy feature is not available for GCC customers.
