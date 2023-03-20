@@ -23,6 +23,8 @@ description: "Accept invite to join a Microsoft 365 for business organization"
 
 # Accept an email invitation to a Microsoft 365 for business subscription (User)
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 > [!IMPORTANT]
 > These steps apply to Microsoft 365 Business Standard, Microsoft 365 Business Basic and Microsoft 365 Apps for business.
 
