@@ -176,7 +176,7 @@ In the **Events** tab open **Details** to see **Other matched conditions**.
 - Enable [Auditing](audit-log-enable-disable.md#turn-auditing-on-or-off).
 - Enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
 
-Other matched events information is supported for these conditions
+Matched events information is supported for these conditions
 
 |Condition|Exchange|Sharepoint|Teams|Endpoint|
 |-----|-----|-----|-----|-----|
