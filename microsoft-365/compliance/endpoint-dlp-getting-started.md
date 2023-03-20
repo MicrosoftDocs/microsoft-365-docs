@@ -83,7 +83,7 @@ Here are the virtual operating systems that are supported by virtualization envi
 |Azure virtual desktop (AVD)|- Single session supported for 20H2, 21H1, 21H2</br>- Multi session supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session supported for 22H2|
 |Hyper-V    |- Single session supported for 20H2, 21H1, 21H2</br>- Multi session with Hybrid AD join supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session with Hybrid AD join supported for 22H2|
 
-<!-- #### Known issues
+#### Known issues
 
 1. You cannot monitor Copy to Clipboard and Enforcing Endpoint DLP on Azure Virtual Desktop environments via browsers. However the same egress operation will be monitored by Endpoint DLP for actions via Remote Desktop Session (RDP) today.
 1. Citrix XenApp doesn't support access by unallowed app monitoring.
@@ -91,8 +91,6 @@ Here are the virtual operating systems that are supported by virtualization envi
 #### Limitations
 
 1. Handling of USBs in virtualized environments: USB storage devices s are treated as network shares. You need to include the **Copy to network share** activity to monitor **Copy to a USB device**. All activity explorer events for virtual devices and incident alerts will show the **Copy to a network share** activity for all copy to USB events.
--->
-
 
 ## macOS onboarding procedures
 
