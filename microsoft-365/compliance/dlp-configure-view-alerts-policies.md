@@ -196,8 +196,7 @@ Matched events information is supported for these conditions
 |Recipient is a member of|Yes|No|No|No|
 |RecipientAdAttribute Contains words |Yes|No|No|No|
 |RecipientAdAttribute Matches patterns|Yes|No|No|No|
-|Document created by (user/group)|Yes|No|No|No|
-|Document is password protected|Yes|No|No|Yes|
+|Document is password protected|Yes|No|No|No|
 |Document could not be scanned|Yes|No|No|No|
 |Document did not complete scanning|Yes|No|No|No|
 |Document name contains words|Yes|Yes|No|No|
