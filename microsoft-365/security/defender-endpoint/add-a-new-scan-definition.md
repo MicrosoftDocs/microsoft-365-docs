@@ -109,38 +109,16 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 "targetType": "Ip",
 "scannerAgent": {
     "machineId": "eb663a27ae9d032f61bc268a79eedf14c4b90f77",
-    "machineName": "DESKTOP-TEST",
+    "machineName": "DESKTOP-TEST"
+},
 "scanAuthenticationParams": { 
     "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams", 
     "type": "Kerberos", 
     "username": "username", 
     "domain": "password",
     "isGmsaUser": true
-        },
-    },
- },
- {
-"scanType": "Network", 
-"scanName": "Test Network scan", 
-"isActive": true, 
-"target": "127.0.0.1", 
-"intervalInHours": 1, 
-"targetType": "Ip",
-"scannerAgent": {
-    "machineId": "eb663a27678ik2f61bc268a79eeasdf450f77",
-    "machineName": "DESKTOP-TEST",
-"scanAuthenticationParams": {
-    "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams", 
-        "type": "AuthPriv", 
-        "username": "username", 
-        "authProtocol": "authProtocol", 
-        "authPassword": "authPassword", 
-        "privProtocol": "privProtocol", 
-        "privPassword": "privPassword", 
-        "communityString": "community-string" 
-        },
-    },
- }
+    }
+}
 ```
 
 ## Example request to delete scans
