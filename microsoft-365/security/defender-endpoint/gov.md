@@ -172,7 +172,6 @@ These are the known gaps:
 > [!NOTE]
 > While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
 
-
 These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
 
 <br />
@@ -187,10 +186,12 @@ These are the features and known gaps for [Mobile Threat Defense (Microsoft Defe
 |Conditional Access/Conditional Launch|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Support for MAM|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Privacy Controls|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Microsoft Defender Vulnerability Management core capabilities (included in Defender for Endpoint Plan 2)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Microsoft Defender Vulnerability Management premium capabilities|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
+|Microsoft Defender Vulnerability Management core capabilities |![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 
 > [!NOTE]
+> Microsoft Defender Vulnerability Management core capabilities are included with Defender for Endpoint Plan 2. For more information, see [Vulnerability Management capabilities for endpoints](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md#vulnerability-management-capabilities-for-endpoints)
+>
 > The Microsoft Defender Vulnerability Management Report inaccuracy feature is not available for GCC customers.
-  
 
+> [!NOTE]
+> Microsoft Defender Vulnerability Management Standalone and the Microsoft Defender Vulnerability Management add-on for Defender for Endpoint Plan 2 are not available for US Government customers using GCC, GCC High, and DoD.
