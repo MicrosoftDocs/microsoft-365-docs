@@ -32,7 +32,7 @@ ms.date: 01/11/2023
 
 # Troubleshoot Microsoft Teams EHR connector setup and configuration
 
-This article provides guidance for how to troubleshoot common setup and configuration issues for the Microsoft Teams Electronic Health Record (EHR) connector. Use it to help resolve blockers that you may experience when you set up and configure the EHR connector to integrate with your [Cerner EHR](ehr-admin-cerner.md) or [Epic EHR](ehr-admin-epic.md) system.
+This article provides guidance for how to troubleshoot common setup and configuration issues for the Microsoft Teams Electronic Health Record (EHR) connector. Use it to help resolve blockers that you may experience when you set up and configure the EHR connector to integrate with your [Oracle Health EHR](ehr-admin-oracle-health.md) or [Epic EHR](ehr-admin-epic.md) system.
 
 ## FHIR URL isn't working
 
@@ -69,7 +69,7 @@ The FHIR base URLs for the test and production environments in Epic are differen
 
 #### You're using a production environment and you don't have a production license
 
-Your organization must have at least one active license for either Microsoft Cloud for Healthcare, Microsoft Teams EHR Connector add-on, or Microsoft Teams EMR connector add-on. For Cerner customers, a license is also required for testing.
+Your organization must have at least one active license for either Microsoft Cloud for Healthcare, Microsoft Teams EHR Connector add-on, or Microsoft Teams EMR connector add-on. For Oracle Health customers, a license is also required for testing.
 
 ### Users get a "Tenant config not found" error when launching a virtual appointment even though all our FHIR base URLs are configured correctly.
 
@@ -110,7 +110,7 @@ After the web browser join setting is turned on, patients can join virtual appoi
 
 ### Patients can send chat messages to providers in Teams after the virtual appointment ends from within the appointment. How can we block this?
 
-This scenario can happen because of several reasons. 
+This scenario can happen because of several reasons.
 
 #### The provider leaves the appointment but didn't end it
 
@@ -133,6 +133,10 @@ You don't have admin access to the [EHR connector configuration portal](https://
 
 Contact an admin in your organization to either grant you admin access or set up the integration in the portal.  
 
+### My organization wants to share the FHIR base URL with other organizations in my network
+
+Organizations in a healthcare network, such as a hospital with regional branches or related medical offices, might want to share an FHIR base URL. If you want to share your FHIR base URL, please email us at [TeamsForHealthcare](mailto:teamsforhealthcare@service.microsoft.com).
+
 ## Virtual Desktop Infrastructure (VDI) support
 
 ### My organization uses a Citrix environment. How do I configure it to use the EHR connector?
@@ -146,7 +150,7 @@ To learn more, see the following Citrix documentation:
 
 ## Related articles
 
-- [Virtual Appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
+- [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md)
 - [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
 - [EHR connector Virtual Appointments report](ehr-connector-report.md)
 - [Get started with Microsoft 365 for healthcare organizations](teams-in-hc.md)

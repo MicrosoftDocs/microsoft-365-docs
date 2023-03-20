@@ -235,7 +235,7 @@ Enables or disables file hash computation feature. When this feature is enabled,
 |**Key**|enableFileHashComputation|
 |**Data type**|Boolean|
 |**Possible values**|false (default) <p> true|
-|**Comments**|Available in Defender for Endpoint version 101.73.77 or higher.|
+|**Comments**|Available in Defender for Endpoint version 101.85.27 or higher.|
 #### Allowed threats
 
 List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.

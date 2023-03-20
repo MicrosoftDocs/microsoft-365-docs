@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/24/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -56,7 +57,7 @@ If you don't have an existing Office 365 Enterprise E5 plan and want to try comm
 > [!NOTE]
 > Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
-## Recommended actions (preview)
+## Recommended actions
 
 Recommended actions can help your organization quickly get started with communication compliance. Included on the **Overview** page, recommended actions will help guide you through the steps to configure and deploy policies.
 
@@ -266,6 +267,8 @@ For more information about configuring Yammer in Native Mode, see:
     - Choose the users or groups to apply the policy to, including all users in your organization, specific users and groups, or other users and groups you'd like to exclude.
 
     - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
+    
+    - Choose adaptive scopes for the policy. For more information, see [Adaptive policy scopes for compliance solutions](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes). If you decide to create an adaptive policy, you must create one or more adaptive scopes before you create your policy, and then select them during the create new policy process. For instructions, see [Configuration information for adaptive scopes](purview-adaptive-scopes.md#configure-adaptive-scopes).
 
     - Choose the communication channels to check, including Exchange, Microsoft Teams, or Yammer. You'll also choose to check third-party sources if you've configured a connector in Microsoft 365.
 
@@ -279,7 +282,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Enable [optical character recognition (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) to identify embedded or attached images in messages for printed or handwritten text that match policy conditions. For custom policies, one or more conditional settings associated with text, keywords, classifiers, or sensitive info types must be configured in the policy to enable the selection of optical character recognition (OCR) documents.
 
-    - Choose **Filter email blasts** to exclude messages sent from email blast services. Messages that match specific conditions selected here won't generate alerts. This includes bulk email, such as newsletters, as well as spam, phishing, and malware. When this option is selected, you can view a [report](communication-compliance-reports-audits.md#detailed-reports) containing the bulk email senders that are filtered out.
+    - Choose the **Filter email blasts** check box to exclude messages sent from email blast services. Messages that match specific conditions selected here won't generate alerts. This includes bulk email, such as newsletters, as well as spam, phishing, and malware. When this option is selected, you can view a [report](communication-compliance-reports-audits.md#detailed-reports) containing the bulk email senders that are filtered out.
     
       > [!NOTE]
       > The list of senders is filtered before the content is analyzed so there might be messages from senders that don't match a policy. In other words, the content that's analyzed is a superset of the policy matches that are filtered out. 
@@ -288,9 +291,16 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Review your policy selections and create the policy.
 
-5. Select **Create policy** when using the templates or **Submit** when using the custom policy wizard.
+5. Depending on your selected scope:
 
-6. The **Your policy was created** page is displayed with guidelines on when policy will be activated and which communications will be captured.
+ - If you chose **Adaptive** scopes, on the **Choose adaptive policy scopes** page, select **Add scopes** and select one or more adaptive scopes that have been created. The scopes that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Groups**.
+
+6. Select **Create policy** when using the templates or **Submit** when using the custom policy wizard.
+
+7. The **Your policy was created** page is displayed with guidelines on when policy will be activated and which communications will be captured.
+
+> [!TIP]
+> After configuring your policy, [learn about best practices for managing the volume of alerts](communication-compliance-alerts-best-practices.md). 
 
 ## Step 6 (optional): Update compliance boundaries for communication compliance policies
 
@@ -339,7 +349,7 @@ You can also choose to enable anonymization for displayed usernames when investi
 
 ## Step 8 (optional): Test your communication compliance policy
 
-After you create a communication compliance policy, it's a good idea to test it to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your Microsoft Purview Data Loss Prevention (DLP) policies (preview)](dlp-test-dlp-policies.md) if your communication compliance policies include sensitive information types. Make sure you give your policies time to activate so that the communications you want to test are captured.
+After you create a communication compliance policy, it's a good idea to test it to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your Microsoft Purview Data Loss Prevention (DLP) policies](dlp-test-dlp-policies.md) if your communication compliance policies include sensitive information types. Make sure you give your policies time to activate so that the communications you want to test are captured.
 
 Follow these steps to test your communication compliance policy:
 

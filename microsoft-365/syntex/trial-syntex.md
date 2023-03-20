@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: lauris; jaeccles
-ms.date:
+ms.date: 08/26/2022
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic

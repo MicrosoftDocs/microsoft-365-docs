@@ -85,7 +85,7 @@ The notification appears in the usual [quarantine list within the Windows Securi
 
 ## Configure PUA protection in Microsoft Defender Antivirus
 
-You can enable PUA protection with [Microsoft Intune](/mem/intune/protect/device-protect), [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection), [Group Policy](/azure/active-directory-domain-services/manage-group-policy), or via [PowerShell cmdlets](/powershell/module/defender/?preserve-view=true&view=win10-ps).
+You can enable PUA protection with [Microsoft Intune](/mem/intune/protect/device-protect), [Microsoft Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection), [Group Policy](/azure/active-directory-domain-services/manage-group-policy), or via [PowerShell cmdlets](/powershell/module/defender/?preserve-view=true&view=win10-ps).
 
 You can also use PUA protection in audit mode to detect potentially unwanted applications without blocking them. The detections are captured in the Windows event log. PUA protection in audit mode is useful if your company is conducting an internal software security compliance check and you'd like to avoid any false positives.
 
@@ -95,14 +95,14 @@ See [Configure device restriction settings in Microsoft Intune](/intune/device-r
 
 ### Use Configuration Manager to configure PUA protection
 
-PUA protection is enabled by default in the Microsoft Endpoint Manager (Current Branch).
+PUA protection is enabled by default in the Microsoft Configuration Manager (Current Branch).
 
-See [How to create and deploy antimalware policies: Scheduled scans settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring Microsoft Endpoint Manager (Current Branch).
+See [How to create and deploy antimalware policies: Scheduled scans settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring Microsoft Configuration Manager (Current Branch).
 
 For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#BKMK_PUA).
 
 > [!NOTE]
-> PUA events blocked by Microsoft Defender Antivirus are reported in the Windows Event Viewer and not in Microsoft Endpoint Configuration Manager.
+> PUA events blocked by Microsoft Defender Antivirus are reported in the Windows Event Viewer and not in Microsoft Configuration Manager.
 
 ### Use Group Policy to configure PUA protection
 
@@ -156,7 +156,7 @@ For more information, see [Use PowerShell cmdlets to configure and run Microsoft
 
 ## View PUA events using PowerShell
 
-PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Manager or in Intune. You can also use the `Get-MpThreat` cmdlet to view threats that Microsoft Defender Antivirus handled. Here's an example:
+PUA events are reported in the Windows Event Viewer, but not in Microsoft Configuration Manager or in Intune. You can also use the `Get-MpThreat` cmdlet to view threats that Microsoft Defender Antivirus handled. Here's an example:
 
 ```console
 CategoryID       : 27

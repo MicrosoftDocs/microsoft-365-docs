@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 04/22/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -21,6 +22,8 @@ description: "Accept invite to join a Microsoft 365 for business organization"
 ---
 
 # Accept an email invitation to a Microsoft 365 for business subscription (User)
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 > [!IMPORTANT]
 > These steps apply to Microsoft 365 Business Standard, Microsoft 365 Business Basic and Microsoft 365 Apps for business.

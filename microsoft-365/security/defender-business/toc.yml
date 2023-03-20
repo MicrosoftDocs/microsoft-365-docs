@@ -5,13 +5,12 @@
       items:
       - name: What is Microsoft Defender for Business?
         href: mdb-overview.md
-        items:
-        - name: Simplified configuration
-          href: mdb-simplified-configuration.md
-        - name: Requirements
-          href: mdb-requirements.md
-        - name: Compare plans for small and medium-sized businesses
-          href: compare-mdb-m365-plans.md
+      - name: Simplified configuration
+        href: mdb-simplified-configuration.md
+      - name: Requirements
+        href: mdb-requirements.md
+      - name: Compare plans for small and medium-sized businesses
+        href: compare-mdb-m365-plans.md
       - name: What's new in Defender for Business?
         href: ../../business-premium/m365bp-mdb-whats-new.md?toc=/microsoft-365/security/defender-business/toc.json&bc=/microsoft-365/security/defender-business/breadcrumb/toc.json
       - name: Preview features
@@ -85,7 +84,7 @@
     - name: Reference information
       items: 
       - name: Top 10 ways to secure your business data
-        href: ../../admin/security-and-compliance/secure-your-business-data.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
+        href: ../../business-premium/secure-your-business-data.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
       - name: Glossary of security terms
         href: ../../business-premium/m365bp-glossary.yml?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
       - name: How to get help or contact support

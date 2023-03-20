@@ -4,6 +4,7 @@ ms.author: v-jdeweese
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
+ms.date: 06/17/2022
 audience: admin
 ms.topic: article
 ms.custom: 
@@ -12,7 +13,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to enable, disable, and manage access to Whiteboard.
-
 ---
 
 # Manage data for Microsoft Whiteboard in GCC environments

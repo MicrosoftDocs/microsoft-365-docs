@@ -35,7 +35,7 @@ ms.date: 02/08/2023
 - Microsoft 365 Defender
 
 > [!NOTE]
-> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview). 
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview?view=graph-rest-1.0&preserve-view=true). 
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -65,7 +65,7 @@ Permission type | Permission | Permission display name
 Application | AdvancedHunting.Read.All| Run advanced queries
 Delegated (work or school account) | AdvancedHunting.Read | Run advanced queries
 
->[!Note]
+> [!NOTE]
 > When obtaining a token using user credentials:
 >
 >- The user needs to have the 'View Data' role.

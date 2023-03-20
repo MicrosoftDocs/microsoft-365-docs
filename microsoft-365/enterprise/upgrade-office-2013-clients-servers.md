@@ -3,6 +3,7 @@ title: "Resources to help you upgrade from Office 2013 clients and servers"
 ms.author: danbrown
 author: dhb-msft
 manager: dougeby
+ms.date: 04/05/2022
 audience: ITPro
 ms.topic: overview
 ms.service: microsoft-365-enterprise
