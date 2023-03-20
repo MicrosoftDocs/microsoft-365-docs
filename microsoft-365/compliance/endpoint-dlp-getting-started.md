@@ -79,7 +79,6 @@ Here are the virtual operating systems that are supported by virtualization envi
 |---------|---------|---------|
 |Azure virtual desktop (AVD)|- Single session supported for 20H2, 21H1, 21H2</br>- Multi session supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session supported for 22H2|1809 and higher supported |
 |Citrix Virtual Apps and Desktops 7 (2209)|- Single session supported for 20H2, 21H1, 21H2</br>- Multi session supported for 20H2, 21H1, 21H2|- Single session supported for 21H2 (Gen2)</br>- Multi session supported for 21H2 (Gen 2)|
-|Azure Web Services Workspaces     |- Windows 10 experience on Windows Server 2019 supported|Not supported         |Not supported |
 |Azure virtual desktop (AVD)|- Single session supported for 20H2, 21H1, 21H2</br>- Multi session supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session supported for 22H2|
 |Hyper-V    |- Single session supported for 20H2, 21H1, 21H2</br>- Multi session with Hybrid AD join supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session with Hybrid AD join supported for 22H2|
 
@@ -90,7 +89,7 @@ Here are the virtual operating systems that are supported by virtualization envi
 
 #### Limitations
 
-1. Handling of USBs in virtualized environments: USB storage devices s are treated as network shares. You need to include the **Copy to network share** activity to monitor **Copy to a USB device**. All activity explorer events for virtual devices and incident alerts will show the **Copy to a network share** activity for all copy to USB events.
+1. Handling of USBs in virtualized environments: USB storage devices are treated as network shares. You need to include the **Copy to network share** activity to monitor **Copy to a USB device**. All activity explorer events for virtual devices and incident alerts will show the **Copy to a network share** activity for all copy to USB events.
 
 ## macOS onboarding procedures
 
