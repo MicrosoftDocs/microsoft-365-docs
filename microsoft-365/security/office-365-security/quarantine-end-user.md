@@ -186,7 +186,7 @@ The following actions are available after you click ![More actions icon.](../../
 
 - ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete from quarantine**: The message is deleted and is not sent to the original recipients. How the message is deleted depends on your selections in the flyout that opens:
   - Select **Permanently delete the message from quarantine** and then click **Delete**: The message is permanently deleted and is not recoverable.
-  - Click **Delete** only: The message is deleted, but is recoverable within 30 days.
+  - Click **Delete** only: The message is deleted, but is potentially recoverable.
 
 - ![Download email icon.](../../media/m365-cc-sc-download-icon.png) **Download email**: In the flyout that appears, configure the following settings:
   - **Reason for downloading file**: Enter descriptive text.
