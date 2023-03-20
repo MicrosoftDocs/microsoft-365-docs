@@ -90,7 +90,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
    When editing existing configurations, **Extra** settings have no impact on the deployment status of the task. You may retain, edit, or discard **Extra** settings at your discretion.
 
-    Once Lighthouse determines there are no settings that are **Not compliant** and **Missing** from all existing configurations, Lighthouse will update the task status to **Compliant**. You will be prompted to exit the wizard.
+    Once Lighthouse determines there are no settings that are **Not compliant** or **Missing** from all existing configurations, Lighthouse will update the task status to **Compliant**. You will be prompted to exit the wizard.
 
 10. Select **Next**.
 
