@@ -204,10 +204,9 @@ Matched events information is supported for these conditions
 |Document property is|Yes|Yes|No|No|
 |Document size over|Yes|Yes|No|No|
 |Document content contains words|Yes|No|No|No|
-|Document content matches patterns|Yes|Yes|No|No|
-|Document type is|Yes|No|No|Yes|
+|Document content matches patterns|Yes|No|No|No|
+|Document type is|No|No|No|Yes|
 |Document extension is|Yes|Yes|No|Yes|
-|Content contains|Yes|Yes|Yes|Yes|
 |Content is shared from M365|Yes|Yes|Yes|No|
 |Content is received from|Yes|No|No|No|
 |Content character set contains words|Yes|No|No|No|
