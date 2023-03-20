@@ -285,7 +285,7 @@ For more information about configuring Yammer in Native Mode, see:
     - Choose the **Filter email blasts** check box to exclude messages sent from email blast services. Messages that match specific conditions selected here won't generate alerts. This includes bulk email, such as newsletters, as well as spam, phishing, and malware. When this option is selected, you can view a [report](communication-compliance-reports-audits.md#detailed-reports) containing the bulk email senders that are filtered out.
     
       > [!NOTE]
-      > The list of senders is filtered before the content is analyzed so there might be messages from senders that don't match a policy. In other words, the content that's analyzed is a superset of the policy matches that are filtered out. 
+      > The list of senders is filtered before the content is analyzed so there might be senders that don't match the conditions. In other words, there might be extra senders in the report. 
 
     - Define the percentage of communications to review.
 
