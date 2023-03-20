@@ -40,6 +40,8 @@ description: "Use the setup wizard to add your domain to Microsoft 365 in the Mi
 
  **[Check the Domains FAQ](domains-faq.yml)** if you don't find what you're looking for.
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
   
 ## Before you begin

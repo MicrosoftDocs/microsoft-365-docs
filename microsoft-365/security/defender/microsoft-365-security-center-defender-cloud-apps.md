@@ -133,6 +133,10 @@ Global search in Microsoft 365 Defender (using the search bar at the top of the 
 
 As part of the creation of a dedicated **Assets** section that spans the entire Microsoft 365 Defender experience, the **Users and Accounts** section of Defender for Cloud Apps is rebranded as the **Identities** section. No changes to functionality are expected.
 
+### Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender (preview)
+
+You can route accounts to Microsoft 365 Defender by enabling automatic redirection from the former Microsoft Defender for Cloud Apps portal. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender (Preview)](microsoft-365-security-mda-redirection.md).
+
 ### Preview features in Defender for Cloud Apps
 
 Turn on the preview experience setting to be among the first to try upcoming features.

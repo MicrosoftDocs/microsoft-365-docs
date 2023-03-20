@@ -31,6 +31,8 @@ description: "Sign in to your Microsoft 365 admin account to set some individual
 ---
 # Set an individual user's password to never expire
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 This article explains how to set a password for an individual user to not expire. You have to complete these steps using PowerShell.
 
 ## Before you begin
