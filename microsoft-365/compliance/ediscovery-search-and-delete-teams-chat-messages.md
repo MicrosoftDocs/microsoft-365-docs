@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/20/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -29,7 +29,11 @@ You can use eDiscovery (Premium) and the Microsoft Graph Explorer to search for 
 ## Before you search and purge chat messages
 
 - To create an eDiscovery (Premium) case and use collections to search for chat messages, you have to be a member of the *eDiscovery Manager* role group in the Microsoft Purview compliance portal. To delete chat messages, you have to be assigned the *Search And Purge* role. This role is assigned to the *Data Investigator* and *Organization Management* role groups by default. For more information, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
-- Search and purge are supported for conversations within your tenant. Support for Teams Connect Chat (External Access or Federation) conversations is enabled in the interface in some cases but isn't working as intended.
+- Search and purge are supported for most conversations within your tenant. Support for Teams Connect Chat (External Access or Federation) conversations is enabled in the interface in some cases but isn't working as intended.
+
+    > [!IMPORTANT]
+    > Chat with yourself (or chats by users with themselves) aren't supported for search and purge.
+
 - A maximum of 10 items per mailbox can be removed at one time. Because the capability to search for and remove chat messages is intended to be an incident-response tool, this limit helps ensure that chat messages are quickly removed.
 
 ## Search and purge workflow
@@ -181,7 +185,6 @@ Admins can use the procedures in this article to search and delete Teams chat me
 - Admins can delete the compliance copy in conversation threads owned by their organization. That means compliance copies are purged when the admin who purges the chat messages in Step 5 is in the same organization as the user who initiated the conversation thread that contains the purged messages. If a conversation thread has users in two organizations, compliance copies for the other organization will be retained.
 - If a conversation thread has users in two organizations, purged chat messages are removed from the Teams client in both organizations.
 - The only way to purge chat messages from user mailboxes in your organization for chat messages in conversation threads owned by another organization is to use retention policies for Teams. For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
-
 
 ## End-user experience
 
