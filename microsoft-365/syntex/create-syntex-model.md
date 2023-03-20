@@ -163,7 +163,7 @@ The **Set up a prebuilt model** section shows the types of prebuilt models you c
 
 - **Receipt processing**
  
-- **Receipt processing**
+- **Contract processing**
 
 Select one of the following tabs to continue with the prebuilt model you want to use.
 
@@ -196,7 +196,6 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
 # [Receipt processing](#tab/receipt-processing)
 
-
 1. Select **Receipt processing**.
 
 2. On the **Receipt processing: Details** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
@@ -222,7 +221,7 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
 5. You're now ready to [complete setting up the model](prebuilt-model-receipt.md).
 
-# [Contracts processing](#tab/contract-processing)
+# [Contract processing](#tab/contract-processing)
 
 1. Select **Contract processing**.
 
