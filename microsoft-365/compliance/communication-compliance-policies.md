@@ -57,9 +57,9 @@ Communications are scanned every 24 hours from the time policies are created. Fo
 
 As part of a layered defense to detect and remediate inappropriate messages in your organization, you can supplement communication compliance policies with user-reported messages in Microsoft Teams. This feature empowers users in your organization to self-report inappropriate internal personal and group chat messages, such as harassing or threatening language, sharing of adult content, and sharing of sensitive or confidential information, to help foster a safe and compliant work environment.
 
-Enabled by default in the [Teams admin center](/microsoftteams/manage-teams-in-modern-portal), the *Report a message* option in Teams messages allows users in your organization to submit inappropriate internal personal and group chat messages for review by communication compliance reviewers for the policy. These messages are supported by a default system policy that supports reporting messages in Teams group and private chats.
+Enabled by default in the [Teams admin center](/microsoftteams/manage-teams-in-modern-portal), the *Report this message* option in Teams messages allows users in your organization to submit inappropriate internal personal and group chat messages for review by communication compliance reviewers for the policy. These messages are supported by a default system policy that supports reporting messages in Teams group and private chats.
 
-![Communication compliance report a concern](../media/communication-compliance-report-a-concern-full-menu.png)
+![Communication compliance report a concern](../media/communication-compliance-report-message.png)
 
 When a user submits a Teams chat message for review, the message is copied to the User-reported message policy. Reported messages initially remain visible to all chat members and there isn't any notification to chat members or the submitter that a message has been reported in channel, private, or group chats. A user can't report the same message more than once and the message remains visible to all users included in the chat session during the policy review process.
 
@@ -67,7 +67,7 @@ During the review process, communication compliance reviewers can perform all th
 
 ![Communication compliance user-reported messages policy](../media/communication-compliance-user-reported-messages-policy.png)
 
-User reported messages from Teams chats are the only messages processed by the User-reported message policy and only the assigned reviewers for the policy can be modified. All other policy properties aren't editable. When the policy is created, the initial reviewers assigned to the policy are all members of the *Communication Compliance Admins* role group (if populated with at least one user) or all members of your organization's *Global Admin* role group. The policy creator is a randomly selected user from the *Communication Compliance Admins* role group (if populated with at least one user) or a randomly selected user from your organization's *Global Admin* role group.
+User-reported messages from Teams chats are the only messages processed by the User-reported message policy and only the assigned reviewers for the policy can be modified. All other policy properties aren't editable. When the policy is created, the initial reviewers assigned to the policy are all members of the *Communication Compliance Admins* role group (if populated with at least one user) or all members of your organization's *Global Admin* role group. The policy creator is a randomly selected user from the *Communication Compliance Admins* role group (if populated with at least one user) or a randomly selected user from your organization's *Global Admin* role group.
 
 Admins should immediately assign custom reviewers to this policy as appropriate for your organization. This may include reviewers such as your Compliance Officer, Risk Officer, or members of your Human Resources department. To customize the reviewers for chat messages submitted as user-reported messages, complete the following steps:
 
@@ -77,7 +77,7 @@ Admins should immediately assign custom reviewers to this policy as appropriate 
 4. On the **Detect user-reported messages** pane, assign reviewers for the policy. Reviewers must have mailboxes hosted on Exchange Online. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 5. Select **Save**.
 
-The *Report a message* option is enabled by default and can be controlled via Teams messaging policies in the [Teams Admin Center](/microsoftteams/manage-teams-in-modern-portal). Users in your organization will automatically get the global policy, unless you create and assign a custom policy. Edit the settings in the global policy or create and assign one or more custom policies to turn on or turn off the *Report a message* option. To learn more, see [Manage messaging policies in Teams](/microsoftteams/messaging-policies-in-teams).
+The *Report this message* option is enabled by default and can be controlled via Teams messaging policies in the [Teams Admin Center](/microsoftteams/manage-teams-in-modern-portal). Users in your organization will automatically get the global policy, unless you create and assign a custom policy. Edit the settings in the global policy or create and assign one or more custom policies to turn on or turn off the *Report a message* option. To learn more, see [Manage messaging policies in Teams](/microsoftteams/messaging-policies-in-teams).
 
 >[!IMPORTANT]
 >If you're using PowerShell to turn on or turn off the **End user reporting** option in the Teams Admin Center, you must use [Microsoft Teams cmdlets module version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) or later.
