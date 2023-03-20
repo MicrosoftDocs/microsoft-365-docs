@@ -88,7 +88,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
    5. In Lighthouse, select **Refresh** to refresh the results of the detected configuration.
 
-   When editing existing configurations, **Extra** settings have no impact on the deployment status of the task. You may retain, edit, or discard, **Extra** settings at your discretion.
+   When editing existing configurations, **Extra** settings have no impact on the deployment status of the task. You may retain, edit, or discard **Extra** settings at your discretion.
 
     Once Lighthouse determines there are no settings that are **Not compliant** and **Missing** from all existing configurations, Lighthouse will update the task status to **Compliant**. You will be prompted to exit the wizard.
 
