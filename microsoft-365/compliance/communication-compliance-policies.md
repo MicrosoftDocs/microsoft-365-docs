@@ -57,7 +57,7 @@ Communications are scanned every 24 hours from the time policies are created. Fo
 
 As part of a layered defense to detect and remediate inappropriate messages in your organization, you can supplement communication compliance policies with user-reported messages in Microsoft Teams. This feature empowers users in your organization to self-report inappropriate internal personal and group chat messages, such as harassing or threatening language, sharing of adult content, and sharing of sensitive or confidential information, to help foster a safe and compliant work environment.
 
-Enabled by default in the [Teams admin center](/microsoftteams/manage-teams-in-modern-portal), the *Report this message* option in Teams messages allows users in your organization to submit inappropriate internal personal and group chat messages for review by communication compliance reviewers for the policy. These messages are supported by a default system policy that supports reporting messages in Teams group and private chats.
+Enabled by default in the [Teams admin center](/microsoftteams/manage-teams-in-modern-portal), the *Report inappropriate content* option in Teams messages allows users in your organization to submit inappropriate internal personal and group chat messages for review by communication compliance reviewers for the policy. These messages are supported by a default system policy that supports reporting messages in Teams group and private chats.
 
 ![Communication compliance report this message](../media/communication-compliance-report-message.png)
 
@@ -77,7 +77,7 @@ Admins should immediately assign custom reviewers to this policy as appropriate 
 4. On the **Detect user-reported messages** pane, assign reviewers for the policy. Reviewers must have mailboxes hosted on Exchange Online. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 5. Select **Save**.
 
-The *Report this message* option is enabled by default and can be controlled via Teams messaging policies in the [Teams Admin Center](/microsoftteams/manage-teams-in-modern-portal). Users in your organization will automatically get the global policy, unless you create and assign a custom policy. Edit the settings in the global policy or create and assign one or more custom policies to turn on or turn off the *Report this message* option. To learn more, see [Manage messaging policies in Teams](/microsoftteams/messaging-policies-in-teams).
+The *Report inappropriate content* option is enabled by default and can be controlled via Teams messaging policies in the [Teams Admin Center](/microsoftteams/manage-teams-in-modern-portal). Users in your organization will automatically get the global policy, unless you create and assign a custom policy. Edit the settings in the global policy or create and assign one or more custom policies to turn on or turn off the *Report inappropriate content* option. To learn more, see [Manage messaging policies in Teams](/microsoftteams/messaging-policies-in-teams).
 
 >[!IMPORTANT]
 >If you're using PowerShell to turn on or turn off the **End user reporting** option in the Teams Admin Center, you must use [Microsoft Teams cmdlets module version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) or later.
