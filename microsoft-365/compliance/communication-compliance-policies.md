@@ -59,7 +59,7 @@ As part of a layered defense to detect and remediate inappropriate messages in y
 
 Enabled by default in the [Teams admin center](/microsoftteams/manage-teams-in-modern-portal), the *Report this message* option in Teams messages allows users in your organization to submit inappropriate internal personal and group chat messages for review by communication compliance reviewers for the policy. These messages are supported by a default system policy that supports reporting messages in Teams group and private chats.
 
-![Communication compliance report a concern](../media/communication-compliance-report-message.png)
+![Communication compliance report this message](../media/communication-compliance-report-message.png)
 
 When a user submits a Teams chat message for review, the message is copied to the User-reported message policy. Reported messages initially remain visible to all chat members and there isn't any notification to chat members or the submitter that a message has been reported in channel, private, or group chats. A user can't report the same message more than once and the message remains visible to all users included in the chat session during the policy review process.
 
