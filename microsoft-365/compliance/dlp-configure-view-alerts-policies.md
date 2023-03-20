@@ -162,7 +162,7 @@ To work with the DLP alert management dashboard:
 
 ### Other matched conditions (preview)
 
-Microsoft Purview supports showing additional details about any other matched conditions in a DLP event. This information will show up in:
+Microsoft Purview supports showing matched conditions in a DLP event to reveal the exact cause for a flagged DLP policy. This information will show up in:
 
 - DLP Alerts console
 - [Activity explorer](data-classification-activity-explorer.md#get-started-with-activity-explorer)
