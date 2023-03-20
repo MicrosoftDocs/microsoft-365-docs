@@ -45,7 +45,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **New topic**: Added topic that includes a list of [best practices to help reduce alert "noise"](communication-compliance-alerts-best-practices.md). 
 - **New topic**: Added topic that summarizes the [privacy principles for communication compliance](insider-risk-solution-privacy.md). 
-- Clarification on the [Filter email blasts feature and why the report might include unexpected senders](communication-compliance-configure#step-5-required-create-a-communication-compliance-policy).
+- Clarification on the [Filter email blasts feature and why the report might include unexpected senders](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy).
 - Clarification that [Translation view includes associated conversation view messages](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details).
 
 ### Insider risk management
