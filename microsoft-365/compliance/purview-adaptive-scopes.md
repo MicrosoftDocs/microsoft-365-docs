@@ -23,7 +23,7 @@ description: Learn about Microsoft Purview adaptive scopes for policies.
 
 # Adaptive scopes
 
-When you create a communications compliance policy or a policy for retention, you can create or add an adaptive scope for your policy. A single policy can have one or many adaptive scopes.
+When you create a [communication compliance policy](/microsoft-365/compliance/communication-compliance-policies) or a policy for retention, you can create or add an adaptive scope for your policy. A single policy can have one or many adaptive scopes.
 
 - An adaptive scope uses a query that you specify, so you can define the membership of users or groups included in that query. These dynamic queries run daily against the attributes or properties that you specify for the selected scope. You can use one or more adaptive scopes with a single policy.
 - For example, you can assign different policy settings to users according to their department by using existing Azure AD attributes without the administrative overhead of creating and maintaining groups for this purpose.
@@ -63,7 +63,7 @@ When you choose to use adaptive scopes, you're prompted to select what type of a
 
 
 > [!NOTE]
-> For communications compliance policies, SharePoint sites and OneDrive accounts are not suported. Also, excluded users and Microsoft 365 groups are supported.
+> For communication compliance policies, SharePoint sites and OneDrive accounts are not supported. Excluded users and Microsoft 365 groups are supported.
 
 The property names for sites are based on SharePoint site managed properties. For information about the custom attributes, see [Using Custom SharePoint Site Properties to Apply Microsoft 365 Retention with Adaptive Policy Scopes](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 

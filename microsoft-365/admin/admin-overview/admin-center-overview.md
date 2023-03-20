@@ -32,6 +32,8 @@ description: "Use either simplified view in the Microsoft 365 admin center to ma
 
 # Overview of the Microsoft 365 admin center
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 The Microsoft 365 admin center gives users a central location to take care of common admin tasks, such as: 
 
 - Manage users: [Add users and assign licenses at the same time](../add-users/add-users.md), [Delete or restore users](../add-users/delete-a-user.md), or [Reset a user's password](../add-users/reset-passwords.md).

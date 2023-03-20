@@ -33,6 +33,8 @@ description: "Gather the values/information you need to create DNS records to co
 
 # Gather the information you need to create DNS records
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 ### Step 1: Find the TXT record value and verify

@@ -30,6 +30,8 @@ description: "Learn how to move your data and users from Google Workspace to Mic
 
 # Switch from Google Workspace - Overview
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 You can use the following steps to move your data, email, and users from Google Workspace to Microsoft 365 for business. Use the articles and videos in each step to help you prepare and configure your environment to migrate and use the migration tools available to you in the Microsoft Admin center.
 
 
