@@ -222,19 +222,19 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
 5. You're now ready to [complete setting up the model](prebuilt-model-receipt.md).
 
-# [Contracts processing](#tab/contracts-processing)
+# [Contracts processing](#tab/contract-processing)
 
-1. Select **Contracts processing**.
+1. Select **Contract processing**.
 
-2. On the **Contracts processing: Details** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
+2. On the **Contract processing: Details** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
 
-3. On the right panel of the **Create a contracts processing model** page, enter the following information.
+3. On the right panel of the **Create a contract processing model** page, enter the following information.
 
     - **Model name** – Enter the name of the model, for example *Service agreement*.
 
     - **Description** – Enter information about how this model will be used.
 
-        ![Screenshot of the right panel of the Create a contracts processing model page.](../media/content-understanding/create-a-model-panel.png) 
+        ![Screenshot of the right panel of the Create a contract processing model page.](../media/content-understanding/create-a-model-panel.png) 
     
 4. Under **Advanced settings**:
 
@@ -249,5 +249,5 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
 6. You're now ready to [complete setting up the model](prebuilt-model-contract.md).
 
----
+
 
