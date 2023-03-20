@@ -36,7 +36,7 @@ Keeping Microsoft Defender Antivirus up to date is critical to protecting agains
 - Security intelligence updates
 - Product updates 
 
-To manage your security intelligence and product updates, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+To manage your security intelligence and product updates, see [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).
 
 ## Fine-tune and adjust Defender for Endpoint
 

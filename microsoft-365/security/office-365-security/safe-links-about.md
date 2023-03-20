@@ -204,14 +204,14 @@ You turn on or turn off Safe Links protection for Office apps in Safe Links poli
 
 Safe Links protection for Office apps has the following client requirements:
 
-- Microsoft 365 Apps or Microsoft 365 Business Premium.
+- Microsoft 365 Apps or Microsoft 365 Business Premium:
   - Current versions of Word, Excel, and PowerPoint on Windows, Mac, or in a web browser.
   - Office apps on iOS or Android devices.
   - Visio on Windows.
   - OneNote in a web browser.
   - Outlook for Windows when opening saved EML or MSG files.
 
-- Office apps are configured to use modern authentication. For more information, see [How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](../../enterprise/modern-auth-for-office-2013-and-2016.md).
+- Supported Office apps and Microsoft 365 services are configured to use modern authentication. For more information, see [How modern authentication works for Office client apps](../../enterprise/modern-auth-for-office-2013-and-2016.md).
 
 - Users are signed in using their work or school accounts. For more information, see [Sign in to Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).
 

@@ -59,12 +59,6 @@ productDirectory:
       summary: Learn how to set up and manage Microsoft 365 for your business with short videos.
       url: https://go.microsoft.com/fwlink/?linkid=2197659
     # Card
-    - title: Top 20 most-viewed admin help articles this month
-      # need to pick new image for this
-      imageSrc: /office/media/icons/education-tutorial-blue.svg
-      summary: Check out the help articles that are most popular with other admins.
-      url: top-m365-admin-articles.yml
-    # Card
     - title: Get started
       imageSrc: /office/media/icons/sign-up-blue.svg
       summary: Sign up and set up Microsoft 365.
@@ -112,10 +106,6 @@ additionalContent:
         - title: Subscriptions and billing
           summary: Manage bills, subscriptions, and product licenses, update payment methods, and purchase additional services and storage.
           url: ../commerce/index.yml
-        # Card
-        - title: Secure your organization
-          summary: Learn about the best ways to secure your organization like setting up multifactor authentication (MFA), Microsoft Secure Score, and GDPR.
-          url:  security-and-compliance/secure-your-business-data.md
         # Card
         - title: Work with customers
           summary: Share documents and use Teams to collaborate and meet.
