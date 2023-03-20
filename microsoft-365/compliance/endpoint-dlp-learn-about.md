@@ -228,9 +228,15 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 
 Endpoint DLP can use **Just in just in time protection** once it is enabled in **Microsoft Purview compliance console** > **Settings**. 
 
-Just in time protection applies a candidate DLP policy to all new and existing monitored files on onboarded Windows devices. The candidate policy blocks all egress activities on monitored files until policy evaluation completes successfully.
+Just in time protection applies a candidate policy to onboarded Windows 10/11 devices. The candidate policy blocks all egress activities on monitored files until policy evaluation completes successfully. The candidate policy is applied to:
 
-You can prevent a file from being permanently blocked if policy evaluation starts on a file, but doesn't complete. Use the **Just in time protection configuration** fallback setting to either **Allow** or **Block** egress activities if policy evaluation doesn't complete in 30 seconds. You configure fallback settings in **Microsoft Purview compliance console** > **Data loss prevention** > **Endpoint DLP settings** > **Additional settings for endpoint DLP** > **Just in time protection configuration**.
+- Items that have never been evaluated.
+- Items on which the evaluation has gone stale. These are previously evaluated items that haven't been reevaluated by the current, updated cloud versions of the policies.
+
+You can prevent a file from being permanently blocked if policy evaluation starts on a file, but doesn't complete. Use the **Just in time protection configuration** fallback setting to either **Allow** or **Block** egress activities if policy evaluation doesn't complete in 30 seconds. You configure fallback settings in **Microsoft Purview compliance console** > **Settings** > **Just in time protection configuration** > **Decide what happens if JIT protection fails**.
+
+You can [scope](dlp-policy-reference.md#policy-scoping) just in time protection deployment to certain users and groups using [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) and locations.
+
 
 ## Next steps
 
