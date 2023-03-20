@@ -32,7 +32,7 @@ You can use eDiscovery (Premium) and the Microsoft Graph Explorer to search for 
 - Search and purge are supported for most conversations within your tenant. Support for Teams Connect Chat (External Access or Federation) conversations is enabled in the interface in some cases but isn't working as intended.
 
     > [!IMPORTANT]
-    > Chat with yourself (or chats by users with themselves) aren't supported for search and purge.
+    > Chats with yourself (or chats by users with themselves) aren't supported for search and purge.
 
 - A maximum of 10 items per mailbox can be removed at one time. Because the capability to search for and remove chat messages is intended to be an incident-response tool, this limit helps ensure that chat messages are quickly removed.
 
