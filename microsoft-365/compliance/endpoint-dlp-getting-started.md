@@ -75,13 +75,13 @@ You can onboard virtual machines as monitored devices in Microsoft Purview compl
 Here are the virtual operating systems that are supported by virtualization environments.
 
 
-|Virtualization </br> platform  |Windows 10 |Windows 11  |Windows server 2019 |Windows server 2022|
-|---------|---------|---------|---------|-------|
-|Azure virtual desktop (AVD)|- Single session supported for 20H2, 21H1, 21H2</br>- Multi session supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session supported for 22H2|1809 and higher supported |21H2 and higher Data center supported|
-|Citrix Virtual Apps and Desktops 7 (2209)|- Single session supported for 20H2, 21H1, 21H2</br>- Multi session supported for 20H2, 21H1, 21H2|- Single session supported for 21H2 (Gen2)</br>- Multi session supported for 21H2 (Gen 2)|1809 and higher supported |21H2 and higher Data center supported|
-|Azure Web Services Workspaces     |- Windows 10 experience on Windows Server 2019 supported|Not supported         |Not supported         |Not supported       |
-|Azure virtual desktop (AVD)|- Single session supported for 20H2, 21H1, 21H2</br>- Multi session supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session supported for 22H2|1809 and higher supported |21H2 and higher Data center supported|
-|Hyper-V    |- Single session supported for 20H2, 21H1, 21H2</br>- Multi session with Hybrid AD join supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session with Hybrid AD join supported for 22H2| 1809 with Hybrid AD join and higher supported   |21H2 and higher Data center with Hybrid AD join supported |
+|Virtualization </br> platform  |Windows 10 |Windows 11  |
+|---------|---------|---------|
+|Azure virtual desktop (AVD)|- Single session supported for 20H2, 21H1, 21H2</br>- Multi session supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session supported for 22H2|1809 and higher supported |
+|Citrix Virtual Apps and Desktops 7 (2209)|- Single session supported for 20H2, 21H1, 21H2</br>- Multi session supported for 20H2, 21H1, 21H2|- Single session supported for 21H2 (Gen2)</br>- Multi session supported for 21H2 (Gen 2)|
+|Azure Web Services Workspaces     |- Windows 10 experience on Windows Server 2019 supported|Not supported         |Not supported |
+|Azure virtual desktop (AVD)|- Single session supported for 20H2, 21H1, 21H2</br>- Multi session supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session supported for 22H2|
+|Hyper-V    |- Single session supported for 20H2, 21H1, 21H2</br>- Multi session with Hybrid AD join supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session with Hybrid AD join supported for 22H2|
 
 <!-- #### Known issues
 
