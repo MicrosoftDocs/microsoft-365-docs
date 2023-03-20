@@ -216,7 +216,7 @@ The following actions are available after you click ![More actions icon.](../../
 
 - ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete from quarantine**: The message is deleted and is not sent to the original recipients. How the message is deleted depends on your selections in the flyout that opens:
   - Select **Permanently delete the message from quarantine** and then click **Delete**: The message is permanently deleted and is not recoverable.
-  - Click **Delete** only: The message is deleted, but is recoverable within 30 days.
+  - Click **Delete** only: The message is deleted, but is potentially recoverable.
 
 - ![Download email icon.](../../media/m365-cc-sc-download-icon.png) **Download email**: In the flyout that appears, configure the following settings:
   - **Reason for downloading file**: Enter descriptive text.
@@ -282,7 +282,7 @@ When you select multiple quarantined messages in the list (up to 100) by clickin
 
 - ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete from quarantine**: The messages are deleted and are not sent to the original recipients. How the messages are deleted depends on your selections in the flyout that opens:
   - Select **Permanently delete the message from quarantine** and then click **Delete**: The messages are permanently deleted and are not recoverable.
-  - Click **Delete** only: The messages are deleted, but they're recoverable within 30 days.
+  - Click **Delete** only: The messages are deleted, but they're potentially recoverable.
 - **... More** \> ![Submit only icon.](../../media/m365-cc-sc-create-icon.png) **Submit for review**.
 - **... More** \> ![Download email icon.](../../media/m365-cc-sc-download-icon.png) **Download messages**
 
