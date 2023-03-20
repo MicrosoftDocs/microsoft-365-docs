@@ -1,7 +1,7 @@
 ---
-title: Get scan details by agent
-description: Learn how to use the get scan details by agent api
-keywords: apis, graph api, supported apis, scan history, definition
+title: Get agent details
+description: Learn how to use the get agent details api
+keywords: apis, graph api, supported apis, agent details, definition
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 12/15/2022
 ---
 
-# Get scan details by agent
+# Get agent details
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.date: 12/15/2022
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
+> Want to experience Microsoft Defender Vulnerability Management? Find out how to [sign up for a free trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
@@ -43,7 +43,7 @@ ms.date: 12/15/2022
 
 ## API description
 
-Retrieves a list of the scan history by definitions.
+Retrieves the details for a specified agent.
 
 ## Limitations
 
@@ -86,7 +86,8 @@ AgentId |String|The agent Id. **Required**.
 
 ## Response
 
-If successful, this method returns 200 - OK response code with a list of the scan history by definition.
+If successful, this method returns 200 - OK response code with the details of the specified agent.
+
 
 ## Example request
 
