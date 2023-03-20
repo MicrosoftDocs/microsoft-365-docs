@@ -397,7 +397,7 @@
 
 - name: Microsoft app guidance and scenarios
   items: 
-    - name: Purchase and add apps in Microsoft Intune
+    - name: Purchase and add apps for Microsoft Intune
       items: 
       - name: Overview
         href: apps-guide-overview.md

@@ -40,6 +40,6 @@ Follow these steps to add apps to Intune:
 4. [Add apps to Intune](apps-add-step-4.md)
 5. [Manage apps and licenses](apps-add-step-5.md)
 
-[![Steps to add apps to Microsoft Intune](../media/purchase-add-managed-apps/purchase-add-managed-apps-02.png)](apps-add-step-1.md)
+[![Steps to add apps to Microsoft Intune](../media/purchase-add-managed-apps/purchase-add-managed-apps-19.png)](apps-add-step-1.md)
 
 Once you've completed the above steps, you are ready to configure, protect, assign, and monitor the managed apps your organization uses.
