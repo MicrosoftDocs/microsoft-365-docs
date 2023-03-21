@@ -187,10 +187,8 @@ These are the features and known gaps for [Mobile Threat Defense (Microsoft Defe
 |Support for MAM|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Privacy Controls|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Microsoft Defender Vulnerability Management core capabilities |![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Microsoft Defender Vulnerability Management premium capabilities |![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
 
 > [!NOTE]
-> Microsoft Defender Vulnerability Management core capabilities are included with Defender for Endpoint Plan 2. For more information on what the core capabilities available are, see [Vulnerability Management capabilities for endpoints](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md#vulnerability-management-capabilities-for-endpoints).
 >
 > The Defender Vulnerability Management Report inaccuracy feature is not available for GCC customers.
->
-> Defender Vulnerability Management add-on premium capabilities are not available to GCC customers.
