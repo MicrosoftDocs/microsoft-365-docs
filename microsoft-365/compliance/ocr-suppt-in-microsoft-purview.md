@@ -22,11 +22,11 @@ description: How to implement this preview of optical character recognition (OCR
 # Support for optical character recognition in Microsoft Purview (preview)
 
 Microsoft Purview can scan for content in documents to help protect those documents from inappropriate exposure. Microsoft Purview supports optical character recognition (OCR) scanning to detect content in images. With OCR scans enabled, you can apply policies to protect the information in those images.
-<br>
+<br><br>
 OCR scanning is an optional feature in Microsoft Purview. When you enable optical character recognition (OCR) data classifiers, such as sensitive information types and trainable classifiers, can detect characters that are in images. To set up pay-as-you-go billing for OCR scans.
-<br>
+<br><br>
 OCR is first enabled at the tenant level, and then you select which services you want to enable it for. Image scanning is available for images in Exchange, SharePoint, OneDrive for Business, Teams, and Windows endpoint devices
-<br>
+<br><br>
 Once the OCR settings are configured, your existing policies for data loss protection (DLP), data lifecycle management, data loss prevention, and autolabeling for insider risk are applied to both images and documents. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview not only scans for credit card numbers in both text and images at those locations.
 
 ## Workflow at a glance
