@@ -44,7 +44,7 @@ The numbers listed are the minimum Office application versions required for each
 
 |Capability |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
-|[AIP add-in disabled by default](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in)|Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2302+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Not relevant  |Not relevant |Not relevant|Not relevant |
+|[AIP add-in disabled by default](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in)|Rolling out to Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2302+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Not relevant  |Not relevant |Not relevant|Not relevant |
 |[Manually apply, change, or remove label](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)|Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ |16.21+ | 2.21+ | 16.0.11231+ |[Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Multi-language support](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)|Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ |16.21+|2.21+ |16.0.11231+ |Under review |
 |[Apply a default label](sensitivity-labels.md#what-label-policies-can-do) to new documents |Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ |16.21+ |2.21+ |16.0.11231+ |[Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md)|
@@ -76,7 +76,7 @@ The numbers listed are the minimum Office application versions required for each
 
 |Capability |Outlook for Windows |Outlook for Mac |Outlook on iOS |Outlook on Android |Outlook on the web |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
-|[AIP add-in disabled by default](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in)|Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2302+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Not relevant |Not relevant |Not relevant|Not relevant |
+|[AIP add-in disabled by default](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in)|Rolling out to Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2302+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Not relevant  |Not relevant |Not relevant|Not relevant |
 |Manually apply, change, or remove label <br /> - [Files and emails](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)|Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ |16.21+ | 4.7.1+ | 4.0.39+ | Yes |
 |Manually apply, change, or remove label <br /> - [Calendar items](sensitivity-labels-meetings.md)| Current Channel: Rolling out to 2302+ |Rolling out: 16.70+ <sup>\*</sup> |Under review |Under review |Yes |
 |[Multi-language support](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)|Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ |16.21+ |4.7.1+ |4.0.39+ |Yes |
