@@ -45,7 +45,6 @@ where  _IP address_ is the IP address of the computer on which the mail server r
 ## Verify senders before removing them from the blocked senders list
 
 There are good reasons for senders to wind up on the blocked senders list, but mistakes can happen. Take a look at this video for a balanced explanation of blocked senders and delisting.
-<p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvD]
 
@@ -75,12 +74,12 @@ There are good reasons for senders to wind up on the blocked senders list, but m
 See [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam protection in EOP](outbound-spam-protection-about.md) to prevent an IP from being blocked.
 
 ### How to fix error code 5.7.511
- 
+
 When there's a problem delivering an email message that you sent, Microsoft 365 or Office 365 sends an email notification to let you know. The email notification is known a delivery status notification or DSN. The most common type of DSN is a non-delivery report (also known as an NDR or bounce message) that tells you that a message wasn't delivered. In certain situations, Microsoft must conduct additional investigations against traffic from your IP address. If you receive and NDR with code 5.7.511, you **will not** be able to use the delist portal.
- 
->	550 5.7.511 Access denied, banned sender[xxx.xxx.xxx.xxx]. To request removal from this list, forward this message to delist@microsoft.com. For more information, go to https://go.microsoft.com/fwlink/?LinkId=526653. 
- 
-In the email to request removal from this list, provide the full NDR code and IP address. Microsoft will contact you within 48 hours with the next steps. 
+
+> 550 5.7.511 Access denied, banned sender[xxx.xxx.xxx.xxx]. To request removal from this list, forward this message to delist@microsoft.com. For more information, go to https://go.microsoft.com/fwlink/?LinkId=526653.
+
+In the email to request removal from this list, provide the full NDR code and IP address. Microsoft will contact you within 48 hours with the next steps.
 
 ## More information
 
