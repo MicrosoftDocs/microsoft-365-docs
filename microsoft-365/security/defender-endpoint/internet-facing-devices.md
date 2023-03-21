@@ -95,6 +95,12 @@ DeviceNetworkEvents
 >[!NOTE]
 > Currently UDP information is not available in advanced hunting.
 
+If the above query fails to provide the relevant connections, you can use socket collection methods to retrieve the source process. To learn more about different tools and capabilities available to do this, see:
+
+- [Defender for Endpoint live response](live-response.md)
+- [Microsoft Network Monitor](/troubleshoot/windows-client/networking/collect-data-using-network-monitor)
+- [Netstat for Windows Server](/windows-server/administration/windows-commands/netstat)
+
 ## Use advanced hunting
 
 You can use advanced hunting queries to gain visibility into internet-facing devices in your organization, for example:
