@@ -466,7 +466,7 @@ The admin can select a quarantined message from the list to view or take action 
 
 ```powershell
   Get-QuarantineMessage -Identity c14401cf-aa9a-465b-cfd5-08d0f0ca37c5\4c2ca98e-94ea-db3a-7eb8-3b63657d4db7 |
-  -Scenarios Email
+  -Scenarios Teams
 ```
 
 ## For more information
