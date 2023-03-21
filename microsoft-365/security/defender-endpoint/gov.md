@@ -191,4 +191,4 @@ These are the features and known gaps for [Mobile Threat Defense (Microsoft Defe
 
 > [!NOTE]
 >
-> The Defender Vulnerability Management Report inaccuracy feature is not available for GCC customers.
+> The Defender Vulnerability Management Report inaccuracy functionality is not available for GCC customers.
