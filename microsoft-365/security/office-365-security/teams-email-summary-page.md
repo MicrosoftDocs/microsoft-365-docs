@@ -57,3 +57,11 @@ The **participants section** includes a lot of message information like the conv
 :::image type="content" source="../../media/Teams-Message-Entity-Panel-shown-in-Quarantine.png" alt-text="Teams Message Entity panel as it is seen in Quarantine." lightbox="../../media/Teams-Message-Entity-Panel-shown-in-Quarantine.png":::
 
 The **URLs section** displays the extracted URL from the Teams message(s), the threat identified regarding the URL, and links to a second layer overlay flyout, a panel that lists all the URLs and the threats associated with them.
+
+## For more information see
+
+[The Microsoft Defender for Office 365 Email Entity Page and how it works](https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-email-entity-page?view=o365-worldwide)
+
+[Safelinks in Microsoft Defender for Office 365](https://learn.microsoft.com/microsoft-365/security/office-365-security/safe-links-about?view=o365-worldwide)
+
+[Zero-hour Auto Purge or ZAP in Microsoft Defender for Office 365](https://learn.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge?view=o365-worldwide)
