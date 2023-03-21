@@ -68,7 +68,7 @@ Watch this short video to learn how to manage quarantined messages as an adminis
 
 2. On the **Quarantine** page, verify that the **Email** tab is selected.
 
-3. You can sort the results by clicking on an available column header. Click **Customize columns**  to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
+3. You can sort the results by clicking on an available column header. Click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
    - **Time received**<sup>\*</sup>
    - **Subject**<sup>\*</sup>
@@ -86,7 +86,7 @@ Watch this short video to learn how to manage quarantined messages as an adminis
 
    When you're finished, click **Apply**.
 
-4. To filter the results, click **Filter**. The following filters are available in the **Filters** flyout that appears:
+4. To filter the results, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**. The following filters are available in the **Filters** flyout that appears:
    - **Message ID**: The globally unique identifier of the message.
 
      For example, you used [message trace](message-trace-scc.md) to look for a message that was sent to a user in your organization, and you determine that the message was quarantined instead of delivered. Be sure to include the full message ID value, which might include angle brackets (\<\>). For example: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
@@ -94,7 +94,12 @@ Watch this short video to learn how to manage quarantined messages as an adminis
    - **Sender address**
    - **Recipient address**
    - **Subject**
-   - **Time received**: Enter a **Start time** and **End time** (date).
+   - **Time received**:
+     - **Last 24 hours**
+     - **Last 7 days**
+     - **Last 14 days**
+     - **Last 30 days**
+     - **Custom**: Enter a **Start time** and **End time** (date).
    - **Expires**: Filter messages by when they will expire from quarantine:
      - **Today**
      - **Next 2 days**
@@ -105,6 +110,7 @@ Watch this short video to learn how to manage quarantined messages as an adminis
      - **Transport rule** (mail flow rule)
      - **Bulk**
      - **Spam**
+     - **Data loss prevention**
      - **Malware**: Anti-malware policies in EOP or Safe Attachments policies in Defender for Office 365. The **Policy Type** value indicates which feature was used.
      - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](anti-phishing-policies-about.md#spoof-settings) or [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **High confidence phishing**
@@ -115,12 +121,15 @@ Watch this short video to learn how to manage quarantined messages as an adminis
      - **Denied**
      - **Release requested**
      - **Released**
+     - **Preparing to release**
+     - **Error**
    - **Policy Type**: Filter messages by policy type:
      - **Anti-malware policy**
      - **Safe Attachments policy**
      - **Anti-phishing policy**
      - **Anti-spam policy**
      - **Transport rule** (mail flow rule)
+     - **Data loss prevention rule**
 
    When you're finished, click **Apply**. To clear the filters, click ![Clear filters icon.](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
@@ -204,7 +213,9 @@ The following actions are available after you click ![More actions icon.](../../
   - **Source**: Shows the HTML version of the message body with all links disabled.
   - **Plain text**: Shows the message body in plain text.
 
-- ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete from quarantine**: If you select **permanently delete** in the warning dialog that appears, the message is permanently deleted without being sent to the original recipients. If you don't select **permanently delete**, the message is temporarily deleted.
+- ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete from quarantine**: The message is deleted and is not sent to the original recipients. How the message is deleted depends on your selections in the flyout that opens:
+  - Select **Permanently delete the message from quarantine** and then click **Delete**: The message is permanently deleted and is not recoverable.
+  - Click **Delete** only: The message is deleted, but is potentially recoverable.
 
 - ![Download email icon.](../../media/m365-cc-sc-download-icon.png) **Download email**: In the flyout that appears, configure the following settings:
   - **Reason for downloading file**: Enter descriptive text.
@@ -253,11 +264,9 @@ If you don't release or remove the message, it will be deleted after the default
 
 #### Take action on multiple quarantined email messages
 
-When you select multiple quarantined messages in the list (up to 100) by clicking in the blank area to the left of the first column, the **Bulk actions** drop down list appears where you can take the following actions:
+When you select multiple quarantined messages in the list (up to 100) by clicking in the empty check box to the left of the first column, you can take the following actions on the selected messages:
 
-:::image type="content" source="../../media/quarantine-message-bulk-actions.png" alt-text="The Bulk actions drop-down list for messages in quarantine" lightbox="../../media/quarantine-message-bulk-actions.png":::
-
-- ![Release email icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Releases messages to all recipients. In the flyout that appears, you can choose the following options, which are the same as when you release a single message:
+- ![Release email icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release**: Releases messages to all recipients. In the flyout that appears, you can choose the following options, which are the same as when you release a single message:
   - **Add sender to your organization's allow list**
   - **Send a copy of this message to other recipients**
   - **Submit the message to Microsoft to improve detection (false positive)**
@@ -270,9 +279,11 @@ When you select multiple quarantined messages in the list (up to 100) by clickin
   > [!NOTE]
   > Consider the following scenario: john@gmail.com sends a message to faith@contoso.com and john@subsidiary.contoso.com. Gmail bifurcates this message into two copies that are both routed to quarantine as phishing in Microsoft. An admin releases both of these messages to admin@contoso.com. The first released message that reaches the admin mailbox is delivered. The second released message is identified as duplicate delivery and is skipped. Message are identified as duplicates if they have the same message ID and received time.
 
-- ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately removed from quarantine without being sent to the original recipients.
-- ![Download email icon.](../../media/m365-cc-sc-download-icon.png) **Download messages**
-- ![Submit only icon.](../../media/m365-cc-sc-create-icon.png) **Submit only**
+- ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete from quarantine**: The messages are deleted and are not sent to the original recipients. How the messages are deleted depends on your selections in the flyout that opens:
+  - Select **Permanently delete the message from quarantine** and then click **Delete**: The messages are permanently deleted and are not recoverable.
+  - Click **Delete** only: The messages are deleted, but they're potentially recoverable.
+- **... More** \> ![Submit only icon.](../../media/m365-cc-sc-create-icon.png) **Submit for review**.
+- **... More** \> ![Download email icon.](../../media/m365-cc-sc-download-icon.png) **Download messages**
 
 ## Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365
 
