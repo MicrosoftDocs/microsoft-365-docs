@@ -46,30 +46,35 @@ The requests below are done with the [Microsoft Graph API](/graph/graph-explorer
 
 2. Retrieve “id” field from the response payload. This is your organization ID, referred to as **my-org-id**.
 
-3. Make a GET request to the following endpoint to get the current state of profile video admin setting: https://graph.microsoft.com/beta/organization/my-org-id/settings/profileVideo. The response should look like this:
+3. Make a GET request to the following endpoint to get the current state of profile video admin setting: https://graph.microsoft.com/beta/organization/my-org-id/settings/profileVideo The response should look like this:
 
+```
 { "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('**my-org-id**')/settings/profileVideo/$entity",
 
 "isEnabledInOrganization": false
 
 }
+```
 
 The “isEnabledInOrganization” field will be set to either true or false. True means profile video capabilities are on and false means users can't make profile videos.
 
-4. Make a PATCH request to the following endpoint to update state of profile video admin setting: https://graph.microsoft.com/beta/organization/my-org-id/settings/profileVideo with the following request body:
+4. Make a PATCH request to the following endpoint to update state of profile video admin setting, https://graph.microsoft.com/beta/organization/my-org-id/settings/profileVideo, with the following request body:
+
+```
 
 {
 
 "isEnabledInOrganization": true
 
 }
+```
 
 In the request body, populate the value for **isEnabledInOrganization** to either true or false, depending on whether you’d like to turn profile videos on or off.
 
 5. Send the request. If it's successful, you should receive a 200 HTTP response code, and the response payload should confirm that your feature has been turned on or off. To validate, you can rerun the steps in the section “Get current state profile video admin toggle” to get the updated value.
 
 > [!IMPORTANT]
-> Due to caching and replication, it may take up to 12 hours before changes take effect for users.
+> It may take up to 12 hours before changes take effect for users.
 
 ## Frequently asked questions
 
@@ -79,7 +84,7 @@ In the request body, populate the value for **isEnabledInOrganization** to eithe
 
 * **Can users control who can see their profile video?**
 
-  Yes, users can view and change who can view their profile video.  by following the steps: navigate to their OneDrive for Business in the web browser , navigate to the following path: "Apps\Microsoft People Cards Service\Live Persona Card" folder, click on the “...” button in “Profile Video.webm” to open the overflow menu, click “Manage Access”, and add and remove users and groups that they would like to share this video with. **Add to the end-user topic.**
+  Yes, users can view and change who can view their profile video by following these steps. Open their OneDrive for Business in a web browser and navigate to the following folder: **Apps\Microsoft People Cards Service\Live Persona Card**. Select the **...** button in **Profile Video.webm**” to open the overflow menu and select **Manage Access**. Add and remove users and groups that they would like to share this video with.
 
 * **Can I turn off profile videos for individual users?**
 
