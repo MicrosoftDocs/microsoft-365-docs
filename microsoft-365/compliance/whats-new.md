@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/20/2023
+ms.date: 03/21/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -61,7 +61,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 
-- **AIP add-in disabled by default**: The AIP add-in for Office apps is now disabled by default beginning with version 2302. Starting with this version, you must [configure an Office setting](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in) if you need to continue to use the Azure Information Protection (AIP) add-in rather than the labels that are built into Office apps.
+- **AIP add-in disabled by default**: Now rolling out, the AIP add-in for Office apps is disabled by default beginning with version 2302. Starting with this version, you must [configure an Office setting](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in) if you need to continue to use the Azure Information Protection (AIP) add-in rather than the labels that are built into Office apps.
 - **General availability (GA)**: For Windows, the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [label colors](sensitivity-labels-office-apps.md#label-colors) are now generally available for Word, Excel, PowerPoint, and Outlook.
 - **General availability (GA)**: Both Outlook for Windows and Outlook for Mac are rolling out in general availability for [protected meetings](sensitivity-labels-meetings.md).
 - **General availability (GA)**: Now in general availability for built-in labeling for Windows, support for a [default sublabel for a parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label) as a parity feature for the AIP add-in.
