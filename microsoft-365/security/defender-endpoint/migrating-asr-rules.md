@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 03/26/2021
 ---
 
-# Migrating from a third-party HIPS to Attack Surface Reduction (ASR) rules
+# Migrating from a third-party HIPS to ASR rules
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -29,7 +29,7 @@ ms.date: 03/26/2021
 
 This article helps you to map common rules to Microsoft Defender for Endpoint.
 
-## Scenarios when migrating from a third-party HIPS product to Azure Site Recovery rules
+## Scenarios when migrating from a third-party HIPS product to ASR rules
 
 ### Block creation of specific files
 
