@@ -84,7 +84,7 @@
     - name: Reference information
       items: 
       - name: Top 10 ways to secure your business data
-        href: ../../admin/security-and-compliance/secure-your-business-data.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
+        href: ../../business-premium/secure-your-business-data.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
       - name: Glossary of security terms
         href: ../../business-premium/m365bp-glossary.yml?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
       - name: How to get help or contact support
