@@ -72,29 +72,29 @@ In the request body, populate the value for **isEnabledInOrganization** to eithe
 ## Frequently asked questions
 
 * **Where are profile videos stored?**
-    
+
   Profile videos are stored in a user’s OneDrive for Business, in the **Apps\Microsoft People Cards Service\Live Persona Card** folder.
 
 * **Can users control who can see their profile video?**
-    
+
   Yes, users can view and change who can view their profile video.  by following the steps: navigate to their OneDrive for Business in the web browser , navigate to the following path: "Apps\Microsoft People Cards Service\Live Persona Card" folder, click on the “...” button in “Profile Video.webm” to open the overflow menu, click “Manage Access”, and add and remove users and groups that they would like to share this video with. **Add to the end-user topic.**
 
 * **Can I turn off profile videos for individual users?**
-    
+
   No, you can't turn off profile videos for individual users at this time.
 
 * **Can I turn off profile videos based on location?**
-    
+
   No, you can't turn off profile videos based on location at this time.
 
 * **Does disabling profile videos also result in the deletion of the profile video file in OneDrive for Business?**
-    
+
   No, turning off profile videos won't delete a user's profile video file.
 
 * **Who can view profile videos?**
-    
+
   Profile videos are available to everyone at your work or school. Profile videos aren't viewable by people outside of your organization.
 
 * **Can deleted profile videos be recovered?**
-    
+
   No, if a user deletes their profile video, it can't be recovered.
