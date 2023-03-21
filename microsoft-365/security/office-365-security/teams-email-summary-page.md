@@ -76,6 +76,6 @@ The **sender section** displays domain information, like the domain of the sende
 
 The **participants section** includes a lot of message information like the conversation type, chat name, chat ID, and the name and email addresses of all of the participants (excluding the sender). It also links to a secondary overlay flyout that lists all the participants in the chat at the time of the suspected threat.
 
-:::image type="content" source="../../media/Teams-Message-Entity-Panel-shown-in-Quarantine.png" alt-text="Teams Message Entity panel as it is seen in Quarantine." lightbox="../../media/Teams-Message-Entity-Panel-shown-in-Quarantine.png":::
+:::image type="content" source="../../media/teams-message-entity-panel-shown-in-quarantine-with-more-than-10-participants.png" alt-text="Teams Message Entity panel as it is seen in Quarantine." lightbox="../../media/teams-message-entity-panel-shown-in-quarantine-with-more-than-10-participants.png":::
 
 The **URLs section** displays the extracted URL from the Teams message(s), the threat identified regarding the URL, and links to a second layer overlay flyout, a panel that lists all the URLs and the threats associated with them.
