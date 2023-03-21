@@ -63,7 +63,7 @@ See [Onboard devices to Microsoft Defender for Business](../security/defender-bu
 
 ## Onboard mobile devices using the Microsoft Defender app
 
-If you have opted in to receive preview features, you can now onboard Android and iOS devices using the Microsoft Defender app. With mobile threat defense capabilities in Defender for Business, users download the Microsoft Defender app from Google Play or the Apple App Store, sign in, and complete onboarding steps. To learn more about onboarding devices using this method, see [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md).
+If you have opted in to receive preview features, you can now onboard Android and iOS devices using the Microsoft Defender app. With [mobile threat defense capabilities in Defender for Business](../security/defender-business/mdb-mtd.md), users download the Microsoft Defender app from Google Play or the Apple App Store, sign in, and complete onboarding steps. To learn more about onboarding devices using this method, see [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md).
 
 To learn more about mobile threat defense, see [Mobile threat defense capabilities in Microsoft Defender for Business](../security/defender-business/mdb-mtd.md).
 
