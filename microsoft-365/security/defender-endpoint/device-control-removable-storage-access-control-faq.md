@@ -108,7 +108,7 @@ Different from AD group, the Sid is using Object Id for Azure AD group. You can 
 
 ## Why is my printer blocked in my organization?
 
-The **Default Enforcement** setting is for all device control components, which means if you set it to `Deny`, it will block all printers as well. You can either create custom policy to explictly allow printers or you can replace the Default Enforcement policy with a custom policy.
+The **Default Enforcement** setting is for all device control components, which means if you set it to `Deny`, it will block all printers as well. You can either create custom policy to explicitly allow printers or you can replace the Default Enforcement policy with a custom policy.
 
 
 ## Why creating a folder is not blocked by File system level access
