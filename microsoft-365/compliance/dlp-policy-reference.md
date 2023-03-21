@@ -284,7 +284,7 @@ When an item matches multiple policies and those policies differ in action, the 
 **[override options](#user-overrides)**
 When an item matches multiple policies and those policies differ in the override option, actions are applied in this order:
 
-*No override* > *Allow override with justification* > *Allow override without justification* > *Allow false positive override*
+*No override* > *Allow override*
 
 Here are scenarios that illustrate the runtime behavior. For the first three scenarios, you have three DLP policies configured like this:
 
