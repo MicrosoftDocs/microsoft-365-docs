@@ -112,9 +112,9 @@ Topic | Description
 
 You can check the **Configuration status** and the **Policy sync status** of all your onboarded devices in the **Devices** list. For macOS devices the minimum version is 101.95.07. For more information on the configuration and policy status, select an onboarded device to open the details pane.
 
-**Configuration status** shows you if the device is configured correctly, is sending a heartbeat signal to Purview, and the last time the configuration was validated. For macOS  devices configuration includes:
+**Configuration status** shows you if the device is configured correctly, meets DLP configuration requirements, and the last time the configuration was validated. For macOS  devices configuration includes:
 - Checking the UPN configuration by making sure your devices are [onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) if you are using Intune.
-- making sure that they are enrolled in the [Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)
+- Making sure that they are enrolled in the [Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)
 - If you use [JAMF Pro make sure that they are onboarded](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) for checking the UPN configuration.
 
 **Policy sync status** shows you if the most current versions of the endpoint DLP policies have been synchronized to the device and the last time a policy sync occurred.

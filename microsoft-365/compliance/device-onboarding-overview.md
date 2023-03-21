@@ -146,7 +146,7 @@ You can check the **Configuration status** and the **Policy sync status** of all
 
 **Configuration status** shows you if the device is configured correctly, is sending a heartbeat signal to Purview, and the last time the configuration was validated. For Windows devices configuration includes checking the status of [Microsoft Defender Antivirus always-on protection and behavior monitoring](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus).
 
-**Policy sync status** shows you if the most current versions of the endpoint DLP policies have been synchronized to the device and the last time a policy sync occurred.
+**Policy sync status** shows you if the device received the latest policy version, or if the corresponding policies synced successfully to the device.
 
 
 |Field value  |Configuration status  |Policy sync status  |
