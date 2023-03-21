@@ -42,6 +42,12 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
+## March 2023
+
+- **Built-in protection: Safe Links time of click protection enabled for email**: Microsoft will now by default protect URLs in email messages at time of click as part of this update to Safe Links settings (_EnableSafeLinksForEmail_) within the Built-in protection preset security policy. To learn about the specific Safe Links protections in the Built-in protection policy, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
+
+- **Quarantine notifications enabled in preset security policies**: If your organization has enabled or will enable the Standard or Strict preset security policies, the policies will be automatically updated to use the new DefaultFullAccessWithNotificationPolicy quarantine policy (noifications enabled) wherever the DefaultFullAccessPolicy (notifications disabled) was used. To learn more about quaratine notifications, see [Quarantine notifications](=(quarantine-quarantine-notifications.md). For more information about specific settings in preset security policies, see [Microsoft recommendations for EOP and Defender for Office 365 security settings](recommended-settings-for-eop-and-office365.md).
+
 ## January 2023
 
 - [Automatic Tenant Allow/Block List expiration management is now available in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447): Microsoft will now automatically remove entries from the allow list once the system has learned from it. Alternatively, Microsoft extends the expiration time of the allows if the system hasn't learned yet. This prevents your legitimate emails from going to junk or quarantine.
