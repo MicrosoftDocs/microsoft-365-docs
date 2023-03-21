@@ -42,6 +42,9 @@ The communication and collaboration platform of Teams makes it easy for clinicia
 
 This article describes how to set up and configure the Teams EHR connector to integrate with the Oracle Health platform. It also gives you an overview of the Teams Virtual Appointments experience from the Oracle Health EHR system.
 
+> [!NOTE]
+> Cerner has been renamed to Oracle Health. The video below refers to Oracle Health as Cerner.
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d6gj]
 
 ## Before you begin

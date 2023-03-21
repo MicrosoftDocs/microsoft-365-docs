@@ -315,6 +315,8 @@
     - name: Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Intune
       href: security-config-management.md
 
+    - name: Manage Defender for Endpoint P1/P2 across devices
+      href: defender-endpoint-subscription-settings.md
 
     - name: Configure portal settings
       items:
@@ -323,7 +325,7 @@
       - name: General
         items:
         - name: Configure alert notifications
-          href: configure-email-notifications.md
+          href: ../defender/configure-email-notifications.md
         - name: Configure vulnerability email notifications
           href: configure-vulnerability-email-notifications.md
         - name: Configure advanced features
@@ -375,6 +377,7 @@
           href: configure-machines.md
         - name: Monitor and increase device onboarding
           href: configure-machines-onboarding.md
+
 
       - name: Configure Microsoft Defender Security Center time zone settings
         href: time-settings.md
@@ -446,8 +449,6 @@
             href: attack-surface-reduction-rules-deployment-test.md
           - name: Enable attack surface reduction (ASR) rules
             href: attack-surface-reduction-rules-deployment-implement.md
-          - name: Operationalize attack surface reduction (ASR) rules
-            href: attack-surface-reduction-rules-deployment-operationalize.md
           - name: Operationalize attack surface reduction (ASR) rules
             href: attack-surface-reduction-rules-deployment-operationalize.md
         - name: Attack surface reduction (ASR) rules reference
@@ -585,7 +586,7 @@
         - name: Manage tamper protection using Microsoft 365 Defender
           href: manage-tamper-protection-microsoft-365-defender.md
         - name: Manage tamper protection using Microsoft Intune
-          href: manage-tamper-protection-microsoft-endpoint-manager.md
+          href: manage-tamper-protection-intune.md
         - name: Manage tamper protection with Configuration Manager
           href: manage-tamper-protection-configuration-manager.md
         - name: Manage tamper protection on an individual device
@@ -621,7 +622,7 @@
         href: find-defender-malware-name.md
 
       - name: Microsoft Defender Antivirus security intelligence and product updates
-        href: manage-updates-baselines-microsoft-defender-antivirus.md
+        href: microsoft-defender-antivirus-updates.md
         items:
         - name: Previous versions for technical upgrade support only
           href: msda-updates-previous-versions-technical-upgrade-support.md
@@ -698,12 +699,12 @@
         - name: Common mistakes to avoid
           href: common-exclusion-mistakes-microsoft-defender-antivirus.md
 
-      -  name: Troubleshooting mode for Defender for Endpoint
-         items:
-          - name: Get started with troubleshooting mode
-            href: enable-troubleshooting-mode.md
-          - name: Troubleshooting mode scenarios
-            href: troubleshooting-mode-scenarios.md
+      - name: Troubleshooting mode for Defender for Endpoint
+        items:
+        - name: Get started with troubleshooting mode
+          href: enable-troubleshooting-mode.md
+        - name: Troubleshooting mode scenarios
+          href: troubleshooting-mode-scenarios.md
 
       - name: Diagnostics and performance for Microsoft Defender Antivirus
         items:

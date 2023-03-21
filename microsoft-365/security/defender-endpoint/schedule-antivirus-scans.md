@@ -89,7 +89,7 @@ Use the following table to choose a scan type.
 
 As a performance optimization, Microsoft Defender Antivirus will skip running scheduled quick scans in some situations. This optimization only applies to a quick scan when initiated by a schedule – it doesn't affect a quick scan initiated by an [on-demand antivirus](run-scan-microsoft-defender-antivirus.md) scan. This optimization reduces performance degradation by avoiding running a quick scan when it isn't necessary and won't affect protection.
 
-By default, if a qualified quick scan was run within the last seven days, a new quick scan won't be initiated. A quick scan is considered qualified if it occurs after the last [Security Intelligence Update](manage-updates-baselines-microsoft-defender-antivirus.md) was installed, Real-Time Protection was not disabled during that period, and if the machine was rebooted.  
+By default, if a qualified quick scan was run within the last seven days, a new quick scan won't be initiated. A quick scan is considered qualified if it occurs after the last [Security Intelligence Update](microsoft-defender-antivirus-updates.md) was installed, Real-Time Protection was not disabled during that period, and if the machine was rebooted.  
 
 This optimization doesn't apply to the following conditions: 
 
