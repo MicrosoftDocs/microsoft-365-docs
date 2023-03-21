@@ -70,10 +70,8 @@ To enable OCR scans, your Global admin must set up pay as you go billing by foll
 |SharePoint | -Data loss prevention policies <br><br><br> -Data lifecycle management (automatically applied retention labels)<br><br><br> -Insider risk management (automatically applied sensitivity labels)| |
 |Teams | -Data loss prevention policies <br><br><br> -Data lifecycle management (automatically applied retention labels)<br><br><br> -Insider risk management (automatically applied sensitivity labels)| |
 
-
-
 > [!NOTE]
-> For information on OCR functionality in Microsoft Purview Communication Compliance, see the [Optical character recognition](/communication-compliance-policies?view=o365-worldwide#optical-character-recognition-ocr&preserve-view=true) section of [Create and Manage communication compliance policies](/communication-compliance-policies).
+> For information on OCR functionality in Microsoft Purview Communication Compliance, see the [Optical character recognition](/communication-compliance-policies#optical-character-recognition-ocr) section of [Create and Manage communication compliance policies](/communication-compliance-policies).
 
 ## What file types are supported?
 
