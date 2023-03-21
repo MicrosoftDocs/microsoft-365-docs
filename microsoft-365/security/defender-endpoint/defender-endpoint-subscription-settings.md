@@ -1,5 +1,5 @@
 ---
-title: Manage your Microsoft Defender for Endpoint subscription settings across client devices
+title: Manage your Microsoft Defender for Endpoint subscription settings across client devices (preview!)
 description: Learn about your options for managing your Defender for Endpoint subscription settings. Choose Plan 1, Plan 2, or mixed mode.
 keywords: Defender for Endpoint, choose plan 1, choose plan 2, mixed mode, device tag, endpoint protection, endpoint security, device security, cybersecurity
 search.appverid: MET150  
@@ -19,7 +19,7 @@ ms.collection:
 - m365initiative-defender-endpoint
 ---
 
-# Manage Microsoft Defender for Endpoint subscription settings across client devices
+# Manage Microsoft Defender for Endpoint subscription settings across client devices (preview!)
 
 A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is a situation in which an organization is using a mix of Defender for Endpoint Plan 1 and Plan 2 licenses. Until recently, mixed-licensing scenarios weren't supported; in cases of multiple subscriptions, the highest functional subscription would take precedence for your tenant. Now, **the ability to manage your subscription settings to accommodate mixed licensing scenarios across client devices is currently in preview**! These capabilities enable you to:
 
