@@ -8,6 +8,7 @@ manager: scotv
 ms.date: 03/13/2023
 audience: Admin
 ms.topic: overview
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
@@ -41,7 +42,7 @@ The requests below are done with the [Microsoft Graph API](/graph/graph-explorer
 
 1. Make a GET request to the following endpoint to get the Organization ID: https://graph.microsoft.com/beta/organization.
 
-2. Retrieve “id” field from the response payload. This is your organization ID, referred to as **my-org-id**.
+2. Retrieve “id” field from the response payload. This is your organization ID, referred to as <my-org-id>.
 
 3. Make a GET request to the following endpoint to get the current state of profile video admin setting: https://graph.microsoft.com/beta/organization/my-org-id/settings/profileVideo. The response should look like this:
 
