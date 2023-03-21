@@ -33,7 +33,7 @@ ms.date: 12/18/2020
 
 This page provides detailed steps to troubleshoot live response issues.
 
-## File can't be accessed during live response sessions
+## File cannot be accessed during live response sessions
 
 If while trying to take an action during a live response session, you encounter an error message stating that the file can't be accessed, you need to use the steps below to address the issue.
 

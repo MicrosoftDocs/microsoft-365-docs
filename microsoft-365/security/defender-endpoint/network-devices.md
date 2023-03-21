@@ -195,11 +195,11 @@ Newly discovered devices are shown under the new **Network devices** tab in the 
 
 Verify that the required URLs are added to the allowed domains in your firewall settings. Also, make sure proxy settings are configured as described in [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
-### The Microsoft.com/devicelogin web page didn't show up
+### The Microsoft.com/devicelogin web page did not show up
 
 Verify that the required URLs are added to the allowed domains in your firewall. Also, make sure proxy settings are configured as described in [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
-### Network devices aren't shown in the device inventory after several hours
+### Network devices are not shown in the device inventory after several hours
 
 The scan results should be updated a few hours after the initial scan that took place after completing the network device authenticated scan configuration.
 
