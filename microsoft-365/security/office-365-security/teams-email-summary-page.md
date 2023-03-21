@@ -24,7 +24,7 @@ ms.date: 03/28/2023
 
 The Teams Message Entity Panel in Microsoft Defender for Office 365 puts all Microsoft Teams data about suspicious or malicious chats and channels on a *single, actionable panel*.
 
-## The need for an Teams Message Entity Panel
+## The need for a Teams Message Entity Panel
 
 With the rise of chat-based communications, Microsoft Teams has become a main target for malicious attacks. For SecOps teams it is now *essential* to extend security protection to Teams in order to safeguard people and organizations.
 
