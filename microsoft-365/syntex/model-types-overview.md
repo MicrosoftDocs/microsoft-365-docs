@@ -107,6 +107,7 @@ Prebuilt models include:
 
 - [Invoice processing](#invoice-processing)
 - [Receipt processing](#receipt-processing)
+- [Contract processing](#contract-processing)
 
 Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
 
@@ -121,6 +122,12 @@ For more information about prebuilt invoice processing models, see [Use a prebui
 The prebuilt receipt processing model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and extracts key receipt information such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
 For more information about prebuilt receipt processing models, see [Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md).
+
+### Contract processing
+
+The contract processing model analyzes and extracts key information from contract documents. The API analyzes contracts in various formats and extracts key contract information such as client name, billing address, due date, and amount due.
+
+For more information about prebuilt contract processing models, see [Use a prebuilt model to extract information from contracts](prebuilt-model-contract.md).
 
 ## See also
 
