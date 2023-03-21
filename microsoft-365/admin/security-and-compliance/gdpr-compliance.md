@@ -29,6 +29,8 @@ description: "Learn how Microsoft 365 for business can help you with the General
 
 # GDPR simplified: A guide for your small business
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
  *Using Microsoft 365 for business to help you to mitigate and manage GDPR compliance* 
   
 The General Data Protection Regulation (GDPR) is a European Union (EU) regulation that mandates how an organization should handle personal data. If your business sells to, provides services to, or employs citizens of the European Union, then the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) will affect you. 
