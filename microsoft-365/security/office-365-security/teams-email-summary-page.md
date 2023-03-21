@@ -1,3 +1,25 @@
+---
+title: The Teams Message Entity Panel for Microsoft Teams in Microsoft Defender for Office 365
+ms.author: tracyp
+author: msfttracyp
+manager: dansimp
+audience: Admin
+ms.topic: conceptual
+ms.localizationpriority: high
+search.appverid:
+  - MET150
+  - MOE150
+ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
+ms.collection:
+  - m365-security
+  - tier1
+  - highpri
+description: Describes the Teams Message Entity Panel for Microsoft Teams in Microsoft Defender for Office 365. 
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.date: 03/28/2023
+---
+
 # The Teams Message Entity Panel for Microsoft Teams in Microsoft Defender for Office 365
 
 The Teams Message Entity Panel in Microsoft Defender for Office 365 puts all Microsoft Teams data about suspicious or malicious chats and channels on a *single, actionable panel*.
@@ -46,7 +68,7 @@ Clicking on a Teams message across Microsoft Defender for Office 365 experiences
     - share
     - download
 
-:::image type="content" source="../../media/Teams-Message-Entity-Panel-shown-in-Quarantine.png" alt-text="Teams Message Entity panel as it is seen in Quarantine." lightbox="../../media/Teams-Message-Entity-Panel-shown-in-Quarantine.png":::
+:::image type="content" source="../../media/teams-message-entity-panel-shown-in-quarantine.png" alt-text="Teams Message Entity panel as it is seen in Quarantine." lightbox="../../media/teams-message-entity-panel-shown-in-quarantine.png":::
 
 The **message details** section contains the *primary threat* suspected and *confidence level*, the number of alerts associated with the message, the message location, and who reported it. This is also the location where admins can determine the policy that caused or triggered the action on the message, the policy's Teams message ID, even the chat message text.
 
