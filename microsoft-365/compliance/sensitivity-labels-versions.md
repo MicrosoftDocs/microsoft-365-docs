@@ -2,9 +2,9 @@
 title: "Minimum versions for sensitivity labels in Microsoft 365 Apps"
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
-ms.reviewer: alejandros
+ms.author: alejandros
+author: alejandrosMSFT
+ms.reviewer: cabailey
 manager: laurawi
 ms.date: 03/14/2023
 audience: Admin
