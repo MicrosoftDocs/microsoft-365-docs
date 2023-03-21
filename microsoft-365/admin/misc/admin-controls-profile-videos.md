@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.collection:
 - scotvorg
 - Adm_O365
+ROBOTS: NOINDEX, NOFOLLOW
 
 description: "Turn the profile video feature on or off for all users in your Microsoft 365 organization."
 ---
@@ -26,15 +27,17 @@ By default, profile video creation is turned on in Microsoft 365 organizations.
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
-2. In the left nav, go to to **Settings** -> **Org Settings**.
+2. In the left nav, go to **Settings** -> **Org Settings**.
 
 3. On the **Services** tab, select **Profile video**.
 
 4. Select or deselect the **Allow your organization to use profile video**.
 
+    :::image type="content" source="../../media/profile-video.png" alt-text="Screenshot: Profile video":::
+
 ## Use the Microsoft Graph API to turn profile videos on or off
 
-The requests below are done with Graph Explorer: Graph Explorer | Try Microsoft Graph APIs - Microsoft Graph.
+The requests below are done with the [Microsoft Graph API](/graph/graph-explorer/graph-explorer-overview).
 
 1. Make a GET request to the following endpoint to get the Organization ID: https://graph.microsoft.com/beta/organization.
 
