@@ -20,7 +20,9 @@ description: "Turn the profile video feature on or off for all users in your Mic
 
 # Turn the profile video feature on or off for all users in your Microsoft 365 organization
 
-As the Microsoft 365 administrator, you can turn the profile video feature on or off for users in your organization. Profile videos are 30-second videos that appear on profile cards in Microsoft 365 apps such as Outlook. For more information on how users in your organization can add profile videos, see [Profile videos in Microsoft 365](https://support.microsoft.com/en-us/topic/794ee82c-e679-4b93-b8fb-e1ed4ad4c732).
+As the Microsoft 365 administrator, you can turn the profile video feature on or off for users in your organization. Profile videos are 30-second videos that appear on profile cards in Microsoft 365 apps such as Outlook.
+
+<!-- For more information on how users in your organization can add profile videos, see [Profile videos in Microsoft 365](https://support.microsoft.com/en-us/topic/794ee82c-e679-4b93-b8fb-e1ed4ad4c732). -->
 
 ## Use the Microsoft 365 Admin Center to turn profile videos on or off
 
@@ -42,11 +44,11 @@ The requests below are done with the [Microsoft Graph API](/graph/graph-explorer
 
 1. Make a GET request to the following endpoint to get the Organization ID: https://graph.microsoft.com/beta/organization.
 
-2. Retrieve “id” field from the response payload. This is your organization ID, referred to as <my-org-id>.
+2. Retrieve “id” field from the response payload. This is your organization ID, referred to as **my-org-id**.
 
 3. Make a GET request to the following endpoint to get the current state of profile video admin setting: https://graph.microsoft.com/beta/organization/my-org-id/settings/profileVideo. The response should look like this:
 
-{ "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('<my-org-id>')/settings/profileVideo/$entity",
+{ "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('**my-org-id**')/settings/profileVideo/$entity",
 
 "isEnabledInOrganization": false
 
