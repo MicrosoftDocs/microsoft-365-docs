@@ -23,6 +23,8 @@ description: "Follow the steps in this article to sign up for Microsoft Teams as
 
 # Sign up for Microsoft Teams as part of a business subscription
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Microsoft Teams Essentials and Microsoft 365 Business Basic 365 are offered for commercial use and are intended for business customers. This article is to help customers choose which is right for their needs.  Not a business?
 
 **Not a business?** [Sign up for a home or family plan](https://go.microsoft.com/fwlink/?linkid=2109398).
