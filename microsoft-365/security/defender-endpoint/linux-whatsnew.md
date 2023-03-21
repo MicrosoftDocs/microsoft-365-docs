@@ -42,7 +42,7 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Engine version: **1.1.19900.2**<br/>
 &ensp;Signature version: **1.379.1299.0**<br/>
 **What's new**
-- This new relase is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customer. There is no change for other customers and upgrade is optional. 
+- This new release is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customers. There is no change for other customers and upgrade is optional. 
 </details>
 	
 <details>
