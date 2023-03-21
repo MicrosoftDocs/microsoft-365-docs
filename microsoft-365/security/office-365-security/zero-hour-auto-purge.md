@@ -41,7 +41,7 @@ ZAP doesn't work in standalone Exchange Online Protection (EOP) environments tha
 
 ## Zero-hour auto purge (ZAP) in Exchange Online
 
-Spam and malware signatures are updated in the service real-time on a daily basis. However, users can still receive malicious messages for a variety of reasons, including if content is weaponized after being delivered to users. ZAP addresses this issue by continually monitoring updates to the spam and malware signatures in the service. ZAP can find and remove messages that are already in a user's mailbox.
+Spam and malware signatures are updated in the service real-time on a daily basis. However, users can still receive malicious messages for a variety of reasons, including if content is weaponized after being delivered to users. ZAP addresses this issue by continually monitoring updates to the spam and malware signatures in the service. ZAP can find and take automated actions on messages that are already in a user's mailbox up to 48 hours after delivery.
 
 The ZAP action is seamless for the user; they aren't notified if a message is detected and moved.
 
