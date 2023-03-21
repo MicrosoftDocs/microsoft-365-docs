@@ -65,7 +65,7 @@ To use OCR scans, your organization must have a pay-as-you-go Microsoft Azure su
 | Scanning of images for information is supported in <br> information protection autolabeling  policies that <br> are scoped to these services: |  -Exchange (Sent emails only) <br> -OneDrive for Business <br>-SharePoint  |
 
 > [!NOTE]
-> For information on OCR functionality in Communication Compliance, see the [Optical Character](/communication-compliance-policies?view=o365-worldwide#optical-character-recognition-ocr&preserve-view=true) Recognition section of [Create and Manage communication compliance policies](/communication-compliance-policies).
+> For information on OCR functionality in Microsoft Purview Communication Compliance, see the [Optical Character](/communication-compliance-policies?view=o365-worldwide#optical-character-recognition-ocr&preserve-view=true) Recognition section of [Create and Manage communication compliance policies](/communication-compliance-policies).
 
 ## What file types are supported?
 
