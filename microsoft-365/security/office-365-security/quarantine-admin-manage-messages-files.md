@@ -471,7 +471,7 @@ To manage quarantined messages for the Microsoft Teams chat, the admin will need
 |`SPOQuarantineTypes`|Malware|
 |`TeamsQuarantineTypes`|HighConfPhish </br>Malware|
 
-The admin can select a quarantined message from the list to view or take action on.
+Admins can select a quarantined message from the list to view or take action.
 
 **Example**:
 
