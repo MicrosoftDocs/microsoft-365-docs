@@ -17,7 +17,7 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 3/01/2023
+ms.date: 3/21/2023
 ---
 
 # Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions (Preview)
@@ -74,11 +74,12 @@ You'll need to choose the data that your Shifts users can see and change. You'll
 > - If the setting **Time off** is disabled, **Time off request** will also be disabled.
 
 > [!IMPORTANT]
-> If you chose any of the following options to disable open shifts, open shift requests, swap requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
+> If you chose any of the following options to disable open shifts, open shift requests, swap requests, offer shift requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
 >
 > - Open shifts: **Shifts users will not see provider data**
 > - Swap requests: **Shifts users will not see provider data**
 > - Time off requests: **Shifts users will not see provider data**
+> - Offer shift requests: **Shifts users will not see provider data**
 >
 > After you edit your settings, make sure you follow the steps to [Disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard-ukg#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
 

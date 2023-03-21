@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 2/27/2023
+ms.date: 3/21/2023
 ---
 
 # Use the Shifts connector wizard to connect Shifts to UKG Dimensions (Preview)
@@ -138,11 +138,12 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
     > - If the setting **Time off** is disabled, **Time off request** will also be disabled.
 
     > [!IMPORTANT]
-    > If you chose any of the following options to disable open shifts, open shift requests, swap requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
+    > If you chose any of the following options to disable open shifts, open shift requests, swap requests, offer shift requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
     >
     > - Open shifts: **Shifts users will not see provider data**
     > - Swap requests: **Shifts users will not see provider data**
     > - Time off requests: **Shifts users will not see provider data**
+    > - Offer shift requests: **Shifts users will not see provider data**
     >
     > After you run the wizard, make sure you follow the steps in the [Disable open shifts, open shifts requests, swap requests, and time off requests](#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests) section later in this article.
 
