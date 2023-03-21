@@ -62,10 +62,10 @@ To enable OCR scans, your Global admin must set up pay as you go billing by foll
 2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
 3. Select the locations where you wish to scan images. And then, for each location and solution, define the scope (users/groups/sites) for the OCR scans. Supported locations and solutions are:
 
-|Location| Solutions | Limitations / Exceptions |
+|Location| Solutions | Limitations |
 |--------------|----------|----------|
 | Endpoints(Windows devices) | -Data loss prevention policies | |
-|Exchange | -Data loss prevention policies <br><br><br>-Data lifecycle management (automatically applied retention labels)| -Exchange email: outgoing email only <br> -Microsoft 365 group mailboxes and sites  <br> outgoing email only |
+|Exchange | -Data loss prevention policies <br><br><br>-Data lifecycle management (automatically applied retention labels) | -Exchange email: Outgoing emails are labeled <br> -Microsoft 365 group mailboxes and sites  <br> Outgoing emails are labeled  |
 |OneDrive for Business | -Data loss prevention policies <br><br><br> -Data lifecycle management (automatically applied retention labels)<br><br><br> -Insider risk management (automatically applied sensitivity labels)| |
 |SharePoint | -Data loss prevention policies <br><br><br> -Data lifecycle management (automatically applied retention labels)<br><br><br> -Insider risk management (automatically applied sensitivity labels)| |
 |Teams | -Data loss prevention policies <br><br><br> -Data lifecycle management (automatically applied retention labels)<br><br><br> -Insider risk management (automatically applied sensitivity labels)| |
