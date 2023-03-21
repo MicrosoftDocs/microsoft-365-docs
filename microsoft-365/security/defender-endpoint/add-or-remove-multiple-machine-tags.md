@@ -1,5 +1,5 @@
 ---
-title: Add or remove multiple machine tags
+title: Add or remove tags for multiple machines
 description: Learn how to use the Add or Remove machine tags API to adds or remove multiple tag for a device in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, tags, machine tags
 ms.service: microsoft-365-security
@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 02/24/2023
 ---
 
-# Add or remove multiple machine tags
+# Add or remove tags for multiple machines
 
 **Applies to:**
 
@@ -38,7 +38,7 @@ ms.date: 02/24/2023
 
 ## API description
 
-Bulk adds or removes tags for multiple machines.
+Adds or removes tags for the specified set of machines.
 
 ## Limitations
 
