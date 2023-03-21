@@ -69,6 +69,8 @@ In this illustration:
 
 This article assumes you have already configured cloud identity. If you need guidance for this objective, see [**Deploy your identity infrastructure for Microsoft 365**](/microsoft-365/enterprise/deploy-identity-solution-overview).
 
+For additional assistance, you can also use the **Set up your Microsoft Zero Trust security model** advanced deployment guide in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?Q=ADG#/modernonboarding/zerotrustsetupguide).
+
 ## Step 1. Configure Zero Trust identity and device access protection — starting-point policies
 
 The first step is to build your Zero Trust foundation by configuring identity and device access protection.
