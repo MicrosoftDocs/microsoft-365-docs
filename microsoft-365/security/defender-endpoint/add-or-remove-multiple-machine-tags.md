@@ -104,5 +104,6 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
   "2a398439b4975924e87a65943972bc702469b329",
   "a610c00c65fdf79960cc0077d9d8c569d23f09a5"]
 }
+```
 
 To remove machine tags, set the Action to 'Remove' instead of 'Add' in the request body.
