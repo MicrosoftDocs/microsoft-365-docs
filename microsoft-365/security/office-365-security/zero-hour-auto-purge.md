@@ -136,11 +136,7 @@ Note that for this release, ZAP is available only to messages that are identifie
 
 ### Review messages blocked in Teams
 
-To determine if ZAP blocked your message, you have the following options:  
-
-- **Quarantine**: For more in formation, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams).
-
-- **Message details**: Use advanced hunting to post-delivery message. [Add link to new content] 
+To find out if ZAP blocked your message, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams).
 
 ## Zero-hour auto purge (ZAP) FAQ
 

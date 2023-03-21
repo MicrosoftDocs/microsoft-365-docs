@@ -393,8 +393,7 @@ For the preview release, this feature is enabled by default.
    - **Participants**: The total number of users who received the message.
    - **Sender**: The person who sent the message that was quarantined.
    - **Quarantine reason**: Available options are "High confidence phish" and "Malware".
-   - **Policy type**: Date when the message is quarantined.
-   - **Quarantined status**: The available options are "Needs review", "Released", and "Processing release".  
+   - **Policy type**: The organization policy responsible for quarantined message.
    - **Expires**: Indicates the time after which the message is removed from quarantine. By default, this is 30 days.
    - **Recipient address**: Email address of the recipients.
    - **Message ID**: Includes the chat message ID.
@@ -454,22 +453,20 @@ The cmdlets that you use to view and manage messages and files in quarantine are
 
 To manage quarantined messages for the Microsoft Teams chat, the admin will need to use the [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) cmdlet with the following parameters to identify the messages.
 
-The available parameters for the QuarantineScenarios are Email, SPO, and Teams.
+|Quarantine cmdlets|Parameters|
+|---|---|
+|`QuarantineScenarios`|Email </br>SPO </br>Teams|
+|`EmailQuarantineTypes`|Bulk </br>HighConfPhish </br>Malware</br>Phish </br>Spam </br>TransportRule|
+|`SPOQuarantineTypes`|Malware|
+|`TeamsQuarantineTypes`|HighConfPhish </br>Malware|
 
-Similarly, the parameters for EmailQuarantineTypes are Bulk, HighConfPhish, Malware, Phish, Spam, and TransportRule
-
-The parameter for SPOQuarantineTypes is Malware.
-
-And the parameters for TeamsQuarantineTypes are HighConfPhish and Malware.
-
-Then, the admin can select a quarantined message from the list to view or take action on.
+The admin can select a quarantined message from the list to view or take action on.
 
 **Example**:
 
 ```powershell
-  Get-QuarantineMessage
-   -Identity <c14401cf-aa9a-465b-cfd5-08d0f0ca37c5\4c2ca98e-94ea-db3a-7eb8-3b63657d4db7>
-   [-Email]
+  Get-QuarantineMessage -Identity c14401cf-aa9a-465b-cfd5-08d0f0ca37c5\4c2ca98e-94ea-db3a-7eb8-3b63657d4db7 |
+  -Scenarios Email
 ```
 
 ## For more information
