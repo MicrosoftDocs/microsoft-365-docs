@@ -14,7 +14,7 @@ ms.collection:
   - m365-security
   - tier1
   - highpri
-description: Describes the Teams Message Entity Panel for Microsoft Teams in Microsoft Defender for Office 365. 
+description: Describes the Teams Message Entity Panel for Microsoft Teams in Microsoft Defender for Office 365, how it does post-breach work like ZAP and Safelinks and gives admins a single pane of glass on Teams chat and channel threats like suspicious URLs. 
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 03/28/2023
