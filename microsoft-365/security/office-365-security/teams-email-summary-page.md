@@ -23,7 +23,7 @@ The Teams Message Entity Panel page (sometimes referred to as Teams Entity flyou
 - **Unified Experience**: The Teams Message Entity Panel is a one-stop experience, and is intended to help investigators address suspicious messages faster.
 - **Accurate and Complete Actions**: SecOps actions taken from the Teams Message Entity Panel allow the investigation and remediation to take place at the same time.
 
-## How does it work?
+## How does the Teams Message Entity Panel work?
 
 The Teams Message Entity Panel combines multiple logs into one view giving admins a single pane of glass that:
 
@@ -46,7 +46,7 @@ Clicking on a Teams message across Microsoft Defender for Office 365 experiences
     - share
     - download
 
-
+:::image type="content" source="../../media/Teams-Message-Entity-Panel-shown-in-Quarantine.png" alt-text="Teams Message Entity panel as it is seen in Quarantine." lightbox="../../media/Teams-Message-Entity-Panel-shown-in-Quarantine.png":::
 
 The **message details** section contains the *primary threat* suspected and *confidence level*, the number of alerts associated with the message, the message location, and who reported it. This is also the location where admins can determine the policy that caused or triggered the action on the message, the policy's Teams message ID, even the chat message text.
 
