@@ -179,9 +179,6 @@ Select one of the following links to go to a specific table.
     :::column:::
         [Report activities](#report-activities)
     :::column-end:::
-    :::column:::
-        []()
-    :::column-end:::
 :::row-end:::
 
 :::row:::
@@ -190,9 +187,6 @@ Select one of the following links to go to a specific table.
     :::column-end:::
     :::column:::
         [Retention policy and retention label activities](#retention-policy-and-retention-label-activities)
-    :::column-end:::
-    :::column:::
-        []()
     :::column-end:::
 :::row-end:::
 
