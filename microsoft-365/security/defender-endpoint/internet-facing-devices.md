@@ -30,7 +30,7 @@ ms.date: 03/7/2023
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-As threat actors continuously scan the web to detect exposed devices they can exploit to gain a foothold in internal corporate networks, mapping your organization’s external attack surface is a key part of your security posture management. Internet-facing devices can serve as an easy entry point to an organization’s environment, which makes identifying them a top priority for many security teams.
+As threat actors continuously scan the web to detect exposed devices they can exploit to gain a foothold in internal corporate networks, mapping your organization’s external attack surface is a key part of your security posture management. Devices that can be connected to or are approachable from the outside pose a threat to your organization and internet-facing devices can serve as an easy entry point.
 
 Microsoft Defender for Endpoint automatically identifies and flags onboarded, exposed, internet-facing devices in the [Microsoft 365 Defender portal](https://security.microsoft.com/). This critical information provides increased visibility into an organizations external attack surface and insights into asset exploitability.
 
@@ -39,10 +39,17 @@ Microsoft Defender for Endpoint automatically identifies and flags onboarded, ex
 
 ## Devices flagged as internet-facing
 
-Devices that can be connected to or are approachable from the outside pose a threat to your organization. Devices that are successfully connected through TCP or identified as host reachable through UDP will be flagged as internet-facing in the [Microsoft 365 Defender portal](https://security.microsoft.com). Defender for Endpoint uses different data sources  to identify the devices to flag:
+Devices that are successfully connected through TCP or identified as host reachable through UDP will be flagged as internet-facing in the [Microsoft 365 Defender portal](https://security.microsoft.com). Defender for Endpoint uses different data sources to identify the devices to flag:
 
 - External scans are used to identify which devices are approachable from the outside.
 - Device network connections, captured as part of Defender for Endpoint signals, help to identify external incoming connections that reach internal devices.
+
+Devices can be flagged as internet-facing for different reasons:
+
+- A misconfigured firewall rule, which could be a host firewall rule or enterprise firewall rule, can result in internal devices being reachable from the outside.
+- Identifying applications or services that are listening on a device, can help you distinguish between those that are intentionally internet-facing and those that may compromise your organization by providing an attacker with an unauthorized entry point to your network.
+
+Understanding your firewall policy and identifying these application and services provides critical information when it comes to mapping your organization’s external attack surface.
 
 ## View internet-facing devices
 
@@ -63,14 +70,7 @@ You can use filters to focus in on internet-facing devices and investigate the r
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-filter.png" alt-text="Screenshot of the internet-facing filter" lightbox="../../media/defender-vulnerability-management/internet-facing-filter.png":::
 
-## Understand your internet-facing devices
-
-Devices can be classified as internet-facing device for different reasons, including a misconfigured firewall rule, or when applications or services are identified as listening on a device.
-
-- A misconfigured firewall rule, which could be a host firewall rule or enterprise firewall rule, can result in internal devices being reachable from the outside.
-- Identifying applications or services that are listening on a device, can help you distinguish between those that are intentionally internet-facing and those that may compromise your organization by providing an attacker with unauthorized entry point to your network.
-
-Understanding your firewall policy and identifying these application and services provides critical information when it comes to mapping your organization’s external attack surface.
+## Investigate your internet-facing devices
 
 To learn more about an internet-facing device, select the device in the device inventory to open its flyout pane:
 
@@ -78,7 +78,36 @@ To learn more about an internet-facing device, select the device in the device i
 
 From here you can discover, how the device was detected as internet-facing, along with the relevant IP addresses, ports, and connection protocols.
 
-For TCP connections, you can use advanced hunting to gain further insights into applications or services identified as listening on a device by querying [DeviceNetworkEvents](../defender/advanced-hunting-devicenetworkevents-table.md). Use the following example as a starting point:
+## Use advanced hunting
+
+Use advanced hunting queries to gain visibility and insights into the internet-facing devices in your organization, for example:
+
+### Find all devices that are internet-facing
+
+Use this query to find all devices that are internet facing
+
+```kusto
+// Find all devices that are internet-facing
+DeviceInfo
+|where IsInternetFacing
+|extend InternetFacingInfo  = AdditionalFields
+|extend InternetFacingReason = extractjson("$.InternetFacingReason", InternetFacingInfo, typeof(string)), InternetFacingLocalPort = extractjson("$.InternetFacingLocalPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicPort = extractjson("$.InternetFacingScannedPublicPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicIp = extractjson("$.InternetFacingScannedPublicIp", InternetFacingInfo, typeof(string)), InternetFacingLocalIp = extractjson("$.InternetFacingLocalIp", InternetFacingInfo, typeof(string)),   InternetFacingTransportProtocol=extractjson("$.InternetFacingTransportProtocol", InternetFacingInfo, typeof(string)), InternetFacingLastSeen = extractjson("$.InternetFacingLastSeen", InternetFacingInfo, typeof(datetime))
+|summarize arg_max(Timestamp, *) by DeviceId
+```
+
+This query returns the internet-facing devices with their aggregated evidence in the “AdditionalFields” column.
+
+- **InternetFacingLastSeen**
+- **InternetFacingReason**
+- **InternetFacingLocalIp**
+- **InternetFacingLocalPort**
+- **InternetFacingPublicScannedIp**
+- **InternetFacingPublicScannedPort**
+- **InternetFacingTransportProtocol**
+
+### Find applications and services listening on a device
+
+For TCP connections, you can  gain further insights into applications or services identified as listening on a device by querying [DeviceNetworkEvents](../defender/advanced-hunting-devicenetworkevents-table.md). Use the following example as a starting point:
 
 ```kusto
 // Query on inbound connection accepted events
@@ -100,29 +129,6 @@ If the above query fails to provide the relevant connections, you can use socket
 - [Defender for Endpoint live response](live-response.md)
 - [Microsoft Network Monitor](/troubleshoot/windows-client/networking/collect-data-using-network-monitor)
 - [Netstat for Windows Server](/windows-server/administration/windows-commands/netstat)
-
-## Use advanced hunting
-
-You can use advanced hunting queries to gain visibility into internet-facing devices in your organization, for example:
-
-```kusto
-// Find all devices that are internet-facing
-DeviceInfo
-|where IsInternetFacing
-|extend InternetFacingInfo  = AdditionalFields
-|extend InternetFacingReason = extractjson("$.InternetFacingReason", InternetFacingInfo, typeof(string)), InternetFacingLocalPort = extractjson("$.InternetFacingLocalPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicPort = extractjson("$.InternetFacingScannedPublicPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicIp = extractjson("$.InternetFacingScannedPublicIp", InternetFacingInfo, typeof(string)), InternetFacingLocalIp = extractjson("$.InternetFacingLocalIp", InternetFacingInfo, typeof(string)),   InternetFacingTransportProtocol=extractjson("$.InternetFacingTransportProtocol", InternetFacingInfo, typeof(string)), InternetFacingLastSeen = extractjson("$.InternetFacingLastSeen", InternetFacingInfo, typeof(datetime))
-|summarize arg_max(Timestamp, *) by DeviceId
-```
-
-This query returns the internet-facing devices with their aggregated evidence in the “AdditionalFields” column.
-
-- **InternetFacingLastSeen**
-- **InternetFacingReason**
-- **InternetFacingLocalIp**
-- **InternetFacingLocalPort**
-- **InternetFacingPublicScannedIp**
-- **InternetFacingPublicScannedPort**
-- **InternetFacingTransportProtocol**
 
 ## Report inaccuracy
 
