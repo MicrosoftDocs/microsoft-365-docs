@@ -64,7 +64,7 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 ## HTTP request
 
 ```http
-PATCH https://api.securitycenter.microsoft.com/api/machines/AddOrRemoveTagForMultipleMachines
+POST https://api.securitycenter.microsoft.com/api/machines/AddOrRemoveTagForMultipleMachines
 ```
 
 ## Request headers
@@ -82,11 +82,11 @@ Parameter|Type|Description
 :---|:---|:---
 Value|String|The tag name. **Required**.
 Action|Enum|Add or Remove. Allowed values are: 'Add' or 'Remove'. **Required**.
-MachineIds|List(String)|List of machine ids to update. Required.|
+MachineIds|List (String)|List of machine ids to update. Required.|
 
 ## Response
 
-If successful, this method returns 200 - Ok response code and the updated the machines in the response body.
+If successful, this method returns 200 - Ok response code and the updated machines in the response body.
 
 ## Example Request
 
@@ -96,6 +96,7 @@ Here is an example of a request that adds multiple machine tags.
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/tags
 ```
 
+```json
 {
   "Value" : "Tag",
   "Action": "Add",
