@@ -90,7 +90,7 @@ If successful, this method returns 200 - Ok response code and the updated machin
 
 ## Example Request
 
-Here is an example of a request that adds multiple machine tags.
+Here is an example of a request that adds a tag to multiple machines.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/tags
