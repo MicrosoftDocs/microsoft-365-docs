@@ -38,7 +38,7 @@ ms.date: 02/24/2023
 
 ## API description
 
-Adds or removes tags for the specified set of machines.
+Adds or removes a tag for the specified set of machines.
 
 ## Limitations
 

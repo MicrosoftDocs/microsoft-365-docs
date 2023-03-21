@@ -1100,9 +1100,9 @@
               href: get-discovered-vulnerabilities.md
             - name: Get security recommendations
               href: get-security-recommendations.md
-            - name: Add or remove machine tags
+            - name: Add or remove a machine tag
               href: add-or-remove-machine-tags.md
-            - name: Add or remove multiple machine tags
+            - name: Add or remove a tag from multiple machines
               href: add-or-remove-multiple-machine-tags.md
             - name: Find machines by IP
               href: find-machines-by-ip.md
