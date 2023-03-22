@@ -31,7 +31,7 @@ You can use [sensitivity labels](sensitivity-labels.md) as a condition in DLP po
 - SharePoint Online
 - OneDrive for Business sites
 - Windows 10 devices (Endpoint DLP)
-- Windows 11 devices (EndPoint DLP)
+- Windows 11 devices (Endpoint DLP)
 - MacOS devices (EndPoint DLP)
 
 Sensitivity labels appear as an option in the **Content contains** list.
