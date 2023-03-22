@@ -44,7 +44,7 @@ User reporting of messages in Teams is made of two separate settings:
 
 - **In the Teams admin center**: On by default and controls whether users are able to report messages from Teams. When this setting is turned off, users can't report messages within Teams, so the corresponding setting in the Microsoft 365 Defender portal is irrelevant.
 
-- **In the Microsoft 365 Defender portal**: On by default. Typically, if user reporting of messages in turned on in the Teams admin center, you'll want to leave it turned on in the Defender portal.
+- **In the Microsoft 365 Defender portal**: On by default. Typically, if user reporting of messages is turned on in the Teams admin center, you'll want to leave it turned on in the Defender portal.
 
 ### Turn off or turn on user reporting in the Teams admin center
 
@@ -99,7 +99,7 @@ For more information about user reported message settings in the Defender portal
 
 - The reported message remains visible to the user in the Teams client.
 - Users can report the same message multiple times.
-- The message sender is not notified that the messages was reported.
+- The message sender is not notified that the message(s) was reported.
 - Microsoft also sends an email message notification to the user who reported the message from submissions@messaging.microsoft.com with the subject, "You have successfully reported a Teams message as a security risk." If Teams integration is turned on in the Defender portal, admins can customize some elements of the notification message in the **Email sent to user after admin review** on **User reported** page as described in [Options for Microsoft reporting tools](submissions-user-reported-messages-custom-mailbox.md#options-for-microsoft-reporting-tools).
 
 > [!IMPORTANT]
