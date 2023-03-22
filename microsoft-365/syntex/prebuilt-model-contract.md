@@ -32,7 +32,7 @@ To use a contracts model, follow these steps:
 
 ## Step 1: Create a contracts model
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a prebuilt contracts model. Then continue with the following steps to complete your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt contracts model. Then continue with the following steps to complete your model.
 
 ## Step 2: Upload an example file to analyze
 
