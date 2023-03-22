@@ -159,12 +159,10 @@ The **Set up a prebuilt model** section shows the types of prebuilt models you c
 
 ![Screenshot of the Use a prebuilt model section on the Set up a prebuilt model page.](../media/content-understanding/use-a-trained-model-section-2.png) 
 
+- **Contract processing**
 - **Invoice processing**
-
 - **Receipt processing**
  
-- **Contract processing**
-
 Select one of the following tabs to continue with the prebuilt model you want to use.
 
 # [Contract processing](#tab/contract-processing)
