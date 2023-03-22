@@ -42,7 +42,7 @@ On the **Options for model creation** page, there are two sections:
     
 - [**Set up a prebuilt model**](#set-up-a-prebuilt-model)
 
-![Screenshot of the Options for model creation page showing the custom models and prebuilt models.](../media/content-understanding/options-for-model-creation.png) 
+![Screenshot of the Options for model creation page showing the custom models and prebuilt models.](../media/content-understanding/options-for-model-creation-2.png) 
 
 > [!NOTE]
 > All model options might not be available. These options are configured by your Microsoft 365 admin.
@@ -157,7 +157,7 @@ Use the **Layout method** to create a [structured document processing model](for
 
 The **Set up a prebuilt model** section shows the types of prebuilt models you can use. 
 
-![Screenshot of the Use a prebuilt model section on the Set up a prebuilt model page.](../media/content-understanding/use-a-trained-model-section.png) 
+![Screenshot of the Use a prebuilt model section on the Set up a prebuilt model page.](../media/content-understanding/use-a-trained-model-section-2.png) 
 
 - **Invoice processing**
 
@@ -248,5 +248,5 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
 6. You're now ready to [complete setting up the model](prebuilt-model-contract.md).
 
-
+---
 
