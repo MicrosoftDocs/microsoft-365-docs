@@ -110,12 +110,12 @@
       items:
             - name: Overview 
               href: prebuilt-overview.md
+            - name: Use a contracts model 
+              href: prebuilt-model-contract.md
             - name: Use an invoices model 
               href: prebuilt-model-invoice.md
             - name: Use a receipts model 
               href: prebuilt-model-receipt.md
-            - name: Use a contracts model 
-              href: prebuilt-model-contract.md
 
     - name: Content assembly
       items: 
