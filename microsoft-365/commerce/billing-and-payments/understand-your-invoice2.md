@@ -30,6 +30,8 @@ ms.date: 05/24/2022
 
 # Understand your bill or invoice for Microsoft 365 for business
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Your bill or invoice provides a summary of charges for your subscription and includes instructions for how to make a payment.
 
 > [!IMPORTANT]
