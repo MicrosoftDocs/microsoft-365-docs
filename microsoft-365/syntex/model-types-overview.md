@@ -115,7 +115,7 @@ Prebuilt models are pretrained to recognize documents and the structured informa
 
 ### Contract processing
 
-The contract processing model analyzes and extracts key information from contract documents. The API analyzes contracts in various formats and extracts key contract information such as client name, billing address, effective date, and expiration date.
+The contract processing model analyzes and extracts key information from contract documents. The API analyzes contracts in various formats and extracts key contract information such as client or party name, billing address, effective date, and expiration date.
 
 For more information about prebuilt contract processing models, see [Use a prebuilt model to extract information from contracts](prebuilt-model-contract.md).
 
