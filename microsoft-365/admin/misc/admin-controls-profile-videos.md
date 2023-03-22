@@ -46,7 +46,7 @@ The requests below are done with the [Microsoft Graph API](/graph/graph-explorer
 
 3. Make a GET request to the following endpoint to get the current state of profile video admin setting: https://graph.microsoft.com/beta/organization/my-org-id/settings/profileVideo The response should look like this:
 
-```
+```http
 { "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('**my-org-id**')/settings/profileVideo/$entity",
 
 "isEnabledInOrganization": false
@@ -58,7 +58,7 @@ The requests below are done with the [Microsoft Graph API](/graph/graph-explorer
 
 4. Make a PATCH request to the following endpoint to update state of profile video admin setting, https://graph.microsoft.com/beta/organization/my-org-id/settings/profileVideo, with the following request body:
 
-```
+```http
 
 {
 
