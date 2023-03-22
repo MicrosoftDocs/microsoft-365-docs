@@ -44,12 +44,13 @@ Devices that are successfully connected through TCP or identified as host reacha
 - External scans are used to identify which devices are approachable from the outside.
 - Device network connections, captured as part of Defender for Endpoint signals, help to identify external incoming connections that reach internal devices.
 
-Devices can be flagged as internet-facing for different reasons:
+Devices can be flagged as internet-facing due to:
 
-- A misconfigured firewall rule, which could be a host firewall rule or enterprise firewall rule, can result in internal devices being reachable from the outside.
-- Identifying applications or services that are listening on a device, can help you distinguish between those that are intentionally internet-facing and those that may compromise your organization by providing an attacker with an unauthorized entry point to your network.
+- a misconfigured firewall rule, which could be a host firewall rule or enterprise firewall rule, can result in internal devices being reachable from the outside.
+- applications or services that are listening on a device.
 
-Understanding your firewall policy and identifying these application and services provides critical information when it comes to mapping your organization’s external attack surface.
+Understanding your firewall policy, and your devices that are intentionally internet-facing as opposed those that may compromise your organization,
+provides critical information when it comes to mapping your external attack surface.
 
 ## View internet-facing devices
 
@@ -82,7 +83,7 @@ From here you can discover, how the device was detected as internet-facing, alon
 
 Use advanced hunting queries to gain visibility and insights into the internet-facing devices in your organization, for example:
 
-### Find all devices that are internet-facing
+### Get all internet facing devices
 
 Use this query to find all devices that are internet facing
 
@@ -105,13 +106,14 @@ This query returns the internet-facing devices with their aggregated evidence in
 - **InternetFacingPublicScannedPort**
 - **InternetFacingTransportProtocol**
 
-### Find applications and services listening on a device
+### Get information on inbounds connections
 
 For TCP connections, you can  gain further insights into applications or services identified as listening on a device by querying [DeviceNetworkEvents](../defender/advanced-hunting-devicenetworkevents-table.md). Use the following example as a starting point:
 
 ```kusto
 // Query on inbound connection accepted events
 DeviceNetworkEvents
+
 |where Timestamp > ago(7d)
 |where DeviceId == ""
 |where not(InitiatingProcessCommandLine has_any ("TaniumClient.exe", "ZSATunnel.exe", "MsSense.exe"))
