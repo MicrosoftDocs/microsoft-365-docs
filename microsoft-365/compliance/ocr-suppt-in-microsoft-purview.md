@@ -25,7 +25,7 @@ Microsoft Purview can scan for content in documents to help protect those docume
 <br><br>
 OCR scanning is an optional feature in Microsoft Purview. When you enable optical character recognition (OCR) data classifiers, such as sensitive information types and trainable classifiers, can detect characters that are in images. To set up pay-as-you-go billing for OCR scans.
 <br><br>
-OCR is first enabled at the tenant level, and then you select which services you want to enable it for. Image scanning is available for images in Exchange, SharePoint, OneDrive for Business, Teams, and Windows endpoint devices
+OCR is first enabled at the tenant level, and then you select which services you want to enable it for. Image scanning is available for images in Exchange, SharePoint, OneDrive, Teams, and Windows endpoint devices
 <br><br>
 Once the OCR settings are configured, your existing policies for data loss protection (DLP), data lifecycle management, data loss prevention, and autolabeling for insider risk are applied to both images and documents. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview not only scans for credit card numbers in both text and images at those locations.
 
@@ -66,7 +66,7 @@ To enable OCR scans, your Global admin must set up pay as you go billing by foll
 |--------------|----------|----------|
 | Endpoints(Windows devices) | -Data loss prevention policies | |
 |Exchange | -Data loss prevention policies <br><br><br>-Data lifecycle management (automatically applied retention labels) | -Exchange email: Outgoing emails are labeled <br> -Microsoft 365 group mailboxes and sites  <br> Outgoing emails are labeled  |
-|OneDrive for Business | -Data loss prevention policies <br><br><br> -Data lifecycle management (automatically applied retention labels)<br><br><br> -Insider risk management (automatically applied sensitivity labels)| |
+|OneDrive | -Data loss prevention policies <br><br><br> -Data lifecycle management (automatically applied retention labels)<br><br><br> -Insider risk management (automatically applied sensitivity labels)| |
 |SharePoint | -Data loss prevention policies <br><br><br> -Data lifecycle management (automatically applied retention labels)<br><br><br> -Insider risk management (automatically applied sensitivity labels)| |
 |Teams | -Data loss prevention policies <br><br><br> -Data lifecycle management (automatically applied retention labels)<br><br><br> -Insider risk management (automatically applied sensitivity labels)| |
 
@@ -79,11 +79,11 @@ This new functionality supports scanning images in the following file types, wit
 
 | Supported file types | Image requirements  |
 |----------------------|---------------------|
-| JPEG, JPG, PNG, and BMP, TIFF, and PDF (image only) | -Images that are embedded in Microsoft Office documents aren't supported. <br> <br>   -**File sizes:** Image files must be no larger than 20 MB. For SharePoint, OneDrive for Business, and Windows Endpoints, the maximum image file size is 50 MB. <br>  -**Image resolution:** Image resolution must be at least 50 x 50 pixels and not larger than 16000 x 16,000 px. |
+| JPEG, JPG, PNG, and BMP, TIFF, and PDF (image only) | -Images that are embedded in Microsoft Office documents aren't supported. <br> <br>   -**File sizes:** Image files must be no larger than 20 MB. For SharePoint, OneDrive, and Windows Endpoints, the maximum image file size is 50 MB. <br>  -**Image resolution:** Image resolution must be at least 50 x 50 pixels and not larger than 16000 x 16,000 px. |
 
 >[!NOTE]
 >
-> - SharePoint and OneDrive for Business support only the following file types: JPEG, JPG, PNG, and BMP.
+> - SharePoint and OneDrive support only the following file types: JPEG, JPG, PNG, and BMP.
 > - Data loss protection policy tips are not supported for images in Exchange.
 > - Only images with machine-typed text are supported
 > - Only images uploaded after OCR has been enabled are scanned.
