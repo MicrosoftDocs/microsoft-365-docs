@@ -63,11 +63,28 @@ The device health report provides information about device health and trends. Yo
 
 ## Vulnerable devices
 
-The vulnerable devices report provides information about devices and trends. Use the **Trends** column to view information about devices that had alerts over the last 30 days. Use the **Status** column to view current snapshot information about devices that have alerts. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Vulnerable devices**.<br/><br/>You can use the **Devices** list to view information about your company's devices. In the navigation pane, go to **Assets** > **Devices**. To learn more, see [Manage devices in Defender for Business](mdb-manage-devices.md). |
-| **Web protection** | The web protection report shows attempts to access phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that are explicitly blocked. Categories of blocked sites include adult content, leisure sites, legal liability sites, and more. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Web protection**.<br/><br/>If you haven't yet configured web protection for your company, choose the **Settings** button in a report view. Then, under **Rules**, choose **Web content filtering**. To learn more about web content filtering, see [Web content filtering](../defender-endpoint/web-content-filtering.md). |
-| **Firewall** | The firewall report shows blocked inbound, outbound, and app connections. This report also shows remote IPs connected by multiple devices, and remote IPs with the most connection attempts. <br/><br/>If you haven't yet configured your firewall protection, in the navigation pane, choose **Endpoints** > **Configuration management** > **Device configuration**. To learn more, see [Firewall in Defender for Business](mdb-firewall.md). |
-| **Device control** | The device control report shows information about media usage, such as the use of removable storage devices in your organization. |
-| **Attack surface reduction rules** <br/>*(NEW!)* | The attack surface reduction rules report has three tabs: **Detections** (to show blocked or audited detections); **Configuration** (enabling you to filter on standard protection rules or additional ASR rules); and **Add exclusions** (enabling you to define exclusions, if needed). To access this report, in the navigation pane, choose **Reports** > **Endpoints** > Attack surface reduction rules**. <br/><br/>To learn more, see [Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md). |
+The vulnerable devices report provides information about devices and trends. Use the **Trends** column to view information about devices that had alerts over the last 30 days. Use the **Status** column to view current snapshot information about devices that have alerts. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Vulnerable devices**.<br/><br/>You can use the **Devices** list to view information about your company's devices. In the navigation pane, go to **Assets** > **Devices**. To learn more, see [Manage devices in Defender for Business](mdb-manage-devices.md). 
+
+## Web protection
+
+The web protection report shows attempts to access phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that are explicitly blocked. Categories of blocked sites include adult content, leisure sites, legal liability sites, and more. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Web protection**.<br/><br/>If you haven't yet configured web protection for your company, choose the **Settings** button in a report view. Then, under **Rules**, choose **Web content filtering**. To learn more about web content filtering, see [Web content filtering](../defender-endpoint/web-content-filtering.md). 
+
+## Firewall
+
+The firewall report shows blocked inbound, outbound, and app connections. This report also shows remote IPs connected by multiple devices, and remote IPs with the most connection attempts. <br/><br/>If you haven't yet configured your firewall protection, in the navigation pane, choose **Endpoints** > **Configuration management** > **Device configuration**. To learn more, see [Firewall in Defender for Business](mdb-firewall.md). 
+
+## Device control
+
+The device control report shows information about media usage, such as the use of removable storage devices in your organization. 
+
+## Attack surface reduction rules
+
+The attack surface reduction rules report has three tabs: 
+- **Detections** to show blocked or audited detections;
+- **Configuration** enabling you to filter on standard protection rules or additional ASR rules; and 
+- **Add exclusions** enabling you to define exclusions, if needed. 
+
+To access this report, in the navigation pane, choose **Reports** > **Endpoints** > Attack surface reduction rules**. <br/><br/>To learn more, see [Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md). |
 
 ## See also
 
