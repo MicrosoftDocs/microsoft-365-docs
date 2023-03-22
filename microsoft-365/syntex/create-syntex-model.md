@@ -167,6 +167,33 @@ The **Set up a prebuilt model** section shows the types of prebuilt models you c
 
 Select one of the following tabs to continue with the prebuilt model you want to use.
 
+# [Contract processing](#tab/contract-processing)
+
+1. Select **Contract processing**.
+
+2. On the **Contract processing: Details** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
+
+3. On the right panel of the **Create a contract processing model** page, enter the following information.
+
+    - **Model name** – Enter the name of the model, for example *Service agreement*.
+
+    - **Description** – Enter information about how this model will be used.
+
+        ![Screenshot of the right panel of the Create a contract processing model page.](../media/content-understanding/create-a-model-panel.png) 
+    
+4. Under **Advanced settings**:
+
+    - In the **Content type** section, choose whether to create a new content type or to use an existing one.
+
+    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected. 
+
+    > [!NOTE]
+    > Sensitivity labels are not available for prebuilt models at this time.
+
+5. When you're ready to create the model, select **Create**.
+
+6. You're now ready to [complete setting up the model](prebuilt-model-contract.md).
+
 # [Invoice processing](#tab/invoice-processing)
 
 1. Select **Invoice processing**.
@@ -200,40 +227,13 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
 2. On the **Receipt processing: Details** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
 
-2. On the right panel of the **Create a receipt processing model** page, enter the following information.
+3. On the right panel of the **Create a receipt processing model** page, enter the following information.
 
     - **Model name** – Enter the name of the model, for example *Office expenses*.
 
     - **Description** – Enter information about how this model will be used.
 
         ![Screenshot of the right panel of the Create a model to process receipts page.](../media/content-understanding/create-a-model-panel.png) 
-    
-3. Under **Advanced settings**:
-
-    - In the **Content type** section, choose whether to create a new content type or to use an existing one.
-
-    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected. 
-
-    > [!NOTE]
-    > Sensitivity labels are not available for prebuilt models at this time.
-
-4. When you're ready to create the model, select **Create**.
-
-5. You're now ready to [complete setting up the model](prebuilt-model-receipt.md).
-
-# [Contract processing](#tab/contract-processing)
-
-1. Select **Contract processing**.
-
-2. On the **Contract processing: Details** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
-
-3. On the right panel of the **Create a contract processing model** page, enter the following information.
-
-    - **Model name** – Enter the name of the model, for example *Service agreement*.
-
-    - **Description** – Enter information about how this model will be used.
-
-        ![Screenshot of the right panel of the Create a contract processing model page.](../media/content-understanding/create-a-model-panel.png) 
     
 4. Under **Advanced settings**:
 
@@ -246,7 +246,7 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
 5. When you're ready to create the model, select **Create**.
 
-6. You're now ready to [complete setting up the model](prebuilt-model-contract.md).
+6. You're now ready to [complete setting up the model](prebuilt-model-receipt.md).
 
 ---
 
