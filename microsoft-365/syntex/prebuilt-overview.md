@@ -38,7 +38,7 @@ Currently, there are three prebuilt models available: [invoices](prebuilt-model-
 - The *receipts model* analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
 - The prebuilt *contracts model* analyzes and extracts key information from contract documents. The API recognizes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
-- 
+ 
 Additional prebuilt models will be available in future releases.
 
 ## Requirements
@@ -46,6 +46,8 @@ Additional prebuilt models will be available in future releases.
 For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md). 
 
 ## See also
+
+[Use a prebuilt model to extract information from contracts](prebuilt-model-contract.md)
 
 [Use a prebuilt model to extract information from invoices](prebuilt-model-invoice.md)
 
