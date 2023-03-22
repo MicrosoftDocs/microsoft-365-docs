@@ -10743,22 +10743,22 @@
   {
     "source_path": "microsoft-365/compliance/archiving-third-party-data.md",
     "redirect_url": "/microsoft-365/compliance/archive-third-party-data.md",
-    "redirect_document_id": true
+    "redirect_document_id": false
   },
   {
     "source_path": "microsoft-365/compliance/deploy-facebook-connector.md",
     "redirect_url": "/microsoft-365/compliance/archive-facebook-data.md",
-    "redirect_document_id": true
+    "redirect_document_id": false
   },
   {
     "source_path": "microsoft-365/compliance/deploy-twitter-connector.md",
     "redirect_url": "/microsoft-365/compliance/archive-twitter-data.md",
-    "redirect_document_id": true
+    "redirect_document_id": false
   },
   {
     "source_path": "microsoft-365/compliance/work-with-partner-to-archive-third-party-data.md",
     "redirect_url": "/microsoft-365/compliance/archive-partner-third-party-data.md",
-    "redirect_document_id": true
+    "redirect_document_id": false
   },
   {
     "source_path": "microsoft-365/admin/security-and-compliance/secure-your-business-data.md",
