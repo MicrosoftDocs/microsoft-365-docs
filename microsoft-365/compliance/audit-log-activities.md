@@ -26,201 +26,7 @@ The tables in this article describe the activities that are audited in Microsoft
 
 These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Audit log detailed properties](audit-log-detailed-properties.md).
 
-Select one of the following links to go to a specific table.
-
-:::row:::
-    :::column:::
-        [Application administration activities](#application-administration-activities)
-    :::column-end:::
-    :::column:::
-        [Information barriers activities](#information-barriers-activities)
-    :::column-end:::
-    :::column:::
-        [Role administration activities](#role-administration-activities)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [Azure AD group administration activities](#azure-ad-group-administration-activities)
-    :::column-end:::
-    :::column:::
-        [Microsoft Forms activities](#microsoft-forms-activities)
-    :::column-end:::
-    :::column:::
-        [Sensitive information types activities ](#sensitive-information-types-activities)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [Briefing email activities](#briefing-email-activities)
-    :::column-end:::
-    :::column:::
-        [Microsoft Power Apps activities](#microsoft-power-apps-activities)
-    :::column-end:::
-    :::column:::
-        [Sensitivity label activities](#sensitivity-label-activities)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [Communication compliance activities](#communication-compliance-activities)
-    :::column-end:::
-    :::column:::
-        [Microsoft Power Automate activities](#microsoft-power-automate-activities)
-    :::column-end:::
-    :::column:::
-        [SharePoint list activities](#sharepoint-list-activities)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [Content explorer activities](#content-explorer-activities)
-    :::column-end:::
-    :::column:::
-        [Microsoft Stream activities](#microsoft-stream-activities)
-    :::column-end:::
-    :::column:::
-        [Sharing and access request activities](#sharing-and-access-request-activities)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [Directory administration activities](#directory-administration-activities)
-    :::column-end:::
-    :::column:::
-        [Microsoft Teams activities](#microsoft-teams-activities)
-    :::column-end:::
-    :::column:::
-        [Site administration activities](#site-administration-activities)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [Disposition review activities](#disposition-review-activities)
-    :::column-end:::
-    :::column:::
-        [Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)
-    :::column-end:::
-    :::column:::
-        [Site permissions activities](#site-permissions-activities)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [eDiscovery activities](#ediscovery-activities)
-    :::column-end:::
-    :::column:::
-        [Microsoft Teams Shifts activities](#microsoft-teams-shifts-activities)
-    :::column-end:::
-    :::column:::
-        [Synchronization activities](#synchronization-activities)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [eDiscovery (Premium) activities](#ediscovery-premium-activities)
-    :::column-end:::
-    :::column:::
-        [Microsoft Workplace Analytics activities](#microsoft-workplace-analytics-activities)
-    :::column-end:::
-    :::column:::
-        [SystemSync activities](#systemsync-activities)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [Encrypted message portal activities](#encrypted-message-portal-activities)
-    :::column-end:::
-    :::column:::
-        [MyAnalytics activities](#myanalytics-activities)
-    :::column-end:::
-    :::column:::
-        [User administration activities](#user-administration-activities)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [Exchange admin activities](#exchange-admin-activities)
-    :::column-end:::
-    :::column:::
-        [Power BI activities](#power-bi-activities)
-    :::column-end:::
-    :::column:::
-        [Viva Goals activities](#viva-goals-activities)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [Exchange mailbox activities](#exchange-mailbox-activities)
-    :::column-end:::
-    :::column:::
-        [Quarantine activities](#quarantine-activities)
-    :::column-end:::
-    :::column:::
-        [Yammer activities](#yammer-activities)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [File and page activities](#file-and-page-activities)
-    :::column-end:::
-    :::column:::
-        [Report activities](#report-activities)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [Folder activities](#folder-activities)
-    :::column-end:::
-    :::column:::
-        [Retention policy and retention label activities](#retention-policy-and-retention-label-activities)
-    :::column-end:::
-:::row-end:::
-
-### Frequently asked questions about FileAccessed and FilePreviewed events
-
-**Could any non-user activities trigger FilePreviewed audit records that contain a user agent like "OneDriveMpc-Transform_Thumbnail"?**
-
-We aren't aware of scenarios where non-user actions generate events like these. User actions like opening a user profile card (by selecting their name or email address in a message in Outlook on the web) would generate similar events.
-
-**Are calls to the OneDriveMpc-Transform_Thumbnail always intentionally being triggered by the user?**
-
-No. But similar events can be logged as a result of browser pre-fetch.
-
-**If we see a FilePreviewed event coming from a Microsoft-registered IP address, does that mean that the preview was displayed on the screen of the user's device?**
-
-No. The event might have been logged as a result of browser pre-fetch.
-
-**Are there scenarios where a user previewing a document generates FileAccessed events?**
-
-Both the FilePreviewed and FileAccessed events indicate that a user's call led to a read of the file (or a read of a thumbnail rendering of the file). While these events are intended to align with preview vs. access intention, the event distinction isn't a guarantee of the user's intent.
-
-### The app\@sharepoint user in audit records
-
-In audit records for some file activities (and other SharePoint-related activities), you may notice the user who performed the activity (identified in the User and UserId fields) is app@sharepoint. This indicates that the "user" who performed the activity was an application. In this case, the application was granted permissions in SharePoint to perform organization-wide actions (such as search a SharePoint site or OneDrive account) on behalf of a user, admin, or service. This process of giving permissions to an application is called *SharePoint App-Only* access. This indicates that the authentication presented to SharePoint to perform an action was made by an application, instead of a user. This is why the app@sharepoint user is identified in certain audit records. For more information, see [Grant access using SharePoint App-Only](/sharepoint/dev/solution-guidance/security-apponly-azureacs).
-
-For example, app@sharepoint is often identified as the user for "Performed search query" and "Accessed file" events. That's because an application with SharePoint App-Only access in your organization performs search queries and accesses files when applying retention policies to sites and OneDrive accounts.
-
-Here are a few other scenarios where app@sharepoint may be identified in an audit record as the user who performed an activity:
-
-- **Microsoft 365 Groups**. When a user or admin creates a new group, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group. These tasks are performed an application on behalf of the user who created the group.
-- **Microsoft Teams**. Similar to Microsoft 365 Groups, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group when a team is created.
-- **Compliance features**. When an admin implements compliance features, such as retention policies, eDiscovery holds, and auto-applying sensitivity labels.
-
-In these and other scenarios, you'll also notice that multiple audit records with app@sharepoint as the specified user were created within a short time frame, often within a few seconds of each other. This also indicates they were probably triggered by the same user-initiated task. Also, the ApplicationDisplayName and EventData fields in the audit record may help you identify the scenario or application that triggered the event.
+Select one of the links in the **In this article** list on the right side of this page to go to a specific table.
 
 ## Application administration activities
 
@@ -449,6 +255,38 @@ The following table describes the file and page activities in SharePoint Online 
 |(none)|PageViewedExtended|This is related to the "Viewed page" (PageViewed) activity. A PageViewedExtended event is logged when the same person continually views a web page for an extended period (up to 3 hours). <br/><br/> The purpose of logging PageViewedExtended events is to reduce the number of PageViewed events that are logged when a page is continually viewed. This helps reduce the noise of multiple PageViewed records for what is essentially the same user activity, and lets you focus on the initial (and more important) PageViewed event.|
 |View signaled by client|ClientViewSignaled|A user's client (such as website or mobile app) has signaled that the indicated page has been viewed by the user. This activity is often logged following a PagePrefetched event for a page. <br/><br/>**NOTE**: Because ClientViewSignaled events are signaled by the client, rather than the server, it's possible the event may not be logged by the server and therefore may not appear in the audit log. It's also possible that information in the audit record may not be trustworthy. However, because the user's identity is validated by the token used to create the signal, the user's identity listed in the corresponding audit record is accurate. The system waits five minutes before it logs the same event when the same user's client signals that the page has been viewed again by the user.|
 |(none)|PagePrefetched|A user's client (such as website or mobile app) has requested the indicated page to help improve performance if the user browses to it. This event is logged to indicate that the page content has been served to the user's client. This event isn't a definitive indication that the user navigated to the page. <br/><br/> When the page content is rendered by the client (as per the user's request) a ClientViewSignaled event should be generated. Not all clients support indicating a pre-fetch, and therefore some pre-fetched activities might instead be logged as PageViewed events.|
+
+### Frequently asked questions about FileAccessed and FilePreviewed events
+
+**Could any non-user activities trigger FilePreviewed audit records that contain a user agent like "OneDriveMpc-Transform_Thumbnail"?**
+
+We aren't aware of scenarios where non-user actions generate events like these. User actions like opening a user profile card (by selecting their name or email address in a message in Outlook on the web) would generate similar events.
+
+**Are calls to the OneDriveMpc-Transform_Thumbnail always intentionally being triggered by the user?**
+
+No. But similar events can be logged as a result of browser pre-fetch.
+
+**If we see a FilePreviewed event coming from a Microsoft-registered IP address, does that mean that the preview was displayed on the screen of the user's device?**
+
+No. The event might have been logged as a result of browser pre-fetch.
+
+**Are there scenarios where a user previewing a document generates FileAccessed events?**
+
+Both the FilePreviewed and FileAccessed events indicate that a user's call led to a read of the file (or a read of a thumbnail rendering of the file). While these events are intended to align with preview vs. access intention, the event distinction isn't a guarantee of the user's intent.
+
+### The app\@sharepoint user in audit records
+
+In audit records for some file activities (and other SharePoint-related activities), you may notice the user who performed the activity (identified in the User and UserId fields) is app@sharepoint. This indicates that the "user" who performed the activity was an application. In this case, the application was granted permissions in SharePoint to perform organization-wide actions (such as search a SharePoint site or OneDrive account) on behalf of a user, admin, or service. This process of giving permissions to an application is called *SharePoint App-Only* access. This indicates that the authentication presented to SharePoint to perform an action was made by an application, instead of a user. This is why the app@sharepoint user is identified in certain audit records. For more information, see [Grant access using SharePoint App-Only](/sharepoint/dev/solution-guidance/security-apponly-azureacs).
+
+For example, app@sharepoint is often identified as the user for "Performed search query" and "Accessed file" events. That's because an application with SharePoint App-Only access in your organization performs search queries and accesses files when applying retention policies to sites and OneDrive accounts.
+
+Here are a few other scenarios where app@sharepoint may be identified in an audit record as the user who performed an activity:
+
+- **Microsoft 365 Groups**. When a user or admin creates a new group, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group. These tasks are performed an application on behalf of the user who created the group.
+- **Microsoft Teams**. Similar to Microsoft 365 Groups, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group when a team is created.
+- **Compliance features**. When an admin implements compliance features, such as retention policies, eDiscovery holds, and auto-applying sensitivity labels.
+
+In these and other scenarios, you'll also notice that multiple audit records with app@sharepoint as the specified user were created within a short time frame, often within a few seconds of each other. This also indicates they were probably triggered by the same user-initiated task. Also, the ApplicationDisplayName and EventData fields in the audit record may help you identify the scenario or application that triggered the event.
 
 ## Folder activities
 
