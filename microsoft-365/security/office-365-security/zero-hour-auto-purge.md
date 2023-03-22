@@ -109,7 +109,7 @@ ZAP will not quarantine any message that's in the process of [Dynamic Delivery](
 > [!NOTE]
 > This section lists new features which are currently in preview.
 
-When a chat message is identified as potentially phishing or malicious in Microsoft Teams, ZAP blocks the massage and quarantines it. This message is blocked for both the recipient and the sender. Note that this protection feature only applies to messages in a chat or in a meeting within the organization.  
+When a chat message is identified as potentially phishing or malicious in Microsoft Teams, ZAP blocks the message and quarantines it. This message is blocked for both the recipient and the sender. Note that this protection feature only applies to messages in a chat or in a meeting within the organization.  
 
 **Sender view**:
 
