@@ -32,17 +32,16 @@ ms.date: 3/28/2023
 > [!NOTE]
 > This article lists new features in the latest release of Microsoft Defender for Office 365. These features are currently in preview.
 
-With the increased use of collaboration tools like Microsoft Teams, the possibility of malicious attacks using URLs and messages has increased as well. Microsoft Defender for Office 365 already provides protection against malicious URLs in Teams through [Safe Links](safe-links-about.md), and now Microsoft is extending this protection with a new set of capabilities designed to disrupt the attack chain. 
+With the increased use of collaboration tools like Microsoft Teams, the possibility of malicious attacks using URLs and messages has increased as well. Microsoft Defender for Office 365 already provides protection against malicious URLs in Teams through [Safe Links](safe-links-about.md), and now Microsoft is extending this protection with a new set of capabilities designed to disrupt the attack chain.
 
-- **Reporting suspicious messages and files to admins and Microsoft**: Users will have the ability to report potential malicious messages to their admins. The admins can review these messages and report them to Microsoft. For more information, see [User reported settings in Teams](submissions-teams.md).
+- **Reporting suspicious messages and files to admins and Microsoft**: Users will have the ability to report potential malicious messages to their admins. The admins can review these messages and report them to Microsoft. For more information, see [User reported settings in Teams](submissions-teams.md).
 
-- **Zero-Hour Auto Purge (ZAP)**: ZAP is an existing email protection feature that proactively detects and neutralizes malicious phishing, spam, or malware messages that have already been delivered. For read or unread messages that are found to contain malware after delivery, ZAP quarantines the message that contains the malware attachment. Note that for this preview, ZAP will be quarantining based on URLs only, not spam. For more information, see [Zero-hour auto purge in Microsoft Defender for Office 365](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-in-microsoft-teams).
+- **Zero-Hour Auto Purge (ZAP)**: ZAP is an existing email protection feature that proactively detects and neutralizes malicious phishing, spam, or malware messages that have already been delivered. For read or unread messages that are found to contain malware after delivery, ZAP quarantines the message that contains the malware attachment. Note that for this preview, ZAP will be quarantining based on URLs only, not spam. For more information, see [Zero-hour auto purge in Microsoft Defender for Office 365](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-in-microsoft-teams).
 
-- **Quarantine**: Admins will be able to review quarantined messages that are identified as malicious by ZAP. Admins will also be able to release the message if the message is determined as safe. For more information, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams).
+- **Quarantine**: Admins will be able to review quarantined messages that are identified as malicious by ZAP. Admins will also be able to release the message if the message is determined as safe. For more information, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams).
 
 The **Teams Message Entity Panel** is one single place to store all of Teams message metadata that will allow for immediate SecOps review. Any threat coming from chats, group or meeting chats, and other channels can be found in one place as soon as it is assessed. For more information, see [Teams Message Entity Panel for Microsoft Teams](teams-email-summary-page.md). 
 
 ## See also
 
 - [Microsoft Teams](/microsoftteams/teams-overview)
-
