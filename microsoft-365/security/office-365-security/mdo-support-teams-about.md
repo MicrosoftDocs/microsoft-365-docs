@@ -38,8 +38,6 @@ With the increased use of collaboration tools like Microsoft Teams, the possibil
 
 - **Quarantine**: Admins will be able to review quarantined messages that are identified as malicious by ZAP. Admins will also be able to release the message if the message is determined as safe. For more information, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams).
 
-- **Attack Simulation & Training**: Attack simulation training in the Microsoft 365 Defender portal is now enabled to run realistic attack scenarios in Teams. These simulated attacks can help you identify and find vulnerable users before a real attack impacts you. For more information, see [Get started using Attack simulation training](attack-simulation-training-get-started.md). 
-
 ## See also
 
 - [Microsoft Teams](/microsoftteams/teams-overview)
