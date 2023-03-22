@@ -26,7 +26,8 @@ The tables in this article describe the activities that are audited in Microsoft
 
 These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Audit log detailed properties](audit-log-detailed-properties.md).
 
-Select one of the links in the **In this article** list on the right side of this page to go to a specific table.
+> [!TIP]
+> Select one of the links in the **In this article** list on the right side of this page to go to a specific table.
 
 ## Application administration activities
 
@@ -47,7 +48,7 @@ The following table lists application admin activities that are logged when an a
 
 ## Azure AD group administration activities
 
-The following table lists group administration activities that are logged when an admin or a user creates or changes a Microsoft 365 Group or when an admin creates a security group by using the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) or the Azure management portal. For more information about groups in Microsoft 365, see [View, create, and delete Groups in the Microsoft 365 admin center](../admin/create-groups/create-groups.md).
+The following table lists group administration activities that are logged when an admin or a user creates or changes a Microsoft 365 group or when an admin creates a security group by using the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) or the Azure management portal. For more information about groups in Microsoft 365, see [View, create, and delete Groups in the Microsoft 365 admin center](../admin/create-groups/create-groups.md).
 
 > [!NOTE]
 > The operation names listed in the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
@@ -103,7 +104,7 @@ The following table lists Azure AD directory and domain-related activities that 
 |Added a partner to the directory|Add partner to company.|Added a partner (delegated administrator) to your organization.|
 |Removed domain from company|Remove domain from company.|Removed a domain from your organization.|
 |Removed a partner from the directory|Remove partner from company.|Removed a partner (delegated administrator) from your organization.|
-|Set company information|Set company information.|Updated the company information for your organization. This includes email addresses for subscription-related email sent by Microsoft 365, and technical notifications about Microsoft 365 services.|
+|Set company information|Set company information.|Updated the company information for your organization. Includes email addresses for subscription-related email sent by Microsoft 365, and technical notifications about Microsoft 365 services.|
 |Set domain authentication|Set domain authentication.|Changed the domain authentication setting for your organization.|
 |Updated the federation settings for a domain|Set federation settings on domain.|Changed the federation (external sharing) settings for your organization.|
 |Set password policy|Set password policy.|Changed the length and character constraints for user passwords in your organization.|
@@ -125,7 +126,7 @@ The following table lists the activities a disposition reviewer took when an ite
 
 ## eDiscovery activities
 
-Content Search and eDiscovery-related activities that are performed in the security and compliance portal or by running the corresponding PowerShell cmdlets are logged in the audit log. This includes the following activities:
+Content Search and eDiscovery-related activities that are performed in the security and compliance portal or by running the corresponding PowerShell cmdlets are logged in the audit log. Includes the following activities:
 
 - Creating and managing eDiscovery cases
 - Creating, starting, and editing Content Searches
@@ -149,7 +150,7 @@ Access logs are available for encrypted messages through the encrypted message p
 
 Each audit entry for a tracked message will contain the following fields:
 
-- **MessageID**: Contains the ID of the message being tracked. This is the key identifier used to follow a message through the system.
+- **MessageID**: Contains the ID of the message being tracked. The key identifier used to follow a message through the system.
 - **Recipient**: List of all recipient email addresses.
 - **Sender**: The originating email address.
 - **AuthenticationMethod**: Describes the authenticating method for accessing the message, for example OTP, Yahoo, Gmail, or Microsoft.
@@ -171,7 +172,7 @@ Here are some tips for searching for Exchange admin activities when searching th
 - To display events from the Exchange admin audit log, select the **Activity** column to sort the cmdlet names in alphabetical order.
 - To get information about what cmdlet was run, which parameters and parameter values were used, and what objects were affected, you can export the search results by selecting the **Download all results** option. For more information, see [Export, configure, and view audit log records](audit-log-export-records.md).
 - You can also use the `Search-UnifiedAuditLog -RecordType ExchangeAdmin` command in Exchange Online PowerShell to return only audit records from the Exchange admin audit log. It may take up to 30 minutes after an Exchange cmdlet is run for the corresponding audit log entry to be returned in the search results. For more information, see [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog). For information about exporting the search results returned by the **Search-UnifiedAuditLog** cmdlet to a CSV file, see the "Tips for exporting and viewing the audit log" section in [Export, configure, and view audit log records](audit-log-export-records.md#tips-for-exporting-and-viewing-the-audit-log).
-- You can also view events in the Exchange admin audit log by using the Exchange admin center or running the **Search-AdminAuditLog** in Exchange Online PowerShell. This is a good way to specifically search for activity performed by Exchange Online administrators. For instructions, see:
+- You can also view events in the Exchange admin audit log by using the Exchange admin center or running the **Search-AdminAuditLog** in Exchange Online PowerShell. The audit log is a good way to specifically search for activity performed by Exchange Online administrators. For instructions, see:
 
   - [View the administrator audit log](/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log)
   - [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog)
@@ -194,7 +195,7 @@ The following table lists the activities that can be logged by mailbox audit log
 |Created mailbox item|Create|An item is created in the Calendar, Contacts, Notes, or Tasks folder in the mailbox. For example, a new meeting request is created. Creating, sending, or receiving a message isn't audited. Also, creating a mailbox folder isn't audited.|
 |Created new inbox rule in Outlook web app|New-InboxRule|A mailbox owner or other user with access to the mailbox created an inbox rule in the Outlook web app.|
 |Deleted messages from Deleted Items folder|SoftDelete|A message was permanently deleted or deleted from the Deleted Items folder. These items are moved to the Recoverable Items folder. Messages are also moved to the Recoverable Items folder when a user selects it and presses **Shift+Delete**.|
-|Labeled message as a record|ApplyRecordLabel|A message was classified as a record. This occurs when a retention label that classifies content as a record is manually or automatically applied to a message.|
+|Labeled message as a record|ApplyRecordLabel|A message was classified as a record. Occurs when a retention label that classifies content as a record is manually or automatically applied to a message.|
 |Moved messages to another folder|Move|A message was moved to another folder.|
 |Moved messages to Deleted Items folder|MoveToDeletedItems|A message was deleted and moved to the Deleted Items folder.|
 |Modified folder permission|UpdateFolderPermissions|A folder permission was changed. Folder permissions control which users in your organization can access mailbox folders and the messages in the folder.|
@@ -212,7 +213,7 @@ The following table lists the activities that can be logged by mailbox audit log
 
 ### System accounts in Exchange mailbox audit records
 
-In audit records for some mailbox activities (especially **Add-MailboxPermissions**), you may notice the user who performed the activity (and is identified in the User and UserId fields) is NT AUTHORITY\SYSTEM or NT AUTHORITY\SYSTEM(Microsoft.Exchange.Servicehost). This indicates that the "user" who performed the activity was a system account in Exchange service in the Microsoft cloud. This system account often performs scheduled maintenance tasks on behalf of your organization. For example, a common audited activity performed by the NT AUTHORITY\SYSTEM(Microsoft.Exchange.ServiceHost) account is to update the permissions on the DiscoverySearchMailbox, which is a system mailbox. The purpose of this update is to verify that the FullAccess permission (which is the default) is assigned to the Discovery Management role group for the DiscoverySearchMailbox. This ensures that eDiscovery administrators can perform necessary tasks in their organization.
+In audit records for some mailbox activities (especially **Add-MailboxPermissions**), you may notice the user who performed the activity (and is identified in the User and UserId fields) is NT AUTHORITY\SYSTEM or NT AUTHORITY\SYSTEM(Microsoft.Exchange.Servicehost). This indicates that the "user" who performed the activity was a system account in Exchange service in the Microsoft cloud. This system account often performs scheduled maintenance tasks on behalf of your organization. For example, a common audited activity performed by the NT AUTHORITY\SYSTEM(Microsoft.Exchange.ServiceHost) account is to update the permissions on the DiscoverySearchMailbox, which is a system mailbox. The purpose of this update is to verify that the FullAccess permission (which is the default) is assigned to the Discovery Management role group for the DiscoverySearchMailbox. Ensures that eDiscovery administrators can perform necessary tasks in their organization.
 
 Another system user account that may be identified in an audit record for **Add-MailboxPermission** is Administrator@apcprd03.prod.outlook.com. This service account is also included in mailbox audit records related to verifying and updating the FullAccess permission is assigned to the Discovery Management role group for the DiscoverySearchMailbox system mailbox. Specifically, audit records that identify the Administrator@apcprd03.prod.outlook.com account are typically triggered when Microsoft support personnel run a role-based access control diagnostic tool on behalf of your organization.
 
