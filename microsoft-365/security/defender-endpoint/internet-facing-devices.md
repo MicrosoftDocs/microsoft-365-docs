@@ -46,11 +46,10 @@ Devices that are successfully connected through TCP or identified as host reacha
 
 Devices can be flagged as internet-facing due to:
 
-- a misconfigured firewall rule, which could be a host firewall rule or enterprise firewall rule, can result in internal devices being reachable from the outside.
-- applications or services that are listening on a device.
+- a misconfigured firewall rule (host firewall rule or enterprise firewall rule) that results in internal devices being reachable from the outside.
+- applications or services that are identified as listening on a device.
 
-Understanding your firewall policy, and your devices that are intentionally internet-facing as opposed those that may compromise your organization,
-provides critical information when it comes to mapping your external attack surface.
+Understanding your firewall policy, and your devices that are intentionally internet-facing as opposed those that may compromise your organization, provides critical information when it comes to mapping your external attack surface.
 
 ## View internet-facing devices
 
