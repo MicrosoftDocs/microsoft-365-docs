@@ -56,6 +56,8 @@ To access this report, in the navigation pane, choose **Reports** > **General** 
 
 ## Threat protection
 
+:::image type="content" source="media/mdb-threat-protection-report.png" alt-text="Screenshot of the threat protection report in Defender for Business." lightbox="media/mdb-threat-protection-report.png":::
+
 The threat protection report provides information about alerts and alert trends. Use the **Alert trends** column to view information about alerts that were triggered over the last 30 days. Use the **Alert status** column to view current snapshot information about alerts, such as categories of unresolved alerts and their classification. 
 
 To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Threat protection**. 
