@@ -22,8 +22,6 @@ description: "Turn the profile video feature on or off for all users in your Mic
 
 As the Microsoft 365 administrator, you can turn the profile video feature on or off for users in your organization. Profile videos are 30-second videos that appear on profile cards in Microsoft 365 apps such as Outlook.
 
-<!-- For more information on how users in your organization can add profile videos, see [Profile videos in Microsoft 365](https://support.microsoft.com/en-us/topic/794ee82c-e679-4b93-b8fb-e1ed4ad4c732). -->
-
 ## Use the Microsoft 365 Admin Center to turn profile videos on or off
 
 By default, profile video creation is turned on in Microsoft 365 organizations.
@@ -56,7 +54,7 @@ The requests below are done with the [Microsoft Graph API](/graph/graph-explorer
 }
 ```
 
-The “isEnabledInOrganization” field will be set to either true or false. True means profile video capabilities are on and false means users can't make profile videos.
+    The “isEnabledInOrganization” field will be set to either true or false. True means profile video capabilities are on and false means users can't make profile videos.
 
 4. Make a PATCH request to the following endpoint to update state of profile video admin setting, https://graph.microsoft.com/beta/organization/my-org-id/settings/profileVideo, with the following request body:
 
@@ -69,7 +67,7 @@ The “isEnabledInOrganization” field will be set to either true or false. Tru
 }
 ```
 
-In the request body, populate the value for **isEnabledInOrganization** to either true or false, depending on whether you’d like to turn profile videos on or off.
+    In the request body, populate the value for **isEnabledInOrganization** to either true or false, depending on whether you’d like to turn profile videos on or off.
 
 5. Send the request. If it's successful, you should receive a 200 HTTP response code, and the response payload should confirm that your feature has been turned on or off. To validate, you can rerun the steps in the section “Get current state profile video admin toggle” to get the updated value.
 
@@ -104,4 +102,4 @@ In the request body, populate the value for **isEnabledInOrganization** to eithe
 
 * **Can deleted profile videos be recovered?**
 
-  No, if a user deletes their profile video, it can't be recovered.
+  No, if a user deletes their profile video it can't be recovered.
