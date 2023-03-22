@@ -70,7 +70,7 @@ If you don't need to build a custom model, you can use a [prebuilt model](prebui
 - [Invoice processing](prebuilt-model-invoice.md)
 - [Receipt processing](prebuilt-model-receipt.md)
 
-| Invoice processing | Invoice processing | Receipt processing | 
+| Contract processing | Invoice processing | Receipt processing | 
 | ------------- | ------------- | ------------- |
 | ![Icon for Contracts model.](../media/content-understanding/trained-contracts-model.png)| ![Icon for Invoices model.](../media/content-understanding/trained-invoices-model.png) | ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) |
 | Use this prebuilt model to save time processing contracts. Automatically extract key information specific to contract documents. <br>[Learn more about contract models.](prebuilt-model-contract.md) | Use this prebuilt model to save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more about invoice models.](prebuilt-model-invoice.md) | Use this prebuilt model to save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more about receipt models.](prebuilt-model-receipt.md) | 
