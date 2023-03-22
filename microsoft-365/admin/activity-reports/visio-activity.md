@@ -27,7 +27,8 @@ description: "Learn how to get the Visio activity report and gain insights into 
 
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill into individual product-level reports to give you more granular insight into the activities within each product. Check out [the Reports overview article](activity-reports.md).
 
->[!NOTE] The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [**Learn more about Experience insights.**](../misc/experience-insights-dashboard.md)
+>[!NOTE] 
+> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [**Learn more about Experience insights.**](../misc/experience-insights-dashboard.md)
 
 In the **Visio activity report**, you can view the activity of every Visio user.
 
@@ -63,7 +64,8 @@ You can also export the report data into an Excel .csv file by selecting the **
 
 :::image type="content" source="../../media/visio-license-filter.png" alt-text="Licensed users filter for the Visio activity report in Microsoft 365" lightbox="../../media/visio-license-filter.png":::
 
->[!NOTE] Learn more about Visio seeded capabilities [here](https://www.microsoft.com/microsoft-365/visio/visio-in-microsoft-365), and about Visio plans and pricing [here](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options?rtc=1&activetab=tabs%3aprimaryr1).
+>[!NOTE]
+> Learn more about Visio seeded capabilities [here](https://www.microsoft.com/microsoft-365/visio/visio-in-microsoft-365), and about Visio plans and pricing [here](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options?rtc=1&activetab=tabs%3aprimaryr1).
 
 ## User details table
 
