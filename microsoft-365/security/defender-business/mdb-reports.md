@@ -88,11 +88,9 @@ To learn more, see [Manage devices in Defender for Business](mdb-manage-devices.
 
 ## Vulnerable devices
 
-The vulnerable devices report provides information about devices and trends. Use the **Trends** column to view information about devices that had alerts over the last 30 days. Use the **Status** column to view current snapshot information about devices that have alerts. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Vulnerable devices**.
+The vulnerable devices report provides information about devices and trends. Use the **Trends** column to view information about devices that had alerts over the last 30 days. Use the **Status** column to view current snapshot information about devices that have alerts. 
 
-You can use the **Devices** list to view information about your company's devices. In the navigation pane, go to **Assets** > **Devices**. 
-
-To learn more, see [Manage devices in Defender for Business](mdb-manage-devices.md). 
+To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Vulnerable devices**.
 
 ## Web protection
 
