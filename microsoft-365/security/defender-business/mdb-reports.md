@@ -35,17 +35,22 @@ The monthly security summary report (currently in preview) shows:
 
 To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Monthly Security Summary**. 
 
-## License report (*NEW!*)
+## License report
 
 :::image type="content" source="media/mdb-licenses.png" alt-text="Screenshot of licenses report in Defender for Business." lightbox="media/mdb-licenses.png":::
 
-The license report provides information about licenses your organization has purchased and is using. To access this report, in the navigation pane, choose **Settings** > **Endpoints** > **Licenses**. 
+The license report provides information about licenses your organization has purchased and is using. 
+
+To access this report, in the navigation pane, choose **Settings** > **Endpoints** > **Licenses**. 
 
 ## Security report
 
-The security report provides information about your company's identities, devices, and apps. To access this report, in the navigation pane, choose **Reports** > **General** > **Security report**. 
+The security report provides information about your company's identities, devices, and apps. 
 
-You can view similar information on the home page of your Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
+To access this report, in the navigation pane, choose **Reports** > **General** > **Security report**. 
+
+> [!TIP]
+> You can view similar information on the home page of your Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 
 ## Threat protection
 
@@ -59,11 +64,19 @@ To learn more, see [View and manage incidents in Defender for Business](mdb-view
 
 ## Device health
 
-The device health report provides information about device health and trends. You can use this report to determine whether Defender for Business sensors are working correctly on devices and the current status of Microsoft Defender Antivirus. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Device health**. <br/><br/>You can use the **Devices** list to view information about your company's devices. In the navigation pane, go to **Assets** > **Devices**. To learn more, see [Manage devices in Defender for Business](mdb-manage-devices.md). 
+The device health report provides information about device health and trends. You can use this report to determine whether Defender for Business sensors are working correctly on devices and the current status of Microsoft Defender Antivirus. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Device health**. 
+
+You can use the **Devices** list to view information about your company's devices. In the navigation pane, go to **Assets** > **Devices**. 
+
+To learn more, see [Manage devices in Defender for Business](mdb-manage-devices.md). 
 
 ## Vulnerable devices
 
-The vulnerable devices report provides information about devices and trends. Use the **Trends** column to view information about devices that had alerts over the last 30 days. Use the **Status** column to view current snapshot information about devices that have alerts. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Vulnerable devices**.<br/><br/>You can use the **Devices** list to view information about your company's devices. In the navigation pane, go to **Assets** > **Devices**. To learn more, see [Manage devices in Defender for Business](mdb-manage-devices.md). 
+The vulnerable devices report provides information about devices and trends. Use the **Trends** column to view information about devices that had alerts over the last 30 days. Use the **Status** column to view current snapshot information about devices that have alerts. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Vulnerable devices**.
+
+You can use the **Devices** list to view information about your company's devices. In the navigation pane, go to **Assets** > **Devices**. 
+
+To learn more, see [Manage devices in Defender for Business](mdb-manage-devices.md). 
 
 ## Web protection
 
