@@ -42,7 +42,7 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 
 1. As an admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Go to **Settings** > **Endpoints** > **Licenses**. Your usage report report opens and displays information about your organization’s Defender for Endpoint licenses.
+2. Go to **Settings** > **Endpoints** > **Licenses**. Your usage report opens and displays information about your organization’s Defender for Endpoint licenses.
 
 3. Under **Subscription state**, select **Manage subscription settings**. 
 
