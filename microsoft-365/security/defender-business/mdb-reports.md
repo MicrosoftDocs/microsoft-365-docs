@@ -45,6 +45,8 @@ To access this report, in the navigation pane, choose **Settings** > **Endpoints
 
 ## Security report
 
+:::image type="content" source="media/mdb-security-report.png" alt-text="Screenshot of the security report in Defender for Business." lightbox="media/mdb-security-report.png":::
+
 The security report provides information about your company's identities, devices, and apps. 
 
 To access this report, in the navigation pane, choose **Reports** > **General** > **Security report**. 
