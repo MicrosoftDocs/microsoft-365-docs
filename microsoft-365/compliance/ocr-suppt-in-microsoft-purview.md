@@ -27,7 +27,7 @@ OCR scanning is an optional feature in Microsoft Purview. When you enable OCR, d
 <br><br>
 OCR is first enabled at the tenant level, and then you select which services you want to enable it for. Image scanning is available for images in Exchange, SharePoint, OneDrive, Teams, and Windows endpoint devices.
 <br><br>
-Once the OCR settings are configured, your existing policies for data loss prevention (DLP), data lifecycle management (automatically applying retention labels), and insider risk management (auto-labeling), are applied to images as well as documents and emails. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview scans for credit card numbers in both text and images at those locations.
+Once the OCR settings are configured, your existing policies for data loss prevention (DLP), data lifecycle management (including automatically applying retention labels), and insider risk management (including auto-labeling), are applied to images as well as documents and emails. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview scans for credit card numbers in both text and images at all of the supported locations.
 
 ## Workflow at a glance
 
