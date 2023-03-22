@@ -22,6 +22,8 @@ ms.date:
 
 # User reported message settings in Microsoft Teams
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**

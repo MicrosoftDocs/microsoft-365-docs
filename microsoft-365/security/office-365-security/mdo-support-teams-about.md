@@ -22,6 +22,8 @@ ms.date: 3/28/2023
 
 # Microsoft Defender for Office 365 support for Microsoft Teams (Preview)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
