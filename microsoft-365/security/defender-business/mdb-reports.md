@@ -72,7 +72,13 @@ To learn more, see [View and manage incidents in Defender for Business](mdb-view
 
 ## Device health
 
-The device health report provides information about device health and trends. You can use this report to determine whether Defender for Business sensors are working correctly on devices and the current status of Microsoft Defender Antivirus. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Device health**. 
+:::image type="content" source="media/mdb-device-health.png" alt-text="Screenshot of the device health report in Defender for Business." lightbox="media/mdb-device-health.png":::
+
+The device health report provides information about device health and trends. You can use this report to determine whether Defender for Business sensors are working correctly on devices and the current status of Microsoft Defender Antivirus. 
+
+To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Device health**. 
+
+## Device inventory
 
 You can use the **Devices** list to view information about your company's devices. In the navigation pane, go to **Assets** > **Devices**. 
 
