@@ -54,7 +54,7 @@ The requests below are done with the [Microsoft Graph API](/graph/graph-explorer
 }
 ```
 
-    The “isEnabledInOrganization” field will be set to either true or false. True means profile video capabilities are on and false means users can't make profile videos.
+  The “isEnabledInOrganization” field will be set to either true or false. True means profile video capabilities are on and false means users can't make profile videos.
 
 4. Make a PATCH request to the following endpoint to update state of profile video admin setting, https://graph.microsoft.com/beta/organization/my-org-id/settings/profileVideo, with the following request body:
 
@@ -67,7 +67,7 @@ The requests below are done with the [Microsoft Graph API](/graph/graph-explorer
 }
 ```
 
-    In the request body, populate the value for **isEnabledInOrganization** to either true or false, depending on whether you’d like to turn profile videos on or off.
+  In the request body, populate the value for **isEnabledInOrganization** to either true or false, depending on whether you’d like to turn profile videos on or off.
 
 5. Send the request. If it's successful, you should receive a 200 HTTP response code, and the response payload should confirm that your feature has been turned on or off. To validate, you can rerun the steps in the section “Get current state profile video admin toggle” to get the updated value.
 
