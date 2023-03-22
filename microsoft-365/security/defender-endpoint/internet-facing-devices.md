@@ -20,7 +20,7 @@ search.appverid: met150
 ms.date: 03/7/2023
 ---
 
-# Identify internet-facing devices
+# Internet-facing devices
 
 **Applies to:**
 
