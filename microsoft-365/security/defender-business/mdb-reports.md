@@ -80,7 +80,7 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 
 ## Device inventory
 
-:::image type="content" source="media/mdb-device-inventory.png" alt-text="Screenshot of the device inventory report in Defender for Business.":::
+:::image type="content" source="media/mdb-device-inventory.png" alt-text="Screenshot of the device inventory report in Defender for Business." lightbox="../../media/defender-business/mdb-device-inventory.png":::
 
 You can use the **Devices** list to view information about your company's devices. In the navigation pane, go to **Assets** > **Devices**. 
 
