@@ -404,7 +404,7 @@ For the preview release, this feature is enabled by default.
    - **Participants**: The total number of users who received the message.
    - **Sender**: The person who sent the message that was quarantined.
    - **Quarantine reason**: Available options are "High confidence phish" and "Malware".
-   - **Policy type**: The organization policy responsible for quarantined message.
+   - **Policy type**: The organization policy responsible for the quarantined message.
    - **Expires**: Indicates the time after which the message is removed from quarantine. By default, this is 30 days.
    - **Recipient address**: Email address of the recipients.
    - **Message ID**: Includes the chat message ID.
@@ -445,10 +445,10 @@ When you select multiple quarantined files in the list by clicking the checkbox 
 
 :::image type="content" source="../../media/admin-quarantine-teams-bulk-action.png" alt-text="The Bulk action options for files in quarantine" lightbox="../../media/admin-quarantine-teams-bulk-action.png":::
 
-- **Release**: Select this option to release message to the intended recipients within the organization.
-- **Delete messages**: Select this option to delete the message permanently from quarantine.
-- **Submit for review**: Select this option to submit the message to Microsoft for review.
-- **Download messages**: Select this option to save a local copy of the message.
+- **Release**: Select this option to release messages to the intended recipients within the organization.
+- **Delete messages**: Select this option to delete the messages permanently from quarantine.
+- **Submit for review**: Select this option to submit the messages to Microsoft for review.
+- **Download messages**: Select this option to save a local copy of the messages.
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to manage quarantined messages
 
