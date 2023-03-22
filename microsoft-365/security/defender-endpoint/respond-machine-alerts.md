@@ -117,7 +117,7 @@ Alternate steps:
 
    :::image type="content" source="images/collect-package.png" alt-text="The download package option" lightbox="images/collect-package.png":::
 
-The package contains the following folders:
+For Windows devices, the package contains the following folders:
 
 |Folder|Description|
 |---|---|
@@ -135,6 +135,20 @@ The package contains the following folders:
 |Users and Groups|Provides a list of files that each represent a group and its members.|
 |WdSupportLogs|Provides the MpCmdRunLog.txt and MPSupportFiles.cab  <p> <div class="alert"><b>NOTE:</b> This folder will only be created on Windows 10, version 1709 or later with February 2020 update rollup or more recent installed: <ul><li>Win10 1709 (RS3) Build 16299.1717: [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) Build 17134.1345: [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) Build 17763.1075: [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) Builds 18362.693 and 18363.693: [KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
 |CollectionSummaryReport.xls|This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code if there is failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.|
+
+For macOS and Linux devices, specific data on the following are collected:
+
+|Object|Description|
+|---|---|
+|Process|A list of all running processes|
+|File|A list of all currently open files with the corresponding processes using these files|
+|Disk volume|A list of all mounted disk volumes, its partitions, and amount of free space|
+|Hardware information||
+|Operating system information||
+|Users and groups|The following data are collected: <ul><li>Sign in history</li><li>sudoers</li></ul>|
+|Network connections|The following data are collected: <ul><li>Active connections</li><li>Active listening connections</li><li>ARP table</li><li>Firewall rules</li><li>Proxy settings</li><li>VPN settings</li></ul>|
+|Scheduled tasks and jobs||
+|Launch agents and daemons||
 
 ## Run Microsoft Defender Antivirus scan on devices
 
@@ -198,7 +212,7 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 > - The feature supports VPN connection.
 > - You must have at least one the following role permissions: 'Active remediation actions'. For more information, see [Create and manage roles](user-roles.md).
 > - You must have access to the device based on the device group settings. For more information, see [Create and manage device groups](machine-groups.md).
-> - Exclusion for Linux isolation is not supported.
+> - Exclusion for both macOS and Linux isolation is not supported.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 
