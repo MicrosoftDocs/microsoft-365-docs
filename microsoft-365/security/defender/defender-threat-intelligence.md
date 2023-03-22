@@ -17,7 +17,7 @@ audience: ITPro
 ms.collection: 
   - m365-security
   - highpri
-  - tier1
+  - tier3
 ms.topic: conceptual
 ms.date: 03/28/2021
 ---
@@ -25,6 +25,8 @@ ms.date: 03/28/2021
 # Microsoft Defender Threat Intelligence in Microsoft 365 Defender
 
 Microsoft Defender Threat Intelligence (Defender TI) is now available in the Microsoft 365 Defender portal.
+
+Microsoft Defender Threat Intelligence (Defender TI) helps streamline security analyst triage, incident response, threat hunting, and vulnerability management workflows. Defender TI aggregates and enriches critical threat information in an easy to use interface
 
 This change introduces a new navigation menu within the Microsoft 365 Defender portal named **Threat Intelligence**.
 
