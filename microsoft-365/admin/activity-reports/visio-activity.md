@@ -25,9 +25,9 @@ description: "Learn how to get the Visio activity report and gain insights into 
 
 # Microsoft 365 Reports in the admin center – Visio activity
 
-The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill into individual product-level reports to give you more granular insight into the activities within each product. Check out [the Reports overview article](activity-reports.md).
+The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. You can drill into individual product-level reports to give you more granular insight into the activities within each product. Check out [the Reports overview article](activity-reports.md) to learn more.
 
->[!NOTE] 
+>[!NOTE]
 > The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [**Learn more about Experience insights.**](../misc/experience-insights-dashboard.md)
 
 In the **Visio activity report**, you can view the activity of every Visio user.
@@ -44,11 +44,11 @@ You can use this report to see the activity and usage of Visio in your environme
 
 :::image type="content" source="../../media/visio-activity-charts.png" alt-text="Three charts for the Visio activity report in Microsoft 365" lightbox="../../media/visio-activity-charts.png":::
 
-- **Active users** - Shows you the daily active users on each day over time. This includes Visio for the web and Visio desktop app usage.
+- **Active users** Shows you the daily active users on each day over time. This includes Visio for the web and Visio desktop app usage.
 
-- **Platforms** – Shows you the daily active users on each day over time, broken out by platform: Web and Desktop.
+- **Platforms** Shows you the daily active users on each day over time, broken up by platform: Web and Desktop.
 
-- **Platforms (total users)** – Shows you the aggregated active users for the selected time window, broken out by platform: Web and Desktop.
+- **Platforms (total users)** Shows you the aggregated active users for the selected time window, broken up by platform: Web and Desktop.
 
 The **Visio activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. If you select a particular day in the report, the per-user data table will be updated accordingly to display users' usage on that day.
 
@@ -56,13 +56,13 @@ The **Visio activity** report can be viewed for trends over the last 7 days, 3
 
 You can use this report to filter for Visio licensed usage. Each of the charts are provided with a filter to select user segment.
 
-- **All users** – Shows you the usage for Visio licensed users, including Visio Plan 1 and/or Visio Plan 2; and seeded usage, such as using Visio that comes as part of the Microsoft 365 commercial subscriptions
+- **All users** Shows you the usage for Visio licensed users, including Visio Plan 1 and/or Visio Plan 2; and seeded usage, such as using Visio that comes as part of the Microsoft 365 commercial subscriptions
 
-- **Visio licensed users** - Shows you the usage for Visio licensed users only, including Visio Plan 1 and/or Visio Plan 2
+- **Visio licensed users** Shows you the usage for Visio licensed users only, including Visio Plan 1 and/or Visio Plan 2
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link.
 
-:::image type="content" source="../../media/visio-license-filter.png" alt-text="Licensed users filter for the Visio activity report in Microsoft 365" lightbox="../../media/visio-license-filter.png":::
+:::image type="content" source="../../media/visio-license-filter.png" alt-text="Licensed users filter for the Visio activity report in Microsoft 365":::
 
 >[!NOTE]
 > Learn more about Visio seeded capabilities [here](https://www.microsoft.com/microsoft-365/visio/visio-in-microsoft-365), and about Visio plans and pricing [here](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options?rtc=1&activetab=tabs%3aprimaryr1).
