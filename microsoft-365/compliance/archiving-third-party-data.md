@@ -196,7 +196,7 @@ The [records management](records-management.md) feature in Microsoft 365 lets yo
 
 ### Communication compliance
 
-You can use [Communication compliance](communication-compliance.md) to examine third-party data to make sure it is compliant with your organization's data standards. You can do this by you detecting, capturing, and taking remediation actions for inappropriate messages in your organization. For example, you can monitor the third-party data that you import for offensive language, sensitive information, and regulatory compliance.
+You can use [Communication compliance](communication-compliance.md) to examine third-party data to make sure it's compliant with your organization's data standards. You can do this by you detecting, capturing, and taking remediation actions for inappropriate messages in your organization. For example, you can monitor the third-party data that you import for offensive language, sensitive information, and regulatory compliance.
 
 ### Insider risk management
 
@@ -248,7 +248,7 @@ Here are a few examples for **itemclass** values for different types of third-pa
 | WhatsApp Archiver         | ipm.externaldata.whatsapparchiver* |
 |||
 
-Values for the *itemclass* property are not case-sensitive. In general, use the name of the third-party data type (without spaces) followed by a wildcard ( * ) character.
+Values for the *itemclass* property aren't case-sensitive. In general, use the name of the third-party data type (without spaces) followed by a wildcard ( * ) character.
 
 For more information about creating eDiscovery search queries, see [Keyword queries and search conditions for eDiscovery](ediscovery-keyword-queries-and-search-conditions.md).
 
@@ -342,6 +342,6 @@ Some data connectors are available in the US Government cloud. The following sec
 
 ## Working with a Microsoft partner to archive third-party data
 
-Another option for importing and archiving third-party data is for your organization to work with a Microsoft Partner. If a third-party data type isn't supported by the data connectors available in the Microsoft compliance center, you can work with a partner who can provide a custom connector that will be configured to extract items from the third-party data source on a regular basis and then connect to the Microsoft cloud by a third-party API and import those items to Microsoft 365. The partner connector also converts the content of an item from the third-party data source to an email message and then imports it to a mailbox in Microsoft 365.
+Another option for importing and archiving third-party data is for your organization to work with a Microsoft Partner. If a third-party data type isn't supported by the data connectors available in the compliance portal, you can work with a partner who can provide a custom connector that will be configured to extract items from the third-party data source regularly and then connect to the Microsoft cloud by a third-party API and import those items to Microsoft 365. The partner connector also converts the content of an item from the third-party data source to an email message and then imports it to a mailbox in Microsoft 365.
 
 For a list of partners that you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data in Microsoft 365](work-with-partner-to-archive-third-party-data.md).
