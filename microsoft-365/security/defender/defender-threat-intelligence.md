@@ -28,11 +28,11 @@ Microsoft Defender Threat Intelligence (Defender TI) is now available in the Mic
 
 This change introduces a new navigation menu within the Microsoft 365 Defender portal named **Threat Intelligence**.
 
-Under this top navigational item is the existing "Threat Analytics" feature and two new additions:
+Under **Threat Intelligence** is the existing node for the **Threat Analytics** feature and two new additions:
 
 - **Intel Profiles** - a new feature that introduces curated content organized by threat actors, their tools and known vulnerabilities
 - **Intel Explorer** - is the existing Defender TI content, search and investigation experience
 
-The experience between the existing Defender TI standalone portal will differ slightly from the version in Microsoft 365 Defender. Though a majority of the functionality is available, at this time, the Microsoft 365 Defender Defender TI experience does not include the ability to apply custom tags or project capabilities.
+The experience between the existing Defender TI standalone portal differs slightly from the version in Microsoft 365 Defender. Though most of the functionality is available, at this time, the Defender TI experience in Microsoft 365 Defender doesn't include the ability to apply custom tags or project capabilities.
 
 [Learn more about Microsoft Defender Threat Intelligence](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti)
