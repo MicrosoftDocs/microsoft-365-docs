@@ -109,6 +109,7 @@ Here is an example of the response.
             "AssignedApplicationId": "9E0FA0EB-0A51-4357-9C87-C21BFBE07571",
             "ScannerSoftwareVersion": "7.1.1",
             "LastCommandExecutionTimestamp": "2022-05-08T12:18:41.538203Z",
+            "mdeClientVersion": "10.8295.22621.1195"
         },
         {
             "id": "47d41a0c-1dfd-46d3-bbea-a93dbc0bfcaa_eb663a27ae9d032f61bc268oiu4c4b90f77",
@@ -118,6 +119,7 @@ Here is an example of the response.
             "AssignedApplicationId": "9E0FA0EB-0A51-4357-9C87-C21BFBE07571",
             "ScannerSoftwareVersion": "7.1.1",
             "LastCommandExecutionTimestamp": "2022-12-19T20:29:04.8242449Z",
+            "mdeClientVersion": "10.8295.22621.1010"
         },
     ]
 }

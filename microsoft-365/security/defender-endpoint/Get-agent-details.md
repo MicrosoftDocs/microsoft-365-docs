@@ -66,7 +66,7 @@ Delegated (work or school account)|Machine.Read.All|Read all scan information.
 ## HTTP request
 
 ```http
-POST api/DeviceAuthenticatedScanAgents/GetAgentDetails
+POST GET /api/DeviceAuthenticatedScanAgents
 ```
 
 ## Request headers
@@ -94,7 +94,7 @@ If successful, this method returns 200 - OK response code with the details of th
 Here is an example of the request.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanAgents/GetAgentDetails
+POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanAgents/7f3d76a6976818553e996875dc91f55df6b26625
 ```
 
 ```json

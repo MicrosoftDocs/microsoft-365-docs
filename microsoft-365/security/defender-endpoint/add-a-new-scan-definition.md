@@ -146,17 +146,33 @@ PATCH https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefini
 
 ```json
 {
-"scanName": "Test Network scan", 
-"intervalInHours": 8,
-"isActive": "True",
-"targetType": "Ip",
-"target": "10.5.0.8",
-"scanAuthenticationParams": { 
- "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams", 
-    "type": "Kerberos", 
-    "username": "username", 
-    "domain": "password",
-    "isGmsaUser": true
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#DeviceAuthenticatedScanDefinitions/$entity",
+    "id": "6c98c96f-1ac5-4301-80ec-3544db991b07",
+    "scanType": "Windows",
+    "scanName": "Test Update Windows scan",
+    "isActive": true,
+    "target": "127.0.0.1,127.0.0.2",
+    "orgId": "d7c7c745-195f-4223-9c7a-99fb420fd000",
+    "intervalInHours": 1,
+    "createdBy": "test@contoso.com",
+    "targetType": "Ip",
+    "isTroubleshootMode": true,
+    "scanAuthenticationParams": null,
+    "scannerAgent": {
+        "id": "d7c7c745-195f-4223-9c7a-99fb420fd000_625431694b7d2ca9d07e77ca1b029ef216bebb6d",
+        "machineId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d",
+        "machineName": "SCNR-WIN11-D",
+        "lastSeen": "2023-01-04T09:40:03.2787058Z",
+        "assignedApplicationId": "ae4a5cde-b4a1-4b76-8635-458b2cf15752",
+        "scannerSoftwareVersion": "7.6.0.0",
+        "lastCommandExecutionTimestamp": "2023-01-04T09:33:16Z",
+        "mdeClientVersion": null
+    },
+    "latestScan": {
+        "status": null,
+        "failureReason": null,
+        "executionDateTime": null
     }
 }
+
 ```
