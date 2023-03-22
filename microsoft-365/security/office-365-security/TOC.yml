@@ -249,9 +249,9 @@
          - name: Configure and review priority accounts
            href: priority-accounts-turn-on-priority-account-protection.md
        - name: Email entity page
-         items:
-         - name: The Email entity page
-           href: mdo-email-entity-page.md
+         href: mdo-email-entity-page.md
+       - name: Teams email summary page
+         href: teams-email-summary-page.md
        - name: Threat Trackers
          items:
          - name: Use Threat Trackers
