@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/24/2023
+ms.date: 03/20/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -283,6 +283,9 @@ For more information about configuring Yammer in Native Mode, see:
     - Enable [optical character recognition (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) to identify embedded or attached images in messages for printed or handwritten text that match policy conditions. For custom policies, one or more conditional settings associated with text, keywords, classifiers, or sensitive info types must be configured in the policy to enable the selection of optical character recognition (OCR) documents.
 
     - Choose the **Filter email blasts** check box to exclude messages sent from email blast services. Messages that match specific conditions selected here won't generate alerts. This includes bulk email, such as newsletters, as well as spam, phishing, and malware. When this option is selected, you can view a [report](communication-compliance-reports-audits.md#detailed-reports) containing the bulk email senders that are filtered out.
+    
+      > [!NOTE]
+      > The list of senders is filtered before the content is analyzed so there might be senders that don't match the content conditions. In other words, there might be extra senders in the report. 
 
     - Define the percentage of communications to review.
 
