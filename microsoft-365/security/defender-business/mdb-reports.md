@@ -37,6 +37,8 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 
 ## License report (*NEW!*)
 
+:::image type="content" source="media/mdb-licenses.png" alt-text="Screenshot of licenses report in Defender for Business." lightbox="media/mdb-licenses.png":::
+
 The license report provides information about licenses your organization has purchased and is using. To access this report, in the navigation pane, choose **Settings** > **Endpoints** > **Licenses**. 
 
 ## Security report
