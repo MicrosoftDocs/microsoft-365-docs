@@ -75,8 +75,8 @@ The following are definitions for each metric in the table:
 
 | **Metric**         | **Definition**                                                                                                      |
 |--------------------|---------------------------------------------------------------------------------------------------------------------|
-| User name          | The user principal name.                                                                                            |
-| Display name       | The full name of the user.                                                                                          |
-| Last activity date | The latest date the user in that row had activity in Visio, including any of the activities in the summary reports. |
-| Desktop            | This indicates whether that user used the Visio desktop app at least once during the selected time window.          |
-| Web                | This indicates whether that user used Visio for the web at least once during the selected time window.              |
+| User name          | The user principal name                                                                                            |
+| Display name       | The full name of the user                                                                                         |
+| Last activity date | The latest date the user in that row had activity in Visio, including any of the activities in the summary reports |
+| Desktop            | This indicates whether that user used the Visio desktop app at least once during the selected time window          |
+| Web                | This indicates whether that user used Visio for the web at least once during the selected time window              |
