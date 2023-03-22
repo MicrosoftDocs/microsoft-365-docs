@@ -27,7 +27,8 @@ description: "Create and manage inactive mailboxes that retain the contents of d
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Inactive mailboxes let you retain former employees' email after they leave your organization and can be accessed by authorized people who have been granted [eDiscovery permissions](ediscovery-assign-permissions.md) for compliance or legal reasons. For example, administrators, compliance officers, and records managers who can then use Content Search to search and export the contents of an inactive mailbox. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
+Inactive mailboxes let you retain former employees' email after they leave your organization and can be accessed by authorized people who have been granted [eDiscovery permissions](ediscovery-assign-permissions.md) for compliance or legal re
+asons. For example, administrators, compliance officers, and records managers who can then use Content Search to search and export the contents of an inactive mailbox. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
 
 For more information about inactive mailboxes, see [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md).
 
@@ -62,7 +63,7 @@ The following table summarizes the process of making an inactive mailbox for dif
 You can use the Microsoft Purview compliance portal to view a list of the inactive mailboxes in your organization.
 
 > [!NOTE]
-> The Microsoft Purview compliance portal is limited to displaying up to 5,000 inactive mailboxes.  To view more than 5,000 inactive mailboxes you must use Exchange Online PowerShell as described below.
+> The Microsoft Purview compliance portal is limited to displaying up to 5,000 inactive mailboxes. To view more than 5,000 inactive mailboxes, you must use Exchange Online PowerShell as described after the step instructions.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for a Global administrator or a Compliance administrator account in your organization.
 
