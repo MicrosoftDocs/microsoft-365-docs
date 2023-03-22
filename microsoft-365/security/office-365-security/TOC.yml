@@ -78,6 +78,8 @@
          href: mdo-sec-ops-guide.md
        - name: Configure your tenant for increased security
          href: tenant-wide-setup-for-increased-security.md
+       - name: Support for Microsoft Teams
+         href: mdo-support-teams-about.md
        - name: Security recommendations for priority accounts
          href: priority-accounts-security-recommendations.md
        - name: Anti-malware protection
@@ -247,9 +249,9 @@
          - name: Configure and review priority accounts
            href: priority-accounts-turn-on-priority-account-protection.md
        - name: Email entity page
-         items:
-         - name: The Email entity page
-           href: mdo-email-entity-page.md
+         href: mdo-email-entity-page.md
+       - name: Teams email summary page
+         href: teams-message-entity-panel.md
        - name: Threat Trackers
          items:
          - name: Use Threat Trackers
@@ -284,6 +286,8 @@
              href: submissions-outlook-report-messages.md
            - name: User reported settings
              href: submissions-user-reported-messages-custom-mailbox.md
+           - name: User reported message settings in Teams
+             href: submissions-teams.md
            - name: Submit malware and non-malware to Microsoft
              href: submissions-submit-files-to-microsoft.md
            - name: Admin review for user reported messages

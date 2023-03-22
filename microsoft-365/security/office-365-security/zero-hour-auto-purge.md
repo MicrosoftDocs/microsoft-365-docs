@@ -126,11 +126,11 @@ Admins can view and manage these quarantined messages in Microsoft Teams. For mo
 
 ### Zero-hour auto purge (ZAP) for high confidence phishing in Teams
 
-For messages that are identified as high confidence phishing after delivery, ZAP blocks and quarantines the message. By default, only admins can view and manage quarantined high confidence phish messages. For more information, see [Quarantine policies](quarantine-policies.md).
+For messages that are identified as high confidence phishing after delivery, ZAP blocks and quarantines the message. By default, only admins can view and manage quarantined high confidence phish messages. For more information, see [Quarantine policies](quarantine-policies.md).
 
 ### Zero-hour auto purge (ZAP) for malware in Teams
 
-For messages that are identified as malware, ZAP blocks and quarantines the message. By default, only admins can view and manage quarantined malware messages. For more information, see [Quarantine policies](quarantine-policies.md).
+For messages that are identified as malware, ZAP blocks and quarantines the message. By default, only admins can view and manage quarantined malware messages. For more information, see [Quarantine policies](quarantine-policies.md).
 
 Note that for this release, ZAP is available only to messages that are identified as high confidence phish or malware.  
 
