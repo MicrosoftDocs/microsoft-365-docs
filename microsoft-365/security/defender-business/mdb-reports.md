@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 03/17/2023
+ms.date: 03/23/2023
 ms.reviewer: efratka, oogunrinde
 f1.keywords: NOCSH 
 ms.collection: 
@@ -27,7 +27,7 @@ Several reports are available in the Microsoft 365 Defender portal ([https://sec
 
 |Report  |Description  |
 |---------|---------|
-| **Monthly Security Summary**<br/>(preview) | The monthly security summary report (currently in preview) shows:<br/>- Threats that were detected and prevented by Defender for Business, so you can see how the service is working for you.<br/>- Your current status from [Microsoft Secure Score](../defender/microsoft-secure-score.md), which gives you an indication of your organization's security posture. <br/>- Recommended actions you can take to improve your score and your security posture.<br/><br/>To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Monthly Security Summary**. | 
+| **Monthly security summary**<br/>(preview) | The monthly security summary report (currently in preview) shows:<br/>- Threats that were detected and prevented by Defender for Business, so you can see how the service is working for you.<br/>- Your current status from [Microsoft Secure Score](../defender/microsoft-secure-score.md), which gives you an indication of your organization's security posture. <br/>- Recommended actions you can take to improve your score and your security posture.<br/><br/>To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Monthly Security Summary**. | 
 | **License report**<br/>(*NEW!*) | The license report provides information about licenses your organization has purchased and is using. To access this report, in the navigation pane, choose **Settings** > **Endpoints** > **Licenses**. |
 | **Security report**  | The security report provides information about your company's identities, devices, and apps. To access this report, in the navigation pane, choose **Reports** > **General** > **Security report**. <br/><br/>You can view similar information on the home page of your Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). |
 | **Threat protection**  | The threat protection report provides information about alerts and alert trends. Use the **Alert trends** column to view information about alerts that were triggered over the last 30 days. Use the **Alert status** column to view current snapshot information about alerts, such as categories of unresolved alerts and their classification. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Threat protection**. <br/><br/>You can also use the **Incidents** list to view information about alerts. In the navigation pane, choose **Incidents** to view and manage current incidents. To learn more, see [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md). |
