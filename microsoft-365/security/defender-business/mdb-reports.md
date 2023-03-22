@@ -23,7 +23,7 @@ ms.collection:
 
 Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article describes these reports, how you can use them, and how to find them.
 
-## Monthly security summary(preview) 
+## Monthly security summary (preview) 
 
 :::image type="content" source="media/mdb-monthly-security-summary-report.png" alt-text="Screenshot of monthly security summary report currently in preview." lightbox="media/mdb-monthly-security-summary-report.png":::
 
