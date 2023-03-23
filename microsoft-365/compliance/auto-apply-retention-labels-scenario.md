@@ -321,9 +321,7 @@ This list describes the parameters in the **Body** property of the action that m
 
 Now the retention label is created and auto-applied, and the flow is configured and created. When the value in the **In Production** column for the Spinning Widget product in the Products list is changed from ***Yes*** to ***No***, the flow is triggered to create the event. To see this event in the Microsoft Purview compliance portal, go to **Records management** > **Events**.
 
-[ ![The event that was triggered by the flow is displayed on the Events page in the Microsoft Purview compliance portal.](../media/SPRetention28.png) ](../media/SPRetention28.png#lightbox)
-
-Select the event to view the details on the flyout page. Notice that even though the event is created, the event status shows that no SharePoint sites or documents have been processed.
+Select the event to view the details on the flyout pane. Notice that even though the event is created, the event status shows that no SharePoint sites or documents have been processed.
 
 ![Event details.](../media/SPRetention29.png)
 
