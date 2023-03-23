@@ -107,7 +107,12 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 
 ## Firewall
 
-The firewall report shows blocked inbound, outbound, and app connections. This report also shows remote IPs connected by multiple devices, and remote IPs with the most connection attempts. <br/><br/>If you haven't yet configured your firewall protection, in the navigation pane, choose **Endpoints** > **Configuration management** > **Device configuration**. To learn more, see [Firewall in Defender for Business](mdb-firewall.md). 
+The firewall report shows blocked inbound, outbound, and app connections. This report also shows remote IPs connected by multiple devices, and remote IPs with the most connection attempts. 
+
+To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Firewall**.
+
+> [!NOTE]
+> If you haven't yet configured your firewall protection, in the navigation pane, choose **Endpoints** > **Configuration management** > **Device configuration**. To learn more, see [Firewall in Defender for Business](mdb-firewall.md). 
 
 ## Device control
 
