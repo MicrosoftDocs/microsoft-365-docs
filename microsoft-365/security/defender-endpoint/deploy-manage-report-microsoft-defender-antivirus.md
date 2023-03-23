@@ -50,6 +50,12 @@ This article describes these options for deployment, management, and reporting.
 
 With Intune, you can manage device security through policies, such as a policy to configure Microsoft Defender Antivirus and other security capabilities in Defender for Endpoint. To learn more, see [Use policies to manage device security](/mem/intune/protect/endpoint-security#use-policies-to-manage-device-security).
 
+For reporting, you can choose from several options:
+
+- [Use the Microsoft 365 Defender portal](../defender/microsoft-365-defender-portal.md), which includes a device inventory. To access the device inventory, in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)), go to **Assets** > **Devices**. The device inventory list
+
+- [Manage devices with Intune](/mem/intune/remote-actions/device-management), which includes the ability to view detailed information about devices and take action. [Available actions](/mem/intune/remote-actions/device-management#available-device-actions) include starting an antivirus scan, restarting a device, locating a device, wiping a device, and more. 
+
 > [!IMPORTANT]
 > In most cases, Windows 10 or Windows 11 will disable Microsoft Defender Antivirus if it finds another antivirus product that is running and up-to-date. You must disable or uninstall third-party antivirus products before Microsoft Defender Antivirus will function. If you re-enable or install third-party antivirus products, then Windows 10 or Windows 11 automatically disables Microsoft Defender Antivirus.
 
