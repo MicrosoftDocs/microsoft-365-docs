@@ -122,13 +122,15 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 
 The device control report shows information about media usage, such as the use of removable storage devices in your organization. 
 
+To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Device control**. 
+
 ## Attack surface reduction rules report
 
 :::image type="content" source="media/mdb-asr-report.png" alt-text="Screenshot of the attack surface reduction rules report in Defender for Business." lightbox="media/mdb-asr-report.png":::
 
 The attack surface reduction rules report has three tabs: 
 - **Detections** to show blocked or audited detections;
-- **Configuration** enabling you to filter on standard protection rules or additional ASR rules; and 
+- **Configuration** enabling you to filter on standard protection rules or additional attack surface reduction rules; and 
 - **Add exclusions** enabling you to define exclusions, if needed. 
 
 To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Attack surface reduction rules**. 
