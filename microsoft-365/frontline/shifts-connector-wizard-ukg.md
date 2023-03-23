@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 3/21/2023
+ms.date: 3/23/2023
 ---
 
 # Use the Shifts connector wizard to connect Shifts to UKG Dimensions (Preview)
@@ -181,19 +181,21 @@ The email notification recipients you chose will receive email notifications abo
 ## Disable open shifts, open shifts requests, swap requests, and time off requests
 
 > [!IMPORTANT]
-> Follow these steps only if you chose any of the following options to disable open shifts, open shift requests, swap requests, or time off requests in the wizard. Completing this step hides the capability in Shifts.
+> If you chose any of the following options to disable open shifts, open shift requests, swap requests, offer shift requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
 >
-> - Open shifts: **Shifts users will not see UKG Dimensions data**
-> - Swap requests: **Feature is disabled for all users**
-> - Time off requests: **Feature is disabled for all users**
+> - Open shifts: **Shifts users will not see provider data**
+> - Swap requests: **Shifts users will not see provider data**
+> - Time off requests: **Shifts users will not see provider data**
+> - Offer shift requests: **Shifts users will not see provider data**
 >
-> Without this second step, users will still see the capability in Shifts, and will get an "unsupported operation" error message if they try to use it.
+> After you edit your settings, make sure you follow the steps to [Disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard-ukg#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
 
 To hide open shifts, swap requests, and time off requests in Shifts, use the Graph API [schedule resource type](/graph/api/resources/schedule) to set the following parameters to ```false``` for each team that you mapped to a UKG Dimensions instance:
 
 - Open shifts: ```openShiftsEnabled```
 - Swap requests:  ```swapShiftsRequestsEnabled```
 - Time off requests: ```timeOffRequestsEnabled```
+- Offer shift requests: ```offerShiftRequestsEnabled```
 
 To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then turn off the **Open shifts** setting.
 
