@@ -38,6 +38,8 @@ Watch the following video to learn more about Defender for Business: <br/><br/>
 
 ## What's included with Defender for Business
 
+Defender for Business includes a full range of device protection capabilities, as shown in the following diagram:
+
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Defender for Business features and capabilities.":::
 
 With Defender for Business, you can help protect the devices and data your business uses with:
