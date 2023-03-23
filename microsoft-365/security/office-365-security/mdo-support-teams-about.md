@@ -46,7 +46,7 @@ The **Teams Message Entity Panel** is one single place to store all of Teams mes
 
 ## Enable Microsoft Defender for Teams 
 
-If you are interested in the previewing the features listed above, for ALL users in your tenant, you can enable them using the Exchange Online PowerShell cmdlet. For more details on how to connect to Exchange Online with PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell.md). Once connected, you can enable teams preview as follows:
+If you are interested in previewing the features listed above, for ALL users in your tenant, you can enable them using the Exchange Online PowerShell cmdlet. For more details on how to connect to Exchange Online with PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell.md). Once connected, you can enable teams preview as follows:
 
  ```powershell
   Set-TeamsSecurityPreview -Enable $true
