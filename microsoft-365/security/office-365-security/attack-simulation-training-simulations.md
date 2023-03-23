@@ -42,33 +42,17 @@ To launch a simulated phishing attack, do the following steps:
 
 > [!NOTE]
 > At any point during the simulation creation wizard, you can click **Save and close** to save your progress and continue configuring the simulation later. The incomplete simulation has the **Status** value **Draft** on the **Simulations** tab. You can pick up where you left off by selecting the simulation and clicking ![Edit simulation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** simulation.
->
-> The the ability to select Microsoft Teams messages for attack simulation trainings is currently in Preview, isn't available in all organizations, and is subject to change.
-
-## Select a delivery platform
-
-> [!NOTE]
-> As described earlier, this page is currently in Preview.
-
-On the **Select delivery platform** page, select one of the following values:
-
-- **Email**
-- **Microsoft Teams**: For more information about users reporting messages in Microsoft Teams, see [User reported message settings in Microsoft Teams](submissions-teams.md).
-
-When you're finished, click **Next**.
 
 ## Select a social engineering technique
 
 On the **Select technique** page, select an available social engineering technique, which was curated from the [MITRE ATT&CK® framework](https://attack.mitre.org/techniques/enterprise/). Different payloads are available for different techniques. The following social engineering techniques are available:
 
 - **Credential harvest**: Attempts to collect credentials by taking users to a well-known looking website with input boxes to submit a username and password.
-- **Malware attachment**<sup>\*</sup>: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
-- **Link in attachment**<sup>\*</sup>: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
+- **Malware attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
+- **Link in attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
 - **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file will help the attacker compromise the target's device.
 - **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
 - **OAuth Consent Grant**: The malicious URL asks users to grant permissions to data for a malicious Azure Application.
-
-<sup>\*</sup> Not available in Microsoft Teams.
 
 If you click the **View details** link in the description, a details flyout opens that describes the technique and the simulation steps that result from the technique.
 
@@ -83,75 +67,71 @@ On the **Name simulation** page, configure the following settings:
 - **Name**: Enter a unique, descriptive name for the simulation.
 - **Description**: Enter an optional detailed description for the simulation.
 
-If you selected **Microsoft Teams** as the delivery platform, the **Select sender's Microsoft Teams account** setting is available:
-
-1. Click **Select user account**.
-2. In the **Select a Microsoft 365 user account** flyout that opens, find an available account in the list. In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, you can type part of the user's name and press Enter to filter the results.
-3. When you've found the account that you want to use, select the account by clicking in the empty area next to the **Display name** column, and then click **Select**.
-
-When you're finished on the **Name simulation** page, click **Next**.
+When you're finished, click **Next**.
 
 ## Select a payload and login page
 
-On **Select payload and login page**, you need to select an existing payload from the list or create a new payload.
+On the **Select payload and login** page, you need to select an existing payload from the list, or create a new payload.
 
 You can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
 
 ### Payload
 
-- If applicable existing payloads are available on **Select payload and login page**, the following details are shown for each payload:
+The following details are shown for each payload:
 
-  - **Payload name**
-  - **Source**: For built-in payloads, the value is **Global**. For custom payloads, the value is **Tenant**.
-  - **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 29+ languages as described later in **Filter**.
-  - **Click rate**: How many people have clicked on this payload.
-  - **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload). For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
-  - **Simulations launched** counts the number of times this payload was used in other simulations.
+- **Payload name**
+- **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 10+ languages which can also be filtered.
+- **Click rate**: How many people have clicked on this payload.
+- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload).
+- **Simulations launched** counts the number of times this payload was used in other simulations.
 
-  In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, you can type part of the payload name and press Enter to filter the results.
+In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, you can type part of the payload name and press Enter to filter the results.
 
-  If you click **Filter**, the following filters are available:
+If you click **Filter**, the following filters are available:
 
-  - **Source**: The available values are: **Global**, **Tenant**, and **All**.
-  - **Complexity**: Calculated based on the number of indicators in the payload that indicate a possible attack (spelling errors, urgency, etc.). More indicators are easier to identify as an attack and indicate lower complexity. The available values are: **High**, **Medium**, and **Low**.
-  - **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
-  - **Add tag(s)**
-  - **Filter by theme**: The available values are: **Account activation**, **Account verification**, **Billing**, **Clean up mail**, **Document received**, **Expense**, **Fax**, **Finance report**, **Incoming messages**, **Invoice**, **Items received**, **Login alert**, **Mail received**, **Password**, **Payment**, **Payroll**, **Personalized offer**, **Quarantine**, **Remote work**, **Review message**, **Security update**, **Service suspended**, **Signature required**, **Upgrade mailbox storage Verify mailbox**, **Voicemail**, and **Other**.
-  - **Filter by brand**: The available values are: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud**, and **Other**.
-  - **Filter by industry**: The available values are: **Banking**, **Business services**, **Consumer services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real estate**, and **Other**.
-  - **Current event**: The available values are **Yes** or **No**.
-  - **Controversial**: The available values are **Yes** or **No**.
+- **Complexity**: Calculated based on the number of indicators in the payload that indicate a possible attack (spelling errors, urgency, etc.). More indicators are easier to identify as an attack and indicate lower complexity. The available values are:
+  - **High**
+  - **Medium**
+  - **Low**
 
-  When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+- **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
 
-  If you selected **Email** as the delivery platform, you select a payload from the list by selecting the check box, a ![Send a test payload icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears on the main page where you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
+- **Add tag(s)**
 
-- If no payloads are available on **Select payload and login page** or if you want to create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md#create-payloads).
+- **Filter by theme**: The available values are: **Account activation**, **Account verification**, **Billing**, **Clean up mail**, **Document received**, **Expense**, **Fax**, **Finance report**, **Incoming messages**, **Invoice**, **Items received**, **Login alert**, **Mail received**, **Password**, **Payment**, **Payroll**, **Personalized offer**, **Quarantine**, **Remote work**, **Review message**, **Security update**, **Service suspended**, **Signature required**, **Upgrade mailbox storage Verify mailbox**, **Voicemail**, and **Other**.
 
-  :::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="The Select payload page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
+- **Filter by brand**: The available values are: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud**, and **Other**.
 
-When you select a payload from the list on **Select payload and login page** by clicking anywhere in the row other than the check box, details about the payload are shown in a flyout:
+- **Filter by industry**: The available values are: **Banking**, **Business services**, **Consumer services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real estate**, and **Other**.
+
+- **Current event**: The available values are **Yes** or **No**.
+
+- **Controversial**: The available values are **Yes** or **No**.
+
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+
+If you select a payload from the list by selecting the check box, a ![Send a test payload icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears on the main page where you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
+
+To create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md#create-payloads).
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="The Select payload page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
+
+If you select a payload from the list by clicking anywhere in the row other than the check box, details about the payload are shown in a flyout:
 
 - The **Payload** tab contains an example and other details about the payload.
-- The **Login page** tab is available only for **Credential Harvest** or **Link in attachment** payloads and is described in the next section.
+- The **Login page** tab is available only in **Credential Harvest** or **Link in attachment** payloads and is described in the next section.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
-From any tab, you can click **Edit payload** at the bottom of the page to edit the payload.
-
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
-
-If the simulation doesn't use **Credential Harvest** or **Link in attachment** payloads, or if you don't want to view or edit the login page that's used, click **Next** on **Select payload and login page** to continue.
-
-To view and configure the login page that's used in **Credential Harvest** or **Link in attachment** payloads, go to the next section.
 
 ### Login page
 
 > [!NOTE]
-> The **Login page** tab is available in the details flyout of a payload that you selected on **Select payload and login page** only in **Credential Harvest** or **Link in attachment** payloads.
+> The **Login page** tab is available only in **Credential Harvest** or **Link in attachment** payloads.
 
-On **Select payload and login page**, select the payload from the list by clicking anywhere in the row other than the check box to open the details flyout for the payload.
+Select the payload from the list by clicking anywhere in the row other than the check box to open the details flyout.
 
-In the details flyout of the payload, the **Login page** tab shows the login page that's currently selected for the payload.
+The **Login page** tab in the payload details flyout shows the login page that's currently selected for the payload.
 
 To view the complete login page, use the **Page 1** and **Page 2** links at the bottom of the page for two-page login pages.
 
@@ -175,7 +155,7 @@ Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filt
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="The Select login page in the Login page tab in payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
 
-To create a new login page, click [Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard. The steps are the same as at **Login pages** at **Attack simulation training** \> **Content library** tab \> **Tenant payloads** tab or directly at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>. For instructions, see [Create login pages](attack-simulation-training-login-pages.md#create-login-pages).
+To create a new login page, click [Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard. The steps are the same as at **Login pages** at **Attack simulation training** \> **Simulated content library** tab. For instructions, see [Create login pages](attack-simulation-training-login-pages.md#create-login-pages).
 
 Back on the **Select login page**, verify the new login page you created is selected, and then click **Save**.
 
@@ -207,32 +187,39 @@ On the **Configure OAuth payload** page, configure the following settings:
 
 On the **Target users** page, select who will receive the simulation. Configure one of the following settings:
 
-- **Include all users in my organization**: The affected users are show in lists of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** icon on the page to find users.
+- **Include all users in your organization**: The affected users are show in lists of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** icon on the page to find affected users.
 
 - **Include only specific users and groups**: Choose one of the following options:
-  - ![Add users icon.](../../media/m365-cc-sc-create-icon.png) **Add users**: In the **Add users** flyout that appears, you can find and select users and groups for the simulation.  **Dynamic distribution groups are not supported**. The following search tools are available:
+  - ![Add users icon.](../../media/m365-cc-sc-create-icon.png) **Add users**: In the **Add users** flyout that appears, you can find users and groups based on the following criteria:
+
+    > [!NOTE]
+    > You can't use dynamic distribution groups to target users.
+
     - **Search for users or groups**: In box, you can type part of the **Name** or **Email address** of the user or group and then press Enter. You can select some or all of the results. When you're finished, click **Add x users**.
 
       > [!NOTE]
       > Clicking the **Add filters** button to return to the **Filter users by categories** options will clear any users or groups that you selected in the search results.
 
     - **Filter users by categories**: Select from none, some, or all of the following options:
+
       - **Suggested user groups**: Select from the following values:
         - **All suggested user groups**
         - **Users not targeted by a simulation in the last three months**
         - **Repeat offenders**
-      - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md). Use the following options:
+
+      - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
+
+          Use the following options:
+
         - **Search**: In ![Search by user tags icon.](../../media/m365-cc-sc-search-icon.png) **Search by user tags**, you can type part of the user tag and then press Enter. You can select some or all of the results.
         - Select **All user tags**
-        - Select from existing user tags.
-      - **Country**: Use the following options:
-        - **Search**: In ![Search by Country icon.](../../media/m365-cc-sc-search-icon.png) **Search by Country**, you can type part of the country name and then press Enter. You can select some or all of the results.
-        - Select **All countries**.
-        - Select from existing Country values.
+        - Select existing user tags.
+
       - **Department**: Use the following options:
         - **Search**: In ![Search by Department icon.](../../media/m365-cc-sc-search-icon.png) **Search by Department**, you can type part the Department value and then press Enter. You can select some or all of the results.
         - Select **All Department**
         - Select existing Department values.
+
       - **Title**: Use the following options:
         - **Search**: In ![Search by Title icon.](../../media/m365-cc-sc-search-icon.png) **Search by Title**, you can type part of the Title value and then press Enter. You can select some or all of the results.
         - Select **All Title**
@@ -250,42 +237,31 @@ On the **Target users** page, select who will receive the simulation. Configure 
 
   After you find a select the CSV file, the list of users are imported and shown on the **Targeted users** page. You can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find affected users. You can also click ![Delete targeted users icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** to remove specific users.
 
-When you're finished on the **Target users** page, click **Next**.
-
-## Exclude users
-
-On the **Exclude users** page, you can select **Exclude some of the targeted users from this simulation** to exclude users that would otherwise be included in the simulation based on your previous selections on the **Target users** page.
-
-The methods are the same as described in the previous section for **Include only specific users and groups** and **Import**.
-
-When you're finished on the **Exclude users** page, click **Next**.
+When you're finished, click **Next**.
 
 ## Assign training
 
 On the **Assign training** page, you can assign trainings for the simulation. We recommend that you assign training for each simulation, as employees who go through training are less susceptible to similar attacks. The following settings are available:
 
-In the **Select training content preference** section, choose one of the following options:
-
-- **Microsoft training experience**: This is the default value that has the following associated options to configure:
-  - Select one of the following options:
-    - **Assign training for me**: This is the default and recommended value. We assign training based on a user's previous simulation and training results, and you can review the selections in the next steps of the wizard.
-    - **Select training courses and modules myself**: If you select this value, you'll still be able to see the recommended content as well as all available courses and modules in the next step of the wizard.
-  - **Due date**: Choose one of the following values:
-    - **30 days after simulation ends**: This is the default value.
-    - **15 days after simulation ends**
-    - **7 days after simulation ends**
-
-- **Redirect to a custom URL**: This value has the following associated options to configure:
-  - **Custom training URL** (required)
-  - **Custom training name** (required)
-  - **Custom training description**
-  - **Custom training duration (in minutes)**: The default value is 0, which means there is no specified duration for the training.
-  - **Due date**: Choose one of the following values:
-    - **30 days after simulation ends**: This is the default value.
-    - **15 days after simulation ends**
-    - **7 days after simulation ends**
-
-- **No training**: If you select this value, the only option on the page is the **Next** button that takes you to the [**Landing page**](#landing-page) page.
+- **Select training content preference**: Choose one of the following options:
+  - **Microsoft training experience**: This is the default value that has the following associated options to configure:
+    - Select one of the following options:
+      - **Assign training for me**: This is the default and recommended value. We assign training based on a user's previous simulation and training results, and you can review the selections in the next steps of the wizard.
+      - **Select training courses and modules myself**: If you select this value, you'll still be able to see the recommended content as well as all available courses and modules in the next step of the wizard.
+    - **Due date**: Choose one of the following values:
+      - **30 days after simulation ends**: This is the default value.
+      - **15 days after simulation ends**
+      - **7 days after simulation ends**
+  - **Redirect to a custom URL**: This value has the following associated options to configure:
+    - **Custom training URL** (required)
+    - **Custom training name** (required)
+    - **Custom training description**
+    - **Custom training duration (in minutes)**: The default value is 0, which means there is no specified duration for the training.
+    - **Due date**: Choose one of the following values:
+      - **30 days after simulation ends**: This is the default value.
+      - **15 days after simulation ends**
+      - **7 days after simulation ends**
+  - **No training**: If you select this value, the only option on the page is the **Next** button that takes you to the [**Landing page**](#landing-page) page.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="The option to add the recommended training on the Training assignment page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
