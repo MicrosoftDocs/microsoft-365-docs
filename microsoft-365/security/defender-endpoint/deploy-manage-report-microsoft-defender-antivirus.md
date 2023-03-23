@@ -56,6 +56,16 @@ For reporting, you can choose from several options:
 
 - [Manage devices with Intune](/mem/intune/remote-actions/device-management), which includes the ability to view detailed information about devices and take action. [Available actions](/mem/intune/remote-actions/device-management#available-device-actions) include starting an antivirus scan, restarting a device, locating a device, wiping a device, and more. 
 
+## Configuration Manager
+
+## PowerShell
+
+## Group Policy and Azure Active Directory
+
+## Windows Management Instrumentation
+
+
+
 > [!IMPORTANT]
 > In most cases, Windows 10 or Windows 11 will disable Microsoft Defender Antivirus if it finds another antivirus product that is running and up-to-date. You must disable or uninstall third-party antivirus products before Microsoft Defender Antivirus will function. If you re-enable or install third-party antivirus products, then Windows 10 or Windows 11 automatically disables Microsoft Defender Antivirus.
 
@@ -74,24 +84,6 @@ Microsoft Configuration Manager ([1](#fn1))|Use the [Endpoint Protection point s
 
 3. <span id="fn3" />Configuration of features and protection, including configuring product and protection updates, are further described in the [Configure Microsoft Defender Antivirus features](configure-notifications-microsoft-defender-antivirus.md) section in this library. [(Return to table)](#ref2)
 
-## In this section
-
-Article | Description
----|---
-[Deploy and enable Microsoft Defender Antivirus protection](deploy-microsoft-defender-antivirus.md) | While the client is installed as a core part of Windows 10 or Windows 11, and traditional deployment doesn't apply, you'll still need to enable the client on your endpoints with Microsoft Configuration Manager, Microsoft Intune, or Group Policy Objects.
-[Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md) | There are two parts to updating Microsoft Defender Antivirus: updating the client on endpoints (product updates), and updating Security intelligence (protection updates). You can update Security intelligence in many ways, using Microsoft Configuration Manager, Group Policy, PowerShell, and WMI.
-[Monitor and report on Microsoft Defender Antivirus protection](report-monitor-microsoft-defender-antivirus.md) | You can use Microsoft Intune, Microsoft Configuration Manager, the Update Compliance add-in for Microsoft Operations Management Suite, or a third-party SIEM product (by consuming Windows event logs) to monitor protection status and create reports about endpoint protection.
-
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
-
 > [!TIP]
 > **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are: 
 >
@@ -109,3 +101,16 @@ Article | Description
 > You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
 > See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 >
+
+## See also
+
+- [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
+- [Deploy and enable Microsoft Defender Antivirus protection](deploy-microsoft-defender-antivirus.md)
+- [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md)
+- [Monitor and report on Microsoft Defender Antivirus protection](report-monitor-microsoft-defender-antivirus.md)
+- [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+- [Configure Defender for Endpoint on Android features](android-configure.md)
+- [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
+
