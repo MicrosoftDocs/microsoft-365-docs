@@ -466,10 +466,10 @@ To manage quarantined messages for the Microsoft Teams chat, the admin will need
 
 |Quarantine cmdlets|Parameters|
 |---|---|
-|`QuarantineScenarios`|Email </br>SPO </br>Teams|
-|`EmailQuarantineTypes`|Bulk </br>HighConfPhish </br>Malware</br>Phish </br>Spam </br>TransportRule|
-|`SPOQuarantineTypes`|Malware|
-|`TeamsQuarantineTypes`|HighConfPhish </br>Malware|
+|`QuarantineScenario`|Email </br>SPO </br>Teams|
+|`EmailQuarantineType`|Bulk </br>HighConfPhish </br>Malware</br>Phish </br>Spam </br>TransportRule|
+|`SPOQuarantineType`|Malware|
+|`TeamsQuarantineType`|HighConfPhish </br>Malware|
 
 Admins can select a quarantined message from the list to view or take action.
 
@@ -477,7 +477,7 @@ Admins can select a quarantined message from the list to view or take action.
 
 ```powershell
   Get-QuarantineMessage -Identity c14401cf-aa9a-465b-cfd5-08d0f0ca37c5\4c2ca98e-94ea-db3a-7eb8-3b63657d4db7 |
-  -Scenarios Teams
+  -Scenario Teams
 ```
 
 ## For more information
