@@ -129,7 +129,9 @@ The attack surface reduction rules report has three tabs:
 - **Configuration** enabling you to filter on standard protection rules or additional ASR rules; and 
 - **Add exclusions** enabling you to define exclusions, if needed. 
 
-To access this report, in the navigation pane, choose **Reports** > **Endpoints** > Attack surface reduction rules**. <br/><br/>To learn more, see [Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md). 
+To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Attack surface reduction rules**. 
+
+To learn more, see [Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md). 
 
 ## See also
 
