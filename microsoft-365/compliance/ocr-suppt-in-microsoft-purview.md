@@ -123,6 +123,6 @@ OCR scanning supports more than [150 languages](/azure/cognitive-services/comput
 
 ## See also
 
-- [Learn about data loss prevention](/compliance/dlp-learn-about-dlp)
-- [Learn about insider risk management](/compliance/insider-risk-management)
-- [Learn about records management](/compliance/data-lifecycle-management)
+- [Learn about data loss prevention](compliance/dlp-learn-about-dlp)
+- [Learn about insider risk management](compliance/insider-risk-management)
+- [Learn about records management](compliance/data-lifecycle-management)
