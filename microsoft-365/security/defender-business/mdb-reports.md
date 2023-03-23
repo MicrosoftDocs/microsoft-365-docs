@@ -54,7 +54,7 @@ To access this report, in the navigation pane, choose **Reports** > **General** 
 > [!TIP]
 > You can view similar information on the home page of your Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 
-## Threat protection
+## Threat protection report
 
 :::image type="content" source="media/mdb-threat-protection-report.png" alt-text="Screenshot of the threat protection report in Defender for Business." lightbox="media/mdb-threat-protection-report.png":::
 
@@ -70,7 +70,7 @@ You can use the **Incidents** list to view information about alerts. In the navi
 
 To learn more, see [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md). 
 
-## Device health
+## Device health report
 
 :::image type="content" source="media/mdb-device-health.png" alt-text="Screenshot of the device health report in Defender for Business." lightbox="media/mdb-device-health.png":::
 
@@ -78,7 +78,7 @@ The device health report provides information about device health and trends. Yo
 
 To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Device health**. 
 
-## Device inventory
+## Device inventory list
 
 :::image type="content" source="media/mdb-device-inventory.png" alt-text="Screenshot of the device inventory report in Defender for Business." lightbox="../../media/defender-business/mdb-device-inventory.png":::
 
@@ -86,7 +86,7 @@ You can use the **Devices** list to view information about your company's device
 
 To learn more, see [Manage devices in Defender for Business](mdb-manage-devices.md). 
 
-## Vulnerable devices
+## Vulnerable devices report
 
 :::image type="content" source="media/mdb-vulnerable-devices.png" alt-text="Screenshot of the vulnerable devices report in Defender for Business." lightbox="media/mdb-vulnerable-devices.png":::
 
@@ -94,7 +94,7 @@ The vulnerable devices report provides information about devices and trends. Use
 
 To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Vulnerable devices**.
 
-## Web protection
+## Web protection report
 
 :::image type="content" source="media/mdb-web-protection-report.png" alt-text="Screenshot of the web protection report in Defender for Business." lightbox="media/mdb-web-protection-report.png":::
 
@@ -105,7 +105,7 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 > [!NOTE]
 > If you haven't yet configured web protection for your company, choose the **Settings** button in a report view. Then, under **Rules**, choose **Web content filtering**. To learn more about web content filtering, see [Web content filtering](../defender-endpoint/web-content-filtering.md). 
 
-## Firewall
+## Firewall report
 
 :::image type="content" source="media/mdb-firewall-report.png" alt-text="Screenshot of the firewall report in Defender for Business." lightbox="media/mdb-firewall-report.png":::
 
@@ -116,13 +116,13 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 > [!NOTE]
 > If your firewall report has no data, it might be because you haven't configured your firewall protection yet. In the navigation pane, choose **Endpoints** > **Configuration management** > **Device configuration**. To learn more, see [Firewall in Defender for Business](mdb-firewall.md). 
 
-## Device control
+## Device control report
 
 :::image type="content" source="media/mdb-device-control.png" alt-text="Screenshot of the device control report in Defender for Business." lightbox="media/mdb-device-control.png":::
 
 The device control report shows information about media usage, such as the use of removable storage devices in your organization. 
 
-## Attack surface reduction rules
+## Attack surface reduction rules report
 
 The attack surface reduction rules report has three tabs: 
 - **Detections** to show blocked or audited detections;
