@@ -44,19 +44,22 @@ The **Teams Message Entity Panel** is one single place to store all of Teams mes
 
 - **Attack Simulation and Training**: In order to ensure your users are resilient to phishing attacks in Microsoft Teams, Admins can configure phishing simulations hosted in Microsoft Teams similar to the way they can with email today, see [Training campaigns in Attack simulation training](/attack-simulation-training-training-campaigns) 
 
-## Enable Microsoft Defender for Teams 
-If you are interested in the previewing the features, listed above, for ALL users in your tenant, you can enable them via an Exchange Online PowerShell cmdlet. See [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell.md) for more details on how to connect to Exchange Online with PowerShell. Once connected you can enable teams preview as follows:
+## Enable Microsoft Defender for Teams
+
+If you're interested in the previewing the features, listed above, for ALL users in your tenant, you can enable them via an Exchange Online PowerShell cmdlet. See [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell.md) for more details on how to connect to Exchange Online with PowerShell. Once connected you can enable teams preview as follows:
 
  ```powershell
-  Set-TeamsSecurityPreview -Enable $true
-  ```
+Set-TeamsSecurityPreview -Enable $true
+```
+
 To check the status for your tenant run the following cmdlet
- ```powershell
-  Get-TeamsSecurityPreview
-  ```
+
+```powershell
+Get-TeamsSecurityPreview
+```
 
 ## See also
 
 - [Microsoft Teams](/microsoftteams/teams-overview)
-- - [Managing Teams quarantined messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams)
+- [Managing Teams quarantined messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams)
 - [Get started using Attack simulation training in Defender for Office 365](attack-simulation-training-get-started.md)
