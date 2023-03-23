@@ -40,9 +40,6 @@ Microsoft Defender Antivirus is installed as a core part of Windows 10 and 11, a
 
 This article describes these options for deployment, management, and reporting.
 
-> [!NOTE]
-> If you're using Azure Cloud Services and virtual machines, you can use [Microsoft Antimalware for Azure](/azure/security/fundamentals/antimalware).
-
 ## Microsoft Intune
 
 With Intune, you can manage device security through policies, such as a policy to configure Microsoft Defender Antivirus and other security capabilities in Defender for Endpoint. To learn more, see [Use policies to manage device security](/mem/intune/protect/endpoint-security#use-policies-to-manage-device-security).
