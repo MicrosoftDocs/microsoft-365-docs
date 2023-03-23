@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 09/02/2022
+ms.date: 03/23/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -33,16 +33,22 @@ search.appverid: met150
 
 - Windows
 
-You can deploy, manage, and report on Microsoft Defender Antivirus in many ways.
+Microsoft Defender Antivirus is installed as a core part of Windows 10 and 11, and is included in Windows Server 2016 and later (Windows Server 2012 requires Microsoft Defender for Endpoint). You can manage and report on Microsoft Defender Antivirus using one of several tools, such as:
 
-Because the Microsoft Defender Antivirus client is installed as a core part of Windows 10 and Windows 11, traditional deployment of a client to your endpoints doesn't apply.
+- Microsoft Intune
+- Configuration Manager
+- PowerShell
+- Group Policy and Azure Active Directory
+- Windows Management Instrumentation
 
-However, in most cases you'll still need to enable the protection service on your endpoints with Microsoft Intune, Microsoft Configuration Manager, Microsoft Defender for Cloud, or Group Policy Objects, which is described in the following table.
+This article describes these options for deployment, management, and reporting.
 
-You'll also see other links for:
+> [!TIP]
+> If you're using Azure Cloud Services and virtual machines, you can use [Microsoft Antimalware for Azure](/azure/security/fundamentals/antimalware).
 
-- Managing Microsoft Defender Antivirus protection, including managing product and protection updates
-- Reporting on Microsoft Defender Antivirus protection
+## Microsoft Intune
+
+With Intune, you can manage device security through policies, such as a policy to configure Microsoft Defender Antivirus and other security capabilities in Defender for Endpoint. To learn more, see [Use policies to manage device security](/mem/intune/protect/endpoint-security#use-policies-to-manage-device-security).
 
 > [!IMPORTANT]
 > In most cases, Windows 10 or Windows 11 will disable Microsoft Defender Antivirus if it finds another antivirus product that is running and up-to-date. You must disable or uninstall third-party antivirus products before Microsoft Defender Antivirus will function. If you re-enable or install third-party antivirus products, then Windows 10 or Windows 11 automatically disables Microsoft Defender Antivirus.
