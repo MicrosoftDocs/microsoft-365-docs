@@ -35,7 +35,7 @@ The Microsoft 365 Defender portal enables your security team to respond to and m
 
 3. Select a button or link on the card to view more information and take action. As an example, our **Devices at risk** card includes a **View details** button. Selecting that button takes us to the **Devices** list, as shown in the following image:
 
-   :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory":::
+   :::image type="content" source="../../media/defender-business/mdb-device-inventory.png" alt-text="Screenshot of device inventory":::
 
    The **Devices** page lists company devices, along with their risk level and exposure level.
 

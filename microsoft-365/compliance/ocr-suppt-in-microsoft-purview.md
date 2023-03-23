@@ -28,6 +28,7 @@ Microsoft Purview can scan for content to help protect your information. The new
 
 ## Workflow at a glance
 
+
 | Phase | What's needed|
 |-------|--------------|
 |**Phase 1:** Create your initial Azure subscription | If your organization doesn't already have an Azure pay-as-you-go subscription for your tenant, your Global admin needs to start by creating an [Azure account](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions). |
@@ -116,14 +117,12 @@ This new functionality supports scanning images in the following file types, wit
 OCR scanning supports more than [150 languages](/azure/cognitive-services/computer-vision/language-support#print-text).
 
 ## Summary
-
 - You can subscribe to OCR scanning without subscribing to Microsoft Syntex.
 - Configuring OCR scans occurs at the tenant level, so once OCR scans are configured, they're available to the entire Microsoft Purview stack.
 - You don't need to create separate data classifiers for OCR scans. Once OCR is configured, existing sensitive information types (SITs), exact data matches, trainable classifiers, and fingerprint SITs scan images as well as documents and emails.
 
 ## See also
 
-- [Apply a sensitivity label to content automatically](/compliance/apply-sensitivity-label-automatically)
 - [Learn about data loss prevention](/compliance/dlp-learn-about-dlp)
 - [Learn about insider risk management](/compliance/insider-risk-management)
 - [Learn about data lifecycle management](/compliance/data-lifecycle-management)
