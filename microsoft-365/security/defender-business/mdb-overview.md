@@ -36,7 +36,7 @@ Watch the following video to learn more about Defender for Business: <br/><br/>
 
 > [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
 
-## What's included with Defender for Business
+## What's included with Defender for Business?
 
 Defender for Business includes a full range of device protection capabilities, as shown in the following diagram:
 
@@ -70,6 +70,7 @@ With Defender for Business, you can help protect the devices and data your busin
    - [Try scenarios, tutorials, and simulations](mdb-tutorials.md).
 
 - **Provide guidance on managing devices and security policies**.
+   - [Learn about new mobile threat defense capabilities (preview)](mdb-mtd.md).
    - [Monitor or manage devices](mdb-manage-devices.md).
    - [View or edit security policies](mdb-view-edit-policies.md).
 
