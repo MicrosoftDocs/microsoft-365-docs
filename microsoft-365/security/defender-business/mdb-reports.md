@@ -107,7 +107,7 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 
 ## Firewall
 
-:::image type="content" source="media/mdb-firewall-report.png" alt-text="Screenshot of the firewall report in Defender for Business.":::
+:::image type="content" source="media/mdb-firewall-report.png" alt-text="Screenshot of the firewall report in Defender for Business." lightbox="media/mdb-firewall-report.png":::
 
 When firewall protection is configured, the firewall report shows blocked inbound, outbound, and app connections. This report also shows remote IPs connected by multiple devices, and remote IPs with the most connection attempts. 
 
@@ -117,6 +117,8 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 > If your firewall report has no data, it might be because you haven't configured your firewall protection yet. In the navigation pane, choose **Endpoints** > **Configuration management** > **Device configuration**. To learn more, see [Firewall in Defender for Business](mdb-firewall.md). 
 
 ## Device control
+
+:::image type="content" source="media/mdb-device-control.png" alt-text="Screenshot of the device control report in Defender for Business." lightbox="media/mdb-device-control.png":::
 
 The device control report shows information about media usage, such as the use of removable storage devices in your organization. 
 
