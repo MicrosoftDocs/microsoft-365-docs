@@ -21,7 +21,7 @@ description: How to implement this preview of optical character recognition (OCR
 
 # Support for optical character recognition in Microsoft Purview (preview)
 
-Microsoft Purview can scan for content to help protect your information. The new support for optical character recognition (OCR) scanning enables Microsoft Purview to scan content in images. OCR scanning is an optional feature that is first enabled at the tenant level. Once enabled, you select the locations where you want to scan images. Image scanning is available for Exchange, SharePoint, OneDrive, Teams, and Windows devices. Once the OCR settings are configured, your existing policies for data loss prevention (DLP), records management, and insider risk management are applied to images as well as text-based content. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview scans for credit card numbers in both text and images at all of the chosen locations.
+Microsoft Purview can scan for content to help protect your information. The new support for optical character recognition (OCR) scanning enables Microsoft Purview to scan content not only in text, but in images too. An optional feature, OCR scanning is first enabled at the tenant level. Once enabled, you select the locations where you want to scan images. Image scanning is available for Exchange, SharePoint, OneDrive, Teams, and Windows devices. Once the OCR settings are configured, your existing policies for data loss prevention (DLP), records management, and insider risk management are applied to images as well as text-based content. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview scans for credit card numbers in both text and images at all of the chosen locations.
 
 > [!NOTE]
 > Scanning images embedded in Microsoft Office documents is not supported.
@@ -43,9 +43,9 @@ To use OCR scanning, your organization's Global admin needs to verify that an Az
 
 ### Phase 2: Configure billing
 
-OCR scanning is an optional feature in Microsoft Purview. When you enable OCR scans, all sensitive information types and trainable classifiers can detect characters that are in images.
+When you enable OCR scans, all sensitive information types and trainable classifiers can detect characters that are in images.
 
-To enable OCR scans, your Global admin must set up pay-as-you-go billing by following the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure (preview)](/syntex/syntex-azure-billing) to add a subscription for OCR scans.
+Because it is an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR scans. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure (preview)](/syntex/syntex-azure-billing) to add a subscription for OCR scans.
 
 > [!NOTE]
 > When you go to the Microsoft Syntex billing page to sign up for your OCR subscription, you do **not** need to also sign up for Microsoft Syntex.
@@ -70,27 +70,27 @@ To enable OCR scans, your Global admin must set up pay-as-you-go billing by foll
 ##### Location: SharePoint sites
 | Solutions | Policies applied | Considerations |
 |--------------|----------|-------------------| 
-| **Data loss prevention (DLP)**| **DLP Policies** | **Limitation:** Scanning images embedded in Microsoft Office documents isn't supported.|  
+| **Data loss prevention**| **DLP Policies** | **Limitation:** Scanning images embedded in Microsoft Office documents isn't supported.|  
 | **Information protection**| **Auto-labeling policy** <br> Images are labeled for sensitive information types and trainable classifiers. | **Details:** <br> OCR scans detect keywords as well as content caught by sensitive information classifiers and trainable classifiers.<br><br> **Limitation:** Scanning images embedded in Microsoft Office documents isn't supported. |
 |**Records management** | **Auto-apply retention label policy** <br> Retention labels are applied to images.| **Details:** <br> OCR scans detect keywords as well as content caught by sensitive information classifiers and trainable classifiers.<br><br> **Limitation:** Scanning images embedded in Microsoft Office documents isn't supported.| 
 
 ##### Location: OneDrive accounts
 | Solutions | Policies applied | Considerations |
 |--------------|----------|-------------------| 
-| **Data loss prevention (DLP)**| **DLP Policies** | **Limitation:** Scanning images embedded in Microsoft Office documents isn't supported.|  
+| **Data loss prevention**| **DLP Policies** | **Limitation:** Scanning images embedded in Microsoft Office documents isn't supported.|  
 | **Information protection**| **Auto-labeling policy** <br> Images are labeled for sensitive information types and trainable classifiers. | **Details:** <br> OCR scans detect keywords as well as content caught by sensitive information classifiers and trainable classifiers.<br><br> **Limitation:** Scanning images embedded in Microsoft Office documents isn't supported. |
 |**Records management** | **Auto-apply retention label policy** <br> Retention labels are applied to images.| **Details:** <br> OCR scans detect keywords as well as content caught by sensitive information classifiers and trainable classifiers.<br><br> **Limitation:** Scanning images embedded in Microsoft Office documents isn't supported.| 
 
 ##### Location: Teams chat and channel messages
 | Solutions | Policies applied | Considerations |
 |--------------|----------|-------------------| 
-| **Data loss prevention (DLP)**| **DLP Policies** | **Limitation:** Scanning images embedded in Microsoft Office documents isn't supported.|  
+| **Data loss prevention**| **DLP Policies** | **Limitation:** Scanning images embedded in Microsoft Office documents isn't supported.|  
 | **Insider risk management** | **Insider risk management policies** | **Limitation:** Scanning images embedded in Microsoft Office documents isn't supported.|
 
 ##### Location: Devices
 | Solutions | Policies applied | Considerations |
 |--------------|----------|-------------------| 
-| **Data loss prevention (DLP)**| **DLP Policies** | **Limitation:** Scanning images embedded in Microsoft Office documents isn't supported.|  
+| **Data loss prevention**| **DLP Policies** | **Limitation:** Scanning images embedded in Microsoft Office documents isn't supported.|  
 
 <br>
 
