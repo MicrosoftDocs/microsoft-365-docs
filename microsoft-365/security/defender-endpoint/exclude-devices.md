@@ -36,7 +36,7 @@ ms.date: 02/16/2022
 
 Excluding devices that are inactive, duplicate, or out of scope allows you to focus on discovering and prioritizing the risks on your active devices. This action can also help reflect a more accurate vulnerability management exposure score, as the excluded devices won't be visible in your vulnerability management reports.
 
-Once devices are excluded, you won't be able to view updated or relevant information about vulnerabilities and installed software on these devices. It affects all vulnerability management pages, reports, and related tables in advanced hunting.
+Once devices are excluded, you won't be able to view updated or relevant information about vulnerabilities and installed software on these devices. It affects all vulnerability management pages, reports, and related tables in advanced hunting. Endpoint detection and response will also be disabled when excluded.
 
 Even though the device exclusion feature removes the device data from vulnerability management pages and reports, the devices remain connected to the network and can still be a risk to the organization. You'll be able to cancel the device exclusion at any time.
 
