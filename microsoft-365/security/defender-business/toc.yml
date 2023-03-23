@@ -73,6 +73,8 @@
         href: mdb-custom-rules-firewall.md
     - name: Monitor or manage devices
       items: 
+      - name: Get an overview of mobile threat defense
+        href: mdb-mtd.md
       - name: View and manage devices
         href: mdb-manage-devices.md
       - name: Create device groups
