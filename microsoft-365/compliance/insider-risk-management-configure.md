@@ -241,10 +241,7 @@ See the [Get started with insider risk management forensic evidence](/microsoft-
 
 Microsoft Purview can scan for sensitive content in documents to help protect those documents from inappropriate exposure. When you enable optical character recognition (OCR) in Microsoft Purview, data classifiers, such as sensitive information types and trainable classifiers, can also detect characters in stand-alone images. After configuring OCR settings (preview), your existing insider risk policies will be applied to both images and documents. 
 
-For the OCR preview, insider risk management supports scanning in the following locations: Windows endpoint devices, SharePoint Online, OneDrive for Business, and Teams. 
-
-> [!NOTE] 
-> For the OCR preview, Exchange Online is not supported as a scanning location for insider risk management.  
+For the OCR preview, insider risk management supports scanning in the following locations: Windows endpoint devices, SharePoint Online, and Teams. Exchange Online and OneDrive are not supported for the preview. 
 
 OCR settings do not apply to forensic evidence clips in insider risk management. 
 
