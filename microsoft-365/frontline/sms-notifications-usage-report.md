@@ -49,8 +49,6 @@ Here's what you'll see on each tab of the report.
 
 ### Distribution
 
-[placeholder for screenshot]
-
 |Callout |Description  |
 |--------|-------------|
 |**1**   |Each report has a date for when the report was generated. The reports usually reflect a 24 to 48-hour latency from time of activity. |
