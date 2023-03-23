@@ -21,7 +21,9 @@ ms.collection:
 
 # Reports in Microsoft Defender for Business
 
-Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article describes these reports, how you can use them, and how to find them.
+Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). These reports enable your security team to view information about detected threats, device status, and more.
+
+This article describes these reports, how you can use them, and how to find them.
 
 ## Monthly security summary (preview) 
 
