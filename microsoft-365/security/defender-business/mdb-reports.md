@@ -124,6 +124,8 @@ The device control report shows information about media usage, such as the use o
 
 ## Attack surface reduction rules report
 
+:::image type="content" source="media/mdb-asr-report.png" alt-text="Screenshot of the attack surface reduction rules report in Defender for Business." lightbox="media/mdb-asr-report.png":::
+
 The attack surface reduction rules report has three tabs: 
 - **Detections** to show blocked or audited detections;
 - **Configuration** enabling you to filter on standard protection rules or additional ASR rules; and 
