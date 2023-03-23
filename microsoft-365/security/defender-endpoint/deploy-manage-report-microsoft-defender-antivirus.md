@@ -58,15 +58,15 @@ For reporting, you can choose from several options:
 
 ## Configuration Manager
 
-Use the [Endpoint Protection point site system role](/mem/configmgr/protect/deploy-use/endpoint-protection-site-role) and [enable Endpoint Protection with custom client settings](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client).
+With Configuration Manager, you can manage security and malware on Configuration Manager client computers. Use the [Endpoint Protection point site system role](/mem/configmgr/protect/deploy-use/endpoint-protection-site-role) and [enable Endpoint Protection with custom client settings](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client). You can use [default and customized antimalware policies](/microsoft-365/security/office-365-security/anti-malware-policies-configure).
 
-With [default and customized antimalware policies](/microsoft-365/security/office-365-security/anti-malware-policies-configure) and client management.
+For reporting, you can use the default [Configuration Manager Monitoring workspace](/mem/configmgr/apps/deploy-use/monitor-applications-from-the-console) and email alerts.
 
-With the default [Configuration Manager Monitoring workspace](/mem/configmgr/apps/deploy-use/monitor-applications-from-the-console) and email alerts.
+If your organization has Defender for Endpoint, you can also use the [Microsoft 365 Defender portal](../defender/microsoft-365-defender-portal.md), which includes a [device inventory list](/microsoft-365/security/defender-endpoint/machines-view-overview). To access the device inventory, in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)), go to **Assets** > **Devices**. The device inventory list displays onboarded devices along with their health state and risk level.
 
 ## PowerShell
 
-PowerShell|Deploy with Group Policy, Microsoft Configuration Manager, or manually on individual endpoints.|Use the [Set-MpPreference](/powershell/module/defender/set-mppreference) and [Update-MpSignature](/powershell/module/defender/update-mpsignature) cmdlets available in the Defender module.|Use the appropriate [Get- cmdlets available in the Defender module](/powershell/module/defender).
+PowerShellDeploy with Group Policy, Microsoft Configuration Manager, or manually on individual endpoints.Use the [Set-MpPreference](/powershell/module/defender/set-mppreference) and [Update-MpSignature](/powershell/module/defender/update-mpsignature) cmdlets available in the Defender module.Use the appropriate [Get- cmdlets available in the Defender module](/powershell/module/defender).
 
 ## Group Policy and Azure Active Directory
 
@@ -78,7 +78,9 @@ Endpoint reporting isn't available with Group Policy. You can generate a list of
 
 ## Windows Management Instrumentation
 
-Windows Management Instrumentation|Deploy with Group Policy, Microsoft Configuration Manager, or manually on individual endpoints.
+Windows Management Instrumentation
+
+Deploy with Group Policy, Microsoft Configuration Manager, or manually on individual endpoints.
 
 Use the [Set method of the MSFT_MpPreference class](/previous-versions/windows/desktop/defender/set-msft-mppreference) and the [Update method of the MSFT_MpSignature class](/previous-versions/windows/desktop/defender/update-msft-mpsignature).
 
