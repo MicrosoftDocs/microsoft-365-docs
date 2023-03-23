@@ -35,15 +35,15 @@ search.appverid: met150
 
 Microsoft Defender Antivirus is installed as a core part of Windows 10 and 11, and is included in Windows Server 2016 and later (Windows Server 2012 requires Microsoft Defender for Endpoint). You can manage and report on Microsoft Defender Antivirus using one of several tools, such as:
 
-- Microsoft Intune
-- Configuration Manager
-- PowerShell
-- Group Policy and Azure Active Directory
-- Windows Management Instrumentation
+- [Microsoft Intune](#microsoft-intune)
+- [Configuration Manager](#configuration-manager)
+- [PowerShell](#powershell)
+- [Group Policy and Azure Active Directory](#powershell)
+- [Windows Management Instrumentation](#windows-management-instrumentation)
 
 This article describes these options for deployment, management, and reporting.
 
-> [!TIP]
+> [!NOTE]
 > If you're using Azure Cloud Services and virtual machines, you can use [Microsoft Antimalware for Azure](/azure/security/fundamentals/antimalware).
 
 ## Microsoft Intune
@@ -66,28 +66,27 @@ If your organization has Defender for Endpoint, you can also use the [Microsoft 
 
 ## PowerShell
 
-PowerShellDeploy with Group Policy, Microsoft Configuration Manager, or manually on individual endpoints.Use the [Set-MpPreference](/powershell/module/defender/set-mppreference) and [Update-MpSignature](/powershell/module/defender/update-mpsignature) cmdlets available in the Defender module.Use the appropriate [Get- cmdlets available in the Defender module](/powershell/module/defender).
+You can use PowerShell with Group Policy or Configuration Manager to manage Microsoft Defender Antivirus on client devices. You can also use PowerShell to manage Microsoft Defender Antivirus manually on individual devices that are not managed by a security team. 
+
+- Use the appropriate [Get- cmdlets available in the Defender module](/powershell/module/defender).
+
+- Use the [Set-MpPreference](/powershell/module/defender/set-mppreference) and [Update-MpSignature](/powershell/module/defender/update-mpsignature) cmdlets that are available in the Defender module.
 
 ## Group Policy and Azure Active Directory
 
-Use a Group Policy Object to deploy configuration changes and ensure Microsoft Defender Antivirus is enabled.
+You can use a Group Policy Object to deploy configuration changes and ensure Microsoft Defender Antivirus is enabled. Use Group Policy Objects (GPOs) to [configure update options for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/manage-protection-update-schedule-microsoft-defender-antivirus) and [configure Windows Defender features](/microsoft-365/security/defender-endpoint/configure-microsoft-defender-antivirus-features).
 
-Use Group Policy Objects (GPOs) to [configure update options for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/manage-protection-update-schedule-microsoft-defender-antivirus) and [configure Windows Defender features](/microsoft-365/security/defender-endpoint/configure-microsoft-defender-antivirus-features).
+For reporting, keep in mind that endpoint reporting isn't available with Group Policy. You can generate a list of Group Policies to determine if any settings or policies aren't applied. 
 
-Endpoint reporting isn't available with Group Policy. You can generate a list of Group Policies to determine if any settings or policies aren't applied. 
+If your organization has Defender for Endpoint, you can also use the [Microsoft 365 Defender portal](../defender/microsoft-365-defender-portal.md), which includes a [device inventory list](/microsoft-365/security/defender-endpoint/machines-view-overview). To access the device inventory, in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)), go to **Assets** > **Devices**. The device inventory list displays onboarded devices along with their health state and risk level.
 
 ## Windows Management Instrumentation
 
-Windows Management Instrumentation
+With Windows Management Instrumentation (WMI), you can manage Microsoft Defender Antivirus with Group Policy or Configuration Manager. You can also use WMI to manage Microsoft Defender Antivirus manually on individual devices that aren't managed by a security team.
 
-Deploy with Group Policy, Microsoft Configuration Manager, or manually on individual endpoints.
+- Use the [Set method of the MSFT_MpPreference class](/previous-versions/windows/desktop/defender/set-msft-mppreference) and the [Update method of the MSFT_MpSignature class](/previous-versions/windows/desktop/defender/update-msft-mpsignature).
 
-Use the [Set method of the MSFT_MpPreference class](/previous-versions/windows/desktop/defender/set-msft-mppreference) and the [Update method of the MSFT_MpSignature class](/previous-versions/windows/desktop/defender/update-msft-mpsignature).
-
-Use the [MSFT_MpComputerStatus](/previous-versions/windows/desktop/defender/msft-mpcomputerstatus) class and the get method of associated classes in the [Windows Defender WMIv2 Provider](/windows/win32/wmisdk/wmi-providers).
-
-> [!TIP]
-> **Performance tip** Due to a variety of factors, Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues. You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+- Use the [MSFT_MpComputerStatus](/previous-versions/windows/desktop/defender/msft-mpcomputerstatus) class and the get method of associated classes in the [Windows Defender WMIv2 Provider](/windows/win32/wmisdk/wmi-providers).
 
 ## See also
 
@@ -101,3 +100,5 @@ Use the [MSFT_MpComputerStatus](/previous-versions/windows/desktop/defender/msft
 - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 
+> [!TIP]
+> **Performance tip** Due to a variety of factors, Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues. You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
