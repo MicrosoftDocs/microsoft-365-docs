@@ -45,7 +45,7 @@ To use OCR scanning, your organization's Global admin needs to verify that an Az
 
 When you enable OCR scans, all sensitive information types and trainable classifiers can detect characters that are in images.
 
-Because it is an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR scans. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure (preview)](/syntex/syntex-azure-billing) to add a subscription for OCR scans.
+Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR scans. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure (preview)](/syntex/syntex-azure-billing) to add a subscription for OCR scans.
 
 > [!NOTE]
 > When you go to the Microsoft Syntex billing page to sign up for your OCR subscription, you do **not** need to also sign up for Microsoft Syntex.
@@ -125,4 +125,4 @@ OCR scanning supports more than [150 languages](/azure/cognitive-services/comput
 
 - [Learn about data loss prevention](/compliance/dlp-learn-about-dlp)
 - [Learn about insider risk management](/compliance/insider-risk-management)
-- [Learn about data lifecycle management](/compliance/data-lifecycle-management)
+- [Learn about records management](/compliance/data-lifecycle-management)
