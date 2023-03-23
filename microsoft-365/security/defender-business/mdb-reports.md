@@ -64,13 +64,11 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 
 ## Incidents view
 
-:::image type="content" source="media/mdb-incidents.png" alt-text="Screenshot of the incidents view in Defender for Business.":::
+:::image type="content" source="media/mdb-incidents.png" alt-text="Screenshot of the incidents view in Defender for Business." lightbox="media/mdb-incidents.png":::
 
-You can use the **Incidents** list to view information about alerts. 
+You can use the **Incidents** list to view information about alerts. To learn more, see [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md). 
 
 To access this report, in the navigation pane, choose **Incidents** to view and manage current incidents. 
-
-To learn more, see [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md). 
 
 ## Device health report
 
