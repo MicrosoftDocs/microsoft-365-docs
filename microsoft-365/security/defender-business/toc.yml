@@ -59,7 +59,7 @@
       items: 
       - name: View and use reports
         href: mdb-reports.md
-      - name: View your vulnerability management dashboard
+      - name: Use your vulnerability management dashboard
         href: mdb-view-tvm-dashboard.md
       - name: View and manage incidents
         href: mdb-view-manage-incidents.md
