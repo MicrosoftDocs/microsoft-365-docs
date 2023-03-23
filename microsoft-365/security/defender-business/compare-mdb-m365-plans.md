@@ -63,41 +63,40 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 
 |Feature/capability|[Defender for Business](mdb-overview.md)<br/>(standalone)|[Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(for enterprise customers) |[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(for enterprise customers) |
 |---|---|---|---|
-|[Centralized management](../defender-endpoint/manage-atp-post-migration.md) <sup>[[1](#fn1)]</sup> | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
+|[Centralized management](../defender-endpoint/manage-atp-post-migration.md)<br/>(see note 1 below) | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
 |[Simplified client configuration](mdb-simplified-configuration.md)|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::| | |
 |[Microsoft Defender Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::| |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
-|[Attack surface reduction capabilities](../defender-endpoint/overview-attack-surface-reduction.md) <sup>[[2](#fn2)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
+|[Attack surface reduction capabilities](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(see note 2 below)|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
 |[Next-generation protection](../defender-endpoint/next-generation-protection.md)|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
-|[Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) <sup>[[3](#fn3)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
-|[Automated investigation and response](../defender-endpoint/automated-investigations.md) <sup>[[4](#fn4)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: ||:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
-|[Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and six months of data retention <sup>[[5](#fn5)]</sup> | | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
-|[Threat analytics](../defender-endpoint/threat-analytics.md) <sup>[[6](#fn6)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
-|[Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, Mac, iOS, and Android OS) <sup>[[7](#fn7)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
+|[Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(see note 3 below) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
+|[Automated investigation and response](../defender-endpoint/automated-investigations.md) <br/>(see note 4 below) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: ||:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
+|[Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and six months of data retention | | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
+|[Threat analytics](../defender-endpoint/threat-analytics.md) <br/>(see note 5 below) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
+|[Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, Mac, iOS, and Android OS) <br/>(see note 6 below) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
 |[Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md)| | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
 |Partner APIs|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
 |[Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |
 
-(<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or by using Microsoft Intune ([https://intune.microsoft.com](https://intune.microsoft.com)).
+> [!NOTE]
+> 1. Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or by using Microsoft Intune ([https://intune.microsoft.com](https://intune.microsoft.com)).
+> 
+> 2. Intune is required to configure and manage [ASR rules](../defender-endpoint/attack-surface-reduction.md).
+> 
+> 3. Endpoint detection and response (EDR) capabilities in Defender for Business include behavior-based detection and the following manual response actions: 
+> 
+>    - Run antivirus scan
+>    - Isolate device
+>    - Add an indicator to block or allow a file
+> 
+> 4. In Defender for Business, automated investigation and response is turned on by default, tenant wide. Turning off automated investigation and response affects real-time protection. See [Review settings for advanced features](mdb-configure-security-settings.md#review-settings-for-advanced-features).  
+> 
+> 5. In Defender for Business, threat analytics are optimized for small and medium-sized businesses.
+> 
+> 6. To onboard servers, another license is required. See the following articles:
+> 
+>    - [Onboard devices to Defender for Business](mdb-onboard-devices.md)
+>    - [Onboard devices and configure Microsoft Defender for Endpoint capabilities](../defender-endpoint/onboard-configure.md)
 
-(<a id="fn2">2</a>) Intune is required to configure and manage [ASR rules](../defender-endpoint/attack-surface-reduction.md).
-
-(<a id="fn3">3</a>) Endpoint detection and response (EDR) capabilities in Defender for Business include behavior-based detection and the following manual response actions: 
-- Run antivirus scan
-- Isolate device
-- Add an indicator to block or allow a file
-
-(<a id="fn4">4</a>) In Defender for Business, automated investigation and response is turned on by default, tenant wide. Turning off automated investigation and response affects real-time protection. See [Review settings for advanced features](mdb-configure-security-settings.md#review-settings-for-advanced-features).  
-
-(<a id="fn5">5</a>) There's no timeline view in Defender for Business.
-
-(<a id="fn6">6</a>) In Defender for Business, threat analytics are optimized for small and medium-sized businesses.
-
-(<a id="fn7">7</a>) To onboard servers, another license is required. See the following articles:
-- [Onboard devices to Defender for Business](mdb-onboard-devices.md)
-- [Onboard devices and configure Microsoft Defender for Endpoint capabilities](../defender-endpoint/onboard-configure.md)
-
-> [!TIP]
-> Also see [Compare Microsoft endpoint security plans](../defender-endpoint/defender-endpoint-plan-1-2.md) and [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Next steps
 
