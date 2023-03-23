@@ -1,13 +1,13 @@
 ---
-title: Add or remove a tag for a machine
-description: Learn how to use the Add or Remove machine tags API to adds or remove a tag for a machine in Microsoft Defender for Endpoint.
+title: Add or remove a tag for multiple machines
+description: Learn how to use the Add or Remove machine tags API to add or remove a tag for multiple devices in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, tags, machine tags
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 02/24/2023
 ---
 
-# Add or remove a tag for a machine
+# Add or remove a tag for multiple machines
 
 **Applies to:**
 
@@ -38,13 +38,14 @@ ms.date: 02/24/2023
 
 ## API description
 
-Adds or removes a tag for a specific [Machine](machine.md).
+Adds or removes a tag for the specified set of machines.
 
 ## Limitations
 
 1. You can post on machines last seen according to your configured retention period.
-
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+3. We can add or remove tag a for up to 500 machines per API call.
+
 
 ## Permissions
 
@@ -64,7 +65,7 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 ## HTTP request
 
 ```http
-PATCH https://api.securitycenter.microsoft.com/api/machines/{id}/tags
+POST https://api.securitycenter.microsoft.com/api/machines/AddOrRemoveTagForMultipleMachines
 ```
 
 ## Request headers
@@ -82,24 +83,28 @@ Parameter|Type|Description
 :---|:---|:---
 Value|String|The tag name. **Required**.
 Action|Enum|Add or Remove. Allowed values are: 'Add' or 'Remove'. **Required**.
+MachineIds|List (String)|List of machine ids to update. Required.|
 
 ## Response
 
-If successful, this method returns 200 - Ok response code and the updated Machine in the response body.
+If successful, this method returns 200 - Ok response code and the updated machines in the response body.
 
 ## Example Request
 
-Here is an example of a request that adds a machine tag.
+Here is an example of a request that adds a tag to multiple machines.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/tags
+POST https://api.securitycenter.microsoft.com/api/machines/AddOrRemoveTagForMultipleMachines
 ```
 
 ```json
 {
-  "Value" : "test Tag 2",
-  "Action": "Add"
+  "Value" : "Tag",
+  "Action": "Add",
+  "MachineIds": ["34e83ca3feea4dae2353006ba389262c033a025e",
+  "2a398439b4975924e87a65943972bc702469b329",
+  "a610c00c65fdf79960cc0077d9d8c569d23f09a5"]
 }
 ```
 
-To remove machine tag, set the Action to 'Remove' instead of 'Add' in the request body.
+To remove machine tags, set the Action to 'Remove' instead of 'Add' in the request body.
