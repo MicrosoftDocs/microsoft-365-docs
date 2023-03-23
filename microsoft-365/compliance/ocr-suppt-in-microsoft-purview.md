@@ -38,14 +38,14 @@ Microsoft Purview can scan for content to help protect your information. The new
 
 ### Phase 1: Prerequisites
 
-To use OCR scanning, your organization's Global admin needs to verify that an Azure pay-as-you-go subscription is in place. If not, they need to set that up, following the instructions in [Create your initial Azure subscriptions](azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)
+To use OCR scanning, your organization's Global admin needs to verify that an Azure pay-as-you-go subscription is in place. If not, they need to set that up, following the instructions in [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)
 
 
 ### Phase 2: Configure billing
 
 When you enable OCR scans, all sensitive information types and trainable classifiers can detect characters that are in images.
 
-Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR scans. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure (preview)](syntex/syntex-azure-billing) to add a subscription for OCR scans.
+Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR scans. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure (preview)](/syntex/syntex-azure-billing) to add a subscription for OCR scans.
 
 > [!NOTE]
 > When you go to the Microsoft Syntex billing page to sign up for your OCR subscription, you do **not** need to also sign up for Microsoft Syntex.
@@ -114,7 +114,7 @@ This new functionality supports scanning images in the following file types, wit
 <br>
 
 ## What languages are supported?
-OCR scanning supports more than [150 languages](azure/cognitive-services/computer-vision/language-support#print-text).
+OCR scanning supports more than [150 languages](/azure/cognitive-services/computer-vision/language-support#print-text).
 
 ## Summary
 - You can subscribe to OCR scanning without subscribing to Microsoft Syntex.
