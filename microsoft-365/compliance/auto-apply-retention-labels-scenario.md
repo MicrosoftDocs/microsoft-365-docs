@@ -122,7 +122,7 @@ The following screenshot shows a summary of the label settings when you create t
 
 ### Create an event type when you create a retention label
 
-1. On the **Define the retention period** page of the Create retention label wizard, after **Start the retention period based on**, select **Create new event type**:
+1. On the **Define the retention period** page of the Create retention label configuration, after **Start the retention period based on**, select **Create new event type**:
 
     ![Create a new event type for the Product Specification label dialog box.](../media/spo-scenario-event.png)
 
@@ -219,7 +219,7 @@ Now that we've verified that the KQL query is working, let's create an auto-appl
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, go to **Records management** > **Label policies** > **Auto-apply a label**.
 
-2. In the Create auto-labeling policy wizard, on the **Name your auto-labeling policy** page, enter a name such as **Auto-apply Product Specification label**, and an optional description. Then select **Next**.
+2. In the Create auto-labeling policy configuration, on the **Name your auto-labeling policy** page, enter a name such as **Auto-apply Product Specification label**, and an optional description. Then select **Next**.
 
 3. On the **Choose the type of content you want to apply this label to** page, select **Apply label to content that contains specific words or phrases, or properties**, and then select **Next**.
 
