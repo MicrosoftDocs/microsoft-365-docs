@@ -1,8 +1,8 @@
 ---
 title: Microsoft Teams SMS notifications usage report
-author: LanaChin
-ms.author: v-lanachin
-manager: samanro
+author: daisyfell
+ms.author: daisyfeller
+manager: pamgreen
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-frontline
