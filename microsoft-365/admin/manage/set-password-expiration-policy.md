@@ -35,6 +35,8 @@ description: "Learn how an admin can set a password expiration policy for your b
 
 # Set the password expiration policy for your organization
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 ## Before you begin
 
 This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](/microsoft-365/admin/add-users/about-admin-roles).

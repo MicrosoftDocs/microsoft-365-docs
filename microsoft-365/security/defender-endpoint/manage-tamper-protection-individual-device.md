@@ -24,10 +24,11 @@ search.appverid: met150
 # Manage tamper protection on an individual device
 
 **Applies to:**
-
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender Antivirus
+- [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
+- [Microsoft 365 Business Premium](../../business-premium/index.md)
 
 **Platforms**
 - Windows
