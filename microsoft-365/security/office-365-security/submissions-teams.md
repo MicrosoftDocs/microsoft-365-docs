@@ -22,14 +22,13 @@ ms.date:
 
 # User reported message settings in Microsoft Teams
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
-> The features described in this article are currently in Preview, are not available in all organizations, and are subject to change.
 
 In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft 365 Defender, admins can decide whether users can report malicious messages in Microsoft Teams. Admins can also get visibility into the Teams messages that users are reporting.
 
@@ -44,7 +43,7 @@ User reporting of messages in Teams is made of two separate settings:
 
 - **In the Teams admin center**: On by default and controls whether users are able to report messages from Teams. When this setting is turned off, users can't report messages within Teams, so the corresponding setting in the Microsoft 365 Defender portal is irrelevant.
 
-- **In the Microsoft 365 Defender portal**: On by default. Typically, if user reporting of messages in turned on in the Teams admin center, you'll want to leave it turned on in the Defender portal.
+- **In the Microsoft 365 Defender portal**: On by default. If user reporting of messages is turned on in the Teams admin center, you'll must have it turned on in the Defender portal for submissions to show up correctly.
 
 ### Turn off or turn on user reporting in the Teams admin center
 
@@ -99,7 +98,7 @@ For more information about user reported message settings in the Defender portal
 
 - The reported message remains visible to the user in the Teams client.
 - Users can report the same message multiple times.
-- The message sender is not notified that the messages was reported.
+- The message sender is not notified that the message(s) was reported.
 - Microsoft also sends an email message notification to the user who reported the message from submissions@messaging.microsoft.com with the subject, "You have successfully reported a Teams message as a security risk." If Teams integration is turned on in the Defender portal, admins can customize some elements of the notification message in the **Email sent to user after admin review** on **User reported** page as described in [Options for Microsoft reporting tools](submissions-user-reported-messages-custom-mailbox.md#options-for-microsoft-reporting-tools).
 
 > [!IMPORTANT]
@@ -121,7 +120,7 @@ For more information, see [User reported settings](submissions-user-reported-mes
 **Notes**:
 
 - If you select **Send reported messages to** \> **My reporting mailbox only**, reported messages don't go to Microsoft for analysis unless an admin manually submits the message from the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>. Reporting messages to Microsoft is an important part of training the service to help improve the accuracy of filtering (reduce false positives and false negatives). That's why we use **Send reported messages to** \> **Microsoft and my reporting mailbox** as the default.
-- Regardless of the **Send reported messages to** setting, metadata from the reported Teams message (for example, senders, recipients, reported by, and message details) is available on the **User reported** tab on the **Submissions** page.
+- Regardless of the **Send reported messages to** setting, metadata from the reported Teams message (for example, senders, recipients, reported by, and message details) is available on the **User reported** tab on the **Submissions** page.
 - Regardless of the **Send reported messages to** setting, the alert policy named **Teams message reported by user as a security risk** generates an alert when a user reports a message in Teams by default. For more information, see [Manage alerts](/microsoft-365/compliance/alert-policies#manage-alerts).
 
   To view the corresponding alert for a user reported message in Teams, go to the **User reported** tab on the **Submission** page, and then double-click the message to open the submission flyout. Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** and then select **View alert**.
