@@ -36,10 +36,8 @@ summary: |
 sections:
   - name: General
     questions:
-
       - question: Review event logs
         answer: |
-
           1. Open the Event viewer app by selecting the **Search** icon in the taskbar, and searching for *event viewer*.
 
              Information about Microsoft Defender Antivirus can be found under  **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender**.
@@ -50,7 +48,6 @@ sections:
 
       - question: Microsoft Defender Antivirus won't start
         answer: |
-         
           This issue can manifest in the form of  several different event IDs, all of which have the same underlying cause.
 
           ### Associated event IDs
