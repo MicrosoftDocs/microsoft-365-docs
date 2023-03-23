@@ -1,6 +1,6 @@
 ---
 title: Zero-hour auto purge in Microsoft Defender for Office 365
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
@@ -8,16 +8,16 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MOE150
   - MED150
   - MBS150
   - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
-ms.collection: 
+ms.collection:
   - m365-security
   - tier2
-ms.custom: 
+ms.custom:
   - seo-marvel-apr2020
 description: Zero-hour auto purge (ZAP) retroactively moves delivered messages in an Exchange Online mailbox to the Junk Email folder or quarantine that are found to be spam, phishing, or that contain malware after delivery.
 ms.subservice: mdo
@@ -42,13 +42,13 @@ ZAP doesn't work in standalone Exchange Online Protection (EOP) environments tha
 
 ## How ZAP works
 
-Spam and malware signatures are updated in the service real-time on a daily basis. However, users can still receive malicious messages for a variety of reasons, including if content is weaponized after being delivered to users. ZAP addresses this issue by continually monitoring updates to the spam and malware signatures in the service. ZAP can find and remove messages that are already in a user's mailbox.
+Spam and malware signatures are updated in the service real-time on a daily basis. However, users can still receive malicious messages for a variety of reasons, including if content is weaponized after being delivered to users. ZAP addresses this issue by continually monitoring updates to the spam and malware signatures in the service. ZAP can find and take automated actions on messages that are already in a user's mailbox up to 48 hours after delivery.
 
 The ZAP action is seamless for the user; they aren't notified if a message is detected and moved.
 
 [Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP. Similar to what happens in mail flow, this means that even if the service determines the delivered message needs ZAP, the message is not acted on because of the safe senders configuration. This is another reason to be careful about configuring messages to bypass filtering.
 
-Watch this short video to learn how ZAP in Microsoft Defender for Office 365 automatically detects and neutralizes threats in email. 
+Watch this short video to learn how ZAP in Microsoft Defender for Office 365 automatically detects and neutralizes threats in email.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGrLg]
 
 ### Zero-hour auto purge (ZAP) for malware

@@ -32,6 +32,8 @@ description: "Use either simplified view in the Microsoft 365 admin center to ma
 
 # Overview of the Microsoft 365 admin center
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 The Microsoft 365 admin center gives users a central location to take care of common admin tasks, such as: 
 
 - Manage users: [Add users and assign licenses at the same time](../add-users/add-users.md), [Delete or restore users](../add-users/delete-a-user.md), or [Reset a user's password](../add-users/reset-passwords.md).
@@ -49,7 +51,7 @@ The Microsoft 365 admin center gives users a central location to take care of co
 Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](/microsoft-365/admin/).
 
 |Menu|What it's for|
-|-----|-----|
+|---|---|
 |**Home**|This is the landing page in the admin center. You'll see where to manage users, billing, service health, and reports.|
 |**Users**|Create and manage users in your organization, like employees or students. You can also set their permission level or reset their passwords.|
 |**Groups**|Create and manage groups in your organization, such as a Microsoft 365 group, distribution group, security group, or shared mailbox. Learn how to [create](../create-groups/create-groups.md) and [manage](../create-groups/manage-groups.md) groups.|
@@ -59,8 +61,8 @@ Here are the features and settings you'll find in the left-hand navigation of th
 |**Settings**|Manage global settings for apps like email, sites, and the Office suite. Change your password policy and expiration date. Add and update domain names like contoso.com. Change your organization profile and release preferences. And choose whether partners can access your admin center.|
 |**Setup**|Manage existing domains, turn on and manage multi-factor authentication, manage admin access, migrate user mailboxes to Office 365, manage feature updates, and help users install their Office apps.|
 |**Reports**|See at a glance how your organization is using Microsoft 365 with detailed reports on email use, Office activations, and more. Learn how to use the new [activity reports](../activity-reports/activity-reports.md).|
-|**Health**|View health at a glance. You can also check out more details and the health history. See [How to check service health](../../enterprise/view-service-health.md) and [How to check Windows release health](/windows/deployment/update/check-release-health) for more information. <p>Use Message center to keep track of upcoming changes to features and services. We post announcements there with information that helps you plan for change and understand how it may affect users. Get more details in [Message center](../manage/message-center.md).|
-|**Admin centers**|Open separate admin centers for Exchange, Skype for Business, SharePoint, Yammer, and Azure AD. Each admin center includes all available settings for that service.  <p> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence.  <p> Learn more about the [Exchange admin center](/exchange/exchange-admin-center) and [SharePoint Admin Center](/sharepoint/sharepoint-online). <p> **Note:** The admin centers available to you depend on your plan and region.||
+|**Health**|View health at a glance. You can also check out more details and the health history. See [How to check service health](../../enterprise/view-service-health.md) and [How to check Windows release health](/windows/deployment/update/check-release-health) for more information. <p> Use Message center to keep track of upcoming changes to features and services. We post announcements there with information that helps you plan for change and understand how it may affect users. Get more details in [Message center](../manage/message-center.md).|
+|**Admin centers**|Open separate admin centers for Exchange, Skype for Business, SharePoint, Yammer, and Azure AD. Each admin center includes all available settings for that service. <p> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence. <p> Learn more about the [Exchange admin center](/exchange/exchange-admin-center) and [SharePoint Admin Center](/sharepoint/sharepoint-online). <p> **Note:** The admin centers available to you depend on your plan and region.|
 
 ## Two dashboard views
 
@@ -182,49 +184,49 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">
 
 The Microsoft 365 admin center is fully localized in 40 languages.
 
-|Language |Locale |
-|---------|---------|
-|Arabic | ar |
-|Bulgarian | bg |
-|Catalan | ca |
-|Czech | cs |
-|Danish | da |
-|German | de |
-|Greek | el |
-|Spanish | es |
-|English | en |
-|Estonian | et |
-|Basque | eu |
-|Finnish | fi |
-|French | fr |
-|Galician | gl |
-|Hebrew | he |
-|Croatian | hr |
-|Hungarian | hu |
-|Indonesian  | id |
-|Italian | it |
-|Japanese | ja |
-|Korean | ko |
-|Lithuanian | lt |
-|Latvian | lv |
-|Dutch | nl |
-|Norwegian | no |
-|Polish | pl |
-|Portuguese (Brazil) | pt |
-|Portuguese (Portugal) | pt-pt |
-|Romanian | ro |
-|Russian | ru |
-|Slovak | sk |
-|Slovenian | sl |
-|Serbian (Cyrillic)  | sr-cyrl |
-|Serbian Latin | sr |
-|Swedish | sv |
-|Thai | th |
-|Turkish | tr |
-|Ukrainian | uk |
-|Vietnamese | vi |
-|Chinese Simplified | zh-hans |
-|Chinese Traditional | zh-hant |
+|Language|Locale|
+|---|---|
+|Arabic|ar|
+|Bulgarian|bg|
+|Catalan|ca|
+|Czech|cs|
+|Danish|da|
+|German|de|
+|Greek|el|
+|Spanish|es|
+|English|en|
+|Estonian|et|
+|Basque|eu|
+|Finnish|fi|
+|French|fr|
+|Galician|gl|
+|Hebrew|he|
+|Croatian|hr|
+|Hungarian|hu|
+|Indonesian|id|
+|Italian|it|
+|Japanese|ja|
+|Korean|ko|
+|Lithuanian|lt|
+|Latvian|lv|
+|Dutch|nl|
+|Norwegian|no|
+|Polish|pl|
+|Portuguese (Brazil)|pt|
+|Portuguese (Portugal)|pt-pt|
+|Romanian|ro|
+|Russian|ru|
+|Slovak|sk|
+|Slovenian|sl|
+|Serbian (Cyrillic)|sr-cyrl|
+|Serbian Latin|sr|
+|Swedish|sv|
+|Thai|th|
+|Turkish|tr|
+|Ukrainian|uk|
+|Vietnamese|vi|
+|Chinese Simplified|zh-hans|
+|Chinese Traditional|zh-hant|
 
 ## Related content
 

@@ -158,9 +158,9 @@ There are three procedures.
 
 1. Open [Endpoint DLP settings](https://compliance.microsoft.com/datalossprevention?viewid=globalsettings)
 
-1. Expand **Unallowed apps**.
+1. Expand **Restricted apps and app groups**.
 
-1. Choose **Add or edit unallowed apps** and add *OneDrive* as a display name and the executable name *onedrive.exe*  to disallow onedrive.exe from accessing items the **Highly Confidential** label.
+1. Choose **Add restricted app group** under **Restricted app groups**, put group name *Cloud Sync apps*,  and add *OneDrive* as a display name and the executable name *onedrive.exe*  to disallow onedrive.exe from accessing items the **Highly Confidential** label.
 
 1. Select **Auto-quarantine** and **Save**.
 
@@ -208,7 +208,7 @@ There are three procedures.
 1. Create a rule with these values:
     1. **Name** > *Scenario 4 Auto-quarantine*.
     1. **Conditions** > **Content contains** > **Sensitivity labels** > **Highly Confidential**.
-    1.  **Actions** > **Audit or restrict activities on Windows devices** > **Access by unallowed apps** > **Block**. For the purposes of this scenario, clear all the other activities.
+    1.  **Actions** > **Audit or restrict activities on Windows devices** > **File activities for apps in restricted app groups** > **Add restricted app group**, choose created *group Cloud Sync apps* > **Apply a restriction to all activity** > **Block**. For the purposes of this scenario, clear all the other activities.
     1. **User notifications** > **On**.
     1. **Endpoint devices** > Choose **Show users a policy tip notification when an activity** if not already enabled.
     

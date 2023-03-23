@@ -99,7 +99,7 @@ Spoof intelligence can rescue email from domains without proper email authentica
 - Message sources that have the highest number of messages.
 - Message sources that have the highest impact on your organization.
 
-Spoof intelligence will eventually tune itself after you configure user reported message settings, so there is no need for perfection.
+Spoof intelligence will eventually tune itself after you configure user reported settings, so there is no need for perfection.
 
 ## Step 4: Tune impersonation protection and mailbox intelligence
 

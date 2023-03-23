@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date:
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -23,7 +23,7 @@ description: Learn about Microsoft Purview adaptive scopes for policies.
 
 # Adaptive scopes
 
-When you create a communications compliance policy or a policy for retention, you can create or add an adaptive scope for your policy. A single policy can have one or many adaptive scopes.
+When you create a [communication compliance policy](/microsoft-365/compliance/communication-compliance-policies) or a policy for retention, you can create or add an adaptive scope for your policy. A single policy can have one or many adaptive scopes.
 
 - An adaptive scope uses a query that you specify, so you can define the membership of users or groups included in that query. These dynamic queries run daily against the attributes or properties that you specify for the selected scope. You can use one or more adaptive scopes with a single policy.
 - For example, you can assign different policy settings to users according to their department by using existing Azure AD attributes without the administrative overhead of creating and maintaining groups for this purpose.
@@ -41,8 +41,6 @@ For specific advantages of using adaptive scopes specific to policies for retent
 
 For configuration information, see [Configuring adaptive scopes](#configure-adaptive-scopes).
 
-To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
-
 ### Maximums for adaptive policy scopes
 
 There's no limit to the number of adaptive policy scopes that you can add to a policy, but there are some maximum limits for the query that defines each adaptive scope:
@@ -59,12 +57,13 @@ When you choose to use adaptive scopes, you're prompted to select what type of a
 
 | Adaptive scope type | Attributes or properties supported include |
 |:--------------------|:-------------------------------------------|
-|**Users** - applies to:  <br/> - Exchange email <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages (<br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
-|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages (standard and shared) <br/> - Yammer community messages <br> |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
+|**Users** - applies to:  <br/> - Exchange mailboxes <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
+|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Group mailboxes & sites <br/> - Teams channel messages (standard and shared) <br/> - Yammer community messages <br> |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
+
 
 > [!NOTE]
-> For communications compliance policies, SharePoint sites and OneDrive accounts are not suported. Also, excluded users and Microsoft 365 groups are supported.
+> For communication compliance policies, SharePoint sites and OneDrive accounts are not supported. Excluded users and Microsoft 365 groups are supported.
 
 The property names for sites are based on SharePoint site managed properties. For information about the custom attributes, see [Using Custom SharePoint Site Properties to Apply Microsoft 365 Retention with Adaptive Policy Scopes](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
@@ -75,20 +74,25 @@ The attribute names for users and groups are based on [(https://learn.microsoft.
 
 The attributes and properties listed in the table can be easily specified when you configure an adaptive scope by using the simple query builder. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
 
-> [!TIP]
-> For more information about using the advanced query builder, see the following webinars: 
-> - [Building Advanced Queries for Users and Groups with Adaptive Policy Scopes](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
-> - [Building Advanced Queries for SharePoint Sites with Adaptive Policy Scopes](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
-
 To configure an adaptive scope:
 
 Before you configure your adaptive scope, use the previous section to identify what type of scope to create and what attributes and values you'll use. You might need to work with other administrators to confirm this information. 
 
+You'll need to assign the correct role groups to admins to create an adaptive scope. Any role group with the *Scope Manager* role is allowed to create an adaptive scopes. The *Scope Manger* role is included in the following [built-in role groups](/microsoft-365/security/office-365-security/scc-permissions):
+
+- Compliance Administrator
+- Compliance Data Administrator
+- eDiscovery Manager
+- Organization Management
+- Records Management
+- Communication Compliance
+- Communication Compliance Admins
+
 Specifically for SharePoint sites, there might be additional SharePoint configuration needed if you plan to use [custom site properties](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
 1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com/) using credentials for an admin account in your Microsoft 365 organization.
-2. In the compliance portal, select **Data lifecycle management** or **Communication compliance**.
-3. Select the **Adaptive scopes** tab, and then **+ Create scope**.
+2. In the compliance portal, select **Roles and Scopes**.
+3. Select **Adaptive scopes**, and then **+ Create scope**.
 4. Follow the prompts in the configuration to first select the type of scope, and then select the attributes or properties you want to use to build the dynamic membership, and type in the attribute or property values.
 
     For example, to configure an adaptive scope that will be used to identify users in Europe, first select **Users** as the scope type, and then select the **Country or region** attribute, and type in **Europe**:
