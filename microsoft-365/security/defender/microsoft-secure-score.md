@@ -49,7 +49,7 @@ Organizations gain access to robust visualizations of metrics and trends, integr
 
 > [!NOTE]
 > Currently, the Azure Active Directory related Microsoft Secure Score recommendations are not available for customer tenants registered in the following Azure Active Directory regions:
-Japan, Australia, New Zealand, Fiji, Canada, United Kingdom, South Korea, France, United Arab Emirates, South America, Switzerland, Liechtenstein, Norway, Germany, Brazil, Sweden and Qatar.
+Japan, Australia, New Zealand, Fiji, Canada, United Kingdom, South Korea, France, United Arab Emirates, South America, Switzerland, Liechtenstein, Norway, Germany, Brazil, Sweden, and Qatar.
 
 ## How it works
 
