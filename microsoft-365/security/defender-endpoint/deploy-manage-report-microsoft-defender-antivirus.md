@@ -63,7 +63,7 @@ For reporting, you can choose from several options:
 
 - [Use Intune to view device details](/mem/intune/remote-actions/device-inventory).
 
-- Use the default [Configuration Manager Monitoring workspace](/mem/configmgr/apps/deploy-use/monitor-applications-from-the-console)
+- Use the default [Configuration Manager Monitoring workspace](/mem/configmgr/apps/deploy-use/monitor-applications-from-the-console).
 
 - [Create email alerts](/configmgr/protect/deploy-use/endpoint-configure-alerts).
 
@@ -76,6 +76,15 @@ You can use PowerShell with Group Policy or Configuration Manager to manage Micr
 - Use the appropriate [Get- cmdlets available in the Defender module](/powershell/module/defender).
 
 - Use the [Set-MpPreference](/powershell/module/defender/set-mppreference) and [Update-MpSignature](/powershell/module/defender/update-mpsignature) cmdlets that are available in the Defender module.
+
+For reporting, you can choose from the following options:
+
+- [Use the Microsoft 365 Defender portal](../defender/microsoft-365-defender-portal.md), which includes a [device inventory list](/microsoft-365/security/defender-endpoint/machines-view-overview). To access the device inventory, in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)), go to **Assets** > **Devices**. The device inventory list displays onboarded devices along with their health state and risk level.
+
+- [Use Intune to view device details](/mem/intune/remote-actions/device-inventory).
+
+- Use the default [Configuration Manager Monitoring workspace](/mem/configmgr/apps/deploy-use/monitor-applications-from-the-console).
+
 
 ## Group Policy and Azure Active Directory
 
