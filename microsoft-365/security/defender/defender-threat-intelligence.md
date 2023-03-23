@@ -24,6 +24,11 @@ ms.date: 03/28/2021
 
 # Microsoft Defender Threat Intelligence in Microsoft 365 Defender
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+**Applies to:**
+
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 Subscribers to Microsoft Defender Threat Intelligence (Defender TI) can now access threat intelligence from inside the Microsoft 365 Defender portal.  
 
 Microsoft Defender TI helps streamline security analyst triage, incident response, threat hunting, and vulnerability management workflows. Defender TI aggregates and enriches critical threat information in an easy to use interface
