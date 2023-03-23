@@ -66,7 +66,7 @@ During the preview, this feature is available for free. When the preview is over
 2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
 3. Select the locations where you wish to scan images. Available locations are:
     - Endpoint
-    - Windows devices,
+    - Windows devices
     - Exchange Online
     - OneDrive for Business
     - SharePoint Online
@@ -77,6 +77,6 @@ Once the OCR settings are configured, your existing data loss protection (DLP), 
 
 ## See also
 
-- [Learn about data loss prevention](/compliance/dlp-learn-about-dlp)
-- [Plan for data loss prevention](/compliance/dlp-overview-plan-for-dlp)
-- [Design a data loss prevention policy](/compliance/dlp-policy-design)
+- [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
+- [Plan for data loss prevention](/microsoft-365/compliance/dlp-overview-plan-for-dlp)
+- [Design a data loss prevention policy](/microsoft-365/compliance/dlp-policy-design)
