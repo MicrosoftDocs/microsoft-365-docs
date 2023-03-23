@@ -20,7 +20,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.date: 2/23/2023
+ms.date: 3/23/2023
 ---
 # Microsoft Teams SMS notifications usage report
 
@@ -37,11 +37,10 @@ To access the report, you must be a Global admin, Teams admin, Global reader, or
 1. In the left navigation of the Teams admin center, choose **Analytics & reports** > **Usage reports**. On the **View reports** tab, under **Report**, select **SMS notifications usage**.
 2. Under **Date range**, select a date range of 7 days, 30 days, or 90 days. Then, choose **Run report**.
 
-    The report contains the following tabs.
+    The report contains the following information:
     
     |Tab |Description  |
     |---------|---------|
-    |**[Delivery](#delivery)**|Shows the total number of SMS notifications, with a breakdown of the number of SMS notifications in which delivery was successful, delivery failed, and send failed.|
     |**[Distribution](#distribution)** |Shows a breakdown of the number of SMS notifications sent in Bookings appointments and in Teams Electronic Health Record (EHR)-integrated appointments.|
 
 ## Interpret the report
