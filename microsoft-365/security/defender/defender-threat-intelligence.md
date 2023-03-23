@@ -31,15 +31,15 @@ ms.date: 03/28/2021
 
 Subscribers to Microsoft Defender Threat Intelligence (Defender TI) can now access threat intelligence from inside the Microsoft 365 Defender portal.  
 
-Microsoft Defender TI helps streamline security analyst triage, incident response, threat hunting, and vulnerability management workflows. Defender TI aggregates and enriches critical threat information in an easy to use interface
+Microsoft Defender TI helps streamline security analyst triage, incident response, threat hunting, and vulnerability management workflows. Defender TI aggregates and enriches critical threat information in an easy-to-use interface.
 
 This change introduces a new navigation menu within the Microsoft 365 Defender portal named **Threat Intelligence**.
 
 Under **Threat Intelligence** is the existing node for the **Threat Analytics** feature and two new additions:
 
 - **Intel Profiles** - a new feature that introduces curated content organized by threat actors, their tools and known vulnerabilities
-- **Intel Explorer** - is the existing Defender TI content, search and investigation experience
+- **Intel Explorer** - the existing Defender TI content, search and investigation experience
 
 The experience between the existing Defender TI standalone portal differs slightly from the version in Microsoft 365 Defender. Though most of the functionality is available, at this time, the Defender TI experience in Microsoft 365 Defender doesn't include the ability to apply custom tags or project capabilities.
 
-[Learn more about Microsoft Defender Threat Intelligence](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti)
+[Learn more about Microsoft Defender Threat Intelligence](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti).
