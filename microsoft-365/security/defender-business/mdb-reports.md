@@ -95,7 +95,10 @@ To access this report, in the navigation pane, go to **Assets** > **Devices**.
 
 :::image type="content" source="media/mdb-vulnerable-devices.png" alt-text="Screenshot of the vulnerable devices report in Defender for Business." lightbox="media/mdb-vulnerable-devices.png":::
 
-The vulnerable devices report provides information about devices and trends. Use the **Trends** column to view information about devices that had alerts over the last 30 days. Use the **Status** column to view current snapshot information about devices that have alerts. 
+The vulnerable devices report provides information about devices and trends. 
+
+- Use the **Trends** column to view information about devices that had alerts over the last 30 days. 
+- Use the **Status** column to view current snapshot information about devices that have alerts. 
 
 To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Vulnerable devices**.
 
