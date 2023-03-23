@@ -96,6 +96,8 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 
 ## Web protection
 
+:::image type="content" source="media/mdb-web-protection-report.png" alt-text="Screenshot of the web protection report in Defender for Business." lightbox="media/mdb-web-protection-report.png":::
+
 The web protection report shows attempts to access phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that are explicitly blocked. Categories of blocked sites include adult content, leisure sites, legal liability sites, and more. 
 
 To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Web protection**.
