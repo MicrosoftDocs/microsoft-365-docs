@@ -66,7 +66,9 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 
 :::image type="content" source="media/mdb-incidents.png" alt-text="Screenshot of the incidents view in Defender for Business.":::
 
-You can use the **Incidents** list to view information about alerts. In the navigation pane, choose **Incidents** to view and manage current incidents. 
+You can use the **Incidents** list to view information about alerts. 
+
+To access this report, in the navigation pane, choose **Incidents** to view and manage current incidents. 
 
 To learn more, see [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md). 
 
@@ -82,7 +84,9 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 
 :::image type="content" source="media/mdb-device-inventory.png" alt-text="Screenshot of the device inventory report in Defender for Business." lightbox="../../media/defender-business/mdb-device-inventory.png":::
 
-You can use the **Devices** list to view information about your company's devices. In the navigation pane, go to **Assets** > **Devices**. 
+You can use the **Devices** list to view information about your company's devices. 
+
+To access this report, in the navigation pane, go to **Assets** > **Devices**. 
 
 To learn more, see [Manage devices in Defender for Business](mdb-manage-devices.md). 
 
