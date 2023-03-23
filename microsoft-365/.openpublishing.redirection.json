@@ -86,6 +86,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus-when-migrating.md",
+            "redirect_url": "/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus-when-migrating",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "microsoft-365/admin/security-and-compliance/secure-your-business-data.md",
             "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
             "redirect_document_id": true
