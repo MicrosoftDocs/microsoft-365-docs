@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
+ms.reviewer: mavel
 ---
 
 # What's new in Microsoft Defender for Endpoint on Mac
@@ -856,4 +857,5 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/><br/>
 </details>
+
 
