@@ -96,7 +96,7 @@ Although renaming and moving files after an instance of flow is triggered are an
 Power Automate is a workflow service that automates actions across applications and services. Specific to running a Power Automate flow at the end of the retention period:
 
 - You must have a [Power Automate plan](/power-platform/admin/power-automate-licensing/types) that includes premium connectors, separate from your Microsoft 365 compliance plan. 
-- The Power Automate flow must be an automated cloud flow that is created from blank, and configured to use the trigger **When the retention period expires**. This dependency doesn't apply for the action **Apply a retention label on the item**.
+- The Power Automate flow must be an automated cloud flow that is created from blank, and configured to use the trigger **When an item reaches the end of its retention period**. 
 
 For more information about how to use and configure the dependent automated cloud flows, see the [Microsoft Power Automate Documentation](/power-automate).
 
