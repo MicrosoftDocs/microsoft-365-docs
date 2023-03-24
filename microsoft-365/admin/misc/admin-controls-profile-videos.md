@@ -1,7 +1,5 @@
 ---
 title: "Turn the profile video feature on or off for all users in your Microsoft 365 organization"
-f1.keywords:
-- NOCSH
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -78,7 +76,7 @@ In the request body, populate the value for **isEnabledInOrganization** to eithe
 
 * **Where are profile videos stored?**
 
-  Profile videos are stored in a user’s OneDrive for Business, in the **Apps\Microsoft People Cards Service\Live Persona Card** folder.
+  Profile videos are stored in a user’s OneDrive for Business, in the **Apps\Microsoft People Cards Service\Live Persona Card** folder. 
 
 * **Can users control who can see their profile video?**
 
@@ -102,4 +100,4 @@ In the request body, populate the value for **isEnabledInOrganization** to eithe
 
 * **Can deleted profile videos be recovered?**
 
-  No, if a user deletes their profile video it can't be recovered.
+  No, if a user deletes their profile video it can't be recovered. 
