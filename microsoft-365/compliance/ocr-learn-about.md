@@ -23,16 +23,13 @@ description: How to implement this preview of optical character recognition (OCR
 
 Optical character recognition (OCR) scanning enables Microsoft Purview to scan content in images for sensitive information. An optional feature, OCR scanning is first enabled at the tenant level. Once enabled, you select the locations where you want to scan images. Image scanning is available for Exchange, SharePoint, OneDrive, Teams, and Windows devices. Once the OCR settings are configured, your existing policies for data loss prevention (DLP), records management, and insider risk management are applied to images as well as text-based content. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview scans for credit card numbers in both text and images at all of the chosen locations.
 
-> [!NOTE]
-> Scanning images embedded in Microsoft Office documents is not supported.
-
 ## Workflow at a glance
 
 
 | Phase | What's needed|
 |-------|--------------|
 |**Phase 1:** Create Azure subscription if needed | If your organization doesn't already have an Azure pay-as-you-go subscription for your tenant, your Global admin needs to start by creating an [Azure account](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions). |
-|**Phase 2:** Set up pay-as-you-go billing to enable OCR scans | Your Global or SharePoint admin must follow the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](../syntex/syntex-azure-billing.md) to add a subscription for OCR scans. |
+|**Phase 2:** Set up pay-as-you-go billing to enable OCR. | Your Global or SharePoint admin must follow the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/syntex/syntex-azure-billing.md) to add a subscription for OCR. |
 |**Phase 3:** Configure OCR scanning settings | The Compliance admin for your organization configures the OCR settings for your tenant.|
 
 
@@ -45,7 +42,7 @@ To use OCR scanning, your organization's Global admin needs to verify that an Az
 
 When you enable OCR, all sensitive information types and trainable classifiers can detect characters that are in images.
 
-Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/syntex/syntex-azure-billing.md) to add a subscription for OCR scans.
+Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/syntex/syntex-azure-billing.md) to add a subscription for OCR.
 
 > [!NOTE]
 > When you go to the Microsoft Syntex billing page to sign up for your OCR subscription, you do **not** need to also sign up for Microsoft Syntex.
@@ -54,16 +51,16 @@ Because it's an optional feature, your Global admin must set up pay-as-you-go bi
 
 1. In the Microsoft Purview compliance portal, go to **Settings**.
 2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
-3. Select the locations where you wish to scan images. Then, for each location and solution, define the scope (users/groups/sites) for the OCR scans. Supported locations and solutions are listed below.
+3. Select the locations where you wish to scan images. Then, for each location and solution, define the scope (users/groups/sites) for the OCR. Supported locations and solutions are listed below.
 
 > [!NOTE]
 > For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
 
 | Location | Supported Solutions | Policies Applied| Notes |
 |--------------|----------|-------------------|---------------| 
-| Exchange | Data loss prevention <br> <br> Information protection <br> <br> Records management  | **DLP policies** <br> <br>**Information protection policies:** *Auto-labeling policy:* <br> * OCR scans detect keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br> * Outgoing emails are labeled for sensitive information types and trainable classifiers. <br><br> **Records management policies:** *Auto-apply retention label policy:* <br> OCR scans detect keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br> * Retention labels are applied to images embedded in and/or attached to outgoing emails. |  Policies are only applied to outgoing emails. | 
+| Exchange | Data loss prevention <br> <br> Information protection <br> <br> Records management  | **DLP policies** <br> <br>**Information protection policies:** *Auto-labeling policy:* <br> * OCR detects keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br> * Outgoing emails are labeled for sensitive information types and trainable classifiers. <br><br> **Records management policies:** *Auto-apply retention label policy:* <br> OCR detects keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br> * Retention labels are applied to images embedded in and/or attached to outgoing emails. |  Policies are only applied to outgoing emails. | 
 | Sharepoint sites | Same as Exchange | Same as Exchange | | 
-| OneDrive accounts | Data loss prevention <br> <br> Information protection <br> <br> Records management | **DLP policies** <br> <br>**Information protection policies:** *Auto-labeling policy:* <br> OCR scans detect keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br><br> **Records management policies:** *Auto-apply retention label policy:* <br> OCR scans detect keywords as well as content caught by sensitive information classifiers and trainable classifiers. |  |
+| OneDrive accounts | Data loss prevention <br> <br> Information protection <br> <br> Records management | **DLP policies** <br> <br>**Information protection policies:** *Auto-labeling policy:* <br> OCR detects keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br><br> **Records management policies:** *Auto-apply retention label policy:* <br> OCR detects keywords as well as content caught by sensitive information classifiers and trainable classifiers. |  |
 | Teams chat and channel messages | Data loss prevention <br> <br> Insider risk management  |**DLP policies** <br><br> **IRM policies** consider sensitive information types and trainable classifiers present in images for risk scoring. |  |
 | Devices | Data loss prevention | **DLP Policies** | | 
 
@@ -81,7 +78,7 @@ This functionality supports scanning images in the following file types, with th
 >
 > - Only images with machine-typed text are supported.
 > - Only images uploaded after OCR has been enabled are scanned.
-> - OCR scanning of images embedded in Microsoft Office documents isn't supported.
+> - Only stand-alone images are scanned.
 > - SharePoint and OneDrive support only the following file types: JPEG, JPG, PNG, and BMP.
 > - Data loss prevention policy tips are not supported for images in Exchange.
 > - Scanning images in compressed/archive files isn't supported.
@@ -93,8 +90,8 @@ OCR scanning supports more than [150 languages](/azure.microsoft.com/cognitive-s
 
 ## Summary
 - You can subscribe to OCR scanning without subscribing to Microsoft Syntex.
-- Configuring OCR scans occurs at the tenant level, so once OCR scans are configured, they're available to the entire Microsoft Purview stack.
-- You don't need to create separate data classifiers for OCR scans. Once OCR is configured, existing [sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types), [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types), [trainable classifiers](classifier-learn-about.md#learn-about-trainable-classifiers), and [fingerprint SITs](document-fingerprinting.md#document-fingerprinting) scan images as well as documents and emails.
+- Configuring OCR occurs at the tenant level, so once OCR are configured, they're available to the entire Microsoft Purview stack.
+- You don't need to create separate data classifiers for OCR. Once OCR is configured, existing [sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types), [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types), [trainable classifiers](classifier-learn-about.md#learn-about-trainable-classifiers), and [fingerprint SITs](document-fingerprinting.md#document-fingerprinting) scan images as well as documents and emails.
 
 ## See also
 
