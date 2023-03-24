@@ -129,9 +129,9 @@ To view and configure the login page that's used in **Credential Harvest** or **
 ### Login page
 
 > [!NOTE]
-> The **Login page** tab is available in the details flyout of a payload that you selected on **Select payload and login page** only in **Credential Harvest** or **Link in attachment** payloads.
+> The **Login page** tab is available in the details flyout of a payload that you selected on the **Select payload and login page** page only in **Credential Harvest** or **Link in attachment** payloads.
 
-On **Select payload and login page**, select the payload from the list by clicking anywhere in the row other than the check box to open the details flyout for the payload.
+On the **Select payload and login page** page, select the payload from the list by clicking anywhere in the row other than the check box to open the details flyout for the payload.
 
 In the details flyout of the payload, the **Login page** tab shows the login page that's currently selected for the payload.
 
@@ -186,11 +186,14 @@ On the **Configure OAuth payload** page, configure the following settings:
 
 ## Target users
 
-On the **Target users** page, select who will receive the simulation. Configure one of the following settings:
+On the **Target users** page, select who will receive the simulation. Use the following options to select users:
 
-- **Include all users in your organization**: The affected users are show in lists of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** icon on the page to find affected users.
+- **Include all users in your organization**: The unmodifiable list of users is show in groups of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** icon on the page to find specific users.
 
-- **Include only specific users and groups**: At first, the list of affected users is blank (no users or groups are shown on the **Targeted users** page). To add users or groups to the simulation, choose one of the following options:
+  > [!TIP]
+  > Although you can't remove users from the list on this page, you can use the next **Exclude users** page to exclude specific users.
+
+- **Include only specific users and groups**: At first, no users or groups are shown on the **Targeted users** page. To add users or groups to the simulation, choose one of the following options:
 
   - ![Add users icon.](../../media/m365-cc-sc-create-icon.png) **Add users**: In the **Add users** flyout that opens, you find and select users and groups to receive the simulation. **Dynamic distribution groups are not supported**. The following search tools are available:
 
@@ -256,28 +259,40 @@ On the **Target users** page, select who will receive the simulation. Configure 
 
   - ![Import icon.](../../media/m365-cc-sc-create-icon.png) **Import**: In the dialog that opens, specify a CSV file that contains one email address per line.
 
-  After you find a select the CSV file, the list of users are imported and shown on the **Targeted users** page.
+    After you find a select the CSV file, the users are imported and shown on the **Targeted users** page.
 
-  On the main **Target users** page, you can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find affected users. You can also click ![Delete users icon.](../../media/m365-cc-sc-search-icon.png) **Delete** and then **Confirm** in the confirmation dialog to remove specific users.
+  On the main **Target users** page, you can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find selected users. You can also click ![Delete users icon.](../../media/m365-cc-sc-search-icon.png) **Delete** and then **Confirm** in the confirmation dialog to remove specific users.
 
   To add more users and groups, click ![Add users icon.](../../media/m365-cc-sc-create-icon.png) **Add users** or ![Import icon.](../../media/m365-cc-sc-create-icon.png) **Import** on the **Target users** page and repeat the previous steps.
 
 When you're finished on the **Target users** page, click **Next**.
 
+## Exclude users
+
+On the **Exclude users** page, you can select **Exclude some of the targeted users from this simulation** to exclude users that would otherwise be included based on your previous selections on the **Target users** page.
+
+The methods to find and select users are the same as described in the previous section for **Include only specific users and groups**.
+
+When you're finished on the **Exclude users** page, click **Next**.
+
 ## Assign training
 
-On the **Assign training** page, you can assign trainings for the simulation. We recommend that you assign training for each simulation, as employees who go through training are less susceptible to similar attacks. The following settings are available:
+On the **Assign training** page, you can assign trainings for the simulation. We recommend that you assign training for each simulation, as employees who go through training are less susceptible to similar attacks.
 
-- **Select training content preference**: Choose one of the following options:
-  - **Microsoft training experience**: This is the default value that has the following associated options to configure:
+Use the following options on the page to assign trainings as part of the simulation:
+
+- **Select training content preference**: Choose one of the following options in the drop down list:
+
+  - **Microsoft training experience (Recommended)**: This is the default value that has the following associated options to configure on the page:
     - Select one of the following options:
-      - **Assign training for me**: This is the default and recommended value. We assign training based on a user's previous simulation and training results, and you can review the selections in the next steps of the wizard.
-      - **Select training courses and modules myself**: If you select this value, you'll still be able to see the recommended content as well as all available courses and modules in the next step of the wizard.
+      - **Assign training for me (Recommended)**: This is the default value. We assign training based on a user's previous simulation and training results.
+      - **Select training courses and modules myself**: If you select this value, the next step in the wizard will be **Training assignment** where you find and select trainings. You'll see all available trainings and the recommended trainings on that page.
     - **Due date**: Choose one of the following values:
       - **30 days after simulation ends**: This is the default value.
       - **15 days after simulation ends**
       - **7 days after simulation ends**
-  - **Redirect to a custom URL**: This value has the following associated options to configure:
+
+  - **Redirect to a custom URL**: This value has the following associated options to configure on the page:
     - **Custom training URL** (required)
     - **Custom training name** (required)
     - **Custom training description**
@@ -286,79 +301,122 @@ On the **Assign training** page, you can assign trainings for the simulation. We
       - **30 days after simulation ends**: This is the default value.
       - **15 days after simulation ends**
       - **7 days after simulation ends**
-  - **No training**: If you select this value, the only option on the page is the **Next** button that takes you to the [**Landing page**](#landing-page) page.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="The option to add the recommended training on the Training assignment page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
+  - **No training**: If you select this value, the only option on the page is the **Next** button.
+
+When you're finished on the **Assign training** page, click **Next**.
 
 ### Training assignment
 
 > [!NOTE]
-> The **Training assignment** page is available only if you selected **Microsoft training experience** \> **Select training courses and modules myself** on the previous page.
+> This page is available only if you selected **Microsoft training experience (Recommended)** \> **Select training courses and modules myself** on the previous **Assign training** page.
 
 On the **Training assignment** page, select the trainings that you want to add to the simulation by clicking ![Add trainings icon.](../../media/m365-cc-sc-create-icon.png) **Add trainings**.
 
-On the **Add training** flyout that appears, you can select the trainings to use on the following tabs that are available:
+On the **Add training** flyout that opens, use the following tabs to select trainings to include in the simulation:
 
-- **Recommended** tab: Shows the recommended built-in trainings based on the simulation configuration. These are the same trainings that would have been assigned if you selected **Assign training for me** on the previous page.
+- **Recommended** tab: Shows the recommended built-in trainings based on the simulation configuration. These are the same trainings that would have been assigned if you selected **Assign training for me (Recommended)** on the previous page.
+
 - **All trainings** tab: Shows all built-in trainings that are available.
 
-  The following information is shown for each training:
+On either tab, the following information is shown for each training:
 
-  - **Training name**
-  - **Source**: The value is **Global**.
-  - **Duration (mins)**
-  - **Preview**: Click the **Preview** button to see the training.
+- **Training name**
+- **Source**: The value is **Global**.
+- **Duration (mins)**
+- **Preview**: Click the **Preview** button to see the training.
 
-  In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, you can type part of the training name and press Enter to filter the results on the current tab.
+On either tab, you can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find trainings. Type part of the training name and press the ENTER key to filter the results.
 
-  Select all trainings that you want to include from the current tab, and then click **Add**.
+On either tab, select one or more trainings by clicking in the blank area next to the **Training name** column. When you're finished, click **Add**.
 
-Back on the main **Training assignment** page, the trainings that you selected are shown. The following information is shown for each training:
+Back on the **Training assignment** page, the selected trainings are now listed. The following information is shown for each training:
 
 - **Training name**
 - **Source**
 - **Duration (mins)**
-
-For each training in the list, you need to select who gets the training by selecting values in the **Assign to** column:
-
-- **All users**
-
-  or one or both of the following values:
-
-- **Clicked payload**
-- **Compromised**
-
-If you don't want to use a training that's shown, click ![Delete training icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+- **Assign to**: For each training in the list, you need to select who gets the training by selecting from the following values:
+  - **All users**
+  - One or both of the values **Clicked payload** or **Compromised**.
+- **Delete**: Click ![Delete training icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** to remove the training from the simulation.
 
 :::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="The Training assignment page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
-When you're finished, click **Next**.
+When you're finished on the **Training assignment** page, click **Next**.
 
-### Landing page
+### Select landing page
 
-On the **Landing page** page, you configure the web page that users are taken to if they open the payload in the simulation.
+On the **Selecting phish landing page** page, you configure the web page that users are taken to if they open the payload in the simulation.
 
-Microsoft-curated landing pages are available in 12 languages: Chinese (Simplified), Chinese (Traditional), English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish, and Dutch.
+Select one of the following options:
 
-- **Select landing page preference**: The available values are:
-  - **Use Microsoft default landing page**: This is the default value that has the following associated options to configure:
-    - **Select landing page layout**: Select one of the available templates.
-    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, click **Remove**.
-    - **Add payload indicators to email**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
+- **Use landing pages from library**: The following options are available:
+  - **Payload indicators**: Select **Add payload indicators to email** to help users learn how do identify phishing email.
+    - This setting is not available if you selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
+    - For landing pages that you create on the **Tenant landing pages** tab, this setting is meaningful only if you use the **Dynamic tag** named **Insert Payload content** in the landing page content as described in the [Create a landing page](#create-a-landing-page) section.
+  - **Edit layout** section:
+    - **Add logo**: Click **Browse logo image** to find and select a .png, .jpeg, or .gif file. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, click **Remove uploaded logo image**.
+    - **Select default language**: This setting is required. Select one of the following values: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
 
-    You can preview the results by clicking the **Open preview panel** button at the bottom of the page.
+  The remainder of the page has two tabs where you select the landing page to use:
 
-  - **Use a custom URL**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
+  - **Global landing pages** tab: Contains the built-in landing pages.
+  - **Tenant landing pages** tab: Contains any custom landing pages that you've created. To create a new landing page, click **Create new**. The details are explained in the next **Create a landing page** section.
 
-    If you select **Use a custom URL**, you need to add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the page.
+  On both tabs, the following information is shown for each landing page:
 
-  - **Create your own landing page**: This value has the following associated options to configure:
-    - **Add payload indicators to email**:This setting is available to select only if both of the following statements are true:
-      - You selected **Credential harvest**, **Link in attachment**, **Drive-by URL**, or **OAuth Consent Grant** on the [Select technique](#select-a-social-engineering-technique) page.
-      - You've added the **Dynamic tag** named **Insert Payload content** in the landing page content on this page.
+  - **Name**
+  - **Language**: If the landing page contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
+  - **Default language**
+  - **Status**
+  - **Linked simulation**
 
-    - Landing page content: Two tabs are available:
-      - **Text**: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
+  On both tabs, click the column headers to sort by that column. To remove add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, the available columns that aren't shown are **Source** and **Created by**.
+
+  On both tabs, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name on an existing landing page.
+
+  On both tabs, click ![Filter payload icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the landing pages by language.
+
+  When you select a landing page by clicking on the name, a details flyout opens that shows more information about the landing page:
+
+  - The **Preview** tab shows what the training looks like to users.
+  - The **Details** tab shows the properties of the landing page.
+
+  When you're finished in the landing page details flyout, click **Close**.
+
+  On the **Selecting phish landing page** page, select a landing page to use by selecting the check box next to the **Name** column.
+
+- **Use a custom URL**: This setting is not available if you selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
+
+  If you select **Use a custom URL**, you need to add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the **Selecting phish landing page** page.
+
+When you're finished on the **Selecting phish landing page** page, click **Next**
+
+### Create a landing page
+
+> [!NOTE]
+> This page is available only if yu selected **Use landing pages from library** \> **Tenant landing pages** tab \> **Create new** on the **Selecting phish landing page** page.
+>
+> Certain trademarks, logos, symbols, insignias and other source identifiers receive heightened protection under local, state and federal statutes and laws. Unauthorized use of such indicators can subject the users to penalties, including criminal fines. Though not an extensive list, this includes the Presidential, Vice Presidential, and Congressional seals, the CIA, the FBI, Social Security, Medicare and Medicaid, the United States Internal Revenue Service, and the Olympics. Beyond these categories of trademarks, use and modification of any third-party trademark carries an inherent amount of risk. Using your own trademarks and logos in a payload would be less risky, particularly where your organization permits the use. If you have any further questions about what is or is not appropriate to use when creating or configuring a payload, you should consult with your legal advisors.
+
+
+When you click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** in the **Tenant landing pages** tab on the **Selecting phish landing page** page, the create a landing page wizard opens:
+
+1. On the **Define details for phish landing page** page, configured the following settings:
+   - **Name**: Enter a unique, descriptive name for the landing page.
+   - **Description**: Enter an optional description.
+
+   When you're finished on the **Define details for phish landing page** page, click **Next**.
+
+2. On the **Configure landing page** page, click **Define content in preferred language**. In the **Add content in default language** flyout that opens, configure the following settings:
+   - **Select the language for the landing page**: Select one of the 29+ available languages.
+   - **Mark this as default language**: For the first landing page you create, this setting is selected and unchangeable.
+   - Landing page content: Two tabs are available:
+
+     - **Text** tab: A rich text editor is available to create your landing page. To see the typical font and formatting settings, toggle **Formatting controls** to ![Toggle on.](../../media/scc-toggle-on.png).
+
+        The following controls are also available
+
         - **Dynamic tag**: Select from the following tags:
 
           |Tag name|Tag value|
@@ -378,15 +436,32 @@ Microsoft-curated landing pages are available in 12 languages: Chinese (Simplifi
           |**Insert Payload content**|`${EmailContent}`|
           |**Insert Date**|`${date|MM/dd/yyyy|offset}`|
 
-        - **Use from default**: Select an available template to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
-    - **Code**: You can view and modify the HTML code directly.
+        - **Import from library**: Select an available template to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
 
-    You can preview the results by clicking the **Open preview panel** button in the middle of the page.
+     - **Code** tab: You can view and modify the HTML code directly.
 
-When you're finished, click **Next**.
+   You can preview the results by clicking the **Preview phish landing page** button at the top of the page.
+
+   When you're finished on the **Add content in default language** flyout, click **Save**.
+
+   Back on the **Configure landing page** page, the landing page you created is listed on the page. In the **Action** colum, you can click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** or ![Preview icon.](../../media/m365-cc-sc-eye-icon.png) **Preview** to edit or view the landing page.
+
+   Click ![Add translation icon.](../../media/m365-cc-sc-create-icon.png) **Add translation** to create additions version of the landing page in other languages.
+
+   Other than the flyout title changing to **Add translation**, the details are the same as the first landing page you created, except now the **Mark this as default language** check box is available. Only one landing page can be the default language.
+
+   After you created two or more landing pages, the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon is available in the **Actions** column to delete any landing pages that aren't designated as the default language.
+
+   When you're finished on the **Configure landing page** page, click **Next**.
+
+3. On the **Review landing page** page, you can review your selections. Click **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
+
+   When you're finished on the **Review landing page** page, click **Submit**, and then click **Done** on the confirmation page.
+
+Back on the **Tenant landing pages** tab of the **Select phish landing page**, select the landing page you created by selecting the check box next to the **Name**, and then click **Next**.
 
 > [!NOTE]
-> Certain trademarks, logos, symbols, insignias and other source identifiers receive heightened protection under local, state and federal statutes and laws. Unauthorized use of such indicators can subject the users to penalties, including criminal fines. Though not an extensive list, this includes the Presidential, Vice Presidential, and Congressional seals, the CIA, the FBI, Social Security, Medicare and Medicaid, the United States Internal Revenue Service, and the Olympics. Beyond these categories of trademarks, use and modification of any third-party trademark carries an inherent amount of risk. Using your own trademarks and logos in a payload would be less risky, particularly where your organization permits the use. If you have any further questions about what is or is not appropriate to use when creating or configuring a payload, you should consult with your legal advisors.
+> 
 
 ## Select end user notification
 
