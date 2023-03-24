@@ -20,7 +20,7 @@ ms.custom:
 - AdminSurgePortfolio
 description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 search.appverid: MET150
-ms.date: 04/06/2021
+ms.date: 03/24/2023
 ---
 
 # Manage auto-claim policies
