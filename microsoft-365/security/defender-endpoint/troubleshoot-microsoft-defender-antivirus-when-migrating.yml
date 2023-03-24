@@ -111,17 +111,18 @@ sections:
 
           Under the heading, *Registry item (Key path: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender, Value name: DisableAntiSpyware)*, you may see something like the following entry, indicating that Microsoft Defender Antivirus is turned off.
 
-           **DisableAntiSpyware**
-              - Winning GPO: Win10-Workstations 
-              - Result: Success
-              - **General**
-              - Action: Update
-              - **Properties**
-              - Hive: HKEY_LOCAL_MACHINE
-              - Key path: SOFTWARE\Policies\Microsoft\Windows Defender
-              - Value name: DisableAntiSpyware
-              - Value type: REG_DWORD
-              - Value data: 0x1 (1)
+          **DisableAntiSpyware**
+
+          - Winning GPO: Win10-Workstations 
+          - Result: Success
+          - **General**
+          - Action: Update
+          - **Properties**
+          - Hive: HKEY_LOCAL_MACHINE
+          - Key path: SOFTWARE\Policies\Microsoft\Windows Defender
+          - Value name: DisableAntiSpyware
+          - Value type: REG_DWORD
+          - Value data: 0x1 (1)
 
           ###### If security settings are implemented via registry key
 
