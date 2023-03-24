@@ -57,6 +57,7 @@ To check the status for your tenant run the following cmdlet:
  ```powershell
   Get-TeamsSecurityPreview
   ```
+Note: The purpose of the cmdlet is to inform Microsoft you want to OptIn. By expressing interest, your tenant will be added to the rollout schedule. The features will be enabled as the rollout schedule is execute. 
 
 ## See also
 
