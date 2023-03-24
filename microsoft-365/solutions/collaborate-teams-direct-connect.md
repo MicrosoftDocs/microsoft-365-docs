@@ -34,11 +34,8 @@ When you enable shared channels in Teams with another organization:
 
 Collaborating with external participants in a shared channel requires that guest access be turned on for SharePoint and Microsoft 365 Groups. These settings are enabled by default, but if your organization has made changes to them, confirm the following settings before configuring shared channels:
 
-- [Microsoft 365 Groups sharing settings](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#microsoft-365-groups) must both be enabled.
-- SharePoint [organization level](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#sharepoint-and-onedrive-organization-level) and [site level](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#sharepoint-site-level) sharing settings must allow guests. The domains you're sharing with must not be blocked.
-
-> [!NOTE]
-> [Guest settings for Microsoft 365 Groups](/microsoft-365/admin/create-groups/manage-guest-access-in-groups) must be enabled to use shared channels with external participants.
+- [Microsoft 365 Groups sharing settings](/microsoft-365/solutions/microsoft-365-guest-settings#microsoft-365-groups) must both be enabled.
+- SharePoint [organization level](/microsoft-365/solutions/microsoft-365-guest-settings#sharepoint-and-onedrive-organization-level) and [site level](/microsoft-365/solutions/microsoft-365-guest-settings#sharepoint-site-level) sharing settings must allow guests. The domains you're sharing with must not be blocked.
 
 ## Video demonstration
 
