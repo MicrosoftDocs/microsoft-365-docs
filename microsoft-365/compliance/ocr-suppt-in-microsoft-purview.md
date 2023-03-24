@@ -21,7 +21,7 @@ description: How to implement this preview of optical character recognition (OCR
 
 # Support for optical character recognition in Microsoft Purview (preview)
 
-Microsoft Purview can scan for content to help protect your information. The new support for optical character recognition (OCR) scanning enables Microsoft Purview to scan content not only in text, but in images too. An optional feature, OCR scanning is first enabled at the tenant level. Once enabled, you select the locations where you want to scan images. Image scanning is available for Exchange, SharePoint, OneDrive, Teams, and Windows devices. Once the OCR settings are configured, your existing policies for data loss prevention (DLP), records management, and insider risk management are applied to images as well as text-based content. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview scans for credit card numbers in both text and images at all of the chosen locations.
+Optical character recognition (OCR) scanning enables Microsoft Purview to scan content in images for sensitive information. An optional feature, OCR scanning is first enabled at the tenant level. Once enabled, you select the locations where you want to scan images. Image scanning is available for Exchange, SharePoint, OneDrive, Teams, and Windows devices. Once the OCR settings are configured, your existing policies for data loss prevention (DLP), records management, and insider risk management are applied to images as well as text-based content. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview scans for credit card numbers in both text and images at all of the chosen locations.
 
 > [!NOTE]
 > Scanning images embedded in Microsoft Office documents is not supported.
@@ -31,7 +31,7 @@ Microsoft Purview can scan for content to help protect your information. The new
 
 | Phase | What's needed|
 |-------|--------------|
-|**Phase 1:** Create your initial Azure subscription | If your organization doesn't already have an Azure pay-as-you-go subscription for your tenant, your Global admin needs to start by creating an [Azure account](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions). |
+|**Phase 1:** Create Azure subscription if needed | If your organization doesn't already have an Azure pay-as-you-go subscription for your tenant, your Global admin needs to start by creating an [Azure account](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions). |
 |**Phase 2:** Set up pay-as-you-go billing to enable OCR scans | Your Global or SharePoint admin must follow the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](../syntex/syntex-azure-billing.md) to add a subscription for OCR scans. |
 |**Phase 3:** Configure OCR scanning settings | The Compliance admin for your organization configures the OCR settings for your tenant.|
 
@@ -43,9 +43,9 @@ To use OCR scanning, your organization's Global admin needs to verify that an Az
 
 ### Phase 2: Configure billing
 
-When you enable OCR scans, all sensitive information types and trainable classifiers can detect characters that are in images.
+When you enable OCR, all sensitive information types and trainable classifiers can detect characters that are in images.
 
-Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR scans. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/syntex/syntex-azure-billing.md) to add a subscription for OCR scans.
+Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/syntex/syntex-azure-billing.md) to add a subscription for OCR scans.
 
 > [!NOTE]
 > When you go to the Microsoft Syntex billing page to sign up for your OCR subscription, you do **not** need to also sign up for Microsoft Syntex.
@@ -71,13 +71,13 @@ Because it's an optional feature, your Global admin must set up pay-as-you-go bi
 
 ## What file types are supported?
 
-This new functionality supports scanning images in the following file types, with the noted requirements:
+This functionality supports scanning images in the following file types, with the noted requirements:
 
 | Supported file types | Image requirements  |
 |----------------------|---------------------|
 | JPEG, JPG, PNG, BMP, TIFF, and PDF (image only) | **File sizes:** Image files must be no larger than 20 MB for Exchange and Teams. For SharePoint, OneDrive, and Windows endpoints, the maximum image file size is 50 MB. <br><br> **Image resolution:** Image resolution must be at least 50 x 50 pixels and not larger than 16,000 x 16,000 px. |
 
->[!NOTE]
+>[!IMPORTANT]
 >
 > - Only images with machine-typed text are supported.
 > - Only images uploaded after OCR has been enabled are scanned.
