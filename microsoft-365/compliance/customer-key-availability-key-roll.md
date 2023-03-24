@@ -19,7 +19,7 @@ description: "Learn how to roll the customer root keys stored in Azure Key Vault
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!CAUTION]
-> Only roll an encryption key that you use with Customer Key when your security or compliance requirements dictate that you must roll the key. In addition, **do not delete or disable any keys that are or were associated with policies, including the older versions of keys you used.** When you roll your keys, there will be content encrypted with the previous keys. For example, while active mailboxes will be re-encrypted frequently, inactive, disconnected, and disabled mailboxes may still be encrypted with the previous keys. SharePoint Online performs backup of content for restore and recovery purposes, so there may still be archived content using older keys.
+> Only roll an encryption key that you use with Customer Key when your security or compliance requirements dictate that you must roll the key. **Do not delete or disable any keys that are or were associated with policies, including older versions of keys that you used.** When you roll your keys, there will be content encrypted with the previous keys. For example, while active mailboxes will be re-encrypted frequently, inactive, disconnected, and disabled mailboxes may still be encrypted with the previous keys. SharePoint Online performs backup of content for restore and recovery purposes, so there may still be archived content using older keys.
 
 ## About rolling the availability key
 
