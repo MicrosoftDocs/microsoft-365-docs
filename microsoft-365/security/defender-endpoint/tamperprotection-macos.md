@@ -66,7 +66,7 @@ When tamper protection is set to audit or block mode, you can expect the followi
 
 Here is an example of a system message in response to a blocked action:
 
-![Image of operation blocked](images/operation-blocked.png)
+![Screenshot of operation blocked message.](images/operation-blocked.png)
 
 
 You can configure the tamper protection mode by providing the mode name as enforcement-level.
@@ -307,7 +307,7 @@ You can verify that tamper protection is on through various ways.
 
 Tampering alert is raised in the Microsoft 365 Defender portal
 
-![Image of tampering alert raised in the Microsoft 365 Defender portal](images/tampering-sensor-portal.png)
+:::image type="content" source="images/tampering-sensor-portal.png" alt-text="Screenshot of tampering alert raised in the Microsoft 365 Defender portal." lightbox="images/tampering-sensor-portal.png":::
 
 
 ### Verify block mode and audit modes
@@ -315,7 +315,7 @@ Tampering alert is raised in the Microsoft 365 Defender portal
 - Using Advanced hunting, you'll see tampering alerts appear
 - Tampering events can be found in the local device logs: `sudo grep -F '[{tamperProtection}]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
 
-![Image of tamper protection log](images/tamper-protection-log.png)
+![Screenshot of tamper protection log.](images/tamper-protection-log.png)
 
 
 ### DIY scenarios
