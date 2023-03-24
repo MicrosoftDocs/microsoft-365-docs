@@ -1,5 +1,5 @@
 ---
-title: "Support for optical character recognition in Microsoft Purview"
+title: "Support for optical character recognition in Microsoft Purview (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -19,7 +19,7 @@ search.appverid:
 description: How to implement use optical character recognition (OCR) with MS Purview.
 ---
 
-# Support for optical character recognition in Microsoft Purview
+# Support for optical character recognition in Microsoft Purview (preview)
 
 Data loss prevention policies in Microsoft Purview can scan for sensitive content in documents to help protect those documents from inappropriate exposure. Historically, scanning for sensitive information has been limited to text in various types of documents. We're now adding support for optical character recognition (OCR) scanning to detect sensitive content in images. With OCR scans enabled, you can apply policies to protect the information in those images.
 
@@ -28,9 +28,9 @@ Data loss prevention policies in Microsoft Purview can scan for sensitive conten
 OCR scanning is available in the following workflows:
 
 - Endpoint devices (Windows)
-- Exchange Online (EXO)
-- OneDrive for Business (ODB)
-- SharePoint Online (SPO)
+- Exchange Online
+- OneDrive for Business
+- SharePoint Online
 - Teams
 
 ## What file types are supported?
@@ -66,10 +66,10 @@ During the preview, this feature is available for free. When the preview is over
 2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
 3. Select the locations where you wish to scan images. Available locations are:
     - Endpoint
-    - Windows devices,
-    - Exchange Online (EXO)
-    - OneDrive for Business (ODB)
-    - SharePoint Online (SPO)
+    - Windows devices
+    - Exchange Online
+    - OneDrive for Business
+    - SharePoint Online
     - Teams
 4. For each location and scope, define the scope (users/groups/sites) for the OCR scans.
 
@@ -77,6 +77,6 @@ Once the OCR settings are configured, your existing data loss protection (DLP), 
 
 ## See also
 
-- [Learn about data loss prevention](/compliance/dlp-learn-about-dlp)
-- [Plan for data loss prevention](/compliance/dlp-overview-plan-for-dlp)
-- [Design a data loss prevention policy](/compliance/dlp-policy-design)
+- [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
+- [Plan for data loss prevention](/microsoft-365/compliance/dlp-overview-plan-for-dlp)
+- [Design a data loss prevention policy](/microsoft-365/compliance/dlp-policy-design)
