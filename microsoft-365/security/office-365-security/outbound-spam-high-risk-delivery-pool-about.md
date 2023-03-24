@@ -13,10 +13,11 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection: 
   - m365-security
+  - tier2
 description: Learn how the delivery pools are used to protect the reputation of email servers in the Microsoft 365 datacenters.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/02/2022
+ms.date: 2/7/2023
 ---
 
 # Outbound delivery pools

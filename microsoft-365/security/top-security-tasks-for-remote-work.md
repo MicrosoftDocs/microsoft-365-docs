@@ -17,7 +17,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments."
-ms.date: 03/23/2020
+ms.date: 1/31/2023
 ---
 
 # Top 12 tasks for security teams to support working from home
@@ -29,15 +29,13 @@ If you are like [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03
 
 If you are a small or medium-size organization using one of Microsoft's business plans, see these resources instead:
 
-- [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+- [Best practices for securing Microsoft 365 for business plans](../business-premium/secure-your-business-data.md)
 - [Microsoft 365 for Campaigns](../business-premium/index.md) (includes a recommended security configuration for Microsoft 365 Business)
 
 For customers using our enterprise plans, Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. If, instead of purchasing a Microsoft 365 enterprise plan, you are combining subscriptions, note the following:
 
 - Microsoft 365 E3 includes Enterprise Mobility + Security (EMS) E3 and Azure AD P1
 - Microsoft 365 E5 includes EMS E5 and Azure AD P2
-
-****
 
 |Step|Task|All Office 365 Enterprise plans|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
@@ -66,13 +64,11 @@ Normally, Microsoft recommends you give users 14 days to register their device f
 
 Applying these policies will take only a few minutes, but be prepared to support your users over the next several days.
 
-****
-
 |Plan|Recommendation|
 |---|---|
 |Microsoft 365 plans (without Azure AD P1 or P2)|[Enable Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.|
 |Microsoft 365 E3 (with Azure AD P1)|Use [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br/>- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
-|Microsoft 365 E5 (with Azure AD P2)|Taking advantage of feature in Azure Active Directory, begin to implement Microsoft's [recommended set of Conditional Access and related policies](./office-365-security/identity-access-policies.md) like:<br/> - Requiring MFA when sign-in risk is medium or high. <br/>- Blocking clients that don't support modern authentication. <br/>- Requiring high risk users change their password.
+|Microsoft 365 E5 (with Azure AD P2)|Taking advantage of feature in Azure Active Directory, begin to implement Microsoft's [recommended set of Conditional Access and related policies](./office-365-security/identity-access-policies.md) like:<br/> - Requiring MFA when sign-in risk is medium or high. <br/>- Blocking clients that don't support modern authentication. <br/>- Requiring high risk users change their password. |
 
 ## 2: Protect against threats
 
@@ -202,8 +198,6 @@ Training users can save your users and security operations team a lot of time an
 The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) provides excellent guidance on establishing a strong culture of security awareness within your organization, including training users to identify phishing attacks.
 
 Microsoft 365 provides the following resources to help inform users in your organization:
-
-****
 
 |Concept|Resources|
 |---|---|

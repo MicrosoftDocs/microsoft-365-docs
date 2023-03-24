@@ -3,6 +3,7 @@ title: "Microsoft 365 admin center Viva Insights activity reports"
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 02/22/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -28,6 +29,9 @@ As a Microsoft 365 admin, the Reports dashboard shows you the activity overview 
 
 For example, you can understand the adoption of Viva Insights by looking at the active users. Additionally, you can find a deployment guide to further boost adoption in your organization.
 
+> [!NOTE]
+> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
+
 ## How do I get to the to the Viva Insights activity report?
 
 1. In the admin center, go to the **Reports**, and then select **Usage**. 
@@ -43,4 +47,3 @@ You can get a view into your user's Viva Insights activity by looking at the **A
 
 ## View the Viva Insights deployment guide
 You can click **Boost adoption of Viva Insights** to view the [Viva Insights Deployment guide](/viva/insights/personal/setup/deployment-guide).
-

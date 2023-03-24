@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 ms.custom:
 description: Learn about Threat Trackers, including new Noteworthy Trackers, to help your organization stay on top of security concerns.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 09/13/2019
+ms.date: 1/31/2023
 ---
 
 # Threat Trackers - New and Noteworthy

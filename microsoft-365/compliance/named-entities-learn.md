@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 07/21/2020
 audience: Admin
 search.appverid: MET150
 ms.topic: conceptual
@@ -51,9 +51,9 @@ Bundled named entity SITs detect all possible matches. Use them as broad criteri
 
 Unbundled named entity SITs have a narrower focus, like a single country. Use them when you need a DLP policy with a narrower detection scope.
 
-> [!Note]
-> To use bundled SITs, you must activate [Advanced scanning and protection](https://learn.microsoft.com/microsoft-365/compliance/dlp-configure-endpoint-settings) for the relevant [data loss prevention endpoints](https://learn.microsoft.com/microsoft-365/compliance/dlp-configure-endpoint-settings) before they will be discoverable. 
- 
+>[!Note]
+> To use bundled SITs, you must activate [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection) for the relevant [data loss prevention settings](dlp-configure-endpoint-settings.md) before they will be discoverable.
+
 Here are some examples of named entity SITs. You can find all of them in [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
 |Named Entity |Description  |Bundled/Unbundled  |
