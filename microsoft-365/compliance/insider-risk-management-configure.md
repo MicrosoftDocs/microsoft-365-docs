@@ -245,7 +245,7 @@ For the OCR preview, insider risk management supports scanning in the following 
 
 OCR settings do not apply to forensic evidence clips in insider risk management. 
 
-[Learn more about setting up OCR scanning and pay-as-you-go billing](ocr-suppt-in-microsoft-purview.md). 
+[Learn more about setting up OCR scanning and pay-as-you-go billing](ocr-learn-about.md). 
 
 ## Step 5 (required): Configure insider risk settings
 

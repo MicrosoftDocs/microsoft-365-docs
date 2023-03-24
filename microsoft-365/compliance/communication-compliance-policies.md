@@ -259,7 +259,7 @@ Communication compliance policies using classifiers inspect and evaluate message
 ### Optical character recognition (OCR)
 
 > [!NOTE]
-> Microsoft Purview includes [OCR (preview) settings](ocr-suppt-in-microsoft-purview.md) for Microsoft Purview Insider Risk Management, Microsoft Purview Data Loss Prevention, Microsoft Purview Data Loss Management, and autolabeling. You can use the OCR (preview) settings to provide image-scanning capabilities for those solutions and technologies. Communication compliance has its own built-in OCR scanning functionality as described below and doesn’t support the OCR (preview) settings at this time. 
+> Microsoft Purview includes [OCR (preview) settings](ocr-learn-about.md) for Microsoft Purview Insider Risk Management, Microsoft Purview Data Loss Prevention, Microsoft Purview Data Loss Management, and autolabeling. You can use the OCR (preview) settings to provide image-scanning capabilities for those solutions and technologies. Communication compliance has its own built-in OCR scanning functionality as described below and doesn’t support the OCR (preview) settings at this time. 
 
 Configure built-in or custom communication compliance policies to scan and identify printed or handwritten text from images that may be inappropriate in your organization. Integrated [Azure Cognitive Services and optical scanning support](/azure/cognitive-services/computer-vision/overview-ocr) for identifying text in images help analysts and investigators detect and act on instances where inappropriate conduct may be missed in communications that is primarily non-textual.
 
