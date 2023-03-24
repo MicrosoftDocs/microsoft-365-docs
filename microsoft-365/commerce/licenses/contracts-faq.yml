@@ -75,16 +75,17 @@ sections:
       - question: |
           About roles
         answer: |
-        |VLSC Permission Role|MAC VL Permission Role|Allowable Action|
-        |---|---|
-        |Administrator|Administrator|- Assign/Edit/Remove uers permission\ - Can perform all actions allowed to other VL roles|
-        |Licensing Info Viewer|License Position Reader|- View Contracts details\ - View Orders\ - View Keys of a contract\ - Create License Summary|
-        |Download|Product Download Manager|- View Contracts\ - Download licensed Microsoft software products|
-        |Product Keys|Product Keys Reader|- View Contracts\ - View Keys of a contract\ - Manage activation & Redemption of Online services (additionally need Global Admin roles)\- View keys from Downloads & Keys\
-        |Software Assurance Manager|Benefits Reader|- View Contracts\- Manage the following Software Assurance entitlements: Home Use Program|
-        |Online Services Manager|Online Services Manager|- View Contracts\- View Orders\- Reservation of services\- Manage activation & Redemption of Online services (additionally need Global Admin roles)\- Manage subscriptions under Billing -> Licenses (additionally need Global Admin roles)|
-        |N/A|Invoice Reader|- View Contracts\- Can view the list of invoices and Download|
-        
+          The following table shows the relationships between VLSC roles and MAC VL roles, and the actions those roles can take.
+
+          |VLSC Permission Role|MAC VL Permission Role|Allowable Action|
+          |---|---|---|
+          |Administrator|Administrator|- Assign/Edit/Remove uers permission\ - Can perform all actions allowed to other VL roles|
+          |Licensing Info Viewer|License Position Reader|- View Contracts details\ - View Orders\ - View Keys of a contract\ - Create License Summary|
+          |Download|Product Download Manager|- View Contracts\ - Download licensed Microsoft software products|
+          |Product Keys|Product Keys Reader|- View Contracts\ - View Keys of a contract\ - Manage activation & Redemption of Online services (additionally need Global Admin roles)\- View keys from Downloads & Keys\
+          |Software Assurance Manager|Benefits Reader|- View Contracts\- Manage the following Software Assurance entitlements: Home Use Program|
+          |Online Services Manager|Online Services Manager|- View Contracts\- View Orders\- Reservation of services\- Manage activation & Redemption of Online services (additionally need Global Admin roles)\- Manage subscriptions under Billing -> Licenses (additionally need Global Admin roles)|
+          |N/A|Invoice Reader|- View Contracts\- Can view the list of invoices and Download|
 
       - question: |
           What is the License Summary?
@@ -113,7 +114,7 @@ sections:
       - question: |
           What is the Effective Quantity?
         answer: |
-          The Effective Quantity is the number of license entitlements per product and version with upgrades. It’s used to determine whether your organization has license shortfalls or surpluses by product and version.
+          The Effective Quantity is the number of license entitlements per product and version with upgrades. It's used to determine whether your organization has license shortfalls or surpluses by product and version.
 
       - question: |
           What is the Active SA (Software Assurance) Quantity?
@@ -128,12 +129,12 @@ sections:
           Why am I seeing Effective Quantity and/or Active SA Quantity as zero (0)?
         answer: |
           The license summary is intended to show the licenses your organization is entitled to deploy and use. 
-          If the Effective Quantity in the generated license statement is shown as zero, it means that your organization isn’t entitled to use the license under the terms of the set of licensing IDs selected for that statement. 
-          If the Active SA Quantity is shown as zero, it means that the licenses under the set of licensing IDs used to generate the statement don’t have any valid or active Software Assurance coverage. 
+          If the Effective Quantity in the generated license statement is shown as zero, it means that your organization isn't entitled to use the license under the terms of the set of licensing IDs selected for that statement. 
+          If the Active SA Quantity is shown as zero, it means that the licenses under the set of licensing IDs used to generate the statement don't have any valid or active Software Assurance coverage. 
          
           NOTE
           
-          For Online Services licenses, the Active SA Quantity is always zero, because Online Services don’t have SAs associated with them. 
+          For Online Services licenses, the Active SA Quantity is always zero, because Online Services don't have SAs associated with them. 
 
       - question: |
           Does the License Summary include Original Equipment Manufacturer (OEM) or retail license information?
@@ -143,7 +144,7 @@ sections:
       - question: |
           Does the License Summary display what software is deployed in my organization? 
         answer: |
-          No. It’s not possible for Microsoft to provide a list of product deployment details in the License Summary. The License Summary shows you the software your organization is entitled to install and use, but not what is currently deployed.
+          No. It's not possible for Microsoft to provide a list of product deployment details in the License Summary. The License Summary shows you the software your organization is entitled to install and use, but not what is currently deployed.
 
       - question: |
           What is a Product Pool?
@@ -170,7 +171,7 @@ sections:
       - question: |
           How can I see my License Grants?
         answer: |
-          License Grants are reflected in the Contracts list and in Downloads & Keys. In the products list, products received from License Grants are shown with an asterisk (*) to indicate that they weren’t part of the original purchase.
+          License Grants are reflected in the Contracts list and in Downloads & Keys. In the products list, products received from License Grants are shown with an asterisk (*) to indicate that they weren't part of the original purchase.
       
       - question: |
           How can I contact Microsoft Support?
