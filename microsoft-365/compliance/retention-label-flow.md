@@ -85,8 +85,6 @@ Although renaming and moving files are an unusual occurrence, adding this recomm
 
 ## Limitations for this scenario
 
-- Not currently supported for [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo).
-
 - You must create a new retention label to run a flow at the end of the retention period. You can't edit an existing retention label for this configuration.
 
 - By default, the account that creates the Power Automate flow must be the same account that creates the retention label. If you share the flow in Power Automate, the people you share it with can also select the flow when they create a retention label.
