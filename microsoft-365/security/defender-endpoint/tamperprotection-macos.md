@@ -155,7 +155,7 @@ sudo mdatp config tamper-protection enforcement-level --value block
 
    ![Image of manual configuration command](images/manual-config-cmd.png)
 
-      > [!NOTE]
+   > [!NOTE]
    > If you use manual configuration to enable tamper protection, you can also disable tamper protection manually at any time. For example, you can revoke Full Disk Access from Defender in System Preferences manually. You must use MDM instead of manual configuration to prevent a local admin from doing that.
 
 2. Verify the result.
