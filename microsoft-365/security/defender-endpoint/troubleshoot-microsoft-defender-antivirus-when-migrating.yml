@@ -54,21 +54,21 @@ sections:
 
           #### Event ID 15
 
-          - Log name: Application
-          - Description: Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_OFF.
-          - Source: Security Center
+          - **Log name**: Application
+          - **Description**: Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_OFF.
+          - **Source**: Security Center
 
           #### Event ID 5007
 
-          - Log name: Microsoft-Windows-Windows Defender/Operational
-          - Description: Microsoft Defender Antivirus Configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware. <p> **Old value:** Default\IsServiceRunning = 0x0 <p> **New value:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1
-          - Source: Windows Defender
+          - **Log name**: Microsoft-Windows-Windows Defender/Operational
+          - **Description**: Microsoft Defender Antivirus Configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware. <br> **Old value:** Default\IsServiceRunning = 0x0 <br> **New value:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1
+          - **Source**: Windows Defender
 
           #### Event ID 5010
 
-          - Log name: Microsoft-Windows-Windows Defender/Operational
-          - Description: Microsoft Defender Antivirus scanning for spyware and other potentially unwanted software is disabled.
-          - Source: Windows Defender
+          - **Log name**: Microsoft-Windows-Windows Defender/Operational
+          - **Description**: Microsoft Defender Antivirus scanning for spyware and other potentially unwanted software is disabled.
+          - **Source**: Windows Defender
 
           ### How to tell if Microsoft Defender Antivirus won't start because a third-party antivirus is installed
 
@@ -111,17 +111,17 @@ sections:
 
           Under the heading, *Registry item (Key path: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender, Value name: DisableAntiSpyware)*, you may see something like the following entry, indicating that Microsoft Defender Antivirus is turned off.
 
-          - DisableAntiSpyware
-          - Winning GPO: Win10-Workstations 
-          - Result: Success
-          - **General**
-          - Action: Update
-          - **Properties**
-          - Hive: HKEY_LOCAL_MACHINE
-          - Key path: SOFTWARE\Policies\Microsoft\Windows Defender
-          - Value name: DisableAntiSpyware
-          - Value type: REG_DWORD
-          - Value data: 0x1 (1)
+          ####### DisableAntiSpyware
+                  - Winning GPO: Win10-Workstations 
+                  - Result: Success
+                  - **General**
+                  - Action: Update
+                  - **Properties**
+                  - Hive: HKEY_LOCAL_MACHINE
+                  - Key path: SOFTWARE\Policies\Microsoft\Windows Defender
+                  - Value name: DisableAntiSpyware
+                  - Value type: REG_DWORD
+                  - Value data: 0x1 (1)
 
           ###### If security settings are implemented via registry key
 
