@@ -242,7 +242,7 @@ You'll need to define three separate sets of permissions for each key vault, dep
    Get-AzKeyVault -VaultName <vault name> | fl
    ```  
 
-  - If you're using Role-Based Access Control (RBAC) to assign `wrapKey`, `unwrapkey`, and `get` permissions, you must assign the “*Key Vault Crypto Service Encryption User*” role to the corresponding Microsoft 365 app. See [Grant permission to applications to access an Azure key vault using Azure RBAC | Microsoft Learn](<https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide?tabs=azure-cli>).
+  - If you're using Role-Based Access Control (RBAC) to assign `wrapKey`, `unwrapkey`, and `get` permissions, you must assign the “*Key Vault Crypto Service Encryption User*” role to the corresponding Microsoft 365 app. See [Grant permission to applications to access an Azure key vault using Azure RBAC | Microsoft Learn](</azure/key-vault/general/rbac-guide?tabs=azure-cli>).
 
 > [!TIP]
 > Before moving on, make sure the permissions are configured properly for the key vault, the *Permissions to Keys* will return **wrapKey, unwrapKey, get**.
