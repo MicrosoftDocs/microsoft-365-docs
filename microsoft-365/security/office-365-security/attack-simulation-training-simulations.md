@@ -30,9 +30,7 @@ For getting started information about Attack simulation training, see [Get start
 
 To launch a simulated phishing attack, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulations** tab.
-
-   To go directly to the **Simulations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulations** tab. Or, to go directly to the **Simulations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
 
 2. On the **Simulations** tab, select ![Launch a simulation icon.](../../media/m365-cc-sc-create-icon.png) **Launch a simulation**.
 
@@ -58,7 +56,7 @@ If you click the **View details** link in the description, a details flyout open
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-technique-sim-steps.png" alt-text="The Details flyout for the credential harvest technique on the Select technique page" lightbox="../../media/attack-sim-training-simulations-select-technique-sim-steps.png":::
 
-When you're finished, click **Next**.
+When you're finished on the **Select technique** page, click **Next**.
 
 ## Name and describe the simulation
 
@@ -67,11 +65,11 @@ On the **Name simulation** page, configure the following settings:
 - **Name**: Enter a unique, descriptive name for the simulation.
 - **Description**: Enter an optional detailed description for the simulation.
 
-When you're finished, click **Next**.
+When you're finished on the **Name simulation** page, click **Next**.
 
 ## Select a payload and login page
 
-On the **Select payload and login** page, you need to select an existing payload from the list, or create a new payload.
+On the **Select payload and login page** page, you need to select an existing payload from the list or create a new payload.
 
 You can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
 
@@ -80,19 +78,19 @@ You can also view the login page that's used in the payload, select a different 
 The following details are shown for each payload:
 
 - **Payload name**
-- **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 10+ languages which can also be filtered.
+- **Source**: For built-in payloads, the value is **Global**. For custom payloads, the value is **Tenant**.
+- **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 29+ languages as described in ![Filter payload icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**.
 - **Click rate**: How many people have clicked on this payload.
-- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload).
+- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload). For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
 - **Simulations launched** counts the number of times this payload was used in other simulations.
 
 In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, you can type part of the payload name and press Enter to filter the results.
 
-If you click **Filter**, the following filters are available:
+If you click ![Filter payload icon.](../../media/m365-cc-sc-filter-icon.png), the following filters are available:
 
-- **Complexity**: Calculated based on the number of indicators in the payload that indicate a possible attack (spelling errors, urgency, etc.). More indicators are easier to identify as an attack and indicate lower complexity. The available values are:
-  - **High**
-  - **Medium**
-  - **Low**
+- **Source**: The available values are: **Global**, **Tenant**, and **All**.
+
+- **Complexity**: Calculated based on the number of indicators in the payload that indicate a possible attack (spelling errors, urgency, etc.). More indicators are easier to identify as an attack and indicate lower complexity. The available values are: **High**, **Medium**, and **Low**.
 
 - **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
 
@@ -110,28 +108,32 @@ If you click **Filter**, the following filters are available:
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
-If you select a payload from the list by selecting the check box, a ![Send a test payload icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears on the main page where you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
+If you select a payload from the list by selecting the check box, a ![Send a test payload icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears above the list of payloads. You can use this button to send a copy of the payload email to yourself (the currently logged in user) for inspection.
 
-To create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md#create-payloads).
+If no payloads are available or if you want to create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Payloads** \> **Tenant payloads** tab or <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md#create-payloads).
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="The Select payload page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
 
 If you select a payload from the list by clicking anywhere in the row other than the check box, details about the payload are shown in a flyout:
 
 - The **Payload** tab contains an example and other details about the payload.
-- The **Login page** tab is available only in **Credential Harvest** or **Link in attachment** payloads and is described in the next section.
+- The **Login page** tab is available only for **Credential Harvest** or **Link in attachment** payloads and is described in the next section.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
+If the simulation doesn't use **Credential Harvest** or **Link in attachment** payloads, or if you don't want to view or edit the login page that's used, click **Next** on the **Select payload and login page** page to continue.
+
+To view and configure the login page that's used in **Credential Harvest** or **Link in attachment** payloads, go to the next section.
+
 ### Login page
 
 > [!NOTE]
-> The **Login page** tab is available only in **Credential Harvest** or **Link in attachment** payloads.
+> The **Login page** tab is available in the details flyout of a payload that you selected on **Select payload and login page** only in **Credential Harvest** or **Link in attachment** payloads.
 
-Select the payload from the list by clicking anywhere in the row other than the check box to open the details flyout.
+On **Select payload and login page**, select the payload from the list by clicking anywhere in the row other than the check box to open the details flyout for the payload.
 
-The **Login page** tab in the payload details flyout shows the login page that's currently selected for the payload.
+In the details flyout of the payload, the **Login page** tab shows the login page that's currently selected for the payload.
 
 To view the complete login page, use the **Page 1** and **Page 2** links at the bottom of the page for two-page login pages.
 
@@ -144,7 +146,6 @@ On the **Select login page** flyout that appears, The following information is s
 - **Name**
 - **Language**
 - **Source**: For built-in login pages, the value is **Global**. For custom login pages, the value is **Tenant**.
-- **Status**: **Ready** or **Draft**.
 - **Created by**: For built-in login pages, the value is **Microsoft**. For custom login pages, the value is the UPN of the user who created the login page.
 - **Last modified**
 - **Actions**: Click ![Preview icon.](../../media/m365-cc-sc-eye-icon.png) **Preview** to preview the login page.
@@ -155,13 +156,13 @@ Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filt
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="The Select login page in the Login page tab in payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
 
-To create a new login page, click [Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard. The steps are the same as at **Login pages** at **Attack simulation training** \> **Simulated content library** tab. For instructions, see [Create login pages](attack-simulation-training-login-pages.md#create-login-pages).
+To create a new login page, click [Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**. The creation steps are the same as at **Attack simulation training** \> **Simulations** tab. For instructions, see [Create login pages](attack-simulation-training-login-pages.md#create-login-pages).
 
 Back on the **Select login page**, verify the new login page you created is selected, and then click **Save**.
 
 Back on the payload details flyout, click [Close icon.](../../media/m365-cc-sc-close-icon.png) **Close**.
 
-When you're finished on the **Select a payload and login page**, click **Next**.
+When you're finished on the **Select a payload and login page** page, click **Next**.
 
 ## Configure OAuth Payload
 
@@ -189,55 +190,79 @@ On the **Target users** page, select who will receive the simulation. Configure 
 
 - **Include all users in your organization**: The affected users are show in lists of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** icon on the page to find affected users.
 
-- **Include only specific users and groups**: Choose one of the following options:
-  - ![Add users icon.](../../media/m365-cc-sc-create-icon.png) **Add users**: In the **Add users** flyout that appears, you can find users and groups based on the following criteria:
+- **Include only specific users and groups**: At first, the list of affected users is blank (no users or groups are shown on the **Targeted users** page). To add users or groups to the simulation, choose one of the following options:
 
-    > [!NOTE]
-    > You can't use dynamic distribution groups to target users.
+  - ![Add users icon.](../../media/m365-cc-sc-create-icon.png) **Add users**: In the **Add users** flyout that opens, you find and select users and groups to receive the simulation. **Dynamic distribution groups are not supported**. The following search tools are available:
 
-    - **Search for users or groups**: In box, you can type part of the **Name** or **Email address** of the user or group and then press Enter. You can select some or all of the results. When you're finished, click **Add x users**.
+    - **Search for users or groups**: If you click in the ![Search for users or groups icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and do one of the following actions, the **Filter users by categories** options on the **Add users** flyout are replaced by a **User list** section:
+      - Type three or more characters and then press the ENTER key. Any users or group names that contain those characters are shown in the **User list** section by **Name** and **Email**.
+      - Type less than three characters or no characters and then press the ENTER key. No users are shown in the **User list** section, but you can type three or more characters in the **Search** box to search for users and groups.
+
+      The number of results appears in the **Selected (0/x) users** label.
 
       > [!NOTE]
-      > Clicking the **Add filters** button to return to the **Filter users by categories** options will clear any users or groups that you selected in the search results.
+      > Clicking the **Add filters** button clears and replaces any results the **User list** section with the **Filter users by categories**.
 
-    - **Filter users by categories**: Select from none, some, or all of the following options:
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the circle next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+
+      Click the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
+
+    - **Filter users by categories**: Use the following options:
 
       - **Suggested user groups**: Select from the following values:
         - **All suggested user groups**
         - **Users not targeted by a simulation in the last three months**
         - **Repeat offenders**
 
-      - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
-
-          Use the following options:
-
+      - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md). Use the following options:
         - **Search**: In ![Search by user tags icon.](../../media/m365-cc-sc-search-icon.png) **Search by user tags**, you can type part of the user tag and then press Enter. You can select some or all of the results.
         - Select **All user tags**
-        - Select existing user tags.
+        - Select existing user tags. If the link is available, click **See all user tags** to see the complete list of available tags.
+
+      - **City**: Use the following options:
+        - **Search**: In ![Search by City icon.](../../media/m365-cc-sc-search-icon.png) **Search by City**, you can type part of the City value and then press Enter. You can select some or all of the results.
+        - Select **All City**
+        - Select existing City values. If the link is available, click **See all Cities** to see the complete list of available City values.
+
+      - **Country**: Use the following options:
+        - **Search**: In ![Search by Country icon.](../../media/m365-cc-sc-search-icon.png) **Search by Country**, you can type part of the Country value and then press Enter. You can select some or all of the results.
+        - Select **All Country**
+        - Select existing City values. If the link is available, click **See all Countries** to see the complete list of available Country values.
 
       - **Department**: Use the following options:
         - **Search**: In ![Search by Department icon.](../../media/m365-cc-sc-search-icon.png) **Search by Department**, you can type part the Department value and then press Enter. You can select some or all of the results.
         - Select **All Department**
-        - Select existing Department values.
+        - Select existing Department values. If the link is available, click **See all Departments** to see the complete list of available Department values.
 
       - **Title**: Use the following options:
         - **Search**: In ![Search by Title icon.](../../media/m365-cc-sc-search-icon.png) **Search by Title**, you can type part of the Title value and then press Enter. You can select some or all of the results.
         - Select **All Title**
-        - Select existing Title values.
+        - Select existing Title values. If the link is available, click **See all Titles** to see the complete list of available Title values.
 
       :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="The User filtering on the Target users page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
-      After you identify your criteria, the affected users are shown in the **User list** section that appears, where you can select some or all of the discovered recipients.
+      You can use some or all of the search categories to find users and groups. If you select multiple categories, the AND operator is used. Any users or groups must match both values to be returned in the results (which is virtually impossible if you use the value **All** in multiple categories).
 
-      When you're finished, click **Apply(x)**, and then click **Add x users**.
+      The number of values that were used as the search criteria by a specific category is shown next to the category tile (for example, **City 50** or **Priority accounts 10**).
 
-  Back on the main **Target users** page, you can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find affected users. You can also click ![Delete users icon.](../../media/m365-cc-sc-search-icon.png) **Delete** to remove specific users.
+      When you're finished searching by category, click the **Apply(x)** button. The previous **Filter users by categories** options on the **Add users** flyout are replaced by the following information:
 
-- ![Import icon.](../../media/m365-cc-sc-create-icon.png) **Import**: In the dialog that opens, specify a CSV file that contains one email address per line.
+      - **Filters** section: Show how many filter values you used and the names of the filter values. If it's available, click the **See all** link to see all filter values
+      - **User list** section: Shows the users or groups that match your category searches. The number of results appears in the **Selected (0/x) users** label.
 
-  After you find a select the CSV file, the list of users are imported and shown on the **Targeted users** page. You can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find affected users. You can also click ![Delete targeted users icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** to remove specific users.
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the circle next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
-When you're finished, click **Next**.
+      Click the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
+
+  - ![Import icon.](../../media/m365-cc-sc-create-icon.png) **Import**: In the dialog that opens, specify a CSV file that contains one email address per line.
+
+  After you find a select the CSV file, the list of users are imported and shown on the **Targeted users** page.
+
+  On the main **Target users** page, you can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find affected users. You can also click ![Delete users icon.](../../media/m365-cc-sc-search-icon.png) **Delete** and then **Confirm** in the confirmation dialog to remove specific users.
+
+  To add more users and groups, click ![Add users icon.](../../media/m365-cc-sc-create-icon.png) **Add users** or ![Import icon.](../../media/m365-cc-sc-create-icon.png) **Import** on the **Target users** page and repeat the previous steps.
+
+When you're finished on the **Target users** page, click **Next**.
 
 ## Assign training
 

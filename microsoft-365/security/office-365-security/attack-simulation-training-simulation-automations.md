@@ -156,13 +156,13 @@ Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filt
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="The Select login page in the Login page tab in payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
 
-To create a new login page, click [Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard. The steps are the same as at **Login pages** at **Attack simulation training** \> **Simulated content library** tab. For instructions, see [Create login pages](attack-simulation-training-login-pages.md#create-login-pages).
+To create a new login page, click [Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard. The steps are the same as at **Attack simulation training** \> **Content library** tab \> **Payloads** \> **Tenant payloads** tab or <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>. For instructions, see [Create login pages](attack-simulation-training-login-pages.md#create-login-pages).
 
-Back on the **Select login page**, verify the new login page you created is selected, and then click **Save**.
+Back on the **Select login page** flyout, verify that the new login page you created is selected, and then click **Save**.
 
 Back on the payload details flyout, click [Close icon.](../../media/m365-cc-sc-close-icon.png) **Close**.
 
-When you're finished on the **Select a payload and login page**, click **Next**.
+When you're finished on the **Select payload and login page** page, click **Next**.
 
 ## Configure OAuth Payload
 
