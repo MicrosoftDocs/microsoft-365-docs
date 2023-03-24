@@ -119,10 +119,10 @@ OCR scanning supports more than [150 languages](/azure/cognitive-services/comput
 ## Summary
 - You can subscribe to OCR scanning without subscribing to Microsoft Syntex.
 - Configuring OCR scans occurs at the tenant level, so once OCR scans are configured, they're available to the entire Microsoft Purview stack.
-- You don't need to create separate data classifiers for OCR scans. Once OCR is configured, existing [sensitive information types](./sensitive-information-type-learn-about.md), [exact data matches](/sit-get-started-exact-data-match-based-sits-overview), [trainable classifiers](./classifier-learn-about), and [fingerprint SITs](/document-fingerprinting) scan images as well as documents and emails.
+- You don't need to create separate data classifiers for OCR scans. Once OCR is configured, existing [sensitive information types](compliance/sensitive-information-type-learn-about.md), [exact data matches](/sit-get-started-exact-data-match-based-sits-overview), [trainable classifiers](compliance/classifier-learn-about), and [fingerprint SITs](/document-fingerprinting) scan images as well as documents and emails.
 
 ## See also
 
-- [Learn about data loss prevention](./dlp-learn-about-dlp)
-- [Learn about insider risk management](./insider-risk-management)
-- [Learn about records management](./data-lifecycle-management)
+- [Learn about data loss prevention](compliance/dlp-learn-about-dlp)
+- [Learn about insider risk management](compliance/insider-risk-management)
+- [Learn about records management](compliance/data-lifecycle-management)
