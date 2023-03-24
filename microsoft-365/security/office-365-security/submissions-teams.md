@@ -59,7 +59,7 @@ To view or configure this setting, you need to be a member of the **Global Admin
 
 4. Click **Save**, and then click **Confirm** in the confirmation dialog that opens.
 
-:::image type="content" source="../../media/submissions-teams-turn-on-off-tac.png" alt-text="The 'Report a security concern' toggle in Messaging policies in the Teams admin center." lightbox="../../media/submissions-teams-turn-on-off-tac.png":::
+:::image type="content" source="../../media/submissions-teams-turn-on-off-tac.png" alt-text="Screenshot of the 'Report a security concern' toggle in Messaging policies in the Teams admin center." lightbox="../../media/submissions-teams-turn-on-off-tac.png":::
 
 For more information about messaging policies in Teams, see [Manage messaging policies in Teams](/microsoftteams/messaging-policies-in-teams).
 
@@ -75,7 +75,7 @@ The value of this setting is meaningful only if message reporting is turned on i
 
    As previously described, this setting is turned on by default, and you typically leave it turned on if message reporting is also turned on in Teams admin center.
 
-:::image type="content" source="../../media/submissions-teams-turn-on-off-defender-portal.png" alt-text="The 'Monitor reported messages in Microsoft Teams' setting in the Microsoft 365 Defender portal." lightbox="../../media/submissions-teams-turn-on-off-defender-portal.png":::
+:::image type="content" source="../../media/submissions-teams-turn-on-off-defender-portal.png" alt-text="Screenshot of the 'Monitor reported messages in Microsoft Teams' setting in the Microsoft 365 Defender portal." lightbox="../../media/submissions-teams-turn-on-off-defender-portal.png":::
 
 For more information about user reported message settings in the Defender portal, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
@@ -83,11 +83,11 @@ For more information about user reported message settings in the Defender portal
 
 1. In the Microsoft Teams client, hover over the malicious message without selecting it, and then click **... More options** \> **More actions** \> **Report this message**.
 
-   :::image type="content" source="../../media/submissions-user-report-message-in-teams-client-click-path.png" alt-text="Click path to report a message in the Microsoft Teams client." lightbox="../../media/submissions-user-report-message-in-teams-client-click-path.png":::
+   :::image type="content" source="../../media/submissions-user-report-message-in-teams-client-click-path.png" alt-text="Screenshot of the Click path to report a message in the Microsoft Teams client." lightbox="../../media/submissions-user-report-message-in-teams-client-click-path.png":::
 
 2. In the **report this message** dialog that opens, verify **Security risk - Spam, phishing, malicious content** is selected, and then click **Report**.
 
-   :::image type="content" source="../../media/submissions-user-report-message-in-teams-client-click-report.png" alt-text="Final dialog to report a message in the Microsoft Teams client." lightbox="../../media/submissions-user-report-message-in-teams-client-click-report.png":::
+   :::image type="content" source="../../media/submissions-user-report-message-in-teams-client-click-report.png" alt-text="Screenshot of the final dialog to report a message in the Microsoft Teams client." lightbox="../../media/submissions-user-report-message-in-teams-client-click-report.png":::
 
    > [!NOTE]
    > If you've [turned on reporting for Microsoft Purview Communication Compliance](/microsoftteams/communication-compliance#report-a-concern-in-microsoft-teams), you might also see **Inappropriate - Harassment, violence, nudity, and disturbing content** as an available selection in the **Select a problem** dropdown list.

@@ -395,7 +395,7 @@ For the preview release, this feature is enabled by default.
 
 2. On the **Quarantine** page, select the **Teams messages** tab.
 
-   :::image type="content" source="../../media/admin-quarantine-teams-message-tab.png" alt-text="The Teams messages tab in quarantine" lightbox="../../media/admin-quarantine-teams-message-tab.png"::: 
+   :::image type="content" source="../../media/admin-quarantine-teams-message-tab.png" alt-text="Screenshot of the Teams messages tab in quarantine." lightbox="../../media/admin-quarantine-teams-message-tab.png"::: 
 
 3. You can sort the results by clicking on an available column header. Click **Customize columns** to change the columns that are shown. 
    - **Teams message text**: Contains the subject for the teams message.
@@ -415,7 +415,7 @@ For the preview release, this feature is enabled by default.
 
 When you select a quarantined message from the list, the following information is available in the details flyout that opens:
 
-:::image type="content" source="../../media/admin-quarantine-teams-details-flyout.png" alt-text="The teams message details flyout in quarantine" lightbox="../../media/admin-quarantine-teams-details-flyout.png":::
+:::image type="content" source="../../media/admin-quarantine-teams-details-flyout.png" alt-text="Screenshot of the Teams message details flyout in quarantine." lightbox="../../media/admin-quarantine-teams-details-flyout.png":::
 
 - **Quarantine details**: Includes quarantine reason, expiry date, quarantine policy type, and other information.
 - **Message details**: Includes the primary threat reason, date and time of the message sent, and the sender address. Also includes the Teams message ID and the detection technology.
@@ -429,7 +429,7 @@ To take action on the message, see the next section.
 
 After you select a quarantined message from the list, the following actions are available in the details flyout:
 
-:::image type="content" source="../../media/admin-quarantine-teams-actions-details.png" alt-text="The actions menu for messages in quarantine" lightbox="../../media/admin-quarantine-teams-actions-details.png":::
+:::image type="content" source="../../media/admin-quarantine-teams-actions-details.png" alt-text="Screenshot of the actions menu for messages in quarantine." lightbox="../../media/admin-quarantine-teams-actions-details.png":::
 
 - **Release**: Allows the admin to release the message only to the recipients within the organization.
 - **Preview message**: Preview the message in quarantine before taking any action.
@@ -443,7 +443,7 @@ If you don't release or remove the file, it will be deleted after the default qu
 
 When you select multiple quarantined files in the list by clicking the checkbox next to the messages, the **More** option appears:
 
-:::image type="content" source="../../media/admin-quarantine-teams-bulk-action.png" alt-text="The Bulk action options for files in quarantine" lightbox="../../media/admin-quarantine-teams-bulk-action.png":::
+:::image type="content" source="../../media/admin-quarantine-teams-bulk-action.png" alt-text="Screenshot of the Bulk action options for files in quarantine." lightbox="../../media/admin-quarantine-teams-bulk-action.png":::
 
 - **Release**: Select this option to release messages to the intended recipients within the organization.
 - **Delete messages**: Select this option to delete the messages permanently from quarantine.

@@ -69,7 +69,7 @@ Clicking on a Teams message across Microsoft Defender for Office 365 experiences
 - share
 - download
 
-:::image type="content" source="../../media/teams-message-entity-panel-shown-in-quarantine.png" alt-text="Teams Message Entity panel as it is seen in Quarantine." lightbox="../../media/teams-message-entity-panel-shown-in-quarantine.png":::
+:::image type="content" source="../../media/teams-message-entity-panel-shown-in-quarantine.png" alt-text="Screenshot of the Teams Message Entity panel as it is seen in Quarantine." lightbox="../../media/teams-message-entity-panel-shown-in-quarantine.png":::
 
 The **message details** section contains the *primary threat* suspected and *confidence level*, the number of alerts associated with the message, the message location, and who reported it. This is also the location where admins can determine the policy that caused or triggered the action on the message, the policy's Teams message ID, even the chat message text.
 
@@ -77,7 +77,7 @@ The **sender section** displays domain information, like the domain of the sende
 
 The **participants section** includes a lot of message information like the conversation type, chat name, chat ID, and the name and email addresses of all of the participants (excluding the sender). It also links to a secondary overlay flyout that lists all the participants in the chat at the time of the suspected threat.
 
-:::image type="content" source="../../media/teams-message-entity-panel-shown-in-quarantine-with-more-than-10-participants.png" alt-text="Teams Message Entity panel with more than 10 participants." lightbox="../../media/teams-message-entity-panel-shown-in-quarantine-with-more-than-10-participants.png":::
+:::image type="content" source="../../media/teams-message-entity-panel-shown-in-quarantine-with-more-than-10-participants.png" alt-text="Screenshot of the Teams Message Entity panel with more than 10 participants." lightbox="../../media/teams-message-entity-panel-shown-in-quarantine-with-more-than-10-participants.png":::
 
 The **URLs section** displays the extracted URL from the Teams message(s), the threat identified regarding the URL, and links to a second layer overlay flyout, a panel that lists all the URLs and the threats associated with them.
 
