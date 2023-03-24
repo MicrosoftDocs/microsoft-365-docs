@@ -7,13 +7,13 @@ author: MSFTTracyp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 05/05/2021
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 description: View and investigate malware phishing attempts.
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -35,7 +35,7 @@ In this article:
 - [Start automated investigation and response](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Threat Explorer and Real-time detections](real-time-detections.md).
+> This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Threat hunting in Threat Explorer](threat-explorer-threat-hunting.md) and [Threat Explorer and Real-time detections](real-time-detections.md).
 
 This article explains how to view and investigate malware and phishing attempts that are detected in email by Microsoft 365 security features.
 
@@ -47,7 +47,7 @@ To see malware detected in email sorted by Microsoft 365 technology, use the [**
 
    This example uses **Explorer**.
 
-   From here, start at the View, choose a particular frame of time to investigate (if needed), and focus your filters, as per the [Explorer walk- through](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through).
+   From here, start at the View, choose a particular frame of time to investigate (if needed), and focus your filters, as per the [Explorer walk- through](threat-explorer-threat-hunting.md#threat-explorer-walk-through).
 
 2. In the **View** drop down list, verify that **Email** \> **Malware** is selected.
 
@@ -65,11 +65,11 @@ To see malware detected in email sorted by Microsoft 365 technology, use the [**
 
 ### Report a message as clean in Explorer
 
-You can use the **Report clean** option in Explorer to report a message as false positive. 
+You can use the **Report clean** option in Explorer to report a message as false positive.
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Explorer**, and then, in the **View** drop down list, verify that **Phish** is selected.
 
-2. Verify that you're on the **Email** tab, and then from the list of reported messages, select the one you'd like to report as clean. 
+2. Verify that you're on the **Email** tab, and then from the list of reported messages, select the one you'd like to report as clean.
 
 3. Click **Actions** to expand the list of options.
 
@@ -78,11 +78,11 @@ You can use the **Report clean** option in Explorer to report a message as false
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/report-clean-option-explorer.png" alt-text="The Report clean option in the Explorer" lightbox="../../media/report-clean-option-explorer.png":::
 
-5. Toggle the slider to **On**. From the drop down list, specify the number of days you want the message to be removed, add a note if needed, and then select **Submit**. 
+5. Toggle the slider to **On**. From the drop down list, specify the number of days you want the message to be removed, add a note if needed, and then select **Submit**.
 
 ## View phishing URL and click verdict data
 
-You can view phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, [Safe Links](safe-links.md) must be configured. Make sure that you set up [Safe Links policies](set-up-safe-links-policies.md) for time-of-click protection and logging of click verdicts by Safe Links.
+You can view phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, [Safe Links](safe-links-about.md) must be configured. Make sure that you set up [Safe Links policies](safe-links-policies-configure.md) for time-of-click protection and logging of click verdicts by Safe Links.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
 
@@ -133,7 +133,7 @@ In the Email or URL flyouts, Top Clicks, and in our filtering experiences, you'l
 > [!NOTE]
 > Automated investigation and response capabilities are available in *Microsoft Defender for Office 365 Plan 2* and *Office 365 E5*.
 
-[Automated investigation and response](automated-investigation-response-office.md) can save your security operations team time and effort spent investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+[Automated investigation and response](air-about-office.md) can save your security operations team time and effort spent investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
 ## Other articles
 

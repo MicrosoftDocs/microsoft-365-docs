@@ -11,7 +11,7 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 09/28/2022
-ms.reviewer: shlomiakirav
+ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -63,7 +63,7 @@ If you're a Microsoft Cloud Solution Provider (CSP) or MSP, you can use Microsof
 | Resource | Description |
 |:---|:---|
 | [Microsoft Partner Network](https://partner.microsoft.com) | Visit the Microsoft Partner Network to learn how to become a Microsoft partner and join the Microsoft Partner Network. |
-| [Microsoft 365 Business Premium and Defender for Business partner webinar series](https://aka.ms/M365MDBseries) | This webinar series provides: <ul><li>Practical guidance about how to have conversations with your customers about security and drive upsell to Microsoft 365 Business Premium. </li><li>Demos and deep dive walkthroughs for Microsoft 365 Lighthouse and Defender for Business. </li><li>A panel of experts to help answer your questions.</li></ul>   |
-| [Microsoft 365 Business Premium partner playbook and readiness series](https://aka.ms/M365BPPartnerPlaybook) |  Practical guidance on building a profitable managed services practice, with: <ul><li>Examples of successful managed service offerings from industry experts and peers. </li><li>Technical enablement and checklists from Microsoft experts. </li><li>Sales enablement and customer conversation aids to help you market your solution. </li></ul> |
+| [Microsoft 365 Business Premium and Defender for Business partner webinar series](https://aka.ms/M365MDBseries) | This webinar series provides: <br/>- Practical guidance about how to have conversations with your customers about security and drive upsell to Microsoft 365 Business Premium. <br/>- Demos and deep dive walkthroughs for Microsoft 365 Lighthouse and Defender for Business. <br/>- A panel of experts to help answer your questions.   |
+| [Microsoft 365 Business Premium partner playbook and readiness series](https://aka.ms/M365BPPartnerPlaybook) |  Practical guidance on building a profitable managed services practice, with: <br/>- Examples of successful managed service offerings from industry experts and peers. <br/>- Technical enablement and checklists from Microsoft experts. <br/>- Sales enablement and customer conversation aids to help you market your solution.  |
 | [Defender for Business partner kit](https://aka.ms/MDBPartnerKit) | The Defender for Business partner kit provides you with practical guidance, technical information, and customer-ready resources to market and sell Defender for Business to small and medium-sized businesses.  |
 

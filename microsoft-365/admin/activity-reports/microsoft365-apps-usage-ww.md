@@ -3,11 +3,13 @@ title: "Microsoft 365 admin center apps usage reports"
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 09/09/2019
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -29,6 +31,9 @@ For example, you can understand the activity of each user licensed to use Micros
 
 > [!NOTE]
 > Shared computer activations are not included in this report.
+
+> [!NOTE] 
+> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
 
 ## How to get to the Microsoft 365 Apps usage report
 

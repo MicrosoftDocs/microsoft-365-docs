@@ -7,10 +7,11 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg 
 - M365-subscription-management 
 - Adm_O365
@@ -31,6 +32,8 @@ ms.date: 05/24/2022
 # Add more SharePoint storage to your subscription
 
 If you start to run out of storage for your SharePoint sites, you can add storage to your subscription if your plan is eligible. If you don't see the **Office 365 Extra File Storage** in the list of available add-ons, it means your plan is not eligible. For more information, see [Is my plan eligible?](#is-my-plan-eligible-for-office-365-extra-file-storage)
+
+When you buy Office 365 Extra File Storage, you can add units in increments of 1 GB.
 
 > [!NOTE]
 > If you bought your subscription through Volume Licensing or a CSP, you can't buy **Office 365 Extra File Storage** for your organization directly from Microsoft. Contact your representative or partner for help.
@@ -61,12 +64,13 @@ For information about setting site collection storage limits, see [Manage site c
 If you haven't yet bought extra storage for your subscription, you can do that.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. At the bottom of the **Purchase services** page, in the **Add-ons** section, find **Office 365 Extra File Storage**, and select **Details**.
-3. On the product details page, select **Next**.
-4. If needed, choose the base subscription, then enter the number of gigabytes of storage you want to add.
-5. Select **Check out now**.
-6. On the **How does this look?** page, verify the number of gigabytes of storage you selected, review the pricing information, and then select **Next**.
-7. On the **Complete order** page, verify the total. If you need to make any changes, select **Edit order**. If the order requires a credit check, select the check box. When you're finished, select **Place order** \> **Go to Admin Home**.
+2. On the **Your Products** page, select the subscription that contains **SharePoint Online Plan 1** or **SharePoint Online Plan 2**.
+3. In the **Product details and upgrade** section, select **View apps and services included with this subscription**.
+4. Select the **Add-ons** tab,  find **Office 365 Extra File Storage**, and select **Details**.
+5. On the product details page, select **Next** and **Enter the number of gigabytes of storage** you want to add.
+6. Select **Check out now**.
+7. On the **How does this look?** page, verify the number of gigabytes of storage you selected, review the pricing information, and then select **Next**.
+8. On the **Complete order** page, verify the total. If you need to make any changes, select **Edit order**. If the order requires a credit check, select the check box. When you're finished, select **Place order** > **Go to Admin Home**.
 
 ## Increase or decrease your extra storage
 
@@ -86,7 +90,6 @@ Office 365 Extra File Storage is available for the following subscriptions:
 - Office 365 Enterprise E1
 - Office 365 Enterprise E2
 - Office 365 Enterprise E3
-<!-- Office 365 Enterprise E4 -->
 - Office 365 Enterprise E5
 - Office 365 A3 (faculty)
 - Office 365 A5 (faculty)

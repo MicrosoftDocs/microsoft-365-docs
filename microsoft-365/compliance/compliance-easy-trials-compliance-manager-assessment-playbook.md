@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
@@ -40,7 +41,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 1. [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 1. [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
 1. [Understand assessments](compliance-manager.md#assessments)
-1. [Do a quick scan of your environment using the Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
+1. [Do a quick check of your environment using the Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
 
 ## Step 2: Configure Compliance Manager
 

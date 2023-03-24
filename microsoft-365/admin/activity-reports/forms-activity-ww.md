@@ -5,11 +5,13 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 11/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -28,6 +30,9 @@ description: "Learn how to get a Microsoft Forms activity report using the Micro
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It lets you drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
   
 For example, you can understand the activity of every user licensed to use Microsoft Forms by looking at their interaction with forms. It also helps you to understand the level of collaboration going on by looking at the number of forms created and forms the user responded to.
+
+> [!NOTE]
+> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
   
 ## How to get to the Forms activity report
 
@@ -55,4 +60,3 @@ The **Forms activity** report can be viewed for trends over the last 7 days, 30 
 |Last activity date (UTC)   |The latest date a form activity was performed by the user for the selected date range. To see activity that occurred on a specific date, select the date directly in the chart.<br/><br/>This will filter the table to display file activity data only for users who performed the activity on that specific day.   |
 |Number of forms created   |The number of forms that the user created.    |
 |Number of forms responded  |The number of forms that the user has submitted responses to.|
-

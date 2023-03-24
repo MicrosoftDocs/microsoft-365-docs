@@ -3,11 +3,14 @@ title: "Microsoft 365 Health Dashboard"
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 06/15/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: scotvorg
+ms.collection: 
+- Tier2
+- scotvorg
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb

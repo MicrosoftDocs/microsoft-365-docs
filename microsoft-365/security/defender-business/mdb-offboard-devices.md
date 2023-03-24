@@ -10,8 +10,8 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
-ms.reviewer: shlomiakirav
+ms.date: 01/26/2023
+ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -22,12 +22,26 @@ ms.collection:
 
 # Offboard a device from Microsoft Defender for Business
 
-If you want to offboard a device, use one of the following procedures:
+As devices are replaced or retired, or your business needs change, you can offboard devices from Defender for Business. Offboarding a device causes the device to stop sending data to Defender for Business. However, data received prior to offboarding is retained for up to six (6) months.
 
-- [Offboard a Windows device](#offboard-a-windows-device)
-- [Offboard a Mac](#offboard-a-mac)
+> [!IMPORTANT]
+> The procedures in this article describe how to remove a device from monitoring by Defender for Business. If you're using Microsoft Intune to manage devices, and you prefer to remove the device from Intune, see [Remove devices by using wipe, retire, or manually unenrolling the device](/mem/intune/remote-actions/devices-wipe).
 
-## Offboard a Windows device
+## What to do
+
+1. Select a tab:
+
+   - **Windows 10 or 11**
+   - **Mac**
+   - **Servers** (Windows Server or Linux Server)
+   - **Mobile** (for iOS/iPadOS or Android devices)
+
+2. Follow the guidance on the selected tab.
+3. Proceed to your next steps. 
+
+## [**Windows 10 or 11**](#tab/Windows1011)
+
+## Windows 10 or 11
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -43,14 +57,67 @@ If you want to offboard a device, use one of the following procedures:
 
 7. Run the script on each device that you want to offboard.
 
-## Offboard a Mac
+## [**Mac**](#tab/mac)
+
+## Mac
 
 1. Go to **Finder** > **Applications**. 
 
 2. Right click on **Microsoft Defender for Business**, and then choose **Move to Trash**. <br/>--- or --- <br/> Use the following command: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
 
-> [!IMPORTANT]
-> Offboarding a device causes the devices to stop sending data to Defender for Business. However, data received prior to offboarding is retained for up to six (6) months.
+## [**Servers**](#tab/Servers)
+
+## Servers
+
+Choose the operating system for your server:
+
+- [Windows Server](#windows-server)
+- [Linux Server](#linux-server)
+
+### Windows Server
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+
+2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Offboarding**.
+
+3. Select an operating system, such as **Windows Server 1803, 2019, and 2022**, and then in the **Deployment method** section, choose **Local script**. 
+
+4. Select **Download package**. We recommend that you save the offboarding package to a removable drive. The zipped folder will be called `WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD.zip` (where `YYYY-MM-DD` is the expiry date of the package).
+
+5. On your Windows Server device, extract the contents of the zipped folder to a location such as the Desktop folder.  
+
+6. Open a command prompt as an administrator.
+
+7. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type `%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_2022-11-11.cmd` (where `YYYY-MM-DD` is the expiry date of the package), and then press Enter (or select **OK**).
+
+### Linux Server
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+
+2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Offboarding**.
+
+3. Select **Linux Server** for the operating system, and then in the **Deployment method** section, choose **Local script**. 
+
+4. Select **Download package**. We recommend that you save the offboarding package to a removable drive. The zipped folder will be called `WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD.zip` (where `YYYY-MM-DD` is the expiry date of the package).
+
+5. On your Linux Server device, extract the contents of the zipped folder to a location such as the Desktop folder.  
+
+6. Open a terminal, and navigate to the directory where the `MicrosoftDefenderATPOffboardingLinuxServer_valid_until_YYYY-MM-DD` file (where `YYYY-MM-DD` is the expiry date of the file) is located.
+
+7. Type `python MicrosoftDefenderATPOffboardingLinuxServer_valid_until_YYYY-MM-DD.py` in the terminal.
+
+> [!TIP]
+> For more information, see [Uninstall](../defender-endpoint/linux-resources.md) in the Microsoft Defender for Endpoint on Linux guidance.
+
+## [**Mobile devices**](#tab/mobiles)
+
+## Mobile devices
+
+You can use Microsoft Intune to manage mobile devices, such as iOS, iPadOS, and Android devices.
+
+See [Microsoft Intune device management](/mem/intune/remote-actions/device-management).
+
+---
 
 ## Next steps
 

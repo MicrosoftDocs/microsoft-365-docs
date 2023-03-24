@@ -3,11 +3,13 @@ title: "Delete a booking calendar"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 06/18/2020
 audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: "Use the Microsoft 365 admin center or Windows PowerShell to delete Bookings calendars."

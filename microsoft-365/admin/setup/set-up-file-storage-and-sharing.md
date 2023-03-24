@@ -5,11 +5,13 @@ f1.keywords:
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -36,6 +38,8 @@ description: Learn how to use OneDrive and a team site for Microsoft 365 storage
 ---
 
 # Set up file storage and sharing in Microsoft 365
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 One of the best ways to set up file storage and sharing for your business is to use OneDrive and a team site together. This is ideal if you have a small business with a few employees.
 

@@ -1,6 +1,6 @@
 ---
 title: Alert grading for malicious exchange connectors
-description: Alert grading recipients from malicious exchange connectors activity and protect their network from malicious attack. 
+description: Alert grading recipients from malicious exchange connectors activity and protect their network from malicious attack.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -22,6 +22,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
+ms.date: 08/05/2022
 ---
 
 # Alert grading for malicious exchange connectors
@@ -32,14 +33,14 @@ search.appverid:
 
 - Microsoft 365 Defender
 
-Threat actors use compromised exchange connectors for sending out spam and phishing emails in bulk to unsuspecting recipients by masquerading legitimate emails. Since the connector is compromised, the emails would usually be trusted by the recipients. These kinds of phishing emails are common vectors for phishing campaigns, and business email compromise (BEC) scenario. Hence, such emails need to be monitored heavily due to the likelihood of successful recipients’ compromises being high.
+Threat actors use compromised exchange connectors for sending out spam and phishing emails in bulk to unsuspecting recipients by masquerading legitimate emails. Since the connector is compromised, the emails would usually be trusted by the recipients. These kinds of phishing emails are common vectors for phishing campaigns, and business email compromise (BEC) scenario. Hence, such emails need to be monitored heavily due to the likelihood of successful recipients' compromises being high.
 
 The playbook helps in investigating instances, where malicious connectors are setup/deployed by malicious actors. Accordingly, they take necessary steps to remediate the attack and mitigate the security risks arising from it. Playbook is available for security teams like security operations center (SOC) and IT administrators, who review, handle/manage, and grade the alerts. Playbook will help in grading the alerts as either True Positive (TP) or False Positive (FP). If there is TP, playbook will take necessary recommended actions for remediating the attack.
 
 Following are the results of using a playbook:
 
-- Determination of the alert as malicious (TP) or benign (FP). 
-    - If malicious, remediate/remove the malicious connector from the environment.
+- Determination of the alert as malicious (TP) or benign (FP).
+- If malicious, remediate/remove the malicious connector from the environment.
 
 ## Exchange Connectors
 
@@ -49,12 +50,12 @@ Connectors are used to route mail traffic between remote email systems and Offic
 
 ## Malicious Exchange Connectors
 
-Attackers may compromise an existing exchange connector or compromise an admin, and set up a new connector by sending phish or spam/bulk emails. 
+Attackers may compromise an existing exchange connector or compromise an admin, and set up a new connector by sending phish or spam/bulk emails.
 
-The typical indicators of a malicious connector can be found when looking at email traffic and its headers. For example, when email traffic is observed from a connector node with a mismatch in P1 (header sender) and P2 (envelope sender) sender addresses along with no information on Sender’s AccountObjectId.
+The typical indicators of a malicious connector can be found when looking at email traffic and its headers. For example, when email traffic is observed from a connector node with a mismatch in P1 (header sender) and P2 (envelope sender) sender addresses along with no information on Sender's AccountObjectId.
 
-This alert tries to identify such instances of mail flow, wherein the mail sending activity seems suspicious adding to that relevant information on sender is unavailable. 
- 
+This alert tries to identify such instances of mail flow, wherein the mail sending activity seems suspicious adding to that relevant information on sender is unavailable.
+
 ## Playbook workflow
 
 You must follow the sequence to identify malicious exchange connectors:
@@ -77,24 +78,24 @@ This section describes the steps to investigate an alert and remediate the secur
   - Look for events indicating unusual mail traffic and identify, whether any new exchange connector was added recently.
     - For mail traffic observed, determine if the email accounts are compromised by inspecting whether the accounts are responsible for unusual mail traffic.
   - Look for mail content containing malicious artifacts (bad links/attachments).
-  - Look for domains that are not part of your environment. 
+  - Look for domains that are not part of your environment.
 - Determine the email accounts are not compromised. Identify the connector that was recently added or modified in the environment.
-- Look for: 
-  - Field values in the P1 sender (email header sender) and P2 sender (envelope sender), and check whether there’s a mismatch.
+- Look for:
+  - Field values in the P1 sender (email header sender) and P2 sender (envelope sender), and check whether there's a mismatch.
   - Empty values in the SenderObjectId field.
 - Use telemetry data to note:
-  - The NetworkMessageId (Message ID) of the emails that were sent from the malicious connector. 
+  - The NetworkMessageId (Message ID) of the emails that were sent from the malicious connector.
   - The connector creation date, last modified date, and last modified by date.
   - The IP address of the connector from where the email traffic is observed.
-  
+
 ## Advanced Hunting Queries
 
-You can use [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview?) queries to gather information related to an alert and determine whether the activity is suspicious. 
+You can use [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview?) queries to gather information related to an alert and determine whether the activity is suspicious.
 
 Ensure you have access to the following tables:
 
-|**Table Name**  |**Description**  |
-|---------|---------|
+|Table Name|Description|
+|---|---|
 |EmailEvents| Contains information related to email flow.|
 |CloudAppEvents|Contains audit log of user activities.|
 |IdentityLogonEvents|Contains login information for all users.|
@@ -104,7 +105,8 @@ Ensure you have access to the following tables:
 AHQs samples for reference:
 
 - Run this KQL to check new connector creation.
-  ```
+
+  ```KQL
   //modify timeWindow to modify the lookback.
   let timeWindow = now(-7d); let timeNow = now();
   CloudAppEvents
@@ -117,10 +119,11 @@ AHQs samples for reference:
   true, false)
   | where isnotempty( ConnectorName) or IsEnabled
   | project-reorder ConnectorName, IsEnabled
-
-  ```  
-- Run this KQL to check the volume of events from the alerted connector with time window of before and after the alerts.
   ```
+
+- Run this KQL to check the volume of events from the alerted connector with time window of before and after the alerts.
+
+  ```KQL
   //modify timeWindow to modify the lookback.
   let timeWindow = now(-7d); let timeNow = now();
   let connectorOperations = pack_array("Set-OutboundConnector", 
@@ -143,8 +146,10 @@ AHQs samples for reference:
   SenderObjectId, bin(Timestamp, 1h)
   | where MailCount >= mailThreshold
    ```
+
 - Run this KQL to check whether emails are being sent to external domains.
-  ```
+
+  ```KQL
   //modify timeWindow to modify the lookback.
   let timeWindow = now(-7d); let timeNow = now();
   EmailEvents
@@ -156,8 +161,10 @@ AHQs samples for reference:
   | where EmailDirection !in ("Intra-org" , "Inbound") //comment this line to 
   look across all mailflow directions
   ```
+
   - If sent to external domains, who else in the environment is sending similar emails (Could indicate compromised user if recipient is unknown domain).
-     ```
+
+     ```KQL
      //modify timeWindow to modify the lookback.
      let timeWindow = now(-7d); let timeNow = now();
      let countThreshold= 100; //modify count threshold accordingly 
@@ -172,9 +179,9 @@ AHQs samples for reference:
      SenderFromAddress, SenderMailFromAddress , bin(Timestamp, 1h)
      | where MailCount > countThreshold
      ```
-    - Check the mail content for bad behavior
-      - Look at URLs in the email or email having attachments.
 
+    - Check the mail content for bad behavior
+    - Look at URLs in the email or email having attachments.
 
 ## AHQ considerations
 
@@ -182,7 +189,7 @@ Following are the AHQ considerations for protecting the recipients from maliciou
 
 - Check for admin logins for those who frequently manage connectors from unusual locations (generate stats and exclude locations from where most successful logins are observed).
 
-  - Look for login failures from unusual locations.
+- Look for login failures from unusual locations.
 
   ```
   //modify timeWindow to modify the lookback.
@@ -225,9 +232,9 @@ Following are the AHQ considerations for protecting the recipients from maliciou
 
 ## Recommended actions
 
-Once it’s determined that the observed alert activities are part of TP, classify those alerts and perform the actions below:
+Once it's determined that the observed alert activities are part of TP, classify those alerts and perform the actions below:
 
 - Disable or remove the connector that was found to be malicious.
-- If the admin account was compromised, reset the admin’s account credentials. Also, disable/revoke tokens for the compromised admin account and enable multi-factor authentication for all admin accounts.
-  - Look for suspicious activities performed by the admin.
+- If the admin account was compromised, reset the admin's account credentials. Also, disable/revoke tokens for the compromised admin account and enable multi-factor authentication for all admin accounts.
+- Look for suspicious activities performed by the admin.
 - Check for other suspicious activities across other connectors in the environment.

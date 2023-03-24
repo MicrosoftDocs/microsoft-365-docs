@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 1/3/2017
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -67,7 +67,7 @@ When you run the script in this step, it will prompt you for the following infor
 
 - **Name of the Content Search** - The name of the Content Search that will be created by the script.
 
-- **Search query** - The search query that will be used with the Content Search is created and run. For more information about search queries, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
+- **Search query** - The search query that will be used with the Content Search is created and run. For more information about search queries, see [Keyword queries and search conditions for eDiscovery](ediscovery-keyword-queries-and-search-conditions.md).
 
 **To run the script:**
 

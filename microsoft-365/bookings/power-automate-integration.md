@@ -3,11 +3,13 @@ title: "Use Power Automate connectors to build Bookings workflows"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 08/08/2022
 audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 description: "Use Power Automate Bookings Connectors to create custom workflows with appointment triggers."
 ---

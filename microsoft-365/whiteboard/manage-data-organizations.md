@@ -1,9 +1,10 @@
 ---
 title: Manage data for Microsoft Whiteboard
-ms.author: v-jdeweese
-author: johnddeweese
+ms.author: alexfaulkner
+author: alexfaulkner
 manager: alexfaulkner
 ms.reviewer: 
+ms.date: 03/08/2023
 audience: admin
 ms.topic: article
 ms.custom: 
@@ -12,18 +13,17 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn about data retention for Microsoft Whiteboard in Azure and OneDrive for Business.
-
 ---
 
 # Manage data for Microsoft Whiteboard
 
-Whiteboard content is stored in OneDrive for Business and Azure. OneDrive for Business is the default storage for all new whiteboards. Whiteboards that were originally created in Azure, and whiteboards that were initiated on a Surface Hub or a Microsoft Teams Rooms device, are stored in Azure.
+Whiteboard content is stored in OneDrive for Business and Azure. OneDrive for Business is the default storage for all new whiteboards. Whiteboards that were originally created in Azure, and whiteboards that were initiated on a Surface Hub or a Microsoft Teams Rooms device, are stored in Azure.
 
 In order to manage data, you must first ensure that Whiteboard is enabled for your organization. For more information, see [Manage access to Whiteboard](manage-whiteboard-access-organizations.md).
 
 ## Azure storage overview
 
->[!NOTE]
+> [!NOTE]
 > The following information applies to whiteboards that are stored in Azure.
 
 Whiteboard currently stores content securely in Azure. Data might be stored in different locations, depending on the country and when Whiteboard switched to storing new content in those locations. To check where new data is created, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations).
@@ -34,12 +34,12 @@ Content in Azure doesn't support Data Loss Prevention (DLP), eDiscovery, retenti
 
 We're changing how whiteboards are stored when a user's account is deleted in Azure. Prior to the change, any whiteboards that were owned by a deleted user's account were also deleted. However, whiteboards that were shared with others weren't deleted.
 
->[!NOTE]
+> [!NOTE]
 > Whiteboards stored in OneDrive for Business will be handled like any other content in OneDrive for Business. For more information, see [Set the OneDrive retention for deleted users](/onedrive/set-retention).
 
 As of **June 1, 2022**, the behavior of whiteboards on Azure has changed. Any whiteboards shared with other users will be deleted.
 
-If you want to retain a deleted user’s whiteboards, *before* you delete the account, you can transfer ownership. You can transfer a single whiteboard or all of them to another user.
+If you want to retain a deleted user's whiteboards, *before* you delete the account, you can transfer ownership. You can transfer a single whiteboard or all of them to another user.
 
 - Follow these instructions to [transfer all whiteboards](/powershell/module/whiteboard/invoke-transferallwhiteboards).
 
@@ -76,6 +76,27 @@ Data controls planned for future releases:
 - Sensitivity labels
 - Analytics
 - More eDiscovery support
+
+### Transfer whiteboard when a user leaves the company
+
+To preserve a former user's OneDrive files, including .whiteboard files, first give yourself access to their OneDrive, and then move the files you want to keep. 
+
+1. In the admin center, go to the **Users** > [Active users](https://go.microsoft.com/fwlink/p/?linkid=834822) page. 
+2. Select a user. 
+3. On the user properties page, select **OneDrive**. Under **Get access to files**, select **Create link to files**. 
+4. Select the link to open the file location.  
+5. Select the files or folders that you want to move, and then select **Move to**. 
+
+Learn more about preserving a former user’s content: [Step 5 - Give another employee access to OneDrive and Outlook data - Microsoft 365 admin | Microsoft Learn](/admin/add-users/remove-former-employee-step-5)
+
+### Manage moved whiteboards
+
+Once the .whiteboard file appears in the OneDrive for Business of the new owner, they can open, edit, rename, or delete the files. 
+
+1. Open office.com and in the app launcher, select **OneDrive**. 
+2. In the left-hand navigation pane, select **My Files**. 
+3. Open the folder named **Whiteboards**. 
+4. In the list of files, select the moved file and select the **...** button to get rename, delete, and other options. 
 
 ## See also
 

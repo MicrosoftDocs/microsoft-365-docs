@@ -13,12 +13,15 @@ search.appverid:
   - MET150
   - MOE150
 ms.assetid:
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about deployment considerations and frequently asked questions regarding Attack simulation and training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Attack simulation training deployment considerations and FAQ
@@ -71,7 +74,7 @@ It's possible that the number of users who actually receive the simulation email
 - Guest users.
 - Users that are no longer active in Azure Active Directory (Azure AD).
 
-Only valid, non-guest users with a valid mailbox will be included in simulations. If you use distribution groups or mail-enabled security groups to target users, you can use the [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to view and validate distribution group members.
+Only valid, non-guest users with valid Exchange Online mailboxes will be included in simulations. If you use distribution groups or mail-enabled security groups to target users, you can use the [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to view and validate distribution group members.
 
 ## Issues with Attack simulation training reporting
 
@@ -132,9 +135,9 @@ If messages that users reported as phishing aren't captured in Attack simulation
 
 ### Users are assigned training after they report a simulated message
 
-If users are assigned training after they report a phishing simulation message, check to see if your organization has a **custom mailbox** configured in your **user submission policy**. When configuring a **custom mailbox**, this mailbox needs to be excluded from Safe Links and Safe Attachments policies as per the [Custom mailbox prerequisites](user-submission.md).
+If users are assigned training after they report a phishing simulation message, check to see if your organization uses a reporting mailbox to receive user reported messages at <https://security.microsoft.com/securitysettings/userSubmission>. The reporting mailbox needs to be configured to skip many security checks as described in the [reporting mailbox prerequisites](submissions-user-reported-messages-custom-mailbox.md#configuration-requirements-for-the-reporting-mailbox).
 
-If your organization has a **custom mailbox** configured and has not set up the required exclusions, these messages may be detonated, causing training assignments.
+If you don't configure the required exclusions for the custom reporting mailbox, these messages might be detonated by Safe Links or Safe Attachments protection, which will cause training assignments.
 
 ## Other frequently asked questions
 
@@ -190,7 +193,6 @@ A: Region aware delivery uses the TimeZone attribute of the targeted user's mail
 At 9:00 AM on the same day, the simulation message is sent to UserB. With region-aware delivery, the message is not sent to UserA on the same day, because 9:00 AM Pacific time is 12:00 PM Eastern time. Instead, the message is sent to UserA at 9:00 AM Eastern time on the following day.
 
 So, on the initial run of a campaign with region aware delivery enabled, it might appear that the simulation message was sent only to users in a specific time zone. But, as time passes and more users come into scope, the targeted users will increase.
-
 
 ### Q: Does Microsoft collect or store any information that users enter at the Credential Harvest sign-in page, used in the Credential Harvest simulation technique?
 

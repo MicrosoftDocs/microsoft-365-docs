@@ -1,11 +1,11 @@
 ---
-title: Step-by-step threat protection stack in Microsoft Defender for Office 365 
-f1.keywords: 
+title: Step-by-step threat protection stack in Microsoft Defender for Office 365
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/05/2021
+ms.date: 1/31/2023
 ms.reviewer: gigarrub
 audience: ITPro
 ms.topic: conceptual
@@ -13,7 +13,9 @@ ms.localizationpriority: medium
 description: Follow the path of an incoming message through the threat filtering stack in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: m365-security
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
 ---
 
@@ -32,7 +34,7 @@ The Microsoft Defender for Office 365 protection or filtering stack can be broke
 
 ## Phase 1 - Edge Protection
 
-Unfortunately, Edge blocks that were once *critical* are now relatively simple for bad actors to overcome. Over time, less traffic is blocked here, but it remains an important part of the stack.  
+Unfortunately, Edge blocks that were once *critical* are now relatively simple for bad actors to overcome. Over time, less traffic is blocked here, but it remains an important part of the stack.
 
 Edge blocks are designed to be automatic. In the case of false positive, senders will be notified and told how to address their issue. Connectors from trusted partners with limited reputation can ensure deliverability, or temporary overrides can be put in place, when onboarding new endpoints.
 
@@ -88,9 +90,9 @@ In this phase the filtering stack begins to handle the specific contents of the 
 
 1. **Transport rules** (also known as mail flow rules or Exchange transport rules) allow an admin to take a wide range of actions when an equally wide range of conditions are met for a message. All messages that flow through your organization are evaluated against the enabled mail flow rules / transport rules.
 
-2. **Microsoft Defender Antivirus** and two *third-party Antivirus engines* are used to detect all known malware in attachments.
+2. **Microsoft Defender Antivirus** and a *third-party Antivirus engine* are used to detect all known malware in attachments.
 
-3. The anti-virus (AV) engines are also used to true-type all attachments, so that **Type blocking** can block all attachments of types the admin specifies.
+3. The anti-virus (AV) engines are also used to true-type supported attachment types, which allows **Type blocking** to correctly block file types specified by admins.
 
 4. Whenever Microsoft Defender for Office 365 detects a malicious attachment, the file's hash, and a hash of its active content, are added to Exchange Online Protection (EOP) reputation. **Attachment reputation blocking** will block that file across all Office 365, and on endpoints, through MSAV cloud calls.
 

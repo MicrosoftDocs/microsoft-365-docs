@@ -5,11 +5,13 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 11/17/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
 - scotvorg
 - highpri
 - Adm_TOC
@@ -20,6 +22,8 @@ description: "Follow the steps in this article to sign up for Microsoft Teams as
 ---
 
 # Sign up for Microsoft Teams as part of a business subscription
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Microsoft Teams Essentials and Microsoft 365 Business Basic 365 are offered for commercial use and are intended for business customers. This article is to help customers choose which is right for their needs.  Not a business?
 

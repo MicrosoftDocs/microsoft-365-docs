@@ -3,11 +3,13 @@ title: "Experience insights help article report"
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier1 
 - scotvorg
 description: "Get a report of the Microsoft 365 help articles people in your organization are reading."
 ---

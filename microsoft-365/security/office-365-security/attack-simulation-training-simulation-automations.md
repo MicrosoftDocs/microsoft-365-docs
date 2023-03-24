@@ -7,12 +7,13 @@ audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 description: Admins can learn how to create automated simulations that contain specific techniques and payloads that launch when the specified conditions are met in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Simulation automations for Attack simulation training
@@ -21,6 +22,8 @@ search.appverid: met150
 
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
+
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, simulation automations allow you to run multiple benign cyberattack simulations in your organization. Simulation automations can contain multiple payloads and start on an automated schedule. Creating a simulation automation is very similar to [creating an individual simulation](attack-simulation-training-simulations.md), except you also select the payloads and the automation schedule.
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
@@ -55,7 +58,7 @@ On the **Select social engineering techniques** page, select one or more of the 
 - **Credential harvest**: Attempts to collect credentials by taking users to a well-known looking website with input boxes to submit a username and password.
 - **Malware attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
 - **Link in attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
-- **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file and help the attacker compromise the target's device.
+- **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file, opening the file and helping the attacker compromise the target's device.
 - **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
 - **OAuth Consent Grant**: The malicious URL asks users to grant permissions to data for a malicious Azure Application.
 
@@ -219,7 +222,7 @@ On the **Target users** page, select who will receive the simulation. Configure 
 
 - ![Import icon.](../../media/m365-cc-sc-create-icon.png) **Import**: In the dialog that opens, specify a CSV file that contains one email address per line.
 
-  After you find an select the CSV file, the list of users are imported and shown on the **Targeted users** page. You can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find affected users. You can also click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** to remove specific users.
+  After you find and select the CSV file, the list of users are imported and shown on the **Targeted users** page. You can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find affected users. You can also click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** to remove specific users.
 
 When you're finished, click **Next**.
 
@@ -292,7 +295,7 @@ When you're finished, click **Next**.
 
 ### Landing page
 
-On the **Landing page** page, you configure the web page that user are taken to if they open the payload in the simulation.
+On the **Landing page** page, you configure the web page that users are taken to if they open the payload in the simulation.
 
 - **Select landing page preference**: The available values depend on your previous payload selections on the [Select a payload and login page](#select-a-payload-and-login-page) page as described in the following table:
 
@@ -563,3 +566,41 @@ On the **Review simulation automation** page, you can review the details of your
 You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
 When you're finished, click **Submit**.
+
+## Frequently asked questions (FAQ)
+
+This section contains some of the most common questions about Simulation automations.
+
+### Why is the Status value under Automation showing Completed, but the Status value under Simulation showing In progress?
+
+**Completed** on the **Simulation automation** page means the job of simulation automation is complete, and no more simulations will be created by it. Simulation is a separate entity that will complete after 30 days of simulation launch time.
+
+### Why is the simulation end date 30 days after creation, even though I selected an automation end date of one week?
+
+A one week end date for the simulation automation means no new simulations will be created by it after one week. For simulations created by a simulation automation, the default end date is 30 days after the creation of the simulation.
+
+### If we have multiple payload techniques (for example, Credential harvest, Link to Malware, and Drive by URL) targeting 300 users, how are the techniques sent to users? Do all payload techniques go to all users, or is the selection random?
+
+If you don't select the **Target All Selected Users In Every Run** option, all targeted users will be distributed over the maximum number of simulations that are created by the simulation automation.
+
+If you select **Target All Selected Users In Every Run**, all targeted users will be part of every simulation that's created by the simulation automation.
+
+### How does the Randomize option on the Simulation schedule page work?
+
+The **Randomize launch&& option optimally selects a day within the start date and end date range to launch simulations.
+
+### How does the Randomize option on the Select payloads page work?
+
+For every run, a technique from the list of selected techniques is chosen, and then a random payload from both Tenant and Global payloads will be chosen. This behavior helps to ensure that the selected payload wasn't part of any previous run for this particular automation.
+
+### With a randomized schedule, the maximum number of simulations is between 1 and 10. How does this work?
+
+This number is the maximum number of runs that can be created by this automation. For example, if you select 10, the maximum number of simulations that will be created by this automation is 10. The number of simulations can be fewer depending on the number of targeted users and the availability of payloads.
+
+### If I select only one specific day between two days (for example, Wednesday), how many simulations will I see on the Simulation tab?
+
+If there's only one Wednesday between the start date and end date, the automation will have only one valid day to send out the simulation. Even if you selected a higher value for **Max number of simulations**, this value will get overwritten to one.
+
+### How does randomize send times currently work?
+
+Randomize send time works in batches of 1000 users and is meant to be used with a large number of targeted users. If less than 1000 users are involved in simulations created by automations, a randomize send time will not trigger.

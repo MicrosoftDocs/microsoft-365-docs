@@ -9,6 +9,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 01/12/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -39,7 +40,7 @@ There are some minimum requirements for onboarding devices to the service. Learn
 
 ## Licensing requirements
 
-The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md), even when they are included as part of other Microsoft 365 plans, do not include server licenses. To onboard servers to those plans, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more, see the overview of [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md), even when they are included as part of other Microsoft 365 plans, do not include server licenses. To onboard servers to those plans, you'll need either Microsoft Defender for Endpoint for Servers or Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
 For information licensing requirements for Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint licensing information](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
@@ -68,8 +69,8 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 - [Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
 - Windows 10 Enterprise IoT
 
-    >[!NOTE]
-    >While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability.
+  > [!NOTE]
+  > While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability.
 
 - Windows 10 Education
 - Windows 10 Pro
@@ -99,13 +100,14 @@ The hardware requirements for Defender for Endpoint on devices are the same for 
 For more information on supported versions of Windows 10, see [Windows 10 release information](/windows/release-health/release-information).
 
 > [!NOTE]
+>
 > - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
 >
 > - Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
 >
 > - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
 >
-> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need either Defender for Endpoint for Servers, or Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
 When components are up-to-date on Microsoft Windows operating systems, Microsoft Defender for Endpoint support will follow the respective operating system's lifecycle. For more information, see [Lifecycle FAQ](/lifecycle/faq/general-lifecycle). New features or capabilities are typically provided only on operating systems that have not yet reached the end of their lifecycle. Security intelligence updates (definition and engine updates) and detection logic will continue to be provided until at least:
 
@@ -114,10 +116,10 @@ When components are up-to-date on Microsoft Windows operating systems, Microsoft
 
 ### Other supported operating systems
 
+- [macOS](microsoft-defender-endpoint-mac.md)
+- [Linux](microsoft-defender-endpoint-linux.md)
 - [Android](microsoft-defender-endpoint-android.md)
 - [iOS](microsoft-defender-endpoint-ios.md)
-- [Linux](microsoft-defender-endpoint-linux.md)
-- [macOS](microsoft-defender-endpoint-mac.md)
 
 > [!NOTE]
 > You'll need to confirm the Linux distributions and versions of Android, iOS, and macOS are compatible with Defender for Endpoint for the integration to work.
@@ -131,59 +133,11 @@ When you run the onboarding wizard for the first time, you must choose where you
 > - You cannot change your data storage location after the first-time setup.
 > - Review the [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md) for more information on where and how Microsoft stores your data.
 
-### Diagnostic data settings
-
-> [!NOTE]
-> Microsoft Defender for Endpoint doesn't require any specific diagnostic level as long as it's enabled.
-
-Make sure that the diagnostic data service is enabled on all the devices in your organization.
-By default, this service is enabled. It's good practice to check to ensure that you'll get sensor data from them.
-
-#### Use the command line to check the Windows diagnostic data service startup type
-
-1. Open an elevated command-line prompt on the device:
-   1. Go to **Start** and type **cmd**.
-   2. Right-click **Command prompt** and select **Run as administrator**.
-
-2. Enter the following command, and press **Enter**:
-
-   ```console
-   sc qc diagtrack
-   ```
-
-   If the service is enabled, then the result should look like the following screenshot:
-
-   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="Result of the sc query command for diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
-
-You'll need to set the service to automatically start if the **START_TYPE** isn't set to **AUTO_START**.
-
-#### Use the command line to set the Windows diagnostic data service to automatically start
-
-1. Open an elevated command-line prompt on the endpoint:
-    1. Go to **Start** and type **cmd**.
-    2. Right-click **Command prompt** and select **Run as administrator**.
-
-2. Enter the following command, and press **Enter**:
-
-    ```console
-    sc config diagtrack start=auto
-    ```
-
-3. A success message is displayed. Verify the change by entering the following command, and press **Enter**:
-
-    ```console
-    sc qc diagtrack
-    ```
-
 #### Internet connectivity
 
 Internet connectivity on devices is required either directly or through proxy.
 
-The Defender for Endpoint sensor can use a daily average bandwidth of 5 MB to communicate with the Defender for Endpoint cloud service and report cyber data. One-off activities such as file uploads and investigation package collection aren't included in this daily average bandwidth.
-
 For more information on additional proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
-
-Before you onboard devices, the diagnostic data service must be enabled. The service is enabled by default in Windows 10 and Windows 11.
 
 ## Microsoft Defender Antivirus configuration requirement
 
@@ -204,7 +158,7 @@ If you're onboarding servers and Microsoft Defender Antivirus isn't the active a
 
 If you're running Microsoft Defender Antivirus as the primary antimalware product on your devices, the Defender for Endpoint agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Endpoint Manager (current branch), you'll need to ensure the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Configuration Manager (current branch), you'll need to ensure the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## Related topics
 

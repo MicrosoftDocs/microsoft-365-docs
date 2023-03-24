@@ -5,11 +5,13 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -56,7 +58,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 2. Click the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. On that page, different reports for the service are provided in tabs.
 
-   :::image type="content" alt-text="The Usage dashboard." source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
+   :::image type="content" alt-text="The Usage dashboard." source="../../media/activity-usage-analytics3.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 
 ## Who can see reports
 
@@ -79,6 +81,8 @@ People who have the following permissions:
 - Teams Administrator
 
 - Teams Communications Administrator
+
+- User Experience Success Manager (with no user details)
 
 To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
 
@@ -175,4 +179,6 @@ However, when you select a particular day, up to 28 days from the current date, 
 ## Related content
 
 [Microsoft 365 usage analytics](../usage-analytics/usage-analytics.md) (article)\
-[Customize the reports in Microsoft 365 usage analytics](../usage-analytics/customize-reports.md) (article)
+[Customize the reports in Microsoft 365 usage analytics](../usage-analytics/customize-reports.md) (article)\
+[Working with Microsoft 365 usage reports in Microsoft Graph beta](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true) (article)\
+[Working with Microsoft 365 usage reports in Microsoft Graph v1.0](/graph/api/resources/report?view=graph-rest-1.0&preserve-view=true) (article)

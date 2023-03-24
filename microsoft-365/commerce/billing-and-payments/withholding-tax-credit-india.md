@@ -7,10 +7,11 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: null
 ms.collection: 
+- Tier2
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
@@ -31,6 +32,9 @@ ms.date: 05/03/2021
 > If your organization is not based in India, please see [Request a credit for Withholding Tax on your account (Global customers)](withholding-tax-credit-global.md).
 
 Customers in India receive Web Direct (Azure and Microsoft 365) invoices billed by Microsoft Regional Sales Pte Ltd. Singapore (MRS) and make cross-border payments to Singapore to settle the invoice. If you withheld taxes when remitting the payment, this article explains the process for claiming a credit for the Withholding Tax (WHT) in your account with MRS.
+
+> [!IMPORTANT]
+> Starting on April 1, 2023, we will stop accepting checks as a payment method for subscriptions paid by invoice. Beginning on that date, pay by check will no longer be available as a payment option, and check payment instructions will be removed from invoices. You can still pay for your invoice by electronic funds transfer (EFT). See your invoice for EFT payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by EFT, and avoid possible service disruption.
 
 ## For invoice pay customers who pay by check or wire
 
@@ -73,13 +77,13 @@ The following table shows the due dates and timelines to submit digitally signed
 
 After you submit the request, it goes into the approval process where it is either approved for completion or is sent back to you for correction.
 
-If there’s a problem with your request, the review team might require corrections to the withholding amount or replacement of the TDS certificate. You must resubmit the request before it can be approved. The review team will either approve the request or ask for more changes.
+If there's a problem with your request, the review team might require corrections to the withholding amount or replacement of the TDS certificate. You must resubmit the request before it can be approved. The review team will either approve the request or ask for more changes.
 
 ## Approved requests
 
 **For customers paying by check and wire:** Approved WHT requests are settled against the unpaid portion of the invoice amount reflected in the Withholding Tax Credit Form.
 
-After your claim is approved, it’s reflected in the next billing cycle. The WHT amount paid is included in the payment section of your next invoice. The amount is also displayed under the paid amount in the customer portal.
+After your claim is approved, it's reflected in the next billing cycle. The WHT amount paid is included in the payment section of your next invoice. The amount is also displayed under the paid amount in the customer portal.
 
 **For customers paying by credit card:** After your claim is approved, your overpayment is refunded to your credit card.
 

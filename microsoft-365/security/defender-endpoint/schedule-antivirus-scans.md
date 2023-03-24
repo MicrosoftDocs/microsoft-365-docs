@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2022
+ms.date: 11/21/2022
 ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
 ms.subservice: mde
@@ -52,9 +52,11 @@ In addition to always-on, real-time protection and [on-demand antivirus](run-sca
 
 When you set up scheduled scans, you can specify whether the scan should be a full or quick scan. In most cases, a quick scan is recommended; however, we also recommend that you run at least one full scan after installing or enabling Defender Antivirus. This scan provides an opportunity to find existing threats and helps populate the cache for future scans.
 
-|Quick scan|Full scan|Custom scan|
-|---|---|---|
-|(Recommended) A quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. <br/><br/>Combined with always-on, real-time protection, which reviews files when they're opened and closed, and whenever a user navigates to a folder, a quick scan helps provide strong protection against malware that starts with the system and kernel-level malware.<br/><br/>In most cases, a quick scan is sufficient and is the recommended option for scheduled scans.|A full scan starts by running a quick scan and then continues with a sequential file scan of all mounted fixed disks and removable/network drives (if the full scan is configured to do so).<br/><br/>A full scan can take a few hours or days to complete, depending on the amount and type of data that needs to be scanned.<br/><br/>When the full scan is complete, new security intelligence is available, and a new scan is then required to make sure that no other threats are detected with the new security intelligence.<br/><br/>Because of the time and resources involved in a full scan, in general, Microsoft doesn't recommend scheduling full scans.|A custom scan runs on files and folders that you specify. For example, you can choose to scan a USB drive, or a specific folder on your device's local drive.|
+| Scan type | Description |
+|:---|:---|
+| Quick scan | (Recommended) A quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. <br/><br/>Combined with always-on, real-time protection, which reviews files when they're opened and closed, and whenever a user navigates to a folder, a quick scan helps provide strong protection against malware that starts with the system and kernel-level malware.<br/><br/>In most cases, a quick scan is sufficient and is the recommended option for scheduled scans. |
+| Full scan | A full scan starts by running a quick scan and then continues with a sequential file scan of all mounted fixed disks and removable/network drives (if the full scan is configured to do so).<br/><br/>A full scan can take a few hours or days to complete, depending on the amount and type of data that needs to be scanned.<br/><br/>When a full scan begins it uses the security intelligence definitions installed at the time the scan starts. If new security intelligence updates are made available during the full scan, another full scan is required in order to scan for new threat detections contained in the latest update.<br/><br/>Because of the time and resources involved in a full scan, in general, we do not recommend scheduling full scans.|
+| Custom scan | A custom scan runs on files and folders that you specify. For example, you can choose to scan a USB drive or a specific folder on your device's local drive.|
 
 > [!NOTE]
 > By default, quick scans run on mounted removable devices, such as USB drives.
@@ -62,7 +64,6 @@ When you set up scheduled scans, you can specify whether the scan should be a fu
 ## How do I know which scan type to choose?
 
 Use the following table to choose a scan type.
-<br/><br/>
 
 |Scenario|Recommended scan type|
 |---|---|
@@ -88,7 +89,7 @@ Use the following table to choose a scan type.
 
 As a performance optimization, Microsoft Defender Antivirus will skip running scheduled quick scans in some situations. This optimization only applies to a quick scan when initiated by a schedule – it doesn't affect a quick scan initiated by an [on-demand antivirus](run-scan-microsoft-defender-antivirus.md) scan. This optimization reduces performance degradation by avoiding running a quick scan when it isn't necessary and won't affect protection.
 
-By default, if a qualified quick scan was run within the last seven days, a new quick scan won't be initiated. A quick scan is considered qualified if it occurs after the last [Security Intelligence Update](manage-updates-baselines-microsoft-defender-antivirus.md) was installed, Real-Time Protection was not disabled during that period, and if the machine was rebooted.  
+By default, if a qualified quick scan was run within the last seven days, a new quick scan won't be initiated. A quick scan is considered qualified if it occurs after the last [Security Intelligence Update](microsoft-defender-antivirus-updates.md) was installed, Real-Time Protection was not disabled during that period, and if the machine was rebooted.  
 
 This optimization doesn't apply to the following conditions: 
 
@@ -113,3 +114,7 @@ This optimization applies to machines running Windows 10 Anniversary Update (ver
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
+## See also
+
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

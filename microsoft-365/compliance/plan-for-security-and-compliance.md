@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 09/11/2019
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
@@ -57,22 +57,22 @@ Review and plan for file protection capabilities organized by three levels of pr
   
 ## Step 5: Use the Compliance portal
 
-The Compliance portal gives you a single view into the controls you'll use to manage the spectrum of Microsoft 365 security, including threat management, data governance, and search and investigation. 
+The Compliance portal gives you a single view into the controls you'll use to manage the spectrum of Microsoft 365 security, including threat management, data governance, and search and investigation.
   
 - [Go to the Compliance portal](./microsoft-365-compliance-center.md)
-    
+
 - [Permissions in the Compliance portal](~/security/office-365-security/protect-against-threats.md)
-    
-- [Give users access to the Compliance portal](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
-    
+
+- [Add users or groups to a Microsoft Purview built-in role group](microsoft-365-compliance-center-permissions.md#add-users-or-groups-to-a-microsoft-purview-built-in-role-group)
+
 ## Step 6: Use end-to-end security scenarios as starting points
 
 Use these recommended configurations as a starting point for enterprise scale or sophisticated access security scenarios.
   
 - [Secure email policies and configurations](../security/office-365-security/secure-email-recommended-policies.md)
-    
+
 - [Contoso in the Microsoft Cloud](../enterprise/contoso-case-study.md)
-    
+
 ## Microsoft 365 admin centers and dashboards
 
 Configure your security and compliance settings in these admin centers and dashboards to protect your Microsoft 365 environment

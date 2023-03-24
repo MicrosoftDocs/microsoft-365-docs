@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 05/06/2022
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -31,4 +31,3 @@ This unbundled named entity detects names of brand medication, such as *Tylenol*
 ## Confidence level
 
 High
-

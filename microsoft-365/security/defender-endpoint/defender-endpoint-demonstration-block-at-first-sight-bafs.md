@@ -13,11 +13,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
+ms.date: 10/21/2022
 ---
 
 # Block at First Sight (BAFS) demonstration
@@ -35,9 +37,9 @@ Block at First Sight, is a feature of Microsoft Defender Antivirus cloud-deliver
 
 ### Test BAFS
 
-1. Click **Create and download new file** below.
-1. You should see the browser scanning the file, followed by an antivirus block notification.
-1. [Create & download new file!](https://demowdtestground.blob.core.windows.net/samples/ztp_xzXLX_s1H8MsxK2SRlsjmzaH62cOZEaqtstGsOw/wdtestfile.exe?sv=2015-07-08&sr=b&sig=7JNcGzAYWEinuWKNmjoC6tDmEjGZMQj8rAEF9HIzJdE%3D&se=2022-09-30T18%3A29%3A28Z&sp=r)
+Follow the instructions in [Block at first sight demo](https://demo.wd.microsoft.com/Page/BAFS).
+
+
 
 ## See also
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint on iOS 
+title: Microsoft Defender for Endpoint on iOS
 ms.reviewer: 
 description: Describes how to install and use Microsoft Defender for Endpoint on iOS
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, overview, installation, deploy, uninstallation, intune
@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 03/22/2021
 ---
 
 # Microsoft Defender for Endpoint on iOS
@@ -38,51 +39,52 @@ search.appverid: met150
 
 ## Prerequisites
 
-**For End Users**
+### For End Users
 
 - Microsoft Defender for Endpoint license assigned to the end user(s) of the app. See [Microsoft Defender for Endpoint licensing requirements](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).
 
 - **For enrolled devices**:
-    - Device(s) are [enrolled](/mem/intune/user-help/enroll-your-device-in-intune-ios) via the Intune Company Portal app to enforce Intune device compliance policies. This requires the end user to be assigned a Microsoft Intune license.
-    - Intune Company Portal app can be downloaded from the [Apple App Store](https://apps.apple.com/us/app/intune-company-portal/id719171358).
-    
-    >[!NOTE]
-    >Apple does not allow redirecting users to download other apps from the app store so this step needs to be done by the user before onboarding to Microsoft Defender for Endpoint app.)
+  - Device(s) are [enrolled](/mem/intune/user-help/enroll-your-device-in-intune-ios) via the Intune Company Portal app to enforce Intune device compliance policies. This requires the end user to be assigned a Microsoft Intune license.
+  - Intune Company Portal app can be downloaded from the [Apple App Store](https://apps.apple.com/us/app/intune-company-portal/id719171358).
 
+  > [!NOTE]
+  > Apple does not allow redirecting users to download other apps from the app store so this step needs to be done by the user before onboarding to Microsoft Defender for Endpoint app.
 
-    - Device(s) are registered with Azure Active Directory. This requires the end user to be signed in through [Microsoft Authenticator app](https://apps.apple.com/app/microsoft-authenticator/id983156458).
+  - Device(s) are registered with Azure Active Directory. This requires the end user to be signed in through [Microsoft Authenticator app](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 
 - **For unenrolled devices**: Device(s) are registered with Azure Active Directory. This requires the end user to be signed in through [Microsoft Authenticator app](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 
 - For more information on how to assign licenses, see [Assign licenses to users](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
-**For Administrators**
+### For Administrators
 
 - Access to the Microsoft 365 Defender portal.
 
-- Access to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to:
-   - Deploy the app to enrolled user groups in your organization.
-   - Configure Microsoft Defender for Endpoint risk signals in app protection policy (MAM)
-
+- Access to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to:
+  - Deploy the app to enrolled user groups in your organization.
+  - Configure Microsoft Defender for Endpoint risk signals in app protection policy (MAM)
 
     > [!NOTE]
+    >
     > - Microsoft Defender for Endpoint now extends protection to an organization's data within a managed application for those who aren't using mobile device management (MDM) but are using Intune to manage mobile applications. It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for [mobile application management (MAM)](/mem/intune/apps/mam-faq).
-    > - In addition, Microsoft Defender for Endpoint already supports devices that are enrolled using Intune mobile device management (MDM).  
+    > - In addition, Microsoft Defender for Endpoint already supports devices that are enrolled using Intune mobile device management (MDM).
 
-**System Requirements**
+### System Requirements
 
-- iOS device running iOS 12.0 and above. iPads are also supported. *Note that starting 31-March-2022, the minimum supported iOS version by Microsoft Defender for Endpoint will be iOS 13.0.*
+- iOS device running iOS 14.0 and above. iPads are also supported.
 
 - The device is either enrolled with the [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358) or is registered with Azure Active Directory through [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) with the same account.
 
- > [!NOTE]
- > Microsoft Defender for Endpoint on iOS isn't supported currently while using iOS User Enrollment.
+> [!NOTE]
+>
+> - Microsoft Defender for Endpoint on iOS isn't supported on user-less or shared devices.
+> - Microsoft Defender for Endpoint on iOS isn't supported currently while using iOS User Enrollment.
 
 ## Installation instructions
 
-Deployment of Microsoft Defender for Endpoint on iOS can be done via Microsoft Endpoint Manager (MEM) and both supervised and unsupervised devices are supported. End-users can also directly install the app from the [Apple app store](https://aka.ms/mdatpiosappstore).
+Deployment of Microsoft Defender for Endpoint on iOS can be done via Microsoft Intune and both supervised and unsupervised devices are supported. End-users can also directly install the app from the [Apple app store](https://aka.ms/mdatpiosappstore).
 
-- For information on deploying on enrolled devices through Microsoft Endpoint Manager or Intune, see [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).
+- For information on deploying on enrolled devices through Microsoft Configuration Manager or Intune, see [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).
 - For information on using Defender for Endpoint in app protection policy (MAM), see [Configure app protection policy to include Defender for Endpoint risk signals (MAM)](ios-install-unmanaged.md)
 
 ## Resources

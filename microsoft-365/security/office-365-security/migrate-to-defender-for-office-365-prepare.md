@@ -7,7 +7,6 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date: 
 ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid: 
@@ -17,10 +16,12 @@ ms.collection:
   - m365-security
   - m365solution-mdo-migration
   - highpri
+  - tier1
 ms.custom: migrationguides
 description: "Prerequisite steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 1: Prepare
@@ -47,9 +48,9 @@ Welcome to **Phase 1: Prepare** of your **[migration to Microsoft Defender for O
 
 A complete inventory of settings, rules, exceptions, etc. from your existing protection service is a good idea, because you likely won't have access to the information after you cancel your subscription.
 
-**But, it's very important that you do not automatically or arbitrarily recreate all of your existing customizations in Defender for Office 365.** At best, you might introduce settings that are no longer required, relevant, or functional. At worse, some of your previous customizations might actually create security issues in Defender for Office 365.
+**But, it's very important that you do not automatically or arbitrarily recreate all of your existing customizations in Defender for Office 365**. At best, you might introduce settings that are no longer required, relevant, or functional. At worse, some of your previous customizations might actually create security issues in Defender for Office 365.
 
-Your testing and observation of the native capabilities and behavior of Defender for Office 365 will ultimately determine the overrides and settings that you need. You might find it helpful to categorize the settings from your existing protection service into the following categories:
+Your testing and observation of the native capabilities and behavior of Defender for Office 365 will ultimately determine the overrides and settings that you need. You might find it helpful to organize the settings from your existing protection service into the following categories:
 
 - **Connection or content filtering**: You'll likely find that you don't need most of these customizations in Defender for Office 365.
 - **Business routing**: The majority of the customizations that you need to recreate will likely fall into this category. For example, you can recreate these settings in Microsoft 365 as Exchange mail flow rules (also known as transport rules), connectors, and exceptions to spoof intelligence.
@@ -70,8 +71,8 @@ Review your existing protection features in Microsoft 365 and consider removing 
 - If you're using any sort of complex routing (for example [Centralized Mail Transport](/exchange/transport-options)), you should consider simplifying your routing and thoroughly documenting it. External hops, especially after Microsoft 365 has already received the message, can complicate configuration and troubleshooting.
 
 - Outbound and relay mail flow is out of the scope for this article. However, be aware that you might need to do one or more of the following steps:
-  - Verify that all of the domains that you use to send email have the proper SPF records. For more information, see [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
-  - We strongly recommend that you setup DKIM signing in Microsoft 365. For more information, see [Use DKIM to validate outbound email](use-dkim-to-validate-outbound-email.md).
+  - Verify that all of the domains that you use to send email have the proper SPF records. For more information, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
+  - We strongly recommend that you setup DKIM signing in Microsoft 365. For more information, see [Use DKIM to validate outbound email](email-authentication-dkim-configure.md).
   - If you're not routing mail directly from Microsoft 365, you need to change that routing by removing or changing the outbound connector.
 
 - Using Microsoft 365 to relay email from your on-premises email servers can be a complex project in itself. A simple example is a small number of apps or devices that send most of their messages to internal recipients and aren't used for mass mailings. See [this guide](/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) for details. More extensive environments will need to be more thoughtful. Marketing email and messages that could be seen as spam by recipients are not allowed.
@@ -85,31 +86,27 @@ You need to transfer any customizations or features that modify messages in any 
 If you don't turn off message modification features in your existing protection service, you can expect the following negative results in Microsoft 365:
 
 - DKIM will break. Not all senders rely on DKIM, but those that do will fail authentication.
-- [Spoof intelligence](anti-spoofing-protection.md) and the tuning step later in this guide will not work properly.
+- [Spoof intelligence](anti-phishing-protection-spoofing-about.md) and the tuning step later in this guide will not work properly.
 - You'll probably get a high number of false positives (good mail marked as bad).
 
 To recreate external sender identification in Microsoft 365, you have the following options:
 
-- The [Outlook external sender call-out feature](https://techcommunity.microsoft.com/t5/exchange-team-blog/native-external-sender-callouts-on-email-in-outlook/ba-p/2250098), together with [first contact safety tips](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+- The [Outlook external sender call-out feature](https://techcommunity.microsoft.com/t5/exchange-team-blog/native-external-sender-callouts-on-email-in-outlook/ba-p/2250098), together with [first contact safety tips](anti-phishing-policies-about.md#first-contact-safety-tip).
 - Mail flow rules (also known as transport rules). For more information, see [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers).
 
 Microsoft is working with the industry to support the Authenticated Received Chain (ARC) standard in the near future. If you wish to leave any message modification features enabled at your current mail gateway provider, then we recommend contacting them about their plans to support this standard.
 
 ## Account for any active phishing simulations
 
-If you have active third-party phishing simulations, you need to prevent the messages, links, and attachments from being identified as phishing by Defender for Office 365. For more information, see [Configure third-party phishing simulations in the advanced delivery policy](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
+If you have active third-party phishing simulations, you need to prevent the messages, links, and attachments from being identified as phishing by Defender for Office 365. For more information, see [Configure third-party phishing simulations in the advanced delivery policy](skip-filtering-phishing-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
 
 ## Define spam and bulk user experiences
 
-- **Quarantine vs. deliver to Junk Email folder**: The natural and recommended response for malicious and definitely risky messages is to quarantine the messages. But, how do you want your users to handle less harmful messages, such as spam, and bulk mail (also known as *gray mail*). Should these types of messages be delivered to user Junk Email folders?
+- **Quarantine vs. deliver to Junk Email folder**: The natural and recommended response for malicious and definitely risky messages is to quarantine the messages. But, how do you want your users to handle less harmful messages, such as spam, and bulk mail (also known as *gray mail*)? Should these types of messages be delivered to user Junk Email folders?
 
   With our Standard security settings, we generally deliver these less risky types of messages to the Junk Email folder. This behavior is similar to many consumer email offerings, where users can check their Junk Email folder for missing messages, and they can rescue those messages themselves. Or, if the user intentionally signed up for a newsletter or marketing mail, they can choose to unsubscribe or block the sender for their own mailbox.
 
-  However, many enterprise users are used to little (if any) mail in their Junk Email folder. Instead, these enterprise users are used to checking a quarantine for their missing messages. Quarantine introduces issues of quarantine notifications, notification frequency, and the permissions that are required to view and release messages.
-
-  - Domain Keys Identified Mail (DKIM) will break.
-  - [Spoof intelligence](anti-spoofing-protection.md) will not work properly.
-  - You'll probably get a high number of false positives (good mail marked as bad).
+  However, many enterprise users are used to little (if any) mail in their Junk Email folder. Instead, these users are used to checking a quarantine for their missing messages. Quarantine introduces issues of quarantine notifications, notification frequency, and the permissions that are required to view and release messages.
 
   Ultimately, it's your decision if you want to prevent delivery of email to the Junk Email folder in favor of delivery to quarantine. But, one thing is certain: if the experience in Defender for Office 365 is different than what your users are used to, you need to notify them and provide basic training. Incorporate learnings from the pilot and make sure that users are prepared for any new behavior for email delivery.
 
@@ -121,7 +118,7 @@ If you have active third-party phishing simulations, you need to prevent the mes
 
 ## Identify and designate priority accounts
 
-If the feature is available to you, **priority accounts** and **user tags** can help to identify your important Microsoft 365 users so they stand out in reports. For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md) and [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
+If the feature is available to you, **priority accounts** and **user tags** can help to identify your important Microsoft 365 users so they stand out in reports. For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md) and [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
 
 ## Next step
 

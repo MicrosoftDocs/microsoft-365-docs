@@ -2,14 +2,16 @@
 title: "Add a domain to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -37,6 +39,8 @@ description: "Use the setup wizard to add your domain to Microsoft 365 in the Mi
 # Add a domain to Microsoft 365
 
  **[Check the Domains FAQ](domains-faq.yml)** if you don't find what you're looking for.
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
   

@@ -5,11 +5,13 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
+- Tier2 
 - scotvorg
 - highpri
 - M365-subscription-management 
@@ -26,6 +28,8 @@ description: "Learn how Microsoft 365 for business can help you with the General
 ---
 
 # GDPR simplified: A guide for your small business
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
  *Using Microsoft 365 for business to help you to mitigate and manage GDPR compliance* 
   
@@ -139,7 +143,7 @@ If you choose to store personal data in the cloud, such as through Microsoft 365
 
 #### Microsoft 365 features that can help
 
-You can use [Set up compliance features](../../business-premium/m365bp-set-up-compliance.md) to help to protect your business's sensitive information. Compliance Manager can help you get started right away! For example, you can [set up a DLP policy](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) that uses the [GDPR template](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
+You can use [Set up compliance features](../../business-premium/m365bp-set-up-compliance.md) to help to protect your business's sensitive information. Compliance Manager can help you get started right away! For example, you can [Create and Deploy data loss prevention policies](../../compliance/dlp-create-deploy-policy.md) that uses the [GDPR template](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
 
 ### Step 5: Keep documentation on your data processing activities
 

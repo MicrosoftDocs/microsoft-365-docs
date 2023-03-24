@@ -3,11 +3,13 @@ title: "Microsoft 365 admin center groups reports"
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 12/07/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -27,6 +29,9 @@ description: "Get a Microsoft 365 Groups report to gain insights into the activi
 # Microsoft 365 Reports in the admin center - Microsoft 365 groups
 
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the Microsoft 365 groups report, you can gain insights into the activity of groups in your organization and see how many groups are being created and used.
+
+> [!NOTE] 
+> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
 
 ## How to get to the groups report
 

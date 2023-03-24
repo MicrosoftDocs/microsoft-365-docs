@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Take response actions on a file
@@ -41,7 +42,8 @@ Response actions run along the top of the file page, and include:
 
 - Stop and Quarantine File
 - Add Indicator
-- Download file
+- Download file 
+- Collect file
 - Ask Defender Experts
 - Action center
 
@@ -65,13 +67,13 @@ You can contain an attack in your organization by stopping the malicious process
 > [!IMPORTANT]
 > You can only take this action if:
 >
-> - The device you're taking the action on is running Windows 10, version 1703 or later, and Windows 11
+> - The device you're taking the action on is running Windows 10, version 1703 or later, Windows 11, and Windows Server 2012 R2+
 > - The file does not belong to trusted third-party publishers or is not signed by Microsoft
 > - Microsoft Defender Antivirus must at least be running on Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 The **Stop and Quarantine File** action includes stopping running processes, quarantining the files, and deleting persistent data such as registry keys.
 
-This action takes effect on devices with Windows 10, version 1703 or later, and Windows 11, where the file was observed in the last 30 days.
+This action takes effect on devices with Windows 10, version 1703 or later, and Windows 11 and Server 2012 R2+, where the file was observed in the last 30 days.
 
 > [!NOTE]
 > You'll be able to restore the file from quarantine at any time.
@@ -145,6 +147,21 @@ Selecting **Download file** from the response actions allows you to download a l
 
 By default, you should be able to download files that are in quarantine.
 
+The **Download file** button can have the following states:
+
+- **Active** - You'll be able to collect the file. 
+
+- **Disabled** - If the button is grayed out or disabled during an active collection attempt, you may not have appropriate RBAC permissions to collect files.
+
+  The following permissions are required: 
+
+    For Portable Executable file (.exe, .sys, .dll, and others)
+    - Global admin or Advanced live response or Alerts 
+
+    Non-Portable Executable file (.txt, .docx, and others) 
+    - Global admin or Advanced live response
+
+
 :::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
 
 ### Download quarantined files
@@ -165,14 +182,34 @@ This feature won't work if sample submission is turned off. If automatic sample 
 > Download quarantined file requirements:
 >
 > - Your organization uses Microsoft Defender Antivirus in active mode
-> - Antivirus engine version is 1.1.17300.4 or later. See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+> - Antivirus engine version is 1.1.17300.4 or later. See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions)
 > - Cloud–based protection is enabled. See [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - Sample submission is turned on
 > - Devices have Windows 10 version 1703 or later, or Windows server 2016 or 2019, or Windows Server 2022, or Windows 11
 
 ### Collect files
 
-If a file isn't already stored by Microsoft Defender for Endpoint, you can't download it. Instead, you'll see a **Collect file** button in the same location. If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled.
+If a file isn't already stored by Microsoft Defender for Endpoint, you can't download it. Instead, you'll see a **Collect file** button in the same location.
+
+The **Collect file** button can have the following states:
+
+- **Active** - You'll be able to collect the file. 
+
+- **Disabled** - If the button is grayed out or disabled during an active collection attempt, you may not have appropriate RBAC permissions to collect files. 
+
+
+    The following permissions are required: 
+
+    For Portable Executable file (.exe, .sys, .dll, and others)
+    - Global admin or Advanced live response or Alerts 
+
+    Non-Portable Executable file (.txt, .docx, and others) 
+    - Global admin or Advanced live response
+
+
+If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled. 
+
+
 > [!Important]
 > A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired.
 
@@ -249,9 +286,9 @@ Use the deep analysis feature to investigate the details of any file, usually du
 **Submit for deep analysis** is enabled when the file is available in the Defender for Endpoint backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.
 
 > [!NOTE]
-> Only files from Windows 10 and Windows 11 can be automatically collected.
+> Only files from Windows 10, Windows 11, and Windows Server 2012 R2+ can be automatically collected.
 
-You can also submit a sample through the [Microsoft 365 Defender Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11), and wait for **Submit for deep analysis** button to become available.
+You can also submit a sample through the [Microsoft 365 Defender Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11 or Windows Server 2012 R2+), and wait for **Submit for deep analysis** button to become available.
 
 > [!NOTE]
 > Due to backend processing flows in the Microsoft 365 Defender Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
@@ -274,7 +311,7 @@ You can also submit a sample through the [Microsoft 365 Defender Portal](https:/
    A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
 > [!NOTE]
-> Depending on device availability, sample collection time can vary. There is a 3-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 device (or Windows 11) reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
+> Depending on device availability, sample collection time can vary. There is a 3-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 device (or Windows 11 or Windows Server 2012 R2+) reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
 
 ### View deep analysis reports
 

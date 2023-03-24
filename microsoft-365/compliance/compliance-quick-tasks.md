@@ -4,6 +4,7 @@ description: "Learn about tasks that will help you quickly get started with comp
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -66,7 +67,7 @@ Microsoft provides several built-in alert policies that help identify admin perm
 
 Use alert policy and alert dashboard tools to create custom alert policies and view the alerts generated when users perform activities that match the policy conditions. Some examples could be to use alert policies to track user and admin activities affecting compliance requirements, permissions, and data loss incidents in your organization.
 
-For step-by-step guidance to create custom alert policies, see [Alert policies in the security and compliance center](/microsoft-365/compliance/alert-policies).
+For step-by-step guidance to create custom alert policies, see [Alert policies in Microsoft 365](/microsoft-365/compliance/alert-policies).
 
 ## Task 5: Classify and protect sensitive data
 
@@ -90,9 +91,9 @@ For step-by-step guidance to configure retention policies, see [Create and confi
 
 Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. [Communication compliance](/microsoft-365/compliance/communication-compliance) in Microsoft Purview helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
 
-A pre-defined *Detect inappropriate text* policy template allows you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's standards.
+A pre-defined *Detect inappropriate text* policy template allows you to check internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's standards.
 
-The pre-defined *Detect sensitive info* policy template helps you quickly create a policy to scan email and Microsoft Teams communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access. These activities could include unauthorized communication about confidential projects or industry-specific rules on insider trading or other collusion activities.
+The pre-defined *Detect sensitive info* policy template helps you quickly create a policy to check email and Microsoft Teams communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access. These activities could include unauthorized communication about confidential projects or industry-specific rules on insider trading or other collusion activities.
 
 For step-by-step guidance to plan and configure communication compliance, see [Plan for communication compliance](/microsoft-365/compliance/communication-compliance-plan) and [Get started with communication compliance](/microsoft-365/compliance/communication-compliance-configure). For communication compliance licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
@@ -149,7 +150,7 @@ For step-by-step guidance to define custom sensitive information types, see [Cre
 
 [Microsoft Purview Data Loss Prevention (DLP) policies](/microsoft-365/compliance/dlp-learn-about-dlp) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive items across Microsoft services, prevent the accidental sharing of sensitive items, and help users learn how to stay compliant without interrupting their workflow.
 
-For step-by-step guidance to configure DLP policies, [Create, test, and tune a DLP policy](/microsoft-365/compliance/create-test-tune-dlp-policy). For data loss management licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+For step-by-step guidance to configure DLP policies, [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md). For data loss management licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ### Detect and act on insider risks
 

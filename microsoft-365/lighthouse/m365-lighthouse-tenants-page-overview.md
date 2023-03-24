@@ -4,12 +4,14 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: kywirpel
+ms.reviewer: kywirpel
+ms.date: 11/19/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -31,7 +33,7 @@ The Tenants page also includes the following options:
 - **Assign Tags:** Select to assign a tag to a tenant.
 - **Search:** Enter keywords to quickly locate a specific tenant in the list.
 
-:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png" alt-text="Screenshot of the Tenant page.":::
+:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png" alt-text="Screenshot of the Tenants page." lightbox="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png":::
 
 ## Tenant list
 
@@ -45,7 +47,7 @@ The tenant list lets you:
 - Export the tenant list.
 - Assign and manage tags.
 - Search for tenants by name.
-- Filter tenants by status, delegated administrative privilege (DAP), and tags.
+- Filter tenants by status, delegated admin privilege (DAP), and tags.
 
 To inactivate the tenant or view and manage tags, select the three dots (more actions) next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
 
@@ -78,7 +80,7 @@ To help organize your tenants and easily filter the existing views, you can crea
 
 To view detailed tenant information, select a tenant from the list of tenants. The tenant details page contains contact information and deployment plan status.
 
-:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Screenshot of the Tenant details page.":::
+:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Screenshot of the Tenant details page." lightbox="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png":::
 
 ### Overview tab
 
@@ -136,4 +138,3 @@ The Deployment Plan tab also includes the following options:
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Manage your tenant list in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md) (article)\
 [Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
-[Deploy Microsoft 365 Lighthouse baselines](m365-lighthouse-deploy-baselines.md) (article)

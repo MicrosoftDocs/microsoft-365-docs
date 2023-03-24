@@ -77,7 +77,7 @@ Once all prerequisites are met, [connect](/azure/defender-for-cloud/quickstart-o
 
      :::image type="content" source="images/select-plans-aws-gcp.png" alt-text="Screenshot that shows how to enable auto-provisioning for Azure Arc agent." lightbox="images/select-plans-aws-gcp.png":::
 
-   For more information, see [Defender for Cloud’s multicloud capabilities](https://aka.ms/mdcmc).
+   For more information, see [Defender for Cloud's multicloud capabilities](https://aka.ms/mdcmc).
 
 ## What happens once all migration steps are completed?
 
@@ -85,4 +85,4 @@ Once you've completed the relevant migration steps, Microsoft Defender for Cloud
 
 The extension acts as a management and deployment interface, which will orchestrate and wrap the MDE installation scripts inside the operating system and reflect its provisioning state to the Azure management plane. The installation process will recognize an existing Defender for Endpoint installation and connect it to Defender for Cloud by automatically adding Defender for Endpoint service tags.
 
-In case you have Windows Server 2012 R2 or 2016 machines that are provisioned with the legacy, Log Analytics-based Microsoft Defender for Endpoint solution, Microsoft Defender for Cloud’s deployment process will deploy the Defender for Endpoint [unified solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). After successful deployment, it will stop and disable the legacy Defender for Endpoint process on these machines.
+In case you have Windows Server 2012 R2 or 2016 machines that are provisioned with the legacy, Log Analytics-based Microsoft Defender for Endpoint solution, Microsoft Defender for Cloud's deployment process will deploy the Defender for Endpoint [unified solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). After successful deployment, it will stop and disable the legacy Defender for Endpoint process on these machines.

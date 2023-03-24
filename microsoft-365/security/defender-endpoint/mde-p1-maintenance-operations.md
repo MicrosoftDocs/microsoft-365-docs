@@ -36,11 +36,11 @@ Keeping Microsoft Defender Antivirus up to date is critical to protecting agains
 - Security intelligence updates
 - Product updates 
 
-To manage your security intelligence and product updates, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+To manage your security intelligence and product updates, see [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).
 
 ## Fine-tune and adjust Defender for Endpoint
 
-Defender for Endpoint offers you much flexibility and configuration options. You can adjust and fine-tune your settings to suit your organization's needs. For example, you can use Microsoft Endpoint Manager, Group Policy, and other methods to manage your endpoint security settings. 
+Defender for Endpoint offers you much flexibility and configuration options. You can adjust and fine-tune your settings to suit your organization's needs. For example, you can use Microsoft Intune, Group Policy, and other methods to manage your endpoint security settings. 
 
 To learn more, see [Manage Defender for Endpoint](manage-mde-post-migration.md).
 

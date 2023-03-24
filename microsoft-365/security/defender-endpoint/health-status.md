@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 05/06/2021
 ---
 
 # Investigate agent health issues
@@ -28,10 +29,6 @@ search.appverid: met150
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 The following table provides information on the values returned when you run the `mdatp health` command and their corresponding descriptions.
-
-<br>
-
-****
 
 |Value|Description|
 |---|---|
@@ -62,4 +59,21 @@ The following table provides information on the values returned when you run the
 |real_time_protection_enabled|True if real-time antivirus protection is enabled, false otherwise.|
 |real_time_protection_subsystem|Subsystem used to serve real-time protection. If real-time protection isn't operating as expected, this prints unavailable.|
 |release_ring|Release ring. For more information, see [Deployment rings](deployment-rings.md).|
-|
+
+## Component specific health
+
+You can get more detailed health information for different Defender's features with `mdatp health --details <feature>`. For example:
+
+```bash
+mdatp health --details edr
+
+edr_early_preview_enabled                   : "disabled"
+edr_device_tags                             : []
+edr_group_ids                               : ""
+edr_configuration_version                   : "20.199999.main.2022.10.25.03-514032a834557bdd31ac415be6df278d9c2a4c25"
+edr_machine_id                              : "a47ba049f43319ac669b6291ce73275cd445c9cd"
+edr_sense_guid                              : "298a1a8c-04dd-4929-8efd-3bb14cb54b94"
+edr_preferred_geo                           : "unitedstates"
+```
+
+You can run `mdatp health --help` on recent versions to list all supported `feature`s.

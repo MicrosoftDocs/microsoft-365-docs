@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 02/09/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -92,17 +92,6 @@ Determines whether behavior monitoring and blocking capability is enabled on the
 |**Possible values**|disabled (default) <p> enabled|
 |**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
 
-#### Configure file hash computation feature
-
-Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint will compute hashes for files it scans. Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
-
-|Description|Value|
-|---|---|
-|**Key**|enableFileHashComputation|
-|**Data type**|Boolean|
-|**Possible values**|false (default) <p> true|
-|**Comments**|Available in Defender for Endpoint version 101.73.77 or higher.|
-  
 #### Run a scan after definitions are updated
 
 Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.
@@ -212,6 +201,41 @@ Specifies a process for which all file activity is excluded from scanning. The p
 |**Possible values**|any string|
 |**Comments**|Applicable only if *$type* is *excludedFileName*|
 
+#### Muting Non Exec mounts 
+ 
+Specifies the behavior of RTP on mount point marked as noexec. There are two values for setting are:
+
+- Unmuted (`unmute`): The default value, all mount points are scanned as part of RTP.
+- Muted (`mute`): Mount points marked as noexec are not scanned as part of RTP, these mount point can be created for:
+  - Database files on Database servers for keeping data base files.
+  - File server can keep data files mountpoints with noexec option.
+  - Back up can keep data files mountpoints with noexec option.
+
+|Description|Value|
+|---|---|
+|**Key**|nonExecMountPolicy|
+|**Data type**|String|
+|**Possible values**|unmute (default) <p> mute|
+|**Comments**|Available in Defender for Endpoint version 101.85.27 or higher.|
+
+#### Unmonitor Filesystems
+
+Configure filesystems to be unmonitored/excluded from Real Time Protection. The filesystems configured will be validated against Microsoft Defender's list of permitted filesystems that can be unmonitored. By default NFS and Fuse are unmonitored from RTP and Quick and Full scans.
+
+|Description|Value|
+|---|---|
+|**Key**|unmonitoredFilesystems|
+|**Data type**|Array of strings|
+#### Configure file hash computation feature
+
+Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint will compute hashes for files it scans. Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
+
+|Description|Value|
+|---|---|
+|**Key**|enableFileHashComputation|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Available in Defender for Endpoint version 101.85.27 or higher.|
 #### Allowed threats
 
 List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.
@@ -414,6 +438,9 @@ The following configuration profile will:
 ## Full configuration profile example
 
 The following configuration profile contains entries for all settings described in this document and can be used for more advanced scenarios where you want more control over the product.
+  
+> [!NOTE]
+> It is not possible to control all Microsoft Defender for Endpoint communication with only a proxy setting in this JSON.
 
 ### Full profile
 
@@ -457,6 +484,8 @@ The following configuration profile contains entries for all settings described 
          "allow",
          "restore"
       ],
+      "nonExecMountPolicy":"unmute",
+      "unmonitoredFilesystems": ["nfs"],
       "threatTypeSettingsMergePolicy":"merge",
       "threatTypeSettings":[
          {
@@ -532,7 +561,10 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 - automatic_definition_update_enabled
 
 > [!NOTE]
-> For the mdatp_managed.json to take effect, no restart of the `mdatp` deamon is required.
+> No restart of mdatp daemon is required for changes to _most_ configurations in mdatp_managed.json to take effect.
+  **Exception:** The following configurations require a daemon restart to take effect:
+> - cloud-diagnostic
+> - log-rotation-parameters
 
 ## Configuration profile deployment
 

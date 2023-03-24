@@ -20,6 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Track and respond to emerging threats with campaigns in Microsoft Defender for Office 365
@@ -54,7 +55,7 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 ## Investigating a suspicious email campaign using threat reports
 
-In the event that a campaign has targeted your organization and you’d like to learn more about the impact:
+In the event that a campaign has targeted your organization and you'd like to learn more about the impact:
 
 1. Navigate to the [campaign page](https://security.microsoft.com/campaigns).
 1. Select the campaign name that you would like to investigate.
@@ -76,7 +77,7 @@ In the event that a campaign has targeted your organization and you’d like to 
 1. Below the flow diagram, select the **URL clicks** tab to display information regarding the click. Here you can see the user that clicked on a URL, if the user is tagged as a priority account user, the URL itself, and the time of click.
 1. If you want to learn more about the inboxed and clicked messages, select **Explore messages** \> **Inboxed messages**. A new tab will open and navigate to Threat Explorer.
 1. In the **details view** of Explorer you can reference **Latest delivery** to determine if a message is still in the inbox or was moved into quarantine by system ZAP. *To get more details about the specific message, select the message. The flyout provides extra information. Upon selecting the **Open email entity page** on the top left of the flyout, a new tab will open and give you further information about the message.*
-1. If you would like to take an action and move the messages out of the inbox, you can select the message and then select **Message actions** \> **Move to junk folder**. This will ensure your user doesn’t continue to interact with the malicious message that could result in a potential breach.
+1. If you would like to take an action and move the messages out of the inbox, you can select the message and then select **Message actions** \> **Move to junk folder**. This will ensure your user doesn't continue to interact with the malicious message that could result in a potential breach.
 
 ## Next steps
 

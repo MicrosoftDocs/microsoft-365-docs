@@ -2,14 +2,16 @@
 title: "Add DNS records to connect your domain"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -29,6 +31,8 @@ ms.custom:
 ---
 
 # Add DNS records to connect your domain
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 If you purchased a domain from a third-party hosting provider, you can connect it to Microsoft 365 by updating the DNS records in your registrar’s account.
 
@@ -110,7 +114,7 @@ On your hosting provider's website, add a new MX record. Make sure that the fiel
 
 Save the record, and then remove any other MX records.
 
-### Add CNAME records to connect other services (Teams, Exchange Online, AAD, MDM)
+### Add CNAME records to connect other services (Teams, Exchange Online, MDM)
 
 You'll get the information for the CNAME records from the admin center domain setup wizard.
 
@@ -140,7 +144,7 @@ Validate your SPF record by using one of these [SPF validation tools](/office365
 
 SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF cannot protect against. To protect against these, once you've set up SPF, you should also set up DKIM and DMARC for Microsoft 365.
 
-To get started, see [Use DKIM to validate outbound email sent from your domain in Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) and [Use DMARC to validate email in Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
+To get started, see [Use DKIM to validate outbound email sent from your domain in Microsoft 365](../../security/office-365-security/email-authentication-dkim-configure.md) and [Use DMARC to validate email in Microsoft 365](../../security/office-365-security/email-authentication-dmarc-configure.md).
 
 ### Add SRV records for communications services (Teams, Skype for Business)
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 09/17/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -154,11 +154,11 @@ When you create the event, choose the same event type specified in the retention
 
 Alternatively, if you need to create an event for multiple retention labels that have different event types, select the **Choose Existing Labels** option. Then, select the labels that are configured for the event types you want to associate with this event.
 
-### Step 7: Enter keywords or query for Exchange, asset ID for SharePoint and OneDrive
+### Step 7: Enter keywords or a query, or asset ID for SharePoint and OneDrive
 
-Now you narrow the scope of the content. For Exchange content, you do this by specifying keywords or a query. For SharePoint and OneDrive content, you do this by specifying asset IDs.
+Now you narrow the scope of the content. You do this by specifying keywords or a query. For SharePoint and OneDrive content, you can also do this by specifying asset IDs.
 
-For Exchange items, use keywords or a query that uses Keyword Query Language (KQL). For more information about the query syntax, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). For more information about the searchable properties that you can use for Exchange, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+Queries use Keyword Query Language (KQL). For more information about the query syntax, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
 
 For asset IDs, retention will be enforced only on content with the specified *property:value* pair. For example, if you're using the Asset ID property, enter `ComplianceAssetID:<value>` in the box for asset IDs shown in the following picture.
 
@@ -182,7 +182,7 @@ After retention labels are assigned to content, you can use content search to fi
     
 - To find all content with a specific asset ID, enter the **ComplianceAssetID** property and a value, using the format `ComplianceAssetID:<value>`. 
     
-For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+For more information, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
 
 ## Automate events by using PowerShell
 
@@ -216,7 +216,7 @@ A REST API is a service endpoint that supports sets of HTTP operations (methods)
 
 There are two options for using the REST API:
 
-- **Microsoft Power Automate or a similar application** to trigger the occurrence of an event automatically. Microsoft Power Automate is an orchestrator for connecting to other systems, so you don't need to write a custom solution. For more information, see the [Power Automate website](https://flow.microsoft.com/en-us/).
+- **Microsoft Power Automate or a similar application** to trigger the occurrence of an event automatically. Microsoft Power Automate is an orchestrator for connecting to other systems, so you don't need to write a custom solution. For more information, see the [Power Automate website](https://make.powerautomate.com/).
 
 - **PowerShell or an HTTP client to call the REST API** to create events by using PowerShell (version 6 or later), which is part of a custom solution.
 

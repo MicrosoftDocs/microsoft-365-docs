@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
+ms.date: 03/26/2021
 ---
 
 # Migrating from a third-party HIPS to ASR rules

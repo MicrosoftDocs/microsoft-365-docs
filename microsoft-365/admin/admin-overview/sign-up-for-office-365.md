@@ -5,12 +5,13 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: seemg, pablom
+ms.reviewer: zainzaigham, pablom
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier1 
 - scotvorg
 - highpri
 - M365-subscription-management 
@@ -36,6 +37,8 @@ ms.date: 03/17/2021
 
 # How to sign up - Admin Help
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 Sign up for Microsoft 365 for business so that your team can begin using the latest versions of Word, Excel, PowerPoint, and other Office programs.
@@ -59,7 +62,7 @@ Ready to sign up? [Select a Plan](https://products.office.com/zh-cn/business/com
 
 Before you buy, put some thought into the plan you sign up for. This will help prevent growing pains later.
 
-## Watch: Choose a Microsoft 365 subscription
+### Watch: Choose a Microsoft 365 subscription
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198032).
 
@@ -67,7 +70,11 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
-Need help with choosing a plan? Sales consultants are available to answer your questions. Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) and choose one of the contact support options listed at the left side of the page.
+### Need help with choosing a plan?
+
+Deciding on a plan can depend on your specific business needs. The Microsoft 365 plan chooser is designed to help you with this. The chooser will make recommendations based on your answers to questions such as the size of your business, your field of work, the devices you use, and what kind of features, IT support, and security you're looking for. See [Help me find the right plan for my business](https://go.microsoft.com/fwlink/p/?linkid=2224286).
+
+Sales consultants are available to answer your questions. Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) and choose one of the contact support options listed at the left side of the page.
   
 ::: moniker-end
 

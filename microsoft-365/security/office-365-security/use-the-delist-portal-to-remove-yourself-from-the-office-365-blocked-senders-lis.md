@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/18/2016
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: troubleshooting
 
@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier3
 ms.custom:
   - seo-marvel-apr2020
 description: In this article, you'll learn how to use the delist portal to remove yourself from the Microsoft 365 blocked senders list. This is the best response to address 5.7.511 Access denied errors.
@@ -26,7 +26,7 @@ ms.service: microsoft-365-security
 # Use the delist portal to remove yourself from the blocked senders list and address 5.7.511 Access denied errors
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -45,7 +45,6 @@ where  _IP address_ is the IP address of the computer on which the mail server r
 ## Verify senders before removing them from the blocked senders list
 
 There are good reasons for senders to wind up on the blocked senders list, but mistakes can happen. Take a look at this video for a balanced explanation of blocked senders and delisting.
-<p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvD]
 
@@ -72,13 +71,13 @@ There are good reasons for senders to wind up on the blocked senders list, but m
     > [!NOTE]
     > It may take up to 24 hours or results can vary widely before restrictions are removed.
 
-See [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam protection in EOP](outbound-spam-controls.md) to prevent an IP from being blocked.
+See [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam protection in EOP](outbound-spam-protection-about.md) to prevent an IP from being blocked.
 
-### How do fix error code 5.7.511
+### How to fix error code 5.7.511
 
-When there's a problem delivering an email message that you sent, Microsoft 365 or Office 365 sends an email to let you know. The email you receive is a delivery status notification, also known as a DSN or bounce message. The most common type is called a non-delivery report (NDR) and they tell you that a message wasn't delivered. In certain situations, Microsoft must conduct additional investigations against traffic from your IP, and if you're receiving the NDR code 5.7.511, you **will not** be able to use the delist portal.
+When there's a problem delivering an email message that you sent, Microsoft 365 or Office 365 sends an email notification to let you know. The email notification is known a delivery status notification or DSN. The most common type of DSN is a non-delivery report (also known as an NDR or bounce message) that tells you that a message wasn't delivered. In certain situations, Microsoft must conduct additional investigations against traffic from your IP address. If you receive and NDR with code 5.7.511, you **will not** be able to use the delist portal.
 
-> 550 5.7.511 Access denied, banned sender[xxx.xxx.xxx.xxx]. To request removal from this list, forward this message to delist@messaging.microsoft.com. For more information, go to <https://go.microsoft.com/fwlink/?LinkId=526653>.
+> 550 5.7.511 Access denied, banned sender[xxx.xxx.xxx.xxx]. To request removal from this list, forward this message to delist@microsoft.com. For more information, go to https://go.microsoft.com/fwlink/?LinkId=526653.
 
 In the email to request removal from this list, provide the full NDR code and IP address. Microsoft will contact you within 48 hours with the next steps.
 

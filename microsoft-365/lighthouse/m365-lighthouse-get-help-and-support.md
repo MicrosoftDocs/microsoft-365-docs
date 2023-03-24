@@ -4,12 +4,14 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: crimora
+ms.reviewer: crimora
+ms.date: 06/29/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -26,7 +28,7 @@ Several options are available if you need help. First, check to see if there are
 
 - Review the current health of customer tenant services:
 
-    1. In the left navigation pane of Lighthouse, select **Service health**. 
+    1. In the left navigation pane in Lighthouse, select **Service health**. 
     2. View detailed information about current and past issues.
 
 - Review the current health of the Lighthouse tenant services:

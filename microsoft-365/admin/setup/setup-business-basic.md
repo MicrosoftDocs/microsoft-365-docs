@@ -5,11 +5,13 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 05/28/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -31,6 +33,8 @@ description: "Learn how to set up your Microsoft 365 Business Basic subscription
 ---
 
 # Set up Microsoft 365 Business Basic
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 ## Watch: Set up Microsoft 365 Business Basic
 

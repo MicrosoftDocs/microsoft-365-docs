@@ -1,5 +1,6 @@
 ### YamlMime:FAQ
 metadata:
+  ms.date: 06/08/2021
   title: "Centralized Deployment FAQ"
   f1.keywords:
   - NOCSH
@@ -11,6 +12,7 @@ metadata:
   ms.service: microsoft-365-business
   ms.localizationpriority: medium
   ms.collection:
+  - Tier2
   - scotvorg 
   - M365-subscription-management 
   - Adm_O365

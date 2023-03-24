@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: v-dgali
+ms.author: dansimp
 author: dgali297
 ms.localizationpriority: medium
 manager: dansimp
@@ -22,6 +22,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
+ms.date: 08/09/2022
 ---
 
 # Suspicious password spray-related IP activity
@@ -78,7 +79,7 @@ This means there's suspicious user activity originating from an IP address that 
 
 ### 3. Investigate suspicious user activity after signing in
 
-Once a suspicious IP is recognized, you can review the accounts that signed in. It’s possible that a group of accounts were compromised and successfully used to sign in from the IP or other similar IPs.
+Once a suspicious IP is recognized, you can review the accounts that signed in. It's possible that a group of accounts were compromised and successfully used to sign in from the IP or other similar IPs.
 
 Filter all successful attempts to sign in from the IP address around and shortly after the time of the alerts. Then search for malicious or unusual activities in such accounts after signing in.
 

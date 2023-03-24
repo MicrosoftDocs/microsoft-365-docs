@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 01/23/2018
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -24,6 +25,8 @@ description: Deploy your identity infrastructure for Microsoft 365.
 ---
 
 # Deploy your identity infrastructure for Microsoft 365
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 In Microsoft 365 for enterprise, a well-planned and executed identity infrastructure paves the way for stronger security, including restricting access to your productivity workloads and their data to only authenticated users and devices. Security for identities is a key element of a Zero Trust deployment, in which all attempts to access resources both on-premises and in the cloud are authenticated and authorized.
 

@@ -10,7 +10,7 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 08/04/2022
+ms.date: 01/13/2023
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
@@ -1329,6 +1329,44 @@ Microsoft Defender Antivirus client is up and running in a healthy state.
 </td>
 </tr>
 <tr>
+<th colspan="2">Event ID: 1121</th>
+</tr>
+<tr><td>
+Symbolic name:
+</td>
+<td >
+<b>(TBD)</b>
+</td>
+</tr>
+<tr>
+<td>
+Message:
+</td>
+<td >
+<b>Event when an attack surface reduction rule fires in block mode.</b>
+</td>
+</tr>
+<tr>
+<td>
+Description:
+</td>
+<td >
+TBD.
+<dl>
+<dt>Current Platform Version: &lt;Current platform version&gt;</dt>
+<dt>Threat Resource Path: &lt;Path&gt;</dt>
+<dt>Hashes: &lt;Hashes&gt;</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<td></td>
+<td >
+<div class="alert"><b>Note: whatgoeshere?: <b>TBD</b>.</div>
+<div> </div>
+</td>
+</tr>
+<tr>
 <th colspan="2">Event ID: 1127</th>
 </tr>
 <tr><td>
@@ -1599,7 +1637,7 @@ User action:
 This error occurs when there is a problem updating definitions.
 To troubleshoot this event:
 <ol>
-<li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
+<li><a href="microsoft-defender-antivirus-updates.md" data-raw-source="[Update definitions](microsoft-defender-antivirus-updates.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
 <li>Review the entries in the %Windir%\WindowsUpdate.log file for more information about this error.</li>
 <li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
@@ -1692,7 +1730,7 @@ User action:
 The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update.
 To troubleshoot this event:
 <ol>
-<li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
+<li><a href="microsoft-defender-antivirus-updates.md" data-raw-source="[Update definitions](microsoft-defender-antivirus-updates.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
 <li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
@@ -1919,6 +1957,23 @@ Message:
 <td >
 <b>The Dynamic Signature Service deleted the out-of-date dynamic definitions.
 </b>
+</td>
+</tr>
+<tr>
+<td>
+Change to default behavior:
+</td>
+<td >
+<dl>
+<dt><b>Change to dynamic signature event reporting default behavior</b></dt>
+<dt>When a dynamic signature is received by MDE, a 2010 event is reported. However, when the dynamic signature expires or is manually deleted a 2011 event is reported. In some cases, when a new signature is delivered to MDE sometimes hundreds of dynamic signatures will expire at the same time; therefore hundreds of 2011 events are reported. The generation of so many 2011 events can cause a Security information and event management (SIEM) server to become flooded.</dt>
+<dt>To avoid the above situation - starting with platform version 4.18.2207.7 - by default, MDE will now <i>not</i> report 2011 events:<ul>
+<li>This new default behavior is controlled by registry entry: <b>HKLM\SOFTWARE\Microsoft\Windows&nbsp;Defender\Reporting\EnableDynamicSignatureDroppedEventReporting</b>.</li>
+<li>The default value for <b>EnableDynamicSignatureDroppedEventReporting</b> is <b>false</b>, which means <i>2011 events are not reported</i>. If it's set to true, 2011 events <i>are reported</i>.</li>
+</ul>
+</dt>
+<dt>Because 2010 signature events are timely distributed sporadically - and will not cause a spike - 2010 signature event behavior is unchanged.</dt>
+</dl>
 </td>
 </tr>
 <tr>
@@ -2994,7 +3049,7 @@ You can only use Microsoft Defender Antivirus in Windows 10 and Windows 11. For 
 <a id="internal-error-codes"></a>
 The following error codes are used during internal testing of Microsoft Defender Antivirus.
 
-If you see these errors, you can try to [update definitions](manage-updates-baselines-microsoft-defender-antivirus.md) and force a rescan directly on the endpoint.
+If you see these errors, you can try to [update definitions](microsoft-defender-antivirus-updates.md) and force a rescan directly on the endpoint.
 
 
 <table>

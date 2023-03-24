@@ -4,12 +4,14 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: crimora
+ms.reviewer: crimora
+ms.date: 02/28/2023
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -52,20 +54,18 @@ This article describes error messages and problems that you might encounter whil
 
 - Must have delegated access set up for the Managed Service Provider (MSP) to be able to manage the customer tenant*
 - Must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license
-- Must have no more than 2500 licensed users 
+- Must have no more than 2500 licensed users
+- Must reside in the same geographic region (Americas, European Union, or Asia plus Australia) as the partner organization that manages them
 
 **Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.
 
-Either Granular Delegated Admin Privileges (GDAP) plus an indirect reseller relationship or a Delegated Admin Privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse.<br><br>
+Either granular delegated admin privileges (GDAP) plus an indirect reseller relationship or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse.<br><br>
 
 | Status | Description | Resolution |
 |--|--|--|
-| Inactive | The tenant was offboarded at the request of the MSP and is no longer being managed in Lighthouse. | You need to reactivate the tenant. On the **Tenants** page, select the three dots (more actions) next to the tenant that you want to reactivate, and then select **Activate tenant**. It can take 24–48 hours for initial customer data to appear in Lighthouse. |
-| Ineligible - DAP or GDAP is not set up | You don't have DAP or GDAP and indirect reseller admin privileges set up with the tenant, which is required by Lighthouse. | Set up DAP or GDAP and indirect reseller admin privileges in the Microsoft Partner Center. |
-| Ineligible - Required license is missing | The tenant is missing a required license. They need at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, or Microsoft Defender for Business license. | Make sure the tenant has at least one Microsoft 365 Business Premium,  Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license assigned. |
-| Ineligible - User count exceeded | The tenant has more than the maximum of 2500 licensed users allowed by Lighthouse. | Verify that the tenant doesn't have more than 2500 licensed users. |
-| Ineligible - Geo check failed | You and your customer don't reside in the same geographic region, which is required by Lighthouse. | Verify that the customer resides in your geographic region. If not, then you can't manage the tenant in Lighthouse. |
-| In process | Lighthouse discovered the tenant but is still in the process of onboarding them. | Allow Lighthouse 48 hours to complete onboarding of the tenant. |
+| Inactive | Your organization has excluded this customer tenant from Lighthouse management. | You need to reactivate the tenant. On the **Tenants** page, select the three dots (more actions) next to the tenant that you want to reactivate, and then select **Activate tenant**. It can take 24–48 hours for initial customer data to appear in Lighthouse. |
+| Limited | This customer tenant has access to only a limited set of experiences in Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health. | Select the tenant name to see a detailed status of Lighthouse management requirements. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md). |
+| In process | An error occurred during the onboarding process for this customer tenant and we're working on a fix. | If this error persists for more than 48 hours, please contact Support. |
 
 If you confirmed that your customer tenant meets the onboarding criteria and they're still not showing as **Active** in Lighthouse, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 

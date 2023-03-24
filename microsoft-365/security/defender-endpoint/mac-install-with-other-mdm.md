@@ -1,7 +1,7 @@
 ---
 title: Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint on Mac
 description: Install Microsoft Defender for Endpoint on Mac on other management solutions.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, macos,  big sur, monterey, ventura, mde or mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint on macOS
@@ -39,7 +40,6 @@ Before you get started, see [the main Microsoft Defender for Endpoint on macOS p
 ## Approach
 
 > [!CAUTION]
-
 > Currently, Microsoft officially supports only Intune and JAMF for the deployment and management of Microsoft Defender for Endpoint on macOS. Microsoft makes no warranties, express or implied, with respect to the information provided below.
 
 If your organization uses a Mobile Device Management (MDM) solution that is not officially supported, this does not mean you are unable to deploy or run Microsoft Defender for Endpoint on macOS.
@@ -81,44 +81,25 @@ Alternatively, it may require you to convert the property list to a different fo
 Typically, your custom profile has an ID, name, or domain attribute. You must use exactly "com.microsoft.wdav.atp" for this value.
 MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** on a client device, and Defender for Endpoint uses this file for loading the onboarding information.
 
-### Kernel extension policy
+### System configuration profiles
 
-Set up a KEXT or kernel extension policy. Use team identifier **UBF8T346G9** to allow kernel extensions provided by Microsoft.
+macOS requires that a user manually and explicitly approves certain functions that an application uses, for example system extensions, running in background, sending notifications, full disk access etc. Microsoft Defender for Endpoint relies on these functions, and cannot properly function until all these consents are received from a user.
 
-> [!CAUTION]
-> If your environment consists of Apple Silicon (M1) devices, these machines should not receive configuration profiles with KEXT policies.
-> Apple does not support KEXT on these machines, deployment of such profile would fail on M1 machines.
+To grant consent automatically on a user's behalf, an administrator pushes system policies through their MDM system. This is what we strongly recommend doing, instead of relying on manual approvals from end users.
 
-### System extension policy
+We supply all policies that Microsoft Defender for Endpoint requires as mobileconfig files available at [https://github.com/microsoft/mdatp-xplat](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles). Mobileconfig is an Apple's import/export format that [Apple Configurator](https://support.apple.com/apple-configurator) or other products like [iMazing Profile Editor](https://imazing.com/profile-editor) support.
 
-Set up a system extension policy. Use team identifier **UBF8T346G9** and approve the following bundle identifiers:
+Most MDM vendors support importing a mobileconfig file, creating a new custom configuration profile.
 
-- com.microsoft.wdav.epsext
-- com.microsoft.wdav.netext
+To set up profiles:
 
-### Full disk access policy
+1) Find out how a mobileconfig import is done with your MDM vendor.
+2) For all profiles from [https://github.com/microsoft/mdatp-xplat](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles), download a mobileconfig file and import it.
+3) Assign proper scope for each created configuration profile.
 
-Grant Full Disk Access to the following components:
-
-- Microsoft Defender for Endpoint
-    - Identifier: `com.microsoft.wdav`
-    - Identifier Type: Bundle ID
-    - Code Requirement: `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
-
-- Microsoft Defender for Endpoint Security Extension
-    - Identifier: `com.microsoft.wdav.epsext`
-    - Identifier Type: Bundle ID
-    - Code Requirement: `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
-
-### Network extension policy
-
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
-
-- Filter type: Plugin
-- Plugin bundle identifier: `com.microsoft.wdav`
-- Filter data provider bundle identifier: `com.microsoft.wdav.netext`
-- Filter data provider designated requirement: `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
-- Filter sockets: `true`
+Note that Apple regularly creates new types of payloads with new versions of OS.
+You will have to visit the above mentioned page, and publish new profiles once they became available.
+We post notifications to our [What's New page](mac-whatsnew.md) once we make changes like that.
 
 ## Check installation status
 

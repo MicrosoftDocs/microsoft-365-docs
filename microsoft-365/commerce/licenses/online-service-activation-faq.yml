@@ -10,7 +10,9 @@ metadata:
   ms.topic: faq
   ms.service: microsoft-365-business
   ms.custom: commerce_vl
-  ms.collection: scotvorg
+  ms.collection: 
+  - Tier2
+  - scotvorg
   ms.localizationpriority: medium
   description: "Online service activation for Open program Frequently Asked Questions"
 title: Online service activation for Open program Frequently Asked Questions

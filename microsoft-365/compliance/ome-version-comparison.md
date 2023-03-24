@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
+ms.date: 09/17/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -42,11 +43,10 @@ To assess whether this deprecation impacts your organization, see [How to migrat
 |*Sending an encrypted mail*        |Through Exchange mail flow rules|End-user initiated from Outlook desktop or Outlook on the Web; or through Exchange mail flow rules|End-user initiated from Outlook desktop, Outlook for Mac, or Outlook on the Web; through Exchange mail flow rules (also known as transport rules) and data loss prevention (DLP)|
 |*Rights management template*       |   N/A      |Do Not Forward option and custom templates|Do Not Forward option, encrypt-only option, and custom templates|
 |*Recipient type*                   |Internal and external recipients|Internal recipients only         |Internal and external recipients|
-|*Experience for internal recipient*|Recipients receive an HTML message, which they download and open in a web browser or mobile app|Native inline experience in Outlook clients|Native inline experience for recipients in the same organization using Outlook clients.  Recipients can read message from OME portal using clients other than Outlook (no download or app required).|
+|*Experience for internal recipient*|Recipients receive an HTML message, which they download and open in a web browser or mobile app|Native inline experience in Outlook clients|Native inline experience for recipients in the same organization using Outlook clients.  Recipients can read message from encrypted message portal using clients other than Outlook (no download or app required).|
 |*Experience for external recipient*|Recipients receive an HTML message, which they download and open in a web browser or mobile app|N/A|Native inline experience for Microsoft 365 recipients. All other recipients can read message from OME portal (no download or app required).|
 |*Attachment permissions*           |No restrictions on attachments|Attachments are protected|Attachments are protected for the Do Not Forward option and custom templates. Admins can choose whether attachments for the encrypt-only option are protected or not.|
 |*Bring your own key (BYOK) support*|None                |None               |BYOK supported          |
-||
 
 ## Advantages of Microsoft Purview Message Encryption over legacy OME
 
@@ -58,11 +58,11 @@ The new capabilities provide the following advantages:
 - Accounts outside of Microsoft 365, such as Gmail, Yahoo, and Microsoft accounts, are federated with the OME portal, which provides a better user experience for these recipients. All other identities use a one-time pass code to access encrypted messages.
 - Admins can customize branding, and create multiple branding templates.
 - Admins can revoke emails encrypted with the new capabilities.
-- The new capabilities provide detailed usage reports through the Security &amp; Compliance Center.
+- The new capabilities provide detailed usage reports through the Microsoft Purview compliance portal.
 
 ## Microsoft Purview Advanced Message Encryption capabilities
 
-Microsoft Purview Advanced Message Encryption offers additional capabilities on top of Microsoft Purview Message Encryption. You must have Microsoft Purview Message Encryption set up in your organization in order to use Advanced Message Encryption. Also, in order to use these capabilities, recipients must view and reply to secure mail through the Microsoft Purview Message Encryption Portal. The advanced capabilities include:
+Microsoft Purview Advanced Message Encryption offers more capabilities on top of Microsoft Purview Message Encryption. You must have Microsoft Purview Message Encryption set up in your organization in order to use Advanced Message Encryption. Also, in order to use these capabilities, recipients must view and reply to secure mail through the Microsoft Purview Message Encryption Portal. The advanced capabilities include:
 
 - Message revocation
 
@@ -70,7 +70,7 @@ Microsoft Purview Advanced Message Encryption offers additional capabilities on 
 
 - Multiple branding templates
 
-Advanced Message Encryption is not supported in GCC High.
+Advanced Message Encryption isn't supported in GCC High.
 
 For information on using Advanced Message Encryption, see [Microsoft Purview Advanced Message Encryption](ome-advanced-message-encryption.md).
 

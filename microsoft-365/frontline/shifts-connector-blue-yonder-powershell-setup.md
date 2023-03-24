@@ -1,10 +1,10 @@
 ---
 title: Use PowerShell to connect Shifts to Blue Yonder Workforce Management
-author: LanaChin
-ms.author: v-lanachin
-ms.reviewer:
-manager: samanro
-ms.topic: article
+author: daisyfell
+ms.author: daisyfeller
+ms.reviewer: imarquesgil
+manager: pamgreen
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -14,16 +14,18 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
+  - tier2
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Use PowerShell to connect Shifts to Blue Yonder Workforce Management
 
 ## Overview
 
-Use the [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) to integrate the Shifts app in Microsoft Teams with Blue Yonder Workforce Management (Blue Yonder WFM). After a connection is set up, your frontline workers can seamlessly view and manage their schedules in Blue Yonder WFM from within Shifts.
+Use the [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) to integrate the Shifts app in Microsoft Teams with Blue Yonder Workforce Management (Blue Yonder WFM). Your frontline workers can seamlessly view and manage their schedules in Blue Yonder WFM from within Shifts.
 
 In this article, we walk you through how to use PowerShell to set up and configure the connector to integrate Shifts with Blue Yonder WFM.
 
@@ -466,6 +468,7 @@ For help with Shifts connector cmdlets, including the cmdlets used in the script
 - [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance)
 - [Get-CsTeamsShiftsConnectionInstance](/powershell/module/teams/get-csteamsshiftsconnectioninstance)
 - [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance)
+- [Update-CsTeamsShiftsConnectionInstance](/powershell/module/teams/update-csteamsshiftsconnectioninstance)
 - [Remove-CsTeamsShiftsConnectionInstance](/powershell/module/teams/remove-csteamsshiftsconnectioninstance)
 - [Test-CsTeamsShiftsConnectionValidate](/powershell/module/teams/test-csteamsshiftsconnectionvalidate)
 - [New-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/new-csteamsshiftsconnectionteammap)

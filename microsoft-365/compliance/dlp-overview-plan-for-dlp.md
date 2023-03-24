@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 04/20/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -25,13 +25,27 @@ Every organization will plan for and implement data loss prevention (DLP) differ
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## Before you begin
+
+If you are new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
+
+1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
+1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
+1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article that you're reading now, you will:
+    1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+    1. [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+    1. [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+1. [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) - this article introduces all the components of a DLP policy and how each one influences the behavior of a policy
+1. [Design a DLP policy](dlp-policy-design.md) - this article walks you through creating a policy intent statement and mapping it to a specific policy configuration. 
+1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options.
+
 ## Multiple starting points
 
 Many organizations choose to implement DLP to comply with various governmental or industry regulations. For example, the European Union's General Data Protection Regulation (GDPR), or the Health Insurance Portability and Accountability Act (HIPAA), or the California Consumer Privacy Act (CCPA). They also implement data loss prevention to protect their intellectual property. But the starting place and ultimate destination in the DLP journey vary. 
 
 Organizations can start their DLP journey:
 
-- from a platform focus, like wanting to protect information in Teams Chat and Channel messages or on Windows 10 devices
+- from a platform focus, like wanting to protect information in Teams Chat and Channel messages or on Windows 10 or 11 devices
 - knowing what sensitive information they want to prioritize protecting, like health care records, and going straight to defining policies to protect it
 - without knowing what their sensitive information is, where it is, and who is doing what with it so they start with discovery and categorization and take a more methodical approach
 - without knowing what their sensitive information is, or where it is, or who is doing what with it, but they will move straight to defining policies and use those outcomes as a starting place and then refine their policies from there
@@ -135,6 +149,10 @@ Once your organization knows where it stands in terms of regulatory compliance n
 
 **Example** To get started quickly, you pick the `U.K. Financial Data` policy template, which includes the `Credit Card Number`, `EU Debit Card Number`, and `SWIFT Code` sensitive information types. 
 
+##### How you want your policies scoped
+
+If your organization has implemented [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) (preview) you can scope your DLP policies by administrative unit or leave the default full directory scoping. See, [Policy Scoping](dlp-policy-reference.md#policy-scoping)(preview) for more details.
+
 ##### Where are the sensitive items and what business processes are they involved in?
 
 The items that contain your organizations sensitive information are used every day in the course of doing business. You need to know where instances of that sensitive information may occur and what business processes they are used in. This will help you choose the right locations to apply your DLP policies to. DLP policies are applied to locations:
@@ -143,17 +161,20 @@ The items that contain your organizations sensitive information are used every d
 - SharePoint sites
 - OneDrive accounts
 - Teams chat and channel messages
-- Windows 10 Devices
+- Windows 10, 11 and macOS Devices
 - Microsoft Defender for Cloud Apps
 - On-premises repositories
 
-**Example** Your organizations' internal auditors are tracking a set of credit card numbers. They keep a spreadsheet of them in a secure SharePoint site. Several of the employees make copies and save them to their work OneDrive for Business site, which is synced to their Windows 10 device. One of them pastes a list of 14 of them in an email and tries to send it to the outside auditors for review. You'd want to apply the policy to the secure SharePoint site, all the internal auditors OneDrive for Business accounts, their Windows 10 devices, and Exchange email.
+**Example** Your organizations' internal auditors are tracking a set of credit card numbers. They keep a spreadsheet of them in a secure SharePoint site. Several of the employees make copies and save them to their work OneDrive for Business site, which is synced to their Windows 10 device. One of them pastes a list of 14 of them into an email and tries to send it to the outside auditors for review. You'd want to apply the policy to the secure SharePoint site, all the internal auditors OneDrive for Business accounts, their Windows 10 devices, and Exchange email.
 
 ##### What is your organizations tolerance for leakage?
 
 Different groups in your organization may have different views on what's an acceptable level of sensitive item leakage and what's not. Achieving the perfection of zero leakage may come at too high a cost to the business.
 
 **Example** Your organizations' security group, along with the legal team both feel that there should be no sharing of credit card numbers with anyone outside the org and insist on zero leakage. But, as part of regular review of credit card number activity, the internal auditors must share some credit card numbers with third-party auditors. If your DLP policy prohibits all sharing of credit card numbers outside the org, there will be a significant business process disruption and added cost to mitigate the disruption in order for the internal auditors to complete their tracking. This extra cost is unacceptable to the executive leadership. To resolve this, there needs to be an internal conversation to decide an acceptable level of leakage. Once that is decided the policy can provide exceptions for certain individuals to share the information or it can be applied in audit only mode.
+
+> [!IMPORTANT]
+> To learn how to create a policy intent statement and map it to policy configurations see, [Design a data loss prevention policy](dlp-policy-design.md#design-a-data-loss-prevention-policy)
 
 #### Planning for prerequisites
 
@@ -172,7 +193,7 @@ If you're creating DLP policies with a large potential impact, we recommend foll
   
 1. **Start in test mode without Policy Tips** and then use the DLP reports and any incident reports to assess the impact. You can use DLP reports to view the number, location, type, and severity of policy matches. Based on the results, you can fine-tune the policies as needed. In test mode, DLP policies will not impact the productivity of people working in your organization. Also, use this stage to test out your workflow for DLP event review and issue remediation.
     
-2. **Move to Test mode with notifications and Policy Tips** so that you can begin to teach users about your compliance policies and prepare them for the policies that are going to be applied. It's useful to have a link to an organization policy page that provides more details about the policy in the policy tip. At this stage, you can also ask users to report false positives so that you can further refine the policies. Move to this stage once you have confidence that the results of policy application match what they stakeholders had in mind. 
+2. **Move to Test mode with notifications and Policy Tips** so that you can begin to teach users about your compliance policies and prepare them for when the policies are applied. It's useful to have a link to an organization policy page that provides more details about the policy in the policy tip. At this stage, you can also ask users to report false positives so that you can further refine the conditions and reduce the number of false positives. Move to this stage once you have confidence that the results of policy application match what they stakeholders had in mind. 
     
 3. **Start full enforcement on the policies** so that the actions in the rules are applied and the content's protected. Continue to monitor the DLP reports and any incident reports or notifications to make sure that the results are what you intend. 
 
@@ -188,7 +209,7 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
 #### End-user training
 
-When a DLP policy is triggered, you can configure your policies to [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies) to admins and end users. While your policies are still in test mode and before they are set to enforce a blocking action, policy tips are useful ways to raise awareness of risky behaviors on sensitive items and train users to avoid those behaviors in the future.  
+When a DLP policy is triggered, you can configure your policies to [send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies) to admins and end users. While your policies are still in test mode and before they are set to enforce a blocking action, policy tips are useful ways to raise awareness of risky behaviors on sensitive items and train users to avoid those behaviors in the future.  
 
 #### Review DLP requirements and update strategy
 
@@ -198,28 +219,16 @@ The regulations, laws, and industry standards that your organization is subject 
 
 |Customer business needs description  | approach  |
 |---------|---------|
-|**Contoso Bank** is in a highly regulated industry and has  many different types of sensitive items in many different locations. </br> - knows which types of sensitive information are top priority. </br> - must minimize business disruption as policies are rolled out. </br> -  has IT resources and can hire experts to help plan, design deploy </br> - has a premier support contract with Microsoft| - Take the time to understand what regulations they must comply with and how they are going to comply. </br> -Take the time to understand the better together value of the Microsoft Purview Information Protection stack </br> - Develop sensitivity labeling scheme for prioritized items and apply </br> - Involve business process owners </br>- Design/code policies, deploy in test mode, train users </br>- repeat|
+|**Contoso Bank** is in a highly regulated industry and has  many different types of sensitive items in many different locations. </br> - knows which types of sensitive information are top priority. </br> - must minimize business disruption as policies are rolled out. </br> -  has IT resources and can hire experts to help plan, design, and deploy </br> - has a premier support contract with Microsoft| - Can take the time to understand what regulations they must comply with and how they are going to comply. </br> - Can take the time to understand the better together value of the Microsoft Purview Information Protection stack </br> - Can develop a sensitivity labeling scheme for prioritized items and apply </br> - Has involved business process owners </br>- Design/code policies, deploy in test mode, train users </br>- repeat|
 |**TailSpin Toys** doesn’t know what they have or where it is, and have little to no resource depth. They use Teams, OneDrive for Business and Exchange extensively.     |- Start with simple policies on the prioritized locations. </br>- Monitor what gets identified </br>- Apply sensitivity labels accordingly </br>- Refine policies, train users       |
-|**Fabrikam** is a small startup and wants to protect its intellectual property, and must move quickly. They are willing to dedicate some resources, but can't afford to hire outside experts. </br>- Sensitive items are all in Microsoft 365 OneDrive for Business/SharePoint </br>- Adoption of OneDrive for Business and SharePoint is slow, employees/shadow IT use DropBox and Google drive to share/store items </br>- Employees value speed of work over data protection discipline </br>- Customer splurged and bought all 18 employees new Windows 10 devices     |- Take advantage of the default DLP policy in Teams </br>- Use restricted by default setting for SharePoint items </br>- Deploy policies that prevent external sharing </br>- Deploy policies to prioritized locations </br>- Deploy policies to Windows 10 devices </br>- Block uploads to non-OneDrive for Business cloud storage      |
+|**Fabrikam** is a small startup and wants to protect its intellectual property, and must move quickly. They are willing to dedicate some resources, but can't afford to hire outside experts. </br>- Sensitive items are all in Microsoft 365 OneDrive for Business/SharePoint </br>- Adoption of OneDrive for Business and SharePoint is slow, employees/shadow IT use DropBox and Google drive to share/store items </br>- Employees value speed of work over data protection discipline </br>- Customer splurged and bought all 18 employees new Windows devices     |- Take advantage of the default DLP policy in Teams </br>- Use restricted by default setting for SharePoint items </br>- Deploy policies that prevent external sharing </br>- Deploy policies to prioritized locations </br>- Deploy policies to Windows devices </br>- Block uploads to non-OneDrive for Business cloud storage      |
 
-<!--
+## Next steps
 
-## Planning for workloads
 
-### Exchange
 
-### SharePoint
-
-### OneDrive for Business
-
-### Teams
-
-### Windows 10 Devices
-
-### Microsoft Cloud App Security (MCAS)
-
-### On-premises Scanner
--->
+> [!IMPORTANT]
+> To learn more about DLP policy deployment, see [Deployment](dlp-create-deploy-policy.md#deployment)
 
 ## See also
 - [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)

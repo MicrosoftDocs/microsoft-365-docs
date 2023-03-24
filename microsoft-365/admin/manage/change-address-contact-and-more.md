@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg 
 - M365-subscription-management 
 - Adm_O365
@@ -52,6 +53,9 @@ To change other information on your company's profile page:
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
 2. On the **Organization profile** tab, select **Organization information**.
 3. Update your organization's information, then select **Save changes**. Be sure to fill in all required fields marked with an * to enable saving your changes.
+
+> [!NOTE]
+> SharePoint Online and OneDrive have a 256-character limit on Windows PCs. If you exceed the character limit, you receive an error message when you try to do anything within the synchronized document libraries, like creating folders or renaming documents.
 
 An explanation of each field is provided below.
 

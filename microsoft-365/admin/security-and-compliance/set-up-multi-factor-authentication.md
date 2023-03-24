@@ -5,11 +5,13 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -34,6 +36,8 @@ monikerRange: 'o365-worldwide'
 ---
 
 # Set up multifactor authentication for Microsoft 365
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 

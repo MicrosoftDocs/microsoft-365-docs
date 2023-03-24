@@ -5,11 +5,13 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 05/27/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -33,6 +35,8 @@ description: "When you purchase Microsoft 365 Business Standard, you have the op
 ---
 
 # Set up Microsoft 365 Business Standard with a new or existing domain
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 When you purchase Microsoft 365 Business Standard, you have the option of adding a domain you own, or buying one. Check out [Sign up for a Microsoft 365 Business Standard subscription](../simplified-signup/signup-business-standard.md).
 

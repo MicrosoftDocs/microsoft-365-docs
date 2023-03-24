@@ -4,12 +4,14 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
+ms.date: 10/20/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -57,11 +59,10 @@ To enable MFA through Conditional Access, see [Tutorial: Secure user sign-in eve
 4. Select all other users in the list who need to register for MFA, and then select **Create email**.
 
 > [!TIP]
-> If any of the user accounts in the list are emergency access accounts or service accounts for which you don't want to require MFA, select those user accounts, and then select **Exclude users**. The excluded user accounts will no longer appear in the list of users not registered for MFA.
+> Select the **Admin**, **Guest**, or **Members** counts to filter the list by type. If any of the user accounts in the list are emergency access accounts or service accounts for which you don't want to require MFA, select those user accounts, and then select **Exclude users**. The excluded user accounts will no longer appear in the list of users not registered for MFA.
 
 > [!NOTE]
 > If any shared mailbox accounts or inactive user accounts appear in the list of users not registered for MFA, we recommend that you block signin for those accounts so they'll no longer appear in this list.
-
 
 Lighthouse opens your default email client and prepopulates the email message with instructions to register for MFA. All the selected users will be included on the BCC line. If you prefer to individually email users, you can select the email icon next to the username.
 
@@ -69,7 +70,7 @@ If you want to use a different email account, you can export the list of users t
 
 ## Next steps
 
-Once MFA is enabled, you can enable Azure Active Directory (Azure AD) self-service password reset. This feature gives users the ability to change or reset their password with no administrator or help desk involvement. For more information, see [Manage self-service password reset in Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
+Once MFA is enabled, you can enable Azure Active Directory (Azure AD) self-service password reset (SSPR). SSPR gives users the ability to change or reset their password with no administrator or help desk involvement. For more information, see [Manage self-service password reset in Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
 
 ## Related content
 

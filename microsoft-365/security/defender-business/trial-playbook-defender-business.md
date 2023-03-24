@@ -79,7 +79,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
    > [!NOTE]
    > When you use the setup wizard, the system detects if you have Windows devices that are already enrolled in Intune. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once or select specific devices at first and then add more devices later. [Learn more about automatic onboarding](mdb-use-wizard.md#what-is-automatic-onboarding).
 
-   To onboard other devices, see [step 4](#step-4-set-up-and-configure-defender-for-business).
+   To onboard other devices, see [Step 4: Set up and configure Defender for Business](#step-4-set-up-and-configure-defender-for-business).
 
 4. **[View and edit your security policies](mdb-configure-security-settings.md)**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company's devices. These preconfigured security policies use recommended settings, so you're protected as soon as your devices are onboarded to Defender for Business. And you can edit the policies or create new ones.
 
@@ -118,7 +118,7 @@ Security policies to review and configure include:
 
 ## Start using Defender for Business
 
-For the next 30 days, here’s guidance from the product team on key features to try:
+For the next 30 days, here's guidance from the product team on key features to try:
 
 1. [Use your Microsoft Defender Vulnerability Management dashboard](#1-use-the-defender-vulnerability-management-dashboard). 
 
@@ -168,7 +168,7 @@ Quickly see how Defender for Business works by trying a tutorial.
 
 Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to use the simulation file and what to watch for in the Microsoft 365 Defender portal.
 
->[!NOTE]
+> [!NOTE]
 > This tutorial requires Microsoft Word to be installed on your test device.
 
 To access the tutorial, do the following:

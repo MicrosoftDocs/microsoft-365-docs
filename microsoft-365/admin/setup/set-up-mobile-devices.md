@@ -5,11 +5,13 @@ f1.keywords:
 ms.author: sharik
 author: skjerland
 manager: scotv
+ms.date: 10/08/2018
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri 
 - M365-subscription-management
@@ -33,6 +35,8 @@ description: "Install Office on an iPhone or an Android phone, and your work fil
 ---
 
 # Set up mobile devices for Microsoft 365 for business users
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Follow the instructions in the tabs to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
 

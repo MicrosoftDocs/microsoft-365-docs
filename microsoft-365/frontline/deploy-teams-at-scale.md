@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: rahuldey
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -14,10 +14,11 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
+  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-
+ms.date: 10/28/2022
 ---
 
 # Deploy Teams at scale for frontline workers
@@ -50,7 +51,7 @@ Follow these steps to deploy up to 500 teams at a time.
 
 You'll need to create two CSV files for each batch of teams that you deploy:
 
-- **A CSV file that defines the teams you're creating**. This file must contain these required columns, in the following order, starting with the first column:
+- **A CSV file that defines the teams you're creating**. This file must have a title line, and must contain these required columns, in the following order, starting with the first column:
 
     |Column name  |Description  |
     |---------|---------|
@@ -59,7 +60,7 @@ You'll need to create two CSV files for each batch of teams that you deploy:
     |**Visibility**|Whether the team is public (anyone in your organization can join) or private (users need approval from the team owners to join). Options are **Public** and **Private**.|
     |**Team Template ID**|If you're creating a team from a pre-built or custom template, specify the team template ID. See [Get started with team templates in the Teams admin center](/microsoftteams/get-started-with-teams-templates-in-the-admin-console) for a list pre-built team templates and IDs. If you want to use the standard default team template, leave this blank.|
 
-- **A CSV file that maps the users you're adding to each team**. This file must contain these required columns, in the following order, starting with the first column:
+- **A CSV file that maps the users you're adding to each team**. This file must have a title line, and must contain these required columns, in the following order, starting with the first column:
 
     |Column name  |Description  |
     |---------|---------|

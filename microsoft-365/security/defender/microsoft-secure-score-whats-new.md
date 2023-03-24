@@ -22,6 +22,7 @@ search.appverid:
 ms.custom: 
   - seo-marvel-apr2020
   - seo-marvel-jun2020
+ms.date: 02/16/2021
 ---
 
 # What's new in Microsoft Secure Score
@@ -46,7 +47,7 @@ New Microsoft Defender for Office 365 recommendations for anti-phishing policies
 - Quarantine messages that are detected from impersonated users
 - Quarantine messages that are detected from impersonated domains
 - Move messages that are detected as impersonated users by mailbox intelligence
-- Enable the ‘show first contact safety tip’ option
+- Enable the 'show first contact safety tip' option
 - Enable the user impersonation safety tip
 - Enable the domain impersonation safety tip
 - Enable the user impersonation unusual characters safety tip
@@ -76,7 +77,7 @@ New Microsoft Defender for Office 365 recommendations are now available as Secur
   - Set action to take on bulk spam detection
   - Retain spam in quarantine for 30 days
   - Ensure spam safety tips are enabled
-  - Ensure that no sender domains are allowed for anti-spam policies (will replace “Ensure that there are no sender domains allowed for Anti-spam policies” to extend functionality also for specific senders)
+  - Ensure that no sender domains are allowed for anti-spam policies (will replace "Ensure that there are no sender domains allowed for Anti-spam policies" to extend functionality also for specific senders)
 
 - **Anti-spam - Outbound policy**
   - Set maximum number of external recipients that a user can email per hour

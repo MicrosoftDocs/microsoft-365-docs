@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 09/26/2022
 ---
 
 # Ask Defender Experts
@@ -41,7 +42,7 @@ Customers can engage our security experts directly from within Microsoft 365 Def
 - Determine risk and protection regarding threat actors, campaigns, or emerging attacker techniques
 
 > [!NOTE]
-> Experts on Demand is not a security incident response service. It’s intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
+> Experts on Demand is not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
 ## Ask Defender Experts about suspicious cybersecurity activities in your organization
 

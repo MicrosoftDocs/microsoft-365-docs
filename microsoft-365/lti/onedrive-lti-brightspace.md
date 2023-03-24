@@ -3,11 +3,14 @@ title: Integrate Microsoft OneDrive LTI with Desire2Learn Brightspace
 ms.author: danismith
 author: DaniEASmith
 manager: serdars
-ms.reviewer: amitman 
+ms.reviewer: amitman
+ms.date: 08/03/2022
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.collection: m365initiative-edu
+ms.collection: 
+- m365initiative-edu
+- tier2
 ms.localizationpriority: medium
 description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability for Desire2Learn Brightspace.
 ---
@@ -35,8 +38,10 @@ The steps to add the OneDrive LTI app are:
 
 1. Sign into the [Microsoft OneDrive LTI Registration Portal](https://onedrivelti.microsoft.com/admin).
 1. Select the **Admin Consent** button and accept the permissions.
-   >[!IMPORTANT]
-   >If **Admin Consent** isn't accepted, the next step will give you an error, and you'll have to wait an hour before you can continue.
+
+   > [!IMPORTANT]
+   > If **Admin Consent** isn't accepted, the next step will give you an error, and you'll have to wait an hour before you can continue.
+
 1. Select the **Create new LTI Tenant** button.
 1. In the **LTI Consumer Platform** list, select **D2L Brightspace**.
 1. In the **D2L Brightspace Base URL** field, enter your Brightspace base URL, like `https://myschool.brightspace.com`.
@@ -54,8 +59,8 @@ The steps to add the OneDrive LTI app are:
 1. Enter a name for the app, like `Microsoft OneDrive LTI App`.
 1. In the **Domain** field, enter `https://onedrivelti.microsoft.com`.
 1. Navigate to the browser tab with the Microsoft OneDrive LTI Registration Portal to copy the other required values:
-    1. Paste the `ToolOIDCLaunchRedirectUri` value into the **Redirect URLs** field.  
-       >[!IMPORTANT] 
+    1. Paste the `ToolOIDCLaunchRedirectUri` value into the **Redirect URLs** field.
+       >[!IMPORTANT]
        >You'll use this **Redirect URL** value in later steps.
     1. Paste the ``OIDCLoginInitiationUri` value into the **OpenID Connect Login URL** field.
     1. Paste the `ToolPublicJwksUri` value into the **Keyset URL** field.
@@ -171,7 +176,7 @@ To add the OneDrive LTI app to Brightspace's activity bar for quick access, you'
 
 The OneDrive LTI app will now show up in the **Add Existing Content**, **QuickLinks**, and **Insert Stuff** menus in Brightspace.
 
-Users will see a generic link icon rather than a OneDrive cloud icon. The name shown in the menu will be the name provided in the app's LTI link settings.  
+Users will see a generic link icon rather than a OneDrive cloud icon. The name shown in the menu will be the name provided in the app's LTI link settings.
 
 These links can be turned off and on as desired and targeted to specific Orgs and decedents by configuration.
 
@@ -185,4 +190,4 @@ Yes, personal accounts are allowed to open OneDrive to upload the files. There's
 
 ### Does the FilePicker support multiple languages?
 
-The OneDrive LTI FilePicker looks at the LTI language setting parameter passed from the LMS, and (as backup) the browser setting (since the former is an optional claim) to determine the language to use.
+The OneDrive LTI FilePicker looks at the LTI language setting parameter passed from the LMS, and (as backup) the browser setting (since the former is an optional claim) to determine the language to use.

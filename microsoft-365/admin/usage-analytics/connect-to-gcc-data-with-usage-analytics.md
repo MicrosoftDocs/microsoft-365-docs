@@ -5,11 +5,13 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 07/26/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365

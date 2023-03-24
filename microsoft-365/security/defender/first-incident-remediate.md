@@ -1,7 +1,7 @@
 ---
 title: Step 2. Remediate your first incident
 description: How to get started in remediating your first incident in Microsoft 365 Defender.
-keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
+keywords: incidents, alerts, attack story, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -24,7 +24,9 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 04/20/2021
 ---
+
 # Step 2. Remediate your first incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -45,6 +47,9 @@ Microsoft 365 Defender offers several remediation actions that analysts can manu
 - **Initiate live response** - Live response is a capability that gives you instantaneous access to a device by using a remote shell connection. This gives you the ability to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. Live response is designed to enhance investigations by enabling you to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.
 - **Collect investigation package** - As part of the investigation or response process, you can collect an investigation package from a device. By collecting the investigation package, you can identify the current state of the device and further understand the tools and techniques used by the attacker. 
 - **Ask Defender Experts** (available in both Actions on devices and files) - You can consult a Microsoft Defender expert for more insights regarding potentially compromised devices or devices that are already compromised. Microsoft Defender experts can be engaged directly from within Microsoft 365 Defender for a timely and accurate response.
+
+> [!NOTE]
+> You can take actions on devices straight from the graph within the attack story.
 
 ## Actions on files
 

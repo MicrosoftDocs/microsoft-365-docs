@@ -24,6 +24,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 07/11/2022
 ---
 
 # Export incidents queue to CSV files

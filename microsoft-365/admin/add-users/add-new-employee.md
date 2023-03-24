@@ -5,11 +5,13 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
@@ -69,7 +71,7 @@ Just like Facebook, Amazon, or Gmail, your employee signs in to use Microsoft 36
 ## Step 4: Help your employee get started
 
 
-Share with them the [Employee quick setup for Microsoft 365](../setup/employee-quick-setup.md) to sign in, install software, set up email, and more. 
+Share with them the [Employee quick setup for Microsoft 365](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1) to sign in, install software, set up email, and more. 
   
 And here's a quick reference to help get them started:
   
