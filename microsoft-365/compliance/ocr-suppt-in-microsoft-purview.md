@@ -31,21 +31,21 @@ Microsoft Purview can scan for content to help protect your information. The new
 
 | Phase | What's needed|
 |-------|--------------|
-|**Phase 1:** Create your initial Azure subscription | If your organization doesn't already have an Azure pay-as-you-go subscription for your tenant, your Global admin needs to start by creating an  [Azure account](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions.md). |
+|**Phase 1:** Create your initial Azure subscription | If your organization doesn't already have an Azure pay-as-you-go subscription for your tenant, your Global admin needs to start by creating an  [Azure account](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions). |
 |**Phase 2:** Set up pay-as-you-go billing to enable OCR scans | Your Global or SharePoint admin must follow the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](../syntex/syntex-azure-billing.md) to add a subscription for OCR scans. |
 |**Phase 3:** Configure OCR scanning settings | The Compliance admin for your organization configures the OCR settings for your tenant.|
 
 
 ### Phase 1: Prerequisites
 
-To use OCR scanning, your organization's Global admin needs to verify that an Azure pay-as-you-go subscription is in place. If not, they need to set that up, following the instructions in [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)
+To use OCR scanning, your organization's Global admin needs to verify that an Azure pay-as-you-go subscription is in place. If not, they need to set that up, following the instructions in [Create your initial Azure subscriptions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)
 
 
 ### Phase 2: Configure billing
 
 When you enable OCR scans, all sensitive information types and trainable classifiers can detect characters that are in images.
 
-Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR scans. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](../syntex/syntex-azure-billing.md) to add a subscription for OCR scans.
+Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR scans. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](https://learn.microsoft.com/microsoft-365/syntex/syntex-azure-billing) to add a subscription for OCR scans.
 
 > [!NOTE]
 > When you go to the Microsoft Syntex billing page to sign up for your OCR subscription, you do **not** need to also sign up for Microsoft Syntex.
@@ -62,10 +62,10 @@ Because it's an optional feature, your Global admin must set up pay-as-you-go bi
 | Location | Supported Solutions | Policies Applied| Notes |
 |--------------|----------|-------------------|---------------| 
 | Exchange | Data loss prevention <br> <br> Information protection <br> <br> Records management  | **DLP policies** <br> <br>**Information protection policies:** *Auto-labeling policy:* <br> * OCR scans detect keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br> * Outgoing emails are labeled for sensitive information types and trainable classifiers. <br><br> **Records management policies:** *Auto-apply retention label policy:* <br> OCR scans detect keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br> * Retention labels are applied to images embedded in and/or attached to outgoing emails. |  Policies are only applied to outgoing emails. | 
-| Sharepoint sites | Same as Exchange | Same as Exchange | |
+| Sharepoint sites | Same as Exchange | Same as Exchange | | 
 | OneDrive accounts | Data loss prevention <br> <br> Information protection <br> <br> Records management | **DLP policies** <br> <br>**Information protection policies:** *Auto-labeling policy:* <br> OCR scans detect keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br><br> **Records management policies:** *Auto-apply retention label policy:* <br> OCR scans detect keywords as well as content caught by sensitive information classifiers and trainable classifiers. |  |
-| Teams chat and channel messages |Data loss prevention <br> <br> Insider risk management  |**DLP policies** <br><br> **IRM policies** consider sensitive information types and trainable classifiers present in images for risk scoring. |  |
-| Devices | Data loss prevention | **DLP Policies** | | |
+| Teams chat and channel messages | Data loss prevention <br> <br> Insider risk management  |**DLP policies** <br><br> **IRM policies** consider sensitive information types and trainable classifiers present in images for risk scoring. |  |
+| Devices | Data loss prevention | **DLP Policies** | | 
 
 <br>
 
@@ -89,7 +89,7 @@ This new functionality supports scanning images in the following file types, wit
 <br>
 
 ## What languages are supported?
-OCR scanning supports more than [150 languages](azure/cognitive-services/computer-vision/language-support#print-text.md).
+OCR scanning supports more than [150 languages](https://learn.microsoft.com/en-us/azure.microsoft.com/cognitive-services/computer-vision/language-support).
 
 ## Summary
 - You can subscribe to OCR scanning without subscribing to Microsoft Syntex.
