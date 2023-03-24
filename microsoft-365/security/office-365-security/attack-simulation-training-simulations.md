@@ -460,9 +460,6 @@ When you click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Cre
 
 Back on the **Tenant landing pages** tab of the **Select phish landing page**, select the landing page you created by selecting the check box next to the **Name**, and then click **Next**.
 
-> [!NOTE]
-> 
-
 ## Select end user notification
 
 On the **Select end user notification** page, select from the following notification options:
