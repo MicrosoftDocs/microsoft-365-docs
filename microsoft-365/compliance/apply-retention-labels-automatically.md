@@ -185,14 +185,14 @@ SharePoint and OneDrive:
 
 |Condition|New or modified items |Existing items |
 |:-----|:-----|:-----|
-|Sensitive info types - built-in| Yes | Yes <sup>\*</sup> |
+|Sensitive info types | Yes | Yes <sup>\*</sup> |
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
 **Footnote:**
 
 <sup>\*</sup>
-Applies only to content that's older than the selected sensitive information type (built-in or custom). You can determine this information by using [auditing events](audit-log-activities.md#sensitive-information-types).
+Applies only to content that's already classified, which you can  determine by using [content explorer](data-classification-content-explorer).
 
 #### Auto-apply labels to content with specific types of sensitive information
 
