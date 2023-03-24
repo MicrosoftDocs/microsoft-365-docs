@@ -74,7 +74,7 @@ sections:
 
       - question: |
           About roles
-      - answer: |
+        answer: |
         |VLSC Permission Role|MAC VL Permission Role|Allowable Action|
         |---|---|
         |Administrator|Administrator|- Assign/Edit/Remove uers permission\ - Can perform all actions allowed to other VL roles|
