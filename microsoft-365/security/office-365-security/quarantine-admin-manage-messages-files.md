@@ -421,7 +421,7 @@ When you select a quarantined message from the list, the following information i
 - **Message details**: Includes the primary threat reason, date and time of the message sent, and the sender address. Also includes the Teams message ID and the detection technology.
 - **Sender**: Includes the sender name, their domain location, and whether the sender is from outside the organization.
 - **Participants**: The names and email IDs of all the people who received the same message.
-- **URLs**: Includes the details of any malicious URls that were detected in the chat message.
+- **URLs**: Includes the details of any malicious URLs that were detected in the chat message.
 
 To take action on the message, see the next section.
 

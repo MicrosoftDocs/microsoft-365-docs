@@ -43,7 +43,7 @@ User reporting of messages in Teams is made of two separate settings:
 
 - **In the Teams admin center**: On by default and controls whether users are able to report messages from Teams. When this setting is turned off, users can't report messages within Teams, so the corresponding setting in the Microsoft 365 Defender portal is irrelevant.
 
-- **In the Microsoft 365 Defender portal**: On by default. If user reporting of messages is turned on in the Teams admin center, you'll must have it turned on in the Defender portal for submissions to show up correctly.
+- **In the Microsoft 365 Defender portal**: On by default. If user reporting of messages is turned on in the Teams admin center, you must have it turned on in the Defender portal for submissions to show up correctly.
 
 ### Turn off or turn on user reporting in the Teams admin center
 
@@ -55,7 +55,7 @@ To view or configure this setting, you need to be a member of the **Global Admin
    - Click the link in the **Name** column.
    - Select the policy by clicking anywhere other than the **Name** column, and then click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
 
-3. In the policy details page tht opens, find the **Report a security concern** toggle. By default, it's ![Teams 'Report a security concern' toggle on.](../../media/scc-toggle-on.png) **On**. To turn it off, toggle the setting to ![Teams 'Report a security concern' toggle off.](../../media/scc-toggle-off.png) **Off**.
+3. In the policy details page that opens, find the **Report a security concern** toggle. By default, it's ![Teams 'Report a security concern' toggle on.](../../media/scc-toggle-on.png) **On**. To turn it off, toggle the setting to ![Teams 'Report a security concern' toggle off.](../../media/scc-toggle-off.png) **Off**.
 
 4. Click **Save**, and then click **Confirm** in the confirmation dialog that opens.
 
@@ -111,7 +111,7 @@ For more information about user reported message settings in the Defender portal
 
 What happens to a user reported Teams message depends on the settings in the **Reported message destinations** section on the **User reported settings** page at <https://security.microsoft.com/securitysettings/userSubmission>:
 
-- **Send reported messages to** \> **Microsoft and my reporting mailbox**: For Microsoft 365 organizations created after March 1 2023, this is the default value. The default user reporting mailbox is the Exchange Online mailbox of the global admin. The value for older Microsoft 365 organizations are unchanged.
+- **Send reported messages to** \> **Microsoft and my reporting mailbox**: For Microsoft 365 organizations created after March 1 2023, this is the default value. The default user reporting mailbox is the Exchange Online mailbox of the global admin. The value for older Microsoft 365 organizations is unchanged.
 - **Send reported messages to** \> **Microsoft only**
 - **Send reported messages to** \> **My reporting mailbox only**
 
