@@ -44,7 +44,7 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/wi
 
 ## Availability
 
-Network Protection for macOS will soon be available for all Microsoft Defender for Endpoint onboarded macOS devices which meet the minimum requirements. Microsoft will begin incrementally rolling out the functionality for all macOS devices to enable Network Protection on 1/31/2023 with target completion, subject to change, by 3/24/23. When this feature rolls to production, all of your currently configured Network Protection and Web Threat Protection policies will be enforced on macOS devices where Network Protection is configured for block mode.
+Network Protection for macOS will soon be available for all Microsoft Defender for Endpoint onboarded macOS devices which meet the minimum requirements. Microsoft will begin incrementally rolling out the functionality for all macOS devices to enable Network Protection on 1/31/2023 with target completion, subject to change, in May 2023. When this feature rolls to production, all of your currently configured Network Protection and Web Threat Protection policies will be enforced on macOS devices where Network Protection is configured for block mode.
 
 To prepare for the macOS network protection rollout, we recommend the following:
 
