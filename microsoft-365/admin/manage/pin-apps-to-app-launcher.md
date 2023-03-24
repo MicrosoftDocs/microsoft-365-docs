@@ -33,11 +33,9 @@ For more information about the app launcher and Office.com, see [meet the app la
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Azure Active Directory**.
-3. In **Azure Active Directory**, choose **Enterprise applications** > **User settings**.
-4. In the **Office 365 Settings** section, choose **Add application**.
+3. In **Azure Active Directory**, choose **Enterprise applications** > **App launchers** > **Settings**.
+4. In the **Microsoft 365 settings** section, choose **Add application**.
 5. Choose the applications you want to pin to the users' app launcher, and then choose **Add**.
-
-:::image type="content" source="../../media/add-apps.png" alt-text="Microsoft 365 settings to pin apps.":::
 
 ### Pin a custom app
 
