@@ -30,7 +30,7 @@ description: Instructions how to configure a retention label with custom actions
 
 When you configure a [retention label](retention.md) to retain items for a specific period, you specify what action to take at the end of that retention period. You can choose from the built-in actions of permanently deleting the item, relabeling the item, deactivating the label, and starting a disposition review.
 
-However, if you choose the option to run a Power Automate flow, currently rolling out in preview, this label configuration supports custom actions such as:
+However, if you choose the option to run a Power Automate flow, currently in preview, this label configuration supports custom actions such as:
 
 - Send an email notification to a records manager, or to the person who created or last modified a document
 - Move a document item to a SharePoint location where you centrally store records
@@ -60,7 +60,7 @@ The following processes show the high-level overview of how retention labels wor
 
 ![Process overview of how retention labels work with a Power Automate flow.](../media/retention-label-flow-overview.png)
 
-In Power Automate, you create an automated cloud flow from blank that uses the trigger **When the retention period expires**. Then, add one or more steps and specify the operations that run your choice of actions.
+In Power Automate, you create an automated cloud flow from blank that uses the trigger **When an item reaches the end of its retention period**. Then, add one or more steps and specify the operations that run your choice of actions.
 
 Next, in the Microsoft Purview compliance portal, create a new retention label with the following configuration:
 - Retain the item for a specified period of time
@@ -79,9 +79,9 @@ When the retention period expires, your configured flow runs.
 
 Although optional, we recommend you always add the **Trigger a new instance of the flow if an item can't be located** action before **Relabel an item at the end of retention** and **Deletes an item at the end of retention**.
 
-This additional action is required for files that have been moved or renamed after the flow has been triggered but your specified compliance actions haven't completed. Without it, a renamed or moved file would result in the flow failing because it can't find the file.
+This additional action is required for files that have been moved or renamed after an instance of flow has been triggered but your specified compliance actions haven't completed. Without it, a renamed or moved file would result in the flow failing because it can't find the file.
 
-Although renaming and moving files are an unusual occurrence, adding this recommended action improves the reliability of the compliance actions succeeding because the current path and name of the file is retrieved just before the selected actions run.
+Although renaming and moving files after an instance of flow is triggered are an unusual occurrence, adding this recommended action improves the reliability of the compliance actions succeeding because the current path and name of the file is retrieved automatically just before the selected actions run.
 
 ## Limitations for this scenario
 
@@ -96,7 +96,7 @@ Although renaming and moving files are an unusual occurrence, adding this recomm
 Power Automate is a workflow service that automates actions across applications and services. Specific to running a Power Automate flow at the end of the retention period:
 
 - You must have a [Power Automate plan](/power-platform/admin/power-automate-licensing/types) that includes premium connectors, separate from your Microsoft 365 compliance plan. 
-- The Power Automate flow must be an automated cloud flow that is created from blank, and configured to use the trigger **When the retention period expires**.
+- The Power Automate flow must be an automated cloud flow that is created from blank, and configured to use the trigger **When the retention period expires**. This dependency doesn't apply for the action **Apply a retention label on the item**.
 
 For more information about how to use and configure the dependent automated cloud flows, see the [Microsoft Power Automate Documentation](/power-automate).
 
