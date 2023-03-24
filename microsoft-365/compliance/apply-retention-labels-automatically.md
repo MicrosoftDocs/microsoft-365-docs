@@ -383,11 +383,10 @@ To consider when auto-applying retention labels to cloud attachments:
 
 - Attachments and links shared outside Teams and Outlook aren't supported, and the attachments and links must be content stored in SharePoint or OneDrive.
 
-- Cloud attachments and links in encrypted emails aren't supported.
+- Cloud attachments and links in encrypted emails or encrypted messages  aren't supported.
 
 - Specific to shared documents from URL text links:
     - Supported in the message body but not in the email subject or Teams channel subject, announcement, or subheadings.
-    - Not supported for files that are uploaded to Yammer and from there, shared as URLs via email or Teams messages (typically have "https://web.yammer.com" at the beginning of the URL)
     - Not supported for previous responses in the same thread, only the current message
     - Total limit of 25 attachments in a single message, where this maximum can be any combination of cloud attachments and shared documents from URL text links
     - Not supported beyond 5,000 characters in the initial email body or Teams message
