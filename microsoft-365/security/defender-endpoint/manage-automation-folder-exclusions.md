@@ -2,7 +2,7 @@
 title: Manage automation folder exclusions
 description: Add automation folder exclusions to control the files that are excluded from an automated investigation.
 keywords: manage, automation, exclusion, block, clean, malicious
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Manage automation folder exclusions
@@ -42,7 +46,9 @@ You can control the following attributes about the folder that you'd like to be 
 
 ## Add an automation folder exclusion
 
-1. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Automation folder exclusions**.
+1. Log in to [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) using an account with the Security administrator or Global administrator role assigned.
+
+2. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Automation folder exclusions**.
 
 2. Click **New folder exclusion**.
 
@@ -69,7 +75,8 @@ You can control the following attributes about the folder that you'd like to be 
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Automation folder exclusions**.
 2. Click **Remove exclusion**.
 
-## Related topics
+## Related articles
 
 - [Manage automation allowed/blocked lists](manage-indicators.md)
 - [Manage automation file uploads](manage-automation-file-uploads.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

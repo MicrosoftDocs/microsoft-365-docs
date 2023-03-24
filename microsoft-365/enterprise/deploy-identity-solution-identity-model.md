@@ -6,12 +6,17 @@ manager: scotv
 audience: Admin
 ms.date: 09/30/2020
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 - M365-security-compliance
+- m365solution-m365-identity
+- m365solution-scenario
+- zerotrust-solution
+- highpri
 f1.keywords:
 - CSH
 ms.custom:
@@ -26,6 +31,8 @@ description: Step 1. Determine your Microsoft cloud identity model
 ---
 
 # Step 1. Determine your cloud identity model
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Microsoft 365 uses Azure Active Directory (Azure AD), a cloud-based user identity and authentication service that is included with your Microsoft 365 subscription, to manage identities and authentication for Microsoft 365. Getting your identity infrastructure configured correctly is vital to managing Microsoft 365 user access and permissions for your organization.
 

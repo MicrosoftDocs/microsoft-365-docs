@@ -5,18 +5,25 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 11/18/2021
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier1 
+- scotvorg
+- highpri
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 description: "Sign up for Microsoft 365 Apps for business."
 ---
 
 # Sign up for a Microsoft 365 Apps for business subscription
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Want to sign up for a Microsoft 365 Apps for business subscription?
 

@@ -2,7 +2,7 @@
 title: Helpful Microsoft Defender for Endpoint resources
 description: Access helpful resources such as links to blogs and other resources related to  Microsoft Defender for Endpoint
 keywords: Microsoft 365 Defender, product brief, brief, capabilities, licensing
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Helpful Microsoft Defender for Endpoint resources
@@ -43,9 +47,9 @@ Access helpful resources such as links to blogs and other resources related to  
 
 - [Incident response at your fingertips with Defender for Endpoint live response](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Incident-response-at-your-fingertips-with-Microsoft-Defender-ATP/ba-p/614894)
 
-## Threat Vulnerability Management
+## Vulnerability Management
 
-- [Defender for Endpoint Threat & Vulnerability Management now publicly available!](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Threat-amp-Vulnerability-Management-now-publicly-available/ba-p/460977)
+- [Defender for Endpoint Vulnerability Management now publicly available!](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Threat-amp-Vulnerability-Management-now-publicly-available/ba-p/460977)
 
 ## Operational
 

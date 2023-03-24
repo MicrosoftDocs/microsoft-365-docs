@@ -1,15 +1,17 @@
 ---
 title: "Choose the domain to use when creating Microsoft 365 groups"
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - m365solution-collabgovernance
@@ -72,14 +74,15 @@ Let's say you want to control what sub-domains Microsoft 365 groups are created 
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
   ```
-
+> [!NOTE]
+> This scenario does not work when the MX record points to third-party spam filtering.
+ 
 ## Change email address policies
 
 To change the priority or email address templates for an existing EAP, use the Set-EmailAddressPolicy cmdlet.
   
 ```
-Set-EmailAddressPolicy -Name StudentsGroups -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com", "smtp:@students.contoso.com" ManagedByFilter {Department -eq 'Students'} -Priority 2
-
+Set-EmailAddressPolicy -Name StudentsGroups -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com", "smtp:@students.contoso.com"
 ```
 
 Changing an EAP has no impact on the groups that have already been provisioned.
@@ -120,4 +123,4 @@ There are a few more things to know:
 
 [Create your collaboration governance plan](collaboration-governance-first.md) (article)
 
-[Create an Microsoft 365 group in the admin center](../admin/create-groups/create-groups.md) (article)
+[Create a Microsoft 365 group in the admin center](../admin/create-groups/create-groups.md) (article)

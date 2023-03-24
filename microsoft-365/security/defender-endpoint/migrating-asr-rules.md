@@ -2,8 +2,8 @@
 title: Migrating from a third-party HIPS to ASR rules
 description: Describes how to approach a migration from a third-party Host Intrusion Prevention System (HIPS) solution into ASR rules.
 keywords: Attack surface reduction rules, asr, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
-ms.topic: article
-ms.prod: m365-security
+ms.topic: conceptual
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,12 @@ author: lovina-saldanha
 ms.author: dansimp
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
+ms.date: 03/26/2021
 ---
 
 # Migrating from a third-party HIPS to ASR rules
@@ -33,7 +37,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Operation**- File Creation
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- *.zepto, *.odin, *.locky, *.jaff, *.lukitus, *.wnry, *.krab
 - **Attack Surface Reduction rules**- ASR rules block the attack techniques and not the Indicators of Compromise (IOC). Blocking a specific file extension isn't always useful, as it doesn't prevent a device from compromise. It only partially thwarts an attack until attackers create a new type of extension for the payload.
-- **Other recommended features**- Having Microsoft Defender AV enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend that you use other prevention, such as the ASR rule "Use advanced protection against ransomware". This provides a greater level of protection against ransomware attacks. Furthermore, many of these registry keys are monitored by Microsoft Defender for Endpoint, such as ASEP techniques, which will trigger specific alerts. The registry keys used require a minimum of Local Admin or Trusted Installer privileges can be modified. Using a locked down environment, with minimum administrative accounts or rights, is recommended. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that are part of our wider security recommendations.
+- **Other recommended features**- Having Microsoft Defender Antivirus enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend that you use other prevention, such as the ASR rule "Use advanced protection against ransomware". This provides a greater level of protection against ransomware attacks. Furthermore, many of these registry keys are monitored by Microsoft Defender for Endpoint, such as ASEP techniques, which will trigger specific alerts. The registry keys used require a minimum of Local Admin or Trusted Installer privileges can be modified. Using a locked down environment, with minimum administrative accounts or rights, is recommended. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that are part of our wider security recommendations.
 
 ### Block creation of specific registry keys
 
@@ -42,7 +46,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Operation**- Registry Modifications
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs*\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger, HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
 - **Attack Surface Reduction rules**- ASR rules block the attack techniques and not the Indicators of Compromise (IOC). Blocking a specific file extension isn't always useful, because it doesn't prevent a device from compromise. It only partially thwarts an attack until attackers create a new type of extension for the payload.
-- **Other recommended features**- Having Microsoft Defender AV enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend you use additional prevention, such as the ASR rule "Use advanced protection against ransomware". This provides a greater level of protection against ransomware attacks. Furthermore, several of these registry keys are monitored by Microsoft Defender for Endpoint, such as ASEP techniques, which will trigger specific alerts. Additionally, the registry keys used require a minimum of Local Admin or Trusted Installer privileges can be modified. Using a locked down environment, with minimum administrative accounts or rights, is recommended. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that are part of our wider security recommendations.
+- **Other recommended features**- Having Microsoft Defender Antivirus enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend you use additional prevention, such as the ASR rule "Use advanced protection against ransomware". This provides a greater level of protection against ransomware attacks. Furthermore, several of these registry keys are monitored by Microsoft Defender for Endpoint, such as ASEP techniques, which will trigger specific alerts. Additionally, the registry keys used require a minimum of Local Admin or Trusted Installer privileges can be modified. Using a locked down environment, with minimum administrative accounts or rights, is recommended. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that are part of our wider security recommendations.
 
 ### Block untrusted programs from running from removable drives
 
@@ -113,7 +117,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Operation**- File Creation
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- *.exe
 - **Attack Surface Reduction rules**- ASR rules don't support these scenarios because they're a part of Microsoft Defender Antivirus protection.
-- **Other recommended features**- Microsoft Defender AV prevents CertUtil from creating or downloading executable content.
+- **Other recommended features**- Microsoft Defender Antivirus prevents CertUtil from creating or downloading executable content.
 
 ### Block processes from stopping critical System components
 

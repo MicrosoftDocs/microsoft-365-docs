@@ -2,7 +2,7 @@
 title: Prepare Microsoft Defender for Endpoint deployment
 description: Prepare stakeholder approval, timelines, environment considerations, and adoption order for deploying Microsoft Defender for Endpoint
 keywords: deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,11 +12,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-endpointprotect
   - m365solution-scenario
-ms.topic: article
-ms.technology: mde
+  - highpri
+  - tier1
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Prepare Microsoft Defender for Endpoint deployment
@@ -136,7 +140,7 @@ Choose the component of Defender for Endpoint to be used and remove the ones tha
 |Component|Description|Adoption Order Rank|
 |---|---|---|
 |Endpoint Detection & Response (EDR)|Defender for Endpoint endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats. <p> [Learn more.](/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)|1|
-|Threat & Vulnerability Management (TVM)|Threat & Vulnerability Management is a component of Microsoft Defender for Endpoint, and provides both security administrators and security operations teams with unique value, including: <ul><li>Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities</li><li>Invaluable device vulnerability context during incident investigations</li><li>Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager</li></ul> <p> [Learn more](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).|2|
+|Microsoft Defender Vulnerability Management (MDVM)|Defender Vulnerability Management is a component of Microsoft Defender for Endpoint, and provides both security administrators and security operations teams with unique value, including: <ul><li>Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities</li><li>Invaluable device vulnerability context during incident investigations</li><li>Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager</li></ul> <p> [Learn more](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).|2|
 |Next-generation protection (NGP)|Microsoft Defender Antivirus is a built-in antimalware solution that provides next-generation protection for desktops, portable computers, and servers. Microsoft Defender Antivirus includes: <ul><li>Cloud-delivered protection for near-instant detection and blocking of new and emerging threats. Along with machine learning and the Intelligent Security Graph, cloud-delivered protection is part of the next-gen technologies that power Microsoft Defender Antivirus.</li><li>Always-on scanning using advanced file and process behavior monitoring and other heuristics (also known as "real-time protection").</li><li>Dedicated protection updates based on machine learning, human and automated big-data analysis, and in-depth threat resistance research.</li></ul> <p> [Learn more](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).|3|
 |Attack Surface Reduction (ASR)|Attack surface reduction capabilities in Microsoft Defender for Endpoint help protect the devices and applications in the organization from new and emerging threats. <br> [Learn more.](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)|4|
 |Auto Investigation & Remediation (AIR)|Microsoft Defender for Endpoint uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. <p> [Learn more.](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)|Not applicable|

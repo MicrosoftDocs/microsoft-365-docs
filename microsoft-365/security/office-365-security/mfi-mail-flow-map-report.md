@@ -7,14 +7,18 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.localizationpriority: medium
 ms.assetid: 
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn how to use the Mail flow map in the Mail flow dashboard in the Security & Compliance Center to visualize and track how mail flows to and from their organization over connectors and without using connectors.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Mail flow map in the Security & Compliance Center
@@ -22,11 +26,11 @@ ms.prod: m365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-The **Mail flow map** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) gives insight as to how mail flows through your organization. You can use this information to learn patterns, identify anomalies, and fix issues as they occur.
+The **Mail flow map** in the [Security & Compliance Center](https://protection.office.com) gives insight as to how mail flows through your organization. You can use this information to learn patterns, identify anomalies, and fix issues as they occur.
 
 :::image type="content" source="../../media/mfi-mail-flow-map-widget.png" alt-text="The Mail flow map widget in the Mail flow dashboard in the Security & Compliance Center" lightbox="../../media/mfi-mail-flow-map-widget.png":::
 
@@ -50,7 +54,7 @@ If you click **Filters** in a report view, you can specify a date range with **S
 
 To email the report for a specific date range to one or more recipients, click **Request download**.
 
-Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](mfi-mail-loop-insight.md).
+Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](/exchange/monitoring/mail-flow-insights/mfi-fix-possible-mail-loop-insight).
 
 ## Details table view for the Mail flow map
 
@@ -74,4 +78,4 @@ To go back to the reports view, click **View report**.
 
 ## See also
 
-For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other mail flow insights, see [Mail flow insights in Exchange Online](/exchange/monitoring/mail-flow-insights/mail-flow-insights).

@@ -4,7 +4,7 @@ description: Learn about how Windows Defender works with Microsoft Defender for 
 keywords: windows defender compatibility, defender, Microsoft Defender for Endpoint, defender for endpoint, antivirus, mde
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +13,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.date: 05/06/2021
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Antivirus solution compatibility with Microsoft Defender for Endpoint
@@ -35,7 +37,7 @@ The Microsoft Defender for Endpoint agent depends on Microsoft Defender Antiviru
 > [!IMPORTANT]
 > Defender for Endpoint does not adhere to the Microsoft Defender Antivirus Exclusions settings.
 
-You must configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active anti-malware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+You must configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active anti-malware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).
 
 If an onboarded device is protected by a third-party anti-malware client, Microsoft Defender Antivirus on that endpoint will enter into passive mode.
 

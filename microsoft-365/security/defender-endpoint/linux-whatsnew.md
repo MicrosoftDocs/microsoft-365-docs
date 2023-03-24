@@ -2,19 +2,22 @@
 title: What's new in Microsoft Defender for Endpoint on Linux
 description: List of major changes for Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 11/03/2022
 manager: dansimp
 audience: ITPro
-ms.collection: 
-  - m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: reference
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # What's new in Microsoft Defender for Endpoint on Linux
@@ -24,7 +27,316 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-## 101.68.80 (30.122042.16880.0)
+This article is updated frequently to let you know what's new in the latest releases of Microsoft Defender for Endpoint on Linux.
+
+- [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
+- [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
+<details>
+	<summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
+
+&ensp;Released: **March , 20,2023**<br/>
+&ensp;Published: **March 20, 2023**<br/>
+&ensp;Build: **101.98.30**<br/>
+&ensp;Release version: **30.123012.19830.0**<br/>
+&ensp;Engine version: **1.1.19900.2**<br/>
+&ensp;Signature version: **1.379.1299.0**<br/>
+**What's new**
+- This new release is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customers. There is no change for other customers and upgrade is optional. 
+</details>
+	
+<details>
+	<summary> March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)</summary>
+
+&ensp;Released: **March , 08,2023**<br/>
+&ensp;Published: **March 08, 2023**<br/>
+&ensp;Build: **101.98.05**<br/>
+&ensp;Release version: **30.123012.19805.0**<br/>
+&ensp;Engine version: **1.1.19900.2**<br/>
+&ensp;Signature version: **1.379.1299.0**<br/>
+
+**What's new**
+
+- There are multiple fixes and new changes in this release 
+	- Improved Data Completeness for Network Connection events.
+	- Improved Data Collection capabilities for file ownership/permissions changes
+	- seManage in part of the package, to that seLinux policies can be configured in different distro (fixed).
+	- Bug fix 
+		- Improved enterprise daemon stability.
+		- AuditD stop path clean-up: 
+		- Improve the stability of mdatp stop flow.
+	- Added new field to wdavstate to keep track of platform update time.
+	- Stability improvements to parsing Defender for Endpoint onboarding blob.
+	- Scan does not proceed if a valid license is not present (fixed)
+	- Added performance tracing option to xPlatClientAnalyzer, with tracing enabled mdatp process will be dumping the flow in all_process.zip file that can be used for analysis of performance issues.
+	- Added support in Defender for Endpoint for the below RHEL-6 kernel versions
+		- 2.6.32-754.43.1.el6.x86_64
+		- 2.6.32-754.49.1.el6.x86_64
+	- Other fixes
+	
+**Known issues**
+
+- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+
+
+```bash
+echo -c >> /etc/audit/rules.d/audit.rules
+augenrules --load
+```
+
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901)
+
+There are two ways to mitigate the problem in upgrading.
+
+Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+	
+As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+In case you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrade. 
+Caution: Some customers(<1%) are experiencing issues with this method. 
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+</details>
+
+	
+<details>
+  <summary>Jan-2023 (Build: 101.94.13 | Release version: 30.122112.19413.0)</summary>
+
+&ensp;Released: **January 10, 2023**<br/>
+&ensp;Published: **January 10, 2023**<br/>
+&ensp;Build: **101.94.13**<br/>
+&ensp;Release version: **30.122112.19413.0**<br/>
+&ensp;Engine version: **1.1.19700.3**<br/>
+&ensp;Signature version: **1.377.550.0**<br/>
+
+**What's new**
+
+- There are multiple fixes and new changes in this release
+  - Skip quarantine of threats in passive mode by default.
+  - New config, nonExecMountPolicy, can now be used to specify behavior of RTP on mount point marked as noexec.
+  - New config, unmonitoredFilesystems, can be used to unmonitor certain filesystems.
+  - Improved performance under high load and in speed test scenarios.
+  - Fixes an issue with accessing SMB shares behind Cisco AnyConnect VPN connections.
+  - Fixes an issue with Network Protection and SMB.
+  - lttng performance tracing support.
+  - TVM, eBPF, auditd, telemetry and mdatp cli improvements.
+  - mdatp health will now report behavior_monitoring
+  - Other fixes.
+
+**Known issues**
+
+- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+
+```bash
+echo -c >> /etc/audit/rules.d/audit.rules
+augenrules --load
+```
+
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.94.13. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901)
+
+There are two ways to mitigate the problem in upgrading.
+
+Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+
+Example:
+
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+
+As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+In case you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrade.
+Caution: Some customers(<1%) are experiencing issues with this method.
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+
+</details>
+
+<details>
+  <summary>Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)</summary>
+
+&ensp;Released: **November 02, 2022**<br/>
+&ensp;Published: **November 02, 2022**<br/>
+&ensp;Build: **101.85.27**<br/>
+&ensp;Release version: **30.122092.18527.0**<br/>
+&ensp;Engine version: **1.1.19500.2**<br/>
+&ensp;Signature version: **1.371.1369.0**<br/>
+
+**What's new**
+
+- There are multiple fixes and new changes in this release
+  - V2 engine is default with this release and V1 engine bits are completely removed for enhanced security.
+  - V2 engine support configuration path for AV definitions. (mdatp definition set path)
+  - Removed external packages dependencies from MDE package. Removed dependencies are libatomic1, libselinux, libseccomp, libfuse, and libuuid
+  - In case crash collection is disabled by configuration, crash monitoring process will not be launched.
+  - Performance fixes to optimally use system events for AV capabilities.
+  - Stability improvement in case of mdatp restart and loading of epsext issues.
+  - Other fixes
+
+**Known issues**
+
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.85.21. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901)
+
+There are two ways to mitigate the problem in upgrading.
+
+Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+
+Example:
+
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+
+As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+In case you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrade.
+Caution: Some customers(<1%) are experiencing issues with this method.
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+
+</details>
+
+<details>
+  <summary>Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)</summary>
+
+&ensp;Released: **September 14, 2022**<br/>
+&ensp;Published: **September 14, 2022**<br/>
+&ensp;Build: **101.80.97**<br/>
+&ensp;Release version: **30.122072.18097.0**<br/>
+&ensp;Engine version: **1.1.19300.3**<br/>
+&ensp;Signature version: **1.369.395.0**<br/>
+
+**What's new**
+
+- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+
+**Known issues**
+
+- When upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.80.97. This should prevent the issue from occurring.
+
+```
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+
+After executing the above, use your package manager to perform the upgrade.
+
+As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+</br>
+
+<br/><br/>
+</details>
+
+<details>
+   <summary>Aug-2022 (Build: 101.78.13, | Release version: 30.122072.17813.0)</summary>
+
+ &ensp;Released: **August 24, 2022**<br/>
+ &ensp;Published: **August 24, 2022**<br/>
+ &ensp;Build: **101.78.13**<br/>
+ &ensp;Release version: **30.122072.17813.0**<br/>
+ &ensp;Engine version: **1.1.19300.3**<br/>
+ &ensp;Signature version: **1.369.395.0**<br/>
+
+ **What's new**
+
+ - Rolled back due to reliability issues
+
+ </br>
+
+ <br/><br/>
+ </details>
+
+<details>
+  <summary>Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)</summary>
+
+&ensp;Released: **August 2, 2022**<br/>
+&ensp;Published: **August 2, 2022**<br/>
+&ensp;Build: **101.75.43**<br/>
+&ensp;Release version: **30.122071.17543.0**<br/>
+&ensp;Engine version: **1.1.19300.3**<br/>
+&ensp;Signature version: **1.369.395.0**<br/>
+
+**What's new**
+
+- Added support for Red Hat Enterprise Linux version 9.0
+- Added a new field in the output of `mdatp health` that can be used to query the enforcement level of the network protection feature. The new field is called `network_protection_enforcement_level` and can take one of the following values: `audit`, `block`, or `disabled`.
+- Addressed a product bug where multiple detections of the same content could lead to duplicate entries in the threat history
+- Addressed an issue where one of the processes spawned by the product (`mdatp_audisp_plugin`) was sometimes not properly terminated when the service was stopped
+- Other bug fixes
+</br>
+
+<br/><br/>
+</details>
+
+<details>
+  <summary>Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)</summary>
+
+&ensp;Released: **July 21, 2022**<br/>
+&ensp;Published: **July 21, 2022**<br/>
+&ensp;Build: **101.73.77**<br/>
+&ensp;Release version: **30.122062.17377.0**<br/>
+&ensp;Engine version: **1.1.19200.3**<br/>
+&ensp;Signature version: **1.367.1011.0**<br/>
+
+**What's new**
+
+- Added an option to [configure file hash computation](linux-preferences.md#configure-file-hash-computation-feature)
+- From this build onwards, the product will have the new anti-malware engine by default
+- Performance improvements for file copy operations
+- Bug fixes
+</br>
+
+<br/><br/>
+</details>
+
+<details>
+  <summary>Jun-2022 (Build: 101.71.18 | Release version: 30.122052.17118.0)</summary>
+
+&ensp;Released: **June 24, 2022**<br/>
+&ensp;Published: **June 24, 2022**<br/>
+&ensp;Build: **101.71.18**<br/>
+&ensp;Release version: **30.122052.17118.0**<br/>
+
+**What's new**
+
+- Fix to support definitions storage in non-standard locations (outside of /var) for v2 definition updates
+- Fixed an issue in the product sensor used on RHEL 6 that could lead to an OS hang
+- `mdatp connectivity test` was extended with an extra URL that the product requires to function correctly. The new URL is [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
+- Up until now, the product log level wasn't persisted between product restarts. Starting from this version, there's a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
+- Removed the dependency on `python` from the product installation package
+- Performance improvements for file copy operations and processing of network events originating from `auditd`
+- Bug fixes
+</br>
+
+<br/><br/>
+</details>
+
+<details>
+  <summary>May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)</summary>
+
+&ensp;Released: **May 23, 2022**<br/>
+&ensp;Published: **May 23, 2022**<br/>
+&ensp;Build: **101.68.80**<br/>
+&ensp;Release version: **30.122042.16880.0**<br/>
+
+**What's new**
 
 - Added support for kernel version `2.6.32-754.47.1.el6.x86_64` when running on RHEL 6
 - On RHEL 6, product can now be installed on devices running Unbreakable Enterprise Kernel (UEK)
@@ -32,134 +344,261 @@ ms.technology: mde
 - Fixed a bug where the product sometimes was incorrectly detecting files inside the quarantine folder
 - Fixed an issue where the `mdatp` command-line tool was not working when `/opt` was mounted as a soft-link
 - Performance improvements & bug fixes
+</br>
 
-## 101.65.77 (30.122032.16577.0)
+<br/><br/>
+</details>
+
+<details>
+<summary>May-2022 (Build: 101.65.77 | Release version: 30.122032.16577.0)</summary>
+
+&ensp;Released: **May 2, 2022**<br/>
+&ensp;Published: **May 2, 2022**<br/>
+&ensp;Build: **101.65.77**<br/>
+&ensp;Release version: **30.122032.16577.0**<br/>
+
+**What's new**
 
 - Improved the `conflicting_applications` field in `mdatp health` to show only the most recent 10 processes and also to include the process names. This makes it easier to identify which processes are potentially conflicting with Microsoft Defender for Endpoint for Linux.
 - Bug fixes
 
-## 101.62.74 (30.122022.16274.0)
+<br/><br/>
+</details><details>
+<summary>Mar-2022 (Build: 101.62.74 | Release version: 30.122022.16274.0)</summary>
+
+&ensp;Released: **Mar 24, 2022**<br/>
+&ensp;Published: **Mar 24, 2022**<br/>
+&ensp;Build: **101.62.74**<br/>
+&ensp;Release version: **30.122022.16274.0**<br/>
+
+**What's new**
 
 - Addressed an issue where the product would incorrectly block access to files greater than 2GB in size when running on older kernel versions
 - Bug fixes
 
-## 101.60.93 (30.122012.16093.0)
+<br/><br/>
+</details><details>
+<summary>Mar-2022 (Build: 101.60.93 | Release version: 30.122012.16093.0)</summary>
+
+&ensp;Released: **Mar 9, 2022**<br/>
+&ensp;Published: **Mar 9, 2022**<br/>
+&ensp;Build: **101.60.93**<br/>
+&ensp;Release version: **30.122012.16093.0**<br/>
+
+**What's new**
 
 - This version contains a security update for [CVE-2022-23278](https://msrc-blog.microsoft.com/2022/03/08/guidance-for-cve-2022-23278-spoofing-in-microsoft-defender-for-endpoint/)
 
-## 101.60.05 (30.122012.16005.0)
+<br/><br/>
+</details><details>
+<summary>Mar-2022 (Build: 101.60.05 | Release version: 30.122012.16005.0)</summary>
+
+&ensp;Released: **Mar 3, 2022**<br/>
+&ensp;Published: **Mar 3, 2022**<br/>
+&ensp;Build: **101.60.05**<br/>
+&ensp;Release version: **30.122012.16005.0**<br/>
+
+**What's new**
 
 - Added support for kernel version 2.6.32-754.43.1.el6.x86_64 for RHEL 6.10
 - Bug fixes
 
-## 101.58.80 (30.122012.15880.0)
+<br/><br/>
+</details><details>
+<summary>Feb-2022 (Build: 101.58.80 | Release version: 30.122012.15880.0)</summary>
+
+&ensp;Released: **Feb 20, 2022**<br/>
+&ensp;Published: **Feb 20, 2022**<br/>
+&ensp;Build: **101.58.80**<br/>
+&ensp;Release version: **30.122012.15880.0**<br/>
+
+**What's new**
 
 - The command-line tool now supports restoring quarantined files to a location other than the one where the file was originally detected. This can be done through `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
 - Starting with this version, network protection for Linux can be evaluated on demand
 - Bug fixes
 
-## 101.56.62 (30.121122.15662.0)
+<br/><br/>
+</details><details>
+<summary>Jan-2022 (Build: 101.56.62 | Release version: 30.121122.15662.0)</summary>
+
+&ensp;Released: **Jan 26, 2022**<br/>
+&ensp;Published: **Jan 26, 2022**<br/>
+&ensp;Build: **101.56.62**<br/>
+&ensp;Release version: **30.121122.15662.0**<br/>
+
+**What's new**
 
 - Fixed a product crash introduced in 101.53.02 and that has impacted multiple customers
 
-## 101.53.02 (30.121112.15302.0)
+<br/><br/>
+</details><details>
+<summary>Jan-2022 (Build: 101.53.02 | Release version: (30.121112.15302.0)</summary>
+
+&ensp;Released: **Jan 8, 2022**<br/>
+&ensp;Published: **Jan 8, 2022**<br/>
+&ensp;Build: **101.53.02**<br/>
+&ensp;Release version: **30.121112.15302.0**<br/>
+
+**What's new**
 
 - Performance improvements & bug fixes
 
-## 101.52.57 (30.121092.15257.0)
+</details>
 
-- Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Java processes with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in the Vulnerability Management area of the portal.
+<details><summary> 2021 releases</summary><blockquote>
+  <details><summary>(Build: 101.52.57 | Release version: 30.121092.15257.0)</summary>
 
-## 101.47.76 (30.121092.14776.0)
+  <p><b>
+  Build: 101.52.57 <br>
+  Release version: 30.121092.15257.0</b></p>
 
-- Added a new switch to the command-line tool to control whether archives are scanned during on-demand scans. This can be configured through `mdatp config scan-archives --value [enabled/disabled]`. By default, this is set to `enabled`.
-- Bug fixes
+  <p><b> What's new </b></p>
 
-## 101.45.13 (30.121082.14513.0)
+   - Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Java processes with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in the Vulnerability Management area of the portal.
 
-- Starting with this version, we are bringing Microsoft Defender for Endpoint support to the following distros: 
-  - RHEL6.7-6.10 and CentOS6.7-6.10 versions.
-  - Amazon Linux 2
-  - Fedora 33 or higher
-- Bug fixes
+   </details>
 
+  <details><summary>(Build: 101.47.76  | Release version: 30.121092.14776.0)</summary>
 
-## 101.45.00 (30.121072.14500.0)
+  <p><b>
+  Build: 101.47.76 <br>
+  Release version: 30.121092.14776.0</b></p>
 
-- Added new switches to the command-line tool:
-  - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of `2` is used.
-  - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this is set to `enabled`.
-- Changing the product log level now requires elevation
-- Bug fixes
+  <p><b>What's new</b></p>
 
-## 101.39.98 (30.121062.13998.0)
+   - Added a new switch to the command-line tool to control whether archives are scanned during on-demand scans. This can be configured through mdatp config scan-archives --value [enabled/disabled]. By default, this is set to enabled.
 
-- Performance improvements & bug fixes
+   - Bug fixes
 
-## 101.34.27 (30.121052.13427.0)
+   </details>
 
-- Performance improvements & bug fixes
+   <details><summary>(Build: 101.45.13 | Release version: 30.121082.14513.0)</summary>
 
-## 101.29.64 (30.121042.12964.0)
+  <p>
+  Build: <b>101.45.13 </b>  <br>
+  Release version:<b> 30.121082.14513.0 </b></p>
 
-- Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
-- `mdatp diagnostic real-time-protection-statistics` now supports two additional switches:
-  - `--sort`: sorts the output descending by total number of files scanned
-  - `--top N`: displays the top N results (only works if `--sort` is also specified)
-- Performance improvements & bug fixes
+  <p><b>What's new</b></p>
 
-## 101.25.72 (30.121022.12563.0)
+  - Starting with this version, we are bringing Microsoft Defender for Endpoint support to the following distros:
 
-- Microsoft Defender for Endpoint on Linux is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
-- Fixed an issue where usage of Microsoft Defender for Endpoint on Linux on systems with FUSE filesystems was leading to OS hang
-- Performance improvements & other bug fixes
+    - RHEL6.7-6.10 and CentOS6.7-6.10 versions.
+    - Amazon Linux 2
+    - Fedora 33 or higher
 
-## 101.25.63 (30.121022.12563.0)
+  - Bug fixes
 
-- Performance improvements & bug fixes
+   </details>
 
-## 101.23.64 (30.121021.12364.0)
+   <details><summary>(Build: 101.45.00 | Release version: 30.121072.14500.0)</summary>
 
-- Performance improvement for the situation where an entire mount point is added to the antivirus exclusion list. Prior to this version, file activity originating from the mount point was still processed by the product. Starting with this version, file activity for excluded mount points is suppressed, leading to better product performance
-- Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus`
-- Other performance improvements & bug fixes
+   <p>
+   Build:<b> 101.45.00</b> <br>
+   Release version: <b>30.121072.14500.0</b></p>
 
-## 101.18.53
+   <p><b>What's new</b></p>
 
-- EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-- Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
-- Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
-- Performance improvements & bug fixes
+  - Added new switches to the command-line tool:
+    - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of `2` is used.
+    - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this is set to `enabled`.
+  - Changing the product log level now requires elevation
+  - Bug fixes
 
-## 101.12.99
+   </details>
 
-- Performance improvements & bug fixes
+   <details><summary>(Build: 101.39.98 | Release version: 30.121062.13998.0)</summary>
 
-## 101.04.76
+   <p>
+   Build: <b>101.39.98 </b><br>
+   Release version: <b>30.121062.13998.0</b></p>
 
-- Bug fixes
+   <p><b>What's new</b></p>
 
-## 101.03.48
+  - Performance improvements & bug fixes
 
-- Bug fixes
+   </details>
 
-## 101.02.55
+   <details><summary>(Build: 101.34.27 | Release version: 30.121052.13427.0)</summary>
 
-- Fixed an issue where the product sometimes does not start following a reboot / upgrade
-- Fixed an issue where proxy settings are not persisted across product upgrades
+   <p>
+   Build:<b> 101.34.27</b> <br>
+   Release version: <b>30.121052.13427.0</b></p>
 
-## 101.00.75
+   <p><b>What's new</b></p>
 
-- Added support for the following file system types: `ecryptfs`, `fuse`, `fuseblk`, `jfs`, `nfs`, `overlay`, `ramfs`, `reiserfs`, `udf`, and `vfat`
-- New syntax for the [command-line tool](linux-resources.md#configure-from-the-command-line).
-- Performance improvements & bug fixes
+   - Performance improvements & bug fixes
 
-## 100.90.70
+   </details>
 
-> [!WARNING]
-> When upgrading the installed package from a product version earlier than 100.90.70, the update may fail on Red Hat-based and SLES distributions. This is because of a major change in a file path. A temporary solution is to remove the older package, and then install the newer one. This issue does not exist in newer versions.
+   <details><summary>(Build: 101.29.64 | Release version: 30.121042.12964.0)</summary>
 
-- Antivirus [exclusions now support wildcards](linux-exclusions.md#supported-exclusion-types)
-- Added the ability to [troubleshoot performance issues](linux-support-perf.md) through the `mdatp` command-line tool
-- Improvements to make the package installation more robust
-- Performance improvements & bug fixes
+   <p>
+   Build:<b> 101.29.64 </b><br>
+   Release version:<b> 30.121042.12964.0</b></p>
+
+   <p><b>What's new</b></p>
+
+   - Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
+   - `mdatp diagnostic real-time-protection-statistics` now supports two additional switches:
+     - `--sort`: sorts the output descending by total number of files scanned
+     - `--top N`: displays the top N results (only works if `--sort` is also specified)
+   - Performance improvements & bug fixes
+
+   </details>
+
+   <details><summary>(Build: 101.25.72 | Release version: 30.121022.12563.0)</summary>
+
+   <p>
+   Build:<b> 101.25.72</b> <br>
+   Release version: <b>30.121022.12563.0</b></p>
+
+   <p><b>What's new</b></p>
+
+   - Microsoft Defender for Endpoint on Linux is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
+   - Fixed an issue where usage of Microsoft Defender for Endpoint on Linux on systems with FUSE filesystems was leading to OS hang
+   - Performance improvements & other bug fixes
+
+   </details>
+
+   <details><summary>(Build: 101.25.63 | Release version: 30.121022.12563.0)</summary>
+
+   <p>
+   Build:<b> 101.25.63</b> <br>
+   Release version: <b>30.121022.12563.0</b></p>
+
+   <p><b>What's new</b></p>
+
+   - Performance improvements & bug fixes
+
+   </details>
+
+   <details><summary>(Build: 101.23.64 | Release version: 30.121021.12364.0)</summary>
+
+   <p>
+   Build:<b> 101.23.64 </b><br>
+   Release version: 30.121021.12364.0</b></p>
+
+   <p><b>What's new</b></p>
+
+   - Performance improvement for the situation where an entire mount point is added to the antivirus exclusion list. Prior to this version, file activity originating from the mount point was still processed by the product. Starting with this version, file activity for excluded mount points is suppressed, leading to better product performance
+   - Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus`
+   - Other performance improvements & bug fixes
+
+   </details>
+
+   <details><summary>(Build: 101.18.53)</summary>
+
+  <p>
+  Build:<b> 101.18.53 </b><br>
+
+  <p>What's new</b></p>
+
+   - EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
+   - Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
+   - Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
+  - Performance improvements & bug fixes
+
+   </details>
+
+</blockquote></details>

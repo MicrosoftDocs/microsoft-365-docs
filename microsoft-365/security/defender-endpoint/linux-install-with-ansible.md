@@ -3,7 +3,7 @@ title: Deploy Microsoft Defender for Endpoint on Linux with Ansible
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Ansible.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Ansible
@@ -36,6 +39,9 @@ This article describes how to deploy Defender for Endpoint on Linux using Ansibl
 - [Deployment](#deployment)
 - [References](#references)
 
+
+[!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../../includes/support.md)]
+
 ## Prerequisites and system requirements
 
 Before you get started, see [the main Defender for Endpoint on Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
@@ -46,7 +52,7 @@ In addition, for Ansible deployment, you need to be familiar with Ansible admini
 - SSH must be configured for an administrator account between the control node and all managed nodes (devices that will have Defender for Endpoint installed on them), and it is recommended to be configured with public key authentication.
 - The following software must be installed on all managed nodes:
   - curl
-  - python-apt
+  - python-apt (if you are deploying on distributions using apt as a package manager)
 
 - All managed nodes must be listed in the following format in the `/etc/ansible/hosts` or relevant file:
 
@@ -136,7 +142,7 @@ Create a subtask or role files that contribute to a playbook or task.
     In the following commands, replace *[distro]* and *[version]* with the information you've identified.
 
     > [!NOTE]
-    > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel".
+    > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel". For Amazon Linux 2, replace *[version]* with "7". For Oracle utilize, replace *[version]* with the version of Oracle Linux.
 
   ```bash
   - name: Add Microsoft APT key

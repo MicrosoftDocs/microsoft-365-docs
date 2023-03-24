@@ -1,21 +1,24 @@
 ---
 title: Configure local overrides for Microsoft Defender Antivirus settings
-description: Enable or disable users from locally changing settings in Microsoft Defender AV.
+description: Enable or disable users from locally changing settings in Microsoft Defender Antivirus.
 keywords: local override, local policy, group policy, gpo, lockdown,merge, lists
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 08/02/2022
 ms.reviewer: 
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Prevent or allow users to locally modify Microsoft Defender Antivirus policy settings
@@ -30,33 +33,29 @@ ms.collection: M365-security-compliance
 **Platforms**
 - Windows
 
-By default, Microsoft Defender Antivirus settings that are deployed via a Group Policy Object to the endpoints in your network will prevent users from locally changing the settings. You can change this in some instances.
-
-For example, it may be necessary to allow certain user groups (such as security researchers and threat investigators) further control over individual settings on the endpoints they use.
+By default, Microsoft Defender Antivirus settings that are deployed via a Group Policy Object to the endpoints in your network will prevent users from locally changing the settings. You can change this configuration in some instances. For example, it might be necessary to allow certain user groups, such as security researchers and threat investigators, to have further control over individual settings on the endpoints they use.
 
 ## Configure local overrides for Microsoft Defender Antivirus settings
 
-The default setting for these policies is **Disabled**.
+The default setting for these local override policies is **Disabled**.
 
-If they are set to **Enabled**, users on endpoints can make changes to the associated setting with the [Windows Security](microsoft-defender-security-center-antivirus.md) app, local Group Policy settings, and PowerShell cmdlets (where appropriate).
+If the policies are set to **Enabled**, users can make changes to the associated settings on their devices by using the [Windows Security](microsoft-defender-security-center-antivirus.md) app, local Group Policy settings, or PowerShell cmdlets (where appropriate).
 
-The following table lists each of the override policy setting and the configuration instructions for the associated feature or setting.
+The [table of settings section](#table-of-settings) lists override policy settings and the configuration instructions.
 
 To configure these settings:
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and then select **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor** go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** and then the **Location** specified in the table of settings (in this article).
+3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** and then the **Location** specified in the [table of settings section](#table-of-settings) (in this article).
 
-4. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. Click **OK**, and repeat for any other settings.
+4. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. Select **OK**, and repeat for any other settings.
 
 5. Deploy the Group Policy Object as usual.
 
 ## Table of settings
-
-<br/><br/>
 
 | Location | Setting | Article |
 |---|---|---|---|
@@ -80,19 +79,25 @@ To configure these settings:
 
 You can also configure how locally defined lists are combined or merged with globally defined lists. This setting applies to [exclusion lists](configure-exclusions-microsoft-defender-antivirus.md), [specified remediation lists](configure-remediation-microsoft-defender-antivirus.md), and [attack surface reduction](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction).
 
-By default, lists that have been configured in local group policy and the Windows Security app are merged with lists that are defined by the appropriate Group Policy Object that you have deployed on your network. Where there are conflicts, the globally-defined list takes precedence.
-
-You can disable this setting to ensure that only globally-defined lists (such as those from any deployed GPOs) are used.
+By default, lists that have been configured in local group policy and the Windows Security app are merged with lists that are defined by the appropriate Group Policy Object that you have deployed on your network. Where there are conflicts, the globally defined list takes precedence. You can disable this setting to ensure that only globally-defined lists (such as those from any deployed GPOs) are used.
 
 ### Use Group Policy to disable local list merging
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor** go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components > Microsoft Defender Antivirus**.
+3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus**.
 
-4. Double-click **Configure local administrator merge behavior for lists** and set the option to **Disabled**. Click **OK**.
+4. Double-click **Configure local administrator merge behavior for lists** and set the option to **Disabled**. Then select **OK**.
+
+### Use Microsoft Intune to disable local list merging
+
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), select **Endpoint security** > **Antivirus**.
+
+2. Choose **Create Policy**, or modify an existing Microsoft Defender Antivirus policy.
+
+3. Under the **Configuration settings**, select the drop-down next to **Disable Local Admin Merge** and select **Disable Local Admin Merge**.
 
 > [!NOTE]
 > If you disable local list merging, it will override controlled folder access settings. It also overrides any protected folders or allowed apps set by the local administrator. For more information about controlled folder access settings, see [Allow a blocked app in Windows Security](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security).
@@ -109,5 +114,6 @@ You can disable this setting to ensure that only globally-defined lists (such as
 
 ## Related topics
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Intune](/protect/advanced-threat-protection-configure)
+- [Microsoft Defender Antivirus in Windows](microsoft-defender-antivirus-in-windows-10.md)
 - [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)

@@ -4,19 +4,23 @@ description: Investigate data loss in Microsoft 365 Defender.
 keywords: Data Loss Prevention, incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 f1.keywords: 
   - NOCSH
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
+  - tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
-ms.technology: m365d
+  - met150
+ms.date: 05/23/2022
 ---
+
 # Investigate data loss incidents with Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -46,6 +50,9 @@ To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft
 - Microsoft 365 E5/A5 Security
 - Microsoft 365 E5/A5 Information Protection and Governance
 
+> [!NOTE] 
+> When you are licensed and eligible for this feature, DLP alerts will automatically flow into Microsoft 365 Defender. Open a support case if you want to disable this feature. 
+
 ## DLP investigation experience in the Microsoft 365 Defender portal
 
 Before you start, [turn on alerts for all your DLP policies](/microsoft-365/compliance/dlp-configure-view-alerts-policies#alert-configuration-experience) in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview compliance portal</a>.
@@ -62,7 +69,7 @@ Before you start, [turn on alerts for all your DLP policies](/microsoft-365/comp
 
 6. View the matched sensitive content in the **Sensitive info types** tab and the file content in the **Source** tab if you have the required permission (See details <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started#roles" target="_blank">here</a>).
 
-7. You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The **CloudAppEvents** table contains all audit logs across all locations like Sharepoint, OneDrive, Exchange and Devices.
+7. You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The **CloudAppEvents** table contains all audit logs across all locations like SharePoint, OneDrive, Exchange and Devices.
 
 8. You can also download the email by selecting **Actions** \> **Download email**. 
 
@@ -79,9 +86,12 @@ Before you start, [turn on alerts for all your DLP policies](/microsoft-365/comp
 
 10. Go to the incident summary page and select **Manage Incident** to add incident tags, assign, or resolve an incident.
 
+> [!IMPORTANT] 
+> DLP supports associating DLP policies and alert management with administrative units in the Microsoft Purview compliance portal (preview). DLP alerts are only available to unrestricted DLP administrators in the Microsoft 365 Defender portal. Administrative unit restricted DLP administrator will not see DLP alerts.  See [Administrative units](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#administrative-units-preview) for implementation details. See [Policy scoping](/microsoft-365/compliance/dlp-policy-reference#policy-scoping) for details on administrative unit scoping. 
+
 ## DLP investigation experience in Microsoft Sentinel
 
-You can use the Microsoft 365 Defender connector in Microsoft Sentinel to import all DLP incidents into Sentinel to extend your correlation, detection, and investigation across other data sources and extend your automated orchestration flows using Sentinel’s native SOAR capabilities. 
+You can use the Microsoft 365 Defender connector in Microsoft Sentinel to import all DLP incidents into Sentinel to extend your correlation, detection, and investigation across other data sources and extend your automated orchestration flows using Sentinel's native SOAR capabilities. 
 
 1. Follow instructions on Connect data from Microsoft 365 Defender to Microsoft Sentinel to import all incidents including DLP incidents and alerts into Sentinel. Enable `CloudAppEvents` event connector to pull all O365 audit logs into Sentinel.
 
@@ -92,12 +102,13 @@ You can use the Microsoft 365 Defender connector in Microsoft Sentinel to import
 3. You can use **AlertType**, **startTime**, and **endTime** to query the **CloudAppEvents** table to get all the user activities that contributed to the alert. Use this query to identify the underlying activities:
 
 ```kusto
-let Alert = SecurityAlert 
-| where TimeGenerated  > ago(30d) 
-| where SystemAlertId == "" // insert the systemAlertID here 
-CloudAppEvents 
-| extend correlationId = parse_json(tostring(RawEventData.Data)).cid
-| join kind=inner Alert on $left.correlationId == $right.AlertType 
+let Alert = SecurityAlert
+| where TimeGenerated > ago(30d)
+| where SystemAlertId == ""; // insert the systemAlertID here
+CloudAppEvents
+| extend correlationId1 = parse_json(tostring(RawEventData.Data)).cid
+| extend correlationId = tostring(correlationId1)
+| join kind=inner Alert on $left.correlationId == $right.AlertType
 | where RawEventData.CreationTime > StartTime and RawEventData.CreationTime < EndTime
 ```
 

@@ -3,7 +3,8 @@ title: Create the Microsoft 365 Defender Evaluation Environment for greater cybe
 description: Learn what's included in the Microsoft 365 Defender XDR you will evaluate, and se up your Microsoft 365 Defender trial lab or pilot environment by activating trial licenses. Start your XDR cyber security journey here and learn how to take that test to production.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,11 +17,13 @@ ms.localizationpriority: medium
 manager: dansimp 
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-scenario
   - m365solution-evalutatemtp
+  - zerotrust-solution
+  - highpri
+  - tier1
 ms.topic: how-to
-ms.technology: m365d
 ---
 # Step 1. Create the Microsoft 365 Defender Evaluation Environment for greater cyber security
 

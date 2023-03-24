@@ -3,10 +3,13 @@ title: "Collaborate with external participants in a shared channel"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 09/09/2021
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-ms.collection: 
+ms.service: o365-solutions
+ms.collection:
+- highpri
+- Tier1
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
@@ -21,13 +24,20 @@ description: Learn how to enable shared channels in Microsoft Teams for collabor
 
 # Collaborate with external participants in a shared channel
 
-If you want to enable your users to collaborate with people outside your organization in [shared channels](/MicrosoftTeams/shared-channels), you need to configure B2B direct connect for each organization that you want to collaborate with. (Alternatively, you can [Enable shared channels with all external organizations](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
+If you want to enable your users to collaborate with people in other Microsoft 365 organizations in [shared channels](/MicrosoftTeams/shared-channels), you need to configure B2B direct connect for each organization that you want to collaborate with. (Alternatively, you can [Enable shared channels with all external organizations](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
 
 When you enable shared channels in Teams with another organization:
 
 - Team owners in your organization will be able to invite people from other organizations to participate in shared channels.
 - Your organization's custom (line of business) apps will be available in shared channels and external participants will be able to access them.
 - Your organization's apps list will be available in shared channels and external participants will be able to access them.
+
+## Prerequisites
+
+Collaborating with external participants in a shared channel requires that guest access be turned on for SharePoint and Microsoft 365 Groups. These settings are enabled by default, but if your organization has made changes to them, confirm the following settings before configuring shared channels:
+
+- [Microsoft 365 Groups sharing settings](/microsoft-365/solutions/microsoft-365-guest-settings#microsoft-365-groups) must both be enabled.
+- SharePoint [organization level](/microsoft-365/solutions/microsoft-365-guest-settings#sharepoint-and-onedrive-organization-level) and [site level](/microsoft-365/solutions/microsoft-365-guest-settings#sharepoint-site-level) sharing settings must allow guests. The domains you're sharing with must not be blocked.
 
 ## Video demonstration
 
@@ -66,7 +76,10 @@ Azure AD B2B direct connect is disabled by default. To enable collaboration in s
 As part of this configuration, we enable the **Office 365** application, which includes Teams and Teams-integrated services such as SharePoint.
 
 > [!NOTE]
-> Changes to cross-tenant access settings may take up to three hours fifteen minutes to take effect.
+> Changes to cross-tenant access settings may take up to six hours to take effect.
+
+> [!NOTE]
+> Shared channels between Commercial and GCC clouds are not supported.
 
 ### Add an organization
 
@@ -74,7 +87,7 @@ Add each organization with which you want to participate in shared channels.
 
 To add an organization
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
-1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+1. Select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select **Organizational settings**.
 1. Select **Add organization**.
 1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization and press Enter.
@@ -86,7 +99,7 @@ To add an organization
 Follow this procedure for each organization where you want to invite external participants.
 
 To configure inbound settings for an organization
-1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select the inbound access link for the organization that you want to modify.
 1. On the **B2B direct connect** tab, choose **Customize settings**.
 1. On the **External users and groups** tab, choose **Allow access** and **All external users and groups**. (You can choose **Select external users and groups** if you want to limit access to specific users and groups, such as those who have signed a non-disclosure agreement.)
@@ -100,7 +113,7 @@ To configure inbound settings for an organization
 Follow this procedure for each organization where you want your users to be able to participate in external shared channels.
 
 To configure outbound settings for an organization
-1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select the outbound access link for the organization that you want to modify.
 1. On the **B2B direct connect** tab, choose **Customize settings**.
 1. On the **External users and groups** tab, choose **Allow access** and set an **Applies to** of all users.

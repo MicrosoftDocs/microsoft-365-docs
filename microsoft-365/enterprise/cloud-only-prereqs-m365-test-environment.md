@@ -5,11 +5,13 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
+ms.date: 04/23/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:

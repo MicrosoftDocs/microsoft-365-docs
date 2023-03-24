@@ -2,8 +2,8 @@
 title: Enable controlled folder access
 keywords: Controlled folder access, windows 10, windows 11, windows defender, ransomware, protect, files, folders, enable, turn on, use
 description: Learn how to protect your important files by enabling Controlled folder access
-ms.prod: m365-security
-ms.topic: article
+ms.service: microsoft-365-security
+ms.topic: conceptual
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,12 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
-ms.technology: mde
-ms.collection: m365-security-compliance
-ms.date:
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Enable controlled folder access
@@ -38,9 +41,9 @@ ms.date:
 You can enable controlled folder access by using any of these methods:
 
 - [Windows Security app *](#windows-security-app)
-- [Microsoft Endpoint Manager](#endpoint-manager)
+- [Microsoft Intune](#microsoft-intune)
 - [Mobile Device Management (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Microsoft Configuration Manager](#microsoft-configuration-manager)
 - [Group Policy](#group-policy)
 - [PowerShell](#powershell)
 
@@ -51,7 +54,7 @@ Group Policy settings that disable local administrator list merging will overrid
 - Microsoft Defender Antivirus **Configure local administrator merge behavior for lists**
 - System Center Endpoint Protection **Allow users to add exclusions and overrides**
 
-For more information about disabling local list merging, see [Prevent or allow users to locally modify Microsoft Defender AV policy settings](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
+For more information about disabling local list merging, see [Prevent or allow users to locally modify Microsoft Defender Antivirus policy settings](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
 
 ## Windows Security app
 
@@ -68,9 +71,9 @@ For more information about disabling local list merging, see [Prevent or allow u
 > If the feature is set to **Audit mode** with any of those tools, the Windows Security app will show the state as **Off**.
 > If you are protecting user profile data, we recommend that the user profile should be on the default Windows installation drive.
 
-## Endpoint Manager
+## Microsoft Intune
 
-1. Sign in to the [Endpoint Manager](https://endpoint.microsoft.com) and open **Endpoint Security**.
+1. Sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com) and open **Endpoint Security**.
 
 2. Go to **Attack Surface Reduction** \> **Policy**.
 
@@ -97,9 +100,9 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) to allow apps to make changes to protected folders.
 
-## Microsoft Endpoint Configuration Manager
+## Microsoft Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
+1. In Microsoft Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
 
 2. Select **Home** \> **Create Exploit Guard Policy**.
 
@@ -120,7 +123,7 @@ Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/wi
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components > Microsoft Defender Antivirus > Windows Defender Exploit Guard > Controlled folder access**.
+3. Expand the tree to **Windows components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Controlled folder access**.
 
 4. Double-click the **Configure Controlled folder access** setting and set the option to **Enabled**. In the options section you must specify one of the following options:
    - **Enable** - Malicious and suspicious apps won't be allowed to make changes to files in protected folders. A notification will be provided in the Windows event log.

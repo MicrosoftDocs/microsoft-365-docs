@@ -8,10 +8,11 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.date:
+ms.date: 03/01/2023
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -20,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Manage your exact data match schema
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Editing the schema for EDM-based classification manually
 

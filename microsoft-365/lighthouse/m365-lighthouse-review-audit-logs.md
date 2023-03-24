@@ -4,12 +4,15 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: vivkuma
+ms.reviewer: magarlan
+ms.date: 01/20/2022
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -55,12 +58,11 @@ The following table lists activities captured within Lighthouse audit logs. The 
 
 | Activity name | Area in Lighthouse | Action initiated | Service impacted |
 |--|--|--|--|
-| **apply** or **deploy** | Tenants | Apply a deployment plan | Azure AD, Microsoft Endpoint Manager (MEM) |
+| **apply** or **deploy** | Tenants | Apply a deployment plan | Azure AD, Microsoft Intune |
 | **assignTag** | Tenants | Apply a tag from a customer | Lighthouse |
 | **changeDeploymentStatus** or **assign** | Tenants | Update action plan status for deployment plan | Lighthouse |
-| **managedTenantOperations** | Tenants | View information on a deployment plan | Azure AD |
 | **offboardTenant** | Tenants | Inactivate a customer | Lighthouse |
-| **resetTenantOnboardingStatus** | Tenants | Reactive a customer | Lighthouse |
+| **resetTenantOnboardingStatus** | Tenants | Reactivate a customer | Lighthouse |
 | **tenantTags** | Tenants | Create or delete a tag | Lighthouse |
 | **tenantCustomizedInformation** | Tenants | Create, update, or delete a customer website or contact information | Lighthouse |
 | **unassignTag** | Tenants | Remove a tag from a customer | Lighthouse |
@@ -69,30 +71,19 @@ The following table lists activities captured within Lighthouse audit logs. The 
 | **confirmUsersCompromised** | Users | Confirm a user is compromised | Azure AD |
 | **dismissUsersRisk** | Users | Dismiss user risk | Azure AD |
 | **resetUserPassword** | Users | Reset password | Azure AD |
-| **getConditionalAccessPolicies** | Users | View CA policies requiring MFA | Azure AD |
-| **getTenantIDToTenantNameMap** | Users | Search for IDs | Azure AD |
-| **getUsers** | Users | Search for users | Azure AD |
-| **getUsersWithoutMfa** | Users | View users not registered for MFA | Azure AD |
-| **getSsprEnabledButNotRegisteredUsers** | Users | View users not registered for SSPR | Azure AD |
 | **setCustomerSecurityDefaultsEnabledStatus** | Users | Enable multifactor authentication (MFA) with security defaults | Azure AD |
-|**getCompliancePolicyInfo** | Devices | View a policy | MEM
-|**getDeviceCompliancePolicyStates** | Devices | View policy states | MEM
-|**getDeviceCompliancePolicySettingStates** | Devices | View non-compliant settings | MEM
-|**getDeviceCompliancePolicySettingStateSummaries** | Devices | View non-compliant devices | MEM
-|**getTenantsDeviceCompliancePolicies** | Devices | Compare policies | MEM
-| **restartDevice** | Devices | Restart | MEM |
-| **syncDevice** | Devices | Sync | MEM |
-| **rebootNow** | Threat management | Reboot | MEM |
+| **restartDevice** | Devices | Restart | Microsoft Intune |
+| **syncDevice** | Devices | Sync | Microsoft Intune |
+| **rebootNow** | Threat management | Reboot | Microsoft Intune |
 | **reprovision** | Windows 365 | Retry provisioning | Windows 365 |
-| **getDeviceUserInfo** | Threat management | View managed device user information  | MEM |
-| **getManagedDevice**, **remoteActionAudits**, or **deviceActionResults** | Threat management | View managed device information  | MEM |
-| **windowsDefenderScanFull** | Threat management | Full scan | MEM |
-| **windowsDefenderScan** | Threat management | Quick scan | MEM |
-| **windowsDefenderUpdateSignatures** | Threat management | Update antivirus | MEM |
+| **windowsDefenderScanFull** | Threat management | Full scan | Microsoft Intune |
+| **windowsDefenderScan** | Threat management | Quick scan | Microsoft Intune |
+| **windowsDefenderUpdateSignatures** | Threat management | Update antivirus | Microsoft Intune |
 
 ## Next steps
 
 Use Microsoft Graph API to access more audit events, if needed. For more information, see [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
+
 
 ## Related content
 

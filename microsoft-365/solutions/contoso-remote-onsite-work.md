@@ -5,11 +5,14 @@ f1.keywords:
 - NOCSH
 ms.author: dansimp
 manager: dansimp
+ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:

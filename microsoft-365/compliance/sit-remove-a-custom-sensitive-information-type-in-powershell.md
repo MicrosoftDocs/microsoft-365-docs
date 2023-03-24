@@ -5,12 +5,14 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+ms.date: 07/06/2021
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -19,11 +21,9 @@ description: "Learn how to remove a custom sensitive information type using Powe
 
 # Remove a custom sensitive information type using PowerShell
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 In Security & Compliance PowerShell, there are two methods to remove custom sensitive information types:
 
-- **Remove individual custom sensitive information types**: Use the method documented in [Modify a custom sensitive information type using PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell). You export the custom rule package that contains the custom sensitive information type, remove the sensitive information type from the XML file, and import the updated XML file back into the existing custom rule package.
+- **Remove individual custom sensitive information types**: Use the method documented in [Modify a custom sensitive information type using PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell). Export the custom rule package containing the custom sensitive information type. Remove the sensitive information type from the XML file, and then import the updated XML file back into the existing custom rule package.
 
 - **Remove a custom rule package and all custom sensitive information types that it contains**: This method is documented in this section.
 
@@ -62,13 +62,15 @@ In Security & Compliance PowerShell, there are two methods to remove custom sens
      Get-DlpSensitiveInformationType
      ```
 
-     For custom sensitive information types, the Publisher property value will be something other than Microsoft Corporation.
+     For custom sensitive information types, the Publisher property value will be something other than "Microsoft Corporation".
 
    - Replace \<Name\> with the Name value of the sensitive information type (for example, Employee ID) and run the [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet to verify the sensitive information type is no longer listed:
 
      ```powershell
      Get-DlpSensitiveInformationType -Identity "<Name>"
      ```
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## More information
 

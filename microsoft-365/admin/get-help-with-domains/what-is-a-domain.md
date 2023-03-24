@@ -2,24 +2,29 @@
 title: "What is a domain?"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier2 
+- ContentEngagementFY23
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
-
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
 description: "Learn what a domain is and how you can buy a domain or use the default domain of your business to get started with OneDrive and Microsoft apps."
-ms.custom: 
+ms.custom:
+- VSBFY23 
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -27,6 +32,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # What is a domain?
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
@@ -65,5 +72,3 @@ Call Microsoft Support - [Get help setting up a domain](../../business-video/get
 [Add a domain to Microsoft 365](../setup/add-domain.md) (article)
 
 [Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)
-
-

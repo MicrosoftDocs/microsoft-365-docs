@@ -3,12 +3,16 @@ title: "Customize and publish your booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 06/18/2020
 audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- Tier1
+- scotvorg
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
-description: "Change the color theme of your booking page in the Microsoft Bookings app."
+description: "Change the color theme of your booking page."
 ---
 
 # Customize and publish your booking page

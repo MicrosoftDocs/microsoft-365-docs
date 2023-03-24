@@ -2,14 +2,17 @@
 title: "Microsoft 365 admin center SharePoint activity reports"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
+ms.date: 10/20/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -27,6 +30,9 @@ description: "Get the SharePoint activity usage report to learn about SharePoint
 As a Microsoft 365 admin, the Reports dashboard shows you the activity overview across various products in your organization. It enables you to drill in to get more granular insight about the activities specific to each product. Check out the [activity reports in the Microsoft 365 admin center](activity-reports.md).
   
 For example, you can understand the activity of every user licensed to use SharePoint by looking at their interaction with files. It also helps you to understand the level of collaboration going on by looking at the number of files shared.
+
+> [!NOTE] 
+> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
   
 ## How do I get to the SharePoint activity report?
 
@@ -37,9 +43,11 @@ For example, you can understand the activity of every user licensed to use Share
 
 You can view the activities in the SharePoint report by choosing the **Activity** tab.<br/>![Microsoft 365 reports - Microsoft SharePoint activity report.](../../media/5a0a96f-0e4f-4fb9-8baa-3262275b3d1f.png)
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![SharePoint activity report - choose columns.](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
+Select **Choose columns** to add or remove columns from the report. 
 
-You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you'll need to export the data. 
+![SharePoint activity report - choose columns.](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
+
+You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis.  
 
 The **SharePoint activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   

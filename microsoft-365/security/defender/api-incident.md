@@ -3,7 +3,8 @@ title: Microsoft 365 Defender incidents APIs and the incidents resource type
 description: Learn about the methods and properties of the Incidents resource type in Microsoft 365 Defender
 keywords: incident, incidents, api
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +15,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ms.custom: api
+ms.date: 02/08/2023
 ---
 
 # Microsoft 365 Defender incidents API and the incidents resource type
@@ -29,7 +32,10 @@ ms.custom: api
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](/fwlink/?linkid=2118804)
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview?view=graph-rest-1.0&preserve-view=true).
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -68,15 +74,20 @@ incidentName | string | The name of the Incident.
 createdTime | DateTimeOffset | The date and time (in UTC) the Incident was created.
 lastUpdateTime | DateTimeOffset | The date and time (in UTC) the Incident was last updated.
 assignedTo | string | Owner of the Incident.
-severity | Enum | Severity of the Incident. Possible values are: ```UnSpecified```, ```Informational```, ```Low```, ```Medium```, and ```High```.
-status | Enum | Specifies the current status of the incident. Possible values are: ```Active```, ```InProgress```, ```Resolved```, and ```Redirected```.
-classification | Enum | Specification of the incident. Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.
-determination | Enum | Specifies the determination of the incident. Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
-tags | string List | List of Incident tags.
+severity | Enum | Severity of the Incident. Possible values are: `UnSpecified`, `Informational`, `Low`, `Medium`, and `High`.
+status | Enum | Specifies the current status of the incident. Possible values are: `Active`, `InProgress`, `Resolved`, and `Redirected`.
+classification | Enum | Specification of the incident. Possible values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.
+determination | Enum | Specifies the determination of the incident. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).
+tags | string list | List of Incident tags.
 comments | List of incident comments | Incident Comment object contains: comment string, createdBy string, and createTime date time.
-alerts | Alert List | List of related alerts. See examples at [List incidents](api-list-incidents.md) API documentation.
+alerts | alert list | List of related alerts. See examples at [List incidents](api-list-incidents.md) API documentation.
+
+> [!NOTE]
+> Around August 29, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ## Related articles
+
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Microsoft 365 Defender APIs overview](api-overview.md)
 - [Incidents overview](incidents-overview.md)

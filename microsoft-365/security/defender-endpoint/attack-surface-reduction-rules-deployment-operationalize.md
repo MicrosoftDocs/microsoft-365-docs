@@ -1,45 +1,47 @@
 ---
 title: Operationalize attack surface reduction (ASR) rules
 description: Provides guidance to operationalize your attack surface reduction rules deployment.
-keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
+keywords: Attack surface reduction (ASR) rules deployment, Microsoft ASR, manage defender ASR rules, monitor asr rules, asr rules advanced hunting, ASR rules report, asr rules false positives, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: Dansimp
+ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection: 
- - m365solution-scenario
- - M365-security-compliance
-ms.date: 1/18/2022
+ - m365-security
+ - m365solution-asr-rules
+ - highpri
+ - tier1
+ms.date: 02/10/2023
+search.appverid: met150
 ---
 
 # Operationalize attack surface reduction (ASR) rules
 
-After you've fully deployed attack surface reduction (ASR) rules, it's vital that you have processes in place to monitor and respond to ASR-related activities.
+After you've fully deployed attack surface reduction (ASR) rules, it's vital that you have processes in place to monitor and respond to ASR-related activities. Activities include: 
 
-## Managing false positives
+## Managing ASR rules false positives
 
 False positives/negatives can occur with any threat protection solution. False positives are cases in which an entity (such as a file or process) is detected and identified as malicious, although the entity isn't actually a threat. In contrast, a false negative is an entity that wasn't detected as a threat but is malicious. For more information about false positives and false negatives, see: [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
 
-## Keeping up with reports
+## Keeping up with ASR rules reports
 
 Consistent, regular review of reports is an essential aspect of maintaining your ASR rules deployment and keeping abreast of newly emerging threats. Your organization should have scheduled reviews of ASR  rules events on a cadence that will keep current with ASR  rules-reported events. Depending on the size of your organization, reviews might be daily, hourly, or continuous monitoring.
 
-## Hunting
+## ASR rules Advanced Hunting
 
 One of the most powerful features of [Microsoft 365 Defender](https://security.microsoft.com) is advanced hunting. If you're not familiar with advanced hunting, see: [Proactively hunt for threats with advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="The Advanced Hunting page in the Microsoft 365 Defender portal" lightbox="images/asr-defender365-advanced-hunting2.png":::
+> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="The Advanced Hunting page in the Microsoft 365 Defender portal. Microsoft Defender for Endpoint (MDE) ASR rules, ASR rules advanced hunting, asr rules reports, asr rules false positives," lightbox="images/asr-defender365-advanced-hunting2.png":::
 
 Advanced hunting is a query-based (Kusto Query Language) threat-hunting tool that lets you explore up to 30 days of the captured (raw) data that Microsoft Defender ATP Endpoint Detection and Response (EDR) collects from all your machines. Through advanced hunting, you can proactively inspect events in order to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
 
@@ -49,8 +51,12 @@ Through advanced hunting, it is possible to extract ASR rules information, creat
 
 ASR events shown in the advancing hunting portal are throttled to unique processes seen every hour. The time of the ASR event is the first time the event is seen within that hour.
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting3.png" alt-text="The Advanced hunting query command line in the Microsoft 365 Defender portal" lightbox="images/asr-defender365-advanced-hunting3.png":::
+```kusto
+DeviceEvents
+| where Timestamp > ago(30d)
+| where ActionType startswith "Asr"
+| summarize EventCount=counst() by ActionType
+```
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-advanced-hunting4.png" alt-text="The Advanced hunting query results in the Microsoft 365 Defender portal" lightbox="images/asr-defender365-advanced-hunting4.png":::
@@ -64,8 +70,12 @@ The above shows that 187 events were registered for AsrLsassCredentialTheft:
 
 If you want to focus on the AsrOfficeChildProcess rule and get details on the actual files and processes involved, change the filter for ActionType and replace the summarize line with a projection of the wanted fields (in this case they are DeviceName, FileName, FolderPath, etc.).
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting4b.png" alt-text="The Advanced hunting query focused example in the Microsoft 365 Defender portal" lightbox="images/asr-defender365-advanced-hunting4b.png":::
+```kusto
+DeviceEvents
+| where (Actiontype startswith "AsrOfficechild")
+| extend RuleId=extractison("$Ruleid", AdditionalFields, typeof(string))
+| project DeviceName, FileName, FolderPath, ProcessCommandLine, InitiatingProcessFileName, InitiatingProcessCommandLine
+```
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-advanced-hunting5b.png" alt-text="The Advanced hunting query focused results in the Microsoft 365 Defender portal" lightbox="images/asr-defender365-advanced-hunting5b.png":::

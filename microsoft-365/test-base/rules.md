@@ -8,11 +8,11 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 02/04/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
 ---
 # Application/Test rules

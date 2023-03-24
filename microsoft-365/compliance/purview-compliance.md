@@ -7,18 +7,23 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: m365-security-compliance
+ms.collection: 
+- tier1
+- purview-compliance
 ---
 
 # Microsoft Purview risk and compliance solutions
 
-Microsoft Purview risk and compliance solutions help you manage and monitor your data, protect information, minimize compliance risks, and meet regulatory requirements. This article will help you learn about Microsoft Purview risk and compliance solutions and quickly get started with deploying these solutions to meet specific compliance needs for your organization.
+[Microsoft Purview](/purview/purview) risk and compliance solutions help you manage and monitor your data, protect information, minimize compliance risks, and meet regulatory requirements. This article will help you learn about Microsoft Purview risk and compliance solutions and quickly get started with deploying these solutions to meet specific compliance needs for your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Protect sensitive data across clouds, apps, and devices
 

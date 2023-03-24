@@ -2,19 +2,22 @@
 title: Turn on network protection
 description: Enable network protection with Group Policy, PowerShell, or Mobile Device Management and Configuration Manager.
 keywords: Network protection, exploits, malicious website, ip, domain, domains, enable, turn on
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 10/18/2022
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
-ms.technology: mde
-ms.collection: m365-security-compliance
-ms.date:
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Turn on network protection
@@ -22,13 +25,17 @@ ms.date:
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Platforms**
+
 - Windows
+- Linux \(See [Network protection for Linux](network-protection-linux.md)\)
+- macOS \(See [Network protection for macOS](network-protection-macos.md)\)
 
 > [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -45,7 +52,7 @@ Check if network protection has been enabled on a local device by using Registry
 
 2. Choose **HKEY_LOCAL_MACHINE** from the side menu.
 
-3. Navigate through the nested menus to **SOFTWARE** \> **Policies** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
+3. Navigate through the nested menus to **SOFTWARE** \> **Policies** \> **Microsoft** \> **Windows Defender** \> **Policy Manager**.
 
 If the Key is missing,  Navigate to **SOFTWARE** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
 
@@ -63,9 +70,9 @@ Enable network protection by using any of these methods:
 
 - [PowerShell](#powershell)
 - [Mobile Device Management (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
+- [Microsoft Intune](#microsoft-intune)
 - [Group Policy](#group-policy)
-- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Microsoft Configuration Manager](#microsoft-configuration-manager)
 
 ### PowerShell
 
@@ -91,10 +98,31 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/
 
 [Update Microsoft Defender antimalware platform to the latest version](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) before you enable or disable network protection or enable audit mode.
 
+### Microsoft Intune
 
-### Microsoft Endpoint Manager
+#### Microsoft Defender for Endpoint Baseline method
 
-1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com).
+1. Sign into the Microsoft Intune admin center (https://endpoint.microsoft.com).
+2. Go to **Endpoint security** > **Security baselines** > **Microsoft Defender for Endpoint Baseline**.
+3. Select **Create a profile**, then provide a name for your profile, and then select **Next**.
+4. In the **Configuration settings** section, go to **Attack Surface Reduction Rules** > set **Block**, **Enable** or **Audit** for **Enable network protection**. Select **Next**.
+5. Select the appropriate **Scope tags** and **Assignments** as required by your organization.
+7. Review all the information, and then select **Create**.
+
+#### Antivirus policy method
+1. Sign into the Microsoft Intune admin center (https://endpoint.microsoft.com).
+2. Go to **Endpoint security** > **Antivirus**
+3. Select **Create a policy**
+4. In the **Create a policy** flyout, choose **Windows 10, Windows 11, and Windows Server** from the **Platform** list.
+5. Choose **Microsoft Defender Antivirus** from the **Profile** list then choose **Create**
+6. Provide a name for your profile, and then select **Next**.
+7. In the **Configuration settings** section, select **Disabled**, **Enabled (block mode)** or **Enabled (audit mode)** for **Enable Network Protection**, then select **Next**.
+8. Select the appropriate **Assignments** and **Scope tags** as required by your organization.
+9. Review all the information, and then select **Create**.
+
+#### Configuration profile method
+
+1. Sign into the Microsoft Intune admin center (https://endpoint.microsoft.com).
 
 2. Go to **Devices** > **Configuration profiles** > **Create profile**.
 
@@ -122,7 +150,7 @@ Use the following procedure to enable network protection on domain-joined comput
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Windows Defender Exploit Guard** \> **Network protection**.
+3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Microsoft Defender Exploit Guard** \> **Network protection**.
 
    > [!NOTE]
    > On older versions of Windows, the group policy path may say "Windows Defender Antivirus" instead of "Microsoft Defender Antivirus."
@@ -138,7 +166,7 @@ Use the following procedure to enable network protection on domain-joined comput
    > [!NOTE]
    > Optional: Follow the steps in [Check if network protection is enabled](#check-if-network-protection-is-enabled) to verify that your Group Policy settings are correct.
 
-### Microsoft Endpoint Configuration Manager
+### Microsoft Configuration Manager
 
 1. Open the Configuration Manager console.
 
@@ -153,11 +181,10 @@ Use the following procedure to enable network protection on domain-joined comput
    - **Block**
    - **Audit**
    - **Disabled**
-   
-6. Complete the rest of the steps, and save the policy. 
+
+6. Complete the rest of the steps, and save the policy.
 
 7. From the ribbon, select **Deploy** to deploy the policy to a collection.
-
 
 > [!IMPORTANT]
 > Once you deploy an Exploit Guard policy from Configuration Manager, the Exploit Guard settings will not be removed from the clients if you remove the deployment. `Delete not supported` is recorded in the Configuration Manager client's ExploitGuardHandler.log if you remove the client's Exploit Guard deployment. <!--CMADO8538577-->
@@ -181,6 +208,10 @@ Use the following procedure to enable network protection on domain-joined comput
 ## See also
 
 - [Network protection](network-protection.md)
+
+- [Network protection for Linux](network-protection-linux.md)
+
+- [Network protection for macOS](network-protection-macos.md)
 
 - [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 

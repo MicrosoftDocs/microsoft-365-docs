@@ -5,15 +5,20 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -27,6 +32,8 @@ description: "Learn how to find a new Microsoft 365 partner, or get contact info
 ---
 
 # Find your Microsoft 365 subscriptions partner or reseller
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 As an admin, you can work with a partner to purchase, activate, and renew Microsoft 365 subscriptions through a Microsoft Open Volume Licensing program. 
   
@@ -58,5 +65,3 @@ If you're ready to buy or renew Microsoft 365 through Open Volume Licensing, or 
  **For Microsoft partners**
   
 [Help for partners](https://support.microsoft.com/office/ae811622-b838-4f62-b7e9-659627374963)
-  
-

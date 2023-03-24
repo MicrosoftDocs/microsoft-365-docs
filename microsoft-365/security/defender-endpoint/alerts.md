@@ -2,7 +2,7 @@
 title: Get alerts API
 description: Learn about the methods and properties of the Alert resource type in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, alerts, recent
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,14 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-MS.technology: mde
+ms.collection: 
+- m365-security
+- tier1
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Alert resource type
@@ -24,17 +28,16 @@ ms.custom: api
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> [!NOTE]
+> For the full available Alerts API experience across all Microsoft Defenders' products, visit: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## Methods
-
-<br>
-
-****
 
 |Method|Return Type|Description|
 |---|---|---|
@@ -48,13 +51,8 @@ ms.custom: api
 |[List related IPs](get-alert-related-ip-info.md)|IP collection|List IPs that are associated with the alert.|
 |[Get related machines](get-alert-related-machine-info.md)|[Machine](machine.md)|The [machine](machine.md) that is associated with the [alert](alerts.md).|
 |[Get related users](get-alert-related-user-info.md)|[User](user.md)|The [user](user.md) that is associated with the [alert](alerts.md).|
-|
 
 ## Properties
-
-<br>
-
-****
 
 |Property|Type|Description|
 |---|---|---|
@@ -75,8 +73,8 @@ ms.custom: api
 |relatedUser|String|Details of user related to a specific alert.|
 |severity|Enum|Severity of the alert. Possible values are: 'UnSpecified', 'Informational', 'Low', 'Medium' and 'High'.|
 |status|Enum|Specifies the current status of the alert. Possible values are: 'Unknown', 'New', 'InProgress' and 'Resolved'.|
-|classification|Nullable Enum|Specification of the alert. Possible values are: 'Unknown', 'FalsePositive', 'TruePositive'.|
-|determination|Nullable Enum|Specifies the determination of the alert. Possible values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
+|classification|Nullable Enum|Specification of the alert. Possible values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.|
+|determination|Nullable Enum|Specifies the determination of the alert. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).|
 |category|String|Category of the alert.|
 |detectionSource|String|Detection source.|
 |threatFamilyName|String|Threat family.|
@@ -87,7 +85,9 @@ ms.custom: api
 |detectorId|String|The ID of the detector that triggered the alert.|
 |comments|List of Alert comments|Alert Comment object contains: comment string, createdBy string, and createTime date time.|
 |Evidence|List of Alert evidence|Evidence related to the alert. See example below.|
-|
+
+> [!NOTE]
+> Around August 29, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ### Response example for getting single alert:
 
@@ -223,3 +223,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_136
     ]
 }
 ```
+
+## Related articles
+
+[Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)

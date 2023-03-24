@@ -4,13 +4,16 @@ f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 05/01/2020
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.service: o365-solutions
 ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
+- highpri
+- Tier1
 - Ent_O365
 - Strat_O365_Enterprise
 - m365solution-3tiersprotection
@@ -35,9 +38,9 @@ We also recommend turning on basic Defender for Office 365 features to guard aga
 
 |Option|Information|
 |:------|:-----------|
-|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](../security/office-365-security/safe-attachments.md) <p> [Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
-|Safe Documents|[Safe Documents in Microsoft Defender for Office 365](../security/office-365-security/safe-docs.md)|
-|Safe Links for Teams|[Office 365 Safe Links in Teams](../security/office-365-security/safe-links.md) <p> [Safe Links](../security/office-365-security/safe-links.md)|
+|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](../security/office-365-security/safe-attachments-about.md) <p> [Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/safe-attachments-for-spo-odfb-teams-about.md)|
+|Safe Documents|[Safe Documents in Microsoft Defender for Office 365](../security/office-365-security/safe-documents-in-e5-plus-security-about.md)|
+|Safe Links for Teams|[Office 365 Safe Links in Teams](../security/office-365-security/safe-links-about.md) <p> [Safe Links](../security/office-365-security/safe-links-about.md)|
 
 ## Teams guest sharing
 

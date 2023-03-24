@@ -2,7 +2,7 @@
 title: Device discovery frequently asked questions
 description: Find answers to frequently asked questions (FAQs) about device discovery
 keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance 
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: m365d
+ms.subservice: mde
+search.appverid: met150
+ms.date: 03/23/2021
 ---
 
 # Device discovery frequently asked questions
@@ -36,7 +40,7 @@ This mode allows every Microsoft Defender for Endpoint onboarded device to colle
 
 ## Can I disable Basic discovery?
 
-You have the option to turn off device discovery through the [Advanced features](advanced-features.md) page. However, you will lose visibility on unmanaged devices in your network. Note that SenseNDR.exe will still be running on the onboarded devices regardless discovery is turned off. 
+You have the option to turn off device discovery through the [Advanced features](advanced-features.md) page. However, you will lose visibility on unmanaged devices in your network. Note that even if device discovery is turned off, SenseNDR.exe will still be running on the onboarded devices. 
 
 ## What is Standard discovery mode?
 

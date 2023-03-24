@@ -5,11 +5,14 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.date: 10/08/2018
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
 - Adm_O365
 - M365-subscription-management 
 ms.custom:
@@ -31,11 +34,11 @@ description: "Discover your options for purchasing Microsoft 365 Business Premiu
 
 ## Get Microsoft 365 Business Premium from Microsoft
 
-If you don't have a partner and want to get Microsoft 365 Business Premium, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).
+If you don't have a partner and want to get Microsoft 365 Business Premium, you can [buy it here](https://www.microsoft.com/microsoft-365/business).
 
 See [sign up for Microsoft 365 Business Premium](sign-up.md) for detailed instructions.
 
-You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) to buy Microsoft 365 Business Premium and get setup help.
+You can also head over to a [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=en_US_Store_UH_FAS) to buy Microsoft 365 Business Premium and get setup help.
   
 ## Get Microsoft 365 Business Premium from Microsoft Partner Center
 

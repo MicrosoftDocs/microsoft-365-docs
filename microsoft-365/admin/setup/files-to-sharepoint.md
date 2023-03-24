@@ -5,14 +5,19 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier2 
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 search.appverid:
@@ -23,11 +28,17 @@ description: "Learn how to move company files to SharePoint."
 ---
 # Move files to SharePoint
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
+## Watch: Move company files to SharePoint
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198210).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/65ec460e-296c-458f-b004-906756dfb3d0?autoplay=false]
 
 After you sign up for Microsoft 365 Business Premium, you&#39;ll want to copy your company work files to SharePoint. SharePoint is a good place to store shared company files that everyone needs access to. This typically replaces the use of a file share or network drive.
-
-## Try it!
 
 1. Open Microsoft Teams, and then open a team that everyone in your business has access to.
 2. Select  **Files** , and then select  **Open in SharePoint**.

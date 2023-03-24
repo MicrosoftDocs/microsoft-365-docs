@@ -1,10 +1,13 @@
 ---
 manager: dansimp
+ms.date: 09/21/2020
 ms.author: dansimp
 author: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.topic: include
 ms.custom: admindeeplinkDEFENDER
+search.appverid: met150
 ---
 
 > [!NOTE]

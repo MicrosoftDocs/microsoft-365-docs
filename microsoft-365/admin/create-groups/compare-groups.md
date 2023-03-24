@@ -1,15 +1,18 @@
 ---
 title: "Compare groups"
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -58,7 +61,7 @@ Microsoft 365 Groups can be accessed through mobile apps such as Outlook for iOS
 
 Group members can send as or send on behalf of the group email address if this has been [enabled by the administrator](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
-Microsoft 365 Groups don't support nesting with other Microsoft 365 Groups or with distribution or security groups.
+Microsoft 365 groups support nesting through [dynamic groups in Azure Active Directory](/azure/active-directory/enterprise-users/groups-dynamic-rule-member-of).
 
 Microsoft 365 Groups can be added to one of the three SharePoint groups (Owners, Members, or Visitors) to give people permissions to the site.
 
@@ -67,8 +70,6 @@ Microsoft 365 Groups can be added to one of the three SharePoint groups (Owners,
 [Distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) are used for sending notifications to a group of people. They can receive external email if enabled by the administrator.
 
 Distribution groups are best for situations where you need to broadcast information to a set group of people, such as "People in Building A" or "Everyone at Contoso."
-
-Distribution groups can be [upgraded to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md).
 
 Distribution groups can be added to a team in Microsoft Teams, though only the members are added and not the group itself.
 
@@ -116,6 +117,3 @@ It's not possible to migrate a shared mailbox to a Microsoft 365 Group.
 
 [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[Upgrade distribution lists to Microsoft 365 Groups in Outlook](/microsoft-365/admin/manage/upgrade-distribution-lists)
-
-[Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)

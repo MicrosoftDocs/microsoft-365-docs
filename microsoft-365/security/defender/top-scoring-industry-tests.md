@@ -3,7 +3,8 @@ title: Top scoring in industry tests - Microsoft 365 Defender
 ms.reviewer:
 description: View the latest scores and analysis of Microsoft 365 Defender. It consistently achieves high scores in independent tests (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). View the latest scores and analysis.
 keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, antivirus test, av testing, latest av scores, detection scores, security product testing, security industry tests, industry antivirus tests, best antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, endpoint protection platform, EPP, endpoint detection and response, EDR, Windows 10, Windows 11 Microsoft Defender Antivirus, WDAV, Microsoft Defender for Endpoint, Microsoft 365 Defender, security, malware, av, antivirus, scores, scoring, next generation protection, ranking, success
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: high
@@ -11,10 +12,12 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+  -m365-security-compliance
+  - tier2
+ms.topic: conceptual
 search.appverid: met150
-ms.technology: m365d
+ms.date: 02/16/2021
 ---
 
 # Top scoring in industry tests
@@ -32,6 +35,8 @@ Microsoft 365 Defender combines the capabilities of [Microsoft Defender for Endp
 ### MITRE: Demonstrated real-world detection, response, and protection from advanced attacks
 
 Core to MITRE's testing approach is emulating real-world attacks to understand whether solutions can adequately detect and respond to them. While the test focused on endpoint detection and response, MITRE's simulated APT29 attack spans multiple attack domains, creating opportunities to empower defenders beyond just endpoint protection. Microsoft expanded visibility beyond the endpoint with Microsoft 365 Defender.
+
+- ATT&CK-based evaluation of Microsoft 365 Defender - April 2022: [Microsoft 365 Defender demonstrates industry-leading protection in the 2022 MITRE Engenuity ATT&CK® Evaluations]([Microsoft Security Blog: Microsoft 365 Defender demonstrates industry-leading protection in the 2022 MITRE Engenuity ATT&CK® Evaluations](https://www.microsoft.com/en-us/security/blog/2022/04/05/microsoft-365-defender-demonstrates-industry-leading-protection-in-the-2022-mitre-engenuity-attck-evaluations/))
 
 - ATT&CK-based evaluation of Microsoft 365 Defender - April 2021: [Evaluation proves Microsoft Defender for Endpoint stops advanced attacks across platforms](https://www.microsoft.com/security/blog/2021/04/21/)
 

@@ -5,11 +5,14 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -33,6 +36,8 @@ description: "Learn how to assign administrator roles to a user or multiple user
 
 # Assign admin roles in the Microsoft 365 admin center
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 If you're the person who purchased your Microsoft business subscription, you are the global admin. This means you have unlimited control over the products in your subscriptions and you can access most data.
 
 For more information, see [About admin roles](about-admin-roles.md).
@@ -41,17 +46,19 @@ When you add new users, if you don't assign them an admin role then they are in 
 
 ## Watch: Add an admin
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198030).
 
-1. When you sign up for Microsoft 365 Business, you automatically become a global admin. To help manage the business, you can make other people admins as well. 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO]
+
+1. When you sign up for Microsoft 365 Business, you automatically become a global admin. To help manage the business, you can make other people admins as well.
 1. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. Choose the user you want to make an admin, and then select **Manage roles**.
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
-## Assign admin roles 
+## Assign admin roles
 
-You can assign users to a role in 2 different ways:
+You can assign users to a role in two different ways:
 
 - You can go to the user's details and **Manage roles** to assign a role to the user.
 - Or you can go to **Roles** and select the role, and then add multiple users to it.

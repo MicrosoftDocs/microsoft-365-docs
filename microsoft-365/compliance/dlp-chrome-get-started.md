@@ -1,11 +1,11 @@
 ---
-title: "Get started with the Microsoft Purview Extension"
+title: "Get started with the Microsoft Purview Chrome Extension"
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -13,32 +13,36 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: "Prepare for and deploy the Microsoft Purview Extension."
 ---
 
-# Get started with Microsoft Purview Extension
+# Get started with Microsoft Purview Chrome Extension
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Use these procedures to roll out the Microsoft Purview Chrome Extension.
 
-Use these procedures to roll out the Microsoft Purview Extension.
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+> [!NOTE]
+> Microsoft Purview Extension is only applicable to Windows devices. The extension is not necessary for the enforcement of data loss prevention on macOS devices.
 
 ## Before you begin
 
-To use Microsoft Purview Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
+To use Microsoft Purview Chrome Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
-- [Learn about Microsoft Purview Extension](dlp-chrome-learn-about.md)
+- [Learn about Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md)
 - [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-- [Onboarding tools and methods for Windows 10 devices](device-onboarding-overview.md)
+- [Onboarding tools and methods for Windows 10/11 devices](device-onboarding-overview.md)
 - [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 
@@ -72,18 +76,18 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 - Security reader
 - Reports reader
 
-#### Roles and Role Groups in preview
+#### Roles and Role Groups
 
-There are roles and role groups in preview that you can test out to fine tune your access controls.
+There are roles and role groups that you can use to fine tune your access controls.
 
-Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
@@ -93,11 +97,11 @@ Here's a list of applicable role groups that are in preview. To learn more about
 
 ### Overall installation workflow
 
-Deploying the extension is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Endpoint Manager or Group Policy for organization-wide deployments.
+Deploying the extension is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Intune or Group Policy for organization-wide deployments.
 
 1. [Prepare your devices](#prepare-your-devices).
 2. [Basic Setup Single Machine Selfhost](#basic-setup-single-machine-selfhost)
-3. [Deploy using Microsoft Endpoint Manager](#deploy-using-microsoft-endpoint-manager)
+3. [Deploy using Microsoft Intune](#deploy-using-microsoft-intune)
 4. [Deploy using Group Policy](#deploy-using-group-policy)
 5. [Test the extension](#test-the-extension)
 6. [Use the Alerts Management Dashboard to viewing Chrome DLP alerts](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
@@ -105,7 +109,7 @@ Deploying the extension is a multi-phase process. You can choose to install on o
 
 ### Prepare infrastructure
 
-If you are rolling out the extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](dlp-configure-endpoint-settings.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The extension will bypass the restrictions of both lists for those computers where it is installed.
+If you are rolling out the extension to all your monitored Windows 10/11 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](dlp-configure-endpoint-settings.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The extension will bypass the restrictions of both lists for those computers where it is installed.
 
 ### Prepare your devices
 
@@ -122,41 +126,51 @@ This is the recommended method.
 
 2. Install the extension using the instructions on the Chrome Web Store page.
 
-### Deploy using Microsoft Endpoint Manager
+### Deploy using Microsoft Intune
 
 Use this setup method for organization-wide deployments.
 
-#### Microsoft Endpoint Manager Force Install Steps
+#### Microsoft Intune Force Install Steps
 
-Before adding the extension to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Microsoft Endpoint Manager are documented by Google: [Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
+Using the settings catalog, follow these steps to manage Chrome extensions:
 
- After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
-
-1. Sign in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Navigate to Configuration Profiles.
 
 3. Select **Create Profile**.
 
-4. Select **Windows 10** as the platform.
+4. Select **Windows 10 and later** as the platform.
 
-5. Select **Custom** as profile type.
+5. Select **Settings catalog** as the profile type.
 
-6. Select the **Settings** tab.
+6. Select **Custom** as the template name.
 
-7. Select **Add**.
+7. Select **Create**.
 
-8. Enter the following policy information.
+8. Enter a name and optional description on the **Basics** tab and select **Next**.
 
-    OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
-    Data type: `String`<br/>
-    Value: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
+9. Select **Add settings** on the **Configuration settings** tab.
+10. Select **Administrative Templates** > **Google** > **Google Chrome** > **Extensions**.
+11. Select **Configure the list of force-installed apps and extensions**.
+12. Change the toggle to **Enabled**.
+13. Enter the following value for the extensions and app IDs and update URL:
+     `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`.
 
-9. Click create.
+    
+11. Select **Next**.
+
+12. Add or edit scope tags on the **Scope tags** tab as needed and select **Next**.
+
+13. Add the required deployment users, devices, and groups on the **Assignments** tab and select **Next**.
+
+14. Add applicability rules on the **Applicability Rules** tab as required and select **Next**.
+
+15. Select **Create**.
 
 ### Deploy using Group Policy
 
-If you don't want to use Microsoft Endpoint Manager, you can use group policies to deploy the extension across your organization.
+If you don't want to use Microsoft Intune, you can use group policies to deploy the extension across your organization.
 
 #### Adding the Chrome Extension to the ForceInstall List
 
@@ -229,7 +243,7 @@ Now that you have onboarded devices and can view the activity data in Activity e
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
 - [Onboarding tools and methods for Windows 10 machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)

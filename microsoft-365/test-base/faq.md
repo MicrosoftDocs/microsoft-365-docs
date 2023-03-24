@@ -8,11 +8,11 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
 ---
 
@@ -38,6 +38,10 @@ The Out-of-box (OOB) tests provide you with standardized telemetry on your appli
 
 **A:** Yes, customers can also upload application packages for **functional tests** via the self-serve portal dashboard.
 **Functional tests** are tests that enable customers to execute their scripts to run custom functionality on their application.
+
+**Q: How long does KB installation take?**
+
+**A:** The KB installation time can vary, the KB installation happens in between the install and launch scripts for OOB tests.
 
 ## Testing
 

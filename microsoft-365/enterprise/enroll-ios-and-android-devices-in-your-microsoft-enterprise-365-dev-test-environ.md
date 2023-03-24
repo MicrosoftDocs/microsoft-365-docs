@@ -8,9 +8,11 @@ manager: scotv
 ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-identity-device-management
+ms.collection: 
+- scotvorg
+- M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Use this Test Lab Guide to enroll devices in your Microsoft 365 test environment and manage them remotely.
@@ -53,7 +55,7 @@ In Intune, there are a few ways to enroll your iOS/iPadOS and Android devices. Y
 If you're ready to use Intune for device management, and want some guidance, then the following information may help:
 
 - [Device management overview](/mem/intune/fundamentals/what-is-device-management)
-- [Tutorial: Walkthrough Intune in Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
+- [Tutorial: Walkthrough the Microsoft Intune admin center](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
 - [Deployment guide: Setup or move to Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 
 ## Phase 3: Manage your iOS and Android devices remotely

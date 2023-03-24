@@ -2,8 +2,8 @@
 title: Manage Microsoft Defender for Endpoint using Intune
 description: Learn how to manage Microsoft Defender for Endpoint with Intune
 keywords: post-migration, manage, operations, maintenance, utilization, intune, Microsoft Defender for Endpoint, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,12 +12,13 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-  - m365solution-scenario
-ms.topic: article
-ms.date: 11/29/2021
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.date: 01/27/2023
 ms.reviewer: chventou
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender for Endpoint with Intune
@@ -30,9 +31,7 @@ ms.reviewer: chventou
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-We recommend using [Microsoft Endpoint Manager](/mem), which includes Microsoft Intune (Intune) to manage your organization's threat protection features for devices (also referred to as endpoints). [Learn more about Endpoint Manager](/mem/endpoint-manager-overview).
-
-This article describes how to find your Microsoft Defender for Endpoint settings in Intune, and lists various tasks you can perform.
+We recommend using Microsoft Intune to manage your organization's threat protection features for devices (also referred to as endpoints). This article describes how to find your Microsoft Defender for Endpoint settings in Intune, and lists various tasks you can perform.
 
 ## Find your Microsoft Defender for Endpoint settings in Intune
 
@@ -53,8 +52,6 @@ This article describes how to find your Microsoft Defender for Endpoint settings
 ## Configure Microsoft Defender for Endpoint with Intune
 
 The following table lists various tasks you can perform to configure Microsoft Defender for Endpoint with Intune. You don't have to configure everything all at once; choose a task, read the corresponding resources, and then proceed.
-
-<br/><br/>
 
 |Task|Resources to learn more|
 |---|---|
@@ -83,5 +80,5 @@ If you haven't already done so, configure your Microsoft 365 Defender portal to 
 
 ## Next steps
 
-- [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Visit the Microsoft 365 Defender portal security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [Get an overview of Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+
