@@ -32,6 +32,10 @@
       href: plan-for-security-and-compliance.md
     - name: Compliance extensibility
       href: compliance-extensibility.md
+- name: Optical Character Recognition 
+  items:
+    - name: Learn about Optical Character Recognition
+      href: ocr-learn-about.md
 - name: Onboard devices for Microsoft Purview
   items:
     - name: Onboard Windows devices
