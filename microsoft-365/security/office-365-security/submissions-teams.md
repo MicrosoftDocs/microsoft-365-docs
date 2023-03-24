@@ -75,7 +75,7 @@ The value of this setting is meaningful only if message reporting is turned on i
 
    As previously described, this setting is turned on by default, and you typically leave it turned on if message reporting is also turned on in Teams admin center.
 
-:::image type="content" source="../../media/submissions-teams-turn-on-off-defender-portal.png" alt-text="Screenshot of the 'Monitor reported messages in Microsoft Teams' setting in the Microsoft 365 Defender portal." lightbox="../../media/submissions-teams-turn-on-off-defender-portal.png":::
+   :::image type="content" source="../../media/submissions-teams-turn-on-off-defender-portal.png" alt-text="Screenshot of the 'Monitor reported messages in Microsoft Teams' setting in the Microsoft 365 Defender portal." lightbox="../../media/submissions-teams-turn-on-off-defender-portal.png":::
 
 For more information about user reported message settings in the Defender portal, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 

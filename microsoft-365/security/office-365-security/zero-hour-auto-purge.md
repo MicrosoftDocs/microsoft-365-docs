@@ -19,7 +19,7 @@ ms.collection:
   - tier2
 ms.custom:
   - seo-marvel-apr2020
-description: Zero-hour auto purge (ZAP) retroactively moves delivered messages in an Exchange Online mailbox to the Junk Email folder or quarantine if they are found to be spam, phish, or may contain malware after delivery.
+description: Zero-hour auto purge (ZAP) retroactively moves delivered messages in an Exchange Online mailbox to the Junk Email folder or quarantine if those messages are found to be spam, phishing, or contain malware.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 3/28/2023
