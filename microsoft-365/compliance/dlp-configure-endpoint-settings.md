@@ -126,6 +126,9 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 
 ### Network share coverage and exclusions (preview)
 
+> [!IMPORTANT]
+> If you want to use Network share coverage and exclusions, you have to register your tenant at [Network share coverage](https://aka.ms/networkfileshares-edlp).
+
 **Network share coverage and exclusions (preview)** extends endpoint DLP policies and actions to new and edited files on network shares and mapped network drives. If [just in time protection (preview)](endpoint-dlp-learn-about.md#just-in-time-protection-preview) is also enabled, it will also be extended to cover network shares and mapped drives when you enable network share coverage and exclusions. If you want to exclude a specific network path for all monitored devices, add the path value in **Exclude these network share paths**.
 
 |Network share coverage and exclusions (preview) |Just in time protection (preview) |Resultant behavior  |
