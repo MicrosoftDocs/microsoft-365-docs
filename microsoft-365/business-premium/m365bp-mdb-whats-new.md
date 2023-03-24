@@ -9,7 +9,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/23/2023
+ms.date: 03/24/2023
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
@@ -34,7 +34,7 @@ This article lists new features in the latest release of [Microsoft 365 Business
 
 - **Monthly security summary report (preview) is added to Defender for Business** (preview). The new monthly security summary report shows how secure your organization is across identity, devices, information, and apps. You can view threats detected (and blocked) by Defender for Business together with your current status from Microsoft Secure Score. Recommendations to improve your security are also provided. See [Reports in Microsoft Defender for Business](../security/defender-business/mdb-reports.md).
 
-- **Device exposure score is now visible in Microsoft 365 Lighthouse** (preview). Microsoft Cloud Solution Providers (CSPs) who are using [Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-overview.md) can now view and manage device exposure scores across customer tenants. These capabilities enable partners to discover which customers' devices are at risk because of vulnerabilities. See [Microsoft 365 Lighthouse and Microsoft Defender for Business](../security/defender-business/mdb-lighthouse-integration.md).
+- **Device exposure score is now visible in Microsoft 365 Lighthouse** (preview). Microsoft Cloud Solution Providers (CSPs) who are using [Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-overview.md) can now view and manage device exposure scores across customer tenants. These capabilities enable partners to discover which customers' devices are at risk because of vulnerabilities. See [Overview of the Vulnerability management page in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-vulnerability-management-page-overview).
 
 ## January 2023
 
