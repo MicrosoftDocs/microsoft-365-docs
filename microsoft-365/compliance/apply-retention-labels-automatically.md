@@ -192,7 +192,7 @@ SharePoint and OneDrive:
 **Footnote:**
 
 <sup>\*</sup>
-Applies only to content that's already classified, which you can  determine by using [content explorer](data-classification-content-explorer).
+Applies only to content that's already classified, which you can  determine by using [content explorer](data-classification-content-explorer.md).
 
 #### Auto-apply labels to content with specific types of sensitive information
 
