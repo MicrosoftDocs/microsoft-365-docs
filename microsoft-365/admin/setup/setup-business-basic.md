@@ -34,6 +34,8 @@ description: "Learn how to set up your Microsoft 365 Business Basic subscription
 
 # Set up Microsoft 365 Business Basic
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 ## Watch: Set up Microsoft 365 Business Basic
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]

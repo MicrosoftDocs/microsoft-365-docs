@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/18/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -142,7 +142,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 
 5. Depending on your selected scope:
 
-    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Exchange email** but not **SharePoint sites**.
+    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Exchange mailboxes** but not **SharePoint sites**.
     
     - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations. For each location, you can leave it at the default to [apply the policy to the entire location](retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
 
@@ -194,15 +194,15 @@ Additionally, SharePoint items that are in draft or that have never been publish
 #### Auto-apply labels to content with specific types of sensitive information
 
 > [!IMPORTANT]
-> For emails that you auto-apply by identifying sensitive information, all mailboxes are automatically included, which includes mailboxes from Microsoft 365 groups. By default, the **Exchange email** location isn't selected for adaptive scopes when you have this configuration. Even if you can select the location, retention labels won't apply to the Exchange items.
+> For emails that you auto-apply by identifying sensitive information, all mailboxes are automatically included, which includes mailboxes from Microsoft 365 groups. By default, the **Exchange mailboxes** location isn't selected for adaptive scopes when you have this configuration. Even if you can select the location, retention labels won't apply to the Exchange items.
 >
-> Although group mailboxes would usually be included by selecting the **Microsoft 365 Groups** location, for this specific policy configuration, the groups location includes only SharePoint sites connected to a Microsoft 365 group.
+> Although group mailboxes would usually be included by selecting the **Microsoft 365 Group mailboxes & sites** location, for this specific policy configuration, the groups location includes only SharePoint sites connected to a Microsoft 365 group.
 
 When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a Microsoft Purview Data Loss Prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. In the following example, the sensitive info types are from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
 
 ![Policy templates with sensitive information types.](../media/sensitive-info-configuration.png)
 
-To learn more about the sensitivity information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Currently, [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) and [document fingerprinting](document-fingerprinting.md) aren't supported for this scenario.
+To learn more about the sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Currently, [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) and [document fingerprinting](document-fingerprinting.md) aren't supported for this scenario.
 
 After you select a policy template, you can add or remove any types of sensitive information, and you can change the confidence level and instance count. In the previous example screenshot, these options have been changed so that a retention label will be auto-applied only when:
 
@@ -219,7 +219,7 @@ To consider when using sensitive information types to auto-apply retention label
 
 - If you use custom sensitive information types, these can't auto-label existing items in SharePoint and OneDrive.
 
-- For emails, you can't select specific recipients to include or exclude; only the **All recipients** setting is supported and for this configuration only, it includes mailboxes from Microsoft 365 groups.
+- For emails, you can't select specific recipients to include or exclude; only the **All mailboxes** setting is supported and for this configuration only, it includes mailboxes from Microsoft 365 groups.
 
 #### Auto-apply labels to content with keywords or searchable properties
 
@@ -366,7 +366,7 @@ When you select a label to use for auto-applying retention labels for cloud atta
 
 When you configure the locations for this option, you can select:
 
-- **SharePoint sites** for shared files stored in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites.
+- **SharePoint classic and communication sites** for shared files stored in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites.
 - **Microsoft 365 Groups** for shared files that are stored in team sites connected by Microsoft 365 groups.
 - **OneDrive accounts** for shared files stored in users' OneDrive.
 
@@ -422,11 +422,17 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ### Deleting retention labels
 
-You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
+To delete a retention label, all three conditions must apply:
 
-For retention labels that you can delete, if they've been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
+- The label isn't included in any retention label policy
+- The label isn't configured for event-based retention
+- The label isn't configured to mark items as regulatory records
 
-However, it can take up to two days for content explorer to show the items that are labeled. In this scenario, the retention label might be deleted without showing you the link to content explorer.
+When all these conditions are met:
+
+- You can always delete a retention label that doesn't mark items as records (sometimes referred to as a "standard retention label"). The deletion succeeds even if the label is applied to items, and the retention label is then removed from these items.
+
+- You can delete a retention label that marks items as records only if the label isn't applied to items. If the label has been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items. It can take up to two days for content explorer to show the items that are labeled. In this scenario, the retention label might be deleted without showing you the link to content explorer.
 
 ## Locking the policy to prevent changes
 
@@ -438,6 +444,8 @@ If your auto-apply retention label policies aren't working as expected or you se
 
 - [Identify errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/identify-errors-in-retention-and-retention-label-policies)
 - [Resolve errors in Microsoft 365 retention and retention label policies](/microsoft-365/troubleshoot/retention/resolve-errors-in-retention-and-retention-label-policies)
+
+Additionally, if you're also using the older feature, [MRM retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies), see [Auto-apply retention label doesn't apply to items in a mailbox](/microsoft-365/troubleshoot/retention/auto-apply-retention-label-not-apply-messages).
 
 ## Next steps
 

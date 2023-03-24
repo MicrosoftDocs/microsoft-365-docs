@@ -106,9 +106,9 @@
         href: onboarding.md
       - name: Deployment rings
         href: deployment-rings.md
-      - name: Onboarding using Microsoft Endpoint Configuration Manager
+      - name: Onboarding using Microsoft Configuration Manager
         href: onboarding-endpoint-configuration-manager.md
-      - name: Onboarding using Microsoft Endpoint Manager
+      - name: Onboarding using Microsoft Intune
         href: onboarding-endpoint-manager.md
 
   - name: Migration guides
@@ -159,7 +159,7 @@
         href: onboard-windows-client.md
       - name: Onboard Windows devices to Defender for Endpoint using Intune
         href: configure-endpoints-mdm.md
-      - name: Onboard Windows devices to Defender for Endpoint using Microsoft Endpoint Configuration Manager
+      - name: Onboard Windows devices to Defender for Endpoint using Microsoft Configuration Manager
         href: configure-endpoints-sccm.md
       - name: Onboard Windows devices to Defender for Endpoint using Group Policy
         href: configure-endpoints-gp.md
@@ -196,7 +196,7 @@
         items:
         - name: Deploy
           items:
-          - name: Deployment with Microsoft Endpoint Manager
+          - name: Deployment with Microsoft Intune
             href: mac-install-with-intune.md
           - name: JAMF Pro-based deployment
             items:
@@ -243,9 +243,9 @@
           href: mtd.md
         - name: Deploy
           items:
-          - name: Deployment on Android with Microsoft Endpoint Manager
+          - name: Deployment on Android with Microsoft Intune
             href: android-intune.md
-          - name: Deployment on iOS via Microsoft Endpoint Manager
+          - name: Deployment on iOS via Microsoft Intune
             href: ios-install.md
           - name: Deployment on iOS with Mobile Application Manager
             href: ios-install-unmanaged.md
@@ -312,9 +312,11 @@
     - name: Create an onboarding or offboarding notification rule
       href: onboarding-notification.md
 
-    - name: Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager
+    - name: Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Intune
       href: security-config-management.md
 
+    - name: Manage Defender for Endpoint P1/P2 across devices
+      href: defender-endpoint-subscription-settings.md
 
     - name: Configure portal settings
       items:
@@ -323,7 +325,7 @@
       - name: General
         items:
         - name: Configure alert notifications
-          href: configure-email-notifications.md
+          href: ../defender/configure-email-notifications.md
         - name: Configure vulnerability email notifications
           href: configure-vulnerability-email-notifications.md
         - name: Configure advanced features
@@ -376,13 +378,14 @@
         - name: Monitor and increase device onboarding
           href: configure-machines-onboarding.md
 
+
       - name: Configure Microsoft Defender Security Center time zone settings
         href: time-settings.md
 
   - name: Detect threats and protect endpoints
     items:
     - name: Microsoft Defender Vulnerability Management
-      href: index.yml
+      href: ../defender-vulnerability-management/index.yml
     - name: Device discovery
       items:
       - name: Device discovery overview
@@ -446,8 +449,6 @@
             href: attack-surface-reduction-rules-deployment-test.md
           - name: Enable attack surface reduction (ASR) rules
             href: attack-surface-reduction-rules-deployment-implement.md
-          - name: Operationalize attack surface reduction (ASR) rules
-            href: attack-surface-reduction-rules-deployment-operationalize.md
           - name: Operationalize attack surface reduction (ASR) rules
             href: attack-surface-reduction-rules-deployment-operationalize.md
         - name: Attack surface reduction (ASR) rules reference
@@ -585,7 +586,7 @@
         - name: Manage tamper protection using Microsoft 365 Defender
           href: manage-tamper-protection-microsoft-365-defender.md
         - name: Manage tamper protection using Microsoft Intune
-          href: manage-tamper-protection-microsoft-endpoint-manager.md
+          href: manage-tamper-protection-intune.md
         - name: Manage tamper protection with Configuration Manager
           href: manage-tamper-protection-configuration-manager.md
         - name: Manage tamper protection on an individual device
@@ -620,9 +621,11 @@
       - name: Find malware detection names for Microsoft Defender for Endpoint
         href: find-defender-malware-name.md
 
-      - name: Get your antivirus and antimalware updates
-        href: manage-updates-baselines-microsoft-defender-antivirus.md
+      - name: Microsoft Defender Antivirus security intelligence and product updates
+        href: microsoft-defender-antivirus-updates.md
         items:
+        - name: Previous versions for technical upgrade support only
+          href: msda-updates-previous-versions-technical-upgrade-support.md
         - name: Manage the sources for Microsoft Defender Antivirus protection updates
           href: manage-protection-updates-microsoft-defender-antivirus.md
         - name: Manage the schedule for when protection updates should be downloaded and applied
@@ -641,7 +644,7 @@
       - name: Manage Microsoft Defender Antivirus for your organization
         href: configuration-management-reference-microsoft-defender-antivirus.md
         items:
-        - name: Use Microsoft Endpoint Manager to manage Microsoft Defender Antivirus
+        - name: Use Microsoft Intune to manage Microsoft Defender Antivirus
           href: use-intune-config-manager-microsoft-defender-antivirus.md
         - name: Use Group Policy settings to manage Microsoft Defender Antivirus
           href: use-group-policy-microsoft-defender-antivirus.md
@@ -663,12 +666,8 @@
       - name: Deploy and report on Microsoft Defender Antivirus
         href: deploy-manage-report-microsoft-defender-antivirus.md
         items:
-        - name: Deploy and enable Microsoft Defender Antivirus
-          href: deploy-microsoft-defender-antivirus.md
         - name: Configure Microsoft Defender Antivirus in a remote desktop or virtual desktop infrastructure environment
           href: deployment-vdi-microsoft-defender-antivirus.md
-        - name: Report on Microsoft Defender Antivirus
-          href: report-monitor-microsoft-defender-antivirus.md
 
       - name: Scans and remediation
         href: review-scan-results-microsoft-defender-antivirus.md
@@ -696,12 +695,12 @@
         - name: Common mistakes to avoid
           href: common-exclusion-mistakes-microsoft-defender-antivirus.md
 
-      -  name: Troubleshooting mode for Defender for Endpoint
-         items:
-          - name: Get started with troubleshooting mode
-            href: enable-troubleshooting-mode.md
-          - name: Troubleshooting mode scenarios
-            href: troubleshooting-mode-scenarios.md
+      - name: Troubleshooting mode for Defender for Endpoint
+        items:
+        - name: Get started with troubleshooting mode
+          href: enable-troubleshooting-mode.md
+        - name: Troubleshooting mode scenarios
+          href: troubleshooting-mode-scenarios.md
 
       - name: Diagnostics and performance for Microsoft Defender Antivirus
         items:
@@ -1097,8 +1096,10 @@
               href: get-discovered-vulnerabilities.md
             - name: Get security recommendations
               href: get-security-recommendations.md
-            - name: Add or Remove machine tags
+            - name: Add or remove a machine tag
               href: add-or-remove-machine-tags.md
+            - name: Add or remove a tag from multiple machines
+              href: add-or-remove-multiple-machine-tags.md
             - name: Find machines by IP
               href: find-machines-by-ip.md
             - name: Find device information by internal IP

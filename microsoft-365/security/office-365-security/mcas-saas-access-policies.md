@@ -99,7 +99,7 @@ The following illustration and table provide several examples of policies that c
 
 |Protection level|Example policies|
 |---|---|
-|Starting point|Alert when files containing this sensitive information type ("Credit Card Number") are shared outside the organization <p> >Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices|
+|Starting point|Alert when files containing this sensitive information type ("Credit Card Number") are shared outside the organization <p> Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices|
 |Enterprise|Protect downloads of files containing this sensitive information type ("Credit card number") to managed devices <p> Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices <p> Alert when a file with on of these labels is uploaded to OneDrive for Business or Box (Customer data, Human Resources: Salary Data,Human Resources, Employee data)|
 |Specialized security|Alert when files with this label ("Highly classified") are downloaded to managed devices <p> Block downloads of files with this label ("Highly classified") to unmanaged devices|
 |||

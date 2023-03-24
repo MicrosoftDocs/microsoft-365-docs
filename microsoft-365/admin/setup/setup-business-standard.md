@@ -36,6 +36,8 @@ description: "When you purchase Microsoft 365 Business Standard, you have the op
 
 # Set up Microsoft 365 Business Standard with a new or existing domain
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 When you purchase Microsoft 365 Business Standard, you have the option of adding a domain you own, or buying one. Check out [Sign up for a Microsoft 365 Business Standard subscription](../simplified-signup/signup-business-standard.md).
 
 In this article, we'll walk you through the steps of adding an existing domain you already own or buying a new one. If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).

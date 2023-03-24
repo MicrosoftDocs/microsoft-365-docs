@@ -35,7 +35,7 @@ ms.date: 04/08/2021
 - Windows
 
 > [!IMPORTANT]
-> On March 31, 2020, the Microsoft Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), which allows finer control over security features and updates.
+> On March 31, 2020, the Microsoft Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Intune family of products](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune), which allows finer control over security features and updates.
 
 You can use Microsoft Defender Antivirus with Update Compliance. You'll see status for E3, B, F1, VL, and Pro licenses. However, for E5 licenses, you need to use the [Microsoft Defender for Endpoint portal](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). To learn more about licensing options, see [Windows 10 product licensing options](https://www.microsoft.com/licensing/product-licensing/windows10.aspx).
 

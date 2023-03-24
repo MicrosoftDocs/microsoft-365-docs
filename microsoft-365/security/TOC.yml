@@ -1,15 +1,15 @@
 - name: Microsoft 365 security
   href: index.yml
   expanded: true
-  items: 
+  items:
     - name: Get started
-      items: 
+      items:
         - name: Microsoft 365 Zero Trust deployment plan
           href: microsoft-365-zero-trust.md
         - name: Top tasks to support working from home
-          href: top-security-tasks-for-remote-work.md        
+          href: top-security-tasks-for-remote-work.md
     - name: Zero Trust identity and device access configurations
-      items: 
+      items:
         - name: Overview
           href: ./office-365-security/microsoft-365-policies-configurations.md
         - name: Prerequisite work
@@ -28,8 +28,20 @@
           href: ./office-365-security/mcas-saas-access-policies.md
         - name: Continuous access evaluation
           href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
+    - name: Strengthen your security posture with Microsoft 365 Defender
+      items:
+        - name: Overview
+          href: security-posture-solution-overview.md
+        - name: Phase 1 - Configure capabilities
+          href: strengthen-security-posture-configure-capabilities.md
+        - name: Phase 2 - Assess and protect your assets
+          href: strengthen-security-posture-assess-protect.md
+        - name: Phase 3 - Improve your security posture
+          href: strengthen-security-posture-investigate-improve.md
+        - name: Phase 4 - Maintain a secure posture
+          href: strengthen-security-posture-track-maintain.md
     - name: Microsoft 365 Defender docs
-      items: 
+      items:
        - name: Microsoft 365 Defender
          href: ./defender/index.yml
        - name: Defender for Office 365

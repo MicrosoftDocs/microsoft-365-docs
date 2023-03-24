@@ -28,7 +28,7 @@ Enrolling devices to Intune gives you the ability to achieve even greater securi
 
 ![Steps managing devices](../media/devices/intune-mdm-step-2.png#lightbox)
 
-You want to be sure devices that are accessing your apps and data meet minimum requirements. For example, they’re password or pin-protected and the operating system is up to date. Compliance policies are the way to define the requirements that devices must meet. MEM uses these compliance policies to mark a device as compliant or non-compliant. This binary status is passed to Azure AD which can use this status in conditional access rules to allow or prevent a device from accessing resources. 
+You want to be sure devices that are accessing your apps and data meet minimum requirements. For example, they’re password or pin-protected and the operating system is up to date. Compliance policies are the way to define the requirements that devices must meet. Intune uses these compliance policies to mark a device as compliant or non-compliant. This binary status is passed to Azure AD which can use this status in conditional access rules to allow or prevent a device from accessing resources. 
 
 ## Configuring device compliance policies
 

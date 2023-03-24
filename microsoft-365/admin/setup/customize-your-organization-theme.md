@@ -32,6 +32,8 @@ description: "Learn to change the default theme for the top of the navigation ba
 
 # Customize the Microsoft 365 theme for your organization
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 As the admin of your organization, you can create multiple themes for the people in your organization, and select which themes apply to different members of your organization. The organization theme is what appears in the top navigation bar for people in your organization.
 
 You can add or update a default theme that applies to everyone within your org. You can also create up to four additional group themes that can be assigned to multiple Microsoft 365 groups.
@@ -121,9 +123,6 @@ Up to five themes can be created. A default theme and four group themes.
 ### Can I use security groups or distribution groups instead of Microsoft 365 Groups?
 
 No, new group themes must be mapped to one or more Microsoft 365 groups and not security groups or distribution groups.
-
-> [!NOTE]
-> You can convert [distribution groups to Microsoft 365 groups](../manage/upgrade-distribution-lists.md) in Outlook.
 
 ### Can I manually assign a theme independent of Microsoft 365 Groups?  
 

@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
   - m365-security
   - tier2
 ms.custom:
@@ -24,7 +24,7 @@ ms.date: 1/31/2023
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-In Attack simulation training, a _payload_ is the phishing email message and links or attachment content that's are presented to users in simulations. Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 offers a robust built-in payload catalog for the available social engineering techniques. However, you might want to create custom payloads that will work better for your organization.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, a _payload_ is the phishing email message and links or attachment content that's are presented to users in simulations. Attack simulation training offers a robust built-in payload catalog for the available social engineering techniques. However, you might want to create custom payloads that will work better for your organization.
 
 To see the available payloads, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> and then select **Payloads**. To go directly to the **Simulation content library** tab where you can select **Payloads**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
@@ -152,7 +152,7 @@ When you select a payload from the list, a details flyout appears with the follo
      For **Link in attachment**, the name of the box is **Select a URL in this attachment that you want to be your phishing link**. Later, you'll embed the URL in the attachment.
 
      Select one of the available URL values:
-  
+
      - <https://www.mcsharepoint.com>
      - <https://www.attemplate.com>
      - <https://www.doctricant.com>
@@ -190,11 +190,11 @@ When you select a payload from the list, a details flyout appears with the follo
    - Common settings on the **Configure payload** page:
 
      - **Add tag(s)**
-  
+
      - **Theme**: The available values are: **Account Activation**, **Account Verification**, **Billing**, **Clean up Mail**, **Document Received**, **Expense**, **Fax**, **Finance Report**, **Incoming Messages**, **Invoice**, **Item Received**, **Login Alert**, **Mail Received**, **Other**, **Password**, **Payment**, **Payroll**, **Personalized Offer**, **Quarantine**, **Remote Work**, **Review Message**, **Security Update**, **Service Suspended**, **Signature Required**, **Upgrade Mailbox Storage**, **Verify mailbox**, or **Voicemail**.
-  
+
      - **Brand**: The available values are: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud**, or **Other**.
-  
+
      - **Industry**: The available values are: **Banking**, **Business services**, **Consumer services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real estate**, or **Other**.
 
      - **Current event**: The available values are **Yes** or **No**.
@@ -272,7 +272,7 @@ When you select a payload from the list, a details flyout appears with the follo
      |**Unprofessional looking design or formatting**|Message body|
      |**URL hyperlinking**|Message body|
      |**You're special**|Message body|
-  
+
      This list is curated to contain the most common clues that appear in phishing messages.
 
      If you select the email message subject or the message body as the location for the indicator, a **Select text** button appears. Click this button to select the text in the message subject or message body where you want the indicator to appear. When you're finished, click **Select**.
