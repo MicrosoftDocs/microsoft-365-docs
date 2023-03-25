@@ -26,7 +26,9 @@ search.appverid:
 - MOE150
 description: "Learn how to set up Outlook for your Microsoft 365 email."
 ---
-# Set up Outlook for Microsoft 365 for business email 
+# Set up Outlook for Microsoft 365 for business email
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 

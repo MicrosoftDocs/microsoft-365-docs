@@ -8,8 +8,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: Dansimp
+ms.author: dansimp
 ms.date: 03/27/2019
 ms.reviewer:
 manager: dansimp

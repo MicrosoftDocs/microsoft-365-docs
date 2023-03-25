@@ -74,7 +74,7 @@ It's possible that the number of users who actually receive the simulation email
 - Guest users.
 - Users that are no longer active in Azure Active Directory (Azure AD).
 
-Only valid, non-guest users with a valid mailbox will be included in simulations. If you use distribution groups or mail-enabled security groups to target users, you can use the [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to view and validate distribution group members.
+Only valid, non-guest users with valid Exchange Online mailboxes will be included in simulations. If you use distribution groups or mail-enabled security groups to target users, you can use the [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to view and validate distribution group members.
 
 ## Issues with Attack simulation training reporting
 
@@ -193,7 +193,6 @@ A: Region aware delivery uses the TimeZone attribute of the targeted user's mail
 At 9:00 AM on the same day, the simulation message is sent to UserB. With region-aware delivery, the message is not sent to UserA on the same day, because 9:00 AM Pacific time is 12:00 PM Eastern time. Instead, the message is sent to UserA at 9:00 AM Eastern time on the following day.
 
 So, on the initial run of a campaign with region aware delivery enabled, it might appear that the simulation message was sent only to users in a specific time zone. But, as time passes and more users come into scope, the targeted users will increase.
-
 
 ### Q: Does Microsoft collect or store any information that users enter at the Credential Harvest sign-in page, used in the Credential Harvest simulation technique?
 

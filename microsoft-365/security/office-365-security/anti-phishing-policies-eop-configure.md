@@ -17,7 +17,7 @@ description: Admins can learn how to create, modify, and delete the anti-phishin
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 11/30/2022
+ms.date: 3/3/2023
 ---
 
 # Configure anti-phishing policies in EOP
@@ -132,7 +132,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
      - **Move message to the recipients' Junk Email folders**
      - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
 
-       A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for spoof intelligence detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for supported protection filtering verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
+       A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for spoof intelligence detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for spoof intelligence detections, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 
    - **Safety tips & indicators**:
      - **Show first contact safety tip**: For more information, see [First contact safety tip](anti-phishing-policies-about.md#first-contact-safety-tip).

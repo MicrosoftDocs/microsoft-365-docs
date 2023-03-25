@@ -90,7 +90,7 @@ Use the *Export* option to create a .csv file containing the report details for 
   - User notified
   - Case created
 
-- **Sensitive information type per location** (preview): Review and export information about the detection of sensitive information types and the associated sources in communication compliance policies. Includes the overall total and the specific breakdown of sensitive information type instances in the sources configured in your organization. The values for each third-party source are displayed in separate columns in the .csv file. Examples are:
+- **Sensitive information type per location**: Review and export information about the detection of sensitive information types and the associated sources in communication compliance policies. Includes the overall total and the specific breakdown of sensitive information type instances in the sources configured in your organization. The values for each third-party source are displayed in separate columns in the .csv file. Examples are:
 
   - **Email**: Sensitive information types detected in Exchange email messages.
   - **Teams**: Sensitive information types detected in Microsoft Teams channels and chat messages.
