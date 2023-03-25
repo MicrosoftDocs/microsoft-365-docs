@@ -25,7 +25,7 @@ description: "Configure a default sensitivity label for a SharePoint document li
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This feature is in preview and subject to change. It will require a [Microsoft Syntex Advanced Management license](/sharepoint/advanced-management) when the feature becomes generally available (GA).
+> This feature is in preview and subject to change. It will be included with [Microsoft Syntex Advanced Management license](/sharepoint/advanced-management) when the feature becomes generally available (GA).
 
 When SharePoint is [enabled for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md), you can configure a default label for document libraries. Then, any new files uploaded to that library, or existing files edited in the library will have that label applied if they don't already have a sensitivity label, or they have a sensitivity label but with [lower priority](sensitivity-labels.md#label-priority-order-matters).
 
