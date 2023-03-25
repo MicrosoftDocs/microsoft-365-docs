@@ -21,7 +21,7 @@ description: How to implement this preview of optical character recognition (OCR
 
 # Learn about optical character recognition in Microsoft Purview (preview)
 
-Optical character recognition (OCR) scanning enables Microsoft Purview to scan content in images for sensitive information. An optional feature, OCR scanning is first enabled at the tenant level. Once enabled, you select the locations where you want to scan images. Image scanning is available for Exchange, SharePoint, OneDrive, Teams, and Windows devices. Once the OCR settings are configured, your existing policies for data loss prevention (DLP), records management, and insider risk management are applied to images as well as text-based content. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview scans for credit card numbers in both text and images at all of the chosen locations.
+Optical character recognition (OCR) scanning enables Microsoft Purview to scan content in images for sensitive information. An optional feature, OCR scanning is first enabled at the tenant level. Once enabled, you select the locations where you want to scan images. Image scanning is available for Exchange, SharePoint, OneDrive, Teams, and Windows devices. Once the OCR settings are configured, your existing policies for data loss prevention (DLP), records management, and insider risk management (IRM) are applied to images as well as text-based content. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview scans for credit card numbers in both text and images at all of the chosen locations.
 
 ## Workflow at a glance
 
@@ -56,13 +56,17 @@ Because it's an optional feature, your Global admin must set up pay-as-you-go bi
 > [!NOTE]
 > For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
 
-| Location | Supported Solutions | Policies Applied| Notes |
-|--------------|----------|-------------------|---------------| 
-| Exchange | Data loss prevention <br> <br> Information protection <br> <br> Records management  | **DLP policies** <br> <br>**Information protection policies:** *Auto-labeling policy:* <br> * OCR detects keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br> * Outgoing emails are labeled for sensitive information types and trainable classifiers. <br><br> **Records management policies:** *Auto-apply retention label policy:* <br> OCR detects keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br> * Retention labels are applied to images embedded in and/or attached to outgoing emails. |  Policies are only applied to outgoing emails. | 
-| SharePoint sites | Data loss prevention <br> <br> Information protection <br> <br> Records management <br><br> Insider risk management  | **DLP policies** <br> <br>**Information protection policies:** *Auto-labeling policy:* <br> * OCR detects keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br> * Outgoing emails are labeled for sensitive information types and trainable classifiers. <br><br> **Records management policies:** *Auto-apply retention label policy:* <br> OCR detects keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br> * Retention labels are applied to images embedded in and/or attached to outgoing emails. <br><br> **IRM policies** consider sensitive information types and trainable classifiers present in images for risk scoring.|  Policies are only applied to outgoing emails. |  
-| OneDrive accounts | Data loss prevention <br> <br> Information protection <br> <br> Records management | **DLP policies** <br> <br>**Information protection policies:** *Auto-labeling policy:* <br> OCR detects keywords as well as content caught by sensitive information classifiers and trainable classifiers. <br><br> **Records management policies:** *Auto-apply retention label policy:* <br> OCR detects keywords as well as content caught by sensitive information classifiers and trainable classifiers. |  |
-| Teams chat and channel messages | Data loss prevention <br> <br> Insider risk management  |**DLP policies** <br><br> **IRM policies** consider sensitive information types and trainable classifiers present in images for risk scoring. |  |
-| Devices | Data loss prevention <br><br> Insider risk management | **DLP policies** <br><br> **IRM policies** consider sensitive information types and trainable classifiers present in images for risk scoring.| |
+| Location | Supported Solutions |
+|--------------|----------|
+| Exchange | DLP <sup>1</sup><br> <br> Information protection<sup>1</sup> <br> <br> Records management: Auto-apply retention policies <sup>2</sup> | 
+| SharePoint sites | Data loss prevention <br><br> Insider risk management<sup>3</sup>  <br><br> Records management: Auto-apply retention policies <sup>2</sup> |
+| OneDrive accounts | Data loss prevention <br><br> Insider risk management<sup>3</sup>  <br><br> Records management: Auto-apply retention policies <sup>2</sup> |
+| Teams chat and channel messages | Data loss prevention <br> <br> Insider risk management<sup>3</sup>  |
+| Devices | Data loss prevention <br> <br> Insider risk management<sup>3</sup> |
+
+<sup>1</sup> Supports outgoing emails only.<br>
+<sup>2</sup> Supports keywords as well as sensitive information types and trainable classifiers.<br>
+<sup>3</sup> Considers sensitive information types and trainable classifiers present in images for risk scoring.<br>
 
 <br>
 
