@@ -68,7 +68,7 @@ Topic | Description
 [**Alert** methods and properties](alerts.md) | Run API calls such as \- get alerts, create alert, update alert and more.
 [Export **Assessment** per-device methods and properties](get-assessment-methods-properties.md) | Run API calls to gather vulnerability assessments on a per-device basis, such as: \- export secure configuration assessment, export software inventory assessment,  export software vulnerabilities assessment, and delta export software vulnerabilities assessment.
 [**Automated investigation** methods and properties](investigation.md) | Run API calls such as \- get collection of Investigation.
-[Export device health methods and properties](device-health-api-methods-properties.md) | Run API Calls such as -  GET /api/public/avdeviceshealth.
+[Export device health methods and properties](device-health-api-methods-properties.md) | Run API Calls such as \- GET /api/public/avdeviceshealth.
 [**Domain**-related alerts](get-domain-related-alerts.md) | Run API calls such as \- get domain-related devices, domain statistics and more.
 [**File** methods and properties](files.md) | Run API calls such as \- get file information, file related alerts, file related devices, and file statistics.
 [**Indicators** methods and properties](ti-indicator.md) | Run API call such as \- get Indicators, create Indicator, and delete Indicators.

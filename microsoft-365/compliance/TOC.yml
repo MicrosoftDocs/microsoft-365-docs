@@ -60,7 +60,7 @@
           href: device-onboarding-offboarding-macos-jamfpro.md
         - name: JAMF Pro for Microsoft Defender for Endpoint customers
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
-- name: Manage connectors for third-party data
+- name: Configure connectors to import third-party data
   items: 
    - name: Learn about connectors for third-party data
      href: archiving-third-party-data.md
@@ -222,6 +222,8 @@
   items:
     - name: Microsoft Purview insider risk solutions
       href: insider-risk-solution-overview.md
+    - name: Privacy guide
+      href: insider-risk-solution-privacy.md
     - name: Communication compliance
       items:
         - name: Overview

@@ -33,7 +33,7 @@ ms.date: 2/27/2023
 |-----|-----------|
 |Connection |This is where you configure your Blue Yonder WFM details by providing your service account name, password, and service URLs. This enables access to all your WFM (workforce management) instances created in your Blue Yonder WFM system. |
 |Connection instance |This is where you configure: <br> - The synchronization settings that determine how and which schedule information syncs between Blue Yonder WFM and Shifts <br> - Team mappings to define the relationship between your WFM instances and teams in Microsoft Teams |
-|WFM instance | This term refers to a team within your Blue Yonder WFM system, which is different than a team in Microsoft Teams. |
+|WFM instance | This term refers to a site within your Blue Yonder WFM system. |
 
 ## Integrate Shifts with Blue Yonder Workforce Management
 
