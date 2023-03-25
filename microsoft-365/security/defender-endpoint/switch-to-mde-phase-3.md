@@ -136,7 +136,7 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 
 - Product updates
 
-To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).
 
 ## Step 5: Uninstall your non-Microsoft solution
 
