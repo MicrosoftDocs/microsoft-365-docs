@@ -119,7 +119,7 @@ To run the policy in simulation mode:
 Make sure you have [created the retention labels](file-plan-manager.md#create-retention-labels) you want to apply to items.
 
 > [!NOTE]
-> Now in preview, you can extend your auto-labeling of retention labels to images. For more information, see [Support for optical character recognition in Microsoft Purview](ocr-learn-about.md).
+> Now in preview, you can extend your auto-labeling of retention labels to images. For more information, see [Learn about optical character recognition in Microsoft Purview](ocr-learn-about.md).
 
 ## How to create an auto-apply retention label policy
 
