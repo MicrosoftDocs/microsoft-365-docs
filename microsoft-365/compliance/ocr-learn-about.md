@@ -58,9 +58,9 @@ Because it's an optional feature, your Global admin must set up pay-as-you-go bi
 
 | Location | Supported Solutions |
 |--------------|----------|
-| Exchange | DLP <sup>1</sup><br> <br> Information protection<sup>1</sup> <br> <br> Records management: Auto-apply retention policies <sup>2</sup> | 
-| SharePoint sites | Data loss prevention <br><br> Insider risk management<sup>3</sup>  <br><br> Records management: Auto-apply retention policies <sup>2</sup> |
-| OneDrive accounts | Data loss prevention <br><br> Insider risk management<sup>3</sup>  <br><br> Records management: Auto-apply retention policies <sup>2</sup> |
+| Exchange | Data loss prevention <sup>1</sup><br> <br> Information protection<sup>1</sup> <br> <br> Records management: Auto-apply retention policies <sup>2</sup> | 
+| SharePoint sites | Data loss prevention <br><br> Insider risk management<sup>3</sup> <br><br> Records management: Auto-apply retention policies <sup>2</sup> |
+| OneDrive accounts | Data loss prevention <br><br> Insider risk management <sup>3</sup>  <br><br> Records management: Auto-apply retention policies <sup>2</sup> |
 | Teams chat and channel messages | Data loss prevention <br> <br> Insider risk management<sup>3</sup>  |
 | Devices | Data loss prevention <br> <br> Insider risk management<sup>3</sup> |
 
