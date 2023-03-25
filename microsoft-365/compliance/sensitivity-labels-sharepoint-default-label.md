@@ -22,7 +22,7 @@ description: "Configure a default sensitivity label for a SharePoint document li
 
 # Configure a default sensitivity label for a SharePoint document library
 
->*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 >
 >*[Licensing for Microsoft Syntex - SharePoint Advanced Management](/sharepoint/advanced-management#licensing)*
 
