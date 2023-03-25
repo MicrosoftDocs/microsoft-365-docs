@@ -92,7 +92,7 @@ Use the following table to help you identify the differences in behavior for the
 |Restrict by location|No |Yes |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Conditions: Exceptions|No |Yes (email only) |
-|Support for images|No |[Yes](ocr-suppt-in-microsoft-purview.md) |
+|Support for images|No |[Yes](ocr-learn-about.md) |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
 |Simulation mode|No |Yes |
 |Exchange attachments checked for conditions|No | Yes|
