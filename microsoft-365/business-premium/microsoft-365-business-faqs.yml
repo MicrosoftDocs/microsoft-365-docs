@@ -137,17 +137,17 @@ sections:
           Microsoft 365 Business Premium is available to all partners and customers where Office 365 is available. See the list of [Office 365 international availability for languages, countries, and regions](https://products.office.com/business/international-availability).
           
       - question: Is there a Microsoft 365 Business Premium trial I may use to evaluate the offer?
-        answer: A Microsoft 365 Business Premium trial is available for CSPs. A trial for direct customers will be available later.
+        answer: Yes! See the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab), where you can start your trial or paid subscription. 
 
-      - question: What should customers and partners know before running Microsoft 365 Business Premium within their organization?
-        answer: |
-          Customers who wish to experience the complete capabilities of Microsoft 365 Business Premium must be running Windows 7, 8.1, or 10 Pro on their existing desktops. Existing Windows 10 Pro PCs should be running Creators Update if they have not already done so.
+        To get help setting up your trial, see [Trial user guide - Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-trial-playbook-microsoft-business-premium). 
           
   - name: Deployment
     questions:
       - question: What should customers consider when planning a Microsoft 365 Business Premium deployment?
         answer: |
-          The most direct path to a successful Microsoft 365 Business Premium deployment is to engage with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs.
+          Consider working with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs. 
+          
+          If you prefer to set up and configure Microsoft 365 Business Premium on your own, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](/microsoft-365/business-premium/).
           
       - question: Does Microsoft 365 Business Premium include the full capabilities of Microsoft Intune?
         answer: Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, Mac, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management, configuration of Wi-Fi profiles, and VPN certificates, can be managed in the full Intune console.
