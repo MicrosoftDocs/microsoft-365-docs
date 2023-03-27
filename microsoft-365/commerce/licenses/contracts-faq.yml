@@ -79,7 +79,7 @@ sections:
 
           |VLSC Permission Role|MAC VL Permission Role|Allowable Action|
           |---|---|---|
-          |Administrator|Administrator|Assign/Edit/Remove uers permission, Can perform all actions allowed to other VL roles|
+          |Administrator|Administrator|Assign/Edit/Remove users permission, Can perform all actions allowed to other VL roles|
           |Licensing Info Viewer|License Position Reader|View Contracts details, View Orders, View Keys of a contract, Create License Summary|
           |Download|Product Download Manager|View Contracts, Download licensed Microsoft software products|
           |Product Keys|Product Keys Reader|View Contracts, View Keys of a contract, Manage activation & Redemption of Online services (additionally need Global Admin roles), View keys from Downloads & Keys|
