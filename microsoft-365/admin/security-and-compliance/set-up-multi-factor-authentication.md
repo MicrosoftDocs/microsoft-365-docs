@@ -110,9 +110,9 @@ For most subscriptions modern authentication is automatically turned on, but if 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the left nav choose **Settings** \> **Org settings**.
 2. Under the **Services** tab, choose **Modern authentication**, and in the **Modern authentication** pane, make sure **Enable Modern authentication** is selected. Choose **Save changes**.
 
-## Next steps
+## Next steps - Send to your users
 
-- [Send to your users: What is Multifactor Authentication](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
+- [What is Multifactor Authentication](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
 - [How to sign-in after registration](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [How to change their additional verification method](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
 - [How to register for their additional verification method](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
