@@ -15,7 +15,7 @@ ms.collection:
 - SMB
 - m365-security
 - tier1
-ms.reviewer: shlomiakirav
+ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ---
 
