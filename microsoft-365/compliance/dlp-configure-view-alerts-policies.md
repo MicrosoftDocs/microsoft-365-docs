@@ -172,6 +172,8 @@ In the **Events** tab open **Details** to see **Other matched conditions**.
 
 #### Prerequisites
 
+- Must be running Windows 10 x64 build 1809 or later or Windows 11.
+    - See [March 21, 2023—KB5023773 (OS Builds 19042.2788, 19044.2788, and 19045.2788) Preview](https://support.microsoft.com/en-us/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23) for required minimum Windows Operating System builds.
 - Matched conditions data is available for valid E3 and E5 license holders
 - Enable [Auditing](audit-log-enable-disable.md#turn-auditing-on-or-off).
 - Enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
