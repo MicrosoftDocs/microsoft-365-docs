@@ -155,8 +155,8 @@ sections:
       - question: Does Azure Active Directory (Azure AD) Premium P1 come with Microsoft 365 Business Premium?
         answer: Yes, Azure AD Premium P1 is included with Microsoft Business Premium.
 
-      - question: Does Microsoft 365 Business Premium allow customers to manage Macs?
-        answer: Intune helps you securely manage iOS, Android, Windows, and Mac devices.
+      - question: Does Microsoft 365 Business Premium allow customers to manage Mac?
+        answer: Yes. Microsoft 365 Business Premium includes Intune and Defender for Business to help you securely manage iOS, Android, Windows, and Mac devices.
 
       - question: What is Windows Autopilot?
         answer: |
