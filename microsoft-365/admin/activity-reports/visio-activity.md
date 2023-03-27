@@ -55,7 +55,7 @@ The **Visio activity** report can be viewed for trends over the last 7 days, 3
 
 ### Visio licensed usage
 
-You can use this report to filter for Visio licensed usage. Each of the charts are provided with a filter to select user segment.
+You can use this report to filter for Visio licensed usage. Each of the charts is provided with a filter to select user segment.
 
 - **All users** Shows you the usage for Visio licensed users, including Visio Plan 1 and/or Visio Plan 2; and seeded usage, such as using Visio that comes as part of the Microsoft 365 commercial subscriptions
 
