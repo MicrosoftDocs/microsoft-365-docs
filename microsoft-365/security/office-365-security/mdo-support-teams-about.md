@@ -57,6 +57,7 @@ To check the status for your tenant run the following cmdlet:
  ```powershell
   Get-TeamsSecurityPreview
   ```
+Note: This cmdlet is used to inform Microsoft that you want to preview the Teams preview. By Running this cmdlet, your tenant will be added to the rollout schedule. The features will be enabled over time during the preview period. 
 
 ## See also
 
