@@ -6,11 +6,11 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: overview
+ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 03/27/2023
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
