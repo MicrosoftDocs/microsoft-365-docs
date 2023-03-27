@@ -119,15 +119,15 @@ The following details apply to working with your policies in the Microsoft 365 D
 
 Use the following information to create and manage device policies in Intune, done through Endpoint security in the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)).
 
-### Create, duplicate and edit policies
+:::image type="content" source="media/intune-admin-center.png" alt-text="Screenshot of the Intune admin center." lightbox="media/intune-admin-center.png":::
 
-To create a policy in Intune
+### Create, duplicate and edit policies
 
 1. Sign in to the Microsoft Intune admin center.
 
-1. Select **Endpoint security** and the type of policy you want to configure, and then select **Create Policy**.
+2. Select **Endpoint security** and the type of policy you want to configure, and then select **Create Policy**.
 
-1. Choose from the following policy types:
+3. Choose from the following policy types:
 
     - Antivirus
     - Disk encryption
@@ -137,7 +137,7 @@ To create a policy in Intune
     - Account protection
     - Enter the following properties:
 
-1. Platform: Choose the platform for which you're creating the policy. The available options depend on the policy type you select.
+4. Platform: Choose the platform for which you're creating the policy. The available options depend on the policy type you select.
 
 1. Profile: Choose from the available profiles for the platform you selected. For information about the profiles, see the dedicated section in this article for your chosen policy type.
 
