@@ -136,19 +136,20 @@ For Windows devices, the package contains the following folders:
 |WdSupportLogs|Provides the MpCmdRunLog.txt and MPSupportFiles.cab  <p> <div class="alert"><b>NOTE:</b> This folder will only be created on Windows 10, version 1709 or later with February 2020 update rollup or more recent installed: <ul><li>Win10 1709 (RS3) Build 16299.1717: [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) Build 17134.1345: [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) Build 17763.1075: [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) Builds 18362.693 and 18363.693: [KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
 |CollectionSummaryReport.xls|This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code if there is failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.|
 
-For macOS and Linux devices, specific data on the following are collected:
+The collection packages for macOS and Linux devices contain the following:
 
-|Object|Description|
-|---|---|
-|Process|A list of all running processes|
-|File|A list of all currently open files with the corresponding processes using these files|
-|Disk volume|A list of all mounted disk volumes, its partitions, and amount of free space|
-|Hardware information||
-|Operating system information||
-|Users and groups|The following data are collected: <ul><li>Sign in history</li><li>sudoers</li></ul>|
-|Network connections|The following data are collected: <ul><li>Active connections</li><li>Active listening connections</li><li>ARP table</li><li>Firewall rules</li><li>Proxy settings</li><li>VPN settings</li></ul>|
-|Scheduled tasks and jobs||
-|Launch agents and daemons||
+|Object|macOS|Linux|
+|---|---|---|
+|Applications|A list of all installed applications|Not applicable|
+|Disk volume|<ul><li>Amount of free space</li><li>List of all mounted disk volumes</li><li>List of all partitions</li>|<ul><li>Amount of free space</li><li>List of all mounted disk volumes</li><li>List of all partitions</li>|
+|File|A list of all open files with the corresponding processes using these files|A list of all open files with the corresponding processes using these files|
+|History|Shell history|Not applicable|
+|Kernel modules|All loaded modules|Not applicable|
+|Network connections|<ul><li>Active connections</li><li>Active listening connections</li><li>ARP table</li><li>Firewall rules</li><li>Interface configuration</li><li>Proxy settings</li><li>VPN settings</li></ul>|<ul><li>Active connections</li><li>Active listening connections</li><li>ARP table</li><li>Firewall rules</li><li>IP list</li><li>Proxy settings</li></ul>|
+|Processes|A list of all running processes|A list of all running processes|
+|Services and scheduled tasks|<ul><li>Certificates</li><li>Configuration profiles</li><li>Hardware information|<ul><li>CPU details</li><li>Hardware information></li><li>Operating system information</li>|
+|System security information|<ul><li>Extensible Firmware Interface (EFI) integrity information</li><li>Firewall status</li><li>Malware Removal Tool (MRT) information</li><li>System Integrity Protection (SIP) status</li>|Not applicable|
+|Users and groups|<ul><li>Login history</li><li>Sudoers</li></ul>|<ul><li>Login history</li><li>Sudoers</li></ul>|
 
 ## Run Microsoft Defender Antivirus scan on devices
 
