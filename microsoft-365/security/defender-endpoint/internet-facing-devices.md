@@ -107,29 +107,43 @@ This query returns the internet-facing devices with their aggregated evidence in
 
 ### Get information on inbounds connections
 
-For TCP connections, you can  gain further insights into applications or services identified as listening on a device by querying [DeviceNetworkEvents](../defender/advanced-hunting-devicenetworkevents-table.md). Use the following example as a starting point:
+For TCP connections, you can  gain further insights into applications or services identified as listening on a device by querying [DeviceNetworkEvents](../defender/advanced-hunting-devicenetworkevents-table.md).
+
+Use the following query for devices tagged with the reason **This device was detected by an external scan**:
+
+```kusto
+DeviceNetworkEvents
+|where DeviceId == ""
+|where Protocol == "Tcp"
+|where ActionType == "InboundInternetScanInspected"
+```
+
+Use the following query for devices tagged with the reason **This device received external incoming communication**:
 
 ```kusto
 // Query on inbound connection accepted events
 DeviceNetworkEvents
-
-|where Timestamp > ago(7d)
-|where DeviceId == ""
-|where not(InitiatingProcessCommandLine has_any ("TaniumClient.exe", "ZSATunnel.exe", "MsSense.exe"))
-|where ActionType =="InboundConnectionAccepted"
-|extend LocalIP = replace(@"::ffff:", "", LocalIP),RemoteIP = replace(@"::ffff:", "", RemoteIP)
-|where LocalIP!=RemoteIP and RemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") and not(ipv4_is_private( RemoteIP ))
+|whereTimestamp > ago(7d)
+|whereDeviceId == ""|wherenot(InitiatingProcessCommandLine has_any ("TaniumClient.exe", "ZSATunnel.exe", "MsSense.exe"))
+|whereActionType =="InboundConnectionAccepted"|extendLocalIP = replace(@"::ffff:", "", LocalIP),RemoteIP = replace(@"::ffff:", "", RemoteIP)
+|whereLocalIP!=RemoteIP andRemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") andnot(ipv4_is_private( RemoteIP ))
 |project-reorder DeviceId, LocalIP, LocalPort, RemoteIP, RemotePort, InitiatingProcessCommandLine,InitiatingProcessId, DeviceName
 ```
-
->[!NOTE]
-> Currently UDP information is not available in advanced hunting.
 
 If the above query fails to provide the relevant connections, you can use socket collection methods to retrieve the source process. To learn more about different tools and capabilities available to do this, see:
 
 - [Defender for Endpoint live response](live-response.md)
 - [Microsoft Network Monitor](/troubleshoot/windows-client/networking/collect-data-using-network-monitor)
 - [Netstat for Windows Server](/windows-server/administration/windows-commands/netstat)
+
+For UDP connections, gain insights into devices that were identified as host reachable but had no connection established, using the following query:
+
+```kusto
+DeviceNetworkEvents
+|where DeviceId == ""
+|where Protocol == "Udp"
+|where ActionType == "InboundInternetScanInspected"
+```
 
 ## Report inaccuracy
 
