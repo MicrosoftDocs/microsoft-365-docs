@@ -58,9 +58,9 @@ Because it's an optional feature, your Global admin must set up pay-as-you-go bi
 
 | Location | Supported Solutions |
 |--------------|----------|
-| Exchange | Data loss prevention <sup>1</sup><br> <br> Information protection<sup>1</sup> <br> <br> Records management: Auto-apply retention policies <sup>2</sup> | 
-| SharePoint sites | Data loss prevention <br><br> Insider risk management<sup>3</sup> <br><br> Records management: Auto-apply retention policies <sup>2</sup> |
-| OneDrive accounts | Data loss prevention <br><br> Insider risk management <sup>3</sup>  <br><br> Records management: Auto-apply retention policies <sup>2</sup> |
+| Exchange | Data loss prevention <sup>1</sup><br> <br> Information protection: [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)<sup>1</sup> <br> <br> [Records management: Auto-apply retention label policies](apply-retention-labels-automatically.md#automatically-apply-a-retention-label-to-retain-or-delete-content)<sup>2</sup> | 
+| SharePoint sites | Data loss prevention <br><br> Insider risk management<sup>3</sup> <br><br> [Records management: Auto-apply retention label policies](apply-retention-labels-automatically.md#automatically-apply-a-retention-label-to-retain-or-delete-content)<sup>2</sup> |
+| OneDrive accounts | Data loss prevention <br><br> Insider risk management <sup>3</sup>  <br><br> [Records management: Auto-apply retention label policies](apply-retention-labels-automatically.md#automatically-apply-a-retention-label-to-retain-or-delete-content)<sup>2</sup> |
 | Teams chat and channel messages | Data loss prevention <br> <br> Insider risk management<sup>3</sup>  |
 | Devices | Data loss prevention <br> <br> Insider risk management<sup>3</sup> |
 
@@ -78,7 +78,7 @@ This functionality supports scanning images in the following file types, with th
 |----------------------|---------------------|
 | JPEG, JPG, PNG, BMP, TIFF, and PDF (image only) | **File sizes:** Image files must be no larger than 20 MB for Exchange and Teams. For SharePoint, OneDrive, and Windows endpoints, the maximum image file size is 50 MB. <br><br> **Image resolution:** Image resolution must be at least 50 x 50 pixels and not larger than 16,000 x 16,000 px. |
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >
 > - Only images with machine-typed text are supported.
 > - Only images uploaded after OCR has been enabled are scanned.
@@ -86,6 +86,9 @@ This functionality supports scanning images in the following file types, with th
 > - SharePoint and OneDrive support only the following file types: JPEG, JPG, PNG, and BMP.
 > - Data loss prevention policy tips are not supported for images in Exchange.
 > - Scanning images in compressed/archive files isn't supported.
+> - If you [exclude a path](dlp-configure-endpoint-settings.md#file-path-exclusions) in the endpoint data loss prevention settings, OCR will not scan images in those folders.
+> - When OCR is turned on for Windows devices, the devices start sending messages to the cloud for scanning. The default bandwidth limit is [1024 MB of data per device per day](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection). OCR stops scanning images once this daily limit is reached. If you want to continue scanning images, you can increase the bandwidth limit.
+
 
 <br>
 
