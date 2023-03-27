@@ -4,7 +4,7 @@ description: Manage how Microsoft Defender Antivirus receives protection and pro
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 03/24/2023
+ms.date: 03/27/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -78,17 +78,28 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
-### February-2023 (Platform: 4.18.2302.x | Engine: 1.1.20100.6)
+### February-2023 (Platform: 4.18.2302.7 | Engine: 1.1.20100.6)
 
 - Security intelligence update version: **1.385.68.0**
-- Release date: **March 14, 2023**
-- Platform: **4.18.2302.x**
+- Release date: **March 27, 2023**
+- Platform: **4.18.2302.7**
 - Engine: **1.1.20100.6**
 - Support phase: **Security and Critical Updates**
 
 #### What's new
 
-- Improvements in the contextual exclusions syntax
+- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
+- Fixed threat DefaultAction outputs in Get-MpPreference 
+- Improved Defender performance during file copy operations for .net applications 
+- Fixed [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) app block warn feature 
+- Added opt-in feature to allow users seeing exclusions 
+- Fixed [ASR](overview-attack-surface-reduction.md) warn policy 
+- Increased maximum size for quarantine archive file to 4GB 
+- Improvements to threat remediation logic 
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) hardening for temporary exclusions 
+- Fixed time zone calculation in [Defender PowerShell](/powershell/module/defender) module 
+- Fixed merging logic for exclusions in Defender PowerShell module 
+- Improvements in the [contextual exclusions](/microsoft-365/security/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus) syntax
 - Improved scheduled scan robustness
 - Improved serviceability for internal database files
 - Enhanced certificate indicators determination logic
