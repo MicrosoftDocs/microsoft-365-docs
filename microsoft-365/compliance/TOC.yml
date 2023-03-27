@@ -1456,7 +1456,7 @@
           href: ediscovery-search-for-content.md
         - name: Export content from a case
           href: ediscovery-export-content.md
-        - name: Close, reopen, and delete a case
+        - name: Upgrade (preview), close, reopen, or delete a case
           href: ediscovery-close-reopen-delete-cases.md
         - name: eDiscovery (Standard) reference
           items:
