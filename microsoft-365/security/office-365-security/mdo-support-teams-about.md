@@ -40,13 +40,13 @@ With the increased use of collaboration tools like Microsoft Teams, the possibil
 
 - **Quarantine**: Admins will be able to review quarantined messages that are identified as malicious by ZAP. Admins will also be able to release the message if the message is determined as safe. For more information, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams).
 
-The **Teams Message Entity Panel** is one single place to store all of Teams message metadata that will allow for immediate SecOps review. Any threat coming from chats, group or meeting chats, and other channels can be found in one place as soon as it is assessed. For more information, see [Teams Message Entity Panel for Microsoft Teams](teams-message-entity-panel.md). 
+The **Teams Message Entity Panel** is one single place to store all of Teams message metadata that will allow for immediate SecOps review. Any threat coming from chats, group or meeting chats, and other channels can be found in one place as soon as it is assessed. For more information, see [Teams Message Entity Panel for Microsoft Teams](teams-message-entity-panel.md).
 
-- **Attack Simulation and Training**: In order to ensure your users are resilient to phishing attacks in Microsoft Teams, admins can configure phishing simulations in Teams similar to how they do so in email. For more information, see [Training campaigns in Attack simulation training](/attack-simulation-training-training-campaigns). 
+- **Attack Simulation and Training**: In order to ensure your users are resilient to phishing attacks in Microsoft Teams, admins can configure phishing simulations in Teams similar to how they do so in email. For more information, see [Training campaigns in Attack simulation training](attack-simulation-training-training-campaigns.md).
 
-## Enable Microsoft Defender for Teams 
+## Enable Microsoft Defender for Teams
 
-If you are interested in the previewing the features listed above, for ALL users in your tenant, you can enable them using the Exchange Online PowerShell cmdlet. For more details on how to connect to Exchange Online with PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell.md). Once connected, you can enable teams preview as follows:
+If you are interested in previewing the features listed above, for ALL users in your tenant, you can enable them using the Exchange Online PowerShell cmdlet. For more details on how to connect to Exchange Online with PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Once connected, you can enable teams preview as follows:
 
  ```powershell
   Set-TeamsSecurityPreview -Enable $true
@@ -57,6 +57,7 @@ To check the status for your tenant run the following cmdlet:
  ```powershell
   Get-TeamsSecurityPreview
   ```
+Note: This cmdlet is used to inform Microsoft that you want to preview the Teams preview. By Running this cmdlet, your tenant will be added to the rollout schedule. The features will be enabled over time during the preview period. 
 
 ## See also
 

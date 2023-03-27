@@ -249,7 +249,7 @@ For **System security**, see this table.
 |Simple passwords|Block|
 |Password type|Device default|
 |Minimum password length|6|
-|Maximum minutes of inactivity before password is required|15 minutes|
+|Maximum minutes of inactivity before a password is required|15 minutes|
 |Password expiration (days)|41|
 |Number of previous passwords to prevent reuse|5|
 |Require password when device returns from idle state (Mobile and Holographic)|Require|
