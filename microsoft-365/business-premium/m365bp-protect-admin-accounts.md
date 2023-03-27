@@ -1,5 +1,5 @@
 ---
-title: "Protect your administrator accounts in Microsoft 365 Business Premium"
+title: "Protect your administrator accounts with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,9 +24,9 @@ search.appverid:
 description: "Learn how to set up and protect your administrator accounts in Microsoft 365 Business Premium."
 ---
 
-# Protect your administrator accounts in Microsoft 365 Business Premium
+# Protect your administrator accounts
 
-Because admin accounts come with elevated privileges, they're valuable targets for hackers and cyber criminals. This article describes:
+Because admin accounts come with elevated privileges, they're valuable targets for cyberattackers. This article describes:
 
 - [How to set up an another administrator account for emergencies](#create-other-admin-accounts).
 - [How to create an emergency admin account](#create-an-emergency-admin-account).
@@ -47,7 +47,7 @@ You'll want to set up at least one other Global admin account to give admin acce
 
 To create more admin accounts:
 
- 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Microsoft 365 admin center</a> and then choose **Users** \> **Active users** in the left nav.
+ 1. In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), choose **Users** \> **Active users** in the left nav.
 
     ![Choose Users and then Active users in the left nav.](../media/Activeusers.png)
 
@@ -73,7 +73,7 @@ If you're an admin, you'll need a user account for regular work tasks, such as c
 
 To create a new user account:
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Microsoft 365 admin center</a> and then choose **Users** \> **Active users** in the left nav.
+1. Go to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890) and then choose **Users** \> **Active users** in the left nav.
 
 2. On the **Active users** page, select **Add a user** at the top of the page, and on the **Add a user** panel, enter the name and other information.
 
