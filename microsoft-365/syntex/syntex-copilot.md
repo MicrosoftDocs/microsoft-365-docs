@@ -46,7 +46,7 @@ Syntex in Copilot analyzes the text of a selected file in a SharePoint document 
 
 ## Current limitations
 
-- Syntex in Copilot currently works on only Word (.docx) and PowerPoint (.pptx) file types.
+- Syntex in Copilot currently works on only Word (.docx) and PowerPoint (.pptx) file types. Additional file types will be added in the future.
 
 - Syntex in Copilot is currently only available to customers in the United States, and currently only understands instructions in English. More languages and locales will be added in the future.
 
