@@ -129,8 +129,8 @@ sections:
           - [Compare security features in Microsoft 365 plans for small and medium-sized businesses](/microsoft-365/security/defender-business/compare-mdb-m365-plans)
           - [Microsoft 365 for enterprise overview](/microsoft-365/enterprise/microsoft-365-overview)
           
-      - question: Can I switch my Office 365 plan to Microsoft 365 Business Premium?
-        answer: Yes, customers may switch their plans from a qualifying Office 365 plan to Microsoft 365 Business Premium. Depending on the customer's current plan, there may be a decrease or increase in monthly charges.
+      - question: Can I switch my Microsoft 365 plan to Microsoft 365 Business Premium?
+        answer: Yes, customers may switch their plans from a qualifying Microsoft 365 plan to Microsoft 365 Business Premium. Depending on the customer's current plan, there may be a decrease or increase in monthly charges.
 
       - question: In what regions is Microsoft 365 Business Premium available?
         answer: |
@@ -141,7 +141,7 @@ sections:
 
       - question: What should customers and partners know before running Microsoft 365 Business Premium within their organization?
         answer: |
-          Customers who wish to experience the complete capabilities of Microsoft 365 Business Premium must be running Windows 7, 8.1, or 10 Pro<sup>2</sup> on their existing desktops. Existing Windows 10 Pro PCs should be running Creators Update if they have not already done so.
+          Customers who wish to experience the complete capabilities of Microsoft 365 Business Premium must be running Windows 7, 8.1, or 10 Pro on their existing desktops. Existing Windows 10 Pro PCs should be running Creators Update if they have not already done so.
           
   - name: Deployment
     questions:
@@ -179,36 +179,12 @@ sections:
     questions:
       - question: Where can I learn more about the opportunities and benefits in becoming a Microsoft Partner?
         answer: |
-          IT service providers that are not already Microsoft partners can learn more about the Microsoft Cloud Solution Provider program at <https://partner.microsoft.com/membership/cloud-solution-provider>.
+          IT service providers that are not already Microsoft partners can learn more about the Microsoft Cloud Solution Provider program [https://partner.microsoft.com/membership/cloud-solution-provider](https://partner.microsoft.com/membership/cloud-solution-provider).
           
       - question: Where can I learn how to sell Microsoft 365 Business Premium?
         answer: |
-          Partners now selling Office 365 can use the same consultative selling methods to sell Microsoft 365 Business Premium. In addition, we are introducing more resources and training for your sales team to understand the customers' existing desktop environment, Active Directory reliance, mobility, and security needs to effectively communicate the full value of Microsoft 365 Business Premium in a way that is relevant to the customer. Find these resources on the Office Partner portal at <https://www.microsoft.com/microsoft-365/partners>.
-          
-      - question: How can Microsoft 365 Business Premium help partners increase the profitability?
-        answer: |
-          Microsoft 365 Business Premium will help partners reduce costs through greater operational efficiencies and enhance revenue through the sale of additional services. The Forrester Research, Microsoft 365 Business Premium Total Economic Impact (TEI) Study, June 2017 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI), demonstrates that Microsoft 365 Business Premium will have positive impact on partner profitability.
-          
-          In the TEI study partners reported that with Microsoft 365 Business Premium they expect:
-          
-          - 20%-point increase in \[one-time\] deployment and advisory services revenue
-          - 10%-point increase in attach rate of managed services
-          - 8%-point increase in consulting and \[ongoing\] managed services profit margins (from lower costs)
-          
-      - question: What resources are available to partners to sell, deploy and support Microsoft 365 Business Premium?
-        answer: |
-          Microsoft provides a wide selection of resources for CSP partners to market, sell, and support Microsoft 365 Business Premium. They can be found at
-          <https://www.microsoft.com/microsoft-365/partners>.
-          
-      - question: What up-sell opportunities does Microsoft 365 Business Premium give partners?
-        answer: |
-          Microsoft 365 Business Premium allows partners to maintain their trusted advisor position with customers by creating a solid and secure platform upon which to sell additional services and to upgrade existing products and services. Microsoft 365 Business Premium provides an opportunity to have an upgrade discussion with customers now using Exchange Server, Exchange Online, or Microsoft 365 Business Basic. Partners may also gain more revenue from increased managed services and/or peruser support fees.
-          
-          With the new Windows Autopilot feature included in Microsoft 365 Business Premium, partners who have been reluctant to sell new Windows devices because of deployment logistics and costs will find this opportunity much more attractive. Customers who are confident in the security of their on-premises and mobile devices are also more likely to invest in more services, such as Dynamics 365.
-          
-      - question: Should partners sell Microsoft 365 Business Premium over other plans from Microsoft?
-        answer: A Microsoft Cloud Solution Provider should always sell the plan that best suits its customer business needs and budget. For example, if a customer must comply with privacy and security regulations, a CSP may sell Microsoft 365 Business Premium plus any add-ons that help the customer meet its requirements or may suggest the advanced security and management provided by Microsoft 365 Business Enterprise SKUs.
-
+          Partners now selling Office 365 can use the same consultative selling methods to sell Microsoft 365 Business Premium. In addition, we are introducing more resources and training for your sales team to understand the customers' existing desktop environment, Active Directory reliance, mobility, and security needs to effectively communicate the full value of Microsoft 365 Business Premium in a way that is relevant to the customer. Find these resources at the Microsoft Partner portal ([https://www.microsoft.com/microsoft-365/partners](https://www.microsoft.com/microsoft-365/partners)).
+                    
       - question: Some of my customers have devices that aren't genuine; will Microsoft 365 Business Premium make these devices genuine?
         answer: Microsoft 365 Business Premium doesn't make an otherwise non-genuine version of Windows, genuine. Microsoft 365 Business Premium does provide an upgrade benefit allowing those customers running genuine Windows 7, 8, or 8.1 Pro to upgrade to the most recent, genuine version of Windows 10 Pro.
 
@@ -216,7 +192,3 @@ sections:
         answer: |
           The General Data Protection Regulation (GDPR) is a comprehensive new privacy law that gives residents of the European Union (EU) greater control over their "personal data" and requires organizations to maintain the integrity of that personal data. The GDPR requires organizations that control or process personal data tied to EU residents to only use third-party data processors that meet the GDPR requirements for personal data processing. In March 2017, Microsoft made available contractual guarantees that provide these assurances. Customers that have questions about how Microsoft can help them meet their additional GDPR obligations should learn about the advanced compliance and security capabilities available in Microsoft 365 Business Premium (for example, Azure Information Protection, data loss prevention, Defender for Office 365, and so on) and in other suites (for example, Microsoft 365 Enterprise E5). To learn more, visit [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
           
-additionalContent: |
-  ## Footnotes
-  **1**Available in US, UK, and Canada.
-  **2**Devices running Windows 7 or 8.1 Pro are eligible for an upgrade to Windows 10 Pro within the Microsoft 365 Business Premium preview.
