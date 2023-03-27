@@ -37,12 +37,12 @@ Syntex in Copilot analyzes the text of a selected file in a SharePoint document 
 
        ![Screenshot of the Copilot panel.](../media/content-understanding/copilot-panel.png)
 
-    - Or in the text box, select the starter prompt to see additional actions, such as to classify the file, summarize the file, extract key information, or detect sensitive information.
+    - Or in the text box, select the starter prompt to see suggested actions tailored to the specific file, such as to classify the file, summarize the file, extract key information, or detect sensitive information.
 
        ![Screenshot of the text box on the Copilot panel with the starter prompt highlighted.](../media/content-understanding/copilot-starter-prompt.png)
 
 > [!NOTE] 
-> For security reasons, this feature won't process files stamped with "Confidential" or "Highly Confidential" sensitivity labels.
+> For security reasons, Syntex in Copilot won't process files stamped with "Confidential" or "Highly Confidential" sensitivity labels.
 
 ## Current limitations
 
@@ -50,7 +50,7 @@ Syntex in Copilot analyzes the text of a selected file in a SharePoint document 
 
 - Syntex in Copilot is currently only available to customers in the United States, and currently only understands instructions in English. More languages and locales will be added in the future.
 
-- Syntex in Copilot works on a single selected file, and it only processes the first 4,000 tokens (approximately six pages).
+- Syntex in Copilot works on a single selected file at a time, and it only processes the first 4,000 tokens (approximately six pages).
 
 - Syntex in Copilot doesn't save the context of your session, but you can copy the information if you want to save it. 
 
