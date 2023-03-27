@@ -21,9 +21,21 @@ description: Learn how to use Microsoft 365 Copilot to easier find information i
 
 Microsoft Syntex is now integrated with Microsoft 365 Copilot to bring the power of assistive AI into your organization's intelligent document processing.
 
-Syntex in Copilot analyzes the text of a selected file in a SharePoint document library and generates a set of questions you can ask about the information in the file. The questions can be used to quickly identify the type of document, generate a summary of information in the document, and identify key points or other important information. You can also ask your own questions, such as "When does this contract expire?"
+Syntex in Copilot analyzes the text of a selected file in a SharePoint document library and generates a set of questions you can ask about the information in the file. The questions can be used to quickly identify the type of document, generate a summary of information in the document, and identify key points or other important information. You can also ask your own questions, such as "When does this contract expire?" or "What is the fee schedule for this project?"
 
-## Get started with Syntex in Copilot
+## To use Syntex in Copilot
+
+1. From a SharePoint document library, select a document.
+
+2. On the ribbon, select **Copilot** to open the **Copilot** panel.
+
+    ![Screenshot of a document library page showing a document selected and the Copilot button on the ribbon.](../media/content-understanding/copilot-document-selected.png)
+
+3. On the **Copilot** panel, select a question or enter your own question in the text box.
+
+    ![Screenshot of the Copilot panel.](../media/content-understanding/copilot-panel.png)
+
+4. You can also ask Copilot to classify the file, summarize the file, extract key information, or detect sensitive information.
 
 > [!NOTE] 
 > For security reasons, this feature won't process files stamped with "Confidential" or "Highly Confidential" sensitivity labels.
