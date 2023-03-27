@@ -112,6 +112,8 @@ To send SMS notifications to attendees by default, turn on **Send them text mess
 
 Keep in mind that schedulers can later choose to turn off the setting on an as-needed basis when they use the appointment type to schedule an appointment.
 
+You can use the [SMS notifications usage report](sms-notifications-usage-report.md) to gain insight into how your workforce is using SMS notifications with virtual appointments.
+
 To learn more, see [Use text messages to remind customers of their appointment](https://support.microsoft.com/topic/adda1e2a-03b8-4db2-864d-0a5a3f3a874a).
 
 ##### Link forms
