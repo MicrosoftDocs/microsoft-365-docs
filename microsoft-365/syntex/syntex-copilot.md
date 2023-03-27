@@ -46,7 +46,14 @@ Syntex in Copilot analyzes the text of a selected file in a SharePoint document 
 
 ## Current limitations
 
-- Limited to Word (.docx) and PowerPoint (.pptx) file types.
-- Works on a single selected file, and it only processes the first 4,000 tokens (approximately six pages). 
-- Session responses aren't persisted, but you can copy the information if you want to save it. 
+- Syntex in Copilot currently works on only Word (.docx) and PowerPoint (.pptx) file types.
+
+- Syntex in Copilot is currently only available to customers in the United States, and currently only understands instructions in English. More languages and locales will be added in the future.
+
+- Syntex in Copilot works on a single selected file, and it only processes the first 4,000 tokens (approximately six pages).
+
+- Syntex in Copilot doesn't save the context of your session, but you can copy the information if you want to save it. 
+
+> [!IMPORTANT] 
+> It's important that you review any content the AI generates for you to make sure it has accurately produced what you wanted.
 
