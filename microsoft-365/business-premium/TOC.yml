@@ -8,10 +8,6 @@
       href: m365bp-secure-users.md
     - name: Trial user guide - Microsoft 365 Business Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
-    - name: Get Microsoft 365 Business Premium
-      href: get-microsoft-365-business-premium.md
-    - name: Get Microsoft 365 for Campaigns
-      href: get-microsoft-365-campaigns.md
     - name: Resources for partners
       href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Fortify your environment
@@ -20,6 +16,10 @@
     items: 
       - name: Overview
         href: m365bp-setup-overview.md
+      - name: Get Microsoft 365 Business Premium
+        href: get-microsoft-365-business-premium.md
+      - name: Get Microsoft 365 for Campaigns
+        href: get-microsoft-365-campaigns.md
       - name: Set up Microsoft 365 Business Premium
         href: m365bp-setup.md
       - name: Set up Microsoft 365 Business for Campaigns
