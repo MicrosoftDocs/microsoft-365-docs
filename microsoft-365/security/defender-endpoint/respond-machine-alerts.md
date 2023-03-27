@@ -147,7 +147,7 @@ The collection packages for macOS and Linux devices contain the following:
 |Kernel modules|All loaded modules|Not applicable|
 |Network connections|<ul><li>Active connections</li><li>Active listening connections</li><li>ARP table</li><li>Firewall rules</li><li>Interface configuration</li><li>Proxy settings</li><li>VPN settings</li></ul>|<ul><li>Active connections</li><li>Active listening connections</li><li>ARP table</li><li>Firewall rules</li><li>IP list</li><li>Proxy settings</li></ul>|
 |Processes|A list of all running processes|A list of all running processes|
-|Services and scheduled tasks|<ul><li>Certificates</li><li>Configuration profiles</li><li>Hardware information|<ul><li>CPU details</li><li>Hardware information></li><li>Operating system information</li>|
+|Services and scheduled tasks|<ul><li>Certificates</li><li>Configuration profiles</li><li>Hardware information|<ul><li>CPU details</li><li>Hardware information</li><li>Operating system information</li>|
 |System security information|<ul><li>Extensible Firmware Interface (EFI) integrity information</li><li>Firewall status</li><li>Malware Removal Tool (MRT) information</li><li>System Integrity Protection (SIP) status</li>|Not applicable|
 |Users and groups|<ul><li>Login history</li><li>Sudoers</li></ul>|<ul><li>Login history</li><li>Sudoers</li></ul>|
 
