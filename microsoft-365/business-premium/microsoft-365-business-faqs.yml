@@ -129,7 +129,6 @@ sections:
 
       - question: Does Microsoft 365 Business Premium allow customers to manage Mac?
         answer: |
-        
           Yes. Microsoft 365 Business Premium includes Intune and Defender for Business to help you securely manage iOS, Android, Windows, and Mac devices.
 
       - question: What is Windows Autopilot?
@@ -161,7 +160,8 @@ sections:
           Partners now selling Office 365 can use the same consultative selling methods to sell Microsoft 365 Business Premium. In addition, we are introducing more resources and training for your sales team to understand the customers' existing desktop environment, Active Directory reliance, mobility, and security needs to effectively communicate the full value of Microsoft 365 Business Premium in a way that is relevant to the customer. Find these resources at the Microsoft Partner portal ([https://www.microsoft.com/microsoft-365/partners](https://www.microsoft.com/microsoft-365/partners)).
                     
       - question: Some of my customers have devices that aren't genuine; will Microsoft 365 Business Premium make these devices genuine?
-        answer: Microsoft 365 Business Premium doesn't make an otherwise non-genuine version of Windows, genuine. Microsoft 365 Business Premium does provide an upgrade benefit allowing those customers running genuine Windows 7, 8, or 8.1 Pro to upgrade to the most recent, genuine version of Windows 10 Pro.
+        answer: |
+          Microsoft 365 Business Premium doesn't make an otherwise non-genuine version of Windows, genuine. Microsoft 365 Business Premium does provide an upgrade benefit allowing those customers running genuine Windows 7, 8, or 8.1 Pro to upgrade to the most recent, genuine version of Windows 10 Pro.
 
       - question: What is the GDPR and how does Microsoft 365 Business Premium help customers with their compliance obligations?
         answer: |
