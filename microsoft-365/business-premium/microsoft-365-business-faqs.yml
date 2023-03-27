@@ -42,7 +42,8 @@ sections:
           If you are considering using multiple subscription types, consider working with a trusted IT advisor to determine how best to manage and secure the various subscriptions. Microsoft 365 Business Premium and Microsoft 365 Enterprise use different capabilities to secure and manage applications and data.
           
       - question: Can I combine Microsoft 365 Business Premium with other Microsoft subscription offerings?
-        answer: Yes, customers can combine their Microsoft 365 Business Premium subscriptions with plans and add-ons from Azure, Dynamics 365, Enterprise Mobility + Security, and Office 365.
+        answer: |
+          Yes, customers can combine their Microsoft 365 Business Premium subscriptions with plans and add-ons from Azure, Dynamics 365, Enterprise Mobility + Security, and Office 365.
 
       - question: Is everyone in my business required to have a Microsoft 365 Business Premium subscription?
         answer: |
@@ -97,16 +98,18 @@ sections:
           - [Microsoft 365 for enterprise overview](/microsoft-365/enterprise/microsoft-365-overview)
           
       - question: Can I switch my Microsoft 365 plan to Microsoft 365 Business Premium?
-        answer: Yes, customers may switch their plans from a qualifying Microsoft 365 plan to Microsoft 365 Business Premium. Depending on the customer's current plan, there may be a decrease or increase in monthly charges.
+        answer: |
+          Yes, customers may switch their plans from a qualifying Microsoft 365 plan to Microsoft 365 Business Premium. Depending on the customer's current plan, there may be a decrease or increase in monthly charges.
 
       - question: In what regions is Microsoft 365 Business Premium available?
         answer: |
           Microsoft 365 Business Premium is available to all partners and customers where Office 365 is available. See the list of [Office 365 international availability for languages, countries, and regions](https://products.office.com/business/international-availability).
           
       - question: Is there a Microsoft 365 Business Premium trial I may use to evaluate the offer?
-        answer: Yes! See the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab), where you can start your trial or paid subscription. 
+        answer: |
+          Yes! See the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab), where you can start your trial or paid subscription. 
 
-        To get help setting up your trial, see [Trial user guide for Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-trial-playbook-microsoft-business-premium). 
+          To get help setting up your trial, see [Trial user guide for Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-trial-playbook-microsoft-business-premium). 
           
   - name: Deployment
     questions:
@@ -117,13 +120,19 @@ sections:
           If you prefer to set up and configure Microsoft 365 Business Premium on your own, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](/microsoft-365/business-premium/).
           
       - question: Does Microsoft 365 Business Premium include the full capabilities of Microsoft Intune?
-        answer: Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, Mac, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management, configuration of Wi-Fi profiles, and VPN certificates, can be managed in the full Intune console.
+        answer: |
+        
+          Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, Mac, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management, configuration of Wi-Fi profiles, and VPN certificates, can be managed in the full Intune console.
 
       - question: Does Azure Active Directory (Azure AD) Premium P1 come with Microsoft 365 Business Premium?
-        answer: Yes, Azure AD Premium P1 is included with Microsoft Business Premium.
+        answer: |
+        
+          Yes, Azure AD Premium P1 is included with Microsoft Business Premium.
 
       - question: Does Microsoft 365 Business Premium allow customers to manage Mac?
-        answer: Yes. Microsoft 365 Business Premium includes Intune and Defender for Business to help you securely manage iOS, Android, Windows, and Mac devices.
+        answer: |
+        
+          Yes. Microsoft 365 Business Premium includes Intune and Defender for Business to help you securely manage iOS, Android, Windows, and Mac devices.
 
       - question: What is Windows Autopilot?
         answer: |
@@ -132,7 +141,8 @@ sections:
   - name: Compatibility
     questions:
       - question: Can I add Office 365 add-ons to Microsoft 365 Business Premium?
-        answer: All the add-ons that can be added to Microsoft 365 Business Standard can be added to Microsoft 365 Business Premium. 
+        answer: |
+          All the add-ons that can be added to Microsoft 365 Business Standard can be added to Microsoft 365 Business Premium. 
 
       - question: Can I add Phone System and Calling Plans to Microsoft 365 Business Premium?
         answer: |
