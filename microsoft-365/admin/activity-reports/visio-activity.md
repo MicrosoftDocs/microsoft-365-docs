@@ -20,6 +20,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
+ROBOTS: NOINDEX
 description: "Learn how to get the Visio activity report and gain insights into Visio activity in your organization."
 ---
 
