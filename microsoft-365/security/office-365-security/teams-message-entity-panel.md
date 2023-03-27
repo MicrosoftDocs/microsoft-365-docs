@@ -92,7 +92,7 @@ In addition to the header, message, sender, URLs, and participants sections, you
     - *Released status*: Indicates if the message has been released to all participants that recieved the message.
     - *Quarantine policy*: The quarantine policy that was applied to the message.
 
-  - **Quarantine actions**: For more information on different quarantine actions, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-email).
+  - **Quarantine actions**: For more information on different quarantine actions, see [Take action on quarantined messages](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-email).
 
 ##### Submissions:
 
