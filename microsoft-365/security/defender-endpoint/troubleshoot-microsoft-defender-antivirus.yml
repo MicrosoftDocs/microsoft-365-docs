@@ -25,7 +25,6 @@ summary: |
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
@@ -76,5 +75,953 @@ Description:
    - Customer scan
 - Scan Resources: <Resources (such as files/directories/BHO) that were scanned.>
 - User: <Domain>\<User>
+
+### Event ID: 1001
+
+Symbolic name: MALWAREPROTECTION_SCAN_COMPLETED
+
+Message: An antimalware scan finished.
+
+Description:
+
+- Scan ID: <ID number of the relevant scan.>
+- Scan Type: <Scan type>, for example:
+   - Antivirus
+   - Antispyware
+   - Antimalware
+- Scan Parameters: <Scan parameters>, for example:
+   - Full scan
+   - Quick scan
+   - Customer scan
+- User: <Domain>\<User>
+- Scan Time: <The duration of a scan.>
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
+
+### Event ID: 
+
+Symbolic name: 
+
+Message: 
+
+Description:
+
+- Scan ID: 
+- Scan Type: 
+   - 
+- Scan Parameters: 
+   - 
+- Scan Resources: 
+- User:
 
 
