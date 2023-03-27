@@ -123,13 +123,11 @@ Use the following information to create and manage device policies in Intune, do
 
 :::image type="content" source="media/intune-admin-center.png" alt-text="Screenshot of the Intune admin center." lightbox="media/intune-admin-center.png":::
 
-### Create, duplicate and edit policies
+### Create policies
 
-1. Sign in to the Microsoft Intune admin center.
+1. In the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), select **Endpoint security** and the type of policy you want to configure, and then select **Create Policy**.
 
-2. Select **Endpoint security** and the type of policy you want to configure, and then select **Create Policy**.
-
-3. Choose from the following policy types:
+2. Choose from the following policy types:
 
     - Antivirus
     - Disk encryption
@@ -137,51 +135,42 @@ Use the following information to create and manage device policies in Intune, do
     - Endpoint detection and response
     - Attack surface reduction
     - Account protection
-    - Enter the following properties:
 
-4. Platform: Choose the platform for which you're creating the policy. The available options depend on the policy type you select.
+3. Specify the following properties:
 
-1. Profile: Choose from the available profiles for the platform you selected. For information about the profiles, see the dedicated section in this article for your chosen policy type.
+   - **Platform**: Choose the platform for which you're creating the policy. The available options depend on the policy type you select.
+   - **Profile**: Choose from the available profiles for the platform you selected. For information about the profiles, see the dedicated section in this article for your chosen policy type.
 
-1. Select **Create**.
+   Then select **Create**.
 
-1. On the Basics page, enter a name and description for the profile, then choose **Next**.
+4. On the Basics page, enter a name and description for the profile, then choose **Next**.
 
-1. On the Configuration settings page, expand each group of settings, and configure the settings you want to manage with this profile.
+5. On the Configuration settings page, expand each group of settings, and configure the settings you want to manage with this profile. Then select **Next**.
 
-1. When you're done configuring settings, select **Next**.
+6. On the **Assignments** page, select the groups that will receive this profile. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign). Then select **Next**.
 
-1. On the Scope tags page, choose **Select scope tags** to open the **Select tags** pane to assign scope tags to the profile.
+7. On the Review + create page, when you're done, choose **Create**. The new profile is displayed in the list when you select the policy type for the profile you created.
 
-1. Select **Next** to continue.
+### Duplicate a policy in Intune:
 
-1. On the **Assignments** page, select the groups that will receive this profile. For more information on assigning profiles, see Assign user and device profiles.
+1. In the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), select the policy that you want to copy. Next, select **Duplicate** or select the ellipsis **(...)** to the right of the policy and select **Duplicate**.
 
-1. Select **Next**.
+2. Provide a New name for the policy, and then select **Save**.
 
-1. On the Review + create page, when you're done, choose **Create**. The new profile is displayed in the list when you select the policy type for the profile you created.
+### Edit a policy
 
-To duplicate a policy in Intune:
+1. In the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), select a policy, and then select **Properties**.
 
-1. Sign in to the Microsoft Intune admin center.
+2. Select **Settings** to expand a list of the configuration settings in the policy. You can’t modify the settings from this view, but you can review how they're configured.
 
-1. Select the policy that you want to copy. Next, select **Duplicate** or select the ellipsis **(...)** to the right of the policy and select **Duplicate**.
-1. Provide a New name for the policy, and then select **Save**.
-
-To edit a policy:
-
-1. Select the new policy, and then select **Properties**.
-
-1. Select **Settings** to expand a list of the configuration settings in the policy. You can’t modify the settings from this view, but you can review how they're configured.
-
-1. To modify the policy, select **Edit** for each category where you want to make a change:
+3. To modify the policy, select **Edit** for each category where you want to make a change:
 
     - Basics
     - Assignments
     - Scope tags
     - Configuration settings
 
-1. After you’ve made changes, select **Save** to save your edits. Edits to one category must be saved before you can introduce edits to any additional categories.
+4. After you’ve made changes, select **Save** to save your edits. Edits to one category must be saved before you can introduce edits to any additional categories.
 
 ## Manage conflicts
 
@@ -192,6 +181,8 @@ Security baselines can set a non-default value for a setting to comply with the 
 Other policy types, including the endpoint security policies, set a value of Not configured by default. These other policy types require you to explicitly configure settings in the policy.
 
 Regardless of the policy method, managing the same setting on the same device through multiple policy types, or through multiple instances of the same policy type can result in conflicts that should be avoided.
+
+If you do run into policy conflicts, see [Troubleshooting policies and profiles in Microsoft Intune](/troubleshoot/mem/intune/device-configuration/troubleshoot-policies-in-microsoft-intune).
 
 ## See also
 
