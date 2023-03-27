@@ -163,7 +163,7 @@ Platform and engine updates are provided on a monthly cadence. To be fully suppo
 
 \* Technical support continues to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.
 
-During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft's managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (*).
+During the technical support (only) phase, commercially reasonable support incidents are provided through Microsoft Customer Service & Support and Microsoft's managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a nonsecurity update, or requires a security update, customers are asked to upgrade to the latest platform version or an intermediate update (*).
 
 
 > [!NOTE]
@@ -172,10 +172,14 @@ During the technical support (only) phase, commercially reasonable support incid
 ## How to roll back an update
 
 In the unfortunate event that you encounter issues after a platform update, you can roll back to the previous or the inbox version of the Microsoft Defender platform.  
-- To roll back to the previous version, run the following command:<br>
-`"%programdata%\Microsoft\Windows Defender\Platform\<version>\MpCmdRun.exe" -RevertPlatform`
-- To roll back this update to the version shipped with the Operating System ("%ProgramFiles%\Windows Defender")<br>
-`"%programdata%\Microsoft\Windows Defender\Platform\<version>\MpCmdRun.exe" -ResetPlatform`
+
+- To roll back to the previous version, run the following command:
+
+   `"%programdata%\Microsoft\Windows Defender\Platform\<version>\MpCmdRun.exe" -RevertPlatform`
+
+- To roll back this update to the version shipped with the Operating System ("%ProgramFiles%\Windows Defender")
+
+   `"%programdata%\Microsoft\Windows Defender\Platform\<version>\MpCmdRun.exe" -ResetPlatform`
 
 ## Platform version included with Windows 10 releases
 
