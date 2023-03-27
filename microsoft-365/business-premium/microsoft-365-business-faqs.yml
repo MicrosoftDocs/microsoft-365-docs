@@ -24,42 +24,9 @@ sections:
     questions:
       - question: What is Microsoft 365 Business Premium?
         answer: |
-          Microsoft 365 is an integrated solution that brings together best-in-class productivity tools, security, and device management capabilities for small to medium-sized businesses. It includes:
+          Microsoft 365 is an integrated solution that brings together best-in-class productivity tools, security, and device management capabilities for small to medium-sized businesses. It's a comprehensive, cloud-based security solution that enables you to defend your business against advanced cyberthreats with sophisticated phishing and ransomware protection. Microsoft 365 Business Premium helps you safeguard your data, devices and information. 
           
-          **A set of business productivity and collaboration tools**:
-          
-          - Word, Excel, PowerPoint, Outlook, OneNote, Publisher, and Access
-          - Exchange, OneDrive, Skype for Business, Microsoft Teams, and SharePoint.
-                   
-          **Enterprise-grade device management and security capabilities**:
-          
-          - Helps provide protection from external threats like phishing and sophisticated malware with Microsoft Defender for Office 365 Plan 1 and Microsoft Defender for Business.
-          - Helps control and manage how sensitive information is accessed and transmitted with data loss prevention policies and Azure Information Protection Plan 1.
-          - Helps protect, preserve, and back up your data with Exchange Online Archiving.
-          - App protection for Office and other mobile apps with Intune App Protection.
-          - Device management for Windows 10 and 11 PCs, Mac, and mobile devices with Intune device management.
-          - Identity protection with multi-factor authentication, self-service password reset, and conditional access.
-          - Consistent security configuration across devices&mdash;protection of company data across devices; Microsoft Defender Antivirus, which is always on and up to date.
-          
-          **Simplified device deployment and user setup**:
-          
-          - Single admin console to set up and manage users and devices
-          - Auto-installation of Microsoft 365 apps on Windows 10 PCs.
-          - Always up-to-date Office + Windows 10.
-          - Streamlined deployment of PCs with Windows Autopilot.
-          
-          **Other entitlements**:
-          
-          - Microsoft 365 Business Premium customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Small and Medium Business blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 for business service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description).          
-      - question: Who should consider adopting Microsoft 365 Business Premium?
-        answer: |
-          Microsoft 365 Business Premium is a comprehensive, cloud-based security solution that lets you:
-          
-          - Defend your business against advanced cyberthreats with sophisticated phishing and ransomware protection.
-          - Control access to sensitive information by using encryption to keep data from being accidentally shared with someone not authorized to see it.
-          - Secure the devices that connect to your business and help keep your data on iOS, Android, Windows, and Mac devices secure, and your Windows devices up to date.
-          
-          Microsoft 365 Business Premium is fully integrated with Office 365 to provide you with a familiar location for administration, billing, and 24x7 support. It consists of enterprise-grade technology built for businesses with fewer than 300 employees.
+          Microsoft 365 Business Premium is fully integrated with Microsoft 365 Apps to provide you with a familiar location for administration, billing, and 24x7 support. It consists of enterprise-grade technology built for businesses with fewer than 300 employees.
           
       - question: How can I get Microsoft 365 Business Premium for my business?
         answer: |
