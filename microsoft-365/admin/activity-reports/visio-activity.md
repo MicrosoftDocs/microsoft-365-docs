@@ -42,7 +42,7 @@ In the **Visio activity report**, you can view the activity of every Visio user
 
 You can use this report to see the activity and usage of Visio in your environment. You'll see three summary charts in this report:
 
-:::image type="content" source="../../media/visio-activity-charts.png" alt-text="Three charts for the Visio activity report in Microsoft 365" lightbox="../../media/visio-activity-charts.png":::
+:::image type="content" source="../../media/visio-activity-charts.png" alt-text="Three charts for the Visio activity report in Microsoft 365." lightbox="../../media/visio-activity-charts.png":::
 
 - **Active users** Shows you the daily active users on each day over time. This includes Visio for the web and Visio desktop app usage.
 
@@ -62,7 +62,7 @@ You can use this report to filter for Visio licensed usage. Each of the charts a
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link.
 
-:::image type="content" source="../../media/visio-license-filter.png" alt-text="Licensed users filter for the Visio activity report in Microsoft 365":::
+:::image type="content" source="../../media/visio-license-filter.png" alt-text="Licensed users filter for the Visio activity report in Microsoft 365.":::
 
 >[!NOTE]
 > Learn more about Visio seeded capabilities [here](https://www.microsoft.com/microsoft-365/visio/visio-in-microsoft-365), and about Visio plans and pricing [here](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options?rtc=1&activetab=tabs%3aprimaryr1).
