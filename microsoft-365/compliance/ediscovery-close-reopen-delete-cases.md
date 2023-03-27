@@ -1,5 +1,5 @@
 ---
-title: "Upgrade, close, reopen, or delete eDiscovery (Standard) cases (preview)"
+title: "Upgrade (preview), close, reopen, or delete eDiscovery (Standard) cases"
 description: "This article describes how to manage eDiscovery (Standard) cases. This includes closing a case, reopening a closed case, deleting a case, and upgrading a case to eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 ---
 
-# Upgrade, close, reopen, or delete eDiscovery (Standard) cases (preview)
+# Upgrade (preview), close, reopen, or delete eDiscovery (Standard) cases
 
 This article describes how to close, reopen, delete, or upgrade a Microsoft Purview eDiscovery (Standard) cases in Microsoft Purview.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Upgrade a case to eDiscovery (Premium)
+## Upgrade a case to eDiscovery (Premium) (preview)
 
 After working with an existing eDiscovery (Standard) case, you may need the additional case functionality provided with eDiscovery (Premium) cases. This work may include the need for more robust collections and review set functionality.
 
