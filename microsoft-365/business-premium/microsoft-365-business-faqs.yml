@@ -89,15 +89,14 @@ sections:
           
           Also see the recommended application testing process for [Windows 10 compatibility](/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process) and review the [Office system requirements](https://products.office.com/office-system-requirements#subscription-plans-section) to ensure a smooth transition to Microsoft 365 Business Premium.
           
-      - question: What is Windows 10 Business?
+      - question: What is Windows for business?
         answer: |
-          Windows 10 Business is a set of cloud services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business Premium.
+          Windows for business includes Windows 10 Pro, Windows 10 Pro for Workstations, Windows 11 Pro, and Windows 11 Pro for Workstations. These operating systems include cloud services and device management capabilities that enable the centralized management and security controls of Microsoft 365 Business Premium. [Learn more about Windows for business](https://www.microsoft.com/windows/business).
+                    
+          If you have devices that are licensed for Windows 7, 8, and 8.1 Professional, Microsoft 365 Business Premium provides an upgrade to Windows 10 Pro. 
           
-          Windows 10 Business also comes with certain premium Microsoft Defender features like Controlled Folder Access and Network Protection for web-based threats. It also includes Windows Autopilot, a service that streamlines the deployment of new Windows 10 PCs.
-          
-          If you have devices that are licensed for Windows 7, 8, and 8.1 Professional, Microsoft 365 Business Premium provides an upgrade to Windows 10 Pro, which is the prerequisite for deploying Windows 10 Business.
           > [!IMPORTANT]
-          > You need to supply the original product key when you upgrade, otherwise the upgrade won't work.
+          > You must to supply the original product key when you upgrade; otherwise, the upgrade won't work.
           
       - question: How does Microsoft 365 Business Premium help support our Bring Your Own Device (BYOD) policy?
         answer: |
