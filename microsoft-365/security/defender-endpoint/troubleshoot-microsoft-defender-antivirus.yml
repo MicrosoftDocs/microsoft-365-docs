@@ -7,10 +7,7 @@ metadata:
   ms.author: deniseb
   ms.service: microsoft-365-security
   ms.topic: conceptual
-  ms.date: 04/05/2023
-  keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
-  ms.mktglfcycl: manage
-  ms.sitesec: library
+  ms.date: 03/27/2023
   ms.localizationpriority: medium
   ms.custom: nextgen
   manager: dansimp
