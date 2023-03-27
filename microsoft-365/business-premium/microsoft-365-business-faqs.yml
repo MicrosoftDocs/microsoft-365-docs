@@ -165,7 +165,7 @@ sections:
   - name: Compatibility
     questions:
       - question: Can I add Office 365 add-ons to Microsoft 365 Business Premium?
-        answer: All the add-ons that can be added to Microsoft 365 Business Standard can be added to Microsoft 365 Business Premium. This means that you can purchase Office 365 Cloud App Security, Advanced Compliance, Threat Intelligence, MyAnalytics, Power BI Pro, and Audio Conferencing.
+        answer: All the add-ons that can be added to Microsoft 365 Business Standard can be added to Microsoft 365 Business Premium. 
 
       - question: Can I add Phone System and Calling Plans to Microsoft 365 Business Premium?
         answer: |
@@ -173,7 +173,7 @@ sections:
           
       - question: Can Microsoft 365 Business Premium customers use Microsoft Defender for Endpoint?
         answer: |
-          Yes, Microsoft Defender for Endpoint is available as an add-on to Microsoft 365 Business Premium when purchased from a [Microsoft Cloud Solution Provider](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
+          Microsoft 365 Business Premium includes Microsoft Defender for Business. Defender for Business was built on the capabilities of Defender for Endpoint and provides advanced security protection for devices. However, you can add Defender for Endpoint Plan 1 or Plan 2 to your Microsoft 365 Business Premium subscription. See [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
           
   - name: Partner opportunity
     questions:
