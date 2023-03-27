@@ -86,7 +86,7 @@ In addition to the header, message, sender, URLs, and participants sections, you
 
 ##### Quarantine:
 
-  - **Quarantine details**: Contains quarantine-specific details. For more information, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#view-quarantined-message-details).
+  - **Quarantine details**: Contains quarantine-specific details. For more information, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#view-quarantined-email-details).
     - *Expires*: The date/time when the message will be automatically and permanently deleted from quarantine.
     - *Quarantine reason*: The reason the message is in quarantine.
     - *Released status*: Indicates if the message has been released to all participants that recieved the message.
