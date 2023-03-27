@@ -106,7 +106,7 @@ sections:
       - question: Is there a Microsoft 365 Business Premium trial I may use to evaluate the offer?
         answer: Yes! See the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab), where you can start your trial or paid subscription. 
 
-        To get help setting up your trial, see [Trial user guide - Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-trial-playbook-microsoft-business-premium). 
+        To get help setting up your trial, see [Trial user guide for Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-trial-playbook-microsoft-business-premium). 
           
   - name: Deployment
     questions:
