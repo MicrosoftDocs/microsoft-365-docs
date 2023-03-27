@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/13/2023
+ms.date: 03/22/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -289,7 +289,7 @@ When the policy setting **Require users to apply a label to their email and docu
 
 - For labeling built in to Office apps:
     - For documents (Word, Excel, PowerPoint): When an unlabeled document is opened or saved.
-    - For emails (Outlook): At the time users send an unlabeled email message.
+    - For emails (Outlook): At the time users send an unlabeled email message. For Outlook Mobile, this can be changed to [when the email message is first composed](#for-outlook-mobile-change-when-users-are-prompted-for-a-label).
 
 Additional information for built-in labeling:
 
@@ -307,6 +307,18 @@ For guidance about when to use this setting, see the information about [policy s
 > The default label always takes priority over mandatory labeling. However, for documents, the Azure Information Protection unified labeling client applies the default label to all unlabeled documents whereas built-in labeling applies the default label to new documents and not to existing documents that are unlabeled. This difference in behavior means that when you use mandatory labeling with the default label setting, users will probably be prompted to apply a sensitivity label more often when they use built-in labeling than when they use the Azure Information Protection unified labeling client.
 > 
 > Now rolling out: Office apps that use built-in labeling and support a default label for existing documents. For details, see the [capabilities table](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) for Word, Excel, and PowerPoint.
+
+### For Outlook Mobile, change when users are prompted for a label
+
+Now available in the Beta Channel for Android, and not yet for iOS, you can use a Microsoft Intune [Managed apps app configuration policy](/mem/intune/apps/app-configuration-policies-managed-app#add-a-managed-apps-app-configuration-policy) to configure a setting from the Intune App Software Development Kit (SDK) that changes when users are prompted to select a sensitivity label for Outlook Mobile.
+
+Instead of prompting for a label on send when mandatory labeling is configuring for emails, this configuration results in prompting for a label when a user first composes a message.
+
+This configuration requires you to specify the following key/value pair as a general configuration setting in the policy:
+
+|Key|Value|
+|--- |--- |
+|com.microsoft.outlook.Mail.LouderMandatoryLabelEnabled|true|
 
 ## Outlook-specific options for default label and mandatory labeling
 
@@ -482,7 +494,7 @@ For end user documentation, see [Create protected PDFs from Office files](https:
 
 ### Disabling PDF support
 
-If you need to disable the PDF support in Office apps for Word, Excel, and PowerPoint, you can do so by using an Office setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**:
+If you need to disable the PDF support in Office apps for Word, Excel, and PowerPoint, you can do so by using an Office setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Microsoft Save As PDF and Save As XPS add-ins**:
 
 - **Use the Sensitivity feature in Office to apply sensitivity labels to PDFs**
 
@@ -492,7 +504,7 @@ Deploy this setting by using Group Policy, or by using the [Cloud Policy service
 
 ## Sensitivity bar
 
-Supported in preview for built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support this feature.
+Use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support the sensitivity bar.
 
 When Word, Excel, and PowerPoint support this feature, sensitivity labels are displayed in a sensitivity bar next to the file name on the top window bar. For example:
 

@@ -624,7 +624,7 @@
         href: find-defender-malware-name.md
 
       - name: Microsoft Defender Antivirus security intelligence and product updates
-        href: manage-updates-baselines-microsoft-defender-antivirus.md
+        href: microsoft-defender-antivirus-updates.md
         items:
         - name: Previous versions for technical upgrade support only
           href: msda-updates-previous-versions-technical-upgrade-support.md
@@ -668,12 +668,8 @@
       - name: Deploy and report on Microsoft Defender Antivirus
         href: deploy-manage-report-microsoft-defender-antivirus.md
         items:
-        - name: Deploy and enable Microsoft Defender Antivirus
-          href: deploy-microsoft-defender-antivirus.md
         - name: Configure Microsoft Defender Antivirus in a remote desktop or virtual desktop infrastructure environment
           href: deployment-vdi-microsoft-defender-antivirus.md
-        - name: Report on Microsoft Defender Antivirus
-          href: report-monitor-microsoft-defender-antivirus.md
 
       - name: Scans and remediation
         href: review-scan-results-microsoft-defender-antivirus.md
@@ -733,7 +729,7 @@
         - name: Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus
           href: troubleshoot-microsoft-defender-antivirus.md
         - name: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
-          href: troubleshoot-microsoft-defender-antivirus-when-migrating.md
+          href: troubleshoot-microsoft-defender-antivirus-when-migrating.yml
 
       - name: Behavioral blocking and containment
         items:
@@ -750,7 +746,7 @@
     - name: Manage device configuration
       items:
 
-      - name: Increase compliance to the security baseline
+      - name: Increase compliance with the security baseline
         href: configure-machines-security-baseline.md
       - name: Optimize attack surface reduction rule deployment and detections
         href: configure-machines-asr.md
@@ -1102,8 +1098,10 @@
               href: get-discovered-vulnerabilities.md
             - name: Get security recommendations
               href: get-security-recommendations.md
-            - name: Add or Remove machine tags
+            - name: Add or remove a machine tag
               href: add-or-remove-machine-tags.md
+            - name: Add or remove a tag from multiple machines
+              href: add-or-remove-multiple-machine-tags.md
             - name: Find machines by IP
               href: find-machines-by-ip.md
             - name: Find device information by internal IP
