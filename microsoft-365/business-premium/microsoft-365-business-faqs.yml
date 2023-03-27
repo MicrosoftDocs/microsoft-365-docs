@@ -111,19 +111,19 @@ sections:
           
       - question: How does Microsoft 365 Business Premium help protect PCs in my organization from malicious attacks?
         answer: |
-          PCs managed with Microsoft 365 Business Premium are protected with Microsoft Defender Antivirus, which is the No. 1 antivirus feature on Windows 10, protecting more computers against viruses, malware, spyware, and other threats than any other solution. With Microsoft 365 Business Premium, organizations can ensure that Microsoft Defender Antivirus protection is running and always up to date on all their Windows 10 devices.
-          
-          Windows 10 Business also includes Microsoft Defender Exploit Guard, a new set of intrusion prevention capabilities. One of its features, controlled folder access, stops ransomware by locking down folders and preventing unauthorized apps from accessing a user's important files.
+          PCs managed with Microsoft 365 Business Premium are protected by Microsoft Defender for Business, an endpoint security solution that was designed especially for the small- and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. 
           
       - question: What's the difference between Microsoft 365 Business Standard, Microsoft 365 Business Premium, and Microsoft 365 Enterprise?
         answer: |
           Microsoft has various productivity and security management offerings that small to medium-sized customers may consider when upgrading their desktop and device infrastructure, each bringing increasingly powerful features and functionality.
           
-          **Microsoft 365 Business Standard** delivers best-in-class productivity with Office 365 apps and services, but doesn't include the application protection and device management capabilities of Microsoft 365 Business Premium.
+          **Microsoft 365 Business Standard** includes the apps and services that businesses need for remote work and collaboration. It includes Microsoft Teams, secure cloud storage, business email, and premium Office applications across devices.
           
-          **Microsoft 365 Business Premium** combines Office 365 apps and services with advanced security capabilities to help protect your business against advanced cyberthreats, safeguard your data and manage your devices. It includes a simplified management console through which device and data policies may be administered. Many small to medium-sized businesses can be best served with Microsoft 365 Business Premium.
+          **Microsoft 365 Business Premium** is a comprehensive cloud productivity and security solution that was designed and built for small and medium-sized businesses (1-300 employees). Microsoft 365 Business Premium includes everything in Microsoft 365 Business Standard, plus [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview) and [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet). You get more cybersecurity and productivity capabilities, including advanced security protection for your devices, with next-generation protection, endpoint detection and response, and threat & vulnerability management. 
           
-          **Microsoft 365 Enterprise** is a set of licensing plans that offer increased levels of compliance and security management over Microsoft 365 Business Premium and are designed for enterprise customers and those customers that have over 300 users. In addition, Microsoft 365 Enterprise plans provide additional functionality, including business intelligence and analytics tools.
+          **Microsoft 365 Enterprise** is a complete, intelligent solution that empowers everyone to be creative and work together securely. Microsoft 365 for enterprise is designed for large organizations, but it can also be used for medium-sized and small businesses that need the most advanced security and productivity capabilities.
+
+          To learn more, see [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=67386da73ec61354e1550985269d2a17:G:s&OCID=AIDcmmwf9kwzdj_SEM_67386da73ec61354e1550985269d2a17:G:s&lnkd=Bing_O365SMB_Brand&msclkid=67386da73ec61354e1550985269d2a17).
           
       - question: Can I switch my Office 365 plan to Microsoft 365 Business Premium?
         answer: Yes, customers may switch their plans from a qualifying Office 365 plan to Microsoft 365 Business Premium. Depending on the customer's current plan, there may be a decrease or increase in monthly charges.
