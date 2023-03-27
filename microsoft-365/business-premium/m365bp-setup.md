@@ -23,7 +23,7 @@ ms.custom: intro-get-started
 
 After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
 
-- Start with the [guided setup experience](m365bp-setup.md#guided-setup-process) for basic setup and configuration, and then proceed to [Boost your security protection](m365bp-security-overview.md); or
+- Start with the [guided setup experience](m365bp-setup.md#guided-setup-process) for basic setup and configuration, and then proceed to [Boost your security protection](m365bp-security-overview.md); <br/>or<br/>
 - [Work with a Microsoft partner](m365bp-setup.md#work-with-a-microsoft-partner) who can help you get everything set up and configured.
 
 ## Before you begin
@@ -35,7 +35,7 @@ Make sure that you meet the following requirements before you begin your setup p
 | Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
 | Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
 | Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Operating systems (client) | **Windows**:  Windows 11, Windows 10, Windows 8.1<br/>**macOS**: One of the three most recent versions of macOS 
+| Operating systems (client) | **Windows**:  Windows 10 or 11 Pro<br/>**macOS**: One of the three most recent versions of macOS 
 | Operating systems (servers) | Windows Server or Linux Server <br/>(Requires an additional license, such as [Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md).)  |
 
 > [!NOTE]
