@@ -44,7 +44,7 @@ The following details apply to working with your policies in the Microsoft 365 D
 
 :::image type="content" source="media/m365defender.png" alt-text="Screenshot of the Microsoft 365 Defender portal." lightbox="media/m365defender.png":::
 
-### View existing device protection policies
+### View existing device protection policies in Microsoft 365 Defender
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
@@ -56,7 +56,7 @@ The following details apply to working with your policies in the Microsoft 365 D
 
    :::image type="content" source="../media/mdb-deviceconfig-selectedpolicy.png" lightbox="../media/mdb-deviceconfig-selectedpolicy.png" alt-text="Screenshot of a policy selected in the Device configuration page..":::
 
-### Edit an existing device protection policy
+### Edit an existing device protection policy in Microsoft 365 Defender
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
@@ -87,7 +87,7 @@ The following details apply to working with your policies in the Microsoft 365 D
    - Make any needed changes by selecting **Edit**.
    - When you’re ready to proceed, choose **Update policy**.
 
-### Create a new device protection policy
+### Create a new device protection policy in Microsoft 365 Defender
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
@@ -123,7 +123,7 @@ Use the following information to create and manage device policies in Intune, do
 
 :::image type="content" source="media/intune-admin-center.png" alt-text="Screenshot of the Intune admin center." lightbox="media/intune-admin-center.png":::
 
-### Create policies
+### Create policies in Intune
 
 1. In the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), select **Endpoint security** and the type of policy you want to configure, and then select **Create Policy**.
 
@@ -151,13 +151,13 @@ Use the following information to create and manage device policies in Intune, do
 
 7. On the Review + create page, when you're done, choose **Create**. The new profile is displayed in the list when you select the policy type for the profile you created.
 
-### Duplicate a policy in Intune:
+### Duplicate a policy in Intune
 
 1. In the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), select the policy that you want to copy. Next, select **Duplicate** or select the ellipsis **(...)** to the right of the policy and select **Duplicate**.
 
 2. Provide a New name for the policy, and then select **Save**.
 
-### Edit a policy
+### Edit a policy in Intune
 
 1. In the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), select a policy, and then select **Properties**.
 
