@@ -27,15 +27,19 @@ Syntex in Copilot analyzes the text of a selected file in a SharePoint document 
 
 1. From a SharePoint document library, select a document.
 
-2. On the ribbon, select **Copilot** to open the **Copilot** panel.
+2. On the ribbon, select **Copilot**.
 
     ![Screenshot of a document library page showing a document selected and the Copilot button on the ribbon.](../media/content-understanding/copilot-document-selected.png)
 
-3. On the **Copilot** panel, select a question or enter your own question in the text box.
+3. On the **Copilot** panel, you can:
 
-    ![Screenshot of the Copilot panel.](../media/content-understanding/copilot-panel.png)
+    - Enter a question in the text box.
 
-4. You can also ask Copilot to classify the file, summarize the file, extract key information, or detect sensitive information.
+       ![Screenshot of the Copilot panel.](../media/content-understanding/copilot-panel.png)
+
+    - Or in the text box, select the starter prompt to see additional actions, such as to classify the file, summarize the file, extract key information, or detect sensitive information.
+
+       ![Screenshot of the text box on the Copilot panel with the starter prompt highlighted.](../media/content-understanding/copilot-starter-prompt.png)
 
 > [!NOTE] 
 > For security reasons, this feature won't process files stamped with "Confidential" or "Highly Confidential" sensitivity labels.
