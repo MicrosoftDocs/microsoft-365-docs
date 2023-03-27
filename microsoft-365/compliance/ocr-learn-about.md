@@ -47,7 +47,7 @@ Because it's an optional feature, your Global admin must set up pay-as-you-go bi
 > [!NOTE]
 > When you go to the Microsoft Syntex billing page to sign up for your OCR subscription, you do **not** need to also sign up for Microsoft Syntex.
 >
-> You can find OCR pay-as-you-go pricing information, on the [Azure Cognitive Services pricing](https://azure.microsoft.com/pricing/details/cognitive-services/#pricing) page.
+> You can find OCR pay-as-you-go pricing information on the [Azure Cognitive Services pricing](https://azure.microsoft.com/pricing/details/cognitive-services/#pricing) page.
 
 ### Phase 3: Configure your OCR settings
 
