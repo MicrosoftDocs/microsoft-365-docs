@@ -81,7 +81,7 @@ If you are a global administrator or a groups administrator, you can restore a d
 
 ## Got questions about Microsoft 365 Groups?
 
-Visit the [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) to post questions and participate in conversations about Microsoft 365 groups. 
+Visit the [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-groups/bd-p/Microsoft365Groups) to post questions and participate in conversations about Microsoft 365 groups. 
   
 ## Related content
 
