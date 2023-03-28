@@ -306,10 +306,16 @@
           items:
             - name: Microsoft Teams and information barriers
               href: /microsoftteams/information-barriers-in-teams?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json 
+            - name: Microsoft Teams shared channels
+              href: information-barriers-teams-shared-channels.md
             - name: OneDrive and information barriers
               href: /onedrive/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
             - name: SharePoint and information barriers
               href: /sharepoint/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+            - name: Compliance assistant for group-connected SharePoint sites
+              href: xxx
+            - name: SharePoint information barriers policy compliance report
+              href: xxx
     - name: Privileged access management
       items:
         - name: Overview
