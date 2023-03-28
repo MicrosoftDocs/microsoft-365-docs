@@ -68,17 +68,17 @@ We use the directory data to provide the user with a license and to send email a
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.
+ 1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
-2. Select the filter icon, then choose **Self-service**.
+2. On the **Products** tab, select the filter icon, then select **Self-service**.
 3. Select a product to see licenses assigned to people.
     > [!NOTE]
     > If there are multiple purchases or trials for a product, that product is only listed once, and the **Available quantity** column shows the total of all subscriptions acquired for that product.

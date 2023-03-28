@@ -28,6 +28,9 @@ In this site, models can be trained and evaluated using your own content. Howeve
 
 ## Provision the site
 
+> [!NOTE]
+>  The content center site template is provided in the SharePoint look book service, which is no longer being updated. Some of the information in the template might not reflect the current Syntex features.
+
 The content center site can be provisioned from the [SharePoint look book service](https://lookbook.microsoft.com/).
 
 ![Screenshot of the content center site template provisioning page.](../media/content-understanding/content-center-site-provisioning-page.png)

@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/23/2023
+ms.date: 02/17/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -213,6 +213,8 @@ After you've completed all three of the previous steps, you're ready to enable A
 - The DLP policy is added to the **DLP policies** tab in **Adaptive Protection (preview)**. You can view details about the DLP policy and edit policy conditions from the dashboard.
 
 To enable Adaptive Protection, select the **Adaptive Protection settings** tab and toggle **Enable Adaptive Protection** to *On*. It may take up to 36 hours before you can expect to see Adaptive Protection risk levels and DLP actions applied to applicable user activities.
+
+Watch the following video on the Microsoft Mechanics channel to [see how Adaptive Protection can automatically adjust the strength of data protection based on calculated data security risk levels of users](https://youtu.be/9GLsxvtoLWE).
 
 ## Manage Adaptive Protection
 
