@@ -622,8 +622,9 @@ The actions that are available in a rule are dependent on the locations that hav
 #### Devices actions
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
+- Restrice access or encrypt the content in Microsoft 365 locations.
 - Audit or restricted activities when users access sensitive websites in Microsoft Edge browser on Windows devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
-- Audit or restrict activities on Windows devices
+- Audit or restrict activities on devices
 
 To use `Audit or restrict activities on Windows devices`, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.
 
@@ -673,7 +674,12 @@ See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restric
 
 #### On-premises repositories actions
 
-- Restrict access or remove on-premises files
+- Restrict access or remove on-premises files.
+    - Block people from accessing files stored in on-premises repositories
+    - Set permissions on the file (permissions inherited from the parent folder)
+    - Move file from where it's stored to a quarantine folder
+
+ See, [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions) for full details.
 
 #### Power BI actions
 
