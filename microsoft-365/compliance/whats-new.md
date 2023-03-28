@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/24/2023
+ms.date: 03/27/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -56,6 +56,13 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Clarification on the [Filter email blasts feature and why the report might include unexpected senders](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy).
 - Clarification that [Translation view includes associated conversation view messages](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details).
 
+### Data lifecycle management and records management
+
+- **Improvements that support Power Automate flows**: Now rolling out to support the scenario of [customizing what happens at the end of the retention period](retention-label-flow.md), the existing Power Automate compliance actions have been renamed to more accurately describe their purpose. **Apply label on the item** is renamed **Relabel an item at the end of retention**, and **Deletes the item** is renamed **Deletes an item at the end of retention**. Additionally:
+    - New compliance action to [improve the resilience of your flow](retention-label-flow.md#add-resilience-to-your-flow).
+    - The trigger action **When the retention period expires** is renamed **When an item reaches the end of its retention period**.
+    - New compliance action of **Apply a retention label on the item** to apply a retention label independently from this scenario, as if manually applying a label. The label doesn't need to be published and the retention label is applied immediately.
+
 ### eDiscovery
 
 - Updates for [hold type values](/microsoft-365/compliance/ediscovery-identify-a-hold-on-an-exchange-online-mailbox#review-the-results-of-the-mailbox-diagnostics-logs) in the Mailbox diagnostic logs.
@@ -101,6 +108,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **In preview**: For mandatory labeling, Outlook for Android in the Beta Channel supports a setting that you can configure with Microsoft Intune to [prompt users to select a sensitivity label when they first compose an email](sensitivity-labels-office-apps.md#for-outlook-mobile-change-when-users-are-prompted-for-a-label) instead of when they send it.
 - **In preview**: Now rolling out in preview to SharePoint and Teams, users can select and change a sensitivity label from the details pane from these apps when [sensitivity labels are enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 - **Removal of restrictions for prevent copying chat for protected meetings**: The label setting that [prevents copying chat to the clipboard](sensitivity-labels-meetings.md#prevent-copying-chat-to-the-clipboard-label-setting) now supports users outside your organization and also users who join a chat but weren't invited to the meeting.
+- **Ability to turn off the default sensitivity label for SharePoint document libraries**: If you don't want SharePoint site admins to be able to configure a default sensitivity label for SharePoint document libraries, you can now [turn off this feature](sensitivity-labels-sharepoint-default-label.md#how-to-turn-off-this-feature) as a tenant-level setting.
 
 ## February 2023
 
