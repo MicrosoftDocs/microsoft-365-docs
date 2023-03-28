@@ -239,7 +239,7 @@ Rules are the business logic of DLP policies. They consist of:
 > [!IMPORTANT]
 > The **Exceptions** UI is only available in **Classic rule builder** mode. If you have switched to the **New DLP rule builder** [mode](dlp-policy-design.md#complex-rule-design), exceptions are displayed as nested groups and joined to the other conditions by a boolean NOT function.-->
 
-### The priority by which rules are processed
+### The priority by which rules are evaluated and applied
 
 #### Hosted service workloads
 
@@ -262,24 +262,88 @@ For example, you might have a DLP policy that helps you detect the presence of i
 
 ![Diagram shows that DLP policy contains locations and rules](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
 
-#### For endpoints
+#### For endpoints (preview)
 
-Priority for rules on endpoints is also assigned according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on.
+When an item matches multiple DLP rules, DLP goes uses through a complex algorithm to decide which actions to apply. Endpoint DLP will apply the aggregate or sum of most restrictive actions. DLP uses these factors when making the calculation.
 
-When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with most restrictive enforcement on the [endpoint activities](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) is the one that gets enforced on the content. For example, if content matches all of the following rules, then rule 2 takes precedence over the other rules since it's the most restrictive.
+**Policy priority order** 
+When an item matches multiple policies and those policies have identical actions, the actions from the highest priority policy is applied.
 
-- Rule 1: only audits all activity
-- *Rule 2: blocks all activity*
-- Rule 3: blocks all activity with option for end user to override
+**Rule priority order**
+When an item matches multiple rules in a policy and those rules have identical actions, the actions from the highest priority rule is applied.
 
-In the below example, Rule 1 takes precedence over the other matching rules since it's the most restrictive.
+[**Mode of the policy**](/microsoft-365/compliance/dlp-create-deploy-policy#state) 
+When an item matches multiple policies and those policies have identical actions, the actions from all policies that are in *Turn it on* state (enforce mode) are applied preferentially over the policies in *Test with policy tips* and *Test* state.
 
-- *Rule 1: blocks activity and doesn't allow user override*
-- Rule 2: blocks activity and allows user overrides
-- Rule 3: only audits all activity
-- Rule 4: no enforcement
+**The type of [action](#actions)** assigned to a [user activity](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on)
+When an item matches multiple policies and those policies differ in actions, the aggregate or sum of the most restrictive actions are applied.
 
-All the other rules are evaluated but their actions aren't enforced. Audit logs will show the most restrictive rule applied on the file. If there's more than one rule that matches and they're equally restrictive, then policy and rule priority governs which rule would be applied on the file.
+**[Authorization groups](/microsoft-365/compliance/endpoint-dlp-using#scenario-7-authorization-groups-preview)** configuration
+When an item matches multiple policies and those policies differ in action, the aggregate or sum of the most restrictive actions are applied.
+
+**[override options](#user-overrides)**
+When an item matches multiple policies and those policies differ in the override option, actions are applied in this order:
+
+*No override* > *Allow override*
+
+Here are scenarios that illustrate the runtime behavior. For the first three scenarios, you have three DLP policies configured like this:
+
+|Policy name|Condition to match|Action|Policy priority|
+|---------|---------|---------|---------|
+|ABC|Content contains credit card number|Block print, audit all other user egress activities| 0| 
+|MNO|Content contains credit card number|Block copy to USB, audit all other user egress activities|1|
+|XYZ|Content contains U.S. social security number|Block copy to clipboard, audit all other user egress activities|2|
+
+##### Item contains credit card numbers
+
+An item on a monitored device contains credit card numbers, so it matches policy ABC and policy MNO. Both ABC and MNO are in *Turn it on* mode.
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|Audit|Audit|Audit|**Block**|Audit|Audit|
+|MNO|Audit|Audit|**Block**|Audit|Audit|Audit|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|**Block**|Audit|Audit|**Block**|Audit|Audit|
+
+##### Item contains credit card numbers and U.S. social security numbers
+
+An item on a monitored device contains credit card numbers and U.S. social security numbers, so this item matches policy ABC, policy MNO, and policy XYZ. All three policies are in *Turn it on* mode.
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|Audit|Audit|Audit|**Block**|Audit|Audit|
+|MNO|Audit|Audit|**Block**|Audit|Audit|Audit|Audit|Audit|
+|XYZ|Audit|**Block**|Audit|Audit|Audit|**Block**|Audit|Audit|
+|Actions applied at runtime|Audit|**Block**|**Block**|Audit|Audit|**Block**|Audit|Audit|
+
+##### Item contains credit card numbers, different policy state
+
+An item on a monitored device contains credit card number, so it matches policy ABC and policy MNO. Policy ABC is in *Turn it on* mode and policy *MNO* is in *Test* state.
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|Audit|Audit|Audit|**Block**|Audit|Audit|
+|MNO|Audit|Audit|**Block**|Audit|Audit|Audit|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|Audit|Audit|Audit|**Block**|Audit|Audit|
+
+##### Item contains credit card numbers, different override configuration
+
+An item on a monitored device contains credit card number, so it matches policy ABC and policy MNO. Policy ABC is in *Turn it on* state and policy *MNO* is in *Turn it on* state. They have different *Override* actions configured
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|**Block with override**|Audit|Audit|**Block**|Audit|Audit|
+|MNO|Audit|Audit|**Block without override**|Audit|Audit|Audit|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|**Block without override**|Audit|Audit|**Block**|Audit|Audit|
+
+##### Item contains credit card numbers, different authorization groups configuration
+
+An item on a monitored device contains credit card number, so it matches policy ABC and policy MNO. Policy ABC is in *Turn it on* state and policy *MNO* is in *Turn it on* state. They have different *authorization group* actions configured
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|**Auth group A - Block**|Audit|Audit|**Auth group A - Block**|Audit|Audit|
+|MNO|Audit|Audit|**Auth group A - Block with override**|Audit|Audit|**Auth group B - block**|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|**Auth group A - BLock**|Audit|Audit|**Auth group A - Block, Auth group B - Block**|Audit|Audit|
 
 ### Conditions
 
@@ -558,8 +622,9 @@ The actions that are available in a rule are dependent on the locations that hav
 #### Devices actions
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
+- Restrice access or encrypt the content in Microsoft 365 locations.
 - Audit or restricted activities when users access sensitive websites in Microsoft Edge browser on Windows devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
-- Audit or restrict activities on Windows devices
+- Audit or restrict activities on devices
 
 To use `Audit or restrict activities on Windows devices`, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.
 
@@ -609,7 +674,12 @@ See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restric
 
 #### On-premises repositories actions
 
-- Restrict access or remove on-premises files
+- Restrict access or remove on-premises files.
+    - Block people from accessing files stored in on-premises repositories
+    - Set permissions on the file (permissions inherited from the parent folder)
+    - Move file from where it's stored to a quarantine folder
+
+ See, [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions) for full details.
 
 #### Power BI actions
 
