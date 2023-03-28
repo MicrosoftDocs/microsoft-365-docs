@@ -238,8 +238,6 @@ Just in time protection applies a candidate policy to onboarded Windows 10/11 de
 
 You can prevent a file from being permanently blocked if policy evaluation starts on a file, but doesn't complete. Use the **Just in time protection configuration** fallback setting to either **Allow** or **Block** egress activities if policy evaluation doesn't complete <!--in 30 seconds-->. You configure fallback settings in **Microsoft Purview compliance console** > **Settings** > **Just in time protection configuration** > **Decide what happens if JIT protection fails**.
 
-You can [scope](dlp-policy-reference.md#policy-scoping) just in time protection deployment to certain users and groups using [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) and locations.
-
 > [!TIP]
 > Because the candidate policy from just in time protection is applied to all files on onboarded devices, it may block user activity on files that won't have a policy applied once evaluation occurs. To prevent this productivity interruption, you should configure and deploy policies to devices before enabling just in time protection. 
 
