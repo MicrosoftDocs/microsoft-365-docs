@@ -29,7 +29,7 @@ description: Get an overview of how to use the Virtual Appointments app in Teams
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/01/2023
+ms.date: 03/27/2023
 ---
 
 # Use the Virtual Appointments app in Microsoft Teams
@@ -63,6 +63,8 @@ This article gives you an overview of how to schedule, manage, and conduct virtu
 ## Before you get started
 
 If you’re an admin, see [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) to learn about how to control access to the app in your organization.
+
+Users can find the Virtual Appointments app in the Teams app store, or you can share the [installation link](https://teams.microsoft.com/l/app/6e106207-4565-4312-b3ea-bbe9b3ed0a02?source=app-details-dialog) to help them find it. You can use an [app setup policy](/microsoftteams/teams-app-setup-policies) to pin the app for your organization, or your users can [pin the app themselves](https://support.microsoft.com/office/pin-an-app-for-easy-access-3045fd44-6604-4ba7-8ecc-1c0d525e89ec).
 
 ## Set up a new booking calendar
 
