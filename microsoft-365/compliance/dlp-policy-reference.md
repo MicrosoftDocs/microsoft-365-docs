@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 02/27/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -34,13 +34,30 @@ If you're new to Microsoft Purview DLP, here's a list of the core articles you'l
 
 1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
+1. [Sensitive Information Type Limits](/microsoft-365/compliance/sit-limits) - these limits apply to all Microsoft Purview policies that use sensitive information types.
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
     1. [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
     1. [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
 1. [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) - this article that you're reading now introduces all the components of a DLP policy and how each one influences the behavior of a policy
 1. [Design a DLP policy](dlp-policy-design.md) - this article walks you through creating a policy intent statement and mapping it to a specific policy configuration. 
-1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options.
+1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article presents some common policy intent scenarios that you'll map to configuration options. It also walks you through configuring those options.
+
+Also, you need to be aware of the following constraints of the platform:
+
+- Maximum number of MIP + MIG policies in a tenant: 10,000
+- Maximum size of a DLP policy (100 KB)
+- Maximum number of DLP rules:
+    - In a policy: Limited by the size of the policy
+    - In a tenant: 600
+- Maximum size of an individual DLP rule: 80 KB
+- GIR evidence limit: 100, with each SIT evidence, in proportion of occurrence
+- Text extraction limit: 1 MB
+- Regex size limit for all matches predicted: 20 KB
+- Policy name length limit: 64 characters
+- Policy rule length limit: 64 characters
+- Comment length limit: 1024 characters
+- Description length limit: 1024 characters
 
 ## Policy templates
 
@@ -124,7 +141,7 @@ DLP policies are scoped at two different levels. The first level lets an unrestr
 
 in your organization (depending on the locations that are selected) or to subgroups of your organization called [Administrative Unit restricted policies (preview)](#administrative-unit-restricted-policies-preview). 
 
-At this level an administrative unit restricted admin will only be able to pick from the administrative units that they're assigned to.
+At this level, an administrative unit restricted admin will only be able to pick from the administrative units that they're assigned to.
 
 The second level of DLP policy scoping is by the [locations](#locations) that DLP supports. At this level, both unrestricted and administrative unit restricted administrators will see only the users, distribution groups, groups, and accounts that were included in the first level of policy scoping and are available in for that location. 
 
@@ -222,7 +239,7 @@ Rules are the business logic of DLP policies. They consist of:
 > [!IMPORTANT]
 > The **Exceptions** UI is only available in **Classic rule builder** mode. If you have switched to the **New DLP rule builder** [mode](dlp-policy-design.md#complex-rule-design), exceptions are displayed as nested groups and joined to the other conditions by a boolean NOT function.-->
 
-### The priority by which rules are processed
+### The priority by which rules are evaluated and applied
 
 #### Hosted service workloads
 
@@ -245,28 +262,92 @@ For example, you might have a DLP policy that helps you detect the presence of i
 
 ![Diagram shows that DLP policy contains locations and rules](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
 
-#### For endpoints
+#### For endpoints (preview)
 
-Priority for rules on endpoints is also assigned according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on.
+When an item matches multiple DLP rules, DLP goes uses through a complex algorithm to decide which actions to apply. Endpoint DLP will apply the aggregate or sum of most restrictive actions. DLP uses these factors when making the calculation.
 
-When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with most restrictive enforcement on the [endpoint activities](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) is the one that gets enforced on the content. For example, if content matches all of the following rules, then rule 2 takes precedence over the other rules since it's the most restrictive.
+**Policy priority order** 
+When an item matches multiple policies and those policies have identical actions, the actions from the highest priority policy is applied.
 
-- Rule 1: only audits all activity
-- *Rule 2: blocks all activity*
-- Rule 3: blocks all activity with option for end user to override
+**Rule priority order**
+When an item matches multiple rules in a policy and those rules have identical actions, the actions from the highest priority rule is applied.
 
-In the below example, Rule 1 takes precedence over the other matching rules since it's the most restrictive.
+[**Mode of the policy**](/microsoft-365/compliance/dlp-create-deploy-policy#state) 
+When an item matches multiple policies and those policies have identical actions, the actions from all policies that are in *Turn it on* state (enforce mode) are applied preferentially over the policies in *Test with policy tips* and *Test* state.
 
-- *Rule 1: blocks activity and doesn't allow user override*
-- Rule 2: blocks activity and allows user overrides
-- Rule 3: only audits all activity
-- Rule 4: no enforcement
+**The type of [action](#actions)** assigned to a [user activity](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on)
+When an item matches multiple policies and those policies differ in actions, the aggregate or sum of the most restrictive actions are applied.
 
-All the other rules are evaluated but their actions aren't enforced. Audit logs will show the most restrictive rule applied on the file. If there's more than one rule that matches and they're equally restrictive, then policy and rule priority governs which rule would be applied on the file.
+**[Authorization groups](/microsoft-365/compliance/endpoint-dlp-using#scenario-7-authorization-groups-preview)** configuration
+When an item matches multiple policies and those policies differ in action, the aggregate or sum of the most restrictive actions are applied.
+
+**[override options](#user-overrides)**
+When an item matches multiple policies and those policies differ in the override option, actions are applied in this order:
+
+*No override* > *Allow override*
+
+Here are scenarios that illustrate the runtime behavior. For the first three scenarios, you have three DLP policies configured like this:
+
+|Policy name|Condition to match|Action|Policy priority|
+|---------|---------|---------|---------|
+|ABC|Content contains credit card number|Block print, audit all other user egress activities| 0| 
+|MNO|Content contains credit card number|Block copy to USB, audit all other user egress activities|1|
+|XYZ|Content contains U.S. social security number|Block copy to clipboard, audit all other user egress activities|2|
+
+##### Item contains credit card numbers
+
+An item on a monitored device contains credit card numbers, so it matches policy ABC and policy MNO. Both ABC and MNO are in *Turn it on* mode.
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|Audit|Audit|Audit|**Block**|Audit|Audit|
+|MNO|Audit|Audit|**Block**|Audit|Audit|Audit|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|**Block**|Audit|Audit|**Block**|Audit|Audit|
+
+##### Item contains credit card numbers and U.S. social security numbers
+
+An item on a monitored device contains credit card numbers and U.S. social security numbers, so this item matches policy ABC, policy MNO, and policy XYZ. All three policies are in *Turn it on* mode.
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|Audit|Audit|Audit|**Block**|Audit|Audit|
+|MNO|Audit|Audit|**Block**|Audit|Audit|Audit|Audit|Audit|
+|XYZ|Audit|**Block**|Audit|Audit|Audit|**Block**|Audit|Audit|
+|Actions applied at runtime|Audit|**Block**|**Block**|Audit|Audit|**Block**|Audit|Audit|
+
+##### Item contains credit card numbers, different policy state
+
+An item on a monitored device contains credit card number, so it matches policy ABC and policy MNO. Policy ABC is in *Turn it on* mode and policy *MNO* is in *Test* state.
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|Audit|Audit|Audit|**Block**|Audit|Audit|
+|MNO|Audit|Audit|**Block**|Audit|Audit|Audit|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|Audit|Audit|Audit|**Block**|Audit|Audit|
+
+##### Item contains credit card numbers, different override configuration
+
+An item on a monitored device contains credit card number, so it matches policy ABC and policy MNO. Policy ABC is in *Turn it on* state and policy *MNO* is in *Turn it on* state. They have different *Override* actions configured
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|**Block with override**|Audit|Audit|**Block**|Audit|Audit|
+|MNO|Audit|Audit|**Block without override**|Audit|Audit|Audit|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|**Block without override**|Audit|Audit|**Block**|Audit|Audit|
+
+##### Item contains credit card numbers, different authorization groups configuration
+
+An item on a monitored device contains credit card number, so it matches policy ABC and policy MNO. Policy ABC is in *Turn it on* state and policy *MNO* is in *Turn it on* state. They have different *authorization group* actions configured
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|**Auth group A - Block**|Audit|Audit|**Auth group A - Block**|Audit|Audit|
+|MNO|Audit|Audit|**Auth group A - Block with override**|Audit|Audit|**Auth group B - block**|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|**Auth group A - BLock**|Audit|Audit|**Auth group A - Block, Auth group B - Block**|Audit|Audit|
 
 ### Conditions
 
-Conditions are where you define what you want the rule to look for and context in which those items are being used. They tell the rule &#8212; when you find an item that looks like *this* and is being used like *that* &#8212; it's a match and the rest of the actions in the policy should be taken on it. You can use conditions to assign different actions to different risk levels. For example, sensitive content shared internally might be lower risk and require fewer actions than sensitive content shared with people outside the organization.
+Conditions are where you define what you want the rule to look for and context in which those items are being used. They tell the rule—when you find an item that looks like *this* and is being used like *that—it's a match and the rest of the actions in the policy should be taken on it. You can use conditions to assign different actions to different risk levels. For example, sensitive content shared internally might be lower risk and require fewer actions than sensitive content shared with people outside the organization.
 
 > [!NOTE]
 > Users who have non-guest accounts in a host organization's Active Directory or Azure Active Directory tenant are considered as people inside the organization.
@@ -321,7 +402,7 @@ The available context options change depending on which location you choose. If 
 - Sender AD Attribute contains words or phrases
 - Sender AD Attribute matches patterns
 - Sender is a member of
-- Any email attachment's content could not be scanned
+- Any email attachment's content couldn't be scanned
 - Any email attachment's content didn't complete scanning
 - Attachment is password protected
 - File extension is
@@ -386,8 +467,8 @@ The available context options change depending on which location you choose. If 
 
 - Content contains
 - Document or attachment is password protected (.pdf, Office files, .zip, and Symantec PGP encrypted files are fully supported). This predicate detects only open protected files.
-- Content is not labeled (.pdf and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
-- (preview) The user accessed a sensitive website from Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+- Content isn't labeled (.pdf and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
+- (preview) The user accessed a sensitive website from Microsoft Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 - File extension is
 - File type is
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
@@ -429,6 +510,50 @@ The first group contains the SITs that identify an individual and the second gro
 
 Conditions can be grouped and joined by boolean operators (AND, OR, NOT) so that you defining a rule by stating what should be included and then define exclusions in a different group joined to the first by a NOT.
 To learn more about how Purview DLP implements booleans and nested groups see, [Complex rule design](dlp-policy-design.md#complex-rule-design).
+
+#### DLP Platform Limitations for Conditions
+
+|Predicate | Workload |  Limit | Cost of Evaluation |
+|----------|----------|--------|--------------------|
+|Content Contains | EXO/SPO/ODB | 125 SITs per rule | High |
+|Content is shared from Microsoft 365 | EXO/SPO/ODB |  - | High |
+|Sender IP address is | EXO | Individual range length <= 128; Count <= 600 |Low|
+|Has sender overridden the policy tip |EXO |  - | Low |
+|Sender is | EXO | Individual email length <= 256; Count <= 600|   Medium |
+|Sender is a member of | EXO | Count <= 600 | High |
+|Sender domain is | EXO | Domain name length <= 67; Count <= 600 |Low |
+|Sender address contains words | EXO |Individual word length <= 128; Count <= 600 | Low |
+|Sender address matches patterns | EXO |Regex length <= 128 char; Count <= 600 | Low |
+|Sender AD attribute contains words | EXO | Individual word length <= 128; Count <= 600 | Medium |
+|Sender AD attribute matches patterns | EXO | Regex length <= 128 char; Count <= 600 | Medium |
+|Content of email attachment(s) can't be scanned|EXO| [Supported file types](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)  | Low |
+|Incomplete scan of email attachment content | EXO | Size > 1 MB  | Low |
+|Attachment is password-protected | EXO | File types: Office files, ZIP, and 7z |Low|
+|Attachment's file extension is |EXO/SPO/ODB | Count <= 50 | High|
+|Recipient is a member of |EXO | Count <= 600 | High |
+|Recipient domain is | EXO| Domain name length <= 67; Count <= 5000  | Low |
+|Recipient is | EXO | Individual email length <= 256; Count <= 600 |Low |
+|Recipient address contains words | EXO | Individual word length <= 128; Count <= 600 | Low |
+|Recipient address matches patterns | EXO | Count <= 300 | Low|
+|Document name contains words or phrases | EXO | Individual word length <= 128; Count <=600  |Low|
+|Document Name matches patterns| EXO | Regex length <= 128 char; Count <= 300  |Low|
+|Document property is | EXO/SPO/ODB | - | Low |
+|Document size equals or is greater than | EXO | - | Low|
+|Subject contains words or phrases | EXO | Individual word length <= 128; Count <= 600| Low|  
+|Header contains words or phrases | EXO | Individual word length <= 128; Count <= 600  |Low| 
+|Subject or body contains words or phrases |EXO| Individual word length <= 128; Count <= 600  |Low|
+|Content character set contains words |EXO | Count <= 600  |Low|
+|Header matches patterns |EXO | Regex length <= 128 char; Count <= 300  | Low|
+|Subject matches patterns|EXO | Regex length <= 128 char;  Count <= 300  | Low|
+|Subject or body matches patterns |EXO |Regex length <= 128 char;  Count <= 300 | Low|
+|Message type is | EXO| - | Low| 
+|Message size over | EXO | - | Low|
+|With importance | EXO | -  | Low|
+|Sender AD attribute contains words |EXO| Each attribute key value pair: has Regex length <= 128 char; Count <= 600 | Medium |
+|Sender AD attribute matches patterns |EXO | Each attribute key value pair: has Regex length <= 128 char; Count <= 300  | Medium|
+|Document contains words | EXO | Individual word length <= 128; Count <= 600  |  Medium|
+|Document matches patterns| EXO| Regex length <= 128 char; Count <= 300  | Medium|
+
 
 <!--### Exceptions
 
@@ -592,6 +717,25 @@ Whether an action takes effect or not depends on how you configure the mode of t
 
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
 
+#### DLP Platform Limitations for Actions
+
+|Action Name | Workload   | Limits     |
+|------------|------------|------------|
+|Restrict access or encrypt content in Microsoft 365| EXO/SPO/ODB |  |
+|Set headers | EXO | |
+|Remove header | EXO | |
+|Redirect the message to specific users | EXO| Total of 100 across all DLP rules. Cannot be DL/SG|
+|Forward the message for approval to sender's manager | EXO | Manager should be defined in AD|
+|Forward the message for approval to specific approvers |EXO | Groups aren't supported|
+|Add recipient to the **To** box | EXO | Recipient count <= 10; Cannot be DL/SG|
+|Add recipient to the **Cc** box | EXO | Recipient count <= 10; Cannot be DL/SG|
+|Add recipient to the **Bcc** box | EXO | Recipient count <= 10; Cannot be DL/SG|
+|Add the sender's manager as recipient | EXO | Manager attribute should be defined in AD|
+|Apply HTML disclaimer| EXO| |
+|Prepend subject| EXO| |
+|Apply OME| EXO |  |
+|Remove OME | EXO | |
+
 ### User notifications and policy tips
 
 <!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to
@@ -603,7 +747,7 @@ for where they are used/expected behavior-->
 
 <!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
 
-When a user attempts an action on a sensitive item in a context that meets the conditions of a rule, you can let them know about it through user notification emails and in context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies.
+When a user attempts an action on a sensitive item in a context that meets the conditions of a rule, you can let them know about it through user notification emails and in- context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies.
 
 For example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with a guest.
 
@@ -682,11 +826,11 @@ You can customize the title and body of text with using these parameters. The bo
 
 Using this customized text
 
-*%%AppliedActions%% File name %%FileName%% via %%ProcessName%% is not allowed by your organization. Select  'Allow' if you want to bypass the policy %%PolicyName%%*
+*%%AppliedActions%% File name %%FileName%% via %%ProcessName%% isn't allowed by your organization. Select  'Allow' if you want to bypass the policy %%PolicyName%%*
 
 produces this text in the customized notification:
 
-*pasting from the clipboard File Name: Contoso doc 1 via WINWORD.EXE is not allowed by your organization. Click 'Allow' button if you want to bypass the policy Contoso highly confidential*
+*pasting from the clipboard File Name: Contoso doc 1 via WINWORD.EXE isn't allowed by your organization. Select the 'Allow' button if you want to bypass the policy Contoso highly confidential*
 
 > [!NOTE]
 > User notifications and policy tips are not available for the On-premises location
