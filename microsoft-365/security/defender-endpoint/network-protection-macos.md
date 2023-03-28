@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 11/22/2022
+ms.date: 03/24/2023
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -22,8 +22,6 @@ ms.collection:
 search.appverid: met150
 ---
 
-<!--- jweston-1 to return as author and ms.author appx April/May 2023. --->
-
 # Network protection for macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -34,12 +32,7 @@ search.appverid: met150
 - [Microsoft Microsoft 365 Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 ## Overview
-
-Microsoft is bringing Network protection functionality to macOS (min. macOS 11).
 
 Microsoft Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that may host:
 
@@ -48,6 +41,16 @@ Microsoft Network protection helps reduce the attack surface of your devices fro
 - other malicious content on the Internet
 
 Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
+
+## Availability
+
+Network Protection for macOS will soon be available for all Microsoft Defender for Endpoint onboarded macOS devices which meet the minimum requirements. Microsoft will begin incrementally rolling out the functionality for all macOS devices to enable Network Protection on 1/31/2023 with target completion, subject to change, in May 2023. When this feature rolls to production, all of your currently configured Network Protection and Web Threat Protection policies will be enforced on macOS devices where Network Protection is configured for block mode.
+
+To prepare for the macOS network protection rollout, we recommend the following:
+
+- For Network Protection for macOS to be active on your devices, Network Protection must be enabled by your organization. We suggest deploying the audit or block mode policy to a small set of devices and verify there are no issues or broken workstreams before gradually deploying to a larger set of devices.
+- Verify the Network Protection configuration on your macOS devices is set to the desired state.
+- Understand the impact of your Web Threat Protection, Custom Indicators of Compromise, Web Content Filtering, and MDA Endpoint Enforcement policies which target those macOS devices where Network Protection is in Block mode.
 
 ## New and updated capabilities
 
@@ -74,26 +77,13 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/wi
 - Licensing: Microsoft 365 Defender for Endpoint tenant (can be trial)
 - Onboarded Machines:
   - Minimum macOS version: 11
-  - Product version 101.78.13 or later
-  - Your device must be in either the External (Preview) or InsiderFast (Beta) Microsoft AutoUpdate update channel. You can check the update channel using the following command:
-
-```bash
-mdatp health --field release_ring
-```
-
-If your device isn't already in the External(Preview) update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
-
-```bash
-defaults write com.microsoft.autoupdate2 ChannelName -string Preview
-```
-
-Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the device group remotely. For more information, see [Set preferences for Microsoft 365 Defender for Endpoint on macOS](mac-preferences.md).
+  - Product version 101.94.13 or later
 
 ## Deployment instructions
 
 ### Microsoft 365 Defender for Endpoint
 
-After you've configured your device to be in the External(preview) update channel, install the most recent product version through Microsoft AutoUpdate. To open Microsoft AutoUpdate, run the following command from the Terminal:
+Install the most recent product version through Microsoft AutoUpdate. To open Microsoft AutoUpdate, run the following command from the Terminal:
 
 ```bash
 open /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app
@@ -255,7 +245,7 @@ After you create this configuration profile, assign it to the devices where you 
 
 ## Scenarios
 
-The following scenarios are supported during public preview:
+The following scenarios are supported.
 
 ### Web threat protection
 

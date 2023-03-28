@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Microsoft Defender for Endpoint and other Microsoft solutions

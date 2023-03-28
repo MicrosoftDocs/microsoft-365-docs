@@ -21,7 +21,7 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 01/12/2023
+ms.date: 01/17/2023
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
 ---
@@ -65,13 +65,14 @@ Deployment methods vary, depending on operating system and preferred methods. Th
 
 |Operating systems  |Methods  |
 |---------|---------|
-|Windows 10 or later<br/><br/>Windows Server 2019 or later<br/><br/>Windows Server, version 1803 or later<br/><br/>Windows Server 2016 or Windows Server 2012 R2<sup>[[1](#fn1)]<sup>  | [Microsoft Intune or Mobile Device Management](configure-endpoints-mdm.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Group Policy](configure-endpoints-gp.md)<br/><br/>[VDI scripts](configure-endpoints-vdi.md)<br/><br/>[Local script (up to 10 devices)](configure-endpoints-script.md)<br/> Note that the local script method is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune. |
+|Windows 10 or later<br/><br/>Windows Server 2019 or later<br/><br/>Windows Server, version 1803 or later<br/><br/>Windows Server 2016 or Windows Server 2012 R2<sup>[[1](#fn1)]<sup>  | [Microsoft Intune or Mobile Device Management](configure-endpoints-mdm.md)<br/><br/>[Microsoft Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Group Policy](configure-endpoints-gp.md)<br/><br/>[VDI scripts](configure-endpoints-vdi.md)<br/><br/>[Local script (up to 10 devices)](configure-endpoints-script.md)<br/> Note that the local script method is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Configuration Manager, or Intune. |
 |Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) or [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br> Note that the Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  |
 |Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>Note that the Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  
-| macOS (see [System requirements](microsoft-defender-endpoint-mac.md) | [Intune](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Mobile Device Management](mac-install-with-other-mdm.md)<br/><br/> [Local script](mac-install-manually.md) |
-| Linux (see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements)) | [Puppet](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)<br/><br/>[Local script](linux-install-manually.md) |  
-| iOS | [Intune](ios-install.md)     |
-|Android  | [Intune](android-intune.md)  | 
+|**Windows servers<br><br>Linux servers** | [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
+|macOS|[Local script](mac-install-manually.md) <br> [Microsoft Intune](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
+|Linux Server|[Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)|
+|Android|[Microsoft Intune](android-intune.md)|
+|iOS|[Microsoft Intune](ios-install.md) <br> [Mobile Application Manager](ios-install-unmanaged.md) |
 
 (<a id="fn1">1</a>) Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
@@ -135,7 +136,7 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 
 - Product updates
 
-To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).
 
 ## Step 5: Uninstall your non-Microsoft solution
 

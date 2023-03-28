@@ -54,7 +54,7 @@ All these capabilities are available for Microsoft Defender for Endpoint license
 
 ## Overview and Deploy
 
-Deployment of Microsoft Defender for Endpoint on mobile can be done via Microsoft Endpoint Manager (MEM). Watch this video for a quick overview of MTD capabilities and deployment:
+Deployment of Microsoft Defender for Endpoint on mobile can be done via Microsoft Intune. Watch this video for a quick overview of MTD capabilities and deployment:
 
 <br/>
 

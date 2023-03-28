@@ -3,6 +3,7 @@ title: "Add staff to Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 06/18/2020
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -50,7 +51,7 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
     :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="A notification email from Bookings.":::
 
-7. Select **Events on Office 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for bookings services through Bookings.
+7. Select **Events on Microsoft 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for bookings services through Bookings.
 
     For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings calendar view, as shown in the below example.
 

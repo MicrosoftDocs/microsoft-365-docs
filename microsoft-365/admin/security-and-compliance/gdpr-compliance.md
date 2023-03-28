@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -27,6 +28,8 @@ description: "Learn how Microsoft 365 for business can help you with the General
 ---
 
 # GDPR simplified: A guide for your small business
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
  *Using Microsoft 365 for business to help you to mitigate and manage GDPR compliance* 
   
@@ -140,7 +143,7 @@ If you choose to store personal data in the cloud, such as through Microsoft 365
 
 #### Microsoft 365 features that can help
 
-You can use [Set up compliance features](../../business-premium/m365bp-set-up-compliance.md) to help to protect your business's sensitive information. Compliance Manager can help you get started right away! For example, you can [set up a DLP policy](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) that uses the [GDPR template](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
+You can use [Set up compliance features](../../business-premium/m365bp-set-up-compliance.md) to help to protect your business's sensitive information. Compliance Manager can help you get started right away! For example, you can [Create and Deploy data loss prevention policies](../../compliance/dlp-create-deploy-policy.md) that uses the [GDPR template](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
 
 ### Step 5: Keep documentation on your data processing activities
 
@@ -250,12 +253,12 @@ Microsoft 365 for business can help you with the GDPR process in the following w
     
 - **Manage:** Controlling access to data and managing its use is an integral part of GDPR. Microsoft 365 for business protects business data based on policies you want to apply to devices. Device management is vital in an age where employees work remotely. Microsoft 365 for business includes device management features that make sure data is protected across all devices. For example, you can specify that all Windows 10 devices in your business are protected via Windows Defender. 
     
-- **Protect:** Microsoft 365 for business is designed for security. Its device management and data protection controls work across your business network, including remote devices, to help keep data secure. Microsoft 365 for business offers controls such as privacy settings in Office applications and encryption of documents. With Microsoft 365 for business, you can perform GDPR compliance monitoring to make sure you have the right level of protection set. 
+- **Protect:** Microsoft 365 for business is designed for security. Its device management and data protection controls work across your business network, including remote devices, to help keep data secure. Microsoft 365 for business offers controls such as privacy settings in Microsoft 365 apps and encryption of documents. With Microsoft 365 for business, you can perform GDPR compliance monitoring to make sure you have the right level of protection set. 
     
 - **Report:** The GDPR places a lot of emphasis on reporting. Even a business with a single employee, if that business processes large amounts of data, is required to document and report on their procedures. Microsoft 365 for business takes the headache out of reporting requirements for smaller organizations. 
-    
+
     Tools such as audit logs allow you to track and report on data movement. Reports include classifying the data you collect and store, what you do with the data, and transfers of the data. 
-    
+
 Customers, employees, and clients are becoming more aware of the importance of data privacy and now expect a company or organization to respect that privacy. Microsoft 365 for business provides you with the tools to achieve and maintain GDPR compliance without a massive upheaval to your business.
 
 

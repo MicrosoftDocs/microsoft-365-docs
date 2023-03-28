@@ -20,8 +20,8 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 01/05/2023
 ---
-
 
 # Reduce the attack surface for Microsoft Teams
 

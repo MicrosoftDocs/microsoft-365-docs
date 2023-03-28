@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 03/20/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -43,9 +44,9 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 |:-----|:-----|:-----|
 | **Inappropriate text** | Detect inappropriate text | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Threat, Discrimination, and Targeted harassment classifiers |
 | **Inappropriate images** | Detect inappropriate images | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Adult and Racy image classifiers |
-| **Sensitive information** | Monitor for sensitive info | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns, and types, custom dictionary option, attachments larger than 1 MB |
-| **Regulatory compliance** | Monitor for regulatory compliance | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: custom dictionary option, attachments larger than 1 MB |
-| **Conflict of interest** | Monitor for conflict of interest | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Internal <br> - Review Percentage: 100% <br> - Conditions: None |
+| **Sensitive information** | Detect sensitive info types | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns, and types, custom dictionary option, attachments larger than 1 MB |
+| **Regulatory compliance** | Detect financial regulatory compliance | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: custom dictionary option, attachments larger than 1 MB |
+| **Conflict of interest** | Detect conflict of interest | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Internal <br> - Review Percentage: 100% <br> - Conditions: None |
 
 Communications are scanned every 24 hours from the time policies are created. For example, if you create an inappropriate content policy at 11:00 AM, the policy will gather communication compliance signals every 24 hours at 11:00 AM daily. Editing a policy doesn't change this time. To view the last scan date and Coordinated Universal Time (UTC) for a policy, navigate to the *Last policy scan* column on the **Policy** page. After creating a new policy, it may take up to 24 hours to view the first policy scan date and time.
 
@@ -73,7 +74,7 @@ Admins should immediately assign custom reviewers to this policy as appropriate 
 1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com/) using credentials for an admin account in your Microsoft 365 organization.
 2. In the compliance portal, go to **Communication compliance**.
 3. On the **Policy** tab, select the *User-reported messages* policy and select **Edit**.
-4. On the **Monitor for user-reported messages** pane, assign reviewers for the policy. Reviewers must have mailboxes hosted on Exchange Online. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
+4. On the **Detect user-reported messages** pane, assign reviewers for the policy. Reviewers must have mailboxes hosted on Exchange Online. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 5. Select **Save**.
 
 The *Report a concern* option is enabled by default and can be controlled via Teams messaging policies in the [Teams Admin Center](/microsoftteams/manage-teams-in-modern-portal). Users in your organization will automatically get the global policy, unless you create and assign a custom policy. Edit the settings in the global policy or create and assign one or more custom policies to turn on or turn off the *Report a concern* option. To learn more, see [Manage messaging policies in Teams](/microsoftteams/messaging-policies-in-teams).
@@ -81,7 +82,7 @@ The *Report a concern* option is enabled by default and can be controlled via Te
 >[!IMPORTANT]
 >If you're using PowerShell to turn on or turn off the **End user reporting** option in the Teams Admin Center, you must use [Microsoft Teams cmdlets module version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) or later.
 
-## Policy for insider risk management integration (preview)
+## Policy for insider risk management integration
 
 When users experience employment stressors, they may engage in risky activities. Workplace stress may lead to uncharacteristic or malicious behavior by some users that could surface as potentially inappropriate behavior on your organization's messaging systems. Communication compliance can provide risk signals detected in applicable messages to [insider risk management](/microsoft-365/compliance/insider-risk-management) risky user policies by using a dedicated [Detect inappropriate text](#policy-templates) policy. This policy is automatically created (if selected as an option) during configuration of a [Data leaks by risky employees](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-risky-users-preview) or [Security policy violations by risky employees](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-risky-users-preview) policy in insider risk management.
 
@@ -130,6 +131,23 @@ To copy a policy and create a new policy, complete the following steps:
 3. In the **Copy policy** pane, you can accept the default name for the policy in the **Policy name** field or rename the policy. The policy name for the new policy can't be the same as an existing active or deactivated policy. Complete the **Description** field as needed.
 4. If you don't need further customization of the policy, select **Copy policy** to complete the process. If you need to update the configuration of the new policy, select **Customize policy**. This starts the policy wizard to help you update and customize the new policy.
 
+## Mark a policy as a favorite
+
+After you've created a communication compliance policy, you can mark the policy as a favorite. Once a policy has been identified as a favorite, you can filter favorite policies to appear at the top of the policies list. By marking a policy as a favorite, you can also easily sort policies by favorites.
+
+To mark a policy as a favorite, you have the following options:
+
+- **Mark as favorite**: Enables you to mark selected policies as favorites, so you can easily find the policies that you're most interested in rather than having to search for them.
+- **Sort favorites**: Sorts the policies by favorites, so your favorite policies appear at the top of the list.
+- **Customize columns**: Choose to list the favorites that you want to see. You can also choose to sort favorite policies in ascending or descending order.
+
+To sort policies by groups:
+
+- **All policies**: This is the default view, displaying all the policies in the list.
+- **Only favorites**: Groups policies by favorites at the top of the list.
+
+![Communication compliance sort policies by group.](../media/communication-compliance-group-favorites.png)
+
 ## Policy activity detection
 
 Communications are scanned every hour from the time policies are created. For example, if you create an inappropriate content policy at 11:00 AM, the policy will gather communication compliance signals every hour starting from when the policy was created. Editing a policy doesn't change this time. To view the last scan date and Coordinated Universal Time (UTC) for a policy, navigate to the *Last policy scan* column on the **Policy** page. After creating a new policy, it may take up to an hour to view the first policy scan date and time.
@@ -140,21 +158,21 @@ The following table outlines the time to detection for supported content types:
 |:---------------|:--------------------|
 | Email body content | 1 hour |
 | Teams body content | 1 hour |
-| Yammer body content | 13 hours |
-| Email OCR | 13 hours |
-| Teams OCR | 13 hours |
-| Email attachment | 13 hours |
-| Team attachment | 13 hours |
-| Teams modern attachment | 13 hours |
+| Yammer body content | 24 hours |
+| Email OCR | 24 hours |
+| Teams OCR | 24 hours |
+| Email attachment | 24 hours |
+| Team attachment | 24 hours |
+| Teams modern attachment | 24 hours |
 | Teams metadata | 1 hour |
 | Email metadata | 1 hour |
-| Teams shared channels | 13 hours |
+| Teams shared channels | 24 hours |
 
 For existing policies created before July 31, 2022 it may take up to 24 hours to detect messages and review alerts that match these policies. To reduce the latency for these policies, [copy the existing policy](/microsoft-365/compliance/communication-compliance-policies#copy-a-policy) and create a new policy from the copy. If you don't need to retain any data from the older policy, it can be paused or deleted.
 
 To identify an older policy, review *Last policy scan* column on the **Policy** page. Older policies will display a full date for the scan while policies created after July 31, 2022 will display *1 hour ago* for the scan. Another option to reduce latency is to wait until February 28, 2023 for your existing policies to be automatically migrated to the new detection criteria.
 
-## Storage limit notification (preview)
+## Storage limit notification
 
 Each communication compliance policy has a storage limit size of 100 GB or 1 million messages, whichever is reached first. As the policy approaches these limits, notification emails are automatically sent to users assigned to the *Communication Compliance* or *Communication Compliance Admins* role groups. Notifications messages are sent when the storage size or message count reach 80, 90, and 95 percent of the limit. When the policy limit is reached, the policy is automatically deactivated, and the policy stops processing messages for alerts.
 
@@ -177,9 +195,9 @@ You can choose to select **All users** or to define specific users in a communic
 
 By default, the **Direction is** condition is displayed and can't be removed. Communication direction settings in a policy are chosen individually or together:
 
-- **Inbound**: Detects communications sent **to** supervised users from external and internal senders, including other supervised users in the policy.
-- **Outbound**: Detects communications sent **from** supervised users to external and internal recipients, including other supervised users in the policy.
-- **Internal**: Detects communications **between** the supervised users or groups in the policy.
+- **Inbound**: Detects communications sent **to** scoped users from external and internal senders, including other scoped users in the policy.
+- **Outbound**: Detects communications sent **from** scoped users to external and internal recipients, including other scoped users in the policy.
+- **Internal**: Detects communications **between** the scoped users or groups in the policy.
 
 ### Sensitive information types
 
@@ -236,7 +254,7 @@ Communication compliance policies using classifiers inspect and evaluate message
 | [Unauthorized disclosure (preview)](classifier-tc-definitions.md#unauthorized-disclosure-preview) | Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. |
 
 > [!IMPORTANT]
-> Classifiers in (preview) may detect a large volume of bulk sender/newsletter content due to a known issue. While these classifiers are in preview, you can mitigate the detection of large volumes of bulk sender/newsletter content by adding the [*Message is not sent to any of these domains* condition](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) to your polices with a list of domains to exclude.
+> Classifiers in (preview) may detect a large volume of bulk sender/newsletter content due to a known issue. You can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the [**Filter email blasts** check box](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) when you create the policy. You can also edit an existing policy to turn on this feature. 
 
 ### Optical character recognition (OCR)
 
@@ -272,7 +290,7 @@ The following table explains more about each condition.
 | **Message is classified with any of these labels** <br><br> **Message is not classified with any of these labels** | To apply the policy when certain retention labels are included or excluded in a message. Retention labels must be configured separately and configured labels are chosen as part of this condition. Each label you choose is applied separately (only one of these labels must apply for the policy to apply to the message). For more information about retention labels, see [Learn about retention policies and retention labels](/microsoft-365/compliance/retention).|
 | **Message contains any of these words** <br><br> **Message contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message, enter each word separated with a comma. Do not include spaces between items separated by a comma. For phrases of two words or more, use quotation marks around the phrase. Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the message). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](#matching-words-and-phrases-to-emails-or-attachments).|
 | **Attachment contains any of these words** <br><br> **Attachment contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message attachment (such as a Word document), enter each word separated with a comma. Do not include spaces between items separated by a comma. For phrases of two words or more, use quotation marks around the phrase. Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the attachment). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](#matching-words-and-phrases-to-emails-or-attachments).|
-| **Attachment is any of these file types** <br><br> **Attachment is none of these file types** | To supervise communications that include or exclude specific types of attachments, enter the file extensions (such as .exe or .pdf). If you want to include or exclude multiple file extensions, enter file types separated by a comma (example *.exe,.pdf,.zip*). Do not include spaces between items separated by a comma. Only one attachment extension must match for the policy to apply.|
+| **Attachment is any of these file types** <br><br> **Attachment is none of these file types** | To bring communications into scope that include or exclude specific types of attachments, enter the file extensions (such as .exe or .pdf). If you want to include or exclude multiple file extensions, enter file types separated by a comma (example *.exe,.pdf,.zip*). Do not include spaces between items separated by a comma. Only one attachment extension must match for the policy to apply.|
 | **Message size is larger than** <br><br> **Message size is not larger than** | To review messages based on a certain size, use these conditions to specify the maximum or minimum size a message can be before it's subject to review. For example, if you specify **Message size is larger than** \> **1.0 MB**, all messages that are 1.01 MB and larger are subject to review. You can choose bytes, kilobytes, megabytes, or gigabytes for this condition.|
 | **Attachment is larger than** <br><br> **Attachment is not larger than** | To review messages based on the size of their attachments, specify the maximum or minimum size an attachment can be before the message and its attachments are subject to review. For example, if you specify **Attachment is larger than** \> **2.0 MB**, all messages with attachments 2.01 MB and over are subject to review. You can choose bytes, kilobytes, megabytes, or gigabytes for this condition.|
 

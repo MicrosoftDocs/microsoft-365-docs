@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: chventou
 search.appverid: met150
+ms.date: 10/22/2021
 ---
 
 # Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe

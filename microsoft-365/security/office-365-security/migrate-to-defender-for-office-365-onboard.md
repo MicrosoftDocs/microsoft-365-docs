@@ -6,7 +6,6 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date: 
 ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid: 
@@ -16,10 +15,12 @@ ms.collection:
   - m365-security
   - m365solution-mdo-migration
   - highpri
+  - tier1
 ms.custom: migrationguides
 description: "Complete the steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 3: Onboard
@@ -98,7 +99,7 @@ Spoof intelligence can rescue email from domains without proper email authentica
 - Message sources that have the highest number of messages.
 - Message sources that have the highest impact on your organization.
 
-Spoof intelligence will eventually tune itself after you configure user reported message settings, so there is no need for perfection.
+Spoof intelligence will eventually tune itself after you configure user reported settings, so there is no need for perfection.
 
 ## Step 4: Tune impersonation protection and mailbox intelligence
 

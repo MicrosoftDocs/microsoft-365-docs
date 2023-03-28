@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 06/01/2022
 ---
 
 # Get browser extensions permission information

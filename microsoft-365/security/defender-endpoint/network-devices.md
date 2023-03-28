@@ -18,6 +18,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 03/30/2021
 ---
 
 # Network device discovery and vulnerability management
@@ -101,6 +102,9 @@ To configure scan jobs, the following user permission option is required: **Mana
 
 The scanner is supported on Windows 10, version 1903 and Windows Server, version 1903 and later. For more information, see [Windows 10, version 1903 and Windows Server, version 1903](https://support.microsoft.com/topic/windows-10-update-history-e6058e7c-4116-38f1-b984-4fcacfba5e5d).
 
+> [!NOTE]
+> There's a limit of 40 scanner installations per tenant. 
+
 ## Install the scanner
 
 1. Go to **Microsoft 365 security** \> **Settings** \> **Device discovery** \> **Authenticated scans**.
@@ -135,13 +139,13 @@ If there's a difference between the two versions, the update process determines 
 
 It's possible to disable automatic updates of the scanner by going to the **MDATP Network Scanner Updater** inside the Windows Task Scheduler. To do this:
 
-- In Windows, go to **Computer Management** > **Task Scheduler** > **Task Scheduler Library**.
-- Select **MDATP Network Scanner Updater** > right-click > and select **Disable**.
+- In Windows, go to **Computer Management** \> **Task Scheduler** \> **Task Scheduler Library**.
+- Select **MDATP Network Scanner Updater** \> right-click \> and select **Disable**.
 - To re-enable, right-click on **MDATP Network Scanner Updater** and select **Enable**.
 
 ## Configure a new network device authenticated scan
 
-1. Go to **Settings** > **Device discovery** > **Authenticated scans** in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+1. Go to **Settings** \> **Device discovery** \> **Authenticated scans** in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 2. Select **Add new scan** and choose **Network device authenticated scan** and select **Next**.
 
      :::image type="content" source="../../media/defender-endpoint/network-authenticated-scan.png" alt-text="Screenshot of the add new network device authenticated scan screen" lightbox="../../media/defender-endpoint/network-authenticated-scan.png":::
@@ -150,14 +154,21 @@ It's possible to disable automatic updates of the scanner by going to the **MDAT
 4. Enter a **Scan name**.
 5. Select the **Scanning device:** The onboarded device you'll use to scan the network devices.
 6. Enter the **Target (range):** The IP address ranges or hostnames you want to scan. You can either enter the addresses or import a CSV file. Importing a file will override any manually added addresses.
-7. Select the **Scan interval:** By default, the scan will run every four hours, you can change the scan interval or have it only run once, by selecting ‘Do not repeat’.
+7. Select the **Scan interval:** By default, the scan will run every four hours, you can change the scan interval or have it only run once, by selecting 'Do not repeat'.
 8. Choose your **Authentication method**.
-    - You can select to **Use azure KeyVault for providing credentials:** If you manage your credentials in Azure KeyVault you can enter the Azure KeyVault URL and Azure KeyVault secret name to be accessed by the scanning device to provide credentials.
+    - You can select to **Use azure KeyVault for providing credentials:** If you manage your credentials in Azure KeyVault you can enter the Azure KeyVault URL and Azure KeyVault secret name to be accessed by the scanning device to provide credentials. The secret value is dependent on the Authenticated Method you choose:
+
+        |Authentication Method|Azure KeyVault secret value|
+        |:----|:----:|
+        |AuthPriv|Username;AuthPassword;PrivPassword|
+        |AuthNoPriv|Username;AuthPassword|
+        |CommunityString |CommunityString|
+
 9. Select **Next** to run or skip the test scan.
 10. Select **Next** to review the settings and the select **Submit** to create your new network device authenticated scan.
 
->[!Note]
->To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple scanning devices.
+> [!NOTE]
+> To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple scanning devices.
 
 ### Scan and add network devices
 
