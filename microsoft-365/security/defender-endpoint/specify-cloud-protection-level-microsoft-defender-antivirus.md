@@ -28,7 +28,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-Cloud protection works together with Microsoft Defender Antivirus to deliver protection to your endpoints much faster than through traditional security intelligence updates. You can configure your level of cloud protection by using Microsoft Intune (recommended) or Group Policy.
+Cloud protection works together with Microsoft Defender Antivirus to deliver protection to your devices faster than through traditional security intelligence updates. You can configure your level of cloud protection by using Microsoft Intune (recommended) or Group Policy.
 
 > [!NOTE]
 > Selecting **High**, **High +**, or **Zero tolerance** could cause some legitimate files to be detected. If that happens, you can unblock the detected file or dispute that detection in the Microsoft 365 Defender portal.
@@ -64,7 +64,7 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
 
 2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-3. In the **Group Policy Management Editor** go to **Computer Configuration** \> **Administrative templates**.
+3. In the **Group Policy Management Editor**, go to **Computer Configuration** \> **Administrative templates**.
 
 4. Expand the tree to **Windows Components** \> **Microsoft Defender Antivirus** \> **MpEngine**.
 
