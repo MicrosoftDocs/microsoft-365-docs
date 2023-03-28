@@ -96,6 +96,8 @@
       href: m365-lighthouse-mitigate-threats.md
     - name: Overview of the Device security page
       href: m365-lighthouse-device-security-overview.md
+    - name: Overview of the Vulnerability management page
+      href: m365-lighthouse-vulnerability-management-page-overview.md
     - name: Overview of quarantined messages
       href: m365-lighthouse-quarantine-messages-overview.md
     - name: Overview of the Apps page
