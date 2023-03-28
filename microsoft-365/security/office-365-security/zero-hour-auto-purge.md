@@ -45,7 +45,7 @@ Spam and malware signatures are updated in the service real-time on a daily basi
 
 The ZAP action is seamless for the user; they aren't notified if a message is detected and moved.
 
-[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP. Similar to what happens in mail flow, this means that even if the service determines the delivered message needs ZAP, the message is not acted on because of the safe senders configuration. This is another reason to be careful about configuring messages to bypass filtering.
+[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP. Similar to what happens in mail flow, this means that even if the service determines the delivered message needs ZAP, the message isn't acted on because of the safe senders configuration. This is another reason to be careful about configuring messages to bypass filtering.
 
 Watch this short video to learn how ZAP in Microsoft Defender for Office 365 automatically detects and neutralizes threats in email.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGrLg]
@@ -158,7 +158,7 @@ There are no limitations on licenses. ZAP works on all mailboxes hosted on Excha
 
 ### What if a message is moved to another folder (e.g. Inbox rules)?
 
-Zero-hour auto purge still works as long as the message has not been deleted, or as long as the same, or stronger, action has not already been applied. For example, if the anti-phishing policy is set to quarantine and message is already in the Junk Email, then ZAP will take action to quarantine the message.
+Zero-hour auto purge still works as long as the message hasn't been deleted, or as long as the same, or stronger, action hasn't already been applied. For example, if the anti-phishing policy is set to quarantine and message is already in the Junk Email, then ZAP will take action to quarantine the message.
 
 ### How does ZAP affect mailboxes on hold?
 
