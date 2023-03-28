@@ -41,8 +41,8 @@ You can set tamper protection in the following modes:
 
 |Topic|Description|
 |---|---|
-|Disabled|Tamper protection is completely off|.
-|Audit|Tampering operations are logged, but not blocked (this is the default mode after installation)|
+|Disabled|Tamper protection is completely off.|
+|Audit|Tampering operations are logged, but not blocked. This is the default mode after installation.|
 |Block|Tamper protection is on; tampering operations are blocked.|
 
 When tamper protection is set to audit or block mode, you can expect the following outcomes:
