@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 09/17/2019
+ms.date: 03/28/2023
 audience: ITPro
 ms.topic: article
 search.appverid: MET150
@@ -19,13 +19,13 @@ description: "Document Fingerprinting makes it easier for you to protect informa
 
 # Document Fingerprinting
 
-Information workers in your organization handle many kinds of sensitive information during a typical day. In the Microsoft Purview compliance portal, Document Fingerprinting makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. This topic describes the concepts behind Document Fingerprinting and how to create a document fingerprint using PowerShell.
+Information workers in your organization handle many kinds of sensitive information during a typical day. In the Microsoft Purview compliance portal, document fingerprinting makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. This topic describes the concepts behind Document Fingerprinting and how to create a document fingerprint using the compliance portal or using PowerShell.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Basic scenario for Document Fingerprinting
 
-Document Fingerprinting is a Microsoft Purview Data Loss Prevention (DLP) feature that converts a standard form into a sensitive information type, which you can use in the rules of your DLP policies. For example, you can create a document fingerprint based on a blank patent template and then create a DLP policy that detects and blocks all outgoing patent templates with sensitive content filled in. Optionally, you can set up [policy tips](use-notifications-and-policy-tips.md) to notify senders that they might be sending sensitive information, and that the sender should verify that the recipients are qualified to receive the patents. This process works with any text-based forms used in your organization. Additional examples of forms that you can upload include:
+Document fingerprinting is a Microsoft Purview data loss prevention (DLP) feature that converts a standard form into a sensitive information type, which you can use in the rules of your DLP policies. For example, you can create a document fingerprint based on a blank patent template and then create a DLP policy that detects and blocks all outgoing patent templates with sensitive content filled in. Optionally, you can set up [policy tips](use-notifications-and-policy-tips.md) to notify senders that they might be sending sensitive information, and that the sender should verify that the recipients are qualified to receive the patents. This process works with any text-based forms used in your organization. Additional examples of forms that you can upload include:
 
 - Government forms
 - Health Insurance Portability and Accountability Act (HIPAA) compliance forms
@@ -36,14 +36,19 @@ Ideally, your organization already has an established business practice of using
 
 ## How Document Fingerprinting works
 
-You've probably already guessed that documents don't have actual fingerprints, but the name helps explain the feature. In the same way that a person's fingerprints have unique patterns, documents have unique word patterns. When you upload a file, DLP identifies the unique word pattern in the document, creates a document fingerprint based on that pattern, and uses that document fingerprint to detect outbound documents containing the same pattern. That's why uploading a form or template creates the most effective type of document fingerprint. Everyone who fills out a form uses the same original set of words and then adds his or her own words to the document. As long as the outbound document isn't password protected and contains all the text from the original form, DLP can determine whether the document matches the document fingerprint.
+You've probably already guessed that documents don't have actual fingerprints, but the name helps explain the feature. In the same way that a person's fingerprints have unique patterns, documents have unique word patterns. When you upload a file, DLP identifies the unique word pattern in the document, creates a document fingerprint based on that pattern, and uses that document fingerprint to detect outbound documents containing the same pattern. That's why uploading a form or template creates the most effective type of document fingerprint. Everyone who fills out a form uses the same original set of words and then adds his or her own words to the document. As long as the outbound document isn't password protected, and contains all the text from the original form, DLP can determine whether the document matches the document fingerprint.
 
 > [!IMPORTANT]
-> For now, DLP can use document fingerprinting as a detection method in Exchange online only.
+> DLP can use document fingerprinting as a detection method in Exchange, SharePoint, OneDrive, Teams, and Windows devices.
 
-The following example shows what happens if you create a document fingerprint based on a patent template, but you can use any form as a basis for creating a document fingerprint.
+The following examples show what happens if you create a document fingerprint based on a patent template; however, you can use any form as a basis for creating a document fingerprint.
 
-### Example of a patent document matching a document fingerprint of a patent template
+### Compliance portal example of a patent document matching a document fingerprint of a patent template
+1. In Microsoft Purview, choose **Data classification** and then choose **Classifiers**
+2. On the **Classifiers** page, choose **Sensitive info types**.
+3. Next, choose **Create Fingerprint-based SIT**.
+
+### PowerShell example of a patent document matching a document fingerprint of a patent template
 
 ![Diagram of document fingerprinting.](../media/Document-Fingerprinting-diagram.png)
 
