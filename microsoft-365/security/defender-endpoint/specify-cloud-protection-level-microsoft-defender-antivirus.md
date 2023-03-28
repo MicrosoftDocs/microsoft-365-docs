@@ -79,7 +79,7 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
     - **Zero tolerance blocking level** blocks all unknown executables.
 
     > [!CAUTION]
-    > If you're using [Resultant Set of Policy with Group Policy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn789183(v=ws.11)), don't use **Default blocking level**. Select at least **Moderate blocking level**.
+    > If you're using [Resultant Set of Policy with Group Policy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn789183(v=ws.11)), don't use **Default blocking level**. It can cause the registry key for cloud protection to be set to `0`, which means it's disabled. Make sure to select at least **Moderate blocking level**.
 
 7. Select **OK**.
 
