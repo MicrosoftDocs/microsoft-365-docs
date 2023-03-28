@@ -1193,7 +1193,7 @@
             href: dlp-on-premises-scanner-learn.md
           - name: Learn about the Microsoft Purview Chrome Extension
             href: dlp-chrome-learn-about.md
-          - name: Learn about the Microsoft Purview Firefox Extension (preview)
+          - name: Learn about the Microsoft Purview Firefox Extension
             href: dlp-firefox-extension-learn.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
