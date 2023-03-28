@@ -21,18 +21,18 @@ title: Review event logs and error codes to troubleshoot issues with Microsoft D
 summary: | 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender Antivirus
+ - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+ - Microsoft Defender Antivirus
 
 **Platforms**
-- Windows
+ - Windows
 
 If you encounter a problem with Microsoft Defender Antivirus, you can search the below sections in this topic to find a matching issue and potential solution.
 
 The following sections are:
-- [Microsoft Defender Antivirus event IDs](#windows-defender-av-ids) (these apply to Windows 10, Windows 11, and Windows Server 2016)
-- [Microsoft Defender Antivirus client error codes](#error-codes)
-- [Internal Microsoft Defender Antivirus client error codes (used by Microsoft during development and testing)](#internal-error-codes)
+ - [Microsoft Defender Antivirus event IDs](#windows-defender-av-ids) (these apply to Windows 10, Windows 11, and Windows Server 2016)
+ - [Microsoft Defender Antivirus client error codes](#error-codes)
+ - [Internal Microsoft Defender Antivirus client error codes (used by Microsoft during development and testing)](#internal-error-codes)
 
 <a id="windows-defender-av-ids"></a>
 ## Microsoft Defender Antivirus event IDs
@@ -45,11 +45,11 @@ The table in this section lists the main Microsoft Defender Antivirus event IDs 
 
 ## To view a Microsoft Defender Antivirus event
 
-1. Open **Event Viewer**.
-2. In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender**.
-3. Double-click on **Operational**.
-4. In the details pane, view the list of individual events to find your event.
-5. Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
+ 1. Open **Event Viewer**.
+ 2. In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender**.
+ 3. Double-click on **Operational**.
+ 4. In the details pane, view the list of individual events to find your event.
+ 5. Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
 
 ### Event ID: 1000
 
@@ -59,17 +59,17 @@ Message: An antimalware scan started.
 
 Description:
 
-- Scan ID: <ID number of the relevant scan.>
-- Scan Type: <Scan type>, for example:
-   - Antivirus
-   - Antispyware
-   - Antimalware
-- Scan Parameters: <Scan parameters>, for example:
-   - Full scan
-   - Quick scan
-   - Customer scan
-- Scan Resources: <Resources (such as files/directories/BHO) that were scanned.>
-- User: <Domain>\<User>
+ - Scan ID: <ID number of the relevant scan.>
+ - Scan Type: <Scan type>, for example:
+    - Antivirus
+    - Antispyware
+    - Antimalware
+ - Scan Parameters: <Scan parameters>, for example:
+    - Full scan
+    - Quick scan
+    - Customer scan
+ - Scan Resources: <Resources (such as files/directories/BHO) that were scanned.>
+ - User: <Domain>\<User>
 
 ### Event ID: 1001
 
@@ -79,305 +79,620 @@ Message: An antimalware scan finished.
 
 Description:
 
-- Scan ID: <ID number of the relevant scan.>
-- Scan Type: <Scan type>, for example:
-   - Antivirus
-   - Antispyware
-   - Antimalware
-- Scan Parameters: <Scan parameters>, for example:
-   - Full scan
-   - Quick scan
-   - Customer scan
-- User: <Domain>\<User>
-- Scan Time: <The duration of a scan.>
+ - Scan ID: <ID number of the relevant scan.>
+ - Scan Type: <Scan type>, for example:
+    - Antivirus
+    - Antispyware
+    - Antimalware
+ - Scan Parameters: <Scan parameters>, for example:
+    - Full scan
+    - Quick scan
+    - Customer scan
+ - User: <Domain>\<User>
+ - Scan Time: <The duration of a scan.>
 
-### Event ID: 
+### Event ID: 1002
 
-Symbolic name: 
+Symbolic name: MALWAREPROTECTION_SCAN_CANCELLED
 
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
+Message: An antimalware scan was stopped before it finished.
 
 Description:
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+ - Scan ID: <ID number of the relevant scan.>
+ - Scan Type: <Scan type>, for example:
+    - Antivirus
+    - Antispyware
+    - Antimalware
+ - Scan Parameters: <Scan parameters>, for example:
+    - Full scan
+    - Quick scan
+    - Customer scan
+ - User: <Domain>&lt;User>
+ - Scan Time: <The duration of a scan.>
 
-### Event ID: 
+### Event ID: 1003
 
-Symbolic name: 
+Symbolic name: MALWAREPROTECTION_SCAN_PAUSED
 
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
+Message: An antimalware scan was paused. 
 
 Description:
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+ - Scan ID: <ID number of the relevant scan.>
+ - Scan Type: <Scan type>, for example:
+    - Antivirus
+    - Antispyware
+    - Antimalware 
+ - Scan Parameters: <Scan parameters>, for example:
+    - Full scan
+    - Quick scan
+    - Customer scan 
+ - User: <Domain>\<User>
 
-### Event ID: 
+### Event ID: 1004
 
-Symbolic name: 
+Symbolic name: MALWAREPROTECTION_SCAN_RESUMED
 
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
+Message: An antimalware scan was resumed.
 
 Description:
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+ - Scan ID: <ID number of the relevant scan.> 
+ - Scan Type: <Scan type>, for example: 
+    - Antivirus
+    - Antispyware
+    - Antimalware
+ - Scan Parameters: <Scan parameters>, for example: 
+    - Full scan
+    - Quick scan
+    - Customer scan 
+ - User: <Domain>\<User>
 
-### Event ID: 
+### Event ID: 1005 
 
-Symbolic name: 
+Symbolic name: MALWAREPROTECTION_SCAN_FAILED
 
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
+Message: An antimalware scan failed. 
 
 Description:
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+ - Scan ID: <ID number of the relevant scan.> 
+ - Scan Type: <Scan type>, for example:
+    - Antivirus
+    - Antispyware
+    - Antimalware 
+ - Scan Parameters: <Scan parameters>, for example:
+    - Full scan
+    - Quick scan
+    - Customer scan 
+ - User: <Domain>\<User>
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
 
-### Event ID: 
+User action:	
 
-Symbolic name: 
+The antivirus client encountered an error, and the current scan has stopped. The scan might fail due to a client-side issue. This event record includes the scan ID, type of scan (Microsoft Defender Antivirus, antispyware, antimalware), scan parameters, the user that started the scan, the error code, and a description of the error. 
 
-Message: 
+To troubleshoot this event:
 
-Description:
+ 1. Run the scan again.
+ 2. If it fails in the same way, go to the [Microsoft Support site](https://support.microsoft.com/), enter the error number in the Search box to look for the error code.
+ 3. Contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+### Event ID: 1006
 
-### Event ID: 
+Symbolic name: MALWAREPROTECTION_MALWARE_DETECTED
 
-Symbolic name: 
+Message: The antimalware engine found malware or other potentially unwanted software.
 
-Message: 
+Description: For more information, see the following:
 
-Description:
+ - Name: <Threat name>
+ - ID: <Threat ID>
+ - Severity: <Severity>, for example:
+    - Low
+    - Moderate
+    - High
+    - Severe
+ - Category: <Category description>, for example, any threat or malware type.
+ - Path: <File path>
+ - Detection Origin: <Detection origin>, for example: 
+    - Unknown
+    - Local computer
+    - Network share 
+    - Internet
+    - Incoming traffic
+    - Outgoing traffic
+ - Detection Type: <Detection type>, for example:
+    - Heuristics
+    - Generic
+    - Concrete
+    - Dynamic signature 
+ - Detection Source: <Detection source> for example:
+    - User: user initiated
+    - System: system initiated
+    - Real-time: real-time component initiated
+    - IOAV: IE Downloads and Outlook Express Attachments initiated
+    - NIS: Network inspection system
+    - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+    - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence.
+    - Remote attestation
+ - Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well. UAC.
+ - Status: <Status>
+ - User: <Domain>\<User>
+ - Process Name: <Process in the PID>
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware Engine version>
+ 
+### Event ID: 1007
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+Symbolic name: MALWAREPROTECTION_MALWARE_ACTION_TAKEN
 
-### Event ID: 
+Message: The antimalware platform performed an action to protect your system from malware or other potentially unwanted software. 
 
-Symbolic name: 
+Description: Microsoft Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software. For more information, see the following:
 
-Message: 
+ - User: <Domain>\<User>
+ - Name: <Threat name>
+ - ID: <Threat ID>
+ - Severity: <Severity>, for example:
+    - Low
+    - Moderate
+    - High
+    - Severe
+ - Category: <Category description>, for example, any threat or malware type.
+ - Action: <Action>, for example:
+    - Clean: The resource was cleaned
+    - Quarantine: The resource was quarantined
+    - Remove: The resource was deleted
+    - Allow: The resource was allowed to execute/exist
+    - User defined: User-defined action that is normally one from this list of actions that the user has specified
+    - No action: No action
+    - Block: The resource was blocked from executing
+ - Status: <Status>
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware Engine version>
 
-Description:
+### Event ID: 1008
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+Symbolic name: MALWAREPROTECTION_MALWARE_ACTION_FAILED
 
-### Event ID: 
+Message: The antimalware platform attempted to perform an action to protect your system from malware or other potentially unwanted software, but the action failed.
 
-Symbolic name: 
+Description: Microsoft Defender Antivirus has encountered an error when taking action on malware or other potentially unwanted software. For more information, see the following:
 
-Message: 
+ - User: <Domain>\<User>
+ - Name: <Threat name>
+ - ID: <Threat ID>
+ - Severity: <Severity>, for example:
+    - Low
+    - Moderate
+    - High
+    - Severe
+ - Category: <Category description>, for example, any threat or malware type.
+ - Path: <File path>
+ - Action: <Action>, for example:
+    - Clean: The resource was cleaned
+    - Quarantine: The resource was quarantined
+    - Remove: The resource was deleted
+    - Allow: The resource was allowed to execute/exist
+    - User defined: User-defined action that is normally one from this list of actions that the user has specified
+    - No action: No action
+    - Block: The resource was blocked from executing
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+ - Status: <Status>
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware Engine version>
 
-Description:
+### Event ID: 1009
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+Symbolic name: MALWAREPROTECTION_QUARANTINE_RESTORE
 
-### Event ID: 
+Message: The antimalware platform restored an item from quarantine.
 
-Symbolic name: 
+Description: Microsoft Defender Antivirus has restored an item from quarantine. For more information, see the following:
 
-Message: 
+ - Name: <Threat name>
+ - ID: <Threat ID>
+ - Severity: <Severity>, for example:
+    - Low
+    - Moderate
+    - High
+    - Severe
+ - Category: <Category description>, for example, any threat or malware type.
+ - Path: <File path>
+ - User: <Domain>\<User>
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware Engine version>
 
-Description:
+### Event ID: 1010
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+Symbolic name: MALWAREPROTECTION_QUARANTINE_RESTORE_FAILED
 
-### Event ID: 
+Message: The antimalware platform could not restore an item from quarantine.
 
-Symbolic name: 
+Description: Microsoft Defender Antivirus has encountered an error trying to restore an item from quarantine. For more information, see the following:
 
-Message: 
+ - Name: <Threat name>
+ - ID: <Threat ID>
+ - Severity: <Severity>, for example:
+    - Low
+    - Moderate
+    - High
+    - Severe
+ - Category: <Category description>, for example, any threat or malware type.
+ - Path: <File path>
+ - User: <Domain>\<User>
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware Engine version>
 
-Description:
+### Event ID: 1011
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+Symbolic name: MALWAREPROTECTION_QUARANTINE_DELETE
 
-### Event ID: 
+Message: The antimalware platform deleted an item from quarantine.
 
-Symbolic name: 
+Description: Microsoft Defender Antivirus has deleted an item from quarantine. For more information, see the following:
 
-Message: 
+ - Name: <Threat name>
+ - ID: <Threat ID>
+ - Severity: <Severity>, for example:
+    - Low
+    - Moderate
+    - High
+    - Severe
+ - Category: <Category description>, for example, any threat or malware type.
+ - Path: <File path>
+ - User: <Domain>\<User>
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware Engine version>
 
-Description:
+### Event ID: 1012
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+Symbolic name: MALWAREPROTECTION_QUARANTINE_DELETE_FAILED
 
-### Event ID: 
+Message: The antimalware platform could not delete an item from quarantine.
 
-Symbolic name: 
+Description: Microsoft Defender Antivirus has encountered an error trying to delete an item from quarantine. For more information, see the following:
+ - Name: <Threat name>
+ - ID: <Threat ID>
+ - Severity: <Severity>, for example:
+    - Low
+    - Moderate
+    - High
+    - Severe
+ - Category: <Category description>, for example, any threat or malware type.
+ - Path: <File path>
+ - User: <Domain>\<User>
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware Engine version>
 
-Message: 
+### Event ID: 1013 
 
-Description:
+Symbolic name: MALWAREPROTECTION_MALWARE_HISTORY_DELETE
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+Message: The antimalware platform deleted history of malware and other potentially unwanted software.
 
-### Event ID: 
+Description: Microsoft Defender Antivirus has removed history of malware and other potentially unwanted software.
 
-Symbolic name: 
+ - Time: The time when the event occurred, for example when the history is purged. This parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.
+ - User: <Domain>\<User>
 
-Message: 
+### Event ID: 1014
 
-Description:
+Symbolic name: MALWAREPROTECTION_MALWARE_HISTORY_DELETE_FAILED
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+Message: The antimalware platform could not delete history of malware and other potentially unwanted software.
 
-### Event ID: 
+Description: Microsoft Defender Antivirus has encountered an error trying to remove history of malware and other potentially unwanted software.
 
-Symbolic name: 
+ - Time: The time when the event occurred, for example when the history is purged. This parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.
+ - User: <Domain>\<User>
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
 
-Message: 
+### Event ID: 1015
 
-Description:
+Symbolic name: MALWAREPROTECTION_BEHAVIOR_DETECTED 
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+Message: The antimalware platform detected suspicious behavior.
+
+Description: Microsoft Defender Antivirus has detected a suspicious behavior. For more information, see the following:
+ - Name: <Threat name>
+ - ID: <Threat ID>
+ - Severity: <Severity>, for example:
+    - Low
+    - Moderate
+    - High
+    - Severe
+ - Category: <Category description>, for example, any threat or malware type.
+ - Path: <File path>
+ - Detection Origin: <Detection origin>, for example:
+    - Unknown
+    - Local computer
+    - Network share
+    - Internet
+    - Incoming traffic
+    - Outgoing traffic
+ - Detection Type: <Detection type>, for example:
+    - Heuristics
+    - Generic
+    - Concrete
+    - Dynamic signature
+ - Detection Source: <Detection source> for example:
+    - User: user initiated
+    - System: system initiated
+    - Real-time: real-time component initiated
+    - IOAV: IE Downloads and Outlook Express Attachments initiated
+    - NIS: Network inspection system
+    - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+    - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
+    - Remote attestation
+ - Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well. UAC
+ - Status: <Status>
+ - User: <Domain>\<User>
+ - Process Name: <Process in the PID>
+ - Signature ID: Enumeration matching severity.
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware Engine version>
+ - Fidelity Label:
+ - Target File Name: <File name> Name of the file.
+
+### Event ID: 1116
+
+Symbolic name: MALWAREPROTECTION_STATE_MALWARE_DETECTED 
+
+Message: The antimalware platform detected malware or other potentially unwanted software.
+
+Description: Microsoft Defender Antivirus has detected malware or other potentially unwanted software. For more information, see the following:
+ - Name: <Threat name>
+ - ID: <Threat ID>
+ - Severity: <Severity>, for example:
+    - Low
+    - Moderate
+    - High
+    - Severe
+ - Category: <Category description>, for example, any threat or malware type.
+ - Path: <File path>
+ - Detection Origin: <Detection origin>, for example:
+    - Unknown
+    - Local computer
+    - Network share
+    - Internet
+    - Incoming traffic
+    - Outgoing traffic
+ - Detection Type: <Detection type>, for example:
+    - Heuristics
+    - Generic
+    - Concrete
+    - Dynamic signature
+ - Detection Source: <Detection source> for example:
+    - User: user initiated
+    - System: system initiated
+    - Real-time: real-time component initiated
+    - IOAV: IE Downloads and Outlook Express Attachments initiated
+    - NIS: Network inspection system
+    - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+    - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
+    - Remote attestation
+ - Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well. UAC
+ - User: <Domain>\<User>
+ - Process Name: <Process in the PID>
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware Engine version>
+ 
+User action:	No action is required. Microsoft Defender Antivirus can suspend and take routine action on this threat. If you want to remove the threat manually, in the Microsoft Defender Antivirus interface, click **Clean Computer**.
+
+### Event ID: 1117
+
+Symbolic name: MALWAREPROTECTION_STATE_MALWARE_ACTION_TAKEN
+
+Message: The antimalware platform performed an action to protect your system from malware or other potentially unwanted software.
+
+Description: Microsoft Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software. For more information, see the following:
+
+ - Name: <Threat name>
+ - ID: <Threat ID>
+ - Severity: <Severity>, for example:
+    - Low
+    - Moderate
+    - High
+    - Severe
+ - Category: <Category description>, for example, any threat or malware type.
+ - Path: <File path>
+ - Detection Origin: <Detection origin>, for example:
+    - Unknown
+    - Local computer
+    - Network share
+    - Internet
+    - Incoming traffic
+    - Outgoing traffic
+ - Detection Type: <Detection type>, for example:
+    - Heuristics
+    - Generic
+    - Concrete
+    - Dynamic signature
+ - Detection Source: <Detection source> for example:
+    - User: user initiated
+    - System: system initiated
+    - Real-time: real-time component initiated
+    - IOAV: IE Downloads and Outlook Express Attachments initiated
+    - NIS: Network inspection system
+    - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+    - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
+    - Remote attestation
+ - Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well. UAC
+ - User: <Domain>\<User>
+ - Process Name: <Process in the PID>
+ - Action: <Action>, for example:
+    - Clean: The resource was cleaned
+    - Quarantine: The resource was quarantined
+    - Remove: The resource was deleted
+    - Allow: The resource was allowed to execute/exist
+    - User defined: User-defined action that is normally one from this list of actions that the user has specified
+    - No action: No action
+    - Block: The resource was blocked from executing
+ - Action Status: <Description of additional actions>
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware Engine version>
+ 
+NOTE: Whenever Microsoft Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it will restore the following system settings and services that the malware might have changed:
+  - Default Internet Explorer or Microsoft Edge setting
+  - User Access Control settings
+  - Chrome settings
+  - Boot Control Data
+  - Regedit and Task Manager registry settings
+  - Windows Update, Background Intelligent Transfer Service, and Remote Procedure Call service
+  - Windows Operating System files
+  
+The above context applies to the following client and server versions:
+
+  1. Operating system: Client Operating System
+     Operating system version: Windows Vista (Service Pack 1, or Service Pack 2), Windows 7 and later
+     
+  2. Operating system: Server Operating System
+     Operating system version: Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, and Windows Server 2016
+  
+User action: No action is necessary. Microsoft Defender Antivirus removed or quarantined a threat.
+
+### Event ID: 1118
+
+Symbolic name: MALWAREPROTECTION_STATE_MALWARE_ACTION_FAILED
+
+Message: The antimalware platform attempted to perform an action to protect your system from malware or other potentially unwanted software, but the action failed. 
+
+Description: Microsoft Defender Antivirus has encountered a non-critical error when taking action on malware or other potentially unwanted software. For more information, see the following:
+
+ - Name: <Threat name>
+ - ID: <Threat ID>
+ - Severity: <Severity>, for example:
+    - Low
+    - Moderate
+    - High
+    - Severe
+ - Category: <Category description>, for example, any threat or malware type.
+ - Path: <File path>
+ - Detection Origin: <Detection origin>, for example:
+    - Unknown
+    - Local computer
+    - Network share
+    - Internet
+    - Incoming traffic
+    - Outgoing traffic
+ - Detection Type: <Detection type>, for example:
+    - Heuristics
+    - Generic
+    - Concrete
+    - Dynamic signature
+ - Detection Source: <Detection source> for example:
+    - User: user initiated
+    - System: system initiated
+    - Real-time: real-time component initiated
+    - IOAV: IE Downloads and Outlook Express Attachments initiated
+    - NIS: Network inspection system
+    - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+    - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
+    - Remote attestation
+ - Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well. UAC
+ - User: <Domain>\<User>
+ - Process Name: <Process in the PID>
+ - Action: <Action>, for example:
+    - Clean: The resource was cleaned
+    - Quarantine: The resource was quarantined
+    - Remove: The resource was deleted
+    - Allow: The resource was allowed to execute/exist
+    - User defined: User-defined action that is normally one from this list of actions that the user has specified
+    - No action: No action
+    - Block: The resource was blocked from executing
+ - Action Status: <Description of additional actions>
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware Engine version>
+ 
+User action:	No action is necessary. Microsoft Defender Antivirus failed to complete a task related to the malware remediation. This is not a critical failure.
+
+### Event ID: 1119
+
+Symbolic name: MALWAREPROTECTION_STATE_MALWARE_ACTION_CRITICALLY_FAILED
+
+Message: The antimalware platform encountered a critical error when trying to take action on malware or other potentially unwanted software. There are more details in the event message.
+
+Description: Microsoft Defender Antivirus has encountered a critical error when taking action on malware or other potentially unwanted software. For more information, see the following:
+
+ - Name: <Threat name>
+ - ID: <Threat ID>
+ - Severity: <Severity>, for example:
+    - Low
+    - Moderate
+    - High
+    - Severe
+ - Category: <Category description>, for example, any threat or malware type.
+ - Path: <File path>
+ - Detection Origin: <Detection origin>, for example:
+    - Unknown
+    - Local computer
+    - Network share
+    - Internet
+    - Incoming traffic
+    - Outgoing traffic
+ - Detection Type: <Detection type>, for example:
+    - Heuristics
+    - Generic
+    - Concrete
+    - Dynamic signature
+ - Detection Source: <Detection source> for example:
+    - User: user initiated
+    - System: system initiated
+    - Real-time: real-time component initiated
+    - IOAV: IE Downloads and Outlook Express Attachments initiated
+    - NIS: Network inspection system
+    - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+    - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
+    - Remote attestation
+ - Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well. UAC
+ - User: <Domain>\<User>
+ - Process Name: <Process in the PID>
+ - Action: <Action>, for example:
+    - Clean: The resource was cleaned
+    - Quarantine: The resource was quarantined
+    - Remove: The resource was deleted
+    - Allow: The resource was allowed to execute/exist
+    - User defined: User-defined action that is normally one from this list of actions that the user has specified
+    - No action: No action
+    - Block: The resource was blocked from executing
+ - Action Status: <Description of additional actions>
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware Engine version>
+
+User action:	The Microsoft Defender Antivirus client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant User action steps below.
+  
+  1. Action: Remove
+     User action: Update the definitions then verify that the removal was successful.
+     
+  2. Action: Clean
+     User action: Update the definitions then verify that the remediation was successful.
+     
+  3. Action: Quarantine
+     User action: Update the definitions and verify that the user has permission to access the necessary resources.
+     
+  4. Action: Allow
+     User action: Verify that the user has permission to access the necessary resources.
+     
+ If this event persists:
+  1. Run the scan again.
+  2. If it fails in the same way, go to the [Microsoft Support site](https://support.microsoft.com/), enter the error number in the **Search** box to look for the error code.
+  3. Contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
 
 ### Event ID: 
 
