@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/31/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -55,3 +55,7 @@ The following table describes the different status states for jobs.
 |Successful|The job was successfully completed. The date and time that the job completed is displayed in the **Completed** column on the **Jobs** tab.|
 |Partially successful|The job was successful. This status is typically returned when the job didn't find any partially indexed data (also called *unindexed data*) in some of the custodian data sources.|
 |Failed|The job failed.  You should attempt to rerun the action that triggered the job. If the job fails a second time, we recommend that you contact Microsoft Support and provide the support information from the job.|
+
+## Job data retention
+
+Data retention for log information for all jobs is retained for up to 29 days by default.
