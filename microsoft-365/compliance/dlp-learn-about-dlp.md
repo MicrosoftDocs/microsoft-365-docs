@@ -184,9 +184,9 @@ location | include/exclude by|
 > [!NOTE]
 > The conditions and the actions to take are defined in an object called a Rule.
 
-<!--## Create a DLP policy
+## Create and deploy a DLP policy
 
-All DLP policies are created and maintained in the Microsoft Purview center. See, INSERT LINK TO ARTICLE THAT WILL START WALKING THEM THROUGH THE POLICY CREATION PROCEDURES for more information.-->
+All DLP policies are created and maintained in the Microsoft Purview center. See, [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) for more information.
 
 After you create a DLP policy in the compliance portal, it's stored in a central policy store, and then synced to the various content sources, including:
 

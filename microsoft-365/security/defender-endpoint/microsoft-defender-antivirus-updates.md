@@ -3,11 +3,8 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 03/13/2023
+ms.date: 03/27/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -75,13 +72,42 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 
 ## Monthly platform and engine versions
 
-For information how to update or install the platform update, see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
-
 All our updates contain
 
 - Performance improvements
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
+
+### February-2023 (Platform: 4.18.2302.7 | Engine: 1.1.20100.6)
+
+- Security intelligence update version: **1.385.68.0**
+- Release date: **March 27, 2023**
+- Platform: **4.18.2302.7**
+- Engine: **1.1.20100.6**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
+- Fixed threat DefaultAction outputs in Get-MpPreference 
+- Improved Defender performance during file copy operations for .NET applications 
+- Fixed [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) app block warn feature 
+- Added opt-in feature to allow users seeing exclusions 
+- Fixed [ASR](overview-attack-surface-reduction.md) warn policy 
+- Increased maximum size for quarantine archive file to 4 GB 
+- Improvements to threat remediation logic 
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) hardening for temporary exclusions 
+- Fixed time zone calculation in [Defender PowerShell](/powershell/module/defender) module 
+- Fixed merging logic for exclusions in Defender PowerShell module 
+- Improvements in the [contextual exclusions](/microsoft-365/security/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus) syntax
+- Improved scheduled scan robustness
+- Improved serviceability for internal database files
+- Enhanced certificate indicators determination logic
+- Enhanced memory usage
+
+#### Known Issues
+
+- None  
 
 ### January-2023 (Platform: 4.18.2301.6 | Engine: 1.1.20000.2)
 
@@ -123,32 +149,6 @@ All our updates contain
 
 - None  
 
-### October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)
-
-- Security intelligence update version: **1.379.4.0**
-- Release date: **November 10, 2022**
-- Platform: **4.18.2210.6**
-- Engine: **1.1.19800.4**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Addressed a quality issue that could result in poor responsiveness/usability
-- Improved hang detection in antivirus engine 
-- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capability 
-- Changed threat & vulnerability management (TVM)-warn and TVM-block action to block to resolve Intune's report 
-- Removed Clean Action from Intune policy for `ThreadSeverityDefaultAction` 
-- Added randomize scheduled task times configuration to Intune policy 
-- Added manageability for `DisableSMTPParsing` network protection 
-- Added improvement for behavior monitoring 
-- Normalized date format for event 1151 for Windows Defender 
-- Fixed a deadlock related to updating `\device\cdrom*` exclusions upon mounting a cdrom drive under certain conditions 
-- Improved PID information for threat detection 
-
-#### Known Issues
-
-- None  
-
 ### Previous version updates: Technical upgrade support only
 
 After a new package version is released, support for the previous two versions is reduced to technical support only. For more information about previous versions, see [Microsoft Defender Antivirus updates: Previous versions for technical upgrade support](msda-updates-previous-versions-technical-upgrade-support.md).
@@ -159,11 +159,11 @@ Platform and engine updates are provided on a monthly cadence. To be fully suppo
 
 - **Security and Critical Updates servicing phase** - When running the latest platform version, you're eligible to receive both Security and Critical updates to the anti-malware platform.
 
-- **Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only. Platform versions older than N-2 will no longer be supported.*
+- **Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only. Platform versions older than N-2 are no longer supported.*
 
 \* Technical support continues to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.
 
-During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft's managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (*).
+During the technical support (only) phase, commercially reasonable support incidents are provided through Microsoft Customer Service & Support and Microsoft's managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a nonsecurity update, or requires a security update, customers are asked to upgrade to the latest platform version or an intermediate update (*).
 
 
 > [!NOTE]
@@ -172,10 +172,14 @@ During the technical support (only) phase, commercially reasonable support incid
 ## How to roll back an update
 
 In the unfortunate event that you encounter issues after a platform update, you can roll back to the previous or the inbox version of the Microsoft Defender platform.  
-- To roll back to the previous version, run the following command:<br>
-`"%programdata%\Microsoft\Windows Defender\Platform\<version>\MpCmdRun.exe" -RevertPlatform`
-- To roll back this update to the version shipped with the Operating System ("%ProgramFiles%\Windows Defender")<br>
-`"%programdata%\Microsoft\Windows Defender\Platform\<version>\MpCmdRun.exe" -ResetPlatform`
+
+- To roll back to the previous version, run the following command:
+
+   `"%programdata%\Microsoft\Windows Defender\Platform\<version>\MpCmdRun.exe" -RevertPlatform`
+
+- To roll back this update to the version shipped with the Operating System ("%ProgramFiles%\Windows Defender")
+
+   `"%programdata%\Microsoft\Windows Defender\Platform\<version>\MpCmdRun.exe" -ResetPlatform`
 
 ## Platform version included with Windows 10 releases
 
@@ -196,7 +200,7 @@ For Windows 10 release information, see the [Windows lifecycle fact sheet](https
 
 ## Updates for Deployment Image Servicing and Management (DISM)
 
-We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, Windows Server 2022, and Windows Server 2016 OS installation images with the latest antivirus and antimalware updates. Keeping your OS installation images up to date helps avoid a gap in protection.
+We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, Windows Server 2022, Windows Server 2016, and Windows Server 2012 R2 OS installation images with the latest antivirus and antimalware updates. Keeping your OS installation images up to date helps avoid a gap in protection.
 
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
@@ -702,7 +706,7 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 | Article | Description  |
 |:---|:---|
-|[Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Review antimalware update packages for your OS installation images (WIM and VHD files). Get Microsoft Defender Antivirus updates for Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, Windows Server 2022, and Windows Server 2016 installation images.  |
+|[Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Review antimalware update packages for your OS installation images (WIM and VHD files). Get Microsoft Defender Antivirus updates for Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, Windows Server 2022, Windows Server 2016, and Windows Server 2012 R2 installation images.  |
 |[Manage how protection updates are downloaded and applied](manage-protection-updates-microsoft-defender-antivirus.md) | Protection updates can be delivered through many sources. |
 |[Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) | You can schedule when protection updates should be downloaded. |
 |[Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md) | If an endpoint misses an update or scheduled scan, you can force an update or scan the next time a user signs in. |
