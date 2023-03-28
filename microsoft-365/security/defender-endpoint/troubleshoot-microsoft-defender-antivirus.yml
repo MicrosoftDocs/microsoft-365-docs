@@ -170,11 +170,7 @@ Description:
  - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
  - Error Description: <Error description> Description of the error.
 
-User action:	
-
-The antivirus client encountered an error, and the current scan has stopped. The scan might fail due to a client-side issue. This event record includes the scan ID, type of scan (Microsoft Defender Antivirus, antispyware, antimalware), scan parameters, the user that started the scan, the error code, and a description of the error. 
-
-To troubleshoot this event:
+User action: The antivirus client encountered an error, and the current scan has stopped. The scan might fail due to a client-side issue. This event record includes the scan ID, type of scan (Microsoft Defender Antivirus, antispyware, antimalware), scan parameters, the user that started the scan, the error code, and a description of the error. To troubleshoot this event:
 
  1. Run the scan again.
  2. If it fails in the same way, go to the [Microsoft Support site](https://support.microsoft.com/), enter the error number in the Search box to look for the error code.
@@ -618,7 +614,7 @@ Description: Microsoft Defender Antivirus has encountered a non-critical error w
  - Signature Version: <Definition version>
  - Engine Version: <Antimalware Engine version>
  
-User action:	No action is necessary. Microsoft Defender Antivirus failed to complete a task related to the malware remediation. This is not a critical failure.
+User action: No action is necessary. Microsoft Defender Antivirus failed to complete a task related to the malware remediation. This is not a critical failure.
 
 ### Event ID: 1119
 
@@ -675,7 +671,7 @@ Description: Microsoft Defender Antivirus has encountered a critical error when 
  - Signature Version: <Definition version>
  - Engine Version: <Antimalware Engine version>
 
-User action:	The Microsoft Defender Antivirus client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant User action steps below.
+User action: The Microsoft Defender Antivirus client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant User action steps below.
   
   1. Action: Remove
      User action: Update the definitions then verify that the removal was successful.
@@ -694,644 +690,630 @@ User action:	The Microsoft Defender Antivirus client encountered this error due 
   2. If it fails in the same way, go to the [Microsoft Support site](https://support.microsoft.com/), enter the error number in the **Search** box to look for the error code.
   3. Contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
 
-### Event ID: 
+### Event ID: 1120
+
+Symbolic name: MALWAREPROTECTION_THREAT_HASH
+
+Message: Microsoft Defender Antivirus has deduced the hashes for a threat resource.
+
+Description: Microsoft Defender Antivirus client is up and running in a healthy state.
+
+ - Current Platform Version: <Current platform version>
+ - Threat Resource Path: <Path>
+ - Hashes: <Hashes>
+
+Note: This event will only be logged if the following policy is set: ThreatFileHashLogging unsigned.
+
+### Event ID: 1121
+
+Symbolic name: (TBD)
+
+Message: Event when an attack surface reduction rule fires in block mode.
+
+Description: TBD.
+
+ - Current Platform Version: <Current platform version>
+ - Threat Resource Path: <Path>
+ - Hashes: <Hashes>
+
+Note: whatgoeshere?: TBD.
+
+### Event ID: 1127
+
+Symbolic name: MALWAREPROTECTION_FOLDER_GUARD_SECTOR_BLOCK
+
+Message: Controlled Folder Access(CFA) blocked an untrusted process from making changes to the memory.
+
+Description: Controlled Folder Access has blocked an untrusted process from potentially modifying disk sectors. For more information about the event record, see the following:
+
+ - EventID: <EventID>, for example: 1127
+ - Version: <Version>, for example: 0
+ - Level: <Level>, for example: win:Warning
+ - TimeCreated: <SystemTime>, time when the event was created
+ - EventRecordID: <EventRecordID>, index number of the event in the event log
+ - Execution ProcessID: <Execution ProcessID>, process that generated the event
+ - Channel: <Event channel>, for example: Microsoft-Windows-Windows Defender/Operational
+ - Computer: <Computer name>
+ - Security UserID: <Security UserID>
+ - Product Name: <Product Name>, for example: Microsoft Defender Antivirus
+ - Product Version: <Product Version>
+ - Detection Time: <Detection Time>, time when CFA blocked an untrusted process
+ - User: <Domain>\<User>
+ - Path: <Device name>, name of the device or disk that an untrusted process accessed for modification
+ - Process Name: <Process path>, the process path name that CFA blocked from accessing the device or disk for modification
+ - Security Intelligence Version: <Security intelligence version>
+ - Engine Version: <Antimalware Engine version>
+
+User action:	The user can add the blocked process to the Allowed Process list for CFA, using Powershell or Windows Security Center.
+
+### Event ID: 1150
+
+Symbolic name: MALWAREPROTECTION_SERVICE_HEALTHY
+
+Message: If your antimalware platform reports status to a monitoring platform, this event indicates that the antimalware platform is running and in a healthy state.
+
+Description: Microsoft Defender Antivirus client is up and running in a healthy state.\
+
+ - Platform Version: <Current platform version>
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware Engine version>
+
+User action:	No action is necessary. The Microsoft Defender Antivirus client is in a healthy state. This event is reported on an hourly basis.
+
+### Event ID: 1151
+
+Symbolic name: MALWAREPROTECTION_SERVICE_HEALTH_REPORT
+
+Message: Endpoint Protection client health report (time in UTC)
+
+Description: Antivirus client health report.
+
+ - Platform Version: <Current platform version>
+ - Engine Version: <Antimalware Engine version>
+ - Network Realtime Inspection engine version: <Network Realtime Inspection engine version>
+ - Antivirus signature version: <Antivirus signature version>
+ - Antispyware signature version: <Antispyware signature version>
+ - Network Realtime Inspection signature version: <Network Realtime Inspection signature version>
+ - RTP state: <Realtime protection state> (Enabled or Disabled)
+ - OA state: <On Access state> (Enabled or Disabled)
+ - IOAV state: <IE Downloads and Outlook Express Attachments state> (Enabled or Disabled)
+ - BM state: <Behavior Monitoring state> (Enabled or Disabled)
+ - Antivirus signature age: <Antivirus signature age> (in days)
+ - Antispyware signature age: <Antispyware signature age> (in days)
+ - Last quick scan age: <Last quick scan age> (in days)
+ - Last full scan age: <Last full scan age> (in days)
+ - Antivirus signature creation time: ?<Antivirus signature creation time>
+ - Antispyware signature creation time: ?<Antispyware signature creation time>
+ - Last quick scan start time: ?<Last quick scan start time>
+ - Last quick scan end time: ?<Last quick scan end time>
+ - Last quick scan source: <Last quick scan source> (0 = scan didn't run, 1 = user initiated, 2 = system initiated)
+ - Last full scan start time: ?<Last full scan start time>
+ - Last full scan end time: ?<Last full scan end time>
+ - Last full scan source: <Last full scan source> (0 = scan didn't run, 1 = user initiated, 2 = system initiated)
+ - Product status: For internal troubleshooting
+
+### Event ID: 2000
+
+Symbolic name: MALWAREPROTECTION_SIGNATURE_UPDATED
+
+Message: The antimalware definitions updated successfully.
+
+Description: Antivirus signature version has been updated.
+
+ - Current Signature Version: <Current signature version>
+ - Previous Signature Version: <Previous signature version>
+ - Signature Type: <Signature type>, for example:
+    - Antivirus
+    - Antispyware
+    - Antimalware
+    - Network Inspection System
+ - Update Type: <Update type>, either Full or Delta.
+ - User: <Domain>\<User>
+ - Current Engine Version: <Current engine version>
+ - Previous Engine Version: <Previous engine version>
+ 
+ User action:	No action is necessary. The Microsoft Defender Antivirus client is in a healthy state. This event is reported when signatures are successfully updated.
+
+### Event ID: 2001
+
+Symbolic name: MALWAREPROTECTION_SIGNATURE_UPDATE_FAILED
+
+Message: The security intelligence update failed.
+
+Description: Microsoft Defender Antivirus has encountered an error trying to update signatures.
+
+ - New security intelligence version: <New version number>
+ - Previous security intelligence version: <Previous version>
+ - Update Source: <Update source>, for example:
+    - Security intelligence update folder
+    - Internal security intelligence update server
+    - Microsoft Update Server
+    - File share
+    - Microsoft Malware Protection Center (MMPC)
+ - Update Stage: <Update stage>, for example:
+    - Search
+    - Download
+    - Install
+ - Source Path: File share name for Universal Naming Convention (UNC), server name for Windows Server Update Services (WSUS)/Microsoft Update/ADL.
+ - Signature Type: <Signature type>, for example:
+    - Antivirus
+    - Antispyware
+    - Antimalware
+    - Network Inspection System
+ - Update Type: <Update type>, either Full or Delta.
+ - User: <Domain>\<User>
+ - Current Engine Version: <Current engine version>
+ - Previous Engine Version: <Previous engine version>
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+ 
+User action:	This error occurs when there is a problem updating definitions. To troubleshoot this event:
+
+  1. [Update definitions](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates) and force a rescan directly on the endpoint.
+  2. Review the entries in the %Windir%\WindowsUpdate.log file for more information about this error.
+  3. Contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+
+### Event ID: 2002
+
+Symbolic name: MALWAREPROTECTION_ENGINE_UPDATED 
+
+Message: The antimalware engine updated successfully.
+
+Description: Microsoft Defender Antivirus engine version has been updated.
+
+ - Current Engine Version: <Current engine version>
+ - Previous Engine Version: <Previous engine version>
+ - Engine Type: <Engine type>, either antimalware engine or Network Inspection System engine.
+ - User: <Domain>\<User>
+
+User action:	No action is necessary. The Microsoft Defender Antivirus client is in a healthy state. This event is reported when the antimalware engine is successfully updated.
+
+### Event ID: 2003
+
+Symbolic name: MALWAREPROTECTION_ENGINE_UPDATE_FAILED
+
+Message: The antimalware engine update failed.
+
+Description: Microsoft Defender Antivirus has encountered an error trying to update the engine.
+
+ - New Engine Version:
+ - Previous Engine Version: <Previous engine version>
+ - Engine Type: <Engine type>, either antimalware engine or Network Inspection System engine.
+ - User: <Domain>\<User>
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+
+User action:	The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update. To troubleshoot this event:
+
+  1. [Update definitions](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates) and force a rescan directly on the endpoint.
+  2. Contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+
+### Event ID: 2004 
+
+Symbolic name: MALWAREPROTECTION_SIGNATURE_REVERSION
+
+Message: There was a problem loading antimalware definitions. The antimalware engine will attempt to load the last-known good set of definitions.
+
+Description: Microsoft Defender Antivirus has encountered an error trying to load signatures and will attempt reverting back to a known-good set of signatures.
+
+ - Signatures Attempted:
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+ - Signature Version: <Definition version>
+ - Engine Version: <Antimalware engine version>
+
+User action: The Microsoft Defender Antivirus client attempted to download and install the latest definitions file and failed. This error can occur when the client encounters an error while trying to load the definitions, or if the file is corrupt. Microsoft Defender Antivirus will attempt to revert back to a known-good set of definitions. To troubleshoot this event:
+
+  1. Restart the computer and try again.
+  2. Download the latest definitions from the [Microsoft Security Intelligence site](https://www.microsoft.com/wdsi). 
+
+     Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
+  3. Contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+
+### Event ID: 2005
+
+Symbolic name: MALWAREPROTECTION_ENGINE_UPDATE_PLATFORMOUTOFDATE
+
+Message: The antimalware engine failed to load because the antimalware platform is out of date. The antimalware platform will load the last-known good antimalware engine and attempt to update.
+
+Description: Microsoft Defender Antivirus could not load antimalware engine because current platform version is not supported. Microsoft Defender Antivirus will revert back to the last known-good engine and a platform update will be attempted.
+
+ - Current Platform Version: <Current platform version>
+
+### Event ID: 2006
+
+Symbolic name: MALWAREPROTECTION_PLATFORM_UPDATE_FAILED
+
+Message: The platform update failed.
+
+Description: Microsoft Defender Antivirus has encountered an error trying to update the platform.
+
+ - Current Platform Version: <Current platform version>
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+
+### Event ID: 2007
+
+Symbolic name: MALWAREPROTECTION_PLATFORM_ALMOSTOUTOFDATE
+
+Message: The platform will soon be out of date. Download the latest platform to maintain up-to-date protection.
+
+Description: Microsoft Defender Antivirus will soon require a newer platform version to support future versions of the antimalware engine. Download the latest Microsoft Defender Antivirus platform to maintain the best level of protection available.
+
+ - Current Platform Version: <Current platform version>
+
+### Event ID: 2010
+
+Symbolic name: MALWAREPROTECTION_SIGNATURE_FASTPATH_UPDATED
+
+Message: The antimalware engine used the Dynamic Signature Service to get additional definitions.
+
+Description: Microsoft Defender Antivirus used Dynamic Signature Service to retrieve additional signatures to help protect your machine.
+
+ - Current Signature Version: <Current signature version>
+ - Signature Type: <Signature type>, for example:
+    - Antivirus
+    - Antispyware
+    - Antimalware
+    - Network Inspection System
+ - Current Engine Version: <Current engine version>
+ - Dynamic Signature Type: <Dynamic signature type>, for example:
+    - Version
+    - Timestamp
+    - No limit
+    - Duration
+ - Persistence Path: <Path>
+ - Dynamic Signature Version: <Version number>
+ - Dynamic Signature Compilation Timestamp: <Timestamp>
+ - Persistence Limit Type: <Persistence limit type>, for example:
+    - VDM version
+    - Timestamp
+    - No limit
+ - Persistence Limit: Persistence limit of the fastpath signature.
+
+### Event ID: 2011
+
+Symbolic name: MALWAREPROTECTION_SIGNATURE_FASTPATH_DELETED
+
+Message: The Dynamic Signature Service deleted the out-of-date dynamic definitions.
+
+Change to default behavior:	Change to dynamic signature event reporting default behavior
+
+When a dynamic signature is received by MDE, a 2010 event is reported. However, when the dynamic signature expires or is manually deleted a 2011 event is reported. In some cases, when a new signature is delivered to MDE sometimes hundreds of dynamic signatures will expire at the same time; therefore hundreds of 2011 events are reported. The generation of so many 2011 events can cause a Security information and event management (SIEM) server to become flooded.
+
+To avoid the above situation - starting with platform version 4.18.2207.7 - by default, MDE will now *not* report 2011 events:
+
+  - This new default behavior is controlled by registry entry: **HKLM\SOFTWARE\Microsoft\Windows Defender\Reporting\EnableDynamicSignatureDroppedEventReporting.**
+  - The default value for **EnableDynamicSignatureDroppedEventReporting** is **false**, which means 2011 *events are not reported*. If it's set to true, 2011 *events are reported*.
+  
+Because 2010 signature events are timely distributed sporadically - and will not cause a spike - 2010 signature event behavior is unchanged.
+
+Description: Microsoft Defender Antivirus used Dynamic Signature Service to discard obsolete signatures.
+
+ - Current Signature Version: <Current signature version>
+ - Signature Type: <Signature type>, for example:
+    - Antivirus
+    - Antispyware
+    - Antimalware
+    - Network Inspection System
+ - Current Engine Version: <Current engine version>
+ - Dynamic Signature Type: <Dynamic signature type>, for example:
+    - Version
+    - Timestamp
+    - No limit
+    - Duration
+ - Persistence Path: <Path>
+ - Dynamic Signature Version: <Version number>
+ - Dynamic Signature Compilation Timestamp: <Timestamp>
+ - Removal Reason:
+ - Persistence Limit Type: <Persistence limit type>, for example:
+    - VDM version
+    - Timestamp
+    - No limit
+ - Persistence Limit: Persistence limit of the fastpath signature.
+
+User action:	No action is necessary. The Microsoft Defender Antivirus client is in a healthy state. This event is reported when the Dynamic Signature Service successfully deletes out-of-date dynamic definitions.
+
+### Event ID: 2012
+
+Symbolic name: MALWAREPROTECTION_SIGNATURE_FASTPATH_UPDATE_FAILED
+
+Message: The antimalware engine encountered an error when trying to use the Dynamic Signature Service.
+
+Description: Microsoft Defender Antivirus has encountered an error trying to use Dynamic Signature Service.
+
+ - Current Signature Version: <Current signature version>
+ - Signature Type: <Signature type>, for example:
+    - Antivirus
+    - Antispyware
+    - Antimalware
+    - Network Inspection System
+ - Current Engine Version: <Current engine version>
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+ - Dynamic Signature Type: <Dynamic signature type>, for example:
+    - Version
+    - Timestamp
+    - No limit
+    - Duration
+ - Persistence Path: <Path>
+ - Dynamic Signature Version: <Version number>
+ - Dynamic Signature Compilation Timestamp: <Timestamp>
+ - Persistence Limit Type: <Persistence limit type>, for example:
+    - VDM version
+    - Timestamp
+    - No limit
+ - Persistence Limit: Persistence limit of the fastpath signature.
+
+User action:	Check your Internet connectivity settings.
+
+### Event ID: 2013
+
+Symbolic name: MALWAREPROTECTION_SIGNATURE_FASTPATH_DELETED_ALL
+
+Message: The Dynamic Signature Service deleted all dynamic definitions.
+
+Description: Microsoft Defender Antivirus discarded all *Dynamic Signature Service* signatures.
+Current Signature Version: <Current signature version>
+
+### Event ID: 2020
+
+Symbolic name: MALWAREPROTECTION_CLOUD_CLEAN_RESTORE_FILE_DOWNLOADED
+
+Message: The antimalware engine downloaded a clean file.
+
+Description: Microsoft Defender Antivirus downloaded a clean file.
+
+ - Filename: <File name> Name of the file.
+ - Current Signature Version: <Current signature version>
+ - Current Engine Version: <Current engine version>
+
+### Event ID: 2021
+
+Symbolic name: MALWAREPROTECTION_CLOUD_CLEAN_RESTORE_FILE_DOWNLOAD_FAILED
+
+Message: The antimalware engine failed to download a clean file.
+
+Description: Microsoft Defender Antivirus has encountered an error trying to download a clean file.
+
+ - Filename: <File name> Name of the file.
+ - Current Signature Version: <Current signature version>
+ - Current Engine Version: <Current engine version>
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+
+User action: Check your Internet connectivity settings. The Microsoft Defender Antivirus client encountered an error when using the Dynamic Signature Service to download the latest definitions to a specific threat. This error is likely caused by a network connectivity issue.
+
+### Event ID: 2030
+
+Symbolic name: MALWAREPROTECTION_OFFLINE_SCAN_INSTALLED
+
+Message: The antimalware engine was downloaded and is configured to run offline on the next system restart.
+
+Description: Microsoft Defender Antivirus downloaded and configured offline antivirus to run on the next reboot.
+
+### Event ID: 2031
+
+Symbolic name: MALWAREPROTECTION_OFFLINE_SCAN_INSTALL_FAILED
+
+Message: The antimalware engine was unable to download and configure an offline scan.
+
+Description: Microsoft Defender Antivirus has encountered an error trying to download and configure offline antivirus.
+
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+
+### Event ID: 2040
+
+Symbolic name: MALWAREPROTECTION_OS_EXPIRING
+
+Message: Antimalware support for this operating system version will soon end. 
+
+Description: The support for your operating system will expire shortly. Running Microsoft Defender Antivirus on an out of support operating system is not an adequate solution to protect against threats.
+
+### Event ID: 2041
+
+Symbolic name: MALWAREPROTECTION_OS_EOL
+
+Message: Antimalware support for this operating system has ended. You must upgrade the operating system for continued support.
+
+Description: The support for your operating system has expired. Running Microsoft Defender Antivirus on an out of support operating system is not an adequate solution to protect against threats.
+
+### Event ID: 2042
+
+Symbolic name: MALWAREPROTECTION_PROTECTION_EOL
+
+Message: The antimalware engine no longer supports this operating system, and is no longer protecting your system from malware.
+
+Description: The support for your operating system has expired. Microsoft Defender Antivirus is no longer supported on your operating system, has stopped functioning, and is not protecting against malware threats.
+
+### Event ID: 3002
+
+Symbolic name: MALWAREPROTECTION_RTP_FEATURE_FAILURE
+
+Message: Real-time protection encountered an error and failed.
+
+Description: Microsoft Defender Antivirus Real-Time Protection feature has encountered an error and failed.
+
+ - Feature: <Feature>, for example:
+    - On Access
+    - Internet Explorer downloads and Microsoft Outlook Express attachments
+    - Behavior monitoring
+    - Network Inspection System
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
+ - Reason: The reason Microsoft Defender Antivirus real-time protection has restarted a feature.
+
+User action:	You should restart the system then run a full scan because it's possible the system was not protected for some time. The Microsoft Defender Antivirus client's real-time protection feature encountered an error because one of the services failed to start. If it is followed by a 3007 event ID, the failure was temporary and the antimalware client recovered from the failure.
+
+### Event ID: 3007
+
+Symbolic name: MALWAREPROTECTION_RTP_FEATURE_RECOVERED
+
+Message: Real-time protection recovered from a failure. We recommend running a full system scan when you see this error. 
+
+Description: Microsoft Defender Antivirus Real-time Protection has restarted a feature. It is recommended that you run a full system scan to detect any items that may have been missed while this agent was down.
+
+ - Feature: <Feature>, for example:
+    - On Access
+    - IE downloads and Outlook Express attachments
+    - Behavior monitoring
+    - Network Inspection System
+ - Reason: The reason Microsoft Defender Antivirus real-time protection has restarted a feature.
+
+User action:	The real-time protection feature has restarted. If this event happens again, contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+
+### Event ID: 5000
+
+Symbolic name: MALWAREPROTECTION_RTP_ENABLED
+
+Message: Real-time protection is enabled. 
+
+Description: Microsoft Defender Antivirus real-time protection scanning for malware and other potentially unwanted software was enabled.
+
+### Event ID: 5001
+
+Symbolic name: MALWAREPROTECTION_RTP_DISABLED
+
+Message: Real-time protection is disabled.
+
+Description: Microsoft Defender Antivirus real-time protection scanning for malware and other potentially unwanted software was disabled.
+
+### Event ID: 5004
+
+Symbolic name: MALWAREPROTECTION_RTP_FEATURE_CONFIGURED
+
+Message: The real-time protection configuration changed.
+
+Description: Microsoft Defender Antivirus real-time protection feature configuration has changed.
+
+ - Feature: <Feature>, for example:
+    - On Access
+    - IE downloads and Outlook Express attachments
+    - Behavior monitoring
+    - Network Inspection System
+Configuration:
+
+### Event ID: 5007
+
+Symbolic name: MALWAREPROTECTION_CONFIG_CHANGED
+
+Message: The antimalware platform configuration changed.
+
+Description: Microsoft Defender Antivirus configuration has changed. If this is an unexpected event, you should review the settings as this may be the result of malware.
+
+ - Old value: <Old value number> Old antivirus configuration value.
+ - New value: <New value number> New antivirus configuration value.
+
+### Event ID: 5008
+
+Symbolic name: MALWAREPROTECTION_ENGINE_FAILURE
+
+Message: The antimalware engine encountered an error and failed.
+
+Description: Microsoft Defender Antivirus engine has been terminated due to an unexpected error.
+ - Failure Type: <Failure type>, for example: Crash or Hang
+ - Exception Code: <Error code>
+ - Resource: <Resource>
+
+User action:	To troubleshoot this event:
+
+  1. Try to restart the service.
+  
+      - For antimalware, antivirus and spyware, at an elevated command prompt, type **net stop msmpsvc**, and then type **net start msmpsvc** to restart the antimalware engine.
+      
+      - For the *Network Inspection System*, at an elevated command prompt, type *net start nissrv*, and then type *net start nissrv* to restart the *Network Inspection System* engine by using the NiSSRV.exe file.
+      
+  2. If it fails in the same way, look up the error code by accessing the [Microsoft Support Site](https://support.microsoft.com/) and entering the error number in the Search box, and contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+   
+User action:	The Microsoft Defender Antivirus client engine stopped due to an unexpected error. To troubleshoot this event:
+
+  1. Run the scan again.
+  2. If it fails in the same way, go to the [Microsoft Support site](https://support.microsoft.com/), enter the error number in the **Search** box to look for the error code.
+  3. Contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+
+### Event ID: 5009
+
+Symbolic name: MALWAREPROTECTION_ANTISPYWARE_ENABLED
+
+Message: Scanning for malware and other potentially unwanted software is enabled.
+
+Description: Microsoft Defender Antivirus scanning for malware and other potentially unwanted software has been enabled.
+
+### Event ID: 5010
+
+Symbolic name: MALWAREPROTECTION_ANTISPYWARE_DISABLED
+
+Message: Scanning for malware and other potentially unwanted software is disabled.
+
+Description: Microsoft Defender Antivirus scanning for malware and other potentially unwanted software is disabled.
+
+### Event ID: 5011
+
+Symbolic name: MALWAREPROTECTION_ANTIVIRUS_ENABLED
+
+Message: Scanning for viruses is enabled.
+
+Description: Microsoft Defender Antivirus scanning for viruses has been enabled.
+
+### Event ID: 5012
+
+Symbolic name: MALWAREPROTECTION_ANTIVIRUS_DISABLED
+
+Message: Scanning for viruses is disabled.
+
+Description: Microsoft Defender Antivirus scanning for viruses is disabled.
+
+### Event ID: 5013
 
 Symbolic name: 
 
-Message: 
+Message: Tamper protection blocked a change to Microsoft Defender Antivirus. 
 
-Description:
+Description: If Tamper protection is enabled then, any attempt to change any of Defender's settings is blocked. Event ID 5013 is generated and states which setting change was blocked.
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+### Event ID: 5100
 
-### Event ID: 
+Symbolic name: MALWAREPROTECTION_EXPIRATION_WARNING_STATE
 
-Symbolic name: 
+Message: The antimalware platform will expire soon.
 
-Message: 
+Description: Microsoft Defender Antivirus has entered a grace period and will soon expire. After expiration, this program will disable protection against viruses, spyware, and other potentially unwanted software.
 
-Description:
+ - Expiration Reason: The reason Microsoft Defender Antivirus will expire.
+ - Expiration Date: The date Microsoft Defender Antivirus will expire.
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+### Event ID: 5101
 
-### Event ID: 
+Symbolic name: MALWAREPROTECTION_DISABLED_EXPIRED_STATE
 
-Symbolic name: 
+Message: The antimalware platform is expired.
 
-Message: 
+Description: Microsoft Defender Antivirus grace period has expired. Protection against viruses, spyware, and other potentially unwanted software is disabled.
 
-Description:
+ - Expiration Reason:
+ - Expiration Date:
+ - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+ - Error Description: <Error description> Description of the error.
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+## Microsoft Defender Antivirus client error codes
 
-### Event ID: 
+If Microsoft Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update. This section provides the following information about Microsoft Defender Antivirus client errors.
 
-Symbolic name: 
+  - The error code
+  - The possible reason for the error
+  - Advice on what to do now
 
-Message: 
+Use the information in these tables to help troubleshoot Microsoft Defender Antivirus error codes.
 
-Description:
+### Error code: 0x80508007
 
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
+Message	ERR_MP_NO_MEMORY
 
-### Event ID: 
+Possible reason:	This error indicates that you might have run out of memory.
 
-Symbolic name: 
+Resolution:	
 
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-### Event ID: 
-
-Symbolic name: 
-
-Message: 
-
-Description:
-
-- Scan ID: 
-- Scan Type: 
-   - 
-- Scan Parameters: 
-   - 
-- Scan Resources: 
-- User:
-
-
+  1. Check the available memory on your device.
+  2. Close any unused applications that are running to free up memory on your device.
+  3. Restart the device and run the scan again.
