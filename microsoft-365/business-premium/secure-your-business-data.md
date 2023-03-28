@@ -32,7 +32,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn best pratices to protect your business from ransomware, phishing, and malicious URLs or attachments with Microsoft 365 for business."
+description: "Learn best practices to protect your business from ransomware, phishing, and malicious URLs or attachments with Microsoft 365 for business."
 ---
 
 # Secure your business data with Microsoft 365
