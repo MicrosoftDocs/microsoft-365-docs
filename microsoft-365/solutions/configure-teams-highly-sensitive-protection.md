@@ -31,7 +31,7 @@ description: "Learn how to deploy teams with protection for highly sensitive dat
 
 In this article, we look at setting up a team for a highly sensitive level of protection. Be sure you've completed the steps in [Deploy teams with baseline protection](configure-teams-baseline-protection.md) before following the steps in this article.
 
-For this tier of protection, we create a sensitivity label that can be used across your organization for highly sensitive teams and files. Only members of your organization and guests that you have specified will be able to decrypt files that use this label. If you need to further isolate permissions so that only members of a specific team can decrypt files, see  [Deploy a team with security isolation](secure-teams-security-isolation.md).
+For this tier of protection, we create a sensitivity label that can be used across your organization for highly sensitive teams and files. Only members of your organization and guests that you have specified will be able to decrypt files that use this label.
 
 The highly sensitive tier offers the following additional protections over the baseline tier:
 
