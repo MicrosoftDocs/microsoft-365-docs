@@ -41,9 +41,9 @@ You can set tamper protection in the following modes:
 
 |Topic|Description|
 |---|---|
-|Disabled|Tamper protection is completely off (this is the default mode after installation)|
-|Audit|Tampering operations are logged, but not blocked|
-|Block|Tamper protection is on, tampering operations are blocked|
+|Disabled|Tamper protection is completely off.|
+|Audit|Tampering operations are logged, but not blocked. This is the default mode after installation.|
+|Block|Tamper protection is on; tampering operations are blocked.|
 
 When tamper protection is set to audit or block mode, you can expect the following outcomes:
 
@@ -147,7 +147,7 @@ full_disk_access_enabled                    : true
 
 ### Manual configuration
 
-Use the following command:
+1. Use the following command:
 
    ```console
 sudo mdatp config tamper-protection enforcement-level --value block
