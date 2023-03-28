@@ -124,6 +124,28 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 - /opt/*
 - /Users/*/Library/Application Support/Microsoft/Teams/*
 
+### Network share coverage and exclusions (preview)
+
+> [!IMPORTANT]
+> If you want to use Network share coverage and exclusions, you have to register your tenant at [Network share coverage](https://aka.ms/networkfileshares-edlp).
+
+**Network share coverage and exclusions (preview)** extends endpoint DLP policies and actions to new and edited files on network shares and mapped network drives. If [just in time protection (preview)](endpoint-dlp-learn-about.md#just-in-time-protection-preview) is also enabled, it will also be extended to cover network shares and mapped drives when you enable network share coverage and exclusions. If you want to exclude a specific network path for all monitored devices, add the path value in **Exclude these network share paths**.
+
+|Network share coverage and exclusions (preview) |Just in time protection (preview) |Resultant behavior  |
+|---------|---------|---------|
+|Enabled     |Disabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to.  [Devices actions](dlp-policy-reference.md#devices-actions)        |
+|Disabled    |Enabled         |- Just in time protection is applied only to the files that are on storage devices that are local to the endpoint. |
+|Enabled     |Enabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to. [Devices actions](dlp-policy-reference.md#devices-actions) </br>- Just in time protection is applied to all the network shares and mapped drives that the device is connected to.         |
+
+
+**Network share coverage and exclusions** complements [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions).
+
+|Network share coverage and exclusions|DLP on-premises repositories|Resultant behavior|
+|---------|---------|---------|
+|Enabled| Disabled|- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to. [Devices actions](dlp-policy-reference.md#devices-actions)|
+|Disabled|Enabled|- Policies that are scoped to On-premises repositories can enforce protective actions on on-premises data-at-rest in file shares and SharePoint document libraries and folders.  [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions)|
+|Enabled | Enabled|- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to.  [Devices actions](dlp-policy-reference.md#devices-actions)</br>- Policies that are scoped to On-premises repositories can enforce protective actions on on-premises data-at-rest in file shares and SharePoint document libraries and folders. [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions)  
+
 ### Restricted apps and app groups
 
 #### Restricted apps
