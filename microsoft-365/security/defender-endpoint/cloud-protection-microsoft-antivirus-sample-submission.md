@@ -53,35 +53,35 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
 
 4. Advanced cloud-based protection is provided for cases when Microsoft Defender Antivirus running on the endpoint needs more intelligence to verify the intent of a suspicious file.
 
-   1. In the event Microsoft Defender Antivirus cannot make a clear determination, file metadata is sent to the cloud protection service. Often within milliseconds, the cloud protection service can determine based on the metadata as to whether the file is malicious or not a threat.  
+   1. In the event Microsoft Defender Antivirus can't make a clear determination, file metadata is sent to the cloud protection service. Often within milliseconds, the cloud protection service can determine based on the metadata as to whether the file is malicious or not a threat.  
 
-      - The cloud query of file metadata can be a result of behavior, mark of the web, or other characteristics where a clear verdict is not determined.
-      - A small metadata payload is sent, with the goal of reaching a verdict of malware or not a threat. The metadata does not include personally identifiable information (PII). Information such as filenames, are hashed.
-      - Can be synchronous or asynchronous. For synchronous, the file will not open until the cloud renders a verdict. For asynchronous, the file will open while cloud protection performs its analysis.
+      - The cloud query of file metadata can be a result of behavior, mark of the web, or other characteristics where a clear verdict isn't determined.
+      - A small metadata payload is sent, with the goal of reaching a verdict of malware or not a threat. The metadata doesn't include personally identifiable information (PII). Information such as filenames, are hashed.
+      - Can be synchronous or asynchronous. For synchronous, the file won't open until the cloud renders a verdict. For asynchronous, the file opens while cloud protection performs its analysis.
       - Metadata can include PE attributes, static file attributes, dynamic and contextual attributes, and more (see [Examples of metadata sent to the cloud protection service](#examples-of-metadata-sent-to-the-cloud-protection-service)).
 
-   2. After examining the metadata, if Microsoft Defender Antivirus cloud protection cannot reach a conclusive verdict, it can request a sample of the file for further inspection. This request honors the settings configuration for sample submission:
+   2. After examining the metadata, if Microsoft Defender Antivirus cloud protection can't reach a conclusive verdict, it can request a sample of the file for further inspection. This request honors the settings configuration for sample submission:
 
       1. **Send safe samples automatically** (default)
          - Safe samples are samples considered to not commonly contain PII data like: .bat, .scr, .dll, .exe.
-         - If file is likely to contain PII, the user will get a request to allow file sample submission.
+         - If file is likely to contain PII, the user gets a request to allow file sample submission.
          - This option is the default on Windows, macOS, and Linux.
 
       2. **Always Prompt**
-         - If configured, the user will always be prompted for consent before file submission
+         - If configured, the user is always prompted for consent before file submission
          - This setting isn't available in macOS cloud protection
 
       3. **Send all samples automatically**
-         - If configured, all samples will be sent automatically
+         - If configured, all samples are sent automatically
          - If you would like sample submission to include macros embedded in Word docs, you must choose "Send all samples automatically"
          - This setting isn't available on macOS cloud protection
 
       4. **Do not send**
          - Prevents "block at first sight" based on file sample analysis
-         - "Do not send" is the equivalent to the "Disabled" setting in macOS policy
+         - "Don't send" is the equivalent to the "Disabled" setting in macOS policy
          - Metadata is sent for detections even when sample submission is disabled
 
-   3. After metadata and/or files are submitted to cloud protection, you can use **samples**, **detonation**, or **big data analysis** machine-learning models to reach a verdict. Turning off cloud-delivered protection will limit analysis to only what the client can provide through local machine-learning models, and similar functions.
+   3. After metadata and/or files are submitted to cloud protection, you can use **samples**, **detonation**, or **big data analysis** machine-learning models to reach a verdict. Turning off cloud-delivered protection limits analysis to only what the client can provide through local machine-learning models, and similar functions.
 
 > [!IMPORTANT]
 > [Block at first sight (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) provides detonation and analysis to determine whether a file or process is safe. BAFS can delay the opening of a file momentarily until a verdict is reached. If you disable sample submission, BAFS is also disabled, and file analysis is limited to metadata only. We recommend keeping sample submission and BAFS enabled. To learn more, see [What is "block at first sight"?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)
@@ -131,11 +131,11 @@ For more information, see the following resources:
 
 ## Other file sample submission scenarios
 
-There are two more scenarios where Defender for Endpoint might request a file sample that is not related to the cloud protection at Microsoft Defender Antivirus. These scenarios are described in the following table:
+There are two more scenarios where Defender for Endpoint might request a file sample that isn't related to the cloud protection at Microsoft Defender Antivirus. These scenarios are described in the following table:
 
 | Scenario | Description |
 |:---|:---|
-|Manual file sample collection in the Microsoft 365 Defender portal | When onboarding devices to Defender for Endpoint, you can configure settings for [endpoint detection and response (EDR)](overview-endpoint-detection-response.md). For example, there is a setting to enable sample collections from the device, which can easily be confused with the sample submission settings described in this article. <br/><br/>The EDR setting controls file sample collection from devices when requested through the Microsoft 365 Defender portal, and is subject to the roles and permissions already established. This setting can allow or block file collection from the endpoint for features such as deep analysis in the Microsoft 365 Defender portal. If this setting is not configured, the default is to enable sample collection. <br/><br/>Learn about Defender for Endpoint configuration settings, see: [Onboarding tools and methods for Windows 10 devices in Defender for Endpoint](configure-endpoints.md) |
+|Manual file sample collection in the Microsoft 365 Defender portal | When onboarding devices to Defender for Endpoint, you can configure settings for [endpoint detection and response (EDR)](overview-endpoint-detection-response.md). For example, there's a setting to enable sample collections from the device, which can easily be confused with the sample submission settings described in this article. <br/><br/>The EDR setting controls file sample collection from devices when requested through the Microsoft 365 Defender portal, and is subject to the roles and permissions already established. This setting can allow or block file collection from the endpoint for features such as deep analysis in the Microsoft 365 Defender portal. If this setting isn't configured, the default is to enable sample collection. <br/><br/>Learn about Defender for Endpoint configuration settings, see: [Onboarding tools and methods for Windows 10 devices in Defender for Endpoint](configure-endpoints.md) |
 | Automated investigation and response content analysis | When [automated investigations](automated-investigations.md) are running on devices (when configured to run automatically in response to an alert or manually run), files that are identified as suspicious can be collected from the endpoints for further inspection. If necessary, the file content analysis feature for automated investigations can be disabled in the Microsoft 365 Defender portal. <br/><br/> The file extension names can also be modified to add or remove extensions for other file types that will be automatically submitted during an automated investigation. <br/><br/> To learn more, see [Manage automation file uploads](manage-automation-file-uploads.md). |
 
 > [!TIP]

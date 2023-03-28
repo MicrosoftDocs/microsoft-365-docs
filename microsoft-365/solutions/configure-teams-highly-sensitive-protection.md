@@ -75,7 +75,7 @@ To add an authentication context
 
 4. Click **Save**.
 
-Next, create a conditional access policy that applies to that authentication context and that requires guests to agree to a terms of use as a condition of access.
+Next, create a conditional access policy that applies to that authentication context and that requires guests to agree to terms of use as a condition of access.
 
 To create a conditional access policy
 1. In [Azure Active Directory Conditional Access](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade), click **New policy**.
@@ -208,7 +208,7 @@ To set a default sensitivity label for a document library
 
 1. From the **Library settings** flyout pane, select **Default sensitivity labels**, and then select the highly sensitive label from the drop-down box.
 
-For more details about how default library labels work, see [Configure a default sensitivity label for a SharePoint document library](/microsoft-365/compliance/sensitivity-labels-sharepoint-default-label).
+For more details about how default library labels work, see [Configure a default sensitivity label for a SharePoint document library](/microsoft-365/compliance/sensitivity-labels-sharepoint-default-label) and [Add a sensitivity label to SharePoint document library](https://support.microsoft.com/office/54b1602b-db0a-4bcb-b9ac-5e20cbc28089).
 
 ## See Also
 
