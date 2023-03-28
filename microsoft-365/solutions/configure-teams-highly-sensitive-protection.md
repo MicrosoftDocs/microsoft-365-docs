@@ -75,7 +75,7 @@ To add an authentication context
 
 4. Click **Save**.
 
-Next, create a conditional access policy that applies to that authentication context and that requires guests to agree to terms of use as a condition of access.
+Next, create a conditional access policy that applies to that authentication context and that requires guests to use multifactor authentication when accessing SharePoint.
 
 To create a conditional access policy
 1. In [Azure Active Directory Conditional Access](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade), click **New policy**.
