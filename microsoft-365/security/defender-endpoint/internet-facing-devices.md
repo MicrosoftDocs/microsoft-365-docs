@@ -30,9 +30,9 @@ ms.date: 03/7/2023
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-As threat actors continuously scan the web to detect exposed devices they can exploit to gain a foothold in internal corporate networks, mapping your organization’s external attack surface is a key part of your security posture management. Devices that can be connected to or are approachable from the outside pose a threat to your organization and internet-facing devices can serve as an easy entry point.
+As threat actors continuously scan the web to detect exposed devices they can exploit to gain a foothold in internal corporate networks, mapping your organization’s external attack surface is a key part of your security posture management. Devices that can be connected to or are approachable from the outside pose a threat to your organization.
 
-Microsoft Defender for Endpoint automatically identifies and flags onboarded, exposed, internet-facing devices in the [Microsoft 365 Defender portal](https://security.microsoft.com/). This critical information provides increased visibility into an organizations external attack surface and insights into asset exploitability.
+Microsoft Defender for Endpoint automatically identifies and flags onboarded, exposed, internet-facing devices in the [Microsoft 365 Defender portal](https://security.microsoft.com/). This critical information provides increased visibility into an organization's external attack surface and insights into asset exploitability.
 
 > [!NOTE]
 > Currently, only Windows devices onboarded to Microsoft Defender for Endpoint can be identified as internet-facing. Support for other platforms will be available in upcoming releases.
@@ -44,12 +44,9 @@ Devices that are successfully connected through TCP or identified as host reacha
 - External scans are used to identify which devices are approachable from the outside.
 - Device network connections, captured as part of Defender for Endpoint signals, help to identify external incoming connections that reach internal devices.
 
-Devices can be flagged as internet-facing due to:
+Devices can be flagged as internet-facing when a configured firewall policy (host firewall rule or enterprise firewall rule) allows inbound internet communication.
 
-- a misconfigured firewall rule (host firewall rule or enterprise firewall rule) that results in internal devices being reachable from the outside.
-- applications or services that are identified as listening on a device.
-
-Understanding your firewall policy, and your devices that are intentionally internet-facing as opposed those that may compromise your organization, provides critical information when it comes to mapping your external attack surface.
+Understanding your firewall policy, and your devices that are intentionally internet-facing as opposed to those that may compromise your organization, provides critical information when it comes to mapping your external attack surface.
 
 ## View internet-facing devices
 
@@ -76,7 +73,15 @@ To learn more about an internet-facing device, select the device in the device i
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-details.png" alt-text="Screenshot of the internet facing device details page" lightbox="../../media/defender-vulnerability-management/internet-facing-details.png":::
 
-From here you can discover, how the device was detected as internet-facing, along with the relevant IP addresses, ports, and connection protocols.
+This pane provides the following details:
+
+- **InternetFacingLastSeen**: The last time the device was identified as internet facing
+- **InternetFacingReason**: Whether the device was detected by an external scan or received an external incoming communication
+- **InternetFacingLocalIp**: The local IP address on the device
+- **InternetFacingLocalPort**: The local port on the device
+- **InternetFacingPublicScannedIp**: The external scanned public IP address
+- **InternetFacingPublicScannedPort**: The external scanned public port
+- **InternetFacingTransportProtocol**: The connection transport protocol used
 
 ## Use advanced hunting
 
@@ -84,7 +89,7 @@ Use advanced hunting queries to gain visibility and insights into the internet-f
 
 ### Get all internet facing devices
 
-Use this query to find all devices that are internet facing
+Use this query to find all devices that are internet facing. This query returns the same details as those described above:
 
 ```kusto
 // Find all devices that are internet-facing
@@ -94,16 +99,6 @@ DeviceInfo
 |extend InternetFacingReason = extractjson("$.InternetFacingReason", InternetFacingInfo, typeof(string)), InternetFacingLocalPort = extractjson("$.InternetFacingLocalPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicPort = extractjson("$.InternetFacingScannedPublicPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicIp = extractjson("$.InternetFacingScannedPublicIp", InternetFacingInfo, typeof(string)), InternetFacingLocalIp = extractjson("$.InternetFacingLocalIp", InternetFacingInfo, typeof(string)),   InternetFacingTransportProtocol=extractjson("$.InternetFacingTransportProtocol", InternetFacingInfo, typeof(string)), InternetFacingLastSeen = extractjson("$.InternetFacingLastSeen", InternetFacingInfo, typeof(datetime))
 |summarize arg_max(Timestamp, *) by DeviceId
 ```
-
-This query returns the internet-facing devices with their aggregated evidence in the “AdditionalFields” column.
-
-- **InternetFacingLastSeen**
-- **InternetFacingReason**
-- **InternetFacingLocalIp**
-- **InternetFacingLocalPort**
-- **InternetFacingPublicScannedIp**
-- **InternetFacingPublicScannedPort**
-- **InternetFacingTransportProtocol**
 
 ### Get information on inbounds connections
 
@@ -124,9 +119,11 @@ Use the following query for devices tagged with the reason **This device receive
 // Query on inbound connection accepted events
 DeviceNetworkEvents
 |whereTimestamp > ago(7d)
-|whereDeviceId == ""|wherenot(InitiatingProcessCommandLine has_any ("TaniumClient.exe", "ZSATunnel.exe", "MsSense.exe"))
-|whereActionType =="InboundConnectionAccepted"|extendLocalIP = replace(@"::ffff:", "", LocalIP),RemoteIP = replace(@"::ffff:", "", RemoteIP)
-|whereLocalIP!=RemoteIP andRemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") andnot(ipv4_is_private( RemoteIP ))
+|whereDeviceId == ""
+|where not(InitiatingProcessCommandLine has_any ("TaniumClient.exe", "ZSATunnel.exe", "MsSense.exe"))
+|where ActionType =="InboundConnectionAccepted"
+|extend LocalIP = replace(@"::ffff:", "", LocalIP),RemoteIP = replace(@"::ffff:", "", RemoteIP)
+|where LocalIP!= RemoteIP and RemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") and not(ipv4_is_private( RemoteIP ))
 |project-reorder DeviceId, LocalIP, LocalPort, RemoteIP, RemotePort, InitiatingProcessCommandLine,InitiatingProcessId, DeviceName
 ```
 
@@ -134,9 +131,9 @@ If the above query fails to provide the relevant connections, you can use socket
 
 - [Defender for Endpoint live response](live-response.md)
 - [Microsoft Network Monitor](/troubleshoot/windows-client/networking/collect-data-using-network-monitor)
-- [Netstat for Windows Server](/windows-server/administration/windows-commands/netstat)
+- [Netstat for Windows](/windows-server/administration/windows-commands/netstat)
 
-For UDP connections, gain insights into devices that were identified as host reachable but had no connection established, using the following query:
+For UDP connections, gain insights into devices that were identified as host reachable but may not have established a connection, using the following query:
 
 ```kusto
 DeviceNetworkEvents
