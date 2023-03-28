@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 01/19/2023
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Saltstack
@@ -37,6 +38,8 @@ This article describes how to deploy Defender for Endpoint on Linux using Saltst
 - [Create Saltstack state files](#create-saltstack-state-files)
 - [Deployment](#deployment)
 - [References](#references)
+
+[!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../../includes/support.md)]
 
 ## Prerequisites and system requirements
 

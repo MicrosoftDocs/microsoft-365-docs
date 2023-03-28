@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 07/21/2020
 audience: Admin
 search.appverid: MET150
 ms.topic: article
@@ -33,7 +33,7 @@ For full licensing details see, [the service description](/office365/servicedesc
 
 ### Permissions
 
-The account you use to create and edit data loss prevention (DLP) policies, must have the **DLP Compliance Management** role permissions. For more information, see [Add users to a compliance role group](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group).
+The account you use to create and edit data loss prevention (DLP) policies, must have the **DLP Compliance Management** role permissions. For more information, see [Add users or groups to a Microsoft Purview built-in role group](microsoft-365-compliance-center-permissions.md#add-users-or-groups-to-a-microsoft-purview-built-in-role-group).
 
 
 ## Supported locations

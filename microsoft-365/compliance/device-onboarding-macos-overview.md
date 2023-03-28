@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 10/06/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -52,6 +52,9 @@ Your macOS devices must already be managed through Intune or JAMF Pro.
 - To onboard into Intune, see [Deployment guide: Manage macOS devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and [Enroll your Mac with Intune Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - To onboard into JAMF Pro see, [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) and [JAMF Pro Installation and Configuration Guide for Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
 
+### Supported processors
+
+macOS devices with x64 and M1 (ARM64) processors are supported.
 
 ### Supported browsers
 

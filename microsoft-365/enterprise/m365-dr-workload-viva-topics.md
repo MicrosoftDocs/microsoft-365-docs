@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 
+ms.date: 09/20/2022
 ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
@@ -40,7 +40,7 @@ Please refer to the [ADR Commitment page](m365-dr-commitments.md#viva-topics) fo
 
 ## Migration
 
-Data is stored is maintained within Exchange Online, SharePoint Online and Microsoft Teams.  Migration processes are handled by the applicable/relevant workloads.
+Data stored is maintained within Exchange Online, SharePoint Online, and Microsoft Teams. Migration processes are handled by the applicable/relevant workloads.
 
 ## How can I determine customer data location?
 

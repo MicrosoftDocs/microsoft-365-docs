@@ -18,6 +18,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 05/04/2022
 ---
 
 # Troubleshooting mode scenarios in Microsoft Defender for Endpoint 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 10/23/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -66,7 +67,7 @@ Types considered for this information include Word, Excel, PowerPoint, OneNote, 
         They're defined as follows:</br>
         **Readers:** People who access or download online files in OneDrive or SharePoint.</br>
         **Creators:** People who create, modify, upload, sync, check in, copy, or move online OneDrive or SharePoint files.</br>
-        **Collaborators:** People who collaborate with online files by using OneDrive or SharePoint. Two people are collaborators if one of them reads or edits an online Office app or PDF after the other person has created or modified it, within a 28-day window.
+        **Collaborators:** People who collaborate with online files by using OneDrive or SharePoint. Two people are collaborators if one of them reads or edits an online Microsoft 365 app or PDF after the other person has created or modified it, within a 28-day window.
 
         > [!NOTE]
         > The files considered in the visualization are Word, Excel, PowerPoint, OneNote, or PDF files that are online and saved to OneDrive or SharePoint.
@@ -93,7 +94,7 @@ The trend visualizations chart shows the trend-line of the primary insight key m
 
 ### Scoring framework
 
-The content collaboration score for your organization measures at an aggregate (organization) level whether people are consistently reading, creating, or collaborating on online Office files such as Word, Excel, PowerPoint, OneNote, or PDFs, or in OneDrive or SharePoint.
+The content collaboration score for your organization measures at an aggregate (organization) level whether people are consistently reading, creating, or collaborating on online Microsoft 365 files such as Word, Excel, PowerPoint, OneNote, or PDFs, or in OneDrive or SharePoint.
 
 Scores are not provided at the individual user level.
 
@@ -105,15 +106,15 @@ We also provide you with information that helps you gain visibility into how you
 
 :::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Chart that shows number of people who create files in OneDrive or SharePoint.":::
 
-1. **Header:** Highlights the percentage of people active on Microsoft 365 Office applications who create files on OneDrive or SharePoint.
+1. **Header:** Highlights the percentage of people active on Microsoft 365 apps who create files on OneDrive or SharePoint.
 2. **Body:** Provides information about the value of content creation in OneDrive and SharePoint.
-3. **Visualization:** The breakdown in the visualization represents the extent to which people who are using Microsoft Office apps to create files in OneDrive and SharePoint, as follows:
-      - **OneDrive:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people active on Office applications creating content on OneDrive as follows:
-        - Numerator: The number of people who create, modify, upload, sync, check in, copy, or move online Office files in OneDrive within the last 28 days.</br>
+3. **Visualization:** The breakdown in the visualization represents the extent to which people who are using Microsoft 365 apps to create files in OneDrive and SharePoint, as follows:
+      - **OneDrive:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people active on Microsoft 365 apps creating content on OneDrive as follows:
+        - Numerator: The number of people who create, modify, upload, sync, check in, copy, or move online Microsoft 365 files in OneDrive within the last 28 days.</br>
         - Denominator: The number of people who have access to OneDrive or SharePoint and access office files within the last 28 days.
-      - **SharePoint:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people who are active on Office applications and create content on SharePoint as:</br>
-         - Numerator: The number of people who create, modify, upload, sync, check in, copy, or move online Office files (Microsoft Word, Excel, PowerPoint, or OneNote files) on SharePoint within the last 28 days. </br>
-         - Denominator: The number of people who have access to OneDrive or SharePoint and have accessed Office files within the last 28 days.
+      - **SharePoint:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people who are active in Microsoft 365 apps and create content on SharePoint as:</br>
+         - Numerator: The number of people who create, modify, upload, sync, check in, copy, or move online Microsoft 365 files (Microsoft Word, Excel, PowerPoint, or OneNote files) on SharePoint within the last 28 days. </br>
+         - Denominator: The number of people who have access to OneDrive or SharePoint and have accessed Microsoft 365 files within the last 28 days.
 
 4. **Link to resources:** Select this link to view help content.
 

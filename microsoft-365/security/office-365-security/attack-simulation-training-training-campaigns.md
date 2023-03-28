@@ -7,12 +7,13 @@ audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 description: Admins can learn how to create training campaigns in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 01/13/2023
 ---
 
 # Training campaigns in Attack simulation training
@@ -25,7 +26,7 @@ search.appverid: met150
 > [!NOTE]
 > This article describes features that are in Public Preview, aren't available in all organizations, and are subject to change.
 
-In Attack simulation training in Microsoft Defender for Office 365 Plan 2, Training campaigns are a faster, more direct way to provide security training to users. Instead of creating and launching [simulated phishing attacks](attack-simulation-training-simulations.md) that eventually lead to training, you can also create and assign Training campaigns directly to users.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, Training campaigns are a faster, more direct way to provide security training to users. Instead of creating and launching [simulated phishing attacks](attack-simulation-training-simulations.md) that eventually lead to training, you can create and assign Training campaigns directly to users.
 
 A Training campaign contains one or more built-in Training modules that you select. Currently, there are over 70 Training modules to select from. For more information about Training modules, see [Training modules for Training campaigns in Attack simulation training](attack-simulation-training-training-modules.md).
 
@@ -52,12 +53,12 @@ The **Training campaigns** tab lists the Training campaigns that you've created.
   - **Failed**<sup>\*</sup>
   - **Scheduled**<sup>\*</sup>
 - **⋮ Actions**:
-  - ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**
-  - ![View report icon.](../../media/m365-cc-sc-eye-icon.png) **View report**
+  - :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete**
+  - :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png"::: **View report**
 
-To find a Training campaign in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the name of the Training campaign.
+To find a Training campaign in the list, use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box to find the name of the Training campaign.
 
-Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the information on the page by the **Status** value of the Training campaign.
+Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Filter** to filter the information on the page by the **Status** value of the Training campaign.
 
 <sup>\*</sup> The total count of Training campaigns with these **Status** values is also shown at the top of the page. But if you filter the information (for example, exclude on of these **Status** values), the count at the top of the page will be **0** for that excluded **Status** value.
 
@@ -67,9 +68,9 @@ To create a Training campaign, do the following steps:
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
 
-2. On the **Training** tab, click ![Create new icon.](../../media/m365-cc-sc-filter-icon.png) **Create new**.
+2. On the **Training** tab,select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Create new**.
 
-3. The new Training campaign wizard opens. The rest of this sections describes the pages and the settings they contain.
+3. The new Training campaign wizard opens. The rest of this section describes the pages and the settings they contain.
 
 ### Name Training campaign
 
@@ -87,12 +88,12 @@ On the **Target users** page, select one of the following values:
 - **Include all users in my organization**
 
 - **Include only specific users and groups**: When this value is selected, use the following options to find and select the users or groups to include in the Training campaign:
-  - ![Add users icon.](../../media/m365-cc-sc-filter-icon.png) **Add users**: In the **Add users** flyout that appears, use the following options to find and select users:
-  - **Search for users or groups**: In the ![Enter user or group name icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, enter three or more letters of the user or group name, and then press Enter. The results (if any) are shown in the **User list** section that appears.
-    - To clear the search results without selecting any users or groups and return to all filters on the **Add users** flyout, click **Add/Edit**.
-    - To clear the text from the search box and the entries from the **User list** section but remain in user/group search mode, click ![Remove selection icon.](../../media/m365-cc-sc-search-icon.png) in the search box.
-    - To clear any *selections* in the **User list** section but preserve the text in the search box and the actual entries in the list, click **Clear all selections**.
-    - When you're done selecting entries from the **User list** section, click **Add n user(s)**. You'll return to the **Target users** page where the selected users are shown in a list. To return to the **Add users** flyout, click ![Add users icon.](../../media/m365-cc-sc-filter-icon.png) **Add users**.
+  - :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Add users**: In the **Add users** flyout that appears, use the following options to find and select users:
+  - **Search for users or groups**: In the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box, enter three or more letters of the user or group name, and then press Enter. The results (if any) are shown in the **User list** section that appears.
+    - To clear the search results without selecting any users or groups and return to all filters on the **Add users** flyout, select **Add/Edit**.
+    - To clear the text from the search box and the entries from the **User list** section but remain in user/group search mode, select :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: in the search box.
+    - To clear any *selections* in the **User list** section but preserve the text in the search box and the actual entries in the list, select **Clear all selections**.
+    - When you're done selecting entries from the **User list** section, select **Add n user(s)**. You'll return to the **Target users** page where the selected users are shown in a list. To return to the **Add users** flyout, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Add users**.
 
     Repeat this step as many times as required.
 
@@ -109,19 +110,19 @@ On the **Target users** page, select one of the following values:
         - **Low risk profile**
 
     - **City**, **Department**, or **Title** properties: In each section, the following options are available:
-      - ![Search by icon.](../../media/m365-cc-sc-search-icon.png) **Search by**: Type the property value and select it from the list of results.
-      - The first three values for each property are shown. To see all values for the specific property, click the **All \<property>** link. Select one or more values.
+      - :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search by**: Type the property value and select it from the list of results.
+      - The first three values for each property are shown. To see all values for the specific property, select the **All \<property>** link. Select one or more values.
       - Select **All \<property\>** to select all values for the specific property.
 
-    After you select values from one or more categories, click **Apply(n)**. The results (if any) are shown in the **User list** section that appears.
+    After you select values from one or more categories, select **Apply(n)**. The results (if any) are shown in the **User list** section that appears.
 
-    - To not select any users or groups and return to all filters on the **Add users** flyout, click **Add/Edit**.
-    - To clear any *selections* in the **User list** section but preserve the actual entries in the list, click **Clear all selections**.
-    - When you're done selecting entries from the **User list** section, click **Add n user(s)**. You'll return to the **Target users** page where the selected users are shown in a list. To return to the **Add users** flyout, click ![Add users icon.](../../media/m365-cc-sc-filter-icon.png) **Add users**.
+    - To not select any users or groups and return to all filters on the **Add users** flyout, select **Add/Edit**.
+    - To clear any *selections* in the **User list** section but preserve the actual entries in the list, select **Clear all selections**.
+    - When you're done selecting entries from the **User list** section, select **Add n user(s)**. You'll return to the **Target users** page where the selected users are shown in a list. To return to the **Add users** flyout, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Add users**.
 
     Repeat this step as many times as required.
 
-  - ![Import icon.](../../media/m365-cc-sc-import-icon.png) **Import**: In the dialog that opens, find and select a .csv file.
+  - :::image type="icon" source="../../media/m365-cc-sc-import-icon.png"::: **Import**: In the dialog that opens, find and select a .csv file.
 
 After you've selected one or more users or groups, the following information is shown for each entry on the **Target users** page:
 
@@ -129,23 +130,23 @@ After you've selected one or more users or groups, the following information is 
 - **Email**
 - **Title**
 - **Type**: **User** or **Group**
-- **Delete**: Use the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon to remove the entry from the list. Click **Confirm** in the confirmation dialog**.
+- **Delete**: Use the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete** icon to remove the entry from the list. Select **Confirm** in the confirmation dialog**.
 
-Use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find users or groups in the list.
+Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box to find users or groups in the list.
 
-When you're finished, click **Next**.
+When you're finished, select **Next**.
 
 ### Exclude users
 
 On the **Exclude users** page, you can exclude some of the previously selected users from the Training campaign by selecting **Exclude some of the target users from this simulation**.
 
-The selection options are identical to the previous step when you select ![Add users to exclude icon.](../../media/m365-cc-sc-filter-icon.png) **Add users to exclude** or ![Import icon.](../../media/m365-cc-sc-import-icon.png) **Import**.
+The selection options are identical to the previous step when you select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Add users to exclude** or :::image type="icon" source="../../media/m365-cc-sc-import-icon.png"::: **Import**.
 
-When you're finished, click **Next**.
+When you're finished, select **Next**.
 
 ### Select courses
 
-On the **Select courses** page, click ![Add trainings icon.](../../media/m365-cc-sc-filter-icon.png) **Add trainings**.
+On the **Select courses** page, click :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Add trainings**.
 
 In the **Add Training** flyout that appears, select one or more Training modules to include in the Training campaign by clicking the blank area next to the module name, and then clicking **Add**.
 
@@ -156,7 +157,7 @@ After you've selected one or more Training modules, the following information is
 - **Training name**
 - **Source**
 - **Duration (mins)**
-- **Delete**: Use the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon to remove the entry from the list. Click **Confirm** in the confirmation dialog**.
+- **Delete**: Use the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete** icon to remove the entry from the list. Click **Confirm** in the confirmation dialog**.
 
 When you're finished, click **Next**.
 
@@ -178,7 +179,7 @@ On the **Select end user notification** page, select from the following notifica
   - **Language**: If the notification contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
   - **Type**: **Training assignment notification** or **Training reminder notification**.
   - **Delivery preferences**: For **Training reminder notification** types, the values **Twice a week** and **Weekly** are available.
-  - **⋮ Actions**: If you click the ![View icon.](../../media/m365-cc-sc-view-icon.png) **View** icon, the **Review notification** page appears with the following information:
+  - **⋮ Actions**: If you click the :::image type="icon" source="../../media/m365-cc-sc-view-icon.png"::: **View** icon, the **Review notification** page appears with the following information:
     - **Preview** tab: View the notification message as users will see it. To view the message in different languages, use the **Select notification language** box.
     - **Details** tab: View details about the notification:
       - **Notification description**
@@ -208,17 +209,17 @@ This page shows the following notifications and their configured languages:
 You can select an existing training assignment notification or create a new notification to use:
 
 - To select an existing notification, select the check box next to the notification name. If you click on the notification name, the notification is selected and a preview flyout appears. To deselect the notification, clear the check box next to the notification.
-- To search for an existing notification on the page, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name.
+- To search for an existing notification on the page, use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box to search for the name.
 
   Select the notification that you want to use, and then click **Next**.
 
-- To create and use a new notification, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**.
+- To create and use a new notification, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create new**.
 
-- To edit an existing custom notification, select it and then click the ![Edit notification icon.](../../media/m365-cc-sc-edit-icon.png) **Edit notification** icon that appears.
+- To edit an existing custom notification, select it and then click the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png"::: **Edit notification** icon that appears.
 
 ##### Training assignment notification wizard
 
-If you click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** on the **Training assignment notification** page or select a custom notification and then click ![Edit notification icon.](../../media/m365-cc-sc-edit-icon.png) **Edit notification**, a notification creation wizard opens.
+If you select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create new** on the **Training assignment notification** page or select a custom notification and then click :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png"::: **Edit notification**, a notification creation wizard opens.
 
 The creation steps are identical as described in [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
 
@@ -236,7 +237,7 @@ When you're finished, click **Next**.
 The **Training reminder notification** page is available only if you selected **Customized end user notifications** on the **[Select end user notification](#select-end-user-notification)** page.
 
 - **Set frequency for reminder notification**: Select **Weekly** (default) or **Twice a week**.
-  - Reminder notifications will stop at the end of the campaign   
+  - Reminder notifications will stop at the end of the campaign.
 
 - **Select a reminder notification**: This section shows the following notifications and their configured languages:
 
@@ -249,17 +250,17 @@ The **Training reminder notification** page is available only if you selected **
   You can select an existing training reminder notification or create a new notification to use:
 
 - To select an existing notification, select the check box next to the notification name. If you click on the notification name, the notification is selected and a preview flyout appears. To deselect the notification, clear the check box next to the notification.
-- To search for an existing notification on the page, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name.
+- To search for an existing notification on the page, use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box to search for the name.
 
-    Select the notification that you want to use, and then click **Next**.
+    Select the notification that you want to use, and then select **Next**.
 
-  - To create and use a new notification, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**.
+  - To create and use a new notification, click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create new**.
 
-  - To edit an existing custom notification, select it and then click the ![Edit notification icon.](../../media/m365-cc-sc-edit-icon.png) **Edit notification** icon that appears.
+  - To edit an existing custom notification, select it and then click the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png"::: **Edit notification** icon that appears.
 
 ##### Training reminder notification wizard
 
-If you click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** on the **Training reminder notification** page or select a custom notification and then click ![Edit notification icon.](../../media/m365-cc-sc-edit-icon.png) **Edit notification**, a notification creation wizard opens.
+If you click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create new** on the **Training reminder notification** page or select a custom notification and then click :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png"::: **Edit notification**, a notification creation wizard opens.
 
 The creation steps are identical as described in [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
 
@@ -299,7 +300,7 @@ To view the details and reports for a Training campaign, do the following steps:
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
 
 2. On the **Training** tab, do one of the following steps:
-   - Select the Training campaign by selecting the check box next to it, and then click **⋮ (Actions)** \> ![View report icon.](../../media/m365-cc-sc-eye-icon.png) **View report**. You might need to scroll to the right to see **⋮ (Actions)**.
+   - Select the Training campaign by selecting the check box next to it, and then click **⋮ (Actions)** \> :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png"::: **View report**. You might need to scroll to the right to see **⋮ (Actions)**.
    - In the list of Training campaigns, click anywhere in the row without selecting the check box (for example, on the **Name** value).
 
 3. A details page for the Training campaign opens with the following tabs:
@@ -336,9 +337,9 @@ The **Users** tab shows the following information about the users who were assig
 - **Training completion date**
 - **Mail**
 
-To add or remove the **Training date status** or **Department** columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**.
+To add or remove the **Training date status** or **Department** columns, click :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png"::: **Customize columns**.
 
-To download the displayed results to a RecordExport.csv file in the local Downloads folder, click ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export**.
+To download the displayed results to a RecordExport.csv file in the local Downloads folder, click :::image type="icon" source="../../media/m365-cc-sc-download-icon.png"::: **Export**.
 
 If you select a user from the list, the following information appears in a details flyout:
 
@@ -372,7 +373,7 @@ To delete an existing Training campaign, do the following steps:
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
 
-2. On the **Training** tab, select the Training campaign by selecting the check box next to it, and then click **⋮ (Actions)** \> ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**. You might need to scroll to the right to see **⋮ (Actions)**.
+2. On the **Training** tab, select the Training campaign by selecting the check box next to it, and then click **⋮ (Actions)** \> :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete**. You might need to scroll to the right to see **⋮ (Actions)**.
 
 3. Click **Confirm** in the warning dialog that opens.
 

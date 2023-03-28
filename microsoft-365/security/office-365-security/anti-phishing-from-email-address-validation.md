@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid: 
   - OWC150
@@ -16,10 +14,12 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection: 
   - m365-security
+  - tier2
 description: Admins can learn about the types of email addresses that are accepted or rejected by Exchange Online Protection (EOP) and Outlook.com to help prevent phishing.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 11/30/2022
 ---
 
 # How EOP validates the From address to prevent phishing
@@ -134,4 +134,4 @@ You can't override the From address requirements for outbound email that you sen
 
 ## Other ways to prevent and protect against cybercrimes in Microsoft 365
 
-For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Best practices for securing Microsoft 365 for business plans](../../admin/security-and-compliance/secure-your-business-data.md).
+For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Best practices for securing Microsoft 365 for business plans](../../business-premium/secure-your-business-data.md).

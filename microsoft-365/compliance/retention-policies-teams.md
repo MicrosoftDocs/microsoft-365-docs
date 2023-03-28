@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 03/02/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -64,7 +64,7 @@ You can use a retention policy to retain data from chats and channel messages in
 
 These mailboxes are, listed by their RecipientTypeDetails attribute:
 
-- **UserMailbox**: These mailboxes store message data for cloud-based Teams users.
+- **UserMailbox**: These mailboxes store message data for Teams private channels and cloud-based Teams users.
 - **MailUser**: These mailboxes store message data for [on-premises Teams users](ediscovery-search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: These mailboxes store message data for Teams standard channels.
 - **SubstrateGroup**: These mailboxes store message data for Teams shared channels.

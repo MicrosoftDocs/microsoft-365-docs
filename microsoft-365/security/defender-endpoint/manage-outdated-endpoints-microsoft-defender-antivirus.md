@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
+ms.date: 04/08/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date
@@ -48,7 +49,7 @@ You can use one of several methods to set up catch-up protection updates:
 
 ### Use Configuration Manager to configure catch-up protection updates
 
-1. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (select **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
+1. On your Microsoft Configuration Manager console, open the antimalware policy you want to change (select **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
 
 2. Go to the **Security intelligence updates** section and configure the following settings:
 
@@ -196,7 +197,7 @@ See the following article for more information and allowed parameters:
 
 ### Use Configuration Manager to configure catch-up scans
 
-1. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (select **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
+1. On your Microsoft Configuration Manager console, open the antimalware policy you want to change (select **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
 
 2. Go to the **Scheduled scans** section and **Force a scan of the selected scan type if client computer is offline...** to **Yes**.
 
@@ -217,7 +218,7 @@ See the following article for more information and allowed parameters:
 ## Related articles
 
 - [Deploy Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
-- [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md)
 - [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 - [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)

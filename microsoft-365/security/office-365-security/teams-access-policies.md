@@ -9,7 +9,7 @@ audience: Admin
 f1.keywords: 
   - NOCSH
 ms.author: heidip
-ms.date: 09/30/2020
+ms.date: 1/31/2023
 ms.reviewer: anmorgan
 ms.custom: 
   - it-pro
@@ -21,6 +21,7 @@ ms.collection:
   - m365solution-scenario
   - zerotrust-solution
   - highpri
+  - tier1
 ms.subservice: mdo
 search.appverid: met150
 ---
@@ -31,7 +32,7 @@ This article describes how to implement the recommended Zero Trust identity and 
 
 These recommendations are based on three different tiers of security and protection for Teams that can be applied based on the granularity of your needs: starting point, enterprise, and specialized security. You can learn more about these security tiers and the recommended policies referenced by these recommendations in the [Identity and device access configurations](microsoft-365-policies-configurations.md).
 
-More recommendations specific to Teams deployment are included in this article to cover specific authentication circumstances, including for users outside your organization. You will need to follow this guidance for a complete security experience.
+More recommendations specific to Teams deployment are included in this article to cover specific authentication circumstances, including for users outside your organization. You'll need to follow this guidance for a complete security experience.
 
 ## Getting started with Teams before other dependent services
 
@@ -83,9 +84,9 @@ Microsoft Teams defines the following access types:
 
 - **Guest access** uses an Azure AD B2B account for a guest or external user that can be added as a member of a team and have all permissioned access to the communication and resources of the team.
 
-- **External access** is for an external user that does not have an Azure AD B2B account. External access can include invitations and participation in calls, chats, and meetings, but does not include team membership and access to the resources of the team.
+- **External access** is for an external user that doesn't have an Azure AD B2B account. External access can include invitations and participation in calls, chats, and meetings, but doesn't include team membership and access to the resources of the team.
 
-Conditional Access policies only apply to guest access in Teams because there is a corresponding Azure AD B2B account.
+Conditional Access policies only apply to guest access in Teams because there's a corresponding Azure AD B2B account.
 
 <!--
 In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both.
@@ -106,9 +107,9 @@ External access is sometimes confused with guest access, so it's important to be
 
 External access is a way for Teams users from an entire external domain to find, call, chat, and set up meetings with your users in Teams. Teams administrators configure external access at the organization level. For more information, see [Manage external access in Microsoft Teams](/microsoftteams/manage-external-access).
 
-External access users have less access and functionality than an individual who's been added via guest access. For example, external access users can chat with your internal users with Teams but cannot access team channels, files, or other resources.
+External access users have less access and functionality than an individual who's been added via guest access. For example, external access users can chat with your internal users with Teams but can't access team channels, files, or other resources.
 
-External access does not use Azure AD B2B user accounts and therefore does not use Conditional Access policies.
+External access doesn't use Azure AD B2B user accounts and therefore doesn't use Conditional Access policies.
 
 ## Teams policies
 
@@ -116,7 +117,7 @@ Outside of the common policies listed above, there are Teams-specific policies t
 
 ### Teams and channels policies
 
-Teams and channels are two commonly used elements in Microsoft Teams, and there are policies you can put in place to control what users can and cannot do when using teams and channels. While you can create a global team, if your organization has 5000 users or less, you are likely to find it helpful to have smaller teams and channels for specific purposes, in-line with your organizational needs.
+Teams and channels are two commonly used elements in Microsoft Teams, and there are policies you can put in place to control what users can and can't do when using teams and channels. While you can create a global team, if your organization has 5000 users or less, you're likely to find it helpful to have smaller teams and channels for specific purposes, in-line with your organizational needs.
 
 Changing the default policy or creating custom policies would be recommended, and you can learn more about managing your policies at this link: [Manage teams policies in Microsoft Teams](/microsoftteams/teams-policies).
 
