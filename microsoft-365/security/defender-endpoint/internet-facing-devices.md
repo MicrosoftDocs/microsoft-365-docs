@@ -73,15 +73,7 @@ To learn more about an internet-facing device, select the device in the device i
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-details.png" alt-text="Screenshot of the internet facing device details page" lightbox="../../media/defender-vulnerability-management/internet-facing-details.png":::
 
-This pane provides the following details:
-
-- **InternetFacingLastSeen**: The last time the device was identified as internet facing
-- **InternetFacingReason**: Whether the device was detected by an external scan or received an external incoming communication
-- **InternetFacingLocalIp**: The local IP address on the device
-- **InternetFacingLocalPort**: The local port on the device
-- **InternetFacingPublicScannedIp**: The external scanned public IP address
-- **InternetFacingPublicScannedPort**: The external scanned public port
-- **InternetFacingTransportProtocol**: The connection transport protocol used
+This pane includes details on whether the device was detected by an external scan or received an external incoming communication, the local IP address and port on the device, the external scanned public IP address and port, and the last time the device was identified as internet facing.
 
 ## Use advanced hunting
 
@@ -89,7 +81,7 @@ Use advanced hunting queries to gain visibility and insights into the internet-f
 
 ### Get all internet facing devices
 
-Use this query to find all devices that are internet facing. This query returns the same details as those described above:
+Use this query to find all devices that are internet facing. 
 
 ```kusto
 // Find all devices that are internet-facing
@@ -99,6 +91,16 @@ DeviceInfo
 |extend InternetFacingReason = extractjson("$.InternetFacingReason", InternetFacingInfo, typeof(string)), InternetFacingLocalPort = extractjson("$.InternetFacingLocalPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicPort = extractjson("$.InternetFacingScannedPublicPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicIp = extractjson("$.InternetFacingScannedPublicIp", InternetFacingInfo, typeof(string)), InternetFacingLocalIp = extractjson("$.InternetFacingLocalIp", InternetFacingInfo, typeof(string)),   InternetFacingTransportProtocol=extractjson("$.InternetFacingTransportProtocol", InternetFacingInfo, typeof(string)), InternetFacingLastSeen = extractjson("$.InternetFacingLastSeen", InternetFacingInfo, typeof(datetime))
 |summarize arg_max(Timestamp, *) by DeviceId
 ```
+
+This query returns the following fields for each internet-facing device with their aggregated evidence in the “AdditionalFields” column.
+
+- **InternetFacingLastSeen**: The last time the device was identified as internet facing
+- **InternetFacingReason**: Whether the device was detected by an external scan or received an external incoming communication
+- **InternetFacingLocalIp**: The local IP address on the device
+- **InternetFacingLocalPort**: The local port on the device
+- **InternetFacingPublicScannedIp**: The external scanned public IP address
+- **InternetFacingPublicScannedPort**: The external scanned public port
+- **InternetFacingTransportProtocol**: The connection transport protocol used
 
 ### Get information on inbounds connections
 
