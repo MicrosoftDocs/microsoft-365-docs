@@ -44,6 +44,7 @@ DLP policy tips in Outlook Web Access is supported for all the conditions, and a
 - Document content contains words or phrases
 - Document content matches patterns
 - Any email attachment's content didn't complete scanning
+- Any email attachment's content could not be scanned
 
 **Actions:**
 

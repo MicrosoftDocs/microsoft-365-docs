@@ -43,9 +43,23 @@
         href: mdb-onboard-devices.md
       - name: Step 5 - Review and edit your security policies
         href: mdb-configure-security-settings.md
+    - name: Monitor or manage devices
+      items: 
+      - name: Get an overview of mobile threat defense
+        href: mdb-mtd.md
+      - name: View and manage devices
+        href: mdb-manage-devices.md
+      - name: Create device groups
+        href: mdb-create-edit-device-groups.md
+      - name: Offboard devices
+        href: mdb-offboard-devices.md
+      - name: How to get Microsoft Defender for Business servers
+        href: get-defender-business-servers.md
     - name: View and respond to detected threats
       items: 
-      - name: View your vulnerability management dashboard
+      - name: View and use reports
+        href: mdb-reports.md
+      - name: Use your vulnerability management dashboard
         href: mdb-view-tvm-dashboard.md
       - name: View and manage incidents
         href: mdb-view-manage-incidents.md
@@ -53,8 +67,6 @@
         href: mdb-respond-mitigate-threats.md
       - name: Review remediation actions
         href: mdb-review-remediation-actions.md
-      - name: View and use reports
-        href: mdb-reports.md
       - name: Set up email notifications for your security team
         href: mdb-email-notifications.md
     - name: View or edit security policies
@@ -71,16 +83,6 @@
         href: mdb-firewall.md
       - name: Manage rules for firewall policies
         href: mdb-custom-rules-firewall.md
-    - name: Monitor or manage devices
-      items: 
-      - name: View and manage devices
-        href: mdb-manage-devices.md
-      - name: Create device groups
-        href: mdb-create-edit-device-groups.md
-      - name: Offboard devices
-        href: mdb-offboard-devices.md
-      - name: How to get Microsoft Defender for Business servers
-        href: get-defender-business-servers.md
     - name: Reference information
       items: 
       - name: Top 10 ways to secure your business data

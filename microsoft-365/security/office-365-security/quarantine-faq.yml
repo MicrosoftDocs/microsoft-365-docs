@@ -71,7 +71,7 @@ sections:
 
           For more information, see [Find and release quarantined messages as a user](quarantine-end-user.md).
 
-          By default, end users can't access the following types of quarantined messages where they are a recipient:
+          By default, end users can't access the following types of quarantined messages where they're a recipient:
 
           - **Anti-spam policies**: High confidence phishing.
           - **Anti-malware policies**
