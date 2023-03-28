@@ -127,7 +127,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Get the eDiscoverySearchID
 
-1. In Graph Explorer, run the following GET request to retrieve the ID for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases('ediscoverySearchID')/searches` in the address bar of the request query, where *ediscoverySearchID* is the ID that you obtained in the previous procedure. Be sure to surround the ediscoverySearchID with parentheses and single quotation marks.
+1. In Graph Explorer, run the following GET request to retrieve the ID for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases{'ediscoverySearchID'}/searches` in the address bar of the request query, where *{ediscoverySearchID}* is the ID that you obtained in the previous procedure.
 
 2. Scroll through the response to locate the collection that contains the items that you want to purge. Use the *displayName* property to identify the collection that you created in Step 3.
 
@@ -142,7 +142,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Purge the chat messages
 
-1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/('ediscoveryCaseID')/searches/('ediscoverySearchID')/purgeData` in the address bar of the request query, where *ediscoveryCaseID* and *ediscoverySearchID* are the IDs that you obtained in the previous procedures. Be sure to surround the ID values with parentheses and single quotation marks.
+1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{'ediscoveryCaseID'}/searches/{'ediscoverySearchID'}/purgeData` in the address bar of the request query, where *{ediscoveryCaseID}* and *{ediscoverySearchID}* are the IDs that you obtained in the previous procedures.
 
       ![POST request to delete items returned by the collection.](..\media\ediscovery-GraphPOSTRequestToPurgeItems.png)
 
