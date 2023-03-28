@@ -76,7 +76,8 @@ Once configured, you cannot change the location where your data is stored. This 
 Microsoft Defender for Endpoint shares data, including customer data, among the following Microsoft products also licensed by the customer.
 
 - Microsoft Sentinel
-- Microsoft Tunnel for Mobile Application Management - Android 
+- Microsoft Tunnel for Mobile Application Management - Android
+- Microsoft Defender for Cloud (MDC)
 
 ## Is my data isolated from other customer data?
 
