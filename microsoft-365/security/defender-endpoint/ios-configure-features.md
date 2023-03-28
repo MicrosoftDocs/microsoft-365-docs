@@ -225,9 +225,9 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
 
 1. **End User Privacy Controls** These controls help the end user to configure the information shared to their organization.
     - For Supervised devices, End User controls will not be visible. Admin will decide and controls the settings.
-    - However, for Unsupervised devices, the control will be displayed under the **Settings > Privacy**
+    - However, for Unsupervised devices, the control will be displayed under the **Settings > Privacy**.
         - Users will see a toggle for **Unsafe Site Info**.
-        - This toggle is only visible if Admin has set **DefenderExcludeURLInReport = true**
+        - This toggle is only visible if Admin has set **DefenderExcludeURLInReport = true**.
         - If enabled by Admin, Users can decide if they want to send the unsafe site info to their Organization or not.
         - By default its set to `true`, the unsafe site information will be sent.
         - If user toggles it to `false`, the unsafe site details will not be sent.
@@ -330,7 +330,7 @@ Defender for Endpoint on iOS supports vulnerability assessments of apps only for
     - Go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
     - Give the policy a name, **Platform** > **iOS/iPadOS**.
     - Select **Microsoft Defender for Endpoint** as the target app.
-    - In Settings page, select Use configuration designer and add **DefenderTVMPrivacyMode** as the key and value type as **String**
+    - In Settings page, select Use configuration designer and add **DefenderTVMPrivacyMode** as the key and value type as **String**.
         - To disable privacy and collect the list of apps installed, enter value as `False` and assign this policy to users. 
         - By default, this value is set to `True` for unsupervised devices.
         - For users with key set as `False`, Defender for Endpoint will send the list of apps installed on the device for vulnerability assessment.
