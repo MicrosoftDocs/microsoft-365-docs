@@ -328,7 +328,7 @@ On the **Landing page** page, you configure the web page that users are taken to
 
     - Landing page content: Two tabs are available:
 
-      - **Text**: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
+      - **Text**: A rich text editor is available to create the landing page. In addition to the typical font and formatting settings, the following settings are available:
         - **Dynamic tag**: Select from the following tags:
 
           |Tag name|Tag value|
@@ -413,7 +413,7 @@ This page shows the following notifications and their configured languages:
 - **Microsoft default training assignment notification**
 - Any custom training assignment notifications that you previously created.
 
-  These notifications are also available in **End user notifications** on the **Simulation content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Microsoft default training assignment notification** is available on the **Global notifications** tab. Custom training assignment notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+  These notifications are also available in **End user notifications** on the **Content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>. **Microsoft default training assignment notification** is available on the **Global notifications** tab. Custom training assignment notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
 You can select an existing training assignment notification or create a new notification to use:
 
@@ -448,7 +448,7 @@ The **Training reminder notification** page is available only if you selected **
   - **Microsoft default training reminder notification**
   - Any custom training reminder notifications that you previously created.
 
-    These notifications are also available in **End user notifications** on the **Simulation content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Microsoft default training reminder notification** is available on the **Global notifications** tab. Custom training reminder notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+    These notifications are also available in **End user notifications** on the **Content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>. **Microsoft default training reminder notification** is available on the **Global notifications** tab. Custom training reminder notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
   You can select an existing training reminder notification or create a new notification to use:
 
@@ -485,7 +485,7 @@ The **Positive reinforcement notification** page is available only if you select
   - **Microsoft default positive reinforcement notification**
   - Any custom positive reinforcement notifications that you previously created.
 
-    These notifications are also available in **End user notifications** on the **Simulation content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Microsoft default positive reinforcement notification** is available on the **Global notifications** tab. Custom positive reinforcement notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+    These notifications are also available in **End user notifications** on the **Content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>. **Microsoft default positive reinforcement notification** is available on the **Global notifications** tab. Custom positive reinforcement notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
   You can select an existing positive reinforcement notification or create a new notification to use:
 

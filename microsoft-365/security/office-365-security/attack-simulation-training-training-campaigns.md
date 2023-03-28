@@ -150,7 +150,7 @@ On the **Select courses** page, click :::image type="icon" source="../../media/m
 
 In the **Add Training** flyout that appears, select one or more Training modules to include in the Training campaign by clicking the blank area next to the module name, and then clicking **Add**.
 
-What you see and what you can do in the **Add Training** flyout is identical to what's available at **Training modules** on the **Content library** tab at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. For more information, see [Training modules for Training campaigns in Attack simulation training](attack-simulation-training-training-modules.md).
+What you see and what you can do in the **Add Training** flyout is identical to what's available at **Training modules** on the **Content library** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>. For more information, see [Training modules for Training campaigns in Attack simulation training](attack-simulation-training-training-modules.md).
 
 After you've selected one or more Training modules, the following information is shown for each entry on the **Select courses** page:
 
@@ -204,7 +204,7 @@ This page shows the following notifications and their configured languages:
 - **Microsoft default training only campaign-training assignment notification**
 - Any custom training assignment notifications that you previously created where the **Type** value is **Training assignment notification**.
 
-  These notifications are also available in **End user notifications** on the **Content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. The built-in notifications are available on the **Global notifications** tab. Custom training assignment notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+  These notifications are also available in **End user notifications** on the **Content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>. The built-in notifications are available on the **Global notifications** tab. Custom training assignment notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
 You can select an existing training assignment notification or create a new notification to use:
 
@@ -245,7 +245,7 @@ The **Training reminder notification** page is available only if you selected **
   - **Microsoft default training only campaign-training reminder notification**
   - Any custom training reminder notifications that you previously created where the **Type** value is **Training reminder notification**.
 
-    These notifications are also available in **End user notifications** on the **Simulation content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. The build-it notifications available on the **Global notifications** tab. Custom training reminder notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+    These notifications are also available in **End user notifications** on the **Content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>. The build-it notifications available on the **Global notifications** tab. Custom training reminder notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
   You can select an existing training reminder notification or create a new notification to use:
 

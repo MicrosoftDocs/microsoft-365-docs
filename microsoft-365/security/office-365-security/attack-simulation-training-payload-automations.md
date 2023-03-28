@@ -51,7 +51,7 @@ To create a payload automation, do the following steps:
    :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="The Create simulation button on the Payload automations tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
    > [!NOTE]
-   > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the payload automation later. You can pick up where you left off by selecting the payload automation in **Payload automations**, and then clicking ![Edit automation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit automation**. The partially-completed payload automation will have the **Status** value **Draft**.
+   > At any point during the new payload automation wizard, you can click **Save and close** to save your progress and continue configuring the payload automation later. You can pick up where you left off by selecting the payload automation in **Payload automations**, and then clicking ![Edit automation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit automation**. The partially-completed payload automation will have the **Status** value **Draft**.
    >
    > Currently, payload harvesting is enabled in GCC environments due to data gathering restrictions.
 

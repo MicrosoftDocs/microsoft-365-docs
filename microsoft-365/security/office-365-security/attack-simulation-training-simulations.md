@@ -71,9 +71,9 @@ When you're finished on the **Name simulation** page, click **Next**.
 
 On the **Select payload and login page** page, you need to select an existing payload from the list or create a new payload.
 
-You can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
+For the **Credential Harvest** or **Link in attachment** social engineering techniques, you can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
 
-### Payload
+### Select a payload
 
 The following details are shown for each payload:
 
@@ -108,25 +108,26 @@ If you click ![Filter payload icon.](../../media/m365-cc-sc-filter-icon.png), th
 
 When you're finished configuring filters, click **Apply**, **Cancel**, or ![Clear filters icon.](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
-If you select a payload from the list by selecting the check box, a ![Send a test payload icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears above the list of payloads. You can use this button to send a copy of the payload email to yourself (the currently logged in user) for inspection.
+If you select a payload from the list by selecting the check box next to the name, a ![Send a test payload icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears above the list of payloads. You can use this button to send a copy of the payload email to yourself (the currently logged in user) for inspection.
 
-If no payloads are available or if you want to create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Payloads** \> **Tenant payloads** tab or <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md#create-payloads).
+If no payloads are available or if you want to create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Payloads** \> **Tenant payloads** tab. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md#create-payloads).
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="The Select payload page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
 
 If you select a payload from the list by clicking anywhere in the row other than the check box, details about the payload are shown in a flyout:
 
 - The **Payload** tab contains an example and other details about the payload.
-- The **Login page** tab is available only for **Credential Harvest** or **Link in attachment** payloads and is described in the **Login page** subsection.
+- The **Login page** tab is available only for **Credential Harvest** or **Link in attachment** payloads and is described in the [Select a login page](#select-a-login-page) subsection.
+- The **Attachment** tab is available only for **Malware attachment**, **Link in attachment**, and **Oauth Consent Grant** payloads. This tab contains details about the attachment, include a preview.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
 If the simulation doesn't use **Credential Harvest** or **Link in attachment** payloads, or if you don't want to view or edit the login page that's used, click **Next** on the **Select payload and login page** page to continue.
 
-To view and configure the login page that's used in **Credential Harvest** or **Link in attachment** payloads, go to the **Login page** subsection.
+To view and configure the login page that's used in **Credential Harvest** or **Link in attachment** payloads, go to the [Select a login page](#select-a-login-page) subsection.
 
-### Login page
+### Select a login page
 
 > [!NOTE]
 > The **Login page** tab is available in the details flyout of a payload that you selected on the **Select payload and login page** page only in **Credential Harvest** or **Link in attachment** payloads.
@@ -171,7 +172,7 @@ When you're finished on the **Select a payload and login page** page, click **Ne
 
 On the **Configure OAuth payload** page, configure the following settings:
 
-- **App name**
+- **App name**: Enter a name for the payload.
 
 - **App logo**: Click **Browse** to select a .png, .jpeg, or .gif file to use. To remove a file after you've selected it, click **Remove**.
 
@@ -286,7 +287,7 @@ Use the following options on the page to assign trainings as part of the simulat
   - **Microsoft training experience (Recommended)**: This is the default value that has the following associated options to configure on the page:
     - Select one of the following options:
       - **Assign training for me (Recommended)**: This is the default value. We assign training based on a user's previous simulation and training results.
-      - **Select training courses and modules myself**: If you select this value, the next step in the wizard will be **Training assignment** where you find and select trainings. The steps are described in the **Training assignment** subsection.
+      - **Select training courses and modules myself**: If you select this value, the next step in the wizard will be **Training assignment** where you find and select trainings. The steps are described in the [Training assignment](#training-assignment) subsection.
     - **Due date**: Choose one of the following values:
       - **30 days after simulation ends**: This is the default value.
       - **15 days after simulation ends**
@@ -359,7 +360,7 @@ Select one of the following options:
     - **Add logo**: Click **Browse logo image** to find and select a .png, .jpeg, or .gif file. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, click **Remove uploaded logo image**.
     - **Select default language**: This setting is required. Select one of the following values: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
 
-  The remainder of the page has two tabs where you select the landing page to use:
+  The remainder of the **Selecting phish landing page** page has two tabs where you select the landing page to use:
 
   - **Global landing pages** tab: Contains the built-in landing pages.
   - **Tenant landing pages** tab: Contains any custom landing pages that you've created. To create a new landing page, click **Create new**. The details are explained in the next **Create a landing page** section.
@@ -413,9 +414,9 @@ When you click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Cre
    - **Mark this as default language**: For the first landing page you create, this setting is selected and unchangeable.
    - Landing page content: Two tabs are available:
 
-     - **Text** tab: A rich text editor is available to create your landing page. To see the typical font and formatting settings, toggle **Formatting controls** to ![Toggle on.](../../media/scc-toggle-on.png).
+     - **Text** tab: A rich text editor is available to create the landing page. To see the typical font and formatting settings, toggle **Formatting controls** to ![Toggle on.](../../media/scc-toggle-on.png) **On**.
 
-        The following controls are also available
+       The following controls are also available on the **Text** tab:
 
         - **Dynamic tag**: Select from the following tags:
 
@@ -446,11 +447,11 @@ When you click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Cre
 
    Back on the **Configure landing page** page, the landing page you created is listed on the page. In the **Action** colum, you can click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** or ![Preview icon.](../../media/m365-cc-sc-eye-icon.png) **Preview** to edit or view the landing page.
 
-   Click ![Add translation icon.](../../media/m365-cc-sc-create-icon.png) **Add translation** to create additions version of the landing page in other languages.
+   Click ![Add translation icon.](../../media/m365-cc-sc-create-icon.png) **Add translation** to create additional translations of the landing page in other languages.
 
-   Other than the flyout title changing to **Add translation**, the details are the same as the first landing page you created, except now the **Mark this as default language** check box is available. Only one landing page can be the default language.
+   Other than the flyout title changing to **Add translation**, the same options are available as the the **Add content in default language** flyout in the first landing page you created. Now the **Mark this as default language** check box is available to select. Only one translation of landing page can be the default language.
 
-   After you created two or more landing pages, the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon is available in the **Actions** column to delete any landing pages that aren't designated as the default language.
+   When two or more translations of the landing page are listed on the **Configure landing page** page, the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon is available in the **Actions** column to delete any landing page translations that aren't designated as the default language.
 
    When you're finished on the **Configure landing page** page, click **Next**.
 
@@ -504,7 +505,7 @@ On the **Select end user notification** page, select from the following notifica
 
   Back on the **Select end user notification** page, you're taken to the **[Launch details](#configure-the-simulation-launch-details)** page when you click **Next**.
 
-- **Customized end user notifications**:  No other configuration options are available on the page. When you click **Next**, you'll need to select or create and select a **Training assignment notification**, a **Training reminder notification**, and (optionally) a **Positive reinforcement notification** to use for the simulation as described in the next three subsections.
+- **Customized end user notifications**:  No other configuration options are available on the page. When you click **Next**, you'll need to select a **Training assignment notification**, a **Training reminder notification**, and (optionally) a **Positive reinforcement notification** to use for the simulation as described in the next three subsections.
 
 When you're finished on the **Select end user notification** page, click **Next**.
 
@@ -648,7 +649,11 @@ Click the ![Send a test icon.](../../media/m365-cc-sc-send-icon.png) **Send a te
 
 You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard to modify the settings.
 
-When you're finished, click **Submit**, and then click **Done**.
+When you're finished, click **Submit**.
+
+On the **New simulation created** page, you can use the links to launch a simulation, or view all simulations.
+
+When you're finished, click **Done**.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="The Review simulation page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
 
