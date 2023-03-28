@@ -23,7 +23,34 @@ search.appverid: met150
 
 # Microsoft Defender Antivirus updates - Previous versions for technical upgrade support only
 
-Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+
+## October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)
+
+- Security intelligence update version: **1.379.4.0**
+- Release date: **November 10, 2022**
+- Platform: **4.18.2210.6**
+- Engine: **1.1.19800.4**
+- Support phase: **Technical upgrade support (only)**
+
+### What's new
+
+- Addressed a quality issue that could result in poor responsiveness/usability
+- Improved hang detection in antivirus engine 
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capability 
+- Changed threat & vulnerability management (TVM)-warn and TVM-block action to block to resolve Intune's report 
+- Removed Clean Action from Intune policy for `ThreadSeverityDefaultAction` 
+- Added randomize scheduled task times configuration to Intune policy 
+- Added manageability for `DisableSMTPParsing` network protection 
+- Added improvement for behavior monitoring 
+- Normalized date format for event 1151 for Windows Defender 
+- Fixed a deadlock related to updating `\device\cdrom*` exclusions upon mounting a cdrom drive under certain conditions 
+- Improved PID information for threat detection 
+
+### Known Issues
+
+- None  
+
 
 ## September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)
 

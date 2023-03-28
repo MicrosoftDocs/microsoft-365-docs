@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: magarlan, chrigreen
-ms.date: 10/27/2022
+ms.date: 03/15/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -26,7 +26,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 You can now set up all your customers with granular delegated admin privileges (GDAP) through Microsoft 365 Lighthouse, regardless of their licenses or size. Lighthouse lets you quickly transition your organization to GDAP and begin the journey to least-privilege for your delegated access to customers. By setting up your organization with GDAP for the customer tenants you manage, users in your organization have the permissions necessary to do their work while keeping customer tenants secure.
 
-Delegated access via DAP or GDAP is a prerequisite for customer tenants to be fully onboarded to Lighthouse. Therefore, creating GDAP relationships with your customers may be the first step in managing your customer tenants in Lighthouse.
+Delegated access via delegated admin privileges (DAP) or GDAP is a prerequisite for customer tenants to be fully onboarded to Lighthouse. Therefore, creating GDAP relationships with your customers may be the first step in managing your customer tenants in Lighthouse.
 
 During the GDAP setup process, you'll assign roles to tiers of job functions for employees in your organization and then create GDAP templates that will assign those tiered roles to specific security groups with users for groups of customers. GDAP roles are scoped to [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference), and when you set up GDAP, you'll see recommendations for a set of roles needed for each tier.
 
@@ -135,11 +135,14 @@ If you want to reassign a customer tenant, rerun GDAP Setup and remove that cust
 
 1. From the **Review settings** page, review the settings you created, and then select **Finish**.
 
-2. Select **Done**.
+2. Select **Finish**.
 
-If any customer tenants already had a DAP relationship, during the no-consent window, these settings will be automatically applied. For customers without DAP, or if the no consent window has closed, choosing **Finish** will take you to the last page where a consent link is generated for each customer, as needed. Once the customer consents to the GDAP relationship, the rest of the settings will be automatically applied.
+> [!NOTE]
+> For customers with an existing DAP relationship, these settings will be automatically applied during the no-consent window.
+> 
+> For customers without an existing DAP relationship or if the no-consent window has closed, selecting **Finish** will take you to the last page of GDAP Setup, where a consent link is generated for each customer, as needed. From there, you can send the link to your customer's Global Admin so they can approve the GDAP relationship. Once the relationship is approved, rerun GDAP Setup to assign the security groups to the GDAP relationship created for that customer.
 
-Once you've completed GDAP setup, you can navigate to different steps to make any updates or changes to tiers, roles, security groups, or templates. The GDAP relationships will also be visible in Partner Center, and the security groups will be visible in Azure AD as well.
+Once you've completed GDAP Setup, you can navigate to different steps to make any updates or changes to tiers, roles, security groups, or templates. The GDAP relationships will also be visible in Partner Center, and the security groups will be visible in Azure AD as well.
 
 ## Related content
 

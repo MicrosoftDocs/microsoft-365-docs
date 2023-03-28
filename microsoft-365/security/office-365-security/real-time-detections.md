@@ -62,14 +62,14 @@ For more information, see [Email security with Explorer](email-security-in-micro
 
 ## Updated experience for Explorer and Real-time detections
 
-The experience for Threat Explorer and Real-time detections is updated to align with modern accessibility standards, and to optimize the workflow. For a short while, you will be able to toggle between the old experience and the new one.
+The experience for Threat Explorer and Real-time detections is updated to align with modern accessibility standards, and to optimize the workflow. For a short while, you'll be able to toggle between the old experience and the new one.
 
 > [!NOTE]
 > Toggling impacts only your account and does not impact anyone else within your tenant.
 
-Threat Explorer and Real-time detections is divided into the following views:
+Threat Explorer and Real-time detections are divided into the following views:
 
-- *All email*: Shows all email analyzed by Defender for office 365 and contains both good and malicious emails. This feature is only present in Threat Explorer and is not available for Real-time detections. By default, it is set to show data for two days, which can be expanded up to 30 days. This is also the default view for Threat Explorer.
+- *All email*: Shows all email analyzed by Defender for office 365 and contains both good and malicious emails. This feature is only present in Threat Explorer and isn't available for Real-time detections. By default, it's set to show data for two days, which can be expanded up to 30 days. This is also the default view for Threat Explorer.
 
 - *Malware view*: Shows emails on which a malware threat was identified. This is the default view for Real-time detections, and shows data for two days (can be expanded to 30 days).
 
@@ -85,7 +85,7 @@ Here are the common components within these experiences:
 
   - By default, the time filter is applied to the records, and is applied for two days.
 
-  - If you are applying multiple filters, they are applied in 'AND' mode and you can use the advanced filter to change it to 'OR' mode.
+  - If you're applying multiple filters, they're applied in 'AND' mode and you can use the advanced filter to change it to 'OR' mode.
 
   - You can use commas to add multiple values for the same filter.
 
@@ -104,9 +104,9 @@ Here are the common components within these experiences:
 
 - Results grid
 
-  - Results grid shows the email results based on the filters you have applied.
+  - Results grid shows the email results based on the filters you've applied.
 
-  - Based on the configuration set in your tenant, data will be shown in UTC or local timezone, with the timezone information available in the first column.
+  - Based on the configuration set in your tenant, data is shown in UTC or local timezone, with the timezone information available in the first column.
 
   - You can navigate to the individual email entity page from the list view by clicking the **Open in new window** icon.
 
@@ -141,7 +141,7 @@ Here are the common components within these experiences:
   > [!div class="mx-imgBorder"]
   > ![Export chart data](../../media/explorer-new-experience-export-chart-data.png)
 
-In addition to these features, you will also get updated experiences like *Top URLs*, *Top clicks*, *Top targeted users*, and *Email origin*. *Top URLs*, *Top clicks*, and *Top targeted users* can be further filtered based on the filter that you apply within Explorer.
+In addition to these features, you'll also get updated experiences like *Top URLs*, *Top clicks*, *Top targeted users*, and *Email origin*. *Top URLs*, *Top clicks*, and *Top targeted users* can be further filtered based on the filter that you apply within Explorer.
 
 ## Required licenses and permissions
 
