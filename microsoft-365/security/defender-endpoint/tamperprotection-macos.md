@@ -147,7 +147,7 @@ full_disk_access_enabled                    : true
 
 ### Manual configuration
 
-Use the following command:
+1. Use the following command:
 
    ```console
 sudo mdatp config tamper-protection enforcement-level --value block
