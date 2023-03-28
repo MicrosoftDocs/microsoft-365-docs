@@ -372,6 +372,8 @@
          items:
               - name: Threat analytics overview
                 href: threat-analytics.md
+              - name: Defender Threat Intelligence in Microsoft 365 Defender
+                href: defender-threat-intelligence.md
               - name: Understand the analyst report
                 href: threat-analytics-analyst-reports.md
        - name: Endpoint Attack Notifications
