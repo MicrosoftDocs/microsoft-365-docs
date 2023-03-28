@@ -24,7 +24,6 @@ ms.date: 10/19/2021
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
 - [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration)
@@ -50,8 +49,8 @@ To successfully register devices to Azure Active Directory, you'll need to ensur
 - Computers can authenticate with the domain controller
 - Computers have access to the following Microsoft resources from inside your organization's network:
   - /windows/iot/iot-enterprise/commercialization/licensing
-  - https://login.microsoftonline.com
-  - https://device.login.microsoftonline.com
+  - <https://login.microsoftonline.com>
+  - <https://device.login.microsoftonline.com>
 - Azure AD connect is configured to sync the computer objects. By default, computer OUs are in Azure AD connect sync scope. If the computer objects belong to specific organizational units (OUs), configure the OUs to sync in Azure AD Connect. To learn more about how to sync computer objects by using Azure AD Connect, see [Organizational unit–based filtering](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
 
 > [!IMPORTANT]
@@ -60,13 +59,12 @@ To successfully register devices to Azure Active Directory, you'll need to ensur
 > [!NOTE]
 > To successfully complete the onboarding flow, and independent of a device's Operating System, the Azure Active Directory state of a device can change, based on the devices' initial state:
 >
-> <br>
 >
->|Starting Device State|New Device State|
->|---|---|
->|Already AADJ or HAADJ|Remains as is|
->|Not AADJ or Hybrid Azure Active Directory Join (HAADJ) + Domain joined|Device is HAADJ'd|
->|Not AADJ or HAADJ + Not domain joined|Device is AADJ'd|
+> |Starting Device State|New Device State|
+> |---|---|
+> |Already AADJ or HAADJ|Remains as is|
+> |Not AADJ or Hybrid Azure Active Directory Join (HAADJ) + Domain joined|Device is HAADJ'd|
+> |Not AADJ or HAADJ + Not domain joined|Device is AADJ'd|
 >
 > Where AADJ represents Azure Active Directory Joined and HAADJ represents Hybrid Azure Active Directory Joined.
 
@@ -80,11 +78,10 @@ To see a list of all devices managed by Microsoft Defender for Endpoint, select 
 
 In the list, if a device's enrollment status is not "Success", select the device to see troubleshooting details in the side panel, pointing to the root cause of the error, and corresponding documentation.
 
-
 :::image type="content" source="./images/secconfig-mde-error.png" alt-text="The filter criteria applied on the device inventory page" lightbox="./images/secconfig-mde-error.png":::
 
-> [!NOTE] 
-> We are aware of an issue impacting the accurate detection of third-party MDMs when trying to use the security management feature and are working on a fix. 
+> [!NOTE]
+> We are aware of an issue impacting the accurate detection of third-party MDMs when trying to use the security management feature and are working on a fix.
 
 ## Run Microsoft Defender for Endpoint Client Analyzer on Windows
 
@@ -104,7 +101,7 @@ In the **Detailed Results** section of the report, the Client Analyzer also prov
 
 For example, as part of the Security Management onboarding flow, it is required for the Azure Active Directory Tenant ID in your Microsoft Defender for Endpoint Tenant to match the SCP Tenant ID that appears in the reports' **Device Configuration Management Details** section. If relevant, the report output will recommend to perform this verification.
 
-:::image type="content" source="images/detailed-results.png" alt-text="The page displaying the detailed results" lightbox="images/detailed-results.png"
+:::image type="content" source="images/detailed-results.png" alt-text="The page displaying the detailed results" lightbox="images/detailed-results.png":::
 
 ## General troubleshooting
 
@@ -143,7 +140,7 @@ From the information in the message, it's possible in most cases to understand w
 For Security Management for Microsoft Defender for Endpoint on Windows Server 2012 R2 domain joined computers, an update to Azure AD Connect sync rule "In from AD-Computer Join" is needed. This can be achieved by cloning and modifying the rule, which will disable the original "In from AD - Computer Join" rule. Azure AD Connect by default offers this experience for making changes to built-in rules.
 
 > [!NOTE]
->These changes need to be applied on the server where AAD Connect is running. If you have multiple instances of AAD Connect deployed, these changes must be applied to all instances.
+> These changes need to be applied on the server where AAD Connect is running. If you have multiple instances of AAD Connect deployed, these changes must be applied to all instances.
 
 1. Open the Synchronization Rules Editor application from the start menu. In the rule list, locate the rule named **In from AD – Computer Join**. **Take note of the value in the 'Precedence' column for this rule.**
 

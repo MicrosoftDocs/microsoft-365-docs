@@ -63,7 +63,7 @@ ms.date: 12/18/2020
 |Property|Type|Description|
 |---|---|---|
 |ID|Guid|Identity of the [Machine Action](machineaction.md) entity.|
-|type|Enum|Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "Live Response", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution", and "UnrestrictCodeExecution".|
+|type|Enum|Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "LiveResponse", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution", and "UnrestrictCodeExecution".|
 |scope|string|Scope of the action. "Full" or "Selective" for Isolation, "Quick" or "Full" for Anti-Virus scan.|
 |requestor|String|Identity of the person that executed the action.|
 |externalID|String|Id the customer can submit in the request for custom correlation.|
