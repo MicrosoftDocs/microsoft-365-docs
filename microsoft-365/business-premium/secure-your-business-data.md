@@ -1,5 +1,5 @@
 ---
-title: How to secure your business data with Microsoft 365 for business
+title: How to secure your business data with Microsoft 365
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -32,10 +32,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn best pratices to protect your business from ransomware, phishing, and malicious URLs or attachments with Microsoft 365 for business."
+description: "Learn best practices to protect your business from ransomware, phishing, and malicious URLs or attachments with Microsoft 365 for business."
 ---
 
-# Secure your business data with Microsoft 365 for business
+# Secure your business data with Microsoft 365
 
 **Applies to**
 
@@ -96,4 +96,3 @@ Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, Sh
 - [Microsoft 365 Business Premium—cybersecurity for small business](/microsoft-365/business-premium/)
 - [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md) (for more details about Defender for Business and Microsoft 365 Business Premium)
 - [Compare Microsoft endpoint security plans](../security/defender-endpoint/defender-endpoint-plan-1-2.md) (for securing and managing devices)
-

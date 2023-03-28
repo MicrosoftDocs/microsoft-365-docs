@@ -37,7 +37,7 @@ You must meet the licensing requirements for [group-based licensing](/azure/acti
 
 You can use allotments with any product available to users:
 
-- Office suites and standalone products
+- Microsoft 365 and standalone products
 - Enterprise and Mobility products
 - Dynamics 365 products
 

@@ -31,6 +31,8 @@ description: "Learn how to connect your domain to Microsoft 365."
 
 # Connect your domain to Microsoft 365 for business
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 ## Watch: Connect your domain to Microsoft 365

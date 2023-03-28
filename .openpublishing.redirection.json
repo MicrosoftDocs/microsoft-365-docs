@@ -1692,7 +1692,7 @@
     },
     {
       "source_path": "microsoft-365/business/security-features.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/secure-your-business-data",
+      "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
       "redirect_document_id": false
     },
     {
@@ -2767,7 +2767,7 @@
     },
     {
       "source_path": "microsoft-365/security-and-compliance/index.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/secure-your-business-data",
+      "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
       "redirect_document_id": false
     },
     {
@@ -7892,7 +7892,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/overview-m365-security.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/secure-your-business-data",
+      "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
       "redirect_document_id": false
     },
     {
@@ -10733,6 +10733,26 @@
   {
     "source_path": "microsoft-365/bookings/metrics-and-activity-tracking.md",
     "redirect_url": "/microsoft-365/bookings/bookings-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/admin/security-and-compliance/secure-your-business-data.md",
+    "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/deploy-microsoft-defender-antivirus.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/deploy-manage-report-microsoft-defender-antivirus",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/report-monitor-microsoft-defender-antivirus.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/deploy-manage-report-microsoft-defender-antivirus",
     "redirect_document_id": false
   }
  ]
