@@ -41,7 +41,7 @@ ms.service: microsoft-365-security
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](defender-for-office-365.md). If you're using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Safe Links is a feature in [Defender for Office 365](defender-for-office-365.md) that provides URL scanning and rewriting of inbound email messages in mail flow, and time-of-click verification of URLs and links in email messages and other locations. Safe Links scanning occurs in addition to the regular [anti-spam](anti-spam-protection-about.md) and [anti-malware](anti-malware-protection-about.md) in inbound email messages in Exchange Online Protection (EOP). Safe Links scanning can help protect your organization from malicious links that are used in phishing and other attacks.
+Safe Links is a feature in [Defender for Office 365](defender-for-office-365.md) that provides URL scanning and rewriting of inbound email messages in mail flow, and time-of-click verification of URLs and links in email messages, Teams messages and other locations. Safe Links scanning occurs in addition to the regular [anti-spam](anti-spam-protection-about.md) and [anti-malware](anti-malware-protection-about.md) in inbound email messages in Exchange Online Protection (EOP). Safe Links scanning can help protect your organization from malicious links that are used in phishing and other attacks.
 
 Watch this short video on how to protect against malicious links with Safe Links in Microsoft Defender for Office 365.
 
@@ -52,7 +52,7 @@ Watch this short video on how to protect against malicious links with Safe Links
 
 Safe Links protection is available in the following locations:
 
-- **Email messages**: Safe Links protections for links in email messages is controlled by Safe Links policies.
+- **Email messages**: Safe Links protections for links in email messages are controlled by Safe Links policies.
 
   For more information about Safe Links protection for email messages, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.
 
@@ -204,14 +204,14 @@ You turn on or turn off Safe Links protection for Office apps in Safe Links poli
 
 Safe Links protection for Office apps has the following client requirements:
 
-- Microsoft 365 Apps or Microsoft 365 Business Premium.
+- Microsoft 365 Apps or Microsoft 365 Business Premium:
   - Current versions of Word, Excel, and PowerPoint on Windows, Mac, or in a web browser.
   - Office apps on iOS or Android devices.
   - Visio on Windows.
   - OneNote in a web browser.
   - Outlook for Windows when opening saved EML or MSG files.
 
-- Office apps are configured to use modern authentication. For more information, see [How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](../../enterprise/modern-auth-for-office-2013-and-2016.md).
+- Supported Office apps and Microsoft 365 services are configured to use modern authentication. For more information, see [How modern authentication works for Office client apps](../../enterprise/modern-auth-for-office-2013-and-2016.md).
 
 - Users are signed in using their work or school accounts. For more information, see [Sign in to Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).
 
@@ -303,7 +303,7 @@ Examples of the values that you can enter and their results are described in the
 ## "Do not rewrite the following URLs" lists in Safe Links policies
 
 > [!NOTE]
-> Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow but might still be blocked at time of click. Use [allow URL entries in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) to override the Safe Links URL verdict.
+> Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow but might still be blocked at time of click. Use [allow URL entries in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-on-the-submissions-page) to override the Safe Links URL verdict.
 
 Each Safe Links policy contains a **Do not rewrite the following URLs** list that you can use to specify URLs that are not rewritten by Safe Links scanning. In other words, the list allows users who are included in the policy to access the specified URLs that would otherwise be blocked by Safe Links. You can configure different lists in different Safe Links policies. Policy processing stops after the first (likely, the highest priority) policy is applied to the user. So, only one **Do not rewrite the following URLs** list is applied to a user who is included in multiple active Safe Links policies.
 

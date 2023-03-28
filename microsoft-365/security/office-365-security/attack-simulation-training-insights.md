@@ -14,7 +14,7 @@ ms.custom:
 description: Admins can learn how Attack simulation training in the Microsoft 365 Defender portal affects users and can gain insights from simulation and training outcomes.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 3/7/2023
 ---
 
 # Insights and reports for Attack simulation training in Defender for Office 365
@@ -59,7 +59,8 @@ The **Behavior impact on compromise rate** card on the **Overview** tab shows ho
 
 The chart data itself shows the following information:
 
-- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this simulation (users compromised / total number of users who receive the simulation).
+- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this simulation (users compromised / total number of users who receive the simulation). To learn more about the predicted compromise rate (PCR), see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
+
 - **Actual compromise rate**: The actual percentage of people who were compromised by the simulation (actual users compromised / total number of users in your organization who received the simulation).
 
 If you hover over a data point in the chart, the actual percentage values are shown.
