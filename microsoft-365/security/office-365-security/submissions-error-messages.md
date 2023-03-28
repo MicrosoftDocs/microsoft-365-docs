@@ -10,10 +10,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
+  - tier1
 description: Learn about the errors that admins might encounter when they try to report email, URLs, and email attachments to Microsoft as false positives and false negatives.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 01/12/2023
 ---
 
 # Errors during admin submissions
@@ -25,11 +27,11 @@ search.appverid: met150
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-This article attempts to explain the common error messages tha you might receive as you try to [report emails, URLs, and email attachments to Microsoft](submissions-admin.md)
+This article attempts to explain the common error messages that you might receive as you try to [report emails, URLs, and email attachments to Microsoft](submissions-admin.md)
 
 ## This message didn't pass through our mail flow system, or the message metadata isn't available yet error
 
-If you encounter this error message, then either of the following conditions might have occured:
+If you encounter this error message, then either of the following conditions might have occurred:
 
 - You tried to submit an email message that wasn't filtered by Exchange Online Protection (EOP) or Microsoft Defender for Office 365 at the time of delivery.
 

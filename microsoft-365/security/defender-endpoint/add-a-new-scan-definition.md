@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/14/2022
 ---
 
 # Add, update or delete a scan definition
@@ -92,7 +93,7 @@ If successful, this method returns 200 - Ok response code and the updated Machin
 
 ## Example request to add a new scan
 
-Here is an example of a request that adds a new scan.
+Here's an example of a request that adds a new scan.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions
@@ -144,7 +145,7 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ## Example request to delete scans
 
-Here is an example of a request that deletes scans.
+Here's an example of a request that deletes scans.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/BatchDelete
@@ -158,7 +159,7 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ## Example request to update a scan
 
-Here is an example of a request that updates a scan.
+Here's an example of a request that updates a scan.
 
 ```http
 PATCH https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/a07c400a-f8e1-4329-ae66-7d3be65df0ec

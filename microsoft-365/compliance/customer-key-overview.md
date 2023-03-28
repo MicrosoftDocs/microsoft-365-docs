@@ -3,6 +3,7 @@ title: "Service encryption with Microsoft Purview Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp

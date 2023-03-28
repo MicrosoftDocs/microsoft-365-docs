@@ -18,6 +18,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Enable Conditional Access to better protect users, devices, and data

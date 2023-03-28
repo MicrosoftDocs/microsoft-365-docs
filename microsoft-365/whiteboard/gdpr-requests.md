@@ -4,6 +4,7 @@ ms.author: v-jdeweese
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
+ms.date: 07/05/2022
 audience: admin
 ms.topic: article
 ms.custom: 
@@ -12,7 +13,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to export, transfer, or delete personal information from Microsoft Whiteboard.
-
 ---
 
 # Manage GDPR data subject requests in Microsoft Whiteboard

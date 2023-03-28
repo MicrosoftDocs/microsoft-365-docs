@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 05/09/2022
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -34,16 +34,69 @@ Varies by province
 
 Various patterns covering:
 
-- Alberta
-- British Columbia
-- Manitoba
-- New Brunswick
-- Newfoundland/Labrador
-- Nova Scotia
-- Ontario
-- Prince Edward Island
-- Quebec
-- Saskatchewan
+Alberta
+- six digits
+- a hyphen
+- three digits
+
+Or
+
+- five to nine digits
+
+
+British Columbia
+- seven digits
+
+Manitoba
+- two letters
+- optional hyphen
+- two letters
+- optional hyphen
+- two letters
+- optional hyphen
+- one letter
+- three digits
+- two letters
+
+
+New Brunswick
+- five to seven digits
+
+Newfoundland/Labrador
+- one letter
+- nine digits
+
+
+Nova Scotia
+- five letters
+- optional hyphen
+- one digit; any of 0, 1, 2 or 3 
+- one digit
+- one digit zero or one
+- six digits
+
+Ontario
+- one letter
+- four digits
+- optional hyphen
+- five digits
+- one digit
+- one digit; any of 0, 1, 5, or 6  
+- one digit
+- one digit; any of 0, 1, 2 or 3 
+- one digit
+
+
+Prince Edward Island
+- five to six digits
+
+Quebec
+- one letter
+- twelve digits
+
+Saskatchewan
+- eight digits
+
 
 ## Checksum
 
