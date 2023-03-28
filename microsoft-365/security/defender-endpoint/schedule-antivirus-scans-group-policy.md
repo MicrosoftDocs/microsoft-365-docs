@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 02/24/2023
+ms.date: 03/06/2023
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.subservice: mde
@@ -60,7 +60,7 @@ For more information, see the [Manage when protection updates should be download
 | Scan | Specify the scan type to use for a scheduled scan | Quick scan |
 | Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never |
 | Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 a.m.). | 2 a.m. |
-| Root | Randomize scheduled task times |In Microsoft Defender Antivirus, randomize the start time of the scan to any interval from 0 to 23 hours. By default, scheduled tasks will begin at a random time within four hours of the time specified in Task Scheduler. <br/><br/>In [SCEP](/mem/intune/protect/certificates-scep-configure), randomize scans to any interval plus or minus 30 minutes. This can be useful in virtual machines or VDI deployments. | Enabled |
+| Root | Randomize scheduled task times |In Microsoft Defender Antivirus, randomize the start time of the scan to any interval from 0 to 23 hours. By default, scheduled tasks will begin at a random time within four hours of the time specified in Task Scheduler. | Enabled |
 
 ## Group Policy settings for scheduling scans for when an endpoint is not in use
 
