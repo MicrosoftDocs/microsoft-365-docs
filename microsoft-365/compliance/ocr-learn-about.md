@@ -67,7 +67,7 @@ Because it's an optional feature, your Global admin must set up pay-as-you-go bi
 | Devices | Data loss prevention <br> <br> Insider risk management<sup>3</sup> |
 
 <sup>1</sup> Supports outgoing emails only.<br>
-<sup>2</sup> Supports keywords as well as sensitive information types and trainable classifiers.<br>
+<sup>2</sup> Supports keywords as well as sensitive information types.<br>
 <sup>3</sup> Considers sensitive information types and trainable classifiers present in images for risk scoring.<br>
 
 <br>
