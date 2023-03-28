@@ -30,7 +30,7 @@ ms.date: 01/13/2023
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender for Endpoint on Android, which already protects enterprise users on Mobile Device Management (MDM) scenarios, now extends support to Mobile App Management (MAM), for devices that are not enrolled using Intune mobile device management (MDM). It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for mobile application management (MAM). This capability allows you to manage and protect your organization's data within an application.
+Microsoft Defender for Endpoint on Android, which already protects enterprise users on Mobile Device Management (MDM) scenarios, now extends support to Mobile App Management (MAM), for devices that aren't enrolled using Intune mobile device management (MDM). It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for mobile application management (MAM). This capability allows you to manage and protect your organization's data within an application.
 
 Microsoft Defender for Endpoint on Android threat information is applied by Intune App Protection Policies to protect these apps. App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A managed application has app protection policies applied to it and can be managed by Intune.
 
@@ -52,7 +52,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
   b. Select **Settings > Endpoints > Advanced Features > Microsoft Intune Connection** is turned on.
 
-  c. If the connection is not turned on, select the toggle to turn it on and then select **Save Preferences**.
+  c. If the connection isn't turned on, select the toggle to turn it on and then select **Save Preferences**.
 
      :::image type="content" source="images/enable-intune-connection.png" alt-text="The Advanced features section in the Microsoft 365 Defender portal." lightbox="images/enable-intune-connection.png":::
 
@@ -125,13 +125,13 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
 2. Select **Continue**. A screen is presented which recommends downloading and setting up of Microsoft Defender for Endpoint on Android app.
 
-3. Select **Download**. You will be redirected to the app store (Google play).
+3. Select **Download**. You'll be redirected to the app store (Google play).
 
 4. Install the Microsoft Defender for Endpoint (Mobile) app and launch back Managed app onboarding screen.
 
    :::image type="content" source="images/download-mde.png" alt-text="The illustrative pages that contain the procedure of downloading MDE and launching back the app-onboarding screen." lightbox="images/download-mde.png":::
 
-5. Click **Continue > Launch**. The Microsoft Defender for Endpoint app onboarding/activation flow is initiated. Follow the steps to complete onboarding. You will automatically be redirected back to Managed app onboarding screen, which now indicates that the device is healthy.
+5. Click **Continue > Launch**. The Microsoft Defender for Endpoint app onboarding/activation flow is initiated. Follow the steps to complete onboarding. You'll automatically be redirected back to Managed app onboarding screen, which now indicates that the device is healthy.
 
 6. Select **Continue** to log into the managed application.
 
@@ -169,7 +169,7 @@ Web protection helps to secure devices against web threats and protect users fro
 
 2. Provide a name and description to uniquely identify the policy. Target the policy to **'Selected apps'** and search for **'Microsoft Defender Endpoint for Android'**. Click the entry and then click **Select** and then **Next**.
 
-3. Add the key and value from the table below. Ensure that the **"DefenderMAMConfigs"** key is present in every policy that you create using Managed Apps route. For Managed Devices route, this key should not exist. When you are done, click **Next**.
+3. Add the key and value from the following table. Ensure that the **"DefenderMAMConfigs"** key is present in every policy that you create using Managed Apps route. For Managed Devices route, this key shouldn't exist. When you're done, click **Next**.
 
    | Key | Value Type | Default (true-enable, false-disable) | Description |
    | --- | --- | --- | --- |
@@ -184,7 +184,7 @@ Web protection helps to secure devices against web threats and protect users fro
 4. Include or exclude the groups you want the policy to apply to. Proceed to review and submit the policy.
 
 > [!NOTE]
-> Users need to enable location permission (which is an optional permission); this enables Defender for Endpoint to scan their networks and alert them when there are WiFi-related threats. If the location permission is denied by the user, Defender for Endpoint will only be able to provide limited protection against network threats and will only protect the users from rogue certificates.  
+> Users need to enable location permission (which is an optional permission); this enables Defender for Endpoint to scan their networks and alert them when there are WiFi-related threats. If the location permission is denied by the user, Defender for Endpoint will only be able to provide limited protection against network threats and will only protect the users from rogue certificates.
 
 ## Configure privacy controls
 
@@ -223,7 +223,7 @@ Use the following steps to enable Optional permissions for devices.
 1. Add **DefenderMAMConfigs** key and set the value as 1.
 
 1. To enable Optional permissions, enter value as **true** and assign this policy to users. By default, this value is set to false.
-For users with key set as true, the users will be able to onboard the app without giving these permissions.
+For users with key set as true, the users are able to onboard the app without giving these permissions.
 
 1. Select **Next** and assign this profile to targeted devices/users.
 
@@ -233,9 +233,9 @@ Users can install and open the app to start the onboarding process.
 
 1. If an admin has setup Optional permissions, then users can choose to skip the VPN or accessibility permission or both and complete onboarding.
 
-2. Even if the user has skipped these permissions, the device will be able to onboard, and a heartbeat will be sent.
+2. Even if the user has skipped these permissions, the device is able to onboard, and a heartbeat will be sent.
 
-3. Since permissions are disabled, Web protection will not be active. It will be partially active if one of the permissions is given.
+3. Since permissions are disabled, Web protection won't be active. It will be partially active if one of the permissions is given.
 
 4. Later, users can enable Web protection from within the app. This will install the VPN configuration on the device.
 

@@ -383,7 +383,7 @@ To confirm that the configuration policy has been applied to your test device, f
 
 ### Confirm Attack Surface Reduction - Attack surface reduction rules
 
-1. Before applying the policy on a test device, pen a PowerShell Window and type `Get-MpPreference`.
+1. Before applying the policy on a test device, open a PowerShell Window and type `Get-MpPreference`.
 
 2. This should respond with the following lines with no content:
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/16/2021
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -57,7 +57,7 @@ When you choose to use static scopes, you must then decide whether to apply the 
 
 Except Skype for Business, the default is that all instances for the selected locations are automatically included in the policy without you having to specify them as included.
 
-For example, **All recipients** for the **Exchange email** location. With this default setting, all existing user mailboxes will be included in the policy, and any new mailboxes created after the policy is applied will automatically inherit the policy.
+For example, **All mailboxes** for the **Exchange email** location. With this default setting, all existing user mailboxes will be included in the policy, and any new mailboxes created after the policy is applied will automatically inherit the policy.
 
 #### A policy with specific inclusions or exclusions
 
@@ -68,7 +68,7 @@ To use the optional configuration to scope your retention settings, make sure th
 > [!WARNING]
 > If you configure instances to include and then remove the last one, the configuration reverts to **All** for the location.  Make sure this is the configuration that you intend before you save the policy.
 >
-> For example, if you specify one SharePoint site to include in your retention policy that's configured to delete data, and then remove the single site, by default all SharePoint sites will then be subject to the retention policy that permanently deletes data. The same applies to includes for Exchange recipients, OneDrive accounts, Teams chat users, and so on.
+> For example, if you specify one SharePoint site to include in your retention policy that's configured to delete data, and then remove the single site, by default all SharePoint sites will then be subject to the retention policy that permanently deletes data. The same applies to includes for Exchange mailboxes, OneDrive accounts, Teams chat users, and so on.
 >
 > In this scenario, toggle the location off if you don't want the **All** setting for the location to be subject to the retention policy. Alternatively, specify exclude instances to be exempt from the policy.
 
@@ -76,17 +76,17 @@ To use the optional configuration to scope your retention settings, make sure th
 
 Locations in policies for retention identify specific Microsoft 365 services that support retention settings, such as Exchange email and SharePoint sites. Use the following section for the locations that have configuration details and possible exceptions that you need to be aware of when you select them for your policy.
 
-### Configuration information for Exchange email and Exchange public folders
+### Configuration information for Exchange mailboxes and Exchange public folders
 
-Both the **Exchange email** location and the **Exchange public folders** location require mailboxes to have at least 10 MB of data before retention settings will apply to them.
+Both the **Exchange mailboxes** location and the **Exchange public folders** location require mailboxes to have at least 10 MB of data before retention settings will apply to them.
 
-The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox. Shared mailboxes and resource mailboxes for equipment and rooms are also supported.
+The **Exchange mailboxes** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox. Shared mailboxes and resource mailboxes for equipment and rooms are also supported.
 
-Email contacts and Microsoft 365 group mailboxes aren't supported for Exchange email. For Microsoft 365 group mailboxes, select the **Microsoft 365 Groups** location instead. Although the Exchange location initially allows a group mailbox to be selected for a static scope, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" isn't a valid selection for this location.
+Email contacts and Microsoft 365 group mailboxes aren't supported for Exchange email. For Microsoft 365 group mailboxes, select the **Microsoft 365 Group mailboxes & sites** location instead. Although the Exchange location initially allows a group mailbox to be selected for a static scope, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" isn't a valid selection for this location.
 
 Depending on your policy configuration, [inactive mailboxes](inactive-mailboxes-in-office-365.md) might be included or not:
 
-- Static policy scopes include inactive mailboxes when you use the default **All recipients** configuration but aren't supported for [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded.
+- Static policy scopes include inactive mailboxes when you use the default **All mailboxes** configuration but aren't supported for [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded.
 
 - Adaptive policy scopes, by default, include inactive mailboxes when they meet the scope's query. You can exclude them by using the advanced query builder and the OPATH property *IsInactiveMailbox*:
     
@@ -102,16 +102,22 @@ The **Exchange public folders** location applies retention settings to all publi
 
 #### Exceptions for auto-apply policies configured for sensitive information types
 
-When you configure an auto-apply policy that uses sensitive information types and select the **Exchange email** location:
+When you configure an auto-apply policy that uses sensitive information types and select the **Exchange mailboxes** location:
 
 - See the important callout for [Auto-apply labels to content with specific types of sensitive information](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information).
 
 ### Configuration information for SharePoint sites and OneDrive accounts
 
-When you choose the **SharePoint sites** location, the policy for retention can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Unless you're using [adaptive policy scopes](#exceptions-for-adaptive-policy-scopes), team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 Groups** location that applies to content in the group's mailbox, site, and files.
+The location name for the SharePoint sites location changes, depending on whether you're using [adaptive policy scopes or static policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention). The name change reflects what type of sites are included:
+
+- Static policy scopes: **SharePoint classic and communication sites**
+    - Can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 Group mailboxes & sites** location that applies to content in the group's mailbox, site, and files.
+
+- Adaptive policy scopes: **SharePoint sites** 
+    - Can retain and delete documents in OneDrive sites and Microsoft 365 group-connected sites in addition to SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites.
 
 > [!TIP]
-> You can use a [filter in the SharePoint admin center](/sharepoint/customize-admin-center-site-list) or a [SharePoint PowerShell command](/powershell/module/sharepoint-online/get-sposite#example-10) to confirm whether a site is group-connected. For static scopes, these sites are supported with the **Microsoft 365 Groups** location.
+> You can use a [filter in the SharePoint admin center](/sharepoint/customize-admin-center-site-list) or a [SharePoint PowerShell command](/powershell/module/sharepoint-online/get-sposite#example-10) to confirm whether a site is group-connected.
 
 For detailed information about what's included and excluded when you configure retention settings for SharePoint and OneDrive, see [What's included for retention and deletion](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
 
@@ -126,15 +132,10 @@ To specify individual OneDrive accounts, see [Get a list of all user OneDrive UR
 >
 > Because of the challenges of reliably specifying URLs for individual users to include or exclude for static scopes, [adaptive scopes](purview-adaptive-scopes.md) with the **User** scope type are better suited for this purpose.
 
-#### Exceptions for adaptive policy scopes
 
-When you configure a policy for retention that uses adaptive policy scopes and select the **SharePoint sites** location:
+### Configuration information for Microsoft 365 Group mailboxes & sites
 
-- OneDrive sites and Microsoft 365 group-connected sites are included in addition to SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites.
-
-### Configuration information for Microsoft 365 Groups
-
-To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Microsoft 365 Groups** location. For retention policies, this location includes the group mailbox and SharePoint teams site. For retention labels, this location includes the SharePoint teams site only.
+To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Microsoft 365 Group mailboxes & sites** location. For retention policies, this location includes the group mailbox and SharePoint teams site. For retention labels, this location includes the SharePoint teams site only.
 
 For detailed information about which items are included and excluded for Microsoft 365 Groups:
 - For group mailboxes, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion) for Exchange retention.
@@ -143,9 +144,9 @@ For detailed information about which items are included and excluded for Microso
 Mailboxes that you target with this policy location require at least 10 MB of data before retention settings will apply to them.
 
 > [!NOTE]
-> Even though a Microsoft 365 group has an Exchange mailbox, a retention policy for the **Exchange email** location won't include content in Microsoft 365 group mailboxes.
+> Even though a Microsoft 365 group has an Exchange mailbox, a retention policy for the **Exchange mailboxes** location won't include content in Microsoft 365 group mailboxes.
 
-If you use static scopes: Although the **Exchange email** location for a static scope initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you'll see an error that "RemoteGroupMailbox" isn't a valid selection for the Exchange location.
+If you use static scopes: Although the **Exchange mailboxes** location for a static scope initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you'll see an error that "RemoteGroupMailbox" isn't a valid selection for the Exchange location.
 
 By default, a retention policy applied to a Microsoft 365 group includes the group mailbox and SharePoint teams site. Files stored in the SharePoint teams site are covered with this location, but not Teams chats or Teams channel messages that have their own retention policy locations.
 
@@ -158,15 +159,15 @@ To return to the default value of both the mailbox and SharePoint site for the s
 
 #### Exceptions for auto-apply policies configured for sensitive information types
 
-When you configure an auto-apply policy that uses sensitive information types and select the **Microsoft 365 Groups** location:
+When you configure an auto-apply policy that uses sensitive information types and select the **Microsoft 365 Group mailboxes & sites** location:
 
-- Microsoft 365 group mailboxes aren't included. To include these mailboxes in your policy, select the **Exchange email** location instead.
+- Microsoft 365 group mailboxes aren't included. To include these mailboxes in your policy, select the **Exchange mailboxes** location instead.
 
 #### What happens if a Microsoft 365 group is deleted after a policy is applied
 
 When a policy for retention (static policy scope or adaptive) is applied to a Microsoft 365 group, and that group is then deleted from Azure Active Directory:
 
-- The group-connected SharePoint site is preserved and continues to be managed by the retention policy with the **Microsoft 365 Groups** location. The site is still accessible to the people who had access to it before the group was deleted, and any new permissions must now be managed via SharePoint.
+- The group-connected SharePoint site is preserved and continues to be managed by the retention policy with the **Microsoft 365 Group mailboxes & sites** location. The site is still accessible to the people who had access to it before the group was deleted, and any new permissions must now be managed via SharePoint.
     
     At this point, you can't exclude the site from the Microsoft 365 Groups location, because you can't specify the deleted group. If you need to release the retention policy from this site, contact Microsoft Support. For example, [open a support request in the Microsoft 365 Admin Center](/microsoft-365/admin/get-help-support#online-support).
 
@@ -179,7 +180,7 @@ When a policy for retention (static policy scope or adaptive) is applied to a Mi
 
 Unlike Exchange email, you can't toggle the status of the Skype location on to automatically include all users, but when you turn on that location, you must then manually choose the users whose conversations you want to retain:
 
-![Choose Skype location for retention policies.](../media/skype-location-retention-policies.png)
+:::image type="content" source="../media/skype-location-retention-policies.png" alt-text="The Skype for Business retention policy location requires you to manually add users.":::
 
 After you select this **Edit** option, in the **Skype for Business** pane you can quickly include all users by selecting the hidden box before the **Name** column. However, it's important to understand that each user counts as a specific inclusion in the policy. So if you include 1,000 users by selecting this box, it's the same as if you manually selected 1,000 users to include, which is the maximum supported for Skype for Business.
 
