@@ -32,6 +32,8 @@ ms.date: 12/08/2022
 
 # Payment options for your Microsoft business subscription
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 You can use a credit or debit card, or bank account to pay for your Microsoft business subscription. For qualifying customers, you can pay by invoice, using check or electronic funds transfer (EFT). If you have a billing profile, your options are slightly different. For more information, see [How to pay for your subscription with a billing profile](pay-for-subscription-billing-profile.md). If you're not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md).
 
 **Just want to find out where to send your invoice payment?** If you currently pay your invoice by check or EFT, see [Where do I send my check or EFT payment?](#where-do-i-send-my-check-or-eft-payment)
