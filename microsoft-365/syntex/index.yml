@@ -116,7 +116,7 @@ landingContent:
           - text: Content query
             url: metadata-search.md
           - text: Content processing
-            url: content-processing-create-rules.md
+            url: content-processing-overview.md
 
     # Card 7
   - title: Adoption
@@ -153,4 +153,6 @@ landingContent:
             url: powershell-syntex-intro.md
           - text: Syntex Model REST API
             url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
-
+          - text: Syntex-SharePoint Advanced Management
+            url: /sharepoint/advanced-management
+ 

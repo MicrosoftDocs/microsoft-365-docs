@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/23/2023
+ms.date: 03/24/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,7 +25,7 @@ description: "Configure a default sensitivity label for a SharePoint document li
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This feature is in preview and subject to change. It will require a [Microsoft Syntex Advanced Management license](/sharepoint/advanced-management) when the feature becomes generally available (GA).
+> This feature is in preview and subject to change. It will be included with [Microsoft Syntex Advanced Management license](/sharepoint/advanced-management) when the feature becomes generally available (GA).
 
 When SharePoint is [enabled for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md), you can configure a default label for document libraries. Then, any new files uploaded to that library, or existing files edited in the library will have that label applied if they don't already have a sensitivity label, or they have a sensitivity label but with [lower priority](sensitivity-labels.md#label-priority-order-matters).
 
@@ -82,17 +82,7 @@ If you need to review a list of file types that are supported by sensitivity lab
 
 ## How to configure a default sensitivity label for a SharePoint document library
 
-For an existing document library:
-
-1. In SharePoint, navigate to the document library \> **Settings** \> **Library settings**.
-
-2. From the **Library settings** flyout pane, select **Default sensitivity labels**, and then select a label from the drop-down box. For example:
-    
-    ![Screenshot that shows configuring a default sensitivity label for a SharePoint library.](../media/default-sensitivity-label-spo2.png)
-    
-    Although you see the setting mentions support for PDF files, this file type isn't currently supported for this scenario.
-
-If you're creating a new document library, you can configure the same **Default sensitivity labels** setting from the **Create document library** flyout pane.
+This configuration is done by a SharePoint site admin: [Add a sensitivity label to SharePoint document library](https://support.microsoft.com/office/54b1602b-db0a-4bcb-b9ac-5e20cbc28089).
 
 ## Monitoring application of library default sensitivity labels
 
@@ -119,6 +109,23 @@ To map sensitivity label GUIDs to label names, use the [Get-Label](/powershell/m
 
     ```powershell
     Get-Label -Identity "<GUID>" | Name
+
+## How to turn off this feature
+
+If you need to, you can turn off this feature that supports a default sensitivity label for SharePoint document libraries. This is a tenant-level setting that requires you to use the [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *DisableDocumentLibraryDefaultLabeling* parameter set to **True** by using the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online):
+
+```powershell
+Set-SpoTenant -DisableDocumentLibraryDefaultLabeling $true
+```
+
+After you run this command, you won't see the option to configure  **Default sensitivity labels** for a document library. You won't be able to select a default sensitivity label for new or existing libraries.
+
+For document libraries that were previously configured for a default sensitivity label:
+
+- The label selection for the document library remains but is deactivated so new files won't have the selected sensitivity label applied.
+- Sensitivity labels that were applied as a default label aren't removed.
+
+As with all tenant-level configuration changes for SharePoint, it takes about 15 minutes for the change to take effect.
 
 ## Next steps
 

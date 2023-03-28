@@ -141,7 +141,7 @@ sections:
         answer: |
           A License Pool groups licenses by product type. Microsoft Volume Licensing organizes products into three pools:
 
-          - Applications (for example, editions of Office)
+          - Applications (for example, editions of Microsoft 365)
           - Systems (for example, versions of the Windows operating system)
           - Servers (for example, Exchange Server, SQL Server, and Windows Server)
 

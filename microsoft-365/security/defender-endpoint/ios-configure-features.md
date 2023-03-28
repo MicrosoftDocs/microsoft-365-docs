@@ -98,8 +98,8 @@ This configuration is available for both the enrolled (MDM) devices as well as u
 
 Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to configure Network Protection. This configurations is available for both enrolled devices through MDM config and unenrolled devices through MAM config.
 
->[!NOTE]
->Only one policy should be created for Network Protection, either MDM or MAM.
+> [!NOTE]
+> Only one policy should be created for Network Protection, either MDM or MAM.
 
 **For enrolled devices (MDM)**:
 
@@ -301,6 +301,8 @@ Defender for Endpoint on iOS enables admins to configure custom indicators on iO
 
 > [!NOTE]
 > Defender for Endpoint on iOS supports creating custom indicators only for IP addresses and URLs/domains.
+>
+> For iOS, no alerts are generated on Microsoft 365 Defender when the URL or IP set in the indicator is accessed.
 
 ## Configure vulnerability assessment of apps
 
