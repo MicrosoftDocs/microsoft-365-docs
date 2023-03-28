@@ -23,7 +23,9 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 07/15/2021
 ---
+
 # Step 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]

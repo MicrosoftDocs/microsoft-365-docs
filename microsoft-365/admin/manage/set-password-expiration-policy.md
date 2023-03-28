@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -33,6 +34,8 @@ description: "Learn how an admin can set a password expiration policy for your b
 ---
 
 # Set the password expiration policy for your organization
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 ## Before you begin
 
@@ -64,7 +67,7 @@ Follow the steps below if you want to set user passwords to expire after a speci
 1. Type how often passwords should expire. Choose a number of days from 14 to 730.
  
 > [!IMPORTANT]
-> Password expiration notifications are no longer supported in the Microsoft 365 admin center and the Office apps or Office web apps.
+> Password expiration notifications are no longer supported in the Microsoft 365 admin center and Microsoft 365 apps.
   
 ## Important things you need to know about the password expiration feature
   

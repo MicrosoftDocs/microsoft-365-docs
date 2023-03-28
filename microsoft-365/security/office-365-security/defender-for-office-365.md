@@ -5,7 +5,6 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-
 ms.localizationpriority: high
 search.appverid:
   - MET150
@@ -13,7 +12,7 @@ search.appverid:
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
   - highpri
 ms.custom:
   - seo-marvel-apr2020
@@ -21,11 +20,13 @@ ms.custom:
 description: Best setup of Microsoft Defender for Office 365 including Safe Attachments, Safe Links, advanced anti-phishing tools, reporting tools, and threat intelligence capabilities.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 01/31/2023
 ---
+
 # Microsoft Defender for Office 365
 
 > [!IMPORTANT]
->If your browser is being blocked by Safe Links and Safe Attachment pages, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
+> If your browser is being blocked by Safe Links and Safe Attachment pages, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 

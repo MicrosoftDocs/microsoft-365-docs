@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.date: 01/23/2018
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise

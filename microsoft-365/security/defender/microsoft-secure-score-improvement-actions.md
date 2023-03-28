@@ -12,16 +12,17 @@ ms.author: siosulli
 author: siosulli
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
+ms.date: 02/16/2021
 ---
 
 # Assess your security posture with Microsoft Secure Score
@@ -61,7 +62,7 @@ This view is what it will look like if you've included all possible score views:
 
 The **recommended actions** tab lists the security recommendations that address possible attack surfaces. It also includes their status (to address, planned, risk accepted, resolved through third party, resolved through alternate mitigation, and completed). You can search, filter, and group all the recommended actions.
 
-Once you have completed an action it can take between 24-48 hours for the changes to be reflected in your secure score.  
+Once you have completed an action it can take between 24-48 hours for the changes to be reflected in your secure score.
 
 ### Ranking
 
@@ -69,7 +70,7 @@ Ranking is based on the number of points left to achieve, implementation difficu
 
 ### View recommended action details
 
-When you select a specific recommended action, a full page flyout appears.  
+When you select a specific recommended action, a full page flyout appears.
 
 :::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="Screenshot that shows the flyout of a recommended action in the Microsoft 365 Defender portal." lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
 
@@ -94,10 +95,10 @@ Choose any statuses and record notes specific to the recommended action.
 
 You won't be able to choose a status for Secure Score recommended actions in the "Device" category, instead, you'll be directed to the associated [Microsoft Defender Vulnerability Management security recommendation](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) to take action.
 
->[!NOTE]
->If you choose to create a 'Global exception' in the Defender Vulnerability management security recommendation, the status in the Microsoft Secure Score recommended action will be updated with the exception justification. Updates may take up to 2 hours.
+> [!NOTE]
+> If you choose to create a 'Global exception' in the Defender Vulnerability management security recommendation, the status in the Microsoft Secure Score recommended action will be updated with the exception justification. Updates may take up to 2 hours.
 >
->If you choose to create an 'Exception per device group' in the Defender Vulnerability manage security recommendation, Secure Score will not be updated and the recommended action will remain as 'To address'.
+> If you choose to create an 'Exception per device group' in the Defender Vulnerability manage security recommendation, Secure Score will not be updated and the recommended action will remain as 'To address'.
 
 #### Completed recommended actions
 
@@ -113,7 +114,7 @@ The section called **At a glance** will tell you the category, attacks it can pr
 
 The **Implementation** section shows any prerequisites, step-by-step next steps to complete the recommended action, the current implementation status of the recommended action, and any learn more links.
 
-Prerequisites include any licenses that are needed or actions to be completed before the recommended action is addressed. Make sure you have enough seats in your license to complete the recommended action and that those licenses are applied to the necessary users.  
+Prerequisites include any licenses that are needed or actions to be completed before the recommended action is addressed. Make sure you have enough seats in your license to complete the recommended action and that those licenses are applied to the necessary users.
 
 ## We want to hear from you
 

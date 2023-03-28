@@ -4,14 +4,16 @@ f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 03/09/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.localizationpriority: high
+ms.localizationpriority: normal
 search.appverid:
 - MET150
 ms.collection: 
 - highpri
+- Tier1
 - Ent_O365
 - Strat_O365_Enterprise
 - m365solution-3tiersprotection
@@ -25,9 +27,11 @@ description: "Learn how to deploy teams with protection for sensitive data."
 
 # Configure teams with protection for sensitive data
 
+[!INCLUDE[Advanced Management](../includes/advanced-management.md)]
+
 In this article, we look at setting up a team for a sensitive level of protection. Be sure you've completed the steps in [Deploy teams with baseline protection](configure-teams-baseline-protection.md) before following the steps in this article. The sensitive tier offers the following additional protections over the baseline tier:
 
-- A sensitivity label for the team that allows you to turn guest sharing on or off and limits access to SharePoint content to web-only for unmanaged devices. This label can also be used to classify files.
+- A sensitivity label for the team that allows you to turn guest sharing on or off and limits access to SharePoint content to web-only for unmanaged devices. This label is also used as the default label for files.
 - A more restrictive default sharing link type
 - Only team owners can create private channels.
 
@@ -51,9 +55,9 @@ To allow or block guest sharing, we use a combination of a sensitivity label for
 
 ## Sensitivity labels
 
-For the sensitive level of protection, we'll be using a sensitivity label to classify the team. This label can also be used to classify individual files in this or other teams, or in other file locations such as SharePoint or OneDrive. 
+For the sensitive level of protection, we'll be using a sensitivity label to classify the team. We'll also use this label to classify individual files in the team. (It can also be used on files in other file locations such as SharePoint or OneDrive.)
 
-As a first step, you must enable sensitivity labels for Teams. See [Use sensitivity labels to protect content in Microsoft Teams, Office 365 Groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md) for details.
+As a first step, you must enable sensitivity labels for Teams. See [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 Groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md) for details.
 
 If you already have sensitivity labels deployed in your organization, consider how this label fits with your overall label strategy. You can change the name or settings if needed to meet the needs of your organization.
 
@@ -61,23 +65,25 @@ Once you have enabled sensitivity labels for Teams, the next step is to create t
 
 To create a sensitivity label
 1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
-2. Under **Solutions**, click **Information protection**.
-3. Click **Create a label**.
-4. Give the label a name. We suggest **Sensitive**, but you can choose a different name if that one is already in use.
-5. Add a display name and description, and then click **Next**.
-6. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and click **Next**.
-7. On the **Choose protection settings for files and emails** page, click **Next**.
-8. On the *Auto-labeling for files and emails** page, click **Next**.
-9. On the **Define protection settings for groups and sites** page, select **Privacy and external user access settings** and **Device access and external sharing settings** and click **Next**.
-10. On the **Define privacy and external user access settings** page, under **Privacy**, select the **Private** option.
-11. If you want to allow guest access, under **External user access**, select **Let Microsoft 365 Group owners add people outside your organization to the group as guests**.
-12. Click **Next**.
-13. On the **Define external sharing and device access settings** page, select **Control external sharing from labeled SharePoint sites**.
-14. Under **Content can be shared with**, choose **New and existing guests** if you're allowing guest access or **Only people in your organization** if not.
-15. Under **Access from unmanaged devices**, choose **Allow limited, web-only access**.
-16. Click **Next**.
-17. On the **Auto-labeling for database columns** page, click **Next**.
-18. Click **Create label**, and then click **Done**.
+1. Under **Solutions**, click **Information protection**.
+1. Click **Create a label**.
+1. Give the label a name. We suggest **Sensitive**, but you can choose a different name if that one is already in use.
+1. Add a display name and description, and then click **Next**.
+1. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and clear **Include meetings**.
+1. Click **Next**.
+1. On the **Choose protection settings for files and emails** page, click **Next**.
+1. On the **Auto-labeling for files and emails** page, click **Next**.
+1. On the **Define protection settings for groups and sites** page, select **Privacy and external user access settings** and **External sharing and Conditional Access settings** and click **Next**.
+1. On the **Define privacy and external user access settings** page, under **Privacy**, select the **Private** option.
+1. If you want to allow guest access, under **External user access**, select **Let Microsoft 365 Group owners add people outside your organization to the group as guests**.
+1. Click **Next**.
+1. On the **Define external sharing and device access settings** page, select **Control external sharing from labeled SharePoint sites**.
+1. Under **Content can be shared with**, choose **New and existing guests** if you're allowing guest access or **Only people in your organization** if not.
+1. Select **Use Azure AD Conditional Access to protect labeled SharePoint sites**.
+1. Choose the **Determine whether users can access SharePoint sites from unmanaged devices** option, and then choose **Allow limited, web-only access**.
+1. Click **Next**.
+1. On the **Auto-labeling for database columns** page, click **Next**.
+1. Click **Create label**, and then click **Done**.
 
 Once you've created the label, you need to publish it to the users who will use it. For sensitive protection, we'll make the label available to all users. You publish the label in the Microsoft Purview compliance portal, on the **Label policies** tab of the **Information protection** page. If you have an existing policy that applies to all users, add this label to that policy. If you need to create a new policy, see [Publish sensitivity labels by creating a label policy](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
@@ -111,10 +117,11 @@ You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who
 
 ## SharePoint settings
 
-Each time you create a new team with the sensitive label, there are two steps to do in SharePoint:
+Each time you create a new team with the sensitive label, there are three steps to do in SharePoint:
 
 - Update the guest sharing settings for the site in the SharePoint admin center to update the default sharing link to *Specific people*.
 - Update the site sharing settings in the site itself to prevent members from sharing the site.
+- Choose a default sensitivity label for the document library connected to the team.
 
 ### Site default sharing link settings
 
@@ -142,6 +149,23 @@ To configure owners-only site sharing
 5. In the **Site permissions** pane, under **Site sharing**, click **Change how members can share**.
 6. Under **Sharing permissions**, choose **Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**, and then click **Save**.
 
+### Choose a default sensitivity label for files
+
+We'll use the sensitivity label that we created as the default sensitivity label for the site document library that is connected to Teams. This will automatically apply the highly sensitive label to any new label-compatible files that are uploaded to the library. (This requires a Microsoft Syntex - SharePoint Advanced Management license.)
+
+To set a default sensitivity label for a document library
+
+1. In Teams, navigate to the **General** channel of the team you want to update.
+
+1. In the tool bar for the team, click **Files**.
+
+1. Click **Open in SharePoint**.
+
+1. In the SharePoint site, open **Settings** and then choose **Library settings**.
+
+1. From the **Library settings** flyout pane, select **Default sensitivity labels**, and then select the highly sensitive label from the drop-down box.
+
+For more details about how default library labels work, see [Configure a default sensitivity label for a SharePoint document library](/microsoft-365/compliance/sensitivity-labels-sharepoint-default-label).
 
 ## Related topics
 

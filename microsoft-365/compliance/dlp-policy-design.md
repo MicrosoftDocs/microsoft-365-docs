@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 12/14/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -31,6 +31,7 @@ If you are new to Microsoft Purview DLP, it's helpful to work through these arti
 
 If you are new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
 
+1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
@@ -51,6 +52,7 @@ You should be able to summarize the business intent for every policy you have in
 Remember from [DLP policy configuration overview](dlp-learn-about-dlp.md#dlp-policy-configuration-overview) that all DLP policies require that you:
 
 - Choose what you want to monitor
+- Choose the [Policy Scoping](dlp-policy-reference.md#policy-scoping)(preview)
 - Choose where you want to monitor
 - Choose the conditions that must be matched for a policy to be applied to an item
 - Choose the action to take when the policy conditions are met
@@ -63,12 +65,15 @@ As you develop a policy design, you'll likely modify and extend the statement.
 
 ### Map business needs to policy configuration
 
-Let's break the example draft statement down and map it to DLP policy configuration points.
+Let's break the example draft statement down and map it to DLP policy configuration points. This example assumes that you're using an unrestricted DLP admin account and that administrative units are not configured.
+
+> [!IMPORTANT]
+> Be sure you understand the difference between an unrestricted administrator and an administrative unit restricted administrator [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) before you start.
 
 |Statement|Configuration question answered and configuration mapping|
 |---|---|
 |"We are a U.S. based organization, and we need  to detect Office documents that contain sensitive health care information covered by HIPAA...|- **What to monitor**: Office docs, use the [U.S. Health Insurance Act (HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) template </br>- **Conditions for a match**: (preconfigured but editable) - item contains U.S. SSN and Drug Enforcement Agency (DEA) number, International Classification of Diseases (ICD-9-CM), International Classification of Diseases (ICD-10-CM), content is shared with people outside my organization  </br> - drives conversations to clarify the triggering threshold for detection like [confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels), and [instance count](dlp-policy-reference.md#content-contains) (called leakage tolerance).|
-|...that are stored in OneDrive/SharePoint and protect against that information being shared in Teams chat and channel messages...|- **Where to monitor**:  [Location scoping](dlp-policy-reference.md#locations) by including or excluding OneDrive and SharePoint sites and Teams chat/channel accounts or distribution groups.|
+|...that are stored in OneDrive/SharePoint and protect against that information being shared in Teams chat and channel messages...|- **Where to monitor**:  [Location scoping](dlp-policy-reference.md#locations) by including or excluding OneDrive and SharePoint sites and Teams chat/channel accounts or distribution groups. **Policy scoping** (preview): [Full directory](dlp-policy-reference.md#policy-scoping) |
 |...and restrict everyone from sharing those items with unauthorized third parties."|- **Actions to take**: [You add](dlp-policy-reference.md#actions) *Restrict access or encrypt the content in Microsoft 365 locations* </br> - drives conversation on what actions to take when a policy is triggered including protective actions like sharing restrictions, awareness actions like notifications and alerts, and user empowerment actions like allow user overrides of a blocking action|
 
 This example doesn't cover all the configuration points of a DLP policy, it would need to be expanded. But it should get you thinking in the right direction as you develop your own DLP policy intent statements.
@@ -131,7 +136,7 @@ Here's a video that shows how you'd map two complex policy intent statements to 
 
 9. Document the configuration of all the policy settings and review them with your stakeholders. You can re-use your policy intent statement mapping to configuration points, which is now fully fleshed out.
 
-10. [Create a](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) draft policy and refer back to your [policy deployment](dlp-overview-plan-for-dlp.md#policy-deployment) plan.
+10. [Create a](dlp-create-deploy-policy.md) draft policy and refer back to your [policy deployment](dlp-overview-plan-for-dlp.md#policy-deployment) plan.
 
 <!--## Policy design examples
 
@@ -193,4 +198,4 @@ Here are some examples of more detailed policy intent statement to configuration
 - [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
 - [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference)
 - [Data Loss Prevention policy tips reference](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)

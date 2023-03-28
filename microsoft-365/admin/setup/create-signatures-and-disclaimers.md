@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: twerner
 author: twernermsft
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -34,6 +35,8 @@ description: "Manage email signatures, including legal disclaimers or disclosure
 ---
 
 # Create organization-wide signatures and disclaimers
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
@@ -126,4 +129,3 @@ For information about using PowerShell, see [Organization-wide message disclaime
 [Migrate email and contacts to Microsoft 365](migrate-email-and-contacts-admin.md) (video)\
 [User email settings](../email/office-365-user-email-settings.md) (article)\
 [Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)
-

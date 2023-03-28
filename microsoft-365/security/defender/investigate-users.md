@@ -11,7 +11,6 @@ f1.keywords:
 ms.author: diannegali
 author: diannegali
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.collection: 
   - m365-security
@@ -19,7 +18,9 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
+ms.date: 02/16/2021
 ---
+
 # Investigate users in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -94,7 +95,7 @@ Defender for Identity pulls tags out of Active Directory to give you a single in
 
 For more information, see [Defender for Identity entity tags in Microsoft 365 Defender](/defender-for-identity/entity-tags).
 
->[!NOTE]
+> [!NOTE]
 > The organization tree section and the account tags are available when a Microsoft Defender for Identity license is available.
 
 ## Alerts
@@ -110,7 +111,7 @@ You can see all active alerts involving the user from the last 180 days in this 
 - Groups - this section includes all observed on-premises groups for the identity, as reported by Defender for Identity.
 - Lateral movement paths - this section includes all profiled lateral movement paths from the on-premises environment detected by Defender for Identity.
 
->[!NOTE]
+> [!NOTE]
 > Groups and lateral movement paths are available when a Microsoft Defender for Identity license is available.
 
 Selecting the **Lateral movements** tab lets you view a fully dynamic and clickable map where you can see the lateral movement paths to and from a user. An attacker can use the path information to infiltrate your network.

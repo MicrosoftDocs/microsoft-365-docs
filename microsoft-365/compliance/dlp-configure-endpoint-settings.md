@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -124,6 +124,28 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 - /opt/*
 - /Users/*/Library/Application Support/Microsoft/Teams/*
 
+### Network share coverage and exclusions (preview)
+
+> [!IMPORTANT]
+> If you want to use Network share coverage and exclusions, you have to register your tenant at [Network share coverage](https://aka.ms/networkfileshares-edlp).
+
+**Network share coverage and exclusions (preview)** extends endpoint DLP policies and actions to new and edited files on network shares and mapped network drives. If [just in time protection (preview)](endpoint-dlp-learn-about.md#just-in-time-protection-preview) is also enabled, it will also be extended to cover network shares and mapped drives when you enable network share coverage and exclusions. If you want to exclude a specific network path for all monitored devices, add the path value in **Exclude these network share paths**.
+
+|Network share coverage and exclusions (preview) |Just in time protection (preview) |Resultant behavior  |
+|---------|---------|---------|
+|Enabled     |Disabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to.  [Devices actions](dlp-policy-reference.md#devices-actions)        |
+|Disabled    |Enabled         |- Just in time protection is applied only to the files that are on storage devices that are local to the endpoint. |
+|Enabled     |Enabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to. [Devices actions](dlp-policy-reference.md#devices-actions) </br>- Just in time protection is applied to all the network shares and mapped drives that the device is connected to.         |
+
+
+**Network share coverage and exclusions** complements [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions).
+
+|Network share coverage and exclusions|DLP on-premises repositories|Resultant behavior|
+|---------|---------|---------|
+|Enabled| Disabled|- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to. [Devices actions](dlp-policy-reference.md#devices-actions)|
+|Disabled|Enabled|- Policies that are scoped to On-premises repositories can enforce protective actions on on-premises data-at-rest in file shares and SharePoint document libraries and folders.  [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions)|
+|Enabled | Enabled|- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to.  [Devices actions](dlp-policy-reference.md#devices-actions)</br>- Policies that are scoped to On-premises repositories can enforce protective actions on on-premises data-at-rest in file shares and SharePoint document libraries and folders. [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions)  
+
 ### Restricted apps and app groups
 
 #### Restricted apps
@@ -236,7 +258,7 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 > [!NOTE]
 > The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md) installed.
 
-You can control whether sensitive files that are protected by your policies can be uploaded to specific service domains from Microsoft Edge.
+You can control whether sensitive files that are protected by your policies can be uploaded to specific service domains.
 
 ##### Allow
 
@@ -311,9 +333,11 @@ When you list a website in Sensitive services domains you can audit, block with 
 - print from a website
 - copy data from a website
 - save a website as local files
-- upload a sensitive file to an excluded website (this is configured in the policy)
+- upload or drag/drop a sensitive file to an excluded website (this is configured in the policy)
 
 For the print, copy data and save actions, each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. For the upload action, the user can be using Microsoft Edge or Google Chrome with the Purview extension. Sensitive service domains is used in conjunction with a DLP policy for Devices. You can also define website groups that you want to assign policy actions to that are different from the global website group actions. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+
+You can add maximum 50 websites into one group and can create maximum 20 groups.
 
 
 ##### Supported syntax for designating websites in a website group
@@ -337,8 +361,6 @@ Here are some examples:
 |*.contoso.com   | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/allsubsites </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/allsubsites </br> //<!--nourl-->allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | //<!--nourl-->allsubdomains.contoso.com.au|
 |*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/|
 |*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
-
-
 
 ### Additional settings for endpoint DLP
 
@@ -369,12 +391,13 @@ By default, when devices are onboarded, activity for Office, PDF, and CSV files 
 
 File activity will always be audited for onboarded devices, regardless of whether they're included in an active policy.
 
-### Printer groups (preview)
+### Printer groups
 
 Use this setting to define groups of printers that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block printing of contracts to all printers, except for printers that are in the legal department.
 
-This feature is available for devices running any of the following Windows versions:  
+You can add maximum 50 printers into one group and can create maximum 20 groups.
 
+This feature is available for devices running any of the following Windows versions:  
 - Windows 10 and later (20H2, 21H1, 21H2, and later) - [KB5020030](https://support.microsoft.com/en-us/topic/november-15-2022-kb5020030-os-builds-19042-2311-19043-2311-19044-2311-and-19045-2311-preview-237a9048-f853-4e29-a3a2-62efdbea95e2)
 - Win 11 21H2 - [KB5019157](https://support.microsoft.com/en-us/topic/november-15-2022-kb5019157-os-build-22000-1281-preview-d64fb317-3435-49ff-b2c4-d0356a51a6b0)
 - Win 11 22H2 - [KB5020044](https://support.microsoft.com/en-us/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3)
@@ -417,9 +440,11 @@ You can assign these policy actions to the group in a DLP policy:
 
 The most common use case is to use printers groups as an allowlist as in the above example for allowing the printing of contracts only to printers that are in the legal department. After you define a printer group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) for more information on configuring policy actions to use authorization groups.
 
-### Removable storage device groups (preview)
+### Removable storage device groups
 
 Use this setting to define groups of removable storage devices, like USB thumb drives, that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block copying of items with engineering specifications to all removeable storage devices, except for USB connected hard drives that are used to back up data and are then sent offsite.
+
+You can add maximum 50 removable storages into one group and can create maximum 20 groups.
 
 This feature is available for devices running any of the following Windows versions:  
 
@@ -429,13 +454,13 @@ This feature is available for devices running any of the following Windows versi
 
 You can define removeable storage devices by these parameters:
 
-- Storage device friendly name - Get the Friendly name value from the storage device property details in device manager.
+- Storage device friendly name - Get the Friendly name value from the storage device property details in device manager. Wildcard values are supported.
 - USB product ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 - USB vendor ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
-- Serial number ID - Get the serial number ID value from the storage device property details in device manager.
-- Device ID - Get the device ID value from the storage device property details in device manager.
-- Instance path ID - Get the device ID value from the storage device property details in device manager.
-- Hardware ID - Get the hardware ID value from the storage device property details in device manager.
+- Serial number ID - Get the serial number ID value from the storage device property details in device manager. Wildcard values are supported.
+- Device ID - Get the device ID value from the storage device property details in device manager. Wildcard values are supported.
+- Instance path ID - Get the device ID value from the storage device property details in device manager. Wildcard values are supported.
+- Hardware ID - Get the hardware ID value from the storage device property details in device manager. Wildcard values are supported.
 
 You assign each removable storage device in the group an **Alias**. The alias is a name that only appears in the Purview console. So, continuing with the example, you would create a removable storage device group named **Backup** and add individual devices  (with an alias) by their friendly name, like `backup_drive_001`, and `backup_drive_002`.
 
@@ -462,7 +487,7 @@ You can assign these policy actions to the group in a DLP policy:
 
 The most common use case is to use removable storage devices groups as an allowlist as in the above example for allowing the copying of files only to devices that are in the **Backup** group. After you define a removable storage device group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) for more information on configuring policy actions to use authorization groups. While scenario 7 uses printer authorization groups as an example, the principles are identical. The only thing that changes are the names of the groups and the actions you select.
 
-### Network share groups (preview)
+### Network share groups
 
 Use this setting to define groups of network share paths that you want to assign policy actions to that are different from the global network share path actions. For example, say you want your DLP policy to block when users attempt to save or copy protected files to network shares except the network shares in this group.
 
@@ -507,7 +532,7 @@ You can assign these policy actions to the group in a DLP policy:
 
 The most common use case is to use network share group as an allowlist as in the above example for allowing users to save or copy protected files only to the network shares that are defined in the group. After you define a networks share group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) for more information on configuring policy actions to use authorization groups.
 
-### VPN settings (preview)
+### VPN settings
 
 Use the VPN list to control only those actions that are being carried out over that VPN.
 
@@ -567,7 +592,6 @@ See, [Scenario 8 Network exceptions](endpoint-dlp-using.md#scenario-8-network-ex
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
 - [Onboard Windows 10 and Windows 11 devices into Microsoft Purview overview](/microsoft-365/compliance/device-onboarding-overview)
@@ -575,4 +599,4 @@ See, [Scenario 8 Network exceptions](endpoint-dlp-using.md#scenario-8-network-ex
 - [Azure Active Directory (AAD) joined](/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
 - [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
