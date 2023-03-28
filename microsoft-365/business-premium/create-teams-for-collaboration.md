@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 09/15/2022
 ms.collection: 
 - Adm_O365
