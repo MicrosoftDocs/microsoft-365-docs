@@ -28,14 +28,26 @@ description: "France national ID card (CNI) sensitive information type entity de
 
 ## Format
 
-Twelve digits
-Twelve letters and digits
+Twelve digits 
+
+or
+
+Twelve letters and digits 
+
+or
+
 Nine letters and digits
 
 ## Pattern
 
 Twelve digits
+
+or
+
 Combination of twelve digits and letters
+
+or
+
 Combination of nine digits and letters
 
 ## Checksum

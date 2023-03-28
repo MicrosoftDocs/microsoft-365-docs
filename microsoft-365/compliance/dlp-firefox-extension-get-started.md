@@ -23,7 +23,7 @@ search.appverid:
 description: "Prepare for and deploy the Microsoft Purview Firefox Extension."
 ---
 
-# Get started with Microsoft Purview Firefox Extension (preview)
+# Get started with Microsoft Purview Firefox Extension
 
 Use these procedures to roll out the Microsoft Purview Firefox Extension.
 
