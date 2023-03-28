@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/27/2023
+ms.date: 03/28/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -59,6 +59,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - **General availability (GA)**: Rolling out in general availability, [Microsoft Graph Records Management APIs](/graph/api/resources/security-recordsmanagement-overview) to support the management of retention labels and event-based retention.
+- **Improvements that support Power Automate flows**: Now rolling out to support the scenario of [customizing what happens at the end of the retention period](retention-label-flow.md), the existing Power Automate compliance actions have been renamed to more accurately describe their purpose. **Apply label on the item** is renamed **Relabel an item at the end of retention**, and **Deletes the item** is renamed **Deletes an item at the end of retention**. Additionally:
+    - New compliance action to [improve the resilience of your flow](retention-label-flow.md#add-resilience-to-your-flow).
+    - The trigger action **When the retention period expires** is renamed **When an item reaches the end of its retention period**.
+    - New compliance action of **Apply a retention label on the item** to apply a retention label independently from this scenario, as if manually applying a label. The label doesn't need to be published and the retention label is applied immediately.
 
 ### eDiscovery
 
