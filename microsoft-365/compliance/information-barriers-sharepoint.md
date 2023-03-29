@@ -243,7 +243,7 @@ To edit the segments associated with the site, select **Edit**, add or remove se
 
 4. If not previously completed, [download](https://go.microsoft.com/fwlink/p/?LinkId=255251) and install the latest SharePoint Online Management Shell. If you installed a previous version of the SharePoint Online Management Shell, follow the instructions in the **Enable SharePoint and OneDrive information barriers in your organization** section in this article.
 
-5. Connect to SharePoint Online as a [Global Administrator or SharePoint Administrator](sharepoint/sharepoint-admin-role.md) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+5. Connect to SharePoint Online as a [Global Administrator or SharePoint Administrator](sharepoint/sharepoint-admin-role) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 6. Run the following command:
 
