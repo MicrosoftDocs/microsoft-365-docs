@@ -20,11 +20,6 @@ title: Review event logs and error codes to troubleshoot issues with Microsoft D
 summary: | 
  If you encounter a problem with Microsoft Defender Antivirus, you can search the below sections in this topic to find a matching issue and potential solution.
 
-The following sections are:
- - [Microsoft Defender Antivirus event IDs](#windows-defender-av-ids) (these apply to Windows 10, Windows 11, and Windows Server 2016)
- - [Microsoft Defender Antivirus client error codes](#error-codes)
- - [Internal Microsoft Defender Antivirus client error codes (used by Microsoft during development and testing)](#internal-error-codes)
-
 sections:
   - name: General
     questions:
@@ -42,25 +37,23 @@ sections:
 
           5. Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
 
-### Event ID: 1000
+     - question: Event ID 1000
+       answer: |
 
-Symbolic name: MALWAREPROTECTION_SCAN_STARTED
+         Symbolic name: MALWAREPROTECTION_SCAN_STARTED
 
-Message: An antimalware scan started.
+         Message: An antimalware scan started.
 
-Description:
+         Description:
 
- - Scan ID: <ID number of the relevant scan.>
- - Scan Type: <Scan type>, for example:
-    - Antivirus
-    - Antispyware
-    - Antimalware
- - Scan Parameters: <Scan parameters>, for example:
-    - Full scan
-    - Quick scan
-    - Customer scan
- - Scan Resources: <Resources (such as files/directories/BHO) that were scanned.>
- - User: <Domain>\<User>
+            - Scan ID: <ID number of the relevant scan.>
+            - Scan Type: <Scan type>, for example: Antivirus, Antispyware, or Antimalware
+
+         Scan Parameters: <Scan parameters>, for example: Full scan, Quick scan, or Customer scan
+
+         Scan Resources: <Resources (such as files/directories/BHO) that were scanned.>
+
+         User: <Domain>\<User>
 
 ### Event ID: 1001
 
