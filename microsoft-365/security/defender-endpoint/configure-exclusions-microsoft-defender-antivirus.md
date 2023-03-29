@@ -65,7 +65,7 @@ Keep the following points in mind when you're defining exclusions:
 
 Exchange has supported integration with the Antimalware Scan Interface (AMSI) since the June 2021 Quarterly Updates for Exchange. It's highly recommended to ensure these updates are installed and AMSI is working using the guidance provided by the Exchange Team as this integration allows the best ability for Defender Antivirus to detect and block exploitation of Exchange.  
 
-Many organizations exclude the Exchange directories from antivirus scans for performance reasons. Microsoft recommends auditing AV exclusions on Exchange systems and assess if they can be removed without impacting performance in your environment to ensure the highest level of protection. Exclusions can be managed by using Group Policy, PowerShell, or systems management tools like Microsoft Endpoint Configuration Manager.
+Many organizations exclude the Exchange directories from antivirus scans for performance reasons. Microsoft recommends auditing AV exclusions on Exchange systems and assessing if they can be removed without impacting performance in your environment to ensure the highest level of protection. Exclusions can be managed by using Group Policy, PowerShell, or systems management tools like Microsoft Endpoint Configuration Manager.
 
 To audit AV exclusions on an Exchange Server running Defender Antivirus, run the **Get-MpPreference** command from an elevated PowerShell prompt.
 
