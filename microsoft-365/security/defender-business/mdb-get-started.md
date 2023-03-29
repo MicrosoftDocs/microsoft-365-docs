@@ -11,7 +11,7 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 09/15/2022
-ms.reviewer: shlomiakirav
+ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -46,7 +46,7 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 | **Endpoints** > **Tutorials** | Provides access to walkthroughs and simulations to help you learn more about how your threat protection features work. Select the **Read the walkthrough** link before attempting to get the simulation file for each tutorial. Some simulations require Office apps, such as Microsoft Word, to read the walkthrough. |
 | **Endpoints** > **Configuration management** > **Device configuration** | Lists your security policies by operating system and by type. To learn more about your security policies, see [View or edit policies in Defender for Business](mdb-view-edit-policies.md). |
 | **Endpoints** > **Configuration management** > **Device management reporting** | Lists devices that are onboarded to Defender for Business, along with their operating system version, sensor health state, and when they were last updated. |
-| **Email & collaboration** > **Policies & rules** | If your subscription includes Exchange Online Protection or Microsoft Defender for Office 365, this section is where you'll manage your security policies and settings for email and collaboration services. [Learn more about Office 365 security](/microsoft-365/office-365-security/overview). *The standalone version of Defender for Business does not include email & collaboration policies, but Microsoft 365 Business Premium does include Exchange Online Protection and Defender for Office 365 Plan 1*. [Compare security features in Microsoft 365 plans for small and medium-sized businesses](compare-mdb-m365-plans.md).  |
+| **Email & collaboration** > **Policies & rules** | If your subscription includes Exchange Online Protection or Microsoft Defender for Office 365, this section is where you'll manage your security policies and settings for email and collaboration services. [Learn more about Office 365 security](/microsoft-365/security/office-365-security/defender-for-office-365). *The standalone version of Defender for Business does not include email & collaboration policies, but Microsoft 365 Business Premium does include Exchange Online Protection and Defender for Office 365 Plan 1*. [Compare security features in Microsoft 365 plans for small and medium-sized businesses](compare-mdb-m365-plans.md).  |
 | **Cloud apps** > **App governance** | If your subscription includes [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps), you can add on [app governance](/defender-cloud-apps/app-governance-manage-app-governance), and this section is where you'll view and access those capabilities. *Defender for Business and Microsoft 365 Business Premium do not include Defender for Cloud Apps*. |
 | **Reports** | Lists available security reports. These reports enable you to see your security trends, view details about threat detections and alerts, and learn more about your company's vulnerable devices. |
 | **Health** | Enables you to view your service health status and plan for upcoming changes. <br/>- Select **Service health** to view the health status of the Microsoft 365 services that are included in your company's subscription.<br/>- Select **Message center** to learn about planned changes and what to expect.  |

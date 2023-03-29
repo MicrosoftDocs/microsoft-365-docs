@@ -33,6 +33,8 @@ ms.date: 11/08/2022
 
 ::: moniker range="o365-worldwide"
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 ## Watch: Get help or support
@@ -220,5 +222,5 @@ Scan this QR code to follow us on WeChat and get the latest updates for Office 3
 ## Related content
 
 [Find docs and training](index.yml) (link page)\
-[Employee quick setup](setup/employee-quick-setup.md) (article)\
+[Employee quick setup](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1) (article)\
 [Overview of Microsoft 365 Business Premium setup](setup/plan-your-setup.md) (video)

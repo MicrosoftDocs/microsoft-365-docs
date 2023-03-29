@@ -20,6 +20,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.custom: api
+ms.date: 06/03/2021
 ---
 
 # Cancel machine action API
@@ -40,7 +41,7 @@ ms.custom: api
 
 ## API description
 
-Cancel an already launched machine action that is not yet in final state (completed, canceled, failed).
+Cancel an already launched machine action that isn't yet in final state (completed, canceled, failed).
 
 ## Limitations
 
@@ -77,13 +78,13 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## Response
 
-If successful, this method returns 200, OK response code with a Machine Action entity. If machine action entity with the specified id was not found - 404 Not Found.
+If successful, this method returns 200, OK response code with a Machine Action entity. If machine action entity with the specified id wasn't found - 404 Not Found.
 
 ## Example
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```HTTP
 POST
@@ -96,6 +97,6 @@ https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-a
 }
 ```
 
-## Related topic
+## Related article
 
 - [Get machine action API](get-machineaction-object.md)

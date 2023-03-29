@@ -8,14 +8,15 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.localizationpriority: medium
-ms.date: 06/22/2021
+ms.date: 3/2/2023
 search.appverid: 
   - MOE150
   - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
+  - highpri
 description: Admins can learn about threat protection in Microsoft 365 and configure how to use it for your organization.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
@@ -27,7 +28,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -65,11 +66,11 @@ To configure Defender for Office 365 policies, you must be assigned an appropria
 |Security Administrator|[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Exchange Online Organization Management|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)|
 
-To learn more, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+To learn more, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 ### Turn on audit logging for reporting and investigation
 
-- Start your audit logging early. You'll need auditing to be **ON** for some of the following steps. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, [email security reports](view-email-security-reports.md), and [Explorer](threat-explorer.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+- Start your audit logging early. You'll need auditing to be **ON** for some of the following steps. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, [email security reports](reports-email-security.md), and [Explorer](threat-explorer-about.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## Part 1 - Anti-malware protection in EOP
 
@@ -90,7 +91,7 @@ For more information about the recommended settings for anti-malware, see [EOP a
 
 4. Back on the policy details flyout, click **Close**.
 
-For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 ## Part 2 - Anti-phishing protection in EOP and Defender for Office 365
 
@@ -211,13 +212,13 @@ For more information about the recommended settings for Safe Attachments, see .[
    - **Users and domains** page: Because this is your first policy and you likely want to maximize coverage, consider entering your [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the **Domains** box. Otherwise, you can use the **Users** and **Groups** boxes for more granular control. You can specify exceptions by selecting **Exclude these users, groups, and domains** and entering values.
    - **Settings** page:
      - **Safe Attachments unknown malware response**: Select **Block**.
-     - **Quarantine policy**: The default value is blank, which means the AdminOnlyAccessPolicy policy is used. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+     - **Quarantine policy**: The default value is blank, which means the default AdminOnlyAccessPolicy policy is used. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
      - **Redirect attachment with detected attachments** : **Enable redirect**: Turn this setting on (select) and enter an email address to receive detected messages.
      - **Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)**: Verify this setting is selected.
 
 5. When you're finished, click **Submit**, and then click **Done**.
 
-6. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the _DisallowInfectedFileDownload_ parameter set to `$true` in SharePoint Online PowerShell.
+6. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the *DisallowInfectedFileDownload* parameter set to `$true` in SharePoint Online PowerShell.
    - `$true` blocks all actions (except Delete) for detected files. People can't open, move, copy, or share detected files.
    - `$false` blocks all actions except Delete and Download. People can choose to accept the risk and download a detected file.
 
@@ -297,7 +298,7 @@ To learn more about alert policies, see [Alert policies in the Microsoft Purview
 > [!NOTE]
 > When you're finished configuring, use these links to start workload investigations:
 >
-> - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+> - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
 > - [Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 > - [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 > - [Manage quarantined messages and files as an admin in Microsoft 365](quarantine-admin-manage-messages-files.md)
@@ -308,6 +309,6 @@ After configuring the threat protection features, make sure to monitor how those
 
 |What to do|Resources to learn more|
 |---|---|
-|See how threat protection features are working for your organization by viewing reports|[Email security reports](view-email-security-reports.md) <p> [Reports for Microsoft Defender for Office 365](reports-defender-for-office-365.md) <p> [Threat Explorer](threat-explorer.md)|
+|See how threat protection features are working for your organization by viewing reports|[Email security reports](reports-email-security.md) <p> [Reports for Microsoft Defender for Office 365](reports-defender-for-office-365.md) <p> [Threat Explorer](threat-explorer-about.md)|
 |Periodically review and revise your threat protection policies as needed|[Secure Score](../defender/microsoft-secure-score.md) <p> [Microsoft 365 threat investigation and response features](./office-365-ti.md)|
 |Watch for new features and service updates|[Standard and Targeted release options](../../admin/manage/release-options-in-office-365.md) <p> [Message Center](../../admin/manage/message-center.md) <p> [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.date:
+ms.date: 03/01/2023
 ms.localizationpriority: medium
 ms.collection:
 - tier1
@@ -51,10 +51,10 @@ Perform the steps in these articles:
 3. [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)
 
 - Whether you will be creating an EDM sensitive information type using the wizard or the rule package XML file via PowerShell, you must have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles in Office 365](/office365/admin/add-users/about-admin-roles).
-- Identify one of the built in SITs to use as the Primary elements sensitive information type.
+- Identify one of the built-in SITs to use as the Primary elements sensitive information type.
   - If none of the built-in sensitive info types will match the data in the column you selected you will have to create a custom sensitive info type that does.
   - If you selected the Ignored Delimiters option for the primary element column in your schema, make sure the custom SIT you create will match data with and without the selected delimiters.
-  - If you use a built in SIT, make sure it will detect exactly the strings you want to select, and not include any surrounding characters or exclude any valid part of the string as stored in your sensitive information table.
+  - If you use a built-in SIT, make sure it will detect exactly the strings you want to select, and not include any surrounding characters or exclude any valid part of the string as stored in your sensitive information table.
 
 See [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) and [Create custom sensitive information types in Compliance center](create-a-custom-sensitive-information-type.md).
 

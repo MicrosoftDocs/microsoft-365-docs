@@ -5,13 +5,12 @@
       items:
       - name: What is Microsoft Defender for Business?
         href: mdb-overview.md
-        items:
-        - name: Simplified configuration
-          href: mdb-simplified-configuration.md
-        - name: Requirements
-          href: mdb-requirements.md
-        - name: Compare plans for small and medium-sized businesses
-          href: compare-mdb-m365-plans.md
+      - name: Simplified configuration
+        href: mdb-simplified-configuration.md
+      - name: Requirements
+        href: mdb-requirements.md
+      - name: Compare plans for small and medium-sized businesses
+        href: compare-mdb-m365-plans.md
       - name: What's new in Defender for Business?
         href: ../../business-premium/m365bp-mdb-whats-new.md?toc=/microsoft-365/security/defender-business/toc.json&bc=/microsoft-365/security/defender-business/breadcrumb/toc.json
       - name: Preview features
@@ -34,7 +33,7 @@
       items:
       - name: Setup overview
         href: mdb-setup-configuration.md
-      - name: Step 1 - Get and provision Defender for Business
+      - name: Step 1 - Get Defender for Business
         href: get-defender-business.md
       - name: Step 2 - Add users and assign licenses
         href: mdb-add-users.md
@@ -44,9 +43,23 @@
         href: mdb-onboard-devices.md
       - name: Step 5 - Review and edit your security policies
         href: mdb-configure-security-settings.md
+    - name: Monitor or manage devices
+      items: 
+      - name: Get an overview of mobile threat defense
+        href: mdb-mtd.md
+      - name: View and manage devices
+        href: mdb-manage-devices.md
+      - name: Create device groups
+        href: mdb-create-edit-device-groups.md
+      - name: Offboard devices
+        href: mdb-offboard-devices.md
+      - name: How to get Microsoft Defender for Business servers
+        href: get-defender-business-servers.md
     - name: View and respond to detected threats
       items: 
-      - name: View your vulnerability management dashboard
+      - name: View and use reports
+        href: mdb-reports.md
+      - name: Use your vulnerability management dashboard
         href: mdb-view-tvm-dashboard.md
       - name: View and manage incidents
         href: mdb-view-manage-incidents.md
@@ -54,8 +67,6 @@
         href: mdb-respond-mitigate-threats.md
       - name: Review remediation actions
         href: mdb-review-remediation-actions.md
-      - name: View and use reports
-        href: mdb-reports.md
       - name: Set up email notifications for your security team
         href: mdb-email-notifications.md
     - name: View or edit security policies
@@ -64,24 +75,18 @@
         href: mdb-view-edit-create-policies.md
       - name: Policy order
         href: mdb-policy-order.md
+      - name: Attack surface reduction capabilities
+        href: mdb-asr.md
       - name: Next-generation protection settings
         href: mdb-next-gen-configuration-settings.md
       - name: Firewall settings
         href: mdb-firewall.md
       - name: Manage rules for firewall policies
         href: mdb-custom-rules-firewall.md
-    - name: Monitor or manage devices
-      items: 
-      - name: View and manage devices
-        href: mdb-manage-devices.md
-      - name: Create device groups
-        href: mdb-create-edit-device-groups.md
-      - name: Offboard devices
-        href: mdb-offboard-devices.md
     - name: Reference information
       items: 
-      - name: How to get Microsoft Defender for Business servers
-        href: get-defender-business-servers.md
+      - name: Top 10 ways to secure your business data
+        href: ../../business-premium/secure-your-business-data.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
       - name: Glossary of security terms
         href: ../../business-premium/m365bp-glossary.yml?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
       - name: How to get help or contact support

@@ -6,8 +6,8 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 ms.reviewer: nickrob
+ms.date: 01/01/2023
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -61,7 +61,7 @@ Additionally, the editor also suggests provides a list of supported operators (s
 
 ![KQL editor suggests operators](../media/KQLEditorOperatorSuggestions.png)
 
-For more information about the supported search properties and operators, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
+For more information about the supported search properties and operators, see [Keyword queries and search conditions for eDiscovery](ediscovery-keyword-queries-and-search-conditions.md).
 
 ### Property value suggestions
 
@@ -75,7 +75,12 @@ The editor also suggests a list of users (in UPN format) when you type email rec
 
 ### Detection of potential errors
 
-The KQL editor detects potential errors in search queries, and provides a hint of what is causing the error to help you resolve the error. The editor also indicates a potential error when a property doesn't have a corresponding operation or value. Potential errors in the query are highlighted in red text, and explanations and possible fixes for the error are displayed in the **Potential errors** drop-down section. For example, if you pasted the following query into the KQL editor, four potential errors would be detected.
+The KQL editor detects potential errors in search queries, and provides a hint of what is causing the error to help you resolve the error. The editor also indicates a potential error when a property doesn't have a corresponding operation or value. Potential errors in the query are highlighted in red text, and explanations and possible fixes for the error are displayed in the **Potential errors** drop-down section.
+
+> [!IMPORTANT]
+> Nested quotation marks aren't supported in the KQL editor.
+
+For example, if you pasted the following query into the KQL editor, four potential errors would be detected.
 
 ![KQL editor error detection](../media/KQLEditorErrorDetection.png)
 

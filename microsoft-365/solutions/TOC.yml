@@ -61,8 +61,6 @@
           href: configure-teams-sensitive-protection.md
         - name: Configure highly sensitive protection
           href: configure-teams-highly-sensitive-protection.md
-        - name: Configure a team with a unique sensitivity label
-          href: secure-teams-security-isolation.md
       - name: Configure external sharing
         items:
         - name: External sharing overview
@@ -119,22 +117,18 @@
         href: ransomware-protection-microsoft-365-devices.md
       - name: Step 5. Protect information
         href: ransomware-protection-microsoft-365-information.md
-    - name: Deploy information protection for data privacy regulations
+    - name: Manage data privacy and data protection
       items:
       - name: Overview
-        href: information-protection-deploy.md
-      - name: Plan
-        href: information-protection-deploy-assess.md
-      - name: Track
-        href: information-protection-deploy-compliance.md
-      - name: Prevent
-        href: information-protection-deploy-identity-device-threat.md
-      - name: Protect
-        href: information-protection-deploy-protect-information.md
-      - name: Retain
-        href: information-protection-deploy-govern.md
-      - name: Investigate
-        href: information-protection-deploy-monitor-respond.md
+        href: data-privacy-protection.md
+      - name: Step 1. Assess data and risks
+        href: data-privacy-protection-assess.md
+      - name: Step 2. Protect and govern data
+        href: data-privacy-protection-protect-govern.md
+      - name: Step 3. Stay on track with privacy regulations
+        href: data-privacy-protection-regulations.md
+      - name: Step 4. Respond to incidents and subject requests
+        href: data-privacy-protection-respond-requests.md
 - name: Workload solutions and scenarios
   items: 
     - name: Overview
@@ -377,7 +371,7 @@
       - name: Switch from a non-Microsoft protection tool to Microsoft Defender for Office 365
         href: ../security/office-365-security/migrate-to-defender-for-office-365.md        
       - name: Security recommendations for priority accounts in Microsoft 365
-        href: ../security/office-365-security/priority accounts-security-recommendations.md
+        href: ../security/office-365-security/priority-accounts-security-recommendations.md
       - name: Remove a former employee and secure data
         href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
    
@@ -400,7 +394,56 @@
         href: test-lab-guides-overview-solutions.md
       - name: Team with security isolation
         href: team-security-isolation-dev-test.md
-    
+
+- name: Microsoft app guidance and scenarios
+  items: 
+    - name: Purchase and add apps for Microsoft Intune
+      items: 
+      - name: Overview
+        href: apps-guide-overview.md
+      - name: Understand app types
+        items:
+        - name: App types overview        
+          href: apps-type-overview.md
+        - name: Understand store apps        
+          href: apps-type-store.md
+        - name: Understand line-of-business apps        
+          href: apps-type-lob.md
+        - name: Understand built-in apps        
+          href: apps-type-built-in.md          
+        - name: Understand web apps
+          href: apps-type-web.md
+        - name: Understand Microsoft apps
+          href: apps-type-microsoft.md          
+      - name: Understand app purchases
+        items:
+        - name: Purchase apps overview
+          href: apps-purchase-overview.md
+        - name: Purchase store apps
+          href: apps-purchase-store.md
+        - name: Purchase apps in-volume
+          href: apps-purchase-volume.md
+      - name: Understand app licenses
+        items:
+        - name: App licenses overview
+          href: apps-license-overview.md
+        - name: Manage app licenses
+          href: apps-license-manage.md
+      - name: Add apps to Intune
+        items:
+        - name: Add apps overview
+          href: apps-add-overview.md
+        - name: Step 1. Assess app requirements
+          href: apps-add-step-1.md
+        - name: Step 2. Create categories for apps
+          href: apps-add-step-2.md
+        - name: Step 3. Purchase apps
+          href: apps-add-step-3.md
+        - name: Step 4. Add apps to Intune
+          href: apps-add-step-4.md
+        - name: Step 5. Manage apps and licenses
+          href: apps-add-step-5.md                  
+
 - name: Industry-specific guidance
   items: 
     - name: Microsoft 365 for frontline workers

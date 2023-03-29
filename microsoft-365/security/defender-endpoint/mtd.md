@@ -32,7 +32,7 @@ search.appverid: met150
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Defender for Endpoint on Android and iOS is our **mobile threat defense solution (MTD)**. Typically, companies are proactive in protecting PCs from vulnerabilities and attack while mobile devices often go unmonitored and unprotected. Where mobile platforms have built-in protection such as app isolation and vetted consumer app stores, these platforms remain vulnerable to web-based or other sophisticated attacks. As more employees use devices for work and to access sensitive information, it is imperative that companies deploy an MTD solution to protect devices and your resources from increasingly sophisticated attacks on mobiles.
+Microsoft Defender for Endpoint on Android and iOS is our **mobile threat defense solution (MTD)**. Typically, companies are proactive in protecting PCs from vulnerabilities and attack while mobile devices often go unmonitored and unprotected. Where mobile platforms have built-in protection such as app isolation and vetted consumer app stores, these platforms remain vulnerable to web-based or other sophisticated attacks. As more employees use devices for work and to access sensitive information, it's imperative that companies deploy an MTD solution to protect devices and your resources from increasingly sophisticated attacks on mobiles.
 
 ## Key capabilities
 
@@ -43,18 +43,18 @@ Microsoft Defender for Endpoint on Android and iOS provides the below key capabi
 |Web Protection|Anti-phishing, blocking unsafe network connections, and support for custom indicators.|
 |Malware Protection (Android-only)|Scanning for malicious apps.|
 |Jailbreak Detection (iOS-only)|Detection of jailbroken devices.|
-|Microsoft Defender Vulnerability Management (MDVM) |Vulnerability assessment of onboarded mobile devices. Visit this [page](next-gen-threat-and-vuln-mgt.md) to learn more about Microsoft Defender Vulnerability Management in Microsoft Defender for Endpoint. *Note that on iOS, vulnerability assessment of apps is in preview.*|
+|Microsoft Defender Vulnerability Management (MDVM) |Vulnerability assessment of onboarded mobile devices. Includes OS and Apps vulnerabilities assessment for both Android and iOS. Visit this [page](next-gen-threat-and-vuln-mgt.md) to learn more about Microsoft Defender Vulnerability Management in Microsoft Defender for Endpoint.|
 |Network Protection | Protection against rogue Wi-Fi related threats and rogue certificates; ability to allow list the root CA and private root CA certificates in Intune; establish trust with endpoints.|
 |Unified alerting|Alerts from all platforms in the unified M365 security console.|
 |Conditional Access, Conditional launch|Blocking risky devices from accessing corporate resources. Defender for Endpoint risk signals can also be added to app protection policies (MAM).|
 |Privacy Controls|Configure privacy in the threat reports by controlling the data sent by Microsoft Defender for Endpoint. Privacy controls are available for admin and end users. It's there for enrolled and unenrolled devices as well.|
-|Integration with Microsoft Tunnel|Can integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. Available on Android and is now generally available on iOS also.|
+|Integration with Microsoft Tunnel|Integration with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. Available on both Android and iOS.|
 
 All these capabilities are available for Microsoft Defender for Endpoint license holders. For more information, see [Licensing requirements](minimum-requirements.md#licensing-requirements).
 
 ## Overview and Deploy
 
-Deployment of Microsoft Defender for Endpoint on mobile can be done via Microsoft Endpoint Manager (MEM). Watch this video for a quick overview of MTD capabilities and deployment:
+Deployment of Microsoft Defender for Endpoint on mobile can be done via Microsoft Intune. Watch this video for a quick overview of MTD capabilities and deployment:
 
 <br/>
 
@@ -100,13 +100,13 @@ The following table summarizes how to deploy Microsoft Defender for Endpoint on 
 
 ## Pilot evaluation
 
-While evaluating mobile threat defense with Microsoft Defender for Endpoint, you can verify that certain criteria is met before proceeding to deploy the service to a larger set of devices. You can define the exit criteria and ensure that they are satisfied before deploying widely.
+While evaluating mobile threat defense with Microsoft Defender for Endpoint, you can verify that certain criteria is met before proceeding to deploy the service to a larger set of devices. You can define the exit criteria and ensure that they're satisfied before deploying widely.
 
 This helps reduce potential issues that could arise while rolling out the service. Here are some tests and exit criteria that might help:
 
 - Devices show up in the device inventory list: After successful onboarding of Defender for Endpoint on the mobile device, verify that the device is listed in the Device Inventory in the [security console](https://security.microsoft.com).
 
-- Run a malware detection test on an Android device: Install any test virus app from the Google play store and verify that it gets detected by Microsoft Defender for Endpoint. Here is an example app that can be used for this test: [Test virus](https://play.google.com/store/apps/details?id=com.antivirus&hl=en_US&gl=US). Note that on Android Enterprise with a work profile, only the work profile is supported.
+- Run a malware detection test on an Android device: Install any test virus app from the Google play store and verify that it gets detected by Microsoft Defender for Endpoint. Here's an example app that can be used for this test: [Test virus](https://play.google.com/store/apps/details?id=com.antivirus&hl=en_US&gl=US). Note that on Android Enterprise with a work profile, only the work profile is supported.
 
 - Run a phishing test: Browse to https://smartscreentestratings2.net and verify that it gets blocked by Microsoft Defender for Endpoint. Note that on Android Enterprise with a work profile, only the work profile is supported.
 

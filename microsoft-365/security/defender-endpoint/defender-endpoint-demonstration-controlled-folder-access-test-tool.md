@@ -63,7 +63,7 @@ Set-ExecutionPolicy Unrestricted
 
 You can perform these manual steps instead:
 
-1. Turn on CFA using powershell command:
+1. Turn on CFA using PowerShell command:
 
   ```powershell
   Set-MpPreference -EnableControlledFolderAccess Enabled
@@ -76,7 +76,7 @@ You can perform these manual steps instead:
 
 1. Launch CFA test tool
 2. Select the desired folder and create file
-- You can find more information [here](/windows/threat-protection/windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
+- You can find more information [here](/microsoft-365/security/defender-endpoint/evaluate-controlled-folder-access).
 
 ## Clean-up
 

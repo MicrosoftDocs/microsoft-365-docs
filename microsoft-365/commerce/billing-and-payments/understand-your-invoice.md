@@ -29,7 +29,12 @@ ms.date: 08/08/2022
 
 # Understand your bill or invoice
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
+
+> [!IMPORTANT]
+> Starting on April 1, 2023, we will stop accepting checks as a payment method for subscriptions paid by invoice. Beginning on that date, pay by check will no longer be available as a payment option, and check payment instructions will be removed from invoices. You can still pay for your invoice by electronic funds transfer (EFT). See your invoice for EFT payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by EFT, and avoid possible service disruption.
 
 To view and print your invoice:
 

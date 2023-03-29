@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 06/23/2021
 ---
 
 # Manage the gradual rollout process for Microsoft Defender updates
@@ -63,9 +64,9 @@ If your machines are receiving Defender updates from Windows Update, the gradual
 > [!NOTE]
 > When planning for your own gradual release, please make sure to always have a selection of devices subscribed to the preview and staged channels. This will provide your organization as well as Microsoft the opportunity to prevent or find and fix issues specific to your environment.
 
-For machines receiving updates through, for example, Windows Server Update Services (WSUS) or Microsoft Endpoint Configuration Manager (MECM), more options are available to all Windows updates, including options  for Microsoft Defender for Endpoint.
+For machines receiving updates through, for example, Windows Server Update Services (WSUS) or Microsoft Configuration Manager, more options are available to all Windows updates, including options  for Microsoft Defender for Endpoint.
 
-- Read more about how to use a solution like WSUS, MECM to manage the distribution and application of updates at [Manage Microsoft Defender Antivirus updates and apply baselines - Windows security](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
+- Read more about how to use a solution like WSUS, MECM to manage the distribution and application of updates at [Manage Microsoft Defender Antivirus updates and apply baselines - Windows security](microsoft-defender-antivirus-updates.md#product-updates).
 
 ## Update channels for monthly updates
 
@@ -130,7 +131,7 @@ Adopting this model:
 To create your own custom gradual rollout process for monthly updates, you can use the following tools:
 
 - Group policy
-- Microsoft Endpoint Manager
+- Microsoft Configuration Manager
 - PowerShell
 
 For details on how to use these tools, see [Create a custom gradual rollout process for Microsoft Defender updates](configure-updates.md).

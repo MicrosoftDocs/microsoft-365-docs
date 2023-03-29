@@ -6,7 +6,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 11/28/2022
+ms.date: 01/01/2023
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -47,11 +47,11 @@ To configure and validate exclusions, see the following:
 ## Recommendations for defining exclusions
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus includes many automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations. For more information, refer to the [list of automatic exclusions](/configure-exclusions-microsoft-defender-antivirus#the-list-of-automatic-exclusions).
+> Microsoft Defender Antivirus includes many automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations. For more information, see [automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md).
 >
 > Defining exclusions lowers the protection offered by Microsoft Defender Antivirus. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
 
-Keep the following points in mind when you are defining exclusions:
+Keep the following points in mind when you're defining exclusions:
 
 - Exclusions are technically a protection gap. Consider all your options when defining exclusions. Other options can be as simple as making sure the excluded location has the appropriate access-control lists (ACLs) or setting policies to audit mode at first.
 
@@ -63,13 +63,13 @@ Keep the following points in mind when you are defining exclusions:
 
 ## Audit Antivirus Exclusions
 
-Exchange has supported integration with the Antimalware Scan Interface (AMSI) since the June 2021 Quarterly Updates for Exchange. It is highly recommended to ensure these updates are installed and AMSI is working using the guidance provided by the Exchange Team as this integration will allow the best ability for Defender Antivirus to detect and block exploitation of Exchange.  
+Exchange has supported integration with the Antimalware Scan Interface (AMSI) since the June 2021 Quarterly Updates for Exchange. It's highly recommended to ensure these updates are installed and AMSI is working using the guidance provided by the Exchange Team as this integration allows the best ability for Defender Antivirus to detect and block exploitation of Exchange.  
 
-Many organizations exclude the Exchange directories from antivirus scans for performance reasons. Microsoft recommends to audit AV exclusions on Exchange systems and assess if they can be removed without impacting performance in your environment to ensure the highest level of protection. Exclusions can be managed by using Group Policy, PowerShell, or systems management tools like Microsoft Endpoint Configuration Manager.
+Many organizations exclude the Exchange directories from antivirus scans for performance reasons. Microsoft recommends auditing AV exclusions on Exchange systems and assessing if they can be removed without impacting performance in your environment to ensure the highest level of protection. Exclusions can be managed by using Group Policy, PowerShell, or systems management tools like Microsoft Endpoint Configuration Manager.
 
 To audit AV exclusions on an Exchange Server running Defender Antivirus, run the **Get-MpPreference** command from an elevated PowerShell prompt.
 
-If exclusions cannot be removed for the Exchange processes and folders, running a Quick Scan in Defender Antivirus will scan the Exchange directories and files, regardless of exclusions.
+If exclusions can't be removed for the Exchange processes and folders, running a Quick Scan in Defender Antivirus scans the Exchange directories and files, regardless of exclusions.
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:

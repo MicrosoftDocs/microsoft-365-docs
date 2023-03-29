@@ -20,6 +20,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
+ms.date: 06/03/2021
 ---
 
 # Run live response commands on a device
@@ -46,19 +47,19 @@ Runs a sequence of live response commands on a device
 
 1. Rate limitations for this API are 10 calls per minute (additional requests are responded with HTTP 429).
 
-2. 25 concurrently running sessions (requests exceeding the throttling limit will receive a "429 - Too many requests" response).
+2. 25 concurrently running sessions (requests exceeding the throttling limit receives a "429 - Too many requests" response).
 
-3. If the machine is not available, the session will be queued for up to 3 days.
+3. If the machine isn't available, the session is queued for up to three days.
 
 4. RunScript command timeouts after 10 minutes.
 
-5. Live response commands cannot be queued up and can only be executed one at a time.
+5. Live response commands can't be queued up and can only be executed one at a time.
 
-6. If the machine that you are trying to run this API call is in an RBAC device group that does not have an automated remediation level assigned to it, you'll need to at least enable the minimum Remediation Level for a given Device Group.
+6. If the machine that you're trying to run this API call is in an RBAC device group that doesn't have an automated remediation level assigned to it, you need to at least enable the minimum Remediation Level for a given Device Group.
     > [!NOTE]
     > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
-7. Multiple live response commands can be run on a single API call. However, when a live response command fails all the subsequent actions will not be executed.
+7. Multiple live response commands can be run on a single API call. However, when a live response command fails all the subsequent actions won't be executed.
 
 ## Minimum Requirements
 
@@ -124,13 +125,13 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 - If successful, this method returns 201 Created.
 
-  Action entity. If machine with the specified ID was not found - 404 Not Found.
+  Action entity. If machine with the specified ID wasn't found - 404 Not Found.
 
 ## Example
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```HTTP
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runliveresponse
@@ -168,7 +169,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```HTTP
 HTTP/1.1 200 Ok

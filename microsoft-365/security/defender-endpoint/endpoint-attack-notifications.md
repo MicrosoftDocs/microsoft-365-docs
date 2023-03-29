@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 09/23/2022
 ---
 
 # Endpoint Attack Notifications
@@ -32,7 +33,10 @@ search.appverid: met150
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
-> This covers threat hunting on your Microsoft Defender for Endpoint service. However, if you're interested to explore the service beyond your current license, and proactively hunt threats not just on endpoints but also across Office 365, cloud applications, and identity, refer to [Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/defender-experts-for-hunting). 
+> This covers threat hunting on your Microsoft Defender for Endpoint service. However, if you're interested to explore the service beyond your current license, and proactively hunt threats not just on endpoints but also across Office 365, cloud applications, and identity, refer to [Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/defender-experts-for-hunting).
+
+> [!NOTE]
+> Customers who signed up for Experts on Demand prior to sunset will have access to Ask Defender Experts until the expiration of their current contract.
 
 Endpoint Attack Notifications (previously referred to as Microsoft Threat Experts - Targeted Attack Notification) provides proactive hunting for the most important threats to your network, including human adversary intrusions, hands-on-keyboard attacks, or advanced attacks like cyber-espionage. These notifications show up as a new alert. The managed hunting service includes:
 
@@ -69,5 +73,5 @@ You can create rules to send email notifications for notification recipients. Se
 
 
 ## Next steps
-- To ask Defender Experts directly from the Microsoft Defender for Endpoint portal about insights on certain endpoint notifications, refer to [Ask Defender Experts ](../defender-endpoint/experts-on-demand.md).
+
 - To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to [Microsoft Defender Experts for Hunting](../defender/defender-experts-for-hunting.md).
