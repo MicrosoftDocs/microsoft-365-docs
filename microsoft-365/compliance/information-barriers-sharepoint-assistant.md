@@ -80,7 +80,7 @@ You can use the [Microsoft Purview compliance portal](audit-log-search.md) to se
 - **IB assistant removed group owner**: The IB non-compliant owner was removed from the group by the compliance assistant.
 - **Identified as IB non-compliant group**: The segments on the group are non-IB compliant with each other.
 
-To search the audit log for Microsoft 365 Groups activities, see [Search the audit log](audit-log-search#search-the-audit-log).
+To search the audit log for Microsoft 365 Groups activities, see [Search the audit log](audit-log-search.md#search-the-audit-log).
 
 >[!Note]
 >The compliance assistant runs periodically (every 24 hours). The assistant runs on group-connected SharePoint sites that do not have an associated team in Microsoft Teams. To enable the compliance assistant for SharePoint sites connected to Microsoft Teams, follow the instructions in the [Define information barrier policies](information-barriers-policies.md) article.
