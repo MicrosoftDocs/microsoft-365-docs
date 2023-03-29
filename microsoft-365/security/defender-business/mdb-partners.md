@@ -32,12 +32,20 @@ If you're a Microsoft partner, and you're working with customers who have or nee
 
 ## Download our guide and checklist (NEW!)
 
-The [practical guide to security using Microsoft 365 Business (Basic, Standard, and Premium)](https://aka.ms/smbsecurityguide) guide includes Microsoft’s security recommendations for small and medium-sized businesses. You can also download a [summary checklist](https://aka.ms/smbsecuritychecklist) to use as a companion to the guide.
+The [practical guide to security using Microsoft 365 Business (Basic, Standard, and Premium)](https://aka.ms/smbsecurityguide) guide is intended to start discussion around your customers' security and compliance options with Microsoft 365 for business. Many businesses want to enable security and balance ease of use with security. Other businesses want to maximize security protections and have higher concern for risk, such as for meeting regulatory requirements. One of the first and most important things that IT leaders and business leaders can do is talk through the possibilities. This guide can help facilitate those discussions. You can also download a [summary checklist](https://aka.ms/smbsecuritychecklist) to use as a companion to the guide.
+
+- Adopt a formal, vendor agnostic cybersecurity framework, such as the NIST Cybersecurity Framework or CIS Critical Security Controls.
+- Create a plan that includes identity management, admin accounts, device management, licensing, and more.
+- Walk through, step by step, how to set up, configure, use, and maintain Microsoft 365 Business Premium.
+- Learn how to implement and use data protection capabilities, such as sensitivity labels and DLP policies.
+- Understand and work with advanced capabilities, such as increased security, identity protection, and email & apps protection.
+
+Use the links in the following table to access the guide and summary checklist:
 
 | Resource | Description |
 |:---|:---|
-| [Practical guide to security using Microsoft 365 Business (Basic, Standard, and Premium)](https://aka.ms/smbsecurityguide) | The guide is intended to start discussion around security and compliance options. Many businesses want to enable security and balance ease of use with security. Other businesses want to maximize security protections and have higher concern for risk, such as for meeting regulatory requirements. One of the first and most important things that IT leaders and business leaders can do is talk through the possibilities. This guide can help facilitate those discussions. |
-| [Checklist for security with Microsoft 365 Business Premium](https://aka.ms/smbsecuritychecklist) | This checklist includes all the planning and configuration steps covered in the guide, from getting started to configuring security and compliance capabilities. |
+| [Practical guide to security using Microsoft 365 Business (Basic, Standard, and Premium)](https://aka.ms/smbsecurityguide) | This Word document summarizes Microsoft’s recommendations for enabling employees at small and medium-sized businesses to securely work from anywhere- whether from home, in the office or on the go, using the features included in Microsoft 365 Business Premium.  |
+| [Checklist for security with Microsoft 365 Business Premium](https://aka.ms/smbsecuritychecklist) | This checklist includes all the planning and configuration steps covered in the guide, from getting started to configuring security and compliance capabilities, and provides general recommendations for each step. |
 
 ## Integrate Microsoft endpoint security with your RMM tools and PSA software
 
