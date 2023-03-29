@@ -1,19 +1,19 @@
 ---
-title: Microsoft Defender for Office 365 step-by-step guides and how to use them 
+title: Microsoft Defender for Office 365 step-by-step guides and how to use them
 description: What are the step-by-step-guides for Microsoft 365 Defender for Office 365? See *only the steps needed to complete a task* and set up features. Information for use in trial subscriptions and production. Guidance designed to minimise information overload and speed up your configuration and use.
-search.product: 
+search.product:
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-guidance-templates
 - m365-security
 - tier3
@@ -37,7 +37,7 @@ These step-by-step guides help administrators configure and use Microsoft Defend
 > Admins need to be on top of prevention, detection, investigation and hunting, response and remediation, and user training to position their organization securely. The step-by-step guides touch on all of these areas so that admins can set up trials, launch quickly into production, and configure in minutes.
 >:::image type="content" source="../../../media/msft-a-graphic-showing-the-steps-to-mastering-microsoft-defender-for-office-365.png" alt-text="This graphic illustrates the areas that admins need to master in order to properly secure their organization. The step-by-step guides touch on all of these areas, so that admins can set up trials, launch quickly, and configure production in minutes.":::
 
-Beyond links to the documentation, the step-by-step guides don't concern themselves with product details (the docs around Microsoft Defender for Office 365 are thorough for when you need them). 
+Beyond links to the documentation, the step-by-step guides don't concern themselves with product details (the docs around Microsoft Defender for Office 365 are thorough for when you need them).
 
 Instead, these guides are streamlined for **learning by doing**, **testing**, and **running experiments**. They're ideal for **trial subscriptions**, and will allow admins and security operators to **deploy the same logic in production**.
 

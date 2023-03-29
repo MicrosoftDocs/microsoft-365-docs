@@ -4,6 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: kkameth
+ms.date: 02/15/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -30,7 +31,7 @@ Annotation tools currently include pen and highlighter, where can choose the col
 
     ![Screenshot of a document library showing a file selected to open.](../media/content-understanding/annotation-select-file.png)
 
-2. On the upper-right side of the document viewer, select the annotation icon (![Screenshot of the annotation icon.](../media/content-understanding/annotation-icon.png)).
+2. On the upper-right side of the document viewer, select **Annotate**.
 
     ![Screenshot of a document viewer showing the annotation icon highlighted.](../media/content-understanding/annotation-icon-document-page.png)
 

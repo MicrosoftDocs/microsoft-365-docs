@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 09/15/2022
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - m365-security
 - tier1
@@ -43,4 +43,4 @@ You can use Microsoft 365 for business to remove company data that your users ha
 
 ## See also
 
-[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](secure-your-business-data.md)

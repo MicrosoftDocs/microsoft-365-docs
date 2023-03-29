@@ -1,20 +1,20 @@
 ---
 title: Getting started with defense in-depth configuration for email security
 description: Step-by-step configuration guidance on how to get security value from Microsoft Defender for Office 365 when you have third party email filtering.
-search.product: 
+search.product:
 ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: benharri
-author: MSFTBen 
+author: MSFTBen
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-guidance-templates
 - m365-security
 - tier3
@@ -33,6 +33,7 @@ This guide is for you if:
 The information below will detail how to get the most out of your investment, broken down into easy to follow steps.
 
 ## What you will need
+
 - Mailboxes hosted in Office 365
 - One or more of:
   - Microsoft Defender for Office 365 Plan 1 for protection features
@@ -46,9 +47,9 @@ The information below will detail how to get the most out of your investment, br
 
 - Built-in protection offers a base level of unobtrusive protection, and includes malware, zero day (Safe Attachments), and URL protection (Safe Links) in email (including internal email), SharePoint Online, OneDrive, and Teams. Note that URL protection provided in this state is via API call only. It doesn't wrap or rewrite URLs but does require a supported Outlook client. You can create your own custom policies to expand your protection.
 
-**Read more & watch an overview video of Safe Links here :** [Complete Safe Links overview](../safe-links-about.md)
+**Read more & watch an overview video of Safe Links here:** [Complete Safe Links overview](../safe-links-about.md)
 
-**Read more about Safe Attachments here :**  [Safe Attachments](../safe-attachments-about.md) 
+**Read more about Safe Attachments here:** [Safe Attachments](../safe-attachments-about.md)
 
 ### Detection, investigation, response and hunting features
 
@@ -88,7 +89,7 @@ The information below will detail how to get the most out of your investment, br
 
 **Read more here:** [Advanced delivery](../skip-filtering-phishing-simulations-sec-ops-mailboxes.md)
 
-- You can configure user reported message settings to allow users to report good or bad messages to Microsoft, to a designated reporting mailbox (to integrate with current security workflows) or both. Admins can use the **User reported** tab on the **Submissions** page to triage false positives and false negative user reported messages.
+- You can configure user reported settings to allow users to report good or bad messages to Microsoft, to a designated reporting mailbox (to integrate with current security workflows) or both. Admins can use the **User reported** tab on the **Submissions** page to triage false positives and false negative user reported messages.
 
 **Read more here:** [Deploy and configure the report message add-in to users](deploy-and-configure-the-report-message-add-in.md)
 
@@ -116,7 +117,7 @@ The information below will detail how to get the most out of your investment, br
 
 **Read More:** [How to configure quarantine permissions and policies](how-to-configure-quarantine-permissions-with-quarantine-policies.md)
 
-- The Migration guide contains lots of useful guidance on preparing and tuning your environment to ready it for a migration. But many of the steps are *also* applicable to a dual-use scenario. Simply ignore the MX switch guidance in the final steps. 
+- The Migration guide contains lots of useful guidance on preparing and tuning your environment to ready it for a migration. But many of the steps are *also* applicable to a dual-use scenario. Simply ignore the MX switch guidance in the final steps.
 
 **Read it here:** [Migrate from a third-party protection service to Microsoft Defender for Office 365 - Office 365 | Microsoft Docs](../migrate-to-defender-for-office-365.md)
 

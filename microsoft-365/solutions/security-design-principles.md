@@ -4,6 +4,7 @@ description: Learn how to overcome security challenges in Microsoft Enterprise a
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
+ms.date: 05/01/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions

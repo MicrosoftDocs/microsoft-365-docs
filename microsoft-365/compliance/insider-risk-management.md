@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 03/09/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -149,9 +150,6 @@ In more serious situations, you may need to share the insider risk management ca
 - **eDiscovery (Premium)**: Escalating a case for investigation allows you to transfer data and management of the case to Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It allows legal teams to manage the entire legal hold notification workflow. To learn more about eDiscovery (Premium) cases, see [Overview of Microsoft Purview eDiscovery (Premium)](ediscovery-overview.md).
 - **Office 365 Management APIs integration (preview)**: Insider risk management supports exporting alert information to security information and event management (SIEM) services via the Office 365 Management APIs. Having access to alert information in the platform the best fits your organization's risk processes gives you more flexibility in how to act on risk activities. To learn more about exporting alert information with Office 365 Management APIs, see [Export alerts](insider-risk-management-settings.md#export-alerts).
 
-> [!NOTE]
-> Thank you for your feedback and support during the preview of the ServiceNow connector. We've decided to end the preview of ServiceNow connector and discontinue support in insider risk management on November 30, 2020. We are actively evaluating alternative methods to provide customers with ServiceNow integration in insider risk management.
-
 ## Scenarios
 
 Insider risk management can help you detect, investigate, and take action to mitigate internal risks in your organization in several common scenarios:
@@ -197,7 +195,7 @@ Employment stressor events can impact user behavior in several ways that relate 
 - [Data leaks by risky users (preview)](insider-risk-management-policy-templates.md#data-leaks-by-risky-users-preview)
 - [Security policy violations by risky users (preview)](insider-risk-management-policy-templates.md#security-policy-violations-by-risky-users-preview)
 
-### Visual context for potentially risky user activities with forensic evidence (preview)
+### Visual context for potentially risky user activities with forensic evidence
 
 Having visual context is crucial for security teams during forensic investigations to get better insights into potentially risky user activities that may lead to a security incident. This may include visual capturing of these activities to help evaluate if they are indeed risky or taken out of context and not potentially risky. For activities that are determined to be risky, having forensic evidence captures can help investigators and your organization better mitigate, understand, and respond to these activities. To help with this scenario, [enable forensic evidence capturing](insider-risk-management-forensic-evidence.md) for online and offline devices in your organization.
 

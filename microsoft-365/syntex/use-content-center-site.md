@@ -5,6 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
+ms.date: 02/01/2022
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
@@ -26,6 +27,9 @@ You'll be introduced to the tools and information you’ll need to create and tr
 In this site, models can be trained and evaluated using your own content. However, to apply the models to libraries, a license for Syntex is required.  
 
 ## Provision the site
+
+> [!NOTE]
+>  The content center site template is provided in the SharePoint look book service, which is no longer being updated. Some of the information in the template might not reflect the current Syntex features.
 
 The content center site can be provisioned from the [SharePoint look book service](https://lookbook.microsoft.com/).
 
@@ -85,5 +89,3 @@ See how content is used to illustrate model activity and to provide more informa
 ### Find additional resources
 
 Discover additional resources and scenarios to help you learn more about Syntex.
-
-

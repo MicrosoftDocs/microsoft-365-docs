@@ -69,8 +69,8 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 - [Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
 - Windows 10 Enterprise IoT
 
-    >[!NOTE]
-    >While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability.
+  > [!NOTE]
+  > While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability.
 
 - Windows 10 Education
 - Windows 10 Pro
@@ -92,7 +92,7 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 
 Devices on your network must be running one of these editions.
 
-The hardware requirements for Defender for Endpoint on devices are the same for the supported editions.
+The hardware requirements for Defender for Endpoint on devices are the same as the requirements for the Windows operating system itself (that is, they are not in addition to the requirements for the operating system) for supported editions.
 
 > Cores: 2 minimum, 4 preferred
 > Memory: 1 GB minimum, 4 preferred
@@ -100,6 +100,7 @@ The hardware requirements for Defender for Endpoint on devices are the same for 
 For more information on supported versions of Windows 10, see [Windows 10 release information](/windows/release-health/release-information).
 
 > [!NOTE]
+>
 > - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
 >
 > - Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
@@ -119,7 +120,6 @@ When components are up-to-date on Microsoft Windows operating systems, Microsoft
 - [Linux](microsoft-defender-endpoint-linux.md)
 - [Android](microsoft-defender-endpoint-android.md)
 - [iOS](microsoft-defender-endpoint-ios.md)
-
 
 > [!NOTE]
 > You'll need to confirm the Linux distributions and versions of Android, iOS, and macOS are compatible with Defender for Endpoint for the integration to work.
@@ -158,7 +158,7 @@ If you're onboarding servers and Microsoft Defender Antivirus isn't the active a
 
 If you're running Microsoft Defender Antivirus as the primary antimalware product on your devices, the Defender for Endpoint agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Endpoint Manager (current branch), you'll need to ensure the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Configuration Manager (current branch), you'll need to ensure the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## Related topics
 

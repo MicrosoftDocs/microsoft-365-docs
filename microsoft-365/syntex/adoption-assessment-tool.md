@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: jaeccles
-ms.date:
+ms.date: 08/25/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -63,4 +63,3 @@ The Syntex assessment is a module in the Microsoft 365 Assessment tool. To run t
 4. [Configure permissions](https://pnp.github.io/pnpassessment/sharepoint-syntex/requirements.html). 
 
 5. [Run a Syntex assessment](https://pnp.github.io/pnpassessment/sharepoint-syntex/assess.html). 
-

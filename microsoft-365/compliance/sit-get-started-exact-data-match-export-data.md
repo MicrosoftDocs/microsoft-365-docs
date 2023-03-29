@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.date:
+ms.date: 03/01/2023
 ms.localizationpriority: medium
 ms.collection:
 - tier1
@@ -65,7 +65,7 @@ To learn how to use sample file templates, go to [How to use the sample file tem
 The data file can include a maximum of:
    - Up to 100 million rows of sensitive data
    - Up to 32 columns (fields) per data source
-   - Up to five columns (fields) marked as searchable
+   - Up to ten columns (fields) marked as searchable
 
 2. Structure the sensitive data in the .csv or .tsv file such that the first row includes the names of the fields used for EDM-based classification. In your file you might have field names such as "ssn", "birthdate", "firstname", "lastname". The column header names can't include spaces or underscores. For example, the sample .csv file that we use in this article is named *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, and more.
 
