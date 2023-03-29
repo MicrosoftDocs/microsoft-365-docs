@@ -19,25 +19,24 @@ ms.custom:
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/02/2022
+ms.date: 3/28/2023
 ---
 
-# Manage quarantined messages and files as an admin in EOP
+# Manage quarantined messages and files as an admin
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantined email messages in EOP](quarantine-about.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes and in Microsoft Teams, quarantine holds potentially dangerous or unwanted messages. 
 
 Admins can view, release, and delete all types of quarantined messages for all users. Admins can also report false positives to Microsoft.
 
 By default, only admins can manage messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). But admins can use _quarantine policies_ to define what users are allowed to do to quarantined messages based on why the message was quarantined (for supported features). For more information, see [Quarantine policies](quarantine-policies.md).
 
-Admins in organizations with Microsoft Defender for Office 365 can also manage files that were quarantined by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
+Admins in organizations with Microsoft Defender for Office 365 can also manage files that were quarantined by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md) and [Zero-hour auto purge](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-in-microsoft-teams).
 
 You view and manage quarantined messages in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
@@ -138,14 +137,14 @@ Watch this short video to learn how to manage quarantined messages as an adminis
    - Sender email address
    - Subject. Use the entire subject of the message. The search is not case-sensitive.
 
-   After you've entered the search criteria, press ENTER to filter the results.
+   After you've entered the search criteria, press the enter ENTER key to filter the results.
 
    > [!NOTE]
    > The **Search** box on the main **Quarantine** page will search only quarantined items in the current view, not the entire quarantine. To search all quarantined items, use **Filter** and the resulting **Filters** flyout.
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
-#### View quarantined message details
+### View quarantined email details
 
 When you select quarantined message from the list, the following information is available in the details flyout that appears.
 
@@ -325,7 +324,7 @@ In organizations with Defender for Office 365, admins can manage files that were
 
 After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the file).
 
-#### View quarantined file details
+### View quarantined file details
 
 When you select a quarantined file from the list, the following information is available in the details flyout that opens:
 
@@ -378,15 +377,108 @@ When you select multiple quarantined files in the list (up to 100) by clicking i
 - ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete from quarantine**: After you click **Yes** in the warning that appears, the file is immediately deleted.
 - ![Download file icon.](../../media/m365-cc-sc-download-icon.png) **Download file**: In the flyout that appears, select **I understand the risks from downloading this file**, and then click **Download** to save a local copy of the file.
 
-## Use Exchange Online PowerShell or standalone EOP PowerShell to view and manage quarantined messages and files
+## Use the Microsoft 365 Defender portal to manage quarantined messages in Microsoft Teams
 
-The cmdlets that you use to view and manage messages and files in quarantine are described in the following list:
+> [!NOTE]
+> This section lists new features which are currently in preview.
+
+When a potentially malicious message is detected in a chat message in Microsoft Teams, zero-hour auto purge (ZAP) removes the message and quarantines it. Admins can view and manage these quarantined messages. Note that the message is quarantined for 30 days, after that it is permanently removed.
+
+For the preview release, this feature is enabled by default. 
+
+> [!NOTE]
+> Quarantine in Microsoft Teams is available only to customers with Microsoft Defender for Office 365 E5 and Defender for Office P2 subscriptions.
+
+### View quarantined messages in Microsoft Teams
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine**. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
+
+2. On the **Quarantine** page, select the **Teams messages** tab.
+
+   :::image type="content" source="../../media/admin-quarantine-teams-message-tab.png" alt-text="Screenshot of the Teams messages tab in quarantine." lightbox="../../media/admin-quarantine-teams-message-tab.png"::: 
+
+3. You can sort the results by clicking on an available column header. Click **Customize columns** to change the columns that are shown. 
+   - **Teams message text**: Contains the subject for the teams message.
+   - **Time received**: The time the message is received by the recipient. 
+   - **Release status**: Shows whether the message is already reviewed and released or needs review. 
+   - **Participants**: The total number of users who received the message.
+   - **Sender**: The person who sent the message that was quarantined.
+   - **Quarantine reason**: Available options are "High confidence phish" and "Malware".
+   - **Policy type**: The organization policy responsible for the quarantined message.
+   - **Expires**: Indicates the time after which the message is removed from quarantine. By default, this is 30 days.
+   - **Recipient address**: Email address of the recipients.
+   - **Message ID**: Includes the chat message ID.
+
+4. To filter the results, click **Filter**. Select the columns you want, and then click **Apply**.
+
+### View quarantined message details in Microsoft Teams
+
+When you select a quarantined message from the list, the following information is available in the details flyout that opens:
+
+:::image type="content" source="../../media/admin-quarantine-teams-details-flyout.png" alt-text="Screenshot of the Teams message details flyout in quarantine." lightbox="../../media/admin-quarantine-teams-details-flyout.png":::
+
+- **Quarantine details**: Includes quarantine reason, expiry date, quarantine policy type, and other information.
+- **Message details**: Includes the primary threat reason, date and time of the message sent, and the sender address. Also includes the Teams message ID and the detection technology.
+- **Sender**: Includes the sender name, their domain location, and whether the sender is from outside the organization.
+- **Participants**: The names and email IDs of all the people who received the same message.
+- **URLs**: Includes the details of any malicious URLs that were detected in the chat message.
+
+To take action on the message, see the next section.
+
+### Take action on quarantined messages in Microsoft Teams
+
+After you select a quarantined message from the list, the following actions are available in the details flyout:
+
+:::image type="content" source="../../media/admin-quarantine-teams-actions-details.png" alt-text="Screenshot of the actions menu for messages in quarantine." lightbox="../../media/admin-quarantine-teams-actions-details.png":::
+
+- **Release**: Allows the admin to release the message only to the recipients within the organization.
+- **Preview message**: Preview the message in quarantine before taking any action.
+- **Delete from quarantine**:  Deletes the message permanently from quarantine for all users in the organization.
+- **Download message**: Downloads the message as a plain .txt for the admin. 
+- **Submit for review**: Allows the admin to submit the message to Microsoft for review.
+
+If you don't release or remove the file, it will be deleted after the default quarantine retention period expires (30 days).
+
+#### Take action on multiple quarantined messages
+
+When you select multiple quarantined files in the list by clicking the checkbox next to the messages, the **More** option appears:
+
+:::image type="content" source="../../media/admin-quarantine-teams-bulk-action.png" alt-text="Screenshot of the Bulk action options for files in quarantine." lightbox="../../media/admin-quarantine-teams-bulk-action.png":::
+
+- **Release**: Select this option to release messages to the intended recipients within the organization.
+- **Delete messages**: Select this option to delete the messages permanently from quarantine.
+- **Submit for review**: Select this option to submit the messages to Microsoft for review.
+- **Download messages**: Select this option to save a local copy of the messages.
+
+## Use Exchange Online PowerShell or standalone EOP PowerShell to manage quarantined messages
+
+The cmdlets that you use to view and manage messages and files in quarantine are described in this section.
 
 - [Delete-QuarantineMessage](/powershell/module/exchange/delete-quarantinemessage)
 - [Export-QuarantineMessage](/powershell/module/exchange/export-quarantinemessage)
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 - [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): Note that this cmdlet is only for messages, not quarantined files from Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
+
+### Use PowerShell to manage quarantined messages in Microsoft Teams
+
+To manage quarantined messages for the Microsoft Teams chat, the admin will need to use the [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) cmdlet with the following parameters to identify the messages.
+
+|Quarantine cmdlets|Parameters|
+|---|---|
+|`QuarantineScenario`|Email </br>SPO </br>Teams|
+|`EmailQuarantineType`|Bulk </br>HighConfPhish </br>Malware</br>Phish </br>Spam </br>TransportRule|
+|`SPOQuarantineType`|Malware|
+|`TeamsQuarantineType`|HighConfPhish </br>Malware|
+
+Admins can select a quarantined message from the list to view or take action.
+
+**Example**:
+
+```powershell
+  Get-QuarantineMessage -Identity c14401cf-aa9a-465b-cfd5-08d0f0ca37c5\4c2ca98e-94ea-db3a-7eb8-3b63657d4db7 |
+  -Scenario Teams
+```
 
 ## For more information
 

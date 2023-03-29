@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 1/31/2023
+ms.date: 3/28/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-security
@@ -26,7 +26,6 @@ search.appverid: met150
 
 **Applies to:**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **In this article:**
 - [Reach the email entity page](#how-to-get-to-the-email-entity-page)
@@ -231,7 +230,7 @@ In addition to the above sections, you also see sections specific to few experie
 
 - Quarantine:
 
-  - *Quarantine details*: Contains quarantine-specific details. For more information, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#view-quarantined-message-details).
+  - *Quarantine details*: Contains quarantine-specific details. For more information, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#view-quarantined-email-details).
 
     - Expires: The date/time when the message is automatically and permanently deleted from quarantine.
     - Released to: All email addresses (if any) to which the message has been released.
