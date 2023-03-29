@@ -74,7 +74,7 @@ This article assumes you have already configured cloud identity. If you need gui
 
 The first step is to build your Zero Trust foundation by configuring identity and device access protection.
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-identities.png" alt-text="The process to configure Zero Trust identity and device access protection" lightbox="../media/zero-trust/m365-zero-trust-architecture-identities.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-identities.png" alt-text="Diagram that shows the process to configure Zero Trust identity and device access protection." lightbox="../media/zero-trust/m365-zero-trust-architecture-identities.png":::
 
 Go to [**_Zero Trust identity and device access protection_**](office-365-security/microsoft-365-policies-configurations.md) for prescriptive guidance to accomplish this. This series of articles describes a set of identity and device access prerequisite configurations and a set of Azure Active Directory (Azure AD) Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
 
@@ -90,7 +90,7 @@ Start by implementing the starting-point tier. These policies do not require enr
 
 Next, enroll your devices into management and begin protecting these with more sophisticated controls.
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-endpoints.png" alt-text="The Manage endpoints with Intune element" lightbox="../media/zero-trust/m365-zero-trust-architecture-endpoints.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-endpoints.png" alt-text="Diagram that shows the Manage endpoints with Intune element." lightbox="../media/zero-trust/m365-zero-trust-architecture-endpoints.png":::
 
 Go to [**_Manage devices with Intune_**](../solutions/manage-devices-with-intune-overview.md) for prescriptive guidance to accomplish this.
 

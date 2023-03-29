@@ -37,7 +37,7 @@ Microsoft 365 Defender contributes to a strong Zero Trust strategy and architect
 
 Microsoft 365 Defender is an XDR solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your Microsoft 365 environment, including endpoint, email, applications, and identities.
 
-:::image type="content" source="../../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="Microsoft 365 Defender in the Zero Trust architecture" lightbox="../../media/zero-trust/m365-zero-trust-architecture-defender.png":::
+:::image type="content" source="../../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="Diagram that shows the Microsoft 365 Defender in the Zero Trust architecture." lightbox="../../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
 In the illustration: Microsoft 365 Defender provides XDR capabilities for protecting:
 
