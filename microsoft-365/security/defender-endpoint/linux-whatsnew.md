@@ -342,7 +342,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 - On RHEL 6, product can now be installed on devices running Unbreakable Enterprise Kernel (UEK)
 - Fixed an issue where the process name was sometimes incorrectly displayed as `unknown` when running `mdatp diagnostic real-time-protection-statistics`
 - Fixed a bug where the product sometimes was incorrectly detecting files inside the quarantine folder
-- Fixed an issue where the `mdatp` command-line tool was not working when `/opt` was mounted as a soft-link
+- Fixed an issue where the `mdatp` command-line tool wasn't working when `/opt` was mounted as a soft-link
 - Performance improvements & bug fixes
 </br>
 
@@ -481,7 +481,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
   <p><b>What's new</b></p>
 
-  - Starting with this version, we are bringing Microsoft Defender for Endpoint support to the following distros:
+  - Starting with this version, we're bringing Microsoft Defender for Endpoint support to the following distros:
 
     - RHEL6.7-6.10 and CentOS6.7-6.10 versions.
     - Amazon Linux 2
