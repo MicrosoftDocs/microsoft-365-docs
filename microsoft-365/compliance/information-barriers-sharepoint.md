@@ -26,7 +26,7 @@ ms.collection:
 
 # Use information barriers with SharePoint
 
-[Microsoft Purview Information Barriers](/microsoft-365/compliance/information-barriers) are policies in Microsoft 365 that a compliance admin can configure to prevent users from communicating and collaborating with each other. This solution is useful if, for example, one division is handling information that shouldn't be shared with specific other divisions, or a division needs to be prevented, or isolated, from collaborating with all users outside of the division. Information barriers are often used in highly regulated industries and those organizations with compliance requirements, such as finance, legal, and government.
+[Microsoft Purview Information Barriers](information-barriers.md) are policies in Microsoft 365 that a compliance admin can configure to prevent users from communicating and collaborating with each other. This solution is useful if, for example, one division is handling information that shouldn't be shared with specific other divisions, or a division needs to be prevented, or isolated, from collaborating with all users outside of the division. Information barriers are often used in highly regulated industries and those organizations with compliance requirements, such as finance, legal, and government.
 
 For SharePoint, information barriers can determine and prevent the following kinds of unauthorized collaborations:
 
@@ -36,7 +36,7 @@ For SharePoint, information barriers can determine and prevent the following kin
 
 ## Information barriers modes and SharePoint sites
 
-[Information barriers modes](/microsoft-365/compliance/information-barriers-policies#step-6-information-barriers-modes) help strengthen access, sharing, and membership of a site based on its IB mode and segments associated with the site.
+[Information barriers modes](information-barriers-policies.md#step-6-information-barriers-modes) help strengthen access, sharing, and membership of a site based on its IB mode and segments associated with the site.
 
 When using information barriers with SharePoint, the following IB modes are supported:
 
@@ -152,7 +152,7 @@ In the above example, the HR segment is compatible with both Sales and Research.
 SharePoint Administrators or Global Administrators can enable information barriers in SharePoint and OneDrive in your organization. Complete the following steps to enable information barriers for your organization:
 
 1. [Download](https://go.microsoft.com/fwlink/p/?LinkId=255251) and install the latest version of SharePoint Online Management Shell.
-2. Connect to SharePoint Online as a Global Administrator or [SharePoint Administrator](sharepoint-admin-role.md) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+2. Connect to SharePoint Online as a Global Administrator or [SharePoint Administrator](/sharepoint/sharepoint-admin-role.md) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 3. To enable information barriers in SharePoint and OneDrive, run the following command:
 
     ```PowerShell
@@ -179,7 +179,7 @@ If you installed a previous version of the SharePoint Online Management Shell, c
 2. Navigate to the Microsoft Download Center for the [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)), select your language, and then select **Download**.
 3. You may be asked to choose between downloading a x64 and x86 .msi file. Download the x64 file if you're running the 64-bit version of Windows or the x86 file if you're running the 32-bit version of Windows. If you don't know which version you're running on your computer, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system).
 4. After the download is complete, run the installer file and follow the configuration steps in the setup wizard.
-5. Connect to SharePoint Online as a Global Administrator or [SharePoint Administrator](sharepoint-admin-role.md) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+5. Connect to SharePoint Online as a Global Administrator or [SharePoint Administrator](/sharepoint/sharepoint-admin-role.md) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 6. To enable information barriers in SharePoint and OneDrive, run the following command:
 
     ```PowerShell
@@ -205,7 +205,7 @@ Set-SPOTenant -IBImplicitGroupBased $true
 SharePoint Administrators or Global Administrators can view and manage segments on a SharePoint site. Your organization can have up to 5,000 segments and users can be assigned to multiple segments.
 
 > [!IMPORTANT]
-> Support for 5,000 segments and assigning users to multiple segments is only available when your organization isn't in *Legacy* mode. Assigning users to multiple segments requires additional actions to change the information barriers mode for your organization. For more information, see [Use multi-segment support in information barriers)](/microsoft-365/compliance/information-barriers-multi-segment) for details. <br><br> For organizations in *Legacy* mode, the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations in *Legacy* mode will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).  
+> Support for 5,000 segments and assigning users to multiple segments is only available when your organization isn't in *Legacy* mode. Assigning users to multiple segments requires additional actions to change the information barriers mode for your organization. For more information, see [Use multi-segment support in information barriers)](information-barriers-multi-segment.md) for details. <br><br> For organizations in *Legacy* mode, the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations in *Legacy* mode will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).  
 
 View and manage information barriers segments as follows:
 
@@ -213,7 +213,7 @@ View and manage information barriers segments as follows:
 
 To view, edit, or remove information segments for a site, use <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** in the SharePoint admin center</a>.  
 
-The Segments column lists the first segment associated with the site and shows whether the site has other segments associated. [Learn how to show or move this column](customize-admin-center-site-list.md#customize-columns)
+The Segments column lists the first segment associated with the site and shows whether the site has other segments associated. [Learn how to show or move this column](/sharepoint/customize-admin-center-site-list.md#customize-columns)
 
 ![Segments column on the Active sites page.](../media/info-barriers-segments-column.png)
 
@@ -243,7 +243,7 @@ To edit the segments associated with the site, select **Edit**, add or remove se
 
 4. If not previously completed, [download](https://go.microsoft.com/fwlink/p/?LinkId=255251) and install the latest SharePoint Online Management Shell. If you installed a previous version of the SharePoint Online Management Shell, follow the instructions in the **Enable SharePoint and OneDrive information barriers in your organization** section in this article.
 
-5. Connect to SharePoint Online as a [Global Administrator or SharePoint Administrator](./sharepoint-admin-role.md) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+5. Connect to SharePoint Online as a [Global Administrator or SharePoint Administrator](sharepoint/sharepoint-admin-role.md) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 6. Run the following command:
 
@@ -323,7 +323,7 @@ Audit events are available in the Microsoft Purview compliance portal to help yo
 - Changed information barriers mode of site
 - Disabled information barriers for SharePoint and OneDrive
 
-For more information about SharePoint segment auditing in Office 365, see [Search the audit log in the compliance portal](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#information-barriers-activities).
+For more information about SharePoint segment auditing in Office 365, see [Search the audit log in the compliance portal](audit-log-search.md#information-barriers-activities).
 
 ## Site creation and management by site owners
 
@@ -385,7 +385,7 @@ Private channel sites already configured in your organization will have their in
 Set-Sposite -Identity <site URL> -InformationBarriersMode Implicit
 ```
 
-Learn more about managing [Microsoft Teams connected teams sites](/SharePoint/teams-connected-sites).
+Learn more about managing [Microsoft Teams connected teams sites](/sharepoint/teams-connected-sites).
 
 ## Search
 
@@ -408,7 +408,7 @@ If a SharePoint site owner or site member's segment changes, they'll continue to
 If a compliance administrator changes an existing IB policy, the change may impact the compatibility of the segments associated with a site (in *Explicit* or *Implicit* mode).
 For example, segments that were once compatible may no longer be compatible.
 
-With Information barriers policy compliance report, the SharePoint Administrator will have the capability to view the list of sites where segments are no longer compatible. For more information, see [Learn how to create an information barriers policy compliance report in PowerShell](info-barriers-report.md).
+With Information barriers policy compliance report, the SharePoint Administrator will have the capability to view the list of sites where segments are no longer compatible. For more information, see [Learn how to create an information barriers policy compliance report in PowerShell](information-barriers-sharepoint-report.md).
 
 To manage out of compliance sites:
 
@@ -434,7 +434,7 @@ IB supports an opt-in capability available in the [SharePoint PowerShell module]
 
 Before enabling group support, verify that you've met the following prerequisites:
 
-- Your organization has only IB [*Block* policies](/microsoft-365/compliance/information-barriers-policies#configuration-concepts)
+- Your organization has only IB [*Block* policies](information-barriers-policies.md#configuration-concepts)
 - Your organization is enabled for SharePoint IB (see [this section](#enable-sharepoint-and-onedrive-information-barriers-in-your-organization) in this article).
 
 To configure mail-enabled security group support in *Open* mode sites, run the following command:
@@ -445,6 +445,6 @@ Set-SPOTenant -ShowPeoplePickerGroupSuggestionsForIB $true
 
 ## Resources
 
-- [Information barriers in Microsoft Teams](/microsoftteams/information-barriers-in-teams)
-- [Information barriers in OneDrive](/onedrive/information-barriers)
+- [Information barriers in Microsoft Teams](information-barriers-teams.md)
+- [Information barriers in OneDrive](information-barriers-onedrive.md)
 

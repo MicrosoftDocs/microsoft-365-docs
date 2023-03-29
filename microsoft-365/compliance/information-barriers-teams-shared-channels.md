@@ -23,7 +23,7 @@ ms.custom: information-barriers
 
 # Information barriers and shared channels
 
-[Shared channels](shared-channels.md) in Microsoft Teams create collaboration spaces where you can invite people who aren't in the team. [Microsoft Purview Information Barriers](/microsoft-365/compliance/information-barriers) are policies implemented to restrict and prevent users and groups from communicating with each other within and outside of your organization.
+[Shared channels](/microsoftteams/shared-channels.md) in Microsoft Teams create collaboration spaces where you can invite people who aren't in the team. [Microsoft Purview Information Barriers](information-barriers.md) are policies implemented to restrict and prevent users and groups from communicating with each other within and outside of your organization.
 
 Shared channels are enabled by default in Teams. You can choose if people can create shared channels, if they can share them with people outside your organization, and if they can participate in external shared channels by creating a channel policy. When you create information barriers policies in your organization, checks are performed when configuring shared channels to verify that none of the existing channel members and any new users added to the shared channel violate information barriers policy conditions.
 

@@ -74,14 +74,14 @@ To verify that a new application was properly created in your organization's ent
 
 8. In this example, the **M365-Group-Compliance-Assistant** is authorized to add/remove non-compliant information barrier users from your Microsoft 365 groups.
 
-You can use the [Microsoft Purview compliance portal](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) to search, review, and track audit log events for the M365-Group-Compliance-Assistant application. The audit activities associated with the compliance assistant are:
+You can use the [Microsoft Purview compliance portal](audit-log-search.md) to search, review, and track audit log events for the M365-Group-Compliance-Assistant application. The audit activities associated with the compliance assistant are:
 
 - **IB assistant removed group member**: The IB non-compliant group member was removed from the group by the compliance assistant.
 - **IB assistant removed group owner**: The IB non-compliant owner was removed from the group by the compliance assistant.
 - **Identified as IB non-compliant group**: The segments on the group are non-IB compliant with each other.
 
-To search the audit log for Microsoft 365 Groups activities, see [Search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#search-the-audit-log).
+To search the audit log for Microsoft 365 Groups activities, see [Search the audit log](audit-log-search#search-the-audit-log).
 
 >[!Note]
->The compliance assistant runs periodically (every 24 hours). The assistant runs on group-connected SharePoint sites that do not have an associated team in Microsoft Teams. To enable the compliance assistant for SharePoint sites connected to Microsoft Teams, follow the instructions in the [Define information barrier policies](/microsoft-365/compliance/information-barriers-policies) article.
+>The compliance assistant runs periodically (every 24 hours). The assistant runs on group-connected SharePoint sites that do not have an associated team in Microsoft Teams. To enable the compliance assistant for SharePoint sites connected to Microsoft Teams, follow the instructions in the [Define information barrier policies](information-barriers-policies.md) article.
 

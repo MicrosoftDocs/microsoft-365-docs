@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 # Information barriers in Microsoft Teams
 
-[Microsoft Purview Information Barriers](/microsoft-365/compliance/information-barriers) (IBs) are policies that an admin can configure to prevent individuals or groups from communicating with each other. IBs are useful if, for example, one department is handling information that shouldn't be shared with other departments. IBs are also useful when a group needs to be isolated or prevented from communicating with anyone outside of that group. Shared channels in Microsoft Teams is supported by information barriers. Depending on the type of sharing, information barriers policies may restrict sharing in certain ways. For more information about shared channels and information barriers behavior, see [Information barriers and Shared Channels](information-barriers-shared-channels.md).
+[Microsoft Purview Information Barriers](information-barriers.md) (IBs) are policies that an admin can configure to prevent individuals or groups from communicating with each other. IBs are useful if, for example, one department is handling information that shouldn't be shared with other departments. IBs are also useful when a group needs to be isolated or prevented from communicating with anyone outside of that group. Shared channels in Microsoft Teams is supported by information barriers. Depending on the type of sharing, information barriers policies may restrict sharing in certain ways. For more information about shared channels and information barriers behavior, see [Information barriers and shared channels](information-barriers-teams-shared-channels.md).
 
 For Microsoft Teams, information barriers can determine and prevent the following kinds of unauthorized collaborations:
 
@@ -65,21 +65,21 @@ The Information Barrier Policy Evaluation Service determines whether a communica
 
 ## Managing information barriers segments
 
-IB segments are managed in the Microsoft Purview compliance portal or by using PowerShell cmdlets. For more information, see [Step 2: Segment users in your organization](/microsoft-365/compliance/information-barriers-policies#step-2-segment-user-in-your-organization).
+IB segments are managed in the Microsoft Purview compliance portal or by using PowerShell cmdlets. For more information, see [Step 2: Segment users in your organization](information-barriers-policies.md#step-2-segment-user-in-your-organization).
 
 > [!IMPORTANT]
-> Support for assigning users to multiple segments is only available when your organization isn't in *Legacy* mode. To determine if your organization is in *Legacy* mode, see [Check the IB mode for your organization)](/microsoft-365/compliance/information-barriers-multi-segment#check-the-ib-mode-for-your-organization). <br><br> Users are restricted to being assigned to only one segment for organizations in *Legacy* mode. Organizations in *Legacy* mode will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
+> Support for assigning users to multiple segments is only available when your organization isn't in *Legacy* mode. To determine if your organization is in *Legacy* mode, see [Check the IB mode for your organization)](information-barriers-multi-segment.md#check-the-ib-mode-for-your-organization). <br><br> Users are restricted to being assigned to only one segment for organizations in *Legacy* mode. Organizations in *Legacy* mode will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
 
 ## Managing information barriers policies
 
-IB policies are managed in the Microsoft Purview compliance portal or by using PowerShell cmdlets. For more information, see [Step 3: Create IB policies](/microsoft-365/compliance/information-barriers-policies#step-3-create-ib-policies).
+IB policies are managed in the Microsoft Purview compliance portal or by using PowerShell cmdlets. For more information, see [Step 3: Create IB policies](information-barriers-policies.md#step-3-create-ib-policies).
 
 >[!IMPORTANT]
->Before you set up or define policies, you must enable scoped directory search in Microsoft Teams. Wait at least a few hours after enabling scoped directory search before you set up or define policies for information barriers. For more information, see [Define information barrier policies](/microsoft-365/compliance/information-barriers-policies#prerequisites).
+>Before you set up or define policies, you must enable scoped directory search in Microsoft Teams. Wait at least a few hours after enabling scoped directory search before you set up or define policies for information barriers. For more information, see [Define information barrier policies](information-barriers-policies.md#prerequisites).
 
 ## Information barriers administrator role
 
-The IB Compliance Management role is responsible for managing IB policies. For more information about this role, see [Permissions in the Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center-permissions).
+The IB Compliance Management role is responsible for managing IB policies. For more information about this role, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 ## Information barrier triggers
 
@@ -200,7 +200,7 @@ For example, to configure the *Implicit* mode for a Microsoft 365 Group, you'll 
 Set-UnifiedGroup -InformationBarrierMode Implicit
 ```
 
-To update the mode from *Open* to *Implicit* for all existing teams, use this [PowerShell script](information-barriers-mode-script.md).
+To update the mode from *Open* to *Implicit* for all existing teams, use this [PowerShell script](/microsoftteams/information-barriers-mode-script.md).
 
 If you change the *Open* mode configuration on existing Teams-connected groups to meet compliance requirements for your organization, you'll need to [update the IB modes](/sharepoint/information-barriers#view-and-manage-ib-modes-as-an-administrator-with-sharepoint-powershell) for associated SharePoint sites connected to the Teams team.
 
@@ -219,7 +219,7 @@ For more information on licenses and permissions, plans, and pricing, see [Micro
 
 ## Usage notes
 
-- **Users can't join ad-hoc meetings**: If IB policies are enabled, users aren't allowed to join meetings if the size of the meeting roster is greater than the [meeting attendance limits](limits-specifications-teams.md). The root cause is that IB checks rely on whether users can be added to a meeting chat roster, and only when they can be added to the roster are they allowed to join the meeting. A user joining a meeting once adds that user to the roster; hence for recurring meetings, the roster can fill up fast. Once the chat roster reaches the [meeting attendance limits](limits-specifications-teams.md), additional users can't be added to the meeting. If IB is enabled for the organization and the chat roster is full for a meeting, new users (those users who aren't already on the roster) aren't allowed to join the meeting. But if IB isn't enabled for the organization and the meeting chat roster is full, new users (those users who aren't already on the roster) are allowed to join the meeting, though they won't see the chat option in the meeting. A short-term solution is to remove inactive members from the meeting chat roster to make space for new users. We will, however, be increasing the size of meeting chat rosters at a later date.
+- **Users can't join ad-hoc meetings**: If IB policies are enabled, users aren't allowed to join meetings if the size of the meeting roster is greater than the [meeting attendance limits](/microsoftteams/limits-specifications-teams.md). The root cause is that IB checks rely on whether users can be added to a meeting chat roster, and only when they can be added to the roster are they allowed to join the meeting. A user joining a meeting once adds that user to the roster; hence for recurring meetings, the roster can fill up fast. Once the chat roster reaches the [meeting attendance limits](/microsoftteams/limits-specifications-teams.md), additional users can't be added to the meeting. If IB is enabled for the organization and the chat roster is full for a meeting, new users (those users who aren't already on the roster) aren't allowed to join the meeting. But if IB isn't enabled for the organization and the meeting chat roster is full, new users (those users who aren't already on the roster) are allowed to join the meeting, though they won't see the chat option in the meeting. A short-term solution is to remove inactive members from the meeting chat roster to make space for new users. We will, however, be increasing the size of meeting chat rosters at a later date.
 - **Users can't join channel meetings**: If IB policies are enabled, users aren't allowed to join channel meetings if they're not a member of the team. The root cause is that IB checks rely on whether users can be added to a meeting chat roster, and only when they can be added to the roster are they allowed to join the meeting. The chat thread in a channel meeting is available to Team/Channel members only, and non-members can't see or access the chat thread. If IB is enabled for the organization and a non-team member attempts to join a channel meeting, that user isn't allowed to join the meeting. However, if IB isn't* enabled for the organization and a non-team member attempts to join a channel meeting, the user is allowed to join the meeting—but they won't see the chat option in the meeting.
 - **IB policies don't work for federated users**: If you allow federation with external organizations, the users of those organizations won't be restricted by IB policies. If users of your organization join a chat or meeting organized by external federated users, then IB policies also won't restrict communication between users of your organization.
 
@@ -227,8 +227,8 @@ For more information on licenses and permissions, plans, and pricing, see [Micro
 
 - To learn more about IBs, see [Information barriers](/office365/securitycompliance/information-barriers).
 - To set up IB policies, see [Get started with information barriers](/office365/securitycompliance/information-barriers-policies).
-- To edit or remove IB policies, see [Manage information barrier policies](/microsoft-365/compliance/information-barriers-edit-segments-policies).
-- [Information barriers and Shared Channels](information-barriers-shared-channels.md)
+- To edit or remove IB policies, see [Manage information barrier policies](information-barriers-edit-segments-policies.md).
+- [Information barriers and shared channels](information-barriers-teams-shared-channels.md)
 
 ## Availability
 
