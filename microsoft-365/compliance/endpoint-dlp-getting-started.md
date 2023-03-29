@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -67,6 +67,29 @@ Article | Description
 [Onboard Windows 10 or 11 devices using Microsoft Intune](device-onboarding-mdm.md) | Use Microsoft Intune to deploy the configuration package on device.
 [Onboard Windows 10 or 11 devices using a local script](device-onboarding-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
 [Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md) | Learn how to use the configuration package to configure VDI devices.
+
+### Endpoint DLP support for virtualized environments (preview)
+
+You can onboard virtual machines as monitored devices in Microsoft Purview compliance portal. There is no change to the onboarding procedures listed above.
+
+Here are the virtual operating systems that are supported by virtualization environments.
+
+
+|Virtualization </br> platform  |Windows 10 |Windows 11  |
+|---------|---------|---------|
+|Azure virtual desktop (AVD)|- Single session supported for 20H2, 21H1, 21H2</br>- Multi session supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session supported for 22H2|1809 and higher supported |
+|Citrix Virtual Apps and Desktops 7 (2209)|- Single session supported for 20H2, 21H1, 21H2</br>- Multi session supported for 20H2, 21H1, 21H2|- Single session supported for 21H2 (Gen2)</br>- Multi session supported for 21H2 (Gen 2)|
+|Azure virtual desktop (AVD)|- Single session supported for 20H2, 21H1, 21H2</br>- Multi session supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session supported for 22H2|
+|Hyper-V    |- Single session supported for 20H2, 21H1, 21H2</br>- Multi session with Hybrid AD join supported for 20H2, 21H1, 21H2  |- Single session supported for 22H2</br>- Multi session with Hybrid AD join supported for 22H2|
+
+#### Known issues
+
+1. You cannot monitor Copy to Clipboard and Enforcing Endpoint DLP on Azure Virtual Desktop environments via browsers. However the same egress operation will be monitored by Endpoint DLP for actions via Remote Desktop Session (RDP) today.
+1. Citrix XenApp doesn't support access by unallowed app monitoring.
+
+#### Limitations
+
+1. Handling of USBs in virtualized environments: USB storage devices are treated as network shares. You need to include the **Copy to network share** activity to monitor **Copy to a USB device**. All activity explorer events for virtual devices and incident alerts will show the **Copy to a network share** activity for all copy to USB events.
 
 ## macOS onboarding procedures
 

@@ -16,7 +16,7 @@ metadata:
   ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
   ms.collection:
     - m365-security
-    - m365initiative-defender-office365
+    - tier2
   description: Admins can view frequently asked questions and answers about quarantined messages in Exchange Online Protection (EOP).
   ms.custom: seo-marvel-apr2020
   ms.subservice: mdo
@@ -62,7 +62,7 @@ sections:
       - question: |
           What messages can end users access in quarantine?
         answer: |
-          Quarantine policies define whether users can access quarantined messages based on why the message was quarantined (for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). For more information, see [Quarantine policies](quarantine-policies.md).
+          Quarantine policies define whether users can access quarantined messages based on why the message was quarantined for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). For more information, see [Quarantine policies](quarantine-policies.md).
 
           By default, users can access the following types of quarantined messages where they're a recipient:
 
@@ -71,7 +71,7 @@ sections:
 
           For more information, see [Find and release quarantined messages as a user](quarantine-end-user.md).
 
-          By default, end users can't access the following types of quarantined messages where they are a recipient:
+          By default, end users can't access the following types of quarantined messages where they're a recipient:
 
           - **Anti-spam policies**: High confidence phishing.
           - **Anti-malware policies**

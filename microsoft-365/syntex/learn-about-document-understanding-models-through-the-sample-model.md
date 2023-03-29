@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 09/23/2022
 audience: admin
-ms.topic: article
-ms.custom: intro-get-started
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 

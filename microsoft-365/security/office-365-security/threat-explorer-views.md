@@ -5,14 +5,14 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 05/15/2020
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Microsoft 365 Defender portal.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo

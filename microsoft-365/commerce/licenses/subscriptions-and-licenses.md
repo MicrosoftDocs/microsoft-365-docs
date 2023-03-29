@@ -32,11 +32,11 @@ When you buy a subscription to Microsoft 365 for business, you sign up for a set
 
 When you buy a subscription, you specify the number of licenses that you need, based on how many people you have in your organization. After you buy a subscription, you create accounts for people in your organization, and then assign a license to each person. As your organizational needs change, you can buy more licenses to accommodate new people, or reassign licenses to other users when someone leaves your organization.
 
-If you have more than one subscription, you can assign licenses to different people for each subscription. For example, you can assign all of your users to all Microsoft 365 applications and services as part of a Microsoft 365 Business Standard subscription. You can also assign a subset of users to Visio Online through a separate Visio subscription.
+If you have more than one subscription, you can assign licenses to different people for each subscription. For example, you can assign all of your users to all Microsoft 365 apps and services as part of a Microsoft 365 Business Standard subscription. You can also assign a subset of users to Visio Online through a separate Visio subscription.
 
-## How many devices can people install Office on?
+## How many devices can people install Microsoft 365 on?
 
-If your subscription includes any of the following products, each person can install Office on up to five PCs or Mac, five tablets, and five phones.
+If your subscription includes any of the following products, each person can install Microsoft 365 on up to five PCs or Mac, five tablets, and five phones.
 
 :::row:::
    :::column span="":::
@@ -67,7 +67,7 @@ The following table lists what automatically happens when you assign a license t
 |Exchange Online|A mailbox is created for that person. <br/> To learn about the SLA for this task to be completed, see ["Setting up..." messages in the Microsoft 365 admin center](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center).|
 |SharePoint Online|Edit permissions to the default SharePoint Online team site are assigned to that person.|
 |Microsoft Teams|The person has access to the features associated with the license.|
-|Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business|The person can download Office apps on up to five Macs or PCs, five tablets, and five smartphones.|
+|Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business|The person can download Microsoft 365 apps on up to five Macs or PCs, five tablets, and five smartphones.|
 
 ## Understand licenses for non-user mailboxes
 

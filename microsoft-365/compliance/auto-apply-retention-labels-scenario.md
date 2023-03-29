@@ -5,13 +5,14 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
+ms.date: 10/14/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - purview-compliance
-- tier1
+- tier2
 - SPO_Content
 ms.custom: 
 - admindeeplinkCOMPLIANCE
@@ -82,7 +83,6 @@ The manufacturing company's compliance and data governance policies dictate how 
 | Product agreements          | 10 years after production stops | Review                                       |
 | User manuals                | 5 years after production stops  | Delete                                       |
 | All other types of documents | Don't actively retain  | Delete when document is older than 3 years <br /><br /> A document is considered older than 3 years if it hasn't been modified within the last 3 years. |
-|||
 
 We use the Microsoft Purview compliance portal to create the following [retention labels](retention.md#retention-labels):
 
@@ -112,28 +112,28 @@ Here's the [file plan](file-plan-manager.md) for the Product Specification reten
 
 - **File plan descriptors:** For simplifying the scenario, no optional file descriptors are provided.
 
-The following screenshot shows the settings when you create the Product Specification retention label in the Microsoft Purview compliance portal. You can create the *Product Cessation* event type when you create the retention label. See the procedure in the following section.
+The following screenshot shows a summary of the label settings when you create the Product Specification retention label in the Microsoft Purview compliance portal. You can create the *Product Cessation* event type before you create the retention label, or during. See the procedure in the following section.
 
-![Retention settings for the Product Specification label.](../media/SPRetention5.png)
+![Retention settings for the Product Specification label.](../media/spo-scenario-label-settings.png)
 
 > [!NOTE]
 > To avoid a 5-year wait for document deletion, set the retention duration to ***1 day*** if you're recreating this scenario in a test environment.
 
 ### Create an event type when you create a retention label
 
-1. On the **Define retention settings** page of the Create retention label wizard, after **Start the retention period based on**, select **Create new event type**:
+1. On the **Define the retention period** page of the Create retention label configuration, after **Start the retention period based on**, select **Create new event type**:
 
-    ![Create a new event type for the Product Specification label dialog box.](../media/SPRetention6.png)
+    ![Create a new event type for the Product Specification label dialog box.](../media/spo-scenario-event.png)
 
 3. On the **Name your event type** page, enter **Product Cessation** and an optional description. Then select **Next**, **Submit**, and **Done**.
 
-4. Back on the **Define retention settings** page, for **Start the retention period based on**, use the dropdown box to select the **Product Cessation** event type that you created.
+4. Back on the **Define the retention period** page, for **Start the retention period based on**, use the dropdown box to select the **Product Cessation** event type that you created.
 
-    Here's what the settings look like for the Product Specification retention label:
+5. On the **Choose what happens during the retention period** page, select **Mark items as a record**.
 
-   ![Settings for the new Product Specification label.](../media/SPRetention7.png)
+6. On the **Choose what happens after the retention period** page, keep the default of **Delete items automatically**.
 
-6. Select **Create label**, and on the next page when you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**.
+6. On the **Review and finish** page, select **Create label**. On the next page when you see the options to publish the label, auto-apply the label, or just save the label: Select **Do Nothing**, and then select **Done**.
 
     > [!TIP]
     > For more detailed steps, see [Create a label whose retention period is based on an event](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
@@ -218,13 +218,11 @@ Now that we've verified that the KQL query is working, let's create an auto-appl
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, go to **Records management** > **Label policies** > **Auto-apply a label**.
 
-   [ ![Select "Auto-apply a label" on the Labels page](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
-
-2. In the Create auto-labeling policy wizard, on the **Name your auto-labeling policy** page, enter a name such as **Auto-apply Product Specification label**, and an optional description. Then select **Next**.
+2. In the Create auto-labeling policy configuration, on the **Name your auto-labeling policy** page, enter a name such as **Auto-apply Product Specification label**, and an optional description. Then select **Next**.
 
 3. On the **Choose the type of content you want to apply this label to** page, select **Apply label to content that contains specific words or phrases, or properties**, and then select **Next**.
 
-   [ ![Select Apply label to content that contains specific words or phrases, or properties.](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
+   [ ![Select Apply label to content that contains specific words or phrases, or properties.](../media/SPRetention17.png) ](../media/spo-scenario-policy-conditions.png#lightbox)
 
    This option lets us provide the same KQL search query that we tested in the previous section. The query returns all Product Specification documents that have a status of *Final*. When we use this same query in the auto-apply label policy, the Product Specification retention label will be automatically applied to all documents that match it.
 
@@ -232,20 +230,24 @@ Now that we've verified that the KQL query is working, let's create an auto-appl
 
    ![Specify the query in the Keyword query editor box.](../media/SPRetention19.png)
 
-5. On the **Choose locations to apply the policy** page, you select the content locations that you want to apply the policy to. For this scenario, we apply the policy only to SharePoint locations, because all the production documents are stored in SharePoint document libraries. Toggle the status for **Exchange email**, **OneDrive accounts**, and **Microsoft 365 Groups** to **Off**. Make sure that the status for SharePoint sites is set to **On** before you select **Next**:
+5. On the **Choose the type of retention policy to create** page, select **Static**.
 
-    ![Choose specific sites to auto-apply labels to.](../media/SPRetentionSPlocations.png)
+6. On the **Choose where to automatically apply the label** page, you select the content locations that you want to apply the policy to. For this scenario, we apply the policy only to **SharePoint classic and communication sites**. Toggle the status for **Exchange mailboxes**, **OneDrive accounts**, and **Microsoft 365 Group mailboxes & sites** to **Off**:
+
+    ![Choose SharePoint sites to auto-apply the label.](../media/spo-scenario-policy-locations.png)
 
    > [!TIP]
-   > Instead of applying the policy to all SharePoint sites, you can select **Choose site** and add the URLs for specific SharePoint sites.
+   > Instead of applying the policy to all SharePoint sites, you can select **Edit** for the **Included** column, and add the URLs for specific SharePoint sites.
 
 6. On the **Choose a label to auto-apply** page, select **Add label**.
 
 7. From the list of retention labels, select **Product Specification**. Then select **Add** and **Next**.
 
-8. Review your settings:
+8. On the **Decide whether to test or run your policy** page, keep the default of **Turn on policy**.
 
-    ![Settings to auto-apply the label.](../media/SPRetention18.png)
+9. Review your settings:
+
+    ![Settings to auto-apply the label.](../media/spo-scenario-policy-summary.png)
 
 9. Select **Submit** to create the auto-apply label policy.
 
@@ -260,7 +262,7 @@ Also look at the properties of the documents in the Document Library. In the inf
 
 [ ![Verify that label was applied by looking at the document properties in the Document Library.](../media/SPRetention21.png) ](../media/SPRetention21.png#lightbox)
 
-Because the retention labels were auto-applied to documents, those documents are protected from deletion because the retention label was configured to declare the documents as *records*. As an example of this protection, we get the following error message when we try to delete one of these documents:
+Because the retention labels were auto-applied to documents, those documents are protected from deletion because the retention label was configured to mark items as records. As an example of this protection, we get the following error message when we try to delete one of these documents:
 
 [ ![An error message shows that documents can't be deleted because the label declares that the documents are records.](../media/SPRetention22.png) ](../media/SPRetention22.png#lightbox)
 
@@ -319,9 +321,7 @@ This list describes the parameters in the **Body** property of the action that m
 
 Now the retention label is created and auto-applied, and the flow is configured and created. When the value in the **In Production** column for the Spinning Widget product in the Products list is changed from ***Yes*** to ***No***, the flow is triggered to create the event. To see this event in the Microsoft Purview compliance portal, go to **Records management** > **Events**.
 
-[ ![The event that was triggered by the flow is displayed on the Events page in the Microsoft Purview compliance portal.](../media/SPRetention28.png) ](../media/SPRetention28.png#lightbox)
-
-Select the event to view the details on the flyout page. Notice that even though the event is created, the event status shows that no SharePoint sites or documents have been processed.
+Select the event to view the details on the flyout pane. Notice that even though the event is created, the event status shows that no SharePoint sites or documents have been processed.
 
 ![Event details.](../media/SPRetention29.png)
 

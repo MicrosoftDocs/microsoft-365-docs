@@ -3,6 +3,7 @@ title: "Active user in Microsoft 365 usage reports"
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -35,7 +36,7 @@ An active user of Microsoft 365 products for [Microsoft 365 usage analytics](usa
 |OneDrive for Business  <br/> |Any user who has interacted with a file by creating, modifying, viewing, deleting, sharing internally or externally, or synchronizing to clients.  <br/> ||
 |Yammer  <br/> |Any user who has read, posted, or liked a message on Yammer.  <br/> ||
 |Skype for Business  <br/> |Any user who has participated in a peer-to-peer session (including instant messaging, audio and video calls, application sharing, and file transfers) or who has organized or participated in a conference.  <br/> ||
-|Office  <br/> |Any user who has activated their Microsoft 365 Pro Plus, Visio Pro or Project Pro subscription on at least one device.  <br/> ||
+|Microsoft 365  <br/> |Any user who has activated their Microsoft 365 Apps for enterprise, Visio Pro or Project Pro subscription on at least one device.  <br/> ||
 |Microsoft 365 Groups  <br/> |Any group member that has mailbox activity (if a message has been sent to the group)  <br/> |This definition will be enhanced with group site file activity and Yammer group activity (file activity on group site and message posted to Yammer group associated with the group.) This data is currently not available in the Microsoft 365 Usage Analytics template app  <br/> |
 |Microsoft Teams  <br/> |Any user who has participated in chat messages, private chat messages, calls, meetings, or other activity. Other activity is defined as the number of other team activities by the user some of which include, and not limited to: liking messages, apps, working on files, searching, following teams and channel and favoriting them.  <br/> ||
    
