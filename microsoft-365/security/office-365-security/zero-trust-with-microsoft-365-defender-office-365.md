@@ -69,4 +69,4 @@ Learn more about Zero Trust and how to build an enterprise-scale strategy and ar
 
 Learn about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture with [Zero Trust deployment plan with Microsoft 365](../microsoft-365-zero-trust.md).
 
-For an overview of Zero Trust for Microsoft 365 Defender services, see [Zero Trust with Microsoft 365 Defender](zero-trust-with-microsoft-365-defender.md).
+For an overview of Zero Trust for Microsoft 365 Defender services, see [Zero Trust with Microsoft 365 Defender](../defender/zero-trust-with-microsoft-365-defender.md).

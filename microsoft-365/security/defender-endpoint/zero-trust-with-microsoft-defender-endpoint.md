@@ -75,4 +75,4 @@ For the steps to deploy Intune for Microsoft 365 with Zero Trust, see the [Manag
 
 For other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture, see [Zero Trust deployment plan with Microsoft 365](../microsoft-365-zero-trust.md).
 
-For an overview of Zero Trust for Microsoft 365 Defender services, see [Zero Trust with Microsoft 365 Defender](zero-trust-with-microsoft-365-defender.md).
+For an overview of Zero Trust for Microsoft 365 Defender services, see [Zero Trust with Microsoft 365 Defender](../defender/zero-trust-with-microsoft-365-defender.md).
