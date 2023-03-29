@@ -8,6 +8,8 @@
          href: microsoft-defender-for-office-365-product-overview.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
+       - name: Zero Trust for Defender for Office 365
+         href: zero-trust-with-microsoft-365-defender-office-365.md
    - name: Get started
      items:
      - name: Defender for Office 365
