@@ -44,7 +44,7 @@ You have the option to turn off device discovery through the [Advanced features]
 
 ## What is Standard discovery mode?
 
-In this mode endpoints onboarded to Microsoft Defender for Endpoint can actively probe observed devices in the network to enrich collected data (with negligible amount of network traffic). Only devices that were observed by the basic discovery mode are actively probed in standard mode. This mode is highly recommended for building a reliable and coherent device inventory. If you choose to disable this mode, and select Basic discovery mode, you'll likely only gain limited visibility of unmanaged endpoints in your network.
+In this mode, endpoints onboarded to Microsoft Defender for Endpoint can actively probe observed devices in the network to enrich collected data (with negligible amount of network traffic). Only devices that were observed by the basic discovery mode are actively probed in standard mode. This mode is highly recommended for building a reliable and coherent device inventory. If you choose to disable this mode, and select Basic discovery mode, you'll likely only gain limited visibility of unmanaged endpoints in your network.
 
  Standard mode also leverages common discovery protocols that use multicast queries in the network to find even more devices, in addition to the ones that were observed using the passive method.
 
@@ -102,7 +102,7 @@ Active probing can generate up to 50Kb of traffic between the onboarded device a
 
 You may notice differences between the number of listed devices under "can be onboarded" in the device inventory, "onboard to Microsoft Defender for Endpoint" security recommendation, and "devices to onboard" dashboard widget.
 
- The security recommendation and the dashboard widget are for devices that are stable in the network; excluding ephemeral devices, guest devices and others. The idea is to recommend on persistent devices, that also imply on the overall security score of the organization.
+ The security recommendation and the dashboard widget are for devices that are stable in the network; excluding ephemeral devices, guest devices and others. The idea is to recommend on persistent devices that also imply on the overall security score of the organization.
 
 ## Can I onboard unmanaged devices that were found?
 
