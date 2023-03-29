@@ -79,6 +79,22 @@ Microsoft Exchange stores the add-in manifests within your organization's tenant
 
 Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet.
 
+### Exchange Online user role requirements
+
+Use the classic Exchange admin center (EAC) to assign permissions to users. The permissions required to view and modify deployed add-ins are detailed in the following steps.
+
+1.	Log in to the classic EAC as a global administrator.
+2.	Go to **Permissions** and then select **User Roles**.
+3.	Select an existing role assignment policy or create a new policy.
+4.	Type a name for the policy if you are creating a new policy.
+5.	Select the following roles: **My Custom Apps**, **My MarketPlace Apps**, and **My ReadWriteMailbox Apps**.
+6.	Select **Save**.
+
+> [!NOTE]
+> These roles are selected by default.
+
+For more information, see [Manage role groups in Exchange Online](/exchange/permissions-exo/role-groups). For a detailed description of the different roles, see [Role assignment policies in Exchange Online](/exchange/permissions-exo/role-assignment-policies).
+
 ### Admin requirements
 
 In order to deploy an add-in via Centralized Deployment, you need to be either a Global admin or an Exchange admin in the organization.
