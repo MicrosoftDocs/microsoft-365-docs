@@ -174,7 +174,7 @@ User action: The antivirus client encountered an error, and the current scan has
 
  1. Run the scan again.
  2. If it fails in the same way, go to the [Microsoft Support site](https://support.microsoft.com/), enter the error number in the Search box to look for the error code.
- 3. Contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+ 3. Contact [Microsoft Technical Support](/microsoft-365/admin/get-help-support).
 
 ### Event ID: 1006
 
@@ -671,7 +671,7 @@ Description: Microsoft Defender Antivirus has encountered a critical error when 
  - Signature Version: <Definition version>
  - Engine Version: <Antimalware Engine version>
 
-User action: The Microsoft Defender Antivirus client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant User action steps below.
+User action: The Microsoft Defender Antivirus client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant **User action** steps below.
   
   1. Action: Remove
      User action: Update the definitions then verify that the removal was successful.
@@ -688,7 +688,7 @@ User action: The Microsoft Defender Antivirus client encountered this error due 
  If this event persists:
   1. Run the scan again.
   2. If it fails in the same way, go to the [Microsoft Support site](https://support.microsoft.com/), enter the error number in the **Search** box to look for the error code.
-  3. Contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+  3. Contact [Microsoft Technical Support](/microsoft-365/admin/get-help-support).
 
 ### Event ID: 1120
 
@@ -752,7 +752,7 @@ Symbolic name: MALWAREPROTECTION_SERVICE_HEALTHY
 
 Message: If your antimalware platform reports status to a monitoring platform, this event indicates that the antimalware platform is running and in a healthy state.
 
-Description: Microsoft Defender Antivirus client is up and running in a healthy state.\
+Description: Microsoft Defender Antivirus client is up and running in a healthy state.
 
  - Platform Version: <Current platform version>
  - Signature Version: <Definition version>
@@ -849,9 +849,9 @@ Description: Microsoft Defender Antivirus has encountered an error trying to upd
  
 User action:	This error occurs when there is a problem updating definitions. To troubleshoot this event:
 
-  1. [Update definitions](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates) and force a rescan directly on the endpoint.
+  1. [Update definitions](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates) and force a rescan directly on the endpoint.
   2. Review the entries in the %Windir%\WindowsUpdate.log file for more information about this error.
-  3. Contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+  3. Contact [Microsoft Technical Support](/microsoft-365/admin/get-help-support).
 
 ### Event ID: 2002
 
@@ -885,8 +885,8 @@ Description: Microsoft Defender Antivirus has encountered an error trying to upd
 
 User action:	The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update. To troubleshoot this event:
 
-  1. [Update definitions](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates) and force a rescan directly on the endpoint.
-  2. Contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+  1. [Update definitions](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates) and force a rescan directly on the endpoint.
+  2. Contact [Microsoft Technical Support](/microsoft-365/admin/get-help-support).
 
 ### Event ID: 2004 
 
@@ -908,7 +908,7 @@ User action: The Microsoft Defender Antivirus client attempted to download and i
   2. Download the latest definitions from the [Microsoft Security Intelligence site](https://www.microsoft.com/wdsi). 
 
      Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
-  3. Contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+  3. Contact [Microsoft Technical Support](/microsoft-365/admin/get-help-support).
 
 ### Event ID: 2005
 
@@ -1161,7 +1161,7 @@ Description: Microsoft Defender Antivirus Real-time Protection has restarted a f
     - Network Inspection System
  - Reason: The reason Microsoft Defender Antivirus real-time protection has restarted a feature.
 
-User action:	The real-time protection feature has restarted. If this event happens again, contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+User action:	The real-time protection feature has restarted. If this event happens again, contact [Microsoft Technical Support](/microsoft-365/admin/get-help-support).
 
 ### Event ID: 5000
 
@@ -1224,13 +1224,13 @@ User action:	To troubleshoot this event:
       
       - For the *Network Inspection System*, at an elevated command prompt, type *net start nissrv*, and then type *net start nissrv* to restart the *Network Inspection System* engine by using the NiSSRV.exe file.
       
-  2. If it fails in the same way, look up the error code by accessing the [Microsoft Support Site](https://support.microsoft.com/) and entering the error number in the Search box, and contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+  2. If it fails in the same way, look up the error code by accessing the [Microsoft Support Site](https://support.microsoft.com/) and entering the error number in the Search box, and contact [Microsoft Technical Support](/microsoft-365/admin/get-help-support).
    
 User action:	The Microsoft Defender Antivirus client engine stopped due to an unexpected error. To troubleshoot this event:
 
   1. Run the scan again.
   2. If it fails in the same way, go to the [Microsoft Support site](https://support.microsoft.com/), enter the error number in the **Search** box to look for the error code.
-  3. Contact [Microsoft Technical Support](https://learn.microsoft.com/microsoft-365/admin/get-help-support).
+  3. Contact [Microsoft Technical Support](/microsoft-365/admin/get-help-support).
 
 ### Event ID: 5009
 
@@ -1296,6 +1296,7 @@ Description: Microsoft Defender Antivirus grace period has expired. Protection a
  - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
  - Error Description: <Error description> Description of the error.
 
+<a id="error-codes"></a>
 ## Microsoft Defender Antivirus client error codes
 
 If Microsoft Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update. This section provides the following information about Microsoft Defender Antivirus client errors.
@@ -1304,7 +1305,7 @@ If Microsoft Defender Antivirus experiences any issues it will usually give you 
   - The possible reason for the error
   - Advice on what to do now
 
-Use the information in these tables to help troubleshoot Microsoft Defender Antivirus error codes.
+Use the following information to help troubleshoot Microsoft Defender Antivirus error codes.
 
 ### Error code: 0x80508007
 
@@ -1415,6 +1416,7 @@ Possible reason: This error indicates that Microsoft Defender Antivirus does not
 
 Resolution:	You can only use Microsoft Defender Antivirus in Windows 10 and Windows 11. For Windows 8, Windows 7 and Windows Vista, you can use [System Center Endpoint Protection](https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx).
 
+<a id="internal-error-codes"></a>
 ### Internal error codes
 
 The following error codes are used during internal testing of Microsoft Defender Antivirus.
@@ -1439,8 +1441,222 @@ Message displayed: ERROR_MP_ACTIONS_FAILED
 
 Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
 
+### Error code:	0x80501002
 
+Message displayed: ERROR_MP_NOENGINE
 
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
 
+### Error code:	0x80501003
 
+Message displayed: ERROR_MP_ACTIVE_THREATS
 
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x805011011
+
+Message displayed: MP_ERROR_CODE_LUA_CANCELLED
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80501101
+
+Message displayed: ERROR_LUA_CANCELLATION
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80501102
+
+Message displayed: MP_ERROR_CODE_ALREADY_SHUTDOWN
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80501103
+
+Message displayed: MP_ERROR_CODE_RDEVICE_S_ASYNC_CALL_PENDING
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80501104
+
+Message displayed: MP_ERROR_CODE_CANCELLED
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80501105
+
+Message displayed: MP_ERROR_CODE_NO_TARGETOS
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80501106
+
+Message displayed: MP_ERROR_CODE_BAD_REGEXP
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80501107
+
+Message displayed: MP_ERROR_TEST_INDUCED_ERROR
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80501108
+
+Message displayed: MP_ERROR_SIG_BACKUP_DISABLED
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80508001
+
+Message displayed: ERR_MP_BAD_INIT_MODULES
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80508002
+
+Message displayed: ERR_MP_BAD_DATABASE 
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80508004
+
+Message displayed: ERR_MP_BAD_UFS
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x8050800C
+
+Message displayed: ERR_MP_BAD_INPUT_DATA
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x8050800D
+
+Message displayed: ERR_MP_BAD_GLOBAL_STORAGE
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x8050800E
+
+Message displayed: ERR_MP_OBSOLETE
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code: 0x8050800F	
+
+Message displayed: ERR_MP_NOT_SUPPORTED
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x8050800F
+
+Message displayed: ERR_MP_NO_MORE_ITEMS
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80508010
+
+Message displayed: ERR_MP_NO_MORE_ITEMS
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80508011
+
+Message displayed: ERR_MP_DUPLICATE_SCANID
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80508012
+
+Message displayed: ERR_MP_BAD_SCANID
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80508013
+
+Message displayed: ERR_MP_BAD_USERDB_VERSION
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80508014
+
+Message displayed: ERR_MP_RESTORE_FAILED
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80508016
+
+Message displayed: ERR_MP_BAD_ACTION
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80508019
+
+Message displayed: ERR_MP_NOT_FOUND
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code: 0x80509001	
+
+Message displayed: ERR_RELO_BAD_EHANDLE
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code: 0x80509003
+
+Message displayed: ERR_RELO_KERNEL_NOT_LOADED
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code: 0x8050A001	
+
+Message displayed: ERR_MP_BADDB_OPEN
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x8050A002
+
+Message displayed: ERR_MP_BADDB_HEADER
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x8050A003
+
+Message displayed: ERR_MP_BADDB_OLDENGINE
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x8050A004
+
+Message displayed: ERR_MP_BADDB_CONTENT
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x8050A005
+
+Message displayed: ERR_MP_BADDB_NOTSIGNED
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x8050801
+
+Message displayed: ERR_MP_REMOVE_FAILED
+
+Possible reason for error and resolution: This is an internal error. It might be triggered when malware removal is not successful.
+
+### Error code:	0x80508018
+
+Message displayed: ERR_MP_SCAN_ABORTED
+
+Possible reason for error and resolution: This is an internal error. It might have triggered when a scan fails to complete.
+
+Tip: If you're looking for Antivirus related information for other platforms, see:
+
+  - [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences)
+  - [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+  - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+  - [Set preferences for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-preferences)
+  - [Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux)
+  - [Configure Defender for Endpoint on Android features](/microsoft-365/security/defender-endpoint/android-configure)
+  - [Configure Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-configure-features)
