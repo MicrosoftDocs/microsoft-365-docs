@@ -91,7 +91,7 @@ For E5 customers, DLP policy tips will be shown in Outlook 2013 and later and Of
 - Custom SITs
 - [Named entity SITs](named-entities-learn.md)
 - [Exact data match (EDM) SITs](sit-get-started-exact-data-match-based-sits-overview.md)
-- [Credential scanning SITs](sit-defn-all-creds?view=o365-worldwide.md)
+- [Credential scanning SITs](sit-defn-all-creds.md)
 - [Trainable classifiers definitions](classifier-tc-definitions.md)
 
 > [!NOTE]
