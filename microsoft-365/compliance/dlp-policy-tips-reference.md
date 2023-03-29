@@ -87,12 +87,12 @@ Note that all the conditions work for emails authored in Outlook client app, whe
 
 For E5 customers, DLP policy tips will be shown in Outlook 2013 and later and Office apps, for polices that use:
 
-- [Preconfigured sensitive information types](sensitive-information-type-entity-definitions) (SITs)
+- [Preconfigured sensitive information types](sensitive-information-type-entity-definitions.md) (SITs)
 - Custom SITs
-- [Named entity SITs](named-entities-learn)
-- [Exact data match (EDM) SITs](sit-get-started-exact-data-match-based-sits-overview)
-- [Credential scanning SITs](sit-defn-all-creds?view=o365-worldwide)
-- [Trainable classifiers definitions](classifier-tc-definitions)
+- [Named entity SITs](named-entities-learn.md)
+- [Exact data match (EDM) SITs](sit-get-started-exact-data-match-based-sits-overview.md)
+- [Credential scanning SITs](sit-defn-all-creds?view=o365-worldwide.md)
+- [Trainable classifiers definitions](classifier-tc-definitions.md)
 
 > [!NOTE]
 > Not all elements of custom sensitive information types are compatible with every version of Office. Entity elements for Custom SITs, such as Functions, may cause incompatibility. Office 2019 supports custom SITs that use Regular Expressions, Keyword Lists, and Keyword Dictionary only.
