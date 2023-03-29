@@ -1637,7 +1637,7 @@ User action:
 This error occurs when there is a problem updating definitions.
 To troubleshoot this event:
 <ol>
-<li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
+<li><a href="microsoft-defender-antivirus-updates.md" data-raw-source="[Update definitions](microsoft-defender-antivirus-updates.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
 <li>Review the entries in the %Windir%\WindowsUpdate.log file for more information about this error.</li>
 <li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
@@ -1730,7 +1730,7 @@ User action:
 The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update.
 To troubleshoot this event:
 <ol>
-<li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
+<li><a href="microsoft-defender-antivirus-updates.md" data-raw-source="[Update definitions](microsoft-defender-antivirus-updates.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
 <li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
@@ -3049,7 +3049,7 @@ You can only use Microsoft Defender Antivirus in Windows 10 and Windows 11. For 
 <a id="internal-error-codes"></a>
 The following error codes are used during internal testing of Microsoft Defender Antivirus.
 
-If you see these errors, you can try to [update definitions](manage-updates-baselines-microsoft-defender-antivirus.md) and force a rescan directly on the endpoint.
+If you see these errors, you can try to [update definitions](microsoft-defender-antivirus-updates.md) and force a rescan directly on the endpoint.
 
 
 <table>

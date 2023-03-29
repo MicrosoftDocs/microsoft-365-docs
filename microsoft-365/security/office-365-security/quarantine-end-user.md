@@ -21,7 +21,7 @@ description: Users can learn how to view and manage quarantined messages in Exch
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.date: 3/2/2023
+ms.date: 3/3/2023
 ---
 
 # Find and release quarantined messages as a user in EOP
@@ -73,7 +73,7 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 ## View your quarantined messages
 
 > [!NOTE]
-> Your ability to view quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the quarantined message type (which might be the [default quarantine policy for the quarantine reason](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)).
+> Your ability to view quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the reason why the message was quarantined (which might be the default quarantine policy as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)).
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine**. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
 
@@ -131,7 +131,7 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
    - Subject. Use the entire subject of the message. The search is not case-sensitive.
    - Policy name. Use the entire policy name. The search is not case-sensitive.
 
-   After you've entered the search criteria, press ENTER to filter the results.
+   After you've entered the search criteria, press the ENTER key to filter the results.
 
    > [!NOTE]
    > The **Search** box on the main **Quarantine** page will search only quarantined items in the current view, not the entire quarantine. To search all quarantined items, use **Filter** and the resulting **Filters** flyout.
@@ -166,7 +166,7 @@ To take action on the message, see the next section.
 ### Take action on quarantined email
 
 > [!NOTE]
-> Your ability to take action on quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the quarantined message type (which might be the [default quarantine policy for the quarantine reason](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). This section describes all available actions.
+> Your ability to view quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the reason why the message was quarantined (which might be the default quarantine policy as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)). This section describes all available actions.
 
 After you select a quarantined message from the list, the following actions are available in the details flyout:
 
@@ -184,7 +184,9 @@ The following actions are available after you click ![More actions icon.](../../
   - **Source**: Shows the HTML version of the message body with all links disabled.
   - **Plain text**: Shows the message body in plain text.
 
-- ![Remove from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted without being sent to the original recipients.
+- ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete from quarantine**: The message is deleted and is not sent to the original recipients. How the message is deleted depends on your selections in the flyout that opens:
+  - Select **Permanently delete the message from quarantine** and then click **Delete**: The message is permanently deleted and is not recoverable.
+  - Click **Delete** only: The message is deleted, but is potentially recoverable.
 
 - ![Download email icon.](../../media/m365-cc-sc-download-icon.png) **Download email**: In the flyout that appears, configure the following settings:
   - **Reason for downloading file**: Enter descriptive text.
