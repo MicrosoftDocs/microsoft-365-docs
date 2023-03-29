@@ -36,7 +36,7 @@ ms.date: 02/16/2021
 
 The `BehaviorInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about alerts from Microsoft Defender for Cloud Apps. Use this reference to construct queries that return information from this table.
 
-[ADD DESCRIPTION ABOUT BEHAVIORS AND LINK TO BEHAVIOR DOC]
+Behaviors are a type of data in Microsoft 365 Defender based on one or more raw events. Behaviors provide contextual insight into events and can, but not necessarily, indicate malicious activity. [Read more about behaviors](defender-cloud-apps/behaviors.md)
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
