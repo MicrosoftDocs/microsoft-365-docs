@@ -156,7 +156,7 @@ For instructions, see [Submit good URLs to Microsoft](submissions-admin.md#repor
 
    Click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** to group the results by **None** or **Action**.
 
-   Click ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search**, enter all or part of a value, and then press ENTER to find a specific value. When you're finished, click ![Clear search icon.](../../media/m365-cc-sc-close-icon.png) to clear the search.
+   Click ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search**, enter all or part of a value, and then press the ENTER key to find a specific value. When you're finished, click ![Clear search icon.](../../media/m365-cc-sc-close-icon.png) to clear the search.
 
    Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the results. The following values are available in the **Filter** flyout that appears:
 
