@@ -7,10 +7,12 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: how-to
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
@@ -66,27 +68,27 @@ After you find a partner and decide to work with them, they send you an email in
 2. On the **Accept agreement & authorize partner** page, select the link for the **Microsoft Customer Agreement**, and read the document.
 3. Check the box to acknowledge that you read the agreement.
 4. Select **Accept & Authorize**.
-5. The list of partners that you’re working with is displayed. Select any partner to see details.
+5. The list of partners that you're working with is displayed. Select any partner to see details.
 
 ## Review and accept a Microsoft Customer Agreement
 
-If you already have a partner but haven’t yet signed a Microsoft Customer Agreement, you must accept the agreement before they can make purchases or manage your subscriptions on your behalf.
+If you already have a partner but haven't yet signed a Microsoft Customer Agreement, you must accept the agreement before they can make purchases or manage your subscriptions on your behalf.
 
 1. If you receive an email from your partner, select the link to go to the Microsoft 365 admin center, or go to the <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">Accept agreement</a> page.
 2. Select the link for the **Microsoft Customer Agreement** and read the document.
 3. Check the box to acknowledge that you read the agreement.
 4. Select **Accept**.
-5. The list of partners that you’re working with is displayed. Select any partner to see details.
+5. The list of partners that you're working with is displayed. Select any partner to see details.
 
 ## Remove partner admin roles
 
 Depending on the request made by the partner, when you accept the invitation, you agree to give them Global and Helpdesk admin roles. When you give these admin roles to a partner, you automatically grant them delegated admin privileges in Azure AD. To learn more, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
 
-The new granular delegated administrative privileges (GDAP) feature gives partners more granular and time-bound access to their customers’ workloads. This means that partners are better able to address their customers’ security concerns. Partners can also provide more services to customers who are uncomfortable with the current levels of partner access and who have regulatory requirements to provide only least-privileged access to partners. With GDAP, you agree to give partners roles specified in their request. These roles are customizable, so you can discuss with your partner if certain permissions are not approved by you.
+The new granular delegated administrative privileges (GDAP) feature gives partners more granular and time-bound access to their customers' workloads. This means that partners are better able to address their customers' security concerns. Partners can also provide more services to customers who are uncomfortable with the current levels of partner access and who have regulatory requirements to provide only least-privileged access to partners. With GDAP, you agree to give partners roles specified in their request. These roles are customizable, so you can discuss with your partner if certain permissions are not approved by you.
 
 If you don't want to give admin roles to the partner, cancel the invitation instead of accepting it.
 
-You can remove admin roles from a partner at any time. Removing the admin roles doesn’t remove the partner relationship. They can still work with you in a different capacity, such as a Reseller. If you decide that you don’t want to work with a partner anymore, contact your partner to end the relationship.
+You can remove admin roles from a partner at any time. Removing the admin roles doesn't remove the partner relationship. They can still work with you in a different capacity, such as a Reseller. If you decide that you don't want to work with a partner anymore, contact your partner to end the relationship.
 
 1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> page.
 2. On the **Partner relationships** page, select the row that contains the name of the partner that you want to remove.

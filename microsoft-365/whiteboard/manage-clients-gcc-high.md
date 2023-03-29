@@ -4,15 +4,15 @@ ms.author: v-jdeweese
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
+ms.date: 06/17/2022
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn which clients are currently supported for Whiteboard.
-
 ---
 
 # Manage clients for Microsoft Whiteboard in GCC High environments

@@ -1,11 +1,11 @@
 ---
-title: Common Zero Trust identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
+title: Common Zero Trust identity and device access policies - Microsoft 365 for enterprise
 description: Describes the recommended common Zero Trust identity and device access policies and configurations.
-ms.author: dansimp
-author: dansimp
-manager: dansimp
-ms.prod: m365-security
-ms.topic: article
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
+ms.service: microsoft-365-security
+ms.topic: conceptual
 audience: Admin
 f1.keywords:
   - NOCSH
@@ -15,26 +15,38 @@ ms.custom:
   - goldenconfig
 ms.collection:
   - M365-identity-device-management
-  - M365-security-compliance
+  - m365-security
   - remotework
   - m365solution-identitydevice
   - m365solution-scenario
   - zerotrust-solution
-  - highpri
-ms.technology: mdo
+  - tier2
+ms.subservice: mdo
+search.appverid: met150
+ms.date: 1/31/2023
 ---
 
-# Common Zero Trust identity and device access policies
+# Common security policies for Microsoft 365 organizations
 
-This article describes the common recommended Zero Trust identity and device access policies for securing access to Microsoft 365 cloud services, including on-premises applications published with Azure Active Directory (Azure AD) Application Proxy.
+Organizations have lots to worry about when deploying Microsoft 365 for their organization. The Conditional Access, app protection, and device compliance policies referenced in this article are based on Microsoft's recommendations and the three guiding principles of [Zero Trust](/security/zero-trust/zero-trust-overview):
 
-This guidance discusses how to deploy the recommended policies in a newly-provisioned environment. Setting up these policies in a separate lab environment allows you to understand and evaluate the recommended policies before staging the rollout to your preproduction and production environments. Your newly provisioned environment can be cloud-only or hybrid to reflect your evaluation needs.
+- Verify explicitly
+- Use least privilege
+- Assume breach
 
-## Policy set
+Organizations can take these policies as is or customize them to fit their needs. If possible, test your policies in a non-production environment before rolling out to your production users. Testing is critical to identify and communicate any possible effects to your users.
 
-The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices. It also indicates where you configure these policies.
+We group these policies into three protection levels based on where you are on your deployment journey:
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="The common policies for configuring Zero Trust identity and device access." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
+- **Starting point** - Basic controls that introduce multifactor authentication, secure password changes, and app protection policies.
+- **Enterprise** - Enhanced controls that introduce device compliance.
+- **Specialized security** - Policies that require multifactor authentication every time for specific data sets or users.
+
+The following diagram shows which level of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices.
+
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="A Diagram showing common identity and device policies that support Zero Trust principles." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
+
+You can download this diagram as a [PDF](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) file.
 
 <!--
 
@@ -44,398 +56,288 @@ Here's a one-page PDF summary:
 
 -->
 
-The rest of this article describes how to configure these policies.
+> [!TIP]
+> Requiring the use of multifactor authentication (MFA) is recommended before enrolling devices in Intune to assure that the device is in the possession of the intended user. You must enroll devices in Intune before you can enforce device compliance policies.
 
-> [!NOTE]
-> Requiring the use of multi-factor authentication (MFA) is recommended before enrolling devices in Intune to assure that the device is in the possession of the intended user. You must enroll devices in Intune before you can enforce device compliance policies.
+## Prerequisites
 
-To give you time to accomplish these tasks, we recommend implementing the starting point policies in the order listed in this table. However, the MFA policies for enterprise and specialized security levels of protection can be implemented at any time.
+### Permissions
 
-|Protection level|Policies|More information|Licensing|
+- Users who will manage Conditional Access policies must be able to sign in to the Azure portal as a **Conditional Access Administrator**, **Security Administrator**, or **Global Administrator**.
+- Users who will manage app protection and device compliance policies must be able to sign in to Intune as an **Intune Administrator** or **Global Administrator**.
+- Those users who only need to view configurations can be assigned the **Security Reader** or **Global Reader** roles.
+
+For more information about roles and permissions, see the article [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+
+### User registration
+
+Ensure your users register for multifactor authentication prior to requiring its use. If you have licenses that include Azure AD Premium P2, you can use the [MFA registration policy within Azure AD Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) to require that users register. We provide [communication templates](https://aka.ms/mfatemplates), you can download and customize, to promote registration.
+
+### Groups
+
+All Azure AD groups used as part of these recommendations must be created as a **Microsoft 365** group *not a Security group*. This requirement is important for the deployment of sensitivity labels when securing documents in Microsoft Teams and SharePoint later on. For more information, see the article [Learn about groups and access rights in Azure Active Directory](/azure/active-directory/fundamentals/concept-learn-about-groups#group-types)
+
+### Assigning policies
+
+Conditional Access policies may be assigned to users, groups, and administrator roles. Intune app protection and device compliance policies may be assigned to *groups only*. Before you configure your policies, you should identify who should be included and excluded. Typically, starting point protection level policies apply to everybody in the organization.
+
+Here's an example of group assignment and exclusions for requiring MFA after your users have completed [user registration](#user-registration).
+
+|&nbsp;|Azure AD Conditional Access policy|Include|Exclude|
 |---|---|---|---|
-|**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
-||[Block clients that don't support modern authentication](#block-clients-that-dont-support-multi-factor)|Clients that do not use modern authentication can bypass Conditional Access policies, so it's important to block these.|Microsoft 365 E3 or E5|
-||[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account.|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
-||[Apply Application Protection Policies (APP) data protection](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 or E5|
-||[Require approved apps and app protection](#require-approved-apps-and-app-protection)|Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.|Microsoft 365 E3 or E5|
-|**Enterprise**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
-||[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform.|Microsoft 365 E3 or E5|
-||[Require compliant PCs and mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for both PCs (Windows or macOS) and phones or tablets (iOS, iPadOS, or Android).|Microsoft 365 E3 or E5|
-|**Specialized security**|[*Always* require MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 or E5|
+|**Starting point**|Require multifactor authentication for medium or high sign-in risk|*All users*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
+|**Enterprise**|Require multifactor authentication for low, medium, or high sign-in risk|*Executive staff group*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
+|**Specialized security**|Require multifactor authentication always|*Top Secret Project Buckeye group*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
 
-## Assigning policies to groups and users
+Be careful when applying higher levels of protection to groups and users. **The goal of security isn't to add unnecessary friction** to the user experience. For example, members of the *Top Secret Project Buckeye group* will be required to use MFA every time they sign in, even if they aren't working on the specialized security content for their project. Excessive security friction can lead to fatigue.
 
-Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically, starting point protection applies to everybody in the organization. A user who is included for both starting point and enterprise protection will have all the starting point policies applied plus the enterprise policies. Protection is cumulative and the most restrictive policy is enforced.
+You may consider enabling [passwordless authentication methods](/azure/active-directory/authentication/concept-authentication-passwordless), like Windows Hello for Business or FIDO2 security keys to reduce some friction created by certain security controls.
 
-A recommended practice is to create an Azure AD group for Conditional Access exclusion. Add this group to all of your Conditional Access policies in the **Exclude** value of the **Users and groups** setting in the **Assignments** section. This gives you a method to provide access to a user while you troubleshoot access issues. This is recommended as a temporary solution only. Monitor this group for changes and be sure the exclusion group is being used only as intended.
+### Emergency access accounts
 
-Here's an example of group assignment and exclusions for requiring MFA.
+All organizations should have at least one emergency access account that is monitored for use and excluded from policies. **These accounts are only used in case all other administrator accounts and authentication methods become locked out or otherwise unavailable**. More information can be found in the article, [Manage emergency access accounts in Azure AD](/azure/active-directory/roles/security-emergency-access).
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png" alt-text="The Example group assignment and exclusions for MFA policies" lightbox="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png":::
+### Exclusions
 
-Here are the results:
+A recommended practice is to create an Azure AD group for Conditional Access exclusions. This group gives you a means to provide access to a user while you troubleshoot access issues.
 
-- All users are required to use MFA when the sign-in risk is medium or high.
+> [!WARNING]
+> This group is recommended for use as a temporary solution only. Continuously monitor and audit this group for changes and be sure the exclusion group is being used only as intended.
 
-- Members of the Executive Staff group are required to use MFA when the sign-in risk is low, medium, or high.
+To add this exclusion group to any existing policies:
 
-  In this case, members of the Executive Staff group match both the starting point and enterprise Conditional Access policies. The access controls for both policies are combined, which in this case is equivalent to the enterprise Conditional Access policy.
+1. Sign in to the **Azure portal** as a Conditional Access Administrator, Security Administrator, or Global Administrator.
+1. Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
+1. Select an existing policy.
+1. Under **Assignments**, select **Users or workload identities**.
+   1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts and Conditional Access exclusion group.
 
-- Members of the Top Secret Project X group are always required to use MFA
+## Deployment
 
-  In this case, members of the Top Secret Project X group match both the starting point and specialized security Conditional Access policies. The access controls for both policies are combined. Because the access control for the specialized security Conditional Access policy is more restrictive, it is used.
+We recommend implementing the [starting point policies](#starting-point) in the order listed in this table. However, the MFA policies for [enterprise](#enterprise) and [specialized security](#specialized-security) levels of protection can be implemented at any time.
 
-Be careful when applying higher levels of protection to groups and users. For example, members of the Top Secret Project X group will be required to use MFA every time they sign in, even if they are not working on the specialized security content for Project X.
+### Starting point
 
-All Azure AD groups created as part of these recommendations must be created as Microsoft 365 groups. This is important for the deployment of sensitivity labels when securing documents in Microsoft Teams and SharePoint.
+|Policy|More information|Licensing|
+|---|---|---|
+|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)|Use risk data from Azure AD Identity Protection to require MFA only when risk is detected|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
+|[Block clients that don't support modern authentication](#block-clients-that-dont-support-multifactor-authentication)|Clients that don't use modern authentication can bypass Conditional Access policies, so it's important to block them.|Microsoft 365 E3 or E5|
+|[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account.|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
+|[Apply application protection policies for data protection](#app-protection-policies)|One Intune app protection policy per platform (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 or E5|
+|[Require approved apps and app protection policies](#require-approved-apps-and-app-protection-policies)|Enforces mobile app protection policies for phones and tablets using iOS, iPadOS, or Android.|Microsoft 365 E3 or E5|
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png" alt-text="Creating a Microsoft 365 group" lightbox="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png":::
+### Enterprise
 
-## Require MFA based on sign-in risk
+|Policy|More information|Licensing|
+|---|---|---|
+|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)|Use risk data from Azure AD Identity Protection to require MFA only when risk is detected|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
+|[Define device compliance policies](#device-compliance-policies)|Set minimum configuration requirements. One policy for each platform.|Microsoft 365 E3 or E5|
+|[Require compliant PCs and mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces the configuration requirements for devices accessing your organization|Microsoft 365 E3 or E5|
 
-You should have your users register for MFA prior to requiring its use. If you have Microsoft 365 E5, Microsoft 365 E3 with the E5 Security add-on, Office 365 with EMS E5, or individual Azure AD Premium P2 licenses, you can use the MFA registration policy with Azure AD Identity Protection to require that users register for MFA. The [prerequisite work](identity-access-prerequisites.md) includes registering all users with MFA.
+### Specialized security
 
-After your users are registered, you can require MFA for sign-in with a new Conditional Access policy.
+|Policy|More information|Licensing|
+|---|---|---|
+|[*Always* require MFA](#always-require-mfa)|Users must perform MFA anytime they sign in to your organizations services|Microsoft 365 E3 or E5|
 
-1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials.
-2. In the list of Azure services, choose **Azure Active Directory**.
-3. In the **Manage** list, choose **Security**, and then choose **Conditional Access**.
-4. Choose **New policy** and type the new policy's name.
+## App protection policies
 
-The following tables describes the Conditional Access policy settings to require MFA based on sign-in risk.
+[App protection policies](/mem/intune/apps/app-protection-policy) define which apps are allowed and the actions they can take with your organization's data. There are many choices available and it may be confusing to some. The following baselines are Microsoft's recommended configurations that may be tailored to your needs. We provide three templates to follow, but think most organizations will choose levels 2 and 3.
 
-In the **Assignments** section:
+Level 2 maps to what we consider [starting point](#starting-point) or [enterprise](#enterprise) level security, level 3 maps to [specialized](#specialized-security) security.
 
-|Setting|Properties|Values|Notes|
-|---|---|---|---|
-|Users and groups|Include|**Select users and groups > Users and groups**:  Select specific groups containing targeted user accounts.|Start with the group that includes pilot user accounts.|
-||Exclude|**Users and groups**: Select your Conditional Access exception group; service accounts (app identities).|Membership should be modified on an as-needed, temporary basis.|
-|Cloud apps or actions|**Cloud apps > Include**|**Select apps**: Select the apps you want this policy to apply to. For example, select Exchange Online.||
-|Conditions|||Configure conditions that are specific to your environment and needs.|
-||Sign-in risk||See the guidance in the following table.|
+- [Level 1 enterprise basic data protection](/mem/intune/apps/app-protection-framework#level-1-enterprise-basic-data-protection) – Microsoft recommends this configuration as the minimum data protection configuration for an enterprise device.
 
-### Sign-in risk condition settings
+- **[Level 2 enterprise enhanced data protection](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)** – Microsoft recommends this configuration for devices where users access sensitive or confidential information. This configuration is applicable to most mobile users accessing work or school data. Some of the controls may affect user experience.
 
-Apply the risk level settings based on the protection level you are targeting.
+- **[Level 3 enterprise high data protection](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)** – Microsoft recommends this configuration for devices run by an organization with a larger or more sophisticated security team, or for specific users or groups who are at uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). An organization likely to be targeted by well-funded and sophisticated adversaries should aspire to this configuration.
+
+### Create app protection policies
+
+Create a new app protection policy for each platform (iOS and Android) within Microsoft Intune using the data protection framework settings by:
+
+- Manually create the policies by following the steps in [How to create and deploy app protection policies with Microsoft Intune](/mem/intune/apps/app-protection-policies).
+- Import the sample [Intune App Protection Policy Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).
+
+## Device compliance policies
+
+Intune device compliance policies define the requirements that devices must meet to be determined as compliant.
+
+You must create a policy for each PC, phone, or tablet platform. This article will cover recommendations for the following platforms:
+
+- [Android](#enrollment-and-compliance-settings-for-android)
+- [iOS/iPadOS](#enrollment-and-compliance-settings-for-iosipados)
+- [Windows 10 and later](#recommended-compliance-settings-for-windows-10-and-later)
+
+### Create device compliance policies
+
+To create device compliance policies, sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com), and navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
+
+For step-by-step guidance on creating compliance policies in Intune, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+
+#### Enrollment and compliance settings for iOS/iPadOS
+
+iOS/iPadOS supports several enrollment scenarios, two of which are covered as part of this framework:
+
+- [Device enrollment for personally owned devices](/mem/intune/enrollment/ios-enroll) – these devices are personally owned and used for both work and personal use.
+- [Automated device enrollment for corporate-owned devices](/mem/intune/enrollment/device-enrollment-program-enroll-ios) – these devices are corporate-owned, associated with a single user, and used exclusively for work and not personal use.
+
+Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md):
+
+- The [starting point](#starting-point) and [enterprise](#enterprise) protection levels map closely with the level 2 enhanced security settings.
+- The [specialized](#specialized-security) security protection level maps closely to the level 3 high security settings.
+
+##### Compliance settings for personally enrolled devices
+
+- [Personal basic security (Level 1)](/mem/intune/enrollment/ios-ipados-personal-device-security-configurations#personal-basic-security-level-1) – Microsoft recommends this configuration as the minimum security configuration for personal devices where users access work or school data. This configuration is done by enforcing password policies, device lock characteristics, and disabling certain device functions, like untrusted certificates.
+- **[Personal enhanced security (Level 2)](/mem/intune/enrollment/ios-ipados-personal-device-security-configurations#personal-enhanced-security-level-2)** – Microsoft recommends this configuration for devices where users access sensitive or confidential information. This configuration enacts data sharing controls. This configuration is applicable to most mobile users accessing work or school data on a device.
+- **[Personal high security (Level 3)](/mem/intune/enrollment/ios-ipados-personal-device-security-configurations#personal-high-security-level-3)** – Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration enacts stronger password policies, disables certain device functions, and enforces extra data transfer restrictions.
+
+##### Compliance settings for automated device enrollment
+
+- [Supervised basic security (Level 1)](/mem/intune/enrollment/ios-ipados-supervised-device-security-configurations#supervised-basic-security-level-1) – Microsoft recommends this configuration as the minimum security configuration for supervised devices where users access work or school data. This configuration is done by enforcing password policies, device lock characteristics, and disabling certain device functions, like untrusted certificates.
+- **[Supervised enhanced security (Level 2)](/mem/intune/enrollment/ios-ipados-supervised-device-security-configurations#supervised-enhanced-security-level-2)** – Microsoft recommends this configuration for devices where users access sensitive or confidential information. This configuration enacts data sharing controls and blocks access to USB devices. This configuration is applicable to most mobile users accessing work or school data on a device.
+- **[Supervised high security (Level 3)](/mem/intune/enrollment/ios-ipados-supervised-device-security-configurations#supervised-high-security-level-3)** – Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration enacts stronger password policies, disables certain device functions, enforces extra data transfer restrictions, and requires apps to be installed through Apple's volume purchase program.
+
+#### Enrollment and compliance settings for Android
+
+Android Enterprise supports several enrollment scenarios, two of which are covered as part of this framework:
+
+- [Android Enterprise work profile](/mem/intune/enrollment/android-work-profile-enroll) – this enrollment model is typically used for personally owned devices, where IT wants to provide a clear separation boundary between work and personal data. Policies controlled by IT ensure that the work data can't be transferred into the personal profile.
+- [Android Enterprise fully managed devices](/mem/intune/enrollment/android-fully-managed-enroll) – these devices are corporate-owned, associated with a single user, and used exclusively for work and not personal use.
+
+The Android Enterprise security configuration framework is organized into several distinct configuration scenarios, providing guidance for work profile and fully managed scenarios.
+
+Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md):
+
+- The [starting point](#starting-point) and [enterprise](#enterprise) protection levels map closely with the level 2 enhanced security settings.
+- The [specialized](#specialized-security) security protection level maps closely to the level 3 high security settings.
+
+##### Compliance settings for Android Enterprise work profile devices
+
+- Because of the settings available for personally owned work profile devices, there's no basic security (level 1) offering. The available settings don't justify a difference between level 1 and level 2.
+- **[Work profile enhanced security (Level 2)](/mem/intune/enrollment/android-work-profile-security-settings#personally-owned-work-profile-enhanced-security)**– Microsoft recommends this configuration as the minimum security configuration for personal devices where users access work or school data. This configuration introduces password requirements, separates work and personal data, and validates Android device attestation.
+- **[Work profile high security (Level 3)](/mem/intune/enrollment/android-work-profile-security-settings#personally-owned-work-profile-high-security)** – Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration introduces mobile threat defense or Microsoft Defender for Endpoint, sets the minimum Android version, enacts stronger password policies, and further restricts work and personal separation.
+
+##### Compliance settings for Android Enterprise fully managed devices
+
+- [Fully managed basic security (Level 1)](/mem/intune/enrollment/android-fully-managed-security-settings#fully-managed-basic-security) – Microsoft recommends this configuration as the minimum security configuration for an enterprise device. This configuration is applicable to most mobile users accessing work or school data. This configuration introduces password requirements, sets the minimum Android version, and enacts certain device restrictions.
+- **[Fully managed enhanced security (Level 2)](/mem/intune/enrollment/android-fully-managed-security-settings#fully-managed-enhanced-security)** – Microsoft recommends this configuration for devices where users access sensitive or confidential information. This configuration enacts stronger password policies and disables user/account capabilities.
+- **[Fully managed high security (Level 3)](/mem/intune/enrollment/android-fully-managed-security-settings#fully-managed-high-security)** - Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk. These users may handle highly sensitive data where unauthorized disclosure may cause considerable material loss to the organization. This configuration increases the minimum Android version, introduces mobile threat defense or Microsoft Defender for Endpoint, and enforces extra device restrictions.
+
+#### Recommended compliance settings for Windows 10 and later
+
+The following settings are configured in **Step 2: Compliance settings**, of the [compliance policy creation process for Windows 10 and newer devices](/mem/intune/protect/compliance-policy-create-windows). These settings align with the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md).
+
+For **Device health > Windows Health Attestation Service evaluation rules**, see this table.
+
+|Property|Value|
+|---|---|
+|Require BitLocker|Require|
+|Require Secure Boot to be enabled on the device|Require|
+|Require code integrity|Require|
+
+For **Device properties**, specify appropriate values for operating system versions based on your IT and security policies.
+
+For **Configuration Manager Compliance**, if you are in a co-managed environment with Configuration Manager select **Require** otherwise select **Not configured**.
+
+For **System security**, see this table.
+
+|Property|Value|
+|---|---|
+|Require a password to unlock mobile devices|Require|
+|Simple passwords|Block|
+|Password type|Device default|
+|Minimum password length|6|
+|Maximum minutes of inactivity before a password is required|15 minutes|
+|Password expiration (days)|41|
+|Number of previous passwords to prevent reuse|5|
+|Require password when device returns from idle state (Mobile and Holographic)|Require|
+|Require encryption of data storage on device|Require|
+|Firewall|Require|
+|Antivirus|Require|
+|Antispyware|Require|
+|Microsoft Defender Antimalware|Require|
+|Microsoft Defender Antimalware minimum version|Microsoft recommends versions no more than five behind from the most recent version.|
+|Microsoft Defender Antimalware signature up to date|Require|
+|Real-time protection|Require|
+
+For **Microsoft Defender for Endpoint**
+
+|Property|Value|
+|---|---|
+|[Require the device to be at or under the machine-risk score](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medium|
+
+## Conditional Access policies
+
+Once your app protection and device compliance policies are created in Intune, you can enable enforcement with Conditional Access policies.
+
+### Require MFA based on sign-in risk
+
+Follow the guidance in the article [Common Conditional Access policy: Sign-in risk-based multifactor authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) to create a policy to require multifactor authentication based on sign-in risk.
+
+When configuring your policy, use the following risk levels.
 
 |Level of protection|Risk level values needed|Action|
 |---|---|---|
 |Starting point|High, medium|Check both.|
 |Enterprise|High, medium, low|Check all three.|
-|Specialized security||Leave all options unchecked to always enforce MFA.|
 
-In the **Access controls** section:
+### Block clients that don't support multifactor authentication
 
-|Setting|Properties|Values|Action|
-|---|---|---|---|
-|Grant|**Grant access**||Select|
-|||**Require Multi-factor authentication**|Check|
-||**Require all the selected controls**||Select|
+Follow the guidance in the article [Common Conditional Access policy: Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) to block legacy authentication.
 
-Choose **Select** to save the **Grant** settings.
+### High risk users must change password
 
-Finally, select **On** for **Enable policy**, and then choose **Create**.
+Follow the guidance in the article [Common Conditional Access policy: User risk-based password change](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) to require users with compromised credentials to change their password.
 
-Also consider using the [What if](/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy.
+Use this policy along with [Azure AD password protection](/azure/active-directory/authentication/concept-password-ban-bad), which detects and blocks known weak passwords and their variants in addition to terms specific to your organization. Using Azure AD password protection ensures that changed passwords are stronger.
 
-## Block clients that don't support multi-factor
+### Require approved apps and app protection policies
 
-Use the settings in these tables for a Conditional Access policy to block clients that don't support multi-factor authentication.
+**You must create a Conditional Access policy** to enforce the app protection policies created in Intune. Enforcing app protection policies requires a Conditional Access policy **and** a corresponding app protection policy.
 
-See [this article](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md) for a list of clients in Microsoft 365 that do support multi-factor authentication.
+To create a Conditional Access policy that requires approved apps and APP protection, follow the steps in [Require approved client apps or app protection policy with mobile devices](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection). This policy only allows accounts within mobile apps protected by app protection policies to access Microsoft 365 endpoints.
 
-In the **Assignments** section:
+Blocking legacy authentication for other client apps on iOS and Android devices ensures that these clients can't bypass Conditional Access policies. If you're following the guidance in this article, you've already configured [Block clients that don't support modern authentication](#block-clients-that-dont-support-multifactor-authentication).
 
-|Setting|Properties|Values|Notes|
-|---|---|---|---|
-|Users and groups|Include|**Select users and groups > Users and groups**:  Select specific groups containing targeted user accounts.|Start with the group that includes pilot user accounts.|
-||Exclude|**Users and groups**: Select your Conditional Access exception group; service accounts (app identities).|Membership should be modified on an as-needed, temporary basis.|
-|Cloud apps or actions|**Cloud apps > Include**|**Select apps**: Select the apps corresponding to the clients that do not support modern authentication.||
-|Conditions|**Client apps**|Choose **Yes** for **Configure** <p> Clear the check marks for **Browser** and **Mobile apps and desktop clients**||
+### Require compliant PCs and mobile devices
 
-In the **Access controls** section:
+The following steps will help create a Conditional Access policy to require devices accessing resources be marked as compliant with your organization's Intune compliance policies.
 
-|Setting|Properties|Values|Action|
-|---|---|---|---|
-|Grant|**Block access**||Select|
-||**Require all the selected controls**||Select|
+> [!CAUTION]
+> Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
 
-Choose **Select** to save the **Grant** settings.
-
-Finally, select **On** for **Enable policy**, and then choose **Create**.
-
-Consider using the [What if](/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy.
-
-For Exchange Online, you can use authentication policies to [disable Basic authentication](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), which forces all client access requests to use modern authentication.
-
-## High risk users must change password
-
-To ensure that all high-risk users' compromised accounts are forced to perform a password change when signing-in, you must apply the following policy.
-
-Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal.azure.com/) with your administrator credentials, and then navigate to **Azure AD Identity Protection > User Risk Policy**.
-
-In the **Assignments** section:
-
-|Type|Properties|Values|Action|
-|---|---|---|---|
-|Users|Include|**All users**|Select|
-|User risk|**High**||Select|
-
-In the second **Assignments** section:
-
-|Type|Properties|Values|Action|
-|---|---|---|---|
-|Access|**Allow access**||Select|
-|||**Require password change**|Check|
-
-Choose **Done** to save the **Access** settings.
-
-Finally, select **On** for **Enforce policy**, and then choose **Save**.
-
-Consider using the [What if](/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy.
-
-Use this policy in conjunction with [Configure Azure AD password protection](/azure/active-directory/authentication/concept-password-ban-bad), which detects and blocks known weak passwords and their variants and additional weak terms that are specific to your organization. Using Azure AD password protection ensures that changed passwords are strong ones.
-
-## Apply APP data protection policies
-
-APPs define which apps are allowed and the actions they can take with your organization's data. The choices available in APP enable organizations to tailor the protection to their specific needs. For some, it may not be obvious which policy settings are required to implement a complete scenario. To help organizations prioritize mobile client endpoint hardening, Microsoft has introduced taxonomy for its APP data protection framework for iOS and Android mobile app management.
-
-The APP data protection framework is organized into three distinct configuration levels, with each level building off the previous level:
-
-- **Level 1: Enterprise basic data protection** ensures that apps are protected with a PIN and encrypted and performs selective wipe operations. For Android devices, this level validates Android device attestation. This is an entry level configuration that provides similar data protection control in Exchange Online mailbox policies and introduces IT and the user population to APP.
-- **Level 2: Enterprise enhanced data protection** introduces APP data leakage prevention mechanisms and minimum OS requirements. This is the configuration that is applicable to most mobile users accessing work or school data.
-- **Level 3: Enterprise high data protection** introduces advanced data protection mechanisms, enhanced PIN configuration, and APP Mobile Threat Defense. This configuration is desirable for users that are accessing high risk data.
-
-To see the specific recommendations for each configuration level and the minimum apps that must be protected, review [Data protection framework using app protection policies](/mem/intune/apps/app-protection-framework).
-
-Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md), the Starting point and Enterprise protection tiers map closely with the Level 2 enterprise enhanced data protection settings. The Specialized security protection tier maps closely to the Level 3 enterprise high data protection settings.
-
-|Protection level|App Protection Policy|More information|
-|---|---|---|
-|Starting point|[Level 2 enhanced data protection](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.|
-|Enterprise|[Level 2 enhanced data protection](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.|
-|Specialized security|[Level 3 enterprise high data protection](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|The policy settings enforced in level 3 include all the policy settings recommended for level 1 and 2 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 2.|
-
-To create a new app protection policy for each platform (iOS and Android) within Microsoft Endpoint Manager using the data protection framework settings, you can:
-
-1. Manually create the policies by following the steps in [How to create and deploy app protection policies with Microsoft Intune](/mem/intune/apps/app-protection-policies).
-2. Import the sample [Intune App Protection Policy Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).
-
-## Require approved apps and APP protection
-
-To enforce the App protection policies you applied in Intune, you must create a Conditional Access policy to require approved client apps and the conditions set in the APP protection policies.
-
-Enforcing App protection policies requires a set of policies described in [Require app protection policy for cloud app access with Conditional Access](/azure/active-directory/conditional-access/app-protection-based-conditional-access). These policies are each included in this recommended set of identity and access configuration policies.
-
-To create the Conditional Access policy that requires approved apps and APP protection, follow the steps in [Require approved client apps or app protection policy with mobile devices](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices), which only allows accounts within mobile apps protected by App protection policies to access Microsoft 365 endpoints.
-
-   > [!NOTE]
-   > This policy ensures mobile users can access all Microsoft 365 endpoints using the applicable apps.
-
-This policy also blocks Exchange ActiveSync clients on mobile devices from connecting to Exchange Online. However, you can create a separate policy for handling Exchange ActiveSync across all devices. For more information, see [Block ActiveSync clients](secure-email-recommended-policies.md#block-activesync-clients), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online. This policy is not pictured in the illustration at the top of this article. It is described and pictured in [Policy recommendations for securing email](secure-email-recommended-policies.md).
-
- This policy leverages the grant controls [Require approved client app](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) and [Require app protection policy](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
-
-Finally, blocking legacy authentication for other client apps on iOS and Android devices ensures that these clients cannot bypass Conditional Access policies. If you're following the guidance in this article, you've already configured [Block clients that don't support modern authentication](#block-clients-that-dont-support-multi-factor).
-
-<!---
-With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](/azure/active-directory/conditional-access/app-protection-based-conditional-access).
-
-1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
-
-   > [!NOTE]
-   > This policy ensures mobile users can access all Office endpoints using the applicable apps.
-
-2. If enabling mobile access to Exchange Online, implement [Block ActiveSync clients](secure-email-recommended-policies.md#block-activesync-clients), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
-
-   The above policies leverage the grant controls [Require approved client app](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) and [Require app protection policy](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
-
-3. Disable legacy authentication for other client apps on iOS and Android devices. For more information, see [Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication).
--->
-
-## Define device-compliance policies
-
-Device-compliance policies define the requirements that devices must meet to be determined as compliant. You create Intune device compliance policies from within the Microsoft Endpoint Manager admin center.
-
-You must create a policy for each PC, phone, or tablet platform:
-
-- Android device administrator
-- Android Enterprise
-- iOS/iPadOS
-- macOS
-- Windows 8.1 and later
-- Windows 10 and later
-
-To create device compliance policies, log in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) with your administrator credentials, and then navigate to **Devices** \> **Compliance policies** \> **Policies**. Select **Create Policy**.
-
-For device compliance policies to be deployed, they must be assigned to user groups. You assign a policy after you create and save it. In the admin center, select the policy and then select **Assignments**. After selecting the groups that you want to receive the policy, select **Save** to save that group assignment and deploy the policy.
-
-For step-by-step guidance on creating compliance policies in Intune, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy) in the Intune documentation.
-
-### Recommended settings for iOS
-
-iOS/iPadOS supports several enrollment scenarios, two of which are covered as part of this framework:
-
-- [Device enrollment for personally owned devices](/mem/intune/enrollment/ios-enroll) – these devices are personally owned and used for both work and personal use.
-- [Supervised automated device enrollment for corporate-owned devices](/mem/intune/enrollment/device-enrollment-program-enroll-ios) – these devices are corporate-owned, associated with a single user, and used exclusively for work and not personal use.
-
-The iOS/iPadOS security configuration framework is organized into several distinct configuration scenarios, providing guidance for personally owned and supervised devices.
-
-For personally owned devices:
-
-- Basic security (Level 1) – Microsoft recommends this configuration as the minimum security configuration for personal devices where users access work or school data. This is done by enforcing password policies, device lock characteristics, and disabling certain device functions (e.g., untrusted certificates).
-- Enhanced security (Level 2) – Microsoft recommends this configuration for devices where users access sensitive or confidential information. This configuration enacts data sharing controls. This configuration is applicable to most mobile users accessing work or school data on a device.
-- High security (Level 3) – Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration enacts stronger password policies, disables certain device functions, and enforces additional data transfer restrictions.
-
-For supervised devices:
-
-- Basic security (Level 1) – Microsoft recommends this configuration as the minimum security configuration for supervised devices where users access work or school data. This is done by enforcing password policies, device lock characteristics, and disabling certain device functions (e.g., untrusted certificates).
-- Enhanced security (Level 2) – Microsoft recommends this configuration for devices where users access sensitive or confidential information. This configuration enacts data sharing controls and blocks access to USB devices. This configuration is applicable to most mobile users accessing work or school data on a device.
-- High security (Level 3) – Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration enacts stronger password policies, disables certain device functions, enforces additional data transfer restrictions, and requires apps to be installed through Apple's volume purchase program.
-
-Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md), the Starting point and Enterprise protection tiers map closely with the Level 2 enhanced security settings. The Specialized security protection tier maps closely to the Level 3 high security settings.
-
-|Protection level  |Device policy |More information  |
-|---------|---------|---------|
-|Starting point     |Enhanced security (Level 2)         |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
-|Enterprise     |Enhanced security (Level 2)         |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
-|Specialized security     |High security (Level 3)         |The policy settings enforced in level 3 include all the policy settings recommended for level 1 and 2 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 2.         |
-
-To see the specific device compliance and device restriction recommendations for each configuration level, review the [iOS/iPadOS Security Configuration Framework](/mem/intune/enrollment/ios-ipados-configuration-framework).
-
-### Recommended settings for Android
-
-Android Enterprise supports several enrollment scenarios, two of which are covered as part of this framework:
-
-- [Android Enterprise work profile](/intune/android-work-profile-enroll) – this enrollment model is typically used for personally-owned devices, where IT wants to provide a clear separation boundary between work and personal data. Policies controlled by IT ensure that the work data cannot be transferred into the personal profile.
-- [Android Enterprise fully managed devices](/intune/android-fully-managed-enroll) – these devices are corporate-owned, associated with a single user, and used exclusively for work and not personal use.
-
-The Android Enterprise security configuration framework is organized into several distinct configuration scenarios, providing guidance for work profile and fully managed scenarios.
-
-For Android Enterprise work profile devices:
-
-- Work profile enhanced security (Level 2) – Microsoft recommends this configuration as the minimum security configuration for personal devices where users access work or school data. This configuration introduces password requirements, separates work and personal data, and validates Android device attestation.
-- Work profile high security (Level 3) – Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration introduces mobile threat defense or Microsoft Defender for Endpoint, sets the minimum Android version, enacts stronger password policies, and further restricts work and personal separation.
-
-For Android Enterprise fully managed devices:
-
-- Fully managed basic security (Level 1) – Microsoft recommends this configuration as the minimum security configuration for an enterprise device. This configuration is applicable to most mobile users accessing work or school data. This configuration introduces password requirements, sets the minimum Android version, and enacts certain device restrictions.
-- Fully managed enhanced security (Level 2) – Microsoft recommends this configuration for devices where users access sensitive or confidential information. This configuration enacts stronger password policies and disables user/account capabilities.
-- Fully managed high security (Level 3) - Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration increases the minimum Android version, introduces mobile threat defense or Microsoft Defender for Endpoint, and enforces additional device restrictions.
-
-Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md), the Starting point and Enterprise protection tiers map closely with the Level 1 basic security for personally owned devices and Level 2 enhanced security settings for fully managed devices. The Specialized security protection tier maps closely to the Level 3 high security settings.
-
-For Android Enterprise work profile devices:
-
-|Protection level  |Device policy |More information  |
-|---------|---------|---------|
-|Starting point     |Work Profile: Basic security (Level 1)      |N/A         |
-|Enterprise     |Work Profile: Basic security (Level 1)         |N/A         |
-|Starting point     |Fully Managed: Enhanced Security (Level 2)       |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
-|Enterprise     |Fully Managed: Enhanced Security (Level 2)         |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
-|Specialized security     |High security (Level 3)         |The policy settings enforced in level 3 include all the policy settings recommended for level 1 and 2 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 2.         |
-
-To see the specific device compliance and device restriction recommendations for each configuration level, review the [Android Enterprise Security Configuration Framework](/mem/intune/enrollment/android-configuration-framework).
-
-### Recommended settings for Windows 10 and later
-
-The following settings are recommended for PCs running Windows 10 and later, as configured in **Step 2: Compliance settings**, of the policy creation process.
-
-For **Device health > Windows Health Attestation Service evaluation rules**, see this table.
-
-|Properties|Value|Action|
-|---|---|---|
-|Require BitLocker|Require|Select|
-|Require Secure Boot to be enabled on the device|Require|Select|
-|Require code integrity|Require|Select|
-
-For **Device properties**, specify appropriate values for operating system versions based on your IT and security policies.
-
-For **Configuration Manager Compliance**, select **Require**.
-
-For **System security**, see this table.
-
-|Type|Properties|Value|Action|
-|---|---|---|---|
-|Password|Require a password to unlock mobile devices|Require|Select|
-||Simple passwords|Block|Select|
-||Password type|Device default|Select|
-||Minimum password length|6|Type|
-||Maximum minutes of inactivity before password is required|15|Type <p> This setting is supported for Android versions 4.0 and above or KNOX 4.0 and above. For iOS devices, it's supported for iOS 8.0 and above.|
-||Password expiration (days)|41|Type|
-||Number of previous passwords to prevent reuse|5|Type|
-||Require password when device returns from idle state (Mobile and Holographic)|Require|Available for Windows 10 and later|
-|Encryption|Encryption of data storage on device|Require|Select|
-|Device Security|Firewall|Require|Select|
-||Antivirus|Require|Select|
-||Antispyware|Require|Select <p> This setting requires an Anti-Spyware solution registered with the Windows Security app.|
-|Defender for Cloud|Microsoft Defender Antimalware|Require|Select|
-||Microsoft Defender Antimalware minimum version||Type <p> Only supported for Windows 10 desktop. Microsoft recommends versions no more than five behind from the most recent version.|
-||Microsoft Defender Antimalware signature up to date|Require|Select|
-||Real-time protection|Require|Select <p> Only supported for Windows 10 and later desktop|
-
-#### Microsoft Defender for Endpoint
-
-|Type|Properties|Value|Action|
-|---|---|---|---|
-|Microsoft Defender for Endpoint rules in the Microsoft Endpoint Manager admin center|[Require the device to be at or under the machine-risk score](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medium|Select|
-
-<!--
-## Require compliant PCs (but not compliant phones and tablets)
-
-Before adding a policy to require compliant PCs, be sure to enroll your devices for management in Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user.
-
-To require compliant PCs:
-
-1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials.
-2. In the list of Azure services, choose **Azure Active Directory**.
-3. In the **Manage** list, choose **Security**, and then choose **Conditional Access**.
-4. Choose **New policy** and type the new policy's name.
-
-5. Under **Assignments**, choose **Users and groups** and include who you want the policy to apply to. Also exclude your Conditional Access exclusion group.
-
-6. Under **Assignments**, choose **Cloud apps or actions**.
-
-7. For **Include**, choose **Select apps > Select**, and then select the desired apps from the **Cloud apps** list. For example, select Office 365. Choose **Select** when done.
-
-8. To require compliant PCs (but not compliant phones and tablets), under **Assignments**, choose **Conditions > Device platforms**. Select **Yes** for **Configure**. Choose  **Select device platforms**, select **Yes** and select **Any device** and under Exclude select **iOS** and **Android**, and then choose **Done**.
-
-9. Under **Access controls**, choose **Grant** .
-
-10. Choose **Grant access** and then check **Require device to be marked as compliant**. For multiple controls, select **Require all the selected controls**. When complete, choose **Select**.
-
-11. Select **On** for **Enable policy**, and then choose **Create**.
+1. Sign in to the **Azure portal**.
+1. Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
+1. Select **New policy**.
+1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
+1. Under **Assignments**, select **Users or workload identities**.
+   1. Under **Include**, select **All users**.
+   1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
+1. Under **Cloud apps or actions** > **Include**, select **All cloud apps**.
+   1. If you must exclude specific applications from your policy, you can choose them from the **Exclude** tab under **Select excluded cloud apps** and choose **Select**.
+1. Under **Access controls** > **Grant**.
+   1. Select **Require device to be marked as compliant**.
+   1. Select **Select**.
+1. Confirm your settings and set **Enable policy** to **On**.
+1. Select **Create** to create to enable your policy.
 
 > [!NOTE]
-> Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and will be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
+> You can enroll your new devices to Intune even if you select **Require device to be marked as compliant** for **All users** and **All cloud apps** in your policy. **Require device to be marked as compliant** control does not block Intune enrollment and the access to the Microsoft Intune Web Company Portal application.
 
--->
+#### Subscription activation
 
-## Require compliant PCs and mobile devices
+Organizations using the [Subscription Activation](/windows/deployment/windows-10-subscription-activation) feature to enable users to "step-up" from one version of Windows to another, may want to exclude the Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f from their device compliance policy.
 
-To require compliance for all devices:
+### Always require MFA
 
-1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials.
-2. In the list of Azure services, choose **Azure Active Directory**.
-3. In the **Manage** list, choose **Security**, and then choose **Conditional Access**.
-4. Choose **New policy** and type the new policy's name.
+Follow the guidance in the article [Common Conditional Access policy: Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) to require your specialized security level users to always perform multifactor authentication.
 
-5. Under **Assignments**, choose **Users and groups** and include who you want the policy to apply to. Also exclude your Conditional Access exclusion group.
+> [!WARNING]
+> When configuring your policy, select the group that requires specialized security and use that **instead of selecting All users**.
 
-6. Under **Assignments**, choose **Cloud apps or actions**.
-
-7. For **Include**, choose **Select apps > Select**, and then select the desired apps from the **Cloud apps** list. For example, select Office 365. Choose **Select** when done.
-
-8. Under **Access controls**, choose **Grant** .
-
-9. Choose **Grant access** and then check **Require device to be marked as compliant**. For multiple controls, select **Require all the selected controls**. When complete, choose **Select**.
-
-10. Select **On** for **Enable policy**, and then choose **Create**.
-
-> [!NOTE]
-> Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and will be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
-
-## Next step
+## Next steps
 
 [![Step 3: Policies for guest and external users.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png#lightbox)](identity-access-policies-guest-access.md)
 

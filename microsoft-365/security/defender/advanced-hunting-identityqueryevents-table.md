@@ -16,8 +16,11 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # IdentityQueryEvents
@@ -30,8 +33,8 @@ ms.topic: article
 
 The `IdentityQueryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about queries performed against Active Directory objects, such as users, groups, devices, and domains. Use this reference to construct queries that return information from this table.
 
->[!TIP]
-> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in the Defender for Cloud.
+> [!TIP]
+> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in Microsoft 365 Defender.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 

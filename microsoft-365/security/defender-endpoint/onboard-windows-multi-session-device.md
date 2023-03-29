@@ -1,5 +1,5 @@
 ---
-title: "Onboard Windows devices in Azure Virtual Desktop"
+title: Onboard Windows devices in Azure Virtual Desktop
 description: Learn bout onboarding Windows devices to Defender for Endpoint in Azure Virtual Desktop
 keywords: Azure Virtual Desktop, AVD, microsoft defender, endpoint, onboard
 ms.service: microsoft-365-security
@@ -8,14 +8,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.subservice: mde
+search.appverid: met150
+ms.date: 03/06/2023
 ---
 
 # Onboard Windows devices in Azure Virtual Desktop
@@ -25,7 +29,7 @@ ms.subservice: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows multi-session running on Azure Virtual Desktop (AVD)
-- [Windows 10 Enterprise Multi-Session](/microsoft-365/security/defender-endpoint/azure-server-integration)
+- [Windows 10 Enterprise Multi-Session](/azure/virtual-desktop/windows-10-multisession-faq)
 
 Microsoft Defender for Endpoint supports monitoring both VDI and Azure Virtual Desktop sessions. Depending on your organization's needs, you might need to implement VDI or Azure Virtual Desktop sessions to help your employees access corporate data and apps from an unmanaged device, remote location, or similar scenario. With Microsoft Defender for Endpoint, you can monitor these virtual machines for anomalous activity.
 
@@ -161,4 +165,4 @@ Only Microsoft Edge is supported for web filtering in Windows 10 multi-session.
 
 #### Related Links
 
-[Add exclusions for Defender for Endpoint via PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-microsoft-defender-by-using-powershell)
+[Add exclusions for Defender for Endpoint via PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-microsoft-defender-for-cloud-by-using-powershell)

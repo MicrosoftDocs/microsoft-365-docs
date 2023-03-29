@@ -2,14 +2,17 @@
 title: "Microsoft Adoption Score - Teamwork"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier2
+- scotvorg 
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC

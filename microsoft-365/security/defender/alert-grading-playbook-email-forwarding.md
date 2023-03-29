@@ -15,13 +15,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
   - MOE150
+  - met150
+ms.date: 01/18/2022
 ---
+
 # Alert grading for suspicious email forwarding activity
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -41,7 +44,7 @@ The results of using this playbook are:
 
 - You have identified the alerts associated with auto-forwarded emails as malicious (TP) or benign (FP) activities.
 
-  If malicious, you have [stopped email auto-forwarding](../office-365-security/external-email-forwarding.md) for the affected mailboxes.
+  If malicious, you have [stopped email auto-forwarding](../office-365-security/outbound-spam-policies-external-email-forwarding.md) for the affected mailboxes.
 
 - You have taken the necessary action if emails have been forwarded to a malicious email address.
 
@@ -110,10 +113,10 @@ Investigate the email forwarding activity. For instance, check the type of email
 
 For more information, see the following articles:
 
-- [Auto-forwarded messages insight](/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report)
-- [New users forwarding email insight](/microsoft-365/security/office-365-security/mfi-new-users-forwarding-email)
+- [Auto-forwarded messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report)
+- [New users forwarding email insight in the EAC](/exchange/monitoring/mail-flow-insights/mfi-new-users-forwarding-email-insight)
 - [Responding to a Compromised Email Account](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)
-- [Report false positives and false negatives in Outlook](/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives)
+- [Report false positives and false negatives in Outlook](/microsoft-365/security/office-365-security/submissions-outlook-report-messages)
 
 Here is the workflow to identify suspicious email forwarding activities.
 

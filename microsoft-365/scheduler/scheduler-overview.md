@@ -3,6 +3,7 @@ title: "Scheduler for Microsoft 365 Overview"
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
+ms.date: 04/15/2021
 audience: Admin
 ms.topic: article
 ms.service: scheduler
@@ -11,6 +12,9 @@ description: "Overview of Scheduler for Microsoft 365."
 ---
 
 # Welcome to Scheduler for Microsoft 365
+
+> [!IMPORTANT]
+> Scheduler for Microsoft 365 will stop working in August 2023. After that date, Scheduler won't be able to create or modify any meeting requests.
 
 Scheduler for Microsoft 365 is a service that lets you delegate meeting and appointment scheduling to Cortana, your digital personal assistant. 
 
@@ -54,4 +58,3 @@ Learn more:  [Scheduler for Microsoft 365 licensing](https://www.microsoft.com/m
 
 >[Note: 
 >Meeting attendees do not need a Scheduler or Microsoft 365 license. <br>The Scheduler assistant mailbox does not require a Microsoft 365 or a Scheduler license.
-

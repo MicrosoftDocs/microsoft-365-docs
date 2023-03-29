@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 05/05/2022
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -24,6 +25,8 @@ description: "France driver's license number sensitive information type entity d
 # France drivers license number
 
 This entity is available in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

@@ -8,10 +8,12 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-defender-office365
+  - m365-security
+  - tier2
 description: Admins can learn how to create end-user notification email messages for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
+search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # End-user notifications for Attack simulation training
@@ -21,7 +23,7 @@ ms.subservice: mdo
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, end-user notifications are email messages that are sent to users as a result of [simulations](attack-simulation-training.md) or [simulation automations](attack-simulation-training-simulation-automations.md). The following types of end-user notifications are available:
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, end-user notifications are email messages that are sent to users as a result of [simulations](attack-simulation-training-simulations.md) or [simulation automations](attack-simulation-training-simulation-automations.md). The following types of end-user notifications are available:
 
 - **Positive reinforcement notification**: Sent when users report a simulated phishing message.
 - **Simulation notification**: Sent when users are included in a simulation or simulation automation, but no trainings are selected.
@@ -42,7 +44,7 @@ The following information is shown for each notification:
 - **Type**: The value is **Positive reinforcement notification**, **Simulation notification**, **Training assignment notification**, or **Training reminder notification**.
 - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
 - **Status**: The value is **Ready** or **Draft**. On the **Global notifications** tab, the value is always **Ready**.
-- **Linked simulations**: The total number of [simulations](attack-simulation-training.md) or [simulation automations](attack-simulation-training-simulation-automations.md) that use the notification.
+- **Linked simulations**: The total number of [simulations](attack-simulation-training-simulations.md) or [simulation automations](attack-simulation-training-simulation-automations.md) that use the notification.
 - **Created by**: For built-in notifications, the value is **Microsoft**. For custom notifications, the value is the UPN of the user who created the notification.
 - **Created time**
 - **Modified by**
@@ -184,6 +186,6 @@ To remove an existing custom notification from the **Tenant notifications** tab,
 
 [Get started using Attack simulation training](attack-simulation-training-get-started.md)
 
-[Create a phishing attack simulation](attack-simulation-training.md)
+[Create a phishing attack simulation](attack-simulation-training-simulations.md)
 
 [Simulation automations for Attack simulation training](attack-simulation-training-simulation-automations.md)

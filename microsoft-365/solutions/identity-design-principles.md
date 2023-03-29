@@ -4,11 +4,13 @@ description: Learn about top design strategies for Microsoft Enterprise architec
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
+ms.date: 05/01/2020
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-identity-device-management
 - M365-security-compliance
 - M365solutions
@@ -157,7 +159,7 @@ Read about [Microsoft Fluid Framework](https://techcommunity.microsoft.com/t5/mi
 
 Overall, it's becoming harder to draw a clear line between Office 365 and other services in Microsoft clouds. I view it as a great benefit to customers since they can benefit from total innovation across everything we do even if they use one component. Pretty cool and has far reaching implications for many customers.
 
-Today, I find many customer IT groups are structured around "products." It's logical for an on-premises world since you need an expert for each specific product. However, I'm totally happy that I don't have to debug an Active Directory or Exchange database ever again as these services have moved to the cloud. Automation (which cloud kind of is) removes certain repetitive manual jobs (look what happened to factories). However, these tasks are replaced with more complex requirements to understand cross-services interaction, impact, business needs, and so on. If you are willing to [learn](/learn/), there are great opportunities enabled by cloud transformation. Before jumping into technology, I often talk to customers about managing change in IT skills and team structures.
+Today, I find many customer IT groups are structured around "products." It's logical for an on-premises world since you need an expert for each specific product. However, I'm totally happy that I don't have to debug an Active Directory or Exchange database ever again as these services have moved to the cloud. Automation (which cloud kind of is) removes certain repetitive manual jobs (look what happened to factories). However, these tasks are replaced with more complex requirements to understand cross-services interaction, impact, business needs, and so on. If you are willing to [learn](/training/), there are great opportunities enabled by cloud transformation. Before jumping into technology, I often talk to customers about managing change in IT skills and team structures.
 
 To all SharePoint fan-people and developers, please stop asking "How can I do XYZ in SharePoint online?" Use [Power Automate](/power-automate/) (or Flow) for workflow, it's a much more powerful platform. Use [Azure Bot Framework](/azure/bot-service/) to create a better UX for your 500-K item list. Start using [Microsoft Graph](https://developer.microsoft.com/graph/) instead of CSOM. [Microsoft Teams](/MicrosoftTeams/Teams-overview) includes SharePoint but also a world more. There are many other examples I can list. There's a vast and wonderful universe out there. Open the door and [start exploring]().
 
@@ -222,7 +224,7 @@ Sometimes scenarios call for adding an external user to a role (see the multi-te
 
 ### Microsoft 365 Defender and Microsoft 365 Purview compliance portals
 
-**Email & Collaboration roles** in the [Microsoft 365 Defender portal](../security/office-365-security/permissions-microsoft-365-security-center.md) and ***Role groups for Microsoft Purview solutions** in the [Microsoft 365 Purview compliance portal](../compliance/microsoft-365-compliance-center-permissions.md) are a collection of "role groups", which are separate and distinct from Azure AD roles. This can be confusing because some of these role groups have the same name as Azure AD roles (for example, Security Reader), yet they can have different membership. I prefer the use of Azure AD roles. Each role group consists of one or more "roles" (see what I mean about reusing the same word?) and have members from Azure AD, which are email enabled objects. Also, you can create a role group with the same name as a role, which may or may not contain that role (avoid this confusion).
+**Email & Collaboration roles** in the [Microsoft 365 Defender portal](../security/office-365-security/mdo-portal-permissions.md) and ***Role groups for Microsoft Purview solutions** in the [Microsoft 365 Purview compliance portal](../compliance/microsoft-365-compliance-center-permissions.md) are a collection of "role groups", which are separate and distinct from Azure AD roles. This can be confusing because some of these role groups have the same name as Azure AD roles (for example, Security Reader), yet they can have different membership. I prefer the use of Azure AD roles. Each role group consists of one or more "roles" (see what I mean about reusing the same word?) and have members from Azure AD, which are email enabled objects. Also, you can create a role group with the same name as a role, which may or may not contain that role (avoid this confusion).
 
 In a sense, these permissions are an evolution of the Exchange role groups model. However, Exchange Online has its own [role group management](/exchange/permissions-exo) interface. Some role groups in Exchange Online are locked and managed from Azure AD or the Microsoft 365 Defender and Microsoft 365 Purview compliance portals, but others might have the same or similar names and are managed in Exchange Online (adding to the confusion). I recommend you avoid using the Exchange Online user interface unless you need scopes for Exchange management.
 
@@ -259,7 +261,7 @@ As stated earlier, many customers are looking to achieve a more granular delegat
 
     Note: data platform security and delegation (which Power BI is a component) is a complex area.
 
-- **MEM/Intune** - (/mem/intune/fundamentals/role-based-access-control)
+- **Intune** - (/mem/intune/fundamentals/role-based-access-control)
 - **Microsoft Defender for Endpoint** - (/windows/security/threat-protection/microsoft-defender-atp/user-roles)
 - **Microsoft 365 Defender** - (../security/defender/m365d-permissions.md)
 - **Microsoft Defender for Cloud Apps** - (/cloud-app-security/manage-admins)

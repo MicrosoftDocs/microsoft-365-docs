@@ -11,10 +11,14 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Machine resource type
@@ -59,9 +63,9 @@ ms.custom: api
 |id|String|[machine](machine.md) identity.|
 |computerDnsName|String|[machine](machine.md) fully qualified name.|
 |firstSeen|DateTimeOffset|First date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.|
-|lastSeen|DateTimeOffset|Time and date of the last received full device report. A device typically sends a full report every 24 hours.|
+|lastSeen|DateTimeOffset|Time and date of the last received full device report. A device typically sends a full report every 24 hours. <br> NOTE: This property doesn't correspond to the last seen value in the UI. It pertains to the last device update.|
 |osPlatform|String|Operating system platform.|
-|onboardingstatus|String|Status of machine onboarding. Possible values are: "onboarded" and "offboarded".|
+|onboardingstatus|String|Status of machine onboarding. Possible values are: "onboarded", "CanBeOnboarded", "Unsupported", and "InsufficientInfo".|
 |osProcessor|String|Operating system processor. Use osArchitecture property instead.|
 |version|String|Operating system Version.|
 |osBuild|Nullable long|Operating system build number.|

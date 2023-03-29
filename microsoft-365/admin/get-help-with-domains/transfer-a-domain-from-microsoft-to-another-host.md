@@ -2,14 +2,17 @@
 title: "Transfer a domain from Microsoft to another host"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 08/06/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier2
+- scotvorg 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -31,7 +34,7 @@ You can't transfer a Microsoft 365 domain to another registrar for 60 days after
 > [!NOTE]
 > A _Whois_ query shows a Microsoft purchased domain registrar as Wild West Domains LLC. However, only Microsoft should be contacted regarding your Microsoft 365 purchased domain.
 
-Follow these steps to get a code at Microsoft 365, and then go to the other domain registrar website to set up transferring your domain name to the new registrar.
+Sign in as a global administrator, follow these steps to get a code at Microsoft 365, and then go to the other domain registrar website to set up transferring your domain name to the new registrar.
 
 ## Transfer a domain
 
@@ -54,7 +57,7 @@ Follow these steps to get a code at Microsoft 365, and then go to the other doma
     You can find the authorization code **Registration** tab on the **Domains** page in Microsoft 365.
 
     > [!TIP]
-    > .uk domains require a different procedure. Contact Microsoft Support and request an **IPS Tag change** to match the registrar you want to manage your domain going forward. Once the tag changes, the domain immediately transfers to the new registrar. You will then need to work with the new registrar to complete the transfer, likely paying transfer fees and adding the transferred domain to your account with your new registrar.
+    > .uk domains require a different procedure. Select an IPS tag from the drop-down menu of mostly-used registrars for UK domains to update your **IPS Tags** to match the registrar you want to manage your domain going forward. Once the tag changes, the domain immediately transfers to the new registrar. You will then need to work with the new registrar to complete the transfer, likely pay transfer fees and add the transferred domain to your account with your new registrar.
 
 9. After the transfer is complete, you'll renew your domain at the new domain registrar.
 

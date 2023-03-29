@@ -7,9 +7,13 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
-ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.service: microsoft-365-security
+ms.subservice: m365bp
+ms.date: 09/15/2022
+ms.localizationpriority: medium
+ms.collection:
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -33,4 +37,4 @@ A factory reset reverts a device to the original settings it had when the device
   
 ## See also
 
-[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](secure-your-business-data.md)

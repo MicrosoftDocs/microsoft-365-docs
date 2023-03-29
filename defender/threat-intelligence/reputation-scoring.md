@@ -3,6 +3,7 @@ title: 'Microsoft Defender Threat Intelligence (Defender TI) Reputation Scoring'
 description: 'In this overview article, learn about the Microsoft Defender Threat Intelligence (Defender TI)’s reputation scoring feature.'
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
@@ -11,7 +12,7 @@ ms.custom: template-overview
 
 # Reputation scoring
 
-Microsoft Defender Threat Intelligence (Defender TI) provides proprietary reputation scores for any Host, Domain, or IP Address. Whether validating the reputation of a known or unknown entity, this score helps users quickly understand any detected ties to malicious or suspicious infrastructure. The platform provides quick information about the activity of these entities (e.g. First and Last Seen timestamps, ASN, country, associated infrastructure) and a list of rules that impact the reputation score when applicable.
+Microsoft Defender Threat Intelligence (Defender TI) provides proprietary reputation scores for any Host, Domain, or IP Address. Whether validating the reputation of a known or unknown entity, this score helps users quickly understand any detected ties to malicious or suspicious infrastructure. The platform provides quick information about the activity of these entities (e.g. First and Last Seen timestamps, ASN, associated infrastructure) and a list of rules that impact the reputation score when applicable.
 
 Reputation data is important to understanding the trustworthiness of your own attack surface and is also useful when assessing unknown hosts, domains or IP addresses that appear in investigations. These scores will uncover any prior malicious or suspicious activity that impacted the entity, or other known indicators of compromise that should be considered.
 
@@ -48,7 +49,6 @@ See the example reputation scoring rules below:
 |------------------------------------|--------------------------------------------------------------------------------------------------------|
 |     SSL-Certificate Self-Signed    |     Self-signed certificates may indicate   malicious behavior                                         |
 |     Tagged as Malicious            |     Tagged as malicious by a member within your   organization                                         |
-|     Country                        |     Infrastructure hosted in this country is more   likely to be malicious                             |
 |     Web components observed        |     The number of web components observed may   indicate maliciousness                                 |
 |     Name server                    |     Domain is using a name server that is more   likely to be used by malicious infrastructure         |
 |     Registrar                      |     Domains registered with this registrar are   more likely to be malicious                           |

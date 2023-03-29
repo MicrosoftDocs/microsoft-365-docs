@@ -11,42 +11,46 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier1
 ms.custom: 
   - admindeeplinkDEFENDER
   - intro-overview
 ms.topic: conceptual
 adobe-target: true
+ms.date: 03/01/2023
 ---
 
 # What is Microsoft 365 Defender?
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+
 - Microsoft 365 Defender
 
 Microsoft 365 Defender is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
-With the integrated Microsoft 365 Defender solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft 365 Defender takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.
+Here's a list of the different Microsoft 365 Defender products and solutions that Microsoft 365 Defender coordinates with:
 
-<center><h2>Microsoft 365 Defender services</center></h2>
-<table><tr><td><center><b><a href="/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"><b>Microsoft Defender for Endpoint</b></center></a></td>
-<td><center><b><a href="/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management"><b>Microsoft Defender Vulnerability Management</b></center></a></td>
-<td><center><b><a href="/microsoft-365/security/office-365-security/overview"><b>Microsoft Defender for Office 365</b></center></a></td>
-<td><center><b><a href="/defender-for-identity/"><b>Microsoft Defender for Identity</b></a></center></td>
-<td><center><b><a href="/cloud-app-security/"><b>Microsoft Defender for Cloud Apps</b></a></center></td>
-</tr>
-</table>
-<br>
+- [**Microsoft Defender for Endpoint**](../defender-endpoint/microsoft-defender-endpoint.md)
+- [**Microsoft Defender for Office 365**](../office-365-security/microsoft-defender-for-office-365-product-overview.md)
+- [**Microsoft Defender for Identity**](/defender-for-identity/what-is)
+- [**Microsoft Defender for Cloud Apps**](/defender-cloud-apps/what-is-defender-for-cloud-apps)
+- [**Microsoft Defender Vulnerability Management**](../defender-vulnerability-management/defender-vulnerability-management.md)
+- [**Azure Active Directory Identity Protection**](/azure/active-directory/identity-protection/overview-identity-protection)
+- [**Microsoft Data Loss Prevention**](/microsoft-365/compliance/dlp-learn-about-dlp)
+- [**App Governance**](/defender-cloud-apps/app-governance-manage-app-governance)
+
+Note that the coordination of alerts from Azure Active Directory Identity Protection (AAD IP) to Microsoft 365 Defender is in public preview and may be substantially modified before it's commercially released. AAD IP is available to customers only if they already have Microsoft 365 Defender. 
+
+With the integrated Microsoft 365 Defender solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft 365 Defender takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.
 
 ## Microsoft 365 Defender interactive guide
 
@@ -61,10 +65,10 @@ Microsoft 365 Defender services protect:
 - **Endpoints with Defender for Endpoint** - Defender for Endpoint is a unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response.
 - **Assets with Defender Vulnerability Management** - Microsoft Defender Vulnerability Management delivers continuous asset visibility, intelligent risk-based assessments, and built-in remediation tools to help your security and IT teams prioritize and address critical vulnerabilities and misconfigurations across your organization.
 - **Email and collaboration with Defender for Office 365** - Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.
-- **Identities with  Defender for Identity and Azure Active Directory (Azure AD) Identity Protection** - Defender for Identity uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Azure AD Identity Protection automates the detection and remediation of identity-based risks in your cloud-based Azure AD.
+- **Identities with  Defender for Identity and Azure Active Directory (Azure AD) Identity Protection** - Microsoft Defender for Identity is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Azure AD Identity Protection uses the learnings Microsoft has acquired from their position in organizations with Azure AD, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users.
 - **Applications with Microsoft Defender for Cloud Apps** - Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww]
 
 Microsoft 365 Defender's unique cross-product layer augments the individual service components to:
 
@@ -102,3 +106,5 @@ Microsoft 365 Defender licensing requirements must be met before you can enable 
 
 - [Licensing requirements](prerequisites.md#licensing-requirements)
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
+
+

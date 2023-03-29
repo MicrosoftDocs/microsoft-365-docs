@@ -7,12 +7,16 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
-ms.localizationpriority: high
-ms.date: 08/18/2022
+ms.service: microsoft-365-security
+ms.subservice: m365bp
+ms.date: 01/23/2023
+ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -21,7 +25,7 @@ search.appverid:
 description: "Get help with increasing the level of protection in Microsoft 365 Business Premium"
 ---
 
-# Protect against malware and other cyberthreats with Microsoft 365 Business Premium
+# Protect against malware and other cyberthreats
 
 In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect your business against phishing, malware, and other threats. This article includes information about:
 
@@ -39,7 +43,7 @@ Your subscription includes [preset security policies](../security/office-365-sec
 :::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="Screenshot of preset security policies.":::
 
 > [!NOTE]
-> Preset security policies are not the same thing as [security defaults](m365bp-conditional-access.md#security-defaults). Typically, you'll be using *either* security defaults *or* [Conditional Access](m365bp-conditional-access.md#conditional-access) first, and then you'll add your security policies. [Preset security policies](#what-are-preset-security-policies) simplify the process of adding your security policies. You can also [add your own custom policies](#create-custom-security-policies). 
+> Preset security policies are not the same thing as [security defaults](m365bp-conditional-access.md). Typically, you'll be using *either* security defaults *or* Conditional Access first, and then you'll add your security policies. [Preset security policies](#what-are-preset-security-policies) simplify the process of adding your security policies. You can also [add your own custom policies](#create-custom-security-policies). 
 
 ### What are preset security policies?
 
@@ -93,7 +97,7 @@ To assign preset security policies, follow these steps:
 
 2. Go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. (To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.)
 
-3. On the **Preset security policies** page, in either the **Standard protection** or **Strict protection** section, change the toggle from **Disabled** to **Enabled**, and then select **Manage**.
+3. On the **Preset security policies** page, in either the **Standard protection** or **Strict protection** section, select **Manage Protection Settings**.
 
 4. The **Apply Standard protection** or **Apply Strict protection** wizard starts in a flyout. On the **EOP protections apply to** page, identify the internal recipients that the policies apply to (recipient conditions):
    - **Users**

@@ -12,9 +12,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Create a notification rule when a local onboarding or offboarding script is used
@@ -40,12 +43,12 @@ Create a notification rule so that when a local onboarding or offboarding script
 
 You'll need to have access to:
 
-- Power Automate (Per-user plan at a minimum). For more information, see [Power Automate pricing page](https://flow.microsoft.com/pricing/).
+- Power Automate (Per-user plan at a minimum). For more information, see [Power Automate pricing page](https://make.powerautomate.com/pricing/).
 - Azure Table or SharePoint List or Library / SQL DB.
 
 ## Create the notification flow
 
-1. In [flow.microsoft.com](https://flow.microsoft.com/).
+1. In [make.powerautomate.com](https://make.powerautomate.com/).
 
 2. Navigate to **My flows > New > Scheduled - from blank**.
 
@@ -200,7 +203,7 @@ The following image is an example of an email notification.
     - Take all devices last seen in the past 7 days.
 
 - For each device:
-  - If last seen property is on the one hour interval of [-7 days, -7days + 60 minutes ] -> Alert for offboarding possibility.
+  - If last seen property is on the one hour interval of [-7 days, -7days + 60 minutes] -> Alert for offboarding possibility.
   - If first seen is on the past hour -> Alert for onboarding.
 
 In this solution you will not have duplicate alerts:

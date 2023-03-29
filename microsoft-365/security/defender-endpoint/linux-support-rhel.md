@@ -13,9 +13,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
+ms.date: 10/06/2021
 ---
 
 # Troubleshoot issues for Microsoft Defender for Endpoint on Linux RHEL6

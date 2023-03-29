@@ -17,9 +17,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
-ms.topic: article
+  - m365-security
+  - tier1
+ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Work with advanced hunting query results
@@ -28,7 +29,6 @@ ms.topic: article
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 

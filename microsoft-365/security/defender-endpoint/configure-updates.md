@@ -14,10 +14,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
+search.appverid: met150
+ms.date: 05/12/2021
 ---
 
 # Create a custom gradual rollout process for Microsoft Defender updates
@@ -36,7 +38,7 @@ ms.topic: conceptual
 > [!NOTE]
 > This functionality requires Microsoft Defender Antivirus version 4.18.2106.X or newer.
 
-To create your own custom gradual rollout process for Defender updates, you can use Group Policy, Microsoft Endpoint Manager, and PowerShell.
+To create your own custom gradual rollout process for Defender updates, you can use Group Policy, Microsoft Configuration Manager, and PowerShell.
 
 The following table lists the available group policy settings for configuring update channels:
 

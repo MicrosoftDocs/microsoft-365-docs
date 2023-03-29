@@ -4,13 +4,14 @@ f1.keywords:
 - NOCSH
 ms.author: cabailey
 author: cabailey
-ms.date:
+ms.date: 09/17/2019
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 ms.localizationpriority: high
 search.appverid:
@@ -36,6 +37,8 @@ Overview:
 1. In Excel, create a list of your retention labels and a list of their retention label policies.
 
 2. Use PowerShell to create the retention labels and retention label policies in those lists.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Disclaimer
 

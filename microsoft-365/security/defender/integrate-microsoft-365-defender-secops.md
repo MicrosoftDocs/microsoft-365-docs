@@ -16,14 +16,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-m365dsecops
   - m365solution-overview
+  - tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 07/15/2021
 ---
+
 # Integrating Microsoft 365 Defender into your security operations
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -42,9 +45,8 @@ If you are not already familiar with Microsoft 365 Defender, see these articles:
 
 If your organization has already implemented some aspects of Microsoft 365 Defender, these articles can either affirm or help improve your existing architecture and processes.
 
->[!Note]
->As a Microsoft partner, Protiviti contributed to and provided material feedback to this article.
->
+> [!NOTE]
+> As a Microsoft partner, Protiviti contributed to and provided material feedback to this article.
 
 ## Target audience
 

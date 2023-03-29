@@ -11,10 +11,14 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
+ms.date: 05/02/2022
 ---
 
 # List security baselines assessment configurations
@@ -62,12 +66,15 @@ If successful, this method returns 200 OK with the list of baseline configuratio
 |Property | Type | Description |
 |:---|:---|:---|
 |Id | String | Unique identifier for the specific configuration in the baseline benchmark.
+|benchmarkName| String | The name of the benchmark.
 |name | String | The configuration name at it appears in the benchmark.
 |description | String | The configuration description as it appears in the benchmark.
 |category | String | The configuration  category as it appears in the benchmark.
 |complianceLevel|String|The compliance level of the benchmark where this configuration appears.
 |`cce`|Int|The CCE for this configuration as it appears in the benchmark.
 |rationale |String|The rationale for this configuration as it appears in the benchmark. For STIG benchmark this isn't supplied for this configuration.
+|source|String| The registry path or other location used to determine the current device setting.
+|remediation|String| The recommended steps to remediate.
 
 ## 1.6 Example
 

@@ -14,8 +14,11 @@ ms.date: 10/18/2021
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface

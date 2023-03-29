@@ -11,10 +11,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Troubleshoot kernel extension issues in Microsoft Defender for Endpoint on macOS
@@ -46,8 +49,8 @@ mdatp health
 ```
 ```Output
 ...
-real_time_protection_enabled                : false
-real_time_protection_available              : true
+real_time_protection_enabled                : true
+real_time_protection_available              : false
 ...
 ```
 

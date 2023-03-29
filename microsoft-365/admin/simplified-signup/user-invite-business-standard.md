@@ -1,23 +1,32 @@
 ---
-title: "Accept an email invitation to Microsoft 365 Business Standard (User)"
+title: "Accept an email invitation to a Microsoft 365 for business subscription (User)"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 04/22/2021
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier1
+- scotvorg
+- highpri 
 - Adm_TOC
 ms.custom: 
 - VSBFY23
 - AdminSurgePortfolio
-description: "Accept invite to join a Microsoft 365 Business Standard organization"
+description: "Accept invite to join a Microsoft 365 for business organization"
 ---
 
-# Accept an email invitation to a Microsoft 365 Business Standard subscription (User)
+# Accept an email invitation to a Microsoft 365 for business subscription (User)
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
+> [!IMPORTANT]
+> These steps apply to Microsoft 365 Business Standard, Microsoft 365 Business Basic and Microsoft 365 Apps for business.
 
 When you’re already using Microsoft 365 Business with a Gmail, Outlook, Yahoo (or similar) email address, someone (for example your administrator or business owner) may invite you to upgrade Microsoft 365 to start using professional branded email.  In this scenario, you’ll be switching email address and learning how to upgrade.
 
@@ -26,9 +35,9 @@ When you’re already using Microsoft 365 Business with a Gmail, Outlook, Yahoo 
 If you’re an admin of an organization where users are still using Gmail, Outlook, Yahoo or similar email addresses, and you’re looking how to set up branded email, check out these steps instead: [Add a domain to Microsoft 365](../setup/add-domain.md) and [Set up your organization with email and cloud storage](../setup/setup-business-standard.md#finish-setting-up).
 
 > [!IMPORTANT]
-> If you’re an admin and you’re looking for steps on how to send a user an invite to your Microsoft 365 Business Standard subscription, check out [Invite users to Microsoft 365 Business Standard (Admin)](admin-invite-business-standard.md).
+> If you’re an admin and you’re looking for steps on how to send a user an invite to your Microsoft 365 for business subscription, check out [Invite users to Microsoft 365 Business Standard (Admin)](admin-invite-business-standard.md).
 
-## Join a business Microsoft 365 Business Standard organization
+## Join a Microsoft 365 for business organization
 
 Make sure you have your current account sign in details before you start these steps.
 
@@ -48,13 +57,13 @@ Make sure you have your current account sign in details before you start these s
 
 8. On the **Add new account to Microsoft Teams** page, follow the steps to set up Teams. Select **I'm done** when you're complete.
 
-### Next steps - Migrate your data to Microsoft 365 Business Standard
+### Next steps - Migrate your data to Microsoft 365 for business
 
-Follow the steps in the [Migrate data to my Microsoft 365 Business Standard subscription](migrate-data-business-standard.md) to move your OneDrive, Outlook and Teams data.
+Follow the steps in the [Migrate data to my Microsoft 365 for business subscription](migrate-data-business-standard.md) to move your OneDrive, Outlook and Teams data.
 
 ### No data to migrate?
 
-Download and start using [Office apps for business](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
+Download and start using [Microsoft 365 apps for business](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
 
 ## Frequently asked questions
 
@@ -68,7 +77,7 @@ Contact our small business support experts who can help you upgrade your Microso
 
 ### What happens to my data and account when I upgrade?
 
-Your data will remain in your old account, nothing will be deleted.  You will be still able to sign in to your old Gmail, Outlook, Yahoo, or other email account like you did before. You should now move your work files to your new work account. Learn how to do that here: [Migrate data to my Microsoft 365 Business Standard subscription](migrate-data-business-standard.md).
+Your data will remain in your old account, nothing will be deleted.  You will be still able to sign in to your old Gmail, Outlook, Yahoo, or other email account like you did before. You should now move your work files to your new work account. Learn how to do that here: [Migrate data to my Microsoft 365 for business subscription](migrate-data-business-standard.md).
 
 ### How can I copy data to my business account?
 
@@ -77,7 +86,7 @@ Your data will remain in your old account, nothing will be deleted.  You will be
 
 ### Why does it say my admin now handles my data?
 
-When using an upgraded Microsoft 365 Business account, your documents, email and data that you create within Microsoft Office (and within other apps in Microsoft 365 Business Standard) will be owned by the technical administrator in your organization. For example, the person who sent you the invitation email or your business owner.
+When using an upgraded Microsoft 365 Business account, your documents, email and data that you create within Microsoft 365 (and within other apps in Microsoft 365 for business subscriptions) will be owned by the technical administrator in your organization. For example, the person who sent you the invitation email or your business owner.
 
 ### How do I get started with my new account?
 

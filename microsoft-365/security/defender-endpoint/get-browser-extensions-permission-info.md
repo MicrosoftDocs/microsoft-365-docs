@@ -11,10 +11,14 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
+ms.date: 06/01/2022
 ---
 
 # Get browser extensions permission information
@@ -41,7 +45,7 @@ ms.custom: api
 
 Retrieves a list of all the permissions requested by a specific browser extension. This is a static data description and would mainly be used to enhance the data returned by the [Export browser extensions assessment API](get-assessment-browser-extensions.md).
 
-By combining these APIs you’ll be able to see a description of the permissions requested by the browser extensions that come up in the [Export browser extensions assessment](get-assessment-browser-extensions.md) results.
+By combining these APIs you'll be able to see a description of the permissions requested by the browser extensions that come up in the [Export browser extensions assessment](get-assessment-browser-extensions.md) results.
 
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>OData supported operators:

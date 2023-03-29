@@ -1,20 +1,24 @@
 ---
-title: Step-by-step threat protection stack in Microsoft Defender for Office 365 
-f1.keywords: 
+title: Step-by-step threat protection stack in Microsoft Defender for Office 365
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/05/2021
+ms.date: 1/31/2023
 ms.reviewer: gigarrub
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
 description: Follow the path of an incoming message through the threat filtering stack in Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
-ms.collection: M365-security-compliance
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.collection:
+- m365-security
+- tier2
+search.appverid: met150
 ---
+
 # Step-by-step threat protection in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
@@ -23,24 +27,24 @@ ms.collection: M365-security-compliance
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-The Microsoft Defender for Office 365 protection or filtering stack can be broken out into 4 phases, as in this article. Generally speaking, incoming mail passes through all of these phases before delivery, but the actual path email takes is subject to an organization's Defender for Office 365 configuration.
+The Microsoft Defender for Office 365 protection or filtering stack can be broken out into four phases, as in this article. Generally speaking, incoming mail passes through all of these phases before delivery, but the actual path email takes is subject to an organization's Defender for Office 365 configuration.
 
 > [!TIP]
 > Stay tuned till the end of this article for a *unified* graphic of all 4 phases of Defender for Office 365 protection!
 
 ## Phase 1 - Edge Protection
 
-Unfortunately, Edge blocks that were once *critical* are now relatively simple for bad actors to overcome. Over time, less traffic is blocked here, but it remains an important part of the stack.  
+Unfortunately, Edge blocks that were once *critical* are now relatively simple for bad actors to overcome. Over time, less traffic is blocked here, but it remains an important part of the stack.
 
-Edge blocks are designed to be automatic. In the case of false positive, senders will be notified and told how to address their issue. Connectors from trusted partners with limited reputation can ensure deliverability, or temporary overrides can be put in place, when onboarding new endpoints.
+Edge blocks are designed to be automatic. In the case of false positive, senders are notified and told how to address their issue. Connectors from trusted partners with limited reputation can ensure deliverability, or temporary overrides can be put in place, when onboarding new endpoints.
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="The Phase-1 filtering in Defender for Office 365" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png":::
 
 1. **Network throttling** protects Office 365 infrastructure and customers from Denial of Service (DOS) attacks by limiting the number of messages that can be submitted by a specific set of infrastructure.
 
-2. **IP reputation and throttling** will block messages being sent from known bad connecting IP addresses. If a specific IP sends many messages in a short period of time they will be throttled.
+2. **IP reputation and throttling** blocks messages being sent from known bad connecting IP addresses. If a specific IP sends many messages in a short period of time, they'll be throttled.
 
-3. **Domain reputation** will block any messages being sent from a known bad domain.
+3. **Domain reputation** blocks any messages being sent from a known bad domain.
 
 4. **Directory-based edge filtering** blocks attempts to harvest an organization's directory information through SMTP.
 
@@ -86,17 +90,17 @@ In this phase the filtering stack begins to handle the specific contents of the 
 
 1. **Transport rules** (also known as mail flow rules or Exchange transport rules) allow an admin to take a wide range of actions when an equally wide range of conditions are met for a message. All messages that flow through your organization are evaluated against the enabled mail flow rules / transport rules.
 
-2. **Microsoft Defender Antivirus** and two *third-party Antivirus engines* are used to detect all known malware in attachments.
+2. **Microsoft Defender Antivirus** and a *third-party Antivirus engine* are used to detect all known malware in attachments.
 
-3. The anti-virus (AV) engines are also used to true-type all attachments, so that **Type blocking** can block all attachments of types the admin specifies.
+3. The anti-virus (AV) engines are also used to true-type supported attachment types, which allows **Type blocking** to correctly block file types specified by admins.
 
-4. Whenever Microsoft Defender for Office 365 detects a malicious attachment, the file's hash, and a hash of its active content, are added to Exchange Online Protection (EOP) reputation. **Attachment reputation blocking** will block that file across all Office 365, and on endpoints, through MSAV cloud calls.
+4. Whenever Microsoft Defender for Office 365 detects a malicious attachment, the file's hash, and a hash of its active content, are added to Exchange Online Protection (EOP) reputation. **Attachment reputation blocking** blocks that file across all Office 365, and on endpoints, through MSAV cloud calls.
 
 5. **Heuristic clustering** can determine that a file is suspicious based on delivery heuristics. When a suspicious attachment is found, the entire campaign pauses, and the file is sandboxed. If the file is found to be malicious, the entire campaign is blocked.
 
 6. **Machine learning models** act on the header, body content, and URLs of a message to detect phishing attempts.
 
-7. Microsoft uses a determination of reputation from URL sandboxing as well as URL reputation from third party feeds in **URL reputation blocking**, to block any message with a known malicious URL.
+7. Microsoft uses a determination of reputation from URL sandboxing and URL reputation from third party feeds in **URL reputation blocking**, to block any message with a known malicious URL.
 
 8. **Content heuristics** can detect suspicious messages based on structure and word frequency within the body of the message, using machine learning models.
 
@@ -112,7 +116,7 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="The Phase-4 filtering in Defender for Office 365 is Post-delivery protection" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png":::
 
-1. **Safe Links** is Defender for Office 365's time-of-click protection. Every URL in every message is wrapped to point to Microsoft Safe Links servers. When a URL is clicked it is checked against the latest reputation, before the user is redirected to the target site. The URL is asynchronously sandboxed to update its reputation.
+1. **Safe Links** is Defender for Office 365's time-of-click protection. Every URL in every message is wrapped to point to Microsoft Safe Links servers. When a URL is clicked it's checked against the latest reputation, before the user is redirected to the target site. The URL is asynchronously sandboxed to update its reputation.
 
 2. **Zero-hour auto purge (ZAP) for phishing** retroactively detects and neutralizes malicious phishing messages that have already been delivered to Exchange Online mailboxes.
 

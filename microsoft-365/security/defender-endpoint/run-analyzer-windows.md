@@ -13,11 +13,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
+search.appverid: met150
+ms.date: 03/23/2021
 ---
 
 # Run the client analyzer on Windows

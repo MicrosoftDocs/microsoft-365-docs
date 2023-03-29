@@ -9,9 +9,10 @@ audience: ITPro
 ms.topic: how-to
 ms.collection: 
   - o365_security_incident_response
-  - M365-security-compliance
+  - m365-security
   - m365solution-smb
   - highpri
+  - tier1
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
@@ -21,13 +22,15 @@ search.appverid:
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
+
 # Responding to a Compromised Email Account
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -66,7 +69,7 @@ If a user reports any of the above symptoms, you should perform further investig
 
 ## How to secure and restore email function to a suspected compromised Microsoft 365 account and mailbox
 
-> [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
+<!--- [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false] --->
 
 Even after you've regained access to your account, the attacker may have added back-door entries that enable the attacker to resume control of the account.
 
@@ -112,33 +115,36 @@ Follow the procedures in [Reset a business password for someone](../../admin/add
 
 ### Step 4 Unblock the user from sending mail
 
-If the suspected compromised mailbox was used illicitly to send spam email, it is likely that the mailbox has been blocked from sending mail.
+If the suspected compromised mailbox was used illicitly to send spam email, it's likely that the mailbox has been blocked from sending mail.
 
 To unblock a mailbox from sending mail, follow the procedures in [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).
 
 ### Step 5 Optional: Block the user account from signing-in
 
 > [!IMPORTANT]
-> You can block the suspected compromised account from signing-in until you believe it is safe to re-enable access.
+> You can block the suspected compromised account from signing-in until you believe it's safe to re-enable access.
 
-1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, go to **Users** \> **Active users**. To go directly to the **Active users** page, use <https://admin.microsoft.com/Adminportal/Home#/users>.
+1. Do the following steps in the Microsoft 365 admin center at <https://admin.microsoft.com>:
+   1. Go to **Users** \> **Active users**. Or, to go directly to the **Active users** page, use <https://admin.microsoft.com/Adminportal/Home#/users>.
+   2. On the **Active users** page, find and then select the user account by doing either of the following steps:
+      - Select the user from the list by clicking anywhere in the row other than the check box. In the user details flyout that opens, click ![Block sign-in icon.](../../media/m365-cc-sc-no-icon.png) **Block sign-in** at the top of the flyout.
+      - Select the user from the list by clicking the check box in the row. Click ![More actions icon.](../../media/ITPro-EAC-MoreOptionsIcon.png) **More actions**, and then select ![Edit sign-in status icon.](../../media/m365-cc-sc-no-icon.png) **Edit sign-in status**.
+   3. On the **Block sign-in** flyout that opens, select **Block this user from signing in**, click **Save changes** and then click ![Close icon.](../../media/m365-cc-sc-close-icon.png) **Close**.
 
-2. On the **Active users** page, find and select the user account, click ![More icon.](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Edit sign-in status**.
+2. Do the following steps in the Exchange admin center (EAC) at <https://admin.exchange.microsoft.com>:
+   1. Go to **Recipients** \> **Mailboxes**. Or, to go directly to the **Mailboxes** page, use <https://admin.exchange.microsoft.com/#/mailboxes>.
+   2. On the **Mailboxes** page, find and select the user from the list by clicking anywhere in the row other than the check box.
+   3. In the mailbox details flyout that opens, do the following steps:
+      1. Verify the **General** tab is selected, and then click **Manage email apps settings** in the **Email apps & mobile devices** section.
+      2. In the **Manage settings for email apps** flyout that opens, disable all of the available settings by changing the toggles to ![Disabled.](../../media/scc-toggle-off.png) **Disabled**:
+         - **Outlook on the web**
+         - **Outlook desktop (MAPI)**
+         - **Exchange Web Services**
+         - **Mobile (Exchange ActiveSync)**
+         - **IMAP**
+         - **POP3**
 
-3. On the **Block sign-in** pane that appears, select **Block this user from signing in**, and then click **Save changes**.
-
-4. In the Exchange admin center (EAC) at <https://admin.exchange.microsoft.com>, go to **Recipients** \> **Mailboxes**. To go directly to the **Mailboxes** page, use <https://admin.exchange.microsoft.com/#/mailboxes>.
-
-5. On the **Mailboxes** page, find and select the user. In the mailbox details flyout that opens, do the following steps:
-   - In the **Email apps** section, select **Manage email apps settings**. In the **Manage settings for email apps** flyout that appears, block all of the available settings by moving the toggle to the right ![Disable.](../../media/scc-toggle-on.png):
-     - **Outlook on the web**
-     - **Outlook desktop (MAPI)**
-     - **Exchange Web Services**
-     - **Mobile (Exchange ActiveSync)**
-     - **IMAP**
-     - **POP3**
-
-   When you're finished, click **Save** and then click **Close**.
+         When you're finished, click **Save** and then click ![Close icon.](../../media/m365-cc-sc-close-icon.png) **Close**.
 
 ### Step 6 Optional: Remove the suspected compromised account from all administrative role groups
 
@@ -176,17 +182,10 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
 3. Make sure that your contact information, such as telephone numbers and addresses, is correct.
 
-## Secure Microsoft 365 like a cybersecurity pro
-
-Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.
-
-- Tasks to accomplish in the first 30 days. These have immediate affect and are low-impact to your users.
-- Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
-- Beyond 90 days. These enhancements build in your first 90 days work.
-
 ## See also
 
 - [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Detect and Remediate Illicit Consent Grants](detect-and-remediate-illicit-consent-grants.md)
 - [Internet Crime Complaint Center](https://www.ic3.gov/Home/Ransomware)
 - [Securities and Exchange Commission - "Phishing" Fraud](https://www.sec.gov/investor/pubs/phishing.htm)
 - To report spam email directly to Microsoft and your admin [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)

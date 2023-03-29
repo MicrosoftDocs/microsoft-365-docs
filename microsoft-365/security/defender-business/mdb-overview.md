@@ -7,25 +7,28 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
-ms.reviewer: shlomiakirav
+ms.date: 03/23/2023
+ms.reviewer: yaelbenari, efratka, jomaun
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ms.custom: intro-overview
 ---
 
 # What is Microsoft Defender for Business?
 
-Defender for Business is a new endpoint security solution that was designed especially for the small- and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. 
+Defender for Business is an endpoint security solution that was designed especially for the small- and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. Defender for Business is available as a standalone subscription and is included in [Microsoft 365 Business Premium](../../business-premium/index.md).
 
-This article describes what's included in Defender for Business, with links to learn more about these features and capabilities.
+This article describes what's included in Defender for Business and provides links to learn more about these features and capabilities.
 
+> [!TIP]
+> To learn more about Microsoft 365 Business Premium, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md).
 
 ## Video: Enterprise-grade protection for small- and medium-sized businesses
 
@@ -33,7 +36,9 @@ Watch the following video to learn more about Defender for Business: <br/><br/>
 
 > [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
 
-## What's included with Defender for Business
+## What's included with Defender for Business?
+
+Defender for Business includes a full range of device protection capabilities, as shown in the following diagram:
 
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Defender for Business features and capabilities.":::
 
@@ -56,7 +61,7 @@ With Defender for Business, you can help protect the devices and data your busin
    - [Find out how to get Defender for Business](get-defender-business.md).
 
 - **Learn how to set up your threat protection capabilities**. 
-   - [Use the trial playbook: Defender for Business](trial-playbook-defender-business.md).
+   - [See the trial user guide: Defender for Business](trial-playbook-defender-business.md).
    - [Learn about the simplified configuration process](mdb-simplified-configuration.md).
    - [See how to set up and configure Defender for Business](mdb-setup-configuration.md).
 
@@ -65,6 +70,7 @@ With Defender for Business, you can help protect the devices and data your busin
    - [Try scenarios, tutorials, and simulations](mdb-tutorials.md).
 
 - **Provide guidance on managing devices and security policies**.
+   - [Learn about new mobile threat defense capabilities (preview)](mdb-mtd.md).
    - [Monitor or manage devices](mdb-manage-devices.md).
    - [View or edit security policies](mdb-view-edit-policies.md).
 
@@ -73,3 +79,4 @@ With Defender for Business, you can help protect the devices and data your busin
 - [Try the interactive guide: Get started with Defender for Business](https://aka.ms/MDB-GetStartedGuide)
 - [Learn more about the simplified configuration process in Defender for Business](mdb-simplified-configuration.md)
 - [Find out how to get Defender for Business](get-defender-business.md)
+- [Get an overview of Microsoft 365 Business Premium](../../business-premium/index.md)

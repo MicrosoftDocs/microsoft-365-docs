@@ -5,11 +5,14 @@ f1.keywords:
 ms.author: Kwekua
 author: Kwekua
 manager: scotv
+ms.date: 03/26/2021
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -39,13 +42,13 @@ The table below represents which apps and services are currently connected to th
 |**Intune Company Portal (Android)**|Yes|Yes|Yes|Yes|
 |**Microsoft Stream (Android, iOS)**|Yes|Yes|Yes|Yes|
 |**Microsoft Whiteboard**|Yes|Yes|Yes|Yes|
-|**Office.com**|Coming soon|Coming soon|Coming soon|Coming soon|
+|**Microsoft365.com**|Yes|Yes|Yes|Yes|
 |**OneNote**|Yes|Yes|Yes|Yes|
 |**OneDrive**|[Some settings currently managed by other controls.](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook (Web, iOS)**|Coming soon|Coming soon|Coming soon|Coming soon|
-|**Outlook (Desktop, Android, Mac)**|Coming soon|Coming soon|Coming soon|Coming soon|
+|**Outlook (Desktop, Android, Mac)**|Yes|Yes|Yes|Yes|
 |**PowerPoint**|Yes|Yes|Yes|Yes|
-|**Project**|Coming soon|Coming soon|Coming soon|Coming soon|
+|**Project**|Yes|Yes|Yes|Yes|
 |**Publisher**|Yes|Yes|Yes|Yes|
 |**SharePoint**|[Some settings currently managed by other controls.](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[Some settings currently managed by other controls.](/microsoftteams/manage-feedback-policies-in-teams)||||
@@ -53,6 +56,7 @@ The table below represents which apps and services are currently connected to th
 |**Word**|Yes|Yes|Yes|Yes|
 |**Visio**|Yes|Yes|Yes|Yes|
 |**Viva Goals**|Yes|Yes|Yes|Yes|
+|**Viva Insights**|Yes|Yes|Yes|Yes|
 |**Whiteboard**|Yes|Yes|Yes|Yes|
 |**Yammer**|Yes|Yes|Yes|Yes|
 
@@ -95,7 +99,7 @@ Your devices must be on a minimum build number to use these policies. See the ta
 
 ## Configure policies
 
-To configure these policy settings, you can use the Office cloud policy service. For more information, see [Overview of the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service). You can search for "feedback" or "survey" within the Office cloud policy service UI to find the policy settings to configure them. 
+To configure these policy settings, you can use the Cloud Policy service for Microsoft 365. For more information, see [Overview of the Cloud Policy service for Microsoft 365](/deployoffice/overview-office-cloud-policy-service). You can search for "feedback" or "survey" within the Cloud Policy service for Microsoft 365 UI to find the policy settings to configure them. 
 
 These policy settings are also available if you use Group Policy. To use these policy settings, download at least version 5146.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), released on March 22, 2021.
 

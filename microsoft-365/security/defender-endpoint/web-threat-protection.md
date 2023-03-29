@@ -13,8 +13,10 @@ ms.localizationpriority: medium
 ms.date: 08/22/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 ---
 
@@ -48,9 +50,9 @@ To turn on network protection on your devices:
 
 ## Configure web threat protection
 
-The following procedure describes how to configure web threat protection using the Microsoft Endpoint Manager admin center.
+The following procedure describes how to configure web threat protection using the Microsoft Intune admin center.
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
+1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
  
 2. Choose **Endpoint security** \> **Attack surface reduction**, and then choose **+ Create policy**.
 

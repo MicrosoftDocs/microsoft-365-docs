@@ -1,24 +1,25 @@
 ---
 title: Microsoft Defender for Identity in Microsoft 365 Defender
 description: Learn about changes from the Microsoft Defender for Identity to Microsoft 365 Defender
-keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Identity, NDI
+keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Identity, MDI
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: dacurwin
-author: dcurwin
+ms.author: diannegali
+author: diannegali
 manager: dansimp
 ms.date: 07/06/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid: 
 - MOE150
 - MET150
 ms.collection: 
-- M365-security-compliance 
+- m365-security 
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ---
 
@@ -33,7 +34,7 @@ ms.custom: admindeeplinkDEFENDER
 
 Microsoft Defender for Identity is now part of Microsoft 365 Defender. The Microsoft 365 Defender portal allows security admins to perform their security tasks in one location. This will simplify workflows, and add the functionality of the other Microsoft 365 Defender services. Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
 
-Microsoft Defender for Identity  contributes identity focused information into the incidents and alerts that Microsoft 365 Defender presents. This information is key to providing context and correlating alerts from the other products within Microsoft 365 Defender.
+Microsoft Defender for Identity contributes identity focused information into the incidents and alerts that Microsoft 365 Defender presents. This information is key to providing context and correlating alerts from the other products within Microsoft 365 Defender.
 
 ## Quick reference
 
@@ -42,14 +43,14 @@ The table below lists the changes in navigation between Microsoft Defender for I
 | **Defender for** Identity  | **Microsoft 365 Defender**                                   |
 | -------------------------- | ------------------------------------------------------------ |
 | Timeline                   | Microsoft 365 Defender Alerts/Incidents queue                |
-| Reports                    | Will remain in the [classic Defender for Identity portal](/defender-for-identity/classic-workspace-portal). <br> Customized reports can be created in the Microsoft 365 Defender portal using   [Advanced hunting](#advanced-hunting-new).               |
+| Reports                    |Lateral movement path and passwords exposed in cleartext reports are covered by the [Identity security posture assessments](/defender-for-identity/security-assessment#assessment-reports) (ISPM)<br>Health issues are available in Settings -> Identities -> Health issues<br>Summary of alerts can be found by exporting the alerts queue or using Advanced Hunting (30 days of data)<br>Modification to sensitive groups can be found by using Advanced hunting<br>Customized reports can be created in Microsoft 365 Defender portal using Advanced hunting                                                                            |
 | User page                  | Microsoft 365 Defender User page                             |
 | Device page                | Microsoft 365 Defender Device page                           |
 | Group page                 | Microsoft 365 Defender groups side pane                      |
 | Alert page                 | Microsoft 365 Defender Alert page                            |
 | Search                     | Microsoft 365 Defender Search                                |
 | Health center              | Settings -> Identities -> Sensors                            |
-| Entity Activities          | Advanced hunting                                             |
+| Entity Activities          | Advanced hunting <br> Device timeline <br> Identity timeline                                             |
 | Settings                   | Settings -> Identities                                       |
 | Users and accounts         | Assets -> Identities                                         |
 | Identity security posture  | [Microsoft Defender for Identity's security posture assessments](/defender-for-identity/security-assessment) |
@@ -106,3 +107,4 @@ In addition to the **Lateral movement paths** tab on the user page, lateral move
 ## Related information
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
+

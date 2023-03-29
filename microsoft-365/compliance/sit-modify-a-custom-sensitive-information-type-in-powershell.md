@@ -5,12 +5,14 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+ms.date: 07/06/2021
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -29,12 +31,14 @@ In Security & Compliance PowerShell, modifying a custom sensitive information ty
 
 To connect to Security & Compliance PowerShell, see [Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Export the existing rule package to an XML file
 
 > [!NOTE]
-> If you have a copy of the XML file (for example, you just created and imported it), you can skip to the next step to modify the XML file.
+> If you have a copy of the XML file (for example, if you just created and imported it), you can skip to [Step: 2 Modify the sensitive information type in the exported XML file](#step-2-modify-the-sensitive-information-type-in-the-exported-xml-file).
 
-1. If you don't already know it, run the [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet to find the name of the custom rule package:
+1. If you don't already know the name of the custom rule package, run the [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet to find it:
 
    ```powershell
    Get-DlpSensitiveInformationTypeRulePackage
@@ -69,7 +73,7 @@ To connect to Security & Compliance PowerShell, see [Security & Compliance Power
 
 ## Step 2: Modify the sensitive information type in the exported XML file
 
-Sensitive information types in the XML file and other elements in the file are described earlier in this topic.
+Find more information about modifying sensitive information types via XML in [Customize a built-in sensitive information type](/compliance/customize-a-built-in-sensitive-information-type).
 
 ## Step 3: Import the updated XML file back into the existing rule package
 

@@ -12,13 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-endpointprotect
   - m365solution-scenario
   - highpri
+  - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Set up Microsoft Defender for Endpoint deployment
@@ -51,7 +54,7 @@ In this deployment scenario, you'll be guided through the steps on:
 
 ## Check license state
 
-Checking for the license state and whether it got properly provisioned, can be done through the admin center or through the **Microsoft Azure portal**.
+Checking for the license state and whether it was properly provisioned can be done through the admin center or through the **Microsoft Azure portal**.
 
 1. To view your licenses, go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 

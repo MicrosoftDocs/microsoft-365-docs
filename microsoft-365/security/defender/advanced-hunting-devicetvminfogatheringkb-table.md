@@ -16,8 +16,11 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.date: 06/22/2022
 ---
 
 # DeviceTvmInfoGatheringKB

@@ -12,6 +12,8 @@ metadata:
   ms.author: dmaguire #Required; microsoft alias of author; optional team alias.
   manager: scotv
   audience: Admin
+  ms.collection: 
+  - scotvorg
   ms.date: 07/21/2020 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new

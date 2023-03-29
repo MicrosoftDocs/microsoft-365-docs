@@ -12,7 +12,8 @@ audience: Admin
 ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -29,6 +30,8 @@ Double Key Encryption (DKE) uses two keys together to access protected content. 
 Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque wherever you store the protected data.
 
 For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](/azure/information-protection/plan-implement-tenant-key).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## When your organization should adopt DKE
 
@@ -60,15 +63,18 @@ If your organizations have any of the following requirements, you can use DKE to
 
 DKE sensitivity labels are made available to end users through the sensitivity button in the AIP Unified Labeling client in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
 
-**Microsoft Office Apps for enterprise** version 2009 or later (Desktop versions of Word, PowerPoint, and Excel) on Windows.
+**Microsoft Office Apps for enterprise** version 2009 or later (Desktop versions of Word, Excel, PowerPoint and Outlook) on Windows.
 
-**Azure Information Protection Unified Labeling Client** versions 2.7.93.0 or later. Download and install the Unified Labeling client from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
+**Azure Information Protection Unified Labeling Client** versions 2.14.93.0 or later. Download and install the Unified Labeling client from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
 
 ## Supported environments for storing and viewing DKE-protected content
 
-**Supported applications**. [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients on Windows, including Word, Excel, and PowerPoint.
+**Supported applications**. [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients on Windows, including Word, Excel, PowerPoint and Outlook.
 
 **Online content support**. You can store documents and files that are protected with Double Key Encryption online in both Microsoft SharePoint and OneDrive for Business. You must label and protect documents and files with DKE by supported applications before you upload to these locations. You can share encrypted content by email, but you can't view encrypted documents and files online. Instead, you must view protected content using the supported desktop applications and clients on your local computer.
+
+**Outlook encryption only and do not forward scenarios**
+Configuring DKE for supported scenarios will create a warning in the label configuration experience. For encryption only and do not forward, these unsupported scenarios have no warning in the label configuration experience.
 
 ## Overview of deploying DKE
 
@@ -107,7 +113,7 @@ When you're done, you can encrypt documents and files using DKE. For information
 
 Install these prerequisites on the computer where you want to install the DKE service.
 
-**.NET Core 3.1 SDK**. Download and install the SDK from [Download .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1).
+**.NET Core 7.0 SDK**. Download and install the SDK from [Download .NET Core 7.0](https://dotnet.microsoft.com/download/dotnet/7.0).
 
 **Visual Studio Code**. Download Visual Studio Code from [https://code.visualstudio.com/](https://code.visualstudio.com). Once installed, run Visual Studio Code and select **View** \> **Extensions**. Install these extensions.
 
@@ -555,7 +561,7 @@ If you're an Office Insider, DKE is enabled for you. Otherwise, enable DKE for y
 
 ## Migrate protected files from HYOK labels to DKE labels
 
-If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels. To migrate, you'll use the AIP scanner. To get started using the scanner, see [What is the Azure Information Protection unified labeling scanner?](/azure/information-protection/deploy-aip-scanner).
+If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels. To migrate, you'll use the Microsoft Purview Information Protection scanner. To get started using the scanner, see [Understand the information protection scanner](deploy-scanner.md).
 
 If you don't migrate content, your HYOK protected content will remain unaffected.
 
@@ -566,5 +572,7 @@ We realize that for some customers in highly regulated industries, this standard
 - [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.)
 
 - [Thales](https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption)
+
+- [Utimaco](https://utimaco.com/solutions/applications/double-key-encryption)
 
 Reach out directly to these vendors for more information and guidance on their in-market DKE HSM solutions.

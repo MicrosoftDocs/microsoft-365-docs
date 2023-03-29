@@ -15,11 +15,14 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 02/16/2021
 ---
 
 # Microsoft 365 Defender preview features

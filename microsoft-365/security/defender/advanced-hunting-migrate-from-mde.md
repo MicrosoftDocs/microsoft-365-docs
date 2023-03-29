@@ -17,9 +17,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-ms.topic: article
+  - m365-security
+  - tier2
+ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
+ms.date: 02/17/2021
 ---
 
 # Migrate advanced hunting queries from Microsoft Defender for Endpoint
@@ -36,8 +38,8 @@ Move your advanced hunting workflows from Microsoft Defender for Endpoint to pro
 - Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 
->[!NOTE]
->Most Microsoft Defender for Endpoint customers can [use Microsoft 365 Defender without additional licenses](prerequisites.md#licensing-requirements). To start transitioning your advanced hunting workflows from Defender for Endpoint, [turn on Microsoft 365 Defender](m365d-enable.md).
+> [!NOTE]
+> Most Microsoft Defender for Endpoint customers can [use Microsoft 365 Defender without additional licenses](prerequisites.md#licensing-requirements). To start transitioning your advanced hunting workflows from Defender for Endpoint, [turn on Microsoft 365 Defender](m365d-enable.md).
 
 You can transition without affecting your existing Defender for Endpoint workflows. Saved queries remain intact, and custom detection rules continue to run and generate alerts. They will, however, be visible in Microsoft 365 Defender.
 
@@ -58,7 +60,7 @@ The [Microsoft 365 Defender advanced hunting schema](advanced-hunting-schema-tab
 | [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md) | Authentication events on Active Directory and Microsoft online services |
 | [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Queries for Active Directory objects, such as users, groups, devices, and domains |
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Queries and custom detections which use schema tables that are only available in Microsoft 365 Defender can only be viewed in Microsoft 365 Defender.
 
 ## Map DeviceAlertEvents table

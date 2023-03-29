@@ -11,13 +11,13 @@ f1.keywords:
 author: dansimp
 ms.author: dansimp
 ms.service: microsoft-365-security
-ms.date: 01/29/2021
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
+- m365-security
+- tier2
 ms.topic: how-to
 ms.custom: 
 - autoir
@@ -32,7 +32,7 @@ ms.subservice: mdo
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-If [automated investigation and response (AIR) capabilities in Office 365](automated-investigation-response-office.md) missed or wrongly detected something, there are steps your security operations team can take to fix it. Such actions include:
+If [automated investigation and response (AIR) capabilities in Office 365](air-about-office.md) missed or wrongly detected something, there are steps your security operations team can take to fix it. Such actions include:
 
 - [Reporting a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Adjusting alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and
@@ -42,7 +42,7 @@ Use this article as a guide.
 
 ## Report a false positive/negative to Microsoft for analysis
 
-If AIR in Microsoft Defender for Office 365 missed an email message, an email attachment, a URL in an email message, or a URL in an Office file, you can [submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](admin-submission.md).
+If AIR in Microsoft Defender for Office 365 missed an email message, an email attachment, a URL in an email message, or a URL in an Office file, you can [submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](submissions-admin.md).
 
 You can also [Submit a file to Microsoft for malware analysis](https://www.microsoft.com/wdsi/filesubmission).
 
@@ -66,7 +66,7 @@ With Threat Explorer, your security operations team can find an email affected b
 |Scenario|Undo Options|Learn more|
 |---|---|---|
 |An email message was routed to a user's Junk Email folder|<ul><li>Move the message to the user's Deleted Items folder</li><li>Move the message to the user's Inbox</li><li>Delete the message</li></ul>|[Find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)|
-|An email message or a file was quarantined|<ul><li>Release the email or file</li><li> Delete the email or file</li></ul>|[Manage quarantined messages as an admin](manage-quarantined-messages-and-files.md)|
+|An email message or a file was quarantined|<ul><li>Release the email or file</li><li> Delete the email or file</li></ul>|[Manage quarantined messages as an admin](quarantine-admin-manage-messages-files.md)|
 
 ### Undo an action in the Action center
 
@@ -80,4 +80,4 @@ In the Action center, you can see remediation actions that were taken and potent
 ## See also
 
 - [Microsoft Defender for Office 365](defender-for-office-365.md)
-- [Automated investigations in Microsoft Defender for Office 365](office-365-air.md)
+- [Automated investigations in Microsoft Defender for Office 365](air-about.md)

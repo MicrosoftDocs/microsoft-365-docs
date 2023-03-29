@@ -1,7 +1,7 @@
 ---
 title: Manage incidents in Microsoft 365 Defender
 description: Learn how to assign, update the status,
-keywords: incident, incidents, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
+keywords: incident, incidents, attack story, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -15,12 +15,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365-initiative-defender-endpoint
+  - m365-security
+  - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
   - MOE150
+  - MET150
+ms.date: 02/16/2021
 ---
 
 # Manage incidents in Microsoft 365 Defender
@@ -52,6 +54,7 @@ You can manage incidents from the **Manage incident** pane for an incident. Here
 
 You can display this pane from the **Manage incident** link on the:
 
+- **Alert story** page.
 - Properties pane of an incident in the incident queue.
 - **Summary** page of an incident.
 
@@ -100,9 +103,6 @@ From the **Classification** field, you specify whether the incident is:
 - **False positive** for types of incidents that you determine can be ignored because they are technically inaccurate or misleading.
 
 Classifying incidents and specifying their status and type helps tune Microsoft 365 Defender to provide better detection determination over time.
-
-Watch this short video to learn how to use classification to increase triage efficiency.  
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHJq]
 
 ## Add comments
 

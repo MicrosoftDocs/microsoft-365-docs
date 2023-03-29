@@ -3,11 +3,13 @@ title: "Microsoft 365 tenant-to-tenant migrations"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 10/08/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-collaboration
 - M365-subscription-management
 - SPO_Content

@@ -11,9 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Live response command examples
@@ -218,6 +222,10 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 >
 > For long running commands such as '**run**' or '**getfile**', you may want to use the '**&**' symbol at the end of the command to perform that action in the background.
 > This will allow you to continue investigating the machine and return to the background command when done using '**fg**' [basic command](live-response.md#basic-commands).
+
+> [!NOTE]
+> 
+> When passing parameters to a live response script, do not include the following forbidden characters: **';'**, **'&'**, **'|'**, **'!'**, and **'$'**.
 
 ## `scheduledtask`
 

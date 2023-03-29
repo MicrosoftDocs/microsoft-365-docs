@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 12/3/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,6 +15,7 @@ f1.keywords:
 - NOCSH
 description: This article contains information for using lean popouts to improve message download performance in Outlook on the web.
 ms.custom: seo-marvel-apr2020
+ms.collection: scotvorg
 ---
 
 # Use lean popouts to reduce memory used when reading mail messages

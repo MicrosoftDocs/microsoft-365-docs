@@ -5,15 +5,16 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 03/07/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
+- highpri
 - SPO_Content
-- m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -36,7 +37,7 @@ Ready to start managing the lifecycle of your organization's data by retaining t
     
     If needed, [create and apply retention labels for your exceptions](create-retention-labels-information-governance.md).
 
-3. **Enable mailbox archiving** to provide users with additional mailbox storage space: [Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md)
+3. **Enable mailbox archiving** to provide users with additional mailbox storage space: [Enable archive mailboxes in Microsoft 365](enable-archive-mailboxes.md)
     
     If required to support archive mailboxes:
     
@@ -47,6 +48,8 @@ Ready to start managing the lifecycle of your organization's data by retaining t
 4. **Understand and manage inactive mailboxes** that retain mailbox content after employees leave the organization: [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md)
 
 5. If you have PST files that contain data you want to govern: **Import PST files to online mailboxes** by using network upload or drive shipping: [Learn about importing your organization's PST files](importing-pst-files-to-office-365.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Subscription and licensing requirements
 
@@ -64,7 +67,7 @@ For permissions to manage mailboxes for archiving, inactive mailboxes, and impor
 
 Members of your compliance team who will create and manage retention policies and retention labels need permissions to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Compliance Administrator** admin role group.
 
-Alternatively to using this default role, you can create a new role group and add the **Retention Management** role to this group. For a read-only role, use **View-Only Retention Management**. 
+Alternatively to using this default role, you can create a new role group and add the **Retention Management** role to this group. For a read-only role, use **View-Only Retention Management**.
 
 For instructions to add users to the default roles or create your own role groups, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
@@ -77,7 +80,7 @@ Use the following table to help you map your business requirements to the most c
 |I want to ...|Documentation|
 |----------------|---------------|
 |Efficiently retain or delete data for Microsoft 365 services: <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 Groups <br />- Teams <br />- Yammer <br />- Skype for Business |[Create and configure retention policies](create-retention-policies.md)|
-|Provide users with additional mailbox storage |[Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md)|
+|Provide users with additional mailbox storage |[Enable archive mailboxes in Microsoft 365](enable-archive-mailboxes.md)|
 |Retain mailbox data after employees leave the organization |[Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)|
 |Upload mailbox data from PST files |[Use network upload to import PST files](use-network-upload-to-import-pst-files.md)|
 
@@ -97,4 +100,3 @@ Most retention policies work unobtrusively in the background without user intera
 However, if you supplement retention policies with retention labels, these labels do have a UI presence in Microsoft 365 apps. Before you deploy these labels to your production network, make sure you provide information and instructions for end users and your help desk. To help users apply retention labels in SharePoint and OneDrive, see [Apply retention labels to files in SharePoint or OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
 The most effective end-user documentation will always be customized guidance and instructions you provide for the retention label names and configurations you choose. See the following page and downloads that you can use to help train your users: [End User Training for Retention Labels](https://microsoft.github.io/ComplianceCxE/enduser/retention/).
-

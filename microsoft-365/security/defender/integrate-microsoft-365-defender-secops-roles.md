@@ -16,13 +16,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-m365dsecops
+  - tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 07/15/2021
 ---
+
 # Step 4. Define Microsoft 365 Defender roles, responsibilities, and oversight
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]

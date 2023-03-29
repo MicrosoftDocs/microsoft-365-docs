@@ -6,18 +6,20 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: admin
-ms.topic: article
+ms.topic: overview
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
+  - highpri
   - m365solution-overview
   - m365solution-frontline
+  - tier1
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-
+ms.date: 10/28/2022
 ---
 
 # Get started with Microsoft 365 for frontline workers
@@ -86,8 +88,8 @@ Safeguard your business with best-in-class security and compliance features. Mic
 
 |Capability |License availability |
 |-----------|---------------------|
-|[Introduction to security in Microsoft 365](/learn/modules/security-in-m365/) |Enterprise, F1, F3 |
-|[Introduction to compliance tools in Microsoft 365](/learn/modules/compliance-in-m365/) |Enterprise, F1, F3 |
+|[Introduction to security in Microsoft 365](/training/modules/security-in-m365/) |Enterprise, F1, F3 |
+|[Introduction to compliance tools in Microsoft 365](/training/modules/compliance-in-m365/) |Enterprise, F1, F3 |
 |[Quick tasks for getting started with Microsoft Purview](/microsoft-365/compliance/compliance-quick-tasks) |Enterprise, available as an add-on for F3 |
 
 ### Simplify deployment and management at scale
@@ -106,7 +108,7 @@ Equip your employees with industry-specific devices tailored for their needs, or
 |-----------|---------------------|
 |[Manage mobile devices for frontline workers](flw-devices.md) |Enterprise, F1, F3 |
 |[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) |Enterprise, F1, F3 |
-|[Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview) |Enterprise, F1, F3 |
+|[Microsoft Intune family of products](/mem/endpoint-manager-overview) |Enterprise, F1, F3 |
 |[Device partner integrations with Intune](/mem/intune/protect/device-compliance-partners) |Enterprise, F1, F3 |
 
 ## Adoption principles to help envision and implement business scenarios

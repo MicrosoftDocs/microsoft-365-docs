@@ -7,38 +7,41 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
-ms.reviewer: shlomiakirav
+ms.date: 09/28/2022
+ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
+- tier1
 ---
 
 # Microsoft 365 Lighthouse and Microsoft Defender for Business
 
 ## Microsoft Defender for Business integrates with Microsoft 365 Lighthouse
 
-If you're a Microsoft Cloud Solution Provider (CSP) and you have [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), you can manage security for your customers (small and medium-sized businesses). Microsoft Defender for Business is designed to integrate with Microsoft 365 Lighthouse, so that you can view security incidents across tenants in your Microsoft 365 Lighthouse portal ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
+If you're a Microsoft Cloud Solution Provider (CSP) or Managed Service Provider (MSP), you can use [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) to manage security for your customers. Microsoft Defender for Business and Defender for Endpoint integrate with Microsoft 365 Lighthouse, an admin portal that CSPs and MSPs can use to secure and manage their customers' data and devices.
 
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="screenshot of incidents list in Microsoft 365 Lighthouse":::
 
-To access the list of incidents, in Microsoft 365 Lighthouse, on the home page, find the **Security incidents** card, and then select **View all incidents**.
+ You can use the Microsoft 365 Lighthouse portal ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)) to:
+
+- Manage your customers' security settings and capabilities. 
+- View and manage detected threats across your customers' tenants.
+- Initiate antivirus scans on customers' devices to keep them up to date and protected.
 
 ## Learn more about Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse enables Microsoft CSPs to secure and manage devices, data, and users at scale for customers who are using one of the following subscriptions:
+Microsoft 365 Lighthouse enables Microsoft CSPs and MSPs to secure and manage devices, data, and users at scale.
 
-- [Microsoft Defender for Business](/security/defender-business/mdb-overview.md)
-- [Microsoft 365 Business Premium](../../admin/admin-overview/what-is-microsoft-365.md)
-- [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md) (which now includes [Microsoft Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md))
-- [Microsoft 365 E5](../../enterprise/microsoft-365-overview.md) (which includes [Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md), [Defender for Office 365 Plan 2](../office-365-security/defender-for-office-365.md), [Defender for Identity](/defender-for-identity/what-is), and [other security capabilities](../defender/microsoft-365-defender.md))
-- [Windows 365 Business or Enterprise](/windows-365/overview)
+To learn more, see:
 
-To learn more, see [Overview of Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md).
+- [Overview of Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)
+- [Requirements for Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-requirements.md)
+- [Sign up for Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-sign-up.md)
 
 ## See also
 

@@ -3,11 +3,13 @@ title: "Key compliance and security considerations for US banking and capital ma
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
+ms.date: 03/17/2020
 audience: ITPro
 ms.topic: article
 ms.collection: 
+- highpri
 - M365-security-compliance
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: Learn how financial services institutions can maintain financial security compliance and effectively collaborate using Microsoft 365 and Teams.

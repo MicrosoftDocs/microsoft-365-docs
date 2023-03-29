@@ -12,10 +12,14 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # API Explorer
@@ -51,7 +55,7 @@ The list of supported APIs is available in the [APIs documentation](apis-intro.m
 
 ## Get started with the API Explorer
 
-1. In the left pane, there is a list of sample requests that you can use.
+1. In the left pane, there's a list of sample requests that you can use.
 2. Follow the links and click **Run query**.
 
 Some of the samples may require specifying a parameter in the URL, for example, {machine- ID}.

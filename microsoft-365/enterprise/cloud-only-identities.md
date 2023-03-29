@@ -17,6 +17,7 @@ ms.custom:
 - 'O365E_HRCSetupAADConnectAboutLM617031'
 - 'O365E_AddUsersWithDirSync'
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:

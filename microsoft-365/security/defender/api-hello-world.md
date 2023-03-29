@@ -15,12 +15,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
 ms.custom: api
+ms.date: 02/16/2021
 ---
 
 # Hello World for Microsoft 365 Defender REST API
@@ -79,7 +82,7 @@ It should take 5 to 10 minutes to complete this project. This time estimate incl
 For more information on Azure Active Directory tokens, see the [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
-> Although the example in this demo app encourage you to paste in your secret value for testing purposes, you should **never hardcode secrets** into an application running in production. A third party could use your secret to access resources. You can help keep your app's secrets secure by using [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). For a practical example of how you can protect your app, see [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+> Although the example in this demo app encourage you to paste in your secret value for testing purposes, you should **never hardcode secrets** into an application running in production. A third party could use your secret to access resources. You can help keep your app's secrets secure by using [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). For a practical example of how you can protect your app, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
 
 1. Copy the script below and paste it into your favorite text editor. Save as **Get-Token.ps1**. You can also run the code as-is in PowerShell ISE, but you should save it, because we'll need to run it again when we use the incident-fetching script in the next section.
 
@@ -135,7 +138,7 @@ $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 # This URL contains the type of query and the time filter we created above.
 # Note that `$filter` does not refer to a local variable in our script --
 # it's actually an OData operator and part of the API's syntax.
-$url = "https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+$dateTime"
+$url = "https://api.security.microsoft.com/api/incidents`?`$filter=lastUpdateTime+ge+$dateTime"
 
 # Set the webrequest headers
 $headers = @{
@@ -174,5 +177,5 @@ You're all done! You've successfully:
 - [Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md)
 - [Create an app to access Microsoft 365 Defender APIs on behalf of a user](api-create-app-user-context.md)
 - [Create an app with multi-tenant partner access to Microsoft 365 Defender APIs](api-partner-access.md)
-- [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 Authorization for user sign in and API access](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

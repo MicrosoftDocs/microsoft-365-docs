@@ -3,10 +3,13 @@ title: "Collaborate with guests in a site"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
+ms.date: 03/10/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
+- highpri
+- Tier1
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection

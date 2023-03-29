@@ -6,15 +6,18 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: jweston-1
-ms.author: v-jweston
+author: Dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 ms.date: 08/25/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Contextual file and folder exclusions

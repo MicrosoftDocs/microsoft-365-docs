@@ -3,7 +3,7 @@ title: "Mailbox utilization service alerts"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.date: 08/10/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: 

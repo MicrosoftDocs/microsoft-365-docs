@@ -5,11 +5,14 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -87,7 +90,7 @@ In order to deploy an add-in via Centralized Deployment, you need to be either a
 
 ### Centralized Deployment Compatibility Checker
 
-Using the Centralized Deployment Compatibility Checker, you can verify whether the users on your tenant are set up to use Centralized Deployment for Word, Excel and PowerPoint. The Compatibility Checker is not required for Outlook support. Download the [compatibility checker](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+Using the Centralized Deployment Compatibility Checker, you can verify whether the users on your tenant are set up to use Centralized Deployment for Word, Excel, and PowerPoint. The Compatibility Checker is not required for Outlook support. Download and install the [compatibility checker](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
 
 #### Run the compatibility checker
 

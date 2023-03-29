@@ -15,9 +15,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
+  - m365-security
   - m365initiative-defender-endpoint
+  - tier1
 ms.topic: conceptual
+search.appverid: met150
+ms.date: 07/26/2022
 ---
 
 # Before you begin using Defender Experts for Hunting
@@ -28,7 +31,7 @@ ms.topic: conceptual
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-This document outlines the key infrastructure requirements you must meet and important information on data access and compliance you must know before enrolling in the Microsoft Defender Experts for Hunting service. Microsoft understands that customers who use our managed services entrust us with their most valued asset, their data.
+This document outlines the key infrastructure requirements you must meet and important information on data access and compliance you must know before purchasing the Microsoft Defender Experts for Hunting service. Microsoft understands that customers who use our managed services entrust us with their most valued asset, their data.
 
 ## Check if your environment meets licensing and access prerequisites
 

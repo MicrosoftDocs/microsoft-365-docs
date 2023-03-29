@@ -1,6 +1,6 @@
 ---
-title: Configure Microsoft Defender Antivirus using Microsoft Endpoint Manager
-description: Use Microsoft Endpoint Manager and Microsoft Intune to configure Microsoft Defender Antivirus and Endpoint Protection
+title: Configure Microsoft Defender Antivirus using Microsoft Intune
+description: Use Microsoft Intune to configure Microsoft Defender Antivirus and Endpoint Protection
 keywords: scep, intune, endpoint protection, configuration
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -16,10 +16,13 @@ manager: dansimp
 ms.subservice: mde
 audience: ITPro
 ms.topic: how-to
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
-# Use Microsoft Endpoint Manager to configure and manage Microsoft Defender Antivirus
+# Use Microsoft Intune to configure and manage Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,11 +36,11 @@ ms.collection: m365-security-compliance
 **Platforms**
 - Windows
 
-You can use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to configure Microsoft Defender Antivirus scans. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](/mem/configmgr/core/understand/introduction) are now part of Endpoint Manager.
+You can use the Microsoft Intune family of products to configure Microsoft Defender Antivirus scans, like [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](/mem/configmgr/core/understand/introduction).
 
-## Configure Microsoft Defender Antivirus scans in Endpoint Manager
+## Configure Microsoft Defender Antivirus scans in Intune
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
+1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
 
 2. Navigate to **Endpoint Security**.
 
@@ -71,5 +74,23 @@ You can use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to conf
 
 ## Related articles
 
+- [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 - [Reference articles for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+
+> [!TIP]
+> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
+>
+> - Top paths that impact scan time
+> - Top files that impact scan time
+> - Top processes that impact scan time
+> - Top file extensions that impact scan time
+> - Combinations – for example:
+>   - top files per extension
+>   - top paths per extension
+>   - top processes per path
+>   - top scans per file
+>   - top scans per file per process
+>
+> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
+> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).

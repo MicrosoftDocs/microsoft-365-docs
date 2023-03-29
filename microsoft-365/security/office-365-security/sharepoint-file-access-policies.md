@@ -1,11 +1,11 @@
 ---
-title: Recommended secure document policies - Microsoft 365 for enterprise | Microsoft Docs
+title: Recommended secure document policies
 description: Describes the policies for Microsoft recommendations about how to secure SharePoint file access.
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 f1.keywords:
   - NOCSH
@@ -15,12 +15,15 @@ ms.custom:
   - goldenconfig
 ms.collection:
   - M365-identity-device-management
-  - M365-security-compliance
+  - m365-security
   - m365solution-identitydevice
   - m365solution-scenario
   - zerotrust-solution
   - highpri
+  - tier1
 ms.subservice: mdo
+search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Policy recommendations for securing SharePoint sites and files
@@ -46,8 +49,8 @@ The following table lists the policies you either need to review and update or c
 |Protection level|Policies|More information|
 |---|---|---|
 |**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps.|
-||[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Include SharePoint in the assignment of cloud apps.|
-||[Apply APP data protection policies](identity-access-policies.md#apply-app-data-protection-policies)|Be sure all recommended apps are included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
+||[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-multifactor-authentication)|Include SharePoint in the assignment of cloud apps.|
+||[Apply APP data protection policies](identity-access-policies.md#app-protection-policies)|Be sure all recommended apps are included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
 ||[Use app enforced restrictions in SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Add this new policy. This tells Azure Active Directory (Azure AD) to use the settings specified in SharePoint. This policy applies to all users, but only affects access to sites included in SharePoint access policies.|
 |**Enterprise**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignments of cloud apps.|
 ||[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include SharePoint in the list of cloud apps.|

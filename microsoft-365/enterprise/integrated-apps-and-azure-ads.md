@@ -3,6 +3,7 @@ title: "Integrated apps and Azure AD for Microsoft 365 administrators"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: landing-page
 ms.service: microsoft-365-enterprise
@@ -12,7 +13,9 @@ f1.keywords:
 ms.custom: 
  - Adm_O365
  - seo-marvel-apr2020
-ms.collection: M365-subscription-management
+ms.collection: 
+- scotvorg
+- M365-subscription-management
 search.appverid:
 - MET150
 - MOE150

@@ -5,11 +5,14 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 03/17/2021
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -52,6 +55,9 @@ Follow these steps to [convert the user's mailbox to a shared mailbox](../email/
 4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee who's going to get the email.
 5. Select **Save**.
 6. Remember, don't delete the former employee's account.
+
+> [!IMPORTANT]
+> In scenarios where the mailbox is inactive due to compliance reasons, mail forwarding or converting the mailbox to a shared mailbox would not work.
 
 ### Cancel Outlook meetings
 

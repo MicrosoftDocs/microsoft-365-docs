@@ -3,11 +3,14 @@ title: "Microsoft 365 admin center mailbox usage reports"
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
@@ -24,6 +27,9 @@ description: "Learn how to get the Mailbox usage report to find out about activi
 # Microsoft 365 Reports in the admin center - Mailbox usage
 
 The **Mailbox usage report** provides information about users with a user mailbox and the level of activity by each based on the email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity. It also provides information about how much storage has been consumed by each user mailbox, and how many of them are approaching storage quotas. The mailbox usage report also contains information on mailboxes shared amongst users, providing storage and quota data on shared mailboxes.
+
+> [!NOTE] 
+> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
  
 ## How to get to the mailbox usage report
 
@@ -35,7 +41,10 @@ The **Mailbox usage report** provides information about users with a user mailbo
 
 You can get a view into your organization's mailbox usage by looking at the **Mailbox**, **Storage** and **Quota** charts.
 
-To access shared mailbox information, change the drop-down selection at the top right of the charts to **Shared**.  If your tenant does not have shared mailboxes, you will not be able to view any shared mailbox information.  Also note that if you’ve opted to view shared charts, currently you will not be able to export the chart information. This is a known issue and will be corrected in a future iteration.
+To access shared mailbox information, change the drop-down selection at the top right of the charts to **Shared**.  If your tenant does not have shared mailboxes, you will not be able to view any shared mailbox information.
+
+> [!NOTE]
+> You will not currently be able to export the summary chart information for shared mailboxes. This is a known issue and will be corrected in a future iteration.
   
 :::image type="content" alt-text="Mailbox usage report." source="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png" lightbox="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png":::
 
@@ -43,7 +52,10 @@ The **Mailbox usage** report can be viewed for trends over the last 7 days, 30 d
 
 ### The Mailbox chart
 
-The **Mailbox** chart shows you the total number of user or shared mailboxes in your organization, and the total number that are active on any given day of the reporting period. A user or shared mailbox is considered active if it had an email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity.
+The **Mailbox** chart shows you the total number of user or shared mailboxes in your organization, and the total number of user mailboxes that are active on any given day of the reporting period. A user mailbox is considered active if it had an email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity.
+
+> [!NOTE]
+> Shared mailboxes do not have activity independent of a user mailbox so only a count of shared mailboxes will be shown when this mailbox type is selected.
 
 On the Mailbox chart:
 - The Y axis is the number of user or shared mailboxes. 

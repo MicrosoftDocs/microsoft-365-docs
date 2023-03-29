@@ -1,5 +1,5 @@
 ---
-title: "Protect your administrator accounts in Microsoft 365 Business Premium"
+title: "Protect your administrator accounts with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -7,12 +7,15 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
-ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.service: microsoft-365-security
+ms.subservice: m365bp
+ms.date: 10/18/2022
+ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -21,9 +24,9 @@ search.appverid:
 description: "Learn how to set up and protect your administrator accounts in Microsoft 365 Business Premium."
 ---
 
-# Protect your administrator accounts in Microsoft 365 Business Premium
+# Protect your administrator accounts
 
-Because admin accounts come with elevated privileges, they're valuable targets for hackers and cyber criminals. This article describes:
+Because admin accounts come with elevated privileges, they're valuable targets for cyberattackers. This article describes:
 
 - [How to set up an another administrator account for emergencies](#create-other-admin-accounts).
 - [How to create an emergency admin account](#create-an-emergency-admin-account).
@@ -35,7 +38,7 @@ When you sign up for Microsoft 365 and enter your information, you automatically
 
 ## Create other admin accounts
 
-Use admin accounts only for Microsoft 365 administration. Admins should have a separate user account for their regular use of Office apps, and only use their administrative account when necessary to manage accounts and devices, and while working on other admin functions. It's also a good idea to remove the Microsoft 365 license from your admin accounts so you don't have to pay for extra licenses.
+Use admin accounts only for Microsoft 365 administration. Admins should have a separate user account for their regular use of Microsoft 365 apps, and only use their administrative account when necessary to manage accounts and devices, and while working on other admin functions. It's also a good idea to remove the Microsoft 365 license from your admin accounts so you don't have to pay for extra licenses.
 
 You'll want to set up at least one other Global admin account to give admin access to another trusted employee. You can also create separate admin accounts for user management (this role is called **User management administrator**). For more information, see [about admin roles](/office365/admin/add-users/about-admin-roles).
 
@@ -44,7 +47,7 @@ You'll want to set up at least one other Global admin account to give admin acce
 
 To create more admin accounts:
 
- 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Microsoft 365 admin center</a> and then choose **Users** \> **Active users** in the left nav.
+ 1. In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), choose **Users** \> **Active users** in the left nav.
 
     ![Choose Users and then Active users in the left nav.](../media/Activeusers.png)
 
@@ -70,7 +73,7 @@ If you're an admin, you'll need a user account for regular work tasks, such as c
 
 To create a new user account:
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Microsoft 365 admin center</a> and then choose **Users** \> **Active users** in the left nav.
+1. Go to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890) and then choose **Users** \> **Active users** in the left nav.
 
 2. On the **Active users** page, select **Add a user** at the top of the page, and on the **Add a user** panel, enter the name and other information.
 

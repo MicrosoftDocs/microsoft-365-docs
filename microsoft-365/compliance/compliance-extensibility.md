@@ -1,25 +1,25 @@
 ---
 title: "Microsoft Purview extensibility"
+description: "Learn about extending Microsoft Purview solutions by using third-party data connectors and Microsoft Graph APIs."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 08/18/2020
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 search.appverid: 
 - MOE150
-- MET150
-ms.assetid: 
+- MET150 
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about extending Microsoft Purview solutions by using third-party data connectors and Microsoft Graph APIs."
 ---
 
 # Microsoft Purview and Microsoft Priva extensibility
@@ -31,6 +31,8 @@ There are two key building blocks for compliance extensibility:
 - **Data connectors**. Use to import and archive non-Microsoft data so you can apply Microsoft 365 protection and governance capabilities to third-party data.
 
 - **APIs**. Enables programmatic access to Microsoft Purview capabilities.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Data connectors
 
@@ -82,7 +84,7 @@ For the licensing requirements for Teams DLP, see [Microsoft 365 licensing guida
 
 ### Microsoft Graph API for eDiscovery (preview)
 
-With [eDiscovery (Premium)](overview-ediscovery-20.md), organizations can discover data where it lives, and manage more end-to-end eDiscovery workflows with intelligent machine learning and analytics capabilities to reduce data to the relevant set – all while the data stays within the Microsoft 365 security and compliance boundary.
+With [eDiscovery (Premium)](ediscovery-overview.md), organizations can discover data where it lives, and manage more end-to-end eDiscovery workflows with intelligent machine learning and analytics capabilities to reduce data to the relevant set – all while the data stays within the Microsoft 365 security and compliance boundary.
 
 Graph APIs for eDiscovery (Premium) can be used to create and manage cases, review sets, and review set queries in a scalable and repeatable manner. This enables customers and partners to create apps and workflows to automate common and repetitive processes such as creating cases and managing custodians and legal holds.
 
@@ -100,13 +102,13 @@ For the licensing requirements for the use of the Teams Export APIs, see [Micros
 
 With [Microsoft Graph connectors](/microsoftsearch/connectors-overview), organizations can index third-party data so it appears in Microsoft Search results. This feature expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem. The third-party data can be hosted on-premises or in public or private clouds. Starting with eDiscovery (Premium), we're enabling developer preview of built-in compliance value of Microsoft 365 connected apps. This enables compliance for apps integrating into the Microsoft 365 ecosystem to empower users with seamless compliance experiences. To learn more about to how to incorporate Microsoft Graph Connector APIs in your apps view, see [Create, update, and delete connections in the Microsoft Graph](/graph/connecting-external-content-connectors-api-overview).
 
-### Microsoft Graph API for records management (preview)
+### Microsoft Graph API for records management
 
 Organizations of all types require a records management solution to manage critical records across their data. [Microsoft Purview Records Management](records-management.md) helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required.
 
 The records management solution is used by organizations in large volumes to utilize its various capabilities in protecting, labeling, retaining, or deleting their data. The Microsoft Graph APIs for records management lets organizations manage retention labels and their associated actions more efficiently, automate repetitive tasks, and equip customers with flexibility in options.
 
-Now rolling out, the first release of Graph APIs for records management support the management of retention labels, and event-based retention. Example scenarios:
+Now rolling out in general availability, the first release of Graph APIs for records management support the management of retention labels, and event-based retention. Example scenarios:
 
 - **Managing retention labels**
     
@@ -122,6 +124,6 @@ Now rolling out, the first release of Graph APIs for records management support 
     
     They then use the Graph APIs for records management to create an event for the associated event type. The retention period for the confidential documents starts after this event is created.
 
-For more information about the Graph APIs for records management, see [Use the Microsoft Graph Records Management API](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true).
+For more information about the Graph APIs for records management, see [Use the Microsoft Graph Records Management API](/graph/api/resources/security-recordsmanagement-overview).
 
 For licensing requirements to use these APIs, see the records management information from the Microsoft 365 guidance for security & compliance, [Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) section.

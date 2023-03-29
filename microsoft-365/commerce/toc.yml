@@ -62,18 +62,14 @@
       href: billing-and-payments/change-payment-frequency.md
     - name: Manage billing notifications and invoice attachments
       href: billing-and-payments/manage-billing-notifications.md
+    - name: Understand billing accounts
+      href: manage-billing-accounts.md
     - name: Understand billing profiles
       href: billing-and-payments/manage-billing-profiles.md
     - name: Change your billing addresses
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Request a credit for Withholding Tax on your account
       href: billing-and-payments/withholding-tax-credit-global.md
-- name: Billing accounts
-  items: 
-    - name: Understand billing accounts
-      href: manage-billing-accounts.md
-    - name: Associate a tenant with your billing account
-      href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
 - name: Manage relationships with your partners
   href: manage-partners.md
 - name: Review partner privileges

@@ -5,12 +5,14 @@ keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
-ms.localizationpriority: null
+- tier2
+- purview-compliance
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -26,6 +28,8 @@ This article describes how to use attributes with information barriers, and it p
 - [Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
 - [Edit (or remove) IB policies](information-barriers-edit-segments-policies.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How to use attributes in IB policies
 
 The attributes listed in this article can be used to define or edit segments of users. Your defined segments serve as parameters (called *UserGroupFilter* values) in [IB policies](information-barriers-policies.md).
@@ -35,7 +39,6 @@ The attributes listed in this article can be used to define or edit segments of 
 2. Make sure the user accounts have values filled in for the attribute(s) you selected in Step 1. View user account details, and if necessary, edit user accounts to include attribute values. 
 
     - To edit multiple accounts (or use PowerShell to edit a single account), see [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
-
     - To edit a single account, see [Add or update a user's profile information using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
 3. [Define segments using PowerShell](information-barriers-policies.md#define-segments-using-powershell), similar to the following examples:

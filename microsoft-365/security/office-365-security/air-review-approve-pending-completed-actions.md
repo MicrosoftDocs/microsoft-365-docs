@@ -13,13 +13,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-office365
+- m365-security
+- tier2
 ms.custom:
 description: Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 06/10/2021
+ms.date: 1/31/2023
 ---
 
 # Review and manage remediation actions in Office 365
@@ -34,7 +34,9 @@ As automated investigations on email & collaboration content result in verdicts,
 - Soft deleting email messages or clusters
 - Turning off external mail forwarding
 
-These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. In some cases, you can reconsider submitted actions.  You need to be part of Search & purge role before taking any actions.
+These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. You need to be part of Search & purge role before taking any actions.
+
+We've added additional checks for duplicate or overlapping investigations with the same clusters approved multiple times. If the same investigation cluster is already approved in the previous hour, new duplicate remediation will not be processed again. This behavior doesn't remove duplicate investigations or investigation evidence - it simply de-duplicates approved actions to improve remediation processing speed. For the duplicate approved cluster investigations, you won't see action details in the [action center](https://security.microsoft.com/action-center/history) side panel. 
 
 ## Approve (or reject) pending actions
 
@@ -48,10 +50,13 @@ There are four different ways to find and take auto investigation actions:
 ## Incident queue
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Incidents** page at **Incidents & alerts** \> **Incidents**. To go directly to the **Incidents** page, use <https://security.microsoft.com/incidents>.
-2. On the **Incidents** page, select an incident name to open its summary page.
-3. Select the **Evidence and Response** tab.
-4. Select an item in the list. Its side pane opens.
-5. In the side pane, take approve or reject actions.
+2. Filter on **Pending action** for the Automated investigation state (optional).
+3. On the **Incidents** page, select an incident name to open its summary page.
+4. Select the **Evidence and Response** tab.
+5. Select an item in the list to open its flyout pane.
+6. Review the information, and then take one of the following steps:
+   - Select the Approve pending action option to initiate a pending action.
+   - Select the Reject pending action option to prevent a pending action from being taken.
 
 ## Action center
 
@@ -91,7 +96,7 @@ There are two different ways to reconsider submitted actions:
 
 ## Next steps
 
-- [Use Threat Explorer](threat-explorer.md)
+- [Use Threat Explorer](threat-explorer-about.md)
 - [Admin /Manual Actions](remediate-malicious-email-delivered-office-365.md)
 - [How to report false positives/negatives in automated investigation and response capabilities](air-report-false-positives-negatives.md)
 

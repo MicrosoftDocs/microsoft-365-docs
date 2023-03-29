@@ -2,14 +2,18 @@
 title: "Change nameservers to set up Microsoft 365 with any domain registrar"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -30,6 +34,8 @@ description: "Learn how to add and set up your domain in Microsoft 365 so that y
 ---
 
 # Change nameservers to set up Microsoft 365 with any domain registrar
+
+
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 

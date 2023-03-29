@@ -2,23 +2,24 @@
 title: Use automated investigations to investigate and remediate threats
 description: Understand the automated investigation flow in Microsoft Defender for Endpoint.
 keywords: automated, investigation, detection, Microsoft Defender for Endpoint
-ms.prod: m365-security
-ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.service: microsoft-365-security
+ms.subservice: mde
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.date: 08/31/2022
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
+search.appverid: met150
 ---
 
 # Overview of automated investigations
@@ -106,5 +107,5 @@ Currently, AIR only supports the following OS versions:
 ## See also
 
 - [PUA protection](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Automated investigation and response in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-air)
+- [Automated investigation and response in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-about)
 - [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)

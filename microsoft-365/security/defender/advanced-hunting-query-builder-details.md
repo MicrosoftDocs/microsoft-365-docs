@@ -17,9 +17,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
+  - tier2
 ms.topic: conceptual
+ms.date: 08/11/2022
 ---
 
 # Refine your query in guided mode 
@@ -54,7 +56,7 @@ Advanced hunting in guided mode supports several data types that you can use to 
 ![Screenshot of datetime values as third condition](../../media/guided-hunting/data-datetime.png)
 
 
-- Closed list - You don’t need to remember the exact value you are looking for. You can easily choose from a suggested closed list that supports multi-selection.<br>
+- Closed list - You don't need to remember the exact value you are looking for. You can easily choose from a suggested closed list that supports multi-selection.<br>
 ![Screenshot of a closed list used as third condition](../../media/guided-hunting/data-closed.png)
 
 
@@ -67,7 +69,7 @@ You can create groups of conditions by clicking **Add subgroup**:
 
 ## Use smart auto-complete for search
 Smart auto-complete for searching devices and user accounts is supported. 
-You don’t need to remember the device ID, full device name, or user account name. You can start typing the first few characters of the device or user you are looking for and a suggested list appears from which you can choose what you need:
+You don't need to remember the device ID, full device name, or user account name. You can start typing the first few characters of the device or user you are looking for and a suggested list appears from which you can choose what you need:
 
 ![Screenshot showing smart auto-complete support](../../media/guided-hunting/smart-auto.png)
 
@@ -78,15 +80,15 @@ For instance, if you want to add a condition that looks for registry value delet
 
 ![Screenshot of various EventTypes](../../media/guided-hunting/hunt-specific-events-1.png)
 
-Selecting EventType under Registry Events allows you to choose from different registry events, including the one you’re hunting for, **RegistryValueDeleted**.
+Selecting EventType under Registry Events allows you to choose from different registry events, including the one you're hunting for, **RegistryValueDeleted**.
 
 ![Screenshot of EventType RegistryValueDeleted](../../media/guided-hunting/hunt-specific-events-2.png)
 
->[!NOTE] 
+> [!NOTE] 
 >`EventType` is the equivalent of `ActionType` in the data schema, which users of advanced mode might be more familiar with.
 
 ## Test your query with a smaller sample size
-If you’re still working on your query and would like to see its performance and some sample results quickly, adjust the number of records to return by picking a smaller set through the **Sample size** dropdown menu. 
+If you're still working on your query and would like to see its performance and some sample results quickly, adjust the number of records to return by picking a smaller set through the **Sample size** dropdown menu. 
  
 ![Screenshot of sample size dropdown menu](../../media/guided-hunting/smaller-sample.png)
 

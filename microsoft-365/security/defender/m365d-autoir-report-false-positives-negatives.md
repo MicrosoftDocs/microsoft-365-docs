@@ -16,13 +16,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: how-to
 ms.custom: 
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
+ms.date: 02/17/2021
 ---
 
 # Address false positives or false negatives in Microsoft 365 Defender
@@ -44,7 +45,7 @@ The following sections describe how to perform these tasks.
 
 |Item missed or wrongly detected |Service  |What to do  |
 |---------|---------|---------|
-|- Email message <br/>- Email attachment <br/>- URL in an email message<br/>- URL in an Office file      |[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Submit suspected spam, phish, URLs, and files to Microsoft for scanning](../office-365-security/admin-submission.md)         |
+|- Email message <br/>- Email attachment <br/>- URL in an email message<br/>- URL in an Office file      |[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Submit suspected spam, phish, URLs, and files to Microsoft for scanning](../office-365-security/submissions-admin.md)         |
 |File or app on a device    |[Microsoft Defender for Endpoint](/windows/security/threat-protection)         |[Submit a file to Microsoft for malware analysis](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## Adjust an alert to prevent false positives from recurring

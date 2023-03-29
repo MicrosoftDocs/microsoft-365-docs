@@ -15,8 +15,11 @@ ms.date: 09/03/2018
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Collect update compliance diagnostic data for Microsoft Defender Antivirus assessment
@@ -28,6 +31,9 @@ ms.collection: M365-security-compliance
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender Antivirus Assessment section in the Update Compliance add-in.
+
+> [!NOTE]
+> For performance-specific issues related to Microsoft Defender Antivirus, see: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 
 Before attempting this process, ensure you have read [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md), met all require prerequisites, and taken any other suggested troubleshooting steps.
 
@@ -68,3 +74,4 @@ On at least two devices that are not reporting or showing up in Update Complianc
 ## See also
 
 - [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md)
+- [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)

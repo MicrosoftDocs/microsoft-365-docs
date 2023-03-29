@@ -16,8 +16,11 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Advanced hunting schema - Naming changes
@@ -32,9 +35,9 @@ ms.topic: article
 
 The [advanced hunting schema](advanced-hunting-schema-tables.md) is updated regularly to add new tables and columns. In some cases, existing columns names are renamed or replaced to improve the user experience. Refer to this article to review naming changes that could impact your queries.
 
-Naming changes are automatically applied to queries that are saved in the Defender for Cloud, including queries used by custom detection rules. You don't need to update these queries manually. However, you will need to update the following queries:
+Naming changes are automatically applied to queries that are saved in Microsoft 365 Defender, including queries used by custom detection rules. You don't need to update these queries manually. However, you will need to update the following queries:
 - Queries that are run using the API
-- Queries that are saved elsewhere outside the Defender for Cloud
+- Queries that are saved elsewhere outside Microsoft 365 Defender
 
 ## December 2020
 

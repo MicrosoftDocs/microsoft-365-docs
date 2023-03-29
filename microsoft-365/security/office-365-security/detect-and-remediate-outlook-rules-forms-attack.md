@@ -5,20 +5,20 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
-ms.date: 04/23/2018
+ms.date: 1/31/2023
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
-  - o365_security_incident_response
-  - M365-security-compliance
+  - tier2
+  - m365-security
 
 ms.localizationpriority: medium
 search.appverid:
   - MET150
 description: Learn how to recognize and remediate the Outlook rules and custom forms injections attacks in Office 365
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Detect and Remediate Outlook Rules and Custom Forms Injections Attacks
 
@@ -100,7 +100,7 @@ You can use either of the following methods to confirm the attack:
 
 2. Refer to [Manage email messages by using rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) article for the procedures on how to open the rules interface in Outlook.
 
-3. Look for rules that the user did not create, or any unexpected rules or rules with suspicious names.
+3. Look for rules that the user didn't create, or any unexpected rules or rules with suspicious names.
 
 4. Look in the rule description for rule actions that start and application or refer to an .EXE, .ZIP file or to launching a URL.
 
@@ -126,11 +126,11 @@ The simplest way to verify a rules or custom forms attack is to run the [Get-All
 
 #### Pre-requisites
 
-You will need to have global administrator rights to run the script because the script connects to every mailbox in the tenancy to read the rules and forms.
+You'll need to have global administrator rights to run the script because the script connects to every mailbox in the tenancy to read the rules and forms.
 
-1. Sign in to the machine that you will run the script from with local administrator rights.
+1. Sign in to the machine that you'll run the script from with local administrator rights.
 
-2. Download or copy the Get-AllTenantRulesAndForms.ps1 script from GitHub to a folder from which you will run it. The script will create two date stamped files to this folder, MailboxFormsExport-yyyy-mm-dd.csv, and MailboxRulesExport-yyyy-mm-dd.csv.
+2. Download or copy the Get-AllTenantRulesAndForms.ps1 script from GitHub to a folder from which you'll run it. The script creates two date stamped files to this folder, MailboxFormsExport-yyyy-mm-dd.csv, and MailboxRulesExport-yyyy-mm-dd.csv.
 
 3. Open a PowerShell instance as an administrator and open the folder you saved the script to.
 
@@ -146,7 +146,7 @@ You will need to have global administrator rights to run the script because the 
 
   - **ActionCommand (column G)**: If this column lists an application or any file with .exe or .zip extensions, or an unknown entry that refers to a URL, the rule is likely malicious.
 
-- **MailboxFormsExport-*yyyy-mm-dd*.csv**: In general, the use of custom forms is rare. If you find any in this workbook, you open that user's mailbox and examine the form itself. If your organization did not put it there intentionally, it is likely malicious.
+- **MailboxFormsExport-*yyyy-mm-dd*.csv**: In general, the use of custom forms is rare. If you find any in this workbook, you open that user's mailbox and examine the form itself. If your organization didn't put it there intentionally, it's likely malicious.
 
 ## How to stop and remediate the Outlook Rules and Forms attack
 
@@ -154,15 +154,15 @@ If you find any evidence of either of these attacks, remediation is simple, just
 
 ### Using Outlook
 
-1. Identify all the devices that the user has used with Outlook. They will all need to be cleaned of potential malware. Do not allow the user to sign on and use email until all the devices are cleaned.
+1. Identify all the devices that the user has used with Outlook. They'll all need to be cleaned of potential malware. Don't allow the user to sign on and use email until all the devices are cleaned.
 
 2. Follow the steps in [Delete a rule](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f) for each device.
 
-3. If you are unsure about the presence of other malware, you can format and reinstall all the software on the device. For mobile devices, you can follow the manufacturers steps to reset the device to the factory image.
+3. If you're unsure about the presence of other malware, you can format and reinstall all the software on the device. For mobile devices, you can follow the manufacturers steps to reset the device to the factory image.
 
 4. Install the most up-to-date versions of Outlook. Remember that the current version of Outlook blocks both types of this attack by default.
 
-5. Once all offline copies of the mailbox have been removed, reset the user's password (use a high quality one) and follow the steps in [Setup multi-factor authentication for users](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) if MFA has not already been enabled. This ensures that the user's credentials are not exposed via other means (such as phishing or password re-use).
+5. Once all offline copies of the mailbox have been removed, reset the user's password (use a high quality one) and follow the steps in [Setup multi-factor authentication for users](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) if MFA hasn't already been enabled. This ensures that the user's credentials aren't exposed via other means (such as phishing or password re-use).
 
 ### Using PowerShell
 
@@ -188,11 +188,11 @@ There are two Exchange PowerShell cmdlets you can use to remove or disable dange
 
 ### First: protect your accounts
 
-The Rules and Forms exploits are only used by an attacker after they have stolen or breached one of your user's accounts. So, your first step to preventing the use of these exploits against your organization is to aggressively protect your user accounts. Some of the most common ways that accounts are breached are through phishing or [password spray attacks](https://www.microsoft.com/security/blog/2020/04/23/protecting-organization-password-spray-attacks/).
+The Rules and Forms exploits are only used by an attacker after they've stolen or breached one of your user's accounts. So, your first step to preventing the use of these exploits against your organization is to aggressively protect your user accounts. Some of the most common ways that accounts are breached are through phishing or [password spray attacks](https://www.microsoft.com/security/blog/2020/04/23/protecting-organization-password-spray-attacks/).
 
 The best way to protect your user accounts, and especially your administrator accounts, is to [set up multi-factor authentication for users](../../admin/security-and-compliance/set-up-multi-factor-authentication.md). You should also:
 
-- Monitor how your user accounts are [accessed and used](/azure/active-directory/active-directory-view-access-usage-reports). You may not prevent the initial breach, but you will shorten the duration and the impact of the breach by detecting it sooner. You can use these [Office 365 Cloud App Security policies](/cloud-app-security/what-is-cloud-app-security) to monitor you accounts and alert on unusual activity:
+- Monitor how your user accounts are [accessed and used](/azure/active-directory/active-directory-view-access-usage-reports). You may not prevent the initial breach, but you'll shorten the duration and the impact of the breach by detecting it sooner. You can use these [Office 365 Cloud App Security policies](/cloud-app-security/what-is-cloud-app-security) to monitor you accounts and alert on unusual activity:
 
   - **Multiple failed login attempts**: This policy profiles your environment and triggers alerts when users perform multiple failed login activities in a single session with respect to the learned baseline, which could indicate an attempted breach.
 
@@ -204,7 +204,7 @@ The best way to protect your user accounts, and especially your administrator ac
 
 ### Second: Keep your Outlook clients current
 
-Fully updated and patched versions of Outlook 2013, and 2016 disable the "Start Application" rule/form action by default. This will ensure that even if an attacker breaches the account, the rule and form actions will be blocked. You can install the latest updates and security patches by following the steps in [Install Office updates](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5).
+Fully updated and patched versions of Outlook 2013, and 2016 disable the "Start Application" rule/form action by default. This ensures that even if an attacker breaches the account, the rule and form actions will be blocked. You can install the latest updates and security patches by following the steps in [Install Office updates](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5).
 
 Here are the patch versions for your Outlook 2013 and 2016 clients:
 
@@ -220,7 +220,7 @@ For more information on the individual security patches, see:
 
 ### Third: Monitor your Outlook clients
 
-Note that even with the patches and updates installed, it is possible for an attacker to change the local machine configuration to re-enable the "Start Application" behavior. You can use [Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm/) to monitor and enforce local machine policies on your clients.
+Note that even with the patches and updates installed, it's possible for an attacker to change the local machine configuration to re-enable the "Start Application" behavior. You can use [Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm/) to monitor and enforce local machine policies on your clients.
 
 You can see if "Start Application" has been re-enabled through an override in the registry by using the information in [How to view the system registry by using 64-bit versions of Windows](https://support.microsoft.com/help/305097). Check these subkeys:
 
@@ -228,19 +228,9 @@ You can see if "Start Application" has been re-enabled through an override in th
 
 - **Outlook 2013**: `HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
-Look for the key EnableUnsafeClientMailRules. If it is there and is set to 1, the Outlook security patch has been overridden and the computer is vulnerable to the Form/Rules attack. If the value is 0, the "Start Application" action is disabled. If the updated and patched version of Outlook is installed and this registry key is not present, then a system is not vulnerable to these attacks.
+Look for the key EnableUnsafeClientMailRules. If it's there and is set to 1, the Outlook security patch has been overridden and the computer is vulnerable to the Form/Rules attack. If the value is 0, the "Start Application" action is disabled. If the updated and patched version of Outlook is installed and this registry key isn't present, then a system isn't vulnerable to these attacks.
 
-Customers with on-premises Exchange installations should consider blocking older versions of Outlook that do not have patches available. Details on this process can be found in the article [Configure Outlook client blocking](/exchange/configure-outlook-client-blocking-exchange-2013-help).
-
-## Secure Microsoft 365 like a cybersecurity pro
-
-Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users. Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.
-
-- Tasks to accomplish in the first 30 days. These have immediate effect and are low-impact to your users.
-
-- Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
-
-- Beyond 90 days. These enhancements build in your first 90 days work.
+Customers with on-premises Exchange installations should consider blocking older versions of Outlook that don't have patches available. Details on this process can be found in the article [Configure Outlook client blocking](/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
 ## See also:
 

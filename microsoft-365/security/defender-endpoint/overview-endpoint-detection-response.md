@@ -12,9 +12,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Overview of endpoint detection and response
@@ -47,7 +51,6 @@ The response capabilities give you the power to promptly remediate threats by ac
 
 ## Related topics
 
-- [Security operations dashboard](security-operations-dashboard.md)
 - [Incidents queue](view-incidents-queue.md)
 - [Alerts queue](alerts-queue.md)
 - [Devices list](machines-view-overview.md)

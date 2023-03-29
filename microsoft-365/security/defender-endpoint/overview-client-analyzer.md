@@ -13,9 +13,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
+search.appverid: met150
+ms.date: 03/23/2021
 ---
 
 # Troubleshoot sensor health using Microsoft Defender for Endpoint Client Analyzer

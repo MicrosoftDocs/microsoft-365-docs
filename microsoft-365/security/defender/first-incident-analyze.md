@@ -1,7 +1,7 @@
 ---
 title: Step 1. Triage and analyze your first incident
 description: How to triage and begin the analysis of your first incident in Microsoft 365 Defender.
-keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
+keywords: incidents, alerts, attack story, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -16,14 +16,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-firstincident
   - highpri
+  - tier1
 ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
+ms.date: 04/20/2021
 ---
+
 # Step 1. Triage and analyze your first incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -42,7 +45,7 @@ Microsoft 365 Defender receives alerts and events from multiple Microsoft securi
 - [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) is an endpoint detection and response solution (EDR) that uses Microsoft Defender antivirus and cloud-enabled advanced threat protection using Microsoft Security Graph. Defender for Endpoint is a unified platform for preventative protection, post-breach detection, automated investigation, and response. It protects endpoints from cyberthreats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
 - [Microsoft Defender for Identity](/defender-for-identity/what-is) is a cloud-based security solution that uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/) acts as a gatekeeper to broker access in real time between your enterprise users and the cloud resources they use, wherever your users are located and regardless of the device they are using.
-- [Microsoft Defender for Office 365](../office-365-security/overview.md) safeguards your organization against malicious threats in email messages, links (URLs), and collaboration tools.
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) safeguards your organization against malicious threats in email messages, links (URLs), and collaboration tools.
 - [Azure Security Center](/azure/security-center/security-center-introduction) is a unified infrastructure security management system that strengthens the security posture of your data centers and provides advanced threat protection across your hybrid workloads in the cloud and on premises.
 
 
@@ -97,9 +100,9 @@ There are multiple ways to read and analyze data using Microsoft 365 Defender bu
 
 Here's an example:
 
-1. Once triage priority has been determined, an analyst begins an in-depth analysis by selecting the incident name. This page brings up the **Incident Summary** where data is displayed in tabs to assist with the analysis. Under the **Alerts** tab, the types of alerts are displayed. Analysts can click on each alert to drill down into the respective detection source.
+1. Once triage priority has been determined, an analyst begins an in-depth analysis by selecting the incident name. This page brings up the **Attack story** where data is displayed in tabs to assist with the analysis. Under the **Alerts story** tab, the types of alerts are displayed. Analysts can click on each alert to drill down into the respective detection source.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="The Summary tab of an incident" lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Screenshot that shows the attack story of an incident." lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
 
     For a quick guide about which domain each detection source covers, review the [Detect](#detection-by-microsoft-365-defender) section of this article.
 

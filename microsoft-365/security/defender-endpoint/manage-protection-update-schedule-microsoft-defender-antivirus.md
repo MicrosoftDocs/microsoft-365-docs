@@ -8,20 +8,23 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.topic: article
+ms.date: 12/20/2022
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ---
 
 # Manage the schedule for when protection updates should be downloaded and applied
 
 > [!IMPORTANT]
-> Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it is recommended to reboot machines after applying update. For more information, see [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
+> Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it is recommended to reboot machines after applying update. For more information, see [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions).
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -43,14 +46,15 @@ You can also randomize the times when each endpoint checks and downloads protect
 
 ## Use Configuration Manager to schedule protection updates
 
-1. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
+1. On your Microsoft Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
 
 2. Go to the **Security intelligence updates** section.
 
 3. To check and download updates at a certain time:
-      1. Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to **0**.
-      2. Set **Check for Endpoint Protection security intelligence updates daily at...** to the time when updates should be checked.
-      3
+
+   - Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to **0**.
+   - Set **Check for Endpoint Protection security intelligence updates daily at...** to the time when updates should be checked.
+      
 4. To check and download updates on a continual interval, Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to the number of hours that should occur between updates.
 
 5. [Deploy the updated policy as usual](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
@@ -67,13 +71,13 @@ Enabling these settings will override that default.
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Signature Updates** and configure the following settings:
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates** and configure the following settings:
 
     1. Double-click the **Specify the day of the week to check for security intelligence updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
 
-    2. Double-click the **Specify the interval to check for definition updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
+    2. Double-click the **Specify the interval to check for security intelligence updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
 
-    3. Double-click the **Specify the time to check for definition updates** setting and set the option to **Enabled**. Enter the time when updates should be checked. The time is based on the local time of the endpoint. Click **OK**.
+    3. Double-click the **Specify the time to check for security intelligence updates** setting and set the option to **Enabled**. Enter the time when updates should be checked. The time is based on the local time of the endpoint. Click **OK**.
 
 ## Use PowerShell cmdlets to schedule protection updates
 
@@ -114,7 +118,7 @@ See the following for more information and allowed parameters:
 ## Related articles
 
 - [Deploy Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
-- [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md)
 - [Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)

@@ -4,11 +4,13 @@ description: Learn how to overcome security challenges in Microsoft Enterprise a
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
+ms.date: 05/01/2020
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- highpri 
 - M365-identity-device-management
 - M365-security-compliance
 - M365solutions

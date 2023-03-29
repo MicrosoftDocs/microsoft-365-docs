@@ -16,12 +16,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-scenario
   - m365solution-evalutatemtp
   - zerotrust-solution
   - highpri
+  - tier1
 ms.topic: conceptual
+ms.date: 05/27/2021
 ---
 
 # Step 3. Enable and pilot Microsoft Defender for Office 365

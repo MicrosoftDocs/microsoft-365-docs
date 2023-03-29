@@ -26,6 +26,8 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">
 
 This topic lists the data-governance recommendations you might see and describes what content is detected to trigger each one.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Clean up voicemail
 
 This recommendation appears when email messages identified as the message type 'voicemail' are detected in users' mailboxes. Learn more about [message properties in Exchange](/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).

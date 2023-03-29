@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 10/12/2020
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -27,6 +28,8 @@ description: Learn how to define and manage alerts for data loss prevention poli
 
 Microsoft Purview Data Loss Prevention (DLP) policies can take protective actions to prevent unintentional sharing of sensitive items. When an action is taken on a sensitive item, you can be notified by configuring alerts for DLP. This article shows you how to define rich alert policies that are linked to your data loss prevention (DLP) policies. You'll see how to use the
 new DLP alert management dashboard in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> to view alerts, events, and associated metadata for DLP policy violations.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Features
 
@@ -156,3 +159,66 @@ To work with the DLP alert management dashboard:
 
     -   To see the history of workflow management, choose **Management log**.
     -   After you take the required action for the alert, set the status of the alert to **Resolved**.
+
+### Other matched conditions (preview)
+
+Microsoft Purview supports showing matched conditions in a DLP event to reveal the exact cause for a flagged DLP policy. This information will show up in:
+
+- DLP Alerts console
+- [Activity explorer](data-classification-activity-explorer.md#get-started-with-activity-explorer)
+- [Microsoft Defender for Business portal](../security/defender-business/mdb-view-manage-incidents.md#view-and-manage-incidents-in-microsoft-defender-for-business)
+
+In the **Events** tab open **Details** to see **Other matched conditions**.
+
+#### Prerequisites
+
+- Must be running Windows 10 x64 build 1809 or later or Windows 11.
+    - See [March 21, 2023—KB5023773 (OS Builds 19042.2788, 19044.2788, and 19045.2788) Preview](https://support.microsoft.com/en-us/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23) for required minimum Windows Operating System builds.
+- Matched conditions data is available for valid E3 and E5 license holders
+- Enable [Auditing](audit-log-enable-disable.md#turn-auditing-on-or-off).
+- Enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
+
+Matched events information is supported for these conditions
+
+|Condition|Exchange|Sharepoint|Teams|Endpoint|
+|-----|-----|-----|-----|-----|
+|Sender is|Yes|No|Yes|No|
+|Sender domain is|Yes|No|Yes|No|
+|Sender address contains words|Yes|No|No|No|
+|Sender address matches patterns|Yes|No|No|No|
+|Sender is a member of|Yes|No|No|No|
+|Sender IP address is|Yes|No|No|No|
+|Has sender overriden the policy tip|Yes|No|No|No|
+|SenderAdAttribute Contains words|Yes|No|No|No|
+|SenderAdAttribute Matches patterns|Yes|No|No|No|
+|Recipient is|Yes|No|Yes|No|
+|Recipient domain is|Yes|No|Yes|No|
+|Recipient address contains words|Yes|No|No|No|
+|Recipient address matches patterns|Yes|No|No|No|
+|Recipient is a member of|Yes|No|No|No|
+|RecipientAdAttribute Contains words |Yes|No|No|No|
+|RecipientAdAttribute Matches patterns|Yes|No|No|No|
+|Document is password protected|Yes|No|No|No|
+|Document could not be scanned|Yes|No|No|No|
+|Document did not complete scanning|Yes|No|No|No|
+|Document name contains words|Yes|Yes|No|No|
+|Document name matches patterns|Yes|No|No|No|
+|Document property is|Yes|Yes|No|No|
+|Document size over|Yes|Yes|No|No|
+|Document content contains words|Yes|No|No|No|
+|Document content matches patterns|Yes|No|No|No|
+|Document type is|No|No|No|Yes|
+|Document extension is|Yes|Yes|No|Yes|
+|Content is shared from M365|Yes|Yes|Yes|No|
+|Content is received from|Yes|No|No|No|
+|Content character set contains words|Yes|No|No|No|
+|Subject contains words|Yes|No|No|No|
+|Subject matches patterns|Yes|No|No|No|
+|Subject or body contains words|Yes|No|No|No|
+|Subject or body matches patterns|Yes|No|No|No|
+|Header contains words|Yes|No|No|No|
+|Header matches patterns|Yes|No|No|No|
+|Message size over|Yes|No|No|No|
+|Message type is|Yes|No|No|No|
+|Message importance is|Yes|No|No|No|
+

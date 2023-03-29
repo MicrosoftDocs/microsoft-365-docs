@@ -3,11 +3,14 @@ title: "Microsoft 365 admin center email apps usage reports"
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
@@ -24,6 +27,9 @@ description: "Learn how to get an email apps usage report to find out how many e
 # Microsoft 365 Reports in the admin center - Email apps usage
 
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the email apps usage report, you can see how many email apps are connecting to Exchange Online. You can also see the version information of Outlook apps that users are using, which will allow you to follow up with those who are using unsupported versions to install supported versions of Outlook.
+
+> [!NOTE] 
+> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
   
 ## How to get to the email apps report
 
@@ -35,7 +41,7 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
 
 You can get a view into email apps activity by looking at the **Users** and **Clients** charts. 
   
-![Email clients used.](../../media/d78af7db-2b41-4d37-8b6e-bc7e47edd1dd.png)
+![Email clients used.](../../media/email-apps-report.png)
 
 The **Email apps usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated). The data in each report usually covers up to the last 24 to 48 hours.
 

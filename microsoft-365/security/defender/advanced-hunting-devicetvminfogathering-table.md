@@ -16,8 +16,11 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.date: 06/22/2022
 ---
 
 # DeviceTvmInfoGathering
@@ -29,7 +32,7 @@ ms.topic: article
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The `DeviceTvmInfoGathering` table in the advanced hunting schema contains [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) assessment events including the status of various configurations and attack surface area states of devices. You can use this table to hunt for assessment events related to mitigation for zero-days, posture assessment for emerging threats supporting threat analytics mitigation status reports, enabled TLS protocol versions on servers, and more. Use this reference to construct queries that return information from the table.

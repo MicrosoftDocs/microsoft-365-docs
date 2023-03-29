@@ -7,14 +7,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
+ms.date: 04/08/2021
 ---
 
 # Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint

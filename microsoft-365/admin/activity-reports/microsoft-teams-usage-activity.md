@@ -1,14 +1,17 @@
 ---
 title: "Microsoft 365 admin center Teams usage activity reports"
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
+ms.date: 03/25/2022
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -24,6 +27,9 @@ description: "The Teams usage report shows you how users are communicating and c
 # Microsoft 365 Reports in the admin center - Microsoft Teams usage activity
 
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
+
+> [!NOTE]
+> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
 
 The brand-new **Teams usage report** gives you an overview of the usage activity in Teams, including the number of active users, channels and messages so you can quickly see how many users across your organization are using Teams to communicate and collaborate.  It also includes other Teams specific activities, such as the number of active guests, meetings, and messages.
 

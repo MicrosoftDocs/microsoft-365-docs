@@ -2,24 +2,26 @@
 title: Use attack surface reduction rules to prevent malware infection
 description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect devices with malware.
 keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
-ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
-ms.author: v-jweston
+ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
-ms.custom: 
+ms.custom:
 - asr
 - admindeeplinkDEFENDER
-ms.technology: mde
-ms.topic: article
-ms.collection: 
-- m365initiative-m365-defender
-- M365-security-compliance
+ms.topic: conceptual
+ms.collection:
+- m365-security
+- tier2
+search.appverid: met150
+ms.date: 1/11/2023
 ---
 
 # Attack surface reduction rules overview
@@ -43,9 +45,15 @@ Attack surface reduction rules target certain software behaviors, such as:
 - Running obfuscated or otherwise suspicious scripts
 - Performing behaviors that apps don't usually initiate during normal day-to-day work
 
-Such software behaviors are sometimes seen in legitimate applications. However, these behaviors are often considered risky because they are commonly abused by attackers through malware. Attack surface reduction rules can constrain software-based risky behaviors and help keep your organization safe.
+Such software behaviors are sometimes seen in legitimate applications. However, these behaviors are often considered risky because they're commonly abused by attackers through malware. Attack surface reduction rules can constrain software-based risky behaviors and help keep your organization safe.
 
-For more information about configuring attack surface reduction rules, see [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
+For a sequential, end-to-end process of how to manage ASR rules, see:
+
+- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## Assess rule impact before deployment
 
@@ -59,7 +67,17 @@ See [Requirements](enable-attack-surface-reduction.md#requirements) in the "Enab
 
 ## Audit mode for evaluation
 
-Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would affect your organization if enabled. Run all rules in audit mode first so you can understand how they affect your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they might perform tasks in ways that seem similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without reducing productivity.
+### Audit mode
+
+Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would affect your organization if enabled. Run all rules in audit mode first so you can understand how they affect your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they might perform tasks in ways that seem similar to malware.
+
+### Exclusions
+
+By monitoring audit data and [adding exclusions](attack-surface-reduction-rules-deployment-test.md) for necessary applications, you can deploy attack surface reduction rules without reducing productivity.
+
+### Per-rule exclusions
+
+For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md).
 
 ## Warn mode for users
 
@@ -84,9 +102,9 @@ Also, make sure [Microsoft Defender Antivirus and antimalware updates](/windows/
 
 For more information and to get your updates, see [Update for Microsoft Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform).
 
-### Cases where warn mode is not supported
+### Cases where warn mode isn't supported
 
-Warn mode isn't supported for three attack surface reduction rules when you configure them in Microsoft Endpoint Manager. (If you use Group Policy to configure your attack surface reduction rules, warn mode is supported.) The three rules that do not support warn mode when you configure them in Microsoft Endpoint Manager are as follows:
+Warn mode isn't supported for three attack surface reduction rules when you configure them in Microsoft Intune. (If you use Group Policy to configure your attack surface reduction rules, warn mode is supported.) The three rules that don't support warn mode when you configure them in Microsoft Intune are as follows:
 
 - [Block JavaScript or VBScript from launching downloaded executable content](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`)
 - [Block persistence through WMI event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`)
@@ -102,7 +120,7 @@ Also, when certain attack surface reduction rules are triggered, alerts are gene
 
 Notifications and any alerts that are generated can be viewed in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-For specific details about notification and alert functionality, see: [Per rule alert and notification details](attack-surface-reduction-rules-reference.md#per-rule-alert-and-notification-details), in the article **Attack surface reduction rules reference**.
+For specific details about notification and alert functionality, see: [Per rule alert and notification details](attack-surface-reduction-rules-reference.md#per-asr-rule-alert-and-notification-details), in the article **Attack surface reduction rules reference**.
 
 ## Advanced hunting and attack surface reduction events
 
@@ -123,8 +141,8 @@ You can set attack surface reduction rules for devices that are running any of t
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh801901(v=ws.11))
 
-  >[!NOTE]
-  >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work.
+  > [!NOTE]
+  > Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work.
 
 Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), if you have Windows E5, you get advanced management capabilities. The advanced capabilities - available only in Windows E5 - include:
 
@@ -137,9 +155,9 @@ These advanced capabilities aren't available with a Windows Professional or Wind
 
 Defender for Endpoint provides detailed reporting for events and blocks as part of alert investigation scenarios.
 
-You can query Defender for Endpoint data in [Microsoft 365 Defender](microsoft-defender-endpoint.md) by using [advanced hunting](/microsoft-365/security/defender/advanced-hunting-query-language). 
+You can query Defender for Endpoint data in [Microsoft 365 Defender](microsoft-defender-endpoint.md) by using [advanced hunting](/microsoft-365/security/defender/advanced-hunting-query-language).
 
-Here is an example query:
+Here's an example query:
 
 ```kusto
 DeviceEvents
@@ -170,8 +188,20 @@ You can create a custom view that filters events to only show the following even
 
 The "engine version" listed for attack surface reduction events in the event log, is generated by Defender for Endpoint, not by the operating system. Defender for Endpoint is integrated with Windows 10 and Windows 11, so this feature works on all devices with Windows 10 or Windows 11 installed.
 
+## See also
+
+- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+
+
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
+>
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

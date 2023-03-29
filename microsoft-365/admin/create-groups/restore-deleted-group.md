@@ -1,15 +1,18 @@
 ---
 title: "Restore a deleted Microsoft 365 group"
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -78,7 +81,7 @@ If you are a global administrator or a groups administrator, you can restore a d
 
 ## Got questions about Microsoft 365 Groups?
 
-Visit the [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) to post questions and participate in conversations about Microsoft 365 groups. 
+Visit the [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-groups/bd-p/Microsoft365Groups) to post questions and participate in conversations about Microsoft 365 groups. 
   
 ## Related content
 

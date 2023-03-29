@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom:

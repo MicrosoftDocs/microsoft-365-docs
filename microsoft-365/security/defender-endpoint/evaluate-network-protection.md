@@ -14,8 +14,10 @@ ms.reviewer:
 manager: dansimp
 ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
-ms.date:
+- m365-security
+- tier2
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Evaluate network protection

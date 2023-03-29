@@ -2,14 +2,17 @@
 title: "Connect your DNS records at Cloudflare to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -257,7 +260,7 @@ Only select this option if your organization uses Skype for Business for online 
     |Type|Name|Service|Protocol|TTL|Priority|Weight|Port|Target|
     |---|---|---|---|---|---|---|---|---|
     |SRV|Use your *domain_name*; for example, contoso.com|_sip|TLS|30 minutes|100|1|443|sipfed.online.lync.com|
-    |SRV|_sipfederationtls|TCP|Use your *domain_name*; for example, contoso.com|30 minutes|100|1|5061|sipfed.online.lync.com|
+    |SRV|Use your *domain_name*; for example, contoso.com|_sipfederationtls|TCP|30 minutes|100|1|5061|sipfed.online.lync.com|
 
 1. Select **Save**.
 
@@ -288,8 +291,8 @@ Only select this option if your organization uses Skype for Business for online 
 
     |Type|Name|Target|TTL|
     |---|---|---|---|
-    |CNAME|sip|sipdir.online.lync.com. <br/> **This value MUST end with a period (.)**|1 Hour|
-    |CNAME|lyncdiscover|webdir.online.lync.com. <br/> **This value MUST end with a period (.)**|1 Hour|
+    |CNAME|sip|sipdir.online.lync.com <br/>|1 Hour|
+    |CNAME|lyncdiscover|webdir.online.lync.com <br/>|1 Hour|
 
 1. Select the **Save**.
 
@@ -324,8 +327,8 @@ This service helps you secure and remotely manage mobile devices that connect to
 
     |Type|Name|Target|TTL|
     |---|---|---|---|
-    |CNAME|enterpriseregistration|enterpriseregistration.windows.net. <br/> **This value MUST end with a period (.)**|1 Hour|
-    |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com. <br/> **This value MUST end with a period (.)**|1 Hour|
+    |CNAME|enterpriseregistration|enterpriseregistration.windows.net <br/>|1 Hour|
+    |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com <br/>|1 Hour|
 
 1. Select **Save**.
 

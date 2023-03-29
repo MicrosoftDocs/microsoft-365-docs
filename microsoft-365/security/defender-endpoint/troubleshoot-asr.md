@@ -8,15 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: Dansimp
+ms.author: dansimp
 ms.date: 03/27/2019
 ms.reviewer:
 manager: dansimp
 ms.custom: asr
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Troubleshoot attack surface reduction rules
@@ -45,7 +48,7 @@ There are four steps to troubleshooting these problems:
 
 ## Confirm prerequisites
 
-Attack surface reduction rules will only work on devices with the following conditions:
+Attack surface reduction rules only work on devices with the following conditions:
 
 - Endpoints are running Windows 10 Enterprise, version 1709 (also known as the Fall Creators Update).
 
@@ -89,7 +92,7 @@ To add an exclusion, see [Customize Attack surface reduction](attack-surface-red
 
 ## Report a false positive or false negative
 
-Use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/filesubmission) to report a false negative or false positive for network protection. With a Windows E5 subscription, you can also [provide a link to any associated alert](alerts-queue.md).
+Use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/support/report-exploit-guard) to report a false negative or false positive for network protection. With a Windows E5 subscription, you can also [provide a link to any associated alert](alerts-queue.md).
 
 ## Collect diagnostic data for file submissions
 

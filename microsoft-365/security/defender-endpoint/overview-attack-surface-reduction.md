@@ -7,8 +7,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: jweston-1
-ms.author: v-jweston
+author: Dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -16,9 +16,10 @@ ms.custom: asr
 ms.topic: conceptual
 ms.subservice: mde
 ms.collection: 
-- m365initiative-m365-defender
-- M365-security-compliance
-ms.date: 05/16/2022
+- m365-security
+- tier2
+ms.date: 01/16/2023
+search.appverid: met150
 ---
 
 # Understand and use attack surface reduction capabilities
@@ -75,7 +76,8 @@ To configure attack surface reduction in your environment, follow these steps:
 > [!TIP]
 > In most cases, when you configure attack surface reduction capabilities, you can choose from among several methods:
 >
-> - Microsoft Endpoint Manager (which now includes Microsoft Intune and Microsoft Endpoint Configuration Manager)
+> - Microsoft Intune
+> - Microsoft Configuration Manager
 > - Group Policy
 > - PowerShell cmdlets
 
@@ -104,7 +106,7 @@ You can enable audit mode using Group Policy, PowerShell, and configuration serv
 | Audit options | How to enable audit mode | How to view events |
 |---|---|---|
 | Audit applies to all events | [Enable controlled folder access](enable-controlled-folders.md) | [Controlled folder access events](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer) |
-| Audit applies to individual rules | [Step 1: Test ASR rules using Audit mode](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
+| Audit applies to individual rules | [Step 1: Test ASR rules using Audit mode](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal) |
 | Audit applies to all events | [Enable network protection](enable-network-protection.md) | [Network protection events](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | Audit applies to individual mitigations | [Enable exploit protection](enable-exploit-protection.md) | [Exploit protection events](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
@@ -277,7 +279,7 @@ You can access these events in Windows Event viewer:
 |Attack surface reduction|Windows Defender (Operational)|1122|Event when rule fires in Audit-mode|
 |Attack surface reduction|Windows Defender (Operational)|1121|Event when rule fires in Block-mode|
 
->[!NOTE]
+> [!NOTE]
 > From the user's perspective, ASR Warn mode notifications are made as a Windows Toast Notification for attack surface reduction rules.
 >
 > In ASR, Network Protection provides only Audit and Block modes.

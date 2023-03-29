@@ -1,14 +1,16 @@
 ---
 title: "End of lifecycle options for groups, teams, and Yammer"
 ms.reviewer: mmclean
+ms.date: 08/12/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom: 

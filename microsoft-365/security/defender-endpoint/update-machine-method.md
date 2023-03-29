@@ -11,10 +11,14 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
+ms.date: 06/11/2021
 ---
 
 # Update machine 
@@ -57,6 +61,8 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 > When obtaining a token using user credentials:
 > - The user needs to have at least the following role permission: 'Alerts investigation'. For more information, see [Create and manage roles](user-roles.md).
 > - The user needs to have access to the device associated with the alert, based on device group settings. For more information, see [Create and manage device groups](machine-groups.md).
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## HTTP request
 
@@ -75,7 +81,7 @@ Content-Type|String|application/json. **Required**.
 
 In the request body, supply the values for the relevant fields that should be updated.
 
-Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
+Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 
 For best performance, you shouldn't include existing values that haven't change.
 
@@ -90,7 +96,7 @@ If successful, this method returns 200 OK, and the [machine](machine.md) entity 
 
 If machine tags collection in body doesn't contain existing machine tags - replaces all tags with the tags provided in the request body.
 
-If machine with the specified ID was not found - 404 Not Found.
+If machine with the specified ID wasn't found - 404 Not Found.
 
 ## Example
 

@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: 
 manager: samanro
-ms.topic: article
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -14,9 +14,12 @@ ms.collection:
   - M365-collaboration
   - Teams_ITAdmin_FLW
   - m365-frontline
+  - highpri
+  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 11/30/2022
 ---
 
 # Changing from a Microsoft 365 E plan to a Microsoft 365 F plan
@@ -34,7 +37,7 @@ Start by getting familiar with the service and feature differences between the p
 Some key differences include:
 
 - F plans don’t include Office desktop apps or the Outlook desktop app.
-- F plans are limited to devices with integrated screens smaller than 10.1 inches on Office mobile apps.
+- F plans are limited to devices with integrated screens smaller than 10.9 inches on Office mobile apps.
 - F plans [pin frontline worker apps](pin-teams-apps-based-on-license.md) like Walkie Talkie, Tasks, Shifts, and Approvals by default in Microsoft Teams.
 
 In this section, we've included more information about these key differences and highlighted some additional differences to pay attention to. Keep in mind that this isn’t a comprehensive list. To learn more:
@@ -52,7 +55,7 @@ Office desktop apps aren't included in F3 and F1 plans. Your frontline workers c
 |Office for the web (Word, Excel, OneNote, PowerPoint)|Yes|Yes|Read-only|
 |Office mobile apps (Word, Excel, PowerPoint, Outlook, OneNote)|Yes|Yes&sup1;|Read-only|
 
-&sup1;Editing files supported on devices with integrated screens less than 10.1 inches.
+&sup1;Editing files supported on devices with integrated screens less than 10.9 inches.
 
 #### Office for the web
 
@@ -210,7 +213,7 @@ For more information, see [Back up data before switching plans](/microsoft-365/c
 
 You can use the Microsoft 365 admin center to manually change plans or a scripted approach through PowerShell cmdlets. Whichever method you choose, it's important to complete the license change assignment in one operation. In other words, remove an existing E license and replace it by assigning an F license in the same operation.
 
-Avoid removing an existing license for a user and then reassigning a new one at a later point in time. Doing this can impact a user's data. To learn more, see [What happens to a user's data when you remove their license?](/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide#what-happens-to-a-users-data-when-you-remove-their-license).
+Avoid removing an existing license for a user and then reassigning a new one at a later point in time. Doing this can impact a user's data. To learn more, see [What happens to a user's data when you remove their license?](/microsoft-365/admin/manage/remove-licenses-from-users#what-happens-to-a-users-data-when-you-remove-their-license).
 
 For step-by-step guidance on how to change plans in the Microsoft admin center, see [Manually change Microsoft plans](/microsoft-365/commerce/subscriptions/change-plans-manually).
 

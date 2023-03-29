@@ -11,9 +11,13 @@ author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
+ms.date: 04/07/2021
 ---
 
 # Deploy Defender for Endpoint on Linux with Chef
@@ -21,6 +25,8 @@ ms.subservice: mde
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+[!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../../includes/support.md)]
 
 Before you begin: Install unzip if it's not already installed.
 

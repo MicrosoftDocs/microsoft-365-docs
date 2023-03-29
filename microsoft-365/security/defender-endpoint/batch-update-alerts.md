@@ -2,7 +2,8 @@
 title: Batch Update alert entities API
 description: Learn how to update Microsoft Defender for Endpoint alerts in a batch by using this API. You can update the status, determination, classification, and assignedTo properties.
 keywords: apis, graph api, supported apis, get, alert, information, id
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +12,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection:
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.custom: api
+search.appverid: met150
+ms.date: 03/15/2021
 ---
 
 # Batch update alerts
@@ -22,16 +26,15 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** 
+**Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## API description
 
@@ -43,7 +46,7 @@ Updatable properties are: `status`, `determination`, `classification` and `assig
 
 ## Limitations
 
-1. You can update alerts that are available in the API. See [List Alerts](get-alerts.md) for more information.
+1. You can update alerts that are available in the API. For more information, see [List Alerts](get-alerts.md).
 2. Rate limitations for this API are 10 calls per minute and 500 calls per hour.
 
 ## Permissions
@@ -58,8 +61,10 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'Alerts investigation' (See [Create and manage roles](user-roles.md) for more information)
-> - The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'Alerts investigation'. For more information, see [Create and manage roles](user-roles.md).
+> - The user needs to have access to the device associated with the alert, based on device group settings. For more information, see [Create and manage device groups](machine-groups.md).
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## HTTP request
 
@@ -78,7 +83,7 @@ Content-Type | String | application/json. **Required**.
 
 In the request body, supply the IDs of the alerts to be updated and the values of the relevant fields that you wish to update for these alerts.
 
-Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
+Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 
 For best performance you shouldn't include existing values that haven't changed.
 
@@ -87,12 +92,12 @@ Property | Type | Description
 alertIds | List&lt;String&gt;| A list of the IDs of the alerts to be updated. **Required**
 status | String | Specifies the updated status of the specified alerts. The property values are: 'New', 'InProgress' and 'Resolved'.
 assignedTo | String | Owner of the specified alerts
-classification | String | Specifies the specification of the specified alerts. The property values are: 'True positive', 'Informational, expected activity' and 'False positive'.
-determination | String | Specifies the determination of the specified alerts. The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+classification | String | Specifies the specification of the specified alerts. The property values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.
+determination | String | Specifies the determination of the specified alerts. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).
 comment | String | Comment to be added to the specified alerts.
 
->[!NOTE]
->Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
+> [!NOTE]
+> Around August 29, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ## Response
 
@@ -102,7 +107,7 @@ If successful, this method returns 200 OK, with an empty response body.
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/alerts/batchUpdate

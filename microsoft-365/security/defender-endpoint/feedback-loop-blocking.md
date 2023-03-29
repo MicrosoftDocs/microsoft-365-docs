@@ -8,14 +8,18 @@ ms.author: deniseb
 manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom: 
   - next-gen
   - edr
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Feedback-loop blocking

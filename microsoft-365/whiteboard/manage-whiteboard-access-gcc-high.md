@@ -4,15 +4,15 @@ ms.author: v-jdeweese
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
+ms.date: 05/05/2022
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to enable, disable, and manage Whiteboard data.
-
 ---
 
 # Manage access to Microsoft Whiteboard for GCC High environments
@@ -72,7 +72,3 @@ To show or hide Whiteboard in meetings, see [Meeting policy settings](/microsoft
 [Manage sharing for Whiteboard - GCC High](manage-sharing-gcc-high.md)
 
 [Manage clients for Whiteboard - GCC High](manage-clients-gcc-high.md)
-
-
-
-

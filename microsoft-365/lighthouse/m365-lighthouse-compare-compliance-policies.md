@@ -4,12 +4,15 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
+ms.date: 01/21/2022
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -25,7 +28,7 @@ Microsoft 365 Lighthouse lets you view compliance policies across your tenants i
 
 ## Before you begin
 
-Make sure devices have a Microsoft Intune license and are enrolled in Microsoft Endpoint Manager (MEM).
+Make sure devices have a Microsoft Intune license and are enrolled in Microsoft Intune.
 
 ## Compare policy settings
 
@@ -54,7 +57,7 @@ You can filter the results to see **Settings that differ**, **Settings that matc
 
 4. In the policy details pane, select **View this policy in Microsoft Endpoint Manager**.
 
-5. In MEM, edit the policy settings as needed.
+5. In the Microsoft Intune admin center, edit the policy settings as needed.
 
 ## Next steps
 

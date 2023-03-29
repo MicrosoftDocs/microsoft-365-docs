@@ -6,13 +6,16 @@ author: samanro
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-collaboration
 - M365-security-compliance
 ms.custom:
 f1.keywords: NOCSH
+ms.date: 09/22/2022
+
 ---
 
 # Microsoft 365 productivity illustrations
@@ -25,6 +28,17 @@ The logical architecture of productivity services in Microsoft 365, leading with
 | Item | Description |
 |:-----|:-----|
 |[![Teams logical architecture poster.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Updated January 2021   |Microsoft provides a suite of productivity services that work together to provide collaboration experiences with data governance, security, and compliance capabilities. <br/> <br/>This series of illustrations provides a view into the logical architecture of productivity services for enterprise architects, leading with Microsoft Teams.|
+
+## Microsoft 365 for frontline workers scenarios
+Microsoft 365 for frontline workers can help you connect and engage your workforce, enhance workforce management, and increase operational efficiency. You can use the capabilities included with Microsoft 365 for frontline workers, from Microsoft Teams, to SharePoint, Viva Connections, Yammer, and the Power Platform, or add in solutions from our partners in the digital ecosystem to connect with existing systems or create custom solutions for your business.
+
+Use the following posters to start envisioning what your organization can do with Microsoft 365 for frontline workers.
+
+| Item | Description |
+|:-----|:-----|
+|[![Microsoft 365 for frontline worker scenarios.](/microsoft-365/frontline/media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Updated September 2022   |**Frontline worker scenarios**<br><br>This poster provides an overview of the scenarios you can implement for your frontline workforce to increase communications, enhance wellbeing and engagement, train and onboard your workers, and manage your workforce and operations.<br/><br/>**Related solution guides** <br/> <ul><li>[Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-overview)|
+|[![Microsoft 365 for frontline workers: Healthcare scenarios.](/microsoft-365/frontline/media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Updated September 2022   |**Healthcare scenarios**<br><br>This poster provides an overview of the scenarios you can implement for your frontline workforce in a healthcare setting.<br/><br/>**Related solution guides** <br/> <ul><li>[Get started with Microsoft 365 for healthcare organizations](/microsoft-365/frontline/teams-in-hc)|
+|[![Microsoft 365 for frontline workers: Retail scenarios.](/microsoft-365/frontline/media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Updated September 2022   |**Retail scenarios**<br><br>This poster provides an overview of the scenarios you can implement for your frontline workforce in a retail setting.<br/><br/>**Related solution guides** <br/> <ul><li>[Get started with Microsoft 365 for retail organizations](/microsoft-365/frontline/teams-for-retail-landing-page)|
 
 ## Corporate communications with Microsoft 365 — a Contoso case study
 Employee engagement is a significant contributor to workplace satisfaction, retention, and productivity at any organization. Across Microsoft 365, there are multiple ways to communicate and engage your audience. 
@@ -87,7 +101,7 @@ Depending on your environment, some tools are better suited for certain architec
 
 | Item | Description |
 |:-----|:-----|
-|[![Thumb image for Microsoft Defender for Endpoint deployment strategy.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>Updated September 2021| The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li> |
+|[![Thumb image for Microsoft Defender for Endpoint deployment strategy.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>Updated September 2021| The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premises</li><li>Evaluation and local onboarding</li> |
 <!--
 
 <a name="BKMK_O365IDP"></a>
@@ -129,17 +143,6 @@ With Microsoft 365 and other Microsoft cloud technologies, you can provide your 
 Updated June 2021
 
 For more information, see the article for this poster: [Set up your infrastructure for hybrid work with Microsoft 365](empower-people-to-work-remotely.md).
-
-## Microsoft Teams with security isolation
-
-With Microsoft 365, you can configure a private team in Microsoft Teams and use SharePoint site security settings and a unique sensitivity label to encrypt files so that only team members can decrypt them.
-
-[![Microsoft Teams with security isolation poster.](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) | [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br>
-Updated August 2020
-
-For more information, see the article for this poster: [Configure a team with security isolation](secure-teams-security-isolation.md).
-
 
 ## See Also
 

@@ -1,33 +1,40 @@
 ---
 title: Optimize and correct security policies with configuration analyzer
 description: The steps to optimize and correct security policies with configuration analyzer. Configuration analyzer is a central location and single pane of glass for administering and viewing the email security policies you have configured in your tenant.
-search.product: 
-search.appverid: 
-ms.prod: m365-security
+search.product:
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
+search.appverid: met150
+ms.date: 1/31/2023
 ---
+
 # Optimize and correct security policies with configuration analyzer
 
 Configuration analyzer is a central location and single pane of glass for administering and viewing the email security policies you have configured in your tenant. You can perform a side-to-side comparison of your settings to our Standard and Strict recommended settings, apply recommendations and view historical changes that affected your posture.
 
 ## What you'll need
+
 - Exchange Online Protection
 - Sufficient permissions (Security Administrator role)
 - 5 minutes to perform the steps below.
 
 ## Compare settings and apply recommendations
+
 1. Navigate to [https://security.microsoft.com/configurationAnalyzer](https://security.microsoft.com/configurationAnalyzer).
 1. Pick either **Standard recommendations** or **Strict recommendations** from the top menu based on the side-to-side comparison you'd like to make.
 1. Recommendations for policy changes will be displayed. (If applicable)

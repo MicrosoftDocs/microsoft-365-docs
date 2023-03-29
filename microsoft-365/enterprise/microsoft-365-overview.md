@@ -10,7 +10,9 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
-ms.collection: M365-subscription-management
+ms.collection: 
+- scotvorg
+- M365-subscription-management
 ms.custom: 
 - it-pro
 - intro-overview
@@ -149,7 +151,7 @@ For more information and configuration examples for a small and medium business 
 
 ![Microsoft 365 Fundamentals training.](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Certified: Fundamentals](/learn/paths/m365-fundamentals/).
+To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Certified: Fundamentals](/training/paths/m365-fundamentals/).
 
 ## See also
 

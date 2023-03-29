@@ -30,6 +30,10 @@
       href: ondemandrun.md
     - name: Application/Test rules
       href: rules.md
+    - name: Test your application with latest Microsoft 365 apps
+      href: test-with-m365-app.md
+    - name: Test your application with in-place upgrade
+      href: test-application-with-in-place-upgrade.md
 - name: How-to guides
   items:
   - name: Server application testing
@@ -41,7 +45,32 @@
   - name: Memory Regression Analysis
     href: memory.md
   - name: CPU Regression Analysis
-    href: cpu.md 
+    href: cpu.md
+  - name: Viewing Test Results
+    href: view-test-results.md
+    items:
+      - name: Viewing Script Execution Results
+        href: view-script-execution-results.md
+      - name: Viewing Application Reliability Results
+        href: view-application-liability-results.md
+      - name: Memory and CPU Regression Results Overview
+        href: memory-cpu-regressions-results-overview.md
+        items:
+          - name: Understanding Memory Regression Analysis
+            href: learn-memory-regression-analysis.md
+          - name: Understanding CPU Regression Analysis
+            href: learn-cpu-regression-analysis.md
+      - name: Analyzing the Causes of Regressions
+        href: analyze-regression-causes.md
+      - name: Determining Relevant Processes for Regression Detection
+        href: determine-relevant-processes-regression-detection.md
+      - name: Downloading and Analyzing Test Result Files
+        href: download-analyze-test-result-files.md
+        items:
+          - name: Viewing Log Files
+            href: view-log-files.md
+      - name: Monitoring Test Status
+        href: monitor-test-status.md
   - name: Request to change access level
     href: accesslevel.md
   - name: SDK & API
@@ -50,6 +79,3 @@
   items:
   - name: Frequently Asked Questions
     href: faq.md
-
-
-

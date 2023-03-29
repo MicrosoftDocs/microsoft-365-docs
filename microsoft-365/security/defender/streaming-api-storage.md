@@ -14,18 +14,23 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
+ms.date: 02/08/2023
 ---
 
 # Configure Microsoft 365 Defender to stream Advanced Hunting events to your Storage account
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -54,9 +59,11 @@ Once the Storage account is created you will need to:
 4. In the **Add new Streaming API settings** flyout that appears, configure the following settings:
    1. **Name**: Choose a name for your new settings.
    2. Select **Forward events to Azure Storage**.
-   3. In the **Storage Account Resource ID** box that appears, type your **Storage Account Resource ID**. To get your **Storage Account Resource ID**, open the Azure portal at <https://portal.azure.com>, click **Storage accounts** \> go to the properties tab \> copy the text under **Storage Account Resource ID**.
+4. To display the Azure Resource Manager resource ID for a storage account in the Azure portal, follow these steps:
 
-      :::image type="content" source="../defender-endpoint/images/storage-account-resource-id.png" alt-text="A Storage Account Resource ID" lightbox="../defender-endpoint/images/storage-account-resource-id.png":::
+   1. Navigate to your storage account in the Azure portal.
+   2. On the **Overview** page, in the **Essentials** section, select the **JSON View** link.
+   3. The resource ID for the storage account is displayed at the top of the page, copy the text under **Storage Account Resource ID**.
 
    4. Back on the **Add new Streaming API settings** flyout, choose the **Event types** that you want to stream.
 
@@ -109,6 +116,8 @@ You can monitor the resources created by the streaming API using **Azure Monitor
 For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs](/azure/azure-monitor/logs/logs-data-export?tabs=portal#monitor-destinations).
 
 ## Related topics
+
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Overview of Advanced Hunting](../defender/advanced-hunting-overview.md)
 - [Microsoft 365 Defender Streaming API](streaming-api.md)

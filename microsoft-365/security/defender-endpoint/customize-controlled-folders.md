@@ -3,8 +3,6 @@ title: Customize controlled folder access
 description: Add other folders that should be protected by controlled folder access, or allow apps that are incorrectly blocking changes to important files.
 keywords: Controlled folder access, windows 10, windows 11, windows defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
@@ -13,8 +11,11 @@ ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.date:
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
+ms.date: 03/14/2023
 ---
 
 # Customize controlled folder access
@@ -129,11 +130,13 @@ An allowed application or service only has write access to a controlled folder a
 
 3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Windows Defender Exploit Guard** \> **Controlled folder access**.
 
-4. Double-click the **Configure allowed applications** setting and set the option to **Enabled**. Select **Show** and enter each app.
+4. Double-click the **Configure allowed applications** setting and then set the option to **Enabled**. Select **Show**.
+
+5.  Add the full path to the executable in **Value name**. Set **Value** to `0`. For example, to allow the Command Prompt set **Value name** as `C:\Windows\System32\cmd.exe`. **Value** should be set to `0`.
 
 ### Use PowerShell to allow specific apps
 
-1. Type **PowerShell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
+1. Type **PowerShell** in the Start menu, right-click **Windows PowerShell** and then select **Run as administrator**
 2. Enter the following cmdlet:
 
     ```PowerShell

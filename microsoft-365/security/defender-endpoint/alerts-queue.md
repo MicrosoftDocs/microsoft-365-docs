@@ -11,10 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier1
+ms.topic: conceptual
 ms.date: 03/27/2020
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # View and organize the Microsoft Defender for Endpoint Alerts queue
@@ -84,9 +87,7 @@ We've redefined the alert categories to align to the [enterprise attack tactics]
 
 ### Service sources
 
-Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts-managed hunting service.
-
-Filter the alerts based on the following Service sources:
+You can filter the alerts based on the following Service sources:
 
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
@@ -95,6 +96,8 @@ Filter the alerts based on the following Service sources:
 - Microsoft Defender for Office 365
 - App Governance
 - AAD Identity Protection
+
+Microsoft Endpoint Notification customers can now filter and see detections from the service by filtering by _Microsoft Defender Experts_ nested under the _Microsoft Defender for Endpoint_ service source.
 
 > [!NOTE]
 > The Antivirus filter will only appear if devices are using Microsoft Defender Antivirus as the default real-time protection antimalware product.
@@ -117,7 +120,7 @@ You can filter the alerts based on the following policies:
 |EDR|WindowsDefenderAtp|
 |Microsoft 365 Defender|MTP|
 |Microsoft Defender for Office 365|OfficeATP|
-|Microsoft Threat Experts|ThreatExperts|
+|Microsoft Defender Experts|ThreatExperts|
 |SmartScreen|WindowsDefenderSmartScreen|
 
 ### Entities

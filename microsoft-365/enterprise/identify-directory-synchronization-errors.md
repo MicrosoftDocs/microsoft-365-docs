@@ -3,6 +3,7 @@ title: "View directory synchronization errors in Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -14,6 +15,7 @@ ms.custom:
  - seo-marvel-apr2020
  - admindeeplinkMAC
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:

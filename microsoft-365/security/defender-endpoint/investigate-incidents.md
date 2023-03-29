@@ -13,11 +13,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier1
+ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Investigate incidents in Microsoft Defender for Endpoint

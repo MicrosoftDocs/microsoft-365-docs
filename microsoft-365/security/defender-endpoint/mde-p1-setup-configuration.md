@@ -10,11 +10,12 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.reviewer: inbadian
+ms.date: 01/27/2023
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ---
 
 # Set up and configure Microsoft Defender for Endpoint Plan 1
@@ -38,7 +39,7 @@ The general setup and configuration process for Defender for Endpoint Plan 1 is 
 | 3 | [Set up your tenant environment](#set-up-your-tenant-environment) | Lists tasks for setting up your tenant environment |
 | 4 | [Assign roles and permissions](#assign-roles-and-permissions) | Lists roles and permissions to consider for your security team <br/><br/>**TIP**: As soon as roles and permissions are assigned, your security team can get started using the Microsoft 365 Defender portal. To learn more, see [Getting started](mde-plan1-getting-started.md). |
 | 5 | [Onboard to Defender for Endpoint](#onboard-to-defender-for-endpoint) | Lists several methods by operating system to onboard to Defender for Endpoint Plan 1 and includes links to more detailed information for each method  |
-| 6 | [Configure next-generation protection](#configure-next-generation-protection) | Describes how to configure your next-generation protection settings in Microsoft Endpoint Manager  |
+| 6 | [Configure next-generation protection](#configure-next-generation-protection) | Describes how to configure your next-generation protection settings in Microsoft Intune  |
 | 7 | [Configure your attack surface reduction capabilities](#configure-your-attack-surface-reduction-capabilities)        | Lists the types of attack surface reduction capabilities you can configure and includes procedures with links to more resources  |
  
 ## Review the requirements
@@ -49,7 +50,7 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 |:---|:---|
 | Licensing requirements | Defender for Endpoint Plan 1 (standalone, or as part of Microsoft 365 E3 or A3) |
 | Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
-| Operating systems | Windows 11, or Windows 10, version 1709, or later <br/>macOS (the three most recent releases are supported) <br/>iOS <br/>Android OS <br/><br/>Note that the standalone version of Defender for Endpoint Plan 1 does not include server licenses. To onboard servers, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction). |
+| Operating systems | Windows 11, or Windows 10, version 1709, or later <br/>macOS (the three most recent releases are supported) <br/>iOS <br/>Android OS <br/><br/>Note that the standalone version of Defender for Endpoint Plan 1 does not include server licenses. To onboard servers, you'll need either Microsoft Defender for Endpoint for Servers, or Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)) offering. To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md). |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 
 
@@ -59,8 +60,8 @@ When you plan your deployment, you can choose from several different architectur
 
 | Method | Description |
 |:---|:---|
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (included in Microsoft Endpoint Manager) | Use Intune to manage endpoints in a cloud native environment |
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](/mem/configmgr/core/understand/introduction) (included in Microsoft Endpoint Manager) | Use Intune and Configuration Manager to manage endpoints and workloads that span an on-premises and cloud environment |
+| [Intune](/mem/intune/fundamentals/what-is-intune)  | Use Intune to manage endpoints in a cloud native environment |
+| [Intune](/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](/mem/configmgr/core/understand/introduction)  | Use Intune and Configuration Manager to manage endpoints and workloads that span an on-premises and cloud environment |
 | [Configuration Manager](/mem/configmgr/core/understand/introduction) | Use Configuration Manager to protect on-premises endpoints with the cloud-based power of Defender for Endpoint |
 | Local script downloaded from the Microsoft 365 Defender Portal | Use local scripts on endpoints to run a pilot or onboard just a few devices |
 
@@ -98,7 +99,7 @@ The following table describes key roles to consider for Defender for Endpoint in
 
 | Role | Description |
 |:---|:---|
-| Global administrators (also referred to as global admins) <br/><br/> *As a best practice, limit the number of global administrators.* | Global admins can perform all kinds of tasks. The person who signed up your company for Microsoft 365 or for Microsoft Defender for Endpoint Plan 1 is a global administrator by default. <br/><br/> Global admins are able to access/change settings across all Microsoft 365 portals, such as: <br/>- The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
+| Global administrators (also referred to as global admins) <br/><br/> *As a best practice, limit the number of global administrators.* | Global admins can perform all kinds of tasks. The person who signed up your company for Microsoft 365 or for Microsoft Defender for Endpoint Plan 1 is a global administrator by default. <br/><br/> Global admins are able to access/change settings across all Microsoft 365 portals, such as: <br/>- The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
 | Security administrators (also referred to as security admins) | Security admins can perform security operator tasks plus the following tasks: <br/>- Monitor security-related policies <br/>- Manage security threats and alerts <br/>- View reports |
 | Security operator | Security operators can perform security reader tasks plus the following tasks: <br/>- View information about detected threats <br/>- Investigate and respond to detected threats  |
 | Security reader | Security readers can perform the following tasks: <br/>- View security-related policies across Microsoft 365 services <br/>- View security threats and alerts <br/>- View reports  |
@@ -111,24 +112,25 @@ The following table describes key roles to consider for Defender for Endpoint in
 
 When you're ready to onboard your organization's endpoints, you can choose from several methods, as listed in the following table: <br/><br/>
 
-|Endpoint Operating System | Onboarding methods|
+|Endpoint|Deployment tool|
 |---|---|
-| Windows 10 | [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)  |
-| macOS | [Local scripts](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
-| iOS |[App-based](ios-install.md) |
-| Android | [Microsoft Endpoint Manager](android-intune.md) |
+|**Windows**|[Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Intune/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)|
+|**macOS**|[Local script](mac-install-manually.md) <br> [Microsoft Intune](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
+|**Android**|[Microsoft Intune](android-intune.md)|
+|**iOS**|[Microsoft Intune](ios-install.md) <br> [Mobile Application Manager](ios-install-unmanaged.md) |
+
 
 Then, proceed to configure your next-generation protection and attack surface reduction capabilities.
 
 ## Configure next-generation protection
 
-We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization's devices and security settings, as shown in the following image:
+We recommend using [Intune](/mem) to manage your organization's devices and security settings, as shown in the following image:
  
-:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Endpoint security policies in the Micorosft Endpoint Manager portal" lightbox="../../media/mde-p1/endpoint-policies.png":::
+:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Endpoint security policies in the Intune portal" lightbox="../../media/mde-p1/endpoint-policies.png":::
 
-To configure your next-generation protection in Microsoft Endpoint Manager, follow these steps:
+To configure your next-generation protection in Intune, follow these steps:
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+1. Go to the Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
 2. Select **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don't have an existing policy, create a new policy.)
 
@@ -155,11 +157,11 @@ Attack surface reduction is all about reducing the places and ways your organiza
 
 ### Attack surface reduction rules
 
-Attack surface reduction rules are available on devices running Windows. We recommend using Microsoft Endpoint Manager, as shown in the following image:
+Attack surface reduction rules are available on devices running Windows. We recommend using Intune, as shown in the following image:
 
-:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Attack surface reduction rules in the Microsoft Endpoint Manager portal" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
+:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Attack surface reduction rules in the Intune portal" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+1. Go to the Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
 2. Choose **Endpoint security** > **Attack surface reduction** > **+ Create policy**.
 
@@ -191,11 +193,11 @@ Attack surface reduction rules are available on devices running Windows. We reco
 
 You get ransomware mitigation through [controlled folder access](controlled-folders.md#what-is-controlled-folder-access), which allows only trusted apps to access protected folders on your endpoints. 
 
-We recommend using Microsoft Endpoint Manager to configure controlled folder access.
+We recommend using Intune to configure controlled folder access.
 
-:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="ASR policies in the Microsoft Endpoint Manager portal" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
+:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="ASR policies in the Intune portal" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
+1. Go to the Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
 
 2. Select **Endpoint Security**, and then select **Attack Surface Reduction**.
 
@@ -223,11 +225,11 @@ We recommend using Microsoft Endpoint Manager to configure controlled folder acc
 
 ### Device control
 
-You can configure Defender for Endpoint to block or allow removable devices and files on removable devices. We recommend using Microsoft Endpoint Manager to configure your device control settings.
+You can configure Defender for Endpoint to block or allow removable devices and files on removable devices. We recommend using Intune to configure your device control settings.
 
-:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="Microsoft Endpoint Manager administrative templates" lightbox="../../media/mde-p1/mem-admintemplates.png":::
+:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="Intune administrative templates" lightbox="../../media/mde-p1/mem-admintemplates.png":::
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
+1. Go to the Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
 
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 
@@ -256,11 +258,11 @@ You can configure Defender for Endpoint to block or allow removable devices and 
 
 ### Network protection
 
-With network protection, you can help protect your organization against dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet. We recommend using Microsoft Endpoint Manager to turn on network protection.
+With network protection, you can help protect your organization against dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet. We recommend using Intune to turn on network protection.
 
-:::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="Endpoint protection profile in the Microsoft Endpoint Manager portal" lightbox="../../media/mde-p1/mem-endpointprotectionprofile.png":::
+:::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="Endpoint protection profile in the Intune portal" lightbox="../../media/mde-p1/mem-endpointprotectionprofile.png":::
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
+1. Go to the Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
 
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 
@@ -291,11 +293,11 @@ With network protection, you can help protect your organization against dangerou
 
 ### Web protection
 
-With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes [web threat protection](#configure-web-threat-protection) and [web content filtering](#configure-web-content-filtering). Configure both sets of capabilities. We recommend using Microsoft Endpoint Manager to configure your web protection settings.
+With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes [web threat protection](#configure-web-threat-protection) and [web content filtering](#configure-web-content-filtering). Configure both sets of capabilities. We recommend using Intune to configure your web protection settings.
 
 #### Configure web threat protection
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
+1. Go to the Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
  
 2. Choose **Endpoint security** > **Attack surface reduction**, and then choose **+ Create policy**.
 
@@ -344,13 +346,13 @@ With web protection, you can protect your organization's devices from web threat
 
 ### Network firewall
 
-Network firewall helps reduce the risk of network security threats. Your security team can set rules that determine which traffic is permitted to flow to or from your organization's devices. We recommend using Microsoft Endpoint Manager to configure your network firewall. 
+Network firewall helps reduce the risk of network security threats. Your security team can set rules that determine which traffic is permitted to flow to or from your organization's devices. We recommend using Intune to configure your network firewall. 
 
-:::image type="content" source="../../media/mde-p1/mem-firewallpolicy.png" alt-text="Firewall policy in the Microsoft Endpoint Manager portal" lightbox="../../media/mde-p1/mem-firewallpolicy.png":::
+:::image type="content" source="../../media/mde-p1/mem-firewallpolicy.png" alt-text="Firewall policy in the Intune portal" lightbox="../../media/mde-p1/mem-firewallpolicy.png":::
 
 To configure basic firewall settings, follow these steps:
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
+1. Go to the Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
 
 2. Choose **Endpoint security** > **Firewall**, and then choose **+ Create Policy**.
 

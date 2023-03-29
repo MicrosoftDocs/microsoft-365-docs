@@ -5,13 +5,15 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date:
+ms.date: 03/27/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
+- highpri
 - SPO_Content
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
@@ -42,6 +44,8 @@ Ready to start managing your organization's high-value content for legal, busine
 > [!TIP]
 > If you're migrating records to Microsoft 365 and need to validate that they haven't been altered, see [Validating migrated records](records-management.md#validating-migrated-records).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Subscription and licensing requirements
 
 A number of different subscriptions support records management and the licensing requirements for users depends on the features you use.
@@ -50,7 +54,7 @@ To see the options for licensing your users to benefit from Microsoft Purview fe
 
 ## Permissions
 
-Members of your compliance team who are responsible for records management need permissions to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Records Management** admin role group, which grants permissions for all features related to records management, including [disposition review and verification](disposition.md).
+Members of your compliance team who are responsible for records management need permissions to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Records Management** admin role group. This role group grants permissions for all features related to records management, which include the permissions to create and manage [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention), and [disposition review and verification](disposition.md).
 
 For a read-only role, you can create a new role group and add the **View-Only Record Management** role to this group.
 
@@ -75,13 +79,14 @@ Use the following table to help you map your business requirements to the scenar
 |Let admins apply retain and delete actions to a document understanding model, so that these are automatically applied to identified documents in a SharePoint library|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
 |Automatically apply retain and delete actions to documents and emails |[Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Start the retention period when an event occurs, such as:  <br />- Employees leave the organization <br />- Contracts expire <br />- End of product lifetime| [Start retention when an event occurs](event-driven-retention.md)|
+|Do custom actions or integrate with other solutions at the end of the retention period| [Customize what happens at the end of the retention period](retention-label-flow.md)|
 |Restrict changes to policies to help meet regulatory requirements or safeguard against rogue administrators| [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md)
 |Manage the lifecycle of different document types in SharePoint| [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)|
 |Apply a retention label to a file when I receive an alert that content containing personal data is being stored or remains untouched for too long| [Investigate and remediate alerts in Privacy Risk Management](/privacy/priva/risk-management-alerts)|
 |Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
 |Have proof of disposition for content that is permanently deleted at the end of its retention period|[Disposition of records](disposition.md#disposition-of-records) |
 | Monitor how and where retain and delete settings are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
-| Programatically create and manage retention labels, event-based retention, and automate repetitive tasks for records management | [Microsoft Graph API for records management (preview)](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview) |
+| Programatically create and manage retention labels, event-based retention, and automate repetitive tasks for records management | [Microsoft Graph API for records management](compliance-extensibility.md#microsoft-graph-api-for-records-management) |
 
 ## End-user documentation
 

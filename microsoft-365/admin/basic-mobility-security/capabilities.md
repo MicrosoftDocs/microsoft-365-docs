@@ -5,11 +5,14 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 08/31/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -53,13 +56,13 @@ The supported apps for the different types of mobile devices in the following ta
 |Product|iOS|Android|
 |---|---|---|
 |**Exchange** Exchange ActiveSync includes built-in email and third-party apps, like TouchDown, that use Exchange ActiveSync Version 14.1 or later.|Mail|Email|
-|**Office** and **OneDrive for Business**|Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**On phones and tablets**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **On phones only:** <br/> Office Mobile|
+|**Microsoft 365 apps** and **OneDrive for Business**|Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**On phones and tablets**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **On phones only:** <br/> Microsoft 365 mobile|
 
 > [!NOTE]
 >
 > - Support for iOS 10.0 and later versions includes iPhone and iPad devices.
 > - Management of BlackBerry OS devices isn’t supported by Basic Security and Mobility. Use BlackBerry Business Cloud Services (BBCS) from BlackBerry to manage BlackBerry OS devices. Blackberry devices running Android OS are supported as standard Android devices
-> - Users won’t be prompted to enroll and won’t be blocked or reported for policy violation if they use the mobile browser to access Microsoft 365 SharePoint sites, documents in Office Online, or email in Outlook Web App.
+> - Users won’t be prompted to enroll and won’t be blocked or reported for policy violation if they use the mobile browser to access Microsoft 365 SharePoint sites, documents in Microsoft 365 on the web, or email in Outlook Web App.
 
 The following diagram shows what happens when a user with a new device signs in to an app that supports access control with Basic Mobility and Security. The user is blocked from accessing Microsoft 365 resources in the app until they enroll their device.
 
@@ -92,7 +95,7 @@ The following sections list the policy settings you can use to help secure and m
 
 |Setting name|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|Require a password|Yes|Yes|Yes|
+|Require a password|Yes|No|No|
 |Prevent simple password|Yes|No|No|
 |Require an alphanumeric password|Yes|No|No|
 |Minimum password length|Yes|Yes|Yes|
@@ -128,11 +131,13 @@ The following option can block users from accessing their Microsoft 365 email if
 |Setting name|iOS|Android|Samsung Knox|
 |---|---|---|---|
 |Require encrypted backup|Yes|No|No|
-|Block cloud backup|Yes|No|No|
-|Block document synchronization|Yes|No|No|
+|Block cloud backup<sup>1</sup>|Yes|No|No|
+|Block document synchronization<sup>1</sup>|Yes|No|No|
 |Block photo synchronization|Yes|No|No|
 |Allow Google backup|N/A|No|Yes|
 |Allow Google account auto sync|N/A|No|Yes|
+
+<sup>1</sup>To function, these settings require supervised iOS devices. 
 
 ## System settings
 
@@ -145,16 +150,18 @@ The following option can block users from accessing their Microsoft 365 email if
 
 |Setting name|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|Block video conferences on device|Yes|No|No|
-|Block access to application store|Yes|No|Yes|
-|Require password when accessing application store|No|Yes|Yes|
+|Block video conferences on device<sup>1</sup>|Yes|No|No|
+|Block access to application store<sup>1</sup>|Yes|No|Yes|
+|Require password when accessing application store|Yes|No|No|
+
+<sup>1</sup>To function, these settings require supervised iOS devices. 
 
 ## Device capabilities settings
 
 |Setting name|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|Block connection with removable storage|Yes|Yes|No|
-|Block Bluetooth connection|Yes|Yes|No|
+|Block connection with removable storage|No|No|Yes|
+|Block Bluetooth connection|No|No|Yes|
 
 ## Additional settings
 

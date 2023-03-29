@@ -8,15 +8,17 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
-ms.date: 04/15/2022
+ms.topic: conceptual
+ms.date: 12/07/2022
 ms.subservice: mde
 ---
 
@@ -39,7 +41,7 @@ Like any other system in an IT environment, these too should have an Endpoint De
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
  > [!NOTE]
-  > **Persistent VDI's** - Onboarding a persistent VDI machine into Microsoft Defender for Endpoint is handled the same way you would onboard a physical machine, such as a desktop or laptop. Group policy, Microsoft Endpoint Manager, and other methods can be used to onboard a persistent machine. In the Microsoft 365 Defender portal, (https://security.microsoft.com) under onboarding, select your preferred onboarding method, and follow the instructions for that type. For more information see [Onboarding Windows client](onboard-windows-client.md).
+  > **Persistent VDI's** - Onboarding a persistent VDI machine into Microsoft Defender for Endpoint is handled the same way you would onboard a physical machine, such as a desktop or laptop. Group policy, Microsoft Configuration Manager, and other methods can be used to onboard a persistent machine. In the Microsoft 365 Defender portal, (https://security.microsoft.com) under onboarding, select your preferred onboarding method, and follow the instructions for that type. For more information see [Onboarding Windows client](onboard-windows-client.md).
 
 ## Onboarding non-persistent virtual desktop infrastructure (VDI) devices
 
@@ -50,15 +52,17 @@ There might be associated challenges when onboarding VDI instances. The followin
 - Instant early onboarding of a short-lived session, which must be onboarded to Defender for Endpoint prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
-In a VDI environment, VDI instances can have short lifespans. VDI devices can appear in Defender for Endpoint portal as either:
+In a VDI environment, VDI instances can have short lifespans. VDI devices can appear in the Microsoft 365 Defender portal as either single entries for each VDI instance or multiple entries for each device. 
 
-
-- Single portal entry for each VDI instance. If the VDI instance was already onboarded to Microsoft Defender for Endpoint and at some point deleted then  recreated with the same host name, a new object representing this VDI instance will NOT be created in the portal. 
+- Single entry for each VDI instance. If the VDI instance was already onboarded to Microsoft Defender for Endpoint, and at some point deleted, and then recreated with the same host name, a new object representing this VDI instance will NOT be created in the portal. 
 
   > [!NOTE]
   > In this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
 
 - Multiple entries for each device - one for each VDI instance.
+
+> [!IMPORTANT]
+> If you're deploying non-persistent VDIs through cloning technology, make sure that your internal template VMs are not onboarded to Defender for Endpoint. This recommendation is to avoid cloned VMs from being onboarded with the same senseGuid as your template VMs, which could prevent VMs from showing up as new entries in the Devices list. 
 
 The following steps will guide you through onboarding VDI devices and will highlight steps for single and multiple entries.
 
@@ -80,7 +84,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 
     1. Click **Download package** and save the .zip file.
 
-2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the golden/master image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
+2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the golden/primary image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
     1. If you are implementing multiple entries for each device - one for each session, copy WindowsDefenderATPOnboardingScript.cmd.
     2. If you're implementing a single entry for each device, copy both Onboard-NonPersistentMachine.ps1 and WindowsDefenderATPOnboardingScript.cmd.
 
@@ -141,10 +145,8 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-For more information, follow the guidance in [Deployment guide for Microsoft Defender Antivirus in a Virtual Desktop Infrastructure (VDI) environment](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus).
-
    > [!NOTE]
-   > If you have onboarded the master image of your VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
+   > If you have onboarded the primary image of your VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
    > 1. Ensure the sensor is stopped by running the command below in a CMD window:
    >  ```console
    >  sc query sense
@@ -181,15 +183,15 @@ The following configuration settings are recommended:
   - `%Programfiles%\FSLogix\Apps\frxsvc.exe`
 
 - File extensions to exclude from scans and real-time protection:
-  -  `%Programfiles%\FSLogix\Apps\frxccd.sys`
+  - `%Programfiles%\FSLogix\Apps\frxccd.sys`
   - `%Programfiles%\FSLogix\Apps\frxdrv.sys`
   - `%Programfiles%\FSLogix\Apps\frxdrvvt.sys`
   - `%TEMP%*.VHD`
   - `%TEMP%*.VHDX`
   - `%Windir%\TEMP*.VHD`
   - `%Windir%\TEMP*.VHDX`
-  - `\\stroageaccount.file.core.windows.net\share**.VHD`
-  -  `\\stroageaccount.file.core.windows.net\share**.VHDX`
+  - `\\storageaccount.file.core.windows.net\share**.VHD`
+  - `\\storageaccount.file.core.windows.net\share**.VHDX`
 
 #### Real-time Protection
 
@@ -210,7 +212,7 @@ The following configuration settings are recommended:
 - Disable catch-up full scan: Not configured
 - Disable catchup quick scan: Not configured
 - CPU usage limit per scan: 50
-- Scan mapped netoword drives during full scan: Not configured
+- Scan mapped network drives during full scan: Not configured
 - Run daily quick scan at: 12 PM
 - Scan type: Not configured
 - Day of week to run scheduled scan: Not configured
@@ -242,7 +244,7 @@ The following configuration settings are recommended:
 
 ## Related topics
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
-- [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows devices using Microsoft Configuration Manager](configure-endpoints-sccm.md)
 - [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows devices using a local script](configure-endpoints-script.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)

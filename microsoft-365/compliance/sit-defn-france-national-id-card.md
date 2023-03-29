@@ -1,11 +1,11 @@
 ---
-title: "France national id card (CNI) entity definition"
+title: "France national ID card (CNI) entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 03/02/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -14,22 +14,41 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "France national id card (CNI) sensitive information type entity definition."
+description: "France national ID card (CNI) sensitive information type entity definition."
 ---
 
-# France national id card (CNI)
+# France national ID card (CNI)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
-12 digits
+Twelve digits 
+
+or
+
+Twelve letters and digits 
+
+or
+
+Nine letters and digits
 
 ## Pattern
 
-12 digits
+Twelve digits
+
+or
+
+Combination of twelve digits and letters
+
+or
+
+Combination of nine digits and letters
 
 ## Checksum
 

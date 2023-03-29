@@ -7,11 +7,13 @@ f1.keywords:
 - data loss prevention
 - dlp policies
 manager: dougeby
+ms.date: 10/20/2021
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - endpoint dlp
 - data loss prevention
 - dlp policies 

@@ -7,14 +7,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 01/31/2023
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
+search.appverid: met150
 ---
 
 # Host firewall reporting in Microsoft Defender for Endpoint
@@ -22,6 +26,7 @@ ms.custom: admindeeplinkDEFENDER
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

@@ -13,10 +13,12 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
+ms.date: 03/06/2023
 ---
 
 # Get started with troubleshooting mode in Microsoft Defender for Endpoint 
@@ -31,6 +33,7 @@ ms.subservice: mde
 Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender antivirus features by enabling them from the device and testing different scenarios, even if they're controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an Enterprise-only feature, and requires Microsoft 365 Defender access.
 
 ## What do you need to know before you begin?
+During troubleshooting mode, you can use the PowerShell command `Set-MPPreference -DisableTamperProtection $true` or, on client operating systems, the Security Center app to temporarily disable tamper protection on your device and make your necessary configuration changes. 
 
 - Use troubleshooting mode to disable/change the tamper protection setting to perform:
 
@@ -75,10 +78,18 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
   Semester/Redstone|OS version|Release
   :---|:---|:---
-  21H2/SV1|>=22000.593|[KB5011563: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011563)
+  21H2/SV1|>=22000.593|[KB5011563: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5019275)
   20H1/20H2/21H1|>=19042.1620<br/> >=19041.1620<br/> >=19043.1620|[KB5011543: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011543)
   Windows Server 2022|>=20348.617|[KB5011558: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011558)
   Windows Server 2019 (RS5)|>=17763.2746|[KB5011551: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011551)
+
+- Troubleshooting mode is also available for machines running the modern, unified solution for Windows Server 2012 R2 and Windows Server 2016. Before you use troubleshooting mode, make sure all of the following components are up to date:
+
+  - Sense version 10.8049.22439.1084 or later ([KB5005292: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005292))
+
+  - Defender Antivirus - Platform: 4.18.2207.7 or later ([KB4052623: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623))
+
+  - Defender Antivirus - Engine: 1.1.19500.2 or later ([KB2267602: Microsoft Update Catalog](https://www.microsoft.com/en-us/wdsi/defenderupdates))
 
 - For troubleshooting mode to be applied, Microsoft Defender for Endpoint must be tenant-enrolled and active on the device.
 
@@ -105,7 +116,9 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 Here are some pre-built advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](/defender/custom-detection-rules.md#create-a-custom-detection-rule) that'd alert you when the devices are in troubleshooting mode.
 
 ### Get troubleshooting events for a particular device
-Search by deviceId or deviceName by commenting out the respective lines.  
+
+Search by deviceId or deviceName by commenting out the respective lines. 
+ 
 ```kusto
 //let deviceName = "<deviceName>";   // update with device name
 let deviceId = "<deviceID>";   // update with device id
@@ -157,6 +170,24 @@ DeviceEvents
 ```
 
 ## Related topic
+
+> [!TIP]
+> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
+>
+> - Top paths that impact scan time
+> - Top files that impact scan time
+> - Top processes that impact scan time
+> - Top file extensions that impact scan time
+> - Combinations – for example:
+>   - top files per extension
+>   - top paths per extension
+>   - top processes per path
+>   - top scans per file
+>   - top scans per file per process
+>
+> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
+> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+>
 
 - [Troubleshooting mode scenarios](troubleshooting-mode-scenarios.md)
 - [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)

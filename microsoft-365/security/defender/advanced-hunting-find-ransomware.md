@@ -17,11 +17,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
   - m365solution-ransomware
   - highpri
-ms.topic: article
+  - tier1
+ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Hunt for ransomware
@@ -282,7 +283,7 @@ Microsoft Azure:
 
 Microsoft Defender for Cloud Apps:
 
--  [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
+- [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Security team blog posts:
 

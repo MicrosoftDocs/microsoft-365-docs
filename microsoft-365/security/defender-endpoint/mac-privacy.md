@@ -1,7 +1,7 @@
 ---
 title: Privacy for Microsoft Defender for Endpoint on Mac
 description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, privacy, diagnostic
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, privacy, diagnostic, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,10 +11,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Privacy for Microsoft Defender for Endpoint on macOS
@@ -54,7 +57,7 @@ By default, only required diagnostic data is sent to Microsoft.
 
 Cloud delivered protection is used to provide increased and faster protection with access to the latest protection data in the cloud.
 
-Enabling the cloud-delivered protection service is optional, however it is highly recommended because it provides important protection against malware on your endpoints and across your network.
+Enabling the cloud-delivered protection service is optional, however it's highly recommended because it provides important protection against malware on your endpoints and across your network.
 
 ### Sample data
 
@@ -76,7 +79,7 @@ This section describes what is considered required diagnostic data and what is c
 
 ### Data fields that are common for all events
 
-There is some information about events that is common to all events, regardless of category or data subtype.
+There's some information about events that is common to all events, regardless of category or data subtype.
 
 The following fields are considered common for all events:
 
@@ -131,7 +134,7 @@ The following fields are collected:
 |edr.early_preview|Whether the device should run EDR early preview features.|
 |edr.group_id|Group identifier used by the detection and response component.|
 |edr.tags|User-defined tags.|
-|features.\[optional feature name\]|List of preview features, along with whether they are enabled or not.|
+|features.\[optional feature name\]|List of preview features, along with whether they're enabled or not.|
 
 #### Product and service usage data events
 
@@ -174,7 +177,7 @@ The following fields are collected:
 |subsystem|The underlying subsystem used for real-time protection.|
 |ipc.connects|Number of connection requests received by the kernel extension.|
 |ipc.rejects|Number of connection requests rejected by the kernel extension.|
-|ipc.connected|Whether there is any active connection to the kernel extension.|
+|ipc.connected|Whether there's any active connection to the kernel extension.|
 
 #### Support data
 

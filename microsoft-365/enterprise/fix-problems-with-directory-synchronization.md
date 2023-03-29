@@ -3,6 +3,7 @@ title: "Fixing problems with directory synchronization for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
@@ -13,6 +14,7 @@ ms.custom:
 - Adm_O365
 - admindeeplinkMAC
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:

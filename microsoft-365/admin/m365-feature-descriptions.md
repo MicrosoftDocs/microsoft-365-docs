@@ -1,17 +1,19 @@
 ---
 title: "Microsoft 365 feature descriptions"
 ms.author: office365servicedesc
-author: pamelaar
-manager: gailw
+author: pebaum
+manager: scotv
+ms.date: 06/18/2022
 audience: ITPro
 ms.topic: reference
-f1_keywords:
+f1.keywords:
 - 'microsoft-365-and-office-365-general-information'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.custom:
 - Adm_ServiceDesc
 - Adm_ServiceDesc_top
+ms.collection: scotvorg
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: "Learn about the information available for Microsoft 365 feature descriptions."
 ---
@@ -178,6 +180,8 @@ Office 365 for enterprise follows a role-based access control (RBAC) model: perm
 
 **Partners:** You can select a Microsoft partner and delegate administrative functions, including creating service request tickets. For more information, see the [Partners](/office365/servicedescriptions/office-365-platform-service-description/partners) service description and [Add, change, or delete a subscription advisor partner](/office365/admin/misc/add-partner).
 
+**Technical support for partners:** If you're a partner and need information about specific partner support plans, see [Compare partner support plans](https://partner.microsoft.com/support/partnersupport). Partners can also escalate tickets to Microsoft. For more information, see [Escalating to Microsoft](/partner-center/customer-support#escalating-to-microsoft).
+
 **Developers:** Developers can learn more about developing Office and SharePoint applications at the [MSDN Microsoft Developer Network](https://developer.microsoft.com/office/docs). Developer Support is available through online blogs and forums in the developer community, through Premier or Partner support resources, or directly through Microsoft. For links to Developer Support options, see [Support Resources](https://developer.microsoft.com/office/docs).
 
 **Volume licensing**: If you have already purchased licenses from Microsoft under a volume licensing program, here's where to go for support: For support related to licenses and locating keys, go to the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx); for technical support, see [Technical support](/office365/servicedescriptions/office-365-platform-service-description/support#technical-support); for billing questions, see [Billing and subscription management support](/office365/servicedescriptions/office-365-platform-service-description/support#billing-and-subscription-management-support); for general information about volume licensing, go to [Volume Licensing](https://www.microsoft.com/licensing/default).
@@ -192,7 +196,7 @@ Microsoft Office 365 provides the following help and training resources. Communi
 
 **Online help:** Help articles and videos are available from any inline help link in the service, including the help icon in the top navigation bar of the Office 365 portal and Microsoft 365 admin center. You can also search all Office 365 help on [https://office.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkId=272056).
 
-**Training:** Training is available through videos, recorded live events, and classes leading to certification. For more information, see [Microsoft 365 basics video training](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb), [Microsoft 365 Training](https://support.microsoft.com/training), [for admins and IT Pros](/learn/m365/), [for small businesses](/microsoft-365/admin/admin-video-library), [browse the full learning catalog](/learn/browse/), [become Microsoft certified](/learn/certifications/), [browse all learning options](/learn/browse/), and [watch live and recorded events](/learn/tv/).
+**Training:** Training is available through videos, recorded live events, and classes leading to certification. For more information, see [Microsoft 365 basics video training](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb), [Microsoft 365 Training](https://support.microsoft.com/training), [for admins and IT Pros](/training/m365/), [for small businesses](/microsoft-365/admin/admin-video-library), [browse the full learning catalog](/training/browse/), [become Microsoft certified](/certifications/), [browse all learning options](/training/browse/), and [watch live and recorded events](/training/tv/).
 
 **Community:** The Office 365 Community is a single destination for self-help support information. It has the latest information to help customers find answers to a variety of technical, billing, and service questions through support forums, wikis, and blogs. The support forums are staffed and moderated by Microsoft Support agents. From the Office 365 Community home page, customers can access the following resources: Forums, Wikis, Blogs. For more information, visit the [Office 365 community](https://techcommunity.microsoft.com/).
 
@@ -316,9 +320,9 @@ Microsoft values the partnerships we have with our customers and places great em
 
 **Customer Lockbox:** As a Microsoft admin, you can use Customer Lockbox to control how a Microsoft support engineer accesses your data during a help session. In cases where the engineer requires access to your data to troubleshoot and fix an issue, Customer Lockbox allows you to approve or reject the access request. If you approve it, the engineer is able to access the data. Each request has an expiration time, and once the issue is resolved, the request is closed and access is revoked. Customer Lockbox is included in the Office 365 Enterprise 5 plan, or you can purchase a separate subscription with any other Office 365 Enterprise plan. For more information, see [Office 365 Customer Lockbox Requests](/microsoft-365/compliance/customer-lockbox-requests).
 
-**Microsoft Defender for Office 365:** Defender for Office 365 helps protect your organization against malware and viruses. Defender for Office 365 includes [Safe Links](/office365/securitycompliance/atp-safe-links), [Safe Attachments](/office365/securitycompliance/atp-safe-attachments), [Anti-phishing](/office365/securitycompliance/atp-anti-phishing), and [Spoof intelligence](/office365/securitycompliance/learn-about-spoof-intelligence) features. For more information about Defender for Office 365, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+**Microsoft Defender for Office 365:** Defender for Office 365 helps protect your organization against malware and viruses. Defender for Office 365 includes [Safe Links](/microsoft-365/security/office-365-security/safe-links-about), [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-about), [Anti-phishing](/microsoft-365/security/office-365-security/anti-phishing-protection-about), and [Spoof intelligence](/microsoft-365/security/office-365-security/anti-spoofing-spoof-intelligence) features. For more information about Defender for Office 365, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-[**Safe Links**](/office365/securitycompliance/atp-safe-links) **and** [**Safe Attachments**](/office365/securitycompliance/atp-safe-attachments)**:** Safe Links proactively protects your users from malicious hyperlinks in a message, providing protection every time the link is selected. Safe Attachments protects against unknown malware and viruses, routing all messages and attachments that don't have a known virus/malware signature to a special environment where Defender for Office 365 can detect malicious intent.
+**[Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-about)**: Safe Links proactively protects your users from malicious hyperlinks in a message, providing protection every time the link is selected. Safe Attachments protects against unknown malware and viruses, routing all messages and attachments that don't have a known virus/malware signature to a special environment where Defender for Office 365 can detect malicious intent.
 
 ## Product use rights
 

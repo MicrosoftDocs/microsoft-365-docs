@@ -16,12 +16,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-scenario
   - m365solution-evalutatemtp
   - zerotrust-solution
   - highpri
+  - tier1
 ms.topic: conceptual
+ms.date: 05/14/2021
 ---
 
 # Enable the evaluation environment for Microsoft Defender for Cloud Apps

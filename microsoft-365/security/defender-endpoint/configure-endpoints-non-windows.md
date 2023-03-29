@@ -8,16 +8,17 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365-initiative-defender-endpoint
-ms.topic: article
+- m365-security
+- tier1
+ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Onboard non-Windows devices

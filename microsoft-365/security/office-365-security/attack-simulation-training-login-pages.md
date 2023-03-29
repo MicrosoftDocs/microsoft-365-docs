@@ -8,10 +8,12 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-defender-office365
+  - m365-security
+  - tier2
 description: Admins can learn how to create and manage login pages for simulated phishing attacks in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
+search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Login pages in Attack simulation training
@@ -19,7 +21,7 @@ ms.subservice: mdo
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, login pages are displayed to users in simulations that use the **Credential harvest** and **Link in attachment** [social engineering techniques](attack-simulation-training.md#select-a-social-engineering-technique).
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, login pages are shown to users in simulations that use **Credential harvest** and **Link in attachment** [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique).
 
 To see the available login pages, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> and then select **Login pages**. To go directly to the **Simulation content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
@@ -69,7 +71,7 @@ You can create custom login pages in the following locations:
    Click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard.
 
    > [!NOTE]
-   > ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** is also available during the payload selection step of creating a simulation or simulation automation. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training.md#select-a-payload-and-login-page) and [Create a simulation automation: Select a payload and login page](attack-simulation-training-simulation-automations.md#select-a-payload-and-login-page).
+   > ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** is also available during the payload selection step of creating a simulation or simulation automation. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page) and [Create a simulation automation: Select a payload and login page](attack-simulation-training-simulation-automations.md#select-a-payload-and-login-page).
    >
    > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the login page later. You can pick up where you left off by selecting the login page on the **Tenant login pages** tab in **Login pages**, and then clicking ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**. The partially-completed login page will have the **Status** value **Draft**.
 
@@ -175,6 +177,6 @@ To make a login page the default on the **Tenant login pages** or **Global login
 
 [Get started using Attack simulation training](attack-simulation-training-get-started.md)
 
-[Create a phishing attack simulation](attack-simulation-training.md)
+[Create a phishing attack simulation](attack-simulation-training-simulations.md)
 
 [Simulation automations for Attack simulation training](attack-simulation-training-simulation-automations.md)

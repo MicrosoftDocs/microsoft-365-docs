@@ -6,20 +6,21 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date:
 ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-mdo-migration
   - highpri
+  - tier1
 ms.custom:
 description: Learn the right way to migrate from third-party protection services or devices like Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort to Microsoft Defender for Office 365 protection.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Migrate from a third-party protection service or device to Microsoft Defender for Office 365
@@ -78,8 +79,8 @@ The process of migrating from a third-party protection service to Defender for O
 |Phase|Description|
 |---|---|
 |[Prepare for your migration](migrate-to-defender-for-office-365-prepare.md)|<ol><li>[Inventory the settings at your existing protection service](migrate-to-defender-for-office-365-prepare.md#inventory-the-settings-at-your-existing-protection-service)</li><li>[Check your existing protection configuration in Microsoft 365](migrate-to-defender-for-office-365-prepare.md#check-your-existing-protection-configuration-in-microsoft-365)</li><li>[Check your mail routing configuration](migrate-to-defender-for-office-365-prepare.md#check-your-mail-routing-configuration)</li><li>[Move features that modify messages into Microsoft 365](migrate-to-defender-for-office-365-prepare.md#move-features-that-modify-messages-into-microsoft-365)</li><li>[Define spam and bulk user experiences](migrate-to-defender-for-office-365-prepare.md#define-spam-and-bulk-user-experiences)</li><li>[Identify and designate priority accounts](migrate-to-defender-for-office-365-prepare.md#identify-and-designate-priority-accounts)</li></ol>|
-|[Set up Defender for Office 365](migrate-to-defender-for-office-365-setup.md)|<ol><li>[Create distribution groups for pilot users](migrate-to-defender-for-office-365-setup.md#step-1-create-distribution-groups-for-pilot-users)</li><li>[Configure user submission for user message reporting](migrate-to-defender-for-office-365-setup.md#step-2-configure-user-submission-for-user-message-reporting)</li><li>[Maintain or create the SCL=-1 mail flow rule](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule)</li><li>[Configure Enhanced Filtering for Connectors](migrate-to-defender-for-office-365-setup.md#step-4-configure-enhanced-filtering-for-connectors)</li><li>[Create pilot protection policies](migrate-to-defender-for-office-365-setup.md#step-5-create-pilot-protection-policies)</li></ol>|
-|[Onboard to Defender for Office 365](migrate-to-defender-for-office-365-onboard.md)|<ol><li>[Begin onboarding Security Teams](migrate-to-defender-for-office-365-onboard.md#step-1-begin-onboarding-security-teams)</li><li>[(Optional) Exempt pilot users from filtering by your existing protection service](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)</li><li>[Tune spoof intelligence](migrate-to-defender-for-office-365-onboard.md#step-3-tune-spoof-intelligence)</li><li>[Tune impersonation protection and mailbox intelligence](migrate-to-defender-for-office-365-onboard.md#step-4-tune-impersonation-protection-and-mailbox-intelligence)</li><li>[Use data from user submissions to measure and adjust](migrate-to-defender-for-office-365-onboard.md#step-5-use-data-from-user-submissions-to-measure-and-adjust)</li><li>[(Optional) Add more users to your pilot and iterate](migrate-to-defender-for-office-365-onboard.md#step-6-optional-add-more-users-to-your-pilot-and-iterate)</li><li>[Extend Microsoft 365 protection to all users and turn off the SCL=-1 mail flow rule](migrate-to-defender-for-office-365-onboard.md#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)</li><li>[Switch your MX records](migrate-to-defender-for-office-365-onboard.md#step-8-switch-your-mx-records)</li></ol>|
+|[Set up Defender for Office 365](migrate-to-defender-for-office-365-setup.md)|<ol><li>[Create distribution groups for pilot users](migrate-to-defender-for-office-365-setup.md#step-1-create-distribution-groups-for-pilot-users)</li><li>[Configure user reported message settings](migrate-to-defender-for-office-365-setup.md#step-2-configure-user-reported-message-settings)</li><li>[Maintain or create the SCL=-1 mail flow rule](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule)</li><li>[Configure Enhanced Filtering for Connectors](migrate-to-defender-for-office-365-setup.md#step-4-configure-enhanced-filtering-for-connectors)</li><li>[Create pilot protection policies](migrate-to-defender-for-office-365-setup.md#step-5-create-pilot-protection-policies)</li></ol>|
+|[Onboard to Defender for Office 365](migrate-to-defender-for-office-365-onboard.md)|<ol><li>[Begin onboarding Security Teams](migrate-to-defender-for-office-365-onboard.md#step-1-begin-onboarding-security-teams)</li><li>[(Optional) Exempt pilot users from filtering by your existing protection service](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)</li><li>[Tune spoof intelligence](migrate-to-defender-for-office-365-onboard.md#step-3-tune-spoof-intelligence)</li><li>[Tune impersonation protection and mailbox intelligence](migrate-to-defender-for-office-365-onboard.md#step-4-tune-impersonation-protection-and-mailbox-intelligence)</li><li>[Use data from user reported messages to measure and adjust](migrate-to-defender-for-office-365-onboard.md#step-5-use-data-from-user-reported-messages-to-measure-and-adjust)</li><li>[(Optional) Add more users to your pilot and iterate](migrate-to-defender-for-office-365-onboard.md#step-6-optional-add-more-users-to-your-pilot-and-iterate)</li><li>[Extend Microsoft 365 protection to all users and turn off the SCL=-1 mail flow rule](migrate-to-defender-for-office-365-onboard.md#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)</li><li>[Switch your MX records](migrate-to-defender-for-office-365-onboard.md#step-8-switch-your-mx-records)</li></ol>|
 
 ## Next step
 

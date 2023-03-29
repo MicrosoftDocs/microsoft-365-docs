@@ -14,9 +14,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 03/25/2021
 ---
 
 # Evaluate Microsoft Defender for Endpoint 

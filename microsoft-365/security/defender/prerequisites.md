@@ -15,11 +15,14 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 02/16/2021
 ---
 
 # Microsoft 365 Defender prerequisites
@@ -55,7 +58,7 @@ For more information, [view the Microsoft 365 Enterprise service plans](https://
 ### Check your existing  licenses
 Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses. In the admin center, go to **Billing** > **Licenses**.
 
->[!NOTE]
+> [!NOTE]
 > You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](/azure/active-directory/roles/permissions-reference) to be able to see license information. If you encounter access problems, contact a global admin.
 
 ## Required permissions

@@ -16,13 +16,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-    - M365-security-compliance
+    - m365-security
     - m365solution-getstarted
     - highpri
+    - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 02/17/2021
 ---
 
 # Turn on Microsoft 365 Defender
@@ -66,6 +68,7 @@ Microsoft 365 Defender aggregates data from the various supported services that 
 To get the best protection and optimize Microsoft 365 Defender, we recommend deploying all applicable supported services on your network. For more information, [read about deploying supported services](deploy-supported-services.md).
 
 ## Onboard to the service
+
 Onboarding to Microsoft 365 Defender is simple. From the navigation menu, select any item, such as **Incidents & alerts**, **Hunting**, **Action center**, or **Threat analytics** to initiate the onboarding process. 
 
 ### Data center location
@@ -91,6 +94,7 @@ Once the service is provisioned, it adds:
 *Microsoft 365 Defender portal with incidents management and other capabilities*
 
 ### Getting Microsoft Defender for Identity data 
+
 To enable the integration with Microsoft Defender for Cloud Apps, you'll need to log in to the Microsoft Defender for Cloud Apps at least once.
 
 ## Get assistance

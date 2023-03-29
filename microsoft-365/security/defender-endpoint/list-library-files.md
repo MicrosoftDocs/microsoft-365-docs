@@ -16,10 +16,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 ms.custom: api
+ms.date: 06/03/2021
 ---
 
 #  List library files 

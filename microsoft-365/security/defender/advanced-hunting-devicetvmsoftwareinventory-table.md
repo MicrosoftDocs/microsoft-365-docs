@@ -16,8 +16,11 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.date: 04/14/2021
 ---
 
 # DeviceTvmSoftwareInventory
@@ -27,15 +30,15 @@ ms.topic: article
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
 
->[!IMPORTANT]
+
+> [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 The `DeviceTvmSoftwareInventory` table in the advanced hunting schema contains the [Microsoft Defender Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) inventory of software currently installed on devices in your network, including end of support information. You can, for instance, hunt for events involving devices that are installed with a currently vulnerable software version. Use this reference to construct queries that return information from the table.
 
->[!NOTE]
+> [!NOTE]
 > The `DeviceTvmSoftwareInventory` and `DeviceTvmSoftwareVulnerabilities` tables have replaced the `DeviceTvmSoftwareInventoryVulnerabilities` table. Together, the first two tables include more columns you can use to help inform your vulnerablity management activities or hunt for vulnerable devices.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).

@@ -7,15 +7,15 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 01/03/2022
+ms.date: 01/27/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.reviewer: inbadian
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier1
 ms.custom: intro-get-started
 ---
 
@@ -63,14 +63,14 @@ The navigation bar on the left side of the screen enables you to move easily bet
 | **Incidents & alerts** > **Incidents** | Navigates to the **Incidents** list. Incidents are created when alerts are triggered and/or threats are detected. By default, the **Incidents** list displays data for the last 30 days, with the most recent incident listed first. <br/><br/> To learn more, see [Incidents](view-incidents-queue.md). |
 | **Incidents & alerts** > **Alerts** | Navigates to the **Alerts** list (also referred to as the **Alerts queue**). Alerts are triggered when a suspicious or malicious file, process, or behavior is detected. By default, the **Alerts** list displays data for the last 30 days, with the most recent alert listed first. <br/><br/> To learn more, see [Alerts](alerts-queue.md). |
 | **Action center** | Navigates to the Action center, which tracks remediation and manual response actions. The Action center tracks activities like these: <br/>- Microsoft Defender Antivirus encounters a malicious file and then blocks/removes that file. <br/>- Your security team isolates a device.<br/>- Defender for Endpoint detects and quarantines a file. <br/><br/> To learn more, see [Action center](auto-investigation-action-center.md). |
-| **Secure score** | Displays a representation of your organization's security posture along with a list of improvement actions and metrics. <br/><br/> To learn more, see [Microsoft Secure Score](../defender/microsoft-secure-score.md). |
+| **Secure score** | Displays a representation of your organization's security posture along with a list of recommended actions and metrics. <br/><br/> To learn more, see [Microsoft Secure Score](../defender/microsoft-secure-score.md). |
 | **Learning hub** | Navigates to a list of learning paths that you can access to learn more about Microsoft 365 security capabilities.  |
 | **Endpoints** > **Search** | Navigates to a page where you can search for specific devices by device name. In the list of results, you can see details, such as risk level and health state, at a glance. |
 |  **Endpoints** > **Device inventory** | Navigates to your list of devices that are onboarded to Defender for Endpoint. Provides information about devices, such as their exposure and risk levels. <br/><br/> To learn more, see [Device inventory](machines-view-overview.md). |
 |  **Endpoints** > **Configuration & baselines** | Expands to show **Security baselines** and **Configuration management**. |
 |  **Endpoints** > **Configuration & baselines** > **Security baselines** | Security baselines are pre-configured policies and groups of settings that can help you apply recommended security settings efficiently and effectively. Baselines include settings that are based on industry best practices. You can keep the default settings, or customize your baselines to suit your organization's needs. <br/><br/> To learn more, see [Use security baselines to configure Windows 10 devices in Intune](/mem/intune/protect/security-baselines). |
 |  **Endpoints** > **Configuration & baselines** > **Configuration management** | Navigates to the **Device configuration management** page, where you can view information about onboarded devices, and take steps to onboard more devices. |
-| **Reports** | Navigates to your reports, such as your [Threat protection report](threat-protection-reports.md), [Device health and compliance report](machine-reports.md), and your [Web protection report](web-protection-overview.md). |
+| **Reports** | Navigates to your reports, such as your [Threat protection report](threat-protection-reports.md), [Device health and compliance report](device-health-reports.md) and your [Web protection report](web-protection-overview.md). |
 | **Health** | Includes links to the **Service health** and **Message center**.  |
 | **Health** > **Service health** | Navigates to the Service health page in the Microsoft 365 admin center. This page enables you to view health status across all the services available with your organization's subscriptions.   |
 | **Health** > **Message center** | Navigates to the Message center in the Microsoft 365 admin center. The Message center provides information about planned changes. Each message describes what's coming, how it might affect users, and how to manage changes. |  
@@ -153,7 +153,7 @@ To access your Device health report, in the Microsoft 365 Defender portal, choos
 Scroll down to see all the views in each list. By default, the views in the **Device trends** column display data for the past 30 days, but you can change a view to display data for the last three months, last six months, or a custom time range (up to 180 days). The **Device summary** views are snapshots for the previous business day.
 
 > [!TIP]
-> To learn more, see [Device health](machine-reports.md).
+> To learn more, see [Device health](device-health-reports.md).
 
 ### Web protection report
 

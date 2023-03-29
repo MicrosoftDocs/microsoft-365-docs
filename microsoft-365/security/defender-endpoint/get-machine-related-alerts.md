@@ -11,10 +11,14 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Get machine related alerts  API
@@ -52,7 +56,8 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 >
 > - The user needs to have at least the following role permission: 'View Data'. For more information about permissions, see [Create and manage roles](user-roles.md).
 > - The user needs to have access to the device, based on device group settings. For more information about device group settings, see [Create and manage device groups](machine-groups.md).
-
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 ## HTTP request
 
 ```http

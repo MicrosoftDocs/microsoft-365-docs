@@ -1,18 +1,18 @@
 ---
 title: Manage access to Microsoft Whiteboard for your organization
-ms.author: v-jdeweese
-author: johnddeweese
+ms.author: alexfaulkner
+author: alexfaulkner
 manager: alexfaulkner
 ms.reviewer: 
+ms.date: 11/03/2021
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to set up Microsoft Whiteboard for your organization in the Microsoft 365 admin center.
-
 ---
 
 # Manage access to Microsoft Whiteboard for your organization
@@ -39,7 +39,7 @@ You can control access to Whiteboard in the following ways:
 - Require conditional access policies for accessing Whiteboard using the Azure Active Directory admin center.
 
 >[!NOTE]
-> Teams meeting policies only hide Whiteboard entry points; it doesn't prevent the users from using Whiteboard. Conditional access policies prevent any access to Whiteboard, but doesn't hide the entry points.
+> Teams meeting policies only hide Whiteboard entry points; they don't prevent the users from using Whiteboard. Conditional access policies prevent any access to Whiteboard, but don't hide the entry points.
 
 ## Enable or disable Whiteboard
 
@@ -63,7 +63,7 @@ To enable or disable Whiteboard for your tenant, do the following steps:
  
 ## Show or hide Whiteboard
 
-To show or hide Whiteboard in meetings, see [Meeting policy settings](/microsoftteams/meeting-policies-content-sharing). 
+To show or hide Whiteboard in meetings, see [Meeting policy settings](/microsoftteams/meeting-policies-content-sharing). To control the availability of the Whiteboard app for each user within the organization, see [App policy settings](/microsoftteams/app-policies).
 
 ## Prevent access to Whiteboard
 

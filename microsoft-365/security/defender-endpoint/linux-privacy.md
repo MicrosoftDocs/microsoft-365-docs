@@ -11,9 +11,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Privacy for Microsoft Defender for Endpoint on Linux
@@ -77,7 +81,7 @@ This section describes what is considered required diagnostic data and what is c
 
 ### Data fields that are common for all events
 
-There is some information about events that is common to all events, regardless of category or data subtype.
+There's some information about events that is common to all events, regardless of category or data subtype.
 
 The following fields are considered common for all events:
 
@@ -132,7 +136,7 @@ The following fields are collected:
 |edr.early_preview|Whether the device should run EDR early preview features.|
 |edr.group_id|Group identifier used by the detection and response component.|
 |edr.tags|User-defined tags.|
-|features.\[optional feature name\]|List of preview features, along with whether they are enabled or not.|
+|features.\[optional feature name\]|List of preview features, along with whether they're enabled or not.|
 
 #### Product and service usage data events
 
@@ -163,7 +167,7 @@ The following fields are collected:
 |subsystem|The underlying subsystem used for real-time protection.|
 |ipc.connects|Number of connection requests received by the kernel extension.|
 |ipc.rejects|Number of connection requests rejected by the kernel extension.|
-|ipc.connected|Whether there is any active connection to the kernel extension.|
+|ipc.connected|Whether there's any active connection to the kernel extension.|
 
 #### Support data
 
@@ -173,7 +177,7 @@ Diagnostic logs are collected only with the consent of the user as part of the f
 
 - All files under */var/log/microsoft/mdatp*
 - Subset of files under */etc/opt/microsoft/mdatp* that are created and used by Defender for Endpoint on Linux
-- Product installation and uninstallation logs under */var/log/microsoft_mdatp_\*.log*
+- Product installation and uninstallation logs under /var/log/microsoft/mdatp/*.log
 
 ### Optional diagnostic data
 

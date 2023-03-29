@@ -15,12 +15,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
 ms.custom: api
+ms.date: 02/08/2023
 ---
 
 # Update incidents API
@@ -30,6 +33,9 @@ ms.custom: api
 **Applies to:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview). For information about the new _update incident_ API using MS Graph security API, see [Update incident](/graph/api/resources/security-incident-update).
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -78,13 +84,13 @@ Property|Type|Description
 ---|---|---
 status|Enum|Specifies the current status of the incident. Possible values are: `Active`, `Resolved`, and `Redirected`.
 assignedTo|string|Owner of the incident.
-classification|Enum|Specification of the incident. Possible values are: `Unknown`, `FalsePositive`, `TruePositive`.
-determination|Enum|Specifies the determination of the incident. Possible values are: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
-tags|string List|List of Incident tags.
+classification|Enum|Specification of the incident. Possible values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.
+determination|Enum|Specifies the determination of the incident. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).
+tags|string list|List of Incident tags.
 comment|string|Comment to be added to the incident.
 
->[!NOTE]
->Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
+> [!NOTE]
+> Around August 29, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ## Response
 
@@ -126,6 +132,8 @@ Here's an example of the request.
 ```
 
 ## Related articles
+
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Access the Microsoft 365 Defender APIs](api-access.md)
 - [Learn about API limits and licensing](api-terms.md)

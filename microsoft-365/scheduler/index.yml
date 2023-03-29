@@ -21,7 +21,8 @@ metadata:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - items:
+    - summary: "Important: Scheduler for Microsoft 365 will stop working in August 2023. After that date, Scheduler won't be able to create or modify any meeting requests." # < 160 chars (Optional; Remove if not applicable.)
+      items:
         # Card
         - title: What is Scheduler for Microsoft 365?
           summary: Learn about Scheduler for Microsoft 365 and its features, who and how it will benefit.

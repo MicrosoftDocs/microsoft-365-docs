@@ -14,9 +14,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m65-security-compliance
+- tier3
+ms.topic: conceptual
 ms.custom: api
+ms.date: 10/25/2021
 ---
 
 # Fetch Microsoft 365 Defender incidents 
@@ -27,6 +30,8 @@ ms.custom: api
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 > [!NOTE]
 > This action is taken by the MSSP.
@@ -176,3 +181,7 @@ You can now download the relevant configuration file for your SIEM and connect t
 ## Fetch alerts from MSSP customer's tenant using APIs
 
 For information on how to fetch alerts using REST API, see [Pull alerts using REST API](../defender-endpoint/pull-alerts-using-rest-api.md).
+
+## Related topics
+
+[Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)

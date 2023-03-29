@@ -3,8 +3,6 @@ title: View the details and results of an automated investigation
 description: During and after an automated investigation, you can view the results and key findings
 keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.appverid: met150
-ms.prod: m365-security
-ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,17 +10,20 @@ f1.keywords:
 - NOCSH
 author: dansimp
 ms.author: dansimp
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.custom: 
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
+ms.date: 03/15/2021
 ---
 
 # View the details and results of an automated investigation
@@ -34,7 +35,7 @@ With Microsoft Defender for Endpoint, when an [automated investigation](automate
 
 ## (NEW!) Unified investigation page
 
-The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)  and [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp).
+The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)  and [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365).
 
 > [!TIP]
 > To learn more about what's changing, see [(NEW!) Unified investigation page](/microsoft-365/security/mtp/mtp-autoir-results).
@@ -76,7 +77,9 @@ Use the investigation details view to see past, current, and pending activity pe
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
 > [!NOTE]
-> The specific tabs you see in an investigation details page depends on what your subscription includes. For example, if your subscription does not include Microsoft Defender for Office 365 Plan 2, you won't see a **Mailboxes** tab.
+> - The specific tabs you see in an investigation details page depends on what your subscription includes. For example, if your subscription does not include Microsoft Defender for Office 365 Plan 2, you won't see a **Mailboxes** tab.
+>
+> - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 |Tab|Description|
 |---|---|

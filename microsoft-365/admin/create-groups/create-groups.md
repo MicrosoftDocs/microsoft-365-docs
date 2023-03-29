@@ -1,15 +1,18 @@
 ---
 title: "Create a group in the admin center"
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -87,4 +90,3 @@ After creating a new group and adding members, you can further configure your gr
 
 [Manage guest access to Microsoft 365 groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (article)\
 [Choose the domain to use when creating Microsoft 365 groups](../../solutions/choose-domain-to-create-groups.md) (article)\
-[Upgrade distribution lists to Microsoft 365 groups](../manage/upgrade-distribution-lists.md) (article)

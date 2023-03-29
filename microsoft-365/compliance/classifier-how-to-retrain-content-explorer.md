@@ -5,12 +5,14 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 09/02/2020
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: null
-ms.collection: M365-security-compliance
+ms.collection: 
+- tier1
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -33,6 +35,8 @@ Watch this video for a quick summary of the tuning and retraining process. You'l
 
 > [!NOTE]
 > Pre-trained classifiers cannot be retrained.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Permissions
 

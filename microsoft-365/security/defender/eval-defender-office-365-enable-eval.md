@@ -17,11 +17,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-scenario
   - m365solution-evalutatemtp
   - zerotrust-solution
   - highpri
+  - tier1
 ms.topic: how-to
 ---
 
@@ -50,15 +51,15 @@ To effectively evaluate Microsoft Defender for Office 365, it's important that i
 3. In the domain details flyout that opens, select the **DNS records** tab. Make note of the MX record that's generated and assigned to your EOP tenant.
 4. Access your external (public) DNS zone and check the primary MX record associated with your email domain:
     - *If your public MX record currently matches the assigned EOP address (for example, contoso-com.mail.protection.outlook.com) then no further routing changes should be required*.
-    - If your public MX record currently resolves to a third-party or on-premises SMTP gateway then additional routing configurations may be required.
-    - If your public MX record currently resolves to on-premises Exchange then you may still be in a hybrid model where some recipient mailbox have not yet been migrated to EXO.
+    - If your public MX record currently resolves to a third-party or on-premises SMTP gateway, then additional routing configurations may be required.
+    - If your public MX record currently resolves to on-premises Exchange, then you may still be in a hybrid model where some recipient mailboxes haven't yet been migrated to EXO.
 
 ## Step 2: Audit accepted domains
 
 1. In the Exchange admin center (EAC) at <https://admin.exchange.microsoft.com>, expand *Mail flow*, and then click **Accepted domains**.Or, to go directly to the *Accepted domains* page, use <https://admin.exchange.microsoft.com/#/accepteddomains>.
 2. On the *Accepted domains* page, make note of the **Domain type** value for your primary email domain.
-    - If the domain type is set to **Authoritative** then it is assumed all recipient mailboxes for your organization currently reside in Exchange Online.
-    - If the domain type is set to **InternalRelay** then you may still be in a hybrid model where some recipient mailboxes still reside on-premises.
+    - If the domain type is set to **Authoritative**, then it's assumed all recipient mailboxes for your organization currently reside in Exchange Online.
+    - If the domain type is set to **InternalRelay**, then you may still be in a hybrid model where some recipient mailboxes still reside on-premises.
 
 ## Step 3: Audit inbound connectors
 
@@ -73,7 +74,7 @@ Use the instructions here to activate your Microsoft Defender for Office 365 eva
 
 For detailed information, see [Try Microsoft Defender for Office 365](../office-365-security/try-microsoft-defender-for-office-365.md).
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> expand *Email & collaboration* \> select **Policies & rules** \> select **Threat policies** \> scroll down to the *Others* section, and then select **Evaluation mode**. Or, to go directly to the *Evaluation mode* page, use <https://security.microsoft.com/atpEvaluation>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, expand *Email & collaboration* \> select **Policies & rules** \> select **Threat policies** \> scroll down to the *Others* section, and then select **Evaluation mode**. Or, to go directly to the *Evaluation mode* page, use <https://security.microsoft.com/atpEvaluation>.
 
 2. On the *Evaluation mode* page, click **Start evaluation**.
 

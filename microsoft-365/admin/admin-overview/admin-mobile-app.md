@@ -5,11 +5,15 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -29,6 +33,8 @@ description: "Get the Microsoft 365 Admin app, your companion to the web-based M
 ---
 
 # About the Microsoft 365 Admin mobile app
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
@@ -71,6 +77,10 @@ You must be an administrator in a Microsoft 365 organization to use the admin mo
 [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
+
+## Watch: Install and use the admin mobile app
+
+[!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
 ## Frequently asked questions
 
