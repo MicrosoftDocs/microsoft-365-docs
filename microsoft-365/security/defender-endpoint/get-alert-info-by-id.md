@@ -82,4 +82,4 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body. If alert with the specified ID wasn't found - 404 Not Found.
+If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body. If an alert with the specified ID wasn't found - 404 Not Found.
