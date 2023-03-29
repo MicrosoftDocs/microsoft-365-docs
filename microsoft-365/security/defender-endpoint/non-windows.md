@@ -40,7 +40,7 @@ Organizations face threats across a variety of platforms and devices. Our teams 
 With Microsoft Defender for Endpoint, customers benefit from a unified view of all threats and alerts in the Microsoft 365 Defender portal, across Windows and non-Windows platforms, enabling them to get a full picture of what's happening in their environment, which empowers them to more quickly assess and respond to threats.
 
 > [!NOTE]
-> Microsoft Defender for Endpoint does not support native compute workloads in Amazon Web Services (AWS) and Google Cloud Platform (GCP).
+> Microsoft Defender for Endpoint doesn't support native compute workloads in Amazon Web Services (AWS) and Google Cloud Platform (GCP).
 
 ## Microsoft Defender for Endpoint on macOS
 
