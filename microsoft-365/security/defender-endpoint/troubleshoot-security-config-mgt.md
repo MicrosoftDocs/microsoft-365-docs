@@ -99,7 +99,7 @@ In the **Detailed Results** section of the report, the Client Analyzer also prov
 > [!TIP]
 > Make sure the Detailed Results section of the report does not include any "Errors", and make sure to review all "Warning" messages.
 
-For example, as part of the Security Management onboarding flow, it's required for the Azure Active Directory Tenant ID in your Microsoft Defender for Endpoint Tenant to match the SCP Tenant ID that appears in the reports' **Device Configuration Management Details** section. If relevant, the report output recommends to perform this verification.
+For example, as part of the Security Management onboarding flow, it's required for the Azure Active Directory Tenant ID in your Microsoft Defender for Endpoint Tenant to match the SCP Tenant ID that appears in the reports' **Device Configuration Management Details** section. If relevant, the report output recommends performing this verification.
 
 :::image type="content" source="images/detailed-results.png" alt-text="The page displaying the detailed results" lightbox="images/detailed-results.png":::
 
