@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 01/18/2023
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -41,7 +41,7 @@ Campaigns and political parties in the USA are eligible for special pricing for 
    > [!IMPORTANT]
    > Due to local regulations, we are unable to offer Microsoft 365 for Campaigns in the following states at this time: CO, DE, IL, OK, WI & WY. We encourage campaigns in those states to explore additional offerings at [Microsoft 365 for business](https://www.office.com/business).
 
-If your campaign or political party qualifies, Microsoft 365 for Campaigns is the least expensive plan available through Microsoft. See [Sign up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).  
+If your campaign or political party qualifies, Microsoft 365 for Campaigns is the least expensive plan available through Microsoft. See [Microsoft 365 for Campaigns](https://m365forcampaigns.microsoft.com).  
 
 > [!TIP]
 > If you're not eligible for special pricing, Microsoft 365 Business Premium is still the most cost-effective way obtain comprehensive security for a collaboration environment. See [How to get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md).

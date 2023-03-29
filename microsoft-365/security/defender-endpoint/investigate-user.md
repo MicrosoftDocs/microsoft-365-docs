@@ -62,10 +62,8 @@ The **User details** pane on left provides information about the user, such as r
 
 The Overview, Alerts, and Observed in organization are different tabs that display various attributes about the user account.
 
-
->[!NOTE]
->For Linux devices, information about logged in users is not displayed.
-
+> [!NOTE]
+> For Linux devices, information about logged in users is not displayed.
 
 ### Overview
 

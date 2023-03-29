@@ -97,7 +97,6 @@ For processes other than Microsoft Edge and Internet Explorer, web protection sc
 - Encrypted URLs (FQDN only) can be blocked in third party browsers (that is, other than Internet Explorer, Edge)
 - Full URL path blocks can be applied for unencrypted URLs
 - If there are conflicting URL indicator policies, the longer path is applied. For example, the URL indicator policy `https://support.microsoft.com/office` takes precedence over the URL indicator policy `https://support.microsoft.com`.
-There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
 
 ### Warn mode controls
 
@@ -131,11 +130,11 @@ _Allow_ overrides _warn_ which overrides _block_: Allow > Warn > Block. Therefor
 ### Policy conflict handling follows the order below
 
 - Defender for Cloud Apps creates an unsanctioned indicator for all users but URL is allowed for a specific device group, the specific device group is Blocked access to the URL.
-1. If the IP, URL/Domain is allowed
-- If the IP, URL/Domain isn't allowed
 - If the IP, URL/Domain is allowed
-1. If the IP, URL/Domain isn't allowed
-1. If the IP, URL/Domain is allowed
+- If the IP, URL/Domain is not allowed
+- If the IP, URL/Domain is allowed
+- If the IP, URL/Domain is not allowed
+- If the IP, URL/Domain is allowed
 
 Threat and vulnerability management's block vulnerable application features uses the file IoCs for enforcement and will follow the above conflict handling order.
 
@@ -170,6 +169,9 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
    - Scope - Define the scope of the machine group.
 
 5. Review the details in the **Summary** tab, then select **Save**.
+
+> [!NOTE]
+> There may be up to 2 hours of latency between the time a policy is created and the URL or IP being blocked on the device.
 
 ## Related articles
 
