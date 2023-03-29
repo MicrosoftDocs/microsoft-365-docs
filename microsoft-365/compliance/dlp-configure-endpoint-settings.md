@@ -67,6 +67,7 @@ If bandwidth utilization isn't a concern, you select **No limit** to allow unlim
 
 These Windows versions support advanced classification scanning and protection:
 
+- all Windows 11 versions
 - Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
 - Windows 10 versions 19H1/19H2 (KB 5007189)
 - Windows 10 RS5 (KB 5006744)
@@ -78,7 +79,7 @@ These Windows versions support advanced classification scanning and protection:
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
 > [!TIP]
-> Advanced classification must be enabled to see contextual text (in preview)  for DLP rule matched events in Activity explorer. Learn more about contextual text at [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  Be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
+> Advanced classification must be enabled to see contextual text  for DLP rule matched events in Activity explorer. Learn more about contextual text at [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  Be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
 
 ### File path exclusions
 
@@ -86,9 +87,9 @@ Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > *
 
 You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP policy enforcement on your devices because they're too noisy or don’t contain files you're interested in. Files in those locations won't be audited and any files that are created or modified in those locations won't be subject to DLP policy enforcement. You can configure path exclusions in DLP settings.
 
-#### Windows 10 devices
+#### Windows 10/11 devices
 
-You can use this logic to construct your exclusion paths for Windows 10 devices:
+You can use this logic to construct your exclusion paths for Windows 10/11 devices:
 
 - Valid file path that ends with `\`, which means only files directly under folder. <br/>For example: `C:\Temp\`
 
@@ -106,7 +107,7 @@ You can use this logic to construct your exclusion paths for Windows 10 devices:
 
 #### macOS devices
 
-Similar to Windows 10 devices you can add your own exclusions for macOS devices.
+Similar to Windows 10/11 devices you can add your own exclusions for macOS devices.
 
 - File path definitions are case insensitive, so `User` is the same as `user`.
 
@@ -124,11 +125,33 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 - /opt/*
 - /Users/*/Library/Application Support/Microsoft/Teams/*
 
+### Network share coverage and exclusions (preview)
+
+> [!IMPORTANT]
+> If you want to use Network share coverage and exclusions, you have to register your tenant at [Network share coverage](https://aka.ms/networkfileshares-edlp).
+
+**Network share coverage and exclusions (preview)** extends endpoint DLP policies and actions to new and edited files on network shares and mapped network drives. If [just in time protection (preview)](endpoint-dlp-learn-about.md#just-in-time-protection-preview) is also enabled, it will also be extended to cover network shares and mapped drives when you enable network share coverage and exclusions. If you want to exclude a specific network path for all monitored devices, add the path value in **Exclude these network share paths**.
+
+|Network share coverage and exclusions (preview) |Just in time protection (preview) |Resultant behavior  |
+|---------|---------|---------|
+|Enabled     |Disabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to.  [Devices actions](dlp-policy-reference.md#devices-actions)        |
+|Disabled    |Enabled         |- Just in time protection is applied only to the files that are on storage devices that are local to the endpoint. |
+|Enabled     |Enabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to. [Devices actions](dlp-policy-reference.md#devices-actions) </br>- Just in time protection is applied to all the network shares and mapped drives that the device is connected to.         |
+
+
+**Network share coverage and exclusions** complements [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions).
+
+|Network share coverage and exclusions|DLP on-premises repositories|Resultant behavior|
+|---------|---------|---------|
+|Enabled| Disabled|- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to. [Devices actions](dlp-policy-reference.md#devices-actions)|
+|Disabled|Enabled|- Policies that are scoped to On-premises repositories can enforce protective actions on on-premises data-at-rest in file shares and SharePoint document libraries and folders.  [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions)|
+|Enabled | Enabled|- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to.  [Devices actions](dlp-policy-reference.md#devices-actions)</br>- Policies that are scoped to On-premises repositories can enforce protective actions on on-premises data-at-rest in file shares and SharePoint document libraries and folders. [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions)  
+
 ### Restricted apps and app groups
 
 #### Restricted apps
 
-**Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10 and macOS devices.
+**Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10/11 and macOS devices.
 
 When **Access by restricted apps** is selected in a policy and a user uses an app that is on the restricted apps list to access a protected file, the activity will be `audited`, `blocked`, or `blocked with override` depending on how you configured it. That is unless the same app is a member of a **Restricted app group**, then the actions configured for activities in the **Restricted app group** override the actions configured for the access activity for the **Restricted apps** list. All activity is audited and available to review in activity explorer.
 
@@ -339,8 +362,6 @@ Here are some examples:
 |*.contoso.com   | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/allsubsites </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/allsubsites </br> //<!--nourl-->allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | //<!--nourl-->allsubdomains.contoso.com.au|
 |*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/|
 |*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
-
-
 
 ### Additional settings for endpoint DLP
 
