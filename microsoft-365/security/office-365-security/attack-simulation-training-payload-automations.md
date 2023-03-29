@@ -70,10 +70,10 @@ To create a payload automation, do the following steps:
      - **Equal to**, **Less than**, **Greater than**, **Less than or equal to**, or **Greater than or equal to**.
      - **Enter value**: The number of users that were targeted by the phishing campaign.
    - **Campaigns with a specific phish technique**: Select one of the available values:
-     - **Credential harvest**
-     - **Malware attachment**
-     - **Link in attachment**
-     - **Link to malware**
+     - **Credential Harvest**
+     - **Malware Attachment**
+     - **Link in Attachment**
+     - **Link to Malware**
      - **Drive-by URL**
    - **Specific sender domain**: Enter a sender email domain value (for example, contoso.com).
    - **Specific sender name**: Enter a sender name value.
@@ -98,7 +98,7 @@ To create a payload automation, do the following steps:
 
    When you're finished, click **Done**.
 
-Back on the **Payload automations** in **Automations**, the login page that you created is now list.
+Back on the **Payload automations** in **Automations**, the login page that you created is now listed.
 
 ## Turn payload automations on or off
 

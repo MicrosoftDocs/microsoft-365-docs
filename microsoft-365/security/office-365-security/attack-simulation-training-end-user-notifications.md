@@ -52,9 +52,9 @@ The following information is shown for each notification<sup>\*</sup>:
 
 <sup>\*</sup> To see all of the columns, you might need to narrow some columns or zoom out in your browser.
 
-Click a column headers to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, all available columns are selected.
+Click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, all available columns are selected.
 
-To find a notification in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the name of the notification.
+To find a notification in the list, type part of the notification name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
 
 To group the notifications by type, click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and then select **Notification type**. To ungroup the notifications, select **None**.
 

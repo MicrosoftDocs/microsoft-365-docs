@@ -53,7 +53,7 @@ To see the available Training modules, open the Microsoft 365 Defender portal at
 - **Completion rate**
 - **Preview**: Click the **Preview** button in this column to watch the training.
 
-To find a Training module in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the name of the module.
+To find a Training module in the list, type the name of the module in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, and then press the ENTER key.
 
 Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the information on the page. The following filters are available in the flyout that opens:
 

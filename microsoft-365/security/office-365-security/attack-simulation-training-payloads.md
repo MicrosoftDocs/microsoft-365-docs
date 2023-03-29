@@ -45,19 +45,19 @@ The following information is shown for each payload on the **Global payloads** a
 - **Created by**: For built-in payloads, the value is **Microsoft**. For custom payloads, the value is the UPN of the user who created the payload.
 - **Last modified**
 - **Technique**: One of the available [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
-  - **Credential harvest**
-  - **Malware attachment**
-  - **Link in attachment**
-  - **Link to malware**
+  - **Credential Harvest**
+  - **Malware Attachment**
+  - **Link in Attachment**
+  - **Link to Malware**
   - **Drive-by URL**
-  - **OAuth consent grant**
+  - **OAuth Consent Grant**
 - **Status**: The value is **Ready** or **Draft**. On the **Global payloads** tab, the value is always **Ready**.
 
 <sup>\*</sup> To see all of the columns, you might need to narrow some columns or zoom out in your browser.
 
-Click a column headers to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, the only available column that's not selected is **Platform**.
+Click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, the only available column that's not selected is **Platform**.
 
-To find a payload in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the name of the payload.
+To find a payload in the list, type part of the payload name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
 
 Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) to filter the payloads by one or of the following values:
 
@@ -110,10 +110,10 @@ When you select a payload from the list by clicking anywhere in the row other th
 
    On the **Tenant payloads** tab, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** to start the new payload wizard.
 
-   ![Create a payload on the Tenant payloads tab in Payloads in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-payload-create.png)
+   :::image type="content" source="../../media/attack-sim-training-payload-create.png" alt-text="Create a payload on the Tenant payloads tab in Payloads in Attack simulation training in the Microsoft 365 Defender portal." lightbox="../../media/attack-sim-training-payload-create.png":::
 
    > [!NOTE]
-   > ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** is also available on the **Select payload and login page** step of the simulation creation wizard. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page).
+   > ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** is also available on the **Select payload and login page** step of the new simulation wizard. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page).
    >
    > At any point during the new payload wizard, you can click **Save and close** to save your progress and continue configuring the payload later. You can pick up where you left off by selecting the notification on the **Tenant payloads** tab in **Payloads**, and then clicking ![Edit payload icon.](../../media/m365-cc-sc-edit-icon.png) **Edit payload**. The partially-completed payload will have the **Status** value **Draft**.
 
@@ -121,12 +121,11 @@ When you select a payload from the list by clicking anywhere in the row other th
 
    Click when you finished on the **Select type** page, click **Next**.
 
-3. On the **Select technique** page, the available options are the same as on the **Select technique** page in the simulation creation wizard:
-
-   - **Credential harvest**
-   - **Malware attachment**
-   - **Link in attachment**
-   - **Link to malware**
+3. On the **Select technique** page, the available options are the same as on the **Select technique** page in the new simulation wizard:
+   - **Credential Harvest**
+   - **Malware Attachment**
+   - **Link in Attachment**
+   - **Link to Malware**
    - **Drive-by URL**
    - **OAuth Consent Grant**
 
@@ -150,15 +149,15 @@ When you select a payload from the list by clicking anywhere in the row other th
      - **Email subject**
      - **Add External tag to email**: By default, this setting is not selected.
 
-   - **Attachment details** section (**Malware attachment**, **Link in attachment**, or **Link to malware** techniques only): Configure the following settings:
+   - **Attachment details** section (**Malware Attachment**, **Link in Attachment**, or **Link to Malware** techniques only): Configure the following settings:
      - **Name your attachment**: Enter a filename for the attachment.
      - **Select an attachment type**: Select a filetype for the attachment. Available values are **Docx** or **HTML**.
 
-   - **Link for attachment** section (**Link to malware** technique only): In the **Select a URL you want to be your malware attachment link** box, select one of the available URLs (the same URLs that are described for the **Phishing link** section). You'll embed the URL in the body of the message in the **Email message** section.
+   - **Link for attachment** section (**Link to Malware** technique only): In the **Select a URL you want to be your malware attachment link** box, select one of the available URLs (the same URLs that are described for the **Phishing link** section). You'll embed the URL in the body of the message in the **Email message** section.
 
-   - **Phishing link** section (**Credential harvest**, **Link in attachment**, **Drive-by URL**, or **OAuth Consent Grant** techniques only):
-     - For **Credential harvest**, **Drive-by URL**, or **OAuth Consent Grant**, the name of the box is **Select a URL you want to be your phishing link**. You'll embed the URL in the body of the message in the **Email message** section.
-     - For **Link in attachment**, the name of the box is **Select a URL in this attachment that you want to be your phishing link**. You'll embed the URL in the attachment in the **Attachment content** section.
+   - **Phishing link** section (**Credential Harvest**, **Link in Attachment**, **Drive-by URL**, or **OAuth Consent Grant** techniques only):
+     - For **Credential Harvest**, **Drive-by URL**, or **OAuth Consent Grant**, the name of the box is **Select a URL you want to be your phishing link**. You'll embed the URL in the body of the message in the **Email message** section.
+     - For **Link in Attachment**, the name of the box is **Select a URL in this attachment that you want to be your phishing link**. You'll embed the URL in the attachment in the **Attachment content** section.
 
      Select one of the available URL values:
 
@@ -190,7 +189,7 @@ When you select a payload from the list by clicking anywhere in the row other th
      > [!NOTE]
      > A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a simulation. For more information, see [Phishing simulation URLs blocked by Google Safe Browsing](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing).
 
-   - **Attachment content** section (**Link in attachment** technique only).
+   - **Attachment content** section (**Link in Attachment** technique only).
 
      A rich text editor is available to create the login page. To see the typical font and formatting settings, toggle **Formatting controls** to ![Toggle on.](../../media/scc-toggle-on.png) **On**.
 
@@ -236,9 +235,9 @@ When you select a payload from the list by clicking anywhere in the row other th
           |**Insert City**|`${city}`|
           |**Insert Date**|`${date|MM/dd/yyyy|offset}`|
 
-       - **Phishing link** (**Credential harvest**, **Drive-by URL**, or **OAuth Consent Grant** techniques only): Use this control to name and insert the URL that you previously selected in the **Phishing link** section.
+       - **Phishing link** (**Credential Harvest**, **Drive-by URL**, or **OAuth Consent Grant** techniques only): Use this control to name and insert the URL that you previously selected in the **Phishing link** section.
 
-       - **Malware attachment link** (**Link to malware** technique only): Use this control to name and insert the URL that you previously selected in the **Link for attachment** section.
+       - **Malware attachment link** (**Link to Malware** technique only): Use this control to name and insert the URL that you previously selected in the **Link for attachment** section.
 
        When you click **Phishing link** or **Malware attachment link**, a dialog opens that asks you to name the link. When you're finished, click **Confirm**.
 
@@ -246,11 +245,11 @@ When you select a payload from the list by clicking anywhere in the row other th
 
      - **Code** tab: You can view and modify the HTML code directly.
 
-     - **Replace all links in the email message with the phishing link** (**Credential harvest**, **Link to malware**, **Drive-by URL**, or **OAuth Consent Grant** techniques only): This toggle can save time by replacing all links in the message with the previously selected **Phishing link** or **Link for attachment** URL. To do this, toggle the setting to on ![Toggle on icon.](../../media/scc-toggle-on.png).
+     - **Replace all links in the email message with the phishing link** (**Credential Harvest**, **Link to Malware**, **Drive-by URL**, or **OAuth Consent Grant** techniques only): This toggle can save time by replacing all links in the message with the previously selected **Phishing link** or **Link for attachment** URL. To do this, toggle the setting to on ![Toggle on icon.](../../media/scc-toggle-on.png).
 
    When you're finished on the **Configure payload** page, click **Next**.
 
-6. The **Add indicators** page is available only if you selected **Credential harvest**, **Link in attachment**, **Drive-by URL**, or **OAuth Consent Grant** on the **Select technique** page.
+6. The **Add indicators** page is available only if you selected **Credential Harvest**, **Link in Attachment**, **Drive-by URL**, or **OAuth Consent Grant** on the **Select technique** page.
 
    Indicators help employees identify the tell-tale signs of phishing messages.
 
@@ -290,7 +289,7 @@ When you select a payload from the list by clicking anywhere in the row other th
 
      If you select the email message subject or the message body as the location for the indicator, a **Select text** button appears. Click this button to select the text in the message subject or message body where you want the indicator to appear. When you're finished, click **Select**.
 
-     :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="The Selected text location in the message body to add to an indicator in the payload creation wizard in Attack simulation training" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
+     :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="The Selected text location in the message body to add to an indicator in the new payload wizard in Attack simulation training" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
 
      - **Indicator description**: You can accept the default description for the indicator or you can customize it.
 

@@ -36,19 +36,19 @@ To launch a simulated phishing attack, do the following steps:
 
    :::image type="content" source="../../media/attack-sim-training-simulations-launch.png" alt-text="The Launch a simulation button on the Simulations tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-launch.png":::
 
-3. The simulation creation wizard opens. The rest of this article describes the pages and the settings they contain.
+3. The new simulation wizard opens. The rest of this article describes the pages and the settings they contain.
 
 > [!NOTE]
-> At any point during the simulation creation wizard, you can click **Save and close** to save your progress and continue configuring the simulation later. The incomplete simulation has the **Status** value **Draft** on the **Simulations** tab. You can pick up where you left off by selecting the simulation and clicking ![Edit simulation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** simulation.
+> At any point during the new training simulation wizard, you can click **Save and close** to save your progress and continue configuring the simulation later. The incomplete simulation has the **Status** value **Draft** on the **Simulations** tab. You can pick up where you left off by selecting the simulation and clicking ![Edit simulation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** simulation.
 
 ## Select a social engineering technique
 
 On the **Select technique** page, select an available social engineering technique, which was curated from the [MITRE ATT&CK® framework](https://attack.mitre.org/techniques/enterprise/). Different payloads are available for different techniques. The following social engineering techniques are available:
 
-- **Credential harvest**: Attempts to collect credentials by taking users to a well-known looking website with input boxes to submit a username and password.
-- **Malware attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
-- **Link in attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
-- **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file will help the attacker compromise the target's device.
+- **Credential Harvest**: Attempts to collect credentials by taking users to a well-known looking website with input boxes to submit a username and password.
+- **Malware Attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
+- **Link in Attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
+- **Link to Malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file will help the attacker compromise the target's device.
 - **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
 - **OAuth Consent Grant**: The malicious URL asks users to grant permissions to data for a malicious Azure Application.
 
@@ -71,7 +71,7 @@ When you're finished on the **Name simulation** page, click **Next**.
 
 On the **Select payload and login page** page, you need to select an existing payload from the list or create a new payload.
 
-For the **Credential Harvest** or **Link in attachment** social engineering techniques, you can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
+For the **Credential Harvest** or **Link in Attachment** social engineering techniques, you can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
 
 ### Select a payload
 
@@ -84,7 +84,7 @@ The following details are shown for each payload:
 - **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload). For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
 - **Simulations launched** counts the number of times this payload was used in other simulations.
 
-In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, you can type part of the payload name and press Enter to filter the results.
+To find a payload in the list, type part of the payload name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
 
 If you click ![Filter payload icon.](../../media/m365-cc-sc-filter-icon.png), the following filters are available:
 
@@ -114,23 +114,23 @@ If no payloads are available or if you want to create your own payload, click ![
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="The Select payload page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
 
-If you select a payload from the list by clicking anywhere in the row other than the check box, details about the payload are shown in a flyout:
+If you select a payload from the list by clicking anywhere in the row other than the check box next to the name, details about the payload are shown in a flyout:
 
-- The **Payload** tab contains an example and other details about the payload.
-- The **Login page** tab is available only for **Credential Harvest** or **Link in attachment** payloads and is described in the [Select a login page](#select-a-login-page) subsection.
-- The **Attachment** tab is available only for **Malware attachment**, **Link in attachment**, and **Oauth Consent Grant** payloads. This tab contains details about the attachment, include a preview.
+- The **Overview** tab (named **Payload** in **Credential Harvest** and **Link in Attachment** payloads) contains details about the payload, include a preview.
+- The **Login page** tab is available only for **Credential Harvest** or **Link in Attachment** payloads and is described in the [Select a login page](#select-a-login-page) subsection.
+- The **Attachment** tab is available only for **Malware Attachment**, **Link in Attachment**, and **Oauth Consent Grant** payloads. This tab contains details about the attachment, include a preview.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
-If the simulation doesn't use **Credential Harvest** or **Link in attachment** payloads, or if you don't want to view or edit the login page that's used, click **Next** on the **Select payload and login page** page to continue.
+If the simulation doesn't use **Credential Harvest** or **Link in Attachment** payloads, or if you don't want to view or edit the login page that's used, click **Next** on the **Select payload and login page** page to continue.
 
-To view and configure the login page that's used in **Credential Harvest** or **Link in attachment** payloads, go to the [Select a login page](#select-a-login-page) subsection.
+To select the login page that's used in **Credential Harvest** or **Link in Attachment** payloads, go to the [Select a login page](#select-a-login-page) subsection.
 
 ### Select a login page
 
 > [!NOTE]
-> The **Login page** tab is available in the details flyout of a payload that you selected on the **Select payload and login page** page only in **Credential Harvest** or **Link in attachment** payloads.
+> The **Login page** tab is available only in the details flyout of **Credential Harvest** or **Link in Attachment** payloads.
 
 On the **Select payload and login page** page, select the payload from the list by clicking anywhere in the row other than the check box to open the details flyout for the payload.
 
@@ -142,7 +142,7 @@ To view the complete login page, use the **Page 1** and **Page 2** links at the 
 
 To change the login page that's used in the payload, click ![Change login page icon.](../../media/m365-cc-sc-edit-icon.png) **Change login page**.
 
-On the **Select login page** flyout that appears, The following information is shown for each login page:
+On the **Select login page** flyout that opens, The following information is shown for each login page:
 
 - **Name**
 - **Language**
@@ -151,13 +151,13 @@ On the **Select login page** flyout that appears, The following information is s
 - **Last modified**
 - **Actions**: Click ![Preview icon.](../../media/m365-cc-sc-eye-icon.png) **Preview** to preview the login page.
 
-To find a login page in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the name of the login page.
+To find a login page in the list, type part of the login page name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
 
 Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the login pages by **Source** or **Language**.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="The Select login page in the Login page tab in payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
 
-To create a new login page, click [Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**. The creation steps are the same as at **Attack simulation training** \> **Simulations** tab. For instructions, see [Create login pages](attack-simulation-training-login-pages.md#create-login-pages).
+To create a new login page, click [Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Login pages** \> **Tenant login pages** tab. For instructions, see [Create login pages](attack-simulation-training-login-pages.md#create-login-pages).
 
 Back on the **Select login page**, verify the new login page you created is selected, and then click **Save**.
 
@@ -165,10 +165,10 @@ Back on the payload details flyout, click [Close icon.](../../media/m365-cc-sc-c
 
 When you're finished on the **Select a payload and login page** page, click **Next**.
 
-## Configure OAuth Payload
+### Configure OAuth Payload
 
 > [!NOTE]
-> This page is available only if you selected **OAuth Consent Grant** on the [Select technique](#select-a-social-engineering-technique) page. Otherwise, you're taken to the **Target users** page.
+> This page is available only if you selected **OAuth Consent Grant** on the [Select technique](#select-a-social-engineering-technique) page and a corresponding payload.
 
 On the **Configure OAuth payload** page, configure the following settings:
 
@@ -184,6 +184,8 @@ On the **Configure OAuth payload** page, configure the following settings:
   - **Read all files that user can access**
   - **Read and write access to user mail**
   - **Send mail as a user**
+
+When you're finished on  the **Configure OAuth payload** page, click **Next**.
 
 ## Target users
 
@@ -310,15 +312,16 @@ When you're finished on the **Assign training** page, click **Next**.
 ### Training assignment
 
 > [!NOTE]
-> This page is available only if you selected **Microsoft training experience (Recommended)** \> **Select training courses and modules myself** on the previous **Assign training** page.
+> This page is available only if you selected **Select training courses and modules myself** on the **Assign training** page.
 
 On the **Training assignment** page, select the trainings that you want to add to the simulation by clicking ![Add trainings icon.](../../media/m365-cc-sc-create-icon.png) **Add trainings**.
 
 On the **Add training** flyout that opens, use the following tabs to select trainings to include in the simulation:
 
 - **Recommended** tab: Shows the recommended built-in trainings based on the simulation configuration. These are the same trainings that would have been assigned if you selected **Assign training for me (Recommended)** on the previous page.
-
 - **All trainings** tab: Shows all built-in trainings that are available.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="The option to add the recommended training on the Training assignment page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
 On either tab, the following information is shown for each training:
 
@@ -327,7 +330,7 @@ On either tab, the following information is shown for each training:
 - **Duration (mins)**
 - **Preview**: Click the **Preview** button to see the training.
 
-On either tab, you can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find trainings. Type part of the training name and press the ENTER key to filter the results.
+On either tab, you can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find trainings. Type part of the training name and press the ENTER key.
 
 On either tab, select one or more trainings by clicking in the blank area next to the **Training name** column. When you're finished, click **Add**.
 
@@ -343,6 +346,8 @@ Back on the **Training assignment** page, the selected trainings are now listed.
 
 :::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="The Training assignment page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
+:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="The Training assignment page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-training-assignment.png":::
+
 When you're finished on the **Training assignment** page, click **Next**.
 
 ## Select a landing page
@@ -353,17 +358,17 @@ Select one of the following options:
 
 - **Use landing pages from library**: The following options are available:
   - **Payload indicators**: Select **Add payload indicators to email** to help users learn how do identify phishing email.
-    - This setting is not available if you selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
+    - This setting is not available if you selected **Malware Attachment** or **Link to Malware** on the [Select a social engineering technique](#select-a-social-engineering-technique) page.
     - For landing pages that you create on the **Tenant landing pages** tab, this setting is meaningful only if you use the **Dynamic tag** named **Insert Payload content** in the landing page content as described in the **Create a landing page** subsection.
-  - **Show the interstitial page before the landing page**: This setting is available only if you selected **Drive-by URL** on the [select a technique page](#select-a-social-engineering-technique) page. You can show the overlay that comes up for drive-by URL attacks. To hide the overlay and go directly to the landing page, don't select this option.
-  - **Edit layout** section: This section appears only after you select a landing page template by selecting the check box next to the **Name** column:
-    - **Add logo**: Click **Browse logo image** to find and select a .png, .jpeg, or .gif file. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, click **Remove uploaded logo image**.
-    - **Select default language**: This setting is required. Select one of the following values: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
+  - **Show the interstitial page before the landing page**: This setting is available only if you selected **Drive-by URL** on the [Select a social engineering technique](#select-a-social-engineering-technique) page. You can show the overlay that comes up for drive-by URL attacks. To hide the overlay and go directly to the landing page, don't select this option.
 
   The remainder of the **Selecting phish landing page** page has two tabs where you select the landing page to use:
 
-  - **Global landing pages** tab: Contains the built-in landing pages.
-  - **Tenant landing pages** tab: Contains any custom landing pages that you've created. To create a new landing page, click **Create new**. The details are explained in the next **Create a landing page** section.
+  - **Global landing pages** tab: Contains the built-in landing pages. When you select a built-in landing page to use by selecting the check box next to name, an **Edit layout** section appears with the following options:
+    - **Add logo**: Click **Browse logo image** to find and select a .png, .jpeg, or .gif file. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, click **Remove uploaded logo image**.
+    - **Select default language**: This setting is required. Select one of the following values: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
+
+  - **Tenant landing pages** tab: Contains any custom landing pages that you've created. To create a new landing page, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Phish landing pages** \> **Tenant landing pages** tab. For instructions, see [Landing pages in Attack simulation training](attack-simulation-training-landing-pages.md#create-new-landing-pages).
 
   On both tabs, the following information is shown for each landing page:
 
@@ -373,11 +378,11 @@ Select one of the following options:
   - **Status**
   - **Linked simulation**
 
-  On both tabs, click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, the available columns that aren't selected are **Source** and **Created by**.
+  Click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, the only available columns that aren't selected are **Source** and **Created by**.
 
-  On both tabs, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name of an existing landing page.
+  To find a landing page in the list, type part of the landing page name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
 
-  On both tabs, click ![Filter payload icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the landing pages by language.
+  Click ![Filter landing page icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the landing pages by language.
 
   When you select a landing page by clicking on the name, a details flyout opens that shows more information about the landing page:
 
@@ -388,131 +393,61 @@ Select one of the following options:
 
   On the **Selecting phish landing page** page, select a landing page to use by selecting the check box next to the **Name** column.
 
-- **Use a custom URL**: This setting is not available if you selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
+- **Use a custom URL**: This setting is not available if you selected **Malware Attachment** or **Link to Malware** on the [Select technique](#select-a-social-engineering-technique) page.
 
   If you select **Use a custom URL**, you need to add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the **Selecting phish landing page** page.
 
-When you're finished on the **Selecting phish landing page** page, click **Next**
-
-### Create a landing page
-
-> [!NOTE]
-> This page is available only if you selected **Use landing pages from library** \> **Tenant landing pages** tab \> **Create new** on the **Selecting phish landing page** page.
->
-> Certain trademarks, logos, symbols, insignias and other source identifiers receive heightened protection under local, state and federal statutes and laws. Unauthorized use of such indicators can subject the users to penalties, including criminal fines. Though not an extensive list, this includes the Presidential, Vice Presidential, and Congressional seals, the CIA, the FBI, Social Security, Medicare and Medicaid, the United States Internal Revenue Service, and the Olympics. Beyond these categories of trademarks, use and modification of any third-party trademark carries an inherent amount of risk. Using your own trademarks and logos in a payload would be less risky, particularly where your organization permits the use. If you have any further questions about what is or is not appropriate to use when creating or configuring a payload, you should consult with your legal advisors.
-
-When you click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** in the **Tenant landing pages** tab on the **Selecting phish landing page** page, the create a landing page wizard opens:
-
-1. On the **Define details for phish landing page** page, configured the following settings:
-   - **Name**: Enter a unique, descriptive name for the landing page.
-   - **Description**: Enter an optional description.
-
-   When you're finished on the **Define details for phish landing page** page, click **Next**.
-
-2. On the **Configure landing page** page, click **Define content in preferred language**. In the **Add content in default language** flyout that opens, configure the following settings:
-   - **Select the language for the landing page**: Select one of the 29+ available languages.
-   - **Mark this as default language**: For the first landing page you create, this setting is selected and unchangeable.
-   - Landing page content: Two tabs are available:
-
-     - **Text** tab: A rich text editor is available to create the landing page. To see the typical font and formatting settings, toggle **Formatting controls** to ![Toggle on.](../../media/scc-toggle-on.png) **On**.
-
-       The following controls are also available on the **Text** tab:
-
-        - **Dynamic tag**: Select from the following tags:
-
-          |Tag name|Tag value|
-          |---|---|
-          |**Insert User name**|`${userName}`|
-          |**Insert First name**|`${firstName}`|
-          |**Insert Last name**|`${lastName}`|
-          |**Insert UPN**|`${upn}`|
-          |**Insert Email**|`${emailAddress}`|
-          |**Insert Department**|`${department}`|
-          |**Insert Manager**|`${manager}`|
-          |**Insert Mobile phone**|`${mobilePhone}`|
-          |**Insert City**|`${city}`|
-          |**Insert sender name**|`${FromName}`|
-          |**Insert sender email**|`${FromEmail}`|
-          |**Insert Payload subject**|`${EmailSubject}`|
-          |**Insert Payload content**|`${EmailContent}`|
-          |**Insert Date**|`${date|MM/dd/yyyy|offset}`|
-
-        - **Import from library**: Select an available template to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
-
-     - **Code** tab: You can view and modify the HTML code directly.
-
-   You can preview the results by clicking the **Preview phish landing page** button at the top of the page.
-
-   When you're finished on the **Add content in default language** flyout, click **Save**.
-
-   Back on the **Configure landing page** page, the landing page you created is listed on the page. In the **Action** colum, you can click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** or ![Preview icon.](../../media/m365-cc-sc-eye-icon.png) **Preview** to edit or view the landing page.
-
-   Click ![Add translation icon.](../../media/m365-cc-sc-create-icon.png) **Add translation** to create additional translations of the landing page in other languages.
-
-   Other than the flyout title changing to **Add translation**, the same options are available as the the **Add content in default language** flyout in the first landing page you created. Now the **Mark this as default language** check box is available to select. Only one translation of landing page can be the default language.
-
-   When two or more translations of the landing page are listed on the **Configure landing page** page, the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon is available in the **Actions** column to delete any landing page translations that aren't designated as the default language.
-
-   When you're finished on the **Configure landing page** page, click **Next**.
-
-3. On the **Review landing page** page, you can review your selections. Click **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
-
-   When you're finished on the **Review landing page** page, click **Submit**, and then click **Done** on the confirmation page.
-
-Back on the **Tenant landing pages** tab of the **Select phish landing page**, select the landing page you created by selecting the check box next to the **Name**, and then click **Next**.
+When you're finished on the **Selecting phish landing page** page, click **Next**.
 
 ## Select end user notifications
 
 On the **Select end user notification** page, select from the following notification options:
 
-- **Do not deliver notifications**: No other configuration options are available on the page. After you click **Proceed** in the warning dialog and then click **Next**, you're taken to the [Launch details](#configure-the-simulation-launch-details) page. Users will not receive **Training assignment notifications**, **Training reminder notifications** or **Positive reinforcement notifications** from the simulation.
+- **Do not deliver notifications**: No other configuration options are available on the page. Users will not receive **Training assignment notifications**, **Training reminder notifications** or **Positive reinforcement notifications** from the simulation.
 
-- **Microsoft default notification (recommended)**: The following additional settings are available on the page:
+- **Microsoft default notification (recommended)**: The notifications that users will receive are shown on the page:
 
-  - **Select default language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Romanian**, **Russian**, **Spanish**, or **Dutch**.
+  - **Microsoft default positive reinforcement notification**
+  - **Microsoft default training assignment notification**
+  - **Microsoft default training reminder notification**
 
-  - By default, the following notifications are included:
-    - **Microsoft default positive reinforcement notification**
-    - **Microsoft default training assignment notification**
-    - **Microsoft default training reminder notification**
+  Select the default language to use in **Select default language**. The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Romanian**, **Russian**, **Spanish**, or **Dutch**.
 
-    For each notification, the following information is available:
-    - **Notifications**: The name of the notification.
-    - **Language**: If the notification contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
-    - **Type**: One of the following values:
-      - **Positive reinforcement notification**
-      - **Training assignment notification**
-      - **Training reminder notification**
-    - **Delivery preferences**:
-      - For **Positive reinforcement notification** notification types, select one of the following values: **Do not deliver**, **Deliver after campaign ends**, or **Deliver during campaign**.
-      - For **Training reminder notification types**, select one of the following values: **Twice a week** or **Weekly**.
+  For each notification, the following information is available:
 
-    - **Actions**: If you click ![View icon.](../../media/m365-cc-sc-view-icon.png) **View**, a **Review notification** page opens with the following information:
-      - **Preview** tab: View the notification message as users will see it.
-        - To view the message in different languages, use the **Select language** box.
-        - Use the **Select payload to preview** box to select the notification message for simulations that contain multiple payloads.
-      - **Details** tab: View details about the notification:
-        - **Notification description**
-        - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
-        - **Notification type**: One of the following types based on the notification you originally selected:
-          - **Positive reinforcement notification**
-          - **Training assignment notification**
-          - **Training reminder notification**
-        - **Modified by**
-        - **Last modified**
+  - **Notifications**: The name of the notification.
+  - **Language**: If the notification contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
+  - **Type**: One of the following values:
+    - **Positive reinforcement notification**
+    - **Training assignment notification**
+    - **Training reminder notification**
+  - **Delivery preferences**: You need to configure the following delivery preferences before you can continue:
+    - For **Microsoft default positive reinforcement notification**, select **Do not deliver**, **Deliver after campaign ends**, or **Deliver during campaign**.
+    - For **Microsoft default training reminder notification**, select **Twice a week** or **Weekly**.
+  - **Actions**: If you click ![View icon.](../../media/m365-cc-sc-view-icon.png) **View**, a **Review notification** page opens with the following information:
+    - **Preview** tab: View the notification message as users will see it.
+      - To view the message in different languages, use the **Select language** box.
+      - Use the **Select payload to preview** box to select the notification message for simulations that contain multiple payloads.
+    - **Details** tab: View details about the notification:
+      - **Notification description**
+      - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
+      - **Notification type**: One of the following types based on the notification you originally selected:
+        - **Positive reinforcement notification**
+        - **Training assignment notification**
+        - **Training reminder notification**
+      - **Modified by**
+      - **Last modified**
 
-        When you're finished on the **Review notification** page, click **Close**.
+    When you're finished on the **Review notification** page, click **Close** to return to the **Select end user notification** page.
 
-  Back on the **Select end user notification** page, you're taken to the **[Launch details](#configure-the-simulation-launch-details)** page when you click **Next**.
-
-- **Customized end user notifications**:  No other configuration options are available on the page. When you click **Next**, you'll need to select a **Training assignment notification**, a **Training reminder notification**, and (optionally) a **Positive reinforcement notification** to use for the simulation as described in the next three subsections.
+- **Customized end user notifications**: No other configuration options are available on the page. When you click **Next**, you'll need to select a **Training assignment notification**, a **Training reminder notification**, and (optionally) a **Positive reinforcement notification** to use for the simulation as described in the next three subsections.
 
 When you're finished on the **Select end user notification** page, click **Next**.
 
 ### Select a training assignment notification
 
 > [!NOTE]
-> This page is available only if you selected **Customized end user notifications** on the **[Select end user notifications](#select-end-user-notifications)** page.
+> This page is available only if you selected **Customized end user notifications** on the [Select end user notifications](#select-end-user-notifications) page.
 
 The **Training assignment notification** page shows the following notifications and their configured languages:
 
@@ -530,26 +465,28 @@ For more information, see [End-user notifications for Attack simulation training
 Do one of the following steps:
 
 - **Select an existing notification to use**:
-  - To search for an existing notification in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name.
-  - When you select a notification by clicking on the name (not the check box), a details flyout opens that shows more information about the notification:
+  - To search for an existing notification in the list, type part of the notification name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
+  - When you select a notification by clicking  anywhere in the row other than the check box, a details flyout opens that shows more information about the notification:
     - The **Preview** tab shows what the notification looks like to users.
     - The **Details** tab shows the properties of the notification.
 
     When you're finished in the notification details flyout, click **Close**.
 
-  On the **Training assignment notification** page, select a notification to use by selecting the check box next to the **Notifications** column.
+  On the **Training assignment notification** page, select a notification to use by selecting the check box next to the name.
 
 - **Create a new notification to use**: Click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**. The creation steps are identical to [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
 
   > [!NOTE]
-  > On the **Define details** page, be sure to select the value **Training assignment notification** for **Select notification type**.
+  > On the **Define details** page of the new notification wizard, be sure to select the value **Training assignment notification** for the notification type.
 
-  When you're finished, you return to the **Training assignment notification** page where the new notification now appears in the list. Select the notification to use and then click **Next**.
+  When you're finished creating the notification, you return to the **Training assignment notification** page where the new notification now appears in the list for you to select
+
+When you're finished on the **Training assignment notification** page, click **Next**.
 
 ### Select a training reminder notification
 
 > [!NOTE]
-> This page is available only if you selected **Customized end user notifications** on the **[Select end user notifications](#select-end-user-notifications)** page.
+> This page is available only if you selected **Customized end user notifications** on the [Select end user notifications](#select-end-user-notifications) page.
 
 The **Training reminder notification** page shows the following notifications and their configured languages:
 
@@ -564,62 +501,71 @@ These notifications are also available at **Attack simulation training** \> **Co
 
 For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
-Do one of the following steps:
+In **Set frequency for reminder notification**, select **Weekly** or **Twice a week**, and then do one of the following steps:
 
 - **Select an existing notification to use**:
-  - To search for an existing notification in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name.
-  - When you select a notification by clicking on the name (not the check box), a details flyout opens that shows more information about the notification:
+  - To search for an existing notification in the list, type part of the notification name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
+  - When you select a notification by clicking  anywhere in the row other than the check box, a details flyout opens that shows more information about the notification:
     - The **Preview** tab shows what the notification looks like to users.
     - The **Details** tab shows the properties of the notification.
 
     When you're finished in the notification details flyout, click **Close**.
 
-  On the **Training reminder notification** page, select a notification to use by selecting the check box next to the **Notifications** column.
+  On the **Training reminder notification** page, select a notification to use by selecting the check box next to the name.
 
 - **Create a new notification to use**: Click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**. The creation steps are identical to [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
 
   > [!NOTE]
-  > On the **Define details** page, be sure to select the value **Training reminder notification** for **Select notification type**.
+  > On the **Define details** page of the new notification wizard, be sure to select the value **Training reminder notification** for the notification type.
 
-  When you're finished, you return to the **Training reminder notification** page where the new notification now appears in the list. Select the notification to use and then click **Next**.
+  When you're finished creating the notification, you return to the **Training reminder notification** page where the new notification now appears in the list for you to select.
+
+When you're finished on the **Training reminder notification** page, click **Next**.
 
 ### Select a positive reinforcement notification
 
 > [!NOTE]
-> This page is available only if you selected **Customized end user notifications** on the **[Select end user notifications](#select-end-user-notifications)** page.
+> This page is available only if you selected **Customized end user notifications** on the [Select end user notifications](#select-end-user-notifications) page.
 
-Because **Deliver after the user reports a phish and campaign ends** is selected by default on the **Positive reinforcement notification** page, the following notifications and their configured languages are shown:
+You have the following options for positive reinforcement notifications:
 
-- **Microsoft default positive reinforcement notification**
-- Any custom positive reinforcement notifications that you previously created.
+- Don't use positive reinforcement notifications: Select **Do not deliver** in the **Delivery preferences** section.
 
-These notifications are also available at **Attack simulation training** \> **Content library tab** \> **End user notifications**:
+  There's nothing else to configure on the page, so you're taken to the [Launch details](#configure-the-simulation-launch-details) page when you click **Next**.
 
-- Built-in positive reinforcement notifications are available on the **Global notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=global>.
-- Custom positive reinforcement notifications are available on the **Tenant notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>.
+- Use an existing positive reinforcement notification: Select **Deliver after the user reports a phish and campaign ends** or **Deliver immediately after the user reports a phish** in the **Delivery preferences** section.
 
-For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+  The following notifications and their configured languages appear on the page:
 
-Select one of the following values in the **Delivery preferences** section:
+  - **Microsoft default positive reinforcement notification**
+  - Any custom positive reinforcement notifications that you previously created.
 
-- **Do not deliver**: If you select this option, you're taken to the [Launch details](#configure-the-simulation-launch-details) page when you click **Next**.
+  These notifications are also available at **Attack simulation training** \> **Content library tab** \> **End user notifications**:
 
-- **Deliver after the user reports a phish and campaign ends** or **Deliver immediately after the user reports a phish**:
-  - To search for an existing notification in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name.
-  - When you select a notification by clicking on the name (not the check box), a details flyout opens that shows more information about the notification:
-    - The **Preview** tab shows what the notification looks like to users.
-    - The **Details** tab shows the properties of the notification.
+  - Built-in positive reinforcement notifications are available on the **Global notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=global>.
+  - Custom positive reinforcement notifications are available on the **Tenant notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>.
 
-    When you're finished in the notification details flyout, click **Close**.
+  For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
-  On the **Positive reinforcement notification** page, select a notification to use by selecting the check box next to the **Notifications** column.
+  To search for an existing notification in the list, type part of the notification name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
 
-- **Create a new notification to use**: Click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**. The creation steps are identical to [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
+  When you select a notification by clicking anywhere in the row other than the check box, a details flyout opens that shows more information about the notification:
+
+  - The **Preview** tab shows what the notification looks like to users.
+  - The **Details** tab shows the properties of the notification.
+
+  When you're finished in the notification details flyout, click **Close**.
+
+  On the **Positive reinforcement notification** page, select an existing notification to use by clicking the check box next to the name.
+
+- Create a new positive reinforcement notification to use: Click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**. The creation steps are identical to [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
 
   > [!NOTE]
-  > On the **Define details** page, be sure to select the value **Positive reinforcement notification** for **Select notification type**.
+  > On the **Define details** page of the new notification wizard, be sure to select the value **Positive reinforcement notification** for the notification type.
 
-  When you're finished, you return to the **Positive reinforcement notification** page where the new notification now appears in the list. Select the notification to use and then click **Next**.
+  When you're finished creating the notification, you return to the **Positive reinforcement notification** page where the new notification now appears in the list for you to select.
+
+When you're finished on the **Positive reinforcement notification** page, click **Next**.
 
 ## Configure the simulation launch details
 
@@ -681,7 +627,7 @@ By default, the following information is shown for each simulation<sup>\*</sup>:
 
 <sup>\*</sup> To see all of the columns, you might need to narrow some columns or zoom out in your browser.
 
-Click a column headers to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, all available columns are selected.
+Click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, all available columns are selected.
 
 Use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name of an existing simulation.
 

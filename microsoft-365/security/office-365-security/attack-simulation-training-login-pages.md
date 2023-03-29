@@ -46,14 +46,14 @@ The following information is shown for each login page:
 
 Click a column header to sort by that column. To remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**.
 
-To find a login page in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the name of the login page.
+To find a login page in the list, type part of the login page name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
 
 Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the login pages by **Language** or **Status**.
 
 When you select a login page from the list by clicking anywhere in the row other than the check box next to the name, a details flyout appears with the following information:
 
 - ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** is available only in custom login pages on the **Tenant login pages** tab.
-- ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default** to make this login page the default selection in **Credential harvest** or **Link in attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md). If the login page is already the default, ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default** isn't available.
+- ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default** to make this login page the default selection in **Credential Harvest** or **Link in Attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md). If the login page is already the default, ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default** isn't available.
 - **Preview** tab: View the login page as users will see it. **Page 1** and **Page 2** links are available at the bottom of the page for two-page login pages.
 - **Details** tab: View details about the login page:
   - **Description**
@@ -84,7 +84,7 @@ When you select a login page from the list by clicking anywhere in the row other
 
    - **Select a language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
 
-   - **Make this the default login page**: If you select this option, the login page will be the default selection in **Credential harvest** or **Link in attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md).
+   - **Make this the default login page**: If you select this option, the login page will be the default selection in **Credential Harvest** or **Link in Attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md).
 
    - **Create a two-page login**: If you don't select this option, the login page is one page. If you select this option, **Page 1** and **Page 2** tabs appear for you to configure separately.
 
@@ -171,7 +171,7 @@ To remove an existing custom login page from the **Tenant login pages** tab, do 
 
 ## Make a login page the default
 
-The default login page is the default selection that's used in **Credential harvest** or **Link in attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md).
+The default login page is the default selection that's used in **Credential Harvest** or **Link in Attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md).
 
 To make a login page the default on the **Tenant login pages** or **Global login pages** tabs, do one of the following steps:
 
@@ -184,7 +184,7 @@ To make a login page the default on the **Tenant login pages** or **Global login
 >
 > The default login page is also marked in the list, although you might need to widen the **Name** column to see it:
 >
-> ![The default login page marked in the list of login pages in Attack simulation training.](../../media/attack-sim-training-login-pages-default.png)
+> :::image type="content" source="../../media/attack-sim-training-login-pages-default.png" alt-text="The default login page marked in the list of login pages in Attack simulation training." lightbox="../../media/attack-sim-training-login-pages-default.png":::
 
 ## Related links
 
