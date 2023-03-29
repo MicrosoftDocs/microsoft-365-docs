@@ -137,7 +137,7 @@ Watch this short video to learn how to manage quarantined messages as an adminis
    - Sender email address
    - Subject. Use the entire subject of the message. The search is not case-sensitive.
 
-   After you've entered the search criteria, press ENTER to filter the results.
+   After you've entered the search criteria, press the enter ENTER key to filter the results.
 
    > [!NOTE]
    > The **Search** box on the main **Quarantine** page will search only quarantined items in the current view, not the entire quarantine. To search all quarantined items, use **Filter** and the resulting **Filters** flyout.
@@ -395,7 +395,7 @@ For the preview release, this feature is enabled by default.
 
 2. On the **Quarantine** page, select the **Teams messages** tab.
 
-   :::image type="content" source="../../media/admin-quarantine-teams-message-tab.png" alt-text="The Teams messages tab in quarantine" lightbox="../../media/admin-quarantine-teams-message-tab.png"::: 
+   :::image type="content" source="../../media/admin-quarantine-teams-message-tab.png" alt-text="Screenshot of the Teams messages tab in quarantine." lightbox="../../media/admin-quarantine-teams-message-tab.png"::: 
 
 3. You can sort the results by clicking on an available column header. Click **Customize columns** to change the columns that are shown. 
    - **Teams message text**: Contains the subject for the teams message.
@@ -415,13 +415,13 @@ For the preview release, this feature is enabled by default.
 
 When you select a quarantined message from the list, the following information is available in the details flyout that opens:
 
-:::image type="content" source="../../media/admin-quarantine-teams-details-flyout.png" alt-text="The teams message details flyout in quarantine" lightbox="../../media/admin-quarantine-teams-details-flyout.png":::
+:::image type="content" source="../../media/admin-quarantine-teams-details-flyout.png" alt-text="Screenshot of the Teams message details flyout in quarantine." lightbox="../../media/admin-quarantine-teams-details-flyout.png":::
 
 - **Quarantine details**: Includes quarantine reason, expiry date, quarantine policy type, and other information.
 - **Message details**: Includes the primary threat reason, date and time of the message sent, and the sender address. Also includes the Teams message ID and the detection technology.
 - **Sender**: Includes the sender name, their domain location, and whether the sender is from outside the organization.
 - **Participants**: The names and email IDs of all the people who received the same message.
-- **URLs**: Includes the details of any malicious URls that were detected in the chat message.
+- **URLs**: Includes the details of any malicious URLs that were detected in the chat message.
 
 To take action on the message, see the next section.
 
@@ -429,7 +429,7 @@ To take action on the message, see the next section.
 
 After you select a quarantined message from the list, the following actions are available in the details flyout:
 
-:::image type="content" source="../../media/admin-quarantine-teams-actions-details.png" alt-text="The actions menu for messages in quarantine" lightbox="../../media/admin-quarantine-teams-actions-details.png":::
+:::image type="content" source="../../media/admin-quarantine-teams-actions-details.png" alt-text="Screenshot of the actions menu for messages in quarantine." lightbox="../../media/admin-quarantine-teams-actions-details.png":::
 
 - **Release**: Allows the admin to release the message only to the recipients within the organization.
 - **Preview message**: Preview the message in quarantine before taking any action.
@@ -443,7 +443,7 @@ If you don't release or remove the file, it will be deleted after the default qu
 
 When you select multiple quarantined files in the list by clicking the checkbox next to the messages, the **More** option appears:
 
-:::image type="content" source="../../media/admin-quarantine-teams-bulk-action.png" alt-text="The Bulk action options for files in quarantine" lightbox="../../media/admin-quarantine-teams-bulk-action.png":::
+:::image type="content" source="../../media/admin-quarantine-teams-bulk-action.png" alt-text="Screenshot of the Bulk action options for files in quarantine." lightbox="../../media/admin-quarantine-teams-bulk-action.png":::
 
 - **Release**: Select this option to release messages to the intended recipients within the organization.
 - **Delete messages**: Select this option to delete the messages permanently from quarantine.
@@ -466,10 +466,10 @@ To manage quarantined messages for the Microsoft Teams chat, the admin will need
 
 |Quarantine cmdlets|Parameters|
 |---|---|
-|`QuarantineScenarios`|Email </br>SPO </br>Teams|
-|`EmailQuarantineTypes`|Bulk </br>HighConfPhish </br>Malware</br>Phish </br>Spam </br>TransportRule|
-|`SPOQuarantineTypes`|Malware|
-|`TeamsQuarantineTypes`|HighConfPhish </br>Malware|
+|`QuarantineScenario`|Email </br>SPO </br>Teams|
+|`EmailQuarantineType`|Bulk </br>HighConfPhish </br>Malware</br>Phish </br>Spam </br>TransportRule|
+|`SPOQuarantineType`|Malware|
+|`TeamsQuarantineType`|HighConfPhish </br>Malware|
 
 Admins can select a quarantined message from the list to view or take action.
 
@@ -477,7 +477,7 @@ Admins can select a quarantined message from the list to view or take action.
 
 ```powershell
   Get-QuarantineMessage -Identity c14401cf-aa9a-465b-cfd5-08d0f0ca37c5\4c2ca98e-94ea-db3a-7eb8-3b63657d4db7 |
-  -Scenarios Teams
+  -Scenario Teams
 ```
 
 ## For more information
