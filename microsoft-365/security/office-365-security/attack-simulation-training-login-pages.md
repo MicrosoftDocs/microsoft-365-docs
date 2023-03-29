@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn how to create and manage login pages for simulated phishing attacks in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 3/29/2023
 ---
 
 # Login pages in Attack simulation training
@@ -67,20 +67,20 @@ When you select a login page from the list by clicking anywhere in the row other
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Login pages**. To go directly to the **Content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
-   On the **Tenant login pages** tab, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the new login page wizard.
+2. On the **Tenant login pages** tab, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the new login page wizard.
 
    > [!NOTE]
-   > ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** is also available during the payload selection step of creating a simulation or simulation automation. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page) and [Create a simulation automation: Select a payload and login page](attack-simulation-training-simulation-automations.md#select-a-payload-and-login-page).
+   > At any point after you name the login page during the new login page wizard, you can click **Save and close** to save your progress and continue later. The incomplete login page has the **Status** value **Draft**. You can pick up where you left off by selecting the login page from the list and then clicking the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
    >
-   > At any point during the new login page wizard, you can click **Save and close** to save your progress and continue configuring the login page later. You can pick up where you left off by selecting the login page on the **Tenant login pages** tab in **Login pages**, and then clicking ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**. The partially-completed login page will have the **Status** value **Draft**.
+   > You can also create landing pages during the creation of simulations or simulation automations. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page) and [Create a simulation automation: Select a payload and login page](attack-simulation-training-simulation-automations.md#select-a-payload-and-login-page).
 
-2. On the **Define details for login page** page, configure the following settings:
+3. On the **Define details for login page** page, configure the following settings:
    - **Name**: Enter a unique name.
    - **Description**: Enter an optional description.
 
    When you're finished on the **Define details for login page** page, click **Next**.
 
-3. On the **Configure login page** page, configure the following settings:
+4. On the **Configure login page** page, configure the following settings:
 
    - **Select a language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
 
@@ -120,17 +120,17 @@ When you select a login page from the list by clicking anywhere in the row other
 
    When you're finished on the **Review login page** page, click **Next**.
 
-4. On the **Review login page** page, you can review the details of your login page.
+5. On the **Review login page** page, you can review the details of your login page.
 
    You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
    When you're finished on the **Review login page** page, click **Submit**.
 
-5. On the **New login page \<Name\> created** page, you can use the links to create a new login page, launch a simulation, or view all login pages.
+6. On the **New login page \<Name\> created** page, you can use the links to create a new login page, launch a simulation, or view all login pages.
 
    When you're finished on the **New login page \<Name\> created** page, click **Done**.
 
-6. Back on the **Tenant login pages** tab in **Login pages**, the login page that you created is now listed.
+7. Back on the **Tenant login pages** tab in **Login pages**, the login page that you created is now listed.
 
 ## Modify login pages
 

@@ -14,7 +14,7 @@ ms.custom:
 description: Admins can learn how to create and manage payloads for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 3/29/2023
 ---
 
 # Payloads in Attack simulation training in Defender for Office 365
@@ -113,9 +113,9 @@ When you select a payload from the list by clicking anywhere in the row other th
    :::image type="content" source="../../media/attack-sim-training-payload-create.png" alt-text="Create a payload on the Tenant payloads tab in Payloads in Attack simulation training in the Microsoft 365 Defender portal." lightbox="../../media/attack-sim-training-payload-create.png":::
 
    > [!NOTE]
-   > ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** is also available on the **Select payload and login page** step of the new simulation wizard. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page).
+   > At any point after you name the payload during the new payload wizard, you can click **Save and close** to save your progress and continue later. The incomplete payload has the **Status** value **Draft**. You can pick up where you left off by selecting the payload from the list and then clicking the ![Edit payload icon.](../../media/m365-cc-sc-edit-icon.png) **Edit payload** icon that appears.
    >
-   > At any point during the new payload wizard, you can click **Save and close** to save your progress and continue configuring the payload later. You can pick up where you left off by selecting the notification on the **Tenant payloads** tab in **Payloads**, and then clicking ![Edit payload icon.](../../media/m365-cc-sc-edit-icon.png) **Edit payload**. The partially-completed payload will have the **Status** value **Draft**.
+   > You can also create payloads during the creation of simulations. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page).
 
 2. On the **Select type** page, the only value that you can currently select is **Email**.
 
@@ -325,7 +325,7 @@ When you select a payload from the list by clicking anywhere in the row other th
 
    When you're finished on the **New payload created** page, click **Done**.
 
-9. Back on the **Tenant payload pages** tab in **Payloads**, the payload that you created is now listed.
+9. Back on the **Tenant payloads** tab, the payload that you created is now listed with the **Status** value **Ready**.
 
 ## Modify payloads
 

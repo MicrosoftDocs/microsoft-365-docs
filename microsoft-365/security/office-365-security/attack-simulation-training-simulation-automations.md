@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn how to create automated simulations that contain specific techniques and payloads that launch when the specified conditions are met in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 3/29/2023
 ---
 
 # Simulation automations for Attack simulation training
@@ -23,22 +23,43 @@ ms.date: 1/31/2023
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, simulation automations allow you to run multiple benign cyberattack simulations in your organization. Simulation automations can contain multiple social engineering techniques and can start on an automated schedule. Creating a simulation automation is very similar to [creating an individual simulation](attack-simulation-training-simulations.md), except the ability to select multiple techniques and the automation schedule.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, simulation automations allow you to run multiple benign cyberattack simulations in your organization. Simulation automations can contain multiple social engineering techniques and payloads, and can start on an automated schedule. Creating a simulation automation is very similar to [creating an individual simulation](attack-simulation-training-simulations.md), except the ability to select multiple techniques, payloads, and the automation schedule.
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+
+To see any existing simulation automations that you created, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> and then select **Simulation automations**. To go directly to the **Automations** tab where you can select **Simulation automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
+
+By default, the following information is shown for each simulation automation:
+
+- **Automation name**
+- **Status**: **Active**, **Inactive**, or **Draft**.
+- **Next launch time**
+- **Last modified**
+- **Created by**
+
+Click a column header to sort by that column.
+
+Use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name of an existing simulation.
+
+When you select a simulation automation from the list, a details flyout appears with the following information:
+
+- **General** tab: Displays basic information about the simulation automation.
+- **Run history** tab: This tab is available only for simulation automations with the **Status** value **Active** or **Inactive**.
+
+## Create simulation automations
 
 To create a simulation automation, do the following steps:
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> **Simulation automations**. or, to go directly to the **Automations** tab where you can select **Simulation automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
-2. On **Simulation automations**, select ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation**.
+2. On the **Simulation automations** page, click ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation** to start the new simulation automation wizard.
 
    :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="The Create simulation button on the Simulation automations tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
-3. The new simulation automation wizard opens. The rest of this article describes the pages and the settings they contain.
+   The following sections describe the steps and configuration options to create a simulation automation.
 
-> [!NOTE]
-> At any point during the new simulation automation wizard, you can click **Save and close** to save your progress and continue configuring the simulation later. The incomplete simulation has the **Status** value **Draft** in **Simulation automations** on the **Automations** tab. You can pick up where you left off by selecting the simulation and clicking ![Edit simulation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** simulation.
+   > [!NOTE]
+   > At any point after you name the simulation automation during the new simulation automation wizard, you can click **Save and close** to save your progress and continue later. The incomplete simulation automation has the **Status** value **Draft**. You can pick up where you left off by selecting the simulation automation from the list and then clicking the ![Edit automation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit automation** icon that appears.
 
 ## Name and describe the simulation automation
 
@@ -617,21 +638,23 @@ When the simulation automation is created, the page title changes to **New autom
 
 When you're finished on the **New automation created** page, click **Done**.
 
-Back on the **Simulation automations** tab in **Automations**, the simulation automation that you created is now listed with the **Status** value **Inactive**.
+Back on the **Simulation automations** page on the **Automations** tab, the simulation automation that you created is now listed with the **Status** value **Inactive**.
 
-## To turn on a simulation automation
+To turn on the simulation automation, see the next section.
 
-After you create a simulation automation, you need to turn it on.
+## Turn on or turn off a simulation automation
 
-To turn on a simulation automation, do the following steps:
+- You can turn on simulations automations with the **Status** value **Inactive**.
+- You can turn off simulation automations with the **Status** value **Active**.
+- You can't turn on or turn off incomplete simulation automations with the **Status** value **Draft**.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> **Simulation automations**. or, to go directly to the **Automations** tab where you can select **Simulation automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
+To turn on an **Inactive** simulation automation, select it from the list by clicking the check box next to the name. Click the ![Turn on icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn on** icon that appears, and then click **Confirm** in the dialog. The **Status** value changes to **Active**.
 
-2. On **Simulation automations**, select an **Inactive** simulation automation from the list by clicking on the check box next to the name.
+To turn off an **Active** simulation automation, select it from the list by clicking the check box next to the name. Click the ![Turn off icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn off** icon that appears, and then click **Confirm** in the dialog. The **Status** value changes to **Inactive**.
 
-3. Click the ![Turn on icon.](../../media/m365-cc-sc-turn-on-off-icon.png) that appears.
+## Remove simulation automations
 
-4. In the confirmation dialog that opens, click **Confirm**.
+To remove a simulation automation, select the simulation automation from the list by clicking the check box next to the name. Click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears, and then click **Confirm** in the dialog.
 
 ## Frequently asked questions (FAQ) for simulations automations
 

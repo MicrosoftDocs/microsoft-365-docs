@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn how to create and manage landing pages for simulated phishing attacks in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/28/2023
+ms.date: 3/29/2023
 ---
 
 # Landing pages in Attack simulation training
@@ -70,20 +70,20 @@ In custom landing pages only, an **Edit landing page** link is available at the 
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Phish landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
-   On the **Tenant landing pages** tab, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the new landing page wizard.
+2. On the **Tenant landing pages** tab, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the new landing page wizard.
 
    > [!NOTE]
-   > ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** is also available during the payload selection step of creating a simulation or simulation automation. For more information, see [Create a simulation: select a landing page](attack-simulation-training-simulations.md#select-a-landing-page) and [Create a simulation: select a landing page](attack-simulation-training-simulation-automations.md#select-a-landing-page).
+   > At any point after you name the landing page during the new landing page wizard, you can click **Save and close** to save your progress and continue later. The incomplete landing page has the **Status** value **Draft**. You can pick up where you left off by selecting the landing page from the list and then clicking the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
    >
-   > At any point during the new landing page wizard, you can click **Save and close** to save your progress and continue configuring the landing page later. You can pick up where you left off by selecting the landing page on the **Tenant landing pages** tab in **Landing pages**, and then clicking ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**. The partially-completed landing page will have the **Status** value **Draft**.
+   > You can also create landing pages during the creation of simulations and simulation automations. For more information, see [Create a simulation: Select a landing page](attack-simulation-training-simulations.md#select-a-landing-page) and [Create a simulation automation: Select a landing page](attack-simulation-training-simulation-automations.md#select-a-landing-page).
 
-2. On the **Define details for phish landing page** page, configured the following settings:
+3. On the **Define details for phish landing page** page, configured the following settings:
    - **Name**: Enter a unique, descriptive name for the landing page.
    - **Description**: Enter an optional description.
 
    When you're finished on the **Define details for phish landing page** page, click **Next**.
 
-3. On the **Configure landing page** page, click **Define content in preferred language**. In the **Add content in default language** flyout that opens, configure the following settings:
+4. On the **Configure landing page** page, click **Define content in preferred language**. In the **Add content in default language** flyout that opens, configure the following settings:
    - **Select the language for the landing page**: Select one of the 29+ available languages.
    - **Mark this as default language**: For the first landing page you create, this setting is selected and unchangeable.
    - Landing page content: Two tabs are available:
@@ -129,11 +129,11 @@ In custom landing pages only, an **Edit landing page** link is available at the 
 
    When you're finished on the **Configure landing page** page, click **Next**.
 
-4. On the **Review landing page** page, you can review your selections. Click **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
+5. On the **Review landing page** page, you can review your selections. Click **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
    When you're finished on the **Review landing page** page, click **Submit**, and then click **Done** on the confirmation page.
 
-Back on the **Tenant landing pages** tab of the **Select phish landing page**, select the landing page you created by selecting the check box next to the **Name**, and then click **Next**.
+6. Back on the **Tenant landing pages** tab of the **Select phish landing page**, select the landing page you created by selecting the check box next to the **Name**, and then click **Next**.
 
 ## Modify landing pages
 

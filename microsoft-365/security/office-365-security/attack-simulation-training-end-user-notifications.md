@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn how to create end-user notification email messages for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 3/29/2023
 ---
 
 # End-user notifications for Attack simulation training
@@ -83,7 +83,9 @@ On the details flyout from the **Tenant notifications** tab only, click **Edit n
 2. On the **Tenant notifications** tab, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the new end-user notification wizard.
 
    > [!NOTE]
-   > At any point during the new end-user notification wizard, you can click **Save and close** to save your progress and continue configuring the notification later. You can pick up where you left off by selecting the notification on the **Tenant notifications** tab in **End user notifications**, and then clicking ![Edit automation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit automation**. The partially-completed notification will have the **Status** value **Draft**.
+   > At any point after you name the notification during the new end-user notification wizard, you can click **Save and close** to save your progress and continue later. The incomplete notification has the **Status** value **Draft**. You can pick up where you left off by selecting the end-user notification from the list and then clicking the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
+   >
+   > You can also create end-user notifications during the creation of simulations and simulation automations. For more information, see [Create a simulation: Select end user notifications](attack-simulation-training-simulations.md#select-end-user-notifications) and [Create a simulation automation: Select end user notifications](attack-simulation-training-simulation-automations.md#select-end-user-notifications).
 
 3. On the **Define details** page**, configure the following settings:
    - **Select notification type**: Select one of the following values:
@@ -191,7 +193,7 @@ After the copy is created, you can modify it as [previously described](#modify-e
 > [!TIP]
 > When you're creating or editing a notification, the **Use from default** control on the **Text** tab of the **Add content in default language** step in the end-user notification wizard also allows you to copy the contents of a built-in notification.
 
-## Remove notifications
+## Remove end-user notifications
 
 You can't remove built-in notifications from the **Global notifications** tab. You can only remove custom notifications on the **Tenant notifications** tab. When you delete a notification, all translations of the notification are deleted.
 

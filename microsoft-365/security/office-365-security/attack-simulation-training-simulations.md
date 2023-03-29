@@ -14,7 +14,7 @@ ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 12/01/2022
+ms.date: 3/29/2023
 ---
 
 # Simulate a phishing attack with Attack simulation training in Defender for Office 365
@@ -32,14 +32,14 @@ To launch a simulated phishing attack, do the following steps:
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulations** tab. Or, to go directly to the **Simulations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
 
-2. On the **Simulations** tab, select ![Launch a simulation icon.](../../media/m365-cc-sc-create-icon.png) **Launch a simulation**.
+2. On the **Simulations** tab, select ![Launch a simulation icon.](../../media/m365-cc-sc-create-icon.png) **Launch a simulation** to start the new simulation wizard.
 
    :::image type="content" source="../../media/attack-sim-training-simulations-launch.png" alt-text="The Launch a simulation button on the Simulations tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-launch.png":::
 
-3. The new simulation wizard opens. The rest of this article describes the pages and the settings they contain.
+   The following sections describe the steps and configuration options to create a simulation.
 
-> [!NOTE]
-> At any point during the new training simulation wizard, you can click **Save and close** to save your progress and continue configuring the simulation later. The incomplete simulation has the **Status** value **Draft** on the **Simulations** tab. You can pick up where you left off by selecting the simulation and clicking ![Edit simulation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** simulation.
+   > [!NOTE]
+   > At any point after you name the simulation during the new simulation wizard, you can click **Save and close** to save your progress and continue later. The incomplete simulation has the **Status** value **Draft**. You can pick up where you left off by selecting the simulation from the list and then clicking the ![Edit simulation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit simulation** icon that appears.
 
 ## Select a social engineering technique
 
@@ -589,23 +589,28 @@ When you're finished on the **Launch details** page, click **Next**.
 
 ## Review simulation details
 
-On the **Review simulation** page, you can review information about the simulation.
+On the **Review simulation** page, you can review the details of the simulation.
 
 Click the ![Send a test icon.](../../media/m365-cc-sc-send-icon.png) **Send a test** button to send a copy of the payload email to yourself (the currently logged in user) for inspection.
 
 You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard to modify the settings.
 
-When you're finished, click **Submit**.
-
-On the **New simulation created** page, you can use the links to launch a simulation, or view all simulations.
-
-When you're finished, click **Done**.
+When you're finished on the **Review simulation** page, click **Submit**.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="The Review simulation page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
 
-## View simulations on the Simulations tab
+On the **Simulation has been scheduled for launch** page, you can use the links to go to the Attack simulation training overview or to view all payloads.
 
-The **Simulations** tab in  Attack simulation training shows any simulations that you've created.
+When you're finished on the **Simulation has been scheduled for launch**, click **Done**.
+
+Back on the **Simulations** tab, the payload automation that you created is now listed. Dhe **Status** value depends on your previous selection in the [Configure the simulation launch details](#configure-the-simulation-launch-details) step:
+
+- **In progress** if you selected **Launch this simulation as soon as I'm done**.
+- **Scheduled** if you selected **Schedule this simulation to be launched later**.
+
+## View simulations
+
+The **Simulations** tab in Attack simulation training shows any simulations that you've created.
 
 By default, the following information is shown for each simulation<sup>\*</sup>:
 
@@ -627,10 +632,10 @@ By default, the following information is shown for each simulation<sup>\*</sup>:
 
 <sup>\*</sup> To see all of the columns, you might need to narrow some columns or zoom out in your browser.
 
-Click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, all available columns are selected.
+Click a column header to sort by that column. To remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**.
 
 Use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name of an existing simulation.
 
-Click ![Filter payload icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the simulations by **Technique** or **Status**.
+Click ![Filter simulation icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the simulations by **Technique** or **Status**.
 
 When you're finished configuring filters, click **Apply**, **Cancel**, or ![Clear filters icon.](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
