@@ -292,7 +292,7 @@ Check the tamper protection status by running the following command:
 
 `mdatp health --field tamper_protection`
 
-The result will show "block" if tamper protection is on:
+The result shows "block" if tamper protection is on:
 
 ![Image of tamper protection in block mode](images/tp-block-mode.png)
 
@@ -312,7 +312,7 @@ Tampering alert is raised in the Microsoft 365 Defender portal
 
 ### Verify block mode and audit modes
 
-- Using Advanced hunting, you'll see tampering alerts appear
+- Using Advanced hunting, you see tampering alerts appear
 - Tampering events can be found in the local device logs: `sudo grep -F '[{tamperProtection}]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
 
 ![Screenshot of tamper protection log.](images/tamper-protection-log.png)
