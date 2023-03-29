@@ -65,6 +65,8 @@ The Microsoft Defender for Office 365 is also secure by default by quarantining 
 
 Learn how to set up your SecOps team with [Microsoft Defender for Office 365 Security Operations Guide](mdo-sec-ops-guide.md).
 
-Learn more about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture with [Zero Trust deployment plan with Microsoft 365](../microsoft-365-zero-trust.md).
-
 Learn more about Zero Trust and how to build an enterprise-scale strategy and architecture with the [Zero Trust Guidance Center](/security/zero-trust).
+
+Learn about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture with [Zero Trust deployment plan with Microsoft 365](../microsoft-365-zero-trust.md).
+
+For an overview of Zero Trust for Microsoft 365 Defender services, see [Zero Trust with Microsoft 365 Defender](zero-trust-with-microsoft-365-defender.md).

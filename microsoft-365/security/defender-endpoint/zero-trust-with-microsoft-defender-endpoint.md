@@ -67,14 +67,12 @@ Defender for Endpoint provides the following threat protections:
 
 ## Next steps
 
-For the steps to deploy Intune for Microsoft 365, see the [Manage devices with Intune and Microsoft 365](../../solutions/manage-devices-with-intune-overview.md) solution guidance.
-
-See the following for Zero Trust-specific solution guidance:
-
-- For endpoint protection concepts and deployment objectives, see [Secure endpoints with Zero Trust](/security/zero-trust/deploy/endpoints).
-
-- For other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture, see [Zero Trust deployment plan with Microsoft 365](../microsoft-365-zero-trust.md).
-
-Learn more about Zero Trust concepts and deployment objectives for endpoints with [Secure endpoints with Zero Trust](/security/zero-trust/deploy/endpoints).
-
 Learn more about Zero Trust and how to build an enterprise-scale strategy and architecture with the [Zero Trust Guidance Center](/security/zero-trust).
+
+For endpoint protection concepts and deployment objectives, see [Secure endpoints with Zero Trust](/security/zero-trust/deploy/endpoints).
+
+For the steps to deploy Intune for Microsoft 365 with Zero Trust, see the [Manage devices with Intune and Microsoft 365](../../solutions/manage-devices-with-intune-overview.md) solution guidance.
+
+For other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture, see [Zero Trust deployment plan with Microsoft 365](../microsoft-365-zero-trust.md).
+
+For an overview of Zero Trust for Microsoft 365 Defender services, see [Zero Trust with Microsoft 365 Defender](zero-trust-with-microsoft-365-defender.md).
