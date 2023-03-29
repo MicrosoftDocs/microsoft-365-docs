@@ -89,7 +89,7 @@ Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, Sh
 > 
 > 3. Defender for Business is included in Microsoft 365 Business Premium. Defender for Business can also be added on to Microsoft 365 Business Basic or Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
 > 
-> 4. Defender for Office 365 Plan 1 is included in Microsoft 365 Business Premium. Defender for Office 365 Plan 1 can also be added on to Microsoft 365 Business Basic or Standard. See [Defender for Office 365 Plan 1 and Plan 2](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview).
+> 4. Defender for Office 365 Plan 1 is included in Microsoft 365 Business Premium. Defender for Office 365 Plan 1 can also be added on to Microsoft 365 Business Basic or Standard. See [Defender for Office 365](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview).
 > 
 
 ## See also
