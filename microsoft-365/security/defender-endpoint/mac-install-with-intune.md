@@ -115,7 +115,7 @@ This profile contains a license information for Microsoft Defender for Endpoint.
 1. Assign devices on the **Assignment** tab. Click **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-3.png" alt-text="The completion of the custom configuration profile" lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-3.png" alt-text="The completion of the custom configuration profile." lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
 
 1. Review and **Create**.
 1. Open **Devices** \> **Configuration profiles**, you can see your created profile there.

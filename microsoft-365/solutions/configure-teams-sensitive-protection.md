@@ -89,7 +89,7 @@ Once you've created the label, you need to publish it to the users who will use 
 
 ## Create a team
 
-Further configuration of the sensitive scenario is done in the SharePoint site associated with the team, so the next step is to create a team.
+Further configuration of the sensitive scenario is done in the team itself and in the SharePoint site associated with the team, so the next step is to create a team.
 
 To create a team for sensitive information
 1. In Teams, click **Teams** on the left side of the app, then click **Join or create a team** at the bottom of the teams list.

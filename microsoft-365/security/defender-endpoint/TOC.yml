@@ -5,6 +5,8 @@
     items:
     - name: What is Microsoft Defender for Endpoint?
       href: microsoft-defender-endpoint.md
+    - name: Zero Trust for Microsoft Defender for Endpoint
+      href: zero-trust-with-microsoft-defender-endpoint.md
     - name: Trial user guide - Microsoft Defender for Endpoint
       href: defender-endpoint-trial-user-guide.md
     - name: Compare Microsoft endpoint security plans
