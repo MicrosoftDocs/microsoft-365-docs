@@ -36,7 +36,7 @@ The [practical guide to security using Microsoft 365 Business (Basic, Standard, 
 
 Use this guidance to:
 
-- Adopt a formal, vendor agnostic cybersecurity framework, such as the NIST Cybersecurity Framework or CIS Critical Security Controls.
+- Adopt a formal, vendor-agnostic cybersecurity framework.
 - Create a plan that includes identity management, admin accounts, device management, licensing, and more.
 - Set up, configure, use, and maintain Microsoft 365 Business Premium, step by step.
 - Implement and use data protection capabilities, such as sensitivity labels and DLP policies.
