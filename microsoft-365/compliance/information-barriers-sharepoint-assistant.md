@@ -61,16 +61,16 @@ To verify that a new application was properly created in your organization's ent
 3. Select **Enterprise Applications** in left navigation listing.
 4. Search for the compliance assistant using 'M365' as the search term.
 
-    ![Search for IB compliance assistant app](media/info-barriers-compliance-assistant-search.png)
+    ![Search for IB compliance assistant app](../media/info-barriers-compliance-assistant-search.png)
 
 5. Select **M365-Group-Compliance-Assistant** from the list of search results.
 6. On the **M365-Group-Compliance-Assistant overview** page, you can review application properties.
 
-    ![Overview page for IB compliance assistant app](media/info-barriers-compliance-assistant-overview.png)
+    ![Overview page for IB compliance assistant app](../media/info-barriers-compliance-assistant-overview.png)
 
 7. Select **Permissions** in the left-navigation pane to review the permissions that the application is authorized for.
 
-    ![Permissions page for IB compliance assistant app](media/info-barriers-compliance-assistant-permissions.png)
+    ![Permissions page for IB compliance assistant app](../media/info-barriers-compliance-assistant-permissions.png)
 
 8. In this example, the **M365-Group-Compliance-Assistant** is authorized to add/remove non-compliant information barrier users from your Microsoft 365 groups.
 

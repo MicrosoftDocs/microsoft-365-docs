@@ -134,7 +134,7 @@ Non-segment users can't access a site associated with segments. They'll see an e
 
 The following example illustrates three segments in an organization: HR, Sales, and Research. An information barrier policy has been defined that blocks communication and collaboration between the Sales and Research segments. These segments are incompatible.
 
-![Example of segments in an organization.](media/info-barriers-segments-example.png)
+![Example of segments in an organization.](../media/info-barriers-segments-example.png)
 
 With SharePoint information barriers, a SharePoint Administrator or Global Administrator can associate segments to a site to prevent the site from being shared with or accessed by users outside the segments. Up to 100 compatible segments can be associated with a site. The segments are associated at the site level (previously called site collection level). The Microsoft 365 group connected to the site is also associated with the site's segment.
 
@@ -215,13 +215,13 @@ To view, edit, or remove information segments for a site, use <a href="https://g
 
 The Segments column lists the first segment associated with the site and shows whether the site has other segments associated. [Learn how to show or move this column](customize-admin-center-site-list.md#customize-columns)
 
-![Segments column on the Active sites page.](media/info-barriers-segments-column.png)
+![Segments column on the Active sites page.](../media/info-barriers-segments-column.png)
 
 To view the complete list of segments associated with a site, select the site name to open the details panel, and then select the **Settings** tab.
 
 To edit the segments associated with the site, select **Edit**, add or remove segments, and then select **Save**.
 
-![Edit information segments panel.](media/info-barriers-edit-info-segments.png)
+![Edit information segments panel.](../media/info-barriers-edit-info-segments.png)
 
 ### 2. Use SharePoint PowerShell to view and manage information segments on a site
 

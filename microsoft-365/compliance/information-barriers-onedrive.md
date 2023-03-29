@@ -126,7 +126,7 @@ For an unsegmented user to access content in a OneDrive that has segments and th
 
 The following example illustrates three segments in an organization: HR, Sales, and Research. An information barrier policy has been defined that blocks communication and collaboration between the Sales and Research segments.
 
-![Example of segments in an organization](/sharepoint/sharepointonline/media/info-barriers-segments-example.png)
+![Example of segments in an organization](../media/info-barriers-segments-example.png)
 
 With information barriers in OneDrive, when a segment is applied to a user, within 24 hours that segment is automatically associated with the user's OneDrive. Other segments that are compatible with the user's segment and with each other will also get associated with the OneDrive. A OneDrive can have up to 100 segments associated with it. A global or SharePoint admin can manage these segments using PowerShell, as described later in the section [Associate or remove additional segments on a user's OneDrive](#manage-segments-on-a-users-onedrive).
 
