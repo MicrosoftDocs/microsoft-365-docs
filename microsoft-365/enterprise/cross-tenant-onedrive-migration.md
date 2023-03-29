@@ -77,6 +77,9 @@ Any legal URL will be accepted when creating your Identity Map from Source to Ta
 ## OneDrive account size limits
 Each OneDrive account can have a maximum of 2 TB of content or 1 million items.
 
+>[!Important]
+>If you attempt to migrate any OneDrive site that exceeds the 2GB quota, the transfer will fail.
+
 
 ## Permissions
 
