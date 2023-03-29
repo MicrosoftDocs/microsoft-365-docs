@@ -27,11 +27,11 @@ ms.date: 01/12/2023
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-This article attempts to explain the common error messages tha you might receive as you try to [report emails, URLs, and email attachments to Microsoft](submissions-admin.md)
+This article attempts to explain the common error messages that you might receive as you try to [report emails, URLs, and email attachments to Microsoft](submissions-admin.md)
 
 ## This message didn't pass through our mail flow system, or the message metadata isn't available yet error
 
-If you encounter this error message, then either of the following conditions might have occured:
+If you encounter this error message, then either of the following conditions might have occurred:
 
 - You tried to submit an email message that wasn't filtered by Exchange Online Protection (EOP) or Microsoft Defender for Office 365 at the time of delivery.
 

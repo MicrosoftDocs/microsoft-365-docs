@@ -54,17 +54,17 @@ Depending on how you configure policies in Intune, Conditional Access can be set
 
 For example, you can configure Intune to apply Conditional Access on devices that have a high risk.
 
-In Intune, a device compliance policy is used in conjunction with Azure AD Conditional Access to block access to applications. In parallel, an automated investigation and remediation process is launched.
+In Intune, a device compliance policy is used with Azure AD Conditional Access to block access to applications. In parallel, an automated investigation and remediation process is launched.
 
  A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated.
 
-To resolve the risk found on a device, you'll need to return the device to a compliant state. A device returns to a compliant state when there is no risk seen on it.
+To resolve the risk found on a device, you need to return the device to a compliant state. A device returns to a compliant state when there's no risk seen on it.
 
 There are three ways to address a risk:
 
 1. Use Manual or automated remediation.
-2. Resolve active alerts on the device. This will remove the risk from the device.
-3. You can remove the device from the active policies and consequently, Conditional Access will not be applied on the device.
+2. Resolve active alerts on the device. This removes the risk from the device.
+3. You can remove the device from the active policies and consequently, Conditional Access won't be applied on the device.
 
 Manual remediation requires a secops admin to investigate an alert and address the risk seen on the device. The automated remediation is configured through configuration settings provided in the following section, [Configure Conditional Access](configure-conditional-access.md).
 
@@ -75,7 +75,7 @@ The following example sequence of events explains Conditional Access in action:
 1. A user opens a malicious file and Defender for Endpoint flags the device as high risk.
 2. The high risk assessment is passed along to Intune. In parallel, an automated investigation is initiated to remediate the identified threat. A manual remediation can also be done to remediate the identified threat.
 3. Based on the policy created in Intune, the device is marked as not compliant. The assessment is then communicated to Azure AD by the Intune Conditional Access policy. In Azure AD, the corresponding policy is applied to block access to applications.
-4. The manual or automated investigation and remediation is completed and the threat is removed. Defender for Endpoint sees that there is no risk on the device and Intune assesses the device to be in a compliant state. Azure AD applies the policy which allows access to applications.
+4. The manual or automated investigation and remediation is completed and the threat is removed. Defender for Endpoint sees that there's no risk on the device and Intune assesses the device to be in a compliant state. Azure AD applies the policy, which allows access to applications.
 5. Users can now access applications.
 
 ## Related topic
