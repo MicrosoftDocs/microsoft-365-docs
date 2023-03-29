@@ -43,7 +43,7 @@ The deployment rings can be applied in the following scenarios:
 
 :::image type="content" source="images/deployment-rings.png" alt-text="The deployment rings." lightbox="images/deployment-rings.png":::
 
-A ring-based approach is a method of identifying a set of endpoints to onboard and verifying that certain criteria is met before proceeding to deploy the service to a larger set of devices. You can define the exit criteria for each ring and ensure that they're satisfied before moving on to the next ring.
+A ring-based approach is a method of identifying a set of endpoints to onboard and verifying that certain criteria are met before proceeding to deploy the service to a larger set of devices. You can define the exit criteria for each ring and ensure that they're satisfied before moving on to the next ring.
 
 Adopting a ring-based deployment helps reduce potential issues that could arise while rolling out the service. By piloting some devices first, you can identify potential issues and mitigate potential risks that might arise.
 
