@@ -66,7 +66,7 @@ DLP policy tips in Outlook Web Access are supported for all the conditions, and 
 Currently, Outlook 2013 and later supports showing policy tips for policies that contain these conditions:
 
 For E3 customers
-- Content contains (works only for Sensitive information types. Sensitivity labels are not supported)
+- Content contains (works only for Sensitive information types. Sensitivity labels aren't supported)
 - Content is shared
 
 For E5 customers
@@ -305,7 +305,7 @@ The list of out-of-the-box sensitive information types that will be detected in 
 - Ukraine Passport Number (Domestic) 
 - Ukraine Passport Number (International) 
  
-Note that custom sensitive information types will also be detected in addition to the above out-of-the-box sensitive information types
+Custom sensitive information types will also be detected in addition to the above out-of-the-box sensitive information types
 
 ## Support Matrix for DLP policy tips across Microsoft apps
 
