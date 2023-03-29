@@ -27,7 +27,7 @@ description: "Before you can use Microsoft 365 services with your device, you mi
 # Enroll your mobile device using Basic Mobility and Security
 
 Using your phone, tablet, and other mobile devices for work is a great way to stay informed and work on business projects while you’re away from the office. Before you can use Microsoft 365 services with your device, you might need to first enroll it in Basic Mobility and Security for Microsoft 365 using Microsoft Intune Company Portal.
- q
+ 
 Organizations choose Basic Mobility and Security so that employees can use their mobile devices to securely access work email, calendars, and documents while the business secures important data and meets their compliance requirements. To learn more, see [Overview of Basic Mobility and Security for Microsoft 365](overview.md). For more info, see [What information can my organization see when I enroll my device?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
 > [!IMPORTANT]
