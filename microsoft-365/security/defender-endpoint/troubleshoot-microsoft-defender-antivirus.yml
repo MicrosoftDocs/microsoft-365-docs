@@ -16,14 +16,8 @@ metadata:
   - m365-security
   - tier3
   search.appverid: met150
-  
 title: Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus
 summary: | 
-
-Applies to:
- - Microsoft Defender for Endpoint Plan 1 and 2
- - Microsoft Defender Antivirus
-
  If you encounter a problem with Microsoft Defender Antivirus, you can search the below sections in this topic to find a matching issue and potential solution.
 
 The following sections are:
@@ -31,21 +25,22 @@ The following sections are:
  - [Microsoft Defender Antivirus client error codes](#error-codes)
  - [Internal Microsoft Defender Antivirus client error codes (used by Microsoft during development and testing)](#internal-error-codes)
 
-## Microsoft Defender Antivirus event IDs
+sections:
+  - name: General
+    questions:
 
-Microsoft Defender Antivirus records event IDs in the Windows event log.
+      - question: How do I view a Microsoft Defender Antivirus event?
+        answer: |
 
-You can directly view the event log, or if you have a third-party security information and event management (SIEM) tool, you can also consume [Microsoft Defender Antivirus client event IDs](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) to review specific events and errors from your endpoints.
+          1. Open **Event Viewer**.
 
-The table in this section lists the main Microsoft Defender Antivirus event IDs and, where possible, provides suggested solutions to fix or resolve the error.
+          2. In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender**.
 
-## To view a Microsoft Defender Antivirus event
+          3. Double-click on **Operational**.
 
- 1. Open **Event Viewer**.
- 2. In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender**.
- 3. Double-click on **Operational**.
- 4. In the details pane, view the list of individual events to find your event.
- 5. Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
+          4. In the details pane, view the list of individual events to find your event.
+
+          5. Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
 
 ### Event ID: 1000
 
