@@ -115,13 +115,10 @@ This profile contains a license information for Microsoft Defender for Endpoint.
 1. Assign devices on the **Assignment** tab. Click **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-2.png" alt-text="The custom configuration profile - assignment" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-3.png" alt-text="The completion of the custom configuration profile." lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
 
 1. Review and **Create**.
 1. Open **Devices** \> **Configuration profiles**, you can see your created profile there.
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-3.png" alt-text="The completion of the custom configuration profile" lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
 
 ### Approve System Extensions
 
@@ -143,7 +140,9 @@ This profile is needed for macOS 11 (Big Sur) or later. It will be ignored on ol
 1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 1. Review and create this configuration profile.
 
+
 ### Full Disk Access
+
 
 > [!NOTE]
 > Enabling **TCC** (Transparency, Consent & Control) through an Mobile Device Management solution such as [Intune](mac-install-with-intune.md), will eliminate the risk of Defender for Endpoint losing **Full Disk Access** Authorization to function properly.
