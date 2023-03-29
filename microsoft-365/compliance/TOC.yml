@@ -306,13 +306,13 @@
           items:
             - name: Microsoft Teams and information barriers
               href: information-barriers-teams.md
-            - name: Microsoft Teams shared channels
+            - name: Microsoft Teams shared channels and information barriers
               href: information-barriers-teams-shared-channels.md
             - name: OneDrive and information barriers
               href: information-barriers-onedrive.md
             - name: SharePoint and information barriers
               href: information-barriers-sharepoint.md
-            - name: Compliance assistant for group-connected SharePoint sites
+            - name: SharePoint information barriers compliance assistant (preview)
               href: information-barriers-sharepoint-assistant.md
             - name: SharePoint information barriers policy compliance report
               href: information-barriers-sharepoint-report.md
