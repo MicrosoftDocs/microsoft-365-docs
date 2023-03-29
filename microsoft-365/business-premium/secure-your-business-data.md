@@ -85,7 +85,7 @@ Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, Sh
 > [!NOTE]
 > 1. Microsoft Publisher and Microsoft Access run on Windows laptops and desktops only.
 > 
-> 2. Microsoft Intune is included with certain Microsoft 365 plans, such as Microsoft 365 Business Premium. Basic Mobility and Security capabilities are included in Microsoft 365 Business Basic and Standard. [Choose between Basic Mobility and Security or Intune](../admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
+> 2. Microsoft Intune is included with Microsoft 365 Business Premium, and can be added on to Microsoft 365 Business Basic and Standard. Basic Mobility and Security capabilities in Microsoft 365 Business Basic and Standard enable users to access work email, calendar, contacts, and documents on their devices. [Choose between Basic Mobility and Security or Intune](../admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
 > 
 > 3. Defender for Business is included in Microsoft 365 Business Premium. Defender for Business can also be added on to Microsoft 365 Business Basic or Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
 > 
