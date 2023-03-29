@@ -296,6 +296,10 @@
                   href: advanced-hunting-alertevidence-table.md
                 - name: AlertInfo
                   href: advanced-hunting-alertinfo-table.md
+                - name: BehaviorEntities
+                  href: advanced-hunting-behaviorentities-table.md
+                - name: BehaviorInfo
+                  href: advanced-hunting-behaviorinfo-table.md                                    
                 - name: CloudAppEvents
                   href: advanced-hunting-cloudappevents-table.md
                 - name: DeviceEvents
