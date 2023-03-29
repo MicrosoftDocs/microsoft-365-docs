@@ -23,7 +23,7 @@ ms.date: 3/29/2023
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, simulation automations allow you to run multiple benign cyberattack simulations in your organization. Simulation automations can contain multiple social engineering techniques and payloads, and can start on an automated schedule. Creating a simulation automation is very similar to [creating an individual simulation](attack-simulation-training-simulations.md), except the ability to select multiple techniques, payloads, and the automation schedule.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, simulation automations allow you to run multiple benign cyberattack simulations in your organization. Simulation automations can contain multiple social engineering techniques and payloads, and can start on an automated schedule. Creating a simulation automation is very similar to [creating an individual simulation](attack-simulation-training-simulations.md), except for the ability to select multiple techniques, payloads, and the automation schedule.
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
