@@ -1,6 +1,6 @@
 ---
-title: Suspicious password-spray-related IP address activity alert
-description: Alert grading for suspicious password-spray-related IP address activity to review the alerts and take recommended actions to remediate the attack and protect your network.
+title: Suspicious IP address related to password spraying activity
+description: Alert classification for suspicious IP address related to password spraying activity to review the alerts and take recommended actions to remediate the attack and protect your network.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, devices, users, 365, microsoft, m365, password, spray, alert classification, alert grading, cloud apps, suspicious IP
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: dansimp
+ms.author: diannegali
 author: dgali297
 ms.localizationpriority: medium
 manager: dansimp
@@ -22,10 +22,10 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 08/09/2022
+ms.date: 03/29/2022
 ---
 
-# Suspicious password spray-related IP activity
+# Suspicious IP address related to password spraying activity
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
