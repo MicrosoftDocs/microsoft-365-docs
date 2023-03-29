@@ -42,7 +42,7 @@ Here are some of the characteristics of a compromised connector:
 
 - Mismatch between P1 and P2 senders in outbound mails. For more information on P1 and P2 senders, see [How EOP validates the From address to prevent phishing](anti-phishing-from-email-address-validation.md#an-overview-of-email-message-standards).
 
-- Outbound mails sent from a domain that is not provisioned or registered.
+- Outbound mails sent from a domain that isn't provisioned or registered.
 
 - The connector is blocked from sending relaying mail.
 
@@ -72,7 +72,7 @@ If you have [Microsoft Defender for Office 365 plan 2](defender-for-office-365.m
 
 3. Identify:
 
-    - If **Sender IP** matches with your organization's on-prem IP address.
+    - If **Sender IP** matches with your organization's on-premises IP address.
 
     - If a significant number of emails were recently sent to the **Junk** folder. This is a good indicator of a compromised connector being used to send spam.
 
