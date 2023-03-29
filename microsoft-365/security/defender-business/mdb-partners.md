@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 03/28/2023
+ms.date: 03/29/2023
 ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -21,11 +21,11 @@ ms.collection:
 
 # Resources for Microsoft partners using Microsoft Defender for Business and Microsoft 365 Business Premium
 
-Small and medium-sized businesses recognize security as a key component to their success, but often don't have the capacity or expertise to have a dedicated security operations team. Customers often need help with managing the security of their endpoints and network, and addressing alerts or detected threats. Microsoft partners can help!
+Small and medium-sized businesses recognize that security is important, but they often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with setup and configuration, managing security for their devices and network, and addressing alerts or detected threats. Microsoft partners can help!
 
-If you're a Microsoft partner, and you're working with customers who have or need [Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/index.md), or [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), this article is for you.
+If you're a Microsoft partner, and you're working with customers who have or need [Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/index.md), or [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), this article is for you!
 
-- [Download the guide and checklist for security with Microsoft 365 for business](#download-our-guide-and-checklist-new)
+- [Download the guide and checklist for security with Microsoft 365 for business](#download-our-guide-and-checklist-new) (NEW!)
 - [Learn how you can integrate Microsoft endpoint security with your RMM tools and PSA software](#integrate-microsoft-endpoint-security-with-your-rmm-tools-and-psa-software).
 - [See how you can use Microsoft 365 Lighthouse to secure and manage your customers' devices and data](#use-microsoft-365-lighthouse-to-secure-and-manage-your-customers-devices-and-data).
 - [Learn more about Defender for Business and Microsoft 365 Business Premium](#learn-more-about-defender-for-business-and-microsoft-365-business-premium).
