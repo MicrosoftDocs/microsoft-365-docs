@@ -52,7 +52,7 @@ However, since introducing IBs, many other areas have found them to be useful. O
 
 For example, Enrico belongs to the Banking segment and Pradeep belongs to the Financial advisor segment. Enrico and Pradeep can't communicate with each other because the organization's IB policy blocks communication and collaboration between these two segments. However, Enrico and Pradeep can communicate with Lee in HR.
 
-![Example showing information barriers preventing communication between segments.](media/information-barriers-example.png)
+![Example showing information barriers preventing communication between segments.](../media/information-barriers-example.png)
 
 ## When to use information barriers
 
@@ -87,31 +87,31 @@ IB policies are activated when the following Teams events take place:
 
 - **Members are added to a team**: Whenever you add a user to a team, the user's policy must be evaluated against the IB policies of other team members. After the user is successfully added, the user can perform all functions in the team without further checks. If the user's policy blocks them from being added to the team, the user won't show up in search.
 
-    ![Screenshot of searching for a new member to add to a team and finding no matches.](media/information-barriers-add-members.png)
+    ![Screenshot of searching for a new member to add to a team and finding no matches.](../media/information-barriers-add-members.png)
 
 - **A new chat is requested**: Each time that a user requests a new chat with one or more other users, the chat is evaluated to make sure that it isn't violating any IB policies. If the conversation violates an IB policy, then the conversation isn't started.
 
     Here's an example of a 1:1 chat.
 
-    ![Screenshot showing blocked communication in 1:1 chat.](media/information-barriers-one-one-chat.png)
+    ![Screenshot showing blocked communication in 1:1 chat.](../media/information-barriers-one-one-chat.png)
 
     Here's an example of a group chat.
 
-    ![Screenshot showing group chat.](media/information-barriers-group-chat.png)
+    ![Screenshot showing group chat.](../media/information-barriers-group-chat.png)
 
 - **A user is invited to join a meeting**: When a user is invited to join a meeting, the IB policy that applies to the user is evaluated against the IB policies that apply to the other team members. If there's a violation, the user won't be allowed to join the meeting.
 
-    ![Screenshot showing user blocked from meeting.](media/information-barriers-meeting.png)
+    ![Screenshot showing user blocked from meeting.](../media/information-barriers-meeting.png)
 
 - **A screen is shared between two or more users**: When a user shares a screen with other users, the sharing must be evaluated to make sure that it doesn't violate the IB policies of other users. If an IB policy is violated, the screen share won't be allowed.
 
     Here's an example of screen share before the policy is applied.
 
-    ![Screenshot showing a user chat.](media/ib-before-screen-share-policy.png)
+    ![Screenshot showing a user chat.](../media/ib-before-screen-share-policy.png)
 
     Here's an example of screen share after the policy is applied. The screen share and call icons aren't visible.
 
-    ![Screenshot showing user char with blocked settings.](media/ib-after-screen-share-policy.png)
+    ![Screenshot showing user char with blocked settings.](../media/ib-after-screen-share-policy.png)
 
 - **A user places a phone call in Teams**: Whenever a user initiates a voice call (via VOIP) to another user or group of users, the call is evaluated to make sure that it doesn't violate the IB policies of other team members. If there's any violation, the voice call is blocked.
 
@@ -127,21 +127,21 @@ If there's an existing chat or other communication between users, and a new poli
 
     Here's an example that shows the chat is visible.
 
-    ![Screenshot showing user chat is available.](media/ib-before-1-1chat-policy.png)
+    ![Screenshot showing user chat is available.](../media/ib-before-1-1chat-policy.png)
 
     Here's an example that shows the chat is disabled.
 
-    ![Screenshot showing user chat is disabled.](media/ib-after-1-1chat-policy.png)
+    ![Screenshot showing user chat is disabled.](../media/ib-after-1-1chat-policy.png)
 
 - **Group chat**: If communication from one user to a group is no longer allowed (for example, because a user changed jobs), the user—along with the other users whose participation violates the policy—may be removed from group chat, and further communication with the group won't be allowed. The user can still see old conversations, but won't be able to see or participate in any new conversations with the group. If the new or changed policy that prevents communication is applied to more than one user, the users who are affected by the policy may be removed from group chat. They can still see old conversations.
 
   In this example, Enrico moved to a different department within the organization and is removed from the group chat.
 
-  ![Screenshot of a group chat from which a user has been removed.](media/information-barriers-user-changes-job.png)
+  ![Screenshot of a group chat from which a user has been removed.](../media/information-barriers-user-changes-job.png)
 
   Enrico can no longer send messages to the group chat.
 
-  ![Screenshot of not being able to send messages to group chat because the user was removed from the group.](media/information-barriers-user-changes-job-2.png)
+  ![Screenshot of not being able to send messages to group chat because the user was removed from the group.](../media/information-barriers-user-changes-job-2.png)
 
 - **Team**: Any users who have been removed from the group are removed from the team and won't be able to see or participate in existing or new conversations.
 
@@ -152,13 +152,13 @@ Currently, users experience the following scenarios if an IB policy blocks anoth
 - **People tab**: A user can't see blocked users on the **People** tab.
 - **People Picker**: Blocked users won't be visible in the people picker.
 
-    ![Screenshot of Teams alerting the user that policy prevents display of another user's information.](media/information-barriers-people-picker.png)
+    ![Screenshot of Teams alerting the user that policy prevents display of another user's information.](../media/information-barriers-people-picker.png)
 
 - **Activity tab**: If a user visits the **Activity** tab of a blocked user, no posts will appear. (The **Activity** tab displays channel posts only, and there would be no common channels between the two users.)
 
     Here's an example of the activity tab view that is blocked.
 
-    ![Screenshot showing the activity tab that is blocked.](media/ib-after-activity-tab-policy.png)
+    ![Screenshot showing the activity tab that is blocked.](../media/ib-after-activity-tab-policy.png)
 
 - **Org charts**: If a user accesses an org chart on which a blocked user appears, the blocked user won't appear on the org chart. Instead, an error message will appear.
 - **People card**: If a user participates in a conversation and the user is later blocked, other users will see an error message instead of the people card when they hover over the blocked user's name. Actions listed on the card (such as calling and chat) will be unavailable.
@@ -169,12 +169,12 @@ Currently, users experience the following scenarios if an IB policy blocks anoth
     Here's an example of a blocked user in the calls contact list.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot showing user user chat.](media/ib-before-chat-contacts-policy.png)
+    > ![Screenshot showing user user chat.](../media/ib-before-chat-contacts-policy.png)
 
     Here's an example of the chat being disabled for a user on the calls content list.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot showing user blocked from chat.](media/ib-after-chat-contacts-policy.png)
+    > ![Screenshot showing user blocked from chat.](../media/ib-after-chat-contacts-policy.png)
 
 - **Skype to Teams migration**: During a migration from Skype for Business to Teams, all users—even those users who are blocked by IB policies—will be migrated to Teams. Those users are then handled as described above.
 
