@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 03/09/2023
+ms.date: 03/29/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -139,25 +139,25 @@ Once you've created the label, you need to publish it to the users who will use 
 
 Further configuration of the highly sensitive scenario is done in the team itself and in the SharePoint site associated with the team, so the next step is to create a team.
 
-To create a team for highly sensitive information
-1. In Teams, click **Teams** on the left side of the app, then click **Join or create a team** at the bottom of the teams list.
-2. Click **Create team** (first card, top left corner).
-3. Choose **Build a team from scratch**.
-4. In the **Sensitivity** list, choose the **Highly sensitive** label that you just created.
-5. Under **Privacy**, click **Private**.
-6. Type a name for the team, and then click **Create**.
-7. Add users to the team, and then click **Close**.
+We'll create the team in the Teams admin center.
 
-### Private channel settings
+To create a team for highly sensitive information
+1. In the Teams admin center, expand **Teams** and select **Manage teams**.
+1. Select **Add**.
+1. Type a name and description for the team.
+1. Add one or more owners for the team. (Keep yourself as an owner so you can [choose a default sensitivity label for files](#choose-a-default-sensitivity-label-for-files) below.)
+1. Choose the sensitivity label that you created for highly sensitive information from the **Sensitivity** dropdown list.
+1. Select **Apply**.
+
+## Private channel settings
 
 In this tier, we restrict creating private channels to team owners.
 
 To restrict private channel creation
-1. In the team, click **More options**, and then click **Manage team**.
-2. On the **Settings** tab, expand **Member permissions**.
-3. Clear the **Allow members to create private channels** check box.
-
-You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who can create private channels.
+1. In the Teams admin center, select the team that you created, and then select **Edit**.
+1. Expand **Member permissions**.
+1. Set **Add and edit private channels** to **Off**.
+1. Select **Apply**.
 
 ### Shared channel settings
 
@@ -168,6 +168,8 @@ You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who
 Each time you create a new team with the highly sensitive label, there are two steps to do in SharePoint:
 - Restrict access to the site to members of the team only
 - Choose a default sensitivity label for the document library connected to the team.
+
+The default sensitivity label must be configured in the site itself and can't be set up from the SharePoint admin center or via PowerShell.
 
 #### Restrict site access to team members
 
@@ -195,6 +197,8 @@ Set-SPOSite -Identity <siteurl> -RestrictedAccessControl $true
 #### Choose a default sensitivity label for files
 
 We'll use the sensitivity label that we created as the default sensitivity label for the site document library that is connected to Teams. This will automatically apply the highly sensitive label to any new label-compatible files that are uploaded to the library, encrypting them. (This requires a Microsoft Syntex - SharePoint Advanced Management license.)
+
+You need to be a team owner to do this task.
 
 To set a default sensitivity label for a document library
 
