@@ -45,31 +45,32 @@ You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 
 Onboarding a macOS device into Compliance solutions is a multi-phase process.
 
-1. [Create system configuration profiles](#create-system-configuration-profiles)
-1. [Get the device onboarding package](#get-the-device-onboarding-package)
-1. [Deploy the mobileconfig and onboarding packages](#deploy-the-mobileconfig-and-onboarding-packages)
-1. [Publish application](#publish-application)
+1. [Create system configuration profiles](#create-system-configuration-profiles).
+1. [Get the device onboarding package](#get-the-device-onboarding-package).
+1. [Deploy the mobileconfig and onboarding packages](#deploy-the-mobileconfig-and-onboarding-packages).
+1. [Publish the application](#publish-application).
 <!--1. [Enable system extension](#enable-system-extension)-->
-
 
 ### Create system configuration profiles
 
-1. You'll need these files for this procedure. 
+#### Prerequisites
 
-|file needed for |source |
+You'll need these files for this procedure:
+
+|File needed for |Source |
 |---------|---------|
-System mobile config file | [mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension.|
-MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig). Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension.
+System mobile config file | [mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only; the file will not be recognized if it has the .txt extension.|
+MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig). Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only; the file will not be recognized if it has the .txt extension.
 
 ### Get the device onboarding package
 
-1. In **Microsoft Purview Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
+1. In the **Microsoft Purview compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
  
 1. For **Select operating system to start onboarding process** choose **macOS**.
  
 1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**.
  
-1. Choose **Download onboarding package**. 
+1. Choose **Download onboarding package**.
 
 1. Extract the zip file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
 

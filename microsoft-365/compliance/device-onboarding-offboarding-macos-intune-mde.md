@@ -45,9 +45,9 @@ Use these steps to onboard a macOS device into Compliance solutions if MDE has a
 
 ### Prerequisites
 
- You'll need these files for this procedure.
+ You'll need these files for this procedure:
 
-|file needed for |source |
+|File needed for |Source |
 |---------|---------|
 |accessibility |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
