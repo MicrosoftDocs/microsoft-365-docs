@@ -47,7 +47,7 @@ A list of trusted ARC sealers is only needed where intermediaries are part of an
 1. May modify the email header or email contents.
 2. May cause authentication to fail for other reasons (example, by removing attachments).
 
-By adding a trusted ARC sealer, Office 365 will validate and trust the authentication results that the sealer provides when delivering mail to your tenant in Office 365.
+By adding a trusted ARC sealer, Office 365 validates and trusts the authentication results that the sealer provides when delivering mail to your tenant in Office 365.
 
 **Administrators should add *only legitimate services* as trusted ARC sealers.** Adding only services the organization expressly uses and knows will help messages that must first go through a service to pass email authentication checks, and prevent legitimate messages
 from being sent to *Junk* due to authentication failures.

@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/27/2023
+ms.date: 03/29/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -58,6 +58,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Data lifecycle management and records management
 
+- **General availability (GA)**: Rolling out in general availability, [Microsoft Graph Records Management APIs](/graph/api/resources/security-recordsmanagement-overview) to support the management of retention labels and event-based retention.
 - **Improvements that support Power Automate flows**: Now rolling out to support the scenario of [customizing what happens at the end of the retention period](retention-label-flow.md), the existing Power Automate compliance actions have been renamed to more accurately describe their purpose. **Apply label on the item** is renamed **Relabel an item at the end of retention**, and **Deletes the item** is renamed **Deletes an item at the end of retention**. Additionally:
     - New compliance action to [improve the resilience of your flow](retention-label-flow.md#add-resilience-to-your-flow).
     - The trigger action **When the retention period expires** is renamed **When an item reaches the end of its retention period**.
@@ -89,6 +90,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Clarification about [adding "webhook.ingestion.office.com" to the allowlist when setting up a connector to import HR data](import-hr-data.md#before-you-begin).
 - Clarification about the [past activity detection period for email activities (contrasted to audit activities)](insider-risk-management-settings.md#policy-timeframes).
 - Clarification on the [retention time for user activities reports](insider-risk-management-activities.md#retention-and-item-limits).
+
+### Microsoft Priva
+
+- Clarifications on the three frequency settings for [user email notifications](/privacy/priva/risk-management-notifications) for policies and [timing on when the emails are sent](/privacy/priva/risk-management-policies#define-outcomes-user-email-notifications-and-tips).
+- Subject rights requests now display a count of **Record** items with retention labels as a [priority item to review](/privacy/priva/subject-rights-requests-workflow#priority-items-to-review), which means they can't be processed by the [delete workflow](/privacy/priva/subject-rights-requests-delete#delete-workflow-and-how-items-are-deleted).
+- Subject rights requests [reports](/privacy/priva/subject-rights-requests-reports) page clarifies that delete requests have their own unique report, the action execution log report.
 
 ### Permissions
 
