@@ -34,7 +34,10 @@ ms.date: 02/16/2021
 
 The `BehaviorEntities` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about behaviors in Microsoft Defender for Cloud Apps. Use this reference to construct queries that return information from this table.
 
-Behaviors are a type of data in Microsoft 365 Defender based on one or more raw events. Behaviors provide contextual insight into events and can, but not necessarily, indicate malicious activity.
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+Behaviors are a type of data in Microsoft 365 Defender based on one or more raw events. Behaviors provide contextual insight into events and can, but not necessarily, indicate malicious activity. [Read more about behaviors](../defender-cloud-apps/behaviors.md)
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
