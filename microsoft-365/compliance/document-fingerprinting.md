@@ -25,7 +25,7 @@ Information workers in your organization handle many kinds of sensitive informat
 
 ## Basic scenario for Document Fingerprinting
 
-Document fingerprinting is a Microsoft Purview data loss prevention (DLP) feature that converts a standard form into a sensitive information type, which you can use in the rules of your DLP policies. For example, you can create a document fingerprint based on a blank patent template and then create a DLP policy that detects and blocks all outgoing patent templates with sensitive content filled in. Optionally, you can set up [policy tips](use-notifications-and-policy-tips.md) to notify senders that they might be sending sensitive information, and that the sender should verify that the recipients are qualified to receive the patents. This process works with any text-based forms used in your organization. Additional examples of forms that you can upload include:
+Document fingerprinting is a Microsoft Purview data loss prevention (DLP) feature that converts a standard form into a sensitive information type (SIT), which you can use in the rules of your DLP policies. For example, you can create a document fingerprint based on a blank patent template and then create a DLP policy that detects and blocks all outgoing patent templates with sensitive content filled in. Optionally, you can set up [policy tips](use-notifications-and-policy-tips.md) to notify senders that they might be sending sensitive information, and that the sender should verify that the recipients are qualified to receive the patents. This process works with any text-based forms used in your organization. Additional examples of forms that you can upload include:
 
 - Government forms
 - Health Insurance Portability and Accountability Act (HIPAA) compliance forms
@@ -38,40 +38,80 @@ Ideally, your organization already has an established business practice of using
 
 You've probably already guessed that documents don't have actual fingerprints, but the name helps explain the feature. In the same way that a person's fingerprints have unique patterns, documents have unique word patterns. When you upload a file, DLP identifies the unique word pattern in the document, creates a document fingerprint based on that pattern, and uses that document fingerprint to detect outbound documents containing the same pattern. That's why uploading a form or template creates the most effective type of document fingerprint. Everyone who fills out a form uses the same original set of words and then adds his or her own words to the document. As long as the outbound document isn't password protected, and contains all the text from the original form, DLP can determine whether the document matches the document fingerprint.
 
+![Diagram of document fingerprinting.](../media/Document-Fingerprinting-diagram.png)
+
 > [!IMPORTANT]
 > DLP can use document fingerprinting as a detection method in Exchange, SharePoint, OneDrive, Teams, and Windows devices.
 
-The following examples show what happens if you create a document fingerprint based on a patent template; however, you can use any form as a basis for creating a document fingerprint.
-
-### Compliance portal example of a patent document matching a document fingerprint of a patent template
-1. In Microsoft Purview, choose **Data classification** and then choose **Classifiers**
-2. On the **Classifiers** page, choose **Sensitive info types**.
-3. Next, choose **Create Fingerprint-based SIT**.
-
-### PowerShell example of a patent document matching a document fingerprint of a patent template
-
-![Diagram of document fingerprinting.](../media/Document-Fingerprinting-diagram.png)
-
-The patent template contains the blank fields "Patent title," "Inventors," and "Description", along with descriptions for each of those fields--that's the word pattern. When you upload the original patent template, it's in one of the supported file types and in plain text. DLP converts this word pattern into a document fingerprint, which is a small Unicode XML file containing a unique hash value representing the original text, and the fingerprint is saved as a data classification in Active Directory. (As a security measure, the original document itself isn't stored on the service; only the hash value is stored, and the original document can't be reconstructed from the hash value.) The patent fingerprint then becomes a sensitive information type that you can associate with a DLP policy. After you associate the fingerprint with a DLP policy, DLP detects any outbound emails containing documents that match the patent fingerprint and deals with them according to your organization's policy.
+The patent template contains the blank fields "Patent title," "Inventors," and "Description", along with descriptions for each of those fields--that's the word pattern. When you upload the original patent template, it's in one of the supported file types and in plain text. DLP converts this word pattern into a document fingerprint, which is a small Unicode XML file containing a unique hash value that represents the original text. The fingerprint is saved as a data classification in Active Directory. (As a security measure, the original document itself isn't stored on the service; only the hash value is stored. The original document can't be reconstructed from the hash value.) The patent fingerprint then becomes a SIT that you can associate with a DLP policy. After you associate the fingerprint with a DLP policy, DLP detects any outbound emails containing content that match the patent fingerprint and deals with it according to your organization's policy.
 
 For example, you might want to set up a DLP policy that prevents regular employees from sending outgoing messages containing patents. DLP will use the patent fingerprint to detect patents and block those emails. Alternatively, you might want to let your legal department be able to send patents to other organizations because it has a business need for doing so. You can allow specific departments to send sensitive information by creating exceptions for those departments in your DLP policy, or you can allow them to override a policy tip with a business justification.
 
 > [!IMPORTANT]
-> Text in embedded documents is not considered for fingerprint creation. You should provide sample template files that don't contain embedded documents.
+> Text in embedded documents is not considered for fingerprint creation. You need to provide sample template files that don't contain embedded documents.
 
 ### Supported file types
 
-Document Fingerprinting supports the same file types that are supported in mail flow rules (also known as transport rules). For a list of supported file types, see [Supported file types for mail flow rule content inspection](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection). One quick note about file types: neither mail flow rules nor Document Fingerprinting supports the .dotx file type, which can be confusing because that's a template file in Word. When you see the word "template" in this and other Document Fingerprinting topics, it refers to a document that you have established as a standard form, not the template file type.
+Document Fingerprinting supports the same file types that are supported in mail flow rules (also known as transport rules). For a list of supported file types, see [Supported file types for mail flow rule content inspection](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection). One quick note about file types: neither mail flow rules nor document fingerprinting supports the **.dotx** file type, which is a template file in Microsoft Word. When you see the word "template" in this and other document fingerprinting articles, it refers to a document that you have established as a standard form, not the template file type.
 
 #### Limitations of document fingerprinting
 
-Document Fingerprinting won't detect sensitive information in the following cases:
+Document fingerprinting won't detect sensitive information in the following cases:
 
 - Password protected files
-- Files that contain only images
+- Files that contain images only
 - Documents that don't contain all the text from the original form used to create the document fingerprint
-- Files greater than 10 MB
-- Fingerprints are stored in a separate rule pack that has a maximum size limit of 150 KB. Given this limit, you can create around 50 fingerprints per tenant.
+- Files larger than 10 MB
+
+Fingerprints are stored in a separate rule pack. This rule pack has a maximum size limit of 150 KB. Given this limit, you can create approximately 50 fingerprints per tenant.
+
+The following examples show what happens if you create a document fingerprint based on a patent template; however, you can use any form as a basis for creating a document fingerprint.
+
+
+### Compliance portal example of a patent document matching a document fingerprint of a patent template
+1. In the Microsoft Purview compliance portal, select **Data classification** and then choose **Classifiers**.
+2. On the **Classifiers** page, choose **Sensitive info types**.
+3. Next, choose **Create Fingerprint based SIT**.
+4. Enter a name and description for you new SIT.
+5. Upload the file you wish to use as the fingerprint template.
+6. OPTIONAL: Adjust the requirements for each [confidence level](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type) and then choose **Next**.
+7. Review your settings and then choose **Create**.
+8. When the confirmation page displays, choose **Done**.
+
+
+### PowerShell example of a patent document matching a document fingerprint of a patent template
+
+```powershell
+>> $Customer_Form = ([System.IO.File]::ReadAllBytes('C:\My Documents\file1.docx'))
+>> $Customer_Fingerprint = New-DlpFingerprint -FileData $Customer_Form -Description "A friendly Description" -ThresholdConfig @{low=40;medium=60;high=80} -IsExact $false
+ 
+>> New-DlpSensitiveInformationType -Name "Fingerprint SIT" -Fingerprints $Customer_Fingerprint -Description "A friendly Description"
+```
+<br>
+
+## Create a policy with a fingerprint SIT
+
+1. In the Microsoft Purview compliance portal, select **Data loss prevention** and then choose **Policies**.
+2. Choose **Sensitive info types**.
+3. Choose the + symbol to create a new policy.
+4. Select the template you want to use for your policy (or choose **Custom**) and select your region or country.
+5. Choose **Next**.
+6. Review the description of the template and then choose **Next**.
+7. Name your policy and provide a description, and then choose **Next**.
+8. OPTIONAL: Add specific users and groups you want who should be subject to the policy and then choose **Next**. (If the policy should apply to all users and groups, simply choose **Next**.)  
+9. Select the locations where you want the policy applied and then choose **Next**.
+10. On the **Define policy settings** page, 
+
+> [!NOTE]
+> You can use a fingerprint SIT only if the policy is scoped to one of the following locations:
+>
+> - Exchange
+> - SharePoint
+> - OneDrive
+> - Teams
+> - Windows endpoints (devices)
+
+
 
 ## Use PowerShell to create a classification rule package based on document fingerprinting
 
@@ -115,3 +155,28 @@ For syntax and parameter information, see:
 - [Remove-DlpSensitiveInformationType](/powershell/module/exchange/Remove-DlpSensitiveInformationType)
 - [Set-DlpSensitiveInformationType](/powershell/module/exchange/Set-DlpSensitiveInformationType)
 - [Get-DlpSensitiveInformationType](/powershell/module/exchange/Get-DlpSensitiveInformationType)
+
+
+## Edit, test, or delete a document fingerprint
+
+To do this via the user interface, open the fingerprint SIT you want to edit, test, or delete and choose the appropriate icon.
+
+To do this via PowerShell, run the following command(s).
+
+**Edit a document fingerprint**
+```powershell
+>> Set-DlpSensitiveInformationType -Name "Fingerprint SIT" -FileData ([System.IO.File]::ReadAllBytes('C:\My Documents\file1.docx')) -ThresholdConfig @{low=30;medium=50;high=80} -IsExact $false-Description "A friendly Description"
+```
+**Test a document fingerprint**
+```powershell
+>> $r = Test-DataClassification -TextToClassify "Credit card information Visa: 4485 3647 3952 7352. Patient Identifier or SSN: 452-12-1232"
+>> $r.ClassificationResults
+```
+**Delete a document fingerprint**
+```powershell
+>> Remove-DlpSensitiveInformationType "Fingerprint SIT"
+```
+
+
+
+
