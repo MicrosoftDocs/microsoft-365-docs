@@ -21,11 +21,8 @@ title: Review event logs and error codes to troubleshoot issues with Microsoft D
 summary: | 
 
 Applies to:
- - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+ - [Microsoft Defender for Endpoint Plan 1 and 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
  - Microsoft Defender Antivirus
-
-Platforms
- - Windows
 
 If you encounter a problem with Microsoft Defender Antivirus, you can search the below sections in this topic to find a matching issue and potential solution.
 
@@ -34,7 +31,6 @@ The following sections are:
  - [Microsoft Defender Antivirus client error codes](#error-codes)
  - [Internal Microsoft Defender Antivirus client error codes (used by Microsoft during development and testing)](#internal-error-codes)
 
-<a id="windows-defender-av-ids"></a>
 ## Microsoft Defender Antivirus event IDs
 
 Microsoft Defender Antivirus records event IDs in the Windows event log.
