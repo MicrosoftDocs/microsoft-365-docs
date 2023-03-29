@@ -65,7 +65,7 @@ The Information Barrier Policy Evaluation Service determines whether a communica
 
 ## Managing information barriers segments
 
-IB segments are managed in the Microsoft Purview compliance portal or by using PowerShell cmdlets. For more information, see [Step 2: Segment users in your organization](information-barriers-policies.md#step-2-segment-user-in-your-organization).
+IB segments are managed in the Microsoft Purview compliance portal or by using PowerShell cmdlets. For more information, see [Step 2: Segment users in your organization](information-barriers-policies.md#step-2-segment-users-in-your-organization).
 
 > [!IMPORTANT]
 > Support for assigning users to multiple segments is only available when your organization isn't in *Legacy* mode. To determine if your organization is in *Legacy* mode, see [Check the IB mode for your organization)](information-barriers-multi-segment.md#check-the-ib-mode-for-your-organization). <br><br> Users are restricted to being assigned to only one segment for organizations in *Legacy* mode. Organizations in *Legacy* mode will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
@@ -75,7 +75,7 @@ IB segments are managed in the Microsoft Purview compliance portal or by using P
 IB policies are managed in the Microsoft Purview compliance portal or by using PowerShell cmdlets. For more information, see [Step 3: Create IB policies](information-barriers-policies.md#step-3-create-ib-policies).
 
 >[!IMPORTANT]
->Before you set up or define policies, you must enable scoped directory search in Microsoft Teams. Wait at least a few hours after enabling scoped directory search before you set up or define policies for information barriers. For more information, see [Define information barrier policies](information-barriers-policies.md#prerequisites).
+>Before you set up or define policies, you must enable scoped directory search in Microsoft Teams. Wait at least a few hours after enabling scoped directory search before you set up or define policies for information barriers. For more information, see [Define information barrier policies](information-barriers-policies.md#required-subscriptions-and-permissions).
 
 ## Information barriers administrator role
 

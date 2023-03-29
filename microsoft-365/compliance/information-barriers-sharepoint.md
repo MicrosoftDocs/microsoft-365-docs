@@ -36,7 +36,7 @@ For SharePoint, information barriers can determine and prevent the following kin
 
 ## Information barriers modes and SharePoint sites
 
-[Information barriers modes](information-barriers-policies.md#step-6-information-barriers-modes) help strengthen access, sharing, and membership of a site based on its IB mode and segments associated with the site.
+[Information barriers modes](information-barriers-policies.md#step-6-information-barriers-modes-optional) help strengthen access, sharing, and membership of a site based on its IB mode and segments associated with the site.
 
 When using information barriers with SharePoint, the following IB modes are supported:
 
@@ -243,7 +243,7 @@ To edit the segments associated with the site, select **Edit**, add or remove se
 
 4. If not previously completed, [download](https://go.microsoft.com/fwlink/p/?LinkId=255251) and install the latest SharePoint Online Management Shell. If you installed a previous version of the SharePoint Online Management Shell, follow the instructions in the **Enable SharePoint and OneDrive information barriers in your organization** section in this article.
 
-5. Connect to SharePoint Online as a [Global Administrator or SharePoint Administrator](sharepoint/sharepoint-admin-role.md) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+5. Connect to SharePoint Online as a [Global Administrator or SharePoint Administrator](SharePoint/sharepoint-admin-role.md) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 6. Run the following command:
 
@@ -323,7 +323,7 @@ Audit events are available in the Microsoft Purview compliance portal to help yo
 - Changed information barriers mode of site
 - Disabled information barriers for SharePoint and OneDrive
 
-For more information about SharePoint segment auditing in Office 365, see [Search the audit log in the compliance portal](audit-log-search.md#information-barriers-activities).
+For more information about SharePoint segment auditing in Office 365, see [Search the audit log in the compliance portal](audit-log-search.md#microsoft-365-services-that-support-auditing).
 
 ## Site creation and management by site owners
 
