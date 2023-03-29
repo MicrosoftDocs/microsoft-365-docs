@@ -89,18 +89,16 @@ The following examples show what happens if you create a document fingerprint ba
 ```
 <br>
 
-## Create a policy with a fingerprint SIT
+## Already using fingerprint SITs?
+Your existing fingerprints and policies/rules for those fingerprints should continue to work. If you don't want to use the latest fingerprint features, you don't have to do anything.
 
-1. In the Microsoft Purview compliance portal, select **Data loss prevention** and then choose **Policies**.
-2. Choose **Sensitive info types**.
-3. Choose the + symbol to create a new policy.
-4. Select the template you want to use for your policy (or choose **Custom**) and select your region or country.
-5. Choose **Next**.
-6. Review the description of the template and then choose **Next**.
-7. Name your policy and provide a description, and then choose **Next**.
-8. OPTIONAL: Add specific users and groups you want who should be subject to the policy and then choose **Next**. (If the policy should apply to all users and groups, simply choose **Next**.)  
-9. Select the locations where you want the policy applied and then choose **Next**.
-10. On the **Define policy settings** page, 
+If you do want to use the latest fingerprint features, you can either create new fingerprints as described previously, or [migrate the existing fingerprints](#migrate-an-exiting-fingerprint-to-the-latest-version) to the newer version.
+
+> [!NOTE]
+> Creating new fingerprints using the templates on which a fingerprint already exists is not supported.
+
+
+## Create a policy with a fingerprint SIT
 
 > [!NOTE]
 > You can use a fingerprint SIT only if the policy is scoped to one of the following locations:
@@ -111,6 +109,31 @@ The following examples show what happens if you create a document fingerprint ba
 > - Teams
 > - Windows endpoints (devices)
 
+**To create a new policy using your fingerprint SIT:**
+
+1. In the Microsoft Purview compliance portal, select **Data loss prevention** and then choose **Policies**.
+2. Choose **Sensitive info types**.
+3. Choose the + symbol to create a new policy.
+4. Choose **Custom** to create a new policy and then select your region or country.
+5. Choose **Next**.
+6. Name your policy and provide a description, and then choose **Next**.
+7. OPTIONAL: Add specific users and groups you want who should be subject to the policy and then choose **Next**. (If the policy should apply to all users and groups, simply choose **Next**.) 
+8. Select the locations where you want the policy applied and then choose **Next**.
+9. On the **Define policy settings** page, choose **Next**.
+10. On the **Customize advanced DLP rules** page, choose **Create rule**.
+11. Enter a name and description for your rule.
+12. Under **Conditions** choose **Add condition** and then choose **Content contains**.
+13. Give your new set of DLP rules a **Group name**.
+14. Choose **Add** and then **Sensitive info types**.
+15. In the **Sensitive info types** search for and select the name of your fingerprint SIT.
+16. Choose **Add**.
+17. Select your confidence level and then choose **Add an action**.
+18. Select the action to take when the rule is triggered, and then specify the action details.
+19. Choose **Save**.
+20. Choose **Next**.
+21. Select whether to test your policy or turn it on right away, then choose **Next**.
+22. Review your settings and then choose **Submit**.
+23. Choose **Done**.
 
 
 ## Use PowerShell to create a classification rule package based on document fingerprinting
@@ -177,6 +200,15 @@ To do this via PowerShell, run the following command(s).
 >> Remove-DlpSensitiveInformationType "Fingerprint SIT"
 ```
 
+## Migrate an exiting fingerprint to the latest version
 
+### Migrate a fingerprint using the compliance portal
+1. Open the fingerprint and choose the **Edit** option (the pencil icon).
+--------------WHAT DO THEY DO NEXT? ----------------
 
+### Migrate a fingerprint using the PowerShell
 
+Enter the following command:
+```powershell
+Set-DlpSensitiveInformationType -Name "Old Fingerprint" -FileData ([System.IO.File]::ReadAllBytes('C:\My Documents\file1.docx')) -ThresholdConfig @{low=30;medium=50;high=80} -IsExact $false-Description "A friendly Description"
+```
