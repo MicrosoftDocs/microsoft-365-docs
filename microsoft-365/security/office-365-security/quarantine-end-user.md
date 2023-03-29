@@ -131,7 +131,7 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
    - Subject. Use the entire subject of the message. The search is not case-sensitive.
    - Policy name. Use the entire policy name. The search is not case-sensitive.
 
-   After you've entered the search criteria, press ENTER to filter the results.
+   After you've entered the search criteria, press the ENTER key to filter the results.
 
    > [!NOTE]
    > The **Search** box on the main **Quarantine** page will search only quarantined items in the current view, not the entire quarantine. To search all quarantined items, use **Filter** and the resulting **Filters** flyout.
