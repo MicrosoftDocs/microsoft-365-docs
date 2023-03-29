@@ -37,7 +37,7 @@ ms.date: 12/18/2020
 
 ## Indicator of compromise (IoC) overview
 
-An Indicator of compromise (IoC) is a forensic artifact, observed on the network or host. An IoC indicates - with high confidence - a computer or network intrusion has occurred. IoCs are observable, which link them directly to measurable events. Some IoC examples include:
+An Indicator of compromise (IoC) is a forensic artifact, observed on the network or host. An IoC indicates - with high confidence - a computer or network intrusion has occurred. IoCs are observable, which links them directly to measurable events. Some IoC examples include:
 
 - hashes of known malware
 - signatures of malicious network traffic
