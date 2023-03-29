@@ -1,9 +1,9 @@
 ---
 title: Team Shifts connector for UKG Dimensions known issues
-author: LanaChin
-ms.author: v-lanachin
-ms.reviewer:
-manager: samanro
+author: daisyfell
+ms.author: daisyfeller
+ms.reviewer: imarquesgil
+manager: pamgreen
 ms.topic: troubleshooting
 audience: admin
 ms.service: microsoft-365-frontline
@@ -22,15 +22,13 @@ ms.date: 10/28/2022
 
 # Known issues: Team Shifts connector for UKG Dimensions
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
-
 This article lists known issues for the [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions).
 
-## You can map an instance to more than one team using PowerShell or Microsoft Graph
+## You can map an instance to more than one team using PowerShell or your Microsoft 365 admin center
 
-A UKG Dimensions instance should only be mapped to one team at any given time in a connection.
+A UKG Dimensions instance should only be mapped to one team at any given time in a connection instance.
 
-However, when you use PowerShell or Microsoft Graph to set up a connection, it’s possible to map an instance to more than one team. We recommend that you avoid mapping an instance to multiple teams as it can result in syncing issues and unexpected behavior.
+However, when you use PowerShell or Microsoft 365 admin center to set up a connection instance, it’s possible to map an instance to more than one team. We recommend that you avoid mapping an instance to multiple teams as it can result in syncing issues and unexpected behavior.
 
 ## Frontline managers can select a time zone for a schedule in Shifts that's different from the time zone that's set in UKG Dimensions
 
@@ -64,6 +62,10 @@ To work around this issue, do one of the following actions:
 
 - Clear cookies and site data for the mykronos.com site in the browser. To learn more, see [Delete cookies in Microsoft Edge](https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09) or [Clear, enable, and manage cookies in Chrome](https://support.google.com/chrome/answer/95647).
 - Use the Teams web app in an InPrivate window in Microsoft Edge or in Incognito mode in Google Chrome.
+
+## Availability can only be set for one Microsoft team
+
+When a user in Shifts belongs to multiple teams and one of those teams has availability syncing enabled, they won't be able to set their availability and will receive an error message. A user can therefore only set availability in one team even if they belong to multiple teams within Shifts.
 
 ## Related articles
 

@@ -9,10 +9,10 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 10/24/2022
+ms.date: 01/31/2023
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
@@ -49,7 +49,7 @@ Web content filtering is available on the major web browsers, with blocks perfor
 - Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away.
 - Your security team can access web reports in the same central location, with visibility over actual blocks and web usage.
 - If you are using Defender for Endpoint, your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
-- If you are using Defender for Business, you can define one web content filtering policy that will be applied to all users. 
+- If you are using Defender for Business, you can define one web content filtering policy that will be applied to all users.
 
 ## Prerequisites
 
@@ -59,7 +59,7 @@ Before trying out this feature, make sure you meet the requirements described in
 |:---|:---|
 | Subscription | Your subscription must include one of the following:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint Plan 1 or Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
 | Portal access | You must have access to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. |
-| Operating system | Your organization's devices must be running one of the following operating systems with the [latest antivirus/antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md): <br/>- Windows 11<br/>-  Windows 10 Anniversary Update (version 1607) or later |
+| Operating system | Your organization's devices must be running one of the following operating systems with the [latest antivirus/antimalware updates](microsoft-defender-antivirus-updates.md): <br/>- Windows 11<br/>- Windows 10 Anniversary Update (version 1607) or later |
 | Related protection | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) and [network protection](network-protection.md) must be enabled on your organization's devices. |
 
 ## Data handling
@@ -81,9 +81,9 @@ The result is that categories 1 - 4 are all blocked.  This is illustrated in the
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 
-2. In the navigation pane, select **Settings** \> **Endpoints** \> **General** \> **Advanced Features**. 
+2. In the navigation pane, select **Settings** \> **Endpoints** \> **General** \> **Advanced Features**.
 
-3. Scroll down until you see **Web content filtering**. 
+3. Scroll down until you see **Web content filtering**.
 
 4. Switch the toggle to **On**, and then select **Save preferences**.
 
@@ -96,7 +96,7 @@ Policies can be deployed to block any of the following parent or child categorie
 <details>
 <summary>Adult content</summary>
 
-**Cults**: Sites related to groups or movements whose members demonstrate passion for a belief system that is different from those that are socially accepted. 
+**Cults**: Sites related to groups or movements whose members demonstrate passion for a belief system that is different from those that are socially accepted.
 
 **Gambling**: Online gambling and sites that promote gambling skills and practice.
 
@@ -122,13 +122,13 @@ Policies can be deployed to block any of the following parent or child categorie
 **Peer-to-peer**: Sites that host peer-to-peer (P2P) software or facilitate the sharing of files using P2P software.
 
 **Streaming media & downloads**: Sites whose primary function is the distribution of streaming media, or sites that allow users to search, watch, or listen to streaming media.
-  
+
 </details>
 
 <details>
 <summary>Legal liability</summary>
 
-**Child abuse images**: Sites that include child abuse images or pornography. 
+**Child abuse images**: Sites that include child abuse images or pornography.
 
 **Criminal activity**: Sites that give instruction on, advice about or promotion of illegal activities.
 
@@ -140,7 +140,7 @@ Policies can be deployed to block any of the following parent or child categorie
 
 **Illegal software**: Sites that contain or promote the use of malware, spyware, botnets, phishing scams, or piracy & copyright theft.
 
-**School cheating**: Sites related to plagiarism or school cheating. 
+**School cheating**: Sites related to plagiarism or school cheating.
 
 **Self-harm**: Sites that promote self-harm, including cyberbullying sites that contain abusive and/or threatening messages towards users.
 
@@ -162,7 +162,7 @@ Policies can be deployed to block any of the following parent or child categorie
 **Social networking**: Sites that provide social networking services.
 
 **Web-based email**: Sites offering web-based mail services.
-  
+
 </details>
 
 <details>
@@ -171,9 +171,9 @@ Policies can be deployed to block any of the following parent or child categorie
 **Newly registered domains**: Sites that have been newly registered in the past 30 days and have not yet been moved to another category.
 
 **Parked domains**: Sites that have no content or are parked for later use.
-  
+
 **NOTE**: Uncategorized contains only newly registered domains and parked domains, and does not include all other sites outside of these categories.
-  
+
 </details>
 
 ### Create a policy
@@ -191,9 +191,10 @@ To add a new policy, follow these steps:
    > [!IMPORTANT]
    > If you're using either Microsoft 365 Business Premium or Defender for Business, your web content filtering policy is applied to all users by default. Scoping does not apply.
 
-5. Review the summary and save the policy. The policy refresh might take up to 2 hours to apply to your selected devices.
+5. Review the summary and save the policy.
 
 > [!NOTE]
+> - There may be up to 2 hours of latency between the time a policy is created and the policy being enforced on the device.
 > - You can deploy a policy without selecting any category on a device group. This action will create an audit only policy to help you understand user behavior before creating a block policy.
 > - If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
 > - Blocking the "Uncategorized" category could lead to unexpected and undesired results.
@@ -264,9 +265,9 @@ Use the time range filter at the top left of the page to select a time period. Y
 
 Only Microsoft Edge is supported if your device's OS configuration is Server (**cmd** \> **Systeminfo** \> **OS Configuration**). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported third-party browsers.
 
-Only Microsoft Edge is supported and network protection is not supported on Windows 10 Azure Virtual Desktop multi-session hosts.
+Only Microsoft Edge is supported and network protection is not supported on Windows Azure Virtual Desktop multi-session hosts.
 
-Network protection does not currently support SSL inspection, which might result in some sites being allowed by web content filtering that would normally be blocked. Sites would be allowed due to a lack of visibility into encrypted traffic after the TLS handshake has taken place and an inability to parse certain redirects.  This includes redirections from some web-based mail login pages to the mailbox page. As an accepted workaround, you can create a custom block indicator for the login page to ensure no users are able to access the site. Keep in mind, this might block their access to other services associated with the same website. 
+Network protection does not currently support SSL inspection, which might result in some sites being allowed by web content filtering that would normally be blocked. Sites would be allowed due to a lack of visibility into encrypted traffic after the TLS handshake has taken place and an inability to parse certain redirects.  This includes redirections from some web-based mail login pages to the mailbox page. As an accepted workaround, you can create a custom block indicator for the login page to ensure no users are able to access the site. Keep in mind, this might block their access to other services associated with the same website.
 
 If you are using Microsoft 365 Business Premium or Microsoft Defender for Business, you can define one web content filtering policy for your environment. That policy will apply to all users by default.
 

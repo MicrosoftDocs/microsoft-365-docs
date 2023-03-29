@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.date:
+ms.date: 09/17/2019
 ms.localizationpriority: medium
 ms.collection:
 - tier1

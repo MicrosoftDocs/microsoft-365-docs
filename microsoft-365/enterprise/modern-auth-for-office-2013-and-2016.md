@@ -3,6 +3,7 @@ title: "How modern authentication works for Office 2013 and Office 2016 client a
 ms.author: tracyp
 author: MSFTTracyP
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise

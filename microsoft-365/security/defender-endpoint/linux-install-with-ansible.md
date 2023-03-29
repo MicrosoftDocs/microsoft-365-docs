@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Ansible
@@ -37,6 +38,9 @@ This article describes how to deploy Defender for Endpoint on Linux using Ansibl
 - [Create Ansible YAML files](#create-ansible-yaml-files)
 - [Deployment](#deployment)
 - [References](#references)
+
+
+[!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../../includes/support.md)]
 
 ## Prerequisites and system requirements
 

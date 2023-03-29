@@ -44,7 +44,6 @@ Watch the following video to see how self-healing works: <p>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
 In Microsoft 365 Defender, automated investigation and response with self-healing capabilities works across your devices, email & content, and identities.
- 
 > [!TIP]
 > This article describes how automated investigation and response works. To configure these capabilities, see [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
 
@@ -74,7 +73,7 @@ Remediation actions for malicious or suspicious entities are identified. Example
 - Blocking a URL 
 - Other actions
 
-For more information, see See [Remediation actions in Microsoft 365 Defender](m365d-remediation-actions.md).
+For more information, see [Remediation actions in Microsoft 365 Defender](m365d-remediation-actions.md).
 
 Depending on [how automated investigation and response capabilities are configured](m365d-configure-auto-investigation-response.md) for your organization, remediation actions are taken automatically or only upon approval by your security operations team. All actions, whether pending or completed, are listed in the [Action center](m365d-action-center.md).
 
@@ -120,3 +119,4 @@ Use this learning module from Microsoft Learn to understand how Microsoft 365 De
 - [See the prerequisites for automated investigation and response](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [Configure automated investigation and response for your organization](m365d-configure-auto-investigation-response.md)
 - [Learn more about the Action center](m365d-action-center.md)
+

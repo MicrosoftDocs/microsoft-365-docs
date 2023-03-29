@@ -9,12 +9,11 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 09/15/2022
-ms.localizationpriority: high
+ms.date: 01/18/2023
+ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
-- highpri
 - m365-security
 - tier1
 ms.custom:
@@ -27,7 +26,7 @@ description: "An overview of how to set up all the bring-your-own devices (BYOD)
 
 # Set up unmanaged (BYOD) devices
 
-:::image type="content" source="media/mission3.png" alt-text="Protect unmanaged BYOD devices with Microsoft 365 Business Premium.":::
+:::image type="content" source="media/mission3.png" alt-text="Diagram with Set Up Unmanaged Devices highlighted.":::
 
 Every device is a possible attack avenue into your network and must be monitored and managed properly, even those devices that are personally owned but used for work. In this critical mission, train everyone to protect their bring-your-own devices (BYODs). Unmanaged devices can pose a risk to your organization. It's important to help everyone get their devices protected as soon as possible.
 

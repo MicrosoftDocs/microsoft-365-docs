@@ -1,6 +1,7 @@
 ---
 title: "Enabling SharePoint Multi-Geo in your satellite geo location"
 ms.reviewer: adwood
+ms.date: 08/10/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -45,5 +46,3 @@ To set a geo location into SPO mode, connect to the geo location you want to set
 >Certain caches in the service update every 24 hours, so it is possible that for a period of up to 24 hours, your satellite geo may intermittently behave as if it was still in ODB mode. This does not cause any technical issues. 
  
 For additional information regarding SharePoint Multi-Geo, please refer to [aka.ms/sharepointmultigeo](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)
-
-

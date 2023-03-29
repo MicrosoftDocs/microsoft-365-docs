@@ -4,12 +4,14 @@ ms.author: danismith
 author: cichur
 manager: serdars
 ms.reviewer: amitman 
+ms.date: 07/08/2022
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu
+- tier2
 ms.localizationpriority: medium
 description: Learn how to set up Microsoft Teams meetings with Blackboard Learn.
 ---

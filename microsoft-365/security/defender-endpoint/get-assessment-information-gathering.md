@@ -19,6 +19,7 @@ ms.subservice: mde
 ms.custom: api
 search.appverid: met150
 
+ms.date: 07/26/2022
 ---
 
 # Information gathering assessment per device

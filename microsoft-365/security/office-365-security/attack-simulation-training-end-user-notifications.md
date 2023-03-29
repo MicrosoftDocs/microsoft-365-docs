@@ -9,10 +9,11 @@ ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 description: Admins can learn how to create end-user notification email messages for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 3/29/2023
 ---
 
 # End-user notifications for Attack simulation training
@@ -29,14 +30,14 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 - **Training assignment notification**: Sent when users are assigned required trainings as a result of a simulation or simulation automations.
 - **Training reminder notification**: Sent as reminders for required trainings.
 
-To see the available end-user notifications, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> and then select **End user notifications**. To go directly to the **Simulation content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+To see the available end-user notifications, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **End user notifications**. To go directly to the **Content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
-**End user notifications** has two tabs:
+**End user notifications** in the **Content library** tab has two tabs:
 
 - **Global notifications**: Contains the built-in, non-modifiable notifications.
 - **Tenant notifications**: Contains the custom notifications that you've created.
 
-The following information is shown for each notification:
+The following information is shown for each notification<sup>\*</sup>:
 
 - **Notifications**: The name of the notification.
 - **Language**: If the notification contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
@@ -49,24 +50,26 @@ The following information is shown for each notification:
 - **Modified by**
 - **Last modified time**
 
-To find a notification in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the name of the notification.
+<sup>\*</sup> To see all of the columns, you might need to narrow some columns or zoom out in your browser.
+
+Click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, all available columns are selected.
+
+To find a notification in the list, type part of the notification name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
 
 To group the notifications by type, click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and then select **Notification type**. To ungroup the notifications, select **None**.
 
 On the **Tenant notifications** tab only, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) to filter the notifications by one or more languages.
 
-To remove one or more columns that are displayed, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**.
-
 When you select a notification from the list, a details flyout appears with the following information:
 
-- **Preview** tab: View the notification message as users will see it. To view the message in different languages, use the **Select language** box.
+- **Preview** tab: View the notification message as users will see it. To view the message in different languages, use the **Select notification language** drop down list.
 - **Details** tab: View details about the notification:
   - **Notification description**
   - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
   - **Notification type**
   - **Modified by**
   - **Last modified**
-  - **Simulations**
+  - **Active training campaigns and phishing simulations**
     - **Simulation names**
     - **Simulation status**
     - **End by**
@@ -75,12 +78,14 @@ On the details flyout from the **Tenant notifications** tab only, click **Edit n
 
 ## Create end-user notifications
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> and then select **End user notifications**. To go directly to the **Simulation content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> **End user notifications** \> and then select the **Tenant notifications** tab. To go directly to the **Content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
-2. On the **Tenant notifications** tab, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the end user notification wizard.
+2. On the **Tenant notifications** tab, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the new end-user notification wizard.
 
    > [!NOTE]
-   > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the notification later. You can pick up where you left off by selecting the notification on the **Tenant notifications** tab in **End user notifications**, and then clicking ![Edit automation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit automation**. The partially-completed notification will have the **Status** value **Draft**.
+   > At any point after you name the notification during the new end-user notification wizard, you can click **Save and close** to save your progress and continue later. The incomplete notification has the **Status** value **Draft**. You can pick up where you left off by selecting the end-user notification from the list and then clicking the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
+   >
+   > You can also create end-user notifications during the creation of simulations and simulation automations. For more information, see [Create a simulation: Select end user notifications](attack-simulation-training-simulations.md#select-end-user-notifications) and [Create a simulation automation: Select end user notifications](attack-simulation-training-simulation-automations.md#select-end-user-notifications).
 
 3. On the **Define details** page**, configure the following settings:
    - **Select notification type**: Select one of the following values:
@@ -91,58 +96,74 @@ On the details flyout from the **Tenant notifications** tab only, click **Edit n
    - **Name**: Enter a unique name.
    - **Description**: Enter an optional description.
 
-   When you're finished, click **Next**.
+   When you're finished n the **Define details** page, click **Next**.
 
-4. On the **Define content** page, the only setting that's available is the **Add content in business language** button. When you click it, an **Add content in default language** flyout appears that contains the following settings:
-   - **From display name**
-   - **From email address**
+4. On the **Define content** page, the only setting that's available is the **Add content in business language** button. When you click it, an **Add content in default language** flyout opens that contains the following settings:
+   - **From display name**: Enter the display name of the sender.
+   - **From email address**: Enter the email address of the sender.
    - **Select the language of the email**: Select a language from the list.
-   - **Mark this as the default language**: Because this is the first and only language for the notification, this value is selected and you can't change it.
-   - **Subject**: The default value is **Thanks for reporting phish**, but you can change it.
+   - **Mark this as the default language**: Because this is the first and only language for the notification, this language value is selected as the default and you can't change it.
+   - **Subject**: The default that's used depends on the notification type that you selected in the previous step, but you can change it:
+     - Positive reinforcement: **Thank you for reporting a phish!**
+     - Simulation: **Thank you for participating in a phishing campaign!**
+     - Training assignment: **Training assignment notification**
+     - Training reminder: **Training reminder notification**
+
    - **Import email**: You can optionally click this button and then click **Choose file** to import an existing plain text message file.
+
    - Email content area: Two tabs are available:
-     - **Text** tab: A rich text editor is available to create your notification email. In addition to the typical font and formatting settings, the following settings are available:
+     - **Text** tab: A rich text editor is available to create the notification. To see the typical font and formatting settings, toggle **Formatting controls** to ![Toggle on.](../../media/scc-toggle-on.png) **On**.
+
+       The following controls are also available on the **Text** tab:
+
        - **Dynamic tag**: Select from the following tags:
-         - **Insert first name**
-         - **Insert last name**
-         - **Insert UPN**
-         - **Insert email address**
-         - **Insert payload**
+
+          |Tag name|Tag value|
+          |---|---|
+          |**Insert User name**|`${userName}`|
+          |**Insert First name**|`${firstName}`|
+          |**Insert Last name**|`${lastName}`|
+          |**Insert UPN**|`${upn}`|
+          |**Insert Email**|`${emailAddress}`|
+          |**Insert Department**|`${department}`|
+          |**Insert Manager**|`${manager}`|
+          |**Insert Mobile phone**|`${mobilePhone}`|
+          |**Insert City**|`${city}`|
+          |**Insert Date**|`${date|MM/dd/yyyy|offset}`|
+          |**Insert training count**|`${trainingCount}`|
+          |**Insert training due date**|`${trainingDueDate}`|
+          |**Insert training duration**|`${trainingDuration}`|
+          |**Insert training details**|`${trainingDetails}`|
+
+       - **Use from default**: Select an available template to start with. You can modify the text and layout in the editing area. To reset the notification back to the default text and layout of the template, click **Reset to default**.
+
      - **Code** tab: You can view and modify the HTML code directly.
 
    You can preview the results by clicking the **Preview email** button at the top of the page.
 
-   When you're finished, click **Save**.
+   When you're finished in new end-user notification wizard, click **Save**.
 
-   You're taken back to the **Define content** page where the notification that you just created is summarized with the following information:
+   Back on the **Define content** page, the notification you created is listed on the page. In the **Action** colum, you can click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** or ![Preview icon.](../../media/m365-cc-sc-eye-icon.png) **Preview** to edit or view the notification.
 
-   - **Language**
-   - **Subject**
-   - **Category**
-   - **Actions**: The following icons are available:
-     - ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**
-     - ![View icon.](../../media/m365-cc-sc-view-icon.png) **View**
-     - ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**: If there's only language version of the notification, you can't delete it.
+   Click ![Add translation icon.](../../media/m365-cc-sc-create-icon.png) **Add translation** to create up to 11 more translations of the notification in other languages (12 translations total).
 
-   To add a version of the notification in a different language, click ![Add translation icon.](../../media/m365-cc-sc-create-icon.png). In the **Add translation** flyout that appears, the same settings are available as in the **Add content in default language** flyout that was previously described. The only difference is you can select **Mark this as the default language** in additional translations.
+   Other than the flyout title changing to **Add translation**, the same options are available as the the **Add content in default language** flyout in the first notification you created. Now the **Mark this as default language** check box is available to select. Only one translation of the notification can be the default language.
 
-   When you're finished, click **Save**
+   When two or more translations of the notification are listed on the **Define content** page, the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon is available in the **Actions** column to delete any notification translations that aren't designated as the default language.
 
-   You can repeat this steps as many times as necessary to create translated versions of the notification in the 12 supported languages.
-
-   When you're finished, click **Next**
+   When you're finished on the **Define content** page, click **Next**.
 
 5. On the **Review notification** page, you can review the details of your notification.
 
    You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
-   When you're finished, click **Submit**.
+   When you're finished on the **Review notification** page, click **Submit**.
 
-   On the **New simulation notification created** page, you can use the links to create a new notification, launch a simulation, or view all notifications.
+6. On the **New training assignment notification created** page, you can use the links to create a new notification, launch a simulation, or view all notifications.
 
-   When you're finished, click **Done**.
+   When you're finished on the **New training assignment notification created** page, click **Done**.
 
-Back on the **Tenant notifications** tab in **End user notifications**, the notification that you created is now list.
+7. Back on the **Tenant notifications** tab in **End user notifications**, the notification that you created is now listed.
 
 ## Modify end-user notifications
 
@@ -150,9 +171,9 @@ You can't modify built-in notifications on the **Global notifications** tab. You
 
 To modify an existing custom notification on the **Tenant notifications** tab, do one of the following steps:
 
-- Select the notification from the list by clicking the check box. Click the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
+- Select the notification from the list by clicking the check box next to the name. Click the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
 - Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the notification in the list, and then select ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
-- Select the notification from the list by clicking anywhere in the row except the check box. In the details flyout that opens, click **Edit notification**.
+- Select the notification from the list by clicking anywhere in the row other than the check box. In the details flyout that opens, click **Edit notification** at the bottom of the flyout.
 
 The end-user notification wizard opens with the settings and values of the selected notification. The steps are the same as described in the [Create end-user notifications](#create-end-user-notifications) section.
 
@@ -163,23 +184,25 @@ To copy an existing notification on the **Tenant notifications** or **Global not
 - Select the notification from the list by clicking the check box, and then click the ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy** icon that appears.
 - Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the notification in the list, and then select ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy**.
 
-When you copy a custom notification on the **Tenant notifications** tab, a copy of the notification named "\<OriginalName\> - Copy" is available in the list.
+When you copy a custom notification on the **Tenant notifications** tab, a copy of the notification named "\<OriginalName\> - Copy" is added to the list.
 
 When you copy a built-in notification on the **Global notifications** tab, a **Create copy** dialog appears. The dialog confirms that a copy of the notification has been created, and is available on the **Tenant notifications** tab. If you click **Go to Tenant notification** you're taken to the **Tenant notifications** tab, where the copied built-in notification is named "\<OriginalName\> - Copy" is available in the list. If you click **Stay here** in the dialog, you return to the **Global notifications** tab.
 
 After the copy is created, you can modify it as [previously described](#modify-end-user-notifications).
 
-> [!NOTE]
-> The **Use from default** control on the **Add content in default language** flyout in the notification wizard allows you to copy the contents of a built-in notification.
+> [!TIP]
+> When you're creating or editing a notification, the **Use from default** control on the **Text** tab of the **Add content in default language** step in the end-user notification wizard also allows you to copy the contents of a built-in notification.
 
-## Remove notifications
+## Remove end-user notifications
 
-You can't remove built-in notifications from the **Global notifications** tab. You can only remove custom notifications on the **Tenant notifications** tab.
+You can't remove built-in notifications from the **Global notifications** tab. You can only remove custom notifications on the **Tenant notifications** tab. When you delete a notification, all translations of the notification are deleted.
 
 To remove an existing custom notification from the **Tenant notifications** tab, do one of the following steps:
 
-- Select the notification from the list by clicking the check box, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears.
+- Select the notification from the list by clicking the check box next to the name, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears.
 - Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the notification in the list, and then select ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+
+In the confirmation dialog tht opens, click **Delete**.
 
 ## Related links
 

@@ -4,8 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 07/01/2022
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -19,18 +20,16 @@ description: Learn how to apply a retention label to a model in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing &ensp; | &ensp; &#10003; Structured document processing &ensp;| &ensp; &#10003; All prebuilt models</sup>
 
-<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GydO]  
 
 </br>
---->
 
-You can easily apply a [retention label](../compliance/retention.md) to a model in Microsoft Syntex.
+You can easily apply a [retention label](../compliance/retention.md) to unstructured, structured and prebuilt models in Microsoft Syntex.
 
 > [!Note]
-> Retention labels are not yet available for Freeform document processing models.
+> Retention labels are not yet available for freeform document processing models.
 
 Retention labels let you apply retention settings to the documents that your models identify.  For example, you want your model to not only identify any *Insurance notice* documents that are uploaded to your document library, but to also apply a *Business* retention tag to them so that these documents can't be deleted from the document library for the specified time period (the next five months, for example).
 
@@ -134,6 +133,3 @@ You can add a retention label to an existing structured document processing mode
 ## See also
 
 [Apply a sensitivity label to a model in Microsoft Syntex](create-a-classifier.md)
-
-
-

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 01/05/2023
+ms.date: 01/11/2023
 manager: dansimp
 ms.collection: 
 - m365-security
@@ -70,21 +70,22 @@ To start recording system events, open PowerShell in administrative mode and per
 
 1. Run the following command to start the recording:
 
-   `New-MpPerformanceRecording -RecordTo <recording.etl>`
+   ```powershell
+   New-MpPerformanceRecording -RecordTo <recording.etl>
+   ```
 
-    where `-RecordTo` parameter specifies full path location in which the trace file is saved. For more cmdlet information, see [Microsoft Defender Antivirus cmdlets](/powershell/module/defender).
+   where `-RecordTo` parameter specifies full path location in which the trace file is saved. For more cmdlet information, see [Microsoft Defender Antivirus cmdlets](/powershell/module/defender).
 
 2. If there are processes or services thought to be affecting performance, reproduce the situation by carrying out the relevant tasks.
 
 3. Press **ENTER** to stop and save recording, or **Ctrl+C** to cancel recording.
 
-4. Analyze the results using the performance analyzer's `Get-MpPerformanceReport`parameter. For example, on executing the command `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, the user is provided with a list of top-ten scans for the top 3 files affecting performance.
+4. Analyze the results using the performance analyzer's `Get-MpPerformanceReport` parameter. For example, on executing the command `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, the user is provided with a list of top-ten scans for the top 3 files affecting performance.
 
 For more information on command-line parameters and options, see the [New-MpPerformanceRecording](#new-mpperformancerecording) and [Get-MpPerformanceReport](#get-mpperformancereport).
 
 > [!NOTE]
-> When running a recording, if you get the error "Cannot start performance recording because Windows Performance Recorder is already recording", run the following command
-> to stop the existing trace with the new command:
+> When running a recording, if you get the error "Cannot start performance recording because Windows Performance Recorder is already recording", run the following command to stop the existing trace with the new command:
 > **wpr -cancel -instancename MSFT_MpPerformanceRecording**
 
 ## Performance tuning data and information
@@ -98,26 +99,33 @@ Based on the query, the user will be able to view data for scan counts, duration
 The results of the performance analyzer can also be exported and converted to a CSV or JSON file.
 For examples that describe the process of "export" and "convert" through sample codes, see below.
 
-Starting   with Defender version 4.18.2206.X, users will be able to view scan skip reason information under "SkipReason" column. The possible values are:
+Starting with Defender version 4.18.2206.X, users will be able to view scan skip reason information under "SkipReason" column. The possible values are:
 
 1. Not Skipped
-1. Optimization  (typically due to performance reasons)
+1. Optimization (typically due to performance reasons)
 1. User skipped (typically due to user-set exclusions)
 
 ### For CSV
 
 - **To export**:
-`(Get-MpPerformanceReport -Path .\Repro-Install.etl -Topscans 1000). TopScans | Export-CSV -Path .\Repro-Install-Scans.csv -Encoding UTF8 -NoTypeInformation`
+
+```powershell
+(Get-MpPerformanceReport -Path .\Repro-Install.etl -Topscans 1000).TopScans | Export-CSV -Path .\Repro-Install-Scans.csv -Encoding UTF8 -NoTypeInformation
+```
 
 - **To convert**:
-`(Get-MpPerformanceReport -Path .\Repro-Install.etl -Topscans 100). TopScans | ConvertTo-Csv -NoTypeInformation`
+```powershell
+(Get-MpPerformanceReport -Path .\Repro-Install.etl -Topscans 100).TopScans | ConvertTo-Csv -NoTypeInformation
+```
 
 ### For JSON
 
 - **To convert**:
-`(Get-MpPerformanceReport -Path .\Repro-Install.etl -Topscans 1000). TopScans | ConvertTo-Json -Depth 1`
+```powershell
+(Get-MpPerformanceReport -Path .\Repro-Install.etl -Topscans 1000).TopScans | ConvertTo-Json -Depth 1
+```
 
-To ensure machine-readable output for exporting with other data processing systems, it is recommended to use -Raw parameter for Get-MpPerformanceReport. See below for details
+To ensure machine-readable output for exporting with other data processing systems, it is recommended to use `-Raw` parameter for `Get-MpPerformanceReport`. See below for details.
 
 ## Requirements
 
@@ -141,7 +149,7 @@ The following section describes the reference for the new PowerShell cmdlet New-
 #### Syntax: New-MpPerformanceRecording
 
 ```powershell
-New-MpPerformanceRecording -RecordTo <String >
+New-MpPerformanceRecording -RecordTo <String>
 ```
 
 #### Description: New-MpPerformanceRecording
@@ -233,54 +241,53 @@ The following section describes the Get-MpPerformanceReport PowerShell cmdlet. A
 
 #### Syntax: Get-MpPerformanceReport
 
-```powershell
-Get-MpPerformanceReport    [-Path] <String>
-	[-TopScans [<Int32>]]
-	[-TopPaths [<Int32>] [-TopPathsDepth [<Int32>]]]
-			[-TopScansPerPath [<Int32>]]
-			[-TopFilesPerPath [<Int32>]
-					[-TopScansPerFilePerPath [<Int32>]]
-					]
-			[-TopExtensionsPerPath [<Int32>]
-					[-TopScansPerExtensionPerPath [<Int32>]]
-					]
-			[-TopProcessesPerPath [<Int32>]
-					[-TopScansPerProcessPerPath [<Int32>]]
-					]
-			]
-	[-TopFiles [<Int32>]
-			[-TopScansPerFile [<Int32>]]
-			[-TopProcessesPerFile [<Int32>]
-					[-TopScansPerProcessPerFile [<Int32>]]
-					]
-			]
-	[-TopExtensions [<Int32>]
-			[-TopScansPerExtension [<Int32>]
-			[-TopPathsPerExtension [<Int32>] [-TopPathsDepth [<Int32>]]
-					[-TopScansPerPathPerExtension [<Int32>]]
-					]
-			[-TopProcessesPerExtension [<Int32>]
-					[-TopScansPerProcessPerExtension [<Int32>]]
-					]
-			[-TopFilesPerExtension [<Int32>]
-					[-TopScansPerFilePerExtension [<Int32>]]
-					]
-			]
-	[-TopProcesses [<Int32>]
-			[-TopScansPerProcess [<Int32>]]
-			[-TopExtensionsPerProcess [<Int32>]
-					[-TopScansPerExtensionPerProcess [<Int32>]]
-					]
-			[-TopPathsPerProcess [<Int32>] [-TopPathsDepth [<Int32>]]
-					[-TopScansPerPathPerProcess [<Int32>]]
-					]
-			[-TopFilesPerProcess [<Int32>]
-					[-TopScansPerFilePerProcess [<Int32>]]
-					]
-			]
-	[-MinDuration <String>]
-	[-Raw]
-
+```output
+Get-MpPerformanceReport [-Path] <String>
+    [-TopScans [<Int32>]]
+    [-TopPaths [<Int32>] [-TopPathsDepth [<Int32>]]]
+            [-TopScansPerPath [<Int32>]]
+            [-TopFilesPerPath [<Int32>]
+                    [-TopScansPerFilePerPath [<Int32>]]
+                    ]
+            [-TopExtensionsPerPath [<Int32>]
+                    [-TopScansPerExtensionPerPath [<Int32>]]
+                    ]
+            [-TopProcessesPerPath [<Int32>]
+                    [-TopScansPerProcessPerPath [<Int32>]]
+                    ]
+            ]
+    [-TopFiles [<Int32>]
+            [-TopScansPerFile [<Int32>]]
+            [-TopProcessesPerFile [<Int32>]
+                    [-TopScansPerProcessPerFile [<Int32>]]
+                    ]
+            ]
+    [-TopExtensions [<Int32>]
+            [-TopScansPerExtension [<Int32>]
+            [-TopPathsPerExtension [<Int32>] [-TopPathsDepth [<Int32>]]
+                    [-TopScansPerPathPerExtension [<Int32>]]
+                    ]
+            [-TopProcessesPerExtension [<Int32>]
+                    [-TopScansPerProcessPerExtension [<Int32>]]
+                    ]
+            [-TopFilesPerExtension [<Int32>]
+                    [-TopScansPerFilePerExtension [<Int32>]]
+                    ]
+            ]
+    [-TopProcesses [<Int32>]
+            [-TopScansPerProcess [<Int32>]]
+            [-TopExtensionsPerProcess [<Int32>]
+                    [-TopScansPerExtensionPerProcess [<Int32>]]
+                    ]
+            [-TopPathsPerProcess [<Int32>] [-TopPathsDepth [<Int32>]]
+                    [-TopScansPerPathPerProcess [<Int32>]]
+                    ]
+            [-TopFilesPerProcess [<Int32>]
+                    [-TopScansPerFilePerProcess [<Int32>]]
+                    ]
+            ]
+    [-MinDuration <String>]
+    [-Raw]
 ```
 
 #### Description: Get-MpPerformanceReport
@@ -330,7 +337,7 @@ Get-MpPerformanceReport -Path .\Defender-scans.etl -TopScans 100 -MinDuration 10
 Get-MpPerformanceReport -Path .\Defender-scans.etl -TopFiles 10 -TopExtensions 10 -TopProcesses 10 -TopScans 10 -Raw | ConvertTo-Json
 ```
 
-Using \-Raw in the above command specifies that the output should be machine readable and readily convertible to serialization formats like JSON
+Using \-Raw in the above command specifies that the output should be machine readable and readily convertible to serialization formats like JSON.
 
 #### Parameters: Get-MpPerformanceReport
 
@@ -338,11 +345,13 @@ Using \-Raw in the above command specifies that the output should be machine rea
 
 Requests a top-paths report and specifies how many top paths to output, sorted by "Duration". Aggregates the scans based on their path and directory. User can specify how many directories should be displayed on each level and the depth of the selection.
 
+```yaml
 - Type: Int32
 - Position: Named
 - Default value: None
 - Accept pipeline input: False
 - Accept wildcard characters: False
+```
 
 ##### -TopPathsDepth
 
@@ -350,11 +359,13 @@ Specifies recursive depth that will be used to group and display aggregated path
 
 This flag can accompany all other Top Path options. If missing, a default value of 3 is assumed. Value cannot be 0.
 
+```yaml
 - Type: Int32
 - Position: Named
 - Default value: 3
 - Accept pipeline input: False
 - Accept wildcard characters: False
+```
 
 | flag | definition |
 |:---|:---|  

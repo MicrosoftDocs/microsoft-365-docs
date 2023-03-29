@@ -19,7 +19,9 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
+ms.date: 11/17/2022
 ---
+
 # Frequently asked questions
 
 **Applies to:**
