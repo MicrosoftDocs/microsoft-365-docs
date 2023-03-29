@@ -17,7 +17,7 @@ ms.collection:
 description: Admins can learn about Microsoft Teams features in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 3/28/2023
+ms.date: 3/29/2023
 ---
 
 # Microsoft Defender for Office 365 support for Microsoft Teams (Preview)
@@ -46,20 +46,22 @@ The **Teams Message Entity Panel** is one single place to store all of Teams mes
 
 ## Enable Microsoft Defender for Teams
 
-If you're interested in the previewing the features, listed above, for ALL users in your tenant, you can enable them via an Exchange Online PowerShell cmdlet. See [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell.md) for more details on how to connect to Exchange Online with PowerShell. Run the following command in Exchange Online PowerShell.
+If you're interested in previewing the previously described features for ALL users in your tenant, you can use an Exchange Online PowerShell cmdlet to enable them.
+
+After you [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell.md), run the following command to join the Teams preview:
 
 ```powershell
 Set-TeamsSecurityPreview -Enable $true
 ```
+
+> [!NOTE]
+> This cmdlet informs Microsoft that you want to join the Teams preview. By running this cmdlet, your tenant will be added to the rollout schedule. The features will be enabled over time during the preview period.
 
 To check the status for your tenant, run the following command:
 
 ```powershell
 Get-TeamsSecurityPreview
 ```
-
-> [!NOTE]
-> This cmdlet informs Microsoft that you want to enroll in the Teams preview. By running this cmdlet, your tenant will be added to the rollout schedule. The features will be enabled over time during the preview period.
 
 ## See also
 
