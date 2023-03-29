@@ -584,7 +584,7 @@ Get-VpnConnection
 1. Close the item.
 
 > [!IMPORTANT]
-> When you use the VPN list in defining the actions of a policy, you will also see **Corporate network** as an option. **Corporate network** connections are are all connections to your organizations resources.These connections can include VPNs. 
+> When you use the VPN list in defining the actions of a policy, you will also see **Corporate network** as an option. **Corporate network** connections are all connections to your organizations resources. These connections can include VPNs. 
 
 See, [Scenario 8 Network exceptions](endpoint-dlp-using.md#scenario-8-network-exceptions-preview)for more information on configuring policy actions to use network exceptions.
 
