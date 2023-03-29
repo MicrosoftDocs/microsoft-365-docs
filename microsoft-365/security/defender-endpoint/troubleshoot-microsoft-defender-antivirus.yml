@@ -1308,7 +1308,7 @@ Use the information in these tables to help troubleshoot Microsoft Defender Anti
 
 ### Error code: 0x80508007
 
-Message	ERR_MP_NO_MEMORY
+Message:	ERR_MP_NO_MEMORY
 
 Possible reason:	This error indicates that you might have run out of memory.
 
@@ -1317,3 +1317,130 @@ Resolution:
   1. Check the available memory on your device.
   2. Close any unused applications that are running to free up memory on your device.
   3. Restart the device and run the scan again.
+  
+### Error code: 0x8050800C
+
+Message: ERR_MP_BAD_INPUT_DATA
+
+Possible reason: This error indicates that there might be a problem with your security product.
+
+Resolution:	
+  1. Update the definitions. Either:
+      - Get your security intelligence updates in the Windows Security app.
+        ![Update definitions in Microsoft Defender Antivirus](images/defender-updatedefs2.png)
+      - Download the latest definitions from the [Microsoft Security Intelligence site](https://www.microsoft.com/wdsi). 
+        Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
+  2. Run a full scan.
+  3. Restart the device and try again.      
+        
+### Error code: 0x80508020
+
+Message: ERR_MP_BAD_CONFIGURATION
+
+Possible reason: This error indicates that there might be an engine configuration error; commonly, this is related to input data that does not allow the engine to function properly.	
+
+### Error code: 0x805080211
+
+Message: ERR_MP_QUARANTINE_FAILED
+
+Possible reason: This error indicates that Microsoft Defender Antivirus failed to quarantine a threat.
+
+### Error code: 0x80508022
+
+Message: ERR_MP_REBOOT_REQUIRED
+
+Possible reason: This error indicates that a reboot is required to complete threat removal.
+
+### Error code: 0x80508023
+
+Message: ERR_MP_THREAT_NOT_FOUND
+
+Possible reason:	This error indicates that the threat might no longer be present on the media, or malware might be stopping you from scanning your device.
+
+Resolution:	Run the [Microsoft Safety Scanner](/microsoft-365/security/intelligence/safety-scanner-download) then update your security software and try again.
+
+### Error code: 0x80508024
+
+Message: ERR_MP_FULL_SCAN_REQUIRED
+
+Possible reason: This error indicates that a full system scan might be required.
+
+Resolution:	Run a full system scan.
+
+### Error code: 0x80508025
+
+Message: ERR_MP_MANUAL_STEPS_REQUIRED
+
+Possible reason: This error indicates that manual steps are required to complete threat removal.
+
+Resolution:	Follow the manual remediation steps outlined in the [Microsoft Malware Protection Encyclopedia](https://www.microsoft.com/wdsi/threats). You can find a threat-specific link in the event history.
+
+### Error code: 0x80508026
+
+Message: ERR_MP_REMOVE_NOT_SUPPORTED
+
+Possible reason: This error indicates that removal inside the container type might not be not supported.
+
+Resolution:	Microsoft Defender Antivirus is not able to remediate threats detected inside the archive. Consider manually removing the detected resources.
+
+### Error code: 0x80508027
+
+Message: ERR_MP_REMOVE_LOW_MEDIUM_DISABLED
+
+Possible reason: This error indicates that removal of low and medium threats might be disabled.
+
+Resolution:	Check the detected threats and resolve them as required.
+
+### Error code: 0x80508029
+
+Message: ERROR_MP_RESCAN_REQUIRED
+
+Possible reason: This error indicates a rescan of the threat is required.
+
+Resolution:	Run a full system scan.
+
+### Error code: 0x80508030
+
+Message: ERROR_MP_CALLISTO_REQUIRED
+
+Possible reason: This error indicates that an offline scan is required.
+
+Resolution:	Run offline Microsoft Defender Antivirus. You can read about how to do this in the [offline Microsoft Defender Antivirus article](https://support.microsoft.com/windows/help-protect-my-pc-with-microsoft-defender-offline-9306d528-64bf-4668-5b80-ff533f183d6c).
+
+### Error code: 0x80508031
+
+Message: ERROR_MP_PLATFORM_OUTDATED
+
+Possible reason: This error indicates that Microsoft Defender Antivirus does not support the current version of the platform and requires a new version of the platform.
+
+Resolution:	You can only use Microsoft Defender Antivirus in Windows 10 and Windows 11. For Windows 8, Windows 7 and Windows Vista, you can use [System Center Endpoint Protection](https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx).
+
+### Internal error codes
+
+The following error codes are used during internal testing of Microsoft Defender Antivirus.
+
+If you see these errors, you can try to update definitions and force a rescan directly on the endpoint.
+
+### Error code:	0x80501004
+
+Message displayed: ERROR_MP_NO_INTERNET_CONN
+
+Possible reason for error and resolution: Check your Internet connection, then run the scan again.
+
+### Error code:	0x80501000
+
+Message displayed: ERROR_MP_UI_CONSOLIDATION_BASE
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+### Error code:	0x80501001
+
+Message displayed: ERROR_MP_ACTIONS_FAILED
+
+Possible reason for error and resolution: This is an internal error. The cause is not clearly defined.
+
+
+
+
+
+
