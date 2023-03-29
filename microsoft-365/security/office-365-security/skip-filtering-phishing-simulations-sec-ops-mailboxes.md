@@ -65,14 +65,13 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions before you can do the procedures in this article:
-  - To create, modify, or remove configured settings in the advanced delivery policy, you need to be a member of the **Security Administrator** role group in the **Microsoft 365 Defender portal** and a member of the **Organization Management** role group in **Exchange Online**.
-  - For read-only access to the advanced delivery policy, you need to be a member of the **Global Reader** or **Security Reader** role groups.
-
-  For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  > [!NOTE]
-  > Adding users to the corresponding Azure Active Directory role gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md) and [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Create, modify, or remove configured settings in the advanced delivery policy_: Membership in the **Security Administrator** role groups in Email & collaboration RBAC <u>and</u> membership in the **Organization Management** role group in Exchange Online RBAC.
+    - _Read-only access to the advanced delivery policy_: Membership in the **Global Reader** or **Security Reader** role groups in Email & collaboration RBAC.
+      - **View-Only Organization Management** in Exchange Online RBAC.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy
 

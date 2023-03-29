@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: EOP queued, deferred, and bounced messages FAQ
-  f1.keywords: 
+  f1.keywords:
     - NOCSH
   ms.author: chrisda
   author: chrisda
@@ -12,7 +12,7 @@ metadata:
   ms.collection: tier3
   ms.localizationpriority: medium
   ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
-  ms.custom: 
+  ms.custom:
     - seo-marvel-apr2020
   description: Find answers to the most common questions about messages that have been queued, deferred, or bounced during the Exchange Online Protection (EOP) filtering process.
   ms.subservice: mdo
@@ -20,14 +20,13 @@ metadata:
 title: EOP queued, deferred, and bounced messages FAQ
 summary: |
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-  
+
   **Applies to**
   - [Exchange Online Protection](eop-about.md)
   - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-  
+
   This topic provides answers to frequently asked questions about messages that have been queued, deferred, or bounced during the Exchange Online Protection (EOP) filtering process.
-  
 
 sections:
   - name: Ignored

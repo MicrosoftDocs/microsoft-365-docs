@@ -10,7 +10,7 @@
          href: defender-for-office-365-whats-new.md
    - name: Get started
      items:
-     - name: Defender for Office 365 
+     - name: Defender for Office 365
        href: defender-for-office-365.md
      - name: How threat protection works in Defender for Office 365
        href: protection-stack-microsoft-defender-for-office365.md
@@ -78,6 +78,8 @@
          href: mdo-sec-ops-guide.md
        - name: Configure your tenant for increased security
          href: tenant-wide-setup-for-increased-security.md
+       - name: Support for Microsoft Teams
+         href: mdo-support-teams-about.md
        - name: Security recommendations for priority accounts
          href: priority-accounts-security-recommendations.md
        - name: Anti-malware protection
@@ -247,9 +249,9 @@
          - name: Configure and review priority accounts
            href: priority-accounts-turn-on-priority-account-protection.md
        - name: Email entity page
-         items:
-         - name: The Email entity page
-           href: mdo-email-entity-page.md
+         href: mdo-email-entity-page.md
+       - name: Teams message entity panel
+         href: teams-message-entity-panel.md
        - name: Threat Trackers
          items:
          - name: Use Threat Trackers
@@ -282,12 +284,14 @@
              href: submissions-users-report-message-add-in-configure.md
            - name: Report false positives and false negatives in Outlook
              href: submissions-outlook-report-messages.md
-           - name: User reported message settings
-             href: submissions-user-reported-messages-files-custom-mailbox.md
+           - name: User reported settings
+             href: submissions-user-reported-messages-custom-mailbox.md
+           - name: User reported message settings in Teams
+             href: submissions-teams.md
            - name: Submit malware and non-malware to Microsoft
              href: submissions-submit-files-to-microsoft.md
-           - name: Admin review for reported messages
-             href: admin-review-reported-message.md
+           - name: Admin review for user reported messages
+             href: submissions-admin-review-user-reported-messages.md
            - name: Errors during submissions
              href: submissions-error-messages.md
          - name: Campaign Views
@@ -357,7 +361,7 @@
          - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
            href: detect-and-remediate-outlook-rules-forms-attack.md
      - name: Tune and update
-       items: 
+       items:
         - name: Respond to a compromised connector
           href: connectors-detect-respond-to-compromise.md
         - name: Remove blocked entities
@@ -386,9 +390,9 @@
             href: quarantine-faq.yml
         - name: Use the delist portal to remove yourself from the blocked senders list
           href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-   - name: Step-by-step guides  
+   - name: Step-by-step guides
      items:
-      - name: Microsoft Defender for Office 365 step-by-step guides and how to use them 
+      - name: Microsoft Defender for Office 365 step-by-step guides and how to use them
         href: step-by-step-guides/step-by-step-guide-overview.md
       - name: Configure
         items:
@@ -408,6 +412,8 @@
           href: step-by-step-guides/deploy-and-configure-the-report-message-add-in.md
         - name: Use Microsoft Defender for Office 365 in SharePoint Online
           href: step-by-step-guides/utilize-microsoft-defender-for-office-365-in-sharepoint-online.md
+        - name: Tune bulk email filtering
+          href: step-by-step-guides/tune-bulk-mail-filtering-walkthrough.md
       - name: Use
         items:
         - name: Track and respond to emerging security threats with campaigns view in Microsoft Defender for Office 365
@@ -418,7 +424,7 @@
           href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md
         - name: How to run attack simulations for your team
           href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
-        - name: How to setup automated attacks and training within Attack simulation training 
+        - name: How to setup automated attacks and training within Attack simulation training
           href: step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
         - name: Optimize and correct security policies with configuration analyzer
           href: step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
@@ -455,7 +461,7 @@
        href: reference-policies-practices-and-guidelines.md
      - name: Sending mail to Office 365
        href: sending-mail-to-office-365.md
-     - name: How Office 365 uses SPF to prevent spoofing 
+     - name: How Office 365 uses SPF to prevent spoofing
        href: email-authentication-anti-spoofing.md
      - name: Services for non-customers
        href: services-for-non-customers.md

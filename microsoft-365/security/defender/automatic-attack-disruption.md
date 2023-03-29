@@ -21,7 +21,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 02/09/2023
+ms.date: 02/22/2023
 ---
 
 # Automatic attack disruption in Microsoft 365 Defender
@@ -42,32 +42,35 @@ This article provides an overview of automated attack disruption and includes li
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Automatic attack disruption is designed to contain attacks in progress, limit the impact on an organization’s assets, and provide more time for the SOC to remediate the attack fully. Unlike known protection methods such as prevention and blocking based on a single indicator of compromise, the attack disruption in Microsoft 365 Defender leverages the full breadth of our XDR signal to act at the incident level, taking the entire attack into account. While many XDR and SOAR solutions allow you to create your automatic response actions, the key difference to Microsoft 365 Defender’s automatic attack disruption is that it is built-in and uses insights from our security researchers and advanced AI models to counteract the complexities of advanced attacks. It considers the entire context of signals from different sources to determine compromised assets.
+Automatic attack disruption is designed to contain attacks in progress, limit the impact on an organization's assets, and provide more time for the SOC to remediate the attack fully. Unlike known protection methods such as prevention and blocking based on a single indicator of compromise, the attack disruption in Microsoft 365 Defender leverages the full breadth of our XDR signal to act at the incident level, taking the entire attack into account.
+
+While many XDR and SOAR solutions allow you to create your automatic response actions, the key difference to Microsoft 365 Defender's automatic attack disruption is that it is built-in and uses insights from our security researchers and advanced AI models to counteract the complexities of advanced attacks. It considers the entire context of signals from different sources to determine compromised assets.
 
 Automatic attack disruption operates in three key stages:
 
-- It uses Microsoft 365 Defender’s XDR ability to correlate signals from many different sources into a single, high-confidence incident through insights from endpoints, identities, email and collaboration tools, as well as SaaS apps.
+- It uses Microsoft 365 Defender's XDR ability to correlate signals from many different sources into a single, high-confidence incident through insights from endpoints, identities, email and collaboration tools, as well as SaaS apps.
 - It identifies assets controlled by the attacker and used to spread the attack.
 - It automatically takes response actions across relevant Microsoft Defender products to contain the attack in real-time by isolating affected assets.
 
-This game-changing capability limits a threat actor’s progress early on and dramatically reduces the overall impact of an attack, from associated costs to loss of productivity.
+This game-changing capability limits a threat actor's progress early on and dramatically reduces the overall impact of an attack, from associated costs to loss of productivity.
 
 ## Establishing high confidence when taking automatic action
 
-We understand that taking automatic action sometimes comes with hesitation from security teams, given the potential impact it can have on an organization. Therefore, the automatic attack disruption capabilities in Microsoft 365 Defender are designed to rely on high-fidelity signals. In addition to XDR capabilities that correlate incidents with millions of Defender product signals across email, identity, applications, documents, devices, networks, and files. Insights from the continuous investigation of thousands of incidents by Microsoft’s security research team ensure that automatic attack disruption maintains a high signal-to-noise ratio (SNR).
+We understand that taking automatic action sometimes comes with hesitation from security teams, given the potential impact it can have on an organization. Therefore, the automatic attack disruption capabilities in Microsoft 365 Defender are designed to rely on high-fidelity signals. In addition to XDR capabilities that correlate incidents with millions of Defender product signals across email, identity, applications, documents, devices, networks, and files. Insights from the continuous investigation of thousands of incidents by Microsoft's security research team ensure that automatic attack disruption maintains a high signal-to-noise ratio (SNR).
 
 Investigations are integral to monitoring our signals and the attack threat landscape to ensure high quality and accurate protection.
 
 > [!TIP]
-> This article describes how attack disruption works. To configure these capabilities, see [Configure attack disruption capabilities in Microsoft 365 Defender.](/microsoft-365/security/defender/configure-attack-disruption.md)
+> This article describes how attack disruption works. To configure these capabilities, see [Configure attack disruption capabilities](configure-attack-disruption.md) in Microsoft 365 Defender.
 
 ## Automated response actions
+
 In automatic attack disruption, we leverage Microsoft-based XDR response actions. Examples of these actions are:
 
-- [Device contain](/microsoft-365/security/defender-endpoint/respond-machine-alerts#contain-devices-from-the-network) - based on Microsoft Defender for Endpoint’s capability, this action is an automatic containment of a suspicious device to block any incoming/outgoing communication with the said device.
-- [Disable user](/defender-for-identity/remediation-actions) - based on Microsoft Defender for Identity’s capability, this action is an automatic suspension of a compromised account to prevent additional damage like lateral movement, malicious mailbox use, or malware execution.
+- [Device contain](/microsoft-365/security/defender-endpoint/respond-machine-alerts#contain-devices-from-the-network) - based on Microsoft Defender for Endpoint's capability, this action is an automatic containment of a suspicious device to block any incoming/outgoing communication with the said device.
+- [Disable user](/defender-for-identity/remediation-actions) - based on Microsoft Defender for Identity's capability, this action is an automatic suspension of a compromised account to prevent additional damage like lateral movement, malicious mailbox use, or malware execution.
 
-For more information, see [remediation actions](/microsoft-365/security/defender/m365d-remediation-actions.md) in Microsoft 365 Defender.
+For more information, see [remediation actions](m365d-remediation-actions.md) in Microsoft 365 Defender.
 
 ## Identify when an attack disruption happens in your environment
 
@@ -88,9 +91,10 @@ On the incident page:
 - A yellow banner at the top of the page that highlights the automatic action taken
 - The current asset status is shown in the incident graph if an action is done on an asset, e.g., account disabled or device contained
 
-For more information see ‘view attack disruption details and results’.
+For more information, see [view attack disruption details and results](autoad-results.md).
+
 
 ## Next steps
 
-- [Configuring automatic attack disruption in Microsoft 365 Defender](/microsoft-365/security/defender/configure-attack-disruption.md)
-- [View details and results](/microsoft-365/security/defender/autoad-results.md)
+- [Configuring automatic attack disruption in Microsoft 365 Defender](configure-attack-disruption.md)
+- [View details and results](autoad-results.md)

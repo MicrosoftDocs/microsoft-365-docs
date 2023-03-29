@@ -32,14 +32,14 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-Cloud protection works together with Microsoft Defender Antivirus to deliver protection to your endpoints much faster than through traditional security intelligence updates. You can configure your level of cloud protection by using Microsoft Endpoint Manager (recommended) or Group Policy.
+Cloud protection works together with Microsoft Defender Antivirus to deliver protection to your endpoints much faster than through traditional security intelligence updates. You can configure your level of cloud protection by using Microsoft Intune (recommended) or Group Policy.
 
 > [!NOTE]
 > Selecting **High**, **High +**, or **Zero tolerance** could cause some legitimate files to be detected. If that happens, you can unblock the detected file or dispute that detection in the Microsoft 365 Defender portal.
 
-## Use Microsoft Endpoint Manager to specify the level of cloud protection
+## Use Microsoft Intune to specify the level of cloud protection
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
 2. Choose **Endpoint security** \> **Antivirus**.
 
@@ -86,7 +86,7 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
 7. Deploy your updated Group Policy Object. See [Group Policy Management Console](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
-> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](/mem/intune/configuration/group-policy-analytics).
+> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Intune](/mem/intune/configuration/group-policy-analytics).
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:

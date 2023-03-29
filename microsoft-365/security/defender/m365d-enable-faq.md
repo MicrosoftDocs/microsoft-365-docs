@@ -60,8 +60,8 @@ To optimize your Microsoft 365 Defender experiences, we recommend deploying *all
 
 Microsoft 365 Defender automatically selects an optimal location for the data center where consolidated data is processed and stored. If you have Microsoft Defender for Endpoint, it selects the same location used by Defender for Endpoint.
 
->[!NOTE]
->Microsoft Defender for Endpoint automatically provisions in European Union (EU) data centers when turned on through Microsoft Defender for Cloud. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Microsoft Defender for Endpoint in this manner.
+> [!NOTE]
+> Microsoft Defender for Endpoint automatically provisions in European Union (EU) data centers when turned on through Microsoft Defender for Cloud. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Microsoft Defender for Endpoint in this manner.
 
 The data center location is shown before and after the service is provisioned in the settings page for Microsoft 365 Defender (**Settings > Microsoft 365 Defender**). If you prefer to use another data center location, select **Need help?** in the Microsoft 365 Defender portal to contact Microsoft support.
 
@@ -97,7 +97,7 @@ By default, Microsoft 365 Defender displays time information in the UTC time zon
 Microsoft regularly provides information through the various channels, including:
 
 - Blogposts in the [Microsoft 365 security & compliance tech community](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/bg-p/MicrosoftThreatProtectionBlog)
-- Go to [Defender monthly news](https://aka.ms/defendernews) 
+- Go to [Defender monthly news](https://aka.ms/defendernews)
 - The [message center](../../admin/manage/message-center.md) in Microsoft 365 admin center
 
 

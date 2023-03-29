@@ -7,7 +7,7 @@ brand: m365
 
 metadata:
   title: Microsoft 365 admin center help # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Set up and manage Office 365 and Microsoft 365 in the Microsoft 365 admin center. # Required; article description that is displayed in search results. < 160 chars.
+  description: Set up and manage Microsoft 365 in the Microsoft 365 admin center. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: kwekua #Required; your GitHub user alias, with correct capitalization.
@@ -48,11 +48,10 @@ productDirectory:
   summary: Set up your subscription and email, add users, and install apps. # < 160 chars (optional)
   items:
     # Card
-    - title: Top 20 most-viewed admin help articles this month
-      # need to pick new image for this
+    - title: Small business help & learning
       imageSrc: /office/media/icons/education-tutorial-blue.svg
-      summary: Check out the help articles that are most popular with other admins.
-      url: top-m365-admin-articles.yml
+      summary: Explore all the Microsoft 365 help resources a small business needs. 
+      url: https://go.microsoft.com/fwlink/?linkid=2224585
     # Card
     - title: YouTube - Microsoft 365 help for small businesses
       # need to pick new image for this
@@ -65,21 +64,15 @@ productDirectory:
       summary: Sign up and set up Microsoft 365.
       url: admin-overview/sign-up-for-office-365.md
     # Card
+    - title: Install apps
+      imageSrc: /office/media/icons/deploy-blue.svg
+      summary:  Install Microsoft 365 apps.
+      url: setup/install-applications.md
+    # Card
     - title: Migrate data
       imageSrc: /office/media/icons/migration-blue.svg
       summary: Move your data from another service to Microsoft 365.
       url: setup/migrate-email-and-contacts-admin.md
-    # Card
-    - title: Install apps
-      imageSrc: /office/media/icons/deploy-blue.svg
-      summary:  Install Office and other Microsoft apps.
-      url: setup/install-applications.md
-    # Card
-    - title: Train users
-      imageSrc: /office/media/icons/education-tutorial-blue.svg
-      summary: Help users in your organization learn how to store and share files and use Office apps.
-      url: https://support.microsoft.com/training
-
 
 # additionalContent section (optional)
 # Card with summary style
@@ -114,14 +107,10 @@ additionalContent:
           summary: Manage bills, subscriptions, and product licenses, update payment methods, and purchase additional services and storage.
           url: ../commerce/index.yml
         # Card
-        - title: Secure your organization
-          summary: Learn about the best ways to secure your organization like setting up multifactor authentication (MFA), Microsoft Secure Score, and GDPR.
-          url:  security-and-compliance/secure-your-business-data.md
-        # Card
         - title: Work with customers
           summary: Share documents and use Teams to collaborate and meet.
           url:  manage/share-calendars-with-external-users.md
         # Card
         - title: Troubleshoot
-          summary: Access resources to help you troubleshoot and fix problems with your Office products or services.
+          summary: Access resources to help you troubleshoot and fix problems with your Microsoft 365 products or services.
           url: /office/troubleshoot/
