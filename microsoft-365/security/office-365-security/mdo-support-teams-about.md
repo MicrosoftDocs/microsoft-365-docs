@@ -46,18 +46,20 @@ The **Teams Message Entity Panel** is one single place to store all of Teams mes
 
 ## Enable Microsoft Defender for Teams
 
-If you are interested in previewing the features listed above, for ALL users in your tenant, you can enable them using the Exchange Online PowerShell cmdlet. For more details on how to connect to Exchange Online with PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Once connected, you can enable teams preview as follows:
+If you're interested in the previewing the features, listed above, for ALL users in your tenant, you can enable them via an Exchange Online PowerShell cmdlet. See [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell.md) for more details on how to connect to Exchange Online with PowerShell. Run the following command in Exchange Online PowerShell.
 
- ```powershell
-  Set-TeamsSecurityPreview -Enable $true
-  ```
+```powershell
+Set-TeamsSecurityPreview -Enable $true
+```
 
-To check the status for your tenant run the following cmdlet:
+To check the status for your tenant, run the following command:
 
- ```powershell
-  Get-TeamsSecurityPreview
-  ```
-Note: This cmdlet is used to inform Microsoft that you want to preview the Teams preview. By Running this cmdlet, your tenant will be added to the rollout schedule. The features will be enabled over time during the preview period. 
+```powershell
+Get-TeamsSecurityPreview
+```
+
+> [!NOTE]
+> This cmdlet informs Microsoft that you want to enroll in the Teams preview. By running this cmdlet, your tenant will be added to the rollout schedule. The features will be enabled over time during the preview period.
 
 ## See also
 
