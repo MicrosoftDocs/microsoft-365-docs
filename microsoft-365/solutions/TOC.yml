@@ -61,8 +61,6 @@
           href: configure-teams-sensitive-protection.md
         - name: Configure highly sensitive protection
           href: configure-teams-highly-sensitive-protection.md
-        - name: Configure a team with a unique sensitivity label
-          href: secure-teams-security-isolation.md
       - name: Configure external sharing
         items:
         - name: External sharing overview
@@ -396,7 +394,56 @@
         href: test-lab-guides-overview-solutions.md
       - name: Team with security isolation
         href: team-security-isolation-dev-test.md
-    
+
+- name: Microsoft app guidance and scenarios
+  items: 
+    - name: Purchase and add apps for Microsoft Intune
+      items: 
+      - name: Overview
+        href: apps-guide-overview.md
+      - name: Understand app types
+        items:
+        - name: App types overview        
+          href: apps-type-overview.md
+        - name: Understand store apps        
+          href: apps-type-store.md
+        - name: Understand line-of-business apps        
+          href: apps-type-lob.md
+        - name: Understand built-in apps        
+          href: apps-type-built-in.md          
+        - name: Understand web apps
+          href: apps-type-web.md
+        - name: Understand Microsoft apps
+          href: apps-type-microsoft.md          
+      - name: Understand app purchases
+        items:
+        - name: Purchase apps overview
+          href: apps-purchase-overview.md
+        - name: Purchase store apps
+          href: apps-purchase-store.md
+        - name: Purchase apps in-volume
+          href: apps-purchase-volume.md
+      - name: Understand app licenses
+        items:
+        - name: App licenses overview
+          href: apps-license-overview.md
+        - name: Manage app licenses
+          href: apps-license-manage.md
+      - name: Add apps to Intune
+        items:
+        - name: Add apps overview
+          href: apps-add-overview.md
+        - name: Step 1. Assess app requirements
+          href: apps-add-step-1.md
+        - name: Step 2. Create categories for apps
+          href: apps-add-step-2.md
+        - name: Step 3. Purchase apps
+          href: apps-add-step-3.md
+        - name: Step 4. Add apps to Intune
+          href: apps-add-step-4.md
+        - name: Step 5. Manage apps and licenses
+          href: apps-add-step-5.md                  
+
 - name: Industry-specific guidance
   items: 
     - name: Microsoft 365 for frontline workers

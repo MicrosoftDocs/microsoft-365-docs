@@ -382,7 +382,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects tax related content such as tax planning, tax forms, tax filing, tax regulations. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files. | English |
 
-## Targeted threat
+## Threat
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|

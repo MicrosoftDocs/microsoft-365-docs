@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 06/27/2020
+ms.date: 03/27/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -54,7 +54,7 @@ To see the options for licensing your users to benefit from Microsoft Purview fe
 
 ## Permissions
 
-Members of your compliance team who are responsible for records management need permissions to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Records Management** admin role group, which grants permissions for all features related to records management, including [disposition review and verification](disposition.md).
+Members of your compliance team who are responsible for records management need permissions to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Records Management** admin role group. This role group grants permissions for all features related to records management, which include the permissions to create and manage [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention), and [disposition review and verification](disposition.md).
 
 For a read-only role, you can create a new role group and add the **View-Only Record Management** role to this group.
 
@@ -86,7 +86,7 @@ Use the following table to help you map your business requirements to the scenar
 |Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
 |Have proof of disposition for content that is permanently deleted at the end of its retention period|[Disposition of records](disposition.md#disposition-of-records) |
 | Monitor how and where retain and delete settings are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
-| Programatically create and manage retention labels, event-based retention, and automate repetitive tasks for records management | [Microsoft Graph API for records management (preview)](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview) |
+| Programatically create and manage retention labels, event-based retention, and automate repetitive tasks for records management | [Microsoft Graph API for records management](compliance-extensibility.md#microsoft-graph-api-for-records-management) |
 
 ## End-user documentation
 
