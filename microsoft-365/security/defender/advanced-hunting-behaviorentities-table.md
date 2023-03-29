@@ -74,7 +74,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`EmailClusterId`|`string`| Identifier for the group of similar emails clustered based on heuristic analysis of their contents |
 |`Application`|`string`| Application that performed the recorded action |
 |`ApplicationId	`|`int`| Unique identifier for the application |
-|`OAuthApplicationId`|`string`| xxx |
+|`OAuthApplicationId`|`string`| Unique identifier of the third-party OAuth application |
 |`ProcessCommandLine`|`string`| Command line used to create the new process |
 |`RegistryKey`|`string`| Registry key that the recorded action was applied to |
 |`RegistryValueName`|`string`| Name of the registry value that the recorded action was applied to |
