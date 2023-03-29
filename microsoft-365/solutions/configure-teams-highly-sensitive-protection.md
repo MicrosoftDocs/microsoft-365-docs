@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 03/09/2023
+ms.date: 03/29/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -141,10 +141,13 @@ Further configuration of the highly sensitive scenario is done in the team itsel
 
 We'll create the team in the Teams admin center.
 
-To create a team for sensitive information
+To create a team for highly sensitive information
 1. In the Teams admin center, expand **Teams** and select **Manage teams**.
 1. Select **Add**.
-1. 
+1. Type a name and description for the team.
+1. Add one or more owners for the team. (Keep yourself as an owner so you can [choose a default sensitivity label for files](#choose-a-default-sensitivity-label-for-files) below.)
+1. Choose the sensitivity label that you created for highly sensitive information from the **Sensitivity** dropdown list.
+1. Select **Apply**.
 
 ## Private channel settings
 
