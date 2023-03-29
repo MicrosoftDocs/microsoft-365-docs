@@ -73,7 +73,9 @@ To learn more about an internet-facing device, select the device in the device i
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-details.png" alt-text="Screenshot of the internet facing device details page" lightbox="../../media/defender-vulnerability-management/internet-facing-details.png":::
 
-This pane includes details on whether the device was detected by an external scan or received an external incoming communication, the local IP address and port on the device, the external scanned public IP address and port, and the last time the device was identified as internet facing.
+This pane includes details on whether the device was detected by an external scan or received an external incoming communication. The external network interface address and port fields provide details on the external IP port that was scanned when we captured the information that this device was internet facing.
+
+The local network interface address and port for this device along with the last time the device was identified as internet facing is also shown.
 
 ## Use advanced hunting
 
