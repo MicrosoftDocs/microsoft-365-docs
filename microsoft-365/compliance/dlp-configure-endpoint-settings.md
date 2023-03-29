@@ -67,6 +67,7 @@ If bandwidth utilization isn't a concern, you select **No limit** to allow unlim
 
 These Windows versions support advanced classification scanning and protection:
 
+- all Windows 11 versions
 - Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
 - Windows 10 versions 19H1/19H2 (KB 5007189)
 - Windows 10 RS5 (KB 5006744)
@@ -78,7 +79,7 @@ These Windows versions support advanced classification scanning and protection:
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
 > [!TIP]
-> Advanced classification must be enabled to see contextual text (in preview)  for DLP rule matched events in Activity explorer. Learn more about contextual text at [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  Be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
+> Advanced classification must be enabled to see contextual text  for DLP rule matched events in Activity explorer. Learn more about contextual text at [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  Be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
 
 ### File path exclusions
 
@@ -86,9 +87,9 @@ Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > *
 
 You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP policy enforcement on your devices because they're too noisy or don’t contain files you're interested in. Files in those locations won't be audited and any files that are created or modified in those locations won't be subject to DLP policy enforcement. You can configure path exclusions in DLP settings.
 
-#### Windows 10 devices
+#### Windows 10/11 devices
 
-You can use this logic to construct your exclusion paths for Windows 10 devices:
+You can use this logic to construct your exclusion paths for Windows 10/11 devices:
 
 - Valid file path that ends with `\`, which means only files directly under folder. <br/>For example: `C:\Temp\`
 
@@ -106,7 +107,7 @@ You can use this logic to construct your exclusion paths for Windows 10 devices:
 
 #### macOS devices
 
-Similar to Windows 10 devices you can add your own exclusions for macOS devices.
+Similar to Windows 10/11 devices you can add your own exclusions for macOS devices.
 
 - File path definitions are case insensitive, so `User` is the same as `user`.
 
@@ -150,7 +151,7 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 
 #### Restricted apps
 
-**Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10 and macOS devices.
+**Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10/11 and macOS devices.
 
 When **Access by restricted apps** is selected in a policy and a user uses an app that is on the restricted apps list to access a protected file, the activity will be `audited`, `blocked`, or `blocked with override` depending on how you configured it. That is unless the same app is a member of a **Restricted app group**, then the actions configured for activities in the **Restricted app group** override the actions configured for the access activity for the **Restricted apps** list. All activity is audited and available to review in activity explorer.
 
