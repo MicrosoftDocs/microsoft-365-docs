@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/28/2022
+ms.date: 03/28/2023
 ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -25,9 +25,19 @@ Small and medium-sized businesses recognize security as a key component to their
 
 If you're a Microsoft partner, and you're working with customers who have or need [Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/index.md), or [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), this article is for you.
 
+- [Download the guide and checklist for security with Microsoft 365 for business](#download-our-guide-and-checklist-new)
 - [Learn how you can integrate Microsoft endpoint security with your RMM tools and PSA software](#integrate-microsoft-endpoint-security-with-your-rmm-tools-and-psa-software).
 - [See how you can use Microsoft 365 Lighthouse to secure and manage your customers' devices and data](#use-microsoft-365-lighthouse-to-secure-and-manage-your-customers-devices-and-data).
 - [Learn more about Defender for Business and Microsoft 365 Business Premium](#learn-more-about-defender-for-business-and-microsoft-365-business-premium).
+
+## Download our guide and checklist (NEW!)
+
+The [practical guide to security using Microsoft 365 Business (Basic, Standard, and Premium)](https://aka.ms/smbsecurityguide) guide includes Microsoft’s security recommendations for small and medium-sized businesses. You can also download a [summary checklist](https://aka.ms/smbsecuritychecklist) to use as a companion to the guide.
+
+| Resource | Description |
+|:---|:---|
+| [Practical guide to security using Microsoft 365 Business (Basic, Standard, and Premium)](https://aka.ms/smbsecurityguide) | The guide is intended to start discussion around security and compliance options. Many businesses want to enable security and balance ease of use with security. Other businesses want to maximize security protections and have higher concern for risk, such as for meeting regulatory requirements. One of the first and most important things that IT leaders and business leaders can do is talk through the possibilities. This guide can help facilitate those discussions. |
+| [Checklist for security with Microsoft 365 Business Premium](https://aka.ms/smbsecuritychecklist) | This checklist includes all the planning and configuration steps covered in the guide, from getting started to configuring security and compliance capabilities. |
 
 ## Integrate Microsoft endpoint security with your RMM tools and PSA software
 
