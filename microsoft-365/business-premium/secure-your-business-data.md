@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 01/23/2023
+ms.date: 03/29/2023
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -43,8 +43,10 @@ description: "Learn best practices to protect your business from ransomware, phi
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
 
-> [!TIP]
-> This article is designed for small and medium-sized businesses who have up to 300 users. If you're looking for information for enterprise organizations, see [Deploy ransomware protection for your Microsoft 365 tenant](../solutions/ransomware-protection-microsoft-365.md).
+> [!NOTE]
+> This article is designed for small and medium-sized businesses who have up to 300 users. 
+> If you're looking for information for enterprise organizations, see [Deploy ransomware protection for your Microsoft 365 tenant](../solutions/ransomware-protection-microsoft-365.md).
+> If you're a Microsoft partner, see [Resources for Microsoft partners using Microsoft Defender for Business and Microsoft 365 Business Premium](../security/defender-business/mdb-partners.md).
 
 Microsoft 365 for business plans, such as Microsoft 365 Business Basic, Standard, and Premium, include security capabilities, such as antiphishing, antispam, and antimalware protection. Microsoft 365 Business Premium includes even more capabilities, such as device security, advanced threat protection, and information protection. This article describes how to secure your data with Microsoft 365 for business. This article also includes information to [compare capabilities across Microsoft 365 for business plans](#comparing-microsoft-365-for-business-plans).
 
@@ -70,28 +72,27 @@ Microsoft 365 for business plans include Microsoft Exchange, Microsoft Teams, Sh
 | Capability | [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Microsoft 365 Business Premium](index.md) |
 |:---|:--:|:--:|:--:|
 | **Outlook and Web/mobile versions of Office apps** <br/>Word, Excel, and PowerPoint | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)  | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| **Desktop versions of Office apps**<br/>Word, Excel, PowerPoint, Publisher, and Access <sup>[[See note 1](#fn1)]</sup> |  | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| **Desktop versions of Office apps**<br/>Word, Excel, PowerPoint, Publisher, and Access <br/>(See note 1 below) |  | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Secure communication, collaboration, and file storage**<br/>Microsoft Teams, Exchange, OneDrive, and SharePoint | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Antispam, antiphishing, and antimalware protection** for email <br/>[Exchange Online Protection overview](../security/office-365-security/eop-about.md) | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| **Mobile device management** and mobile app management <br/>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) | See note <sup>[[2](#fn2)]</sup> | See note <sup>[[2](#fn2)]</sup> | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| **Advanced device security** with next-generation protection, firewall, attack surface reduction, automated investigation and response, and more <br/>[Defender for Business](../security/defender-business/mdb-overview.md) | See note <sup>[[3](#fn3)]</sup>  | See note <sup>[[3](#fn3)]</sup> | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| **Advanced protection for email and documents** with advanced anti-phishing, Safe Links, Safe Attachments, and real-time detections<br/>[Microsoft Defender for Office 365 Plan 1](../security/office-365-security/defender-for-office-365.md) | See note <sup>[[4](#fn4)]</sup> | See note <sup>[[4](#fn4)]</sup> | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) | 
+| **Mobile device management** and mobile app management <br/>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) | (See note 2 below) | (See note 2 below) | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| **Advanced device security** with next-generation protection, firewall, attack surface reduction, automated investigation and response, and more <br/>[Defender for Business](../security/defender-business/mdb-overview.md) | (See note 3 below)  | (See note 3 below) | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| **Advanced protection for email and documents** with advanced anti-phishing, Safe Links, Safe Attachments, and real-time detections<br/>[Microsoft Defender for Office 365 Plan 1](../security/office-365-security/defender-for-office-365.md) | (See note 4 below) | (See note 4 below) | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) | 
 | **Information protection** capabilities to discover, classify, protect, and govern sensitive information <br/>[Azure Information Protection](/azure/information-protection/what-is-information-protection)  | | | ![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png) |
 
-(<a id="fn1">1</a>) Microsoft Publisher and Microsoft Access run on Windows laptops and desktops only.
-
-(<a id="fn2">2</a>) Microsoft Intune is included with certain Microsoft 365 plans, such as Microsoft 365 Business Premium. Basic Mobility and Security capabilities are included in Microsoft 365 Business Basic and Standard. [Choose between Basic Mobility and Security or Intune](../admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
-
-(<a id="fn3">3</a>) Defender for Business is included in Microsoft 365 Business Premium. Defender for Business can also be added on to Microsoft 365 Business Basic or Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
-
-(<a id="fn4">4</a>) Defender for Office 365 Plan 1 is included in Microsoft 365 Business Premium. Defender for Office 365 Plan 1 can also be added on to Microsoft 365 Business Basic or Standard. See [Defender for Office 365 Plan 1 and Plan 2](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview).
-
-> [!TIP]
-> For more information about what each plan includes, see [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c).
-
+> [!NOTE]
+> 1. Microsoft Publisher and Microsoft Access run on Windows laptops and desktops only.
+> 
+> 2. Microsoft Intune is included with certain Microsoft 365 plans, such as Microsoft 365 Business Premium. Basic Mobility and Security capabilities are included in Microsoft 365 Business Basic and Standard. [Choose between Basic Mobility and Security or Intune](../admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
+> 
+> 3. Defender for Business is included in Microsoft 365 Business Premium. Defender for Business can also be added on to Microsoft 365 Business Basic or Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
+> 
+> 4. Defender for Office 365 Plan 1 is included in Microsoft 365 Business Premium. Defender for Office 365 Plan 1 can also be added on to Microsoft 365 Business Basic or Standard. See [Defender for Office 365 Plan 1 and Plan 2](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview).
+> 
 
 ## See also
 
+- For more information about what each plan includes, see [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c).
 - [What is Defender for Business?](../security/defender-business/mdb-overview.md)
 - [Microsoft 365 Business Premium—cybersecurity for small business](/microsoft-365/business-premium/)
 - [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md) (for more details about Defender for Business and Microsoft 365 Business Premium)
