@@ -355,7 +355,7 @@ Select one of the following options:
     - **Add logo**: Click **Browse logo image** to find and select a .png, .jpeg, or .gif file. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, click **Remove uploaded logo image**.
     - **Select default language**: This setting is required. Select one of the following values: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
 
-  - **Tenant landing pages** tab: Contains any custom landing pages that you've created. To create a new landing page, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Phish landing pages** \> **Tenant landing pages** tab. For instructions, see [Landing pages in Attack simulation training](attack-simulation-training-landing-pages.md#create-new-landing-pages).
+  - **Tenant landing pages** tab: Contains any custom landing pages that you've created. To create a new landing page, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Phish landing pages** \> **Tenant landing pages** tab. For instructions, see [Landing pages in Attack simulation training](attack-simulation-training-landing-pages.md#create-landing-pages).
 
   On both tabs, the following information is shown for each landing page:
 
