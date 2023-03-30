@@ -50,8 +50,8 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## January 2023
 
-- [Automatic Tenant Allow/Block List expiration management is now available in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447): Microsoft will now automatically remove entries from the allow list once the system has learned from it. Alternatively, Microsoft will extend the expiration time of the allows if the system has not learned yet. This will prevent your legitimate emails from going to junk or quarantine.
-- **Configuring third-party phishing simulations in Advanced Delivery:** We have expanded "Simulation URLs to allow" limit to 30 URLs. To learn how to configure, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md)
+- [Automatic Tenant Allow/Block List expiration management is now available in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447): Microsoft will now automatically remove entries from the allow list once the system has learned from it. Alternatively, Microsoft extends the expiration time of the allows if the system hasn't learned yet. This prevents your legitimate emails from going to junk or quarantine.
+- **Configuring third-party phishing simulations in Advanced Delivery:** We've expanded "Simulation URLs to allow" limit to 30 URLs. To learn how to configure, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md)
 
 ## December 2022
 
@@ -147,7 +147,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## August 2021
 
 - [Admin review for reported messages](submissions-admin-review-user-reported-messages.md): Admins can now send templated messages back to end users after they review reported messages. The templates can be customized for your organization and based on your admin's verdict as well.
-- ou can now add allow entries to the Tenant Allow/Block List if the blocked message was submitted as part of the admin submission process. Depending on the nature of the block, the submitted URL, file, and/or sender allow will be added to the Tenant Allow/Block List. In most cases, the allows are added to give the system some time and allow it naturally if warranted. In some cases, Microsoft manages the allow for you. For more information, see:
+- You can now add allow entries to the Tenant Allow/Block List if the blocked message was submitted as part of the admin submission process. Depending on the nature of the block, the submitted URL, file, and/or sender allow will be added to the Tenant Allow/Block List. In most cases, the allows are added to give the system some time and allow it naturally if warranted. In some cases, Microsoft manages the allow for you. For more information, see:
   - [Use the Microsoft 365 Defender portal to create allow entries for URLs on the Submissions page](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-on-the-submissions-page)
   - [Use the Microsoft 365 Defender portal to create allow entries for files on the Submissions page](tenant-allow-block-list-files-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-on-the-submissions-page)
   - [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses on the Submissions page](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-on-the-submissions-page)
