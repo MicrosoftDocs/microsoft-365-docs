@@ -137,7 +137,7 @@ Watch this short video to learn how to manage quarantined messages as an adminis
    - Sender email address
    - Subject. Use the entire subject of the message. The search is not case-sensitive.
 
-   After you've entered the search criteria, press ENTER to filter the results.
+   After you've entered the search criteria, press the enter ENTER key to filter the results.
 
    > [!NOTE]
    > The **Search** box on the main **Quarantine** page will search only quarantined items in the current view, not the entire quarantine. To search all quarantined items, use **Filter** and the resulting **Filters** flyout.

@@ -29,7 +29,7 @@ ms.date: 2/9/2023
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-Campaigns in the Microsoft 365 Defender portal identifies and categorizes coordinated email attacks, including phishing and malware. Microsoft's management of email attacks into discreet campaigns will help you to:
+Campaigns in the Microsoft 365 Defender portal identifies and categorizes coordinated email attacks, including phishing and malware. Microsoft's management of email attacks into discrete campaigns will help you to:
 
 - Efficiently investigate and respond to phishing and malware attacks, delivered via email.
 - Better understand the scope of the email attack targeting your organization.
