@@ -872,6 +872,8 @@
 
     - name: EDR in block mode
       href: edr-in-block-mode.md
+    - name: EDR in block mode FAQ
+      href: edr-block-mode-faqs.yml
 
     - name: Automated investigation and response (AIR)
       items:
