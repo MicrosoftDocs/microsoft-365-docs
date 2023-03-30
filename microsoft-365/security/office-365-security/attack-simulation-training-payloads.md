@@ -37,7 +37,7 @@ To see the available payloads, open the Microsoft 365 Defender portal at <https:
 The following information is shown for each payload on the **Global payloads** and **Tenant payloads** tabs<sup>\*</sup>:
 
 - **Payload name**
-- **Type**: Currently, this value is always **Social engineerings**.
+- **Type**: Currently, this value is always **Social engineering**.
 - **Language**: If the payload contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
 - **Source**: For built-in payloads, the value is **Global**. For custom payloads, the value is **Tenant**.
 - **Simulations launched**: The number of launched simulations that use the payload.

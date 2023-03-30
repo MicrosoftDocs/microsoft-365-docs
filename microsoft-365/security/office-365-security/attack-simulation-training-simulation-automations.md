@@ -87,13 +87,13 @@ If you click the **View details** link in the description, a details flyout open
 
 When you're finished on the **Select social engineering techniques** page, click **Next**.
 
-## Select a payload and login page
+## Select payloads and login pages
 
 On the **Select payloads and login page** page, you need to select an existing payload from the list, or create a new payload.
 
 For the **Credential Harvest** or **Link in Attachment** social engineering techniques, you can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
 
-### Select a payload
+### Select payloads
 
 On the **Select payloads and login page** page, select one of the following options:
 
@@ -139,13 +139,13 @@ When you're finished configuring filters, click **Apply**, **Cancel**, or ![Clea
 If you select a payload from the list by clicking anywhere in the row other than the check box next to the name, details about the payload are shown in a flyout:
 
 - The **Overview** tab (named **Payload** in **Credential Harvest** and **Link in Attachment** payloads) contains details about the payload, include a preview.
-- The **Login page** tab is available only for **Credential Harvest** or **Link in Attachment** payloads and is described in the [Select a login page](#select-a-login-page) subsection.
+- The **Login page** tab is available only for **Credential Harvest** or **Link in Attachment** payloads and is described in the [Select login pages](#select-login-pages) subsection.
 - The **Attachment** tab is available only for **Malware Attachment**, **Link in Attachment**, and **Oauth Consent Grant** payloads. This tab contains details about the attachment, include a preview.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
-### Select a login page
+### Select login pages
 
 > [!NOTE]
 > The **Login page** tab is available only in the details flyout of **Credential Harvest** or **Link in Attachment** payloads.
@@ -680,7 +680,7 @@ The **Randomize** option on the [Simulation schedule](#simulation-schedule) page
 
 ### How does the Randomize option on the Select a payload and login page work?
 
-The **Randomize** option on the [Select a payload and login page](#select-a-payload-and-login-page) works as follows:
+The **Randomize** option on the [Select payloads and login pages](#select-payloads-and-login-pages) page works as follows:
 
 For every run, a social engineering technique from the list of selected techniques is chosen, and then a random payload for that technique will be chosen from both **Global payloads** (built-in) and **Tenant payloads** (custom). This behavior helps to ensure that the selected payload wasn't part of any previous run for this particular automation.
 
