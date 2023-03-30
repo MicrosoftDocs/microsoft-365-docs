@@ -69,7 +69,7 @@ For E3 licensed users
 - Content contains (works only for Sensitive information types. Sensitivity labels aren't supported)
 - Content is shared
 
-For E5 licensed users
+For E5 licensed users (preview)
 - Content contains Sensitive information types
 - Content contains Sensitivity labels (works for email labels, Office docs and PDF files)
 - Content is shared
