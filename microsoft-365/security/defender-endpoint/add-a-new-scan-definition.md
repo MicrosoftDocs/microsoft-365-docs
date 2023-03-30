@@ -121,6 +121,42 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 }
 ```
 
+## Example response to adding a new scan
+
+Here's an example of a response to adding a new scan.
+
+```json
+ {
+"@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#DeviceAuthenticatedScanDefinitions/$entity",
+    "id": "289224fb-1686-472c-9751-5555960854ca",
+    "scanType": "Windows",
+    "scanName": "Test Windows scan",
+    "isActive": true,
+    "target": "127.0.0.1",
+    "orgId": "d7c7c745-195f-4223-9c7a-99fb420fd000",
+    "intervalInHours": 1,
+    "createdBy": "username@test.com",
+    "targetType": "Ip",
+    "scanAuthenticationParams": null,
+    "scannerAgent": {
+        "id": "d7c7c745-195f-4223-9c7a-99fb420fd000_ eb663a27ae9d032f61bc268a79eedf14c4b90f77",
+        "machineId": "eb663a27ae9d032f61bc268a79eedf14c4b90f77",
+        "machineName": "DESKTOP-TEST",
+        "lastSeen": "2023-01-04T09:40:03.2787058Z",
+        "assignedApplicationId": "ae4a5cde-b4a1-4b76-8635-458b2cf15752",
+        "scannerSoftwareVersion": "7.6.0.0",
+        "lastCommandExecutionTimestamp": "2023-01-04T09:33:16Z",
+        "mdeClientVersion": null
+    },
+    "latestScan": {
+        "status": null,
+        "failureReason": null,
+        "executionDateTime": null
+    }
+
+}
+```
+
 ## Example request to delete scans
 
 Here's an example of a request that deletes scans.
