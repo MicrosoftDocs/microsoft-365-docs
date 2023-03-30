@@ -52,6 +52,10 @@ Copilot for Syntex analyzes the text of a selected file in a SharePoint document
 
        ![Screenshot of the text box on the Copilot panel with the starter prompt highlighted.](../media/content-understanding/copilot-starter-prompt.png)
 
+5. To clear the current session, select **More** \***, and then select **Clear session**.
+
+       ![Screenshot of the text box on the Copilot panel showing the Clear session button.](../media/content-understanding/copilot-clear-session.png)
+
 ## Current limitations
 
 - Copilot for Syntex currently works on Word (.docx), PowerPoint (.pptx), and text-readable .pdf file types. Additional file types will be added in the future.
