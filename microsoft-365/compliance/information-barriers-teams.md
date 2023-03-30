@@ -115,7 +115,7 @@ IB policies are activated when the following Teams events take place:
 
 - **A user places a phone call in Teams**: Whenever a user initiates a voice call (via VOIP) to another user or group of users, the call is evaluated to make sure that it doesn't violate the IB policies of other team members. If there's any violation, the voice call is blocked.
 
-- **Guests in Teams**: IB policies apply to guests in Teams, too. If guests need to be discoverable in your organization's global address list, see [Manage guest access in Microsoft 365 Groups](/microsoft-365/admin/create-groups/manage-guest-access-in-groups). Once guests are discoverable, you can [define IB policies](/office365/securitycompliance/information-barriers-policies).
+- **Guests in Teams**: IB policies apply to guests in Teams, too. If guests need to be discoverable in your organization's global address list, see [Manage guest access in Microsoft 365 Groups](/microsoft-365/admin/create-groups/manage-guest-access-in-groups). Once guests are discoverable, you can [define IB policies](information-barriers-policies.md).
 
 ## How policy changes impact existing chats
 
@@ -180,7 +180,7 @@ Currently, users experience the following scenarios if an IB policy blocks anoth
 
 ## Teams policies and SharePoint sites
 
-When a team is created, a SharePoint site is provisioned and associated with Microsoft Teams for the files experience. Information barrier policies aren't honored on this SharePoint site and files by default. To enable information barriers in SharePoint and OneDrive, follow the guidance and steps in the [Use information barriers with SharePoint](/sharepoint/information-barriers#enable-sharepoint-and-onedrive-information-barriers-in-your-organization) article.
+When a team is created, a SharePoint site is provisioned and associated with Microsoft Teams for the files experience. Information barrier policies aren't honored on this SharePoint site and files by default. To enable information barriers in SharePoint and OneDrive, follow the guidance and steps in the [Use information barriers with SharePoint](information-barriers-sharepoint.md#enable-sharepoint-and-onedrive-information-barriers-in-your-organization) article.
 
 ## Information  barrier modes and Teams
 
@@ -190,7 +190,7 @@ Information barriers modes help strengthen who can be added to or removed from a
 - **Implicit**: This configuration is the default IB mode when a Team is provisioned after enabling information barriers. Implicit mode allows you to add all compatible users in the group.
 - **Owner Moderated**: This mode is set on a team when you want to allow collaboration between incompatible segment users that are moderated by the owner. The team owner can add new members per their IB policy.
 
-Teams created before activating an information barrier policy in your tenant are automatically set to *Open* mode by default. Once you activate IB policies on your tenant, you're required to update mode of your existing teams to *Implicit* to ensure that existing teams are IB-compliant. For more information about updating modes, see [Change information barriers modes with a PowerShell script](/microsoft-365/compliance/information-barriers-mode-script).
+Teams created before activating an information barrier policy in your tenant are automatically set to *Open* mode by default. Once you activate IB policies on your tenant, you're required to update mode of your existing teams to *Implicit* to ensure that existing teams are IB-compliant. For more information about updating modes, see [Change information barriers modes with a PowerShell script](information-barriers-teams-powershell-script.md).
 
 Use the [Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup) cmdlet with the *InformationBarrierMode* parameter that corresponds to the mode you want to use for your segments. Allowed list of values for the *InformationBarrierMode* parameter are *Open*, *Implicit*, and *Owner Moderated*.
 
@@ -200,7 +200,7 @@ For example, to configure the *Implicit* mode for a Microsoft 365 Group, you'll 
 Set-UnifiedGroup -InformationBarrierMode Implicit
 ```
 
-To update the mode from *Open* to *Implicit* for all existing teams, use this [PowerShell script](/microsoft-365/compliance/information-barriers-mode-script.md).
+To update the mode from *Open* to *Implicit* for all existing teams, use this [PowerShell script](information-barriers-teams-powershell-script.md).
 
 If you change the *Open* mode configuration on existing Teams-connected groups to meet compliance requirements for your organization, you'll need to [update the IB modes]/microsoft-365/compliance/information-barriers-sharepoint#view-and-manage-ib-modes-as-an-administrator-with-sharepoint-powershell) for associated SharePoint sites connected to the Teams team.
 

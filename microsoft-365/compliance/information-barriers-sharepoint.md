@@ -143,7 +143,7 @@ In the above example, the HR segment is compatible with both Sales and Research.
 ## Prerequisites
 
 1. Make sure you meet the [licensing requirements for information barriers](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-barriers).
-2. [Create information barrier policies](/office365/securitycompliance/information-barriers-policies) that allow or block communication between the segments, and then set them to active. Create segments and define the users in each.
+2. [Create information barrier policies](information-barriers-policies.md) that allow or block communication between the segments, and then set them to active. Create segments and define the users in each.
 3. After you've configured and activated your information barrier policies, wait 24 hours for the changes to propagate through your organization.
 4. Complete the steps in the following sections to enable and manage SharePoint and OneDrive information barriers in your organization.
 

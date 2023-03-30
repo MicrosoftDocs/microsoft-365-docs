@@ -141,14 +141,14 @@ The following table shoes the effects of this example configuration:
 
 ## Enable SharePoint and OneDrive information barriers in your organization
 
-Enabling information barriers for SharePoint and OneDrive are configured in a single action. Information barriers for the services can't be enabled separately. To enable information barriers for OneDrive, see [Enable SharePoint and OneDrive information barriers in your organization](/microsoft-365/compliance/information-barriers-sharepoint#enable-sharepoint-and-onedrive-information-barriers-in-your-organization). After you've enabled information barriers for SharePoint and OneDrive, continue with the OneDrive guidance in this article.  
+Enabling information barriers for SharePoint and OneDrive are configured in a single action. Information barriers for the services can't be enabled separately. To enable information barriers for OneDrive, see [Enable SharePoint and OneDrive information barriers in your organization](information-barriers-sharepoint#enable-sharepoint-and-onedrive-information-barriers-in-your-organization). After you've enabled information barriers for SharePoint and OneDrive, continue with the OneDrive guidance in this article.  
 
 ## Prerequisites
 
 1. Make sure you meet the [licensing requirements for information barriers](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-barriers).
 2. [Create information barrier policies](/microsoft-365/compliance/information-barriers-policies) that allow or block communication between the segments and activate the policies. Create segments and define the users in each.
 3. After you've configured and activated your information barrier policies, wait 24 hours for the changes to propagate through your organization.
-4. Enable information barriers for OneDrive. Enabling information barriers for SharePoint and OneDrive are configured in a single action and these services can't be enabled separately. To enable information barriers for OneDrive, see the guidance and steps in the [Use information barriers with SharePoint](/microsoft-365/compliance/information-barriers-sharepoint) article.
+4. Enable information barriers for OneDrive. Enabling information barriers for SharePoint and OneDrive are configured in a single action and these services can't be enabled separately. To enable information barriers for OneDrive, see the guidance and steps in the [Use information barriers with SharePoint](information-barriers-sharepoint) article.
 5. Complete the steps in the following sections to customize and manage information barriers for OneDrive in your organization.
 
 ## Use PowerShell to view the segments associated with a OneDrive
@@ -174,7 +174,7 @@ A global or SharePoint admin can view and change the segments associated with a 
     | Research | 27d20a85-1c1b-4af2-bf45-a41093b5d111 |
     | HR | a17efb47-e3c9-4d85-a188-1cd59c83de32 |
 
-4. If not previously completed, [download](https://go.microsoft.com/fwlink/p/?LinkId=255251) and install the latest SharePoint Online Management Shell. If you installed a previous version of the SharePoint Online Management Shell, follow the instructions in the [Enable SharePoint and OneDrive information barriers in your organization](/microsoft-365/compliance/information-barriers-sharepoint#enable-sharepoint-and-onedrive-information-barriers-in-your-organization) article.
+4. If not previously completed, [download](https://go.microsoft.com/fwlink/p/?LinkId=255251) and install the latest SharePoint Online Management Shell. If you installed a previous version of the SharePoint Online Management Shell, follow the instructions in the [Enable SharePoint and OneDrive information barriers in your organization](information-barriers-sharepoint#enable-sharepoint-and-onedrive-information-barriers-in-your-organization) article.
 
 5. Connect to SharePoint as a [global admin or SharePoint admin](/sharepoint/sharepoint-admin-role) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
