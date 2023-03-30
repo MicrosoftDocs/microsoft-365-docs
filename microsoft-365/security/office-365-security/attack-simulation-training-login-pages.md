@@ -72,7 +72,7 @@ When you select a login page from the list by clicking anywhere in the row other
    > [!NOTE]
    > At any point after you name the login page during the new login page wizard, you can click **Save and close** to save your progress and continue later. The incomplete login page has the **Status** value **Draft**. You can pick up where you left off by selecting the login page from the list and then clicking the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
    >
-   > You can also create landing pages during the creation of simulations or simulation automations. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page) and [Create a simulation automation: Select payloads and login pages](attack-simulation-training-simulation-automations.md#select-payloads-and-login-pages).
+   > You can also create login pages during the creation of simulations or simulation automations. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page) and [Create a simulation automation: Select payloads and login pages](attack-simulation-training-simulation-automations.md#select-payloads-and-login-pages).
 
 3. On the **Define details for login page** page, configure the following settings:
    - **Name**: Enter a unique name.
