@@ -1189,7 +1189,7 @@
             href: dlp-on-premises-scanner-learn.md
           - name: Learn about the Microsoft Purview Chrome Extension
             href: dlp-chrome-learn-about.md
-          - name: Learn about the Microsoft Purview Firefox Extension (preview)
+          - name: Learn about the Microsoft Purview Firefox Extension
             href: dlp-firefox-extension-learn.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
@@ -1456,7 +1456,7 @@
           href: ediscovery-search-for-content.md
         - name: Export content from a case
           href: ediscovery-export-content.md
-        - name: Close, reopen, and delete a case
+        - name: Upgrade (preview), close, reopen, or delete a case
           href: ediscovery-close-reopen-delete-cases.md
         - name: eDiscovery (Standard) reference
           items:
