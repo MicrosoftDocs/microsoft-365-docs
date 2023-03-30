@@ -40,7 +40,7 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
 
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
-Onboarding a macOS device into Compliance solutions is a multi phase process.
+Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 ### Download the configuration files
 
