@@ -64,8 +64,6 @@ For mobile devices, modern authentication-capable Exchange ActiveSync clients th
 
 To block Exchange ActiveSync using basic authentication on other devices, follow the steps in [Block Exchange ActiveSync on all devices](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices), which prevents Exchange ActiveSync clients using basic authentication on non-mobile devices from connecting to Exchange Online.
 
-You can also use authentication policies to [disable Basic authentication](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), which forces all client access requests to use modern authentication.
-
 ## Limit access to Exchange Online from Outlook on the web
 
 You can restrict the ability for users to download attachments from Outlook on the web on unmanaged devices. Users on these devices can view and edit these files using Office Online without leaking and storing the files on the device. You can also block users from seeing attachments on an unmanaged device.
