@@ -242,6 +242,8 @@
            href: attack-simulation-training-insights.md
          - name: Attack simulation training deployment considerations and FAQ
            href: attack-simulation-training-faq.md
+         - name: Microsoft Teams in Attack simulation training
+           href: attack-simulation-training-teams.md
        - name: Advanced delivery policies
          items:
          - name: Configure advanced delivery policies
