@@ -95,11 +95,11 @@ Teams introduces the following changes to viewing and creating simulation automa
 
   - On the **[Select social engineering techniques](attack-simulation-training-simulation-automations.md#select-one-or-more-social-engineering-techniques)** page, the **Malware Attachment** and **Link in Attachment** social engineering techniques are not available for Teams.
 
-  - On the **[Select payloads and login page](attack-simulation-training-simulation-automations.md#select-payloads-and-login-pages)**, no payloads are listed by default because there are no built-in payloads for Teams. You might need to create a payload for the combination of Teams and the social engineering techniques that you selected.
+  - On the **[Select payloads and login page](attack-simulation-training-simulation-automations.md#select-payloads-and-login-pages)** page, no payloads are listed by default because there are no built-in payloads for Teams. You might need to create a payload for the combination of Teams and the social engineering techniques that you selected.
 
     The differences in creating payloads for Teams are described in the [Changes in payloads for Microsoft Teams](#changes-in-payloads-for-microsoft-teams) section in this article.
 
-  - On the *[*Target users](attack-simulation-training-simulation-automations.md#target-users)** page, the following settings are different for Teams:
+  - On the **[Target users](attack-simulation-training-simulation-automations.md#target-users)** page, the following settings are different for Teams:
     - As noted on the page, simulation automations that use Teams can target a maximum of 1000 users.
     - if you select **Include only specific users and groups**, **City** is not an available filter in the **Filter users by category** section.
 
