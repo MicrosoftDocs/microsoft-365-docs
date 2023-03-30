@@ -40,7 +40,7 @@ Copilot for Syntex analyzes the text of a selected file in a SharePoint document
 
 4. On the **Copilot** panel, you can:
 
-    - Select one of the questions Copilot generated for you.
+    - Select one of the questions Copilot has generated for you.
 
        ![Screenshot of the generated questions on the Copilot panel.](../media/content-understanding/copilot-generated-questions.png)
 
@@ -53,7 +53,7 @@ Copilot for Syntex analyzes the text of a selected file in a SharePoint document
        ![Screenshot of the text box on the Copilot panel with the starter prompt highlighted.](../media/content-understanding/copilot-starter-prompt.png)
 
 > [!NOTE]
-> If you want too clear the current session, at the top of the **Copilot** panel, select **More** (\***), and then select **Clear session**.
+> If you want too clear the current session, at the top of the **Copilot** panel, select **More options** (\***), and then select **Clear session**.
 
 ## Current limitations
 
