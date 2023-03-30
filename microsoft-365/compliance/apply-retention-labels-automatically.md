@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 03/27/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -171,12 +171,13 @@ Or, you can automatically apply retention labels to newly shared [cloud attachme
 
 When you configure retention labels to auto-apply based on sensitive information, keywords or searchable properties, or trainable classifiers, use the following table to identify when retention labels can be automatically applied.
 
+SharePoint items that are in draft or that have never been published aren't supported for this scenario.
+
 Exchange:
 
 |Condition|Items in transit (sent or received) |Existing items (data at rest)|
 |:-----|:-----|:-----|
-|Sensitive info types - built-in| Yes | No |
-|Sensitive info types - custom| Yes | No |
+|Sensitive info types | Yes | No |
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
@@ -184,25 +185,27 @@ SharePoint and OneDrive:
 
 |Condition|New or modified items |Existing items |
 |:-----|:-----|:-----|
-|Sensitive info types - built-in| Yes | Yes |
-|Sensitive info types - custom| Yes | No |
+|Sensitive info types | Yes | Yes <sup>\*</sup> |
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
-Additionally, SharePoint items that are in draft or that have never been published aren't supported for this scenario.
+**Footnote:**
+
+<sup>\*</sup>
+Applies only to content that's already classified, which you can  determine by using [content explorer](data-classification-content-explorer.md).
 
 #### Auto-apply labels to content with specific types of sensitive information
 
 > [!IMPORTANT]
-> For emails that you auto-apply by identifying sensitive information, all mailboxes are automatically included, which includes mailboxes from Microsoft 365 groups. By default, the **Exchange email** location isn't selected for adaptive scopes when you have this configuration. Even if you can select the location, retention labels won't apply to the Exchange items.
+> For emails that you auto-apply by identifying sensitive information, all mailboxes are automatically included, which includes mailboxes from Microsoft 365 groups. By default, the **Exchange mailboxes** location isn't selected for adaptive scopes when you have this configuration. Even if you can select the location, retention labels won't apply to the Exchange items.
 >
-> Although group mailboxes would usually be included by selecting the **Microsoft 365 Groups** location, for this specific policy configuration, the groups location includes only SharePoint sites connected to a Microsoft 365 group.
+> Although group mailboxes would usually be included by selecting the **Microsoft 365 Group mailboxes & sites** location, for this specific policy configuration, the groups location includes only SharePoint sites connected to a Microsoft 365 group.
 
 When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a Microsoft Purview Data Loss Prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. In the following example, the sensitive info types are from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
 
 ![Policy templates with sensitive information types.](../media/sensitive-info-configuration.png)
 
-To learn more about the sensitivity information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Currently, [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) and [document fingerprinting](document-fingerprinting.md) aren't supported for this scenario.
+To learn more about the sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Currently, [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) and [document fingerprinting](document-fingerprinting.md) aren't supported for this scenario.
 
 After you select a policy template, you can add or remove any types of sensitive information, and you can change the confidence level and instance count. In the previous example screenshot, these options have been changed so that a retention label will be auto-applied only when:
 

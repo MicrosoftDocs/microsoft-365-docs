@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 01/23/2023
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
 - m365solution-overview
