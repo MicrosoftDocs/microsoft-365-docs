@@ -37,7 +37,7 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 - Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Make sure you have access to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home)
 - This supports the three latest released macOS versions.
-- OPTIONAL: Install the v95+ Edge browser on your macOS devices. If you have one or more policies that detect when content is being uploaded or otherwise interacting with a prohibited website, Edge can automatically detect this and apply the actions defined in the policy.
+- OPTIONAL: Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
 
 ## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 
