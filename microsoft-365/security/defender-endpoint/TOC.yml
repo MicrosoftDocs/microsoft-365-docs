@@ -34,8 +34,6 @@
       href: preview.md
     - name: Data storage and privacy
       href: data-storage-privacy.md
-    - name: Overview of Microsoft Defender Security Center
-      href: use.md
     - name: Defender for Endpoint Plan 1
       items:
       - name: Overview
@@ -337,7 +335,7 @@
         items:
         - name: Use basic permissions to access the portal
           href: basic-permissions.md
-        - name: Assign user access to Microsoft Defender Security Center
+        - name: Assign user access to the portal
           href: assign-portal-access.md
         - name: Manage portal access using RBAC
           href: rbac.md
@@ -381,7 +379,7 @@
           href: configure-machines-onboarding.md
 
 
-      - name: Configure Microsoft Defender Security Center time zone settings
+      - name: Configure time zone settings
         href: time-settings.md
 
   - name: Detect threats and protect endpoints
