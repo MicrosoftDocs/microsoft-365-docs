@@ -49,7 +49,7 @@
           href: ../business-premium/m365bp-secure-windows-devices.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
         - name: Download software and product keys
           href: setup/download-software-licenses-csp.md
-        - name: Install Office apps
+        - name: Install Microsoft 365 apps
           href: setup/install-applications.md
         - name: Set up windows devices
           href: /microsoft-365/business-premium/m365bp-set-up-windows-devices

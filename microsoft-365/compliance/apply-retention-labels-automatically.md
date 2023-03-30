@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 03/30/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -171,12 +171,13 @@ Or, you can automatically apply retention labels to newly shared [cloud attachme
 
 When you configure retention labels to auto-apply based on sensitive information, keywords or searchable properties, or trainable classifiers, use the following table to identify when retention labels can be automatically applied.
 
+SharePoint items that are in draft or that have never been published aren't supported for this scenario.
+
 Exchange:
 
 |Condition|Items in transit (sent or received) |Existing items (data at rest)|
 |:-----|:-----|:-----|
-|Sensitive info types - built-in| Yes | No |
-|Sensitive info types - custom| Yes | No |
+|Sensitive info types | Yes | No |
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
@@ -184,12 +185,14 @@ SharePoint and OneDrive:
 
 |Condition|New or modified items |Existing items |
 |:-----|:-----|:-----|
-|Sensitive info types - built-in| Yes | Yes |
-|Sensitive info types - custom| Yes | No |
+|Sensitive info types | Yes | Yes <sup>\*</sup> |
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
-Additionally, SharePoint items that are in draft or that have never been published aren't supported for this scenario.
+**Footnote:**
+
+<sup>\*</sup>
+Applies only to content that's already classified, which you can  determine by using [content explorer](data-classification-content-explorer.md).
 
 #### Auto-apply labels to content with specific types of sensitive information
 
@@ -352,7 +355,7 @@ You might need to use this option if you're required to capture and retain all c
 > [!IMPORTANT]
 > When you select a label to use for auto-applying retention labels for cloud attachments, ensure that the label retention setting **Start the retention period based on** is **When items were labeled**.
 
-Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. However, URL text links are also now supported. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) and [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
+Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. However, support for URL text links are also now gradually rolling out. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) and [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
 
 When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be [identified using eDiscovery](ediscovery-cloud-attachments.md). Users aren't aware of the copy that is stored in the Preservation Hold library. The retention label isn't applied to the message itself, or to the original file.
 

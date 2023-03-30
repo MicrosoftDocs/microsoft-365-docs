@@ -1,16 +1,12 @@
 ---
 title: Specify the cloud protection level for Microsoft Defender Antivirus
 description: Set your level of cloud protection for Microsoft Defender Antivirus.
-keywords: Microsoft Defender Antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
-ms.pagetype: security
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 author: denisebmsft
 ms.author: deniseb
-ms.date: 08/26/2021
+ms.date: 03/28/2023
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
@@ -32,7 +28,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-Cloud protection works together with Microsoft Defender Antivirus to deliver protection to your endpoints much faster than through traditional security intelligence updates. You can configure your level of cloud protection by using Microsoft Intune (recommended) or Group Policy.
+Cloud protection works together with Microsoft Defender Antivirus to deliver protection to your devices faster than through traditional security intelligence updates. You can configure your level of cloud protection by using Microsoft Intune (recommended) or Group Policy.
 
 > [!NOTE]
 > Selecting **High**, **High +**, or **Zero tolerance** could cause some legitimate files to be detected. If that happens, you can unblock the detected file or dispute that detection in the Microsoft 365 Defender portal.
@@ -68,36 +64,31 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
 
 2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-3. In the **Group Policy Management Editor** go to **Computer Configuration** \> **Administrative templates**.
+3. In the **Group Policy Management Editor**, go to **Computer Configuration** \> **Administrative templates**.
 
 4. Expand the tree to **Windows Components** \> **Microsoft Defender Antivirus** \> **MpEngine**.
 
-5. Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:
+5. Double-click the **Select cloud protection level** setting, and set it to **Enabled**. 
 
-    - **Not configured**: Default state.
+6. Under **Select cloud blocking level**, set the level of protection:
+
     - **Default blocking level** provides strong detection without increasing the risk of detecting legitimate files.
     - **Moderate blocking level** provides moderate only for high confidence detections
     - **High blocking level** applies a strong level of detection while optimizing client performance (but can also give you a greater chance of false positives).
     - **High + blocking level** applies extra protection measures (might affect client performance and increase your chance of false positives).
     - **Zero tolerance blocking level** blocks all unknown executables.
 
-6. Select **OK**.
+    > [!CAUTION]
+    > If you're using [Resultant Set of Policy with Group Policy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn789183(v=ws.11)) (RSOP), and **Default blocking level** is selected, it can produce misleading results, as a setting with a `0` value is read as disabled by RSOP. You can instead confirm the registry key is present in `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\MpEngine` or use [GPresult](/windows-server/administration/windows-commands/gpresult).
 
-7. Deploy your updated Group Policy Object. See [Group Policy Management Console](/windows/win32/srvnodes/group-policy)
+7. Select **OK**.
+
+8. Deploy your updated Group Policy Object. See [Group Policy Management Console](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
 > Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Intune](/mem/intune/configuration/group-policy-analytics).
 
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
-  
 ## See also
 
-[Why cloud protection should be enabled for Microsoft Defender Antivirus](why-cloud-protection-should-be-on-mdav.md)
+- [Why cloud protection should be enabled for Microsoft Defender Antivirus](why-cloud-protection-should-be-on-mdav.md)
+- [Onboard non-Windows devices to Defender for Endpoint](configure-endpoints-non-windows.md)
