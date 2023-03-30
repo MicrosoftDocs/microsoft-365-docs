@@ -122,5 +122,5 @@ If a OneDrive is noncompliant, this report lets you update the OneDrive to be co
     `FailedToBeProcessed: False`<br>
 
 > [!NOTE]
-> For info about removing incompatible segments, see [Use information barriers with SharePoint](information-barriers.md#2-use-sharepoint-powershell-to-view-and-manage-information-segments-on-a-site). When you're done with a report, you can delete it by using `Remove-SPOInformationBarriersPolicyComplianceReport -reportid <>`.
+> For info about removing incompatible segments, see [Use information barriers with SharePoint](information-barriers-sharepoint.md#2-use-sharepoint-powershell-to-view-and-manage-information-segments-on-a-site). When you're done with a report, you can delete it by using `Remove-SPOInformationBarriersPolicyComplianceReport -reportid <>`.
 
