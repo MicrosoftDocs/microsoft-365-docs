@@ -200,7 +200,7 @@ For example, to configure the *Implicit* mode for a Microsoft 365 Group, you'll 
 Set-UnifiedGroup -InformationBarrierMode Implicit
 ```
 
-To update the mode from *Open* to *Implicit* for all existing teams, use this [PowerShell script](/microsoftteams/information-barriers-mode-script.md).
+To update the mode from *Open* to *Implicit* for all existing teams, use this [PowerShell script](/microsoft-365/compliance/information-barriers-mode-script.md).
 
 If you change the *Open* mode configuration on existing Teams-connected groups to meet compliance requirements for your organization, you'll need to [update the IB modes](/sharepoint/information-barriers#view-and-manage-ib-modes-as-an-administrator-with-sharepoint-powershell) for associated SharePoint sites connected to the Teams team.
 
