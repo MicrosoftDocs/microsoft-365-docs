@@ -37,7 +37,7 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 - Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Make sure you have access to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home)
 - This supports the three latest released macOS versions.
-- Install the v95+ Edge browser on your macOS devices 
+- OPTIONAL: Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
 
 ## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 
@@ -89,7 +89,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 
 1. A Full Disk Access configuration profile should have been previously created and deployed for MDE.  See, [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access). Endpoint DLP requires an additional Full Disk Access permission for a new application: `com.microsoft.dlp.daemon`. 
-    1. Update the existing Fullfull Disk Access configuration profile with the fulldisk.mobileconfig file. 
+    1. Update the existing Full Disk Access configuration profile with the fulldisk.mobileconfig file. 
 
 
 1. Find the existing MDE Preferences configuration profile. See, [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences#intune-full-profile)
