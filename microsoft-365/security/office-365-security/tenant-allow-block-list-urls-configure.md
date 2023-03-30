@@ -129,7 +129,7 @@ For instructions, see [Submit good URLs to Microsoft](submissions-admin.md#repor
 >
 > Microsoft manages the allow entry creation process for URLs from the Submissions page. We'll create allow entries for URLs that were determined to be malicious by our filters during mail flow or at time of click.
 >
-> We allow subsequent messages that contain variations of the original URL. For example, you use the Submissions page to report the incorrectly blocked URL `www.contoso.com/abc`. If your organization later receives a message that contains the URL `www.contoso.com/abc?id=5`, the message won't be blocked based on the URL. In other words, you don't need to report multiple variations of the same URL as good to Microsoft.
+> We allow subsequent messages that contain variations of the original URL. For example, you use the Submissions page to report the incorrectly blocked URL `www.contoso.com/abc`. If your organization later receives a message that contains the URL (for example but not limited to: `www.contoso.com/abc`, `www.contoso.com/abc?id=1`, `www.contoso.com/abc/def/gty/uyt?id=5`, or `*.contoso.com/abc`), the message won't be blocked based on the URL. In other words, you don't need to report multiple variations of the same URL as good to Microsoft.
 >
 > When the URL is encountered again, all filters associated with the URL are overridden.
 >
