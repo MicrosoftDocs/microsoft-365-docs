@@ -260,7 +260,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 1. Open **System Preferences** > **Profiles**.
 
 1. You should see:
-    - Accessiblity
+    - Accessibility
     - Full Disk Access
     - MAU
     - MDATP Onboarding
