@@ -93,7 +93,7 @@ On the **Select payloads and login page** page, you need to select an existing p
 
 For the **Credential Harvest** or **Link in Attachment** social engineering techniques, you can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
 
-### Select a payload
+### Select payloads
 
 On the **Select payloads and login page** page, select one of the following options:
 
@@ -145,7 +145,7 @@ If you select a payload from the list by clicking anywhere in the row other than
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
-### Select a login page
+### Select login pages
 
 > [!NOTE]
 > The **Login page** tab is available only in the details flyout of **Credential Harvest** or **Link in Attachment** payloads.
@@ -680,7 +680,7 @@ The **Randomize** option on the [Simulation schedule](#simulation-schedule) page
 
 ### How does the Randomize option on the Select a payload and login page work?
 
-The **Randomize** option on the [Select a payload and login page](#select-a-payload-and-login-page) works as follows:
+The **Randomize** option on the [Select payloads and login pages](#select-payloads-and-login-pages) page works as follows:
 
 For every run, a social engineering technique from the list of selected techniques is chosen, and then a random payload for that technique will be chosen from both **Global payloads** (built-in) and **Tenant payloads** (custom). This behavior helps to ensure that the selected payload wasn't part of any previous run for this particular automation.
 
