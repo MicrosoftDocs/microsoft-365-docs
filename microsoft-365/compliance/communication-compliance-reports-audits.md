@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/09/2023
+ms.date: 03/31/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -116,31 +116,36 @@ To create a new message details report, complete the following steps:
 6. Select **Create**.
 7. The report creation confirmation is displayed.
 
-Depending on the number of items in the report, it can take a few minutes to hours before the report is ready to be downloaded. You can check progress on the Message details reports tab. Report status is *In progress* or *Ready to download*. You can have up to 15 separate reports processing simultaneously. To download a report, select a report in the *Ready to download* state and select **Download report**.
+Depending on the number of items in the report, it can take a few minutes to hours before the report is ready to be downloaded. You can check progress on the **Message details reports** tab. Report status is *In progress* or *Ready to download*. You can have up to 15 separate reports processing simultaneously. To download a report, select a report in the *Ready to download* state and select **Download report**.
 
 > [!NOTE]
 > If your selected time period doesn't return any message results in the report, there were not any messages for the selected time period. The report will be blank.
 
 Message details reports contain the following information for each message item in the policy:
 
-- **Match ID**: Unique ID for the message in the policy.
+- **Match ID**: Unique ID for a copy of the message in communication compliance.
+- **Internet Message ID**: Unique ID for the message across platforms.
+- **Conversation Family ID**: Thread ID for the message.
 - **Sender**: Sender of the message.
 - **Recipients**: Recipients included for the message.
 - **Date Sent**: Date the message was sent.
 - **Match Date**: Date the message was a match for the policy conditions.
+- **Location**: Channel that the message was sent on. This can be Exchange Online, Teams, Yammer, or any third-party channel supported by communication compliance. 
 - **Subject**: Subject of the message.
 - **Contains Attachments**: Status of any attachments for the message. Values are either *Yes* or *No*.
 - **Policy Name**: Name of the policy associated with the message. This value will be the same for all messages in the report.
 - **Item Status**: Status of the message item in the policy. Values are *Pending* or *Resolved*.
 - **Tags**: Tags assigned to the message. Values are *Questionable, Compliant*, or *Non-compliant*.
 - **Keyword Matches**: Keyword matches for the message.
+- **Trainable Classifier ID**: ID of the trainable classifier that was matched.
+- **Trainable Classifier Name and Keywords**: The name of the trainable classifier and the keywords that were matched.
 - **Reviewers**: Reviewers assigned to message.
 - **Pending for (days)**: Number of days the message has been in a pending state. For resolved messages, the value is 0.
-- **Comment for resolved**: Comments for the message entered when resolved.
+- **Comment for Resolved**: Comments for the message entered when resolved.
 - **Resolved Date**: Date and Coordinated Universal Time (UTC) the message was resolved.
 - **Last Updated By**: User name of the last updater.
 - **Last Updated On**: Date and Coordinated Universal Time (UTC) the message was last updated.
-- **History of comments**: List of all comments for the message alert, including comment author and date and Coordinated Universal Time (UTC) of the comment.
+- **History of Comments**: List of all comments for the message alert, including comment author and date and Coordinated Universal Time (UTC) of the comment.
 
 ## Audit
 
