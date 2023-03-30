@@ -121,9 +121,9 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 }
 ```
 
-## Example response to adding a new scan
+## Example response
 
-Here's an example of a response to adding a new scan.
+Here's an example of the response.
 
 ```json
  {
@@ -176,28 +176,48 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 Here's an example of a request that updates a scan.
 
 ```http
-PATCH https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/a07c400a-f8e1-4329-ae66-7d3be65df0ec
-
+PATCH  https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/289224fb-1686-472c-9751-5555960854ca 
 ```
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#DeviceAuthenticatedScanDefinitions/$entity",
-    "id": "6c98c96f-1ac5-4301-80ec-3544db991b07",
+"scanName": "Test Update Windows scan", 
+"isActive": false, 
+"target": "127.0.0.2,127.0.0.3", 
+"intervalInHours": 1, 
+"targetType": "Ip",
+"scanAuthenticationParams": { 
+    "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams", 
+    "type": "Kerberos", 
+    "username": "username", 
+    "domain": "password",
+    "isGmsaUser": true
+    }
+ }
+
+```
+
+## Response example
+
+Here's an example of the response.
+
+```json
+{
+    "@odata.context": "https://localhost:1059/api/$metadata#DeviceAuthenticatedScanDefinitions/$entity",
+    "id": "289224fb-1686-472c-9751-5555960854ca",
     "scanType": "Windows",
     "scanName": "Test Update Windows scan",
-    "isActive": true,
-    "target": "127.0.0.1,127.0.0.2",
+    "isActive": false,
+    "target": "127.0.0.2,127.0.0.3",
     "orgId": "d7c7c745-195f-4223-9c7a-99fb420fd000",
     "intervalInHours": 1,
-    "createdBy": "test@contoso.com",
+    "createdBy": "userName@microsoft.com",
     "targetType": "Ip",
-    "isTroubleshootMode": true,
     "scanAuthenticationParams": null,
     "scannerAgent": {
-        "id": "d7c7c745-195f-4223-9c7a-99fb420fd000_625431694b7d2ca9d07e77ca1b029ef216bebb6d",
-        "machineId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d",
-        "machineName": "SCNR-WIN11-D",
+        "id": "d7c7c745-195f-4223-9c7a-99fb420fd000_eb663a27ae9d032f61bc268a79eedf14c4b90f77",
+        "machineId": "eb663a27ae9d032f61bc268a79eedf14c4b90f77",
+        "machineName": "DESKTOP-TEST",
         "lastSeen": "2023-01-04T09:40:03.2787058Z",
         "assignedApplicationId": "ae4a5cde-b4a1-4b76-8635-458b2cf15752",
         "scannerSoftwareVersion": "7.6.0.0",
