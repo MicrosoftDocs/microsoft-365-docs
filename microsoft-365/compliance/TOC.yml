@@ -308,6 +308,8 @@
               href: information-barriers-teams.md
             - name: Microsoft Teams shared channels and information barriers
               href: information-barriers-teams-shared-channels.md
+            - name: Microsoft Teams PowerShell script and information barriers
+              href: information-barriers-teams-powershell-script.md
             - name: OneDrive and information barriers
               href: information-barriers-onedrive.md
             - name: SharePoint and information barriers
