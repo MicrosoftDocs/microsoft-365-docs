@@ -226,7 +226,7 @@ For more information on licenses and permissions, plans, and pricing, see [Micro
 ## More information
 
 - To learn more about IBs, see [Information barriers](/microsoft-365/compliance/information-barriers).
-- To set up IB policies, see [Get started with information barriers](/office365/securitycompliance/information-barriers-policies).
+- To set up IB policies, see [Get started with information barriers](/microsoft-365/compliance/information-barriers-policies).
 - To edit or remove IB policies, see [Manage information barrier policies](information-barriers-edit-segments-policies.md).
 - [Information barriers and shared channels](information-barriers-teams-shared-channels.md)
 
