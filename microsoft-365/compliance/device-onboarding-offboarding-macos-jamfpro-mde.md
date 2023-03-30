@@ -93,7 +93,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 1. Open **System Preferences** > **Profiles**.
 
 1. You should see:
-    - Accessiblity
+    - Accessibility
     - Full Disk Access
     - Kernel Extension Profile
     - MAU
