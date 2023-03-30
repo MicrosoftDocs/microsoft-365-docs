@@ -42,7 +42,7 @@ With the increased use of collaboration tools like Microsoft Teams, the possibil
 
 The **Teams Message Entity Panel** is one single place to store all of Teams message metadata that will allow for immediate SecOps review. Any threat coming from chats, group or meeting chats, and other channels can be found in one place as soon as it is assessed. For more information, see [Teams Message Entity Panel for Microsoft Teams](teams-message-entity-panel.md).
 
-- **Attack Simulation and Training**: In order to ensure your users are resilient to phishing attacks in Microsoft Teams, admins can configure phishing simulations in Teams similar to how they do so in email. For more information, see [Training campaigns in Attack simulation training](attack-simulation-training-training-campaigns.md).
+- **Attack Simulation and Training**: In order to ensure your users are resilient to phishing attacks in Microsoft Teams, admins can configure phishing simulations in Teams similar to how they do so in email. For more information, see [Microsoft Teams in Attack simulation training](attack-simulation-training-teams.md).
 
 ## Enable Microsoft Defender for Teams
 
