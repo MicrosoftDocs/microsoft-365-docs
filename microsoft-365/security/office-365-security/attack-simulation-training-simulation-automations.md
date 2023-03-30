@@ -87,7 +87,7 @@ If you click the **View details** link in the description, a details flyout open
 
 When you're finished on the **Select social engineering techniques** page, click **Next**.
 
-## Select a payload and login page
+## Select payloads and login pages
 
 On the **Select payloads and login page** page, you need to select an existing payload from the list, or create a new payload.
 
