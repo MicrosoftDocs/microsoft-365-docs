@@ -34,8 +34,6 @@ ms.date: 03/31/2023
 **Applies to:**
 - Microsoft 365 Defender
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
 Microsoft 365 Defender deployment guides give you tailored guidance and resources for planning and deploying your tenant, apps, and services. 
 
 All deployment guides are available in the Microsoft 365 admin center as described in the section below, and most guides can also be found in the Microsoft 365 Setup portal.
