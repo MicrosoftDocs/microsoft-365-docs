@@ -33,11 +33,11 @@ These service advisories are displayed in the Microsoft 365 admin center. To vie
 
 This service advisory informs you of potential data storage limits being reached in your organization. Mailboxes with archive mailboxes that have the auto-expanding archive feature enabled may store a maximum of 1.5 TB of data in the auto-expanding archive. The service advisory contains a link under "User Impact" that shows a flyout window listing impacted mailbox GUIDs for your tenant.
 
-:::image type="content" alt-text="Auto-expanding archive alert details page." source="../media/auto-expand-archive-extended-details.png" lightbox="../../media/auto-expand-archive-extended-details.png":::
+:::image type="content" alt-text="Auto-expanding archive alert details page." source="../media/auto-expand-archive-extended-details.png" lightbox="../media/auto-expand-archive-extended-details.png":::
 
 Here is an example of the flyout:
 
-:::image type="content" alt-text="Auto-expanding archive alert flyout extended view." source="../media/auto-expand-archive-flyout.png" lightbox="../../media/auto-expand-archive-flyout.png":::
+:::image type="content" alt-text="Auto-expanding archive alert flyout extended view." source="../media/auto-expand-archive-flyout.png" lightbox="../media/auto-expand-archive-flyout.png":::
 
 The following list describes each column in the previous example.
 
