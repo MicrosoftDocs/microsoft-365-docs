@@ -292,7 +292,7 @@ Example 2: User's segment updated from HR to None, the user's OneDrive will be a
 
 If a compliance administrator changes an existing policy, the change may impact the compatibility of the segments associated with the OneDrive.
 
-For example, segments that were once compatible may no longer be compatible. A SharePoint admin must change the segments associated with an affected site accordingly. Learn how to create an [information barriers policy compliance report in PowerShell](/sharepoint/info-barriers-report).
+For example, segments that were once compatible may no longer be compatible. A SharePoint admin must change the segments associated with an affected site accordingly. Learn how to create an [information barriers policy compliance report in PowerShell](information-barriers-sharepoint-report.md).
 
 If a policy changes after files are shared, the sharing links will work only if the user attempting to access the shared files has a segment applied that matches a segment associated with the OneDrive.
 
@@ -312,6 +312,6 @@ For more information about OneDrive segment auditing in Office 365, see [Search 
 
 ## Resources
 
-- [Information barriers in Microsoft Teams](/microsoftteams/information-barriers-in-teams)
-- [Information barriers in SharePoint](/sharepoint/information-barriers)
+- [Information barriers in Microsoft Teams](information-barriers-teams.md)
+- [Information barriers in SharePoint](information-barriers-sharepoint.md)
 

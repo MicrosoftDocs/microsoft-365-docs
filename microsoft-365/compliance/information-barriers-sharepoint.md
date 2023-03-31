@@ -152,7 +152,7 @@ In the above example, the HR segment is compatible with both Sales and Research.
 SharePoint Administrators or Global Administrators can enable information barriers in SharePoint and OneDrive in your organization. Complete the following steps to enable information barriers for your organization:
 
 1. [Download](https://go.microsoft.com/fwlink/p/?LinkId=255251) and install the latest version of SharePoint Online Management Shell.
-2. Connect to SharePoint Online as a Global Administrator or [SharePoint Administrator](/sharepoint/sharepointonline/sharepoint-admin-role.md) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+2. Connect to SharePoint Online as a Global Administrator or [SharePoint Administrator](/sharepoint/sharepoint-admin-role.md) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 3. To enable information barriers in SharePoint and OneDrive, run the following command:
 
     ```PowerShell
