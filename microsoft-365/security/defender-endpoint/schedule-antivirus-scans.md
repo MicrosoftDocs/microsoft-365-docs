@@ -36,6 +36,7 @@ You can set up regular, scheduled antivirus scans on devices. These scheduled sc
 ## What do you want to do?
 
 - [Learn about quick scans, full scans, and custom scans](#quick-scan-full-scan-and-custom-scan)
+- [Get an overview of scheduled quick scan performance optimization](#scheduled-quick-scan-performance-optimization)
 - [Use Group Policy to schedule antivirus scans](schedule-antivirus-scans-group-policy.md)
 - [Use Windows PowerShell to Schedule antivirus scans](schedule-antivirus-scans-powershell.md)
 - [Use Windows Management Instrumentation to schedule antivirus scans](schedule-antivirus-scans-wmi.md)
@@ -71,25 +72,23 @@ Use the following table to choose a scan type.
 |Threats, such as malware, are detected on an individual device|Quick scan <br/><br/> In most cases, a quick scan will catch and clean up detected malware.|
 |You want to run an [on-demand scan](run-scan-microsoft-defender-antivirus.md)|Quick scan|
 |You want to make sure a portable device, such as a USB drive, doesn't contain malware|Custom scan <br/><br/> A custom scan enables you to select specific locations, folders, or files, and runs a quick scan.|
-| You have just installed or re-enabled Microsoft Defender Antivirus | Quick scan or full scan <br/><br/>Running a full scan after you've just enabled or installed Microsoft Defender Antivirus helps populate the cache for future scans. The full scan can also help detect existing threats on the device. |
+| You have just installed or re-enabled Microsoft Defender Antivirus | Quick scan or full scan <br/><br/>A quick scan checks the processes, memory, profiles, and certain locations on the device. If you prefer to run a full scan after you've just enabled or installed Microsoft Defender Antivirus, it can help populate the cache for future scans. The full scan can also help detect existing threats on the device. Just keep in mind it can take a while to run a full scan. |
 
 ## What else do I need to know about quick and full scans?
 
-- Malicious files can be stored in locations that aren't included in a quick scan. However, always-on real-time protection reviews all files that are opened and closed, and any files that are in folders that are accessed by a user. The combination of real-time protection and a quick scan helps provide strong protection against malware.
+- Malicious files can be stored in locations that aren't included in a quick scan. However, [always-on, real-time protection](configure-protection-features-microsoft-defender-antivirus.md) reviews all files that are opened and closed, and any files that are in folders that are accessed by a user. The combination of real-time protection and a quick scan helps provide strong protection against malware.
 
 - On-access protection with [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) helps ensure that all the files accessed on the system are being scanned with the latest security intelligence and cloud machine learning models.
 
 - When real-time protection detects malware and the extent of the affected files isn't determined initially, Microsoft Defender Antivirus initiates a full scan as part of the remediation process.
 
-- A full scan can detect malicious files that weren't detected by other scans, such as a quick scan. However, a full scan can take a while and use valuable system resources to complete.
-
 - If a device is offline for an extended period of time, a full scan can take longer to complete.
 
-## Scheduled Quick Scan Performance Optimization 
+## Scheduled quick scan performance optimization 
 
 As a performance optimization, Microsoft Defender Antivirus will skip running scheduled quick scans in some situations. This optimization only applies to a quick scan when initiated by a schedule – it doesn't affect a quick scan initiated by an [on-demand antivirus](run-scan-microsoft-defender-antivirus.md) scan. This optimization reduces performance degradation by avoiding running a quick scan when it isn't necessary and won't affect protection.
 
-By default, if a qualified quick scan was run within the last seven days, a new quick scan won't be initiated. A quick scan is considered qualified if it occurs after the last [Security Intelligence Update](microsoft-defender-antivirus-updates.md) was installed, Real-Time Protection was not disabled during that period, and if the machine was rebooted.  
+By default, if a qualified quick scan ran within the last seven days, a new quick scan won't be initiated. A quick scan is considered to be *qualified* if it occurs after the last [Security Intelligence Update](microsoft-defender-antivirus-updates.md) was installed, [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) wasn't disabled during that time period, and if the machine was rebooted.  
 
 This optimization doesn't apply to the following conditions: 
 
@@ -99,21 +98,11 @@ This optimization doesn't apply to the following conditions:
 
 - If the computer was restarted since the last quick scan
 
-- If Microsoft Defender for Endpoint Real-Time Protection has been disabled since the last quick scan occurred, including if it's currently disabled 
+- If [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) is disabled after the last quick scan occurred 
 
 - If the last initiated quick scan wasn't completed
 
 This optimization applies to machines running Windows 10 Anniversary Update (version 1607) and all subsequent Windows releases, as well as Windows Server 2016 (version 1607) and subsequent Windows Server releases, but doesn't apply to Core Server installations.  
-
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## See also
 
