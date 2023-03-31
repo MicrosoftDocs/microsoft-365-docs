@@ -56,7 +56,7 @@ The **Training campaigns** tab lists the Training campaigns that you've created.
   - :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete**
   - :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png"::: **View report**
 
-To find a Training campaign in the list, use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box to find the name of the Training campaign.
+To find a Training campaign in the list, type part of the campaign name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box and then press the ENTER key.
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Filter** to filter the information on the page by the **Status** value of the Training campaign.
 
@@ -79,7 +79,7 @@ On the **Name Training campaign** page, configure the following settings:
 - **Name**: Enter a unique name.
 - **Description**: Enter an optional description.
 
-When you're finished, click **Next**.
+When you're finished on the **Name Training campaign** page, click **Next**.
 
 ### Target users
 
@@ -134,7 +134,7 @@ After you've selected one or more users or groups, the following information is 
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box to find users or groups in the list.
 
-When you're finished, select **Next**.
+When you're finished on the **Target users** page, select **Next**.
 
 ### Exclude users
 
@@ -142,7 +142,7 @@ On the **Exclude users** page, you can exclude some of the previously selected u
 
 The selection options are identical to the previous step when you select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Add users to exclude** or :::image type="icon" source="../../media/m365-cc-sc-import-icon.png"::: **Import**.
 
-When you're finished, select **Next**.
+When you're finished on the **Exclude users** page, select **Next**.
 
 ### Select courses
 
@@ -150,7 +150,7 @@ On the **Select courses** page, click :::image type="icon" source="../../media/m
 
 In the **Add Training** flyout that appears, select one or more Training modules to include in the Training campaign by clicking the blank area next to the module name, and then clicking **Add**.
 
-What you see and what you can do in the **Add Training** flyout is identical to what's available at **Training modules** on the **Content library** tab at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. For more information, see [Training modules for Training campaigns in Attack simulation training](attack-simulation-training-training-modules.md).
+What you see and what you can do in the **Add Training** flyout is identical to what's available at **Training modules** on the **Content library** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>. For more information, see [Training modules for Training campaigns in Attack simulation training](attack-simulation-training-training-modules.md).
 
 After you've selected one or more Training modules, the following information is shown for each entry on the **Select courses** page:
 
@@ -159,7 +159,7 @@ After you've selected one or more Training modules, the following information is
 - **Duration (mins)**
 - **Delete**: Use the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete** icon to remove the entry from the list. Click **Confirm** in the confirmation dialog**.
 
-When you're finished, click **Next**.
+When you're finished on the **Select courses** page, click **Next**.
 
 ### Select end user notification
 
@@ -204,7 +204,7 @@ This page shows the following notifications and their configured languages:
 - **Microsoft default training only campaign-training assignment notification**
 - Any custom training assignment notifications that you previously created where the **Type** value is **Training assignment notification**.
 
-  These notifications are also available in **End user notifications** on the **Content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. The built-in notifications are available on the **Global notifications** tab. Custom training assignment notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+  These notifications are also available in **End user notifications** on the **Content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>. The built-in notifications are available on the **Global notifications** tab. Custom training assignment notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
 You can select an existing training assignment notification or create a new notification to use:
 
@@ -219,12 +219,12 @@ You can select an existing training assignment notification or create a new noti
 
 ##### Training assignment notification wizard
 
-If you select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create new** on the **Training assignment notification** page or select a custom notification and then click :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png"::: **Edit notification**, a notification creation wizard opens.
+If you select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create new** on the **Training assignment notification** page or select a custom notification and then click :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png"::: **Edit notification**, a new notification wizard opens.
 
 The creation steps are identical as described in [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
 
 > [!NOTE]
-> On the **Define details** page, be sure to select the value **Training assignment notification** for **Select notification type**.
+> On the **Define details** page of the new notification wizard, be sure to select the value **Training assignment notification** for the notification type.
 
 When you're finished, you're taken back to the **Training assignment notification** page where the notification that you just created now appears in the list.
 
@@ -245,7 +245,7 @@ The **Training reminder notification** page is available only if you selected **
   - **Microsoft default training only campaign-training reminder notification**
   - Any custom training reminder notifications that you previously created where the **Type** value is **Training reminder notification**.
 
-    These notifications are also available in **End user notifications** on the **Simulation content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. The build-it notifications available on the **Global notifications** tab. Custom training reminder notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+    These notifications are also available in **End user notifications** on the **Content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>. The build-it notifications available on the **Global notifications** tab. Custom training reminder notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
   You can select an existing training reminder notification or create a new notification to use:
 
@@ -260,14 +260,14 @@ The **Training reminder notification** page is available only if you selected **
 
 ##### Training reminder notification wizard
 
-If you click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create new** on the **Training reminder notification** page or select a custom notification and then click :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png"::: **Edit notification**, a notification creation wizard opens.
+If you click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create new** on the **Training reminder notification** page or select a custom notification and then click :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png"::: **Edit notification**, a new notification wizard opens.
 
 The creation steps are identical as described in [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
 
 > [!NOTE]
-> On the **Define details** page, be sure to select the value **Training reminder notification** for **Select notification type**.
+> On the **Define details** page of the new notification wizard, be sure to select the value **Training reminder notification** for the notification type.
 
-When you're finished, you're taken back to the **Training reminder notification** page where the notification that you just created now appears in the list.
+When you're finished, you're taken back to the **Training reminder notification** page where the notification that you created is now listed.
 
 Select the notification that you want to use, and then click **Next**.
 
@@ -283,7 +283,7 @@ On the **Schedule** page, select the start date and end date for the Training ca
 > [!NOTE]
 > If you clear the **Send training with an end date** box, no reminder notifications will be send to the targeted users outside of the initial assignment notice.
 
-When you're finished, click **Next**.
+When you're finished on the **Schedule** page, click **Next**.
 
 ## Review
 
@@ -291,7 +291,7 @@ On the **Review** page, you can review the details of your Training campaign.
 
 You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
-When you're finished, click **Submit**.
+When you're finished on the **Review** page, click **Submit**.
 
 ## View details and reports for Training campaigns
 
