@@ -146,7 +146,7 @@ Enabling information barriers for SharePoint and OneDrive are configured in a si
 ## Prerequisites
 
 1. Make sure you meet the [licensing requirements for information barriers](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-barriers).
-2. [Create information barrier policies](/microsoft-365/compliance/information-barriers-policies) that allow or block communication between the segments and activate the policies. Create segments and define the users in each.
+2. [Create information barrier policies](information-barriers-policies.md) that allow or block communication between the segments and activate the policies. Create segments and define the users in each.
 3. After you've configured and activated your information barrier policies, wait 24 hours for the changes to propagate through your organization.
 4. Enable information barriers for OneDrive. Enabling information barriers for SharePoint and OneDrive are configured in a single action and these services can't be enabled separately. To enable information barriers for OneDrive, see the guidance and steps in the [Use information barriers with SharePoint](information-barriers-sharepoint.md) article.
 5. Complete the steps in the following sections to customize and manage information barriers for OneDrive in your organization.

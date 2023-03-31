@@ -37,7 +37,7 @@ For Microsoft Teams, information barriers can determine and prevent the followin
 >- Information barrier groups cannot be created across tenants.
 >- Using bots, Azure Active Directory (Azure AD) apps, APIs to send activity feed notifications, and some APIs to add users is not supported in version 1.
 >- Private channels are compliant to information barriers policies that you configure.
->- For information about support for barriers for SharePoint sites that are connected to Teams, see [Segments associated with Microsoft Teams sites](/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites).
+>- For information about support for barriers for SharePoint sites that are connected to Teams, see [Segments associated with Microsoft Teams sites](information-barriers-sharepoint.md#view-and-manage-segments-as-an-administrator).
 
 ## Background
 
