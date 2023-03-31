@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 10/29/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
