@@ -206,12 +206,12 @@ Policy timeframes allow you to define past and future review periods that are tr
 
 Intelligent detection settings help refine how the detections of risky activities are processed for alerts. In certain circumstances, you may need to define file types to ignore, or you want to enforce a detection level for daily events to boost risk scores for users. Use these settings to control file type exclusions, boosting risk score for potentially risky activity, and file volume limits.
 
-### Email signatures
+### Ignore email signature attachments
 
-One of the main sources of "noise" in insider risk management policies is email signatures, which are often detected as attachments in emails, leading to false positives of users trying to send potentially confidential files via email. If the *Sending email with attachments to recipients outside the organization* indicator is selected, the attachment is scored like any other email attachment sent outside the organization, even if the only thing in the attachment is the email signature. You can exclude attachments from being scored in this situation by turning on the **Email signatures** setting. Turning this feature on doesn't completely eliminate noise from email signature attachments. For example, if two people are communicating, and both have email signature attachments, only the originating email attachment is excluded. Also, if someone changes their email signature, the new signature has to be profiled, which can cause alert noise for a short period of time. 
+One of the main sources of "noise" in insider risk management policies is images in email signatures, which are often detected as attachments in emails, leading to false positives of users trying to send potentially confidential files via email. If the *Sending email with attachments to recipients outside the organization* indicator is selected, the attachment is scored like any other email attachment sent outside the organization, even if the only thing in the attachment is the email signature. You can exclude signature attachments from being scored in this situation by turning on the **Ignore email signature attachments** setting. Turning this setting on doesn't completely eliminate noise from email signature attachments but it will reduce noise significantly. For example, if two people are communicating, and both have images in signatures, only the originating email signature will be identified. Also, if someone changes their email signature, the new signature has to be profiled, which can cause alert noise for a short period of time. 
 
 > [!NOTE]
-> The **Email signatures** setting is off by default. 
+> The **Ignore email signature attachments** setting is off by default. 
 
 ### File activity detection
 
