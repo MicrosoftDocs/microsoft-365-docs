@@ -371,14 +371,17 @@ Valid URL entries and their results are described in the following sections.
 
 #### Scenario: Left tilde
 
+> [!NOTE]
+> This scenario applies only to blocks.
+
 **Entry**: `~contoso.com`
 
-- **Allow match** and **Block match**:
+- **Block match**:
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Allow not matched** and **Block not matched**:
+- **Block not matched**:
   - 123contoso.com
   - contoso.com/abc
   - www.contoso.com/abc
@@ -416,9 +419,12 @@ Valid URL entries and their results are described in the following sections.
 
 #### Scenario: Left and right tilde
 
+> [!NOTE]
+> This scenario applies only to blocks.
+
 **Entry**: `~contoso.com~`
 
-- **Allow match** and **Block match**:
+- **Block match**:
 
   - contoso.com
   - contoso.com/a
@@ -429,7 +435,7 @@ Valid URL entries and their results are described in the following sections.
   - contoso.com/b/a/c
   - test.com/contoso.com
 
-- **Allow not matched** and **Block not matched**:
+-  **Block not matched**:
 
   - 123contoso.com
   - contoso.org
