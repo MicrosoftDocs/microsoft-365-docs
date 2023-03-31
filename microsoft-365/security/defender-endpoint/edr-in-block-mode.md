@@ -70,7 +70,7 @@ When EDR in block mode is turned on, and a malicious artifact is detected, Defen
 > [!IMPORTANT]
 > Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
 > 
-> Starting with platform version 4.18.2202.X, you can now set EDR in block mode to target specific device groups using Intune CSPs. You can  continue to set EDR in block mode tenant-wide in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+> Starting with [platform version 4.18.2202.X](microsoft-defender-antivirus-updates.md), you can now set EDR in block mode to target specific device groups using Intune CSPs. You can  continue to set EDR in block mode tenant-wide in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 > 
 > EDR in block mode is primarily recommended for devices that are running Microsoft Defender Antivirus in passive mode (a non-Microsoft antivirus solution is installed and active on the device).
 
