@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/21/2022
+ms.date: 03/31/2023
 ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
 ms.subservice: mde
@@ -31,7 +31,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-In addition to always-on, real-time protection and [on-demand antivirus](run-scan-microsoft-defender-antivirus.md) scans, you can set up regular, scheduled antivirus scans. You can configure the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-microsoft-defender-antivirus.md) or when an endpoint isn't being used. You can also set up special scans to complete remediation actions if needed.
+You can set up regular, scheduled antivirus scans on devices. These scheduled scans are in addition to always-on, real-time protection and [on-demand antivirus](run-scan-microsoft-defender-antivirus.md) scans. When you schedule a scan, you can specify the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-microsoft-defender-antivirus.md) or when a device isn't being used. You can also set up special scans to complete remediation actions if needed.
 
 ## What do you want to do?
 
@@ -67,11 +67,11 @@ Use the following table to choose a scan type.
 
 |Scenario|Recommended scan type|
 |---|---|
-|You want to set up regular, scheduled scans|Quick scan <p> A quick scan checks the processes, memory, profiles, and certain locations on the device. Combined with [always-on real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware. Real-time protection reviews files when they're opened and closed, and whenever a user navigates to a folder.|
-|Threats, such as malware, are detected on an individual device|Quick scan <p> In most cases, a quick scan will catch and clean up detected malware.|
+|You want to set up regular, scheduled scans|Quick scan <br/><br/> A quick scan checks the processes, memory, profiles, and certain locations on the device. Combined with [always-on real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware. Real-time protection reviews files when they're opened and closed, and whenever a user navigates to a folder.|
+|Threats, such as malware, are detected on an individual device|Quick scan <br/><br/> In most cases, a quick scan will catch and clean up detected malware.|
 |You want to run an [on-demand scan](run-scan-microsoft-defender-antivirus.md)|Quick scan|
-|You want to make sure a portable device, such as a USB drive, doesn't contain malware|Custom scan <p> A custom scan enables you to select specific locations, folders, or files, and runs a quick scan.|
-| You have just installed or re-enabled Microsoft Defender Antivirus | Full scan <p>Running a full scan after you've just enabled or installed Microsoft Defender Antivirus helps populate the cache for future scans. The full scan can also help detect existing threats on the device. |
+|You want to make sure a portable device, such as a USB drive, doesn't contain malware|Custom scan <br/><br/> A custom scan enables you to select specific locations, folders, or files, and runs a quick scan.|
+| You have just installed or re-enabled Microsoft Defender Antivirus | Quick scan or full scan <br/><br/>Running a full scan after you've just enabled or installed Microsoft Defender Antivirus helps populate the cache for future scans. The full scan can also help detect existing threats on the device. |
 
 ## What else do I need to know about quick and full scans?
 
