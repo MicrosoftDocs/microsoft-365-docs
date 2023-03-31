@@ -78,7 +78,7 @@ Here are the virtual operating systems that are supported by virtualization envi
 |---|---|---|
 |Azure virtual desktop (AVD)|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session supported for 20H2, 21H1, 21H2</li></ul>|<ul><li>Single session supported for 22H2</li><li>Multi session supported for 22H2</li></ul>|
 |Citrix Virtual Apps and Desktops 7 (2209)|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session supported for 20H2, 21H1, 21H2|<ul><li>Single session supported for 21H2 (Gen2)</li><li>Multi session supported for 21H2 (Gen 2)</li></ul>|
-|Azure virtual desktop (AVD)|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session supported for 20H2, 21H1, 21H2</li></ul>|<ul><li>Single session supported for 22H2</li><li>Multi session supported for 22H2</li></ul>|
+|Amazon workspaces|<ul><li>Single session supported for 20H2, 21H1, 21H2|N/A|
 |Hyper-V|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session with Hybrid AD join supported for 20H2, 21H1, 21H2</li></ul>|<ul><li>Single session supported for 22H2</li><li>Multi session with Hybrid AD join supported for 22H2</li></ul>|
 
 #### Known issues
