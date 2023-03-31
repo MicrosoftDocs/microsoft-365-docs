@@ -21,7 +21,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Endpoint detection and response (EDR) in block mode
+# Endpoint detection and response in block mode
 
 **Applies to:**
 
