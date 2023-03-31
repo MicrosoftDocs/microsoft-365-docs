@@ -39,6 +39,13 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## April 2023
+
+### Data lifecycle management and records management
+
+- **In preview**: Support for Azure Active Directory administrative units - for both [data lifecycle managment](get-started-with-data-lifecycle-managmenet.md#support-for-administrative-units) and [records management](get-started-with-records-managmenet.md#support-for-administrative-units).
+
+
 ## March 2023
 
 ### Audit
