@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/31/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -316,6 +316,8 @@ The templates listed below may be purchased by your organization. Certain licens
 - Pakistan - Electronic Data Protection Act - DRAFT  
 - Philippines BSP Information Security Management Guidelines  
 - Philippines Data Privacy Act of 2012  
+- Saudi Arabia - Saudi Arabia Monetary Authority (SAMA)
+- Saudi Arabia - National Cybersecurity Authority (NCA)
 - Singapore - ABS Guidelines on Control Objectives and Procedures for Outsourced Service Providers  
 - Singapore - Banking Act (Cap.19)
 - Singapore - Cybersecurity 2018  

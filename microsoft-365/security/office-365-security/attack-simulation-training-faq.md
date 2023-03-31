@@ -162,7 +162,7 @@ Managing a large CSV file or adding many individual recipients can be cumbersome
 
 ### Q: Does Microsoft provide payloads in other languages?
 
-A: Currently, there are 40+ localized payloads available in 10+ languages: Chinese (Simplified), Chinese (Traditional), English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish and Dutch. We've noticed that any direct or machine translations of existing payloads to other languages lead to inaccuracies and decreased relevance.
+A: Currently, there are 40+ localized payloads available in 29+ languages: English, Spanish, German, Japanese, French, Portuguese, Dutch, Italian, Swedish, Chinese (Simplified), Norwegian Bokmål, Polish, Russian, Finnish, Korean, Turkish, Hungarian, Hebrew, Thai, Arabic, Vietnamese, Slovak, Greek, Indonesian, Romanian, Slovenian, Croatian, Catalan, and Other. We've noticed that any direct or machine translations of existing payloads to other languages will lead to inaccuracies and decreased relevance.
 
 That being said, you can create your own payload in the language of your choice using the custom payload authoring experience. We also strongly recommend that you harvest existing payloads that were used to target users in a specific geography. In other words, let the attackers localize the content for you.
 
