@@ -71,9 +71,9 @@ See, [Microsoft 365 licensing guidance for information protection](/office365/se
 
 ## Conditions supported on macOS 
 
-Once a macOS device is onboarded into Microsoft Purview solutions, you can use the following condition with data loss prevention (DLP) policies
+Once a macOS device is onboarded into Microsoft Purview solutions, you can use the following condition with data loss prevention (DLP) policies:
 
-**Content Contains** – Apply to documents that contain sensitive information types, sensitivity labels 
+**Content Contains** – Applies to documents that contain sensitive information types and sensitivity labels. 
 
 ## Activities that can be audited and restricted on macOS 
 
