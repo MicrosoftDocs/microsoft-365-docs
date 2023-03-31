@@ -72,11 +72,13 @@ When EDR in block mode is turned on, and a malicious artifact is detected, Defen
 > 
 > EDR in block mode is primarily recommended for devices that are running Microsoft Defender Antivirus in passive mode (a non-Microsoft antivirus solution is installed and active on the device).
 
-### Security Portal
+### Microsoft 365 Defender
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
-1. Choose **Settings** \> **Endpoints** \> **General** \> **Advanced features**.
-1. Scroll down, and then turn on **Enable EDR in block mode**.
+
+2. Choose **Settings** \> **Endpoints** \> **General** \> **Advanced features**.
+
+3. Scroll down, and then turn on **Enable EDR in block mode**.
 
 ### Intune
 
