@@ -92,7 +92,7 @@ If your billing profile is backed by an invoice, you get an email when your bill
 
 [Check your invoice](view-your-bill-or-invoice.md) for payment instructions for your country or region. If you're not sure how much you owe, you can check your bill and billing history online on the **Invoices** tab of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
-## Electronic funds transfer (EFT) payment processing time
+## EFT payment processing time
 
 Payments made by EFT have processing times that vary, depending on the type of transfer:
 

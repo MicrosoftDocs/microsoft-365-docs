@@ -36,7 +36,7 @@ Check out all of our small business content on [Small business help & learning](
 
 You can use a credit or debit card, or bank account to pay for your Microsoft business subscription. For qualifying customers, you can pay by invoice electronic funds transfer (EFT). If you have a billing profile, your options are slightly different. For more information, see [How to pay for your subscription with a billing profile](pay-for-subscription-billing-profile.md). If you're not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md).
 
-**Just want to find out where to send your invoice payment?** If you currently pay your invoice by check or EFT, see [Where do I send my EFT payment?](#where-do-i-send-my-eft-payment)
+**Just want to find out where to send your invoice payment?** If you currently pay your invoice by EFT, see [Where do I send my EFT payment?](#where-do-i-send-my-eft-payment)
 
 > [!IMPORTANT]
 >
@@ -132,7 +132,7 @@ If you didn't add the payment method used to pay for the subscription, you must 
 > [!NOTE]
 > If you must pay the membership fee for the Microsoft Partner Network (MPN) program (Action Pack subscription, Silver or Gold competencies), see [Pay competency fees](/partner-center/mpn-pay-fee-silver-gold-competency?tabs=workspaces-view) for information about how to make an MPN payment.
 
-## Electronic funds transfer (EFT) payment processing time
+## EFT payment processing time
 
 Payments made by EFT have processing times that vary, depending on the type of transfer:
 
