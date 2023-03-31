@@ -51,7 +51,7 @@ You can set up regular, scheduled antivirus scans on devices. These scheduled sc
 
 ## Quick scan, full scan, and custom scan
 
-When you set up scheduled scans, you can specify whether the scan should be a full or quick scan. In most cases, a quick scan is recommended; however, we also recommend that you run at least one full scan after installing or enabling Defender Antivirus. This scan provides an opportunity to find existing threats and helps populate the cache for future scans.
+The following table describes the different types of scans you can configure.
 
 | Scan type | Description |
 |:---|:---|
