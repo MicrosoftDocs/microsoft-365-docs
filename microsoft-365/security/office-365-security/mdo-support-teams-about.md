@@ -48,7 +48,7 @@ The **Teams Message Entity Panel** is one single place to store all of Teams mes
 
 If you're interested in previewing the previously described features for ALL users in your tenant, you can use an Exchange Online PowerShell cmdlet to enable them.
 
-After you [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell.md), run the following command to join the Teams preview:
+After you [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), run the following command to join the Teams preview:
 
 ```powershell
 Set-TeamsSecurityPreview -Enable $true
