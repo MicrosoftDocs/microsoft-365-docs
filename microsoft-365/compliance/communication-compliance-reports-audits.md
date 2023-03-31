@@ -128,8 +128,7 @@ Message details reports contain the following information for each message item 
 - **Conversation Family ID**: Thread ID for the message.
 - **Sender**: Sender of the message.
 - **Recipients**: Recipients included for the message.
-- **Date Sent**: Date the message was sent.
-- **Match Date**: Date the message was a match for the policy conditions.
+- **Date**: The date when the message was sent.
 - **Location**: Channel that the message was sent on. This can be Exchange Online, Teams, Yammer, or any third-party channel supported by communication compliance. 
 - **Subject**: Subject of the message.
 - **Contains Attachments**: Status of any attachments for the message. Values are either *Yes* or *No*.
@@ -138,7 +137,7 @@ Message details reports contain the following information for each message item 
 - **Tags**: Tags assigned to the message. Values are *Questionable, Compliant*, or *Non-compliant*.
 - **Keyword Matches**: Keyword matches for the message.
 - **Trainable Classifier ID**: ID of the trainable classifier that was matched.
-- **Trainable Classifier Name and Keywords**: The name of the trainable classifier and the keywords that were matched.
+- **Trainable Classifier Name and Matched Keywords**: The name of the trainable classifier and the keywords that were matched.
 - **Reviewers**: Reviewers assigned to message.
 - **Pending for (days)**: Number of days the message has been in a pending state. For resolved messages, the value is 0.
 - **Comment for Resolved**: Comments for the message entered when resolved.
