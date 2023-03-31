@@ -46,7 +46,7 @@ If you encounter this error message, then either of the following conditions mig
 
 If you encounter this error message, then either of the following conditions has occurred:
 
-- You are trying to submit an email which has been deleted or is no longer in the mailbox or quarantine.
+- You are trying to submit an email that has been deleted or is no longer in the mailbox or quarantine.
 
 - You have Exchange Transport Rules (ETR) or Connectors or Data Loss Prevention (DLP) rules preventing the message from coming to us 
 
