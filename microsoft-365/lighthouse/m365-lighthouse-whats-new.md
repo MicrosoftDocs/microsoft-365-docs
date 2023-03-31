@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 02/28/2023
+ms.date: 03/31/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -54,12 +54,6 @@ We've enhanced Microsoft 365 Lighthouse to provide persistent configuration dete
 Microsoft 365 Lighthouse also provides *who*, *where*, and *when* details about user activity that caused the detected drift so that you can efficiently and effectively restore the tenant to the desired state.  
 
 This insight helps you effectively engage fellow tenant admins&mdash;either in your organization or in the customer's organization&mdash;to educate them about the impact of their activity and how to mitigate future risks associated with configuration drift.   
-
-### Enhanced deployment insights for licensing  
-
-Microsoft 365 Lighthouse now provides insights around which deployment tasks can't be completed for which users due to insufficient licensing. These insights help you adjust the licensing or the deployment plan accordingly to complete your deployment.
-
-:::image type="content" source="../media/m365-lighthouse-whats-new/required-licenses-tab.png" alt-text="Screenshot of the Required licenses tab in the tenant details pane." lightbox="../media/m365-lighthouse-whats-new/required-licenses-tab.png"::: 
 
 ### Deployment insights Home page card 
 
