@@ -173,7 +173,7 @@ The following are the solution's categories:
 
 |Product name|Vendor|Description|
 |---|---|---|
-|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2201966)|Morphisec|Provides Moving Target Defense-powered advanced threat prevention and integrates forensics data directly into WD Security Center dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information.|
+|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2201966)|Morphisec|Provides Moving Target Defense-powered advanced threat prevention and integrates forensics data directly into Microsoft 365 Defender dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information.|
 |[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=2201875)|Nextron systems|Provides on-demand live forensics scans using a signature base focused on persistent threats.|
 
 ## Recommended content

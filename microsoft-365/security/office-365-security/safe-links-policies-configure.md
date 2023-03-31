@@ -79,7 +79,7 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - Allow up to 6 hours for a new or updated policy to be applied.
 
-- [New features are continually being added to Microsoft Defender for Office 365](defender-for-office-365-whats-new.md). As new features are added, you may need to make adjustments to your existing Safe Links policies.
+- [New features are continually being added to Microsoft Defender for Office 365](defender-for-office-365-whats-new.md). As new features are added, you might need to make adjustments to your existing Safe Links policies.
 
 ## Use the Microsoft 365 Defender portal to create Safe Links policies
 
@@ -557,3 +557,5 @@ To verify that you've successfully created, modified, or removed Safe Links poli
   ```PowerShell
   Get-SafeLinksRule -Identity "<Name>"
   ```
+
+- Use the URL <http://spamlink.contoso.com> to test Safe Links protection. This URL is similar to the GTUBE text string for testing anti-spam solutions. This URL is not harmful, but it will trigger Safe Links protection.
