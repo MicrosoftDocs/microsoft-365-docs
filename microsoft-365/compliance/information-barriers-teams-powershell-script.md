@@ -26,7 +26,7 @@ appliesto:
 
 Use this PowerShell script to update the information barriers (IB) mode for all Teams-connected groups in your tenant. You'll need to update the mode for these groups after you deploy information barriers. Groups provisioned before you enable IB are assigned the *Open* mode. In *Open* mode, there aren't any applicable IB policies. After you enable IB, *Implicit* becomes the default mode for any new groups you create. However, existing groups still keep *Open* mode configuration. Run this script to change these existing groups to *Implicit* mode.
 
-In this script, you'll use the [Get-UnifiedGroup](/powershell/module/exchange/Set-UnifiedGroup) cmdlet, which is in the Exchange Online PowerShell module to update the mode. To learn more about managing Teams using PowerShell, see [Teams PowerShell overview](/microsoftteams/teams-powershell-overview.md).
+In this script, you'll use the [Get-UnifiedGroup](/powershell/module/exchange/Set-UnifiedGroup) cmdlet, which is in the Exchange Online PowerShell module to update the mode. To learn more about managing Teams using PowerShell, see [Teams PowerShell overview](/microsoftteams/teams-powershell-overview).
 
 ## Sample script
 
