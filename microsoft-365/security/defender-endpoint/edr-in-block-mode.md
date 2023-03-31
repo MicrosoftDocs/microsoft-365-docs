@@ -13,7 +13,7 @@ ms.custom:
   - next-gen
   - edr
   - admindeeplinkDEFENDER
-ms.date: 08/19/2022
+ms.date: 03/31/2023
 ms.collection: 
 - m365-security
 - tier2
