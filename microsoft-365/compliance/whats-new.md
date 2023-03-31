@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/30/2023
+ms.date: 03/31/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -64,6 +64,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
     - New compliance action to [improve the resilience of your flow](retention-label-flow.md#add-resilience-to-your-flow).
     - The trigger action **When the retention period expires** is renamed **When an item reaches the end of its retention period**.
     - New compliance action of **Apply a retention label on the item** to apply a retention label independently from this scenario, as if manually applying a label. The label doesn't need to be published and the retention label is applied immediately.
+- **Improvements for Teams retention policies**: Now rolling out, support for existing call data records as well as newly created call data records, and support for the control message events that name and rename a chat.
 
 ### Data loss prevention
 
