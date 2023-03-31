@@ -2,12 +2,8 @@
 metadata:
   title: Endpoint detection and response (EDR) in block mode frequently asked questions (FAQ)
   description: Find answers to frequently asked questions about Microsoft Defender for Endpoint's attack surface reduction rules.
-  keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
-  ms.pagetype: security
   ms.service: microsoft-365-security
   ms.subservice: mde
-  ms.mktglfcycl: manage
-  ms.sitesec: library
   ms.localizationpriority: medium
   audience: ITPro
   author: dansimp
