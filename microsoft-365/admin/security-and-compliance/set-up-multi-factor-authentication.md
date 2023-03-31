@@ -95,7 +95,7 @@ If you have been using [baseline Conditional Access policies](/azure/active-dire
 If your organization has more granular sign-in security needs, Conditional Access policies can offer you more control. Conditional Access lets you create and define policies that react to sign in events and request additional actions before a user is granted access to an application or service.
 
 > [!IMPORTANT]
-> Turn off Security defaults before you enable Conditional Access policies. It's advised to disable Per-User MFA also along with Conditional Access deployment since it offers a more granular security approach to access cloud resources.
+> Turn off Security defaults before you enable Conditional Access policies. We recommend disabling per-user MFA along with Conditional Access deployment since it offers a more granular security approach to accessing cloud resources.
 
 Conditional Access is available for customers who have purchased Azure AD Premium P1, or licenses that include this, such as Microsoft 365 Business Premium, and Microsoft 365 E3. For more information, see [create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
