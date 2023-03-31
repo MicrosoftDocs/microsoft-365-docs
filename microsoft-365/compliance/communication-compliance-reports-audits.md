@@ -137,7 +137,7 @@ Message details reports contain the following information for each message item 
 - **Tags**: Tags assigned to the message. Values are *Questionable, Compliant*, or *Non-compliant*.
 - **Keyword Matches**: Keyword matches for the message.
 - **Trainable Classifier ID**: ID of the trainable classifier that was matched.
-- **Trainable Classifier Name and Matched Keywords**: The name of the trainable classifier and the keywords that were matched.
+- **Trainable Classifier Name and Matched Keywords**: The name of the trainable classifier and the keywords that triggered the classifier match.
 - **Reviewers**: Reviewers assigned to message.
 - **Pending for (days)**: Number of days the message has been in a pending state. For resolved messages, the value is 0.
 - **Comment for Resolved**: Comments for the message entered when resolved.
