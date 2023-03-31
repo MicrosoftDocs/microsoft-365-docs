@@ -44,7 +44,7 @@ Answer: Run _mdatp device-control policy preferences list_, you will see all the
 
 Answer: Run _mdatp device-control policy rules list_, you will see all the iOS policies on this machine:  
 
-:::image type="content" source="images/macos-device-control-faq-policy-is-on-client.png" alt-text="Shows how to run mdatp device-control policy rules list" to determine whether a Device Control policy has been configured on the device." lightbox="images/macos-device-control-faq-policy-is-on-client.png":::
+:::image type="content" source="images/macos-device-control-faq-policy-is-on-client.png" alt-text="Shows how to run mdatp device-control policy rules list to determine whether a policy has been configured on the endpoint." lightbox="images/macos-device-control-faq-policy-is-on-client.png":::
 
 Answer 2: Run _mdatp device-control policy groups list_, you will see all the iOS groups on this machine:  
 

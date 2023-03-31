@@ -111,7 +111,7 @@ Here are the properties you can use when you create the group and policy.
 | Property name | Description | Options |
 |:---|:---|:---|
 | $type | The kind of group | “device” |
-| id | GUID, a unique ID, represents the group and will be used in the policy. | You can generate ID through [New-Guid (Microsoft.PowerShell.Utility) - PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-7.2) or the uuidgen command on macOS |
+| id | GUID, a unique ID, represents the group and will be used in the policy. | You can generate ID through [New-Guid (Microsoft.PowerShell.Utility) - PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-7.2&preserve-view=true) or the uuidgen command on macOS |
 | name | Friendly name for the group. | string |
 | query | The media coverage under this group | See the **query** properties tables below for details. |
 
