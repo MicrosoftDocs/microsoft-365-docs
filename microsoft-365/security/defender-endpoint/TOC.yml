@@ -279,6 +279,8 @@
           href: mac-device-control-jamf.md
         - name: Intune examples
           href: mac-device-control-intune.md
+        - name: macOS Device Control frequently asked questions (FAQ)
+          href: mac-device-control-faq.md
 
       - name: Schedule scans
         href: mac-schedule-scan.md
@@ -870,6 +872,8 @@
 
     - name: EDR in block mode
       href: edr-in-block-mode.md
+    - name: EDR in block mode FAQ
+      href: edr-block-mode-faqs.yml
 
     - name: Automated investigation and response (AIR)
       items:
