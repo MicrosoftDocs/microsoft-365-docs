@@ -40,14 +40,13 @@ If you encounter this error message, then either of the following conditions mig
 - You tried to submit an email message that was filtered by EOP or Defender for Office 365, but we're still in the process of collecting the required metadata (descriptive data) about the message.
 
   If you wait "a while" and submit the message again, the submission will be successful.
-  
-  
+
 ## We did not receive the submission, please fix the problem and resubmit
 
-If you encounter this error message, then either of the following conditions has occurred:
+If you encounter this error message, then either of the following conditions have occurred:
 
-- You are trying to submit an email that has been deleted or is no longer in the mailbox or quarantine.
+- You're trying to submit an email that has been deleted or is no longer in the mailbox or quarantine.
 
-- You have Exchange Transport Rules (ETR), connectors or Data Loss Prevention (DLP) rules preventing the message from reaching us. 
+- You have Exchange mail flow rules (also known as transport rules), connectors, or data loss prevention (DLP) rules preventing the message from reaching us.
 
-Be sure to check that both of these conditions are false before submitting the message again. 
+Be sure to check that both of these conditions are false before submitting the message again.
