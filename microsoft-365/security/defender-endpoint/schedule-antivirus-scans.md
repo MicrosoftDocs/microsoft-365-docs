@@ -33,8 +33,6 @@ search.appverid: met150
 
 You can set up regular, scheduled antivirus scans on devices. These scheduled scans are in addition to always-on, real-time protection and [on-demand antivirus](run-scan-microsoft-defender-antivirus.md) scans. When you schedule a scan, you can specify the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-microsoft-defender-antivirus.md) or when a device isn't being used. You can also set up special scans to complete remediation actions if needed.
 
-## In this article
-
 - [Comparing the quick scan, full scan, and custom scan](#comparing-the-quick-scan-full-scan-and-custom-scan)
 - [How to choose a scan type](#how-to-choose-a-scan-type)
 - [Important points to keep in mind](#important-points-to-keep-in-mind)
