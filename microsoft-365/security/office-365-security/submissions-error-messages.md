@@ -50,4 +50,4 @@ If you encounter this error message, then either of the following conditions has
 
 - You have Exchange Transport Rules (ETR), connectors or Data Loss Prevention (DLP) rules preventing the message from reaching us. 
 
-So please make sure to check that both of these conditions are false before submitting the message again. 
+Be sure to check that both of these conditions are false before submitting the message again. 
