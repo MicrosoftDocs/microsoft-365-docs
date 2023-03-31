@@ -48,6 +48,6 @@ If you encounter this error message, then either of the following conditions has
 
 - You are trying to submit an email that has been deleted or is no longer in the mailbox or quarantine.
 
-- You have Exchange Transport Rules (ETR) or Connectors or Data Loss Prevention (DLP) rules preventing the message from coming to us 
+- You have Exchange Transport Rules (ETR), connectors or Data Loss Prevention (DLP) rules preventing the message from reaching us. 
 
 So please make sure to check that both of these conditions are false before submitting the message again. 
