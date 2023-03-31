@@ -72,7 +72,7 @@ Use the following table to choose a scan type.
 |Threats, such as malware, are detected on an individual device|Quick scan <br/><br/> In most cases, a quick scan will catch and clean up detected malware.|
 |You want to run an [on-demand scan](run-scan-microsoft-defender-antivirus.md)|Quick scan|
 |You want to make sure a portable device, such as a USB drive, doesn't contain malware|Custom scan <br/><br/> A custom scan enables you to select specific locations, folders, or files, and runs a quick scan.|
-| You have installed or re-enabled Microsoft Defender Antivirus | Quick scan or full scan <br/><br/>A quick scan checks the processes, memory, profiles, and certain locations on the device. If you prefer to run a full scan after you have enabled or installed Microsoft Defender Antivirus, it can help populate the cache for future scans. The full scan can also help detect existing threats on the device. Just keep in mind it can take a while to run a full scan. |
+| You have installed or re-enabled Microsoft Defender Antivirus | Quick scan or full scan <br/><br/>A quick scan checks the processes, memory, profiles, and certain locations on the device. If you prefer, you can choose to run a full scan after you have enabled or installed Microsoft Defender Antivirus. Just keep in mind it can take a while to run a full scan. |
 
 ## What else do I need to know about quick and full scans?
 
