@@ -76,7 +76,7 @@ Use the following table to choose a scan type.
 
 ## What else do I need to know about quick and full scans?
 
-- Malicious files can be stored in locations that aren't included in a quick scan. However, [always-on, real-time protection](configure-protection-features-microsoft-defender-antivirus.md) reviews all files that are opened and closed, and any files that are in folders that are accessed by a user. The combination of real-time protection and a quick scan helps provide strong protection against malware.
+- Malicious files can be stored in locations that aren't included in a quick scan. However, [always-on, real-time protection](configure-protection-features-microsoft-defender-antivirus.md) reviews all files that are opened & closed, and any files that are in folders that are accessed by a user. The combination of real-time protection and a quick scan helps provide strong protection against malware.
 
 - On-access protection with [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) helps ensure that all the files accessed on the system are being scanned with the latest security intelligence and cloud machine learning models.
 
