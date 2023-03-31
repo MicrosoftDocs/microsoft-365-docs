@@ -23,6 +23,8 @@ ms.date: 3/29/2023
 
 In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, login pages are shown to users in simulations that use **Credential Harvest** and **Link in Attachment** [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique).
 
+For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+
 To see the available login pages, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Login pages**. To go directly to the **Content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 **Login pages** in the **Content library** tab has two tabs:

@@ -23,6 +23,8 @@ ms.date: 3/29/2023
 
 In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, landing pages are the web pages that users are taken to if they open the payload in the simulation.
 
+For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+
 To see the available landing pages, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 **Landing pages** in the **Content library** tab has two tabs:

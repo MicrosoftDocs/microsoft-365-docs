@@ -26,6 +26,8 @@ ms.date: 3/29/2023
 
 In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, a _payload_ is the phishing email message and links or attachment content that's presented to users in simulations. Attack simulation training offers a robust built-in payload catalog for the available social engineering techniques. However, you might want to create custom payloads that will work better for your organization.
 
+For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+
 To see the available payloads, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Payloads**. To go directly to the **Content library** tab where you can select **Payloads**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 **Payloads** in the **Content library** tab has three tabs:
