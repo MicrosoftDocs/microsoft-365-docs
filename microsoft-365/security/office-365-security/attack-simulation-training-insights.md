@@ -17,7 +17,7 @@ search.appverid: met150
 ms.date: 3/7/2023
 ---
 
-# Insights and reports for Attack simulation training in Defender for Office 365
+# Insights and reports for Attack simulation training
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 

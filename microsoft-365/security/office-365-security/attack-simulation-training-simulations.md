@@ -17,7 +17,7 @@ search.appverid: met150
 ms.date: 3/29/2023
 ---
 
-# Simulate a phishing attack with Attack simulation training in Defender for Office 365
+# Simulate a phishing attack with Attack simulation training
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
