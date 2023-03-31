@@ -35,7 +35,7 @@ Check out all of our small business content on [Small business help & learning](
 Your bill or invoice provides a summary of charges for your subscription and includes instructions for how to make a payment.
 
 > [!IMPORTANT]
-> As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by electronic funds transfer (EFT). See your invoice for EFT payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by EFT, and avoid possible service disruption.
+> As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.
 
 > [!NOTE]
 > If you have other subscriptions instead of or in addition to Microsoft 365, see [Understand your bill or invoice](understand-your-invoice.md).
@@ -78,7 +78,7 @@ Your invoice is a .PDF that contains at least two pages. [Page one](#page-one) i
 
 The header appears at the top of every invoice page, and includes the month of service, and the **Invoice Date**, which is the date Microsoft created the invoice. The invoice is created the day after the end of your billing period. For example, if your billing period is January 15—February 14, your invoice date is February 15.
 
-The header also includes an **Invoice Number**, the unique number assigned to your invoice. If you pay by Electronic Funds Transfer (EFT), include the invoice number with your payment.
+The header also includes an **Invoice Number**, the unique number assigned to your invoice. If you pay by wire transfer, include the invoice number with your payment.
 
 Finally, the header includes the **Due Date** for payment of the invoice, and shows the total amount due. If you pay for your subscription with a credit card or bank account, we charge your card or account the day after the invoice date.
 
@@ -124,9 +124,9 @@ Page one of your invoice shows the totals of the following items for the invoice
 
 ### Payment Instructions
 
-If you pay by credit card, you see "Please DO NOT PAY. You will be charged the amount due through your selected method of payment." If you pay by invoice, this section contains instructions for paying by EFT.
+If you pay by credit card, you see "Please DO NOT PAY. You will be charged the amount due through your selected method of payment." If you pay by invoice, this section contains instructions for paying by wire transfer.
 
-### Electronic Fund Transfer (EFT)
+### Wire transfer
 
 If you chose "invoice" as your subscription payment method, page one contains the **Electronic Funds Transfer** section that shows the Microsoft bank account information for electronic payments (wire transfer, ACH, SEPA, and so on). Usually, your bank has a reference field you complete when you send a payment. Make sure you reference the invoice number in that field.
 

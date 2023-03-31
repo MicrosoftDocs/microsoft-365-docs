@@ -34,9 +34,9 @@ ms.date: 03/31/2023
 Customers in India receive Web Direct (Azure and Microsoft 365) invoices billed by Microsoft Regional Sales Pte Ltd. Singapore (MRS) and make cross-border payments to Singapore to settle the invoice. If you withheld taxes when remitting the payment, this article explains the process for claiming a credit for the Withholding Tax (WHT) in your account with MRS.
 
 > [!IMPORTANT]
-> As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by electronic funds transfer (EFT). See your invoice for EFT payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by EFT, and avoid possible service disruption.
+> As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.
 
-## For invoice pay customers who pay by EFT
+## For invoice pay customers who pay by wire transfer
 
 If you withheld tax when remitting payment to MRS and deposited the withheld tax with the Income Tax Department, you must submit a WHT request to settle the tax amount withheld in your account.
 
@@ -81,7 +81,7 @@ If there's a problem with your request, the review team might require correction
 
 ## Approved requests
 
-**For customers paying by EFT:** Approved WHT requests are settled against the unpaid portion of the invoice amount reflected in the Withholding Tax Credit Form.
+**For customers paying by wire transfer:** Approved WHT requests are settled against the unpaid portion of the invoice amount reflected in the Withholding Tax Credit Form.
 
 After your claim is approved, it's reflected in the next billing cycle. The WHT amount paid is included in the payment section of your next invoice. The amount is also displayed under the paid amount in the customer portal.
 

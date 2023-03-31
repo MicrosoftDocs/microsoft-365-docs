@@ -100,9 +100,9 @@ Total=Charges\-Commitment Usage (if applicable)+Sales Tax
 
 ### Payment Instructions
 
-The **PAYMENT INSTRUCTIONS** section contains the account information you need to send your EFT payment.
+The **PAYMENT INSTRUCTIONS** section contains the account information you need to send your wire transfer payment.
 
-:::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-paymentinstructions.png" alt-text="The Payment Instructions section of the invoice that contains account information for where to send your EFT payment.":::
+:::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-paymentinstructions.png" alt-text="The Payment Instructions section of the invoice that contains account information for where to send your wire transfer payment.":::
 
 ### Billing Details By Product
 
