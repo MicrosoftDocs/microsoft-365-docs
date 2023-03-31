@@ -1,8 +1,6 @@
 ---
 title: Endpoint detection and response in block mode
 description: Learn about endpoint detection and response in block mode
-keywords: Microsoft Defender for Endpoint, mde, EDR in block mode, passive mode blocking
-ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
