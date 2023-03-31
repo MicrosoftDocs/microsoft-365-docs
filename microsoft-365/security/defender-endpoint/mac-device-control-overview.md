@@ -44,7 +44,7 @@ Device Control for macOS has the following prerequisites:
 
 ## Overveiw
 
-Microsoft Defender for Endpoint Device Control feature enables you to audit, allow, or prevent the read, write, or execute access to removable storage, and allows you to manage iOS and Portable device and Bluetooth media with or without exclusions.
+Microsoft Defender for Endpoint Device Control feature enables you to audit, allow, or prevent the read, write, or execute access to removable storage, and allows you to manage iOS and Portable device and Apple APFS encrypted device and Bluetooth media with or without exclusions.
 
 ## Prepare your endpoints
 
@@ -150,6 +150,7 @@ Query type 2 is as follows:
 | vendorId | 4 digit hexadecimal string | Matches a device’s vendor ID |
 | productId | 4 digit hexadecimal string | Matches a device’s product ID |
 | serialNumber | string | Matches a device’s serial number.  Will not match if device does not have a serial number. |
+| encryption | apfs | Match if a device is apfs-encrypted. |
 | groupId | UUID string | Match if a device is a member of another group.  ‘value’ represents the UUID of the group to match against. <br> Note: The group must be defined within the policy prior to the clause. |
 
 ### Access policy rule
