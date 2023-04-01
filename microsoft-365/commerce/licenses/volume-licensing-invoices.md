@@ -19,7 +19,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to access and view non-Azure volume licensing invoices in the Microsoft 365 admin center."
-ms.date: 11/18/2022
+ms.date: 03/31/2023
 ---
 
 # Non-Azure Microsoft volume licensing invoices
@@ -100,12 +100,9 @@ Total=Charges\-Commitment Usage (if applicable)+Sales Tax
 
 ### Payment Instructions
 
-The **PAYMENT INSTRUCTIONS** section contains the account information you need to send your wire transfer or ACH payment.
+The **PAYMENT INSTRUCTIONS** section contains the account information you need to send your wire transfer payment.
 
-> [!IMPORTANT]
-> Don't mail a physical check to the Microsoft address shown on your invoice.
-
-:::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-paymentinstructions.png" alt-text="The Payment Instructions section of the invoice that contains account information for where to send your wire transfer or ACH payment.":::
+:::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-paymentinstructions.png" alt-text="The Payment Instructions section of the invoice that contains account information for where to send your wire transfer payment.":::
 
 ### Billing Details By Product
 
