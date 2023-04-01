@@ -53,11 +53,20 @@ The following information is shown for each payload on the **Global payloads** a
   - **Link to Malware**
   - **Drive-by URL**
   - **OAuth Consent Grant**
-- **Status**: The value is **Ready** or **Draft**. On the **Global payloads** tab, the value is always **Ready**.
-
-<sup>\*</sup> To see all of the columns, you might need to narrow some columns or zoom out in your browser.
+- **Status**: Values are:
+  - **Ready**
+  - **Draft**: Available only on the **Tenant payloads** tab.
+  - **Archive**: Archived payloads are visible only when **Show archived payloads** is toggled on ![Toggle on icon.](../../media/scc-toggle-on.png).
+- **⋮** (**Actions** control): Take action on the payload. The available actions depend on the **Status** value of the payload as described in the procedure sections. This control always appears at the end of the payload row.
 
 Click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, the only available column that's not selected is **Platform**.
+
+<sup>\*</sup> To see all columns, you'll likely need to do one or more of the following steps:
+
+- Horizontally scroll in your web browser.
+- Narrow the width of appropriate columns.
+- Remove columns from the view.
+- Zoom out in your web browser.
 
 To find a payload in the list, type part of the payload name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
 
@@ -81,7 +90,7 @@ Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) to filter the payl
 
 When you're finished configuring filters, click **Apply**, **Cancel**, or ![Clear filters icon.](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
-When you select a payload from the list by clicking anywhere in the row other than the check box next to the name, a details flyout appears with the following information:
+When you select a payload by clicking anywhere in the row other than the check box next to the name, a details flyout appears with the following information:
 
 - **Overview** tab: View the payload as users will see it. Payload properties are also visible:
   - **Payload description**
@@ -103,6 +112,8 @@ When you select a payload from the list by clicking anywhere in the row other th
   - **Compromised rate**
   - **Action**: Clicking the **View details** link takes you to the details of the simulation.
 
+To see payloads that have been archived (the **Status** value is **Archive**), use the **Show archived payloads** toggle on the **Tenant payloads** tab.
+
 ## Create payloads
 
 > [!NOTE]
@@ -115,7 +126,7 @@ When you select a payload from the list by clicking anywhere in the row other th
    :::image type="content" source="../../media/attack-sim-training-payload-create.png" alt-text="Create a payload on the Tenant payloads tab in Payloads in Attack simulation training in the Microsoft 365 Defender portal." lightbox="../../media/attack-sim-training-payload-create.png":::
 
    > [!NOTE]
-   > At any point after you name the payload during the new payload wizard, you can click **Save and close** to save your progress and continue later. The incomplete payload has the **Status** value **Draft**. You can pick up where you left off by selecting the payload from the list and then clicking the ![Edit payload icon.](../../media/m365-cc-sc-edit-icon.png) **Edit payload** icon that appears.
+   > At any point after you name the payload during the new payload wizard, you can click **Save and close** to save your progress and continue later. The incomplete payload has the **Status** value **Draft**. You can pick up where you left off by selecting the payload and then clicking the ![Edit payload icon.](../../media/m365-cc-sc-edit-icon.png) **Edit payload** icon that appears.
    >
    > You can also create payloads during the creation of simulations. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page).
 
@@ -303,11 +314,11 @@ When you select a payload from the list by clicking anywhere in the row other th
 
    Back on the **Add indicators** page, you can review the indicators you selected:
 
-   - To edit an existing indicator, select it from the list and then click ![Edit indicator icon.](../../media/m365-cc-sc-edit-icon.png) **Edit indicator**.
+   - To edit an existing indicator, select it and then click ![Edit indicator icon.](../../media/m365-cc-sc-edit-icon.png) **Edit indicator**.
 
-   - To delete an existing indicator, select it from the list and then click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+   - To delete an existing indicator, select it and then click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
-   - To move indicators up or down in the list, select the indicator from the list, and then click ![Move up icon.](../../media/m365-cc-sc-increase-icon.png) **Move up** or ![Move down icon.](../../media/m365-cc-sc-decrease-icon.png) **Move down**.
+   - To move indicators up or down in the list, select the indicator, and then click ![Move up icon.](../../media/m365-cc-sc-increase-icon.png) **Move up** or ![Move down icon.](../../media/m365-cc-sc-decrease-icon.png) **Move down**.
 
    When you're finished on the **Add indicators** page, click **Next**.
 
@@ -329,31 +340,55 @@ When you select a payload from the list by clicking anywhere in the row other th
 
 9. Back on the **Tenant payloads** tab, the payload that you created is now listed with the **Status** value **Ready**.
 
+## Take action on payloads
+
+> [!TIP]
+> To see the **⋮** (**Actions**) control on the **Global payloads** or **Tenant payloads** tabs, you'll likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
+
 ## Modify payloads
 
 You can't modify built-in payloads on the **Global payloads** tab. You can only modify custom payloads on the **Tenant payloads** tab.
 
 To modify an existing payload on the **Tenant payloads** tab, do one of the following steps:
 
-- Select the payload from the list by clicking the check box next to the name. Click the ![Edit payload icon.](../../media/m365-cc-sc-edit-icon.png) **Edit payload** icon that appears.
-- Select the payload from the list by clicking anywhere in the row other than the check box. In the details flyout that opens, click **Edit payload** at the bottom of the flyout.
+- Select the payload by clicking the check box next to the name. Click the ![Edit payload icon.](../../media/m365-cc-sc-edit-icon.png) **Edit payload** icon that appears.
+- Select the payload by clicking anywhere in the row other than the check box. In the details flyout that opens, click **Edit payload** at the bottom of the flyout.
+- Select the payload by clicking **⋮** (**Actions**) at the end of the row, and then select ![Edit payload icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
 
 The payload wizard opens with the settings and values of the selected payload. The steps are the same as described in the [Create payloads](#create-payloads) section.
 
 ## Copy payloads
 
-To copy an existing payload on the **Tenant payloads** or **Global payloads** tabs, select the payload from the list by clicking the check box next to the name, and then click the ![Copy payload icon.](../../media/m365-cc-sc-edit-icon.png) **Copy payload** icon that appears.
+To copy an existing payload on the **Tenant payloads** or **Global payloads** tabs, do one of the following steps:
+
+- Select the payload by clicking the check box next to the name, and then click the ![Copy payload icon.](../../media/m365-cc-sc-edit-icon.png) **Copy payload** icon that appears.
+- Select the payload by clicking **⋮** (**Actions**) at the end of the row, and then select ![Copy payload icon.](../../media/m365-cc-sc-edit-icon.png) **Copy payload**.
 
 The create payload wizard opens with the settings and values of the selected payload. The steps are the same as described in the [Create payloads](#create-payloads) section.
 
 > [!NOTE]
 > When you copy a built-in payload on the **Global payloads** tab, be sure to change the **Name** value. If you don't, the payload will appear on the **Tenant payloads** page with the same name as the built-in payload.
 
+## Archive payloads
+
+You can't delete custom payloads from the **Tenant payloads** tab, but you can archive them.
+
+To archive an existing payload on the **Tenant payloads** tab, select the payload by clicking **⋮** (**Actions**) at the end of the row, and then select ![Archive icon.](../../media/m365-cc-sc-archive-icon.png) **Archive**.
+
+The **Status** value of the payload changes to **Archive**, and the payload is no longer visible on the **Tenant payloads** table when **Show archived payloads** is toggled off ![Toggle off icon.](../../media/scc-toggle-off.png).
+
+To see archived payloads on the **Tenant payloads** tab, toggle **Show archived payloads** to on ![Toggle on icon.](../../media/scc-toggle-on.png).
+
 ## Send a test
 
 On the **Tenant payloads** or **Global payloads** tabs, you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
 
-Select the payload from the list by clicking the check box next to the name, and then click the ![Send a test icon.](../../media/m365-cc-sc-send-icon.png) **Send a test** button that appears.
+Select the payload by clicking the check box next to the name, and then click the ![Send a test icon.](../../media/m365-cc-sc-send-icon.png) **Send a test** button that appears.
 
 ## Related links
 
