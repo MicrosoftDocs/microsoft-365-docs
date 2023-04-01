@@ -384,6 +384,17 @@ The **Status** value of the payload changes to **Archive**, and the payload is n
 
 To see archived payloads on the **Tenant payloads** tab, toggle **Show archived payloads** to on ![Toggle on icon.](../../media/scc-toggle-on.png).
 
+## Restore archived payloads
+
+Archived payloads are visible on the **Tenant payloads** tab only when **Show archived payloads** is toggled on ![Toggle on icon.](../../media/scc-toggle-on.png).
+
+To restore an archive payload on the **Tenant payloads** tab, do the following steps:
+
+1. Set the **Show archived payloads** toggle to on ![Toggle on icon.](../../media/scc-toggle-on.png).
+2. Select the payload by clicking **⋮** (**Actions**) at the end of the row, and then select ![Restore icon.](../../media/m365-cc-sc-archive-icon.png) **Restore**.
+
+After you've restored the archived payload, the **Status** value changes to **Draft**. Toggle **Show archived payloads** to off ![Toggle off icon.](../../media/scc-toggle-off.png) to see the restored payload. To return the payload to the **Status** value **Ready**, [edit the payload](#modify-payloads), review or change the settings, and then click **Submit**.
+
 ## Send a test
 
 On the **Tenant payloads** or **Global payloads** tabs, you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
