@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 12/05/2022
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
