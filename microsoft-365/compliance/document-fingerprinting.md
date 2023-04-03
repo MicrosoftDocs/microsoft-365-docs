@@ -24,7 +24,7 @@ Information workers in your organization handle many kinds of sensitive informat
 Document fingerprinting includes the following features:
 - DLP can use document fingerprinting as a detection method in Exchange, SharePoint, OneDrive, Teams, and Windows devices.
 - Document fingerprint features can be managed through the Microsoft Purview compliance portal.
-- [Partial detection ](#partial-matching)is supported.
+- [Partial matching](#partial-matching)is supported.
 - [Exact file matching](#exact-matching) is supported. 
 - Improved detection accuracy
 - Support for detection in multiple languages, including dual-byte languages such as Chinese, Japanese, and Korean.
@@ -100,8 +100,20 @@ The following examples show what happens if you create a document fingerprint ba
 ### Partial Matching
 To configure partial matching of a document fingerprint, when configuring the confidence level, choose **Low**, **Medium** or **High** and designate how much of the text in the file must match the fingerprint in terms of a percentage between 30% - 90%.
 
+A high confidence level returns the fewest false positives but might result in more false negatives. Low or medium confidence levels return more false positives but few to zero false negatives.
+
+- **low confidence**: Matched items will contain the fewest false negatives but the most false positives. Low confidence returns all low, medium, and high confidence matches. 
+- **medium confidence**: Matched items will contain an average number of false positives and false negatives. Medium confidence returns all medium, and high confidence matches. 
+- **high confidence**: Matched items will contain the fewest false positives but the most false negatives.
+
 ### Exact Matching
+<<<<<<< Updated upstream
 To configure exact matching of a document fingerprint, set the confidence level to **High**. When you set the confidence level to **High**, only files that have exactly the same text as the fingerprint will be detected. If the file has even a small deviation from the fingerprint, it will not be detected.
+=======
+To configure exact matching of a document fingerprint, set the confidence level to **Exact**. When you set the confidence level to **Exact**, only files that have exactly the same text as the fingerprint will be detected. If the file has even a small deviation from the fingerprint, it will not be detected.
+<br>
+<br>
+>>>>>>> Stashed changes
 
 ## Already using fingerprint SITs?
 Your existing fingerprints and policies/rules for those fingerprints should continue to work. If you don't want to use the latest fingerprint features, you don't have to do anything.
@@ -110,10 +122,10 @@ If you have an E5 license and want to use the latest fingerprint features, you c
 
 > [!NOTE]
 > Creating new fingerprints using the templates on which a fingerprint already exists is not supported.
+<br>
+<br>
 
-## Create or migrate a policy with a fingerprint SIT in Microsoft Purview compliance portal
-
-### Create a new policy using your fingerprint SIT using the compliance portal**
+## Create a new policy using your fingerprint SIT using the compliance portal
 
 1. In the Microsoft Purview compliance portal, select **Data loss prevention** and then choose **Policies**.
 2. Choose **Sensitive info types**.
@@ -202,7 +214,7 @@ To do this via PowerShell, run the following command(s).
 >> Remove-DlpSensitiveInformationType "Fingerprint SIT"
 ```
 
-### Migrate a new policy using your fingerprint SIT using the compliance portal**
+## Migrate a new policy using your fingerprint SIT using the compliance portal
 
 1. In the Microsoft Purview compliance portal, select **Data loss prevention** and then choose **Policies**.
 2. Choose **Sensitive info types**.
@@ -212,7 +224,7 @@ To do this via PowerShell, run the following command(s).
 6. Review the fingerprint settings.
 7. Choose **Done**.
 
-### Migrate a fingerprint using PowerShell
+## Migrate a fingerprint using PowerShell
 
 Enter the following command:
 ```powershell
