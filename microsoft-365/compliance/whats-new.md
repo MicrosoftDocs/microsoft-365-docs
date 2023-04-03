@@ -138,7 +138,6 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **In preview**: Now rolling out in preview to SharePoint and Teams, users can select and change a sensitivity label from the details pane from these apps when [sensitivity labels are enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 - **Removal of restrictions for prevent copying chat for protected meetings**: The label setting that [prevents copying chat to the clipboard](sensitivity-labels-meetings.md#prevent-copying-chat-to-the-clipboard-label-setting) now supports users outside your organization and also users who join a chat but weren't invited to the meeting.
 - **Ability to turn off the default sensitivity label for SharePoint document libraries**: If you don't want SharePoint site admins to be able to configure a default sensitivity label for SharePoint document libraries, you can now [turn off this feature](sensitivity-labels-sharepoint-default-label.md#how-to-turn-off-this-feature) as a tenant-level setting.
->>>>>>> 9ccf77570227be0dc44abbc0b8502517684377a5
 
 ## February 2023
 
