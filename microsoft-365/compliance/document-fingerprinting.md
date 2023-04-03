@@ -124,13 +124,13 @@ If you have an E5 license and want to use the latest fingerprint features, you c
 
 1. In the Microsoft Purview compliance portal, select **Data loss prevention** and then choose **Policies**.
 2. Choose **Sensitive info types**.
-3. Choose the + symbol to create a new policy.
+3. Choose **+ Create policy** to create a new policy.
 4. Choose **Custom** to create a new policy and then select your region or country.
 5. Choose **Next**.
 6. Name your policy and provide a description, and then choose **Next**.
-7. OPTIONAL: Add specific users and groups you want who should be subject to the policy and then choose **Next**. (If the policy should apply to all users and groups, simply choose **Next**.) 
+7. OPTIONAL: On the **Assign admin units** page, you can add specific users and groups that you want to be subject to the policy. When finished, choose **Next**. (If the policy should apply to all users and groups, simply choose **Next**.) 
 8. Select the locations where you want the policy applied and then choose **Next**.
-9. On the **Define policy settings** page, choose **Next**.
+9. On the **Define policy settings** page, choose **Create ir customize advanced DLP rules** and then choose **Next**.
 10. On the **Customize advanced DLP rules** page, choose **Create rule**.
 11. Enter a name and description for your rule.
 12. Under **Conditions** choose **Add condition** and then choose **Content contains**.
