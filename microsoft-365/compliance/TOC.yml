@@ -1578,10 +1578,12 @@
               href: ediscovery-commit-draft-collection.md
             - name: Collection statistics and reports
               href: ediscovery-collection-statistics-reports.md        
-            - name: Build search queries for collections
+            - name: Build search queries for keywords and collections
               href: ediscovery-building-search-queries.md
             - name: Use the KQL editor to build search queries
               href: ediscovery-kql-editor.md
+            - name: Use the query builder to create search queries (preview)
+              href: ediscovery-query-builder.md
             - name: Keyword queries and search conditions
               href: ediscovery-keyword-queries-and-search-conditions.md 
             - name: Collect cloud attachments
