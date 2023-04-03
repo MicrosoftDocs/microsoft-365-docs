@@ -236,7 +236,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       - **Suggested user groups**: Select from the following values:
         - **All suggested user groups**
         - **Users not targeted by a simulation in the last three months**
-        - **Repeat offenders**
+        - **Repeat offenders**: For more information, see [Configure the repeat offender threshold](attack-simulation-training-settings.md#configure-the-repeat-offender-threshold).
 
       - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md). Use the following options:
         - **Search**: In ![Search by user tags icon.](../../media/m365-cc-sc-search-icon.png) **Search by user tags**, you can type part of the user tag and then press Enter. You can select some or all of the results.
