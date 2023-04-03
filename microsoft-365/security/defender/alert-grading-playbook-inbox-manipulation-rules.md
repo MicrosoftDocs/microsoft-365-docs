@@ -189,7 +189,7 @@ CloudAppEvents
 
 ## See also
 
-- [Overview of alert grading](alert-grading-playbooks.md)
+- [Overview of alert classification](alert-grading-playbooks.md)
 - [Suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Investigate alerts](investigate-alerts.md)

@@ -38,7 +38,7 @@ Emails can be forwarded either manually or automatically using forwarding rules.
 
 This playbook helps you investigate Suspicious Email Forwarding Activity alerts and quickly grade them as either a True Positive (TP) or a False Positive (FP). You can then take recommended actions for the TP alerts to remediate the attack.
 
-For an overview of alert grading for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
+For an overview of alert classifications for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
 
 The results of using this playbook are:
 
@@ -267,7 +267,7 @@ Once you determine that the activities associated make this alert a True Positiv
 
 ## See also
 
-- [Overview of alert grading](alert-grading-playbooks.md)
+- [Overview of alert classification](alert-grading-playbooks.md)
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Investigate alerts](investigate-alerts.md)
