@@ -29,7 +29,7 @@ sections:
 
           1. Open **Event Viewer**.
 
-          2. In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender**.
+          2. In the console tree, expand **Applications and Services Logs** > **Microsoft** > **Windows** > **Windows Defender**.
 
           3. Double-click on **Operational**.
 
@@ -40,7 +40,7 @@ sections:
      - question: Event ID 1000
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SCAN_STARTED
+         Symbolic name: `MALWAREPROTECTION_SCAN_STARTED`
 
          Message: An antimalware scan started.
 
@@ -59,7 +59,7 @@ sections:
      - question: Event ID 1001
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SCAN_COMPLETED
+         Symbolic name: `MALWAREPROTECTION_SCAN_COMPLETED`
 
          Message: An antimalware scan finished.
 
@@ -78,7 +78,7 @@ sections:
      - question: Event ID 1002
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SCAN_CANCELLED
+         Symbolic name: `MALWAREPROTECTION_SCAN_CANCELLED`
 
          Message: An antimalware scan was stopped before it finished.
 
@@ -97,7 +97,7 @@ sections:
      - question: Event ID 1003
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SCAN_PAUSED
+         Symbolic name: `MALWAREPROTECTION_SCAN_PAUSED`
 
          Message: An antimalware scan was paused. 
 
@@ -114,7 +114,7 @@ sections:
      - question: Event ID 1004
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SCAN_RESUMED
+         Symbolic name: `MALWAREPROTECTION_SCAN_RESUMED`
 
          Message: An antimalware scan was resumed.
 
@@ -131,7 +131,7 @@ sections:
      - question: Event ID 1005
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SCAN_FAILED
+         Symbolic name: `MALWAREPROTECTION_SCAN_FAILED`
 
          Message: An antimalware scan failed. 
 
@@ -141,7 +141,7 @@ sections:
 
           - Scan Type: Scan type. Examples: Antivirus, Antispyware, or Antimalware
 
-          - Scan Parameters: Scan parameters. Examples: Full scan, Quick scan, or Customer scan
+          - Scan Parameters: Scan parameters. Examples: Full scan, Quick scan, or Custom scan
 
           - User: Domain\User
 
@@ -160,7 +160,7 @@ sections:
      - question: Event ID 1006
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_MALWARE_DETECTED
+         Symbolic name: `MALWAREPROTECTION_MALWARE_DETECTED`
 
          Message: The antimalware engine found malware or other potentially unwanted software.
 
@@ -213,7 +213,7 @@ sections:
      - question: Event ID 1007
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_MALWARE_ACTION_TAKEN
+         Symbolic name: `MALWAREPROTECTION_MALWARE_ACTION_TAKEN`
 
          Message: The antimalware platform performed an action to protect your system from malware or other potentially unwanted software.
 
@@ -254,8 +254,8 @@ sections:
      - question: Event ID 1008
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_MALWARE_ACTION_FAILED
-
+         Symbolic name: `MALWAREPROTECTION_MALWARE_ACTION_FAILED`
+         
          Message: The antimalware platform attempted to perform an action to protect your system from malware or other potentially unwanted software, but the action failed.
 
          Description: Microsoft Defender Antivirus has encountered an error when taking action on malware or other potentially unwanted software. For more information, see the following:
