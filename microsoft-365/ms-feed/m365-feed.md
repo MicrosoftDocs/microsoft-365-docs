@@ -14,7 +14,7 @@ ms.collection:
 description: "Use Microsoft Feed to help users discover and learn about people and interests relevant to their work."
 ---
 
-# Overview of the Microsoft Feed
+# Overview of Microsoft Feed
 
 Microsoft Feed is powered by Microsoft Graph and aims to help users discover and learn about people and interests relevant to their work. Microsoft Feed shows users a mix of content and activity from across Microsoft 365. Users might, for example, see updates to documents they’re working on with others, links shared with them in Teams chats, suggested tasks to follow up, highlights about colleagues, and much more.
 
