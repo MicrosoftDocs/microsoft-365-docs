@@ -839,19 +839,15 @@ sections:
      - question: Event ID 1121
        answer: |
 
-         Symbolic name: (TBD)
-
          Message: Event when an attack surface reduction rule fires in block mode.
 
-         Description: TBD.
+         Description: 
 
           - Current Platform Version: Current platform version
 
           - Threat Resource Path: Path
 
           - Hashes: Hashes
-
-          Note: whatgoeshere?: TBD.
 
      - question: Event ID 1127
        answer: |
@@ -901,7 +897,7 @@ sections:
      - question: Event ID 1150
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SERVICE_HEALTHY`
+         Symbolic name: `MALWAREPROTECTION_SERVICE_HEALTHY`
 
          Message: If your antimalware platform reports status to a monitoring platform, this event indicates that the antimalware platform is running and in a healthy state.
 
