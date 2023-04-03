@@ -113,7 +113,7 @@ To configure exact matching of a document fingerprint, set the confidence level 
 ## Already using fingerprint SITs?
 Your existing fingerprints and policies/rules for those fingerprints should continue to work. If you don't want to use the latest fingerprint features, you don't have to do anything.
 
-If you have an E5 license and want to use the latest fingerprint features, you can either create a new fingerprint or [migrate the existing fingerprints](#migrate-an-exiting-fingerprint-to-the-latest-version) to the newer version.
+If you have an E5 license and want to use the latest fingerprint features, you can either create a new fingerprint or [migrate a policy](#migrate-a-new-policy-using-your-fingerprint-sit-using-the-compliance-portal) to the newer version.
 
 > [!NOTE]
 > Creating new fingerprints using the templates on which a fingerprint already exists is not supported.
