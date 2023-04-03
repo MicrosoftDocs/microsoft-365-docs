@@ -107,13 +107,8 @@ A high confidence level returns the fewest false positives but might result in m
 - **high confidence**: Matched items will contain the fewest false positives but the most false negatives.
 
 ### Exact Matching
-<<<<<<< Updated upstream
 To configure exact matching of a document fingerprint, set the confidence level to **High**. When you set the confidence level to **High**, only files that have exactly the same text as the fingerprint will be detected. If the file has even a small deviation from the fingerprint, it will not be detected.
-=======
-To configure exact matching of a document fingerprint, set the confidence level to **Exact**. When you set the confidence level to **Exact**, only files that have exactly the same text as the fingerprint will be detected. If the file has even a small deviation from the fingerprint, it will not be detected.
-<br>
-<br>
->>>>>>> Stashed changes
+
 
 ## Already using fingerprint SITs?
 Your existing fingerprints and policies/rules for those fingerprints should continue to work. If you don't want to use the latest fingerprint features, you don't have to do anything.
