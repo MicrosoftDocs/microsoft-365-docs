@@ -164,17 +164,15 @@ Currently, users experience the following scenarios if an IB policy blocks anoth
 - **People card**: If a user participates in a conversation and the user is later blocked, other users will see an error message instead of the people card when they hover over the blocked user's name. Actions listed on the card (such as calling and chat) will be unavailable.
 - **Suggested contacts**: Blocked users don't appear on the suggested contacts list (the initial contact list that appears for new users).
 - **Chat contacts**: A user can see blocked users on the chats contact list, but the blocked users will be identified. The only action that the user can perform on the blocked users is to delete them. The user can also select them to view their past conversation.
-- **Calls contacts**: A user can see blocked users on the calls contact list, but the blocked users will be identified. The only action that the user can perform on the block users is to delete them.
+- **Calls contacts**: A user can see blocked users on the calls contact list, but the blocked users will be identified. The only action that the user can perform on the blocked users is to delete them.
 
     Here's an example of a blocked user in the calls contact list.
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing user user chat.](../media/ib-before-chat-contacts-policy.png)
+    
+    ![Screenshot showing user user chat.](../media/ib-before-chat-contacts-policy.png)
 
     Here's an example of the chat being disabled for a user on the calls content list.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing user blocked from chat.](../media/ib-after-chat-contacts-policy.png)
+    ![Screenshot showing user blocked from chat.](../media/ib-after-chat-contacts-policy.png)
 
 - **Skype to Teams migration**: During a migration from Skype for Business to Teams, all users—even those users who are blocked by IB policies—will be migrated to Teams. Those users are then handled as described above.
 
