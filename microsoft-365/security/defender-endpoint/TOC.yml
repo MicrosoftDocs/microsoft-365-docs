@@ -34,8 +34,6 @@
       href: preview.md
     - name: Data storage and privacy
       href: data-storage-privacy.md
-    - name: Overview of Microsoft Defender Security Center
-      href: use.md
     - name: Defender for Endpoint Plan 1
       items:
       - name: Overview
@@ -281,6 +279,8 @@
           href: mac-device-control-jamf.md
         - name: Intune examples
           href: mac-device-control-intune.md
+        - name: macOS Device Control frequently asked questions (FAQ)
+          href: mac-device-control-faq.md
 
       - name: Schedule scans
         href: mac-schedule-scan.md
@@ -337,7 +337,7 @@
         items:
         - name: Use basic permissions to access the portal
           href: basic-permissions.md
-        - name: Assign user access to Microsoft Defender Security Center
+        - name: Assign user access to the portal
           href: assign-portal-access.md
         - name: Manage portal access using RBAC
           href: rbac.md
@@ -381,7 +381,7 @@
           href: configure-machines-onboarding.md
 
 
-      - name: Configure Microsoft Defender Security Center time zone settings
+      - name: Configure time zone settings
         href: time-settings.md
 
   - name: Detect threats and protect endpoints
@@ -872,6 +872,8 @@
 
     - name: EDR in block mode
       href: edr-in-block-mode.md
+    - name: EDR in block mode FAQ
+      href: edr-block-mode-faqs.yml
 
     - name: Automated investigation and response (AIR)
       items:
