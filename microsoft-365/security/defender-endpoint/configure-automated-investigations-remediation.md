@@ -47,7 +47,7 @@ If you're using Defender for Endpoint, you can specify an automation level so th
 4. Select **Done** when you're finished setting up your device group.
 
 > [!NOTE]
-> The Automated Investigation option has been removed from the advanced features setting in Defender for Endpoint. Automated investigation is now enabled by default for all users.
+> The **Automated Investigation** option has been removed from the advanced features setting in Defender for Endpoint. Automated investigation is now enabled by default.
 
 ## Next steps
 
