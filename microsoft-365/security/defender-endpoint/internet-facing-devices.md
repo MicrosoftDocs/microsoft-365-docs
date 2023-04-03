@@ -142,7 +142,7 @@ DeviceNetworkEvents
 |where ActionType == "InboundInternetScanInspected"
 ```
 
-If the above query fails to provide the relevant connections, you can use socket collection methods to retrieve the source process. To learn more about different tools and capabilities available to do this, see:
+If the above queries fails to provide the relevant connections, you can use socket collection methods to retrieve the source process. To learn more about different tools and capabilities available to do this, see:
 
 - [Defender for Endpoint live response](live-response.md)
 - [Microsoft Network Monitor](/troubleshoot/windows-client/networking/collect-data-using-network-monitor)
