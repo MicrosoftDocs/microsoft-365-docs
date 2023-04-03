@@ -73,7 +73,7 @@ To learn more about an internet-facing device, select the device in the device i
 
    :::image type="content" source="../../media/defender-vulnerability-management/internet-facing-details.png" alt-text="Screenshot of the internet facing device details page" lightbox="../../media/defender-vulnerability-management/internet-facing-details.png":::
 
-This pane includes details on whether the device was detected by an external scan or received an external incoming communication. The external network interface address and port fields provide details on the external IP and port that was scanned when we captured information that this device was internet facing.
+This pane includes details on whether the device was detected by a Microsoft external scan or received an external incoming communication. The external network interface address and port fields provide details on the external IP and port that were scanned at the time this device was identified as internet facing.
 
 The local network interface address and port for this device, along with the last time the device was identified as internet facing is also shown.
 
@@ -83,7 +83,7 @@ Use advanced hunting queries to gain visibility and insights into the internet-f
 
 ### Get all internet facing devices
 
-Use this query to find all devices that are internet facing. 
+Use this query to find all devices that are internet facing.
 
 ```kusto
 // Find all devices that are internet-facing
@@ -96,13 +96,12 @@ DeviceInfo
 
 This query returns the following fields for each internet-facing device with their aggregated evidence in the “AdditionalFields” column.
 
-- **InternetFacingLastSeen**: The last time the device was identified as internet facing
-- **InternetFacingReason**: Whether the device was detected by an external scan or received an external incoming communication
-- **InternetFacingLocalIp**: The local IP address on the device
-- **InternetFacingLocalPort**: The local port on the device
-- **InternetFacingPublicScannedIp**: The external scanned public IP address
-- **InternetFacingPublicScannedPort**: The external scanned public port
-- **InternetFacingTransportProtocol**: The connection transport protocol used
+- **InternetFacingReason**: Whether the device was detected by an external scan or received incoming communication from the internet
+- **InternetFacingLocalIp**: The local IP address of the internet facing interface
+- **InternetFacingLocalPort**: The local port where internet facing communication was observed
+- **InternetFacingPublicScannedIp**: The public IP address that was externally scanned
+- **InternetFacingPublicScannedPort**: The internet facing port that was externally scanned
+- **InternetFacingTransportProtocol**: The transport protocol used (TCP/UDP)
 
 ### Get information on inbounds connections
 
@@ -122,14 +121,17 @@ Use the following query for devices tagged with the reason **This device receive
 ```kusto
 // Query on inbound connection accepted events
 DeviceNetworkEvents
-|whereTimestamp > ago(7d)
-|whereDeviceId == ""
+|where Timestamp > ago(7d)
+|where DeviceId == ""
 |where not(InitiatingProcessCommandLine has_any ("TaniumClient.exe", "ZSATunnel.exe", "MsSense.exe"))
 |where ActionType =="InboundConnectionAccepted"
 |extend LocalIP = replace(@"::ffff:", "", LocalIP),RemoteIP = replace(@"::ffff:", "", RemoteIP)
 |where LocalIP!= RemoteIP and RemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") and not(ipv4_is_private( RemoteIP ))
-|project-reorder DeviceId, LocalIP, LocalPort, RemoteIP, RemotePort, InitiatingProcessCommandLine,InitiatingProcessId, DeviceName
+|project-reorder DeviceId, LocalIP, LocalPort, RemoteIP, RemotePort, InitiatingProcessCommandLine, InitiatingProcessId, DeviceName
 ```
+
+>[!Note]
+> Process related information is only available for UDP connections.
 
 If the above query fails to provide the relevant connections, you can use socket collection methods to retrieve the source process. To learn more about different tools and capabilities available to do this, see:
 
@@ -137,7 +139,7 @@ If the above query fails to provide the relevant connections, you can use socket
 - [Microsoft Network Monitor](/troubleshoot/windows-client/networking/collect-data-using-network-monitor)
 - [Netstat for Windows](/windows-server/administration/windows-commands/netstat)
 
-For UDP connections, gain insights into devices that were identified as host reachable but may not have established a connection, using the following query:
+For UDP connections, gain insights into devices that were identified as host reachable but may not have established a connection (for example, as a result of the host firewall policy) using the following query:
 
 ```kusto
 DeviceNetworkEvents
