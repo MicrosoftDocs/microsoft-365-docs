@@ -46,11 +46,11 @@ Apps are pinned to the app bar, which is the bar at the bottom of the Teams mobi
 
 **Teams mobile**
 
-:::image type="content" source="media/tailored-teams-apps-mobile.png" alt-text="The tailored frontline app experience on Teams mobile" lightbox="media/tailored-teams-apps-mobile.png":::
+:::image type="content" source="media/tailored-teams-apps-mobile.png" alt-text="Screenshot of the tailored frontline app experience on Teams mobile." lightbox="media/tailored-teams-apps-mobile.png":::
 
 **Teams desktop**
 
-:::image type="content" source="media/tailored-teams-apps-desktop.png" alt-text="The tailored frontline app experience on Teams desktop" lightbox="media/tailored-teams-apps-desktop.png":::
+:::image type="content" source="media/tailored-teams-apps-desktop.png" alt-text="Screenshot of the tailored frontline app experience on Teams desktop." lightbox="media/tailored-teams-apps-desktop.png":::
 
 ## Admin controls
 
