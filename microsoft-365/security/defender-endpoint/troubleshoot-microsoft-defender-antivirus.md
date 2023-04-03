@@ -730,7 +730,7 @@ Description:
 <td >
 Microsoft Defender Antivirus has removed history of malware and other potentially unwanted software.
 <dl>
-<dt>Time: The time when the event occurred, for example when the history is purged. This parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
+<dt>Time: The time when the event occurred, for example when the history is purged. This parameter isn't used in threat events so that there's no confusion regarding whether it's remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 </dl>
 </td>
@@ -751,7 +751,7 @@ Symbolic name:
 Message:
 </td>
 <td >
-The antimalware platform could not delete history of malware and other potentially unwanted software.
+The antimalware platform couldn't delete history of malware and other potentially unwanted software.
 </td>
 </tr>
 <tr>
@@ -761,7 +761,7 @@ Description:
 <td >
 Microsoft Defender Antivirus has encountered an error trying to remove history of malware and other potentially unwanted software.
 <dl>
-<dt>Time: The time when the event occurred, for example when the history is purged. This parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
+<dt>Time: The time when the event occurred, for example when the history is purged. This parameter isn't used in threat events so that there's no confusion regarding whether it's remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values. </dt>
@@ -1013,7 +1013,7 @@ Description of the error. </dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
 NOTE:
-Whenever Microsoft Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it will restore the following system settings and services that the malware might have changed:<ul>
+Whenever Microsoft Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it restores the following system settings and services that the malware might have changed:<ul>
 <li>Default Internet Explorer or Microsoft Edge setting</li>
 <li>User Access Control settings</li>
 <li>Chrome settings</li>
@@ -1147,7 +1147,7 @@ Description of the error. </dt>
 User action:
 </td>
 <td >
-No action is necessary. Microsoft Defender Antivirus failed to complete a task related to the malware remediation. This is not a critical failure.
+No action is necessary. Microsoft Defender Antivirus failed to complete a task related to the malware remediation. This isn't a critical failure.
 </td>
 </tr>
 <tr>
@@ -1418,7 +1418,7 @@ Controlled Folder Access has blocked an untrusted process from potentially modif
 User action:
 </td>
 <td >
-The user can add the blocked process to the <i>Allowed Process</i> list for CFA, using Powershell or Windows Security Center.
+The user can add the blocked process to the <i>Allowed Process</i> list for CFA, using PowerShell or Windows Security Center.
 </td>
 </tr>
 <tr>
@@ -1634,7 +1634,7 @@ Description of the error. </dt>
 User action:
 </td>
 <td >
-This error occurs when there is a problem updating definitions.
+This error occurs when there's a problem updating definitions.
 To troubleshoot this event:
 <ol>
 <li><a href="microsoft-defender-antivirus-updates.md" data-raw-source="[Update definitions](microsoft-defender-antivirus-updates.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
@@ -1727,7 +1727,7 @@ Description of the error. </dt>
 User action:
 </td>
 <td >
-The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update.
+The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is due to an interruption in network connectivity during an update.
 To troubleshoot this event:
 <ol>
 <li><a href="microsoft-defender-antivirus-updates.md" data-raw-source="[Update definitions](microsoft-defender-antivirus-updates.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
@@ -1776,12 +1776,12 @@ Description of the error. </dt>
 User action:
 </td>
 <td >
-The Microsoft Defender Antivirus client attempted to download and install the latest definitions file and failed. This error can occur when the client encounters an error while trying to load the definitions, or if the file is corrupt. Microsoft Defender Antivirus will attempt to revert back to a known-good set of definitions.
+The Microsoft Defender Antivirus client attempted to download and install the latest definitions file and failed. This error can occur when the client encounters an error while trying to load the definitions, or if the file is corrupt. Microsoft Defender Antivirus attempts to revert back to a known-good set of definitions.
 To troubleshoot this event:
 <ol>
 <li>Restart the computer and try again.</li>
 <li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Microsoft Security Intelligence site</a>.
-Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
+Note: The size of the definitions file downloaded from the site can exceed 60 MB and shouldn't be used as a long-term solution for updating definitions.
 </li>
 <li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
@@ -1811,7 +1811,7 @@ Message:
 Description:
 </td>
 <td >
-Microsoft Defender Antivirus could not load antimalware engine because current platform version is not supported. Microsoft Defender Antivirus will revert back to the last known-good engine and a platform update will be attempted.
+Microsoft Defender Antivirus couldn't load antimalware engine because current platform version isn't supported. Microsoft Defender Antivirus reverts back to the last known-good engine and a platform update will be attempted.
 <dl>
 <dt>Current Platform Version: &lt;Current platform version&gt;</dt>
 </dl>
@@ -1969,10 +1969,10 @@ Change to default behavior:
 <dt>When a dynamic signature is received by MDE, a 2010 event is reported. However, when the dynamic signature expires or is manually deleted a 2011 event is reported. In some cases, when a new signature is delivered to MDE sometimes hundreds of dynamic signatures will expire at the same time; therefore hundreds of 2011 events are reported. The generation of so many 2011 events can cause a Security information and event management (SIEM) server to become flooded.</dt>
 <dt>To avoid the above situation - starting with platform version 4.18.2207.7 - by default, MDE will now <i>not</i> report 2011 events:<ul>
 <li>This new default behavior is controlled by registry entry: <b>HKLM\SOFTWARE\Microsoft\Windows&nbsp;Defender\Reporting\EnableDynamicSignatureDroppedEventReporting</b>.</li>
-<li>The default value for <b>EnableDynamicSignatureDroppedEventReporting</b> is <b>false</b>, which means <i>2011 events are not reported</i>. If it's set to true, 2011 events <i>are reported</i>.</li>
+<li>The default value for <b>EnableDynamicSignatureDroppedEventReporting</b> is <b>false</b>, which means <i>2011 events aren't reported</i>. If it's set to true, 2011 events <i>are reported</i>.</li>
 </ul>
 </dt>
-<dt>Because 2010 signature events are timely distributed sporadically - and will not cause a spike - 2010 signature event behavior is unchanged.</dt>
+<dt>Because 2010 signature events are timely distributed sporadically - and won't cause a spike - 2010 signature event behavior is unchanged.</dt>
 </dl>
 </td>
 </tr>
@@ -2288,7 +2288,7 @@ Message:
 Description:
 </td>
 <td >
-The support for your operating system will expire shortly. Running Microsoft Defender Antivirus on an out of support operating system is not an adequate solution to protect against threats.
+The support for your operating system will expire shortly. Running Microsoft Defender Antivirus on an out of support operating system isn't an adequate solution to protect against threats.
 </td>
 </tr>
 <tr>
@@ -2316,7 +2316,7 @@ Message:
 Description:
 </td>
 <td >
-The support for your operating system has expired. Running Microsoft Defender Antivirus on an out of support operating system is not an adequate solution to protect against threats.
+The support for your operating system has expired. Running Microsoft Defender Antivirus on an out of support operating system isn't an adequate solution to protect against threats.
 </td>
 </tr>
 <tr>
@@ -2344,7 +2344,7 @@ Message:
 Description:
 </td>
 <td >
-The support for your operating system has expired. Microsoft Defender Antivirus is no longer supported on your operating system, has stopped functioning, and is not protecting against malware threats.
+The support for your operating system has expired. Microsoft Defender Antivirus is no longer supported on your operating system, has stopped functioning, and isn't protecting against malware threats.
 </td>
 </tr>
 <tr>
@@ -2394,9 +2394,9 @@ Description of the error. </dt>
 User action:
 </td>
 <td >
-You should restart the system then run a full scan because it's possible the system was not protected for some time.
+You should restart the system then run a full scan because it's possible the system wasn't protected for some time.
 The Microsoft Defender Antivirus client's real-time protection feature encountered an error because one of the services failed to start.
-If it is followed by a 3007 event ID, the failure was temporary and the antimalware client recovered from the failure.
+If it's followed by a 3007 event ID, the failure was temporary and the antimalware client recovered from the failure.
 </td>
 </tr>
 <tr>
@@ -2423,7 +2423,7 @@ Message:
 Description:
 </td>
 <td >
-Microsoft Defender Antivirus Real-time Protection has restarted a feature. It is recommended that you run a full system scan to detect any items that may have been missed while this agent was down.
+Microsoft Defender Antivirus Real-time Protection has restarted a feature. It's recommended that you run a full system scan to detect any items that may have been missed while this agent was down.
 <dl>
 <dt>Feature: &lt;Feature&gt;, for example:
 <ul>
@@ -2845,7 +2845,7 @@ Description of the error. </dt>
 
 <a id="error-codes"></a>
 ## Microsoft Defender Antivirus client error codes
-If Microsoft Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update. This section provides the following information about Microsoft Defender Antivirus client errors.
+If Microsoft Defender Antivirus experiences any issues, it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update. This section provides the following information about Microsoft Defender Antivirus client errors.
 - The error code
 - The possible reason for the error
 - Advice on what to do now
@@ -2896,7 +2896,7 @@ This error indicates that there might be a problem with your security product.
 <li>Get your security intelligence updates in the Windows Security app. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>Or,
 </li>
 <li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Microsoft Security Intelligence site</a>.
-Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
+Note: The size of the definitions file downloaded from the site can exceed 60 MB and shouldn't be used as a long-term solution for updating definitions.
 </li>
 </ol>
 </li>
@@ -2913,7 +2913,7 @@ Note: The size of the definitions file downloaded from the site can exceed 60 MB
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that there might be an engine configuration error; commonly, this is related to input data that does not allow the engine to function properly.
+This error indicates that there might be an engine configuration error; commonly, this is related to input data that doesn't allow the engine to function properly.
 </td>
 </tr>
 <tr>
@@ -2991,7 +2991,7 @@ Follow the manual remediation steps outlined in the <a href="https://www.microso
 <td>
 This error indicates that removal inside the container type might not be not supported.
 </td></tr><tr><td>Resolution</td><td>
-Microsoft Defender Antivirus is not able to remediate threats detected inside the archive. Consider manually removing the detected resources.
+Microsoft Defender Antivirus isn't able to remediate threats detected inside the archive. Consider manually removing the detected resources.
 </td>
 </tr>
 <tr>
@@ -3040,7 +3040,7 @@ Run offline Microsoft Defender Antivirus. You can read about how to do this in t
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that Microsoft Defender Antivirus does not support the current version of the platform and requires a new version of the platform.
+This error indicates that Microsoft Defender Antivirus doesn't support the current version of the platform and requires a new version of the platform.
 </td></tr><tr><td>Resolution</td><td>
 You can only use Microsoft Defender Antivirus in Windows 10 and Windows 11. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
 </tr>
@@ -3081,7 +3081,7 @@ Check your Internet connection, then run the scan again.
 <b>ERROR_MP_UI_CONSOLIDATION_BAS</b>E
 </td>
 <td rowspan="34">
-This is an internal error. The cause is not clearly defined.
+This is an internal error. The cause isn't clearly defined.
 </td>
 <td rowspan="36">
 
@@ -3360,7 +3360,7 @@ This is an internal error. The cause is not clearly defined.
 <b>ERR_MP_REMOVE_FAILED</b>
 </td>
 <td>
-This is an internal error. It might be triggered when malware removal is not successful.
+This is an internal error. It might be triggered when malware removal isn't successful.
 </td>
 </tr>
 <tr>
