@@ -79,13 +79,13 @@ Empty
 
 ## Response
 
-If successful and device exists - 200 OK with list of [user](user.md) entities in the body. If device was not found - 404 Not Found.
+If successful and device exists - 200 OK with list of [user](user.md) entities in the body. If device wasn't found - 404 Not Found.
 
 ## Example
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
@@ -93,7 +93,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c29
 
 ### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```http
 HTTP/1.1 200 OK

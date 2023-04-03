@@ -71,7 +71,7 @@ If successful, this method returns 200 OK with the security recommendations in t
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-chrome
@@ -79,7 +79,7 @@ GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-c
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 {
