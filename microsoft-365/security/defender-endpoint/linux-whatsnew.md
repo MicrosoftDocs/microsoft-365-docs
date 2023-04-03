@@ -33,6 +33,81 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+	<summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
+
+&ensp;Released: **March , 20,2023**<br/>
+&ensp;Published: **March 20, 2023**<br/>
+&ensp;Build: **101.98.30**<br/>
+&ensp;Release version: **30.123012.19830.0**<br/>
+&ensp;Engine version: **1.1.19900.2**<br/>
+&ensp;Signature version: **1.379.1299.0**<br/>
+**What's new**
+- This new release is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customers. There is no change for other customers and upgrade is optional. 
+</details>
+	
+<details>
+	<summary> March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)</summary>
+
+&ensp;Released: **March , 08,2023**<br/>
+&ensp;Published: **March 08, 2023**<br/>
+&ensp;Build: **101.98.05**<br/>
+&ensp;Release version: **30.123012.19805.0**<br/>
+&ensp;Engine version: **1.1.19900.2**<br/>
+&ensp;Signature version: **1.379.1299.0**<br/>
+
+**What's new**
+
+- There are multiple fixes and new changes in this release 
+	- Improved Data Completeness for Network Connection events.
+	- Improved Data Collection capabilities for file ownership/permissions changes
+	- seManage in part of the package, to that seLinux policies can be configured in different distro (fixed).
+	- Bug fix 
+		- Improved enterprise daemon stability.
+		- AuditD stop path clean-up: 
+		- Improve the stability of mdatp stop flow.
+	- Added new field to wdavstate to keep track of platform update time.
+	- Stability improvements to parsing Defender for Endpoint onboarding blob.
+	- Scan does not proceed if a valid license is not present (fixed)
+	- Added performance tracing option to xPlatClientAnalyzer, with tracing enabled mdatp process will be dumping the flow in all_process.zip file that can be used for analysis of performance issues.
+	- Added support in Defender for Endpoint for the below RHEL-6 kernel versions
+		- 2.6.32-754.43.1.el6.x86_64
+		- 2.6.32-754.49.1.el6.x86_64
+	- Other fixes
+	
+**Known issues**
+
+- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+
+
+```bash
+echo -c >> /etc/audit/rules.d/audit.rules
+augenrules --load
+```
+
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901)
+
+There are two ways to mitigate the problem in upgrading.
+
+Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+	
+As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+In case you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrade. 
+Caution: Some customers(<1%) are experiencing issues with this method. 
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+</details>
+
+	
+<details>
   <summary>Jan-2023 (Build: 101.94.13 | Release version: 30.122112.19413.0)</summary>
 
 &ensp;Released: **January 10, 2023**<br/>
@@ -58,7 +133,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **Known issues**
 
-- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines needs to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
 
 ```bash
 echo -c >> /etc/audit/rules.d/audit.rules
@@ -267,7 +342,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 - On RHEL 6, product can now be installed on devices running Unbreakable Enterprise Kernel (UEK)
 - Fixed an issue where the process name was sometimes incorrectly displayed as `unknown` when running `mdatp diagnostic real-time-protection-statistics`
 - Fixed a bug where the product sometimes was incorrectly detecting files inside the quarantine folder
-- Fixed an issue where the `mdatp` command-line tool was not working when `/opt` was mounted as a soft-link
+- Fixed an issue where the `mdatp` command-line tool wasn't working when `/opt` was mounted as a soft-link
 - Performance improvements & bug fixes
 </br>
 
@@ -406,7 +481,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
   <p><b>What's new</b></p>
 
-  - Starting with this version, we are bringing Microsoft Defender for Endpoint support to the following distros:
+  - Starting with this version, we're bringing Microsoft Defender for Endpoint support to the following distros:
 
     - RHEL6.7-6.10 and CentOS6.7-6.10 versions.
     - Amazon Linux 2
