@@ -379,4 +379,4 @@ For other Windows server versions, you have two options to offboard Windows serv
 - [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md)
 - [Troubleshooting Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
 - [Azure Active Directory Seamless single sign-on](/azure/active-directory/hybrid/how-to-connect-sso-quick-start)
-- [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt?view=o365-worldwide#instructions-for-applying-computer-join-rule-in-aad-connect)
+- [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#instructions-for-applying-computer-join-rule-in-aad-connect)
