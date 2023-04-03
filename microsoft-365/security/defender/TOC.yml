@@ -186,7 +186,7 @@
                    href: investigate-dlp.md
                  - name: Alerts
                    href: investigate-alerts.md    
-                 - name: Alert grading playbooks
+                 - name: Alert classification playbooks
                    items: 
                     - name: Overview
                       href: alert-grading-playbooks.md
