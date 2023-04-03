@@ -1,5 +1,5 @@
 ---
-title: Site templates for Microsoft Syntex
+title: Accelerate your solution with site templates for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -16,9 +16,9 @@ ms.localizationpriority:  medium
 description: Learn how to use and customize the ready-to-use site templates for Microsoft Syntex.
 ---
 
-# Site templates for Microsoft Syntex
+# Accelerate your solution with site templates for Microsoft Syntex
 
-SharePoint site templates for Microsoft Syntex are prebuilt, ready-to-deploy, and customizable. Use these templates to create a professional site to manage, process, and track the status of business documents in your organization.
+SharePoint site templates for Microsoft Syntex are prebuilt, ready-to-deploy, and customizable. Use these templates to jumpstart a professional site to manage, process, and track the status of business documents in your organization.
 
 |Site template |Description  |
 |---------|---------|
