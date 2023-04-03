@@ -58,7 +58,7 @@ This means there's suspicious user activity originating from an IP address that 
 
   - **Are the alerts coming from suspicious locations?** Check sign-in attempts from locations other than those typical for impacted user accounts. Multiple sign-in attempts from one or many users are helpful indicators.
 
-### 3. Investigate other security alerts
+### 3. Investigate suspicious user activity
 
   - **Are there unusual events with uncommon properties?** Unique properties for an impacted user, like unusual ISP, country, or city, might indicate suspicious sign-in patterns. 
 
@@ -73,6 +73,8 @@ This means there's suspicious user activity originating from an IP address that 
       - Modifications in PowerApps, like automated data transmission configuration through PowerAutomate
       - Modifications in Azure environments, like Azure portal subscription changes
       - Changes to SharePoint Online, like the impacted user account gaining access to multiple sites or files with sensitive/confidential/company-only content
+  
+  - **Inspect the impacted account's activities that occur within a short time span on multiple platforms.**
 
 ### 4. Investigate possible follow-on attacks
 
@@ -86,10 +88,6 @@ This means there's suspicious user activity originating from an IP address that 
 - Internal phishing attacks
 
   **Check whether the user received other alerts preceding the password spray activity.** Having these alerts indicate that the user account might be compromised. Examples include impossible travel alert, activity from infrequent country, and suspicious email deletion activity, among others.
-
-- Incident
-
-  **Check whether the alert is associated with other alerts that indicate an incident.** If so, then check whether the incident contains other true positive alerts.
 
 ## Advanced hunting queries
 
