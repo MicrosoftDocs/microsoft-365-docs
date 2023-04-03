@@ -42,7 +42,6 @@ If you're using Defender for Endpoint, you can specify an automation level so th
    - Specify a name and description for the device group.
    - In the **Automation level list**, select a level, such as **Full - remediate threats automatically**. The automation level determines whether remediation actions are taken automatically, or only upon approval. To learn more, see [Automation levels in automated investigation and remediation](automation-levels.md).
    - In the **Members** section, use one or more conditions to identify and include devices.
-> The Automated Investigation option has been removed from the Advanced features setting and is enabled by default for all users.
 
 4. Select **Done** when you're finished setting up your device group.
 
