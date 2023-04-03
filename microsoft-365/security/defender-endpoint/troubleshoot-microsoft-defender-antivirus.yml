@@ -1626,7 +1626,7 @@ sections:
      - question: Error code 0x80508024
        answer: |
 
-         Message: ERR_MP_FULL_SCAN_REQUIRED
+         Message: `ERR_MP_FULL_SCAN_REQUIRED`
 
          Possible reason: This error indicates that a full system scan might be required.
 
@@ -1635,7 +1635,7 @@ sections:
      - question: Error code 0x80508025
        answer: |
 
-         Message: ERR_MP_MANUAL_STEPS_REQUIRED
+         Message: `ERR_MP_MANUAL_STEPS_REQUIRED`
 
          Possible reason: This error indicates that manual steps are required to complete threat removal.
 
@@ -1644,7 +1644,7 @@ sections:
      - question: Error code 0x80508026
        answer: |
 
-         Message: ERR_MP_REMOVE_NOT_SUPPORTED
+         Message: `ERR_MP_REMOVE_NOT_SUPPORTED`
 
          Possible reason: This error indicates that removal inside the container type might not be not supported.
 
@@ -1653,7 +1653,7 @@ sections:
      - question: Error code 0x80508027
        answer: |
 
-         Message: ERR_MP_REMOVE_LOW_MEDIUM_DISABLED
+         Message: `ERR_MP_REMOVE_LOW_MEDIUM_DISABLED`
 
          Possible reason: This error indicates that removal of low and medium threats might be disabled.
 
@@ -1662,7 +1662,7 @@ sections:
      - question: Error code 0x80508029
        answer: |
 
-         Message: ERROR_MP_RESCAN_REQUIRED
+         Message: `ERROR_MP_RESCAN_REQUIRED`
 
          Possible reason: This error indicates a rescan of the threat is required.
 
@@ -1671,7 +1671,7 @@ sections:
      - question: Error code 0x80508030
        answer: |
 
-         Message: ERROR_MP_CALLISTO_REQUIRED
+         Message: `ERROR_MP_CALLISTO_REQUIRED`
 
          Possible reason: This error indicates that an offline scan is required.
 
@@ -1680,7 +1680,7 @@ sections:
      - question: Error code 0x80508031
        answer: |
 
-         Message: ERROR_MP_PLATFORM_OUTDATED
+         Message: `ERROR_MP_PLATFORM_OUTDATED`
 
          Possible reason: This error indicates that Microsoft Defender Antivirus doesn't support the current version of the platform and requires a new version of the platform.
 
@@ -1697,133 +1697,133 @@ sections:
      - question: Error code 0x80501004
        answer: |
 
-         Message displayed: ERROR_MP_NO_INTERNET_CONN
+         Message displayed: `ERROR_MP_NO_INTERNET_CONN`
 
          Possible reason for error and resolution: Check your Internet connection, then run the scan again.
 
      - question: Error code 0x80501000
        answer: |
 
-         Message displayed: ERROR_MP_UI_CONSOLIDATION_BASE
+         Message displayed: `ERROR_MP_UI_CONSOLIDATION_BASE`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80501001
        answer: |
 
-         Message displayed: ERROR_MP_ACTIONS_FAILED
+         Message displayed: `ERROR_MP_ACTIONS_FAILED`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80501002
        answer: |
 
-         Message displayed: ERROR_MP_NOENGINE
+         Message displayed: `ERROR_MP_NOENGINE`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80501003
        answer: |
 
-         Message displayed: ERROR_MP_ACTIVE_THREATS
+         Message displayed: `ERROR_MP_ACTIVE_THREATS`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x805011011
        answer: |
 
-         Message displayed: MP_ERROR_CODE_LUA_CANCELLED
+         Message displayed: `MP_ERROR_CODE_LUA_CANCELLED`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80501101
        answer: |
 
-         Message displayed: ERROR_LUA_CANCELLATION
+         Message displayed: `ERROR_LUA_CANCELLATION`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80501102
        answer: |
 
-         Message displayed: MP_ERROR_CODE_ALREADY_SHUTDOWN
+         Message displayed: `MP_ERROR_CODE_ALREADY_SHUTDOWN`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80501103
        answer: |
 
-         Message displayed: MP_ERROR_CODE_RDEVICE_S_ASYNC_CALL_PENDING
+         Message displayed: `MP_ERROR_CODE_RDEVICE_S_ASYNC_CALL_PENDING`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80501104
        answer: |
 
-         Message displayed: MP_ERROR_CODE_CANCELLED
+         Message displayed: `MP_ERROR_CODE_CANCELLED`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80501105
        answer: |
 
-         Message displayed: MP_ERROR_CODE_NO_TARGETOS
+         Message displayed: `MP_ERROR_CODE_NO_TARGETOS`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80501106
        answer: |
 
-         Message displayed: MP_ERROR_CODE_BAD_REGEXP
+         Message displayed: `MP_ERROR_CODE_BAD_REGEXP`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80501107
        answer: |
 
-         Message displayed: MP_ERROR_TEST_INDUCED_ERROR
+         Message displayed: `MP_ERROR_TEST_INDUCED_ERROR`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80501108
        answer: |
 
-         Message displayed: MP_ERROR_SIG_BACKUP_DISABLED
+         Message displayed: `MP_ERROR_SIG_BACKUP_DISABLED`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80508001
        answer: |
 
-         Message displayed: ERR_MP_BAD_INIT_MODULES
+         Message displayed: `ERR_MP_BAD_INIT_MODULES`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80508002
        answer: |
 
-         Message displayed: ERR_MP_BAD_DATABASE 
+         Message displayed: `ERR_MP_BAD_DATABASE`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80508004
        answer: |
 
-         Message displayed: ERR_MP_BAD_UFS
+         Message displayed: `ERR_MP_BAD_UFS`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x8050800C
        answer: |
 
-         Message displayed: ERR_MP_BAD_INPUT_DATA
+         Message displayed: `ERR_MP_BAD_INPUT_DATA`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x8050800D
        answer: |
 
-         Message displayed: ERR_MP_BAD_GLOBAL_STORAGE
+         Message displayed: `ERR_MP_BAD_GLOBAL_STORAGE`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
