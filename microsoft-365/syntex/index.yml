@@ -111,18 +111,6 @@ landingContent:
             url: automate-document-generation.md
 
     # Card 6
-  - title: More features
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Annotations
-            url: annotations.md
-          - text: Content query
-            url: metadata-search.md
-          - text: Content processing
-            url: content-processing-overview.md
-
-    # Card 7
   - title: Adoption
     linkLists:
       - linkListType: overview
@@ -142,7 +130,19 @@ landingContent:
           - text: Solution accelerators
             url: site-templates.md
 
-    # Card 10
+    # Card 7
+  - title: More features
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Annotations
+            url: annotations.md
+          - text: Content query
+            url: metadata-search.md
+          - text: Content processing
+            url: content-processing-overview.md
+
+    # Card 8
   - title: Extensibility
     linkLists:
       - linkListType: reference
