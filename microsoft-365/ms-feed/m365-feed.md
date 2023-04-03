@@ -40,7 +40,7 @@ In Microsoft Edge Enterprise New Tab Page, the new Feed experience will be rolle
 
 ## Privacy in Microsoft Feed
 
-The information in Microsoft Feed is tailored to each user. Users will only see documents or other content they have access to or that was shared directly with them. This can be documents that are stored in a shared folder in OneDrive or on a SharePoint site that the user has access to, or a link that someone shared in an email conversation or a Teams chat. 
+The information in Microsoft Feed is tailored to each user. Users will only see documents or other content they have access to or that was shared directly with them. This can be documents that are stored in a shared folder in OneDrive or on a SharePoint site that the user has access to, or a link that someone shared in an email conversation or a Teams chat.
 
 Microsoft Feed doesn’t change any permissions, so each user has a unique feed based on what they already have access to. Documents and information are not stored in Microsoft Feed, and changing permissions must be done from where the information is stored, such as in OneDrive or SharePoint.
 
@@ -56,14 +56,14 @@ In Microsoft 365, as a tenant admin, if you want to disable the new experience, 
 2.    **Select Support** > **New service request.**
 3.    If you're in the admin center, select **Support** > **New service request.**
 
-In Microsoft Edge, while signed in with a work or school account, as a tenant admin, if you want to disable the new experience, you can choose to *not show* Microsoft 365 content on the Microsoft Edge new tab page: 
+In Microsoft Edge, while signed in with a work or school account, as a tenant admin, if you want to disable the new experience, you can choose to *not show* Microsoft 365 content on the Microsoft Edge new tab page:
 
 1.    Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com)
 2.    Go to **Org settings** > **News.**
-3.    Under **News**, select **Microsoft Edge new tab page**.   
+3.    Under **News**, select **Microsoft Edge new tab page**.
 4.    *Clear* the box that says **Show Microsoft 365 content on the Microsoft Edge new tab page.**
 
-## Feedback
+## Provide feedback
 
 We would love to hear from you! To let us know what you think of this feature, you can reach us by:
 
