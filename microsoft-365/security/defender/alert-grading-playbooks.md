@@ -1,7 +1,7 @@
 ---
-title: Alert grading playbooks
+title: Alert classification playbooks
 description: Review the alerts for well-known attacks and take recommended actions to remediate the attack and protect your network.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
+keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, alert classification, alert grading, classify alert
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: dansimp
+ms.author: diannegali
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
@@ -23,17 +23,17 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.date: 01/14/2022
+ms.date: 04/03/2023
 ---
 
-# Alert grading playbooks
+# Alert classification playbooks
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft 365 Defender
 
-Alert grading playbooks allow you to methodically review and quickly classify the alerts for well-known attacks and take recommended actions to remediate the attack and protect your network. Alert grading will also help in properly classifying the overall incident.
+Alert classification playbooks allow you to methodically review and quickly classify the alerts for well-known attacks and take recommended actions to remediate the attack and protect your network. Alert classification will also help in properly classifying the overall incident.
 
 As a security researcher or security operations center (SOC) analyst, you must have access to the Microsoft 365 Defender portal so that you can:
 
@@ -85,12 +85,13 @@ Defender for Cloud Apps alerts can be classified as:
 - Benign true positive (B-TP) for suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
 - FP for confirmed non-malicious activity.
 
-## Alert grading playbooks
+## Alert classification playbooks
 
-See these playbooks for steps to more quickly grade alerts for the following threats:
+See these playbooks for steps to more quickly classify alerts for the following threats:
 
 - [Suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
+- [Suspicious IP address related to password spray activity](alert-grading-password-spray.md)
 
 See [Investigate alerts](investigate-alerts.md) for information on how to examine alerts with the Microsoft 365 Defender portal.

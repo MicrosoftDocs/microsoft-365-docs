@@ -1,7 +1,7 @@
 ---
-title: Suspicious IP address related to password spraying activity
+title: Alert classification for suspicious IP address related to password spraying activity
 description: Alert classification for suspicious IP address related to password spraying activity to review the alerts and take recommended actions to remediate the attack and protect your network.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, devices, users, 365, microsoft, m365, password, spray, alert classification, alert grading, cloud apps, suspicious IP
+keywords: incidents, alerts, investigate, analyze, response, correlation, attack, devices, users, 365, microsoft, m365, password, spray, alert classification, alert grading, cloud apps, suspicious IP, classify alert
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -22,10 +22,10 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 03/29/2022
+ms.date: 04/03/2022
 ---
 
-# Suspicious IP address related to password spraying activity
+# Alert classification for suspicious IP addresses related to password spray attacks
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.date: 03/29/2022
 
 Threat actors use password guessing techniques to gain access to user accounts. In a password spray attack, the threat actor might resort to a few of the most used passwords against many different accounts. Attackers successfully compromise accounts using password spraying since many users still utilize default and weak passwords.
 
-This guide helps you investigate instances where IP addresses have been labeled risky or associated with a password spray attack, or suspicious unexplained activities were detected, such as a user signing in from an unfamiliar location or a user getting unexpected multi-factor authentication (MFA) prompts. This guide is for security teams like the security operations center (SOC) and IT administrators who review, handle/manage, and classify the alerts. This guide helps in quickly classifying the alerts as either [true positive (TP) or false positive (FP)](investigate-alerts.md) and, in the case of TP, take recommended actions to remediate the attack and mitigate the security risks.
+This playbook helps you investigate instances where IP addresses have been labeled risky or associated with a password spray attack, or suspicious unexplained activities were detected, such as a user signing in from an unfamiliar location or a user getting unexpected multi-factor authentication (MFA) prompts. This guide is for security teams like the security operations center (SOC) and IT administrators who review, handle/manage, and classify the alerts. This guide helps in quickly classifying the alerts as either [true positive (TP) or false positive (FP)](investigate-alerts.md) and, in the case of TP, take recommended actions to remediate the attack and mitigate the security risks.
 
 The intended results of using this guide are:
 
