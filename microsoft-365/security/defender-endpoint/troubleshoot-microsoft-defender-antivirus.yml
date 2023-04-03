@@ -1529,10 +1529,6 @@ sections:
 
          Description: Microsoft Defender Antivirus grace period has expired. Protection against viruses, spyware, and other potentially unwanted software is disabled.
 
-           - Expiration Reason:
-
-           - Expiration Date:
-
            - Error Code: Error code Result code associated with threat status. Standard HRESULT values.
 
            - Error Description: Error description Description of the error.
