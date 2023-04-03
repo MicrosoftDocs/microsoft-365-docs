@@ -26,10 +26,11 @@ This article shows you how to confirm whether items matched by a classifier are 
 
 The **Match**, **Not a match** experience is available in:
 
-- Content Explorer
-- Sensitive Information Type Matched Items page
-- Trainable Classifier Matched Items page
-- Microsoft Purview Data Loss Prevention (DLP) Alerts page
+- Content Explorer - for SharePoint Online sites, OneDrive for Business sites
+- Sensitive Information Type Matched Items page - for SharePoint Online sites, OneDrive for Business sites
+- Trainable Classifier Matched Items page - for SharePoint Online sites, OneDrive for Business sites
+- Microsoft Purview Data Loss Prevention (DLP) Alerts page - for SharePoint Online sites, OneDrive for Business sites, and emails in Exchange Online
+- Microsoft Threat Protection (MTP) Alerts page - for SharePoint Online sites, OneDrive for Business sites, and emails in Exchange Online
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -47,7 +48,9 @@ The **Match**, **Not a match** experience is available in:
 |Custom trainable classifier |No| No| Yes|
 
 > [!IMPORTANT]
-> The match/not a match feedback experience supports items in SharePoint Online sites, OneDrive for Business sites, and emails in Exchange Online.
+> The match/not a match feedback experience supports items in :
+> SharePoint Online sites & OneDrive for Business sites - for Content Explorer, Sensitive Information Type/ Trainaable Classifier Matched Items page, DLP Alerts Page and MTP Alerts Page 
+> Emails in Exchange Online - for DLP Alerts Page and MTP Alerts Page.
 
 ## Licensing and Subscriptions
 
@@ -72,7 +75,7 @@ This example shows you how to use the **Contextual Summary** tab to give feedbac
 1. Open the **Microsoft Purview compliance portal** > **Data classification** > **Content explorer** page.
 1. Type the name of the SIT or trainable classifier that you want to check matches for in **Filter on labels, info types, or categories**.
 1. Select the SIT.
-1. Select the location. Only SharePoint, OneDrive are supported locations here. Make sure that there's a non-zero value in the **File** column.
+1. Select the location. Only SharePoint, OneDrive are supported locations here. Make sure that there's a non-zero value in the **Files** column.
 1. Open the folder and then select a document.
 1. Select the link in the **Sensitive info type** column for the document to see which SITs the item matched and the [confidence level](/microsoft-365/compliance/sensitive-information-type-learn-about.md#more-on-confidence-levels).
 1. Select **Close**
@@ -92,7 +95,7 @@ You can access the same feedback mechanisms in the **Sensitive Info types** page
 1. In the **Search** field, enter the name of the SIT whose accuracy you want to check.
 1. Open the SIT. This brings up **Overview** tab. Here you can see the count of the number of items that match, a count of the number of items that aren't a match, and the number of items with feedback.
 1. Select the **Matched items** tab.
-1. Open the folder and select a document.
+1. Open the folder and select a document. Only SharePoint, OneDrive are supported locations here. Make sure that there's a non-zero value in the **Files** column.
 1. Select the link in the **Sensitive info type** column for an item to see which SITs the item matched and the [confidence level](/microsoft-365/compliance/sensitive-information-type-learn-about.md#more-on-confidence-levels).
 1. Select **Close**.
 1. Open a document and then select the **Contextual Summary** tab.
@@ -108,7 +111,7 @@ You can access the same feedback mechanisms in the **Sensitive Info types** page
 1. Select the trainable classifier whose accuracy you want to check.
 1. Open the trainable classifier. This brings up **Overview** tab. Here you can see the count of the number of items that match, a count of the number of items that aren't a match, and the number of items with feedback.
 1. Select the **Matched items** tab.
-1. Open the folder and open a document.
+1. Open the folder and open a document. Only SharePoint, OneDrive are supported locations here. Make sure that there's a non-zero value in the **Files** column.
 1. Open a document and then select the **Contextual Summary** tab.
 1. Review the item and confirm whether it's a match.
 1. If it's a match, select **Match** and then **Close**.
