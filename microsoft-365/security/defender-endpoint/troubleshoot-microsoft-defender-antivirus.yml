@@ -1830,144 +1830,133 @@ sections:
      - question: Error code 0x8050800E
        answer: |
 
-         Message displayed: ERR_MP_OBSOLETE
+         Message displayed: `ERR_MP_OBSOLETE`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x8050800F
        answer: |
 
-         Message displayed: ERR_MP_NOT_SUPPORTED
+         Message displayed: `ERR_MP_NOT_SUPPORTED`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x8050800F
        answer: |
 
-         Message displayed: ERR_MP_NO_MORE_ITEMS
+         Message displayed: `ERR_MP_NO_MORE_ITEMS`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80508010
        answer: |
 
-         Message displayed: ERR_MP_NO_MORE_ITEMS
+         Message displayed: `ERR_MP_NO_MORE_ITEMS`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80508011
        answer: |
 
-         Message displayed: ERR_MP_DUPLICATE_SCANID
+         Message displayed: `ERR_MP_DUPLICATE_SCANID`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80508012
        answer: |
 
-         Message displayed: ERR_MP_BAD_SCANID
+         Message displayed: `ERR_MP_BAD_SCANID`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80508013
        answer: |
 
-         Message displayed: ERR_MP_BAD_USERDB_VERSION
+         Message displayed: `ERR_MP_BAD_USERDB_VERSION`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80508014
        answer: |
 
-         Message displayed: ERR_MP_RESTORE_FAILED
+         Message displayed: `ERR_MP_RESTORE_FAILED`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80508016
        answer: |
 
-         Message displayed: ERR_MP_BAD_ACTION
+         Message displayed: `ERR_MP_BAD_ACTION`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80508019
        answer: |
 
-         Message displayed: ERR_MP_NOT_FOUND
+         Message displayed: `ERR_MP_NOT_FOUND`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80509001
        answer: |
 
-         Message displayed: ERR_RELO_BAD_EHANDLE
+         Message displayed: `ERR_RELO_BAD_EHANDLE`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x80509003
        answer: |
 
-         Message displayed: ERR_RELO_KERNEL_NOT_LOADED
+         Message displayed: `ERR_RELO_KERNEL_NOT_LOADED`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x8050A001
        answer: |
 
-         Message displayed: ERR_MP_BADDB_OPEN
+         Message displayed: `ERR_MP_BADDB_OPEN`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x8050A002
        answer: |
 
-         Message displayed: ERR_MP_BADDB_HEADER
+         Message displayed: `ERR_MP_BADDB_HEADER`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x8050A003
        answer: |
 
-         Message displayed: ERR_MP_BADDB_OLDENGINE
+         Message displayed: `ERR_MP_BADDB_OLDENGINE`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x8050A004
        answer: |
 
-         Message displayed: ERR_MP_BADDB_CONTENT
+         Message displayed: `ERR_MP_BADDB_CONTENT`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x8050A005
        answer: |
 
-         Message displayed: ERR_MP_BADDB_NOTSIGNED
+         Message displayed: `ERR_MP_BADDB_NOTSIGNED`
 
          Possible reason for error and resolution: This is an internal error. The cause isn't clearly defined.
 
      - question: Error code 0x8050801
        answer: |
 
-         Message displayed: ERR_MP_REMOVE_FAILED
+         Message displayed: `ERR_MP_REMOVE_FAILED`
 
          Possible reason for error and resolution: This is an internal error. It might be triggered when malware removal isn't successful.
 
      - question: Error code 0x80508018
        answer: |
 
-         Message displayed: ERR_MP_SCAN_ABORTED
+         Message displayed: `ERR_MP_SCAN_ABORTED`
 
          Possible reason for error and resolution: This is an internal error. It might have triggered when a scan fails to complete.
-
-          [!TIP]
-           If you're looking for Antivirus related information for other platforms, see:
-             - [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences)
-             - [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
-             - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-             - [Set preferences for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-preferences)
-             - [Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux)
-             - [Configure Defender for Endpoint on Android features](/microsoft-365/security/defender-endpoint/android-configure)
-             - [Configure Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-configure-features)
-
 
