@@ -67,7 +67,7 @@ landingContent:
             url: prebuilt-overview.md
       - linkListType: video
         links:
-          - text: Model types
+          - text: Syntex model types
             url: https://www.microsoft.com/videoplayer/embed/RE4GJXS
       - linkListType: how-to-guide
         links:
