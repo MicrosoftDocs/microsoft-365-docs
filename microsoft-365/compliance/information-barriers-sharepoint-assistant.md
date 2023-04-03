@@ -5,7 +5,7 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 ms.reviewer: nibandyo
-ms.date: 02/27/2023
+ms.date: 03/31/2023
 audience: Admin
 f1.keywords:
 - CSH
@@ -29,8 +29,8 @@ This article explains how you can enable the information barrier compliance assi
 
 ## Prerequisites
 
-1. Make sure you [define policies for information barriers](/office365/securitycompliance/information-barriers-policies).
-2. [Configure information barrier segments on a SharePoint Site.](information-barriers.md)
+1. Make sure you [define policies for information barriers](/microsoft-365/compliance/information-barriers-policies).
+2. [Configure information barrier segments on a SharePoint Site.](/microsoft-365/compliance/information-barriers-sharepoint)
 3. [Install the Azure PowerShell module](/powershell/azure/install-az-ps)
 4. PowerShell account must have directory administrator access for the tenant.
 
@@ -74,7 +74,7 @@ To verify that a new application was properly created in your organization's ent
 
 8. In this example, the **M365-Group-Compliance-Assistant** is authorized to add/remove non-compliant information barrier users from your Microsoft 365 groups.
 
-You can use the [Microsoft Purview compliance portal](audit-log-search.md) to search, review, and track audit log events for the M365-Group-Compliance-Assistant application. The audit activities associated with the compliance assistant are:
+You can use [audit log search](audit-log-search.md) in the Microsoft Purview compliance portal to search, review, and track audit log events for the M365-Group-Compliance-Assistant application. The audit activities associated with the compliance assistant are:
 
 - **IB assistant removed group member**: The IB non-compliant group member was removed from the group by the compliance assistant.
 - **IB assistant removed group owner**: The IB non-compliant owner was removed from the group by the compliance assistant.

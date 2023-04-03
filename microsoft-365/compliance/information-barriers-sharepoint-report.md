@@ -1,5 +1,5 @@
 ---
-ms.date: 12/15/2020
+ms.date: 3/31/2023
 title: "Create an information barriers policy compliance report"
 description: "Learn how to find noncompliant sites after information barriers policies change."
 ms.author: robmazz
