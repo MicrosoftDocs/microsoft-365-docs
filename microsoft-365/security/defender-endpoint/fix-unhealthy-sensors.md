@@ -45,13 +45,13 @@ An inactive device isn't necessarily flagged because of an issue. The following 
 
 ### Device isn't in use
 
-Any device that isn't in use for more than seven days will retain 'Inactive' status in the portal.
+Any device that isn't in use for more than seven days retains 'Inactive' status in the portal.
 
 ### Device was reinstalled or renamed
 A new device entity is generated in Microsoft 365 Defender for reinstalled or renamed devices. The previous device entity remains, with an 'Inactive' status in the portal. If you reinstalled a device and deployed the Defender for Endpoint package, search for the new device name to verify that the device is reporting normally.
 
 ### Device was offboarded
-If the device was offboarded, it will still appear in devices list. After seven days, the device health state should change to inactive.
+If the device was offboarded, it still appears in devices list. After seven days, the device health state should change to inactive.
 
 ### Device isn't sending signals
 If the device isn't sending any signals to any Microsoft Defender for Endpoint channels for more than seven days for any reason, a device can be considered inactive; this includes conditions that fall under misconfigured devices classification.
@@ -64,7 +64,7 @@ Misconfigured devices can further be classified to:
 - No sensor data
 
 ### Impaired communications
-This status indicates that there is limited communication between the device and the service.
+This status indicates that there's limited communication between the device and the service.
 
 The following suggested actions can help fix issues related to a misconfigured device with impaired communications:
 

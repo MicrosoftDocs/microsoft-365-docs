@@ -167,6 +167,8 @@
           href: adoption-assessment-tool.md 
         - name: Run a trial
           href: trial-syntex.md
+        - name: Site templates
+          href: site-templates.md 
         - name: Solutions
           items:
             - name: Manage contracts in Microsoft 365
@@ -179,12 +181,6 @@
                  href: solution-manage-contracts-step2.md
                - name: Step 3. Use Power Automate
                  href: solution-manage-contracts-step3.md
-        - name: Site templates
-          items:
-            - name: Contracts management template
-              href: use-contracts-management-site.md 
-            - name: Content center template
-              href: use-content-center-site.md 
 
     - name: Video library 
       href: video-library.md
