@@ -14,10 +14,10 @@ ms.custom:
 description: Admins can learn how Attack simulation training in the Microsoft 365 Defender portal affects users and can gain insights from simulation and training outcomes.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/7/2023
+ms.date: 4/3/2023
 ---
 
-# Insights and reports for Attack simulation training in Defender for Office 365
+# Insights and reports for Attack simulation training
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -29,7 +29,7 @@ In Attack simulation training in Microsoft Defender for Office Plan 2 or Microso
 Insights and reports are available in the following locations on the **Attack simulation training** page in the Microsoft 365 Defender portal:
 
 - The **Overview** tab.
-- Simulation details flyout after you select an existing simulation on the **Simulations** tab.
+- The simulation report for in-progress or completed simulations that you select from the **Recent simulations** card on the **Overview** tab or on the **Simulations** tab.
 
 The rest of this article describes the available information.
 
@@ -85,7 +85,7 @@ Selecting **View training completion report** takes you to the [Training complet
 
 ### Repeat offenders card
 
-The **Repeat offenders** card on the **Overview** tab shows the information about repeat offenders. A _repeat offender_ is a user who was compromised by consecutive simulations. The default number of consecutive simulations is two, but you can change the value on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>.
+The **Repeat offenders** card on the **Overview** tab shows the information about repeat offenders. A _repeat offender_ is a user who was compromised by consecutive simulations. The default number of consecutive simulations is two, but you can change the value on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>. For more information, see [Configure the repeat offender threshold](attack-simulation-training-settings.md#configure-the-repeat-offender-threshold).
 
 The chart organizes repeat offender data by [simulation type](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
 
@@ -202,7 +202,7 @@ If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Exp
 
 :::image type="content" source="../../media/attack-sim-report-repeat-offenders-view.png" alt-text="The Repeat offenders tab in the Attack simulation report in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-report-repeat-offenders-view.png":::
 
-A _repeat offender_ is a user who was compromised by consecutive simulations. The default number of consecutive simulations is two, but you can change the value on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>.
+A _repeat offender_ is a user who was compromised by consecutive simulations. The default number of consecutive simulations is two, but you can change the value on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>. For more information, see [Configure the repeat offender threshold](attack-simulation-training-settings.md#configure-the-repeat-offender-threshold).
 
 On the **Repeat offenders** tab, the chart organizes repeat offender data by [simulation type](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
 
@@ -237,13 +237,16 @@ Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to fil
 
 If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
 
-## Insights and reports in the simulation details of Attack simulation training
+## Simulation report in Attack simulation training
 
-To go to the **Simulations** tab, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training**, and then select the **Simulations** tab. To go directly to the **Simulations** tab on the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
+To view the details of in-progress or completed simulations, use either of the following methods:
 
-When you select a simulation from the list, a details page opens. This page contains the configuration settings of the simulation that you would expect to see (status, launch date, payload used, etc.).
+- On the **Overview** tab at <https://security.microsoft.com/attacksimulator?viewid=overview>, select a simulation from the [Recent simulations card](#recent-simulations-card).
+- On the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations>, select a simulation by clicking anywhere other than the check box next to the name.
 
-The rest of this section describe the insights and reports that are available on the simulation details page.
+The page that opens contains **Report**, **Users** and **Details** tabs that contain information about the simulation. The rest of this section describe the insights and reports that are available on the **Report** tab.
+
+For details about the **Users** and **Details** tabs, see [View simulation details](attack-simulation-training-simulations.md#view-simulation-reports).
 
 ### Simulation impact section
 
