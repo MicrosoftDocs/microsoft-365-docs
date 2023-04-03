@@ -16,6 +16,7 @@ metadata:
   - m365-security
   - tier3
   search.appverid: met150
+  
 title: Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus
 summary: | 
  If you encounter a problem with Microsoft Defender Antivirus, you can search the below sections in this article to find a matching issue and potential solution.
