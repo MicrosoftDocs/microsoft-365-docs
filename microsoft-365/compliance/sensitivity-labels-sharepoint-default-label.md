@@ -128,6 +128,6 @@ As with all tenant-level configuration changes for SharePoint, it takes about 15
 
 Default labeling ensures a minimum level of protection but doesn't take into account the file contents that might require a higher level of protection. Consider supplementing this labeling method with [automatic labeling](apply-sensitivity-label-automatically.md) that uses content inspection, and encourage [manual labeling](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) for users to replace the default label when needed.
 
-## Related topics
+## Related resources
 
 [Microsoft Syntex Advanced Management overview](/sharepoint/advanced-management)
