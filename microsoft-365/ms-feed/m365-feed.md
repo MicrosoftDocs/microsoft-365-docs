@@ -1,6 +1,6 @@
 ---
 title: "Overview of the Microsoft Feed"
-ms.author: temanteleary
+ms.author: teleary
 author: temanteleary
 manager: scotv
 ms.date: 03/28/2023
@@ -46,7 +46,7 @@ Microsoft Feed doesn’t change any permissions, so each user has a unique feed 
 
 ## What controls are available?
 
-Microsoft Feed is built on Microsoft 365 and implicitly respects all settings and restrictions enabled by admins and users, such as People Insights (see more information on how to [Customize people insights privacy in Microsoft Graph](https://learn.microsoft.com/en-us/graph/insights-customize-people-insights-privacy)), and Item Insights (see more information on how item insights setting works [Item insights overview](https://learn.microsoft.com/en-us/graph/item-insights-overview)).
+Microsoft Feed is built on Microsoft 365 and implicitly respects all settings and restrictions enabled by admins and users, such as People Insights (see more information on how to [Customize people insights privacy in Microsoft Graph](https://learn.microsoft.com/graph/insights-customize-people-insights-privacy)), and Item Insights (see more information on how item insights setting works [Item insights overview](https://learn.microsoft.com/graph/item-insights-overview)).
 
 In addition, Microsoft Feed respects LinkedIn visibility settings (when a user prefers to limit the visibility of their profile information outside of LinkedIn). To learn more, see [Off-LinkedIn Visibility | LinkedIn Help](https://www.linkedin.com/help/linkedin/answer), and [Disconnecting Your LinkedIn and Microsoft Accounts and Managing Your Data | LinkedIn Help](https://www.linkedin.com/help/linkedin/answer).
 
