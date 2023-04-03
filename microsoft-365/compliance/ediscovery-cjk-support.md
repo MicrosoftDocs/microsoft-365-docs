@@ -53,7 +53,7 @@ It depends on your search scenario.
 
 For review set queries, you don't need to specify a document language. eDiscovery (Premium) automatically detects document languages when you add content to a review set. This helps you optimize your query results in a review set.
 
-**Can I see detected languages in [file metadata](ediscovery-view-documents-in-review-set.md#file-metadata)?**
+**Can I see detected languages in [file metadata](ediscovery-view-documents-in-review-set.md#metadata-view)?**
 
 No, you can't see detected languages in file metadata.
 

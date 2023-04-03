@@ -121,6 +121,8 @@
           href: content-assembly.md
         - name: Create a modern template
           href: content-assembly-modern-template.md
+        - name: Map template fields to library columns
+          href: content-assembly-map-fields.md
         - name: Edit a modern template
           href: content-assembly-edit-template.md
         - name: Create a document from a modern template 
@@ -130,18 +132,16 @@
      
     - name: Content processing
       items: 
+        - name: Overview 
+          href: content-processing-overview.md
         - name: Move or copy a file 
           href: content-processing-create-rules.md
-     
+
     - name: Content query
-      items: 
-        - name: Use metadata to find content in document libraries 
-          href: metadata-search.md
+      href: metadata-search.md
      
     - name: Annotations
-      items: 
-        - name: Use annotations to collaborate 
-          href: annotations.md
+      href: annotations.md
 
     - name: Taxonomy
       items:
