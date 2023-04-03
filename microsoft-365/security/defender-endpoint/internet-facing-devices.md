@@ -75,7 +75,7 @@ To learn more about an internet-facing device, select the device in the device i
 
 This pane includes details on whether the device was detected by a Microsoft external scan or received an external incoming communication. The external network interface address and port fields provide details on the external IP and port that were scanned at the time this device was identified as internet facing.
 
-The local network interface address and port for this device, along with the last time the device was identified as internet facing is also shown.
+The local network interface address and port for this device, along with the last time the device was identified as internet facing are also shown.
 
 ## Use advanced hunting
 
@@ -133,12 +133,6 @@ DeviceNetworkEvents
 >[!Note]
 > Process related information is only available for UDP connections.
 
-If the above query fails to provide the relevant connections, you can use socket collection methods to retrieve the source process. To learn more about different tools and capabilities available to do this, see:
-
-- [Defender for Endpoint live response](live-response.md)
-- [Microsoft Network Monitor](/troubleshoot/windows-client/networking/collect-data-using-network-monitor)
-- [Netstat for Windows](/windows-server/administration/windows-commands/netstat)
-
 For UDP connections, gain insights into devices that were identified as host reachable but may not have established a connection (for example, as a result of the host firewall policy) using the following query:
 
 ```kusto
@@ -147,6 +141,11 @@ DeviceNetworkEvents
 |where Protocol == "Udp"
 |where ActionType == "InboundInternetScanInspected"
 ```
+If the above query fails to provide the relevant connections, you can use socket collection methods to retrieve the source process. To learn more about different tools and capabilities available to do this, see:
+
+- [Defender for Endpoint live response](live-response.md)
+- [Microsoft Network Monitor](/troubleshoot/windows-client/networking/collect-data-using-network-monitor)
+- [Netstat for Windows](/windows-server/administration/windows-commands/netstat)
 
 ## Report inaccuracy
 
