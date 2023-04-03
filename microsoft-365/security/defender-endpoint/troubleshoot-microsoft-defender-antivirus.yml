@@ -255,7 +255,7 @@ sections:
        answer: |
 
          Symbolic name: `MALWAREPROTECTION_MALWARE_ACTION_FAILED`
-         
+
          Message: The antimalware platform attempted to perform an action to protect your system from malware or other potentially unwanted software, but the action failed.
 
          Description: Microsoft Defender Antivirus has encountered an error when taking action on malware or other potentially unwanted software. For more information, see the following:
@@ -301,7 +301,7 @@ sections:
      - question: Event ID 1009
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_QUARANTINE_RESTORE
+         Symbolic name: `MALWAREPROTECTION_QUARANTINE_RESTORE`
 
          Message: The antimalware platform restored an item from quarantine.
 
@@ -326,7 +326,7 @@ sections:
      - question: Event ID 1010
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_QUARANTINE_RESTORE_FAILED
+         Symbolic name: `MALWAREPROTECTION_QUARANTINE_RESTORE_FAILED`
 
          Message: The antimalware platform couldn't restore an item from quarantine.
 
@@ -355,7 +355,7 @@ sections:
      - question: Event ID 1011
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_QUARANTINE_DELETE
+         Symbolic name: `MALWAREPROTECTION_QUARANTINE_DELETE`
 
          Message: The antimalware platform deleted an item from quarantine.
 
@@ -380,7 +380,7 @@ sections:
      - question: Event ID 1012
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_QUARANTINE_DELETE_FAILED
+         Symbolic name: `MALWAREPROTECTION_QUARANTINE_DELETE_FAILED`
 
          Message: The antimalware platform couldn't delete an item from quarantine.
 
@@ -409,7 +409,7 @@ sections:
      - question: Event ID 1013 
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_MALWARE_HISTORY_DELETE
+         Symbolic name: `MALWAREPROTECTION_MALWARE_HISTORY_DELETE`
 
          Message: The antimalware platform deleted history of malware and other potentially unwanted software.
 
@@ -422,7 +422,7 @@ sections:
      - question: Event ID 1014
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_MALWARE_HISTORY_DELETE_FAILED
+         Symbolic name: `MALWAREPROTECTION_MALWARE_HISTORY_DELETE_FAILED`
 
          Message: The antimalware platform couldn't delete history of malware and other potentially unwanted software.
 
@@ -439,7 +439,7 @@ sections:
      - question: Event ID 1015
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_BEHAVIOR_DETECTED 
+         Symbolic name: `MALWAREPROTECTION_BEHAVIOR_DETECTED`
 
          Message: The antimalware platform detected suspicious behavior.
 
@@ -498,7 +498,7 @@ sections:
      - question: Event ID 1116
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_STATE_MALWARE_DETECTED 
+         Symbolic name: `MALWAREPROTECTION_STATE_MALWARE_DETECTED` 
 
          Message: The antimalware platform detected malware or other potentially unwanted software.
 
@@ -551,7 +551,7 @@ sections:
      - question: Event ID 1117
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_STATE_MALWARE_ACTION_TAKEN
+         Symbolic name: `MALWAREPROTECTION_STATE_MALWARE_ACTION_TAKEN`
 
          Message: The antimalware platform performed an action to protect your system from malware or other potentially unwanted software.
 
@@ -652,7 +652,7 @@ sections:
      - question: Event ID 1118
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_STATE_MALWARE_ACTION_FAILED
+         Symbolic name: `MALWAREPROTECTION_STATE_MALWARE_ACTION_FAILED`
 
          Message: The antimalware platform attempted to perform an action to protect your system from malware or other potentially unwanted software, but the action failed. 
 
@@ -727,7 +727,7 @@ sections:
      - question: Event ID 1119
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_STATE_MALWARE_ACTION_CRITICALLY_FAILED
+         Symbolic name: `MALWAREPROTECTION_STATE_MALWARE_ACTION_CRITICALLY_FAILED`
 
          Message: The antimalware platform encountered a critical error when trying to take action on malware or other potentially unwanted software. There are more details in the event message.
 
@@ -822,7 +822,7 @@ sections:
      - question: Event ID 1120
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_THREAT_HASH
+         Symbolic name: `MALWAREPROTECTION_THREAT_HASH`
 
          Message: Microsoft Defender Antivirus has deduced the hashes for a threat resource.
 
@@ -856,7 +856,7 @@ sections:
      - question: Event ID 1127
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_FOLDER_GUARD_SECTOR_BLOCK
+         Symbolic name: `MALWAREPROTECTION_FOLDER_GUARD_SECTOR_BLOCK`
 
          Message: Controlled Folder Access(CFA) blocked an untrusted process from making changes to the memory.
 
@@ -901,7 +901,7 @@ sections:
      - question: Event ID 1150
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SERVICE_HEALTHY
+         Symbolic name: MALWAREPROTECTION_SERVICE_HEALTHY`
 
          Message: If your antimalware platform reports status to a monitoring platform, this event indicates that the antimalware platform is running and in a healthy state.
 
@@ -918,7 +918,7 @@ sections:
      - question: Event ID 1151
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SERVICE_HEALTH_REPORT
+         Symbolic name: `MALWAREPROTECTION_SERVICE_HEALTH_REPORT`
 
          Message: Endpoint Protection client health report (time in UTC)
 
@@ -952,19 +952,19 @@ sections:
 
           - Last full scan age: Last full scan age (in days)
 
-          - Antivirus signature creation time: ?Antivirus signature creation time
+          - Antivirus signature creation time: Antivirus signature creation time
 
-          - Antispyware signature creation time: ?Antispyware signature creation time
+          - Antispyware signature creation time: Antispyware signature creation time
 
-          - Last quick scan start time: ?Last quick scan start time
+          - Last quick scan start time: Last quick scan start time
 
-          - Last quick scan end time: ?Last quick scan end time
+          - Last quick scan end time: Last quick scan end time
 
           - Last quick scan source: Last quick scan source (0 = scan didn't run, 1 = user initiated, 2 = system initiated)
 
-          - Last full scan start time: ?Last full scan start time
+          - Last full scan start time: Last full scan start time
 
-          - Last full scan end time: ?Last full scan end time
+          - Last full scan end time: Last full scan end time
 
           - Last full scan source: Last full scan source (0 = scan didn't run, 1 = user initiated, 2 = system initiated)
 
@@ -973,7 +973,7 @@ sections:
      - question: Event ID 2000
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SIGNATURE_UPDATED
+         Symbolic name: `MALWAREPROTECTION_SIGNATURE_UPDATED`
 
          Message: The antimalware definitions updated successfully.
 
@@ -998,7 +998,7 @@ sections:
      - question: Event ID 2001
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SIGNATURE_UPDATE_FAILED
+         Symbolic name: `MALWAREPROTECTION_SIGNATURE_UPDATE_FAILED`
 
          Message: The security intelligence update failed.
 
@@ -1049,7 +1049,7 @@ sections:
      - question: Event ID 2002
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_ENGINE_UPDATED 
+         Symbolic name: `MALWAREPROTECTION_ENGINE_UPDATED` 
 
          Message: The antimalware engine updated successfully.
 
@@ -1068,7 +1068,7 @@ sections:
      - question: Event ID 2003
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_ENGINE_UPDATE_FAILED
+         Symbolic name: `MALWAREPROTECTION_ENGINE_UPDATE_FAILED`
 
          Message: The antimalware engine update failed.
 
@@ -1095,7 +1095,7 @@ sections:
      - question: Event ID 2004
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SIGNATURE_REVERSION
+         Symbolic name: `MALWAREPROTECTION_SIGNATURE_REVERSION`
 
          Message: There was a problem loading antimalware definition. The antimalware engine attempts to load the last-known good set of definitions.
 
@@ -1124,7 +1124,7 @@ sections:
      - question: Event ID 2005
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_ENGINE_UPDATE_PLATFORMOUTOFDATE
+         Symbolic name: `MALWAREPROTECTION_ENGINE_UPDATE_PLATFORMOUTOFDATE`
 
          Message: The antimalware engine failed to load because the antimalware platform is out of date. The antimalware platform loads the last-known good antimalware engine and attempt to update.
 
@@ -1135,7 +1135,7 @@ sections:
      - question: Event ID 2006
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_PLATFORM_UPDATE_FAILED
+         Symbolic name: `MALWAREPROTECTION_PLATFORM_UPDATE_FAILED`
 
          Message: The platform update failed.
 
@@ -1150,7 +1150,7 @@ sections:
      - question: Event ID 2007
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_PLATFORM_ALMOSTOUTOFDATE
+         Symbolic name: `MALWAREPROTECTION_PLATFORM_ALMOSTOUTOFDATE`
 
          Message: The platform will soon be out of date. Download the latest platform to maintain up-to-date protection.
 
@@ -1161,7 +1161,7 @@ sections:
      - question: Event ID 2010
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SIGNATURE_FASTPATH_UPDATED
+         Symbolic name: `MALWAREPROTECTION_SIGNATURE_FASTPATH_UPDATED`
 
          Message: The antimalware engine used the Dynamic Signature Service to get additional definitions.
 
@@ -1188,7 +1188,7 @@ sections:
      - question: Event ID 2011
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SIGNATURE_FASTPATH_DELETED
+         Symbolic name: `MALWAREPROTECTION_SIGNATURE_FASTPATH_DELETED`
 
          Message: The Dynamic Signature Service deleted the out-of-date dynamic definitions.
 
@@ -1196,10 +1196,10 @@ sections:
 
            When a dynamic signature is received by MDE, a 2010 event is reported. However, when the dynamic signature expires or is manually deleted a 2011 event is reported. In some cases, when a new signature is delivered to MDE sometimes hundreds of dynamic signatures expire at the same time; therefore hundreds of 2011 events are reported. The generation of so many 2011 events can cause a Security information and event management (SIEM) server to become flooded.
 
-           To avoid the above situation - starting with platform version 4.18.2207.7 - by default, MDE will now *not* report 2011 events:
+           To avoid the previously described situation - starting with platform version 4.18.2207.7 - by default, Defender for Endpoint will now *not* report 2011 events:
 
-            - This new default behavior is controlled by registry entry: **HKLM\SOFTWARE\Microsoft\Windows Defender\Reporting\EnableDynamicSignatureDroppedEventReporting.**
-            - The default value for **EnableDynamicSignatureDroppedEventReporting** is **false**, which means 2011 *events aren't reported*. If it's set to true, 2011 *events are reported*.
+            - This new default behavior is controlled by registry entry: `HKLM\SOFTWARE\Microsoft\Windows Defender\Reporting\EnableDynamicSignatureDroppedEventReporting`.
+            - The default value for `EnableDynamicSignatureDroppedEventReporting` is **false**, which means 2011 *events aren't reported*. If it's set to true, 2011 *events are reported*.
   
            Because 2010 signature events are timely distributed sporadically - and won't cause a spike - 2010 signature event behavior is unchanged.
 
@@ -1230,7 +1230,7 @@ sections:
      - question: Event ID 2012
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SIGNATURE_FASTPATH_UPDATE_FAILED
+         Symbolic name: `MALWAREPROTECTION_SIGNATURE_FASTPATH_UPDATE_FAILED`
 
          Message: The antimalware engine encountered an error when trying to use the Dynamic Signature Service.
 
@@ -1263,7 +1263,7 @@ sections:
      - question: Event ID 2013
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SIGNATURE_FASTPATH_DELETED_ALL
+         Symbolic name: `MALWAREPROTECTION_SIGNATURE_FASTPATH_DELETED_ALL`
 
          Message: The Dynamic Signature Service deleted all dynamic definitions.
 
@@ -1274,7 +1274,7 @@ sections:
      - question: Event ID 2020
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_CLOUD_CLEAN_RESTORE_FILE_DOWNLOADED
+         Symbolic name: `MALWAREPROTECTION_CLOUD_CLEAN_RESTORE_FILE_DOWNLOADED`
 
          Message: The antimalware engine downloaded a clean file.
 
@@ -1289,7 +1289,7 @@ sections:
      - question: Event ID 2021
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_CLOUD_CLEAN_RESTORE_FILE_DOWNLOAD_FAILED
+         Symbolic name: `MALWAREPROTECTION_CLOUD_CLEAN_RESTORE_FILE_DOWNLOAD_FAILED`
 
          Message: The antimalware engine failed to download a clean file.
 
@@ -1310,7 +1310,7 @@ sections:
      - question: Event ID 2030
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_OFFLINE_SCAN_INSTALLED
+         Symbolic name: `MALWAREPROTECTION_OFFLINE_SCAN_INSTALLED`
 
          Message: The antimalware engine was downloaded and is configured to run offline on the next system restart.
 
@@ -1319,7 +1319,7 @@ sections:
      - question: Event ID 2031
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_OFFLINE_SCAN_INSTALL_FAILED
+         Symbolic name: `MALWAREPROTECTION_OFFLINE_SCAN_INSTALL_FAILED`
 
          Message: The antimalware engine was unable to download and configure an offline scan.
 
@@ -1332,7 +1332,7 @@ sections:
      - question: Event ID 2040
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_OS_EXPIRING
+         Symbolic name: `MALWAREPROTECTION_OS_EXPIRING`
 
          Message: Antimalware support for this operating system version will soon end. 
 
@@ -1341,7 +1341,7 @@ sections:
      - question: Event ID 2041
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_OS_EOL
+         Symbolic name: `MALWAREPROTECTION_OS_EOL`
 
          Message: Antimalware support for this operating system has ended. You must upgrade the operating system for continued support.
 
@@ -1350,7 +1350,7 @@ sections:
      - question: Event ID 2042
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_PROTECTION_EOL
+         Symbolic name: `MALWAREPROTECTION_PROTECTION_EOL`
 
          Message: The antimalware engine no longer supports this operating system, and is no longer protecting your system from malware.
 
@@ -1359,7 +1359,7 @@ sections:
      - question: Event ID 3002
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_RTP_FEATURE_FAILURE
+         Symbolic name: `MALWAREPROTECTION_RTP_FEATURE_FAILURE`
 
          Message: Real-time protection encountered an error and failed.
 
@@ -1378,7 +1378,7 @@ sections:
      - question: Event ID 3007
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_RTP_FEATURE_RECOVERED
+         Symbolic name: `MALWAREPROTECTION_RTP_FEATURE_RECOVERED`
 
          Message: Real-time protection recovered from a failure. We recommend running a full system scan when you see this error. 
 
@@ -1393,7 +1393,7 @@ sections:
      - question: Event ID 5000
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_RTP_ENABLED
+         Symbolic name: `MALWAREPROTECTION_RTP_ENABLED`
 
          Message: Real-time protection is enabled. 
 
@@ -1402,7 +1402,7 @@ sections:
      - question: Event ID 5001
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_RTP_DISABLED
+         Symbolic name: `MALWAREPROTECTION_RTP_DISABLED`
 
          Message: Real-time protection is disabled.
 
@@ -1411,7 +1411,7 @@ sections:
      - question: Event ID 5004
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_RTP_FEATURE_CONFIGURED
+         Symbolic name: `MALWAREPROTECTION_RTP_FEATURE_CONFIGURED`
 
          Message: The real-time protection configuration changed.
 
@@ -1423,7 +1423,7 @@ sections:
      - question: Event ID 5007
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_CONFIG_CHANGED
+         Symbolic name: `MALWAREPROTECTION_CONFIG_CHANGED`
 
          Message: The antimalware platform configuration changed.
 
@@ -1436,7 +1436,7 @@ sections:
      - question: Event ID 5008
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_ENGINE_FAILURE
+         Symbolic name: `MALWAREPROTECTION_ENGINE_FAILURE`
 
          Message: The antimalware engine encountered an error and failed.
 
@@ -1469,7 +1469,7 @@ sections:
      - question: Event ID 5009
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_ANTISPYWARE_ENABLED
+         Symbolic name: `MALWAREPROTECTION_ANTISPYWARE_ENABLED`
 
          Message: Scanning for malware and other potentially unwanted software is enabled.
 
@@ -1478,7 +1478,7 @@ sections:
      - question: Event ID 5010
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_ANTISPYWARE_DISABLED
+         Symbolic name: `MALWAREPROTECTION_ANTISPYWARE_DISABLED`
 
          Message: Scanning for malware and other potentially unwanted software is disabled.
 
@@ -1487,7 +1487,7 @@ sections:
      - question: Event ID 5011
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_ANTIVIRUS_ENABLED
+         Symbolic name: `MALWAREPROTECTION_ANTIVIRUS_ENABLED`
 
          Message: Scanning for viruses is enabled.
 
@@ -1496,7 +1496,7 @@ sections:
      - question: Event ID 5012
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_ANTIVIRUS_DISABLED
+         Symbolic name: `MALWAREPROTECTION_ANTIVIRUS_DISABLED`
 
          Message: Scanning for viruses is disabled.
 
@@ -1505,7 +1505,7 @@ sections:
      - question: Event ID 5013
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SCAN_CANCELLED
+         Symbolic name: `MALWAREPROTECTION_SCAN_CANCELLED`
 
          Message: Tamper protection blocked a change to Microsoft Defender Antivirus. 
 
@@ -1514,7 +1514,7 @@ sections:
      - question: Event ID 5100
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_EXPIRATION_WARNING_STATE
+         Symbolic name: `MALWAREPROTECTION_EXPIRATION_WARNING_STATE`
 
          Message: The antimalware platform will expire soon.
 
@@ -1527,7 +1527,7 @@ sections:
      - question: Event ID 5101
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_DISABLED_EXPIRED_STATE
+         Symbolic name: `MALWAREPROTECTION_DISABLED_EXPIRED_STATE`
 
          Message: The antimalware platform is expired.
 
@@ -1557,7 +1557,7 @@ sections:
      - question: Error code 0x80508007
        answer: |
 
-         Message:	ERR_MP_NO_MEMORY
+         Message:	`ERR_MP_NO_MEMORY`
 
          Possible reason:	This error indicates that you might have run out of memory.
 
@@ -1572,7 +1572,7 @@ sections:
      - question: Error code 0x8050800C
        answer: |
 
-         Message: ERR_MP_BAD_INPUT_DATA
+         Message: `ERR_MP_BAD_INPUT_DATA`
 
          Possible reason: This error indicates that there might be a problem with your security product.
 
@@ -1586,7 +1586,7 @@ sections:
 
               - Download the latest definitions from the [Microsoft Security Intelligence site](https://www.microsoft.com/wdsi).
 
-               [!Note]
+               [!NOTE]
                 The size of the definitions file downloaded from the site can exceed 60 MB and shouldn't be used as a long-term solution for updating definitions.
 
           - Run a full scan.
@@ -1596,28 +1596,28 @@ sections:
      - question: Error code 0x80508020
        answer: |
 
-         Message: ERR_MP_BAD_CONFIGURATION
+         Message: `ERR_MP_BAD_CONFIGURATION`
 
          Possible reason: This error indicates that there might be an engine configuration error; commonly, this is related to input data that doesn't allow the engine to function properly.	
 
      - question: Error code 0x805080211
        answer: |
 
-         Message: ERR_MP_QUARANTINE_FAILED
+         Message: `ERR_MP_QUARANTINE_FAILED`
 
          Possible reason: This error indicates that Microsoft Defender Antivirus failed to quarantine a threat.
 
      - question: Error code 0x80508022
        answer: |
 
-         Message: ERR_MP_REBOOT_REQUIRED
+         Message: `ERR_MP_REBOOT_REQUIRED`
 
          Possible reason: This error indicates that a reboot is required to complete threat removal.
 
      - question: Error code 0x80508023
        answer: |
 
-         Message: ERR_MP_THREAT_NOT_FOUND
+         Message: `ERR_MP_THREAT_NOT_FOUND`
 
          Possible reason: This error indicates that the threat might no longer be present on the media, or malware might be stopping you from scanning your device.
 
