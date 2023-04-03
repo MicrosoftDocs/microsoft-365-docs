@@ -27,7 +27,7 @@ ms.date: 1/31/2023
 
 Before you make change(s) to your security configuration, such as policies or transport rules, it's important to understand the impact of the change(s) so that you can plan and ensure *minimal* disruption to your organization.
 
-This step-by-step guide will take you through assessing a change, and exporting the impacted emails for assessment. The procedure can be applied to many different changes, by altering the criteria (filters) you use in explorer.
+This step-by-step guide takes you through assessing a change, and exporting the impacted emails for assessment. The procedure can be applied to many different changes, by altering the criteria (filters) you use in explorer.
 
 ## What you'll need
 
@@ -53,9 +53,9 @@ This step-by-step guide will take you through assessing a change, and exporting 
 1. Press the **filter** button (defaulted to *Sender*) and add either a sender or sender domain filter, then add the entry where you wish to assess the impact of removal.
 1. Expand the date range to the maximum & press **Refresh** You should now see mail listed if the sender / sending domain is still active in messaging your organization. If *not* you may need to tweak the filter, or alternatively you no longer receive mail from that domain / sender and can remove the entry safely.
 1. If mail is listed, this means the entry is still an active sender. Pivot the data in the chart using the data slicer (defaulted to *Delivery action*) to **Detection technology**.
-1. The chart should refresh, and if it now displays no data, this means we have not detected any threats on any of the mail previously shown, which indicates an override is not needed, as there is no detection to override.
-1. If there is data displayed when the data is sliced by **Detection technology**, this means removing the override *would* have impact on this sender / domain due to the protection stack taking action.
-1. You should investigate the mail further to assess if it is truly malicious and the entry can be removed, or if it is a *false positive* and should be remediated so it is no longer incorrectly detected as a threat (authentication is the biggest cause of false positives).
+1. The chart should refresh, and if it now displays no data, this means we haven't detected any threats on any of the mail previously shown, which indicates an override isn't needed, as there's no detection to override.
+1. If there's data displayed when the data is sliced by **Detection technology**, this means removing the override *would* have impact on this sender / domain due to the protection stack taking action.
+1. You should investigate the mail further to assess if it's truly malicious and the entry can be removed, or if it's a *false positive* and should be remediated so it's no longer incorrectly detected as a threat (authentication is the biggest cause of false positives).
 
 ### Further reading
 

@@ -47,7 +47,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new in Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
 - [What's new for Teams admins](/OfficeUpdates/teams-admin)
-- [Office updates](/OfficeUpdates/)
+- [Microsoft 365 updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
 ## December 2022
