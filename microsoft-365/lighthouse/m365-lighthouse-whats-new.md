@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 03/31/2023
+ms.date: 04/03/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -28,6 +28,28 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
+
+## March 2023
+
+### Microsoft Defender for Endpoint multi-tenant threat and vulnerability management
+
+Microsoft Defender Vulnerability Management helps proactively identify and build a secure foundation for devices through the remediation of software vulnerabilities and misconfigurations in customer environments. Microsoft 365 Lighthouse now includes Vulnerability Management capabilities. Go to **Devices** > [Vulnerability management](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/VulnerabilityManagement.ReactView) to see the exposure score across all your managed tenants that have been onboarded to Microsoft Defender for Endpoint. To see security recommendations for how to reduce tenants' exposure to vulnerabilities, select the **Recommendations** tab.
+
+### Device security insights from Microsoft Defender for Business and Microsoft Defender for Endpoint
+
+Microsoft 365 Lighthouse now surfaces summarized insights into the various security alerts from Microsoft Defender for Business and Microsoft Defender for Endpoint across your managed tenants. To access these insights, go to **Devices** > **Device security** > [Overview](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/MDE.ReactView). These insights can help you assess the overall status, severity, and category of the various security alerts in your tenants before drilling into the full list of alerts.
+
+### Tenants page improvements
+
+We've updated the [Tenants page](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) to help you more easily manage your customer tenants in Microsoft 365 Lighthouse. Using the new List options feature, which you access by selecting the icon next to the search box, you can now view your customer tenants by domain name or tenant ID. We've also updated the Tenants page to reflect the new Granular Delegated Admin Privileges (GDAP) setup and Lighthouse management capabilities.
+
+You'll notice that customer tenants that don't meet the criteria to be fully managed in Microsoft 365 Lighthouse (for example, they don't have GDAP set up or they're missing a required subscription) show a Lighthouse management status of **Limited**. These tenants are eligible for only a limited set of experiences in Microsoft 365 Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health.
+
+Lastly, we've added a new pane that details the customer criteria for each of your customer tenants. For customers with a **Limited** Lighthouse management status, for example, you can select the tenant name to open this pane and see a detailed status and recommended next steps.
+
+### Deployment status reporting
+
+Microsoft 365 Lighthouse now provides a deployment plan status for each active tenant to help you optimize and prioritize your deployment efforts. The deployment plan status is found on the Tenants page and on the new Deployment insights page.
 
 ## February 2023
 
