@@ -129,9 +129,8 @@ Here's the descriptions of the pre-collection estimate management options.
 
         - Include Microsoft Teams and Yammer conversations
         - Include cloud attachments
-        - Remove duplicates from Exchange content
         - Include all existing versions of Microsoft 365 documents on SharePoint
-        - Include subfolder contents (outside of a matched folder)
+        - Include subfolder contents (insider subfolders of a matched folder)
         - Include files in SharePoint lists (and their child items)
 
 - **Export collected items**: Export the collected items without adding the items to the review set. This option is useful in scenarios where data residency requirements associated with data storage may be prohibitive and you need collected data as a download. After selecting, you have the following export options for collected items:
@@ -140,20 +139,15 @@ Here's the descriptions of the pre-collection estimate management options.
 
         - Include Microsoft Teams and Yammer conversations
         - Include cloud attachments
-        - Remove duplicates from Exchange content
         - Include all existing versions of Microsoft 365 documents on SharePoint
-        - Include subfolder contents (outside of a matched folder)
+        - Include subfolder contents (inside subfolders of a matched folder)
         - Include files in SharePoint lists (and their child items)
 
     - **How to format emails**: Choose an option of how collected emails should be formatted:
 
-        - Individual .eml files for each message
         - Individual .pst files for each mailbox
-        - Single .pst file containing all messages in existing folders
-        - Single .pst file containing all messages in a single folder
-        - Place individual messages and Microsoft 365 documents in a .zip file
-
-    When the collected items are exported
+        - Individual .msg files for each message
+        - Individual .eml files for each message
 
 - **Delete collection**: Delete a collection estimate. After you commit a collection estimate to a review set, it can't be deleted.
 - **Refresh estimates**: Rerun the query (against the data sources) specified in the collection estimate to update the search estimates and statistics.
