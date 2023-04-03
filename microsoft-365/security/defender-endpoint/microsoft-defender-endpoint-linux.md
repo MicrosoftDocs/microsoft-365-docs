@@ -171,7 +171,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - `fuse`
   - `fuseblk`
   - `jfs`
-  - `nfs`
+  - `nfs (v3 only)`
   - `overlay`
   - `ramfs`
   - `reiserfs`

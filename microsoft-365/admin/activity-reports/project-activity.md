@@ -28,9 +28,6 @@ description: "Learn how to get the Project activity report and gain insights int
 
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
 
-> [!NOTE]
-> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
-
 In the **Project activity report**, you can understand the activity of every user licensed to use Microsoft Project by looking at their interaction with Project. It also helps you to understand the level of collaboration going on by looking at the number of projects visited and tasks created or edited.
 
 ## How to get to the Project activity report
