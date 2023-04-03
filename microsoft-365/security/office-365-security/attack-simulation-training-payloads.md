@@ -14,7 +14,7 @@ ms.custom:
 description: Admins can learn how to create and manage payloads for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/29/2023
+ms.date: 4/3/2023
 ---
 
 # Payloads in Attack simulation training
@@ -385,8 +385,6 @@ The **Status** value of the payload changes to **Archive**, and the payload is n
 To see archived payloads on the **Tenant payloads** tab, toggle **Show archived payloads** to on ![Toggle on icon.](../../media/scc-toggle-on.png).
 
 ## Restore archived payloads
-
-Archived payloads are visible on the **Tenant payloads** tab only when **Show archived payloads** is toggled on ![Toggle on icon.](../../media/scc-toggle-on.png).
 
 To restore an archive payload on the **Tenant payloads** tab, do the following steps:
 

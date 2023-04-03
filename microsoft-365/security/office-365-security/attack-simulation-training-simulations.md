@@ -14,7 +14,7 @@ ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/29/2023
+ms.date: 4/3/2023
 ---
 
 # Simulate a phishing attack with Attack simulation training
@@ -218,7 +218,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       - **Suggested user groups**: Select from the following values:
         - **All suggested user groups**
         - **Users not targeted by a simulation in the last three months**
-        - **Repeat offenders**
+        - **Repeat offenders**: For more information, see [Configure the repeat offender threshold](attack-simulation-training-settings.md#configure-the-repeat-offender-threshold).
 
       - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md). Use the following options:
         - **Search**: In ![Search by user tags icon.](../../media/m365-cc-sc-search-icon.png) **Search by user tags**, you can type part of the user tag and then press Enter. You can select some or all of the results.
@@ -649,6 +649,79 @@ When you're finished configuring filters, click **Apply**, **Cancel**, or ![Clea
 
 To see simulations that have been excluded from reporting (the **Status** value is **Excluded**), use the **Show excluded simulations** toggle on the **Simulations** tab.
 
+### View simulation details
+
+To view details about a simulation, use either of the following methods on the **Simulations** tab:
+
+- Select the simulation by clicking anywhere other than the check box next to the name.
+- Select the simulation by clicking **⋮** (**Actions**) at the end of the row, and then select ![View report icon.](../../media/m365-cc-sc-eye-icon.png) **View report**.
+
+The title of the details page that opens shows the name of the simulation and other information (for example, the status, social engineering technique, and delivery status).
+
+You can click ![View activity timeline.](../../media/m365-cc-sc-view-activity-timeline-icon.png) **View activity timeline** to see date/time information about the simulation (simulation scheduled, simulation launched, simulation ended, and training due dates).
+
+The rest of the details page contains the following tabs:
+
+- **Report** tab: For a description of what's on this tab, see [Attack simulation report](attack-simulation-training-insights.md#attack-simulation-report).
+
+- **Users** tab: Shows the following information for all targeted users in the simulation:
+  - **Name**
+  - **Compromised**
+  - **Reported**
+  - **Training status**
+  - **Other actions**
+  - **Compromised on**
+  - **Reported on**
+  - **Failed deliveries**
+  - **Username**
+
+  Click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. The following additional columns are available:
+
+  - **Days out of office**
+  - **Message read on**
+  - **Message forwarded on**
+  - **Message deleted on**
+  - **Replied to message**
+  - **Department**
+  - **Company**
+  - **Job title**
+  - **Office**
+  - **City**
+  - **Country**
+  - **Manager**
+
+  To change the list of users from normal to compact spacing, click ![Change list spacing to compact or normal icon.](../../media/m365-cc-sc-standard-icon.png) **Change list spacing to compact or normal**, and then select ![Compact list icon.](../../media/m365-cc-sc-compact-icon.png).
+
+  If you click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**, the following filters are available:
+
+  - **Compromised**: Select **Yes** or **No**.
+  - **Reported message**: Select **Yes** or **No**.
+  - **Simulation message delivery**: Select **Delivered** or **Failed to deliver**.
+  - **Other actions**: *Select one or more of the following values: **Replied to message**, **Forwarded message**, and **Deleted messages**.
+  - **Training status**: Select **Completed**, **In progress**, **Not started**, or **Not assigned**.
+  - **Assigned trainings**: Select one or more of the following values: **Mass Market Phishing**, **Report Message**, **Web Phishing**, **Anatomy of a Spear Phishing Attack**.
+
+  To find a user in the list, type part of the name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
+
+- **Details** tab: Contains details about the simulation in the following sections:
+  - **Description** section:
+    - **Delivery platform**
+    - **Type**
+    - **Landing page**
+    - **Technique**
+    - **Launch details**
+    - **Payload & login page**
+    - **Target users**: Include excluded users or groups.
+  - **Training information** section:
+    - **Training name**
+    - **Assign to**
+    - **Actions**: Click ![View icon.](../../media/m365-cc-sc-view-icon.png) **View** to see the training.
+  - **Notifications** section:
+    - **Notification name**
+    - **Notification type**
+    - **Delivery frequency**
+    - **Actions**:  Click ![View icon.](../../media/m365-cc-sc-view-icon.png) **View** to see the notification.
+
 ## Take action on simulations
 
 > [!TIP]
@@ -681,7 +754,7 @@ The **Exclude** action is available only for simulations with the **Status** val
 
 To remove a simulation from the **Simulations** tab, select the simulation by clicking **⋮** (**Actions**) at the end of the row, select ![Exclude icon.](../../media/m365-cc-sc-exclude-icon.png) **Exclude**, and then click **Confirm** in the confirmation dialog.
 
-After you exclude the completed simulation from reporting, the **Status** value changes to **Excluded** and the simulation is no longer visible on the **Simulations** tab when the **Show excluded simulations** toggle is off ![Toggle off icon.](../../media/scc-toggle-off.png).
+After you exclude the completed simulation from reporting, the **Status** value changes to **Excluded**, and the simulation is no longer visible on the **Simulations** tab when the **Show excluded simulations** toggle is off ![Toggle off icon.](../../media/scc-toggle-off.png).
 
 To see completed simulations that have been excluded from reporting, use either of the following methods:
 
@@ -709,3 +782,6 @@ For simulations with the **Status** value **In progress** or **Completed**, you 
 - Select the simulation by clicking **⋮** (**Actions**) at the end of the row, and then select ![View report icon.](../../media/m365-cc-sc-eye-icon.png) **View report**.
 
 The report page for the simulation opens and contains the following information:
+
+- **Report** tab: Show the following information
+  **Simulation impact**

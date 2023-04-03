@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn how to create and manage login pages for simulated phishing attacks in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/29/2023
+ms.date: 4/3/2023
 ---
 
 # Login pages in Attack simulation training
@@ -142,7 +142,7 @@ You can't modify built-in login pages on the **Global login pages** tab. You can
 To modify an existing custom login page on the **Tenant login pages** tab, do one of the following steps:
 
 - Select the login page from the list by clicking the check box next to the name. Click the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
-- Click **⋮** (**Actions**) between the **Name** and **Language** values of the login page, and then select ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
+- Click **⋮** (**Actions**) next to the **Name** value of the login page, and then select ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
 - Select the login page from the list by clicking anywhere in the row other than the check box next to the name. In the details flyout that opens, click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
 
 The login page wizard opens with the settings and values of the selected login page. The steps are the same as described in the [Create login pages](#create-login-pages) section.
@@ -152,7 +152,7 @@ The login page wizard opens with the settings and values of the selected login p
 To copy an existing login page on the **Tenant login pages** or **Global login pages** tabs, do one of the following steps:
 
 - Select the login page from the list by clicking the check box next to the name, and then click the ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy** icon that appears.
-- Click **⋮** (**Actions**) between the **Name** and **Language** values of the login page, and then select ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy**.
+- Click **⋮** (**Actions**) next to the **Name** value of the login page, and then select ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy**.
 
 The login page wizard opens with the settings and values of the selected login page. The steps are the same as described in the [Create login pages](#create-login-pages) section.
 
@@ -170,7 +170,7 @@ You can't remove built-in login pages from the **Global login pages** tab. You c
 To remove an existing custom login page from the **Tenant login pages** tab, do one of the following steps:
 
 - Select the login page from the list by clicking the check box next to the name, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears.
-- Click **⋮** (**Actions**) between the **Name** and **Language** values of the login page, and then select ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+- Click **⋮** (**Actions**) next to the **Name** value of the login page, and then select ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
 ## Make a login page the default
 
@@ -178,7 +178,7 @@ The default login page is the default selection that's used in **Credential Harv
 
 To make a login page the default on the **Tenant login pages** or **Global login pages** tabs, do one of the following steps:
 
-- Click **⋮** (**Actions**) between the **Name** and **Language** values of the login page, and then select ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default**.
+- Click **⋮** (**Actions**) next to the **Name** value of the login page, and then select ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default**.
 - Select the login page from the list by clicking anywhere in the row other than the check box next to the name. In the details flyout that opens, click ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default**.
 - Select **Make this the default login page** on the **Configure login page** page in the wizard when you [create or modify a login page](#create-login-pages).
 

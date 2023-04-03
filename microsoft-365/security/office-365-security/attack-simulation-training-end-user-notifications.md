@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn how to create end-user notification email messages for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/29/2023
+ms.date: 4/3/2023
 ---
 
 # End-user notifications for Attack simulation training
@@ -52,6 +52,9 @@ The following information is shown for each notification<sup>\*</sup>:
 - **Last modified time**
 
 Click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, all available columns are selected.
+
+> [!TIP]
+> The **⋮** (**Actions** control) is associated with the **Notifications** column. If you remove that column from view, the **⋮** control goes away.
 
 <sup>\*</sup> To see all columns, you'll likely need to do one or more of the following steps:
 
@@ -178,7 +181,7 @@ You can't modify built-in notifications on the **Global notifications** tab. You
 To modify an existing custom notification on the **Tenant notifications** tab, do one of the following steps:
 
 - Select the notification from the list by clicking the check box next to the name. Click the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
-- Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the notification, and then select ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
+- Click **⋮** (**Actions**) next to the **Notifications** value, and then select ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
 - Select the notification from the list by clicking anywhere in the row other than the check box. In the details flyout that opens, click **Edit notification** at the bottom of the flyout.
 
 The end-user notification wizard opens with the settings and values of the selected notification. The steps are the same as described in the [Create end-user notifications](#create-end-user-notifications) section.
@@ -188,7 +191,7 @@ The end-user notification wizard opens with the settings and values of the selec
 To copy an existing notification on the **Tenant notifications** or **Global notifications** tabs, do one of the following steps:
 
 - Select the notification from the list by clicking the check box, and then click the ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy** icon that appears.
-- Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the notification, and then select ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy**.
+- Click **⋮** (**Actions**) next to the **Notifications** value, and then select ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy**.
 
 When you copy a custom notification on the **Tenant notifications** tab, a copy of the notification named "\<OriginalName\> - Copy" is added to the list.
 
@@ -206,7 +209,7 @@ You can't remove built-in notifications from the **Global notifications** tab. Y
 To remove an existing custom notification from the **Tenant notifications** tab, do one of the following steps:
 
 - Select the notification from the list by clicking the check box next to the name, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears.
-- Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the notification, and then select ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+- Click **⋮** (**Actions**) next to the **Notifications** value, and then select ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
 In the confirmation dialog tht opens, click **Delete**.
 

@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn how to create training campaigns in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 01/13/2023
+ms.date: 4/3/2023
 ---
 
 # Training campaigns in Attack simulation training
@@ -52,7 +52,7 @@ The **Training campaigns** tab lists the Training campaigns that you've created.
   - **Deleted**
   - **Failed**<sup>\*</sup>
   - **Scheduled**<sup>\*</sup>
-- **⋮** (**Actions** control): Take action on the Training campaign. The available actions depend on the **Status** value of the Training campaign as described in the procedure sections. This control always appears at the end of the payload row
+- **⋮** (**Actions** control): Take action on the Training campaign. The available actions depend on the **Status** value of the Training campaign as described in the procedure sections. This control always appears at the end of the payload row.
 
 To find a Training campaign in the list, type part of the campaign name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box and then press the ENTER key.
 
@@ -99,7 +99,7 @@ On the **Target users** page, select one of the following values:
 
     - **Suggested user groups**: Select one or both of the following values:
       - **Users not targeted by a simulation in the last three months**
-      - **Repeat offenders**
+      - **Repeat offenders**: For more information, see [Configure the repeat offender threshold](attack-simulation-training-settings.md#configure-the-repeat-offender-threshold).
 
     - **User tags**: Select one or more of the following values. You'll need to click **See all user tags** to see all values, and custom [user tags](user-tags-about.md) aren't available:
       - **Priority accounts**: For more information, see [Priority accounts](../../admin/setup/priority-accounts.md).

@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn how to configure the repeat offender threshold and exclude simulations from reporting in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/29/2023
+ms.date: 4/3/2023
 ---
 
 # Global settings in Attack simulation training
@@ -41,7 +41,7 @@ To configure the repeat offender threshold, use the box in the **Repeat offender
 
 ## View simulations excluded from reporting
 
-To view completed simulations that have been excluded from reporting on the **Settings** tab, click the **View all** link in the **Simulations excluded from reporting** section. This action takes you to the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations> where **Show excluded simulations** is toggled on ![Toggle on icon.](../../media/scc-toggle-on.png).
+To view completed simulations that have been excluded from reporting on the **Settings** tab, click the **View all** link in the **Simulations excluded from reporting** section. This link takes you to the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations> where **Show excluded simulations** is automatically toggled on ![Toggle on icon.](../../media/scc-toggle-on.png).
 
 On the **Simulations** tab, both excluded _and_ included completed simulations are shown on the **Simulations** tab together. You can tell the difference by the **Status** values (**Excluded** vs. **Completed**)
 
