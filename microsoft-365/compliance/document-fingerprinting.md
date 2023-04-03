@@ -30,8 +30,8 @@ Document fingerprinting includes the following features:
 - Support for detection in multiple languages, including dual-byte languages such as Chinese, Japanese, and Korean.
 
 > [!Important]
-> If you are an E5 customer, to use the current document fingerprint features you must update your existing fingerprints. If you choose not to, you won't be able to modify existing fingerprints or create new ones. The functionality will be limited to managing existing policies in Exchange that contain document fingerprints.
-> If you are an E3 customer, access to the full set of fingerprint features will end as of April 23, 2023. To continue using these features after that, you must upgrade to an E5 license.
+> If you are an E5 customer, we recommend updating your existing fingerprints to take advantage of the full document fingerprint feature set. 
+> If you are an E3 customer, we recommend upgrading to an E5 license. If you choose not to, you won't be able to modify existing fingerprints or create new ones after April 23, 2023.
 
 ## Basic scenario for Document Fingerprinting
 
@@ -71,7 +71,7 @@ Document fingerprinting doesn't detect sensitive information in the following ca
 - Files larger than 4 MB
  
 > [!NOTE]
-> To use document fingerprinting with Windows devices, **Advanced fingerprinting** must be turned oN.
+> To use document fingerprinting with devices, **Advanced fingerprinting** must be turned oN.
 
 Fingerprints are stored in a separate rule pack. This rule pack has a maximum size limit of 150 KB. Given this limit, you can create approximately 50 fingerprints per tenant.
 
@@ -101,7 +101,7 @@ The following examples show what happens if you create a document fingerprint ba
 To configure partial matching of a document fingerprint, when configuring the confidence level, choose **Low**, **Medium** or **High** and designate how much of the text in the file must match the fingerprint in terms of a percentage between 30% - 90%.
 
 ### Exact Matching
-To configure exact matching of a document fingerprint, set the confidence level to **Exact**. When you set the confidence level to **Exact**, only files that have exactly the same text as the fingerprint will be detected. If the file has even a small deviation from the fingerprint, it will not be detected.
+To configure exact matching of a document fingerprint, set the confidence level to **High**. When you set the confidence level to **High**, only files that have exactly the same text as the fingerprint will be detected. If the file has even a small deviation from the fingerprint, it will not be detected.
 
 ## Already using fingerprint SITs?
 Your existing fingerprints and policies/rules for those fingerprints should continue to work. If you don't want to use the latest fingerprint features, you don't have to do anything.
