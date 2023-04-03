@@ -65,6 +65,10 @@ landingContent:
             url: create-a-form-processing-model.md
           - text: Prebuilt models
             url: prebuilt-overview.md
+      - linkListType: video
+        links:
+          - text: Model types
+            url: https://www.microsoft.com/videoplayer/embed/RE4GJXS
       - linkListType: how-to-guide
         links:
           - text: Create an enterprise model
@@ -133,18 +137,12 @@ landingContent:
             url: adoption-assessment-tool.md
           - text: Run a trial
             url: trial-syntex.md
-
-    # Card 8
-  - title: Get support
-    linkLists:
-      - linkListType: overview
+      - linkListType: whats-new
         links:
-          - text: Tech Community blog
-            url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
-          - text: FAQ
-            url: https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:faqtab
+          - text: Solution accelerators
+            url: site-templates.md
 
-    # Card 9
+    # Card 10
   - title: Extensibility
     linkLists:
       - linkListType: reference
@@ -155,4 +153,13 @@ landingContent:
             url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
           - text: Syntex-SharePoint Advanced Management
             url: /sharepoint/advanced-management
- 
+
+    # Card 9
+  - title: Get support
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Tech Community blog
+            url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
+          - text: FAQ
+            url: https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:faqtab
