@@ -36,13 +36,13 @@ ms.date: 03/31/2023
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Microsoft 365 Defender setup guides give you tailored guidance and resources for planning and deploying your tenant, apps, and services. 
+Microsoft 365 Defender deployment guides give you tailored guidance and resources for planning and deploying your tenant, apps, and services. 
 
-All setup guides are available in the Microsoft 365 admin center as described in the section below, and most guides can also be found in the Microsoft 365 Setup portal.
+All deployment guides are available in the Microsoft 365 admin center as described in the section below, and most guides can also be found in the Microsoft 365 Setup portal.
 
-## Setup Guides
+## Deployment Guides
 
-Setup guides in the admin center require authentication to a Microsoft 365 tenant as an administrator or other role with access to the admin center, but guides in the Microsoft 365 Setup portal can be accessed by anyone. We have provided links to both locations for each guide, where available, in the tables below.
+Deployment guides in the admin center require authentication to a Microsoft 365 tenant as an administrator or other role with access to the admin center, but guides in the Microsoft 365 Setup portal can be accessed by anyone. We have provided links to both locations for each guide, where available, in the tables below.
 
 |**Guide - [Setup Portal](https://aka.ms/setupguides)**  |**Guide - [Admin Center](https://go.microsoft.com/fwlink/?linkid=2224913)** |**Description** |
 |---------|---------|---------|
