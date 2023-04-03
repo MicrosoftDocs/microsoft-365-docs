@@ -40,20 +40,21 @@ sections:
      - question: Event ID 1000
        answer: |
 
-         Symbolic name: MALWAREPROTECTION_SCAN_STARTED
+         Symbolic name: `MALWAREPROTECTION_SCAN_STARTED`
 
          Message: An antimalware scan started.
 
          Description:
 
-          - Scan ID: <ID number of the relevant scan.>
-          - Scan Type: <Scan type>, for example: Antivirus, Antispyware, or Antimalware
+          - Scan ID: ID number of the relevant scan.
+          
+          - Scan Type: Scan type. Examples: Antivirus, Antispyware, or Antimalware
 
-          - Scan Parameters: <Scan parameters>, for example: Full scan, Quick scan, or Customer scan
+          - Scan Parameters: Scan parameters. Examples: Full scan, Quick scan, or Customer scan
 
-          - Scan Resources: <Resources (such as files/directories/BHO) that were scanned.>
+          - Scan Resources: `Resources (such as files/directories/BHO) that were scanned.`
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
      - question: Event ID 1001
        answer: |
@@ -64,15 +65,15 @@ sections:
 
          Description:
 
-          - Scan ID: <ID number of the relevant scan.>
+          - Scan ID: `ID number of the relevant scan.`
 
-          - Scan Type: <Scan type>, for example: Antivirus, Antispyware, or Antimalware
+          - Scan Type: Scan type. Examples: Antivirus, Antispyware, or Antimalware
 
-          - Scan Parameters: <Scan parameters>, for example: Full scan, Quick scan, or Customer scan
+          - Scan Parameters: Scan parameters. Examples: Full scan, Quick scan, or Customer scan
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Scan Time: <The duration of a scan.>
+          - Scan Time: The duration of a scan.
 
      - question: Event ID 1002
        answer: |
@@ -83,15 +84,15 @@ sections:
 
          Description:
 
-          - Scan ID: <ID number of the relevant scan.>
+          - Scan ID: `ID number of the relevant scan.`
 
-          - Scan Type: <Scan type>, for example: Antivirus, Antispyware, or Antimalware
+          - Scan Type: Scan type. Examples: Antivirus, Antispyware, or Antimalware
 
-          - Scan Parameters: <Scan parameters>, for example: Full scan, Quick scan, or Customer scan
+          - Scan Parameters: Scan parameters. Examples: Full scan, Quick scan, or Customer scan
 
-          - User: <Domain>&lt;User>
+          - User: `Domain\User`
 
-          - Scan Time: <The duration of a scan.>
+          - Scan Time: The duration of a scan.
 
      - question: Event ID 1003
        answer: |
@@ -102,13 +103,13 @@ sections:
 
          Description:
 
-          - Scan ID: <ID number of the relevant scan.>
+          - Scan ID: `ID number of the relevant scan.`
 
-          - Scan Type: <Scan type>, for example: Antivirus, Antispyware, or Antimalware
+          - Scan Type: Scan type. Examples: Antivirus, Antispyware, or Antimalware
 
-          - Scan Parameters: <Scan parameters>, for example: Full scan, Quick scan, or Customer scan
+          - Scan Parameters: Scan parameters. Examples: Full scan, Quick scan, or Customer scan
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
      - question: Event ID 1004
        answer: |
@@ -119,13 +120,13 @@ sections:
 
          Description:
 
-          - Scan ID: <ID number of the relevant scan.>
+          - Scan ID: `ID number of the relevant scan.`
 
-          - Scan Type: <Scan type>, for example: Antivirus, Antispyware, or Antimalware
+          - Scan Type: Scan type. Examples: Antivirus, Antispyware, or Antimalware
 
-          - Scan Parameters: <Scan parameters>, for example: Full scan, Quick scan, or Customer scan
+          - Scan Parameters: Scan parameters. Examples: Full scan, Quick scan, or Customer scan
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
      - question: Event ID 1005
        answer: |
@@ -136,17 +137,17 @@ sections:
 
          Description:
 
-          - Scan ID: <ID number of the relevant scan.> 
+          - Scan ID: `ID number of the relevant scan.` 
 
-          - Scan Type: <Scan type>, for example: Antivirus, Antispyware, or Antimalware
+          - Scan Type: Scan type. Examples: Antivirus, Antispyware, or Antimalware
 
-          - Scan Parameters: <Scan parameters>, for example: Full scan, Quick scan, or Customer scan
+          - Scan Parameters: Scan parameters. Examples: Full scan, Quick scan, or Customer scan
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
          User action: 
 
@@ -165,21 +166,21 @@ sections:
 
          Description: For more information, see the following:
 
-          - Name: <Threat name>
+          - Name: `Threat name`
 
-          - ID: <Threat ID>
+          - ID: `Threat ID`
 
-          - Severity: <Severity>, for example: Low, Moderate, High, or Severe
+          - Severity: `Severity`. Examples: Low, Moderate, High, or Severe
 
-          - Category: <Category description>, for example, any threat or malware type.
+          - Category: `Category description`, for example, any threat or malware type.
 
-          - Path: <File path>
+          - Path: `File path`
 
-          - Detection Origin: <Detection origin>, for example: Unknown, Local computer, Network share, Internet, Incoming traffic, or Outgoing traffic
+          - Detection Origin: `Detection origin`. Examples: Unknown, Local computer, Network share, Internet, Incoming traffic, or Outgoing traffic
 
-          - Detection Type: <Detection type>, for example: Heuristics, Generic, Concrete, or Dynamic signature 
+          - Detection Type: `Detection type`. Examples: Heuristics, Generic, Concrete, or Dynamic signature 
 
-          - Detection Source: <Detection source> for example:
+          - Detection Source: `Detection source` for example:
 
               - User: user initiated
 
@@ -199,15 +200,15 @@ sections:
 
           - Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well. UAC.
 
-          - Status: <Status>
+          - Status: `Status`
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Process Name: <Process in the PID>
+          - Process Name: `Process in the PID`
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
 
      - question: Event ID 1007
        answer: |
@@ -218,17 +219,17 @@ sections:
 
          Description: Microsoft Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software. For more information, see the following:
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Name: <Threat name>
+          - Name: `Threat name`
 
-          - ID: <Threat ID>
+          - ID: `Threat ID`
 
-          - Severity: <Severity>, for example: Low, Moderate, High, or Severe
+          - Severity: `Severity`. Examples: Low, Moderate, High, or Severe
 
-          - Category: <Category description>, for example, any threat or malware type.
+          - Category: `Category description`, for example, any threat or malware type.
 
-          - Action: <Action>, for example:
+          - Action: `Action`. Examples:
 
               - Clean: The resource was cleaned
 
@@ -244,11 +245,11 @@ sections:
 
               - Block: The resource was blocked from executing
 
-          - Status: <Status>
+          - Status: `Status`
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
 
      - question: Event ID 1008
        answer: |
@@ -259,19 +260,19 @@ sections:
 
          Description: Microsoft Defender Antivirus has encountered an error when taking action on malware or other potentially unwanted software. For more information, see the following:
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Name: <Threat name>
+          - Name: `Threat name`
 
-          - ID: <Threat ID>
+          - ID: `Threat ID`
 
-          - Severity: <Severity>, for example: Low, Moderate, High, or Severe
+          - Severity: `Severity`. Examples: Low, Moderate, High, or Severe
 
-          - Category: <Category description>, for example, any threat or malware type.
+          - Category: `Category description`, for example, any threat or malware type.
 
-          - Path: <File path>
+          - Path: `File path`
 
-           - Action: <Action>, for example:
+           - Action: `Action`. Examples:
 
               - Clean: The resource was cleaned
 
@@ -287,15 +288,15 @@ sections:
 
               - Block: The resource was blocked from executing
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
-          - Status: <Status>
+          - Status: `Status`
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
 
      - question: Event ID 1009
        answer: |
@@ -306,21 +307,21 @@ sections:
 
          Description: Microsoft Defender Antivirus has restored an item from quarantine. For more information, see the following:
 
-          - Name: <Threat name>
+          - Name: `Threat name`
 
-          - ID: <Threat ID>
+          - ID: `Threat ID`
 
-          - Severity: <Severity>, for example: Low, Moderate, High, or Severe
+          - Severity: `Severity`. Examples: Low, Moderate, High, or Severe
 
-          - Category: <Category description>, for example, any threat or malware type.\
+          - Category: `Category description`, for example, any threat or malware type.\
 
-          - Path: <File path>
+          - Path: `File path`
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
 
      - question: Event ID 1010
        answer: |
@@ -331,25 +332,25 @@ sections:
 
          Description: Microsoft Defender Antivirus has encountered an error trying to restore an item from quarantine. For more information, see the following:
 
-          - Name: <Threat name>
+          - Name: `Threat name`
 
-          - ID: <Threat ID>
+          - ID: `Threat ID`
 
-          - Severity: <Severity>, for example: Low, Moderate, High, or Severe
+          - Severity: `Severity`. Examples: Low, Moderate, High, or Severe
 
-          - Category: <Category description>, for example, any threat or malware type.
+          - Category: `Category description`, for example, any threat or malware type.
 
-          - Path: <File path>
+          - Path: `File path`
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
 
      - question: Event ID 1011
        answer: |
@@ -360,21 +361,21 @@ sections:
 
          Description: Microsoft Defender Antivirus has deleted an item from quarantine. For more information, see the following:
 
-          - Name: <Threat name>
+          - Name: `Threat name`
 
-          - ID: <Threat ID>
+          - ID: `Threat ID`
 
-          - Severity: <Severity>, for example: Low, Moderate, High, or Severe
+          - Severity: `Severity`. Examples: Low, Moderate, High, or Severe
 
-          - Category: <Category description>, for example, any threat or malware type.
+          - Category: `Category description`, for example, any threat or malware type.
 
-          - Path: <File path>
+          - Path: `File path`
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
 
      - question: Event ID 1012
        answer: |
@@ -385,25 +386,25 @@ sections:
 
          Description: Microsoft Defender Antivirus has encountered an error trying to delete an item from quarantine. For more information, see the following:
 
-          - Name: <Threat name>
+          - Name: `Threat name`
 
-          - ID: <Threat ID>
+          - ID: `Threat ID`
 
-          - Severity: <Severity>, for example: Low, Moderate, High, or Severe
+          - Severity: `Severity`. Examples: Low, Moderate, High, or Severe
     
-          - Category: <Category description>, for example, any threat or malware type.
+          - Category: `Category description`, for example, any threat or malware type.
 
-          - Path: <File path>
+          - Path: `File path`
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
 
      - question: Event ID 1013 
        answer: |
@@ -416,7 +417,7 @@ sections:
 
           - Time: The time when the event occurred, for example when the history is purged. This parameter isn't used in threat events so that there's no confusion regarding whether it's remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
      - question: Event ID 1014
        answer: |
@@ -429,11 +430,11 @@ sections:
 
           - Time: The time when the event occurred, for example when the history is purged. This parameter isn't used in threat events so that there's no confusion regarding whether it's remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
      - question: Event ID 1015
        answer: |
@@ -444,21 +445,21 @@ sections:
 
          Description: Microsoft Defender Antivirus has detected a suspicious behavior. For more information, see the following:
 
-          - Name: <Threat name>
+          - Name: `Threat name`
 
-          - ID: <Threat ID>
+          - ID: `Threat ID`
 
-          - Severity: <Severity>, for example: Low, Moderate, High, or Severe
+          - Severity: `Severity`. Examples: Low, Moderate, High, or Severe
 
-          - Category: <Category description>, for example, any threat or malware type.
+          - Category: `Category description`, for example, any threat or malware type.
 
-          - Path: <File path>
+          - Path: `File path`
 
-          - Detection Origin: <Detection origin>, for example: Unknown, Local computer, Network share, Internet, Incoming traffic, or Outgoing traffic
+          - Detection Origin: `Detection origin`. Examples: Unknown, Local computer, Network share, Internet, Incoming traffic, or Outgoing traffic
 
-          - Detection Type: <Detection type>, for example: Heuristics, Generic, Concrete, or Dynamic signature
+          - Detection Type: `Detection type`. Examples: Heuristics, Generic, Concrete, or Dynamic signature
 
-          - Detection Source: <Detection source> for example:
+          - Detection Source: `Detection source` for example:
 
              - User: user initiated
 
@@ -478,21 +479,21 @@ sections:
 
           - Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well. UAC
 
-          - Status: <Status>
+          - Status: `Status`
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Process Name: <Process in the PID>
+          - Process Name: `Process in the PID`
 
           - Signature ID: Enumeration matching severity.
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
 
           - Fidelity Label:
 
-          - Target File Name: <File name> Name of the file.
+          - Target File Name: `File name` Name of the file.
 
      - question: Event ID 1116
        answer: |
@@ -503,21 +504,21 @@ sections:
 
          Description: Microsoft Defender Antivirus has detected malware or other potentially unwanted software. For more information, see the following:
 
-          - Name: <Threat name>
+          - Name: `Threat name`
 
-          - ID: <Threat ID>
+          - ID: `Threat ID`
 
-          - Severity: <Severity>, for example: Low, Moderate, High, or Severe
+          - Severity: `Severity`. Examples: Low, Moderate, High, or Severe
 
-          - Category: <Category description>, for example, any threat or malware type.
+          - Category: `Category description`, for example, any threat or malware type.
 
-          - Path: <File path>
+          - Path: `File path`
 
-          - Detection Origin: <Detection origin>, for example: Unknown, Local computer, Network share, Internet, Incoming traffic, or Outgoing traffic
+          - Detection Origin: `Detection origin`. Examples: Unknown, Local computer, Network share, Internet, Incoming traffic, or Outgoing traffic
 
-          - Detection Type: <Detection type>, for example: Heuristics, Generic, Concrete, or Dynamic signature
+          - Detection Type: `Detection type`. Examples: Heuristics, Generic, Concrete, or Dynamic signature
 
-          - Detection Source: <Detection source> for example:
+          - Detection Source: `Detection source` for example:
 
              - User: user initiated
 
@@ -537,13 +538,13 @@ sections:
 
           - Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well. UAC
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Process Name: <Process in the PID>
+          - Process Name: `Process in the PID`
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
  
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
  
          User action:	No action is required. Microsoft Defender Antivirus can suspend and take routine action on this threat. If you want to remove the threat manually, in the Microsoft Defender Antivirus interface, click **Clean Computer**.
 
@@ -556,21 +557,21 @@ sections:
 
          Description: Microsoft Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software. For more information, see the following:
 
-          - Name: <Threat name>
+          - Name: `Threat name`
 
-          - ID: <Threat ID>
+          - ID: `Threat ID`
 
-          - Severity: <Severity>, for example: Low, Moderate, High, or Severe
+          - Severity: `Severity`. Examples: Low, Moderate, High, or Severe
 
-          - Category: <Category description>, for example, any threat or malware type.
+          - Category: `Category description`, for example, any threat or malware type.
 
-          - Path: <File path>
+          - Path: `File path`
 
-          - Detection Origin: <Detection origin>, for example: Unknown, Local computer, Network share, Internet, Incoming traffic, or Outgoing traffic
+          - Detection Origin: `Detection origin`. Examples: Unknown, Local computer, Network share, Internet, Incoming traffic, or Outgoing traffic
 
-          - Detection Type: <Detection type>, for example: Heuristics, Generic, Concrete, or Dynamic signature
+          - Detection Type: `Detection type`. Examples: Heuristics, Generic, Concrete, or Dynamic signature
 
-          - Detection Source: <Detection source> for example:
+          - Detection Source: `Detection source` for example:
 
              - User: user initiated
 
@@ -590,11 +591,11 @@ sections:
 
           - Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well. UAC
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Process Name: <Process in the PID>
+          - Process Name: `Process in the PID`
 
-          - Action: <Action>, for example:
+          - Action: `Action`. Examples:
 
              - Clean: The resource was cleaned
 
@@ -610,15 +611,15 @@ sections:
 
              - Block: The resource was blocked from executing
 
-          - Action Status: <Description of additional actions>
+          - Action Status: `Description of additional actions`
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
  
           NOTE: Whenever Microsoft Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it restores the following system settings and services that the malware might have changed:
 
@@ -657,21 +658,21 @@ sections:
 
          Description: Microsoft Defender Antivirus has encountered a noncritical error when taking action on malware or other potentially unwanted software. For more information, see the following:
 
-          - Name: <Threat name>
+          - Name: `Threat name`
 
-          - ID: <Threat ID>
+          - ID: `Threat ID`
 
-          - Severity: <Severity>, for example: Low, Moderate, High, or Severe
+          - Severity: `Severity`. Examples: Low, Moderate, High, or Severe
 
-          - Category: <Category description>, for example, any threat or malware type.
+          - Category: `Category description`, for example, any threat or malware type.
 
-          - Path: <File path>
+          - Path: `File path`
  
-          - Detection Origin: <Detection origin>, for example: Unknown, Local computer, Network share, Internet, Incoming traffic, or Outgoing traffic
+          - Detection Origin: `Detection origin`. Examples: Unknown, Local computer, Network share, Internet, Incoming traffic, or Outgoing traffic
 
-          - Detection Type: <Detection type>, for example: Heuristics, Generic, Concrete, or Dynamic signature
+          - Detection Type: `Detection type`. Examples: Heuristics, Generic, Concrete, or Dynamic signature
 
-          - Detection Source: <Detection source> for example:
+          - Detection Source: `Detection source` for example:
 
              - User: user initiated
 
@@ -691,11 +692,11 @@ sections:
 
           - Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well. UAC
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Process Name: <Process in the PID>
+          - Process Name: `Process in the PID`
 
-          - Action: <Action>, for example:
+          - Action: `Action`. Examples:
 
              - Clean: The resource was cleaned
 
@@ -711,15 +712,15 @@ sections:
 
              - Block: The resource was blocked from executing
 
-          - Action Status: <Description of additional actions>
+          - Action Status: `Description of additional actions`
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
  
          User action: No action is necessary. Microsoft Defender Antivirus failed to complete a task related to the malware remediation. This isn't a critical failure.
 
@@ -732,21 +733,21 @@ sections:
 
          Description: Microsoft Defender Antivirus has encountered a critical error when taking action on malware or other potentially unwanted software. For more information, see the following:
 
-          - Name: <Threat name>
+          - Name: `Threat name`
 
-          - ID: <Threat ID>
+          - ID: `Threat ID`
 
-          - Severity: <Severity>, for example: Low, Moderate, High, or Severe
+          - Severity: `Severity`. Examples: Low, Moderate, High, or Severe
 
-          - Category: <Category description>, for example, any threat or malware type.
+          - Category: `Category description`, for example, any threat or malware type.
 
-          - Path: <File path>
+          - Path: `File path`
 
-          - Detection Origin: <Detection origin>, for example: Unknown, Local computer, Network share, Internet, Incoming traffic, or Outgoing traffic
+          - Detection Origin: `Detection origin`. Examples: Unknown, Local computer, Network share, Internet, Incoming traffic, or Outgoing traffic
 
-          - Detection Type: <Detection type>, for example: Heuristics, Generic, Concrete, or Dynamic signature
+          - Detection Type: `Detection type`. Examples: Heuristics, Generic, Concrete, or Dynamic signature
 
-          - Detection Source: <Detection source> for example:
+          - Detection Source: `Detection source` for example:
 
              - User: user initiated
 
@@ -766,11 +767,11 @@ sections:
 
           - Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well. UAC
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Process Name: <Process in the PID>
+          - Process Name: `Process in the PID`
 
-          - Action: <Action>, for example:
+          - Action: `Action`. Examples:
 
              - Clean: The resource was cleaned
 
@@ -786,15 +787,15 @@ sections:
 
              - Block: The resource was blocked from executing
 
-          - Action Status: <Description of additional actions>
+          - Action Status: `Description of additional actions`
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
 
          User action: The Microsoft Defender Antivirus client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant **User action** steps below.
   
@@ -827,11 +828,11 @@ sections:
 
          Description: Microsoft Defender Antivirus client is up and running in a healthy state.
 
-          - Current Platform Version: <Current platform version>
+          - Current Platform Version: `Current platform version`
 
-          - Threat Resource Path: <Path>
+          - Threat Resource Path: `Path`
 
-          - Hashes: <Hashes>
+          - Hashes: `Hashes`
 
           Note: This event will only be logged if the following policy is set: ThreatFileHashLogging unsigned.
 
@@ -844,11 +845,11 @@ sections:
 
          Description: TBD.
 
-          - Current Platform Version: <Current platform version>
+          - Current Platform Version: `Current platform version`
 
-          - Threat Resource Path: <Path>
+          - Threat Resource Path: `Path`
 
-          - Hashes: <Hashes>
+          - Hashes: `Hashes`
 
           Note: whatgoeshere?: TBD.
 
@@ -861,39 +862,39 @@ sections:
 
          Description: Controlled Folder Access has blocked an untrusted process from potentially modifying disk sectors. For more information about the event record, see the following:
 
-          - EventID: <EventID>, for example: 1127
+          - EventID: `EventID`. Examples: 1127
 
-          - Version: <Version>, for example: 0
+          - Version: `Version`. Examples: 0
 
-          - Level: <Level>, for example: win: Warning
+          - Level: `Level`. Examples: win: Warning
 
-          - TimeCreated: <SystemTime>, time when the event was created
+          - TimeCreated: `SystemTime`, time when the event was created
 
-          - EventRecordID: <EventRecordID>, index number of the event in the event log
+          - EventRecordID: `EventRecordID`, index number of the event in the event log
 
-          - Execution ProcessID: <Execution ProcessID>, process that generated the event
+          - Execution ProcessID: `Execution ProcessID`, process that generated the event
 
-          - Channel: <Event channel>, for example: Microsoft-Windows-Windows Defender/Operational
+          - Channel: `Event channel`. Examples: Microsoft-Windows-Windows Defender/Operational
 
-          - Computer: <Computer name>
+          - Computer: `Computer name`
 
-          - Security UserID: <Security UserID>
+          - Security UserID: `Security UserID`
 
-          - Product Name: <Product Name>, for example: Microsoft Defender Antivirus
+          - Product Name: `Product Name`. Examples: Microsoft Defender Antivirus
 
-          - Product Version: <Product Version>
+          - Product Version: `Product Version`
 
-          - Detection Time: <Detection Time>, time when CFA blocked an untrusted process
+          - Detection Time: `Detection Time`, time when CFA blocked an untrusted process
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Path: <Device name>, name of the device or disk that an untrusted process accessed for modification
+          - Path: `Device name`, name of the device or disk that an untrusted process accessed for modification
 
-          - Process Name: <Process path>, the process path name that CFA blocked from accessing the device or disk for modification
+          - Process Name: `Process path`, the process path name that CFA blocked from accessing the device or disk for modification
 
-          - Security Intelligence Version: <Security intelligence version>
+          - Security Intelligence Version: `Security intelligence version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
 
          User action: The user can add the blocked process to the Allowed Process list for CFA, using PowerShell or Windows Security Center.
 
@@ -906,11 +907,11 @@ sections:
 
          Description: Microsoft Defender Antivirus client is up and running in a healthy state.
 
-          - Platform Version: <Current platform version>
+          - Platform Version: `Current platform version`
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
 
          User action: No action is necessary. The Microsoft Defender Antivirus client is in a healthy state. This event is reported on an hourly basis.
 
@@ -923,49 +924,49 @@ sections:
 
          Description: Antivirus client health report.
 
-          - Platform Version: <Current platform version>
+          - Platform Version: `Current platform version`
 
-          - Engine Version: <Antimalware Engine version>
+          - Engine Version: `Antimalware Engine version`
 
-          - Network Realtime Inspection engine version: <Network Realtime Inspection engine version>
+          - Network Realtime Inspection engine version: `Network Realtime Inspection engine version`
 
-          - Antivirus signature version: <Antivirus signature version>
+          - Antivirus signature version: `Antivirus signature version`
 
-          - Antispyware signature version: <Antispyware signature version>
+          - Antispyware signature version: `Antispyware signature version`
 
-          - Network Realtime Inspection signature version: <Network Realtime Inspection signature version>
+          - Network Realtime Inspection signature version: `Network Realtime Inspection signature version`
 
-          - RTP state: <Realtime protection state> (Enabled or Disabled)
+          - RTP state: `Realtime protection state` (Enabled or Disabled)
 
-          - OA state: <On Access state> (Enabled or Disabled)
+          - OA state: `On Access state` (Enabled or Disabled)
 
-          - IOAV state: <IE Downloads and Outlook Express Attachments state> (Enabled or Disabled)
+          - IOAV state: `IE Downloads and Outlook Express Attachments state` (Enabled or Disabled)
 
-          - BM state: <Behavior Monitoring state> (Enabled or Disabled)
+          - BM state: `Behavior Monitoring state` (Enabled or Disabled)
 
-          - Antivirus signature age: <Antivirus signature age> (in days)
+          - Antivirus signature age: `Antivirus signature age` (in days)
 
-          - Antispyware signature age: <Antispyware signature age> (in days)
+          - Antispyware signature age: `Antispyware signature age` (in days)
 
-          - Last quick scan age: <Last quick scan age> (in days)
+          - Last quick scan age: `Last quick scan age` (in days)
 
-          - Last full scan age: <Last full scan age> (in days)
+          - Last full scan age: `Last full scan age` (in days)
 
-          - Antivirus signature creation time: ?<Antivirus signature creation time>
+          - Antivirus signature creation time: ?`Antivirus signature creation time`
 
-          - Antispyware signature creation time: ?<Antispyware signature creation time>
+          - Antispyware signature creation time: ?`Antispyware signature creation time`
 
-          - Last quick scan start time: ?<Last quick scan start time>
+          - Last quick scan start time: ?`Last quick scan start time`
 
-          - Last quick scan end time: ?<Last quick scan end time>
+          - Last quick scan end time: ?`Last quick scan end time`
 
-          - Last quick scan source: <Last quick scan source> (0 = scan didn't run, 1 = user initiated, 2 = system initiated)
+          - Last quick scan source: `Last quick scan source` (0 = scan didn't run, 1 = user initiated, 2 = system initiated)
 
-          - Last full scan start time: ?<Last full scan start time>
+          - Last full scan start time: ?`Last full scan start time`
 
-          - Last full scan end time: ?<Last full scan end time>
+          - Last full scan end time: ?`Last full scan end time`
 
-          - Last full scan source: <Last full scan source> (0 = scan didn't run, 1 = user initiated, 2 = system initiated)
+          - Last full scan source: `Last full scan source` (0 = scan didn't run, 1 = user initiated, 2 = system initiated)
 
           - Product status: For internal troubleshooting
 
@@ -978,19 +979,19 @@ sections:
 
          Description: Antivirus signature version has been updated.
 
-          - Current Signature Version: <Current signature version>
+          - Current Signature Version: `Current signature version`
 
-          - Previous Signature Version: <Previous signature version>
+          - Previous Signature Version: `Previous signature version`
 
-          - Signature Type: <Signature type>, for example: Antivirus, Antispyware, Antimalware, or Network Inspection System
+          - Signature Type: `Signature type`. Examples: Antivirus, Antispyware, Antimalware, or Network Inspection System
 
-          - Update Type: <Update type>, either Full or Delta.
+          - Update Type: `Update type`, either Full or Delta.
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Current Engine Version: <Current engine version>
+          - Current Engine Version: `Current engine version`
 
-          - Previous Engine Version: <Previous engine version>
+          - Previous Engine Version: `Previous engine version`
  
          User action: No action is necessary. The Microsoft Defender Antivirus client is in a healthy state. This event is reported when signatures are successfully updated.
 
@@ -1003,11 +1004,11 @@ sections:
 
          Description: Microsoft Defender Antivirus has encountered an error trying to update signatures.
 
-          - New security intelligence version: <New version number>
+          - New security intelligence version: `New version number`
 
-          - Previous security intelligence version: <Previous version>
+          - Previous security intelligence version: `Previous version`
 
-          - Update Source: <Update source>, for example:
+          - Update Source: `Update source`. Examples:
 
              - Security intelligence update folder
 
@@ -1019,23 +1020,23 @@ sections:
 
              - Microsoft Malware Protection Center (MMPC)
 
-          - Update Stage: <Update stage>, for example: Search, Download, or Install
+          - Update Stage: `Update stage`. Examples: Search, Download, or Install
 
           - Source Path: File share name for Universal Naming Convention (UNC), server name for Windows Server Update Services (WSUS)/Microsoft Update/ADL.
 
-          - Signature Type: <Signature type>, for example: Antivirus, Antispyware, Antimalware, or Network Inspection System
+          - Signature Type: `Signature type`. Examples: Antivirus, Antispyware, Antimalware, or Network Inspection System
 
-          - Update Type: <Update type>, either Full or Delta.
+          - Update Type: `Update type`, either Full or Delta.
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Current Engine Version: <Current engine version>
+          - Current Engine Version: `Current engine version`
 
-          - Previous Engine Version: <Previous engine version>
+          - Previous Engine Version: `Previous engine version`
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
           
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
  
          User action: This error occurs when there's a problem updating definitions. To troubleshoot this event:
 
@@ -1054,13 +1055,13 @@ sections:
 
          Description: Microsoft Defender Antivirus engine version has been updated.
 
-          - Current Engine Version: <Current engine version>
+          - Current Engine Version: `Current engine version`
 
-          - Previous Engine Version: <Previous engine version>
+          - Previous Engine Version: `Previous engine version`
 
-          - Engine Type: <Engine type>, either antimalware engine or Network Inspection System engine.
+          - Engine Type: `Engine type`, either antimalware engine or Network Inspection System engine.
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
          User action: No action is necessary. The Microsoft Defender Antivirus client is in a healthy state. This event is reported when the antimalware engine is successfully updated.
 
@@ -1075,15 +1076,15 @@ sections:
 
           - New Engine Version:
 
-          - Previous Engine Version: <Previous engine version>
+          - Previous Engine Version: `Previous engine version`
 
-          - Engine Type: <Engine type>, either antimalware engine or Network Inspection System engine.
+          - Engine Type: `Engine type`, either antimalware engine or Network Inspection System engine.
 
-          - User: <Domain>\<User>
+          - User: `Domain\User`
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
          User action:	The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update. To troubleshoot this event:
 
@@ -1102,13 +1103,13 @@ sections:
 
           - Signatures Attempted:
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
-          - Signature Version: <Definition version>
+          - Signature Version: `Definition version`
 
-          - Engine Version: <Antimalware engine version>
+          - Engine Version: `Antimalware engine version`
 
          User action: The Microsoft Defender Antivirus client attempted to download and install the latest definitions file and failed. This error can occur when the client encounters an error while trying to load the definitions, or if the file is corrupt. Microsoft Defender Antivirus attempts to revert back to a known-good set of definitions. To troubleshoot this event:
 
@@ -1129,7 +1130,7 @@ sections:
 
          Description: Microsoft Defender Antivirus couldn't load antimalware engine because current platform version isn't supported. Microsoft Defender Antivirus reverts back to the last known-good engine and a platform update will be attempted.
 
-          - Current Platform Version: <Current platform version>
+          - Current Platform Version: `Current platform version`
 
      - question: Event ID 2006
        answer: |
@@ -1140,11 +1141,11 @@ sections:
 
          Description: Microsoft Defender Antivirus has encountered an error trying to update the platform.
 
-          - Current Platform Version: <Current platform version>
+          - Current Platform Version: `Current platform version`
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
      - question: Event ID 2007
        answer: |
@@ -1155,7 +1156,7 @@ sections:
 
          Description: Microsoft Defender Antivirus will soon require a newer platform version to support future versions of the antimalware engine. Download the latest Microsoft Defender Antivirus platform to maintain the best level of protection available.
 
-          - Current Platform Version: <Current platform version>
+          - Current Platform Version: `Current platform version`
 
      - question: Event ID 2010
        answer: |
@@ -1166,21 +1167,21 @@ sections:
 
          Description: Microsoft Defender Antivirus used Dynamic Signature Service to retrieve additional signatures to help protect your machine.
 
-          - Current Signature Version: <Current signature version>
+          - Current Signature Version: `Current signature version`
 
-          - Signature Type: <Signature type>, for example: Antivirus, Antispyware, Antimalware, or Network Inspection System
+          - Signature Type: `Signature type`. Examples: Antivirus, Antispyware, Antimalware, or Network Inspection System
 
-          - Current Engine Version: <Current engine version>
+          - Current Engine Version: `Current engine version`
 
-          - Dynamic Signature Type: <Dynamic signature type>, for example: Version, Timestamp, No limit, or Duration
+          - Dynamic Signature Type: `Dynamic signature type`. Examples: Version, Timestamp, No limit, or Duration
 
-          - Persistence Path: <Path>
+          - Persistence Path: `Path`
 
-          - Dynamic Signature Version: <Version number>
+          - Dynamic Signature Version: `Version number`
 
-          - Dynamic Signature Compilation Timestamp: <Timestamp>
+          - Dynamic Signature Compilation Timestamp: `Timestamp`
 
-          - Persistence Limit Type: <Persistence limit type>, for example: VDM version, Timestamp, or No limit
+          - Persistence Limit Type: `Persistence limit type`. Examples: VDM version, Timestamp, or No limit
 
           - Persistence Limit: Persistence limit of the fastpath signature.
 
@@ -1204,23 +1205,23 @@ sections:
 
          Description: Microsoft Defender Antivirus used Dynamic Signature Service to discard obsolete signatures.
 
-          - Current Signature Version: <Current signature version>
+          - Current Signature Version: `Current signature version`
 
-          - Signature Type: <Signature type>, for example: Antivirus, Antispyware, Antimalware, or Network Inspection System
+          - Signature Type: `Signature type`. Examples: Antivirus, Antispyware, Antimalware, or Network Inspection System
 
-          - Current Engine Version: <Current engine version>
+          - Current Engine Version: `Current engine version`
 
-          - Dynamic Signature Type: <Dynamic signature type>, for example: Version, Timestamp, No limit, or Duration
+          - Dynamic Signature Type: `Dynamic signature type`. Examples: Version, Timestamp, No limit, or Duration
 
-          - Persistence Path: <Path>
+          - Persistence Path: `Path`
 
-          - Dynamic Signature Version: <Version number>
+          - Dynamic Signature Version: `Version number`
 
-          - Dynamic Signature Compilation Timestamp: <Timestamp>
+          - Dynamic Signature Compilation Timestamp: `Timestamp`
 
           - Removal Reason:
 
-          - Persistence Limit Type: <Persistence limit type>, for example: VDM version, Timestamp, or No limit
+          - Persistence Limit Type: `Persistence limit type`. Examples: VDM version, Timestamp, or No limit
 
           - Persistence Limit: Persistence limit of the fastpath signature.
 
@@ -1235,25 +1236,25 @@ sections:
 
          Description: Microsoft Defender Antivirus has encountered an error trying to use Dynamic Signature Service.
 
-          - Current Signature Version: <Current signature version>
+          - Current Signature Version: `Current signature version`
 
-          - Signature Type: <Signature type>, for example: Antivirus, Antispyware, Antimalware, or Network Inspection System
+          - Signature Type: `Signature type`. Examples: Antivirus, Antispyware, Antimalware, or Network Inspection System
 
-          - Current Engine Version: <Current engine version>
+          - Current Engine Version: `Current engine version`
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
-          - Dynamic Signature Type: <Dynamic signature type>, for example: Version, Timestamp, No limit, or Duration
+          - Dynamic Signature Type: `Dynamic signature type`. Examples: Version, Timestamp, No limit, or Duration
 
-          - Persistence Path: <Path>
+          - Persistence Path: `Path`
 
-          - Dynamic Signature Version: <Version number>
+          - Dynamic Signature Version: `Version number`
 
-          - Dynamic Signature Compilation Timestamp: <Timestamp>
+          - Dynamic Signature Compilation Timestamp: `Timestamp`
 
-          - Persistence Limit Type: <Persistence limit type>, for example: VDM version, Timestamp, or No limit
+          - Persistence Limit Type: `Persistence limit type`. Examples: VDM version, Timestamp, or No limit
 
           - Persistence Limit: Persistence limit of the fastpath signature.
 
@@ -1268,7 +1269,7 @@ sections:
 
          Description: Microsoft Defender Antivirus discarded all *Dynamic Signature Service* signatures.
 
-          - Current Signature Version: <Current signature version>
+          - Current Signature Version: `Current signature version`
 
      - question: Event ID 2020
        answer: |
@@ -1279,11 +1280,11 @@ sections:
 
          Description: Microsoft Defender Antivirus downloaded a clean file.
 
-          - Filename: <File name> Name of the file.
+          - Filename: `File name` Name of the file.
 
-          - Current Signature Version: <Current signature version>
+          - Current Signature Version: `Current signature version`
 
-          - Current Engine Version: <Current engine version>
+          - Current Engine Version: `Current engine version`
 
      - question: Event ID 2021
        answer: |
@@ -1294,15 +1295,15 @@ sections:
 
          Description: Microsoft Defender Antivirus has encountered an error trying to download a clean file.
 
-          - Filename: <File name> Name of the file.
+          - Filename: `File name` Name of the file.
 
-          - Current Signature Version: <Current signature version>
+          - Current Signature Version: `Current signature version`
 
-          - Current Engine Version: <Current engine version>
+          - Current Engine Version: `Current engine version`
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
          User action: Check your Internet connectivity settings. The Microsoft Defender Antivirus client encountered an error when using the Dynamic Signature Service to download the latest definitions to a specific threat. This error is likely caused by a network connectivity issue.
 
@@ -1324,9 +1325,9 @@ sections:
 
          Description: Microsoft Defender Antivirus has encountered an error trying to download and configure offline antivirus.
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
      - question: Event ID 2040
        answer: |
@@ -1364,11 +1365,11 @@ sections:
 
          Description: Microsoft Defender Antivirus Real-Time Protection feature has encountered an error and failed.
 
-          - Feature: <Feature>, for example: On Access, Internet Explorer downloads and Microsoft Outlook Express attachments, Behavior monitoring, or Network Inspection System
+          - Feature: `Feature`. Examples: On Access, Internet Explorer downloads and Microsoft Outlook Express attachments, Behavior monitoring, or Network Inspection System
 
-          - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+          - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-          - Error Description: <Error description> Description of the error.
+          - Error Description: `Error description` Description of the error.
 
           - Reason: The reason Microsoft Defender Antivirus real-time protection has restarted a feature.
 
@@ -1383,7 +1384,7 @@ sections:
 
          Description: Microsoft Defender Antivirus Real-time Protection has restarted a feature. It's recommended that you run a full system scan to detect any items that may have been missed while this agent was down.
 
-          - Feature: <Feature>, for example: On Access, IE downloads and Outlook Express attachments, Behavior monitoring, or Network Inspection System
+          - Feature: `Feature`. Examples: On Access, IE downloads and Outlook Express attachments, Behavior monitoring, or Network Inspection System
 
           - Reason: The reason Microsoft Defender Antivirus real-time protection has restarted a feature.
 
@@ -1416,7 +1417,7 @@ sections:
 
          Description: Microsoft Defender Antivirus real-time protection feature configuration has changed.
 
-          - Feature: <Feature>, for example: On Access, IE downloads and Outlook Express attachments, Behavior monitoring, or Network Inspection System
+          - Feature: `Feature`. Examples: On Access, IE downloads and Outlook Express attachments, Behavior monitoring, or Network Inspection System
           - Configuration:
 
      - question: Event ID 5007
@@ -1428,9 +1429,9 @@ sections:
 
          Description: Microsoft Defender Antivirus configuration has changed. If this is an unexpected event, you should review the settings as this may be the result of malware.
 
-          - Old value: <Old value number> Old antivirus configuration value.
+          - Old value: `Old value number` Old antivirus configuration value.
 
-          - New value: <New value number> New antivirus configuration value.
+          - New value: `New value number` New antivirus configuration value.
 
      - question: Event ID 5008
        answer: |
@@ -1441,11 +1442,11 @@ sections:
 
          Description: Microsoft Defender Antivirus engine has been terminated due to an unexpected error.
 
-          - Failure Type: <Failure type>, for example: Crash or Hang
+          - Failure Type: `Failure type`. Examples: Crash or Hang
 
-          - Exception Code: <Error code>
+          - Exception Code: `Error code`
 
-          - Resource: <Resource>
+          - Resource: `Resource`
 
          User action: To troubleshoot this event:
 
@@ -1536,9 +1537,9 @@ sections:
 
            - Expiration Date:
 
-           - Error Code: <Error code> Result code associated with threat status. Standard HRESULT values.
+           - Error Code: `Error code` Result code associated with threat status. Standard HRESULT values.
 
-           - Error Description: <Error description> Description of the error.
+           - Error Description: `Error description` Description of the error.
 
      - question: Microsoft Defender Antivirus client error codes
        answer: |
@@ -1585,8 +1586,8 @@ sections:
 
               - Download the latest definitions from the [Microsoft Security Intelligence site](https://www.microsoft.com/wdsi).
 
-              > [!Note]
-              >  The size of the definitions file downloaded from the site can exceed 60 MB and shouldn't be used as a long-term solution for updating definitions.
+              ` [!Note]
+              `  The size of the definitions file downloaded from the site can exceed 60 MB and shouldn't be used as a long-term solution for updating definitions.
 
           - Run a full scan.
 
@@ -1959,14 +1960,14 @@ sections:
 
          Possible reason for error and resolution: This is an internal error. It might have triggered when a scan fails to complete.
 
-         > [!TIP]
-         >  If you're looking for Antivirus related information for other platforms, see:
-         >    - [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences)
-         >    - [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
-         >    - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-         >    - [Set preferences for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-preferences)
-         >    - [Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux)
-         >    - [Configure Defender for Endpoint on Android features](/microsoft-365/security/defender-endpoint/android-configure)
-         >    - [Configure Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-configure-features)
+         ` [!TIP]
+         `  If you're looking for Antivirus related information for other platforms, see:
+         `    - [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences)
+         `    - [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+         `    - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+         `    - [Set preferences for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-preferences)
+         `    - [Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux)
+         `    - [Configure Defender for Endpoint on Android features](/microsoft-365/security/defender-endpoint/android-configure)
+         `    - [Configure Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-configure-features)
 
 
