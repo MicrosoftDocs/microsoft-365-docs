@@ -316,8 +316,6 @@ The templates listed below may be purchased by your organization. Certain licens
 - Pakistan - Electronic Data Protection Act - DRAFT  
 - Philippines BSP Information Security Management Guidelines  
 - Philippines Data Privacy Act of 2012  
-- Saudi Arabia - Saudi Arabia Monetary Authority (SAMA)
-- Saudi Arabia - National Cybersecurity Authority (NCA)
 - Singapore - ABS Guidelines on Control Objectives and Procedures for Outsourced Service Providers  
 - Singapore - Banking Act (Cap.19)
 - Singapore - Cybersecurity 2018  
@@ -394,6 +392,8 @@ The templates listed below may be purchased by your organization. Certain licens
 - Romania - Data Protection Law 190/2018  
 - Russia - Federal Law 149-FZ On Information, Information Technology and Information Security
 - [Russian Federation Federal Law Regarding Personal Data](/compliance/regulatory/offering-russia-data-localization)  
+- Saudi Arabia - Saudi Arabia Monetary Authority (SAMA)
+- Saudi Arabia - National Cybersecurity Authority (NCA)
 - South Africa Consumer Protection ACT 68 2008  
 - South Africa Electronic Communications and Transactions Act, 2002  
 - South Africa - Promotion of Access to Information Act  
