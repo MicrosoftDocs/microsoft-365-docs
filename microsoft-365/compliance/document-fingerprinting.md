@@ -122,29 +122,27 @@ If you have an E5 license and want to use the latest fingerprint features, you c
 
 ## Create a new policy using your fingerprint SIT using the compliance portal
 
-1. In the Microsoft Purview compliance portal, select **Data loss prevention** and then choose **Policies**.
-2. Choose **Sensitive info types**.
-3. Choose **+ Create policy** to create a new policy.
-4. Choose **Custom** to create a new policy and then select your region or country.
-5. Choose **Next**.
-6. Name your policy and provide a description, and then choose **Next**.
-7. OPTIONAL: On the **Assign admin units** page, you can add specific users and groups that you want to be subject to the policy. When finished, choose **Next**. (If the policy should apply to all users and groups, simply choose **Next**.) 
-8. Select the locations where you want the policy applied and then choose **Next**.
-9. On the **Define policy settings** page, choose **Create ir customize advanced DLP rules** and then choose **Next**.
-10. On the **Customize advanced DLP rules** page, choose **Create rule**.
-11. Enter a name and description for your rule.
-12. Under **Conditions** choose **Add condition** and then choose **Content contains**.
-13. Give your new set of DLP rules a **Group name**.
-14. Choose **Add** and then **Sensitive info types**.
-15. In the Sensitive info types search for and, select the name of your fingerprint SIT.
-16. Choose **Add**.
-17. Select your confidence level and then choose **Add an action**.
-18. Select the action to take when the rule is triggered, and then specify the action details.
-19. Choose **Save**.
-20. Choose **Next**.
-21. Select whether to test your policy or turn it on right away, then choose **Next**.
-22. Review your settings and then choose **Submit**.
-23. Choose **Done**.
+1. In the Microsoft Purview compliance portal, select **Data loss prevention** > **Policies** > **Sensitive info types** > **+ Create policy** > **Custom** to create a new policy.
+1. Select your region or country > **Next**.
+1. Name your policy and provide a description > **Next**.
+1. On the **Assign admin units** page, choose between these two options:
+   - Apply the policy to all users and groups > **Next**.
+   or
+   - Add specific users and groups that you want to be subject to the policy > **Next**.
+1. Select the locations where you want the policy applied > **Next**.
+1. On the **Define policy settings** page, choose **Create customize advanced DLP rules** > **Next**.
+1. On the **Customize advanced DLP rules** page, choose **Create rule**.
+1. Enter a name and description for your rule.
+1. Under **Conditions** choose **Add condition** > **Content contains**.
+1. Give your new set of DLP rules a **Group name** > **Add** > **Sensitive info types**.
+1. Search for and select the name of your fingerprint SIT > **Add**.
+1. Select your confidence level > **Add an action**.
+1. Select the action to take when the rule is triggered, and then specify the action details > **Save** > **Next**.
+1. Choose between these two options:
+   - Test your policy > **Next**.
+   or
+   - turn on your policy right away > **Next**.
+1. Review your settings > **Submit** > **Done**.
 
 ## Create a custom sensitive information type based on document fingerprinting using PowerShell
 
@@ -211,13 +209,11 @@ To do this via PowerShell, run the following command(s).
 
 ## Migrate a new policy using your fingerprint SIT using the compliance portal
 
-1. In the Microsoft Purview compliance portal, select **Data loss prevention** and then choose **Policies**.
-2. Choose **Sensitive info types**.
-3. Open the SIT containing the fingerprint that you want to migrate.
-4. Choose **Edit**.
-5. Upload the same fingerprint file again.
-6. Review the fingerprint settings.
-7. Choose **Done**.
+1. In the Microsoft Purview compliance portal, select **Data loss prevention** > **Policies** > **Sensitive info types**.
+1. Open the SIT containing the fingerprint that you want to migrate.
+1. Choose **Edit**.
+1. Upload the same fingerprint file again.
+1. Review the fingerprint settings > **Done**.
 
 ## Migrate a fingerprint using PowerShell
 
