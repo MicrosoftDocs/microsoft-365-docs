@@ -71,7 +71,7 @@ Document fingerprinting doesn't detect sensitive information in the following ca
 - Files larger than 4 MB
  
 > [!NOTE]
-> To use document fingerprinting with devices, **Advanced fingerprinting** must be turned oN.
+> To use document fingerprinting with devices, **Advanced fingerprinting** must be turned on.
 
 Fingerprints are stored in a separate rule pack. This rule pack has a maximum size limit of 150 KB. Given this limit, you can create approximately 50 fingerprints per tenant.
 
@@ -90,11 +90,9 @@ The following examples show what happens if you create a document fingerprint ba
 ### PowerShell example of a patent document matching a document fingerprint of a patent template
 
 ```powershell
->> $Customer_Form = ([System.IO.File]::ReadAllBytes('C:\My Documents\file1.docx'))
->> $Customer_Fingerprint = New-DlpFingerprint -FileData $Customer_Form -Description "A friendly Description" -ThresholdConfig @{low=40;medium=60;high=80} -IsExact $false
- 
->> New-DlpSensitiveInformationType -Name "Fingerprint SIT" -Fingerprints $Customer_Fingerprint -Description "A friendly Description"
-```
+>> $Patent_Form = ([System.IO.File]::ReadAllBytes('C:\My Documents\patent.docx'))
+
+>> New-DlpSensitiveInformationType -Name "Patent SIT" -FileData $Patent_Form  -ThresholdConfig @{low=40;medium=60;high=80} -IsExact $false -Description "Contoso Patent Template"
 <br>
 
 ### Partial Matching
@@ -157,23 +155,19 @@ $Employee_Template = ([System.IO.File]::ReadAllBytes('C:\My Documents\Contoso Em
 $Employee_Fingerprint = New-DlpFingerprint -FileData $Employee_Template -Description "Contoso Employee Template"
 ```
 
-Now, let's create a new data classification rule named "Contoso Employee Confidential" that uses the document fingerprint of the file C:\My Documents\Contoso Customer Information Form.docx.
-
 ```powershell
-$Customer_Form = ([System.IO.File]::ReadAllBytes('C:\My Documents\Contoso Customer Information Form.docx'))
-$Customer_Fingerprint = New-DlpFingerprint -FileData $Customer_Form -Description "Contoso Customer Information Form"
-New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerprints $Customer_Fingerprint -Description "Message contains Contoso customer information."
+$Employee_Form = ([System.IO.File]::ReadAllBytes('C:\My Documents\Contoso Customer Form.docx'))
+
+New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -FileData $Employee_Form -ThresholdConfig @{low=40;medium=60;high=80} -IsExact $false -Description "Message contains Contoso customer information."
 ```
 
-You can now use the **Get-DlpSensitiveInformationType** cmdlet to find all DLP data classification rule packages, and in this example, "Contoso Customer Confidential" is part of the data classification rule packages list.
-
-Finally, add the "Contoso Customer Confidential" data classification rule package to a DLP policy in the Microsoft Purview compliance portal. This example adds a rule to an existing DLP policy named "ConfidentialPolicy".
+Finally, add the "Contoso Customer Confidential" sensitive information type to a DLP policy in the Microsoft Purview compliance portal. This example adds a rule to an existing DLP policy, named "ConfidentialPolicy".
 
 ```powershell
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-You can also use the data classification rule package in mail flow rules in Exchange Online, as shown in the following example. To run this command, you first need to [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Also note that it takes time for the rule package to sync from the Microsoft Purview compliance portal to the Exchange admin center.
+You can also use the Fingerprint SIT in mail flow rules in Exchange, as shown in the following example. To run this command, you first need to Connect to Exchange PowerShell. Also note that it takes time for the SITs to sync from the Microsoft Purview compliance portal to the Exchange admin center.
 
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
