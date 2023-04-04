@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn about the addition of Microsoft Teams in delivering simulated phishing attacks in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/30/2023
+ms.date: 4/4/2023
 ---
 
 # Microsoft Teams in Attack simulation training
@@ -44,14 +44,12 @@ To configure the accounts, do the following steps:
 1. Identify or create a user who's a member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator), [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator), or [Attack Simulation Administrator](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator) roles in Azure Active Directory. You need to know the password.
 2. Using the account from Step 1, open the Microsoft 365 Defender portal at <https://security.microsoft.com> and go to **Email & collaboration** \> **Attack simulation training** \> **Settings** tab. Or, to go directly to the **Settings** tab, use <https://security.microsoft.com/attacksimulator?viewid=setting>.
 3. On the **Settings** tab, click **Manager user accounts** in the **Teams simulation configuration** section.
-4. In the **Teams simulation configuration** flyout that opens, click **Generate token**. Read the information in the dialog, and then click **I agree**.
-5. Back on the **Settings** tab, click **Manager user accounts** in the **Teams simulation configuration** section again to reopen the **Teams simulation configuration** flyout.
-
-   The user account that you were logged in as now appears in the **User accounts available for Teams phishing** section.
+4. In the **Teams simulation configuration** flyout that opens, click **Generate token**. Read the information in the confirmation dialog, and then click **I agree**.
+5. Back on the **Settings** tab, click **Manager user accounts** in the **Teams simulation configuration** section again to reopen the **Teams simulation configuration** flyout. The user account that you were logged in as now appears in the **User accounts available for Teams phishing** section.
 
 To remove a user from the list, click the round check box that appears next to the user's **Display name** without clicking anywhere else in the row. Click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears, and then click **Delete** in the confirmation dialog.
 
-Or, to prevent the account from being used in Teams simulations but keep the linked simulations history for the account, you can block the account from signing in as described [here]/microsoft-365/admin/add-users/remove-former-employee-step-1).
+Or, to prevent the account from being used in Teams simulations but keep the linked simulations history for the account, you can block the account from signing in as described [here](/microsoft-365/admin/add-users/remove-former-employee-step-1).
 
 ## Changes in simulations for Microsoft Teams
 
