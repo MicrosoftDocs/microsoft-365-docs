@@ -727,7 +727,7 @@
       - name: Troubleshooting Microsoft Defender Antivirus
         items:
         - name: Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus
-          href: troubleshoot-microsoft-defender-antivirus.md
+          href: troubleshoot-microsoft-defender-antivirus.yml
         - name: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
           href: troubleshoot-microsoft-defender-antivirus-when-migrating.yml
 
