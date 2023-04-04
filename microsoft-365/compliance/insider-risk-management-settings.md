@@ -208,10 +208,20 @@ Intelligent detection settings help refine how the detections of risky activitie
 
 ### Ignore email signature attachments
 
-One of the main sources of "noise" in insider risk management policies is images in email signatures, which are often detected as attachments in emails. This can lead to false positives of users sending potentially confidential files via email. If the *Sending email with attachments to recipients outside the organization* indicator is selected, the attachment is scored like any other email attachment sent outside the organization, even if the only thing in the attachment is the email signature. You can exclude signature attachments from being scored in this situation by turning on the **Ignore email signature attachments** setting. Turning this setting on doesn't completely eliminate noise from email signature attachments but it will reduce noise significantly. For example, if two people are communicating, and both have images in signatures, only the originating email signature will be identified. Also, if someone changes their email signature, the new signature has to be profiled, which can cause alert noise for a short period of time. 
+One of the main sources of "noise" in insider risk management policies is images in email signatures, which are often detected as attachments in emails. This can lead to false positives of users sending potentially confidential files via email. If the *Sending email with attachments to recipients outside the organization* indicator is selected, the attachment is scored like any other email attachment sent outside the organization, even if the only thing in the attachment is the email signature. You can exclude email signature attachments from being scored in this situation by turning on the **Ignore email signature attachments** setting. 
 
 > [!NOTE]
 > The **Ignore email signature attachments** setting is off by default. 
+
+#### Why this setting doesn't completely eliminate email signature attachment noise
+
+Turning this setting on will significantly eliminate noise from email signature attachments, but it won't completely eliminate noise. This is because only the email signature attachment of the email sender is excluded from scoring. The sender can be the person who initiated the mail thread or anyone who replies to that thread. A signature attachment for anyone on the To, CC, or BCC line will still be scored. For example, imagine that P1 and P2 belong to one organization, M1 and M2 belong to a different organization, and all have email signature attachments. 
+
+- If P1 sends email to P2, M1, and M2, only the P1 signature attachment is excluded from scoring.
+- If P2 replies to the email from P1, only the P2 signature attachment is excluded from scoring.
+- If M1 replies to the email from P1, only the M1 signature attachment is excluded from scoring.
+
+Also, if someone changes their email signature, the new signature has to be profiled, which can cause alert noise for a short period of time. 
 
 ### File activity detection
 
