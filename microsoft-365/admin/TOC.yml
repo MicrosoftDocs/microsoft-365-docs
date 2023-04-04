@@ -278,8 +278,9 @@
     - name: Manage your data and services
       items:
          - name: Monitor Microsoft 365 activity by using reports
-           href: activity-reports/activity-reports.md
            items:
+            - name: Microsoft 365 Reports in the admin center - overview
+              href: activity-reports/activity-reports.md
             - name: Active Users
               href: activity-reports/active-users-ww.md
             - name: Microsoft browser usage
