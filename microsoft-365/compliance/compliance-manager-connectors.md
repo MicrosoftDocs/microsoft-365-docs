@@ -44,7 +44,7 @@ Get into elliot's service instance and programmatic mapping docs - define servic
 Before creating an assessment, you'll need to set up a connector for the service you're assessing.
 
 > [!IMPORTANT]
-> Compliance Manager connectors are unique to the Comliance Manager solution and are set up within Compliance Manager. The data connectors located on the left nav of the Microsoft Purview compliance portal are not the connnectors to use for Compliance Manager assessments.
+> Compliance Manager connectors are unique to the Compliance Manager solution and are set up directly within Compliance Manager. The data connectors accessed from the left nav of the Microsoft Purview compliance portal are not the connnectors to use for Compliance Manager assessments.
 
 #### Required roles
 
