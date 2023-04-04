@@ -44,7 +44,7 @@ To configure the accounts, do the following steps:
 1. Identify or create a user who's a member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator), [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator), or [Attack Simulation Administrator](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator) roles in Azure Active Directory. You need to know the password.
 2. Using the account from Step 1, open the Microsoft 365 Defender portal at <https://security.microsoft.com> and go to **Email & collaboration** \> **Attack simulation training** \> **Settings** tab. Or, to go directly to the **Settings** tab, use <https://security.microsoft.com/attacksimulator?viewid=setting>.
 3. On the **Settings** tab, click **Manager user accounts** in the **Teams simulation configuration** section.
-4. In the **Teams simulation configuration** flyout that opens, click **Generate token**. Read the information in the dialog, and then click **I agree**.
+4. In the **Teams simulation configuration** flyout that opens, click **Generate token**. Read the information in the confirmation dialog, and then click **I agree**.
 5. Back on the **Settings** tab, click **Manager user accounts** in the **Teams simulation configuration** section again to re-open the **Teams simulation configuration** flyout.
 
    The user account that you were logged in as now appears in the **User accounts available for Teams phishing** section.
