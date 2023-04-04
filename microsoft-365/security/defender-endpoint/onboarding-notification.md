@@ -62,7 +62,7 @@ You'll need to have access to:
 
    :::image type="content" source="images/build-flow.png" alt-text="The notification flow" lightbox="images/build-flow.png":::
 
-4. Select the + button to add a new action. The new action will be an HTTP request to the Defender for Endpoint security center device(s) API. You can also replace it with the out-of-the-box "WDATP Connector" (action: "Machines - Get list of machines").
+4. Select the + button to add a new action. The new action will be an HTTP request to the Defender for Endpoint device(s) API. You can also replace it with the out-of-the-box "WDATP Connector" (action: "Machines - Get list of machines").
 
    :::image type="content" source="images/recurrence-add.png" alt-text="The recurrence and add action" lightbox="images/recurrence-add.png":::
 
@@ -203,7 +203,7 @@ The following image is an example of an email notification.
     - Take all devices last seen in the past 7 days.
 
 - For each device:
-  - If last seen property is on the one hour interval of [-7 days, -7days + 60 minutes ] -> Alert for offboarding possibility.
+  - If last seen property is on the one hour interval of [-7 days, -7days + 60 minutes] -> Alert for offboarding possibility.
   - If first seen is on the past hour -> Alert for onboarding.
 
 In this solution you will not have duplicate alerts:

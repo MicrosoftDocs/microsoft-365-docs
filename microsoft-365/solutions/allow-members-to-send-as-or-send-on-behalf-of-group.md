@@ -15,6 +15,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - m365solution-collabgovernance
+- Tier1
 ms.custom: admindeeplinkEXCHANGE
 search.appverid:
 - MET150

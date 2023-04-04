@@ -184,9 +184,9 @@ location | include/exclude by|
 > [!NOTE]
 > The conditions and the actions to take are defined in an object called a Rule.
 
-<!--## Create a DLP policy
+## Create and deploy a DLP policy
 
-All DLP policies are created and maintained in the Microsoft Purview center. See, INSERT LINK TO ARTICLE THAT WILL START WALKING THEM THROUGH THE POLICY CREATION PROCEDURES for more information.-->
+All DLP policies are created and maintained in the Microsoft Purview center. See, [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) for more information.
 
 After you create a DLP policy in the compliance portal, it's stored in a central policy store, and then synced to the various content sources, including:
 
@@ -234,7 +234,7 @@ You can see the text that surrounds the matched content, like a credit card numb
 
 **DLPRuleMatch** events are paired with the user activity event. The should be right next to (or at least very close to) each other in Activity explorer.  You'll want to look at both because the **user activity event** contains details about the matched policy and the **DLPRuleMatch** event contains the details about the text that surrounds the matched content. 
 
-This is in preview for endpoint DLP. For endpoints, be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
+For endpoint, be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices or above
 
 
 For more information, see [Get started with activity explorer](data-classification-activity-explorer.md)

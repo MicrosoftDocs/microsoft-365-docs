@@ -60,7 +60,7 @@
           href: device-onboarding-offboarding-macos-jamfpro.md
         - name: JAMF Pro for Microsoft Defender for Endpoint customers
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
-- name: Manage connectors for third-party data
+- name: Configure connectors to import third-party data
   items: 
    - name: Learn about connectors for third-party data
      href: archiving-third-party-data.md
@@ -222,6 +222,8 @@
   items:
     - name: Microsoft Purview insider risk solutions
       href: insider-risk-solution-overview.md
+    - name: Privacy guide
+      href: insider-risk-solution-privacy.md
     - name: Communication compliance
       items:
         - name: Overview
@@ -303,11 +305,19 @@
         - name: Information barriers & Microsoft 365 services
           items:
             - name: Microsoft Teams and information barriers
-              href: /microsoftteams/information-barriers-in-teams?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json 
+              href: information-barriers-teams.md
+            - name: Microsoft Teams shared channels and information barriers
+              href: information-barriers-teams-shared-channels.md
+            - name: Microsoft Teams PowerShell script and information barriers
+              href: information-barriers-teams-powershell-script.md
             - name: OneDrive and information barriers
-              href: /onedrive/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+              href: information-barriers-onedrive.md
             - name: SharePoint and information barriers
-              href: /sharepoint/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+              href: information-barriers-sharepoint.md
+            - name: SharePoint information barriers compliance assistant (preview)
+              href: information-barriers-sharepoint-assistant.md
+            - name: SharePoint information barriers policy compliance report
+              href: information-barriers-sharepoint-report.md
     - name: Privileged access management
       items:
         - name: Overview
@@ -1187,7 +1197,7 @@
             href: dlp-on-premises-scanner-learn.md
           - name: Learn about the Microsoft Purview Chrome Extension
             href: dlp-chrome-learn-about.md
-          - name: Learn about the Microsoft Purview Firefox Extension (preview)
+          - name: Learn about the Microsoft Purview Firefox Extension
             href: dlp-firefox-extension-learn.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
@@ -1454,7 +1464,7 @@
           href: ediscovery-search-for-content.md
         - name: Export content from a case
           href: ediscovery-export-content.md
-        - name: Close, reopen, and delete a case
+        - name: Upgrade (preview), close, reopen, or delete a case
           href: ediscovery-close-reopen-delete-cases.md
         - name: eDiscovery (Standard) reference
           items:
@@ -1568,10 +1578,12 @@
               href: ediscovery-commit-draft-collection.md
             - name: Collection statistics and reports
               href: ediscovery-collection-statistics-reports.md        
-            - name: Build search queries for collections
+            - name: Build search queries for keywords and collections
               href: ediscovery-building-search-queries.md
             - name: Use the KQL editor to build search queries
               href: ediscovery-kql-editor.md
+            - name: Use the query builder to create search queries (preview)
+              href: ediscovery-query-builder.md
             - name: Keyword queries and search conditions
               href: ediscovery-keyword-queries-and-search-conditions.md 
             - name: Collect cloud attachments
