@@ -315,6 +315,14 @@ The following table lists the activities in information barriers that are logged
 | Changed segments of a site | SegmentsChanged | A SharePoint or global administrator changed one or more information barriers segments for a site. |
 | Removed segments from a site | SegmentsRemoved | A SharePoint or global administrator removed one or more information barriers segments from a site. |
 
+## Microsoft Defender Experts activities
+
+The following table lists the activities in Microsoft Defender Experts that are logged in the Microsoft 365 audit log.
+|Friendly name|Operation|Description|
+|:----------------|:------------|:--------------|
+| Defender Experts Analyst Permission Created | DefenderExpertsAnalystPermissionCreated | An administrator granted one or more role permissions to Defender Experts analysts to investigate incidents or remediate threats.|
+| Defender Experts Analyst Permission Modified | DefenderExpertsAnalystPermissionModified | An administrator modified role permissions to Defender Experts analysts to investigate incidents or remediate threats.|
+
 ## Microsoft Forms activities
 
 The tables in this section the user and admin activities in Microsoft Forms that are logged in the audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for analysis. Where noted below in the descriptions, some operations contain additional activity parameters.
