@@ -1,5 +1,5 @@
 ---
-title: "Data connectors (preview) in Microsoft Purview Compliance Manager"
+title: "Data connectors in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -18,22 +18,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Set up data connectors (preview) to build assessments for non-Microsoft services in Microsoft Purview Compliance Manager."
+description: "Set up data connectors to build assessments for non-Microsoft services in Microsoft Purview Compliance Manager."
 ---
 
-# Working with data connectors in Compliance Manager (preview)
+# Working with data connectors in Compliance Manager
 
 **In this article:** Learn how to...
 
 Compliance Manager has an integrated set of third-party data connectors so that you can build assessments that cover services other than Microsoft. You can select the connectors you need within Compliance Manager. Then when you build your assessment, you'll select from among the connectors you've already set up.
 
-- Setting up connectors for your assessments are covered in step XYZ of the [guided process for creating assessments](compliance-manager-assessments.md#create-an-assessment-using-a-guided-process), below.
-
-
-TO ADD - where to find your connectors in CM. Go to **Data connectors** in upper right corner of screen. Once you're here, what od you do - add or activate connectors?
-
 ## Available connectors
-The Compliance Manager integrated connectors currently available  are:
+The connectors available for Compliance Manager are:
 
 - Salesforce
 - Zoom
@@ -42,7 +37,7 @@ Additional connectors will be available in coming months.
 
 ## How connectors work
 
-Get into elliot's service instance and programmatic mapping docs - define service instance. Actually, not sure that we need to go into depth here based on his 
+Get into elliot's service instance and programmatic mapping docs - define service instance. Actually, not sure that we need to go into depth here based on his .....
 
 ## Set up data connectors
 
@@ -51,7 +46,7 @@ Before creating an assessment, you'll need to set up a connector for the service
 > [!IMPORTANT]
 > Compliance Manager connectors are unique to the Comliance Manager solution and are set up within Compliance Manager. The data connectors located on the left nav of the Microsoft Purview compliance portal are not the connnectors to use for Compliance Manager assessments.
 
-1. In Compliance Manager, select **Data connectors** in the upper right of your screen. The **Data connectors** page in Compliance Manager lists the available connectors.
+1. In Compliance Manager, select **Data connectors** in the upper right of your screen. The **Data connectors** page in Compliance Manager opens, displaying a list of available connectors.
 1. Select the checkbox next to the name of the connector you want to add. Only one connector can be added at a time. After making your selection, select **Activate connector**.
 1. On the connector's details page, you can review details and requirements. Select **Add connector**, which takes you to the connector setup wizard.
 1. Review the Microsoft Terms of Service, then select **Accept**.
@@ -61,9 +56,11 @@ Before creating an assessment, you'll need to set up a connector for the service
 
 ? - each connector will have its own separate setup page, like current connectors do?
 
-## Using connectors when creating assessments
+## Add connectors to assessments
 
-Get into elliot's service instance doc - define service instance.
+...Get into elliot's service instance doc - define service instance....
+
+To build an assessment for a non-Microsoft service, you'll choose the applicable connector during the assessment creation process.
 
 When you get to the "Select servies" page in the assessment creation wizard, choose **Select services**....
 
