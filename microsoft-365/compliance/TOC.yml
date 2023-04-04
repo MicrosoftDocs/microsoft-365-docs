@@ -1723,8 +1723,6 @@
           href: audit-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
           href: audit-log-sharing.md
-        - name: Placeholder audit topic move
-          href: audit-teams-audit-log-events.md
     - name: Audit (Premium)
       items:
         - name: Overview of Audit (Premium)
@@ -1735,6 +1733,8 @@
           href: audit-log-retention-policies.md
         - name: Use Audit (Premium) to investigate compromised accounts
           href: audit-log-investigate-accounts.md
+        - name: Search the audit log for events in Teams
+          href: audit-teams-audit-log-events.md
     - name: Office 365 Management Activity API resources
       items:
         - name: Office 365 Management Activity API reference
