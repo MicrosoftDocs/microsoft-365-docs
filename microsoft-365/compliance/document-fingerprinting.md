@@ -22,7 +22,7 @@ description: "Document Fingerprinting makes it easier for you to protect informa
 Information workers in your organization handle many kinds of sensitive information during a typical day. In the Microsoft Purview compliance portal, document fingerprinting makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. This article describes the concepts behind Document Fingerprinting and how to create a document fingerprint using the compliance portal or using PowerShell.
 
 Document fingerprinting includes the following features:
-- DLP can use document fingerprinting as a detection method in Exchange, SharePoint, OneDrive, Teams, and Windows devices.
+- DLP can use document fingerprinting as a detection method in Exchange, SharePoint, OneDrive, Teams, and Devices.
 - Document fingerprint features can be managed through the Microsoft Purview compliance portal.
 - [Partial matching](#partial-matching)is supported.
 - [Exact file matching](#exact-matching) is supported. 
