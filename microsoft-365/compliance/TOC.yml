@@ -1723,6 +1723,8 @@
           href: audit-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
           href: audit-log-sharing.md
+        - name: Placeholder audit topic move
+          href: audit-teams-audit-log-events.md
     - name: Audit (Premium)
       items:
         - name: Overview of Audit (Premium)
