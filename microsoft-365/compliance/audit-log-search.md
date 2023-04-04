@@ -57,6 +57,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 |Power BI|PowerBIAudit|
 |Quarantine|Quarantine|
 |Microsoft Purview Information Protection (MIP) labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
+|Microsoft Defender Experts|DefenderExpertsforXDRAdmin|
 |Sensitive information types|DlpSensitiveInformationType|
 |Sensitivity labels|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
 |Encrypted message portal|OMEPortal|
