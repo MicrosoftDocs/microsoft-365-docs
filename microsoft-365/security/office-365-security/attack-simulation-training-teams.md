@@ -10,10 +10,10 @@ ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier2
-description: Admins can learn about the addition of Microsoft Teams in delivering simulated phishing attacks in in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
+description: Admins can learn about the addition of Microsoft Teams in delivering simulated phishing attacks in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/30/2023
+ms.date: 4/4/2023
 ---
 
 # Microsoft Teams in Attack simulation training
@@ -33,7 +33,7 @@ The addition of Teams in Attack simulation training affects the following featur
 - [Payloads](attack-simulation-training-payloads.md)
 - [Simulation automations](attack-simulation-training-simulation-automations.md)
 
-[Payload automations](attack-simulation-training-payload-automations.md), [end-user notifications](attack-simulation-training-end-user-notifications.md), [login pages](attack-simulation-training-login-pages.md), and [landing pages](attack-simulation-training-landing-pages.md) are not affected by Teams in Attack simulation training.
+[Payload automations](attack-simulation-training-payload-automations.md), [end-user notifications](attack-simulation-training-end-user-notifications.md), [login pages](attack-simulation-training-login-pages.md), and [landing pages](attack-simulation-training-landing-pages.md) aren't affected by Teams in Attack simulation training.
 
 ## Teams simulation configuration
 
@@ -45,9 +45,7 @@ To configure the accounts, do the following steps:
 2. Using the account from Step 1, open the Microsoft 365 Defender portal at <https://security.microsoft.com> and go to **Email & collaboration** \> **Attack simulation training** \> **Settings** tab. Or, to go directly to the **Settings** tab, use <https://security.microsoft.com/attacksimulator?viewid=setting>.
 3. On the **Settings** tab, click **Manager user accounts** in the **Teams simulation configuration** section.
 4. In the **Teams simulation configuration** flyout that opens, click **Generate token**. Read the information in the confirmation dialog, and then click **I agree**.
-5. Back on the **Settings** tab, click **Manager user accounts** in the **Teams simulation configuration** section again to re-open the **Teams simulation configuration** flyout.
-
-   The user account that you were logged in as now appears in the **User accounts available for Teams phishing** section.
+5. Back on the **Settings** tab, click **Manager user accounts** in the **Teams simulation configuration** section again to reopen the **Teams simulation configuration** flyout. The user account that you were logged in as now appears in the **User accounts available for Teams phishing** section.
 
 To remove a user from the list, click the round check box that appears next to the user's **Display name** without clicking anywhere else in the row. Click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears, and then click **Delete** in the confirmation dialog.
 
@@ -61,7 +59,7 @@ Teams introduces the following changes to viewing and creating simulations as de
 
 - If you select ![Launch a simulation icon.](../../media/m365-cc-sc-create-icon.png) **Launch a simulation** on the **Simulations** tab to create a simulation, the first page of the new simulation wizard is **Select delivery platform** where you can select **Microsoft Teams**. Selecting **Microsoft Teams** introduces the following changes to the rest of the new simulation wizard:
 
-  - On the **[Select technique](attack-simulation-training-simulations.md#select-a-social-engineering-technique)** page, the **Malware Attachment** and **Link in Attachment** social engineering techniques are not available.
+  - On the **[Select technique](attack-simulation-training-simulations.md#select-a-social-engineering-technique)** page, the **Malware Attachment** and **Link in Attachment** social engineering techniques aren't available.
 
   - On the **[Name simulation](attack-simulation-training-simulations.md#name-and-describe-the-simulation)** page, a **Select sender's Microsoft Teams account** section and **Select user account** link are present. Click **Select user account** to find and select the account to use as the source for the Teams message.
 
@@ -71,7 +69,7 @@ Teams introduces the following changes to viewing and creating simulations as de
 
   - On the **[Target users](attack-simulation-training-simulations.md#target-users)** page, the following settings are different for Teams:
     - As noted on the page, guest users in Teams are excluded from simulations.
-    - If you select **Include only specific users and groups**, **City** is not an available filter in the **Filter users by category** section.
+    - If you select **Include only specific users and groups**, **City** isn't an available filter in the **Filter users by category** section.
 
 Other settings related to simulations are the same for Teams messages as described in the existing content for email messages.
 
@@ -87,11 +85,11 @@ Whether you create a payload on the **Payloads** page of the **Content library**
 
 - If you click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** on the **Tenant payload** tab to create a payload, the first page of the new payload wizard is **Select type** where you can select **Teams**. Selecting **Teams** introduces the following changes to the rest of the new payload wizard:
 
-  - On the **[Select technique](attack-simulation-training-payloads.md#create-payloads)** page, the **Malware Attachment** and **Link in Attachment** social engineering techniques are not available for Teams.
+  - On the **[Select technique](attack-simulation-training-payloads.md#create-payloads)** page, the **Malware Attachment** and **Link in Attachment** social engineering techniques aren't available for Teams.
   
   - The **Configure payload** page has the following changes for Teams:
     - **Sender details** section: The only available setting for Teams is **Chat topic** where you enter a tile for the Teams message.
-    - The last big section is not named **Email message**, but it functions the same way for Teams messages as it does for email messages:
+    - The last section isn't named **Email message**, but it functions the same way for Teams messages as it does for email messages:
       - There's an **Import Teams message** button to import an existing plain text message file to use as a starting point.
       - The **Dynamic tag** and **Phishing link** controls are available on the **Text** tab, and **Code** tab is available as with email messages.
 
@@ -111,7 +109,7 @@ Teams introduces the following changes to viewing and creating simulation automa
     - **Manually select**: This value is selected by default. In the **Select sender's Microsoft Teams account** section, click the **Select user account** to find and select the account to use as the source for the Teams message.
     - **Randomize**: Randomly select from the available accounts to use as the source for the Teams message.
 
-  - On the **[Select social engineering techniques](attack-simulation-training-simulation-automations.md#select-one-or-more-social-engineering-techniques)** page, the **Malware Attachment** and **Link in Attachment** social engineering techniques are not available for Teams.
+  - On the **[Select social engineering techniques](attack-simulation-training-simulation-automations.md#select-one-or-more-social-engineering-techniques)** page, the **Malware Attachment** and **Link in Attachment** social engineering techniques aren't available for Teams.
 
   - On the **[Select payloads and login page](attack-simulation-training-simulation-automations.md#select-payloads-and-login-pages)** page, no payloads are listed by default because there are no built-in payloads for Teams. You might need to create a payload for the combination of Teams and the social engineering techniques that you selected.
 
@@ -119,6 +117,6 @@ Teams introduces the following changes to viewing and creating simulation automa
 
   - On the **[Target users](attack-simulation-training-simulation-automations.md#target-users)** page, the following settings are different for Teams:
     - As noted on the page, simulation automations that use Teams can target a maximum of 1000 users.
-    - if you select **Include only specific users and groups**, **City** is not an available filter in the **Filter users by category** section.
+    - if you select **Include only specific users and groups**, **City** isn't an available filter in the **Filter users by category** section.
 
 Other settings related to simulation automations are the same for Teams messages as described in the existing content for email messages.
