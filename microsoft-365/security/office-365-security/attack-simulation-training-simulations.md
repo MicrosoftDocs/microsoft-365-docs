@@ -209,7 +209,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       > [!NOTE]
       > Clicking the **Add filters** button clears and replaces any results the **User list** section with the **Filter users by categories**.
 
-      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the circle next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
       Click the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
 
@@ -256,7 +256,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       - **Filters** section: Show how many filter values you used and the names of the filter values. If it's available, click the **See all** link to see all filter values
       - **User list** section: Shows the users or groups that match your category searches. The number of results appears in the **Selected (0/x) users** label.
 
-      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the circle next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
       Click the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
 
@@ -455,7 +455,7 @@ The **Training assignment notification** page shows the following notifications 
 - **Microsoft default training only campaign-training assignment notification**
 - Any custom training assignment notifications that you previously created.
 
-These notifications are also available at **Attack simulation training** \> **Content library tab** \> **End user notifications**:
+These notifications are also available at **Attack simulation training** \> **Content library** tab \> **End user notifications**:
 
 - Built-in training assignment notifications are available on the **Global notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=global>.
 - Custom training assignment notifications are available on the **Tenant notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>.
@@ -494,7 +494,7 @@ The **Training reminder notification** page shows the following notifications an
 - **Microsoft default training only campaign-training reminder notification**
 - Any custom training reminder notifications that you previously created.
 
-These notifications are also available at **Attack simulation training** \> **Content library tab** \> **End user notifications**:
+These notifications are also available at **Attack simulation training** \> **Content library** tab \> **End user notifications**:
 
 - Built-in training reminder notifications are available on the **Global notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=global>.
 - Custom training reminder notifications are available on the **Tenant notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>.
@@ -540,7 +540,7 @@ You have the following options for positive reinforcement notifications:
   - **Microsoft default positive reinforcement notification**
   - Any custom positive reinforcement notifications that you previously created.
 
-  These notifications are also available at **Attack simulation training** \> **Content library tab** \> **End user notifications**:
+  These notifications are also available at **Attack simulation training** \> **Content library** tab \> **End user notifications**:
 
   - Built-in positive reinforcement notifications are available on the **Global notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=global>.
   - Custom positive reinforcement notifications are available on the **Tenant notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>.
@@ -603,7 +603,7 @@ On the **Simulation has been scheduled for launch** page, you can use the links 
 
 When you're finished on the **Simulation has been scheduled for launch**, click **Done**.
 
-Back on the **Simulations** tab, the payload automation that you created is now listed. Dhe **Status** value depends on your previous selection in the [Configure the simulation launch details](#configure-the-simulation-launch-details) step:
+Back on the **Simulations** tab, the simulation that you created is now listed. The **Status** value depends on your previous selection in the [Configure the simulation launch details](#configure-the-simulation-launch-details) step:
 
 - **In progress** if you selected **Launch this simulation as soon as I'm done**.
 - **Scheduled** if you selected **Schedule this simulation to be launched later**.
