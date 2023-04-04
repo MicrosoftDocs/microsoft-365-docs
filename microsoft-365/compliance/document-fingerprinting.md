@@ -93,6 +93,8 @@ The following examples show what happens if you create a document fingerprint ba
 >> $Patent_Form = ([System.IO.File]::ReadAllBytes('C:\My Documents\patent.docx'))
 
 >> New-DlpSensitiveInformationType -Name "Patent SIT" -FileData $Patent_Form  -ThresholdConfig @{low=40;medium=60;high=80} -IsExact $false -Description "Contoso Patent Template"
+```
+
 <br>
 
 ### Partial Matching
@@ -193,11 +195,15 @@ To do this via PowerShell, run the following command(s).
 ```powershell
 >> Set-DlpSensitiveInformationType -Name "Fingerprint SIT" -FileData ([System.IO.File]::ReadAllBytes('C:\My Documents\file1.docx')) -ThresholdConfig @{low=30;medium=50;high=80} -IsExact $false-Description "A friendly Description"
 ```
+<br>
+
 **Test a document fingerprint**
 ```powershell
 >> $r = Test-DataClassification -TextToClassify "Credit card information Visa: 4485 3647 3952 7352. Patient Identifier or SSN: 452-12-1232"
 >> $r.ClassificationResults
 ```
+<br>
+
 **Delete a document fingerprint**
 ```powershell
 >> Remove-DlpSensitiveInformationType "Fingerprint SIT"
