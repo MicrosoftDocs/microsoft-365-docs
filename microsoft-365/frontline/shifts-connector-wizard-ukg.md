@@ -30,7 +30,7 @@ ms.date: 3/23/2023
 
 |Term |Definition |
 |-----|-----------|
-|Connection |This is where you configure your UKG Dimensions details by providing your service account name, password, and service URLs. This enables access to all your WFM (workforce management) instances created in your UKG Dimensions WFM system. |
+|Connection |This is where you configure your UKG Dimensions details by providing your account username, password, and service URLs. This enables access to all your WFM (workforce management) instances created in your UKG Dimensions WFM system. |
 |Connection instance |This is where you configure: <br> - The synchronization settings that determine how and which schedule information syncs between UKG Dimensions and Shifts <br> - Team mappings to define the relationship between your WFM instances and teams in Microsoft Teams |
 |WFM instance | This term refers to a team within your UKG Dimensions WFM system, which is different than a team in Microsoft Teams. |
 
@@ -91,7 +91,7 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 
 1. In the Connection settings pane, give your connection a unique name. It can't be longer than 100 characters or have any special characters.
 
-1. Enter your UKG Dimensions service account name (which enables access to all instances created in UKG Dimensions) and password and service URLs. If you don't know one or more of your connection details, contact your UKG Dimensions delivery partner or account manager.
+1. Enter your UKG Dimensions account username (which enables access to all instances created in UKG Dimensions) and password and service URLs. If you don't know one or more of your connection details, contact your UKG Dimensions delivery partner or account manager.
     :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
 
 1. When you're done, select **Save connection**.
