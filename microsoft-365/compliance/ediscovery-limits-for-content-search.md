@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/27/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -144,3 +144,7 @@ For case limits related to eDiscovery (Standard) and eDiscovery (Premium), see:
 
 - [Limits in eDiscovery (Standard)](ediscovery-standard-limits.md)
 - [Limits in eDiscovery (Premium)](ediscovery-premium-limits.md)
+
+## Need help with eDiscovery issues?
+
+Check out the [Resolve common eDiscovery issues](/microsoft-365/troubleshoot/ediscovery/resolve-ediscovery-issues) article for basic troubleshooting steps that you can take to identify and resolve issues that you might encounter during an eDiscovery search or elsewhere in the eDiscovery process.
