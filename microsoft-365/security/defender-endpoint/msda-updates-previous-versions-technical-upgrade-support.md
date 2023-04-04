@@ -89,7 +89,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 
 ### What's new
 
-- Starting with platform version 4.18.2207.7, the default behavior of dynamic signature expiration reporting changes to reduce potential 2011 event notification flooding. See: **Event ID: 2011** in [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
+- Starting with platform version 4.18.2207.7, the default behavior of dynamic signature expiration reporting changes to reduce potential 2011 event notification flooding. See: **Event ID: 2011** in [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/)
 - Fixed Unified agent installer issues on WS2012R2 Server and Windows Server 2016
 - Fixed remediation issue for custom detection
 - Fixed Race condition related to behavior monitoring
@@ -125,7 +125,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Added improvements for [troubleshooting mode](enable-troubleshooting-mode.md)  
 - Added fix for Defender WINEVT channels across update/restarts. (For more information about WINEVT, see [Windows Event Log](/windows/win32/api/_wes/).)
 - Added fix for [Defender WMI management](use-wmi-microsoft-defender-antivirus.md) bug during startup/updates 
-- Added fix for duplicated 2010/2011 in the [Windows Event Viewer Operational events](troubleshoot-microsoft-defender-antivirus.md) 
+- Added fix for duplicated 2010/2011 in the [Windows Event Viewer Operational events](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/) 
 - Added support for [Defender for Endpoint](microsoft-defender-endpoint.md) stack processes token hardening 
 
 ### Known Issues
