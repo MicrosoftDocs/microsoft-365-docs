@@ -227,7 +227,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       > [!NOTE]
       > Clicking the **Add filters** button clears and replaces any results the **User list** section with the **Filter users by categories**.
 
-      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the circle next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
       Click the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
 
@@ -274,7 +274,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       - **Filters** section: Show how many filter values you used and the names of the filter values. If it's available, click the **See all** link to see all filter values
       - **User list** section: Shows the users or groups that match your category searches. The number of results appears in the **Selected (0/x) users** label.
 
-      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the circle next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
       Click the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
 
