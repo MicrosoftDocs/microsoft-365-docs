@@ -93,7 +93,6 @@ All our updates contain
 - Increased file hash support 
 - Remediation file size limit increase to 4GB 
 
-
 #### Known issues
 
 - None
