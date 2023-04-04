@@ -24,8 +24,8 @@ Information workers in your organization handle many kinds of sensitive informat
 Document fingerprinting includes the following features:
 - DLP can use document fingerprinting as a detection method in Exchange, SharePoint, OneDrive, Teams, and Devices.
 - Document fingerprint features can be managed through the Microsoft Purview compliance portal.
-- [Partial matching](#partial-matching)is supported.
-- [Exact file matching](#exact-matching) is supported. 
+- [Partial matching](#partial-matching) is supported.
+- [Exact Matching](#exact-matching)is supported. 
 - Improved detection accuracy
 - Support for detection in multiple languages, including dual-byte languages such as Chinese, Japanese, and Korean.
 
@@ -83,7 +83,7 @@ The following examples show what happens if you create a document fingerprint ba
 3. Next, choose **Create Fingerprint based SIT**.
 4. Enter a name and description for your new SIT.
 5. Upload the file you wish to use as the fingerprint template.
-6. OPTIONAL: Adjust the requirements for each confidence level and then choose **Next**. For more information, see [Partial Matching](#partial-matching) and [Exact Matching](#exact-matching).
+6. OPTIONAL: Adjust the requirements for each confidence level and then choose **Next**. For more information, see [[Partial Matching](#partial-matching)](#partial-matching) and [Exact Matching](#exact-matching).
 7. Review your settings and then choose **Create**.
 8. When the confirmation page displays, choose **Done**.
 
