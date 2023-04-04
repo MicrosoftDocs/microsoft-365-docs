@@ -246,4 +246,4 @@ Admins can use eDiscovery to search for content in chats messages in a Teams mee
 - [Microsoft 365 eDiscovery solutions](/microsoft-365/compliance/ediscovery)
 - [Get started with eDiscovery (Standard)](/microsoft-365/compliance/get-started-core-ediscovery)
 - [Teams workflow in eDiscovery (Premium)](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery)
-- [Teams PowerShell Overview](teams-powershell-overview.md)
+- [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview.md)
