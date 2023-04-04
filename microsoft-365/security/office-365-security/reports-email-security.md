@@ -624,6 +624,7 @@ If you click **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**
 - **Detection**: The same values as in the chart.
+- **Bulk Complaint Level**
 - **Direction**:
   - **All**
   - **Inbound**

@@ -82,7 +82,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Let users reset their own passwords
 
-We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. Less work for you! To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
+We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. Less work for you! To learn how, see [Let users reset their own passwords in Microsoft 365](let-users-reset-passwords.md).
 
 ## Resend user password
   
@@ -162,7 +162,7 @@ Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password c
   
 ## I don't have a Microsoft 365 for business subscription
 
-Try this article: [I forgot the username or password for the account I use with Office.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
+Try this article: [I forgot the username or password for the account I use with Microsoft 365.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   
 ## Related content
   
