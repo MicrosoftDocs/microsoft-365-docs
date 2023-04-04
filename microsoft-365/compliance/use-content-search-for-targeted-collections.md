@@ -101,7 +101,7 @@ To display a list of mailbox folders or site documentlink (path) names:
           Connect-ExchangeOnline -ShowBanner:$false -CommandName Get-MailboxFolderStatistics
       }
       $folderQueries = @()
-      $folderStatistics = Get-MailboxFolderStatistics $emailAddress
+      $folderStatistics = Get-MailboxFolderStatistics $emailAddress -IncludeSoftDeletedRecipients
       foreach ($folderStatistic in $folderStatistics)
       {
           $folderId = $folderStatistic.FolderId;
