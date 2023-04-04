@@ -87,7 +87,7 @@ When you select a login page from the list by clicking anywhere in the row other
 
    - **Select a language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
 
-   - **Make this the default login page**: If you select this option, the login page will be the default selection in **Credential Harvest** or **Link in Attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md).
+   - **Make this the default login page**: If you select this option, the login page is the default selection in **Credential Harvest** or **Link in Attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md).
 
    - **Create a two-page login**: If you don't select this option, the login page is one page. If you select this option, **Page 1** and **Page 2** tabs appear for you to configure separately.
 
