@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 04/03/2023
+ms.date: 04/05/2023
 ---
 
 # Alert classification for password spray attacks
@@ -32,7 +32,9 @@ ms.date: 04/03/2023
 **Applies to:**
 - Microsoft 365 Defender
 
-Threat actors use innovative ways to compromise their target environments. One type of attack gaining traction is the password spray attack, where attackers aim to access many accounts within a network with minimal effort. Unlike traditional brute force attacks, where threat actors try many passwords on a single account, password spray attacks focus on guessing the correct password for many accounts with a limited set of commonly used passwords. It makes the attack particularly effective against organizations with weak or easily guessable passwords, leading to severe data breaches and financial losses for organizations. 
+Threat actors use innovative ways to compromise their target environments. One type of attack gaining traction is the password spray attack, where attackers aim to access many accounts within a network with minimal effort. Unlike traditional brute force attacks, where threat actors try many passwords on a single account, password spray attacks focus on guessing the correct password for many accounts with a limited set of commonly used passwords. It makes the attack particularly effective against organizations with weak or easily guessable passwords, leading to severe data breaches and financial losses for organizations.
+
+Attacker use automated tools like to repeatedly attempt to gain access to a specific account or system using a list of commonly used passwords. Attackers sometimes abuse legitimate cloud services by creating many virtual machines (VMs) or containers to launch a password spray attack.
 
 This playbook helps investigate cases where suspicious behavior is observed as indicative of a password spray attack. This guide is for security teams like the security operations center (SOC) and IT administrators who review, handle/manage, and classify the alerts. This guide helps in quickly classifying the alerts as either [true positive (TP) or false positive (FP)](investigate-alerts.md) and, in the case of TP, take recommended actions to remediate the attack and mitigate the security risks.
 
@@ -46,19 +48,11 @@ The intended results of using this guide are:
 
 This section contains step-by-step guidance to respond to the alert and take the recommended actions to protect your organization from further attacks.
 
-### 1. Review the alert
-
-Here's an example of a password spray alert in the alert queue:
-
-:::image type="content" source="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png" alt-text="Screenshot of Microsoft Defender 365 alert." lightbox="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png":::
-
-This means there's suspicious user activity originating from an IP address that might be associated with a brute-force or password spray attempt according to threat intelligence sources.
-
-### 2. Investigate other security alerts
+### 1. Investigate the security alerts
 
   - **Are the alerts coming from suspicious locations?** Check sign-in attempts from locations other than those typical for impacted user accounts. Multiple sign-in attempts from one or many users are helpful indicators.
 
-### 3. Investigate suspicious user activity
+### 2. Investigate suspicious user activity
 
   - **Are there unusual events with uncommon properties?** Unique properties for an impacted user, like unusual ISP, country, or city, might indicate suspicious sign-in patterns. 
 
@@ -74,9 +68,9 @@ This means there's suspicious user activity originating from an IP address that 
       - Modifications in Azure environments, like Azure portal subscription changes
       - Changes to SharePoint Online, like the impacted user account gaining access to multiple sites or files with sensitive/confidential/company-only content
   
-  - **Inspect the impacted account's activities that occur within a short time span on multiple platforms.**
+  - **Inspect the impacted account's activities that occur within a short time span on multiple platforms and apps.** Audit events to check the timeline of activities, like contrasting the user’s time spent reading or sending email followed by allocating resources to the user’s account or other accounts.
 
-### 4. Investigate possible follow-on attacks
+### 3. Investigate possible follow-on attacks
 
 **Inspect your environment for other attacks involving impacted user accounts** as attackers often perform malicious activities after a successful password spray attack. Consider investigating the following possibly suspicious activities:
 
@@ -87,7 +81,11 @@ This means there's suspicious user activity originating from an IP address that 
 
 - Internal phishing attacks
 
-  **Check whether the user received other alerts preceding the password spray activity.** Having these alerts indicate that the user account might be compromised. Examples include impossible travel alert, activity from infrequent country, and suspicious email deletion activity, among others.
+  - Attackers might use an impacted user account to send internal phishing mails. **Check suspicious activities like email forwarding or creation of inbox manipulation or inbox forwarding rules.** The following playbooks can guide you to further investigate email events:
+      - [Classifying alerts for suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
+      - [Classifying alerts for suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
+      - [Classifying alerts for suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
+  - **Check whether the user received other alerts before the password spray activity.** Having these alerts indicate that the user account might be compromised. Examples include impossible travel alert, activity from infrequent country, and suspicious email deletion activity, among others.
 
 ## Advanced hunting queries
 
@@ -96,13 +94,14 @@ This means there's suspicious user activity originating from an IP address that 
 Use these queries to gather more information related to the alert and determine whether the activity is suspicious.
 
 Ensure you have access to the following tables:
-- *AadSignInEventsBeta* - contains sign-in information for users.
-- *IdentityLogonEvents* - contains logon information for users.
-- *CloudAppEvents* - contains audit logs for user activities.
-- *EmailEvents* - contains mail flow/traffic information.
-- *EmailUrlInfo* - contains URL information contained in emails.
-- *UrlClickEvents* - contains URL click logs for links that were clicked in emails.
-- *DeviceEvents* - contains device activity audit events.
+- [AadSignInEventsBeta](advanced-hunting-aadsignineventsbeta-table.md)
+- [CloudAppEvents](advanced-hunting-cloudappevents-table.md)
+- [DeviceEvents](advanced-hunting-deviceevents-table.md)
+- [EmailEvents](advanced-hunting-emailevents-table.md)
+- [EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)
+- [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)
+- [UrlClickEvents](advanced-hunting-urlclickevents-table.md)
+
 
 Use this query to identify password spray activity.
 
