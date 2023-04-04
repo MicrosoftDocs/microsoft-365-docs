@@ -1520,9 +1520,9 @@
           href: ediscovery-premium-get-started.md
         - name: eDiscovery (Premium) with Microsoft Teams
           items:
-            - name: eDiscovery (Premium) workflow for Teams content
+            - name: eDiscovery workflow for Teams content
               href: ediscovery-teams-workflow.md
-            - name: Conduct an investigation of content in Microsoft Teams
+            - name: Conduct an investigation for Teams content
               href: ediscovery-teams-investigation.md
         - name: Create eDiscovery (Premium) cases
           items:
@@ -1737,6 +1737,8 @@
           href: audit-log-retention-policies.md
         - name: Use Audit (Premium) to investigate compromised accounts
           href: audit-log-investigate-accounts.md
+        - name: Search the audit log for events in Teams
+          href: audit-teams-audit-log-events.md
     - name: Office 365 Management Activity API resources
       items:
         - name: Office 365 Management Activity API reference
