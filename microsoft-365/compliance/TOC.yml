@@ -1518,14 +1518,18 @@
           href: ediscovery-overview.md
         - name: Set up eDiscovery (Premium)
           href: ediscovery-premium-get-started.md
+        - name: eDiscovery (Premium) with Microsoft Teams
+          items:
+            - name: eDiscovery (Premium) workflow for Teams content
+              href: ediscovery-teams-workflow.md
+            - name: Conduct an investigation of content in Microsoft Teams
+              href: ediscovery-teams-investigation.md
         - name: Create eDiscovery (Premium) cases
           items:
             - name: Create and manage a case
               href: ediscovery-create-and-manage-cases.md
             - name: Use the new case format
               href: ediscovery-new-case-format.md
-        - name: eDiscovery (Premium) workflow for Teams content
-          href: ediscovery-teams-workflow.md
         - name: Manage custodians and non-custodial data sources
           href: ediscovery-managing-custodians.md
           items: 

@@ -56,7 +56,7 @@ Click a column header to sort by that column. To add or remove columns, click ![
 > [!TIP]
 > The **⋮** (**Actions** control) is associated with the **Notifications** column. If you remove that column from view, the **⋮** control goes away.
 
-<sup>\*</sup> To see all columns, you'll likely need to do one or more of the following steps:
+<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
 
 - Horizontally scroll in your web browser.
 - Narrow the width of appropriate columns.
