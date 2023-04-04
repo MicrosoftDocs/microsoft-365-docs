@@ -59,7 +59,11 @@ When you create a collection estimate, you can view information about the estima
 
     - To search all content locations for a specific service (Exchange mailboxes, SharePoint and OneDrive sites, or Exchange public folders), select the corresponding **Select all** toggle in the **Status** column. This option will search all content locations in the selected service.
 
-    - To search specific content location for a service, select the corresponding **Select all** toggle in the **Status** column, and then select **Users, groups or teams** (for Exchange mailboxes) or **Choose sites** for (SharePoint and OneDrive sites) to search specific content locations.
+8. On the **Search query** page, you can create the search query that is used to collect items from the data sources that you've identified in the previous wizard pages. You can search for keywords, property:value pairs, or use a keyword list. You can also add various search conditions to narrow the scope of the collection or user the query builder to define query operators, filters, and conditions. For more information, see:
+
+    - [Build search queries using keywords and conditions for collections](ediscovery-building-search-queries.md)
+    - [Use the KQL editor to build search queries](/microsoft-365/compliance/ediscovery-kql-editor)
+    - [Use the query builder to build search queries (preview)](/microsoft-365/compliance/ediscovery-query-builder)
 
     Use the **Additional search options** options to include other search locations. The options available here are set by your admin in eDiscovery global settings. Search options that aren't defined by your eDiscovery admin aren't selectable or available. Search options enabled by your eDiscovery admin can be selected and included in the collection as applicable. You have two choices for additional search options:
 
