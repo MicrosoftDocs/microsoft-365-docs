@@ -79,6 +79,25 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### March-2023 (Platform: 4.18.2302.x | Engine: 1.1.20200.2)
+
+- Security intelligence update version: **1.379.1493.x**
+- Release date:  **April 4, 2023 (Engine) / April 11, 2023 (Platform)**
+- Platform: **4.18.2302.x** 
+- Engine: **1.1.20200.2**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Monthly platform and engine version releases now include two dates: Engine and Platform
+- Increased file hash support 
+- Remediation file size limit increase to 4GB 
+
+
+#### Known issues
+
+- None
+
 ### February-2023 (Platform: 4.18.2302.7 | Engine: 1.1.20100.6)
 
 - Security intelligence update version: **1.385.68.0**
@@ -123,28 +142,6 @@ All our updates contain
 - Improved [ASR rule](attack-surface-reduction-rules-reference.md) processing logic
 - Updated Sense token hardening
 - Improved [Defender CSP](/windows/client-management/mdm/defender-csp) module update channel logic
-
-#### Known Issues
-
-- None  
-
-### November-2022 (Platform: 4.18.2211.5 | Engine: 1.1.19900.2)
-
-- Security intelligence update version: **1.381.144.0** 
-- Release date: **December 8, 2022**
-- Platform: **4.18.2211.5** 
-- Engine: **1.1.19900.2**
-
-#### What's new
-
-- Enhanced threat protection capabilities
-- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities
-- Enhanced enabling of tamper protection for newly onboarded devices
-- Improved reporting for [cloud protection](cloud-protection-microsoft-defender-antivirus.md)
-- Improved [controlled folder access](controlled-folders.md) notifications
-- Improved scanning of network shares
-- Enhanced processing of host files containing a wild card
-- Improved performance for [scan events](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
 #### Known Issues
 
