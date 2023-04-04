@@ -78,14 +78,14 @@ Fingerprints are stored in a separate rule pack. This rule pack has a maximum si
 The following examples show what happens if you create a document fingerprint based on a patent template. However, you can use any form as a basis for creating a document fingerprint.
 
 ### Compliance portal example of a patent document matching a document fingerprint of a patent template
+
 1. In the Microsoft Purview compliance portal, select **Data classification** and then choose **Classifiers**.
-2. On the **Classifiers** page, choose **Sensitive info types**.
-3. Next, choose **Create Fingerprint based SIT**.
-4. Enter a name and description for your new SIT.
-5. Upload the file you wish to use as the fingerprint template.
-6. OPTIONAL: Adjust the requirements for each confidence level and then choose **Next**. For more information, see [[Partial matching](#partial-matching)](#partial-matching) and [Exact matching](#exact-matching).
-7. Review your settings and then choose **Create**.
-8. When the confirmation page displays, choose **Done**.
+1. On the **Classifiers** page, choose **Sensitive info types** > **Create Fingerprint based SIT**.
+1. Enter a name and description for your new SIT.
+1. Upload the file you wish to use as the fingerprint template.
+1. OPTIONAL: Adjust the requirements for each confidence level and then choose **Next**. For more information, see [[Partial matching](#partial-matching)](#partial-matching) and [Exact matching](#exact-matching).
+1. Review your settings > **Create**.
+1. When the confirmation page displays, choose **Done**.
 
 ### PowerShell example of a patent document matching a document fingerprint of a patent template
 
@@ -126,7 +126,7 @@ If you have an E5 license and want to use the latest fingerprint features, you c
 1. Select your region or country > **Next**.
 1. Name your policy and provide a description > **Next**.
 1. On the **Assign admin units** page, choose between these two options:
-   - Apply the policy to all users and groups > **Next**.
+   - Apply the policy to all users and groups > **Next**. </br>
    or
    - Add specific users and groups that you want to be subject to the policy > **Next**.
 1. Select the locations where you want the policy applied > **Next**.
@@ -139,7 +139,7 @@ If you have an E5 license and want to use the latest fingerprint features, you c
 1. Select your confidence level > **Add an action**.
 1. Select the action to take when the rule is triggered, and then specify the action details > **Save** > **Next**.
 1. Choose between these two options:
-   - Test your policy > **Next**.
+   - Test your policy > **Next**.</br>
    or
    - turn on your policy right away > **Next**.
 1. Review your settings > **Submit** > **Done**.
