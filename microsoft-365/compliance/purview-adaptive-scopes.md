@@ -67,7 +67,9 @@ When you choose to use adaptive scopes, you're prompted to select what type of a
 Currently, [shared channel SharePoint sites](/microsoftteams/shared-channels#shared-channel-sharepoint-sites) aren't supported for SharePoint sites when you use adaptive scopes.
 
 > [!NOTE]
-> For communication compliance policies: SharePoint sites and OneDrive accounts aren't supported. Excluded users and Microsoft 365 groups are supported.
+> For communication compliance policies:
+> - SharePoint sites and OneDrive accounts aren't supported.
+> - Excluded users and Microsoft 365 groups are supported.
 
 The property names for sites are based on SharePoint site managed properties. For information about the custom attributes, see [Using Custom SharePoint Site Properties to Apply Microsoft 365 Retention with Adaptive Policy Scopes](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
