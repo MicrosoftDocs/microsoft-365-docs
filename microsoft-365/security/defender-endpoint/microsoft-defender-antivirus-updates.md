@@ -4,7 +4,7 @@ description: Manage how Microsoft Defender Antivirus receives protection and pro
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 03/27/2023
+ms.date: 04/04/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -205,6 +205,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
+### 20230330.2
+
+- Defender package version: **20230330.2**
+- Security intelligence version: **1.385.1537.0**
+- Engine version: **1.1.20100.6**
+- Platform version: **4.18.2302.7**
+
+#### Fixes
+
+- None
+
+#### Additional information
+
+- None
 
 ### 20230308.1
 
