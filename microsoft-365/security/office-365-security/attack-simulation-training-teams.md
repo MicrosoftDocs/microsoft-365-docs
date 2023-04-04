@@ -51,7 +51,7 @@ To configure the accounts, do the following steps:
 
 To remove a user from the list, click the round check box that appears next to the user's **Display name** without clicking anywhere else in the row. Click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears, and then click **Delete** in the confirmation dialog.
 
-Or, to prevent the account from being used in Teams simulations but keep the linked simulations history for the account, you can block the account from signing in as described [here]/microsoft-365/admin/add-users/remove-former-employee-step-1).
+Or, to prevent the account from being used in Teams simulations but keep the linked simulations history for the account, you can block the account from signing in as described [here](/microsoft-365/admin/add-users/remove-former-employee-step-1).
 
 ## Changes in simulations for Microsoft Teams
 
