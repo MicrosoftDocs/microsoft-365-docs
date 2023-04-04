@@ -295,6 +295,8 @@
               href: activity-reports/mailbox-usage.md
             - name: Microsoft Office activations
               href: activity-reports/microsoft-office-activations-ww.md
+            - name: Microsoft 365 Teams apps usage reports
+              href: activity-reports/microsoft-teams-apps-usage.md  
             - name: Microsoft Teams device usage
               href: activity-reports/microsoft-teams-device-usage-preview.md
             - name: Microsoft Teams usage activity
@@ -327,8 +329,6 @@
               href: activity-reports/yammer-device-usage-report-ww.md
             - name: Yammer groups activity
               href: activity-reports/yammer-groups-activity-report-ww.md
-         - name: Microsoft 365 Teams apps usage reports
-           href: activity-reports/microsoft-teams-apps-usage.md  
          - name: Microsoft Adoption Score - overview
            href: adoption/adoption-score.md
            items:
