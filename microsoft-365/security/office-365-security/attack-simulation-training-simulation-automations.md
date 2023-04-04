@@ -227,7 +227,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       > [!NOTE]
       > Clicking the **Add filters** button clears and replaces any results the **User list** section with the **Filter users by categories**.
 
-      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the circle next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
       Click the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
 
@@ -236,7 +236,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       - **Suggested user groups**: Select from the following values:
         - **All suggested user groups**
         - **Users not targeted by a simulation in the last three months**
-        - **Repeat offenders**
+        - **Repeat offenders**: For more information, see [Configure the repeat offender threshold](attack-simulation-training-settings.md#configure-the-repeat-offender-threshold).
 
       - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md). Use the following options:
         - **Search**: In ![Search by user tags icon.](../../media/m365-cc-sc-search-icon.png) **Search by user tags**, you can type part of the user tag and then press Enter. You can select some or all of the results.
@@ -274,7 +274,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       - **Filters** section: Show how many filter values you used and the names of the filter values. If it's available, click the **See all** link to see all filter values
       - **User list** section: Shows the users or groups that match your category searches. The number of results appears in the **Selected (0/x) users** label.
 
-      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the circle next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
       Click the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
 
