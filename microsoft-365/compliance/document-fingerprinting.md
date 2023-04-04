@@ -1,5 +1,5 @@
 ---
-title: "About Document Fingerprinting"
+title: "About document fingerprinting"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,18 +14,18 @@ ms.collection:
 - purview-compliance
 - tier1
 ms.localizationpriority: medium
-description: "Document Fingerprinting makes it easier for you to protect information by identifying standard forms that are used by your organization. This article describes the concepts behind Document Fingerprinting and how to create one by using PowerShell."
+description: "Document fingerprinting makes it easier for you to protect information by identifying standard forms that are used by your organization. This article describes the concepts behind document fingerprinting and how to create one by using PowerShell."
 ---
 
-# Document Fingerprinting
+# Document fingerprinting
 
-Information workers in your organization handle many kinds of sensitive information during a typical day. In the Microsoft Purview compliance portal, document fingerprinting makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. This article describes the concepts behind Document Fingerprinting and how to create a document fingerprint using the compliance portal or using PowerShell.
+Information workers in your organization handle many kinds of sensitive information during a typical day. In the Microsoft Purview compliance portal, document fingerprinting makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. This article describes the concepts behind document fingerprinting and how to create a document fingerprint using the compliance portal or using PowerShell.
 
 Document fingerprinting includes the following features:
 - DLP can use document fingerprinting as a detection method in Exchange, SharePoint, OneDrive, Teams, and Devices.
 - Document fingerprint features can be managed through the Microsoft Purview compliance portal.
 - [Partial matching](#partial-matching) is supported.
-- [Exact Matching](#exact-matching) is supported. 
+- [Exact matching](#exact-matching) is supported. 
 - Improved detection accuracy
 - Support for detection in multiple languages, including dual-byte languages such as Chinese, Japanese, and Korean.
 
@@ -33,7 +33,7 @@ Document fingerprinting includes the following features:
 > If you are an E5 customer, we recommend updating your existing fingerprints to take advantage of the full document fingerprint feature set. 
 > If you are an E3 customer, we recommend upgrading to an E5 license. If you choose not to, you won't be able to modify existing fingerprints or create new ones after April, 2023.
 
-## Basic scenario for Document Fingerprinting
+## Basic scenario for document fingerprinting
 
 Document fingerprinting is a Microsoft Purview Data Loss Prevention (DLP) feature that converts a standard form into a sensitive information type (SIT), which you can use in the rules of your DLP policies. For example, you can create a document fingerprint based on a blank patent template and then create a DLP policy that detects and blocks all outgoing patent templates with sensitive content filled in. Optionally, you can set up [policy tips](use-notifications-and-policy-tips.md) to notify senders that they might be sending sensitive information, and that the sender should verify that the recipients are qualified to receive the patents. This process works with any text-based forms used in your organization. Other examples of forms that you can upload include:
 
@@ -44,13 +44,13 @@ Document fingerprinting is a Microsoft Purview Data Loss Prevention (DLP) featur
 
 Ideally, your organization already has an established business practice of using certain forms to transmit sensitive information. To enable detection, upload an empty form to be converted to a document fingerprint. Next, set up a corresponding policy. Once you complete these steps, DLP detects any documents in outbound mail that match that fingerprint.
 
-## How Document Fingerprinting works
+## How document fingerprinting works
 
 You have probably already guessed that documents don't have actual fingerprints, but the name helps explain the feature. In the same way that a person's fingerprints have unique patterns, documents have unique word patterns. When you upload a file, DLP identifies the unique word pattern in the document, creates a document fingerprint based on that pattern, and uses that document fingerprint to detect outbound documents containing the same pattern. That's why uploading a form or template creates the most effective type of document fingerprint. Everyone who fills out a form uses the same original set of words and then adds their own words to the document. If the outbound document isn't password protected and contains all the text from the original form, DLP can determine whether the document matches the document fingerprint.
 
 ![Diagram of document fingerprinting.](../media/Document-Fingerprinting-diagram.png)
 
-The patent template contains the blank fields "Patent title," "Inventors," and "Description", along with descriptions for each of those fields--that's the word pattern. When you upload the original patent template, it's in one of the supported file types and in plain text. DLP converts this word pattern into a document fingerprint, which is a small Unicode XML file containing a unique hash value that represents the original text. The fingerprint is saved as a data classification in Active Directory. (As a security measure, the original document itself isn't stored on the service; only the hash value is stored. The original document can't be reconstructed from the hash value.) The patent fingerprint then becomes a SIT that you can associate with a DLP policy. After you associate the fingerprint with a DLP policy, DLP detects any outbound emails containing content that matches the patent fingerprint and deals with it according to your organization's policy.
+The patent template contains the blank fields "Patent title," "Inventors," and "Description", along with descriptions for each of those fields—that's the word pattern. When you upload the original patent template, it's in one of the supported file types and in plain text. DLP converts this word pattern into a document fingerprint, which is a small Unicode XML file containing a unique hash value that represents the original text. The fingerprint is saved as a data classification in Active Directory. (As a security measure, the original document itself isn't stored on the service; only the hash value is stored. The original document can't be reconstructed from the hash value.) The patent fingerprint then becomes a SIT that you can associate with a DLP policy. After you associate the fingerprint with a DLP policy, DLP detects any outbound emails containing content that matches the patent fingerprint and deals with it according to your organization's policy.
 
 For example, if you set up a DLP policy that prevents regular employees from sending outgoing messages containing patents, DLP uses the patent fingerprint to detect patents and block those emails. Alternatively, you might want to let your legal department be able to send patents to other organizations because it has a business need for doing so. To allow specific departments to send sensitive information, create exceptions for those departments in your DLP policy. Alternatively, you can allow them to override a policy tip with a business justification.
 
@@ -59,7 +59,7 @@ For example, if you set up a DLP policy that prevents regular employees from sen
 
 ### Supported file types
 
-Document Fingerprinting supports the same file types that are supported in mail flow rules (also known as transport rules). For a list of supported file types, see [Supported file types for mail flow rule content inspection](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection). One quick note about file types: neither mail flow rules nor document fingerprinting supports the **.dotx** file type, which is a template file in Microsoft Word. When you see the word "template" in this and other document fingerprinting articles, it refers to a document that you've established as a standard form, not the template file type.
+Document fingerprinting supports the same file types that are supported in mail flow rules (also known as transport rules). For a list of supported file types, see [Supported file types for mail flow rule content inspection](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection). One quick note about file types: neither mail flow rules nor document fingerprinting supports the **.dotx** file type, which is a template file in Microsoft Word. When you see the word "template" in this and other document fingerprinting articles, it refers to a document that you've established as a standard form, not the template file type.
 
 #### Limitations of document fingerprinting
 
@@ -83,7 +83,7 @@ The following examples show what happens if you create a document fingerprint ba
 3. Next, choose **Create Fingerprint based SIT**.
 4. Enter a name and description for your new SIT.
 5. Upload the file you wish to use as the fingerprint template.
-6. OPTIONAL: Adjust the requirements for each confidence level and then choose **Next**. For more information, see [[Partial Matching](#partial-matching)](#partial-matching) and [Exact Matching](#exact-matching).
+6. OPTIONAL: Adjust the requirements for each confidence level and then choose **Next**. For more information, see [[Partial matching](#partial-matching)](#partial-matching) and [Exact matching](#exact-matching).
 7. Review your settings and then choose **Create**.
 8. When the confirmation page displays, choose **Done**.
 
@@ -97,7 +97,7 @@ The following examples show what happens if you create a document fingerprint ba
 
 <br>
 
-### Partial Matching
+### Partial matching
 To configure partial matching of a document fingerprint, when configuring the confidence level, choose **Low**, **Medium** or **High** and designate how much of the text in the file must match the fingerprint in terms of a percentage between 30% - 90%.
 
 A high confidence level returns the fewest false positives but might result in more false negatives. Low or medium confidence levels return more false positives but few to zero false negatives.
@@ -106,7 +106,7 @@ A high confidence level returns the fewest false positives but might result in m
 - **medium confidence**: Matched items will contain an average number of false positives and false negatives. Medium confidence returns all medium, and high confidence matches. 
 - **high confidence**: Matched items will contain the fewest false positives but the most false negatives.
 
-### Exact Matching
+### Exact matching
 To configure exact matching of a document fingerprint, select **Exact** as the value for the high confidence level. When you set the high confidence level to **Exact**, only files that have exactly the same text as the fingerprint will be detected. If the file has even a small deviation from the fingerprint, it will not be detected.
 
 
