@@ -25,7 +25,7 @@ Document fingerprinting includes the following features:
 - DLP can use document fingerprinting as a detection method in Exchange, SharePoint, OneDrive, Teams, and Devices.
 - Document fingerprint features can be managed through the Microsoft Purview compliance portal.
 - [Partial matching](#partial-matching) is supported.
-- [Exact Matching](#exact-matching)is supported. 
+- [Exact Matching](#exact-matching) is supported. 
 - Improved detection accuracy
 - Support for detection in multiple languages, including dual-byte languages such as Chinese, Japanese, and Korean.
 
@@ -146,11 +146,11 @@ If you have an E5 license and want to use the latest fingerprint features, you c
 22. Review your settings and then choose **Submit**.
 23. Choose **Done**.
 
-## Create a classification rule package based on document fingerprinting using PowerShell
+## Create a custom sensitive information type based on document fingerprinting using PowerShell
 
 Currently, you can create a document fingerprint only in [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-DLP uses classification rule packages to detect sensitive content. To create a classification rule package based on a document fingerprint, use the **New-DlpFingerprint** and **New-DlpSensitiveInformationType** cmdlets. Because the results of **New-DlpFingerprint** aren't stored outside the data classification rule, you always run **New-DlpFingerprint** and **New-DlpSensitiveInformationType** or **Set-DlpSensitiveInformationType** in the same PowerShell session. The following example creates a new document fingerprint based on the file C:\My Documents\Contoso Employee Template.docx. You store the new fingerprint as a variable so you can use it with the **New-DlpSensitiveInformationType** cmdlet in the same PowerShell session.
+DLP uses Sensitive information types(SIT) to detect sensitive content. To create a custom SIT based on a document fingerprint, use the **New-DlpSensitiveInformationType** cmdlet. The following example creates a new document fingerprint named “Contoso Customer Confidential” based on the file C:\My Documents\Contoso Customer Form.docx.
 
 ```powershell
 $Employee_Template = ([System.IO.File]::ReadAllBytes('C:\My Documents\Contoso Employee Template.docx'))
