@@ -75,9 +75,9 @@ When you're finished on the **Automation name** page, click **Next**.
 On the **Select social engineering techniques** page, select one or more of the available social engineering techniques, which were curated from the [MITRE ATT&CK® framework](https://attack.mitre.org/techniques/enterprise/). Different payloads are available for different techniques. The following social engineering techniques are available:
 
 - **Credential Harvest**: Attempts to collect credentials by taking users to a well-known looking website with input boxes to submit a username and password.
-- **Malware Attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
+- **Malware Attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that helps the attacker compromise the target's device.
 - **Link in Attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
-- **Link to Malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file, opening the file and helping the attacker compromise the target's device.
+- **Link to Malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user contains a link to this malicious file, opening the file and helping the attacker compromise the target's device.
 - **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
 - **OAuth Consent Grant**: The malicious URL asks users to grant permissions to data for a malicious Azure Application.
 
@@ -207,7 +207,7 @@ When you're finished on  the **Configure OAuth payload** page, click **Next**.
 
 ## Target users
 
-On the **Target users** page, select who will receive the simulation. Use the following options to select users:
+On the **Target users** page, select who receives the simulation. Use the following options to select users:
 
 - **Include all users in your organization**: The unmodifiable list of users is show in groups of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** icon on the page to find specific users.
 
