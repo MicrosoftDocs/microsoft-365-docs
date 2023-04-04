@@ -37,7 +37,12 @@ The following information is shown for each payload automation<sup>\*</sup>:
 - **Last modified**
 - **Status**: The value is **Ready** or **Draft**.
 
-<sup>\*</sup> To see all of the columns, you might need to narrow some columns or zoom out in your browser.
+<sup>\*</sup> To see all columns, you'll likely need to do one or more of the following steps:
+
+- Horizontally scroll in your web browser.
+- Narrow the width of appropriate columns.
+- Remove columns from the view.
+- Zoom out in your web browser.
 
 When you select a payload automation from the list, a details flyout appears with the following information:
 
