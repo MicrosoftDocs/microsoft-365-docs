@@ -1,5 +1,5 @@
 ---
-title: "Data connectors in Microsoft Purview Compliance Manager"
+title: "Data connectors for Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
