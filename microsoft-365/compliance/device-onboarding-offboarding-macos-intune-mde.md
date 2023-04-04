@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 03/29/2023
+ms.date: 04/04/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -37,7 +37,7 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 - Make sure your [macOS devices are onboarded to Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Make sure you have access to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home)
 - The three most recently released macOS versions are supported.
-- OPTIONAL: Install the v95+ Edge browser on your macOS devices 
+- OPTIONAL: Install the v95+ Edge browser on your macOS devices.
 
 ## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 
@@ -53,7 +53,7 @@ Use these steps to onboard a macOS device into Compliance solutions if MDE has a
 full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 
 > [!TIP]
-> You can download the *.mobileconfig* files individually or in [single combined file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) that contains:
+> You can download the *.mobileconfig* files individually or in a [single combined file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) that contains:
 >
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
@@ -83,7 +83,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 1. Review your settings and then choose **Create** to deploy the configuration.
 
-1. Open **Devices** > **Configuration profiles**. The profiles you created should display.
+1. Open **Devices** > **Configuration profiles**. The profiles you created display.
 
 1. on the **Configuration profiles** page, choose the profile that you just created (in this example *AccessibilityformacOS*) and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
