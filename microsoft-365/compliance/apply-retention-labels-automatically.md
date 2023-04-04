@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/30/2023
+ms.date: 04/04/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -90,7 +90,9 @@ Other considerations for simulation mode for auto-apply retention policies:
 
 - A maximum of 30 simulation jobs can be active in a 12-hour time period.
 - A maximum of 100 item samples can be collected per mailbox.
-- If you use [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) for your policy, a maximum of 20,000 locations (any combination of sites and mailboxes)
+- If you use [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) for your policy:
+    - A maximum of 20,000 locations (any combination of sites and mailboxes) is supported
+    - Because adaptive scopes use dynamic queries that run daily, confirm they are populated before you start simulation 
 - You might need to be assigned additional permissions to see the simulation results. For information about the required roles, see the next section, [Before you begin](#before-you-begin).
 - Simulation counts all items matching the policy criteria at time of simulation. However, when the policy is turned on, only content that isn't already labeled will be eligible for auto-applying retention labels.
 - Because simulation for Exchange locations always runs against emails stored in mailboxes, rather than emails sent and received, you won't see simulation results for emails when the policy condition is for sensitive information types.
