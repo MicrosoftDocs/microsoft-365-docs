@@ -24,7 +24,7 @@ ms.date: 4/3/2023
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-In Attack simulation training in Microsoft Defender for Office Plan 2 or Microsoft 365 E5, Microsoft provides insights and reports from the results of simulations and the corresponding trainings. This information keeps you informed on the threat readiness progress of your users, as well as recommended next steps to better prepare your users for future attacks.
+In Attack simulation training in Microsoft Defender for Office Plan 2 or Microsoft 365 E5, Microsoft provides insights and reports from the results of simulations and the corresponding trainings. This information keeps you informed on the threat readiness progress of your users, and recommended next steps to better prepare your users for future attacks.
 
 Insights and reports are available in the following locations on the **Attack simulation training** page in the Microsoft 365 Defender portal:
 
@@ -63,7 +63,7 @@ Selecting **Launch now** starts the new simulation wizard with the specified sim
 
 ### Simulation coverage card
 
-The **Simulation coverage** card on the **Overview** tab shows the percentage of users in your organization who've received a simulation (**Simulated users**) vs. those who haven't received a simulation (**Non-simulated users**). You can hover over a section in the chart to see the actual number of users in each category.
+The **Simulation coverage** card on the **Overview** tab shows the percentage of users in your organization who have received a simulation (**Simulated users**) vs. users who haven't received a simulation (**Non-simulated users**). You can hover over a section in the chart to see the actual number of users in each category.
 
 Selecting **Launch simulation for non-simulated users** starts the new simulation wizard where the users who didn't receive the simulation are automatically selected on the **Target user** page. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training-simulations.md).
 
@@ -102,7 +102,7 @@ Selecting **View repeat offender report** takes you to the [Repeat offenders tab
 
 The **Behavior impact on compromise rate** card on the **Overview** tab shows how your users responded to your simulations as compared to the historical data in Microsoft 365. You can use these insights to track progress in users threat readiness by running multiple simulations against the same groups of users.
 
-The chart data itself shows the following information:
+The chart data shows the following information:
 
 - **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this simulation (users compromised / total number of users who receive the simulation). To learn more about the predicted compromise rate (PCR), see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
 
@@ -244,7 +244,7 @@ To view the details of in-progress or completed simulations, use either of the f
 - On the **Overview** tab at <https://security.microsoft.com/attacksimulator?viewid=overview>, select a simulation from the [Recent simulations card](#recent-simulations-card).
 - On the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations>, select a simulation by clicking anywhere other than the check box next to the name.
 
-The page that opens contains **Report**, **Users** and **Details** tabs that contain information about the simulation. The rest of this section describe the insights and reports that are available on the **Report** tab.
+The page that opens contains **Report**, **Users** and **Details** tabs that contain information about the simulation. The rest of this section describes the insights and reports that are available on the **Report** tab.
 
 For details about the **Users** and **Details** tabs, see [View simulation details](attack-simulation-training-simulations.md#view-simulation-reports).
 
