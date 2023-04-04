@@ -61,7 +61,7 @@ When you choose to use adaptive scopes, you're prompted to select what type of a
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <sup>\*</sup> <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
 |**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Group mailboxes & sites <br/> - Teams channel messages (standard and shared) <br/> - Yammer community messages <br> |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
 
-<sup>\*</sup> Currently, [shared channel SharePoint sites](/microsoftteams/shared-channels#shared-channel-sharepoint-sites) aren't supported for SharePoint sites when you use adaptive scopes.
+<sup>\*</sup> Currently, [shared channel SharePoint sites](/microsoftteams/shared-channels#shared-channel-sharepoint-sites) aren't supported for the SharePoint sites adaptive scope type.
 
 > [!NOTE]
 > For communication compliance policies:
