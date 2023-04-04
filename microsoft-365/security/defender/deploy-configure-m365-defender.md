@@ -1,6 +1,6 @@
 ---
-title: Deploy and configure Microsoft 365 Defender 
-description: Learn how to deploy and configure Microsoft 365 Defender. 
+title: Setup guides for Microsoft 365 Defender 
+description: Learn how to deploy and configure Microsoft 365 Defender by using online setup guides 
 keywords: deploy, licenses, supported services, provisioning, configuration Microsoft 365 Defender, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
@@ -17,9 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security
-  - m365solution-getstarted
-  - highpri
-  - tier1
+  - tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -27,18 +25,16 @@ search.appverid:
 ms.date: 03/31/2023
 ---
 
-# Deploy and configure Microsoft 365 Defender
+# Setup guides for Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft 365 Defender
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+Setup guides for Microsoft 365 Defender deployment give you tailored guidance and resources for planning and deploying security controls for your tenant, apps, and services. 
 
-Microsoft 365 Defender deployment guides give you tailored guidance and resources for planning and deploying your tenant, apps, and services. 
-
-All deployment guides are available in the Microsoft 365 admin center as described in the section below, and most guides can also be found in the Microsoft 365 Setup portal.
+All deployment guides are available in the [Microsoft 365 admin center](https://admin.microsoft.com/) and in the [Microsoft 365 Setup portal](https://setup.microsoft.com/defender/).
 
 ## Deployment Guides
 
