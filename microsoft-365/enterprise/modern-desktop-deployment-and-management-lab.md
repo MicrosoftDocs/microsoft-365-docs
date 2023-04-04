@@ -24,8 +24,8 @@ The Windows and Office 365 deployment lab kits are designed to help you plan, te
 
 |Windows 10 Lab|Windows 11 Lab|
 |---|---|
-|[Windows 10 lab environment](https://download.microsoft.com/download/a/5/0/a505dbce-6cc8-4f92-a777-cda556da9266/Win10_21H2_Lab_v2.zip)|[Windows 11 lab environment](https://download.microsoft.com/download/1/0/3/103138e0-b22c-4c7a-a404-e73220954309/Win11_22H2_Lab_2.28.zip)|
-|[Windows 10 lab guides](https://download.microsoft.com/download/a/5/0/a505dbce-6cc8-4f92-a777-cda556da9266/Win10_21H2_Lab_Guides_v2.zip)|[Windows 11 lab guides](https://download.microsoft.com/download/1/0/3/103138e0-b22c-4c7a-a404-e73220954309/Win11_22H2_Guides_02.28.zip)|
+|[Windows 10 lab environment](https://go.microsoft.com/fwlink/p/?linkid=2196174&clcid=0x409&culture=en-us&country=us)|[Windows 11 lab environment](https://download.microsoft.com/download/1/0/3/103138e0-b22c-4c7a-a404-e73220954309/Win11_22H2_Lab_2.28.zip)|
+|[Windows 10 lab guides](https://go.microsoft.com/fwlink/p/?linkid=2196174&clcid=0x409&culture=en-us&country=us)|[Windows 11 lab guides](https://download.microsoft.com/download/1/0/3/103138e0-b22c-4c7a-a404-e73220954309/Win11_22H2_Guides_02.28.zip)|
 
 ## A complete lab environment
 
