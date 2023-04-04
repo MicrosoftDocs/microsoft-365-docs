@@ -27,6 +27,8 @@ ms.date: 03/06/2023
 6 minutes to read
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows multi-session running on Azure Virtual Desktop (AVD)
 - [Windows 10 Enterprise Multi-Session](/azure/virtual-desktop/windows-10-multisession-faq)
