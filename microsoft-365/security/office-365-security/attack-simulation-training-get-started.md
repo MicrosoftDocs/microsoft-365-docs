@@ -24,7 +24,7 @@ ms.service: microsoft-365-security
 ms.date: 1/31/2023
 ---
 
-# Get started using Attack simulation training in Defender for Office 365
+# Get started using Attack simulation training
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 

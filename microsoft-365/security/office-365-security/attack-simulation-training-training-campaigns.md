@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn how to create training campaigns in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 01/13/2023
+ms.date: 4/3/2023
 ---
 
 # Training campaigns in Attack simulation training
@@ -52,9 +52,7 @@ The **Training campaigns** tab lists the Training campaigns that you've created.
   - **Deleted**
   - **Failed**<sup>\*</sup>
   - **Scheduled**<sup>\*</sup>
-- **⋮ Actions**:
-  - :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete**
-  - :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png"::: **View report**
+- **⋮** (**Actions** control): Take action on the Training campaign. The available actions depend on the **Status** value of the Training campaign as described in the procedure sections. This control always appears at the end of the payload row.
 
 To find a Training campaign in the list, type part of the campaign name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box and then press the ENTER key.
 
@@ -101,7 +99,7 @@ On the **Target users** page, select one of the following values:
 
     - **Suggested user groups**: Select one or both of the following values:
       - **Users not targeted by a simulation in the last three months**
-      - **Repeat offenders**
+      - **Repeat offenders**: For more information, see [Configure the repeat offender threshold](attack-simulation-training-settings.md#configure-the-repeat-offender-threshold).
 
     - **User tags**: Select one or more of the following values. You'll need to click **See all user tags** to see all values, and custom [user tags](user-tags-about.md) aren't available:
       - **Priority accounts**: For more information, see [Priority accounts](../../admin/setup/priority-accounts.md).
@@ -179,7 +177,7 @@ On the **Select end user notification** page, select from the following notifica
   - **Language**: If the notification contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
   - **Type**: **Training assignment notification** or **Training reminder notification**.
   - **Delivery preferences**: For **Training reminder notification** types, the values **Twice a week** and **Weekly** are available.
-  - **⋮ Actions**: If you click the :::image type="icon" source="../../media/m365-cc-sc-view-icon.png"::: **View** icon, the **Review notification** page appears with the following information:
+  - **⋮** (**Actions** control): If you click the :::image type="icon" source="../../media/m365-cc-sc-view-icon.png"::: **View** icon, the **Review notification** page appears with the following information:
     - **Preview** tab: View the notification message as users will see it. To view the message in different languages, use the **Select notification language** box.
     - **Details** tab: View details about the notification:
       - **Notification description**
@@ -300,7 +298,7 @@ To view the details and reports for a Training campaign, do the following steps:
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
 
 2. On the **Training** tab, do one of the following steps:
-   - Select the Training campaign by selecting the check box next to it, and then click **⋮ (Actions)** \> :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png"::: **View report**. You might need to scroll to the right to see **⋮ (Actions)**.
+   - Select the Training campaign by selecting the check box next to it, and then click **⋮** (**Actions**) \> :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png"::: **View report**. You might need to scroll to the right to see **⋮** (**Actions**).
    - In the list of Training campaigns, click anywhere in the row without selecting the check box (for example, on the **Name** value).
 
 3. A details page for the Training campaign opens with the following tabs:
@@ -373,7 +371,7 @@ To delete an existing Training campaign, do the following steps:
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
 
-2. On the **Training** tab, select the Training campaign by selecting the check box next to it, and then click **⋮ (Actions)** \> :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete**. You might need to scroll to the right to see **⋮ (Actions)**.
+2. On the **Training** tab, click **⋮** (**Actions**) in the Training \> :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete**. You might need to scroll to the right to see **⋮** (**Actions**).
 
 3. Click **Confirm** in the warning dialog that opens.
 
