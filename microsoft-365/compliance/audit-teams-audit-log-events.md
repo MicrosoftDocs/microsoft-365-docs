@@ -24,7 +24,7 @@ appliesto:
 # Search the audit log for events in Microsoft Teams
 
 > [!IMPORTANT]
-> [!INCLUDE [new-teams-sfb-admin-center-notice](includes/new-teams-sfb-admin-center-notice.md)]
+> [!INCLUDE [new-teams-sfb-admin-center-notice](../includes/new-teams-sfb-admin-center-notice.md)]
 
 The audit log can help you investigate specific activities across Microsoft 365 services. For Microsoft Teams, here are some of the activities that are audited:
 
@@ -41,7 +41,7 @@ For a complete list of Teams activities that are audited, see [Teams activities]
 
 ## Turn on auditing in Teams
 
-Before you can look at audit data, you have to first turn on auditing in the Microsoft Purview compliance portal. For more information, see [Turn auditing on or off](turn-audit-log-search-on-or-off).
+Before you can look at audit data, you have to first turn on auditing in the Microsoft Purview compliance portal. For more information, see [Turn auditing on or off](turn-audit-log-search-on-or-off.md).
 
 > [!IMPORTANT]
 > Audit data is only available from the point at which you turned on auditing.
