@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 04/01/2023
+ms.date: 04/28/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -23,30 +23,22 @@ description: "Set up data connectors (preview) to build assessments for non-Micr
 
 # Working with data connectors in Compliance Manager (preview)
 
-**In this article:** Learn how to
+**In this article:** Learn how to...
 
-Compliance Manager has an integrated set of third-party data connectors so that you can build assessments that cover services other than Microsoft, such as SalesForce or Dropbox. You can select the connectors you need within Compliance Manager. Then when you build your assessment, you'll select from among the connectors you've already set up.
+Compliance Manager has an integrated set of third-party data connectors so that you can build assessments that cover services other than Microsoft. You can select the connectors you need within Compliance Manager. Then when you build your assessment, you'll select from among the connectors you've already set up.
 
 - Setting up connectors for your assessments are covered in step XYZ of the [guided process for creating assessments](compliance-manager-assessments.md#create-an-assessment-using-a-guided-process), below.
-- Get more general information about [third-party data connectors](archiving-third-party-data.md).
+
 
 TO ADD - where to find your connectors in CM. Go to **Data connectors** in upper right corner of screen. Once you're here, what od you do - add or activate connectors?
 
 ## Available connectors
-The Compliance Manager integrated connectors currently available in preview are are:
+The Compliance Manager integrated connectors currently available  are:
 
-- Adobe Experience Manager
-- Adobe Experience Platform
-- Box
-- Confluence
-- DocuSign
-- Dropbox
-- Jira
-- QuickBooks
 - Salesforce
-- Shopify
-- Webex
 - Zoom
+
+Additional connectors will be available in coming months.
 
 ## How connectors work
 
@@ -54,11 +46,16 @@ Get into elliot's service instance and programmatic mapping docs - define servic
 
 ## Set up data connectors
 
-Before creating an assessment, you'll need to set up a connector for the service you're assessing. Follow the steps below to set up Compliance Manager connectors:
+Before creating an assessment, you'll need to set up a connector for the service you're assessing. Follow the steps below to set up Compliance Manager connectors.
 
-1. In Compliance Manager, select **Data connectors** in the upper right of your screen. 
-1. You'll arrive at the Compliance Manager page within the **Data connectors** section of the Microsoft Purview compliance portal. This page lists the available connectors. Select the checkbox next to the name of the connector you want to add.
-1. 
+> [!IMPORTANT]
+> Compliance Manager connectors are unique to the Comliance Manager solution and are set up within Compliance Manager. The data connectors located on the left nav of the Microsoft Purview compliance portal are not the connnectors to use for Compliance Manager assessments.
+
+1. In Compliance Manager, select **Data connectors** in the upper right of your screen. The **Data connectors** page in Compliance Manager lists the available connectors.
+1. Select the checkbox next to the name of the connector you want to add. Only one connector can be added at a time. After making your selection, select **Activate connector**.
+1. On the connector's details page, you can review details and requirements. Select **Add connector**, which takes you to the connector setup wizard.
+1. Review the Microsoft Terms of Service, then select **Accept**.
+1. Slide 12....
 
 ? - I"m seeing the phrase "activate connector" and also seeing a command (button with a plus sign) to do this. What does it mean to "activate" a connector? Does this mean just adding the connector to your CM so that you see it in your list when yo ugo to choose from them in 
 
@@ -76,3 +73,5 @@ When you get to the "Select servies" page in the assessment creation wizard, cho
 
 How to interpret assessment and improvement action scores with connectors.
 
+## Resources
+Get general information about [third-party data connectors](archiving-third-party-data.md) (remember that Compliance Manager connectors are unique to Compliance Manager).
