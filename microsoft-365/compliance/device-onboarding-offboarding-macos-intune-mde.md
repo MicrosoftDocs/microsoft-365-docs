@@ -21,7 +21,7 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 # Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers
 
 > [!IMPORTANT]
-> Use this procedure ***if you have*** deployed Microsoft Defender for Endpoint (MDE) to your macOS devices
+> Use this procedure ***if you have already deployed***  Microsoft Defender for Endpoint (MDE) to your macOS devices.
 
 **Applies to:**
 
@@ -34,9 +34,9 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 
 ## Before you begin
 
-- Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
+- Make sure your [macOS devices are onboarded to Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Make sure you have access to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home)
-- This supports the three latest released macOS versions.
+- The three most recently released macOS versions are supported.
 - OPTIONAL: Install the v95+ Edge browser on your macOS devices 
 
 ## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune

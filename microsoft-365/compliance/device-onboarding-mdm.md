@@ -32,7 +32,7 @@ You can use mobile device management (MDM) solutions to configure devices. Micro
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
-If you're using Microsoft Intune, the device must be enrolled in MDM. 
+If you're using Microsoft Intune, the device must be enrolled in MDM.
 
 For more information on enabling MDM with Microsoft Intune, see [Device enrollment (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
 
@@ -56,7 +56,7 @@ For security reasons, the package used to offboard devices will expire 30 days a
 
 3. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
 
-4. Click **Download package**, and save the .zip file.
+4. Select **Download package**, and save the .zip file.
 
 5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
 
