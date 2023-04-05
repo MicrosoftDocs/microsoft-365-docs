@@ -156,7 +156,7 @@ Also, if you're using FSlogix user profiles, we recommend you exclude the follow
 
 #### Licensing requirements
 
-Note on licensing: When using Windows Enterprise multi-session, depending on your requirements, you can choose to either have all users licensed through Microsoft Defender for Endpoint (per user), Windows Enterprise E5, Microsoft 365 Security, or Microsoft 365 E5, or have the VM licensed through Microsoft Defender for Cloud.
+Note on licensing: When using Windows Enterprise multi-session, depending on your requirements, you can choose to either have all users licensed through Microsoft Defender for Endpoint (per user), Windows Enterprise E5, Microsoft 365 E5 Security, or Microsoft 365 E5, or have the VM licensed through Microsoft Defender for Cloud.
 Licensing requirements for Microsoft Defender for Endpoint can be found at: [Licensing requirements](minimum-requirements.md#licensing-requirements).
 
 ### Known issues and limitations

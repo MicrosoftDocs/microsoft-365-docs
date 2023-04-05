@@ -74,7 +74,7 @@ To prepare for the macOS network protection rollout, we recommend the following:
 
 ## Prerequisites
 
-- Licensing: Microsoft 365 Defender for Endpoint tenant (can be trial)
+- Licensing: Microsoft 365 Defender for Endpoint Plan 1 or Microsoft 365 Defender for Endpoint Plan 2 (can be trial)
 - Onboarded Machines:
   - Minimum macOS version: 11
   - Product version 101.94.13 or later
