@@ -156,7 +156,7 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
 > [!NOTE]
 > It can take up to five days for the queries to fully populate and changes will not be immediate. Factor in this delay by waiting a few days before you add a newly created scope to a policy.
 
-To confirm the current membership and membership changes for an adaptive scope:
+<a name="confirm-scope-membership"></a>To confirm the current membership and membership changes for an adaptive scope:
 
 1. Double-click (or select and press Enter) the scope on the **Adaptive scopes** page
 
