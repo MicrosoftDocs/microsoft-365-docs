@@ -44,16 +44,19 @@ This article is updated frequently to let you know what's new in the latest rele
 	
 **Known issues**
 
-- With mdatp version 101.98.30 you might see a health false issue in some of the cases, It's because SELinux rules are not defined for certain scenarios. The health warning could look something like 
+- With mdatp version 101.98.30 you might see a health false issue in some of the cases, because SELinux rules are not defined for certain scenarios. The health warning could look something like this:
 
-"found SELinux denials within last one day. If the MDATP is recently installed, please clear the existing audit logs or wait for a day for this issue to auto-resolve. Please use command: \"sudo ausearch -i -c 'mdatp_audisp_pl' | grep \"type=AVC\" | grep \" denied\" to find details"
+*found SELinux denials within last one day. If the MDATP is recently installed, please clear the existing audit logs or wait for a day for this issue to auto-resolve. Please use command: \"sudo ausearch -i -c 'mdatp_audisp_pl' | grep \"type=AVC\" | grep \" denied\" to find details*
 
 The issue could be mitigated by running the following commands.
+
 ```
 sudo ausearch -c 'mdatp_audisp_pl' --raw | sudo audit2allow -M my-mdatpaudisppl_v1
 sudo semodule -i my-mdatpaudisppl_v1.pp
 ```
-Here my-mdatpaudisppl_v1 represents the policy module name, After running the commands, either wait for 24 hours or clear/archive the audit logs. The audit logs could be archived by running the following command
+
+Here my-mdatpaudisppl_v1 represents the policy module name. After running the commands, either wait for 24 hours or clear/archive the audit logs. The audit logs could be archived by running the following command
+
 ```
 sudo service auditd stop
 sudo systemctl stop mdatp
@@ -63,7 +66,8 @@ sudo service auditd start
 sudo systemctl start mdatp
 mdatp health
 ```
-In case the issue reappears with some different denials, We need to run the mitigation again with a different module name(eg my-mdatpaudisppl_v2).
+
+In case the issue reappears with some different denials. We need to run the mitigation again with a different module name(eg my-mdatpaudisppl_v2).
 
 </details>
 	
