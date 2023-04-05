@@ -377,7 +377,7 @@ When you configure the locations for this option, you can select:
 - **Microsoft 365 Groups** for shared files that are stored in team sites connected by Microsoft 365 groups.
 - **OneDrive accounts** for shared files stored in users' OneDrive.
 
-You will need to create separate retention policies if you want to retain or delete the original files, email messages, or Teams messages.
+You will need to create separate retention policies if you want to retain or delete the original files, email messages, or messages from Teams and Yammer.
 
 > [!NOTE]
 > If you want retained cloud attachments to expire at the same time as the messages that contained them, configure the retention label to have the same retain and then delete actions and timings as your retention policies for Exchange, Teams, and Yammer.
