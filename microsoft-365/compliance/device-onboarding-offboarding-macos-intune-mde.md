@@ -73,7 +73,6 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 1. Choose **Create**.
 
-   :::image type="content" source="media/device-macos-dnld-onboarding-package.png" alt-text="This screenshot shows the display with steps 1-4 labeled.":::
 
 1. Choose a name for the profile, like *AccessibilityformacOS* in this example. Choose **Next**.
 
