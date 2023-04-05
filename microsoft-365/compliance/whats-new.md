@@ -41,6 +41,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## April 2023
 
+### Data lifecycle management and records management
+
+- **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Yammer.
+
 ### Sensitivity labels
 
 - **General availability (GA)**: [Default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md)
