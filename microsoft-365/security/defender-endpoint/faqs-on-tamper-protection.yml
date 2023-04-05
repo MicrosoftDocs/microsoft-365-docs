@@ -36,9 +36,9 @@ sections:
           If you're using Configuration Manager, version 2006, with tenant attach, tamper protection can be extended to Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).
 
       - question: |
-          Will tamper protection affect non-Microsoft antivirus registration in the Windows Security app?
+          Will tamper protection affect non-Microsoft Antivirus registration in the Windows Security app?
         answer: |
-          No. Non-Microsoft antivirus offerings continue to register with the Windows Security application.
+          No. Non-Microsoft Antivirus offerings continue to register with the Windows Security application.
 
       - question: |
           What happens if Microsoft Defender Antivirus isn't active on a device?
