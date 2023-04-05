@@ -63,6 +63,8 @@ MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/
 
 ### Get the device onboarding package
 
+:::image type="content" source="../media/device-macos-dnld-onboarding-package-inline.png" alt-text="Screenshot of the steps to get the device onboarding package." lightbox="../media/device-macos-dnld-onboarding-package-expanded.png" :::
+
 1. In the **Microsoft Purview compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
  
 2. For **Select operating system to start onboarding process** choose **macOS**.
@@ -70,8 +72,6 @@ MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/
 3. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**.
  
 4. Choose **Download onboarding package**.
-
-:::image type="content" alt-text="Screenshot of the steps to get the device onboarding package." source="../media/device-macos-dnld-onboarding-package.png":::
 
 
 5. Extract the zip file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
