@@ -92,7 +92,7 @@ Once you've deployed the supported services, [turn on Microsoft 365 Defender](m3
 
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
-- [Deploy and configure Microsoft 365 Defender](deploy-configure-m365-defender.md)
+- [Setup guides for Microsoft 365 Defender](deploy-configure-m365-defender.md)
 - [Microsoft Defender for Endpoint overview](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Microsoft Defender for Office 365 overview](../office-365-security/defender-for-office-365.md)
 - [Microsoft Defender for Cloud Apps overview](/cloud-app-security/what-is-cloud-app-security)
