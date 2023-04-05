@@ -102,7 +102,7 @@ If the **Apply layered order of evaluation for Allow and Prevent device installa
 
 ### Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria
 
-This policy setting will change the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that overlapping device match criteria is applied based on an established hierarchy where more specific match criteria supersedes less specific match criteria. The hierarchical order of evaluation for policy settings that specify device match criteria is as follows:
+This policy setting will change the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that overlapping device match criteria are applied based on an established hierarchy where more specific match criteria supersedes less specific match criteria. The hierarchical order of evaluation for policy settings that specify device match criteria is as follows:
 
 **Device instance IDs** \> **Device IDs** \> **Device setup class** \> **Removable devices**
 
