@@ -305,11 +305,19 @@
         - name: Information barriers & Microsoft 365 services
           items:
             - name: Microsoft Teams and information barriers
-              href: /microsoftteams/information-barriers-in-teams?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json 
+              href: information-barriers-teams.md
+            - name: Microsoft Teams shared channels and information barriers
+              href: information-barriers-teams-shared-channels.md
+            - name: Microsoft Teams PowerShell script and information barriers
+              href: information-barriers-teams-powershell-script.md
             - name: OneDrive and information barriers
-              href: /onedrive/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+              href: information-barriers-onedrive.md
             - name: SharePoint and information barriers
-              href: /sharepoint/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+              href: information-barriers-sharepoint.md
+            - name: SharePoint information barriers compliance assistant (preview)
+              href: information-barriers-sharepoint-assistant.md
+            - name: SharePoint information barriers policy compliance report
+              href: information-barriers-sharepoint-report.md
     - name: Privileged access management
       items:
         - name: Overview
@@ -1510,14 +1518,18 @@
           href: ediscovery-overview.md
         - name: Set up eDiscovery (Premium)
           href: ediscovery-premium-get-started.md
+        - name: eDiscovery (Premium) with Microsoft Teams
+          items:
+            - name: eDiscovery workflow for Teams content
+              href: ediscovery-teams-workflow.md
+            - name: Conduct an investigation for Teams content
+              href: ediscovery-teams-investigation.md
         - name: Create eDiscovery (Premium) cases
           items:
             - name: Create and manage a case
               href: ediscovery-create-and-manage-cases.md
             - name: Use the new case format
               href: ediscovery-new-case-format.md
-        - name: eDiscovery (Premium) workflow for Teams content
-          href: ediscovery-teams-workflow.md
         - name: Manage custodians and non-custodial data sources
           href: ediscovery-managing-custodians.md
           items: 
@@ -1570,10 +1582,12 @@
               href: ediscovery-commit-draft-collection.md
             - name: Collection statistics and reports
               href: ediscovery-collection-statistics-reports.md        
-            - name: Build search queries for collections
+            - name: Build search queries for keywords and collections
               href: ediscovery-building-search-queries.md
             - name: Use the KQL editor to build search queries
               href: ediscovery-kql-editor.md
+            - name: Use the query builder to create search queries (preview)
+              href: ediscovery-query-builder.md
             - name: Keyword queries and search conditions
               href: ediscovery-keyword-queries-and-search-conditions.md 
             - name: Collect cloud attachments
@@ -1723,6 +1737,8 @@
           href: audit-log-retention-policies.md
         - name: Use Audit (Premium) to investigate compromised accounts
           href: audit-log-investigate-accounts.md
+        - name: Search the audit log for events in Teams
+          href: audit-teams-audit-log-events.md
     - name: Office 365 Management Activity API resources
       items:
         - name: Office 365 Management Activity API reference

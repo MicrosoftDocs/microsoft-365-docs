@@ -35,12 +35,12 @@ This section addresses issues that might arise as you use the Microsoft Defender
 
 ## Server error - Access is denied due to invalid credentials
 
-If you encounter a server error when trying to access the service, you'll need to change your browser cookie settings.
+If you encounter a server error when trying to access the service, you need to change your browser cookie settings.
 Configure your browser to allow cookies.
 
 ## Elements or data missing on the portal
 
-If some elements or data is missing on Microsoft 365 Defender it's possible that proxy settings are blocking it.
+If some elements or data is missing on Microsoft 365 Defender, it's possible that proxy settings are blocking it.
 
 Make sure that `*.security.microsoft.com` is included the proxy allowlist.
 
@@ -53,7 +53,7 @@ See [Review events and errors using Event Viewer](event-error-codes.md) for a li
 
 ## Microsoft Defender for Endpoint service fails to start after a reboot and shows error 577
 
-If onboarding devices successfully completes but Microsoft Defender for Endpoint does not start after a reboot and shows error 577, check that Windows Defender is not disabled by a policy.
+If onboarding devices successfully completes but Microsoft Defender for Endpoint doesn't start after a reboot and shows error 577, check that Windows Defender isn't disabled by a policy.
 
 For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
@@ -73,11 +73,11 @@ The following date and time formats are currently not supported:
 - Date format yyyy/MM/dd
 - Date format dd/MM/yy
 - Date format with yy. Will only show yyyy.
-- Time format HH:mm:ss is not supported (the 12 hour AM/PM format is not supported). Only the 24-hour format is supported.
+- Time format HH:mm:ss isn't supported (the 12 hour AM/PM format isn't supported). Only the 24-hour format is supported.
 
 ### Use of comma to indicate thousand
 
-Support of use of comma as a separator in numbers are not supported. Regions where a number is separated with a comma to indicate a thousand, will only see the use of a dot as a separator. For example, 15,5 K is displayed as 15.5 K.
+Support of use of comma as a separator in numbers aren't supported. Regions where a number is separated with a comma to indicate a thousand, will only see the use of a dot as a separator. For example, 15,5 K is displayed as 15.5 K.
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
