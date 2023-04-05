@@ -29,7 +29,7 @@ description: "Microsoft 365 and Office 365 advanced deployment guides help admin
 
 Microsoft 365 and Office 365 advanced deployment guides give you tailored guidance and resources for planning and deploying your tenant, apps, and services. These guides are created using the same best practices that [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) onboarding specialists share in individual interactions. They provide information on product setup, enabling security features, deploying collaboration tools, and provide scripts to speed up advanced deployments.
 
-All advanced deployment guides are available in the Microsoft 365 admin center as described in the section below, and most guides can also be found in the [Microsoft 365 Setup portal](https://aka.ms/setupguides).
+All advanced deployment guides are available in the Microsoft 365 admin center as described in the section below, and most guides can also be found in the [Microsoft 365 Setup portal](https://go.microsoft.com/fwlink/?linkid=2220880).
 
 Access to advanced deployment guides in the admin center requires authentication to a Microsoft 365 tenant as an administrator or other role with access to the admin center. Advanced deployment guides in the Microsoft 365 Setup portal can be accessed by anyone. We have provided links to both locations for each guide, where available, in the tables below.
 
@@ -46,7 +46,7 @@ In this article:
 
 ## How to access advanced deployment guides in the Microsoft 365 admin center
 
-Advanced deployment guides are accessible from the [Advanced deployment guides & assistance](https://go.microsoft.com/fwlink/?linkid=2224913) page in the Microsoft 365 admin center. When you access advanced deployment guides from the admin center, you can keep track of the status of your progress and return at any time to complete a guide. This functionality is not available when you access guides from the [Microsoft 365 Setup portal](https://aka.ms/setupguides).
+Advanced deployment guides are accessible from the [Advanced deployment guides & assistance](https://go.microsoft.com/fwlink/?linkid=2224913) page in the Microsoft 365 admin center. When you access advanced deployment guides from the admin center, you can keep track of the status of your progress and return at any time to complete a guide. This functionality is not available when you access guides from the [Microsoft 365 Setup portal](https://go.microsoft.com/fwlink/?linkid=2220880).
 
 > [!NOTE]
 > You must be assigned an admin role such as _Global Reader_ to access advanced deployment guides in the Microsoft 365 admin center. Only admins with the _Global Administrator_ role can use the guides to change settings in the tenant.
@@ -66,7 +66,7 @@ To reach the **Advanced deployment guides & assistance** page:
 
 Advanced deployment guides in the admin center require authentication to a Microsoft 365 tenant as an administrator or other role with access to the admin center, but guides in the Microsoft 365 Setup portal can be accessed by anyone.
 
-|**Guide - [Setup Portal](https://aka.ms/setupguides)** |**Guide - [Admin Center](https://go.microsoft.com/fwlink/?linkid=2224913)** |**Description** |
+|**Guide - [Setup Portal](https://go.microsoft.com/fwlink/?linkid=2220880)** |**Guide - [Admin Center](https://go.microsoft.com/fwlink/?linkid=2224913)** |**Description** |
 |---------|---------|---------|
 |[Prepare your environment guide](https://go.microsoft.com/fwlink/?linkid=2223234)|[Prepare your environment guide](https://go.microsoft.com/fwlink/?linkid=2224195)|The **Prepare your environment guide** helps you prepare your organization's environment for Microsoft 365 and Office 365 services. Whatever your goals are, there are tasks you'll need to complete to ensure a successful deployment. To avoid any errors while preparing your environment, you're provided with step-by-step instructions to connect your domain, add users, assign licenses, set up email with Exchange Online, and install or deploy Office apps.|
 |[Email setup guide](https://go.microsoft.com/fwlink/?linkid=2223145)|[Email setup guide](https://go.microsoft.com/fwlink/?linkid=2224461)|The **Email setup guide** provides you with the step-by-step guidance needed for configuring Exchange Online for your organization. This guidance includes setting up new email accounts, migrating email, and configuring email protection. For a successful email setup, use this advisor and you'll receive the recommended migration method based on your organization's current mail system, the number of mailboxes being migrated, and how you want to manage users and their access.|
@@ -81,7 +81,7 @@ Advanced deployment guides in the admin center require authentication to a Micro
 
 ## Guides for authentication and access
 
-|**Guide - [Setup Portal](https://aka.ms/setupguides)** |**Guide - [Admin Center](https://go.microsoft.com/fwlink/?linkid=2224913)** |**Description** |
+|**Guide - [Setup Portal](https://go.microsoft.com/fwlink/?linkid=2220880)** |**Guide - [Admin Center](https://go.microsoft.com/fwlink/?linkid=2224913)** |**Description** |
 |---------|---------|---------|
 ||[Configure multi-factor authentication (MFA) guide](https://go.microsoft.com/fwlink/?linkid=2224780)|The **Configure multi-factor authentication (MFA) guide** provides customers with Azure AD Premium P1 or Azure AD Premium P2 customizable Conditional Access templates that include the most common and least intrusive security standards. When Azure AD Premium licensing isn’t available, we provide a one-click solution to enable Security Defaults, a baseline protection policy for all users, or we provide steps to enable legacy (per-user) MFA.
 ||[Identity security for Teams guide](https://go.microsoft.com/fwlink/?linkid=2224786)|The **Identity security for Teams guide** helps you with some basic security steps you can take to ensure your users are safe and have the most productive time using Teams.|
@@ -94,7 +94,7 @@ Advanced deployment guides in the admin center require authentication to a Micro
 
 ## Guides for security and compliance
 
-|**Guide - [Setup Portal](https://aka.ms/setupguides)** |**Guide - [Admin Center](https://go.microsoft.com/fwlink/?linkid=2224913)** |**Description** |
+|**Guide - [Setup Portal](https://go.microsoft.com/fwlink/?linkid=2220880)** |**Guide - [Admin Center](https://go.microsoft.com/fwlink/?linkid=2224913)** |**Description** |
 |---------|---------|---------|
 |[Security analyzer](https://go.microsoft.com/fwlink/?linkid=2223325)|[Security analyzer](https://go.microsoft.com/fwlink/?linkid=2224900)|The **Security analyzer** will analyze your security approach and introduce you to Microsoft integrated security and compliance solutions that can improve your security posture. You'll learn about advanced features, such as managing identities and helping to protect against modern attacks. You can then sign up for a trial subscription and be pointed to the corresponding setup guidance for each solution.|
 |[Set up your Microsoft Zero Trust security model](https://go.microsoft.com/fwlink/?linkid=2222968)|[Set up your Microsoft Zero Trust security model](https://go.microsoft.com/fwlink/?linkid=2224820)|Use the **Set up your Zero Trust security model guide** to configure security that effectively adapts to the complexity of the modern environment, embraces the hybrid workplace, and helps protect people, devices, apps, and data wherever they're located. Key recommendations include: always authenticate, limit user access, minimize the blast radius, segment access, verify end-to-end encryption, and use analytics to get visibility, drive threat detection, and improve defenses.|
@@ -112,7 +112,7 @@ Advanced deployment guides in the admin center require authentication to a Micro
 
 ## Guides for collaboration
 
-|**Guide - [Setup Portal](https://aka.ms/setupguides)** |**Guide - [Admin Center](https://go.microsoft.com/fwlink/?linkid=2224913)** |**Description** |
+|**Guide - [Setup Portal](https://go.microsoft.com/fwlink/?linkid=2220880)** |**Guide - [Admin Center](https://go.microsoft.com/fwlink/?linkid=2224913)** |**Description** |
 |---------|---------|---------|
 |[Build your employee experience with Microsoft 365 and Microsoft Viva dashboard](https://go.microsoft.com/fwlink/?linkid=2223653)|[Build your employee experience with Microsoft 365 and Microsoft Viva dashboard](https://go.microsoft.com/fwlink/?linkid=2224787)|Transform how your employees work together with the **Build your employee experience with Microsoft 365 and Microsoft Viva dashboard**. For seamless teamwork, use Microsoft 365 to create productive, aligned teams, and keep employees engaged with leadership and the rest of the organization. Help your employees be effective in all work activities. These guides will provide instructions on how to use SharePoint, Teams, and Yammer to build collaboration across your org to help drive productivity.|
 |[Microsoft 365 Apps setup guide](https://go.microsoft.com/fwlink/?linkid=2223409)|[Microsoft 365 Apps setup guide](https://go.microsoft.com/fwlink/?linkid=2224187)|The **Microsoft 365 Apps setup guide** helps you get your users' devices running the latest version of Office products like Word, Excel, PowerPoint, and OneNote. You'll get guidance on the various deployment methods that include easy self-install options to enterprise deployments with management tools. The instructions will help you assess your environment, figure out your specific deployment requirements, and implement the necessary support tools to ensure a successful installation.|
@@ -126,7 +126,7 @@ Advanced deployment guides in the admin center require authentication to a Micro
 
 ## Advanced guides
 
-|**Guide - [Setup Portal](https://aka.ms/setupguides)** |**Guide - [Admin Center](https://go.microsoft.com/fwlink/?linkid=2224913)** |**Description** |
+|**Guide - [Setup Portal](https://go.microsoft.com/fwlink/?linkid=2220880)** |**Guide - [Admin Center](https://go.microsoft.com/fwlink/?linkid=2224913)** |**Description** |
 |---------|---------|---------|
 ||[In-place upgrade with Configuration Manager guide](https://go.microsoft.com/fwlink/?linkid=2224789)|Use the **In-place upgrade with Configuration Manager guide** when upgrading Windows 7 and Windows 8.1 devices to the latest version of Windows 10. You'll use the script provided to check the prerequisites and automatically configure an in-place upgrade.|
 ||[Deploy Office to your users guide](https://go.microsoft.com/fwlink/?linkid=2224458)|Deploy Office apps from the cloud with the ability to customize your installation by using the Office Deployment Tool. The **Deploy Office to your users guide** helps you create a customized Office configuration with advanced settings, or you can use a pre-built recommended configuration. Whether your users are conducting a self-install or you're deploying to your users individually or in bulk, this advanced guide provides you with step-by-step instructions to give users an Office installation tailored to your organization.|
