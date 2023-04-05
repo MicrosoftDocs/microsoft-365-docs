@@ -55,6 +55,7 @@ sections:
 
             - If **TPExclusions** has a value of `1`, then all required conditions are met, and the new functionality to protect exclusions is enabled on the device. In this case, exclusions are tamper protected.
             - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device. (*If you meet all the requirements and this state seems incorrect, contact support*.)
+          
           > [!CAUTION]
           > **Don't change the value of the registry keys**. Use the preceding procedure for information only. Changing keys have no effect on whether tamper protection applies to exclusions.
 
