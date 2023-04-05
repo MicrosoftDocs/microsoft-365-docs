@@ -34,7 +34,7 @@ ms.date: 04/05/2023
 
 Threat actors use innovative ways to compromise their target environments. One type of attack gaining traction is the password spray attack, where attackers aim to access many accounts within a network with minimal effort. Unlike traditional brute force attacks, where threat actors try many passwords on a single account, password spray attacks focus on guessing the correct password for many accounts with a limited set of commonly used passwords. It makes the attack particularly effective against organizations with weak or easily guessable passwords, leading to severe data breaches and financial losses for organizations.
 
-Attacker use automated tools like to repeatedly attempt to gain access to a specific account or system using a list of commonly used passwords. Attackers sometimes abuse legitimate cloud services by creating many virtual machines (VMs) or containers to launch a password spray attack.
+Attackers use automated tools to repeatedly attempt to gain access to a specific account or system using a list of commonly used passwords. Attackers sometimes abuse legitimate cloud services by creating many virtual machines (VMs) or containers to launch a password spray attack.
 
 This playbook helps investigate cases where suspicious behavior is observed as indicative of a password spray attack. This guide is for security teams like the security operations center (SOC) and IT administrators who review, handle/manage, and classify the alerts. This guide helps in quickly classifying the alerts as either [true positive (TP) or false positive (FP)](investigate-alerts.md) and, in the case of TP, take recommended actions to remediate the attack and mitigate the security risks.
 
@@ -50,7 +50,7 @@ This section contains step-by-step guidance to respond to the alert and take the
 
 ### 1. Investigate the security alerts
 
-  - **Are the alerts coming from suspicious locations?** Check sign-in attempts from locations other than those typical for impacted user accounts. Multiple sign-in attempts from one or many users are helpful indicators.
+  - **Are the alerted sign-in attempts coming from a suspicious location?** Check sign-in attempts from locations other than those typical for impacted user accounts. Multiple sign-in attempts from one or many users are helpful indicators.
 
 ### 2. Investigate suspicious user activity
 
