@@ -199,7 +199,7 @@ For Policy deployment in Intune, the account must have permissions to create, ed
 
 #### Deploying policy
 
-In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)
+In the Microsoft Intune admin center [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)
 
 1. Configure **Prevent installation of devices using drivers that match these device setup classes**.
 

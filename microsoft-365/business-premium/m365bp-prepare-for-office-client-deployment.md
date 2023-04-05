@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 10/18/2022
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - tier1
 ms.custom:

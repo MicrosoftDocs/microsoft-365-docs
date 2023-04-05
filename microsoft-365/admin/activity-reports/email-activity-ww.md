@@ -3,6 +3,7 @@ title: "Microsoft 365 admin center email activity reports"
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

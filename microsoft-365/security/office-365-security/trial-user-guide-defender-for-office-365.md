@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Defender for Office 365 trial user guide"
+title: Microsoft Defender for Office 365 trial user guide
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,7 +7,9 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier1
 ms.localizationpriority: high
 ms.service: microsoft-365-security
 search.appverid:
@@ -16,7 +18,7 @@ search.appverid:
 description: "Microsoft Defender for Office 365 solutions trial user guide."
 ms.subservice: mdo
 ms.custom: trial-user guide
-ms.date: 11/03/2022
+ms.date: 1/31/2023
 ---
 
 # Trial user guide: Microsoft Defender for Office 365
@@ -91,9 +93,9 @@ Defender for Office 365 enables users to report messages to their security teams
 
 - Deploy the [Report Message add-in or the Report Phishing add-in](submissions-users-report-message-add-in-configure.md).
 - Establish a workflow to [Report false positives and false negatives](submissions-outlook-report-messages.md).
-- Use the [Submissions portal](submissions-admin.md).
+- Use the [Submissions page](submissions-admin.md).
 
-Watch this video to learn more: [Learn how to use the Submissions portal to submit messages for analysis - YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
+Watch this video to learn more: [Learn how to use the Submissions page to submit messages for analysis - YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
 
 #### Review reports to understand the threat landscape in blocking mode
 
@@ -112,7 +114,7 @@ Use the reporting capabilities in Defender for Office 365 to get more details ab
 Protect your most targeted and most visible users with Priority Account Protection in Defender for Office 365, which helps you prioritize your workflow to ensure these users are safe.
 
 - Identify your most targeted or most visible users.
-- [Tag these users](../../admin/setup/priority-accounts.md#add-priority-accounts-from-the-setup-page) as priority accounts.
+- [Tag these users](../../admin/setup/priority-accounts.md#add-priority-accounts-from-the-microsoft-365-defender-page) as priority accounts.
 - Track threats to priority account throughout the portal.
 
 Watch this video to learn more: [Protecting priority accounts in Microsoft Defender for Office 365 - YouTube](https://www.youtube.com/watch?v=tqnj0TlzQcI&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=11).
@@ -197,9 +199,9 @@ Defender for Office 365 enables users to report messages to their security teams
 
 - Deploy the [Report Message add-in or the Report Phishing add-in](submissions-users-report-message-add-in-configure.md).
 - Establish a workflow to [Report false positives and false negatives](submissions-outlook-report-messages.md).
-- Use the [Submissions portal](submissions-admin.md).
+- Use the [Submissions page](submissions-admin.md).
 
-Watch this video to learn more: [Learn how to use the Submissions portal to submit messages for analysis - YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
+Watch this video to learn more: [Learn how to use the Submissions page to submit messages for analysis - YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
 
 #### Review reports to understand the threat landscape in auditing mode
 

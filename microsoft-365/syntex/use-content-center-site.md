@@ -5,7 +5,8 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
-ms.topic: article
+ms.date: 02/01/2022
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -16,6 +17,9 @@ description: Learn how to provision and use the content center site template in 
 ---
 
 # Use the content center site template for Microsoft Syntex
+
+> [!NOTE]
+>  The content center site template is provided in the SharePoint look book service, which is no longer being updated. Some of the information in the template might not reflect the current Syntex features.
 
 The Microsoft Syntex content center site is a ready-to-deploy instructional SharePoint site template designed to help you better understand Syntex capabilities.
 
@@ -85,5 +89,3 @@ See how content is used to illustrate model activity and to provide more informa
 ### Find additional resources
 
 Discover additional resources and scenarios to help you learn more about Syntex.
-
-

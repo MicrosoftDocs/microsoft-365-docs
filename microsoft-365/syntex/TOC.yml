@@ -7,10 +7,14 @@
               href: syntex-overview.md 
             - name: Licensing for Syntex
               href: syntex-licensing.md
+            - name: Pricing for pay-as-you-go
+              href: syntex-pay-as-you-go-services.md
             - name: Set up pay-as-you-go billing
               href: syntex-azure-billing.md
-            - name: Set up Syntex
+            - name: Set up per-user licenses
               href: set-up-content-understanding.md
+            - name: Set up Microsoft Syntex
+              href: set-up-microsoft-syntex.md
             - name: Create a content center 
               href: create-a-content-center.md
 
@@ -117,6 +121,8 @@
           href: content-assembly.md
         - name: Create a modern template
           href: content-assembly-modern-template.md
+        - name: Map template fields to library columns
+          href: content-assembly-map-fields.md
         - name: Edit a modern template
           href: content-assembly-edit-template.md
         - name: Create a document from a modern template 
@@ -126,14 +132,17 @@
      
     - name: Content processing
       items: 
+        - name: Overview 
+          href: content-processing-overview.md
         - name: Move or copy a file 
           href: content-processing-create-rules.md
-     
+
     - name: Content query
-      items: 
-        - name: Use metadata to find content in document libraries 
-          href: metadata-search.md
+      href: metadata-search.md
      
+    - name: Annotations
+      href: annotations.md
+
     - name: Taxonomy
       items:
         - name: Import using SKOS
@@ -155,6 +164,8 @@
           href: adoption-assessment-tool.md 
         - name: Run a trial
           href: trial-syntex.md
+        - name: Solution accelerators
+          href: site-templates.md 
         - name: Solutions
           items:
             - name: Manage contracts in Microsoft 365
@@ -167,12 +178,9 @@
                  href: solution-manage-contracts-step2.md
                - name: Step 3. Use Power Automate
                  href: solution-manage-contracts-step3.md
-        - name: Site templates
-          items:
-            - name: Contracts management template
-              href: use-contracts-management-site.md 
-            - name: Content center template
-              href: use-content-center-site.md 
+
+    - name: Video library 
+      href: video-library.md
 
     - name: Extensibility
       items: 
