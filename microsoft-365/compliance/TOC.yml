@@ -1392,11 +1392,10 @@
         - name: Overview of Content search
           href: search-for-content.md
         - name: Search for content
-          href: ediscovery-content-search.md
-        - name: Search for content in Teams
-          href: ediscovery-teams-content-search.md
+          href: ediscovery-content-search.md          
           items: 
-          - name: Keyword queries and search conditions
+          - name: Search for content in Teams
+            href: ediscovery-teams-content-search.md- name: Keyword queries and search conditions
             href: ediscovery-keyword-queries-and-search-conditions.md
           - name: Use the KQL editor to build search queries
             href: ediscovery-kql-editor.md
