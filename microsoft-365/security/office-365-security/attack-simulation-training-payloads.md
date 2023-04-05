@@ -14,7 +14,7 @@ ms.custom:
 description: Admins can learn how to create and manage payloads for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 4/3/2023
+ms.date: 4/4/2023
 ---
 
 # Payloads in Attack simulation training
@@ -24,7 +24,7 @@ ms.date: 4/3/2023
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, a _payload_ is the phishing email message and links or attachment content that's presented to users in simulations. Attack simulation training offers a robust built-in payload catalog for the available social engineering techniques. However, you might want to create custom payloads that will work better for your organization.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, a _payload_ is the link or attachment in the simulated phishing email message that's presented to users. Attack simulation training offers a robust built-in payload catalog for the available social engineering techniques. However, you might want to create custom payloads that work better for your organization.
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
@@ -61,7 +61,7 @@ The following information is shown for each payload on the **Global payloads** a
 
 Click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, the only available column that's not selected is **Platform**.
 
-<sup>\*</sup> To see all columns, you'll likely need to do one or more of the following steps:
+<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
 
 - Horizontally scroll in your web browser.
 - Narrow the width of appropriate columns.
@@ -92,7 +92,7 @@ When you're finished configuring filters, click **Apply**, **Cancel**, or ![Clea
 
 When you select a payload by clicking anywhere in the row other than the check box next to the name, a details flyout appears with the following information:
 
-- **Overview** tab: View the payload as users will see it. Payload properties are also visible:
+- **Overview** tab: View the payload as users see it. Payload properties are also visible:
   - **Payload description**
   - **From name**
   - **From email**
@@ -157,20 +157,20 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
 
    - **Sender details** section: Configure the following settings:
      - **From name**
-     - **Use first name as display name**: By default, this setting is not selected.
-     - **From email**: If you choose an internal email address for your payload's sender, the payload will appear to come from a fellow employee. This sender email address will increase a user's susceptibility to the payload, and will help educate employees on the risk of internal threats.
+     - **Use first name as display name**: By default, this setting isn't selected.
+     - **From email**: If you choose an internal email address for your payload's sender, the payload appears to come from a fellow employee. This sender email address increases a user's susceptibility to the payload, and helps to educate employees on the risk of internal threats.
      - **Email subject**
-     - **Add External tag to email**: By default, this setting is not selected.
+     - **Add External tag to email**: By default, this setting isn't selected.
 
    - **Attachment details** section (**Malware Attachment**, **Link in Attachment**, or **Link to Malware** techniques only): Configure the following settings:
      - **Name your attachment**: Enter a filename for the attachment.
      - **Select an attachment type**: Select a filetype for the attachment. Available values are **Docx** or **HTML**.
 
-   - **Link for attachment** section (**Link to Malware** technique only): In the **Select a URL you want to be your malware attachment link** box, select one of the available URLs (the same URLs that are described for the **Phishing link** section). You'll embed the URL in the body of the message in the **Email message** section.
+   - **Link for attachment** section (**Link to Malware** technique only): In the **Select a URL you want to be your malware attachment link** box, select one of the available URLs (the same URLs that are described for the **Phishing link** section). You embed the URL in the body of the message in the **Email message** section.
 
    - **Phishing link** section (**Credential Harvest**, **Link in Attachment**, **Drive-by URL**, or **OAuth Consent Grant** techniques only):
-     - For **Credential Harvest**, **Drive-by URL**, or **OAuth Consent Grant**, the name of the box is **Select a URL you want to be your phishing link**. You'll embed the URL in the body of the message in the **Email message** section.
-     - For **Link in Attachment**, the name of the box is **Select a URL in this attachment that you want to be your phishing link**. You'll embed the URL in the attachment in the **Attachment content** section.
+     - For **Credential Harvest**, **Drive-by URL**, or **OAuth Consent Grant**, the name of the box is **Select a URL you want to be your phishing link**. You embed the URL in the body of the message in the **Email message** section.
+     - For **Link in Attachment**, the name of the box is **Select a URL in this attachment that you want to be your phishing link**. You embed the URL in the attachment in the **Attachment content** section.
 
      Select one of the available URL values:
 
@@ -258,7 +258,7 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
 
      - **Code** tab: You can view and modify the HTML code directly.
 
-     - **Replace all links in the email message with the phishing link** (**Credential Harvest**, **Link to Malware**, **Drive-by URL**, or **OAuth Consent Grant** techniques only): This toggle can save time by replacing all links in the message with the previously selected **Phishing link** or **Link for attachment** URL. To do this, toggle the setting to on ![Toggle on icon.](../../media/scc-toggle-on.png).
+     - **Replace all links in the email message with the phishing link** (**Credential Harvest**, **Link to Malware**, **Drive-by URL**, or **OAuth Consent Grant** techniques only): This toggle can save time by replacing all links in the message with the previously selected **Phishing link** or **Link for attachment** URL. To take this action, toggle the setting to on ![Toggle on icon.](../../media/scc-toggle-on.png).
 
    When you're finished on the **Configure payload** page, click **Next**.
 
@@ -342,8 +342,10 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
 
 ## Take action on payloads
 
+All actions on existing payloads start on the **Payloads** page. To get there, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> **Payloads** \> **Tenant payloads** tab. To go directly to the **Content library** tab where you can select **Payloads** and the **Tenant payloads** or **Global payloads** tabs, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+
 > [!TIP]
-> To see the **⋮** (**Actions**) control on the **Global payloads** or **Tenant payloads** tabs, you'll likely need to do one or more of the following steps:
+> To see the **⋮** (**Actions**) control on the **Global payloads** or **Tenant payloads** tabs, you likely need to do one or more of the following steps:
 >
 > - Horizontally scroll in your web browser.
 > - Narrow the width of appropriate columns.
