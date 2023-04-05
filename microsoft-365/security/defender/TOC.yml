@@ -108,6 +108,8 @@
           href: m365d-enable.md
         - name: 2. Deploy supported services
           href: deploy-supported-services.md
+        - name: Setup guides for Microsoft 365 Defender
+          href: deploy-configure-m365-defender.md  
         - name: Turning on Microsoft 365 Defender FAQs
           href: m365d-enable-faq.md              
         - name: Train your security staff
