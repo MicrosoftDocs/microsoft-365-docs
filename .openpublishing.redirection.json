@@ -10759,6 +10759,11 @@
     "source_path": "microsoft-365/security/defender-endpoint/report-monitor-microsoft-defender-antivirus.md",
     "redirect_url": "/microsoft-365/security/defender-endpoint/deploy-manage-report-microsoft-defender-antivirus",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/faqs-tamper-protection.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/faqs-tamper-protection",
+    "redirect_document_id": false
   }
  ]
 }

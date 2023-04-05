@@ -594,7 +594,7 @@
         - name: Manage tamper protection on an individual device
           href: manage-tamper-protection-individual-device.md
         - name: FAQs on tamper protection
-          href: faqs-on-tamper-protection.yml
+          href: faqs-tamper-protection.yml
       - name: Turn on block at first sight
         href: configure-block-at-first-sight-microsoft-defender-antivirus.md
       - name: Configure the cloud block timeout period
@@ -1349,10 +1349,10 @@
         href: troubleshoot-onboarding-error-messages.md
       - name: Troubleshoot security configuration management onboarding issues
         href: troubleshoot-security-config-mgt.md
-
+    - name: Troubleshoot problems with tamper protection
+      href: troubleshoot-problems-with-tamper-protection.yml
     - name: Troubleshooting migration issues
       href: switch-to-mde-troubleshooting.md
-
     - name: Troubleshoot sensor state
       items:
       - name: Check sensor state
