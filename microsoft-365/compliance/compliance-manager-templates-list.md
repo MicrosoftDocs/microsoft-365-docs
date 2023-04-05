@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 03/31/2023
+ms.date: 04/04/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -400,7 +400,8 @@ The templates listed below may be purchased by your organization. Certain licens
 - South African POPIA  
 - Slovakia Act on the Protection of Personal Data  
 - Spain - Nation Security Framework  
-- Switzerland - Federal Act on Data Protection (FADP)  
+- Switzerland - Federal Act on Data Protection (FADP)
+- Turkey - Information and Communication Security Guide  
 - Turkey - KVKK Protection of Personal Data 6698
 - UAE - Federal Decree Law on Combating Cyber Crimes  
 - UAE - Federal Law Concerning Electronic Transactions and Commerce
