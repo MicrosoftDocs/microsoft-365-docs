@@ -56,7 +56,7 @@ The following table summarizes the steps you would need to take to deploy and ma
 |[Network Extension policy](#network-filter)|MDATP_NetExt.xml|N/A|
 |[Configure Microsoft AutoUpdate (MAU)](mac-updates.md#intune)|MDATP_Microsoft_AutoUpdate.xml|com.microsoft.autoupdate2|
 |[Microsoft Defender for Endpoint configuration settings](mac-preferences.md#intune-full-profile) <p> **Note:** If you're planning to run a third-party AV for macOS, set `passiveMode` to `true`.|MDATP_WDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
-|[Configure Microsoft Defender for Endpoint and MS AutoUpdate (MAU) notifications](mac-updates.md)|MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig|com.microsoft.autoupdate2 or com.microsoft.wdav.tray|
+|[Configure Microsoft Defender for Endpoint and MS AutoUpdate (MAU) notifications](/microsoft-365/security/defender-endpoint/mac-install-with-intune#notifications)|MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig|com.microsoft.autoupdate2 or com.microsoft.wdav.tray|
 
 ## Download the onboarding package
 
@@ -115,7 +115,7 @@ This profile contains a license information for Microsoft Defender for Endpoint.
 1. Assign devices on the **Assignment** tab. Click **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-3.png" alt-text="The completion of the custom configuration profile" lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-3.png" alt-text="The completion of the custom configuration profile." lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
 
 1. Review and **Create**.
 1. Open **Devices** \> **Configuration profiles**, you can see your created profile there.
