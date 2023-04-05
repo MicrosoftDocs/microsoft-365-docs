@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 04/03/2023
+ms.date: 04/05/2023
 ---
 
 # Alert classification for suspicious inbox manipulation rules
@@ -34,7 +34,7 @@ ms.date: 04/03/2023
 
 Threat actors can use compromised user accounts for many malicious purposes including reading emails in a user's inbox, creating inbox rules to forward emails to external accounts, deleting traces, and sending phishing mails. Malicious inbox rules are common during business email compromise (BEC) and phishing campaigns and it is important to monitor for them consistently.
 
-This playbook helps you investigate any incident related to suspicious inbox manipulation rules configured by attackers and take recommended actions to remediate the attack and protect your network. This playbook is for security teams, including security operations center (SOC) analysts and IT administrators who review, investigate, and grade the alerts. You can quickly grade alerts as either a True Positive (TP) or a False Positive (TP) and take recommended actions for the TP alerts to remediate the attack.
+This playbook helps you investigate any incident related to suspicious inbox manipulation rules configured by attackers and take recommended actions to remediate the attack and protect your network. This playbook is for security teams, including security operations center (SOC) analysts and IT administrators who review, investigate, and grade the alerts. You can quickly grade alerts as either a true positive (TP) or a false positive (TP) and take recommended actions for the TP alerts to remediate the attack.
 
 The results of using this playbook are:
 

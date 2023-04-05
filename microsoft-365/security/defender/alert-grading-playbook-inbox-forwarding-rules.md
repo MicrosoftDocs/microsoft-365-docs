@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - met150
-ms.date: 04/03/2023
+ms.date: 04/05/2023
 ---
 
 # Alert classification for suspicious inbox forwarding rules
@@ -34,7 +34,7 @@ ms.date: 04/03/2023
 
 Threat actors can use compromised user accounts for several malicious purposes including reading emails in a user's inbox, creating inbox rules to forward emails to external accounts, sending phishing mails, among others. Malicious inbox rules are widely common during business email compromise (BEC) and phishing campaigns, and it important to monitor them consistently.
 
-This playbook helps you investigate alerts for suspicious inbox forwarding rules and quickly grade them as either a True Positive (TP) or a False Positive (TP). You can then take recommended actions for the TP alerts to remediate the attack.
+This playbook helps you investigate alerts for suspicious inbox forwarding rules and quickly grade them as either a true positive (TP) or a false positive (TP). You can then take recommended actions for the TP alerts to remediate the attack.
 
 For an overview of alert classification for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
 

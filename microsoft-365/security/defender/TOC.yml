@@ -200,6 +200,8 @@
                       href: alert-grading-password-spray.md                      
                     - name: Malicious exchange connectors
                       href: alert-grading-for-malicious-exchange-connectors.md
+                    - name: Password spray attacks
+                      href: alert-grading-password-spray-attack.md                    
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks

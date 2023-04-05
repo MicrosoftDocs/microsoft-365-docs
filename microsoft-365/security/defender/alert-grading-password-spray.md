@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 04/03/2022
+ms.date: 04/05/2022
 ---
 
 # Alert classification for suspicious IP addresses related to password spray attacks
@@ -199,4 +199,5 @@ AlertInfo
 ## See also
 
 - [Overview of alert classification](alert-grading-playbooks.md)
+- [Classifying password spray attacks](alert-grading-password-spray-attack.md)
 - [Investigate alerts](investigate-alerts.md)

@@ -93,5 +93,6 @@ See these playbooks for steps to more quickly classify alerts for the following 
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Suspicious IP addresses related to password spray activity](alert-grading-password-spray.md)
+- [Password spray attacks](alert-grading-password-spray-attack.md)
 
 See [Investigate alerts](investigate-alerts.md) for information on how to examine alerts with the Microsoft 365 Defender portal.

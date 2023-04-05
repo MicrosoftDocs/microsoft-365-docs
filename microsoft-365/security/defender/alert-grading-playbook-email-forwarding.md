@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 04/03/2023
+ms.date: 04/05/2023
 ---
 
 # Alert classification for suspicious email forwarding activity
@@ -36,7 +36,7 @@ Threat actors can use compromised user accounts for several malicious purposes, 
 
 Emails can be forwarded either manually or automatically using forwarding rules. Automatic forwarding can be implemented in multiple ways like Inbox Rules, Exchange Transport Rule (ETR), and SMTP Forwarding. While manual forwarding requires direct action from users, they might not be aware of all the auto-forwarded emails. In Microsoft 365, an alert is raised when a user auto-forwards an email to a potentially malicious email address.
 
-This playbook helps you investigate Suspicious Email Forwarding Activity alerts and quickly grade them as either a True Positive (TP) or a False Positive (FP). You can then take recommended actions for the TP alerts to remediate the attack.
+This playbook helps you investigate Suspicious Email Forwarding Activity alerts and quickly grade them as either a true positive (TP) or a false positive (FP). You can then take recommended actions for the TP alerts to remediate the attack.
 
 For an overview of alert classifications for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
 
