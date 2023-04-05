@@ -75,9 +75,9 @@ When you're finished on the **Automation name** page, click **Next**.
 On the **Select social engineering techniques** page, select one or more of the available social engineering techniques, which were curated from the [MITRE ATT&CK® framework](https://attack.mitre.org/techniques/enterprise/). Different payloads are available for different techniques. The following social engineering techniques are available:
 
 - **Credential Harvest**: Attempts to collect credentials by taking users to a well-known looking website with input boxes to submit a username and password.
-- **Malware Attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
+- **Malware Attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that helps the attacker compromise the target's device.
 - **Link in Attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
-- **Link to Malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file, opening the file and helping the attacker compromise the target's device.
+- **Link to Malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user contains a link to this malicious file, opening the file and helping the attacker compromise the target's device.
 - **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
 - **OAuth Consent Grant**: The malicious URL asks users to grant permissions to data for a malicious Azure Application.
 
@@ -87,13 +87,13 @@ If you click the **View details** link in the description, a details flyout open
 
 When you're finished on the **Select social engineering techniques** page, click **Next**.
 
-## Select a payload and login page
+## Select payloads and login pages
 
 On the **Select payloads and login page** page, you need to select an existing payload from the list, or create a new payload.
 
 For the **Credential Harvest** or **Link in Attachment** social engineering techniques, you can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
 
-### Select a payload
+### Select payloads
 
 On the **Select payloads and login page** page, select one of the following options:
 
@@ -139,13 +139,13 @@ When you're finished configuring filters, click **Apply**, **Cancel**, or ![Clea
 If you select a payload from the list by clicking anywhere in the row other than the check box next to the name, details about the payload are shown in a flyout:
 
 - The **Overview** tab (named **Payload** in **Credential Harvest** and **Link in Attachment** payloads) contains details about the payload, include a preview.
-- The **Login page** tab is available only for **Credential Harvest** or **Link in Attachment** payloads and is described in the [Select a login page](#select-a-login-page) subsection.
+- The **Login page** tab is available only for **Credential Harvest** or **Link in Attachment** payloads and is described in the [Select login pages](#select-login-pages) subsection.
 - The **Attachment** tab is available only for **Malware Attachment**, **Link in Attachment**, and **Oauth Consent Grant** payloads. This tab contains details about the attachment, include a preview.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
-### Select a login page
+### Select login pages
 
 > [!NOTE]
 > The **Login page** tab is available only in the details flyout of **Credential Harvest** or **Link in Attachment** payloads.
@@ -207,7 +207,7 @@ When you're finished on  the **Configure OAuth payload** page, click **Next**.
 
 ## Target users
 
-On the **Target users** page, select who will receive the simulation. Use the following options to select users:
+On the **Target users** page, select who receives the simulation. Use the following options to select users:
 
 - **Include all users in your organization**: The unmodifiable list of users is show in groups of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** icon on the page to find specific users.
 
@@ -227,7 +227,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       > [!NOTE]
       > Clicking the **Add filters** button clears and replaces any results the **User list** section with the **Filter users by categories**.
 
-      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the circle next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
       Click the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
 
@@ -236,7 +236,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       - **Suggested user groups**: Select from the following values:
         - **All suggested user groups**
         - **Users not targeted by a simulation in the last three months**
-        - **Repeat offenders**
+        - **Repeat offenders**: For more information, see [Configure the repeat offender threshold](attack-simulation-training-settings.md#configure-the-repeat-offender-threshold).
 
       - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md). Use the following options:
         - **Search**: In ![Search by user tags icon.](../../media/m365-cc-sc-search-icon.png) **Search by user tags**, you can type part of the user tag and then press Enter. You can select some or all of the results.
@@ -274,7 +274,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       - **Filters** section: Show how many filter values you used and the names of the filter values. If it's available, click the **See all** link to see all filter values
       - **User list** section: Shows the users or groups that match your category searches. The number of results appears in the **Selected (0/x) users** label.
 
-      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the circle next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
       Click the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
 
@@ -680,7 +680,7 @@ The **Randomize** option on the [Simulation schedule](#simulation-schedule) page
 
 ### How does the Randomize option on the Select a payload and login page work?
 
-The **Randomize** option on the [Select a payload and login page](#select-a-payload-and-login-page) works as follows:
+The **Randomize** option on the [Select payloads and login pages](#select-payloads-and-login-pages) page works as follows:
 
 For every run, a social engineering technique from the list of selected techniques is chosen, and then a random payload for that technique will be chosen from both **Global payloads** (built-in) and **Tenant payloads** (custom). This behavior helps to ensure that the selected payload wasn't part of any previous run for this particular automation.
 

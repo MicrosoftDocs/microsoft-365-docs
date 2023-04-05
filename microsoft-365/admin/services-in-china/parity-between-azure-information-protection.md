@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: skjerland
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 03/30/2023
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -33,7 +33,7 @@ This article covers the differences between Azure Information Protection (AIP) s
 
 While our goal is to deliver all commercial features and functionality to customers in China with our AIP for Office 365 operated by 21Vianet offer, there's some missing functionality that we'd like to highlight.
 
-The following list includes the existing gaps between AIP for Office 365 operated by 21Vianet and our commercial offerings as of January 2021:
+Following is a list of gaps between AIP for Office 365 operated by 21Vianet and our commercial offerings:
 
 - Active Directory Rights Management Services (AD RMS) encryption is supported only in Microsoft 365 Apps for enterprise (build 11731.10000 or later). Office Professional Plus doesn't support AD RMS.
 
