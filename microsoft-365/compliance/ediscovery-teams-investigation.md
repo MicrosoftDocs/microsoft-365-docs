@@ -13,7 +13,7 @@ ms.collection:
 - M365-collaboration
 - ediscovery
 ms.reviewer: anwara
-ms.date: 04/04/2023
+ms.date: 04/06/2023
 search.appverid: MET150
 f1.keywords:
   - NOCSH
@@ -32,11 +32,13 @@ All Microsoft Teams 1:1 or group chats are journaled through to the respective u
 
 eDiscovery of messages and files in [private channels](/microsoftteams/private-channels.md) works differently than in standard channels. To learn more, see [eDiscovery of private channels](#ediscovery-of-private-and-shared-channels).
 
-Not all Teams content is eDiscoverable. The following table shows the content types that you can search for using Microsoft eDiscovery tools:
+Recorded Teams meetings are stored in the OneDrive for Business account of the user recording the meeting.
+
+Not all Teams content is eDiscoverable. The following table shows the Teams content types that you can search for using Microsoft eDiscovery tools:
 
 |**Content type**|**Notes**|
 |:---------------|:--------|
-|Audio recordings||
+|Audio recordings|Audio calls between Teams user and external contacts|
 |Card content|See [Search for card content](#search-for-card-content) for more information.|
 |Chat links||
 |Chat messages|This includes content in standard Teams channels, 1:1 chats, 1:N group chats, chats with yourself, and chats with guests.|
@@ -47,6 +49,7 @@ Not all Teams content is eDiscoverable. The following table shows the content ty
 |Loop components|Content in a loop component is saved in a .fluid file that's stored in the OneDrive for Business account of the user who sends the loop component. That means you have to include OneDrive as a data source when searching for content in loop components.|
 |Meeting IM conversations||
 |Meeting metadata<sup>1</sup>||
+|Meeting recordings and transcripts|Transcripts of the meeting audio are extracted and provided as a separate file. Maximum supported recorded meeting .mp4 file size is 350MB. If the recorded meeting file size is above 350 MB, a processing error occurs and the file is available for download.|
 |Name of channel||
 |Quotes|Quoted content is searchable. However, search results don't indicate that the content was quoted.|
 |Reactions (such as likes, hearts, and other reactions)|Reactions are supported for all commercial customers after June 1, 2022. Reactions before this date aren't available for eDiscovery. Expanded reactions are now supported. To understand reaction history, the content must be on legal hold.|
