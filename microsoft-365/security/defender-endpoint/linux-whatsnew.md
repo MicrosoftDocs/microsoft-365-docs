@@ -3,11 +3,9 @@ title: What's new in Microsoft Defender for Endpoint on Linux
 description: List of major changes for Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
 ms.service: microsoft-365-security
-ms.mktglfcycl: security
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
+ms.reviewer: kumasumit
 ms.localizationpriority: medium
 ms.date: 04/05/2023
 manager: dansimp
