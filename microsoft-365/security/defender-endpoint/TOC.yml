@@ -594,7 +594,7 @@
         - name: Manage tamper protection on an individual device
           href: manage-tamper-protection-individual-device.md
         - name: FAQs on tamper protection
-          href: faqs-tamper-protection.yml
+          href: faqs-on-tamper-protection.yml
       - name: Turn on block at first sight
         href: configure-block-at-first-sight-microsoft-defender-antivirus.md
       - name: Configure the cloud block timeout period
