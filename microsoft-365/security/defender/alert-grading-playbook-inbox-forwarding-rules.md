@@ -1,7 +1,7 @@
 ---
-title: Alert grading for suspicious inbox forwarding rules
-description: Alert grading for suspicious inbox forwarding rules to review the alerts and take recommended actions to remediate the attack and protect your network.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
+title: Alert classification for suspicious inbox forwarding rules
+description: Alert classification for suspicious inbox forwarding rules to review the alerts and take recommended actions to remediate the attack and protect your network.
+keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, alert classification, alert grading, classify alert
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
+ms.author: diannegali
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
@@ -22,10 +22,10 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - met150
-ms.date: 01/21/2022
+ms.date: 04/05/2023
 ---
 
-# Alert grading for suspicious inbox forwarding rules
+# Alert classification for suspicious inbox forwarding rules
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,9 +34,9 @@ ms.date: 01/21/2022
 
 Threat actors can use compromised user accounts for several malicious purposes including reading emails in a user's inbox, creating inbox rules to forward emails to external accounts, sending phishing mails, among others. Malicious inbox rules are widely common during business email compromise (BEC) and phishing campaigns, and it important to monitor them consistently.
 
-This playbook helps you investigate alerts for suspicious inbox forwarding rules and quickly grade them as either a True Positive (TP) or a False Positive (TP). You can then take recommended actions for the TP alerts to remediate the attack.
+This playbook helps you investigate alerts for suspicious inbox forwarding rules and quickly grade them as either a true positive (TP) or a false positive (TP). You can then take recommended actions for the TP alerts to remediate the attack.
 
-For an overview of alert grading for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
+For an overview of alert classification for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
 
 The results of using this playbook are:
 
@@ -190,7 +190,7 @@ CloudAppEvents
 
 ## See also
 
-- [Overview of alert grading](alert-grading-playbooks.md)
+- [Overview of alert classification](alert-grading-playbooks.md)
 - [Suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Investigate alerts](investigate-alerts.md)
