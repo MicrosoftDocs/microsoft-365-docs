@@ -91,8 +91,6 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 1. A Full Disk Access configuration profile should have been previously created and deployed for MDE.  (For details, see [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access)). Endpoint DLP requires an additional Full Disk Access permission for a new application: `com.microsoft.dlp.daemon`. 
     1. Update the existing Full Disk Access configuration profile with the fulldisk.mobileconfig file.
-
-1. Find the existing **MDE preferences** configuration profile. (See [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences#intune-full-profile)).
     1. Add a new key to the profile using these values:
 
 ```xml

@@ -3,13 +3,11 @@ title: What's new in Microsoft Defender for Endpoint on Linux
 description: List of major changes for Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
 ms.service: microsoft-365-security
-ms.mktglfcycl: security
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
+ms.reviewer: kumasumit
 ms.localizationpriority: medium
-ms.date: 11/03/2022
+ms.date: 04/05/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -43,6 +41,34 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Signature version: **1.379.1299.0**<br/>
 **What's new**
 - This new release is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customers. There is no change for other customers and upgrade is optional. 
+	
+**Known issues**
+
+- With mdatp version 101.98.30 you might see a health false issue in some of the cases, because SELinux rules are not defined for certain scenarios. The health warning could look something like this:
+
+*found SELinux denials within last one day. If the MDATP is recently installed, please clear the existing audit logs or wait for a day for this issue to auto-resolve. Please use command: \"sudo ausearch -i -c 'mdatp_audisp_pl' | grep \"type=AVC\" | grep \" denied\" to find details*
+
+The issue could be mitigated by running the following commands.
+
+```
+sudo ausearch -c 'mdatp_audisp_pl' --raw | sudo audit2allow -M my-mdatpaudisppl_v1
+sudo semodule -i my-mdatpaudisppl_v1.pp
+```
+
+Here my-mdatpaudisppl_v1 represents the policy module name. After running the commands, either wait for 24 hours or clear/archive the audit logs. The audit logs could be archived by running the following command
+
+```
+sudo service auditd stop
+sudo systemctl stop mdatp
+cd /var/log/audit
+sudo gzip audit.*
+sudo service auditd start
+sudo systemctl start mdatp
+mdatp health
+```
+
+In case the issue reappears with some different denials. We need to run the mitigation again with a different module name(eg my-mdatpaudisppl_v2).
+
 </details>
 	
 <details>
@@ -342,7 +368,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 - On RHEL 6, product can now be installed on devices running Unbreakable Enterprise Kernel (UEK)
 - Fixed an issue where the process name was sometimes incorrectly displayed as `unknown` when running `mdatp diagnostic real-time-protection-statistics`
 - Fixed a bug where the product sometimes was incorrectly detecting files inside the quarantine folder
-- Fixed an issue where the `mdatp` command-line tool was not working when `/opt` was mounted as a soft-link
+- Fixed an issue where the `mdatp` command-line tool wasn't working when `/opt` was mounted as a soft-link
 - Performance improvements & bug fixes
 </br>
 
@@ -481,7 +507,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
   <p><b>What's new</b></p>
 
-  - Starting with this version, we are bringing Microsoft Defender for Endpoint support to the following distros:
+  - Starting with this version, we're bringing Microsoft Defender for Endpoint support to the following distros:
 
     - RHEL6.7-6.10 and CentOS6.7-6.10 versions.
     - Amazon Linux 2
