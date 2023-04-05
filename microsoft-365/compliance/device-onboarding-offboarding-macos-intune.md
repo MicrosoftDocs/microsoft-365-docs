@@ -66,30 +66,28 @@ MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/
 
 1. In the **Microsoft Purview compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
  
-1. For **Select operating system to start onboarding process** choose **macOS**.
+2. For **Select operating system to start onboarding process** choose **macOS**.
  
-1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**.
+3. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**.
  
-1. Choose **Download onboarding package**.
+4. Choose **Download onboarding package**.
 
-1. Extract the zip file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
+:::image type="content" source="media/device-macos-dnld-onboarding-package.png" alt-text="Screenshot of the steps in this procedure.":::
 
-<!--|accessibility |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
-full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
-|Network filer| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)]
-|System extensions |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
-|MDE preference     |[com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)|
-|MAU preference|[com.microsoft.autoupdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.mobileconfig)|
-|Installation package     |downloaded from the compliance portal **Installation package**, file name *\*wdav.pkg*\* |
+
+5. Extract the zip file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
 
 > [!TIP]
-> You can download the *.mobileconfig* files individually or in [single combined file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) that contains:
+> We recommend downloading the *.mobileconfig* files in a [single bundle](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig). This bundle contains the following files:
+
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 > - netfilter.mobileconfig
 > - system extensions
 >
->If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.-->
+> If any of these files is updated, you need to download the updated bundle.<br>
+
+> ALternatively, you can download the files individually. If a file is later updated, you need to re-download specific, updated, file individually.
 
 ### Deploy the mobileconfig and onboarding packages
 
