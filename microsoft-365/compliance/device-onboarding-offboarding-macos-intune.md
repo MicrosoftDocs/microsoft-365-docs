@@ -71,7 +71,7 @@ MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/
  
 4. Choose **Download onboarding package**.
 
-![Screenshot of the steps to get the device onboarding package.](media/device-macos-dnld-onboarding-package.png)
+:::image type="content" alt-text="Screenshot of the steps to get the device onboarding package." source="../media/device-macos-dnld-onboarding-package.png":::
 
 
 5. Extract the zip file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
