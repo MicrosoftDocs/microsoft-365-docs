@@ -27,12 +27,12 @@ If you are like [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03
 :::image type="content" source="../media/security/security-support-remote-work.png" alt-text="The top tasks to perform to support working from home" lightbox="../media/security/security-support-remote-work.png":::
 
 
-If you are a small or medium-size organization using one of Microsoft's business plans, see these resources instead:
+If you're a small or medium-size organization using one of Microsoft's business plans, see these resources instead:
 
 - [Best practices for securing Microsoft 365 for business plans](../business-premium/secure-your-business-data.md)
 - [Microsoft 365 for Campaigns](../business-premium/index.md) (includes a recommended security configuration for Microsoft 365 Business)
 
-For customers using our enterprise plans, Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. If, instead of purchasing a Microsoft 365 enterprise plan, you are combining subscriptions, note the following:
+For customers using our enterprise plans, Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. If, instead of purchasing a Microsoft 365 enterprise plan, you're combining subscriptions, note the following:
 
 - Microsoft 365 E3 includes Enterprise Mobility + Security (EMS) E3 and Azure AD P1
 - Microsoft 365 E5 includes EMS E5 and Azure AD P2
@@ -52,7 +52,7 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 |11|[Get started with Microsoft Defender for Cloud Apps](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12|[Monitor for threats and take action](#12-monitor-for-threats-and-take-action)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Before you begin, check your [Microsoft 365 Secure Score](./defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
+Before you begin, check your [Microsoft 365 Secure Score](./defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You're given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
 
 :::image type="content" source="../media/secure-score.png" alt-text="The Microsoft Secure Score screen in the Microsoft 365 Defender portal" lightbox="../media/secure-score.png":::
 
@@ -62,7 +62,7 @@ The single best thing you can do to improve security for employees working from 
 
 Normally, Microsoft recommends you give users 14 days to register their device for Multifactor Authentication before requiring MFA. However, if your workforce is suddenly working from home, go ahead and require MFA as a security priority and be prepared to help users who need it.
 
-Applying these policies will take only a few minutes, but be prepared to support your users over the next several days.
+Applying these policies takes only a few minutes, but be prepared to support your users over the next several days.
 
 |Plan|Recommendation|
 |---|---|
@@ -99,7 +99,7 @@ Your Global Administrator can configure these protections:
 - [Configure global settings for Safe Links](office-365-security/safe-links-policies-global-settings-configure.md)
 - [Set up Safe Attachments policies](office-365-security/safe-attachments-policies-configure.md)
 
-You'll need to work with your Exchange Online administrator and SharePoint Online administrator to configure Defender for Office 365 for these workloads:
+You need to work with your Exchange Online administrator and SharePoint Online administrator to configure Defender for Office 365 for these workloads:
 
 - [Microsoft Defender for Endpoint for SharePoint, OneDrive, and Microsoft Teams](office-365-security/safe-attachments-for-spo-odfb-teams-about.md)
 
@@ -117,7 +117,7 @@ Now that you have Microsoft Defender for Office 365 and Microsoft Defender for I
 
 :::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="The Microsoft 365 Defender dashboard" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
 
-After you have configured one or more of your Defender for Office 365 services, turn on MTP. New features are added continually to MTP; consider opting in to receive preview features.
+After you've configured one or more of your Defender for Office 365 services, turn on MTP. New features are added continually to MTP; consider opting in to receive preview features.
 
 - [Learn more about MTP](./defender/microsoft-365-defender.md)
 - [Turn on MTP](./defender/m365d-enable.md)
@@ -175,7 +175,7 @@ Only one organization can manage a device, so be sure to exclude guest accounts 
 
 ## 9: Optimize your network for cloud connectivity
 
-If you are rapidly enabling the bulk of your employees to work from home, this sudden switch of connectivity patterns can have a significant impact on the corporate network infrastructure. Many networks were scaled and designed before cloud services were adopted. In many cases, networks are tolerant of remote workers, but were not designed to be used remotely by all users simultaneously.
+If you're rapidly enabling the bulk of your employees to work from home, this sudden switch of connectivity patterns can have a significant impact on the corporate network infrastructure. Many networks were scaled and designed before cloud services were adopted. In many cases, networks are tolerant of remote workers, but weren't designed to be used remotely by all users simultaneously.
 
 Network elements such as VPN concentrators, central network egress equipment (such as proxies and data loss prevention devices), central internet bandwidth, backhaul MPLS circuits, NAT capability and so on are suddenly put under enormous strain due to the load of the entire business using them. The end result is poor performance and productivity coupled with a poor user experience for users who are adapting to working from home.
 
@@ -193,7 +193,7 @@ Recent blog articles on this topic:
 
 ## 10: Train users
 
-Training users can save your users and security operations team a lot of time and frustration. Savvy users are less likely to open attachments or click links in questionable email messages, and they are more likely to avoid suspicious websites.
+Training users can save your users and security operations team a lot of time and frustration. Savvy users are less likely to open attachments or click links in questionable email messages, and they're more likely to avoid suspicious websites.
 
 The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) provides excellent guidance on establishing a strong culture of security awareness within your organization, including training users to identify phishing attacks.
 
@@ -238,6 +238,6 @@ Microsoft 365 includes several ways to monitor status and take appropriate actio
 
 ## Next steps
 
-Congratulations! You have quickly implemented some of the most important security protections and your organization is much more secure. Now you're ready to go even further with threat protection capabilities (including Microsoft Defender for Endpoint), data classification and protection capabilities, and securing administrative accounts. For a deeper, methodical set of security recommendations for Microsoft 365, see [Microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md).
+Congratulations! You've quickly implemented some of the most important security protections and your organization is much more secure. Now you're ready to go even further with threat protection capabilities (including Microsoft Defender for Endpoint), data classification and protection capabilities, and securing administrative accounts. For a deeper, methodical set of security recommendations for Microsoft 365, see [Microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md).
 
 Also visit Microsoft's new Defender for Cloud in [Security documentation](/security).
