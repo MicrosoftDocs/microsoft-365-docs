@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/30/2023
+ms.date: 04/03/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -39,6 +39,13 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## April 2023
+
+### Sensitivity labels
+
+- **General availability (GA)**: [Default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md)
+- **General availability (GA)**: Outlook for Mac [displays label colors](sensitivity-labels-office-apps.md#label-colors)
+
 ## March 2023
 
 ### Audit
@@ -60,6 +67,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **General availability (GA)**: Rolling out in general availability, [Microsoft Graph Records Management APIs](/graph/api/resources/security-recordsmanagement-overview) to support the management of retention labels and event-based retention.
 - **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview are now gradually rolling out support for URL text links.
+- **Improvements for Teams retention policies**: Now rolling out, support for existing call data records as well as newly created call data records, and support for the control message events that name and rename a chat.
 - **Improvements that support Power Automate flows**: Now rolling out to support the scenario of [customizing what happens at the end of the retention period](retention-label-flow.md), the existing Power Automate compliance actions have been renamed to more accurately describe their purpose. **Apply label on the item** is renamed **Relabel an item at the end of retention**, and **Deletes the item** is renamed **Deletes an item at the end of retention**. Additionally:
     - New compliance action to [improve the resilience of your flow](retention-label-flow.md#add-resilience-to-your-flow).
     - The trigger action **When the retention period expires** is renamed **When an item reaches the end of its retention period**.

@@ -123,6 +123,8 @@
              href: add-users/assign-admin-roles.md
            - name: Unassign licenses from users
              href: manage/remove-licenses-from-users.md
+           - name: Turn pronouns on or off
+             href: add-users/turn-pronouns-on-or-off.md
            - name: Guest users
              href: add-users/about-guest-users.md
            - name: Manage guest access in Microsoft 365 group

@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn how to create and manage landing pages for simulated phishing attacks in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/29/2023
+ms.date: 4/3/2023
 ---
 
 # Landing pages in Attack simulation training
@@ -22,6 +22,8 @@ ms.date: 3/29/2023
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, landing pages are the web pages that users are taken to if they open the payload in the simulation.
+
+For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
 To see the available landing pages, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
@@ -33,6 +35,7 @@ To see the available landing pages, open the Microsoft 365 Defender portal at <h
 The following information is shown for each landing page<sup>\*</sup>:
 
 - **Name**
+- **⋮** (**Actions** control): Take action on the landing page. The available actions depend on the **Status** value of the landing page as described in the procedure sections.
 - **Language**
 - **Default language**
 - **Status**: **Ready** or **Draft**.
@@ -41,9 +44,17 @@ The following information is shown for each landing page<sup>\*</sup>:
 - **Created time**
 - **Modified by**
 
-<sup>\*</sup> To see all of the columns, you might need to narrow some columns or zoom out in your browser.
+Click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, all available columns are selected.
 
-Click a column header to sort by that column. To remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**.
+> [!TIP]
+> The **⋮** (**Actions** control) is associated with the **Name** column. If you remove that column from view, the **⋮** control goes away.
+
+<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
+
+- Horizontally scroll in your web browser.
+- Narrow the width of appropriate columns.
+- Remove columns from the view.
+- Zoom out in your web browser.
 
 To find a landing page in the list, type part of the landing page name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
 
@@ -51,7 +62,7 @@ Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filt
 
 When you select a landing page from the list by clicking anywhere in the row other than the check box next to the name, a details flyout appears with the following information:
 
-- **Preview** tab: View the landing page as users will see it. Use the **Select language** drop down list to see the landing page in different languages.
+- **Preview** tab: View the landing page as users see it. Use the **Select language** drop down list to see the landing page in different languages.
 - **Details** tab: View details about the landing page:
   - **Description**
   - **Status**: **Ready** or **Draft**.
@@ -142,7 +153,7 @@ You can't modify built-in landing pages on the **Global landing pages** tab. You
 To modify an existing custom landing page on the **Tenant landing pages** tab, do one of the following steps:
 
 - Select the landing page from the list by clicking the check box next to the name. Click the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
-- Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the landing page in the list, and then select ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
+- Click **⋮** (**Actions**) next to the **Name** value of the landing page, and then select ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
 - Select the landing page from the list by clicking anywhere in the row other than the check box. In the details flyout that opens, click **Edit landing page** at the bottom of the flyout.
 
 The landing page wizard opens with the settings and values of the selected landing page. The steps are the same as described in the [Create landing pages](#create-landing-pages) section.
@@ -152,11 +163,11 @@ The landing page wizard opens with the settings and values of the selected landi
 To copy an existing landing page on the **Tenant landing pages** or **Global landing pages** tabs, do one of the following steps:
 
 - Select the landing page from the list by clicking the check box, and then click the ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy** icon that appears.
-- Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the landing page in the list, and then select ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy**.
+- Click **⋮** (**Actions**) next to the **Name** value of the landing page, and then select ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy**.
 
 When you copy a custom landing page on the **Tenant landing pages** tab, a copy of the landing page named "\<OriginalName\> - Copy" is added to the list.
 
-When you copy a built-in landing page on the **Global landing pages** tab, a **Create copy** dialog appears. The dialog confirms that a copy of the landing page has been created, and is available on the **Tenant landing pages** tab. If you click **Go to Tenant landing page** you're taken to the **Tenant landing pages** tab, where the copied built-in landing page is named "\<OriginalName\> - Copy" is available in the list. If you click **Stay here** in the dialog, you return to the **Global landing pages** tab.
+When you copy a built-in landing page on the **Global landing pages** tab, a **Create copy** dialog appears. The dialog confirms that a copy of the landing page has been created, and is available on the **Tenant landing pages** tab. If you click **Go to Tenant landing page** you're taken to the **Tenant landing pages** tab, where the copied built-in landing page is named "\<OriginalName\> - Copy" is available. If you click **Stay here** in the dialog, you return to the **Global landing pages** tab.
 
 After the copy is created, you can modify it as [previously described](#modify-landing-pages).
 
@@ -170,7 +181,7 @@ You can't remove built-in landing pages from the **Global landing pages** tab. Y
 To remove an existing custom landing page from the **Tenant landing pages** tab, do one of the following steps:
 
 - Select the landing page from the list by clicking the check box next to the name, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears.
-- Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the landing page in the list, and then select ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+- Click **⋮** (**Actions**) next to the **Name** value of the landing page, and then select ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
 In the confirmation dialog tht opens, click **Delete**.
 
