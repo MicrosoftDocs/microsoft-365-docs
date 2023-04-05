@@ -23,7 +23,7 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 
 > [!IMPORTANT]
-> Use this procedure if you ***do not*** have Microsoft Defender for Endpoint (MDE) deployed to your macOS devices
+> Use this procedure if you ***do not*** have Microsoft Defender for Endpoint (MDE) deployed to your macOS devices.
 
 **Applies to:**
 
@@ -36,7 +36,7 @@ You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 
 - Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and are enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Make sure you have access to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home).
-- This supports three most recent major releases of macOS.
+- The three most recent major releases of macOS are supported.
 - Create the user groups that you are going to assign the configuration updates to.
 - OPTIONAL: Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
 
@@ -48,13 +48,13 @@ Onboarding a macOS device into Compliance solutions is a multi-phase process.
 1. [Get the device onboarding package](#get-the-device-onboarding-package).
 1. [Deploy the mobileconfig and onboarding packages](#deploy-the-mobileconfig-and-onboarding-packages).
 1. [Publish the application](#publish-application).
-<!--1. [Enable system extension](#enable-system-extension)-->
+
 
 ### Create system configuration profiles
 
 #### Prerequisites
 
-You'll need these files for this procedure:
+Download the following files these files to complete this phase of the procedure:
 
 |File needed for |Source |
 |---------|---------|
@@ -63,7 +63,7 @@ MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/
 
 ### Get the device onboarding package
 
-:::image type="content" source="../media/device-macos-dnld-onboarding-package-inline.png" alt-text="Screenshot of the steps to get the device onboarding package." lightbox="../media/device-macos-dnld-onboarding-package-expanded.png" :::
+:::image type="content" source="../media/device-macos-dnld-onboarding-package-inline.png" alt-text="Screenshot of the steps to get the device onboarding package." lightbox="../media/device-macos-dnld-onboarding-package-expanded.png":::
 
 1. In the **Microsoft Purview compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
  
@@ -72,7 +72,6 @@ MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/
 3. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**.
  
 4. Choose **Download onboarding package**.
-
 
 5. Extract the zip file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
 
@@ -90,24 +89,25 @@ MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/
 
 ### Deploy the mobileconfig and onboarding packages
 
-1. Open the **Microsoft Intune admin center** > **Devices** > **Configuration profiles**.
+1. Open the **Microsoft Intune admin center** > **Devices** > **macOS** > **Configuration profiles**.
 
-1. Choose: **Create profile** 
+1. Choose: **Create profile**
 
 1. Choose:
-    1. **Platform = macOS**
     1. **Profile type = Templates**
     1. **Template name = Custom**
 
 1. Choose **Create**
 
-1. Choose a name for the profile, like *SystemMobileConfig* in this example. Choose **Next**.
+1. On the **Basics** tab, enter a name for the profile, like *SystemMobileConfig* in this example and then choose **Next**.
 
-1. Choose the **mdatp-nokext.mobileconfig** file that you copied and saved in step 1 as the configuration profile file.
+1. On the **Configuration profile** tab,
+    1. Enter a display name for the custom configuration profile.
+    1. Specify the **Deployment channel**.
+    1. Upload the **mdatp-nokext.mobileconfig** file that you previously downloaded.
+    1. Choose **Next**.
 
-1. Choose **Next**
-
-1. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
+1. On the **Assignments** tab, add the group(s) you want to deploy these configurations to and choose **Next**. For information about assignments in Microsoft Intune, see [Assign policies in Microsoft Intune](https://learn.microsoft.com/mem/intune/configuration/device-profile-assign) and [Exclude groups from a policy assignment](https://learn.microsoft.com/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-policy-assignment).
 
 1. Review your settings and choose **Create** to deploy the configuration.
 
