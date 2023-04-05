@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 11/7/2017
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -36,7 +36,7 @@ You can create an activity alert that will send you an email notification when u
 
 ## Confirm roles and configure audit logging
 
-- You must be assigned the Organization Configuration role in the Microsoft Purview compliance portal to manage activity alerts. By default, this role is assigned to the Compliance Administrator and Organization Management role groups. For more information about adding members to role groups, see [Add users to a compliance role group](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group).
+- You must be assigned the Organization Configuration role in the Microsoft Purview compliance portal to manage activity alerts. By default, this role is assigned to the Compliance Administrator and Organization Management role groups. For more information about adding members to role groups, see [Add users or groups to a Microsoft Purview built-in role group](microsoft-365-compliance-center-permissions.md#add-users-or-groups-to-a-microsoft-purview-built-in-role-group).
 
 - You (or another admin) must first turn on audit logging for your organization before you can start using activity alerts. To do this, just click **Start recording user and admin activity** on the **Activity alerts** page. (If you don't see this link, auditing has already been turned on for your organization.) You can also turn on auditing on the **Audit log search** page in the compliance portal (go to **Audit**). You only have to do this once for your organization.
 

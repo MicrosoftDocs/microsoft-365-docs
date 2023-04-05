@@ -18,9 +18,10 @@ ms.topic: overview
 ms.collection: 
 - m365-security
 - tier2
-ms.date:
 search.appverid: met150
+ms.date: 02/17/2023
 ---
+
 <!--v-jweston/jweston-1 is to resume authorship appx. April/May 2023.-->
 
 # Network protection for Linux
@@ -90,41 +91,6 @@ To onboard the device, you must download the Python onboarding package for Linux
 
 ```bash
 sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
-```
-
-### Manually enable network protection
-
-1. Turn on the "networkProtection" feature, edit the "/etc/opt/microsoft/mdatp/wdavcfg" and set **networkProtection** to **enabled**.
-2. Restart the mdatp service by running the following command:
-
-```bash
-sudo systemctl restart mdatp
-```
-
-> :::image type="content" source="images/network-protection-linux-mdatp-restart.png" alt-text="Shows Linux mdatp restart." lightbox="images/network-protection-linux-mdatp-restart.png":::
-
-### Configure the enforcement level
-
-Network protection is disabled by default, but it can be configured to run in one of the following modes (also called enforcement levels):
-
-- **Audit**: useful to make sure it doesn't affect line-of-business apps, or get an idea of how often blocks occur
-- **Block**: network protection prevents connection to malicious websites
-- **Disabled**: all components associated with Network Protection are disabled
-
-```bash
-sudo mdatp config network-protection enforcement-level --value block
-```
-
-or
-
-```bash
-sudo mdatp config network-protection enforcement-level --value audit
-```
-
-To confirm Network Protection has successfully started, run the following command from the Terminal; verify that it prints "started":
-
-```bash
-mdatp health --field network_protection_status
 ```
 
 ### Validation
@@ -237,13 +203,13 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 For more information about reporting, see [Web content filtering](web-content-filtering.md).
 
-### Microsoft Defender for Cloud Applications
+### Microsoft Defender for Cloud Apps
 
-The Microsoft Defender for Cloud Applications / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft 365 Defender for Endpoint:
+The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft 365 Defender for Endpoint:
 
 > :::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection mcas monitored apps." lightbox="images/network-protection-macos-mcas-monitored-apps.png":::
 
-Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender for Endpoint Security Center under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article).
+Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article).
 
 > :::image type="content" source="images/network-protection-macos-mcas-cloud-app-security.png" alt-text="Shows network protection mcas cloud app security." lightbox="images/network-protection-macos-mcas-cloud-app-security.png":::
 

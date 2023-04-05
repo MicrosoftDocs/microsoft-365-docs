@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: v-mathavale
 author: v-mathavale
 ms.localizationpriority: medium
-ms.date: 09/20/2022
+ms.date: 01/25/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -31,15 +31,35 @@ ms.subservice: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink).
 
 All updates contain:
 - Performance improvements
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804))
 
-<details>
-  <summary>Aug-2022 (Release version: 10.8210.*)</summary>
+
+## Jan/Feb-2023 (Release version: 10.8295.22621.1019)
+
+|OS  |KB  |Release version  |
+|---------|---------|---------|
+|Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8295.22621.1019|
+  
+**What's new**
+
+- Improved command and control security, quality fixes
+
+## Dec-2022 (Release version: 10.8210.22621.1016)
+
+|OS  |KB  |Release version  |
+|---------|---------|---------|
+|Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8210.22621.1016|
+  
+**What's new**
+
+- Bug fixes and stability improvements
+
+## Aug-2022 (Release version: 10.8210.*)
 
 |OS  |KB  |Release version  |
 |---------|---------|---------|
@@ -64,8 +84,6 @@ All updates contain:
  > [!NOTE] 
  > Update package KB5005292 is on a gradual rollout schedule through Windows Update. Towards the end of this schedule, the package will be published completely, including to the update catalog for manual download. For the current release, this will be in the second half of October. If you want to test the package sooner, you can use [gradual rollout controls for platform updates](configure-updates.md) to select the Preview channel.
   
-<br/>
-</details>
 
 See also: 
 - [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md)

@@ -24,10 +24,12 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to cancel your Dynamics 365, Intune, Power Platform, and Microsoft 365 for business trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 11/28/2022
+ms.date: 01/10/2023
 ---
 
 # Cancel your Microsoft business subscription
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 This article only applies to canceling **Dynamics 365**, **Intune**, **Power Platform**, **Windows 365**, and **Microsoft 365 for business** subscriptions. If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
 
@@ -119,6 +121,9 @@ If you're unable to cancel your subscription, [contact support](../../admin/get-
 
 Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For information about what you can expect when you cancel a paid Microsoft 365 for business subscription, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
 
+> [!NOTE]
+> If you're a partner who's an admin on behalf of (AOBO) a customer, and you've canceled a subscription, it can take up to 90 days for the admin center to reflect the status change.
+
 > [!WARNING]
 > If you explicitly delete a subscription, it skips the **Expired** and **Disabled** states and the SharePoint Online data and content, including OneDrive content, is deleted immediately.
 
@@ -131,9 +136,9 @@ When the cancellation becomes effective, your users lose access to their data. B
 
 ## Next steps
 
-### Uninstall Office (optional)
+### Uninstall Microsoft 365 (optional)
 
-If you canceled your subscription, and didn't [move users to a different subscription](move-users-different-subscription.md) that includes Microsoft 365, Microsoft 365 runs in reduced functionality mode. When this happens, users can only read and print documents, and Microsoft 365 applications display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). To avoid any confusion, have your users [uninstall Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8) from their machines.
+If you canceled your subscription, and didn't [move users to a different subscription](move-users-different-subscription.md) that includes Microsoft 365, Microsoft 365 runs in reduced functionality mode. When this happens, users can only read and print documents, and Microsoft 365 apps display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). To avoid any confusion, have your users [uninstall Microsoft 365](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8) from their computers.
 
 ### Close your account (optional)
 

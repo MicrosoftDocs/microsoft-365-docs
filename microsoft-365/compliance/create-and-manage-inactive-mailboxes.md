@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 09/12/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -59,7 +59,10 @@ The following table summarizes the process of making an inactive mailbox for dif
 
 ## View a list of inactive mailboxes
 
-To view a list of the inactive mailboxes in your organization:
+You can use the Microsoft Purview compliance portal to view a list of the inactive mailboxes in your organization.
+
+> [!NOTE]
+> The Microsoft Purview compliance portal is limited to displaying up to 5,000 inactive mailboxes. To view more than 5,000 inactive mailboxes, you must use Exchange Online PowerShell as described after the step instructions.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for a Global administrator or a Compliance administrator account in your organization.
 
@@ -78,13 +81,13 @@ If you have many inactive mailboxes, you might find it easier to search and sort
 Alternatively, you can run the following command in Exchange Online PowerShell to display the list of inactive mailboxes:
 
 ```powershell
- Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
+ Get-Mailbox -InactiveMailboxOnly -ResultSize Unlimited | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
 You can also run the following command to export the list of inactive mailboxes and other information to a CSV file. In this example, the CSV file is created in the current directory.
 
 ```powershell
-Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,DistinguishedName,ExchangeGuid,WhenSoftDeleted | Export-Csv InactiveMailboxes.csv -NoType
+Get-Mailbox -InactiveMailboxOnly -ResultSize Unlimited | Select Displayname,PrimarySMTPAddress,DistinguishedName,ExchangeGuid,WhenSoftDeleted | Export-Csv InactiveMailboxes.csv -NoTypeInformation
 ```
 
 > [!NOTE]
@@ -92,19 +95,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
   
 ## Search and export the contents of an inactive mailbox
 
-You can access the contents of the inactive mailbox by using the Content Search tool in the Microsoft Purview compliance portal. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
-  
-- [Content search](ediscovery-content-search.md)
-
-- [Export search results](export-search-results.md)
-
-Here are a few things to keep in mind when searching inactive mailboxes.
-  
-- If a content search includes a user mailbox and that mailbox is made inactive, the content search will continue to search the inactive mailbox when you rerun the search after it becomes inactive.
-
-- In some cases, a user may have an active mailbox and an inactive mailbox that have the same SMTP address. In this case, only the specific mailbox that you select as a location for a content search will be searched. In other words, if you add a user's mailbox to a search, you can't assume that both their active and inactive mailboxes will be searched; only the mailbox that you explicitly add to the search will be searched.
-
-- We strongly recommend that you avoid having an active mailbox and inactive mailbox with the same SMTP address. If you need to reuse the SMTP address that is currently assigned to an inactive mailbox, we recommend that you recover the inactive mailbox or restore the contents of an inactive mailbox to an active mailbox (or the archive of an active mailbox), and then delete the inactive mailbox.
+You can access the contents of the inactive mailbox by using the Content Search tool in the Microsoft Purview compliance portal. For more information, see the [Feature reference for Content search](ediscovery-content-search-reference.md#searching-inactive-mailboxes) article.
 
 ## Change the hold duration for an inactive mailbox
 
@@ -114,7 +105,7 @@ For step-by-step procedures, see [Change the hold duration for an inactive mailb
   
 ## Recover an inactive mailbox
 
-If a former employee returns to your organization, or if a new employee is hired to take on the job responsibilities of the departed employee, you can recover the contents of the inactive mailbox. 
+If a former employee returns to your organization, or if a new employee is hired to take on the job responsibilities of the former employee, you can recover the contents of the inactive mailbox. 
 
 When you recover an inactive mailbox, the mailbox is converted to a new mailbox, the contents and folder structure of the inactive mailbox are retained, and the mailbox is linked to a new user account. After it's recovered, the inactive mailbox no longer exists. 
 
@@ -130,7 +121,6 @@ For step-by-step procedures, see [Restore an inactive mailbox](restore-an-inacti
   
 ## Delete an inactive mailbox
 
-If you no longer need to retain the contents of an inactive mailbox, you can permanently delete the inactive mailbox by removing the hold applied to the inactive mailbox. 
-The mailbox will be retained for 183 days after you remove the hold or retention policy and be recoverable during that time. After 183 days, the mailbox will be marked for permanent deletion, and the mailbox will become non-recoverable. 
+If you no longer need to retain the contents of an inactive mailbox, you can permanently delete the inactive mailbox by removing the hold applied to the inactive mailbox.
 
-For step-by-step procedures for removing a hold or a retention policy to permanently delete an inactive mailbox, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md).
+For more details and step-by-step procedures, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md).

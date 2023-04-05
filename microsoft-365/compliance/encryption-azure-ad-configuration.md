@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 07/30/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -120,7 +120,3 @@ For addition configurations you might need to make, see [Restrict access to a te
 If you use [sensitivity labels](sensitivity-labels.md) to encrypt documents and emails, you might be interested in [Support for external users and labeled content](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content) to understand which label settings apply across tenants. For configuration guidance for the label encryption settings, see [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md).
 
 Interested to learn how and when the encryption service is accessed? See [Walkthrough of how Azure RMS works: First use, content protection, content consumption](/azure/information-protection/how-does-it-work#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption).
-
-
-
-

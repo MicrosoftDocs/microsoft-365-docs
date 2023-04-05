@@ -18,6 +18,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Create and manage roles for role-based access control
@@ -74,7 +75,7 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
 - **Security baselines**
   - **Threat and vulnerability management – Manage security baselines assessment profiles** - Create and manage profiles so you can assess if your devices comply to security industry baselines.
 
-    >[!Note]
+    > [!NOTE]
     > For the Defender Vulnerability Management public preview trial this permission is not required. Users with "Threat and vulnerability management - View data" permissions can manage security baselines. However, when the trial ends and a license is purchased, this permission is required.
 
 - **Alerts investigation** - Manage alerts, initiate automated investigations, run scans, collect investigation packages, manage device tags, and download only portable executable (PE) files

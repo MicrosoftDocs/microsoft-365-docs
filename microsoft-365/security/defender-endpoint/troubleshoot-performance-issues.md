@@ -46,6 +46,8 @@ You can also provide additional logs to your submission to Microsoft support by 
 - [Capture process logs using Process Monitor](#capture-process-logs-using-process-monitor)
 - [Capture performance logs using Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder)
 
+For performance-specific issues related to Microsoft Defender Antivirus, see: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+
 ## Check with vendor for antivirus exclusions
 
 If you can readily identify the software affecting system performance, go to the software vendor's knowledge base or support center. Search if they have recommendations about antivirus exclusions. If the vendor's website does not have them, you can open a support ticket with them and ask them to publish one.
@@ -314,3 +316,4 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
 
 - [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md)
 - [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
+- [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)

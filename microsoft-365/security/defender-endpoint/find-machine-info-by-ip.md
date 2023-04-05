@@ -19,6 +19,7 @@ ms.topic: conceptual
 ms.custom: api
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Find device information by internal IP API

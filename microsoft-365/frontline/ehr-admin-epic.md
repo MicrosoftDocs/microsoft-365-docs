@@ -1,8 +1,8 @@
 ---
 title: Virtual Appointments with Teams - Integration into Epic EHR
-author: LanaChin
-ms.author: v-lanachin
-manager: samanro
+author: samanro
+ms.author: samanro
+manager: pamgreen
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -27,7 +27,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ms.reviewer: ansantam 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Epic EHR system. 
-ms.date: 12/15/2022
+ms.date: 03/30/2023
 ---
 
 # Virtual Appointments with Teams - Integration into Epic EHR
@@ -66,7 +66,7 @@ Review the following information to get an understanding of the overall integrat
 
 You'll need to request access to the Teams app.
 
-1. Request to download the Teams app in the [Epic App Orchard marketplace](https://apporchard.epic.com/Gallery?id=16793). Doing this triggers a request from Epic to the Microsoft EHR connector team.
+1. Request to download the Teams app in the [Epic Connection Hub](https://appmarket.epic.com/). Doing this triggers a request from Epic to the Microsoft EHR connector team.
 1. After you make your request, send an email to [TeamsForHealthcare@service.microsoft.com](mailto:teamsforhealthcare@service.microsoft.com) with your organization name, tenant ID, and the email address of your Epic technical contact.
 1. The Microsoft EHR connector team will respond to your email with confirmation of enablement.
 
@@ -149,6 +149,10 @@ To enable SMS notifications, your Microsoft 365 admin completes the following st
     :::image type="content" source="media/ehr-connector-epic-phone-number.png" alt-text="Screenshot showing an example of the phone number that's generated." lightbox="media/ehr-connector-epic-phone-number.png":::
 
     Choose **Done**, and then select **Next**.
+
+1. Some telephone carriers now [require unverified toll numbers to be verified](/azure/communication-services/concepts/sms/sms-faq#sms-to-us-phone-numbers). This requirement became effective October 1, 2022. Some carriers are following this more strictly than others.
+
+You'll need to [register your generated phone number in this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR0NW3g8C-tRNlyVpwWkCiS1UOEFCVTRHSFMwRk9BVTg3MVdZQlVCNEI4SS4u). This will ensure none of your SMS messages will be blocked when sent to US phone numbers.
 
 1. To link the phone number to a FHIR base URL, under **Phone number** in the **SMS configuration** section, select the number. Do this for each FHIR base URL for which you want to enable SMS notifications.
 
@@ -266,6 +270,10 @@ Key features of the patient experience:
 
 > [!NOTE]
 > Epic, MyChart, Haiku, and Canto are trademarks of Epic Systems Corporation.
+
+## Troubleshoot Teams EHR connector setup and integration
+
+If you're experiencing issues when setting up the integration, see [Troubleshoot Teams EHR connector setup and configuration](ehr-connector-troubleshoot-setup-configuration.md) for guidance on how to resolve common setup and configuration issues.
 
 ## Get insight into Virtual Appointments usage
 

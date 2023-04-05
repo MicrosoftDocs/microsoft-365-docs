@@ -4,6 +4,7 @@ description: Learn about top design strategies for Microsoft Enterprise architec
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
+ms.date: 05/01/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -260,7 +261,7 @@ As stated earlier, many customers are looking to achieve a more granular delegat
 
     Note: data platform security and delegation (which Power BI is a component) is a complex area.
 
-- **MEM/Intune** - (/mem/intune/fundamentals/role-based-access-control)
+- **Intune** - (/mem/intune/fundamentals/role-based-access-control)
 - **Microsoft Defender for Endpoint** - (/windows/security/threat-protection/microsoft-defender-atp/user-roles)
 - **Microsoft 365 Defender** - (../security/defender/m365d-permissions.md)
 - **Microsoft Defender for Cloud Apps** - (/cloud-app-security/manage-admins)

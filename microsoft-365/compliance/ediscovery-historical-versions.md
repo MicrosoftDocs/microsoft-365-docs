@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -45,7 +45,7 @@ The next step is to turn on historical versions in eDiscovery (Premium). To turn
 > [!IMPORTANT]
 > After you turn on historical versions, you won't be able to turn it off during the public preview. You will be able to turn it off after historical versions is released for general availability.
 
-1. In the Microsoft Purview compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **eDiscovery (Premium) settings**.
+1. In the Microsoft Purview compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then select **eDiscovery (Premium) settings**.
 
    ![Select eDiscovery (Premium) settings](..\media\HistoricalVersions1.png)
 
@@ -55,7 +55,7 @@ The next step is to turn on historical versions in eDiscovery (Premium). To turn
 
    A warning is displayed that says you won't be able to turn off historical versions. As previously stated, you won't be able to turn off historical versions until the feature is released for general availability.
 
-3. Click **Yes** to turn on historical versions.
+3. Select **Yes** to turn on historical versions.
 
 ### Step 3: Activate SharePoint sites
 
@@ -64,17 +64,17 @@ After you turn on historical versions for your organization, the last step is to
 > [!NOTE]
 > There is a limit of 100 site activations per organization during the public preview of historical versions. An activation is counted against this limit whenever you enable or disable a site for historical versions. If you enable multiple sites, each site is counted as a single activation. The total number of activations is displayed on the **Historical versions** tab.
 
-1. On the **Historical versions** tab on the eDiscovery (Premium) **Settings** page, click **Enable** to activate sites for historical versions.
+1. On the **Historical versions** tab on the eDiscovery (Premium) **Settings** page, select **Enable** to activate sites for historical versions.
 
-   ![Click Enable to activate sites for historical versions](..\media\HistoricalVersions3.png)  
+   ![Select Enable to activate sites for historical versions](..\media\HistoricalVersions3.png)  
 
    A flyout out page is displayed that contains a list of all SharePoint sites in your organization.
 
-2. Select a site to activate, and then click **Enable** to activate it for historical versions. You can use the search box to search for a  specific site.
+2. Select a site to activate, and then select **Enable** to activate it for historical versions. You can use the search box to search for a  specific site.
 
    A warning is displayed that says document versions on the site will be indexed and this indexing process will take some time before the versions will be ready to be searched. The warning also states that you won't be able to disable historical versions for the selected site for 30 days.
 
-3. Click **Yes** to activate the site for historical versions.
+3. Select **Yes** to activate the site for historical versions.
 
    ![The activated site and the number of site activations are displayed](..\media\HistoricalVersions4.png)  
 
@@ -95,7 +95,6 @@ Historical versions are different and more efficient than "collecting all versio
 No. Once historical versions is enabled for a site, the performance for the site will the same as it was before the site was enabled. The crawling and indexing processes that are performed on the site after it's enabled will occur at a slower rate and be performed during off-peak hours. Enabling historical versions for a site will kick off a backfill process, which finds all the versions of documents on the site and then sends those versions to the index. Depending on the number of document versions for site, this backfill process might impact service health. We have mitigated this potential impact in the following ways:
 
 - We make the best effort to process these versions during off-peak hours.
-
 - We process document versions in our lowest priority queues, which allows most service resources to be delegated to user changes.
 
 **How long do I have to wait after a site is activated until all historical versions of documents on that site are all indexed and available for eDiscovery search?**

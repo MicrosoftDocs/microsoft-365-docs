@@ -8,10 +8,6 @@
       href: m365bp-secure-users.md
     - name: Trial user guide - Microsoft 365 Business Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
-    - name: Get Microsoft 365 Business Premium
-      href: get-microsoft-365-business-premium.md
-    - name: Get Microsoft 365 for Campaigns
-      href: get-microsoft-365-campaigns.md
     - name: Resources for partners
       href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Fortify your environment
@@ -20,15 +16,19 @@
     items: 
       - name: Overview
         href: m365bp-setup-overview.md
+      - name: Get Microsoft 365 Business Premium
+        href: get-microsoft-365-business-premium.md
       - name: Set up Microsoft 365 Business Premium
         href: m365bp-setup.md
+      - name: Get Microsoft 365 for Campaigns
+        href: get-microsoft-365-campaigns.md
       - name: Set up Microsoft 365 Business for Campaigns
         href: m365-campaigns-setup.md
-  - name: Bump up security protection
+  - name: Boost your security protection
     items: 
       - name: Overview
         href: m365bp-security-overview.md
-      - name: Turn on security defaults (MFA)
+      - name: Turn on MFA
         href: m365bp-conditional-access.md
       - name: Protect your admin accounts
         href: m365bp-protect-admin-accounts.md
@@ -72,7 +72,7 @@
     items:
       - name: Overview
         href: m365bp-protect-devices.md
-      - name: Upgrade to Windows 10 Pro (if needed)
+      - name: Upgrade to Windows 10 or 11 Pro (if needed)
         href: m365bp-upgrade-windows-10-pro.md    
       - name: Onboard enrolled devices and apply policies
         href: m365bp-onboard-devices-mdb.md
@@ -118,8 +118,8 @@
       href: m365bp-reset-devices-to-factory-settings.md
 - name: Reference
   items:
-    - name: Top 10 ways to secure a business
-      href: ../admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Top 10 ways to secure your business data
+      href: secure-your-business-data.md
     - name: Glossary of security terms
       href: m365bp-glossary.yml
     - name: Microsoft 365 Business Premium FAQ
@@ -129,7 +129,7 @@
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml
     - name: Microsoft Defender for Office 365
-      href: /microsoft-365/security/office-365-security/overview
+      href: /microsoft-365/security/office-365-security/defender-for-office-365
     - name: Microsoft 365 Lighthouse
       href: ../lighthouse/m365-lighthouse-overview.md
     - name: Threat protection by Microsoft Defender Antivirus

@@ -8,14 +8,15 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.localizationpriority: medium
-ms.date: 06/22/2021
+ms.date: 3/2/2023
 search.appverid: 
   - MOE150
   - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
+  - highpri
 description: Admins can learn about threat protection in Microsoft 365 and configure how to use it for your organization.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
@@ -90,7 +91,7 @@ For more information about the recommended settings for anti-malware, see [EOP a
 
 4. Back on the policy details flyout, click **Close**.
 
-For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 ## Part 2 - Anti-phishing protection in EOP and Defender for Office 365
 
@@ -211,13 +212,13 @@ For more information about the recommended settings for Safe Attachments, see .[
    - **Users and domains** page: Because this is your first policy and you likely want to maximize coverage, consider entering your [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the **Domains** box. Otherwise, you can use the **Users** and **Groups** boxes for more granular control. You can specify exceptions by selecting **Exclude these users, groups, and domains** and entering values.
    - **Settings** page:
      - **Safe Attachments unknown malware response**: Select **Block**.
-     - **Quarantine policy**: The default value is blank, which means the AdminOnlyAccessPolicy policy is used. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+     - **Quarantine policy**: The default value is blank, which means the default AdminOnlyAccessPolicy policy is used. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
      - **Redirect attachment with detected attachments** : **Enable redirect**: Turn this setting on (select) and enter an email address to receive detected messages.
      - **Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)**: Verify this setting is selected.
 
 5. When you're finished, click **Submit**, and then click **Done**.
 
-6. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the _DisallowInfectedFileDownload_ parameter set to `$true` in SharePoint Online PowerShell.
+6. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the *DisallowInfectedFileDownload* parameter set to `$true` in SharePoint Online PowerShell.
    - `$true` blocks all actions (except Delete) for detected files. People can't open, move, copy, or share detected files.
    - `$false` blocks all actions except Delete and Download. People can choose to accept the risk and download a detected file.
 

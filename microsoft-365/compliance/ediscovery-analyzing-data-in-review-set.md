@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,9 +26,7 @@ ms.custom: seo-marvel-mar2020
 When the number of collected documents is large, it can be difficult to review them all. Microsoft Purview eDiscovery (Premium) provides a number of tools to analyze the documents to reduce the volume of documents to be reviewed without any loss in information, and to help you organize the documents in a coherent manner. To learn more about these capabilities, see:
 
 - [Near duplicate detection](ediscovery-near-duplicate-detection.md)
-
 - [Email threading](ediscovery-email-threading.md)
-
 - [Themes](ediscovery-themes.md)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -40,7 +39,7 @@ To analyze data in a review set:
 
 2. Open the review set you want to analyze.
 
-3. Click **Analytics** > **Run document & email analytics**.
+3. Select **Analytics** > **Run document & email analytics**.
 
    ![Select Run document & email analytics from the Analytics dropdown list](..\media\RunAnalytics1.png)
 
@@ -63,11 +62,8 @@ Here's the syntax for the **For Review** filter query:
 The following list describes the result of the filter query in terms of what content is displayed after you apply it to the review set.
 
 - **Email**. Displays items that are marked as **Inclusive** or **InclusiveMinus**. An inclusive item is the final message in an email thread. It contains all previous content in the email thread. An inclusive minus it contains one or more attachments associated with the specific message in the email thread. A reviewer can use the inclusive minus value to determine which specific messages in the email thread have associated attachments.
-
 - **Attachments**. Filters out duplicate attachments in the same Email Set. Only attachments that are unique in an email thread are displayed.
-
 - **Documents and other**. Filters out duplicate documents. Only documents that are unique in the review set are displayed.
-
 - **Teams conversations**. All Teams (and Yammer) conversations in the review set are displayed.
 
 For more information about inclusive types and document uniqueness, see [Email threading in eDiscovery (Premium)](ediscovery-email-threading.md).
@@ -80,21 +76,14 @@ For more information about inclusive types and document uniqueness, see [Email t
 To view the analytics report for a review set:
 
 1. Open the review set.
-
-2. Click **Analytics** > **Show reports**.
+2. Select **Analytics** > **Show reports**.
 
 The **Analytics** report has seven components from the analysis:
 
 - **Target population:** The number of email messages, attachments, and loose documents found in the review set.
-
 - **Documents (excluding attachments):** The number of loose documents that are pivots, unique near duplicates of a pivot, or an exact duplicate of another document.
-
 - **Emails:** The number of email messages that are marked as inclusive, inclusive copy, inclusive minus, or none of the above.
-
 - **Attachments:** The number of email attachments that are unique or duplicates of another email attachment in the review set.
-
 - **Number documents by file type:** The number of files, identified by file extension.
-
 - **Documents by source:** A summary of content by its original data source.
-
-- **Documents aggregated by process:** A summary of content by review set processes. 
+- **Documents aggregated by process:** A summary of content by review set processes.

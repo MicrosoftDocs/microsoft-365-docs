@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Configure and validate exclusions for Microsoft Defender for Endpoint on Linux
@@ -60,7 +61,7 @@ File, folder, and process exclusions support the following wildcards:
 
 Wildcard|Description|Example|Matches|Does not match
 ---|---|---|---|---
-\*|Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder)|`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+\*|Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder)|`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
 ?|Matches any single character|`file?.log`|`file1.log`<br/>`file2.log`|`file123.log`
 
 ## How to configure the list of exclusions

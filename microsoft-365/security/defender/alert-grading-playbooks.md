@@ -8,21 +8,22 @@ ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
 - NOCSH
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 ms.topic: how-to
-ms.custom: 
+ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
+ms.date: 01/14/2022
 ---
 
 # Alert grading playbooks
@@ -39,9 +40,8 @@ As a security researcher or security operations center (SOC) analyst, you must h
 - Assess and review the generated alerts and associated incidents. See [investigate alerts](investigate-alerts.md).
 - Search your tenant's security signal data and check for potential threats and suspicious activities. See [advanced hunting](advanced-hunting-overview.md).
 
->[!Note]
->You can provide feedback to Microsoft about true positive and false positives alerts, not only at the end of the investigation, but also during the investigation process. This can help Microsoft with future analysis and classification of security events.
->
+> [!NOTE]
+> You can provide feedback to Microsoft about true positive and false positives alerts, not only at the end of the investigation, but also during the investigation process. This can help Microsoft with future analysis and classification of security events.
 
 ## Microsoft Defender for Office 365
 
@@ -63,14 +63,13 @@ As a security researcher or security operations center (SOC) analyst, you must h
 
   Save time and effort investigating and mitigating threats.
 
-Defender for Office 365 alerts can be classified as: 
+Defender for Office 365 alerts can be classified as:
 
-- True positive (TP) for confirmed malicious activity. 
+- True positive (TP) for confirmed malicious activity.
 - False positive (FP) for confirmed non-malicious activity.
 
->[!Note]
->Microsoft 365 Defender portal [https://security.microsoft.com](https://security.microsoft.com) brings together functionality from existing Microsoft security portals. The Microsoft 365 Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
->
+> [!NOTE]
+> Microsoft 365 Defender portal [https://security.microsoft.com](https://security.microsoft.com) brings together functionality from existing Microsoft security portals. The Microsoft 365 Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
 
 ## Microsoft Defender for Cloud Apps
 
@@ -80,10 +79,10 @@ Defender for Cloud Apps natively integrates with leading Microsoft solutions and
 
 The Defender for Cloud Apps framework includes the capability to protect your network against cyberthreats and anomalies, detects unusual behavior across cloud apps to identify ransomware, compromised users or rogue applications. It enables the analysis of high-risk usage and can remediate automatically to limit the risk to your organization.
 
-Defender for Cloud Apps alerts can be classified as: 
+Defender for Cloud Apps alerts can be classified as:
 
-- TP for confirmed malicious activity. 
-- Benign true positive (B-TP) for suspicious but not malicious activity, such as a penetration test or other authorized suspicious action. 
+- TP for confirmed malicious activity.
+- Benign true positive (B-TP) for suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
 - FP for confirmed non-malicious activity.
 
 ## Alert grading playbooks

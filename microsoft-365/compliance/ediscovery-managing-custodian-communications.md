@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -51,9 +51,6 @@ With eDiscovery (Premium), legal teams can create and customize their legal hold
 For more information about managing the custodian communication process, see the following: 
 
 - [Create a legal hold notice](ediscovery-create-hold-notification.md)
-
 - [Use the communications editor](ediscovery-using-communications-editor.md)
-
 - [Manage hold notifications](ediscovery-manage-hold-notifications.md)
-
 - [Acknowledge a hold notification](ediscovery-acknowledge-hold-notification.md)

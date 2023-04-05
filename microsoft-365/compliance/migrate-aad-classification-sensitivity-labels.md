@@ -1,6 +1,7 @@
 ---
 title: AAD classification and sensitivity labels for Microsoft 365 groups
 ms.reviewer: vijagan
+ms.date: 06/11/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen

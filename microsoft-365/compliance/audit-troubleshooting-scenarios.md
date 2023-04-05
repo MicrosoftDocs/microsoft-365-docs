@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 03/16/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -30,7 +31,7 @@ This article describes how to use the audit log search tool to help you investig
 - Determine who set up email forwarding for a mailbox
 - Determine if a user deleted email items in their mailbox
 - Determine if a user created an inbox rule
-- Investigate why there was a successful login by a user outside your organization
+- Investigate why there was a successful sign-in by a user outside your organization
 - Search for mailbox activities performed by users with non-E5 licenses
 - Search for mailbox activities performed by delegate users
 
@@ -49,10 +50,6 @@ You must be assigned the *View-Only Audit Logs* or *Audit Logs* role in Exchange
 This section describes the basics for creating and running audit log searches. Use these instructions as a starting point for each troubleshooting scenario in this article. For more detailed step-by-step instructions, see [Search the audit log](audit-log-search.md#step-1-run-an-audit-log-search).
 
 1. Go to <https://compliance.microsoft.com/auditlogsearch> and sign in using your work or school account.
-  
-    The **Audit** page is displayed.
-  
-    ![Configure criteria and then select Search to run the search.](../media/AuditLogSearchPage1.png)
   
 2. You can configure the following search criteria. Each troubleshooting scenario in this article recommends specific guidance for configuring these fields.
   
@@ -142,7 +139,7 @@ Here's how to configure an audit log search query for this scenario:
 
 - **Deleted messages from Deleted Items folder:** This activity corresponds to the **SoftDelete** mailbox auditing action. This activity is also logged when a user permanently deletes an item by selecting it and pressing **Shift+Delete**. After an item is permanently deleted, the user can recover it until the deleted item retention period expires.
 
-- **Purged messages from mailbox:** This activity corresponds to the **HardDelete** mailbox auditing action. This is logged when a user purges an item from the Recoverable Items folder. Admins can use the Content Search tool in the security and compliance center to search for and recover purged items until the deleted item retention period expires or longer if the user's mailbox is on hold.
+- **Purged messages from mailbox:** This activity corresponds to the **HardDelete** mailbox auditing action. This is logged when a user purges an item from the Recoverable Items folder. Admins can use the Content Search tool in the compliance portal to search for and recover purged items until the deleted item retention period expires or longer if the user's mailbox is on hold.
 
 **Start date** and **End date:** Select a date range that's applicable to your investigation.
 
@@ -202,11 +199,11 @@ c. The *MoveToFolder* parameter specifies the action for the inbox rule. In this
 
 d. The **UserId** field indicates the user who created the inbox rule specified in the **ObjectId** field. This user is also displayed in the **User** column on the search results page.
 
-## Investigate why there was a successful login by a user outside your organization
+## Investigate why there was a successful sign-in by a user outside your organization
 
 When reviewing audit records in the audit log, you may see records that indicate an external user was authenticated by Azure Active Directory and successfully logged in to your organization. For example, an admin in contoso.onmicrosoft.com may see an audit record showing that a user from a different organization (for example, fabrikam.onmicrosoft.com) successfully logged into contoso.onmicrosoft.com. Similarly, you may see audit records that indicate users with a Microsoft Account (MSA), such as an Outlook.com or Live.com, successfully logged in to your organization. In these situations, the audited activity is **User logged In**. 
 
-This behavior is by design. Azure Active Directory (Azure AD), the directory service, allows something called *pass-through authentication* when an external user tries to access a SharePoint site or a OneDrive location in your organization. When the external user tries to do this, they're prompted to enter their credentials. Azure AD uses the credentials to authenticate the user, meaning only Azure AD verifies that the user is who they say they are. The indication of the successful login in the audit record is the result of Azure AD authenticating the user. The successful login doesn't mean that the user was able to access any resources or perform any other actions in your organization. It only indicates that the user was authenticated by Azure AD. In order for a pass-through user to access SharePoint or OneDrive resources, a user in your organization would have to explicitly share a resource with the external user by sending them a sharing invitation or anonymous sharing link. 
+This behavior is by design. Azure Active Directory (Azure AD), the directory service, allows something called *pass-through authentication* when an external user tries to access a SharePoint site or a OneDrive location in your organization. When the external user tries to do this, they're prompted to enter their credentials. Azure AD uses the credentials to authenticate the user, meaning only Azure AD verifies that the user is who they say they are. The indication of the successful sign-in in the audit record is the result of Azure AD authenticating the user. The successful sign-in doesn't mean that the user was able to access any resources or perform any other actions in your organization. It only indicates that the user was authenticated by Azure AD. In order for a pass-through user to access SharePoint or OneDrive resources, a user in your organization would have to explicitly share a resource with the external user by sending them a sharing invitation or anonymous sharing link. 
 
 > [!NOTE]
 > Azure AD allows pass-through authentication only for *first-party applications*, such as SharePoint Online and OneDrive for Business. It isn't allowed for other third-party applications.
@@ -219,11 +216,11 @@ Here's an example and descriptions of relevant properties in an audit record for
 
    b. This field displays the UPN of the external user that attempted to access a resource in your organization. This user ID is also identified in the **User** and **UserId** properties in the audit record.
 
-   c. The **ApplicationId** property identifies the application that triggered the logon request. The value of 00000003-0000-0ff1-ce00-000000000000 displayed in the ApplicationId property in this audit record indicates SharePoint Online. OneDrive for Business also has this same ApplicationId.
+   c. The **ApplicationId** property identifies the application that triggered the sign-in request. The value of 00000003-0000-0ff1-ce00-000000000000 displayed in the ApplicationId property in this audit record indicates SharePoint Online. OneDrive for Business also has this same ApplicationId.
 
    d. This indicates that the pass-through authentication was successful. In other words, the user was successfully authenticated by Azure AD. 
 
-   e. The **RecordType** value of **15** indicates that the audited activity (UserLoggedIn) is a  Secure Token Service (STS) logon event in Azure AD.
+   e. The **RecordType** value of **15** indicates that the audited activity (UserLoggedIn) is a  Secure Token Service (STS) sign-in event in Azure AD.
 
 For more information about the other properties displayed in a UserLoggedIn audit record, see the Azure AD-related schema information in [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema).
 
@@ -237,7 +234,7 @@ Here are two examples scenarios that would result in a successful **User logged 
 
 - Search the audit log for activities performed by the external user identified in the **User logged in** audit record. Type the UPN for the external user in the **Users** box and use a date range if relevant to your scenario. For example, you can create a search using the following search criteria:
 
-   ![Search for all activities performed by the external user.](../media/PassThroughAuth2.png)
+   ![Search for all activities performed by the external user.](../media/audit-pass-thru-authentication.png)
 
     In addition to the **User logged in** activities, other audit records may be returned, such ones that indicate a user in your organization shared resources with the external user and whether the external user accessed, modified, or downloaded a document that was shared with them.
 

@@ -21,6 +21,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
+ms.date: 02/17/2021
 ---
 
 # Remediation actions in Microsoft 365 Defender

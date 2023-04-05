@@ -1,7 +1,7 @@
 ---
 title: Deploy updates for Microsoft Defender for Endpoint on Mac
 description: Control updates for Microsoft Defender for Endpoint on Mac in enterprise environments.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, updates, deploy, catalina, big sur, monterey, ventura, mde for mac
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, updates, deploy, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Deploy updates for Microsoft Defender for Endpoint on macOS
@@ -35,11 +36,11 @@ search.appverid: met150
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
-To update Microsoft Defender for Endpoint on macOS, a program named Microsoft AutoUpdate (MAU) is used. By default, MAU automatically checks for updates daily, but you can change that to weekly, monthly, or manually.
+To update Microsoft Defender for Endpoint on macOS, a program named Microsoft AutoUpdate (MAU) is used. MAU checks updates periodically, and automatically downloads and installs them.
 
 :::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
 
-If you decide to deploy updates by using your software distribution tools, you should configure MAU to manually check for software updates. You can deploy preferences to configure how and when MAU checks for updates for the Macs in your organization.
+You can deploy preferences to configure how and when MAU checks for updates for the Macs in your organization.
 
 ## Use msupdate
 
@@ -65,9 +66,9 @@ The `Current` channel contains the most stable version of the product.
 > [!IMPORTANT]
 > Prior to Microsoft AutoUpdate version 4.29, channels had different names:
 >
-> - `Beta` was named `InsiderFast` (Insider Fast)
-> - `Preview` was named `External` (Insider Slow)
-> - `Current` was named `Production`
+> - `Beta Channel` was named `InsiderFast` (Insider Fast)
+> - `Current Channel` (Preview) was named `External` (Insider Slow)
+> - `Current Channel` was named `Production`
 
 > [!TIP]
 > In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.
@@ -105,7 +106,7 @@ Change how often MAU searches for updates.
 |**Key**|UpdateCheckFrequency|
 |**Data type**|Integer|
 |**Default value**|720 (minutes)|
-|**Comment**|This value is set in minutes.|
+|**Comment**|This value is set in minutes. The allowed range is 240 minutes (4 hours) - 720 minutes (12 hours).|
 |||
 
 ### Change how MAU interacts with updates
@@ -122,12 +123,12 @@ Change how MAU searches for updates.
 |**Key**|HowToCheck|
 |**Data type**|String|
 |**Possible values**|Manual <p> AutomaticCheck <p> AutomaticDownload|
-|**Comment**|Note that AutomaticDownload will do a download and install silently if possible.|
+|**Comment**|Note that AutomaticDownload will download and install silently if possible.|
 |||
 
 ### Change whether the "Check for Updates" button is enabled
 
-Change whether local users will be able to click the "Check for Updates" option in the Microsoft AutoUpdate user interface.
+Change whether local users are able to click the "Check for Updates" option in the Microsoft AutoUpdate user interface.
 
 <br>
 
@@ -157,27 +158,11 @@ Set to true to make the "Join the Office Insider Program..." checkbox unavailabl
 |**Possible values**|False (default) <p> True|
 |||
 
-### Limit the telemetry that is sent from MAU
-
-Set to false to send minimal heartbeat data, no application usage, and no environment details.
-
-<br>
-
-****
-
-|Section|Value|
-|---|---|
-|**Domain**|`com.microsoft.autoupdate2`|
-|**Key**|SendAllTelemetryEnabled|
-|**Data type**|Boolean|
-|**Possible values**|True (default) <p> False|
-|||
-
 ## Example configuration profile
 
 The following configuration profile is used to:
 
-- Place the device in the Production channel
+- Place the device in the Current channel
 - Automatically download and install updates
 - Enable the "Check for updates" button in the user interface
 - Allow users on the device to enroll into the Insider channels
@@ -185,10 +170,7 @@ The following configuration profile is used to:
 > [!WARNING]
 > The below configuration is an example configuration and should not be used in production without proper review of settings and tailor of configurations.
 
-> [!TIP]
-> In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.
-
-### JAMF
+### Jamf Pro
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -196,15 +178,13 @@ The following configuration profile is used to:
 <plist version="1.0">
 <dict>
     <key>ChannelName</key>
-    <string>Production</string>
+    <string>Current</string>
     <key>HowToCheck</key>
     <string>AutomaticDownload</string>
     <key>EnableCheckForUpdatesButton</key>
     <true/>
     <key>DisableInsiderCheckbox</key>
     <false/>
-    <key>SendAllTelemetryEnabled</key>
-    <true/>
 </dict>
 </plist>
 ```
@@ -256,15 +236,13 @@ The following configuration profile is used to:
             <key>PayloadEnabled</key>
             <true/>
             <key>ChannelName</key>
-            <string>Production</string>
+            <string>Current</string>
             <key>HowToCheck</key>
             <string>AutomaticDownload</string>
             <key>EnableCheckForUpdatesButton</key>
             <true/>
             <key>DisableInsiderCheckbox</key>
             <false/>
-            <key>SendAllTelemetryEnabled</key>
-            <true/>
             </dict>
         </array>
     </dict>
@@ -273,7 +251,7 @@ The following configuration profile is used to:
 
 To configure MAU, you can deploy this configuration profile from the management tool that your enterprise is using:
 
-- From JAMF, upload this configuration profile and set the Preference Domain to *com.microsoft.autoupdate2*.
+- From Jamf Pro, upload this configuration profile and set the Preference Domain to *com.microsoft.autoupdate2*.
 - From Intune, upload this configuration profile and set the custom configuration profile name to *com.microsoft.autoupdate2*.
 
 ## Resources

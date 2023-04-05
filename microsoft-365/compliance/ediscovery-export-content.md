@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -32,11 +33,11 @@ After a search associated with a Microsoft Purview eDiscovery (Standard) case is
 
 2. In the left navigation pane of the compliance portal, select **Show all**, and then select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**eDiscovery (Standard)**</a>.
 
-3. On the **eDiscovery (Standard)** page, click the name of the case that you want to create the hold in.
+3. On the **eDiscovery (Standard)** page, select the name of the case that you want to create the hold in.
 
-4. On the **Home** page for the case, click the **Searches** tab.
+4. On the **Home** page for the case, select the **Searches** tab.
 
-5. On the **Actions** menu at the bottom of the flyout page, click **Export results**.
+5. On the **Actions** menu at the bottom of the flyout page, select **Export results**.
 
    ![Export results option in Actions menu.](../media/ActionMenuExportResults.png)
 
@@ -47,15 +48,15 @@ After a search associated with a Microsoft Purview eDiscovery (Standard) case is
 
    After you start the export, the search results are prepared for downloading, which means they are transferred to a Microsoft-provided Azure Storage location in the Microsoft cloud.
   
-6. Click the **Exports** tab in the case to display the list of export jobs.
+6. Select the **Exports** tab in the case to display the list of export jobs.
   
    ![Export jobs on the Export tab in eDiscovery (Standard) case.](../media/CoreeDiscoveryExport.png)
 
-   You may have to click **Refresh** to update the list of export jobs so that it shows the export job you created. Export jobs have the same name as the corresponding search with **_Export** appended to the search name.
+   You may have to select **Refresh** to update the list of export jobs so that it shows the export job you created. Export jobs have the same name as the corresponding search with **_Export** appended to the search name.
 
-7. Click the export job you created to display status information on the flyout page. This information includes the percentage of items that have been transferred to the Azure Storage location.
+7. Select the export job you created to display status information on the flyout page. This information includes the percentage of items that have been transferred to the Azure Storage location.
 
-8. After all items have been transferred, click **Download results** to download the search results to your local computer. For more information downloading search results, see Step 2 in [Export content search results](export-search-results.md#step-2-download-the-search-results)
+8. After all items have been transferred, select **Download results** to download the search results to your local computer. For more information downloading search results, see Step 2 in [Export content search results](export-search-results.md#step-2-download-the-search-results)
 
 > [!NOTE]
 > The exported search results must be downloaded within 14 days after you created the export job.
@@ -63,7 +64,5 @@ After a search associated with a Microsoft Purview eDiscovery (Standard) case is
 ### More information about exporting searches from a case
 
 - For more information about the export files that are included when you export search results, see [Export a Content search report](ediscovery-export-a-content-search-report.md#whats-included-in-the-report).
-
 - If you restart the export, any changes to the queries of the searches that make up the export job won't affect the search results that are retrieved. When you restart an export, the same combined search query job that was run when the export job was created will be run again.
-
 - Also, if you restart an export, the search results that are copied to the Azure Storage location overwrites the previous results. The previous results that were copied won't be available to be downloaded.

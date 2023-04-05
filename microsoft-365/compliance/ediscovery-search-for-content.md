@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -27,13 +28,13 @@ To create a eDiscovery (Standard) search:
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions and is a member of the case.
 
-2. In the left navigation pane of the compliance portal, click **Show all**, and then click **eDiscovery > Core**.
+2. In the left navigation pane of the compliance portal, select **Show all**, and then select **eDiscovery > Core**.
 
-3. On the **eDiscovery (Standard)** page, select the case that you want to create an associated search, and then click **Open case**.
+3. On the **eDiscovery (Standard)** page, select the case that you want to create an associated search, and then select **Open case**.
 
-4. On the **Home** page for the case, click the **Searches** tab, and then click **New search**.
+4. On the **Home** page for the case, select the **Searches** tab, and then select **New search**.
 
-   ![Click New search to create a  eDiscovery (Standard) search search.](../media/CoreeDiscoverySearch1.png)
+   ![Select New search to create a  eDiscovery (Standard) search search.](../media/CoreeDiscoverySearch1.png)
 
 5. In the **New search** wizard, type a name for the search, and an optional description that helps identify the search. The name of the search must be unique in your organization.
 
@@ -41,9 +42,9 @@ To create a eDiscovery (Standard) search:
 
     ![Choose the content locations to place on hold.](../media/ContentSearchLocations.png)
   
-   1. **Exchange mailboxes**: Set the toggle to **On** and then click **Choose users, groups, or teams** to specify the mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also search the mailbox associated with a Microsoft Team (for channel messages), Office 365 Group, and Yammer Group. For more information about the application data stored in mailboxes, see [Content stored in mailboxes for eDiscovery](ediscovery-what-is-stored-in-a-mailbox.md).
+   1. **Exchange mailboxes**: Set the toggle to **On** and then select **Choose users, groups, or teams** to specify the mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also search the mailbox associated with a Microsoft Team (for channel messages), Office 365 Group, and Yammer Group. For more information about the application data stored in mailboxes, see [Content stored in mailboxes for eDiscovery](ediscovery-what-is-stored-in-a-mailbox.md).
 
-   2. **SharePoint sites**: Set the toggle to **On** and then click **Choose sites** to specify SharePoint sites and OneDrive accounts to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft Team, Office 365 Group, or Yammer Group.
+   2. **SharePoint sites**: Set the toggle to **On** and then select **Choose sites** to specify SharePoint sites and OneDrive accounts to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft Team, Office 365 Group, or Yammer Group.
   
    3. **Exchange public folders**: Set the toggle to **On** to put all public folders in your Exchange Online organization on hold. You can't choose specific public folders to put on hold. Leave the toggle switch off if you don't want to put a hold on public folders.
   
@@ -55,7 +56,7 @@ To create a eDiscovery (Standard) search:
 
    1. Specify keywords, message properties such as sent and received dates, or document properties such as file names or the date that a document was last changed. You can use more complex queries that use a Boolean operator, such as **AND**, **OR**, **NOT**, and **NEAR**. If you leave the keyword box empty, all content located in the specified content locations is included in the search results. For more information, see [Keyword queries and search conditions for eDiscovery](ediscovery-keyword-queries-and-search-conditions.md).
 
-   2. Alternatively, you can click the **Show keyword list** checkbox and the type a keyword in each row. If you do this, the keywords on each row are connected by a logical operator (**c:s**) that is similar in functionality to the **OR** operator in the search query that's created.
+   2. Alternatively, you can select the **Show keyword list** checkbox and the type a keyword in each row. If you do this, the keywords on each row are connected by a logical operator (**c:s**) that is similar in functionality to the **OR** operator in the search query that's created.
 
       Why use the keyword list? You can get statistics that show how many items match each keyword. This can help you quickly identify which keywords are the most (and least) effective. You can also use a keyword phrase (surrounded by parentheses) in a row. For more information about the keyword list and search statistics, see [Get keyword statistics for searches](ediscovery-view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches).
 
@@ -66,14 +67,12 @@ To create a eDiscovery (Standard) search:
 
 8. Review the search settings (and edit if necessary), and then submit the search to start it.
 
-After the search is completed, you can preview the search results. If necessary, click **Refresh** on the **Searches** page to display the search you created.
+After the search is completed, you can preview the search results. If necessary, select **Refresh** on the **Searches** page to display the search you created.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## More information about searching content locations
 
-- When you click **Choose users, groups, or teams** to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, click **Choose users, groups, or teams**, type a name (a minimum of three characters) in the search box, select the check box next to the name, and then click **Choose**.
-
+- When you select **Choose users, groups, or teams** to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, select **Choose users, groups, or teams**, type a name (a minimum of three characters) in the search box, select the check box next to the name, and then select **Choose**.
 - You can add inactive mailboxes, Microsoft Teams, Yammer Groups, Office 365 Groups, and distribution groups to the list of mailboxes to search. Dynamic distribution groups aren't supported. If you add Microsoft Teams, Yammer Groups, or Office 365 Groups, the group or team mailbox is searched; the mailboxes of the group members aren't searched.
-
-- To add sites to the search, turn on the toggle and then click **Choose sites**. Type the URL for each site that you want to search. You can also add the URL for the SharePoint site for a Microsoft Team, a Yammer Group, or an Office 365 Group.
+- To add sites to the search, turn on the toggle and then select **Choose sites**. Type the URL for each site that you want to search. You can also add the URL for the SharePoint site for a Microsoft Team, a Yammer Group, or an Office 365 Group.

@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -38,9 +38,9 @@ You can also search for documents that have processing errors by using the **Pro
 
 ### Ignore errors
 
-You can ignore a processing error by clicking **Ignore** in the processing error banner. When you ignore an error, the document is removed from the [bulk error remediation workflow](ediscovery-error-remediation-when-processing-data.md). After an error is ignored, the document banner changes color and indicates that the processing error was ignored. At any time, you can revert the decision to ignore the error by clicking **Revert**.
+You can ignore a processing error by selecting **Ignore** in the processing error banner. When you ignore an error, the document is removed from the [bulk error remediation workflow](ediscovery-error-remediation-when-processing-data.md). After an error is ignored, the document banner changes color and indicates that the processing error was ignored. At any time, you can revert the decision to ignore the error by selecting **Revert**.
 
-![Click Ignore to ignore the processing error.](../media/SIERimage3.png)
+![Select Ignore to ignore the processing error.](../media/SIERimage3.png)
 
 You can also search for all documents that had a processing error that was ignored by using the *Ignored processing errors* condition when querying documents in a review set.
 
@@ -52,20 +52,20 @@ Sometimes you may be required to remediate a processing error in documents (by r
 
 To remediate a single document, follow these steps:
 
-1. Click **Download** > **Download original** to download a copy of the file to a local computer.
+1. Select **Download** > **Download original** to download a copy of the file to a local computer.
 
    ![Download the document with the processing error.](../media/SIERimage5.png)
 
 2. Remediate the error in the file offline. For encrypted files, that would require decryption software, to remove password protection, either provide the password and save the file or use a password cracker. After you remediate the file, go to the next step.
 
-3. In the review set, select the file with the processing error that you remediated, and then  click **Remediation**.
+3. In the review set, select the file with the processing error that you remediated, and then  select **Remediation**.
 
-   ![Click Remediation in the banner of the document with processing error.](../media/SIERimage6.png)
+   ![Select Remediation in the banner of the document with processing error.](../media/SIERimage6.png)
 
 
-4. Click **Browse**, go to the location of the remediated file on your local computer, and then select the file.
+4. Select **Browse**, go to the location of the remediated file on your local computer, and then select the file.
 
-   ![Click Browse and select the remediated file on your local computer.](../media/SIERimage7.png)
+   ![Select Browse and select the remediated file on your local computer.](../media/SIERimage7.png)
 
     After selecting the remediated file, it is automatically uploaded to the review set. You can track the processing status of the file.
 

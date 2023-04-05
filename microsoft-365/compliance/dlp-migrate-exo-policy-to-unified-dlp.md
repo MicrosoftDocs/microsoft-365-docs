@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 01/22/2021
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -76,7 +76,7 @@ The account that you use to run the migration wizard must have access to both th
 1. If you're unfamiliar with DLP, the compliance portal DLP console, or the Exchange Admin center DLP console, you should familiarize yourself before attempting a policy migration.
     1. [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
     1. [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
-    1. [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md)
+    1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 1. Evaluate your Exchange DLP and compliance portal policies by asking these questions:
 
 |Question|Action|Migration procedure|
@@ -128,7 +128,7 @@ The migrated policies will now appear in the list of DLP policies in the complia
 
 Test and review your policies.
 
-1. Follow the [Test a DLP policy](create-test-tune-dlp-policy.md#test-a-dlp-policy) procedures.
+1. Follow the [Test a DLP policy](dlp-test-dlp-policies.md) procedures.
 2. Review the events created by the policy in [Activity explorer](data-classification-activity-explorer.md).
 
 ## Review the policy matches between Exchange Admin Center DLP and Microsoft Purview Unified DLP
@@ -162,6 +162,5 @@ Once you're satisfied with how your migrated policies are functioning, you can s
 - [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)

@@ -24,7 +24,9 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
+ms.date: 04/20/2021
 ---
+
 # Step 1. Triage and analyze your first incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -43,7 +45,7 @@ Microsoft 365 Defender receives alerts and events from multiple Microsoft securi
 - [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) is an endpoint detection and response solution (EDR) that uses Microsoft Defender antivirus and cloud-enabled advanced threat protection using Microsoft Security Graph. Defender for Endpoint is a unified platform for preventative protection, post-breach detection, automated investigation, and response. It protects endpoints from cyberthreats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
 - [Microsoft Defender for Identity](/defender-for-identity/what-is) is a cloud-based security solution that uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/) acts as a gatekeeper to broker access in real time between your enterprise users and the cloud resources they use, wherever your users are located and regardless of the device they are using.
-- [Microsoft Defender for Office 365](/microsoft-365/office-365-security/overview) safeguards your organization against malicious threats in email messages, links (URLs), and collaboration tools.
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) safeguards your organization against malicious threats in email messages, links (URLs), and collaboration tools.
 - [Azure Security Center](/azure/security-center/security-center-introduction) is a unified infrastructure security management system that strengthens the security posture of your data centers and provides advanced threat protection across your hybrid workloads in the cloud and on premises.
 
 
