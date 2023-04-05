@@ -3,6 +3,7 @@ title: Adjust scheduling preferences for Scheduler for Microsoft 365 Overview
 ms.author: shivb
 author: shivbijlani
 manager: charlle
+ms.date: 05/17/2022
 audience: Admin
 ms.topic: article
 ms.service: scheduler

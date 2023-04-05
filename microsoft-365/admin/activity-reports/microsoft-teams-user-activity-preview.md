@@ -3,6 +3,7 @@ title: "Microsoft 365 admin center Teams user activity reports"
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

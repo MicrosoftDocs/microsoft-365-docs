@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/21/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -98,7 +99,7 @@ The **Case overview** tab also includes an **Alerts** section that includes the 
 
 ### Alerts
 
-The **Alerts** tab summarizes the current alerts included in the case. New alerts may be added to an existing case and they'll be added to the **Alert** queue as they're assigned. The following alert attributes are listed the queue:
+The **Alerts** tab summarizes the current alerts included in the case. New alerts may be added to an existing case and they'll be added to the **Alert** queue as they're assigned. The following alert attributes are listed in the queue:
 
 - Status
 - Severity
@@ -130,9 +131,9 @@ The **Activity explorer** tab allows risk analysts and investigators to review c
 
 For more information about the Activity explorer, see the [Insider risk management activities](insider-risk-management-activities.md#activity-explorer) article.
 
-## Forensic evidence (preview)
+## Forensic evidence
 
-The **Forensic evidence (preview)** tab allows risk investigators to review visual captures associated with risk activities included in cases. For example, as part of the case management actions, investigators may need to help clarify the context of the user activity under review. Viewing the actual clips of the activity can help the investigator determine if the user activity is potentially risky and may lead to a security incident.
+The **Forensic evidence** tab allows risk investigators to review visual captures associated with risk activities included in cases. For example, as part of the case management actions, investigators may need to help clarify the context of the user activity under review. Viewing the actual clips of the activity can help the investigator determine if the user activity is potentially risky and may lead to a security incident.
 
 For more information about forensic evidence, see the [Learn about insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence) article.
 

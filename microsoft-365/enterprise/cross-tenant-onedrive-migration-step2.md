@@ -3,6 +3,7 @@ title: OneDrive Cross-tenant OneDrive migration Step 2
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
+ms.date: 10/25/2022
 recommendations: true
 audience: ITPro
 ms.topic: article

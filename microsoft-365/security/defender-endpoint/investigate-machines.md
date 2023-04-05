@@ -11,7 +11,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
@@ -23,7 +23,6 @@ ms.date: 12/18/2020
 # Investigate devices in the Microsoft Defender for Endpoint Devices list
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -49,8 +48,7 @@ When you investigate a specific device, you'll see:
 - Device details
 - Response actions
 - Tabs (overview, alerts, timeline, security recommendations, software inventory, discovered vulnerabilities, missing KBs)
-- Cards (active alerts, logged on users, security assessment, device health status) 
- 
+- Cards (active alerts, logged on users, security assessment, device health status)
 
 :::image type="content" source="images/specific-device.png" alt-text="The device view" lightbox="images/specific-device.png":::
 
@@ -166,6 +164,7 @@ The **Discovered vulnerabilities** tab shows the name, severity, and threat insi
 :::image type="content" source="images/discovered-vulnerabilities-device.png" alt-text="The Discovered vulnerabilities tab" lightbox="images/discovered-vulnerabilities-device.png":::
 
 ### Missing KBs
+
 The **Missing KBs** tab lists the missing security updates for the device.
 
 :::image type="content" source="images/missing-kbs-device.png" alt-text="The Missing KBs tab" lightbox="images/missing-kbs-device.png":::
@@ -215,18 +214,17 @@ The **Device health status** card shows a summarized health report for the speci
 - Device is up to date
 - Status not available for macOS & Linux
 
-Other information in the card include: the last full scan, last quick scan, security intelligence update version, engine update version, platform update version, and Defender Antivirus mode. 
+Other information in the card include: the last full scan, last quick scan, security intelligence update version, engine update version, platform update version, and Defender Antivirus mode.
 
-Please note that a grey circle indicates that the data is unknown. 
+Please note that a grey circle indicates that the data is unknown.
 
 > [!NOTE]
-> The overall status message for macOS and Linux devices currently shows up as 'Status not available for macOS & Linux'. Currently, the status summary is only available for Windows devices. All other information in the table is up to date to show the individual states of each device health signal for all supported platforms. 
+> The overall status message for macOS and Linux devices currently shows up as 'Status not available for macOS & Linux'. Currently, the status summary is only available for Windows devices. All other information in the table is up to date to show the individual states of each device health signal for all supported platforms.
 
-To gain an in-depth view of the device health report, you can go to **Reports > Devices health**. For more information, see [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports). 
+To gain an in-depth view of the device health report, you can go to **Reports > Devices health**. For more information, see [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports).
 
->[!NOTE]
->The date and time for Defender Antivirus mode is currently not available. 
-
+> [!NOTE]
+> The date and time for Defender Antivirus mode is currently not available.
 
 :::image type="content" source="images/device-health-status.png"  alt-text="The device health status card" lightbox="images/device-health-status.png":::
 

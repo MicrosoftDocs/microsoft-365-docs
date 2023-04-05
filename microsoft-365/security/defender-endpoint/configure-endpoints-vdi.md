@@ -41,7 +41,7 @@ Like any other system in an IT environment, these too should have an Endpoint De
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
  > [!NOTE]
-  > **Persistent VDI's** - Onboarding a persistent VDI machine into Microsoft Defender for Endpoint is handled the same way you would onboard a physical machine, such as a desktop or laptop. Group policy, Microsoft Endpoint Manager, and other methods can be used to onboard a persistent machine. In the Microsoft 365 Defender portal, (https://security.microsoft.com) under onboarding, select your preferred onboarding method, and follow the instructions for that type. For more information see [Onboarding Windows client](onboard-windows-client.md).
+  > **Persistent VDI's** - Onboarding a persistent VDI machine into Microsoft Defender for Endpoint is handled the same way you would onboard a physical machine, such as a desktop or laptop. Group policy, Microsoft Configuration Manager, and other methods can be used to onboard a persistent machine. In the Microsoft 365 Defender portal, (https://security.microsoft.com) under onboarding, select your preferred onboarding method, and follow the instructions for that type. For more information see [Onboarding Windows client](onboard-windows-client.md).
 
 ## Onboarding non-persistent virtual desktop infrastructure (VDI) devices
 
@@ -183,7 +183,7 @@ The following configuration settings are recommended:
   - `%Programfiles%\FSLogix\Apps\frxsvc.exe`
 
 - File extensions to exclude from scans and real-time protection:
-  -  `%Programfiles%\FSLogix\Apps\frxccd.sys`
+  - `%Programfiles%\FSLogix\Apps\frxccd.sys`
   - `%Programfiles%\FSLogix\Apps\frxdrv.sys`
   - `%Programfiles%\FSLogix\Apps\frxdrvvt.sys`
   - `%TEMP%*.VHD`
@@ -191,7 +191,7 @@ The following configuration settings are recommended:
   - `%Windir%\TEMP*.VHD`
   - `%Windir%\TEMP*.VHDX`
   - `\\storageaccount.file.core.windows.net\share**.VHD`
-  -  `\\storageaccount.file.core.windows.net\share**.VHDX`
+  - `\\storageaccount.file.core.windows.net\share**.VHDX`
 
 #### Real-time Protection
 
@@ -244,7 +244,7 @@ The following configuration settings are recommended:
 
 ## Related topics
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
-- [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows devices using Microsoft Configuration Manager](configure-endpoints-sccm.md)
 - [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows devices using a local script](configure-endpoints-script.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)

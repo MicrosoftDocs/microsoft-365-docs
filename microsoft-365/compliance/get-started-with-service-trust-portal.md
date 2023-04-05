@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 09/12/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -123,8 +124,11 @@ This section displays all available documents. Select the documents to save into
 
 #### Restricted Documents
 
-The Service Trust Portal has documents that, given the nature of their content, are available for users with specific permissions. Users with Tenant Admin, Compliance Viewer role or the user set in database are able to see the restricted documents. 
-
+The Service Trust Portal has documents that, given the nature of their content, are available for users with specific permissions. You need to be assigned one of following roles to view restricted documents:
+ - Tenant Admin
+ - Compliance Administrator
+ - Security Administrator
+ - Security Reader
 #### Search
 
 Click the magnifying glass in the upper right-hand corner of the Service Trust Portal page to expand the box, enter your search terms, and press **Enter**. The **Search** page is displayed, with the search term displayed in the search box and the search results listed below.

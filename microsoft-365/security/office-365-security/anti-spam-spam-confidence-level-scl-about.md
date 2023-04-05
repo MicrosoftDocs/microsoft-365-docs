@@ -13,6 +13,7 @@ search.appverid:
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection: 
   - m365-security
+  - tier2
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn about the spam confidence level (SCL) that applied to messages in Exchange Online Protection (EOP).
@@ -35,7 +36,7 @@ What the SCL means and the default actions that are taken on messages are descri
 |SCL|Definition|Default action|
 |:---:|---|---|
 |-1|The message skipped spam filtering. For example, the message is from a safe sender, was sent to a safe recipient, or is from an email source server on the IP Allow List. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).|Deliver the message to the recipients' inbox.|
-|0, 1|Spam filtering determined the message was not spam.|Deliver the message to the recipients' inbox.|
+|0, 1|Spam filtering determined the message wasn't spam.|Deliver the message to the recipients' inbox.|
 |5, 6|Spam filtering marked the message as **Spam**|Deliver the message to the recipients' Junk Email folder.|
 |8, 9|Spam filtering marked the message as **High confidence spam**|Deliver the message to the recipients' Junk Email folder.|
 

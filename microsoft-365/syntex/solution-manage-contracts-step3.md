@@ -5,8 +5,8 @@ author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
-ms.topic: article
-ms.date: 
+ms.topic: conceptual
+ms.date: 10/28/2022
 ms.service: microsoft-syntex
 search.appverid: 
 ms.localizationpriority:  medium
