@@ -1393,6 +1393,8 @@
           href: search-for-content.md
         - name: Search for content
           href: ediscovery-content-search.md
+        - name: Search for content in Teams
+          href: ediscovery-teams-content-search.md
           items: 
           - name: Keyword queries and search conditions
             href: ediscovery-keyword-queries-and-search-conditions.md
@@ -1460,6 +1462,8 @@
           href: ediscovery-standard-get-started.md
         - name: Create eDiscovery holds
           href: ediscovery-create-holds.md
+        - name: Create a hold for Teams users
+          href: ediscovery-teams-legal-hold.md
         - name: Search for content in a case
           href: ediscovery-search-for-content.md
         - name: Export content from a case
