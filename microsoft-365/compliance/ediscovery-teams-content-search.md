@@ -73,7 +73,7 @@ Before you perform these steps, install the [SharePoint Online Management Shell 
 
 ### Include private channel messages in a content search
 
-Before you perform these steps, make sure you have the [latest version of the Teams PowerShell module](/microsofteams/teams-powershell-overview) installed.
+Before you perform these steps, make sure you have the [latest version of the Teams PowerShell module](/microsoftteams/teams-powershell-overview) installed.
 
 1. Run the following to get a list of private channels in the team.
 
