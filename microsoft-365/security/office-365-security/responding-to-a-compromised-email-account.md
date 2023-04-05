@@ -68,7 +68,7 @@ If a user reports any of the above symptoms, you should perform further investig
   - sign-in success or failure
 
 > [!IMPORTANT]
-> The button below will let you test and identify suspicious activities against an account and give you information that can be used to recover in case the account is compromised.
+> The button below will let you test and identify suspicious activities against an account and return information that can be used to recover in the case an account is compromised.
 >
 <div class="nextstepaction">
 <p><a href="https://aka.ms/diagca" data-linktype="external">Run Tests: Compromised Accounts</a></p>
