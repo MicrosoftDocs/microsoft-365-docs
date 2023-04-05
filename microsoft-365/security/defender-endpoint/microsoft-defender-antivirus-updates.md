@@ -79,19 +79,18 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
-### March-2023 (Platform: 4.18.2302.x | Engine: 1.1.20200.2)
+### March-2023 (Platform: 4.18.2302.x | Engine: 1.1.20200.4)
 
-- Security intelligence update version: **1.379.1493.x**
+- Security intelligence update version: **1.381.61.0**
 - Release date:  **April 4, 2023 (Engine) / April 11, 2023 (Platform)**
 - Platform: **4.18.2302.x** 
-- Engine: **1.1.20200.2**
+- Engine: **1.1.20200.4**
 - Support phase: **Security and Critical Updates**
 
 #### What's new
 
-- Monthly platform and engine version releases now include two dates: Engine and Platform
+- Beginning in April 2023, monthly platform and engine version release information now includes two dates: Engine and Platform
 - Increased file hash support 
-- Remediation file size limit increase to 4GB 
 
 #### Known issues
 
