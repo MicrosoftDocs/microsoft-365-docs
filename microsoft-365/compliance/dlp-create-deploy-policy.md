@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 01/11/2021
+ms.date: 04/05/2023
 audience: ITPro
 ms.topic: how-to
 f1_keywords:
@@ -243,12 +243,7 @@ ii.	move fully into production
 
 Scenario recommendation: Restrict users from uploading sensitive data to unsanctioned locations (Web sites, USB devices, printers, etc) AND block users from copying/saving data from Sensitive sites.
 
-### Scenario 4
-Endpoint
 
-### Scenario 5
-
-Endpoint + Teams
 -->
 
 ### Scenario 2 Show policy tip as oversharing popup (preview)
