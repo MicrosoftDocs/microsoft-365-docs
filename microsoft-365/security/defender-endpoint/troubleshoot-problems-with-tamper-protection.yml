@@ -27,7 +27,7 @@ sections:
   - name: Ignored
     questions:
       - question: |
-          Tamper protection is preventing my security team from managing a device. What should we do?t
+          Tamper protection is preventing my security team from managing a device. What should we do?
         answer: |
          If tamper protection prevents your IT or security team from performing a necessary task on a device, consider using [troubleshooting mode](enable-troubleshooting-mode.md). We recommend keeping tamper protection turned on for your organization.
 
