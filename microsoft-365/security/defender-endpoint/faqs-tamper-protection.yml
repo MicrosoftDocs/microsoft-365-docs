@@ -22,17 +22,6 @@ title: Frequently asked questions on tamper protection (FAQ)
 summary: | 
  If you encounter a problem with tamper protection, you can search the below sections in this article to find a matching issue and potential solution.
 
-    **Applies to:**
-
-    - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-    - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-    - [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
-    - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
-    - [Microsoft 365 Business Premium](../../business-premium/index.md)
-
-   **Platforms**
-    - Windows
-
 sections:
   - name: Ignored
     questions:
