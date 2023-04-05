@@ -53,7 +53,7 @@ sections:
       - question: |
           What happens if Microsoft Defender Antivirus isn't active on a device?
         answer: |
-          Devices that are onboarded to Microsoft Defender for Endpoint has Microsoft Defender Antivirus running in passive mode. In these cases, tamper protection continues to protect the service and its features.
+          Devices that are onboarded to Microsoft Defender for Endpoint have Microsoft Defender Antivirus running in passive mode. In these cases, tamper protection continues to protect the service and its features.
 
       - question: |
           How do I turn tamper protection on or off?
@@ -104,7 +104,7 @@ sections:
           - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device.
 
           > [!CAUTION]
-          > Do not change the value of **TPExclusions**. Use the preceding procedure for information only. Changing the key will have no effect on whether tamper protection applies to exclusions.
+          > Don't change the value of **TPExclusions**. Use the preceding procedure for information only. Changing the key has no effect on whether tamper protection applies to exclusions.
 
       - question: |
           Can I configure tamper protection with Microsoft Configuration Manager?
