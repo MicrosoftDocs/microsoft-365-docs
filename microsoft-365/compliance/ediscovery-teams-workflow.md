@@ -178,10 +178,7 @@ The transcript of audio of the recorded meeting is captured as a separate file a
 - The thumbnail image of the meeting in .jpg format
 - Meeting metadata and meeting chapters (as applicable) in .json format
 
-When viewing meeting audio transcript files in a review set, 
-
-
-The following screenshots show an example of a meeting in the Teams client and the meeting transcript file of the same meeting in the review set. 
+To view meeting audio transcript files in a review set, you'll select the meeting and the **Transcript** viewer on the meeting details pane. The following screenshots show an example of a meeting in the Teams client and the meeting transcript file of the same meeting in the review set.
 
 #### Meeting in Teams client
 
