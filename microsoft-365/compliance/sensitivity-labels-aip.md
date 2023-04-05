@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/14/2023
+ms.date: 04/05/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -219,3 +219,5 @@ To smoothly transition to using built-in labeling for Office apps, use the infor
 - Update any internal documentation and training, and prepare your help desk and users for change.
 
 To help you with your migration journey, we recommend the [migration guidance and playbook from Microsoft Purview Customer Experience Engineering (CxE)](https://microsoft.github.io/ComplianceCxE/playbooks/AIP2MIPPlaybook).
+
+For additional information, see the Tech Community blog post [Microsoft Purview Information Protection in M365 Apps - January 2023](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-purview-information-protection-in-m365-apps-january/ba-p/3721547).
