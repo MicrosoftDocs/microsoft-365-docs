@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 10/11/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -59,6 +59,8 @@ After you enable and configure sensitivity labels for containers, users can addi
 
 ![A sensitivity label when creating a team site from SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
+After a sensitivity label has been applied to a site, you must be a [site admin](/sharepoint/site-permissions#site-admins) to change the label in SharePoint or Teams.
+
 > [!NOTE]
 > Sensitivity labels for containers support [Teams shared channels](/MicrosoftTeams/shared-channels). If a team has any shared channels, they automatically inherit sensitivity label settings from their parent team, and that label can't be removed or replaced with a different label.
 
@@ -84,7 +86,7 @@ After sensitivity labels are enabled for containers as described in the previous
 
 1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Groups & sites** for the label's scope: 
     
-    ![Sensitivity label scope options for files and emails.](../media/groupsandsites-scope-options-sensitivity-label.png)
+    :::image type="content" source="../media/groupsandsites-scope-options-sensitivity-label.png" alt-text="Sensitivity label scope option for Groups & sites.":::
     
     When only this scope is selected for the label, the label won't be displayed in Office apps that support sensitivity labels and can't be applied to files and emails. Having this separation of labels can be helpful for both users and administrators, but can also add to the complexity of your label deployment.
     
@@ -307,7 +309,7 @@ When the label is applied, and users browse to the site, they see the name of th
 
 ### Use PowerShell to apply a sensitivity label to multiple sites
 
-You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) and [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *SensitivityLabel* parameter from the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to apply a sensitivity label to many sites. The sites can be any SharePoint site collection, or a OneDrive site.
+You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) and [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *SensitivityLabel* parameter from the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to apply a sensitivity label to many sites. You can use the same procedure to replace an existing label. The sites can be any SharePoint site collection, or a OneDrive site.
 
 Make sure you have version 16.0.19418.12000 or later of the SharePoint Online Management Shell.
 
@@ -495,9 +497,5 @@ This means that any label settings from sites and groups previously applied to c
 If these containers have Azure AD classification values applied to them, the containers revert to using the classifications again. Be aware that any new sites or groups that were created after enabling the feature won't display a label or have a classification. For these containers, and any new containers, you can now apply classification values. For more information, see [SharePoint "modern" sites classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification) and [Create classifications for Office groups in your organization](../enterprise/manage-microsoft-365-groups-with-powershell.md).
 
 ## Additional resources
-
-See the webinar recording and answered questions for [Using Sensitivity labels with Microsoft Teams, O365 Groups and SharePoint Online sites](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
-
-This webinar was recorded when the feature was still in preview, so you might notice some discrepancies in the UI. However, the information for this feature is still accurate, with any new capabilities documented on this page.
 
 For more information about managing Teams connected sites and channel sites, see [Manage Teams connected sites and channel sites](/SharePoint/teams-connected-sites).

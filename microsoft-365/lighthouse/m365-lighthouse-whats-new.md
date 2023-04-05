@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
+ms.date: 04/03/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -28,6 +29,64 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 
+## March 2023
+
+### Microsoft Defender for Endpoint multi-tenant threat and vulnerability management
+
+Microsoft Defender Vulnerability Management helps proactively identify and build a secure foundation for devices through the remediation of software vulnerabilities and misconfigurations in customer environments. Microsoft 365 Lighthouse now includes Vulnerability Management capabilities. Go to **Devices** > [Vulnerability management](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/VulnerabilityManagement.ReactView) to see the exposure score across all your managed tenants that have been onboarded to Microsoft Defender for Endpoint. To see security recommendations for how to reduce tenants' exposure to vulnerabilities, select the **Recommendations** tab.
+
+### Device security insights from Microsoft Defender for Business and Microsoft Defender for Endpoint
+
+Microsoft 365 Lighthouse now surfaces summarized insights into the various security alerts from Microsoft Defender for Business and Microsoft Defender for Endpoint across your managed tenants. To access these insights, go to **Devices** > **Device security** > [Overview](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/MDE.ReactView). These insights can help you assess the overall status, severity, and category of the various security alerts in your tenants before drilling into the full list of alerts.
+
+### Tenants page improvements
+
+We've updated the [Tenants page](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) to help you more easily manage your customer tenants in Microsoft 365 Lighthouse. Using the new List options feature, which you access by selecting the icon next to the search box, you can now view your customer tenants by domain name or tenant ID. We've also updated the Tenants page to reflect the new Granular Delegated Admin Privileges (GDAP) setup and Lighthouse management capabilities.
+
+You'll notice that customer tenants that don't meet the criteria to be fully managed in Microsoft 365 Lighthouse (for example, they don't have GDAP set up or they're missing a required subscription) show a Lighthouse management status of **Limited**. These tenants are eligible for only a limited set of experiences in Microsoft 365 Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health.
+
+Lastly, we've added a new pane that details the customer criteria for each of your customer tenants. For customers with a **Limited** Lighthouse management status, for example, you can select the tenant name to open this pane and see a detailed status and recommended next steps.
+
+### Deployment status reporting
+
+Microsoft 365 Lighthouse now provides a deployment plan status for each active tenant to help you optimize and prioritize your deployment efforts. The deployment plan status is found on the Tenants page and on the new Deployment insights page.
+
+## February 2023
+
+### App insights from Endpoint analytics  
+
+We've added insights from Endpoint analytics to Microsoft 365 Lighthouse to help you proactively take measures to improve the health of user devices and apps within managed tenants. The insights from Endpoint analytics inform a deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, select **Apps** > **App performance** in the left navigation pane in Microsoft 365 Lighthouse to see the Endpoint analytics insights.  
+
+For more information, see [What is Endpoint analytics?](/mem/analytics/overview).
+
+### Device insights from Endpoint analytics  
+
+We've added insights from Endpoint analytics to Microsoft 365 Lighthouse to help you proactively take measures to improve the health of user devices and apps within managed tenants. The insights from Endpoint analytics inform a deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, select **Devices** > **Device health** in the left navigation pane in Microsoft 365 Lighthouse to see the Endpoint analytics insights.  
+
+For more information, see [What is Endpoint analytics?](/mem/analytics/overview).
+
+### Multi-tenant exposure score and recommendations  
+
+We've brought multi-tenant threat and vulnerability management capabilities from Microsoft Defender for Endpoint (MDE) into Microsoft 365 Lighthouse. To see the exposure levels of all your managed tenants onboarded to MDE, go to **Devices** > **Vulnerability management** in Microsoft 365 Lighthouse.  
+
+### Persistent deployment status detection and configuration drift analysis 
+
+We've enhanced Microsoft 365 Lighthouse to provide persistent configuration detection and deployment status to monitor your tenants&mdash;even when you're offline&mdash;and identify any updates to a tenant configuration that results in a regression of the deployment status for any of the assigned tasks.   
+
+Microsoft 365 Lighthouse also provides *who*, *where*, and *when* details about user activity that caused the detected drift so that you can efficiently and effectively restore the tenant to the desired state.  
+
+This insight helps you effectively engage fellow tenant admins&mdash;either in your organization or in the customer's organization&mdash;to educate them about the impact of their activity and how to mitigate future risks associated with configuration drift.   
+
+### Deployment insights Home page card 
+
+The Microsoft 365 Lighthouse Home page now includes a Deployment insights card that provides actionable insights around the deployment state of the tenants you manage. These insights can help identify where to focus deployment activities to optimize tenant health and security.
+
+:::image type="content" source="../media/m365-lighthouse-whats-new/deployment-insights-card.png" alt-text="Screenshot of the Deployment insights card on the Home page.":::
+
+### Deployment progress by user  
+
+Microsoft 365 Lighthouse now reports deployment progress by user so you can see the deployment status for every applicable deployment task. The ability to see which users are compliant with, not compliant with, not targeted for, not licensed for, or excluded from each deployment task across all your managed tenants can help you to more efficiently and effectively help each user be secure and productive. 
+
 ## January 2023
 
 ### Automation of Intune device enrollment through the default baseline
@@ -46,9 +105,9 @@ The **Account management** > **Search users** page now shows search results as s
 
 We've updated the Microsoft Defender Firewall and Microsoft Defender Antivirus policy settings in our default baseline to provide enhanced protection for your customer tenants. If you previously deployed the **Configure Microsoft Defender Firewall for Windows 10 and later** or the **Configure Microsoft Defender Antivirus for Windows 10 and later** tasks, your customer tenants are still protected with the original policy settings. However, on the Deployment plan page, the deployment steps for these two tasks will show a status of **Not compliant** until you deploy the new enhanced policy settings. To activate these enhanced policy settings, you'll need to go through the deployment process again for both the Microsoft Defender Firewall and Microsoft Defender Antivirus deployment tasks. Once deployed, the deployment step statuses will show as **Compliant** again.
 
-### Capability to set up Granular Delegated Admin Privileges (GDAP)
+### Capability to set up granular delegated admin privileges (GDAP)
 
-You can now establish GDAP relationships with multiple reseller customers at once from within Microsoft 365 Lighthouse and assign users in the partner tenant to security groups with various roles and levels of permissions. To do this, you'll create reusable templates based on tiers of support for your customers and for various groups of technicians. You'll see recommended roles for each tier of support during this process. Once created, these templates can then be reapplied as needed to new customers. This functionality allows you to quickly establish GDAP with your customers by using a least-privileged approach for users as a replacement for Delegated Admin Privileges (DAP).
+You can now establish GDAP relationships with multiple reseller customers at once from within Microsoft 365 Lighthouse and assign users in the partner tenant to security groups with various roles and levels of permissions. To do this, you'll create reusable templates based on tiers of support for your customers and for various groups of technicians. You'll see recommended roles for each tier of support during this process. Once created, these templates can then be reapplied as needed to new customers. This functionality allows you to quickly establish GDAP with your customers by using a least-privileged approach for users as a replacement for delegated admin privileges (DAP).
 
 For more information on GDAP in Microsoft 365 Lighthouse, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
@@ -101,7 +160,7 @@ Managed Service Providers (MSPs) can now deploy app protection policies for thei
 
 ### Device health monitoring
 
-We've added a new deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, Endpoint analytics in Microsoft Endpoint Manager will be able to analyze device data and can recommend software, help improve startup performance, and fix common support issues.
+We've added a new deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, Endpoint analytics in Microsoft Intune will be able to analyze device data and can recommend software, help improve startup performance, and fix common support issues.
 
 For more information, see [What is Endpoint analytics?](/mem/analytics/overview).
 
@@ -123,7 +182,7 @@ You can now act on the incidents and alerts shown on the **Device security** > *
 
 ### View and manage inactive user accounts
 
-Microsoft 365 Lighthouse now provides a list of all the inactive user accounts in your managed tenants. To access the list, select **Users** > **Inactive users** from the left navigation pane in Microsoft 365 Lighthouse. You can reduce security risks by using this list to track and clean up accounts that are still enabled but that haven't been used in the past six months.
+Microsoft 365 Lighthouse now provides a list of all the inactive user accounts in your managed tenants. To access the list, select **Users** > **Inactive users** in the left navigation pane in Microsoft 365 Lighthouse. You can reduce security risks by using this list to track and clean up accounts that are still enabled but that haven't been used in the past six months.
 
 ### Microsoft Edge policy deployment
 
@@ -149,7 +208,7 @@ Microsoft 365 Lighthouse now makes the deployment of baselines to all of your ma
 
 ### Support for Microsoft 365 E5 customers
 
-We've changed our onboarding requirements to allow you to onboard Microsoft 365 E5 customers to Microsoft 365 Lighthouse. The expanded list of licenses that Microsoft 365 Lighthouse supports for onboarding includes Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Microsoft Defender for Business, and Windows 365 for Business. Customers who have at least one of any of these licenses, meet the requirements for delegated access permissions, and don't exceed the maximum number of licensed users can be managed in Microsoft 365 Lighthouse.
+We've changed our onboarding requirements to allow you to onboard Microsoft 365 E5 customers to Microsoft 365 Lighthouse. The expanded list of licenses that Microsoft 365 Lighthouse supports for onboarding includes Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Microsoft Defender for Business, and Windows 365 for Business. Customers who have at least one of any of these licenses, meet the requirements for delegated access privileges, and don't exceed the maximum number of licensed users can be managed in Microsoft 365 Lighthouse.
 
 For a full list of requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
@@ -183,7 +242,7 @@ We've redesigned the user details pane to include more user information and more
 
 ### Delegated access type and roles on Tenants page
 
-We've updated the **Tenants** page to list the Managed Service Provider (MSP)'s delegated access type (None, DAP, GDAP, or Both DAP & GDAP) per customer under the **Delegated access** column. We've also added a new column titled **Your roles** that lists the DAP and GDAP roles per customer for a signed-in user. These two enhancements to the **Tenants** page will make it easier for MSP technicians to understand which types of delegated administrative permissions are available for each customer and which delegated roles have explicitly been granted to them.
+We've updated the **Tenants** page to list the Managed Service Provider (MSP)'s delegated access type (None, DAP, GDAP, or Both DAP & GDAP) per customer under the **Delegated access** column. We've also added a new column titled **Your roles** that lists the DAP and GDAP roles per customer for a signed-in user. These two enhancements to the **Tenants** page will make it easier for MSP technicians to understand which types of delegated admin privileges are available for each customer and which delegated roles have explicitly been granted to them.
 
 To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
@@ -207,9 +266,9 @@ Now that Microsoft 365 Lighthouse is in General Availability, we require our cur
 
 ## February 2022
 
-### Granular Delegated Access Permissions (GDAP) roles
+### Granular delegated admin privileges (GDAP) roles
 
-Microsoft 365 Lighthouse now includes the capability for MSPs to use Granular Delegated Admin Privileges (GDAP) roles. With the latest update, MSPs can leverage GDAP roles for their technicians that enable the principle of least privilege access in Microsoft 365 Lighthouse. This capability reduces the risks inherent in the broad permissions of the Delegated Access Permissions (DAP) role of the Admin Agent by enabling granular controls on the customers' data and settings that each technician will be able to work with.
+Microsoft 365 Lighthouse now includes the capability for MSPs to use granular delegated admin privileges (GDAP) roles. With the latest update, MSPs can leverage GDAP by assigning roles to their technicians to enforce the principle of least privilege access in Microsoft 365 Lighthouse. This capability reduces the risks inherent in the broad permissions of the delegated admin privileges (DAP) role of the Admin Agent by enabling granular controls on the customers' data and settings that each technician will be able to work with.
 
 To learn more about GDAP in Microsoft 365 Lighthouse, see [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md).
 
@@ -242,7 +301,7 @@ For more information, see [Requirements for Microsoft 365 Lighthouse](m365-light
 
 ### Support for advisor customers
 
-We've changed our onboarding requirements to allow existing customer tenants with advisor relationships to be onboarded to Microsoft 365 Lighthouse. Customers with both reseller and advisor contracts are now eligible to be in Microsoft 365 Lighthouse if they meet the requirements for delegated access permissions, have the required licenses, and don't exceed the maximum user count.
+We've changed our onboarding requirements to allow existing customer tenants with advisor relationships to be onboarded to Microsoft 365 Lighthouse. Customers with both reseller and advisor contracts are now eligible to be in Microsoft 365 Lighthouse if they meet the requirements for delegated access privileges, have the required licenses, and don't exceed the maximum user count.
 
 For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
@@ -304,7 +363,7 @@ We've made some changes to the tenant filtering experience to help you quickly v
 
 ### In-product email workflows to communicate with users
 
-We've made it easier to communicate with users in your customer tenants about actions they're required to take. From the list of users not registered for multifactor authentication (MFA) or self-service password reset, you can now select one or more users and send them an email message using a downloadable email template.
+We've made it easier to communicate with users in your customer tenants about actions they're required to take. From the list of users not registered for multifactor authentication (MFA) or self-service password reset (SSPR), you can now select one or more users and send them an email message using a downloadable email template.
 
 ### Capability to take action on noncompliant devices
 
@@ -337,7 +396,7 @@ With the new baselines feature, you can now deploy standard configurations to he
 - Require MFA for admins
 - Require MFA for users
 - Block Legacy Authentication
-- Enroll Windows Devices in Microsoft Endpoint Manager – Azure AD Join
+- Enroll Windows Devices in Microsoft Intune – Azure AD Join
 - Configure Defender AV policy for Windows devices
 - Configure Compliance Policy for Windows devices
 

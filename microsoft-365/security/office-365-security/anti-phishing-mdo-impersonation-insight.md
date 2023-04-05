@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -16,11 +14,13 @@ search.appverid:
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier2
 description: Admins can learn how the impersonation insight works. They can quickly determine which senders are legitimately sending email into their organizations from domains that don't pass email authentication checks (SPF, DKIM, or DMARC).
 ms.custom: 
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 11/30/2022
 ---
 
 # Impersonation insight in Defender for Office 365
@@ -46,17 +46,16 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>. To go directly to the **Impersonation insight** page, use <https://security.microsoft.com/impersonationinsight>.
 
-- You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
-  - **Organization Management**
-  - **Security Administrator**
-  - **Security Reader**
-  - **Global Reader**
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
+    - **Organization Management**
+    - **Security Administrator**
+    - **Security Reader**
+    - **Global Reader**
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Security Reader**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-  For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
-
-  **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-
-- You enable and configure impersonation protection in anti-phishing policies in Microsoft Defender for Office 365. Impersonation protection is not enabled by default. For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md).
+- You enable and configure impersonation protection in anti-phishing policies in Microsoft Defender for Office 365. Impersonation protection isn't enabled by default. For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 ## Open the impersonation insight in the Microsoft 365 Defender portal
 
@@ -69,7 +68,7 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
    The insight has two modes:
 
     - **Insight mode**: If impersonation protection is enabled and configured in any anti-phishing policies, the insight shows the number of detected messages from impersonated domains and impersonated users (senders) over the past seven days. This is the total of all detected impersonated senders from all anti-phishing policies.
-    - **What if mode**: If impersonation protection is not enabled and configured in any active anti-phishing policies, the insight shows you how many messages *would* have been detected by our impersonation protection capabilities over the past seven days.
+    - **What if mode**: If impersonation protection isn't enabled and configured in any active anti-phishing policies, the insight shows you how many messages *would* have been detected by our impersonation protection capabilities over the past seven days.
 
 To view information about the impersonation detections, click **View impersonations** in the impersonation insight.
 
@@ -95,7 +94,7 @@ To filter the results, you can use the ![Search icon.](../../media/m365-cc-sc-se
 
 On the **Domains** tab on the **Impersonation insight** page, select one of the available impersonation detections. The details flyout that appears contains the following information and features:
 
-- **Selection impersonation policy to modify**: Select the affected anti-phishing policy that you want to modify. Only polices where the impersonated domain is defined in the policy are available. Refer to the previous page to see which policy was actually responsible for detecting the impersonated domain (likely based on the recipient and the priority of the policy).
+- **Selection impersonation policy to modify**: Select the affected anti-phishing policy that you want to modify. Only policies where the impersonated domain is defined in the policy are available. Refer to the previous page to see which policy was actually responsible for detecting the impersonated domain (likely based on the recipient and the priority of the policy).
 - **Add to the allowed to impersonation list**: Use this toggle to add or remove the sender from the **Trusted senders and domains** (impersonation exceptions) for the anti-phishing policy that you selected:
   - If the **Allowed to impersonate** value for this entry was **No**, the toggle is off. To exempt all senders in this domain from evaluation by impersonation protection, slide the toggle to on: ![Toggle on.](../../media/scc-toggle-on.png). The domain is added to the **Trusted domains** list in the impersonation protection settings of the anti-phishing policy.
   - If the **Allowed to impersonate** value for this entry was **Yes**, the toggle is on. To return all senders in this domain to evaluation by impersonation protection, slide the toggle to off: ![Toggle off.](../../media/scc-toggle-off.png). The domain is removed from the **Trusted domains** list in the impersonation protection settings of the anti-phishing policy.
@@ -128,7 +127,7 @@ To filter the results, you can use the **Filter sender** box to enter a comma-se
 
 On the **Users** tab on the **Impersonation insight** page, select one of the available impersonation detections. The details flyout that appears contains the following information and features:
 
-- **Selection impersonation policy to modify**: Select the affected anti-phishing policy that you want to modify. Only polices where the impersonated sender is defined in the policy are available. Refer to the previous page to see which policy was actually responsible for detecting the impersonated sender (likely based on the recipient and the priority of the policy).
+- **Selection impersonation policy to modify**: Select the affected anti-phishing policy that you want to modify. Only policies where the impersonated sender is defined in the policy are available. Refer to the previous page to see which policy was actually responsible for detecting the impersonated sender (likely based on the recipient and the priority of the policy).
 - **Add to the allowed to impersonation list**: Use this toggle to add or remove the sender from the **Trusted senders and domains** (impersonation exceptions) for the anti-phishing policy that you selected:
   - If the **Allowed to impersonate** value for this entry was **No**, the toggle is off. To exempt the sender from evaluation by impersonation protection, slide the toggle to on: ![Toggle on.](../../media/scc-toggle-on.png). The sender is added to the **Trusted users** list in the impersonation protection settings of the anti-phishing policy.
   - If the **Allowed to impersonate** value for this entry was **Yes**, the toggle is on. To return the sender to evaluation by impersonation protection, slide the toggle to off: ![Toggle off.](../../media/scc-toggle-off.png). The sender is removed from the **Trusted users** list in the impersonation protection settings of the anti-phishing policy.

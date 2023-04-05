@@ -22,6 +22,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
+ms.date: 06/14/2022
 ---
 
 # Understand the Defender Experts for Hunting report in Microsoft 365 Defender
@@ -55,7 +56,15 @@ To view these notifications, select **View Defender Experts Notifications**. Thi
 > [!NOTE]
 > The **View Defender Experts Notifications** button only appears if the number of threats identified is at least 1.
 
-All other identified suspicious activities are summarized in a table in the **Threat categories** section of the report. The columns represent the different threat attack tactics and categories to help you visualize what an activity is trying to achieve in each attack phase so you can plan the corresponding containment and remediation actions. 
+All other identified activities are summarized in a table in the **Threat categories** section of the report. The columns represent the different threat attack tactics and categories to help you visualize what an activity is trying to achieve in each attack phase so you can plan the corresponding containment and remediation actions.
+
+You can filter the activities displayed in the table by choosing any of the following options in the dropdown menu:
+
+- **Suspicious activities** (default) – Displays identified true positive and benign true positive activities in your environment. Note that not all suspicious activities will have corresponding Defender Expert Notifications.
+- **DEX notified** – Displays activities with corresponding Defender Expert Notifications only.
+- **All activities** – Displays all true positive, benign true positive, and false positive activities.  
+
+![Screenshot of the top section of the Threat categories section showing the dropdown menu.](../../media/defender-experts/threat-categories-filter.png)
 
 If an activity has a related Defender Expert Notification, its corresponding icon also appears under the activity name.
 Selecting an identified suspicious activity opens a flyout panel detailing the impacted devices and users: 

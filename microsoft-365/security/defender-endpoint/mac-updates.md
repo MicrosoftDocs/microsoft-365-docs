@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Deploy updates for Microsoft Defender for Endpoint on macOS
@@ -35,7 +36,7 @@ search.appverid: met150
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
-To update Microsoft Defender for Endpoint on macOS, a program named Microsoft AutoUpdate (MAU) is used. MAU checks daily for updates, and automatically downloads and installs them.
+To update Microsoft Defender for Endpoint on macOS, a program named Microsoft AutoUpdate (MAU) is used. MAU checks updates periodically, and automatically downloads and installs them.
 
 :::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
 
@@ -65,9 +66,9 @@ The `Current` channel contains the most stable version of the product.
 > [!IMPORTANT]
 > Prior to Microsoft AutoUpdate version 4.29, channels had different names:
 >
-> - `Beta` was named `InsiderFast` (Insider Fast)
-> - `Preview` was named `External` (Insider Slow)
-> - `Current` was named `Production`
+> - `Beta Channel` was named `InsiderFast` (Insider Fast)
+> - `Current Channel` (Preview) was named `External` (Insider Slow)
+> - `Current Channel` was named `Production`
 
 > [!TIP]
 > In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.
@@ -127,7 +128,7 @@ Change how MAU searches for updates.
 
 ### Change whether the "Check for Updates" button is enabled
 
-Change whether local users will be able to click the "Check for Updates" option in the Microsoft AutoUpdate user interface.
+Change whether local users are able to click the "Check for Updates" option in the Microsoft AutoUpdate user interface.
 
 <br>
 

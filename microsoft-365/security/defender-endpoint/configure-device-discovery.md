@@ -20,6 +20,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 03/23/2021
 ---
 
 # Configure device discovery
@@ -30,7 +31,6 @@ search.appverid: met150
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 Discovery can be configured to be on standard or basic mode. Use the standard option to actively find devices in your network, which will better guarantee the discovery of endpoints and provide richer device classification.
 
@@ -46,7 +46,7 @@ Navigate to **Settings** > **Device discovery**
 2. If you've selected to use Standard discovery, select which devices to use for active probing: all devices or on a subset by specifying their device tags, and then select **Save**
 
 > [!NOTE]
->Standard discovery uses various PowerShell scripts to actively probe devices in the network. Those PowerShell scripts are Microsoft signed and are executed from the following location: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`. For example, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
+> Standard discovery uses various PowerShell scripts to actively probe devices in the network. Those PowerShell scripts are Microsoft signed and are executed from the following location: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`. For example, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
 
 ## Exclude devices from being actively probed in standard discovery
 
@@ -56,7 +56,7 @@ You can configure the devices to exclude in the **Exclusions** page.
 
 ## Select networks to monitor
 
-Microsoft Defender for Endpoint analyzes a network and determines if it's a corporate network that needs to be monitored or a non-corporate network that can be ignored. To identify a network as corporate, we correlate network identifiers across all tenant's clients and if the majority of the devices in the organization report that they are connected to the same network name, with the same default gateway and DHCP server address, we assume that this is a corporate network. Corporate networks are typically chosen to be monitored. However, you can override this decision by choosing to monitor non-corporate networks where onboarded devices are found.
+Microsoft Defender for Endpoint analyzes a network and determines if it's a corporate network that needs to be monitored or a non-corporate network that can be ignored. To identify a network as corporate, we correlate network identifiers across all tenant's clients and if most devices in the organization report that they're connected to the same network name, with the same default gateway and DHCP server address, we assume that this is a corporate network. Corporate networks are typically chosen to be monitored. However, you can override this decision by choosing to monitor non-corporate networks where onboarded devices are found.
 
 You can configure where device discovery can be performed by specifying which networks to monitor. When a network is monitored, device discovery can be performed on it.
 
@@ -65,19 +65,19 @@ A list of networks where device discovery can be performed is shown in the **Mon
 > [!NOTE]
 > The list shows networks that were identified as corporate networks. If less than 50 networks are identified as corporate networks, then list will show up to 50 networks with the most onboarded devices.
 
-The list of monitored networks is sorted based upon the total number of devices seen on the network in the last 7 days.
+The list of monitored networks is sorted based upon the total number of devices seen on the network in the last seven days.
 
 You can apply a filter to view any of the following network discovery states:
 
 - **Monitored networks** - Networks where device discovery is performed.
-- **Ignored networks** - This network will be ignored and device discovery won't be performed on it.
-- **All** - Both monitored and ignored networks will be displayed.
+- **Ignored networks** - This network is ignored and device discovery isn't performed on it.
+- **All** - Both monitored and ignored networks are displayed.
 
 ### Configure the network monitor state
 
-You control where device discovery takes place. Monitored networks are where device discovery will be performed and are typically corporate networks. You can also choose to ignore networks or select the initial discovery classification after modifying a state.
+You control where device discovery takes place. Monitored networks are where device discovery is performed and are typically corporate networks. You can also choose to ignore networks or select the initial discovery classification after modifying a state.
 
-Choosing the initial discovery classification means applying the default system-made network monitor state. Selecting the default system-made network monitor state means that networks that were identified to be corporate, will be monitored, and ones identified as non-corporate, will be ignored automatically.
+Choosing the initial discovery classification means applying the default system-made network monitor state. Selecting the default system-made network monitor state means that networks that were identified to be corporate, are monitored, and ones identified as non-corporate, are ignored automatically.
 
 1. Select **Settings > Device discovery**.
 2. Select **Monitored networks**.
@@ -95,7 +95,7 @@ Choosing the initial discovery classification means applying the default system-
 
 ## Explore devices in the network
 
-You can use the following advanced hunting query to get more context about each network name described in the networks list. The query lists all the onboarded devices that were connected to a certain network within the last 7 days.
+You can use the following advanced hunting query to get more context about each network name described in the networks list. The query lists all the onboarded devices that were connected to a certain network within the last seven days.
 
 ```kusto
 DeviceNetworkInfo

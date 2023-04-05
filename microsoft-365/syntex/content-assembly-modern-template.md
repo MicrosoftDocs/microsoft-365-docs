@@ -5,7 +5,8 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.topic: article
+ms.date: 12/02/2022
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid:
 ms.collection:
@@ -204,6 +205,8 @@ When you have completed adding all relevant fields to the template and you want 
 2. To view, edit, or unpublish *published* templates from the **Published templates** dropdown menu in the **Modern templates** section, select **New** > **Edit New menu** from the document library. 
 
 ## See also
+
+[Map fields of a modern template to library columns](content-assembly-map-fields.md)
 
 [Edit a modern template](content-assembly-edit-template.md)
 

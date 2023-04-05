@@ -1,6 +1,7 @@
 ---
 title: "Microsoft 365 Multi-Geo"
 ms.reviewer: anfra
+ms.date: 08/10/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -17,7 +18,7 @@ description: In this article, learn how to expand your Microsoft 365 presence to
 
 # Microsoft 365 Multi-Geo
 
-The Microsoft 365 Multi-Geo Capabilities add-on provides customers with the ability to expand their Microsoft 365 presence to multiple geographic regions or counties within a single existing Microsoft 365 _Tenant_. Multi-Geo enables customers to manage data-at-rest locations at a granular level for their users, SharePoint sites, Microsoft 365 Groups, and Microsoft Teams teams level. Multi-Geo is targeted to customers who have a need to store customer data in multiple geographies at the same time to satisfy their data residency requirements and whose needs may change over time.
+The Microsoft 365 Multi-Geo Capabilities add-on provides customers with the ability to expand their Microsoft 365 presence to multiple geographic regions or countries within a single existing Microsoft 365 _Tenant_. Multi-Geo enables customers to manage data-at-rest locations at a granular level for their users, SharePoint sites, Microsoft 365 Groups, and Microsoft Teams teams level. Multi-Geo is targeted to customers who have a need to store customer data in multiple geographies at the same time to satisfy their data residency requirements and whose needs may change over time.
   
 Microsoft 365 Multi-Geo is designed to meet customers' data residency requirements and allow for collaboration between and amongst the customers satellite location and preferred data locations. If customer requires performance optimization functionalities for Microsoft 365, see <a href="https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848" target="_blank">Network planning and performance tuning for Microsoft 365</a> or contact your support group.
 

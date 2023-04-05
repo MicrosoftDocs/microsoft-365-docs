@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Offboard machine API
@@ -72,7 +73,7 @@ Delegated (work or school account)|Machine.Offboard|'Offboard machine'
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 ```
 
-The machine ID can be found in the URL when you select the device. Generally, it is a 40 digit alphanumeric number that can be found in the URL.
+The machine ID can be found in the URL when you select the device. Generally, it's a 40 digit alphanumeric number that can be found in the URL.
 
 ## Request headers
 
@@ -97,7 +98,7 @@ If successful, this method returns 200 - Created response code and [Machine Acti
 
 ### Request
 
-Here is an example of the request. If there is no JSON comment added, it will error out with code **400**.
+Here's an example of the request. If there's no JSON comment added, it will error out with code **400**.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/offboard

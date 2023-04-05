@@ -33,6 +33,8 @@ landingContent:
             url: model-types-overview.md
       - linkListType: learn
         links:
+          - text: Intro to Syntex
+            url: /training/modules/syntex-intro
           - text: Syntex on LinkedIn Learning
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
 
@@ -63,6 +65,10 @@ landingContent:
             url: create-a-form-processing-model.md
           - text: Prebuilt models
             url: prebuilt-overview.md
+      - linkListType: video
+        links:
+          - text: Syntex model types
+            url: https://www.microsoft.com/videoplayer/embed/RE4GJXS
       - linkListType: how-to-guide
         links:
           - text: Create an enterprise model
@@ -119,16 +125,22 @@ landingContent:
             url: adoption-assessment-tool.md
           - text: Run a trial
             url: trial-syntex.md
+      - linkListType: whats-new
+        links:
+          - text: Solution accelerators
+            url: site-templates.md
 
     # Card 7
-  - title: Get support
+  - title: More features
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
         links:
-          - text: Tech Community blog
-            url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
-          - text: FAQ
-            url: https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:faqtab
+          - text: Annotations
+            url: annotations.md
+          - text: Content query
+            url: metadata-search.md
+          - text: Content processing
+            url: content-processing-overview.md
 
     # Card 8
   - title: Extensibility
@@ -139,4 +151,15 @@ landingContent:
             url: powershell-syntex-intro.md
           - text: Syntex Model REST API
             url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
+          - text: Syntex-SharePoint Advanced Management
+            url: /sharepoint/advanced-management
 
+    # Card 9
+  - title: Get support
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Tech Community blog
+            url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
+          - text: FAQ
+            url: https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:faqtab

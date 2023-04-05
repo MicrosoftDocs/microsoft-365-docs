@@ -19,6 +19,7 @@ ms.collection:
 - tier3
 ms.subservice: mde
 search.appverid: met150
+ms.date: 03/06/2023
 ---
 
 # Onboard Windows devices in Azure Virtual Desktop
@@ -28,7 +29,7 @@ search.appverid: met150
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows multi-session running on Azure Virtual Desktop (AVD)
-- [Windows 10 Enterprise Multi-Session](/microsoft-365/security/defender-endpoint/azure-server-integration)
+- [Windows 10 Enterprise Multi-Session](/azure/virtual-desktop/windows-10-multisession-faq)
 
 Microsoft Defender for Endpoint supports monitoring both VDI and Azure Virtual Desktop sessions. Depending on your organization's needs, you might need to implement VDI or Azure Virtual Desktop sessions to help your employees access corporate data and apps from an unmanaged device, remote location, or similar scenario. With Microsoft Defender for Endpoint, you can monitor these virtual machines for anomalous activity.
 
@@ -155,7 +156,7 @@ Also, if you're using FSlogix user profiles, we recommend you exclude the follow
 
 #### Licensing requirements
 
-Note on licensing: When using Windows Enterprise multi-session, depending on your requirements, you can choose to either have all users licensed through Microsoft Defender for Endpoint (per user), Windows Enterprise E5, Microsoft 365 Security, or Microsoft 365 E5, or have the VM licensed through Microsoft Defender for Cloud.
+Note on licensing: When using Windows Enterprise multi-session, depending on your requirements, you can choose to either have all users licensed through Microsoft Defender for Endpoint (per user), Windows Enterprise E5, Microsoft 365 E5 Security, or Microsoft 365 E5, or have the VM licensed through Microsoft Defender for Cloud.
 Licensing requirements for Microsoft Defender for Endpoint can be found at: [Licensing requirements](minimum-requirements.md#licensing-requirements).
 
 ### Known issues and limitations

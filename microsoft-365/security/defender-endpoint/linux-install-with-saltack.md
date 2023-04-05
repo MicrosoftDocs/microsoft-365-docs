@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 01/19/2023
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Saltstack
@@ -37,6 +38,8 @@ This article describes how to deploy Defender for Endpoint on Linux using Saltst
 - [Create Saltstack state files](#create-saltstack-state-files)
 - [Deployment](#deployment)
 - [References](#references)
+
+[!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../../includes/support.md)]
 
 ## Prerequisites and system requirements
 
@@ -176,7 +179,7 @@ Create a SaltState state file in your configuration repository (typically `/srv/
     - required: install_mdatp_package
     ```
 
-Create a SaltState state file in your configuration repository (typically `/srv/salt`) that applies the necessary states to offboard and remove Defender for Endpoint. Before using the offboarding state file, you'll need to download the offboading package from the Security portal and extract it in the same way you did the onboarding package. The downloaded offboarding package is only valid for a limited period of time.
+Create a SaltState state file in your configuration repository (typically `/srv/salt`) that applies the necessary states to offboard and remove Defender for Endpoint. Before using the offboarding state file, you need to download the offboarding package from the Security portal and extract it in the same way you did the onboarding package. The downloaded offboarding package is only valid for a limited period of time.
 
 - Create an Uninstall state file `uninstall_mdapt.sls` and add the state to remove the `mdatp_onboard.json` file
 
@@ -223,7 +226,7 @@ Create a SaltState state file in your configuration repository (typically `/srv/
 
 ## Deployment
 
-Now apply the state to the minions. The below command will apply the state to machines with the name that begins with `mdetest`.
+Now apply the state to the minions. The below command applies the state to machines with the name that begins with `mdetest`.
 
 - Installation:
 
@@ -251,7 +254,7 @@ Now apply the state to the minions. The below command will apply the state to ma
 
 ## Log installation issues
 
-See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+For more information on how to find the automatically generated log that is created by the installer when an error occurs, see [Log installation issues](linux-resources.md#log-installation-issues).
 
 ## Operating system upgrades
 

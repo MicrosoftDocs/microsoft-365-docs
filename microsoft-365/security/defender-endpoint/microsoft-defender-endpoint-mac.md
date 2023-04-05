@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 03/22/2021
 ---
 
 # Microsoft Defender for Endpoint on Mac
@@ -77,7 +78,7 @@ The three most recent major releases of macOS are supported.
 - 13 (Ventura), 12 (Monterey), 11 (Big Sur)
 - Disk space: 1GB
 
-Beta versions of macOS are not supported.
+Beta versions of macOS aren't supported.
 
 Support for macOS devices with M1 chip-based processors has been officially supported since version 101.40.84 of the agent.
 
@@ -126,7 +127,7 @@ If a proxy or firewall is blocking anonymous traffic, make sure that anonymous t
 >
 > SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender for Endpoint on macOS to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 
-To test that a connection is not blocked, open <https://x.cp.wd.microsoft.com/api/report> and <https://cdn.x.cp.wd.microsoft.com/ping> in a browser.
+To test that a connection isn't blocked, open <https://x.cp.wd.microsoft.com/api/report> and <https://cdn.x.cp.wd.microsoft.com/ping> in a browser.
 
 If you prefer the command line, you can also check the connection by running the following command in Terminal:
 

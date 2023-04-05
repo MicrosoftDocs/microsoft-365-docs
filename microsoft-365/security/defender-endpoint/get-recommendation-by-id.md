@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Get recommendation by ID
@@ -70,7 +71,7 @@ If successful, this method returns 200 OK with the security recommendations in t
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-chrome
@@ -78,7 +79,7 @@ GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-c
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 {

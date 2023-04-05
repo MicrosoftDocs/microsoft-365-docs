@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -31,7 +32,7 @@ description: "Get a periodic report of how people in your organization are using
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. Perpetual license model will not be included in the reports. 
+You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. Perpetual license model won't be included in the reports. 
   
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
 
@@ -55,7 +56,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 ::: moniker-end
 
-2. Click the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. On that page, different reports for the service are provided in tabs.
+2. Select the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. On that page, different reports for the service are provided in tabs.
 
    :::image type="content" alt-text="The Usage dashboard." source="../../media/activity-usage-analytics3.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 
@@ -178,4 +179,6 @@ However, when you select a particular day, up to 28 days from the current date, 
 ## Related content
 
 [Microsoft 365 usage analytics](../usage-analytics/usage-analytics.md) (article)\
-[Customize the reports in Microsoft 365 usage analytics](../usage-analytics/customize-reports.md) (article)
+[Customize the reports in Microsoft 365 usage analytics](../usage-analytics/customize-reports.md) (article)\
+[Working with Microsoft 365 usage reports in Microsoft Graph beta](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true) (article)\
+[Working with Microsoft 365 usage reports in Microsoft Graph v1.0](/graph/api/resources/report?view=graph-rest-1.0&preserve-view=true) (article)

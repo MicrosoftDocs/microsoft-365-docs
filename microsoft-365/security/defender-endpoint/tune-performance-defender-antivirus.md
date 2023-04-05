@@ -189,13 +189,6 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 
 The above command collects a performance recording on Server02 (as specified by argument $s of parameter Session) and saves it to the specified path: **C:\LocalPathOnServer02\trace.etl** on Server02.
 
-##### Example 3: Collect a performance recording in non-interactive mode
-
-```powershell
-New-MpPerformanceRecording -RecordTo .\Defender-scans.etl -Seconds 60
-```
-
-The above command collects a performance recording for the duration in seconds specified by parameter -Seconds. This is recommended for users conducting batch collections that require no interaction or prompt.
 
 #### Parameters: New-MpPerformanceRecording
 
@@ -223,18 +216,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-##### -Seconds
-
-Specifies the duration of the performance recording in seconds. This is recommended for users conducting batch collections that require no interaction or prompt.
-
-```yaml
-Type: Int32
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### Get-MpPerformanceReport
 
 The following section describes the Get-MpPerformanceReport PowerShell cmdlet. Analyzes and reports on Microsoft Defender Antivirus performance recording.
@@ -243,51 +224,51 @@ The following section describes the Get-MpPerformanceReport PowerShell cmdlet. A
 
 ```output
 Get-MpPerformanceReport [-Path] <String>
-	[-TopScans [<Int32>]]
-	[-TopPaths [<Int32>] [-TopPathsDepth [<Int32>]]]
-			[-TopScansPerPath [<Int32>]]
-			[-TopFilesPerPath [<Int32>]
-					[-TopScansPerFilePerPath [<Int32>]]
-					]
-			[-TopExtensionsPerPath [<Int32>]
-					[-TopScansPerExtensionPerPath [<Int32>]]
-					]
-			[-TopProcessesPerPath [<Int32>]
-					[-TopScansPerProcessPerPath [<Int32>]]
-					]
-			]
-	[-TopFiles [<Int32>]
-			[-TopScansPerFile [<Int32>]]
-			[-TopProcessesPerFile [<Int32>]
-					[-TopScansPerProcessPerFile [<Int32>]]
-					]
-			]
-	[-TopExtensions [<Int32>]
-			[-TopScansPerExtension [<Int32>]
-			[-TopPathsPerExtension [<Int32>] [-TopPathsDepth [<Int32>]]
-					[-TopScansPerPathPerExtension [<Int32>]]
-					]
-			[-TopProcessesPerExtension [<Int32>]
-					[-TopScansPerProcessPerExtension [<Int32>]]
-					]
-			[-TopFilesPerExtension [<Int32>]
-					[-TopScansPerFilePerExtension [<Int32>]]
-					]
-			]
-	[-TopProcesses [<Int32>]
-			[-TopScansPerProcess [<Int32>]]
-			[-TopExtensionsPerProcess [<Int32>]
-					[-TopScansPerExtensionPerProcess [<Int32>]]
-					]
-			[-TopPathsPerProcess [<Int32>] [-TopPathsDepth [<Int32>]]
-					[-TopScansPerPathPerProcess [<Int32>]]
-					]
-			[-TopFilesPerProcess [<Int32>]
-					[-TopScansPerFilePerProcess [<Int32>]]
-					]
-			]
-	[-MinDuration <String>]
-	[-Raw]
+    [-TopScans [<Int32>]]
+    [-TopPaths [<Int32>] [-TopPathsDepth [<Int32>]]]
+            [-TopScansPerPath [<Int32>]]
+            [-TopFilesPerPath [<Int32>]
+                    [-TopScansPerFilePerPath [<Int32>]]
+                    ]
+            [-TopExtensionsPerPath [<Int32>]
+                    [-TopScansPerExtensionPerPath [<Int32>]]
+                    ]
+            [-TopProcessesPerPath [<Int32>]
+                    [-TopScansPerProcessPerPath [<Int32>]]
+                    ]
+            ]
+    [-TopFiles [<Int32>]
+            [-TopScansPerFile [<Int32>]]
+            [-TopProcessesPerFile [<Int32>]
+                    [-TopScansPerProcessPerFile [<Int32>]]
+                    ]
+            ]
+    [-TopExtensions [<Int32>]
+            [-TopScansPerExtension [<Int32>]
+            [-TopPathsPerExtension [<Int32>] [-TopPathsDepth [<Int32>]]
+                    [-TopScansPerPathPerExtension [<Int32>]]
+                    ]
+            [-TopProcessesPerExtension [<Int32>]
+                    [-TopScansPerProcessPerExtension [<Int32>]]
+                    ]
+            [-TopFilesPerExtension [<Int32>]
+                    [-TopScansPerFilePerExtension [<Int32>]]
+                    ]
+            ]
+    [-TopProcesses [<Int32>]
+            [-TopScansPerProcess [<Int32>]]
+            [-TopExtensionsPerProcess [<Int32>]
+                    [-TopScansPerExtensionPerProcess [<Int32>]]
+                    ]
+            [-TopPathsPerProcess [<Int32>] [-TopPathsDepth [<Int32>]]
+                    [-TopScansPerPathPerProcess [<Int32>]]
+                    ]
+            [-TopFilesPerProcess [<Int32>]
+                    [-TopScansPerFilePerProcess [<Int32>]]
+                    ]
+            ]
+    [-MinDuration <String>]
+    [-Raw]
 ```
 
 #### Description: Get-MpPerformanceReport

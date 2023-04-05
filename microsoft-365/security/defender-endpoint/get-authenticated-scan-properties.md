@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/14/2022
 ---
 
 # Authenticated scan methods and properties
@@ -56,15 +57,15 @@ Learn more about [Windows authenticated scan](../defender-vulnerability-manageme
 
 Property ID|Data type|Description
 :---|:---|:---
-id|String| Scan id.
+id|String| Scan ID.
 scanType|Enum|The type of scan. Possible values are: "Windows", "Network".
 scanName|String|Name of the scan.
 isActive|Boolean|Status of whether the scan actively running.
-orgId |String| Related organization id.
-intervalInHours|Int|The interval at which the scan will run.
+orgId |String| Related organization ID.
+intervalInHours|Int|The interval at which the scan runs.
 createdBy|String| Unique identity of the user that created the scan.
 targetType|String|The target type in the target field. Possible types are "IP Address" or "Hostname". Default value is IP Address.
 target|String| A comma separated list of targets to scan, either IP addresses or hostnames.
 scanAuthenticationParams|Object|Set of authenticated scan objects, contains: authentication type, username, password. See [Get all scan definitions](./get-all-scan-definitions.md).
-scannerAgent|Object|Set of scanner agent objects, contains: id, device id, device name, the date and time (in UTC) the device was last seen, assigned application id, scanner software version, and the date and time (in UTC) the scanner agent was last executed. See [Get all scan definitions](./get-all-scan-definitions.md).
+scannerAgent|Object|Set of scanner agent objects, contains: ID, device ID, device name, the date and time (in UTC) the device was last seen, assigned application ID, scanner software version, and the date and time (in UTC) the scanner agent was last executed. See [Get all scan definitions](./get-all-scan-definitions.md).
 latestScan|Object|Latest scan object contains: scan status, failure, the date and time (in UTC) the scan was executed. See [Get all scan definitions](./get-all-scan-definitions.md).

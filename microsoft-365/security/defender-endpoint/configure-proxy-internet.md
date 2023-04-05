@@ -18,6 +18,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 04/04/2023
 ---
 
 # Configure device proxy and Internet connectivity settings
@@ -29,6 +30,9 @@ ms.subservice: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+
+> [!IMPORTANT]
+> Devices that are configured for IPv6-only traffic are not supported.
 
 The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Defender for Endpoint service. The embedded Defender for Endpoint sensor runs in system context using the LocalSystem account.
 
@@ -91,7 +95,7 @@ The static proxy is configurable through group policy (GP), both the settings un
 | Configure connected user experiences and telemetry | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> For example: ```10.0.0.6:8080``` (REG_SZ) |
 
 > [!NOTE]
-> If you are using 'TelemetryProxyServer' setting on devices that are otherwise **completely offline**, meaning the operating system is unable to connect for the online certificate revocation list or Windows Update, then it is recommended to add the additional registry setting `PreferStaticProxyForHttpRequest` with a value of `1`.<br>
+> If you are using 'TelemetryProxyServer' setting on devices that are otherwise **completely offline**, meaning the operating system is unable to connect for the online certificate revocation list or Windows Update, then it is required to add the additional registry setting `PreferStaticProxyForHttpRequest` with a value of `1`.<br>
 > Parent registry path location for "PreferStaticProxyForHttpRequest" is "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"<br>
 > The following command can be used to insert the registry value in the correct location:<br>
 > ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```<br>
@@ -107,7 +111,7 @@ Configure the static proxy using the Group Policy available in Administrative Te
 
 1. **Administrative Templates > Windows Components > Microsoft Defender Antivirus > Define proxy server for connecting to the network**. 
 
-2. Set it to **Enabled** and define the proxy server. Note, the URL must have either http:// or https://. For supported versions for https://, see [Manage Microsoft Defender Antivirus updates](manage-updates-baselines-microsoft-defender-antivirus.md).
+2. Set it to **Enabled** and define the proxy server. Note, the URL must have either http:// or https://. For supported versions for https://, see [Manage Microsoft Defender Antivirus updates](microsoft-defender-antivirus-updates.md).
 
    :::image type="content" source="images/proxy-server-mdav.png" alt-text="The proxy server for Microsoft Defender Antivirus" lightbox="images/proxy-server-mdav.png":::
 
@@ -191,7 +195,7 @@ In your firewall, open all the URLs where the geography column is WW. For rows w
 > URLs that include v20 in them are only needed if you have Windows devices running version 1803 or later. For example, `us-v20.events.data.microsoft.com` is needed for a Windows device running version 1803 or later and onboarded to US Data Storage region.
 >
 
-If a proxy or firewall is blocking anonymous traffic as Defender for Endpoint sensor, and it's connecting from system context to make sure anonymous traffic is permitted in the previously listed URLs.
+If a proxy or firewall is blocking anonymous traffic from the Defender for Endpoint sensor and it's connecting from system context, it's important to make sure anonymous traffic is permitted in your proxy or firewall for the previously listed URLs.
 
 > [!NOTE]
 > Microsoft does not provide a proxy server. These URLs are accessible via the proxy server that you configure.

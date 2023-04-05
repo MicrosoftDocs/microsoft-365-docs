@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: chventou
 search.appverid: met150
+ms.date: 10/22/2021
 ---
 
 # Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe
@@ -72,9 +73,8 @@ To learn more, see [Configure and manage Microsoft Defender Antivirus with mpcmd
 
 If you haven't already done so, configure your <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture.
 
-You can also configure whether and what features end users can see in the Microsoft Defender Security Center.
+You can also configure whether and what features end users can see.
 
-- [Overview of the Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/use)
 - [Endpoint protection: Microsoft Defender Security Center](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## Next steps
