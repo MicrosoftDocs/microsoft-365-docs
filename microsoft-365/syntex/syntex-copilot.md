@@ -40,7 +40,7 @@ Copilot for Syntex analyzes the text of a selected file in a SharePoint document
 
 4. On the **Copilot** panel, you can:
 
-    - Select one of the questions Copilot has generated for you.
+    - Select one of the questions Copilot has generated for you tailored for the specific file.
 
        ![Screenshot of the generated questions on the Copilot panel.](../media/content-understanding/copilot-generated-questions.png)
 
@@ -48,7 +48,7 @@ Copilot for Syntex analyzes the text of a selected file in a SharePoint document
 
        ![Screenshot of the text box on the Copilot panel.](../media/content-understanding/copilot-text-box.png)
 
-    - In the text box, select the starter prompt to see suggested actions tailored to the specific file.
+    - In the text box, select **More from Syntex** to find more information about the file.
 
        ![Screenshot of the text box on the Copilot panel with the starter prompt highlighted.](../media/content-understanding/copilot-starter-prompt.png)
 
