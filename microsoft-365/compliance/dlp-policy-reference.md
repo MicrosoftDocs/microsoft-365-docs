@@ -838,6 +838,8 @@ produces this text in the customized notification:
 
 *pasting from the clipboard File Name: Contoso doc 1 via WINWORD.EXE isn't allowed by your organization. Select the 'Allow' button if you want to bypass the policy Contoso highly confidential*
 
+You can localize your custom policy tips by using the [Set-DlpComplianceRule -NotifyPolicyTipCustomTextTranslations cmdlet](/powershell/module/exchange/new-dlpcompliancerule#-notifypolicytipcustomtexttranslations).
+
 > [!NOTE]
 > User notifications and policy tips are not available for the On-premises location
 >
