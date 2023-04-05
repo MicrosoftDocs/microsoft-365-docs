@@ -67,6 +67,13 @@ If a user reports any of the above symptoms, you should perform further investig
   - sign-in times
   - sign-in success or failure
 
+> [!IMPORTANT]
+> The button below will let you test and identify suspicious activities against an account and give you information that can be used to recover in case the account is compromised.
+>
+<div class="nextstepaction">
+<p><a href="https://aka.ms/diagca" data-linktype="external">Run Tests: Compromised Accounts</a></p>
+</div>
+
 ## How to secure and restore email function to a suspected compromised Microsoft 365 account and mailbox
 
 <!--- [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false] --->
