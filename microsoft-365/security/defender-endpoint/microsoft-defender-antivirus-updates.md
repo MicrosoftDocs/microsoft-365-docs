@@ -4,7 +4,7 @@ description: Manage how Microsoft Defender Antivirus receives protection and pro
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 04/04/2023
+ms.date: 04/05/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
