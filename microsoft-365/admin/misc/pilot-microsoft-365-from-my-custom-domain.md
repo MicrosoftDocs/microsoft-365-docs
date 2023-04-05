@@ -84,9 +84,9 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 > [!NOTE]
 > Unblocking your existing email server allows any spam that arrives through your original server to come to the Microsoft 365 mailboxes, and you can't evaluate how well Microsoft 365 prevents spam.
 
-1. In the Exchange admin center navigation pane, select **Protection**, and then select **Connection filter**.
+1. Sign in to Microsoft 365 Defender(https://security.microsoft.com/antispam), select **Policies & rules**, Click on **Threat policies** and then select **Anti-spam policies**.
 
-2. In the **IP Allow list**, select **+**, and add the mail server IP address for your current email provider.
+2. Select **Connection filter policy (Default)**, and click on Edit **Edit connection filter policy** and add the mail server IP address for your current email provider in the **Always allow messages from the following IP addresses or address range** Section.
 
 ### Step 5: Create user accounts and set the primary reply-to address
 
