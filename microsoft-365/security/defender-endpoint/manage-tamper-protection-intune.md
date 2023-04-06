@@ -123,3 +123,4 @@ You can use a registry key to determine whether the functionality to protect Mic
 
 - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+- [Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)
