@@ -203,10 +203,11 @@ Use the following procedure to check the status of Microsoft Defender Antivirus,
 
    4. Reboot the device.
 
-If you still need help, see the following troubleshooting items:
-
-- [Microsoft Defender Antivirus seems to be stuck in passive mode](/microsoft-365/security/defender-endpoint/switch-to-mde-troubleshooting#microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode)
-- [I'm having trouble re-enabling Microsoft Defender Antivirus on Windows Server 2016](/microsoft-365/security/defender-endpoint/switch-to-mde-troubleshooting#i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016)
+> [!TIP]
+> If you still need help, see the following troubleshooting items:
+> 
+> - [Microsoft Defender Antivirus seems to be stuck in passive mode](/microsoft-365/security/defender-endpoint/switch-to-mde-troubleshooting#microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode)
+> - [I'm having trouble re-enabling Microsoft Defender Antivirus on Windows Server 2016](/microsoft-365/security/defender-endpoint/switch-to-mde-troubleshooting#i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016)
 
 ## See also
 
