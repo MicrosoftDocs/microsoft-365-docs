@@ -27,6 +27,11 @@ search.appverid: met150
 
 # Plan attack surface reduction (ASR) rules deployment
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 Before you test or enable Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules, you should plan how you will roll out your deployment. Careful planning will not only help testing and enabling your ASR rules deployment, but will also be of benefit when you configure ASR rules exceptions. When planning to test or enable attack surface reduction (ASR) rules it is important to start with the right business unit. You'll want to start with a small group of people in a specific business unit. You can identify some ASR champions within a particular business unit who can provide real-world impact about the ASR rules, and help you tune your implementation.
 
 > :::image type="content" source="images/asr-rules-planning-steps.png" alt-text="The ASR rules planning steps. Preparation before you test Microsoft Defender for Endpoint (MDE) ASR rules, or enable MDE ASR rules. " lightbox="images/asr-rules-planning-steps.png":::

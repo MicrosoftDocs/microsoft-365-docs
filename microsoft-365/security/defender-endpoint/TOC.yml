@@ -279,6 +279,8 @@
           href: mac-device-control-jamf.md
         - name: Intune examples
           href: mac-device-control-intune.md
+        - name: macOS Device Control frequently asked questions (FAQ)
+          href: mac-device-control-faq.md
 
       - name: Schedule scans
         href: mac-schedule-scan.md
@@ -592,7 +594,7 @@
         - name: Manage tamper protection on an individual device
           href: manage-tamper-protection-individual-device.md
         - name: FAQs on tamper protection
-          href: faqs-tamper-protection.md
+          href: faqs-on-tamper-protection.yml
       - name: Turn on block at first sight
         href: configure-block-at-first-sight-microsoft-defender-antivirus.md
       - name: Configure the cloud block timeout period
@@ -725,7 +727,7 @@
       - name: Troubleshooting Microsoft Defender Antivirus
         items:
         - name: Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus
-          href: troubleshoot-microsoft-defender-antivirus.md
+          href: troubleshoot-microsoft-defender-antivirus.yml
         - name: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
           href: troubleshoot-microsoft-defender-antivirus-when-migrating.yml
 
@@ -870,6 +872,8 @@
 
     - name: EDR in block mode
       href: edr-in-block-mode.md
+    - name: EDR in block mode FAQ
+      href: edr-block-mode-faqs.yml
 
     - name: Automated investigation and response (AIR)
       items:
@@ -1345,10 +1349,10 @@
         href: troubleshoot-onboarding-error-messages.md
       - name: Troubleshoot security configuration management onboarding issues
         href: troubleshoot-security-config-mgt.md
-
+    - name: Troubleshoot problems with tamper protection
+      href: troubleshoot-problems-with-tamper-protection.yml
     - name: Troubleshooting migration issues
       href: switch-to-mde-troubleshooting.md
-
     - name: Troubleshoot sensor state
       items:
       - name: Check sensor state
