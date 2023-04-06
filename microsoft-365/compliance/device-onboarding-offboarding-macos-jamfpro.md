@@ -69,7 +69,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 4. Choose **Download onboarding package** and then extract the contents of the device onboarding package. In the JAMF folder, you should see the *DeviceComplainceOnboarding.plist* file.
 
-5. Choose **Download installation package** 
+5. Choose **Download installation package**
 
 ### Create a JAMF Pro configuration profile for the onboarding package
 
