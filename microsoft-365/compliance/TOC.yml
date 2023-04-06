@@ -1396,8 +1396,10 @@
         - name: Overview of Content search
           href: search-for-content.md
         - name: Search for content
-          href: ediscovery-content-search.md
+          href: ediscovery-content-search.md          
           items: 
+          - name: Search for content in Teams
+            href: ediscovery-teams-content-search.md 
           - name: Keyword queries and search conditions
             href: ediscovery-keyword-queries-and-search-conditions.md
           - name: Use the KQL editor to build search queries
@@ -1464,6 +1466,8 @@
           href: ediscovery-standard-get-started.md
         - name: Create eDiscovery holds
           href: ediscovery-create-holds.md
+        - name: Create a hold for Teams users
+          href: ediscovery-teams-legal-hold.md
         - name: Search for content in a case
           href: ediscovery-search-for-content.md
         - name: Export content from a case
