@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_billing
+- empty
 search.appverid: MET150
 description: "Learn how to use multi-tenant billing relationships to share billing accounts across tenants in the Microsoft 365 admin center."
 ms.date: 08/15/2022
