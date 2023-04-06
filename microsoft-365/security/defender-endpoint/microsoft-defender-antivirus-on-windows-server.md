@@ -103,7 +103,7 @@ sc query state= all
 > 
 > Note the modified logic for `ForceDefenderPassiveMode` when tamper protection is enabled: Once Microsoft Defender Antivirus is toggled to active mode, tamper protection will prevent it from going back into passive mode even when `ForceDefenderPassiveMode` is set to `1`.
 
-To get your regular security intelligence updates, the Windows Update service must be running. If you use an update management service, like Windows Server Update Services (WSUS), make sure that updates for Microsoft Defender Antivirus Security intelligence are approved for the computers you manage.
+To get your regular security intelligence updates, the Windows Update service must be running. If you use an update management service, like Windows Server Update Services (WSUS), make sure Microsoft Defender Antivirus Security intelligence updates are approved for the computers you manage.
 
 By default, Windows Update doesn't download and install updates automatically on Windows Server 2019 or Windows Server 2022, or Windows Server 2016. You can change this configuration by using one of the following methods:
 
@@ -204,7 +204,7 @@ If you were previously running a non-Microsoft antivirus product on Windows Serv
 If you still need help, see the following troubleshooting items:
 
 - [Microsoft Defender Antivirus seems to be stuck in passive mode](/microsoft-365/security/defender-endpoint/switch-to-mde-troubleshooting#microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode)
-- [I am having trouble re-enabling Microsoft Defender Antivirus on Windows Server 2016](/microsoft-365/security/defender-endpoint/switch-to-mde-troubleshooting#i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016)
+- [I'm having trouble re-enabling Microsoft Defender Antivirus on Windows Server 2016](/microsoft-365/security/defender-endpoint/switch-to-mde-troubleshooting#i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016)
 
 ## See also
 
