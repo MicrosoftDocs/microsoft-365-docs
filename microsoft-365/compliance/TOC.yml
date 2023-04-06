@@ -1613,6 +1613,8 @@
               href: ediscovery-view-documents-in-review-set.md
             - name: Use the review set dashboard
               href: ediscovery-dashboard.md
+            - name: Invite guest users to cases
+              href: ediscovery-guest-access.md
         - name: Analyze case content
           href: ediscovery-analyzing-data-in-review-set.md
           items: 
