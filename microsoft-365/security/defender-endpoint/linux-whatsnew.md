@@ -3,13 +3,11 @@ title: What's new in Microsoft Defender for Endpoint on Linux
 description: List of major changes for Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
 ms.service: microsoft-365-security
-ms.mktglfcycl: security
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
+ms.reviewer: kumasumit
 ms.localizationpriority: medium
-ms.date: 11/03/2022
+ms.date: 04/05/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -45,6 +43,34 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Signature version: **1.379.1299.0**<br/>
 **What's new**
 - This new release is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customers. There is no change for other customers and upgrade is optional. 
+	
+**Known issues**
+
+- With mdatp version 101.98.30 you might see a health false issue in some of the cases, because SELinux rules are not defined for certain scenarios. The health warning could look something like this:
+
+*found SELinux denials within last one day. If the MDATP is recently installed, please clear the existing audit logs or wait for a day for this issue to auto-resolve. Please use command: \"sudo ausearch -i -c 'mdatp_audisp_pl' | grep \"type=AVC\" | grep \" denied\" to find details*
+
+The issue could be mitigated by running the following commands.
+
+```
+sudo ausearch -c 'mdatp_audisp_pl' --raw | sudo audit2allow -M my-mdatpaudisppl_v1
+sudo semodule -i my-mdatpaudisppl_v1.pp
+```
+
+Here my-mdatpaudisppl_v1 represents the policy module name. After running the commands, either wait for 24 hours or clear/archive the audit logs. The audit logs could be archived by running the following command
+
+```
+sudo service auditd stop
+sudo systemctl stop mdatp
+cd /var/log/audit
+sudo gzip audit.*
+sudo service auditd start
+sudo systemctl start mdatp
+mdatp health
+```
+
+In case the issue reappears with some different denials. We need to run the mitigation again with a different module name(eg my-mdatpaudisppl_v2).
+
 </details>
 	
 <details>
