@@ -58,12 +58,12 @@ Download the following files these files to complete this phase of the procedure
 
 |File needed for |Source |
 |---------|---------|
-System mobile config file | [mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only; the file will not be recognized if it has the .txt extension.|
-MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig). Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only; the file will not be recognized if it has the .txt extension.
+System mobile config file | [mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) Copy and paste the contents into a text file. Change the file extension from ".txt". to "**.mobileconfig**" and save the file. The file won't be recognized if it has the .txt extension.|
+MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig). Copy and paste the contents into a text file. Change the file extension from ".txt". to "**.mobileconfig**" and save the file. The file won't be recognized if it has the .txt extension.|
 
 ### Get the device onboarding package
 
-:::image type="content" source="../media/device-macos-dnld-onboarding-package-inline.png" alt-text="Screenshot of the steps to get the device onboarding package." lightbox="../media/device-macos-dnld-onboarding-package-expanded.png":::
+:::image type="content" source="../media/device-macos-dnld-onboarding-package-inline.png" alt-text="Screenshot of the Microsoft Intune Configuration settings tab with all fields populated." lightbox="../media/device-macos-dnld-onboarding-package-expanded.png":::
 
 1. In the **Microsoft Purview compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
  
@@ -77,15 +77,17 @@ MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/
 
 > [!TIP]
 > We recommend downloading the *.mobileconfig* files in a [single bundle](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig). This bundle contains the following files:
-
+>
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 > - netfilter.mobileconfig
 > - system extensions
 >
-> If any of these files is updated, you need to download the updated bundle.<br>
+> If any of these files is updated, you need to download the updated bundle.
 
-> ALternatively, you can download the files individually. If a file is later updated, you need to re-download specific, updated, file individually.
+<br>
+
+Alternatively, you can download the files individually. If a file is later updated, you need to re-download specific, updated, file individually.
 
 ### Deploy the mobileconfig and onboarding packages
 
@@ -106,16 +108,18 @@ MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/
     1. Specify the **Deployment channel**.
     1. Upload the **mdatp-nokext.mobileconfig** file that you previously downloaded.
     1. Choose **Next**.
+    :::image type="content" source="../media/custom-intune-config-settings-inline.png" alt-text="Screenshot of the Intune Configuration settings tab." lightbox="../media/custom-intune-config-settings-expanded.png":::
 
-1. On the **Assignments** tab, add the group(s) you want to deploy these configurations to and choose **Next**. For information about assignments in Microsoft Intune, see [Assign policies in Microsoft Intune](https://learn.microsoft.com/mem/intune/configuration/device-profile-assign) and [Exclude groups from a policy assignment](https://learn.microsoft.com/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-policy-assignment).
 
-1. Review your settings and choose **Create** to deploy the configuration.
+1. On the **Assignments** tab, add the group(s) you want to deploy these configurations to and choose **Next**. For information about policy assignments in Microsoft Intune, see [Assign policies in Microsoft Intune](https://learn.microsoft.com/mem/intune/configuration/device-profile-assign) and [Exclude groups from a policy assignment](https://learn.microsoft.com/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-policy-assignment).
 
-1. Repeat steps 2-9 to create profiles for the:
-    1. **DeviceComplianceOnboarding.xml** file. Name it *Purview Device Onboarding Package*
-    1. **com.microsoft.wdav.mobileconfig** file. Name it *Endpoint Device Preferences*
+1. On the **Review and create** tab, review your settings and then choose **Create** to deploy the configuration.
+
+1. Repeat steps 2-9 to create profiles for the following files:
+    1. **DeviceComplianceOnboarding.xml**: name it *Microsoft Purview Device Onboarding Package*
+    1. **com.microsoft.wdav.mobileconfig**: name it *Endpoint Device Preferences*
  
-1. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
+1. Open the **Devices** > **macOS** > **Configuration profiles** tab. Your newly created profiles display.
 
 1. In the **Configuration profiles** page, choose the profile that you just created, for example *SystemMobileConfig* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
@@ -125,17 +129,15 @@ Microsoft Endpoint DLP is installed as a component of Microsoft Defender for End
 
 1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com/), open **Apps**.
 
-1. Select By platform > macOS > Add.
+1. **Select By platform** > **macOS** > **Add**.
 
-1. Choose **App type**=**macOS**, click **Select**.
+1. For **App type**, choose **Microsoft Defender for Endpoint (macOS)** from the list and then choose **Select**.
 
-1. Keep default values, click **Next**.
+1. Add assignments as needed for your organization and then choose **Next**.
 
-1. Add assignments, click **Next**.
+1. Review and choose **Create**.
 
-1. Review and **Create**.
-
-1. You can visit **Apps** \> **By platform** \> **macOS** to see it on the list of all applications.
+1. To verify that Microsoft Defender for Endpoints is now available, visit **Apps** \> **By platform** \> **macOS** to see it on the list of all applications.
 
 <!--## Offboard macOS devices using Intune PINGING PG FOR THIS PROCEDURE
 

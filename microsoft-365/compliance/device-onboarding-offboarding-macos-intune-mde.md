@@ -45,7 +45,7 @@ Use these steps to onboard a macOS device into Compliance solutions if MDE has a
 
 ### Prerequisites
 
- You'll need these files for this procedure:
+ You'll need to re-deploy these files for this procedure:
 
 |File needed for |Source |
 |---------|---------|
@@ -53,56 +53,52 @@ Use these steps to onboard a macOS device into Compliance solutions if MDE has a
 full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 
 > [!TIP]
-> You can download the *.mobileconfig* files individually or in a [single combined file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) that contains:
+> You can download the *.mobileconfig* files individually or as a [bundled file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) that contains both of the files listed in the table above.
 >
-> - accessibility.mobileconfig
-> - fulldisk.mobileconfig
->
->If any of these individual files is updated, you need to download the updated file or the combined file again.
+>If any of the individual files are updated, you must once again download and replace either the specific file that was updated or the bundled files.
 
-### Create system configuration profiles
+### Create system configuration profiles 
+
+<!-- Update this section, map to the general "Intune" doc -->
 
 1. Open the **Microsoft Intune admin center** > **Devices** > **Configuration profiles**.
 
 1. Choose: **Create profile**.
 
 1. Choose:
-    1. **Platform = macOS**
     1. **Profile type = Templates**
     1. **Template name = Custom**
 
 1. Choose **Create**.
 
 
-1. Choose a name for the profile, like *AccessibilityformacOS* in this example. Choose **Next**.
+1. Choose a name for the profile, like *AccessibilityformacOS* as in this example. Choose **Next**.
 
-1. Choose the **accessibility.mobileconfig** file (downloaded as part of the prerequisites) as the configuration profile file.
-
-1. Choose **Next**
+1. Choose the **accessibility.mobileconfig** file (downloaded as part of the prerequisites) as the configuration profile file and choose **Next**
 
 1. On the **Assignments** tab, add the group you want to deploy these configurations to and choose **Next**.
 
 1. Review your settings and then choose **Create** to deploy the configuration.
 
-1. Open **Devices** > **Configuration profiles**. The profiles you created display.
+1. Open **Devices** > **macOS** > **Configuration profiles**. The profiles you created display.
 
 1. on the **Configuration profiles** page, choose the profile that you just created (in this example *AccessibilityformacOS*) and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
 ### Update existing system configuration profiles
 
-1. A Full Disk Access configuration profile should have been previously created and deployed for MDE.  (For details, see [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access)). Endpoint DLP requires an additional Full Disk Access permission for a new application: `com.microsoft.dlp.daemon`. 
-    1. Update the existing Full Disk Access configuration profile with the fulldisk.mobileconfig file.
-    1. Add a new key to the profile using these values:
+1. A Full Disk Access configuration profile should have been previously created and deployed for MDE.  (For details, see [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access)). Endpoint DLP requires an additional Full Disk Access permission for a new application: `com.microsoft.dlp.daemon`.
+    a. Add the following key to the *fulldisk.mobileconfig* file, then save the file.
 
 ```xml
 <key>features</key> 
-<dict> 
-    <key>systemExtensions</key> 
-    <string>enabled</string> 
-    <key>dataLossPrevention</key> 
-    <string>enabled</string> 
-</dict> 
+     <dict> 
+        <key>dataLossPrevention</key> 
+        <string>enabled</string> 
+    </dict> 
 ```
+
+    b. Update the existing **Full Disk Access** configuration profile with the modified *fulldisk.mobileconfig* file.
+
 
 Here's an [example mobileconfig file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig).
 
@@ -115,13 +111,11 @@ Here's an [example mobileconfig file](https://github.com/microsoft/mdatp-xplat/b
 
 2. On the **Configuration profiles** page, choose the **MDE preferences** profile.
 
-3. Remove these settings:
+3. Remove this settings:
    
 ```xml
 <key>features</key>
 <dict>
-    <key>systemExtensions</key>
-    <string>enabled</string>
     <key>dataLossPrevention</key>
     <string>enabled</string>
 </dict>
