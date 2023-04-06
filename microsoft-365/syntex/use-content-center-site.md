@@ -89,3 +89,7 @@ See how content is used to illustrate model activity and to provide more informa
 ### Find additional resources
 
 Discover additional resources and scenarios to help you learn more about Syntex.
+
+## See also
+
+[Accelerate your solution using site templates for Syntex](site-templates.md)
