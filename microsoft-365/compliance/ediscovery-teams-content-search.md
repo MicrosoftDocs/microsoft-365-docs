@@ -27,11 +27,7 @@ appliesto:
 > [!NOTE]
 > Content search of messages and files in [private channels](/microsoftteams/private-channels) work differently than in standard channels. To learn more, see [Content search of private channels](#content-search-of-private-channels).
 
-Content search provides a way to query Microsoft Teams information spanning Exchange, SharePoint Online, and OneDrive for Business.
-
-To learn more, see [Content search in Microsoft 365](ediscovery-content-search.md).
-
-For example, using **Content search** against your Manufacturing Specs mailbox and Manufacturing Specs SharePoint site, you can search against Teams standard channel conversations from Exchange, file uploads and modifications from SharePoint Online, and OneNote changes.
+[Content search](ediscovery-content-search.md) provides a way to query Microsoft Teams information spanning Exchange, SharePoint Online, and OneDrive for Business. For example, using **Content search** against your *Manufacturing Specs* mailbox and *Manufacturing Specs* SharePoint site, you can search against Teams standard channel conversations from Exchange, file uploads and modifications from SharePoint Online, and OneNote changes.
 
 You can also add query criteria to the **Content Search** to narrow the results returned. In the above example, you can look for content where the keywords "**New Factory Specs"** were used.
 
@@ -87,6 +83,6 @@ Before you perform these steps, make sure you have the [latest version of the Te
     ```
 3. Include the mailboxes of all members from each private channel in the team as part of your content search query.
 
-## Related topics
+## Related articles
 
-- [eDiscovery cases in the Microsoft Purview compliance portal](/Office365/SecurityCompliance/ediscovery-cases)
+- [eDiscovery cases in the Microsoft Purview compliance portal](/microsoft-365/compliance/ediscovery-cases)
