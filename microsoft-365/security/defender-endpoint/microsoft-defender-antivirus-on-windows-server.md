@@ -191,7 +191,7 @@ If you were previously running a non-Microsoft antivirus product on Windows Serv
 
 Use the following procedure to check the status of Microsoft Defender Antivirus, and if necessary, set it to active mode:
 
-1. [Verify Microsoft Defender Antivirus is running](#verify-microsoft-defender-antivirus-is-running).
+1. Check the status of Microsoft Defender Antivirus by following the guidance in [Verify Microsoft Defender Antivirus is running](#verify-microsoft-defender-antivirus-is-running) (in this article).
 
 2. If necessary, set Microsoft Defender Antivirus to active mode manually by following these steps:
 
