@@ -63,7 +63,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 ## Step 1: Create quarantine policies in the Microsoft 365 Defender portal
 
-1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Email & collaboration** \> **Policies & Rules** \> **Threat policies** \> **Quarantine policy** in the **Rules** section. Or, to go directly to the **Quarantine policy** page, use <https://security.microsoft.com/quarantinePolicies>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & Rules** \> **Threat policies** \> **Quarantine policy** in the **Rules** section. Or, to go directly to the **Quarantine policy** page, use <https://security.microsoft.com/quarantinePolicies>.
 
    :::image type="content" source="../../media/mdo-quarantine-policy-page.png" alt-text="Quarantine policy page in the Microsoft 365 Defender portal." lightbox="../../media/mdo-quarantine-policy-page.png":::
 
@@ -102,9 +102,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
    When you're finished on the page, click **Done**.
 
-8. Back on the **Quarantine policy** page, the policy that you created is now listed.
-
-You're ready to assign the quarantine policy to a supported security feature as described in the [Step 2](#step-2-assign-a-quarantine-policy-to-supported-features) section.
+Back on the **Quarantine policy** page, the policy that you created is now listed. You're ready to assign the quarantine policy to a supported security feature as described in the [Step 2](#step-2-assign-a-quarantine-policy-to-supported-features) section.
 
 ### Create quarantine policies in PowerShell
 
@@ -169,7 +167,7 @@ For detailed syntax and parameter information, see [New-QuarantinePolicy](/power
 
 ## Step 2: Assign a quarantine policy to supported features
 
-In _supported_ protection features that quarantine email messages, you can assign a quarantine policy that defines what users can do to quarantine messages and whether notifications for quarantined messages are turned on. Features that quarantine messages and the availability of quarantine policies are described in the following table:
+In supported protection features that quarantine email messages, the assigned quarantine policy defines what users can do to quarantine messages and whether quarantine notifications are turned on. Protection features that quarantine messages and whether they support quarantine policies are described in the following table:
 
 |Feature|Quarantine policies supported?|
 |---|:---:|
@@ -190,7 +188,7 @@ In _supported_ protection features that quarantine email messages, you can assig
 |&nbsp;&nbsp;&nbsp;Files that are quarantined as malware by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)|No|
 |**[Exchange mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) with the action: 'Deliver the message to the hosted quarantine' (_Quarantine_)**|No|
 
-The default quarantine policies that are used by each feature are described in the related tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+The default quarantine policies that are used by each protection feature are described in the related tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
 The default quarantine policies, preset permission groups, and permissions are described in the [Appendix](#appendix) section at the end of this article.
 
@@ -199,23 +197,19 @@ The rest of this step explains how to assign quarantine policies for supported f
 ## Assign quarantine policies in supported policies in the Microsoft 365 Defender portal
 
 > [!NOTE]
-> Users can't release their own messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies, regardless of how the quarantine policy is configured. At best, admins can configure the quarantine policy so users can _request_ the release of their quarantined malware or high confidence phishing messages, although we typically don't recommend it.
+> Users can't release their own messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of their quarantined malware or high confidence phishing messages, although we typically don't recommend it.
 
 ### Anti-spam policies
 
-1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Ant-spam policies** page, use <https://security.microsoft.com/antispam>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Ant-spam policies** page, use <https://security.microsoft.com/antispam>.
 
-2. On the **Anti-spam policies** page, do one of the following steps:
-   - Find and select an existing **inbound** anti-spam policy.
-   - Create a new **inbound** anti-spam policy.
+2. On the **Anti-spam policies** page, use either of the following methods:
+   - Select an existing **inbound** anti-spam policy by clicking anywhere in the row other than the check box next to the name. In the policy details flyout that opens, go to the **Actions** section and then click **Edit actions**.
+   - Click ![Create policy icon.](../../media/m365-cc-sc-create-icon.png) **Create policy**, select **Inbound** from the drop down list to start the new anti-spam policy wizard, and then get to the **Actions** page.
 
-3. Do one of the following steps:
-   - **Edit existing**: Select the policy by clicking on the name of the policy. In the policy details flyout, go to the **Actions** section and then click **Edit actions**.
-   - **Create new**: In the new policy wizard, get to the **Actions** page.
+3. On the **Actions** page or flyout, every verdict that has the **Quarantine message** action selected will also have the **Select quarantine policy** box for you to select a  quarantine policy.
 
-4. On the **Actions** page, every verdict that has the **Quarantine message** action will also have the **Select quarantine policy** box for you to select a corresponding quarantine policy.
-
-   When you create a new policy, a blank **Select quarantine policy** value indicates the default quarantine policy for that verdict is used. When you later edit the policy, the blank values are replaced by the actual default quarantine policy names as described in the supported features.
+   During the creation of the anti-spam policy, if you _change_ the action of a spam filtering verdict to **Quarantine message**, the **Select quarantine policy** box is blank by default. A blank value means the default quarantine policy for that verdict is used. When you later view or edit the anti-spam policy settings, the quarantine policy name is shown. The default quarantine policies are listed in the [supported features table](#step-2-assign-a-quarantine-policy-to-supported-features).
 
    :::image type="content" source="../../media/quarantine-tags-in-anti-spam-policies.png" alt-text="The Quarantine policy selections in an anti-spam policy" lightbox="../../media/quarantine-tags-in-anti-spam-policies.png":::
 
@@ -270,32 +264,24 @@ For detailed syntax and parameter information, see [Set-HostedContentFilterPolic
 
 Spoof intelligence is available in EOP and Defender for Office 365. User impersonation protection, domain impersonation protection, and mailbox intelligence protection are available only in Defender for Office 365. For more information, see [Anti-phishing policies in Microsoft 365](anti-phishing-policies-about.md).
 
-1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. Or, to go directly to the **Ant-spam policies** page, use <https://security.microsoft.com/antiphishing>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. Or, to go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
-2. On the **Anti-phishing** page, do one of the following steps:
-   - Find and select an existing anti-phishing policy.
-   - Create a new anti-phishing policy.
+2. On the **Anti-phishing** page, use either of the following methods:
+   - Select an existing anti-phishing policy by clicking anywhere in the row other than the check box next to the name. In the policy details flyout that opens, click the **Edit** link in the relevant section as described in the next steps.
+   - Click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create** to start the new anti-phishing policy wizard. The relevant pages are described in the next steps.
 
-3. Do one of the following steps:
-   - **Edit existing**: Select the policy by clicking on the name of the policy. In the policy details flyout, go to the **Protection settings** section and then click **Edit protection settings**.
-   - **Create new**: In the new policy wizard, get to the **Actions** page.
-
-4. On the **Protection settings** page, verify that the following settings are turned on and configured as required:
+3. On the **Phishing threshold & protection** page or flyout, verify that the following settings are turned on and configured as required:
    - **Enabled users to protect**: Specify users.
    - **Enabled domains to protect**: Select **Include domains I own** and/or **Include custom domains** and specify the domains.
    - **Enable mailbox intelligence**
    - **Enable intelligence for impersonation protection**
    - **Enable spoof intelligence**
 
-5. Do one of the following steps:
-   - **Edit existing**: In the policy details flyout, go to the **Actions** section and then click **Edit actions**.
-   - **Create new**: In the new policy wizard, get to the **Actions** page.
+4. On the **Actions** page or flyout, every verdict that has the **Quarantine the message** action will also have the **Apply quarantine policy** box for you to select a quarantine policy.
 
-6. On the **Actions** page, every verdict that has the **Quarantine the message** action will also have the **Apply quarantine policy** box for you to select a corresponding quarantine policy.
+   During the creation of the anti-phishing policy, if you don't select a quarantine policy, the default quarantine policy for is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown. The default quarantine policies are listed in the [supported features table](#step-2-assign-a-quarantine-policy-to-supported-features).
 
-   **Note**: When you create a new policy, a blank **Apply quarantine policy** value indicates the default quarantine policy for that action is used. When you later edit the policy, the blank values are replaced by the actual default quarantine policy names as described in the supported features.
-
-   :::image type="content" source="../../media/quarantine-tags-in-anti-phishing-policies.png" alt-text="The Quarantine policy selections in an anti-phishing policy" lightbox="../../media/quarantine-tags-in-anti-phishing-policies.png":::
+   :::image type="content" source="../../media/quarantine-tags-in-anti-phishing-policies.png" alt-text="The Quarantine policy selections in an anti-phishing policy." lightbox="../../media/quarantine-tags-in-anti-phishing-policies.png":::
 
 Full instructions for creating and modifying anti-phishing policies are available in the following topics:
 
@@ -351,21 +337,21 @@ For detailed syntax and parameter information, see [Set-AntiPhishPolicy](/powers
 
 ### Anti-malware policies
 
-1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section. Or, to go directly to the **Anti-malware** page, use <https://security.microsoft.com/antimalwarev2>.
 
-   Or, to go directly to the **Anti-malware** page, use <https://security.microsoft.com/antimalwarev2>.
+2. On the **Anti-malware** page, use either of the following methods:
+   - Select an existing anti-malware policy by clicking anywhere in the row other than the check box next to the name. In the policy details flyout that opens, go to the **Protection settings** section, and then click the **Edit protection settings**.
+   - Click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create** to start the new anti-malware policy wizard and get to the **Protection settings** page.
 
-2. On the **Anti-malware** page, do one of the following steps:
-   - Find and select an existing anti-malware policy.
-   - Create a new anti-malware policy.
+3. On the **Protection settings** page or flyout, view or select a quarantine policy in the **Quarantine policy** box.
 
-3. Do one of the following steps:
-   - **Edit existing**: Select the policy by clicking on the name of the policy. In the policy details flyout, go to the **Protection settings** section and then click **Edit protection settings**.
-   - **Create new**: In the new policy wizard, get to the **Actions** page.
+   Quarantine notifications are disabled in the policy named AdminOnlyAccessPolicy. To notify recipients that have messages quarantined as malware, create or use an existing quarantine policy where quarantine notifications are turned on. For instructions, see [Create quarantine policies in the Microsoft 365 Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
-4. On the **Protection settings** page, select a quarantine policy in the **Quarantine policy** box.
+   Users can't release their own messages that were quarantined as malware by anti-malware policies, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of quarantined malware messages, although we typically don't recommend it.
 
-   **Note**: When you create a new policy, a blank **Quarantine policy** value indicates the default quarantine policy for that is used. When you later edit the policy, the blank value is replaced by the actual default quarantine policy name as described in the supported features.
+   :::image type="content" source="../../media/quarantine-tags-in-anti-malware-policies.png" alt-text="The Quarantine policy selections in an anti-malware policy." lightbox="../../media/quarantine-tags-in-anti-malware-policies.png":::
+
+Full instructions for creating and modifying anti-malware policies are available in [Configure anti-malware policies](anti-malware-policies-configure.md).
 
 #### Anti-malware policies in PowerShell
 
@@ -407,23 +393,19 @@ For detailed syntax and parameter information, see [Set-MalwareFilterPolicy](/po
 
 ### Safe Attachments policies in Defender for Office 365
 
-1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section. Or, to go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
 
-   Or, to go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
+2. On the **Safe Attachments** page, use either of the following methods:
+   - Select an existing Safe Attachments policy by clicking anywhere in the row other than the check box next to the name. In the policy details flyout that opens, click the **Edit settings** link in **Settings** section.
+   - Click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create** to start the new Safe Attachments policy wizard and get to the **Settings** page.
 
-2. On the **Safe Attachments** page, do one of the following steps:
-   - Find and select an existing Safe Attachments policy.
-   - Create a new Safe Attachments policy.
+3. On the **Settings** page or flyout, view or select a quarantine policy in the **Quarantine policy** box.
 
-3. Do one of the following steps:
-   - **Edit existing**: Select the policy by clicking on the name of the policy. In the policy details flyout, go to the **Settings** section and then click **Edit settings**.
-   - **Create new**: In the new policy wizard, get to the **Settings** page.
+   Quarantine notifications are disabled in the policy named AdminOnlyAccessPolicy. To notify recipients that have messages quarantined as malware by Safe Attachments, create or use an existing quarantine policy where quarantine notifications are turned on. For instructions, see [Create quarantine policies in the Microsoft 365 Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
-4. On the **Settings** page, do the following steps:
-   1. **Safe Attachments unknown malware response**: Select **Block**, **Replace**, or **Dynamic Delivery**.
-   2. Select a quarantine policy in the **Quarantine policy** box.
+   Users can't release their own messages that were quarantined as malware by Safe Attachments policies, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of quarantined malware messages, although we typically don't recommend it.
 
-   **Note**: When you create a new policy, a blank **Quarantine policy** value indicates the default quarantine policy is used. When you later edit the policy, the blank value is replaced by the actual default quarantine policy name as described in the supported features.
+   :::image type="content" source="../../media/quarantine-tags-in-safe-attachments-policies.png" alt-text="The Quarantine policy selections in a Safe Attachments policy." lightbox="../../media/quarantine-tags-in-safe-attachments-policies.png":::
 
 Full instructions for creating and modifying Safe Attachments policies are described in [Set up Safe Attachments policies in Microsoft Defender for Office 365](safe-attachments-policies-configure.md).
 
@@ -469,11 +451,11 @@ For detailed syntax and parameter information, see [Set-MalwareFilterPolicy](/po
 
 ## Configure global quarantine notification settings in the Microsoft 365 Defender portal
 
-The global settings for quarantine policies allow you to customize the quarantine notifications that are sent to recipients of quarantined messages if quarantine notifications are turned on in the quarantine policy. For more information about these notifications, see [Quarantine notifications](quarantine-quarantine-notifications.md).
+The global settings for quarantine policies allow you to customize the quarantine notifications that are sent to recipients of quarantined messages if quarantine notifications are turned on in the quarantine policy. For more information about quarantine notifications, see [Quarantine notifications](quarantine-quarantine-notifications.md).
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
-2. On the **Quarantine policies** page, select **Global settings**.
+2. On the **Quarantine policies** page, click ![Global settings icon.](../../media/m365-cc-sc-gear-icon.png) **Global settings**.
 
 3. In the **Quarantine notification settings** flyout that opens, configure the following settings:
 
@@ -484,11 +466,11 @@ The global settings for quarantine policies allow you to customize the quarantin
 
    - Customize quarantine notifications based on the recipient's language:
 
-     - The **Display name** of the sender that's used in quarantine notifications as shown in the following screenshot.
+     - The **Display name** of the sender that's used in quarantine notifications as shown in the following screenshot:
 
        :::image type="content" source="../../media/quarantine-tags-esn-customization-display-name.png" alt-text="A customized sender display name in a quarantine notification." lightbox="../../media/quarantine-tags-esn-customization-display-name.png":::
 
-     - The **Subject** field of the quarantine notification messages.
+     - The **Subject** field of quarantine notification messages.
 
      - The **Disclaimer** text that's added to the bottom of quarantine notifications. The localized text, **A disclaimer from your organization:** is always included first, followed by the text you specify as show in the following screenshot:
 
@@ -498,10 +480,13 @@ The global settings for quarantine policies allow you to customize the quarantin
 
        Select the language in the **Choose language** box _before_ you enter values in the **Display name**, **Subject** and **Disclaimer** boxes. When you change the value in the **Choose language** box, the values in the **Display name**, **Subject**, and **Disclaimer** boxes are emptied.
 
-     Follow these steps to customize quarantine notifications based on the recipient's language:
+     Use the following steps to customize quarantine notifications based on the recipient's language:
 
      1. Select the language from the **Choose language** box. The default value is **Default**, which means the default language for the Microsoft 365 organization. For more information, see [How to set language and region settings for Microsoft 365](/office365/troubleshoot/access-management/set-language-and-region).
-     2. Enter values for **Display name**, **Subject**, and **Disclaimer**. The values must be unique for each language. If you try to reuse a **Display name**, **Subject**, or **Disclaimer** value for multiple languages, you'll get an error when you click **Save**.
+
+        Although this box is in the middle of the page, you need to select it first. If you enter values for the **Sender display name**, **Subject**, or **Disclaimer** first, and then you change the language value, the other values are removed and you start over.
+
+     2. Enter values for **Sender display name**, **Subject**, and **Disclaimer**. The values must be unique for each language. If you try to reuse a **Sender display name**, **Subject**, or **Disclaimer** value for multiple languages, you'll get an error when you click **Save**.
      3. Use **Specify sender address** to select an existing recipient to use as the sender of quarantine notifications. If you've already specified a sender for a different language, the sender you specify will overwrite your previous selection (the same sender email address is used for all languages).
      4. Click the **Add** button.
      5. Repeat the previous steps to create a maximum of three customized quarantine notifications based on the recipient's language. An unlabeled box shows the languages that you've configured:
@@ -510,23 +495,23 @@ The global settings for quarantine policies allow you to customize the quarantin
 
    - **Use my company logo**: Select this option to replace the default Microsoft logo that's used at the top of quarantine notifications. Before you do this step, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo. This option isn't supported if your organization has a custom logo pointing to a URL instead of an uploaded image file.
 
-     The following screenshot shows a custom logo in a quarantine notification:
+     A custom logo in a quarantine notification is shown i the following screenshot:
 
      :::image type="content" source="../../media/quarantine-tags-esn-customization-logo.png" alt-text="A custom logo in a quarantine notification" lightbox="../../media/quarantine-tags-esn-customization-logo.png":::
 
    - **Send end-user spam notification every (days)**: Select the frequency for quarantine notifications. The default value is 3 days, but you can select 1 to 15 days.
 
-4. When you're finished, click **Save**.
+4. When you're finished on the **Quarantine notifications** flyout, click **Save**.
 
    :::image type="content" source="../../media/mdo-quarantine-policy-quarantine-notification-settings.png" alt-text="Quarantine notification settings flyout in the Microsoft 365 Defender portal." lightbox="../../media/mdo-quarantine-policy-quarantine-notification-settings.png":::
 
 ## View quarantine policies in the Microsoft 365 Defender portal
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
-2. The **Quarantine policies** page shows the list of policies by **Name** and **Last updated** date.
+2. The **Quarantine policies** page shows the list of policies by **Policy name** and **Last updated** date/time.
 
-3. To view the settings of built-in or custom quarantine policies, select the quarantine policy from the list by clicking on the name.
+3. To view the settings of default or custom quarantine policies, select the policy by clicking anywhere in the row other than the check box next to the name. Details are available in the flyout that opens.
 
 4. To view the global settings, click **Global settings**
 
@@ -534,13 +519,13 @@ The global settings for quarantine policies allow you to customize the quarantin
 
 If you'd rather use PowerShell to view quarantine policies, do any of the following steps:
 
-- To view a summary list of all built-in or custom policies, run the following command:
+- To view a summary list of all default or custom policies, run the following command:
 
   ```powershell
   Get-QuarantinePolicy | Format-Table Name
   ```
 
-- To view the settings of built-in or custom quarantine policies, replace \<QuarantinePolicyName\> with the name of the quarantine policy, and run the following command:
+- To view the settings of default or custom quarantine policies, replace \<QuarantinePolicyName\> with the name of the quarantine policy, and run the following command:
 
   ```powershell
   Get-QuarantinePolicy -Identity "<QuarantinePolicyName>"
@@ -556,19 +541,15 @@ For detailed syntax and parameter information, see [Get-HostedContentFilterPolic
 
 ## Modify quarantine policies in the Microsoft 365 Defender portal
 
-You can't modify the built-in quarantine policies named AdminOnlyAccessPolicy, DefaultFullAccessPolicy, or DefaultFullAccessWithNotificationPolicy. You can modify the built-in policy named NotificationEnabledPolicy ([if you have it](#full-access-permissions-and-quarantine-notifications)) and custom quarantine policies.
+You can't modify the default quarantine policies named AdminOnlyAccessPolicy, DefaultFullAccessPolicy, or DefaultFullAccessWithNotificationPolicy.
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
-2. On the **Quarantine policies** page, select the policy by clicking on the name.
+2. On the **Quarantine policies** page, select the policy by clicking the check box next to the name.
 
-3. After you select the policy, click the ![Edit policy icon.](../../media/m365-cc-sc-edit-icon.png) **Edit policy** icon that appears.
+3. Click the ![Edit policy icon.](../../media/m365-cc-sc-edit-icon.png) **Edit policy** icon that appears.
 
-4. The **Edit policy** wizard that opens is virtually identical to the **New policy** wizard as described in the [Create quarantine policies in the Microsoft 365 Defender portal](#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal) section earlier in this article.
-
-   The main difference is: you can't rename an existing policy.
-
-5. When you're finished modifying the policy, go to the **Summary** page and click **Submit**.
+The policy wizard opens with the settings and values of the selected quarantine policy. The steps are virtually the same as described in the [Create quarantine policies in the Microsoft 365 Defender portal](#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal) section. The main difference is: you can't rename an existing policy.
 
 ### Modify quarantine policies in PowerShell
 
@@ -586,7 +567,7 @@ For detailed syntax and parameter information, see [Set-QuarantinePolicy](/power
 
 **Notes**:
 
-- You can't remove the built-in quarantine policies named AdminOnlyAccessPolicy, DefaultFullAccessPolicy, or DefaultFullAccessWithNotificationPolicy. You can remove the built-in policy named NotificationEnabledPolicy ([if you have it](#full-access-permissions-and-quarantine-notifications)) and custom quarantine policies.
+- You can't remove the default quarantine policies named AdminOnlyAccessPolicy, DefaultFullAccessPolicy, or DefaultFullAccessWithNotificationPolicy.
 - Before you remove a quarantine policy, verify that it's not being used. For example, run the following command in PowerShell:
 
   ```powershell
@@ -595,13 +576,13 @@ For detailed syntax and parameter information, see [Set-QuarantinePolicy](/power
 
   If the quarantine policy is being used, [replace the assigned quarantine policy](#step-2-assign-a-quarantine-policy-to-supported-features) before you remove it.
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
-2. On the **Quarantine policies** page, select the custom quarantine policy that you want to remove by clicking on the name.
+2. On the **Quarantine policies** page,  select the policy by clicking the check box next to the name.
 
-3. After you select the policy, click the ![Delete policy icon.](../../media/m365-cc-sc-delete-icon.png) **Delete policy** icon that appears.
+3. Click the ![Delete policy icon.](../../media/m365-cc-sc-delete-icon.png) **Delete policy** icon that appears.
 
-4. Click **Remove policy** in the confirmation dialog that appears.
+4. Click **Remove policy** in the confirmation dialog.
 
 ### Remove quarantine policies in PowerShell
 
@@ -789,7 +770,7 @@ The **Preview** permission (_PermissionToPreview_) controls the ability to of us
 ##### Allow recipients to release a message from quarantine permission
 
 > [!NOTE]
-> This permission isn't honored for messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies. At best, you can use the [Allow recipients to request a message to be released from quarantine permission](#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission) permission so users can _request_ the release of their quarantined malware or high confidence phishing messages, although we typically don't recommend it.
+> This permission isn't honored for messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies. At best, you can use the [Allow recipients to request a message to be released from quarantine permission](#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission) permission so users can view and _request_ the release of their quarantined malware or high confidence phishing messages, although we typically don't recommend it.
 
 The **Allow recipients to release a message from quarantine** permission (_PermissionToRelease_) controls the ability of users to release their quarantined messages directly and without the approval of an admin.
 
