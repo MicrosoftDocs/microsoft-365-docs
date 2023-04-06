@@ -36,11 +36,11 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
 ## Before you begin
 
 - Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through JAMF Connect or Intune.
-- Install the v95+ Edge browser on your macOS devices
+- OPTIONAL: Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
 
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
-Onboarding a macOS device into Compliance solutions is a multi phase process.
+Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 ### Download the configuration files
 
@@ -93,7 +93,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 1. Open **System Preferences** > **Profiles**.
 
 1. You should see:
-    - Accessiblity
+    - Accessibility
     - Full Disk Access
     - Kernel Extension Profile
     - MAU
