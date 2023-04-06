@@ -162,7 +162,7 @@ See [Configure exclusions in Microsoft Defender Antivirus on Windows Server](con
 
 ## Passive mode and Windows Server
 
-If you're using a non-Microsoft antivirus product as your primary antivirus solution on Windows Server, you must set Microsoft Defender Antivirus to passive mode or disabled mode. If your Windows Server endpoint is onboarded to Microsoft Defender for Endpoint, you can set Microsoft Defender Antivirus to passive mode. If you're not using Microsoft Defender for Endpoint, set Microsoft Defender Antivirus to disabled mode. 
+If you're using a non-Microsoft antivirus product as your primary antivirus solution on Windows Server, you must set Microsoft Defender Antivirus to passive mode or disabled mode manually. If your Windows Server endpoint is onboarded to Microsoft Defender for Endpoint, you can set Microsoft Defender Antivirus to passive mode. If you're not using Microsoft Defender for Endpoint, set Microsoft Defender Antivirus to disabled mode. 
 
 > [!TIP]
 > See [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md).
@@ -182,11 +182,27 @@ For more information, see [Working with Registry Keys](/powershell/scripting/sam
 
 ### Are you using Windows Server 2012 R2 or Windows Server 2016?
 
-If your Windows Server is onboarded to Microsoft Defender for Endpoint, you can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and Windows Server 2016. See the following articles:
+If your Windows Server is onboarded to Microsoft Defender for Endpoint, you can run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and Windows Server 2016. See the following articles:
 
 - [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages)
 
 - [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
+
+### What happens if a non-Microsoft antivirus product is uninstalled?
+
+If you were previously running a non-Microsoft antivirus product on Windows Server, you most likely set Microsoft Defender Antivirus to passive mode. When you uninstall the non-Microsoft antivirus product, Microsoft Defender Antivirus might not switch to active mode automatically. In this case:
+
+1. [Verify Microsoft Defender Antivirus is running](#verify-microsoft-defender-antivirus-is-running).
+
+2. If necessary, set Microsoft Defender Antivirus to active mode manually by following these steps:
+
+   1. On your Windows Server device, open Registry Editor as an administrator.
+
+   2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+
+   3. Set or define a `REG_DWORD` entry called `ForceDefenderPassiveMode`, and set its value to `0`.
+
+   4. Reboot the device.
 
 ## See also
 
