@@ -33,9 +33,9 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions l
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
-
-- Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through JAMF Connect or Intune.
-- OPTIONAL: Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
+> [!IMPORTANT]
+> - **REQUIRED:** Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through [JAMF Connect](https://www.jamf.com/products/jamf-connect) or Intune.
+> - **OPTIONAL:** Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
 
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
@@ -43,12 +43,7 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions l
 
 |File needed for|Source|
 |---|---|
-|Onboarding package|Downloaded from the compliance portal **Onboarding package**, file name *DeviceComplianceOnboarding.plist*|
-|accessibility|[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
-full disk access|[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
-|Network filter| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)
-|System extensions|[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
-|MDE preference|[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
+|**mdatp-nokext.mobileconfig** file bundle <br> | This [bundled file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) contains: <br> - accessibility.mobileconfig <br> - fulldisk.mobileconfig <br> - netfilter.mobileconfig <br> - sysext.mobileconfig |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|MDE preference|[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
 |MAU preference|[com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|
 |Installation package|downloaded from the compliance portal **Installation package**, file name *\*wdav.pkg*\*|
 
@@ -64,7 +59,7 @@ full disk access|[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xpla
 
 Onboarding a macOS device into Compliance solutions is a multiphase process.
 
-### Get the device onboarding package
+### Get the device onboarding and installation packages
 
 1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
 
