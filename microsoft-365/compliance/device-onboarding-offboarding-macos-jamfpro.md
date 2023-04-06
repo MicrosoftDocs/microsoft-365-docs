@@ -43,8 +43,7 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions l
 
 |File needed for|Source|
 |---|---|
-|**mdatp-nokext.mobileconfig** file bundle <br> | This [bundled file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) contains: <br> - accessibility.mobileconfig <br> - fulldisk.mobileconfig <br> - netfilter.mobileconfig <br> - sysext.mobileconfig |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|MDE preference|[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
-|MDE preference|[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
+|**mdatp-nokext.mobileconfig** file bundle <br> | This [bundled file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) contains: <br> - accessibility.mobileconfig <br> - fulldisk.mobileconfig <br> - netfilter.mobileconfig <br> - sysext.mobileconfig |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|MDE preference[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|MDE preference|[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
 |MAU preference|[com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|
 
 > [!TIP]
@@ -64,21 +63,13 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
 
-1. For **Select operating system to start onboarding process** choose **macOS**
+2. For **Select operating system to start onboarding process** choose **macOS**
 
-1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
+3. For **Deployment method** choose **Mobile Device Management/Microsoft Intune** and then
 
-1. Choose **Download onboarding package**
+4. Choose **Download onboarding package** and then extract the contents of the device onboarding package. In the JAMF folder, you should see the *DeviceComplainceOnboarding.plist* file.
 
-1. Extract the contents of the device onboarding package. In the JAMF folder, you should see the *DeviceComplainceOnboarding.plist* file.
-1. 
-1. 
-1. 
-1. 
-|Installation package|downloaded from the compliance portal **Installation package**, file name *\*wdav.pkg*\*|
-1. 
-1. 
-1. 
+5. Choose **Download installation package** 
 
 ### Create a JAMF Pro configuration profile for the onboarding package
 
