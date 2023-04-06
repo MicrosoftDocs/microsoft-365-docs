@@ -108,7 +108,7 @@ Alternatively, you can download the files individually. If a file is later updat
     1. Specify the **Deployment channel**.
     1. Upload the **mdatp-nokext.mobileconfig** file that you previously downloaded.
     1. Choose **Next**.
-    :::image type="content" source="../media/custom-intune-config-settings-inline.png" alt-text="Screenshot of the Intune Configuration settings tab." lightbox="../media/custom-intune-config-settings-expanded.png":::
+    :::image type="content" source="../media/device-macos-custom-intune-config-settings-inline.png" alt-text="Screenshot of the Intune Configuration settings tab." lightbox="../media/device-macos-custom-intune-config-settings-expanded.png":::
 
 
 1. On the **Assignments** tab, add the group(s) you want to deploy these configurations to and choose **Next**. For information about policy assignments in Microsoft Intune, see [Assign policies in Microsoft Intune](https://learn.microsoft.com/mem/intune/configuration/device-profile-assign) and [Exclude groups from a policy assignment](https://learn.microsoft.com/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-policy-assignment).
