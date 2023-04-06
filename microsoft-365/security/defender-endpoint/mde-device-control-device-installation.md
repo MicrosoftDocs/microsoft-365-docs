@@ -102,7 +102,7 @@ If the **Apply layered order of evaluation for Allow and Prevent device installa
 
 ### Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria
 
-This policy setting will change the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that overlapping device match criteria is applied based on an established hierarchy where more specific match criteria supersedes less specific match criteria. The hierarchical order of evaluation for policy settings that specify device match criteria is as follows:
+This policy setting will change the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that overlapping device match criteria are applied based on an established hierarchy where more specific match criteria supersedes less specific match criteria. The hierarchical order of evaluation for policy settings that specify device match criteria is as follows:
 
 **Device instance IDs** \> **Device IDs** \> **Device setup class** \> **Removable devices**
 
@@ -133,7 +133,7 @@ Prevent installation of removable devices
 This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is prevented from installing. By default, this policy setting takes precedence over any other policy setting that allows Windows to install a device.
 
 > [!NOTE]
-> To enable the **Allow installation of devices that match any of these device instance IDs** policy setting to supersede this policy setting for applicable devices, enable the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting. Also, the allow policy won't take precedence if the **Block Removable Storage** option is selected in Device Control.
+> To enable the **Allow installation of devices that match any of these device instance IDs** policy setting to supersede this policy setting for applicable devices, enable the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting.
 
 If you enable this policy setting, Windows is prevented from installing a device whose hardware ID or compatible ID appears in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
@@ -163,7 +163,7 @@ If you disable or don't configure this policy setting, Windows can install and u
 This policy setting allows you to prevent Windows from installing removable devices. A device is considered removable when the driver for the device to which it's connected indicates that the device is removable. For example, a Universal Serial Bus (USB) device is reported to be removable by the drivers for the USB hub to which the device is connected. By default, this policy setting takes precedence over any other policy setting that allows Windows to install a device.
 
 > [!NOTE]
-> To enable the **Allow installation of devices using drivers that match these device setup classes**, **Allow installation of devices that match any of these device IDs**, and **Allow installation of devices that match any of these device instance IDs** policy settings to supersede this policy setting for applicable devices, enable the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting.
+> To enable the **Allow installation of devices using drivers that match these device setup classes**, **Allow installation of devices that match any of these device IDs**, and **Allow installation of devices that match any of these device instance IDs** policy settings to supersede this policy setting for applicable devices, enable the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting. Also, the allow policy won’t take precedence if the **Block Removable Storage** option is selected in Device Control.
 
 If you enable this policy setting, Windows is prevented from installing removable devices and existing removable devices cannot have their drivers updated. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of removable devices from a remote desktop client to the remote desktop server.
 
