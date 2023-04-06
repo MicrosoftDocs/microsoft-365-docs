@@ -38,9 +38,9 @@ When you engage with the scammers, they can offer fake solutions for your "probl
 
 Share and implement the general tips on how to [prevent malware infection](prevent-malware-infection.md).
 
-It is also important to keep the following in mind:
+It's also important to keep the following in mind:
 
-* Microsoft does not send unsolicited email messages or make unsolicited phone calls to request personal or financial information, or to fix your computer.
+* Microsoft doesn't send unsolicited email messages or make unsolicited phone calls to request personal or financial information, or to fix your computer.
 
 * Any communication with Microsoft has to be initiated by you.
 
@@ -56,13 +56,13 @@ It is also important to keep the following in mind:
 
 * Uninstall applications that scammers asked to be install. If access has been granted, consider resetting the device
 
-* Run a full scan with Microsoft Defender Antivirus to remove any malware. Apply all security updates as soon as they are available.
+* Run a full scan with Microsoft Defender Antivirus to remove any malware. Apply all security updates as soon as they're available.
 
 * Change passwords.
 
-* Call your credit card provider to reverse the charges, if you have already paid.
+* Call your credit card provider to reverse the charges, if you've already paid.
 
-* Monitor anomalous logon activity. Use Windows Defender Firewall to block traffic to services that you would not normally access.
+* Monitor anomalous logon activity. Use Windows Defender Firewall to block traffic to services that you wouldn't normally access.
 
 ### Reporting tech support scams
 

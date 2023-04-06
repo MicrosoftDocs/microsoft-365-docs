@@ -8,6 +8,8 @@
          href: microsoft-defender-for-office-365-product-overview.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
+       - name: Zero Trust for Defender for Office 365
+         href: zero-trust-with-microsoft-365-defender-office-365.md
    - name: Get started
      items:
      - name: Defender for Office 365
@@ -220,8 +222,6 @@
            href: attack-simulation-training-get-started.md
          - name: Simulate a phishing attack with Attack simulation training
            href: attack-simulation-training-simulations.md
-         - name: Payloads in Attack simulation training
-           href: attack-simulation-training-payloads.md
          - name: Simulation automations in Attack simulation training
            href: attack-simulation-training-simulation-automations.md
          - name: Payload automations in Attack simulation training
@@ -230,14 +230,22 @@
            href: attack-simulation-training-end-user-notifications.md
          - name: Login pages in Attack simulation training
            href: attack-simulation-training-login-pages.md
-         - name: Insights and reporting in Attack simulation training
-           href: attack-simulation-training-insights.md
-         - name: Attack simulation training deployment considerations and FAQ
-           href: attack-simulation-training-faq.md
+         - name: Payloads in Attack simulation training
+           href: attack-simulation-training-payloads.md
+         - name: Landing pages in Attack simulation training
+           href: attack-simulation-training-landing-pages.md
          - name: Training campaigns in Attack simulation training
            href: attack-simulation-training-training-campaigns.md
          - name: Training modules in Attack simulation training
            href: attack-simulation-training-training-modules.md
+         - name: Insights and reporting in Attack simulation training
+           href: attack-simulation-training-insights.md
+         - name: Global settings in Attack simulation training
+           href: attack-simulation-training-settings.md
+         - name: Attack simulation training deployment considerations and FAQ
+           href: attack-simulation-training-faq.md
+         - name: Microsoft Teams in Attack simulation training
+           href: attack-simulation-training-teams.md
        - name: Advanced delivery policies
          items:
          - name: Configure advanced delivery policies

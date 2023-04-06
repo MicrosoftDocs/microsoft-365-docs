@@ -278,7 +278,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
  
 2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender SmartScreen** > **Microsoft Edge**.
 
-    :::image type="content" source="images/config-windows-def-smartscr-edge.png" alt-text="Screenshot that shows configure windows defender smart screen Edge." lightbox="images/config-windows-def-smartscr-edge.png":::
+    :::image type="content" source="images/configure-windows-defender-smartscreen.png" alt-text="Configure windows defender smart screen on Microsoft Edge" lightbox="images/configure-windows-defender-smartscreen.png":::
 
 ### Configure Potentially Unwanted Applications
 
