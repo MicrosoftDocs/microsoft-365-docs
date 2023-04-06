@@ -189,13 +189,6 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 
 The above command collects a performance recording on Server02 (as specified by argument $s of parameter Session) and saves it to the specified path: **C:\LocalPathOnServer02\trace.etl** on Server02.
 
-##### Example 3: Collect a performance recording in non-interactive mode
-
-```powershell
-New-MpPerformanceRecording -RecordTo .\Defender-scans.etl -Seconds 60
-```
-
-The above command collects a performance recording for the duration in seconds specified by parameter -Seconds. This is recommended for users conducting batch collections that require no interaction or prompt.
 
 #### Parameters: New-MpPerformanceRecording
 
@@ -219,18 +212,6 @@ Specifies the PSSession object in which to create and save the Microsoft Defende
 Type: PSSession[]
 Position: 0
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-##### -Seconds
-
-Specifies the duration of the performance recording in seconds. This is recommended for users conducting batch collections that require no interaction or prompt.
-
-```yaml
-Type: Int32
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
