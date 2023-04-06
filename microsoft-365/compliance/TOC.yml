@@ -1785,8 +1785,6 @@
           items:
             - name: Build and manage assessments
               href: compliance-manager-assessments.md
-            - name: Working with custom content
-              href: compliance-manager-assessments.md
             - name: Regulations list
               href: compliance-manager-templates-list.md
         - name: Improvement actions and automation
