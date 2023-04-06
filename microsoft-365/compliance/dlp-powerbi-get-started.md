@@ -23,7 +23,7 @@ search.appverid:
 - MET150
 description: "Prepare for and deploy DLP to Power BI locations, to help organizations detect and protect their sensitive data."
 ---
-# Get started with Data loss prevention policies for Power BI (preview)
+# Get started with Data loss prevention policies for Power BI
 
 To help organizations detect and protect their sensitive data, [Microsoft Purview Data Loss Prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp) support Power BI. When a Power BI data set matches the criteria in a DLP policy, an alert that explains the nature of the sensitive content can be triggered. This alert is also registered in the data loss prevention **Alerts** tab in the Microsoft compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
 
