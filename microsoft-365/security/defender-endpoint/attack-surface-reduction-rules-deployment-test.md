@@ -55,7 +55,7 @@ You can use Microsoft Intune Endpoint Security to configure custom ASR rules.
 1. Open the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Go to **Endpoint Security** > **Attack surface reduction**.
 3. Select **Create Policy**.
-4. In **Platform**, select **Windows 10 and later**, and in **Profile**, select **Attack surface reduction rules**.
+4. In **Platform**, select **Windows 10, Windows 11, and Windows Server**, and in **Profile**, select **Attack surface reduction rules**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/asr-mem-create-profile.png" alt-text="The profile creation page for ASR rules" lightbox="images/asr-mem-create-profile.png":::
