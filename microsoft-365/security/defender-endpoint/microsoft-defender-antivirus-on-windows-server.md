@@ -187,7 +187,9 @@ If your Windows Server is onboarded to Microsoft Defender for Endpoint, you can 
 
 ### What happens if a non-Microsoft antivirus product is uninstalled?
 
-If you were previously running a non-Microsoft antivirus product on Windows Server, you most likely set Microsoft Defender Antivirus to passive mode. When you uninstall the non-Microsoft antivirus product, Microsoft Defender Antivirus might not switch to active mode automatically. In this case:
+If you were previously running a non-Microsoft antivirus product on Windows Server, you most likely set Microsoft Defender Antivirus to passive mode. When you uninstall the non-Microsoft antivirus product, Microsoft Defender Antivirus should switch to active mode automatically. However, on certain versions of Windows Server, such as Windows Server 2016, Microsoft Defender Antivirus might not switch to active mode automatically. 
+
+Use the following procedure to check the status of Microsoft Defender Antivirus, and if necessary, set it to active mode:
 
 1. [Verify Microsoft Defender Antivirus is running](#verify-microsoft-defender-antivirus-is-running).
 
