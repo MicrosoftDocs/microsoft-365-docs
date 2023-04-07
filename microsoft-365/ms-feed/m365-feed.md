@@ -18,7 +18,7 @@ description: "Use Microsoft Feed to help users discover and learn about people a
 
 Microsoft Feed is powered by Microsoft Graph and aims to help users discover and learn about people and interests relevant to their work. Microsoft Feed shows users a mix of content and activity from across Microsoft 365. Users might, for example, see updates to documents they’re working on with others, links shared with them in Teams chats, suggested tasks to follow up, highlights about colleagues, and much more.
 
-Read more about how the feed works here:  [Discover and learn with Microsoft Feed](https://support.microsoft.com/office/discover-and-learn-with-microsoft-feed)
+Read more about how the feed works here:  [Discover and learn with Microsoft Feed](https://support.microsoft.com/en-us/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb)
 
 ## Where can users see Microsoft Feed?
 
@@ -30,7 +30,7 @@ In **Microsoft Edge**, select the **Microsoft 365** page when opening a new 
 
 ![Select Feed in Microsoft 365.](../media/MS-contoso-feed.png)
 
-See the section *Find your way around* in [Discover and learn with Microsoft Feed](https://support.microsoft.com/office/discover-and-learn-with-microsoft-feed) for more information.
+See the section *Find your way around* in [Discover and learn with Microsoft Feed](https://support.microsoft.com/en-us/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb)
 
 ## Availability
 
