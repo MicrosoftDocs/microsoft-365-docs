@@ -52,7 +52,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ## April 2023
 
-**Suggested training** training feature is part of the Experience Insights dashboard and gives you deeper insights into the Microsoft 365 help and training articles being read by your signed-in users on support.microsoft.com and in-app help panels with these 3 insights:
+**Suggested training** feature is part of the Experience Insights dashboard and gives you deeper insights into the Microsoft 365 help and training articles being read by your signed-in users on support.microsoft.com and in-app help panels with these 3 insights:
 
 - **Top viewed articles** for your organization shows you help and training articles that have been getting the most views by people in your organization.
 
@@ -70,7 +70,7 @@ There are a couple of ways to get the Experience insights dashboard page:
 
 - If you’re a member of the Reports reader role or the User Experience success manager roles, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option in the top right.
 
-:::image type="content" source="../media/exp-insights-dashboard2.png" alt-text="Screenshot: How to get to the insights dashboard":::
+    :::image type="content" source="../media/exp-insights-dashboard2.png" alt-text="Screenshot: How to get to the insights dashboard":::
 
 For more information, check out [Microsoft 365 Experience insights dashboard](misc/experience-insights-dashboard.md).
 
