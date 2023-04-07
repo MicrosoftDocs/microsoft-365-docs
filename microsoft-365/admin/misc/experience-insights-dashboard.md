@@ -33,6 +33,20 @@ If you’re a member of the reports reader role, once you sign into the admin ce
 
 To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
 
+## Suggested training
+
+**Suggested training** gives you deeper insights into the Microsoft 365 help and training articles being read by your signed-in users on support.microsoft.com and in-app help panels with these 3 insights:
+
+- **Top viewed articles** for your organization shows you help and training articles that have been getting the most views by people in your organization.
+
+- **Trending across organizations** shows you the help and training topics that are moving up the most in your organizations most viewed list.
+
+- **Commonly viewed together** gives you insights into the additional help articles users in all Microsoft 365 organizations are reading, along with the top viewed and top trending articles. You can use this info to put together and share training packages for your users.
+
+Use this data to decide which help articles and training resources to share with your users about these products and apps, or make sure your helpdesk is aware of these areas so they can answer any user questions. If your org doesn’t have enough views on help and training articles, you’ll see data from other Microsoft 365 organizations.
+
+:::image type="content" source="../../media/suggested-training-overview.png" alt-text="Screenshot: Suggested training data dashboard":::
+
 ## Apps and services data
 
 The **Apps and services** data section shows you a unified view across usage and sentiment in your organization to give you an at-a-glance understanding of your users' experience with Microsoft 365. Select an app or service to get additional details, such as comments submitted through feedback and NPS surveys, or the top Microsoft 365 help articles your users viewed. You can also favorite the apps or services in the list so that you can more easily view them.
