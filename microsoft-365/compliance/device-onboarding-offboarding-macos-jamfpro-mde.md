@@ -35,7 +35,7 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
 
 ## Before you begin
 
-- Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through JAMF Connect or Intune.
+- Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through [JAMF Connect](https://www.jamf.com/products/jamf-connect) or Intune.
 - OPTIONAL: Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
 
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
@@ -61,30 +61,36 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 ### Update the existing MDE Preference domain profile using the JAMF PRO console
 
-1. Update the schema.xml profile with the **schema.json** file you just downloaded.
+Update the schema.xml profile with the `schema.json` file you just downloaded.
 
-1. Under **MDE Preference Domain Properties** choose these settings
-    - Features 
-        - Use System Extensions: `enabled` - required for network extensions on Catalina
-        - Use Data Loss Prevention: `enabled`
+1. Open the `schema.json` file and copy the contents.
+2. In the left navigation pane of the JAMF Pro console, select **Configuration Profiles**.
+3. Select the profile you want to update.
+4. In the left navigation pane, choose **Application and Custom Settings** and then choose **External Applications**.
+5. Choose **Edit**.
+6. Choose **Edit Schema**.
+7. Replace the existing content with the content you copied in step 1 above and then choose **Save**.
+8. Under **Features**, click **Add/Remove properties**.
+9. Choose **Data Loss Prevention** and then choose **Apply**.
+10. Under **Use Data Loss Prevention** select **enabled**.
 
-1. Choose the **Scope** tab.
-
-1. Choose the groups to deploy this configuration profile to.
-
-1. Choose **Save**. 
-
-### Update the configuration profile for Grant full disk access
-
-1. Update the existing full disk access profile with the **fulldisk.mobileconfig** file.
-
-1. Upload the **fulldisk.mobileconfig** file to JAMF. Refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
+## Update individual *.mobileconfig files
+If you originally onboarded your macOS device using the individual `*.mobileconfig` files, to update your deployment, you must manually configure each of those files individually.
 
 ### Grant accessibility access to DLP
 
-1. Use the accessibility.mobileconfig file you previously downloaded.
+1. Use the [accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig) file you previously downloaded.
 
-1. Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+2. Upload it to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+
+### Update the configuration profile to grant full disk access
+
+To update the [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) file, take the following steps:
+
+1. Update the existing full disk access profile with the `fulldisk.mobileconfig` file.
+
+2. Upload the `fulldisk.mobileconfig` file to JAMF. Refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
+
 
 ### Check the macOS device 
 
@@ -95,14 +101,6 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 1. You should see:
     - Accessibility
     - Full Disk Access
-    - Kernel Extension Profile
-    - MAU
-    - MDATP Onboarding
-    - MDE Preferences
-    - Management profile
-    - Network filter
-    - Notifications
-    - System extension profile
 
 ## Offboard macOS devices using JAMF Pro
 
