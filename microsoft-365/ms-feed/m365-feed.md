@@ -55,6 +55,7 @@ In Microsoft 365, as a tenant admin, if you want to disable the new experience, 
 1.    [Sign in to Microsoft 365](https://admin.microsoft.com) with your Microsoft 365 admin account.
 2.    **Select Support** > **New service request.**
 3.    If you're in the admin center, select **Support** > **New service request.**
+4.    4 To re-enable the feature, you can create a **New service request.**
 
 In Microsoft Edge, while signed in with a work or school account, as a tenant admin, if you want to disable the new experience, you can choose to *not show* Microsoft 365 content on the Microsoft Edge new tab page:
 
@@ -62,6 +63,7 @@ In Microsoft Edge, while signed in with a work or school account, as a tenant ad
 2.    Go to **Org settings** > **News.**
 3.    Under **News**, select **Microsoft Edge new tab page**.
 4.    *Clear* the box that says **Show Microsoft 365 content on the Microsoft Edge new tab page.**
+5.    To re-enable the feature, check the box that says **Show Microsoft 365 content on the Microsoft Edge new tab page.**
 
 ## Provide feedback
 
