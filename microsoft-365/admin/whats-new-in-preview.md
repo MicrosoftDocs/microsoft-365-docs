@@ -62,7 +62,7 @@ Suggested training gives you deeper insights into the Microsoft 365 help and tra
 
 Use this data to decide which help articles and training resources to share with your users about these products and apps, or make sure your helpdesk is aware of these areas so they can answer any user questions. If your org doesn’t have enough views on help and training articles, you’ll see data from other Microsoft 365 organizations.
 
-:::image type="content" source="../media/exp-insights-dashboard.png" alt-text="Screenshot: Experience insights dashboard" lightbox="../media/nps-date-filter.png":::
+:::image type="content" source="../media/exp-insights-dashboard.png" alt-text="Experience insights dashboard":::
 
 There are a couple of ways to get the Experience insights dashboard page:
 
@@ -70,7 +70,7 @@ There are a couple of ways to get the Experience insights dashboard page:
 
 - If you’re a member of the Reports reader role or the User Experience success manager roles, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option in the top right.
 
-:::image type="content" source="../media/exp-insights-dashboard2.png" alt-text="Screenshot: How to get to the insights dashboard" lightbox="../media/nps-date-filter.png":::
+:::image type="content" source="../media/exp-insights-dashboard2.png" alt-text="Screenshot: How to get to the insights dashboard":::
 
 ## December 2022
 
