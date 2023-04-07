@@ -29,12 +29,12 @@ ms.date: 4/5/2023
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Exchange Online Protection (EOP) and Microsoft Defender for Office 365, _quarantine policies_ allow admins define the user experience for quarantined messages:
+In Exchange Online Protection (EOP) and Microsoft Defender for Office 365, _quarantine policies_ allow admins to define the user experience for quarantined messages:
 
 - What users are allowed to do to their own quarantined messages (messages where they're a recipient) based on why the message was quarantined.
 - Whether users receive notifications about their quarantined messages via [Quarantine notifications](quarantine-quarantine-notifications.md).
 
-Traditionally, users have been allowed or denied levels of interactivity for quarantine messages based on why the message was quarantined. For example, users can view and release messages that were quarantined by anti-spam filtering as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing or malware.
+Traditionally, users have been allowed or denied levels of interactivity for quarantine messages based on why the message was quarantined. For example, users can view and release messages that were quarantined as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing or malware.
 
 Default quarantine policies enforce these historical user capabilities, and are automatically assigned in [supported protection features](#step-2-assign-a-quarantine-policy-to-supported-features) that quarantine messages.
 
@@ -50,7 +50,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- If you change the quarantine policy that's assigned to a supported protection feature, the change affects messages that are quarantined _after_ you make the change. Messages that were quarantined before you made the change are not affected by the settings of the new quarantine policy assignment.
+- If you change the quarantine policy that's assigned to a supported protection feature, the change affects quarantined message _after_ you make the change. Messages that were quarantined before you made the change aren't affected by the settings of the new quarantine policy assignment.
 
 - How long messages that were quarantined by anti-spam and anti-phishing protection are held before they expire is controlled by the **Retain spam in quarantine for this many days** (_QuarantineRetentionPeriod_) in anti-spam policies. For more information, see the table in [Quarantined email messages in EOP and Defender for Office 365](quarantine-about.md).
 
@@ -69,7 +69,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 2. On the **Quarantine policies** page, click ![Add custom policy icon.](../../media/m365-cc-sc-create-icon.png) **Add custom policy** to start the new quarantine policy wizard.
 
-3. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. You'll need to identify and select the quarantine policy by name in upcoming steps.
+3. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. The policy name is selectable in drop down list in upcoming steps.
 
    When you're finished on the **Policy name** page, click **Next**.
 
@@ -96,7 +96,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 6. On the **Review policy** page, you can review your selections. Click **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
-   When you're finished on the **Review policy** page, click **Submit**., and then click **Done** in the confirmation page.
+   When you're finished on the **Review policy** page, click **Submit**, and then click **Done** in the confirmation page.
 
 7. On the confirmation page that appears, you can use the links to review quarantined messages or go to the **Anti-spam policies** page in the Defender portal.
 
@@ -207,7 +207,7 @@ The rest of this step explains how to assign quarantine policies for supported f
    - Select an existing **inbound** anti-spam policy by clicking anywhere in the row other than the check box next to the name. In the policy details flyout that opens, go to the **Actions** section and then click **Edit actions**.
    - Click ![Create policy icon.](../../media/m365-cc-sc-create-icon.png) **Create policy**, select **Inbound** from the drop down list to start the new anti-spam policy wizard, and then get to the **Actions** page.
 
-3. On the **Actions** page or flyout, every verdict that has the **Quarantine message** action selected will also have the **Select quarantine policy** box for you to select a  quarantine policy.
+3. On the **Actions** page or flyout, every verdict that has the **Quarantine message** action selected also has the **Select quarantine policy** box for you to select a quarantine policy.
 
    During the creation of the anti-spam policy, if you _change_ the action of a spam filtering verdict to **Quarantine message**, the **Select quarantine policy** box is blank by default. A blank value means the default quarantine policy for that verdict is used. When you later view or edit the anti-spam policy settings, the quarantine policy name is shown. The default quarantine policies are listed in the [supported features table](#step-2-assign-a-quarantine-policy-to-supported-features).
 
@@ -225,37 +225,37 @@ If you'd rather use PowerShell to assign quarantine policies in anti-spam polici
 
 **Notes**:
 
-- The default value for the _PhishSpamAction_ and _HighConfidencePhishAction_ parameters is Quarantine, so you don't need to use those parameters when you create new spam filter policies in PowerShell. For the _SpamAction_, _HighConfidenceSpamAction_, and _BulkSpamAction_ parameters in new or existing anti-spam policies, the quarantine policy is effective only if the value is Quarantine.
+- Quarantine policies matter only when messages are quarantined. The default value for the _HighConfidencePhishAction_ parameter is Quarantine, so you don't need to use that _\*Action_ parameter when you create new spam filter policies in PowerShell. By default, all other _\*Action_ parameters in new spam filter policies aren't set to value Quarantine.
 
   To see the important parameter values in existing anti-spam policies, run the following command:
 
   ```powershell
-  Get-HostedContentFilterPolicy | Format-List Name,*SpamAction,HighConfidencePhishAction,*QuarantineTag
+  Get-HostedContentFilterPolicy | Format-List Name,SpamAction,SpamQuarantineTag,HighConfidenceSpamAction,HighConfidenceSpamQuarantineTag,PhishSpamAction,PhishQuarantineTag,HighConfidencePhishAction,HighConfidencePhishQuarantineTag,BulkSpamAction,BulkQuarantineTag
   ```
 
-  For information about the default action values and the recommended action values for Standard and Strict, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
-
-- If you create a new anti-spam policy without specifying the quarantine policy for the spam filtering verdict, the default quarantine policy for that verdict is used. The default quarantine policies for each spam filter verdict are shown in [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
+- If you create an anti-spam policy without specifying the quarantine policy for the spam filtering verdict, the default quarantine policy for that verdict is used. For information about the default action values and the recommended action values for Standard and Strict, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
   Specify a different quarantine policy to turn on quarantine notifications or change the default end-user capabilities on quarantined messages for that particular spam filtering verdict.
 
-- A new anti-spam policy in PowerShell requires a spam filter policy (settings) using the **New-HostedContentFilterPolicy** cmdlet and an exclusive spam filter rule (recipient filters) using the **New-HostedContentFilterRule** cmdlet. For instructions, see [Use PowerShell to create anti-spam policies](anti-spam-policies-configure.md#use-powershell-to-create-anti-spam-policies).
+  Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of quarantined high confidence phishing messages, although we typically don't recommend it.
+
+- In PowerShell, a new anti-spam policy in PowerShell requires a spam filter policy using the **New-HostedContentFilterPolicy** cmdlet (settings), and an exclusive spam filter rule using the **New-HostedContentFilterRule** cmdlet (recipient filters). For instructions, see [Use PowerShell to create anti-spam policies](anti-spam-policies-configure.md#use-powershell-to-create-anti-spam-policies).
 
 This example creates a new spam filter policy named Research Department with the following settings:
 
 - The action for all spam filtering verdicts is set to Quarantine.
-- The custom quarantine policy named NoAccess that assigns **No access** permissions replaces any default quarantine policies that don't already assign **No access** permissions by default.
+- The default quarantine policy named AdminOnlyAccessPolicy that assigns **No access** permissions replaces the default quarantine policy that's used (high confidence phishing messages are quarantined by default and the AdminOnlyAccessPolicy quarantine policy is used by default).
 
 ```powershell
-New-HostedContentFilterPolicy -Name "Research Department" -SpamAction Quarantine -SpamQuarantineTag NoAccess -HighConfidenceSpamAction Quarantine -HighConfidenceSpamQuarantineTag NoAction -PhishSpamAction Quarantine -PhishQuarantineTag NoAction -BulkSpamAction Quarantine -BulkQuarantineTag NoAccess
+New-HostedContentFilterPolicy -Name "Research Department" -SpamAction Quarantine -SpamQuarantineTag AdminOnlyAccessPolicy -HighConfidenceSpamAction Quarantine -HighConfidenceSpamQuarantineTag AdminOnlyAccessPolicy -PhishSpamAction Quarantine -PhishQuarantineTag AdminOnlyAccessPolicy -BulkSpamAction Quarantine -BulkQuarantineTag AdminOnlyAccessPolicy
 ```
 
 For detailed syntax and parameter information, see [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy).
 
-This example modifies the existing spam filter policy named Human Resources. The action for the spam quarantine verdict is set to Quarantine, and the custom quarantine policy named NoAccess is assigned.
+This example modifies the existing spam filter policy named Human Resources. The action for the spam quarantine verdict is set to Quarantine, and the custom quarantine policy named ContosoNoAccess is assigned.
 
 ```powershell
-Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine -SpamQuarantineTag NoAccess
+Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine -SpamQuarantineTag ContosoNoAccess
 ```
 
 For detailed syntax and parameter information, see [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy).
@@ -277,13 +277,13 @@ Spoof intelligence is available in EOP and Defender for Office 365. User imperso
    - **Enable intelligence for impersonation protection**
    - **Enable spoof intelligence**
 
-4. On the **Actions** page or flyout, every verdict that has the **Quarantine the message** action will also have the **Apply quarantine policy** box for you to select a quarantine policy.
+4. On the **Actions** page or flyout, every verdict that has the **Quarantine the message** action also has the **Apply quarantine policy** box for you to select a quarantine policy.
 
-   During the creation of the anti-phishing policy, if you don't select a quarantine policy, the default quarantine policy for is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown. The default quarantine policies are listed in the [supported features table](#step-2-assign-a-quarantine-policy-to-supported-features).
+   During the creation of the anti-phishing policy, if you don't select a quarantine policy, the default quarantine policy for is used. When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown. The default quarantine policies are listed in the [supported features table](#step-2-assign-a-quarantine-policy-to-supported-features).
 
    :::image type="content" source="../../media/quarantine-tags-in-anti-phishing-policies.png" alt-text="The Quarantine policy selections in an anti-phishing policy." lightbox="../../media/quarantine-tags-in-anti-phishing-policies.png":::
 
-Full instructions for creating and modifying anti-phishing policies are available in the following topics:
+Full instructions for creating and modifying anti-phishing policies are available in the following articles:
 
 - [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
 - [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
@@ -298,28 +298,28 @@ If you'd rather use PowerShell to assign quarantine policies in anti-phishing po
 
 **Notes**:
 
-- The _Enable\*_ parameters are required to turn on the specific protection features. The default value for the _EnableMailboxIntelligence_ and _EnableSpoofIntelligence_ parameters is $true, so you don't need to use these parameters when you create new anti-phish policies in PowerShell. All other _Enable\*_ parameters need to have the value $true so you can set the value Quarantine in the corresponding _\*Action_ parameters to then assign a quarantine policy. None of the _*\Action_ parameters have the default value Quarantine.
+- Quarantine policies in anti-phish policies matter only when messages are quarantined. In anti-phish policies, messages are quarantined when the _Enable\*_ parameter value for the feature is $true **and** the corresponding _*\Action_ parameter value is Quarantine. The default value for the _EnableMailboxIntelligence_ and _EnableSpoofIntelligence_ parameters is $true, so you don't need to use them when you create new anti-phish policies in PowerShell. By default, no _*\Action_ parameters have the value Quarantine.
 
   To see the important parameter values in existing anti-phish policies, run the following command:
 
   ```powershell
-  Get-AntiPhishPolicy | Format-List Name,Enable*Intelligence,Enable*Protection,*Action,*QuarantineTag
+  Get-AntiPhishPolicy | Format-List EnableSpoofIntelligence,AuthenticationFailAction,SpoofQuarantineTag,EnableTargetedUserProtection,TargetedUserProtectionAction,TargetedUserQuarantineTag,EnableTargetedDomainsProtection,EnableOrganizationDomainsProtection,TargetedDomainProtectionAction,TargetedDomainQuarantineTag,EnableMailboxIntelligence,EnableMailboxIntelligenceProtection,MailboxIntelligenceProtectionAction,MailboxIntelligenceQuarantineTag
   ```
 
-  For information about the default action values and the recommended action values for Standard and Strict, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) and [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+  For information about the default and recommended action values for Standard and Strict configurations, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) and [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
 - If you create a new anti-phishing policy without specifying the quarantine policy for the anti-phishing action, the default quarantine policy for that action is used. The default quarantine policies for each anti-phishing action are shown in [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) and [Anti-phishing policy settings in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
   Specify a different quarantine policy only if you want to change the default end-user capabilities on quarantined messages for that particular anti-phishing action.
 
-- A new anti-phishing policy in PowerShell requires an anti-phish policy (settings) using the **New-AntiPhishPolicy** cmdlet and an exclusive anti-phish rule (recipient filters) using the **New-AntiPhishRule** cmdlet. For instructions, see the following topics:
+- A new anti-phishing policy in PowerShell requires an anti-phish policy using the **New-AntiPhishPolicy** cmdlet (settings), and an exclusive anti-phish rule using the **New-AntiPhishRule** cmdlet (recipient filters). For instructions, see the following articles:
   - [Use PowerShell to configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
   - [Use Exchange Online PowerShell to configure anti-phishing policies](anti-phishing-policies-mdo-configure.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
 
 This example creates a new anti-phish policy named Research Department with the following settings:
 
 - The action for all spam filtering verdicts is set to Quarantine.
-- The custom quarantine policy named NoAccess that assigns **No access** permissions replaces any default quarantine policies that don't already assign **No access** permissions by default.
+- The default quarantine policy named AdminOnlyAccessPolicy that assigns **No access** permissions replaces the default quarantine policy that's used.
 
 ```powershell
 New-AntiPhishPolicy -Name "Research Department" -AuthenticationFailAction Quarantine -SpoofQuarantineTag NoAccess -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -MailboxIntelligenceQuarantineTag NoAccess -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainProtectionAction Quarantine -TargetedDomainQuarantineTag NoAccess -EnableTargetedUserProtection $true -TargetedUserProtectionAction Quarantine -TargetedUserQuarantineTag NoAccess
@@ -327,10 +327,10 @@ New-AntiPhishPolicy -Name "Research Department" -AuthenticationFailAction Quaran
 
 For detailed syntax and parameter information, see [New-AntiPhishPolicy](/powershell/module/exchange/new-antiphishpolicy).
 
-This example modifies the existing anti-phish policy named Human Resources. The action for messages detected by user impersonation and domain impersonation is set to Quarantine, and the custom quarantine policy named NoAccess is assigned.
+This example modifies the existing anti-phish policy named Human Resources. The action for messages detected by user impersonation and domain impersonation is set to Quarantine, and the custom quarantine policy named ContosoNoAccess is assigned.
 
 ```powershell
-Set-AntiPhishPolicy -Identity "Human Resources" -EnableTargetedDomainsProtection $true -TargetedDomainProtectionAction Quarantine -TargetedDomainQuarantineTag NoAccess -EnableTargetedUserProtection $true -TargetedUserProtectionAction Quarantine -TargetedUserQuarantineTag NoAccess
+Set-AntiPhishPolicy -Identity "Human Resources" -EnableTargetedDomainsProtection $true -TargetedDomainProtectionAction Quarantine -TargetedDomainQuarantineTag ContosoNoAccess -EnableTargetedUserProtection $true -TargetedUserProtectionAction Quarantine -TargetedUserQuarantineTag ContosoNoAccess
 ```
 
 For detailed syntax and parameter information, see [Set-AntiPhishPolicy](/powershell/module/exchange/set-antiphishpolicy).
@@ -363,9 +363,9 @@ If you'd rather use PowerShell to assign quarantine policies in anti-malware pol
 
 **Notes**:
 
-- When you create new anti-malware policies without using the QuarantineTag parameter when you create a new anti-malware policy, the default quarantine policy for malware detections is used (AdminOnlyAccessPolicy).
+- When you create new anti-malware policies without using the _QuarantineTag_ parameter, the default quarantine policy named AdminOnlyAccessPolicy is used.
 
-  You need to replace the default quarantine policy with a custom quarantine policy only if you want to change the default end-user capabilities on messages that are quarantined as malware.
+  Users can't release their own messages that were quarantined as malware, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of quarantined malware messages, although we typically don't recommend it.
 
   To see the important parameter values in existing anti-phish policies, run the following command:
 
@@ -373,20 +373,20 @@ If you'd rather use PowerShell to assign quarantine policies in anti-malware pol
   Get-MalwareFilterPolicy | Format-Table Name,QuarantineTag
   ```
 
-- A new anti-malware policy in PowerShell requires a malware filter policy (settings) using the **New-MalwareFilterPolicy** cmdlet and an exclusive malware filter rule (recipient filters) using the **New-MalwareFilterRule** cmdlet. For instructions, see [Use Exchange Online PowerShell or standalone EOP PowerShell to configure anti-malware policies](anti-malware-policies-configure.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-malware-policies).
+- A new anti-malware policy in PowerShell requires a malware filter policy using the **New-MalwareFilterPolicy** cmdlet (settings), and an exclusive malware filter rule using the **New-MalwareFilterRule** cmdlet (recipient filters). For instructions, see [Use Exchange Online PowerShell or standalone EOP PowerShell to configure anti-malware policies](anti-malware-policies-configure.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-malware-policies).
 
-This example creates a malware filter policy named Research Department that uses the custom quarantine policy named NoAccess that assigns **No access** permissions to the quarantined messages.
+This example creates a malware filter policy named Research Department that uses the custom quarantine policy named ContosoNoAccess that assigns **No access** permissions to the quarantined messages.
 
 ```powershell
-New-MalwareFilterPolicy -Name "Research Department" -QuarantineTag NoAccess
+New-MalwareFilterPolicy -Name "Research Department" -QuarantineTag ContosoNoAccess
 ```
 
 For detailed syntax and parameter information, see [New-MalwareFilterPolicy](/powershell/module/exchange/new-malwarefilterpolicy).
 
-This example modifies the existing malware filter policy named Human Resources by assigning the custom quarantine policy named NoAccess that assigns **No access** permissions to the quarantined messages.
+This example modifies the existing malware filter policy named Human Resources to use the custom quarantine policy named ContosoNoAccess that assigns **No access** permissions to the quarantined messages.
 
 ```powershell
-New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
+New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag ContosoNoAccess
 ```
 
 For detailed syntax and parameter information, see [Set-MalwareFilterPolicy](/powershell/module/exchange/set-malwarefilterpolicy).
@@ -400,8 +400,6 @@ For detailed syntax and parameter information, see [Set-MalwareFilterPolicy](/po
    - Click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create** to start the new Safe Attachments policy wizard and get to the **Settings** page.
 
 3. On the **Settings** page or flyout, view or select a quarantine policy in the **Quarantine policy** box.
-
-   Quarantine notifications are disabled in the policy named AdminOnlyAccessPolicy. To notify recipients that have messages quarantined as malware by Safe Attachments, create or use an existing quarantine policy where quarantine notifications are turned on. For instructions, see [Create quarantine policies in the Microsoft 365 Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
    Users can't release their own messages that were quarantined as malware by Safe Attachments policies, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of quarantined malware messages, although we typically don't recommend it.
 
@@ -419,11 +417,11 @@ If you'd rather use PowerShell to assign quarantine policies in Safe Attachments
 
 **Notes**:
 
-- The _Action_ parameter values Block, Replace, or DynamicDelivery can result in quarantined messages (the value Allow does not quarantine messages). The value of the _Action_ parameter in meaningful only when the value of the _Enable_ parameter is `$true`.
+- The _Action_ parameter values Block, Replace, or DynamicDelivery can result in quarantined messages (the value Allow doesn't quarantine messages). The value of the _Action_ parameter in meaningful only when the value of the _Enable_ parameter is `$true`.
 
-- When you create new Safe Attachments policies without using the QuarantineTag parameter, the default quarantine policy for Safe Attachments detections in email is used (AdminOnlyAccessPolicy).
+- When you create new Safe Attachments policies without using the _QuarantineTag_ parameter, the default quarantine policy named AdminOnlyAccessPolicy is used for malware detections by Safe Attachments.
 
-  You need to replace the default quarantine policy with a custom quarantine policy only if you want to change the default end-user capabilities on email messages that are quarantined by Safe Attachments policies.
+  Users can't release their own messages that were quarantined as malware, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of quarantined malware messages, although we typically don't recommend it.
 
   To see the important parameter values, run the following command:
 
@@ -431,9 +429,9 @@ If you'd rather use PowerShell to assign quarantine policies in Safe Attachments
   Get-SafeAttachmentPolicy | Format-List Name,Enable,Action,QuarantineTag
   ```
 
-- A new Safe Attachments policy in PowerShell requires a safe attachment policy (settings) using the **New-SafeAttachmentPolicy** cmdlet and an exclusive safe attachment rule (recipient filters) using the **New-SafeAttachmentRule** cmdlet. For instructions, see [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Attachments policies](safe-attachments-policies-configure.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies).
+- A new Safe Attachments policy in PowerShell requires a safe attachment policy using the **New-SafeAttachmentPolicy** cmdlet (settings), and an exclusive safe attachment rule using the **New-SafeAttachmentRule** cmdlet (recipient filters). For instructions, see [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Attachments policies](safe-attachments-policies-configure.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies).
 
-This example creates a safe attachment policy named Research Department that blocks detected messages and uses the custom quarantine policy named NoAccess that assigns **No access** permissions to the quarantined messages.
+This example creates a safe attachment policy named Research Department that blocks detected messages and uses the custom quarantine policy named ContosoNoAccess that assigns **No access** permissions to the quarantined messages.
 
 ```powershell
 New-SafeAttachmentPolicy -Name "Research Department" -Enable $true -Action Block -QuarantineTag NoAccess
@@ -441,10 +439,10 @@ New-SafeAttachmentPolicy -Name "Research Department" -Enable $true -Action Block
 
 For detailed syntax and parameter information, see [New-MalwareFilterPolicy](/powershell/module/exchange/new-malwarefilterpolicy).
 
-This example modifies the existing safe attachment policy named Human Resources by assigning the custom quarantine policy named NoAccess that assigns **No access** permissions.
+This example modifies the existing safe attachment policy named Human Resources to use the custom quarantine policy named ContosoNoAccess that assigns **No access** permissions.
 
 ```powershell
-Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
+Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag ContosoNoAccess
 ```
 
 For detailed syntax and parameter information, see [Set-MalwareFilterPolicy](/powershell/module/exchange/set-malwarefilterpolicy).
@@ -453,57 +451,84 @@ For detailed syntax and parameter information, see [Set-MalwareFilterPolicy](/po
 
 The global settings for quarantine policies allow you to customize the quarantine notifications that are sent to recipients of quarantined messages if quarantine notifications are turned on in the quarantine policy. For more information about quarantine notifications, see [Quarantine notifications](quarantine-quarantine-notifications.md).
 
+### Customize quarantine notifications for different languages
+
+Quarantine notifications are already localized based on the recipient's language settings. You can customize the **Sender display name**, **Subject**, and **Disclaimer** values that are used in quarantine notifications based on the recipient's language.
+
+- The **Sender display name** as shown in the following screenshot:
+
+  :::image type="content" source="../../media/quarantine-tags-esn-customization-display-name.png" alt-text="A customized sender display name in a quarantine notification." lightbox="../../media/quarantine-tags-esn-customization-display-name.png":::
+
+- The **Subject** field of quarantine notification messages.
+
+- The **Disclaimer** text that's added to the bottom of quarantine notifications. The localized text, **A disclaimer from your organization:** is always included first, followed by the text you specify as show in the following screenshot:
+
+:::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="A custom disclaimer at the bottom of a quarantine notification." lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
+
+To create customized quarantine notifications for up to three languages, do the following steps:
+
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
 2. On the **Quarantine policies** page, click ![Global settings icon.](../../media/m365-cc-sc-gear-icon.png) **Global settings**.
 
-3. In the **Quarantine notification settings** flyout that opens, configure the following settings:
+3. In the **Quarantine notification settings** flyout that opens, do the following steps:
 
-   > [!NOTE]
-   > We don't allow the same display name, subject, or disclaimer text for different languages. You need to provide a different display name, subject, and disclaimer text for each language that you select.
-   >
-   > The same sender address is used for all languages. Although you can select a different sender email address for each language, the last sender you specify is used for all languages.
+   1. Select the language from the **Choose language** box. The default value is **Default**, which means the default language for the Microsoft 365 organization. For more information, see [How to set language and region settings for Microsoft 365](/office365/troubleshoot/access-management/set-language-and-region).
 
-   - Customize quarantine notifications based on the recipient's language:
+      Although this box is in the middle of the page, you need to select it first. If you enter values in the **Sender display name**, **Subject**, or **Disclaimer** boxes before you select the language value, the other values are removed and you start over when you select the language value.
 
-     - The **Display name** of the sender that's used in quarantine notifications as shown in the following screenshot:
+   2. Enter values for **Sender display name**, **Subject**, and **Disclaimer**. The values must be unique for each language. If you try to reuse a value in a different language, you'll get an error when you click **Save**.
+   3. Click the **Add** button.
+   4. Repeat the previous steps to create a maximum of three customized quarantine notifications based on the recipient's language. An unlabeled box shows the languages that you've configured:
 
-       :::image type="content" source="../../media/quarantine-tags-esn-customization-display-name.png" alt-text="A customized sender display name in a quarantine notification." lightbox="../../media/quarantine-tags-esn-customization-display-name.png":::
+      :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="The selected languages in the global quarantine notification settings of quarantine policies." lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
-     - The **Subject** field of quarantine notification messages.
-
-     - The **Disclaimer** text that's added to the bottom of quarantine notifications. The localized text, **A disclaimer from your organization:** is always included first, followed by the text you specify as show in the following screenshot:
-
-       :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="A custom disclaimer at the bottom of a quarantine notification." lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
-
-     - The language identifier for the **Display name**, **Subject**, and **Disclaimer** values. Quarantine notifications are already localized based on the recipient's language settings. The **Display name**, **Subject**, and **Disclaimer** values are used in quarantine notifications that apply to the recipient's language.
-
-       Select the language in the **Choose language** box _before_ you enter values in the **Display name**, **Subject** and **Disclaimer** boxes. When you change the value in the **Choose language** box, the values in the **Display name**, **Subject**, and **Disclaimer** boxes are emptied.
-
-     Use the following steps to customize quarantine notifications based on the recipient's language:
-
-     1. Select the language from the **Choose language** box. The default value is **Default**, which means the default language for the Microsoft 365 organization. For more information, see [How to set language and region settings for Microsoft 365](/office365/troubleshoot/access-management/set-language-and-region).
-
-        Although this box is in the middle of the page, you need to select it first. If you enter values for the **Sender display name**, **Subject**, or **Disclaimer** first, and then you change the language value, the other values are removed and you start over.
-
-     2. Enter values for **Sender display name**, **Subject**, and **Disclaimer**. The values must be unique for each language. If you try to reuse a **Sender display name**, **Subject**, or **Disclaimer** value for multiple languages, you'll get an error when you click **Save**.
-     3. Use **Specify sender address** to select an existing recipient to use as the sender of quarantine notifications. If you've already specified a sender for a different language, the sender you specify will overwrite your previous selection (the same sender email address is used for all languages).
-     4. Click the **Add** button.
-     5. Repeat the previous steps to create a maximum of three customized quarantine notifications based on the recipient's language. An unlabeled box shows the languages that you've configured:
-
-        :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="The selected languages in the global quarantine notification settings of quarantine policies." lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
-
-   - **Use my company logo**: Select this option to replace the default Microsoft logo that's used at the top of quarantine notifications. Before you do this step, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo. This option isn't supported if your organization has a custom logo pointing to a URL instead of an uploaded image file.
-
-     A custom logo in a quarantine notification is shown i the following screenshot:
-
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-logo.png" alt-text="A custom logo in a quarantine notification" lightbox="../../media/quarantine-tags-esn-customization-logo.png":::
-
-   - **Send end-user spam notification every (days)**: Select the frequency for quarantine notifications. The default value is 3 days, but you can select 1 to 15 days.
+     Click the language value in the box to edit the settings for that language. Click ![Remove selection icon.](../../media/m365-cc-sc-remove-selection-icon.png) to remove the language.
 
 4. When you're finished on the **Quarantine notifications** flyout, click **Save**.
 
    :::image type="content" source="../../media/mdo-quarantine-policy-quarantine-notification-settings.png" alt-text="Quarantine notification settings flyout in the Microsoft 365 Defender portal." lightbox="../../media/mdo-quarantine-policy-quarantine-notification-settings.png":::
+
+### Customize all quarantine notifications
+
+Even if you don't customize quarantine notifications for different languages, settings are available in the **Quarantine notifications flyout** to customize all quarantine notifications. Or, you can configure the settings before, during, or after you customize quarantine notifications for different languages (these settings apply to all languages):
+
+- **Specify sender address**: Select an existing user for the sender email address of quarantine notifications.
+
+- **Use my company logo**: Select this option to replace the default Microsoft logo that's used at the top of quarantine notifications. Before you do this step, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo. This option isn't supported if your organization has a custom logo pointing to a URL instead of an uploaded image file.
+
+  A custom logo in a quarantine notification is shown in the following screenshot:
+
+  :::image type="content" source="../../media/quarantine-tags-esn-customization-logo.png" alt-text="A custom logo in a quarantine notification" lightbox="../../media/quarantine-tags-esn-customization-logo.png":::
+
+ - **Send end-user spam notification every (days)**: Select the frequency for quarantine notifications. The default value is 3 days, but you can select 1 to 15 days.
+
+When you're finished in the **Quarantine notifications flyout**, click **Save**.
+
+### Use PowerShell to configure global quarantine notification settings
+
+If you'd rather use PowerShell to configure global quarantine notification settings, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the following syntax:
+
+```powershell
+Get-QuarantinePolicy -QuarantinePolicyType GlobalQuarantinePolicy | Set-QuarantinePolicy -MultiLanguageSetting ('Language1','Language2','Language3') -MultiLanguageCustomDisclaimer ('Language1 Disclaimer','Language2 Disclaimer','Language3 Disclaimer') -ESNCustomSubject ('Language1 Subject','Language2 Subject','Language3 Subject') -MultiLanguageSenderName ('Language1 Sender Display Name','Language2 Sender Display Name','Language3 Sender Display Name') [-EndUserSpamNotificationCustomFromAddress <InternalUserEmailAddress>] [-OrganizationBrandingEnabled <$true | $false>] [-EndUserSpamNotificationFrequencyInDays <1 to 30>]
+```
+
+**Notes**:
+
+- You can specify a maximum of 3 available languages (the value Default is the [default language for the Microsoft 365 organization](/office365/troubleshoot/access-management/set-language-and-region).
+- For each language, you need to specify unique _MultiLanguageCustomDisclaimer_, _ESNCustomSubject_, and _MultiLanguageSenderName_ values.
+- If any of the text values contain quotation marks, you need to escape the quotation mark with an additional quotation mark. For example, change `d'assistance` to `d''assistance`.
+
+This example configures the following settings:
+
+- Customized quarantine notifications for the default language and Spanish.
+- The quarantine notification sender's email address is set to michelle@contoso.onmicrosoft.com.
+
+```powershell
+Get-QuarantinePolicy -QuarantinePolicyType GlobalQuarantinePolicy | Set-QuarantinePolicy -MultiLanguageSetting ('Default','Spanish') -MultiLanguageCustomDisclaimer ('For more information, contact the Help Desk.','Para obtener más información, comuníquese con la mesa de ayuda.') -ESNCustomSubject ('You have quarantined messages','Tienes mensajes en cuarentena') -MultiLanguageSenderName ('Contoso administrator','Administradora de contoso') -EndUserSpamNotificationCustomFromAddress michelle@contoso.onmicrosoft.com
+```
+
+For detailed syntax and parameter information, see [Set-QuarantinePolicy](/powershell/module/exchange/set-quarantinepolicy).
 
 ## View quarantine policies in the Microsoft 365 Defender portal
 
@@ -578,7 +603,7 @@ For detailed syntax and parameter information, see [Set-QuarantinePolicy](/power
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
-2. On the **Quarantine policies** page,  select the policy by clicking the check box next to the name.
+2. On the **Quarantine policies** page, select the policy by clicking the check box next to the name.
 
 3. Click the ![Delete policy icon.](../../media/m365-cc-sc-delete-icon.png) **Delete policy** icon that appears.
 
@@ -650,49 +675,49 @@ The relationship between permissions, permissions groups, and the default quaran
 
 In other words, users can never release their own malware or high confidence phishing messages from quarantine, regardless of how you configure the quarantine policy. At best, admins can create and use a custom quarantine policy with the **Allow recipients to request a message to be released from quarantine** permission, although we typically don't recommend it.
 
-² This policy is used in [preset security policies](preset-security-policies.md) instead of the DefaultFullAccessPolicy policy to enable quarantine notifications. See [the next section](#full-access-permissions-and-quarantine-notifications) for more information.
+² This policy is used in [preset security policies](preset-security-policies.md) instead of the DefaultFullAccessPolicy policy to enable quarantine notifications.
 
-³ See [the next section](#full-access-permissions-and-quarantine-notifications) for more information about the NotificationEnabledPolicy policy.
+³ Your organization might not have the policy named NotificationEnabledPolicy as described in the next section.
 
 #### Full access permissions and quarantine notifications
 
-The default quarantine policy named DefaultFullAccessPolicy duplicates the historical _permissions_ for less harmful quarantined messages, but _quarantine notifications_ are not turned on. Where DefaultFullAccessPolicy is used by default is described in the feature tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+The default quarantine policy named DefaultFullAccessPolicy duplicates the historical _permissions_ for less harmful quarantined messages, but _quarantine notifications_ aren't turned on in the quarantine policy. Where DefaultFullAccessPolicy is used by default is described in the feature tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
-To provide the permissions of the DefaultFullAccessPolicy policy _and_ quarantine notifications for organizations that needed them, we created the policy named NotificationEnabledPolicy to use _in place of_ the DefaultFullAccessPolicy policy based on the following criteria:
+To give organizations the permissions of DefaultFullAccessPolicy with quarantine notifications turned on, we selectively included a default policy named NotificationEnabledPolicy based on the following criteria:
 
 - The organization existed before the introduction of quarantine policies (July-August 2021).
 
   **and**
 
-- The **Enable end-user spam notifications** setting was turned on in one or more [anti-spam policies](anti-spam-policies-configure.md). Before the introduction of quarantine policies, this method controlled whether users received notifications about their quarantined messages
+- The **Enable end-user spam notifications** setting was turned on in one or more [anti-spam policies](anti-spam-policies-configure.md). Before the introduction of quarantine policies, this setting determined whether users received notifications about their quarantined messages
 
 Newer organizations or older organizations that never turned on end-user spam notifications don't have the policy named NotificationEnabledPolicy.
 
-To give users **Full access** permissions with quarantine notifications, organizations that don't have the NotificationEnabledPolicy policy have the following options:
+To give users **Full access** permissions _and_ quarantine notifications, organizations that don't have the NotificationEnabledPolicy policy have the following options:
 
+- Use the default policy named DefaultFullAccessWithNotificationPolicy.
 - Create and use custom quarantine policies with **Full access** permissions and quarantine notifications turned on.
-- Use the DefaultFullAccessWithNotificationPolicy.
 
 ### Quarantine policy permission details
 
-The following sections describe the effects of preset permission groups and individual permissions in the details of quarantined messages and in quarantine notifications.
+The following sections describe the effects of preset permission groups and individual permissions for uses in quarantined messages and in quarantine notifications.
 
 #### Preset permissions groups
 
-The individual permissions that are included in preset permission groups are listed in the table at the beginning of this article.
+The individual permissions that are included in preset permission groups are described in the [Anatomy of a quarantine policy](#anatomy-of-a-quarantine-policy) section.
 
 ##### No access
 
-If the quarantine policy assigns the **No access** permissions (admin only access), users will not able to see those messages that are quarantined:
+If the quarantine policy assigns **No access** permissions (admin only access), users can't see quarantined messages:
 
-- **Quarantined message details**: No messages will show in the end-user view.
-- **Quarantine notifications**: No notifications will be sent for those messages.
+- **Message details in quarantine**: The quarantined messages aren't visible to the user.
+- **Quarantine notifications**: No notifications are sent for those quarantined messages.
 
 ##### Limited access
 
-If the quarantine policy assigns the **Limited access** permissions, users get the following capabilities:
+If the quarantine policy assigns **Limited access** permissions, users get the following capabilities:
 
-- **Quarantined message details**: The following buttons are available:
+- **Message details in quarantine**: The following buttons are available:
   - **Request release**
   - **View message headers**
   - **Preview message**
@@ -710,9 +735,9 @@ If the quarantine policy assigns the **Limited access** permissions, users get t
 
 ##### Full access
 
-If the quarantine policy assigns the **Full access** permissions (all available permissions), users get the following capabilities:
+If the quarantine policy assigns **Full access** permissions (all available permissions), users get the following capabilities:
 
-- **Quarantined message details**: The following buttons are available:
+- **Message details in quarantine**: The following buttons are available:
   - **Release message**
   - **View message headers**
   - **Preview message**
@@ -729,7 +754,7 @@ If the quarantine policy assigns the **Full access** permissions (all available 
   :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="The available buttons in the quarantine notification if the quarantine policy gives the user full access permissions" lightbox="../../media/quarantine-tags-esn-full-access.png":::
 
 > [!NOTE]
-> As explained earlier, quarantine notifications are disabled in the default quarantine policy named DefaultFullAccessPolicy, even though that policy has the **Full access** permission group assigned. Quarantine notifications are available only in the default policy named DefaultFullAccessWithNotificationPolicy or in custom quarantine policies that you create. If your organization is old enough, you might also have the default quarantine access policy named NotificationEnabledPolicy as described in the [Full access permissions and quarantine notifications](#full-access-permissions-and-quarantine-notifications) section.
+> As explained earlier, quarantine notifications are turned on only in the default policies named DefaultFullAccessWithNotificationPolicy or ([if your organization is old enough](#full-access-permissions-and-quarantine-notifications)) NotificationEnabledPolicy.
 
 #### Individual permissions
 
@@ -737,7 +762,7 @@ If the quarantine policy assigns the **Full access** permissions (all available 
 
 The **Block sender** permission (_PermissionToBlockSender_) controls access to the button that allows users to conveniently add the quarantined message sender to their Blocked Senders list.
 
-- **Quarantined message details**:
+- **Message details in quarantine**:
   - **Block sender** permission enabled: The **Block sender** button is available.
   - **Block sender** permission disabled: The **Block sender** button isn't available.
 
@@ -749,9 +774,9 @@ For more information about the Blocked Senders list, see [Block messages from so
 
 ##### Delete permission
 
-The **Delete** permission (_PermissionToDelete_) controls the ability to of users to delete their messages (messages where the user is a recipient) from quarantine.
+The **Delete** permission (_PermissionToDelete_) controls the ability to of users to delete their messages from quarantine (messages where they're a recipient).
 
-- **Quarantined message details**:
+- **Message details in quarantine**:
   - **Delete** permission enabled: The **Remove from quarantine** button is available.
   - **Delete** permission disabled: The **Remove from quarantine** button isn't available.
 
@@ -761,7 +786,7 @@ The **Delete** permission (_PermissionToDelete_) controls the ability to of user
 
 The **Preview** permission (_PermissionToPreview_) controls the ability to of users to preview their messages in quarantine.
 
-- **Quarantined message details**:
+- **Message details in quarantine**:
   - **Preview** permission enabled: The **Preview message** button is available.
   - **Preview** permission disabled: The **Preview message** button isn't available.
 
@@ -770,11 +795,11 @@ The **Preview** permission (_PermissionToPreview_) controls the ability to of us
 ##### Allow recipients to release a message from quarantine permission
 
 > [!NOTE]
-> This permission isn't honored for messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies. At best, you can use the [Allow recipients to request a message to be released from quarantine permission](#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission) permission so users can view and _request_ the release of their quarantined malware or high confidence phishing messages, although we typically don't recommend it.
+> This permission isn't honored for messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies, regardless of how you configure the quarantine policy. At best, you can use the [Allow recipients to request a message to be released from quarantine permission](#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission) permission so users can view and _request_ the release of their quarantined malware or high confidence phishing messages, although we typically don't recommend it.
 
 The **Allow recipients to release a message from quarantine** permission (_PermissionToRelease_) controls the ability of users to release their quarantined messages directly and without the approval of an admin.
 
-- **Quarantined message details**:
+- **Message details in quarantine**:
   - Permission enabled: The **Release message** button is available.
   - Permission disabled: The **Release message** button isn't available.
 
@@ -784,9 +809,9 @@ The **Allow recipients to release a message from quarantine** permission (_Permi
 
 ##### Allow recipients to request a message to be released from quarantine permission
 
-The **Allow recipients to request a message to be released from quarantine** permission (_PermissionToRequestRelease_) controls the ability of users to _request_ the release of their quarantined messages. The message is only released after an admin approves the request.
+The **Allow recipients to request a message to be released from quarantine** permission (_PermissionToRequestRelease_) controls the ability of users to _request_ the release of their quarantined messages. Messages are released only after an admin approves the request.
 
-- **Quarantined message details**:
+- **Message details in quarantine**:
   - Permission enabled: The **Request release** button is available.
   - Permission disabled: The **Request release** button isn't available.
 
