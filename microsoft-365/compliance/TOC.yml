@@ -1786,7 +1786,7 @@
             - name: Learn about multiservice support
               href: compliance-manager-multiservice.md
             - name: Configure cloud settings
-              href: compliance-manager-assessments.md  
+              href: compliance-manager-cloud-settings.md  
         - name: Create assessments
           items:
             - name: Build and manage assessments
