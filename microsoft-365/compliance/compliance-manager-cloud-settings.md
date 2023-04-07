@@ -27,6 +27,17 @@ description: "Set up your Azure and other non-Microsoft services for using Micro
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Supported services
+## Follow these steps
 
-Compliance Manager supports an array of services. YOu can use Compliance Manager to track and manage your compliance activities within Microsoft 365, Microsoft Azure, and other cloud service providers.
+WHAT NEEDS TO BE reflected here based on private preview scenarios doc?
+
+- Microsoft Defender for Cloud (is MDC same as MS Defender for Cloud apps?) [service description details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-cloud-apps).
+- CM roles required
+- Azure roles required
+- Azure setup
+- Google setup
+- AWS setup
+
+## Resources
+
+- [Quickstart: Set up Microsoft Defender for Cloud](/azure/defender-for-cloud/get-started)
