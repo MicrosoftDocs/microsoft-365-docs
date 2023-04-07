@@ -9,9 +9,10 @@ ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
-ms.localizationpriority: null
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
@@ -37,7 +38,7 @@ You must meet the licensing requirements for [group-based licensing](/azure/acti
 
 You can use allotments with any product available to users:
 
-- Office suites and standalone products
+- Microsoft 365 and standalone products
 - Enterprise and Mobility products
 - Dynamics 365 products
 

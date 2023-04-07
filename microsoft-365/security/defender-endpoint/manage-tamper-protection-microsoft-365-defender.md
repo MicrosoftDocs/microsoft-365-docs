@@ -27,7 +27,9 @@ search.appverid: met150
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender Antivirus
+- [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
+- [Microsoft 365 Business Premium](../../business-premium/index.md)
 
 **Platforms**
 - Windows
@@ -74,3 +76,4 @@ search.appverid: met150
 - [Built-in protection helps guard against ransomware](built-in-protection.md)
 - [What happens when tamper protection is turned on?](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)
 - [Protect macOS security settings with tamper protection](tamperprotection-macos.md)
+- [Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)

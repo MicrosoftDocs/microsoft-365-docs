@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: zainzaigham, pablom
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -31,15 +31,17 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: "Understand what you need to know about the latest versions of the Office programs before you go through the sign-up process for Office 365."
+description: "Understand what you need to know about the latest versions of the Microsoft 365 apps before you go through the sign-up process for Microsoft 365."
 ms.date: 03/17/2021
 ---
 
 # How to sign up - Admin Help
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-Sign up for Microsoft 365 for business so that your team can begin using the latest versions of Word, Excel, PowerPoint, and other Office programs.
+Sign up for Microsoft 365 for business so that your team can begin using the latest versions of Word, Excel, PowerPoint, and other Microsoft 365 apps.
 
 ::: moniker range="o365-21vianet"
 
