@@ -50,6 +50,28 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Microsoft 365 updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## April 2023
+
+Suggested training gives you deeper insights into the Microsoft 365 help and training articles being read by your signed-in users on support.microsoft.com and in-app help panels with these 3 insights:
+
+- Top viewed articles for your organization shows you help and training articles that have been getting the most views by people in your organization.
+
+- Trending across organizations shows you the help and training topics that are moving up the most in your organizations most viewed list.
+
+- Commonly viewed together gives you insights into the additional help articles users in all Microsoft 365 organizations are reading, along with the top viewed and top trending articles. You can use this info to put together and share training packages for your users.
+
+Use this data to decide which help articles and training resources to share with your users about these products and apps, or make sure your helpdesk is aware of these areas so they can answer any user questions. If your org doesn’t have enough views on help and training articles, you’ll see data from other Microsoft 365 organizations.
+
+:::image type="content" source="../media/exp-insights-dashboard.png" alt-text="Screenshot: Experience insights dashboard" lightbox="../media/nps-date-filter.png":::
+
+There are a couple of ways to get the Experience insights dashboard page:
+
+- If you’re a member of the Global admin or Global reader roles, when you log in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting Experience insights (preview) from the admin home page.
+
+- If you’re a member of the Reports reader role or the User Experience success manager roles, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option in the top right.
+
+:::image type="content" source="../media/exp-insights-dashboard2.png" alt-text="Screenshot: How to get to the insights dashboard" lightbox="../media/nps-date-filter.png":::
+
 ## December 2022
 
 ### Advanced deployment guides for Microsoft 365
