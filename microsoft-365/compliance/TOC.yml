@@ -1783,8 +1783,8 @@
               href: compliance-manager-mcca.md
         - name: Using Compliance Manager for multi-cloud
           items:
-            - name: Learn about multi-service support
-              href: compliance-manager-multi-service.md
+            - name: Learn about multiservice support
+              href: compliance-manager-multiservice.md
             - name: Configure cloud settings
               href: compliance-manager-assessments.md  
         - name: Create assessments

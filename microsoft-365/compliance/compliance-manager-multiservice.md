@@ -1,5 +1,5 @@
 ---
-title: "Multi-servcice support in Microsoft Purview Compliance Manager"
+title: "Multiservcice support in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -18,10 +18,10 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Learn how Microsoft Purview Compliance Manager provides multi-service support so you can track and manage compliance for your organization's cloud services."
+description: "Learn how Microsoft Purview Compliance Manager provides multiservice support so you can track and manage compliance for your organization's cloud services."
 ---
 
-# Multi-service support in Compliance Manager
+# Multiservice support in Compliance Manager
 
 **In this article:** Learn how Compliance Manager supports your multi-cloud environment.
 
