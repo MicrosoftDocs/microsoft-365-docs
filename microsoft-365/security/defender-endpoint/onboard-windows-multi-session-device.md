@@ -27,6 +27,8 @@ ms.date: 03/06/2023
 6 minutes to read
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows multi-session running on Azure Virtual Desktop (AVD)
 - [Windows 10 Enterprise Multi-Session](/azure/virtual-desktop/windows-10-multisession-faq)
@@ -156,7 +158,7 @@ Also, if you're using FSlogix user profiles, we recommend you exclude the follow
 
 #### Licensing requirements
 
-Note on licensing: When using Windows Enterprise multi-session, depending on your requirements, you can choose to either have all users licensed through Microsoft Defender for Endpoint (per user), Windows Enterprise E5, Microsoft 365 Security, or Microsoft 365 E5, or have the VM licensed through Microsoft Defender for Cloud.
+Note on licensing: When using Windows Enterprise multi-session, depending on your requirements, you can choose to either have all users licensed through Microsoft Defender for Endpoint (per user), Windows Enterprise E5, Microsoft 365 E5 Security, or Microsoft 365 E5, or have the VM licensed through Microsoft Defender for Cloud.
 Licensing requirements for Microsoft Defender for Endpoint can be found at: [Licensing requirements](minimum-requirements.md#licensing-requirements).
 
 ### Known issues and limitations
