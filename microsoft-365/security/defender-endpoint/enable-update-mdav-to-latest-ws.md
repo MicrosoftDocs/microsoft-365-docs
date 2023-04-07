@@ -23,6 +23,11 @@ search.appverid: met150
 
 # Enable and update Defender Antivirus to the latest version on Windows Server
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 If you wish to use Microsoft Defender Antivirus on your Windows Server, and it had been previously disabled or uninstalled, you may need to take further steps to re-enable it and ensure it's fully updated.
 
 To enable and update Microsoft Defender Antivirus on Windows Server, perform the following steps:
