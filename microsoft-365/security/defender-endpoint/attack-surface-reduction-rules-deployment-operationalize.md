@@ -27,6 +27,11 @@ search.appverid: met150
 
 # Operationalize attack surface reduction (ASR) rules
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 After you've fully deployed attack surface reduction (ASR) rules, it's vital that you have processes in place to monitor and respond to ASR-related activities. Activities include: 
 
 ## Managing ASR rules false positives
