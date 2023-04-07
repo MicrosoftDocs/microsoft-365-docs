@@ -1784,7 +1784,7 @@
         - name: Using Compliance Manager for multi-cloud
           items:
             - name: Learn about multi-service support
-              href: compliance-manager-assessments.md
+              href: compliance-manager-multi-service.md
             - name: Configure cloud settings
               href: compliance-manager-assessments.md  
         - name: Create assessments
