@@ -43,9 +43,9 @@ To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [A
 
 - **Commonly viewed together** gives you insights into the additional help articles users in all Microsoft 365 organizations are reading, along with the top viewed and top trending articles. You can use this info to put together and share training packages for your users.
 
-Use this data to decide which help articles and training resources to share with your users about these products and apps, or make sure your helpdesk is aware of these areas so they can answer any user questions. If your org doesn’t have enough views on help and training articles, you’ll see data from other Microsoft 365 organizations.
+    :::image type="content" source="../../media/suggested-training-overview.png" alt-text="Screenshot: Suggested training data dashboard":::
 
-:::image type="content" source="../../media/suggested-training-overview.png" alt-text="Screenshot: Suggested training data dashboard":::
+Use this data to decide which help articles and training resources to share with your users about these products and apps, or make sure your helpdesk is aware of these areas so they can answer any user questions. If your org doesn’t have enough views on help and training articles, you’ll see data from other Microsoft 365 organizations.
 
 ## Apps and services data
 
