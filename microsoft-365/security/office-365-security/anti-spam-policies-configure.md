@@ -155,25 +155,25 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
 
      |Action|Spam|High<br>confidence<br>spam|Phishing|High<br>confidence<br>phishing|Bulk|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.<sup>1,4</sup>|✔<sup>\*</sup>|✔<sup>\*</sup>|✔||✔<sup>\*</sup>|
-     |**Add X-header**: Adds an X-header to the message header and delivers the message to the mailbox. <p> You enter the X-header field name (not the value) later in the **Add this X-header text** box. <p> For **Spam** and **High confidence spam** verdicts, the message is moved to the Junk Email folder.<sup>1,2</sup>|✔|✔|✔||✔|
-     |**Prepend subject line with text**: Adds text to the beginning of the message's subject line. The message is delivered to the mailbox and moved to the Junk email folder.<sup>1,2</sup> <p> You enter the text later in the **Prefix subject line with this text** box.|✔|✔|✔||✔|
-     |**Redirect message to email address**: Sends the message to other recipients instead of the intended recipients. <p> You specify the recipients later in the **Redirect to this email address** box.|✔|✔|✔|✔|✔|
+     |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.¹ ⁴|✔<sup>\*</sup>|✔<sup>\*</sup>|✔||✔<sup>\*</sup>|
+     |**Add X-header**: Adds an X-header to the message header and delivers the message to the mailbox. <br/><br/> You enter the X-header field name (not the value) later in the **Add this X-header text** box. <br/><br/> For **Spam** and **High confidence spam** verdicts, the message is moved to the Junk Email folder.¹ ²|✔|✔|✔||✔|
+     |**Prepend subject line with text**: Adds text to the beginning of the message's subject line. The message is delivered to the mailbox and moved to the Junk email folder.¹ ² <br/><br/> You enter the text later in the **Prefix subject line with this text** box.|✔|✔|✔||✔|
+     |**Redirect message to email address**: Sends the message to other recipients instead of the intended recipients. <br/><br/> You specify the recipients later in the **Redirect to this email address** box.|✔|✔|✔|✔|✔|
      |**Delete message**: Silently deletes the entire message, including all attachments.|✔|✔|✔||✔|
-     |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <p> You specify how long the message should be held in quarantine later in the **Quarantine** box. <p> You specify the [quarantine policy](quarantine-policies.md) that applies to quarantined messages for the spam filter verdict in the **Select a policy** box that appears. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).<sup>3</sup>|✔|✔|✔<sup>\*</sup>|✔<sup>\*</sup>|✔|
+     |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <br/><br/> You select or use the default _quarantine policy_ for the spam filtering verdict in the **Select quarantine policy** box that appears.³ ⁵ Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy). <br/><br/> You specify how long the messages are held in quarantine in the **Retain spam in quarantine for this many days** box.|✔|✔|✔<sup>\*</sup>|✔<sup>\*</sup>|✔|
      |**No action**|||||✔|
 
-     > <sup>1</sup> EOP now uses its own mail flow delivery agent to route messages to the Junk Email folder instead of using the junk email rule in the mailbox. The _Enabled_ parameter on the **Set-MailboxJunkEmailConfiguration** cmdlet no longer has any effect on mail flow. For more information, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).
-     >
-     > In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange. These mail flow rules translate the EOP spam filtering verdict so the junk email rule in the mailbox can move the message to the Junk Email folder. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
-     >
-     > <sup>2</sup> You can this use value as a condition in mail flow rules to filter or route the message.
-     >
-     > <sup>3</sup> A blank **Select quarantine policy** value means the default quarantine policy for that particular verdict is used. When you later edit the anti-spam policy or view the settings, the actual quarantine policy name is shown. For more information about default quarantine policies that are used for spam filter verdicts, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
-     >
-     > <sup>4</sup> For **High confidence phishing**, the action **Move message to Junk Email folder** has effectively been deprecated. Although you might be able to select **Move message to Junk Email folder**, high confidence phishing messages are always quarantined (equivalent to selecting **Quarantine message**).
-     >
-     > Regardless of the settings in the quarantine policy, users can't release their own messages that were quarantined as high confidence phishing. At best, admins can configure the quarantine policy so users can request the release of their quarantined high confidence phishing messages.
+     ¹ EOP uses its own mail flow delivery agent to route messages to the Junk Email folder instead of using the junk email rule in the mailbox. The _Enabled_ parameter on the **Set-MailboxJunkEmailConfiguration** cmdlet no longer has any effect on mail flow. For more information, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).
+
+     In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange. These mail flow rules translate the EOP spam filtering verdict so the junk email rule in the mailbox can move the message to the Junk Email folder. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+
+     ² You can this use value as a condition in mail flow rules to filter or route the message.
+
+     ³ If the spam filtering verdict quarantines messages by default (**Quarantine message** is already selected when you get to the page), the default quarantine policy name is shown in the **Select quarantine policy** box. If you _change_ the action of a spam filtering verdict to **Quarantine message**, the **Select quarantine policy** box is blank by default. A blank value means the default quarantine policy for that verdict is used. When you later view or edit the anti-spam policy settings, the quarantine policy name is shown. For more information about the quarantine policies that are used by default for spam filter verdicts, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
+
+     ⁴ For **High confidence phishing**, the **Move message to Junk Email folder** action has effectively been deprecated. Although you might be able to select **Move message to Junk Email folder**, high confidence phishing messages are always quarantined (equivalent to selecting **Quarantine message**).
+
+     ⁵ Users can't release their own messages that were quarantined as high confidence phishing by anti-spam policies, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of quarantined high confidence phishing messages, although we typically don't recommend it.
 
    - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted, and is not recoverable. A valid value is from 1 to 30 days.
 
@@ -182,7 +182,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      >
      > This setting also controls how long messages that were quarantined by **anti-phishing** policies are retained. For more information, see [Quarantined messages in EOP and Defender for Office 365](quarantine-about.md).
 
-   - **Add this X-header text**: This box is required and available only if you selected **Add X-header** as the action for a spam filtering verdict. The value you specify is the header field *name* that's added to the message header. The header field *value* is always `This message appears to be spam`.
+   - **Add this X-header text**: This box is required and available only if you selected **Add X-header** as the action for a spam filtering verdict. The value you specify is the header field _name_ that's added to the message header. The header field _value_ is always `This message appears to be spam`.
 
      The maximum length is 255 characters, and the value can't contain spaces or colons (:).
 
@@ -204,7 +204,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      - **Enable ZAP for spam messages**: By default, ZAP is enabled for spam detections, but you can disable it by clearing the checkbox.
 
    > [!NOTE]
-   > End-user spam notifications have been replaced by _quarantine notifications_ in quarantine policies. Quarantine notifications contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts). For more information, see [Quarantine policies](quarantine-policies.md).
+   > End-user spam notifications have been replaced by _quarantine notifications_ in quarantine policies. Quarantine notifications contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts). For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
    When you're finished, click **Next**.
 
@@ -381,7 +381,7 @@ New-HostedContentFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments
 
 This example creates a spam filter policy named Contoso Executives with the following settings:
 
-- Quarantine messages when the spam filtering verdict is spam or high confidence spam, and use the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _SpamQuarantineTag_ or _HighConfidenceSpamQuarantineTag_ parameters).
+- Quarantine messages when the spam filtering verdict is spam or high confidence spam, and use the default quarantine policy for the quarantined messages (we aren't using the _SpamQuarantineTag_ or _HighConfidenceSpamQuarantineTag_ parameters).
 - BCL 7, 8, or 9 triggers the action for a bulk email spam filtering verdict.
 
 ```PowerShell
@@ -390,8 +390,8 @@ New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamActi
 
 For detailed syntax and parameter information, see [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy).
 
-> [!NOTE]
-> For detailed instructions to specify the [quarantine policy](quarantine-policies.md) to use in a spam filter policy, see [Use PowerShell to specify the quarantine policy in anti-spam policies](quarantine-policies.md#anti-spam-policies-in-powershell).
+> [!TIP]
+> For detailed instructions to specify the quarantine policy to use in a spam filter policy, see [Use PowerShell to specify the quarantine policy in anti-spam policies](quarantine-policies.md#anti-spam-policies-in-powershell).
 
 #### Step 2: Use PowerShell to create a spam filter rule
 
@@ -487,8 +487,8 @@ Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 
 For detailed syntax and parameter information, see [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy).
 
-> [!NOTE]
-> For detailed instructions to specify the [quarantine policy](quarantine-policies.md) to use in a spam filter policy, see [Use PowerShell to specify the quarantine policy in anti-spam policies](quarantine-policies.md#anti-spam-policies-in-powershell).
+> [!TIP]
+> For detailed instructions to specify the quarantine policy to use in a spam filter policy, see [Use PowerShell to specify the quarantine policy in anti-spam policies](quarantine-policies.md#anti-spam-policies-in-powershell).
 
 ### Use PowerShell to modify spam filter rules
 
