@@ -1781,7 +1781,7 @@
               href: compliance-manager-quickstart.md
             - name: Configuration Analyzer for Microsoft Purview
               href: compliance-manager-mcca.md
-        - name: Using Compliance Manager for multi-cloud
+        - name: Multicloud support in Compliance Manager
           items:
             - name: Learn about multiservice support
               href: compliance-manager-multiservice.md
