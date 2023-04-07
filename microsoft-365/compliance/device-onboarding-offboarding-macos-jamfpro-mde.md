@@ -36,7 +36,7 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
 ## Before you begin
 
 - Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through [JAMF Connect](https://www.jamf.com/products/jamf-connect) or Intune.
-- OPTIONAL: Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
+- OPTIONAL: Install the v95+ Microsoft Edge browser on your macOS devices to have native Endpoint DLP support on Microsoft Edge.
 
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
@@ -44,13 +44,13 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 ### Download the configuration files
 
-1. You'll need these files for this procedure.
+You need the following files for this procedure.
 
-|file needed for |source |
+|File|Description |
 |---------|---------|
-|accessibility |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
-full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
-|MDE preference |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/schema/schema.json)
+|[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)| Required for accessibility |
+|[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) | Required for full disk access |
+|[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/schema/schema.json)| MDE preference file |
 
 > [!TIP]
 > You can download the *.mobileconfig* files individually or in [single combined file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) that contains:
@@ -70,7 +70,7 @@ Update the schema.xml profile with the `schema.json` file you just downloaded.
 5. Choose **Edit**.
 6. Choose **Edit Schema**.
 7. Replace the existing content with the content you copied in step 1 above and then choose **Save**.
-8. Under **Features**, click **Add/Remove properties**.
+8. Under **Features**, select **Add/Remove properties**.
 9. Choose **Data Loss Prevention** and then choose **Apply**.
 10. Under **Use Data Loss Prevention** select **enabled**.
 

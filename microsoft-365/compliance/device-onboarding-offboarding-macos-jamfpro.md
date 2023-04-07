@@ -39,12 +39,13 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions l
 
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
-1. You'll need these files for this procedure.
+You need the following files for this procedure.
 
-|File needed for|Source|
-|---|---|
-|**mdatp-nokext.mobileconfig** file bundle <br> | This [bundled file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) contains: <br> - accessibility.mobileconfig <br> - fulldisk.mobileconfig <br> - netfilter.mobileconfig <br> - sysext.mobileconfig |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|MDE preference[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|MDE preference|[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
-|MAU preference|[com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|
+|File | Description|
+|-----|------------|
+|[mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) | This bundled file contains: <br> - accessibility.mobileconfig <br> - fulldisk.mobileconfig <br> - netfilter.mobileconfig <br> - sysext.mobileconfig |MDE preference[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
+| [schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)| MDE preference file |
+|[com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|MAU preference file|
 
 > [!TIP]
 > You can download the *.mobileconfig* files individually or in the [bundled file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig), which contains:
@@ -80,13 +81,13 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
     - Distribution method: `install automatically`
     - Level: `computer level`
 
-2. In the JAMF Pro console select **New**.
+2. In the JAMF Pro console, select **New**.
 
 3. In the left navigation pane, select **Application and Custom Settings** and then choose **Upload**.
 
 4. Choose **Add**.
 
-5. In the **Preference Domain** field, enter `com.microsoft.wdav.atp`. (This is the onboarding package that you dowloaded earlier.)
+5. In the **Preference Domain** field, enter `com.microsoft.wdav.atp`. (The `com.microsoft.wdav.atp` file is the onboarding package that you downloaded earlier.)
 
 6. In the **Property List** field, paste the contents of the `com.microsoft.wdav.atp` file.
 
@@ -103,14 +104,14 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 > [!IMPORTANT]
 > You must use ***com.microsoft.wdav*** as the Preference Domain value. Microsoft Defender for Endpoint uses this name and ***com.microsoft.wdav.ext*** to load its managed settings.
 
-1. Log in to JAMF Pro to create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
+1. Sign in to JAMF Pro to create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: `MDATP MDAV configuration settings`
     - Description: leave this blank
     - Category: `none`
     - Distribution method: `install automatically`
     - Level: `computer level`
 
-2. In the JAMF Pro console select **New**.
+2. In the JAMF Pro console, select **New**.
 
 3. In the left navigation pane, select **Application and Custom Settings** and then choose **External Applications**.
 
@@ -191,7 +192,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
  
 2. Enter a display name for the package, and (optionally) select a category.
 
-3. Under **Filename** click **Choose File**.
+3. Under **Filename** select **Choose File**.
 
 4. Select the `wdav.pkg` installation package file and then choose **Save**.
 
@@ -212,7 +213,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 1. Uninstall the application (if not using MDE)
     1. See JAMF Pro Docs - Package Deployment - [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro Administrator's Guide
 
-1. Restart the macOS device - some applications may lose printing functionality until they are restarted
+1. Restart the macOS device - some applications may lose printing functionality until they're restarted
 
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
