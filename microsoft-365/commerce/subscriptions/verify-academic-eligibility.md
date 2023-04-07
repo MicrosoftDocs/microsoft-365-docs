@@ -6,9 +6,9 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: pablom, pablom
-audience: how-to
-ms.topic: article
+ms.reviewer: denik, pablom
+audience: Admin
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:

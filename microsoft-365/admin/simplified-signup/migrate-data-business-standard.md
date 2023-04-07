@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 04/22/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -20,6 +21,8 @@ description: "Migrate your Outlook, OneDrive and Teams data to Microsoft 365 Bus
 ---
 
 # Migrate data to my Microsoft 365 for business subscription
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Follow the steps in this article to move your OneDrive, Outlook and Teams data to your Microsoft 365 Business Standard subscription.
 

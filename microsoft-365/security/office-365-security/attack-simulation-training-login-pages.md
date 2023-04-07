@@ -9,10 +9,11 @@ ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 description: Admins can learn how to create and manage login pages for simulated phishing attacks in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 4/3/2023
 ---
 
 # Login pages in Attack simulation training
@@ -20,39 +21,42 @@ search.appverid: met150
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, login pages are displayed to users in simulations that use the **Credential harvest** and **Link in attachment** [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique).
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, login pages are shown to users in simulations that use **Credential Harvest** and **Link in Attachment** [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique).
 
-To see the available login pages, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> and then select **Login pages**. To go directly to the **Simulation content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
-**Login pages** has two tabs:
+To see the available login pages, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Login pages**. To go directly to the **Content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
-- **Global login pages**: Contains the built-in, non-modifiable login pages. There are four built-in login pages localized into 12+ languages:
+**Login pages** in the **Content library** tab has two tabs:
+
+- **Global login pages** tab: Contains the built-in, non-modifiable login pages. There are four built-in login pages localized into 12+ languages:
   - **GitHub login page**
   - **LinkedIn login page**
   - **Microsoft login page**
   - **Non-branded login page**
 
-- **Tenant login pages**: Contains the custom login pages that you've created.
+- **Tenant login pages** tab: Contains the custom login pages that you've created.
 
 The following information is shown for each login page:
 
 - **Name**
+- **⋮** (**Actions** control): Take action on the login page. The available actions depend on the **Status** value of the login page as described in the procedure sections.
 - **Language**
 - **Source**: For built-in login pages, the value is **Global**. For custom login pages, the value is **Tenant**.
 - **Status**: **Ready** or **Draft**.
 - **Created by**: For built-in login pages, the value is **Microsoft**. For custom login pages, the value is the UPN of the user who created the login page.
 - **Last modified**
 
-To find a login page in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the name of the login page.
+Click a column header to sort by that column. To remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**.
+
+To find a login page in the list, type part of the login page name in the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and then press the ENTER key.
 
 Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the login pages by **Language** or **Status**.
 
-To remove one or more columns that are displayed, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**.
-
-When you select a login page from the list, a details flyout appears with the following information:
+When you select a login page from the list by clicking anywhere in the row other than the check box next to the name, a details flyout appears with the following information:
 
 - ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** is available only in custom login pages on the **Tenant login pages** tab.
-- ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default** to make this login page the default selection in **Credential harvest** or **Link in attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md). If the login page is already the default, ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default** isn't available.
+- ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default** to make this login page the default selection in **Credential Harvest** or **Link in Attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md). If the login page is already the default, ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default** isn't available.
 - **Preview** tab: View the login page as users will see it. **Page 1** and **Page 2** links are available at the bottom of the page for two-page login pages.
 - **Details** tab: View details about the login page:
   - **Description**
@@ -64,60 +68,72 @@ When you select a login page from the list, a details flyout appears with the fo
 
 ## Create login pages
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> and then select **Login pages**. To go directly to the **Simulation content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
-You can create custom login pages in the following locations:
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Login pages**. To go directly to the **Content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
-   Click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard.
+2. On the **Tenant login pages** tab, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the new login page wizard.
 
    > [!NOTE]
-   > ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** is also available during the payload selection step of creating a simulation or simulation automation. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page) and [Create a simulation automation: Select a payload and login page](attack-simulation-training-simulation-automations.md#select-a-payload-and-login-page).
+   > At any point after you name the login page during the new login page wizard, you can click **Save and close** to save your progress and continue later. The incomplete login page has the **Status** value **Draft**. You can pick up where you left off by selecting the login page from the list and then clicking the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
    >
-   > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the login page later. You can pick up where you left off by selecting the login page on the **Tenant login pages** tab in **Login pages**, and then clicking ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**. The partially-completed login page will have the **Status** value **Draft**.
+   > You can also create login pages during the creation of simulations or simulation automations. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page) and [Create a simulation automation: Select payloads and login pages](attack-simulation-training-simulation-automations.md#select-payloads-and-login-pages).
 
-2. On the **Define details for login page** page, configure the following settings:
+3. On the **Define details for login page** page, configure the following settings:
    - **Name**: Enter a unique name.
    - **Description**: Enter an optional description.
 
-   When you're finished, click **Next**.
+   When you're finished on the **Define details for login page** page, click **Next**.
 
-3. On the **Configure login page** page, configure the following settings:
+4. On the **Configure login page** page, configure the following settings:
 
    - **Select a language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
 
-   - **Make this the default login page**: If you select this option, the login page will be the default selection in **Credential harvest** or **Link in attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md).
+   - **Make this the default login page**: If you select this option, the login page is the default selection in **Credential Harvest** or **Link in Attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md).
 
    - **Create a two-page login**: If you don't select this option, the login page is one page. If you select this option, **Page 1** and **Page 2** tabs appear for you to configure separately.
 
-     - On the **Text** tab, a rich text editor is available for you to create your login page.
+   - Login page content area: Two tabs are available:
+     - **Text** tab: A rich text editor is available to create the login page. To see the typical font and formatting settings, toggle **Formatting controls** to ![Toggle on.](../../media/scc-toggle-on.png) **On**.
 
-       - Use the **Dynamic tag** control to customize the login page by inserting the available tags:
-         - **Insert user name**: The value that's added in the message body is `${userName}`.
-         - **Insert email**: The value that's added in the message body is `${emailAddress}`.
-         - **Insert date**: The value that's added in the message body is `${date|MM/dd/yyyy|offset}`.
+       The following controls are also available on the **Text** tab:
 
-       - Use the **Use from default** control to select a built-in login page to start with as a template.
+       - **Dynamic tag**: Select from the following tags:
 
-       - The **Add Next button** control is available only on **Page 1** of two-page logins. The default text on the button is **Next** but you can change it.
+          |Tag name|Tag value|
+          |---|---|
+          |**Insert User name**|`${userName}`|
+          |**Insert First name**|`${firstName}`|
+          |**Insert Last name**|`${lastName}`|
+          |**Insert UPN**|`${upn}`|
+          |**Insert Email**|`${emailAddress}`|
+          |**Insert Department**|`${department}`|
+          |**Insert Manager**|`${manager}`|
+          |**Insert Mobile phone**|`${mobilePhone}`|
+          |**Insert City**|`${city}`|
+          |**Insert Date**|`${date|MM/dd/yyyy|offset}`|
 
-       - The **Add compromise button** control in available on one-page logins or on **Page 2** of two-page logins. The default text on the button is **Submit**, but you can change it.
+       - **Use from default**: Select an available template to start with. You can modify the text and layout in the editing area. To reset the login page back to the default text and layout of the template, click **Reset to default**.
 
-     - On the **Code** tab, you can view and modify the HTML code directly. Formatting and other controls like **Dynamic tag** and **Use from default** or **Add compromise button** aren't available.
+       - **Add compromise button**: Available on one-page logins or on **Page 2** of two-page logins. Click this link to add the compromise button to the login page. The default text on the button is **Submit**, but you can change it.
 
-   - Use the **Preview login page** button at the top of the page to review the login page.
+       - **Add Next button**: Available only on **Page 1** of two-page logins. Click this link to add the 'Next' button to the login page. The default text on the button is **Next**, but you can change it.
 
-   When you're finished, click **Next**.
+     - **Code** tab: You can view and modify the HTML code directly.
 
-4. On the **Review login page** page, you can review the details of your login page.
+   You can preview the results by clicking the **Preview email** button at the top of the page.
+
+   When you're finished on the **Review login page** page, click **Next**.
+
+5. On the **Review login page** page, you can review the details of your login page.
 
    You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
-   When you're finished, click **Submit**.
+   When you're finished on the **Review login page** page, click **Submit**.
 
-5. On the **New login page \<Name\> created** page, you can use the links to create a new login page, launch a simulation, or view all login pages.
+6. On the **New login page \<Name\> created** page, you can use the links to create a new login page, launch a simulation, or view all login pages.
 
-   When you're finished, click **Done**.
+   When you're finished on the **New login page \<Name\> created** page, click **Done**.
 
-Back on the **Tenant login pages** tab in **Login pages**, the login page that you created is now list.
+7. Back on the **Tenant login pages** tab in **Login pages**, the login page that you created is now listed.
 
 ## Modify login pages
 
@@ -125,9 +141,9 @@ You can't modify built-in login pages on the **Global login pages** tab. You can
 
 To modify an existing custom login page on the **Tenant login pages** tab, do one of the following steps:
 
-- Select the login page from the list by clicking the check box. Click the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
-- Click **⋮** (**Actions**) between the **Name** and **Language** values of the login page in the list, and then select ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
-- Select the login page from the list by clicking the name. In the details flyout that opens, click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
+- Select the login page from the list by clicking the check box next to the name. Click the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
+- Click **⋮** (**Actions**) next to the **Name** value of the login page, and then select ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
+- Select the login page from the list by clicking anywhere in the row other than the check box next to the name. In the details flyout that opens, click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
 
 The login page wizard opens with the settings and values of the selected login page. The steps are the same as described in the [Create login pages](#create-login-pages) section.
 
@@ -135,8 +151,8 @@ The login page wizard opens with the settings and values of the selected login p
 
 To copy an existing login page on the **Tenant login pages** or **Global login pages** tabs, do one of the following steps:
 
-- Select the login page from the list by clicking the check box, and then click the ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy** icon that appears.
-- Click **⋮** (**Actions**) between the **Name** and **Language** values of the login page in the list, and then select ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy**.
+- Select the login page from the list by clicking the check box next to the name, and then click the ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy** icon that appears.
+- Click **⋮** (**Actions**) next to the **Name** value of the login page, and then select ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy**.
 
 The login page wizard opens with the settings and values of the selected login page. The steps are the same as described in the [Create login pages](#create-login-pages) section.
 
@@ -144,25 +160,26 @@ The login page wizard opens with the settings and values of the selected login p
 > When you copy a built-in login page on the **Global login pages** tab, be sure to change the **Name** value. This step ensures the copy is saved as a custom login page on the **Tenant login pages** tab.
 >
 > The **Use from default** control on the **Configure login page** page in the login page wizard allows you to copy the contents of a built-in login page.
+>
+> When you're creating or editing a login page, the **Use from default** control on the **Text** tab of the **Configure login page** step in the login page wizard also allows you to copy the contents of a built-in notification.
 
 ## Remove login pages
 
-You can't remove built-in login pages from the **Global login pages** tab. You can only remove custom login pages on the **Tenant login pages** tab.
+You can't remove built-in login pages from the **Global login pages** tab. You can only remove custom login pages from the **Tenant login pages** tab.
 
 To remove an existing custom login page from the **Tenant login pages** tab, do one of the following steps:
 
-- Select the login page from the list by clicking the check box, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears.
-- Click **⋮** (**Actions**) between the **Name** and **Language** values of the login page in the list, and then select ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+- Select the login page from the list by clicking the check box next to the name, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears.
+- Click **⋮** (**Actions**) next to the **Name** value of the login page, and then select ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
 ## Make a login page the default
 
-The default login page is the default selection that's used in **Credential harvest** or **Link in attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md).
+The default login page is the default selection that's used in **Credential Harvest** or **Link in Attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md).
 
 To make a login page the default on the **Tenant login pages** or **Global login pages** tabs, do one of the following steps:
 
-- Select the login page from the list by clicking the check box. Click the ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default** icon that appears.
-- Click **⋮** (**Actions**) between the **Name** and **Language** values of the login page in the list, and then select ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default**.
-- Select the login page from the list by clicking the name. In the details flyout that opens, click ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default**.
+- Click **⋮** (**Actions**) next to the **Name** value of the login page, and then select ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default**.
+- Select the login page from the list by clicking anywhere in the row other than the check box next to the name. In the details flyout that opens, click ![Mark as default icon.](../../media/m365-cc-sc-set-as-default-icon.png) **Mark as default**.
 - Select **Make this the default login page** on the **Configure login page** page in the wizard when you [create or modify a login page](#create-login-pages).
 
 > [!NOTE]
@@ -170,7 +187,7 @@ To make a login page the default on the **Tenant login pages** or **Global login
 >
 > The default login page is also marked in the list, although you might need to widen the **Name** column to see it:
 >
-> ![The default login page marked in the list of login pages in Attack simulation training.](../../media/attack-sim-training-login-pages-default.png)
+> :::image type="content" source="../../media/attack-sim-training-login-pages-default.png" alt-text="The default login page marked in the list of login pages in Attack simulation training." lightbox="../../media/attack-sim-training-login-pages-default.png":::
 
 ## Related links
 

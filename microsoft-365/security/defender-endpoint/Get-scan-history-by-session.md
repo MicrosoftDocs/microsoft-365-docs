@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/15/2022
 ---
 
 # Get scan history by session
@@ -26,6 +27,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -65,7 +67,7 @@ Delegated (work or school account)|Machine.Read.All|Read all scan information.
 ## HTTP request
 
 ```http
-POST /api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId
+POST /api/DeviceAuthenticatedScanDefinitions/GetScanHistoryBySessionId
 ```
 
 ## Request headers
@@ -92,12 +94,12 @@ If successful, this method returns 200 - OK response code with a list of the sca
 Here is an example of the request.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId
+POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryBySessionId
 ```
 
 ```json
 {
-    "SessionId": ["01decc497f4b4ec49a5fc4e12597f8c8"]
+    "SessionIds": ["01decc497f4b4ec49a5fc4e12597f8c8"]
 }
 ```
 
@@ -105,12 +107,12 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ```json
 {
- "@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId",
+ "@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryBySessionId",
     "value": [
     {
      "orgId": "asdf781a0c-792d-46d3-bbea-a93dbc0bfcaa",
-     "ScanDefinitionId": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
-     "SessionId": "01decc497f4b4ec49a5fc4e12597f8c8",
+     "ScanDefinitionIds": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
+     "SessionIds": "01decc497f4b4ec49a5fc4e12597f8c8",
      "NumberOfSuccessfullyScannedTargets": 3,
      "NumberOfTargets": 3,
      "ScanStatus": "Success",

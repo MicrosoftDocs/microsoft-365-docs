@@ -1,14 +1,14 @@
 ### YamlMime:Landing
 
 title: Microsoft Defender for Business
-summary: Simple, comprehensive endpoint security to help you protect your business, so you can focus on what matters. Defender for Business is available as a standalone subscription and is included in Microsoft 365 Business Premium. And, Microsoft Defender for Business servers is now generally available! Learn more at https://aka.ms/mdb-servers.
+summary: Simple, comprehensive endpoint security to help you protect your business, so you can focus on what matters. Defender for Business is available as a standalone subscription and is included in Microsoft 365 Business Premium. Mobile threat defense capabilities are now in preview! See https://aka.ms/MDB-mobile.
 metadata:
   title: Microsoft Defender for Business documentation
   description: Defender for Business is a cybersecurity solution for small and medium-sized businesses. Protect devices with enterprise-grade security at an affordable price. Onboard all your devices today.
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.topic: landing-page
-  ms.date: 10/28/2022
+  ms.date: 03/23/2023
   ms.collection: 
   - SMB
   - m365-security
@@ -30,6 +30,8 @@ landingContent:
         links:
           - text: What is Defender for Business?
             url: mdb-overview.md
+          - text: What's new in Defender for Business?
+            url: /microsoft-365/business-premium/m365bp-mdb-whats-new
           - text: The simplified configuration process
             url: mdb-simplified-configuration.md
           - text: Compare plans for small and medium-sized businesses

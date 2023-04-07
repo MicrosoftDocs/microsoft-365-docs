@@ -1,9 +1,9 @@
 ---
 title: Shifts connectors
-author: lanachin
-ms.author: v-lanachin
+author: samanro
+ms.author: samanro
 ms.reviewer: aaku
-manager: samanro
+manager: pamgreen
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
@@ -45,8 +45,8 @@ Managed Shifts connectors are connectors developed in collaboration with our par
 
 |Connector|Description|Requirements|
 |---------|---------|---------|
-|[Microsoft Teams Shifts connector for Blue Yonder](#microsoft-teams-shifts-connector-for-blue-yonder)|Use this connector to integrate Shifts with Blue Yonder Workforce Management. This connector is hosted and managed by Microsoft.|Prerequisites for setting up a connection: <ul><li>Using the [Shifts connector wizard](shifts-connector-wizard.md#prerequisites) in the Microsoft 365 admin center<br>Before you run the wizard, [remove schedules from existing teams that you want to map](shifts-connector-wizard.md#remove-schedules-from-teams-you-want-to-map).</li><li>Using [PowerShell](shifts-connector-blue-yonder-powershell-setup.md#prerequisites)</li></ul>|
-|[Microsoft Teams Shifts connector for UKG Dimensions](#microsoft-teams-shifts-connector-for-ukg-dimensions)|Use this connector to integrate Shifts with UKG Dimensions. This connector is hosted and managed by Microsoft.|Prerequisites for setting up a connection: <ul><li>Using the [Shifts connector wizard](shifts-connector-wizard-ukg.md#prerequisites) in the Microsoft 365 admin center<br>Before you run the wizard, [remove schedules from existing teams that you want to map](shifts-connector-wizard-ukg.md#remove-schedules-from-teams-you-want-to-map)</li><li>Using [PowerShell](shifts-connector-ukg-powershell-setup.md#prerequisites)</li></ul>|
+|[Microsoft Teams Shifts connector for Blue Yonder](#microsoft-teams-shifts-connector-for-blue-yonder)|Use this connector to integrate Shifts with Blue Yonder Workforce Management. This connector is hosted and managed by Microsoft.|Prerequisites for setting up a connection: <ul><li>Using the [Shifts connector wizard](shifts-connector-wizard.md#prerequisites) in the Microsoft 365 admin center<br>Before you run the wizard, [remove schedules from existing teams that you want to map](shifts-connector-wizard.md#remove-schedule-entities-from-teams-you-want-to-map).</li><li>Using [PowerShell](shifts-connector-blue-yonder-powershell-setup.md#prerequisites)</li></ul>|
+|[Microsoft Teams Shifts connector for UKG Dimensions](#microsoft-teams-shifts-connector-for-ukg-dimensions)|Use this connector to integrate Shifts with UKG Dimensions. This connector is hosted and managed by Microsoft.|Prerequisites for setting up a connection: <ul><li>Using the [Shifts connector wizard](shifts-connector-wizard-ukg.md#prerequisites) in the Microsoft 365 admin center<br>Before you run the wizard, [remove schedules from existing teams that you want to map](shifts-connector-wizard-ukg.md#remove-schedule-entities-from-teams-you-want-to-map)</li><li>Using [PowerShell](shifts-connector-ukg-powershell-setup.md#prerequisites)</li></ul>|
 |[Reflexis Shifts connector for Microsoft Teams](#reflexis-shifts-connector-for-microsoft-teams)|Use this connector to integrate Shifts with Reflexis Workforce Management. This connector is hosted and managed by Zebra. |To learn more, go to <https://connect.zebra.com/microsoft-connectors>.|
 
 <a name="blue_yonder"> </a>
@@ -107,8 +107,6 @@ After a connection is set up, you can update and change connection settings at a
 As for the connector itself, you don't need to worry about upgrades or maintenance. We take care of that.
 
 ### Microsoft Teams Shifts connector for UKG Dimensions
-
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
 
 The Teams Shifts connector for UKG Dimensions is a first-party offering that's hosted and managed by Microsoft. With this connector, you can integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date.  
 

@@ -22,6 +22,7 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
+ms.date: 12/05/2022
 ---
 
 # Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
@@ -30,6 +31,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

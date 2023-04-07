@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -46,7 +46,7 @@ Audit (Premium) features such as the ability to log crucial events such as MailI
 
 5. If the checkbox isn't selected, select it, and then select **Save changes.**
 
-   The logging of audit records for MailItemsAccessed and Send will begin within 24 hours. You have to perform Step 3 to start logging of two other Audit (Premium) events: SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint.
+   The logging of audit records for MailItemsAccessed and Send will begin within 24 hours. You have to perform Step 2 to start logging of two other Audit (Premium) events: SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint.
 
 Also, if you've customized the mailbox actions that are logged on user mailboxes or shared mailboxes, any new Audit (Premium) events released by Microsoft won't be automatically audited on those mailboxes. For information about changing the mailbox actions that are audited for each logon type, see the "Change or restore mailbox actions logged by default" section in [Manage mailbox auditing](audit-mailboxes.md#change-or-restore-mailbox-actions-logged-by-default).
 
@@ -68,7 +68,7 @@ If the command to enable the auditing of search queries was previously run in a 
 
 ## Step 3: Set up audit retention policies
 
-In additional to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
+In additional to the default policy that retains Azure AD, Exchange, OneDrive, and SharePoint audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
 
 ## Step 4: Search for Audit (Premium) events
 

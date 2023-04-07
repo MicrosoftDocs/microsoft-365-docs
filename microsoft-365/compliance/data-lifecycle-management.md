@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 01/10/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -63,4 +63,3 @@ For more information, see [Use retention policies and retention labels instead o
 For deployment guidance for data lifecycle management that includes a recommended deployment roadmap, licensing information, permissions, a list of supported scenarios, and end-user documentation, see [Get started with data lifecycle management](get-started-with-information-governance.md).
 
 Looking for deployment guidance to protect your data? See [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
-
