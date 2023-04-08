@@ -110,8 +110,8 @@ When you select the **View all pending dispositions**, you're taken to the **Dis
 ### Workflow for a disposition review
 
 The following diagram shows the basic workflow for a disposition review (single-stage) when a retention label is published and then manually applied by a user. Alternatively, a retention label configured for a disposition review can be automatically applied to content.
-  
-![Chart showing flow of how disposition works.](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+
+:::image type="content" source="../media/disposition-review-option.png" alt-text="Process chart showing the standard flow of how disposition works.":::
 
 ### Auto-approval for disposition
 
@@ -128,8 +128,8 @@ Triggering a disposition review at the end of the retention period is a configur
 
 From the **Choose what happens after the retention period** page for a retention label:
 
-![Retention settings for a label.](../media/disposition-review-option.png)
- 
+:::image type="content" source="../media/disposition-review-option.png" alt-text="Retention settings for a label that include disposition review.":::
+
 After you select the **Start a disposition review** option, select **+ Create stages and assign reviewers**. On the next page of the configuration, you'll specify how many consecutive stages of disposition you want and the disposition reviewers for each stage:
 
 :::image type="content" source="../media/disposition-reviewers.png" alt-text="Disposition review configuration settings for a retention label.":::
