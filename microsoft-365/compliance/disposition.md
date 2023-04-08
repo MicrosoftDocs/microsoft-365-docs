@@ -138,7 +138,7 @@ Optionally, select whether you want to use [automatic-approval](#auto-approval-f
 
 Select **+ Add a stage**, and name your stage for identification purposes. Then specify the reviewers for that stage.
 
-For the reviewers, specify up to 10 individual users or mail-enabled security groups. Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) aren't supported for this option.
+For the reviewers, specify up to 10 individual users or mail-enabled security groups. Microsoft 365 groups aren't supported for this option.
 
 If you need more than one person to review an item at the end of its retention period, select **Add another stage** and repeat the configuration process for the number of stages that you need, with a maximum of five stages. 
 
