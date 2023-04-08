@@ -101,11 +101,11 @@ A disposition review can include content in Exchange mailboxes, SharePoint sites
 
 Administrators can see an overview of all pending dispositions in the **Overview** tab. Reviewers see only their items pending disposition. For example:
 
-![Pending dispositions in Records management overview.](../media/dispositions-overview.png)
+:::image type="content" source="../media/dispositions-overview.png" alt-text="Pending dispositions in Records management overview.":::
 
 When you select the **View all pending dispositions**, you're taken to the **Disposition** page. For example:
 
-![Dispositions page in the Microsoft Purview compliance portal.](../media/disposition-tab.png)
+:::image type="content" source="../media/disposition-tab.png" alt-text="Dispositions page in the Microsoft Purview compliance portal.":::
 
 ### Workflow for a disposition review
 
