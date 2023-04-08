@@ -119,7 +119,7 @@ The following table lists the activities a disposition reviewer took when an ite
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Approved disposal|ApproveDisposal|A disposition reviewer approved the disposition of the item to move it to the next disposition stage. If the item was in the only or final stage of disposition review, the disposition approval marked the item as eligible for permanent deletion.|
+|Approved disposal|ApproveDisposal|For manual approval: A disposition reviewer approved the disposition of the item to move it to the next disposition stage. If the item was in the only or final stage of disposition review, the disposition approval marked the item as eligible for permanent deletion. <br/><br/> For auto-approval: No manual action was taken within the configured auto-approval time period so the item automatically moved to the next disposition stage. If the item was in the only or final stage of disposition review, the item automatically became eligible for permanent deletion.|
 |Extended retention period|ExtendRetention|A disposition reviewer extended the retention period of the item.|
 |Relabeled item|RelabelItem|A disposition reviewer relabeled the retention label.|
 |Added reviewers|AddReviewer|A disposition reviewer added one or more other users to the current disposition review stage.|
