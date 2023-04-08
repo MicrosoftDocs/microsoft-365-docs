@@ -134,7 +134,7 @@ After you select the **Start a disposition review** option, select **+ Create st
 
 :::image type="content" source="../media/disposition-reviewers.png" alt-text="Disposition review configuration settings for a retention label.":::
 
-Optionally, select whether you want to use [automatic-approval](#auto-approval-for- disposition). If you use this option, specify the number of days reviewers have to take manual action before the item is automatically moved to the next disposition stage or automatically disposed.
+Optionally, select whether you want to use [automatic-approval](#auto-approval-for-disposition). If you use this option, specify the number of days reviewers have to take manual action before the item is automatically moved to the next disposition stage or automatically disposed.
 
 Select **+ Add a stage**, and name your stage for identification purposes. Then specify the reviewers for that stage.
 
