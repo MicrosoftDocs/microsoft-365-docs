@@ -43,7 +43,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Data lifecycle management and records management
 
-- **In preview**: You can now optionally configure [auto-approval](disposition.md#auto-approval-for- disposition) when you configure a retention label for disposition review.
+- **In preview**: You can now optionally configure [auto-approval](disposition.md#auto-approval-for-disposition) when you configure a retention label for disposition review.
 
 ### Sensitivity labels
 

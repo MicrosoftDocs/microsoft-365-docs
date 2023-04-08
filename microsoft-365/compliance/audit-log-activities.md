@@ -115,7 +115,7 @@ The following table lists Azure AD directory and domain-related activities that 
 
 ## Disposition review activities
 
-The following table lists the [activities a disposition reviewer took](disposition.md#viewing-and-disposing-of-content) when an item reached the end of its configured retention period, or an item was automatically moved to the next disposition stage or permanently deleted as a result of [auto-approval](disposition.md#auto-approval-for- disposition).
+The following table lists the [activities a disposition reviewer took](disposition.md#viewing-and-disposing-of-content) when an item reached the end of its configured retention period, or an item was automatically moved to the next disposition stage or permanently deleted as a result of [auto-approval](disposition.md#auto-approval-for-disposition).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
