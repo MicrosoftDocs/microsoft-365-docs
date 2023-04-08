@@ -47,7 +47,7 @@ Microsoft Defender for Endpoint has the capability of detecting unmanaged and ma
 
 ## Web Protection and VPN
 
-By default, Defender for Endpoint on iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Note that Anti-phishing and custom indicators (URL and IP addresses) are supported as part of Web Protection. Web Content Filtering is currently not supported on mobile platforms.
+By default, Defender for Endpoint on iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Note that Anti-phishing and custom indicators (URL and Domain) are supported as part of Web Protection. IP Based Custom Indicators are currently not supported on iOS. Web Content Filtering is currently not supported on mobile platforms( Android and iOS).
 
 Defender for Endpoint on iOS uses a VPN in order to provide this capability. Please note this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
 
@@ -229,8 +229,8 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
         - Users will see a toggle for **Unsafe Site Info**.
         - This toggle is only visible if Admin has set **DefenderExcludeURLInReport = true**.
         - If enabled by Admin, Users can decide if they want to send the unsafe site info to their Organization or not.
-        - By default its set to `true`, the unsafe site information will be sent.
-        - If user toggles it to `false`, the unsafe site details will not be sent.
+        - By default its set to `false`, the unsafe site information will not be sent.
+        - If user toggles it to `true`, the unsafe site details will  be sent.
 
 Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
 
@@ -300,9 +300,9 @@ Follow the steps below to create a compliance policy against jailbroken devices.
 Defender for Endpoint on iOS enables admins to configure custom indicators on iOS devices as well. For more information on how to configure custom indicators, see [Manage indicators](/microsoft-365/security/defender-endpoint/manage-indicators).
 
 > [!NOTE]
-> Defender for Endpoint on iOS supports creating custom indicators only for IP addresses and URLs/domains.
+> Defender for Endpoint on iOS supports creating custom indicators only for URLs and domains. IP based Custom indicator is not supported on iOS.
 >
-> For iOS, no alerts are generated on Microsoft 365 Defender when the URL or IP set in the indicator is accessed.
+> For iOS, no alerts are generated on Microsoft 365 Defender when the URL or domain set in the indicator is accessed.
 
 ## Configure vulnerability assessment of apps
 
@@ -315,6 +315,11 @@ Defender for Endpoint on iOS supports vulnerability assessments of apps only for
 1. To enable the feature in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** > **Microsoft Defender for Endpoint** > **Enable App sync for iOS/iPadOS devices**.
 
      :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="App sync toggleSup" lightbox="images/tvm-app-sync-toggle.png":::
+
+> [!NOTE]
+> To get the list of all the apps including un-managed apps,
+> For the supervised devices marked as "Personal" in the Intune Admin Portal,admin needs to enable the second toggle also  **Send full application inventory data on personally owned iOS/iPad OS Devices**.
+> For the supervised devices marked as "Corporate" in the Intune Admin Portal, enabling the second toggle is not needed.
 
 ### On an Unsupervised Device
 
