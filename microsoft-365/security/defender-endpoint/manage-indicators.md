@@ -142,6 +142,16 @@ The IoC API schema and the threat ids in advance hunting have been updated to al
 >
 > The format for importing new indicators (IoCs) has changed according to the new updated actions and alerts settings. We recommend downloading the new CSV format that can be found at the bottom of the import panel.
 
+## Known issues and limitations
+
+Customers may experience issues with alerts for Indicators of Compromise. The following scenarios are situations where alerts may not be created or may be created with inaccurate information. Each of these issues are being investigated by our engineering team and will be resolved in an upcoming update.
+
+- **Block indicators** – Generic alerts with informational severity only will be fired. Custom alerts (i.e. custom title and severity) will not be fired in these cases.
+- **Warn indicators** – Generic alerts and custom alerts are possible in this scenario, however, the results are not deterministic due to an issue with the alert detection logic. In some cases, customers may see a generic alert, whereas a custom alert may show in other cases.
+- **Allow** – No alerts are generated (by design).
+- **Audit** - Alerts will be generated based on the severity provided by the customer.
+- In some cases, alerts coming from EDR detections may take precedence over those stemming from AV blocks, in which case an information alert will be generated.
+
 ## Related articles
 
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
