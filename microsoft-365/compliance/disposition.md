@@ -118,7 +118,7 @@ The following diagram shows the basic workflow for a disposition review (single-
 > [!NOTE]
 > This feature is in preview and subject to change
 
-You can optionally specify a time period (7-365 daysfor auto-approval. If designated reviewers don't take manual action during this time period by using the [standard disposition review process](#viewing-and-disposing-of-content), the item automatically passes to the next review stage. If the item is in the final review stage, the item is automatically disposed with permanent deletion.
+You can optionally specify a time period (7-365 days) for auto-approval. If designated reviewers don't take manual action during this time period by using the [standard disposition review process](#viewing-and-disposing-of-content), the item automatically passes to the next review stage. If the item is in the final review stage, the item is automatically disposed with permanent deletion.
 
 There's no new auditing event for auto-approval. Instead, use the details in the existing [Approved disposal](audit-log-activities.md#disposition-review-activities) auditing event to identify whether the item was manually approved or automatically approved by using this option.
 
