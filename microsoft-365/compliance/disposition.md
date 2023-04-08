@@ -165,7 +165,7 @@ You can customize the email messages that are sent to disposition reviewers for 
 
 From any of the Records management pages in the Microsoft Purview compliance portal, select **Records management settings**:  
 
-![Records management settings.](../media/record-management-settings.png)
+:::image type="content" source="../media/record-management-settings.png" alt-text="Records management settings.":::
 
 From the **Disposition** tab, in the **Email notifications for disposition reviews** section, select and specify whether you want to use just the default email message, or add your own text to the default message. Your custom text is added to the email instructions after the information about the retention label and before the next steps instructions.
 
