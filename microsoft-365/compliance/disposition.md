@@ -210,14 +210,14 @@ As you can see from the example shown, the actions supported are:
 
 Each action taken has a corresponding audit event in the [Disposition review activities](audit-log-activities.md#disposition-review-activities) auditing activities group.
 
-During a disposition review, the content never moves from its original location, and it's not marked for permanent deletion until this action is selected by a reviewer for the final or only disposition stage.
+During the disposition review process, unless you're using the optional setting of an [auto-approval timeout period](#auto-approval-for- disposition), the content never moves from its original location, and it's not marked for permanent deletion until this action is selected by a reviewer for the final or only disposition stage.
 
 ## Disposition of records
 
 From the **Records management** main page > **Disposition** tab, you can identify:
 
 - Items deleted as a result of a disposition review.
-- Items marked as a record or regulatory record that were automatically deleted at the end of their retention period.
+- Items marked as a record or regulatory record but not marked for disposition review and automatically deleted at the end of their retention period.
 
 These items display **Records Disposed** in the **Type** column. For example:
 
