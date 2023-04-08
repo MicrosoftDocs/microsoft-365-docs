@@ -149,7 +149,7 @@ Within each individual stage of disposition, any of the users you specify for th
 
 During the configuration phase, for each stage specified, you can rename it, reorder it, or remove it by selecting **Edit stages and reviewers** that now displays for the **Start a disposition review** option. Then for each stage, you can select the Stage actions option (**...**): 
 
-![Stage actions for disposition reviews.](../media/stage-actions-disposition-review.png)
+:::image type="content" source="../media/stage-actions-disposition-review.png" alt-text="Stage actions for disposition reviews.":::
 
 However, you can't reorder or remove a stage after you've created the retention label. You'll see only the **Add a stage** and **Rename a stage** options available. You can still edit the reviewers.
 
