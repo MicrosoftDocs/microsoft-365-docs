@@ -44,6 +44,9 @@ This article describes how to deploy Microsoft Defender for Endpoint on Linux ma
   - [SLES and variants](#sles-and-variants)
   - [Ubuntu and Debian systems](#ubuntu-and-debian-systems)
 - [Application installation](#application-installation)
+  - [RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
+  - [SLES and variants](#sles-and-variants)
+  - [Ubuntu and Debian systems](#ubuntu-and-debian-systems)
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Client configuration](#client-configuration)
 
@@ -216,7 +219,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ## Application installation
 
-- RHEL and variants (CentOS and Oracle Linux):
+### RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)
 
     ```bash
     sudo yum install mdatp
@@ -242,7 +245,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum --enablerepo=packages-microsoft-com-prod install mdatp
     ```
 
-- SLES and variants:
+### SLES and variants
 
     ```bash
     sudo zypper install mdatp
@@ -268,7 +271,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo zypper install packages-microsoft-com-prod:mdatp
     ```
 
-- Ubuntu and Debian system:
+### Ubuntu and Debian systems
 
     ```bash
     sudo apt-get install mdatp
