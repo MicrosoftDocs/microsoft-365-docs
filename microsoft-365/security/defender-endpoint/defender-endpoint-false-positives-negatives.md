@@ -346,9 +346,9 @@ Defender for Endpoint offers a wide variety of options, including the ability to
 
 ### Cloud-delivered protection
 
-Check your cloud-delivered protection level for Microsoft Defender Antivirus. By default, cloud-delivered protection is set to **Not configured**; however, we recommend setting it to **High**. To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
+Check your cloud-delivered protection level for Microsoft Defender Antivirus. By default, cloud-delivered protection is set to **Not configured**; however, we recommend turning it on. To learn more about configuring your cloud-delivered protection, see [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-You can use [Intune](/mem/intune/fundamentals/what-is-intune) or other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy), to edit or set your cloud-delivered protection settings.  (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md)).
+You can use [Intune](/mem/intune/fundamentals/what-is-intune) or other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy), to edit or set your cloud-delivered protection settings.
 
 #### Use Intune to review and edit cloud-delivered protection settings (for existing policies)
 
