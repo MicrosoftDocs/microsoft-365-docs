@@ -62,9 +62,9 @@ For a complete list of error messages and how to resolve them, see [List of erro
 
 You'll need to choose the data that your Shifts users can see and change. You'll be given the following options for these settings:
 
-- **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts. <br>
-- **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts. <br>
-- **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
+- **Shifts users will not see provider data**: Data won't sync between Blue Yonder WFM and Shifts. <br>
+- **Shifts users can see provider data**: Data syncing is unidirectional from Blue Yonder WFM to Shifts. <br>
+- **Shifts users can see and change provider data**: Data syncing is bidirectional between Blue Yonder WFM and Shifts.
 
 > [!IMPORTANT]
 > Before you disable a feature by selecting the option **Shifts users will not see provider data**, be aware that:
@@ -80,7 +80,7 @@ You'll need to choose the data that your Shifts users can see and change. You'll
 > - Swap requests: **Shifts users will not see provider data**
 > - Time off requests: **Shifts users will not see provider data**
 >
-> After you edit your settings, make sure you follow the steps to [Disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard-ukg#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
+> After you edit your settings, make sure you follow the steps to [Disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
 
 ## List of error messages
 
