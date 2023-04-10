@@ -44,9 +44,9 @@ Watch the following video to see how Microsoft 365 Business Premium helps your b
 > [!TIP]
 > For more detailed information about what's included in Microsoft 365 Business Premium, see the [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
-## Resources to train your users
+## Resources to train everyone
 
-The security recommendations provided in [this guidance](index.md) make it much harder for cyberattackers to gain access to your environment. However, an important part of your security strategy includes training everyone in your organization&mdash;the people in your company who use your systems regularly. Users can be your first line of defense. Everyone needs to know how to work productively while maintaining a more secure environment.
+The security recommendations provided in [this guidance](index.md) make it much harder for cyberattackers to gain access to your environment. An important part of your security strategy also includes training everyone in your organization &mdash; the people in your company who use your systems regularly. Users can be your first line of defense. Everyone needs to know how to work productively while maintaining a more secure environment.
 
 Resources are available to help everyone in your organization to:
 
@@ -71,3 +71,5 @@ Our digital threats guide describes different kinds of threats and what you and 
 2. [Start the setup process](m365bp-setup-overview.md).
 
 3. [Set up your security capabilities](m365bp-security-overview.md).
+
+4. 
