@@ -96,12 +96,13 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 After you have added users to your Microsoft 365 subscription, give them a link to the [Employee quick setup guide](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). The guide walks them through signing in, getting Microsoft 365 apps, and saving, copying, and sharing files.
 
+## Next objective
+
+Proceed to [Boost your security protection](m365bp-security-overview.md).
+
 ## See also
 
 - [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md)
 - [Business subscriptions and billing documentation](../commerce/index.yml)
 - [Find a Microsoft partner or reseller](../admin/manage/find-your-partner-or-reseller.md)
 
-## Next objective
-
-Proceed to [Boost your security protection](m365bp-security-overview.md).
