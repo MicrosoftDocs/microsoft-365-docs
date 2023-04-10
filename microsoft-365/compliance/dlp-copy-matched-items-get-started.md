@@ -1,5 +1,5 @@
 ---
-title: "Get started with collecting files that match data loss prevention policies from devices"
+title: "Get started with collecting files that match data loss prevention policies from devices (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 description: "Learn how to configure data loss prevention to collect items that match policies from devices to an Azure storage account."
 ---
-# Get started with collecting files that match data loss prevention policies from devices
+# Get started with collecting files that match data loss prevention policies from devices (preview)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

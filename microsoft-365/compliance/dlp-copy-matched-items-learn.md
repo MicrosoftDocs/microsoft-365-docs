@@ -1,5 +1,5 @@
 ---
-title: "Learn about collecting files that match DLP policies from devices"
+title: "Learn about collecting files that match DLP policies from devices (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,16 +18,16 @@ search.appverid:
 description: "Learn about copying items that match policies to an Azure storage account."
 ---
 
-# Learn about collecting files that match data loss prevention policies from devices
+# Learn about collecting files that match data loss prevention policies from devices (preview)
 
-Microsoft Purview data loss prevention (DLP) can copy files that match DLP policies from devices to an Azure storage account. This feature is available in the. 
+Microsoft Purview data loss prevention (DLP) can copy files that match DLP policies from devices to an Azure storage account. 
 
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 
-If you're new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
+<!--If you're new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
 
 1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article you're reading now introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
@@ -38,7 +38,7 @@ If you're new to Microsoft Purview DLP, here's a list of the core articles you'l
 1. [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) - this article introduces all the components of a DLP policy and how each one influences the behavior of a policy
 1. [Design a DLP policy](dlp-policy-design.md) - this article walks you through creating a policy intent statement and mapping it to a specific policy configuration. 
 1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options.
-
+-->
 
 ## Licensing and Subscriptions
 
