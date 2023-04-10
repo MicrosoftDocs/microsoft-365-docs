@@ -82,7 +82,7 @@ In Attack simulation training, multiple types of social engineering techniques a
 
 - **Link to Malware**: An attacker sends the recipient a message that contains a link to an attachment on a well-known file sharing site (for example, SharePoint Online or Dropbox). When the recipient clicks on the URL, the attachment opens and arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
 
-- **Drive-by-url**: An attacker sends the recipient a messages that contains a URL. When the recipient clicks on the URL, they're taken to a website that tries to run background code. This background code attempts to gather information about the recipient or deploy arbitrary code on their device. Typically, the destination website is a well-known website that has been compromised or a clone of a well-known website. Familiarity with the website helps convince the user that the link is safe to click. This technique is also known as a *watering hole attack*.
+- **Drive-by-url**: An attacker sends the recipient a message that contains a URL. When the recipient clicks on the URL, they're taken to a website that tries to run background code. This background code attempts to gather information about the recipient or deploy arbitrary code on their device. Typically, the destination website is a well-known website that has been compromised or a clone of a well-known website. Familiarity with the website helps convince the user that the link is safe to click. This technique is also known as a *watering hole attack*.
 
 - **OAuth Consent Grant**: An attacker creates a malicious Azure Application that seeks to gain access to data. The application sends an email request that contains a URL. When the recipient clicks on the URL, the consent grant mechanism of the application asks for access to the data (for example, the user's Inbox).
 
@@ -247,7 +247,7 @@ For step by step instructions on how to gain insights with reporting, see [Gain 
 
 ### Predicted compromise rate
 
-One of the most crucial elements in a phishing simulation is the payload selection. If you're tracking only click-through as a quality metric, there's an incentive to decrease the click rate by selecting easier-to-spot phishing payloads. Eventually, it's less likely that the user will change their behavior when a real phishing messages comes along.
+One of the most crucial elements in a phishing simulation is the payload selection. If you're tracking only click-through as a quality metric, there's an incentive to decrease the click rate by selecting easier-to-spot phishing payloads. Eventually, it's less likely that the user will change their behavior when a real phishing message comes along.
 
 To combat the tendency to use low click rate payloads and to maximize educational returns, we've created a new piece of metadata for every global payload called the predicted compromise rate (PCR).
 
