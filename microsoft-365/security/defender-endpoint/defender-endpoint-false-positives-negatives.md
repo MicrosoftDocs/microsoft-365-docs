@@ -350,38 +350,7 @@ Check your cloud-delivered protection level for Microsoft Defender Antivirus. By
 
 You can use [Intune](/mem/intune/fundamentals/what-is-intune) or other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy), to edit or set your cloud-delivered protection settings.
 
-#### Use Intune to review and edit cloud-delivered protection settings (for existing policies)
-
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
-
-2. Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
-
-3. Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend turning cloud-delivered protection on, and configuring sample submission settings.
-
-4. Choose **Review + save**, and then **Save**.
-
-#### Use Intune to set cloud-delivered protection settings (for a new policy)
-
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus**.
-
-2. Select an existing policy, or create a new policy. 
-
-   - For **Platform**, select an option, such as **Windows 10, Windows 11, and Windows Server**.
-   - For **Profile**, select **Antivirus** or **Microsoft Defender Antivirus** (the specific option depends on what you selected for **Platform**.) 
-   - Then choose **Create**.
-
-3. On the **Basics** tab, specify a name and description for the policy. Then choose **Next**.
-
-4. On the **Configuration settings** tab, expand **Cloud protection**, and specify the following settings:
-
-   - Set **Turn on cloud-delivered protection** to **Yes**.
-   - Set **Cloud-delivered protection level** to **Not configured**. (This level provides a strong level of protection by default while reducing the chances of getting false positives.)
-
-5. On the **Scope tags** tab, if you're using scope tags in your organization, specify scope tags for the policy. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
-
-6. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
-
-7. On the **Review + create** tab, review the settings, and then choose **Create**.
+See [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ### Remediation for potentially unwanted applications
 
