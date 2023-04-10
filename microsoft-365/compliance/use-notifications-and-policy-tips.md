@@ -162,8 +162,7 @@ Here are some fine points to understand about using a policy tip to override a r
 - If NotifyAllowOverride action is set with WithoutJustification or WithJustification or FalsePositives, make sure BlockAccess is set to true and BlockAccessScope has appropriate value. Otherwise policy tip will come up but the user will not find an option to override the email with justification.
 
 > [!NOTE]
->  In Outlook in the Web to be able to see Override in Policy Tip, the DLP policy needs to be "Turn On", since in Test Mode (with notifications) it won´t be display. As well as, in DLP configuration some restriction action needs to be in place".
-
+> In Outlook on the Web, to be able to see Override in Policy Tip, the DLP policy needs to be turned on since it won't be displayed in Test Mode (with notifications). In DLP configuration, some restriction action should also be in place.
 
 #### Availability of Override
 
