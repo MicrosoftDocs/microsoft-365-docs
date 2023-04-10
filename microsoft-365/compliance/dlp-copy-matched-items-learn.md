@@ -29,7 +29,7 @@ When you are either investigating a Microsoft Purview data loss prevention (DLP)
 This feature will only make copies of items that match DLP policies on onboarded Windows devices and place those copies in an Azure storage account. These copies are not held in a changless state and aren't evidence in the legal sense of the term. If you need to find and hold items for legal purposes, you should use the [Microsoft Purview eDiscovery solutions](ediscovery.md). Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases.
 ## Copy matched items and contextual summary
 
-Endpoint DLP is part of the larger DLP solution. When you configure DLP to copy matched items to Azure storage, you can also configure DLP to create a contextual summary of the item that matched the policy. The contextual summary is a short excerpt of the item that matched the policy. The contextual summary is stored in the Azure storage account along with the item that matched the policy. The contextual summary is not a changless copy of the item that matched the policy. The contextual summary is not evidence in the legal sense of the term. If you need to find and hold items for legal purposes, you should use the [Microsoft Purview eDiscovery solutions](ediscovery.md). Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases.
+Endpoint DLP is part of the larger DLP solution. 
 
 [Contextual summary](dlp-learn-about-dlp.md#contextual-summary)
 
