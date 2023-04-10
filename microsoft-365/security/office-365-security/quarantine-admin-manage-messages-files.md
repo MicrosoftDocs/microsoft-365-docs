@@ -19,7 +19,7 @@ ms.custom:
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/7/2023
+ms.date: 4/10/2023
 ---
 
 # Manage quarantined messages and files as an admin
@@ -30,13 +30,13 @@ ms.date: 4/7/2023
 - [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes and in Microsoft Teams, quarantine holds potentially dangerous or unwanted messages that were detected by EOP and Defender for Office 365. 
+In Microsoft 365 organizations with mailboxes in Exchange Online or Microsoft Teams, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages that were detected by EOP and Defender for Office 365. 
 
 Admins can view, release, and delete all types of quarantined messages and files for all users.
 
-Admins in organizations with Microsoft Defender for Office 365 can also manage files that were quarantined by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md) and [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-in-microsoft-teams).
+Admins in organizations with Microsoft Defender for Office 365 can also manage files that were quarantined by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md) and Microsoft Teams messages that were [quarantined by zero-hour auto purge (ZAP)](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-in-microsoft-teams) (currently in Preview).
 
-Users can managed most quarantined email messages based on the _quarantine policy_ for [supported email protection features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). For more information about quarantine policies, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
+Users can manage most quarantined email messages based on the _quarantine policy_ for [supported email protection features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). For more information about quarantine policies, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
 Admins and also users (depending on the [user reported settings](submissions-user-reported-messages-custom-mailbox.md) for the organization) can report false positives to Microsoft from quarantine.
 
@@ -60,7 +60,7 @@ Watch this short video to learn how to manage quarantined messages as an admin.
   - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in the **Quarantine Administrator** role group. To do quarantine procedures in Exchange Online PowerShell, you also need membership in the **Hygiene Management** role group in Exchange Online RBAC.
   - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-- Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and are not recoverable. For more information, see [Quarantined email messages in EOP and Defender for Office 365](quarantine-about.md).
+- Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and aren't recoverable. For more information, see [Quarantined email messages in EOP and Defender for Office 365](quarantine-about.md).
 
 ## Use the Microsoft 365 Defender portal to manage quarantined email messages
 
@@ -86,9 +86,7 @@ You can sort the results by clicking on an available column header. Click ![Cust
 - **Mail direction**
 - **Recipient tag**
 
-When you're finished, click **Apply**.
-
-To filter the results, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**. The following filters are available in the **Filters** flyout that appears:
+To filter the results, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**. The following filters are available in the **Filters** flyout that opens:
 
 - **Message ID**: The globally unique identifier of the message.
 
@@ -103,7 +101,7 @@ To filter the results, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.
   - **Last 14 days**
   - **Last 30 days** (default)
   - **Custom**: Enter a **Start time** and **End time** (date).
-- **Expires**: Filter messages by when they will expire from quarantine:
+- **Expires**: Filter messages by when they expire from quarantine:
   - **Today**
   - **Next 2 days**
   - **Next 7 days**
@@ -134,9 +132,9 @@ To filter the results, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.
   - **Transport rule** (mail flow rule)
   - **Data loss prevention rule**
 
-When you're finished, click **Apply**. To clear the filters, click ![Clear filters icon.](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished on the **Filters** flyout, click **Apply**. To clear the filters, click ![Clear filters icon.](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
-Use the **Search** box and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
+Use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
 
 - Sender email address
 - Subject. Use the entire subject of the message. The search isn't case-sensitive.
@@ -194,14 +192,14 @@ In the details flyout that opens, the following information is available:
 - **URLs** section
 - **Attachments** section
 
+:::image type="content" source="../../media/quarantine-message-details-flyout.png" alt-text="The details flyout of a quarantined message" lightbox="../../media/quarantine-message-details-flyout.png":::
+
 To take action on the message, see the next section.
 
 > [!TIP]
 > To remain in the details flyout but change the quarantined message that you're looking at, use the up and down arrows at the top of the flyout.
 >
 > :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="The up and down arrows in the details flyout of a quarantined message" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
-
-:::image type="content" source="../../media/quarantine-message-details-flyout.png" alt-text="The details flyout of a quarantined message" lightbox="../../media/quarantine-message-details-flyout.png":::
 
 ### Take action on quarantined email
 
@@ -217,7 +215,7 @@ To take action on the message, see the next section.
 
      :::image type="content" source="../../media/quarantine-message-details-flyout-actions.png" alt-text="Available actions in the details flyout of a selected message." lightbox="../../media/quarantine-message-details-flyout-actions.png":::
 
-   Using either method, many actions are available under ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More** or **More options**.
+   Using either message selection method, many actions are available under ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More** or **More options**.
 
 After you select the quarantined message, the available actions are described in the following subsections.
 
@@ -273,11 +271,13 @@ In the **Release email to recipient inboxes** flyout that opens, configure the f
 
 When you're finished on the **Release email to recipient inboxes** flyout, click **Release message**.
 
+Back on the **Email** tab, the **Release status** value of the message is **Released**.
+
 #### Approve or deny release requests from users for quarantined email
 
 Users can request the release of email messages if the quarantine policy used **Allow recipients to request a message to be released from quarantine** (`PermissionToRequestRelease` permission) instead of **Allow recipients to release a message from quarantine** (`PermissionToRelease` permission) when the message was quarantined. For more information, see [Create quarantine policies in the Microsoft 365 Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
-After a recipient requests the release of the email message, the **Status** value changes to **Release requested**, and an admin can approve or deny the request.
+After a recipient requests the release of the email message, the **Release status** value changes to **Release requested**, and an admin can approve or deny the request.
 
 If you don't release or remove a message, it will be automatically deleted from quarantine after the date shown in the **Expires** column.
 
@@ -286,9 +286,9 @@ After you select the message, use either of the following methods to approve or 
 - **On the Email tab**: Click ![Approve release icon.](../../media/m365-cc-sc-edit-icon.png) **Approve release** or ![Deny icon.](../../media/m365-cc-sc-edit-icon.png) **Deny**.
 - **In the details flyout of the selected message**: Click ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More** and then select **Approve release** or ![Deny icon.](../../media/m365-cc-sc-edit-icon.png) **Deny release**.
 
-If you click **Approve release**, an **Approve release** flyout opens where you can review information about the message. To approve the request, click **Approve release**. A **Release approved** flyout opens where you can click the link to learn more about releasing messages. Click **Done** when you're finished on the **Release approved** flyout. Back on the **Email** tab, the **Status** value of the message changes to **Approved**.
+If you click **Approve release**, an **Approve release** flyout opens where you can review information about the message. To approve the request, click **Approve release**. A **Release approved** flyout opens where you can click the link to learn more about releasing messages. Click **Done** when you're finished on the **Release approved** flyout. Back on the **Email** tab, the **Release status** value of the message changes to **Approved**.
 
-If you click **Deny**, a **Deny release** flyout opens where you can review information about the message. To deny the request, click **Deny release**. A **Release denied** flyout opens where you can click the link to learn more about releasing messages. Click **Done** when you're finished on the **Release denied** flyout. Back on the **Email** tab, the **Status** value of the message changes to **Denied**.
+If you click **Deny**, a **Deny release** flyout opens where you can review information about the message. To deny the request, click **Deny release**. A **Release denied** flyout opens where you can click the link to learn more about releasing messages. Click **Done** when you're finished on the **Release denied** flyout. Back on the **Email** tab, the **Release status** value of the message changes to **Denied**.
 
 #### Delete email from quarantine
 
@@ -312,7 +312,7 @@ After you click **Delete** on the **Delete (n) messages from quarantine** flyout
 
 After you select the message, use either of the following methods to preview it:
 
-- **On the Email tab**: ![Preview message icon.](../../media/m365-cc-sc-preview-message-icon.png) **Preview message**.
+- **On the Email tab**: Click ![Preview message icon.](../../media/m365-cc-sc-preview-message-icon.png) **Preview message**.
 - **In the details flyout of the selected message**: Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** \> ![Preview message icon.](../../media/m365-cc-sc-preview-message-icon.png) **Preview message**.
 
 In the flyout that opens, choose one of the following tabs:
@@ -369,9 +369,9 @@ When you're finished on the **Submit to Microsoft for analysis** flyout, click *
 
 #### Block email senders from quarantine
 
-The Block senders action adds the sender of the selected email message to the Blocked Senders list in the mailbox of whomever is signed in. Typically, this action is used by end-users if it's available to them by [quarantine policies](quarantine-policies.md#anatomy-of-a-quarantine-policy). For more information about users blocking senders, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
+The Block senders action adds the sender of the selected email message to the Blocked Senders list **in the mailbox of whomever is signed in**. Typically, this action is used by end-users if it's available to them by [quarantine policies](quarantine-policies.md#anatomy-of-a-quarantine-policy). For more information about users blocking senders, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
 
-- ![Block sender icon.](../../media/m365-cc-sc-block-sender-icon.png) **Block sender**: Add the sender to the Blocked Senders list in .
+- ![Block sender icon.](../../media/m365-cc-sc-block-sender-icon.png) **Block sender**: Add the sender to the currently signed in user's Blocked Senders list.
 
 After you select the message, use either of the following methods to add the message sender to the Blocked Senders list in **your** mailbox:
 
@@ -393,7 +393,7 @@ In the **Share email with other users** flyout that opens, select one or more re
 
 #### Download email from quarantine
 
-After you select the message, use either of the following methods to download it:
+After you select the email message, use either of the following methods to download it:
 
 - **On the Email tab**: Click ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More** \> ![Download messages icon.](../../media/m365-cc-sc-download-icon.png) **Download messages**.
 - **In the details flyout of the selected message**: Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** \> ![Download messages icon.](../../media/m365-cc-sc-download-icon.png) **Download message**.
@@ -405,7 +405,7 @@ In the **Download file** flyout that opens, enter the following information:
 
 When you're finished on the **Download file** flyout, click **Download**.
 
-When the download is finished, a **Save As** dialog opens for you to view or change the downloaded filename and location. By default, The .eml message file is saved in a compressed file named Quarantined Messages.zip in your **Downloads** folder. If the .zip file already exists, a number is appended to the filename (for example, Quarantined Messages(1).zip).
+When the download is ready, a **Save As** dialog opens for you to view or change the downloaded filename and location. By default, The .eml message file is saved in a compressed file named Quarantined Messages.zip in your **Downloads** folder. If the .zip file already exists, a number is appended to the filename (for example, Quarantined Messages(1).zip).
 
 Accept or change the downloaded file details, and then click **Save**.
 
@@ -413,7 +413,7 @@ Back on the **Download file** flyout, click **Done**.
 
 #### Take action on multiple quarantined email messages
 
-When you select multiple quarantined messages on the **Email** tab by selecting the check boxes next to the first column (up to 100 messages), the following bulk actions are available on the **Email** tab:
+When you select multiple quarantined messages on the **Email** tab by selecting the check boxes next to the first column, the following bulk actions are available on the **Email** tab:
 
 - [Release quarantined email](#release-quarantined-email)
 
@@ -456,9 +456,7 @@ You can sort the results by clicking on an available column header. Click ![Cust
 - **Detected by**
 - **Modified by time**
 
-When you're finished, click **Apply** or **Cancel**.
-
-To filter the results, click **Filter**. The following filters are available in the **Filters** flyout that opens:
+To filter the results, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**. The following filters are available in the **Filters** flyout that opens:
 
 - **Time received**:
   - **Last 24 hours**
@@ -474,9 +472,9 @@ To filter the results, click **Filter**. The following filters are available in 
 - **Quarantine reason**: The only available value is **Malware**.
 - **Policy type**: The only available value is **Unknown**.
 
-When you're finished, click **Apply**. To clear the filters, click ![Clear filters icon.](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished on the **Filters** flyout, click **Apply**. To clear the filters, click ![Clear filters icon.](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
-Use the **Search** box and a corresponding value to find specific files by filename. Wildcards aren't supported.
+Use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and a corresponding value to find specific files by filename. Wildcards aren't supported.
 
 After you've entered the search criteria, press the enter ENTER key to filter the results.
 
@@ -509,7 +507,7 @@ In the details flyout that opens, the following information is available:
 
 To take action on the file, see the next section.
 
-> [!NOTE]
+> [!TIP]
 > To remain in the details flyout but change the quarantined file that you're looking at, use the up and down arrows at the top of the flyout.
 >
 > :::image type="content" source="../../media/quarantine-file-details-flyout-up-down-arrows.png" alt-text="The up and down arrows in the details flyout of quarantined files" lightbox="../../media/quarantine-file-details-flyout-up-down-arrows.png":::
@@ -524,7 +522,7 @@ After you select the quarantined file, the available actions in the file details
 
 :::image type="content" source="../../media/quarantine-file-details-flyout-actions.png" alt-text="The actions in the details flyout of a quarantined file" lightbox="../../media/quarantine-file-details-flyout-actions.png":::
 
-#### Release a quarantined file
+#### Release quarantined files from quarantine
 
 This action isn't available for files that have already been released (the **Released status** value is **Released**).
 
@@ -538,9 +536,9 @@ In the **Files have been released** flyout that opens, click **Done**.
 
 Back on the file details flyout, click **Close**.
 
-Back on the **Files** tab, the **Status** value of the file is **Released**.
+Back on the **Files** tab, the **Release status** value of the file is **Released**.
 
-#### Download a quarantined file
+#### Download quarantined files from quarantine
 
 After you select the file, click ![Download file icon.](../../media/m365-cc-sc-download-icon.png) **Download file** in the details flyout that opens.
 
@@ -551,13 +549,13 @@ In the **Download file** flyout that opens, enter the following information:
 
 When you're finished on the **Download file** flyout, click **Download**.
 
-When the download is finished, a **Save As** dialog opens for you to view or change the downloaded filename and location. By default, The file is saved in a compressed file named Quarantined Messages.zip in your **Downloads** folder. If the .zip file already exists, a number is appended to the filename (for example, Quarantined Messages(1).zip).
+When the download is ready, a **Save As** dialog opens for you to view or change the downloaded filename and location. By default, The file is saved in a compressed file named Quarantined Messages.zip in your **Downloads** folder. If the .zip file already exists, a number is appended to the filename (for example, Quarantined Messages(1).zip).
 
 Accept or change the downloaded file details, and then click **Save**.
 
 Back on the **Download file** flyout, click **Done**.
 
-#### Delete a quarantined file from quarantine
+#### Delete quarantined files from quarantine
 
 If you don't release or delete the file from quarantine, the file is removed from quarantine after the default quarantine retention period expires (as shown in the **Expires** column), but the blocked file remains in SharePoint or OneDrive in the blocked state.
 
@@ -571,9 +569,9 @@ Back on the **Files** tab, the file is no longer listed.
 
 When you select multiple quarantined files on the **Files** tab by selecting the check boxes next to the first column (up to 100 files), a **Bulk actions** drop down list appears where you can take the following actions:
 
-- [Release quarantined files](#release-a-quarantined-file)
-- [Delete quarantined files from quarantine](#delete-a-quarantined-file-from-quarantine)
-- [Download quarantined files](#download-a-quarantined-file)
+- [Release quarantined files from quarantine](#release-quarantined-files-from-quarantine)
+- [Delete quarantined files from quarantine](#delete-quarantined-files-from-quarantine)
+- [Download quarantined files](#download-quarantined-files-from-qurantine)
 
 :::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions drop down list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
 
@@ -582,7 +580,7 @@ When you select multiple quarantined files on the **Files** tab by selecting the
 > [!NOTE]
 > This section lists new features which are currently in preview.
 
-When a potentially malicious chat message is detected in Microsoft Teams, zero-hour auto purge (ZAP) removes the message and quarantines it. Admins can view and manage these quarantined Teams messages. Note that the message is quarantined for 30 days. After that the Teams message is permanently removed.
+When a potentially malicious chat message is detected in Microsoft Teams, zero-hour auto purge (ZAP) removes the message and quarantines it. Admins can view and manage these quarantined Teams messages. The message is quarantined for 30 days. After that the Teams message is permanently removed.
 
 For the preview release, this feature is enabled by default. 
 
@@ -591,64 +589,166 @@ For the preview release, this feature is enabled by default.
 
 ### View quarantined messages in Microsoft Teams
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine**. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
-
-2. On the **Quarantine** page, select the **Teams messages** tab.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine** \> **Teams messages** tab. Or, to go directly to the **Teams messages** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Teams>.
 
    :::image type="content" source="../../media/admin-quarantine-teams-message-tab.png" alt-text="Screenshot of the Teams messages tab in quarantine." lightbox="../../media/admin-quarantine-teams-message-tab.png"::: 
 
-3. You can sort the results by clicking on an available column header. Click **Customize columns** to change the columns that are shown. 
-   - **Teams message text**: Contains the subject for the teams message.
-   - **Time received**: The time the message is received by the recipient. 
-   - **Release status**: Shows whether the message is already reviewed and released or needs review. 
-   - **Participants**: The total number of users who received the message.
-   - **Sender**: The person who sent the message that was quarantined.
-   - **Quarantine reason**: Available options are "High confidence phish" and "Malware".
-   - **Policy type**: The organization policy responsible for the quarantined message.
-   - **Expires**: Indicates the time after which the message is removed from quarantine. By default, this is 30 days.
-   - **Recipient address**: Email address of the recipients.
-   - **Message ID**: Includes the chat message ID.
+On the **Teams messages** tab, you can decrease the vertical spacing in the list by clicking ![Change list spacing to compact or normal icon.](../../media/m365-cc-sc-standard-icon.png) **Change list spacing to compact or normal** and then selecting ![Compact list icon.](../../media/m365-cc-sc-compact-icon.png) **Compact list**.
 
-4. To filter the results, click **Filter**. Select the columns you want, and then click **Apply**.
+You can sort the results by clicking on an available column header. Click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
+
+- **Teams message text**: Contains the subject for the teams message.<sup>\*</sup>
+- **Time received**: The time the message was received by the recipient. <sup>\*</sup>
+- **Release status**: Shows whether the message is already reviewed and released or needs review. <sup>\*</sup>
+- **Participants**: The total number of users who received the message.<sup>\*</sup>
+- **Sender**: The person who sent the message that was quarantined.<sup>\*</sup>
+- **Quarantine reason**: Available options are "High confidence phish" and "Malware".<sup>\*</sup>
+- **Policy type**: The organization policy responsible for the quarantined message.<sup>\*</sup>
+- **Expires**: Indicates the time after which the message is removed from quarantine. By default, this value is 30 days.<sup>\*</sup>
+- **Recipient address**: Email address of the recipients.<sup>\*</sup>
+- **Message ID**: Includes the chat message ID.
+
+To filter the results, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**. The following filters are available in the **Filters** flyout that opens:
+
+- **Message ID**
+- **Sender address**
+- **Recipient address**
+- **Subject**
+- **Time received**:
+  - **Last 24 hours**
+  - **Last 7 days**
+  - **Last 14 days**
+  - **Last 30 days** (default)
+  - **Custom**: Enter a **Start time** and **End time** (date).
+- **Expires**:
+  - **Custom** (default): Enter a **Start time** and **End time** (date).
+  - **Today**
+  - **Next 2 days**
+  - **Next 7 days**
+- **Quarantine reason**: Available valued are **Malware** and **High confidence phishing**.
+- **Recipient**: Select **All users** or **Only me**.
+
+When you're finished on the **Filters** flyout, click **Apply**. To clear the filters, click ![Clear filters icon.](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+
+Use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and a corresponding value to find specific Teams messages. Wildcards aren't supported.
+
+After you find a specific quarantined Teams message, select the message to view details about it and to take action on it (for example, view, release, download, or delete the message).
 
 ### View quarantined message details in Microsoft Teams
 
-When you select a quarantined message from the list, the following information is available in the details flyout that opens:
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine** \> **Teams messages** tab. Or, to go directly to the **Teams messages** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Teams>.
+
+2. On the **Teams messages** tab, select the quarantined message by clicking anywhere in the row other than the check box.
+
+In the details flyout that opens, the following information is available:
 
 :::image type="content" source="../../media/admin-quarantine-teams-details-flyout.png" alt-text="Screenshot of the Teams message details flyout in quarantine." lightbox="../../media/admin-quarantine-teams-details-flyout.png":::
 
-- **Quarantine details**: Includes quarantine reason, expiry date, quarantine policy type, and other information.
-- **Message details**: Includes the primary threat reason, date and time of the message sent, and the sender address. Also includes the Teams message ID and the detection technology.
-- **Sender**: Includes the sender name, their domain location, and whether the sender is from outside the organization.
-- **Participants**: The names and email IDs of all the people who received the same message.
+- **Quarantine details** section: Includes quarantine reason, expiry date, quarantine policy type, and other information.
+- **Message details** section: Includes the primary threat reason, date and time of the message sent, and the sender address. Also includes the Teams message ID and the detection technology.
+- **Sender** section: Includes the sender name, their domain location, and whether the sender is from outside the organization.
+- **Participants section**: The names and email IDs of all the people who received the same message.
 - **URLs**: Includes the details of any malicious URLs that were detected in the chat message.
 
 To take action on the message, see the next section.
 
+> [!TIP]
+> To remain in the details flyout but change the quarantined message that you're looking at, use the up and down arrows at the top of the flyout.
+>
+> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="The up and down arrows in the details flyout of a quarantined message" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
+
 ### Take action on quarantined messages in Microsoft Teams
 
-After you select a quarantined message from the list, the following actions are available in the details flyout:
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine** \> **Teams messages** tab. Or, to go directly to the **Teams messages** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Teams>.
 
-:::image type="content" source="../../media/admin-quarantine-teams-actions-details.png" alt-text="Screenshot of the actions menu for messages in quarantine." lightbox="../../media/admin-quarantine-teams-actions-details.png":::
+2. On the **Teams messages** tab, select the quarantined message by using either of the following methods:
 
-- **Release**: Allows the admin to release the message only to the recipients within the organization.
-- **Preview message**: Preview the message in quarantine before taking any action.
-- **Delete from quarantine**:  Deletes the message permanently from quarantine for all users in the organization.
-- **Download message**: Downloads the message as a plain .txt for the admin. 
-- **Submit for review**: Allows the admin to submit the message to Microsoft for review.
+   - Select the message from the list by clicking the check box next to the first column. The icons for available actions are no longer grayed out. 
 
-If you don't release or remove the file, it will be deleted after the default quarantine retention period expires (30 days).
+     :::image type="content" source="../../media/quarantine-teams-message-selected-message-actions.png" alt-text="Available actions after you select a quarantined message on the Teams message tab of the Quarantine page." lightbox="../../media/quarantine-teams message-selected-message-actions.png":::
 
-#### Take action on multiple quarantined messages
+   - Select the message from the list by clicking anywhere in the row other than the check box. The icons for available actions are in the details flyout that opens.
 
-When you select multiple quarantined files in the list by clicking the checkbox next to the messages, the **More** option appears:
+     :::image type="content" source="../../media/admin-quarantine-teams-actions-details.png" alt-text="Screenshot of the actions menu for messages in quarantine." lightbox="../../media/admin-quarantine-teams-actions-details.png":::
+
+   Using either method to select the message, some actions are available under ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More**.
+
+After you select the quarantined message, the available actions are described in the following subsections.
+
+#### Release quarantined Teams messages
+
+This action isn't available for Teams messages that have already been released (the **Release status** value is **Released**).
+
+If you don't release or remove a message, it will be automatically deleted from quarantine after the date shown in the **Expires** column.
+
+After you select the message, use either of the following methods to release it:
+
+- **On the Teams messages tab**: Click ![Release icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release**.
+- **In the details flyout of the selected message**: Click ![Release icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release**.
+
+In the **Release to all chat participants** flyout that opens, decide whether to select **Submit the message to Microsoft to improve detection (false positive)**, and then click **Release**.
+
+#### Delete Teams messages from quarantine
+
+If you don't release or remove a Teams message, it will be automatically deleted from quarantine after the date shown in the **Expires** column.
+
+After you select the Teams message, use either of the following methods to remove it:
+
+- **On the Teams messages tab**: Click ![Delete messages icon.](../../media/m365-cc-sc-delete-icon.png) **Delete messages**.
+- **In the details flyout of the selected message**: Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** \> ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete from quarantine**.
+
+In the warning dialog that opens, read the information and then click **Continue**.
+
+Back on the **Teams messages** tab, the message is no longer listed.
+
+#### Preview Teams messages from quarantine
+
+After you select the Teams message, use either of the following methods to preview it:
+
+- **On the Teams messages tab**: Click ![Preview message icon.](../../media/m365-cc-sc-preview-message-icon.png) **Preview message**.
+- **In the details flyout of the selected message**: Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) ![Preview message icon.](../../media/m365-cc-sc-preview-message-icon.png) **Preview message**.
+
+In the flyout that opens, choose one of the following tabs:
+  - **Source**: Shows the HTML version of the message body with all links disabled.
+  - **Plain text**: Shows the message body in plain text.
+
+#### Report Teams messages to Microsoft for review from quarantine
+
+After you select the message, use either of the following methods to report the message to Microsoft for analysis:
+
+- **On the Teams messages tab**: Click ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More** \> ![Submit for review icon.](../../media/m365-cc-sc-create-icon.png) **Submit for review**.
+- **In the details flyout of the selected message**: Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** \> ![Submit for review icon.](../../media/m365-cc-sc-create-icon.png) **Submit for review**.
+
+When you click **Submit message**, the message is sent to Microsoft for analysis. You receive an **Item** submitted dialog where you click **OK**.
+
+#### Download Teams messages from quarantine
+
+After you select the Teams message, use either of the following methods to download it:
+
+- **On the Teams messages tab**: Click ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More** \> ![Download messages icon.](../../media/m365-cc-sc-download-icon.png) **Download messages**.
+- **In the details flyout of the selected message**: Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** \> ![Download messages icon.](../../media/m365-cc-sc-download-icon.png) **Download message**.
+
+In the **Download messages** flyout that opens, enter the following information:
+
+- **Reason for downloading file**: Enter descriptive text.
+- **Create password** and **Confirm password**: Enter a password that's required to open the downloaded message file.
+
+When you're finished on the **Download file** flyout, click **Download**.
+
+By default, The .html message file is saved in a compressed file named Quarantined Messages.zip in your **Downloads** folder. If the .zip file already exists, a number is appended to the filename (for example, Quarantined Messages(1).zip).
+
+Back on the **Download messages** flyout, click **Done**.
+
+#### Take action on multiple quarantined Teams messages
+
+When you select multiple quarantined messages on the **Teams messages** tab by selecting the check boxes next to the first column, the following bulk actions are available on the **Teams messages** tab:
+
+- [Release quarantined Teams messages](#release-quarantined-teams-messages)
+- [Delete Teams messages from quarantine](#delete-teams-messages-from-quarantine)
+- [Report Teams messages to Microsoft for review from quarantine](#report-teams-messages-to-microsoft-for-review-from-quarantine)
+- [Download Teams messages from quarantine](#download-teams-messages-from-quarantine)
 
 :::image type="content" source="../../media/admin-quarantine-teams-bulk-action.png" alt-text="Screenshot of the Bulk action options for files in quarantine." lightbox="../../media/admin-quarantine-teams-bulk-action.png":::
-
-- **Release**: Select this option to release messages to the intended recipients within the organization.
-- **Delete messages**: Select this option to delete the messages permanently from quarantine.
-- **Submit for review**: Select this option to submit the messages to Microsoft for review.
-- **Download messages**: Select this option to save a local copy of the messages.
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to manage quarantined messages
 
@@ -657,28 +757,8 @@ The cmdlets that you use to view and manage messages and files in quarantine are
 - [Delete-QuarantineMessage](/powershell/module/exchange/delete-quarantinemessage)
 - [Export-QuarantineMessage](/powershell/module/exchange/export-quarantinemessage)
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
-- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): Note that this cmdlet is only for messages, not quarantined files from Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
+- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): This cmdlet is for messages only, not quarantined files.
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
-
-### Use PowerShell to manage quarantined messages in Microsoft Teams
-
-To manage quarantined messages for the Microsoft Teams chat, the admin will need to use the [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) cmdlet with the following parameters to identify the messages.
-
-|Quarantine cmdlets|Parameters|
-|---|---|
-|`QuarantineScenario`|Email </br>SPO </br>Teams|
-|`EmailQuarantineType`|Bulk </br>HighConfPhish </br>Malware</br>Phish </br>Spam </br>TransportRule|
-|`SPOQuarantineType`|Malware|
-|`TeamsQuarantineType`|HighConfPhish </br>Malware|
-
-Admins can select a quarantined message from the list to view or take action.
-
-**Example**:
-
-```powershell
-  Get-QuarantineMessage -Identity c14401cf-aa9a-465b-cfd5-08d0f0ca37c5\4c2ca98e-94ea-db3a-7eb8-3b63657d4db7 |
-  -Scenario Teams
-```
 
 ## For more information
 
