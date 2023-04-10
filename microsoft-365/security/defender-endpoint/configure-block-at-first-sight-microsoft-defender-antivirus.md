@@ -86,8 +86,6 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
    - **Send all samples automatically**
    - **Send safe samples automatically**
 
-   :::image type="content" source="media/intune-mdav-cp-sendsamples.png" alt-text="Screenshot of Submit Samples Consent setting with Send All Samples Automatically selected in Intune.":::
-
 4. Apply the Microsoft Defender Antivirus profile to a group, such as **All users**, **All devices**, or **All users and devices**.
 
 ## Turn on block at first sight with Group Policy
@@ -128,9 +126,7 @@ You can confirm that block at first sight is enabled on individual client device
 ## Turn off block at first sight
 
 > [!CAUTION]
-> Turning off block at first sight will lower the protection state of your device(s) and your network.
-
-You might choose to disable block at first sight if you want to retain the prerequisite settings without actually using block at first sight protection. You might temporarily turn block at first sight off to see how this feature affects your network. However, we do not recommend disabling block at first sight protection permanently.
+> Turning off block at first sight will lower the protection state of your device(s) and your network. We do not recommend disabling block at first sight protection permanently.
 
 ### Turn off block at first sight with Microsoft Intune
 
