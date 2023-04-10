@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: how-to
 author: denisebmsft
 ms.author: deniseb
-ms.date: 03/28/2023
+ms.date: 04/10/2023
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
@@ -30,9 +30,6 @@ search.appverid: met150
 
 Cloud protection works together with Microsoft Defender Antivirus to deliver protection to your devices faster than through traditional security intelligence updates. You can configure your level of cloud protection by using Microsoft Intune (recommended) or Group Policy.
 
-> [!NOTE]
-> Selecting **High**, **High +**, or **Zero tolerance** could cause some legitimate files to be detected. If that happens, you can unblock the detected file or dispute that detection in the Microsoft 365 Defender portal.
-
 ## Use Microsoft Intune to specify the level of cloud protection
 
 1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
@@ -49,6 +46,9 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
     - **High**: Applies a strong level of detection.
     - **High plus**: Uses the **High** level and applies extra protection measures (might affect client performance).
     - **Zero tolerance**: Blocks all unknown executables.
+
+   > [!NOTE]
+   > We recommend selecting at least **High** for **Cloud-delivered protection level**.
 
 6. Choose **Review + save**, and then choose **Save**.
 
