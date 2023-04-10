@@ -86,6 +86,16 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "microsoft-365/solutions/test-lab-guides-overview-solutions.md",
+            "redirect_url": "/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "microsoft-365/solutions/team-security-isolation-dev-test.md",
+            "redirect_url": "/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "microsoft-365/admin/security-and-compliance/secure-your-business-data.md",
             "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
             "redirect_document_id": true
