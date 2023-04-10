@@ -59,8 +59,8 @@ For more information about the specific network-connectivity requirements to ens
 
    | Task  | Steps  |
    |---------|---------|
-   | Create a new policy     | 1. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/>2. For **Profile**, select **Microsoft Defender Antivirus**.<br/>3. On the **Basics** page, specify a name and description for the policy, and then choose **Next**.<br/>4. In the **Defender** section, find **Allow Cloud Protection**, and set it to **Allowed**. Then choose **Next**. <br/>5. On the **Scope tags** step, if your organization is using [scope tags](/mem/intune/fundamentals/scope-tags), select the tags you want to use, and then choose **Next**.<br/>6. On the **Assignments** step, select the groups, users, or devices that you want to apply this policy to, and then choose **Next**.<br/>7. On the **Review + create** step, review the settings for your policy, and then choose **Create**.          |
-   | Edit an existing policy     | 1. Select the policy that you want to edit.<br/>2. Under **Configuration settings**, choose **Edit**.<br/>3. In the **Defender** section, find **Allow Cloud Protection**, and set it to **Allowed**.<br/>4. Select **Review + save**.        |
+   | Create a new policy     | 1. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/><br/>2. For **Profile**, select **Microsoft Defender Antivirus**.<br/><br/>3. On the **Basics** page, specify a name and description for the policy, and then choose **Next**.<br/><br/>4. In the **Defender** section, find **Allow Cloud Protection**, and set it to **Allowed**. Then choose **Next**. <br/><br/>5. Scroll down to **Submit Samples Consent**, and select one of the following settings:<br/>- **Send all samples automatically**<br/>- **Send safe samples automatically**<br/><br/>6. On the **Scope tags** step, if your organization is using [scope tags](/mem/intune/fundamentals/scope-tags), select the tags you want to use, and then choose **Next**.<br/><br/>7. On the **Assignments** step, select the groups, users, or devices that you want to apply this policy to, and then choose **Next**.<br/><br/>8. On the **Review + create** step, review the settings for your policy, and then choose **Create**.          |
+   | Edit an existing policy     | 1. Select the policy that you want to edit.<br/><br/>2. Under **Configuration settings**, choose **Edit**.<br/><br/>3. In the **Defender** section, find **Allow Cloud Protection**, and set it to **Allowed**.<br/><br/>4. Scroll down to **Submit Samples Consent**, and select one of the following settings:<br/>- **Send all samples automatically**<br/>- **Send safe samples automatically**<br/><br/>5. Select **Review + save**.        |
 
 > [!TIP]
 > To learn more about Microsoft Defender Antivirus settings in Intune, see [Antivirus policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-antivirus-policy).
@@ -138,7 +138,15 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
    > [!NOTE]
-   > If automatic sample submission has been configured with Group Policy then the setting will be greyed-out and unavailable.
+   > If automatic sample submission has been configured with Group Policy, then the setting will be greyed-out and unavailable.
+
+## See also
+
+- [Use Microsoft cloud protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
+
+- [Configuration Manager: Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
+
+- [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
@@ -149,11 +157,3 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
-
-## See also
-
-- [Use Microsoft cloud protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
-
-- [Configuration Manager: Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
-
-- [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
