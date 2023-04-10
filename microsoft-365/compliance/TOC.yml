@@ -63,7 +63,7 @@
 - name: Configure connectors to import third-party data
   items: 
    - name: Learn about connectors for third-party data
-     href: archiving-third-party-data.md
+     href: archive-third-party-data.md
    - name: Microsoft data connectors
      items:  
        - name: Bloomberg Message
@@ -213,7 +213,7 @@
        - name: CellTrust SL2 
          href: archive-data-from-celltrustsl2.md
    - name: Work with a partner to archive third-party data
-     href: work-with-partner-to-archive-third-party-data.md
+     href: archive-partner-third-party-data.md
    - name: Search for third-party data
      href: use-content-search-to-search-third-party-data-that-was-imported.md
    - name: View admin logs for data connectors
@@ -1392,8 +1392,10 @@
         - name: Overview of Content search
           href: search-for-content.md
         - name: Search for content
-          href: ediscovery-content-search.md
+          href: ediscovery-content-search.md          
           items: 
+          - name: Search for content in Teams
+            href: ediscovery-teams-content-search.md 
           - name: Keyword queries and search conditions
             href: ediscovery-keyword-queries-and-search-conditions.md
           - name: Use the KQL editor to build search queries
@@ -1460,6 +1462,8 @@
           href: ediscovery-standard-get-started.md
         - name: Create eDiscovery holds
           href: ediscovery-create-holds.md
+        - name: Create a hold for Teams users
+          href: ediscovery-teams-legal-hold.md
         - name: Search for content in a case
           href: ediscovery-search-for-content.md
         - name: Export content from a case
