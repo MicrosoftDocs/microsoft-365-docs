@@ -41,7 +41,7 @@ This article describes an antivirus/antimalware feature known as "block at first
 Block at first sight is a threat protection feature of next-generation protection that detects new malware and blocks it within seconds. Block at first sight is enabled when certain security settings are enabled: 
 
 - [Cloud protection](cloud-protection-microsoft-defender-antivirus.md) is turned on;
-- [Sample submission](cloud-protection-microsoft-antivirus-sample-submission.md) has a specified sample submission timeout (such as 50 seconds); and
+- [Sample submission](cloud-protection-microsoft-antivirus-sample-submission.md) is set to send samples; and
 - [Microsoft Defender Antivirus is up to date](microsoft-defender-antivirus-updates.md) on devices.
 
 In most enterprise organizations, the settings needed to enable block at first sight are configured with Microsoft Defender Antivirus deployments.
