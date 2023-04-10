@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 01/31/2023
+ms.date: 03/24/2023
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -44,7 +44,7 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/wi
 
 ## Availability
 
-Network Protection for macOS will soon be available for all Microsoft Defender for Endpoint onboarded macOS devices which meet the minimum requirements. Microsoft will begin incrementally rolling out the functionality for all macOS devices to enable Network Protection on 1/31/2023 with target completion, subject to change, by 3/24/23. When this feature rolls to production, all of your currently configured Network Protection and Web Threat Protection policies will be enforced on macOS devices where Network Protection is configured for block mode.
+Network Protection for macOS will soon be available for all Microsoft Defender for Endpoint onboarded macOS devices which meet the minimum requirements. Microsoft will begin incrementally rolling out the functionality for all macOS devices to enable Network Protection on 1/31/2023 with target completion, subject to change, in May 2023. When this feature rolls to production, all of your currently configured Network Protection and Web Threat Protection policies will be enforced on macOS devices where Network Protection is configured for block mode.
 
 To prepare for the macOS network protection rollout, we recommend the following:
 
@@ -56,7 +56,7 @@ To prepare for the macOS network protection rollout, we recommend the following:
 
 - You can run your corporate VPN in tandem or "side by side" with network protection. Currently, no VPN conflicts are identified. If you do experience conflicts, you can provide feedback through the feedback channel listed at the bottom of this page.
   - Web content filtering is supported with network protection for macOS.
-  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal are respected in browsers, including Chromium Microsoft Edge for macOS. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 feature, such as Microsoft Defender for Cloud Apps or Custom Indicators currently also require network protection.
+  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal are respected in browsers, including Chromium Microsoft Edge for macOS. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 features, such as Microsoft Defender for Cloud Apps or Custom Indicators, currently also require network protection.
 
 ### Known issues
 
@@ -74,7 +74,7 @@ To prepare for the macOS network protection rollout, we recommend the following:
 
 ## Prerequisites
 
-- Licensing: Microsoft 365 Defender for Endpoint tenant (can be trial)
+- Licensing: Microsoft 365 Defender for Endpoint Plan 1 or Microsoft 365 Defender for Endpoint Plan 2 (can be trial)
 - Onboarded Machines:
   - Minimum macOS version: 11
   - Product version 101.94.13 or later
@@ -291,7 +291,7 @@ The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you wo
 
 :::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection monitored apps.":::
 
-Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender for Endpoint Security Center under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article), end users will be getting warn messages when attempting to access these domains:
+Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article), end users will be getting warn messages when attempting to access these domains:
 
 :::image type="content" source="images/network-protection-macos-indicators-urls-domains-warn.png" alt-text="Shows network protection indicators for urls or domains warning.":::
 

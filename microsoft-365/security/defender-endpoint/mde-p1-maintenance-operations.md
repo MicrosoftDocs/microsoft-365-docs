@@ -21,7 +21,9 @@ ms.collection:
 # Manage Microsoft Defender for Endpoint Plan 1
 
 **Applies to**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 As you use Defender for Endpoint Plan 1 in your organization, your security team can take certain steps to maintain your security solution. As your security team puts together your maintenance and operations plan, make sure to include at least the following activities:
 
@@ -46,7 +48,7 @@ To learn more, see [Manage Defender for Endpoint](manage-mde-post-migration.md).
 
 ## Address false positives/negatives
 
-A false positive is an artifact, like a file or a process, that was detected as malicious, even though it isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is. False positives/negatives can occur with any endpoint protection solution, including Defender for Endpoint. However, there are steps you can take to address these kinds of issues and fine-tune your solution, as depicted in the following image:
+A false positive is an artifact, like a file or a process, that was detected as malicious, even though it isn't actually a threat. A false negative is an entity that wasn't detected as a threat, even though it actually is. False positives/negatives can occur with any endpoint protection solution, including Defender for Endpoint. However, there are steps you can take to address these kinds of issues and fine-tune your solution, as depicted in the following image:
 
 :::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="False positives and negatives process overview" lightbox="../../media/defender-endpoint/false-positives-overview.png":::
 
