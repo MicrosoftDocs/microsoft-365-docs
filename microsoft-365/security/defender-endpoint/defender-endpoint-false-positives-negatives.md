@@ -362,35 +362,7 @@ Depending on the apps your organization is using, you might be getting false pos
 
 We recommend using [Intune](/mem/endpoint-manager-overview) to edit or set PUA protection settings; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy).
 
-#### Use Intune to edit PUA protection (for existing configuration profiles)
-
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Devices** \> **Configuration profiles**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-set-pua-protection-for-a-new-configuration-profile).)
-
-2. Under **Manage**, choose **Properties**, and then, next to **Configuration settings**, choose **Edit**.
-
-3. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
-
-4. Set **Detect potentially unwanted applications** to **Audit**. (You can turn it off, but by using audit mode, you'll be able to see detections.)
-
-5. Choose **Review + save**, and then choose **Save**.
-
-#### Use Intune to set PUA protection (for a new configuration profile)
-
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Devices** \> **Configuration profiles** \> **+ Create profile**.
-
-2. For the **Platform**, choose **Windows 10 and later**, and for **Profile**, select **Device restrictions**.
-
-3. On the **Basics** tab, specify a name and description for your policy. Then choose **Next**.
-
-4. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
-
-5. Set **Detect potentially unwanted applications** to **Audit**, and then choose **Next**. (You can turn off PUA protection, but by using audit mode, you'll be able to see detections.)
-
-6. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
-
-7. On the **Applicability Rules** tab, specify the OS editions or versions to include or exclude from the policy. For example, you can set the policy to be applied to all devices certain editions of Windows 10. Then choose **Next**.
-
-8. On the **Review + create** tab, review your settings, and, and then choose **Create**.
+See [Configure PUA protection in Microsoft Defender Antivirus](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md#configure-pua-protection-in-microsoft-defender-antivirus).
 
 ### Automated investigation and remediation
 
