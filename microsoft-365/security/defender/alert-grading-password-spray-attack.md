@@ -192,7 +192,7 @@ CloudAppEvents
 | where RawEventData.SessionId in (suspiciousSessionIds)
 ```
 
-## Recommended Actions
+## Recommended actions
 
 Once you determine that the activities associated with this alert are malicious, classify those alerts as TP and take these actions for remediation:
 
