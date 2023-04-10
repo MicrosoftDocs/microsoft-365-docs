@@ -11,6 +11,7 @@ ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
+ms.reviewer: thdoucet
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -18,7 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/10/2023
 ---
 
 # Create indicators
