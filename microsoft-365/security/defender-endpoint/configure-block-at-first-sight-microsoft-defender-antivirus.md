@@ -98,7 +98,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
 1. In the Microsoft Intune admin center (<https://endpoint.microsoft.com>), go to **Endpoint security** \> **Antivirus**.
 
-2. Select an existing policy, or create a new policy using the **Microsoft Defender Antivirus** profile type.
+2. Select an existing policy, or create a new policy using the **Microsoft Defender Antivirus** profile type. In our example, we selected **Windows 10, Windows 11, or Windows Server** for the platform.
 
    :::image type="content" source="media/intune-mdav-policy.png" alt-text="Screenshot of new MDAV policy creation in Intune." lightbox="media/intune-mdav-policy.png":::
 
