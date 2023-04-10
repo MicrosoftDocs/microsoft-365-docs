@@ -125,7 +125,7 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 - /opt/*
 - /Users/*/Library/Application Support/Microsoft/Teams/*
 
-### Setup evidence collection for file activities on devices
+### Setup evidence collection for file activities on devices (preview)
 
 DLP can copy items that match policies on devices to an [Azure storage account](azure/storage/common/storage-account-overview). This is useful for auditing policy activity and troubleshooting why a specific item matched a policy. Use this section to add name and url of storage account. Before you enable this feature, you must create an Azure storage account and a container in the storage account as well as configuring permissions. As you configure this, keep in mind that you'll probably want to use a storage account that's in the same Azure region/geopolitical boundary as your tenant. You should also consider [Azure storage account access tiers](azure/storage/blobs/storage-blob-storage-tiers) and [Azure storage account pricing](azure/storage/common/storage-account-overview#pricing).
 
