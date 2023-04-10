@@ -47,9 +47,6 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
     - **High plus**: Uses the **High** level and applies extra protection measures (might affect client performance).
     - **Zero tolerance**: Blocks all unknown executables.
 
-   > [!NOTE]
-   > We recommend selecting at least **High** for **Cloud-delivered protection level**.
-
 6. Choose **Review + save**, and then choose **Save**.
 
 > [!TIP]
