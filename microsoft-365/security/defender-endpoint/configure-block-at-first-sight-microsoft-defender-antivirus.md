@@ -86,7 +86,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
    - **Send all samples automatically**
    - **Send safe samples automatically**
 
-4. Apply the Microsoft Defender Antivirus profile to a group, such as **All users**, **All devices**, or **All users and devices**.
+5. Apply the Microsoft Defender Antivirus profile to a group, such as **All users**, **All devices**, or **All users and devices**.
 
 ## Turn on block at first sight with Group Policy
 
