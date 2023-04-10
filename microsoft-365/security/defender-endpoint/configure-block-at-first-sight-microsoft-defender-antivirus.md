@@ -102,9 +102,13 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
    :::image type="content" source="media/intune-mdav-policy.png" alt-text="Screenshot of new MDAV policy creation in Intune." lightbox="media/intune-mdav-policy.png":::
 
+3. Set **Allow cloud protection** to **Allowed. Turns on Cloud Protection**. 
+
+   :::image type="content" source="media/intune-mdav-cpallowed.png" alt-text="Screenshot of Cloud Protection set to allowed in Intune.":::
+
 3. Set or confirm the following configuration settings:
 
-   - **Turn on cloud-delivered protection**: Yes
+   - **Allow cloud protection**: Yes
    - **Cloud-delivered protection level**: High
    - **Microsoft Defender Antivirus Extended Timeout in Seconds**: 50
 
