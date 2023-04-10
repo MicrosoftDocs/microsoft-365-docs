@@ -118,9 +118,9 @@ On the Settings page, you choose the information to sync from Blue Yonder WFM to
 
   > [!TIP]
   > You'll be given the following options for the next group of settings: <br>
-  > **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts. <br>
-  > **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts. <br>
-  > **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
+  > **Shifts users will not see provider data**: Data won't sync between Blue Yonder WFM and Shifts. <br>
+  > **Shifts users can see provider data**: Data syncing is unidirectional from Blue Yonder WFM to Shifts. <br>
+  > **Shifts users can see and change provider data**: Data syncing is bidirectional between Blue Yonder WFM and Shifts.
 
 4. Choose your basic, **Time card**, and **Request** settings from the options listed above.
 
@@ -149,6 +149,8 @@ On the Settings page, you choose the information to sync from Blue Yonder WFM to
 
 Choose the Blue Yonder WFM instances that you want to connect to Shifts, and then map each WFM instance to a team in Teams. You can map up to 400 instances.
 
+##### Manually map instances to teams
+
 :::image type="content" source="media/shifts-connector-wizard-map.png" alt-text="Screenshot of wizard, showing the list of Blue Yonder WFM instances." lightbox="media/shifts-connector-wizard-map.png":::
 <a name="mapping"> </a>
 <a name="search_teams"> </a>
@@ -164,6 +166,42 @@ Then, map each instance to a team in Teams. You can map an instance to an existi
 1. Choose the time zone. The closest city will be automatically filled in, but you can change it.
 
 1. When you've mapped all your teams, select **Next**.
+
+##### Use a CSV file to map instances to teams
+
+1. On the **Mapping** page, choose **CSV upload tool**.
+
+2. Select **Download template** to get the CSV mapping file. The template will include a list of all your Blue Yonder WFM instances and their IDs. The template contains these columns, in the following order:
+
+  |Column name |Description |
+  |------------|------------|
+  |Blue Yonder WFM Instance ID* |The Blue Yonder WFM instance ID |
+  |Blue Yonder WFM Instance Name* |The Blue Yonder WFM instance name |
+  |Team ID* |The team ID |
+  |Team Name |The team name |
+  |Time zone* |The time zone in tz database format. For example: Europe/London |
+
+  *Required
+
+> [!TIP]
+> Get team IDs by following these steps:
+>
+>1. Select the **Teams** tab in Microsoft Teams.
+>2. Find the team you want to map and select the ellipses (**...**).
+>3. Choose **Get link to Team** to copy the link.
+>4. Your Team ID is between "groupId=" and "&tenantId=".
+
+3. Enter your desired team mappings in the CSV file. The image below shows what a mapping file might look like after being filled.
+
+  ![Screenshot of filled out mapping file](media/by-csv-mapping.png)
+
+4. On the **Mapping** page, select **Browse** to find and upload your completed CSV file.
+
+5. Choose **Done** if your file has uploaded correctly. Otherwise, review the provided error report and upload a corrected file.
+
+6. Your new mappings will appear on the **Mappings** page.
+
+7. Choose **Next**.
 
 ### Review and finish
 

@@ -153,6 +153,8 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
 
 Choose the UKG Dimensions instances that you want to connect to Shifts, and then map each WFM instance to a team in Teams. You can map up to 400 instances.
 
+##### Manually map instances to teams
+
 :::image type="content" source="media/shifts-connector-wizard-ukg-map.png" alt-text="Screenshot of wizard, showing the list of UKG Dimensions instances." lightbox="media/shifts-connector-wizard-ukg-map.png":::
 
 1. On the **Mapping** page, start by choosing which WFM instance(s) you want to map to Microsoft Teams team(s).
@@ -166,6 +168,42 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 1. Choose the time zone. The closest city will be automatically filled in, but you can change it.
 
 1. When you've mapped all your teams, select **Next**.
+
+##### Use a CSV file to map instances to teams
+
+1. On the **Mapping** page, choose **CSV upload tool**.
+
+2. Select **Download template** to get the CSV mapping file. The template will include a list of all your UKG Dimensions instances and their IDs. The template contains these columns, in the following order:
+
+  |Column name |Description |
+  |------------|------------|
+  |UKG Dimensions Instance ID* |The UKG Dimensions WFM instance ID |
+  |UKG Dimensions Instance Name* |The UKG Dimensions WFM instance name |
+  |Team ID* |The team ID |
+  |Team Name |The team name |
+  |Time zone* |The time zone in tz database format. For example: Europe/London |
+
+  *Required
+
+> [!TIP]
+> Get team IDs by following these steps:
+>
+>1. Select the **Teams** tab in Microsoft Teams.
+>2. Find the team you want to map and select the ellipses (**...**).
+>3. Choose **Get link to Team** to copy the link.
+>4. Your Team ID is between "groupId=" and "&tenantId=".
+
+3. Enter your desired team mappings in the CSV file. The image below shows what a mapping file might look like after being filled.
+
+  ![Screenshot of filled out mapping file](media/ukg-map-csv.png)
+
+4. On the **Mapping** page, select **Browse** to find and upload your completed CSV file.
+
+5. Choose **Done** if your file has uploaded correctly. Otherwise, review the provided error report and upload a corrected file.
+
+6. Your new mappings will appear on the **Mappings** page.
+
+7. Choose **Next**.
 
 ### Review and finish
 
