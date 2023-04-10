@@ -71,31 +71,6 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
 ## Turn on block at first sight with Microsoft Intune
 
-### Create a device configuration profile
-
-1. In the Microsoft Intune admin center (<https://endpoint.microsoft.com>), navigate to **Devices** \> **Configuration profiles**.
-
-2. Select or create a profile using the **Device restrictions** profile type.
-
-3. In the **Configuration settings** for the Device restrictions profile, set or confirm the following settings under **Microsoft Defender Antivirus**:
-
-   - **Cloud-delivered protection**: Enabled
-   - **File Blocking Level**: High
-   - **Time extension for file scanning by the cloud**: 50
-   - **Prompt users before sample submission**: Send all data without prompting
-
-   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune config block at first sight" lightbox="../../media/intune-block-at-first-sight.png":::
-
-4. Save your settings.
-
-> [!TIP]
->
-> - Setting the file blocking level to **High** applies a strong level of detection. In the unlikely event that file blocking causes a false positive detection of legitimate files, your security operations team can [restore quarantined files](./restore-quarantined-files-microsoft-defender-antivirus.md).
-> - For more information about configuring Microsoft Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
-> - For a list of Microsoft Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
-
-### Create an endpoint security policy
-
 1. In the Microsoft Intune admin center (<https://endpoint.microsoft.com>), go to **Endpoint security** \> **Antivirus**.
 
 2. Select an existing policy, or create a new policy using the **Microsoft Defender Antivirus** profile type. In our example, we selected **Windows 10, Windows 11, or Windows Server** for the platform.
@@ -106,13 +81,12 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
    :::image type="content" source="media/intune-mdav-cpallowed.png" alt-text="Screenshot of Cloud Protection set to allowed in Intune.":::
 
-3. Set or confirm the following configuration settings:
+4. Scroll down to **Submit Samples Consent**, and select one of the following settings:
 
-   - **Allow cloud protection**: Yes
-   - **Cloud-delivered protection level**: High
-   - **Microsoft Defender Antivirus Extended Timeout in Seconds**: 50
+   - **Send all samples automatically**
+   - **Send safe samples automatically**
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Block at first sight settings in the Microsoft Intune admin center portal" lightbox="images/endpointmgr-antivirus-cloudprotection.png":::
+   :::image type="content" source="media/intune-mdav-cp-sendsamples.png" alt-text="Screenshot of Submit Samples Consent setting with Send All Samples Automatically selected in Intune.":::
 
 4. Apply the Microsoft Defender Antivirus profile to a group, such as **All users**, **All devices**, or **All users and devices**.
 
