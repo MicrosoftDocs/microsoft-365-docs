@@ -86,7 +86,7 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "solutions/test-lab-guides-overview-solutions.md",
+            "source_path": "microsoft-365/solutions/test-lab-guides-overview-solutions.md",
             "redirect_url": "/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
             "redirect_document_id": true
         },
