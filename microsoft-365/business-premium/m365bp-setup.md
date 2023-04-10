@@ -23,7 +23,7 @@ ms.custom: intro-get-started
 
 After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
 
-- Start with the guided setup experience for basic setup and configuration, and then proceed to [Boost your security protection](m365bp-security-overview.md); <br/>or<br/>
+- Start with the guided setup experience for basic setup and configuration, and then proceed to [Boost your security protection](m365bp-security-overview.md); or 
 - Work with a Microsoft partner who can help you get everything set up and configured.
 
 
