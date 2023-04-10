@@ -102,7 +102,7 @@ After a matter is resolved or if a custodian is no longer subject to preserve co
 To create a release notification:
 
 1. In the **Release** tile, select **Edit**.
-2. If necessary, add additional case members or staff to the **Cc** and **Bcc** fields. To add multiple users to these fields, separate email addresses with a semi-colon  and without spaces between the addresses. For example, *user1@contoso.com;user2@contoso.com;user3@contoso.com*.
+2. If necessary, add additional case members or staff to the **Cc** and **Bcc** fields. To add multiple users to these fields, separate email addresses with a semi-colon and without spaces between the addresses. For example, *user1@contoso.com;user2@contoso.com;user3@contoso.com*.
 3. Specify the **Subject** for the notice (required).
 4. Specify the contents or additional instructions that you would like to provide to the custodian (required).
 5. Select **Save** and go to the next step.
