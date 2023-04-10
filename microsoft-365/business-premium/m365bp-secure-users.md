@@ -37,7 +37,7 @@ Microsoft 365 Business Premium offers you one comprehensive solution for product
 
 ## Video: Top 5 benefits of Microsoft 365 Business Premium
 
-Watch the following video to see how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
+Watch the following video to see how Microsoft 365 Business Premium helps your business be more productive and secure: <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
@@ -72,4 +72,6 @@ Our digital threats guide describes different kinds of threats and what you and 
 
 3. [Set up your security capabilities](m365bp-security-overview.md).
 
-4. 
+4. Help everyone [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md), [Use email securely](m365bp-protect-email-overview.md), and [Collaborate and share securely](m365bp-collaborate-share-securely.md).
+
+5. [Set up and secure managed devices](m365bp-protect-devices.md)
