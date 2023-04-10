@@ -29,9 +29,7 @@ After you have [started a trial or purchased Microsoft 365 Business Premium](get
 
 ##  [**Guided setup process**](#tab/Guided)
 
-Microsoft 365 Business Premium includes a guided process. The following video shows the guided setup process for Microsoft 365 Business Standard, which also applies to Microsoft 365 Business Premium. 
-
-Microsoft 365 Business Premium includes [advanced security settings that you'll configure](m365bp-security-overview.md) after your basic setup process is complete.<br/><br/>
+Microsoft 365 Business Premium includes a guided process, as shown in the following video: 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
