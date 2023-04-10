@@ -444,18 +444,12 @@ If you've worked through all the steps in this article and still need help, cont
 
 2. In the **Support Assistant** window, describe your issue, and then send your message. From there, you can open a service request.
 
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md) 
-
 ## See also
 
 - [Manage Defender for Endpoint](manage-mde-post-migration.md)
 - [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Overview of Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/use)
+- [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+- [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md) 
+- [Configure Defender for Endpoint on Android features](android-configure.md)
