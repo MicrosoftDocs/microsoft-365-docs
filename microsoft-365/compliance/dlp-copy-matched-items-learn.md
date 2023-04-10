@@ -20,10 +20,65 @@ description: "Learn about copying items that match policies to an Azure storage 
 
 # Learn about collecting files that match data loss prevention policies from devices (preview)
 
-Microsoft Purview data loss prevention (DLP) can copy files that match DLP policies from devices to an Azure storage account. 
-
+When you are either investigating a Microsoft Purview data loss prevention (DLP) incident or troublshooting a DLP policy, it can be helpful to have a complete copy of the item that matched the policy to refer to. DLP can copy the item that matches a DLP policy from onboarded Windows devices to an Azure storage account.   
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Copy matched items and eDiscovery
+
+This feature will only make copies of items that match DLP policies on onboarded Windows devices and place those copies in an Azure storage account. These copies are not held in a changless state and aren't evidence in the legal sense of the term. If you need to find and hold items for legal purposes, you should use the [Microsoft Purview eDiscovery solutions](ediscovery.md). Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases.
+## Copy matched items and contextual summary
+
+Endpoint DLP is part of the larger DLP solution. When you configure DLP to copy matched items to Azure storage, you can also configure DLP to create a contextual summary of the item that matched the policy. The contextual summary is a short excerpt of the item that matched the policy. The contextual summary is stored in the Azure storage account along with the item that matched the policy. The contextual summary is not a changless copy of the item that matched the policy. The contextual summary is not evidence in the legal sense of the term. If you need to find and hold items for legal purposes, you should use the [Microsoft Purview eDiscovery solutions](ediscovery.md). Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases.
+
+[Contextual summary](dlp-learn-about-dlp.md#contextual-summary)
+
+This is different from short evidence  TELL HOW
+
+Works for block, block with override and audit 
+
+Content IS NOT stored in a changless state.  This is NOT eDiscovery and eDiscovery standards are not available or enforced in this feature.
+
+500MB limit local storage when the device is offline.
+
+No limit on bandwidth usage.
+
+Doesn't impact the data used limit that's configured for endpoints for advanced classification
+
+before you begin
+
+understand Azure storage accounts
+
+Blob storage is probably the most economical and best fit
+
+Customer must create and administer their own Azure storage.
+
+create custom role groups for endpoint incident administrators and for all users whose devices will be targeted by DLP policies that copy matched items to Azure storage.
+
+
+Cover how they DLP incident investigators can access the blob storage and view what is in there.
+
+Considering GDPR and California Consumer Privacy Act, how do admins handle files in the Storage Account when they receive a Data Subject Request to delete or remove those files?
+<AK> Since the governance of the customer owned storage is with them, we cannot be prescriptive. Nonetheless all files have a timestamp, admins can correlate the timestamp with alert (related to DSR). Going forward when we have in-product evidence preview. It will be smooth for them to track the evidence and respond to DSRs like this.
+
+One or multiple storage accounts? create one for each geopolicical region that this feature will be enabled for
+
+COPIED OVER FROM SOURCE DOCS
+
+on Windows endpoint. The original file is uploaded (asynchronously) to a
+customer defined Azure blob storage
+
+2. Prerequisites
+Please refer to Endpoint DLP SKU/subscriptions licensing to confirm you are eligible for endpoint DLP. You do not
+need any additional licenses over what is needed for endpoint DLP. Refer to Permissions required for endpoint
+DLP administration to allocate the right roles for your endpoint DLP administrators.
+The endpoint devices need to meet the following criteria to be eligible for this:
+• Minimum Windows version: Windows Insider (OS build: 25287 or above) (Instructions here)
+Kindly note that as part of the Private Preview, this feature is supported only on devices that are running
+Windows 11.
+• Dev Channel enabled in your insider settings.
+You will need to have an active Azure storage subscription to create an Azure blob storage.
+Download the following build and update the endpoint UpdatePlatform.exe
 
 ## Before you begin
 

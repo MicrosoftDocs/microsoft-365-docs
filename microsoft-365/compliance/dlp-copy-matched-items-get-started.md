@@ -21,6 +21,38 @@ description: "Learn how to configure data loss prevention to collect items that 
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+licensing and prereqs
+How to create custom role groups
+How to apply permission (investigator and user) to the blob
+How to configure DLP to copy matched items to Azure storage
+How to access the content in the Azure blog/Where does it show up in Purview
+How to access and manage the content directly in the Azure blob
+
+
+the role group that DLP incident investigators must have these permissions on the Azure blob
+
+• Actions: • Microsoft.Storage/storageAccounts/blobServices -> Read: List Blob Services
+• Microsoft.Storage/storageAccounts/blobServices -> Read: Get blob service properties or statistics
+• Microsoft.Storage/storageAccounts/blobServices/containers -> Read: Get blob container
+• Microsoft.Storage/storageAccounts/blobServices/containers -> Read: List of blob containers
+• Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Read: Read Blob
+
+• Data Actions:
+Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Read: Read Blob
+
+
+
+the role group that users are assigned to must have these permission on the Azure blob
+Actions: • Microsoft.Storage/storageAccounts/blobServices -> Read : List Blob Services
+• Microsoft.Storage/storageAccounts/blobServices/containers -> Read : Get blob container
+• Microsoft.Storage/storageAccounts/blobServices/containers -> Write : Put blob container
+
+• Data Actions: • Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Read : Read Blob
+• Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Write : Write Blob
+• Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Other : Add blob content
+
+
+
 ## Before you begin
 
 If you're new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
