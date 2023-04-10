@@ -356,15 +356,19 @@ You can use [Intune](/mem/intune/fundamentals/what-is-intune) or other methods, 
 
 2. Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
 
-3. Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend setting cloud-delivered protection to **Not configured**, which provides strong protection while reducing the chances of getting false positives.
+3. Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend turning cloud-delivered protection on, and configuring sample submission settings.
 
 4. Choose **Review + save**, and then **Save**.
 
 #### Use Intune to set cloud-delivered protection settings (for a new policy)
 
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create policy**.
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus**.
 
-2. For **Platform**, select an option, and then for **Profile**, select **Antivirus** or **Microsoft Defender Antivirus** (the specific option depends on what you selected for **Platform**.) Then choose **Create**.
+2. Select an existing policy, or create a new policy. 
+
+   - For **Platform**, select an option, such as **Windows 10, Windows 11, and Windows Server**.
+   - For **Profile**, select **Antivirus** or **Microsoft Defender Antivirus** (the specific option depends on what you selected for **Platform**.) 
+   - Then choose **Create**.
 
 3. On the **Basics** tab, specify a name and description for the policy. Then choose **Next**.
 
