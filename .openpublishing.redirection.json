@@ -10764,6 +10764,18 @@
     "source_path": "microsoft-365/security/defender-endpoint/faqs-tamper-protection.md",
     "redirect_url": "/microsoft-365/security/defender-endpoint/faqs-on-tamper-protection",
     "redirect_document_id": true
-  }
+  },
+   {
+     "source_path": "microsoft-365/solutions/test-lab-guides-overview-solutions.md",
+      "redirect_url": "/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
+      "redirect_document_id": true
+        },
+    {
+      "source_path": "microsoft-365/solutions/team-security-isolation-dev-test.md",
+       "redirect_url": "/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
+       "redirect_document_id": true
+        }  
+	   
  ]
 }
+
