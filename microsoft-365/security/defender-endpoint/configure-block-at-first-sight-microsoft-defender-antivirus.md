@@ -142,11 +142,7 @@ You might choose to disable block at first sight if you want to retain the prere
 
 4. Next to **Configuration settings**, choose **Edit**.
 
-5. Change one or more of the following settings:
-
-   - Set **Turn on cloud-delivered protection** to **No** or **Not configured**.
-   - Set **Cloud-delivered protection level** to **Not configured**.
-   - Clear the check box for **Microsoft Defender Antivirus Extended Timeout In Seconds**.
+5. Set **Allow cloud protection** to **Not allowed. Turns off Cloud Protection**. 
 
 6. Review and save your settings.
 
@@ -186,18 +182,9 @@ If you have a personal device that is not managed by an organization, you might 
      > [!CAUTION]
      > Turning off block at first sight lowers the level of protection for your device. We do not recommend permanently disabling block at first sight.
 
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
-
 ## See also
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [Stay protected with Windows Security](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)
+- [Onboard non-Windows devices](configure-endpoints-non-windows.md)
