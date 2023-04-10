@@ -4,16 +4,13 @@ description: Configure and test your connection to the Microsoft Defender Antivi
 keywords: antivirus, Microsoft Defender Antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 manager: dansimp
 ms.author: deniseb
 ms.topic: conceptual
 ms.custom: nextgen
-ms.date: 12/28/2022
+ms.date: 04/10/2023
 ms.reviewer: mkaminska; pahuijbr
 ms.collection: 
 - m365-security
