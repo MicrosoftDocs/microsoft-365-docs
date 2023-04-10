@@ -1592,8 +1592,8 @@
     },
     {
       "source_path": "microsoft-365/business/prepare-for-office-client-deployment.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment",
-      "redirect_document_id": false
+      "redirect_url": "/microsoft-365/admin/setup/upgrade-users-to-latest-office-client",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/help-users-connect-to-microsoft-365-business.md",
@@ -8352,7 +8352,7 @@
     },
     {
       "source_path": "microsoft-365/admin/misc/prepare-for-office-client-deployment.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment",
+      "redirect_url": "/microsoft-365/admin/setup/upgrade-users-to-latest-office-client",
       "redirect_document_id": false
     },
     {
@@ -10741,6 +10741,26 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "microsoft-365/compliance/archiving-third-party-data.md",
+    "redirect_url": "/microsoft-365/compliance/archive-third-party-data.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/deploy-facebook-connector.md",
+    "redirect_url": "/microsoft-365/compliance/archive-facebook-data.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/deploy-twitter-connector.md",
+    "redirect_url": "/microsoft-365/compliance/archive-twitter-data.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/work-with-partner-to-archive-third-party-data.md",
+    "redirect_url": "/microsoft-365/compliance/archive-partner-third-party-data.md",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "microsoft-365/admin/security-and-compliance/secure-your-business-data.md",
     "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
     "redirect_document_id": false
@@ -10764,6 +10784,11 @@
     "source_path": "microsoft-365/security/defender-endpoint/faqs-tamper-protection.md",
     "redirect_url": "/microsoft-365/security/defender-endpoint/faqs-on-tamper-protection",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment.md",
+    "redirect_url": "/microsoft-365/admin/setup/upgrade-users-to-latest-office-client",
+    "redirect_document_id": false
   }
  ]
 }

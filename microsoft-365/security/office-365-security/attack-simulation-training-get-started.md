@@ -82,15 +82,115 @@ In Attack simulation training, multiple types of social engineering techniques a
 
 - **Link to Malware**: An attacker sends the recipient a message that contains a link to an attachment on a well-known file sharing site (for example, SharePoint Online or Dropbox). When the recipient clicks on the URL, the attachment opens and arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
 
-- **Drive-by-url**: An attacker sends the recipient a messages that contains a URL. When the recipient clicks on the URL, they're taken to a website that tries to run background code. This background code attempts to gather information about the recipient or deploy arbitrary code on their device. Typically, the destination website is a well-known website that has been compromised or a clone of a well-known website. Familiarity with the website helps convince the user that the link is safe to click. This technique is also known as a *watering hole attack*.
+- **Drive-by-url**: An attacker sends the recipient a message that contains a URL. When the recipient clicks on the URL, they're taken to a website that tries to run background code. This background code attempts to gather information about the recipient or deploy arbitrary code on their device. Typically, the destination website is a well-known website that has been compromised or a clone of a well-known website. Familiarity with the website helps convince the user that the link is safe to click. This technique is also known as a *watering hole attack*.
 
 - **OAuth Consent Grant**: An attacker creates a malicious Azure Application that seeks to gain access to data. The application sends an email request that contains a URL. When the recipient clicks on the URL, the consent grant mechanism of the application asks for access to the data (for example, the user's Inbox).
 
 The URLs that are used by Attack simulation training are described in the following list:
 
+- <https://www.bankmenia.com>
+- <https://www.bankmenia.de>
+- <https://www.bankmenia.fr>
+- <https://www.bankmenia.it>
+- <https://www.bankmenia.org>
+- <https://www.banknown.de>
+- <https://www.banknown.fr>
+- <https://www.banknown.it>
+- <https://www.banknown.org>
+- <https://www.browsersch.com>
+- <https://www.browsersch.de>
+- <https://www.browsersch.fr>
+- <https://www.browsersch.it>
+- <https://www.browsersch.org>
+- <https://www.doctorican.de>
+- <https://www.doctorican.fr>
+- <https://www.doctorican.it>
+- <https://www.doctorican.org>
+- <https://www.doctrical.com>
+- <https://www.doctrical.de>
+- <https://www.doctrical.fr>
+- <https://www.doctrical.it>
+- <https://www.doctrical.org>
+- <https://www.doctrings.com>
+- <https://www.doctrings.de>
+- <https://www.doctrings.fr>
+- <https://www.doctrings.it>
+- <https://www.doctrings.org>
+- <https://www.exportants.com>
+- <https://www.exportants.de>
+- <https://www.exportants.fr>
+- <https://www.exportants.it>
+- <https://www.exportants.org>
+- <https://www.financerta.com>
+- <https://www.financerta.de>
+- <https://www.financerta.fr>
+- <https://www.financerta.it>
+- <https://www.financerta.org>
+- <https://www.financerts.com>
+- <https://www.financerts.de>
+- <https://www.financerts.fr>
+- <https://www.financerts.it>
+- <https://www.financerts.org>
+- <https://www.passwordle.de>
+- <https://www.passwordle.fr>
+- <https://www.passwordle.it>
+- <https://www.passwordle.org>
+- <https://www.prizeably.com>
+- <https://www.prizeably.de>
+- <https://www.prizeably.fr>
+- <https://www.prizeably.it>
+- <https://www.prizeably.org>
+- <https://www.resetts.de>
+- <https://www.resetts.fr>
+- <https://www.resetts.it>
+- <https://www.resetts.org>
+- <https://www.securembly.com>
+- <https://www.securembly.de>
+- <https://www.securembly.fr>
+- <https://www.securembly.it>
+- <https://www.securembly.org>
+- <https://www.securetta.de>
+- <https://www.securetta.fr>
+- <https://www.securetta.it>
+- <https://www.supportin.de>
+- <https://www.supportin.fr>
+- <https://www.supportin.it>
+- <https://www.supportres.com>
+- <https://www.supportres.de>
+- <https://www.supportres.fr>
+- <https://www.supportres.it>
+- <https://www.supportres.org>
+- <https://www.techidal.com>
+- <https://www.techidal.de>
+- <https://www.techidal.fr>
+- <https://www.techidal.it>
+- <https://www.techidal.org>
+- <https://www.techniel.de>
+- <https://www.techniel.fr>
+- <https://www.techniel.it>
+- <https://www.techniel.org>
+- <https://www.bankmenia.es>
+- <https://www.banknown.es>
+- <https://www.browsersch.es>
+- <https://www.doctorican.es>
+- <https://www.doctrical.es>
+- <https://www.doctrings.es>
+- <https://www.exportants.es>
+- <https://www.financerta.es>
+- <https://www.financerts.es>
+- <https://www.passwordle.es>
+- <https://www.prizeably.es>
+- <https://www.resetts.es>
+- <https://www.securembly.es>
+- <https://www.securetta.es>
+- <https://www.supportin.es>
+- <https://www.supportres.es>
+- <https://www.techidal.es>
+- <https://www.techniel.es>
+- <https://www.msteamsexternalone.com>
+- <https://www.msteamsexternaltwo.com>
+- <https://www.attacksimulationtraining.com>
 - <https://www.mcsharepoint.com>
-- <https://www.attemplate.com>
-- <https://www.doctricant.com>
 - <https://www.mesharepoint.com>
 - <https://www.officence.com>
 - <https://www.officenced.com>
@@ -112,6 +212,23 @@ The URLs that are used by Attack simulation training are described in the follow
 - <https://www.templatent.com>
 - <https://www.templatern.com>
 - <https://www.windocyte.com>
+- <https://www.attemplate.com>
+- <https://www.doctricant.com>
+- <https://www.salarytoolint.com>
+- <https://www.prizesforall.com>
+- <https://www.payrolltooling.com>
+- <https://www.hrsupportint.com>
+- <https://www.docstoreinternal.com>
+- <https://www.docdeliveryapp.com>
+- <https://www.docstoreinternal.net>
+- <https://www.hardwarecheck.net>
+- <https://www.payrolltooling.net>
+- <https://www.prizegiveaway.net>
+- <https://www.salarytoolint.net>
+- <https://www.docdeliveryapp.net>
+- <https://www.securescoreteam.com>
+- <https://www.securescoreteam.net>
+
 
 > [!NOTE]
 > Check the availability of the simulated phishing URL in your supported web browsers before you use the URL in a phishing campaign. While we work with many URL reputation vendors to always allow these simulation URLs, we don't always have full coverage (for example, Google Safe Browsing). Most vendors provide guidance that allows you to always allow specific URLs (for example, <https://support.google.com/chrome/a/answer/7532419>).
@@ -130,7 +247,7 @@ For step by step instructions on how to gain insights with reporting, see [Gain 
 
 ### Predicted compromise rate
 
-One of the most crucial elements in a phishing simulation is the payload selection. If you're tracking only click-through as a quality metric, there's an incentive to decrease the click rate by selecting easier-to-spot phishing payloads. Eventually, it's less likely that the user will change their behavior when a real phishing messages comes along.
+One of the most crucial elements in a phishing simulation is the payload selection. If you're tracking only click-through as a quality metric, there's an incentive to decrease the click rate by selecting easier-to-spot phishing payloads. Eventually, it's less likely that the user will change their behavior when a real phishing message comes along.
 
 To combat the tendency to use low click rate payloads and to maximize educational returns, we've created a new piece of metadata for every global payload called the predicted compromise rate (PCR).
 
