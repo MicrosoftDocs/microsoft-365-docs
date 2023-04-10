@@ -4,9 +4,6 @@ description: Move to Microsoft Defender for Endpoint. Onboard devices and then u
 keywords: migration, Microsoft Defender for Endpoint, edr
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
@@ -21,7 +18,7 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 01/17/2023
+ms.date: 04/10/2023
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
 ---
