@@ -29,7 +29,7 @@ After you have [started a trial or purchased Microsoft 365 Business Premium](get
 
 ##  [**Guided setup process**](#tab/Guided)
 
-Microsoft 365 Business Premium includes a guided process, as shown in the following video: 
+Microsoft 365 Business Premium includes a guided process, as shown in the following video, and described step by step: 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
