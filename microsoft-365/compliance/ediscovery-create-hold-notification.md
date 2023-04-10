@@ -115,7 +115,7 @@ Optionally, you can simplify the workflow for following up with unresponsive cus
 
 ### Reminders
 
-After you have sent a hold notification, you can follow up with unresponsive custodians by defining a reminder workflow.
+After you've sent a hold notification, you can follow up with unresponsive custodians by defining a reminder workflow.
 
 To schedule reminders:
 
