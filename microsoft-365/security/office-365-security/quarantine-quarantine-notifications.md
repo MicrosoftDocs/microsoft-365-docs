@@ -21,7 +21,7 @@ ms.custom:
 description: Admins can learn about end-user spam notifications for quarantined messages in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 3/3/2023
+ms.date: 4/7/2023
 ---
 
 # Use quarantine notifications to release and report quarantined messages
@@ -35,21 +35,21 @@ ms.date: 3/3/2023
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantined messages in EOP](quarantine-about.md).
 
-_Quarantine policies_ define what users are allowed to do or not do to quarantined messages based on why the message was quarantined for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Default quarantine policies enforce the historical capabilities for the security feature that quarantined the message as described in the table [here](quarantine-end-user.md). Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).
+_Quarantine policies_ define what users are allowed to do or not do to quarantined messages based on why the message was quarantined for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Default quarantine policies enforce the historical capabilities for the security feature that quarantined the message as described in the table [here](quarantine-end-user.md). Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Create quarantine policies](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
 Quarantine notifications are not turned on in the built-in quarantine notifications named AdminOnlyAccessPolicy or DefaultFullAccessPolicy. Quarantine notifications are turned on in the following built-in quarantine policies:
 
-- **NotificationEnabledPolicy** [if your organization has it](quarantine-policies.md#full-access-permissions-and-quarantine-notifications).
 - **DefaultFullAccessWithNotificationPolicy** that's used in [preset security policies](preset-security-policies.md).
+- **NotificationEnabledPolicy** [if your organization has it](quarantine-policies.md#full-access-permissions-and-quarantine-notifications).
 
 Otherwise, to turn on quarantine notifications in quarantine policies, you need to [create and configure a new quarantine policy](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
-Admins can also use the global settings in quarantine policies to customize the sender's display name, disclaimer text in different languages, and the company logo that's used in quarantine notifications. For instructions, see [Configure global quarantine notification settings](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
+Admins can also use the global settings in quarantine policies to create quarantine notifications in different languages and to customize the sender's email address and the company logo that's used in quarantine notifications. For instructions, see [Configure global quarantine notification settings](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
 
 For shared mailboxes, quarantine notifications are supported only for users who are granted FullAccess permission to the mailbox. For more information, see [Use the EAC to edit shared mailbox delegation](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
 
 > [!NOTE]
-> By default, messages that are quarantined as high confidence phishing, malware, by mail flow rules (also known as transport rules), or Safe Attachments policies in Defender for Office 365 are only available to admins (by default, the AdminOnlyAccessPolicy quarantine policy is used). For more information, see [Manage quarantined messages and files as an admin in EOP](quarantine-admin-manage-messages-files.md).
+> By default, messages that are quarantined as high confidence phishing by anti-spam policies, malware by anti-malware policies or Safe Attachments, or by mail flow rules (also known as transport rules) are available only to admins. For more information, see the table at [Find and release quarantined messages as a user in EOP](quarantine-end-user.md).
 >
 > Quarantine notifications for messages sent to distribution groups or mail-enabled security groups are sent to all group members.
 >
