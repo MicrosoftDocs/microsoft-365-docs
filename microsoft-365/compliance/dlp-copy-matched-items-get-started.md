@@ -1,5 +1,5 @@
 ---
-title: "Learn about data loss prevention"
+title: "Get started with collecting files that match data loss prevention policies from devices"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -12,16 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- highpri
 - purview-compliance
 search.appverid:
 - MET150
-description: "Learn how to configure data loss prevention to collect files that match policies from devices to an Azure storage account."
+description: "Learn how to configure data loss prevention to collect items that match policies from devices to an Azure storage account."
 ---
-
 # Get started with collecting files that match data loss prevention policies from devices
-
-
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
