@@ -38,11 +38,11 @@ This article describes an antivirus/antimalware feature known as "block at first
 
 ## What is "block at first sight"?
 
-Block at first sight is a threat protection feature of next-generation protection that detects new malware and blocks it within seconds. Block at first sight is enabled when certain security settings are enabled. These settings include:
+Block at first sight is a threat protection feature of next-generation protection that detects new malware and blocks it within seconds. Block at first sight is enabled when certain security settings are enabled: 
 
 - [Cloud protection](cloud-protection-microsoft-defender-antivirus.md) is turned on;
 - [Sample submission](cloud-protection-microsoft-antivirus-sample-submission.md) has a specified sample submission timeout (such as 50 seconds); and
-- A file-blocking level of high.
+- [Microsoft Defender Antivirus is up to date](microsoft-defender-antivirus-updates.md) on devices.
 
 In most enterprise organizations, the settings needed to enable block at first sight are configured with Microsoft Defender Antivirus deployments.
 
@@ -61,7 +61,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
 - Block at first sight can block non-portable executable files (such as JS, VBS, or macros) and executable files, running the [latest Defender antimalware platform](microsoft-defender-antivirus-updates.md) on Windows or Windows Server.
 
-- Block at first sight only uses the cloud protection backend for executable files and non-portable executable files that are downloaded from the Internet, or that originate from the Internet zone. A hash value of the .exe file is checked via the cloud backend to determine if the file is a previously undetected file.
+- Block at first sight only uses the cloud protection backend for executable files and non-portable executable files that are downloaded from the Internet, or that originate from the Internet zone. A hash value of the `.exe` file is checked via the cloud backend to determine if the file is a previously undetected file.
 
 - If the cloud backend is unable to make a determination, Microsoft Defender Antivirus locks the file and uploads a copy to the cloud. The cloud performs more analysis to reach a determination before it either allows the file to run or blocks it in all future encounters, depending on whether it determines the file to be malicious or not a threat.
 
@@ -99,6 +99,8 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 1. In the Microsoft Intune admin center (<https://endpoint.microsoft.com>), go to **Endpoint security** \> **Antivirus**.
 
 2. Select an existing policy, or create a new policy using the **Microsoft Defender Antivirus** profile type.
+
+   :::image type="content" source="media/intune-mdav-policy.png" alt-text="Screenshot of new MDAV policy creation in Intune." lightbox="media/intune-mdav-policy.png":::
 
 3. Set or confirm the following configuration settings:
 
