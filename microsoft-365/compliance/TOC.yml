@@ -63,7 +63,7 @@
 - name: Configure connectors to import third-party data
   items: 
    - name: Learn about connectors for third-party data
-     href: archiving-third-party-data.md
+     href: archive-third-party-data.md
    - name: Microsoft data connectors
      items:  
        - name: Bloomberg Message
@@ -213,7 +213,7 @@
        - name: CellTrust SL2 
          href: archive-data-from-celltrustsl2.md
    - name: Work with a partner to archive third-party data
-     href: work-with-partner-to-archive-third-party-data.md
+     href: archive-partner-third-party-data.md
    - name: Search for third-party data
      href: use-content-search-to-search-third-party-data-that-was-imported.md
    - name: View admin logs for data connectors
@@ -1392,8 +1392,10 @@
         - name: Overview of Content search
           href: search-for-content.md
         - name: Search for content
-          href: ediscovery-content-search.md
+          href: ediscovery-content-search.md          
           items: 
+          - name: Search for content in Teams
+            href: ediscovery-teams-content-search.md 
           - name: Keyword queries and search conditions
             href: ediscovery-keyword-queries-and-search-conditions.md
           - name: Use the KQL editor to build search queries
@@ -1460,6 +1462,8 @@
           href: ediscovery-standard-get-started.md
         - name: Create eDiscovery holds
           href: ediscovery-create-holds.md
+        - name: Create a hold for Teams users
+          href: ediscovery-teams-legal-hold.md
         - name: Search for content in a case
           href: ediscovery-search-for-content.md
         - name: Export content from a case
@@ -1518,14 +1522,18 @@
           href: ediscovery-overview.md
         - name: Set up eDiscovery (Premium)
           href: ediscovery-premium-get-started.md
+        - name: eDiscovery (Premium) with Microsoft Teams
+          items:
+            - name: eDiscovery workflow for Teams content
+              href: ediscovery-teams-workflow.md
+            - name: Conduct an investigation for Teams content
+              href: ediscovery-teams-investigation.md
         - name: Create eDiscovery (Premium) cases
           items:
             - name: Create and manage a case
               href: ediscovery-create-and-manage-cases.md
             - name: Use the new case format
               href: ediscovery-new-case-format.md
-        - name: eDiscovery (Premium) workflow for Teams content
-          href: ediscovery-teams-workflow.md
         - name: Manage custodians and non-custodial data sources
           href: ediscovery-managing-custodians.md
           items: 
@@ -1733,6 +1741,8 @@
           href: audit-log-retention-policies.md
         - name: Use Audit (Premium) to investigate compromised accounts
           href: audit-log-investigate-accounts.md
+        - name: Search the audit log for events in Teams
+          href: audit-teams-audit-log-events.md
     - name: Office 365 Management Activity API resources
       items:
         - name: Office 365 Management Activity API reference

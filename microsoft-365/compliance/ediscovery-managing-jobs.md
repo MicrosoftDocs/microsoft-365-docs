@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/31/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -32,7 +32,7 @@ Here's a list of the jobs (which are typically long-running processes) that are 
 |Adding remediated data to a review set|Data with processing errors is remediated and loaded back into a review set. For more information, see: <ul><li>[Error remediation when processing data](ediscovery-error-remediation-when-processing-data.md)</li><li>[Single item error remediation](ediscovery-single-item-error-remediation.md)</li></ul>|
 |Comparing load sets|A user looks at the differences between different load sets in a review set. A load set is an instance of adding data to a review set. For example, if you add the results of two different searches to the same review set, each would represent a load set.|
 |Conversation reconstruction|When a user adds the results of a search to a conversation review set, instant message conversations (also called *threaded conversations*) in services like Microsoft Teams are reconstructed in a PDF file. This job is also triggered when a user selects **Action > Create conversation PDFs** in a review set. For more information, see [Review conversations in eDiscovery (Premium)](ediscovery-conversation-review-sets.md).
-|Converting redacted documents to PDF|After a user annotates a document in a review set and redacts a portion of it, they can choose to convert the redacted document to a PDF file. This ensures that the redacted portion will not be visible if the document is exported for presentation. For more information, see [View documents in a review set](ediscovery-view-documents-in-review-set.md).|
+|Converting redacted documents to PDF|After a user annotates a document in a review set and redacts a portion of it, they can choose to convert the redacted document to a PDF file. This ensures that the redacted portion won't be visible if the document is exported for presentation. For more information, see [View documents in a review set](ediscovery-view-documents-in-review-set.md).|
 |Estimating search results|After a user creates and runs or reruns a collection estimate, the search tool searches the index for items that match the search query and prepares an estimate that includes the number and total size of all items by the search, and the number of data sources searched.  For more information, see [Collect data for a case](collecting-data-for-ediscovery.md).|
 |Preparing data for export|A user exports documents from a review set. When the export process is complete, they can download the exported data to a local computer. For more information, see [Export case data](ediscovery-exporting-data.md).|
 |Preparing for error resolution|When a user selects a file and creates a new error remediation in the Error view on the **Processing** tab of a case, the first step in the process is to upload the file that has the processing error to an Azure Storage location in the Microsoft cloud. This job tracks the progress of the upload process. For more information about the error remediation workflow, see [Error remediation when processing data](ediscovery-error-remediation-when-processing-data.md).|
@@ -55,3 +55,7 @@ The following table describes the different status states for jobs.
 |Successful|The job was successfully completed. The date and time that the job completed is displayed in the **Completed** column on the **Jobs** tab.|
 |Partially successful|The job was successful. This status is typically returned when the job didn't find any partially indexed data (also called *unindexed data*) in some of the custodian data sources.|
 |Failed|The job failed.  You should attempt to rerun the action that triggered the job. If the job fails a second time, we recommend that you contact Microsoft Support and provide the support information from the job.|
+
+## Job data retention
+
+Data retention for log information for all jobs is retained for up to 29 days by default.
