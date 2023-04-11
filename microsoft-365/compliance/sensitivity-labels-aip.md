@@ -193,7 +193,7 @@ The following configurations from the AIP add-in that aren't yet supported by bu
     - This option is currently rolling out in preview. For more information, see [Configure label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments).
 
 - [Oversharing popup messages for Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
-    - The equivalent of this configuration is now rolling out in preview. For more information, see the [migration playbook to configure oversharing popups](https://microsoft.github.io/ComplianceCxE/playbooks/AIP2MIP/Features/Collaboration/OversharingPopups/).
+    - The equivalent of this configuration is now available in preview as a DLP policy configuration. For more information, see [Scenario 2 Show policy tip as oversharing popup (preview)](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview).
 
 - [Remove external content markings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution)
 
