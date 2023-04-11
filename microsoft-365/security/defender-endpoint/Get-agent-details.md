@@ -74,20 +74,14 @@ GET /api/DeviceAuthenticatedScanAgents
 Name|Type|Description
 :---|:---|:---
 Authorization|String|Bearer {token}. **Required**.
-Content-Type|string|application/json. **Required**.
 
 ## Request body
 
-In the request body, supply a JSON object with the following parameters:
-
-Parameter|Type|Description
-:---|:---|:---
-AgentId |String|The agent Id. **Required**.
+Empty
 
 ## Response
 
 If successful, this method returns 200 - OK response code with the details of the specified agent.
-
 
 ## Example request
 
