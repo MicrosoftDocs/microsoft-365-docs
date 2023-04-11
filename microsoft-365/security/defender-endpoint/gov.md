@@ -24,6 +24,8 @@ ms.subservice: mde
 # Microsoft Defender for Endpoint for US Government customers
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -167,7 +169,8 @@ These are the known gaps:
 |---|:---:|:---:|:---:|
 |Microsoft Secure Score|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
 |Microsoft Threat Experts|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
-
+| Microsoft Defender for Endpoint Security Configuration Management|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
+   
 **Footnote**
 
    <sup>1</sup> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.

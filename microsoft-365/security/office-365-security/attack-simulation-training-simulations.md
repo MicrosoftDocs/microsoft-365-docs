@@ -14,7 +14,7 @@ ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 4/3/2023
+ms.date: 4/4/2023
 ---
 
 # Simulate a phishing attack with Attack simulation training
@@ -24,7 +24,7 @@ ms.date: 4/3/2023
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, simulations allow you run benign cyberattack simulations in your organization. These simulations test your security policies and practices, as well as train your employees to increase their awareness and decrease their susceptibility to attacks. This article walks you through creating a simulated phishing attack using Attack simulation training.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, simulations are benign cyberattacks that you run in your organization. These simulations test your security policies and practices, as well as train your employees to increase their awareness and decrease their susceptibility to attacks. This article walks you through creating a simulated phishing attack using Attack simulation training.
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
@@ -46,9 +46,9 @@ To launch a simulated phishing attack, do the following steps:
 On the **Select technique** page, select an available social engineering technique, which was curated from the [MITRE ATT&CK® framework](https://attack.mitre.org/techniques/enterprise/). Different payloads are available for different techniques. The following social engineering techniques are available:
 
 - **Credential Harvest**: Attempts to collect credentials by taking users to a well-known looking website with input boxes to submit a username and password.
-- **Malware Attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
+- **Malware Attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that helps the attacker compromise the target's device.
 - **Link in Attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
-- **Link to Malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file will help the attacker compromise the target's device.
+- **Link to Malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user contains a link to this malicious file. Opening the file helps the attacker compromise the target's device.
 - **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
 - **OAuth Consent Grant**: The malicious URL asks users to grant permissions to data for a malicious Azure Application.
 
@@ -189,7 +189,7 @@ When you're finished on  the **Configure OAuth payload** page, click **Next**.
 
 ## Target users
 
-On the **Target users** page, select who will receive the simulation. Use the following options to select users:
+On the **Target users** page, select who receives the simulation. Use the following options to select users:
 
 - **Include all users in your organization**: The unmodifiable list of users is show in groups of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** icon on the page to find specific users.
 
@@ -209,7 +209,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       > [!NOTE]
       > Clicking the **Add filters** button clears and replaces any results the **User list** section with the **Filter users by categories**.
 
-      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the circle next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
       Click the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
 
@@ -256,7 +256,7 @@ On the **Target users** page, select who will receive the simulation. Use the fo
       - **Filters** section: Show how many filter values you used and the names of the filter values. If it's available, click the **See all** link to see all filter values
       - **User list** section: Shows the users or groups that match your category searches. The number of results appears in the **Selected (0/x) users** label.
 
-      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the circle next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
       Click the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
 
@@ -455,7 +455,7 @@ The **Training assignment notification** page shows the following notifications 
 - **Microsoft default training only campaign-training assignment notification**
 - Any custom training assignment notifications that you previously created.
 
-These notifications are also available at **Attack simulation training** \> **Content library tab** \> **End user notifications**:
+These notifications are also available at **Attack simulation training** \> **Content library** tab \> **End user notifications**:
 
 - Built-in training assignment notifications are available on the **Global notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=global>.
 - Custom training assignment notifications are available on the **Tenant notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>.
@@ -494,7 +494,7 @@ The **Training reminder notification** page shows the following notifications an
 - **Microsoft default training only campaign-training reminder notification**
 - Any custom training reminder notifications that you previously created.
 
-These notifications are also available at **Attack simulation training** \> **Content library tab** \> **End user notifications**:
+These notifications are also available at **Attack simulation training** \> **Content library** tab \> **End user notifications**:
 
 - Built-in training reminder notifications are available on the **Global notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=global>.
 - Custom training reminder notifications are available on the **Tenant notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>.
@@ -540,7 +540,7 @@ You have the following options for positive reinforcement notifications:
   - **Microsoft default positive reinforcement notification**
   - Any custom positive reinforcement notifications that you previously created.
 
-  These notifications are also available at **Attack simulation training** \> **Content library tab** \> **End user notifications**:
+  These notifications are also available at **Attack simulation training** \> **Content library** tab \> **End user notifications**:
 
   - Built-in positive reinforcement notifications are available on the **Global notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=global>.
   - Custom positive reinforcement notifications are available on the **Tenant notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>.
@@ -603,7 +603,7 @@ On the **Simulation has been scheduled for launch** page, you can use the links 
 
 When you're finished on the **Simulation has been scheduled for launch**, click **Done**.
 
-Back on the **Simulations** tab, the payload automation that you created is now listed. Dhe **Status** value depends on your previous selection in the [Configure the simulation launch details](#configure-the-simulation-launch-details) step:
+Back on the **Simulations** tab, the simulation that you created is now listed. The **Status** value depends on your previous selection in the [Configure the simulation launch details](#configure-the-simulation-launch-details) step:
 
 - **In progress** if you selected **Launch this simulation as soon as I'm done**.
 - **Scheduled** if you selected **Schedule this simulation to be launched later**.
@@ -628,13 +628,13 @@ By default, the following information is shown for each simulation<sup>\*</sup>:
   - **In progress**
   - **Completed**
   - **Failed**
-  - **Cancelled**
+  - **Canceled**
   - **Excluded**
 - **⋮** (**Actions** control): Take action on the simulation. The available actions depend on the **Status** value of the simulation as described in the procedure sections. This control always appears at the end of the row.
 
 Click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, all available columns are selected.
 
-<sup>\*</sup> To see all columns, you'll likely need to do one or more of the following steps:
+<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
 
 - Horizontally scroll in your web browser.
 - Narrow the width of appropriate columns.
@@ -724,8 +724,10 @@ The rest of the details page contains the following tabs:
 
 ## Take action on simulations
 
+All actions on existing simulations start on the **Simulations** tab. To get there, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulations** tab. Or, to go directly to the **Simulations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
+
 > [!TIP]
-> To see the **⋮** (**Actions**) control that's required to act on simulations on the **Simulations** tab, you'll likely need to do one or more of the following steps:
+> To see the **⋮** (**Actions**) control that's required to act on simulations on the **Simulations** tab, you likely need to do one or more of the following steps:
 >
 > - Horizontally scroll in your web browser.
 > - Narrow the width of appropriate columns.
@@ -738,7 +740,7 @@ You can cancel simulations with the **Status** value **In progress** or **Schedu
 
 To cancel a simulation on the **Simulations** tab, select the simulation by clicking **⋮** (**Actions**) at the end of the row, select ![Cancel simulation icon.](../../media/m365-cc-sc-close-icon.png) **Cancel simulation**, and then click **Confirm** in the confirmation dialog.
 
-After you cancel the simulation, the **Status** value changes to **Cancelled**.
+After you cancel the simulation, the **Status** value changes to **Canceled**.
 
 ### Remove simulations
 
