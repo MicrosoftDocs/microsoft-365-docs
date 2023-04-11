@@ -66,7 +66,7 @@ Delegated (work or school account)|Machine.Read.All|Read all scan information.
 ## HTTP request
 
 ```http
-POST GET /api/DeviceAuthenticatedScanAgents
+GET /api/DeviceAuthenticatedScanAgents
 ```
 
 ## Request headers

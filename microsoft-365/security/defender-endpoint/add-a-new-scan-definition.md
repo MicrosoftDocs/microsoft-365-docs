@@ -146,7 +146,7 @@ Here's an example of the response.
         "assignedApplicationId": "ae4a5cde-b4a1-4b76-8635-458b2cf15752",
         "scannerSoftwareVersion": "7.6.0.0",
         "lastCommandExecutionTimestamp": "2023-01-04T09:33:16Z",
-        "mdeClientVersion": null
+        "mdeClientVersion": "10.8295.22621.1010"
     },
     "latestScan": {
         "status": null,
@@ -222,7 +222,7 @@ Here's an example of the response.
         "assignedApplicationId": "ae4a5cde-b4a1-4b76-8635-458b2cf15752",
         "scannerSoftwareVersion": "7.6.0.0",
         "lastCommandExecutionTimestamp": "2023-01-04T09:33:16Z",
-        "mdeClientVersion": null
+        "mdeClientVersion": "10.8295.22621.1010"
     },
     "latestScan": {
         "status": null,
