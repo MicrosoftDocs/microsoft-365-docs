@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/27/2023
+ms.date: 04/11/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -39,6 +39,15 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## April 2023
+
+### Sensitivity labels
+
+- **General availability (GA)**: [Default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md)
+- **General availability (GA)**: Outlook for Mac [displays label colors](sensitivity-labels-office-apps.md#label-colors)
+- **Change of version for AIP add-in disabled by default**: For the Monthly Enterprise Channel only, the AIP add-in for Office apps is disabled by default in version 2303. For the Current Channel and Semi-Annual Enterprise Channel, the AIP add-in is still disabled by default in version 2302.
+- **Retirement notification for the AIP add-in for Office apps**: The AIP add-in will [retire April 2024](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908). Although the add-in remains in maintenance mode until then, if you haven't already done so, we encourage you to [migrate to the labels built into Office](sensitivity-labels-aip.md).
+
 ## March 2023
 
 ### Audit
@@ -58,10 +67,27 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Data lifecycle management and records management
 
+- **General availability (GA)**: Rolling out in general availability, [Microsoft Graph Records Management APIs](/graph/api/resources/security-recordsmanagement-overview) to support the management of retention labels and event-based retention.
+- **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview are now gradually rolling out support for URL text links.
+- **Improvements for Teams retention policies**: Now rolling out, support for existing call data records as well as newly created call data records, and support for the control message events that name and rename a chat.
 - **Improvements that support Power Automate flows**: Now rolling out to support the scenario of [customizing what happens at the end of the retention period](retention-label-flow.md), the existing Power Automate compliance actions have been renamed to more accurately describe their purpose. **Apply label on the item** is renamed **Relabel an item at the end of retention**, and **Deletes the item** is renamed **Deletes an item at the end of retention**. Additionally:
     - New compliance action to [improve the resilience of your flow](retention-label-flow.md#add-resilience-to-your-flow).
     - The trigger action **When the retention period expires** is renamed **When an item reaches the end of its retention period**.
     - New compliance action of **Apply a retention label on the item** to apply a retention label independently from this scenario, as if manually applying a label. The label doesn't need to be published and the retention label is applied immediately.
+
+### Data loss prevention
+
+- **General availability (GA)**: [Learn about the Microsoft Purview Firefox extension](dlp-firefox-extension-learn.md) and [Get started with the Microsoft Purview Firefox extension](dlp-firefox-extension-get-started.md)
+- **In preview**:
+    - [Endpoint DLP Aggregated most restrictive actions applied to endpoints](dlp-policy-reference.md#for-endpoints-preview)
+    - [Just in time protection for endpoints and network shares](endpoint-dlp-learn-about.md#just-in-time-protection-preview)
+    - [Display of conditions matched when an item matches a policy](dlp-configure-view-alerts-policies.md#other-matched-conditions-preview)
+    - [Endpoint DLP policies can be applied to network shares](dlp-configure-endpoint-settings.md#network-share-coverage-and-exclusions-preview)
+    - Support for [endpoint DLP policies in Azure virtual desktop, Citrix Virtual Apps and Desktops 7, Amazon virtual workspaces and Hyper-v environments](endpoint-dlp-getting-started.md#endpoint-dlp-support-for-virtualized-environments-preview)
+    - [Show policy tips as an oversharing popup](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)
+
+### Device onboarding
+- **In preview**: Device configuration and policy sync status is now viewable in the onboarded devices list for [Windows 10/11](device-onboarding-overview.md#device-configuration-and-policy-sync-status-preview) and [macOS](device-onboarding-macos-overview.md#device-configuration-and-policy-sync-status-preview) devices
 
 ### eDiscovery
 
@@ -89,6 +115,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Clarification about [adding "webhook.ingestion.office.com" to the allowlist when setting up a connector to import HR data](import-hr-data.md#before-you-begin).
 - Clarification about the [past activity detection period for email activities (contrasted to audit activities)](insider-risk-management-settings.md#policy-timeframes).
 - Clarification on the [retention time for user activities reports](insider-risk-management-activities.md#retention-and-item-limits).
+
+### Microsoft Priva
+
+- Clarifications on the three frequency settings for [user email notifications](/privacy/priva/risk-management-notifications) for policies and [timing on when the emails are sent](/privacy/priva/risk-management-policies#define-outcomes-user-email-notifications-and-tips).
+- Subject rights requests now display a count of **Record** items with retention labels as a [priority item to review](/privacy/priva/subject-rights-requests-workflow#priority-items-to-review), which means they can't be processed by the [delete workflow](/privacy/priva/subject-rights-requests-delete#delete-workflow-and-how-items-are-deleted).
+- Subject rights requests [reports](/privacy/priva/subject-rights-requests-reports) page clarifies that delete requests have their own unique report, the action execution log report.
 
 ### Permissions
 

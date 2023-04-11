@@ -20,16 +20,12 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to get the Visio activity report and gain insights into Visio activity in your organization."
 ---
 
 # Microsoft 365 Reports in the admin center – Visio activity
 
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. You can drill into individual product-level reports to give you more granular insight into the activities within each product. Check out [the Reports overview article](activity-reports.md) to learn more.
-
->[!NOTE]
-> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [**Learn more about Experience insights.**](../misc/experience-insights-dashboard.md)
 
 In the **Visio activity report**, you can view the activity of every Visio user.
 
@@ -52,6 +48,9 @@ You can use this report to see the activity and usage of Visio in your environme
 - **Platforms (total users)** Shows you the aggregated active users for the selected time window, broken up by platform: Web and Desktop.
 
 The **Visio activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. If you select a particular day in the report, the per-user data table will be updated accordingly to display users' usage on that day.
+
+>[!NOTE]
+> The Visio report currently becomes available within 72 hours. We are working to reduce the latency to 48 hours like other reports.
 
 ### Visio licensed usage
 
