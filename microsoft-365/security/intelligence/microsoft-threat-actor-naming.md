@@ -1,8 +1,8 @@
 ---
 title: How Microsoft names threat actors
 ms.reviewer: 
-description: Learn how Microsoft names threat actors and how to use the naming convention to  identify threat actors and associated intelligence.
-keywords: security, threat actor, security intelligence, naming convention, taxonomy, weather
+description: Learn how Microsoft names threat actors and how to use the naming convention to identify associated intelligence.
+keywords: security, threat actor, security intelligence, naming convention, taxonomy, weather, threat actor naming, motivation, attribution, nation state, financially motivated, private sector offensive actor, influence operations, groups in development
 ms.service: microsoft-365-security
 ms.subservice: intelligence
 ms.mktglfcycl: secure
@@ -17,7 +17,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 04/15/2023
+ms.date: 04/18/2023
 ---
 
 # How Microsoft names threat actors
@@ -36,7 +36,7 @@ Microsoft categorizes threat actors into five key groups:
 
 **Groups in development:** a temporary designation given to an unknown, emerging, or developing threat activity that allows Microsoft to track it as a discreet set of information until we can reach high confidence about the origin or identity of the actor behind the operation. Once criteria are met, a group in development is converted to a named actor or merged into existing names.
 
-In our new taxonomy, a weather event or *family name* represents one of the above categories. In the case of nation state actors, we have assigned a family name to a country of origin tied to attribution (e.g., Typhoon indicates origin or attribution to China). For other actors, the family name represents a motivation (e.g., Tempest indicates financially motivated actors). Each weather event family name is paired up with an adjective to create an identifier for each unique actor groups identified within the same “family” based on analysis of their unique TTPs, infrastructure, objectives, or other identified patterns. For groups in development, where there is a newly discovered, unknown, emerging, or developing cluster of threat activity, we use a temporary designation of Storm and a four-digit number, allowing us to track it as a unique set of information until we can reach high confidence about the origin or identity of the actor behind the operation.
+In our new taxonomy, a weather event or *family name* represents one of the above categories. In the case of nation state actors, we have assigned a family name to a country of origin tied to attribution. For example, Typhoon indicates origin or attribution to China. For other actors, the family name represents a motivation, like Tempest indicates financially motivated actors. Each weather event family name is paired with an adjective to create an identifier for each unique actor groups identified within the same "family" based on analysis of their unique tactics, techniques, and procedures (TTPs), infrastructure, objectives, or other identified patterns. For groups in development, where there is a newly discovered, unknown, emerging, or developing cluster of threat activity, we use a temporary designation of *Storm* and a four-digit number, allowing us to track it as a unique set of information until we can reach high confidence about the origin or identity of the actor behind the operation.
 
 The table below shows how the new family names map to a sampling of the threat actors that we track.
 
@@ -97,12 +97,22 @@ Please use the reference table below as a guide to understand how our previously
 |DEV-0215 (LAWRENCIUM)|Pearl Sleet|Nation state|
 |DEV-0227 (AMERICIUM)|Pink Sandstorm|Nation state|
 |DEV-0228|Cuboid Sandstorm|Nation state|
+|DEV-0234|Lilac Typhoon|Nation state|
+|DEV-0237|Pistachio Tempest|Financially motivated|
+|DEV-0257|Storm-0257|Group in development|
+|DEV-0322|Circle Typhoon|Nation state|
+|DEV-0336|Night Tsunami|Private sector offensive actor|
+|DEV-0343|Gray Sandstorm|Nation state|
+|DEV-0401|Cinnamon Tempest|Financially motivated|
+|DEV-0500|Marigold Sandstorm|Nation state|
+|DEV-0504|Velvet Tempest|Financially motivated|
+|DEV-0530|Storm-0530|Group in development|
+|DEV-0537|Strawberry Tempest|Financially motivated|
+|DEV-0586|Cadet Blizzard|Nation state|
+|DEV-0605|Wisteria Tsunami|Private sector offensive actor|
+|DEV-0665|Sunglow Blizzard|Nation state|
+|DEV-0796|Phlox Tempest|Financially motivated|
+|DEV-0832|Vanilla Tempest|Financially motivated|
+|DEV-0950|Lace Tempest|Financially motivated|
 
-## Additional resources and information
-
-- Keep up with the latest malware news and research. Check out our [Microsoft security blogs](https://www.microsoft.com/security/blog/product/windows/) and follow us on [Twitter](https://twitter.com/wdsecurity) for the latest news, discoveries, and protections.
-
-- Learn more about [Windows security](../../index.yml).
-
-- Learn how to [deploy threat protection capabilities across Microsoft 365 E5](/microsoft-365/solutions/deploy-threat-protection). 
-
+Read our announcement about the new taxonomy for more information: [https://aka.ms/threatactorsblog](https://aka.ms/threatactorsblog)
