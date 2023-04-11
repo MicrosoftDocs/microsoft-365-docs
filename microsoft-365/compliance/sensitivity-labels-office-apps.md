@@ -304,9 +304,9 @@ For guidance about when to use this setting, see the information about [policy s
 > [!NOTE]
 > If you use the default label policy setting for documents and emails in addition to mandatory labeling: 
 >
-> The default label always takes priority over mandatory labeling. However, for documents, the Azure Information Protection unified labeling client applies the default label to all unlabeled documents whereas built-in labeling applies the default label to new documents and not to existing documents that are unlabeled. This difference in behavior means that when you use mandatory labeling with the default label setting, users will probably be prompted to apply a sensitivity label more often when they use built-in labeling than when they use the Azure Information Protection unified labeling client.
-> 
-> Now rolling out: Office apps that use built-in labeling and support a default label for existing documents. For details, see the [capabilities table](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) for Word, Excel, and PowerPoint.
+> The default label always takes priority over mandatory labeling. However, if you use a version of built-in labeling that doesn't yet support a default label for existing documents, users will be prompted  to apply a sensitivity label with each new document.
+>
+> Identify the minimum versions of Word, Excel, and PowerPoint that support a default label for existing documents by using the [capabilities table](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Apply a default label to existing documents**.
 
 ### For Outlook Mobile, change when users are prompted for a label
 
