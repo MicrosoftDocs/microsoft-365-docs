@@ -79,11 +79,11 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
-### March-2023 (Platform: 4.18.2302.x | Engine: 1.1.20200.4)
+### March-2023 (Platform: 4.18.2303.8 | Engine: 1.1.20200.4)
 
-- Security intelligence update version: **1.381.61.0**
+- Security intelligence update version: **1.387.695.0**
 - Release date:  **April 4, 2023 (Engine) / April 11, 2023 (Platform)**
-- Platform: **4.18.2302.x** 
+- Platform: **4.18.2303.8** 
 - Engine: **1.1.20200.4**
 - Support phase: **Security and Critical Updates**
 
