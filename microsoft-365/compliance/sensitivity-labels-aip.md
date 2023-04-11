@@ -185,14 +185,12 @@ Remember to use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-
 
 The AIP client supports many customizations by using [PowerShell advanced settings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell). For the advanced settings applicable to Office apps that are also supported by built-in labeling, see the list in [New-Label](/powershell/module/exchange/new-label) or [Set-Label](/powershell/module/exchange/set-label), and [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) or [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy).
 
-However, you might find you don't need to use PowerShell to configure the supported settings because they're included in the standard configuration from the Microsoft Purview compliance portal. For example, UI configuration to choose label colors, and turn off mandatory labeling for Outlook.
+However, you might find you don't need to use PowerShell to configure the supported settings because they're included in the standard configuration from the Microsoft Purview compliance portal. For example, UI configuration to choose label colors, and turn off mandatory labeling for Outlook. Check the available configurations in [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
 
-The following configurations from the AIP add-in that aren't yet supported by built-in labeling include:
-
-- [Oversharing popup messages for Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
-    - The equivalent of this configuration is now available in preview as a DLP policy configuration. For more information, see [Scenario 2 Show policy tip as oversharing popup (preview)](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview).
-
-- [Remove external content markings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution)
+> [!NOTE]
+> The AIP add-in used PowerShell advanced settings for [oversharing popup messages in Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent). When you use built-in labeling, the equivalent of this configuration is now available as a DLP policy configuration.
+> 
+> For more information, see [Scenario 2 Show policy tip as oversharing popup (preview)](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview). To identify the minimum version of Outlook that supports this feature, use the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook), and the row **Preventing oversharing as DLP policy tip**.
 
 ## Features not planned to be supported by built-in labeling for Office apps
 
