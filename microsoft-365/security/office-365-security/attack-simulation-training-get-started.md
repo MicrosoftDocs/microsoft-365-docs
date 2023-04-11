@@ -155,7 +155,6 @@ The URLs that are used by Attack simulation training are described in the follow
 - <https://www.supportin.de>
 - <https://www.supportin.fr>
 - <https://www.supportin.it>
-- <https://www.supportres.com>
 - <https://www.supportres.de>
 - <https://www.supportres.fr>
 - <https://www.supportres.it>
@@ -164,11 +163,9 @@ The URLs that are used by Attack simulation training are described in the follow
 - <https://www.techidal.de>
 - <https://www.techidal.fr>
 - <https://www.techidal.it>
-- <https://www.techidal.org>
 - <https://www.techniel.de>
 - <https://www.techniel.fr>
 - <https://www.techniel.it>
-- <https://www.techniel.org>
 - <https://www.bankmenia.es>
 - <https://www.banknown.es>
 - <https://www.browsersch.es>
@@ -178,18 +175,13 @@ The URLs that are used by Attack simulation training are described in the follow
 - <https://www.exportants.es>
 - <https://www.financerta.es>
 - <https://www.financerts.es>
-- <https://www.passwordle.es>
 - <https://www.prizeably.es>
 - <https://www.resetts.es>
 - <https://www.securembly.es>
 - <https://www.securetta.es>
 - <https://www.supportin.es>
 - <https://www.supportres.es>
-- <https://www.techidal.es>
 - <https://www.techniel.es>
-- <https://www.msteamsexternalone.com>
-- <https://www.msteamsexternaltwo.com>
-- <https://www.attacksimulationtraining.com>
 - <https://www.mcsharepoint.com>
 - <https://www.mesharepoint.com>
 - <https://www.officence.com>
@@ -226,8 +218,6 @@ The URLs that are used by Attack simulation training are described in the follow
 - <https://www.prizegiveaway.net>
 - <https://www.salarytoolint.net>
 - <https://www.docdeliveryapp.net>
-- <https://www.securescoreteam.com>
-- <https://www.securescoreteam.net>
 
 
 > [!NOTE]
