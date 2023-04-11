@@ -48,7 +48,7 @@ See [Device Control for macOS](mac-device-control-overview.md) for information a
 
 ### Step 2: Update MDE Preferences Schema
 
-The [MDE Preferences schema](https://github.com/microsoft/mdatp-xplat/blob/master/macOS/schema/schema.json) has been updated to include the new `deviceControl/policy` key. The existing MDE Preferences configuration profile should be updated to use the new schema file’s content.
+The [MDE Preferences schema](https://github.com/microsoft/mdatp-xplat/blob/master/macos/schema/schema.json) has been updated to include the new `deviceControl/policy` key. The existing MDE Preferences configuration profile should be updated to use the new schema file’s content.
 
 :::image type="content" source="images/macos-device-control-jamf-mde-preferences-schema.png" alt-text="Shows where to edit the Microsoft Defender for Endpoint Preferences Schema to update." lightbox="images/macos-device-control-jamf-mde-preferences-schema.png":::
 
