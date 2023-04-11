@@ -115,7 +115,7 @@ A similar message occurs if you're using Internet Explorer:
    > [!NOTE]
    > Versions of Windows 10 before version 1703 have a different user interface. See [Microsoft Defender Antivirus in the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
-   The Windows event log will also show [Windows Defender client event ID 1116](troubleshoot-microsoft-defender-antivirus.md).
+   The Windows event log will also show [Windows Defender client event ID 1116](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/).
 
     > [!TIP]
     > If you're looking for Antivirus related information for other platforms, see:

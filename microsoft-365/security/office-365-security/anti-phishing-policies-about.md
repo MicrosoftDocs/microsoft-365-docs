@@ -122,7 +122,7 @@ The following spoof settings are available in anti-phishing policies in EOP and 
     - [Manage quarantined messages and files as an admin in Microsoft 365](quarantine-admin-manage-messages-files.md)
     - [Find and release quarantined messages as a user in Microsoft 365](quarantine-end-user.md)
 
-    If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that were quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+    If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that were quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
 ### Unauthenticated sender indicators
 
@@ -218,7 +218,7 @@ For detected user impersonation attempts, the following actions are available:
   - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
   - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-  If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that are quarantined by user impersonation protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+  If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that are quarantined by user impersonation protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
 - **Deliver the message and add other addresses to the Bcc line**: Deliver the message to the intended recipients and silently deliver the message to the specified recipients.
 - **Delete the message before it's delivered**: Silently delete the entire message, including all attachments.
@@ -245,7 +245,7 @@ For detected domain impersonation attempts, the following actions are available:
   - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
   - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-  If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that are quarantined by domain impersonation protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+  If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that are quarantined by domain impersonation protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
 - **Deliver the message and add other addresses to the Bcc line**: Deliver the message to the intended recipients and silently deliver the message to the specified recipients.
 - **Delete the message before it's delivered**: Silently deletes the entire message, including all attachments.
@@ -269,7 +269,7 @@ For impersonation attempts detected by mailbox intelligence, the following actio
 - **Don't apply any action**: This is the default value. This action has the same result as when **Enable mailbox intelligence** is turned on but **Enable intelligence impersonation protection** is turned off.
 - **Redirect message to other email addresses**
 - **Move message to the recipients' Junk Email folders**
-- **Quarantine the message**: If you select this action, you can also select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+- **Quarantine the message**: If you select this action, you can also select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 - **Deliver the message and add other addresses to the Bcc line**
 - **Delete the message before it's delivered**
 
