@@ -25,11 +25,12 @@ Organizations have sensitive information under their control such as financial d
 
 In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across:
 
-- Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
+- Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive accounts
 - Office applications such as Word, Excel, and PowerPoint
 - Windows 10, Windows 11 and macOS (three latest released versions) endpoints
 - non-Microsoft cloud apps
-- on-premises file shares and on-premises SharePoint.
+- on-premises file shares and on-premises SharePoint
+- PowerBI
 
 DLP detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
 

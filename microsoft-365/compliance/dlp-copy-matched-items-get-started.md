@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 02/14/2023
+ms.date: 04/11/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -20,6 +20,16 @@ description: "Learn how to configure data loss prevention to collect items that 
 # Get started with collecting files that match data loss prevention policies from devices (preview)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+### Onboard devices
+Before you can use copy matched items you have to onboard Windows 10/11 devices into Purview, see [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
+
+### Setup Azure Storage
+
+
+set up Azure storage
+
+
 
 licensing and prereqs
 How to create custom role groups
