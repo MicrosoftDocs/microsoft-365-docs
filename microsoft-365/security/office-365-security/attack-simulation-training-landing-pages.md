@@ -49,7 +49,7 @@ Click a column header to sort by that column. To add or remove columns, click ![
 > [!TIP]
 > The **⋮** (**Actions** control) is associated with the **Name** column. If you remove that column from view, the **⋮** control goes away.
 
-<sup>\*</sup> To see all columns, you'll likely need to do one or more of the following steps:
+<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
 
 - Horizontally scroll in your web browser.
 - Narrow the width of appropriate columns.
@@ -62,7 +62,7 @@ Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filt
 
 When you select a landing page from the list by clicking anywhere in the row other than the check box next to the name, a details flyout appears with the following information:
 
-- **Preview** tab: View the landing page as users will see it. Use the **Select language** drop down list to see the landing page in different languages.
+- **Preview** tab: View the landing page as users see it. Use the **Select language** drop down list to see the landing page in different languages.
 - **Details** tab: View details about the landing page:
   - **Description**
   - **Status**: **Ready** or **Draft**.
