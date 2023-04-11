@@ -140,8 +140,8 @@ Sync settings include the sync frequency (in minutes) and the schedule data that
     > [!NOTE]
     > If you choose not to sync open shifts, open shift requests, swap requests, or time off requests between Shifts and your WFM system, there's another step you need to do to hide the capability in Shifts. After you run this script, make sure you follow the steps in the [Disable open shifts, open shifts requests, swap requests, and time off requests](#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests) section later in this article.
 
-> [!IMPORTANT]
-> For settings that you don't want to change, you'll need to re-enter the original settings when you're prompted by the script.
+    > [!IMPORTANT]
+    > For settings that you don't want to change, you'll need to re-enter the original settings when you're prompted by the script.
 
 [Set up your environment](#set-up-your-environment) (if you haven't already), and then run the following script.
 
