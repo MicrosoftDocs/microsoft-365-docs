@@ -241,7 +241,7 @@ One of the most crucial elements in a phishing simulation is the payload selecti
 
 To combat the tendency to use low click rate payloads and to maximize educational returns, we've created a new piece of metadata for every global payload called the predicted compromise rate (PCR).
 
-PCR uses historical data across Microsoft 365 that predicts the percentage of people who will be compromised by the payload. The formula is: users compromised / total number of users who receive the simulation. PCR is an intelligent mechanism that's built on information like payload content, compromise rates (aggregated and anonymized), and payload metadata. PCR predicts a more accurate potential compromise rate when the payload is used within a simulation. The benefit of PCR comes from predicting actual vs. predicted click through for a given simulation and payload.
+PCR uses historical data across Microsoft 365 that predicts the percentage of people who will be compromised by the payload. PCR is an intelligent mechanism that's built on information like payload content, compromise rates (aggregated and anonymized), and payload metadata. PCR predicts a more accurate potential compromise rate when the payload is used within a simulation. The benefit of PCR comes from predicting actual vs. predicted click through for a given simulation and payload.
 
 You can also review the overall performance of your organization by measuring the difference between the predicted compromise rate and the actual compromise rate across simulations using the Training efficacy report.
 
