@@ -118,9 +118,9 @@ On the Settings page, you choose the information to sync from Blue Yonder WFM to
 
   > [!TIP]
   > You'll be given the following options for the next group of settings: <br>
-  > **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts. <br>
-  > **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts. <br>
-  > **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
+  > **Shifts users will not see provider data**: Data won't sync between Blue Yonder WFM and Shifts. <br>
+  > **Shifts users can see provider data**: Data syncing is unidirectional from Blue Yonder WFM to Shifts. <br>
+  > **Shifts users can see and change provider data**: Data syncing is bidirectional between Blue Yonder WFM and Shifts.
 
 4. Choose your basic, **Time card**, and **Request** settings from the options listed above.
 
