@@ -30,7 +30,7 @@ ms.date: 3/29/2023
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 > [!NOTE]
-> This article lists new features in the latest release of Microsoft Defender for Office 365. These features are currently in preview.
+> This article lists new features in the latest release of Microsoft Defender for Office 365. These features are currently in preview. Once you run the cmdlet, please be aware that it will take a few days for the features to to be available. 
 
 With the increased use of collaboration tools like Microsoft Teams, the possibility of malicious attacks using URLs and messages has increased as well. Microsoft Defender for Office 365 already provides protection against malicious URLs in Teams through [Safe Links](safe-links-about.md), and now Microsoft is extending this protection with a new set of capabilities designed to disrupt the attack chain.
 

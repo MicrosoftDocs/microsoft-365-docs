@@ -47,7 +47,7 @@ Typically, the most common indicators of a problem are:
 - You do not see any devices at all
 - The reports and information you do see is outdated (older than a few days)
 
-For common error codes and event IDs related to the Microsoft Defender Antivirus service that are not related to Update Compliance, see [Microsoft Defender Antivirus events](troubleshoot-microsoft-defender-antivirus.md).
+For common error codes and event IDs related to the Microsoft Defender Antivirus service that are not related to Update Compliance, see [Microsoft Defender Antivirus events](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/).
 
 There are three steps to troubleshooting these problems:
 
