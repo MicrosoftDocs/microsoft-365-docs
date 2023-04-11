@@ -134,9 +134,9 @@ The required order and values for each individual permission are described in th
 |PermissionToPreview|2|00000010|
 |PermissionToDelete|1|00000001|
 
-¹ The value 0 doesn't hide the **View message header** button in the details of the quarantined message (the button is always available).
+¹ The value 0 doesn't hide the **View message header** button (the button is always available).
 
-² The PermissionToAllowSender permission isn't used (the value 0 or 1 does nothing).
+² This permission isn't used (the value 0 or 1 does nothing).
 
 ³ Don't set both of these permission values to 1. Set one permission value to 1 and the other value to 0, or set both values to 0.
 

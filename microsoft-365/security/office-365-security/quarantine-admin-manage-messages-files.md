@@ -162,7 +162,7 @@ In the details flyout that opens, the following information is available:
   - **Policy type**
   - **Policy name**
   - **Recipient count**
-  - **Recipients**: If the message contains multiple recipients, you need to click **...** \> **Preview message** or ***...** \> **View message header** to see the complete list of recipients.
+  - **Recipients**: If the message contains multiple recipients, you need to use [Preview message](#preview-email-from-quarantine) or [View message header](#view-email-message-headers) to see the complete list of recipients.
   - **Released to**: All email addresses (if any) to which the message has been released.
 - **Delivery details** section:
   - **Threats**
@@ -179,7 +179,7 @@ In the details flyout that opens, the following information is available:
   - **Return path**
   - **Sender IP**
   - **Location**
-  - **Recipients**: If the message contains multiple recipients, you need to click **...** \> **Preview message** or ***...** \> **View message header** to see the complete list of recipients.
+  - **Recipients**: If the message contains multiple recipients, you need to click [Preview message](#preview-email-from-quarantine) or [View message header](#view-email-message-headers) to see the complete list of recipients.
   - **Time received**
   - **Directionality**
   - **Network message ID**
@@ -207,7 +207,7 @@ To take action on the message, see the next section.
 
 2. On the **Email** tab, select the quarantined email message by using either of the following methods:
 
-   - Select the message from the list by clicking the check box next to the first column. The icons for available actions are no longer grayed out. 
+   - Select the message from the list by selecting the check box next to the first column. The icons for available actions are no longer grayed out. 
 
      :::image type="content" source="../../media/quarantine-message-selected-message-actions.png" alt-text="Available actions after you select a quarantined message on the Email tab of the Quarantine page." lightbox="../../media/quarantine-message-selected-message-actions.png":::
 
@@ -215,7 +215,7 @@ To take action on the message, see the next section.
 
      :::image type="content" source="../../media/quarantine-message-details-flyout-actions.png" alt-text="Available actions in the details flyout of a selected message." lightbox="../../media/quarantine-message-details-flyout-actions.png":::
 
-   Using either message selection method, many actions are available under ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More** or **More options**.
+   Using either method to select the message, many actions are available under ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More** or **More options**.
 
 After you select the quarantined message, the available actions are described in the following subsections.
 
@@ -241,7 +241,7 @@ After you select the quarantined message, the available actions are described in
 
 This action isn't available for email messages that have already been released (the **Release status** value is **Released**).
 
-If you don't release or remove a message, it will be automatically deleted from quarantine after the date shown in the **Expires** column.
+If you don't release or remove a message, it's automatically deleted from quarantine after the date shown in the **Expires** column.
 
 - You can't release a message to the same recipient more than once.
 - When you select individual original recipients to receive the released message, you can select only recipients who haven't already received the released message.
@@ -279,7 +279,7 @@ Users can request the release of email messages if the quarantine policy used **
 
 After a recipient requests the release of the email message, the **Release status** value changes to **Release requested**, and an admin can approve or deny the request.
 
-If you don't release or remove a message, it will be automatically deleted from quarantine after the date shown in the **Expires** column.
+If you don't release or remove a message, it's automatically deleted from quarantine after the date shown in the **Expires** column.
 
 After you select the message, use either of the following methods to approve or deny the release request:
 
@@ -294,7 +294,7 @@ If you click **Deny**, a **Deny release** flyout opens where you can review info
 
 When you delete an email message from quarantine, the message is removed and isn't sent to the original recipients.
 
-If you don't release or remove a message, it will be automatically deleted from quarantine after the date shown in the **Expires** column.
+If you don't release or remove a message, it's automatically deleted from quarantine after the date shown in the **Expires** column.
 
 After you select the message, use either of the following methods to remove it:
 
@@ -370,8 +370,6 @@ When you're finished on the **Submit to Microsoft for analysis** flyout, click *
 #### Block email senders from quarantine
 
 The Block senders action adds the sender of the selected email message to the Blocked Senders list **in the mailbox of whomever is signed in**. Typically, this action is used by end-users if it's available to them by [quarantine policies](quarantine-policies.md#anatomy-of-a-quarantine-policy). For more information about users blocking senders, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
-
-- ![Block sender icon.](../../media/m365-cc-sc-block-sender-icon.png) **Block sender**: Add the sender to the currently signed in user's Blocked Senders list.
 
 After you select the message, use either of the following methods to add the message sender to the Blocked Senders list in **your** mailbox:
 
@@ -663,7 +661,7 @@ To take action on the message, see the next section.
 
 2. On the **Teams messages** tab, select the quarantined message by using either of the following methods:
 
-   - Select the message from the list by clicking the check box next to the first column. The icons for available actions are no longer grayed out. 
+   - Select the message from the list by selecting the check box next to the first column. The icons for available actions are no longer grayed out. 
 
      :::image type="content" source="../../media/quarantine-teams-message-selected-message-actions.png" alt-text="Available actions after you select a quarantined message on the Teams message tab of the Quarantine page." lightbox="../../media/quarantine-teams message-selected-message-actions.png":::
 
@@ -679,7 +677,7 @@ After you select the quarantined message, the available actions are described in
 
 This action isn't available for Teams messages that have already been released (the **Release status** value is **Released**).
 
-If you don't release or remove a message, it will be automatically deleted from quarantine after the date shown in the **Expires** column.
+If you don't release or remove a message, it's automatically deleted from quarantine after the date shown in the **Expires** column.
 
 After you select the message, use either of the following methods to release it:
 
@@ -690,7 +688,7 @@ In the **Release to all chat participants** flyout that opens, decide whether to
 
 #### Delete Teams messages from quarantine
 
-If you don't release or remove a Teams message, it will be automatically deleted from quarantine after the date shown in the **Expires** column.
+If you don't release or remove a Teams message, it's automatically deleted from quarantine after the date shown in the **Expires** column.
 
 After you select the Teams message, use either of the following methods to remove it:
 
