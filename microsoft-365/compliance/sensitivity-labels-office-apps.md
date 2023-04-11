@@ -419,7 +419,7 @@ For more help in specifying PowerShell advanced settings, see [PowerShell tips f
 ## Configure label inheritance from email attachments
 
 > [!NOTE]
-> This capability is rolling out for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook), and the row **Label inheritance from email attachments**.
+> Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook), and the row **Label inheritance from email attachments**.
 
 Turn on email inheritance for when users attach labeled documents to an email message that isn't manually labeled. With this configuration, a sensitivity label is dynamically selected for the email message, based on the sensitivity labels that are applied to the attachments and published to the user. The [highest priority label](sensitivity-labels.md#label-priority-order-matters) is dynamically selected when it's supported by Outlook.
 
