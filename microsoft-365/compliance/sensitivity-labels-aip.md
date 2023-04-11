@@ -23,7 +23,7 @@ description: For Office 365 apps, understand the migration of the Azure Informat
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-When you use [sensitivity labels](sensitivity-labels.md) in Microsoft 365 Apps on Windows computers, we recommend you use you labeling that's built into Office apps, even if you have the [Azure Information Protection (AIP) unified labeling client](/azure/information-protection/rms-client/aip-clientv2) installed. The AIP add-in is now disabled by default in the latest versions of Office apps, and the add-in will be retired April 2024.
+When you use [sensitivity labels](sensitivity-labels.md) in Microsoft 365 Apps on Windows computers, we recommend you use you labeling that's built into Office apps, even if you have the [Azure Information Protection (AIP) unified labeling client](/azure/information-protection/rms-client/aip-clientv2) installed. The AIP add-in is now disabled by default in the latest versions of Office apps, and the add-in will be [retired April 2024](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908).
 
 To prepare for this change, use this article to understand the benefits of using built-in labeling, which main features have parity, and how to control the migration from the AIP add-in to the newer labeling experience.
 
@@ -56,7 +56,7 @@ Independently from labeling, you can continue to use the [AIPService](/powershel
 
 ## Benefits of using built-in labeling for Office apps vs. the AIP add-in
 
-The AIP add-in component from the AIP client is in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070) and will be retired April 2024. Even before the retirement date, we don't recommend you use this add-in for Office apps for the following reasons:
+The AIP add-in component from the AIP client is in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070) and will be [retired April 2024](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908). Even before the retirement date, we don't recommend you use this add-in for Office apps for the following reasons:
 
 - No new labeling features will be supported.
 - Add-ins are less stable because they can conflict with other add-ins that can result in Office apps hanging, crashing, or automatically disabling the add-in.
