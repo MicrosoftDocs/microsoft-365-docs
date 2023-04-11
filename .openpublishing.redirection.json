@@ -10834,11 +10834,6 @@
     "source_path": "microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md",
     "redirect_url": "/microsoft-365/compliance/ediscovery-delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold",
     "redirect_document_id": true
-  },
-  {
-    "source_path": "microsoft-365/compliance/change-the-hold-duration-for-an-inactive-mailbox.md",
-    "redirect_url": "/microsoft-365/compliance/ediscovery-change-the-hold-duration-for-an-inactive-mailbox",
-    "redirect_document_id": true
   }
  ]
 }
