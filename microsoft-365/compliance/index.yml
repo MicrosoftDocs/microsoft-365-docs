@@ -39,7 +39,7 @@ landingContent:
           - text: Encrypt your data and control your encryption keys
             url: /microsoft-365/compliance/encryption
           - text: Import and archive non-Microsoft data
-            url: /microsoft-365/compliance/archiving-third-party-data
+            url: /microsoft-365/compliance/archive-third-party-data
 
 # Card 2
   - title: Identify data risks and manage regulatory compliance requirements
