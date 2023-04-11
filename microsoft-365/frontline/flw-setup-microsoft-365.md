@@ -18,7 +18,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/01/2023
+ms.date: 04/04/2023
 ---
 
 # Set up Microsoft 365 for frontline workers
@@ -61,7 +61,7 @@ The Microsoft 365 admin center has a set of [Setup guides](/microsoft-365/enterp
 
 ## Step 3: Provision users, configure groups, and assign licenses
 
-Now that you have Microsoft 365 set up, you can start to add users, organize them into groups, and assign licenses.
+Now that you have Microsoft 365 set up, you can start to add users, organize them into groups, and assign licenses. Much of this information is also in the [downloadable technical planning guide](https://go.microsoft.com/fwlink/?linkid=2211637).
 
 ### Provision users
 
@@ -122,7 +122,7 @@ Registering devices in Azure AD creates a unique identity that can be used to se
 
 ### Shared device enrollment with Intune
 
-**Android:** Automatically enroll Android devices into shared device mode with [Microsoft Endpoint Manager](/mem/intune/fundamentals/whats-new#intune-support-for-provisioning-azure-active-directory-shared-devices). [Learn more about enrolling shared devices in Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/enroll-android-enterprise-dedicated-devices-into-azure-ad-shared/ba-p/1820093).
+**Android:** Automatically enroll Android devices into shared device mode with [Microsoft Intune](/mem/intune/enrollment/android-kiosk-enroll). [Learn more about enrolling shared devices in Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/enroll-android-enterprise-dedicated-devices-into-azure-ad-shared/ba-p/1820093).
 
 **iOS:** Not currently available.
 

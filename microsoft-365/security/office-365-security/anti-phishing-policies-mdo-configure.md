@@ -11,12 +11,13 @@ ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier2
 ms.custom:
 description: Admins can learn how to create, modify, and delete the advanced anti-phishing policies that are available in organizations with Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 11/30/2022
+ms.date: 3/13/2023
 ---
 
 # Configure anti-phishing policies in Microsoft Defender for Office 365
@@ -62,16 +63,12 @@ To increase the effectiveness of anti-phishing protection in Defender for Office
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To add, modify, and delete anti-phishing policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - For read-only access to anti-phishing policies, you need to be a member of the **Global Reader** or **Security Reader** role groups<sup>\*</sup>.
-
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  **Notes**:
-
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Add, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
+    - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For our recommended settings for anti-phishing policies in Defender for Office 365, see [Anti-phishing policy in Defender for Office 365 settings](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
@@ -132,9 +129,6 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
    - **Impersonation**: These settings are a condition for the policy that identifies specific senders to look for (individually or by domain) in the From address of inbound messages. For more information, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-     > [!NOTE]
-     > In each anti-phishing policy, you can specify a maximum of 350 protected users (sender email addresses). You can't specify the same protected user in multiple policies.
-
      - **Enable users to protect**: The default value is off (not selected). To turn it on, select the check box, and then click the **Manage (nn) sender(s)** link that appears.
 
        In the **Manage senders for impersonation protection** flyout that appears, do the following steps:
@@ -151,6 +145,13 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
          When you're finished, click **Add**
 
+       > [!NOTE]
+       > You can specify a maximum of 350 users for user impersonation protection in each anti-phishing policy.
+       >
+       > User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message can be identified as an impersonation attempt.
+       >
+       > You might get the error "The email address already exists" if you try to add a user to user impersonation protection when that email address is already specified for user impersonation protection in another anti-phishing policy. This error occurs only in the Defender portal. You won't get the error if you use the corresponding _TargetedUsersToProtect_ parameter in the **New-AntiPhishPolicy** or **Set-AntiPhishPolicy** cmdlets in Exchange Online PowerShell.
+
        Back on the **Manage senders for impersonation** flyout, you can remove entries by selecting one or more entries from the list. You can search for entries using the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box.
 
        After you select at least one entry, the ![Remove selected users icon.](../../media/m365-cc-sc-remove-selected-users-icon.png) **Remove selected users** icon appears, which you can use to remove the selected entries.
@@ -166,7 +167,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
          When you're finished, click **Add domains**
 
          > [!NOTE]
-         > You can specify a maximum of 50 custom domains in each anti-phishing policy.
+         > You can specify a maximum of 50 custom domains for domain impersonation protection in each anti-phishing policy.
 
        Back on the **Manage custom domains for impersonation** flyout, you can remove entries by selecting one or more entries from the list. You can search for entries using the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box.
 
@@ -184,13 +185,13 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
         When you're finished, click **Add**.
 
      > [!NOTE]
+     > Trusted domain entries don't include subdomains of the specified domain. You need to add an entry for each subdomain.
      >
-     > - If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
-     >   - `noreply@email.teams.microsoft.com`
-     >   - `noreply@emeaemail.teams.microsoft.com`
-     >   - `no-reply@sharepointonline.com`
+     > If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
      >
-     > - Trusted domain entries don't include subdomains of the specified domain. You need to add an entry for each subdomain.
+     > - `noreply@email.teams.microsoft.com`
+     > - `noreply@emeaemail.teams.microsoft.com`
+     > - `no-reply@sharepointonline.com`
 
      Back on the **Manage custom domains for impersonation** flyout, you can remove entries from the **Sender** and **Domain** tabs by selecting one or more entries from the list. You can search for entries using the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box.
 
@@ -226,10 +227,10 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Don't apply any action**
        - **Redirect message to other email addresses**
        - **Move message to the recipients' Junk Email folders**
-       - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by user impersonation protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+       - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by user impersonation protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information about quarantine policies, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
-         A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for user impersonation detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown.
-  
+         If you don't select a quarantine policy, the default quarantine policy for user impersonation detections is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown.
+
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
 
@@ -239,7 +240,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Move message to the recipients' Junk Email folders**
        - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by domain impersonation protection.
 
-         A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for domain impersonation detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown.
+         If you don't select a quarantine policy, the default quarantine policy for domain impersonation detections is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown.
 
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
@@ -248,18 +249,18 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Don't apply any action**
        - **Redirect message to other email addresses**
        - **Move message to the recipients' Junk Email folders**
-       - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+       - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information about quarantine policies, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
-         A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for mailbox intelligence detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown.
+         If you don't select a quarantine policy, the default quarantine policy for mailbox intelligence detections is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown.
 
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
 
      - **If message is detected as spoof**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Select one of the following actions in the drop down list for messages from blocked spoofed senders:
        - **Move message to the recipients' Junk Email folders**
-       - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+       - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information about quarantine policies, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
-         A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for spoof intelligence detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown.
+         If you don't select a quarantine policy, the default quarantine policy for spoof intelligence detections is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown.
 
    - **Safety tips & indicators**: Configure the following settings:
      - **Show first contact safety tip**: For more information, see [First contact safety tip](anti-phishing-policies-about.md#first-contact-safety-tip).
@@ -395,12 +396,12 @@ This example creates an anti-phish policy named Research Quarantine with the fol
 
 - The policy is enabled (we aren't using the _Enabled_ parameter, and the default value is `$true`).
 - The description is: Research department policy.
-- Changes the default action for spoofing detections to Quarantine, and uses the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _SpoofQuarantineTag_ parameter).
+- Changes the default action for spoofing detections to Quarantine, and uses the default quarantine policy for the quarantined messages (we aren't using the _SpoofQuarantineTag_ parameter).
 - Enables organization domains protection for all accepted domains, and targeted domains protection for fabrikam.com.
-- Specifies Quarantine as the action for domain impersonation detections, and uses the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _TargetedDomainQuarantineTag_ parameter).
+- Specifies Quarantine as the action for domain impersonation detections, and uses the default quarantine policy for the quarantined messages (we aren't using the _TargetedDomainQuarantineTag_ parameter).
 - Specifies Mai Fujito (mfujito@fabrikam.com) as the user to protect from impersonation.
-- Specifies Quarantine as the action for user impersonation detections, and uses the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _TargetedUserQuarantineTag_ parameter).
-- Enables mailbox intelligence (_EnableMailboxIntelligence_), allows mailbox intelligence protection to take action on messages (_EnableMailboxIntelligenceProtection_), specifies Quarantine as the action for detected messages, and uses the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _MailboxIntelligenceQuarantineTag_ parameter).
+- Specifies Quarantine as the action for user impersonation detections, and uses the default quarantine policy for the quarantined messages (we aren't using the _TargetedUserQuarantineTag_ parameter).
+- Enables mailbox intelligence (_EnableMailboxIntelligence_), allows mailbox intelligence protection to take action on messages (_EnableMailboxIntelligenceProtection_), specifies Quarantine as the action for detected messages, and uses the default quarantine policy for the quarantined messages (we aren't using the _MailboxIntelligenceQuarantineTag_ parameter).
 - Enables all safety tips.
 
 ```powershell
@@ -409,8 +410,8 @@ New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research departmen
 
 For detailed syntax and parameter information, see [New-AntiPhishPolicy](/powershell/module/exchange/New-AntiPhishPolicy).
 
-> [!NOTE]
-> For detailed instructions to specify the [quarantine policies](quarantine-policies.md) to use in an anti-phish policy, see [Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies).
+> [!TIP]
+> For detailed instructions to specify the quarantine policies to use in an anti-phish policy, see [Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies).
 
 #### Step 2: Use PowerShell to create an anti-phish rule
 
@@ -502,8 +503,8 @@ Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 
 For detailed syntax and parameter information, see [Set-AntiPhishPolicy](/powershell/module/exchange/Set-AntiPhishPolicy).
 
-> [!NOTE]
-> For detailed instructions to specify the [quarantine policies](quarantine-policies.md) to use in an anti-phish policy, see [Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies).
+> [!TIP]
+> For detailed instructions to specify the quarantine policies to use in an anti-phish policy, see [Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies).
 
 ### Use PowerShell to modify anti-phish rules
 

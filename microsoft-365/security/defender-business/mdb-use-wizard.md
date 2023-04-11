@@ -10,8 +10,8 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 01/26/2023
-ms.reviewer: shlomiakirav
+ms.date: 02/14/2023
+ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -23,7 +23,7 @@ ms.custom: intro-get-started
 
 # Use the setup wizard in Microsoft Defender for Business
 
-Defender for Business was designed to save small and medium-sized businesses time and effort. For example, you can do initial setup and configuration with a setup wizard. The setup wizard guides you through granting access to your security team, setting up email notifications for your security team, and onboarding your company's Windows devices.
+Defender for Business was designed to save small and medium-sized businesses time and effort. For example, you can complete your initial setup and configuration process using a setup wizard. The setup wizard guides you through granting access to your security team, setting up email notifications for your security team, and onboarding your company's Windows devices.
 
 > [!TIP]
 > Using the setup wizard is optional. You can choose to work through the setup and configuration process manually. To learn more, see:
@@ -34,7 +34,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 
 The setup wizard is designed to run the first time someone in your company signs into the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 
-If your company has been using Microsoft 365 Business Premium, the Defender for Business setup wizard will run the first time someone goes to **Assets** > **Devices**. 
+If your company has been using [Microsoft 365 Business Premium](../../business-premium/index.md), the Defender for Business setup wizard will run the first time someone goes to **Assets** > **Devices**. 
 
 The setup wizard start screen looks like the following image:
 

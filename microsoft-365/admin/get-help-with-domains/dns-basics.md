@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -37,6 +38,8 @@ description: "The domain name system maps computer hostnames to IP addresses and
   
 ::: moniker range="o365-worldwide"
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Domain names, like contoso.com, are managed by using a worldwide system of domain registrars and databases. The Domain Name System (DNS) provides a mapping between human-readable computer hostnames and the IP addresses used by networking equipment. An understanding of DNS and domain registrar basics can help you manage domains.
 
 ## Watch: Domains & DNS: An overview
@@ -63,7 +66,7 @@ Domain names are used in URLs and email addresses, and they have different level
     
 Why use a third-level domain? You might want to have different domain names for marketing or a blog. For example, blog.contoso.com. You typically add a second-level domain, like contoso.com, to use with Microsoft but you can also use third-level domains if you like.
   
-Learn more about what you can do with domains for each type of offering in the [Microsoft 365 and Office 365 platform service description](/office365/servicedescriptions/office-365-platform-service-description/domains).
+Learn more about what you can do with domains for each type of offering in the [Microsoft 365 feature descriptions](/microsoft-365/admin/m365-feature-descriptions?tabs=Domains).
   
 ## Understand DNS record types
 
@@ -135,7 +138,7 @@ Why might your domain's zone file be somewhere besides at your domain registrar?
 Adding a custom domain, like fourthcoffee.com, to Microsoft 365 lets you use a shorter, more familiar email address and userID with the service. You're [given a domain to use](../setup/domains-faq.yml) when you sign up for a Microsoft 365 account, but it includes "onmicrosoft.com." Many people prefer to add their organization or business domain if they plan to use Microsoft 365 for email. 
   
 > [!NOTE]
-> If you just want to download and use Microsoft apps, like Outlook or Word, you don't need to add a domain: [Install Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
+> If you just want to download and use Microsoft 365 apps, like Outlook or Word, you don't need to add a domain: [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
   
 You can use your domain name in Microsoft 365 with your email, public website, and instant messaging address.
   

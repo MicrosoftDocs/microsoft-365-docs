@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date:
+ms.date: 09/17/2019
 ms.localizationpriority: high
 ms.collection:
 - tier1
@@ -24,13 +24,13 @@ description: "Learn the basic steps to creating a keyword dictionary in the Micr
 
 # Create a keyword dictionary
 
-Microsoft Purview Data Loss Prevention (DLP) can identify, monitor, and protect your sensitive items. Identifying sensitive items sometimes requires looking for keywords, particularly when identifying generic content (such as healthcare-related communication), or inappropriate or explicit language. Although you can create keyword lists in sensitive information types, keyword lists are limited in size and require modifying XML to create or edit them. Keyword dictionaries provide simpler management of keywords and at a much larger scale, supporting up to 1 MB of terms (post compression) in the dictionary and support any language. The tenant limit is also 1 MB after compression. 1 MB of post compression limit means that all dictionaries combined across a tenant can have close to 1 million characters.
+Microsoft Purview Data Loss Prevention (DLP) can identify, monitor, and protect your sensitive items. Identifying sensitive items sometimes requires looking for keywords, particularly when identifying generic content (such as healthcare-related communication), or inappropriate or explicit language. Although you can create keyword lists in sensitive information types, keyword lists are limited in size and require modifying XML to create or edit them. In contrast, keyword dictionaries provide simpler management of keywords and at a much larger scale, supporting up to 1 MB of terms (post-compression) in the dictionary. Additionally, keyword dictionaries can support any language. The tenant limit is also 1 MB after compression. A post-compression limit of 1 MB means that all dictionaries combined across a tenant can have close to one million characters.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Keyword dictionary limits
 
-There is a limit of 50 keyword dictionary based sensitive information types that can be created per tenant. To find out how many keyword dictionaries you have in your tenant, connect using the procedures in [Connect to the Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) to connect to your tenant and run this PowerShell script.
+There is a limit of 50 keyword dictionary based sensitive information types that can be created per tenant. To find out how many keyword dictionaries you have in your tenant, connect follow the procedures in [Connect to the Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) to connect to your tenant and then run this PowerShell script:
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"
@@ -70,7 +70,7 @@ Remove-Item $rawFile
 
 ## Basic steps to creating a keyword dictionary
 
-The keywords for your dictionary could come from various sources, most commonly from a file (such as a .csv or .txt list) imported in the service or by PowerShell cmdlet, from a list you enter directly in the PowerShell cmdlet, or from an existing dictionary. When you create a keyword dictionary, you follow the same core steps:
+The keywords for your dictionary can come from various sources, most commonly from a file (such as a .csv or .txt list) imported in the service or via a PowerShell cmdlet, from a list you enter directly in the PowerShell cmdlet, or from an existing dictionary. When you create a keyword dictionary, you follow the same core steps:
 
 1. Use the *<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> or connect to  **Microsoft Purview compliance portal PowerShell**.
 
@@ -84,35 +84,35 @@ Use the following steps to create and import keywords for a custom dictionary:
 
 1. Connect to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
-2. Navigate to **Data Classification > Sensitive info types**.
+2. Navigate to **Data Classifications > Classifiers > Sensitive info types**.
 
-3. Select **Create** and enter a **Name** and **Description** for your sensitive info type, then select **Next**
+3. Select **Create** and enter a **Name** and **Description** for your sensitive info type, then select **Next**.
 
-4. Select **Add an element**, then select **Dictionary (Large keywords)** in the **Detect content containing** drop-down list.
+4. You can use your keyword dictionary as either the primary element or a secondary element. To use a keyword dictionary as the primary element, in the **Primary Element** field, select **Add Primary Element** and then select **Keyword dictionary** in the dropdown list.
 
-5. Select **Add a dictionary**
+5. On the **Add keyword dictionary** page, you can choose from existing dictionaries, upload a dictionary, or create a dictionary.
+    1. To use an existing dictionary,choose **Choose from existing dictionaries**.
+    1. To upload a keyword dictionary, choose **Upload a dictionary** and follow the prompts to upload either a TXT or CSV file.
+    1. To create a dictionary:
+        1. Enter a **Name** for your custom dictionary.
+        1. In the **Keywords** field, enter each keyword in your dictionary on a separate line.
+        1. When you are finished, choose **Done**.
 
-6. Under the Search control, select **You can create new keyword dictionaries here**.
+6. On the next page, choose **Create**.
 
-7. Enter a **Name** for your custom dictionary.
+7. If you want to add additional patterns to your sensitive information type, you can do so on the next page. When finished, choose **Next**.
 
-8. Select **Import**, and select either **From text** or **From csv** depending on your keyword file type.
+8. Confirm the confidence level for your sensitive information type and choose **Next**.
 
-9. In the file dialog, select the keyword file from your local PC or network file share, then select **Open**.
-
-10. Select **Save**, then select your custom dictionary from the **Keyword dictionaries** list.
-
-11. Select **Add**, then select **Next**.
-
-12. Review and finalize your sensitive info type selections, then select **Finish**.
+9. Review and finalize your sensitive info type selections, then select **Create** and then **Done**.
 
 ## Create a keyword dictionary from a file using PowerShell
 
-Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You must first [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+Often when you need to create a large dictionary, it's so you can use keywords from a file or a list exported from some other source. In the example that follows, you'll create a keyword dictionary containing a list of diseases to screen in external email. To begin, you'll need to [connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-1. Copy the keywords into a text file and make sure that each keyword is on a separate line.
+1. Copy your keywords into a text file and make sure that each keyword is on a separate line.
 
-2. Save the text file with Unicode encoding. In Notepad \> **Save As** \> **Encoding** \> **Unicode**.
+2. Save the text file with Unicode encoding. In Notepad, navigate to \> **Save As** \> **Encoding** \> **Unicode**.
 
 3. Read the file into a variable by running this cmdlet:
 
@@ -128,7 +128,7 @@ Often when you need to create a large dictionary, it's to use keywords from a fi
 
 ## Using keyword dictionaries in custom sensitive information types and DLP policies
 
-Keyword dictionaries can be used as part of the match requirements for a custom sensitive information type, or as a sensitive information type themselves. Both require you to create a [custom sensitive information type](create-a-custom-sensitive-information-type-in-scc-powershell.md). Follow the instructions in the linked article to create a sensitive information type. Once you have the XML, you'll need the GUID identifier for the dictionary to use it.
+Keyword dictionaries can be used as part of the match requirements for a custom sensitive information type, or as a sensitive information type themselves. Both require you to create a [custom sensitive information type](create-a-custom-sensitive-information-type-in-scc-powershell.md). Follow the instructions in the linked article to create a sensitive information type. Once you have the XML, you'll need the GUID identifier from the XML in order to use the dictionary.
 
 ```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">
@@ -146,17 +146,17 @@ Get-DlpKeywordDictionary -Name "Diseases"
 
 The output of the command looks like this:
 
-`RunspaceId        : 138e55e7-ea1e-4f7a-b824-79f2c4252255`
-`Identity          : 8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f`
-`Name              : Diseases`
-`Description       : Names of diseases and injuries from ICD-10-CM lexicon`
+`RunspaceId        : 138e55e7-ea1e-4f7a-b824-79f2c4252255` <br>
+`Identity          : 8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f` <br>
+`Name              : Diseases` <br>
+`Description       : Names of diseases and injuries from ICD-10-CM lexicon`<br>
 `KeywordDictionary : aarskog's syndrome, abandonment, abasia, abderhalden-kaufmann-lignac, abdominalgia, abduction contracture, abetalipo`
-                    `proteinemia, abiotrophy, ablatio, ablation, ablepharia, abocclusion, abolition, aborter, abortion, abortus, aboulomania,`
-                    `abrami's disease, abramo`
-`IsValid           : True`
-`ObjectState       : Unchanged`
+                    `proteinemia, abiotrophy, ablatio, ablation, ablepharia,abocclusion, abolition, aborter, abortion, abortus, aboulomania,`
+                    `abrami's disease, abramo` <br>
+`IsValid           : True` <br>
+`ObjectState       : Unchanged` <br>
 
-Paste the identity into your custom sensitive information type's XML and upload it. Now your dictionary will appear in your list of sensitive information types and you can use it right in your policy, specifying how many keywords are required to match.
+Paste the **identity** value into the XML for your custom sensitive information type as the **idRef**. Next, upload the XML file. Your dictionary will now appear in your list of sensitive information types and you can use it right in your policy, specifying how many keywords are required to match.
 
 ```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">

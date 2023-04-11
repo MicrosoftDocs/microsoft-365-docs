@@ -1,31 +1,31 @@
 ---
-title: How to setup automated attacks and training within Attack simulation training 
+title: How to setup automated attacks and training within Attack simulation training
 description: The steps to automate Attack Simulation training and send a payload to target users. By following this guide, you will learn to create automated attack flows with specific techniques and payloads.
-search.product: 
+search.product:
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-guidance-templates
 - m365-security
 - tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 05/10/2022
+ms.date: 1/31/2023
 ---
 
 # How to setup automated attacks and training within Attack simulation training
 
-Attack simulation training lets you run benign attack simulations on your organization to assess your phishing risk and teach your users how to better avoid phish attacks. By following this guide, you will configure automated flows with specific techniques and payloads that run when the specified conditions are met, launching simulations against your organization.
+Attack simulation training lets you run benign attack simulations on your organization to assess your phishing risk and teach your users how to better avoid phish attacks. By following this guide, you can configure automated flows with specific techniques and payloads that run when the specified conditions are met, launching simulations against your organization.
 
 ## What you'll need
 
@@ -41,7 +41,7 @@ Attack simulation training lets you run benign attack simulations on your organi
 1. Name the Simulation automation with something relevant and memorable. *Next*.
 1. Pick the techniques you'd like to use from the flyout. *Next*.
 1. Manually select up to 20 payloads you'd like to use for this automation, or alternatively select Randomize. *Next*.
-1. If you picked OAuth as a Payload, you'll need to enter the name, logo and scope (permissions) you'd like the app to have when it's used in a simulation. *Next*.
+1. If you picked OAuth as a Payload, you need to enter the name, logo and scope (permissions) you'd like the app to have when it's used in a simulation. *Next*.
 1. Choose who to target with the payload, if choosing the entire organization highlight the radio button. *Next*.
 1. Otherwise, select **Add Users** and then search or filter the users with the wizard, press Add User(s). *Next*.
 1. Customize the training if appropriate, otherwise leave Assign training for me (recommended) selected. *Next*.

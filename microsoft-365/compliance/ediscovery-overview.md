@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -48,7 +49,7 @@ Native search and collection capabilities for data in Teams, Yammer, SharePoint 
 - Reconstructs Teams conversations (instead of returning individual messages from conversations).
 - Collects cloud-based content shared with users by use of links or modern attachments in email message and Teams chats.
 - Has built-in support for hundreds of non-Microsoft 365 file types.
-- Collects data from third-party sources (such as Bloomberg, Facebook, Slack, and Zoom Meetings) that's imported and archived in Microsoft 365 by [data connectors](archiving-third-party-data.md).
+- Collects data from third-party sources (such as Bloomberg, Facebook, Slack, and Zoom Meetings) that's imported and archived in Microsoft 365 by [data connectors](archive-third-party-data.md).
 
 ### Manage eDiscovery workflow in one platform
 

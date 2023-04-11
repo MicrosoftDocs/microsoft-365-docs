@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 04/04/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -391,13 +392,16 @@ The templates listed below may be purchased by your organization. Certain licens
 - Romania - Data Protection Law 190/2018  
 - Russia - Federal Law 149-FZ On Information, Information Technology and Information Security
 - [Russian Federation Federal Law Regarding Personal Data](/compliance/regulatory/offering-russia-data-localization)  
+- Saudi Arabia - Saudi Arabia Monetary Authority (SAMA)
+- Saudi Arabia - National Cybersecurity Authority (NCA)
 - South Africa Consumer Protection ACT 68 2008  
 - South Africa Electronic Communications and Transactions Act, 2002  
 - South Africa - Promotion of Access to Information Act  
 - South African POPIA  
 - Slovakia Act on the Protection of Personal Data  
 - Spain - Nation Security Framework  
-- Switzerland - Federal Act on Data Protection (FADP)  
+- Switzerland - Federal Act on Data Protection (FADP)
+- Turkey - Information and Communication Security Guide  
 - Turkey - KVKK Protection of Personal Data 6698
 - UAE - Federal Decree Law on Combating Cyber Crimes  
 - UAE - Federal Law Concerning Electronic Transactions and Commerce

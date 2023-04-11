@@ -23,6 +23,8 @@ ms.date: 10/22/2021
 # Schedule scans with Microsoft Defender for Endpoint (Linux)
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
@@ -109,7 +111,7 @@ sudo grep mdatp /var/log/cron
 sudo nano mdatp_cron_job.log
 ```
 
-## For those who use Ansible, Chef, or Puppet
+## For those who use Ansible, Chef, Puppet, or SaltStack
 
 Use the following commands:
 
@@ -117,6 +119,7 @@ Use the following commands:
 
 ```bash
 cron - Manage cron.d and crontab entries
+```
 
 See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.
 
@@ -124,9 +127,8 @@ See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://d
 
 ```bash
 cron resource
-```bash
-
 ```
+
 See <https://docs.chef.io/resources/cron/> for more information.
 
 ### To set cron jobs in Puppet
@@ -137,9 +139,25 @@ Resource Type: cron
 
 See <https://puppet.com/docs/puppet/5.5/types/cron.html> for more information.
 
-Automating with Puppet: Cron jobs and scheduled tasks
+**Automating with Puppet: Cron jobs and scheduled tasks**
 
 See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/) for more information.
+
+### To manage cron jobs in SaltStack
+
+```bash
+Resource Type: salt.states.cron
+```
+
+**Example:**
+
+```yml
+mdatp scan quick > /tmp/mdatp_scan_log.log:
+  cron.present:
+    - special: '@hourly'
+```
+
+See <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cron.html> for more information.
 
 ## Additional information
 

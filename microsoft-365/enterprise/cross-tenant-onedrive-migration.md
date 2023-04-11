@@ -3,6 +3,7 @@ title: Cross-tenant OneDrive migration overview
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
+ms.date: 10/10/2022
 recommendations: true
 audience: ITPro
 ms.topic: article
@@ -74,6 +75,10 @@ Any legal URL will be accepted when creating your Identity Map from Source to Ta
 ## OneDrive account size limits
 
 Each OneDrive account can have a maximum of 2 TB of content or 1 million items.
+
+>[!Important]
+>If you attempt to migrate any OneDrive site that exceeds the 2GB quota, the transfer will fail.
+
 
 ## Permissions
 

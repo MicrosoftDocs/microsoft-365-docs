@@ -13,15 +13,16 @@ search.appverid:
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
   - m365-security
+  - tier2
 description: To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 09/13/2019
+ms.date: 1/31/2023
 ---
 
 # Services for non-customers sending mail to Microsoft 365
 
-Email abuse, junk email, and fraudulent emails (phishing) continue to burden the entire email ecosystem. To help maintain user trust in the use of email, Microsoft has put various policies and technologies in place to help protect our users. However, Microsoft understands that legitimate email should not be negatively affected. Therefore, we have established a suite of services to help senders improve their ability to deliver email to Microsoft 365 users by proactively managing their sending reputation.
+Email abuse, junk email, and fraudulent emails (phishing) continue to burden the entire email ecosystem. To help maintain user trust in the use of email, Microsoft has put various policies and technologies in place to help protect our users. However, Microsoft understands that legitimate email shouldn't be negatively affected. Therefore, we've established a suite of services to help senders improve their ability to deliver email to Microsoft 365 users by proactively managing their sending reputation.
 
 This overview provides information about benefits we provide to your organization even if you aren't a customer.
 
@@ -31,7 +32,7 @@ This overview provides information about benefits we provide to your organizatio
 |---|---|
 |This online help content|Provides: <ul><li>A starting point for any questions related to delivering communications to EOP users.</li><li>Includes a simple online guide with our policies and requirements.</li><li>An overview of the junk email filters and authentication technologies employed by Microsoft.</li><ul>|
 |[Microsoft support](#microsoft-support)|Provides self-help and escalation support for delivery issues.|
-|[Anti-Spam IP Delist Portal](#anti-spam-ip-delist-portal)|A tool to submit IP delist request. Before submitting this request it is the sender's responsibility to ensure that any further mail originating from the IP in question is not abusive or malicious.|
+|[Anti-Spam IP Delist Portal](#anti-spam-ip-delist-portal)|A tool to submit IP delist request. Before submitting this request, it's the sender's responsibility to ensure that any further mail originating from the IP in question isn't abusive or malicious.|
 |[Abuse and spam reporting for junk email originating from Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Keeps spam and other unwanted mail from being sent from Exchange Online and cluttering up the internet and your mail system.|
 
 ## Microsoft support
@@ -52,7 +53,7 @@ Microsoft offers several support options for people having trouble sending mail 
 
 ## Anti-Spam IP Delist Portal
 
-This is a self-service portal you can use to remove yourself from the Microsoft 365 blocked senders list. Use this portal if you are you getting an error message when you try to send an email to a recipient whose email address is in Microsoft 365 and you don't think you should be. For more information, see [Use the delist portal to remove yourself from the blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+This is a self-service portal you can use to remove yourself from the Microsoft 365 blocked senders list. Use this portal if you're getting an error message when you try to send an email to a recipient whose email address is in Microsoft 365 and you don't think you should be. For more information, see [Use the delist portal to remove yourself from the blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## Abuse and spam reporting for junk email originating from Exchange Online
 

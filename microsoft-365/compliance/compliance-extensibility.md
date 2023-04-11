@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 08/18/2020
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -36,9 +36,9 @@ There are two key building blocks for compliance extensibility:
 
 ## Data connectors
 
-Microsoft provides third-party data connectors that can be configured in the Microsoft Purview compliance portal. For a list of data connectors provided by Microsoft, see the [Third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) table. The table of third-party data connectors also summarizes the compliance solutions that you can apply to third-party data after you import and archive data in Microsoft 365, and links to the step-by-step instructions for each connector.
+Microsoft provides third-party data connectors that can be configured in the Microsoft Purview compliance portal. For a list of data connectors provided by Microsoft, see the [Third-party data connectors](archive-third-party-data.md#third-party-data-connectors) table. The table of third-party data connectors also summarizes the compliance solutions that you can apply to third-party data after you import and archive data in Microsoft 365, and links to the step-by-step instructions for each connector.
 
-To learn more about Microsoft Purview Data Connectors, see [Archiving third-party data](archiving-third-party-data.md). If a third-party data type isn't supported by the data connectors available in the compliance portal, you can work with a partner who can provide you with a custom connector. For a list of partners you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data](work-with-partner-to-archive-third-party-data.md).
+To learn more about Microsoft Purview Data Connectors, see [Archiving third-party data](archive-third-party-data.md). If a third-party data type isn't supported by the data connectors available in the compliance portal, you can work with a partner who can provide you with a custom connector. For a list of partners you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data](archive-partner-third-party-data.md).
 
 ### Prerequisites for data connectors
 
@@ -102,13 +102,13 @@ For the licensing requirements for the use of the Teams Export APIs, see [Micros
 
 With [Microsoft Graph connectors](/microsoftsearch/connectors-overview), organizations can index third-party data so it appears in Microsoft Search results. This feature expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem. The third-party data can be hosted on-premises or in public or private clouds. Starting with eDiscovery (Premium), we're enabling developer preview of built-in compliance value of Microsoft 365 connected apps. This enables compliance for apps integrating into the Microsoft 365 ecosystem to empower users with seamless compliance experiences. To learn more about to how to incorporate Microsoft Graph Connector APIs in your apps view, see [Create, update, and delete connections in the Microsoft Graph](/graph/connecting-external-content-connectors-api-overview).
 
-### Microsoft Graph API for records management (preview)
+### Microsoft Graph API for records management
 
 Organizations of all types require a records management solution to manage critical records across their data. [Microsoft Purview Records Management](records-management.md) helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required.
 
 The records management solution is used by organizations in large volumes to utilize its various capabilities in protecting, labeling, retaining, or deleting their data. The Microsoft Graph APIs for records management lets organizations manage retention labels and their associated actions more efficiently, automate repetitive tasks, and equip customers with flexibility in options.
 
-Now rolling out, the first release of Graph APIs for records management support the management of retention labels, and event-based retention. Example scenarios:
+Now rolling out in general availability, the first release of Graph APIs for records management support the management of retention labels, and event-based retention. Example scenarios:
 
 - **Managing retention labels**
     
@@ -124,6 +124,6 @@ Now rolling out, the first release of Graph APIs for records management support 
     
     They then use the Graph APIs for records management to create an event for the associated event type. The retention period for the confidential documents starts after this event is created.
 
-For more information about the Graph APIs for records management, see [Use the Microsoft Graph Records Management API](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true).
+For more information about the Graph APIs for records management, see [Use the Microsoft Graph Records Management API](/graph/api/resources/security-recordsmanagement-overview).
 
 For licensing requirements to use these APIs, see the records management information from the Microsoft 365 guidance for security & compliance, [Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) section.

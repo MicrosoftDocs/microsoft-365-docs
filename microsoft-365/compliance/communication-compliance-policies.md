@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 03/20/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -81,7 +82,7 @@ The *Report a concern* option is enabled by default and can be controlled via Te
 >[!IMPORTANT]
 >If you're using PowerShell to turn on or turn off the **End user reporting** option in the Teams Admin Center, you must use [Microsoft Teams cmdlets module version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) or later.
 
-## Policy for insider risk management integration (preview)
+## Policy for insider risk management integration
 
 When users experience employment stressors, they may engage in risky activities. Workplace stress may lead to uncharacteristic or malicious behavior by some users that could surface as potentially inappropriate behavior on your organization's messaging systems. Communication compliance can provide risk signals detected in applicable messages to [insider risk management](/microsoft-365/compliance/insider-risk-management) risky user policies by using a dedicated [Detect inappropriate text](#policy-templates) policy. This policy is automatically created (if selected as an option) during configuration of a [Data leaks by risky employees](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-risky-users-preview) or [Security policy violations by risky employees](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-risky-users-preview) policy in insider risk management.
 
@@ -157,21 +158,21 @@ The following table outlines the time to detection for supported content types:
 |:---------------|:--------------------|
 | Email body content | 1 hour |
 | Teams body content | 1 hour |
-| Yammer body content | 13 hours |
-| Email OCR | 13 hours |
-| Teams OCR | 13 hours |
-| Email attachment | 13 hours |
-| Team attachment | 13 hours |
-| Teams modern attachment | 13 hours |
+| Yammer body content | 24 hours |
+| Email OCR | 24 hours |
+| Teams OCR | 24 hours |
+| Email attachment | 24 hours |
+| Team attachment | 24 hours |
+| Teams modern attachment | 24 hours |
 | Teams metadata | 1 hour |
 | Email metadata | 1 hour |
-| Teams shared channels | 13 hours |
+| Teams shared channels | 24 hours |
 
 For existing policies created before July 31, 2022 it may take up to 24 hours to detect messages and review alerts that match these policies. To reduce the latency for these policies, [copy the existing policy](/microsoft-365/compliance/communication-compliance-policies#copy-a-policy) and create a new policy from the copy. If you don't need to retain any data from the older policy, it can be paused or deleted.
 
 To identify an older policy, review *Last policy scan* column on the **Policy** page. Older policies will display a full date for the scan while policies created after July 31, 2022 will display *1 hour ago* for the scan. Another option to reduce latency is to wait until February 28, 2023 for your existing policies to be automatically migrated to the new detection criteria.
 
-## Storage limit notification (preview)
+## Storage limit notification
 
 Each communication compliance policy has a storage limit size of 100 GB or 1 million messages, whichever is reached first. As the policy approaches these limits, notification emails are automatically sent to users assigned to the *Communication Compliance* or *Communication Compliance Admins* role groups. Notifications messages are sent when the storage size or message count reach 80, 90, and 95 percent of the limit. When the policy limit is reached, the policy is automatically deactivated, and the policy stops processing messages for alerts.
 
@@ -253,7 +254,7 @@ Communication compliance policies using classifiers inspect and evaluate message
 | [Unauthorized disclosure (preview)](classifier-tc-definitions.md#unauthorized-disclosure-preview) | Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. |
 
 > [!IMPORTANT]
-> Classifiers in (preview) may detect a large volume of bulk sender/newsletter content due to a known issue. While these classifiers are in preview, you can mitigate the detection of large volumes of bulk sender/newsletter content by adding the [*Message is not sent to any of these domains* condition](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) to your polices with a list of domains to exclude.
+> Classifiers in (preview) may detect a large volume of bulk sender/newsletter content due to a known issue. You can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the [**Filter email blasts** check box](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) when you create the policy. You can also edit an existing policy to turn on this feature. 
 
 ### Optical character recognition (OCR)
 

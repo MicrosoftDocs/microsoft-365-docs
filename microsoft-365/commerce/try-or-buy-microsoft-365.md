@@ -31,6 +31,8 @@ ms.date: 08/07/2020
 
 # Try or buy a Microsoft 365 for business subscription
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 Microsoft 365 for business is a subscription service that lets you run your organization in the cloud while Microsoft takes care of the IT for you. Microsoft manages devices, protects against real-world threats, and provides your organization with the latest in business software. You can sign up for a free trial subscription for Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business and try it out for 30 days.
