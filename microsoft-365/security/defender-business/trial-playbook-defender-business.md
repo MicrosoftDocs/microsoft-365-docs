@@ -113,7 +113,7 @@ Security policies to review and configure include:
 
 - [Next-generation protection policies](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies) which determine antivirus and antimalware protection for your company's devices
 - [Firewall protection and rules](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules) which determine what network traffic is allowed to flow to and from your company's devices
-- [Web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering)which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
+- [Web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering) which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
 - [Advanced features](mdb-configure-security-settings.md#review-settings-for-advanced-features) such as automated investigation and response and endpoint detection and response (EDR) in block mode
 
 ## Start using Defender for Business
