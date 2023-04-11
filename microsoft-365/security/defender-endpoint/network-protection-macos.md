@@ -56,7 +56,7 @@ To prepare for the macOS network protection rollout, we recommend the following:
 
 - You can run your corporate VPN in tandem or "side by side" with network protection. Currently, no VPN conflicts are identified. If you do experience conflicts, you can provide feedback through the feedback channel listed at the bottom of this page.
   - Web content filtering is supported with network protection for macOS.
-  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal are respected in browsers, including Chromium Microsoft Edge for macOS. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 feature, such as Microsoft Defender for Cloud Apps or Custom Indicators currently also require network protection.
+  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal are respected in browsers, including Chromium Microsoft Edge for macOS. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 features, such as Microsoft Defender for Cloud Apps or Custom Indicators, currently also require network protection.
 
 ### Known issues
 
@@ -74,7 +74,7 @@ To prepare for the macOS network protection rollout, we recommend the following:
 
 ## Prerequisites
 
-- Licensing: Microsoft 365 Defender for Endpoint tenant (can be trial)
+- Licensing: Microsoft 365 Defender for Endpoint Plan 1 or Microsoft 365 Defender for Endpoint Plan 2 (can be trial)
 - Onboarded Machines:
   - Minimum macOS version: 11
   - Product version 101.94.13 or later
