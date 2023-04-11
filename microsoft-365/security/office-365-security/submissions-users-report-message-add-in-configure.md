@@ -193,7 +193,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 
 2. On the settings page, select the **Add-ins** option. Then select **Deploy Add-in** followed by **upload custom apps**
 
-3. On the upload custom apps sidepanel, select **I have a URL for the manifest file**.
+3. On the upload custom apps side panel, select **I have a URL for the manifest file**.
 
 4. In the **Add from URL** dialog that opens, enter one of the following URLs:
    - **Report Message**: <https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml>
