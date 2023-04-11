@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 01/23/2023
+ms.date: 04/10/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -29,9 +29,9 @@ description: "Learn how to implement cybersecurity for small or medium sized bus
 
 # Microsoft 365 Business Premium – productivity and cybersecurity for small business
 
-Microsoft 365 Business Premium with its world class productivity tools is a wise choice for small and medium-sized businesses. Designed with cybersecurity in mind, Microsoft 365 Business Premium safeguards your data, devices and information. You are your organization's first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly sophisticated nation states.
+Microsoft 365 Business Premium—with its world class [productivity and cybersecurity](m365bp-secure-users.md) capabilities—is a wise choice for small and medium-sized businesses. Designed for small and medium-sized businesses (up to 300 users), Microsoft 365 Business Premium safeguards your data, devices, and information. 
 
-The task before you is this: let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following six missions: 
+You are your organization's first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly sophisticated nation states. The task before you is this: let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following six missions: 
 
 :::image type="content" source="media/sixmissions.png" alt-text="Diagram listing your six missions.":::
 
