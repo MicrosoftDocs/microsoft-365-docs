@@ -89,7 +89,7 @@ All our updates contain
 
 #### What's new
 
-- Beginning in April 2023, monthly platform and engine version release information now includes two dates: Engine and Platform
+- Beginning in April 2023, monthly platform and engine version release information (in this article) now includes two dates: Engine and Platform
 - Increased file hash support 
 - Added support to protect registry keys against parent keys abuse 
 - Improved tamper protection of registry keys against parent keys abuse  
