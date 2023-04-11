@@ -989,7 +989,7 @@
               href: add-a-new-scan-definition.md
             - name: Get all scan agents
               href: get-all-scan-agents.md
-            - name: Get agents details
+            - name: Get scan agent by Id
               href: Get-agent-details.md
             - name: Get scan history by definition
               href: get-scan-history-by-definition.md
