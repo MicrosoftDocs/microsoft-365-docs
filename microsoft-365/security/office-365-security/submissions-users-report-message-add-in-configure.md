@@ -126,7 +126,7 @@ Install and configure the Report Message or Report Phishing add-ins for the orga
 
 ### Get the Report Message or Report Phishing add-in for your organization
 
-1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, expand **Show all** if necessary, and then go to **Settings** \> **Integrated apps**. Or, to directly to the **Integrated apps** page, use <https://admin.microsoft.com/Adminportal/Home#/Settings/IntegratedApps>.
+1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, expand **Show all** if necessary, and then go to **Settings** \> **Integrated apps**. Or, to go directly to the **Integrated apps** page, use <https://admin.microsoft.com/Adminportal/Home#/Settings/IntegratedApps>.
 
 2. On the **Integrated apps** page, click ![Get apps icon.](../../media/m365-cc-sc-get-apps-icon.png)**Get apps**.
 
@@ -216,7 +216,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 
 ### View and edit settings for the Report Message or Report Phishing add-ins
 
-1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, expand **Show all** if necessary, and then go to **Settings** \> **Integrated apps**. Or, to directly to the **Integrated apps** page, use <https://admin.microsoft.com/Adminportal/Home#/Settings/IntegratedApps>.
+1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, expand **Show all** if necessary, and then go to **Settings** \> **Integrated apps**. Or, to go directly to the **Integrated apps** page, use <https://admin.microsoft.com/Adminportal/Home#/Settings/IntegratedApps>.
 
    > [!NOTE]
    > Although the screenshots in the remaining steps show the **Report Message** add-in, the steps are identical for the **Report Phishing** add-in.
