@@ -1391,7 +1391,7 @@
       items:
         - name: Overview of Content search
           href: search-for-content.md
-        - name: Search for content
+        - name: Get started with Content search
           href: ediscovery-content-search.md          
           items: 
           - name: Search for content in Teams
@@ -1520,7 +1520,7 @@
       items:
         - name: Overview
           href: ediscovery-overview.md
-        - name: Set up eDiscovery (Premium)
+        - name: Get started with eDiscovery (Premium)
           href: ediscovery-premium-get-started.md
         - name: eDiscovery (Premium) with Microsoft Teams
           items:
