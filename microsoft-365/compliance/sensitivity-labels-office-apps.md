@@ -304,7 +304,7 @@ For guidance about when to use this setting, see the information about [policy s
 > [!NOTE]
 > If you use the default label policy setting for documents and emails in addition to mandatory labeling: 
 >
-> The default label always takes priority over mandatory labeling. However, if you use a version of built-in labeling that doesn't yet support a default label for existing documents, users will be prompted  to apply a sensitivity label with each new document.
+> The default label always takes priority over mandatory labeling. However, if you use a version of built-in labeling that doesn't yet support a default label for existing documents, users will be prompted to apply a sensitivity label with each new document.
 >
 > Identify the minimum versions of Word, Excel, and PowerPoint that support a default label for existing documents by using the [capabilities table](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Apply a default label to existing documents**.
 
@@ -391,7 +391,7 @@ Before you can scope a label to just files or emails, you must first remove it i
 ## Configure a label to apply S/MIME protection in Outlook
 
 > [!NOTE]
-> This capability is available for built-in labeling for Windows, Mac, iOS, and Android, but it's not yet available for Outlook on the web. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook) and the row **Apply S/MIME protection**.
+> Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook) and the row **Apply S/MIME protection**.
 > 
 > If you configure a label to apply S/MIME protection but your version of Outlook for Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies.
 
