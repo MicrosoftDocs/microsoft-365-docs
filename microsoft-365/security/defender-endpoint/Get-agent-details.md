@@ -88,13 +88,7 @@ If successful, this method returns 200 - OK response code with the details of th
 Here is an example of the request.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanAgents/7f3d76a6976818553e996875dc91f55df6b26625
-```
-
-```json
-{
-    "AgentId": ["625431694b7dcca07e77a1b029ef216bb6d"]
-}
+GET https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanAgents/7f3d76a6976818553e996875dc91f55df6b26625
 ```
 
 ## Response example
