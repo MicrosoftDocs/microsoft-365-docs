@@ -52,8 +52,8 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
 > [!TIP]
 > Need some help? See the following resources:
 >
-> - [Configure Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
-> - [Add endpoint protection settings in Intune](/mem/intune/protect/endpoint-protection-configure)
+> - [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy)
+> - [Configure Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) (Configuration Manager)
 
 ## Use Group Policy to specify the level of cloud protection
 
