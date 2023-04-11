@@ -49,6 +49,7 @@ Method|Description
 [Get all scan definitions](get-all-scan-definitions.md)|List all scan definitions.
 [Add, delete or update a scan definition](add-a-new-scan-definition.md)|Add, delete, or update a new scan definition.
 [Get all scan agents](get-all-scan-agents.md)|List all scan agents.
+[Get scan agent by Id](../defender-endpoint/Get-agent-details.md)| Retrieves the details for a specified agent by its Id.
 [Get scan history by definition](get-scan-history-by-definition.md)|List scan definition history.
 [Get scan history by session](get-scan-history-by-session.md)|List scan history for a session.
 

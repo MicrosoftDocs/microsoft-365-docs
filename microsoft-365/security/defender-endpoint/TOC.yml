@@ -990,7 +990,7 @@
             - name: Get all scan agents
               href: get-all-scan-agents.md
             - name: Get scan agent by Id
-              href: Get-agent-details.md
+              href: get-agent-details.md
             - name: Get scan history by definition
               href: get-scan-history-by-definition.md
             - name: Get scan history by session
