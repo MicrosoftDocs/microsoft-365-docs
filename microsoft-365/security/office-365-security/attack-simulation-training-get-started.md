@@ -80,7 +80,7 @@ In Attack simulation training, multiple types of social engineering techniques a
 
 - **Link in Attachment**: This is a hybrid of a credential harvest. An attacker sends the recipient a message that contains a URL inside of an attachment. When the recipient opens the attachment and clicks on the URL, they're taken to a website that typically shows a dialog box that asks the user for their username and password. Typically, the destination page is themed to represent a well-known website in order to build trust in the user.
 
-- **Link to Malware**: An attacker sends the recipient a message that contains a link to an attachment on a well-known file sharing site (for example, SharePoint Online or Dropbox). When the recipient clicks on the URL, the attachment opens and arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
+- **Link to Malware**: An attacker sends the recipient a message that contains a link to an attachment on a well-known file sharing site (for example, SharePoint Online or Dropbox). When the recipient clicks on the URL, the attachment opens, and arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
 
 - **Drive-by-url**: An attacker sends the recipient a message that contains a URL. When the recipient clicks on the URL, they're taken to a website that tries to run background code. This background code attempts to gather information about the recipient or deploy arbitrary code on their device. Typically, the destination website is a well-known website that has been compromised or a clone of a well-known website. Familiarity with the website helps convince the user that the link is safe to click. This technique is also known as a *watering hole attack*.
 
@@ -155,7 +155,6 @@ The URLs that are used by Attack simulation training are described in the follow
 - <https://www.supportin.de>
 - <https://www.supportin.fr>
 - <https://www.supportin.it>
-- <https://www.supportres.com>
 - <https://www.supportres.de>
 - <https://www.supportres.fr>
 - <https://www.supportres.it>
@@ -164,11 +163,9 @@ The URLs that are used by Attack simulation training are described in the follow
 - <https://www.techidal.de>
 - <https://www.techidal.fr>
 - <https://www.techidal.it>
-- <https://www.techidal.org>
 - <https://www.techniel.de>
 - <https://www.techniel.fr>
 - <https://www.techniel.it>
-- <https://www.techniel.org>
 - <https://www.bankmenia.es>
 - <https://www.banknown.es>
 - <https://www.browsersch.es>
@@ -178,18 +175,13 @@ The URLs that are used by Attack simulation training are described in the follow
 - <https://www.exportants.es>
 - <https://www.financerta.es>
 - <https://www.financerts.es>
-- <https://www.passwordle.es>
 - <https://www.prizeably.es>
 - <https://www.resetts.es>
 - <https://www.securembly.es>
 - <https://www.securetta.es>
 - <https://www.supportin.es>
 - <https://www.supportres.es>
-- <https://www.techidal.es>
 - <https://www.techniel.es>
-- <https://www.msteamsexternalone.com>
-- <https://www.msteamsexternaltwo.com>
-- <https://www.attacksimulationtraining.com>
 - <https://www.mcsharepoint.com>
 - <https://www.mesharepoint.com>
 - <https://www.officence.com>
@@ -226,8 +218,6 @@ The URLs that are used by Attack simulation training are described in the follow
 - <https://www.prizegiveaway.net>
 - <https://www.salarytoolint.net>
 - <https://www.docdeliveryapp.net>
-- <https://www.securescoreteam.com>
-- <https://www.securescoreteam.net>
 
 
 > [!NOTE]
