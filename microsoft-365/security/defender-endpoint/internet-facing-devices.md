@@ -88,10 +88,10 @@ Use this query to find all devices that are internet facing.
 ```kusto
 // Find all devices that are internet-facing
 DeviceInfo
-|where IsInternetFacing
-|extend InternetFacingInfo  = AdditionalFields
-|extend InternetFacingReason = extractjson("$.InternetFacingReason", InternetFacingInfo, typeof(string)), InternetFacingLocalPort = extractjson("$.InternetFacingLocalPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicPort = extractjson("$.InternetFacingScannedPublicPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicIp = extractjson("$.InternetFacingScannedPublicIp", InternetFacingInfo, typeof(string)), InternetFacingLocalIp = extractjson("$.InternetFacingLocalIp", InternetFacingInfo, typeof(string)),   InternetFacingTransportProtocol=extractjson("$.InternetFacingTransportProtocol", InternetFacingInfo, typeof(string)), InternetFacingLastSeen = extractjson("$.InternetFacingLastSeen", InternetFacingInfo, typeof(datetime))
-|summarize arg_max(Timestamp, *) by DeviceId
+| where IsInternetFacing
+| extend InternetFacingInfo  = AdditionalFields
+| extend InternetFacingReason = extractjson("$.InternetFacingReason", InternetFacingInfo, typeof(string)), InternetFacingLocalPort = extractjson("$.InternetFacingLocalPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicPort = extractjson("$.InternetFacingScannedPublicPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicIp = extractjson("$.InternetFacingScannedPublicIp", InternetFacingInfo, typeof(string)), InternetFacingLocalIp = extractjson("$.InternetFacingLocalIp", InternetFacingInfo, typeof(string)),   InternetFacingTransportProtocol=extractjson("$.InternetFacingTransportProtocol", InternetFacingInfo, typeof(string)), InternetFacingLastSeen = extractjson("$.InternetFacingLastSeen", InternetFacingInfo, typeof(datetime))
+| summarize arg_max(Timestamp, *) by DeviceId
 ```
 
 This query returns the following fields for each internet-facing device with their aggregated evidence in the “AdditionalFields” column.
@@ -111,9 +111,9 @@ Use the following query for devices tagged with the reason **This device was det
 
 ```kusto
 DeviceNetworkEvents
-|where DeviceId == ""
-|where Protocol == "Tcp"
-|where ActionType == "InboundInternetScanInspected"
+| where DeviceId == ""
+| where Protocol == "Tcp"
+| where ActionType == "InboundInternetScanInspected"
 ```
 
 Use the following query for devices tagged with the reason **This device received external incoming communication**:
@@ -121,13 +121,13 @@ Use the following query for devices tagged with the reason **This device receive
 ```kusto
 // Query on inbound connection accepted events
 DeviceNetworkEvents
-|where Timestamp > ago(7d)
-|where DeviceId == ""
-|where not(InitiatingProcessCommandLine has_any ("TaniumClient.exe", "ZSATunnel.exe", "MsSense.exe"))
-|where ActionType =="InboundConnectionAccepted"
-|extend LocalIP = replace(@"::ffff:", "", LocalIP),RemoteIP = replace(@"::ffff:", "", RemoteIP)
-|where LocalIP!= RemoteIP and RemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") and not(ipv4_is_private( RemoteIP ))
-|project-reorder DeviceId, LocalIP, LocalPort, RemoteIP, RemotePort, InitiatingProcessCommandLine, InitiatingProcessId, DeviceName
+| where Timestamp > ago(7d)
+| where DeviceId == ""
+| where not(InitiatingProcessCommandLine has_any ("TaniumClient.exe", "ZSATunnel.exe", "MsSense.exe"))
+| where ActionType =="InboundConnectionAccepted"
+| extend LocalIP = replace(@"::ffff:", "", LocalIP),RemoteIP = replace(@"::ffff:", "", RemoteIP)
+| where LocalIP!= RemoteIP and RemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") and not(ipv4_is_private( RemoteIP ))
+| project-reorder DeviceId, LocalIP, LocalPort, RemoteIP, RemotePort, InitiatingProcessCommandLine, InitiatingProcessId, DeviceName
 ```
 
 >[!Note]
@@ -137,9 +137,9 @@ For UDP connections, gain insights into devices that were identified as host rea
 
 ```kusto
 DeviceNetworkEvents
-|where DeviceId == ""
-|where Protocol == "Udp"
-|where ActionType == "InboundInternetScanInspected"
+| where DeviceId == ""
+| where Protocol == "Udp"
+| where ActionType == "InboundInternetScanInspected"
 ```
 
 If the above queries fails to provide the relevant connections, you can use socket collection methods to retrieve the source process. To learn more about different tools and capabilities available to do this, see:
