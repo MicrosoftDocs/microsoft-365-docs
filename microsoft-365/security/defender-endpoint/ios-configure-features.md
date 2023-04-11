@@ -318,7 +318,7 @@ Defender for Endpoint on iOS supports vulnerability assessments of apps only for
 
 > [!NOTE]
 > To get the list of all the apps including un-managed apps,
-> For the supervised devices marked as "Personal" in the Intune Admin Portal,admin needs to enable the second toggle also  **Send full application inventory data on personally owned iOS/iPad OS Devices**.
+> For the supervised devices marked as "Personal" in the Intune Admin Portal,admin needs to enable the second toggle also  **Send full application inventory data on personally owned iOS/iPadOS devices**.
 > For the supervised devices marked as "Corporate" in the Intune Admin Portal, enabling the second toggle is not needed.
 
 ### On an Unsupervised Device
@@ -327,7 +327,7 @@ Defender for Endpoint on iOS supports vulnerability assessments of apps only for
 
    :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="App sync toggle" lightbox="images/tvm-app-sync-toggle.png":::
 
-1. To get the list of all the apps including un-managed apps, Enable the toggle **Send full application inventory data on personally owned iOS/iPad OS Devices**.
+1. To get the list of all the apps including un-managed apps, Enable the toggle **Send full application inventory data on personally owned iOS/iPadOS devices**.
 
     :::image type="content" source="images/tvm-full-app-data.png" alt-text="Full App Data" lightbox="images/tvm-full-app-data.png":::
 
