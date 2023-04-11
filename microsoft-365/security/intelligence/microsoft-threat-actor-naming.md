@@ -28,7 +28,7 @@ Microsoft categorizes threat actors into five key groups:
 
 **Nation state actors:** cyber operators acting on behalf of or directed by a nation/state-aligned program, irrespective of whether for espionage, financial gain, or retribution. Microsoft has observed that most nation state actors continue to focus operations and attacks on government agencies, intergovernmental organizations, non-governmental organizations, and think tanks for traditional espionage or surveillance objectives.
 
-**Financially motivated actors:** cyber campaigns/groups that are directed by a criminal organization/person with motivations of financial gain and have not been associated with high confidence to a known non-nation state or commercial entity. This category includes ransomware operators, business email compromise, phishing, and other groups with purely financial or extortion motivations.
+**Financially motivated actors:** cyber campaigns/groups that are directed by a criminal organization/person with motivations of financial gain and haven't been associated with high confidence to a known non-nation state or commercial entity. This category includes ransomware operators, business email compromise, phishing, and other groups with purely financial or extortion motivations.
 
 **Private sector offensive actors (PSOAs):** cyber activity led by commercial actors that are known/legitimate legal entities, that create and sell cyberweapons to customers who then select targets and operate the cyberweapons. These tools threaten many global human rights efforts, as they have been observed targeting and surveilling dissidents, human rights defenders, journalists, civil society advocates, and other private citizens.
 
@@ -36,7 +36,7 @@ Microsoft categorizes threat actors into five key groups:
 
 **Groups in development:** a temporary designation given to an unknown, emerging, or developing threat activity that allows Microsoft to track it as a discreet set of information until we can reach high confidence about the origin or identity of the actor behind the operation. Once criteria are met, a group in development is converted to a named actor or merged into existing names.
 
-In our new taxonomy, a weather event or *family name* represents one of the above categories. In the case of nation state actors, we have assigned a family name to a country of origin tied to attribution. For example, Typhoon indicates origin or attribution to China. For other actors, the family name represents a motivation, like Tempest indicates financially motivated actors. Each weather event family name is paired with an adjective to create an identifier for each unique actor groups identified within the same "family" based on analysis of their unique tactics, techniques, and procedures (TTPs), infrastructure, objectives, or other identified patterns. For groups in development, where there is a newly discovered, unknown, emerging, or developing cluster of threat activity, we use a temporary designation of *Storm* and a four-digit number, allowing us to track it as a unique set of information until we can reach high confidence about the origin or identity of the actor behind the operation.
+In our new taxonomy, a weather event or *family name* represents one of the above categories. In the case of nation state actors, we've assigned a family name to a country of origin tied to attribution. For example, *Typhoon* indicates origin or attribution to China. For other actors, the family name represents a motivation. In our list, *Tempest* indicates financially motivated actors. Each weather event family name is paired with an adjective to create an identifier for each unique actor group identified within the same "family" based on analysis of their unique tactics, techniques, and procedures (TTPs), infrastructure, objectives, or other identified patterns. For groups in development, where there's a newly discovered, unknown, emerging, or developing cluster of threat activity, we use a temporary designation of *Storm* and a four-digit number, allowing us to track it as a unique set of information until we can reach high confidence about the origin or identity of the actor behind the operation.
 
 The table below shows how the new family names map to a sampling of the threat actors that we track.
 
@@ -48,7 +48,7 @@ The table below shows how the new family names map to a sampling of the threat a
 |Influence operations|Influence operations|Flood|
 |Groups in development|Groups in development|Storm|
 
-Please use the reference table below as a guide to understand how our previously publicly disclosed old actor names translate to our new taxonomy.
+Use the reference table below as a guide to understand how our previously publicly disclosed old actor names translate to our new taxonomy.
 
 |**Previous name**|**New name**|**Origin/Threat**|
 |---|:---:|:---:|
