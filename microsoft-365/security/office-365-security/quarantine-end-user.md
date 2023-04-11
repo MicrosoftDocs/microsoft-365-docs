@@ -314,9 +314,9 @@ Click the **Microsoft Message Header Analyzer** link to analyze the header field
 
 ### Block email senders from quarantine
 
-The Block senders action adds the message sender to your Blocked Senders list in the your mailbox. For more information about users blocking senders, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
+The Block senders action adds the message sender to the Blocked Senders list in the your mailbox. For more information about blocking senders, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
 
-After you select the message, use either of the following methods to add the message sender to the Blocked Senders list in **your** mailbox:
+After you select the message, use either of the following methods to add the message sender to the Blocked Senders list in your mailbox:
 
 - **On the Email tab**: Click ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More** \> ![Block sender icon.](../../media/m365-cc-sc-block-sender-icon.png) **Block sender**.
 - **In the details flyout of the selected message**: Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** \> ![Block sender icon.](../../media/m365-cc-sc-block-sender-icon.png) **Block sender**.
