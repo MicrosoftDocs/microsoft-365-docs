@@ -87,5 +87,5 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
 
 ## See also
 
-- [Why cloud protection should be enabled for Microsoft Defender Antivirus](why-cloud-protection-should-be-on-mdav.md)
 - [Onboard non-Windows devices to Defender for Endpoint](configure-endpoints-non-windows.md)
+- [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md)
