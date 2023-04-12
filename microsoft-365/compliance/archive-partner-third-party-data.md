@@ -544,9 +544,9 @@ Here are the steps to access and accept the request to register the connector:
 
    ![The permissions request dialog is displayed.](../media/O365-ThirdPartyDataConnector-OptIn1.png)
 
-2. Click **Accept**.
+2. Select **Accept**.
 
-After you accept the request, the [Azure portal](https://portal.azure.com) is displayed. To view the list of applications for your organization, click **Azure Active Directory** > **Enterprise applications**. The Microsoft 365 third-party data connector is listed on the **Enterprise applications** blade.
+After you accept the request, the [Azure portal](https://portal.azure.com) is displayed. To view the list of applications for your organization, select **Azure Active Directory** > **Enterprise applications**. The Microsoft 365 third-party data connector is listed on the **Enterprise applications** blade.
 
 > [!IMPORTANT]
 > After September 30, 2018, third-party data will no longer be imported into mailboxes in your organization if you don't register a third-party data connector in Azure Active Directory. Note existing third-party data connectors (those created before September 30, 2018) must also be registered in Azure Active Directory by following the procedure in Step 5.
