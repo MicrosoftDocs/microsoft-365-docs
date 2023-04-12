@@ -46,9 +46,9 @@ Microsoft Feed doesn’t change any permissions, so each user has a unique feed 
 
 ## What controls are available?
 
-Microsoft Feed is built on Microsoft 365 and implicitly respects all settings and restrictions enabled by admins and users, such as People Insights (see more information on how to [Customize people insights privacy in Microsoft Graph](/graph/insights-customize-item-insights-privacy)), and Item Insights (see more information on how item insights setting works [Item insights overview](/graph/item-insights-overview)).
+Microsoft Feed is built on Microsoft 365 and implicitly respects all settings and restrictions enabled by admins and users, such as People Insights (see more information on how to [Customize people insights privacy in Microsoft Graph](/graph/insights-customize-people-insights-privacy)), and Item Insights (see more information on how item insights setting works [Item insights overview](/graph/item-insights-overview)).
 
-In addition, Microsoft Feed respects LinkedIn visibility settings (when a user prefers to limit the visibility of their profile information outside of LinkedIn). To learn more, see [Off-LinkedIn Visibility | LinkedIn Help](https://www.linkedin.com/help/linkedin/answer), and [Disconnecting Your LinkedIn and Microsoft Accounts and Managing Your Data | LinkedIn Help](https://www.linkedin.com/help/linkedin/answer).
+In addition, Microsoft Feed respects LinkedIn visibility settings (when a user prefers to limit the visibility of their profile information outside of LinkedIn). To learn more, see [Off-LinkedIn Visibility | LinkedIn Help](https://www.linkedin.com/help/linkedin/answer/a1340507), and [Disconnecting Your LinkedIn and Microsoft Accounts and Managing Your Data | LinkedIn Help](https://www.linkedin.com/help/linkedin/answer/a552108).
 
 In Microsoft 365, as a tenant admin, if you want to disable the new experience, you can contact Microsoft via a service request to turn off Microsoft Feed. This is a temporary solution which removes the Feed icon from the left navigation of Microsoft 365.
 
