@@ -36,7 +36,7 @@ Next-generation technologies in Microsoft Defender Antivirus provide near-instan
 [:::image type="content" source="images/mde-cloud-protection.png" alt-text="Diagram showing how cloud protection works together with Microsoft Defender Antivirus" lightbox="images/mde-cloud-protection.png":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 > [!TIP]
-> We recommend keeping cloud protection turned on. To learn more, see [Why cloud protection should be enabled for Microsoft Defender Antivirus](why-cloud-protection-should-be-on-mdav.md). 
+> We recommend keeping cloud protection turned on. To learn more, see [Why cloud protection should be turned on](enable-cloud-protection-microsoft-defender-antivirus.md#why-cloud-protection-should-be-turned-on). 
 
 ## How cloud protection works
 
@@ -66,20 +66,3 @@ Cloud protection is enabled by default. However, you might need to re-enable it 
 
 If your subscription includes Windows 10 E5, you can take advantage of emergency dynamic intelligence updates, which provide near real-time protection from emerging threats. When you turn on cloud protection, fixes for malware issues can be delivered via the cloud within minutes, instead of waiting for the next update. See [Configure Microsoft Defender Antivirus to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates).
 
-## Next steps
-
-Now that you have an overview of cloud protection in Microsoft Defender Antivirus, here are some next steps:
-
-1. See [Why cloud protection should be enabled for Microsoft Defender Antivirus](why-cloud-protection-should-be-on-mdav.md).
-
-2. Proceed to [Enable cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md)
-
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)

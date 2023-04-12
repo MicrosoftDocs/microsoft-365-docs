@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: how-to
 author: denisebmsft
 ms.author: deniseb
-ms.date: 03/28/2023
+ms.date: 04/11/2023
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
@@ -30,16 +30,13 @@ search.appverid: met150
 
 Cloud protection works together with Microsoft Defender Antivirus to deliver protection to your devices faster than through traditional security intelligence updates. You can configure your level of cloud protection by using Microsoft Intune (recommended) or Group Policy.
 
-> [!NOTE]
-> Selecting **High**, **High +**, or **Zero tolerance** could cause some legitimate files to be detected. If that happens, you can unblock the detected file or dispute that detection in the Microsoft 365 Defender portal.
-
 ## Use Microsoft Intune to specify the level of cloud protection
 
 1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
 2. Choose **Endpoint security** \> **Antivirus**.
 
-3. Select an antivirus profile. (If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
+3. Select an antivirus profile. If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
 
 4. Select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
 
@@ -55,8 +52,8 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
 > [!TIP]
 > Need some help? See the following resources:
 >
-> - [Configure Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
-> - [Add endpoint protection settings in Intune](/mem/intune/protect/endpoint-protection-configure)
+> - [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy)
+> - [Configure Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) (Configuration Manager)
 
 ## Use Group Policy to specify the level of cloud protection
 
@@ -90,5 +87,5 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
 
 ## See also
 
-- [Why cloud protection should be enabled for Microsoft Defender Antivirus](why-cloud-protection-should-be-on-mdav.md)
 - [Onboard non-Windows devices to Defender for Endpoint](configure-endpoints-non-windows.md)
+- [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md)
