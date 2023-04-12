@@ -17,7 +17,7 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/28/2022
+ms.date: 03/21/2023
 ---
 
 # Use PowerShell to connect Shifts to UKG Dimensions
@@ -92,8 +92,8 @@ The script does the following actions. You'll be prompted to enter setup and con
 1. Configures the Shifts connector.
 1. Applies sync settings. These settings include the sync frequency (in minutes) and the schedule data that's synced between UKG Dimensions and Shifts. Schedule data is defined in the following parameters:
 
-    - The **enabledConnectorScenarios** parameter defines data that's synced from UKG Dimensions to Shifts. Options are `Shift`, `SwapRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
-    - The **enabledWfiScenarios** parameter defines data that's synced from Shifts to UKG Dimensions. Options are `SwapRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
+    - The **enabledConnectorScenarios** parameter defines data that's synced from UKG Dimensions to Shifts. Options are `Shift`, `SwapRequest`, `OfferShiftRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
+    - The **enabledWfiScenarios** parameter defines data that's synced from Shifts to UKG Dimensions. Options are `SwapRequest`, `OfferShiftRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
 
     To learn more, see [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance). To see the list of supported sync options for each parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector).
 
