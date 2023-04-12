@@ -17,7 +17,7 @@ ms.custom:
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/5/2023
+ms.date: 4/11/2023
 ---
 
 # Quarantine policies
@@ -32,9 +32,9 @@ ms.date: 4/5/2023
 In Exchange Online Protection (EOP) and Microsoft Defender for Office 365, _quarantine policies_ allow admins to define the user experience for quarantined messages:
 
 - What users are allowed to do to their own quarantined messages (messages where they're a recipient) based on why the message was quarantined.
-- Whether users receive notifications about their quarantined messages via [Quarantine notifications](quarantine-quarantine-notifications.md).
+- Whether users receive periodic notifications about their quarantined messages via [quarantine notifications](quarantine-quarantine-notifications.md).
 
-Traditionally, users have been allowed or denied levels of interactivity for quarantine messages based on why the message was quarantined. For example, users can view and release messages that were quarantined as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing or malware.
+Traditionally, users have been allowed or denied levels of interactivity with quarantine messages based on why the message was quarantined. For example, users can view and release messages that were quarantined as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing or malware.
 
 Default quarantine policies enforce these historical user capabilities, and are automatically assigned in [supported protection features](#step-2-assign-a-quarantine-policy-to-supported-features) that quarantine messages.
 
@@ -69,16 +69,16 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 2. On the **Quarantine policies** page, click ![Add custom policy icon.](../../media/m365-cc-sc-create-icon.png) **Add custom policy** to start the new quarantine policy wizard.
 
-3. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. The policy name is selectable in drop down list in upcoming steps.
+3. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. The policy name is selectable in drop down lists in upcoming steps.
 
    When you're finished on the **Policy name** page, click **Next**.
 
 4. On the **Recipient message access** page, select one of the following values:
-   - **Limited access**: The individual permissions that are included in this permission group are described in the [Appendix](#appendix) section.
+   - **Limited access**: The individual permissions that are included in this permission group are described in the [Appendix](#appendix) section. Basically, users can do anything to their quarantined messages except release them from quarantine without admin approval. 
 
    - **Set specific access (Advanced)**: Use this value to specify custom permissions. Configure the following settings that appear:
      - **Select release action preference**: Select one of the following values from the drop down:
-       - Blank: This is the default value.
+       - Blank: Users can't release or request the release of their messages from quarantine. This is the default value.
        - **Allow recipients to request a message to be released from quarantine**
        - **Allow recipients to release a message from quarantine**
      - **Select additional actions recipients can take on quarantined messages**: Select some, all, or none of the following values:
@@ -134,9 +134,9 @@ The required order and values for each individual permission are described in th
 |PermissionToPreview|2|00000010|
 |PermissionToDelete|1|00000001|
 
-¹ The value 0 doesn't hide the **View message header** button in the details of the quarantined message (the button is always available).
+¹ The value 0 doesn't hide the **View message header** button (the button is always available).
 
-² The PermissionToAllowSender permission isn't used (the value 0 or 1 does nothing).
+² This permission isn't used (the value 0 or 1 does nothing).
 
 ³ Don't set both of these permission values to 1. Set one permission value to 1 and the other value to 0, or set both values to 0.
 
@@ -298,7 +298,7 @@ If you'd rather use PowerShell to assign quarantine policies in anti-phishing po
 
 **Notes**:
 
-- Quarantine policies in anti-phish policies matter only when messages are quarantined. In anti-phish policies, messages are quarantined when the _Enable\*_ parameter value for the feature is $true **and** the corresponding _*\Action_ parameter value is Quarantine. The default value for the _EnableMailboxIntelligence_ and _EnableSpoofIntelligence_ parameters is $true, so you don't need to use them when you create new anti-phish policies in PowerShell. By default, no _*\Action_ parameters have the value Quarantine.
+- Quarantine policies matter only when messages are quarantined. In anti-phish policies, messages are quarantined when the _Enable\*_ parameter value for the feature is $true **and** the corresponding _*\Action_ parameter value is Quarantine. The default value for the _EnableMailboxIntelligence_ and _EnableSpoofIntelligence_ parameters is $true, so you don't need to use them when you create new anti-phish policies in PowerShell. By default, no _*\Action_ parameters have the value Quarantine.
 
   To see the important parameter values in existing anti-phish policies, run the following command:
 
@@ -657,27 +657,24 @@ The relationship between permissions, permissions groups, and the default quaran
 |---|:---:|:---:|:---:|
 |**Block sender** (_PermissionToBlockSender_)||✔|✔|
 |**Delete** (_PermissionToDelete_)||✔|✔|
-|**Preview** (_PermissionToPreview_)||✔|✔|
-|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)¹|||✔|
+|**Preview** (_PermissionToPreview_)¹||✔|✔|
+|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)²|||✔|
 |**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||✔||
 
 |Default quarantine policy|Permission group used|Quarantine notifications enabled?|
 |---|:---:|:---:|
 |AdminOnlyAccessPolicy|No access|No|
 |DefaultFullAccessPolicy|Full access|No|
-|DefaultFullAccessWithNotificationPolicy²|Full access|Yes|
-|NotificationEnabledPolicy³|Full access|Yes|
+|DefaultFullAccessWithNotificationPolicy³|Full access|Yes|
+|NotificationEnabledPolicy⁴|Full access|Yes|
 
-¹ **Allow recipients to release a message from quarantine** isn't honored for messages that were quarantined by the following verdicts:
+¹ The **Preview** permission is unrelated to the **Review message** button that's available in quarantine notifications.
 
-- **Malware** by anti-malware policies or Safe Attachments policies.
-- **High confidence phishing** by anti-spam policies.
+² **Allow recipients to release a message from quarantine** isn't honored for messages that were quarantined as **malware** by anti-malware policies or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies.
 
-In other words, users can never release their own malware or high confidence phishing messages from quarantine, regardless of how you configure the quarantine policy. At best, admins can create and use a custom quarantine policy with the **Allow recipients to request a message to be released from quarantine** permission, although we typically don't recommend it.
+³ This policy is used in [preset security policies](preset-security-policies.md) instead of the DefaultFullAccessPolicy policy to enable quarantine notifications.
 
-² This policy is used in [preset security policies](preset-security-policies.md) instead of the DefaultFullAccessPolicy policy to enable quarantine notifications.
-
-³ Your organization might not have the policy named NotificationEnabledPolicy as described in the next section.
+⁴ Your organization might not have the policy named NotificationEnabledPolicy as described in the next section.
 
 #### Full access permissions and quarantine notifications
 
@@ -700,7 +697,10 @@ To give users **Full access** permissions _and_ quarantine notifications, organi
 
 ### Quarantine policy permission details
 
-The following sections describe the effects of preset permission groups and individual permissions for uses in quarantined messages and in quarantine notifications.
+The following sections describe the effects of preset permission groups and individual permissions for users in quarantined messages and in quarantine notifications.
+
+> [!NOTE]
+> As explained earlier, quarantine notifications are turned on only in the default policies named DefaultFullAccessWithNotificationPolicy or ([if your organization is old enough](#full-access-permissions-and-quarantine-notifications)) NotificationEnabledPolicy.
 
 #### Preset permissions groups
 
@@ -710,111 +710,99 @@ The individual permissions that are included in preset permission groups are des
 
 If the quarantine policy assigns **No access** permissions (admin only access), users can't see quarantined messages:
 
-- **Message details in quarantine**: The quarantined messages aren't visible to the user.
-- **Quarantine notifications**: No notifications are sent for those quarantined messages.
+- **On the Quarantine page**: The quarantined messages aren't visible to the user.
+- **In quarantine notifications**: By default, quarantine notifications aren't sent for quarantined messages (notifications aren't turned on in the default policy named AdminOnlyAccessPolicy).
 
 ##### Limited access
 
 If the quarantine policy assigns **Limited access** permissions, users get the following capabilities:
 
-- **Message details in quarantine**: The following buttons are available:
+- **On the Quarantine page and in the message details in quarantine**: The following actions are available:
+  - ![Request release icon.](../../media/m365-cc-sc-edit-icon.png) [Request release](quarantine-end-user.md#request-the-release-of-quarantined-email)
+  - ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) [Delete](quarantine-end-user.md#delete-email-from-quarantine)
+  - ![Preview message icon.](../../media/m365-cc-sc-preview-message-icon.png) [Preview message](quarantine-end-user.md#preview-email-from-quarantine)
+  - ![View message headers icon.](../../media/m365-cc-sc-view-message-headers-icon.png) [View message headers](quarantine-end-user.md#view-email-message-headers)
+  - ![Block sender icon.](../../media/m365-cc-sc-block-sender-icon.png)  [Block sender](quarantine-end-user.md#block-email-senders-from-quarantine)
+
+- **In quarantine notifications**: The following buttons are available:
+  - **Review message**
   - **Request release**
-  - **View message headers**
-  - **Preview message**
-  - **Remove from quarantine**
   - **Block sender**
-
-  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-limited-access.png" alt-text="The available buttons in the quarantined message details if the quarantine policy gives the user limited access permissions" lightbox="../../media/quarantine-tags-quarantined-message-details-limited-access.png":::
-
-- **Quarantine notifications**: The following buttons are available:
-  - **Block sender**
-  - **Request release**
-  - **Review**
-
-  :::image type="content" source="../../media/quarantine-tags-esn-limited-access.png" alt-text="The available buttons in the quarantine notification if the quarantine policy gives the user limited access permissions" lightbox="../../media/quarantine-tags-esn-limited-access.png":::
 
 ##### Full access
 
 If the quarantine policy assigns **Full access** permissions (all available permissions), users get the following capabilities:
 
-- **Message details in quarantine**: The following buttons are available:
-  - **Release message**
-  - **View message headers**
-  - **Preview message**
-  - **Remove from quarantine**
-  - **Block sender**
+- **On the Quarantine page and in the message details in quarantine**: The following actions are available:
+  - ![Release icon.](../../media/m365-cc-sc-check-mark-icon.png) [Release](quarantine-end-user.md#release-quarantined-email)
+  - ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) [Delete](quarantine-end-user.md#delete-email-from-quarantine)
+  - ![Preview message icon.](../../media/m365-cc-sc-preview-message-icon.png) [Preview message](quarantine-end-user.md#preview-email-from-quarantine)
+  - ![View message headers icon.](../../media/m365-cc-sc-view-message-headers-icon.png) [View message headers](quarantine-end-user.md#view-email-message-headers)
+  - ![Block sender icon.](../../media/m365-cc-sc-block-sender-icon.png) [Block sender](quarantine-end-user.md#block-email-senders-from-quarantine)
 
-  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-full-access.png" alt-text="The available buttons in the quarantined message details if the quarantine policy gives the user full access permissions" lightbox="../../media/quarantine-tags-quarantined-message-details-full-access.png":::
-
-- **Quarantine notifications**: The following buttons are available:
-  - **Block sender**
+- **In quarantine notifications**: The following actions are available:
+  - **Review message**
   - **Release**
-  - **Review**
-
-  :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="The available buttons in the quarantine notification if the quarantine policy gives the user full access permissions" lightbox="../../media/quarantine-tags-esn-full-access.png":::
-
-> [!NOTE]
-> As explained earlier, quarantine notifications are turned on only in the default policies named DefaultFullAccessWithNotificationPolicy or ([if your organization is old enough](#full-access-permissions-and-quarantine-notifications)) NotificationEnabledPolicy.
+  - **Block sender**
 
 #### Individual permissions
 
 ##### Block sender permission
 
-The **Block sender** permission (_PermissionToBlockSender_) controls access to the button that allows users to conveniently add the quarantined message sender to their Blocked Senders list.
+The **Block sender** permission (_PermissionToBlockSender_) allows users to add the message sender to the Blocked Senders list in their mailbox.
 
-- **Message details in quarantine**:
-  - **Block sender** permission enabled: The **Block sender** button is available.
-  - **Block sender** permission disabled: The **Block sender** button isn't available.
+If the **Block sender** permission is enabled:
 
-- **Quarantine notifications**:
-  - **Block sender** permission enabled: The **Block sender** button is available.
-  - **Block sender** permission disabled: The **Block sender** button isn't available.
+- ![Block sender icon.](../../media/m365-cc-sc-block-sender-icon.png) [Block sender](quarantine-end-user.md#block-email-senders-from-quarantine) is available on the **Quarantine** page and in the message details in quarantine.
+- **Blocked sender** is available in quarantine notifications.
+
+If the **Block sender** permission is disabled, users can't block senders from quarantine or in quarantine notifications (the action isn't available).
 
 For more information about the Blocked Senders list, see [Block messages from someone](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
 ##### Delete permission
 
-The **Delete** permission (_PermissionToDelete_) controls the ability to of users to delete their messages from quarantine (messages where they're a recipient).
+The **Delete** permission (_PermissionToDelete_) allows users to delete their own messages from quarantine (messages where they're a recipient).
 
-- **Message details in quarantine**:
-  - **Delete** permission enabled: The **Remove from quarantine** button is available.
-  - **Delete** permission disabled: The **Remove from quarantine** button isn't available.
+If the **Delete** permission is enabled:
 
-- **Quarantine notifications**: No effect.
+- ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) [Delete](quarantine-end-user.md#delete-email-from-quarantine) is available on the **Quarantine** page and in the message details in quarantine.
+- No effect in quarantine notifications. Deleting a quarantined message from the quarantine notification is not possible.
+
+If the **Delete** permission is disabled, users can't delete their own messages from quarantine (the action isn't available).
 
 ##### Preview permission
 
-The **Preview** permission (_PermissionToPreview_) controls the ability to of users to preview their messages in quarantine.
+The **Preview** permission (_PermissionToPreview_) allows users to preview their messages in quarantine.
 
-- **Message details in quarantine**:
-  - **Preview** permission enabled: The **Preview message** button is available.
-  - **Preview** permission disabled: The **Preview message** button isn't available.
+If the **Preview** permission is enabled:
 
-- **Quarantine notifications**: No effect.
+- ![Preview message icon.](../../media/m365-cc-sc-preview-message-icon.png) [Preview message](quarantine-end-user.md#preview-email-from-quarantine) is available on the **Quarantine** page and in the message details in quarantine.
+- No affect in quarantine notifications. Previewing a quarantined message from the quarantine notification is not possible. The **Review message** button in quarantine notifications takes users to the details flyout of the message in quarantine.
+
+If the **Preview** permission is disabled, users can't preview their own messages in quarantine (the action isn't available).
 
 ##### Allow recipients to release a message from quarantine permission
 
 > [!NOTE]
-> This permission isn't honored for messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies, regardless of how you configure the quarantine policy. At best, you can use the [Allow recipients to request a message to be released from quarantine permission](#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission) permission so users can view and _request_ the release of their quarantined malware or high confidence phishing messages, although we typically don't recommend it.
+> As explained previously, this permission isn't honored for messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies. At best, you can use the **Allow recipients to request a message to be released from quarantine permission** permission so users can view and _request_ the release of their quarantined malware or high confidence phishing messages, although we typically don't recommend it.
 
-The **Allow recipients to release a message from quarantine** permission (_PermissionToRelease_) controls the ability of users to release their quarantined messages directly and without the approval of an admin.
+The **Allow recipients to release a message from quarantine** permission (_PermissionToRelease_) allows users to release their own quarantined messages without admin approval.
 
-- **Message details in quarantine**:
-  - Permission enabled: The **Release message** button is available.
-  - Permission disabled: The **Release message** button isn't available.
+If the **Allow recipients to release a message from quarantine** permission is enabled:
 
-- **Quarantine notifications**:
-  - Permission enabled: The **Release** button is available.
-  - Permission disabled: The **Release** button isn't available.
+- ![Release icon.](../../media/m365-cc-sc-check-mark-icon.png) [Release](quarantine-end-user.md#release-quarantined-email) is available on the **Quarantine** page and in the message details in quarantine.
+- **Release** is available in quarantine notifications.
+
+If the **Allow recipients to release a message from quarantine** permission is disabled, users can't release their own messages from quarantine or in quarantine notifications (the action isn't available).
 
 ##### Allow recipients to request a message to be released from quarantine permission
 
-The **Allow recipients to request a message to be released from quarantine** permission (_PermissionToRequestRelease_) controls the ability of users to _request_ the release of their quarantined messages. Messages are released only after an admin approves the request.
+The **Allow recipients to request a message to be released from quarantine** permission (_PermissionToRequestRelease_) allows users to _request_ the release of their quarantined messages. Messages are released only after an admin approves the request.
 
-- **Message details in quarantine**:
-  - Permission enabled: The **Request release** button is available.
-  - Permission disabled: The **Request release** button isn't available.
+If the **Allow recipients to request a message to be released from quarantine** permission is enabled:
 
-- **Quarantine notifications**:
-  - Permission enabled: The **Request release** button is available.
-  - Permission disabled: The **Request release** button isn't available.
+- ![Request release icon.](../../media/m365-cc-sc-edit-icon.png) [Request release](quarantine-end-user.md#request-the-release-of-quarantined-email) is available on the **Quarantine** page and in the message details in quarantine.
+- **Request release** is available in quarantine notifications.
+
+If the **Allow recipients to request a message to be released from quarantine** permission is disabled, users can't request the release of their own messages from quarantine or in quarantine notifications (the action isn't available).
