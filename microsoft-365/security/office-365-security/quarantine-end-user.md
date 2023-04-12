@@ -56,9 +56,9 @@ As an ordinary user (not an admin), the **default** capabilities that are availa
 |&nbsp;&nbsp;&nbsp;Safe Attachments policies that quarantine email messages with malicious attachments as malware.||||
 |&nbsp;&nbsp;&nbsp;Safe Attachments for SharePoint, OneDrive, and Microsoft Teams that quarantines malicious files as malware.||||
 |**Mail flow rules (transport rules)**||||
-|&nbsp;&nbsp;&nbsp;Mail flow rules that quarantine email messages.||||
+|&nbsp;&nbsp;&nbsp;Mail flow rules that quarantine email messages (directly, not by marking them as spam).||||
 
-In [supported protection features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) _quarantine policies_ define what users are allowed to do to quarantined messages based on why the message was quarantined. Default quarantine policies enforce the historical capabilities for messages as described in the previous table. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
+In [supported protection features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features), _quarantine policies_ define what users are allowed to do to quarantined messages based on why the message was quarantined. Default quarantine policies enforce the historical capabilities for messages as described in the previous table. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
 You view and manage your quarantined messages in the Microsoft 365 Defender portal or (if an admin has set this up) quarantine notifications from quarantine policies.
 
@@ -98,9 +98,6 @@ You can sort the results by clicking on an available column header. Click ![Cust
 To filter the results, click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**. The following filters are available in the **Filters** flyout that opens:
 
 - **Message ID**: The globally unique identifier of the message.
-
-  For example, you used [message trace](message-trace-scc.md) to look for a message that was sent to a user in your organization, and you determine that the message was quarantined instead of delivered. Be sure to include the full message ID value, which might include angle brackets (\<\>). For example: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
-
 - **Sender address**
 - **Recipient address**
 - **Subject**
@@ -152,6 +149,11 @@ After you've entered the search criteria, press the enter ENTER key to filter th
 
 After you find a specific quarantined message, select the message to view details about it and to take action on it (for example, view, release, download, or delete the message).
 
+> [!TIP]
+> On mobile devices, the previously described controls are available under ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More**.
+>
+> :::image type="content" source="../../media/quarantine-user-message-main-page-mobile-actions.png" alt-text="Selecting a quarantined message and then selecting More on a mobile device." lightbox="../../media/quarantine-user-message-main-page-mobile-actions.png":::
+
 ### View quarantined message details
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine** \> **Email** tab. Or, to go directly to the **Email** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Email>.
@@ -162,18 +164,18 @@ In the details flyout that opens, the following information is available:
 
 - **Quarantine details** section:
   - **Received**: The date/time when the message was received.
-  - **Expires**: The date/time when the message will be automatically and permanently deleted from quarantine.
+  - **Expires**: The date/time when the message is automatically and permanently deleted from quarantine.
   - **Subject**
   - **Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk**, **Phish**, matched a mail flow rule (**Transport rule**), or was identified as containing **Malware**.
   - **Policy type**
   - **Policy name**
   - **Recipient count**
-  - **Recipients**: If the message contains multiple recipients, you need to click **...** \> **Preview message** or ***...** \> **View message header** to see the complete list of recipients.
+  - **Recipients**: If the message contains multiple recipients, you might need to click **...** \> **Preview message** or ***...** \> **View message header** to see the complete list of recipients.
 - **Email details** section:
   - **Sender address**
   - **Time received**
   - **Network message ID**
-  - **Recipients**: If the message contains multiple recipients, you need to click **...** \> **Preview message** or ***...** \> **View message header** to see the complete list of recipients.
+  - **Recipients**
 
 :::image type="content" source="../../media/quarantine-user-message-details.png" alt-text="The details flyout of a quarantined message" lightbox="../../media/quarantine-user-message-details.png":::
 
@@ -190,11 +192,11 @@ To take action on the message, see the next section.
 
 2. On the **Email** tab, select the quarantined email message by using either of the following methods:
 
-   - Select the message from the list by selecting the check box next to the first column. The icons for available actions are no longer grayed out. 
+   - Select the message from the list by selecting the check box next to the first column. The available actions are no longer grayed out. 
 
      :::image type="content" source="../../media/quarantine-user-message-selected-message-actions.png" alt-text="Available actions after you select a quarantined message on the Email tab of the Quarantine page." lightbox="../../media/quarantine-user-message-selected-message-actions.png":::
 
-   - Select the message from the list by clicking anywhere in the row other than the check box. The icons for available actions are in the details flyout that opens.
+   - Select the message from the list by clicking anywhere in the row other than the check box. The available actions are in the details flyout that opens.
 
      :::image type="content" source="../../media/quarantine-user-message-details-flyout-actions.png" alt-text="The available actions in the details flyout of a quarantined message" lightbox="../../media/quarantine-user-message-details-flyout-actions.png":::
 
@@ -202,28 +204,23 @@ To take action on the message, see the next section.
 
 After you select the quarantined message, the available actions are described in the following subsections.
 
-> [!NOTE]
-> On a mobile device, the description text isn't available on the action icons.
+> [!TIP]
+> On mobile devices, the action experience is slightly different:
 >
-> :::image type="content" source="../../media/quarantine-user-message-details-flyout-mobile-actions.png" alt-text="The details of a quarantined message with available actions highlighted" lightbox="../../media/quarantine-user-message-details-flyout-mobile-actions.png":::
-
+> - When you select the message by selecting the check box, all actions are under ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More**:
 >
-> The icons in order and their corresponding descriptions are summarized in the following table:
+>   :::image type="content" source="../../media/quarantine-user-message-main-page-mobile-actions.png" alt-text="Selecting a quarantined message and then selecting More on a mobile device." lightbox="../../media/quarantine-user-message-main-page-mobile-actions.png":::
 >
-> |Icon|Description|
-> |---:|---|
-> |![Release email icon.](../../media/m365-cc-sc-check-mark-icon.png)|**Release email**|
-> |![View message headers icon.](../../media/m365-cc-sc-eye-icon.png)|**View message headers**|
-> |![Preview message icon.](../../media/m365-cc-sc-eye-icon.png)|**Preview message**|
-> |![Remove from quarantine icon.](../../media/m365-cc-sc-delete-icon.png)|**Remove from quarantine**|
-> |![Block sender icon.](../../media/m365-cc-sc-block-sender-icon.png)|**Block sender**|
+> - When you select the message by clicking anywhere other than the check box, most options are available under ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More** in the details flyout:
+>
+>   :::image type="content" source="../../media/quarantine-user-message-details-flyout-mobile-actions.png" alt-text="The details of a quarantined message with available actions shown." lightbox="../../media/quarantine-user-message-details-flyout-mobile-actions.png":::
 
 ### Release quarantined email
 
 > [!NOTE]
-> Your ability to release your quarantined messages is controlled by the quarantine policy that applies to why the message was quarantined (which might be the default quarantine policy as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)).
+> Your ability to release quarantined messages is controlled by the quarantine policy for the protection feature that quarantined the message (which might be a default quarantine policy as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)).
 >
-> A quarantine policy can allow you to release a message or request the release of a message, but both options are never simultaneously available for the same message.
+> A quarantine policy can allow you to release a message or request the release of a message, but both options aren't available for the same message. A quarantine policy can also prevent you from releasing or requesting the release of quarantined messages.
 
 This action isn't available for email messages that have already been released (the **Release status** value is **Released**).
 
@@ -234,34 +231,22 @@ After you select the message, use either of the following methods to release it 
 - **On the Email tab**: Click ![Release icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release**.
 - **In the details flyout of the selected message**: Click ![Release email icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release email**.
 
-In the **Release email to recipient inboxes** flyout that opens, configure the following options:
+In the **Release message to your Inbox** flyout that opens, select **Report message as having no threats** as appropriate, and then click **Release message**.
 
-- Select one of the following values:
-  - **Release to all recipients**
-  - **Release to one or more of the original recipients of the email**: Enter the recipients in the **Recipients** box that appears.
+When you're finished on the **Release message to your Inbox** flyout, click **Release message**.
 
-- **Send a copy of this message to another recipient**: If you select this option, select one or more recipients by clicking in the **Recipients** box that appears.
-
-- **Submit the message to Microsoft to improve detection**: If you select this option, the erroneously quarantined message is reported to Microsoft as a false positive. Depending on the results of their analysis, the service-wide spam filter rules might be adjusted to allow the message through.
-
-  Selecting this option reveals the following options:
-
-  - **Allow email with similar attributes**: If you select this option, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
-    - **Remove entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, or a **Specific date** that's less than 30 days.
-    - **Allow entry note**: Enter an optional note that contains additional information.
-
-When you're finished on the **Release email to recipient inboxes** flyout, click **Release message**.
+In the **Messages released to your Inbox** flyout that opens, click **Done**.
 
 Back on the **Email** tab, the **Release status** value of the message is **Released**.
 
 ### Request the release of quarantined email
 
 > [!NOTE]
-> Your ability to request the release quarantined messages is controlled by the quarantine policy that applies to why the message was quarantined (which might be the default quarantine policy as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)).
+> Your ability to request the release of quarantined messages is controlled by the quarantine policy for the protection feature that quarantined the message.
 >
-> A quarantine policy can allow you to release a message or request the release of a message, but both options are never simultaneously available for the same message.
+> A quarantine policy can allow you to release a message or request the release of a message, but both options aren't available for the same message. A quarantine policy can also prevent you from releasing or requesting the release of quarantined messages.
 
-This action isn't available for email messages that have already been released (the **Release status** value is **Released**).
+This action isn't available for email messages where you already requested release (the **Release status** value is **Released requested**).
 
 If you don't release or remove a message, it's automatically deleted from quarantine after the date shown in the **Expires** column.
 
@@ -269,6 +254,10 @@ After you select the message, use either of the following methods to request its
 
 - **On the Email tab**: Click ![Request release icon.](../../media/m365-cc-sc-edit-icon.png) **Request release**.
 - **In the details flyout of the selected message**: Click ![More icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** \> ![Request release icon.](../../media/m365-cc-sc-edit-icon.png) **Request release**..
+
+In the **Request release** flyout that opens, review the information, click **Request release**. In the **Release requested** flyout that opens, click **Done**.
+
+Back on the **Quarantine page**, the **Release status** value of the message is **Release requested**. An admin will review your request and approve it or deny it.
 
 ### Delete email from quarantine
 
@@ -278,7 +267,7 @@ If you don't release or remove a message, it's automatically deleted from quaran
 
 After you select the message, use either of the following methods to remove it:
 
-- **On the Email tab**: Click ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete from quarantine**.
+- **On the Email tab**: Click ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete messages**.
 - **In the details flyout of the selected message**: Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** \> ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete from quarantine**.
 
 In the **Delete (n) messages from quarantine** flyout that opens, use one of the following methods to delete the message:
@@ -323,19 +312,10 @@ After you select the message, use either of the following methods to add the mes
 
 In the **Block sender** flyout that opens, review the information about the sender, and then click **Block**.
 
-### Take action on quarantined email
-
-> [!NOTE]
-> Your ability to view quarantined messages is controlled by the quarantine policy that applies to the reason why the message was quarantined (which might be the default quarantine policy as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)). This section describes all available actions.
-
-After you select a quarantined message from the list, the following actions are available in the details flyout:
-
-
 ### Take action on multiple quarantined email messages
 
-When you select multiple quarantined messages in the list (up to 100) by clicking in the blank area to the left of the first column, the **Bulk actions** drop down list appears where you can take the following actions:
+When you select multiple quarantined messages on the **Email** tab by selecting the check boxes next to the first column, the following bulk actions are available on the **Email** tab (depending on the **Release status** values of the messages that you selected):
 
-:::image type="content" source="../../media/quarantine-user-message-bulk-actions.png" alt-text="The bulk actions drop down list for messages in quarantine" lightbox="../../media/quarantine-user-message-bulk-actions.png":::
-
-- ![Release messages icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Delivers the messages to your Inbox.
-- ![Remove from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately removed from quarantine without being sent to the original recipients.
+- [Release quarantined email](#release-quarantined-email)
+- [Request the release of quarantined email](#request-the-release-of-quarantined-email)
+- [Delete email from quarantine](#delete-email-from-quarantine)
