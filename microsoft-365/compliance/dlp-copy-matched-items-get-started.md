@@ -19,13 +19,45 @@ description: "Learn how to configure data loss prevention to collect items that 
 ---
 # Get started with collecting files that match data loss prevention policies from devices (preview)
 
+This article walks you through the prerequisites, configuration steps for evidence collection for file activities on devices and introduces how to view the items that are copied out and saved.
+
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+Here are the high level steps for configuring and using evidence collection for file activities on devices.
+
+1. [Onboard devices](#onboard-devices)
+1. [Setup Azure Storage](#setup-azure-storage)
+1. [Set permissions on the Azure blob storage](#set-permissions-on-the-azure-blob-storage)
+1. [Endpoint DLP settings configuration](#endpoint-dlp-settings-configuration)
+1. [Policy configuration](#policy-configuration)
+1. [View saved files](#view-saved-files)
+
+
+## Before you begin
+
+Before you start these procedures, you should review [Learn about evidence collection for file activities on devices (preview)](dlp-copy-matched-items-learn.md).
+
+## Licensing and Subscriptions
+
+See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP.
+
+Please refer to Endpoint DLP SKU/subscriptions licensing to confirm you are eligible for endpoint DLP. You do not
+need any additional licenses over what is needed for endpoint DLP. Refer to Permissions required for endpoint
+DLP administration to allocate the right roles for your endpoint DLP administrators.
+The endpoint devices need to meet the following criteria to be eligible for this:
+• Minimum Windows version: Windows Insider (OS build: 25287 or above) (Instructions here)
+Kindly note that as part of the Private Preview, this feature is supported only on devices that are running
+Windows 11.
+• Dev Channel enabled in your insider settings.
+You will need to have an active Azure storage subscription to create an Azure blob storage.
+Download the following build and update the endpoint UpdatePlatform.exe
+ 
 ### Onboard devices
+
 Before you can use copy matched items you have to onboard Windows 10/11 devices into Purview, see [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
 
-### Setup Azure Storage
-
+### Setup Azure blob storage
+One or multiple storage accounts? create one for each geopolicical region that this feature will be enabled for
 
 set up Azure storage
 
@@ -63,30 +95,27 @@ Actions: • Microsoft.Storage/storageAccounts/blobServices -> Read : List Blob
 
 create custom role groups for endpoint incident administrators and for all users whose devices will be targeted by DLP policies that copy matched items to Azure storage.
 
+### Set permissions on the Azure blob storage
 
+### Endpoint DLP settings configuration
+
+### Policy configuration 
+
+### View saved files
 
 Cover how they DLP incident investigators can access the blob storage and view what is in there.
 
 Considering GDPR and California Consumer Privacy Act, how do admins handle files in the Storage Account when they receive a Data Subject Request to delete or remove those files?
 <AK> Since the governance of the customer owned storage is with them, we cannot be prescriptive. Nonetheless all files have a timestamp, admins can correlate the timestamp with alert (related to DSR). Going forward when we have in-product evidence preview. It will be smooth for them to track the evidence and respond to DSRs like this.
 
-One or multiple storage accounts? create one for each geopolicical region that this feature will be enabled for
+
 
 COPIED OVER FROM SOURCE DOCS
 
 
 
 2. Prerequisites
-Please refer to Endpoint DLP SKU/subscriptions licensing to confirm you are eligible for endpoint DLP. You do not
-need any additional licenses over what is needed for endpoint DLP. Refer to Permissions required for endpoint
-DLP administration to allocate the right roles for your endpoint DLP administrators.
-The endpoint devices need to meet the following criteria to be eligible for this:
-• Minimum Windows version: Windows Insider (OS build: 25287 or above) (Instructions here)
-Kindly note that as part of the Private Preview, this feature is supported only on devices that are running
-Windows 11.
-• Dev Channel enabled in your insider settings.
-You will need to have an active Azure storage subscription to create an Azure blob storage.
-Download the following build and update the endpoint UpdatePlatform.exe
+
 
 ## Before you begin
 
