@@ -166,10 +166,8 @@ When you select quarantined message from the list, the following information is 
 
 To take action on the message, see the next section.
 
-> [!NOTE]
-> To remain in the details flyout, but change the quarantined message that you're looking at, use the up and down arrows at the top of the flyout.
->
-> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="The up and down arrows in the details flyout of a quarantined message" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
+> [!TIP]
+> To see details about other quarantined messages without leaving the details flyout, use ![Previous item and Next item icons.](../../media/updownarrows.png) **Previous item** and **Next item** buttons at the top of the flyout.
 
 ### Take action on quarantined email
 
@@ -346,10 +344,8 @@ When you select a quarantined file from the list, the following information is a
 
 To take action on the file, see the next section.
 
-> [!NOTE]
-> To remain in the details flyout, but change the quarantined file that you're looking at, use the up and down arrows at the top of the flyout.
->
-> :::image type="content" source="../../media/quarantine-file-details-flyout-up-down-arrows.png" alt-text="The up and down arrows in the details flyout of quarantined files" lightbox="../../media/quarantine-file-details-flyout-up-down-arrows.png":::
+> [!TIP]
+> To see details about other quarantined files without leaving the details flyout, use ![Previous item and Next item icons.](../../media/updownarrows.png) **Previous item** and **Next item** buttons at the top of the flyout.
 
 ### Take action on quarantined files
 
@@ -424,6 +420,9 @@ When you select a quarantined message from the list, the following information i
 - **URLs**: Includes the details of any malicious URLs that were detected in the chat message.
 
 To take action on the message, see the next section.
+
+> [!TIP]
+> To see details about other quarantined messages without leaving the details flyout, use ![Previous item and Next item icons.](../../media/updownarrows.png) **Previous item** and **Next item** buttons at the top of the flyout.
 
 ### Take action on quarantined messages in Microsoft Teams
 
