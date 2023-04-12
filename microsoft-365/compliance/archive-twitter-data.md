@@ -33,11 +33,11 @@ This article contains the step-by-step process to deploy a connector that uses t
 
    ![Sign in to Azure.](../media/TCimage01.png)
 
-2. In the left navigation pane, click **Azure Active Directory**.
+2. In the left navigation pane, select **Azure Active Directory**.
 
    ![Go to Azure Active Directory.](../media/TCimage02.png)
 
-3. In the left navigation pane, click **App registrations (Preview)** and then click **New registration**.
+3. In the left navigation pane, select **App registrations (Preview)** and then select **New registration**.
 
    ![Create a new app registration.](../media/TCimage03.png)
 
@@ -49,7 +49,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
     ![Copy and save the Application Id and Directory Id.](../media/TCimage05.png)
 
-6. Go to **Certificates & secrets for the new app** and under **Client secrets** click **New client secret**.
+6. Go to **Certificates & secrets for the new app** and under **Client secrets** select **New client secret**.
 
    ![Create a new client secret.](../media/TCimage06.png)
 
@@ -64,13 +64,13 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 ## Step 2: Deploy the connector web service from GitHub to your Azure account
 
-1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) and click **Deploy to Azure**.
+1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) and select **Deploy to Azure**.
 
     ![Go to the Azure home page.](../media/FBCimage11.png)
 
-2. After you click **Deploy to Azure**, you will be redirected to an Azure portal with a custom template page. Fill in the **Basics** and **Settings** details and then click **Purchase**.
+2. After you select **Deploy to Azure**, you will be redirected to an Azure portal with a custom template page. Fill in the **Basics** and **Settings** details and then select **Purchase**.
 
-   ![Click Create a resource and type storage account.](../media/FBCimage12.png)
+   ![Select Create a resource and type storage account.](../media/FBCimage12.png)
 
     - **Subscription:** Select your Azure subscription that you want to deploy the Twitter connector web service to.
 
@@ -86,14 +86,14 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 3. After the deployment is successful, the page will look similar to the following screenshot:
 
-    ![Click Storage and then click Storage account.](../media/FBCimage13.png)
+    ![Select Storage and then select Storage account.](../media/FBCimage13.png)
 
 ## Step 3: Create the Twitter app
 
-1. Go to https://developer.twitter.com, log in using the credentials for the developer account for your organization, and then click **Apps**.
+1. Go to https://developer.twitter.com, log in using the credentials for the developer account for your organization, and then select **Apps**.
 
    ![Go to https://developer.twitter.com and log in.](../media/TCimage25-5.png)
-2. Click **Create an app**.
+2. Select **Create an app**.
 
    ![Go to Apps page to create an app.](../media/TCimage26.png)
 
@@ -101,21 +101,21 @@ This article contains the step-by-step process to deploy a connector that uses t
 
    ![Enter info about the app.](../media/TCimage27.png)
 
-4. On the Twitter developer dashboard, select the app that you just created and then click **Details**.
+4. On the Twitter developer dashboard, select the app that you just created and then select **Details**.
 
    ![Copy and save the App Id.](../media/TCimage28.png)
 
-5. On the **Keys and tokens** tab, under **Consumer API keys** copy both the API Key and the API secret key and save them to a text file or other storage location. Then click **Create** to generate an access token and access token secret and copy these to a text file or other storage location.
+5. On the **Keys and tokens** tab, under **Consumer API keys** copy both the API Key and the API secret key and save them to a text file or other storage location. Then select **Create** to generate an access token and access token secret and copy these to a text file or other storage location.
 
    ![Copy and save to API secret key.](../media/TCimage29.png)
 
-   Then click **Create** to generate an access token and an access token secret, and copy these to a text file or other storage location.
+   Then select **Create** to generate an access token and an access token secret, and copy these to a text file or other storage location.
 
-6. Click the **Permissions** tab and configure the permissions as shown in the following screenshot:
+6. Select the **Permissions** tab and configure the permissions as shown in the following screenshot:
 
    ![Configure permissions.](../media/TCimage30.png)
 
-7. After you save the permission settings, click the **App details** tab, and then click **Edit > Edit details**.
+7. After you save the permission settings, select the **App details** tab, and then select **Edit > Edit details**.
 
    ![Edit the app details.](../media/TCimage31.png)
 
@@ -135,11 +135,11 @@ The Twitter developer app is now ready to use.
 
    ![Go to Azure app resource page.](../media/FBCimage41.png)
 
-2. Click **Configure** to display a sign in page.
+2. Select **Configure** to display a sign in page.
 
-   ![Click Configure to display sign in page.](../media/FBCimage42.png)
+   ![Select Configure to display sign in page.](../media/FBCimage42.png)
 
-3. In the Tenant Id box, type or paste your tenant Id (that you obtained in Step 2). In the password box, type or paste the APISecretKey (that you obtained in Step 2), and then click **Set Configuration Settings** to display the configuration details page.
+3. In the Tenant Id box, type or paste your tenant Id (that you obtained in Step 2). In the password box, type or paste the APISecretKey (that you obtained in Step 2), and then select **Set Configuration Settings** to display the configuration details page.
 
    ![Sign in using tenant Id and API secret key.](../media/TCimage35.png)
 
@@ -157,19 +157,19 @@ The Twitter developer app is now ready to use.
 
    - **AAD Application Secret:** The value for the APISecretKey secret that you created in Step 1.
 
-5. Click **Save** to save the connector settings.
+5. Select **Save** to save the connector settings.
 
 ## Step 5: Set up a Twitter connector in the compliance portal
 
 1. Go to the Microsoft Purview compliance portal, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors** page</a.
 
-2. On the **Data connectors** page under **Twitter**, click **View**.
+2. On the **Data connectors** page under **Twitter**, select **View**.
 
-3. On the **Twitter** page, click **Add connector**.
+3. On the **Twitter** page, select **Add connector**.
 
-4. On the **Terms of service** page, click **Accept**.
+4. On the **Terms of service** page, select **Accept**.
 
-5. On the **Add credentials for your connector app** page, enter the following information and then click **Validate connection**.
+5. On the **Add credentials for your connector app** page, enter the following information and then select **Validate connection**.
 
    ![Enter connector app credentials.](../media/TCimage38.png)
 
@@ -181,11 +181,11 @@ The Twitter developer app is now ready to use.
 
     - In the **Azure App ID** box, type or paste the value of the Azure Application App Id (also called the *client ID*) that you obtained in Step 1.
 
-6. After the connection is successfully validated, click **Next**.
+6. After the connection is successfully validated, select **Next**.
 
-7. On the **Authorize Microsoft 365 to import data** page, type or paste the APISecretKey again and then click  **Login web app**.
+7. On the **Authorize Microsoft 365 to import data** page, type or paste the APISecretKey again and then select **Login web app**.
 
-8. Click **Login with Twitter**.
+8. Select **Login with Twitter**.
 
 9. On the Twitter sign in page, sign in using the credentials for your organization's Twitter account.
 
@@ -193,12 +193,12 @@ The Twitter developer app is now ready to use.
 
    After you sign in, the Twitter page will display the following message, "Twitter Connector Job Successfully set up."
 
-10. Click **Continue** to complete setting up the Twitter connector.
+10. Select **Continue** to complete setting up the Twitter connector.
 
-11. On the **Set filters** page, you can apply a filter to initially import items that are a certain age. Select an age, and then click **Next**.
+11. On the **Set filters** page, you can apply a filter to initially import items that are a certain age. Select an age, and then select **Next**.
 
-12. On the **Choose storage location** page, type the email address of Microsoft 365 mailbox that the Twitter items will be imported to, and then click **Next**.
+12. On the **Choose storage location** page, type the email address of Microsoft 365 mailbox that the Twitter items will be imported to, and then select **Next**.
 
-13. Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.
+13. Select **Next** to review the connector settings and then select **Finish** to complete the connector setup.
 
-14. In the compliance center, go to the **Data connectors** page, and click the **Connectors** tab to see the progress of the import process.
+14. In the compliance center, go to the **Data connectors** page, and select the **Connectors** tab to see the progress of the import process.
