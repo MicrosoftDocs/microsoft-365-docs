@@ -62,18 +62,18 @@ It might take up to 60 minutes for the reopening process to complete.
 
 ## Delete a case
 
-You can delete closed eDiscovery (Premium) cases. If holds aren't deleted from a closed case, you must delete all holds before closing the case. When you delete a case, all components associated with the case, such as the list of custodians, communications, searches, review sets, and export job are deleted. The case is removed from the list of cases on the **eDiscovery (Premium)** page in the Microsoft Purview compliance portal. You can't recover or reopen a deleted case.
+You can delete both active and closed eDiscovery (Premium) cases. When you delete a case, all components associated with the case, such as the list of custodians, communications, searches, review sets, and export job are deleted. The case is removed from the list of cases on the **eDiscovery (Premium)** page in the Microsoft Purview compliance portal. You can't recover or reopen a deleted case.
 
 > [!NOTE]
 > In data spillage scenarios, the only way to remove items in a review set is to delete the eDiscovery (Premium) case. Other "search and purge" methods don't remove items from a review set.
 
-Before you can delete a closed case, you must first delete *all* holds associated with the case. That includes deleting holds with a status of **Off**.
+Before you can delete a case, you must first delete *all* holds listed on the holds page of the case. That includes deleting holds with a status of **Off**. Default hold policies can only be deleted when the hold is turned off. You must close an active case to turn off any default hold policies in the case. Once the holds are turned off for default hold policies, they can be deleted.
 
 To delete holds associated with a case:
 
 1. Go the **Holds** tab in the eDiscovery (Premium) case that you want to delete.
 2. Select the hold that you want to delete.
-3. On the flyout page, select **Delete**.
+3. On the flyout page, select **Delete**. Ensure that the hold is turned off.
 
 To delete a case:
 
