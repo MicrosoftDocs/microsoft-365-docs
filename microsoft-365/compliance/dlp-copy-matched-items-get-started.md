@@ -61,7 +61,32 @@ Actions: • Microsoft.Storage/storageAccounts/blobServices -> Read : List Blob
 • Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Write : Write Blob
 • Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Other : Add blob content
 
+create custom role groups for endpoint incident administrators and for all users whose devices will be targeted by DLP policies that copy matched items to Azure storage.
 
+
+
+Cover how they DLP incident investigators can access the blob storage and view what is in there.
+
+Considering GDPR and California Consumer Privacy Act, how do admins handle files in the Storage Account when they receive a Data Subject Request to delete or remove those files?
+<AK> Since the governance of the customer owned storage is with them, we cannot be prescriptive. Nonetheless all files have a timestamp, admins can correlate the timestamp with alert (related to DSR). Going forward when we have in-product evidence preview. It will be smooth for them to track the evidence and respond to DSRs like this.
+
+One or multiple storage accounts? create one for each geopolicical region that this feature will be enabled for
+
+COPIED OVER FROM SOURCE DOCS
+
+
+
+2. Prerequisites
+Please refer to Endpoint DLP SKU/subscriptions licensing to confirm you are eligible for endpoint DLP. You do not
+need any additional licenses over what is needed for endpoint DLP. Refer to Permissions required for endpoint
+DLP administration to allocate the right roles for your endpoint DLP administrators.
+The endpoint devices need to meet the following criteria to be eligible for this:
+• Minimum Windows version: Windows Insider (OS build: 25287 or above) (Instructions here)
+Kindly note that as part of the Private Preview, this feature is supported only on devices that are running
+Windows 11.
+• Dev Channel enabled in your insider settings.
+You will need to have an active Azure storage subscription to create an Azure blob storage.
+Download the following build and update the endpoint UpdatePlatform.exe
 
 ## Before you begin
 
@@ -82,7 +107,9 @@ If you're new to Microsoft Purview DLP, here's a list of the core articles you'l
 
 See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP.
 
+## Licensing and Subscriptions
 
+See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP.
 
 
 
