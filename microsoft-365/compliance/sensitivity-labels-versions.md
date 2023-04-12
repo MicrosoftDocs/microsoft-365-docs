@@ -100,8 +100,8 @@ The numbers listed are the minimum Office application versions required for each
 |[Display label color](sensitivity-labels-office-apps.md#label-colors) |Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2303+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Preview: [Current Channel (Preview)](https://office.com/insider) <sup>\*</sup> |Under review |In preview (4.2313+) |Under review |
 |[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)|Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2302+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Under review |Under review |Under review |Under review |
 |[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails) |Current Channel: 2301+ <br /><br> Monthly Enterprise Channel: Under review <br /><br> Semi-Annual Enterprise Channel: Under review |Rolling out: 16.70+ <sup>\*</sup> | Rolling out 4.2309+ |Rolling out 4.2309+ |Yes |
-|[Preventing oversharing as DLP policy tip](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)|Preview: Rolling out to [Beta Channel](https://office.com/insider) |Under review |Under review |Under review |Under review |
-|[Label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments) |Preview: [Current Channel (Preview)](https://office.com/insider) |Under review |Under review |Under review |Under review |
+|[Preventing oversharing as DLP policy tip](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)|Preview: [Current Channel (Preview)](https://office.com/insider) |Under review |Under review |Under review |Under review |
+|[Label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments) |Current Channel: Rolling Out to 2303+<br /><br> Monthly Enterprise Channel: 2304+ <br /><br> Semi-Annual Enterprise Channel: 2302+   |Under review |Under review |Under review |Under review |
 
 **Footnotes:**
 
