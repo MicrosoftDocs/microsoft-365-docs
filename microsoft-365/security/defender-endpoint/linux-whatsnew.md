@@ -32,9 +32,10 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
-## March-2023 Build: 101.98.30 | Release version: 30.123012.19830.0
 <details>
 	<summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
+
+## March-2023 Build: 101.98.30 | Release version: 30.123012.19830.0
 
 &ensp;Released: **March , 20,2023**<br/>
 &ensp;Published: **March 20, 2023**<br/>
@@ -74,7 +75,6 @@ In case the issue reappears with some different denials. We need to run the miti
 
 </details>
 
-## March-2023 Build: 101.98.05 | Release version: 30.123012.19805.0
 <details>
 	<summary> March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)</summary>
 
@@ -142,6 +142,8 @@ sudo systemctl disable mdatp
 <details>
   <summary>Jan-2023 (Build: 101.94.13 | Release version: 30.122112.19413.0)</summary>
 
+## Jan-2023 (Build: 101.94.13 | Release version: 30.122112.19413.0)
+
 &ensp;Released: **January 10, 2023**<br/>
 &ensp;Published: **January 10, 2023**<br/>
 &ensp;Build: **101.94.13**<br/>
@@ -200,6 +202,8 @@ sudo systemctl disable mdatp
 <details>
   <summary>Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)</summary>
 
+## Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)
+
 &ensp;Released: **November 02, 2022**<br/>
 &ensp;Published: **November 02, 2022**<br/>
 &ensp;Build: **101.85.27**<br/>
@@ -248,6 +252,8 @@ sudo systemctl disable mdatp
 <details>
   <summary>Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)</summary>
 
+## Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)
+
 &ensp;Released: **September 14, 2022**<br/>
 &ensp;Published: **September 14, 2022**<br/>
 &ensp;Build: **101.80.97**<br/>
@@ -277,7 +283,9 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 </details>
 
 <details>
-   <summary>Aug-2022 (Build: 101.78.13, | Release version: 30.122072.17813.0)</summary>
+   <summary>Aug-2022 (Build: 101.78.13 | Release version: 30.122072.17813.0)</summary>
+
+## Aug-2022 (Build: 101.78.13 | Release version: 30.122072.17813.0)
 
  &ensp;Released: **August 24, 2022**<br/>
  &ensp;Published: **August 24, 2022**<br/>
@@ -297,6 +305,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
 <details>
   <summary>Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)</summary>
+
+## Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)
 
 &ensp;Released: **August 2, 2022**<br/>
 &ensp;Published: **August 2, 2022**<br/>
@@ -319,6 +329,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
 <details>
   <summary>Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)</summary>
+
+## Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)
 
 &ensp;Released: **July 21, 2022**<br/>
 &ensp;Published: **July 21, 2022**<br/>
@@ -363,6 +375,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 <details>
   <summary>May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)</summary>
 
+## May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)
+
 &ensp;Released: **May 23, 2022**<br/>
 &ensp;Published: **May 23, 2022**<br/>
 &ensp;Build: **101.68.80**<br/>
@@ -383,6 +397,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
 <details>
 <summary>May-2022 (Build: 101.65.77 | Release version: 30.122032.16577.0)</summary>
+
+## May-2022 (Build: 101.65.77 | Release version: 30.122032.16577.0)
 
 &ensp;Released: **May 2, 2022**<br/>
 &ensp;Published: **May 2, 2022**<br/>
@@ -412,6 +428,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 </details><details>
 <summary>Mar-2022 (Build: 101.60.93 | Release version: 30.122012.16093.0)</summary>
 
+## Mar-2022 (Build: 101.60.93 | Release version: 30.122012.16093.0)
+
 &ensp;Released: **Mar 9, 2022**<br/>
 &ensp;Published: **Mar 9, 2022**<br/>
 &ensp;Build: **101.60.93**<br/>
@@ -439,6 +457,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 </details><details>
 <summary>Feb-2022 (Build: 101.58.80 | Release version: 30.122012.15880.0)</summary>
 
+## Feb-2022 (Build: 101.58.80 | Release version: 30.122012.15880.0)
+
 &ensp;Released: **Feb 20, 2022**<br/>
 &ensp;Published: **Feb 20, 2022**<br/>
 &ensp;Build: **101.58.80**<br/>
@@ -453,6 +473,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 <br/><br/>
 </details><details>
 <summary>Jan-2022 (Build: 101.56.62 | Release version: 30.121122.15662.0)</summary>
+
+## Jan-2022 (Build: 101.56.62 | Release version: 30.121122.15662.0)
 
 &ensp;Released: **Jan 26, 2022**<br/>
 &ensp;Published: **Jan 26, 2022**<br/>
