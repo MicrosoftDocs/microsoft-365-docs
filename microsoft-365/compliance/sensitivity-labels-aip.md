@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/11/2023
+ms.date: 04/12/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -189,8 +189,6 @@ However, you might find you don't need to use PowerShell to configure the suppor
 
 > [!NOTE]
 > The AIP add-in used PowerShell advanced settings for [oversharing popup messages in Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent). When you use built-in labeling, the equivalent of this configuration is now available as a [DLP policy configuration](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview).
-> 
-> To identify the minimum version of Outlook that supports this feature, use the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook), and the row **Preventing oversharing as DLP policy tip**.
 
 ## Features not planned to be supported by built-in labeling for Office apps
 
