@@ -43,14 +43,13 @@ The three most recent major releases of macOS are supported.
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
 Onboarding a macOS device into Microsoft Purview solutions is a multi-phase process:
-1. [Get the device onboarding and installation packages](#get-the-device-onboarding-and-installation-packages)
-2. [Create a JAMF Pro configuration profile for the onboarding package](#create-a-jamf-pro-configuration-profile-for-the-onboarding-package)
-3. [Configure application preferences using the JAMF PRO console](#configure-application-preferences-using-the-jamf-pro-console)
-4. [Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)](#create-and-deploy-a-configuration-profile-for-microsoft-autoupdate-mau)
-5. [Create and deploy a configuration profile for Grant full disk access](#create-and-deploy-a-configuration-profile-for-grant-full-disk-access)
-6. [Create and deploy a configuration profile for System extensions](#create-and-deploy-a-configuration-profile-for-system-extensions)
-7. [Configure the network extension and grant accessibility access to DLP](#configure-the-network-extension-and-grant-accessibility-access-to-dlp)
-8. [Upload the installation package](#upload-the-installation-package)
+1. [Deploy onboarding packages](#deploy-onboarding-packages)
+2. [Configure application preferences](#configure-application-preferences)
+3. [Deploy a configuration profile for Microsoft AutoUpdate](#deploy-a-configuration-profile-for-microsoft-autoupdate)
+4. [Deploy a Grant Full Access configuration profile](#deploy-a-grant-full-access-configuration-profile)
+5. [Deploy a System Extensions configuration profile](#deploy-a-system-extensions-configuration-profile)
+6. [Deploy System Configuration Profiles](#deploy-system-configuration-profiles)
+7. [Upload the installation package](#upload-the-installation-package)
 
 ### Prerequisites
 
@@ -85,7 +84,7 @@ Download the following files.
 
 5. Choose **Download installation package**
 
-### Create a JAMF Pro configuration profile for the onboarding package
+### Deploy onboarding packages
 
 1. Create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: *MDATP onboarding for macOS*
@@ -112,7 +111,7 @@ Download the following files.
 
 10. Choose **Done**.
 
-### Configure application preferences using the JAMF PRO console
+### Configure application preferences
 
 > [!IMPORTANT]
 > You must use ***com.microsoft.wdav*** as the **Preference Domain** value. Microsoft Defender for Endpoint uses this name and `com.microsoft.wdav.ext`***` to load its managed settings.
@@ -149,7 +148,7 @@ Download the following files.
  
 9. On the next page, choose the **Scope** tab, select the appropriate targets for this configuration profile, and then choose **Save**.
 
-### Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)
+### Deploy a configuration profile for Microsoft AutoUpdate
 
 1. Create a JAMF Pro configuration file using the `com.microsoft.autoupdate2.plist`. For more information, refer to the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use the following values:
     - Name: *MDATP MDAV MAU settings*
@@ -168,11 +167,11 @@ Download the following files.
 
 7. Choose **Done**.
 
-### Create and deploy a configuration profile for Grant full disk access
+### Deploy a Grant Full Access configuration profile
 
 1. Upload the `fulldisk.mobileconfig` file to JAMF. For more information, refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
-### Create and deploy a configuration profile for System extensions
+### Deploy a System Extensions configuration profile
 
 1. Create a JAMF Pro configuration file using the procedures in the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: *MDATP MDAV System Extensions*
@@ -191,7 +190,7 @@ Download the following files.
 
 4. Choose **Done**.
 
-### Configure the network extension and grant accessibility access to DLP 
+### Deploy System Configuration Profiles
 
 1. On the **Configuration Profiles** page of the JAMF Pro console, select **Upload** and then **Choose File**.
  
