@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/05/2023
+ms.date: 04/12/2023
 audience: ITPro
 ms.topic: how-to
 f1_keywords:
@@ -250,6 +250,9 @@ Scenario recommendation: Restrict users from uploading sensitive data to unsanct
 
 > [!IMPORTANT]
 > This is a hypothetical scenario with hypothetical values. It's only for illustrative purposes. You should substitute your own sensitive information types, sensitivity labels, distribution groups and users.
+
+> [!IMPORTANT]
+> To identify the minimum version of Outlook that supports this feature, use the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook), and the row **Preventing oversharing as DLP policy tip**
 
 #### Scenario 2 pre-requisites and assumptions
 
