@@ -58,8 +58,18 @@ Download the following files these files to complete this phase of the procedure
 
 |File needed for |Source |
 |---------|---------|
-System mobile config file | [mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) Copy and paste the contents into a text file. Change the file extension from ".txt". to "**.mobileconfig**" and save the file. The file won't be recognized if it has the .txt extension.|
-MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig). Copy and paste the contents into a text file. Change the file extension from ".txt". to "**.mobileconfig**" and save the file. The file won't be recognized if it has the .txt extension.|
+System mobile config file | [mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) Copy and paste the contents into a text file. Change the file extension from ".txt". to "**.mobileconfig**" and save the file. The file won't be recognized if it has the .txt extension.|
+MDE preferences| [com.microsoft.wdav.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig). Copy and paste the contents into a text file. Change the file extension from ".txt". to "**.mobileconfig**" and save the file. The file won't be recognized if it has the .txt extension.|
+
+> [!TIP]
+> We recommend downloading the *.mobileconfig* files in a [single bundle](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig). This bundle contains the following files:
+>
+> - accessibility.mobileconfig
+> - fulldisk.mobileconfig
+> - netfilter.mobileconfig
+> - system extensions
+>
+> If any of these files is updated, you need to download the updated bundle.
 
 ### Get the device onboarding package
 
@@ -75,16 +85,6 @@ MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/
 
 5. Extract the zip file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
 
-> [!TIP]
-> We recommend downloading the *.mobileconfig* files in a [single bundle](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig). This bundle contains the following files:
->
-> - accessibility.mobileconfig
-> - fulldisk.mobileconfig
-> - netfilter.mobileconfig
-> - system extensions
->
-> If any of these files is updated, you need to download the updated bundle.
-
 <br>
 
 Alternatively, you can download the files individually. If a file is later updated, you need to re-download specific, updated, file individually.
@@ -97,11 +97,11 @@ Alternatively, you can download the files individually. If a file is later updat
 
 1. Choose:
     1. **Profile type = Templates**
-    1. **Template name = Custom**
+    1. **Template name = Custom** 
 
 1. Choose **Create**
 
-1. On the **Basics** tab, enter a name for the profile, like *SystemMobileConfig* in this example and then choose **Next**.
+1. On the **Basics** tab, enter a name for the profile, like *Microsoft Purview System Configuration*, and then choose **Next**.
 
 1. On the **Configuration profile** tab,
     1. Enter a display name for the custom configuration profile.
@@ -139,7 +139,7 @@ Microsoft Endpoint DLP is installed as a component of Microsoft Defender for End
 
 1. To verify that Microsoft Defender for Endpoints is now available, visit **Apps** \> **By platform** \> **macOS** to see it on the list of all applications.
 
-<!--## Offboard macOS devices using Intune PINGING PG FOR THIS PROCEDURE
+## Offboard macOS devices using Intune
 
 > [!NOTE]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to six months.
@@ -152,4 +152,4 @@ Microsoft Endpoint DLP is installed as a component of Microsoft Defender for End
 
 1. Open **Properties** and **Assignments**
 
-1. Remove the group from the assignment. This will uninstall the *wdav.pkg.intunemac* package and offboard the macOS device from Compliance solutions.-->
+1. Remove the group from the assignment. This will uninstall the *wdav.pkg.intunemac* package and offboard the macOS device from Compliance solutions

@@ -33,11 +33,16 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions l
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
-> [!IMPORTANT]
-> - **REQUIRED:** Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through [JAMF Connect](https://www.jamf.com/products/jamf-connect) or Intune. 
-> - **OPTIONAL:** Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
+
+**REQUIRED:** Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through [JAMF Connect](https://www.jamf.com/products/jamf-connect) or Intune. <br><br>
+**OPTIONAL:** Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
+
+The three most recent major releases of macOS are supported.
+
 
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
+
+### Prerequisites
 
 You need the following files for this procedure.
 
