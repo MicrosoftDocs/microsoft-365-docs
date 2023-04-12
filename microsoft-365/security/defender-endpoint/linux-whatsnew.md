@@ -33,7 +33,9 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
-	<summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)<a href="101.98.30"></a></summary>
+	<summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
+
+## March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)
 
 &ensp;Released: **March , 20,2023**<br/>
 &ensp;Published: **March 20, 2023**<br/>
@@ -75,6 +77,8 @@ In case the issue reappears with some different denials. We need to run the miti
 	
 <details>
 	<summary> March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)</summary>
+
+## March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)
 
 &ensp;Released: **March , 08,2023**<br/>
 &ensp;Published: **March 08, 2023**<br/>
