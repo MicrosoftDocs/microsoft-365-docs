@@ -44,7 +44,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## April 2023
 
-- [Using machine learning to drive more effective simulations in Attack Simulation and Training](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/attack-simulation-training-using-machine-learning-to-drive-more/ba-p/3791023): Make use of intellgent PCR (Predicted Compromise Rate) and Microsoft Defender for Office 365 payload recommendations for utilizing high quality payloads in your simulation. 
+- [Using machine learning to drive more effective simulations in Attack Simulation and Training](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/attack-simulation-training-using-machine-learning-to-drive-more/ba-p/3791023): Make use of intelligent predicted compromise rate (PCR) and Microsoft Defender for Office 365 payload recommendations for utilizing high-quality payloads in your simulation. 
 
 ## March 2023
 
