@@ -126,7 +126,7 @@ Install and configure the Report Message or Report Phishing add-ins for the orga
 
 ### Get the Report Message or Report Phishing add-in for your organization
 
-1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, expand **Show all** if necessary, and then go to **Settings** \> **Integrated apps**. Or, to directly to the **Integrated apps** page, use <https://admin.microsoft.com/Adminportal/Home#/Settings/IntegratedApps>.
+1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, expand **Show all** if necessary, and then go to **Settings** \> **Integrated apps**. Or, to go directly to the **Integrated apps** page, use <https://admin.microsoft.com/Adminportal/Home#/Settings/IntegratedApps>.
 
 2. On the **Integrated apps** page, click ![Get apps icon.](../../media/m365-cc-sc-get-apps-icon.png)**Get apps**.
 
@@ -193,7 +193,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 
 2. On the settings page, select the **Add-ins** option. Then select **Deploy Add-in** followed by **upload custom apps**
 
-3. On the upload custom apps sidepanel, select **I have a URL for the manifest file**.
+3. On the upload custom apps side panel, select **I have a URL for the manifest file**.
 
 4. In the **Add from URL** dialog that opens, enter one of the following URLs:
    - **Report Message**: <https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml>
@@ -216,7 +216,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 
 ### View and edit settings for the Report Message or Report Phishing add-ins
 
-1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, expand **Show all** if necessary, and then go to **Settings** \> **Integrated apps**. Or, to directly to the **Integrated apps** page, use <https://admin.microsoft.com/Adminportal/Home#/Settings/IntegratedApps>.
+1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, expand **Show all** if necessary, and then go to **Settings** \> **Integrated apps**. Or, to go directly to the **Integrated apps** page, use <https://admin.microsoft.com/Adminportal/Home#/Settings/IntegratedApps>.
 
    > [!NOTE]
    > Although the screenshots in the remaining steps show the **Report Message** add-in, the steps are identical for the **Report Phishing** add-in.
