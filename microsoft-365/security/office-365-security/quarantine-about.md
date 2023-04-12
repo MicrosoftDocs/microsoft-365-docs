@@ -21,7 +21,7 @@ ms.custom:
 description: Admins can learn about quarantine in Exchange Online Protection (EOP) that holds potentially dangerous or unwanted messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 3/3/2023
+ms.date: 4/7/2023
 ---
 
 # Quarantined email messages in EOP and Defender for Office 365
@@ -35,35 +35,53 @@ ms.date: 3/3/2023
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine is available to hold potentially dangerous or unwanted messages.
 
-Anti-malware policies automatically quarantine a message if _any_ attachment is found to contain malware. For more information, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
+Whether a detected message is quarantined by default depends on the following factors:
 
-By default, anti-spam policies quarantine phishing and high confidence phishing messages, and deliver spam, high confidence spam, and bulk email messages to the user's Junk Email folder. But, you can also create and customize anti-spam policies to quarantine spam, high confidence spam, and bulk-email messages. For more information, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
+- The protection feature that detected the message. For example, the following detections are always quarantined:
+  - Malware detections by [anti-malware policies](anti-malware-policies-configure.md) and [Safe Attachments policies](safe-attachments-policies-configure.md), including [Built-in protection](preset-security-policies.md) for Safe Attachments.
+  - High-confidence phishing detections by [anti-spam policies](anti-spam-policies-configure.md).
+- Whether you're using the Standard and/or Strict [preset security policies](preset-security-policies.md). The Strict profile quarantines more types of detections than the Standard profile.
+
+The default actions for protection features in EOP and Defender for Office 365, including preset security policies, are described in the feature tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+
+For anti-spam and anti-phishing protection, admins can also modify the default policy or create custom policies to quarantine messages instead of delivering them to the Junk Email folder. For instructions, see the following articles:
+
+- [Configure anti-spam policies in EOP](anti-spam-policies-configure.md)
+- [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
+- [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
+
+The protection policies for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) have one or more _quarantine policies_ assigned to them (each action within the protection policy has an associated quarantine policy assignment).
+
+_Quarantine policies_ define what users are able to do or not do to quarantined messages, and whether users receive quarantine notifications for those messages. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
+
+The default quarantine policies that are assigned to protection feature verdicts enforce the historical capabilities that users get for their quarantined messages (messages where they're a recipient). For more information, see the table in [Find and release quarantined messages as a user in EOP](quarantine-end-user.md). For example, only admins can work with messages that were quarantined as malware or high confidence phishing. By default, users can work with their messages that were quarantined as spam, bulk, phishing, spoof, user impersonation, domain impersonation, or mailbox intelligence.
+
+Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users, and also turn on quarantine notifications. For more information, see [Create quarantine policies](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
+
+> [!NOTE]
+> Users can't release their own messages that were quarantined as malware by anti-malware or Safe Attachments policies, or as high confidence phishing by anti-spam policies, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of their quarantined malware or high confidence phishing messages, although we typically don't recommend it.
 
 Both users and admins can work with quarantined messages:
 
-- _Quarantine policies_ define what users are allowed to do or not do to quarantined messages based on why the message was quarantined for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Default quarantine policies enforce the historical capabilities for the security feature that quarantined the message as described in the table [here](quarantine-end-user.md). The default quarantine policies that are used by supported security features are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md). Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users, and also turn on quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+- Admins can work with all types of quarantined messages for all users, including messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). For more information, see [Manage quarantined messages and files as an admin in EOP](quarantine-admin-manage-messages-files.md).
 
-- Admins can work with all types of quarantined messages for all users. By default, only admins can work with messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). For more information, see [Manage quarantined messages and files as an admin in EOP](quarantine-admin-manage-messages-files.md).
-
-- By default, users can work with quarantined messages where they are a recipient and the message was quarantined as spam, bulk email, or phishing (not high confidence phishing). For more information, see [Find and release quarantined messages as a user in EOP](quarantine-end-user.md).
-
-  To prevent users from managing their own quarantined phishing (not high confidence phishing) messages, admins can assign a quarantine policy that denies access to quarantined messages from the **Phishing email** filtering verdict in anti-spam policies. For more information, see [Assign quarantine policies in anti-spam policies](quarantine-policies.md#anti-spam-policies)[Quarantine policies](quarantine-policies.md).
+- Users can work with their quarantined messages based on the protection feature that quarantined the message, and the setting in corresponding quarantine policy. For more information, see [Find and release quarantined messages as a user in EOP](quarantine-end-user.md).
 
 - Admins can report false positives to Microsoft from quarantine. For more information, see [Take action on quarantined email](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-email) and [Take action on quarantined files](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-files).
 
-- Depending on the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in the organization (specifically, the **Let your organization report messages from quarantine** setting), users can report false positives to Microsoft from quarantine.
+- Users can also report false positives to Microsoft from quarantine, depending on the value of the **Reporting from quarantine** setting in [user reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
-- How long quarantined messages are held in quarantine before they expire varies based on why the message was quarantined. The features that quarantine messages and their corresponding retention periods are described in the following table:
+How long quarantined messages or files are held in quarantine before they expire depends why the message or file was quarantined. Features and their corresponding retention periods are described in the following table:
 
-  |Quarantine reason|Default retention period|Customizable?|Comments|
-  |---|---|:---:|---|
-  |Messages quarantined by anti-spam policies: spam, high confidence spam, phishing, high confidence phishing, or bulk.|15 days: <ul><li>In the default anti-spam policy.</li><li>In anti-spam policies that you create in PowerShell.</li></ul> <br/> 30 days in anti-spam policies that you create in the Microsoft 365 Defender portal.|Yes|You can configure (lower) this value in anti-spam policies. For more information, see the **Retain spam in quarantine for this many days** (_QuarantineRetentionPeriod_) setting in [Configure anti-spam policies](anti-spam-policies-configure.md).|
-  |Messages quarantined by anti-phishing policies: spoof intelligence in EOP; user impersonation, domain impersonation, or mailbox intelligence in Defender for Office 365.|30 days|Yes|This retention period is also controlled by the **Retain spam in quarantine for this many days** (_QuarantineRetentionPeriod_) setting in **anti-spam** policies. The retention period that's used is the value from the first matching **anti-spam** policy that the recipient is defined in.|
-  |Messages quarantined by anti-malware policies (malware messages).|30 days|No|If you turn on common attachments filtering in anti-malware policies (in the default policy or in custom policies), file attachments in email messages to the affected recipients are treated as malware based solely on the file extension. A predefined list of mostly executable file types is used by default, but you can customize the list. For more information, see [Anti-malware policies](anti-malware-protection-about.md#anti-malware-policies).|
-  |Messages quarantined by Safe Attachments policies in Defender for Office 365 (malware messages).|30 days|No||
-  |Messages quarantined by mail flow rules: the action is **Deliver the message to the hosted quarantine** (_Quarantine_).|30 days|No||
-  |Files quarantined by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams (malware files).|30 days|No|Files quarantined in SharePoint or OneDrive are removed fom quarantine after 30 days, but the blocked files remain in SharePoint or OneDrive in the blocked state.|
+|Quarantine reason|Default retention period|Customizable?|Comments|
+|---|---|:---:|---|
+|Messages quarantined by anti-spam policies: spam, high confidence spam, phishing, high confidence phishing, or bulk.|15 days: <ul><li>In the default anti-spam policy.</li><li>In anti-spam policies that you create in PowerShell.</li></ul> <br/> 30 days in anti-spam policies that you create in the Microsoft 365 Defender portal.|Yes|You can configure (lower) this value in anti-spam policies. For more information, see the **Retain spam in quarantine for this many days** (_QuarantineRetentionPeriod_) setting in [Configure anti-spam policies](anti-spam-policies-configure.md).|
+|Messages quarantined by anti-phishing policies: spoof intelligence in EOP; user impersonation, domain impersonation, or mailbox intelligence in Defender for Office 365.|30 days|Yes|This retention period is also controlled by the **Retain spam in quarantine for this many days** (_QuarantineRetentionPeriod_) setting in **anti-spam** policies. The retention period that's used is the value from the first matching **anti-spam** policy that the recipient is defined in.|
+|Messages quarantined by anti-malware policies (malware messages).|30 days|No|If you turn on common attachments filtering in anti-malware policies (in the default policy or in custom policies), file attachments in email messages to the affected recipients are treated as malware based solely on the file extension. A predefined list of mostly executable file types is used by default, but you can customize the list. For more information, see [Anti-malware policies](anti-malware-protection-about.md#anti-malware-policies).|
+|Messages quarantined by Safe Attachments policies in Defender for Office 365 (malware messages).|30 days|No||
+|Messages quarantined by mail flow rules: the action is **Deliver the message to the hosted quarantine** (_Quarantine_).|30 days|No||
+|Files quarantined by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams (malware files).|30 days|No|Files quarantined in SharePoint or OneDrive are removed fom quarantine after 30 days, but the blocked files remain in SharePoint or OneDrive in the blocked state.|
 
-  When a message expires from quarantine, you can't recover it.
+When a message expires from quarantine, you can't recover it.
 
 For more information about quarantine, see [Quarantine FAQ](quarantine-faq.yml).

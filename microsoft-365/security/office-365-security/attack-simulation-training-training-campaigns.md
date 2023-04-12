@@ -23,9 +23,6 @@ ms.date: 4/4/2023
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-> [!NOTE]
-> This article describes features that are in Public Preview, aren't available in all organizations, and are subject to change.
-
 In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, Training campaigns are a faster, more direct way to provide security training to users. Instead of creating and launching [simulated phishing attacks](attack-simulation-training-simulations.md) that eventually lead to training, you can create and assign Training campaigns directly to users.
 
 A Training campaign contains one or more built-in Training modules that you select. Currently, there are over 70 Training modules to select from. For more information about Training modules, see [Training modules for Training campaigns in Attack simulation training](attack-simulation-training-training-modules.md).
@@ -404,7 +401,7 @@ If you select a user from the list by clicking anywhere other than the round che
   - **Manager**
 - Status information for Training modules in the Training campaign for the user:
   - **Training name**: The training module name.
-  - **Training status**: **Not started**, **In progress**, **Completed**, **Training Already Completed**, **Training Previously Assigned**, **Overdue**, or **Not Completed**.
+  - **Training status**: **Not started**, **In progress**, **Completed**, **Training Previously Assigned**, **Overdue**, or **Not Completed**.
   - **Training start date**
   - **Training completed date**
 
@@ -449,7 +446,6 @@ In the training campaign user report, a user may have the following **Status** v
 - **Completed**: The user has already completed their training module.
 - **In Progress**: The user has started their training module.
 - **Not Started**: The user hasn't started their training module.
-- **Training Already Completed**: The user was previously assigned and completed the training module within the training threshold time period.
 - **Training Previously Assigned**: The user currently has been assigned the training module within the training threshold time period, but hasn't completed the training. The user can still complete the training module to move it to a **Completed** state.
 - **Overdue**: The user hasn't completed the training before the assigned module due date and hasn't been reassigned the same training module within the training threshold period.
 - **Not Completed**: The user hasn't completed the training module within the assigned module due date and/or is outside the training threshold period and is eligible for the same training module reassignment.

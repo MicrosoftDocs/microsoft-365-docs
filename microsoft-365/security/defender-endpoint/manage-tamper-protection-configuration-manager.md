@@ -61,3 +61,4 @@ Using Configuration Manager with tenant attach, you can turn tamper protection o
 - [Protect macOS security settings with tamper protection](tamperprotection-macos.md)
 - [Settings for the Windows Security experience profile in Microsoft Intune](/mem/intune/protect/antivirus-security-experience-windows-settings)
 - [Tech Community Blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
+- [Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)
