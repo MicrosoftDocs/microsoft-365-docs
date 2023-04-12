@@ -63,7 +63,7 @@ Click a column header to sort by that column. To add or remove columns, click ![
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Filter** to filter the information on the page by the **Status** value of the Training campaign.
 
-<sup>\*\*</sup> The total count of Training campaigns with these **Status** values is also shown at the top of the page. But if you filter the information (for example, exclude on of these **Status** values), the count at the top of the page will be **0** for that excluded **Status** value.
+<sup>\*\*</sup> The total count of Training campaigns with these **Status** values is also shown at the top of the page. But if you filter the information (for example, exclude on of these **Status** values), the count at the top of the page is **0** for that excluded **Status** value.
 
 To find a Training campaign in the list, type part of the campaign name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box and then press the ENTER key.
 
@@ -104,7 +104,7 @@ On the **Target users** page, select who receives the Training campaign. Use the
 
   - **Search for users or groups**: If you click in the ![Search for users or groups icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and do one of the following actions, the **Filter users by categories** options on the **Add users** flyout are replaced by a **User list** section:
     - Type three or more characters and then press the ENTER key. Any users or group names that contain those characters are shown in the **User list** section by **Name** and **Email**.
-    - Type less than three characters or no characters and then press the ENTER key. No users are shown in the **User list** section, but you can type three or more characters in the **Search** box to search for users and groups.
+    - Type fewer than three characters or no characters and then press the ENTER key. No users are shown in the **User list** section, but you can type three or more characters in the **Search** box to search for users and groups.
 
     The number of results appears in the **Selected (0/x) users** label.
 
@@ -452,7 +452,7 @@ After you remove the Training campaign, it's no longer listed on the **Training*
 
 The _training threshold_ prevents users from having the same trainings assigned to them during a specific interval in days. The default value is 90 days.
 
-During the time interval, the same training module won't be re-assigned to users who meet either of the following criteria:
+During the time interval, the same training module won't be reassigned to users who meet either of the following criteria:
 
 - They completed the training module during the training threshold.
 - They haven't completed the training module, but the module was assigned to them during the training threshold.
