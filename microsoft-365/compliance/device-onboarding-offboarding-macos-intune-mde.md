@@ -36,90 +36,88 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 
 - Make sure your [macOS devices are onboarded to Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Make sure you have access to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home)
-- The three most recently released macOS versions are supported.
-- OPTIONAL: Install the v95+ Edge browser on your macOS devices.
+- The three most recent major releases of macOS are supported.
+- OPTIONAL: Install the v95+ Microsoft Edge browser on your macOS devices.
 
 ## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 
-Use these steps to onboard a macOS device into Compliance solutions if MDE has already been deployed to it.
+If Microsoft Defender for Endpoints (MDE) has already been deployed to your macOS device, you can still onboard that device into Compliance solutions. Doing so is a two-phase process:
+
+1. [Create system configuration profiles](#create-system-configuration-profiles)
+1. [Update existing system configuration profiles](#update-existing-system-configuration-profiles)
+
 
 ### Prerequisites
 
- You'll need to re-deploy these files for this procedure:
+ Redeploy the following files:
 
-|File needed for |Source |
+|File     | Link / Description    |
 |---------|---------|
-|accessibility |[accessibility.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
-full disk access     |[fulldisk.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
+|[accessibility.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/accessibility.mobileconfig) |Used for accessibility|
+| [fulldisk.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)  | Used to grant full disk access (FDA).|
 
 > [!TIP]
-> You can download the *.mobileconfig* files individually or as a [bundled file](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) that contains both of the files listed in the table above.
+> We recommend downloading the bundled ([mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)) file, rather than the individual `.mobileconfig` files. The bundled file contains both of the files you need.
 >
->If any of the individual files are updated, you must once again download and replace either the specific file that was updated or the bundled files.
+> If either of these files are updated, you must download the updated bundle.
 
 ### Create system configuration profiles 
 
-<!-- Update this section, map to the general "Intune" doc -->
+1. Open the **Microsoft Intune admin center** and navigate to **Devices** > **Configuration profiles**.
 
-1. Open the **Microsoft Intune admin center** > **Devices** > **Configuration profiles**.
+2. Choose: **Create profile**.
 
-1. Choose: **Create profile**.
-
-1. Choose:
+3. Choose:
     1. **Profile type = Templates**
     1. **Template name = Custom**
 
-1. Choose **Create**.
+4. Choose **Create**.
 
+5. Choose a name for the profile, like *Microsoft Purview Accessibility Permission*. and then choose **Next**.
 
-1. Choose a name for the profile, like *Microsoft Purview Accessibility Permission*. Choose **Next**.
+6. Choose the `accessibility.mobileconfig` file (downloaded as part of the prerequisites) as the configuration profile file and then choose **Next**
 
-1. Choose the **accessibility.mobileconfig** file (downloaded as part of the prerequisites) as the configuration profile file and choose **Next**
+7. On the **Assignments** tab, add the group you want to deploy this configuration to and choose **Next**.
 
-1. On the **Assignments** tab, add the group you want to deploy these configurations to and choose **Next**.
+8. Review your settings and then choose **Create** to deploy the configuration.
 
-1. Review your settings and then choose **Create** to deploy the configuration.
+9. Open **Devices** and navigate to **macOS** > **Configuration profiles**. The profiles you created display.
 
-1. Open **Devices** > **macOS** > **Configuration profiles**. The profiles you created display.
-
-1. on the **Configuration profiles** page, choose the profile that you just created (in this example *AccessibilityformacOS*) and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
+10. On the **Configuration profiles** page, choose your new profile (in this example *Microsoft Purview Accessibility Permission*). Next, choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
 ### Update existing system configuration profiles
 
-1. A Full Disk Access (FDA) configuration profile should have been previously created and deployed for MDE.  (For details, see [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access)). Endpoint DLP requires an additional Full Disk Access permission for a new application: `com.microsoft.dlp.daemon`.
+1. An FDA configuration profile should have been created and deployed previously for MDE. (For details, see [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access)). Endpoint DLP requires additional FDA permission for a new application: `com.microsoft.dlp.daemon`.
+    1. Update the existing **Full Disk Access** configuration profile with the modified `fulldisk.mobileconfig` file.
+    1. Add the following key to the `fulldisk.mobileconfig` file, then save the file.
 
-Update the existing **Full Disk Access** configuration profile with the modified *fulldisk.mobileconfig* file.
-
-- Add the following key to the *fulldisk.mobileconfig* file, then save the file.
-
-```xml
-<key>features</key> 
-     <dict> 
-        <key>dataLossPrevention</key> 
-        <string>enabled</string> 
-    </dict> 
-```
-
-
+        ```xml
+        <key>features</key> 
+             <dict> 
+                <key>dataLossPrevention</key> 
+                <string>enabled</string> 
+            </dict> 
+        ```
 
 Here's an [example mobileconfig file](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig).
 
 ## Offboard macOS devices using Intune
 
 > [!IMPORTANT]
-> Offboarding causes a device to stop sending sensor data to the portal. However, data from the device, including references to any alerts it has had, will be retained for up to 6 months.
+> Offboarding causes the device to stop sending sensor data to the portal. However, data received from the device, including reference to any alerts it had,will be retained for up to six months.
 
 1. In the **Microsoft Intune admin center**, open **Devices** > **Configuration profiles**. The profiles you created should display.
 
 2. On the **Configuration profiles** page, choose the **MDE preferences** profile.
 
-3. Remove this settings:
+3. Remove these settings:
    
-```xml
-<key>features</key>
-<dict>
-    <key>dataLossPrevention</key>
-    <string>enabled</string>
-</dict>
-```
+    ```xml
+    <key>features</key>
+    <dict>
+        <key>dataLossPrevention</key>
+        <string>enabled</string>
+    </dict>
+    ```
+
 4. Choose **Save**.
