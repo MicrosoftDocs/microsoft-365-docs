@@ -23,9 +23,6 @@ ms.date: 01/13/2023
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-> [!NOTE]
-> This article describes features that are in Public Preview, aren't available in all organizations, and are subject to change.
-
 In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, you select one or more Training modules to include in Training campaigns that you create and assign to users. For more information about Training campaigns, see [Training campaigns in Attack simulation training](attack-simulation-training-training-campaigns.md).
 
 To see the available Training modules, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Training modules**. To go directly to the **Content library** tab where you can select **Training modules**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
