@@ -50,7 +50,7 @@ The **Training** tab lists the Training campaigns that you've created. The list 
   - **Failed**<sup>\*\*</sup>
   - **Scheduled**<sup>\*\*</sup>
 
-  For more information about the **Status** values, see [Set the training threshold time period](#set-the-training-threshold-time-period).
+  For more information about the **Status** values, see the [Set the training threshold](#set-the-training-threshold) section later in this article.
 
 Click a column header to sort by that column. To add or remove columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**. By default, all available columns are selected.
 
