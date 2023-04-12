@@ -49,7 +49,7 @@ All certificate information in this article was previously provided in [Microsof
 
 ## When will this change happen?
 
-Services began transitioning to the new Root CAs in January 2022 and will continue through October 2022.
+Services began transitioning to the new Root CAs in January 2022 and will continue through October 2023.
 
 ## What is changing?
 
@@ -157,7 +157,8 @@ Administrators can identify and troubleshoot the issue by inspecting the CAPI2 L
 ```text
 Log Name:      Microsoft-Windows-CAPI2/Operational
 Source:        Microsoft-Windows-CAPI2
-Date:          6/23/2022 8:36:39 AM
+Date:          6/23/
+8:36:39 AM
 Event ID:      11
 Task Category: Build Chain
 Level:         Error
