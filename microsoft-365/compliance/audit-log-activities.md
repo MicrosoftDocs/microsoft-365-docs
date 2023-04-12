@@ -391,6 +391,9 @@ The following table describes the auditing activities and information in the aud
 
 The following table lists the user and admin activities in Microsoft Planner that are logged for auditing. The table includes the friendly name that's displayed in the **Activities** column and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results.
 
+> [!NOTE]
+> Auditing events for Microsoft Planner activities requires a paid Project Plan 1 license (or higher) in addition to the relevant Microsoft 365 license that includes entitlements to Audit (Premium).
+
 | Friendly name | Operation | Description |
 |:--------------|:----------|:------------|
 | Read a plan | PlanRead | A plan is read by a user or an app. If the read operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ContainerType indicates ContainerType.Invalid and ContainerId indicates null. |
