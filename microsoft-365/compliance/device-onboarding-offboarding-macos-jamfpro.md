@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 10/06/2020
+ms.date: 04/12/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -35,16 +35,26 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions l
 ## Before you begin
 
 **REQUIRED:** Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through [JAMF Connect](https://www.jamf.com/products/jamf-connect) or Intune. <br><br>
-**OPTIONAL:** Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
+**OPTIONAL:** Install the v95+ Microsoft Edge browser on your macOS devices for native Endpoint DLP support on Microsoft Edge.
 
 The three most recent major releases of macOS are supported.
 
 
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
+Onboarding a macOS device into Microsoft Purview solutions is a multi-phase process:
+1. [Get the device onboarding and installation packages](#get-the-device-onboarding-and-installation-packages)
+2. [Create a JAMF Pro configuration profile for the onboarding package](#create-a-jamf-pro-configuration-profile-for-the-onboarding-package)
+3. [Configure application preferences using the JAMF PRO console](#configure-application-preferences-using-the-jamf-pro-console)
+4. [Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)](#create-and-deploy-a-configuration-profile-for-microsoft-autoupdate-mau)
+5. [Create and deploy a configuration profile for Grant full disk access](#create-and-deploy-a-configuration-profile-for-grant-full-disk-access)
+6. [Create and deploy a configuration profile for System extensions](#create-and-deploy-a-configuration-profile-for-system-extensions)
+7. [Configure the network extension and grant accessibility access to DLP](#configure-the-network-extension-and-grant-accessibility-access-to-dlp)
+8. [Upload the installation package](#upload-the-installation-package)
+
 ### Prerequisites
 
-You need the following files for this procedure.
+Download the following files.
 
 |File | Description|
 |-----|------------|
@@ -53,16 +63,14 @@ You need the following files for this procedure.
 | [com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|MAU preference file|
 
 > [!TIP]
-> You can download the *.mobileconfig* files individually or in the [bundled file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig), which contains:
+> We recommend downloading the bundled ([mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)) file, rather than the [individual](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) `.mobileconfig` files. The bundled file contains:
 >
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 > - netfilter.mobileconfig
-> - sysext.mobileconfig
+> - system extensions
 >
->If any of these individual files is updated, you'd need to download either the combined file again or the single updated file individually.
-
-Onboarding a macOS device into Compliance solutions is a multiphase process.
+> If any of these files are updated, you need to either download the updated bundle, or download the each updated file individually.
 
 ### Get the device onboarding and installation packages
 :::image type="content" source="../media/device-macos-dnld-install-package-inline.png" alt-text="Screenshot of the Microsoft Intune Configuration settings tab with all fields populated." lightbox="../media/device-macos-dnld-install-package-expanded.png":::
@@ -79,16 +87,16 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 ### Create a JAMF Pro configuration profile for the onboarding package
 
-1. Create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
-    - Name: `MDATP onboarding for macOS`
-    - Description: `MDATP EDR onboarding for macOS`
-    - Category: `none`
-    - Distribution method: `install automatically`
-    - Level: `computer level`
+1. Create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
+    - Name: *MDATP onboarding for macOS*
+    - Description: **MDATP EDR onboarding for macOS*
+    - Category: *none*
+    - Distribution method: *`*install automatically*
+    - Level: *computer level*
 
 2. In the JAMF Pro console, select **New**.
 
-3. In the left navigation pane, select **Application and Custom Settings** and then choose **Upload**.
+3. In the navigation pane, select **Application and Custom Settings** and then choose **Upload**.
 
 4. Choose **Add**.
 
@@ -104,57 +112,57 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 10. Choose **Done**.
 
-### Configure Preference domain using the JAMF PRO console
+### Configure application preferences using the JAMF PRO console
 
 > [!IMPORTANT]
-> You must use ***com.microsoft.wdav*** as the Preference Domain value. Microsoft Defender for Endpoint uses this name and ***com.microsoft.wdav.ext*** to load its managed settings.
+> You must use ***com.microsoft.wdav*** as the **Preference Domain** value. Microsoft Defender for Endpoint uses this name and `com.microsoft.wdav.ext`***` to load its managed settings.
 
-1. Sign in to JAMF Pro to create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
-    - Name: `MDATP MDAV configuration settings`
-    - Description: leave this blank
-    - Category: `none`
-    - Distribution method: `install automatically`
-    - Level: `computer level`
+1. Sign in to JAMF Pro to create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) for more information. Use these values:
+    - Name: *MDATP MDAV configuration settings*
+    - Description: **Leave this blank**
+    - Category: *none*
+    - Distribution method: *install automatically*
+    - Level: *computer level*
 
 2. In the JAMF Pro console, select **New**.
 
-3. In the left navigation pane, select **Application and Custom Settings** and then choose **External Applications**.
+3. In the navigation pane, select **Application and Custom Settings** and then choose **External Applications**.
 
 4. Choose **Add** and then choose **Custom Schema** for the preference domain. Use this value:
-    - Preference domain: `com.microsoft.wdav`
+    - **Preference domain**: `com.microsoft.wdav`
 
-5. Choose **Add Schema** and then select the *schema.json* file you downloaded from GitHub.
+5. Choose **Add Schema** and then select the `schema.json` file you downloaded from GitHub.
 
 6. Choose **Save**.
 
-7. Under **Preference Domain Properties** manually update the selections. Choose these settings:
+7. Under **Preference Domain Properties** manually update the settings as follows:
     - **Antivirus engine** <br>
-        If you are *only* deploying data loss protection, and not Microsoft Defender for Endpoint, take the following steps:
+        If you are *only* deploying data loss protection, and not MDE, take the following steps:
         - Choose **Real-time** Protection.
         - Choose **Passive mode**.
         - Choose **Apply**.
 
     - **Features**
-        - For **Data Loss Prevention**, select `enabled` and then choose **Save**.
+        - For **Data Loss Prevention**, select *enabled* and then choose **Save**.
 
-8. Enter a name for the configuration profile and then choose **Save**.
+8. Enter a name for the configuration profile, and then choose **Save**.
  
-9. On the next page, choose the **scope** tab, select the appropriate targets for this configuration profile, and then choose **Save**.
+9. On the next page, choose the **Scope** tab, select the appropriate targets for this configuration profile, and then choose **Save**.
 
 ### Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)
 
-1. Create a JAMF Pro configuration file using the **com.microsoft.autoupdate2.plist**. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
-    - Name: `MDATP MDAV MAU settings`
-    - Description: `Microsoft AutoUPdate settings for MDATP for macOS`
-    - Category: `none`
-    - Distribution method: `install automatically`
-    - Level: `computer level`
+1. Create a JAMF Pro configuration file using the `com.microsoft.autoupdate2.plist`. For more information, refer to the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use the following values:
+    - Name: *MDATP MDAV MAU settings*
+    - Description: *Microsoft AutoUPdate settings for MDATP for macOS*
+    - Category: *none*
+    - Distribution method: *install automatically*
+    - Level: *computer level*
 
-2. In **Application & Custom Settings** choose **Upload** and **Add**.
+2. For **Application & Custom Settings** choose **Upload** and then **Add**.
 
-3. In **Preferences Domain** enter `com.microsoft.autoupdate2` and then choose **Upload**.
+3. For the **Preferences Domain** enter *com.microsoft.autoupdate2* and then choose **Upload**.
 
-4. Choose the **com.microsoft.autoupdate2.plist** file and then choose **Save**.
+4. Choose the `com.microsoft.autoupdate2.plist` file and then choose **Save**.
 
 5. Choose the **Scope** tab, choose the target computers, and then choose **Save**.
 
@@ -162,24 +170,22 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 ### Create and deploy a configuration profile for Grant full disk access
 
-1. Use the **fulldisk.mobileconfig** file.
-
-1. Upload the **fulldisk.mobileconfig** file to JAMF. Refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
+1. Upload the `fulldisk.mobileconfig` file to JAMF. For more information, refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
 ### Create and deploy a configuration profile for System extensions
 
-1. Create a JAMF Pro configuration file using the procedures in [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
-    - Name: `MDATP MDAV System Extensions`
-    - Description: `MDATP system extensions`
-    - Category: `none`
-    - Distribution method: `install automatically`
-    - Level: `computer level`
+1. Create a JAMF Pro configuration file using the procedures in the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
+    - Name: *MDATP MDAV System Extensions*
+    - Description: *MDATP system extensions*
+    - Category: *none*
+    - Distribution method: *install automatically*
+    - Level: *computer level*
 
 2. In **System extensions** profile, enter these values:
-    - Display Name: `Microsoft Corp. System Extensions`
-    - System Extension Types: `Allowed System Extensions`
-    - Team Identifier: `UBF8T346G9`
-    - Allowed System Extensions: `com.microsoft.wdav.epsext`, and `com.microsoft.wdav.netext`
+    - Display Name: *Microsoft Corp. System Extensions*
+    - System Extension Types: *Allowed System Extensions*
+    - Team Identifier: *UBF8T346G9*
+    - Allowed System Extensions: *com.microsoft.wdav.epsext*, and *com.microsoft.wdav.netext*
 
 3. Choose the **Scope** tab, select the target computers, and then choose **Save**.
 
@@ -201,7 +207,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 4. Select the `wdav.pkg` installation package file and then choose **Save**.
 
-5. Navigate to **Computers** > **Policies**,and choose **New**.
+5. Navigate to **Computers** > **Policies** and choose **New**.
 
 6. In the left navigation pane, choose **Packages**.
 
@@ -215,10 +221,9 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 ## Offboard macOS devices using JAMF Pro
 
-1. Uninstall the application (if not using MDE)
-    1. See JAMF Pro Docs - Package Deployment - [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro Administrator's Guide
+1. If not using MDE, uninstall the application.  See the Package Deployment section in the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/).
 
-1. Restart the macOS device - some applications may lose printing functionality until they're restarted
+2. Restart the macOS device. Some applications may lose printing functionality until they're restarted.
 
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.

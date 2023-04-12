@@ -57,9 +57,10 @@ If Microsoft Defender for Endpoints (MDE) has already been deployed to your macO
 | [fulldisk.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)  | Used to grant full disk access (FDA).|
 
 > [!TIP]
-> We recommend downloading the bundled ([mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)) file, rather than the individual `.mobileconfig` files. The bundled file contains both of the files you need.
+> We recommend downloading the bundled ([mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)) file, rather than the [individual](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
+ `.mobileconfig` files. The bundled file contains both of the files you need.
 >
-> If either of these files are updated, you must download the updated bundle.
+> If any of these files are updated, you need to either download the updated bundle, or download the each updated file individually.
 
 ### Create system configuration profiles 
 

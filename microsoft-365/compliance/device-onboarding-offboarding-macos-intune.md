@@ -42,7 +42,7 @@ You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 
 ## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 
-Onboarding a macOS device into Compliance solutions is a multi-phase process:
+Onboarding a macOS device into Microsoft Purview solutions is a multi-phase process:
 
 1. [Get the device onboarding package](#get-the-device-onboarding-package).
 2. [Deploy the mobileconfig and onboarding packages](#deploy-the-mobileconfig-and-onboarding-packages).
@@ -59,14 +59,14 @@ Download the following files:
 [com.microsoft.wdav.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)| This is the MDE preferences file.<br><br> 1. Copy and paste the contents into a text file. <br> 2. Change the file extension from `.txt` to `.mobileconfig` <br> 3. Save the file. (The file won't be recognized if it has the `.txt` extension.)||
 
 > [!TIP]
-> We recommend downloading the bundled ([mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)) file, rather than the individual `.mobileconfig` files. The bundled file contains:
+> We recommend downloading the bundled ([mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)) file, rather than the [individual](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) `.mobileconfig` files. The bundled file contains:
 >
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 > - netfilter.mobileconfig
 > - system extensions
 >
-> If any of these files are updated, you need to download the updated bundle.
+> If any of these files are updated, you need to either download the updated bundle, or download the each updated file individually.
 
 ### Get the device onboarding package
 
