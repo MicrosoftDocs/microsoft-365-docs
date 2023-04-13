@@ -41,24 +41,13 @@ Before you start these procedures, you should review [Learn about evidence colle
 
 See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP. You do not need any additional licenses over what is needed for endpoint DLP.
 
-Refer to Permissions required for endpoint
+## Permissions
 
-DLP administration to allocate the right roles for your endpoint DLP administrators.
- 
+Standard DLP permissions are required. For more informations, see [Permissions](dlp-create-deploy-policy.md#permissions).
+
 ### Onboard devices
 
 Before you can use copy matched items you have to onboard Windows 10/11 devices into Purview, see [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
-<!--
- CHECKING TO SEE IF THIS STILL APPLIES IN PUBLIC PREVIEW The endpoint devices must meet these criteria for evidence colletion for file activities on devices:
-
-- Minimum Windows version: Windows Insider (OS build: 25287 or above) (Instructions here)
-As part of the private preview, this feature is supported only on devices that are running Windows 11.
-- Dev Channel enabled in your insider settings.
-- Download the following build and update the endpoint UpdatePlatform.exe
-- --> 
-
-
-
 
 ### Setup Azure blob storage
 One or multiple storage accounts? create one for each geopolicical region that this feature will be enabled for
