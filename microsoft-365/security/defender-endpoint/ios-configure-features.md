@@ -229,7 +229,7 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
         - Users will see a toggle for **Unsafe Site Info**.
         - This toggle is only visible if Admin has set **DefenderExcludeURLInReport = true**.
         - If enabled by Admin, Users can decide if they want to send the unsafe site info to their Organization or not.
-        - By default, its set to `false`, the unsafe site information will not be sent.
+        - By default, its set to `false`. The unsafe site information will not be sent.
         - If user toggles it to `true`, the unsafe site details will  be sent.
 
 Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
@@ -317,9 +317,8 @@ Defender for Endpoint on iOS supports vulnerability assessments of apps only for
      :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="App sync toggleSup" lightbox="images/tvm-app-sync-toggle.png":::
 
 > [!NOTE]
-> To get the list of all the apps including unmanaged apps,
-> For the supervised devices marked as "Personal" in the Intune Admin Portal, admin needs to enable **Send full application inventory data on personally owned iOS/iPadOS devices**.
-> For the supervised devices marked as "Corporate" in the Intune Admin Portal, enabling **Send full application inventory data on personally owned iOS/iPadOS devices** is not needed.
+> To get the list of all the apps including unmanaged apps,the admin has to enable **Send full application inventory data on personally owned iOS/iPadOS devices** in the Intune Admin Portal for the supervised devices marked as "Personal". 
+> For the supervised devices marked as "Corporate" in the Intune Admin Portal, the admin need not enable **Send full application inventory data on personally owned iOS/iPadOS devices**.
 
 ### On an Unsupervised Device
 
