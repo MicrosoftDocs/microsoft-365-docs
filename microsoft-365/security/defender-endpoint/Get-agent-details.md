@@ -1,5 +1,5 @@
 ---
-title: Get scan agent by Id
+title: Get scan agent by ID
 description: Learn how to use the get agent details api
 keywords: apis, graph api, supported apis, agent details, definition
 ms.service: microsoft-365-security
@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 12/15/2022
 ---
 
-# Get scan agent Id
+# Get scan agent ID
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,7 +43,7 @@ ms.date: 12/15/2022
 
 ## API description
 
-Retrieves the details for a specified agent by its Id.
+Retrieves the details for a specified agent by its ID.
 
 ## Limitations
 
@@ -85,7 +85,7 @@ If successful, this method returns 200 - OK response code with the details of th
 
 ## Example request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanAgents/7f3d76a6976818553e996875dc91f55df6b26625
