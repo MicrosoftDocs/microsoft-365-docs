@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/11/2023
+ms.date: 04/13/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -19,7 +19,7 @@ description: "Learn how to configure data loss prevention to collect items that 
 ---
 # Get started with collecting files that match data loss prevention policies from devices (preview)
 
-This article walks you through the prerequisites, configuration steps for evidence collection for file activities on devices and introduces how to view the items that are copied out and saved.
+This article walks you through the prerequisites and configuration steps for evidence collection for file activities on devices and introduces how to view the items that are copied out and saved.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -39,28 +39,32 @@ Before you start these procedures, you should review [Learn about evidence colle
 
 ## Licensing and Subscriptions
 
-See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP.
+See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP. You do not need any additional licenses over what is needed for endpoint DLP.
 
-Please refer to Endpoint DLP SKU/subscriptions licensing to confirm you are eligible for endpoint DLP. You do not
-need any additional licenses over what is needed for endpoint DLP. Refer to Permissions required for endpoint
+Refer to Permissions required for endpoint
+
 DLP administration to allocate the right roles for your endpoint DLP administrators.
-The endpoint devices need to meet the following criteria to be eligible for this:
-• Minimum Windows version: Windows Insider (OS build: 25287 or above) (Instructions here)
-Kindly note that as part of the Private Preview, this feature is supported only on devices that are running
-Windows 11.
-• Dev Channel enabled in your insider settings.
-You will need to have an active Azure storage subscription to create an Azure blob storage.
-Download the following build and update the endpoint UpdatePlatform.exe
  
 ### Onboard devices
 
 Before you can use copy matched items you have to onboard Windows 10/11 devices into Purview, see [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
+<!--
+ CHECKING TO SEE IF THIS STILL APPLIES IN PUBLIC PREVIEW The endpoint devices must meet these criteria for evidence colletion for file activities on devices:
+
+- Minimum Windows version: Windows Insider (OS build: 25287 or above) (Instructions here)
+As part of the private preview, this feature is supported only on devices that are running Windows 11.
+- Dev Channel enabled in your insider settings.
+- Download the following build and update the endpoint UpdatePlatform.exe
+- --> 
+
+
+
 
 ### Setup Azure blob storage
 One or multiple storage accounts? create one for each geopolicical region that this feature will be enabled for
 
 set up Azure storage
-
+You will need to have an active Azure storage subscription to create an Azure blob storage.
 
 
 licensing and prereqs
