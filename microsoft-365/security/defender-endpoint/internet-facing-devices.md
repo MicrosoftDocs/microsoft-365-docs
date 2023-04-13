@@ -110,7 +110,6 @@ For TCP connections, you can  gain further insights into applications or service
 Use the following query for devices tagged with the reason **This device received external incoming communication**:
 
 ```kusto
-// Query on inbound connection accepted events
 DeviceNetworkEvents
 | where Timestamp > ago(7d)
 | where DeviceId == ""
