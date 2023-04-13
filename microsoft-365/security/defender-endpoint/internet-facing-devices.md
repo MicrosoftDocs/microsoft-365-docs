@@ -107,15 +107,6 @@ This query returns the following fields for each internet-facing device with the
 
 For TCP connections, you can  gain further insights into applications or services identified as listening on a device by querying [DeviceNetworkEvents](../defender/advanced-hunting-devicenetworkevents-table.md).
 
-Use the following query for devices tagged with the reason **This device was detected by an external scan**:
-
-```kusto
-DeviceNetworkEvents
-| where DeviceId == ""
-| where Protocol == "Tcp"
-| where ActionType == "InboundInternetScanInspected"
-```
-
 Use the following query for devices tagged with the reason **This device received external incoming communication**:
 
 ```kusto
@@ -131,7 +122,16 @@ DeviceNetworkEvents
 ```
 
 >[!Note]
-> Process related information is only available for UDP connections.
+> Process related information is only available for TCP connections.
+
+Use the following query for devices tagged with the reason **This device was detected by an external scan**:
+
+```kusto
+DeviceNetworkEvents
+| where DeviceId == ""
+| where Protocol == "Tcp"
+| where ActionType == "InboundInternetScanInspected"
+```
 
 For UDP connections, gain insights into devices that were identified as host reachable but may not have established a connection (for example, as a result of the host firewall policy) using the following query:
 
