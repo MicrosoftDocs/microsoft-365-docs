@@ -339,16 +339,16 @@ Valid URL entries and their results are described in the following sections.
 
 #### Scenario: Left wildcard (subdomain)
 
-> [!NOTE]
-> This scenario applies only to blocks.
+> [!TIP]
+> Allow entries of this pattern will be supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
 
 **Entry**: `*.contoso.com`
 
-- **Block match**:
+- **Allow match** and **Block match**:
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Block not matched**:
+- **Allow not matched** and **Block not matched**:
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
@@ -371,17 +371,17 @@ Valid URL entries and their results are described in the following sections.
 
 #### Scenario: Left tilde
 
-> [!NOTE]
-> This scenario applies only to blocks.
+> [!TIP]
+> Allow entries of this pattern will be supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
 
 **Entry**: `~contoso.com`
 
-- **Block match**:
+- **Allow match** and **Block match**:
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Block not matched**:
+- **Allow not matched** and **Block not matched**:
   - 123contoso.com
   - contoso.com/abc
   - www.contoso.com/abc
@@ -403,28 +403,28 @@ Valid URL entries and their results are described in the following sections.
 
 #### Scenario: Left wildcard subdomain and right wildcard suffix
 
-> [!NOTE]
-> This scenario applies only to blocks.
+> [!TIP]
+> Allow entries of this pattern will be supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
 
 **Entry**: `*.contoso.com/*`
 
-- **Block match**:
+- **Allow match** and **Block match**:
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
   - www.contoso.com/a
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Block not matched**: contoso.com/b
+- **Allow not matched** and **Block not matched**: contoso.com/b
 
 #### Scenario: Left and right tilde
 
-> [!NOTE]
-> This scenario applies only to blocks.
+> [!TIP]
+>  Allow entries of this pattern will be supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
 
 **Entry**: `~contoso.com~`
 
-- **Block match**:
+- **Allow match** and **Block match**:
 
   - contoso.com
   - contoso.com/a
@@ -435,7 +435,7 @@ Valid URL entries and their results are described in the following sections.
   - contoso.com/b/a/c
   - test.com/contoso.com
 
--  **Block not matched**:
+-  **Allow not matched** and **Block not matched**:
 
   - 123contoso.com
   - contoso.org
