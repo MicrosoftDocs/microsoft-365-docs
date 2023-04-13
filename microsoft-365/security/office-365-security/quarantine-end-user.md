@@ -21,7 +21,7 @@ description: Users can learn how to view and manage quarantined messages in Exch
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.date: 3/3/2023
+ms.date: 4/12/2023
 ---
 
 # Find and release quarantined messages as a user in EOP
@@ -237,6 +237,8 @@ In the **Messages released to your Inbox** flyout that opens, click **Done**.
 
 Back on the **Email** tab, the **Release status** value of the message is **Released**.
 
+The message is delivered to your Inbox (or some other folder, depending on any [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) in your mailbox).
+
 ### Request the release of quarantined email
 
 > [!NOTE]
@@ -301,7 +303,7 @@ Click the **Microsoft Message Header Analyzer** link to analyze the header field
 
 ### Block email senders from quarantine
 
-The Block senders action adds the message sender to the Blocked Senders list in the your mailbox. For more information about blocking senders, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
+The Block senders action adds the message sender to the Blocked Senders list in the your mailbox. For more information about blocking senders, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 After you select the message, use either of the following methods to add the message sender to the Blocked Senders list in your mailbox:
 
@@ -309,6 +311,9 @@ After you select the message, use either of the following methods to add the mes
 - **In the details flyout of the selected message**: Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** \> ![Block sender icon.](../../media/m365-cc-sc-block-sender-icon.png) **Block sender**.
 
 In the **Block sender** flyout that opens, review the information about the sender, and then click **Block**.
+
+> [!TIP]
+> The organization can still receive mail from the blocked sender. Messages from the sender are delivered to user Junk Email folders or to quarantine. To delete messages from the sender upon arrival, an admin can use [mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) to **Block the message**.
 
 ### Take action on multiple quarantined email messages
 
