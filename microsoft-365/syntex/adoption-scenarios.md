@@ -19,6 +19,13 @@ description: Find business scenarios about how to use Microsoft Syntex in your o
 
 # Scenarios and use cases for Microsoft Syntex
 
+Choose an example scenario to prompt ideas about how you can use Microsoft Syntex in your organization.
+
+|Scenario |Description |
+|---|---|
+|:::image type="content" source="/microsoft-365/freelance-toolkit/media/m365_freelance_communications_comm_site_358x201.png" alt-text="Infographic of a SharePoint communication site." border="false":::|**Site template solutions** <br>Use SharePoint site templates to jumpstart a professional site to manage, process, and track the status of business documents in your organization. <br>[Contracts management](/microsoft-365/freelance-toolkit/communication-deploy-sharepoint-site.md) <br>[Accounts payable](/microsoft-365/freelance-toolkit/communication-deploy-sharepoint-site.md)|
+|:::image type="content" source="/en-us/microsoft-365/freelance-toolkit/media/M365_Freelance_collaboration_teamsconversationsmall.png" alt-text="Infographic of a Teams conversation." border="false":::|**Automatically generate routine documents** <br>Use Syntex content assembly to create modern templates for files that need to be generated on a regular basis. <br>[Set up freelance teams](/en-us/microsoft-365/freelance-toolkit/collaboration-teams)|
+
 Use the following example scenarios to prompt ideas about how you can use Microsoft Syntex in your organization.
 
 - [Scenario: Track information from invoices by using the structured document processing model](adoption-scenarios.md#scenario-track-information-from-invoices-by-using-the-structured-document-processing-model)
