@@ -58,7 +58,7 @@ For example, if your organization wants to have one set of administrators or DLP
 
 #### Do you want to organize blobs in containers? 
 
-
+<!--LEFT OFF HERE 4/13/2023 4:56 PM>
 
 have different evidence folder within same ’Storage accounts’, for example, one 
 for HR department and one for IT department? If yes, then make sure create different 
