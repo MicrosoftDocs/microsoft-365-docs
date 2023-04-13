@@ -75,7 +75,7 @@ After the communication is created, the **Issuance Notification** is initiated b
 To create an issuance notification:
 
 1. In the **Issuance** tile, select **Edit**.
-2. If necessary, add additional case members or staff to the **Cc** and **Bcc** fields. To add multiple users to these fields, separate email addresses with a semi-colon.
+2. If necessary, add additional case members or staff to the **Cc** and **Bcc** fields. To add multiple users to these fields, separate email addresses with a semi-colon and without spaces between the addresses. For example, *user1@contoso.com;user2@contoso.com;user3@contoso.com*.
 3. Specify the **Subject** for the notice (required).
 4. Specify the contents or additional instructions that you would like to provide to the custodian (required). The portal content you defined in Step 2 is added to the end of the issuance notice.
 5. Select **Save**.
