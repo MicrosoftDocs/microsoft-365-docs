@@ -108,7 +108,7 @@ Specifies whether to start a process scan after new security intelligence update
 
 Specifies whether to scan archives during on-demand antivirus scans.
 > [!NOTE]
-> Archive files are never scanned during real time protection. But as soon as the archives are extracted those are scanned. The *scanArchives* option can be used to force the archives only during on-demand scan.
+> Archive files are never scanned during real time protection. As soon as the archives are extracted those are scanned. The *scanArchives* option can be used to force the scan of archives only during on-demand scan.
 
 |Description|Value|
 |---|---|
@@ -570,4 +570,5 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 ## Configuration profile deployment
 
 Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint on Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.
+
 
