@@ -6,7 +6,7 @@ ms.author: alejandros
 author: alejandrosMSFT
 ms.reviewer: cabailey
 manager: laurawi
-ms.date: 04/12/2023
+ms.date: 04/13/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -95,7 +95,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Apply a sensitivity label to emails automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers |Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ |16.49+ |Under review |Under review |Yes |
 |[Different settings for default label and mandatory labeling](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) |Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ |16.43+ <sup>\*</sup> |4.2111+ |4.2111+ |Yes |
 |[PDF support](sensitivity-labels-office-apps.md#pdf-support) |Current Channel: 2205+ <br /><br> Monthly Enterprise Channel: 2205+ <br /><br> Semi-Annual Enterprise Channel: Under review| Under review |Under review |Under review |Under review |
-|[Apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) |Current Channel: 2211+ <br /><br> Monthly Enterprise Channel: 2211+ <br /><br> Semi-Annual Enterprise Channel: 2302+ | 16.61+ <sup>\*</sup> |4.2226+ |4.2203+ |Under review |
+|[Apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) |Current Channel: 2211+ <br /><br> Monthly Enterprise Channel: 2211+ <br /><br> Semi-Annual Enterprise Channel: 2302+ | 16.61+ <sup>\*</sup> |4.2226+ |4.2203+ |Rolling out |
 |[Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) |Current Channel: Rolling out to 2302+<br /><br> Monthly Enterprise Channel: 2303+ <br /><br> Semi-Annual Enterprise Channel: 2302+  |Under review |Under review |In preview (4.2313+) |Under review |
 |[Display label color](sensitivity-labels-office-apps.md#label-colors) |Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2303+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Preview: [Current Channel (Preview)](https://office.com/insider) <sup>\*</sup> |Under review |In preview (4.2313+) |Under review |
 |[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)|Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2302+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Under review |Under review |Under review |Under review |
