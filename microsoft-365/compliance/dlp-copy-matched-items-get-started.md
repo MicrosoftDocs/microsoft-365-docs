@@ -49,22 +49,46 @@ Standard DLP permissions are required. For more informations, see [Permissions](
 
 Before you can use copy matched items you have to onboard Windows 10/11 devices into Purview, see [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
 
-### Setup Azure blob storage
-One or multiple storage accounts? create one for each geopolicical region that this feature will be enabled for
+### Setup Azure storage
 
-set up Azure storage
-You will need to have an active Azure storage subscription to create an Azure blob storage.
+You should have answers to these question setting up your Azure storage and scoping the feature to users.
+#### Do you need to compartmentalize along role or departmental lines?
+
+For example, if your organization wants to have one set of administrators or DLP event investigators who can view saved items from your senior leadership and another set of adminstrators or DLP event investigators for saved items from human resources, you should create one Azure storage account for senior leadership and another for human resources. This ensures that the Azure storage admins or DLP event investigators can only see the items that matched DLP policies from their respective groups.  
+
+#### Do you want to organize blobs in containers? 
 
 
-licensing and prereqs
-How to create custom role groups
-How to apply permission (investigator and user) to the blob
-How to configure DLP to copy matched items to Azure storage
-How to access the content in the Azure blog/Where does it show up in Purview
-How to access and manage the content directly in the Azure blob
+
+have different evidence folder within same ’Storage accounts’, for example, one 
+for HR department and one for IT department? If yes, then make sure create different 
+‘Container’, see detail below.
+Keep in mind, setting permission on ‘Storage account’ level or the container level is the same - all the 
+containers under the same ‘Storage account’ will have the permission, so if configure permission for 
+different regions, you must create multiple storages, not multiple containers, you can consider 
+
+The procedures for setting up your Azure storage account, container and blobs is documented in the Azure document set. Here are links to relevant articles you can refer to to help you get started:
+1. [Introduction to Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction)
+1. [Create a storage account](/azure/storage/common/storage-account-create)
+1. [Manage blob containers using the Azure portal](/azure/storage/blobs/blob-containers-portal)
+1. [Manage block blobs with PowerShell](/azure/storage/blobs/blob-powershell)
+
+
+### Set permissions on the Azure blob storage
+
+
+containers as folder structure on the cloud.
+
+
+1. [Choose how to authorize access to blob data in the Azure portal](https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-portal)
+
 
 
 the role group that DLP incident investigators must have these permissions on the Azure blob
+create custom role groups for endpoint incident administrators and for all users whose devices will be targeted by DLP policies that copy matched items to Azure storage.
+
+How to create custom role groups
+How to apply permission (investigator and user) to the blob
 
 • Actions: • Microsoft.Storage/storageAccounts/blobServices -> Read: List Blob Services
 • Microsoft.Storage/storageAccounts/blobServices -> Read: Get blob service properties or statistics
@@ -86,17 +110,20 @@ Actions: • Microsoft.Storage/storageAccounts/blobServices -> Read : List Blob
 • Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Write : Write Blob
 • Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Other : Add blob content
 
-create custom role groups for endpoint incident administrators and for all users whose devices will be targeted by DLP policies that copy matched items to Azure storage.
-
-### Set permissions on the Azure blob storage
-
 ### Endpoint DLP settings configuration
+How to configure DLP to copy matched items to Azure storage
 
 ### Policy configuration 
 
 ### View saved files
+How to access the content in the Azure blog/Where does it show up in Purview
+
+
+get links to Azure content on Storage Browser
 
 Cover how they DLP incident investigators can access the blob storage and view what is in there.
+
+How to access and manage the content directly in the Azure blob
 
 Considering GDPR and California Consumer Privacy Act, how do admins handle files in the Storage Account when they receive a Data Subject Request to delete or remove those files?
 <AK> Since the governance of the customer owned storage is with them, we cannot be prescriptive. Nonetheless all files have a timestamp, admins can correlate the timestamp with alert (related to DSR). Going forward when we have in-product evidence preview. It will be smooth for them to track the evidence and respond to DSRs like this.

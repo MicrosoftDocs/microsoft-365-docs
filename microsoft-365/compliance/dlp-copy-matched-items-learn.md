@@ -47,11 +47,11 @@ This feature will only make copies of items that match DLP policies on onboarded
 ### Evidence collection for file activities on devices<!--Copy matched items--> and contextual summary
 
  When an item and the activity that a user is taking on that item match the conditions defined in a DLP policy, a **DLPRuleMatch** event will show up in [Activity explorer](data-classification-activity-explorer.md). This is true for every location that DLP supports. The **DLPRuleMatch** event contains a limited amount of the text that surrounds the matched content. This limited amount of text is called [contextual summary](dlp-learn-about-dlp.md#contextual-summary).
-It's important to understand the difference between evidence collection for file activities on devices <!--copy matched item--> and contextual summary. Evidence collection for file activities on devices <!--Copy matched items--> is only available for onboarded Windows devices and saves a copy of the entire item that matched a policy to Azure storage. Contextual summary is captured for every DLP policy rule match and only contains a limited amount of the text that surrounds the target text that triggerd the match. 
+It's important to understand the difference between evidence collection for file activities on devices <!--copy matched item--> and contextual summary. Evidence collection for file activities on devices <!--Copy matched items--> is only available for onboarded Windows devices and saves a copy of the entire item that matched a policy to the Azure storage account. Contextual summary is captured for every DLP policy rule match and only contains a limited amount of the text that surrounds the target text that triggerd the match. 
 
 ## Covered user activities
  
-You can set evidence collection for file activities on devices to save a copy of a matched item to Azure when a user attempts to do one of these activities on a matched item:
+You can set evidence collection for file activities on devices to save a copy of a matched item to the Azure storage account when a user attempts to do one of these activities on a matched item:
  - Copy to a removable USB
  - Copy to Network share
  - Print
@@ -79,18 +79,18 @@ Evidence collection for file activities on devices supports up to 10 Azure stora
 ### Local storage and bandwidth
 
 By default, copies of matched items are saved asynchronously to the configured Azure storage account over the existing network connection. If the device doesn't have connectivity, matched items will be save locally, up to the 500MB limit. You can save items locally up to 60 days.
-While has connectivity to Azure storage, there is no limit on bandwidth usage. The bandwidth that evidence collection for file activities on devices uses doesn't impact the default or configured bandwidth limits for [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
+While the device has connectivity to the Azure storage account URL, there is no limit on bandwidth usage. The bandwidth that evidence collection for file activities on devices uses doesn't impact the default or configured bandwidth limits for [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
 
-### Azure blob storage
+### Azure storage accounts
 
 Customers are responsible for creating and managing their own Azure storage accounts. If you are new to Azure storage, see:
 - [What is Azure Blob storage](/azure/storage/blobs/storage-blobs-overview.md)
 - [Introduction to Azure Storage](/azure/storage/common/storage-introduction.md)
 - [Create a storage account](/azure/storage/common/storage-account-create)
 
-Items that match a policy are copied from the users device to the Azure blob in the security context of the logged in user. So, all users who are in-scope for the policy must have read and write permission to the blob storage. For more information, see [Get started with collecting files that match data loss prevention policies from devices (preview)](dlp-copy-matched-items-get-started.md)
+Items that match a policy are copied from the users device to the Azure storage account blob in the security context of the logged in user. So, all users who are in-scope for the policy must have read and write permission to the blob storage. For more information, see [Get started with collecting files that match data loss prevention policies from devices (preview)](dlp-copy-matched-items-get-started.md)
 
-Similarly, all adminstrators who will be reviewing the saved items must have read permission to the Azure blob storage. For more information, see [Get started with collecting files that match data loss prevention policies from devices (preview)](dlp-copy-matched-items-get-started.md).
+Similarly, all adminstrators who will be reviewing the saved items must have read permission to the Azure storage account blob. For more information, see [Get started with collecting files that match data loss prevention policies from devices (preview)](dlp-copy-matched-items-get-started.md).
 
 ## Next step
 
