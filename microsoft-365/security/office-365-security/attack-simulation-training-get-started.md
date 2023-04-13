@@ -80,7 +80,7 @@ In Attack simulation training, multiple types of social engineering techniques a
 
 - **Link in Attachment**: This is a hybrid of a credential harvest. An attacker sends the recipient a message that contains a URL inside of an attachment. When the recipient opens the attachment and clicks on the URL, they're taken to a website that typically shows a dialog box that asks the user for their username and password. Typically, the destination page is themed to represent a well-known website in order to build trust in the user.
 
-- **Link to Malware**: An attacker sends the recipient a message that contains a link to an attachment on a well-known file sharing site (for example, SharePoint Online or Dropbox). When the recipient clicks on the URL, the attachment opens and arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
+- **Link to Malware**: An attacker sends the recipient a message that contains a link to an attachment on a well-known file sharing site (for example, SharePoint Online or Dropbox). When the recipient clicks on the URL, the attachment opens, and arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
 
 - **Drive-by-url**: An attacker sends the recipient a message that contains a URL. When the recipient clicks on the URL, they're taken to a website that tries to run background code. This background code attempts to gather information about the recipient or deploy arbitrary code on their device. Typically, the destination website is a well-known website that has been compromised or a clone of a well-known website. Familiarity with the website helps convince the user that the link is safe to click. This technique is also known as a *watering hole attack*.
 
@@ -241,7 +241,7 @@ One of the most crucial elements in a phishing simulation is the payload selecti
 
 To combat the tendency to use low click rate payloads and to maximize educational returns, we've created a new piece of metadata for every global payload called the predicted compromise rate (PCR).
 
-PCR uses historical data across Microsoft 365 that predicts the percentage of people who will be compromised by the payload. The formula is: users compromised / total number of users who receive the simulation. PCR is an intelligent mechanism that's built on information like payload content, compromise rates (aggregated and anonymized), and payload metadata. PCR predicts a more accurate potential compromise rate when the payload is used within a simulation. The benefit of PCR comes from predicting actual vs. predicted click through for a given simulation and payload.
+PCR uses historical data across Microsoft 365 that predicts the percentage of people who will be compromised by the payload. PCR is an intelligent mechanism that's built on information like payload content, compromise rates (aggregated and anonymized), and payload metadata. PCR predicts a more accurate potential compromise rate when the payload is used within a simulation. The benefit of PCR comes from predicting actual vs. predicted click through for a given simulation and payload.
 
 You can also review the overall performance of your organization by measuring the difference between the predicted compromise rate and the actual compromise rate across simulations using the Training efficacy report.
 
