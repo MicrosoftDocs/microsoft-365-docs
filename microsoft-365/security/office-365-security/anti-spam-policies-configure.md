@@ -17,7 +17,7 @@ ms.custom:
 description: Admins can learn how to view, create, modify, and delete anti-spam policies in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 3/3/2023
+ms.date: 4/12/2023
 ---
 
 # Configure anti-spam policies in EOP
@@ -173,7 +173,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
 
      ⁴ For **High confidence phishing**, the **Move message to Junk Email folder** action has effectively been deprecated. Although you might be able to select **Move message to Junk Email folder**, high confidence phishing messages are always quarantined (equivalent to selecting **Quarantine message**).
 
-     ⁵ Users can't release their own messages that were quarantined as high confidence phishing by anti-spam policies, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of quarantined high confidence phishing messages, although we typically don't recommend it.
+     ⁵ Users can't release their own messages that were quarantined as high confidence phishing by anti-spam policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware or high-confidence phishing messages.
 
    - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted, and is not recoverable. A valid value is from 1 to 30 days.
 
