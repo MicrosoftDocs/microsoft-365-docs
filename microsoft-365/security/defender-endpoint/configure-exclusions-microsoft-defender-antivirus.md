@@ -51,6 +51,9 @@ To configure and validate exclusions, see the following:
 >
 > Defining exclusions lowers the protection offered by Microsoft Defender Antivirus. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
 
+> [!NOTE]
+> Exclusions directly impact the ability for Microsoft Defender Antivirus to block, remediate or inspect events related to the files, folders or processes that are added to the exclusion list. This means that features which are directly dependent on the AV engine such as protection against malware, file IOCs and certificate IOCs will not be effective. Furthermore, the **Network Protection** and **Attack Surface Reduction (ASR) Rules** are also impacted by process exclusions specifically, meaning that a process exclusion on any platform will result in Network Protection or ASR being unable to inspect traffic or enforce rules for that specific process.
+
 Keep the following points in mind when you're defining exclusions:
 
 - Exclusions are technically a protection gap. Consider all your options when defining exclusions. Other options can be as simple as making sure the excluded location has the appropriate access-control lists (ACLs) or setting policies to audit mode at first.
