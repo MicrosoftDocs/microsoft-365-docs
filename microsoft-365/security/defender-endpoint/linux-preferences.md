@@ -108,7 +108,7 @@ Specifies whether to start a process scan after new security intelligence update
 
 Specifies whether to scan archives during on-demand antivirus scans.
 > [!NOTE]
-> Archive files are never scanned during real time protection. But as soon as the archives are extracted those are scanned. scanArchives option can be used to force the archives only during on-demand scan.
+> Archive files are never scanned during real time protection. But as soon as the archives are extracted those are scanned. The *scanArchives* option can be used to force the archives only during on-demand scan.
 
 |Description|Value|
 |---|---|
