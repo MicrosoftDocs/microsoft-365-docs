@@ -20,7 +20,7 @@ ms.collection:
 description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/6/2023
+ms.date: 4/12/2023
 ---
 
 # Recommended settings for EOP and Microsoft Defender for Office 365 security
@@ -82,7 +82,7 @@ Admins can create or use quarantine policies with more restrictive or less restr
 |&nbsp;&nbsp;&nbsp;**Quarantine policy** for **Hight confidence spam** <br/><br/> _HighConfidenceSpamQuarantineTag_|DefaultFullAccessPolicy¹|DefaultFullAccessWithNotificationPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if high confidence spam detections are quarantined.|
 |**Phishing** detection action <br/><br/> _PhishSpamAction_|**Move message to Junk Email folder**<sup>\*</sup> <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`|<sup>\*</sup> The default value is **Move message to Junk Email folder** in the default anti-spam policy and in new anti-spam policies that you create in PowerShell. The default value is **Quarantine message** in new anti-spam policies that you create in the Microsoft 365 Defender portal.|
 |&nbsp;&nbsp;&nbsp;**Quarantine policy** for **Phishing** <br/><br/> _PhishQuarantineTag_|DefaultFullAccessPolicy¹|DefaultFullAccessWithNotificationPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if phishing detections are quarantined.|
-|**High confidence phishing** detection action <br/><br/> _HighConfidencePhishAction_|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`|Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of their quarantined high confidence phishing messages, although we typically don't recommend it.|
+|**High confidence phishing** detection action <br/><br/> _HighConfidencePhishAction_|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`|Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high-confidence phishing messages.|
 |**Quarantine policy** for **High confidence phishing** <br/><br/> _HighConfidencePhishQuarantineTag_|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy||
 |**Bulk** detection action <br/><br/> _BulkSpamAction_|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`||
 |&nbsp;&nbsp;&nbsp;**Quarantine policy** for **Bulk** <br/><br/> _BulkQuarantineTag_|DefaultFullAccessPolicy¹|DefaultFullAccessPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if bulk detections are quarantined.|
@@ -148,7 +148,7 @@ Quarantine policies define what users are able to do to quarantined messages, an
 
 The policy named AdminOnlyAccessPolicy enforces the historical capabilities for messages that were quarantined as malware as described in the table [here](quarantine-end-user.md). 
 
-Users can't release their own messages that were quarantined as malware, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of their quarantined malware messages, although we typically don't recommend it.
+Users can't release their own messages that were quarantined as malware, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware messages.
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
@@ -302,7 +302,7 @@ Quarantine policies define what users are able to do to quarantined messages, an
 
 The **Quarantine policy** value is blank when you create a new Safe Attachments policy in the Defender portal. This blank value means the default quarantine policy named AdminOnlyAccessPolicy is used. This policy enforces the historical capabilities for messages that were quarantined as malware by Safe Attachments as described in the table [here](quarantine-end-user.md). 
 
-Users can't release their own messages that were quarantined as malware by Safe Attachments, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of their quarantined malware messages, although we typically don't recommend it.
+Users can't release their own messages that were quarantined as malware by Safe Attachments, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware messages.
 
 |Security feature name|Default in custom|Built-in protection|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|:---:|---|
