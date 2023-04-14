@@ -99,7 +99,7 @@ Follow these instructions if you have an Amazon Web Services (AWS) or Google Clo
 
 ##### Standards supported by Compliance Manager and Defender for Cloud
 
-The standards or regulations listed below (Defender for Cloud refers to "standards," while Compliance Manager refers uses "regulations" to refer to the same thing) are suppported across Defender for Cloud and Compliance Manager. Each standard is available to support Microsoft 365 in addition to the other cloud services listed in parenthesis.
+The standards or regulations listed below (Defender for Cloud refers to "standards," while Compliance Manager refers uses "regulations" to refer to the same thing) are suppported across Defender for Cloud and Compliance Manager. Each standard is available to support Microsoft 365 in addition to the other cloud services listed in parentheses.
 
 - AWS Foundational Security Best Practices
 - CIS 1.1.0 (GCP)
