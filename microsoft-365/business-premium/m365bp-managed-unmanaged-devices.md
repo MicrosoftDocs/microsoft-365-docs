@@ -36,7 +36,6 @@ To protect managed devices, your organization's IT or security team can:
 - [Onboard devices to Microsoft Defender for Business](m365bp-onboard-devices-mdb.md) to and protect them with mobile threat defense capabilities. Or, enroll devices in [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and use Mobile Device Management capabilities.
 - [Monitor onboarded devices](m365bp-device-states.md) for threat detections and take appropriate response actions. 
 - [Take actions](m365bp-review-threats-take-action.md), such as requiring or starting antivirus scans and requiring updates to be installed.
-[Set up and secure managed devices](m365bp-protect-devices.md).
 
 To learn more about protecting managed devices, see [Set up and secure managed devices](m365bp-protect-devices.md).
 
@@ -44,7 +43,11 @@ To learn more about protecting managed devices, see [Set up and secure managed d
 
 Unmanaged devices, often referred to as bring-your-own devices, or *BYOD*, tend to be personally owned devices that employees set up and use. 
 
-To protect unmanaged devices, users can:
+To protect unmanaged devices, your organization's IT or security team can:
+
+- 
+
+users can:
 
 - Make sure antivirus/antimalware software is installed and up to date on all devices. (See [Stay protected with Windows Security](https://support.microsoft.com/en-us/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963).)
 - [Keep devices up to date](https://support.microsoft.com/en-us/windows/keep-your-pc-up-to-date-de79813c-7919-5fed-080f-0871c7bd9bde), with current updates for operating systems, applications, and antivirus software.
