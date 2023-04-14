@@ -37,5 +37,5 @@ Your objectives are to:
 - [Turn on MFA](m365bp-conditional-access.md).
 - [Protect your admin accounts](m365bp-protect-admin-accounts.md).
 - [Protect against malware and other threats](m365bp-increase-protection.md).
-- [Plan for managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
+- [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
 
