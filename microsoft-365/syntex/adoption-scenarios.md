@@ -19,7 +19,7 @@ description: Find business scenarios about how to use Microsoft Syntex in your o
 
 # Scenarios and use cases for Microsoft Syntex
 
-Choose an example scenario to prompt ideas about how you can use Microsoft Syntex in your organization.
+View example scenarios to prompt ideas about how you can use Microsoft Syntex in your organization.
 
 |Scenario |Description |
 |---|---|
