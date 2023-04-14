@@ -242,18 +242,16 @@ Contact Microsoft Support if the recommended actions don't resolve issues with t
 
 When forensic evidence is configured, you can opt in to purchase the forensic evidence add-on for Insider Risk Management for your captured clips. The add-on is available for organizations with any of the following licenses: Microsoft 365 E5, Microsoft 365 E5 Compliance, or Microsoft 365 E5 Insider Risk Management. 
 
-You can purchase the add-on in units of 100 GB per month. The purchased capacity is metered based on forensic evidence ingested at the tenant level for users included in forensic evidence policies. 100 GB is roughly equal to around 1,100 hours of forensic evidence captures per tenant, at a video resolution of 1080p. You can [download the capacity calculator](https://aka.ms/ForensicEvidenceCapacityCalculator) to help estimate the number of GBs needed per month. 
+Organizations can purchase the add-on in units of 100 GB per month. Purchased capacity applies to the ingestion of forensic evidence beginning on the date of purchase and resets on the first of the month. Unused capacity does not carry over. We recommend you purchase the license at the beginning of the month to maximize the value of the license. 100 GB is roughly equal to around 1,100 hours of forensic evidence captures per tenant, at a video resolution of 1080p. You can [download the capacity calculator](https://aka.ms/ForensicEvidenceCapacityCalculator) to help estimate the number of GBs needed per month. 
 
-Each add-on license is valid for one month (30 days) from the date of purchase. You can purchase multiple licenses at the same time, but each forensic evidence add-on license is valid for just one month from the date of purchase. The unused capacity is forfeited when the license expires.   
-
-The 100 GB is calculated based on the volume of forensic evidence ingested from endpoints. Once the forensic evidence is ingested, it will be retained for 120 days. You can export forensic evidence if needed after the 120-day retention period. 
+Once the forensic evidence is ingested, it will be retained for 120 days. You can export forensic evidence if needed after the 120-day retention period. 
 
 ### Payment plans
 
 There are two payment plans available when purchasing the add-on through the Microsoft 365 admin center:
 
-- **Pay yearly (available in all channels).** The annual commitment option allows you to buy the number of licenses you specify each month for 12 months. It’s suitable for customers who want to ensure they have capacity available each month to ingest forensic evidence without interruption. This payment plan will automatically replenish the number of licenses purchased each month. The license is still valid for one month from the date of purchase, and the unused capacity will be forfeited when the license expires. Customers can choose to be billed one time or split the bill into 12 monthly payments.
-- **Pay monthly (only available in web direct).** If you don't want to make an annual commitment, you can buy the number of licenses needed each month. The license is valid for one month from the date of purchase and the unused capacity will be forfeited when the license expires.
+- **Pay yearly (available in all channels).** The annual commitment option allows you to buy the number of licenses you specify each month for 12 months. It’s suitable for customers who want to ensure they have capacity available each month to ingest forensic evidence without interruption. This payment plan will automatically replenish the number of licenses purchased each month. Purchased capacity applies to the ingestion of forensic evidence beginning on the date of purchase and resets on the first of the month. Unused capacity does not carry over. Customers can choose to be billed one time or split the bill into 12 monthly payments.
+- **Pay monthly (only available in web direct).** If you don't want to make an annual commitment, you can buy the number of licenses needed each month. Purchased capacity applies to the ingestion of forensic evidence beginning on the date of purchase and resets on the first of the month. Unused capacity does not carry over. 
 
 ### Can I try the forensic capability before purchasing it?
 
