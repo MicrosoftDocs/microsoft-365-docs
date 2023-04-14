@@ -29,7 +29,7 @@ description: "Set up your Azure and other non-Microsoft services for using Micro
 
 Compliance Manager relies on integration with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) in order to provide multiservice support. Organizations must have a subcription to Microsoft Azure and then enable Microsoft Defender for Cloud so that Compliance Manager can receive the necessary signals to monitor your cloud services. Once you have Defender for Cloud, you need to assign the relevant industry and regulatory standards to your subscription.
 
-Depending on what your organization already has or doesn't have,  you can jump to the section below that aligns to your situation in order to get started:
+Depending on what your organization has already set up, jump to the section below that aligns to your situation in order to get started:
 
 - **You don't have Auzre**: [Get an Azure subscription](#get-an-azure-subscription)
 - **You have Azure but don't have Defender for Cloud**: [Enable Defender for Cloud on your Azure subscription](#enable-defender-for-cloud)
@@ -85,6 +85,38 @@ Follow these instructions if you have an Amazon Web Services (AWS) or Google Clo
 1. When you complete the wizard, you can begin assigning standards to your connected AWS or GCP subcriptions within about an hour, though full data can take up to 24 hours to appear.
 
 ## Add standards to your subscriptions
+
+1. In Defender for Cloud, select **Environment settings** on the left navigation.
+
+1. Your available environments and subscriptions will be listed on the page. You may need to expand your management groups to view subscriptions, which you can do by selecting **Expand all** below the search bar. Find the subscription to which you want to add a standard.
+
+1. On the row for the subscription, select the ellipses on the far right and select **Edit settings**.
+    ![Compliance Manager MDC subscription settings.](../media/compliance-manager-mdc-subcription-settings.png "Defender for Cloud edit subscription settings")
+
+1. On the left navigation, under **Policy settings**, select **Security policy**.
+
+1. Browse the list of available standards under **Industry & regulatory standards**. You can view more standards by selecting the **Add more standards** button at the bottom of the list. Assign at least one of the supported standards listed below to your subscription by selecting **Enable** on the standard's row.
+
+##### Standards supported by Compliance Manager and Defender for Cloud
+
+The standards or regulations listed below (Defender for Cloud refers to "standards," while Compliance Manager refers uses "regulations" to refer to the same thing) are suppported across Defender for Cloud and Compliance Manager. Each standard is available to support Microsoft 365 in addition to the other cloud services listed in parenthesis.
+
+- AWS Foundational Security Best Practices
+- CIS 1.1.0 (GCP)
+- CIS Microsoft Azure Foundations Benchmark v1.1.0 (Azure)
+- CIS 1.2.0 (AWS, GCP)
+- CIS Microsoft Azure Foundations Benchmark v1.3.0 (Azure)
+- CIS Microsoft Azure Foundations Benchmark v1.4.0 (Azure)
+- FedRAMP High (Azure)
+- FedRAMP Moderate (Azure)
+- ISO 27001 (Azure, GCP)
+- NIST SP 800-171 Rev.2 (Azure)
+- NIST SP 800-53 Rev.4 (Azure)
+- NIST SP 800 53 Rev.5 (Azure, AWS, GCP)
+- PCI DSS 3.2.1 (AWS, GCP)
+- PSC DSS v4 (Azure)
+- SOC 2 Type 2 (Azure)
+- SWIFT CSP-CDCF v2022 (Azure)
 
 ## Resources
 

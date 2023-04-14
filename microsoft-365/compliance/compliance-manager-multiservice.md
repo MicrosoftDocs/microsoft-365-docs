@@ -29,13 +29,11 @@ description: "Learn how Microsoft Purview Compliance Manager provides multiservi
 
 ## Overview
 
-Compliance Manager now provides multiservice support.  You can use Compliance Manager to track and manage your compliance activities within Microsoft 365, Microsoft Azure, and other cloud services such as Google Cloud Services and Azure Web Services.
+Compliance Manager now provides multiservice support. You can use Compliance Manager to track and manage your compliance activities within Microsoft 365, Microsoft Azure, and other cloud services such as Google Cloud Services (GCP) and Azure Web Services (AWS).
 
-Integration with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) provides signaling to Compliance Manager. This integration allows Compliance Manger to track configurations in your organization’s Microsoft Azure environment so that you can assess your progress in meeting controls for the regulations you need to comply with. Compliance Manager provides guidance for implementing improvement actions in non-Microsoft services for meeting controls and earning points that count toward your overall compliance score.
+Integration with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) provides signaling to Compliance Manager. This integration allows Compliance Manger to track configurations in your organization’s Microsoft Azure environment, and detect signals from other services like GCP and AWS, so that you can assess your progress in meeting controls for the regulations you need to comply with. Compliance Manager provides guidance for implementing improvement actions in non-Microsoft services for meeting controls and earning points that count toward your overall compliance score.
 
-Compliance Manager supports both Microsoft and non-Microsoft services. This means that you can now use Compliance Manager to build assessments to track and manage your organization’s compliance in the context of both Microsoft services and those of other cloud service providers. Compliance Manager can detect signals from Azure, Google Cloud Services, and Azure Web Services to assess configurations and automatically monitor control status.
-
-This comes in two different contexts:
+This integration becomes apparent in two different contexts in Compliance Manager:
 
 1. [Assessments](compliance-manager-assessments.md): When you create an assessment in Compliance Manager, you’ll chose one or more applicable services: Microsoft 365, Microsoft Azure, Amazon Web Services, or Google Cloud Platform. Compliance Manger then provides automatic monitoring of configurations in your selected services to determine whether or not controls are passing or failing.
 
@@ -51,6 +49,10 @@ The services listed below can be assessed by Compliance Manager:
 - Amazon Web Services
 
 We’ll soon roll out a selection of data connectors built specifically for Compliance Manager that can support other non-Microsoft services such as Salesforce and Zoom.
+
+## Supported regulations
+
+View the [list of regulations supported by both Compliance Manager and Defencer for Cloud](compliance-manager-cloud-settings.md#standards-supported-by-compliance-manager-and-defender-for-cloud).
 
 ## Support levels
 
