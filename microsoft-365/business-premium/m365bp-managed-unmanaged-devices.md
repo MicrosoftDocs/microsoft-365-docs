@@ -34,7 +34,7 @@ To protect managed devices, your organization's IT or security team can:
 - Use [Windows Autopilot](/mem/autopilot/windows-autopilot) to get a user's Windows device ready for use. With Autopilot you can install business critical apps, apply policies, and enable features like BitLocker. 
 - Upgrade [Windows devices to Windows 10 or 11 Pro](m365bp-upgrade-windows-10-pro.md) (certain requirements apply).  
 - [Onboard devices to Microsoft Defender for Business](m365bp-onboard-devices-mdb.md) to and protect them with mobile threat defense capabilities. Or, enroll devices in [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and use Mobile Device Management capabilities.
-- [Monitor onboarded devices](m365bp-device-states) for threat detections and take appropriate response actions. 
+- [Monitor onboarded devices](m365bp-device-states.md) for threat detections and take appropriate response actions. 
 - [Take actions](m365bp-review-threats-take-action.md), such as requiring or starting antivirus scans and requiring updates to be installed.
 [Set up and secure managed devices](m365bp-protect-devices.md).
 
