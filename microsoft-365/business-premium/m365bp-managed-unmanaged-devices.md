@@ -55,7 +55,7 @@ To protect unmanaged (BYOD) devices, your organization's IT or security team can
 If users are protecting their own unmanaged devices, they can:
 
 - **Turn on encryption and firewall protection**. Disk encryption protects data when devices are lost or stolen. Firewall protection helps protect devices from unwanted contact initiated by other computers when you're connected to the Internet or a network. To learn more, see [Protect unmanaged Windows PCs and Macs in Microsoft 365 Business Premium](m365bp-protect-pcs-macs.md).
-- **Make sure antivirus/antimalware software is installed and up to date on all devices**. (See [Stay protected with Windows Security](https://support.microsoft.com/en-us/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963).)
+- **Make sure antivirus/antimalware software is installed and up to date on all devices**. To learn more, see  [Stay protected with Windows Security](https://support.microsoft.com/en-us/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963).
 - **Keep their devices up to date with operating system and application updates**. To learn more, see [Keep your PC up to date](https://support.microsoft.com/en-us/windows/keep-your-pc-up-to-date-de79813c-7919-5fed-080f-0871c7bd9bde).
 
 To learn more about protecting unmanaged devices, see [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md).
