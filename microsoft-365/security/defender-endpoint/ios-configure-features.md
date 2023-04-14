@@ -229,7 +229,7 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
         - Users will see a toggle for **Unsafe Site Info**.
         - This toggle is only visible if Admin has set **DefenderExcludeURLInReport = true**.
         - If enabled by Admin, Users can decide if they want to send the unsafe site info to their Organization or not.
-        - By default, its set to `false`. The unsafe site information will not be sent.
+        - By default, it's set to `false`. The unsafe site information will not be sent.
         - If user toggles it to `true`, the unsafe site details will  be sent.
 
 Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
