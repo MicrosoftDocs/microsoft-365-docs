@@ -31,8 +31,7 @@ description: "An overview of how to set up all the bring-your-own devices (BYOD)
 Every device, whether [managed or unmanaged](m365bp-managed-unmanaged-devices.md), is a possible attack avenue into your network. Fortunately, there are steps that everyone can take to protect their devices. In this critical mission, train everyone to protect unmanaged devices (also referred to as bring-your-own devices, or BYODs). It's important to help everyone get their devices protected as soon as possible.
 
 > [!TIP]
-> Guidance for protecting managed devices is available here: [Set up and secure managed devices](m365bp-protect-devices.md).
-> [Learn more about managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
+> Guidance for protecting managed devices is available here: [Set up and secure managed devices](m365bp-protect-devices.md). <br/>[Learn more about managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
 
 Your objectives are to:
 
