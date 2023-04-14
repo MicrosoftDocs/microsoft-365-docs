@@ -20,6 +20,8 @@
       href: purview-adaptive-scopes.md
 - name: Get started
   items: 
+    - name: Microsoft Purview setup guides
+      href: purview-fast-track-setup-guides.md
     - name: Quick tasks to get started with compliance in Microsoft Purview
       href: compliance-quick-tasks.md
     - name: Microsoft Purview solution catalog
@@ -63,7 +65,7 @@
 - name: Configure connectors to import third-party data
   items: 
    - name: Learn about connectors for third-party data
-     href: archiving-third-party-data.md
+     href: archive-third-party-data.md
    - name: Microsoft data connectors
      items:  
        - name: Bloomberg Message
@@ -213,7 +215,7 @@
        - name: CellTrust SL2 
          href: archive-data-from-celltrustsl2.md
    - name: Work with a partner to archive third-party data
-     href: work-with-partner-to-archive-third-party-data.md
+     href: archive-partner-third-party-data.md
    - name: Search for third-party data
      href: use-content-search-to-search-third-party-data-that-was-imported.md
    - name: View admin logs for data connectors
@@ -1390,8 +1392,8 @@
     - name: Content search
       items:
         - name: Overview of Content search
-          href: search-for-content.md
-        - name: Search for content
+          href: ediscovery-content-search-overview.md
+        - name: Get started with Content search
           href: ediscovery-content-search.md          
           items: 
           - name: Search for content in Teams
@@ -1409,13 +1411,13 @@
           - name: View statistics for search results
             href: ediscovery-view-keyword-statistics-for-content-search.md
           - name: Export search results
-            href: export-search-results.md
+            href: ediscovery-export-search-results.md
           - name: Export a search report
             href: ediscovery-export-a-content-search-report.md
           - name: Search for and delete email messages
-            href: search-for-and-delete-messages-in-your-organization.md
+            href: ediscovery-search-for-and-delete-email-messages.md
           - name: Retry a failed search
-            href: retry-failed-content-search.md
+            href: ediscovery-retry-failed-content-search.md
           - name: Preserve Bcc recipients for search
             href: ediscovery-preserve-bcc-and-expanded-distribution-group-recipients.md
         - name: Content search reference
@@ -1439,7 +1441,7 @@
           - name: Change the size of PST files when exporting search results
             href: ediscovery-change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
-            href: disable-reports-when-you-export-content-search-results.md
+            href: ediscovery-disable-reports-for-exported-content-search-results.md
           - name: Check your search query for errors
             href: ediscovery-check-your-content-search-query-for-errors.md
           - name: Use Microsoft Edge to download search results
@@ -1449,13 +1451,13 @@
         - name: Content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections
-            href: use-content-search-for-targeted-collections.md
+            href: ediscovery-use-content-search-for-targeted-collections.md
           - name: Search the mailbox and OneDrive account for a list of users
-            href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
+            href: ediscovery-search-mailboxes-and-onedrive-for-users.md
           - name: Create, report on, and delete multiple searches
             href: ediscovery-create-reports-and-delete-multiple-content-searches.md
           - name: Clone a search
-            href: clone-a-content-search.md
+            href: ediscovery-clone-a-content-search.md
     - name: eDiscovery (Standard)
       items:
         - name: Get started with eDiscovery (Standard)
@@ -1511,7 +1513,7 @@
           - name: Collect eDiscovery diagnostic information
             href: ediscovery-diagnostic-info.md 
           - name: Retry a failed search
-            href: retry-failed-content-search.md
+            href: ediscovery-retry-failed-content-search.md
           - name: Use Microsoft Edge to download search results
             href: ediscovery-configure-edge-to-export-search-results.md
           - name: Search for eDiscovery activities in the audit log
@@ -1520,7 +1522,7 @@
       items:
         - name: Overview
           href: ediscovery-overview.md
-        - name: Set up eDiscovery (Premium)
+        - name: Get started with eDiscovery (Premium)
           href: ediscovery-premium-get-started.md
         - name: eDiscovery (Premium) with Microsoft Teams
           items:
@@ -1698,15 +1700,15 @@
 - name: Manage holds
   items: 
     - name: How to identify the type of hold placed on a mailbox
-      href: identify-a-hold-on-an-exchange-online-mailbox.md
+      href: ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md
     - name: Delete items in the Recoverable Items folder of mailboxes on hold
-      href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
+      href: ediscovery-delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Increase the Recoverable Items quota for mailboxes on hold
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
     - name: Create a Litigation hold
-      href: create-a-litigation-hold.md
+      href: ediscovery-create-a-litigation-hold.md
     - name: Preserve Bcc and expanded distribution group recipients
-      href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+      href: ediscovery-preserve-bcc-and-expanded-distribution-group-recipients.md
 - name: Manage auditing and alert policies
   items: 
     - name: Microsoft Purview auditing solutions

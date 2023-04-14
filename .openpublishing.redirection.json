@@ -1592,8 +1592,8 @@
     },
     {
       "source_path": "microsoft-365/business/prepare-for-office-client-deployment.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment",
-      "redirect_document_id": false
+      "redirect_url": "/microsoft-365/admin/setup/upgrade-users-to-latest-office-client",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/help-users-connect-to-microsoft-365-business.md",
@@ -8352,7 +8352,7 @@
     },
     {
       "source_path": "microsoft-365/admin/misc/prepare-for-office-client-deployment.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment",
+      "redirect_url": "/microsoft-365/admin/setup/upgrade-users-to-latest-office-client",
       "redirect_document_id": false
     },
     {
@@ -10741,6 +10741,26 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "microsoft-365/compliance/archiving-third-party-data.md",
+    "redirect_url": "/microsoft-365/compliance/archive-third-party-data.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/deploy-facebook-connector.md",
+    "redirect_url": "/microsoft-365/compliance/archive-facebook-data.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/deploy-twitter-connector.md",
+    "redirect_url": "/microsoft-365/compliance/archive-twitter-data.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/work-with-partner-to-archive-third-party-data.md",
+    "redirect_url": "/microsoft-365/compliance/archive-partner-third-party-data.md",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "microsoft-365/admin/security-and-compliance/secure-your-business-data.md",
     "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
     "redirect_document_id": false
@@ -10764,6 +10784,67 @@
     "source_path": "microsoft-365/security/defender-endpoint/faqs-tamper-protection.md",
     "redirect_url": "/microsoft-365/security/defender-endpoint/faqs-on-tamper-protection",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment.md",
+    "redirect_url": "/microsoft-365/admin/setup/upgrade-users-to-latest-office-client",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/search-for-content.md",
+    "redirect_url": "/microsoft-365/compliance/ediscovery-content-search-overview",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/export-search-results.md",
+    "redirect_url": "/microsoft-365/compliance/ediscovery-export-search-results",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/search-for-and-delete-messages-in-your-organization.md",
+    "redirect_url": "/microsoft-365/compliance/ediscovery-search-for-and-delete-email-messages",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/retry-failed-content-search.md",
+    "redirect_url": "/microsoft-365/compliance/ediscovery-retry-failed-content-search",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/disable-reports-when-you-export-content-search-results.md",
+    "redirect_url": "/microsoft-365/compliance/ediscovery-disable-reports-for-exported-content-search-results",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/use-content-search-for-targeted-collections.md",
+    "redirect_url": "/microsoft-365/compliance/ediscovery-use-content-search-for-targeted-collections",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md",
+    "redirect_url": "/microsoft-365/compliance/ediscovery-search-mailboxes-and-onedrive-for-users",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/clone-a-content-search.md",
+    "redirect_url": "/microsoft-365/compliance/ediscovery-clone-a-content-search",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md",
+    "redirect_url": "/microsoft-365/compliance/ediscovery-delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/why-cloud-protection-should-be-on-mdav.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/syntex/syntex-copilot.md",
+    "redirect_url": "/microsoft-365/syntex/",
+    "redirect_document_id": true
   }
  ]
 }
+

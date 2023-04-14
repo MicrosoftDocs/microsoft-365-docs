@@ -1,5 +1,5 @@
 ---
-title: "Search for content"
+title: "Overview of Content search"
 description: "Use the Content search eDiscovery tool in the Microsoft Purview compliance portal to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business."
 f1.keywords:
 - NOCSH
@@ -18,7 +18,7 @@ ms.collection:
 - content-search
 ---
 
-# Search for content using the Content search tool
+# Overview of Content search
 
 Use the Content search tool in the Microsoft Purview compliance portal to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in collaboration tools such as Microsoft Teams and Microsoft 365 Groups.
   
