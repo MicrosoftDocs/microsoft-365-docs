@@ -27,13 +27,13 @@ An important part of your security strategy is protecting the devices your emplo
 
 ## Managed devices
 
-Managed devices are usually set up, configured, and monitored by your company's IT or security team.
+Managed devices are typically company-owned devices, usually set up and configured by your company's IT or security team.
 
 To protect managed devices, your organization's IT or security team can: 
 
-- Use [Windows Autopilot](/mem/autopilot/windows-autopilot) to get a user's Windows device ready for use. With Autopilot you can install business critical apps, apply policies, and enable features like BitLocker. 
-- Upgrade [Windows devices to Windows 10 or 11 Pro](m365bp-upgrade-windows-10-pro.md) (certain requirements apply).  
-- [Onboard devices to Microsoft Defender for Business](m365bp-onboard-devices-mdb.md) to and protect them with mobile threat defense capabilities. Or, enroll devices in [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and use Mobile Device Management capabilities.
+- **Use Windows Autopilot to get a user's Windows device ready for first use**. With Autopilot you can install business critical apps, apply policies, and enable features like BitLocker before the device is given to a user. To learn more, see [Windows Autopilot](/mem/autopilot/windows-autopilot).
+- Upgrade [Windows devices to Windows 10 or 11 Pro](m365bp-upgrade-windows-10-pro.md). To onboard and protect devices with Microsoft Defender for Business, Windows devices must be running Windows 10 Pro or Enterprise, or Windows 11 Pro or Enterprise. In certain cases, an upgrade is included with your Microsoft 365 Business Premium subscription (see [Upgrade Windows devices to Windows 10 or 11 Pro](m365bp-upgrade-windows-10-pro.md)).  
+- [Onboard devices to Microsoft Defender for Business](m365bp-onboard-devices-mdb.md) to and protect them with mobile threat defense capabilities. Or, if you prefer to use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), enroll devices in Intune and use Mobile Device Management capabilities.
 - [Monitor onboarded devices](m365bp-device-states.md) for threat detections and take appropriate response actions. 
 - [Take actions](m365bp-review-threats-take-action.md), such as requiring or starting antivirus scans and requiring updates to be installed.
 
