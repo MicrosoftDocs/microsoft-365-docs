@@ -159,7 +159,15 @@
         - name: Get started with adoption
           href: adoption-getstarted.md
         - name: Scenarios and use cases
-          href: adoption-scenarios.md 
+          items:
+            - name: Overview
+              href: adoption-scenarios.md 
+            - name: Site template solutions
+              href: site-templates.md 
+            - name: Generate routine documents
+              href: scenario-generate-routine-documents.md 
+            - name: Generate documents in bulk
+              href: scenario-generate-documents-bulk.md 
         - name: Assess your environment
           href: adoption-assessment-tool.md 
         - name: Run a trial
