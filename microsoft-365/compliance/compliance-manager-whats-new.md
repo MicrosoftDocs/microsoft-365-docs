@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 01/25/2023
+ms.date: 05/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -26,6 +26,10 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 **In this article:** Learn about recent updates in Compliance Manager.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## May 2023
+
+Compliance Manager now supports both Microsoft and non-Microsoft services to provide multicloud support. This means that you can now use Compliance Manager to build assessments to track and manage your organization’s compliance in the context of both Microsoft services and those of other cloud service providers. Compliance Manager can detect signals from Azure, Google Cloud Services, and Azure Web Services to assess configurations and automatically monitor control status. Learn more about [multiservice support in Compliance Manager](compliance-manager-multiservice.md).
 
 ## January 2023
 
