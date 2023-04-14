@@ -34,7 +34,7 @@
         href: m365bp-protect-admin-accounts.md
       - name: Protect against malware and other threats
         href: m365bp-increase-protection.md
-      - name: Plan for managed and unmanaged devices
+      - name: Secure managed and unmanaged devices
         href: m365bp-managed-unmanaged-devices.md
 - name: Train your team
   items:
