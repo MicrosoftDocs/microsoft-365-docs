@@ -1,6 +1,6 @@
 ---
-title: Plan for managed and unmanaged devices            
-description: Identify and plan for personal, unmanaged devices and company-owned devices. Learn how to secure them.            
+title: Secure managed and unmanaged devices            
+description: Identify personal, unmanaged devices and company-owned devices, and learn how to secure them.            
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
@@ -21,13 +21,13 @@ f1.keywords: NOCSH
 audience: Admin
 ---
 
-# Plan for managed and unmanaged devices
+# Secure managed and unmanaged devices
 
-An important part of your security strategy is protecting the devices your employees use to access company data. Such devices include computers, tablets, and phones. Whether these devices are managed or unmanaged, there are steps that can be taken to protect devices and data.
+An important part of your security strategy is protecting the devices your employees use to access company data. Such devices include computers, tablets, and phones. Your organization's IT or security team, along with device users, can take steps to protect data and managed or unmanaged devices. 
 
 ## Managed devices
 
-Managed devices are usually set up, configured, and monitored by your company's IT or security team. 
+Managed devices are usually set up, configured, and monitored by your company's IT or security team.
 
 To protect managed devices, your organization's IT or security team can: 
 
@@ -41,7 +41,7 @@ To learn more about protecting managed devices, see [Set up and secure managed d
 
 ## Unmanaged devices
 
-Unmanaged devices, often referred to as bring-your-own devices, or *BYOD*, tend to be personally owned devices that employees set up and use. 
+Unmanaged devices, often referred to as bring-your-own devices, or *BYOD*, tend to be personally owned devices that employees set up and use. Unmanaged devices can be protected by security 
 
 To protect unmanaged devices, your organization's IT or security team can:
 
