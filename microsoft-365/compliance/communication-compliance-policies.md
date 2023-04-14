@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/20/2023
+ms.date: 04/14/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -322,6 +322,13 @@ If you enter multiple conditions, Microsoft 365 uses all the conditions together
 ### Review percentage
 
 If you want to reduce the amount of content to review, you can specify a percentage of all the communications governed by a communication compliance policy. A real-time, random sample of content is selected from the total percentage of content that matches chosen policy conditions. If you want reviewers to review all items, you can configure **100%** in a communication compliance policy.
+
+### Filter email blasts
+
+Use the **Filter email blasts** setting to exclude messages sent from email blast services. Messages that match the conditions you specify won't generate alerts. This includes bulk email, such as newsletters, as well as spam, phishing, and malware. When this option is selected, you can view a [report](communication-compliance-reports-audits.md#detailed-reports) that lists the bulk email senders that were filtered out.
+    
+> [!NOTE]
+> The list of senders is filtered before the content is analyzed so there might be senders that don't match the content conditions. In other words, there might be extra senders in the report. 
 
 ## Alert policies
 
