@@ -44,20 +44,30 @@ Compliance Manager relies on integration with [Microsoft Defender for Cloud](/az
 
 Depending on what your organization already has or doesn't have,  you can jump to the section below that aligns to your situation in order to get started:
 
-- You don't already have Auzre: Get Azure and create a subscription
-- You don't have Defender for Cloud: Enable Defender for Cloud on your Azure subscription
-- You have Defender for Cloud but haven't assigned standards: Assign standards to your 
+- **You don't have Auzre**: [Get an Azure subscription](#get-an-azure-subscription)
+- **You have Azure but don't have Defender for Cloud**: [Enable Defender for Cloud on your Azure subscription](#enable-defender-for-cloud)
+- **You have Defender for Cloud but haven't assigned standards**: [Assign standards to your cloud service subscriptions](#add-standards-to-your-subscriptions)
 
-## Get Azure and create a subscription
+## Get an Azure subscription
 
-abc
+A subscription to Microsoft Azure is a prerequisite for getting started with Defender for Cloud. If you don't already have a subscription, you can sign up for a free account. Visit the [Azure free account site](https://azure.microsoft.com/pricing/free-trial/) to learn more about starting a free account and other Azure pricing offerings.
 
 ## Enable Defender for Cloud
 
-abc
+Visit [Quickstart: Set up Microsoft Defender for Cloud](/azure/defender-for-cloud/get-started). Follow the simple steps to enable Defender for Cloud on your Azure subscription, and become familiar with the Defender for Cloud Overview page.
 
-## Add standards to your
+Most setup functions require the user to hold the [Owner role in Azure](/azure/role-based-access-control/built-in-roles#owner). Get more details about [User roles and permissions for Defender for Cloud](/azure/defender-for-cloud/permissions).
+
+Once you've enabled Defender for Cloud, follow the specific instructions below to make sure you're set up for Compliance Manager integration:
+
+1. Go to [Microsoft Defender for Cloud | Regulatory compliance](https://portal.azure.com/#view/Microsoft_Azure_Security/SecurityMenuBlade/~/22).
+1. Validate that you see a dashboard like this:
+
+
+
+## Add standards to your subscriptions
 
 ## Resources
 
 - [Quickstart: Set up Microsoft Defender for Cloud](/azure/defender-for-cloud/get-started)
+- [User roles and permissions for Defender for Cloud](/azure/defender-for-cloud/permissions)
