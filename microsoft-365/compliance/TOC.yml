@@ -20,6 +20,8 @@
       href: purview-adaptive-scopes.md
 - name: Get started
   items: 
+    - name: Microsoft Purview setup guides
+      href: purview-fast-track-setup-guides.md
     - name: Quick tasks to get started with compliance in Microsoft Purview
       href: compliance-quick-tasks.md
     - name: Microsoft Purview solution catalog
