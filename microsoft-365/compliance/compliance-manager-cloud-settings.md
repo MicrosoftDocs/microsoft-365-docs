@@ -23,20 +23,7 @@ description: "Set up your Azure and other non-Microsoft services for using Micro
 
 # Configure cloud settings for use with Compliance Manager
 
-**In this article:** Learn how Compliance Manager supports your multi-cloud environment.
-
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
-
-## Follow these steps
-
-WHAT NEEDS TO BE reflected here based on private preview scenarios doc?
-
-- Microsoft Defender for Cloud (is MDC same as MS Defender for Cloud apps?) [service description details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-cloud-apps).
-- CM roles required
-- Azure roles required
-- Azure setup
-- Google setup
-- AWS setup
 
 ## Setup stages
 
@@ -67,13 +54,35 @@ Once you've enabled Defender for Cloud, follow the additional steps below to mak
 1. Validate that you see a dashboard like this:
   ![Compliance Manager MDC dashboard.](../media/compliance-manager-mdc-dashboard.png "Defender for Cloud dashboard")
 
-1. If you don't see the dashboard above and instad see a notice about insufficient licensing, follow the prompts to activate an applicable Defender for Cloud plan. The plans **Foundational CSPM** and **Defender CSPM** are free to use and provide sufficient functionality.
+1. If you don't see the dashboard above and instad see a notice about insufficient licensing, follow the prompts to activate an applicable Defender for Cloud plan. The plans **Foundational CSPM** and **Defender CSPM** are free to use and provide sufficient functionality. Or follow the steps below to manually select the plans:
 
-1. 
+    1. In Defender for Cloud, select **Environment settings** on the left navigation.
+    1. Select **Azure** from your list of enviornments. Expand the item underneath **Azure** to view the subscription, then select the subcription. You'll arrive at the **Defender plans** page.
+    1. In the **Plan** column, find the rows for **Foundational CSPM** and **Defender CSPM**. In the **Status** row, select the **On** button for both plans.
 
 #### View available environments
 
-1. 
+1. In Defender for Cloud, select **Environment settings** on the left navigation.
+
+1. View the available environments and subscriptions currently visible to MDC for your tenant. You may need to expand your management groups to view subscriptions, which you can do by selecting **Expand all** below the search bar. In addition to your Azure subscriptions, you'll also see any Google Cloud Platform (GCP) projects or Amazon Web Services (AWS) accounts connected to Defender for Cloud.
+
+1. If you don't see an expected subscription and have already confirmed your Defender for Cloud licensing in the previous steps, check your current directory and subscription filters in your Azure [Portal settings](https://portal.azure.com/#settings/directory). In this view, you can adjust any subscription filters or switch to a different directory if one is available, and then return to the **Environment settings** view to check the results.
+
+1. If you don't see an expected AWS or GCP environment, account, or project, proceed to the next step to set up the necessary connectors.
+
+#### Connect to your Amazon Web Services or Google Cloud Provider accounts (optional)
+
+Follow these instructions if you have an Amazon Web Services (AWS) or Google Cloud Platform (GCP) account or project that you want Compliance Manager to cover, and you don't already see those accounts or projects in your Azure Environment settings.
+
+1. In Defender for Cloud, select **Environment settings** on the left navigation.
+
+1. Select **Add environment** and choose either **Amazon Web Services** or **Google Cloud Platform**.
+  ![Compliance Manager MDC environments.](../media/compliance-manager-mdc-environments.png "Defender for Cloud environment settings page")
+
+1. Follow the wizard steps to complete the account setup. Connecting to the accounts requires admin permissions in the AWS or GCP accounts being used, and some configuration steps within AWS or GCP. These steps are detailed in the wizard.
+    1. For a simple setup option, considider starting with just one account such as GCP. In the first step of **Account details**, at  **Onboard**, select **Single account**. This option requires the least amount of configuration effort.
+
+1. When you complete the wizard, you can begin assigning standards to your connected AWS or GCP subcriptions within about an hour, though full data can take up to 24 hours to appear.
 
 ## Add standards to your subscriptions
 
