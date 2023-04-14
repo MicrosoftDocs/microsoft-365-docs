@@ -30,6 +30,12 @@ description: "An overview for how to set up and secure managed devices from secu
 
 **Welcome to your final critical mission**! Here, you'll onboard and implement protection for all the managed devices in your organization. Microsoft Defender for Business capabilities now included in Microsoft 365 Business Premium can help ensure that your organization's devices are protected from ransomware, malware, phishing, and other threats. When you're done completing your objectives, you can rest assured, knowing you've done your part to protect your organization!
 
+> [!NOTE]
+> This article applies primarily to managed devices. Guidance for protecting unmanaged devices is available here: [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md).
+> 
+> [Learn more about managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
+
+
 Your objectives are to:
 
 - [Upgrade Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro to Windows 10 or 11 Pro](m365bp-upgrade-windows-10-pro.md).
