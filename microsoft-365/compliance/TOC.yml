@@ -1769,10 +1769,8 @@
               href: compliance-manager.md
             - name: What's new
               href: compliance-manager-whats-new.md
-            - name: How Compliance Manager supports multi-cloud
-              href: compliance-manager-whats-new.md
-            - name: Glossary
-              href: compliance-manager-whats-new.md
+            - name: Compliance Manager Glossary of terms
+              href: compliance-manager-glossary.md
             - name: Frequently asked questions (FAQ)
               href: compliance-manager-faq.yml
         - name: Get started with Compliance Manager
