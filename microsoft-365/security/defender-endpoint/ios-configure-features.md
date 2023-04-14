@@ -47,7 +47,7 @@ Microsoft Defender for Endpoint has the capability of detecting unmanaged and ma
 
 ## Web Protection and VPN
 
-By default, Defender for Endpoint on iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Note that Anti-phishing and custom indicators (URL and IP addresses) are supported as part of Web Protection. Web Content Filtering is currently not supported on mobile platforms.
+By default, Defender for Endpoint on iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Note that Anti-phishing and custom indicators (URL and Domain) are supported as part of Web Protection. IP based custom indicators are currently not supported on iOS. Web Content Filtering is currently not supported on mobile platforms (Android and iOS).
 
 Defender for Endpoint on iOS uses a VPN in order to provide this capability. Please note this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
 
@@ -96,7 +96,7 @@ This configuration is available for both the enrolled (MDM) devices as well as u
 
 ## Configure Network Protection
 
-Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to configure Network Protection. This configurations is available for both enrolled devices through MDM config and unenrolled devices through MAM config.
+Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to configure Network Protection. This configuration is available for both enrolled devices through MDM config and unenrolled devices through MAM config.
 
 > [!NOTE]
 > Only one policy should be created for Network Protection, either MDM or MAM.
@@ -110,7 +110,7 @@ Follow the below steps for setting up MDM configuration for enrolled devices for
 1. In targeted app choose **Microsoft Defender for Endpoint**.
 1. In the Settings page, choose configuration settings format **Use configuration designer**.
 1. Add 'DefenderNetworkProtectionEnable' as the configuration key, value type as 'String' and value as 'true' to enable Network Protection. (Network protection is disabled by default.)
-       :::image type="content" source="images/np-mdmconfig-key.png" alt-text="Add mdm configuration policy." lightbox="images/np-mdmconfig-key.png":::
+       :::image type="content" source="images/np-mdmconfig-key.png" alt-text="Screenshot that shows the add mdm configuration policy." lightbox="images/np-mdmconfig-key.png":::
 1. For other configurations related to Network protection, add the following keys, choose the corresponding value type and value.
 
     | Key | Value Type | Default (true-enable, false-disable) | Description |
@@ -229,8 +229,8 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
         - Users will see a toggle for **Unsafe Site Info**.
         - This toggle is only visible if Admin has set **DefenderExcludeURLInReport = true**.
         - If enabled by Admin, Users can decide if they want to send the unsafe site info to their Organization or not.
-        - By default its set to `true`, the unsafe site information will be sent.
-        - If user toggles it to `false`, the unsafe site details will not be sent.
+        - By default, it's set to `false`. The unsafe site information will not be sent.
+        - If user toggles it to `true`, the unsafe site details will  be sent.
 
 Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
 
@@ -300,9 +300,9 @@ Follow the steps below to create a compliance policy against jailbroken devices.
 Defender for Endpoint on iOS enables admins to configure custom indicators on iOS devices as well. For more information on how to configure custom indicators, see [Manage indicators](/microsoft-365/security/defender-endpoint/manage-indicators).
 
 > [!NOTE]
-> Defender for Endpoint on iOS supports creating custom indicators only for IP addresses and URLs/domains.
+> Defender for Endpoint on iOS supports creating custom indicators only for URLs and domains. IP based custom indicators is not supported on iOS.
 >
-> For iOS, no alerts are generated on Microsoft 365 Defender when the URL or IP set in the indicator is accessed.
+> For iOS, no alerts are generated on Microsoft 365 Defender when the URL or domain set in the indicator is accessed.
 
 ## Configure vulnerability assessment of apps
 
@@ -316,13 +316,17 @@ Defender for Endpoint on iOS supports vulnerability assessments of apps only for
 
      :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="App sync toggleSup" lightbox="images/tvm-app-sync-toggle.png":::
 
+> [!NOTE]
+> To get the list of all the apps including unmanaged apps, the admin has to enable **Send full application inventory data on personally owned iOS/iPadOS devices** in the Intune Admin Portal for the supervised devices marked as "Personal". 
+> For the supervised devices marked as "Corporate" in the Intune Admin Portal, the admin need not enable **Send full application inventory data on personally owned iOS/iPadOS devices**.
+
 ### On an Unsupervised Device
 
 1. To enable the feature in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** > **Microsoft Defender for Endpoint** > **Enable App sync for iOS/iPadOS devices**.
 
    :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="App sync toggle" lightbox="images/tvm-app-sync-toggle.png":::
 
-1. To get the list of all the apps including un-managed apps, Enable the toggle **Send full application inventory data on personally owned iOS/iPad OS Devices**.
+1. To get the list of all the apps including unmanaged apps, enable the toggle **Send full application inventory data on personally owned iOS/iPadOS devices**.
 
     :::image type="content" source="images/tvm-full-app-data.png" alt-text="Full App Data" lightbox="images/tvm-full-app-data.png":::
 
