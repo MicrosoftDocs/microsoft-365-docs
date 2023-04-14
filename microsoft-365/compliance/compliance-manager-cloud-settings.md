@@ -58,12 +58,22 @@ Visit [Quickstart: Set up Microsoft Defender for Cloud](/azure/defender-for-clou
 
 Most setup functions require the user to hold the [Owner role in Azure](/azure/role-based-access-control/built-in-roles#owner). Get more details about [User roles and permissions for Defender for Cloud](/azure/defender-for-cloud/permissions).
 
-Once you've enabled Defender for Cloud, follow the specific instructions below to make sure you're set up for Compliance Manager integration:
+Once you've enabled Defender for Cloud, follow the additional steps below to make sure you're set up for Compliance Manager integration.
+
+#### Confirm access to Defender for Cloud Regulatory compliance
 
 1. Go to [Microsoft Defender for Cloud | Regulatory compliance](https://portal.azure.com/#view/Microsoft_Azure_Security/SecurityMenuBlade/~/22).
+
 1. Validate that you see a dashboard like this:
+  ![Compliance Manager MDC dashboard.](../media/compliance-manager-mdc-dashboard.png "Defender for Cloud dashboard")
 
+1. If you don't see the dashboard above and instad see a notice about insufficient licensing, follow the prompts to activate an applicable Defender for Cloud plan. The plans **Foundational CSPM** and **Defender CSPM** are free to use and provide sufficient functionality.
 
+1. 
+
+#### View available environments
+
+1. 
 
 ## Add standards to your subscriptions
 
