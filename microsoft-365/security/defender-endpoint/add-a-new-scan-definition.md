@@ -81,15 +81,11 @@ Content-Type|string|application/json. **Required**.
 
 ## Request body
 
-In the request body, supply a JSON object with the following parameters:
-
-Parameter|Type|Description
-:---|:---|:---
-ScanDefinitionIds|String|The scan Id. **Required**.
+Empty
 
 ## Response
 
-If successful, this method returns 200 - Ok response code and the updated Machine in the response body.
+If successful, this method returns 200 - Ok response code and the new or updated scan definition in the response body.
 
 ## Example request to add a new scan
 
