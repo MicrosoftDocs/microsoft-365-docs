@@ -96,7 +96,7 @@ This configuration is available for both the enrolled (MDM) devices as well as u
 
 ## Configure Network Protection
 
-Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to configure Network Protection. This configurations is available for both enrolled devices through MDM config and unenrolled devices through MAM config.
+Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to configure Network Protection. This configuration is available for both enrolled devices through MDM config and unenrolled devices through MAM config.
 
 > [!NOTE]
 > Only one policy should be created for Network Protection, either MDM or MAM.
@@ -110,7 +110,7 @@ Follow the below steps for setting up MDM configuration for enrolled devices for
 1. In targeted app choose **Microsoft Defender for Endpoint**.
 1. In the Settings page, choose configuration settings format **Use configuration designer**.
 1. Add 'DefenderNetworkProtectionEnable' as the configuration key, value type as 'String' and value as 'true' to enable Network Protection. (Network protection is disabled by default.)
-       :::image type="content" source="images/np-mdmconfig-key.png" alt-text="Add mdm configuration policy." lightbox="images/np-mdmconfig-key.png":::
+       :::image type="content" source="images/np-mdmconfig-key.png" alt-text="Screenshot that shows the add mdm configuration policy." lightbox="images/np-mdmconfig-key.png":::
 1. For other configurations related to Network protection, add the following keys, choose the corresponding value type and value.
 
     | Key | Value Type | Default (true-enable, false-disable) | Description |
