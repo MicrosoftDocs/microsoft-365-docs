@@ -38,12 +38,8 @@ To protect managed devices, your organization's IT or security team can:
 
 For their part in protecting managed devices, users can:
 
-- Join their devices to your network. Users can register their device to access company data. They're prompted to set up multi-factor authentication (MFA) and complete a sign-in process using their account. To learn more, see [Join your work device to your work or school network](https://support.microsoft.com/en-us/account-billing/join-your-work-device-to-your-work-or-school-network-ef4d6adb-5095-4e51-829e-5457430f3973).
-- Make sure antivirus/antimalware software is installed and up to date on all devices. See [Stay protected with Windows Security](https://support.microsoft.com/en-us/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963).
-- [Keep devices up to date](https://support.microsoft.com/en-us/windows/keep-your-pc-up-to-date-de79813c-7919-5fed-080f-0871c7bd9bde), with current updates for operating systems, applications, and antivirus software.
-- [Turn on device encryption](https://support.microsoft.com/en-us/windows/device-encryption-in-windows-ad5dcf4b-dbe0-2331-228f-7925c2a3012d) to help prevent unauthorized users from accessing data. 
-
-
+- **Join their devices to your organization's network**. Users can follow a process to register their device, set up multi-factor authentication (MFA), and complete the sign-in process using their account. To learn more, see [Join your work device to your work or school network](https://support.microsoft.com/en-us/account-billing/join-your-work-device-to-your-work-or-school-network-ef4d6adb-5095-4e51-829e-5457430f3973).
+- **Make sure antivirus/antimalware software is installed and up to date on all devices**. Once devices are onboarded, antivirus, antimalware, and other threat protection capabilities are configured for those devices. Users are prompted to install updates as they come in. To laern more, see See [Keep your PC up to date](https://support.microsoft.com/en-us/windows/keep-your-pc-up-to-date-de79813c-7919-5fed-080f-0871c7bd9bde) and [Microsoft Defender Antivirus security intelligence and product updates](../security/defender-endpoint/microsoft-defender-antivirus-updates.md).
 
 To learn more about protecting managed devices, see [Set up and secure managed devices](m365bp-protect-devices.md).
 
