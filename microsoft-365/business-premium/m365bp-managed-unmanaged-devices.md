@@ -36,6 +36,15 @@ To protect managed devices, your organization's IT or security team can:
 - **Onboard devices and protect them with [mobile threat defense](../security/defender-business/mdb-mtd.md) capabilities**. Or, if you prefer to use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can use Intune to enroll and manage devices. To learn more, see [Onboard devices to Microsoft Defender for Business](m365bp-onboard-devices-mdb.md).
 - **View and monitor device health in the Microsoft 365 Defender portal** ([https://security.microsoft.com](https://security.microsoft.com)). You can view details, such as health state and exposure level for onboarded devices. You can also take actions, such as running an antivirus scan or starting an automated investigation on a device that has detected threats or vulnerabilities. To learn more, see [Monitor onboarded devices](m365bp-device-states.md) and [Review detected threats](m365bp-review-threats-take-action.md). 
 
+For their part in protecting managed devices, users can:
+
+- Join their devices to your network. Users can register their device to access company data. They're prompted to set up multi-factor authentication (MFA) and complete a sign-in process using their account. To learn more, see [Join your work device to your work or school network](https://support.microsoft.com/en-us/account-billing/join-your-work-device-to-your-work-or-school-network-ef4d6adb-5095-4e51-829e-5457430f3973).
+- Make sure antivirus/antimalware software is installed and up to date on all devices. See [Stay protected with Windows Security](https://support.microsoft.com/en-us/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963).
+- [Keep devices up to date](https://support.microsoft.com/en-us/windows/keep-your-pc-up-to-date-de79813c-7919-5fed-080f-0871c7bd9bde), with current updates for operating systems, applications, and antivirus software.
+- [Turn on device encryption](https://support.microsoft.com/en-us/windows/device-encryption-in-windows-ad5dcf4b-dbe0-2331-228f-7925c2a3012d) to help prevent unauthorized users from accessing data. 
+
+
+
 To learn more about protecting managed devices, see [Set up and secure managed devices](m365bp-protect-devices.md).
 
 ## Unmanaged devices
