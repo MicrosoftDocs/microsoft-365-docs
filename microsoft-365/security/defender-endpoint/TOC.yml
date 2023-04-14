@@ -571,8 +571,6 @@
       - name: Cloud protection and Microsoft Defender Antivirus
         href: cloud-protection-microsoft-defender-antivirus.md
         items:
-        - name: Why cloud protection should be on
-          href: why-cloud-protection-should-be-on-mdav.md
         - name: Turn on cloud protection
           href: enable-cloud-protection-microsoft-defender-antivirus.md
         - name: Specify the cloud protection level
