@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 10/18/2022
+ms.date: 04/14/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
