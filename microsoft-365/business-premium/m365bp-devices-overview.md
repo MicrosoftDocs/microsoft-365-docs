@@ -1,5 +1,5 @@
 ---
-title: "Set Up unmanaged devices overview"
+title: "Set up unmanaged devices overview"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
