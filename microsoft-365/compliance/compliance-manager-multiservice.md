@@ -60,7 +60,7 @@ The highest level of automation and support are for Microsoft 365 services. Movi
 
 ## Get started
 
-There are setup steps required before you can start building assessments for your cloud services. Visit [Configure cloud settings](compliance-manager-cloud-settings) to get started.
+There are setup steps required before you can start building assessments for your cloud services. Visit [Configure cloud settings](compliance-manager-cloud-settings.md) to get started.
 
 ## Resources
 

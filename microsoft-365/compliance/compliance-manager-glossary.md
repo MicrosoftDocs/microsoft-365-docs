@@ -25,4 +25,4 @@ description: "Get definitiions of key terms used in Microsoft Purview Compliance
 
 This glossary provides a brief description of important terms and concepts for Microsoft Purview Compliance Manager. This glossary can help you learn and use the solution tools and features quickly and effectively.
 
-Make a table - see https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-glossary.
+Make a table - see https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-glossary.
