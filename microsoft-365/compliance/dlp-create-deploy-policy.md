@@ -279,6 +279,18 @@ This procedure uses a hypothetical company domain at Contoso.com.
 |"...the user on send with a popup dialogue..."| **Policy tips**: selected </br> - **Show policy tip as a dialog for the end user before send**: selected|
 |"...and no one can be allowed to override the block...| **Allow overrides from M365 Services**: not selected|
 
+To configure oversharing popups with default text, the DLP rule must include these conditions:
+
+- Content contains > Sensitivity labels > *choose your sensitivity label(s)*
+ 
+and a recipient-based condition
+
+- SentTo
+- SentToAMemberOf
+- RecpientDomainIs
+
+ When these conditions are met, the policy tip will display untrusted recipients while the user is writing the mail in Outlook, before it is sent.
+
 
 #### Steps to create policy for scenario 2
 
@@ -334,7 +346,45 @@ This procedure uses a hypothetical company domain at Contoso.com.
  
 1. Choose **Next** > **Keep it off** > **Next** > **Submit**.
 
+#### PowerShell steps to create policy for scenario 2
 
+DLP policies and rules can also be configured in PowerShell. To configure oversharing popups using PowerShell, first you create a DLP policy (using PowerShell) and add DLP rules for each warn, justify or block popup type.
+
+You'll configure and scope your DLP Policy using [New-DlpCompliancePolicy](/powershell/module/exchange/new-dlpcompliancepolicy). Then, you'll configure each oversharing rule using [New-DlpComplianceRule](/powershell/module/exchange/new-dlpcompliancerule)
+
+To configure a new DLP policy for the oversharing popup scenario use this code snippet:
+
+```powershell
+PS C:\> New-DlpCompliancePolicy -Name <DLP Policy Name> -ExchangeLocation All
+```
+
+This sample DLP policy is scoped to all users in your organization. Scope your DLP Policies using `-ExchangeSenderMemberOf` and `-ExchangeSenderMemberOfException`.
+
+|Parameter|	Configuration|
+|---------|---------|
+|-ContentContainsSensitiveInformation|	Configures one or more sensitivity label conditions. This sample includes one. At least one label is mandatory.|
+|-ExceptIfRecipientDomainIs|	List of trusted domains.|
+|-NotifyAllowOverride|	"WithJustification" enables justification radio buttons, "WithoutJustification" disables them.|
+|-NotifyOverrideRequirements	"WithAcknowledgement" enables the new acknowledgement option. This is optional.|
+|
+
+To configure a new DLP rule to generate a warn popup using trusted domains run this PowerShell code.
+
+```powershell
+PS C:\> New-DlpComplianceRule -Name <DLP Rule Name> -Policy <DLP Policy Name> -NotifyUser Owner -NotifyPolicyTipDisplayOption "Dialog" -ContentContainsSensitiveInformation @(@{operator = "And"; groups = @(@{operator="Or";name="Default";labels=@(@{name=<Label GUID>;type="Sensitivity"})})}) -ExceptIfRecipientDomainIs @("contoso.com","microsoft.com")
+```
+
+To configure a new DLP rule to generate a justify popup using trusted domains run this PowerShell code.
+
+```powershell
+PS C:\> New-DlpComplianceRule -Name <DLP Rule Name> -Policy <DLP Policy Name> -NotifyUser Owner -NotifyPolicyTipDisplayOption "Dialog" -BlockAccess $true -ContentContainsSensitiveInformation @(@{operator = "And"; groups = @(@{operator = "Or"; name = "Default"; labels = @(@{name=<Label GUID 1>;type="Sensitivity"},@{name=<Label GUID 2>;type="Sensitivity"})})}) -ExceptIfRecipientDomainIs @("contoso.com","microsoft.com") -NotifyAllowOverride "WithJustification"
+```
+
+To configure a new DLP rule to generat a block popup using trusted domains run this PowerShell code.
+
+```powershell
+PS C:\> New-DlpComplianceRule -Name <DLP Rule Name> -Policy <DLP Policy Name> -NotifyUser Owner -NotifyPolicyTipDisplayOption "Dialog" -BlockAccess $true -ContentContainsSensitiveInformation @(@{operator = "And"; groups = @(@{operator = "Or"; name = "Default"; labels = @(@{name=<Label GUID 1>;type="Sensitivity"},@{name=<Label GUID 2>;type="Sensitivity"})})}) -ExceptIfRecipientDomainIs @("contoso.com","microsoft.com")
+```
 ## Deployment
 
 A successful policy deployment isn't just about getting the policy into your environment to enforce controls on user actions. A haphazard, rushed deployment can negatively impact business process and annoy your users. Those consequences will slow acceptance of DLP technology in your organization and the safer behaviors it promotes. Ultimately making your sensitive items less safe in the long run. 
