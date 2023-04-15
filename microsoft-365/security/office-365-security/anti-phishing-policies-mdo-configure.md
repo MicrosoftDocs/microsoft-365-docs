@@ -82,24 +82,24 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
-2. On the **Anti-phishing** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create**.
+2. On the **Anti-phishing** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create** to open the new anti-phishing policy wizard.
 
-3. The policy wizard opens. On the **Policy name** page, configure these settings:
+3. On the **Policy name** page, configure these settings:
    - **Name**: Enter a unique, descriptive name for the policy.
    - **Description**: Enter an optional description for the policy.
 
-   When you're finished, click **Next**.
+   When you're finished on the **Policy name** page, click **Next**.
 
-4. On the **Users, groups, and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
+4. On the **Users, groups, and domains** page, identify the internal recipients that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts.
    - **Groups**:
-     - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
+     - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
    Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
-   For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
+   For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users or groups, enter an asterisk (\*) by itself to see all available values.
 
    Multiple values in the same condition use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
@@ -115,9 +115,9 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
    >
    > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy still applies to him.
 
-   When you're finished, click **Next**.
+   When you're finished on the **Users, groups, and domains** page, click **Next**.
 
-5. On the **Phishing threshold & protection** page that appears, configure the following settings:
+5. On the **Phishing threshold & protection** page, configure the following settings:
 
    - **Phishing email threshold**: Use the slider to select one of the following values:
      - **1 - Standard** (This is the default value.)
@@ -125,25 +125,33 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
      - **3 - More aggressive**
      - **4 - Most aggressive**
 
-     For more information, see [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+     For more information about this setting, see [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-   - **Impersonation**: These settings are a condition for the policy that identifies specific senders to look for (individually or by domain) in the From address of inbound messages. For more information, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+   - **Impersonation** section: These settings are conditions for the policy that identify specific senders to look for (individually or by domain) in the From address of inbound messages. For more information, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-     - **Enable users to protect**: The default value is off (not selected). To turn it on, select the check box, and then click the **Manage (nn) sender(s)** link that appears.
+     - **Enable users to protect**: This setting is not selected by default. To turn on user impersonation protection, select the check box, and then click the **Manage (nn) sender(s)** link. You identify the action for user impersonation detections on the next page.
 
-       In the **Manage senders for impersonation protection** flyout that appears, do the following steps:
+       You identify the internal and external senders to protect by the combination of their display name and email address.
 
-       - **Internal senders**: Click ![Add internal icon.](../../media/m365-cc-sc-add-internal-icon.png) **Select internal**. In the **Add internal senders** flyout that appears, click in the box and select an internal user from the list. You can filter the list by typing the user, and then selecting the user from the results. You can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results.
+       Click ![Add user icon.](../../media/m365-cc-sc-add-internal-icon.png) **Add user**. In the **Add user** flyout that opens, do the following steps:
 
-         Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+       - **Internal users**: Click in the **Add a valid email** box or start typing the user's email address. Select the email address in the **Suggested contacts** drop down list that appears. The user's display name is added to the **Add a name** (which you can change). When you're finished selecting the user, click **Add**.
 
-         When you're finished, click **Add**
+       - **External users**: Type the external user's full email address in the **Add a valid email** box, and then select the email address in the **Suggested contacts** drop down list that appears. The email address is also added in the **Add a name** box (which you can change to a display name).
 
-       - **External senders**: Click ![Add external icon.](../../media/m365-cc-sc-create-icon.png) **Select external**. In the **Add external senders** flyout that appears, enter a display name in the **Add a name** box and an email address in the **Add a vaild email** box, and then click **Add**.
+       The users you added are listed on the **Add user** flyout by **Name** and **Email address**. To remove a user, click ![Delete icon.](../../media/m365-cc-sc-close.png).
 
-         Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+       When you're finished on the **Add user** flyout, click **Add** to return to the **Manage senders for impersonation protection** flyout.
 
-         When you're finished, click **Add**
+       The users you added are listed on the **Manage senders for impersonation protection** flyout by **Display name** and **Sender email address**.
+
+       Use the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box to find users on the flyout.
+ 
+       To change the list of users from normal to compact spacing, click ![Change list spacing to compact or normal icon.](../../media/m365-cc-sc-standard-icon.png) **Change list spacing to compact or normal**, and then select ![Compact list icon.](../../media/m365-cc-sc-compact-icon.png).
+
+       To remove a user, select them selecting the round check box that appears next to their **Display name**, and then click the ![Remove selected users icon.](../../media/m365-cc-sc-remove-selected-users-icon.png) action that appears.
+
+       When you're finished on the **Manage senders for impersonation protection** flyout, click **Done** to return to the **Phishing threshold & protection** page.
 
        > [!NOTE]
        > You can specify a maximum of 350 users for user impersonation protection in each anti-phishing policy.
@@ -151,82 +159,97 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        > User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message can be identified as an impersonation attempt.
        >
        > You might get the error "The email address already exists" if you try to add a user to user impersonation protection when that email address is already specified for user impersonation protection in another anti-phishing policy. This error occurs only in the Defender portal. You won't get the error if you use the corresponding _TargetedUsersToProtect_ parameter in the **New-AntiPhishPolicy** or **Set-AntiPhishPolicy** cmdlets in Exchange Online PowerShell.
+       >
+       > If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
+       >
+       > - `noreply@email.teams.microsoft.com`
+       > - `noreply@emeaemail.teams.microsoft.com`
+       > - `no-reply@sharepointonline.com`
 
-       Back on the **Manage senders for impersonation** flyout, you can remove entries by selecting one or more entries from the list. You can search for entries using the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box.
+     - **Enable domains to protect**: This setting is not selected by default. To turn on domain impersonation protection, select the check box, and then configure one or both of the following settings that appear. You identify the action for domain impersonation detections on the next page.
 
-       After you select at least one entry, the ![Remove selected users icon.](../../media/m365-cc-sc-remove-selected-users-icon.png) **Remove selected users** icon appears, which you can use to remove the selected entries.
-
-       When you're finished, click **Done**.
-
-     - **Enable domains to protect**: The default value is off (not selected). To turn it on, select the check box, and then configure one or both of the following settings that appear:
        - **Include the domains I own**: To turn this setting on, select the check box. To view the domains that you own, click **View my domains**.
-       - **Include custom domains**: To turn this setting on, select the check box, and then click the **Manage (nn) custom domain(s)** link that appears. In the **Manage custom domains for impersonation protection** flyout that appears, click ![Add domains icon.](../../media/m365-cc-sc-create-icon.png) **Add domains**.
 
-         In the **Add custom domains** flyout that appears, click in the **Domain** box, enter a value, and then press Enter or select the value that's displayed below the box. Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+       - **Include custom domains**: To turn this setting on, select the check box, and then click the **Manage (nn) custom domain(s)** link. In the **Manage custom domains for impersonation protection** flyout that appears, do the following steps:
 
-         When you're finished, click **Add domains**
+       Click ![Add domains icon.](../../media/m365-cc-sc-create-icon.png) **Add domains**.
 
-         > [!NOTE]
-         > You can specify a maximum of 50 custom domains for domain impersonation protection in each anti-phishing policy.
+       In the **Add custom domains** flyout that appears, click in the **Domain** box, enter a domain value, and then select the value that's displayed below the box. Repeat this step as many times as necessary.
 
-       Back on the **Manage custom domains for impersonation** flyout, you can remove entries by selecting one or more entries from the list. You can search for entries using the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box.
+       The domains you added are listed on the **Add custom domains** flyout. To remove the domain, click ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
-       After you select at least one entry, the ![Delete domains icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon appears, which you can use to remove the selected entries.
+       When you're finished on the **Add custom domains** flyout, click **Add domains** to return to the **Manage custom domains for impersonation protection** flout.
 
-   - **Add trusted senders and domains**: Specify impersonation protection exceptions for the policy by clicking on **Manage (nn) trusted sender(s) and domain(s)**. In the **Manage custom domains for impersonation protection** flyout that appears, configure the following settings:
-      - **Senders**: Verify the **Sender** tab is selected and click ![Add senders icon.](../../media/m365-cc-sc-create-icon.png). In the **Add trusted senders** flyout that appears, enter an email address in the box and then click **Add**. Repeat this step as many times as necessary. To remove an existing entry, click ![Delete icon](../../media/m365-cc-sc-close-icon.png) for the entry.
+       The domains you added are listed on the **Manage custom domains for impersonation protection** flyout.
 
-        When you're finished, click **Add**.
+       Use the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box to find domains on the flyout.
+ 
+       To change the list of domains from normal to compact spacing, click ![Change list spacing to compact or normal icon.](../../media/m365-cc-sc-standard-icon.png) **Change list spacing to compact or normal**, and then select ![Compact list icon.](../../media/m365-cc-sc-compact-icon.png).
 
-      - **Domains**: Select the **Domain** tab and click ![Add domains icon.](../../media/m365-cc-sc-create-icon.png).
+       To remove a domain, select it by selecting the round check box that appears next to the domain, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** action that appears.
 
-        In the **Add trusted domains** flyout that appears, click in the **Domain** box, enter a value, and then press Enter or select the value that's displayed below the box. Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+       When you're finished on the **Manage custom domains for impersonation protection** flyout, click **Done** to return to the **Phishing threshold & protection** page.
 
-        When you're finished, click **Add**.
-
-     > [!NOTE]
-     > Trusted domain entries don't include subdomains of the specified domain. You need to add an entry for each subdomain.
-     >
-     > If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
-     >
-     > - `noreply@email.teams.microsoft.com`
-     > - `noreply@emeaemail.teams.microsoft.com`
-     > - `no-reply@sharepointonline.com`
-
-     Back on the **Manage custom domains for impersonation** flyout, you can remove entries from the **Sender** and **Domain** tabs by selecting one or more entries from the list. You can search for entries using the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box.
-
-     After you select at least one entry, the **Delete** icon appears, which you can use to remove the selected entries.
-
-     When you're finished, click **Done**.
-
-     > [!NOTE]
-     > The maximum number of sender and domain entries is 1024.
-
-   - **Enable mailbox intelligence**: The default value is on (selected), and we recommend that you leave it on. To turn it off, clear the check box.
-
-     - **Enable intelligence based impersonation protection**: This setting is available only if **Enable mailbox intelligence** is on (selected). This setting allows mailbox intelligence to take action on messages that are identified as impersonation attempts. You specify the action to take in the **If mailbox intelligence detects an impersonated user** setting on the next page.
-
-       We recommend that you turn this setting on by selecting the check box. To turn this setting off, clear the check box.
+     - **Add trusted senders and domains**: Specify impersonation protection exceptions for the policy by clicking on **Manage (nn) trusted sender(s) and domain(s)**. On the **Manage custom domains for impersonation protection** flyout that opens, configure the following settings:
 
        > [!NOTE]
-       > Mailbox intelligence protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt by mailbox intelligence.
+       > The maximum number of sender and domain entries is 1024.
 
-   - **Spoof**: In this section, use the **Enable spoof intelligence** check box to turn spoof intelligence on or off. The default value is on (selected), and we recommend that you leave it on. You specify the action to take on messages from blocked spoofed senders in the **If message is detected as spoof** setting on the next page.
+       - **Senders**: Verify the **Sender** tab is selected and then click ![Add senders icon.](../../media/m365-cc-sc-create-icon.png) **Add senders**. In the **Add trusted senders** flyout that opens, enter an email address in the **Add a valid email** box, and then click **Add**. Repeat this step as many times as necessary. To remove an existing entry, click ![Delete icon](../../media/m365-cc-sc-close-icon.png) for the entry.
+
+         When you're finished on the **Add trusted senders** flyout, click **Add** to return to the **Senders** tab of the **Manage custom domains for impersonation protection** flyout.
+
+         The senders you added are listed on the **Senders** tab.
+
+         Use the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box to find senders on the tab.
+ 
+         To change the list of senders from normal to compact spacing, click ![Change list spacing to compact or normal icon.](../../media/m365-cc-sc-standard-icon.png) **Change list spacing to compact or normal**, and then select ![Compact list icon.](../../media/m365-cc-sc-compact-icon.png).
+
+         To remove a sender, select them by selecting the round check box that appears next to their email address, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** action that appears.
+
+       - **Domains**: Select the **Domain** tab and then click ![Add domains icon.](../../media/m365-cc-sc-create-icon.png) **Add domains**. In the **Add trusted domains** flyout that opens, enter domain in the **Domain** box, and then select the domain in drop down list that appears. Repeat this step as many times as necessary. To remove an existing entry, click ![Delete icon](../../media/m365-cc-sc-remove-selection-icon.png) for the entry.
+
+         When you're finished on the **Add trusted domains** flyout, click **Add domains** to return to the **Domains** tab of the **Manage custom domains for impersonation protection** flyout.
+
+         The domains you added are listed on the **Senders** tab.
+
+         Use the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box to find domains on the tab.
+ 
+         To change the list of domains from normal to compact spacing, click ![Change list spacing to compact or normal icon.](../../media/m365-cc-sc-standard-icon.png) **Change list spacing to compact or normal**, and then select ![Compact list icon.](../../media/m365-cc-sc-compact-icon.png).
+
+         To remove a domain, select it by selecting the round check box that appears next to the domain and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** action that appears.
+
+         > [!NOTE]
+         > Trusted domain entries don't include subdomains of the specified domain. You need to add an entry for each subdomain.
+
+       When you're finished on the **Manage custom domains for impersonation protection** flyout, click **Done**to return to the **Phishing threshold & protection** page.
+
+     - **Enable mailbox intelligence**: This setting is selected by default, and we recommend that you leave it selected. To turn off mailbox intelligence, clear the check box.
+
+     - **Enable intelligence based impersonation protection**: This setting is available only if **Enable mailbox intelligence** is selected. This setting allows mailbox intelligence to take action on messages that are identified as impersonation attempts. You specify the action to take for spoof intelligence detections on the next page.
+
+       > [!NOTE]
+       > Mailbox intelligence protection doesn't work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message can be identified as an impersonation attempt by mailbox intelligence.
+
+       To turn on mailbox intelligence protection, select the check box. You specify the action for mailbox intelligence detections on the next page.
+
+   - **Spoof**: In this section, use the **Enable spoof intelligence** check box to turn spoof intelligence on or off. This setting is selected by default, and we recommend that you leave spoof intelligence protection turned on. You specify the action to take on messages from blocked spoofed senders on the next page.
 
      To turn off spoof intelligence, clear the check box.
 
      > [!NOTE]
-     > You don't need to turn off anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+     > You don't need to turn off spoof intelligence if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-   When you're finished, click **Next**.
+   When you're finished on the **Phishing threshold & protection** page, click **Next**.
 
-6. On the **Actions** page that appears, configure the following settings:
+6. On the **Actions** page, configure the following settings:
 
-   - **Message actions**: Configure the following actions in this section:
-     - **If message is detected as an impersonated user**: This setting is available only if you selected **Enable users to protect** on the previous page. Select one of the following actions in the drop down list for messages where the sender is one of the protected users that you specified on the previous page:
-       - **Don't apply any action**
-       - **Redirect message to other email addresses**
-       - **Move message to the recipients' Junk Email folders**
+   - **Message actions** section: Configure the following actions:
+
+     - **If a message is detected as user impersonation**: This setting is available only if you selected **Enable users to protect** on the previous page. Select one of the following actions in the drop down list for messages where the sender is one of the protected users that you specified on the previous page:
+       - **Don't apply any action** (default)
+       - **Redirect the message to other email addresses**
+       - **Move the message to the recipients' Junk Email folders**
        - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by user impersonation protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information about quarantine policies, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
          If you don't select a quarantine policy, the default quarantine policy for user impersonation detections is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown.
@@ -235,9 +258,9 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Delete the message before it's delivered**
 
      - **If the message is detected as an impersonated domain**: This setting is available only if you selected **Enable domains to protect** on the previous page. Select one of the following actions in the drop down list for messages where the sender's email address is in one of the protected domains that you specified on the previous page:
-       - **Don't apply any action**
-       - **Redirect message to other email addresses**
-       - **Move message to the recipients' Junk Email folders**
+       - **Don't apply any action** (default)
+       - **Redirect the message to other email addresses**
+       - **Move the message to the recipients' Junk Email folders**
        - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by domain impersonation protection.
 
          If you don't select a quarantine policy, the default quarantine policy for domain impersonation detections is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown.
@@ -246,9 +269,9 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Delete the message before it's delivered**
 
      - **If mailbox intelligence detects an impersonated user**: This setting is available only if you selected **Enable intelligence for impersonation protection** on the previous page. Select one of the following actions in the drop down list for messages that were identified as impersonation attempts by mailbox intelligence:
-       - **Don't apply any action**
-       - **Redirect message to other email addresses**
-       - **Move message to the recipients' Junk Email folders**
+       - **Don't apply any action** (default)
+       - **Redirect the message to other email addresses**
+       - **Move the message to the recipients' Junk Email folders**
        - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information about quarantine policies, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
          If you don't select a quarantine policy, the default quarantine policy for mailbox intelligence detections is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown.
@@ -256,29 +279,33 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
 
-     - **If message is detected as spoof**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Select one of the following actions in the drop down list for messages from blocked spoofed senders:
-       - **Move message to the recipients' Junk Email folders**
+     - **If the message is detected as spoof by spoof intelligence**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Select one of the following actions in the drop down list for messages from blocked spoofed senders:
+       - **Move the message to the recipients' Junk Email folders** (default)
        - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information about quarantine policies, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
          If you don't select a quarantine policy, the default quarantine policy for spoof intelligence detections is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown.
 
-   - **Safety tips & indicators**: Configure the following settings:
+   - **Safety tips & indicators** section: Configure the following settings:
      - **Show first contact safety tip**: For more information, see [First contact safety tip](anti-phishing-policies-about.md#first-contact-safety-tip).
      - **Show user impersonation safety tip**: This setting is available only if you selected **Enable users to protect** on the previous page.
      - **Show domain impersonation safety tip**: This setting is available only if you selected **Enable domains to protect** on the previous page.
      - **Show user impersonation unusual characters safety tip** This setting is available only if you selected **Enable users to protect** or **Enable domains to protect** on the previous page.
-     - **Show (?) for unauthenticated senders for spoof**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Adds a question mark (?) to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-authentication-about.md#composite-authentication).
-     - **Show "via" tag**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. The default value is on (selected). To turn it off, clear the check box.
+     - **Show (?) for unauthenticated senders for spoof**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Adds a question mark (?) to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-authentication-about.md#composite-authentication). This setting is selected by default.
+     - **Show "via" tag**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. This setting is selected by default.
 
      To turn on a setting, select the check box. To turn it off, clear the check box.
 
-   When you're finished, click **Next**.
+   When you're finished on the **Actions** page, click **Next**.
 
-7. On the **Review** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
+7. On the **Review** page, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
-   When you're finished, click **Submit**.
+   When you're finished on the **Review** page, click **Submit**.
 
-8. On the confirmation page that appears, click **Done**.
+8. On the **New anti-phishing policy created** page, you can click the links to view the policy, view anti-phishing policies, and learn more about anti-phishing policies.
+
+   When you're done on the **New anti-phishing policy created** page, click **Done**.
+
+   Back on the **Anti-phishing** page, the policy new policy is listed.
 
 ## Use the Microsoft 365 Defender portal to view anti-phishing policies
 
@@ -291,7 +318,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
    - **Priority**
    - **Last modified**
 
-3. When you select a policy by clicking on the name, the policy settings are displayed in a flyout.
+3. Select a policy by clicking anywhere other than the check box next to the name to open the details flyout.
 
 ## Use the Microsoft 365 Defender portal to modify anti-phishing policies
 
