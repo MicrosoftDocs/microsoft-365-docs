@@ -37,6 +37,8 @@ ms.date: 03/24/2021
 
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
+Endpoints are:  Laptops, Phones, Tablets, PCs, Access Points, Routers, Firewalls? //List out what Microsoft considers Endpoints//
+
 > [!TIP]
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
 >
