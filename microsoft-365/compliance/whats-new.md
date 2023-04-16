@@ -39,6 +39,13 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## May 2023
+
+### Sensitivity labels
+
+- **In preview**: A **Contextual Summary** tab is added to auto-labeling policies that are in simulation. When you select an item to review, this new tab displays the text that surrounds the matched content. The additional information provides you with more information to confirm that the match is positive and therefore suitable to turn on the policy. Or, the match is negative, in which case you can edit the policy and rerun simulation. 
+
+
 ## April 2023
 
 ### Sensitivity labels
