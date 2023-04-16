@@ -59,7 +59,7 @@ There are two different methods for automatically applying a sensitivity label t
         - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files can't be auto-labeled if they're part of an open session (the file is open).
         - Currently, attachments to list items aren't supported and won't be auto-labeled.
     - Maximum of 25,000 automatically labeled files in your tenant per day.
-    - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 locations (SharePoint sites or OneDrive accounts) when you specify specific locations by using the **Included** or **Excluded** options. If you keep the default configuration of **All**, this configuration is exempt from the 100 locations maximum.
+    - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 locations (SharePoint sites or OneDrive individual users or groups) when you specify specific locations by using the **Included** or **Excluded** options. If you keep the default configuration of **All**, this configuration is exempt from the 100 locations maximum.
     - Existing values for modified, modified by, and the date aren't changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file.
 
@@ -348,7 +348,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
         -  If you change the default of **All** included and instead, choose specific users or groups, email sent from outside your organization will be exempt from the policy. 
         -  If you keep the default of **All** included but specify users or groups to exclude, email that these excluded users send will be exempt from the policy, but not email that they receive.
     
-    - For OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls) to help you specify individual OneDrive accounts to include or exclude.
+    - For the OneDrive location, you must specify users or groups. Previously, you had to specify sites by URLs. Any existing OneDrive URL sites in auto-labeling policies will continue to work but before you can specify new OneDrive locations, or for restricted admins, you must first delete any existing site URLs. Groups supported: distribution groups, Microsoft 365 groups, mail-enabled security groups, and security groups.
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
     
