@@ -50,6 +50,18 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Microsoft 365 updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## May 2023
+
+### Sign up for email notification on Windows release health
+
+The [Windows release health section](https://learn.microsoft.com/en-us/windows/deployment/update/check-release-health) in the Microsoft 365 admin center has a new feature: an email notification capability to alert IT administrators about Windows known issues. All Windows and Microsoft 365 tenants with access to the Windows release health page will be able to sign up to receive emails about new issues and information updates, such as a change in status, new workarounds, and resolutions released.   
+
+To sign up for these email notifications about Windows known issues, you will have to go to the [Windows release health page](https://admin.microsoft.com/Adminportal/Home?#/windowsreleasehealth), select **Preferences > Email**, click **Send me email notifications about Windows release health**, and then specify: 
+- Up to two email addresses. Each admin can set their Preferences. The limit of two email addresses is per admin account. 
+- Which Windows versions you want to be notified about. If your organization has multiple versions of Windows, we recommend selecting all that apply. 
+Lastly, don’t forget to click on **Save**. It might take up to 8 hours for these changes to take effect. 
+**Note:** If one known issue affects more than one version of Windows, you will receive only one email, even if you sign up for multiple Windows versions. We won’t send duplicate emails. 
+
 ## December 2022
 
 ### Advanced deployment guides for Microsoft 365
