@@ -99,7 +99,7 @@ To rename an extractor from the **Extractors** panel:
 
 1. Select the extractor you want to rename, and then select **Rename**.
 
-    ![Screenshot of the Extractors panel showing how to rename an extractor.](../media/content-understanding/prebuilt-extractors-panel-rename-field-contracts.png) 
+    ![Screenshot of the Extractors panel showing how to rename an extractor.](../media/content-understanding/prebuilt-extractors-panel-rename-field.png) 
 
 2. In the **Rename extractor** box, enter the new name of the extractor, and then select **Rename**.
 
