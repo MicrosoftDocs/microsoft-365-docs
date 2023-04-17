@@ -31,6 +31,7 @@ Use these example scenarios to prompt ideas about how you can use Microsoft Synt
 |[:::image type="content" source="../media/content-understanding/uc-find-details.png" alt-text="Image of a generic business people at computers in an office setting." border="false":::](scenario-find-content-details.md)|[**Find content details**](scenario-find-content-details.md) <br>Use Syntex to centralize, organize, and streamline content to make the specific details easier to discover. <br>[Organize and retrieve patent data](scenario-find-content-details.md#policies-and-procedures) <br>[Example2](scenario-find-content-details.md#example2) |
 |[:::image type="content" source="../media/content-understanding/uc-document-compliance.png" alt-text="Image of a generic business people at a desk in an office setting." border="false":::](scenario-document-compliance.md)|[**Document compliance**](scenario-document-compliance.md) <br>Use Syntex to meet retention and sensitivity requirements for your business documents. <br>[Example1](scenario-document-compliance.md#example1) <br>[Example2](scenario-document-compliance.md#example2) |
 
+<!---
 OLD
 Use the following example scenarios to prompt ideas about how you can use Microsoft Syntex in your organization.
 
@@ -144,7 +145,7 @@ When you automate this scenario, you can ensure that:
 - The levels of non-compliance are reduced.
 - The number of manual reminders is reduced.
 - The number of fines for non-compliance is reduced.
-
+--->
 ## See also
 
 [Get started driving adoption of Microsoft Syntex](adoption-getstarted.md)
