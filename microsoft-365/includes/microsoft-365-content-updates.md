@@ -2,6 +2,65 @@
 
 
 
+## Week of April 10, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/10/2023 | [Limits for Content search and eDiscovery (Standard) in the Microsoft Purview compliance portal](/microsoft-365/compliance/ediscovery-limits-for-content-search?view=o365-worldwide) | modified |
+| 4/10/2023 | [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir?view=o365-worldwide) | modified |
+| 4/10/2023 | Configure a team with security isolation in a dev/test environment | removed |
+| 4/10/2023 | Test Lab Guides for solutions and scenarios | removed |
+| 4/10/2023 | [Deploy a connector to archive Facebook Business pages data](/microsoft-365/compliance/archive-facebook-data?view=o365-worldwide) | renamed |
+| 4/10/2023 | [Use data connectors to import and archive third-party data in Microsoft 365](/microsoft-365/compliance/archive-third-party-data?view=o365-worldwide) | renamed |
+| 4/10/2023 | [Deploy a connector to archive Twitter data](/microsoft-365/compliance/archive-twitter-data?view=o365-worldwide) | renamed |
+| 4/10/2023 | Prepare for Office client deployment with Microsoft 365 Business Premium | removed |
+| 4/10/2023 | [Microsoft 365 Business Premium - Productivity and security](/microsoft-365/business-premium/m365bp-secure-users?view=o365-worldwide) | modified |
+| 4/10/2023 | [Set up Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-setup?view=o365-worldwide) | modified |
+| 4/10/2023 | [Set up a connector to archive Twitter data](/microsoft-365/compliance/archive-twitter-data-with-sample-connector?view=o365-worldwide) | modified |
+| 4/10/2023 | [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide) | modified |
+| 4/10/2023 | [Enable block at first sight to detect malware in seconds](/microsoft-365/security/defender-endpoint/configure-block-at-first-sight-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 4/10/2023 | [Address false positives/negatives in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives?view=o365-worldwide) | modified |
+| 4/10/2023 | [Turn on cloud protection in Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 4/11/2023 | [Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management (Preview)](/microsoft-365/frontline/shifts-connector-blue-yonder-admin-center-manage?view=o365-worldwide) | modified |
+| 4/11/2023 | [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions (Preview)](/microsoft-365/frontline/shifts-connector-ukg-admin-center-manage?view=o365-worldwide) | modified |
+| 4/11/2023 | [Use PowerShell to manage your Shifts connection to UKG Dimensions](/microsoft-365/frontline/shifts-connector-ukg-powershell-manage?view=o365-worldwide) | modified |
+| 4/11/2023 | [Use the Shifts connector wizard to connect Shifts to UKG Dimensions (Preview)](/microsoft-365/frontline/shifts-connector-wizard-ukg?view=o365-worldwide) | modified |
+| 4/11/2023 | [Configure and validate Microsoft Defender Antivirus network connections](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 4/11/2023 | [Create indicators](/microsoft-365/security/defender-endpoint/manage-indicators?view=o365-worldwide) | modified |
+| 4/11/2023 | [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide) | modified |
+| 4/11/2023 | [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates?view=o365-worldwide) | modified |
+| 4/11/2023 | [Get started with eDiscovery (Premium)](/microsoft-365/compliance/ediscovery-premium-get-started?view=o365-worldwide) | modified |
+| 4/11/2023 | [Enable the Report Message or the Report Phishing add-ins](/microsoft-365/security/office-365-security/submissions-users-report-message-add-in-configure?view=o365-worldwide) | modified |
+| 4/12/2023 | [Overview of the Microsoft Feed](/microsoft-365/ms-feed/m365-feed?view=o365-worldwide) | added |
+| 4/12/2023 | [Set up compliance boundaries for eDiscovery investigations](/microsoft-365/compliance/ediscovery-set-up-compliance-boundaries?view=o365-worldwide) | modified |
+| 4/12/2023 | [Migrate the Azure Information Protection (AIP) add-in to Microsoft Purview Information Protection built-in labeling for Office apps](/microsoft-365/compliance/sensitivity-labels-aip?view=o365-worldwide) | modified |
+| 4/12/2023 | [Minimum versions for sensitivity labels in Microsoft 365 Apps](/microsoft-365/compliance/sensitivity-labels-versions?view=o365-worldwide) | modified |
+| 4/12/2023 | [Cloud protection and Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/cloud-protection-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 4/12/2023 | [Turn on cloud protection in Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 4/12/2023 | [What's new in Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-whatsnew?view=o365-worldwide) | modified |
+| 4/12/2023 | Why cloud protection should be enabled for Microsoft Defender Antivirus | removed |
+| 4/12/2023 | [Global settings in Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-settings?view=o365-worldwide) | modified |
+| 4/12/2023 | [Training campaigns in Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-training-campaigns?view=o365-worldwide) | modified |
+| 4/12/2023 | [Training modules for Training campaigns in Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-training-modules?view=o365-worldwide) | modified |
+| 4/12/2023 | [Quarantined email messages](/microsoft-365/security/office-365-security/quarantine-about?view=o365-worldwide) | modified |
+| 4/12/2023 | [Manage quarantined messages and files as an admin](/microsoft-365/security/office-365-security/quarantine-admin-manage-messages-files?view=o365-worldwide) | modified |
+| 4/12/2023 | [Find and release quarantined messages as a user](/microsoft-365/security/office-365-security/quarantine-end-user?view=o365-worldwide) | modified |
+| 4/12/2023 | [Quarantine policies](/microsoft-365/security/office-365-security/quarantine-policies?view=o365-worldwide) | modified |
+| 4/12/2023 | Overview of Copilot for Microsoft Syntex | removed |
+| 4/12/2023 | [Create and manage communication compliance policies](/microsoft-365/compliance/communication-compliance-policies?view=o365-worldwide) | modified |
+| 4/13/2023 | [Quarantine policies](/microsoft-365/security/office-365-security/quarantine-policies?view=o365-worldwide) | modified |
+| 4/13/2023 | [Quarantine notifications (end-user spam notifications) in Microsoft 365](/microsoft-365/security/office-365-security/quarantine-quarantine-notifications?view=o365-worldwide) | modified |
+| 4/13/2023 | [Microsoft Purview setup guides](/microsoft-365/compliance/purview-fast-track-setup-guides?view=o365-worldwide) | added |
+| 4/13/2023 | [Use Content search for targeted collections](/microsoft-365/compliance/ediscovery-use-content-search-for-targeted-collections?view=o365-worldwide) | modified |
+| 4/13/2023 | [Allow or block URLs using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list-urls-configure?view=o365-worldwide) | modified |
+| 4/14/2023 | [Configure Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide) | modified |
+| 4/14/2023 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide) | modified |
+| 4/14/2023 | [Secure managed and unmanaged devices](/microsoft-365/business-premium/m365bp-managed-unmanaged-devices?view=o365-worldwide) | added |
+| 4/14/2023 | [Set up unmanaged devices overview](/microsoft-365/business-premium/m365bp-devices-overview?view=o365-worldwide) | modified |
+| 4/14/2023 | [Protect unmanaged Windows PCs and Macs in Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-protect-pcs-macs?view=o365-worldwide) | modified |
+
+
 ## Week of April 03, 2023
 
 
@@ -400,155 +459,3 @@
 | 3/17/2023 | [Get started with insider risk management settings](/microsoft-365/compliance/insider-risk-management-settings?view=o365-worldwide) | modified |
 | 3/17/2023 | [Microsoft 365 alert policies](/microsoft-365/compliance/alert-policies?view=o365-worldwide) | modified |
 | 3/17/2023 | [Manage quarantined messages and files as an admin](/microsoft-365/security/office-365-security/quarantine-admin-manage-messages-files?view=o365-worldwide) | modified |
-
-
-## Week of March 06, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/7/2023 | [Automatically apply a retention label to Microsoft 365 items](/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-worldwide) | modified |
-| 3/7/2023 | [Automatically apply a sensitivity label in Microsoft 365](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide) | modified |
-| 3/7/2023 | [Publish and apply retention labels](/microsoft-365/compliance/create-apply-retention-labels?view=o365-worldwide) | modified |
-| 3/7/2023 | [Apply encryption using sensitivity labels](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) | modified |
-| 3/7/2023 | [Use sensitivity labels to protect calendar items, Teams meetings, and chat](/microsoft-365/compliance/sensitivity-labels-meetings?view=o365-worldwide) | modified |
-| 3/7/2023 | [Manage sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide) | modified |
-| 3/7/2023 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) | modified |
-| 3/7/2023 | [Incident response with Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview?view=o365-worldwide) | modified |
-| 3/7/2023 | [Investigate incidents in Microsoft 365 Defender](/microsoft-365/security/defender/investigate-incidents?view=o365-worldwide) | modified |
-| 3/6/2023 | [Set up Microsoft Syntex](/microsoft-365/syntex/set-up-microsoft-syntex) | added |
-| 3/6/2023 | [Pay-as-you-go services and pricing for Microsoft Syntex](/microsoft-365/syntex/syntex-pay-as-you-go-services) | added |
-| 3/6/2023 | [Compare Microsoft Defender Vulnerability Management plans and capabilities](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-capabilities?view=o365-worldwide) | modified |
-| 3/6/2023 | [Quarantine policies](/microsoft-365/security/office-365-security/quarantine-policies?view=o365-worldwide) | modified |
-| 3/6/2023 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide) | modified |
-| 3/6/2023 | [Set up Microsoft Syntex per-user licensing](/microsoft-365/syntex/set-up-content-understanding) | modified |
-| 3/6/2023 | [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/microsoft-365/syntex/syntex-azure-billing) | modified |
-| 3/6/2023 | [Licensing for Microsoft Syntex](/microsoft-365/syntex/syntex-licensing) | modified |
-| 3/7/2023 | [Manage tamper protection for your organization using Microsoft Intune](/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune?view=o365-worldwide) | renamed |
-| 3/7/2023 | [Microsoft Syntex video library](/microsoft-365/syntex/video-library) | added |
-| 3/7/2023 | [Microsoft 365 admin center help # < 60 chars](/microsoft-365/admin/index?view=o365-worldwide) | modified |
-| 3/7/2023 | Upgrade distribution lists to Microsoft 365 Groups in Exchange Online | removed |
-| 3/7/2023 | [Get started with the Microsoft Purview Chrome Extension](/microsoft-365/compliance/dlp-chrome-get-started?view=o365-worldwide) | modified |
-| 3/7/2023 | [Cross-Tenant Identity Mapping (preview)](/microsoft-365/enterprise/cross-tenant-identity-mapping?view=o365-worldwide) | modified |
-| 3/7/2023 | [Windows and Office 365 deployment lab kit](/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab?view=o365-worldwide) | modified |
-| 3/7/2023 | [Configure Microsoft Defender for Endpoint on Android features](/microsoft-365/security/defender-endpoint/android-configure?view=o365-worldwide) | modified |
-| 3/7/2023 | [What's new in Microsoft Defender for Endpoint on Android](/microsoft-365/security/defender-endpoint/android-whatsnew?view=o365-worldwide) | modified |
-| 3/7/2023 | [Migrating servers from Microsoft Monitoring Agent to the unified solution](/microsoft-365/security/defender-endpoint/application-deployment-via-mecm?view=o365-worldwide) | modified |
-| 3/7/2023 | [Test attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-test?view=o365-worldwide) | modified |
-| 3/7/2023 | [Use attack surface reduction rules to prevent malware infection](/microsoft-365/security/defender-endpoint/attack-surface-reduction?view=o365-worldwide) | modified |
-| 3/7/2023 | [Batch Update alert entities API](/microsoft-365/security/defender-endpoint/batch-update-alerts?view=o365-worldwide) | modified |
-| 3/7/2023 | [Advanced deployment guidance for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/comprehensive-guidance-on-linux-deployment?view=o365-worldwide) | modified |
-| 3/7/2023 | [Delete a file from the live response library](/microsoft-365/security/defender-endpoint/delete-library?view=o365-worldwide) | modified |
-| 3/7/2023 | [Device health Microsoft Defender Antivirus health report](/microsoft-365/security/defender-endpoint/device-health-microsoft-defender-antivirus-health?view=o365-worldwide) | modified |
-| 3/7/2023 | [Microsoft Defender for Endpoint evaluation lab](/microsoft-365/security/defender-endpoint/evaluation-lab?view=o365-worldwide) | modified |
-| 3/7/2023 | [Frequently asked questions on tamper protection](/microsoft-365/security/defender-endpoint/faqs-tamper-protection?view=o365-worldwide) | modified |
-| 3/7/2023 | [List devices by software](/microsoft-365/security/defender-endpoint/get-machines-by-software?view=o365-worldwide) | modified |
-| 3/7/2023 | [Manage tamper protection using tenant attach with Configuration Manager, version 2006](/microsoft-365/security/defender-endpoint/manage-tamper-protection-configuration-manager?view=o365-worldwide) | modified |
-| 3/7/2023 | [Manage tamper protection on an individual device](/microsoft-365/security/defender-endpoint/manage-tamper-protection-individual-device?view=o365-worldwide) | modified |
-| 3/7/2023 | [Manage tamper protection for your organization using Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/manage-tamper-protection-microsoft-365-defender?view=o365-worldwide) | modified |
-| 3/7/2023 | [Protect security settings with tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection?view=o365-worldwide) | modified |
-| 3/7/2023 | [How to subscribe to Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting?view=o365-worldwide) | modified |
-| 3/8/2023 | [Configure a default sensitivity label for a SharePoint document library](/microsoft-365/compliance/sensitivity-labels-sharepoint-default-label?view=o365-worldwide) | modified |
-| 3/9/2023 | [Investigate devices in the Defender for Endpoint Devices list](/microsoft-365/security/defender-endpoint/investigate-machines?view=o365-worldwide) | modified |
-| 3/9/2023 | [Deploy Microsoft Defender for Endpoint on Linux manually](/microsoft-365/security/defender-endpoint/linux-install-manually?view=o365-worldwide) | modified |
-| 3/9/2023 | [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-perf?view=o365-worldwide) | modified |
-| 3/9/2023 | [What's new in Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-whatsnew?view=o365-worldwide) | modified |
-| 3/9/2023 | [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune?view=o365-worldwide) | modified |
-| 3/9/2023 | [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios?view=o365-worldwide) | modified |
-| 3/9/2023 | [Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux?view=o365-worldwide) | modified |
-| 3/9/2023 | [Onboard previous versions of Windows on Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboard-downlevel?view=o365-worldwide) | modified |
-| 3/9/2023 | [Take response actions on a device in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-machine-alerts?view=o365-worldwide) | modified |
-| 3/9/2023 | [Run the client analyzer on macOS or Linux](/microsoft-365/security/defender-endpoint/run-analyzer-macos-linux?view=o365-worldwide) | modified |
-| 3/9/2023 | [Server migration scenarios for the new version of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration?view=o365-worldwide) | modified |
-| 3/9/2023 | [Supported Microsoft Defender for Endpoint capabilities by platform](/microsoft-365/security/defender-endpoint/supported-capabilities-by-platform?view=o365-worldwide) | modified |
-| 3/9/2023 | [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt?view=o365-worldwide) | modified |
-| 3/9/2023 | [Upload files to the live response library](/microsoft-365/security/defender-endpoint/upload-library?view=o365-worldwide) | modified |
-| 3/9/2023 | [Microsoft Defender for Identity sensor health and settings in Microsoft 365 Defender](/microsoft-365/security/defender-identity/sensor-health?view=o365-worldwide) | modified |
-| 3/9/2023 | [Block vulnerable applications](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps?view=o365-worldwide) | modified |
-| 3/9/2023 | [Browser extensions assessment](/microsoft-365/security/defender-vulnerability-management/tvm-browser-extensions?view=o365-worldwide) | modified |
-| 3/9/2023 | [Get relevant info about an entity with go hunt](/microsoft-365/security/defender/advanced-hunting-go-hunt?view=o365-worldwide) | modified |
-| 3/9/2023 | [Use the advanced hunting query resource report](/microsoft-365/security/defender/advanced-hunting-limits?view=o365-worldwide) | modified |
-| 3/9/2023 | [Choose between guided and advanced modes for hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-modes?view=o365-worldwide) | modified |
-| 3/9/2023 | [Create and manage custom detection rules in Microsoft 365 Defender](/microsoft-365/security/defender/custom-detection-rules?view=o365-worldwide) | modified |
-| 3/9/2023 | [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide) | modified |
-| 3/9/2023 | [Manage data for Microsoft Whiteboard](/microsoft-365/whiteboard/manage-data-organizations?view=o365-worldwide) | modified |
-| 3/8/2023 | [Overview of content processing in Microsoft Syntex](/microsoft-365/syntex/content-processing-overview) | added |
-| 3/8/2023 | [Automatically retain or delete content by using retention policies](/microsoft-365/compliance/create-retention-policies?view=o365-worldwide) | modified |
-| 3/8/2023 | [Identify the available PowerShell cmdlets for retention](/microsoft-365/compliance/retention-cmdlets?view=o365-worldwide) | modified |
-| 3/8/2023 | [Configure Microsoft 365 retention settings to automatically retain or delete content](/microsoft-365/compliance/retention-settings?view=o365-worldwide) | modified |
-| 3/8/2023 | [Learn about retention policies & labels to retain or delete](/microsoft-365/compliance/retention?view=o365-worldwide) | modified |
-| 3/8/2023 | [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](/microsoft-365/security/defender-endpoint/android-intune?view=o365-worldwide) | modified |
-| 3/8/2023 | [Integration with Microsoft Defender for Cloud](/microsoft-365/security/defender-endpoint/azure-server-integration?view=o365-worldwide) | modified |
-| 3/8/2023 | [Configure Microsoft Defender Antivirus on a remote desktop or virtual desktop infrastructure environment](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus?view=o365-worldwide) | modified |
-| 3/8/2023 | [Web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering?view=o365-worldwide) | modified |
-| 3/8/2023 | [Work with query results in guided mode for hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-query-builder-results?view=o365-worldwide) | modified |
-| 3/8/2023 | [Hunt for threats across devices, emails, apps, and identities with advanced hunting](/microsoft-365/security/defender/advanced-hunting-query-emails-devices?view=o365-worldwide) | modified |
-| 3/8/2023 | [Learn the advanced hunting query language in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-query-language?view=o365-worldwide) | modified |
-| 3/8/2023 | [Use shared queries in Microsoft 365 Defender advanced hunting](/microsoft-365/security/defender/advanced-hunting-shared-queries?view=o365-worldwide) | modified |
-| 3/8/2023 | [Take action on advanced hunting query results in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-take-action?view=o365-worldwide) | modified |
-| 3/8/2023 | [Alert grading playbooks](/microsoft-365/security/defender/alert-grading-playbooks?view=o365-worldwide) | modified |
-| 3/8/2023 | [Automatic attack disruption in Microsoft 365 Defender](/microsoft-365/security/defender/automatic-attack-disruption?view=o365-worldwide) | modified |
-| 3/8/2023 | [Configure automatic attack disruption capabilities in Microsoft 365 Defender](/microsoft-365/security/defender/configure-attack-disruption?view=o365-worldwide) | modified |
-| 3/8/2023 | [Integrate your SIEM tools with Microsoft 365 Defender](/microsoft-365/security/defender/configure-siem-defender?view=o365-worldwide) | modified |
-| 3/8/2023 | [Create custom roles with Microsoft 365 Defender role-based access control (RBAC)](/microsoft-365/security/defender/create-custom-rbac-roles?view=o365-worldwide) | modified |
-| 3/8/2023 | [Create and manage custom detection rules in Microsoft 365 Defender](/microsoft-365/security/defender/custom-detection-rules?view=o365-worldwide) | modified |
-| 3/8/2023 | [Edit or delete roles Microsoft 365 Defender role-based access control (RBAC)](/microsoft-365/security/defender/edit-delete-rbac-roles?view=o365-worldwide) | modified |
-| 3/8/2023 | [Step 4. Evaluate Microsoft Defender for Endpoint overview, including reviewing the architecture](/microsoft-365/security/defender/eval-defender-endpoint-overview?view=o365-worldwide) | modified |
-| 3/8/2023 | [Review architecture requirements and the technical framework for Microsoft Defender for Identity](/microsoft-365/security/defender/eval-defender-identity-architecture?view=o365-worldwide) | modified |
-| 3/8/2023 | [Enable the evaluation environment for Microsoft Defender for Identity](/microsoft-365/security/defender/eval-defender-identity-enable-eval?view=o365-worldwide) | modified |
-| 3/8/2023 | [Run an attack simulation in a Microsoft 365 Defender pilot environment](/microsoft-365/security/defender/eval-defender-investigate-respond-simulate-attack?view=o365-worldwide) | modified |
-| 3/8/2023 | [Review architecture requirements and the structure for Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-architecture?view=o365-worldwide) | modified |
-| 3/8/2023 | [Step 5. Evaluate Microsoft Defender for Cloud Apps overview](/microsoft-365/security/defender/eval-defender-mcas-overview?view=o365-worldwide) | modified |
-| 3/8/2023 | [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal?view=o365-worldwide) | modified |
-| 3/8/2023 | [Redirecting accounts from Microsoft Defender for Endpoint to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mde-redirection?view=o365-worldwide) | modified |
-| 3/8/2023 | [Redirecting accounts from Microsoft Defender for Identity to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdi-redirection?view=o365-worldwide) | modified |
-| 3/8/2023 | [Assess your security posture through Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-improvement-actions?view=o365-worldwide) | modified |
-| 3/8/2023 | [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score?view=o365-worldwide) | modified |
-| 3/8/2023 | [How to subscribe to Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting?view=o365-worldwide) | modified |
-| 3/8/2023 | [Detecting human-operated ransomware attacks with Microsoft 365 Defender](/microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender?view=o365-worldwide) | modified |
-| 3/8/2023 | [Set up your Microsoft 365 Defender trial lab or pilot environment](/microsoft-365/security/defender/setup-m365deval?view=o365-worldwide) | modified |
-| 3/8/2023 | [Remove yourself from the blocked senders list and address 5.7.511 Access denied errors](/microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis?view=o365-worldwide) | modified |
-| 3/8/2023 | [Create a rule to move or copy a file from one document library to another in Microsoft Syntex](/microsoft-365/syntex/content-processing-create-rules) | modified |
-| 3/8/2023 | [Manage data for Microsoft Whiteboard](/microsoft-365/whiteboard/manage-data-organizations?view=o365-worldwide) | modified |
-| 3/8/2023 | Configure a team with security isolation by using a unique sensitivity label | removed |
-| 3/10/2023 | [Create and deploy a data loss prevention policy](/microsoft-365/compliance/dlp-create-deploy-policy?view=o365-worldwide) | modified |
-| 3/10/2023 | [Data Loss Prevention policy reference](/microsoft-365/compliance/dlp-policy-reference?view=o365-worldwide) | modified |
-| 3/10/2023 | [DeviceInfo table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-deviceinfo-table?view=o365-worldwide) | modified |
-| 3/10/2023 | [Microsoft Defender for Office 365 data retention](/microsoft-365/security/office-365-security/mdo-data-retention?view=o365-worldwide) | modified |
-| 3/10/2023 | [Configure teams with protection for highly sensitive data](/microsoft-365/solutions/configure-teams-highly-sensitive-protection?view=o365-worldwide) | modified |
-| 3/10/2023 | [Configure teams with protection for sensitive data](/microsoft-365/solutions/configure-teams-sensitive-protection?view=o365-worldwide) | modified |
-| 3/10/2023 | [Configure Teams with three tiers of file sharing security](/microsoft-365/solutions/configure-teams-three-tiers-protection?view=o365-worldwide) | modified |
-| 3/10/2023 | [Microsoft 365 productivity illustrations](/microsoft-365/solutions/productivity-illustrations?view=o365-worldwide) | modified |
-| 3/9/2023 | [Frequently asked questions on tamper protection](/microsoft-365/security/defender-endpoint/faqs-tamper-protection?view=o365-worldwide) | modified |
-| 3/9/2023 | [Manage tamper protection using tenant attach with Configuration Manager, version 2006](/microsoft-365/security/defender-endpoint/manage-tamper-protection-configuration-manager?view=o365-worldwide) | modified |
-| 3/9/2023 | [Manage tamper protection on an individual device](/microsoft-365/security/defender-endpoint/manage-tamper-protection-individual-device?view=o365-worldwide) | modified |
-| 3/9/2023 | [Manage tamper protection for your organization using Microsoft Intune](/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune?view=o365-worldwide) | modified |
-| 3/9/2023 | [Manage tamper protection for your organization using Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/manage-tamper-protection-microsoft-365-defender?view=o365-worldwide) | modified |
-| 3/9/2023 | [Protect security settings with tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection?view=o365-worldwide) | modified |
-| 3/10/2023 | [How to secure your business data with Microsoft 365 for business](/microsoft-365/business-premium/secure-your-business-data?view=o365-worldwide) | added |
-| 3/10/2023 | [Configure a team with security isolation by using a unique sensitivity label](/microsoft-365/solutions/secure-teams-security-isolation?view=o365-worldwide) | added |
-| 3/10/2023 | [Increase threat protection for Microsoft 365 for business](/microsoft-365/admin/security-and-compliance/increase-threat-protection?view=o365-worldwide) | modified |
-| 3/10/2023 | Metrics and activity tracking in Microsoft Bookings | removed |
-| 3/10/2023 | [Keyword queries and search conditions for eDiscovery](/microsoft-365/compliance/ediscovery-keyword-queries-and-search-conditions?view=o365-worldwide) | modified |
-| 3/10/2023 | [Integrate your SIEM tools with Microsoft 365 Defender](/microsoft-365/security/defender/configure-siem-defender?view=o365-worldwide) | modified |
-| 3/10/2023 | [Create custom roles with Microsoft 365 Defender role-based access control (RBAC)](/microsoft-365/security/defender/create-custom-rbac-roles?view=o365-worldwide) | modified |
-| 3/10/2023 | [Create and manage custom detection rules in Microsoft 365 Defender](/microsoft-365/security/defender/custom-detection-rules?view=o365-worldwide) | modified |
-| 3/10/2023 | [Edit or delete roles Microsoft 365 Defender role-based access control (RBAC)](/microsoft-365/security/defender/edit-delete-rbac-roles?view=o365-worldwide) | modified |
-| 3/10/2023 | [Step 4. Evaluate Microsoft Defender for Endpoint overview, including reviewing the architecture](/microsoft-365/security/defender/eval-defender-endpoint-overview?view=o365-worldwide) | modified |
-| 3/10/2023 | [Review architecture requirements and the technical framework for Microsoft Defender for Identity](/microsoft-365/security/defender/eval-defender-identity-architecture?view=o365-worldwide) | modified |
-| 3/10/2023 | [Enable the evaluation environment for Microsoft Defender for Identity](/microsoft-365/security/defender/eval-defender-identity-enable-eval?view=o365-worldwide) | modified |
-| 3/10/2023 | [Run an attack simulation in a Microsoft 365 Defender pilot environment](/microsoft-365/security/defender/eval-defender-investigate-respond-simulate-attack?view=o365-worldwide) | modified |
-| 3/10/2023 | [Review architecture requirements and the structure for Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-architecture?view=o365-worldwide) | modified |
-| 3/10/2023 | [Step 5. Evaluate Microsoft Defender for Cloud Apps overview](/microsoft-365/security/defender/eval-defender-mcas-overview?view=o365-worldwide) | modified |
-| 3/10/2023 | [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal?view=o365-worldwide) | modified |
-| 3/10/2023 | [Redirecting accounts from Microsoft Defender for Endpoint to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mde-redirection?view=o365-worldwide) | modified |
-| 3/10/2023 | [Redirecting accounts from Microsoft Defender for Identity to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdi-redirection?view=o365-worldwide) | modified |
-| 3/10/2023 | [Assess your security posture through Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-improvement-actions?view=o365-worldwide) | modified |
-| 3/10/2023 | [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score?view=o365-worldwide) | modified |
-| 3/10/2023 | [How to subscribe to Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting?view=o365-worldwide) | modified |
-| 3/10/2023 | [Detecting human-operated ransomware attacks with Microsoft 365 Defender](/microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender?view=o365-worldwide) | modified |
-| 3/10/2023 | [Set up your Microsoft 365 Defender trial lab or pilot environment](/microsoft-365/security/defender/setup-m365deval?view=o365-worldwide) | modified |
-| 3/10/2023 | [Remove yourself from the blocked senders list and address 5.7.511 Access denied errors](/microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis?view=o365-worldwide) | modified |
-| 3/10/2023 | [Set up secure file and document sharing and collaboration with Teams in Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams?view=o365-worldwide) | modified |
-| 3/10/2023 | [Overview of the Apps page in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-apps-page-overview?view=o365-worldwide) | added |
-| 3/10/2023 | [Overview of the Device health page in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-device-health-overview?view=o365-worldwide) | added |
