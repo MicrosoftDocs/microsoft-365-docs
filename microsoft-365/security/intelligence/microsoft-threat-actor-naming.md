@@ -42,8 +42,6 @@ In our new taxonomy, a weather event or *family name* represents one of the abov
 
 The table below shows how the new family names map to a sampling of the threat actors that we track.
 
-[Download an Excel-formatted version of the table below](https://download.microsoft.com/download/4/5/2/45208247-c1e9-432d-a9a2-1554d81074d9/microsoft-threat-actor-list.xlsx)
-
 |**Actor category**|**Type**|**Family name**|
 |---|:---:|:---:|
 |Nation-state|China<br>Iran<br>Lebanon<br>North Korea<br>Russia<br>South Korea<br>Turkey<br>Vietnam|Typhoon<br>Sandstorm<br>Rain<br>Sleet<br>Blizzard<br>Hail<br>Dust<br>Cyclone|
@@ -52,7 +50,7 @@ The table below shows how the new family names map to a sampling of the threat a
 |Influence operations|Influence operations|Flood|
 |Groups in development|Groups in development|Storm|
 
-Please use the reference table below to understand how our previously publicly disclosed old threat actor names translate to our new taxonomy.
+Use the following reference table below to understand how our previously publicly disclosed old threat actor names translate to our new taxonomy.
 
 |**Previous name**|**New name**|**Origin/Threat**|**Other names**|
 |---|:---:|:---:|:---:|
@@ -123,7 +121,7 @@ Please use the reference table below to understand how our previously publicly d
 |DEV-0832|Vanilla Tempest|Financially motivated||
 |DEV-0950|Lace Tempest|Financially motivated|FIN11, TA505|
 
-A [downloadable version of the threat actor mapping]() is also available.
+A [downloadable version of the threat actor mapping](https://download.microsoft.com/download/4/5/2/45208247-c1e9-432d-a9a2-1554d81074d9/microsoft-threat-actor-list.xlsx) is also available.
 
 Read our announcement about the new taxonomy for more information: [https://aka.ms/threatactorsblog](https://aka.ms/threatactorsblog)
 
