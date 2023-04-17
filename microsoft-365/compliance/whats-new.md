@@ -55,6 +55,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 **In Preview**
 - Support for [optical character recognition](ocr-learn-about.md)
 
+### Insider risk management
+
+- **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
+
 ## March 2023
 
 ### Audit
