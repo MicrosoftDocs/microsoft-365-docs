@@ -80,6 +80,22 @@ For more information about setting up and using the attorney-client privilege de
 > [!NOTE]
 > This is an optional step that you can perform anytime. Not implementing the attorney-client privilege detection model doesn't prevent you from creating and using eDiscovery (Premium) cases.
 
+## Step 4: Verify that required eDiscovery apps are enabled
+
+eDiscovery (Premium) requires the following Enterprise apps to be enabled in your Microsoft 365 or Office 365 organization. If these apps are not enabled, you won't be able to access eDiscovery (Premium) view, filter, and search features.
+
+|**App**|**App ID**|
+|:------|:---------|
+| ComplianceWorkbenchApp | 92876b03-76a3-4da8-ad6a-0511ffdf8647 |
+| MicrosoftPurviewEDiscovery | b26e684c-5068-4120-a679-64a5d2c909d9 |
+| Microsoft Exchange Online Protection | cc4751ec-86d0-4cd0-9295-fa1c55829d80 |
+| Office365Zoom | 0d38933a-0bbd-41ca-9ebd-28c4b5ba7cb7 |
+
+For more information about how to view and enable apps, see:
+
+- [Quickstart: View enterprise applications](/azure/active-directory/manage-apps/view-applications-portal)
+- [Quickstart: Add an enterprise application](/azure/active-directory/manage-apps/add-application-portal)
+
 ## Next steps
 
 After you set up eDiscovery (Premium), you're ready to [create a case](ediscovery-create-and-manage-cases.md).
