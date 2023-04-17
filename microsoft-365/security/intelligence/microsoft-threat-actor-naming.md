@@ -28,6 +28,8 @@ Microsoft categorizes threat actors into five key groups:
 
 **Nation-state actors:** cyber operators acting on behalf of or directed by a nation/state-aligned program, irrespective of whether for espionage, financial gain, or retribution. Microsoft has observed that most nation state actors continue to focus operations and attacks on government agencies, intergovernmental organizations, non-governmental organizations, and think tanks for traditional espionage or surveillance objectives.
 
+:::image type="content" source="../../media/threat-actor-naming/threat-actor-naming-nation-state.png" alt-text="Nation-state actors based on Microsoft naming" lightbox="../../threat-actor-naming/threat-actor-naming-nation-state.png":::
+
 **Financially motivated actors:** cyber campaigns/groups directed by a criminal organization/person with motivations of financial gain and haven't been associated with high confidence to a known non-nation state or commercial entity. This category includes ransomware operators, business email compromise, phishing, and other groups with purely financial or extortion motivations.
 
 **Private sector offensive actors (PSOAs):** cyber activity led by commercial actors that are known/legitimate legal entities, that create and sell cyberweapons to customers who then select targets and operate the cyberweapons. These tools threaten many global human rights efforts, as they have been observed targeting and surveilling dissidents, human rights defenders, journalists, civil society advocates, and other private citizens.
@@ -35,6 +37,8 @@ Microsoft categorizes threat actors into five key groups:
 **Influence operations:** information campaigns communicated online or offline in a manipulative fashion to shift perceptions, behaviors, or decisions by target audiences to further a group or a nation’s interests and objectives.
 
 **Groups in development:** a temporary designation given to an unknown, emerging, or developing threat activity that allows Microsoft to track it as a discrete set of information until we can reach high confidence about the origin or identity of the actor behind the operation. Once criteria are met, a group in development is converted to a named actor or merged into existing names.
+
+:::image type="content" source="../../media/threat-actor-naming/threat-actor-naming-motivation.png" alt-text="Microsoft threat actor categories" lightbox="../../threat-actor-naming/threat-actor-naming-motivation.png":::
 
 In our new taxonomy, a weather event or *family name* represents one of the above categories. In the case of nation-state actors, we have assigned a family name to a country of origin tied to attribution, like Typhoon indicates origin or attribution to China. For other actors, the family name represents a motivation. For example, Tempest indicates financially motivated actors. Threat actors within the same weather family are given an adjective to distinguish actor groups with distinct tactics, techniques, and procedures (TTPs), infrastructure, objectives, or other identified patterns. For groups in development, where there is a newly discovered, unknown, emerging, or developing cluster of threat activity, we use a temporary designation of Storm and a four-digit number, allowing us to track it as a unique set of information until we can reach high confidence about the origin or identity of the actor behind the operation.
 
