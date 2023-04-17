@@ -40,14 +40,14 @@ This article also describes daily, weekly, monthly, and ad-hoc tasks required to
 
 For general configuration and setup, see the following articles:
 
-- [Configure general Defender for Endpoint settings](preferences-setup.md) 
+- [**Configure general Defender for Endpoint settings**](preferences-setup.md) 
 
-- General
+- **General**
 
     - [Configure alert notifications](../defender/configure-email-notifications.md) 
     - [Configure vulnerability email notifications](configure-vulnerability-email-notifications.md) 
     - [Configure advanced features](advanced-features.md) 
-- Permissions 
+- **Permissions**
     - [Use basic permissions to access the portal](basic-permissions.md) 
     - [Assign user access to Microsoft Defender Security Center](assign-portal-access.md) 
     - Manage portal access using RBAC 
@@ -56,7 +56,7 @@ For general configuration and setup, see the following articles:
         - [Create and manage device groups](machine-groups.md) 
         - [Create and manage device tags](machine-tags.md)
         
-- Rules 
+- **Rules**
     - [Manage suppression rules](manage-suppression-rules.md) 
     - Create indicators. 
         - [Create indicators](manage-indicators.md) 
@@ -67,19 +67,19 @@ For general configuration and setup, see the following articles:
     - [Manage automation file uploads](manage-automation-file-uploads.md)
     - [Manage automation folder exclusions](manage-automation-folder-exclusions.md) 
 
-- Device management 
+- **Device management** 
     - [Onboarding devices](onboard-configure.md) 
     - [Offboarding devices](offboard-machines.md) 
     - [Ensure your devices are configured properly](configure-machines.md) 
     - [Monitor and increase device onboarding](configure-machines-onboarding.md) 
 
-- [Configure Microsoft Defender Security Center time zone settings](time-settings.md) 
+- [**Configure Microsoft Defender Security Center time zone settings**](time-settings.md) 
 
-- Set up Microsoft 365 Defender incident notifications <p> To get email notifications on defined Microsoft 365 Defender incidents, it's recommended that you configure email notifications. See [Get incident notifications by email](../defender/incidents-overview.md#get-incident-notifications-by-email).
+- **Set up Microsoft 365 Defender incident notifications** <p> To get email notifications on defined Microsoft 365 Defender incidents, it's recommended that you configure email notifications. See [Get incident notifications by email](../defender/incidents-overview.md#get-incident-notifications-by-email).
 
-- Connect to SIEM (Sentinel) <p> If you have existing security information and event management (SIEM) tools, you can integrate them with Microsoft 365 Defender. See [Integrate your SIEM tools with Microsoft 365 Defender](../defender/configure-siem-defender.md) and [Microsoft 365 Defender integration with Microsoft Sentinel.](https://learn.microsoft.com/azure/sentinel/microsoft-365-defender-sentinel-integration)
+- **Connect to SIEM (Sentinel)** <p> If you have existing security information and event management (SIEM) tools, you can integrate them with Microsoft 365 Defender. See [Integrate your SIEM tools with Microsoft 365 Defender](../defender/configure-siem-defender.md) and [Microsoft 365 Defender integration with Microsoft Sentinel.](/azure/sentinel/microsoft-365-defender-sentinel-integration)
 
-- Review data discovery configuration <p> Review the Microsoft Defender for Endpoint device discovery configuration to ensure it's configured as required. <p> [Device discovery overview | Microsoft Learn](device-discovery.md) 
+- **Review data discovery configuration** <p> Review the Microsoft Defender for Endpoint device discovery configuration to ensure it's configured as required. <p> [Device discovery overview | Microsoft Learn](device-discovery.md) 
 
 ## Daily activities
 
