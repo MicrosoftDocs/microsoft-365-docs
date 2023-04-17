@@ -55,6 +55,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **General availability (GA)**: Outlook for Mac [displays label colors](sensitivity-labels-office-apps.md#label-colors)
 - **General availability (GA)**: Rolling out to Current Channel as a parity feature for the AIP add-in, built-in labeling for Windows supports [label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments).
 - **Rolling out**: [Apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) using Outlook on the web.
+- **In preview**: Support for [optical character recognition](ocr-learn-about.md).
 - **Change of version for AIP add-in disabled by default**: For the Monthly Enterprise Channel only, the AIP add-in for Office apps is disabled by default in version 2303. For the Current Channel and Semi-Annual Enterprise Channel, the AIP add-in is still disabled by default in version 2302.
 - **Retirement notification for the AIP add-in for Office apps**: The AIP add-in will [retire April 2024](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908). Although the add-in remains in maintenance mode until then, if you haven't already done so, we encourage you to [migrate to the labels built into Office](sensitivity-labels-aip.md).
 
@@ -79,6 +80,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **General availability (GA)**: Rolling out in general availability, [Microsoft Graph Records Management APIs](/graph/api/resources/security-recordsmanagement-overview) to support the management of retention labels and event-based retention.
 - **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview are now gradually rolling out support for URL text links.
+- **In preview**: Support for [optical character recognition](ocr-learn-about.md).
 - **Improvements for Teams retention policies**: Now rolling out, support for existing call data records as well as newly created call data records, and support for the control message events that name and rename a chat.
 - **Improvements that support Power Automate flows**: Now rolling out to support the scenario of [customizing what happens at the end of the retention period](retention-label-flow.md), the existing Power Automate compliance actions have been renamed to more accurately describe their purpose. **Apply label on the item** is renamed **Relabel an item at the end of retention**, and **Deletes the item** is renamed **Deletes an item at the end of retention**. Additionally:
     - New compliance action to [improve the resilience of your flow](retention-label-flow.md#add-resilience-to-your-flow).
