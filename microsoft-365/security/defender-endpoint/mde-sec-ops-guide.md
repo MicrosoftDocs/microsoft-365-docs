@@ -93,7 +93,7 @@ For general configuration and setup, see the following articles:
 
 - **Monitor the Microsoft 365 Defender Incidents queue**
 
-    When Microsoft Defender for Endpoint (MDE) identifies IOCs or IOAs and generates an alert, this alert will be included in an incident and displayed in the Incidents queue in the Microsoft 365 Defender console. 
+    When Microsoft Defender for Endpoint (MDE) identifies Indicator of compromises (IoCs) or Indicator of attacks (IOAs) and generates an alert, this alert will be included in an incident and displayed in the Incidents queue in the Microsoft 365 Defender console. 
     
     Review these incidents to respond to any Microsoft Defender for Endpoint alerts and resolve once the incident has been remediated. See [Get incident notifications by email](../defender/incidents-overview.md#get-incident-notifications-by-email) and [View and organize the Microsoft Defender for Endpoint Incidents queue.](view-incidents-queue.md)
 
