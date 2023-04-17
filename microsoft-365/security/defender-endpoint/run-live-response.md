@@ -61,7 +61,7 @@ Runs a sequence of live response commands on a device
 
 7. Multiple live response commands can be run on a single API call. However, when a live response command fails all the subsequent actions won't be executed.
 
-8. Multiple live response sessions can't be executed on the same machine (if live response action is already running, subsequent requests are responded with HTTP 400 - ActiveRequestAlreadyExists)
+8. Multiple live response sessions can't be executed on the same machine (if live response action is already running, subsequent requests are responded to with HTTP 400 - ActiveRequestAlreadyExists).
 
 ## Minimum Requirements
 
