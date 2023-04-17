@@ -43,8 +43,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Data loss prevention ###
 
-**In Preview**
-- Support for [optical character recognition](ocr-learn-about.md)
+**In Preview**: Support for [optical character recognition](ocr-learn-about.md)
 
 ### Insider risk management
 
