@@ -34,6 +34,8 @@
         href: m365bp-protect-admin-accounts.md
       - name: Protect against malware and other threats
         href: m365bp-increase-protection.md
+      - name: Secure managed and unmanaged devices
+        href: m365bp-managed-unmanaged-devices.md
 - name: Train your team
   items:
   - name: Set up unmanaged (BYOD) devices
@@ -78,8 +80,8 @@
         href: m365bp-onboard-devices-mdb.md
       - name: Use Windows Autopilot to set up or reset devices
         href: /mem/autopilot/windows-autopilot?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-      - name: Install Microsoft 365 Apps on devices
-        href: ../admin/setup/install-applications.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      - name: Manage Microsoft 365 installation options for devices
+        href: /DeployOffice/manage-software-download-settings-office-365?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
   - name: Monitor onboarded devices
     items: 
       - name: View device status
