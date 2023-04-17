@@ -326,6 +326,13 @@ If you enter multiple conditions, Microsoft 365 uses all the conditions together
 
 If you want to reduce the amount of content to review, you can specify a percentage of all the communications governed by a communication compliance policy. A real-time, random sample of content is selected from the total percentage of content that matches chosen policy conditions. If you want reviewers to review all items, you can configure **100%** in a communication compliance policy.
 
+### Filter email blasts
+
+Use the **Filter email blasts** setting to exclude messages sent from email blast services. Messages that match the conditions you specify won't generate alerts. This includes bulk email, such as newsletters, as well as spam, phishing, and malware. When this option is selected, you can view a [report](communication-compliance-reports-audits.md#detailed-reports) that lists the bulk email senders that were filtered out.
+    
+> [!NOTE]
+> The list of senders is filtered before the content is analyzed so there might be senders that don't match the content conditions. In other words, there might be extra senders in the report. 
+
 ## Alert policies
 
 After you configure a policy, a corresponding alert policy is automatically created and alerts are generated for messages that match conditions defined in the policy. It may take up to 24 hours after creating a policy start to receive alerts from activity indicators. By default, all policy matches alert triggers are assigned a severity level of medium in the associated alert policy. Alerts are generated for a communication compliance policy once the aggregation trigger threshold level is met in the associated alert policy. A single email notification is sent once every 24 hours for any alerts, regardless of the number of individual messages that match policy conditions. For example, Contoso has an inappropriate content policy enabled and for January 1st, there were 100 policy matches that generated six alerts. A single email notification for the six alerts is sent at end of January 1st.
