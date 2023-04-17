@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/11/2023
+ms.date: 04/12/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -185,17 +185,10 @@ Remember to use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-
 
 The AIP client supports many customizations by using [PowerShell advanced settings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell). For the advanced settings applicable to Office apps that are also supported by built-in labeling, see the list in [New-Label](/powershell/module/exchange/new-label) or [Set-Label](/powershell/module/exchange/set-label), and [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) or [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy).
 
-However, you might find you don't need to use PowerShell to configure the supported settings because they're included in the standard configuration from the Microsoft Purview compliance portal. For example, UI configuration to choose label colors, and turn off mandatory labeling for Outlook.
+However, you might find you don't need to use PowerShell to configure the supported settings because they're included in the standard configuration from the Microsoft Purview compliance portal. For example, UI configuration to choose label colors, and turn off mandatory labeling for Outlook. Check the available configurations in [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
 
-The following configurations from the AIP add-in that aren't yet supported by built-in labeling include:
-
-- [Label inheritance from email attachments](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
-    - This option is currently rolling out in preview. For more information, see [Configure label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments).
-
-- [Oversharing popup messages for Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
-    - The equivalent of this configuration is now available in preview as a DLP policy configuration. For more information, see [Scenario 2 Show policy tip as oversharing popup (preview)](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview).
-
-- [Remove external content markings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution)
+> [!NOTE]
+> The AIP add-in used PowerShell advanced settings for [oversharing popup messages in Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent). When you use built-in labeling, the equivalent of this configuration is now available as a [DLP policy configuration](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview).
 
 ## Features not planned to be supported by built-in labeling for Office apps
 
