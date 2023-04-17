@@ -141,8 +141,6 @@
         href: manage-mde-post-migration-other-tools.md
       - name: Updating MMA on Windows devices
         href: update-agent-mma-windows.md
-      - name: Updating MMA on Windows devices
-        href: update-agent-mma-windows.md
       - name: Server migration scenarios
         items:
         - name: Overview
