@@ -170,6 +170,9 @@
               href: scenario-generate-documents-bulk.md 
             - name: Handle incoming documents
               href: scenario-handle-incoming-documents.md
+            - name: Organize unstructured repositories
+              href: scenario-organize-repositories.md
+
         - name: Assess your environment
           href: adoption-assessment-tool.md 
         - name: Run a trial
