@@ -10848,7 +10848,7 @@
   {
     "source_path": "microsoft-365/security/defender-endpoint/mde-p1-maintenance-operations.md",
     "redirect_url": "/microsoft-365/security/defender-endpoint/manage-mde-post-migration",
-    "redirect_document_id": true
+    "redirect_document_id": false
   }
  ]
 }
