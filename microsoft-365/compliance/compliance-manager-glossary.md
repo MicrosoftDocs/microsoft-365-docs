@@ -28,7 +28,7 @@ This glossary provides a brief description of important terms and concepts for M
 Make a table - see https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-glossary.
 
 
-| Term | Description | Learn more | 
+| Term | Description | 
 | :------------- | :-------------: | :------------: |
 | **A word**| Description, spelled out acronym  |
 | **Control**| A requirement of a regulation, standard, or policy. It defines how you assessm and manage system configuration, organizational process, and people responsible for meeting a specific requirement of a regulation, standard, or policy.  |
