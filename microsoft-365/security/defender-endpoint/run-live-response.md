@@ -173,7 +173,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 
 Here's an example of the response.
 
-Possible values for each command status are "Created", "Completed", "Failed".
+Possible values for each command status are "Created", "Completed", and "Failed".
 
 ```HTTP
 HTTP/1.1 200 Ok
