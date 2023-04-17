@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to use Microsoft Syntex to implement document compliance for files in document libraries.
 ---
 
-# Document compliance with Microsoft Syntex
+# Scenario: Document compliance with Microsoft Syntex
 
 Intro
 

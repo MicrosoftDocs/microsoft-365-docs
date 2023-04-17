@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to use Microsoft Syntex to automatically generate routine business documents.
 ---
 
-# Automatically generate routine documents with Microsoft Syntex
+# Scenario: Automatically generate routine documents with Microsoft Syntex
 
 Intro
 

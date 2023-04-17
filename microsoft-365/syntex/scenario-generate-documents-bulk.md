@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to use Microsoft Syntex for generating documents in bulk.
 ---
 
-# Generate documents in bulk with Microsoft Syntex
+# Scenario: Generate documents in bulk with Microsoft Syntex
 
 Intro
 

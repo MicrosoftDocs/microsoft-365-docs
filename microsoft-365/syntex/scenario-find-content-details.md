@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to use Microsoft Syntex to find content details in document libraries.
 ---
 
-# Find content details with Microsoft Syntex
+# Scenario: Find content details with Microsoft Syntex
 
 Intro
 

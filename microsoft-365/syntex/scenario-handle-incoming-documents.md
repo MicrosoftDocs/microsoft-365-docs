@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to use Microsoft Syntex to manage a variety of incoming business documents.
 ---
 
-# Handle incoming documents with Microsoft Syntex
+# Scenario: Handle incoming documents with Microsoft Syntex
 
 Intro
 

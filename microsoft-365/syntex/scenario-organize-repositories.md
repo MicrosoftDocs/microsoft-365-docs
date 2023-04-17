@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to use Microsoft Syntex to manage and organize document libraries.
 ---
 
-# Organize unstructured repositories with Microsoft Syntex
+# Scenario: Organize unstructured repositories with Microsoft Syntex
 
 Intro
 
