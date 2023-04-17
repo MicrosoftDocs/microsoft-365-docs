@@ -202,9 +202,7 @@ In the details flyout that opens, the following information is available:
 To take action on the message, see the next section.
 
 > [!TIP]
-> To remain in the details flyout but change the quarantined message that you're looking at, use the up and down arrows at the top of the flyout.
->
-> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="The up and down arrows in the details flyout of a quarantined message" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
+> To see details about other quarantined messages without leaving the details flyout, use ![Previous item and Next item icons.](../../media/updownarrows.png) **Previous item** and **Next item** buttons at the top of the flyout.
 
 ### Take action on quarantined email
 
@@ -376,8 +374,8 @@ After you select the message, use either of the following methods to add the mes
 
 In the **Block sender** flyout that opens, review the information about the sender, and then click **Block**.
 
-> [!NOTE]
-> Your organization can continue to received mail from the blocked sender. Messages from the sender are delivered to your Junk Email folder or to quarantine. To delete messages from the sender upon arrival, use [mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) to **Block the message**.
+> [!TIP]
+> The organization can still receive mail from the blocked sender. Messages from the sender are delivered to user Junk Email folders or to quarantine. To delete messages from the sender upon arrival, use [mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) to **Block the message**.
 
 #### Share email from quarantine
 
@@ -507,9 +505,7 @@ In the details flyout that opens, the following information is available:
 To take action on the file, see the next section.
 
 > [!TIP]
-> To remain in the details flyout but change the quarantined file that you're looking at, use the up and down arrows at the top of the flyout.
->
-> :::image type="content" source="../../media/quarantine-file-details-flyout-up-down-arrows.png" alt-text="The up and down arrows in the details flyout of quarantined files" lightbox="../../media/quarantine-file-details-flyout-up-down-arrows.png":::
+> To see details about other quarantined files without leaving the details flyout, use ![Previous item and Next item icons.](../../media/updownarrows.png) **Previous item** and **Next item** buttons at the top of the flyout.
 
 ### Take action on quarantined files
 
@@ -652,9 +648,7 @@ In the details flyout that opens, the following information is available:
 To take action on the message, see the next section.
 
 > [!TIP]
-> To remain in the details flyout but change the quarantined message that you're looking at, use the up and down arrows at the top of the flyout.
->
-> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="The up and down arrows in the details flyout of a quarantined message" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
+> To see details about other quarantined messages without leaving the details flyout, use ![Previous item and Next item icons.](../../media/updownarrows.png) **Previous item** and **Next item** buttons at the top of the flyout.
 
 ### Take action on quarantined messages in Microsoft Teams
 
