@@ -50,6 +50,10 @@ The services listed below can be assessed by Compliance Manager:
 
 We’ll soon roll out a selection of data connectors built specifically for Compliance Manager that can support other non-Microsoft services such as Salesforce and Zoom.
 
+## Service subscriptions
+
+AWS - legal, AWS - marketing, etc. But do we talk about this in relation to MDC, or in relation to the service itslef? ARe these sub-units within a service, subscriptions within a service, or subscriptions as understood only in the context of MDC?
+
 ## Supported regulations
 
 View the [list of regulations supported by both Compliance Manager and Defencer for Cloud](compliance-manager-cloud-settings.md#standards-supported-by-compliance-manager-and-defender-for-cloud).
