@@ -19,7 +19,7 @@ description: Find business scenarios about how to use Microsoft Syntex in your o
 
 # Scenarios and use cases for Microsoft Syntex
 
-View example scenarios to prompt ideas about how you can use Microsoft Syntex in your organization.
+Use these example scenarios to prompt ideas about how you can use Microsoft Syntex in your organization.
 
 |Scenario |Description |
 |---|---|
@@ -27,7 +27,7 @@ View example scenarios to prompt ideas about how you can use Microsoft Syntex in
 |[:::image type="content" source="../media/content-understanding/uc-automatic-content-assembly.png" alt-text="Image of a generic business person using a computer in a manufacturing setting." border="false":::](scenario-generate-routine-documents.md)|[**Automatically generate routine documents**](scenario-generate-routine-documents.md) <br>Use Syntex content assembly to create modern templates for files that need to be generated on a regular basis. <br>[Routine maintenance reports](scenario-generate-routine-documents.md#routine-maintenance-reports) <br>[Job descriptions](scenario-generate-routine-documents.md#job-descriptions)|
 |[:::image type="content" source="../media/content-understanding/uc-bulk-content-assembly.png" alt-text="Image of a generic business people in a busy office setting." border="false":::](scenario-generate-documents-bulk.md)|[**Generate documents in bulk**](scenario-generate-documents-bulk.md) <br>Use Syntex content assembly to generate large amounts of similar documents. <br>[Contract renewals](scenario-generate-documents-bulk.md#contract-renewals) <br>[Salary review letters](scenario-generate-documents-bulk.md#salary-review-letters)|
 |[:::image type="content" source="../media/content-understanding/uc-incoming-documents.png" alt-text="Image of a generic firstline workers in a worksite setting." border="false":::](scenario-handle-incoming-documents.md)|[**Handle incoming documents**](scenario-handle-incoming-documents.md) <br>Use Syntex to manage and process incoming business documents, such as insurance forms, business verifications, and rental contracts. <br>[Insurance claims](scenario-handle-incoming-documents.md#insurance-claims) <br>[Rental contract management](scenario-handle-incoming-documents.md#rental-contract-management) <br>[Construction documentation verification](scenario-handle-incoming-documents.md#construction-documentation-verification)|
-|[:::image type="content" source="../media/content-understanding/uc-unstructured-repos.png" alt-text="Image of a generic business person in an office setting." border="false":::](scenario-organize-repositories.md)|[**Organize unstructured repositories**](scenario-handle-incoming-documents.md) <br>Use Syntex to make documents in document libraries easy for users to find. <br>[Policies and procedures](scenario-organize-repositories.md#policies-and-procedures) <br>[Example2](scenario-organize-repositories.md#policies-and-procedures) |
+|[:::image type="content" source="../media/content-understanding/uc-unstructured-repos.png" alt-text="Image of a generic business person in an office setting." border="false":::](scenario-organize-repositories.md)|[**Organize unstructured repositories**](scenario-handle-incoming-documents.md) <br>Use Syntex to make documents in document libraries easy for users to find. <br>[Policies and procedures](scenario-organize-repositories.md#policies-and-procedures) <br>[Example2](scenario-organize-repositories.md#example2) |
 
 Use the following example scenarios to prompt ideas about how you can use Microsoft Syntex in your organization.
 
