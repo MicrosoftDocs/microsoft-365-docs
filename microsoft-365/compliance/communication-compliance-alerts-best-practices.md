@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/28/2023
+ms.date: 04/14/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -61,7 +61,7 @@ Consider using the Adult images classifier instead of the Racy images classifier
 
 ## Filter email blasts
 
-You can [filter out email messages](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) that are generic and intended for mass communication. For example, filter out spam, newsletters, and so on. 
+You can [filter out email messages](communication-compliance-policies.md#filter-email-blasts) that are generic and intended for mass communication. For example, filter out spam, newsletters, and so on. [Learn about the Email blast senders report](communication-compliance-reports-audits.md#detailed-reports)
 
 ## Filter out email signatures/disclaimers 
 
