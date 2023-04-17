@@ -42,8 +42,6 @@
         href: mde-p1-setup-configuration.md
       - name: Get started
         href: mde-plan1-getting-started.md
-      - name: Maintenance and operations
-        href: mde-p1-maintenance-operations.md
     - name: Microsoft Defender for Endpoint for US Government customers
       href: gov.md
     - name: Overview of Microsoft Defender for Endpoint on other platforms
