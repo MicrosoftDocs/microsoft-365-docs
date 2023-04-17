@@ -28,7 +28,7 @@ description: "Start the setup process of Microsoft 365 Business Premium or Micro
 
 Your first critical mission is to complete your initial setup process right away. Let's get you going!
 
-[:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::](m365bp-setup.md)
+:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::
 
 Your objective is to:
 
