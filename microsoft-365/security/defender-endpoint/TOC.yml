@@ -127,7 +127,7 @@
       - name: Phase 3 - Onboard
         href: switch-to-mde-phase-3.md
 
-    - name: Manage Defender for Endpoint after migration
+    - name: Manage Defender for Endpoint after migration or setup
       items:
       - name: Overview
         href: manage-mde-post-migration.md
