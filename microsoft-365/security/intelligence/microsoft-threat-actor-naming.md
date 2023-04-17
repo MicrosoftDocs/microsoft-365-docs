@@ -28,7 +28,7 @@ Microsoft categorizes threat actors into five key groups:
 
 **Nation-state actors:** cyber operators acting on behalf of or directed by a nation/state-aligned program, irrespective of whether for espionage, financial gain, or retribution. Microsoft has observed that most nation state actors continue to focus operations and attacks on government agencies, intergovernmental organizations, non-governmental organizations, and think tanks for traditional espionage or surveillance objectives.
 
-:::image type="content" source="../../media/threat-actor-naming/threat-actor-naming-nation-state.png" alt-text="Nation-state actors based on Microsoft naming" lightbox="../../threat-actor-naming/threat-actor-naming-nation-state.png":::
+:::image type="content" source="../../media/threat-actor-naming/threat-actor-naming-nation-state.png" alt-text="Nation-state actors based on Microsoft naming":::
 
 **Financially motivated actors:** cyber campaigns/groups directed by a criminal organization/person with motivations of financial gain and haven't been associated with high confidence to a known non-nation state or commercial entity. This category includes ransomware operators, business email compromise, phishing, and other groups with purely financial or extortion motivations.
 
