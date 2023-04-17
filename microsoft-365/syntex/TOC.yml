@@ -172,6 +172,10 @@
               href: scenario-handle-incoming-documents.md
             - name: Organize unstructured repositories
               href: scenario-organize-repositories.md
+            - name: Find content details
+              href: scenario-find-content-details.md
+            - name: Document compliance
+              href: scenario-document-compliance.md
 
         - name: Assess your environment
           href: adoption-assessment-tool.md 
