@@ -30,8 +30,11 @@ Make a table - see https://learn.microsoft.com/azure/defender-for-cloud/defender
 
 | Term | Description | Learn more | 
 | :------------- | :-------------: | :------------: |
-| **A word**| Description, spelled out acronym  | link |
-| **Service**| A data source; examples: Microsoft Azure, Amazon Web Services, Google Cloud Platform  | link |
-| **Service instance**| tbd  | link |
-| **Subscription**| A sub-group within a service that your organization has set up; examples: Azure for your legal department, Azure for your marketing department, AWS for your legal department, AWS for your marketing department  | link |
-| **Virtual resources**| A virtual machine or other scannable entity  | link |
+| **A word**| Description, spelled out acronym  |
+| **Control**| A requirement of a regulation, standard, or policy. It defines how you assessm and manage system configuration, organizational process, and people responsible for meeting a specific requirement of a regulation, standard, or policy.  |
+| **Regulation**| In Compliance Manager, the list of industry regulations that are the framework for bulding assessments. Compliance Manager provides over 360 regulatory templates for assessments.  |
+| **Regulation family**| Compliance Manager considers all versions of a regulation that share the same overarching regulation to belong to the same family. For example, CMMC Levels 1 through 5 are considered as part of the same regulation family of CMMC. For the purposes of licensing in Compliance Manager, you only need to purchase one license for a CMMC regulatory template to assess any or all levels.  |
+| **Service**| A data source; examples: Microsoft Azure, Amazon Web Services, Google Cloud Platform  |
+| **Service instance**| tbd  |
+| **Subscription**| A sub-group within a service that your organization has set up; examples: Azure for your legal department, Azure for your marketing department, AWS for your legal department, AWS for your marketing department  | 
+| **Virtual resources**| A virtual machine or other scannable entity  |
