@@ -41,7 +41,11 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## April 2023
 
-### Data loss prevention ###
+### Data lifecycle management and records management
+
+- **In preview**: Support for [optical character recognition](ocr-learn-about.md)
+
+### Data loss prevention
 
 **In Preview**: Support for [optical character recognition](ocr-learn-about.md)
 
@@ -80,7 +84,6 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **General availability (GA)**: Rolling out in general availability, [Microsoft Graph Records Management APIs](/graph/api/resources/security-recordsmanagement-overview) to support the management of retention labels and event-based retention.
 - **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview are now gradually rolling out support for URL text links.
-- **In preview**: Support for [optical character recognition](ocr-learn-about.md).
 - **Improvements for Teams retention policies**: Now rolling out, support for existing call data records as well as newly created call data records, and support for the control message events that name and rename a chat.
 - **Improvements that support Power Automate flows**: Now rolling out to support the scenario of [customizing what happens at the end of the retention period](retention-label-flow.md), the existing Power Automate compliance actions have been renamed to more accurately describe their purpose. **Apply label on the item** is renamed **Relabel an item at the end of retention**, and **Deletes the item** is renamed **Deletes an item at the end of retention**. Additionally:
     - New compliance action to [improve the resilience of your flow](retention-label-flow.md#add-resilience-to-your-flow).
