@@ -270,7 +270,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 - Simulation mode:
   - Auditing for Microsoft 365 must be turned on. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](audit-log-enable-disable.md).
-  - To view file or email contents in the source view, you must have the **Data Classification Content Viewer** role, which is included in the **Content Explorer Content Viewer** role group, or **Information Protection** and **Information Protection Investigators** role groups. Without the required role, you don't see the preview pane when you select an item from the **Matched Items** tab. Global admins don't have this role by default.
+  - To view file or email contents in the source view, you must have the **Data Classification Content Viewer** role, which is included in the **Content Explorer Content Viewer** role group, or **Information Protection** and **Information Protection Investigators** role groups. Without the required role, you don't see the preview pane when you select an item from the **Items to review** tab. Global admins don't have this role by default.
 
 - To auto-label files in SharePoint and OneDrive:
   - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -399,13 +399,13 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 12. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the configuration.
 
-Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
+Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Items to review** tab to see which emails or documents matched the rules that you specified.
 
 You can modify your policy directly from this interface:
 
 - For a policy in the **Off** section, select the **Edit policy** button.
 
-- For policy in the **Simulation** section, select the **Edit policy** option at the top of the page, from either tab:
+- For policy in the **Simulation** section, select the **Edit policy** option at the top of the page, from either tab.
 
     ![Edit auto-labeling policy option.](../media/auto-labeling-edit.png)
 
