@@ -31,8 +31,10 @@ Make a table - see https://learn.microsoft.com/azure/defender-for-cloud/defender
 | Term | Description | 
 | :------------- | :-------------: | :------------: |
 | **A word**| Description, spelled out acronym  |
+| **Assessment**| A grouping of controls from a specific regulation, standard, or policy. Completing the actions within an assessment help you meet the requirements of a standard, regulation, or law. |
 | **Control**| A requirement of a regulation, standard, or policy. It defines how you assessm and manage system configuration, organizational process, and people responsible for meeting a specific requirement of a regulation, standard, or policy.  |
-| **License** | In the context of Compliance Manager regulations, one license allows you to buld an unlimited number of assessments for that regulation. Multiple versions or levels of a regulation are covered by the single license for that overarching regulation.  |
+| **Improvement action**| A compliance activity with recommended implementation instructions, intended to help towards completion of a control.  |
+| **License** | In the context of Compliance Manager regulations, one license allows you to build an unlimited number of assessments for that regulation. Multiple versions or levels of a regulation are covered by the single license for that overarching regulation.  |
 | **Regulation**| In Compliance Manager, the list of industry regulations that are the framework for bulding assessments. Compliance Manager provides over 360 regulatory templates for assessments.  |
 | **Regulation family**| A grouping that includes various levels or versions of a regulation which belong to the same overarching regulation. When you purchase a license for a regulation, the license applies to levels and vesrions of that regulation because they belong to the same overarching regulation, or regulation family.  |
 | **Service**| A data source; examples: Microsoft Azure, Amazon Web Services, Google Cloud Platform  |
