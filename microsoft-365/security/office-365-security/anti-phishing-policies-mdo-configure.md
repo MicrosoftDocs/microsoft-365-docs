@@ -61,7 +61,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
-2. On the **Anti-phishing** page, click :::image type="icon" source="../../media/m365-cc-sc-create" border="false"::: **Create** to open the new anti-phishing policy wizard.
+2. On the **Anti-phishing** page, click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create** to open the new anti-phishing policy wizard.
 
 3. On the **Policy name** page, configure these settings:
    - **Name**: Enter a unique, descriptive name for the policy.
@@ -76,7 +76,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
-   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove :::image type="icon" source="../../media/m365-cc-sc-remove-selection" border="false"::: next to the value.
+   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users or groups, enter an asterisk (\*) by itself to see all available values.
 
@@ -112,21 +112,21 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
        You identify the internal and external senders to protect by the combination of their display name and email address.
 
-       Click :::image type="icon" source="../../media/m365-cc-sc-add-internal" border="false"::: **Add user**. In the **Add user** flyout that opens, do the following steps:
+       Click :::image type="icon" source="../../media/m365-cc-sc-add-internal-icon.png" border="false"::: **Add user**. In the **Add user** flyout that opens, do the following steps:
 
        - **Internal users**: Click in the **Add a valid email** box or start typing the user's email address. Select the email address in the **Suggested contacts** drop down list that appears. The user's display name is added to the **Add a name** (which you can change). When you're finished selecting the user, click **Add**.
 
        - **External users**: Type the external user's full email address in the **Add a valid email** box, and then select the email address in the **Suggested contacts** drop down list that appears. The email address is also added in the **Add a name** box (which you can change to a display name).
 
-       The users you added are listed on the **Add user** flyout by **Name** and **Email address**. To remove a user, click :::image type="icon" source="../../media/m365-cc-sc-close" border="false":::.
+       The users you added are listed on the **Add user** flyout by **Name** and **Email address**. To remove a user, click :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false":::.
 
        When you're finished on the **Add user** flyout, click **Add** to return to the **Manage senders for impersonation protection** flyout where the users you selected are now listed by **Display name** and **Sender email address**. 
 
-       To change the list of users from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact" border="false":::.
+       To change the list of users from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
 
-       Use the :::image type="icon" source="../../media/m365-cc-sc-create" border="false"::: **Search** box to find users on the flyout.
+       Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find users on the flyout.
  
-       To remove a user, select them selecting the round check box that appears next to their **Display name**, and then click the :::image type="icon" source="../../media/m365-cc-sc-remove-selected-users" border="false"::: action that appears.
+       To remove a user, select them selecting the round check box that appears next to their **Display name**, and then click the :::image type="icon" source="../../media/m365-cc-sc-remove-selected-users-icon.png" border="false"::: action that appears.
 
        When you're finished on the **Manage senders for impersonation protection** flyout, click **Done** to return to the **Phishing threshold & protection** page.
 
@@ -149,19 +149,19 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
        - **Include custom domains**: To turn this setting on, select the check box, and then click the **Manage (nn) custom domain(s)** link. In the **Manage custom domains for impersonation protection** flyout that opens, do the following steps:
 
-       Click :::image type="icon" source="../../media/m365-cc-sc-create" border="false"::: **Add domains**.
+       Click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add domains**.
 
        In the **Add custom domains** flyout that appears, click in the **Domain** box, enter a domain value, and then select the value that's displayed below the box. Repeat this step as many times as necessary.
 
-       The domains you added are listed on the **Add custom domains** flyout. To remove the domain, click :::image type="icon" source="../../media/m365-cc-sc-remove-selection" border="false"::: next to the value.
+       The domains you added are listed on the **Add custom domains** flyout. To remove the domain, click :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
        When you're finished on the **Add custom domains** flyout, click **Add domains** to return to the **Manage custom domains for impersonation protection** flout where the domains you entered are now listed.
 
-       To change the list of domains from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact" border="false":::.
+       To change the list of domains from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
 
-       Use the :::image type="icon" source="../../media/m365-cc-sc-create" border="false"::: **Search** box to find domains on the flyout.
+       Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find domains on the flyout.
  
-       To remove a domain, select it by selecting the round check box that appears next to the domain, and then click the :::image type="icon" source="../../media/m365-cc-sc-delete" border="false"::: **Delete** action that appears.
+       To remove a domain, select it by selecting the round check box that appears next to the domain, and then click the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears.
 
        When you're finished on the **Manage custom domains for impersonation protection** flyout, click **Done** to return to the **Phishing threshold & protection** page.
 
@@ -170,24 +170,24 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        > [!NOTE]
        > The maximum number of trusted sender and domain entries is 1024.
 
-       - **Senders**: Verify the **Sender** tab is selected and then click :::image type="icon" source="../../media/m365-cc-sc-create" border="false"::: **Add senders**. In the **Add trusted senders** flyout that opens, enter an email address in the **Add a valid email** box, and then click **Add**. Repeat this step as many times as necessary. To remove an existing entry, click :::image type="icon" source="../../media/m365-cc-sc-close" border="false"::: for the entry.
+       - **Senders**: Verify the **Sender** tab is selected and then click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add senders**. In the **Add trusted senders** flyout that opens, enter an email address in the **Add a valid email** box, and then click **Add**. Repeat this step as many times as necessary. To remove an existing entry, click :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false"::: for the entry.
 
          When you're finished on the **Add trusted senders** flyout, click **Add** to return to the **Senders** tab of the **Manage custom domains for impersonation protection** flyout where the senders you added are now listed on the **Senders** tab.
 
-         To change the list of senders from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact" border="false":::.
+         To change the list of senders from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
 
-         Use the :::image type="icon" source="../../media/m365-cc-sc-create" border="false"::: **Search** box to find senders on the tab.
+         Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find senders on the tab.
  
-         To remove a sender, select them by selecting the round check box that appears next to their email address, and then click the :::image type="icon" source="../../media/m365-cc-sc-delete" border="false"::: **Delete** action that appears.
+         To remove a sender, select them by selecting the round check box that appears next to their email address, and then click the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears.
 
-       - **Domains**: Select the **Domain** tab and then click :::image type="icon" source="../../media/m365-cc-sc-create" border="false"::: **Add domains**. In the **Add trusted domains** flyout that opens, enter domain in the **Domain** box, and then select the domain in drop down list that appears. Repeat this step as many times as necessary. To remove an existing entry, click :::image type="icon" source="../../media/m365-cc-sc-remove-selection" border="false"::: for the entry.
+       - **Domains**: Select the **Domain** tab and then click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add domains**. In the **Add trusted domains** flyout that opens, enter domain in the **Domain** box, and then select the domain in drop down list that appears. Repeat this step as many times as necessary. To remove an existing entry, click :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: for the entry.
 
          When you're finished on the **Add trusted domains** flyout, click **Add domains** to return to the **Domains** tab of the **Manage custom domains for impersonation protection** flyout where the domains you added are now listed.
 
-         To change the list of domains from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact" border="false":::.
-         Use the :::image type="icon" source="../../media/m365-cc-sc-create" border="false"::: **Search** box to find domains on the tab.
+         To change the list of domains from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+         Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find domains on the tab.
  
-         To remove a domain, select it by selecting the round check box that appears next to the domain and then click the :::image type="icon" source="../../media/m365-cc-sc-delete" border="false"::: **Delete** action that appears.
+         To remove a domain, select it by selecting the round check box that appears next to the domain and then click the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears.
 
          > [!NOTE]
          > Trusted domain entries don't include subdomains of the specified domain. You need to add an entry for each subdomain.
@@ -291,7 +291,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 3. Select a policy by clicking anywhere other than the check box next to the name to open the details flyout for the policy
 
 > [!TIP]
-> To see details about other anti-phishing policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png) **Previous item** and **Next item** buttons at the top of the flyout.
+> To see details about other anti-phishing policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the flyout.
 
 ## Use the Microsoft 365 Defender portal to take action on anti-phishing policies
 
@@ -306,9 +306,9 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
    - Select the policy from the list by clicking anywhere in the row other than the check box next to the name. The following actions are in the details flyout that opens:
      - Modify policy settings (custom policies or the default policy)
-     - :::image type="icon" source="../../media/m365-cc-sc-turn-on-off" border="false"::: **Turn on** or :::image type="icon" source="../../media/m365-cc-sc-turn-on-off" border="false"::: **Turn off** (custom policies only)
-     - :::image type="icon" source="(../../media/m365-cc-sc-delete" border="false"::: **Delete policy** (custom policies only)
-     - :::image type="icon" source="../../media/m365-cc-sc-increase" border="false"::: **Increase priority** or :::image type="icon" source="../../media/m365-cc-sc-decrease" border="false"::: **Decrease priority** (custom policies only)
+     - :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on** or :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn off** (custom policies only)
+     - :::image type="icon" source="(../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** (custom policies only)
+     - :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** or :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** (custom policies only)
 
 The available actions are described in the following subsections.
 
@@ -327,12 +327,12 @@ You can't enable or disable the anti-phishing policies that are associated with 
 After you select an enabled custom anti-phishing policy (the **Status** value is **On**), use either of the following methods to disable it:
 
 - **On the Anti-phishing page**: Click :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> **Disable selected policies**.
-- **In the details flyout of the policy**: Click :::image type="icon" source="../../media/m365-cc-sc-turn-on-off" border="false"::: **Turn off** at the top of the flyout.
+- **In the details flyout of the policy**: Click :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn off** at the top of the flyout.
 
 After you select a disabled custom anti-phishing policy (the **Status** value is **Off**), use either of the following methods to enable it:
 
 - **On the Anti-phishing page**: Click :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> **Enable selected policies**.
-- **In the details flyout of the policy**: Click :::image type="icon" source="../../media/m365-cc-sc-turn-on-off" border="false"::: **Turn on** at the top of the flyout.
+- **In the details flyout of the policy**: Click :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on** at the top of the flyout.
 
 On the **Anti-phishing** page, the **Status** value of the policy changes to **On** or **Off**.
 
@@ -353,7 +353,7 @@ Anti-phishing protection stops for a recipient after the first policy is applied
 After you select the custom anti-phishing policy by clicking anywhere other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens _if_ you have multiple custom policies:
 
 - The custom policy with the **Priority** value **0** on the **Anti-Phishing** page has the :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** action at the top of the details flyout.
-- The custom policy with the lowest **Priority** value (for example, **3**) has the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** action at the top of the details flyout.
+- The custom policy with the lowest **Priority** value (for example, **3**) has the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png-icon.png" border="false"::: **Increase priority** action at the top of the details flyout.
 - If you have three or more policies, the policies between the highest and lowest priority values have both the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** and the :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** actions at the top of details the flyout.
 
 When you're finished in the policy details flyout, click **Close**.
@@ -367,7 +367,7 @@ You can't remove the default anti-phishing policy or or the anti-phishing polici
 After you select the custom anti-phishing policy, use either of the following methods to remove it:
 
 - **On the Anti-phishing page**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> **Delete selected policies**.
-- **In the details flyout of the policy**: Click :::image type="icon" source="(../../media/m365-cc-sc-delete" border="false"::: **Delete policy** at the top of the flyout.
+- **In the details flyout of the policy**: Click :::image type="icon" source="(../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** at the top of the flyout.
 
 ## Use Exchange Online PowerShell to configure anti-phishing policies
 
