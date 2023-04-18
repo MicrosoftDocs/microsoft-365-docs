@@ -45,10 +45,6 @@ Depending on the Microsoft security products that you use, some advanced feature
 
 Use the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations.
 
-## Automated investigation
-
-Turn on this feature to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigation](automated-investigations.md).
-
 ## Live response
 
 > [!NOTE]
@@ -155,13 +151,6 @@ Enabling the Skype for Business integration gives you the ability to communicate
 
 > [!NOTE]
 > When a device is being isolated from the network, there's a pop-up where you can choose to enable Outlook and Skype communications which allows communications to the user while they are disconnected from the network. This setting applies to Skype and Outlook communication when devices are in isolation mode.
-
-## Microsoft Defender for Identity integration
-
-The integration with Microsoft Defender for Identity allows you to pivot directly into another Microsoft Identity security product. Microsoft Defender for Identity augments an investigation with more insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the device-based investigation capability by pivoting across the network from an identify point of view.
-
-> [!NOTE]
-> You'll need to have the appropriate license to enable this feature.
 
 ## Office 365 Threat Intelligence connection
 
