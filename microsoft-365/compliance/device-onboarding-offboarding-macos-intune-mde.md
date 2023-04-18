@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/04/2023
+ms.date: 04/24/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -57,8 +57,7 @@ If Microsoft Defender for Endpoints (MDE) has already been deployed to your macO
 | [fulldisk.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)  | Used to grant full disk access (FDA).|
 
 > [!TIP]
-> We recommend downloading the bundled ([mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)) file, rather than the [individual](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
- `.mobileconfig` files. The bundled file contains both of the files you need.
+> We recommend downloading the bundled ([mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)) file, rather than the [individual](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) *.mobileconfig* files. The bundled file contains both of the files you need.
 >
 > If any of these files are updated, you need to either download the updated bundle, or download the each updated file individually.
 
@@ -88,9 +87,9 @@ If Microsoft Defender for Endpoints (MDE) has already been deployed to your macO
 
 ### Update existing system configuration profiles
 
-1. An FDA configuration profile should have been created and deployed previously for MDE. (For details, see [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access)). Endpoint DLP requires additional FDA permission for a new application: `com.microsoft.dlp.daemon`.
-    1. Update the existing **Full Disk Access** configuration profile with the modified `fulldisk.mobileconfig` file.
-    1. Add the following key to the `fulldisk.mobileconfig` file, then save the file.
+1. An FDA configuration profile should have been created and deployed previously for MDE. (For details, see [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access)). Endpoint DLP requires additional FDA permission for a new application: `com.microsoft.dlp.daemon`. <br><br> Update the existing **Full Disk Access** configuration profile with the modified `fulldisk.mobileconfig` file.
+
+2. Find the existing MDE Preferences configuration profile. See [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/security/defender-endpoint/mac-install-with-intune) for details. <br><br> Add the following key to the `fulldisk.mobileconfig` file, then save the file.
 
         ```xml
         <key>features</key> 

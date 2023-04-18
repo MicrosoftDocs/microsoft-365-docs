@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/12/2023
+ms.date: 04/24/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -53,20 +53,12 @@ Onboarding a macOS device into Microsoft Purview solutions is a multi-phase proc
 
 Download the following files:
 
-|File     | Link / Description  |
-|---------|---------------------|
-|[mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) | This is the system mobile config file. <br><br> 1. Copy and paste the contents into a text file. <br> 2. Change the file extension from `.txt` to `.mobileconfig` <br> 3. Save the file. (The file won't be recognized if it has the `.txt` extension.)|
-|[com.microsoft.wdav.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig) | This is the MDE preferences file.<br><br> 1. Copy and paste the contents into a text file. <br> 2. Change the file extension from `.txt` to `.mobileconfig` <br> 3. Save the file. (The file won't be recognized if it has the `.txt` extension.)|
+|File     | Description  |
+|---------|--------------|
+|[mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) | This is the system mobile config file. <br><br> 1. Right-click the link and select **Save link as...**. <br> 2. Chose a folder and save the file.|
+|[com.microsoft.wdav.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig) | This is the MDE preferences file.<br><br> 1. Right-click the link and select **Save link as...**. <br> 2. Chose a folder and save the file.|
 
-> [!TIP]
-> We recommend downloading the bundled ([mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)) file, rather than the [individual](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) `.mobileconfig` files. The bundled file contains:
->
-> - accessibility.mobileconfig
-> - fulldisk.mobileconfig
-> - netfilter.mobileconfig
-> - system extensions
->
-> If any of these files are updated, you need to either download the updated bundle, or download the each updated file individually.
+[!INCLUDE [macos-tip(../includes/devices-macos-onboarding-tip.md)]
 
 ### Get the device onboarding package
 
