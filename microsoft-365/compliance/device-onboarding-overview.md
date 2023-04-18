@@ -76,7 +76,7 @@ If you want to use a custom account to turn on/off device monitoring, it must be
 Make sure that the Windows devices that you need to onboard meet these requirements.
 
 1. Must be running Windows 10 x64 build 1809 or later or Windows 11.
-    1. See [March 21, 2023—KB5023773 (OS Builds 19042.2788, 19044.2788, and 19045.2788) Preview](https://support.microsoft.com/en-us/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23) for required minimum Windows Operating System builds.
+    1. See [April 11, 2023—KB5025221 (OS Builds 19042.2846, 19044.2846, and 19045.2846) - Microsoft Support](https://support.microsoft.com/en-us/topic/april-11-2023-kb5025221-os-builds-19042-2846-19044-2846-and-19045-2846-b00c3356-baac-4a41-8342-7f97ec83445a) for required minimum Windows Operating System builds.
 
 1. Antimalware Client Version is 4.18.2110 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623.
 
