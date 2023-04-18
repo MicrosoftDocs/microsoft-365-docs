@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/07/2023
+ms.date: 04/17/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -33,7 +33,12 @@ With communication compliance policies, you can choose to analyze messages in on
 
 ## Microsoft Teams
 
-You can analyze chats in public and private Microsoft Teams channels and individual communications. When users are assigned to a communication compliance policy with Microsoft Teams coverage selected, chat communications for are automatically detected across all Microsoft Teams where users are a member. 
+You can analyze chats in public and private Microsoft Teams channels and individual communications. When users are assigned to a communication compliance policy with Microsoft Teams coverage selected, chat communications are automatically detected across all Microsoft Teams where users are a member. 
+
+Watch the video below to learn how to detect communication risks in Microsoft Teams with communication compliance:
+   <br>
+   <br>
+   >[!VIDEO https://www.microsoft.com/videoplayer/embed/RW11p2Z]
 
 Microsoft Purview Communication Compliance automatically includes Microsoft Teams coverage for pre-defined policy templates and is selected as the default in the custom policy template. Teams chats matching communication compliance policy conditions may take up to 48 hours to process.
 

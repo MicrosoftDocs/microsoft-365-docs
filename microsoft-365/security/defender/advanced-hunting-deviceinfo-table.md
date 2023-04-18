@@ -72,6 +72,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`ExclusionReason` | `string` | Indicates the reason for device exclusion |
 |	`AssetValue`| `string` | Indicates the value of a device as assigned by the user |
 |	`ExposureLevel` | `string` | Indicates the exposure level of a device |
+|	`IsInternetFacing` | `boolean` | Indicates whether the device is internet-facing |
 
 
 The `DeviceInfo` table provides device information based on periodic reports or signals (heartbeats) from a device. Complete reports are sent every hour and every time a change happens to a previous heartbeat. 
