@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/07/2023
+ms.date: 04/17/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -117,9 +117,14 @@ Communication compliance policies check, detect, and capture messages across sev
 - **Microsoft Teams**: Chat communications for public and private [Microsoft Teams](/MicrosoftTeams/Teams-overview) channels and individual chats are supported in communication compliance as a standalone channel source or with other Microsoft 365 services. You'll need to manually add individual users, distribution groups, or specific Microsoft Teams channels when you select users and groups to apply a communication compliance policy to. Teams users can also self-report potentially inappropriate messages in private and group channels and chats for review and remediation.
 - **Exchange Online**: All mailboxes hosted on [Exchange Online](/Exchange/exchange-online) in your Microsoft 365 organization are eligible for analyses. Emails and attachments matching communication compliance policy conditions are instantly available for investigation and in compliance reports. Exchange Online is now an optional source channel and is no longer required in communication compliance policies.
 - **Yammer**: Private messages and public community conversations in [Yammer](/yammer/yammer-landing-page) are supported in communication compliance policies. Yammer is an optional channel and must be in [native mode](/yammer/configure-your-yammer-network/overview-native-mode) to support checking of messages and attachments.
-- **Third-party sources**: You can check messages from [third-party sources](/microsoft-365/compliance/archiving-third-party-data) for data imported into mailboxes in your Microsoft 365 organization. Communication compliance supports connections to several popular platforms, including Instant Bloomberg and others.
+- **Third-party sources**: You can check messages from [third-party sources](/microsoft-365/compliance/archive-third-party-data) for data imported into mailboxes in your Microsoft 365 organization. Communication compliance supports connections to several popular platforms, including Instant Bloomberg and others.
 
 To learn more about messaging channel support in communication compliance policies, see [Detect channel signals with communication compliance](/microsoft-365/compliance/communication-compliance-channels).
+
+Watch the video below to learn how to detect communication risks in Microsoft Teams with communication compliance:
+   <br>
+   <br>
+   >[!VIDEO https://www.microsoft.com/videoplayer/embed/RW11p2Z]
 
 ## Integration with insider risk management
 

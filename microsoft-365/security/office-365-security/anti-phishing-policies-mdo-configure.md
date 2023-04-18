@@ -227,9 +227,9 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Don't apply any action**
        - **Redirect message to other email addresses**
        - **Move message to the recipients' Junk Email folders**
-       - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by user impersonation protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+       - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by user impersonation protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information about quarantine policies, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
-         A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for user impersonation detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown.
+         If you don't select a quarantine policy, the default quarantine policy for user impersonation detections is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown.
 
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
@@ -240,7 +240,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Move message to the recipients' Junk Email folders**
        - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by domain impersonation protection.
 
-         A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for domain impersonation detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown.
+         If you don't select a quarantine policy, the default quarantine policy for domain impersonation detections is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown.
 
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
@@ -249,18 +249,18 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Don't apply any action**
        - **Redirect message to other email addresses**
        - **Move message to the recipients' Junk Email folders**
-       - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+       - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information about quarantine policies, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
-         A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for mailbox intelligence detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown.
+         If you don't select a quarantine policy, the default quarantine policy for mailbox intelligence detections is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown.
 
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
 
      - **If message is detected as spoof**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Select one of the following actions in the drop down list for messages from blocked spoofed senders:
        - **Move message to the recipients' Junk Email folders**
-       - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+       - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information about quarantine policies, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
-         A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for spoof intelligence detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown.
+         If you don't select a quarantine policy, the default quarantine policy for spoof intelligence detections is used (DefaultFullAccessPolicy). When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown.
 
    - **Safety tips & indicators**: Configure the following settings:
      - **Show first contact safety tip**: For more information, see [First contact safety tip](anti-phishing-policies-about.md#first-contact-safety-tip).
@@ -396,12 +396,12 @@ This example creates an anti-phish policy named Research Quarantine with the fol
 
 - The policy is enabled (we aren't using the _Enabled_ parameter, and the default value is `$true`).
 - The description is: Research department policy.
-- Changes the default action for spoofing detections to Quarantine, and uses the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _SpoofQuarantineTag_ parameter).
+- Changes the default action for spoofing detections to Quarantine, and uses the default quarantine policy for the quarantined messages (we aren't using the _SpoofQuarantineTag_ parameter).
 - Enables organization domains protection for all accepted domains, and targeted domains protection for fabrikam.com.
-- Specifies Quarantine as the action for domain impersonation detections, and uses the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _TargetedDomainQuarantineTag_ parameter).
+- Specifies Quarantine as the action for domain impersonation detections, and uses the default quarantine policy for the quarantined messages (we aren't using the _TargetedDomainQuarantineTag_ parameter).
 - Specifies Mai Fujito (mfujito@fabrikam.com) as the user to protect from impersonation.
-- Specifies Quarantine as the action for user impersonation detections, and uses the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _TargetedUserQuarantineTag_ parameter).
-- Enables mailbox intelligence (_EnableMailboxIntelligence_), allows mailbox intelligence protection to take action on messages (_EnableMailboxIntelligenceProtection_), specifies Quarantine as the action for detected messages, and uses the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _MailboxIntelligenceQuarantineTag_ parameter).
+- Specifies Quarantine as the action for user impersonation detections, and uses the default quarantine policy for the quarantined messages (we aren't using the _TargetedUserQuarantineTag_ parameter).
+- Enables mailbox intelligence (_EnableMailboxIntelligence_), allows mailbox intelligence protection to take action on messages (_EnableMailboxIntelligenceProtection_), specifies Quarantine as the action for detected messages, and uses the default quarantine policy for the quarantined messages (we aren't using the _MailboxIntelligenceQuarantineTag_ parameter).
 - Enables all safety tips.
 
 ```powershell
@@ -410,8 +410,8 @@ New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research departmen
 
 For detailed syntax and parameter information, see [New-AntiPhishPolicy](/powershell/module/exchange/New-AntiPhishPolicy).
 
-> [!NOTE]
-> For detailed instructions to specify the [quarantine policies](quarantine-policies.md) to use in an anti-phish policy, see [Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies).
+> [!TIP]
+> For detailed instructions to specify the quarantine policies to use in an anti-phish policy, see [Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies).
 
 #### Step 2: Use PowerShell to create an anti-phish rule
 
@@ -503,8 +503,8 @@ Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 
 For detailed syntax and parameter information, see [Set-AntiPhishPolicy](/powershell/module/exchange/Set-AntiPhishPolicy).
 
-> [!NOTE]
-> For detailed instructions to specify the [quarantine policies](quarantine-policies.md) to use in an anti-phish policy, see [Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies).
+> [!TIP]
+> For detailed instructions to specify the quarantine policies to use in an anti-phish policy, see [Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies).
 
 ### Use PowerShell to modify anti-phish rules
 

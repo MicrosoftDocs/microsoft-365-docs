@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 03/16/2023
+ms.date: 04/10/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -38,6 +38,9 @@ This article provides instructions for how to sign up for Microsoft 365 Lighthou
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in using your partner tenant credentials. 
 
 2. Go to **Billing** > **Purchase services** > **Microsoft 365**.
+ 
+    > [!NOTE]
+    > Instead of **Billing**, some partners may need to go to **Marketplace** > **All products**, and then search for **Microsoft 365 Lighthouse**.
    
 3. Under **Microsoft 365 Lighthouse**, select **Details**. 
 
