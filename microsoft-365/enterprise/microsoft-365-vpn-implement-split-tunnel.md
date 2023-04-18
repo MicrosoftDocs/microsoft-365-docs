@@ -94,7 +94,7 @@ At the time of writing the IP address ranges that these endpoints correspond to 
 52.104.0.0/14
 52.112.0.0/14
 52.96.0.0/14
-52.120.0.0/14
+52.122.0.0/15
 ```
 
 ### 2. Optimize access to these endpoints via the VPN
