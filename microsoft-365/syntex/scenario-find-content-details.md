@@ -21,7 +21,7 @@ description: Learn how to use Microsoft Syntex to find content details in docume
 
 Intro
 
-## Organize and retrieve patent data
+## Patent information
 
 TBD
 
