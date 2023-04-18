@@ -75,15 +75,15 @@ scannerAgent|Object|An object representing the scanner agent, contains the machi
 
 Property|Data type|Description  and  
 :---|:---|:---
-@odata.type|Enum|The type of authentication parameters, should match the type of the scan above. Possible values are: "#microsoft.windowsDefenderATP.api.SnmpAuthParams" for "Network" scan type, and "#microsoft.windowsDefenderATP.api.WindowsAuthParams" for "Windows" scan type.
-type|Enum|The authentication protocol. Possible values vary based on $type property. Possible values are "CommunityString", "NoAuthNoPriv", "AuthNoPriv", "AuthPriv" if $type is "SnmpAuthParams", or "Kerberos" or "Negotiate" if $type is "WindowsAuthParams".
-KeyVaultUri|String (Optional)|An optional property that specifies from which Key Vault the scanner should retrieve credentials. If Key Vault is specified there's no need to specify username, password etc.
-KeyVaultSecretName|String (Optional)|An optional property that specifies Key Vault secret name from which the scanner should retrieve credentials. If Key Vault is specified there's no need to specify username, password etc.
-CommunityString|String (Optional)|Community string to use when choosing "SnmpAuthParams" with "CommunityString"ץ
-Username|String (Optional)|Username to use when choosing "SnmpAuthParams" with any type other than "CommunityString", or when using "WindowsAuthParams".
+@odata.type|Enum|The scan type authentication parameters. Possible values are: "#microsoft.windowsDefenderATP.api.SnmpAuthParams" for "Network" scan type, and "#microsoft.windowsDefenderATP.api.WindowsAuthParams" for "Windows" scan type.
+type|Enum|The authentication method. Possible values vary based on @odata.type property. <br/> - If @odata.type is "SnmpAuthParams", possible values are "CommunityString", "NoAuthNoPriv", "AuthNoPriv", "AuthPriv". <br/> - If @odata.type is "WindowsAuthParams" possible values are "Kerberos" or "Negotiate".
+KeyVaultUrl|String (Optional)|An optional property that specifies from which KeyVault the scanner should retrieve credentials. If KeyVault is specified there's no need to specify username, password.
+KeyVaultSecretName|String (Optional)|An optional property that specifies KeyVault secret name from which the scanner should retrieve credentials. If KeyVault is specified there's no need to specify username, password.
+Domain|String (Optional)|Domain name when using "WindowsAuthParams".
+Username|String (Optional)|Username when using "WindowsAuthParams" or the username when choosing "SnmpAuthParams" with any type other than "CommunityString".
+IsGMSAUser|Boolean (Optional)|Must be set to true when choosing "WindowsAuthParams".
+CommunityString|String (Optional)|Community string to use when choosing "SnmpAuthParams" with "CommunityString"
 AuthProtocol|String (Optional)|Auth protocol to use with "SnmpAuthParams" and "AuthNoPriv" or "AuthPriv". Possible values are "MD5", "SHA1".
 AuthPassword|String (Optional)|Auth password to use with "SnmpAuthParams" and "AuthNoPriv" or "AuthPriv".
 PrivProtocol|String (Optional)|Priv protocol to use with "SnmpAuthParams" and "AuthPriv". Possible values are "DES", "3DES", "AES".
 PrivPassword|String (Optional)|Priv password to use with "SnmpAuthParams" and "AuthPriv".
-Domain|String (Optional)|Domain name to use when choosing "WindowsAuthParams".
-IsGMSAUser|Boolean (Optional)|Must be set to true when choosing "WindowsAuthParams".
