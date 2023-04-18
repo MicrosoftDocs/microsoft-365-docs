@@ -57,7 +57,7 @@ Learn more about [Windows authenticated scan](../defender-vulnerability-manageme
 
 ## Properties
 
-Property ID|Data type|Description
+Property|Data type|Description
 :---|:---|:---
 id|String| Scan ID.
 scanType|Enum|The type of scan. Possible values are: "Windows", "Network".
@@ -73,6 +73,7 @@ scannerAgent|Object|An object representing the scanner agent, contains: MachineI
 
 ### Authentication parameters object properties
 
+Property|Data type|Description
 :---|:---|:---
 $type|Enum|The type of authentication parameters, should match the type of the scan above. Possible values are: "SnmpAuthParams" for "Network" scan type, and "WindowsAuthParams" for "Windows" scan type.
 type|Enum|The authentication protocol. Possible values vary based on $type property. Possible values are "CommunityString", "NoAuthNoPriv", "AuthNoPriv", "AuthPriv" if $type is "SnmpAuthParams", or "Kerberos" or "Negotiate" if $type is "WindowsAuthParams".
