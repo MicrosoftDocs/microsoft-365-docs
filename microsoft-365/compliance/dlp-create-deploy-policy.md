@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/14/2023
+ms.date: 04/17/2023
 audience: ITPro
 ms.topic: how-to
 f1_keywords:
@@ -256,6 +256,7 @@ Scenario recommendation: Restrict users from uploading sensitive data to unsanct
 
 #### Scenario 2 pre-requisites and assumptions
 
+In Outlook an oversharing popup displays a popup before a message is sent. Select **Show policy tip as a dialog for the user before send** in policy tip when creating a DLP rule for the Exchange location.
 This scenario uses the *Highly confidential* sensitivity label, so it requires that you have created and published sensitivity labels. To learn more, see:
 
 - [Learn about sensitivity labels](sensitivity-labels.md)
@@ -333,8 +334,11 @@ and a recipient-based condition
 1. Select **Add group** > **AND** > **NOT** > **Add condition**.
 
 1. Select **Recipient domain is** > **contoso.com**. Choose **Add**.
+
+> [!TIP]
+> **Recipient is** and **Recipient is a member of** can also be used in the previous step and will trigger an oversharing popup.
  
-1. Select **Add and action** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams file.** > **Block everyone**.
+17. Select **Add and action** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams file.** > **Block everyone**.
  
 1. Set **User notifications** to **On**.
  

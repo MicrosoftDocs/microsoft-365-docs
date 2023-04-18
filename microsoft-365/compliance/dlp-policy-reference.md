@@ -849,28 +849,6 @@ To learn more about user notification and policy tip configuration and use, incl
 
 - [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies).
 
-<!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
-
-In addition to sending an email notification, a user notification displays a policy tip:
-
-- In Outlook and Outlook on the web.
-
-- For the document on a SharePoint Online or OneDrive for Business site.
-
-- In Excel, PowerPoint, and Word, when the document is stored on a site included in a DLP policy.
-
-The email notification and policy tip explain why content conflicts with a DLP policy. If you choose, the email notification and policy tip can allow users to override a rule by reporting a false positive or providing a business justification. This can help you educate users about your DLP policies and enforce them without preventing people from doing their work. Information about overrides and false positives is also logged for reporting (see below about the DLP reports) and included in the incident reports (next section), so that the compliance officer can regularly review this information.
-
-Here's what a policy tip looks like in a OneDrive for Business account.
-
-![Policy tip for a document in a OneDrive account](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
-
- To learn more about user notifications and policy tips in DLP policies, see [Use notifications and policy tips](use-notifications-and-policy-tips.md).
-
-> [!NOTE]
-> The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
--->
-
 #### Blocking and notifications in SharePoint Online and OneDrive for Business
 
 This table shows the DLP blocking and notification behavior for policies that are scoped to SharePoint Online and OneDrive for Business.
@@ -886,11 +864,11 @@ This table shows the DLP blocking and notification behavior for policies that ar
 #### Learn more URL
 
 Users may want to learn why their activity is being blocked. You can configure a site or a page that explains more about your policies. When you select **Provide a compliance URL for the end user to learn more about your organization's policies (available for Exchange workload only)**, and the user receives a policy tip notification, the *Learn more* link will point to the site URL that you provide.
+This URL has priority over the global compliance URL configured with [Set-PolicyConfig -ComplainceURL](/powershell/module/exchange/set-policyconfig?view=exchange-ps).
 
 > [!IMPORTANT]
 > You must configure the site or page that *Learn more* points to from scratch. Microsoft Purview doesn't provide this funcationality out of the box.
 
-<!-- YANGCHEN TO PROVIDE POWERSHELL-->
 
 ### User overrides
 
@@ -913,6 +891,19 @@ To learn more about user overrides, see:
 
 - [View the justification submitted by a user for an override](view-the-dlp-reports.md#view-the-justification-submitted-by-a-user-for-an-override)
 
+#### Business justification X-Header
+
+When a user overrides a block with override action on an email, the override option and the text that they provide are stored in the [Audit log](/microsoft-365/compliance/audit-solutions-overview.md). You can [search the audit log in the compliance portal](audit-log-search.md) for `ExceptionInfo` value for the details. Here's an example of the X-header values:
+```xml
+{
+    "FalsePositive"; false,
+    "Justification"; My manager approved sharing of this content",
+    "Reaspon"; "Override",
+    "Rules": [
+         "<message guid>"
+    ]
+}
+```
 ### Incident reports
 
 <!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents
