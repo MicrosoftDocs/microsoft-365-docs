@@ -90,8 +90,9 @@ scanName|String|Name of the scan.  **Required**.
 isActive|Boolean|Status of whether the scan actively running.  **Required**.
 target|String| A comma separated list of targets to scan, either IP addresses or hostnames. **Required**.
 intervalInHours|Int|The interval at which the scan runs.  **Required**.
-targetType|String|The target type in the target field. Possible types are "IP Address" or "Hostname". Default value is IP Address.  **Required**.
+targetType|String|The target type in the target field. Possible types are "IP Address" or "Hostname". Default value is IP Address. **Required**.
 scannerAgent|Object|machine Id, machine name.  **Required**.
+scanAuthenticationParams|object|Set of parameters: @odata.type, type, username, domain, isGmsaUser. Possible @odata.type are "WindowsAuthParams", "SnmpAuthParams". Possible types are "Kerberos", "Negotiate" **Required**.
 
 ## Response
 
@@ -163,20 +164,6 @@ Here's an example of the response.
 }
 ```
 
-## Example request to delete scans
-
-Here's an example of a request that deletes scans.
-
-```http
-POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/BatchDelete
-```
-
-```json
-{
-  "ScanDefinitionIds": ["td32f17af-5cc2-4e4e-964a-4c4ef7d216e2", "ab32g20af-5dd2-4a5e-954a-4c4ef7d216e2"],
-}
-```
-
 ## Example request to update a scan
 
 Here's an example of a request that updates a scan.
@@ -237,4 +224,18 @@ Here's an example of the response.
     }
 }
 
+```
+
+## Example request to delete scans
+
+Here's an example of a request that deletes scans.
+
+```http
+POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/BatchDelete
+```
+
+```json
+{
+  "ScanDefinitionIds": ["td32f17af-5cc2-4e4e-964a-4c4ef7d216e2", "ab32g20af-5dd2-4a5e-954a-4c4ef7d216e2"],
+}
 ```
