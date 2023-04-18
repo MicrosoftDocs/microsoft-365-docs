@@ -85,7 +85,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
     - [Show policy tips as an oversharing popup](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)
 
 ### Device onboarding
-- **In preview**: Device configuration and policy sync status is now viewable in the onboarded devices list for [Windows 10/11](device-onboarding-overview.md#device-configuration-and-policy-sync-status-preview) and [macOS](device-onboarding-macos-overview.md#device-configuration-and-policy-sync-status-preview) devices
+- **In preview**: Device configuration and policy sync status is now viewable in the onboarded devices list for [Onboarding Windows 10 or Windows 11 devices](device-onboarding-overview.md#onboarding-windows-10-or-windows-11-devices) and [macOS](device-onboarding-macos-overview.md#device-configuration-and-policy-sync-status-preview) devices
 
 ### eDiscovery
 
