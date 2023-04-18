@@ -47,13 +47,13 @@ You'll need to run the following commands using Exchange Online PowerShell.
 1. Check the current default domain using the command below:
 
 ```PowerShell
-   Get-OwaMailboxPolicy -Identity <OwaMailboxPolicy-Default> | Fl BookingsMailboxDomain
+   Get-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default | Fl BookingsMailboxDomain
 ```
 
 5. Change current default domain to new domain.
 
 ```PowerShell
-   Set-OwaMailboxPolicy -Identity < OwaMailboxPolicy-Default > -BookingsMailboxDomain "<newdomain>"
+   Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -BookingsMailboxDomain "<newdomain>"
 ```
 
 This would change the default policy of all users and allow them to create a booking calendar with the new domain.
