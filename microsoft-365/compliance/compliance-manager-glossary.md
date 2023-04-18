@@ -36,7 +36,6 @@ Make a table - see https://learn.microsoft.com/azure/defender-for-cloud/defender
 | **Improvement action**| A compliance activity with recommended implementation instructions, intended to help towards completion of a control.  |
 | **License** | In the context of Compliance Manager regulations, one license allows you to build an unlimited number of assessments for that regulation. Multiple versions or levels of a regulation are covered by the single license for that overarching regulation.  |
 | **Regulation**| In Compliance Manager, the list of industry regulations that are the framework for bulding assessments. Compliance Manager provides over 360 regulatory templates for assessments.  |
-| **Regulation family**| A grouping that includes various levels or versions of a regulation which belong to the same overarching regulation. When you purchase a license for a regulation, the license applies to levels and vesrions of that regulation because they belong to the same overarching regulation, or regulation family.  |
 | **Service**| A data source; examples: Microsoft Azure, Amazon Web Services, Google Cloud Platform  |
 | **Service instance**| tbd  |
 | **Subscription**| A sub-group within a service that your organization has set up; examples: Azure for your legal department, Azure for your marketing department, AWS for your legal department, AWS for your marketing department  | 
