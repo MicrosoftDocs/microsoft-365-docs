@@ -140,11 +140,13 @@ On the **Anti-phishing** page, the following properties are displayed in the lis
 - **Priority**: For more information, see the [Set the priority of custom anti-phishing policies](#set-the-priority-of-custom-anti-phishing-policies) section.
 - **Last modified**
 
-To change the list of anti-phishing from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+To change the list of policies from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
 
 Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the policies by **Time range** (creation date) or **Status**.
 
 Use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and a corresponding value to find specific anti-phishing policies.
+
+Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of policies to a CSV file.
 
 Select a policy by clicking anywhere other than the check box next to the name to open the details flyout for the policy. 
 
