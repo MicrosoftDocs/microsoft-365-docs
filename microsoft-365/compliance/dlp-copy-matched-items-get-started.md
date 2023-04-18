@@ -73,38 +73,90 @@ The procedures for setting up your Azure storage account, container and blobs ar
 
 ### Set permissions on the Azure blob storage
 
+You have to configure two sets of permissions on the blobs, one for the administrators and investigators so they can view and manage evidence and another for users whose devices need to upload items to Azure. You should [create custom role groups in Microsoft Purview compliance](../security/office-365-security/scc-permissions.md) to enforce least privileges and assign accounts to them.
+
+#### Permissions on Azure blob for administrators and investigators
+
+Once you've created the role group that DLP incident investigators will use it must have these permissions on the Azure blob. For more information on configuring blob access, see [how to authorize access to blob data in the Azure portal](/azure/storage/blobs/authorize-data-operations-portal) and [Assign share-level permissions](/azure/storage/files/storage-files-identity-ad-ds-assign-permissions?tabs=azure-portal.md)
+
+##### Investiagor actions
+
+Configure these permission for these actions for investigators
 
 
-
-1. [Choose how to authorize access to blob data in the Azure portal](https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-portal)
-
-
-
-the role group that DLP incident investigators must have these permissions on the Azure blob
-create custom role groups for endpoint incident administrators and for all users whose devices will be targeted by DLP policies that copy matched items to Azure storage.
-
-How to create custom role groups
-How to apply permission (investigator and user) to the blob
-
-• Actions: • Microsoft.Storage/storageAccounts/blobServices -> Read: List Blob Services
-• Microsoft.Storage/storageAccounts/blobServices -> Read: Get blob service properties or statistics
-• Microsoft.Storage/storageAccounts/blobServices/containers -> Read: Get blob container
-• Microsoft.Storage/storageAccounts/blobServices/containers -> Read: List of blob containers
-• Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Read: Read Blob
-
-• Data Actions:
-Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Read: Read Blob
+|Object  |Permissions  |
+|---------|---------|
+|Microsoft.Storage/storageAccounts/blobServices     |Read: List Blob Services  |
+|Microsoft.Storage/storageAcccounts/blobServices    |Read: Get blob service properties or statistics         |
+|Microsoft.Storage/storageAccounts/blobServices/containers  |Read: Get blob container         |
+|Microsoft.Storage/storageAccounts/blobServices/containers     |Read: List of blob containers         |
+|Microsoft.Storage/storageAccounts/blobServices/containers/blobs     |Read: Read blob         |
 
 
+##### Investigator data actions
 
-the role group that users are assigned to must have these permission on the Azure blob
-Actions: • Microsoft.Storage/storageAccounts/blobServices -> Read : List Blob Services
-• Microsoft.Storage/storageAccounts/blobServices/containers -> Read : Get blob container
-• Microsoft.Storage/storageAccounts/blobServices/containers -> Write : Put blob container
+|Object  |Permissions|
+|---------|---------|
+|Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Read: Read Blob|
 
-• Data Actions: • Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Read : Read Blob
-• Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Write : Write Blob
-• Microsoft.Storage/storageAccounts/blobServices/containers/blobs -> Other : Add blob content
+The JSON for the investigator role group should look like this:
+
+```json
+"permissions": [
+     {
+         "actions": [
+             "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+             "Microsoft.Storage/storageAccounts/blobServices/read"
+       ],
+       "notActions": [],
+       "dataActions": [
+         "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read"
+       ],
+       "notDataActions": []
+     }
+ ]
+```
+
+#### Permissions on Azure blob for users
+
+Assign these permissions to the Azure blob for the users role.
+
+##### User actions
+
+|Object  |Permissions|
+|---------|---------|
+|Microsoft.Storage/storageAccounts/blobServices |Read : List Blob Services|
+|Microsoft.Storage/storageAccounts/blobServices/containers|Read : Get blob container|
+|Microsoft.Storage/storageAccounts/blobServices/containers|Write : Put blob container|
+
+##### User data actions
+
+|Object|Permissions|
+|Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Read : Read Blob|
+|Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Write : Write Blob|
+|Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Other : Add blob content|
+
+The JSON for user role group should look like this:
+
+```json
+"permissions": [
+  {
+     "actions": [
+       "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+       "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+       "Microsoft.Storage/storageAccounts/blobServices/read"
+     ],
+     "notActions": [],
+     "dataActions": [
+         "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+         "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/add/action",
+         "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write"
+     ],
+     "notDataActions": []
+    }
+ ]
+
+```
 
 ### Endpoint DLP settings configuration
 How to configure DLP to copy matched items to Azure storage
