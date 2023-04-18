@@ -68,6 +68,21 @@ intervalInHours|Int|The interval at which the scan runs.
 createdBy|String| Unique identity of the user that created the scan.
 targetType|String|The target type in the target field. Possible types are "IP Address" or "Hostname". Default value is IP Address.
 target|String| A comma separated list of targets to scan, either IP addresses or hostnames.
-scanAuthenticationParams|Object|Set of authenticated scan objects, contains: authentication type, username, password. See [Get all scan definitions](./get-all-scan-definitions.md).
-scannerAgent|Object|Set of scanner agent objects, contains: ID, device ID, device name, the date and time (in UTC) the device was last seen, assigned application ID, scanner software version, and the date and time (in UTC) the scanner agent was last executed. See [Get all scan definitions](./get-all-scan-definitions.md).
-latestScan|Object|Latest scan object contains: scan status, failure, the date and time (in UTC) the scan was executed. See [Get all scan definitions](./get-all-scan-definitions.md).
+scanAuthenticationParams|Object|An object representing the authentication parameters, see[Authentication parameters object properties](#authentication-parameters-object-properties) for expected fields. This property is mandatory when creating a new scan and is optional when updating a scan.
+scannerAgent|Object|An object representing the scanner agent, contains: MachineId of type string that is the MDE device id.
+
+### Authentication parameters object properties
+
+:---|:---|:---
+$type|Enum|The type of authentication parameters, should match the type of the scan above. Possible values are: "SnmpAuthParams" for "Network" scan type, and "WindowsAuthParams" for "Windows" scan type.
+type|Enum|The authentication protocol. Possible values vary based on $type property. Possible values are "CommunityString", "NoAuthNoPriv", "AuthNoPriv", "AuthPriv" if $type is "SnmpAuthParams", or "Kerberos" or "Negotiate" if $type is "WindowsAuthParams".
+KeyVaultUri|String (Optional)|An optional property that specifies from which Key Vault the scanner should retrieve credentials. If Key Vault is specified there's no need to specify username, password etc.
+KeyVaultSecretName|String (Optional)|An optional property that specifies Key Vault secret name from which the scanner should retrieve credentials. If Key Vault is specified there's no need to specify username, password etc.
+CommunityString|String (Optional)|Community string to use when choosing "SnmpAuthParams" with "CommunityString"ץ
+Username|String (Optional)|Username to use when choosing "SnmpAuthParams" with any type other than "CommunityString", or when using "WindowsAuthParams".
+AuthProtocol|String (Optional)|Auth protocol to use with "SnmpAuthParams" and "AuthNoPriv" or "AuthPriv". Possible values are "MD5", "SHA1".
+AuthPassword|String (Optional)|Auth password to use with "SnmpAuthParams" and "AuthNoPriv" or "AuthPriv".
+PrivProtocol|String (Optional)|Priv protocol to use with "SnmpAuthParams" and "AuthPriv". Possible values are "DES", "3DES", "AES".
+PrivPassword|String (Optional)|Priv password to use with "SnmpAuthParams" and "AuthPriv".
+Domain|String (Optional)|Domain name to use when choosing "WindowsAuthParams".
+IsGMSAUser|Boolean (Optional)|Must be set to true when choosing "WindowsAuthParams".
