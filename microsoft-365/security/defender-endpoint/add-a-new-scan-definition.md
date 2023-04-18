@@ -91,7 +91,7 @@ isActive|Boolean|Status of whether the scan actively running.  **Required**.
 target|String| A comma separated list of targets to scan, either IP addresses or hostnames. **Required**.
 intervalInHours|Int|The interval at which the scan runs.  **Required**.
 targetType|String|The target type in the target field. Possible types are "IP Address" or "Hostname". Default value is IP Address. **Required**.
-scannerAgent|Object|machine Id, machine name.  **Required**.
+scannerAgent|Object|machine Id. **Required**.
 scanAuthenticationParams|Object|Set of parameters: @odata.type, type, username, domain, isGmsaUser. Possible @odata.type are "WindowsAuthParams", "SnmpAuthParams". Possible types are "Kerberos", "Negotiate" **Required**.
 
 ## Response
@@ -116,7 +116,6 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 "targetType": "Ip",
 "scannerAgent": {
     "machineId": "eb663a27ae9d032f61bc268a79eedf14c4b90f77",
-    "machineName": "DESKTOP-TEST"
 },
 "scanAuthenticationParams": { 
     "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams", 

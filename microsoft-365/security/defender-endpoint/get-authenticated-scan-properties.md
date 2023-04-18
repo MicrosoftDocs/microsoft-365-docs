@@ -68,14 +68,14 @@ intervalInHours|Int|The interval at which the scan runs.
 createdBy|String| Unique identity of the user that created the scan.
 targetType|String|The target type in the target field. Possible types are "IP Address" or "Hostname". Default value is IP Address.
 target|String| A comma separated list of targets to scan, either IP addresses or hostnames.
-scanAuthenticationParams|Object|An object representing the authentication parameters, see[Authentication parameters object properties](#authentication-parameters-object-properties) for expected fields. This property is mandatory when creating a new scan and is optional when updating a scan.
-scannerAgent|Object|An object representing the scanner agent, contains: MachineId of type string that is the MDE device id.
+scanAuthenticationParams|Object|An object representing the authentication parameters, see [Authentication parameters object properties](#authentication-parameters-object-properties) for expected fields. This property is mandatory when creating a new scan and is optional when updating a scan.
+scannerAgent|Object|An object representing the scanner agent, contains the machine Id of the scanning device.
 
 ### Authentication parameters object properties
 
-Property|Data type|Description
+Property|Data type|Description  and  
 :---|:---|:---
-$type|Enum|The type of authentication parameters, should match the type of the scan above. Possible values are: "SnmpAuthParams" for "Network" scan type, and "WindowsAuthParams" for "Windows" scan type.
+@odata.type|Enum|The type of authentication parameters, should match the type of the scan above. Possible values are: "#microsoft.windowsDefenderATP.api.SnmpAuthParams" for "Network" scan type, and "#microsoft.windowsDefenderATP.api.WindowsAuthParams" for "Windows" scan type.
 type|Enum|The authentication protocol. Possible values vary based on $type property. Possible values are "CommunityString", "NoAuthNoPriv", "AuthNoPriv", "AuthPriv" if $type is "SnmpAuthParams", or "Kerberos" or "Negotiate" if $type is "WindowsAuthParams".
 KeyVaultUri|String (Optional)|An optional property that specifies from which Key Vault the scanner should retrieve credentials. If Key Vault is specified there's no need to specify username, password etc.
 KeyVaultSecretName|String (Optional)|An optional property that specifies Key Vault secret name from which the scanner should retrieve credentials. If Key Vault is specified there's no need to specify username, password etc.
