@@ -24,7 +24,7 @@ description: How to implement this preview of optical character recognition (OCR
 Optical character recognition (OCR) scanning enables Microsoft Purview to scan content in images for sensitive information. An optional feature, OCR scanning is first enabled at the tenant level. Once enabled, you select the locations where you want to scan images. Image scanning is available for Exchange, SharePoint, OneDrive, Teams, and Windows devices. Once the OCR settings are configured, your existing policies for data loss prevention (DLP), records management, and insider risk management (IRM) are applied to images as well as text-based content. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview scans for credit card numbers in both text and images at all of the chosen locations.
 
 > [!IMPORTANT]
-> By default, Exchange and Teams support OCR. To enable OCR for SharePoint, OneDrive, and Devices, **[sign up here]( https://forms.office.com/r/vudjYnaUM6)**.
+> By default, Exchange and Teams can be configured for  OCR. To enable OCR for SharePoint, OneDrive, and Devices, **[sign up here]( https://forms.office.com/r/vudjYnaUM6)**.
 
 ## Workflow at a glance
 
@@ -57,6 +57,9 @@ The charge for using OCR is $1.00 for each 1,000 items scanned. Each image scann
 
 To view your bill, follow the instructions described in [Monitor your Microsoft Syntex pay-as-you-go usage](https://learn.microsoft.com/microsoft-365/syntex/syntex-azure-billing#monitor-your-microsoft-syntex-pay-as-you-go-usage).
 
+#### Estimate your bill ####
+
+When you first start using OCR, limit usage to just a few people and applicable workloads. After a short while, you can view your bill in Azure and see the usage statistics & charges for each day. From there, you can extrapolate the costs for your full set of users. In addition, you can use the "workload" tag in Azure cost management to see the breakdown of usage per workload.
 
 ### Phase 3: Configure your OCR settings
 
