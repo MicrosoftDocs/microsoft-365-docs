@@ -34,10 +34,10 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions l
 
 ## Before you begin
 
-**REQUIRED:** Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through [JAMF Connect](https://www.jamf.com/products/jamf-connect) or Intune. <br><br>
-**OPTIONAL:** Install the v95+ Microsoft Edge browser on your macOS devices for native Endpoint DLP support on Microsoft Edge.
+- Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through [JAMF Connect](https://www.jamf.com/products/jamf-connect) or Intune. 
+- The three most recent major releases of macOS are supported.
+- OPTIONAL: Install the v95+ Microsoft Edge browser on your macOS devices for native Endpoint DLP support on Microsoft Edge.
 
-The three most recent major releases of macOS are supported.
 
 
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
@@ -55,11 +55,15 @@ Onboarding a macOS device into Microsoft Purview solutions is a multi-phase proc
 
 Download the following files.
 
+> [!NOTE]
+> To download the files:
+> 1. Right-click the link and select **Save link as...**. 
+> 2. Chose a folder and save the file.
+
 |File | Description|
 |-----|------------|
-| [mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) | This bundled file contains: <br> - accessibility.mobileconfig <br> - fulldisk.mobileconfig <br> - netfilter.mobileconfig <br> - sysext.mobileconfig |
-| [schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)| MDE preference file |
-| [com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|MAU preference file|
+| [mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) | This is the bundled file. |
+| [schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)| This is the MDE preference file.|
 
 [!INCLUDE [devices-macos-onboarding-tip](../includes/devices-macos-onboarding-tip.md)]
 
@@ -137,27 +141,8 @@ Download the following files.
         - For **Data Loss Prevention**, select *enabled* and then choose **Save**.
 
 8. Enter a name for the configuration profile, and then choose **Save**.
- 
+
 9. On the next page, choose the **Scope** tab, select the appropriate targets for this configuration profile, and then choose **Save**.
-
-### Deploy a configuration profile for Microsoft AutoUpdate
-
-1. Create a JAMF Pro configuration file using the `com.microsoft.autoupdate2.plist`. For more information, refer to the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use the following values:
-    - Name: *MDATP MDAV MAU settings*
-    - Description: *Microsoft AutoUPdate settings for MDATP for macOS*
-    - Category: *none*
-    - Distribution method: *install automatically*
-    - Level: *computer level*
-
-2. For **Application & Custom Settings** choose **Upload** and then **Add**.
-
-3. For the **Preferences Domain** enter *com.microsoft.autoupdate2* and then choose **Upload**.
-
-4. Choose the `com.microsoft.autoupdate2.plist` file and then choose **Save**.
-
-5. Choose the **Scope** tab, choose the target computers, and then choose **Save**.
-
-7. Choose **Done**.
 
 ### Deploy a Grant Full Access configuration profile
 

@@ -52,7 +52,12 @@ Onboarding a macOS device into Compliance solutions is a multiphase process:
 
 ### Prerequisites
 
-Download the following files:
+Download the following files.
+
+> [!NOTE]
+> To download the files:
+> 1. Right-click the link and select **Save link as...**. 
+> 2. Chose a folder and save the file.
 
 |File|Description |
 |---------|---------|

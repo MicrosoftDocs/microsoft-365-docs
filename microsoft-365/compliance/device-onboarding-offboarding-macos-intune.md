@@ -51,12 +51,17 @@ Onboarding a macOS device into Microsoft Purview solutions is a multi-phase proc
 
 ### Prerequisites
 
-Download the following files:
+Download the following files.
+
+> [!NOTE]
+> To download the files:
+> 1. Right-click the link and select **Save link as...**. 
+> 2. Chose a folder and save the file.
 
 |File     | Description  |
 |---------|--------------|
-|[mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) | This is the system mobile config file. <br><br> 1. Right-click the link and select **Save link as...**. <br> 2. Chose a folder and save the file.|
-|[com.microsoft.wdav.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig) | This is the MDE preferences file.<br><br> 1. Right-click the link and select **Save link as...**. <br> 2. Chose a folder and save the file.|
+|[mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) | This is the bundled mobile config file. <br><br> |
+|[com.microsoft.wdav.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig) | This is the MDE preferences file.|
 
 [!INCLUDE [devices-macos-onboarding-tip](../includes/devices-macos-onboarding-tip.md)]
 
