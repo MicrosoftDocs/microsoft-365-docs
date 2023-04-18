@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 10/18/2022
+ms.date: 04/14/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -30,12 +30,18 @@ description: "An overview for how to set up and secure managed devices from secu
 
 **Welcome to your final critical mission**! Here, you'll onboard and implement protection for all the managed devices in your organization. Microsoft Defender for Business capabilities now included in Microsoft 365 Business Premium can help ensure that your organization's devices are protected from ransomware, malware, phishing, and other threats. When you're done completing your objectives, you can rest assured, knowing you've done your part to protect your organization!
 
+> [!NOTE]
+> This article applies primarily to managed devices. Guidance for protecting unmanaged devices is available here: [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md).
+> 
+> [Learn more about managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
+
+
 Your objectives are to:
 
 - [Upgrade Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro to Windows 10 or 11 Pro](m365bp-upgrade-windows-10-pro.md).
 - [Onboard devices to Defender for Business and apply security policies](m365bp-onboard-devices-mdb.md).
 - [Use Windows Autopilot to set up and configure new devices, or to reset, repurpose, and recover devices](/mem/autopilot/windows-autopilot).
-- [Install Microsoft 365 Apps](../admin/setup/install-applications.md) on any devices that don't already have Microsoft 365 apps
+- [Manage Microsoft 365 installation options for devices](/DeployOffice/manage-software-download-settings-office-365)
 
 Once these objectives have been achieved, your overall mission to protect your organization against cyberattacks and other cybersecurity threats is a success! Now, make sure to set up your response teams to deal with any situation that may arise while defending the integrity of the system. See your next steps!
 
