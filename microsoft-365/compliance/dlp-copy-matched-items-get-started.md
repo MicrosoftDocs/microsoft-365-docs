@@ -39,11 +39,11 @@ Before you start these procedures, you should review [Learn about evidence colle
 
 ## Licensing and Subscriptions
 
-See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP. You do not need any additional licenses over what is needed for endpoint DLP.
+See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP. You don't need any additional licenses over what is needed for endpoint DLP.
 
 ## Permissions
 
-Standard DLP permissions are required. For more informations, see [Permissions](dlp-create-deploy-policy.md#permissions).
+Standard DLP permissions are required. For more information, see [Permissions](dlp-create-deploy-policy.md#permissions).
 
 ### Onboard devices
 
@@ -58,13 +58,13 @@ For example, if your organization wants to have one set of administrators or DLP
 
 #### Do you want to use containers to organize saved items? 
 
-You can create multiple different evidence container within same storage account to sort saved items into. For example, one for items saved off from the HR department and one for IT department. 
+You can create multiple different evidence containers within same storage account to sort saved items into. For example, one for items saved off from the HR department and one for IT department. 
 > [!IMPORTANT]
 > Don't use containers to separate items from multiple regions that have different legal and regulatory requirements. Containers inherit the permissions of the storage account that they are in. You can't set different permissions per container. If you need to configure different permission for different regions, you must create multiple storage accounts, not multiple containers. 
 
 #### Create an Azure storage account
 
-The procedures for setting up your Azure storage account, container and blobs are documented in the Azure document set. Here are links to relevant articles you can refer to to help you get started:
+The procedures for setting up your Azure storage account, container and blobs are documented in the Azure document set. Here are links to relevant articles you can refer to help you get started:
 1. [Introduction to Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction)
 1. [Create a storage account](/azure/storage/common/storage-account-create)
 1. [Manage blob containers using the Azure portal](/azure/storage/blobs/blob-containers-portal)
@@ -79,11 +79,11 @@ You have to configure two sets of permissions on the blobs, one for the administ
 
 #### Permissions on Azure blob for administrators and investigators
 
-Once you've created the role group that DLP incident investigators will use it must have these permissions on the Azure blob. For more information on configuring blob access, see [how to authorize access to blob data in the Azure portal](/azure/storage/blobs/authorize-data-operations-portal) and [Assign share-level permissions](/azure/storage/files/storage-files-identity-ad-ds-assign-permissions?tabs=azure-portal.md)
+Once you've created the role group that DLP incident investigators will use, it must have these permissions on the Azure blob. For more information on configuring blob access, see [how to authorize access to blob data in the Azure portal](/azure/storage/blobs/authorize-data-operations-portal) and [Assign share-level permissions](/azure/storage/files/storage-files-identity-ad-ds-assign-permissions?tabs=azure-portal.md)
 
-##### Investiagor actions
+##### Investigator actions
 
-Configure these permission for these actions for investigators
+Configure these permissions for these actions for investigators
 
 
 |Object  |Permissions  |
@@ -127,17 +127,17 @@ Assign these permissions to the Azure blob for the users role.
 
 |Object  |Permissions|
 |---------|---------|
-|Microsoft.Storage/storageAccounts/blobServices |Read : List Blob Services|
-|Microsoft.Storage/storageAccounts/blobServices/containers|Read : Get blob container|
-|Microsoft.Storage/storageAccounts/blobServices/containers|Write : Put blob container|
+|Microsoft.Storage/storageAccounts/blobServices |Read: List Blob Services|
+|Microsoft.Storage/storageAccounts/blobServices/containers|Read: Get blob container|
+|Microsoft.Storage/storageAccounts/blobServices/containers|Write: Put blob container|
 
 ##### User data actions
 
 |Object|Permissions|
 |---------|---------|
-|Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Read : Read Blob|
-|Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Write : Write Blob|
-|Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Other : Add blob content|
+|Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Read: Read Blob|
+|Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Write: Write Blob|
+|Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Other: Add blob content|
 
 The JSON for user role group should look like this:
 
@@ -168,7 +168,7 @@ The JSON for user role group should look like this:
 
 1. Set the toggle to **On**. 
 
-1. Set how long you want items to be cached on devices if they cannot access the Azure storage account. You can choose, **7**, **30**, or **90** days.
+1. Set how long you want items to be cached on devices if they can't access the Azure storage account. You can choose, **7**, **30**, or **90** days.
 
 1. Select **+ Add storage** and provide the Name and URL of the Azure storage account.
 
@@ -182,21 +182,21 @@ Configure your policy using these settings
 - In **Incident reports**, toggle **Send an alert to admins when a rule match occurs** to **On**
 - In **Incident reports**, select **Collect original file as evidence for all selected file activities on Endpoint**.
 - Select the storage account you want.
-- Select the activities (**Copy to a removable USB device**, **Copy to a network share**, **Print**, **Copy or move using unallowed Bluethooth app**, **Copy or move using RDP**) you want to copy matched items to Azure storage for.
+- Select the activities (**Copy to a removable USB device**, **Copy to a network share**, **Print**, **Copy or move using unallowed Bluetooth app**, **Copy or move using RDP**) you want to copy matched items to Azure storage for.
 
 ### View saved files
 
 1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 1. In the Microsoft Purview compliance portal \> left navigation \> **Data classification** \> **Activity explorer**.
 
-1. Select a **DLP rule matched**n event that was generated by an activity that you are monitoring for.
+1. Select a **DLP rule matched** event that was generated by an activity that you're monitoring for.
 
-1. In the flyout pane, click the file name link under **Evidence file**. Note the file type.
+1. In the flyout pane, select the file name link under **Evidence file**. Note the file type.
 
-1. During this preview, the link will return this error:
+1. During this preview, the link returns this error:
     1. `This XML file does not appear to have any style information associated with it. The document tree is shown below`
 
-1. During this preview you'll have to copy the full hash value from the URL in the browser address bar.
+1. During this preview, you'll have to copy the full hash value from the URL in the browser address bar.
 
 :::image type="content" source="../media/dlp-guid-access-copy-saved-item.png" alt-text="Screen shot of a browser address bar with the hashed portion of the URL called out in a red box.":::
 
