@@ -93,13 +93,13 @@ Download the following files.
 
 2. Find the existing MDE Preferences configuration profile. See [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/security/defender-endpoint/mac-install-with-intune) for details. <br><br> Add the following key to the `fulldisk.mobileconfig` file, then save the file.
 
-        ```xml
-        <key>features</key> 
-             <dict> 
-                <key>dataLossPrevention</key> 
-                <string>enabled</string> 
-            </dict> 
-        ```
+```xml
+    <key>features</key> 
+         <dict> 
+            <key>dataLossPrevention</key> 
+            <string>enabled</string> 
+        </dict> 
+```
 
 Here's an [example mobileconfig file](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig).
 
