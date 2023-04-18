@@ -546,8 +546,6 @@
             href: ../intelligence/safety-scanner-download.md
           - name: Threat actor naming
             href: ../intelligence/microsoft-threat-actor-naming.md         
-          - name: Understand malware & other threats
-            href: ../intelligence/understanding-malware.md
             items: 
             - name: Prevent malware infection
               href: ../intelligence/prevent-malware-infection.md
