@@ -42,8 +42,6 @@
         href: mde-p1-setup-configuration.md
       - name: Get started
         href: mde-plan1-getting-started.md
-      - name: Maintenance and operations
-        href: mde-p1-maintenance-operations.md
     - name: Microsoft Defender for Endpoint for US Government customers
       href: gov.md
     - name: Overview of Microsoft Defender for Endpoint on other platforms
@@ -127,7 +125,7 @@
       - name: Phase 3 - Onboard
         href: switch-to-mde-phase-3.md
 
-    - name: Manage Defender for Endpoint after migration
+    - name: Manage Defender for Endpoint after migration or setup
       items:
       - name: Overview
         href: manage-mde-post-migration.md
@@ -139,8 +137,6 @@
         href: manage-mde-post-migration-group-policy-objects.md
       - name: Use PowerShell, WMI, or MPCmdRun.exe
         href: manage-mde-post-migration-other-tools.md
-      - name: Updating MMA on Windows devices
-        href: update-agent-mma-windows.md
       - name: Updating MMA on Windows devices
         href: update-agent-mma-windows.md
       - name: Server migration scenarios
@@ -422,6 +418,8 @@
         href: machines-view-overview.md
       - name: Exclude devices
         href: exclude-devices.md
+      - name: Internet facing devices
+        href: internet-facing-devices.md
       - name: Device timeline
         href: device-timeline-event-flag.md
       - name: Manage device group and tags
