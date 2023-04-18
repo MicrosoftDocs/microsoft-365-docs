@@ -60,15 +60,7 @@ Download the following files:
 |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) | Required for full disk access |
 |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/schema/schema.json)| MDE preference file |
 
-> [!TIP]
-> We recommend downloading the bundled ([mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)) file, rather than the [individual](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) `.mobileconfig` files. The bundled file contains:
->
-> - accessibility.mobileconfig
-> - fulldisk.mobileconfig
-> - netfilter.mobileconfig
-> - system extensions
->
-> If any of these files are updated, you need to either download the updated bundle, or download the each updated file individually.
+[!INCLUDE [devices-macos-onboarding-tip](../includes/devices-macos-onboarding-tip.md)]
 
 ### Update the existing MDE Preference domain profile
 

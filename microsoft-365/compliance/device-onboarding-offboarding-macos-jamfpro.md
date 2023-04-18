@@ -61,15 +61,7 @@ Download the following files.
 | [schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)| MDE preference file |
 | [com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|MAU preference file|
 
-> [!TIP]
-> We recommend downloading the bundled ([mdatp-nokext.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig)) file, rather than the [individual](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) `.mobileconfig` files. The bundled file contains:
->
-> - accessibility.mobileconfig
-> - fulldisk.mobileconfig
-> - netfilter.mobileconfig
-> - system extensions
->
-> If any of these files are updated, you need to either download the updated bundle, or download the each updated file individually.
+[!INCLUDE [devices-macos-onboarding-tip](../includes/devices-macos-onboarding-tip.md)]
 
 ### Get the device onboarding and installation packages
 :::image type="content" source="../media/device-macos-dnld-install-package-inline.png" alt-text="Screenshot of the Microsoft Intune Configuration settings tab with all fields populated." lightbox="../media/device-macos-dnld-install-package-expanded.png":::
