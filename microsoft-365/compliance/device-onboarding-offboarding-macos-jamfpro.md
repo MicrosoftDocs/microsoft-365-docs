@@ -38,18 +38,15 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions l
 - The three most recent major releases of macOS are supported.
 - OPTIONAL: Install the v95+ Microsoft Edge browser on your macOS devices for native Endpoint DLP support on Microsoft Edge.
 
-
-
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
 Onboarding a macOS device into Microsoft Purview solutions is a multi-phase process:
 1. [Deploy onboarding packages](#deploy-onboarding-packages)
 2. [Configure application preferences](#configure-application-preferences)
-3. [Deploy a configuration profile for Microsoft AutoUpdate](#deploy-a-configuration-profile-for-microsoft-autoupdate)
-4. [Deploy a Grant Full Access configuration profile](#deploy-a-grant-full-access-configuration-profile)
-5. [Deploy a System Extensions configuration profile](#deploy-a-system-extensions-configuration-profile)
-6. [Deploy System Configuration Profiles](#deploy-system-configuration-profiles)
-7. [Upload the installation package](#upload-the-installation-package)
+3. [Deploy a Grant Full Access configuration profile](#deploy-a-grant-full-access-configuration-profile)
+4. [Deploy a System Extensions configuration profile](#deploy-a-system-extensions-configuration-profile)
+5. [Deploy System Configuration Profiles](#deploy-system-configuration-profiles)
+6. [Upload the installation package](#upload-the-installation-package)
 
 ### Prerequisites
 
@@ -123,8 +120,9 @@ Download the following files.
 
 3. In the navigation pane, select **Application and Custom Settings** and then choose **External Applications**.
 
-4. Choose **Add** and then choose **Custom Schema** for the preference domain. Use this value:
-    - **Preference domain**: `com.microsoft.wdav`
+4. Choose **Add** and then choose **Custom Schema** for the preference domain. For **Preference domain**, enter `com.microsoft.wdav`.
+
+    :::image type="content" source="../media/macos-onboarding-jamf-external-apps-config-profile-inline.png" alt-text="Screenshot of the  External Applications page.":::
 
 5. Choose **Add Schema** and then select the `schema.json` file you downloaded from GitHub.
 
@@ -139,33 +137,12 @@ Download the following files.
 
     - **Features**
         - For **Data Loss Prevention**, select *enabled* and then choose **Save**.
+ 
+<!-- I'm omitting the screenshot because the version of the screenshot that I have doesn't picture all the chosen values & buttons,. -->
 
 8. Enter a name for the configuration profile, and then choose **Save**.
 
 9. On the next page, choose the **Scope** tab, select the appropriate targets for this configuration profile, and then choose **Save**.
-
-### Deploy a Grant Full Access configuration profile
-
-1. Upload the `fulldisk.mobileconfig` file to JAMF. For more information, refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
-
-### Deploy a System Extensions configuration profile
-
-1. Create a JAMF Pro configuration file using the procedures in the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
-    - Name: *MDATP MDAV System Extensions*
-    - Description: *MDATP system extensions*
-    - Category: *none*
-    - Distribution method: *install automatically*
-    - Level: *computer level*
-
-2. In **System extensions** profile, enter these values:
-    - Display Name: *Microsoft Corp. System Extensions*
-    - System Extension Types: *Allowed System Extensions*
-    - Team Identifier: *UBF8T346G9*
-    - Allowed System Extensions: *com.microsoft.wdav.epsext*, and *com.microsoft.wdav.netext*
-
-3. Choose the **Scope** tab, select the target computers, and then choose **Save**.
-
-4. Choose **Done**.
 
 ### Deploy System Configuration Profiles
 

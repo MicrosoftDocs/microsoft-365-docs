@@ -34,7 +34,7 @@ You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 
 ## Before you begin
 
-- Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and are enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp).
+- Make sure your [macOS devices are onboarded into Intune](https://learn.microsoft.com/mem/intune/fundamentals/deployment-guide-platform-macos) and are enrolled in the [Company Portal app](https://learn.microsoft.com/mem/intune/user-help/enroll-your-device-in-intune-macos-cp).
 - Make sure you have access to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home).
 - The three most recent major releases of macOS are supported.
 - Create the user groups that you're going to assign the configuration updates to.
