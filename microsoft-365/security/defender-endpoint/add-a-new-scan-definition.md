@@ -88,7 +88,7 @@ Parameter|Type|Description
 scanType|Enum|The type of scan. Possible values are: "Windows", "Network".  **Required**.
 scanName|String|Name of the scan.  **Required**.
 isActive|Boolean|Status of whether the scan actively running.  **Required**.
-target|String| A comma separated list of targets to scan, either IP addresses or hostnames.  **Required**.
+target|String| A comma separated list of targets to scan, either IP addresses or hostnames. **Required**.
 intervalInHours|Int|The interval at which the scan runs.  **Required**.
 targetType|String|The target type in the target field. Possible types are "IP Address" or "Hostname". Default value is IP Address.  **Required**.
 scannerAgent|Object|machine Id, machine name.  **Required**.
