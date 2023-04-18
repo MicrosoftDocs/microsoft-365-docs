@@ -71,7 +71,7 @@ To view your bill, follow the instructions described in [Monitor your Microsoft 
 |--------------|----------|
 | Exchange | Data loss prevention <sup>1</sup><br> <br> Information protection: [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)<sup>1</sup> <br> <br> Records management: [Auto-apply retention label policies](apply-retention-labels-automatically.md#automatically-apply-a-retention-label-to-retain-or-delete-content)<sup>2</sup> | 
 | SharePoint sites | Data loss prevention <br><br> Insider risk management<sup>3</sup> <br><br> Records management: [Auto-apply retention label policies](apply-retention-labels-automatically.md#automatically-apply-a-retention-label-to-retain-or-delete-content)<sup>2</sup> |
-| OneDrive accounts | Data loss prevention <br><br> Insider risk management <sup>3</sup>  <br><br> Records management: [Auto-apply retention label policies](apply-retention-labels-automatically.md#automatically-apply-a-retention-label-to-retain-or-delete-content)<sup>2</sup> |
+| OneDrive accounts | Data loss prevention <br><br>  Records management: [Auto-apply retention label policies](apply-retention-labels-automatically.md#automatically-apply-a-retention-label-to-retain-or-delete-content)<sup>2</sup> |
 | Teams chat and channel messages | Data loss prevention <br> <br> Insider risk management<sup>3</sup>  |
 | Devices | Data loss prevention <br> <br> Insider risk management<sup>3</sup> |
 

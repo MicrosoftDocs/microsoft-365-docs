@@ -43,11 +43,11 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Data lifecycle management and records management
 
-- **In preview**: Support for [optical character recognition](ocr-learn-about.md)
+- **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md)
 
 ### Data loss prevention
 
-- **In preview**: Support for [optical character recognition](ocr-learn-about.md)
+- **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md)
 
 ### Insider risk management
 
