@@ -1,11 +1,7 @@
 ---
 title: Configure advanced features in Microsoft Defender for Endpoint
 description: Turn on advanced features such as block file in Microsoft Defender for Endpoint.
-keywords: advanced features, settings, block file, automated investigation, auto resolve, skype, microsoft defender for identity, office 365, azure information protection, intune
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -17,7 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/18/2023
 ---
 
 # Configure advanced features in Defender for Endpoint
