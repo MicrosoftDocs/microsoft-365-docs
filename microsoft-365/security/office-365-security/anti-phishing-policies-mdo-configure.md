@@ -307,7 +307,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
    - Select the policy from the list by clicking anywhere in the row other than the check box next to the name. The following actions are in the details flyout that opens:
      - Modify policy settings (custom policies or the default policy)
      - :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on** or :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn off** (custom policies only)
-     - :::image type="icon" source="(../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** (custom policies only)
+     - :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** (custom policies only)
      - :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** or :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** (custom policies only)
 
 The available actions are described in the following subsections.
@@ -353,7 +353,7 @@ Anti-phishing protection stops for a recipient after the first policy is applied
 After you select the custom anti-phishing policy by clicking anywhere other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens _if_ you have multiple custom policies:
 
 - The custom policy with the **Priority** value **0** on the **Anti-Phishing** page has the :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** action at the top of the details flyout.
-- The custom policy with the lowest **Priority** value (for example, **3**) has the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png-icon.png" border="false"::: **Increase priority** action at the top of the details flyout.
+- The custom policy with the lowest **Priority** value (for example, **3**) has the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** action at the top of the details flyout.
 - If you have three or more policies, the policies between the highest and lowest priority values have both the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** and the :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** actions at the top of details the flyout.
 
 When you're finished in the policy details flyout, click **Close**.
@@ -367,7 +367,7 @@ You can't remove the default anti-phishing policy or or the anti-phishing polici
 After you select the custom anti-phishing policy, use either of the following methods to remove it:
 
 - **On the Anti-phishing page**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> **Delete selected policies**.
-- **In the details flyout of the policy**: Click :::image type="icon" source="(../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** at the top of the flyout.
+- **In the details flyout of the policy**: Click :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** at the top of the flyout.
 
 ## Use Exchange Online PowerShell to configure anti-phishing policies
 
