@@ -19,7 +19,14 @@ description: Learn how to use Microsoft Syntex to automatically generate routine
 
 # Scenario: Automatically generate routine documents with Microsoft Syntex
 
-Intro
+Intr:::row:::
+   :::column span="":::      
+      The content assembly feature in Microsoft Syntex can be used to create modern templates for files that need to be created on a regular basis. Files can then be generated based on these templates, either through manual request or through an automated trigger. 
+   :::column-end:::
+   :::column span="":::
+      ![Image of a generic business person using a computer in a manufacturing setting.](../media/content-understanding/uc-automatic-content-assembly.png)
+   :::column-end:::
+:::row-end:::o
 
 ## Routine maintenance reports
 
