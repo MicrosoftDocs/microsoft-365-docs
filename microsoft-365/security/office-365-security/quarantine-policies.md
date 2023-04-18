@@ -793,7 +793,7 @@ The **Preview** permission (_PermissionToPreview_) allows users to preview their
 If the **Preview** permission is enabled:
 
 - ![Preview message icon.](../../media/m365-cc-sc-preview-message-icon.png) [Preview message](quarantine-end-user.md#preview-email-from-quarantine) is available on the **Quarantine** page and in the message details in quarantine.
-- No affect in quarantine notifications. Previewing a quarantined message from the quarantine notification isn't possible. The **Review message** action in quarantine notifications takes users to the details flyout of the message in quarantine where they can preview the message.
+- No effect in quarantine notifications. Previewing a quarantined message from the quarantine notification isn't possible. The **Review message** action in quarantine notifications takes users to the details flyout of the message in quarantine where they can preview the message.
 
 If the **Preview** permission is disabled, users can't preview their own messages in quarantine (the action isn't available).
 
