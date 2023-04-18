@@ -69,7 +69,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 2. On the **Quarantine policies** page, click ![Add custom policy icon.](../../media/m365-cc-sc-create-icon.png) **Add custom policy** to start the new quarantine policy wizard.
 
-3. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. The policy name is selectable in drop down lists in upcoming steps.
+3. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. The policy name is selectable in drop-down lists in upcoming steps.
 
    When you're finished on the **Policy name** page, click **Next**.
 
@@ -281,7 +281,7 @@ Spoof intelligence is available in EOP and Defender for Office 365. User imperso
 
 4. On the **Actions** page or flyout, every verdict that has the **Quarantine the message** action also has the **Apply quarantine policy** box for you to select a quarantine policy.
 
-   During the creation of the anti-phishing policy, if you don't select a quarantine policy, the default quarantine policy for is used. When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown. The default quarantine policies are listed in the [supported features table](#step-2-assign-a-quarantine-policy-to-supported-features).
+   During the creation of the anti-phishing policy, if you don't select a quarantine policy, the default quarantine policy is used. When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown. The default quarantine policies are listed in the [supported features table](#step-2-assign-a-quarantine-policy-to-supported-features).
 
    :::image type="content" source="../../media/quarantine-tags-in-anti-phishing-policies.png" alt-text="The Quarantine policy selections in an anti-phishing policy." lightbox="../../media/quarantine-tags-in-anti-phishing-policies.png":::
 
@@ -497,7 +497,7 @@ Even if you don't customize quarantine notifications for different languages, se
 
 - **Specify sender address**: Select an existing user for the sender email address of quarantine notifications. The default sender is quarantine@messaging.microsoft.com.
 
-- **Use my company logo**: Select this option to replace the default Microsoft logo that's used at the top of quarantine notifications. Before you do this step, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo. This option isn't supported if your organization has a custom logo pointing to a URL instead of an uploaded image file.
+- **Use my company logo**: Select this option to replace the default Microsoft logo that's used at the top of quarantine notifications. Before you do this step, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
 
   A custom logo in a quarantine notification is shown in the following screenshot:
 
@@ -793,7 +793,7 @@ The **Preview** permission (_PermissionToPreview_) allows users to preview their
 If the **Preview** permission is enabled:
 
 - ![Preview message icon.](../../media/m365-cc-sc-preview-message-icon.png) [Preview message](quarantine-end-user.md#preview-email-from-quarantine) is available on the **Quarantine** page and in the message details in quarantine.
-- No affect in quarantine notifications. Previewing a quarantined message from the quarantine notification isn't possible. The **Review message** action in quarantine notifications takes users to the details flyout of the message in quarantine where they can preview the message.
+- No effect in quarantine notifications. Previewing a quarantined message from the quarantine notification isn't possible. The **Review message** action in quarantine notifications takes users to the details flyout of the message in quarantine where they can preview the message.
 
 If the **Preview** permission is disabled, users can't preview their own messages in quarantine (the action isn't available).
 
