@@ -21,7 +21,7 @@ description: Learn how to use Microsoft Syntex to automatically generate routine
 
 :::row:::
    :::column span="":::      
-      The content assembly feature in Microsoft Syntex can be used to create modern templates for files that need to be created on a regular basis. Files can then be generated based on these templates, either through manual request or through an automated trigger.
+      Use the content assembly feature in Microsoft Syntex to create modern templates for files that need to be created on a regular basis. Files can then be generated based on these templates, either through manual request or through an automated trigger.
 
       Features used:
       - Syntex content assembly 
