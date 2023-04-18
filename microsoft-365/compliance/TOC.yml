@@ -1802,7 +1802,7 @@
         - name: Create and manage alert policies
           href: compliance-manager-alert-policies.md
         - name: Scoring
-          href: compliance-score-calculation.md
+          href: compliance-manager-scoring.md
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
     - name: Industry-specific guidance
