@@ -69,7 +69,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 2. On the **Quarantine policies** page, click ![Add custom policy icon.](../../media/m365-cc-sc-create-icon.png) **Add custom policy** to start the new quarantine policy wizard.
 
-3. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. The policy name is selectable in drop down lists in upcoming steps.
+3. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. The policy name is selectable in drop-down lists in upcoming steps.
 
    When you're finished on the **Policy name** page, click **Next**.
 
@@ -281,7 +281,7 @@ Spoof intelligence is available in EOP and Defender for Office 365. User imperso
 
 4. On the **Actions** page or flyout, every verdict that has the **Quarantine the message** action also has the **Apply quarantine policy** box for you to select a quarantine policy.
 
-   During the creation of the anti-phishing policy, if you don't select a quarantine policy, the default quarantine policy for is used. When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown. The default quarantine policies are listed in the [supported features table](#step-2-assign-a-quarantine-policy-to-supported-features).
+   During the creation of the anti-phishing policy, if you don't select a quarantine policy, the default quarantine policy is used. When you later view or edit the anti-phishing policy settings, the quarantine policy name is shown. The default quarantine policies are listed in the [supported features table](#step-2-assign-a-quarantine-policy-to-supported-features).
 
    :::image type="content" source="../../media/quarantine-tags-in-anti-phishing-policies.png" alt-text="The Quarantine policy selections in an anti-phishing policy." lightbox="../../media/quarantine-tags-in-anti-phishing-policies.png":::
 
