@@ -72,7 +72,7 @@ landingContent:
             url: mdb-get-help.md
           - text: Frequently asked questions
             url: mdb-faq.yml
-          - text: Glossary of security terms
-            url: /microsoft-365/business-premium/m365bp-glossary
+          - text: Microsoft Security Intelligence
+            url: https://www.microsoft.com/wdsi/threats
 
  

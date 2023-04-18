@@ -35,9 +35,6 @@ In addition to the protection Microsoft 365 Business Premium offers against atta
 - **Spoofing**. Scammers can also use a technique called spoofing to make it appear as if you've received an email from yourself. 
 - **Malware** is malicious software that can be installed on your computer, usually installed after you've clicked a link or opened a document from an email. There are various types of malware (for example, ransomware, when your computer is taken over), but you don't want to have any of them. 
 
-> [!TIP]
-> To learn more security concepts, see our [Glossary of terms](m365bp-glossary.yml).
-
 ## Best practices
 
 Use the following best practices to help users fend off cyberattacks through email.
