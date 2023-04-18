@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/12/2023
+ms.date: 04/18/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -75,6 +75,8 @@ These actions are configured in the DLP policy. For more information on how to c
 
 To comply with regulatory requirements, make sure that the Azure storage accounts that you use are in the same geo-political regulatory boundaries as the devices that they are being copied from. Also, be aware of the geo-political location of the DLP investigators who will be accessing the sensitive items once they are saved. Consider using [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to scope the administration of the users and devices that the DLP policy will be scoped to. To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft Purview](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
 Evidence collection for file activities on devices supports up to 10 Azure storage accounts.
+
+To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft Purview](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
 
 ### Local storage and bandwidth
 
