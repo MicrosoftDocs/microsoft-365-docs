@@ -70,6 +70,8 @@ The procedures for setting up your Azure storage account, container and blobs ar
 1. [Manage blob containers using the Azure portal](/azure/storage/blobs/blob-containers-portal)
 1. [Manage block blobs with PowerShell](/azure/storage/blobs/blob-powershell)
 
+Be sure to save the name and URL of the Azure blob. To view the URL, open the Azure storage portal \> **Home \> **Storage Accounts** \> **Container** \> **Properties**
+
 
 ### Set permissions on the Azure blob storage
 
@@ -159,9 +161,19 @@ The JSON for user role group should look like this:
 ```
 
 ### Endpoint DLP settings configuration
-How to configure DLP to copy matched items to Azure storage
+
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
+1. In the Microsoft Purview compliance portal \> left navigation \> **Solutions** \> **Data loss prevention** \> **Endpoint DLP settings** \> **Setup evidence collection for file activities on devices**.
+
+1. Set the toggle to **On**. 
+
+1. Set how long you want items to be cached on devices if they cannot access the Azure storage account. You can choose, **7**, **30**, or **90** days.
+
+1. Select **+ Add storage** and provide the Name and URL of the Azure storage account.
 
 ### Policy configuration 
+
+
 
 ### View saved files
 How to access the content in the Azure blog/Where does it show up in Purview
