@@ -42,7 +42,7 @@ In our new taxonomy, a weather event or *family name* represents one of the abov
 
 The table below shows how the new family names map to a sampling of the threat actors that we track.
 
-|**Actor category**|**Type**|**Family name**|
+|Actor category|Type|Family name|
 |---|:---:|:---:|
 |Nation-state|China<br>Iran<br>Lebanon<br>North Korea<br>Russia<br>South Korea<br>Turkey<br>Vietnam|Typhoon<br>Sandstorm<br>Rain<br>Sleet<br>Blizzard<br>Hail<br>Dust<br>Cyclone|
 |Financially motivated|Financially motivated|Tempest|
@@ -52,7 +52,7 @@ The table below shows how the new family names map to a sampling of the threat a
 
 Use the following reference table below to understand how our previously publicly disclosed old threat actor names translate to our new taxonomy.
 
-|**Previous name**|**New name**|**Origin/Threat**|**Other names**|
+|Previous name|New name|Origin/Threat|Other names|
 |---|:---:|:---:|:---:|
 |ACTINIUM|Aqua Blizzard|Russia|UNC530, Primitive Bear, Gamaredon|
 |AMERICIUM|Pink Sandstorm|Iran|Agrius, Deadwood, BlackShadow, SharpBoys|
@@ -97,7 +97,7 @@ Use the following reference table below to understand how our previously publicl
 |ZINC|Diamond Sleet|North Korea|Labyrinth Chollima, Lazarus|
 |ZIRCONIUM|Violet Typhoon|China|APT31|
 
-|**Previous name**|**New name**|**Origin/Threat**|**Other names**|
+|Previous name|New name|Origin/Threat|Other names|
 |---|:---:|:---:|:---:|
 |DEV-0146|Pumpkin Sandstorm|Iran|ZeroCleare|
 |DEV-0193|Periwinkle Tempest|Financially motivated|Wizard Spider, UNC2053|
@@ -134,4 +134,4 @@ Read our announcement about the new taxonomy for more information: [https://aka.
 
 [Intel profiles in Microsoft Defender Threat Intelligence](../defender/defender-threat-intelligence.md) bring crucial threat actor insights directly into defenders' hands so that they can get the context they need as they prepare for and respond to threats.
 
-Additionally, to further operationalize the threat intelligence you get from Microsoft, the Microsoft Defender Threat Intelligence Intel Profiles API provides the most up-to-date threat actor infrastructure visibility in the industry today, enabling threat intelligence and security operations (SecOps) teams to streamline their advanced threat hunting and analysis workflows. Learn more about this API in the documentation: [Use the threat intelligence APIs in Microsoft Graph (preview)](https://learn.microsoft.com/graph/api/resources/security-threatintelligence-overview).
+Additionally, to further operationalize the threat intelligence you get from Microsoft, the Microsoft Defender Threat Intelligence Intel Profiles API provides the most up-to-date threat actor infrastructure visibility in the industry today, enabling threat intelligence and security operations (SecOps) teams to streamline their advanced threat hunting and analysis workflows. Learn more about this API in the documentation: [Use the threat intelligence APIs in Microsoft Graph (preview)](/graph/api/resources/security-threatintelligence-overview).
