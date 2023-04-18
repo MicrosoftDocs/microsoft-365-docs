@@ -28,13 +28,16 @@ ms.date: 4/18/2023
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In addition to [anti-spoofing protection](anti-phishing-protection-about.md#anti-phishing-protection-in-eop) that's also available in Exchange Online Protection (EOP), anti-phishing policies in Microsoft Defender for Office 365 offer _anti-impersonation protection_ to protect your organization from other types of phishing attacks. For more information about impersonation protection, see [Additional anti-phishing protection in Microsoft Defender for Office 365](anti-phishing-protection-about.md#additional-anti-phishing-protection-in-microsoft-defender-for-office-365).
+In organizations with Microsoft Defender for Office 365, anti-phishing policies provide the following types of protection:
 
-Admins can view, edit, and configure (but not delete) the default anti-phishing policy. For greater granularity, admins can also create custom anti-phishing policies that apply to specific users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (running order) of custom policies.
+- The same anti-spoofing protection that's available in Exchange Online Protection (EOP). For more information, see [Spoof settings](anti-phishing-policies-about.md#spoof-settings).
+- Anti-impersonation protection from other types of phishing attacks. For more information, see [Exclusive settings in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-You can configure anti-phishing policies in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+The default anti-phishing policy automatically applies to all recipients. For greater granularity, you can also create custom anti-phishing policies that apply to specific users, groups, or domains in your organization.
 
-For instructions for anti-phishing policies in organizations without Defender for Office 365, see [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md).
+You configure anti-phishing policies in the Microsoft 365 Defender portal or in Exchange Online PowerShell.
+
+For anti-phishing policy procedures in organizations without Defender for Office 365, see [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md).
 
 ## What do you need to know before you begin?
 
@@ -53,11 +56,9 @@ For instructions for anti-phishing policies in organizations without Defender fo
 
 - Allow up to 30 minutes for a new or updated policy to be applied.
 
-- For information about where anti-phishing policies are applied in the filtering pipeline, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+- For information about where anti-phishing policies are applied in the filtering stack, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
 ## Use the Microsoft 365 Defender portal to create anti-phishing policies
-
-Creating a custom anti-phishing policy in the Microsoft 365 Defender portal creates the anti-phish rule and the associated anti-phish policy at the same time using the same name for both.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
@@ -108,7 +109,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
    - **Impersonation**: These settings are conditions for the policy that identify specific senders to look for (individually or by domain) in the From address of inbound messages. For more information, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-     - **Enable users to protect**: This setting is not selected by default. To turn on user impersonation protection, select the check box, and then click the **Manage (nn) sender(s)** link. You identify the action for user impersonation detections on the next page.
+     - **Enable users to protect**: This setting isn't selected by default. To turn on user impersonation protection, select the check box, and then click the **Manage (nn) sender(s)** link. You identify the action for user impersonation detections on the next page.
 
        You identify the internal and external senders to protect by the combination of their display name and email address.
 
@@ -143,11 +144,11 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        > - `noreply@emeaemail.teams.microsoft.com`
        > - `no-reply@sharepointonline.com`
 
-     - **Enable domains to protect**: This setting is not selected by default. To turn on domain impersonation protection, select the check box, and then configure one or both of the following settings that appear. You identify the action for domain impersonation detections on the next page.
+     - **Enable domains to protect**: This setting isn't selected by default. To turn on domain impersonation protection, select the check box, and then configure one or both of the following settings that appear. You identify the action for domain impersonation detections on the next page.
 
-       - **Include the domains I own**: To turn this setting on, select the check box. To view the domains that you own, click **View my domains**.
+       - **Include the domains I own**: To turn on this setting, select the check box. To view the domains that you own, click **View my domains**.
 
-       - **Include custom domains**: To turn this setting on, select the check box, and then click the **Manage (nn) custom domain(s)** link. In the **Manage custom domains for impersonation protection** flyout that opens, do the following steps:
+       - **Include custom domains**: To turn on this setting, select the check box, and then click the **Manage (nn) custom domain(s)** link. In the **Manage custom domains for impersonation protection** flyout that opens, do the following steps:
 
        Click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add domains**.
 
@@ -260,8 +261,8 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
      - **Show user impersonation safety tip**: This setting is available only if you selected **Enable users to protect** on the previous page.
      - **Show domain impersonation safety tip**: This setting is available only if you selected **Enable domains to protect** on the previous page.
      - **Show user impersonation unusual characters safety tip** This setting is available only if you selected **Enable users to protect** or **Enable domains to protect** on the previous page.
-     - **Show (?) for unauthenticated senders for spoof**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Adds a question mark (?) to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-authentication-about.md#composite-authentication). This setting is selected by default.
-     - **Show "via" tag**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. This setting is selected by default.
+     - **Show (?) for unauthenticated senders for spoof**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Adds a question mark (?) to the sender's photo in the From box in Outlook if the message doesn't pass SPF or DKIM checks **and** the message doesn't pass DMARC or [composite authentication](email-authentication-about.md#composite-authentication). This setting is selected by default.
+     - **Show "via" tag**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Adds tag named via (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. This setting is selected by default.
 
      To turn on a setting, select the check box. To turn it off, clear the check box.
 
@@ -279,16 +280,22 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
 ## Use the Microsoft 365 Defender portal to view anti-phishing policy details
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. Or, to go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
+In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. Or, to go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
-2. On the **Anti-phishing** page, the following properties are displayed in the list of anti-phishing policies:
+On the **Anti-phishing** page, the following properties are displayed in the list of anti-phishing policies:
 
-   - **Name**
-   - **Status**
-   - **Priority**
-   - **Last modified**
+- **Name**
+- **Status**: Values are **On** (enabled or **Off** (disabled).
+- **Priority**: For more information, see the [Set the priority of custom anti-phishing policies](#set-the-priority-of-custom-anti-phishing-policies) section.
+- **Last modified**
 
-3. Select a policy by clicking anywhere other than the check box next to the name to open the details flyout for the policy
+To change the list of anti-phishing from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+
+Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the policies by **Time range** (creation date) or **Status**.
+
+Use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and a corresponding value to find specific anti-phishing policies.
+
+Select a policy by clicking anywhere other than the check box next to the name to open the details flyout for the policy. 
 
 > [!TIP]
 > To see details about other anti-phishing policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the flyout.
@@ -304,23 +311,27 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
      - **Disable selected policies**.
      - **Delete selected policies**.
 
-   - Select the policy from the list by clicking anywhere in the row other than the check box next to the name. The following actions are in the details flyout that opens:
-     - Modify policy settings (custom policies or the default policy)
+     :::image type="content" source="../../media/anti-phishing-policies-main-page.png" alt-text="The Ati-phishing page with a policy select and the More actions control expanded." lightbox="../../media/anti-phishing-policies-main-page.png":::
+
+   - Select the policy from the list by clicking anywhere in the row other than the check box next to the name. Some or all following actions are available in the details flyout that opens:
+     - Modify policy settings by clicking **Edit** in each section (custom policies or the default policy)
      - :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on** or :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn off** (custom policies only)
      - :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** (custom policies only)
      - :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** or :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** (custom policies only)
 
-The available actions are described in the following subsections.
+     :::image type="content" source="../../media/anti-phishing-policies-details-flyout.png" alt-text="The details flyout of a custom anti-phishing policy." lightbox="../../media/anti-phishing-policies-details-flyout.png":::
+
+The actions are described in the following subsections.
 
 ### Use the Microsoft 365 Defender portal to modify anti-phishing policies
 
 After you select the default anti-phishing policy or a custom policy by clicking anywhere other than the checkbox next to the name, the policy settings are shown in the details flyout that opens. Click **Edit** in each section to modify the settings within the section. For more information about the settings, see the [create anti-phishing policies](#use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies) section earlier in this article.
 
-For the anti-phishing policies named **Standard Preset Security Policy** and **Strict Preset Security Policy** that are associated with [preset security policies](preset-security-policies.md), you can't modify the policy settings in the details flyout. You can click :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View preset security policies** to go to the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies> to modify the available settings in the policies.
+For the anti-phishing policies named **Standard Preset Security Policy** and **Strict Preset Security Policy** that are associated with [preset security policies](preset-security-policies.md), you can't modify the policy settings in the details flyout. You can click :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View preset security policies** in the details flyout to go to the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies> to modify the preset security policies.
 
 ### Enable or disable custom anti-phishing policies
 
-You can't disable the default anti-phishing policy.
+You can't disable the default anti-phishing policy (it's always enabled).
 
 You can't enable or disable the anti-phishing policies that are associated with Standard and Strict preset security policies. You enable or disable the Standard or Strict preset security policies on the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies>.
 
@@ -350,11 +361,11 @@ Anti-phishing policies are processed in the order that they're displayed on the 
 
 Anti-phishing protection stops for a recipient after the first policy is applied. For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
-After you select the custom anti-phishing policy by clicking anywhere other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens _if_ you have multiple custom policies:
+After you select the custom anti-phishing policy by clicking anywhere other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
 
 - The custom policy with the **Priority** value **0** on the **Anti-Phishing** page has the :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** action at the top of the details flyout.
 - The custom policy with the lowest **Priority** value (for example, **3**) has the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** action at the top of the details flyout.
-- If you have three or more policies, the policies between the highest and lowest priority values have both the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** and the :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** actions at the top of details the flyout.
+- If you have three or more policies, the policies between the highest and lowest priority values have both the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** and the :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** actions at the top of the details flyout.
 
 When you're finished in the policy details flyout, click **Close**.
 
@@ -362,12 +373,14 @@ Back on the **Anti-phishing** page, the order of the policy in the list matches 
 
 ### Use the Microsoft 365 Defender portal to delete custom anti-phishing policies
 
-You can't remove the default anti-phishing policy or or the anti-phishing policies named **Standard Preset Security Policy** and **Strict Preset Security Policy** that are associated with [preset security policies](preset-security-policies.md).
+You can't remove the default anti-phishing policy or the anti-phishing policies named **Standard Preset Security Policy** and **Strict Preset Security Policy** that are associated with [preset security policies](preset-security-policies.md).
 
 After you select the custom anti-phishing policy, use either of the following methods to remove it:
 
 - **On the Anti-phishing page**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> **Delete selected policies**.
 - **In the details flyout of the policy**: Click :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** at the top of the flyout.
+
+On the **Anti-phishing** page, the deleted policy is no longer listed.
 
 ## Use Exchange Online PowerShell to configure anti-phishing policies
 
@@ -378,9 +391,9 @@ In PowerShell, the basic elements of an anti-phishing policy are:
 
 The difference between these two elements isn't obvious when you manage anti-phishing policies in the Microsoft 365 Defender portal:
 
-- When you create a policy, you're actually creating an anti-phish rule and the associated anti-phish policy at the same time using the same name for both.
-- When you modify a policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the anti-phish rule. All other settings modify the associated anti-phish policy.
-- When you remove a policy, the anti-phish rule and the associated anti-phish policy are removed.
+- When you create a policy in the Defender portal, you're actually creating an anti-phish rule and the associated anti-phish policy at the same time using the same name for both.
+- When you modify a policy in the Defender portal, settings related to the name, priority, enabled or disabled, and recipient filters modify the anti-phish rule. All other settings modify the associated anti-phish policy.
+- When you remove a policy in the Defender portal, the anti-phish rule and the associated anti-phish policy are removed at the same time.
 
 In Exchange Online PowerShell, the difference between anti-phish policies and anti-phish rules is apparent. You manage anti-phish policies by using the **\*-AntiPhishPolicy** cmdlets, and you manage anti-phish rules by using the **\*-AntiPhishRule** cmdlets.
 
@@ -582,7 +595,6 @@ Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 **Notes**:
 
 - To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-AntiPhishRule** cmdlet instead.
-
 - The default anti-phish policy doesn't have a corresponding anti-phish rule, and it always has the unmodifiable priority value **Lowest**.
 
 ### Use PowerShell to remove anti-phish policies
