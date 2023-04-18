@@ -140,6 +140,7 @@ DeviceEvents
 
 ```kusto
 DeviceEvents
+| where Timestamp > ago(3h) // troubleshooting mode automatically disables after 3 hours (https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode)
 | where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
