@@ -73,7 +73,7 @@ eDiscovery (Standard) requires the following Enterprise apps to be enabled in yo
 | ComplianceWorkbenchApp | 92876b03-76a3-4da8-ad6a-0511ffdf8647 |
 | MicrosoftPurviewEDiscovery | b26e684c-5068-4120-a679-64a5d2c909d9 |
 | Microsoft Exchange Online Protection | cc4751ec-86d0-4cd0-9295-fa1c55829d80 |
-| Office365Zoom | 0d38933a-0bbd-41ca-9ebd-28c4b5ba7cb7 |
+| Office365Zoom | 00000007-0000-0ff1-ce00-000000000000 |
 
 For more information about how to view and enable apps, see:
 
