@@ -92,7 +92,7 @@ target|String| A comma separated list of targets to scan, either IP addresses or
 intervalInHours|Int|The interval at which the scan runs.  **Required**.
 targetType|String|The target type in the target field. Possible types are "IP Address" or "Hostname". Default value is IP Address. **Required**.
 scannerAgent|Object|machine Id, machine name.  **Required**.
-scanAuthenticationParams|object|Set of parameters: @odata.type, type, username, domain, isGmsaUser. Possible @odata.type are "WindowsAuthParams", "SnmpAuthParams". Possible types are "Kerberos", "Negotiate" **Required**.
+scanAuthenticationParams|Object|Set of parameters: @odata.type, type, username, domain, isGmsaUser. Possible @odata.type are "WindowsAuthParams", "SnmpAuthParams". Possible types are "Kerberos", "Negotiate" **Required**.
 
 ## Response
 
