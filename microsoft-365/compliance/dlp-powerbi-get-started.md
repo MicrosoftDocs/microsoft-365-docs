@@ -32,12 +32,12 @@ To help organizations detect and protect their sensitive data, [Microsoft Purvie
 ## Considerations and limitations
 
 - DLP policies apply to workspaces. Only workspaces hosted in Premium Gen2 capacities are supported. For more information, see [What is Power BI Premium Gen2?](/power-bi/enterprise/service-premium-gen2-what-is).
-- DLP dataset evaluation workloads impact capacity. Metering for DLP evaluation workloads isn't supported.
+- DLP dataset evaluation workloads impact capacity. For more information, see [CPU metering for DLP policy evaluation](/power-bi/enterprise/service-security-dlp-policies-for-power-bi-overview.md#cpu-metering-for-dlp-policy-evaluation)
 - Both classic and new experience workspaces are supported, as long as they're hosted in Premium Gen2 capacities.
 - You must create a custom DLP custom policy for Power BI. DLP templates aren't supported.
 - DLP policies that are applied to the DLP location support sensitivity labels and sensitive information types as conditions. 
 - DLP policies for Power BI aren't supported for sample datasets, [streaming datasets](/power-bi/connect-data/service-real-time-streaming), or datasets that connect to their data source via [DirectQuery](/power-bi/connect-data/desktop-use-directquery) or [live connection](/power-bi/connect-data/desktop-directquery-about#live-connections).
-- DLP policies for Power BI aren't supported in sovereign clouds.
+
 
 ## Licensing and permissions
 
@@ -56,7 +56,7 @@ Data from DLP for Power BI can be viewed in [Activity explorer](/microsoft-365/c
 
 ## How DLP policies for Power BI work
 
-You define a DLP policy in the data loss prevention section of the compliance portal. See, [Design a data loss prevention policy](dlp-policy-design.md#design-a-data-loss-prevention-policy). In the policy, you specify sensitivity label(s) you want to detect. You also specify the action(s) that will happen when the policy detects a dataset that has a specified sensitivity label applied. DLP policies support two actions for Power BI:
+You define a DLP policy in the data loss prevention section of the compliance portal. See, [Design a data loss prevention policy](dlp-policy-design.md#design-a-data-loss-prevention-policy). In the policy, you specify the sensitivity label(s) and/or sensitive information types that you want to detect. You also specify the action(s) that will happen when the policy detects a dataset that has a specified sensitivity label applied. DLP policies support two actions for Power BI:
 
 - User notification via policy tips.
 - Alerts. Alerts can be sent by email to administrators and users. Additionally, administrators can monitor and manage alerts on the **Alerts** tab in the compliance portal. 
