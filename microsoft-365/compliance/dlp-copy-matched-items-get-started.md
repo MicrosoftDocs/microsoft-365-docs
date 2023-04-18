@@ -202,7 +202,7 @@ Configure your policy using these settings
 
 1. Sign in to the **Microsoft Azure** portal.
 
-1. In the Azure portal \> **Home** \> **Storage accounts** \> *<container>* \> **Storage browser** \> *<blobname>*.
+1. In the Azure portal \> **Home** \> **Storage accounts** \> *\<container\>* \> **Storage browser** \> *\<blobname\>*.
 
 1. Open the blob and find the hashed value that you copied from step 6 above.
 
