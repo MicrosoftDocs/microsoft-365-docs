@@ -54,7 +54,7 @@ Download the following files.
 > [!NOTE]
 > To download the files:
 > 1. Right-click the link and select **Save link as...**. 
-> 2. Chose a folder and save the file.
+> 2. Choose a folder and save the file.
 
 |File     | Description    |
 |---------|---------|
