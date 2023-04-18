@@ -368,19 +368,19 @@ This sample DLP policy is scoped to all users in your organization. Scope your D
 |-NotifyOverrideRequirements	"WithAcknowledgement" enables the new acknowledgement option. This is optional.|
 |
 
-To configure a new DLP rule to generate a warn popup using trusted domains run this PowerShell code.
+To configure a new DLP rule to generate a *warn* popup using trusted domains run this PowerShell code.
 
 ```powershell
 PS C:\> New-DlpComplianceRule -Name <DLP Rule Name> -Policy <DLP Policy Name> -NotifyUser Owner -NotifyPolicyTipDisplayOption "Dialog" -ContentContainsSensitiveInformation @(@{operator = "And"; groups = @(@{operator="Or";name="Default";labels=@(@{name=<Label GUID>;type="Sensitivity"})})}) -ExceptIfRecipientDomainIs @("contoso.com","microsoft.com")
 ```
 
-To configure a new DLP rule to generate a justify popup using trusted domains run this PowerShell code.
+To configure a new DLP rule to generate a *justify* popup using trusted domains run this PowerShell code.
 
 ```powershell
 PS C:\> New-DlpComplianceRule -Name <DLP Rule Name> -Policy <DLP Policy Name> -NotifyUser Owner -NotifyPolicyTipDisplayOption "Dialog" -BlockAccess $true -ContentContainsSensitiveInformation @(@{operator = "And"; groups = @(@{operator = "Or"; name = "Default"; labels = @(@{name=<Label GUID 1>;type="Sensitivity"},@{name=<Label GUID 2>;type="Sensitivity"})})}) -ExceptIfRecipientDomainIs @("contoso.com","microsoft.com") -NotifyAllowOverride "WithJustification"
 ```
 
-To configure a new DLP rule to generat a block popup using trusted domains run this PowerShell code.
+To configure a new DLP rule to generat a *block* popup using trusted domains run this PowerShell code.
 
 ```powershell
 PS C:\> New-DlpComplianceRule -Name <DLP Rule Name> -Policy <DLP Policy Name> -NotifyUser Owner -NotifyPolicyTipDisplayOption "Dialog" -BlockAccess $true -ContentContainsSensitiveInformation @(@{operator = "And"; groups = @(@{operator = "Or"; name = "Default"; labels = @(@{name=<Label GUID 1>;type="Sensitivity"},@{name=<Label GUID 2>;type="Sensitivity"})})}) -ExceptIfRecipientDomainIs @("contoso.com","microsoft.com")
