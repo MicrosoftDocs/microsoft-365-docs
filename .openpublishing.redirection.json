@@ -10839,6 +10839,16 @@
     "source_path": "microsoft-365/security/defender-endpoint/why-cloud-protection-should-be-on-mdav.md",
     "redirect_url": "/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/syntex/syntex-copilot.md",
+    "redirect_url": "/microsoft-365/syntex/",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/mde-p1-maintenance-operations.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/manage-mde-post-migration",
+    "redirect_document_id": false
   }
  ]
 }

@@ -21,7 +21,7 @@ ms.custom:
 description: Admins can learn about quarantine in Exchange Online Protection (EOP) that holds potentially dangerous or unwanted messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/7/2023
+ms.date: 4/12/2023
 ---
 
 # Quarantined email messages in EOP and Defender for Office 365
@@ -59,7 +59,7 @@ The default quarantine policies that are assigned to protection feature verdicts
 Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users, and also turn on quarantine notifications. For more information, see [Create quarantine policies](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
 > [!NOTE]
-> Users can't release their own messages that were quarantined as malware by anti-malware or Safe Attachments policies, or as high confidence phishing by anti-spam policies, regardless of how the quarantine policy is configured. At best, admins can create and configure a quarantine policy so users can view and _request_ the release of their quarantined malware or high confidence phishing messages, although we typically don't recommend it.
+> Users can't release their own messages that were quarantined as malware by anti-malware or Safe Attachments policies, or as high confidence phishing by anti-spam policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware or high-confidence phishing messages.
 
 Both users and admins can work with quarantined messages:
 
