@@ -1,16 +1,12 @@
 ---
 title: Performance analyzer for Microsoft Defender Antivirus
 description: Describes the procedure to tune the performance of Microsoft Defender Antivirus.
-keywords: Microsoft Defender performance analyzer, defender performance analyzer, Get-MpPerformanceRepor, New-MpPerformanceRecording, windows defender, microsoft defender, microsoft windows 10, microsoft defender antivirus, micro soft windows 11, windows antivirus, microsoft antivirus, windows defender antivirus, Windows 10 antivirus, microsoft windows defender, performance windows, ms defender, microsoft scan, windows performance
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 01/11/2023
+ms.date: 04/18/2023
 manager: dansimp
 ms.collection: 
 - m365-security
