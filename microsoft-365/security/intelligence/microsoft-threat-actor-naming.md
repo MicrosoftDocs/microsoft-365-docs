@@ -74,6 +74,7 @@ Use the following reference table below to understand how our previously publicl
 |HOLMIUM|Peach Sandstorm|Iran|APT33, Refined Kitten|
 |IRIDIUM|Seashell Blizzard|Russia|Sandworm|
 |KNOTWEED|Denim Tsunami|Private sector offensive actor|DSIRF|
+|KRYPTON|Secret Blizzard|Russia|Venomous Bear, Turla, Snake|
 |LAWRENCIUM|Pearl Sleet|North Korea||
 |MANGANESE|Mulberry Typhoon|China|APT5, Keyhole Panda, TABCTENG|
 |MERCURY|Mango Sandstorm|Iran|MuddyWater, SeedWorm, Static Kitten, TEMP.Zagros|
@@ -89,7 +90,9 @@ Use the following reference table below to understand how our previously publicl
 |SEABORGIUM|Star Blizzard|Russia|Callisto, Reuse Team|
 |SILICON|Marbled Dust|Turkey|Sea Turtle|
 |SOURGUM|Caramel Tsunami|Private sector offensive actor|Candiru|
+|SPURR|Tomato Tempest|Financially motivated|Vatet|
 |STRONTIUM|Forest Blizzard|Russia|APT28, Fancy Bear|
+|TAAL|Camouflage Tempest|Financially motivated|FIN6, Skeleton Spider|
 |THALLIUM|Emerald Sleet|North Korea|Kimsuky, Velvet Chollima|
 |ZINC|Diamond Sleet|North Korea|Labyrinth Chollima, Lazarus|
 |ZIRCONIUM|Violet Typhoon|China|APT31|
@@ -98,6 +101,7 @@ Use the following reference table below to understand how our previously publicl
 |---|:---:|:---:|:---:|
 |DEV-0146|Pumpkin Sandstorm|Iran|ZeroCleare|
 |DEV-0193|Periwinkle Tempest|Financially motivated|Wizard Spider, UNC2053|
+|DEV-0196|Carmine Tsunami|Private sector offensive actor|QuaDream|
 |DEV-0198 (NEPTUNIUM)|Cotton Sandstorm|Iran|Vice Leaker|
 |DEV-0206|Mustard Tempest|Financially motivated|Purple Vallhund|
 |DEV-0215 (LAWRENCIUM)|Pearl Sleet|North Korea||
@@ -105,6 +109,7 @@ Use the following reference table below to understand how our previously publicl
 |DEV-0228|Cuboid Sandstorm|Iran||
 |DEV-0234|Lilac Typhoon|China||
 |DEV-0237|Pistachio Tempest|Financially motivated|FIN12|
+|DEV-0243|Manatee Tempest|Financially motivated|EvilCorp, UNC2165, Indrik Spider|
 |DEV-0257|Storm-0257|Group in development|UNC1151|
 |DEV-0322|Circle Typhoon|China||
 |DEV-0336|Night Tsunami|Private sector offensive actor|NSO Group|
