@@ -41,13 +41,13 @@ This article is for people who set password expiration policy for a business, sc
 
 You must be a [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
-A global admin for a Microsoft cloud service can use the [Microsoft Graph Powershell](powershell/microsoftgraph/overview?view=graph-powershell-1.0) to set passwords not to expire for specific users, remove the never-expire configuration or see which users' passwords are set to never expire.
+A global admin for a Microsoft cloud service can use the [Microsoft Graph Powershell](/powershell/microsoftgraph/overview) to set passwords not to expire for specific users, remove the never-expire configuration or see which users' passwords are set to never expire.
 
 This guide applies to other providers, such as Intune and Microsoft 365, which also rely on Azure AD for identity and directory services. Password expiration is the only part of the policy that can be changed.
 
 ## How to check the expiration policy for a password
 
-For more information about the Get-MgUser command in the AzureAD module, see the reference article [Get-MgUser](powershell/module/microsoft.graph.users/get-mguser).
+For more information about the Get-MgUser command in the AzureAD module, see the reference article [Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser).
 
 Run one of the following commands:
 
