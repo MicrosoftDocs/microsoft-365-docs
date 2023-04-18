@@ -134,6 +134,7 @@ Assign these permissions to the Azure blob for the users role.
 ##### User data actions
 
 |Object|Permissions|
+|---------|---------|
 |Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Read : Read Blob|
 |Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Write : Write Blob|
 |Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Other : Add blob content|
@@ -200,9 +201,9 @@ Configure your policy using these settings
 :::image type="content" source="../media/dlp-guid-access-copy-saved-item.png" alt-text="Screen shot of a browser address bar with the hashed portion of the URL called out in a red box.":::
 
 1. Sign in to the **Microsoft Azure** portal.
-1. 
-1. In the Azure portal \> **Home** \> **Storage accounts** \> *<evidence container>* \> **Storage browser** \> *<blob>*.
-1. 
+
+1. In the Azure portal \> **Home** \> **Storage accounts** \> *<container>* \> **Storage browser** \> *<blobname>*.
+
 1. Open the blob and find the hashed value that you copied from step 6 above.
-1. 
+
 1. Download the file and open it with the appropriate app for the file type.
