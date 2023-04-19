@@ -213,9 +213,9 @@ For standard retention labels (they don't mark items as a [record or regulatory 
 
 - Admins and end users can manually change or remove an existing retention label that's applied on content.
 
-- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with three possible exceptions:
+- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with the following exceptions:
 
- - The existing label is configured to automatically apply a different retention label at the end of the retention period.
+ - The existing label is configured to automatically apply a different retention label at the end of the retention period, or [at the end of the retention period you run a Power Automate flow](retention-label-flow.md) with the compliance action of **Relabel an item at the end of retention**.
     
  - You use the Power Automate compliance action of **Apply a retention label on the item**. If the item already has a retention label applied, it will be replaced.
    
