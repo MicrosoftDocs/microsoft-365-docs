@@ -388,6 +388,32 @@ Click **Yes** in the warning dialog that opens.
 
 On the **Anti-phishing** page, the deleted policy is no longer listed.
 
+## DMARC = OReject for phishing emails
+
+DMARC is an important tool for domain owners to protect their email from malicious actors. Microsoft has recently implemented a policy of **DMARC = OReject**, which sends rejected emails to *quarantine in enterprise* and the *Junk folder in consumer*.
+
+To address customer needs for more control over DMARC policies, three new properties were added to the AntiPhishPolicy. These three policies will allow tenants to choose to honour the sender's DMARC policy, and set the DMARC reject, and the DMARC quarantine actions. All three properties can also be set by command line as well as in the user interface.
+
+HonorDmarcPolicy:  
+Boolean
+Values: False (default), true
+
+When the `DmarcRejectAction` and `DmarcQuarantineAction` settings are enabled, emails detected as spoofs will be rejected or moved to the junk folder depending on the sender's DMARC policy. If these settings are disabled, the existing spoof action will be followed.
+
+DmarcRejectAction
+Enum
+Values: Quarantine (default), Reject
+
+When 'HonorDmarcPolicy' is set to 'True', emails that fail DMARC and have a sender's DMARC policy of 'p=reject', will be rejected.
+
+DmarcQuarantineAction
+Enum
+Values: Quarantine (default), MoveToJmf
+
+When 'HonorDmarcPolicy' is set to 'True', if an email fails DMARC and the sender's DMARC policy is 'p=quarantine', the quarantine action will be taken and the mail moved to Junk.
+
+To address customer requests for more control over DMARC policies, Microsoft has added three new properties to the AntiPhishPolicy, that will allow tenants to choose to honour sender's DMARC policy, and set the DMARC reject, and the DMARC quarantine action. These properties can be set via command line or user interface.
+
 ## Use Exchange Online PowerShell to configure anti-phishing policies
 
 In PowerShell, the basic elements of an anti-phishing policy are:
