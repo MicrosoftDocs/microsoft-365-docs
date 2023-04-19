@@ -21,7 +21,7 @@ description: How to implement this preview of optical character recognition (OCR
 
 # Learn about optical character recognition in Microsoft Purview (preview)
 
-Optical character recognition (OCR) scanning enables Microsoft Purview to scan content in images for sensitive information. An optional feature, OCR scanning is first enabled at the tenant level. Once enabled, you select the locations where you want to scan images. Image scanning is available for Exchange, SharePoint, OneDrive, Teams, and Windows devices. Once the OCR settings are configured, your existing policies for data loss prevention (DLP), records management, and insider risk management (IRM) are applied to images as well as text-based content. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview scans for credit card numbers in both text and images at all of the chosen locations.
+Optical character recognition (OCR) scanning enables Microsoft Purview to scan content in images for sensitive information. An optional feature, OCR scanning is first enabled at the tenant level. Once enabled, you select the locations where you want to scan images. Image scanning is available for Exchange, SharePoint, OneDrive, Teams, and Windows devices. Once the OCR settings are configured, your existing policies for data loss prevention (DLP), records management, and insider risk management (IRM) are applied to images and text-based content. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview scans for credit card numbers in both text and images at all of the chosen locations.
 
 > [!IMPORTANT]
 > By default, Exchange and Teams can be configured for  OCR. To enable OCR for SharePoint, OneDrive, and Devices, **[sign up here]( https://forms.office.com/r/vudjYnaUM6)**.
@@ -44,16 +44,16 @@ To use OCR scanning, your organization's Global admin needs to verify that an Az
 
 When you enable OCR, all sensitive information types and trainable classifiers can detect characters that are in images.
 
-Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/syntex/syntex-azure-billing.md) to add a subscription for OCR.
+Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/microsoft-365/syntex/syntex-azure-billing) to add a subscription for OCR.
 
 > [!NOTE]
 > When you go to the Microsoft Syntex billing page to sign up for your OCR subscription, you do **not** need to also sign up for Microsoft Syntex.
 >
-> You can find OCR pay-as-you-go pricing information on the [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/syntex/syntex-azure-billing.md) page.
+> You can find OCR pay-as-you-go pricing information on the [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/microsoft-365/syntex/syntex-azure-billing) page.
 
 #### Charges ####
 
-The charge for using OCR is $1.00 for each 1,000 items scanned. Each image scanned counts as one transaction. This means that stand-alone images (JPEG, JPG, PNG. BMP, or TIFF) each count as a single transaction. It also means that *each page* in a PDF file is charged separately. For example, if there are 10 pages in a PDF file, an OCR san of the PDF file counts as 10 separate scans.
+The charge for using OCR is $1.00 for every 1,000 items scanned. Each image scanned counts as one transaction. This means that stand-alone images (JPEG, JPG, PNG, BMP, or TIFF) each count as a single transaction. It also means that *each page* in a PDF file is charged separately. For example, if there are 10 pages in a PDF file, an OCR scan of the PDF file counts as 10 separate scans.
 
 To view your bill, follow the instructions described in [Monitor your Microsoft Syntex pay-as-you-go usage](/microsoft-365/syntex/syntex-azure-billing#monitor-your-microsoft-syntex-pay-as-you-go-usage).
 
@@ -65,7 +65,7 @@ When you first start using OCR, limit usage to just a few people and applicable 
 
 1. In the Microsoft Purview compliance portal, go to **Settings**.
 2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
-3. Select the locations where you wish to scan images. Then, for each location and solution, define the scope (users/groups/sites) for the OCR. Supported locations and solutions are listed below.
+3. Select the locations where you wish to scan images. Then, for each location and solution, define the scope (users/groups/sites) for the OCR. Supported locations and solutions are listed in the following table.
 
 > [!NOTE]
 > For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
@@ -79,7 +79,7 @@ When you first start using OCR, limit usage to just a few people and applicable 
 | Devices | Data loss prevention <br> <br> Insider risk management<sup>3</sup> |
 
 <sup>1</sup> Supports outgoing emails only.<br>
-<sup>2</sup> Supports keywords as well as sensitive information types.<br>
+<sup>2</sup> Supports keywords and sensitive information types.<br>
 <sup>3</sup> Considers sensitive information types and trainable classifiers present in images for risk scoring.<br>
 
 <br>
@@ -107,11 +107,11 @@ This functionality supports scanning images in the following file types, with th
 <br>
 
 ## What languages are supported?
-OCR scanning supports more than [150 languages](/azure.microsoft.com/cognitive-services/computer-vision/language-support).
+OCR scanning supports more than [150 languages](https://azure.microsoft.com/cognitive-services/computer-vision/language-support).
 
 ## Summary
 - You can subscribe to OCR scanning without subscribing to Microsoft Syntex.
-- Configuring OCR occurs at the tenant level, so once OCR are configured, they're available to the entire Microsoft Purview stack.
+- Configuring OCR occurs at the tenant level, so once OCR is configured, they're available to the entire Microsoft Purview stack.
 - You don't need to create separate data classifiers for OCR. Once OCR is configured, existing [sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types), [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types), [trainable classifiers](classifier-learn-about.md#learn-about-trainable-classifiers), and [fingerprint SITs](document-fingerprinting.md#document-fingerprinting) scan images as well as documents and emails.
 
 ## See also
