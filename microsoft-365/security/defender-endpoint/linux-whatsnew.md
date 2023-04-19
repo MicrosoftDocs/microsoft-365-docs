@@ -49,6 +49,7 @@ This article is updated frequently to let you know what's new in the latest rele
 	- Handle failure in reload of auditd configuration.
 	- Handling for empty auditd rule files during MDE install.
 	- Engine Update to 1.1.20000.2 and Signatures Ver: 1.381.3067.0.
+	- Addressed a health issue in mdatp which occur due to selinux denials.
 	- Bug fixes.
 	
 **Known issues**
