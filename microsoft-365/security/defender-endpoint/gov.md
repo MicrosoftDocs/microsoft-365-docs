@@ -10,8 +10,9 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
+ms.reviewer: jesquive
 ms.localizationpriority: medium
-ms.date: 10/12/2022
+ms.date: 04/19/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
