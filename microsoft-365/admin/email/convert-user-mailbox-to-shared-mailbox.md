@@ -100,7 +100,7 @@ After deleting a user account, follow these steps to convert their old mailbox t
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
-2. Select **Recipients** \> **Shared**.
+2. Select **Recipients** \> **Mailboxes**.
 
 3. Select the shared mailbox. Under **Convert to Regular Mailbox**, select **Convert**.
 
