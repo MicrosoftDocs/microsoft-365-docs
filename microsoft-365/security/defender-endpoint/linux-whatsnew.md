@@ -31,12 +31,12 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
-	<summary> April-2023 (Build: 101.98.40 | Release version: 30.123022.19840.0)</summary>
+	<summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0)</summary>
 
-&ensp;Released: **April , 08,2023**<br/>
-&ensp;Published: **April 08, 2023**<br/>
-&ensp;Build: **101.98.40**<br/>
-&ensp;Release version: **30.123022.19840.0**<br/>
+&ensp;Released: **April 19,2023**<br/>
+&ensp;Published: **April 19, 2023**<br/>
+&ensp;Build: **101.98.58**<br/>
+&ensp;Release version: **30.123022.19858.0**<br/>
 &ensp;Engine version: **1.1.20000.2**<br/>
 &ensp;Signature version: **1.381.3067.0**<br/>
 
@@ -45,9 +45,9 @@ This article is updated frequently to let you know what's new in the latest rele
 - There are multiple fixes and new changes in this release 
 	- Logging and error reporting improvements for auditd.
 	- Handle failure in reload of auditd configuration.
-	- Handling for empty auditd rule file during MDE install.
+	- Handling for empty auditd rule files during MDE install.
 	- Engine Update to 1.1.20000.2 and Signatures Ver: 1.381.3067.0.
-	- Other fixes
+	- Bug fixes.
 	
 **Known issues**
 
