@@ -8,6 +8,8 @@
          href: microsoft-defender-for-office-365-product-overview.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
+       - name: Zero Trust for Defender for Office 365
+         href: zero-trust-with-microsoft-365-defender-office-365.md
    - name: Get started
      items:
      - name: Defender for Office 365
@@ -78,6 +80,8 @@
          href: mdo-sec-ops-guide.md
        - name: Configure your tenant for increased security
          href: tenant-wide-setup-for-increased-security.md
+       - name: Support for Microsoft Teams
+         href: mdo-support-teams-about.md
        - name: Security recommendations for priority accounts
          href: priority-accounts-security-recommendations.md
        - name: Anti-malware protection
@@ -218,8 +222,6 @@
            href: attack-simulation-training-get-started.md
          - name: Simulate a phishing attack with Attack simulation training
            href: attack-simulation-training-simulations.md
-         - name: Payloads in Attack simulation training
-           href: attack-simulation-training-payloads.md
          - name: Simulation automations in Attack simulation training
            href: attack-simulation-training-simulation-automations.md
          - name: Payload automations in Attack simulation training
@@ -228,14 +230,22 @@
            href: attack-simulation-training-end-user-notifications.md
          - name: Login pages in Attack simulation training
            href: attack-simulation-training-login-pages.md
-         - name: Insights and reporting in Attack simulation training
-           href: attack-simulation-training-insights.md
-         - name: Attack simulation training deployment considerations and FAQ
-           href: attack-simulation-training-faq.md
+         - name: Payloads in Attack simulation training
+           href: attack-simulation-training-payloads.md
+         - name: Landing pages in Attack simulation training
+           href: attack-simulation-training-landing-pages.md
          - name: Training campaigns in Attack simulation training
            href: attack-simulation-training-training-campaigns.md
          - name: Training modules in Attack simulation training
            href: attack-simulation-training-training-modules.md
+         - name: Insights and reporting in Attack simulation training
+           href: attack-simulation-training-insights.md
+         - name: Global settings in Attack simulation training
+           href: attack-simulation-training-settings.md
+         - name: Attack simulation training deployment considerations and FAQ
+           href: attack-simulation-training-faq.md
+         - name: Microsoft Teams in Attack simulation training
+           href: attack-simulation-training-teams.md
        - name: Advanced delivery policies
          items:
          - name: Configure advanced delivery policies
@@ -247,9 +257,9 @@
          - name: Configure and review priority accounts
            href: priority-accounts-turn-on-priority-account-protection.md
        - name: Email entity page
-         items:
-         - name: The Email entity page
-           href: mdo-email-entity-page.md
+         href: mdo-email-entity-page.md
+       - name: Teams message entity panel
+         href: teams-message-entity-panel.md
        - name: Threat Trackers
          items:
          - name: Use Threat Trackers
@@ -284,6 +294,8 @@
              href: submissions-outlook-report-messages.md
            - name: User reported settings
              href: submissions-user-reported-messages-custom-mailbox.md
+           - name: User reported message settings in Teams
+             href: submissions-teams.md
            - name: Submit malware and non-malware to Microsoft
              href: submissions-submit-files-to-microsoft.md
            - name: Admin review for user reported messages

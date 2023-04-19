@@ -87,7 +87,7 @@ After you've verified that the reporting mailbox meets all of these requirements
   For more information about enabling or disabling access to Exchange Online PowerShell, see the following topics:
 
   - [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
-  - [Client Access Rules in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [Client Access Rules in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) ([until October 2023](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-client-access-rules-in-exchange-online/ba-p/3638563))
 
 ## Use the Microsoft 365 Defender portal to configure user reported settings
 
@@ -118,7 +118,7 @@ When the toggle is **On** :::image type="icon" source="../../media/scc-toggle-on
 
 - **Send the reported messages to** in the **Reported message destinations** section: Select one of the following options:
 
-  - **Microsoft only**: User reported messages go directly to Microsoft for analysis. Only metadata from the user reported messages (for example, senders, recipients, reported by, and message details) is available on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>.
+  - **Microsoft only**: User reported messages go directly to Microsoft for analysis. These reports are available on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>.
 
   - **My reporting mailbox only**: User reported messages go only to the specified reporting mailbox for an admin or the security operations team to analyze.
 

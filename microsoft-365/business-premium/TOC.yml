@@ -8,10 +8,6 @@
       href: m365bp-secure-users.md
     - name: Trial user guide - Microsoft 365 Business Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
-    - name: Get Microsoft 365 Business Premium
-      href: get-microsoft-365-business-premium.md
-    - name: Get Microsoft 365 for Campaigns
-      href: get-microsoft-365-campaigns.md
     - name: Resources for partners
       href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Fortify your environment
@@ -20,8 +16,12 @@
     items: 
       - name: Overview
         href: m365bp-setup-overview.md
+      - name: Get Microsoft 365 Business Premium
+        href: get-microsoft-365-business-premium.md
       - name: Set up Microsoft 365 Business Premium
         href: m365bp-setup.md
+      - name: Get Microsoft 365 for Campaigns
+        href: get-microsoft-365-campaigns.md
       - name: Set up Microsoft 365 Business for Campaigns
         href: m365-campaigns-setup.md
   - name: Boost your security protection
@@ -34,6 +34,8 @@
         href: m365bp-protect-admin-accounts.md
       - name: Protect against malware and other threats
         href: m365bp-increase-protection.md
+      - name: Secure managed and unmanaged devices
+        href: m365bp-managed-unmanaged-devices.md
 - name: Train your team
   items:
   - name: Set up unmanaged (BYOD) devices
@@ -78,8 +80,8 @@
         href: m365bp-onboard-devices-mdb.md
       - name: Use Windows Autopilot to set up or reset devices
         href: /mem/autopilot/windows-autopilot?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-      - name: Install Microsoft 365 Apps on devices
-        href: ../admin/setup/install-applications.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      - name: Manage Microsoft 365 installation options for devices
+        href: /DeployOffice/manage-software-download-settings-office-365?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
   - name: Monitor onboarded devices
     items: 
       - name: View device status
@@ -120,8 +122,6 @@
   items:
     - name: Top 10 ways to secure your business data
       href: secure-your-business-data.md
-    - name: Glossary of security terms
-      href: m365bp-glossary.yml
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 admin content

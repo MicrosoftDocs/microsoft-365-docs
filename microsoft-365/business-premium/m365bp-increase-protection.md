@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 01/23/2023
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -207,7 +207,6 @@ If your users are allowed to share their calendars, see [these instructions](htt
 
 Proceed to:
 
-- [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
+- [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md)
 - [Protect all email](m365bp-protect-email-overview.md)
 - [Collaborate and share securely](m365bp-collaborate-share-securely.md)
-- [Set up and secure managed devices](m365bp-protect-devices.md)
