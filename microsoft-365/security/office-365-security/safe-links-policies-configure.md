@@ -190,7 +190,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
    When you're finished, click **Next**.
 
-7. On the **Review** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
+7. On the **Review** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can select **Back** or the specific page in the wizard.
 
    When you're finished, click **Submit**.
 
