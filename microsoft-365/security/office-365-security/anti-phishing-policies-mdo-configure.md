@@ -288,7 +288,7 @@ On the **Anti-phishing** page, the following properties are displayed in the lis
 - **Status**: Values are:
   - **Always on** for the default anti-phishing policy.
   - **On** or **Off** for other anti-spam policies.
-- **Priority**: For more information, see the [Set the priority of custom anti-spam policies](#set-the-priority-of-custom-anti-spam-policies) section.
+- **Priority**: For more information, see the [Set the priority of custom anti-spam policies](#use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-anti-phishing-policies) section.
 To change the list of policies from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
 
 Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the policies by **Time range** (creation date) or **Status**.
@@ -325,7 +325,7 @@ Select a policy by clicking anywhere other than the check box next to the name t
 
 The actions are described in the following subsections.
 
-### Modify anti-phishing policies
+### Use the Microsoft 365 Defender portal to modify anti-phishing policies
 
 After you select the default anti-phishing policy or a custom policy by clicking anywhere other than the check box next to the name, the policy settings are shown in the details flyout that opens. Click **Edit** in each section to modify the settings within the section. For more information about the settings, see the [create anti-phishing policies](#use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies) section earlier in this article.
 
@@ -333,7 +333,7 @@ For the default policy, you can't modify the name of the policy, and there are n
 
 For the anti-phishing policies named **Standard Preset Security Policy** and **Strict Preset Security Policy** that are associated with [preset security policies](preset-security-policies.md), you can't modify the policy settings in the details flyout. You can click :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View preset security policies** in the details flyout to go to the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies> to modify the preset security policies.
 
-### Enable or disable custom anti-phishing policies
+### Use the Microsoft 365 Defender portal to enable or disable custom anti-phishing policies
 
 You can't disable the default anti-phishing policy (it's always enabled).
 
@@ -351,7 +351,7 @@ After you select a disabled custom anti-phishing policy (the **Status** value is
 
 On the **Anti-phishing** page, the **Status** value of the policy is now **On** or **Off**.
 
-### Set the priority of custom anti-phishing policies
+### Use the Microsoft 365 Defender portal to set the priority of custom anti-phishing policies
 
 Anti-phishing policies are processed in the order that they're displayed on the **Anti-phishing** page:
 
