@@ -157,9 +157,9 @@ Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" bor
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of policies to a CSV file.
 
-Use :::image type="icon" source="../../media/m365-cc-sc-view-reports-icon.png" border="false"::: **View reports** to open the [Threat protection status report].(reports-defender-for-office-365.md#threat-protection-status-report)
+Use :::image type="icon" source="../../media/m365-cc-sc-view-reports-icon.png" border="false"::: **View reports** to open the [Threat protection status report](reports-defender-for-office-365.md#threat-protection-status-report).
 
-Select a policy by clicking anywhere other than the check box next to the name to open the details flyout for the policy.
+Select a policy by clicking anywhere in the row other than the check box next to the name to open the details flyout for the policy.
 
 > [!TIP]
 > To see details about other Safe Attachments policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
@@ -189,13 +189,13 @@ The actions are described in the following subsections.
 
 ### Use the Microsoft 365 Defender portal to modify custom Safe Attachments policies
 
-After you select a custom Safe Links policy by clicking anywhere other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Create Safe Attachments policies](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies) section earlier in this article.
+After you select a custom Safe Attachments policy by clicking anywhere in the row other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Create Safe Attachments policies](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies) section earlier in this article.
 
 You can't modify the Safe Attachments policies named **Standard Preset Security Policy**, **Strict Preset Security Policy**, or **Built-in protection (Microsoft)** that are associated with [preset security policies](preset-security-policies.md) in the policy details flyout. Instead, you select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View preset security policies** in the details flyout to go to the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies> to modify the preset security policies.
 
 ### Use the Microsoft 365 Defender portal to enable or disable custom Safe Attachments policies
 
-You can't enable or disable the Safe Attachments policy named **Built-in protection (Microsoft)** that's associated with Built-in protection. You enable or disable Built-in protection on the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies>.
+You can't enable or disable the Safe Attachments policies named **Standard Preset Security Policy**, **Strict Preset Security Policy**, or **Built-in protection (Microsoft)** that are associated with [preset security policies](preset-security-policies.md) here. You enable or disable preset security policies on the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies>.
 
 After you select an enabled custom Safe Attachments policy (the **Status** value is **On**), use either of the following methods to disable it:
 
@@ -223,7 +223,7 @@ Safe Attachments policies are processed in the order that they're displayed on t
 
 Safe Attachments protection stops for a recipient after the first policy is applied. For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
-After you select the custom Safe Attachments policy by clicking anywhere other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
+After you select the custom Safe Attachments policy by clicking anywhere in the row other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
 
 - The custom policy with the **Priority** value **0** on the **Safe Attachments** page has the :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** action at the top of the details flyout.
 - The custom policy with the lowest priority (highest **Priority** value; for example, **3**) has the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** action at the top of the details flyout.
@@ -243,6 +243,8 @@ After you select the custom Safe Attachments policy, use either of the following
 - **In the details flyout of the policy**: Select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** at the top of the flyout.
 
 Select **Yes** in the warning dialog that opens.
+
+Back on the **Safe Attachments** page, the removed policy is no longer listed.
 
 ## Use Exchange Online PowerShell to configure Safe Attachments policies
 
