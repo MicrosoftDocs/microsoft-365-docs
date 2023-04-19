@@ -117,7 +117,7 @@ The following summary information is also shown on the card:
 
 :::image type="content" source="../../media/attack-sim-training-overview-behavior-impact-card.png" alt-text="The Behavior impact on compromise rate card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-overview-behavior-impact-card.png":::
 
-To see a more detailed report, click **View simulations and training efficacy report**. This report is explained [later in this article](#training-efficacy-tab-for-the-attack-simulation-report).
+To see a more detailed report, select **View simulations and training efficacy report**. This report is explained [later in this article](#training-efficacy-tab-for-the-attack-simulation-report).
 
 ### Attack simulation report
 
@@ -143,11 +143,11 @@ The details table below the chart shows the following information:
 
 You can sort the results by clicking on an available column header.
 
-Click **Customize columns** to remove the columns that are shown. When you're finished, click **Apply**.
+Select **Customize columns** to remove the columns that are shown. When you're finished, select **Apply**.
 
-Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by **Simulation name** or **Simulation Technique**. Wildcards aren't supported.
+Use :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to filter the results by **Simulation name** or **Simulation Technique**. Wildcards aren't supported.
 
-If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
+If you select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
 
 #### User coverage tab for the Attack simulation report
 
@@ -165,11 +165,11 @@ The details table below the chart shows the following information:
 - **Count of clicked**
 - **Count of compromised**
 
-You can sort the results by clicking on an available column header. Click **Customize columns** to remove the columns that are shown.
+You can sort the results by clicking on an available column header. Select **Customize columns** to remove the columns that are shown.
 
-Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
+Use :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
 
-If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
+If you select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
 
 #### Training completion tab for the Attack simulation report
 
@@ -188,15 +188,15 @@ The details table below the chart shows the following information:
 - **Date completed**
 - **All trainings**
 
-You can sort the results by clicking on an available column header. Click **Customize columns** to remove the columns that are shown.
+You can sort the results by clicking on an available column header. Select **Customize columns** to remove the columns that are shown.
 
-Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the chart and details table by the **Status** values of the trainings: **Completed**, **In progress**, or **All**.
+Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the chart and details table by the **Status** values of the trainings: **Completed**, **In progress**, or **All**.
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
+Use :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
 
-If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
+If you select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
 
 #### Repeat offenders tab for the Attack simulation report
 
@@ -222,20 +222,20 @@ The details table below the chart shows the following information:
 - **Simulation types**
 - **Simulations**
 
-You can sort the results by clicking on an available column header. Click **Customize columns** to remove the columns that are shown.
+You can sort the results by clicking on an available column header. Select **Customize columns** to remove the columns that are shown.
 
-Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the chart and details table by some or all of the simulation type values:
+Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the chart and details table by some or all of the simulation type values:
 
 - **Credential Harvest**
 - **Malware Attachment**
 - **Link in Attachment**
 - **Link to Malware**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by any of the column values. Wildcards aren't supported.
+Use :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to filter the results by any of the column values. Wildcards aren't supported.
 
-If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
+If you select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
 
 ## Simulation report in Attack simulation training
 
