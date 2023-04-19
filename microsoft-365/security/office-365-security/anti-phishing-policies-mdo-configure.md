@@ -420,6 +420,17 @@ In this example for a test policy *TestPolicy1* in tenant *o365e5test017.onmicro
 Get-AntiPhishPolicy -Organization o365e5test017.onmicrosoft.com -Identity TestPolicy1 | Set-AntiPhishPolicy -HonorDmarcPolicy $true -DmarcRejectAction Reject -DmarcQuarantineAction Quarantine
 ```
 
+| Honour DMARC | Spoof Intelligence |
+| ------------- | ------------------ |
+| ON            | ON                |
+| Separate actions for implicit (p=None/NA) versus explicit email authentication failures. Implicit failures use the *If the message is detected as spoof* action in anti-phishing policies, while explicit email authentication failures use the *p=reject* and *p=quarantine* actions specified in anti-phishing policies. |
+| OFF           | ON                |
+| One action is taken for implicit (p=None/NA) and explicit email authentication failures, which is the *If the message is detected as spoof* action. In other words, explicit email authentication failures ignore p=reject and p=quarantine and use the *If the message is detected as spoof* action instead. |
+| ON            | OFF               |
+| Explicit email authentication failures only, but p=reject and p=quarantine actions selectable in anti-phishing policies. |
+| OFF           | OFF               |
+| Explicit email authentication failures only, p=reject and p=quarantine in DMARC records used as actions. Failing emails are handled with **p=orjeect and p=oquaratine**. |
+
 ## Use Exchange Online PowerShell to configure anti-phishing policies
 
 In PowerShell, the basic elements of an anti-phishing policy are:
