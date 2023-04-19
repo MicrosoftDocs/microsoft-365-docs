@@ -653,7 +653,7 @@ To see simulations that have been excluded from reporting (the **Status** value 
 
 To view details about a simulation, use either of the following methods on the **Simulations** tab:
 
-- Select the simulation by clicking anywhere other than the check box next to the name.
+- Select the simulation by clicking anywhere in the row other than the check box next to the name.
 - Select the simulation by clicking **⋮** (**Actions**) at the end of the row, and then select :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png" border="false"::: **View report**.
 
 The title of the details page that opens shows the name of the simulation and other information (for example, the status, social engineering technique, and delivery status).
@@ -780,7 +780,7 @@ After you've included the excluded simulation, the **Status** value changes to *
 
 For simulations with the **Status** value **In progress** or **Completed**, you can view the report for the simulation by using either of the following methods on the **Simulations** tab:
 
-- Select the simulation by clicking anywhere other than the check box next to the name.
+- Select the simulation by clicking anywhere in the row other than the check box next to the name.
 - Select the simulation by clicking **⋮** (**Actions**) at the end of the row, and then select :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png" border="false"::: **View report**.
 
 The report page for the simulation opens and contains the following information:

@@ -229,7 +229,7 @@ After you select the quarantined message, the available actions are described in
 >
 >   :::image type="content" source="../../media/quarantine-message-main-page-mobile-actions.png" alt-text="Selecting a quarantined message and selecting More on a mobile device." lightbox="../../media/quarantine-message-main-page-mobile-actions.png":::
 >
-> - When you select the message by clicking anywhere other than the check box, description text isn't available on some of the action icons in the details flyout. But, the actions and their order is the same as on a PC:
+> - When you select the message by clicking anywhere in the row other than the check box, description text isn't available on some of the action icons in the details flyout. But, the actions and their order is the same as on a PC:
 >
 >   :::image type="content" source="../../media/quarantine-message-details-flyout-mobile-actions.png" alt-text="The details of a quarantined message with available actions being highlighted" lightbox="../../media/quarantine-message-details-flyout-mobile-actions.png":::
 
