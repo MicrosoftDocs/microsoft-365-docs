@@ -52,7 +52,7 @@ We’ll soon roll out a selection of data connectors built specifically for Comp
 
 ## Service subscriptions
 
-AWS - legal, AWS - marketing, etc. But do we talk about this in relation to MDC, or in relation to the service itslef? ARe these sub-units within a service, subscriptions within a service, or subscriptions as understood only in the context of MDC?
+*AWS - legal, AWS - marketing, etc. But do we talk about this in relation to MDC, or in relation to the service itslef? ARe these sub-units within a service, subscriptions within a service, or subscriptions as understood only in the context of MDC?*
 
 ## Supported regulations
 
