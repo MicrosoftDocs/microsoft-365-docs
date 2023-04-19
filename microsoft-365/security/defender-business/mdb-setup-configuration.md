@@ -23,10 +23,12 @@ ms.collection:
 
 # Set up and configure Microsoft Defender for Business
 
-You have can choose from several options to set up and configure Defender for Business:
+After you have signed up for Defender for Business, and you have added users and assigned licenses, you're ready to set up and configure Defender for Business. You have can choose from several options:
 
 - Use the setup wizard to grant access to your security team, set up email notifications for your security team, onboard your company's Windows devices, and apply default security settings to those devices; or 
-- Work through the setup process manually, step by step.
+- Work through the setup process manually, step by step, and complete all the setup steps yourself.
+
+Select a tab to learn more about each option.
 
 ## [**Setup wizard**](#tab/Wizard)
 
@@ -65,7 +67,6 @@ The setup wizard is designed to help you set up and configure Defender for Busin
    > [!NOTE]
    > If you're already using Intune to manage your devices and security policies, you can continue using it. See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
 
-
 ## What is automatic onboarding?
 
 Automatic onboarding is a simplified way to onboard Windows devices to Defender for Business. Automatic onboarding is only available for Windows devices that are already enrolled in Microsoft Intune. 
@@ -83,16 +84,6 @@ To onboard other devices, see [Onboard devices to Defender for Business](mdb-onb
 Using the setup wizard is optional. If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. 
 
 ## [**Manual setup**](#tab/Manual)
-
-
-
- provides a streamlined setup and configuration experience, designed especially for the small and medium-sized business. Use this article as a guide.
-
-> [!TIP]
-> If you used the [setup wizard](mdb-use-wizard.md), then you've already completed several steps of your basic setup process. In this case, you can:
-> - [Onboard more devices](mdb-onboard-devices.md)
-> - [Configure your security policies and settings](mdb-configure-security-settings.md)
-> - [Visit your Microsoft Defender Vulnerability Management dashboard](mdb-view-tvm-dashboard.md)
 
 ## The setup and configuration process
 
@@ -113,6 +104,8 @@ The following diagram depicts the overall setup and configuration process for De
 
 > [!IMPORTANT]
 > If you have Microsoft 365 Business Premium, you have additional capabilities to set up and configure. See [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md).
+
+--- 
 
 ## Next steps
 
