@@ -17,3 +17,5 @@ description: Learn how to set up and use Microsoft eSignature to send electronic
 ---
 
 # Overview of Microsoft eSignature in Microsoft Syntex (Preview)
+
+*This page is currently in development. It will include an overview of the feature and how to configure the feature in the admin center.*
