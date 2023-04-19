@@ -29,6 +29,7 @@ ms.date: 12/18/2020
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -383,7 +384,7 @@ To confirm that the configuration policy has been applied to your test device, f
 
 ### Confirm Attack Surface Reduction - Attack surface reduction rules
 
-1. Before applying the policy on a test device, pen a PowerShell Window and type `Get-MpPreference`.
+1. Before applying the policy on a test device, open a PowerShell Window and type `Get-MpPreference`.
 
 2. This should respond with the following lines with no content:
 

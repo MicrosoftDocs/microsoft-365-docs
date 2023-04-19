@@ -44,14 +44,14 @@ Before creating custom threat alerts, it's important to know the concepts behind
 Alert definitions are contextual attributes that can be used collectively to identify early clues on a possible cybersecurity attack. These indicators are typically a combination of activities, characteristics, and actions taken by an attacker to successfully achieve the objective of an attack. Monitoring these combinations of attributes is critical in gaining a vantage point against attacks and possibly interfering with the chain of events before an attacker's objective is reached.
 
 ## Indicators of compromise (IOC)
-IOCs are individually known malicious events that indicate that a network or device has already been breached. Unlike alert definitions, these indicators are considered as evidence of a breach. They are often seen after an attack has already been carried out and the objective has been reached, such as exfiltration. Keeping track of IOCs is also important during forensic investigations. Although it might not be able to intervene with an attack chain, gathering these indicators can be useful in creating better defenses for possible future attacks.
+IOCs are individually known malicious events that indicate that a network or device has already been breached. Unlike alert definitions, these indicators are considered as evidence of a breach. They're often seen after an attack has already been carried out and the objective has been reached, such as exfiltration. Keeping track of IOCs is also important during forensic investigations. Although it might not be able to intervene with an attack chain, gathering these indicators can be useful in creating better defenses for possible future attacks.
 
 ## Relationship between alert definitions and IOCs
 In the context of Microsoft 365 Defender and Microsoft Defender for Endpoint, alert definitions are containers for IOCs and defines the alert, including the metadata that is raised for a specific IOC match. Various metadata is provided as part of the alert definitions. Metadata such as alert definition name of attack, severity, and description is provided along with other options.
 
-Each IOC defines the concrete detection logic based on its type, value, and action, which determines how it is matched. It is bound to a specific alert definition that defines how a detection is displayed as an alert on the Microsoft 365 Defender console.
+Each IOC defines the concrete detection logic based on its type, value, and action, which determines how it's matched. It's bound to a specific alert definition that defines how a detection is displayed as an alert on the Microsoft 365 Defender console.
 
-Here is an example of an IOC:
+Here's an example of an IOC:
 - Type: Sha1
 - Value:  92cfceb39d57d914ed8b14d0e37643de0797ae56
 - Action: Equals
