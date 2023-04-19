@@ -19,7 +19,7 @@ ms.custom:
 description: Admins can learn how to configure connection filtering in Exchange Online Protection (EOP) to allow or block emails from email servers.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/19/23
+ms.date: 4/19/2023
 ---
 
 # Configure connection filtering
@@ -73,26 +73,26 @@ This article describes how to configure the default connection filter policy in 
 
 3. In the policy details flyout that opens, use the **Edit** links to modify the policy settings:
 
-   - **Description** section: Click **Edit description** to enter a description for the policy in the **Description** box of the **Edit name and description** flyout that opens. You can't modify the name of the policy.
+   - **Description** section: Select **Edit description** to enter a description for the policy in the **Description** box of the **Edit name and description** flyout that opens. You can't modify the name of the policy.
 
-     When you're finished in the **Edit name and description** flyout, click **Save**.
+     When you're finished in the **Edit name and description** flyout, select **Save**.
 
-   - **Connection filtering** section: Click **Edit connection filter policy**. In the flyout that opens, configure the following settings:
+   - **Connection filtering** section: Select **Edit connection filter policy**. In the flyout that opens, configure the following settings:
 
      - **Always allow messages from the following IP addresses or address range**: This setting is the IP Allow List. Click in the box, enter a value, and then press the ENTER key or select the complete value that's displayed below the box. Valid values are:
        - Single IP: For example, 192.168.1.1.
        - IP range: For example, 192.168.0.1-192.168.0.254.
        - CIDR IP: For example, 192.168.0.1/25. Valid subnet mask values are /24 through /32. To skip spam filtering for /1 to /23, see the [Skip spam filtering for a CIDR IP outside of the available range](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) section later in this article.
 
-       Repeat this step as many times as necessary. To remove an existing entry, click :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the entry.
+       Repeat this step as many times as necessary. To remove an existing entry, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the entry.
 
    - **Always block messages from the following IP addresses or address range**: This setting is the IP Block List. Enter a single IP, IP range, or CIDR IP in the box as previously described in the **Always allow messages from the following IP addresses or address range** setting.
 
-   - **Turn on safe list**: Enable or disable the use of the safe list to identify known, good senders that will skip spam filtering. To use the safe list, select the check box.
+   - **Turn on safe list**: Enable or disable the use of the safe list to identify known, good senders that skip spam filtering. To use the safe list, select the check box.
 
-   When you're finished in the flyout, click **Save**.
+   When you're finished in the flyout, select **Save**.
 
-4. Back on the policy details flyout, click **Close**.
+4. Back on the policy details flyout, select **Close**.
 
 ## Use the Microsoft 365 Defender portal to view the default connection filter policy
 
@@ -105,7 +105,7 @@ On the **Anti-spam policies** page, the following properties are displayed in th
 - **Priority**: The value is **Lowest** for the default connection filter policy.
 - **Type**: The value is blank for the default connection filter policy.
 
-To change the list of policies from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific policies.
 
@@ -164,7 +164,7 @@ The following sections identify additional items that you need to know about whe
 
 ### Skip spam filtering for a CIDR IP outside of the available range
 
-As described earlier in this article, you can only use a CIDR IP with the network mask /24 to /32 in the IP Allow List. To skip spam filtering on messages from source email servers in the /1 to /23 range, you need to use Exchange mail flow rules (also known as transport rules). But, we recommend that you don't use the mail flow rule method, because the messages will be blocked if an IP address in the /1 to /23 CIDR IP range appears on any of Microsoft's proprietary or third-party block lists.
+As described earlier in this article, you can only use a CIDR IP with the network mask /24 to /32 in the IP Allow List. To skip spam filtering on messages from source email servers in the /1 to /23 range, you need to use Exchange mail flow rules (also known as transport rules). But, we recommend that you don't use the mail flow rule method, because the messages are blocked if an IP address in the /1 to /23 CIDR IP range appears on any of Microsoft's proprietary or third-party block lists.
 
 Now that you're fully aware of the potential issues, you can create a mail flow rule with the following settings (at a minimum) to ensure that messages from these IP addresses skip spam filtering:
 
