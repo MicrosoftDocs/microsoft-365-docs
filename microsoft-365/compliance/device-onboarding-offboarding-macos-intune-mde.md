@@ -49,21 +49,21 @@ If Microsoft Defender for Endpoints (MDE) has already been deployed to your macO
 
 ### Prerequisites
 
-Download the following files.
+Download the following files:
+
+|File     | Description   |
+|---------|---------------|
+|[accessibility.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/accessibility.mobileconfig) |Used for accessibility |
+| [fulldisk.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)  | Used to grant full disk access (FDA). |
+
+[!INCLUDE [devices-macos-onboarding-tip](../includes/devices-macos-onboarding-tip.md)]
 
 > [!NOTE]
 > To download the files:
 > 1. Right-click the link and select **Save link as...**. 
 > 2. Choose a folder and save the file.
 
-|File     | Description    |
-|---------|---------|
-|[accessibility.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/accessibility.mobileconfig) |Used for accessibility |
-| [fulldisk.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)  | Used to grant full disk access (FDA). |
-
-[!INCLUDE [devices-macos-onboarding-tip](../includes/devices-macos-onboarding-tip.md)]
-
-### Create system configuration profiles 
+### Create system configuration profiles ###
 
 1. Open the **Microsoft Intune admin center** and navigate to **Devices** > **Configuration profiles**.
 
