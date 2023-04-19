@@ -196,7 +196,7 @@ On the **Safe Links** page, the following properties are displayed in the list o
 
 - **Name**
 - **Status**: Values are **On** or **Off**.
-- **Priority**: For more information, see the [Set the priority of Safe Links policies](#use-the-microsoft-365-defender-portal-to-set-the-priority-of-safe-links-policies) section.
+- **Priority**: For more information, see the [Set the priority of Safe Links policies](#use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-safe-links-policies) section.
 
 To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
 
