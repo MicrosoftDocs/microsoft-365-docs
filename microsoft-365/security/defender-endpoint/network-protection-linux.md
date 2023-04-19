@@ -47,7 +47,7 @@ Network protection helps reduce the attack surface of your devices from Internet
 - exploits
 - other malicious content on the Internet
 
-Network protection expands the scope of Microsoft Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
+Network protection expands the scope of Microsoft Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
 
 ## Web content filtering for Linux
 
@@ -221,3 +221,5 @@ Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender und
 - [Create indicators](manage-indicators.md)
 - [Web content filtering](web-content-filtering.md)
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+
+
