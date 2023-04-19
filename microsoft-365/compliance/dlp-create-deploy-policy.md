@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/17/2023
+ms.date: 04/19/2023
 audience: ITPro
 ms.topic: how-to
 f1_keywords:
@@ -99,7 +99,7 @@ There are so many configuration options in the policy creation flow that it's no
 > [!IMPORTANT]
 > This is a hypothetical scenario with hypothetical values. It's only for illustrative purposes. You should substitute your own sensitive information types, sensitivity labels, distribution groups and users.
 
-#### Scenario 1 pre-requisites and assumptions
+#### Scenario 1 prerequisites and assumptions
 
 This scenario uses the *Highly confidential* sensitivity label, so it requires that you have created and published sensitivity labels. To learn more, see:
 
@@ -255,7 +255,7 @@ Oversharing popup is an E5 feature.
 > [!IMPORTANT]
 > To identify the minimum version of Outlook that supports this feature, use the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook), and the row **Preventing oversharing as DLP policy tip**.
 
-#### Scenario 2 pre-requisites and assumptions
+#### Scenario 2 prerequisites and assumptions
 
 In Outlook Win 32 an oversharing popup displays a popup before a message is sent. Select **Show policy tip as a dialog for the user before send** in policy tip when creating a DLP rule for the Exchange location.
 This scenario uses the *Highly confidential* sensitivity label, so it requires that you have created and published sensitivity labels. To learn more, see:
@@ -291,7 +291,7 @@ and a recipient-based condition
 - SentToAMemberOf
 - RecpientDomainIs
 
- When these conditions are met, the policy tip will display untrusted recipients while the user is writing the mail in Outlook, before it is sent.
+ When these conditions are met, the policy tip displays untrusted recipients while the user is writing the mail in Outlook, before it's sent.
 
 
 #### Steps to create policy for scenario 2
@@ -370,7 +370,7 @@ This sample DLP policy is scoped to all users in your organization. Scope your D
 |[-ContentContainsSensitiveInformation](/powershell/module/exchange/new-dlpcompliancerule.md#-contentcontainssensitiveinformation)|	Configures one or more sensitivity label conditions. This sample includes one. At least one label is mandatory.|
 |[-ExceptIfRecipientDomainIs](/powershell/module/exchange/new-dlpcompliancerule.md#-exceptifrecipientdomainis)|	List of trusted domains.|
 |[-NotifyAllowOverride](/powershell/module/exchange/new-dlpcompliancerule.md#-notifyallowoverride)|	"WithJustification" enables justification radio buttons, "WithoutJustification" disables them.|
-|[-NotifyOverrideRequirements](/powershell/module/exchange/new-dlpcompliancerule.md#-notifyoverriderequirements)	"WithAcknowledgement" enables the new acknowledgement option. This is optional.|
+|[-NotifyOverrideRequirements](/powershell/module/exchange/new-dlpcompliancerule.md#-notifyoverriderequirements)	"WithAcknowledgement" enables the new acknowledgment option. This is optional.|
 |
 
 To configure a new DLP rule to generate a *warn* popup using trusted domains run this PowerShell code.
@@ -385,7 +385,7 @@ To configure a new DLP rule to generate a *justify* popup using trusted domains 
 PS C:\> New-DlpComplianceRule -Name <DLP Rule Name> -Policy <DLP Policy Name> -NotifyUser Owner -NotifyPolicyTipDisplayOption "Dialog" -BlockAccess $true -ContentContainsSensitiveInformation @(@{operator = "And"; groups = @(@{operator = "Or"; name = "Default"; labels = @(@{name=<Label GUID 1>;type="Sensitivity"},@{name=<Label GUID 2>;type="Sensitivity"})})}) -ExceptIfRecipientDomainIs @("contoso.com","microsoft.com") -NotifyAllowOverride "WithJustification"
 ```
 
-To configure a new DLP rule to generat a *block* popup using trusted domains run this PowerShell code.
+To configure a new DLP rule to generate a *block* popup using trusted domains run this PowerShell code.
 
 ```powershell
 PS C:\> New-DlpComplianceRule -Name <DLP Rule Name> -Policy <DLP Policy Name> -NotifyUser Owner -NotifyPolicyTipDisplayOption "Dialog" -BlockAccess $true -ContentContainsSensitiveInformation @(@{operator = "And"; groups = @(@{operator = "Or"; name = "Default"; labels = @(@{name=<Label GUID 1>;type="Sensitivity"},@{name=<Label GUID 2>;type="Sensitivity"})})}) -ExceptIfRecipientDomainIs @("contoso.com","microsoft.com")
@@ -433,7 +433,7 @@ Actions are what a policy does in response to user activities on sensitive items
 > The **Allow** action is only available for policies that are scoped to the **Devices** location.
 
 - **Audit only**: The user activity is allowed to occur, so no business processes are impacted. You'll get audit data and you can add notifications and alerts to raise awareness and train your users to know that what they're doing is a risky behavior. If your organization intends to enforce more restrictive actions later on, you can tell your users that too.
-- **Block with override**: The user activity is blocked by default. You can audit the event, raise alerts and notifications. This will impact the business process, but your users will be given the option to override the block and provide a reason for the override. Because you get direct feedback from your users, this action can help you identify false positive matches, which you can use to further tune the policy. 
+- **Block with override**: The user activity is blocked by default. You can audit the event, raise alerts and notifications. This impacts the business process, but your users are given the option to override the block and provide a reason for the override. Because you get direct feedback from your users, this action can help you identify false positive matches, which you can use to further tune the policy. 
 
 > [!NOTE]
 > For Exchange online and SharePoint Online, overrides are configured in the user notification section.
