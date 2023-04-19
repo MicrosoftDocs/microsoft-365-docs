@@ -27,32 +27,91 @@ description: "Learn how to implement and test controls by working with improveme
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Manage compliance workflows with improvement actions
+## Overview
 
-Improvement actions centralize your compliance activities. Each improvement action gives detailed implementation guidance to help you align with data protection regulations and standards. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the action.
+Improvement actions help centralize your compliance activities. Each improvement action suggests an action to take with detailed guidance intended to help you align with data protection regulations and standards. Improvement actions can be assigned to users in your organization to perform implementation and testing work. You can also store notes, documentation, notes, and record status updates within the action. Many improvement actions can be set up for automatic testing and monitoring.
 
-All of your improvement actions are listed on the improvement actions page. Learn more about [viewing your improvement actions](compliance-manager-setup.md#improvement-actions-page).
+Compliance Manager works within a shared responsibility model where some actions are completed by Microsoft and some actions are completed by the organization in order to meet the requirements of a regulation, standard, or certification. To that end, you’ll see the designation of two types of improvement actions:
 
-## Improvement actions details page
+1. **Your improvement actions**: your organization manages the implementation, testing, and verification of completion of these actions.
 
-Each improvement action has a details page showing its implementation and testing status; related assessments, controls, and certifications; and recommended implementation guidance. [Technical actions](compliance-score-calculation.md#technical-and-non-technical-actions) include a **Launch now** link that takes you to the appropriate solution for implementation. You can attach implementation and testing evidence directly into an improvement action’s details page.
+1. **Microsoft actions**: Microsoft manages the implementation and testing; your organization does not work on these actions, but you will see them in the product because controls are usually made up of your actions plus Microsoft actions.
 
-To view an improvement action’s details page:
+Both types of actions have points that count toward your overall score when completed.
 
-1. In Compliance Manager, go to the **Improvement actions** page.
-1. From the list of improvement actions, select the name of the improvement action you want to view. The details page for the action will open.
+## Action types
 
-Each improvement action details page has the following sections:
+Improvement actions are identified and categorized in the ways described below. The way actions are scored depends on their type.
 
-- The **Overview** section on the left side of the page: Contains a **Summary** of basic information such as the implementation and test status, points achieved, and associated assessments; and a **Testing source** section for viewing and changing [how the action is tested](#update-testing-source).
+#### Technical and non-technical actions
 
-- **Implementation** tab: Contains implementation status, date, notes, detailed instructions, and for [technical actions](compliance-score-calculation.md#technical-and-non-technical-actions), a **Launch now** link taking you to the appropriate solution for implementation.
+- **Technical actions** are implemented by interacting with the technology of a solution (for example, changing a configuration). The points for technical actions are granted once per action, regardless of how many groups it belongs to.
+
+- **Non-technical** actions are managed by your organization and implemented in ways other than working with the technology of a solution. There are two types of non-technical actions: **documentation** and **operational**. The points for these actions are applied to your compliance score at a group level. This means that if an action exists in multiple groups, you will receive the action’s point value each time you implement it within a group.
+
+See [Compliance Manager scoring](compliance-manager-scoring.md) for more details about how technical and non-technical actions are scored.
+
+#### Mandatory and discretionary actions
+
+- **Mandatory actions** can’t be bypassed, either intentionally or accidentally. An example of a mandatory action is a centrally managed password policy that sets requirements for password length, complexity, and expiration. Users must follow these requirements to access the system.
+
+- **Discretionary actions** rely upon users to understand and adhere to a policy. For example, a policy requiring users to lock their computer when they leave it is a discretionary action because it relies on the user.
+
+#### Preventative, detective, and corrective actions
+
+- **Preventative actions** address specific risks. For example, protecting information at rest using encryption is a preventative action against attacks and breaches. Separation of duties is a preventative action to manage conflict of interest and guard against fraud.
+
+- **Detective actions** actively monitor systems to identify irregular conditions or behaviors that represent risk, or that can be used to detect intrusions or breaches. Examples include system access auditing and privileged administrative actions. Regulatory compliance audits are a type of detective action used to find process issues.
+
+- **Corrective actions** try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage if possible. Privacy incident response is a corrective action to limit damage and restore systems to an operational state after a breach.
+
+## Automation and improvement actions
+
+While some improvement actions must be manually implemented and tested by your organization, many actions can be automatically implemented, tested, and continuously monitored for you. Compliance Manager automatically identifies settings in your Microsoft 365 environment and your multicloud environment that help determine when certain configurations meet improvement action implementation requirements.  There are three types of automation, detailed below.
+
+#### Native automation
+
+Compliance Manager has built-in functionality to receive signals from other Microsoft solutions and non-Microsoft services. Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from Microsoft Priva (this capability is in preview; [learn more](/privacy/priva/priva-overview#how-priva-works-with-microsoft-purview-risk-and-compliance-solutions)). Over the next few months, we’ll deploy a selection of data connectors built specifically for Compliance Manager will support other non-Microsoft services such as Salesforce and Zoom.
+
+The automation applies specifically to the solution or service and isn’t scoped to any subscription level within your particular cloud service. Rather, Compliance Manager provides guidance for how to complete the action to help you meet the requirements of a control, and a status of passing or failing is detected and reflected back to you. Learn more about [multiservice support in Compliance Manager](compliance-manager-multiservice.md).
+
+#### Microsoft Secure Score automation
+Compliance Manager detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Using these signals, Compliance Manager can automatically test certain improvement actions in order to provide continuous control assessment. When an improvement action is successfully tested and implemented, you receive the maximum possible points for that action, which gets credited to your overall compliance score.
+
+#### Microsoft Defender for Cloud automation
+
+Integration with Defender for Cloud allows Compliance Manager to facilitate improvement actions and provide continuous monitoring across multiple Microsoft and non-Microsoft cloud services. The cloud infrastructure of this monitoring means that action status can be evaluated and graded at the subscription level for your desired service. You’ll be able to see specific implementation and testing results for each improvement action within each subscription of your service. The overall score you receive for the improvement action is an aggregate of the individual scores of each subscription within that service. Learn more about [Compliance Manager scoring](compliance-manager-scoring.md).
+
+### How to tell which actions are tested automatically
+
+On your Improvement actions page, find the Testing source column. If the value is listed as Automatic, then the action is automatically tested by Compliance Manager. If the value is Manual, then the action is tested by your organization. If the value is Parent, then the action inherits the testing status of another action to which it’s linked. Get details below about action [testing source](#testing-source).
+
+### When actions are added or updated
+
+When automation becomes available for existing improvement actions, or when new automated improvement actions are added, the default behavior depends on your current settings and whether or not you’ve brought data into an improvement action. When you add your own testing data or evidence into an improvement action, automatic testing is turned off for that action to ensure that Compliance Manager doesn’t overwrite any of your data.
+
+If you've added data to an existing improvement action:
+- Automated testing remains **off** by default for the action. You can choose to turn it back on.
+
+If you haven't added data to an improvement action, or when new automated actions are added to Compliance Manager, the testing behavior follows your current settings:
+- Automated testing is **on** if your setting is **on** for **all actions** or **per action**.
+- Automated testing is **off** if your setting is **off for all actions**.
+
+## Performing implementation and testing work
+
+All of the improvement actions managed by your organization are listed on the **Improvement actions** tab in Compliance Manager. Each improvement action provides detailed implementation guidance and a link to launch you into the appropriate solution or service.
+
+Select an improvement action from the list on the **Improvement actions** page to view that action’s details page. You can also select an assessment from the **Assessments** page, then go to the **Your improvement actions** tab and select an action from the list. Each improvement action’s details page contains the sections below:
+
+- **Overview**: Contains a **Summary** of basic information such as the implementation and test status, points achieved, associated assessments, and a **Testing source** section for viewing and changing [how the action is tested](#testing-source).
+
+- **Implementation** tab: Contains implementation status, date, notes, detailed instructions, and for [technical actions](compliance-score-calculation.md#technical-and-non-technical-actions) a **Launch now** link taking you to the appropriate solution or service for implementation.
 
 - **Testing** tab: Contains testing status, date, notes, and a link to download a testing history report.
 
-- **Related controls** tab: Lists the controls associated with the improvement action. Select a control name to view its description.
+- **Related controls** tab: Lists the controls associated with the improvement action, including the control ID and the associated regulation. Select a control name to view a flyout pane with a detailed description.
 
-- **Evidence** tab: Location where you can upload and view files and links related to implementation and testing work.
+- **Evidence** tab: Location where you can upload and view files and links related to implementation and testing work. Learn more about [storing evidence](#storing-evidence).
 
 > [!TIP]
 > Learn more about the different [types of improvement actions and how points are awarded](compliance-score-calculation.md#action-types-and-points) and factored into your compliance score.
@@ -89,9 +148,19 @@ You can assign multiple improvement actions to one user by following these steps
 5. After you populate the **Assign to** field with the assignee's name, select **Assign**.
 6. You'll then see your Improvement actions page with the new assignee listed for the actions you just assigned.
 
-## Change implementation details
+## Implementation work
 
-You can record the implementation status and date for each improvement action and add notes for internal reference. These fields can be edited by any user with editing permissions, not just by the assigned person.
+You can record the implementation status and date for each improvement action and add notes for internal reference. These fields can be edited by any user with editing permissions, not just by the assigned person. Implementation work differs based on whether the action is implemented and monitored through Microsoft Defender for Cloud, or whether the action is implemented in Microsoft 365 environment or in non-cloud environments.
+
+#### Defender for Cloud actions
+
+Improvement actions that pertain to cloud services such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) are implemented and monitored using Compliance Manager’s integration with Defender for Cloud (learn more about [multiservice support](compliance-manager-multiservice.md)). The description underneath the **Implementation tab** will state when the action is this type of action.
+
+RESUME HERE….looks like I’ll need a MDC and non-MDC secetions/subheads for each work header here of implementation, testing, related controls (if I put back in), and evidence.
+
+#### Non-MDC actions
+
+...resumption of  old copy....You can record the implementation status and date for each improvement action and add notes for internal reference. These fields can be edited by any user with editing permissions, not just by the assigned person.
 
 To edit an improvement action’s status, select **Edit implementation details** on the details page. Below are the available fields and status options:
 
@@ -99,7 +168,7 @@ To edit an improvement action’s status, select **Edit implementation details**
   - **Not implemented**: action not yet implemented
   - **Partially implemented**: for automatically tested actions, the action is partially implemented (neither passes nor fails) and receives a partial score
   - **Implemented**: action implemented
-  - **Alternative implementation**: select this option if you used other third-party tools or took other actions not included in Microsoft recommendations
+  - **Alternative implementation**: select this option if you used other non-Microsoft tools or took other actions not included in Microsoft recommendations
   - **Planned**: action is planned for implementation
   - **Out of scope**: action isn’t relevant to your organization and doesn’t contribute to your score
 - **Implementation date**: available to select when implementation status is "implemented" or "alternative implementation"
@@ -109,7 +178,7 @@ There's no character limit in the notes fields. We recommend keeping notes brief
 
 Common actions synchronize across groups. When two different assessments in the same group share improvement actions that are managed by you, any updates you make to an action's implementation details or status will automatically synchronize to the same action in any other assessment in the group. This synchronization allows you to implement one improvement action and meet several requirements across multiple regulations.
 
-## Change test status
+## Testing work
 
 In the **Testing** section, you can view the testing status of your improvement action, the testing date, and any notes. A user with editing permissions can select  **Edit testing details** to edit content on the **Testing** tab.
 
@@ -189,11 +258,7 @@ To set up a parent testing source, follow the steps below:
 
 You'll come back to your action's details page. Under **Testing Source** on the **Overview** section, the new action you designated as the parent is listed under **Parent action**.
 
-## Related controls
-
-The **Related controls** tab displays the controls associated with the improvement action. The table on this page lists each associated control, the control ID, and the regulation related to the control. To view a description of the control, select the control's name and a flyout pane appears with the description.
-
-## Perform work and store evidence
+## Storing evidence
 
 You can upload evidence related to implementation and testing work, in the form of files or links, directly to the **Evidence** tab. This environment is a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. Only users with editing rights can upload, download, and delete evidence.
 
