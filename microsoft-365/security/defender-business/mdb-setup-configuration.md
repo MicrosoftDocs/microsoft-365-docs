@@ -45,7 +45,7 @@ In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://s
 
 The setup wizard is designed to help you set up and configure Defender for Business quickly and efficiently. It walks you through the following steps:
 
-1. **Assign user permissions**. In this step, you grant your security team access to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This portal is where you and your security team will manage your security capabilities, view alerts, and take any needed actions on detected threats. Portal access is granted through roles that imply certain permissions.
+1. **Assign user permissions**. In this step, you grant your security team access to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This portal is where you and your security team will manage your security capabilities, view alerts, and take any needed actions on detected threats. Portal access is granted through roles that imply certain permissions. [Learn more about roles and permissions](mdb-roles-permissions.md). 
 
    In Defender for Business, members of your security team can be assigned one of the following three roles:<br/>
    
@@ -53,7 +53,6 @@ The setup wizard is designed to help you set up and configure Defender for Busin
    - **Security Administrator**: A security administrator can view and edit security settings, and take action when threats are detected.
    - **Security Reader**: A security reader can view information in reports, but can't change any security settings. 
 
-   [Learn more about roles and permissions](mdb-roles-permissions.md). 
 
 2. **Set up email notifications**. In this step, you can set up email notifications for your security team. Then, when an alert is generated or a new vulnerability is discovered, your security team won't miss it even if they're away from their desk. [Learn more about email notifications](mdb-email-notifications.md). 
 
