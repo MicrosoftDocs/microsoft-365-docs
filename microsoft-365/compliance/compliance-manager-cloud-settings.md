@@ -25,7 +25,7 @@ description: "Set up your Azure and other non-Microsoft services for using Micro
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Setup stages
+## Setting up for multicloud support
 
 Compliance Manager relies on integration with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) in order to provide multiservice support. Organizations must have a subcription to Microsoft Azure and then enable Microsoft Defender for Cloud so that Compliance Manager can receive the necessary signals to monitor your cloud services. Once you have Defender for Cloud, you need to assign the relevant industry and regulatory standards to your subscription.
 
