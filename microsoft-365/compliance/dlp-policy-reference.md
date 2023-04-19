@@ -863,7 +863,7 @@ This table shows the DLP blocking and notification behavior for policies that ar
 
 #### Learn more URL
 
-Users may want to learn why their activity is being blocked. You can configure a site or a page that explains more about your policies. When you select **Provide a compliance URL for the end user to learn more about your organization's policies (available for Exchange workload only)**, and the user receives a policy tip notification, the *Learn more* link will point to the site URL that you provide.
+Users may want to learn why their activity is being blocked. You can configure a site or a page that explains more about your policies. When you select **Provide a compliance URL for the end user to learn more about your organization's policies (available for Exchange workload only)**, and the user receives a policy tip notification in Outlook Win 32, the *Learn more* link will point to the site URL that you provide.
 This URL has priority over the global compliance URL configured with [Set-PolicyConfig -ComplainceURL](/powershell/module/exchange/set-policyconfig?view=exchange-ps).
 
 > [!IMPORTANT]
@@ -893,17 +893,18 @@ To learn more about user overrides, see:
 
 #### Business justification X-Header
 
-When a user overrides a block with override action on an email, the override option and the text that they provide are stored in the [Audit log](/microsoft-365/compliance/audit-solutions-overview.md). You can [search the audit log in the compliance portal](audit-log-search.md) for `ExceptionInfo` value for the details. Here's an example of the X-header values:
+When a user overrides a block with override action on an email, the override option and the text that they provide are stored in the [Audit log](/microsoft-365/compliance/audit-solutions-overview.md) and in the email X-header. You can [search the audit log in the compliance portal](audit-log-search.md) for `ExceptionInfo` value for the details. Here's an example of the audit log X-header values:
 ```xml
 {
     "FalsePositive"; false,
     "Justification"; My manager approved sharing of this content",
-    "Reaspon"; "Override",
+    "Reason"; "Override",
     "Rules": [
          "<message guid>"
     ]
 }
 ```
+
 ### Incident reports
 
 <!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents

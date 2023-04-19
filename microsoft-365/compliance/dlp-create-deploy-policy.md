@@ -248,6 +248,7 @@ Scenario recommendation: Restrict users from uploading sensitive data to unsanct
 
 ### Scenario 2 Show policy tip as oversharing popup (preview)
 
+Oversharing popup is an E5 feature.
 > [!IMPORTANT]
 > This is a hypothetical scenario with hypothetical values. It's only for illustrative purposes. You should substitute your own sensitive information types, sensitivity labels, distribution groups and users.
 
@@ -256,7 +257,7 @@ Scenario recommendation: Restrict users from uploading sensitive data to unsanct
 
 #### Scenario 2 pre-requisites and assumptions
 
-In Outlook an oversharing popup displays a popup before a message is sent. Select **Show policy tip as a dialog for the user before send** in policy tip when creating a DLP rule for the Exchange location.
+In Outlook Win 32 an oversharing popup displays a popup before a message is sent. Select **Show policy tip as a dialog for the user before send** in policy tip when creating a DLP rule for the Exchange location.
 This scenario uses the *Highly confidential* sensitivity label, so it requires that you have created and published sensitivity labels. To learn more, see:
 
 - [Learn about sensitivity labels](sensitivity-labels.md)
@@ -366,10 +367,10 @@ This sample DLP policy is scoped to all users in your organization. Scope your D
 
 |Parameter|	Configuration|
 |---------|---------|
-|-ContentContainsSensitiveInformation|	Configures one or more sensitivity label conditions. This sample includes one. At least one label is mandatory.|
-|-ExceptIfRecipientDomainIs|	List of trusted domains.|
-|-NotifyAllowOverride|	"WithJustification" enables justification radio buttons, "WithoutJustification" disables them.|
-|-NotifyOverrideRequirements	"WithAcknowledgement" enables the new acknowledgement option. This is optional.|
+|[-ContentContainsSensitiveInformation](/powershell/module/exchange/new-dlpcompliancerule.md#-contentcontainssensitiveinformation)|	Configures one or more sensitivity label conditions. This sample includes one. At least one label is mandatory.|
+|[-ExceptIfRecipientDomainIs](/powershell/module/exchange/new-dlpcompliancerule.md#-exceptifrecipientdomainis)|	List of trusted domains.|
+|[-NotifyAllowOverride](/powershell/module/exchange/new-dlpcompliancerule.md#-notifyallowoverride)|	"WithJustification" enables justification radio buttons, "WithoutJustification" disables them.|
+|[-NotifyOverrideRequirements](/powershell/module/exchange/new-dlpcompliancerule.md#-notifyoverriderequirements)	"WithAcknowledgement" enables the new acknowledgement option. This is optional.|
 |
 
 To configure a new DLP rule to generate a *warn* popup using trusted domains run this PowerShell code.
