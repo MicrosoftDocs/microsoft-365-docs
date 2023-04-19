@@ -236,7 +236,7 @@ With our new separate page of search results, you can explore a more comprehensi
 
 Previously, you could only tag priority accounts by searching for them using the person's name, e-mail address or job title. With this update, you can now search for people to add to priority accounts in a distribution list. This allows you to bulk add people in an efficient way and reduces the time needed to tag individual people in your organization.
 
-:::image type="content" source="../media/search-by-distribution-list-priority-accounts.png" alt-text="This screenshot shows the interface in whichy users can search for priority accounts to add using a distribution list." lightbox="../media/search-by-distribution-list-priority-accounts.png":::
+:::image type="content" source="../media/search-by-distribution-list-priority-accounts.png" alt-text="This screenshot shows the interface in which users can search for priority accounts to add using a distribution list." lightbox="../media/search-by-distribution-list-priority-accounts.png":::
 
 - You can tag up to 50 users from a distribution list as priority accounts in a single action.
 
