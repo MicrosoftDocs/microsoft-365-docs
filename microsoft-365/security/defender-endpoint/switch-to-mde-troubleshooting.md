@@ -46,15 +46,21 @@ To resolve this issue, take the following steps:
 
 Certain exclusions for Defender for Endpoint must be defined in your existing non-Microsoft endpoint protection solution. Make sure to add the following exclusions:
 
-`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`
 
-`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCnCProxy.exe`
 
-`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`
 
-`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`
 
-`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`
+
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseNdr.exe`
+
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSC.exe`
+
+`C:\Program Files\Windows Defender Advanced Threat Protection\Classification\SenseCE.exe`
 
 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollection`
 
