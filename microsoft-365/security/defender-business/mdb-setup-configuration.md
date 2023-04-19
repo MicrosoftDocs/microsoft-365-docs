@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 02/14/2023
+ms.date: 04/18/2023
 ms.reviewer: efratka, jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -23,17 +23,17 @@ ms.collection:
 
 # Set up and configure Microsoft Defender for Business
 
-After you have signed up for Defender for Business, and you have added users and assigned licenses, you're ready to set up and configure Defender for Business. You have can choose from several options:
+After you have [signed up for Defender for Business](get-defender-business.md), and you have [added users and assigned licenses](mdb-add-users.md), you're ready to set up and configure Defender for Business. You have can choose from several options:
 
-- Use the setup wizard to grant access to your security team, set up email notifications for your security team, onboard your company's Windows devices, and apply default security settings to those devices; or 
-- Work through the setup process manually, step by step, and complete all the setup steps yourself.
+- **Use the setup wizard** to grant access to your security team, set up email notifications for your security team, onboard your company's Windows devices, and apply default security settings to those devices; or 
+- **Work through the setup process manually**, step by step, and complete the setup steps yourself.
 
 Select a tab to learn more about each option.
 
 ## [**Setup wizard**](#tab/Wizard)
 
 > [!IMPORTANT]
-> You must be a global administrator to run the setup wizard. The person who signed up your company for Microsoft 365 or for Defender for Business is a global administrator by default.
+> You must be a global administrator to run the setup wizard. The person who signed up your company for Microsoft 365 or for Defender for Business is a global administrator by default. See [Assign security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
 
 ## How to start the setup wizard
 
