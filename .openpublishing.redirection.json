@@ -10854,6 +10854,11 @@
     "source_path": "microsoft-365/compliance/ediscovery-change-the-size-of-pst-files-when-exporting-results.md",
     "redirect_url": "/microsoft-365/compliance/ediscovery-export-search-results",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-glossary.yml",
+    "redirect_url": "https://www.microsoft.com/wdsi/threats",
+    "redirect_document_id": false
   }
  ]
 }
