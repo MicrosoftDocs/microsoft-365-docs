@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
-ms.date: 04/05/2023
+ms.date: 04/19/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
@@ -70,7 +70,7 @@ Copilot for Syntex analyzes the text of a selected file in a SharePoint document
 > [!IMPORTANT] 
 > It's important that you review any content the AI generates for you to make sure it has accurately produced what you wanted.
 
-## Let is know what you think
+## Let us know what you think
 
 If you have a suggestion for Copilot for Syntex, or if there's something you like or something you don't like about it, you can submit feedback to Microsoft from the **Copilot** panel. Select **More options** (\***), and then select **Send feedback**.
 
