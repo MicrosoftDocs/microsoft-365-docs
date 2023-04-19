@@ -85,7 +85,7 @@ All the conditions work for emails authored in Outlook client app, where they'll
 
 ## Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types
 
-For E3 licensed users, DLP policy tips will not be shown in Outlook 2013 and later for any of the advanced classifiers like Named entity SITs, Exact data match SITs, Credential scanning SITs, etc.
+For E3 licensed users, DLP policy tips are shown in Outlook 2013 and later for pre-configured SITs and custom SITs.
 
 For E5 licensed users, DLP policy tips will be shown in Outlook 2013 and later, for policies that use: (preview)
 
