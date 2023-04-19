@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/20/2023
+ms.date: 04/14/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -241,17 +241,17 @@ Communication compliance policies using classifiers inspect and evaluate message
 
 |**Classifier**|**Description**|
 |:-------------|:--------------|
-| [Corporate sabotage](classifier-tc-definitions.md#corporate-sabotage-preview) | Detects messages that may mention acts to damage or destroy corporate assets or property. This classifier can help customers manage regulatory compliance obligations such as NERC Critical Infrastructure Protection standards or state by state regulations like Chapter 9.05 RCW in Washington state. |
+| [Corporate sabotage](classifier-tc-definitions.md#corporate-sabotage | Detects messages that may mention acts to damage or destroy corporate assets or property. This classifier can help customers manage regulatory compliance obligations such as NERC Critical Infrastructure Protection standards or state by state regulations like Chapter 9.05 RCW in Washington state. |
 | [Customer complaints](classifier-tc-definitions.md#customer-complaints) | Detects messages that may suggest customer complaints made on your organization's products or services, as required by law for regulated industries. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 4530, FINRA 4513, FINRA 2111, Consumer Financial Protection Bureau, Code of Federal Regulations Title 21: Food and Drugs, and the Federal Trade Commission Act. |
 | [Discrimination](classifier-tc-definitions.md#discrimination) | Detects potentially explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities. |
-| [Gifts & entertainment](classifier-tc-definitions.md#gifts--entertainment-preview) | Detects messages that may suggest exchanging gifts or entertainment in return for service, which violates regulations related to bribery. This classifier can help customers manage regulatory compliance obligations such as Foreign Corrupt Practices Act (FCPA), UK Bribery Act, and FINRA Rule 2320. |
+| [Gifts & entertainment](classifier-tc-definitions.md#gifts-entertainment | Detects messages that may suggest exchanging gifts or entertainment in return for service, which violates regulations related to bribery. This classifier can help customers manage regulatory compliance obligations such as Foreign Corrupt Practices Act (FCPA), UK Bribery Act, and FINRA Rule 2320. |
 | [Harassment](classifier-tc-definitions.md#harassment) | Detects potentially offensive content in multiple languages that targets people regarding race, color, religion, national origin. |
-| [Money laundering](classifier-tc-definitions.md#money-laundering-preview) | Detects signs that may suggest money laundering or engagement in acts to conceal or disguise the origin or destination of proceeds. This classifier can help customers manage regulatory compliance obligations such as the Bank Secrecy Act, the USA Patriot Act, FINRA Rule 3310, and the Anti-Money Laundering Act of 2020. |
+| [Money laundering](classifier-tc-definitions.md#money-laundering| Detects signs that may suggest money laundering or engagement in acts to conceal or disguise the origin or destination of proceeds. This classifier can help customers manage regulatory compliance obligations such as the Bank Secrecy Act, the USA Patriot Act, FINRA Rule 3310, and the Anti-Money Laundering Act of 2020. |
 | [Profanity](classifier-tc-definitions.md#profanity) | Detects potentially profane content in multiple languages that would likely offend most people. |
-| [Regulatory collusion](classifier-tc-definitions.md#regulatory-collusion-preview) | Detects messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and the Robinson-Patman Act. |
-| [Stock manipulation](classifier-tc-definitions.md#stock-manipulation-preview) | Detects signs of possible stock manipulation, such as recommendations to buy, sell or hold stocks that may suggest an attempt to manipulate the stock price. This classifier can help customers manage regulatory compliance obligations such as the Securities Exchange Act of 1934, FINRA Rule 2372, and FINRA Rule 5270. |
+| [Regulatory collusion](classifier-tc-definitions.md#regulatory-collusion| Detects messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and the Robinson-Patman Act. |
+| [Stock manipulation](classifier-tc-definitions.md#stock-manipulation| Detects signs of possible stock manipulation, such as recommendations to buy, sell or hold stocks that may suggest an attempt to manipulate the stock price. This classifier can help customers manage regulatory compliance obligations such as the Securities Exchange Act of 1934, FINRA Rule 2372, and FINRA Rule 5270. |
 | [Threat](classifier-tc-definitions.md#threat) | Detects potential threatening content in multiple languages aimed at committing violence or physical harm to a person or property. | 
-| [Unauthorized disclosure](classifier-tc-definitions.md#unauthorized-disclosure-preview) | Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. |
+| [Unauthorized disclosure](classifier-tc-definitions.md#unauthorized-disclosure| Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. |
 
 > [!IMPORTANT]
 > Classifiers may detect a large volume of bulk sender/newsletter content due to a known issue. You can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the [**Filter email blasts** check box](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) when you create the policy. You can also edit an existing policy to turn on this feature. 
@@ -322,6 +322,13 @@ If you enter multiple conditions, Microsoft 365 uses all the conditions together
 ### Review percentage
 
 If you want to reduce the amount of content to review, you can specify a percentage of all the communications governed by a communication compliance policy. A real-time, random sample of content is selected from the total percentage of content that matches chosen policy conditions. If you want reviewers to review all items, you can configure **100%** in a communication compliance policy.
+
+### Filter email blasts
+
+Use the **Filter email blasts** setting to exclude messages sent from email blast services. Messages that match the conditions you specify won't generate alerts. This includes bulk email, such as newsletters, as well as spam, phishing, and malware. When this option is selected, you can view a [report](communication-compliance-reports-audits.md#detailed-reports) that lists the bulk email senders that were filtered out.
+    
+> [!NOTE]
+> The list of senders is filtered before the content is analyzed so there might be senders that don't match the content conditions. In other words, there might be extra senders in the report. 
 
 ## Alert policies
 
