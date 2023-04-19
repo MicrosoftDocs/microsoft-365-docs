@@ -46,4 +46,4 @@ You can add or remove members to manage who can access the case. However, before
 
 ## Removing members from a case
 
-Only an [eDiscovery Administrator](ediscovery-assign-permissions.md) can remove members from a case. Even if you are assigned to the eDiscovery Manager role group or initially created the case, you won't be able to remove yourself or other members from a case unless you are also an eDiscovery Administrator. To remove yourself or other members from a case, contact an eDiscovery Administrator in your organization.
+Only an [eDiscovery Administrator](ediscovery-assign-permissions.md) can remove members from a case. Even if you're assigned to the eDiscovery Manager role group or initially created the case, you won't be able to remove yourself or other members from a case unless you're also an eDiscovery Administrator. To remove yourself or other members from a case, contact an eDiscovery Administrator in your organization.
