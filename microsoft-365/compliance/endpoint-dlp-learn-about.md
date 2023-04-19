@@ -124,7 +124,7 @@ If the extension is changed only to supported file extensions:
 
 ### File types
 
-File Types are a grouping of file formats, which are utilized to protect specific workflows or areas of business. You can use one or more File types as conditions in your DLP policies.
+File types are a grouping of file formats, which are utilized to protect specific workflows or areas of business. You can use one or more File types as conditions in your DLP policies. File types are supported for Windows 10/11 devices. 
 
 |File Type |App  |monitored file extensions  |
 |---------|---------|---------|
