@@ -228,7 +228,9 @@ For standard retention labels (they don't mark items as a [record or regulatory 
 
 - If there are multiple auto-apply label policies that could apply a retention label, and content meets the conditions of multiple policies, the retention label for the oldest auto-apply label policy (by date created) is applied.
 
-When retention labels mark items as a record or a regulatory record, these labels are never automatically changed during their configured retention period. Only admins for the container can manually change or remove retention labels that mark items as a record, but not regulatory records. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+For retention labels that mark items as a record or a regulatory record:
+
+- These labels are never automatically changed during their configured retention period. Only admins for the container can manually change or remove retention labels that mark items as a record, but not regulatory records. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 #### Monitoring retention labels
 
