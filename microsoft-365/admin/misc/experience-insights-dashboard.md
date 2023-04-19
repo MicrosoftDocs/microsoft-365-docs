@@ -59,7 +59,7 @@ The chart information gives you insight into the apps and services that you want
 
 **Product usage** is the percentage of people who are actively using the products that are enabled for them to use. Use this data to make decisions on where to optimize product assignments.
 
-**In-product feedback** Is the total number of feedback response from within the app or service that were initiated and submitted by your users. Use this data to gauge the success and satisfaction people have with the apps. [Learn more](feedback-user-control.md)
+**In-product feedback** Is the total number of feedback responses from within the app or service that were initiated and submitted by your users. Use this data to gauge the success and satisfaction people have with the apps. [Learn more](feedback-user-control.md)
 
 **NPS survey response volume** is the total number of responses to the Net Promoter Score (NPS) survey. By default, Microsoft sends the survey to 5% of your users and asks “Would you recommend this product?” Use this data to gauge user satisfaction and to see what people are saying about the app. [Learn more](../manage/manage-feedback-product-insights.md)
 
