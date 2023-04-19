@@ -107,7 +107,7 @@ After you've had enough time to observe the results of impersonation protection 
 
 - User impersonation protection: **Quarantine the message** for both Standard and Strict.
 - Domain impersonation protection: **Quarantine the message** for both Standard and Strict.
-- Mailbox intelligence protection: **Move message to the recipients' Junk Email folders** for Standard; **Quarantine the message** for Strict.
+- Mailbox intelligence protection: **Move the message to the recipients' Junk Email folders** for Standard; **Quarantine the message** for Strict.
 
 The longer you monitor the impersonation protection results without acting on the messages, the more data you'll have to identify allows or blocks that might be required. Consider using a delay between turning on each protection that's significant enough to allow for observation and adjustment.
 
@@ -130,7 +130,7 @@ After you've observed the results and made any adjustments, proceed to the next 
 
 ### Tune user impersonation protection
 
-In both of your anti-phishing policies based on Standard and Strict settings, change the value of **If message is detected as an impersonated user** to **Quarantine the message**.
+In both of your anti-phishing policies based on Standard and Strict settings, change the value of **If a message is detected as user impersonation** to **Quarantine the message**.
 
 Check the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) to see what's being blocked as user impersonation attempts.
 
@@ -140,7 +140,7 @@ After you've observed the results and made any adjustments, proceed to the next 
 
 ### Tune domain impersonation protection
 
-In both of your anti-phishing policies based on Standard and Strict settings, change the value of **If message is detected as an impersonated domain** to **Quarantine the message**.
+In both of your anti-phishing policies based on Standard and Strict settings, change the value of **If a message is detected as domain impersonation** to **Quarantine the message**.
 
 Check the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) to see what's being blocked as domain impersonation attempts.
 
