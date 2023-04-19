@@ -1442,8 +1442,6 @@
             href: ediscovery-de-duplication-in-search-results.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
-          - name: Change the size of PST files when exporting search results
-            href: ediscovery-change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
             href: ediscovery-disable-reports-for-exported-content-search-results.md
           - name: Check your search query for errors
