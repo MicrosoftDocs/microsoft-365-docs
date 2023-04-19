@@ -83,7 +83,7 @@ The following examples show what happens if you create a document fingerprint ba
 1. On the **Classifiers** page, choose **Sensitive info types** > **Create Fingerprint based SIT**.
 1. Enter a name and description for your new SIT.
 1. Upload the file you wish to use as the fingerprint template.
-1. OPTIONAL: Adjust the requirements for each confidence level and then choose **Next**. For more information, see [[Partial matching](#partial-matching)](#partial-matching) and [Exact matching](#exact-matching).
+1. OPTIONAL: Adjust the requirements for each confidence level and then choose **Next**. For more information, see [Partial matching](#partial-matching) and [Exact matching](#exact-matching).
 1. Review your settings > **Create**.
 1. When the confirmation page displays, choose **Done**.
 

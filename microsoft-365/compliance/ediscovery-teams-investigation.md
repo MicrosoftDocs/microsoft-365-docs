@@ -13,7 +13,7 @@ ms.collection:
 - M365-collaboration
 - ediscovery
 ms.reviewer: anwara
-ms.date: 04/04/2023
+ms.date: 04/06/2023
 search.appverid: MET150
 f1.keywords:
   - NOCSH
@@ -30,13 +30,15 @@ Large enterprises are often exposed to high penalty legal proceedings that deman
 
 All Microsoft Teams 1:1 or group chats are journaled through to the respective users' mailboxes. All standard channel messages are journaled through to the group mailbox representing the team. Files uploaded in standard channels are covered under the eDiscovery functionality for SharePoint Online and OneDrive for Business.
 
-eDiscovery of messages and files in [private channels](/microsoftteams/private-channels.md) works differently than in standard channels. To learn more, see [eDiscovery of private channels](#ediscovery-of-private-and-shared-channels).
+eDiscovery of messages and files in [private channels](/microsoftteams/private-channels) works differently than in standard channels. To learn more, see [eDiscovery of private channels](#ediscovery-of-private-and-shared-channels).
 
-Not all Teams content is eDiscoverable. The following table shows the content types that you can search for using Microsoft eDiscovery tools:
+Recorded Teams meetings are stored in the OneDrive for Business account of the user recording the meeting. To learn more, see [eDiscovery (Premium) workflow for content in Microsoft Teams](/microsoft-365/compliance/ediscovery-teams-workflow).
+
+Not all Teams content is eDiscoverable. The following table shows the Teams content types that you can search for using Microsoft eDiscovery tools:
 
 |**Content type**|**Notes**|
 |:---------------|:--------|
-|Audio recordings||
+|Audio recordings|Audio calls between Teams user and external contacts|
 |Card content|See [Search for card content](#search-for-card-content) for more information.|
 |Chat links||
 |Chat messages|This includes content in standard Teams channels, 1:1 chats, 1:N group chats, chats with yourself, and chats with guests.|
@@ -47,6 +49,7 @@ Not all Teams content is eDiscoverable. The following table shows the content ty
 |Loop components|Content in a loop component is saved in a .fluid file that's stored in the OneDrive for Business account of the user who sends the loop component. That means you have to include OneDrive as a data source when searching for content in loop components.|
 |Meeting IM conversations||
 |Meeting metadata<sup>1</sup>||
+|Meeting recordings and transcripts (preview)|Transcripts of the meeting audio are extracted and provided as a separate file. Maximum supported recorded meeting .mp4 file size is 350 MB. If the recorded meeting file size is above 350 MB, a processing error occurs and the file is available for download.|
 |Name of channel||
 |Quotes|Quoted content is searchable. However, search results don't indicate that the content was quoted.|
 |Reactions (such as likes, hearts, and other reactions)|Reactions are supported for all commercial customers after June 1, 2022. Reactions before this date aren't available for eDiscovery. Expanded reactions are now supported. To understand reaction history, the content must be on legal hold.|
@@ -90,7 +93,6 @@ Private chats in a user's mailbox are stored in the Team Chat folder under Conve
 Compliance copies of messages in private and shared channels are sent to different mailboxes depending on the channel type. That means you have to search different mailbox locations based on the type of channel a user is a member of.
 
 - **Private channels**. Compliance copies are sent to the mailbox of all members of the private channel members. That means you have to search the user mailbox when searching for content in private channel messages.
-
 - **Shared channels**. Compliance copies are sent to a system mailbox that's associated with the parent team. Because Teams doesn't support an eDiscovery search of a single system mailbox for a shared channel, you have to search the mailbox for the parent team (by selecting the name of the Team mailbox) when searching for message content in shared channels.
 
 Each private and shared channel has its own SharePoint site that's separate from the parent team site. That means files in private and shared channels are stored in its own site and managed independently of the parent team. This means you must identify and search the specific site associated with a channel when searching for content in files and channel message attachments.
@@ -101,7 +103,7 @@ Use the following sections to help identify the private or shared channel to inc
 
 Use the procedure in this section to identify members of a private channel so that you can use eDiscovery tools to search the member's mailbox for content in private channel messages.
 
-Before you perform these steps, make sure you have the [latest version of the Teams PowerShell module](/microsoftteams/teams-powershell-overview.md) installed.
+Before you perform these steps, make sure you have the [latest version of the Teams PowerShell module](/microsoftteams/teams-powershell-overview) installed.
 
 1. Run the following command to get the group ID of the team that contains the shared channels you want to search.
 
@@ -207,14 +209,12 @@ To search for content for guests:
 8. On the flyout page, you can do the following things:
 
    - Select **View results** to view the search results and preview the content.
-
    - Next to the **Query** field, select **Edit** to edit and then rerun the search. For example, you can add a search query to narrow the results.
-
    - Select **Export results** to export and download the search results.
 
 ## Search for card content
 
-Card content generated by apps in Teams channels, 1:1 chats, and 1xN chats is stored in mailboxes and can be searched. A *card* is a UI container for short pieces of content. Cards can have multiple properties and attachments, and can include buttons that can trigger card actions. For more information, see [Cards](/microsoftteams/platform/task-modules-and-cards/what-are-cards)
+Card content generated by apps in Teams channels, 1:1 chats, and 1xN chats are stored in mailboxes and can be searched. A *card* is a UI container for short pieces of content. Cards can have multiple properties and attachments, and can include buttons that can trigger card actions. For more information, see [Cards](/microsoftteams/platform/task-modules-and-cards/what-are-cards)
 
 Like other Teams content, where card content is stored is based on where the card was used. Content for cards used in a Teams channel is stored in the Teams group mailbox. Card content for 1:1 and 1xN chats are stored in the mailboxes of the chat participants.
 
@@ -238,7 +238,6 @@ When viewing card content in Content search results, the content appears as an a
 Admins can use eDiscovery to search for content in chats messages in a Teams meeting in external access and guest access environments based on the following restrictions:
 
 - **External access**: In a Teams meeting with users from your organization and users from an external organization where external attendees are using external access, admins in both organizations can search for content in chat messages from the meeting.
-
 - **Guest**: In a Teams meeting with users from your organization and guests, only admins in the organization who hosts the Teams meeting can search for content in chat messages from the meeting.
 
 ## Related articles
@@ -246,4 +245,4 @@ Admins can use eDiscovery to search for content in chats messages in a Teams mee
 - [Microsoft 365 eDiscovery solutions](/microsoft-365/compliance/ediscovery)
 - [Get started with eDiscovery (Standard)](/microsoft-365/compliance/get-started-core-ediscovery)
 - [Teams workflow in eDiscovery (Premium)](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery)
-- [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview.md)
+- [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview)
