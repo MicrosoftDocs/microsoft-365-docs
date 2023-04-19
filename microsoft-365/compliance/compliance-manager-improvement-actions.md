@@ -65,7 +65,7 @@ See [Compliance Manager scoring](compliance-manager-scoring.md) for more details
 
 - **Corrective actions** try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage if possible. Privacy incident response is a corrective action to limit damage and restore systems to an operational state after a breach.
 
-## Automation and improvement actions
+## Automated implementation and monitoring
 
 While some improvement actions must be manually implemented and tested by your organization, many actions can be automatically implemented, tested, and continuously monitored for you. Compliance Manager automatically identifies settings in your Microsoft 365 environment and your multicloud environment that help determine when certain configurations meet improvement action implementation requirements.  There are three types of automation, detailed below.
 
@@ -97,7 +97,7 @@ If you haven't added data to an improvement action, or when new automated action
 - Automated testing is **on** if your setting is **on** for **all actions** or **per action**.
 - Automated testing is **off** if your setting is **off for all actions**.
 
-## Performing implementation and testing work
+## Improvement actions details page
 
 All of the improvement actions managed by your organization are listed on the **Improvement actions** tab in Compliance Manager. Each improvement action provides detailed implementation guidance and a link to launch you into the appropriate solution or service.
 
