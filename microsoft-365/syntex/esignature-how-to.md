@@ -19,4 +19,4 @@ description: Learn how to use Microsoft eSignature to send electronic signature 
 
 # Send electronic signature requests in Microsoft Syntex (Preview)
 
-*This page is currently in development. It will include steps for how to use the feature.*
+*This article is currently in development. It will include steps for how to use the feature.*
