@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/27/2023
+ms.date: 04/19/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -207,16 +207,19 @@ An email or document can have only a single retention label applied to it at a t
 - [Document understanding model for Microsoft Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
 - [Default label for SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 - [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
+- Power Automate compliance action of **Apply a retention label on the item**.
 
 For standard retention labels (they don't mark items as a [record or regulatory record](records-management.md#records)):
 
 - Admins and end users can manually change or remove an existing retention label that's applied on content.
 
-- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with two possible exceptions:
+- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with three possible exceptions:
 
-  - The existing label is configured to automatically apply a different retention label at the end of the retention period.
+ - The existing label is configured to automatically apply a different retention label at the end of the retention period.
     
-  - The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed.
+ - You use the Power Automate compliance action of **Apply a retention label on the item**. If the item already has a retention label applied, it will be replaced.
+   
+ - The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed.
     
     For more information about the label behavior when it's applied by using a default label:
     
