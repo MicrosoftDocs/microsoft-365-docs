@@ -139,7 +139,7 @@ To begin implementation work on an improvement action, you can do the work yours
 1. After populating the **Assign to** field with the assignee's name, select **Assign**.
 1. You'll then see your **Improvement actions** page with the new assignee listed for the actions you just assigned.
 
-#### Implementation based on service
+### Implementation instructions
 
 Implementation work differs based on whether the action is implemented and monitored through Microsoft Defender for Cloud, or whether the action is implemented in Microsoft 365 environment or in non-cloud environments.
 
