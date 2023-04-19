@@ -19,8 +19,6 @@ description: "Get a periodic report about how people in your organization use Mi
 The Experience insights (preview) dashboard shows you data across usage and sentiment to give you a fuller view of your organization's experience with Microsoft 365.
 Experience insights is optimized for organizations with 2000 plus seats. We are working on bringing the experience to smaller organizations in the future. This information and data on the dashboard will help you better understand and improve your users' experience with Microsoft 365. The dashboard shows you data across usage and user sentiment and helps give you a fuller picture of your users' overall experience. You can drill down into specific information such as feature usage for certain apps, exact feedback and Net Promoter Score (NPS) comments, and top help articles viewed by users in your organization. This info can help you identify opportunities to improve users’ Microsoft 365 products and app experiences in your organization.
 
-<!--To learn more about adoption and training for users in your organization, see [Experience insights help article report](experience-insights-help-articles.md). -->
-
 ## How to get to the Experience insights dashboard
 
 There are a couple of ways to get the Experience insights dashboard page. If you’re a member of the global admin or global reader roles, when you log in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting Experience insights (preview) from the admin home page.
@@ -99,8 +97,6 @@ For the first time, you can now see what articles your users are consuming on Su
 :::image type="content" source="../../media/experience-insights-teams-help-article2.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
 
 ## Additional resources
-
-<!-- :::image type="content" source="../../media/additional-resources.png" alt-text="Screenshot: Image showing additional resources you can select"::: -->
 
 ### View your organization's Adoption Score
 
