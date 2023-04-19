@@ -203,11 +203,11 @@ Exchange public folders, Skype, Teams and Yammer messages don't support retentio
 
 An email or document can have only a single retention label applied to it at a time. A retention label can be applied [manually](create-apply-retention-labels.md#manually-apply-retention-labels) by an end user or admin, or automatically by using any of the following methods:
 
-- [Auto-apply label policy](apply-retention-labels-automatically.md)
+- [Auto-apply retention label policy](apply-retention-labels-automatically.md)
 - [Document understanding model for Microsoft Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
-- [Default label for SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- [Default retention label for SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 - [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
-- Power Automate compliance action of **Apply a retention label on the item**.
+- Power Automate compliance action of **Apply a retention label on the item**
 
 For standard retention labels (they don't mark items as a [record or regulatory record](records-management.md#records)):
 
