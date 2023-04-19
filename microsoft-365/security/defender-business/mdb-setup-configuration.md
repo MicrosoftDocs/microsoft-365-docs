@@ -33,7 +33,7 @@ Select a tab to learn more about each option.
 ## [**Setup wizard**](#tab/Wizard)
 
 > [!IMPORTANT]
-> You must be a global administrator to run the setup wizard. The person who signed up your company for Microsoft 365 or for Defender for Business is a global administrator by default. See [Assign security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
+> You must be a global administrator to run the setup wizard. The person who signed up your company for Microsoft 365 or for Defender for Business is a global administrator by default. See [Security roles and permissions in Defender for Business](mdb-roles-permissions.md).
 
 ## How to start the setup wizard
 
