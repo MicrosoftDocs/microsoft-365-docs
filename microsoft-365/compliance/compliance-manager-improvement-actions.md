@@ -228,7 +228,7 @@ On an improvement action's details page, select the **Testing** tab. Under **Tes
 
 Compliance Manager provides options for how to test improvement actions. In the **Overview** section of each improvement action, the **Testing Source** area has a drop-down menu from which you can choose how you want the action to be tested: **Manual**, **Automatic**, and **Parent**. Learn details about each testing method below.
 
-#### Manual testing source
+#### Testing source
 Improvement actions set for manual testing are actions which you manually test and implement. You set the necessary implementation and test status states, and upload any evidence files on the **Documents** tab. For some actions, this is the only available method for testing improvement actions.
 
 #### Automatic testing source
