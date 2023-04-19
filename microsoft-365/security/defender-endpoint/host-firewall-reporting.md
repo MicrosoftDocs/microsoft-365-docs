@@ -113,7 +113,7 @@ These reports can also be accessed by going to **Reports** > **Security Report**
 
 Cards support interactive objects. You can drill into the activity of a device by clicking on the device name, which will launch the Microsoft 365 Defender portal in a new tab, and take you directly to the **Device Timeline** tab.
 
-:::image type="content" source="images/firewall-reporting-blocked-connection.png" alt-text="The Computers with a blocked connection page" lightbox="/images/firewall-reporting-blocked-connection.png":::
+:::image type="content" source="images/firewall-reporting-blocked-connection.png" alt-text="The Computers with a blocked connection page" lightbox="images/firewall-reporting-blocked-connection.png":::
 
 You can now select the **Timeline** tab, which will give you a list of events associated with that device.
 
