@@ -116,14 +116,11 @@ Select an improvement action from the list on the **Improvement actions** page t
 > [!TIP]
 > Learn more about the different [types of improvement actions and how points are awarded](compliance-score-calculation.md#action-types-and-points) and factored into your compliance score.
 
-
 ## Implementation work
 
 ### Assigning improvement actions
 
-To begin implementation work on an improvement action, you can do the work yourself or assign it to another user. The assigned person could be a business policy owner, an IT implementer, or another employee with responsibility to perform the task.
-
-Once you identify the appropriate assignee, be sure they hold a sufficient [Compliance Manager role](compliance-manager-setup.md#set-user-permissions-and-assign-roles) to perform the work. Then follow the steps below to assign the improvement action:
+To begin implementation work on an improvement action, you can do the work yourself or assign it to another user. The assigned person could be a business policy owner, an IT implementer, or another employee with responsibility to perform the task. Once you identify the appropriate assignee, be sure they hold a sufficient [Compliance Manager role](compliance-manager-setup.md#set-user-permissions-and-assign-roles) to perform the work. Then follow the steps below to assign the improvement action:
 
 1. From the improvement actions details page, select **Assign action** on the left of the screen.
 
@@ -134,18 +131,15 @@ Once you identify the appropriate assignee, be sure they hold a sufficient [Comp
 > [!NOTE]
 > US Government Community (GCC) High and Department of Defense (DoD) customers won't receive an email when improvement actions are assigned to them.
 
-#### Assign multiple improvement actions to a single user
+**Assign multiple improvement actions to a single user**:
 
-You can assign multiple improvement actions to one user by following these steps:
+1. On your **Improvement actions**, select the area to the left of the improvement action's name. A round check icon will appear indicating you've selected that action. Check all the actions you want to assign.
+1. Select the **Assign to user** link at the top of the improvement actions table. A pop-up window will appear.
+1. In the **Assign to** field, start typing the name of the person you want to assign the actions to. You can also select from the list of suggested people.
+1. After populating the **Assign to** field with the assignee's name, select **Assign**.
+1. You'll then see your **Improvement actions** page with the new assignee listed for the actions you just assigned.
 
-1. Go to your Improvement actions page.
-2. Select the area to the left of the improvement action's name. A round check icon will appear indicating you've selected that action. Check all the actions you want to assign.
-3. Select the **Assign to user** link at the top of the improvement actions table.
-4. A pop-up window appears. In the **Assign to** field, start typing the name of the person you want to assign the actions to. You can also select from the list of suggested people.
-5. After you populate the **Assign to** field with the assignee's name, select **Assign**.
-6. You'll then see your Improvement actions page with the new assignee listed for the actions you just assigned.
-
-You can record the implementation status and date for each improvement action and add notes for internal reference. These fields can be edited by any user with editing permissions, not just by the assigned person.
+#### Implementation based on service
 
 Implementation work differs based on whether the action is implemented and monitored through Microsoft Defender for Cloud, or whether the action is implemented in Microsoft 365 environment or in non-cloud environments.
 
