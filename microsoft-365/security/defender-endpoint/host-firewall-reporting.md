@@ -119,13 +119,13 @@ You can now select the **Timeline** tab, which will give you a list of events as
 
 After clicking on the **Filters** button on the upper right-hand corner of the viewing pane, select the type of event you want. In this case, select **Firewall events** and the pane will be filtered to Firewall events.
 
-:::image type="content" source="images/firewall-reporting-filters-button.png" alt-text="The Filters button" lightbox="/images/firewall-reporting-filters-button.png":::
+:::image type="content" source="images/firewall-reporting-filters-button.png" alt-text="The Filters button" lightbox="images/firewall-reporting-filters-button.png":::
 
 ### Drill into advanced hunting (preview refresh)
 
 Firewall reports support drilling from the card directly into **Advanced Hunting** by clicking the **Open Advanced hunting** button. The query will be pre-populated.
 
-:::image type="content" source="images/firewall-reporting-advanced-hunting.png" alt-text="The Open Advanced hunting button" lightbox="/images/firewall-reporting-advanced-hunting.png":::
+:::image type="content" source="images/firewall-reporting-advanced-hunting.png" alt-text="The Open Advanced hunting button" lightbox="images/firewall-reporting-advanced-hunting.png":::
 
 The query can now be executed, and all related Firewall events from the last 30 days can be explored.
 
