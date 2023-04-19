@@ -69,7 +69,7 @@ This article describes how to configure the default connection filter policy in 
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
 
-2. On the **Anti-spam policies** page, select **Connection filter policy (Default)** from the list by clicking anywhere other than the check box next to the name.
+2. On the **Anti-spam policies** page, select **Connection filter policy (Default)** from the list by clicking anywhere in the row other than the check box next to the name.
 
 3. In the policy details flyout that opens, use the **Edit** links to modify the policy settings:
 
@@ -109,7 +109,7 @@ To change the list of policies from normal to compact spacing, select :::image t
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific policies.
 
-Select the default connection filter policy by clicking anywhere other than the check box next to the name to open the details flyout for the policy.
+Select the default connection filter policy by clicking anywhere in the row other than the check box next to the name to open the details flyout for the policy.
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to modify the default connection filter policy
 
@@ -145,7 +145,7 @@ For detailed syntax and parameter information, see [Set-HostedConnectionFilterPo
 
 To verify that you've successfully modified the default connection filter policy, do any of the following steps:
 
-- On the **Anti-spam policies** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/antispam>, select **Connection filter policy (Default)** from the list by clicking anywhere other than the check box next to the name, and verify the policy settings in the details flyout that opens.
+- On the **Anti-spam policies** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/antispam>, select **Connection filter policy (Default)** from the list by clicking anywhere in the row other than the check box next to the name, and verify the policy settings in the details flyout that opens.
 
 - In Exchange Online PowerShell or standalone EOP PowerShell, run the following command and verify the settings:
 
