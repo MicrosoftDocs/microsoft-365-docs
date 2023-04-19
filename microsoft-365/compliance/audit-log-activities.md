@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/22/2023
+ms.date: 04/18/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -142,7 +142,6 @@ For a list and detailed description of the eDiscovery activities that are logged
 ## eDiscovery (Premium) activities
 
 You can also search the audit log for activities in Microsoft Purview eDiscovery (Premium). For a description of these activities, see the "eDiscovery (Premium) activities" section in [Search for eDiscovery activities in the audit log](ediscovery-search-for-activities-in-the-audit-log.md#ediscovery-premium-activities).
-
 
 ## Encrypted message portal activities
 
@@ -388,6 +387,34 @@ The following table describes the auditing activities and information in the aud
 |Response activities|External|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(The second part of the User ID is a hash, which will differ for different users)|Form owner's org|Responder|
 |Response activities|Anonymous|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(The second part of the User ID is a hash, which will differ for different users)|Form owner's org|Responder|
 
+## Microsoft Planner activities
+
+The following table lists the user and admin activities in Microsoft Planner that are logged for auditing. The table includes the friendly name that's displayed in the **Activities** column and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results.
+
+> [!NOTE]
+> Auditing events for Microsoft Planner activities requires a paid Project Plan 1 license (or higher) in addition to the relevant Microsoft 365 license that includes entitlements to Audit (Premium).
+
+| Friendly name | Operation | Description |
+|:--------------|:----------|:------------|
+| Read a plan | PlanRead | A plan is read by a user or an app. If the read operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ContainerType indicates ContainerType.Invalid and ContainerId indicates null. |
+| Created a plan | PlanCreated | A plan is created by a user or an app. If the create operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ObjectId indicates null, ContainerType indicates ContainerType.Invalid and ContainerId indicates null. |
+| Modified a plan | PlanModified | A plan is modified by a user or an app. |
+| Deleted a plan | PlanDeleted | A plan is deleted by a user or an app. |
+| Copied a plan | PlanCopied | A plan is copied by a user or an app. If the copy operation is a ResultStatus.Failure or ResultStatus.Failure, newPlanId indicates null, newContainerType indicates ContainerType.Invalid, and newContainerId indicates null. |
+| Read a task | TaskRead | A task is read by a user or an app. If the read operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, PlanId indicates null. |
+| Created a task | TaskCreated | A task is created by a user or an app. If the create operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ObjectId indicates null and PlanId indicates null. |
+| Modified a task | TaskModified | A task is modified by a user or an app. |
+| Deleted a task | TaskDeleted | A task is deleted by a user or an app. |
+| Assigned a task | TaskAssigned | A task's assignee is modified by a user or an app. This can be an unassigned task getting assigned or an assigned task has a new assignee. |
+| Completed a task | TaskCompleted | A task is marked completed by a user or an app. |
+| Created a roster | RosterCreated | A roster is created by a user or an app. If the create operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ObjectId indicates null, MemberIds indicates an empty string. |
+| Deleted a roster | RosterDeleted | A roster is deleted by a user or an app. |
+| Added a member(s) to a roster | RosterMemberAdded | A member(s) is added to a roster. If the add operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, MemberIds indicates the list of member IDs attempted. |
+| Removed a member(s) to a roster | RosterMemberDeleted | A member(s) is removed from a roster. If the remove operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, MemberIds indicates the list of member IDs attempted. |
+| Read a list of plans | PlanListRead | A list of plans is queried by a user or an app. If the query operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, PlanList indicates an empty string. |
+| Read a list of tasks | TaskListRead | A list of tasks is queried by a user or an app. If the query operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, TaskList indicates an empty string. |
+| Updated tenant settings | TenantSettingsUpdated | Tenant settings are updated by a tenant admin. If the update operation is a ResultStatus.Failure or ResultStatus.AuthorizationFailure, ObjectId indicates the original settings, and TenantSettings indicates the tenant settings attempted. |
+| Updated a roster's sensitivity label | RosterSensitivityLabelUpdated | A user or an app updates a roster's sensitivity label. |
 
 ## Microsoft Power Apps activities
 
@@ -418,7 +445,6 @@ For a description of the Patients app activities, see [Audit logs for Patients a
 If your organization is using the Shifts app in Microsoft Teams, you can search the audit log for activities related to the using the Shifts app. If your environment is configured to support Shifts apps, an additional activity group for these activities is available in the **Activities** picker list.
 
 For a description of Shifts app activities, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events#shifts-in-teams-activities).
-
 
 ## Microsoft Workplace Analytics activities
 
@@ -536,6 +562,7 @@ The following table lists events that result from using [sensitivity labels](sen
 |Removed sensitivity label from file|FileSensitivityLabelRemoved <br /><br> SensitivityLabelRemoved|A sensitivity label was removed from an item by using Microsoft 365 apps, Office on the web, an auto-labeling policy, or the [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet. <br /><br>The operations for this activity are different depending on how the label was removed:<br /> - Office on the web or an auto-labeling policy (FileSensitivityLabelRemoved) <br /> - Microsoft 365 apps (SensitivityLabelRemoved)|
 
 Additional auditing information for sensitivity labels:
+
 - When you use sensitivity labels for Microsoft 365 Groups, and therefore Teams sites that are group-connected, the labels are audited with group management in Azure Active Directory. For more information, see [Audit logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 - When you use sensitivity labels for Teams meeting invites, and Teams meeting options and chat, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events).
 - When you use sensitivity labels with Power BI, see [Audit schema for sensitivity labels in Power BI](/power-bi/enterprise/service-security-sensitivity-label-audit-schema).
