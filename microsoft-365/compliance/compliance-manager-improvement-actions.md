@@ -37,27 +37,25 @@ Compliance Manager works within a shared responsibility model where some actions
 
 1. **Microsoft actions**: Microsoft manages the implementation and testing; your organization does not work on these actions, but you will see them in the product because controls are usually made up of your actions plus Microsoft actions.
 
-Both types of actions have points that count toward your overall score when completed.
+Both types of actions have points that count toward your overall compliance score when completed.
 
 ## Action types
 
-Improvement actions are identified and categorized in the ways described below. The way actions are scored depends on their type.
+Improvement actions are identified and categorized in the ways described below. The way actions are scored depends on their type. See [Compliance Manager scoring](compliance-manager-scoring.md) for more details about how each action types are scored.
 
-#### Technical and non-technical actions
+##### Technical and non-technical actions
 
 - **Technical actions** are implemented by interacting with the technology of a solution (for example, changing a configuration). The points for technical actions are granted once per action, regardless of how many groups it belongs to.
 
 - **Non-technical** actions are managed by your organization and implemented in ways other than working with the technology of a solution. There are two types of non-technical actions: **documentation** and **operational**. The points for these actions are applied to your compliance score at a group level. This means that if an action exists in multiple groups, you will receive the action’s point value each time you implement it within a group.
 
-See [Compliance Manager scoring](compliance-manager-scoring.md) for more details about how technical and non-technical actions are scored.
-
-#### Mandatory and discretionary actions
+##### Mandatory and discretionary actions
 
 - **Mandatory actions** can’t be bypassed, either intentionally or accidentally. An example of a mandatory action is a centrally managed password policy that sets requirements for password length, complexity, and expiration. Users must follow these requirements to access the system.
 
 - **Discretionary actions** rely upon users to understand and adhere to a policy. For example, a policy requiring users to lock their computer when they leave it is a discretionary action because it relies on the user.
 
-#### Preventative, detective, and corrective actions
+##### Preventative, detective, and corrective actions
 
 - **Preventative actions** address specific risks. For example, protecting information at rest using encryption is a preventative action against attacks and breaches. Separation of duties is a preventative action to manage conflict of interest and guard against fraud.
 
@@ -67,9 +65,9 @@ See [Compliance Manager scoring](compliance-manager-scoring.md) for more details
 
 ## Automated implementation and monitoring
 
-While some improvement actions must be manually implemented and tested by your organization, many actions can be automatically implemented, tested, and continuously monitored for you. Compliance Manager automatically identifies settings in your Microsoft 365 environment and your multicloud environment that help determine when certain configurations meet improvement action implementation requirements.  There are three types of automation, detailed below.
+While some improvement actions must be manually implemented and tested by your organization, many actions can be automatically implemented, tested, and continuously monitored for you. Compliance Manager automatically identifies settings in your Microsoft 365 environment and your multicloud environment that help determine when certain configurations meet improvement action implementation requirements. There are three types of automation, detailed below.
 
-#### Native automation
+#### Built-in automation
 
 Compliance Manager has built-in functionality to receive signals from other Microsoft solutions and non-Microsoft services. Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from Microsoft Priva (this capability is in preview; [learn more](/privacy/priva/priva-overview#how-priva-works-with-microsoft-purview-risk-and-compliance-solutions)). Over the next few months, we’ll deploy a selection of data connectors built specifically for Compliance Manager will support other non-Microsoft services such as Salesforce and Zoom.
 
@@ -84,9 +82,9 @@ Integration with Defender for Cloud allows Compliance Manager to facilitate impr
 
 ### How to tell which actions are tested automatically
 
-On your Improvement actions page, find the Testing source column. If the value is listed as Automatic, then the action is automatically tested by Compliance Manager. If the value is Manual, then the action is tested by your organization. If the value is Parent, then the action inherits the testing status of another action to which it’s linked. Get details below about action [testing source](#testing-source).
+On your **Improvement actions** page, find the Testing source column. If the value is listed as Automatic, then the action is automatically tested by Compliance Manager. If the value is Manual, then the action is tested by your organization. If the value is Parent, then the action inherits the testing status of another action to which it’s linked. Get details below about action [testing source](#testing-source).
 
-### When actions are added or updated
+### Automation settings when actions are added or updated
 
 When automation becomes available for existing improvement actions, or when new automated improvement actions are added, the default behavior depends on your current settings and whether or not you’ve brought data into an improvement action. When you add your own testing data or evidence into an improvement action, automatic testing is turned off for that action to ensure that Compliance Manager doesn’t overwrite any of your data.
 
@@ -112,9 +110,6 @@ Select an improvement action from the list on the **Improvement actions** page t
 - **Related controls** tab: Lists the controls associated with the improvement action, including the control ID and the associated regulation. Select a control name to view a flyout pane with a detailed description.
 
 - **Evidence** tab: Location where you can upload and view files and links related to implementation and testing work. Learn more about [storing evidence](#storing-evidence).
-
-> [!TIP]
-> Learn more about the different [types of improvement actions and how points are awarded](compliance-score-calculation.md#action-types-and-points) and factored into your compliance score.
 
 ## Implementation work
 
@@ -175,11 +170,8 @@ In the **Testing** section, you can view the testing status of your improvement 
 
 #### Testing status fields
 
-**Test status**
- 
-You can edit test status when an improvement action's implementation status is "implemented" or "alternative implementation."
+**Test status**: You can edit test status when an improvement action's implementation status is "implemented" or "alternative implementation." Below are the test statuses for manually tested actions:
 
-Test statuses for [manually tested actions](#manual-testing-source):
   - **None**: no work has started on the action
   - **Not assessed**: action hasn't been tested
   - **Passed**: implementation has been verified by an assessor
@@ -190,7 +182,7 @@ Test statuses for [manually tested actions](#manual-testing-source):
   - **In progress**: testing in progress
   - **Remediated**: tbd
 
-[Automatically tested actions](#automatic-testing-source) may also show one of the following states in the **Test status** column on the **Improvement actions** page:
+Automatically tested actions may also show one of the following states in the **Test status** column on the **Improvement actions** page:
    - **To be detected**: awaiting signals that indicate test status
   - **Could not be detected**: couldn't detect a test status; will be automatically checked again
   - **Partially tested**: action has been partially tested;  neither passes nor fails
@@ -198,20 +190,14 @@ Test statuses for [manually tested actions](#manual-testing-source):
 > [!NOTE]
 > The test status and testing notes for automatically tested improvement actions can't be edited manually. Compliance Manager updates these fields for you.
 
-**Test date**
+**Test date**: Toggle through the calendar pop-up to select the testing date.
 
-Toggle through the calendar pop-up to select the testing date.
+**Testing notes** and **Additional notes**: Enter notes for your own internal reference in these free text fields.
 
-**Testing notes** and **Additional notes**
-
-Enter notes for your own internal reference in these free text fields.
-
-**Testing history**
-
-The testing history provides a downloaded report of all test status changes for the improvement action.
+**Testing history**: The testing history provides a downloaded report of all test status changes for the improvement action.
 
 #### Exporting testing history
-You can export a report that will show you a history of all changes in test status for an improvement action. These reports are especially helpful for monitoring progress on [actions that are automatically tested](#automatic-testing-source), since such actions are regularly or frequently updated based on your tenant's data.
+You can export a report that will show you a history of all changes in test status for an improvement action. These reports are especially helpful for monitoring progress on actions that are automatically tested, since such actions are regularly or frequently updated based on your tenant's data.
 
 On an improvement action's details page, select the **Testing** tab. Under **Testing history**, select the **Export testing history** button. The report will download as an Excel file.
 
