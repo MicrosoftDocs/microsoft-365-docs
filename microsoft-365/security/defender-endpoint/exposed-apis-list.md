@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 01/25/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -26,11 +27,13 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:** 
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/index.yml)
 
 > [!IMPORTANT]
-> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../defender-business/compare-mdb-m365-plans.md#compare-defender-for-business-to-defender-for-endpoint-plan-1-and-plan-2).
 
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -67,7 +70,7 @@ Topic | Description
 [**Alert** methods and properties](alerts.md) | Run API calls such as \- get alerts, create alert, update alert and more.
 [Export **Assessment** per-device methods and properties](get-assessment-methods-properties.md) | Run API calls to gather vulnerability assessments on a per-device basis, such as: \- export secure configuration assessment, export software inventory assessment,  export software vulnerabilities assessment, and delta export software vulnerabilities assessment.
 [**Automated investigation** methods and properties](investigation.md) | Run API calls such as \- get collection of Investigation.
-[Export device health methods and properties](device-health-api-methods-properties.md) | Run API Calls such as -  GET /api/public/avdeviceshealth.
+[Export device health methods and properties](device-health-api-methods-properties.md) | Run API Calls such as \- GET /api/public/avdeviceshealth.
 [**Domain**-related alerts](get-domain-related-alerts.md) | Run API calls such as \- get domain-related devices, domain statistics and more.
 [**File** methods and properties](files.md) | Run API calls such as \- get file information, file related alerts, file related devices, and file statistics.
 [**Indicators** methods and properties](ti-indicator.md) | Run API call such as \- get Indicators, create Indicator, and delete Indicators.

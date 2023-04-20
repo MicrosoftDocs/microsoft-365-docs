@@ -1,10 +1,11 @@
 ---
-title: Microsoft Defender Antivirus Virtual Desktop Infrastructure deployment guide
-description: Learn how to deploy Microsoft Defender Antivirus in a remote desktop or non-persistent virtual desktop environment.
+title: Configure Microsoft Defender Antivirus on a remote desktop or virtual desktop infrastructure environment
+description: Get an overview of how to configure Microsoft Defender Antivirus in a remote desktop or non-persistent virtual desktop environment.
 keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, virtual desktop, rds, remote desktop
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 03/06/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -13,28 +14,33 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.subservice: mde
 ms.service: microsoft-365-security
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 - ContentEngagementFY23
 search.appverid: met150
 ---
 
-# Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment
+# Configure Microsoft Defender Antivirus on a remote desktop or virtual desktop infrastructure environment
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
+- [Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 **Platforms**
+
 - Windows
 
-In addition to standard on-premises or hardware configurations, you can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. With the ability to easily deploy updates to virtual machines (VMs) running in VDIs, you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and are then downloaded directly to each VM when it's turned on.
+> [!TIP]
+> This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside additional device protection capabilities), skip this article and proceed to [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft 365 Defender](configure-endpoints-vdi.md).
 
-This guide describes how to configure your VMs for optimal protection and performance, including how to:
+You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. Following the guidance in this article, you can configure updates to download directly to your RDS or VDI environments when a user signs in.
 
-- [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share)
+This guide describes how to configure Microsoft Defender Antivirus on your VMs for optimal protection and performance, including how to:
+
+- [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share-for-security-intelligence)
 - [Randomize scheduled scans](#randomize-scheduled-scans)
 - [Use quick scans](#use-quick-scans)
 - [Prevent notifications](#prevent-notifications)
@@ -42,45 +48,17 @@ This guide describes how to configure your VMs for optimal protection and perfor
 - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
 - [Apply exclusions](#exclusions)
 
-For more information on Microsoft Remote Desktop Services and VDI support, see [Azure Virtual Desktop Documentation](/azure/virtual-desktop).
-
-For Azure-based virtual machines, see [Install Endpoint Protection in Microsoft Defender for Cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
-
 > [!IMPORTANT]
-> Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
-> There are performance and feature improvements to the way in which Microsoft Defender Antivirus operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
+> Although a VDI can be hosted on Windows Server 2012 or Windows Server 2016, virtual machines (VMs) should be running Windows 10, version 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
 
-## Set up a dedicated VDI file share
+## Set up a dedicated VDI file share for security intelligence
 
-In Windows 10, version 1903, we introduced the shared security intelligence feature, which offloads the unpackaging of downloaded security intelligence updates onto a host machine, thus saving previous CPU, disk, and memory resources on individual machines. This feature has been backported and now works in Windows 10 version 1703 and above. You can set this feature with a Group Policy, or PowerShell.
+In Windows 10, version 1903, Microsoft introduced the shared security intelligence feature, which offloads the unpackaging of downloaded security intelligence updates onto a host machine. This method reduces the usage of CPU, disk, and memory resources on individual machines. Shared security intelligence now works on Windows 10, version 1703 and later. You can set up this capability by using Group Policy or PowerShell, as described in the following table:
 
-### Use Group Policy to enable the shared security intelligence feature:
-
-1. On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure, and then select **Edit**.
-
-2. In the Group Policy Management Editor, go to **Computer configuration**.
-
-3. Select **Administrative templates**.
-
-4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
-
-5. Double-click **Define security intelligence location for VDI clients**, and then set the option to **Enabled**. A field automatically appears.
-
-6. Enter `\\<sharedlocation\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).
-
-7. Select **OK**.
-
-8. Deploy the GPO to the VMs you want to test.
-
-### Use PowerShell to enable the shared security intelligence feature
-
-Use the following cmdlet to enable the feature. You'll need to then push the update as you normally would push PowerShell-based configuration policies onto the VMs:
-
-```PowerShell
-Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update
-```
-
-See the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what the \<shared location\> will be.
+|Method  | Procedure  |
+|---------|---------|
+| Group Policy | <ol><li>On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure, and then select **Edit**.</li><li>In the Group Policy Management Editor, go to **Computer configuration**.</li><li>Select **Administrative templates**.</li><li>Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.</li><li>Double-click **Define security intelligence location for VDI clients**, and then set the option to **Enabled**. A field automatically appears.</li><li>Enter `\\<sharedlocation\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).</li><li>Select **OK**.</li><li>Deploy the GPO to the VMs you want to test.</li></ol> |
+| PowerShell | <ol><li>On each RDS or VDI device, use the following cmdlet to enable the feature: `Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update`. </li><li>Push the update as you normally would push PowerShell-based configuration policies onto your VMs. (See the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what the \<shared location\> will be.) </li></ol> |
 
 ## Download and unpackage the latest updates
 
@@ -96,19 +74,19 @@ New-Item -ItemType Directory -Force -Path $vdmpath | Out-Null
 
 Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?LinkID=121721&arch=x64' -OutFile $vdmpackage
 
-cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
+Start-Process -FilePath $vdmpackage -WorkingDirectory $vdmpath -ArgumentList "/x"
 ```
 
 You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs will receive the new update.
 We suggest starting with once a day, but you should experiment with increasing or decreasing the frequency to understand the impact.
 
-Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advised because it will increase the network overhead on your management machine for no benefit.
+Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advisable because it will increase the network overhead on your management machine for no benefit.
 
 You can also set up your single server or machine to fetch the updates on behalf of the VMs at an interval and place them in the file share for consumption.
-This is possible when the devices have the share and NTFS permissions for the read access to the share so they can grab the updates. To do this:
+This configuration is possible when the devices have the share and read access (NTFS permissions) to the share so they can grab the updates. To set this configuration up, follow these steps:
 
- 1. Create an SMB/CIFS file share. 
- 
+ 1. Create an SMB/CIFS file share.
+
  2. Use the following example to create a file share with the following share permissions.
 
     ```PowerShell
@@ -118,9 +96,9 @@ This is possible when the devices have the share and NTFS permissions for the re
     ----   --------- ----------- ----------------- -----------
     mdatp$ *         Everyone    Allow             Read
     ```
-   
+
     > [!NOTE]
-    > An NTFS permission is added for **Authenticated Users:Read:**. 
+    > An NTFS permission is added for **Authenticated Users:Read:**.
 
     For this example, the file share is:
 
@@ -134,11 +112,11 @@ This is possible when the devices have the share and NTFS permissions for the re
 
 3. Go to the **Actions** tab. Select **New...** Enter **PowerShell** in the **Program/Script** field. Enter `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` in the **Add arguments** field. Select **OK**.
 
-4. You can choose to configure more settings if you wish.
+4. Configure any other settings as appropriate.
 
 5. Select **OK** to save the scheduled task.
 
-You can initiate the update manually by right-clicking on the task and clicking **Run**.
+You can initiate the update manually by right-clicking on the task and then selecting **Run**.
 
 ### Download and unpackage manually
 
@@ -184,7 +162,7 @@ You can specify the type of scan that should be performed during a scheduled sca
 
 ## Prevent notifications
 
-Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist across multiple sessions. In order to minimize this problem, you can lock down the Microsoft Defender Antivirus user interface. The following procedure describes how to suppress notifications with Group Policy.
+Sometimes, Microsoft Defender Antivirus notifications are sent to or persist across multiple sessions. To help avoid user confusion, you can lock down the Microsoft Defender Antivirus user interface. The following procedure describes how to suppress notifications using Group Policy.
 
 1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Client Interface**.
 
@@ -194,20 +172,14 @@ Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist 
 
 4. Deploy your Group Policy object as you usually do.
 
-Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up in the Action Center on Windows 10 when scans are done or remediation actions are taken. However, your security operations team will see the results of the scan while the attack was detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft 365 Defender portal](https://security.microsoft.com).
-
-> [!TIP]
-> To open the Action Center on Windows 10 or Windows 11, take one of the following steps:
-> - On the right end of the taskbar, select the Action Center icon.
-> - Press the Windows logo key button + A.
-> - On a touchscreen device, swipe in from the right edge of the screen.
+Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up when scans are done or remediation actions are taken. However, your security operations team will see the results of a scan if an attack is detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
 ## Disable scans after an update
 
 Disabling a scan after an update will prevent a scan from occurring after receiving an update. You can apply this setting when creating the base image if you have also run a quick scan. This way, you can prevent the newly updated VM from performing a scan again (as you've already scanned it when you created the base image).
 
 > [!IMPORTANT]
-> Running scans after an update will help ensure your VMs are protected with the latest Security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
+> Running scans after an update will help ensure your VMs are protected with the latest security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
 
 1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
@@ -229,7 +201,7 @@ Use the following cmdlet, to stop a quick or scheduled scan whenever the device 
 Set-MpPreference -ScanOnlyIfIdleEnabled $false
 ```
 
-You can also disable the `ScanOnlyIfIdle` option in Microsoft Defender Antivirus by configuration via local or domain group policy. This prevents the significant CPU contention in high density environments.
+You can also disable the `ScanOnlyIfIdle` option in Microsoft Defender Antivirus by configuration via local or domain group policy. This setting prevents significant CPU contention in high density environments.
 
 For more information, see [Start the scheduled scan only when computer is on but not in use](https://admx.help/?Category=SystemCenterEndpointProtection&Policy=Microsoft.Policies.Antimalware::scan_scanonlyifidle).
 
@@ -263,22 +235,17 @@ This policy hides the entire Microsoft Defender Antivirus user interface from en
 
 ## Exclusions
 
-Exclusions can be added, removed, or customized to suit your needs.
+If you think you need to add exclusions, see [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
-For more information, see [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-exclusions-microsoft-defender-antivirus.md).
-
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
-
-## Additional resources
+## See also
 
 - [Tech Community Blog: Configuring Microsoft Defender Antivirus for non-persistent VDI machines](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
 - [TechNet forums on Remote Desktop Services and VDI](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)
 - [SignatureDownloadCustomTask PowerShell script](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)
+
+If you're looking for information about Defender for Endpoint on non-Windows platforms, see the following resources:
+
+- [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+- [Configure Defender for Endpoint on Android features](android-configure.md)
+- [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)

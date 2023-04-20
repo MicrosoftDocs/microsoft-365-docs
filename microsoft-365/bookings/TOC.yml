@@ -29,8 +29,6 @@
       href: set-buffer-time.md
     - name: Manage group attendees in Bookings
       href: manage-attendees-bookings.md
-    - name: Metrics and activity tracking
-      href: metrics-and-activity-tracking.md
     - name: Set language and time zone
       href: set-language-time-zones.md
   - name: Manage the Bookings app in Microsoft Teams
@@ -43,6 +41,8 @@
     href: delete-calendar.md
   - name: Turn Microsoft Bookings on or off
     href: turn-bookings-on-or-off.md
+  - name: Custom domain support in Bookings
+    href: custom-domain-support.md
   - name: Reporting information for Microsoft Bookings
     href: reporting-info.md
   - name: Use Power Automate connectors

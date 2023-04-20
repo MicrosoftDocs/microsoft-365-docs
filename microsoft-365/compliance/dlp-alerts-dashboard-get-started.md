@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 10/12/2020
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -93,16 +93,16 @@ which has the data classification content viewer role pre-assigned.
 
 ### Roles and Role Groups
 
-There are roles and role groups in preview that you can test out to fine tune your access controls.
+There are roles and role groups that you use to fine tune your access controls.
 
-Here's a list of applicable roles that are in preview. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
+Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups that are in preview. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
+Here's a list of applicable role groups. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
@@ -112,7 +112,7 @@ Here's a list of applicable role groups that are in preview. To learn more about
 
 ## DLP alert configuration
 
-To learn how to configure an alert in your DLP policy, see [Where to start with data loss prevention](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention).
+To learn how to configure an alert in your DLP policy, see [Configure and view alerts for data loss prevention polices](dlp-configure-view-alerts-policies.md).
 
 > [!IMPORTANT]
 > Your organizations audit log retention policy configuration controls how long an alert remains visible in the console. See, [Manage audit log retention policies](audit-log-retention-policies.md#manage-audit-log-retention-policies) for more information.
@@ -163,4 +163,4 @@ To work with the DLP alert management dashboard:
 ## See also
 
 - [Learn about data loss prevention alerts and the alerts dashboard](dlp-alerts-dashboard-learn.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)

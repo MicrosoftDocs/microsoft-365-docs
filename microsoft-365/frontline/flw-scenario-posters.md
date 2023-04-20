@@ -16,6 +16,7 @@ ms.collection:
   - m365solution-scenario
   - EngageScoreOct2022
   - contentengagementFY23
+  - tier1
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams

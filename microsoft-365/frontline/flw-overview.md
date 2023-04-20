@@ -14,7 +14,7 @@ ms.collection:
   - highpri
   - m365solution-overview
   - m365solution-frontline
-  - highpri
+  - tier1
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
@@ -108,7 +108,7 @@ Equip your employees with industry-specific devices tailored for their needs, or
 |-----------|---------------------|
 |[Manage mobile devices for frontline workers](flw-devices.md) |Enterprise, F1, F3 |
 |[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) |Enterprise, F1, F3 |
-|[Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview) |Enterprise, F1, F3 |
+|[Microsoft Intune family of products](/mem/endpoint-manager-overview) |Enterprise, F1, F3 |
 |[Device partner integrations with Intune](/mem/intune/protect/device-compliance-partners) |Enterprise, F1, F3 |
 
 ## Adoption principles to help envision and implement business scenarios

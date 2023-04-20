@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date:
+ms.date: 04/17/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -32,7 +32,7 @@ A records management system, also known as records and information management, i
 
 Use the following capabilities to support your records management solution for Microsoft 365 data:
 
-- **Label content as a record**. Create and configure retention labels to mark content as a [record](#records) that can then be applied by users or automatically applied by identifying sensitive information, keywords, or content types.
+- **Label items as a record**. Create and configure retention labels to mark items as a [record](#records) that can then be applied by users or automatically applied by identifying sensitive information, keywords, or content types.
 
 - **Migrate and manage your retention requirements with file plan**. By using a [file plan](file-plan-manager.md), you can bring in an existing retention plan to Microsoft 365, or build a new one for enhanced management capabilities.
 
@@ -44,7 +44,7 @@ Use the following capabilities to support your records management solution for M
 
 - **Export information about all disposed items** with the [export option](disposition.md#filter-and-export-the-views).
 
-- **Set specific permissions** for records manager functions in your organization to [have the right access](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- **Set specific permissions** for records manager functions in your organization to [have the right access](../security/office-365-security/scc-permissions.md).
 
 Using these capabilities, you can incorporate your organization's retention schedules and requirements into a records management solution that manages retention, records declaration, and disposition, to support the full lifecycle of your content.
 
@@ -54,23 +54,23 @@ In addition to the online documentation, you might find it useful to download a 
 
 ## Records
 
-When content is declared a record:
+When an item is declared a record by using a retention label:
 
-- Restrictions are placed on the items in terms of what [actions are allowed or blocked](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+- Restrictions are placed on the item in terms of what [actions are allowed or blocked](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 - Additional activities about the item are logged.
 
-- You have proof of disposition when the items are deleted at the end of their retention period.
+- You have proof of disposition when the item is deleted at the end of their retention period.
 
-You use [retention labels](retention.md#retention-labels) to mark content as a **record**, or a **regulatory record**. The difference between these two are explained in the next section. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record or a regulatory record.
+You use [retention labels](retention.md#retention-labels) to mark items as a **record**, or a **regulatory record**. The difference between these two are explained in the next section. You can either publish those labels so that users and administrators can manually apply them to items, or for labels that mark items as a record, you can auto-apply those labels.
 
 By using retention labels to declare records, you can implement a single and consistent strategy for managing records across your Microsoft 365 environment.
 
 ### Compare restrictions for what actions are allowed or blocked
 
-Use the following table to identify what restrictions are placed on content as a result of applying a standard retention label, and retention labels that mark content as a record or regulatory record.
+Use the following table to identify what restrictions are placed on items as a result of applying a standard retention label, and retention labels that mark items as a record or regulatory record.
 
-A standard retention label has retention settings and actions but doesn't mark content as a record or a regulatory record.
+A standard retention label has retention settings and actions but doesn't mark items as a record or a regulatory record.
 
 > [!NOTE]
 > For completeness, the table includes columns for a locked and unlocked record, which is applicable to SharePoint and OneDrive, but not Exchange. The ability to lock and unlock a record uses [record versioning](record-versioning.md) that isn't supported for Exchange items. So for all Exchange items that are marked as a record, the behavior maps to the **Record - locked** column, and the **Record - unlocked column** is not relevant.
@@ -115,9 +115,9 @@ Containers include SharePoint sites, OneDrive accounts, and Exchange mailboxes.
 
 ## Validating migrated records
 
-If you're migrating records to SharePoint or OneDrive, you might need to validate these records haven't been altered and retain their immutability status. For example, you're using a migration solution and need to meet the chain of custody requirements for your records. Typical file properties and methods often used for this type of validation, such as file size or file hash, might not be sufficient because SharePoint automatically updates the metadata for a file when it's uploaded.
+If you're migrating files to SharePoint or OneDrive and your organization needs to manage these items as records, you might need to validate that the files haven't been altered and retain their immutability status. For example, you're using a migration solution and need to meet the chain of custody requirements. Typical file properties and methods often used for this type of validation, such as file size or file hash, might not be sufficient because SharePoint automatically updates the metadata for a file when it's uploaded.
 
-Instead, to validate your migrated records, you can use the value of the `vti_writevalidationtoken` property, which is a base64-encoded XOR hash of the file before it is modified by SharePoint. Use the following steps:
+Instead, to validate your migrated files, you can use the value of the `vti_writevalidationtoken` property, which is a base64-encoded XOR hash of the file before it is modified by SharePoint. Use the following steps:
 
 1. Generate the XOR hash of the original file by using the QuickXorHash algorithm. For more information, see the [QuickXorHash Algorithm code snippet](/onedrive/developer/code-snippets/quickxorhash).
 
@@ -125,7 +125,7 @@ Instead, to validate your migrated records, you can use the value of the `vti_wr
 
 3. After the file is migrated, retrieve the value of the `vti_writevalidationtoken` property from the uploaded file.
 
-4. Compare the value generated in step 2 with the value retrieved in step 3. These two values should match. If they do, you've validated that the record hasn't changed.
+4. Compare the value generated in step 2 with the value retrieved in step 3. These two values should match. If they do, you've validated that the file hasn't changed.
 
 
 ## Configuration guidance

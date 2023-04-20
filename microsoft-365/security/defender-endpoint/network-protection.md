@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 10/20/2022
+ms.date: 12/02/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -26,6 +26,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
@@ -187,11 +188,11 @@ For information about network protection for Linux and macOS see: [Network prote
 
 If you're using advanced hunting to identify audit events, you'll have up to 30 days history available from the console. See [Advanced hunting](advanced-hunting-overview.md).
 
-You can find the audit data in **Advanced hunting** in the Defender for Endpoint portal ([https://security.microsoft.com](https://security.microsoft.com)).  
+You can find the audit events in **Advanced hunting** in the Defender for Endpoint portal ([https://security.microsoft.com](https://security.microsoft.com)).  
 
-The events are in DeviceEvents with an ActionType of `ExploitGuardNetworkProtectionAudited`. Blocks are shown by `ExploitGuardNetworkProtectionBlocked`.  
+Audit events are in DeviceEvents with an ActionType of `ExploitGuardNetworkProtectionAudited`. Blocks are shown with an ActionType of `ExploitGuardNetworkProtectionBlocked`.  
 
-The following example includes the blocked actions:
+Here's an example query for viewing Network Protection events for third-party browsers:
 
 ```kusto
 
@@ -209,8 +210,7 @@ Here's another example:
 
 ```kusto
 
-DeviceEvents:
-
+DeviceEvents
 |where ActionType contains "ExploitGuardNetworkProtection"
 |extend ParsedFields=parse_json(AdditionalFields)
 |project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
@@ -229,6 +229,17 @@ The Response category tells you what caused the event, for example:
 | Phishing  |   Web threats  |
 
 For more information, see [Troubleshoot endpoint blocks](web-protection-overview.md#troubleshoot-endpoint-blocks).
+
+Note that Microsoft Defender SmartScreen events for the Microsoft Edge browser specifically, needs a different query:
+
+```kusto
+
+DeviceEvents
+| where ActionType == "SmartScreenUrlWarning"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName 
+
+```
 
 You can use the resulting list of URLs and IPs to determine what would have been blocked if the device was in block mode, and which feature blocked them. Review each item on the list to identify URLS or IPs whether any are necessary to your environment. If you find any entries that have been audited which are critical to your environment, create an Indicator to allow them in your network. Allow URL / IP indicators take precedence over any block.
 
@@ -268,15 +279,6 @@ You can also use [audit mode](audit-windows-defender.md) to evaluate how network
 ## Review network protection events in the Microsoft 365 Defender portal
 
 Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](investigate-alerts.md). You can view these details in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) in the [alerts queue](review-alerts.md) or by using [advanced hunting](advanced-hunting-overview.md). If you're using [audit mode](audit-windows-defender.md), you can use advanced hunting to see how network protection settings would affect your environment if they were enabled.
-
-Here's an example query for advanced hunting:
-
-```kusto
-
-DeviceNetworkEvents
-|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
-
-```
 
 ## Review network protection events in Windows Event Viewer
 

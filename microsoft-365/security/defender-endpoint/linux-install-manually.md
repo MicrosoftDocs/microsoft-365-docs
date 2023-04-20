@@ -12,12 +12,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
@@ -25,10 +26,15 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+
+> [!TIP]
+> Looking for advanced guidance on deploying Microsoft Defender for Endpoint on Linux? See [Advanced deployment guide on Defender for Endpoint on Linux](comprehensive-guidance-on-linux-deployment.md).
 
 This article describes how to deploy Microsoft Defender for Endpoint on Linux manually. A successful deployment requires the completion of all of the following tasks:
 
@@ -46,7 +52,7 @@ This article describes how to deploy Microsoft Defender for Endpoint on Linux ma
 Before you get started, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
 
 > [!WARNING]
-> Upgrading your operating system to a new major version after the product installation requires the product to be reinstalled. You need to [Uninstall](linux-resources.md#uninstall) the existing Defender for Endpoint on Linux, upgrade the operating system, and then reconfigure Defender for Endpoint on Linux following the below steps.
+> Upgrading your operating system to a new major version after the product installation requires the product to be reinstalled. You need to [Uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux) the existing Defender for Endpoint on Linux, upgrade the operating system, and then reconfigure Defender for Endpoint on Linux following the below steps.
 
 ## Configure the Linux software repository
 
@@ -74,7 +80,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
     |Distro & version|Package|
     |---|---|
-    |For RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
+    |For RHEL/Centos/Oracle 8.0-8.7|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
     |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
     |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
@@ -148,10 +154,10 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo apt-get install libplist-utils
     ```
 
-> [!NOTE]
-> Your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/[distro]/`.
+    > [!NOTE]
+    > Your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/[distro]/`.
 
-   In the below command, replace *[distro]* and *[version]* with the information you've identified:
+   In the following command, replace *[distro]* and *[version]* with the information you've identified:
 
    ```bash
     curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
@@ -193,7 +199,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
     ```bash
-    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft.gpg > /dev/null
+    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
     ```
 
 - Install the HTTPS driver if not already installed:
@@ -284,6 +290,9 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo apt -t bionic install mdatp
     ```
 
+> [!NOTE]
+> Reboots are NOT required after installing or updating Microsoft Defender for Endpoint on Linux except when you're running auditD in immutable mode.
+
 ## Download the onboarding package
 
 Download the onboarding package from Microsoft 365 Defender portal.
@@ -331,7 +340,10 @@ Download the onboarding package from Microsoft 365 Defender portal.
 2. Run MicrosoftDefenderATPOnboardingLinuxServer.py.
 
     > [!NOTE]
-    > To run this command, you must have `python`  or `python3` installed on the device depending on the disto and version. If needed, see [Step-by-step Instruction for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
+    > To run this command, you must have `python`  or `python3` installed on the device depending on the distro and version. If needed, see [Step-by-step Instructions for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
+
+    > [!NOTE]
+    > To onboard a device that was previously offboarded you must remove the mdatp_offboard.json file located at /etc/opt/microsoft/mdatp.
 
     If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
 
@@ -402,6 +414,21 @@ Download the onboarding package from Microsoft 365 Defender portal.
 
     - Look at the alert details, machine timeline, and perform your typical investigation steps.
 
+## Microsoft Defender for Endpoint package external package dependencies
+
+The following external package dependencies exist for the mdatp package:
+
+- The mdatp RPM package requires "glibc >= 2.17", "audit", "policycoreutils", "semanage" "selinux-policy-targeted", "mde-netfilter"
+- For RHEL6 the mdatp RPM package requires "audit", "policycoreutils", "libselinux", "mde-netfilter"
+- For DEBIAN the mdatp package requires "libc6 >= 2.23", "uuid-runtime", "auditd", "mde-netfilter"
+
+The mde-netfilter package also has the following package dependencies:
+
+- For DEBIAN the mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0"
+- for RPM  the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"
+
+If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the pre-requisite dependencies.
+
 ## Installer script
 
 Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).
@@ -455,7 +482,7 @@ See [Log installation issues](linux-resources.md#log-installation-issues) for mo
 
 ## Uninstallation
 
-See [Uninstall](linux-resources.md#uninstall) for details on how to remove Defender for Endpoint on Linux from client devices.
+See [Uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux) for details on how to remove Defender for Endpoint on Linux from client devices.
 
 ## See also
 

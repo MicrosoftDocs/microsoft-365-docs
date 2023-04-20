@@ -2,9 +2,10 @@
 title: "Pilot Microsoft 365 from my custom domain"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 07/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -60,7 +61,7 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 3. Select the services you want to test with your domain, like email and instant messaging.
 
-4. On the **Verify** domain page, follow the step-by-step instructions, amd then select **Verify**.
+4. On the **Verify** domain page, follow the step-by-step instructions, and then select **Verify**.
 
     It takes between a few minutes and 72 hours for DNS changes to take effect.
 
@@ -83,9 +84,9 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 > [!NOTE]
 > Unblocking your existing email server allows any spam that arrives through your original server to come to the Microsoft 365 mailboxes, and you can't evaluate how well Microsoft 365 prevents spam.
 
-1. In the Exchange admin center navigation pane, select **Protection**, and then select **Connection filter**.
+1. Sign in to Microsoft 365 Defender(https://security.microsoft.com/antispam), select **Policies & rules**, Click on **Threat policies** and then select **Anti-spam policies**.
 
-2. In the **IP Allow list**, select **+**, and add the mail server IP address for your current email provider.
+2. Select **Connection filter policy (Default)**, and click on Edit **Edit connection filter policy** and add the mail server IP address for your current email provider in the **Always allow messages from the following IP addresses or address range** Section.
 
 ### Step 5: Create user accounts and set the primary reply-to address
 
@@ -103,7 +104,7 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 
 5. Select **Create** > **Close**.
 
-### Step 6: **Configure mail to flow from Microsoft 365 or Office 365 to Email server
+### Step 6: Configure mail to flow from Microsoft 365 or Office 365 to Email server
 
 There are two steps for this:
 
@@ -190,3 +191,7 @@ When you complete this step, all email sent to usera@yourcompany.com and userb@y
 Because you are moving only two test users, and User A and User B are both using Outlook, you can move the email by opening the old .PST file in the new Outlook profile and copying the messages, calendar items, contacts, and so on. For more information, see [Import email, contacts, and calendar from an Outlook .pst file](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
 
 After they're imported to the appropriate locations in the Microsoft 365 mailbox, the items can be accessed from any device, anywhere.
+
+## More resources
+
+[Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)

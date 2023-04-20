@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Manage indicators
@@ -56,7 +57,9 @@ Download the sample CSV to know the supported column attributes.
 5. Select **Done**.
 
 > [!NOTE]
-> Only 500 indicators can be uploaded for each batch.
+> Only 500 indicators can be uploaded for each batch. 
+>
+> Attempting to import indicators with specific categories requires the string to be written in Pascal case convention and only accepts the category list available at the portal.
 
 The following table shows the supported parameters.
 
@@ -64,7 +67,7 @@ Parameter|Type|Description
 :---|:---|:---
 indicatorType|Enum|Type of the indicator. Possible values are: "FileSha1", "FileSha256", "IpAddress", "DomainName" and "Url". **Required**
 indicatorValue|String|Identity of the [Indicator](ti-indicator.md) entity. **Required**
-action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed". **Required**
+action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Allowed", "Audit", "BlockAndRemediate", "Warn", and "Block". **Required**
 title|String|Indicator alert title. **Required**
 description|String| Description of the indicator. **Required**
 expirationTime|DateTimeOffset|The expiration time of the indicator in the following format YYYY-MM-DDTHH:MM:SS.0Z. The indicator gets deleted if the expiration time passes and whatever happens at the expiration time occurs at the seconds (SS) value. **Optional**

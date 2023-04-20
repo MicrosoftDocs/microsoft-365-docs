@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: dansimp
+ms.author: diannegali
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
@@ -22,9 +22,10 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
+ms.date: 04/05/2022
 ---
 
-# Alert grading for malicious exchange connectors
+# Alert classification for malicious exchange connectors
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,7 +35,7 @@ search.appverid:
 
 Threat actors use compromised exchange connectors for sending out spam and phishing emails in bulk to unsuspecting recipients by masquerading legitimate emails. Since the connector is compromised, the emails would usually be trusted by the recipients. These kinds of phishing emails are common vectors for phishing campaigns, and business email compromise (BEC) scenario. Hence, such emails need to be monitored heavily due to the likelihood of successful recipients' compromises being high.
 
-The playbook helps in investigating instances, where malicious connectors are setup/deployed by malicious actors. Accordingly, they take necessary steps to remediate the attack and mitigate the security risks arising from it. Playbook is available for security teams like security operations center (SOC) and IT administrators, who review, handle/manage, and grade the alerts. Playbook will help in grading the alerts as either True Positive (TP) or False Positive (FP). If there is TP, playbook will take necessary recommended actions for remediating the attack.
+The playbook helps in investigating instances, where malicious connectors are setup/deployed by malicious actors. Accordingly, they take necessary steps to remediate the attack and mitigate the security risks arising from it. Playbook is available for security teams like security operations center (SOC) and IT administrators, who review, handle/manage, and grade the alerts. Playbook will help in classifying the alerts as either true positive (TP) or false positive (FP). If there is TP, playbook will take necessary recommended actions for remediating the attack.
 
 Following are the results of using a playbook:
 
@@ -237,3 +238,8 @@ Once it's determined that the observed alert activities are part of TP, classify
 - If the admin account was compromised, reset the admin's account credentials. Also, disable/revoke tokens for the compromised admin account and enable multi-factor authentication for all admin accounts.
 - Look for suspicious activities performed by the admin.
 - Check for other suspicious activities across other connectors in the environment.
+
+## See also
+
+- [Overview of alert classification](alert-grading-playbooks.md)
+- [Investigate alerts](investigate-alerts.md)

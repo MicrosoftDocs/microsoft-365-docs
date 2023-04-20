@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 04/17/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -49,7 +50,7 @@ Users included in insider risk management policies must be assigned one of the l
 > [!IMPORTANT]
 > Insider risk management is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that insider risk management is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
 
-If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
+If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](/microsoft-365/commerce/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
 
 ## Recommended actions (preview)
 
@@ -60,7 +61,7 @@ Recommended actions can help your organization quickly get with insider risk man
 The following recommendations are available to help you get started with or maximize your insider risk management configuration:
 
 - **Turn on auditing**: When turned on, user and admin activity in your organization is recorded to the Microsoft 365 audit log. Insider risk policies and analytics scans use this log to detect risk activities.
-- **Get permissions to user risk management**: The level of access you have to insider risk management features depends on which role group you were assigned. To access and configure recommended actions, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Admins* role groups.
+- **Get permissions to use insider risk management**: The level of access you have to insider risk management features depends on which role group you were assigned. To access and configure recommended actions, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Admins* role groups.
 - **Choose policy indicators**: Indicators are essentially the risk management activities you want to detect and investigate. You can choose indicators to track activity across several Microsoft 365 locations and services.
 - **Scan for potential insider risks**: Run an analytics scan to discover potential insider risks occurring in your org. After evaluating results, review recommended policies to set up.
 - **Assign permissions to others**: If there are additional team members who will be responsible for managing insider risk features, you'll need to assign them to the appropriate role groups.
@@ -84,8 +85,8 @@ There are six role groups used to configure insider risk management features. To
 
 - Azure Active Directory [*Global Administrator*](/azure/active-directory/roles/permissions-reference#global-administrator) role
 - Azure Active Directory [*Compliance Administrator*](/azure/active-directory/roles/permissions-reference#compliance-administrator) role
-- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
-- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
+- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/scc-permissions) role group
+- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/scc-permissions) role group
 - *Insider Risk Management* role group
 - *Insider Risk Management Admins* role group
 
@@ -105,7 +106,8 @@ You'll choose from these role group options and solution actions when working wi
 |Access & view forensic evidence captures|Yes|No|No|Yes|No|No|
 |Create forensic evidence capturing request|Yes|Yes|No|No|No|No|
 |Approve forensic evidence capturing requests|Yes|No|No|No|No|Yes|
-|View device health report|Yes|Yes|No|No|No|No|
+|Configure Adaptive Protection|Yes|Yes|No|No|No|No|
+|View Adaptive Protection users tab|Yes|No|Yes|Yes|No|No|
 
 > [!IMPORTANT]
 > Make sure you always have at least one user in the built-in *Insider Risk Management* or *Insider Risk Management Admins* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get into a 'zero administrator' scenario if specific users leave your organization.
@@ -125,16 +127,11 @@ Members of the following roles can assign users to insider risk management role 
 Complete the following steps to add users to this role group:
 
 1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
-
 2. Select **Permissions** in the left nav, and select **Roles** under the **Microsoft Purview solutions** list.
-
 3. Select the *Insider Risk Management* role group, then select **Edit**.
-
 4. Select the **Choose users** tab, then select the checkbox for all users you want to add to the role group.
-
-6. Choose **Select**, then **Next**.
-
-7. Select **Save** to add the users to the role group. Select **Done** to complete the steps.
+5. Choose **Select**, then **Next**.
+6. Select **Save** to add the users to the role group. Select **Done** to complete the steps.
 
 ## Step 2 (required): Enable the Microsoft 365 audit log
 
@@ -142,12 +139,11 @@ Insider risk management uses Microsoft 365 audit logs for user insights and risk
 
 Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step.
 
-For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the Microsoft 365 audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](audit-log-enable-disable.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the Microsoft 365 audit log, see [Search the audit log](audit-log-search.md).
 
 ## Step 3 (optional): Enable and view insider risk analytics insights
 
 Insider risk management analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. This evaluation may also help you determine needs for additional licensing or future optimization of existing policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics) and check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help understand how analytics can help accelerate the identification of potential insider risks and help you to quickly take action.
-
 To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or Microsoft 365 *Global admin* role group.
 
 Complete the following steps to enable insider risk analytics:
@@ -190,7 +186,7 @@ See the [Set up a connector to import healthcare data](import-healthcare-data.md
 
 Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties for High severity level DLP alerts. When configuring an insider risk management policy with any of the **Data leaks** templates, you have the option to assign a specific DLP policy to the policy for these types of alerts.
 
-Data loss policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policies.md#data-leaks).
+Data loss policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policy-templates.md#data-leaks).
 
 > [!IMPORTANT]
 > Make sure you've completed the following:
@@ -203,7 +199,7 @@ A DLP policy is optional when using the following policy templates:
 - Data leaks
 - Data leaks by priority users
 
-See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article  for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
+See the [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) article  for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
 
 ### Configure priority user groups
 
@@ -241,14 +237,24 @@ Having visual context is crucial for security teams during forensic investigatio
 
 See the [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) article for step-by-step guidance to configure forensic evidence for your organization.
 
+### Configure optical character recognition (optional)
+
+Microsoft Purview can scan for sensitive content in documents to help protect those documents from inappropriate exposure. When you enable optical character recognition (OCR) in Microsoft Purview, data classifiers, such as sensitive information types and trainable classifiers, can also detect characters in stand-alone images. After configuring OCR settings (preview), your existing insider risk policies will be applied to both images and documents. 
+
+For the OCR preview, insider risk management supports scanning in the following locations: Windows endpoint devices, SharePoint Online, and Teams. Exchange Online and OneDrive are not supported for the preview. 
+
+OCR settings do not apply to forensic evidence clips in insider risk management. 
+
+[Learn more about setting up OCR scanning and pay-as-you-go billing](ocr-learn-about.md). 
+
 ## Step 5 (required): Configure insider risk settings
 
-[Insider risk settings](insider-risk-management-settings.md) apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control privacy, indicators, intelligent detections, and more.
+[Insider risk settings](insider-risk-management-settings.md) apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control privacy, indicators, intelligent detections, and more.
 
 Before configuring a policy, define the following insider risk settings:
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** from the top-right corner of any page.
 2. On the **Privacy** page, select a privacy setting for displaying usernames for policy alerts.
-3. On the **Indicators** page, select the alert indicators you want to apply to all insider risk policies.
+3. On the **Policy indicators** page, select the alert indicators you want to apply to all insider risk policies.
 
     > [!IMPORTANT]
     > In order to receive alerts for potentially risky activities as defined in your policies, you must select one or more indicators. If indicators aren't configured in Settings, the indicators won't be selectable in insider risk policies.
@@ -259,8 +265,8 @@ Before configuring a policy, define the following insider risk settings:
     - [Alert volume](insider-risk-management-settings.md#alert-volume)
     - [Microsoft Defender for Endpoint alert statuses](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses)
     - [Domains](insider-risk-management-settings.md#domains)
-    - [Sensitive info type exclusion](insider-risk-management-settings.md#sensitive-info-types-exclusion-preview)
-    - [Trainable classifiers exclusion](insider-risk-management-settings.md#trainable- classifier-exclusion-preview)
+    - [Sensitive info type exclusion](insider-risk-management-settings.md#sensitive-info-type-exclusions-preview)
+    - [Trainable classifiers exclusion](insider-risk-management-settings.md#trainable-classifier-exclusion-preview)
     - [File path exclusions](insider-risk-management-settings.md#file-path-exclusions)
     - [Site exclusions](insider-risk-management-settings.md#site-exclusions)
     - [Keyword exclusion](insider-risk-management-settings.md#keyword-exclusion)
@@ -318,13 +324,13 @@ Insider risk management policies include assigned users and define which types o
 
     If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue to Step 23 without defining policy attributes.
 
-14. If you've selected the *Data leaks by risky users* or *Security policy violations by risky users* templates, you'll see options on the **Triggers for this policy** page for integration with communication compliance and HR data connector events. You have the choice to assign risk scores when users send messages that contain potentially threatening, harassing, or discriminatory language or to bring users into the the policy scope after risky user events are reported in your HR system. If you select the **Risk triggers from communication compliance (preview)** option, you can accept the default communication compliance policy (automatically created), choose a previously created policy scope for this trigger, or create another scoped policy. If you select **HR data connector events**, you must configure a HR data connector for your organization.
+14. If you've selected the *Data leaks by risky users* or *Security policy violations by risky users* templates, you'll see options on the **Triggers for this policy** page for integration with communication compliance and HR data connector events. You have the choice to assign risk scores when users send messages that contain potentially threatening, harassing, or discriminatory language or to bring users into the policy scope after risky user events are reported in your HR system. If you select the **Risk triggers from communication compliance (preview)** option, you can accept the default communication compliance policy (automatically created), choose a previously created policy scope for this trigger, or create another scoped policy. If you select **HR data connector events**, you must configure an HR data connector for your organization.
 15. Select **Next** to continue.
 16. If you've selected the *Data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
 17. Select **Next** to continue.
 18. If you've selected **Use custom thresholds for the triggering events**, for each triggering event indicator that you selected in Step 13, choose the appropriate level to generate the desired level of activity alerts. You can use the recommended thresholds, custom thresholds, or thresholds based on anomalous activities (for certain indicators) above the daily norm for users.
 19. Select **Next** to continue.
-20. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
+20. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#policy-indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
 
     > [!IMPORTANT]
     > If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies. You can use the **Turn on indicators** button in the wizard or select indicators on the **Insider risk management** > **Settings** > **Policy indicators** page.

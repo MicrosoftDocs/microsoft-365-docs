@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 11/14/2022
+ms.date: 02/13/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
@@ -24,6 +24,7 @@ search.appverid: met150
 # Deploy and manage Removable Storage Access Control using group policy
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
@@ -44,7 +45,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 ## Deploy using group policy
 
-1. Enable or Disable Removable Storage Access Control:
+1. Enable or Disable Removable Storage Access Control (Optional):
 
    You can enable or disable Device control as follows:
 

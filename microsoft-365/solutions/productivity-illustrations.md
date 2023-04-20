@@ -14,6 +14,8 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 f1.keywords: NOCSH
+ms.date: 09/22/2022
+
 ---
 
 # Microsoft 365 productivity illustrations
@@ -99,7 +101,7 @@ Depending on your environment, some tools are better suited for certain architec
 
 | Item | Description |
 |:-----|:-----|
-|[![Thumb image for Microsoft Defender for Endpoint deployment strategy.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>Updated September 2021| The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li> |
+|[![Thumb image for Microsoft Defender for Endpoint deployment strategy.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>Updated September 2021| The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premises</li><li>Evaluation and local onboarding</li> |
 <!--
 
 <a name="BKMK_O365IDP"></a>
@@ -141,17 +143,6 @@ With Microsoft 365 and other Microsoft cloud technologies, you can provide your 
 Updated June 2021
 
 For more information, see the article for this poster: [Set up your infrastructure for hybrid work with Microsoft 365](empower-people-to-work-remotely.md).
-
-## Microsoft Teams with security isolation
-
-With Microsoft 365, you can configure a private team in Microsoft Teams and use SharePoint site security settings and a unique sensitivity label to encrypt files so that only team members can decrypt them.
-
-[![Microsoft Teams with security isolation poster.](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) | [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br>
-Updated August 2020
-
-For more information, see the article for this poster: [Configure a team with security isolation](secure-teams-security-isolation.md).
-
 
 ## See Also
 

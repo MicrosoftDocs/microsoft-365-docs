@@ -6,10 +6,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
@@ -19,6 +17,7 @@ description: Admins can learn about the application order of protections in Exch
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Order and precedence of email protection
@@ -26,13 +25,13 @@ search.appverid: met150
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email may be flagged by multiple forms of protection. For example, the built-in anti-phishing policies in EOP that are available to all Microsoft 365 customers, and the more robust anti-phishing policies that are available to Microsoft Defender for Office 365 customers. Messages also pass through multiple detection scans for malware, spam, phishing, etc. Given all this activity, there may be some confusion as to which policy is applied.
 
-In general, a policy that's applied to a message is identified in the **X-Forefront-Antispam-Report** header in the **CAT (Category)** property. For more information, see [Anti-spam message headers](anti-spam-message-headers.md).
+In general, a policy that's applied to a message is identified in the **X-Forefront-Antispam-Report** header in the **CAT (Category)** property. For more information, see [Anti-spam message headers](message-headers-eop-mdo.md).
 
 There are two major factors that determine which policy is applied to a message:
 
@@ -40,14 +39,14 @@ There are two major factors that determine which policy is applied to a message:
 
   |Order|Email protection|Category|Where to manage|
   |:---:|---|---|---|
-  |1|Malware|CAT:MALW|[Configure anti-malware policies in EOP](configure-anti-malware-policies.md)|
-  |2|Phishing|CAT:PHSH|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
-  |3|High confidence spam|CAT:HSPM|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
-  |4|Spoofing|CAT:SPOOF|[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|User impersonation (protected users)|UIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)|
-  |6<sup>\*</sup>|Domain impersonation (protected domains)|DIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)|
-  |7|Spam|CAT:SPM|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
-  |8|Bulk|CAT:BULK|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
+  |1|Malware|CAT:MALW|[Configure anti-malware policies in EOP](anti-malware-policies-configure.md)|
+  |2|Phishing|CAT:PHSH|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
+  |3|High confidence spam|CAT:HSPM|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
+  |4|Spoofing|CAT:SPOOF|[Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md)|
+  |5<sup>\*</sup>|User impersonation (protected users)|UIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)|
+  |6<sup>\*</sup>|Domain impersonation (protected domains)|DIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)|
+  |7|Spam|CAT:SPM|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
+  |8|Bulk|CAT:BULK|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
 
   <sup>\*</sup> These features are only available in anti-phishing policies in Microsoft Defender for Office 365.
 
