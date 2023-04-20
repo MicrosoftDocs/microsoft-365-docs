@@ -35,8 +35,6 @@ When you're read to set up and configure Defender for Business, you have can cho
 > [!NOTE]
 > Using the setup wizard is optional. If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own.
 
-Select a tab to learn more about each option.
-
 ## [**Setup wizard**](#tab/Wizard)
 
 > [!IMPORTANT]
