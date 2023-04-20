@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 04/18/2023
+ms.date: 04/20/2023
 ms.reviewer: efratka, jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -43,6 +43,8 @@ When you're ready to set up and configure Defender for Business, you can choose 
 
 > [!IMPORTANT]
 > You must be a global administrator to run the setup wizard. See [Security roles and permissions in Defender for Business](mdb-roles-permissions.md).
+> 
+> Make sure to [add users](mdb-add-users.md) (especially members of your security team) before you run the setup wizard. 
 
 ## How to start the setup wizard
 
