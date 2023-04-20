@@ -90,7 +90,7 @@ To onboard other devices, see [Onboard devices to Defender for Business](mdb-onb
 
 If you're setting up Defender for Business manually, here's the overall process you'll follow:
 
-1. **Get Defender for Business**. Start a trial or paid subscription today. You can choose from the standalone version of Defender for Business, or get it as part of Microsoft 365 Business Premium. See [Get Microsoft Defender for Business](get-defender-business.md).
+1. **Get Defender for Business**. Start a trial or paid subscription today. You can choose from the standalone version of Defender for Business, or get it as part of Microsoft 365 Business Premium. See [Get Microsoft Defender for Business](get-defender-business.md). And, if you're planning to onboard servers, see [How to get Microsoft Defender for Business servers](get-defender-business-servers.md).
 
 2. **Add users and assign licenses**. Assign a license for Defender for Business (or Microsoft 365 Business Premium) to each member of your organization to protect their devices. You'll also want to make sure multifactor authentication is enabled for all users. See [Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).
 
