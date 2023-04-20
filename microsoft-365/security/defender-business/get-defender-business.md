@@ -104,4 +104,4 @@ When you use Defender for Business, you'll work with two main portals: the Micro
 
 ## Next steps
 
-- Proceed to [Step 2: Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md)
+- Proceed to [Step 2: Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).
