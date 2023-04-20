@@ -71,9 +71,9 @@
       items:
       - name: View, edit, and create policies
         href: mdb-view-edit-create-policies.md
-      - name: Policy order
+      - name: Understand policy order
         href: mdb-policy-order.md
-      - name: Attack surface reduction capabilities
+      - name: Set up your attack surface reduction capabilities
         href: mdb-asr.md
       - name: Next-generation protection settings
         href: mdb-next-gen-configuration-settings.md
