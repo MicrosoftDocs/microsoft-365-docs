@@ -106,6 +106,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 ``` 
 
 Here's an [example mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)
+    2. For *upload to cloud service* activity, if you only want to monitor browser and URL on the browser address bar, you can enable *DLP_browser_only_cloud_egress* and *DLP_ax_only_cloud_egress*, here is an example [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/cloud_egress/com.microsoft.wdav.mobileconfig).
  
 ## Offboard macOS devices using Intune
 
