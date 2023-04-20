@@ -152,6 +152,6 @@ For more information, see [New-ComplianceSearchAction](/powershell/module/exchan
 
   After the message is purged and moved to the Purges folder, the message is retained until the hold duration expires. If the hold duration is unlimited, then items are retained until the hold is removed or the hold duration is changed.
 
-- **Why is the search and remove workflow divided among different security and compliance center role groups?**
+- **Why is the search and remove workflow divided among different Microsoft Purview compliance portal role groups?**
 
   As previously explained, a person has to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role to search mailboxes. To delete messages, a person has to be a member of the Organization Management role group or be assigned the Search And Purge management role. This makes it possible to control who can search mailboxes in the organization and who can delete messages.

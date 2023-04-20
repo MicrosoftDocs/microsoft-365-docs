@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/04/2023
+ms.date: 04/17/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -121,6 +121,9 @@ To run the policy in simulation mode:
 - To view the list of samples, you must have the **Data Classification List Viewer** role, and to view file or email contents in the source view, you must have the **Data Classification Content Viewer** role. Global admins don't have these roles by default.
 
 Make sure you have [created the retention labels](file-plan-manager.md#create-retention-labels) you want to apply to items.
+
+> [!NOTE]
+> Now in preview, you can extend your auto-labeling of retention labels to images. For more information, see [Learn about optical character recognition in Microsoft Purview](ocr-learn-about.md).
 
 ## How to create an auto-apply retention label policy
 
