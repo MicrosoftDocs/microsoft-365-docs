@@ -88,7 +88,9 @@ When you configure these solutions to use administrative units, the configuratio
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
 - [Adaptive scopes](purview-adaptive-scopes.md): When adaptive scopes are supported by a solution, restricted administrators can select, create, edit, and view adaptive scopes only from users in assigned administrative units
 - Data lifecycle management and records management:
-    - Policy lookup, disposition review and verification, and Exchange legacy features become unavailable
+    - Policy lookup restricts results to users in assigned administrative units
+    - Disposition review and verification is restricted to users in assigned administrative units
+    - Exchange legacy features become unavailable to restricted administrators
 
 You can add users and groups to administrative units by using the following built-in role groups:
 
