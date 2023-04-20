@@ -75,18 +75,20 @@ For example, you could use administrative units to delegate permissions to admin
 
 The following Microsoft Purview compliance solutions support administrative units:
 
-|**Solution**|**Description of support**|
+|**Solution**|**Configuration support**|
 |:-----------|:-------------------------|
-| [Data lifecycle management](data-lifecycle-management.md) | Role groups, retention policies, retention label policies, and policy lookup |
+| [Data lifecycle management](data-lifecycle-management.md) | Role groups, retention policies, and retention label policies |
 | [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) |
-| [Records management](records-management.md) | Role groups, retention policies, retention label policies, policy lookup, disposition review and verification |
+| [Records management](records-management.md) | Role groups, retention policies, and retention label policies|
 | [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | Role groups and [labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
 
-When you configure these solutions to use administrative units, the configuration flows down to the following features:
+When you configure these solutions to use administrative units, the configuration automatically flows down to the following features:
 
 - Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) alerts are visible only from users in assigned administrative units
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
 - [Adaptive scopes](purview-adaptive-scopes.md): When adaptive scopes are supported by a solution, restricted administrators can select, create, edit, and view adaptive scopes only from users in assigned administrative units
+- For data lifecycle management and records management:
+    - Policy lookup, disposition review and verification, and Exchange legacy features become unavailable
 
 Administrative units are also supported for some built-in role groups. You can add users and groups to administrative units for the following built-in role groups:
 
