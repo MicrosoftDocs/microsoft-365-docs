@@ -64,6 +64,8 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
     - Features 
         - Use System Extensions: `enabled` - required for network extensions on Catalina
         - Use Data Loss Prevention: `enabled`
+        - Use DLP_browser_only_cloud_egress: `enabled`if you want to only monitor browser
+        - Use DLP_ax_only_cloud_egress: `enabled`if you want to only monitor URL on the browser address bar
 
 1. Choose the **Scope** tab.
 
