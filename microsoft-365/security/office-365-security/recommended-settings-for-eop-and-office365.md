@@ -146,7 +146,7 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 
 Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
-The policy named AdminOnlyAccessPolicy enforces the historical capabilities for messages that were quarantined as malware as described in the table [here](quarantine-end-user.md). 
+The policy named AdminOnlyAccessPolicy enforces the historical capabilities for messages that were quarantined as malware as described in the table [here](quarantine-end-user.md).
 
 Users can't release their own messages that were quarantined as malware, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware messages.
 
@@ -188,7 +188,7 @@ Admins can create or use quarantine policies with more restrictive or less restr
 |**Phishing threshold & protection**|||||
 |**Enable spoof intelligence** <br><br> _EnableSpoofIntelligence_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Actions**|||||
-|**If message is detected as spoof** <br><br> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). <br><br> If you select **Quarantine the message** as the action for the spoof verdict, an **Apply quarantine policy** box is available.|
+|**If the message is detected as spoof by spoof intelligence** <br><br> _AuthenticationFailAction_|**Move the message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Move the message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). <br><br> If you select **Quarantine the message** as the action for the spoof verdict, an **Apply quarantine policy** box is available.|
 |**Quarantine policy** for **Spoof** <br><br> _SpoofQuarantineTag_|DefaultFullAccessPolicy¹|DefaultFullAccessPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if spoof detections are quarantined.|
 |**Show first contact safety tip** <br><br> _EnableFirstContactSafetyTips_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|For more information, see [First contact safety tip](anti-phishing-policies-about.md#first-contact-safety-tip).|
 |**Show (?) for unauthenticated senders for spoof** <br><br> _EnableUnauthenticatedSender_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Unauthenticated sender indicators](anti-phishing-policies-about.md#unauthenticated-sender-indicators).|
@@ -248,11 +248,11 @@ Admins can create or use quarantine policies with more restrictive or less restr
 |**Enable mailbox intelligence** <br><br> _EnableMailboxIntelligence_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Enable intelligence for impersonation protection** <br><br> _EnableMailboxIntelligenceProtection_|Off <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|This setting allows the specified action for impersonation detections by mailbox intelligence.|
 |**Actions**|||||
-|**If message is detected as an impersonated user** <br><br> _TargetedUserProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Quarantine the message** <br><br> `Quarantine`|**Quarantine the message** <br><br> `Quarantine`||
+|**If a message is detected as user impersonation** <br><br> _TargetedUserProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Quarantine the message** <br><br> `Quarantine`|**Quarantine the message** <br><br> `Quarantine`||
 |**Quarantine policy** for **user impersonation** <br><br> _TargetedUserQuarantineTag_|DefaultFullAccessPolicy¹|DefaultFullAccessWithNotificationPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if user impersonation detections are quarantined.|
-|**If message is detected as an impersonated domain** <br><br> _TargetedDomainProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Quarantine the message** <br><br> `Quarantine`|**Quarantine the message** <br><br> `Quarantine`||
+|**If a message is detected as domain impersonation** <br><br> _TargetedDomainProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Quarantine the message** <br><br> `Quarantine`|**Quarantine the message** <br><br> `Quarantine`||
 |**Quarantine policy** for **domain impersonation** <br><br> _TargetedDomainQuarantineTag_|DefaultFullAccessPolicy¹|DefaultFullAccessWithNotificationPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if domain impersonation detections are quarantined.|
-|**If mailbox intelligence detects an impersonated user** <br><br> _MailboxIntelligenceProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`||
+|**If mailbox intelligence detects an impersonated user** <br><br> _MailboxIntelligenceProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Move the message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`||
 |**Quarantine policy** for **mailbox intelligence impersonation** <br><br> _MailboxIntelligenceQuarantineTag_|DefaultFullAccessPolicy¹|DefaultFullAccessPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if mailbox intelligence detections are quarantined.|
 |**Show user impersonation safety tip** <br><br> _EnableSimilarUsersSafetyTips_|Off <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Show domain impersonation safety tip** <br><br> _EnableSimilarDomainsSafetyTips_|Off <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`||
@@ -300,7 +300,7 @@ In PowerShell, you use the [New-SafeAttachmentPolicy](/powershell/module/exchang
 
 Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
-The **Quarantine policy** value is blank when you create a new Safe Attachments policy in the Defender portal. This blank value means the default quarantine policy named AdminOnlyAccessPolicy is used. This policy enforces the historical capabilities for messages that were quarantined as malware by Safe Attachments as described in the table [here](quarantine-end-user.md). 
+The policy named AdminOnlyAccessPolicy enforces the historical capabilities for messages that were quarantined as malware as described in the table [here](quarantine-end-user.md).
 
 Users can't release their own messages that were quarantined as malware by Safe Attachments, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware messages.
 

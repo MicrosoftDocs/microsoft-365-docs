@@ -30,7 +30,7 @@ Large enterprises are often exposed to high penalty legal proceedings that deman
 
 All Microsoft Teams 1:1 or group chats are journaled through to the respective users' mailboxes. All standard channel messages are journaled through to the group mailbox representing the team. Files uploaded in standard channels are covered under the eDiscovery functionality for SharePoint Online and OneDrive for Business.
 
-eDiscovery of messages and files in [private channels](/microsoftteams/private-channels.md) works differently than in standard channels. To learn more, see [eDiscovery of private channels](#ediscovery-of-private-and-shared-channels).
+eDiscovery of messages and files in [private channels](/microsoftteams/private-channels) works differently than in standard channels. To learn more, see [eDiscovery of private channels](#ediscovery-of-private-and-shared-channels).
 
 Recorded Teams meetings are stored in the OneDrive for Business account of the user recording the meeting. To learn more, see [eDiscovery (Premium) workflow for content in Microsoft Teams](/microsoft-365/compliance/ediscovery-teams-workflow).
 
@@ -103,7 +103,7 @@ Use the following sections to help identify the private or shared channel to inc
 
 Use the procedure in this section to identify members of a private channel so that you can use eDiscovery tools to search the member's mailbox for content in private channel messages.
 
-Before you perform these steps, make sure you have the [latest version of the Teams PowerShell module](/microsoftteams/teams-powershell-overview.md) installed.
+Before you perform these steps, make sure you have the [latest version of the Teams PowerShell module](/microsoftteams/teams-powershell-overview) installed.
 
 1. Run the following command to get the group ID of the team that contains the shared channels you want to search.
 
@@ -245,4 +245,4 @@ Admins can use eDiscovery to search for content in chats messages in a Teams mee
 - [Microsoft 365 eDiscovery solutions](/microsoft-365/compliance/ediscovery)
 - [Get started with eDiscovery (Standard)](/microsoft-365/compliance/get-started-core-ediscovery)
 - [Teams workflow in eDiscovery (Premium)](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery)
-- [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview.md)
+- [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview)

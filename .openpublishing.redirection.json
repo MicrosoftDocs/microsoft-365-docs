@@ -10844,6 +10844,21 @@
     "source_path": "microsoft-365/syntex/syntex-copilot.md",
     "redirect_url": "/microsoft-365/syntex/",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/mde-p1-maintenance-operations.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/manage-mde-post-migration",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/ediscovery-change-the-size-of-pst-files-when-exporting-results.md",
+    "redirect_url": "/microsoft-365/compliance/ediscovery-export-search-results",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-glossary.yml",
+    "redirect_url": "https://www.microsoft.com/wdsi/threats",
+    "redirect_document_id": false
   }
  ]
 }

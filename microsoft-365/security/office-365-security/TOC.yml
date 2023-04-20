@@ -152,7 +152,7 @@
          items:
          - name: Outbound spam protection
            href: outbound-spam-protection-about.md
-         - name: Configure outbound spam filtering
+         - name: Configure outbound spam policies
            href: outbound-spam-policies-configure.md
          - name: Control automatic external email forwarding
            href: outbound-spam-policies-external-email-forwarding.md
