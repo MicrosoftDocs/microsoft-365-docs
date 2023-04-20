@@ -5,8 +5,6 @@
     items:
     - name: What is Microsoft Defender for Business?
       href: mdb-overview.md
-    - name: Simplified configuration
-      href: mdb-simplified-configuration.md
     - name: Requirements
       href: mdb-requirements.md
     - name: Compare plans for small and medium-sized businesses
