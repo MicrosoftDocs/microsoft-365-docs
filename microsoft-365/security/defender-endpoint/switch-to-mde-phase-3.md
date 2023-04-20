@@ -88,7 +88,7 @@ To verify that your onboarded devices are properly connected to Defender for End
 
 ## Step 3: Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
 
-Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode. You can use PowerShell to do this. On a Windows device, open Windows PowerShell as an administrator.<br/><br/>2. Run following PowerShell cmdlet: `Get-MpComputerStatus|select AMRunningMode`. <br/><br/>3. Review the results. You should see **Passive mode**.
+Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode. You can use PowerShell to do this. On a Windows device, open Windows PowerShell as an administrator.<br/><br/>2. Run the following PowerShell cmdlet: `Get-MpComputerStatus|select AMRunningMode`. <br/><br/>3. Review the results. You should see **Passive mode**.
 
 > [!NOTE]
 > To learn more about passive mode and active mode, see [More details about Microsoft Defender Antivirus states](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
