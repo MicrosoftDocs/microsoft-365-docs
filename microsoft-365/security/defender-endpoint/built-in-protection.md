@@ -21,11 +21,16 @@ f1.keywords: NOCSH
 
 # Built-in protection helps guard against ransomware
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) helps prevent, detect, investigate, and respond to advanced threats, such as ransomware attacks. [Next-generation protection](next-generation-protection.md) and [attack surface reduction](overview-attack-surface-reduction.md) capabilities in Defender for Endpoint were designed to catch emerging threats. In order for the best protection from ransomware and other cyberthreats to be in place, certain settings must be configured. Built-in protection can help by providing you with default settings for better protection.
 
 > [!TIP]
 > **You don't have to wait for built-in protection to come to you**! You can protect your organization's devices now by configuring these capabilities:
-> - [Enable cloud protection](why-cloud-protection-should-be-on-mdav.md)
+> - [Enable cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - [Turn tamper protection on](prevent-changes-to-security-settings-with-tamper-protection.md)
 > - [Set standard attack surface reduction rules to block mode](attack-surface-reduction-rules-deployment.md)
 > - [Enable network protection in block mode](enable-network-protection.md)

@@ -68,9 +68,6 @@ conceptualContent:
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
           text: Microsoft 365 Business Premium FAQ
-        - url: ../business-premium/m365bp-glossary.yml
-          itemType: reference
-          text: Glossary of security concepts
   # Card
     - title: Set up Microsoft 365 Business Premium
       links:

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/30/2023
+ms.date: 04/17/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -90,10 +90,14 @@ Other considerations for simulation mode for auto-apply retention policies:
 
 - A maximum of 30 simulation jobs can be active in a 12-hour time period.
 - A maximum of 100 item samples can be collected per mailbox.
-- If you use [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) for your policy, a maximum of 20,000 locations (any combination of sites and mailboxes)
+- If you use [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) for your policy:
+    - A maximum of 20,000 locations (any combination of sites and mailboxes) is supported.
+    - Because these scopes use dynamic queries that run daily and can take a few days to fully populate, wait and [confirm their membership](purview-adaptive-scopes.md#confirm-scope-membership) before you start simulation.
+    - For the **Microsoft 365 Group mailboxes & sites** location, items stored in [AuxPrimary mailboxes](/powershell/module/exchange/get-mailboxlocation#-mailboxlocationtype) aren't supported.
 - You might need to be assigned additional permissions to see the simulation results. For information about the required roles, see the next section, [Before you begin](#before-you-begin).
 - Simulation counts all items matching the policy criteria at time of simulation. However, when the policy is turned on, only content that isn't already labeled will be eligible for auto-applying retention labels.
-- Because simulation for Exchange locations always runs against emails stored in mailboxes, rather than emails sent and received, you won't see simulation results for emails when the policy condition is for sensitive information types.
+- Although auto-labeling for sensitive information types applies to emails sent and received rather than emails stored in mailboxes, simulation for Exchange locations runs against against emails stored in mailboxes. Using historical data lets you more quickly assess the effectiveness of your chosen sensitive information types and configuration.
+- For the **Microsoft 365 Group mailboxes & sites** and **OneDrive accounts** locations: Items that are stored in [arbitration mailboxes](/powershell/module/exchange/new-mailbox#-arbitration) aren't supported for simulation.
 - Because simulation results are based on items available in the specified locations at the time the simulation job runs, remember to take the following considerations into account when you turn on the policy:
     - Items that are no longer within the specified location won't be labeled.
     - Items that no longer match the policy criteria won't be labeled.
@@ -117,6 +121,9 @@ To run the policy in simulation mode:
 - To view the list of samples, you must have the **Data Classification List Viewer** role, and to view file or email contents in the source view, you must have the **Data Classification Content Viewer** role. Global admins don't have these roles by default.
 
 Make sure you have [created the retention labels](file-plan-manager.md#create-retention-labels) you want to apply to items.
+
+> [!NOTE]
+> Now in preview, you can extend your auto-labeling of retention labels to images. For more information, see [Learn about optical character recognition in Microsoft Purview](ocr-learn-about.md).
 
 ## How to create an auto-apply retention label policy
 
