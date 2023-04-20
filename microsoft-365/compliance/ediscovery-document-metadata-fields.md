@@ -22,7 +22,7 @@ search.appverid:
 
 # Document metadata fields in eDiscovery (Premium)
 
-The following table lists the metadata fields for documents in a review set in a case in Microsoft Purview eDiscovery (Premium). 
+The following table lists the metadata fields for documents in a review set in a case in Microsoft Purview eDiscovery (Premium). For more information about searchable properties when searching Microsoft 365 content locations when you're collecting data for an eDiscovery (Premium) case, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
 
 The table provides the following information:
 
@@ -34,10 +34,6 @@ The table provides the following information:
 > [!NOTE]
 > The **Keywords** field in [review set search](./ediscovery-review-set-search.md) uses Keyword Query Language (KQL). The fields listed in the **Searchable field name** column can be used in the **Keywords** field in a review set search to form complex queries without you having to use the query builder. For more information about KQL, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-<br>
-
-****
-
 |Field name and Display field name|Searchable field name|Exported field name|Description|
 |---|---|---|---|
 |Attachment Content ID|AttachmentContentId|*Not exported*|Attachment content Id of the item.|
@@ -45,6 +41,7 @@ The table provides the following information:
 |Author|Author|Doc_authors|Author from the document metadata.|
 |BCC|Bcc|Email_bcc|Bcc field for message types. Format is **DisplayName \<SMTPAddress\>**.|
 |CC|Cc|Email_cc|Cc field for message types. Format is **DisplayName \<SMTPAddress\>**.|
+|Channel Name|Channel|ChannelName|This is the Teams channel name. Only applies to Microsoft Teams content.|
 |Compliance labels|ComplianceLabels|Compliance_labels|[Retention labels](retention.md) applied to content in Office 365.|
 |Compound Path|CompoundPath|Compound_path|Human readable path that describes the source of the item.|
 |Content*|Content|*Not exported*|Extracted text of the item.|
@@ -126,6 +123,7 @@ The table provides the following information:
 |Modern Attachment Parent ID|*Not searchable*|ModernAttachment_ParentId|The Immutable Id of the document's parent.|
 |Native Extension|NativeExtension|Native_extension|Native extension of the item.|
 |Native file name|NativeFileName|Native_file_name|Native file name of the item.|
+|Native file size|Size|Native_size|Number of bytes of the native item.|
 |NativeMD5|*Not searchable*|Native_MD5|MD5 hash (128-bit hash value) of the file stream.|
 |NativeSHA256|*Not searchable*|Native_SHA_256|SHA256 hash (256-bit hash value) of the file stream.|
 |ND/ET Sort: Excluding attachments|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenation of the email thread (ET) set and Near-duplicate (ND) set. This field is used for efficient sorting at review time. A **D** is prefixed to ND sets and an **E** is prefixed to ET sets.|
@@ -162,14 +160,12 @@ The table provides the following information:
 |Sender/Author|SenderAuthor|*Not exported*|Calculated field comprised of the sender or author of the item.|
 |Sender domain|SenderDomain|Email_sender_domain|Domain of the sender.|
 |Sent|Sent|Email_date_sent|Sent date of the message.<br>Chats: Beginning date from the transcript|
-|Set Order: Inclusive First|SetOrderInclusivesFirst|Set_order_inclusives_first|Sorting field - email and attachments: counter-chronological; documents: pivot first then by descending similarity score.|
 |Set ID|*Not searchable*|Set_ID|Documents of similar content (ND_set) or email within the same email thread (Email_set) share the same Set_ID.|
+|Set Order: Inclusive First|SetOrderInclusivesFirst|Set_order_inclusives_first|Sorting field - email and attachments: counter-chronological; documents: pivot first then by descending similarity score.|
 |SimilarityPercent|*Not searchable*|Similarity_percent|Indicates how similar a document is to the pivot of the near duplicate set.|
-|Native file size|Size|Native_size|Number of bytes of the native item.|
 |Subject|Subject|Email_subject|Subject of the message.|
 |Subject/Title|SubjectTitle|*Not searchable*|Calculated field comprised of the subject or title of the item.|
 |Tags|Tags|Tags|Tags applied in a review set.|
-|Channel Name|Channel|ChannelName|This is the Teams channel name. Only applies to Microsoft Teams content.|
 |Team Name|TeamName|TeamName|**Teams:** Name of team<br>**Yammer:** Community name|
 |Themes list|ThemesList|Themes_list|Themes list as calculated for analytics.|
 |Thread ID|ThreadId|Thread_ID|The Thread ID from email messages and Teams and Yammer conversations. For email messages, all reply messages and attachments share the same Thread ID. For Teams 1:1 and group chats, all transcript files and their family items within the same conversation share the same Thread ID. For more information, see [eDiscovery (Premium) workflow for content in Microsoft Teams](ediscovery-teams-workflow.md).|
@@ -181,6 +177,3 @@ The table provides the following information:
 |Was Remediated|WasRemediated|Was_Remediated|**True** if the item was remediated, otherwise **False**.|
 |Word count|WordCount|Word_count|Number of words in the item.|
 |||||
-
-> [!NOTE]
-> For more information about searchable properties when searching Microsoft 365 content locations when you're collecting data for an eDiscovery (Premium) case, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
