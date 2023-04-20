@@ -431,7 +431,7 @@ If you'd rather use PowerShell to assign quarantine policies in Safe Attachments
   Get-SafeAttachmentPolicy | Format-List Name,Enable,Action,QuarantineTag
   ```
 
-- A new Safe Attachments policy in PowerShell requires a safe attachment policy using the **New-SafeAttachmentPolicy** cmdlet (settings), and an exclusive safe attachment rule using the **New-SafeAttachmentRule** cmdlet (recipient filters). For instructions, see [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Attachments policies](safe-attachments-policies-configure.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies).
+- A new Safe Attachments policy in PowerShell requires a safe attachment policy using the **New-SafeAttachmentPolicy** cmdlet (settings), and an exclusive safe attachment rule using the **New-SafeAttachmentRule** cmdlet (recipient filters). For instructions, see [Use Exchange Online PowerShell to configure Safe Attachments policies](safe-attachments-policies-configure.md#use-exchange-online-powershell-to-configure-safe-attachments-policies).
 
 This example creates a safe attachment policy named Research Department that blocks detected messages and uses the custom quarantine policy named ContosoNoAccess that assigns **No access** permissions to the quarantined messages.
 
