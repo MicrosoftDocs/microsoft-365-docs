@@ -23,7 +23,11 @@ ms.collection:
 
 # Set up and configure Microsoft Defender for Business
 
-This article describes the overall setup process for Defender for Business. 
+This article describes the overall setup process for Defender for Business. The process includes:
+
+- Getting Defender for Business and assigning licenses to users.
+- Assigning permissions to your security team and configuring email notifications about new alerts or vulnerabilities.
+- Onboarding devices and configuring your security policies and settings.
 
 ## Setup options
 
