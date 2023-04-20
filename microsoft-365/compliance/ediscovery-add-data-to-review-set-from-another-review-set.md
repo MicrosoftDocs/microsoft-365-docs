@@ -1,6 +1,6 @@
 ---
 title: "Add data from one review set to another"
-description: "Learn how to select documents from one review set and work with them individually in another set in an Microsoft Purview eDiscovery (Premium) case."
+description: "Learn how to select documents from one review set and work with them individually in another set in a Microsoft Purview eDiscovery (Premium) case."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
