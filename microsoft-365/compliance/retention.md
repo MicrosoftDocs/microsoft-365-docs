@@ -229,11 +229,11 @@ For standard retention labels (they don't mark items as a [record or regulatory 
 
 For retention labels that mark items as a record or a regulatory record:
 
-- Only admins for the container can manually change or remove retention labels that mark items as a record, but can't manually change or remove retention labels that mark items as a regulatory record. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
-
 - These retention labels are never automatically changed during their configured retention period.
 
-- At the end of the retention period, an existing label can be replaced if it's configured to mark items as a record and automatically [apply a different retention label](retention-settings.md#relabeling-at-the-end-of-the-retention-period) or configured to [run a Power Automate flow](retention-label-flow.md) with the compliance action of **Relabel an item at the end of retention**. You can't use these relabeling methods if the existing label is configured to mark items as a regulatory record.
+- Only admins for the container can manually change or remove retention labels that mark items as a record, but can't manually change or remove retention labels that mark items as a regulatory record. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+
+- At the end of the retention period, an existing label can be replaced if it's configured to mark items as a record and automatically [apply a different retention label](retention-settings.md#relabeling-at-the-end-of-the-retention-period) or to [run a Power Automate flow](retention-label-flow.md) with the compliance action of **Relabel an item at the end of retention**. You can't use these relabeling methods if the existing label is configured to mark items as a regulatory record.
 
 #### Monitoring retention labels
 
