@@ -207,7 +207,7 @@ An email or document can have only a single retention label applied to it at a t
 - [Document understanding model for Microsoft Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
 - [Default retention label for SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 - [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
-- Power Automate compliance action of **Apply a retention label on the item**
+- [Power Automate compliance action](/power-automate/overview-cloud) of **Apply a retention label on the item**
 
 If there are multiple auto-apply retention label policies that could apply a retention label, and the content meets the conditions of multiple policies, the retention label for the oldest auto-apply retention label policy (by date created) is selected.
 
