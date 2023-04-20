@@ -69,4 +69,4 @@ To view or edit email notification settings for your company, follow these steps
 
 Proceed to:
 
-- [Step 4: Onboard devices to Defender for Business](mdb-onboard-devices.md)
+- [Step 5: Onboard devices to Defender for Business](mdb-onboard-devices.md)
