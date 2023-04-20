@@ -23,7 +23,7 @@ ms.collection:
 
 # Set up and configure Microsoft Defender for Business
 
-After you have [signed up for Defender for Business](get-defender-business.md), and you have [added users and assigned licenses](mdb-add-users.md), you're ready to set up and configure Defender for Business. 
+This article describes the overall setup process for Defender for Business. 
 
 ## Setup options
 
