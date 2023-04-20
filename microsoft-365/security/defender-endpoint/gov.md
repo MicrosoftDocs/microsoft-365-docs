@@ -167,12 +167,12 @@ These are the known gaps:
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Microsoft Secure Score|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
+|Microsoft Secure Score|![Yes](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
 |Microsoft Threat Experts|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
 
 > [!NOTE]
-> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
-=======
+> <sup>1</sup> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
+
 | Microsoft Defender for Endpoint Security Configuration Management|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
 
 These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
