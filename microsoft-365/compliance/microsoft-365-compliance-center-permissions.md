@@ -172,7 +172,6 @@ Complete the following steps to add users or groups to a Microsoft Purview role 
 8. If the selected users or groups need to be assigned to administrative units, select the users or groups and select **Assign admin units**.
 
 
-
 9. On the **Assign admin units** pane, select the checkbox for all the administrative units you want to assign to the users or groups. Select **Select**.
 10. Select **Next** and **Save** to add the users or groups to the role group. Select **Done** to complete the steps.
 
