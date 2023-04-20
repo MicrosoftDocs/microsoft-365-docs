@@ -82,7 +82,7 @@ The following Microsoft Purview compliance solutions support administrative unit
 | [Records management](records-management.md) | Role groups, retention policies, retention label policies, policy lookup, disposition review and verification |
 | [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | Role groups and [labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
 
-For these solutions, the following features also support administrative units:
+When you configure these solutions to use administrative units, the configuration flows down to the following features:
 
 - Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) alerts are visible only from users in assigned administrative units
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
