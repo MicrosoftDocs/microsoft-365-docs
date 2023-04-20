@@ -75,7 +75,7 @@ sudo apt-get install mdatp
 As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
 
 If you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrading. 
-Caution: Some customers(<1%) are experiencing issues with this method. 
+Caution: Some customers (<1%) experience issues with this method. 
 
  ```bash
 sudo mdatp config real-time-protection --value=disabled
