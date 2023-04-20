@@ -41,7 +41,7 @@ The table provides the following information:
 |Author|Author|Doc_authors|Author from the document metadata.|
 |BCC|Bcc|Email_bcc|Bcc field for message types. The format is *DisplayName \<SMTPAddress\>*.|
 |CC|Cc|Email_cc|Cc field for message types. The format is *DisplayName \<SMTPAddress\>*.|
-|Channel Name|Channel|ChannelName|This is the Teams channel name. Only applies to Microsoft Teams content.|
+|Channel Name|Channel|ChannelName|This field is the Teams channel name. Only applies to Microsoft Teams content.|
 |Compliance labels|ComplianceLabels|Compliance_labels|[Retention labels](retention.md) applied to content in Office 365.|
 |Compound Path|CompoundPath|Compound_path|Human readable path that describes the source of the item.|
 |Content*|Content|*Not exported*|Extracted text of the item.|
