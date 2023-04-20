@@ -56,7 +56,6 @@ The setup wizard is designed to help you set up and configure Defender for Busin
    - **Security Administrator**: A security administrator can view and edit security settings, and take action when threats are detected.
    - **Security Reader**: A security reader can view information in reports, but can't change any security settings. 
 
-
 2. **Set up email notifications**. In this step, you can set up email notifications for your security team. Then, when an alert is generated or a new vulnerability is discovered, your security team won't miss it even if they're away from their desk. [Learn more about email notifications](mdb-email-notifications.md). 
 
 3. **Onboard and configure Windows devices**. In this step, you can onboard your company's Windows devices to Defender for Business quickly. Onboarding devices right away helps to protect those devices from day one. [Learn more about onboarding devices to Defender for Business](mdb-onboard-devices.md).
@@ -86,14 +85,19 @@ To onboard other devices, see [Onboard devices to Defender for Business](mdb-onb
 
 ## The setup and configuration process
 
+If you're setting up Defender for Business manually, here's the overall process you'll follow:
 
-| Step  | Article | Description  |
-|---------|---------|--------|
-| 1 | [Get Defender for Business](get-defender-business.md) | Start a trial or paid subscription today. You can choose from the standalone version of Defender for Business, or get it as part of Microsoft 365 Business Premium. See [Get Microsoft Defender for Business](get-defender-business.md). |
-| 2 | [Add users and assign licenses](mdb-add-users.md) | Assign a license for Defender for Business (or Microsoft 365 Business Premium) to each member of your organization to protect their devices. You'll also want to make sure multifactor authentication is enabled for all users. See [Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md). |
-| 3 | [Assign security roles](mdb-roles-permissions.md)     | People on your security team need certain permissions to perform tasks, such as reviewing detected threats & remediation actions, viewing & editing policies, onboarding devices, and using reports. You can grant these permissions through roles. See [Assign roles and permissions](mdb-roles-permissions.md). <br/><br/>You can also set up email notifications to let your security team know about incidents and vulnerabilities as they arise. See [Set up email notifications](mdb-email-notifications.md).       |
-| 4 | [Onboard devices](mdb-onboard-devices.md)     | You can onboard devices by downloading a script from the Microsoft 365 Defender portal, and then running that script on devices to onboard. Or, if your subscription includes Microsoft Intune, you can use it to enroll devices. See [Onboard devices to Defender for Business](mdb-onboard-devices.md).         |
-| 5 | [Review and edit your security settings and policies](mdb-configure-security-settings.md) | You can choose from several options to configure your security settings and policies, such as the [simplified configuration process](mdb-simplified-configuration.md) in Defender for Business or Microsoft Intune. See [Configure your security settings and policies](mdb-configure-security-settings.md). |
+1. [Get Defender for Business](get-defender-business.md). Start a trial or paid subscription today. You can choose from the standalone version of Defender for Business, or get it as part of Microsoft 365 Business Premium. See [Get Microsoft Defender for Business](get-defender-business.md).
+
+2. [Add users and assign licenses](mdb-add-users.md). Assign a license for Defender for Business (or Microsoft 365 Business Premium) to each member of your organization to protect their devices. You'll also want to make sure multifactor authentication is enabled for all users. See [Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).
+
+3. [Assign roles and permissions to your security team](mdb-roles-permissions.md). People on your security team need certain permissions to perform tasks, such as reviewing detected threats & remediation actions, viewing & editing policies, onboarding devices, and using reports. You can grant these permissions through roles. See [Assign roles and permissions](mdb-roles-permissions.md). 
+
+4. [Set up email notifications](mdb-email-notifications.md) for your security team. That way, as alerts are generated, or new vulnerabilities are discovered, people on your security team will be notified automatically. See [Set up email notifications](mdb-email-notifications.md).
+
+5. [Onboard devices](mdb-onboard-devices.md) to Defender for Business. You can onboard devices by downloading a script from the Microsoft 365 Defender portal, and then running that script on devices to onboard. Or, if your subscription includes Microsoft Intune, you can use it to enroll devices. See [Onboard devices to Defender for Business](mdb-onboard-devices.md). 
+
+6. [Set up and review your security policies and settings](mdb-configure-security-settings.md). You can choose from several options to configure your security settings and policies, such as using the [simplified configuration process](mdb-simplified-configuration.md) in Defender for Business or using Microsoft Intune. See [Configure your security settings and policies](mdb-configure-security-settings.md).
 
 > [!IMPORTANT]
 > If you have Microsoft 365 Business Premium, you have additional capabilities to set up and configure. See [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md).
