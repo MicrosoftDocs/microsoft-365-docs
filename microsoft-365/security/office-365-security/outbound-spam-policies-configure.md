@@ -184,7 +184,7 @@ To change the list of policies from normal to compact spacing, select :::image t
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific policies.
 
-Select an outbound spam policy by clicking anywhere other than the check box next to the name to open the details flyout for the policy.
+Select an outbound spam policy by clicking anywhere in the row other than the check box next to the name to open the details flyout for the policy.
 
 > [!TIP]
 > To see details about other outbound spam policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
@@ -206,7 +206,7 @@ The actions are described in the following subsections.
 
 ### Use the Microsoft 365 Defender portal to modify outbound spam policies
 
-After you select the default outbound spam policy or a custom policy by clicking anywhere other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Create outbound spam policies](#use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies) section earlier in this article.
+After you select the default outbound spam policy or a custom policy by clicking anywhere in the row other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Create outbound spam policies](#use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies) section earlier in this article.
 
 For the default policy, you can't modify the name of the policy, and there are no sender filters to configure (the policy applies to all senders). But, you can modify all other settings in the policy.
 
@@ -214,9 +214,9 @@ For the default policy, you can't modify the name of the policy, and there are n
 
 You can't disable the default outbound spam policy (it's always enabled).
 
-After you select an enabled custom outbound spam policy (the **Status** value is **On**) by clicking anywhere other than the check box next to the name, select :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn off** at the top of the policy details flyout.
+After you select an enabled custom outbound spam policy (the **Status** value is **On**) by clicking anywhere in the row other than the check box next to the name, select :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn off** at the top of the policy details flyout.
 
-After you select a disabled custom outbound spam policy (the **Status** value is **Off**) by clicking anywhere other than the check box next to the name, select :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on** at the top of the policy details flyout.
+After you select a disabled custom outbound spam policy (the **Status** value is **Off**) by clicking anywhere in the row other than the check box next to the name, select :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on** at the top of the policy details flyout.
 
 When you're finished in the policy details flyout, select **Close**.
 
@@ -236,7 +236,7 @@ Outbound spam policies are processed in the order that they're displayed on the 
 
 Outbound spam protection stops for a sender after the first policy is applied. For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
-After you select the custom outbound spam policy by clicking anywhere other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
+After you select the custom outbound spam policy by clicking anywhere in the row other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
 
 - The custom policy with the **Priority** value **0** on the **Anti-spam policies** page has the :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** action at the top of the details flyout.
 - The custom policy with the lowest priority (highest **Priority** value; for example, **3**) has the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** action at the top of the details flyout.
@@ -250,7 +250,7 @@ Back on the **Anti-spam policies** page, the order of the policy in the list mat
 
 You can't remove the default outbound spam policy.
 
-After you select the custom outbound spam policy by clicking anywhere other than the check box next to the name, select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** at the top of the flyout, and then select **Yes** in the warning dialog that opens.
+After you select the custom outbound spam policy by clicking anywhere in the row other than the check box next to the name, select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** at the top of the flyout, and then select **Yes** in the warning dialog that opens.
 
 On the **Anti-spam policies** page, the deleted policy is no longer listed.
 

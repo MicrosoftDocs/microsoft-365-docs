@@ -362,7 +362,7 @@ All actions on existing Training campaigns start on the **Training** tab. To get
 
 ### View Training campaign details
 
-To view the details and reports for a Training campaign on the **Training** tab, select the Training campaign by clicking anywhere other than the check box next to the name.
+To view the details and reports for a Training campaign on the **Training** tab, select the Training campaign by clicking anywhere in the row other than the check box next to the name.
 
 A details page for the Training campaign opens with the following tabs:
 
@@ -405,7 +405,7 @@ To remove the **Training status** column, select :::image type="icon" source="..
 
 To download the displayed results to a RecordExport.csv file in the local Downloads folder, select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png"::: **Export**.
 
-If you select a user from the list by clicking anywhere other than the round check box that appears in the blank area next to the name, the following user information appears in a details flyout:
+If you select a user from the list by clicking anywhere in the row other than the round check box that appears in the blank area next to the name, the following user information appears in a details flyout:
 
 - **User details** section:
   - **Company**

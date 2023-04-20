@@ -68,7 +68,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-When you select a Training module from the list by clicking anywhere other than the check box next to the name, a details flyout appears with the following information:
+When you select a Training module from the list by clicking anywhere in the row other than the check box next to the name, a details flyout appears with the following information:
 
 - **Description**
 - **Source**
