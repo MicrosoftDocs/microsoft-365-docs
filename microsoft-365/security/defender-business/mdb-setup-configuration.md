@@ -27,7 +27,7 @@ After you have [signed up for Defender for Business](get-defender-business.md), 
 
 ## Setup options
 
-When you're read to set up and configure Defender for Business, you have can choose from several options:
+When you're ready to set up and configure Defender for Business, you can choose from several options:
 
 - **Use the setup wizard** to grant access to your security team, set up email notifications for your security team, onboard your company's Windows devices, and apply default security settings to those devices; or 
 - **Work through the setup process manually**, step by step, and complete the setup steps yourself.
