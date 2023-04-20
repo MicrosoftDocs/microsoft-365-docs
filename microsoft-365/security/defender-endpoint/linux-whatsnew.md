@@ -56,31 +56,32 @@ This article is updated frequently to let you know what's new in the latest rele
 
 - While upgrading mdatp to version 101.94.13 or later, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
 
-	```bash
-	echo -c >> /etc/audit/rules.d/audit.rules
-	augenrules --load
-	```
+```bash
+echo -c >> /etc/audit/rules.d/audit.rules
+augenrules --load
+```
 
 - While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
 
 There are two ways to mitigate this upgrade issue:
 
 1. Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
-	Example:
-	```bash
-	sudo apt purge mdatp
-	sudo apt-get install mdatp
-	```
+	
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
 	
 2. As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
 
 If you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrading. 
 Caution: Some customers (<1%) experience issues with this method. 
 
-	 ```bash
-	sudo mdatp config real-time-protection --value=disabled
-	sudo systemctl disable mdatp
-	```
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
 </details>
 
 
