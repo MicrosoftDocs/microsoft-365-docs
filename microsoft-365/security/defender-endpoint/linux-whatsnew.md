@@ -33,6 +33,58 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+	<summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0)</summary>
+
+&ensp;Released: **April 20,2023**<br/>
+&ensp;Published: **April 20, 2023**<br/>
+&ensp;Build: **101.98.58**<br/>
+&ensp;Release version: **30.123022.19858.0**<br/>
+&ensp;Engine version: **1.1.20000.2**<br/>
+&ensp;Signature version: **1.381.3067.0**<br/>
+
+**What's new**
+
+- There are multiple fixes and new changes in this release 
+	- Logging and error reporting improvements for auditd.
+	- Handle failure in reload of auditd configuration.
+	- Handling for empty auditd rule files during MDE install.
+	- Engine Update to 1.1.20000.2 and Signatures Ver: 1.381.3067.0.
+	- Addressed a health issue in mdatp which occur due to selinux denials.
+	- Bug fixes.
+	
+**Known issues**
+
+- While upgrading mdatp to version 101.94.13 or later, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+
+```bash
+echo -c >> /etc/audit/rules.d/audit.rules
+augenrules --load
+```
+
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+
+There are two ways to mitigate this upgrade issue:
+
+Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+	
+As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+If you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrading. 
+Caution: Some customers (<1%) experience issues with this method. 
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+</details>
+
+
+<details>
 	<summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
 
 ## March-2023 Build: 101.98.30 | Release version: 30.123012.19830.0
