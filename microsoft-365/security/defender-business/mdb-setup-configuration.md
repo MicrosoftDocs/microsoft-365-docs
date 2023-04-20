@@ -100,7 +100,7 @@ If you're setting up Defender for Business manually, here's the overall process 
 
 5. **Onboard devices to Defender for Business**. The sooner you get your devices onboarded, the sooner they're protected by Defender for Business. You can onboard devices by downloading a script from the Microsoft 365 Defender portal, and then running that script on devices to onboard. Or, if your subscription includes Microsoft Intune, you can use it to enroll devices. See [Onboard devices to Defender for Business](mdb-onboard-devices.md). 
 
-6. **Set up and review your security policies and settings**. Some security policies and settings are preconfigured with default settings as part of the [simplified configuration process](mdb-simplified-configuration.md) in Defender for Business. Other policies, such as web content filtering and attack surface reduction rules, must be set up. See [Configure your security settings and policies](mdb-configure-security-settings.md).
+6. **Set up and review your security policies and settings**. Some security policies and settings are preconfigured with default settings in Defender for Business. Other policies, such as web content filtering and attack surface reduction rules, must be set up. See [Configure your security settings and policies](mdb-configure-security-settings.md).
 
 > [!IMPORTANT]
 > If you have Microsoft 365 Business Premium, you have additional capabilities to set up and configure. See [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md).

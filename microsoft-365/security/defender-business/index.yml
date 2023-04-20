@@ -32,8 +32,6 @@ landingContent:
             url: mdb-overview.md
           - text: What's new in Defender for Business?
             url: /microsoft-365/business-premium/m365bp-mdb-whats-new
-          - text: The simplified configuration process
-            url: mdb-simplified-configuration.md
           - text: Compare plans for small and medium-sized businesses
             url: compare-mdb-m365-plans.md
           - text: Resources for Microsoft partners
