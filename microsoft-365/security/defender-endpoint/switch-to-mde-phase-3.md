@@ -1,7 +1,6 @@
 ---
 title: Migrate to Microsoft Defender for Endpoint - Onboard
 description: Move to Microsoft Defender for Endpoint. Onboard devices and then uninstall your non-Microsoft solution.
-keywords: migration, Microsoft Defender for Endpoint, edr
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.author: deniseb
@@ -18,7 +17,7 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 04/10/2023
+ms.date: 04/20/2023
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
 ---
@@ -88,7 +87,13 @@ To verify that your onboarded devices are properly connected to Defender for End
 
 ## Step 3: Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
 
-Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode. You can use PowerShell to do this. On a Windows device, open Windows PowerShell as an administrator.<br/><br/>2. Run the following PowerShell cmdlet: `Get-MpComputerStatus|select AMRunningMode`. <br/><br/>3. Review the results. You should see **Passive mode**.
+Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode by using PowerShell. 
+
+1. On a Windows device, open Windows PowerShell as an administrator.
+
+2. Run the following PowerShell cmdlet: `Get-MpComputerStatus|select AMRunningMode`. 
+
+3. Review the results. You should see **Passive mode**.
 
 > [!NOTE]
 > To learn more about passive mode and active mode, see [More details about Microsoft Defender Antivirus states](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
