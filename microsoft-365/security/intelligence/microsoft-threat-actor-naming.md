@@ -126,8 +126,6 @@ Use the following reference table below to understand how our previously publicl
 |DEV-0832|Vanilla Tempest|Financially motivated||
 |DEV-0950|Lace Tempest|Financially motivated|FIN11, TA505|
 
-A [downloadable version of the threat actor mapping](https://download.microsoft.com/download/4/5/2/45208247-c1e9-432d-a9a2-1554d81074d9/microsoft-threat-actor-list.xlsx) is also available.
-
 Read our announcement about the new taxonomy for more information: [https://aka.ms/threatactorsblog](https://aka.ms/threatactorsblog)
 
 ## Putting intelligence into the hands of security professionals
@@ -135,3 +133,20 @@ Read our announcement about the new taxonomy for more information: [https://aka.
 [Intel profiles in Microsoft Defender Threat Intelligence](../defender/defender-threat-intelligence.md) bring crucial threat actor insights directly into defenders' hands so that they can get the context they need as they prepare for and respond to threats.
 
 Additionally, to further operationalize the threat intelligence you get from Microsoft, the Microsoft Defender Threat Intelligence Intel Profiles API provides the most up-to-date threat actor infrastructure visibility in the industry today, enabling threat intelligence and security operations (SecOps) teams to streamline their advanced threat hunting and analysis workflows. Learn more about this API in the documentation: [Use the threat intelligence APIs in Microsoft Graph (preview)](/graph/api/resources/security-threatintelligence-overview).
+
+## Resources
+
+Use the following query on Microsoft 365 Defender and other Microsoft security products supporting the Kusto query language (KQL) to get information about a threat actor using the old name, new name, or industry name:
+
+```kusto
+let TANames = externaldata(PreviousName: string, NewName: string, Origin: string, OtherNames: dynamic)[@"https://raw.githubusercontent.com/microsoft/mstic/master/PublicFeeds/ThreatActorNaming/MicrosoftMapping.json"] with(format="multijson", ingestionMapping='[{"Column":"PreviousName","Properties":{"Path":"$.Previous name"}},{"Column":"NewName","Properties":{"Path":"$.New name"}},{"Column":"Origin","Properties":{"Path":"$.Origin/Threat"}},{"Column":"OtherNames","Properties":{"Path":"$.Other names"}}]'); 
+let GetThreatActorAlias = (Name: string) { 
+TANames 
+| where Name =~ NewName or Name =~ PreviousName or OtherNames has Name 
+}; 
+GetThreatActorAlias("ZINC")
+```
+The following files containing the comprehensive mapping of old threat actor names with their new names are also available:
+
+- [JSON format](https://github.com/microsoft/mstic/blob/master/PublicFeeds/ThreatActorNaming/MicrosoftMapping.json)
+- [downloadable Excel](https://download.microsoft.com/download/4/5/2/45208247-c1e9-432d-a9a2-1554d81074d9/microsoft-threat-actor-list.xlsx)
