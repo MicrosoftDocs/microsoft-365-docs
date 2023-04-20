@@ -558,4 +558,4 @@ To verify that you've successfully created, modified, or removed Safe Links poli
   Get-SafeLinksRule -Identity "<Name>"
   ```
 
-- Use the URL <http://spamlink.contoso.com> to test Safe Links protection. This URL is similar to the GTUBE text string for testing anti-spam solutions. This URL is not harmful, but it will trigger Safe Links protection.
+- Use the URL `http://spamlink.contoso.com` to test Safe Links protection. This URL is similar to the GTUBE text string for testing anti-spam solutions. This URL is not harmful, but it will trigger Safe Links protection.
