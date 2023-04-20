@@ -23,7 +23,11 @@ ms.collection:
 
 # Set up and configure Microsoft Defender for Business
 
-After you have [signed up for Defender for Business](get-defender-business.md), and you have [added users and assigned licenses](mdb-add-users.md), you're ready to set up and configure Defender for Business. You have can choose from several options:
+After you have [signed up for Defender for Business](get-defender-business.md), and you have [added users and assigned licenses](mdb-add-users.md), you're ready to set up and configure Defender for Business. 
+
+## Setup options
+
+When you're read to set up and configure Defender for Business, you have can choose from several options:
 
 - **Use the setup wizard** to grant access to your security team, set up email notifications for your security team, onboard your company's Windows devices, and apply default security settings to those devices; or 
 - **Work through the setup process manually**, step by step, and complete the setup steps yourself.
@@ -79,7 +83,6 @@ To onboard other devices, see [Onboard devices to Defender for Business](mdb-onb
 > [!TIP]
 > - We recommend selecting the "all devices enrolled" option. That way, when Windows devices are enrolled in Intune later on, they'll be onboarded to Defender for Business automatically. 
 > - If you've been managing security policies and settings in the Intune admin center, we recommend switching to the Microsoft 365 Defender portal to manage your devices, policies, and settings. To learn more, see [Choose where to manage security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
-
 
 ## [**Manual setup**](#tab/Manual)
 
