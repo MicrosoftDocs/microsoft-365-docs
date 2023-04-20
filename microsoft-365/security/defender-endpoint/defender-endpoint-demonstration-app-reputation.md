@@ -24,6 +24,11 @@ ms.date: 10/21/2022
 
 # SmartScreen app reputation demonstration
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 Test how Microsoft Defender for Endpoint SmartScreen helps you identify phishing and malware websites based on App reputation.
 
 ## Scenario requirements and setup

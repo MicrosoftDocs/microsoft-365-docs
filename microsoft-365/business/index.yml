@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 Business Premium resources # < 60 chars
-summary: For businesses with up to 300 employees, Microsoft 365 Business Premium enables you to be productive anywhere with Office apps and online meetings. Secure your business with advanced security features, and streamline your IT setup and management with a single solution. # < 160 chars
+summary: For businesses with up to 300 employees, Microsoft 365 Business Premium enables you to be productive anywhere with Microsoft 365 apps and online meetings. Secure your business with advanced security features, and streamline your IT setup and management with a single solution. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -68,9 +68,6 @@ conceptualContent:
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
           text: Microsoft 365 Business Premium FAQ
-        - url: ../business-premium/m365bp-glossary.yml
-          itemType: reference
-          text: Glossary of security concepts
   # Card
     - title: Set up Microsoft 365 Business Premium
       links:
@@ -146,7 +143,7 @@ conceptualContent:
           text: Set up multi-factor authentication on devices
         - url: ../business-premium/m365bp-install-office-apps.md
           itemType: how-to-guide
-          text: Install Office apps on all devices
+          text: Install Microsoft 365 apps on all devices
         - url: ../business-premium/m365bp-protect-pcs-macs.md
           itemType: how-to-guide
           text: Protect unmanaged Windows PCs and Macs
@@ -155,7 +152,7 @@ conceptualContent:
           text: Set up and secure managed devices
 
   # Card
-    - title: Protect email content and Office files
+    - title: Protect email content and Microsoft 365 files
       links:
         - url: ..//security/office-365-security/index.yml
           itemType: overview
