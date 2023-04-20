@@ -29,17 +29,19 @@
         href: mdb-tutorials.md
     - name: Set up and configure Defender for Business
       items:
-      - name: Setup overview
+      - name: How to set up and configure Defender for Business
         href: mdb-setup-configuration.md
       - name: Step 1 - Get Defender for Business
         href: get-defender-business.md
       - name: Step 2 - Add users and assign licenses
         href: mdb-add-users.md
-      - name: Step 3 - Assign security roles
+      - name: Step 3 - Assign security roles and permissions
         href: mdb-roles-permissions.md
-      - name: Step 4 - Onboard devices
+      - name: Step 4 - Set up email notifications for your security team
+        href: mdb-email-notifications.md
+      - name: Step 5 - Onboard devices
         href: mdb-onboard-devices.md
-      - name: Step 5 - Review and edit your security policies
+      - name: Step 6 - Set up and review your security policies
         href: mdb-configure-security-settings.md
     - name: Monitor or manage devices
       items: 
@@ -65,9 +67,7 @@
         href: mdb-respond-mitigate-threats.md
       - name: Review remediation actions
         href: mdb-review-remediation-actions.md
-      - name: Set up email notifications for your security team
-        href: mdb-email-notifications.md
-    - name: View or edit security policies
+    - name: Create, view, or edit security policies
       items:
       - name: View, edit, and create policies
         href: mdb-view-edit-create-policies.md

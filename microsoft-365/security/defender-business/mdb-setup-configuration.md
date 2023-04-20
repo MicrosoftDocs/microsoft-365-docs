@@ -28,12 +28,15 @@ After you have [signed up for Defender for Business](get-defender-business.md), 
 - **Use the setup wizard** to grant access to your security team, set up email notifications for your security team, onboard your company's Windows devices, and apply default security settings to those devices; or 
 - **Work through the setup process manually**, step by step, and complete the setup steps yourself.
 
+> [!NOTE]
+> Using the setup wizard is optional. If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own.
+
 Select a tab to learn more about each option.
 
 ## [**Setup wizard**](#tab/Wizard)
 
 > [!IMPORTANT]
-> You must be a global administrator to run the setup wizard. The person who signed up your company for Microsoft 365 or for Defender for Business is a global administrator by default. See [Security roles and permissions in Defender for Business](mdb-roles-permissions.md).
+> You must be a global administrator to run the setup wizard. See [Security roles and permissions in Defender for Business](mdb-roles-permissions.md).
 
 ## How to start the setup wizard
 
@@ -80,18 +83,12 @@ To onboard other devices, see [Onboard devices to Defender for Business](mdb-onb
 
 ## What happens if I don't use the wizard?
 
-Using the setup wizard is optional. If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. 
+ 
 
 ## [**Manual setup**](#tab/Manual)
 
 ## The setup and configuration process
 
-The following diagram depicts the overall setup and configuration process for Defender for Business. 
-
-> [!TIP]
-> If you used the setup wizard, then you've likely already completed steps 1-3, and possibly step 4. 
-
-:::image type="content" source="media/mdb-setup-process.png" alt-text="Setup and configuration for Defender for Business.":::
 
 | Step  | Article | Description  |
 |---------|---------|--------|
@@ -108,8 +105,6 @@ The following diagram depicts the overall setup and configuration process for De
 
 ## Next steps
 
-1. [Get and provision Defender for Business](get-defender-business.md).
-2. [Add users and assign licenses](mdb-add-users.md). 
-3. [Assign security roles and permissions for your security team](mdb-roles-permissions.md).
-4. [Onboard devices](mdb-onboard-devices.md).
-5. [View and edit your security policies and settings](mdb-configure-security-settings.md).
+- [Onboard more devices](mdb-onboard-devices.md)
+- [View and edit your security policies and settings](mdb-configure-security-settings.md)
+- [View your reports](mdb-reports.md)
