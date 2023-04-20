@@ -1,6 +1,6 @@
 ---
 title: "Document metadata fields in eDiscovery (Premium)"
-description: "This article defines the metadata fields for documents in a review set in a case in Microsoft Purview eDiscovery (Premium) in Microsoft 365."
+description: "This article defines the metadata fields for documents in a review set in a case in Microsoft Purview eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -34,8 +34,8 @@ The table provides the following information:
 > [!NOTE]
 > The **Keywords** field in [review set search](./ediscovery-review-set-search.md) uses Keyword Query Language (KQL). The fields listed in the **Searchable field name** column can be used in the **Keywords** field in a review set search to form complex queries without you having to use the query builder. For more information about KQL, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-|Field name and Display field name|Searchable field name|Exported field name|Description|
-|---|---|---|---|
+|**Field name and Display field name**|**Searchable field name**|**Exported field name**|**Description**|
+|:------------------------------------|:------------------------|:----------------------|:--------------|
 |Attachment Content ID|AttachmentContentId|*Not exported*|Attachment content ID of the item.|
 |Attorney client privilege score|AttorneyClientPrivilegeScore|*Not exported*|Attorney-client privilege model content score.|
 |Author|Author|Doc_authors|Author from the document metadata.|
