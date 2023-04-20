@@ -388,11 +388,11 @@ Select **Yes** in the warning dialog that opens.
 
 On the **Anti-phishing** page, the deleted policy is no longer listed.
 
-## DMARC = OReject for phishing emails
+## DMARC Reject (OReject) for phishing emails
 
 DMARC is an important tool for domain owners to protect their email from malicious actors. Microsoft has recently implemented a policy of **DMARC = OReject**, which sends rejected emails to *quarantine in enterprise* and the *Junk folder in consumer*.
 
-To address customer needs for more control over DMARC policies, three new properties were added to the AntiPhishPolicy. These three policies will allow tenants to choose to honour the sender's DMARC policy, and set the DMARC reject, and the DMARC quarantine actions. All three properties can also be set by command line as well as in the user interface.
+To address customer needs for more control over DMARC policies, three new properties were added to the AntiPhishPolicy. These three policies will allow tenants to choose to honour the sender's DMARC policy, and set the DMARC reject, and the DMARC quarantine actions. All three properties can also be set by **command line** as well as **in the user interface**.
 
 ### DMARC policies
 
@@ -429,7 +429,7 @@ Get-AntiPhishPolicy -Organization o365e5test017.onmicrosoft.com -Identity TestPo
 | ON            | OFF               |
 | Explicit email authentication failures only, but p=reject and p=quarantine actions selectable in anti-phishing policies. |
 | OFF           | OFF               |
-| Explicit email authentication failures only, p=reject and p=quarantine in DMARC records used as actions. Failing emails are handled with **p=orjeect and p=oquaratine**. |
+| Explicit email authentication failures only, p=reject and p=quarantine in DMARC records used as actions. Failing emails are handled with **p=oreject and p=oquaratine**. |
 
 ## Use Exchange Online PowerShell to configure anti-phishing policies
 
