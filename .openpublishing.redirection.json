@@ -10864,6 +10864,11 @@
     "source_path": "microsoft-365/security/defender-business/mdb-use-wizard.md",
     "redirect_url": "/microsoft-365/security/defender-business/mdb-setup-configuration",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/mdb-simplified-configuration.md",
+    "redirect_url": "/microsoft-365/security/defender-business/mdb-setup-configuration",
+    "redirect_document_id": false
   }
  ]
 }
