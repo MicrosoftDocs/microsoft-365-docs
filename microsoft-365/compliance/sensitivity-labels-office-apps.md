@@ -498,7 +498,7 @@ If you need to disable the PDF support in Office apps for Word, Excel, and Power
 
 - **Use the Sensitivity feature in Office to apply sensitivity labels to PDFs**
 
-Set the value to **0**.
+Configure this setting to be **Disabled**.
 
 Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 

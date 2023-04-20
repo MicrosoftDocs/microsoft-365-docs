@@ -34,6 +34,10 @@
       href: plan-for-security-and-compliance.md
     - name: Compliance extensibility
       href: compliance-extensibility.md
+- name: Optical Character Recognition 
+  items:
+    - name: Learn about Optical Character Recognition
+      href: ocr-learn-about.md
 - name: Onboard devices for Microsoft Purview
   items:
     - name: Onboard Windows devices
@@ -1438,8 +1442,6 @@
             href: ediscovery-de-duplication-in-search-results.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
-          - name: Change the size of PST files when exporting search results
-            href: ediscovery-change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
             href: ediscovery-disable-reports-for-exported-content-search-results.md
           - name: Check your search query for errors

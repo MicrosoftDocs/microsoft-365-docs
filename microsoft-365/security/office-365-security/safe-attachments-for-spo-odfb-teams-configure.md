@@ -117,7 +117,7 @@ You can create an alert policy that notifies you and other admins when Safe Atta
 
    When you're finished, click **Next**.
 
-6. On the **Review your settings** page, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
+6. On the **Review your settings** page, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can select **Back** or the specific page in the wizard.
 
    In the **Do you want to turn the policy on right away?** section, leave the default value **Yes, turn it on right away** selected.
 
