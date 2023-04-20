@@ -77,10 +77,10 @@ The following Microsoft Purview compliance solutions support administrative unit
 
 |**Solution**|**Configuration support**|
 |:-----------|:-------------------------|
-| [Data lifecycle management](data-lifecycle-management.md) | Role groups, retention policies, and retention label policies |
+| [Data lifecycle management](data-lifecycle-management.md) | [Role groups, retention policies, and retention label policies](get-started-with-data-lifecycle-management.md#support-for-administrative-units) |
 | [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) |
-| [Records management](records-management.md) | Role groups, retention policies, and retention label policies|
-| [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | Role groups and [labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
+| [Records management](records-management.md) | [Role groups, retention policies, and retention label policies](get-started-with-records-management.md#support-for-administrative-units)|
+| [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | [Role groups, sensitivity label policies, and auto-labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
 
 When you configure these solutions to use administrative units, the configuration automatically flows down to the following features:
 
