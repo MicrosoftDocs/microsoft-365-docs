@@ -15,7 +15,9 @@
       href: ../../business-premium/m365bp-mdb-whats-new.md?toc=/microsoft-365/security/defender-business/toc.json&bc=/microsoft-365/security/defender-business/breadcrumb/toc.json
     - name: Preview features
       href: mdb-preview.md
-    - name: Resources for partners
+  - name: Resources for partners
+    items:
+    - name: Resources for Microsoft partners
       href: mdb-partners.md
     - name: Integration with Microsoft 365 Lighthouse
       href: mdb-lighthouse-integration.md
