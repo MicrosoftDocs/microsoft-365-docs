@@ -50,7 +50,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `RemoteIP` | `string` | IP address that was being connected to |
 | `RemotePort` | `int` | TCP port on the remote device that was being connected to |
 | `RemoteUrl` | `string` | URL or fully qualified domain name (FQDN) that was being connected to |
-| `LocalIP` | `string` | Source IP address which is attempting to communicate from |
+| `LocalIP` | `string` | Source IP address from which communication is attempted |
 | `LocalPort` | `int` | TCP port on the local machine used during communication |
 | `Protocol` | `string` | Protocol used during the communication |
 | `LocalIPType` | `string` | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
