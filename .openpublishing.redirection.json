@@ -10859,6 +10859,16 @@
     "source_path": "microsoft-365/business-premium/m365bp-glossary.yml",
     "redirect_url": "https://www.microsoft.com/wdsi/threats",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/mdb-use-wizard.md",
+    "redirect_url": "/microsoft-365/security/defender-business/mdb-setup-configuration",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/mdb-simplified-configuration.md",
+    "redirect_url": "/microsoft-365/security/defender-business/mdb-setup-configuration",
+    "redirect_document_id": false
   }
  ]
 }

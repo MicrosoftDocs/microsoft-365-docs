@@ -58,13 +58,13 @@ For anti-phishing policy procedures in organizations with Microsoft Defender for
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
-2. On the **Anti-phishing** page, click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create** to open the new anti-phishing policy wizard.
+2. On the **Anti-phishing** page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create** to open the new anti-phishing policy wizard.
 
 3. On the **Policy name** page, configure these settings:
    - **Name**: Enter a unique, descriptive name for the policy.
    - **Description**: Enter an optional description for the policy.
 
-   When you're finished on the **Policy name** page, click **Next**.
+   When you're finished on the **Policy name** page, select **Next**.
 
 4. On the **Users, groups, and domains** page, identify the internal recipients that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts.
@@ -73,7 +73,7 @@ For anti-phishing policy procedures in organizations with Microsoft Defender for
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
-   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
+   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users or groups, enter an asterisk (\*) by itself to see all available values.
 
@@ -91,7 +91,7 @@ For anti-phishing policy procedures in organizations with Microsoft Defender for
    >
    > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy still applies to him.
 
-   When you're finished on the **Users, groups, and domains** page, click **Next**.
+   When you're finished on the **Users, groups, and domains** page, select **Next**.
 
 5. On the **Phishing threshold & protection** page, use the **Enable spoof intelligence** check box to turn spoof intelligence on or off. This setting is selected by default, and we recommend that you leave it selected. You specify the action to take on messages from blocked spoofed senders on the next page.
 
@@ -100,7 +100,7 @@ For anti-phishing policy procedures in organizations with Microsoft Defender for
    > [!NOTE]
    > You don't need to turn off spoof intelligence if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-   When you're finished on the **Phishing threshold & protection** page, click **Next**.
+   When you're finished on the **Phishing threshold & protection** page, select **Next**.
 
 6. On the **Actions** page, configure the following settings:
 
@@ -117,15 +117,15 @@ For anti-phishing policy procedures in organizations with Microsoft Defender for
 
      To turn on a setting, select the check box. To turn it off, clear the check box.
 
-   When you're finished on the **Actions** page, click **Next**.
+   When you're finished on the **Actions** page, select **Next**.
 
-7. On the **Review** page, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
+7. On the **Review** page, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can select **Back** or the specific page in the wizard.
 
-   When you're finished on the **Review** page, click **Submit**.
+   When you're finished on the **Review** page, select **Submit**.
 
-8. On the **New anti-phishing policy created** page, you can click the links to view the policy, view anti-phishing policies, and learn more about anti-phishing policies.
+8. On the **New anti-phishing policy created** page, you can select the links to view the policy, view anti-phishing policies, and learn more about anti-phishing policies.
 
-   When you're finished on the **New anti-phishing policy created** page, click **Done**.
+   When you're finished on the **New anti-phishing policy created** page, select **Done**.
 
    Back on the **Anti-phishing** page, the new policy is listed.
 
@@ -141,7 +141,7 @@ On the **Anti-phishing** page, the following properties are displayed in the lis
   - **On** or **Off** for other anti-spam policies.
 - **Priority**: For more information, see the [Set the priority of custom anti-spam policies](#use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-anti-phishing-policies) section.
 
-To change the list of policies from normal to compact spacing, click :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
 
 Use :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the policies by **Time range** (creation date) or **Status**.
 
@@ -149,10 +149,10 @@ Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" bor
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of policies to a CSV file.
 
-Select a policy by clicking anywhere other than the check box next to the name to open the details flyout for the policy. 
+Select a policy by clicking anywhere in the row other than the check box next to the name to open the details flyout for the policy. 
 
 > [!TIP]
-> To see details about other anti-phishing policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the flyout.
+> To see details about other anti-phishing policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
 
 ## Use the Microsoft 365 Defender portal to take action on anti-phishing policies
 
@@ -165,7 +165,7 @@ Select a policy by clicking anywhere other than the check box next to the name t
      - **Disable selected policies**.
      - **Delete selected policies**.
 
-     :::image type="content" source="../../media/anti-phishing-policies-main-page.png" alt-text="The Ati-phishing page with a policy select and the More actions control expanded." lightbox="../../media/anti-phishing-policies-main-page.png":::
+     :::image type="content" source="../../media/anti-phishing-policies-main-page.png" alt-text="The Anti-phishing page with a policy selected and the More actions control expanded." lightbox="../../media/anti-phishing-policies-main-page.png":::
 
    - Select the policy from the list by clicking anywhere in the row other than the check box next to the name. Some or all following actions are available in the details flyout that opens:
      - Modify policy settings by clicking **Edit** in each section (custom policies or the default policy)
@@ -179,11 +179,11 @@ The actions are described in the following subsections.
 
 ### Use the Microsoft 365 Defender portal to modify anti-phishing policies
 
-After you select the default anti-phishing policy or a custom policy by clicking anywhere other than the check box next to the name, the policy settings are shown in the details flyout that opens. Click **Edit** in each section to modify the settings within the section. For more information about the settings, see the [create anti-phishing policies](#use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies) section earlier in this article.
+After you select the default anti-phishing policy or a custom policy by clicking anywhere in the row other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [create anti-phishing policies](#use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies) section earlier in this article.
 
 For the default policy, you can't modify the name of the policy, and there are no recipient filters to configure (the policy applies to all recipients). But, you can modify all other settings in the policy.
 
-For the anti-phishing policies named **Standard Preset Security Policy** and **Strict Preset Security Policy** that are associated with [preset security policies](preset-security-policies.md), you can't modify the policy settings in the details flyout. You can click :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View preset security policies** in the details flyout to go to the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies> to modify the preset security policies.
+For the anti-phishing policies named **Standard Preset Security Policy** and **Strict Preset Security Policy** that are associated with [preset security policies](preset-security-policies.md), you can't modify the policy settings in the details flyout. Instead, you select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View preset security policies** in the details flyout to go to the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies> to modify the preset security policies.
 
 ### Use the Microsoft 365 Defender portal to enable or disable custom anti-phishing policies
 
@@ -193,13 +193,13 @@ You can't enable or disable the anti-phishing policies that are associated with 
 
 After you select an enabled custom anti-phishing policy (the **Status** value is **On**), use either of the following methods to disable it:
 
-- **On the Anti-phishing page**: Click :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> **Disable selected policies**.
-- **In the details flyout of the policy**: Click :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn off** at the top of the flyout.
+- **On the Anti-phishing page**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> **Disable selected policies**.
+- **In the details flyout of the policy**: Select :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn off** at the top of the flyout.
 
 After you select a disabled custom anti-phishing policy (the **Status** value is **Off**), use either of the following methods to enable it:
 
-- **On the Anti-phishing page**: Click :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> **Enable selected policies**.
-- **In the details flyout of the policy**: Click :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on** at the top of the flyout.
+- **On the Anti-phishing page**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> **Enable selected policies**.
+- **In the details flyout of the policy**: Select :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on** at the top of the flyout.
 
 On the **Anti-phishing** page, the **Status** value of the policy is now **On** or **Off**.
 
@@ -208,7 +208,7 @@ On the **Anti-phishing** page, the **Status** value of the policy is now **On** 
 Anti-phishing policies are processed in the order that they're displayed on the **Anti-phishing** page:
 
 - The anti-phishing policy named **Strict Preset Security Policy** that's associated with the Strict preset security policy is always applied first (if the Strict preset security policy is [enabled](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users)).
-- The anti-phishing policy named **Standard Preset Security Policy** that's associated with the Standard preset security policy is always applied next (if the Standard preset security policy is [enabled](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users)).
+- The anti-phishing policy named **Standard Preset Security Policy** that's associated with the Standard preset security policy is always applied next (if the Standard preset security policy is enabled).
 - Custom anti-phishing policies are applied next in priority order (if they're enabled):
   - A lower priority value indicates a higher priority (0 is the highest).
   - By default, a new policy is created with a priority that's lower than the lowest existing custom policy (the first is 0, the next is 1, etc.).
@@ -217,13 +217,13 @@ Anti-phishing policies are processed in the order that they're displayed on the 
 
 Anti-phishing protection stops for a recipient after the first policy is applied. For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
-After you select the custom anti-phishing policy by clicking anywhere other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
+After you select the custom anti-phishing policy by clicking anywhere in the row other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
 
 - The custom policy with the **Priority** value **0** on the **Anti-Phishing** page has the :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** action at the top of the details flyout.
 - The custom policy with the lowest priority (highest **Priority** value; for example, **3**) has the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** action at the top of the details flyout.
 - If you have three or more policies, the policies between **Priority** 0 and the lowest priority have both the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** and the :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** actions at the top of the details flyout.
 
-When you're finished in the policy details flyout, click **Close**.
+When you're finished in the policy details flyout, select **Close**.
 
 Back on the **Anti-phishing** page, the order of the policy in the list matches the updated **Priority** value.
 
@@ -234,9 +234,9 @@ You can't remove the default anti-phishing policy or the anti-phishing policies 
 After you select the custom anti-phishing policy, use either of the following methods to remove it:
 
 - **On the Anti-phishing page**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> **Delete selected policies**.
-- **In the details flyout of the policy**: Click :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** at the top of the flyout.
+- **In the details flyout of the policy**: Select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** at the top of the flyout.
 
-Click **Yes** in the warning dialog that opens.
+Select **Yes** in the warning dialog that opens.
 
 On the **Anti-phishing** page, the deleted policy is no longer listed.
 
