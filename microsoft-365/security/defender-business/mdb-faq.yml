@@ -117,7 +117,7 @@ sections:
 
           When you enroll devices in Intune and onboard those devices to Defender for Business, you create a connection between Intune and Defender for Business.
            
-          You can manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-simplified-configuration.md). These policies are visible in Intune. To manage other settings, such as attack surface reduction policies, you'll use Intune.  
+          You can manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-setup-configuration.md). These policies are visible in Intune. To manage other settings, such as attack surface reduction policies, you'll use Intune.  
 
       - question: If I'm already using Microsoft 365 Business Premium, why do I need Defender for Business?
         answer: |
@@ -130,7 +130,7 @@ sections:
 
       - question: What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
         answer: |
-          Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's devices (also referred to as endpoints). Defender for Business was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-simplified-configuration.md) and [device onboarding options](mdb-onboard-devices.md), Defender for Business enables customers who don't necessarily have a security background to set up, configure, and use Defender for Business to protect company devices.  
+          Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's devices (also referred to as endpoints). Defender for Business was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-setup-configuration.md) and [device onboarding options](mdb-onboard-devices.md), Defender for Business enables customers who don't necessarily have a security background to set up, configure, and use Defender for Business to protect company devices.  
 
           Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats.  
           
