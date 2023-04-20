@@ -209,11 +209,11 @@ An email or document can have only a single retention label applied to it at a t
 - [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
 - Power Automate compliance action of **Apply a retention label on the item**
 
-For standard retention labels (they don't mark items as a [record or regulatory record](records-management.md#records)):
+**For standard retention labels (they don't mark items as a [record or regulatory record](records-management.md#records)):**
 
 - Admins and end users can manually change or remove an existing retention label that's applied on content.
 
-- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with the following exceptions:
+- When items already have a retention label applied, the existing label won't be automatically removed or replaced by another retention label with the following exceptions:
     
     - At the end of the retention period, the existing label is configured to automatically [apply a different retention label](retention-settings.md#relabeling-at-the-end-of-the-retention-period), or the existing label is configured to [run a Power Automate flow](retention-label-flow.md) with the compliance action of **Relabel an item at the end of retention**.
     
@@ -225,11 +225,15 @@ For standard retention labels (they don't mark items as a [record or regulatory 
         - Default label for SharePoint: [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
         - Default label for Outlook: [Applying a default retention label to an Outlook folder](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
-- If there are multiple auto-apply label policies that could apply a retention label, and content meets the conditions of multiple policies, the retention label for the oldest auto-apply label policy (by date created) is applied.
+**For retention labels that mark items as a record or a regulatory record:**
 
-For retention labels that mark items as a record or a regulatory record:
+- Only admins for the container can manually change or remove retention labels that mark items as a record, but can't manually change or remove retention labels that mark items as a regulatory record. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
-- These labels are never automatically changed during their configured retention period. Only admins for the container can manually change or remove retention labels that mark items as a record, but not regulatory records. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+- These retention labels are never automatically changed during their configured retention period.
+
+- At the end of the retention period, an existing label can be replaced if it's configured to mark items as a record and automatically [apply a different retention label](retention-settings.md#relabeling-at-the-end-of-the-retention-period) or configured to [run a Power Automate flow](retention-label-flow.md) with the compliance action of **Relabel an item at the end of retention**. You can't use these relabeling methods if the existing label is configured to mark items as a regulatory record.
+
+If there are multiple auto-apply retention label policies that could apply a retention label, and the content meets the conditions of multiple policies, the retention label for the oldest auto-apply retention label policy (by date created) is applied.
 
 #### Monitoring retention labels
 
