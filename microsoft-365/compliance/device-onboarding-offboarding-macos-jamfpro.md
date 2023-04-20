@@ -121,6 +121,8 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
     - Features
         - Use System Extensions: `enabled` - required for network extensions on Catalina
         - Use Data Loss Prevention: `enabled`
+        - Use DLP_browser_only_cloud_egress: `enabled`if you want to only monitor browser
+        - Use DLP_ax_only_cloud_egress: `enabled`if you want to only monitor URL on the browser address bar
     - Antivirus engine > Passive mode: `true|false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
 
 1. Choose the **Scope** tab.
@@ -128,6 +130,8 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 1. Choose the groups to deploy this configuration profile to.
 
 1. Choose **Save**.
+
+
 
 ### Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)
 
