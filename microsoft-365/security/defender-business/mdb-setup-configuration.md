@@ -44,7 +44,7 @@ When you're ready to set up and configure Defender for Business, you can choose 
 > [!IMPORTANT]
 > You must be a global administrator to run the setup wizard. See [Security roles and permissions in Defender for Business](mdb-roles-permissions.md).
 > 
-> Make sure to add users (especially members of your security team) before you run the setup wizard. 
+> Make sure to [add users](mdb-add-users.md) (especially members of your security team) before you run the setup wizard. 
 
 ## How to start the setup wizard
 
