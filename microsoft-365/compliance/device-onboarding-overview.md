@@ -153,6 +153,7 @@ You can check the **Configuration status** and the **Policy sync status** of all
 
 It can take up to 2 hours for the sync status to get reflected on the dashboard. Devices must be online for the policy update to happen. If the status isn't updating, check the last time the device was seen.
 
+Required KB for this Preview Feature: [KB5023773](https://support.microsoft.com /topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23)
 
 ## See also
 
