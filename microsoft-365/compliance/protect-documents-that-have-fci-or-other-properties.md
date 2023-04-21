@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 09/17/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -40,7 +40,7 @@ In Microsoft 365, you can create a DLP policy that identifies documents that hav
 
 A DLP policy simply looks for a specific property name/value pair. Any document property can be used, as long as the property has a corresponding managed property for SharePoint search. For example, a SharePoint site collection might use a content type named **Trip Report** with a required field named **Customer**. Whenever a person creates a trip report, they must enter the customer name. This property name/value pair can also be used in a DLP policy—for example, if you want a rule that blocks access to the document for guests when the **Customer** field contains **Contoso**.
 
-If you want to apply your DLP policy to content with specific Microsoft 365 labels, you should not follow the steps here. Instead, learn how to [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+If you want to apply your DLP policy to content with specific Microsoft 365 labels, you should not follow the steps here. Instead, refer to l[Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md#create-and-deploy-data-loss-prevention-policies).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -135,10 +135,10 @@ One rule blocks access to content where the **Personally Identifiable Informatio
 
 Doing the steps in the previous sections will create a DLP policy that will quickly detect content with that property, but only if that content is newly uploaded (so that the content's indexed), or if that content is old but just edited (so that the content's re-indexed).
 
-To detect content with that property everywhere, you may want to manually request that your library, site, or site collection be re-indexed, so that the DLP policy is aware of all the content with that property. In SharePoint Online, content is automatically crawled based on a defined crawl schedule. The crawler picks up content that has changed since the last crawl and updates the index. If you need your DLP policy to protect content before the next scheduled crawl, you can take these steps.
+To detect content with that property everywhere, you may want to manually request that your library, site, or site collection be re-indexed, so that the DLP policy is aware of all the content with that property. In SharePoint Online, content is automatically crawled when content is edited. Specific SharePoint sites can't be manually re-indexed. 
 
 > [!CAUTION]
-> Re-indexing a site can cause a massive load on the search system. Don't re-index your site unless your scenario absolutely requires it.
+> Re-indexing a site for DLP scenarios is not possible.
 
 For more information, see [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
 
@@ -151,11 +151,7 @@ For more information, see [Manually request crawling and re-indexing of a site, 
 ## More information
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
-
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Send notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md)
-
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
-
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)

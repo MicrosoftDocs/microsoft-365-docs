@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/28/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -85,7 +86,7 @@ Risk management activities may not occur as isolated events. These risks are fre
 
 These insider risk management policies can use specific indicators and the order that they occur to detect each step in a sequence of risk. For policies created from the *Data leaks* and *Data leaks by priority user* templates, you can also select which sequences trigger the policy. File names are used when mapping activities across a sequence. These risks are organized into four main categories of activity:
 
-- **Collection**: Detects download activities by in-scope policy users. Example risk management activities include downloading files from SharePoint sites or moving files into a compressed folder.
+- **Collection**: Detects download activities by in-scope policy users. Example risk management activities include downloading files from SharePoint sites, third-party cloud services, unallowed domains, or moving files into a compressed folder.
 - **Exfiltration**: Detects sharing or extraction activities to internal and external sources by in-scope policy users. An example risk management activity includes sending emails with attachments from your organization to external recipients.
 - **Obfuscation**: Detects the masking of potentially risky activities by in-scope policy users. An example risk management activity includes renaming files on a device.
 - **Clean-up**: Detects deletion activities by in-scope policy users. An example risk management activity includes deleting files from a device.
@@ -225,7 +226,7 @@ Complete the following steps to manage an existing policy:
 17. Select **Next** to continue.
 18. If you've selected **Use custom thresholds for the triggering events**, for each triggering event indicator that you selected in Step 13, choose the appropriate level to generate the desired level of activity alerts.
 19. Select **Next** to continue.
-20. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
+20. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#policy-indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
 
     > [!IMPORTANT]
     > If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies. You can use the **Turn on indicators** button in the wizard or select indicators on the **Insider risk management** > **Settings** > **Policy indicators** page.
@@ -249,9 +250,9 @@ Complete the following steps to copy an existing policy:
 3. On the policy details page, select Copy.
 4. In the policy wizard, name the new policy and update the policy configuration as needed.
 
-## Immediately start scoring security-related user activity
+## Immediately start scoring user activity
 
-There may be scenarios where you need to immediately start assigning risk scores to users with insider risk policies outside of the insider risk management triggering event workflow. Use **Start scoring activity for users** on the **Policies** tab to manually add a user (or users) to one or more insider risk policies for a specific amount of time, to immediately start assigning risk scores to their activity, and to bypass the requirement for a user to have a triggering indicator (like a DLP policy match). You can also add a reason for adding the user to the policy, which will appear on the users' activity timeline. Users manually added to policies are displayed in the **Users** dashboard and alerts are created if activity meets the policy alert thresholds. You can add up to 4,000 users per policy when adding users for immediate scoring.
+There may be scenarios where you need to start assigning risk scores to users with insider risk policies outside of the insider risk management triggering event workflow. Use **Start scoring activity for users** on the **Policies** tab to manually add a user (or users) to one or more insider risk policies for a specific amount of time, to  start assigning risk scores to their activity, and to bypass the requirement for a user to have a triggering indicator (like a DLP policy match or an Employment End Date from the HR Connector). You can also add a reason for adding the user to the policy, which will appear on the users' activity timeline. Users manually added to policies are displayed in the **Users** dashboard and alerts are created if the activity meets the policy alert thresholds. At any given time, you can have up to 4,000 users in scope that have been manually added using the **Start scoring activity for users** feature.
 
 Some scenarios where you may want to immediately start scoring user activities:
 

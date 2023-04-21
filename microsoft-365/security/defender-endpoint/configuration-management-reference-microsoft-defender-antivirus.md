@@ -39,8 +39,8 @@ search.appverid: met150
 You can manage and configure Microsoft Defender Antivirus with the following tools:
 
 - [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
-- [Microsoft Intune](/mem/intune/protect/endpoint-security-antivirus-policy) (now part of Microsoft Endpoint Manager)
-- [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) (now part of Microsoft Endpoint Manager)
+- [Microsoft Intune](/mem/intune/protect/endpoint-security-antivirus-policy)
+- [Microsoft Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 - [Group Policy](./use-group-policy-microsoft-defender-antivirus.md)
 - [PowerShell cmdlets](./use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Windows Management Instrumentation (WMI)](./use-wmi-microsoft-defender-antivirus.md)

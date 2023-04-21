@@ -113,7 +113,7 @@ When you're done, you can encrypt documents and files using DKE. For information
 
 Install these prerequisites on the computer where you want to install the DKE service.
 
-**.NET Core 3.1 SDK**. Download and install the SDK from [Download .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1).
+**.NET Core 7.0 SDK**. Download and install the SDK from [Download .NET Core 7.0](https://dotnet.microsoft.com/download/dotnet/7.0).
 
 **Visual Studio Code**. Download Visual Studio Code from [https://code.visualstudio.com/](https://code.visualstudio.com). Once installed, run Visual Studio Code and select **View** \> **Extensions**. Install these extensions.
 

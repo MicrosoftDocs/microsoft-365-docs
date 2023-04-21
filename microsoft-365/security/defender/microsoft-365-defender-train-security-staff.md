@@ -22,6 +22,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 01/03/2022
 ---
 
 # Train your security staff for Microsoft 365 Defender

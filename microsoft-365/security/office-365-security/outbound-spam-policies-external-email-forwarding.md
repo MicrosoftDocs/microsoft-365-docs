@@ -1,14 +1,16 @@
 ---
-title: Configuring and controlling external email forwarding in Microsoft 365.
+title: Configuring and controlling external email forwarding in Microsoft 365
 f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 08/18/2022
+ms.date: 02/17/2023
 audience: ITPro
 ms.topic: overview
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 ms.localizationpriority: medium
 ms.assetid:
 ms.custom:
@@ -84,7 +86,7 @@ The following information is required to create the mail flow rule in the Exchan
   This condition will match any value for the header.
 
 - (Optional) **Do the following** (action): You can configure an optional action. For example, you can use the action **Modify the message properties** \> **set a message header**, with the header name **X-Forwarded** and the value **True**. But, configuring an action is not required.
-- Set **Audit this rue with severity level** to the value **Low**, **Medium**, or **High**. This setting allows you to use the [Exchange transport rule report](reports-email-security.md#exchange-transport-rule-report) to get details of users that are forwarding.
+- Set **Audit this rule with severity level** to the value **Low**, **Medium**, or **High**. This setting allows you to use the [Exchange transport rule report](reports-email-security.md#exchange-transport-rule-report) to get details of users that are forwarding.
 
 :::image type="content" source="../../media/mail-flow-rule-for-forwarded-messages.png" alt-text="The Mail flow rule properties in the EAC for a rule to identify forwarded messages" lightbox="../../media/mail-flow-rule-for-forwarded-messages.png":::
 

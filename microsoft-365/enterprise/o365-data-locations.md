@@ -3,7 +3,8 @@ title: "Microsoft 365 data locations"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.reviewer: dmwmsft
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -25,7 +26,7 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 
 See the following links to understand workload data location.
 
-- Exchange Online (EXO)  [Exchange Online Data Location](m365-dr-workload-exo.md#how-can-i-determine-customer-data-location)
+- Exchange Online [Data Residency for Exchange Online](/microsoft-365/enterprise/m365-dr-workload-exo)
 - SharePoint Online (ODSP) and OneDrive for Business [Data Location](m365-dr-workload-spo.md#how-can-i-determine-customer-data-location)
 - Microsoft Teams [Data Location](m365-dr-workload-teams.md#how-can-i-determine-customer-data-location)
 - Microsoft Defender for Office (MDO P1)  [Data Location](m365-dr-workload-mdo-p1.md#how-can-i-determine-customer-data-location)
@@ -46,6 +47,7 @@ See the following links to understand workload data location.
 - Forms [Data Location](m365-dr-workload-other.md#forms)
 - Intune [Data Location](m365-dr-workload-other.md#intune)
 - Planner [Data Location](m365-dr-workload-other.md#planner)
+- Viva Goals [Data Location](m365-dr-workload-other.md#viva-goals)
 - Viva Insights – Advanced, Mgr, Leader [Data Location](m365-dr-workload-other.md#viva-insights--advanced-mgr-leader)
 - Viva Insights – Personal [Data Location](m365-dr-workload-other.md#viva-insights--personal)
 - Viva Learning [Data Location](m365-dr-workload-other.md#viva-learning)
