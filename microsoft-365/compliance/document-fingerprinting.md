@@ -151,11 +151,6 @@ Currently, you can create a document fingerprint only in [Security & Compliance 
 DLP uses Sensitive information types(SIT) to detect sensitive content. To create a custom SIT based on a document fingerprint, use the **New-DlpSensitiveInformationType** cmdlet. The following example creates a new document fingerprint named “Contoso Customer Confidential” based on the file C:\My Documents\Contoso Customer Form.docx.
 
 ```powershell
-$Employee_Template = ([System.IO.File]::ReadAllBytes('C:\My Documents\Contoso Employee Template.docx'))
-$Employee_Fingerprint = New-DlpFingerprint -FileData $Employee_Template -Description "Contoso Employee Template"
-```
-
-```powershell
 $Employee_Form = ([System.IO.File]::ReadAllBytes('C:\My Documents\Contoso Customer Form.docx'))
 
 New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -FileData $Employee_Form -ThresholdConfig @{low=40;medium=60;high=80} -IsExact $false -Description "Message contains Contoso customer information."
