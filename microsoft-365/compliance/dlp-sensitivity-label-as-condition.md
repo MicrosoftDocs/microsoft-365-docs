@@ -30,9 +30,7 @@ You can use [sensitivity labels](sensitivity-labels.md) as a condition in DLP po
 - Exchange Online email messages
 - SharePoint Online
 - OneDrive for Business sites
-- Windows 10 devices (Endpoint DLP)
-- Windows 11 devices (Endpoint DLP)
-- MacOS devices (Endpoint DLP)
+- Devices
 
 Sensitivity labels appear as an option in the **Content contains** list.
 
