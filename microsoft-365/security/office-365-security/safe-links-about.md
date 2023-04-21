@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 f1_keywords:
   - '197503'
-ms.date: 1/31/2023
+ms.date: 4/20/2023
 ms.localizationpriority: medium
 ms.collection:
   - Strat_O365_IP
@@ -41,18 +41,18 @@ ms.service: microsoft-365-security
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](defender-for-office-365.md). If you're using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Safe Links is a feature in [Defender for Office 365](defender-for-office-365.md) that provides URL scanning and rewriting of inbound email messages in mail flow, and time-of-click verification of URLs and links in email messages, Teams messages and other locations. Safe Links scanning occurs in addition to the regular [anti-spam](anti-spam-protection-about.md) and [anti-malware](anti-malware-protection-about.md) in inbound email messages in Exchange Online Protection (EOP). Safe Links scanning can help protect your organization from malicious links that are used in phishing and other attacks.
+In organizations with Microsoft Defender for Office 365, Safe Links scanning protects your organization from malicious links that are used in phishing and other attacks. Specifically, Safe Links provides URL scanning and rewriting of inbound email messages during mail flow, and time-of-click verification of URLs and links in email messages, Teams, and supported Office 365 apps. Safe Links scanning occurs in addition to regular [anti-spam](anti-spam-protection-about.md) and [anti-malware](anti-malware-protection-about.md) protection.
 
 Watch this short video on how to protect against malicious links with Safe Links in Microsoft Defender for Office 365.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
 > [!NOTE]
-> Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection in e-mail messages, Microsoft Teams, and files in supported Office apps to all recipients who are licensed for Defender for Office 365 (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Links policies that apply to specific users, group, or domains. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
+> Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection in e-mail messages, Microsoft Teams, and files in supported Office apps to all recipients who are licensed for Defender for Office (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Links policies that apply to specific users, group, or domains. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
 
 Safe Links protection is available in the following locations:
 
-- **Email messages**: Safe Links protections for links in email messages are controlled by Safe Links policies.
+- **Email messages**: Safe Links protection for links in email messages is controlled by Safe Links policies.
 
   For more information about Safe Links protection for email messages, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.
 
@@ -61,7 +61,7 @@ Safe Links protection is available in the following locations:
   >
   > Safe Links supports only HTTP(S) and FTP formats.
   >
-  > Using another service to wrap links before Defender for Office 365 might invalidate the ability of Safe Links to process links, including wrapping, detonating, or otherwise validating the "maliciousness" of the link.
+  > Using another service to wrap links before Defender for Office 365 might prevent Safe Links from process links, including wrapping, detonating, or otherwise validating the "maliciousness" of the link.
 
 - **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels is controlled by Safe Links policies.
 
@@ -80,12 +80,9 @@ This article includes detailed descriptions of the following types of Safe Links
   - [Safe Links settings for Office apps](#safe-links-settings-for-office-apps)
   - ["Do not rewrite the following URLs" lists in Safe Links policies](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Global Safe Links settings**: These settings are configured globally, not in Safe Links policies. These settings include:
+- **Global Safe Links settings**: The only available global setting for Safe Links is the "Block the following URLs" list. As of April 1 2023, the "Block the following URLs" list for Safe Links no longer works. For more information, see [MC373880](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC373880). Instead, use [block entries for URLs in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). Messages that are blocked by URL entries in the Tenant Allow/Block List are quarantined as high confidence phishing.
 
-  - ["Block the following URLs" list for Safe Links](#block-the-following-urls-list-for-safe-links)
-
-  > [!NOTE]
-  > The **Global settings** menu and the **Block the following URLs** list for Safe Links are in the process of being deprecated. Use block entries for URLs in the [Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) instead.
+  To see and remove any leftover URL entries in the "Block the following URLs list, see [Configure the "Block the following URLs" list for Safe Links in Defender for Office 365](safe-links-policies-global-settings-configure.md).
 
 The following table describes scenarios for Safe Links in Microsoft 365 and Office 365 organizations that include Defender for Office 365 (note that lack of licensing is never an issue in the examples).
 
@@ -122,7 +119,7 @@ Safe Links scans incoming email for known malicious hyperlinks. Scanned URLs are
 
 After Safe Links rewrites a URL, the URL remains rewritten even if the message is _manually_ forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied-to message aren't rewritten.
 
-In the case of _automatic_ forwarding by Inbox rules or SMTP forwarding, the URL will not be rewritten in the message that's intended for the final recipient _unless_ one of the following statements is true:
+For _automatic_ forwarding by Inbox rules or SMTP forwarding, the URL isn't rewritten in the message that's intended for the final recipient _unless_ one of the following statements is true:
 
 - The recipient is also protected by Safe Links.
 - The URL was already rewritten in a previous communication.
@@ -134,7 +131,7 @@ The settings in Safe Links policies that apply to email messages are described i
 - **On: Safe Links checks a list of known, malicious links when users click links in email. URLs are rewritten by default.**: Turn on or turn off Safe Links scanning in email messages. The recommended value is selected (on), and results in the following actions:
   - Safe Links scanning is turned on in Outlook (C2R) on Windows.
   - URLs are rewritten and users are routed through Safe Links protection when they click URLs in messages.
-  - When clicked, URLs are checked against a list of known malicious URLs and the ["Block the following URLs" list](#block-the-following-urls-list-for-safe-links).
+  - When clicked, URLs are checked against a list of known malicious URLs.
   - URLs that don't have a valid reputation are detonated asynchronously in the background.
 
   The following settings are available only if Safe Links scanning in email messages is turned on:
@@ -174,17 +171,17 @@ You turn on or turn off Safe Links protection for Microsoft Teams in Safe Links 
 > [!NOTE]
 > When you turn on or turn off Safe Links protection for Teams, it might take up to 24 hours for the change to take effect.
 
-After you turn on Safe Links protection for Microsoft Teams, URLs in Teams are checked against a list of known malicious links when the protected user clicks the link (time-of-click protection). URLs aren't rewritten. If a link is found to be malicious, users will have the following experiences:
+URLs in Teams are checked against a list of known malicious links when the protected user clicks the link (time-of-click protection). URLs aren't rewritten. If a link is found to be malicious, users have the following experiences:
 
-- If the link was clicked in a Teams conversation, group chat, or from channels, the warning page as shown in the screenshot below will appear in the default web browser.
-- If the link was clicked from a pinned tab, the warning page will appear in the Teams interface within that tab. The option to open the link in a web browser is disabled for security reasons.
-- Depending on how the **Let users click through to the original URL** setting in the policy is configured, the user will or will not be allowed to click through to the original URL (**Continue anyway (not recommended)** in the screenshot). We recommend that you don't select the **Let users click through to the original URL** setting so users can't click through to the original URL.
+- If the link was clicked in a Teams conversation, group chat, or from channels, the warning page as shown in the screenshot appears in the default web browser.
+- If the link was clicked from a pinned tab, the warning page appears in the Teams interface within that tab. The option to open the link in a web browser is disabled for security reasons.
+- Depending on how the **Let users click through to the original URL** setting in the policy is configured, the user is or isn't allowed to click through to the original URL (**Continue anyway (not recommended)** in the screenshot). We recommend that you don't select the **Let users click through to the original URL** setting so users can't click through to the original URL.
 
 If the user who sent the link isn't protected by a Safe Links policy where Teams protection is turned on, the user is free to click through to the original URL on their computer or device.
 
 :::image type="content" source="../../media/tp-safe-links-for-teams-malicious.png" alt-text="A Safe Links for Teams page reporting a malicious link" lightbox="../../media/tp-safe-links-for-teams-malicious.png":::
 
-Clicking the **Go Back** button on the warning page will return the user to their original context or URL location. However, clicking on the original link again will cause Safe Links to rescan the URL, so the warning page will reappear.
+Clicking the **Go Back** button on the warning page returns the user to their original context or URL location. However, clicking on the original link again causes Safe Links to rescan the URL, so the warning page reappears.
 
 ### How Safe Links works in Teams
 
@@ -227,8 +224,6 @@ At a high level, here's how Safe Links protection works for URLs in Office apps.
 
 3. Safe Links immediately checks the URL before opening the target website:
 
-   - If the URL is included in the list that skips Safe Links scanning (the **Block the following URLs** list) a [blocked URL warning](#blocked-url-warning) page opens.
-
    - If the URL points to a website that has been determined to be malicious, a [malicious website warning](#malicious-website-warning) page (or a different warning page) opens.
 
    - If the URL points to a downloadable file, and the Safe Links policy that applies to the user is configured to scan links to downloadable content (**Apply real-time URL scanning for suspicious links and links that point to files**), the downloadable file is checked.
@@ -262,44 +257,6 @@ After you create multiple policies, you can specify the order that they're appli
 
 For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order of precedence for preset security policies and other policies](preset-security-policies.md#order-of-precedence-for-preset-security-policies-and-other-policies) and [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
-## "Block the following URLs" list for Safe Links
-
-> [!NOTE]
-> The **Block the following URLs** list for Safe Links is in the process of being deprecated. Use block entries for URLs in the [Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) instead. Messages containing the blocked URL are quarantined.
-
-The **Block the following URLs** list defines the links that are always blocked by Safe Links scanning in the following locations:
-
-- Email messages.
-- Documents in Office apps in Windows and Mac.
-- Documents in Office for iOS and Android.
-
-When a user in an active Safe Links policy clicks a blocked link in a supported app, they're taken to the [Blocked URL warning](#blocked-url-warning) page.
-
-You configure the list of URLs in the global settings for Safe Links. For instructions, see [Configure the "Block the following URLs" list](safe-links-policies-global-settings-configure.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal).
-
-**Notes**:
-
-- For a truly universal list of URLs that are blocked everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list-about.md).
-- Limits for the **Block the following URLs** list:
-  - The maximum number of entries is 500.
-  - The maximum length of an entry is 128 characters.
-  - All of the entries can't exceed 10,000 characters.
-- Don't include a forward slash (`/`) at the end of the URL. For example, use `https://www.contoso.com`, not `https://www.contoso.com/`.
-- A domain-only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
-- You can block a subdomain without blocking the full domain. For example, `toys.contoso.com*` blocks any URL that contains the subdomain, but it doesn't block URLs that contain the full domain `contoso.com`.
-- You can include up to three wildcards (`*`) per URL entry.
-
-### Entry syntax for the "Block the following URLs" list
-
-Examples of the values that you can enter and their results are described in the following table:
-
-|Value|Result|
-|---|---|
-|`contoso.com` <p> or <p> `*contoso.com*`|Blocks the domain, subdomains, and paths. For example, `https://www.contoso.com`, `https://sub.contoso.com`, and `https://contoso.com/abc` are blocked.|
-|`https://contoso.com/a`|Blocks `https://contoso.com/a` but not additional subpaths like `https://contoso.com/a/b`.|
-|`https://contoso.com/a*`|Blocks `https://contoso.com/a` and additional subpaths like `https://contoso.com/a/b`.|
-|`https://toys.contoso.com*`|Blocks a subdomain (`toys` in this example) but allow clicks to other domain URLs (like `https://contoso.com` or `https://home.contoso.com`).|
-
 ## "Do not rewrite the following URLs" lists in Safe Links policies
 
 > [!NOTE]
@@ -315,7 +272,7 @@ To add entries to the list in new or existing Safe Links policies, see [Create S
   - Microsoft Teams
   - Office web apps
 
-  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list-about.md). However, note that URLs added there will not be excluded from Safe Links rewriting, as that must be done in a Safe Links policy.
+  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list-about.md). However, URL allow entries in the Tenant Allow/Block List aren't excluded from Safe Links rewriting.
 
 - Consider adding commonly used internal URLs to the list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
 - If you already have **Do not rewrite the following URLs** entries in your Safe Links policies, be sure to review the lists and add wildcards as required. For example, your list has an entry like `https://contoso.com/a` and you later decide to include subpaths like `https://contoso.com/a/b`. Instead of adding a new entry, add a wildcard to the existing entry so it becomes `https://contoso.com/a/*`.
@@ -324,7 +281,7 @@ To add entries to the list in new or existing Safe Links policies, see [Create S
 - Don't specify http:// or https:// (that is, contoso.com) in order to exclude both HTTP and HTTPS versions.
 - `*.contoso.com` does **not** cover contoso.com, so you would need to exclude both to cover both the specified domain and any child domains.
 - `contoso.com/*` covers **only** contoso.com, so there's no need to exclude both `contoso.com` and `contoso.com/*`; just `contoso.com/*` would suffice.
-- To exclude all iterations of a domain, two exclusion entries are needed; `contoso.com/*` and `*.contoso.com/*`. These combine to exclude both HTTP and HTTPS, the main domain contoso.com and any child domains, as well as any or not ending part (for example, both contoso.com and contoso.com/vdir1 are covered).
+- To exclude all iterations of a domain, two exclusion entries are needed; `contoso.com/*` and `*.contoso.com/*`. These entries combine to exclude both HTTP and HTTPS, the main domain contoso.com and any child domains, as well as any or not ending part (for example, both contoso.com and contoso.com/vdir1 are covered).
 
 ### Entry syntax for the "Do not rewrite the following URLs" list
 
@@ -341,29 +298,19 @@ Examples of the values that you can enter and their results are described in the
 
 This section contains examples of the various warning pages that are triggered by Safe Links protection when you click a URL.
 
-Note that several warning pages have been updated. If you're not already seeing the updated pages, you will soon. The updated pages include a new color scheme, more detail, and the ability to proceed to a site despite the given warning and recommendations.
-
 ### Scan in progress notification
 
 The clicked URL is being scanned by Safe Links. You might need to wait a few moments before trying the link again.
 
 :::image type="content" source="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png" alt-text="The notification that the link is being scanned" lightbox="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png":::
 
-The original notification page looked like this:
-
-:::image type="content" source="../../media/04368763-763f-43d6-94a4-a48291d36893.png" alt-text="The link is being scanned notification" lightbox="../../media/04368763-763f-43d6-94a4-a48291d36893.png":::
-
 ### Suspicious message warning
 
 The clicked URL was in an email message that's similar to other suspicious messages. We recommend that you double-check the email message before proceeding to the site.
 
-:::image type="content" source="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png" alt-text="A link was clicked from a suspicious message warning" lightbox="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png":::
-
 ### Phishing attempt warning
 
 The clicked URL was in an email message that has been identified as a phishing attack. As a result, all URLs in the email message are blocked. We recommend that you don't proceed to the site.
-
-:::image type="content" source="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png" alt-text="The warning that states that a link was clicked from a phishing message" lightbox="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png":::
 
 ### Malicious website warning
 
@@ -371,11 +318,10 @@ The clicked URL points to a site that has been identified as malicious. We recom
 
 :::image type="content" source="../../media/058883c8-23f0-4672-9c1c-66b084796177.png" alt-text="The warning that states that the website is classified as malicious" lightbox="../../media/058883c8-23f0-4672-9c1c-66b084796177.png":::
 
-The original warning page looked like this:
-
-:::image type="content" source="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png" alt-text="The original warning that states that the website is classified as malicious" lightbox="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png":::
-
 ### Blocked URL warning
+
+> [!IMPORTANT]
+> As described in [MC373880](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC373880), the "Block the following URLs" list for Safe Links no longer works as of April 1 2023.
 
 The clicked URL has been manually blocked by an admin in your organization (the **Block the following URLs** list in the global settings for Safe Links). The link wasn't scanned by Safe Links because it was manually blocked.
 
@@ -383,16 +329,45 @@ There are several reasons why an admin would manually block specific URLs. If yo
 
 :::image type="content" source="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png" alt-text="The warning that states that website was blocked by your admin" lightbox="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png":::
 
-The original warning page looked like this:
-
-:::image type="content" source="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png" alt-text="The original warning that states that website has been blocked per your organization's URL policy" lightbox="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png":::
-
 ### Error warning
 
 Some kind of error has occurred, and the URL can't be opened.
 
 :::image type="content" source="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png" alt-text="The warning that states the page that you are trying to access cannot be loaded" lightbox="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png":::
 
-The original warning page looked like this:
+## "Block the following URLs" list for Safe Links
 
-:::image type="content" source="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png" alt-text="The warning that states that the web page could not be loaded" lightbox="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png":::
+> [!IMPORTANT]
+> As described in [MC373880](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC373880), the ability to add entries to the "Block the following URLs" list for Safe Links was deprecated in June 2022, and the list no longer works as of April 1 2023. Instead, use [block entries for URLs in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). Messages that are blocked by URL entries in the Tenant Allow/Block List are quarantined as high confidence phishing.
+
+The **Block the following URLs** list defines the links that are always blocked by Safe Links scanning in the following locations:
+
+- Email messages.
+- Documents in Office apps in Windows and Mac.
+- Documents in Office for iOS and Android.
+
+When a user in an active Safe Links policy clicks a blocked link in a supported app, they're taken to the [Blocked URL warning](#blocked-url-warning) page.
+
+You configure the list of URLs in the global settings for Safe Links. For instructions, see [Configure the "Block the following URLs" list](safe-links-policies-global-settings-configure.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal).
+
+**Notes**:
+
+- Limits for the **Block the following URLs** list:
+  - The maximum number of entries is 500.
+  - The maximum length of an entry is 128 characters.
+  - All of the entries can't exceed 10,000 characters.
+- Don't include a forward slash (`/`) at the end of the URL. For example, use `https://www.contoso.com`, not `https://www.contoso.com/`.
+- A domain-only-URL (for example `contoso.com` or `tailspintoys.com`) blocks any URL that contains the domain.
+- You can block a subdomain without blocking the full domain. For example, `toys.contoso.com*` blocks any URL that contains the subdomain, but it doesn't block URLs that contain the full domain `contoso.com`.
+- You can include up to three wildcards (`*`) per URL entry.
+
+### Entry syntax for the "Block the following URLs" list
+
+Examples of the values that you can enter and their results are described in the following table:
+
+|Value|Result|
+|---|---|
+|`contoso.com` <p> or <p> `*contoso.com*`|Blocks the domain, subdomains, and paths. For example, `https://www.contoso.com`, `https://sub.contoso.com`, and `https://contoso.com/abc` are blocked.|
+|`https://contoso.com/a`|Blocks `https://contoso.com/a` but not additional subpaths like `https://contoso.com/a/b`.|
+|`https://contoso.com/a*`|Blocks `https://contoso.com/a` and additional subpaths like `https://contoso.com/a/b`.|
+|`https://toys.contoso.com*`|Blocks a subdomain (`toys` in this example) but allow clicks to other domain URLs (like `https://contoso.com` or `https://home.contoso.com`).|
