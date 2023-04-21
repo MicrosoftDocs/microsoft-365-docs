@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/28/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -36,15 +36,15 @@ This article also provides a high-level overview of using cases to manage the eD
 
 Complete the following steps to create a case and configure case settings. The user who creates the case is automatically added as a member. Members of the case can access the case in the Microsoft Purview compliance portal and perform eDiscovery (Premium) tasks.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a> and sign in using the credentials for user account that has been assigned eDiscovery permissions. Members of the *Organization Management* role group can also create eDiscovery (Premium) cases.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a> and sign in using the credentials for user account that has been assigned eDiscovery permissions. Members of the *Organization Management* role group can also create eDiscovery (Premium) cases.
 
-2. In the left navigation pane of the compliance portal, select **Show all**, and then select **eDiscovery** > **Premium**, and then select the  <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**Cases** tab</a>.
+2. In the left navigation pane of the compliance portal, select **Show all**, and then select **eDiscovery** > **Premium**, and then select the  <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**Cases**</a>tab.
 
 3. Select **Create a case**.
 
 4. On the **Name and description** page, complete the following fields:
  
-   - **Name**: give the case a name (required).The case name must be unique in your organization
+   - **Name**: give the case a name (required). The case name must be unique in your organization
    - **Description**: Add an optional description to help others understand this case.
    - **Number**: Enter an optional docket number or other numeric identifier.
    - **Case format**: The **New (recommended)** option is automatically selected.

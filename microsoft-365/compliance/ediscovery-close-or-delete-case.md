@@ -1,12 +1,12 @@
 ---
-title: "Close or delete a case"
+title: "Close or delete an eDiscovery (Premium) case"
 description: Learn what happens when an investigation or legal case supported by a Microsoft Purview eDiscovery (Premium) case is closed or deleted.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/28/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -39,14 +39,10 @@ Here's what happens when you close an eDiscovery (Premium) case:
 To close a case:
 
 1. On the **eDiscovery (Premium)** page, select the case that you want to close.
-
-2. On the **Settings** tab, under **Case Information**, select **Select**.
-
-   ![Access the case information flyout page in an eDiscovery (Premium) case.](..\media\AeDSelectCaseInformation.png) 
-
+2. On the **Settings** tab, under **Case Information**, choose **Select**.
 3. At the bottom of the **Case Information** flyout page, select **Actions**, and then select **Close case**.
 
-   It might take up to 60 minutes for the closing process to complete.
+It may take up to 60 minutes for the closing process to complete.
 
 ## Reopen a closed case
 
@@ -78,5 +74,5 @@ To delete holds associated with a case:
 To delete a case:
 
 1. On the **eDiscovery (Premium)** page, select the case that you want to delete.
-2. On the **Settings** tab, under **Case Information**, select **Select**.
+2. On the **Settings** tab, under **Case Information**, choose **Select**.
 3. At the bottom of the **Case Information** flyout page, select **Actions**, and then select **Delete case**.

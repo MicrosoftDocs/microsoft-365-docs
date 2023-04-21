@@ -1,6 +1,6 @@
 ---
-title: View documents in a review set in eDiscovery (Premium)
-description: "Choose how you view content in eDiscovery (Premium) review sets, such as source, plain text, annotate, and metadata."
+title: Group and view documents in a review set in eDiscovery (Premium)
+description: "Choose how you group and view content in eDiscovery (Premium) review sets. Includes grouping review set items by families and conversations, and viewing individual item source, plain text, annotate, and metadata information."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -21,9 +21,13 @@ search.appverid:
 ms.custom: seo-marvel-mar2020
 ---
 
-# View documents in a review set in eDiscovery (Premium)
+# Group and view documents in a review set in eDiscovery (Premium)
 
-eDiscovery (Premium) review sets display content using several viewers each with different purposes. These viewers are used by selecting the viewer on any document within a review set. The available document viewers are:
+eDiscovery (Premium) review sets display content using different grouping options and include specialized viewers that you can use to examine detials about indidivual item. 
+
+
+
+These viewers are used by selecting the viewer on any document within a review set. The available document viewers are:
 
 - Source
 - Plain text
@@ -31,6 +35,10 @@ eDiscovery (Premium) review sets display content using several viewers each with
 - Metadata
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Grouping
+
+
 
 ## Source view
 
