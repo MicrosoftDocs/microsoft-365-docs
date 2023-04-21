@@ -1613,7 +1613,7 @@
               href: ediscovery-review-set-search.md
             - name: Tag documents in a review set
               href: ediscovery-tagging-documents.md
-            - name: View documents in a review set
+            - name: Group and view documents in a review set
               href: ediscovery-view-documents-in-review-set.md
             - name: Use the review set dashboard
               href: ediscovery-dashboard.md

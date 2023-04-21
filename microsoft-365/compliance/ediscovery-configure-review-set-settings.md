@@ -27,8 +27,10 @@ You can configure review set grouping settings for each Microsoft Purview eDisco
 
 Items in a review set can be grouped in two ways:
 
- - **Group review set items by Group ID and Thread ID (preview)**: When enabled, review set items are grouped by *Group ID* and *Thread ID*.
+ - **Group review set items by Group ID and Thread ID**: When enabled, review set items are grouped by *Group ID* and *Thread ID*.
  - **Group review set items by Family ID and Converstion ID**: When enabled, review set items are grouped by *Family ID* and *Converstion ID*. This is the default setting.
+
+For more information about review set grouping, see [Group and view documents in a review set](ediscovery-view-documents-in-review-set.md).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
