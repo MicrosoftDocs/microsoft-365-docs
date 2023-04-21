@@ -17,6 +17,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Migrate from the MDE SIEM API to the Microsoft 365 Defender alerts API
@@ -39,7 +40,7 @@ Effective December 31st, 2024, three years after the original deprecation announ
 
 For additional information about the new APIs see the blog announcement: [The new Microsoft 365 Defender APIs in Microsoft Graph are now available in public preview!](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/the-new-microsoft-365-defender-apis-in-microsoft-graph-are-now/ba-p/3603099)
 
-API documentation: [Use the Microsoft Graph security API - Microsoft Graph beta](/graph/api/resources/security-api-overview#alerts-and-incidents-preview)
+API documentation: [Use the Microsoft Graph security API - Microsoft Graph](/graph/api/resources/security-api-overview#alerts-and-incidents-preview)
 
 If you are a customer using the SIEM API, we strongly recommend planning and executing the migration. Listed below is information about the options available to migrate to a supported capability:
 

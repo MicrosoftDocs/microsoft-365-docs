@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -290,8 +291,8 @@ Only select this option if your organization uses Skype for Business for online 
 
     |Type|Name|Target|TTL|
     |---|---|---|---|
-    |CNAME|sip|sipdir.online.lync.com. <br/> **This value MUST end with a period (.)**|1 Hour|
-    |CNAME|lyncdiscover|webdir.online.lync.com. <br/> **This value MUST end with a period (.)**|1 Hour|
+    |CNAME|sip|sipdir.online.lync.com <br/>|1 Hour|
+    |CNAME|lyncdiscover|webdir.online.lync.com <br/>|1 Hour|
 
 1. Select the **Save**.
 
@@ -326,8 +327,8 @@ This service helps you secure and remotely manage mobile devices that connect to
 
     |Type|Name|Target|TTL|
     |---|---|---|---|
-    |CNAME|enterpriseregistration|enterpriseregistration.windows.net. <br/> **This value MUST end with a period (.)**|1 Hour|
-    |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com. <br/> **This value MUST end with a period (.)**|1 Hour|
+    |CNAME|enterpriseregistration|enterpriseregistration.windows.net <br/>|1 Hour|
+    |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com <br/>|1 Hour|
 
 1. Select **Save**.
 

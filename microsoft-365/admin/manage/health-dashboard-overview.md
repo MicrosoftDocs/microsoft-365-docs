@@ -3,6 +3,7 @@ title: "Microsoft 365 Health Dashboard"
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 06/15/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -60,7 +61,7 @@ At the bottom of the dashboard, you’ll see recommendations on what you can do 
 
 - **Turn on multi-factor authentication**: See a summary of how many accounts are currently enabled for multi-factor authentication (MFA), and a link to the MFA setup wizard.
 
-- **Turn on monthly updates for Office**: See whether your organization's Office update frequency is set so that you receive updates more than once every six months.
+- **Turn on monthly updates for Microsoft 365**: See whether your organization's Microsoft 365 update frequency is set so that you receive updates more than once every six months.
 
 - **Share OneDrive training**:  Encourage users to store files in OneDrive to help with recovery against ransomware or device failure. Send them a video overview to help them set up and use OneDrive.
 

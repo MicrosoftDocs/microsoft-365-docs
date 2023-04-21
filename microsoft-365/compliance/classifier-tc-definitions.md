@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 09/09/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -68,7 +68,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
-| Detects official documents that are issued at the end of a project or work by a project manager or a contractor. This document is used to testify that work on a particular project has been completed as per a contract or an agreement. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
+| Detects official documents that are issued at the end of a project or work by a project manager or a contractor. This document is used to testify that work on a particular project has been completed as per a contract or an agreement. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
 
 ## Construction specifications
 
@@ -76,7 +76,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects construction specifications for commercial and industrial projects like factories, plants, commercial offices, airports, roads. | Captures guidelines on the quality, quantity, types of building material, processes etc. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files. | English |
 
-## Corporate sabotage (preview)
+## Corporate sabotage
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -155,9 +155,9 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
-| Detects documents that authorize the export or import of a good in a specific quantity from source to destination. This model categorizes different documents including Bill of Ladings, Certificate of Origin, Commercial Invoice, Export impot customs declaration, Importer Security Filing (ISF). | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .txt, .one files. | English |
+| Detects documents that authorize the export or import of a good in a specific quantity from source to destination. This model categorizes different documents including Bill of Ladings, Certificate of Origin, Commercial Invoice, Export import customs declaration, Importer Security Filing (ISF). | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .txt, .one files. | English |
 
-## Gifts & entertainment (preview)
+## Gifts & entertainment
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -250,7 +250,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects documents and notes containing information specific to meetings. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files. | English |
 
-## Money laundering (preview)
+## Money laundering
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -307,7 +307,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects documents that offer to sell goods or services for a set price, based on certain conditions. It contains a description of the goods or services, the price of the goods or rate of the service, the quantity, and a total cost. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
 
-## Regulatory collusion (preview)
+## Regulatory collusion
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -367,7 +367,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects statement of work (SOW) containing details like requirements, responsibilities, terms and conditions for both parties.  | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
 
-## Stock manipulation (preview)
+## Stock manipulation
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -388,7 +388,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property. |  Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files. | Arabic <br> Chinese (Simplified) <br> Chinese (Traditional) <br> Dutch <br> English <br> French <br> German <br> Italian <br> Korean <br> Japanese <br> Portuguese <br> Spanish |
 
-## Unauthorized disclosure (preview)
+## Unauthorized disclosure
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -401,7 +401,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
-| Wire transfer is a method of electronic funds transfer from one person or entity to another. The model captures all the the wire transfer receipts and acknowledgements. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
+| Wire transfer is a method of electronic funds transfer from one person or entity to another. The model captures all the wire transfer receipts and acknowledgements. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
 
 ## Word count requirements
 

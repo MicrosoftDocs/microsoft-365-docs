@@ -23,6 +23,7 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
+ms.date: 10/18/2022
 ---
 
 # Alert grading for session cookie theft alert

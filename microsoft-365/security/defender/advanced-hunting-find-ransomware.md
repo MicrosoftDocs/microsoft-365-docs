@@ -22,6 +22,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Hunt for ransomware
@@ -282,7 +283,7 @@ Microsoft Azure:
 
 Microsoft Defender for Cloud Apps:
 
--  [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
+- [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Security team blog posts:
 

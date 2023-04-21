@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: v-mathavale
 author: v-mathavale
 manager: dansimp
+ms.date: 01/19/2022
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -82,7 +83,7 @@ As an Exchange Online customer, there isn't anything you need to do to configure
 
 ## How can Exchange Online customers use SMTP DANE inbound?
 
-Currently, inbound SMTP DANE isn't supported for Exchange Online. Support is expected to be released at the end of 2022.
+Currently, inbound SMTP DANE isn't supported for Exchange Online. Support for inbound SMTP DANE will be available in the near future.
 
 ## What is the recommended TLSA record configuration?
 

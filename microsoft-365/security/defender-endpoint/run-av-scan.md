@@ -11,13 +11,14 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-mms.collection: 
+ms.collection: 
 - m365-security
 - tier3
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Run antivirus scan API

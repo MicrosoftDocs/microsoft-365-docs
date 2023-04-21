@@ -7,7 +7,6 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date: 
 ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid: 
@@ -17,10 +16,12 @@ ms.collection:
   - m365-security
   - m365solution-mdo-migration
   - highpri
+  - tier1
 ms.custom: migrationguides
 description: "Prerequisite steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 1: Prepare
@@ -47,9 +48,9 @@ Welcome to **Phase 1: Prepare** of your **[migration to Microsoft Defender for O
 
 A complete inventory of settings, rules, exceptions, etc. from your existing protection service is a good idea, because you likely won't have access to the information after you cancel your subscription.
 
-**But, it's very important that you do not automatically or arbitrarily recreate all of your existing customizations in Defender for Office 365.** At best, you might introduce settings that are no longer required, relevant, or functional. At worse, some of your previous customizations might actually create security issues in Defender for Office 365.
+**But, it's very important that you do not automatically or arbitrarily recreate all of your existing customizations in Defender for Office 365**. At best, you might introduce settings that are no longer required, relevant, or functional. At worse, some of your previous customizations might actually create security issues in Defender for Office 365.
 
-Your testing and observation of the native capabilities and behavior of Defender for Office 365 will ultimately determine the overrides and settings that you need. You might find it helpful to categorize the settings from your existing protection service into the following categories:
+Your testing and observation of the native capabilities and behavior of Defender for Office 365 will ultimately determine the overrides and settings that you need. You might find it helpful to organize the settings from your existing protection service into the following categories:
 
 - **Connection or content filtering**: You'll likely find that you don't need most of these customizations in Defender for Office 365.
 - **Business routing**: The majority of the customizations that you need to recreate will likely fall into this category. For example, you can recreate these settings in Microsoft 365 as Exchange mail flow rules (also known as transport rules), connectors, and exceptions to spoof intelligence.
@@ -101,15 +102,11 @@ If you have active third-party phishing simulations, you need to prevent the mes
 
 ## Define spam and bulk user experiences
 
-- **Quarantine vs. deliver to Junk Email folder**: The natural and recommended response for malicious and definitely risky messages is to quarantine the messages. But, how do you want your users to handle less harmful messages, such as spam, and bulk mail (also known as *gray mail*). Should these types of messages be delivered to user Junk Email folders?
+- **Quarantine vs. deliver to Junk Email folder**: The natural and recommended response for malicious and definitely risky messages is to quarantine the messages. But, how do you want your users to handle less harmful messages, such as spam, and bulk mail (also known as *gray mail*)? Should these types of messages be delivered to user Junk Email folders?
 
   With our Standard security settings, we generally deliver these less risky types of messages to the Junk Email folder. This behavior is similar to many consumer email offerings, where users can check their Junk Email folder for missing messages, and they can rescue those messages themselves. Or, if the user intentionally signed up for a newsletter or marketing mail, they can choose to unsubscribe or block the sender for their own mailbox.
 
-  However, many enterprise users are used to little (if any) mail in their Junk Email folder. Instead, these enterprise users are used to checking a quarantine for their missing messages. Quarantine introduces issues of quarantine notifications, notification frequency, and the permissions that are required to view and release messages.
-
-  - Domain Keys Identified Mail (DKIM) will break.
-  - [Spoof intelligence](anti-phishing-protection-spoofing-about.md) will not work properly.
-  - You'll probably get a high number of false positives (good mail marked as bad).
+  However, many enterprise users are used to little (if any) mail in their Junk Email folder. Instead, these users are used to checking a quarantine for their missing messages. Quarantine introduces issues of quarantine notifications, notification frequency, and the permissions that are required to view and release messages.
 
   Ultimately, it's your decision if you want to prevent delivery of email to the Junk Email folder in favor of delivery to quarantine. But, one thing is certain: if the experience in Defender for Office 365 is different than what your users are used to, you need to notify them and provide basic training. Incorporate learnings from the pilot and make sure that users are prepared for any new behavior for email delivery.
 
