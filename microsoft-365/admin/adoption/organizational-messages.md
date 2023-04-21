@@ -207,7 +207,7 @@ Once messages have been created, you'll see the reporting in the table under the
 > [!NOTE]
 > Each tenant can have one active message for each insight. If you want to schedule a new message, you can go to the **Your org's message** page to cancel active ones.
 
-## FAQ
+## FAQs
 
 ### Q: Why does the total number of messages seen differ from the expected number?
 

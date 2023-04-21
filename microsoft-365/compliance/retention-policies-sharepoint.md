@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/18/2023
+ms.date: 04/13/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -144,7 +144,7 @@ Only pages and sections are impacted by the retention settings that you specify.
 
 ## How retention works with document versions
 
-Versioning is a feature of all document lists and libraries in SharePoint and OneDrive. By default, versioning retains a minimum of 500 major versions, although you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) and [How versioning works in lists and libraries](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
+Versioning is a feature of all document lists and libraries in SharePoint and OneDrive. By default, versioning retains a minimum of 500 major versions, although you can change this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) and [How versioning works in lists and libraries](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
 When a document with versions is subject to retention settings to retain that content, and it's not marked as a record, how the versions are stored in the Preservation Hold library changed in July 2022 to improve performance. Now, all versions of that file are retained in a single file in the Preservation Hold library. Before the change, versions were copied to the Preservation Hold library as separate files, and after the change, remain as separate files. 
 

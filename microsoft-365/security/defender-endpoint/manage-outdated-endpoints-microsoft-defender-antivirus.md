@@ -138,7 +138,7 @@ The process for enabling this feature is:
 This feature can be enabled for both full and quick scans. 
 
 > [!TIP]
-> We recommend using quick scans for most situations. To learn more, see [Quick scan, full scan, and custom scan](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan). 
+> We recommend using quick scans for most situations. To learn more, see [Quick scan, full scan, and custom scan](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan). 
 
 You can use one of several methods to set up catch-up scans:
 
