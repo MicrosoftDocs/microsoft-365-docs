@@ -76,7 +76,7 @@ If you want to use a custom account to turn on/off device monitoring, it must be
 Make sure that the Windows devices that you need to onboard meet these requirements.
 
 1. Must be running Windows 10 x64 build 1809 or later or Windows 11.
-    1. See [March 21, 2023—KB5023773 (OS Builds 19042.2788, 19044.2788, and 19045.2788) Preview](https://support.microsoft.com/en-us/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23) for required minimum Windows Operating System builds.
+    1. See [April 11, 2023—KB5025221 (OS Builds 19042.2846, 19044.2846, and 19045.2846) - Microsoft Support](https://support.microsoft.com/en-us/topic/april-11-2023-kb5025221-os-builds-19042-2846-19044-2846-and-19045-2846-b00c3356-baac-4a41-8342-7f97ec83445a) for required minimum Windows Operating System builds.
 
 1. Antimalware Client Version is 4.18.2110 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623.
 
@@ -115,19 +115,14 @@ If you already have devices onboarded into [Microsoft Defender for Endpoint](/wi
 
 In this deployment scenario, you'll onboard Windows 10 or Windows 11 devices that have not been onboarded yet.
 
-1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com). Choose **Settings** > **Enable device monitoring**.
-
-   > [!NOTE]
-   > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
-
-2. Open the Microsoft Purview Compliance portal settings page and choose **Turn on Windows device monitoring**.
-
-3. Choose **Device management** to open the **Devices** list. 
+1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com). Choose **Settings** > **Device onboarding** > **Devices**.
 
 > [!NOTE]
-> If you have previously deployed Microsoft Defender for Endpoint, all the devices that were onboarded during that process will be listed in the **Devices** list. There is no need to onboard them again.
+> If you have previously deployed Microsoft Defender for Endpoint, all the devices that were onboarded during that process will be listed in the **Devices** list. There is no need to onboard them again. While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
-4. Choose **Onboarding** to begin the onboarding process.
+2. Choose **Turn on device onboarding**. 
+
+3. Choose **Onboarding** to begin the onboarding process.
 
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
 
