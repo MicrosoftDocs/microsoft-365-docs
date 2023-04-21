@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 11/24/2022
 ---
 
 # Export Hardware and firmware assessment inventory per device
@@ -26,6 +27,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -128,7 +130,7 @@ GET https://api.security.microsoft.com/api/machines/HardwareFirmwareInventoryPro
     
 ```
 
-## 2. Export certificate assessment (via files)
+## 2. Export hardware and firmware assessment (via files)
 
 ### 2.1 API method description
 

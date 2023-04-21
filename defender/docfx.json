@@ -41,8 +41,11 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/defender/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "uhfHeaderId": "MSDocsHeader-MicrosoftDefender",
+      "feedback_system": "None",
+      "contributors_to_exclude": [ 
+        "beccarobins"
+      ]
     },
     "fileMetadata": {},
     "template": [],

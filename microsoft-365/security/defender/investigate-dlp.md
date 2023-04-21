@@ -18,6 +18,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - met150
+ms.date: 05/23/2022
 ---
 
 # Investigate data loss incidents with Microsoft 365 Defender
@@ -50,7 +51,7 @@ To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft
 - Microsoft 365 E5/A5 Information Protection and Governance
 
 > [!NOTE] 
-> When you are licensed and eligible for this feature, DLP alerts will automatically flow into Microsoft 365 Defender. Open a support case if you want to disable this feature. 
+> When you are licensed and eligible for this feature, DLP alerts will automatically flow into Microsoft 365 Defender. Open a support case if you want to disable this feature. If you disable this feature the behavior will be reverted to DLP alerts surfacing in the Defender portal as Microsoft Defender for Office alerts.
 
 ## DLP investigation experience in the Microsoft 365 Defender portal
 
@@ -84,6 +85,9 @@ Before you start, [turn on alerts for all your DLP policies](/microsoft-365/comp
    For Devices DLP alerts, select the device card on the top of the alert page to view the device details and take remediation actions on the device.
 
 10. Go to the incident summary page and select **Manage Incident** to add incident tags, assign, or resolve an incident.
+
+> [!IMPORTANT] 
+> DLP supports associating DLP policies and alert management with administrative units in the Microsoft Purview compliance portal (preview). DLP alerts are only available to unrestricted DLP administrators in the Microsoft 365 Defender portal. Administrative unit restricted DLP administrator will not see DLP alerts.  See [Administrative units](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#administrative-units-preview) for implementation details. See [Policy scoping](/microsoft-365/compliance/dlp-policy-reference#policy-scoping) for details on administrative unit scoping. 
 
 ## DLP investigation experience in Microsoft Sentinel
 

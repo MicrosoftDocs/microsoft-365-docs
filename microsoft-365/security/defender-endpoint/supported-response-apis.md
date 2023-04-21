@@ -19,6 +19,7 @@ ms.collection:
 ms.custom: api
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Supported Microsoft Defender for Endpoint query APIs

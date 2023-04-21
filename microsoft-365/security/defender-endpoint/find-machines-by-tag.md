@@ -1,6 +1,6 @@
 ---
 title: Find devices by tag API
-description: Find all devices that contain specifc tag
+description: Find all devices that contain specific tag
 keywords: apis, supported apis, get, device, find, find device, by tag, tag
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 02/02/2021
 ---
 
 # Find devices by tag API
@@ -59,9 +60,9 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - Response will include only devices that the user have access to based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
-> - Response will include only devices that the user have access to based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> - Response will include only devices that the user have access to based on device group settings (For more information, see [Create and manage device groups](machine-groups.md))
+> - The user needs to have at least the following role permission: 'View Data' (For more information, see [Create and manage roles](user-roles.md))
+> - Response will include only devices that the user have access to based on device group settings (For more information, see [Create and manage device groups](machine-groups.md))
 >
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
@@ -82,7 +83,7 @@ Authorization|String|Bearer {token}. **Required**.
 Name|Type|Description
 :---|:---|:---
 tag|String|The tag name. **Required**.
-useStartsWithFilter|Boolean|When set to true, the search will find all devices with tag name that starts with the given tag in the query. Defaults to false. **Optional**.
+useStartsWithFilter|Boolean|When set to true, the search finds all devices with tag name that starts with the given tag in the query. Defaults to false. **Optional**.
 
 ## Request body
 
@@ -96,7 +97,7 @@ If successful - 200 OK with list of the machines in the response body.
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/findbytag?tag=testTag&useStartsWithFilter=true

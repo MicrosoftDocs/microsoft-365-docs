@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 11/22/2022
+ms.date: 03/24/2023
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -22,8 +22,6 @@ ms.collection:
 search.appverid: met150
 ---
 
-<!--- jweston-1 to return as author and ms.author appx April/May 2023. --->
-
 # Network protection for macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -34,12 +32,7 @@ search.appverid: met150
 - [Microsoft Microsoft 365 Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 ## Overview
-
-Microsoft is bringing Network protection functionality to macOS (min. macOS 11).
 
 Microsoft Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that may host:
 
@@ -47,13 +40,23 @@ Microsoft Network protection helps reduce the attack surface of your devices fro
 - exploits
 - other malicious content on the Internet
 
-Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
+Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
+
+## Availability
+
+Network Protection for macOS will soon be available for all Microsoft Defender for Endpoint onboarded macOS devices which meet the minimum requirements. Microsoft will begin incrementally rolling out the functionality for all macOS devices to enable Network Protection on 1/31/2023 with target completion, subject to change, in May 2023. When this feature rolls to production, all of your currently configured Network Protection and Web Threat Protection policies will be enforced on macOS devices where Network Protection is configured for block mode.
+
+To prepare for the macOS network protection rollout, we recommend the following:
+
+- For Network Protection for macOS to be active on your devices, Network Protection must be enabled by your organization. We suggest deploying the audit or block mode policy to a small set of devices and verify there are no issues or broken workstreams before gradually deploying to a larger set of devices.
+- Verify the Network Protection configuration on your macOS devices is set to the desired state.
+- Understand the impact of your Web Threat Protection, Custom Indicators of Compromise, Web Content Filtering, and MDA Endpoint Enforcement policies which target those macOS devices where Network Protection is in Block mode.
 
 ## New and updated capabilities
 
 - You can run your corporate VPN in tandem or "side by side" with network protection. Currently, no VPN conflicts are identified. If you do experience conflicts, you can provide feedback through the feedback channel listed at the bottom of this page.
   - Web content filtering is supported with network protection for macOS.
-  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal are respected in browsers, including Chromium Microsoft Edge for macOS. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 feature, such as Microsoft Defender for Cloud Applications or Custom Indicators currently also require network protection.
+  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal are respected in browsers, including Chromium Microsoft Edge for macOS. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 features, such as Microsoft Defender for Cloud Apps or Custom Indicators, currently also require network protection.
 
 ### Known issues
 
@@ -71,29 +74,16 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/wi
 
 ## Prerequisites
 
-- Licensing: Microsoft 365 Defender for Endpoint tenant (can be trial)
+- Licensing: Microsoft 365 Defender for Endpoint Plan 1 or Microsoft 365 Defender for Endpoint Plan 2 (can be trial)
 - Onboarded Machines:
   - Minimum macOS version: 11
-  - Product version 101.78.13 or later
-  - Your device must be in either the External (Preview) or InsiderFast (Beta) Microsoft AutoUpdate update channel. You can check the update channel using the following command:
-
-```bash
-mdatp health --field release_ring
-```
-
-If your device isn't already in the External(Preview) update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
-
-```bash
-defaults write com.microsoft.autoupdate2 ChannelName -string Preview
-```
-
-Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the device group remotely. For more information, see [Set preferences for Microsoft 365 Defender for Endpoint on macOS](mac-preferences.md).
+  - Product version 101.94.13 or later
 
 ## Deployment instructions
 
 ### Microsoft 365 Defender for Endpoint
 
-After you've configured your device to be in the External(preview) update channel, install the most recent product version through Microsoft AutoUpdate. To open Microsoft AutoUpdate, run the following command from the Terminal:
+Install the most recent product version through Microsoft AutoUpdate. To open Microsoft AutoUpdate, run the following command from the Terminal:
 
 ```bash
 open /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app
@@ -255,7 +245,7 @@ After you create this configuration profile, assign it to the devices where you 
 
 ## Scenarios
 
-The following scenarios are supported during public preview:
+The following scenarios are supported.
 
 ### Web threat protection
 
@@ -295,13 +285,13 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 For more information about reporting, see [Web content filtering](web-content-filtering.md).
 
-### Microsoft Defender for Cloud Applications
+### Microsoft Defender for Cloud Apps
 
-The Microsoft Defender for Cloud Applications / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft 365 Defender for Endpoint:
+The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft 365 Defender for Endpoint:
 
 :::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection monitored apps.":::
 
-Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender for Endpoint Security Center under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article), end users will be getting warn messages when attempting to access these domains:
+Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article), end users will be getting warn messages when attempting to access these domains:
 
 :::image type="content" source="images/network-protection-macos-indicators-urls-domains-warn.png" alt-text="Shows network protection indicators for urls or domains warning.":::
 
@@ -319,10 +309,10 @@ If the end user encounters a _block_, the user will have two possible resolution
 
 #### User education
 
-- **For toast message experience**: Press the toast message itself. End user will be redirected to a custom redirect URL set globally in Microsoft Defender for Cloud Applications (More information at the bottom of this page)
+- **For toast message experience**: Press the toast message itself. End user will be redirected to a custom redirect URL set globally in Microsoft Defender for Cloud Apps (More information at the bottom of this page)
 
 > [!NOTE]
-> Tracking bypasses per app** – You can track how many users have bypassed the warning in the _Application_ page in Microsoft Defender for Cloud Applications.
+> Tracking bypasses per app** – You can track how many users have bypassed the warning in the _Application_ page in Microsoft Defender for Cloud Apps.
 
   :::image type="content" source="images/network-protection-macos-mcas-cloud-app-security.png" alt-text="Shows network protection cloud app security overview.":::
 
@@ -330,7 +320,7 @@ If the end user encounters a _block_, the user will have two possible resolution
 
 ### End user education center SharePoint site template
 
-For many organizations, it's important to take the cloud controls provided by Microsoft Defender for Cloud Applications, and to not only set limitations on end users when needed, but to also educate and coach them about:
+For many organizations, it's important to take the cloud controls provided by Microsoft Defender for Cloud Apps, and to not only set limitations on end users when needed, but to also educate and coach them about:
 
 - the specific incident
 - why it has happened
@@ -348,18 +338,20 @@ For this page, we recommend that your organization uses a basic SharePoint site.
 ### Important things to know
 
 1. It can take up to two hours (typically less) for app domains to propagate and to be update in the endpoint devices, after it's marked as _Monitored_.
-2. By default, action will be taken for all apps and domains that were marked as Monitored in Microsoft Defender for Cloud Applications portal for all the onboarded endpoints in the organization.
-3. Full URLs are currently not supported and won't be sent from Microsoft Defender for Cloud Applications to Microsoft 365 Defender for Endpoint, if any full URLs are listed under Microsoft Defender for Cloud Applications monitored apps, hence, user won't get warned on access attempt (for example, google.com/drive isn't supported, while drive.google.com is supported).
+2. By default, action will be taken for all apps and domains that were marked as Monitored in Microsoft Defender for Cloud Apps portal for all the onboarded endpoints in the organization.
+3. Full URLs are currently not supported and won't be sent from Microsoft Defender for Cloud Apps to Microsoft 365 Defender for Endpoint, if any full URLs are listed under Microsoft Defender for Cloud Apps monitored apps, hence, user won't get warned on access attempt (for example, google.com/drive isn't supported, while drive.google.com is supported).
 
 No End-user notification on third party browsers? Check your toast message settings
 
 ## See also
 
 - [Microsoft 365 Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-- [Microsoft 365 Defender for Endpoint integration with Microsoft Microsoft 365 Defender for Cloud Applications](/defender-cloud-apps/mde-integration)
+- [Microsoft 365 Defender for Endpoint integration with Microsoft Microsoft 365 Defender for Cloud Apps](/defender-cloud-apps/mde-integration)
 - [Get to know the innovative features in Microsoft Edge](https://www.microsoft.com/edge/features)
 - [Protect your network](network-protection.md)
 - [Turn on network protection](enable-network-protection.md)
 - [Web protection](web-protection-overview.md)
 - [Create indicators](manage-indicators.md)
 - [Web content filtering](web-content-filtering.md)
+
+

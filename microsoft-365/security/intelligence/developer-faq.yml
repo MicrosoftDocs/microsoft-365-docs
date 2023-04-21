@@ -1,11 +1,13 @@
 ### YamlMime:FAQ
 metadata:
+  ms.date: 03/18/2022
   title: Software developer FAQ
   ms.reviewer: 
   description: This page provides answers to common questions we receive from software developers
   keywords: wdsi, software, developer, faq, dispute, false-positive, classify, installer, software, bundler, blocking
   search.product: eADQiWindows 10XVcnh
   ms.service: microsoft-365-security
+  ms.subservice: intelligence
   ms.mktglfcycl: deploy
   ms.sitesec: library
   ms.pagetype: security

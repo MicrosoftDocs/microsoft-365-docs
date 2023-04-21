@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 
@@ -15,6 +15,7 @@ search.appverid:
 ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection: 
   - m365-security
+  - tier3
 ms.custom: 
   - seo-marvel-apr2020
 description: This article explains the changes being rolled out to the protection features in Azure Information Protection
@@ -28,13 +29,13 @@ ms.service: microsoft-365-security
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-To help with the initial step in protecting your information, starting July 2018 all Azure Information Protection eligible tenants will have the protection features in Azure Information Protection turned on by default. The protection features in Azure Information Protection were formerly known in Office 365 as Rights Management or Azure RMS. If your organization has an Office E3 service plan or a higher service plan you will now get a head start protecting information through Azure Information Protection when we roll out these features.
+To help with the initial step in protecting your information, starting July 2018 all Azure Information Protection eligible tenants will have the protection features in Azure Information Protection turned on by default. The protection features in Azure Information Protection were formerly known in Office 365 as Rights Management or Azure RMS. If your organization has an Office E3 service plan or a higher service plan, you'll now get a head start protecting information through Azure Information Protection when we roll out these features.
 
 ## Changes beginning July 1, 2018
 
 Starting July 1, 2018, Microsoft will enable the protection capability in Azure Information Protection for all organizations with one of the following subscription plans:
 
-- Office 365 Message Encryption is offered as part of Office 365 E3 and E5, Microsoft E3 and E5, Office 365 A1, A3, and A5, and Office 365 G3 and G5. You do not need additional licenses to receive the new protection capabilities powered by Azure Information Protection.
+- Office 365 Message Encryption is offered as part of Office 365 E3 and E5, Microsoft E3 and E5, Office 365 A1, A3, and A5, and Office 365 G3 and G5. You don't need additional licenses to receive the new protection capabilities powered by Azure Information Protection.
 
 - You can also add Azure Information Protection Plan 1 to the following plans to receive the new Office 365 Message Encryption capabilities: Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard, or Office 365 Enterprise E1.
 
@@ -48,7 +49,7 @@ Tenant administrators can check the protection status in the Office 365 administ
 
 ## Why are we making this change?
 
-Office 365 Message Encryption leverages the protection capabilities in Azure Information Protection. At the heart of the recent improvements to Office 365 Message Encryption and our broader investments to information protection in Microsoft 365, we are making it easier for organizations to turn on and use our protection capabilities, as historically, encryption technologies have been difficult to set up. By turning on the protection features in Azure Information Protection by default, you can quickly get started to protect your sensitive data.
+Office 365 Message Encryption leverages the protection capabilities in Azure Information Protection. At the heart of the recent improvements to Office 365 Message Encryption and our broader investments to information protection in Microsoft 365, we're making it easier for organizations to turn on and use our protection capabilities, as historically, encryption technologies have been difficult to set up. By turning on the protection features in Azure Information Protection by default, you can quickly get started to protect your sensitive data.
 
 ## Does this impact me?
 
@@ -59,7 +60,7 @@ If your organization has purchased an eligible Office 365 license, then your ten
 
 ## Can I use Azure Information Protection with Active Directory Rights Management Services (AD RMS)?
 
-No. This is not a supported deployment scenario. Without taking the additional opt-out steps, some computers might automatically start using the Azure Rights Management service and also connect to your AD RMS cluster. This scenario isn't supported and has unreliable results, so it's important that you opt out of this change within the next 30 days before we roll out these new features. For information on how to opt-out, see "I use AD RMS, how do I opt out?" later in this article. If you prefer to migrate, see [Migrating from AD RMS to Azure Information Protection.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+No. This isn't a supported deployment scenario. Without taking the additional opt-out steps, some computers might automatically start using the Azure Rights Management service and also connect to your AD RMS cluster. This scenario isn't supported and has unreliable results, so it's important that you opt out of this change within the next 30 days before we roll out these new features. For information on how to opt-out, see "I use AD RMS, how do I opt out?" later in this article. If you prefer to migrate, see [Migrating from AD RMS to Azure Information Protection.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## How do I know if I'm using AD RMS?
 
@@ -69,7 +70,7 @@ Use these instructions from [Preparing the environment for Azure Rights Manageme
 
    Use ADSI Edit to see whether you have an SCP published in Active Directory: CN=Configuration [server name], CN=Services, CN=RightsManagementServices, CN=SCP
 
-2. If you are not using an SCP, Windows computers that connect to an AD RMS cluster must be configured for client-side service discovery or licensing redirection by using the Windows registry: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation`.
+2. If you aren't using an SCP, Windows computers that connect to an AD RMS cluster must be configured for client-side service discovery or licensing redirection by using the Windows registry: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation`.
 
 For more information about these registry configurations, see [Enabling client-side service discovery by using the Windows registry](/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) and [Redirecting licensing server traffic](/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic).
 
@@ -87,7 +88,7 @@ To opt out of the upcoming change, complete these steps:
 
 ## What can I expect after this change has been made?
 
-Once this is enabled, provided you haven't opted out, you can start using the new version of Office 365 Message Encryption which was announced at [Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) and leverages the encryption and protection capabilities of Azure Information Protection.
+Once this is enabled, provided you haven't opted out, you can start using the new version of Office 365 Message Encryption, which was announced at [Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) and leverages the encryption and protection capabilities of Azure Information Protection.
 
 :::image type="content" source="../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png" alt-text="An OME protected message in Outlook on the web" lightbox="../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png":::
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
+ms.date: 09/12/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -23,20 +24,17 @@ description: "Learn about auto-expanding archiving, which provides additional ar
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Archive mailboxes in Microsoft Purview provide users with additional mailbox storage space. After a user's archive mailbox is enabled, up to 100 GB of additional storage becomes available.
+Archive mailboxes in Microsoft Purview provide user mailboxes and shared mailboxes with additional mailbox storage space. After an archive mailbox is enabled, up to 100 GB of additional storage becomes available.
 
 This archiving feature in Microsoft Purview (called *auto-expanding archiving*) provides up to 1.5 TB of additional storage in archive mailboxes. When the storage quota in the archive mailbox is reached, Microsoft Purview automatically (and incrementally) increases the size of the archive until the archive mailbox reaches 1.5 TB.
 
 For step-by-step instructions for turning on auto-expanding archiving, see [Enable auto-expanding archiving](enable-autoexpanding-archiving.md).
 
-> [!NOTE]
-> Auto-expanding archiving also supports shared mailboxes.
-
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How auto-expanding archiving works
 
-As explained in the introduction, additional mailbox storage space is created when a user's archive mailbox is enabled. When auto-expanding archiving is enabled, Microsoft Purview periodically checks the size of the archive mailbox. When an archive mailbox gets close to its storage limit, additional storage space is automatically created for the archive. If the user runs out of this additional storage space, more storage space is automatically added to the user's archive. This process continues until the user's archive reaches a size 1.5 TB. This process happens automatically, which means administrators don't have to request additional archive storage or manage auto-expanding archiving.
+When auto-expanding archiving is enabled for a user's mailbox archive or a shared mailbox archive, Microsoft Purview periodically checks the size of the archive mailbox. When the archive mailbox gets close to its storage limit, additional storage space is automatically created and this process continues until the mailbox archive reaches 1.5 TB. The additional storage creation happens automatically, which means administrators don't have to request additional archive storage or manage auto-expanding archiving.
 
 Here's a quick overview of the process.
 
@@ -50,8 +48,7 @@ Here's a quick overview of the process.
 
 3. Microsoft Purview automatically adds more storage space when necessary.
 
-> [!IMPORTANT]
-> Auto-expanding archiving is supported only for mailboxes used for individual users (or shared mailboxes) with a growth rate that doesn't exceed 1 GB per day. A user's archive mailbox is intended for just that user. Using journaling, transport rules, or auto-forwarding rules to copy messages to an archive mailbox is not permitted. Microsoft reserves the right to deny additional archiving in instances where a user's archive mailbox is used to store archive data for other users or in other cases of the inappropriate use.
+For information what happens when the maximum 1.5 TB is reached, and other size-related limitations for email storage, see [Important considerations and limitations for auto-expanding archiving](#important-considerations-and-limitations-for-auto-expanding-archiving) on this page.
 
 ## What gets moved to the additional archive storage space?
 
@@ -75,6 +72,14 @@ The following screenshots show a folder list before and after messages are moved
 
 > [!NOTE]
 > As previously described, Microsoft Purview moves items to subfolders (and names them using the naming convention described above) to help distribute content to an auxiliary archive. But moving items to subfolders may not always be the case. Sometimes an entire folder may be moved to an auxiliary archive. In this case, the folder will retain its original name. It won't be apparent in the folder list in Outlook that the folder was moved to an auxiliary archive.
+
+## Important considerations and limitations for auto-expanding archiving
+
+If a mailbox with an auto-expanding archive reaches a total of 1.5 TB of data stored in the auto-expanding archive, no more data will be stored in the auto-expanding archive or moved from the main archive to the auto-expanding archive.
+
+Should the main archive also reaches its quota, no more data will be stored there, which can result in the primary mailbox also reaching its quota. Then, processing can stop for sending or receiving email and other items. To reduce this risk and minimize liability for your organization, we recommend using Microsoft 365 retention policies to delete content that no longer has business value. Configure these policies to [delete items after a specified period](retention-settings.md#settings-for-retaining-and-deleting-content). If you're not yet familiar with retention policies that can automatically delete email and other Microsoft 365 items, see [Learn about retention policies and retention labels](retention.md).
+
+Auto-expanding archiving is supported only for mailboxes used for individual users (or shared mailboxes) with a growth rate that doesn't exceed 1 GB per day. A user's archive mailbox is intended for just that user. Using journaling, transport rules, or auto-forwarding rules to copy messages to an archive mailbox is not permitted. Microsoft reserves the right to deny additional archiving in instances where a user's archive mailbox is used to store archive data for other users or in other cases of the inappropriate use.
 
 ## Outlook requirements for accessing items in an auto-expanded archive
 

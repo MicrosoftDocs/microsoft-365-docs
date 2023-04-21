@@ -4,6 +4,7 @@ ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer:
+ms.date: 11/04/2021
 audience: admin
 ms.topic: article
 ms.custom:
@@ -12,7 +13,6 @@ search.appverid: MET150
 ms.collection:
 ms.localizationpriority: medium
 description: Learn how to manage sharing for Microsoft Whiteboard.
-
 ---
 
 # Manage sharing for Microsoft Whiteboard
@@ -63,10 +63,18 @@ These changes should take approximately 60 minutes to apply across your tenancy.
 |---|---|---|---|
 |Start the whiteboard from a desktop or mobile device|Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard|Enabled|In-tenant users: Can create, view, and collaborate<br><br>External users: Can view and collaborate during the meeting only (the button to share a whiteboard won't appear for external users)<br><br>Shared device accounts: Can view and collaborate during the meeting only|
 |Start the whiteboard from a desktop or mobile device|Storage: OneDrive for Business<br><br>Owner: User who creates the whiteboard|Disabled|In-tenant users: Can initiate, view, and collaborate<br><br>External users: Can't view or collaborate<br><br>Shared device accounts: Can't view or collaborate|
-|Start the whiteboard from a Surface Hub or Microsoft Teams Rooms|Storage: Azure (Whiteboard files will be moved to OneDrive for Business in the future)<br><br>Owner: Meeting participant|Not applicable|In-tenant users: Can initiate, view, and collaborate<br><br>External users: Can view and collaborate during the meeting only<br><br> Shared device accounts: Can view and collaborate during the meeting only|
+|Start the whiteboard from a Surface Hub or Microsoft Teams Rooms|Storage: Azure (Whiteboard files will be moved to OneDrive for Business in the future)<br><br>Owner: Meeting participant|Not applicable|In-tenant users: Can initiate, view, and collaborate<br><br>External users: Can view and collaborate during the meeting only<br><br> Shared device accounts: Can initiate, view, and collaborate during the meeting only|
 
 > [!NOTE]
 > If a Whiteboard is stored in OneDrive and already attached to a meeting, it cannot be initiated on a Surface Hub or Microsoft Teams Rooms device. An authenticated user on another device will need to do so. We plan to enable this functionality in a future release.
+
+## Share in Teams calls
+
+During a one-on-one or group call, you might start sharing a Whiteboard. Similar limitations apply to who can share a Whiteboard regarding scenarios where users from different organizations are involved in a call.
+
+When all members of the call are from the same organization, any person can start and access the Whiteboard. For calls involving users from different organizations, only some users can access the Whiteboard sharing button. During a one-on-one call, only the original user who created a conversation or call (the first person to send a message or call another user, whichever occurs first) between the two users can access the Whiteboard sharing button from the drop-down share tray button.
+
+This cannot be changed after two users have started a conversation. Deleting the chat involving the two users will not restart the chat, therefore, this will not reset who created or started the chat. Having the other user call will also not change who can share the Whiteboard, even if a Whiteboard has not been shared yet. The purpose of this limitation is to prevent out-of-organization user access to a Whiteboard unless sharing starts from an in-organization user.
 
 ## Add as a tab in Teams channels and chats
 

@@ -1,5 +1,5 @@
 ---
-title: Insider risk management settings
+title: Get started with insider risk management settings
 description: Learn about insider risk management settings in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 03/13/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -29,7 +30,7 @@ ms.custom: admindeeplinkCOMPLIANCE
 Insider risk management settings apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management pages. These settings control policy components for the following areas:
 
 - [Privacy](#privacy)
-- [Indicators](#indicators)
+- [Indicators](#policy-indicators)
 - [Policy timeframes](#policy-timeframes)
 - [Intelligent detections](#intelligent-detections)
 - [Export alerts](#export-alerts)
@@ -52,13 +53,13 @@ Protecting the privacy of users that have policy matches is important and can he
 - **Show anonymized versions of usernames**: Names of users are anonymized to prevent admins, data investigators, and reviewers from seeing who is associated with policy alerts. For example, a user 'Grace Taylor' would appear with a randomized pseudonym such as 'AnonIS8-988' in all areas of the insider risk management experience. Choosing this setting anonymizes all users with current and past policy matches and applies to all policies. User profile information in the insider risk alert and case details won't be available when this option is chosen. However, usernames are displayed when adding new users to existing policies or when assigning users to new policies. If you choose to turn off this setting, usernames will be displayed for all users that have current or past policy matches.
 
     > [!IMPORTANT]
-    > To maintain referential integrity for users who have insider risk alerts or cases in Microsoft 365 or other systems, anonymization of usernames isn't preserved for exported alerts. Exported alerts will display usernames for each alert.
+    > To maintain referential integrity for users who have insider risk alerts or cases in Microsoft 365 or other systems, anonymization of usernames isn't preserved for exported alerts when using the exporting API or when exporting to [Microsoft Purview eDiscovery solutions](/microsoft-365/compliance/ediscovery). Exported alerts will display usernames for each alert in this case. If you're exporting to .csv files from alerts or cases, anonymization *is* preserved. 
 
 - **Do not show anonymized versions of usernames**: Usernames are displayed for all current and past policy matches for alerts and cases. User profile information (the name, title, alias, and organization or department) is displayed for the user for all insider risk management alerts and cases.
 
 ![Insider risk management privacy settings.](../media/insider-risk-settings-privacy.png)
 
-## Indicators
+## Policy indicators
 
 Insider risk policy templates define the type of risk activities that you want to detect and investigate. Each policy template is based on specific indicators that correspond to specific triggers and risk activities. All global indicators are disabled by default, and you must select one or more indicators to configure an insider risk management policy.
 
@@ -79,7 +80,7 @@ Policy indicators are segmented into the following areas. You can choose the ind
 - **Physical access indicators**: These include policy indicators for physical access to sensitive assets. For example, attempted access to a restricted area in your physical badging system logs can be shared with insider risk management policies. To receive these types of alerts in insider risk management, you must have priority physical assets enabled in insider risk management and the [Physical badging data connector](import-physical-badging-data.md) configured. To learn more about configuring physical access, see the [Priority physical access section](#priority-physical-assets-preview) in this article.
 - **Microsoft Defender for Cloud Apps indicators**: These include policy indicators from shared alerts from Defender for Cloud Apps. Automatically enabled anomaly detection in Defender for Cloud Apps immediately starts detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. To include these activities in insider risk management policy alerts, select one or more indicators in this section. To learn more about Defender for Cloud Apps analytics and anomaly detection, see [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
 - **Risky browsing indicators (preview)**: These include policy indicators for user browsing activity related to websites that are considered malicious or risky and pose potential insider risk that may lead to a security or compliance incident. Risky browsing activity refers to users who visit potentially risky websites, such as those associated with malware, pornography, violence, and other unallowed activities. To include these risk management activities in policy alerts, select one or more indicators in this section. To learn about configuring browser exfiltration signals, see [Insider risk management browser signal detection](insider-risk-management-browser-support.md).
-- **Cumulative exfiltration detection (preview)**: These include analyses for cumulative exfiltration detection when a user’s exfiltration activities exceed organization or peer group norms. When a user shares or emails data outside of the organization at a higher rate than the average user, insider risk management policies can be enabled to detect exfiltration anomalies as compared to organization norms and others in the user's peer groups. For example, if a user is in a sales role and communicates regularly with customers and partners outside of the organization, their external email activity will likely be much higher than the organization's average. However, the user's activity may not be unusual compared to the user's teammates, or others with similar job titles.  
+- **Cumulative exfiltration detection (preview)**: Detects when a user's exfiltration activities across all exfiltration channels over the last 30 days exceeds organization or peer group norms. For example, if a user is in a sales role and communicates regularly with customers and partners outside of the organization, their external email activity will likely be much higher than the organization's average. However, the user's activity may not be unusual compared to the user's teammates, or others with similar job titles. A risk score is assigned if the user's cumulative exfiltration activity is unusual and exceeds organization or peer group norms.  
    > [!NOTE]
    > Peer groups are defined based on organization hierarchy, access to shared SharePoint resources, and job titles in Azure AD. If you enable cumulative exfiltration detection, your organization is agreeing to sharing Azure AD data with the compliance portal, including organization hierarchy and job titles. If your organization does not use Azure AD to maintain this information, then detection may be less accurate. 
 - **Risk score boosters**: These include raising the risk score for activity for the following reasons:
@@ -194,7 +195,10 @@ Another option for policy thresholds is to assign the policy triggering event to
 Policy timeframes allow you to define past and future review periods that are triggered after policy matches based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following policy timeframes are available:
 
 - **Activation window**: Available for all policy templates, the *Activation window* is the defined number of days that the window activates **after** a triggering event. The window activates for 1 to 30 days after a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Activation window* to 30 days. Several months have passed since you configured the policy, and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Activation window* and the policy is active for that user for 30 days after the triggering event occurred.
-- **Past activity detection**: Available for all policy templates, the *Past activity detection* is the defined number of days that the window activates **before** a triggering event. The window activates for 0 to 90 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Past activity detection* to 90 days. Several months have passed since you configured the policy, and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Past activity detection* and the policy gathers historic activities for that user for 90 days prior to the triggering event.
+- **Past activity detection**: Available for all policy templates, the *Past activity detection* is the defined number of days that the window activates **before** a triggering event. For activities in the audit log, the window activates for 0 to 90 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Past activity detection* to 90 days. Several months have passed since you configured the policy, and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Past activity detection* and the policy gathers historic activities for that user for 90 days prior to the triggering event. 
+
+   > [!NOTE]
+   > For email activities, the past activity detection period is 10 days. 
 
 ![Insider risk management timeframe settings.](../media/insider-risk-settings-timeframes.png)
 
@@ -250,42 +254,6 @@ For each of the following domain settings, you can enter up to 500 domains:
     By specifying allowed domains in settings, the risk management  activity with these domains is treated similarly to how internal organization activity is treated. For example, domains added here map to activities may involve sharing content with someone outside your organization (such as sending email to someone with a gmail.com address).
 
 - **Third party domains:** If your organization uses third-party domains for business purposes (such as cloud storage), include them here so you can receive alerts for potentially risky activity related to the device indicator *Use a browser to download content from a third-party site*.
- 
-### Sensitive info types exclusion (preview)
-
-[Sensitive info types](sensitive-information-type-learn-about.md) excluded in settings map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. These excluded types will be treated as non-sensitive info types. For those files that contain any sensitive info types identified here, they will be risk scored but not shown as activities involving content related to sensitive info types. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
-
-You can select the sensitive info types to be excluded from the list of all available (out-of-box and custom) types available in the tenant. You can choose up to 500 sensitive info types to be excluded.
-
-> [!NOTE]
-> The exclusion list of sensitive info types takes precedence over the [priority content](insider-risk-management-policies.md#prioritize-content-in-policies) list.
-
-To exclude sensitive info types, complete the following steps:
-
-1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
-2. In the **Sensitive info types** section, select **Add sensitive info types to exclude**.
-3. On the **Add or edit sensitive info type** pane, select the types that you want to exclude.
-4. Select **Add** accept the changes or **Cancel** to discard the changes. 
-
-To delete a sensitive info type exclusion, select the exclusion and **Delete**.
-
-### Trainable classifier exclusion (preview)
-
-[Trainable classifiers](classifier-get-started-with.md) excluded in settings map to indicators and triggers involving file-related activities for SharePoint, Teams, OneDrive, and Exchange. For those files that contain any trainable classifiers identified here, they will be risk scored but not shown as activities involving content related to trainable classifiers. To learn more, see [Trainable classifiers definitions](classifier-tc-definitions.md#trainable-classifiers-definitions) for a complete list of all pre-trained classifiers.
-
-You can select the trainable classifiers to be excluded from the list of all available (out-of-box and custom) types available in the tenant. Insider risk management excludes some trainable classifiers by default, including Threat, Profanity, Targeted harassment, Offensive language, and Discrimination. You can choose up to 500 trainable classifiers to be excluded.
-
-> [!NOTE]
-> Optionally, you can choose trainable classifiers to be included in the [priority content](insider-risk-management-policies.md#prioritize-content-in-policies) list.
-
-To exclude trainable classifiers, complete the following steps:
-
-1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
-2. In the **Trainable classifiers** section, select **Add trainable classifiers to exclude**.
-3. On the **Add or edit trainable classifiers** pane, select the classifiers that you want to exclude.
-4. Select **Add** accept the changes or **Cancel** to discard the changes. 
-
-To delete a trainable classifiers exclusion, select the exclusion and **Delete**.
 
 ### File path exclusions
 
@@ -295,8 +263,8 @@ To add file paths to exclude, complete the following steps:
 
 1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
 2. In the **File path exclusion** section, select **Add file paths to exclude**.
-3. On the **Add a file path** pane, enter an exact network share or device path to exclude from risk scoring. You can also use * and *([0-9]) to denote specific and wildcard folders and sub-folders to be excluded. For more information, see the following examples:
-    - **\\\\ms.temp\LocalFolder\ or C:\temp**: Excludes files directly under the folder and all sub-folders for every file path starting with the entered prefix.
+3. On the **Add a file path** pane, enter an exact network share or device path to exclude from risk scoring. You can also use * and *([0-9]) to denote specific and wildcard folders and subfolders to be excluded. For more information, see the following examples:
+    - **\\\\ms.temp\LocalFolder\ or C:\temp**: Excludes files directly under the folder and all subfolders for every file path starting with the entered prefix.
     - **\public\local\\**: Excludes files from every file path containing entered value. Matches with 'C:\Users\Public\local\\', 'C:\Users\User1\Public\local\', and '\\\\ms.temp\Public\local'.
     - **C:\Users\\\*\Desktop**: C:\Users\\\*\Desktop: Wildcards are supported. Matches with 'C:\Users\user1\Desktop' and 'C:\Users\user2\Desktop'.
     - **C:\Users\\\*(2)\Desktop**: Wildcards with numbers are supported. Matches with 'C:\Users\user1\user1\Desktop' and 'C:\Users\user2\Shared\Desktop'.
@@ -317,6 +285,42 @@ The default file path exclusions are:
 - \Users\\\*\AppData\Local\Local\Temp
 
 The wildcards in these paths denote that all folder levels between the \Users and \AppData are included in the exclusion. For example, activities in *C:\Users\Test1\AppData\Local* and *C:\Users\Test2\AppData\Local*, *C:\Users\Test3\AppData\Local* (and so on) would all be included and not scored for risk as part of the *\Users\\\*\AppData\Local* exclusion selection.
+
+### Sensitive info type exclusions (preview)
+
+[Sensitive info types](sensitive-information-type-learn-about.md) excluded in settings map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. These excluded types will be treated as non-sensitive info types. For those files that contain any sensitive info types identified here, they'll be risk scored but not shown as activities involving content related to sensitive info types. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
+
+You can select the sensitive info types to be excluded from the list of all available (out-of-box and custom) types available in the tenant. You can choose up to 500 sensitive info types to be excluded.
+
+> [!NOTE]
+> The exclusion list of sensitive info types takes precedence over the [priority content](insider-risk-management-policies.md#prioritize-content-in-policies) list.
+
+To exclude sensitive info types, complete the following steps:
+
+1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
+2. In the **Sensitive info types** section, select **Add sensitive info types to exclude**.
+3. On the **Add or edit sensitive info type** pane, select the types that you want to exclude.
+4. Select **Add** accept the changes or **Cancel** to discard the changes. 
+
+To delete a sensitive info type exclusion, select the exclusion and **Delete**.
+
+### Trainable classifier exclusion (preview)
+
+[Trainable classifiers](classifier-get-started-with.md) excluded in settings map to indicators and triggers involving file-related activities for SharePoint, Teams, OneDrive, and Exchange. For those files that contain any trainable classifiers identified here, they'll be risk scored but not shown as activities involving content related to trainable classifiers. To learn more, see [Trainable classifiers definitions](classifier-tc-definitions.md#trainable-classifiers-definitions) for a complete list of all pre-trained classifiers.
+
+You can select the trainable classifiers to be excluded from the list of all available (out-of-box and custom) types available in the tenant. Insider risk management excludes some trainable classifiers by default, including Threat, Profanity, Targeted harassment, Offensive language, and Discrimination. You can choose up to 500 trainable classifiers to be excluded.
+
+> [!NOTE]
+> Optionally, you can choose trainable classifiers to be included in the [priority content](insider-risk-management-policies.md#prioritize-content-in-policies) list.
+
+To exclude trainable classifiers, complete the following steps:
+
+1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
+2. In the **Trainable classifiers** section, select **Add trainable classifiers to exclude**.
+3. On the **Add or edit trainable classifiers** pane, select the classifiers that you want to exclude.
+4. Select **Add** accept the changes or **Cancel** to discard the changes. 
+
+To delete a trainable classifiers exclusion, select the exclusion and **Delete**.
 
 ### Site exclusions
 
@@ -365,7 +369,7 @@ Insider risk management alert information is exportable to security information 
 If your organization uses Microsoft Sentinel, you can also use the out-of-the-box insider risk management data connector to import insider risk alert information to Sentinel. For more information, see [Insider Risk Management (IRM) (preview)](/azure/sentinel/data-connectors-reference#microsoft-365-insider-risk-management-irm-preview) in the Microsoft Sentinel article.
 
 > [!IMPORTANT]
-> To maintain referential integrity for users who have insider risk alerts or cases in Microsoft 365 or other systems, anonymization of usernames isn't preserved for exported alerts. Exported alerts will display usernames for each alert.
+> To maintain referential integrity for users who have insider risk alerts or cases in Microsoft 365 or other systems, anonymization of usernames isn't preserved for exported alerts when using the exporting API or when exporting to [Microsoft Purview eDiscovery solutions](/microsoft-365/compliance/ediscovery). Exported alerts will display usernames for each alert in this case. If you're exporting to .csv files from alerts or cases, anonymization *is* preserved.
 
 To use the APIs to review insider risk alert information:
 
@@ -375,7 +379,7 @@ To use the APIs to review insider risk alert information:
 
 ![Insider risk management export alert settings.](../media/insider-risk-settings-export.png)
 
-Alert information contains information from the Security and Compliance Alerts schema and the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-schema.md#security-and-compliance-alerts-schema) common schema.
+Alert information contains information from the Security and Compliance Alerts schema and the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema) common schema.
 
 The following fields and values are exported for insider risk management alerts for the Security and Compliance Alerts schema:
 
@@ -490,7 +494,7 @@ Complete the following steps to configure priority physical assets:
 2. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Priority physical assets**.
 3. On the **Priority physical assets** page, you can either manually add the physical asset IDs you want to detect asset events imported by the Physical badging connector or import a .csv file of all physical assets IDs imported by the Physical badging connector:
     a) To manually add physical assets IDs, choose **Add priority physical assets**, enter a physical asset ID, then select **Add**. Enter other physical asset IDs and then select **Add priority physical assets** to save all the assets entered.
-    b) To add a list of physical asset IDs from a .csv file, choose **Import priority physical assets**. From the file explorer dialog, select the CSV file you wish to import, then select **Open**. The physical asset IDs from the CSV files are added to the list.
+    b) To add a list of physical asset IDs from a .csv file, choose **Import priority physical assets**. From the file explorer dialog, select the .csv file you wish to import, then select **Open**. The physical asset IDs from the .csv files are added to the list.
 4. Navigate to the **Policy indicators** page in **Settings**.
 5. On the **Policy indicators** page, navigate to the **Physical access indicators** section and select the checkbox for **Physical access after termination or failed access to sensitive asset**.
 6. Select **Save** to configure and exit.
