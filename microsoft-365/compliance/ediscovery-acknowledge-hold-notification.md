@@ -1,6 +1,6 @@
 ---
 title: "Acknowledge a hold notification"
-description: Learn how to use eDiscovery (Premium) to send and follow up on legal hold notifications through email, as well as monitor obligation status.
+description: Learn how to use eDiscovery (Premium) to send and follow up on legal hold notifications through email and monitor obligation status.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -43,8 +43,8 @@ Based on the configuration of your legal hold notification, your custodians may 
 - **Issuance notice:** The first notice sent to your custodian. This notice will contain your issuance instructions and the hold notice appended to the end of your message.
 - **Reminder notice:** If enabled, a reminder notice will be sent to your custodians based on the specified frequency and interval. The reminders will continue to be sent either until the custodian has acknowledged their notice or until the number of reminders have been exhausted.
 - **Escalation notice:** If enabled, an escalation notice will be sent to your custodian and their manager after the reminder notices have been exhausted. The system will automatically send escalation notices until the specified number of escalations have been completed or until the custodian acknowledges their hold notification.
-- **Reissue notice:** During the course of an investigation, if the contents of the hold notice are updated, then the updated notice will automatically be sent to the custodian.
-- **Release notice:** When a custodian is released from the case, they'll be sent the release notice. 
+- **Reissue notice:** During an investigation, if the contents of the hold notice are updated, then the updated notice will automatically be sent to the custodian.
+- **Release notice:** When a custodian is released from the case, they'll be sent the release notice.
 
 ## Compliance Portal
 

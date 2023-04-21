@@ -100,7 +100,7 @@ With Windows Management Instrumentation (WMI), you can manage Microsoft Defender
 
 - Use the [MSFT_MpComputerStatus](/previous-versions/windows/desktop/defender/msft-mpcomputerstatus) class and the get method of associated classes in the [Windows Defender WMIv2 Provider](/windows/win32/wmisdk/wmi-providers).
 
-For reporting, Windows events comprise several security event sources, including Security Account Manager (SAM) events ([enhanced for Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511). Also see [Security auditing](/windows/security/threat-protection/auditing/security-auditing-overview) and [Windows Defender events](troubleshoot-microsoft-defender-antivirus.md).
+For reporting, Windows events comprise several security event sources, including Security Account Manager (SAM) events ([enhanced for Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511). Also see [Security auditing](/windows/security/threat-protection/auditing/security-auditing-overview) and [Windows Defender events](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/).
 
 ## See also
 

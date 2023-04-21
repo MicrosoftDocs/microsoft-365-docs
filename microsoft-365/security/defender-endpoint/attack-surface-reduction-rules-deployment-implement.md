@@ -27,6 +27,11 @@ search.appverid: met150
 
 # Enable attack surface reduction (ASR) rules
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 Implementing attack surface reduction (ASR) rules move the first test ring into an enabled, functional state.
 
 > [!div class="mx-imgBorder"]

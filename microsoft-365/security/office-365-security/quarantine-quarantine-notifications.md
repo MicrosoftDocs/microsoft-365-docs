@@ -21,7 +21,7 @@ ms.custom:
 description: Admins can learn about end-user spam notifications for quarantined messages in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 3/3/2023
+ms.date: 4/12/2023
 ---
 
 # Use quarantine notifications to release and report quarantined messages
@@ -35,41 +35,57 @@ ms.date: 3/3/2023
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantined messages in EOP](quarantine-about.md).
 
-_Quarantine policies_ define what users are allowed to do or not do to quarantined messages based on why the message was quarantined for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Default quarantine policies enforce the historical capabilities for the security feature that quarantined the message as described in the table [here](quarantine-end-user.md). Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).
+For [supported protection features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features), _quarantine policies_ define what users are allowed to do to quarantined messages based on why the message was quarantined. Default quarantine policies enforce the historical capabilities for the security feature that quarantined the message as described in the table [here](quarantine-end-user.md). Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Create quarantine policies](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
-Quarantine notifications are not turned on in the built-in quarantine notifications named AdminOnlyAccessPolicy or DefaultFullAccessPolicy. Quarantine notifications are turned on in the following built-in quarantine policies:
+Quarantine notifications aren't turned on in the default quarantine notifications named AdminOnlyAccessPolicy or DefaultFullAccessPolicy. Quarantine notifications are turned on in the following default quarantine policies:
 
-- **NotificationEnabledPolicy** [if your organization has it](quarantine-policies.md#full-access-permissions-and-quarantine-notifications).
 - **DefaultFullAccessWithNotificationPolicy** that's used in [preset security policies](preset-security-policies.md).
+- **NotificationEnabledPolicy** [if your organization has it](quarantine-policies.md#full-access-permissions-and-quarantine-notifications).
 
 Otherwise, to turn on quarantine notifications in quarantine policies, you need to [create and configure a new quarantine policy](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
-Admins can also use the global settings in quarantine policies to customize the sender's display name, disclaimer text in different languages, and the company logo that's used in quarantine notifications. For instructions, see [Configure global quarantine notification settings](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
+Admins can also use the global settings in quarantine policies to customize quarantine notifications in up to three languages, and to customize the sender and logo that's used. For instructions, see [Configure global quarantine notification settings](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
 
 For shared mailboxes, quarantine notifications are supported only for users who are granted FullAccess permission to the mailbox. For more information, see [Use the EAC to edit shared mailbox delegation](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
 
 > [!NOTE]
-> By default, messages that are quarantined as high confidence phishing, malware, by mail flow rules (also known as transport rules), or Safe Attachments policies in Defender for Office 365 are only available to admins (by default, the AdminOnlyAccessPolicy quarantine policy is used). For more information, see [Manage quarantined messages and files as an admin in EOP](quarantine-admin-manage-messages-files.md).
+> By default, messages that are quarantined as high confidence phishing by anti-spam policies, malware by anti-malware policies or Safe Attachments, or by mail flow rules (also known as transport rules) are available only to admins. For more information, see the table at [Find and release quarantined messages as a user in EOP](quarantine-end-user.md).
 >
 > Quarantine notifications for messages sent to distribution groups or mail-enabled security groups are sent to all group members.
 >
 > Quarantine notifications for messages sent to Microsoft 365 Groups are sent to all group members only if the **Send copies of group conversations and events to group members** setting is turned on.
 
-When users receive a quarantine notification, the following information is always available for each quarantined message:
+When users receive a quarantine notification, the following information is available for each quarantined message:
 
-- **Sender**: The send name and email address of the quarantined message.
-- **Subject**: The subject line text of the quarantined message.
-- **Date**: The date and time (in UTC) that the message was quarantined.
+- **Sender**: The email address of the sender of the quarantined message.
+- **Subject**: The Subject line of the quarantined message.
+- **Date**: The date/time that the message was quarantined in UTC.
 
-The actions that are available in the quarantine notification depend on why the message was quarantined, and the permissions that are assigned by the associated quarantine policy. For more information, see [Quarantine policy permission details](quarantine-policies.md#quarantine-policy-permission-details).
+The actions that are available for messages in the quarantine notification depends on why the message was quarantined and the permissions in the associated quarantine policy. For more information, see [Quarantine policy permission details](quarantine-policies.md#quarantine-policy-permission-details).
 
-By default, the following actions are available in the quarantine notification for messages that were quarantined as spam, high confidence spam, or bulk:
+- **Review message**: Available for all messages in quarantine notifications.
 
-- **Block Sender**: Click this link to add the sender to the Blocked Senders list on _your_ mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4). For this setting to work correctly, users need to be enabled for remote Powershell. For instructions, see [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell).
-- **Release**: You can release the message here without going to **Quarantine** in the Microsoft 365 Defender portal.
-- **Review**: Click this link to go to **Quarantine** in the Microsoft 365 Defender portal, where you can (depending on why the message was quarantined) view, release, delete or report your quarantined messages. For more information, see [Find and release quarantined messages as a user in EOP](quarantine-end-user.md).
+  Selecting the action takes you to the details flyout of the message in quarantine. It's the same result as going to the **Email** tab on the **Quarantine** page at <https://security.microsoft.com/quarantine?viewid=Email>, and selecting the message by clicking anywhere in the row other than the check box next to the first column. For more information, see [View quarantined message details](quarantine-end-user.md#view-quarantined-message-details).
 
-:::image type="content" source="../../media/end-user-spam-notification.png" alt-text="The example of a quarantine notification" lightbox="../../media/end-user-spam-notification.png":::
+- **Release**: Available for messages that were quarantined by features using a quarantine policy with the **Full access** permission group or the individual **Allow recipients to release a message from quarantine** (_PermissionToRelease_) permission. For example, DefaultFullAccessWithNotificationPolicy, NotificationEnabledPolicy, or custom quarantine policies. 
 
-> [!NOTE]
-> A blocked sender can still send you mail. Any messages from this sender that make it to your mailbox will be immediately moved to the Junk Email folder. Future messages from this sender will go to your Junk Email folder or to quarantine. To delete these messages on arrival instead of quarantining them, use [mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) to delete the messages on arrival.
+  Selecting the action opens an informational web page that acknowledges the message was released from quarantine (for example, **Spam message was released from quarantine**). The **Release status** value of the message on the **Email** tab of the **Quarantine** page is **Released**. The message is delivered to the user's Inbox (or some other folder, depending on any [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) in the mailbox).
+
+  Users can't release their own messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware or high-confidence phishing messages.
+
+- **Request release**: Available for messages that were quarantined by features using a quarantine policy with the **Limited access** permission group or the individual **Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_) permission. For example, custom quarantine policies.
+
+  Selecting the action opens an informational web page that acknowledges the request to release the message from quarantine (**The message release request has been initiated. The tenant admin will determine if the request should be approved or denied.**). The **Release status** value of the message on the **Email** tab of the **Quarantine** page is **Release requested**.
+
+- **Block Sender**: Available for messages that were quarantined by features using a quarantine policy with the **Full access**or **Limited access** permission group, or the individual ***Block sender** (_PermissionToBlockSender_) permission. For example, DefaultFullAccessWithNotificationPolicy, NotificationEnabledPolicy, or custom quarantine policies.
+
+  For this action to work correctly, users need to be enabled for remote PowerShell. For instructions, see [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell).
+
+  This action opens an informational web page to acknowledge that the message was added to the Blocked Senders list in the user's mailbox (for example, **Spam message sender was blocked in quarantine**).
+
+  For more information about the Blocked Senders list, see [Block messages from someone](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+
+  > [!TIP]
+  > The organization can still receive mail from the blocked sender. Messages from the sender are delivered to user Junk Email folders or to quarantine. To delete messages from the sender upon arrival, use [mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) to **Block the message**.
+
+:::image type="content" source="../../media/quarantine-notification.png" alt-text="A sample quarantine notification." lightbox="../../media/quarantine-notification.png":::

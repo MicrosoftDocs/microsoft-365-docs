@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/22/2023
+ms.date: 04/11/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -34,7 +34,7 @@ Use the information in this article to help you successfully manage sensitivity 
 
 To use sensitivity labels that are built into Office desktop apps for Windows and Mac, you must use a subscription edition of Office. This labeling client doesn't support standalone editions of Office, sometimes called "Office Perpetual".
 
-The Azure Information Protection (AIP) add-in component from the [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2) is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070). If you currently use this add-in for labeling in Office apps, we recommend you move to built-in labeling. For more information, see [Migrate the Azure Information Protection (AIP) add-in to built-in labeling for Office apps](sensitivity-labels-aip.md).
+The Azure Information Protection (AIP) add-in component from the [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2) is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070) and will be [retired April 2024](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908). If you currently use this add-in for labeling in Office apps, we recommend you move to built-in labeling. For more information, see [Migrate the Azure Information Protection (AIP) add-in to built-in labeling for Office apps](sensitivity-labels-aip.md).
 
 ## Support for sensitivity label capabilities in apps
 
@@ -304,9 +304,9 @@ For guidance about when to use this setting, see the information about [policy s
 > [!NOTE]
 > If you use the default label policy setting for documents and emails in addition to mandatory labeling: 
 >
-> The default label always takes priority over mandatory labeling. However, for documents, the Azure Information Protection unified labeling client applies the default label to all unlabeled documents whereas built-in labeling applies the default label to new documents and not to existing documents that are unlabeled. This difference in behavior means that when you use mandatory labeling with the default label setting, users will probably be prompted to apply a sensitivity label more often when they use built-in labeling than when they use the Azure Information Protection unified labeling client.
-> 
-> Now rolling out: Office apps that use built-in labeling and support a default label for existing documents. For details, see the [capabilities table](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) for Word, Excel, and PowerPoint.
+> The default label always takes priority over mandatory labeling. However, if you use a version of built-in labeling that doesn't yet support a default label for existing documents, users will be prompted to apply a sensitivity label for each new document.
+>
+> Identify the minimum versions of Word, Excel, and PowerPoint that support a default label for existing documents by using the [capabilities table](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Apply a default label to existing documents**.
 
 ### For Outlook Mobile, change when users are prompted for a label
 
@@ -391,7 +391,7 @@ Before you can scope a label to just files or emails, you must first remove it i
 ## Configure a label to apply S/MIME protection in Outlook
 
 > [!NOTE]
-> This capability is available for built-in labeling for Windows, Mac, iOS, and Android, but it's not yet available for Outlook on the web. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook) and the row **Apply S/MIME protection**.
+> Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook) and the row **Apply S/MIME protection**.
 > 
 > If you configure a label to apply S/MIME protection but your version of Outlook for Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies.
 
@@ -419,7 +419,7 @@ For more help in specifying PowerShell advanced settings, see [PowerShell tips f
 ## Configure label inheritance from email attachments
 
 > [!NOTE]
-> This capability is currently rolling out in preview for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook), and the row **Label inheritance from email attachments**.
+> Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook), and the row **Label inheritance from email attachments**.
 
 Turn on email inheritance for when users attach labeled documents to an email message that isn't manually labeled. With this configuration, a sensitivity label is dynamically selected for the email message, based on the sensitivity labels that are applied to the attachments and published to the user. The [highest priority label](sensitivity-labels.md#label-priority-order-matters) is dynamically selected when it's supported by Outlook.
 
@@ -498,7 +498,7 @@ If you need to disable the PDF support in Office apps for Word, Excel, and Power
 
 - **Use the Sensitivity feature in Office to apply sensitivity labels to PDFs**
 
-Set the value to **0**.
+Configure this setting to be **Disabled**.
 
 Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 

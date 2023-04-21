@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/24/2023
+ms.date: 04/03/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -22,10 +22,7 @@ description: "Configure a default sensitivity label for a SharePoint document li
 
 # Configure a default sensitivity label for a SharePoint document library
 
->*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-> [!NOTE]
-> This feature is in preview and subject to change. It will be included with [Microsoft Syntex Advanced Management license](/sharepoint/advanced-management) when the feature becomes generally available (GA).
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 When SharePoint is [enabled for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md), you can configure a default label for document libraries. Then, any new files uploaded to that library, or existing files edited in the library will have that label applied if they don't already have a sensitivity label, or they have a sensitivity label but with [lower priority](sensitivity-labels.md#label-priority-order-matters).
 
@@ -130,3 +127,7 @@ As with all tenant-level configuration changes for SharePoint, it takes about 15
 ## Next steps
 
 Default labeling ensures a minimum level of protection but doesn't take into account the file contents that might require a higher level of protection. Consider supplementing this labeling method with [automatic labeling](apply-sensitivity-label-automatically.md) that uses content inspection, and encourage [manual labeling](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) for users to replace the default label when needed.
+
+## Related resources
+
+[Microsoft Syntex Advanced Management overview](/sharepoint/advanced-management)

@@ -119,7 +119,7 @@ Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to r
 
 ### Automatic exclusions
 
-[Automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#the-list-of-automatic-exclusions) include operating system files and server roles and features. These exclusions won't be scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan). The following table provides some examples and includes links to learn more.
+[Automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#the-list-of-automatic-exclusions) include operating system files and server roles and features. These exclusions won't be scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan). The following table provides some examples and includes links to learn more.
 
 | Automatic exclusion type  | Examples |
 |:---|:----|
@@ -128,7 +128,7 @@ Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to r
 
 ### Custom exclusions
 
-[Custom exclusions](configure-exclusions-microsoft-defender-antivirus.md) include files and folders that you specify. Exclusions for files, folders, and processes will be skipped by scheduled scans, on-demand scans, and real-time protection. Exclusions for process-opened files won't be scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
+[Custom exclusions](configure-exclusions-microsoft-defender-antivirus.md) include files and folders that you specify. Exclusions for files, folders, and processes will be skipped by scheduled scans, on-demand scans, and real-time protection. Exclusions for process-opened files won't be scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan).
 
 ### Custom remediation actions
 
