@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 04/07/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -31,6 +31,8 @@ ms.custom:
 ---
 
 # Add DNS records to connect your domain
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 If you purchased a domain from a third-party hosting provider, you can connect it to Microsoft 365 by updating the DNS records in your registrar’s account.
 

@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 01/18/2023
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - m365solution-smb
 - highpri
@@ -65,4 +65,4 @@ The following table summarizes remediation actions that are available in Microso
 
 ## See also
 
-[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](secure-your-business-data.md)

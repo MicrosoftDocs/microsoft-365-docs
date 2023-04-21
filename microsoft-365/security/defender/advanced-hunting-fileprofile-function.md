@@ -46,8 +46,8 @@ The `FileProfile()` function is an enrichment function in [advanced hunting](adv
 | `Issuer` | `string` | Information about the issuing certificate authority (CA) |
 | `SignerHash` | `string` | Unique hash value identifying the signer |
 | `IsCertificateValid` | `boolean` | Whether the certificate used to sign the file is valid |
-| `IsRootSignerMicrosoft` | `boolean` | Indicates whether the signer of the root certificate is Microsoft and the file is built-in to Windows OS |
-| `SignatureState` | `string` | State of the file signature: SignedValid - the file is signed with a valid signature, SignedInvalid - the file is signed but the certificate is invalid, Unsigned - the file is not signed, Unknown - information about the file cannot be retrieved
+| `IsRootSignerMicrosoft` | `boolean` | Indicates whether the signer of the root certificate is Microsoft and the file is built in to Windows OS |
+| `SignatureState` | `string` | State of the file signature: SignedValid - the file is signed with a valid signature, SignedInvalid - the file is signed but the certificate is invalid, Unsigned - the file isn't signed, Unknown - information about the file can't be retrieved
 | `IsExecutable` | `boolean` | Whether the file is a Portable Executable (PE) file |
 | `ThreatName` | `string` | Detection name for any malware or other threats found |
 | `Publisher` | `string` | Name of the organization that published the file |
@@ -69,7 +69,7 @@ invoke FileProfile(x,y)
 - **y**—limit to the number of records to enrich, 1-1000; function uses 100 if unspecified
 
 
->[!TIP]
+> [!TIP]
 > Enrichment functions will show supplemental information only when they are available. Availability of information is varied and depends on a lot of factors. Make sure to consider this when using FileProfile() in your queries or in creating custom detections. For best results, we recommend using the FileProfile() function with SHA1.
 
 ## Examples

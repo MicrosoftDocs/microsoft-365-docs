@@ -37,7 +37,7 @@ The Microsoft Defender for Endpoint agent depends on Microsoft Defender Antiviru
 > [!IMPORTANT]
 > Defender for Endpoint does not adhere to the Microsoft Defender Antivirus Exclusions settings.
 
-You must configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active anti-malware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+You must configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active anti-malware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).
 
 If an onboarded device is protected by a third-party anti-malware client, Microsoft Defender Antivirus on that endpoint will enter into passive mode.
 

@@ -9,7 +9,10 @@ metadata:
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
-  ms.custom: commerce_vl
+  ms.custom: 
+  - commerce_vl
+  - empty
+  search.appverid: MET150
   ms.collection: 
   - Tier2
   - scotvorg

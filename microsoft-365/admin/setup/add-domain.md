@@ -40,6 +40,8 @@ description: "Use the setup wizard to add your domain to Microsoft 365 in the Mi
 
  **[Check the Domains FAQ](domains-faq.yml)** if you don't find what you're looking for.
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
   
 ## Before you begin
@@ -117,7 +119,7 @@ Follow the steps below to add a custom record for a website or 3rd party service
 
 3. On the **Domains** page, select a domain. 
     
-4. Under **DNS settings**, select **Custom Records**; then select **New custom record**.
+4. Under **DNS records**, select **Custom Records**; then select **Add record**.
 
 5. Select the type of DNS record you want to add and type the information for the new record.
     

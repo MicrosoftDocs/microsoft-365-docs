@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: 03/06/2023
+ms.date: 04/17/2023
 ms.localizationpriority: high
 ms.collection:
 - purview-compliance
@@ -92,6 +92,7 @@ Use the following table to help you identify the differences in behavior for the
 |Restrict by location|No |Yes |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Conditions: Exceptions|No |Yes (email only) |
+|Support for images|No |[Yes](ocr-learn-about.md) |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
 |Simulation mode|No |Yes |
 |Exchange attachments checked for conditions|No | Yes|
@@ -270,14 +271,13 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 - Simulation mode:
   - Auditing for Microsoft 365 must be turned on. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](audit-log-enable-disable.md).
-  - To view file or email contents in the source view, you must have the **Data Classification Content Viewer** role, which is included in the **Content Explorer Content Viewer** role group, or **Information Protection** and **Information Protection Investigators** role groups. Without the required role, you don't see the preview pane when you select an item from the **Matched Items** tab. Global admins don't have this role by default.
+  - To view file or email contents in the source view, you must have the **Data Classification Content Viewer** role, which is included in the **Content Explorer Content Viewer** role group, or **Information Protection** and **Information Protection Investigators** role groups. Without the required role, you don't see the preview pane when you select an item from the **Items to review** tab. Global admins don't have this role by default.
 
 - To auto-label files in SharePoint and OneDrive:
   - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
   - At the time the auto-labeling policy runs, the file mustn't be open by another process or user. A file that's checked out for editing falls into this category.
-
 - If you plan to use [sensitive information types](sensitive-information-type-learn-about.md):
-  - The sensitive information types you select will apply only to content that's created or modified after these information types are [created or modified](audit-log-activities.md#sensitive-information-types). This restriction applies to all custom sensitive information types and any new built-in information types.
+  - The sensitive information types you select will apply only to content that's created or modified after these information types are [created or modified](audit-log-activities.md#sensitive-information-types-activities). This restriction applies to all custom sensitive information types and any new built-in information types.
   - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
 
 - One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
@@ -399,13 +399,13 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 12. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the configuration.
 
-Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
+Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Items to review** tab to see which emails or documents matched the rules that you specified.
 
 You can modify your policy directly from this interface:
 
 - For a policy in the **Off** section, select the **Edit policy** button.
 
-- For policy in the **Simulation** section, select the **Edit policy** option at the top of the page, from either tab:
+- For policy in the **Simulation** section, select the **Edit policy** option at the top of the page, from either tab.
 
     ![Edit auto-labeling policy option.](../media/auto-labeling-edit.png)
 
@@ -477,6 +477,8 @@ Although auto-labeling is one of the most efficient ways to classify, label, and
 - For SharePoint document libraries, you can apply a default sensitivity label for new and edited files. For more information, see [Configure a default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md).
 
 - With Microsoft Syntex, you can [apply a sensitivity label to a document understanding model](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), so that identified documents in a SharePoint document library are automatically labeled.
+
+- For Outlook messages, you can [apply a sensitivity label based on attachments that are labeled](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments).
 
 - When you use the [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2):
 
