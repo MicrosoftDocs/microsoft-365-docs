@@ -10894,7 +10894,7 @@
   {
     "source_path": "microsoft-365/compliance/compliance-manager-quickstart.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager-setup",
-    "redirect_document_id": true
+    "redirect_document_id": false
   }
  ]
 }
