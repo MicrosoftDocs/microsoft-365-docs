@@ -1,7 +1,6 @@
 ---
 title: Migrate to Microsoft Defender for Endpoint - Onboard
 description: Move to Microsoft Defender for Endpoint. Onboard devices and then uninstall your non-Microsoft solution.
-keywords: migration, Microsoft Defender for Endpoint, edr
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.author: deniseb
@@ -18,7 +17,7 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 04/10/2023
+ms.date: 04/20/2023
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
 ---
@@ -88,16 +87,15 @@ To verify that your onboarded devices are properly connected to Defender for End
 
 ## Step 3: Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
 
-Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode. You can use one of several methods, as described in the following table:
+Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode by using PowerShell. 
 
-|Method|What to do|
-|---|---|
-|PowerShell|1. On a Windows device, open Windows PowerShell as an administrator.<br/><br/>2. Run following PowerShell cmdlet: `Get-MpComputerStatus|select AMRunningMode`. <br/><br/>3. Review the results. You should see **Passive mode**.|
-|Windows Security app|1. On a Windows device, open the Windows Security app.<br/><br/>2. Select **Virus & threat protection**.<br/><br/>3. Under **Who's protecting me?** select **Manage providers**.<br/><br/>4. On the **Security providers** page, under **Antivirus**, look for **Microsoft Defender Antivirus is turned on**.|
-|Task Manager|1. On a Windows device, open the Task Manager app.<br/><br/>2. Select the **Details** tab. Look for **MsMpEng.exe** in the list.|
+1. On a Windows device, open Windows PowerShell as an administrator.
+
+2. Run the following PowerShell cmdlet: `Get-MpComputerStatus|select AMRunningMode`. 
+
+3. Review the results. You should see **Passive mode**.
 
 > [!NOTE]
-> You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
 > To learn more about passive mode and active mode, see [More details about Microsoft Defender Antivirus states](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
 
 ### Set Microsoft Defender Antivirus on Windows Server to passive mode manually
