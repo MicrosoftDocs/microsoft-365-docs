@@ -20,7 +20,7 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 
 # Onboard and offboard macOS devices into Microsoft Purview solutions using Intune
 
-You can use Intune to onboard macOS devices into Microsoft Purview solutions.
+You can use Microsoft Intune to onboard macOS devices into Microsoft Purview solutions.
 
 > [!IMPORTANT]
 > Use this procedure if you ***do not*** have Microsoft Defender for Endpoint (MDE) deployed to your macOS devices
