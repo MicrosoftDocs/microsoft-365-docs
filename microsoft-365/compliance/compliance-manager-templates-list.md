@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 04/04/2023
+ms.date: 04/13/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -68,10 +68,7 @@ The templates listed below are available in preview. Creating assessments from t
 - ISO 27001:2013 for Azure (Preview)
 - ISO 27001:2013 for Dynamics 365 (Preview)
 - FedRAMP Moderate for Dynamics 365 (Preview)
-- FedRAMP Moderate for Azure (Preview)
-- FedRAMP High for Azure (Preview)
 - FedRAMP High for Dynamics 365 (Preview)
-- SOC 2 for Azure (Preview)
 - SOC 2 for Dynamics 365 (Preview)
 - ISO 27018:2019 for Azure (Preview)
 - ISO 27018:2019 for Dynamics 365 (Preview)

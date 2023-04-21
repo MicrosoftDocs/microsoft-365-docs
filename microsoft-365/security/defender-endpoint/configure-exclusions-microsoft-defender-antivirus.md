@@ -6,7 +6,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 01/01/2023
+ms.date: 04/14/2023
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -50,6 +50,9 @@ To configure and validate exclusions, see the following:
 > Microsoft Defender Antivirus includes many automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations. For more information, see [automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md).
 >
 > Defining exclusions lowers the protection offered by Microsoft Defender Antivirus. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
+
+> [!NOTE]
+> Exclusions directly impact the ability for Microsoft Defender Antivirus to block, remediate or inspect events related to the files, folders or processes that are added to the exclusion list. This means that features which are directly dependent on the AV engine such as protection against malware, file IOCs and certificate IOCs will not be effective. Furthermore, the **Network Protection** and **Attack Surface Reduction (ASR) Rules** are also impacted by process exclusions specifically, meaning that a process exclusion on any platform will result in Network Protection or ASR being unable to inspect traffic or enforce rules for that specific process.
 
 Keep the following points in mind when you're defining exclusions:
 
