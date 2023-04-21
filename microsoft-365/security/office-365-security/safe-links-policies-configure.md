@@ -16,7 +16,7 @@ ms.collection:
   - m365-security
   - tier1
 ms.custom:
-description: Admins can learn how to view, create, modify, and delete Safe Links policies and global Safe Links settings in Microsoft Defender for Office 365.
+description: Admins can learn how to view, create, modify, and delete Safe Links policies in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 4/21/2023
@@ -33,19 +33,11 @@ ms.date: 4/21/2023
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](defender-for-office-365.md). If you are a home user looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-In Microsoft Defender for Office 365, Safe Links provides URL scanning of inbound email messages during mail flow, and time of click verification of URLs and links in messages and other locations. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links-about.md).
+In organizations with Microsoft Defender for Office 365, Safe Links provides URL scanning of links in messages, Microsoft Teams, and supported Office 365 apps. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links-about.md).
 
 Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients by default. Recipients who are specified in the Standard or Strict preset security policies or in custom Safe Links policies aren't affected. For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
 For greater granularity, you can also use the procedures in this article to create Safe Links policies that apply to specific users, group, or domains.
-
-You configure Safe Links policies in the Microsoft 365 Defender portal or in Exchange Online PowerShell.
-
-> [!NOTE]
->
-> You configure the "Block the following URLs" list in the global settings for Safe Links protection **outside** of Safe Links policies. For instructions, see [Configure global settings for Safe Links in Microsoft Defender for Office 365](safe-links-policies-global-settings-configure.md).
->
-> Admins should consider the different configuration settings for Safe Links. One of the available options is to include user identifiable information in Safe Links. This feature enables security operations (SecOps) teams to investigate potential user compromise, take corrective action, and limit costly breaches.
 
 You configure Safe Links policies in the Microsoft 365 Defender portal or in Exchange Online PowerShell.
 
