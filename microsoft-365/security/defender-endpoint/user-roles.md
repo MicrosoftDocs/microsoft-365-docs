@@ -18,6 +18,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Create and manage roles for role-based access control
@@ -26,6 +27,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -69,6 +71,13 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
   - **Security operations** - Take response actions, approve or dismiss pending remediation actions, manage allowed/blocked lists for automation and indicators
   - **Threat and vulnerability management - Exception handling** - Create new exceptions and manage active exceptions
   - **Threat and vulnerability management - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
+  - **Threat and vulnerability management - Application handling** - Apply immediate mitigation actions by blocking vulnerable applications, as part of the remediation activity and manage the blocked apps and perform unblock actions
+
+- **Security baselines**
+  - **Threat and vulnerability management – Manage security baselines assessment profiles** - Create and manage profiles so you can assess if your devices comply to security industry baselines.
+
+    > [!NOTE]
+    > For the Defender Vulnerability Management public preview trial this permission is not required. Users with "Threat and vulnerability management - View data" permissions can manage security baselines. However, when the trial ends and a license is purchased, this permission is required.
 
 - **Alerts investigation** - Manage alerts, initiate automated investigations, run scans, collect investigation packages, manage device tags, and download only portable executable (PE) files
 

@@ -2,9 +2,10 @@
 title: "Connect your domain to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 12/11/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -26,6 +27,8 @@ ms.custom:
 ---
 
 # Connect your domain to Microsoft 365
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 > [!NOTE]
 > If you don't add a domain, people in your organization will use the onmicrosoft.com domain for their email addresses until you do. It's important to add your domain before you add users, so you don't have to set them up twice.
@@ -76,6 +79,6 @@ Validate your SPF record by using one of these [SPF validation tools](/office365
 
 SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF cannot protect against. To protect against these, once you've set up SPF, you should also set up DKIM and DMARC for Microsoft 365.
 
-To get started, see [Use DKIM to validate outbound email sent from your domain in Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) and [Use DMARC to validate email in Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
+To get started, see [Use DKIM to validate outbound email sent from your domain in Microsoft 365](../../security/office-365-security/email-authentication-dkim-configure.md) and [Use DMARC to validate email in Microsoft 365](../../security/office-365-security/email-authentication-dmarc-configure.md).
 
 Finally, head back to the admin center domain setup wizard to complete your setup.

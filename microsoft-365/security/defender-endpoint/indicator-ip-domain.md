@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Create indicators for IPs and URLs/domains
@@ -84,7 +85,7 @@ For support of indicators on Android, see [Microsoft Defender for Endpoint on An
 
 ### IoC indicator list limitations
 
-Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](network-protection.md) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS).
+Only external IPs can be added to the indicator list. Indicators can't be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](network-protection.md) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS).
 
 ### Non Microsoft Edge and Internet Explorer processes
 
@@ -93,10 +94,9 @@ For processes other than Microsoft Edge and Internet Explorer, web protection sc
 - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS))
 - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators
 - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge)
-- Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge)
+- Encrypted URLs (FQDN only) can be blocked in third party browsers (that is, other than Internet Explorer, Edge)
 - Full URL path blocks can be applied for unencrypted URLs
 - If there are conflicting URL indicator policies, the longer path is applied. For example, the URL indicator policy `https://support.microsoft.com/office` takes precedence over the URL indicator policy `https://support.microsoft.com`.
-There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
 
 ### Warn mode controls
 
@@ -117,20 +117,28 @@ For more information, see [Govern apps discovered by Microsoft Defender for Endp
 
 ## IoC IP URL and domain policy conflict handling order
 
-Policy conflict handling follows the below order:
+Policy conflict handling for domains/URLs/IP addresses differ from policy conflict handling for certs.
 
-- MDCA creates an unsanctioned indicator for all users but URL is allowed for a specific device group, the specific device group is Blocked access to the URL.
+In the case where multiple different action types are set on the same indicator (for example, **block**,  **warn**, and **allow**,  action types set for Microsoft.com), the order those action types would take effect is:
+
+1. Allow
+2. Warn
+3. Block
+
+_Allow_ overrides _warn_ which overrides _block_: Allow > Warn > Block. Therefore, in the above example, Microsoft.com would be allowed.
+
+### Policy conflict handling follows the order below
+
+- Defender for Cloud Apps creates an unsanctioned indicator for all users but URL is allowed for a specific device group, the specific device group is Blocked access to the URL.
 - If the IP, URL/Domain is allowed
 - If the IP, URL/Domain is not allowed
 - If the IP, URL/Domain is allowed
 - If the IP, URL/Domain is not allowed
 - If the IP, URL/Domain is allowed
-
-If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure will be applied.
-
-Policy conflict handling for domains/URLs/IP addresses differ from policy conflict handling for Certs.
 
 Threat and vulnerability management's block vulnerable application features uses the file IoCs for enforcement and will follow the above conflict handling order.
+
+If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure will be applied.
 
 ## Policy precedence
 
@@ -160,11 +168,15 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
    - Action - Specify the action to be taken and provide a description.
    - Scope - Define the scope of the machine group.
 
-5. Review the details in the Summary tab, then click **Save**.
+5. Review the details in the **Summary** tab, then select **Save**.
 
-## Related topics
+> [!NOTE]
+> There may be up to 2 hours of latency between the time a policy is created and the URL or IP being blocked on the device.
+
+## Related articles
 
 - [Create indicators](manage-indicators.md)
 - [Create indicators for files](indicator-file.md)
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

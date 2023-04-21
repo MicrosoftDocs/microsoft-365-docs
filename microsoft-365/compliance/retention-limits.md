@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date:
+ms.date: 02/11/2021
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -54,21 +54,12 @@ Within this 10,000 policies limit, there are also some limits on the maximum num
 
 Although retention policies for Microsoft Teams and Yammer use mailboxes to store data for retention purposes, the maximum number of policies for Exchange Online exclude retention policies for Teams and Yammer.
 
-## Maximums for adaptive policy scopes
-
-There's no limit to the number of [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) that you can add to a policy for retention, but there are some maximum limits for the query that defines each adaptive scope:
-
-- String length for attribute or property values: 200
-- Number of attributes or properties without a group, or within a group: 10
-- Number of groups: 10
-- Number of characters in an advanced query: 10,000
-
-Grouping attributes or properties within a group isn't supported. This means that the maximum number of properties or attributes supported within a single adaptive scope is 100.
-
 ## Maximum number of items per policy
 
 > [!IMPORTANT]
 > Applicable only if you use [static policy scopes rather than adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention).
+
+For maximum limits for adaptive policy scopes, see [Adaptive policy scopes](purview-adaptive-scopes.md#maximums-for-adaptive-policy-scopes).
 
 If you use static scopes and the optional configuration to include or exclude specific users, specific Microsoft 365 groups, or specific sites, there are some limits per policy to be aware of.
 
@@ -111,7 +102,7 @@ SharePoint example:
 
     Because you don't need to retain all SharePoint sites, you must create retention policies that specify the specific sites. Because a retention policy doesn't support more than 100 specified sites, you must create multiple policies for the two retention periods. These retention policies  have the maximum number of included sites, so the next new site that needs retaining would require a new retention policy, irrespective of the retention period.
 
-## Maximum numbers for disposition
+## Maximum numbers for disposition review
 
 For the [disposition of content](disposition.md), there are some limits to be aware of:
 
@@ -119,13 +110,8 @@ For the [disposition of content](disposition.md), there are some limits to be aw
   - 16,000,000 items in either of the following disposition review states: pending disposition or approved disposition
   - 16,000,000 items marked as records automatically disposed (no disposition review)
 
-- Maximum numbers for each retention label:
-  - 1,000,000 items pending disposition per stage for each retention label
-  - Proof of disposition for up to seven years after the item was disposed, with a limit of 1,000,000 items per retention label for that period.
-
-    If you need proof of disposition higher than this limit of 1,000,000 for items that are marked as records, contact [Microsoft Support](../admin/get-help-support.md).
-
 - Maximum number of disposition reviewers:
     - 10 reviewers per disposition stage in any combination of individual users and mail-enabled security groups
     - 200 reviewers per tenant in any combination of individual users and mail-enabled security groups. Because of this limit, we recommend using mail-enabled security groups whenever possible for larger organizations.
 
+- Proof of disposition for up to 7 years after the item was disposed.

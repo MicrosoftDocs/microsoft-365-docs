@@ -26,11 +26,14 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn how to get online or phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
+ms.date: 11/08/2022
 ---
 
 # Get support for Microsoft 365 for business
 
 ::: moniker range="o365-worldwide"
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
@@ -51,14 +54,14 @@ Start by [checking the current health of your services](../enterprise/view-servi
 
 Save time by starting your service request online. We'll help you find a solution or connect you to technical support.
 
+> [!IMPORTANT]
+> You must have bought at least one subscription through Microsoft to access Microsoft support. If you bought all your subscriptions through a partner, contact your partner for support.
+
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, you aren't an admin. For more information, see [Who has admin permissions in my business?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
 2. On the bottom right side of the page, select **Help & support**.
 3. Type a question or keyword into the text box. If you get a drop-down list, select the one closest to your question, or continue typing your question, then press **Enter**.
 4. If the results don't help, at the bottom, select **Contact Support**.
 5. Enter a description of your issue, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**. The expected wait time is indicated in the **Contact support** pane.
-
-    > [!NOTE]
-    > If you bought your subscription through a partner, you first see the contact information for that partner. Alternatively, select **New Microsoft service request** at the bottom of the pane.
 
 ## Phone support
 
@@ -219,5 +222,5 @@ Scan this QR code to follow us on WeChat and get the latest updates for Office 3
 ## Related content
 
 [Find docs and training](index.yml) (link page)\
-[Employee quick setup](setup/employee-quick-setup.md) (article)\
+[Employee quick setup](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1) (article)\
 [Overview of Microsoft 365 Business Premium setup](setup/plan-your-setup.md) (video)

@@ -7,11 +7,11 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 01/03/2022
+ms.date: 01/27/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.reviewer: inbadian
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: 
 - m365-security
@@ -22,7 +22,9 @@ ms.custom: intro-get-started
 # Get started with Microsoft Defender for Endpoint Plan 1
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) enables you to view information about detected threats, manage your alerts and incidents, take any needed action on detected threats, and manage devices. The Microsoft 365 Defender portal is where you can get started interacting with the threat protection capabilities you get with Defender for Endpoint Plan 1. The following sections describe how to get started:
 
@@ -63,7 +65,7 @@ The navigation bar on the left side of the screen enables you to move easily bet
 | **Incidents & alerts** > **Incidents** | Navigates to the **Incidents** list. Incidents are created when alerts are triggered and/or threats are detected. By default, the **Incidents** list displays data for the last 30 days, with the most recent incident listed first. <br/><br/> To learn more, see [Incidents](view-incidents-queue.md). |
 | **Incidents & alerts** > **Alerts** | Navigates to the **Alerts** list (also referred to as the **Alerts queue**). Alerts are triggered when a suspicious or malicious file, process, or behavior is detected. By default, the **Alerts** list displays data for the last 30 days, with the most recent alert listed first. <br/><br/> To learn more, see [Alerts](alerts-queue.md). |
 | **Action center** | Navigates to the Action center, which tracks remediation and manual response actions. The Action center tracks activities like these: <br/>- Microsoft Defender Antivirus encounters a malicious file and then blocks/removes that file. <br/>- Your security team isolates a device.<br/>- Defender for Endpoint detects and quarantines a file. <br/><br/> To learn more, see [Action center](auto-investigation-action-center.md). |
-| **Secure score** | Displays a representation of your organization's security posture along with a list of improvement actions and metrics. <br/><br/> To learn more, see [Microsoft Secure Score](../defender/microsoft-secure-score.md). |
+| **Secure score** | Displays a representation of your organization's security posture along with a list of recommended actions and metrics. <br/><br/> To learn more, see [Microsoft Secure Score](../defender/microsoft-secure-score.md). |
 | **Learning hub** | Navigates to a list of learning paths that you can access to learn more about Microsoft 365 security capabilities.  |
 | **Endpoints** > **Search** | Navigates to a page where you can search for specific devices by device name. In the list of results, you can see details, such as risk level and health state, at a glance. |
 |  **Endpoints** > **Device inventory** | Navigates to your list of devices that are onboarded to Defender for Endpoint. Provides information about devices, such as their exposure and risk levels. <br/><br/> To learn more, see [Device inventory](machines-view-overview.md). |
@@ -168,5 +170,5 @@ Scroll down to see all the views in the Web protection report. Some views includ
 
 ## Next steps
 
-- [Manage Microsoft Defender for Endpoint Plan 1](mde-p1-maintenance-operations.md)
+- [Manage Microsoft Defender for Endpoint Plan 1](manage-mde-post-migration.md)
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)

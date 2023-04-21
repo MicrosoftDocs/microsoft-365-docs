@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 10/11/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -34,13 +34,14 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to protect docu
 - Authentication contexts
 - Default sharing link for a SharePoint site (PowerShell-only configuration)
 - Site sharing settings (PowerShell-only configuration)
+- Default label for channel meetings
 
 > [!IMPORTANT]
 > The settings for unmanaged devices and authentication contexts work in conjunction with Azure Active Directory Conditional Access. You must configure this dependent feature if you want to use a sensitivity label for these settings. Additional information is included in the instructions that follow.
 
 When you apply this sensitivity label to a supported container, the label automatically applies the sensitivity category and configured protection settings to the site or group.
 
-Be aware that some label options can extend configuration settings to site owners, that are otherwise restricted to administrators. When you configure and publish the label settings for external sharing options and the authentication context, a site owner can now set and change these options for a site by applying or changing the sensitivity label for a team or site. Don't configure these specific label settings if you don't want site owners to be able to make these changes.
+Be aware that some label options can extend configuration settings to site owners that are otherwise restricted to administrators. When you configure and publish the label settings for external sharing options and the authentication context, a site owner can now set and change these options for a site by applying or changing the sensitivity label for a team or site. Don't configure these specific label settings if you don't want site owners to be able to make these changes.
 
 Content in these containers however, do not inherit the labels for the sensitivity category or settings for files and emails, such as content markings and encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
@@ -57,6 +58,8 @@ Before you enable sensitivity labels for containers and configure sensitivity la
 After you enable and configure sensitivity labels for containers, users can additionally see and apply sensitivity labels to Microsoft team sites, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
 ![A sensitivity label when creating a team site from SharePoint.](../media/sensitivity-labels-new-team-site.png)
+
+After a sensitivity label has been applied to a site, you must be a [site admin](/sharepoint/site-permissions#site-admins) to change the label in SharePoint or Teams.
 
 > [!NOTE]
 > Sensitivity labels for containers support [Teams shared channels](/MicrosoftTeams/shared-channels). If a team has any shared channels, they automatically inherit sensitivity label settings from their parent team, and that label can't be removed or replaced with a different label.
@@ -83,7 +86,7 @@ After sensitivity labels are enabled for containers as described in the previous
 
 1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Groups & sites** for the label's scope: 
     
-    ![Sensitivity label scope options for files and emails.](../media/groupsandsites-scope-options-sensitivity-label.png)
+    :::image type="content" source="../media/groupsandsites-scope-options-sensitivity-label.png" alt-text="Sensitivity label scope option for Groups & sites.":::
     
     When only this scope is selected for the label, the label won't be displayed in Office apps that support sensitivity labels and can't be applied to files and emails. Having this separation of labels can be helpful for both users and administrators, but can also add to the complexity of your label deployment.
     
@@ -93,6 +96,8 @@ After sensitivity labels are enabled for containers as described in the previous
     
     - **Privacy and external user access settings** to configure the **Privacy** and **External users access** settings. 
     - **External sharing and Conditional Access settings** to configure the **Control external sharing from labeled SharePoint sites** and **Use Azure AD Conditional Access to protect labeled SharePoint sites** setting.
+    
+    Additionally, if you are editing an existing label where the scope includes items and meetings, and you've configured [labels to protect meetings](sensitivity-labels-meetings.md), you can select a default label for channel meetings and all channel chats. For non-channel meetings, you can select a default label as a policy setting.
 
 3. If you selected **Privacy and external user access settings**, now configure the following settings:
     
@@ -304,7 +309,7 @@ When the label is applied, and users browse to the site, they see the name of th
 
 ### Use PowerShell to apply a sensitivity label to multiple sites
 
-You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) and [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *SensitivityLabel* parameter from the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to apply a sensitivity label to many sites. The sites can be any SharePoint site collection, or a OneDrive site.
+You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) and [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *SensitivityLabel* parameter from the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to apply a sensitivity label to many sites. You can use the same procedure to replace an existing label. The sites can be any SharePoint site collection, or a OneDrive site.
 
 Make sure you have version 16.0.19418.12000 or later of the SharePoint Online Management Shell.
 
@@ -463,7 +468,15 @@ It wouldn't be a security concern if the document has a lower priority sensitivi
 
 To search the audit log for this event, look for **Detected document sensitivity mismatch** from the **File and page activities** category.
 
-The automatically generated email has the subject **Incompatible sensitivity label detected** and the email message explains the labeling mismatch with a link to the uploaded document and site. It also contains a documentation link that explains how users can change the sensitivity label. These automated emails cannot be customized but you can prevent them from being sent when you use the following PowerShell command from [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant):
+The automatically generated email has the subject **Incompatible sensitivity label detected** and the email message explains the labeling mismatch with a link to the uploaded document and site. It also contains a line for your own internal documentation: **HelpLink : Troubleshooting Guide**. You must configure the hyperlink for the troubleshooting guide by using the [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *LabelMismatchEmailHelpLink* parameter. For example:
+
+```PowerShell
+Set-SPOTenant –LabelMismatchEmailHelpLink "https://support.contoso.com"
+```
+
+The email message also has a Microsoft documentation link that provides basic information for users to change the sensitivity label: [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+
+Except for the internal URL that you must specify, these automated emails cannot be customized. However, you can prevent them from being sent when you use the following PowerShell command from [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant):
 
 ```PowerShell
 Set-SPOTenant -BlockSendLabelMismatchEmail $True
@@ -471,7 +484,7 @@ Set-SPOTenant -BlockSendLabelMismatchEmail $True
 
 When somebody adds or removes a sensitivity label to or from a site or group, these activities are also audited but without automatically generating an email.
 
-All these auditing events can be found in the [Sensitivity label activities](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) category. For instructions to search the audit log, see [Search the audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md).
+All these auditing events can be found in the [Sensitivity label activities](audit-log-activities.md#sensitivity-label-activities) category. For instructions to search the audit log, see [Search the audit log in the compliance portal](audit-log-search.md).
 
 ## How to disable sensitivity labels for containers
 
@@ -484,9 +497,5 @@ This means that any label settings from sites and groups previously applied to c
 If these containers have Azure AD classification values applied to them, the containers revert to using the classifications again. Be aware that any new sites or groups that were created after enabling the feature won't display a label or have a classification. For these containers, and any new containers, you can now apply classification values. For more information, see [SharePoint "modern" sites classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification) and [Create classifications for Office groups in your organization](../enterprise/manage-microsoft-365-groups-with-powershell.md).
 
 ## Additional resources
-
-See the webinar recording and answered questions for [Using Sensitivity labels with Microsoft Teams, O365 Groups and SharePoint Online sites](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
-
-This webinar was recorded when the feature was still in preview, so you might notice some discrepancies in the UI. However, the information for this feature is still accurate, with any new capabilities documented on this page.
 
 For more information about managing Teams connected sites and channel sites, see [Manage Teams connected sites and channel sites](/SharePoint/teams-connected-sites).

@@ -24,6 +24,8 @@ ms.subservice: mde
 # Microsoft Defender for Endpoint for US Government customers
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,10 +42,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 
 ### Desktop licensing
 
-<br />
-
-****
-
 |GCC|GCC High|DoD|
 |---|---|---|
 |Microsoft 365 GCC G5|Microsoft 365 E5 for GCC High|Microsoft 365 G5 for DOD|
@@ -52,10 +50,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 |Windows 10 Enterprise E5 GCC|Windows 10 Enterprise E5 for GCC High|Windows 10 Enterprise E5 for DOD|
 
 ### Server licensing
-
-<br />
-
-****
 
 |GCC|GCC High|DoD|
 |---|---|---|
@@ -67,8 +61,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 The following are the Microsoft Defender for Endpoint portal URLs for US Government customers:
 
 <br />
-
-****
 
 |Customer type|Portal URL|
 |---|---|
@@ -86,8 +78,6 @@ The following are the Microsoft Defender for Endpoint portal URLs for US Governm
 The following OS versions are supported:
 
 <br />
-
-****
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
@@ -119,19 +109,18 @@ iOS|![Yes.](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <
 
 **Footnotes**
 
-<sup>1</sup> The patch must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
+   <sup>1</sup> The patch must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
 
-<sup>2</sup> Learn about the [unified modern solution for Windows 2016 and 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
+   <sup>2</sup> Learn about the [unified modern solution for Windows 2016 and 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
 
-<sup>3</sup> When using [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) you'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1. <br /> The minimum MMA supported version is 10.20.18029 (March 2020).
+   <sup>3</sup> When using [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) you'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1. </br>
+    The minimum MMA supported version is 10.20.18029 (March 2020).
 
 ### OS versions when using Microsoft Defender for servers
 
 The following OS versions are supported when using [Microsoft Defender for servers](/azure/security-center/security-center-wdatp):
 
 <br />
-
-****
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
@@ -165,8 +154,6 @@ Instead of the public URIs listed in our [API documentation](apis-intro.md), you
 
 <br />
 
-****
-
 |Endpoint type|GCC|GCC High & DoD|
 |---|---|---|
 |Login|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
@@ -178,26 +165,25 @@ Defender for Endpoint for US Government customers doesn't have complete parity w
 
 These are the known gaps:
 
-<br />
-
-****
-
 |Feature name|GCC|GCC High|DoD|
-|----|:---:|:---:|:---:|
-|Reports: Web content filtering|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Reports: Device health|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Microsoft Secure Score|![Yes](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
-|Microsoft Threat Experts|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
-
+|---|:---:|:---:|:---:|
+|Microsoft Secure Score|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
+|Microsoft Threat Experts|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
+| Microsoft Defender for Endpoint Security Configuration Management|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
+   
 **Footnote**
 
-<sup>1</sup> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
+   <sup>1</sup> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
 
 
 These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
 
+<br />
+
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
+|Reports: Web content filtering|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Reports: Device health|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Web Protection (Anti-Phishing and custom indicators)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Malware Protection (Android-Only)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Jailbreak Detection (iOS-Only)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
@@ -205,3 +191,5 @@ These are the features and known gaps for [Mobile Threat Defense (Microsoft Defe
 |Support for MAM|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Privacy Controls|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Microsoft Defender Vulnerability Management (MDVM))|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+
+

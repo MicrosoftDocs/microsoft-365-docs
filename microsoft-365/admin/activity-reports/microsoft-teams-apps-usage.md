@@ -3,9 +3,10 @@ title: "Microsoft 365 admin center Teams app usage reports"
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 05/16/2022
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 

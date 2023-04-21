@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 06/01/2022
 ---
 
 # Get browser extensions permission information
@@ -26,6 +27,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -44,7 +46,7 @@ search.appverid: met150
 
 Retrieves a list of all the permissions requested by a specific browser extension. This is a static data description and would mainly be used to enhance the data returned by the [Export browser extensions assessment API](get-assessment-browser-extensions.md).
 
-By combining these APIs you’ll be able to see a description of the permissions requested by the browser extensions that come up in the [Export browser extensions assessment](get-assessment-browser-extensions.md) results.
+By combining these APIs you'll be able to see a description of the permissions requested by the browser extensions that come up in the [Export browser extensions assessment](get-assessment-browser-extensions.md) results.
 
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>OData supported operators:

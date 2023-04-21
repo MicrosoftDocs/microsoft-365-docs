@@ -19,6 +19,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Microsoft Defender for Endpoint API - Hello World
@@ -31,7 +32,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -158,7 +159,7 @@ Done! You have successfully registered an application!
   $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
   # The URL contains the type of query and the time filter we create above
-  # Read more about other query options and filters at   Https://TBD- add the documentation link
+  # Read more about [other query options and filters](get-alerts.md).
   $url = "https://api.securitycenter.microsoft.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
 
   # Set the WebRequest headers

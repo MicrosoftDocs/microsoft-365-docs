@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date:
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -33,7 +33,7 @@ After you create a data connector to import non-Microsoft data to Microsoft Purv
 
 ## Before you view admin logs
 
-- Auditing must be enabled for your organization to generate and view admin log for your organization. Auditing is enabled by default in Microsoft Purview. However, we recommend that you verify auditing status of your organization. For instructions, see [Verify the auditing status for your organization](turn-audit-log-search-on-or-off.md#verify-the-auditing-status-for-your-organization). If you need to enable auditing for your organization, see [Turn on auditing](turn-audit-log-search-on-or-off.md#turn-on-auditing).
+- Auditing must be enabled for your organization to generate and view admin log for your organization. Auditing is enabled by default in Microsoft Purview. However, we recommend that you verify auditing status of your organization. For instructions, see [Verify the auditing status for your organization](audit-log-enable-disable.md#verify-the-auditing-status-for-your-organization). If you need to enable auditing for your organization, see [Turn on auditing](audit-log-enable-disable.md#turn-on-auditing).
 
 - After auditing is turned on, it could take up to 48 hours to generate admin logs for data connectors. We recommend that you enable auditing before you create data connectors.
 

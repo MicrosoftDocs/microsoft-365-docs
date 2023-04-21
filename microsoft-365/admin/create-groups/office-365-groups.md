@@ -1,6 +1,7 @@
 ---
 title: "Overview of Microsoft 365 Groups for administrators"
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -76,9 +77,10 @@ The following limits apply to Microsoft 365 Groups:
 |:---------|:----|
 |Owners per group|100|
 |Groups a user can create|250|
-|Groups an admin can create|There are no Microsoft 365 group specific limits. There's an overall Azure AD object limit specific to each organization. An Azure AD admin who can manage groups in the organization can create an unlimited number of Microsoft 365 groups up to the Azure AD object limit. See [AAD service limits and restrictions](/active-directory/enterprise-users/directory-service-limits-restrictions).|
-|Number of members|More than 1,000, though only 1,000 can access the Group conversations concurrently. <br>Users might notice delays when accessing the calendar and conversations in large groups in Outlook.|
-|Number of Groups a user can be a member of|7,000|
+|Groups an admin can create|There are no Microsoft 365 group specific limits. There's an overall Azure AD object limit specific to each organization. An Azure AD admin who can manage groups in the organization can create an unlimited number of Microsoft 365 groups up to the Azure AD object limit. See [AAD service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions).|
+|Number of members|More than 1,000, though only 1,000 can access the group conversations concurrently. <br>Users might notice delays when accessing the calendar and conversations in large groups in Outlook.|
+|Number of groups a user can be an owner of|7,000|
+|Number of groups a user can be a member of|7,000|
 |File storage|1 Terabyte + 10 GB per subscribed user + any other storage purchased. You can purchase an unlimited amount of extra storage.|
 |Group Mailbox size|50 GB|
 
@@ -118,7 +120,6 @@ Microsoft 365 groups work with Azure Active Directory. The groups features you g
 ## Related content
 
 [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article)\
-[Upgrade distribution lists to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md) (article)\
 [Manage Microsoft 365 Groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article)\
 [SharePoint Online Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (article)\
 [Organize groups and channels in Microsoft Stream](/stream/groups-channels-organization) (article)

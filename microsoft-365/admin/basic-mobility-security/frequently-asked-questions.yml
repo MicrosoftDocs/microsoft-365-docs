@@ -1,6 +1,7 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Basic Mobility and Security frequently-asked questions (FAQ)"
+  ms.date: 06/18/2021
+  title: "Basic Mobility and Security frequently-asked questions (FAQs)"
   f1.keywords:
   - NOCSH
   ms.author: kwekua
@@ -22,7 +23,7 @@ metadata:
   search.appverid:
   - MET150
   description: "Frequently-asked questions about Basic Mobility and Security."
-title: Basic Mobility and Security frequently-asked questions (FAQ)
+title: Basic Mobility and Security frequently-asked questions (FAQs)
 summary: This article contains frequently asked questions about Basic Mobility and Security, a feature that helps you manage and secure mobile devices in Microsoft 365. If you can't find an answer to your question, let us know by leaving a comment on the page so we can consider adding your question to this article.
 
 
@@ -32,22 +33,18 @@ sections:
       - question: |
           How can I get Basic Mobility and Security? I don't see it in the Microsoft 365 admin center
         answer: |
-          1.  Activate Basic Mobility and Security by going to the [Office 365 Security & Compliance](https://protection.office.com/) page.
-          
-          2.  Go to Data loss prevention > Device management.
+          1.  Activate Basic Mobility and Security by going to the [home page](https://compliance.microsoft.com/basicmobilityandsecurity/).
           
       - question: |
           How can I get started with device management in Basic Mobility and Security?
         answer: |
           There are four steps to getting started with Basic Mobility and Security: 
           
-          1. Activate Basic Mobility and Security by going to the [Office 365 Security & Compliance](https://protection.office.com/).
+          1. Activate Basic Mobility and Security by going to the [home page](https://compliance.microsoft.com/basicmobilityandsecurity/).
           
-          2. Go to [Basic Mobility and Security (Preview)](https://compliance.microsoft.com/basicmobilityandsecurity).
-              
-          3. Create device management policies, and apply them to groups of users that are set up in security groups. We recommend that you start by deploying the policies to a small test group. For more info, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
+          2. Select Policies and then select Create. Create device management policies, and apply them to groups of users that are set up in security groups. We recommend that you start by deploying the policies to a small test group. For more info, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
           
-          4. Users who have had a policy applied to them are prompted to enroll their devices when they try to access Microsoft 365 data. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md).
+          3. Users who have had a policy applied to them are prompted to enroll their devices when they try to access Microsoft 365 data. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md).
           
           For more details, see [Set up Basic Mobility and Security](set-up.md).
           

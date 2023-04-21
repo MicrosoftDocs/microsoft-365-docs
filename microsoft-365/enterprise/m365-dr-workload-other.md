@@ -8,8 +8,8 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 
 ms.reviewer: dmwmsft
+ms.date: 09/20/2022
 ms.custom:
 - it-pro
 ms.collection:
@@ -27,7 +27,7 @@ Use the following guidance to determine where your data is located. Please refer
 Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatamap).
 
 ### Forms
-Tenants in EU member Countries maintain data in _Macro Region Geography 1 – EMEA_. All other tenants have customer data stored in the United States.
+Tenants in EU member Countries maintain data in Macro Region Geography 1 – EMEA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data will be stored at rest in Australia for all new tenants using Forms and existing tenants that have not previously used Forms. 
 
 ### Intune
 Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for existing tenants. If you do not have an existing tenant, create a trial tenant and provision Intune.
@@ -54,6 +54,27 @@ Please refer to [Dynamics 365 availability and data locations | Microsoft Learn]
 ### Stream
 You can find this information from the "?" option in the Stream UI, if you have it running and then click on "About Microsoft Stream" and see where your data is stored. If needed, create a trial tenant.
 
+### Viva Goals
+
+#### Summary
+
+Service documentation: [Introduction to Microsoft Viva Goals ](/viva/goals/intro-to-ms-viva-goals)
+
+Capability summary: Microsoft Viva Goals is a goal-alignment solution that connects teams to your organization’s strategic priorities, unites them around your mission and purpose, and drives business results. Viva Goals enables individuals and companies to organize and track their goals through “Objectives and Key Results” (OKRs). Viva Goals immerses everyone in the company’s purpose and top priorities and creates a culture of engaged employees focused on achieving common goals. 
+
+#### Data Residency Available
+
+Starting December 5, 2022, Viva Goals [Customer Data](/privacy/eudb/eu-data-boundary-learn) for new tenants in the [European Union Data Boundary (EUDB)](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations) will be stored in data centers located in the EU. All other tenants will have their Viva Goals Customer Data stored in data centers located in the United States. Tenants aren't provided with a choice for the specific deployment region for data storage.  
+
+To be considered a tenant in the EUDB:
+ 
+1. The tenant must have a *default geography* in a EUDB country or select a country in EUDB country as their residence during free trial sign-up; and 
+1. The tenant must not purchase a Multi-Geo offering
+
+#### Migration
+
+Customers who signed up for Viva Goals prior to December 5, 2022, currently have their data stored in the US data centers. We'll migrate the data for these customers to data centers located in the EU over the coming months. Customers won't have to do anything to facilitate this move.
+
 ### Viva Insights – Advanced, Mgr, Leader
 Please see the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.  The data region for Manager/Leader and Advanced is determined by the _Default Geography_ of the _tenant_, not individual users.
 
@@ -78,7 +99,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 1. Canada
 1. Japan
 
-| Country Code | Country Name | Viva Insights Advanced | Viva Learning | Planner |
+| Country Code | Countries/Regions | Viva Insights Advanced | Viva Learning | Planner |
 | --- | --- | --- | --- | --- |
 | AF | Afghanistan | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | AX | Aland Islands | APC<sup>2</sup>| AMER<sup>3</sup>| EUR<sup>1</sup>|
@@ -296,7 +317,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 | SZ | Swaziland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | SE | Sweden | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | CH | Switzerland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| TW | Taiwan, Republic of China | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
+| TW | Taiwan | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | TJ | Tajikistan | EUR<sup>1</sup>| APC<sup>2</sup>| EUR<sup>1</sup>|
 | TH | Thailand | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | TL | Timor-Leste | APC<sup>2</sup>| EUR<sup>1</sup>| APC<sup>2</sup>|

@@ -20,6 +20,7 @@ ms.collection:
   - m365-security
   - tier2
 ms.topic: conceptual
+ms.date: 08/11/2022
 ---
 
 # Build hunting queries using guided mode in Microsoft 365 Defender
@@ -57,7 +58,7 @@ You can choose from:
 - All domains - to look through all available data in your query
 - Endpoints - to look through endpoint data as provided by Microsoft Defender for Endpoint
 - Apps and identities - to look through application and identity data as provided by Microsoft Defender for Cloud Apps and Microsoft Defender for Identity; users familiar with [Activity log](/defender-cloud-apps/activity-filters) can find the same data here
-- Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with [Threat Explorer](/office-365-security/threat-explorer) can find the same data here
+- Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with [Threat Explorer](/office-365-security/threat-explorer-about) can find the same data here
 
 ## Use basic filters
 
@@ -75,7 +76,7 @@ When you choose one data source, for instance, **Endpoints**, the query builder 
 
 Once the query is ready, select the blue **Run query** button. If the button is grayed out, it means the query needs to be filled out or edited further. 
 
->[!NOTE]
+> [!NOTE]
 > The basic filter view uses the **AND** operator only, meaning running the query generates results for which all set filters are true. 
 
 
@@ -84,7 +85,7 @@ Once the query is ready, select the blue **Run query** button. If the button is 
 Another quick way to get familiar with guided hunting is to load sample queries using the **Load sample queries** dropdown menu. 
 ![Screenshot of guided mode query builder load sample queries list](../../media/guided-hunting/load-sample-queries.png)
 
->[!NOTE] 
+> [!NOTE] 
 > Selecting a sample query overrides the existing query. 
 
 Once the sample query is loaded, select **Run query**.
@@ -121,7 +122,7 @@ To specify a set of data to be used in the query, select **Select a filter**. Ex
 
 Type the section's titles in the search box at the top of the list to find the filter. Sections ending in *info* contain filters that provide information about the different components you can look at and filters for the states of entities. Sections ending in *events* contain filters that allow you to look for any monitored event on the entity. For instance, to hunt for activities involving certain devices, you can use the filters under the **Device events** section.
 
->[!NOTE]
+> [!NOTE]
 > Choosing a filter that isn't in the basic filters list deactivates or grays out the toggle to return to the basic filters view. To reset the query or remove existing filters in the current query, select **Clear all**. This also reactivates the basic filters list.
 
 
@@ -150,7 +151,7 @@ Follow the instructions in the blue teaching bubbles to construct your query. Se
 ## Try some queries
 
 ### Hunt for successful connections to specific IP
-To hunt for successful network communications to a specific IP address, start typing “ip” to get suggested filters:
+To hunt for successful network communications to a specific IP address, start typing "ip" to get suggested filters:
 
 ![Screenshot of guided mode query builder hunt for successful connections to specific IP first filter](../../media/guided-hunting/query-builder-hunt-ip.png)
 

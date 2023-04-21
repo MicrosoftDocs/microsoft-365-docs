@@ -3,6 +3,7 @@ title: Adjust scheduling preferences for Scheduler for Microsoft 365 Overview
 ms.author: shivb
 author: shivbijlani
 manager: charlle
+ms.date: 05/17/2022
 audience: Admin
 ms.topic: article
 ms.service: scheduler
@@ -11,6 +12,9 @@ description: Learn how to adjust scheduling preferences for Scheduler for Micros
 ---
 
 # Scheduling preferences used by Scheduler
+
+> [!IMPORTANT]
+> Scheduler for Microsoft 365 will stop working in August 2023. After that date, Scheduler won't be able to create or modify any meeting requests.
 
 Scheduler uses several Outlook preferences to schedule a meeting for an organizer. Any changes to the preference settings in Outlook clients will affect how Scheduler handles requests sent to Cortana. For instance, if an organizer changes the time zone preference on the settings page in Outlook Web, all requests by the organizer that follow will default to the new time zone.
 

@@ -169,7 +169,25 @@ The following table lists commonly used Group Policy settings that are available
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
+> [!TIP]
+> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
+>
+> - Top paths that impact scan time
+> - Top files that impact scan time
+> - Top processes that impact scan time
+> - Top file extensions that impact scan time
+> - Combinations – for example:
+>   - top files per extension
+>   - top paths per extension
+>   - top processes per path
+>   - top scans per file
+>   - top scans per file per process
+>
+> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
+> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+
 ## See also
 
+- [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

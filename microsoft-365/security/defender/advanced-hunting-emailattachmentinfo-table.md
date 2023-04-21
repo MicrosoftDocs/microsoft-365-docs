@@ -20,6 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # EmailAttachmentInfo
@@ -29,7 +30,7 @@ ms.topic: conceptual
 **Applies to:**
 
 - Microsoft 365 Defender
-- Microsoft Defender for Office 365
+
 
 The `EmailAttachmentInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Microsoft Defender for Office 365. Use this reference to construct queries that return information from this table.
 

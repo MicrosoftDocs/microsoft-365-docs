@@ -1,6 +1,7 @@
 ---
 title: "Manage ownerless Microsoft 365 groups and teams"
 ms.reviewer: arvaradh
+ms.date: 04/04/2022
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -25,7 +26,7 @@ description: "Learn how to automatically invite members to become owners in an o
 
 # Manage ownerless Microsoft 365 groups and teams
 
-A team in Microsoft Teams or a Microsoft 365 group and its related services can become ownerless if an owner's account is deleted or disabled in Microsoft 365. Groups and teams require an owner to add or remove members and change group settings.
+A team in Microsoft Teams or a Microsoft 365 group and its related services can become ownerless if an owner's account is deleted in Microsoft 365. Groups and teams require an owner to add or remove members and change group settings.
 
 A Global Administrator, Exchange Administrator, or Groups Administrator can create a policy that automatically asks the most active members of an ownerless group or team if they'll accept ownership. When a member accepts the invitation to become an owner, the action is logged in the compliance portal audit log. Guests are never invited to be owners.
 
@@ -33,7 +34,7 @@ When creating the policy, you can specify:
 - If you want to limit who can be invited to be an owner by specifying a security group
 - The sender address of the notifications
 - The number of weeks that the notifications will be sent
-- Which groups or teams are part of the policy
+- Which groups or teams are part of the policy. A maximum of 50 groups can be selected.
 
 > [!Note]
 > Using a security group to limit who can be invited to be an owner requires that you possess but not necessarily assign an Azure AD Premium license for each Microsoft 365 group member in your organization.

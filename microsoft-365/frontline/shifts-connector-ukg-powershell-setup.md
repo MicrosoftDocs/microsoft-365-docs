@@ -1,9 +1,9 @@
 ---
 title: Use PowerShell to connect Shifts to UKG Dimensions
-author: LanaChin
-ms.author: v-lanachin
-ms.reviewer:
-manager: samanro
+author: samanro
+ms.author: samanro
+ms.reviewer: imarquesgil
+manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -13,18 +13,18 @@ ms.localizationpriority: high
 ms.collection:
   - M365-collaboration
   - m365-frontline
+  - tier2
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 03/21/2023
 ---
 
 # Use PowerShell to connect Shifts to UKG Dimensions
 
 ## Overview
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
-
-Use the [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) to integrate the Shifts app in Microsoft Teams with UKG Dimensions. After a connection is set up, your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
+Use the [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) to integrate the Shifts app in Microsoft Teams with UKG Dimensions. Your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
 
 In this article, we walk you through how to use PowerShell to set up and configure the connector to integrate Shifts with UKG Dimensions.
 
@@ -44,6 +44,10 @@ With UKG Dimensions as the system of record, your frontline workers can efficien
 ### Prerequisites
 
 [!INCLUDE [shifts-connector-ukg-prerequisites](includes/shifts-connector-ukg-prerequisites.md)]
+
+### Configure single sign-on
+
+[!INCLUDE [shifts-connector-ukg-sso](includes/shifts-connector-ukg-sso.md)]
 
 ### Admin role to manage the connector using PowerShell
 
@@ -88,8 +92,8 @@ The script does the following actions. You'll be prompted to enter setup and con
 1. Configures the Shifts connector.
 1. Applies sync settings. These settings include the sync frequency (in minutes) and the schedule data that's synced between UKG Dimensions and Shifts. Schedule data is defined in the following parameters:
 
-    - The **enabledConnectorScenarios** parameter defines data that's synced from UKG Dimensions to Shifts. Options are `Shift`, `SwapRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
-    - The **enabledWfiScenarios** parameter defines data that's synced from Shifts to UKG Dimensions. Options are `SwapRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
+    - The **enabledConnectorScenarios** parameter defines data that's synced from UKG Dimensions to Shifts. Options are `Shift`, `SwapRequest`, `OfferShiftRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
+    - The **enabledWfiScenarios** parameter defines data that's synced from Shifts to UKG Dimensions. Options are `SwapRequest`, `OfferShiftRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
 
     To learn more, see [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance). To see the list of supported sync options for each parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector).
 

@@ -18,7 +18,7 @@ ms.topic: reference
 ms.collection: 
 - m365-security
 - tier2
-- ms.date: 10/07/2022
+ms.date: 04/11/2023
 search.appverid: met150
 ---
 
@@ -71,6 +71,24 @@ For the easiest method to enable the standard protection rules, see: [Simplified
 | Block untrusted and unsigned processes that run from USB | | Yes |
 | Block Win32 API calls from Office macros | | Yes |
 | Use advanced protection against ransomware | | Yes |
+
+## Microsoft Defender Antivirus exclusions and ASR rules
+
+Microsoft Defender Antivirus exclusions apply to some Microsoft Defender for Endpoint capabilities, such as some of the attack surface reduction (ASR) rules.
+
+Following is a list of ASR rules that honor Microsoft Defender Antivirus exclusions:
+
+| ASR rules name: |
+|:---|
+| [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) |
+| [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |
+| [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |
+| [Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) |
+| [Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) |
+| [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |
+
+> [!NOTE]
+> For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md).
 
 ## ASR rules supported operating systems
 
@@ -134,8 +152,8 @@ Links to information about configuration management system versions referenced i
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
-- [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
-- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM is now Microsoft Endpoint Configuration Manager._
+- [Microsoft Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
+- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM is now Microsoft Configuration Manager._
 
 ## Per ASR rule alert and notification details
 
@@ -143,29 +161,29 @@ Toast notifications are generated for all rules in Block mode. Rules in any othe
 
 For rules with the "Rule State" specified:
 
-- ASR rules with \<ASR Rule, Rule State\> combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at high-cloud block level. Devices not at high cloud block level won't generate alerts for any <ASR Rule, Rule State> combinations
-- EDR alerts are generated for ASR rules in the specified states, but only for devices at high cloud block level.
+- ASR rules with \<ASR Rule, Rule State\> combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at cloud block level **High**. Devices not at High cloud block level won't generate alerts for any <ASR Rule, Rule State> combinations
+- EDR alerts are generated for ASR rules in the specified states, for devices at cloud block level **High+**
 
 | Rule name: | Rule state: | Generates alerts in EDR? <br> (Yes&nbsp;\|&nbsp;No) | Generates toast notifications? <br> (Yes&nbsp;\|&nbsp;No) |
 |---|:---:|:---:|:---:|
-|   |   |  _Only for devices at high-cloud block level_ | _In Block mode only_ |
+|   |   |  _Only for devices at cloud block level **High+**_ | _In Block mode only_ and _only for devices at cloud block level **High**_|
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) |   | N  | Y |
-|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Block  | Y <br> Requires device at high-cloud block level  | Y <br> Requires device at high-cloud block level |
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Block  | Y   | Y  |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) |   | N | Y |
 |[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   | N | Y |
-|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) |   | Y <br> Requires device at high-cloud block level | Y <br> Requires device at high-cloud block level |
+|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) |   | Y  | Y  |
 |[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | Y |
-|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) |  Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
-|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Block | Y <br> Requires device at high-cloud block level  | Y <br> Requires device at high-cloud block level |
+|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) |  Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
+|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Block | Y   | Y  |
 |[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) |   | N | Y |
 |[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | Y |
 |[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |  |  N | Y |
-|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |  Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
+|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |  Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
 |[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | Y |
-|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
+|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |   | N | Y |
-|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
-  
+|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
+
 ## ASR rule to GUID matrix
 
 | Rule Name | Rule GUID |
@@ -201,7 +219,7 @@ When the allow button is clicked, the block will be suppressed for 24 hours. Aft
 You can also set a rule in warn mode via PowerShell by specifying the AttackSurfaceReductionRules_Actions as "Warn". For example:
 
 ```powershell
--command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
+Add-MpPreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn
 ```
 
 ## Per rule descriptions
@@ -214,7 +232,7 @@ The **Block abuse of exploited vulnerable signed drivers** rule doesn't block a 
 
 > [!NOTE]
 >
-> You can configure this rule using MEM OMA-URI. See [MEM OMA-URI](enable-attack-surface-reduction.md#mem) for configuring custom rules.
+> You can configure this rule using Intune OMA-URI. See [Intune OMA-URI](enable-attack-surface-reduction.md#custom-profile-in-intune) for configuring custom rules.
 >
 > You can also configure this rule using [PowerShell](enable-attack-surface-reduction.md#powershell).
 >
@@ -310,7 +328,7 @@ This rule blocks the following file types from launching from email opened withi
 
 Intune name: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft Endpoint Manager name: `Block executable content from email client and webmail`
+Microsoft Configuration Manager name: `Block executable content from email client and webmail`
 
 GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
@@ -325,7 +343,7 @@ Dependencies: Microsoft Defender Antivirus
 > The rule **Block executable content from email client and webmail** has the following alternative descriptions, depending on which application you use:
 >
 > - Intune (Configuration Profiles): Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions).
-> - Endpoint Manager: Block executable content download from email and webmail clients.
+> - Configuration Manager: Block executable content download from email and webmail clients.
 > - Group Policy: Block executable content from email client and webmail.
 
 ### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
@@ -357,12 +375,9 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 This rule detects suspicious properties within an obfuscated script.
   
 > [!IMPORTANT]
-> PowerShell scripts have been temporarily excluded from the "Block execution of potentially obfuscated scripts" rule due to the large-scale FP issues faced in the past.
+> PowerShell scripts have been temporarily excluded from the "Block execution of potentially obfuscated scripts" rule due to a high number of false positives. We will provide an update when PowerShell scripts are included again in the scope of this rule.
 
 Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which hampers close scrutiny by humans and security software.
-
-> [!IMPORTANT]
-> Due to the high number of false positives, this rule does not currently detect PowerShell scripts; this is a temporary solution. The rule will be updated and start redetecting PowerShell scripts soon.
 
 Intune name: `Obfuscated js/vbs/ps/macro code`
 
@@ -423,7 +438,7 @@ Attackers might attempt to use Office apps to migrate malicious code into other 
 
 There are no known legitimate business purposes for using code injection.
 
-This rule applies to Word, Excel, and PowerPoint.
+This rule applies to Word, Excel, OneNote, and PowerPoint.
 
 Intune name: `Office apps injecting code into other processes (no exceptions)`
 
@@ -469,7 +484,7 @@ This rule prevents malware from abusing WMI to attain persistence on a device.
 
 Fileless threats employ various tactics to stay hidden, to avoid being seen in the file system, and to gain periodic execution control. Some threats can abuse the WMI repository and event model to stay hidden.
 
-Intune name: Not available
+Intune name: `Persistence through WMI event subscription`
 
 Configuration Manager name: Not available
 
@@ -583,3 +598,4 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 - [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 - [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

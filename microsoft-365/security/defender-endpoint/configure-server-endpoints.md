@@ -11,7 +11,7 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
-ms.date: 09/22/2022
+ms.date: 11/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -49,7 +49,7 @@ You'll need to complete the following general steps to successfully onboard serv
 
 :::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="An illustration of onboarding flow for Windows Servers and Windows 10 devices" lightbox="images/server-onboarding-tools-methods.png":::
 
->[!NOTE]
+> [!NOTE]
 > Windows Hyper-V Server editions are not supported.
 
 **Integration with Microsoft Defender for Servers**:
@@ -63,6 +63,7 @@ Data collected by Defender for Endpoint is stored in the geo-location of the ten
 > - If you use Defender for Endpoint before using Microsoft Defender for Cloud, your data will be stored in the location you specified when you created your tenant even if you integrate with Microsoft Defender for Cloud at a later time.
 > - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant.
 > - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
+> - Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and previous versions of Windows Server allowed for the OMS / Log Analytics gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019, Windows Server 2022, and Windows 10, doesn't support this gateway.
 > - Linux servers onboarded through Microsoft Defender for Cloud will have their initial configuration set to run Defender Antivirus in [passive mode](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
 
 **Windows Server 2012 R2 and Windows Server 2016**:
@@ -76,8 +77,13 @@ Data collected by Defender for Endpoint is stored in the geo-location of the ten
 - Download the onboarding package
 - Follow the onboarding steps for the corresponding tool
 
->[!IMPORTANT]
->To be eligible to purchase Microsoft Defender for Endpoint Server SKU, you already must have purchased a combined minimum of any of the following: Windows E5/A5, Microsoft 365 E5/A5, or Microsoft 365 E5 Security subscription licenses.
+> [!IMPORTANT]
+> To be eligible to acquire Microsoft Defender for Endpoint Server licenses (one per covered server instance), you must have already purchased a combined minimum of 50 licenses for one or more of the following:
+>
+> - Microsoft Defender for Endpoint (per user)
+> - Windows E5/A5
+> - Microsoft 365 E5/A5
+> - Microsoft 365 E5 Security User subscription licenses.
 
 ## Windows Server 2012 R2 and Windows Server 2016
 
@@ -110,18 +116,20 @@ The installer package will check if the following components have already been i
 
 - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 - [Update for Universal C Runtime in Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
-- [Security Update for Windows Server 2012 R2 (KB3045999)](https://support.microsoft.com/en-us/topic/ms15-038-description-of-the-security-update-for-windows-april-14-2015-99265f07-6926-d6d2-5203-3b32b214a9c3)
+- [Security Update for Windows Server 2012 R2 (KB3045999)](https://support.microsoft.com/topic/ms15-038-description-of-the-security-update-for-windows-april-14-2015-99265f07-6926-d6d2-5203-3b32b214a9c3)
 
 #### Prerequisites for Windows Server 2016
 
+It's recommended to install the latest available SSU and LCU on the server.
+
 - The Servicing Stack Update (SSU) from September 14, 2021 or later must be installed.
-- The Latest Cumulative Update (LCU) from September 20, 2018 or later must be installed.  It's recommended to install the latest available SSU and LCU on the server.
+- The Latest Cumulative Update (LCU) from September 20, 2018 or later must be installed.  
 - Enable the Microsoft Defender Antivirus feature and ensure it's up to date. For more information on enabling Defender Antivirus on Windows Server, see [Re-enable Defender Antivirus on Windows Server if it was disabled](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled) and [Re-enable Defender Antivirus on Windows Server if it was uninstalled](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled).
 - Download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
 
 #### Prerequisites for running with third-party security solutions
 
-If you intend to use a third-party anti-malware solution, you'll need to run Microsoft Defender Antivirus in passive mode. You must remember to set to passive mode during the installation and onboarding process. 
+If you intend to use a third-party anti-malware solution, you'll need to run Microsoft Defender Antivirus in passive mode. You must remember to set to passive mode during the installation and onboarding process.
 
 > [!NOTE]
 > If you're installing Microsoft Defender for Endpoint on Servers with McAfee Endpoint Security (ENS) or VirusScan Enterprise (VSE), the version of the McAfee platform may need to be updated to ensure Microsoft Defender Antivirus is not removed or disabled. For more information including the specific version numbers required, see, [McAfee Knowledge Center article](https://kcm.trellix.com/corporate/index?page=content&id=KB88214).
@@ -173,6 +181,10 @@ Follow these steps to download the packages:
 
 5. Install the installation package using any of the options to install Microsoft Defender Antivirus. The installation requires administrative permissions.
 
+> [!IMPORTANT]
+>
+> - A local onboarding script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
+
 ### STEP 2: Apply the installation and onboarding package
 
 In this step, you'll install the prevention and detection components required before onboarding your device to the Microsoft Defender for Endpoint cloud environment, to prepare the machine for onboarding. Ensure all [prerequisites](#prerequisites) have been met.
@@ -219,7 +231,8 @@ Support for Windows Server provides deeper insight into server activities, cover
 
 ##### Install Microsoft Defender for Endpoint using a script
 
-You can use the [installer helper script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding. 
+You can use the [installer helper script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding.
+
 > [!NOTE]
 > The installation script is signed. Any modifications to the script will invalidate the signature. When you download the script from GitHub, the recommended approach to avoid inadvertent modification is to download the source files as a zip archive then extract it to obtain the install.ps1 file (on the main Code page, click the Code dropdown menu and select "Download ZIP").
 
@@ -248,10 +261,9 @@ This script can be used in various scenarios, including those scenarios describe
     ```
 
     > [!NOTE]
-
     > The recommended execution policy setting is `Allsigned`. This requires importing the script's signing certificate into the Local Computer Trusted Publishers store if the script is running as SYSTEM on the endpoint.
 
-    Replace \\servername-or-dfs-space\share-name with the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *install.ps1* file. The installer package md4ws.msi must be placed in the same directory.  Ensure that the permissions of the UNC path allow write access to the computer account that is installing the package, to support creation of log files. If you wish to disable the creation of log files (not recommended), you can use the -noETL -noMSILog parameters.
+    Replace \\\servername-or-dfs-space\share-name with the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *install.ps1* file. The installer package md4ws.msi must be placed in the same directory. Ensure that the permissions of the UNC path allow write access to the computer account that is installing the package, to support creation of log files. If you wish to disable the creation of log files (not recommended), you can use the -noETL -noMSILog parameters.
 
     For scenarios where you want Microsoft Defender Antivirus to co-exist with non-Microsoft antimalware solutions, add the $Passive parameter to set passive mode during installation.
 
@@ -273,51 +285,19 @@ The following steps are only applicable if you're using a third-party anti-malwa
 
    :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="The passive mode verification result" lightbox="images/atp-verify-passive-mode.png":::
 
-> [!IMPORTANT]
->
-> - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
-
 #### Known issues and limitations in the new, unified solution package for Windows Server 2012 R2 and 2016
 
-Always download the latest installer package before performing a new installation. After installation, ensure to regularly update using component updates described in the section [Update packages for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016](#update-packages-for-microsoft-defender-for-endpoint-on-windows-server-2012-r2-and-2016). The following specifics apply to the new unified solution package for Windows Server 2012 R2 and 2016:
+> [!IMPORTANT]
+>
+> - Always download the latest installer package from the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) before performing a new installation and ensure prerequisites have been met. After installation, ensure to regularly update using component updates described in the section [Update packages for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016](#update-packages-for-microsoft-defender-for-endpoint-on-windows-server-2012-r2-and-2016).
 
 - An operating system update can introduce an installation issue on machines with slower disks due to a timeout with service installation. Installation fails with the message "Could not find c:\program files\windows defender\mpasdesc.dll, - 310 WinDefend". Use the latest installation package, and the latest [install.ps1](https://github.com/microsoft/mdefordownlevelserver) script to help clear the failed installation if necessary.
-- Ensure connectivity requirements as specified in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) are met. They're equivalent to those requirements for Windows Server 2019.
-- We've identified an issue with Windows Server 2012 R2 connectivity to cloud when static TelemetryProxyServer is used **and** the certificate revocation list (CRL) URLs aren't reachable from the SYSTEM account context. The immediate mitigation is to either use an alternative proxy option ("system-wide") that provides such connectivity, or configure the same proxy via the WinInet setting on the SYSTEM account context.
-Alternatively, use the instructions provided at [Workaround for a known issue with TelemetryProxyServer on disconnected machines](#workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines) to install a certificate as a workaround.
-- Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and below allowed for the OMS / Log Analytics gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019, Windows Server 2022, and Windows 10, doesn't support this gateway.
-- On Windows Server 2016, verify that Microsoft Defender Antivirus is installed, is active and up to date. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
+- We've identified an issue with Windows Server 2012 R2 connectivity to cloud when static TelemetryProxyServer is used **and** the certificate revocation list (CRL) URLs aren't reachable from the SYSTEM account context. Ensure the EDR sensor is updated to version 10.8210.* or later (using [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)) to resolve the issue. Alternatively, use a different proxy option ("system-wide") that provides such connectivity, or configure the same proxy via the WinInet setting on the SYSTEM account context.
 - On Windows Server 2012 R2, there's no user interface for Microsoft Defender Antivirus. In addition, the user interface on Windows Server 2016 only allows for basic operations. To perform operations on a device locally, refer to [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). As a result, features that specifically rely on user interaction, such as where the user is prompted to make a decision or perform a specific task, may not work as expected. It's recommended to disable or not enable the user interface nor require user interaction on any managed server as it may impact protection capability.
-- Not all Attack Surface Reduction rules are available on all operating systems. See [Attack Surface Reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules).
-- To enable [Network Protection](/microsoft-365/security/defender-endpoint/network-protection),  more configurations are required:
-  - `Set-MpPreference -EnableNetworkProtection Enabled`
-  - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
-  - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
-  - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
-
-  In addition, on machines with a high volume of network traffic, performance testing in your environment is highly recommended before enabling this capability broadly. You may need to account for extra resource consumption.
-- Operating system upgrades aren't supported. Offboard then uninstall before upgrading.
+- Not all Attack Surface Reduction rules are applicable to all operating systems. See [Attack Surface Reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules).
+- Operating system upgrades aren't supported. Offboard then uninstall before upgrading. The installer package can only be used to upgrade installations that have not yet been updated with new antimalware platform or EDR sensor update packages.
 - Automatic exclusions for **server roles** aren't supported on Windows Server 2012 R2; however, built-in exclusions for operating system files are. For more information about adding exclusions, see [Virus scanning recommendations for Enterprise computers that are running currently supported versions of Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
-- On machines that have been upgraded from the previous, MMA-based solution and the EDR sensor is a (preview) version older than 10.8047.22439.1056, uninstalling and reverting back to the MMA-based solution may lead to crashes. If you are on such a preview version, update using KB5005292.
-- To deploy and onboard the new solution using Microsoft Endpoint Configuration Manager (MECM) on versions 2107 and 2203, this requires creating a package. For more information on how to deploy programs and scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs). You can also use MECM 2107, 2203 to migrate from the MMA-based version. For more information, see [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md).
-- MECM 2107 with the hotfix rollup or later is required to support policy configuration management using the Endpoint Protection node. 
-- Microsoft Endpoint Configuration Manager 2207 or later supports [automated installation and onboarding](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#bkmk_2207)
-
-#### Workaround for a known issue with TelemetryProxyServer on disconnected machines
-
-Problem description:
-When using the TelemetryProxyServer setting to specify a proxy to be used by the EDR component of Microsoft Defender for Endpoint, on machines that have no other way to access the Certificate Revocation List (CRL) URL, a missing intermediate certificate will cause the EDR sensor to not successfully connect to the cloud service.
-
-Affected scenario:
--Microsoft Defender for Endpoint with Sense version number 10.8048.22439.1065 or earlier preview versions running on Windows Server 2012 R2
--Using the TelemetryProxyServer proxy configuration; other methods aren't affected
-
-Workaround:
-1. Ensure the machine is running Sense version 10.8048.22439.1065 or higher by either installing using the latest package available from the onboarding page, or by applying KB5005292.
-2. Download and unzip the certificate from https://github.com/microsoft/mdefordownlevelserver/blob/main/InterCA.zip
-3. Import the certificate to the Local Computer trusted "Intermediate Certification Authorities" store.
-You can use the PowerShell command:
-Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine\Ca
+- To automatically deploy and onboard the new solution using Microsoft Endpoint Configuration Manager (MECM) you need to be on [version 2207 or later](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2207#improved-microsoft-defender-for-endpoint-mde-onboarding-for-windows-server-2012-r2-and-windows-server-2016). You can still configure and deploy using version 2107 with the hotfix rollup, but this requires additional deployment steps. See [Microsoft Endpoint Configuration Manager migration scenarios](/microsoft-365/security/defender-endpoint/server-migration#microsoft-endpoint-configuration-manager-migration-scenarios) for more information.
 
 ## Windows Server Semi-Annual Enterprise Channel (SAC), Windows Server 2019 and Windows Server 2022
 
@@ -398,3 +378,5 @@ For other Windows server versions, you have two options to offboard Windows serv
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 - [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md)
 - [Troubleshooting Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+- [Azure Active Directory Seamless single sign-on](/azure/active-directory/hybrid/how-to-connect-sso-quick-start)
+- [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#instructions-for-applying-computer-join-rule-in-aad-connect)

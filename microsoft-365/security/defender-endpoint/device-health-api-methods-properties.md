@@ -26,6 +26,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -76,7 +77,8 @@ Method|Data type|Description
 > [!NOTE]
 >
 > - The properties defined in the following table are listed alphabetically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
-> - Some additional columns might be returned in the response. These columns are temporary and might be removed; please use only the documented columns.
+> - Note that **rbacgroupname** and **Id** are not supported filter operators.
+> - Some additional columns might be returned in the response. These columns can be temporary and might be removed; use only the documented columns.
 
 | Property (ID) | Data type | Description | Example of a returned value |
 |:----|:----|:----|:----|
@@ -85,7 +87,7 @@ Method|Data type|Description
 | avIsEngineUpToDate | String | Up-to-date status of AV engine | "True", "False", "Unknown" |
 | avIsPlatformUpToDate | String | Up-to-date status of AV platform | "True", "False", "Unknown" |
 | avIsSignatureUpToDate | String | Up-to-date status of AV signature | "True", "False", "Unknown" |
-| avMode | String | Antivirus mode. | Each mode will be a string typed integer value ranging from 0 to 5. Refer to the mapping below to see its value’s meaning: <ul><li>'' = Other</li><li> '0' = Active</li><li> '1' = Passive</li><li> '2' = Disabled</li><li> '3' = Other</li><li> '4' = EDRBlocked</li><li>'5' = PassiveAudit</li></ul> |
+| avMode | String | Antivirus mode. | Each mode will be a string typed integer value ranging from 0 to 5. Refer to the mapping below to see its value's meaning: <ul><li>'' = Other</li><li> '0' = Active</li><li> '1' = Passive</li><li> '2' = Disabled</li><li> '3' = Other</li><li> '4' = EDRBlocked</li><li>'5' = PassiveAudit</li></ul> |
 | avPlatformUpdateTime | DateTimeOffset | Datetime when AV platform was last updated on device | "2022-08-04T12:44:02Z" |
 | avPlatformVersion | String | Antivirus platform version | "4.18.2203.5" |
 | avSignaturePublishTime | DateTimeOffset | Datetime when AV security intelligence build was released | "2022-08-04T12:44:02Z" |

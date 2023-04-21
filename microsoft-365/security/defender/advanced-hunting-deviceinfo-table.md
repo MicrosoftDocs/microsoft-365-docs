@@ -20,6 +20,7 @@ ms.collection:
 - tier3
 - m365-security
 ms.topic: conceptual
+ms.date: 03/07/2023
 ---
 
 # DeviceInfo
@@ -32,6 +33,9 @@ ms.topic: conceptual
 - Microsoft Defender for Endpoint
 
 The `DeviceInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about devices in the organization, including OS version, active users, and computer name. Use this reference to construct queries that return information from this table.
+
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -56,15 +60,22 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`AdditionalFields` | `string` | Additional information about the event in JSON array format |
 |`DeviceCategory` | `string` | Broader classification that groups certain device types under the following categories: Endpoint, Network device, IoT, Unknown |
 |`DeviceType` | `string` | Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer |
-|`DeviceSubType` | `string` | Additional modifier for certain types of devices, for example, a mobile device can be a tablet or a smartphone; only available if device discovery finds enough information about this attribute |
+|`DeviceSubtype` | `string` | Additional modifier for certain types of devices, for example, a mobile device can be a tablet or a smartphone; only available if device discovery finds enough information about this attribute |
 |`Model` | `string` | Model name or number of the product from the vendor or manufacturer, only available if device discovery finds enough information about this attribute |
 |`Vendor` | `string` | Name of the product vendor or manufacturer, only available if device discovery finds enough information about this attribute |
 |`OSDistribution` | `string` | Distribution of the OS platform, such as Ubuntu or RedHat for Linux platforms |
 |`OSVersionInfo` | `string` | Additional information about the OS version, such as the popular name, code name, or version number |
 |`MergedDeviceIds` | `string` | Previous device IDs that have been assigned to the same device |
 |`MergedToDeviceId` | `string` | The most recent device ID assigned to a device |
+|`SensorHealthState` | `string` | Indicates health of the device’s EDR sensor, if onboarded to Microsoft Defender For Endpoint |
+|	`IsExcluded`| `bool` | Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences |
+|`ExclusionReason` | `string` | Indicates the reason for device exclusion |
+|	`AssetValue`| `string` | Indicates the value of a device as assigned by the user |
+|	`ExposureLevel` | `string` | Indicates the exposure level of a device |
+|	`IsInternetFacing` | `boolean` | Indicates whether the device is internet-facing |
 
-The `DeviceInfo` table provides device information based on heartbeats, which are periodic reports or signals from a device. Every fifteen minutes, the device sends a partial heartbeat that contains frequently changing attributes like `LoggedOnUsers`. Once a day, a full heartbeat containing the device's attributes is sent.
+
+The `DeviceInfo` table provides device information based on periodic reports or signals (heartbeats) from a device. Complete reports are sent every hour and every time a change happens to a previous heartbeat. 
 
 You can use the following sample query to get the latest state of a device:
 

@@ -17,7 +17,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.date: 04/27/2022
+ms.date: 01/25/2023
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -28,11 +28,13 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:** 
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/index.yml)
 
 > [!IMPORTANT]
-> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../defender-business/compare-mdb-m365-plans.md#compare-defender-for-business-to-defender-for-endpoint-plan-1-and-plan-2).
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -54,7 +56,7 @@ In this section, we share PowerShell samples to
 ## Preparation instructions
 
 - Open a PowerShell window.
-- If your policy does not allow you to run the PowerShell commands, you can run the below command:
+- If your policy doesn't allow you to run the PowerShell commands, you can run the below command:
   ```
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
@@ -65,7 +67,7 @@ For more information, see [PowerShell documentation](/powershell/module/microsof
 
 Run the below:
 
-- $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
+- $tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query is run on the data of this tenant)
 - $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)
 - $appSecret: Secret of your Azure AD app
 

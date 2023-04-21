@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 09/28/2022
 ---
 
 # Technological partners of Microsoft 365 Defender
@@ -30,10 +31,15 @@ search.appverid: met150
 - Microsoft Defender for Office 365
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 Microsoft 365 Defender supports third-party integrations to help secure users with effective threat protection, detection, investigation, and response, in various security fields of endpoints, vulnerability management, email, identities, cloud apps.
 
-The following are the solution’s categories:
+The following are the solution's categories:
 
 - Security information and event management (SIEM)
 - Security orchestration, automation, and response (SOAR)
@@ -76,7 +82,7 @@ The following are the solution’s categories:
 
 |Product name|Vendor|Description|
 |---|---|---|
-|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2201775)|SafeBreach|SafeBreach continuously executes attacks, correlates results to help visualize security gaps, and leverages contextual insights to highlight remediation efforts. With its Hacker’s Playbook™, the industry’s most extensive collection of attack data enabled by state-of-the-art threat intelligence research, SafeBreach empowers organizations to get proactive about security with a simple approach that replaces hope with data.|
+|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2201775)|SafeBreach|SafeBreach continuously executes attacks, correlates results to help visualize security gaps, and leverages contextual insights to highlight remediation efforts. With its Hacker's Playbook™, the industry's most extensive collection of attack data enabled by state-of-the-art threat intelligence research, SafeBreach empowers organizations to get proactive about security with a simple approach that replaces hope with data.|
 |[Extended Security Posture Management (XSPM)](https://go.microsoft.com/fwlink/?linkid=2201771)|Cymulate|Cymulate's Extended Security Posture Management enables companies to challenge, assess, and optimize their cybersecurity posture.|
 |[Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2201967)|SkyBox|Develops a vulnerability program strategy that accurately analyzes exposure risk across hybrid attack surface and prioritize the remediation.|
 |[Attack Path Management](https://go.microsoft.com/fwlink/?linkid=2201774)|XM Cyber|Attack Path Management is a hybrid cloud security company providing attack path management changing the ways organizations approach cyber risk.|
@@ -163,16 +169,18 @@ The following are the solution’s categories:
 
 |Product name|Vendor|Description|
 |---|---|---|
-|[Zscaler Internet Access](https://go.microsoft.com/fwlink/?linkid=2201779)|Zscaler|Zscaler Internet Access is a cloud native security service edge (SSE) solution that builds on a decade of secure web gateway leadership. Offered as a scalable SaaS platform from the world’s largest security cloud, it replaces legacy network security solutions to stop advanced attacks and prevent data loss with a comprehensive zero trust approach.|
+|[Zscaler Internet Access](https://go.microsoft.com/fwlink/?linkid=2201779)|Zscaler|Zscaler Internet Access is a cloud native security service edge (SSE) solution that builds on a decade of secure web gateway leadership. Offered as a scalable SaaS platform from the world's largest security cloud, it replaces legacy network security solutions to stop advanced attacks and prevent data loss with a comprehensive zero trust approach.|
 
 ### Additional integrations
 
 |Product name|Vendor|Description|
 |---|---|---|
-|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2201966)|Morphisec|Provides Moving Target Defense-powered advanced threat prevention and integrates forensics data directly into WD Security Center dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information.|
+|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2201966)|Morphisec|Provides Moving Target Defense-powered advanced threat prevention and integrates forensics data directly into Microsoft 365 Defender dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information.|
 |[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=2201875)|Nextron systems|Provides on-demand live forensics scans using a signature base focused on persistent threats.|
 
 ## Recommended content
+
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Connect apps to get visibility and control|Microsoft Docs](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
 - [Partner applications in Microsoft Defender for Endpoint|Microsoft Docs](partner-applications.md)

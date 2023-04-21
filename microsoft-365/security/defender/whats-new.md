@@ -33,31 +33,65 @@ https://learn.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+
 
 For more information on what's new with other Microsoft Defender security products, see:
 
-- [What's new in Microsoft Defender for Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
+- [What's new in Microsoft Defender for Office 365](../office-365-security/defender-for-office-365-whats-new.md)
 - [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## March 2023 
+
+- (Preview) Microsoft Defender Threat Intelligence (Defender TI) is now available in the Microsoft 365 Defender portal.
+This change introduces a new navigation menu within the Microsoft 365 Defender portal named **Threat Intelligence**. [Learn more](defender-threat-intelligence.md)
+- (Preview) Complete device reports for the [`DeviceInfo` table](advanced-hunting-deviceinfo-table.md) in advanced hunting are now sent *every hour* (instead of the previous daily cadence). In addition, complete device reports are also sent whenever there is a change to any previous report. New columns were also added to the `DeviceInfo` table, along with several improvements to existing data in `DeviceInfo` and [DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md) tables.
+- (Preview) Near real-time custom detection is now available for public preview in advanced hunting custom detections. There is a new [Continuous (NRT)](custom-detection-rules.md) frequency, which checks data from events as they are collected and processed in near real-time.
+- (Preview) [Behaviors in Microsoft Defender for Cloud Apps](/defender-cloud-apps/behaviors) is now available for public preview. Preview customers can now also hunt for behaviors in advanced hunting using the [BehaviorEntities](advanced-hunting-behaviorentities-table.md) and [BehaviorInfo](advanced-hunting-behaviorinfo-table.md) tables.
+
+## February 2023
+
+- (GA) The [query resources report in advanced hunting](advanced-hunting-limits.md#view-query-resources-report-to-find-inefficient-queries) is now generally available.
+
+
+## January 2023
+
+- The new version of Microsoft Defender Experts for Hunting report is now available. The report's new interface now lets customers have more contextual details about the suspicious activities Defender Experts have observed in their environments. It also shows which suspicious activities have been continuously trending from month to month. For details, see [Understand the Defender Experts for Hunting report in Microsoft 365 Defender](defender-experts-report.md).
+
+- (GA) Live Response is now generally available for macOS and Linux.
+
+- (GA) Identity timeline is now generally available as part of the new Identity page in Microsoft 365 Defender. The updated User page has a new look, an expanded view of related assets and a new dedicated timeline tab. The timeline represents activities and alerts from the last 30 days. It unifies a user’s identity entries across all available workloads: Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint. Using the timeline helps you easily focus on a user's activities (or activities performed on them) in specific timeframes.
+
+## December 2022
+
+- (Preview) The new Microsoft 365 Defender role-based access control (RBAC) model is now available for preview. The new RBAC model enables security admins to centrally manage privileges across multiple security solutions within a single system with a greater efficiency, currently supporting Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft Defender for Identity. The new model is fully compatible with the existing individual RBAC models currently supported in Microsoft 365 Defender. For more information, see [Microsoft 365 Defender role-based access control (RBAC)](./manage-rbac.md).
+
+## November 2022
+
+- (Preview) Microsoft Defender Experts for XDR (Defender Experts for XDR) is now available for preview. Defender Experts for XDR is a managed detection and response service that helps your security operations centers (SOCs) focus and accurately respond to incidents that matter. It provides extended detection and response for customers who use Microsoft 365 Defender workloads: Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Azure Active Directory (Azure AD). For details, refer to [Expanded Microsoft Defender Experts for XDR preview](dex-xdr-overview.md).
+- (Preview) The query resource report is now available in advanced hunting. The report shows your organization's consumption of CPU resources for hunting based on queries that ran in the last 30 days using any of the hunting interfaces. See [View query resources report](advanced-hunting-limits.md#view-query-resources-report-to-find-inefficient-queries) to find inefficient queries.
+
 ## August 2022
+
 - (GA) [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md) is now generally available. If you're a Microsoft 365 Defender customer with a robust security operations center but want Microsoft to help you proactively hunt for threats across endpoints, Office 365, cloud applications, and identity using Microsoft Defender data, then learn more about applying, setting up, and using the service. Defender Experts for Hunting is sold separately from other Microsoft 365 Defender products.
 - (Preview) [Guided mode](advanced-hunting-modes.md#get-started-with-guided-hunting-mode) is now available for public preview in advanced hunting. Analysts can now start querying their database for endpoint, identities, email & collaboration, and cloud apps data *without knowing Kusto Query Language (KQL)*.  Guided mode features a friendly, easy-to-use, building-block style of constructing queries through dropdown menus containing available filters and conditions. See [Get started with query builder](advanced-hunting-query-builder.md).
 
 ## July 2022
+
 - (Preview) Microsoft Defender Experts for Hunting public preview participants can now look forward to receiving monthly reports to help them understand the threats the hunting service surfaced in their environment, along with the alerts generated by their Microsoft 365 Defender products. For details, refer to [Understand the Defender Experts for Hunting report in Microsoft 365 Defender](defender-experts-report.md).
 
 ## June 2022
+
 - (Preview) The [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) and [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) tables are now available in the advanced hunting schema. Use these tables to hunt through assessment events in Defender Vulnerability Management including the status of various configurations and attack surface area states of devices.
 
 - The newly introduced Automated investigation & response card in the Microsoft 365 Defender portal provides an overview on pending remediation actions.
 The security operations team can view all actions pending approval, and the stipulated time to approve those actions in the card itself. The security team can quickly navigate to the Action center and take appropriate remediation actions. The Automated investigation & response card also has a link to the Full Automation page. This enables the security operations team to effectively manage alerts and complete remediation actions in a timely manner.
 
-
 ## May 2022
-- (Preview) In line with the recently announced expansion into a new service category called [Microsoft Security Experts](https://aka.ms/MicrosoftSecurityExperts), we're introducing the availability of [Microsoft Defender Experts for Hunting](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) for public preview. Defender Experts for Hunting is for customers who have a robust security operations center but want Microsoft to help them proactively hunt for threats across Microsoft Defender data, including endpoints, Office 365, cloud applications, and identity. 
+
+- (Preview) In line with the recently announced expansion into a new service category called [Microsoft Security Experts](https://aka.ms/MicrosoftSecurityExperts), we're introducing the availability of [Microsoft Defender Experts for Hunting](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) for public preview. Defender Experts for Hunting is for customers who have a robust security operations center but want Microsoft to help them proactively hunt for threats across Microsoft Defender data, including endpoints, Office 365, cloud applications, and identity.
 
 ## April 2022
+
 - (Preview) [Actions](advanced-hunting-take-action.md) can now be taken on email messages straight from hunting query results. Emails can be moved to other folders or deleted permanently. 
 - (Preview) The new [`UrlClickEvents` table](advanced-hunting-urlclickevents-table.md) in advanced hunting can be used to hunt for threats like phishing campaigns and suspicious links based on information coming from Safe Links clicks in email messages, Microsoft Teams, and Office 365 apps.
 
