@@ -10,7 +10,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 ms.reviewer: pahuijbr, mkaminska, v-vutrieu
-ms.date: 02/23/2023
+ms.date: 04/04/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -23,7 +23,63 @@ search.appverid: met150
 
 # Microsoft Defender Antivirus updates - Previous versions for technical upgrade support only
 
-Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+
+## November-2022 (Platform: 4.18.2211.5 | Engine: 1.1.19900.2)
+
+- Security intelligence update version: **1.381.144.0** 
+- Release date: **December 8, 2022**
+- Platform: **4.18.2211.5** 
+- Engine: **1.1.19900.2**
+- Support phase: **Technical upgrade support (only)**
+
+
+### What's new
+
+- Enhanced threat protection capabilities
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities
+- Enhanced enabling of tamper protection for newly onboarded devices
+- Improved reporting for [cloud protection](cloud-protection-microsoft-defender-antivirus.md)
+- Improved [controlled folder access](controlled-folders.md) notifications
+- Improved scanning of network shares
+- Enhanced processing of host files containing a wild card
+- Improved performance for [scan events](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+
+### Known Issues
+
+- None  
+
+## October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)
+
+- Security intelligence update version: **1.379.4.0**
+- Release date: **November 10, 2022**
+- Platform: **4.18.2210.6**
+- Engine: **1.1.19800.4**
+- Support phase: **Technical upgrade support (only)**
+
+### What's new
+
+- Addressed a quality issue that could result in poor responsiveness/usability
+- Improved hang detection in antivirus engine 
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capability 
+- Changed threat & vulnerability management (TVM)-warn and TVM-block action to block to resolve Intune's report 
+- Removed Clean Action from Intune policy for `ThreadSeverityDefaultAction` 
+- Added randomize scheduled task times configuration to Intune policy 
+- Added manageability for `DisableSMTPParsing` network protection 
+- Added improvement for behavior monitoring 
+- Normalized date format for event 1151 for Windows Defender 
+- Fixed a deadlock related to updating `\device\cdrom*` exclusions upon mounting a cdrom drive under certain conditions 
+- Improved PID information for threat detection 
+
+### Known Issues
+
+- None  
+
 
 ## September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)
 
@@ -62,7 +118,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 
 ### What's new
 
-- Starting with platform version 4.18.2207.7, the default behavior of dynamic signature expiration reporting changes to reduce potential 2011 event notification flooding. See: **Event ID: 2011** in [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
+- Starting with platform version 4.18.2207.7, the default behavior of dynamic signature expiration reporting changes to reduce potential 2011 event notification flooding. See: **Event ID: 2011** in [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/)
 - Fixed Unified agent installer issues on WS2012R2 Server and Windows Server 2016
 - Fixed remediation issue for custom detection
 - Fixed Race condition related to behavior monitoring
@@ -98,7 +154,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Added improvements for [troubleshooting mode](enable-troubleshooting-mode.md)  
 - Added fix for Defender WINEVT channels across update/restarts. (For more information about WINEVT, see [Windows Event Log](/windows/win32/api/_wes/).)
 - Added fix for [Defender WMI management](use-wmi-microsoft-defender-antivirus.md) bug during startup/updates 
-- Added fix for duplicated 2010/2011 in the [Windows Event Viewer Operational events](troubleshoot-microsoft-defender-antivirus.md) 
+- Added fix for duplicated 2010/2011 in the [Windows Event Viewer Operational events](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/) 
 - Added support for [Defender for Endpoint](microsoft-defender-endpoint.md) stack processes token hardening 
 
 ### Known Issues

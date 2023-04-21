@@ -25,6 +25,8 @@ ms.date: 08/26/2022
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -57,12 +59,12 @@ The following table gives information about the supported Microsoft Defender for
 |Endpoint & network device discovery|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
 |[Vulnerability management](../defender-vulnerability-management/defender-vulnerability-management.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
 ||||||
-|**Response**|||||
-|[Automated Investigation & Response (AIR)](automated-investigations.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
-|[Device response capabilities: collect investigation package, run AV scan](respond-machine-alerts.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn2)][[3](#fn3)]</sup>|![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn2)][[3](#fn3)]</sup>|
-|[Device isolation](respond-machine-alerts.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn2)][[3](#fn3)]</sup>|![Yes (public preview)](images/svg/check-no.svg)|
-|File response capabilities: collect file, deep analysis, block file, stop, and quarantine processes|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) <sup>[[4](#fn4)]</sup>|![No](images/svg/check-no.svg) <sup>[[4](#fn4)]</sup>|
-|[Live Response](live-response.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn2)]</sup>|![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn2)]</sup>|
+|**Response**     |         |         |         ||
+|[Automated Investigation & Response (AIR)](automated-investigations.md)        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)  |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
+|[Device response capabilities: collect investigation package, run AV scan](respond-machine-alerts.md)        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![Yes.](images/svg/check-yes.svg) <sup>[[3](#fn3)]</sup>       |  ![Yes.](images/svg/check-yes.svg) <sup>[[3](#fn3)]</sup>        |
+|[Device isolation](respond-machine-alerts.md)        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![Yes.](images/svg/check-yes.svg) <sup>[[3](#fn3)]</sup>      |  ![Yes.](images/svg/check-yes.svg) <sup>[[2](#fn2)][[3](#fn3)]</sup>   |
+|File response capabilities: collect file, deep analysis, block file, stop, and quarantine processes        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![No](images/svg/check-no.svg) <sup>[[4](#fn4)]</sup>      |  ![No](images/svg/check-no.svg) <sup>[[4](#fn4)]</sup>    |
+|[Live Response](live-response.md)       | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg) |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)      |
 
 (<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 R2 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 

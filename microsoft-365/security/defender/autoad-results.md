@@ -13,7 +13,7 @@ f1.keywords:
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 02/09/2023
+ms.date: 02/22/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -39,9 +39,9 @@ With Microsoft 365 Defender, when an automatic attack disruption triggers, detai
 
 Microsoft 365 Defender automatic attack disruption is built-in in the Incident view. Reviewing the incident graph enables you to get the entire attack story and assess the attack disruption impact and status.
 
-Here are some examples of what it looks like: 
+Here are some examples of what it looks like:
 
-- Disrupted incidents include a tag for ‘Attack Disruption’ and the specific threat type identified (i.e., ransomware). If you subscribe to incident email notifications, these tags also appear in the emails.
+- Disrupted incidents include a tag for 'Attack Disruption' and the specific threat type identified (i.e., ransomware). If you subscribe to incident email notifications, these tags also appear in the emails.
 - A highlighted notification below the incident title indicating that the incident was disrupted.
 - Suspended users and contained devices appear with a label indicating their status.
 

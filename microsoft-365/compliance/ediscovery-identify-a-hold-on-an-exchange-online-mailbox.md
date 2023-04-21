@@ -287,6 +287,7 @@ Use the following table to help you understand each of the previous values liste
 |:------- |:----------- |
 | **ed**  | Indicates the End date, which is the date the retention policy was disabled. MinValue means the policy is still assigned to the mailbox. |
 | **hid** | Indicates the GUID for the retention policy. This value will correlate to the GUIDs that you collected for the explicit or organization-wide retention policies assigned to the mailbox.|
+| **ht**  | Indicates the hold type. Values are *0* for LitigationHold, *1* for InPlaceHold, *2* for ComplianceTagHold, *3* for DelayReleaseHold, *4* for OrganizationRetention, *5* for CompliancePolicy, *6* for SubstrateAppPolicy, and *7* for SharepointPolicy. |
 | **lsd** | Indicates the Last start date, which is the date the retention policy was assigned to the mailbox.|
 | **osd** | Indicates the Original start date, which is the date that Exchange first recorded information about the retention policy. |
 

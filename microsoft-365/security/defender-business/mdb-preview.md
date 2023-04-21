@@ -17,7 +17,7 @@ ms.collection:
 - m365-security
 - tier1
 ms.topic: conceptual
-ms.date: 07/12/2022
+ms.date: 03/23/2023
 ---
 
 # Microsoft Defender for Business preview features

@@ -35,6 +35,8 @@ description: "Learn how to add and set up your domain in Microsoft 365 so that y
 
 # Change nameservers to set up Microsoft 365 with any domain registrar
 
+
+
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 
 Follow these instructions to add and set up your domain in Microsoft 365 so your services like email and Teams will use your own domain name. To do this, you'll verify your domain, and then change your domain's nameservers to Microsoft 365 so the correct DNS records can be set up for you. Follow these steps if the following statements describe your situation:

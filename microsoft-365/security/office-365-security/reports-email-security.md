@@ -390,6 +390,9 @@ The **Spoof detections** report shows information about messages that were block
 
 The aggregate and detail views of the report allows for 90 days of filtering.
 
+> [!NOTE]
+> The latest available data in the report is 3 to 4 days old.
+
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReport>.
 
 :::image type="content" source="../../media/spoof-detections-widget.png" alt-text="The Spoof detections widget on the Email & collaboration reports page." lightbox="../../media/spoof-detections-widget.png":::
@@ -624,6 +627,7 @@ If you click **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**
 - **Detection**: The same values as in the chart.
+- **Bulk Complaint Level**
 - **Direction**:
   - **All**
   - **Inbound**

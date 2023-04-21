@@ -56,7 +56,7 @@ For more information about managing user licenses for Microsoft 365 for business
   
 ## How the deleted employee account affects Skype for Business
 
-When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
+When you remove a user's license from Microsoft 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
   
 If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue.
 
