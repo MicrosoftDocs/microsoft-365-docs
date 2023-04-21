@@ -37,6 +37,8 @@ description: "Learn how to create a new onmicrosoft.com domain and make it your 
 
 # Add and replace your onmicrosoft.com fallback domain in Microsoft 365
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 When you sign up for Microsoft 365, Microsoft provides an *onmicrosoft.com* domain - your **fallback domain** - in case you don't own a domain, or don't want to connect it to Microsoft 365 (for example, tailspintoys.onmicrosoft.com). Your fallback domain is used by default in:
 
 - Usernames and email addresses

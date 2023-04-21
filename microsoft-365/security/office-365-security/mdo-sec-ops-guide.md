@@ -12,8 +12,8 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection: 
-  - m365-security
-  - tier1
+  - zerotrust-solution
+  - msftsolution-secops
 ms.custom:
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Office 365.
 ms.subservice: mdo
@@ -185,14 +185,13 @@ Permissions for managing Defender for Office 365 in the Microsoft 365 Defender p
 
 The following permissions (roles and role groups) are available in Defender for Office 365 and can be used to grant access to security team members:
 
-- **Azure AD roles**: Centralized roles that assign permissions for _all_ Microsoft 365 services, including Defender for Office 365. You can view the Azure AD roles and assigned users in the Microsoft 365 Defender portal, but you can't manage them directly there. Instead, you manage Azure AD roles and members at <https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators>. The most frequent roles used by security teams are:
-  - **Security administrator**
-  - **Security operator**
-  - **Security reader**
+- **Azure AD**: Centralized roles that assign permissions for _all_ Microsoft 365 services, including Defender for Office 365. You can view the Azure AD roles and assigned users in the Microsoft 365 Defender portal, but you can't manage them directly there. Instead, you manage Azure AD roles and members at <https://aad.portal.azure.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles/adminUnitObjectId//resourceScope/%2F>. The most frequent roles used by security teams are:
+  - **[Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator)**
+  - **[Security Reader](/azure/active-directory/roles/permissions-reference#security-reader)**
 
-- **Email & collaboration roles**: Roles and role groups that grant permission specific to Microsoft Defender for Office 365. The following roles are not available in Azure AD, but can be important for security teams:
+- **Exchange Online** and **Email & collaboration**: Roles and role groups that grant permission specific to Microsoft Defender for Office 365. The following roles are not available in Azure AD, but can be important for security teams:
 
-  - **Preview** role: Assign this role to team members who need to preview or download email messages as part of investigation activities. Allows users to [preview and download](investigate-malicious-email-that-was-delivered.md#preview-role-permissions) email messages in cloud mailboxes using the [email entity page](mdo-email-entity-page.md#email-preview-and-download-for-cloud-mailboxes).
+  - **Preview** role (Email & collaboration): Assign this role to team members who need to preview or download email messages as part of investigation activities. Allows users to [preview and download](investigate-malicious-email-that-was-delivered.md#preview-role-permissions) email messages in cloud mailboxes using the [email entity page](mdo-email-entity-page.md#email-preview-and-download-for-cloud-mailboxes).
 
     By default, this role is assigned only to the following role groups:
 
@@ -201,7 +200,7 @@ The following permissions (roles and role groups) are available in Defender for 
 
     To assign this role to a new or existing role group, see [Modify Email & collaboration role membership in the Microsoft 365 Defender portal](mdo-portal-permissions.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
 
-  - **Search and Purge** role: Approve the deletion of malicious messages as recommended by AIR or take manual action on messages in hunting experiences like Threat Explorer.
+  - **Search and Purge** role (Email & collaboration): Approve the deletion of malicious messages as recommended by AIR or take manual action on messages in hunting experiences like Threat Explorer.
 
     By default, this role is assigned only to the following role groups:
 
@@ -210,9 +209,11 @@ The following permissions (roles and role groups) are available in Defender for 
 
     To assign this role to a new or existing role group, see [Modify Email & collaboration role membership in the Microsoft 365 Defender portal](mdo-portal-permissions.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
 
-  - **Tenant AllowBlockList Manager**: Manage allow and block entries in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
+  - **Tenant AllowBlockList Manager** (Exchange Online): Manage allow and block entries in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
 
-    By default, this role is assigned only to the **Security Operator** role group. But, members of the **Security Administrators** and **Organization management** role groups can also manage entries in the Tenant Allow/Block List.
+    By default, this role is assigned only to the **Security Operator role group in Exchange Online**, not in Azure AD. Membership in the **[Security Operator role in Azure AD](/azure/active-directory/roles/permissions-reference#security-operator)** _does not_ allow you to manage entries the Tenant Allow/Block List.
+
+    Members of the **Security Administrator** or **Organization management** roles in Azure AD or the corresponding role groups in Exchange Online _are_ able to manage entries in the Tenant Allow/Block List.
 
 ### SIEM/SOAR integration
 

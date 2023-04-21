@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 02/08/2023
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb

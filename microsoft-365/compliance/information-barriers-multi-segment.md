@@ -19,6 +19,7 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
+ms.date: 03/09/2023
 ---
 
 # Use multi-segment support in information barriers
@@ -97,14 +98,14 @@ If the value of the `InformationBarrierMode` property is *Legacy*, enabling mult
 
 ## Enable multiple segment support for users
 
-To enable multi-segment support for organizations in *SingleSegment* mode, run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+To enable multiple segment support for organizations in *SingleSegment* mode, you must not have any IB segments or policies currently defined for your organization. Run the following cmdlet to enable multiple segment support in your organization:
 
 ```powershell
-Enable-ExoInformationBarriersMultiSegment [-Organization] <tenantIdentity>
+Set-PolicyConfig -InformationBarrierMode 'MultiSegment'
 ```
 
 > [!IMPORTANT]
-> If you enable multiple segments in your organization, you cannot revert to single segment support.
+> If you enable multiple segments and have configured IB in your organization, you should not revert to single segment support.
 
 ## Multi-segment support for users in OneDrive
 

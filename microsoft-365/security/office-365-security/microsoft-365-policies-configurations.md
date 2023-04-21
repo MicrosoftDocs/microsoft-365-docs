@@ -47,7 +47,7 @@ To address this new world of computing, Microsoft highly recommends the Zero Tru
 
 Here is the overall architecture of Zero Trust.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png" alt-text="The Microsoft Zero Trust architecture" lightbox="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png":::
+:::image type="content" source="../../media/zero-trust/zero-trust-architecture.png" alt-text="Diagram that shows Microsoft Zero Trust architecture." lightbox="../../media/zero-trust/zero-trust-architecture.png":::
 
 Zero Trust identity and device access policies address the **Verify explicitly** guiding principle for:
 

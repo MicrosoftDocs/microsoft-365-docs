@@ -27,6 +27,8 @@ search.appverid: met150
 
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -35,7 +37,7 @@ search.appverid: met150
 > [!IMPORTANT]
 > This topic contains instructions for how to set preferences for Defender for Endpoint on Linux in enterprise environments. If you are interested in configuring the product on a device from the command-line, see [Resources](linux-resources.md#configure-from-the-command-line).
 
-In enterprise environments, Defender for Endpoint on Linux can be managed through a configuration profile. This profile is deployed from the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile. If exclusions were added through the managed configuration profile, they can only be removed through the managed configuration profile. The command line works for exclusions that were added locally.
+In enterprise environments, Defender for Endpoint on Linux can be managed through a configuration profile. This profile is deployed from the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise aren't able to change preferences that are set through this configuration profile. If exclusions were added through the managed configuration profile, they can only be removed through the managed configuration profile. The command line works for exclusions that were added locally.
 
 This article describes the structure of this profile (including a recommended profile that you can use to get started) and instructions on how to deploy the profile.
 
@@ -61,7 +63,7 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 Specifies the enforcement preference of antivirus engine. There are three values for setting enforcement level:
 
-- Real-time (`real_time`): Real-time protection (scan files as they are accessed) is enabled.
+- Real-time (`real_time`): Real-time protection (scan files as they're accessed) is enabled.
 - On-demand (`on_demand`): Files are scanned only on demand. In this:
   - Real-time protection is turned off.
 - Passive (`passive`): Runs the antivirus engine in passive mode. In this:
@@ -94,7 +96,7 @@ Determines whether behavior monitoring and blocking capability is enabled on the
 
 #### Run a scan after definitions are updated
 
-Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.
+Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting triggers an antivirus scan on the running processes of the device.
 
 |Description|Value|
 |---|---|
@@ -116,7 +118,7 @@ Specifies whether to scan archives during on-demand antivirus scans.
 
 #### Degree of parallelism for on-demand scans
 
-Specifies the degree of parallelism for on-demand scans. This corresponds to the number of threads used to perform the scan and impacts the CPU usage, as well as the duration of the on-demand scan.
+Specifies the degree of parallelism for on-demand scans. This corresponds to the number of threads used to perform the scan and impacts the CPU usage, and the duration of the on-demand scan.
 
 |Description|Value|
 |---|---|
@@ -206,7 +208,7 @@ Specifies a process for which all file activity is excluded from scanning. The p
 Specifies the behavior of RTP on mount point marked as noexec. There are two values for setting are:
 
 - Unmuted (`unmute`): The default value, all mount points are scanned as part of RTP.
-- Muted (`mute`): Mount points marked as noexec are not scanned as part of RTP, these mount point can be created for:
+- Muted (`mute`): Mount points marked as noexec aren't scanned as part of RTP, these mount point can be created for:
   - Database files on Database servers for keeping data base files.
   - File server can keep data files mountpoints with noexec option.
   - Back up can keep data files mountpoints with noexec option.
@@ -220,7 +222,7 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 
 #### Unmonitor Filesystems
 
-Configure filesystems to be unmonitored/excluded from Real Time Protection. The filesystems configured will be validated against Microsoft Defender's list of permitted filesystems that can be unmonitored. By default NFS and Fuse are unmonitored from RTP and Quick and Full scans.
+Configure filesystems to be unmonitored/excluded from Real Time Protection. The filesystems configured are validated against Microsoft Defender's list of permitted filesystems that can be unmonitored. By default NFS and Fuse are unmonitored from RTP and Quick and Full scans.
 
 |Description|Value|
 |---|---|
@@ -228,7 +230,7 @@ Configure filesystems to be unmonitored/excluded from Real Time Protection. The 
 |**Data type**|Array of strings|
 #### Configure file hash computation feature
 
-Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint will compute hashes for files it scans. Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
+Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint computes hashes for files it scans. Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
 
 |Description|Value|
 |---|---|
@@ -238,7 +240,7 @@ Enables or disables file hash computation feature. When this feature is enabled,
 |**Comments**|Available in Defender for Endpoint version 101.85.27 or higher.|
 #### Allowed threats
 
-List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.
+List of threats (identified by their name) that aren't blocked by the product and are instead allowed to run.
 
 |Description|Value|
 |---|---|
@@ -247,7 +249,7 @@ List of threats (identified by their name) that are not blocked by the product a
 
 #### Disallowed threat actions
 
-Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.
+Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list aren't displayed in the user interface.
 
 |Description|Value|
 |---|---|
@@ -280,9 +282,9 @@ Type of threat for which the behavior is configured.
 
 Action to take when coming across a threat of the type specified in the preceding section. Can be:
 
-- **Audit**: The device is not protected against this type of threat, but an entry about the threat is logged.
-- **Block**: The device is protected against this type of threat and you are notified in the security console.
-- **Off**: The device is not protected against this type of threat and nothing is logged.
+- **Audit**: The device isn't protected against this type of threat, but an entry about the threat is logged.
+- **Block**: The device is protected against this type of threat and you're notified in the security console.
+- **Off**: The device isn't protected against this type of threat and nothing is logged.
 
 |Description|Value|
 |---|---|
@@ -356,7 +358,7 @@ Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, det
 
 #### Configure cloud block level
 
-This setting determines how aggressive Defender for Endpoint will be in blocking and scanning suspicious files. If this setting is on, Defender for Endpoint will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. There are five values for setting cloud block level:
+This setting determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files. If this setting is on, Defender for Endpoint is more aggressive when identifying suspicious files to block and scan; otherwise, it is less aggressive and therefore block and scan with less frequency. There are five values for setting cloud block level:
 
 - Normal (`normal`): The default blocking level.
 - Moderate (`moderate`): Delivers verdict only for high confidence detections.
@@ -376,7 +378,7 @@ This setting determines how aggressive Defender for Endpoint will be in blocking
 Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. There are three levels for controlling sample submission:
 
 - **None**: no suspicious samples are submitted to Microsoft.
-- **Safe**: only suspicious samples that do not contain personally identifiable information (PII) are submitted automatically. This is the default value for this setting.
+- **Safe**: only suspicious samples that don't contain personally identifiable information (PII) are submitted automatically. This is the default value for this setting.
 - **All**: all suspicious samples are submitted to Microsoft.
 
 |Description|Value|
@@ -542,7 +544,7 @@ When you run the `mdatp health` command for the first time, the value for the ta
   
 ## Configuration profile validation
 
-The configuration profile must be a valid JSON-formatted file. There are a number of tools that can be used to verify this. For example, if you have `python` installed on your device:
+The configuration profile must be a valid JSON-formatted file. There are many tools that can be used to verify this. For example, if you have `python` installed on your device:
 
 ```bash
 python -m json.tool mdatp_managed.json

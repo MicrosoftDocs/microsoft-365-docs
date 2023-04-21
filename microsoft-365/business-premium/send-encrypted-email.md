@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 09/15/2022
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
@@ -35,7 +35,7 @@ Before individuals send email with confidential or sensitive information, they s
 
 - **Sensitivity labels:** If your organization requires it, you can set up sensitivity labels that you apply to your files and email to keep them compliant with your organization's information protection policies. When you set a label, the label persists with your email, even when it's sent &mdash; for example, by appearing as a header to your message.
 
-![Diagram of an email with callouts for labels and encryption.](../media/m365-campaign-email-encrypt.png)
+   ![Diagram of an email with callouts for labels and encryption.](../media/m365-campaign-email-encrypt.png)
 
 ## Set it up
 

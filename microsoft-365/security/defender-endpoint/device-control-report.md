@@ -29,6 +29,8 @@ You can use device control events through **Advanced hunting** and **Device cont
 ## Advanced hunting
 
 **Applies to:** 
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control and Printer Protection. To access the Microsoft 365 Defender portal, you must have the following subscription:

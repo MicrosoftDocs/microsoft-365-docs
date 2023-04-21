@@ -32,6 +32,8 @@ Like any other system in an IT environment, these too should have an Endpoint De
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Virtual desktop infrastructure (VDI) devices
@@ -183,7 +185,7 @@ The following configuration settings are recommended:
   - `%Programfiles%\FSLogix\Apps\frxsvc.exe`
 
 - File extensions to exclude from scans and real-time protection:
-  -  `%Programfiles%\FSLogix\Apps\frxccd.sys`
+  - `%Programfiles%\FSLogix\Apps\frxccd.sys`
   - `%Programfiles%\FSLogix\Apps\frxdrv.sys`
   - `%Programfiles%\FSLogix\Apps\frxdrvvt.sys`
   - `%TEMP%*.VHD`
@@ -191,7 +193,7 @@ The following configuration settings are recommended:
   - `%Windir%\TEMP*.VHD`
   - `%Windir%\TEMP*.VHDX`
   - `\\storageaccount.file.core.windows.net\share**.VHD`
-  -  `\\storageaccount.file.core.windows.net\share**.VHDX`
+  - `\\storageaccount.file.core.windows.net\share**.VHDX`
 
 #### Real-time Protection
 
