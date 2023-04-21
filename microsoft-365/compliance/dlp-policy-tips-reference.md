@@ -66,7 +66,7 @@ DLP policy tips in Outlook Web Access are supported for all the conditions, and 
 Currently, Outlook 2013 and later supports showing policy tips for policies that contain these conditions:
 
 For E3 licensed users
-- Content contains Sensitive information types (no advanced classifiers supported)
+- Content contains Sensitive information types (preconfigured SITs and custom SITs)
 - Content is shared
 
 For E5 licensed users (preview)
