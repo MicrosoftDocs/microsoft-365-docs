@@ -149,11 +149,11 @@ You can check the **Configuration status** and the **Policy sync status** of all
 |---------|---------|---------|
 |Updated    |Device health parameters are enabled and correctly set.   |Device has been updated with the current versions of policies.         |
 |Not updated    | You need to enable the configuration settings for this device. Follow the procedures in [Microsoft Defender Antivirus always-on protection](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)|This device has not synced the latest policy updates. If the policy update was made within the last 2 hours, wait for the policy to reach your device. |
-|Not available  | Device properties are not available in the device list. This is could be because the device doesn't meet the minimum OS version, or configuration or if the device was just onboarded.        |Device properties are not available in the device list. This is could be because the device doesn't meet the minimum OS version, or configuration or if the device was just onboarded.|
+|Not available  | Device properties are not available in the device list. This could be because the device doesn't meet the minimum OS version, or configuration or if the device was just onboarded.        |Device properties are not available in the device list. This could be because the device doesn't meet the minimum OS version, or configuration or if the device was just onboarded.|
 
 It can take up to 2 hours for the sync status to get reflected on the dashboard. Devices must be online for the policy update to happen. If the status isn't updating, check the last time the device was seen.
 
-Required KB for this Preview Feature: [KB5023773](https://support.microsoft.com /topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23)
+Required KB for this Preview Feature: [KB5023773](https://support.microsoft.com/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23).
 
 ## See also
 
