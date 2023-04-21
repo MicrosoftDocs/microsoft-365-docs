@@ -4,8 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 11/05/2022
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -13,7 +14,6 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 description: Learn how to use a prebuilt receipts model in Microsoft Syntex.
-
 ---
 
 # Use a prebuilt model to extract information from receipts in Microsoft Syntex
@@ -107,5 +107,3 @@ To rename an extractor from the **Extractors** panel:
 ## Change the view in a document library
 
 For information about how to set the default view and how to change the view of a document library, see [Choose the view in a document library](choose-library-view.md).
-
-

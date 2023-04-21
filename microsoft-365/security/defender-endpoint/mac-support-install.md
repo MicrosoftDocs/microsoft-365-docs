@@ -38,7 +38,7 @@ ms.date: 12/18/2020
 
 For manual installation, the Summary page of the installation wizard says, "An error occurred during installation. The Installer encountered an error that caused the installation to fail. Contact the software publisher for assistance." For MDM deployments, it displays as a generic installation failure as well.
 
-While we do not display an exact error to the end user, we keep a log file with installation progress in `/Library/Logs/Microsoft/mdatp/install.log`. Each installation session appends to this log file. You can use `sed` to output the last installation session only:
+While we don't display an exact error to the end user, we keep a log file with installation progress in `/Library/Logs/Microsoft/mdatp/install.log`. Each installation session appends to this log file. You can use `sed` to output the last installation session only:
 
 ```bash
 sed -n 'H; /^preinstall com.microsoft.wdav begin/h; ${g;p;}' /Library/Logs/Microsoft/mdatp/install.log
@@ -52,12 +52,12 @@ preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 ```
 
 In this example, the actual reason is prefixed with `[ERROR]`.
-The installation failed because a downgrade between these versions is not supported.
+The installation failed because a downgrade between these versions isn't supported.
 
 ## MDATP install log missing or not updated
 
 In rare cases, installation leaves no trace in MDATP's /Library/Logs/Microsoft/mdatp/install.log file.
-First, verify that an installation happened. Then analyze possible errors by querying macOS logs. It's helpful to do this in MDM deployments, when there is no client UI. We recommend that you use a narrow time window to run a query and filter by the logging process name, as there will be a huge amount of information.
+First, verify that an installation happened. Then analyze possible errors by querying macOS logs. It's helpful to do this in MDM deployments, when there's no client UI. We recommend that you use a narrow time window to run a query and filter by the logging process name, as there will be a huge amount of information.
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log

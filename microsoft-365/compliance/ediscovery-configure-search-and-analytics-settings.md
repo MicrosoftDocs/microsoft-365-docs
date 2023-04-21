@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -56,7 +57,7 @@ In this section, you can set parameters for themes. For more information, see [T
 
 - **Themes:** When turned on, themes clustering is performed as part of the workflow when you run analytics on the data in a review set.
 - **Maximum number of themes:** Specifies the maximum number of themes that can be generated when you run analytics on the data in a review set.
-- **Include numbers in themes:** When turned on, numbers (that identify a theme) are included when generating themes.
+- **Include numbers in themes:** When turned on, numbers (that identifies a theme) are included when generating themes.
 - **Adjust maximum number of themes dynamically:** In certain situations, there may not be enough documents in a review set to produce the desired number of themes. When this setting is enabled, eDiscovery (Premium) adjusts the maximum number of themes dynamically rather than attempting to enforce the maximum number of themes.
 
 ## Review set query
@@ -75,7 +76,7 @@ There are situations where certain text will diminish the quality of analytics, 
 
 When this setting is turned on, OCR processing will be run on image files. OCR processing is run in the following situations:
 
-- When custodians and [non-custodial data sources](ediscovery-non-custodial-data-sources.md) are added to a case. When OCR is applied to image files, the text in those files will be searchable during a collection. OCR processing is performed during the [Advanced indexing](ediscovery-indexing-custodian-data.md) process. OCR is only run on items that are processed during Advanced indexing. For example, if a large PDF file that is partially indexed or had other indexing errors is processed during Advanced indexing, the file will also have OCR applied. In other words, OCR processing only occurs on files that are re-indexed during the Advanced indexing process. This means there may be situations where custodians are added to a case but some email attachments won't be processed for OCR because those files are not processed during Advanced indexing.
+- When custodians and [non-custodial data sources](ediscovery-non-custodial-data-sources.md) are added to a case. When OCR is applied to image files, the text in those files will be searchable during a collection. OCR processing is performed during the [Advanced indexing](ediscovery-indexing-custodian-data.md) process. OCR is only run on items that are processed during Advanced indexing. For example, if a large PDF file that is partially indexed or had other indexing errors is processed during Advanced indexing, the file will also have OCR applied. In other words, OCR processing only occurs on files that are reindexed during the Advanced indexing process. This means there may be situations where custodians are added to a case but some email attachments won't be processed for OCR because those files aren't processed during Advanced indexing.
 - When content from other data sources (that aren't associated with a custodian and added to the case in a non-custodial data source) is added to a review set.
 
 After data is added to a review set, image text can be reviewed, searched, tagged, and analyzed. You can view the extracted text in the Text viewer of the selected image file in the review set. For more information, see:

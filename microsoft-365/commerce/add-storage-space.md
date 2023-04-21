@@ -50,7 +50,7 @@ You must be a Global or SharePoint admin to do the tasks in this article. For mo
 
 1. In the SharePoint admin center, go to <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
 
-2. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. If your organization has configured Multi-Geo in Office 365, the bar also shows the amount of storage used across all geo locations.
+2. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. If your organization has configured Multi-Geo in Microsoft 365, the bar also shows the amount of storage used across all geo locations.
 
    > [!NOTE]
    > The storage used doesn't include changes made within the last 24-48 hours.
@@ -64,7 +64,7 @@ For information about setting site collection storage limits, see [Manage site c
 If you haven't yet bought extra storage for your subscription, you can do that.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. On the **Your Products** page, select the subscription that contains **Sharepoint Online Plan 1** or **Sharepoint Online Plan 2**.
+2. On the **Your Products** page, select the subscription that contains **SharePoint Online Plan 1** or **SharePoint Online Plan 2**.
 3. In the **Product details and upgrade** section, select **View apps and services included with this subscription**.
 4. Select the **Add-ons** tab,  find **Office 365 Extra File Storage**, and select **Details**.
 5. On the product details page, select **Next** and **Enter the number of gigabytes of storage** you want to add.
@@ -93,8 +93,8 @@ Office 365 Extra File Storage is available for the following subscriptions:
 - Office 365 Enterprise E5
 - Office 365 A3 (faculty)
 - Office 365 A5 (faculty)
-- Office for the web with SharePoint Plan 1
-- Office for the web with SharePoint Plan 2
+- Microsoft 365 for the web with SharePoint Plan 1
+- Microsoft 365 for the web with SharePoint Plan 2
 - SharePoint Online Plan 1
 - SharePoint Online Plan 2
 - Microsoft 365 Business Basic

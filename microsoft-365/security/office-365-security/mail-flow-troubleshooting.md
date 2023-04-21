@@ -13,6 +13,7 @@ search.appverid:
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection: 
   - m365-security
+  - tier3
 ms.custom: 
   - seo-marvel-apr2020
 description: This article provides troubleshooting information for issues with sending email to inboxes in Microsoft 365 & best practices for bulk mailing to Microsoft 365 customers.
@@ -37,13 +38,13 @@ EOP filtering technologies are designed to provide anti-spam protection for Micr
 
 ## Are you sending email from new IP addresses?
 
-IP addresses not previously used to send email typically don't have any reputation built up in our systems. As a result, emails from new IPs are more likely to experience delivery issues. Once the IP has built a reputation for not sending spam, EOP will typically allow for a better email delivery experience.
+IP addresses not previously used to send email typically don't have any reputation built up in our systems. As a result, emails from new IPs are more likely to experience delivery issues. Once the IP has built a reputation for not sending spam, EOP typically allows for a better email delivery experience.
 
 New IPs that are added for domains that are authenticated under existing SPF records typically experience the added benefit of inheriting some of the domain's sending reputation. If your domain has a good sending reputation new IPs may experience a faster ramp up time. A new IP can expect to be fully ramped within a couple of weeks or sooner depending on volume, list accuracy, and junk email complaint rates.
 
 ## Confirm that your DNS is set up correctly
 
-For instructions about how to create and maintain DNS records, including the MX record required for mail routing, you will need to contact your DNS hosting provider.
+For instructions about how to create and maintain DNS records, including the MX record required for mail routing, you need to contact your DNS hosting provider.
 
 ## Ensure that you do not advertise yourself as a non-routable IP
 
@@ -55,7 +56,7 @@ We may not accept email from senders who fail a reverse-DNS lookup. In some case
 
 ## You received a non-delivery report (NDR) when sending email to a user in Office 365
 
-Some delivery issues are the result of the sender's IP address being blocked by Microsoft or because the user account is identified as banned sender due to previous spam activity. If you believe that you have received the NDR in error, first follow any instructions in the NDR message to resolve the issue.
+Some delivery issues are the result of the sender's IP address being blocked by Microsoft or because the user account is identified as banned sender due to previous spam activity. If you believe that you've received the NDR in error, first follow any instructions in the NDR message to resolve the issue.
 
 For more information about the error you received, see the list of error codes in [Email non-delivery reports in Exchange Online](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
@@ -67,7 +68,7 @@ To request removal from this list, you can [Use the delist portal to remove your
 
 ## My email landed in the recipient's Junk Email folder
 
-If a message was incorrectly identified as spam by EOP, you can work with the recipient to submit this false positive message to the Microsoft Spam Analysis Team, who will evaluate and analyze the message. For more information, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
+If a message was incorrectly identified as spam by EOP, you can work with the recipient to submit this false positive message to the Microsoft Spam Analysis Team, who evaluates and analyzes the message. For more information, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 ## Traffic from my IP address is throttled by EOP
 
@@ -75,7 +76,7 @@ If you receive an NDR from EOP that indicates that your IP address is being thro
 
  `host xxxx.outlook.com [x.x.x.x]: 451 4.7.550 Access denied, please try again later`
 
-You received the NDR because suspicious activity has been detected from the IP address and it has been temporarily restricted while it is being further evaluated. If the suspicion is cleared through evaluation, this restriction will be lifted shortly.
+You received the NDR because suspicious activity has been detected from the IP address and it has been temporarily restricted while it's being further evaluated. If the suspicion is cleared through evaluation, this restriction will be lifted shortly.
 
 ## I can't receive email from senders in Microsoft 365
 
@@ -97,7 +98,7 @@ Incorrect:
 
 > From: someone@outlook.com <br> Subject: Catalogs
 
-The easier you make it for people to know who you are and what you are doing, the less difficulty you will have delivering through most spam filters.
+The easier you make it for people to know who you are and what you are doing, the less difficulty you have delivering through most spam filters.
 
 ### Always include an unsubscribe option in campaign emails
 
@@ -107,13 +108,13 @@ Marketing emails, especially newsletters, should always include a way of unsubsc
 
  `Update Profile/Email Address | Instant removal with SafeUnsubscribe&trade; | Privacy Policy`
 
-Some senders include this option by requiring recipients to send an email to a certain alias with "Unsubscribe" in the subject. This is not preferable to the one-click example above. If you do choose to require recipients to send a mail, ensure that when they click the link, all the required fields are pre-populated.
+Some senders include this option by requiring recipients to send an email to a certain alias with "Unsubscribe" in the subject. This isn't preferable to the one-click example above. If you do choose to require recipients to send a mail, ensure that when they click the link, all the required fields are pre-populated.
 
 ### Use the double opt-in option for marketing email or newsletter registration
 
 This industry best practice is recommended if your company requires or encourages users to register their contact information in order to access your product or services. Some companies make it a practice to automatically sign up their users for marketing emails or e-newsletters during the registration process, but this is considered a questionable marketing practice in the world of email filtering.
 
-During the registration process, if the "Yes, please send me your newsletter" or "Yes, please send me special offers" checkbox is selected by default, users who do not pay close attention may unintentionally sign up for marketing email or newsletters that they do not want to receive.
+During the registration process, if the "Yes, please send me your newsletter" or "Yes, please send me special offers" checkbox is selected by default, users who don't pay close attention may unintentionally sign up for marketing email or newsletters that they don't want to receive.
 
  Microsoft recommends the double opt-in option instead, which means that the checkbox for marketing emails or newsletters is unchecked by default. Additionally, once the registration form has been submitted, a verification email is sent to the user with a URL that allows them to confirm their decision to receive marketing emails.
 
@@ -121,9 +122,9 @@ During the registration process, if the "Yes, please send me your newsletter" or
 
 ### Ensure that email message content is transparent and traceable
 
-Just as important as the way the emails are sent is the content they contain. When creating email content, use the following best practices to ensure that your emails will not be flagged by email filtering services:
+Just as important as the way the emails are sent is the content they contain. When creating email content, use the following best practices to ensure that your emails won't be flagged by email filtering services:
 
-- When the email message requests that recipients add the sender to the address book, it should clearly state that such action is not a guarantee of delivery.
+- When the email message requests that recipients add the sender to the address book, it should clearly state that such action isn't a guarantee of delivery.
 
 - Redirects included in the body of the message should be similar and consistent, and not multiple and varied. A redirect in this context is anything that points away from the message, such as links and documents. If you have a lot of advertising or Unsubscribe links or Update the Profile links, they should all point to the same domain. For example:
 

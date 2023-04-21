@@ -7,13 +7,14 @@ author: MSFTTracyp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 05/05/2021
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
+  - highpri
 description: Use Explorer or Real-time detections to investigate and respond to threats efficiently.
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -41,7 +42,7 @@ This article explains the difference between Explorer and real-time detections r
 
 If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** (also known as **Threat Explorer**) or **Real-time detections** to detect and remediate threats.
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** _or_ **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** *or* **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
 
 With these tools, you can:
 
@@ -61,86 +62,86 @@ For more information, see [Email security with Explorer](email-security-in-micro
 
 ## Updated experience for Explorer and Real-time detections
 
-The experience for Threat Explorer and Real-time detections is updated to align with modern accessibility standards, and to optimize the workflow. For a short while, you will be able to toggle between the old experience and the new one.  
+The experience for Threat Explorer and Real-time detections is updated to align with modern accessibility standards, and to optimize the workflow. For a short while, you'll be able to toggle between the old experience and the new one.
 
 > [!NOTE]
-> Toggling impacts only your account and does not impact anyone else within your tenant. 
+> Toggling impacts only your account and does not impact anyone else within your tenant.
 
-Threat Explorer and Real-time detections is divided into the following views:
+Threat Explorer and Real-time detections are divided into the following views:
 
-- *All email*: Shows all email analyzed by Defender for office 365 and contains both good and malicious emails. This feature is only present in Threat Explorer and is not available for Real-time detections. By default, it is set to show data for two days, which can be expanded up to 30 days. This is also the default view for Threat Explorer.  
+- *All email*: Shows all email analyzed by Defender for office 365 and contains both good and malicious emails. This feature is only present in Threat Explorer and isn't available for Real-time detections. By default, it's set to show data for two days, which can be expanded up to 30 days. This is also the default view for Threat Explorer.
 
-- *Malware view*: Shows emails on which a malware threat was identified. This is the default view for Real-time detections, and shows data for two days (can be expanded to 30 days).  
+- *Malware view*: Shows emails on which a malware threat was identified. This is the default view for Real-time detections, and shows data for two days (can be expanded to 30 days).
 
 - *Phish view*: Shows emails on which a phish threat was identified.
 
-- *Content malware view*: Shows malicious detections identified in files shared through OneDrive, SharePoint, or Teams. 
+- *Content malware view*: Shows malicious detections identified in files shared through OneDrive, SharePoint, or Teams.
 
 Here are the common components within these experiences:
 
 - Filters
 
-    - You can use the various filters to view the data based on email or file attributes.  
+  - You can use the various filters to view the data based on email or file attributes.
 
-    - By default, the time filter is applied to the records, and is applied for two days.  
+  - By default, the time filter is applied to the records, and is applied for two days.
 
-    - If you are applying multiple filters, they are applied in 'AND' mode and you can use the advanced filter to change it to 'OR' mode.  
+  - If you're applying multiple filters, they're applied in 'AND' mode and you can use the advanced filter to change it to 'OR' mode.
 
-    - You can use commas to add multiple values for the same filter.  
+  - You can use commas to add multiple values for the same filter.
 
-    > [!div class="mx-imgBorder"]
-    > ![Explorer filters](../../media/explorer-new-experience-filters.png)
+  > [!div class="mx-imgBorder"]
+  > ![Explorer filters](../../media/explorer-new-experience-filters.png)
 
 - Charts
 
-    - Charts provide a visual, aggregate view of data based on filters. You can use different filters to view the data by different dimensions.  
+  - Charts provide a visual, aggregate view of data based on filters. You can use different filters to view the data by different dimensions.
 
     > [!NOTE]
-    > You may see no results in chart view even if you are seeing an entry in the list view. This happens if the filter does not produce any data. For example, if you have applied the filter malware family, but the underlying data does not have any malicious emails, then you may see the message no data available for this scenario.  
+    > You may see no results in chart view even if you are seeing an entry in the list view. This happens if the filter does not produce any data. For example, if you have applied the filter malware family, but the underlying data does not have any malicious emails, then you may see the message no data available for this scenario.
 
-    > [!div class="mx-imgBorder"]
-    > ![Explorer chart view](../../media/explorer-new-experience-export-chart-data.png)
+  > [!div class="mx-imgBorder"]
+  > ![Explorer chart view](../../media/explorer-new-experience-export-chart-data.png)
 
-- Results grid  
+- Results grid
 
-    - Results grid shows the email results based on the filters you have applied.  
+  - Results grid shows the email results based on the filters you've applied.
 
-    - Based on the configuration set in your tenant, data will be shown in UTC or local timezone, with the timezone information available in the first column.  
+  - Based on the configuration set in your tenant, data is shown in UTC or local timezone, with the timezone information available in the first column.
 
-    - You can navigate to the individual email entity page from the list view by clicking the **Open in new window** icon. 
+  - You can navigate to the individual email entity page from the list view by clicking the **Open in new window** icon.
 
-    - You can also customize your columns to add or remove columns to optimize your view.
+  - You can also customize your columns to add or remove columns to optimize your view.
 
-    > [!Note]
-    > You can toggle between the *Chart View* and the *List View* to maximize your result set.  
+  > [!Note]
+  > You can toggle between the *Chart View* and the *List View* to maximize your result set.
 
-    > [!div class="mx-imgBorder"]
-    > ![Explorer grid view](../../media/explorer-new-experience-list-chart-view.png)
+  > [!div class="mx-imgBorder"]
+  > ![Explorer grid view](../../media/explorer-new-experience-list-chart-view.png)
 
-- Detailed flyout  
+- Detailed flyout
 
-    - You can click on hyperlinks to get to the email summary panel (entries in Subject column), recipient, or IP flyout.  
+  - You can click on hyperlinks to get to the email summary panel (entries in Subject column), recipient, or IP flyout.
 
-    - The email summary panel replaces the legacy email flyout, and also provides a path to access the email entity panel.  
+  - The email summary panel replaces the legacy email flyout, and also provides a path to access the email entity panel.
 
-    - The individual entity flyouts like IP, recipient, and URL would reflect the same information, but presented in a single tab-based view, with the ability to expand and collapse the different sections based on requirement.  
+  - The individual entity flyouts like IP, recipient, and URL would reflect the same information, but presented in a single tab-based view, with the ability to expand and collapse the different sections based on requirement.
 
-    - For flyouts like URLs, you can click **View all Email** or **View all Clicks** to view the full set of emails/clicks containing that URL, as well as export the result set.  
+  - For flyouts like URLs, you can click **View all Email** or **View all Clicks** to view the full set of emails/clicks containing that URL, as well as export the result set.
 
 - Actions
 
-    - From Threat Explorer, you can trigger remediation actions like *Delete an email*. For more information on remediation, remediation limits, and tracking remediation see [Remediate malicious email](remediate-malicious-email-delivered-office-365.md).  
+  - From Threat Explorer, you can trigger remediation actions like *Delete an email*. For more information on remediation, remediation limits, and tracking remediation see [Remediate malicious email](remediate-malicious-email-delivered-office-365.md).
 
 - Export
 
-    - You can click **Export chart data** to export the chart details. Similarly, click **Export email list** to export email details.
+  - You can click **Export chart data** to export the chart details. Similarly, click **Export email list** to export email details.
 
-    - You can export up to 200K records for email list. However, for better system performance and reduced download time, you should use various email filters.
+  - You can export up to 200K records for email list. However, for better system performance and reduced download time, you should use various email filters.
 
-    > [!div class="mx-imgBorder"]
-    > ![Export chart data](../../media/explorer-new-experience-export-chart-data.png)
+  > [!div class="mx-imgBorder"]
+  > ![Export chart data](../../media/explorer-new-experience-export-chart-data.png)
 
-In addition to these features, you will also get updated experiences like *Top URLs*, *Top clicks*, *Top targeted users*, and *Email origin*. *Top URLs*, *Top clicks*, and *Top targeted users* can be further filtered based on the filter that you apply within Explorer. 
+In addition to these features, you'll also get updated experiences like *Top URLs*, *Top clicks*, *Top targeted users*, and *Email origin*. *Top URLs*, *Top clicks*, and *Top targeted users* can be further filtered based on the filter that you apply within Explorer.
 
 ## Required licenses and permissions
 

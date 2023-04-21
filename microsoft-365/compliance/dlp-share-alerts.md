@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 10/12/2020
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -68,4 +68,3 @@ For example:
 In this example, the **Time detected** value is **August 9, 2022 5:30 PM** Pacific Daylight Time. This converts to **August 10, 12:30 AM** UTC or `2022-08-10T12:30:00Z`
 
 8. You can share this link with people in the group you created, they'll be able to access the alert for review and investigation.
-

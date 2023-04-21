@@ -1,6 +1,7 @@
 ---
 title: "Compliance options for Microsoft 365 groups, Teams, and SharePoint collaboration"
 ms.reviewer: 
+ms.date: 08/12/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars

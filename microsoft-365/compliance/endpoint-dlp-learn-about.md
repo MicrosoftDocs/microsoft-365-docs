@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -32,9 +32,6 @@ You can use Microsoft Purview Data Loss Prevention (DLP) to monitor the actions 
 
 > [!TIP]
 > If you are looking for device control for removable storage, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
-
-> [!NOTE]
-> In Microsoft Purview, DLP policy evaluation of sensitive items occurs centrally, so there is no time lag for policies and policy updates to be distributed to individual devices. When a policy is updated in compliance center, it generally takes about an hour for those updates to be synchronized across the service. Once policy updates are synchronized, items on targeted devices are automatically re-evaluated the next time they are accessed or modified. (Preview) For Authorized Groups changes, the policy will need 24 hours to sync
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -64,6 +61,9 @@ Say you want to block all items that contain credit card numbers from leaving en
 
 See [Design a data loss prevention policy](dlp-policy-design.md) for more guidance on designing your DLP policies.
 
+> [!NOTE]
+> In Microsoft Purview, DLP policy evaluation of sensitive items occurs centrally, so there is no time lag for policies and policy updates to be distributed to individual devices. When a policy is updated in compliance center, it generally takes about an hour for those updates to be synchronized across the service. Once policy updates are synchronized, items on targeted devices are automatically re-evaluated the next time they are accessed or modified. (Preview) For Authorized Groups changes, the policy will need 24 hours to sync
+
 ## Monitored files
 
 Endpoint DLP supports monitoring of these file types through policy:
@@ -92,11 +92,9 @@ DLP audits the activities for these file types, even if there isn't a policy mat
 
 If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings.
 
-> [!NOTE]
-> If the **Always audit file activity for devices** setting is on, activities on any Word, PowerPoint, Excel, PDF, and .csv file are always audited even if the device is not targeted by any policy.
+ If the **Always audit file activity for devices** setting is on, activities on any Word, PowerPoint, Excel, PDF, and .csv file are always audited even if the device is not targeted by any policy.
 
-> [!TIP]
-> To ensure activities are audited for all supported file types, create a [custom DLP policy](dlp-create-deploy-policy.md).
+To ensure activities are audited for all supported file types, create a [custom DLP policy](dlp-create-deploy-policy.md).
 
 Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed for these files types:
 
@@ -225,6 +223,23 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 
 > [!div class="mx-imgBorder"]
 > ![copy to usb activity attributes.](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
+
+## Just in time protection (preview)
+
+> [!IMPORTANT]
+> If you want to try out just in time protection, you have to register your tenant at [Endpoint JIT Preview](https://aka.ms/EndpointJITPreview).
+
+Endpoint DLP can use **Just in time protection** once it is enabled in **Microsoft Purview compliance console** > **Settings**. 
+
+Just in time protection applies a candidate policy to onboarded Windows 10/11 devices. The candidate policy blocks all egress activities on monitored files until policy evaluation completes successfully. The candidate policy is applied to:
+
+- Items that have never been evaluated.
+- Items on which the evaluation has gone stale. These are previously evaluated items that haven't been reevaluated by the current, updated cloud versions of the policies.
+
+You can prevent a file from being permanently blocked if policy evaluation starts on a file, but doesn't complete. Use the **Just in time protection configuration** fallback setting to either **Allow** or **Block** egress activities if policy evaluation doesn't complete <!--in 30 seconds-->. You configure fallback settings in **Microsoft Purview compliance console** > **Settings** > **Just in time protection configuration** > **Decide what happens if JIT protection fails**.
+
+> [!TIP]
+> Because the candidate policy from just in time protection is applied to all files on onboarded devices, it may block user activity on files that won't have a policy applied once evaluation occurs. To prevent this productivity interruption, you should configure and deploy policies to devices before enabling just in time protection. 
 
 ## Next steps
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/03/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -28,6 +29,8 @@ description: "Learn how to migrate Google files to Microsoft 365 for business by
 ---
 
 # Migrate Google files to Microsoft 365 for business with Migration Manager
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
