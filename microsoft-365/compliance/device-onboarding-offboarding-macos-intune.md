@@ -48,7 +48,7 @@ Onboarding a macOS device into Compliance solutions is a multi-phase process.
 
 1. [Get the device onboarding package](#get-the-device-onboarding-package)
 1. [Deploy the mobileconfig and onboarding packages](#deploy-the-mobileconfig-and-onboarding-packages)
-1. [Publish application](#publish-application)
+1. [Publish the application](#publish-the-application)
 
 
 ### Prerequisites ###
