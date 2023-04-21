@@ -5,8 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/24
-/2023
+ms.date: 04/24/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -44,10 +43,7 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions l
 Onboarding a macOS device into Microsoft Purview solutions is a multi-phase process:
 1. [Deploy onboarding packages](#deploy-onboarding-packages)
 2. [Configure application preferences](#configure-application-preferences)
-3. [Deploy a Grant Full Access configuration profile](#deploy-a-grant-full-access-configuration-profile)
-4. [Deploy a System Extensions configuration profile](#deploy-a-system-extensions-configuration-profile)
-5. [Deploy System Configuration Profiles](#deploy-system-configuration-profiles)
-6. [Upload the installation package](#upload-the-installation-package)
+3. [Upload the installation package](#upload-the-installation-package)
 
 ### Prerequisites ###
 
