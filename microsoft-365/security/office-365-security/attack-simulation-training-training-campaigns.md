@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn how to create training campaigns in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 01/13/2023
+ms.date: 4/12/2023
 ---
 
 # Training campaigns in Attack simulation training
@@ -23,9 +23,6 @@ ms.date: 01/13/2023
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-> [!NOTE]
-> This article describes features that are in Public Preview, aren't available in all organizations, and are subject to change.
-
 In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, Training campaigns are a faster, more direct way to provide security training to users. Instead of creating and launching [simulated phishing attacks](attack-simulation-training-simulations.md) that eventually lead to training, you can create and assign Training campaigns directly to users.
 
 A Training campaign contains one or more built-in Training modules that you select. Currently, there are over 70 Training modules to select from. For more information about Training modules, see [Training modules for Training campaigns in Attack simulation training](attack-simulation-training-training-modules.md).
@@ -34,33 +31,43 @@ For getting started information about Attack simulation training, see [Get start
 
 To see the existing Training campaigns, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. To go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
 
-The **Training campaigns** tab lists the Training campaigns that you've created. The list includes the following information for each Training campaign:
+The **Training** tab lists the Training campaigns that you've created. The list includes the following information for each Training campaign<sup>\*</sup>:
 
-- **Name**
+- **Campaign name**
 - **Description**
-- **Duration (mins)**
-- **Date of completion**
+- **Total duration (mins)**
+- **Training completion** (date/time)
 - **Training completion**: The number of users who were included in the Training campaign and how many of them completed the training. The information is shown as a fraction (for example, **2/5**) and in a corresponding horizontal bar graph.
 - **No. of training modules**: The number of training modules that are included in the Training campaign.
 - **Created by**
 - **Created time**
 - **Status**: One of the following values:
-  - **Completed**<sup>\*</sup>
-  - **In progress**<sup>\*</sup>
-  - **Draft**<sup>\*</sup>
-  - **Cancelled**
+  - **Completed**<sup>\*\*</sup>
+  - **In progress**<sup>\*\*</sup>
+  - **Draft**<sup>\*\*</sup>
+  - **Canceled**
   - **Deleted**
-  - **Failed**<sup>\*</sup>
-  - **Scheduled**<sup>\*</sup>
-- **⋮ Actions**:
-  - :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete**
-  - :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png"::: **View report**
+  - **Failed**<sup>\*\*</sup>
+  - **Scheduled**<sup>\*\*</sup>
 
-To find a Training campaign in the list, use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box to find the name of the Training campaign.
+  For more information about the **Status** values, see the [Set the training threshold](#set-the-training-threshold) section later in this article.
+
+Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
+
+<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
+
+- Horizontally scroll in your web browser.
+- Narrow the width of appropriate columns.
+- Remove columns from the view.
+- Zoom out in your web browser.
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Filter** to filter the information on the page by the **Status** value of the Training campaign.
 
-<sup>\*</sup> The total count of Training campaigns with these **Status** values is also shown at the top of the page. But if you filter the information (for example, exclude on of these **Status** values), the count at the top of the page will be **0** for that excluded **Status** value.
+<sup>\*\*</sup> The total count of Training campaigns with these **Status** values is also shown at the top of the page. But if you filter the information (for example, exclude on of these **Status** values), the count at the top of the page is **0** for that excluded **Status** value.
+
+To find a Training campaign in the list, type part of the campaign name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box and then press the ENTER key.
+
+To see details about a Training campaign, see the [View Training campaign details](#view-training-campaign-details) section.
 
 ## Create Training campaigns
 
@@ -68,73 +75,102 @@ To create a Training campaign, do the following steps:
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
 
-2. On the **Training** tab,select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Create new**.
+2. On the **Training** tab, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Create new** to start the new Training campaign wizard.
 
-3. The new Training campaign wizard opens. The rest of this section describes the pages and the settings they contain.
+   The following sections describe the steps and configuration options to create a Training campaign.
 
-### Name Training campaign
+   > [!NOTE]
+   > At any point after you name the Training campaign during the new Training campaign wizard, you can select **Save and close** to save your progress and continue later. The incomplete Training campaign has the **Status** value **Draft**. You can pick up where you left off by selecting the Training campaign and then clicking the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** action that appears.
 
-On the **Name Training campaign** page, configure the following settings:
+### Name and describe the Training campaign
 
-- **Name**: Enter a unique name.
+On the **Name campaign** page, configure the following settings:
+
+- **Name**: Enter a unique name for the Training campaign.
 - **Description**: Enter an optional description.
 
-When you're finished, click **Next**.
+When you're finished on the **Name Training campaign** page, select **Next**.
 
 ### Target users
 
-On the **Target users** page, select one of the following values:
+On the **Target users** page, select who receives the Training campaign. Use the following options to select users:
 
-- **Include all users in my organization**
+- **Include all users in my organization**: The unmodifiable list of users is show in groups of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** icon on the page to find specific users.
 
-- **Include only specific users and groups**: When this value is selected, use the following options to find and select the users or groups to include in the Training campaign:
-  - :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Add users**: In the **Add users** flyout that appears, use the following options to find and select users:
-  - **Search for users or groups**: In the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box, enter three or more letters of the user or group name, and then press Enter. The results (if any) are shown in the **User list** section that appears.
-    - To clear the search results without selecting any users or groups and return to all filters on the **Add users** flyout, select **Add/Edit**.
-    - To clear the text from the search box and the entries from the **User list** section but remain in user/group search mode, select :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: in the search box.
-    - To clear any *selections* in the **User list** section but preserve the text in the search box and the actual entries in the list, select **Clear all selections**.
-    - When you're done selecting entries from the **User list** section, select **Add n user(s)**. You'll return to the **Target users** page where the selected users are shown in a list. To return to the **Add users** flyout, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Add users**.
+  > [!TIP]
+  > Although you can't remove users from the list on this page, you can use the next **Exclude users** page to exclude specific users.
 
-    Repeat this step as many times as required.
+- **Include only specific users and groups**: At first, no users or groups are shown on the **Targeted users** page. To add users or groups to the Training campaign, choose one of the following options:
 
-  - **Filter users by categories**: Use the following categories to filter and select users and groups. Multiple selections within the same category use the OR operator (for example, **User tags** equals **Priority account** OR **User tags** equals **High risk profile**). Selections from different categories use the AND operator (for example, **City** equals Redmond AND **Department** equals IT):
+  - **Search for users or groups**: If you click in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and do one of the following actions, the **Filter users by categories** options on the **Add users** flyout are replaced by a **User list** section:
+    - Type three or more characters and then press the ENTER key. Any users or group names that contain those characters are shown in the **User list** section by **Name** and **Email**.
+    - Type fewer than three characters or no characters and then press the ENTER key. No users are shown in the **User list** section, but you can type three or more characters in the **Search** box to search for users and groups.
 
-    - **Suggested user groups**: Select one or both of the following values:
+    The number of results appears in the **Selected (0/x) users** label.
+
+    > [!NOTE]
+    > Clicking the **Add filters** button clears and replaces any results the **User list** section with the **Filter users by categories**.
+
+    When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+
+    Select the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
+
+  - **Filter users by categories**: Use the following options:
+
+    - **Suggested user groups**: Select from the following values:
+      - **All suggested user groups**
       - **Users not targeted by a simulation in the last three months**
-      - **Repeat offenders**
+      - **Repeat offenders**: For more information, see [Configure the repeat offender threshold](attack-simulation-training-settings.md#configure-the-repeat-offender-threshold).
 
-    - **User tags**: Select one or more of the following values. You'll need to click **See all user tags** to see all values, and custom [user tags](user-tags-about.md) aren't available:
-      - **Priority accounts**: For more information, see [Priority accounts](../../admin/setup/priority-accounts.md).
-        - **High risk profile**
-        - **Medium risk profile**
-        - **Low risk profile**
+    - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md). Use the following options:
+      - **Search**: In :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search by user tags**, you can type part of the user tag and then press Enter. You can select some or all of the results.
+      - Select **All user tags**
+      - Select existing user tags. If the link is available, select **See all user tags** to see the complete list of available tags.
 
-    - **City**, **Department**, or **Title** properties: In each section, the following options are available:
-      - :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search by**: Type the property value and select it from the list of results.
-      - The first three values for each property are shown. To see all values for the specific property, select the **All \<property>** link. Select one or more values.
-      - Select **All \<property\>** to select all values for the specific property.
+    - **City**: Use the following options:
+      - **Search**: In :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search by City**, you can type part of the City value and then press Enter. You can select some or all of the results.
+      - Select **All City**
+      - Select existing City values. If the link is available, select **See all Cities** to see the complete list of available City values.
 
-    After you select values from one or more categories, select **Apply(n)**. The results (if any) are shown in the **User list** section that appears.
+    - **Country**: Use the following options:
+      - **Search**: In :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search by Country**, you can type part of the Country value and then press Enter. You can select some or all of the results.
+      - Select **All Country**
+      - Select existing City values. If the link is available, select **See all Countries** to see the complete list of available Country values.
 
-    - To not select any users or groups and return to all filters on the **Add users** flyout, select **Add/Edit**.
-    - To clear any *selections* in the **User list** section but preserve the actual entries in the list, select **Clear all selections**.
-    - When you're done selecting entries from the **User list** section, select **Add n user(s)**. You'll return to the **Target users** page where the selected users are shown in a list. To return to the **Add users** flyout, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Add users**.
+    - **Department**: Use the following options:
+      - **Search**: In :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search by Department**, you can type part the Department value and then press Enter. You can select some or all of the results.
+      - Select **All Department**
+      - Select existing Department values. If the link is available, select **See all Departments** to see the complete list of available Department values.
 
-    Repeat this step as many times as required.
+    - **Title**: Use the following options:
+      - **Search**: In :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search by Title**, you can type part of the Title value and then press Enter. You can select some or all of the results.
+      - Select **All Title**
+      - Select existing Title values. If the link is available, select **See all Titles** to see the complete list of available Title values.
 
-  - :::image type="icon" source="../../media/m365-cc-sc-import-icon.png"::: **Import**: In the dialog that opens, find and select a .csv file.
+    :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="The User filtering on the Target users page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
-After you've selected one or more users or groups, the following information is shown for each entry on the **Target users** page:
+    You can use some or all of the search categories to find users and groups. If you select multiple categories, the AND operator is used. Any users or groups must match both values to be returned in the results (which is virtually impossible if you use the value **All** in multiple categories).
 
-- **Name**
-- **Email**
-- **Title**
-- **Type**: **User** or **Group**
-- **Delete**: Use the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete** icon to remove the entry from the list. Select **Confirm** in the confirmation dialog**.
+    The number of values that were used as the search criteria by a specific category is shown next to the category tile (for example, **City 50** or **Priority accounts 10**).
 
-Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box to find users or groups in the list.
+    When you're finished searching by category, select the **Apply(x)** button. The previous **Filter users by categories** options on the **Add users** flyout are replaced by the following information:
 
-When you're finished, select **Next**.
+    - **Filters** section: Show how many filter values you used and the names of the filter values. If it's available, select the **See all** link to see all filter values
+    - **User list** section: Shows the users or groups that match your category searches. The number of results appears in the **Selected (0/x) users** label.
+
+    When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+
+    Select the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
+
+  - :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Import**: In the dialog that opens, specify a CSV file that contains one email address per line.
+
+    After you find a select the CSV file, the users are imported and shown on the **Targeted users** page.
+
+  On the main **Target users** page, you can use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find selected users. You can also select :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Delete** and then **Confirm** in the confirmation dialog to remove specific users.
+
+  To add more users and groups, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add users** or :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Import** on the **Target users** page and repeat the previous steps.
+
+When you're finished on the **Target users** page, select **Next**.
 
 ### Exclude users
 
@@ -142,181 +178,209 @@ On the **Exclude users** page, you can exclude some of the previously selected u
 
 The selection options are identical to the previous step when you select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Add users to exclude** or :::image type="icon" source="../../media/m365-cc-sc-import-icon.png"::: **Import**.
 
-When you're finished, select **Next**.
+When you're finished on the **Exclude users** page, select **Next**.
 
-### Select courses
+### Select training modules
 
-On the **Select courses** page, click :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Add trainings**.
+On the **Select training modules** page, select one of the following options:
 
-In the **Add Training** flyout that appears, select one or more Training modules to include in the Training campaign by clicking the blank area next to the module name, and then clicking **Add**.
+- **Training catalog**: Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Add trainings**.
 
-What you see and what you can do in the **Add Training** flyout is identical to what's available at **Training modules** on the **Content library** tab at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. For more information, see [Training modules for Training campaigns in Attack simulation training](attack-simulation-training-training-modules.md).
+  In the **Add Training** flyout that opens, select one or more Training modules to include in the Training campaign by selecting the round check box that appears in the blank area next to the module name, and then clicking **Add**.
 
-After you've selected one or more Training modules, the following information is shown for each entry on the **Select courses** page:
+  The modules that are available in the **Add Training** flyout are identical to the modules that are available at **Training modules** on the **Content library** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>. For more information, see [Training modules for Training campaigns in Attack simulation training](attack-simulation-training-training-modules.md).
 
-- **Training name**
-- **Source**
-- **Duration (mins)**
-- **Delete**: Use the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete** icon to remove the entry from the list. Click **Confirm** in the confirmation dialog**.
+  After you've selected one or more Training modules, the following information is shown for each entry on the **Select courses** page:
 
-When you're finished, click **Next**.
+  - **Training name**
+  - **Source**
+  - **Duration (mins)**
+  - **Delete**: Use the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete** icon to remove the entry from the list. Select **Confirm** in the confirmation dialog**.
 
-### Select end user notification
+- **Redirect to a custom URL**: Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Add trainings**.
+
+  In the **Custom training URL** flyout that opens, the following options are available:
+
+  - **Custom training URL** (required)
+  - **Custom training name** (required)
+  - **Custom training description**
+  - **Custom training duration (in minutes)** (required): The default value is 0, which means there's no specified duration for the training.
+
+  When you're finished on the **Custom training URL** flyout, select **Add**. Information about the custom URL is visible on the **Select courses** page.
+
+When you're finished on the **Select courses** page, select **Next**.
+
+### Select end user notifications
 
 On the **Select end user notification** page, select from the following notification options:
 
-- **Microsoft default notification (recommended)**: The following additional settings are available on the page:
+- **Microsoft default notification (recommended)**: The notifications that users will receive are shown on the page:
+  - **Microsoft default training only campaign-training assignment notification**
+  - **Microsoft default training only campaign-training reminder notification**
 
-  - **Select default language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
-
-  - By default, the following notifications are included:
-    - **Microsoft default training only campaign-training assignment notification**
-    - **Microsoft default training only campaign-training reminder notification**
+  Select the default language to use in **Select default language**. The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Romanian**, **Russian**, **Spanish**, or **Dutch**.
 
   For each notification, the following information is available:
 
   - **Notifications**: The name of the notification.
   - **Language**: If the notification contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
-  - **Type**: **Training assignment notification** or **Training reminder notification**.
-  - **Delivery preferences**: For **Training reminder notification** types, the values **Twice a week** and **Weekly** are available.
-  - **⋮ Actions**: If you click the :::image type="icon" source="../../media/m365-cc-sc-view-icon.png"::: **View** icon, the **Review notification** page appears with the following information:
-    - **Preview** tab: View the notification message as users will see it. To view the message in different languages, use the **Select notification language** box.
+  - **Type**: One of the following values:
+    - **Training assignment notification**
+    - **Training reminder notification**
+  - **Delivery preferences**: You need to configure the following delivery preferences before you can continue:
+    - For **Microsoft default training only campaign-training reminder notification**, select **Twice a week** or **Weekly**.
+  - **Actions**: If you select :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View**, a **Review notification** page opens with the following information:
+    - **Preview** tab: View the notification message as users see it. To view the message in different languages, use the **Select notification language** box.
     - **Details** tab: View details about the notification:
       - **Notification description**
-      - **Source**: For built-in notifications, the value is **Global**.
-      - **Notification type**: **Training assignment notification** or **Training reminder notification** based on the notification you originally selected:
+      - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
+      - **Notification type**: One of the following types based on the notification you originally selected:
+        - **Training assignment notification**
+        - **Training reminder notification**
       - **Modified by**
       - **Last modified**
 
-    When you're finished, click **Close**.
+    When you're finished on the **Review notification** page, select **Close** to return to the **Select end user notification** page.
 
-  You're taken to the **[Schedule](#schedule)** page when you click **Next**.
+- **Customized end user notifications**: No other configuration options are available on the page. When you select **Next**, you need to select a **Training assignment notification** and a **Training reminder notification** to use for the Training campaign as described in the next two subsections.
 
-- **Customized end user notifications**: When you click **Next**, you're taken to the **Training assignment notification** page as described in the next sections.
+When you're finished on the **Select end user notification** page, select **Next**.
 
-#### Training assignment notification
+#### Select a training assignment notification
 
-The **Training assignment notification** page is available only if you selected **Customized end user notifications** on the **[Select end user notification](#select-end-user-notification)** page.
+> [!NOTE]
+> This page is available only if you selected **Customized end user notifications** on the [Select end user notifications](#select-end-user-notifications) page.
 
-This page shows the following notifications and their configured languages:
+The **Training assignment notification** page shows the following notifications and their configured languages:
 
 - **Microsoft default training assignment notification**
 - **Microsoft default training only campaign-training assignment notification**
-- Any custom training assignment notifications that you previously created where the **Type** value is **Training assignment notification**.
+- Any custom training assignment notifications that you previously created.
 
-  These notifications are also available in **End user notifications** on the **Content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. The built-in notifications are available on the **Global notifications** tab. Custom training assignment notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
+These notifications are also available on the **End user notifications** page on the **Content library** tab:
 
-You can select an existing training assignment notification or create a new notification to use:
+- Built-in training assignment notifications are available on the **Global notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=global>.
+- Custom training assignment notifications are available on the **Tenant notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>.
 
-- To select an existing notification, select the check box next to the notification name. If you click on the notification name, the notification is selected and a preview flyout appears. To deselect the notification, clear the check box next to the notification.
-- To search for an existing notification on the page, use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box to search for the name.
+For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
-  Select the notification that you want to use, and then click **Next**.
+Do one of the following steps:
 
-- To create and use a new notification, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create new**.
+- **Select an existing notification to use**:
+  - To search for an existing notification in the list, type part of the notification name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
+  - When you select a notification by clicking  anywhere in the row other than the check box, a details flyout opens that shows more information about the notification:
+    - The **Preview** tab shows what the notification looks like to users.
+    - The **Details** tab shows the properties of the notification.
 
-- To edit an existing custom notification, select it and then click the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png"::: **Edit notification** icon that appears.
+    When you're finished in the notification details flyout, select **Close**.
 
-##### Training assignment notification wizard
+  On the **Training assignment notification** page, select a notification to use by selecting the check box next to the name.
 
-If you select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create new** on the **Training assignment notification** page or select a custom notification and then click :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png"::: **Edit notification**, a notification creation wizard opens.
+- **Create a new notification to use**: Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new**. The creation steps are identical to [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
 
-The creation steps are identical as described in [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
+  > [!NOTE]
+  > On the **Define details** page of the new notification wizard, be sure to select the value **Training assignment notification** for the notification type.
 
-> [!NOTE]
-> On the **Define details** page, be sure to select the value **Training assignment notification** for **Select notification type**.
+  When you're finished creating the notification, you return to the **Training assignment notification** page where the new notification now appears in the list for you to select
 
-When you're finished, you're taken back to the **Training assignment notification** page where the notification that you just created now appears in the list.
+When you're finished on the **Training assignment notification** page, select **Next**.
 
-Select the notification that you want to use, and then click **Next**.
-
-When you're finished, click **Next**.
-
-#### Training reminder notification
-
-The **Training reminder notification** page is available only if you selected **Customized end user notifications** on the **[Select end user notification](#select-end-user-notification)** page.
-
-- **Set frequency for reminder notification**: Select **Weekly** (default) or **Twice a week**.
-  - Reminder notifications will stop at the end of the campaign.
-
-- **Select a reminder notification**: This section shows the following notifications and their configured languages:
-
-  - **Microsoft default training reminder notification**
-  - **Microsoft default training only campaign-training reminder notification**
-  - Any custom training reminder notifications that you previously created where the **Type** value is **Training reminder notification**.
-
-    These notifications are also available in **End user notifications** on the **Simulation content library** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. The build-it notifications available on the **Global notifications** tab. Custom training reminder notifications are available on the **Tenant notifications** tab. For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
-
-  You can select an existing training reminder notification or create a new notification to use:
-
-- To select an existing notification, select the check box next to the notification name. If you click on the notification name, the notification is selected and a preview flyout appears. To deselect the notification, clear the check box next to the notification.
-- To search for an existing notification on the page, use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box to search for the name.
-
-    Select the notification that you want to use, and then select **Next**.
-
-  - To create and use a new notification, click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create new**.
-
-  - To edit an existing custom notification, select it and then click the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png"::: **Edit notification** icon that appears.
-
-##### Training reminder notification wizard
-
-If you click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create new** on the **Training reminder notification** page or select a custom notification and then click :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png"::: **Edit notification**, a notification creation wizard opens.
-
-The creation steps are identical as described in [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
+#### Select a training reminder notification
 
 > [!NOTE]
-> On the **Define details** page, be sure to select the value **Training reminder notification** for **Select notification type**.
+> This page is available only if you selected **Customized end user notifications** on the [Select end user notifications](#select-end-user-notifications) page.
 
-When you're finished, you're taken back to the **Training reminder notification** page where the notification that you just created now appears in the list.
+The **Training reminder notification** page shows the following notifications and their configured languages:
 
-Select the notification that you want to use, and then click **Next**.
+- **Microsoft default training reminder notification**
+- **Microsoft default training only campaign-training reminder notification**
+- Any custom training reminder notifications that you previously created.
 
-### Schedule
+These notifications are also available at **Attack simulation training** \> **Content library** tab \> **End user notifications**:
 
-On the **Schedule** page, select the start date and end date for the Training campaign using one of the following values:
+- Built-in training reminder notifications are available on the **Global notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=global>.
+- Custom training reminder notifications are available on the **Tenant notifications** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=tenant>.
 
-- **launch this Training campaign as soon as I'm done**
-- **Schedule this Training campaign to be launched later**: If this option is selected, **Set the campaign launch date** and **Set launch time** boxes appear for you to configure.
+For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
-**Send training with an end date** is selected by default, so **Set the campaign end date** and **Set end time** boxes are available for you to configure. If you clear **Send training with an end date**, the boxes disappear.
+In **Set frequency for reminder notification**, select **Weekly** or **Twice a week**, and then do one of the following steps:
+
+- **Select an existing notification to use**:
+  - To search for an existing notification in the list, type part of the notification name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
+  - When you select a notification by clicking  anywhere in the row other than the check box, a details flyout opens that shows more information about the notification:
+    - The **Preview** tab shows what the notification looks like to users.
+    - The **Details** tab shows the properties of the notification.
+
+    When you're finished in the notification details flyout, select **Close**.
+
+  On the **Training reminder notification** page, select a notification to use by selecting the check box next to the name.
+
+- **Create a new notification to use**: Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new**. The creation steps are identical to [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
+
+  > [!NOTE]
+  > On the **Define details** page of the new notification wizard, be sure to select the value **Training reminder notification** for the notification type.
+
+  When you're finished creating the notification, you return to the **Training reminder notification** page where the new notification now appears in the list for you to select.
+
+When you're finished on the **Training reminder notification** page, select **Next**.
+
+### Schedule the Training campaign
+
+On the **Schedule** page, you choose when to start and end the Training campaign by choosing one of the following values:
+
+- **Launch this Training campaign as soon as I'm done**
+
+  If you select **Send training with an end date** (it's selected by default), you need to configure the end date/time in **Set the campaign end date** and **Set hours**, **Set minutes**, and **Set time format**.
+
+- **Schedule this Training campaign to be launched later**: Enter the Training campaign start date/time in **Set the campaign launch date** and **Set hours**, **Set minutes**, and **Set time format**.
+
+  If you select **Send training with an end date** (it's selected by default), you need to configure the end date/time in **Set the campaign end date** and **Set hours**, **Set minutes**, and **Set time format**.
 
 > [!NOTE]
-> If you clear the **Send training with an end date** box, no reminder notifications will be send to the targeted users outside of the initial assignment notice.
+> If you clear the **Send training with an end date** check box, no reminder notifications will be send to the targeted users outside of the initial training assignment notice.
 
-When you're finished, click **Next**.
+When you're finished on the **Schedule** page, select **Next**.
 
-## Review
+## Review Training campaign details
 
-On the **Review** page, you can review the details of your Training campaign.
+On the **Review** page, you can review the details of the Training campaign.
 
-You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
+Select the :::image type="icon" source="../../media/m365-cc-sc-send-icon.png" border="false"::: **Send a test** button to send a copy of the Training campaign to yourself (the currently signed in user) for inspection.
 
-When you're finished, click **Submit**.
+You can select **Edit** in each section to modify the settings within the section. Or you can select **Back** or the specific page in the wizard to modify the settings.
 
-## View details and reports for Training campaigns
+When you're finished on the **Review** page, select **Submit**.
 
-To view the details and reports for a Training campaign, do the following steps:
+Back on the **Training campaign** tab, the Training campaign that you created is now listed. The **Status** value depends on your previous selection in the [Schedule the Training campaign](#schedule-the-training-campaign) step:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
+- **In progress** if you selected **Launch this Training campaign as soon as I'm done**.
+- **Scheduled** if you selected **Schedule this Training campaign to be launched later**.
 
-2. On the **Training** tab, do one of the following steps:
-   - Select the Training campaign by selecting the check box next to it, and then click **⋮ (Actions)** \> :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png"::: **View report**. You might need to scroll to the right to see **⋮ (Actions)**.
-   - In the list of Training campaigns, click anywhere in the row without selecting the check box (for example, on the **Name** value).
+## Take action on Training campaigns
 
-3. A details page for the Training campaign opens with the following tabs:
-   - **Report**
-   - **Users**
-   - **Details**
+All actions on existing Training campaigns start on the **Training** tab. To get there, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
+
+### View Training campaign details
+
+To view the details and reports for a Training campaign on the **Training** tab, select the Training campaign by clicking anywhere in the row other than the check box next to the name.
+
+A details page for the Training campaign opens with the following tabs:
+
+- **Report**
+- **Users**
+- **Details**
 
 These tabs are described in the following sections.
 
-### Report tab
+#### Report tab
 
 The **Report** tab of the Training campaign shows the following information:
 
-- **Training completion** section:
-  - Each Training module that's included in the Training campaign is shown with a bar graph and a fraction that shows how many people have completed the module (number of users / total number of users).
-  - Using the previous data, the top of the section shows:
+- **Training completion classification** section.
+
+- **Training completion summary** section:
+  - Each Training module in the Training campaign is shown with a bar graph and a fraction that shows how many people have completed the module (number of users / total number of users).
+  - From the previous data, the top of the section shows:
     - The percentage of users who completed all modules in the campaign.
     - The percentage of users who completed some of the modules in the campaign.
     - The percentage of users who haven't started any of the modules in the campaign.
@@ -324,24 +388,24 @@ The **Report** tab of the Training campaign shows the following information:
 - **All user activity** section:
   - **Successfully received training notification**: A bar graph and a fraction that shows how main people received notifications for the modules in the campaign.
 
-### Users tab
+#### Users tab
 
 The **Users** tab shows the following information about the users who were assigned the Training campaign:
 
-- **Display name**
+- **Name**
 - **Training status**: One of the following values:
   - **Not started**: The user hasn't started any Training modules in the campaign.
   - **In progress**: The user has completed some Training modules in the campaign.
   - **Completed**: The user has completed all Training modules in the campaign.
   - **Overdue**: The user hasn't completed all Training modules by the campaign end date/time.
 - **Training completion date**
-- **Mail**
+- **Username**
 
-To add or remove the **Training date status** or **Department** columns, click :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png"::: **Customize columns**.
+To remove the **Training status** column, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png"::: **Customize columns**. By default, the only available column that's not shown is **Department**.
 
-To download the displayed results to a RecordExport.csv file in the local Downloads folder, click :::image type="icon" source="../../media/m365-cc-sc-download-icon.png"::: **Export**.
+To download the displayed results to a RecordExport.csv file in the local Downloads folder, select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png"::: **Export**.
 
-If you select a user from the list, the following information appears in a details flyout:
+If you select a user from the list by clicking anywhere in the row other than the round check box that appears in the blank area next to the name, the following user information appears in a details flyout:
 
 - **User details** section:
   - **Company**
@@ -352,13 +416,14 @@ If you select a user from the list, the following information appears in a detai
   - **Manager**
 - Status information for Training modules in the Training campaign for the user:
   - **Training name**: The training module name.
-  - **Training status**: **Not started**, **In progress**, **Completed**, **Training Already Completed**, **Training Previously Assigned**, **Overdue**, or **Not Completed**.
+  - **Training status**: **Not started**, **In progress**, **Completed**, **Training Previously Assigned**, **Overdue**, or **Not Completed**.
   - **Training start date**
   - **Training completed date**
 
-To see details about other users in the Training campaign without leaving the details flyout, use ![Previous item and Next item icons.](../../media/updownarrows.png) **Previous item** and **Next item**.
+> [!TIP]
+> To see details about other users in the Training campaign without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
 
-### Details tab
+#### Details tab
 
 The **Details** tab of the Training campaign shows the following information:
 
@@ -367,41 +432,50 @@ The **Details** tab of the Training campaign shows the following information:
 - **Notifications**: Whether training assignment notifications and training reminder notifications are enabled, and their delivery frequency.
 - **Selected modules**: The Training modules in the Training campaign are listed, along with their durations.
 
-## Delete Training campaigns
+### Cancel Training campaigns
 
-To delete an existing Training campaign, do the following steps:
+You can cancel Training campaigns with the **Status** value **In progress** or **Scheduled**.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
+To cancel an existing Training campaign on the **Training tab**, select the Training campaign by selecting the check box next to the name, select the :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false"::: **Cancel** action that appears, and then select **Confirm** in the confirmation dialog.
 
-2. On the **Training** tab, select the Training campaign by selecting the check box next to it, and then click **⋮ (Actions)** \> :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png"::: **Delete**. You might need to scroll to the right to see **⋮ (Actions)**.
+After you cancel the Training campaign, the **Status** value changes to **Canceled**.
 
-3. Click **Confirm** in the warning dialog that opens.
+### Remove Training campaigns
 
-## Set the training threshold time period
+You can't remove Training campaigns with the **Status** value **In progress** or **Scheduled**.
 
-The training threshold time period is the number of days for which a training module will not be re-assigned to a user who meets either of the following criteria:
+To remove an existing Training campaign from the **Training** tab, select the Training campaign by selecting the check box next to the name, select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears, and then select **Confirm** in the confirmation dialog.
 
-- They've already completed the same training module during the threshold time period.
-- They're actively assigned the same training module during the threshold time period.
+After you remove the Training campaign, it's no longer listed on the **Training** tab. 
 
-The training threshold starts from the time of user training module assignment.
+## Set the training threshold
 
-We recommend the number of days for the training threshold assignment to be greater than the number of days that a user would have to complete a training module assignment.
+The _training threshold_ prevents users from having the same trainings assigned to them during a specific interval in days. The default value is 90 days.
 
-In the training campaign user report, a user may have the following **Status** values:
+During the time interval, the same training module won't be reassigned to users who meet either of the following criteria:
 
-- **Completed**: The user has already completed their training module.
-- **In Progress**: The user has started their training module.
-- **Not Started**: The user hasn't started their training module.
-- **Training Already Completed**: The user was previously assigned and completed the training module within the training threshold time period.
-- **Training Previously Assigned**: The user currently has been assigned the training module within the training threshold time period, but hasn't completed the training. The user can still complete the training module to move it to a **Completed** state.
-- **Overdue**: The user hasn't completed the training before the assigned module due date and has not been reassigned the same training module within the training threshold period.
-- **Not Completed**: The user hasn't completed the training module within the assigned module due date and/ or is outside the training threshold period and is eligible for the same training module reassignment.
+- They completed the training module during the training threshold.
+- They haven't completed the training module, but the module was assigned to them during the training threshold.
 
-To set the training threshold, do the following steps:
+The training threshold starts when a training module is assigned to a user.
+
+We recommend that the training threshold is greater than the number of days that a user has to complete a training module.
+
+In the training campaign user report, the **Status** value shows the effect of the training threshold on users and their assigned trainings modules:
+
+- **Completed**: The user completed the training module.
+- **In Progress**: The user started the training module.
+- **Not Started**: The user hasn't started the training module.
+- **Training Previously Assigned**: The training module was assigned to the user during the training threshold, but the user hasn't completed the training yet. The user can still complete the training module, at which point the **Status** value changes to **Completed**.
+- **Overdue**: The user hasn't completed the training module before the assigned due date and the same training module hasn't been reassigned to the user during the training threshold.
+- **Not Completed**: The user hasn't completed the training module within the assigned due date and/or outside the training threshold. This status makes the user eligible to have the same training module reassigned to them.
+
+You set the training threshold on the **Settings** tab on the **Attack simulation training** page. For more information about the **Settings** tab, see [Global settings in Attack simulation training](attack-simulation-training-settings.md).
+
+To set the training threshold on the **Settings** tab, do the following steps:
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Settings** tab. Or, to go directly to the **Settings** tab, use <https://security.microsoft.com/attacksimulator?viewid=setting>.
 
-2. Set the value in days for the training threshold time period. The default value is 90 days. To remove training threshold and always assign training, set value to 0.
+2. Set the value in days for the training threshold time period. The default value is 90 days. To remove the training threshold and always assign training, set value to 0.
 
-3. When you're finished, click **Save**.
+3. When you're finished on the **Settings** tab, select **Save**.

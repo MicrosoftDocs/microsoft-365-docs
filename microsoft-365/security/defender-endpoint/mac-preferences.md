@@ -34,7 +34,7 @@ ms.date: 12/18/2020
 
 ## Summary
 
-In enterprise organizations, Microsoft Defender for Endpoint on macOS can be managed through a configuration profile that is deployed by using one of several management tools. Preferences that are managed by your security operations team take precedence over preferences that are set locally on the device. Changing the preferences that are set through the configuration profile requires escalated privileges and is not available for users without administrative permissions.
+In enterprise organizations, Microsoft Defender for Endpoint on macOS can be managed through a configuration profile that is deployed by using one of several management tools. Preferences that are managed by your security operations team take precedence over preferences that are set locally on the device. Changing the preferences that are set through the configuration profile requires escalated privileges and isn't available for users without administrative permissions.
 
 This article describes the structure of the configuration profile, includes a recommended profile that you can use to get started, and provides instructions on how to deploy the profile.
 
@@ -62,7 +62,7 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 Specifies the enforcement preference of antivirus engine. There are three values for setting enforcement level:
 
-- Real-time (`real_time`): Real-time protection (scan files as they are accessed) is enabled.
+- Real-time (`real_time`): Real-time protection (scan files as they're accessed) is enabled.
 - On-demand (`on_demand`): Files are scanned only on demand. In this:
   - Real-time protection is turned off.
 - Passive (`passive`): Runs the antivirus engine in passive mode. In this:
@@ -87,7 +87,7 @@ Specifies the enforcement preference of antivirus engine. There are three values
 
 #### Configure file hash computation feature
 
-Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint will compute hashes for files it scans to enable better matching against the indicator rules. On macOS, only the script and Mach-O (32 and 64 bit) files are considered for this hash computation (from engine version 1.1.20000.2 or higher). Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
+Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint computes hashes for files it scans to enable better matching against the indicator rules. On macOS, only the script and Mach-O (32 and 64 bit) files are considered for this hash computation (from engine version 1.1.20000.2 or higher). Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
 
 |Section|Value|
 |---|---|
@@ -99,7 +99,7 @@ Enables or disables file hash computation feature. When this feature is enabled,
 
 #### Run a scan after definitions are updated
 
-Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.
+Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting triggers an antivirus scan on the running processes of the device.
 
 <br>
 
@@ -240,7 +240,7 @@ File, folder, and process exclusions support the following wildcards:
 
 ****
 
-|Wildcard|Description|Example|Matches|Does not match|
+|Wildcard|Description|Example|Matches|Doesn't match|
 |---|---|---|---|---|
 |\*|Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder)|`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`|
 |?|Matches any single character|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`|
@@ -299,7 +299,7 @@ Specify a process for which all file activity is excluded from scanning. The pro
 
 #### Allowed threats
 
-Specify threats by name that are not blocked by Defender for Endpoint on Mac. These threats will be allowed to run.
+Specify threats by name that aren't blocked by Defender for Endpoint on Mac. These threats will be allowed to run.
 
 <br>
 
@@ -314,7 +314,7 @@ Specify threats by name that are not blocked by Defender for Endpoint on Mac. Th
 
 #### Disallowed threat actions
 
-Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.
+Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list aren't displayed in the user interface.
 
 <br>
 
@@ -365,9 +365,9 @@ Specify threat types.
 
 Specify what action to take when a threat of the type specified in the preceding section is detected. Choose from the following options:
 
-- **Audit**: your device is not protected against this type of threat, but an entry about the threat is logged.
-- **Block**: your device is protected against this type of threat and you are notified in the user interface and the security console.
-- **Off**: your device is not protected against this type of threat and nothing is logged.
+- **Audit**: your device isn't protected against this type of threat, but an entry about the threat is logged.
+- **Block**: your device is protected against this type of threat and you're notified in the user interface and the security console.
+- **Off**: your device isn't protected against this type of threat and nothing is logged.
 
 <br>
 
@@ -500,7 +500,7 @@ This setting determines how aggressive Defender for Endpoint will be in blocking
 
 #### Enable / disable automatic sample submissions
 
-Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. You are prompted if the submitted file is likely to contain personal information.
+Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. You're prompted if the submitted file is likely to contain personal information.
 
 <br>
 

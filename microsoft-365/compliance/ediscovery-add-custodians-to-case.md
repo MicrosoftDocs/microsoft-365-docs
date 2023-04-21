@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/10/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -56,7 +56,6 @@ In addition to a custodian's mailbox and OneDrive account, you can also associat
 To deselect the primary mailbox and OneDrive account for a custodian:
 
 1. Expand the custodian to view the primary data locations that have been automatically associated to each custodian.
-
 2. Select **Clear** next to **Mailbox** or **OneDrive** to remove a custodian's mailbox or OneDrive account from being associated as a data location for this custodian.
 
    ![Configure locations to associate to a custodian.](../media/ConfigureCustodianLocations.png)
@@ -99,3 +98,7 @@ Before you actually add the custodians to the case, you can review the list of c
    The new custodians are added to the case and displayed on the **Data sources** tab.
 
    [ ![Custodians listed on the Data sources tab.](../media/DataSourcesTab.png) ](../media/DataSourcesTab.png#lightbox)
+
+## Retry hold action
+
+Once a custodian is placed on hold, you can validate the status in the **Hold** column of the list page. If the hold status isn't equal to *True* (when hold is enabled) or *False* (when hold is disabled), you can multi-select the relevant custodians and select *Retry hold action* at the top of the page. *Retry hold action* is only available for custodial sources and when multiple custodians are selected. If *Retry hold action* is performed for data sources successfully placed or released from hold, no action is triggered.

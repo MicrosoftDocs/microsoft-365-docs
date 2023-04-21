@@ -38,8 +38,7 @@ You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 - Make sure you have access to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home).
 - This supports three most recent major releases of macOS.
 - Create the user groups that you are going to assign the configuration updates to.
-- Install the v95+ Edge browser on your macOS devices 
-
+- OPTIONAL: Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
 
 ## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 

@@ -33,6 +33,8 @@ ms.date: 11/08/2022
 
 ::: moniker range="o365-worldwide"
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 ## Watch: Get help or support

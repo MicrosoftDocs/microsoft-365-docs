@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 03/13/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -30,7 +30,7 @@ ms.custom: admindeeplinkCOMPLIANCE
 Insider risk management settings apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management pages. These settings control policy components for the following areas:
 
 - [Privacy](#privacy)
-- [Indicators](#indicators)
+- [Indicators](#policy-indicators)
 - [Policy timeframes](#policy-timeframes)
 - [Intelligent detections](#intelligent-detections)
 - [Export alerts](#export-alerts)
@@ -59,7 +59,7 @@ Protecting the privacy of users that have policy matches is important and can he
 
 ![Insider risk management privacy settings.](../media/insider-risk-settings-privacy.png)
 
-## Indicators
+## Policy indicators
 
 Insider risk policy templates define the type of risk activities that you want to detect and investigate. Each policy template is based on specific indicators that correspond to specific triggers and risk activities. All global indicators are disabled by default, and you must select one or more indicators to configure an insider risk management policy.
 
@@ -195,7 +195,10 @@ Another option for policy thresholds is to assign the policy triggering event to
 Policy timeframes allow you to define past and future review periods that are triggered after policy matches based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following policy timeframes are available:
 
 - **Activation window**: Available for all policy templates, the *Activation window* is the defined number of days that the window activates **after** a triggering event. The window activates for 1 to 30 days after a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Activation window* to 30 days. Several months have passed since you configured the policy, and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Activation window* and the policy is active for that user for 30 days after the triggering event occurred.
-- **Past activity detection**: Available for all policy templates, the *Past activity detection* is the defined number of days that the window activates **before** a triggering event. The window activates for 0 to 90 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Past activity detection* to 90 days. Several months have passed since you configured the policy, and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Past activity detection* and the policy gathers historic activities for that user for 90 days prior to the triggering event.
+- **Past activity detection**: Available for all policy templates, the *Past activity detection* is the defined number of days that the window activates **before** a triggering event. For activities in the audit log, the window activates for 0 to 90 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Past activity detection* to 90 days. Several months have passed since you configured the policy, and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Past activity detection* and the policy gathers historic activities for that user for 90 days prior to the triggering event. 
+
+   > [!NOTE]
+   > For email activities, the past activity detection period is 10 days. 
 
 ![Insider risk management timeframe settings.](../media/insider-risk-settings-timeframes.png)
 
@@ -251,8 +254,39 @@ For each of the following domain settings, you can enter up to 500 domains:
     By specifying allowed domains in settings, the risk management  activity with these domains is treated similarly to how internal organization activity is treated. For example, domains added here map to activities may involve sharing content with someone outside your organization (such as sending email to someone with a gmail.com address).
 
 - **Third party domains:** If your organization uses third-party domains for business purposes (such as cloud storage), include them here so you can receive alerts for potentially risky activity related to the device indicator *Use a browser to download content from a third-party site*.
- 
-### Sensitive info types exclusion (preview)
+
+### File path exclusions
+
+By defining file paths to exclude, user activities that map to specific indicators and that occur in these file path locations won't generate policy alerts. Some examples are copying or moving files to a system folder or network share path. You can enter up to 500 file paths for exclusion.
+
+To add file paths to exclude, complete the following steps:
+
+1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
+2. In the **File path exclusion** section, select **Add file paths to exclude**.
+3. On the **Add a file path** pane, enter an exact network share or device path to exclude from risk scoring. You can also use * and *([0-9]) to denote specific and wildcard folders and subfolders to be excluded. For more information, see the following examples:
+    - **\\\\ms.temp\LocalFolder\ or C:\temp**: Excludes files directly under the folder and all subfolders for every file path starting with the entered prefix.
+    - **\public\local\\**: Excludes files from every file path containing entered value. Matches with 'C:\Users\Public\local\\', 'C:\Users\User1\Public\local\', and '\\\\ms.temp\Public\local'.
+    - **C:\Users\\\*\Desktop**: C:\Users\\\*\Desktop: Wildcards are supported. Matches with 'C:\Users\user1\Desktop' and 'C:\Users\user2\Desktop'.
+    - **C:\Users\\\*(2)\Desktop**: Wildcards with numbers are supported. Matches with 'C:\Users\user1\user1\Desktop' and 'C:\Users\user2\Shared\Desktop'.
+
+4. Select **Add file paths** to exclude to configure the file path exclusions or **Close** to discard the changes. 
+
+To delete a file path exclusion, select the file path exclusion and select **Delete**.
+
+### Default file path exclusions
+
+By default, several file paths are automatically excluded from generating policy alerts. Activities in these file paths are typically benign and could potentially increase the volume of non-actionable alerts. If needed, you can cancel the selection for these default file path exclusions to enable risk scoring for activities in these locations.
+
+The default file path exclusions are:
+
+- \Users\\\*\AppData
+- \Users\\\*\AppData\Local
+- \Users\\\*\AppData\Local\Roaming
+- \Users\\\*\AppData\Local\Local\Temp
+
+The wildcards in these paths denote that all folder levels between the \Users and \AppData are included in the exclusion. For example, activities in *C:\Users\Test1\AppData\Local* and *C:\Users\Test2\AppData\Local*, *C:\Users\Test3\AppData\Local* (and so on) would all be included and not scored for risk as part of the *\Users\\\*\AppData\Local* exclusion selection.
+
+### Sensitive info type exclusions (preview)
 
 [Sensitive info types](sensitive-information-type-learn-about.md) excluded in settings map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. These excluded types will be treated as non-sensitive info types. For those files that contain any sensitive info types identified here, they'll be risk scored but not shown as activities involving content related to sensitive info types. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
@@ -287,37 +321,6 @@ To exclude trainable classifiers, complete the following steps:
 4. Select **Add** accept the changes or **Cancel** to discard the changes. 
 
 To delete a trainable classifiers exclusion, select the exclusion and **Delete**.
-
-### File path exclusions
-
-By defining file paths to exclude, user activities that map to specific indicators and that occur in these file path locations won't generate policy alerts. Some examples are copying or moving files to a system folder or network share path. You can enter up to 500 file paths for exclusion.
-
-To add file paths to exclude, complete the following steps:
-
-1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
-2. In the **File path exclusion** section, select **Add file paths to exclude**.
-3. On the **Add a file path** pane, enter an exact network share or device path to exclude from risk scoring. You can also use * and *([0-9]) to denote specific and wildcard folders and subfolders to be excluded. For more information, see the following examples:
-    - **\\\\ms.temp\LocalFolder\ or C:\temp**: Excludes files directly under the folder and all subfolders for every file path starting with the entered prefix.
-    - **\public\local\\**: Excludes files from every file path containing entered value. Matches with 'C:\Users\Public\local\\', 'C:\Users\User1\Public\local\', and '\\\\ms.temp\Public\local'.
-    - **C:\Users\\\*\Desktop**: C:\Users\\\*\Desktop: Wildcards are supported. Matches with 'C:\Users\user1\Desktop' and 'C:\Users\user2\Desktop'.
-    - **C:\Users\\\*(2)\Desktop**: Wildcards with numbers are supported. Matches with 'C:\Users\user1\user1\Desktop' and 'C:\Users\user2\Shared\Desktop'.
-
-4. Select **Add file paths** to exclude to configure the file path exclusions or **Close** to discard the changes. 
-
-To delete a file path exclusion, select the file path exclusion and select **Delete**.
-
-### Default file path exclusions
-
-By default, several file paths are automatically excluded from generating policy alerts. Activities in these file paths are typically benign and could potentially increase the volume of non-actionable alerts. If needed, you can cancel the selection for these default file path exclusions to enable risk scoring for activities in these locations.
-
-The default file path exclusions are:
-
-- \Users\\\*\AppData
-- \Users\\\*\AppData\Local
-- \Users\\\*\AppData\Local\Roaming
-- \Users\\\*\AppData\Local\Local\Temp
-
-The wildcards in these paths denote that all folder levels between the \Users and \AppData are included in the exclusion. For example, activities in *C:\Users\Test1\AppData\Local* and *C:\Users\Test2\AppData\Local*, *C:\Users\Test3\AppData\Local* (and so on) would all be included and not scored for risk as part of the *\Users\\\*\AppData\Local* exclusion selection.
 
 ### Site exclusions
 
@@ -376,7 +379,7 @@ To use the APIs to review insider risk alert information:
 
 ![Insider risk management export alert settings.](../media/insider-risk-settings-export.png)
 
-Alert information contains information from the Security and Compliance Alerts schema and the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-schema.md#security-and-compliance-alerts-schema) common schema.
+Alert information contains information from the Security and Compliance Alerts schema and the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema) common schema.
 
 The following fields and values are exported for insider risk management alerts for the Security and Compliance Alerts schema:
 

@@ -1,5 +1,5 @@
 ---
-title: Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
+title: Prerequisite work for implementing Zero Trust identity and device access policies
 description: This article describes the prerequisites you need to meet to use Zero Trust identity and device access policies and configurations.
 ms.author: dansimp
 author: dansimp

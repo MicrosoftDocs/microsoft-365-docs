@@ -11,6 +11,7 @@ ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+    - Tier1
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Learn about how to set up pay-as-you-go Azure billing for Microsoft Syntex and how to monitor your usage.
@@ -64,7 +65,7 @@ If you have not previously configured Microsoft Syntex, read [Set up Microsoft S
 
 ## Monitor your Microsoft Syntex pay-as-you-go usage
 
-You can monitor your Microsoft Syntex pay-as-you-go usage in Azure Cost Management. You must have at least *read* access to the resource group that you specified for Microsoft Syntex.
+You can monitor your Microsoft Syntex pay-as-you-go usage in Azure Cost Management. You must have at least *read* access to the resource group that you specified for Microsoft Syntex. Note that usage information may take up to 24 hours to appear in Cost Management.
 
 To see the charges applied to the Syntex meters
 1. Sign in to [Azure Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/overview).

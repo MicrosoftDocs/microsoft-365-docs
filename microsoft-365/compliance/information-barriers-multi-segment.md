@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.date: 03/07/2023
+ms.date: 03/09/2023
 ---
 
 # Use multi-segment support in information barriers
@@ -98,7 +98,7 @@ If the value of the `InformationBarrierMode` property is *Legacy*, enabling mult
 
 ## Enable multiple segment support for users
 
-To enable multi-segment support for organizations in *SingleSegment* mode, run the following cmdlet.
+To enable multiple segment support for organizations in *SingleSegment* mode, you must not have any IB segments or policies currently defined for your organization. Run the following cmdlet to enable multiple segment support in your organization:
 
 ```powershell
 Set-PolicyConfig -InformationBarrierMode 'MultiSegment'
