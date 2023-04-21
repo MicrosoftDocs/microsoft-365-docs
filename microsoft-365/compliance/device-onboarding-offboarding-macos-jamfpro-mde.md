@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 10/06/2020
+ms.date: 04/24/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -30,7 +30,6 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md)
 
-
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
@@ -53,8 +52,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 |MDE preference |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/schema/schema.json)
 
 
->
->If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
+>If any of these individual files is updated, you download the updated bundled file adn redeploy as described.
 
 ### Update the existing MDE Preference domain profile using the JAMF PRO console
 
@@ -70,18 +68,6 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 1. Choose the groups to deploy this configuration profile to.
 
 1. Choose **Save**. 
-
-### Update the configuration profile for Grant full disk access
-
-1. Update the existing full disk access profile with the **fulldisk.mobileconfig** file.
-
-1. Upload the **fulldisk.mobileconfig** file to JAMF. Refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
-
-### Grant accessibility access to DLP
-
-1. Use the accessibility.mobileconfig file you previously downloaded.
-
-1. Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### Check the macOS device 
 

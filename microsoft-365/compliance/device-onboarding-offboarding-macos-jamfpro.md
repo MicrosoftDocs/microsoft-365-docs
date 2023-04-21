@@ -5,7 +5,8 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/12/2023
+ms.date: 04/24
+/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,7 +19,7 @@ search.appverid:
 description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro
 ---
 
-# Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro
+# Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro #
 
 You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions like Endpoint data loss prevention.
 
@@ -32,13 +33,13 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions l
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Before you begin
+## Before you begin ##
 
 - Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through [JAMF Connect](https://www.jamf.com/products/jamf-connect) or Intune. 
 - The three most recent major releases of macOS are supported.
 - OPTIONAL: Install the v95+ Microsoft Edge browser on your macOS devices for native Endpoint DLP support on Microsoft Edge.
 
-## Onboard devices into Microsoft Purview solutions using JAMF Pro
+## Onboard devices into Microsoft Purview solutions using JAMF Pro ##
 
 Onboarding a macOS device into Microsoft Purview solutions is a multi-phase process:
 1. [Deploy onboarding packages](#deploy-onboarding-packages)
@@ -48,7 +49,7 @@ Onboarding a macOS device into Microsoft Purview solutions is a multi-phase proc
 5. [Deploy System Configuration Profiles](#deploy-system-configuration-profiles)
 6. [Upload the installation package](#upload-the-installation-package)
 
-### Prerequisites
+### Prerequisites ###
 
 Download the following files.
 
@@ -64,7 +65,7 @@ Download the following files.
 
 [!INCLUDE [devices-macos-onboarding-tip](../includes/devices-macos-onboarding-tip.md)]
 
-### Get the device onboarding and installation packages
+### Get the device onboarding and installation packages ###
 :::image type="content" source="../media/device-macos-dnld-install-package-inline.png" alt-text="Screenshot of the Microsoft Intune Configuration settings tab with all fields populated." lightbox="../media/device-macos-dnld-install-package-expanded.png":::
 
 1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
@@ -77,7 +78,7 @@ Download the following files.
 
 5. Choose **Download installation package**
 
-### Deploy onboarding packages
+### Deploy onboarding packages ###
 
 1. Create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: *MDATP onboarding for macOS*
@@ -104,7 +105,7 @@ Download the following files.
 
 10. Choose **Done**.
 
-### Configure application preferences
+### Configure application preferences ###
 
 > [!IMPORTANT]
 > You must use ***com.microsoft.wdav*** as the **Preference Domain** value. Microsoft Defender for Endpoint uses this name and `com.microsoft.wdav.ext`***` to load its managed settings.
@@ -150,7 +151,7 @@ Download the following files.
  
 2. Select the `mdatp-nokext.mobileconfig` file, choose **Open** and then choose **Upload**.
 
-## Upload the installation package
+## Upload the installation package ##
 
 1. In the JAMF Pro console, navigate to **Management Settings** > **Packages** and then choose **New**.
  
@@ -172,7 +173,7 @@ Download the following files.
  
 10. On the **General** page, enter a name for the new policy.
 
-## Offboard macOS devices using JAMF Pro
+## Offboard macOS devices using JAMF Pro ##
 
 1. If not using MDE, uninstall the application.  See the Package Deployment section in the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/).
 
