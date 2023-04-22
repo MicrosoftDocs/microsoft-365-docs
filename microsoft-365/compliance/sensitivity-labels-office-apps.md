@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/11/2023
+ms.date: 04/22/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -66,9 +66,9 @@ If both of these conditions are met but you need to turn off the built-in labels
 
 1. Navigate to **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**.
 
-2. Set **Use the Sensitivity feature in Office to apply and view sensitivity labels** to **0**.
+2. Set **Use the Sensitivity feature in Office to apply and view sensitivity labels** to 0 by selecting **Disabled**.
 
-If you later need to revert this configuration, change the value to **1**. You might also need to change this value to 1 if the **Sensitivity** button isn't displayed on the ribbon as expected. For example, a previous administrator turned this labeling setting off.
+If you later need to revert this configuration, change the value to 1 by selecting **Enabled**. You might also need to change enable this setting if the **Sensitivity** button isn't displayed on the ribbon as expected. For example, a previous administrator turned this labeling setting off.
  
 Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service). The setting takes effect when these Office apps restart. 
 
@@ -494,7 +494,7 @@ For end user documentation, see [Create protected PDFs from Office files](https:
 
 ### Disabling PDF support
 
-If you need to disable the PDF support in Office apps for Word, Excel, and PowerPoint, you can do so by using an Office setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Microsoft Save As PDF and Save As XPS add-ins**:
+If you need to disable the PDF support in Office apps for Word, Excel, and PowerPoint, you can do so by using a Group Policy Office setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Microsoft Save As PDF and Save As XPS add-ins**:
 
 - **Use the Sensitivity feature in Office to apply sensitivity labels to PDFs**
 
