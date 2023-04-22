@@ -367,9 +367,10 @@ The available context options change depending on which location you choose. If 
 - Document created by
 - Document created by member of
 - Document name contains words or phrases
-- Document size over
+- Document size equals or is greater than
 - Document property is
 - File extension is
+- Document is shared
 
 ##### Conditions Teams chat and channel messages supports
 
