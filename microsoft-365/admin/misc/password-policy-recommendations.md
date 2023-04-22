@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -30,6 +31,8 @@ description: "Make your organization more secure against password attacks, and b
 ---
 
 # Password policy recommendations for Microsoft 365 passwords
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 As the admin of an organization, you're responsible for setting the password policy for users in your organization. Setting the password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
 

@@ -78,29 +78,17 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
 
   > [!NOTE]
-  > Only admins and users who have "Manage Portal Settings" permissions can enable live response. 
-  >
-  > Automated Investigation must be enabled in the [Advanced features settings](advanced-features.md) prior to enabling live response.
+  > Only admins and users who have "Manage Portal Settings" permissions can enable live response.
 
 - **Enable live response for servers from the advanced settings page** (recommended).
 
   > [!NOTE]
   > Only admins and users who have "Manage Portal Settings" permissions can enable live response.
 
-- **Ensure that the device has an Automation Remediation level assigned to it**.
-
-  You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
-  > [!NOTE]
-  > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2. 
-
-  You'll receive the following error:
-
-  :::image type="content" source="images/live-response-error.png" alt-text="The error message" lightbox="images/live-response-error.png":::
-
 - **Enable live response unsigned script execution** (optional).
 
-  >[!IMPORTANT]
-  >Signature verification only applies for PowerShell scripts.
+  > [!IMPORTANT]
+  > Signature verification only applies for PowerShell scripts.
 
   > [!WARNING]
   > Allowing the use of unsigned scripts may increase your exposure to threats.
@@ -221,10 +209,6 @@ To enable your security operations team to continue investigating an impacted de
 - To bring a file download to the foreground, in the live response command console, type `fg <command_id>`.
 
 Here are some examples:
-
-<br>
-
-****
 
 |Command|What it does|
 |---|---|

@@ -5,6 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
+ms.date: 03/18/2022
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
@@ -53,4 +54,3 @@ Follow these steps to rename a model.
 ## See also
 
 [Delete a model](delete-a-model.md)
-

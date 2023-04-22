@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -30,6 +31,8 @@ description: Learn about the requirements and considerations for making the move
 ---
 
 # Plan your setup of Microsoft 365 for business
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
@@ -179,4 +182,4 @@ For larger organizations or if you're starting from Skype for Business, on-premi
 
 ## See also
 
-[Best practices for securing Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
+[Secure your business data with Microsoft 365 for business](../../business-premium/secure-your-business-data.md)

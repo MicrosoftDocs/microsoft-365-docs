@@ -1,6 +1,7 @@
 ---
 title: "Prevent guests from being added to a specific group"
 ms.reviewer: arvaradh
+ms.date: 08/12/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars

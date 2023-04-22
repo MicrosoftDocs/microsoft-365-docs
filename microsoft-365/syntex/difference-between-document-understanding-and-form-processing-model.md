@@ -4,6 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: lauris
+ms.date: 10/12/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -37,5 +38,3 @@ Use the following table to see differences in custom models to help identify the
 ## See also
 
 [Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)
-
-

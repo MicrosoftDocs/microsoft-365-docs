@@ -4,6 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 10/12/2022
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
@@ -49,4 +50,3 @@ For information about requirements to consider when choosing this model, see [Re
 [Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md)
 
  
-

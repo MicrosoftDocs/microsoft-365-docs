@@ -4,6 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 01/21/2021
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -82,6 +83,3 @@ After a string is labeled or a label has been removed in the viewer, Narrator au
 
   
   
-
-
-

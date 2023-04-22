@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
-ms.collection: 
+ms.collection:
 - m365-security
 - tier3
 description: Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security.
@@ -53,7 +53,7 @@ To learn more about Microsoft 365 Apps update channels, see [Overview of update 
 
 ### Enable Application Guard for Office
 
-1. If you're running Windows 10, download and install **Windows 10 cumulative monthly security updates KB4571756**. Note that if you're running Windows 11, you don't need to download and install the security update. Simply follow the rest of the process steps. 
+1. If you're running Windows 10, download and install **Windows 10 cumulative monthly security updates KB4571756**. Note that if you're running Windows 11, you don't need to download and install the security update. Simply follow the rest of the process steps.
 
 2. Select **Microsoft Defender Application Guard** under Windows Features and select **OK**. Enabling the Application Guard feature will prompt a system reboot. You can choose to reboot now or after step 3.
 
@@ -65,7 +65,7 @@ To learn more about Microsoft 365 Apps update channels, see [Overview of update 
    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
    ```
 
-3. From the Group Policy Editor window, expand **Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Application Guard**. Enable the **Turn on Microsoft Defender Application Guard in Managed Mode** setting. Set the value under Options as **2** or **3**. 
+3. From the Group Policy Editor window, expand **Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Application Guard**. Enable the **Turn on Microsoft Defender Application Guard in Managed Mode** setting. Set the value under Options as **2** or **3**.
 
    :::image type="content" source="../../media/ag04-deploy.png" alt-text="The option to turn on AG in Managed Mode" lightbox="../../media/ag04-deploy.png":::
 
@@ -92,7 +92,7 @@ For more on configuring Windows diagnostic settings, refer to [Configuring Windo
 
 ### Confirm that Application Guard for Office is enabled and working
 
-Before confirming that Application Guard for Office is enabled: 
+Before confirming that Application Guard for Office is enabled:
 
 1. Launch Word, Excel, or PowerPoint on a device where the policies have been deployed.
 
@@ -179,7 +179,7 @@ If you encounter any issues when launching Application Guard for Office, you're 
 
 ### Submit feedback via One Customer Voice
 
-You may also submit feedback from within Word, Excel, and PowerPoint if the issue happens when files are opened in Application Guard. Refer to [Provide feedback](https://insider.office.com/en-us/handbook#Provide-feedback) for detailed guidance.
+You may also submit feedback from within Word, Excel, and PowerPoint if the issue happens when files are opened in Application Guard. Refer to [Provide feedback](https://insider.office.com/handbook#Provide-feedback) for detailed guidance.
 
 ## Integration with Microsoft Defender for Endpoint and Microsoft Defender for Office 365
 

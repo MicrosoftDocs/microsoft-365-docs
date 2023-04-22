@@ -1,11 +1,12 @@
 ---
-title: "Set up eDiscovery (Premium) in Microsoft Purview"
-description: "This article describes how to set up eDiscovery (Premium) so you can start creating and managing cases. It also describes the required Microsoft subscriptions and licensing. After you complete a few quick steps, the eDiscovery (Premium) tool is ready to use."
+title: "Get started with eDiscovery (Premium)"
+description: "This article describes how to get started eDiscovery (Premium) so you can start creating and managing cases. It also describes the required Microsoft subscriptions and licensing. After you complete a few quick steps, the eDiscovery (Premium) tool is ready to use."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 04/11/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -24,7 +25,7 @@ search.appverid:
 - MET150
 ---
 
-# Set up Microsoft Purview eDiscovery (Premium)
+# Get started with eDiscovery (Premium)
 
 Microsoft Purview eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Nothing is needed to deploy eDiscovery (Premium), but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start to create and use eDiscovery (Premium) cases to manage your investigations.
 
@@ -47,17 +48,11 @@ To access eDiscovery (Premium) or added as a member of an eDiscovery (Premium) c
 Complete the following steps to add users to the eDiscovery Manager role group:
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">compliance portal</a>and sign in using the credentials for an admin account in your Microsoft 365 organization.
-
 2. On the **Permissions** page, select the **eDiscovery Manager** role group.
-
 3. On the eDiscovery Manager flyout page, select **Edit** next to the **eDiscovery Manager** section.
-
 4. On the **Choose eDiscovery Manager** page in the edit role group wizard, select **Choose eDiscovery Manager**.
-
 5. Select **Add** then select the checkbox for all users you want to add to the role group.
-
 6. Select **Add** to add the selected users, and then select **Done**.
-
 7. Select **Save** to add the users to the role group, and then select **Close** to complete the step.
 
 ### More information about the eDiscovery Manager role group

@@ -56,7 +56,7 @@ During the root investigation phase, various aspects of the email are assessed. 
 - Whether the email is associated with any known campaigns;
 - and more.
 
-After the root investigation is complete, the playbook provides a list of recommended actions to take on the original email and entities associated with it.
+After the root investigation is complete, the playbook provides a list of recommended actions to take on the original email and the _entities_ associated with it (for example, files, URLs, and recipients).
 
 Next, several threat investigation and hunting steps are executed:
 

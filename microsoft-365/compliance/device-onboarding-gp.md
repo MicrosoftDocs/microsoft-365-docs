@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 10/06/2020
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp

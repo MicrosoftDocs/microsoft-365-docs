@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint on iOS threat information is leveraged by Intune
 Microsoft Defender for Endpoint on iOS supports both the configurations of MAM
 - **Intune MDM + MAM**: IT administrators can only manage apps using App Protection Policies on devices that are enrolled with Intune mobile device management (MDM).
 - **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using [App Protection Policies](/mem/intune/apps/app-protection-policy) on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. 
-To manage apps using in both the above configurations customers should use Intune in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
+To manage apps using in both the above configurations customers should use Intune in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
 
 To enable this capability an administrator needs to configure the connection between Microsoft Defender for Endpoint and Intune, create the app protection policy, and apply the policy on targeted devices and applications. 
  
@@ -56,7 +56,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
   :::image type="content" source="images/enable-intune-connection.png" alt-text="The Defender for Endpoint - Intune connector" lightbox="images/enable-intune-connection.png":::
 
   
-2. **Verify that the connector is enabled on the Intune portal**. <br> In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** > **Microsoft Defender for Endpoint** and ensure that the Connection status is enabled.
+2. **Verify that the connector is enabled on the Intune portal**. <br> In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** > **Microsoft Defender for Endpoint** and ensure that the Connection status is enabled.
 
   :::image type="content" source="images/app-settings.png" alt-text="The application settings" lightbox="images/app-settings.png":::
 

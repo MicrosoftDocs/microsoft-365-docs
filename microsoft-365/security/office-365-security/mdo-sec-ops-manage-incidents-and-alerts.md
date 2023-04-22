@@ -33,7 +33,7 @@ An [incident](/microsoft-365/security/defender/incidents-overview) in Microsoft 
 
 Alerts are created when malicious or suspicious activity affects an entity (for example, email, users, or mailboxes). Alerts provide valuable insights about in-progress or completed attacks. However, an ongoing attack can affect multiple entities, which results in multiple alerts from different sources. Some built-in alerts will automatically trigger AIR playbooks. These playbooks do a series of investigation steps to look for other impacted entities or suspicious activity.
 
-Watch this short video on how to manage Microsoft Defender for Office 365 alerts in Microsoft 365 Defender.  
+Watch this short video on how to manage Microsoft Defender for Office 365 alerts in Microsoft 365 Defender.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGrL2]
 
 Defender for Office 365 alerts, investigations, and their data are automatically correlated. When a relationship is determined, an incident is created by the system to give security teams visibility for the entire attack.
@@ -128,5 +128,6 @@ The most effective way to take action is to use the built-in integration with In
 
 You take action on email based on the result of a manual investigation or hunting activity. [Threat Explorer](threat-explorer-about.md) allows security team members to take action on any email messages that might still exist in cloud mailboxes. They can take action on intra-org messages that were sent between users in your organization. Threat Explorer data is available for the last 30 days.
 
-Watch this short video to learn how Microsoft 365 Defender combines alerts from various detection sources, like Defender for Office 365, into incidents. 
+Watch this short video to learn how Microsoft 365 Defender combines alerts from various detection sources, like Defender for Office 365, into incidents.
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGpcs]
