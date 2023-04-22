@@ -116,7 +116,7 @@ For your Windows Office apps that support built-in labeling, use the configurati
 |PowerPoint|`MSIP.PowerPointAddin`|
 |Outlook|`MSIP.OutlookAddin`|
 
-Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
+Deploy this setting by using Group Policy and [Microsoft 365 Apps for enterprise administrative templates](https://www.microsoft.com/en-us/download/details.aspx?id=49030), or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!IMPORTANT]
 > If you use the Office policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** and set this to **Enabled**, there are some situations where the AIP add-in might still load in Office apps. Blocking the add-in from loading in each app prevents this happening.
