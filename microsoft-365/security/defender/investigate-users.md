@@ -131,8 +131,10 @@ You can choose a timeframe to focus your investigation on the last 24 hours, the
 ![Choose time frame.](media/investigate-users/image.png)
 
 - Timeline filters:
-In order to improve your investigation experience, you can you the timeline filters:   
-1. Type: What date types should be displaed; Alerts or User's related activities. 
+In order to improve your investigation experience, you can you the timeline filters: Type (Alerts and/or user's related activities), Alert severity, Activity type, App, Location, Protocol. Each filter depends on the others, and the options in each filter (drop-down) only contains the data that is relevant for the specific user. 
+- Export button:
+You can export the timeline to a CSV file. Export is limited to the first 5000 records and contains the data as it displays in the UI (same filters and columns). 
+- Customized columns:
 ### What data types are available?
 
 The following data types are available in the timeline:
