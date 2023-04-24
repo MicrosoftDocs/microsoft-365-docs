@@ -115,7 +115,8 @@ Use the following query for devices tagged with the reason **This device receive
 // Input:
 // DeviceId – the device ID that you want to investigate.
 // The function will return the last 7 days of data.
-    InboundExternalNetworkEvents(“<DeviceId>”)
+
+InboundExternalNetworkEvents(“<DeviceId>”)
 ```
 
 >[!Note]
