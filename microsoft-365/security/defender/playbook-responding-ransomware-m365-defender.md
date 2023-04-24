@@ -14,6 +14,7 @@ ms.localizationpriority:   medium
 ms.collection: 
   - zerotrust-solution
   - msftsolution-secops
+  - tier1
 f1.keywords:               NOCSH
 ---
 # Responding to ransomware attacks
