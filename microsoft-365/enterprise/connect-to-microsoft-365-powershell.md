@@ -3,6 +3,7 @@ title: "Connect to Microsoft 365 with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise

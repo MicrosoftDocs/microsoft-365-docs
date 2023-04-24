@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/15/2022
 ---
 
 # Get scan history by definition
@@ -26,13 +27,14 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
+> Want to experience Microsoft Defender Vulnerability Management? Find out how to [sign up for a free trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
@@ -65,7 +67,7 @@ Delegated (work or school account)|Machine.Read.All|Read all scan information.
 ## HTTP request
 
 ```http
-POST api/DeviceAuthenticatedScanDefinitions/ScanHistoryByScanDefinitionId
+POST api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId
 ```
 
 ## Request headers
@@ -92,12 +94,12 @@ If successful, this method returns 200 - OK response code with a list of the sca
 Here is an example of the request.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryByScanDefinitionId
+POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId
 ```
 
 ```json
 {
-    "ScanDefinitionId": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae", "60c4aa57-c573-4488-8d18-230914792a92", "c6220f67-2cad-4ba3-a2fa-7ded6384da56"]
+    "ScanDefinitionIds": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae", "60c4aa57-c573-4488-8d18-230914792a92", "c6220f67-2cad-4ba3-a2fa-7ded6384da56"]
 }
 ```
 
@@ -105,22 +107,22 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ```json
 {
-"@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryByScanDefinitionId",
+"@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId",
     "value": [
     {
-    "ScanDefinitionId": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
+    "ScanDefinitionIds": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
     "LastScanned": "2022-12-20T11:14:24.5561791Z",
     "ScanStatus": "Partial Success",
     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
     },
     {
-    "ScanDefinitionId": "60c4aa57-c573-4488-8d18-230914792a92",
+    "ScanDefinitionIds": "60c4aa57-c573-4488-8d18-230914792a92",
     "LastScanned": "2022-11-17T15:13:24.5561791Z",
     "ScanStatus": "Partial Success",
     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
     },
     {
-    "ScanDefinitionId": "c6220f67-2cad-4ba3-a2fa-7ded6384da56",
+    "ScanDefinitionIds": "c6220f67-2cad-4ba3-a2fa-7ded6384da56",
     "LastScanned": "2022-11-10T18:15:24.5561791Z",
     "ScanStatus": "Partial Success",
     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -88,6 +89,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 |Sent to member of|condition: *SentToMemberOf* <br/><br/> exception: *ExceptIfSentToMemberOf*|Addresses|Messages that contain recipients who are members of the specified distribution group, mail-enabled security group, or Microsoft 365 group. The group can be in the **To**, **Cc**, or **Bcc** fields of the message.|
 |The recipient's specified properties include any of these words |*RecipientADAttributeContainsWords* <br/><br/> *ExceptIfRecipientADAttributeContainsWords*|First property: `ADAttribute` <br/><br/> Second property: `Words`|Messages where the specified Active Directory attribute of a recipient contains any of the specified words. <br/><br/> Note that the **Country** attribute requires the two-letter country code value (for example, DE for Germany).|
 |The recipient's specified properties match these text patterns |*RecipientADAttributeMatchesPatterns* <br/><br/> *ExceptIfRecipientADAttributeMatchesPatterns*|First property: `ADAttribute` <br/><br/> Second property: `Patterns`|Messages where the specified Active Directory attribute of a recipient contains text patterns that match the specified regular expressions.|
+|Recipient scope/Content is shared with|condition: *AccessScope* <br/><br/> exception: *ExceptIfAccessScope*|UserScopeFrom|Messages that are received by either internal or external recipients.|
 
 ### Message subject or body
 
@@ -98,7 +100,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 |Content contains|condition: *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Messages or documents that contain sensitive information as defined by Microsoft Purview Data Loss Prevention (DLP) policies.|
 |Subject or Body matches pattern|condition: *SubjectOrBodyMatchesPatterns* <br/> exception: *ExceptIfSubjectOrBodyMatchesPatterns*|Patterns|Messages where the subject field or message body contains text patterns that match the specified regular expressions.|
 |Subject or Body contains words|condition: *SubjectOrBodyContainsWords* <br/> exception: *ExceptIfSubjectOrBodyContainsWords*|Words|Messages that have the specified words in the subject field or message body|
-|
+
 
 ### Attachments
 
@@ -109,7 +111,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 |Any email attachment's content could not be scanned|condition: *DocumentIsUnsupported* <br/><br/>exception: *ExceptIf DocumentIsUnsupported*|n/a|Messages where an attachment isn't natively recognized by Exchange Online.|
 |Any email attachment's content didn't complete scanning|condition: *ProcessingLimitExceeded* <br/><br/> exception: *ExceptIfProcessingLimitExceeded*|n/a|Messages where the rules engine couldn't complete the scanning of the attachments. You can use this condition to create rules that work together to identify and process messages where the content couldn't be fully scanned.|
 |Document name contains words|condition: *DocumentNameMatchesWords* <br/><br/> exception: *ExceptIfDocumentNameMatchesWords*|Words|Messages where an attachment's file name matches any of the specified words.|
-|Document name matches patterns|condition: *DocumentNameMatchesPatterns* <br/><br/> exception: *ExceptIfDocumentNameMatchesPatterns*|Patterns|Messages where an attachment's file name contains text patterns that match the specified regular expressions.|
+|Document name matches patterns|condition: *DocumentNameMatchesPatterns* <br/><br/> exception: *ExceptIfDocumentNameMatchesPatterns*|Patterns|Messages where an attachment's file name contains text patterns that match the specified regular expressions. This is discontinued for SharePoint and OneDrive workloads. Existing rules can't be modified and new rules can't be created. Existing customers can continue to use this condition.|
 |Document property is|condition: *ContentPropertyContainsWords* <br/><br/> exception: *ExceptIfContentPropertyContainsWords*|Words|Messages with documents where an attachment's custom property matches the given value.|
 |Document size equals or is greater than|condition: *DocumentSizeOver* <br/><br/> exception: *ExceptIfDocumentSizeOver*|Size|Messages where any attachment is greater than or equal to the specified value.|
 |Any attachment's content includes any of these words|condition: *DocumentContainsWords* <br/><br/> exception: *ExceptIfDocumentContainsWords*|`Words`|Messages where an attachment contains the specified words.|
@@ -138,6 +140,7 @@ This table describes the actions that are available in DLP.
 
 |action in DLP|action parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
+|Restrict access or encrypt content in Microsoft 365 locations|BlockAccess|First property: *Boolean* <br/><br/> Second property: *BlockAccessScope*|This will allow you to block the access or encrypt the content to the specified users.|
 |Set header|SetHeader|First property: *Header Name* <br/><br/> Second property: *Header Value*|The SetHeader parameter specifies an action for the DLP rule that adds or modifies a header field and value in the message header. This parameter uses the syntax "HeaderName:HeaderValue". You can specify multiple header name and value pairs separated by commas|
 |Remove header|RemoveHeader|First property: *MessageHeaderField*<br/><br/> Second property: *String*|The RemoveHeader parameter specifies an action for the DLP rule that removes a header field from the message header. This parameter uses the syntax "HeaderName" or "HeaderName:HeaderValue".You can specify multiple header names or header name and value pairs separated by commas|
 |Redirect the message to specific users|*RedirectMessageTo*|Addresses|Redirects the message to the specified recipients. The message isn't delivered to the original recipients, and no notification is sent to the sender or the original recipients.|

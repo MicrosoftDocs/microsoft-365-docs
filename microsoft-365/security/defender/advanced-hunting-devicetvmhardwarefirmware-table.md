@@ -20,6 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
+ms.date: 11/24/2022
 ---
 
 # DeviceTvmHardwareFirmware

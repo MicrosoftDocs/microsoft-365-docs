@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -43,7 +44,7 @@ You can access detailed reports for each area by selecting the data tables. You 
 
 The executive summary is a high-level, at-a-glance view of Microsoft 365 for Business adoption, usage, mobility, communication, collaboration, and storage reports, and is meant for business decision makers. It provides a view into how some individual services are being used, based on all the users who have been enabled and those who are active. All values of the month shown on the report refer to the latest complete month. 
 
-This summary lets you quickly understand usage patterns in Office and how and where your employees are collaborating.
+This summary lets you quickly understand usage patterns in Microsoft 365 and how and where your employees are collaborating.
 
 ![Image of the Microsoft 365 usage executive summary.](../../media/office365usage-exec-summary.png)
 
@@ -65,9 +66,9 @@ The Microsoft 365 overview report contains the following reports. You can view t
 
 ## Activation and licensing
 
-The activation and license page offers reports on Microsoft 365 activation; that is, how many users have downloaded and activated Office apps and how many licenses have been assigned by your organization. The month value towards the top refers to the current month, and the metrics reflect values aggregated from the beginning of the month to the current date.
+The activation and license page offers reports on Microsoft 365 activation; that is, how many users have downloaded and activated Microsoft 365 apps and how many licenses have been assigned by your organization. The month value towards the top refers to the current month, and the metrics reflect values aggregated from the beginning of the month to the current date.
 
-- **Activation** &ndash; Track service plan (for example, Microsoft 365 Apps for enterprise, Project, and Visio) activations in your organization. Each person with an Office license can install products on up to five devices. You can also use reports in this section to see the devices on which people have installed Office apps. Note that to activate a plan, a user must install the app and sign in with their account.
+- **Activation** &ndash; Track service plan (for example, Microsoft 365 Apps for enterprise, Project, and Visio) activations in your organization. Each person with a Microsoft 365 license can install products on up to five devices. You can also use reports in this section to see the devices on which people have installed Microsoft 365 apps. Note that to activate a plan, a user must install the app and sign in with their account.
 
 - **Licensing** &ndash; This report contains an overview of license types, the count of users who were assigned each license type, and the license assignment distribution for each month. The month value towards the top refers to the current month, and the metrics reflect values aggregated from the beginning of the month to the current date.
 

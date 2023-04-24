@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 01/03/2023
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - tier1
 ms.custom:
@@ -94,4 +94,4 @@ To find the Intune setting, sign in with your Microsoft 365 Business Premium adm
 
 ## See also
 
-[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](secure-your-business-data.md)

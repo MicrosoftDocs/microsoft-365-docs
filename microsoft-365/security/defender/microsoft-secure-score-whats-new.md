@@ -22,6 +22,7 @@ search.appverid:
 ms.custom: 
   - seo-marvel-apr2020
   - seo-marvel-jun2020
+ms.date: 02/16/2021
 ---
 
 # What's new in Microsoft Secure Score

@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: prkalid, vijayav
+ms.reviewer: emmasheridan, vijayav
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business

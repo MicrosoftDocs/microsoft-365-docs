@@ -6,6 +6,7 @@ summary: This solution and architecture center brings together the technical gui
 metadata:
   title: Microsoft 365 solution and architecture center # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: This help center will enable you to learn about IT training and how to design the solution and architecture that is right for your organization. # Required; article description that is displayed in search results. < 160 chars.
+  ms.date: 05/01/2020
   ms.service: o365-solutions
  #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
@@ -16,7 +17,6 @@ metadata:
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   manager: bcarter
   audience: ITPro
-  ms.date: 03/23/2022
   ms.localizationpriority: high
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -36,8 +36,8 @@ landingContent:
             url: setup-secure-collaboration-with-teams.md
           - text: Deploy ransomware protection 
             url: ransomware-protection-microsoft-365.md
-          - text: Deploy information protection for data privacy regulations 
-            url: information-protection-deploy.md
+          - text: Manage data privacy and data protection
+            url: data-privacy-protection.md
           - text: Microsoft 365 for smaller businesses and campaigns
             url: ../business-premium/index.md
 
