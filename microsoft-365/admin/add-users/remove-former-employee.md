@@ -39,9 +39,6 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" This article series explains how to block access to Microsoft 365 so these users can't sign in to Microsoft 365, the steps you should take to secure organization data, and how to allow other employees to access email and OneDrive data.
 
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Before you begin
 
 You need to be a global administrator to complete the steps in this solution.
@@ -96,6 +93,15 @@ When an employee leaves the company, you'll need to remove them from Microsoft 3
 1. Review your results, and select **Close**.
 
 After you remove a user, you have up to 30 days to restore their account.
+ 
+## Does your organization use Active Directory?
+
+If your organization synchronizes user accounts to Microsoft 365 from a local Active Directory environment, you must delete and restore those user accounts in your local Active Directory service. You can't delete or restore them in Microsoft 365.
+
+To learn how to delete and restore user account in Active Directory, see [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
+  
+If you're using Azure Active Directory, see the [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet.
+  
 ## Related content
 
 [Restore a user](restore-user.md) (article)\

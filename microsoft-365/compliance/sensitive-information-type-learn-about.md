@@ -201,7 +201,7 @@ You can choose from several options to create custom sensitive information types
 
 ## Provide match/not a match accuracy feedback in sensitive info types
 
-You can view the number of matches a SIT has in **Sensitive info types** and **Content explorer**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your SITs. See, [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) for more information. 
+You can view the number of matches a SIT has in **Sensitive info types** and **Content explorer**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your SITs. See, [Increase classifier accuracy](data-classification-increase-accuracy.md) for more information. 
 
 
 ## For further information

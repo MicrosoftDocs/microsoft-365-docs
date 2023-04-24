@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/21/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -104,13 +104,11 @@ When creating assessments, you’ll assign them to a group. You can configure gr
 
 ### Templates
 
-Compliance Manager provides templates to help you quickly create assessments. You can modify these templates to create an assessment optimized for your needs. You can also build a custom assessment by creating a template with your own controls and actions. For example, you may want a template to cover an internal business process control, or a regional data protection standard that isn’t covered by one of our 325+ pre-built assessment templates.
-
-##### Learn more
+Compliance Manager provides over 350 templates to help you quickly create assessments.
 
 [View the list of assessment templates provided by Compliance Manager](compliance-manager-templates-list.md).
 
-[Get detailed instructions for creating and modifying templates for assessments](compliance-manager-templates.md).
+[Learn more about assessment templates](compliance-manager-templates.md).
 
 ### Improvement actions
 
