@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/10/2023
+ms.date: 04/28/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -241,7 +241,7 @@ Keep the following things in mind when searching and exporting content in multi-
 
 ## Using compliance boundaries for SharePoint hub sites
 
-[SharePoint hub sites](/sharepoint/dev/features/hub-site/hub-site-overview) often align with the same geographical or agency boundaries that eDiscovery compliance boundaries follow. That means you can use the site ID property of the hub site to create a compliance boundary. To do this, use the [Get-SPOHubSite](/powershell/module/sharepoint-online/get-spohubsite#examples) cmdlet in SharePoint Online PowerShell to obtain the SiteId for the hub site and then use this value for the department ID property to create a search permissions filter.
+[SharePoint hub sites](/sharepoint/dev/features/hub-site/hub-site-overview) often align with the same geographical or agency boundaries that eDiscovery compliance boundaries follow. That means you can use the site ID property of the hub site to create a compliance boundary. To do this, use the [Get-SPOHubSite](/powershell/module/sharepoint-online/get-spohubsite#examples) cmdlet in SharePoint Online PowerShell to obtain the SiteId for the hub site, and then use this value for the department ID property to create a search permissions filter.
 
 Use the following syntax to create a search permissions filter for a SharePoint hub site:
 
@@ -263,7 +263,20 @@ Keep the following limitations in mind when managing eDiscovery cases and invest
 - Compliance boundaries don't apply to holds in eDiscovery cases. That means an eDiscovery manager in one agency can place a user in a different agency on hold. However, the compliance boundary will be enforced if the eDiscovery manager searches the content locations of the user who was placed on hold. That means the eDiscovery manager won't be able search the user's content locations, even though they were able to place the user on hold.
 - If you're assigned a search permissions filter (either a mailbox or a site filter) and you try to export unindexed items for a search that includes all SharePoint sites in your organization, you'll receive the following error message: `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied`. If you're assigned a search permissions filter and you want to export unindexed items from SharePoint, you'll have to rerun the search and include specific SharePoint sites to search. Otherwise, you'll only be able to export indexed items from a search that includes all SharePoint sites. For more information about the options when you export search results, see [Export Content search results](export-search-results.md#step-1-prepare-search-results-for-export).
 - Search permissions filters aren't applied to Exchange public folders.
-- Respect for compliance boundaries for OneDrive and SharePoint sites in content searches may be impacted when the sites (or associated mailboxes) are moved or re-homed. Moving OneDrive or SharePoint content can change the ownership of the content and may include creating an arbitration mailbox. When these resources are moved, there's a chance that content search results may be available across compliance boundaries. Additionally, there are several types of mailboxes that may produce content during search, regardless of their compliance boundaries. These mailbox types are:
+- Respect for compliance boundaries for OneDrive and SharePoint sites in content searches may be impacted when:
+
+    - The sites (or associated mailboxes) are moved or re-homed
+    - OneDrive ownership is re-assigned, or more than one owner is added
+    - The OneDrive site is renamed/re-issued
+  
+    Moving OneDrive or SharePoint content can change the ownership of the content and may include creating an arbitration mailbox. When these resources are moved, there's a chance that content search results may be available across compliance boundaries. When a OneDrive site is re-assigned, re-named or assigned to more than one owner, it's possible that the content from these sites may be available across compliance boundaries.
+
+- Compliance Boundaries for mailboxes may be impacted when:
+
+     - The mailbox isn't associated with a licensed user
+     - A mailbox isn't managed or synced from Azure Active Directory
+
+    Additionally, there are several types of mailboxes that may produce content during search, regardless of their compliance boundaries. These mailbox types are:
 
     - DisabledUser
     - EquipmentMailbox
