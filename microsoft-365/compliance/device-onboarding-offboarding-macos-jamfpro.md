@@ -46,6 +46,7 @@ Onboarding a macOS device into Microsoft Purview solutions is a multi-phase proc
 1. [Deploy onboarding packages](#deploy-onboarding-packages)
 2. [Configure application preferences](#configure-application-preferences)
 3. [Upload the installation package](#upload-the-installation-package)
+4. [Deploy System Configuration Profiles ###](#deploy-system-configuration-profiles-)
 
 ### Prerequisites ###
 
@@ -72,7 +73,7 @@ Download the following files.
 
 3. For **Deployment method**, choose **Mobile Device Management/Microsoft Intune**.
 
-4. Choose **Download onboarding package** and then extract the contents of the device onboarding package. the *DeviceComplainceOnboarding.plist* file is downloaded to the JAMF folder.
+4. Choose **Download onboarding package** and then extract the contents of the device onboarding package. the *DeviceComplianceOnboarding.plist* file is downloaded to the JAMF folder.
 
 5. Choose **Download installation package**.
 
@@ -170,6 +171,8 @@ Download the following files.
 9. Choose the **Scope** tab and then target computers before choosing choose **Save**.
  
 10. On the **General** page, enter a name for the new policy.
+
+
 
 ## Offboard macOS devices using JAMF Pro ##
 

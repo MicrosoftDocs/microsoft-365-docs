@@ -19,7 +19,7 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 ---
 # Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
 
-You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
+You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions. 
 
 > [!IMPORTANT]
 > Use this procedure ***if you have*** deployed Microsoft Defender for Endpoint (MDE) to your macOS devices
@@ -44,6 +44,11 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
 
 Onboarding a macOS device into Compliance solutions is a multiphase process.
 
+1. [Update the existing MDE Preference domain profile using the JAMF PRO console ###](#update-the-existing-mde-preference-domain-profile-using-the-jamf-pro-console-)
+1. [Enable full-disk access ###](#enable-full-disk-access-)
+1. [Enable accessibility access to Microsoft Purview data loss prevention ###](#enable-accessibility-access-to-microsoft-purview-data-loss-prevention-)
+1. [Check the macOS device ###](#check-the-macos-device-)
+
 ### Prerequisites ###
 
 Download the following files:
@@ -63,12 +68,12 @@ If any of these individual files are updated, you must download the updated bund
 > 1. Right-click the link and select **Save link as...**. 
 > 2. Choose a folder and save the file.
 
-### Update the existing MDE Preference domain profile using the JAMF PRO console
+### Update the existing MDE Preference domain profile using the JAMF PRO console ###
 
 1. Update the schema.xml profile with the **schema.json** file you just downloaded.
 
 1. Under **MDE Preference Domain Properties** choose the following settings:
-    - **Features** 
+    - **Features**
         - **Use System Extensions:** *enabled* - required for network extensions on Catalina
         - **Use Data Loss Prevention:** *enabled*
 
@@ -78,13 +83,22 @@ If any of these individual files are updated, you must download the updated bund
 
 1. Choose **Save**. 
 
-### Check the macOS device 
+
+### Enable full-disk access ### 
+
+To update the existing full disk access profile with the `fulldisk.mobileconfig` file, upload `fulldisk.mobileconfig` to JAMF. For more information, refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
+
+### Enable accessibility access to Microsoft Purview data loss prevention ###
+To grant accessibility access to DLP, upload the `accessibility.mobileconfig` file you downloaded previously to JAMF, as described in [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
+
+
+### Check the macOS device ###
 
 1. Restart the macOS device.
 
 1. Open **System Preferences** > **Profiles**.
 
-1. THe following profiles are now listed::
+1. The following profiles are now listed::
     - Accessibility
     - Full Disk Access
     - Kernel Extension Profile

@@ -62,17 +62,9 @@ Download the following files:
 
 [!INCLUDE [devices-macos-onboarding-tip](../includes/devices-macos-onboarding-tip.md)]
 
-
-
-> [!NOTE]
-> To download the files:
-> 1. Right-click the link and select **Save link as...**. 
-> 2. Choose a folder and save the file.
-
-
 ### Get the device onboarding package
 
-:::image type="content" source="../media/device-macos-dnld-install-package-inline.png" alt-text="Screenshot of the Microsoft Intune Configuration settings tab with all fields populated." lightbox="../media/device-macos-dnld-install-package-expanded.png":::
+:::image type="content" source="../media/device-macos-dnld-onboarding-package_Intune_inline.png" alt-text="Screenshot of the Microsoft Intune Configuration settings tab with all fields populated." lightbox="../media/device-macos-dnld-onboarding-package_Intune_expanded.png":::
 
 
 1. In **Microsoft Purview Compliance center** open **Settings** > **Device Onboarding** and then choose **Onboarding**.
