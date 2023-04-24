@@ -31,6 +31,8 @@ ms.date: 01/21/2021
 
 # Which Microsoft 365 subscription do I have?
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 If you're an admin, you can verify which subscriptions your organization has by going to the admin center.
   
 **Not an admin?** See [What Microsoft 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)

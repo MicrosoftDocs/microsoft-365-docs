@@ -9,14 +9,14 @@ ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security
   - tier2
 ms.custom: admindeeplinkDEFENDER
@@ -41,7 +41,7 @@ Starting January 31, 2023, the portal redirection setting will be automatically 
 
 ## When does this take effect?
 
-Once enabled, this update might take effect almost immediately for some accounts. But the redirection might take longer to propagate to every account in your organization. Accounts in active sessions while this setting is applied won't be ejected from their session and will only be routed to Microsoft 365 Defender after ending their current session and signing back in again.  
+Once enabled, this update might take effect almost immediately for some accounts. But the redirection might take longer to propagate to every account in your organization. Accounts in active sessions while this setting is applied won't be ejected from their session and will only be routed to Microsoft 365 Defender after ending their current session and signing back in again.
 
 ### Set up portal redirection
 
@@ -57,11 +57,11 @@ To start routing accounts to Microsoft 365 Defender:
 
 1. Toggle the Automatic redirection setting to **On**.
 
->[!IMPORTANT]
->Enabling this setting will not terminate active user sessions. Accounts who are in an active session while this setting is applied will only be directed to Microsoft 365 Defender after ending their current session and signing in again.
+> [!IMPORTANT]
+> Enabling this setting will not terminate active user sessions. Accounts who are in an active session while this setting is applied will only be directed to Microsoft 365 Defender after ending their current session and signing in again.
 
->[!NOTE]
->You must be a global administrator or have security administrator permissions in Azure Active Directory to enable or disable this setting.  
+> [!NOTE]
+> You must be a global administrator or have security administrator permissions in Azure Active Directory to enable or disable this setting.
 
 ## Can I go back to using the former portal?
 
@@ -71,13 +71,16 @@ To revert to the former Microsoft Defender for Identity portal:
 
 1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a global administrator or using and account with security administrator permissions in Azure Active directory.
 
-2. Navigate to **Settings** > **Identities** > **General** > **Portal redirection** or [open the page here](https://security.microsoft.com/preferences2/portal_redirection).  
+2. Navigate to **Settings** > **Identities** > **General** > **Portal redirection** or [open the page here](https://security.microsoft.com/preferences2/portal_redirection).
 
 3. Toggle the Automatic redirection setting to **Off**.
 
 This setting can be enabled again at any time.
 
 Once disabled, accounts will no longer be routed to security.microsoft.com.
+
+> [!NOTE]
+> For tenants created after March 15, 2023, the option to disable the setting toggle is not available.
 
 ## Related information
 

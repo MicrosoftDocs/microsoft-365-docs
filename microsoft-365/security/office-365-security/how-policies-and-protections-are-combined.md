@@ -17,7 +17,7 @@ description: Admins can learn about the application order of protections in Exch
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 09/17/2019
+ms.date: 1/31/2023
 ---
 
 # Order and precedence of email protection

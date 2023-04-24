@@ -13,10 +13,11 @@ search.appverid:
   - MET150
 ms.collection: 
   - m365-security
+  - tier2
 description: Admins can learn how to configure the junk email settings in Exchange Online mailboxes. Many of these settings are available to users in Outlook or Outlook on the web.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 03/11/2020
+ms.date: 1/31/2023
 ---
 
 # Configure junk email settings on Exchange Online mailboxes
@@ -32,9 +33,6 @@ In Microsoft 365 organizations with mailboxes in Exchange Online, organizational
 
 But, there are also specific anti-spam settings that admins can configure on individual mailboxes in Exchange Online:
 
-> [!NOTE]
-> EOP now uses its own mail flow delivery agent to route messages to the Junk Email folder instead of using the junk email rule. The _Enabled_ parameter on the **Set-MailboxJunkEmailConfiguration** cmdlet no longer has any effect on mail flow. EOP routes messages based on the actions set in anti-spam policies. The user's Safe Sender list and Blocked Senders list will continue to work as usual.
-
 - **Move messages to the Junk Email folder based on anti-spam policies**: When an anti-spam policy is configured with the action **Move message to Junk Email folder** for a spam filtering verdict, the message is moved to the Junk Email folder after the message is delivered to the mailbox. For more information about spam filtering verdicts in anti-spam policies, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md). Similarly, if zero-hour auto purge (ZAP) determines a delivered message is spam or phish, the message is moved to the Junk Email folder for **Move message to Junk Email folder** spam filtering verdict actions. For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
 
 - **Junk email settings that users configure for themselves in Outlook or Outlook on the web**: The _safelist collection_ is the Safe Senders list, the Safe Recipients list, and the Blocked Senders list on each mailbox. The entries in these lists determine whether the message is moved to the Inbox or the Junk Email folder. Users can configure the safelist collection for their own mailbox in Outlook or Outlook on the web (formerly known as Outlook Web App). Admins can configure the safelist collection on any user's mailbox.
@@ -45,6 +43,8 @@ Admins can use Exchange Online PowerShell to configure entries in the safelist c
 
 > [!NOTE]
 > Messages from senders that users have added to their own Safe Senders lists will skip content filtering as part of EOP (the SCL is -1). To prevent users from adding entries to their Safe Senders list in Outlook, use Group Policy as mentioned in the [About junk email settings in Outlook](#about-junk-email-settings-in-outlook) section later in this article. Policy filtering, Content filtering and Defender for Office 365 checks will still be applied to the messages.
+>
+> EOP uses its own mail flow delivery agent to route messages to the Junk Email folder instead of using the junk email rule in the mailbox. The _Enabled_ parameter on the **Set-MailboxJunkEmailConfiguration** cmdlet has any effect on mail flow for Exchange Online mailboxes. EOP routes messages based on the actions set in anti-spam policies. The user's Safe Sender list and Blocked Senders continue to work as usual.
 
 ## What do you need to know before you begin?
 

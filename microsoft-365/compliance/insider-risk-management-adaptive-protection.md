@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/17/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -125,9 +126,12 @@ Depending on the needs of your organization or where you're currently configured
 
 ### Quick setup
 
-The quick setup option is fastest way to get started with Adaptive Protection. With this option, you don't need any pre-existing insider risk management or DLP policies, settings, features configured. If your organization doesn't have a current subscription or license that supports insider risk management or DLP, you'll need to sign up for a [Microsoft Purview risk and compliance solutions trial](/microsoft-365/compliance/compliance-easy-trials) before starting the quick setup process.
+The quick setup option is the fastest way to get started with Adaptive Protection. With this option, you don't need any pre-existing insider risk management or DLP policies, settings, features configured. If your organization doesn't have a current subscription or license that supports insider risk management or DLP, you'll need to sign up for a [Microsoft Purview risk and compliance solutions trial](/microsoft-365/compliance/compliance-easy-trials) before starting the quick setup process.
 
 Available on Adaptive Protection cards on the compliance portal home page and DLP overview pages, you can get started by selecting **Turn on Adaptive Protection**. You can also get started with the quick setup process by navigating to **Insider risk management** > **Adaptive Protection** > **Dashboard** and selecting **Quick setup**.
+
+> [!NOTE]
+> If you're already a [scoped admin](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for Microsoft Purview, you can't turn on quick setup. 
 
 Here's what is configured when you use the quick setup process for Adaptive Protection:
 
@@ -210,6 +214,8 @@ After you've completed all three of the previous steps, you're ready to enable A
 
 To enable Adaptive Protection, select the **Adaptive Protection settings** tab and toggle **Enable Adaptive Protection** to *On*. It may take up to 36 hours before you can expect to see Adaptive Protection risk levels and DLP actions applied to applicable user activities.
 
+Watch the following video on the Microsoft Mechanics channel to [see how Adaptive Protection can automatically adjust the strength of data protection based on calculated data security risk levels of users](https://youtu.be/9GLsxvtoLWE).
+
 ## Manage Adaptive Protection
 
 Once you've enabled Adaptive Protection and your insider risk management and DLP policies are configured, you'll have access to information about policy metrics, current in-scope users, and risk levels currently in-scope.
@@ -263,7 +269,7 @@ The **DLP policies** page displays all DLP policies that are using the **User's 
 - **Policy state**: The current state of the policy. Values are *Active* or *Inactive*.
 - **Policy location**: The [locations](/microsoft-365/compliance/dlp-policy-reference#locations) included in the DLP policy. Currently, Adaptive Protection only supports Exchange, Teams, and Devices.
 - **Risk levels included**: The risk levels included in the DLP policy using the **User's risk level for adaptive protection is** condition. The options are *Elevated*, *Moderate*, or *Minor* risk levels.
-- **Policy status**: The current [status](/microsoft-365/compliance/create-test-tune-dlp-policy#where-to-start-with-data-loss-prevention) of the DLP policy. The options are *On* or *Test with notifications*.
+- **Policy status**: The current status of the DLP policy. The options are *On* or *Test with notifications*.
 - **Created**: The date the DLP policy was created.
 - **Last modified**: The date the DLP policy was last edited.
 

@@ -8,14 +8,14 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 11/22/2022
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
 - m365-security
-- m365initiative-defender-office365
+- tier2
 description: Get started using automated investigation and response capabilities in Microsoft Defender for Office 365.
 ms.custom:
 - air
@@ -51,7 +51,7 @@ An alert is triggered, and a security playbook starts an automated investigation
 1. An automated investigation is initiated in one of the following ways:
    - Either [an alert is triggered](#which-alert-policies-trigger-automated-investigations) by something suspicious in email (such as a message, attachment, URL, or compromised user account). An incident is created, and an automated investigation begins; or
    - A security analyst [starts an automated investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) while using [Explorer](threat-explorer-about.md).
-2. While an automated investigation runs, it gathers data about the email in question and entities related to that email. Such entities can include files, URLs, and recipients. The investigation's scope can increase as new and related alerts are triggered.
+2. While an automated investigation runs, it gathers data about the email in question and _entities_ related to that email (for example, files, URLs, and recipients). The investigation's scope can increase as new and related alerts are triggered.
 
 3. During and after an automated investigation, [details and results](air-view-investigation-results.md) are available to view. Results might include [recommended actions](air-remediation-actions.md) that can be taken to respond to and remediate any existing threats that were found.
 
@@ -90,7 +90,7 @@ Microsoft 365 provides many built-in alert policies that help identify Exchange 
 
 |Alert|Severity|How the alert is generated|
 |---|---|---|
-|A potentially malicious URL click was detected|**High**|This alert is generated when any of the following occurs: <ul><li>A user protected by [Safe Links](safe-links-about.md) in your organization clicks a malicious link</li><li>Verdict changes for URLs are identified by Microsoft Defender for Office 365</li><li>Users override Safe Links warning pages (based on your organization's [Safe Links policy](safe-links-policies-configure.md).</li></ul> <p> For more information on events that trigger this alert, see [Set up Safe Links policies](safe-links-policies-configure.md).|
+|A potentially malicious URL click was detected|**High**|This alert is generated when any of the following occurs: <ul><li>A user protected by [Safe Links](safe-links-about.md) in your organization clicks a malicious link</li><li>Verdict changes for URLs are identified by Microsoft Defender for Office 365</li><li>Users override Safe Links warning pages (based on your organization's [Safe Links policy](safe-links-policies-configure.md).</li></ul> <br/> For more information on events that trigger this alert, see [Set up Safe Links policies](safe-links-policies-configure.md).|
 |An email message is reported by a user as malware or phish|**Informational**|This alert is generated when users in your organization report messages as phishing email using the [Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).|
 |Email messages containing malicious file removed after delivery|**Informational**|This alert is generated when any messages containing a malicious file are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).|
 |Email messages containing malware are removed after delivery|**Informational**|This alert is generated when any email messages containing malware are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).|
@@ -110,7 +110,7 @@ Permissions are granted through certain roles, such as those that are described 
 
 |Task|Role(s) required|
 |---|---|
-|Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <p> These roles can be assigned in [Azure Active Directory](/azure/active-directory/roles/permissions-reference) or in the [Microsoft 365 Defender portal](mdo-portal-permissions.md).|
+|Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <br/> These roles can be assigned in [Azure Active Directory](/azure/active-directory/roles/permissions-reference) or in the [Microsoft 365 Defender portal](mdo-portal-permissions.md).|
 |Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Azure Active Directory](/azure/active-directory/roles/permissions-reference) or in the [Microsoft 365 Defender portal](mdo-portal-permissions.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Microsoft 365 Defender portal](mdo-portal-permissions.md). You might need to create a new **Email & collaboration** role group there and add the Search and Purge role to that new role group.</li></ul>|
 
 ## Required licenses

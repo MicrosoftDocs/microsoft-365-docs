@@ -3,6 +3,7 @@ title: "Manage group attendees in Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 04/26/2022
 audience: Admin
 ms.topic: article
 ms.service: bookings

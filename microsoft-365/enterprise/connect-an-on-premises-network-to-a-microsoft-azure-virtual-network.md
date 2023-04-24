@@ -3,7 +3,7 @@ title: "Connect an on-premises network to a Microsoft Azure virtual network"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise

@@ -89,8 +89,8 @@ determination|Enum|Specifies the determination of the incident. <p>Possible dete
 tags|string list|List of Incident tags.
 comment|string|Comment to be added to the incident.
 
->[!NOTE]
->Around August 29, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
+> [!NOTE]
+> Around August 29, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ## Response
 

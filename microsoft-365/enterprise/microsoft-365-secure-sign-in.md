@@ -25,6 +25,8 @@ description: Require that your users sign in securely with multi-factor authenti
 
 # Step 3: Protect your Microsoft 365 user accounts
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 To increase the security of user sign-ins:
 
 - Use Windows Hello for Business

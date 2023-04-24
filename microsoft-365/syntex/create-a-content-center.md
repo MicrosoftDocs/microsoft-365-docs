@@ -4,8 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 07/01/2022
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.custom: admindeeplinkSPO
@@ -76,5 +77,3 @@ The **Models** library in the default content center view groups the created mod
 ## See also
 
 [Overview of model types](model-types-overview.md)
-
-

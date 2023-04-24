@@ -3,11 +3,13 @@ title: "Create a more secure guest sharing environment"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 03/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: 
 - highpri
+- Tier1
 - SPO_Content
 - M365-security-compliance
 - m365solution-3tiersprotection

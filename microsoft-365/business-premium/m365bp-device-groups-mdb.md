@@ -10,8 +10,8 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 09/15/2022
-ms.localizationpriority: high
-ms.reviewer: shlomiakirav
+ms.localizationpriority: medium
+ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -76,7 +76,7 @@ You can create a new device group while you are in the process of creating or ed
 
 Create device categories in Intune from which users must choose when they enroll a device.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
+1. Sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com).
 
 2. Choose **Devices** > **Device categories** > **Create device category** to add a new category.
 
@@ -110,7 +110,7 @@ After choosing a category, the device is automatically added to the correspondin
 
 ## View the categories of devices that you manage
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices** > **All devices**.
+1. Sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Devices** > **All devices**.
 
 2. In the list of devices, examine the **Device category** column.
 
@@ -118,7 +118,7 @@ After choosing a category, the device is automatically added to the correspondin
 
 ## Change the category of a device
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices** > **All devices**. 
+1. Sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Devices** > **All devices**. 
 
 2. Select the category you want from the list, to see its properties.
 

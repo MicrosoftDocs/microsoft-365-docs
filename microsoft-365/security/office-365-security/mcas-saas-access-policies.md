@@ -1,12 +1,12 @@
 ---
-title: Recommended Microsoft Defender for Cloud Apps policies for SaaS apps - Microsoft 365 Enterprise | Microsoft Docs
+title: Recommended Microsoft Defender for Cloud Apps policies for SaaS apps
 description: Describes recommended policies for integration with Microsoft Defender for Cloud Apps.
 author: BrendaCarter
 manager: laurawi
 ms.topic: conceptual
 audience: Admin
 ms.author: bcarter
-ms.date: 03/22/2021
+ms.date: 1/31/2023
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -15,6 +15,7 @@ ms.collection:
 - M365-identity-device-management
 - m365-security
 - zerotrust-solution
+- tier2
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
@@ -43,7 +44,7 @@ You can begin to manage these by doing the following:
 
 Permissions to SaaS apps are typically based on business need for access to the app. These permissions can be highly dynamic. Using Defender for Cloud Apps policies ensures protection to app data, regardless of whether users are assigned to an Azure AD group associated with starting point, enterprise, or specialized security protection.
 
-To protect data across your collection of SaaS apps, the following diagram illustrates the necessary Azure AD conditional access policy plus suggested policies you can create in Defender for Cloud Apps. In this example, the policies created in Defender for Cloud Apps apply to all SaaS apps you are managing. These are designed to apply appropriate controls based on whether devices are managed as well as sensitivity labels that are already applied to files.
+To protect data across your collection of SaaS apps, the following diagram illustrates the necessary Azure AD conditional access policy plus suggested policies you can create in Defender for Cloud Apps. In this example, the policies created in Defender for Cloud Apps apply to all SaaS apps you're managing. These are designed to apply appropriate controls based on whether devices are managed as well as sensitivity labels that are already applied to files.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="The policies for managing SaaS apps in Defender for Cloud Apps" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
@@ -69,7 +70,7 @@ For more information, see [Protect apps with Microsoft Defender for Cloud Apps C
 
 ## Tune protection for specific SaaS apps
 
-You might want to apply additional monitoring and controls to specific SaaS apps in your environment. Defender for Cloud Apps allows you to accomplish this. For example, if an app like Box is used heavily in your environment, it makes sense to apply additional controls. Or, if your legal or finance department is using a specific SaaS app for sensitive business data, you can target extra protection to these apps.
+You might want to apply additional monitoring and controls to specific SaaS apps in your environment. Defender for Cloud Apps allows you to accomplish this. For example, if an app like Box is used heavily in your environment, it makes sense to apply more controls. Or, if your legal or finance department is using a specific SaaS app for sensitive business data, you can target extra protection to these apps.
 
 For example, you can protect your Box environment with these types of built-in anomaly detection policy templates:
 
@@ -84,7 +85,7 @@ For example, you can protect your Box environment with these types of built-in a
 - Risky Oauth App
 - Unusual file share activity
 
-These are examples. Additional policy templates are added on a regular basis. For examples of how to apply additional protection to specific apps, see [Protecting connected apps](/cloud-app-security/protect-connected-apps).
+These are examples. Additional policy templates are added regularly. For examples of how to apply additional protection to specific apps, see [Protecting connected apps](/cloud-app-security/protect-connected-apps).
 
 [How Defender for Cloud Apps helps protect your Box environment](/cloud-app-security/protect-box) demonstrates the types of controls that can help you protect your business data in Box and other apps with sensitive data.
 
@@ -98,8 +99,8 @@ The following illustration and table provide several examples of policies that c
 
 |Protection level|Example policies|
 |---|---|
-|Starting point|Alert when files containing this sensitive information type ("Credit Card Number") are shared outside the organization <p> >Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices|
-|Enterprise|Protect downloads of files containing this sensitive information type ("Credit card number") to managed devices <p> Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices <p> Alert when a file with on of these labels is uploaded to OneDrive for Business or Box (Customer data, Human Resources: Salary Data,Human Resources, Employee data)|
+|Starting point|Alert when files containing this sensitive information type ("Credit Card Number") are shared outside the organization <p> Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices|
+|Enterprise|Protect downloads of files containing this sensitive information type ("Credit card number") to managed devices <p> Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices <p> Alert when a file with on of these labels is uploaded to OneDrive for Business or Box (Customer data, Human Resources: Salary Data, Human Resources, Employee data)|
 |Specialized security|Alert when files with this label ("Highly classified") are downloaded to managed devices <p> Block downloads of files with this label ("Highly classified") to unmanaged devices|
 |||
 
