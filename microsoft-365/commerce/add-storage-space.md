@@ -50,7 +50,7 @@ You must be a Global or SharePoint admin to do the tasks in this article. For mo
 
 1. In the SharePoint admin center, go to <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
 
-2. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. If your organization has configured Multi-Geo in Office 365, the bar also shows the amount of storage used across all geo locations.
+2. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. If your organization has configured Multi-Geo in Microsoft 365, the bar also shows the amount of storage used across all geo locations.
 
    > [!NOTE]
    > The storage used doesn't include changes made within the last 24-48 hours.
@@ -93,8 +93,8 @@ Office 365 Extra File Storage is available for the following subscriptions:
 - Office 365 Enterprise E5
 - Office 365 A3 (faculty)
 - Office 365 A5 (faculty)
-- Office for the web with SharePoint Plan 1
-- Office for the web with SharePoint Plan 2
+- Microsoft 365 for the web with SharePoint Plan 1
+- Microsoft 365 for the web with SharePoint Plan 2
 - SharePoint Online Plan 1
 - SharePoint Online Plan 2
 - Microsoft 365 Business Basic

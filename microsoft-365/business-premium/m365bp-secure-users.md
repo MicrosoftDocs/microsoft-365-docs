@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 09/15/2022
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
@@ -37,16 +37,16 @@ Microsoft 365 Business Premium offers you one comprehensive solution for product
 
 ## Video: Top 5 benefits of Microsoft 365 Business Premium
 
-Watch the following video to see how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
+Watch the following video to see how Microsoft 365 Business Premium helps your business be more productive and secure: <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
 > [!TIP]
 > For more detailed information about what's included in Microsoft 365 Business Premium, see the [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
-## Resources to train your users
+## Resources to train everyone
 
-The security recommendations provided in [this guidance](index.md) make it much harder for cyberattackers to gain access to your environment. However, an important part of your security strategy includes training everyone in your organization&mdash;the people in your company who use your systems regularly. Users can be your first line of defense. Everyone needs to know how to work productively while maintaining a more secure environment.
+The security recommendations provided in [this guidance](index.md) make it much harder for cyberattackers to gain access to your environment. An important part of your security strategy also includes training everyone in your organization &mdash; the people in your company who use your systems regularly. Users can be your first line of defense. Everyone needs to know how to work productively while maintaining a more secure environment.
 
 Resources are available to help everyone in your organization to:
 
@@ -71,3 +71,7 @@ Our digital threats guide describes different kinds of threats and what you and 
 2. [Start the setup process](m365bp-setup-overview.md).
 
 3. [Set up your security capabilities](m365bp-security-overview.md).
+
+4. Help everyone [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md), [Use email securely](m365bp-protect-email-overview.md), and [Collaborate and share securely](m365bp-collaborate-share-securely.md).
+
+5. [Set up and secure managed devices](m365bp-protect-devices.md)

@@ -12,6 +12,7 @@ ms.reviewer: dmwmsft
 ms.date: 09/20/2022
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ---
@@ -54,15 +55,15 @@ Please refer to [Dynamics 365 availability and data locations | Microsoft Learn]
 ### Stream
 You can find this information from the "?" option in the Stream UI, if you have it running and then click on "About Microsoft Stream" and see where your data is stored. If needed, create a trial tenant.
 
-## Viva Goals
+### Viva Goals
 
-### Summary
+#### Summary
 
 Service documentation: [Introduction to Microsoft Viva Goals ](/viva/goals/intro-to-ms-viva-goals)
 
 Capability summary: Microsoft Viva Goals is a goal-alignment solution that connects teams to your organization’s strategic priorities, unites them around your mission and purpose, and drives business results. Viva Goals enables individuals and companies to organize and track their goals through “Objectives and Key Results” (OKRs). Viva Goals immerses everyone in the company’s purpose and top priorities and creates a culture of engaged employees focused on achieving common goals. 
 
-### Data Residency Available
+#### Data Residency Available
 
 Starting December 5, 2022, Viva Goals [Customer Data](/privacy/eudb/eu-data-boundary-learn) for new tenants in the [European Union Data Boundary (EUDB)](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations) will be stored in data centers located in the EU. All other tenants will have their Viva Goals Customer Data stored in data centers located in the United States. Tenants aren't provided with a choice for the specific deployment region for data storage.  
 
@@ -71,7 +72,7 @@ To be considered a tenant in the EUDB:
 1. The tenant must have a *default geography* in a EUDB country or select a country in EUDB country as their residence during free trial sign-up; and 
 1. The tenant must not purchase a Multi-Geo offering
 
-### Migration
+#### Migration
 
 Customers who signed up for Viva Goals prior to December 5, 2022, currently have their data stored in the US data centers. We'll migrate the data for these customers to data centers located in the EU over the coming months. Customers won't have to do anything to facilitate this move.
 
@@ -98,6 +99,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 1. Australia
 1. Canada
 1. Japan
+1. India
 
 | Country Code | Countries/Regions | Viva Insights Advanced | Viva Learning | Planner |
 | --- | --- | --- | --- | --- |
@@ -204,7 +206,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 | HK | Hong Kong, SAR China | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | HU | Hungary | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | IS | Iceland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| IN | India | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
+| IN | India | APC<sup>2</sup>| APC<sup>2</sup>| IND<sup>7</sup>|
 | ID | Indonesia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | IQ | Iraq | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | IE | Ireland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|

@@ -10,6 +10,7 @@ ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+    - Tier1
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Learn about pay-as-you-go services and pricing for Microsoft Syntex.

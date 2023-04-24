@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier2
-ms.date: 01/05/2023
+ms.date: 03/27/2023
 search.appverid: met150
 ---
 
@@ -28,7 +28,7 @@ search.appverid: met150
 
 **Applies to:**
 
-- [Microsoft Microsoft 365 Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -60,6 +60,7 @@ For more information about individual attack surface reduction rules, see [Attac
 ## Prerequisites
 
 > [!IMPORTANT]
+> To access the **Attack surface reduction rules report**, read permissions are required for the Microsoft 365 Defender portal. Access to this report granted by Azure AD roles, such as Security Global Admin or Security role, is being deprecated and will be removed in April 2023.
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in the **Attack surface reduction rules report**, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 ## Report access permissions

@@ -10,8 +10,8 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 09/15/2022
-ms.localizationpriority: high
-ms.reviewer: shlomiakirav
+ms.localizationpriority: medium
+ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB

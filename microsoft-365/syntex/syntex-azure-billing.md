@@ -11,6 +11,7 @@ ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+    - Tier1
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Learn about how to set up pay-as-you-go Azure billing for Microsoft Syntex and how to monitor your usage.

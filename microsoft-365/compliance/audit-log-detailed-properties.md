@@ -70,7 +70,7 @@ The following table describes the properties that are included (depending on the
 | ProtectionEventType |  Enumerates how the protection was changed by the operation being audited. The following values and meanings apply: <br/><br/> **0** - Indicates unchanged. <br/> **1** - Indicates added. <br/> **2** - Indicates changed. <br/> **3** - Indicates removed. | All |
 |RecordType|The type of operation indicated by the record. This property indicates the service or feature that the operation was triggered in. For a list of record types and their corresponding ENUM value (which is the value displayed in the **RecordType** property in an audit record), see [Audit log record type](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).| 
 |ResultStatus|Indicates whether the action (specified in the **Operation** property) was successful or not.  <br/> For Exchange admin activity, the value is either **True** (successful) or **False** (failed).|All  <br/>|
-|SecurityComplianceCenterEventType|Indicates that the activity was a compliance portal event. All compliance portal activities will have a value of **0** for this property.|Security & Compliance Center|
+|SecurityComplianceCenterEventType|Indicates that the activity was a compliance portal event. All compliance portal activities will have a value of **0** for this property.|Microsoft Purview compliance portal|
 |SharingType|The type of sharing permissions that was assigned to the user that the resource was shared with. This user is identified in the **UserSharedWith** property.|SharePoint|
 |Site|The GUID of the site where the file or folder accessed by the user is located.|SharePoint|
 |SiteUrl|The URL of the site where the file or folder accessed by the user is located.|SharePoint|
@@ -85,11 +85,28 @@ The following table describes the properties that are included (depending on the
 |UserAgent|Information about the user's browser. This information is provided by the browser.|SharePoint|
 |UserDomain|Identity information about the tenant organization of the user (actor) who performed the action.|Azure Active Directory|
 |UserId|The user who performed the action (specified in the **Operation** property) that resulted in the record being logged. Audit records for activity performed by system accounts (such as SHAREPOINT\system or NT AUTHORITY\SYSTEM) are also included in the audit log. Another common value for the UserId property is app@sharepoint. This indicates that the "user" who performed the activity was an application that has the necessary permissions in SharePoint to perform organization-wide actions (such as search a SharePoint site or OneDrive account) on behalf of a user, admin, or service. <br/><br/>For more information, see:<br/> [The app\@sharepoint user in audit records](audit-log-activities.md#the-appsharepoint-user-in-audit-records)<br/> or <br/>[System accounts in Exchange mailbox audit records](audit-log-activities.md#system-accounts-in-exchange-mailbox-audit-records). |All|
-|UserKey|An alternative ID for the user identified in the **UserID** property. For example, this property is populated with the passport unique ID (PUID) for events performed by users in SharePoint. This property also might specify the same value as the **UserID** property for events occurring in other services and events performed by system accounts.|All|
-|UserType|The type of user that performed the operation. The following values indicate the user type. <br/> <br/> **0** - A regular user. <br/>**2** - An administrator in your Microsoft 365 organization.<sup>1</sup> <br/>**3** - A Microsoft datacenter administrator or datacenter system account. <br/>**4** - A system account. <br/>**5** - An application. <br/>**6** - A service principal.<br/>**7** - A custom policy.<br/>**8** - A system policy.|All|
+|UserKey| Contains a valid Azure Active Directory Object ID in GUID format or hex format. For scenarios where the primary actor isn't a user, the *UserKey* is an empty string. See [UserType and UserKey scenarios](#usertype-and-userkey-scenarios) for details on various *UserKey* scenarios.|All|
+|UserType|The type of user that performed the operation. See the [UserType and UserKey scenarios](#usertype-and-userkey-scenarios) for details on various *UserType* scenarios. |All|
 |Version|Indicates the version number of the activity (identified by the **Operation** property) that's logged.|All|
 |Workload|The Microsoft 365 service where the activity occurred.|All|
 ||||
+
+## UserType and UserKey scenarios
+
+The following table provides details for *UserType* and *UserKey* scenarios:
+
+|**Value**|**UserType member name**|**Description**|**UserKey**|
+|:--------|:-----------------------|:--------------|:----------|
+| 0 | Regular | A regular user without admin permissions. | AAD Object ID in GUID format |
+| 2 | ADmin | An administrator in your Microsoft 365 organization.<sup>1</sup> | AAD Object ID in GUID format |
+| 3 | DCAdmin | A Microsoft datacenter administrator or datacenter system account. | AAD Object ID in GUID format |
+| 4 | System | An audit event triggered by server-side logic. For example, Windows services or background processes. | Empty string |
+| 5 | Application | An audit event triggered by an AAD application. | AAD Application Name or Application ID (when available). Otherwise, an empty string. |
+| 6 | ServicePrincipal | A service principal. | Empty string |
+| 7 | CustomPolicy | A customer created or managed policy. | Empty string  |
+| 8 | SystemPolicy | A Microsoft-managed or system policy. | Empty string  |
+| 9 | PartnerTechnician | A partner tenant's user working on behalf of the customer tenant (in [GDAP](/partner-center/gdap-introduction) scenarios). | Empty string  |
+| 10 | Guest | A guest or anonymous user. | Empty string  |
 
 > [!NOTE]
 ><sup>1</sup> For Azure Active Directory-related events, the value for an administrator isn't used in an audit record. Audit records for activities performed by administrators will indicate that a regular user (for example, **UserType: 0**) performed the activity. The **UserID** property will identify the person (regular user or administrator) who performed the activity.
