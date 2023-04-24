@@ -413,7 +413,7 @@ There are two ways you can take action from this screen:
 
 The assessments page lists all the [assessments](compliance-manager-assessments.md) you set up for your organization. Your compliance score denominator is determined by all your tracked assessments. As you add more assessments, you'll see more improvement actions listed on your improvement actions page, and your compliance score denominator increases.
 
-The **activated templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information.
+The **Activated/Regulation** counter near the top of the page shows the number of regulations currently in use out of the total number available for your organization to use. Learn more about [active regulations](compliance-manager-templates.md#regulation-availability-and-licensing).
 
 The assessments page summarizes key information about each assessment:
 
@@ -440,15 +440,11 @@ To filter your view of assessments:
 
 You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
 
-### Default assessment
-
-By default, you'll see the [Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) assessment on the assessments page. Compliance Manager also provides several pre-built [templates](compliance-manager-templates-list.md) for building assessments.
-
-## Assessment templates page
+## Regulations page
 
 A template is a framework for creating an assessment in Compliance Manager. The assessment templates page displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created.
 
-The **Activated/Licensed templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information.
+The **Activated/Regulation** counter near the top of the page shows the number of active regulatins currently in use out of the total number available for your organization to use. See [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information.
 
 Select a template from its row to bring up its details page, which contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
 

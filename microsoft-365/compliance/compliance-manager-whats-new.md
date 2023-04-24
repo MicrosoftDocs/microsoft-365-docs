@@ -183,4 +183,4 @@ Compliance Manager is now available to US Government DoD customers, in addition 
 
 ### Active and inactive templates
 
-Each assessment page and assessment template page has an activated templates counter. This counter shows how many eligible templates you're using according to your licensing agreement. View [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) to learn more.
+Each assessment page and assessment template page has an activated templates counter. This counter shows how many eligible templates you're using according to your licensing agreement. View [Template availability and licensing](compliance-manager-templates.md#regulation-availability-and-licensing) to learn more.
