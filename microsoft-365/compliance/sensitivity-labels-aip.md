@@ -116,7 +116,7 @@ For your Windows Office apps that support built-in labeling, use the configurati
 |PowerPoint|`MSIP.PowerPointAddin`|
 |Outlook|`MSIP.OutlookAddin`|
 
-Deploy this setting by using Group Policy and [Microsoft 365 Apps for enterprise administrative templates](https://www.microsoft.com/en-us/download/details.aspx?id=49030), or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
+Deploy this setting by using Group Policy and [Microsoft 365 Apps for enterprise administrative templates](https://www.microsoft.com/download/details.aspx?id=49030), or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!IMPORTANT]
 > If you use the Office policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** and set this to **Enabled**, there are some situations where the AIP add-in might still load in Office apps. Blocking the add-in from loading in each app prevents this happening.
@@ -136,7 +136,7 @@ Starting with version 2302 (Current Channel and Semi-Annual Enterprise Channel) 
 
 - **Use the Azure Information Protection add-in for sensitivity labeling**. Set the value to 1 by selecting **Enabled**.
 
-If you're using Group Policy, make sure you've downloaded recent [Group Policy Administrative Template files for Microsoft 365 Apps for enterprise](https://www.microsoft.com/en-us/download/details.aspx?id=49030) and navigate to this setting from  **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**. If you're using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service), search for the setting by name to configure it.
+If you're using Group Policy, make sure you've downloaded recent [Group Policy Administrative Template files for Microsoft 365 Apps for enterprise](https://www.microsoft.com/download/details.aspx?id=49030) and navigate to this setting from  **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**. If you're using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service), search for the setting by name to configure it.
 
 Additional Office settings you might need to configure:
 
