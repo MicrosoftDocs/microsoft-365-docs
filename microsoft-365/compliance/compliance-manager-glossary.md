@@ -25,9 +25,6 @@ description: "Get definitiions of key terms used in Microsoft Purview Compliance
 
 This glossary provides a brief description of important terms and concepts for Microsoft Purview Compliance Manager. This glossary can help you learn and use the solution tools and features quickly and effectively.
 
-Make a table - see https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-glossary.
-
-
 | Term | Description | 
 | :------------- | :------------- | 
 | **A word**| Description, spelled out acronym  |
@@ -37,7 +34,6 @@ Make a table - see https://learn.microsoft.com/azure/defender-for-cloud/defender
 | **License** | In the context of Compliance Manager regulations, one license allows you to build an unlimited number of assessments for that regulation. Multiple versions or levels of a regulation are covered by the single license for that overarching regulation.  |
 | **Regulation**| In Compliance Manager, the list of industry regulations that are the framework for bulding assessments. Compliance Manager provides over 360 regulatory templates for assessments.  |
 | **Service**| A data source; examples: Microsoft Azure, Amazon Web Services, Google Cloud Platform  |
-| **Service instance**| tbd (is this subscription?)  |
 | **Solution**| A Microsoft product or offering, such as Microsoft Purview Data Loss Prevention, eDiscovery, and Insider Risk Management.  |
 | **Subscription**| A sub-group within a service that your organization has set up; examples: Azure for your legal department, Azure for your marketing department, AWS for your legal department, AWS for your marketing department  | 
 | **Virtual resources**| A virtual machine or other scannable entity  |
