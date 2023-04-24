@@ -343,7 +343,7 @@ An item on a monitored device contains credit card number, so it matches policy 
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|
 |ABC|Audit|Audit|**Auth group A - Block**|Audit|Audit|**Auth group A - Block**|Audit|Audit|
 |MNO|Audit|Audit|**Auth group A - Block with override**|Audit|Audit|**Auth group B - block**|Audit|Audit|
-|Actions applied at runtime|Audit|Audit|**Auth group A - BLock**|Audit|Audit|**Auth group A - Block, Auth group B - Block**|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|**Auth group A - Block**|Audit|Audit|**Auth group A - Block, Auth group B - Block**|Audit|Audit|
 
 ### Conditions
 
@@ -623,7 +623,7 @@ The actions that are available in a rule are dependent on the locations that hav
 #### Devices actions
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
-- Restrice access or encrypt the content in Microsoft 365 locations.
+- Restrict access or encrypt the content in Microsoft 365 locations.
 - Audit or restricted activities when users access sensitive websites in Microsoft Edge browser on Windows devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 - Audit or restrict activities on devices
 
