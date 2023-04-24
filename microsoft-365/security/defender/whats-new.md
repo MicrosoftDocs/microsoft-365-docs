@@ -40,6 +40,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## April 2023
+
+- (GA) The [unified Assets tab in the Incidents page](investigate-incidents.md) is now generally available.
+
 ## March 2023 
 
 - (Preview) Microsoft Defender Threat Intelligence (Defender TI) is now available in the Microsoft 365 Defender portal.
