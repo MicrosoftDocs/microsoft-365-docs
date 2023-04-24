@@ -1791,6 +1791,8 @@
           items:
             - name: Build and manage assessments
               href: compliance-manager-assessments.md
+            - name: Learn about Compliance Manager regulations
+              href: compliance-manager-templates.md
             - name: Regulations list
               href: compliance-manager-templates-list.md
         - name: Improvement actions and automation

@@ -1,11 +1,11 @@
 ---
-title: "Learn about assessment templates in Microsoft Purview Compliance Manager"
+title: "Learn about regulations in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 04/21/2023
+ms.date: 05/01/2023
 audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
@@ -19,10 +19,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand how to use and manage templates for building assessments in Microsoft Purview Compliance Manager. Create and modify templates using a formatted Excel file."
+description: "Understand how to use and manage regulatory templates for building assessments in Microsoft Purview Compliance Manager."
 ---
 
-# Learn about assessment templates in Compliance Manager
+# Learn about regulations in Compliance Manager
 
 **In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. 
 
