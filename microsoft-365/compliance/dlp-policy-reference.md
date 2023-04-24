@@ -128,7 +128,7 @@ This table lists all policy templates and the sensitive information types (SIT) 
 
 See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to make sure you understand the difference between an unrestricted admin and an administrative unit restricted admin.
 
-DLP policies are scoped at two different levels. The first level lets an unrestricted admin scope policies to all:
+DLP policies are scoped at two different levels. The first level applies unrestricted admin scope policies to all:
 
 - users
 - groups
