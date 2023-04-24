@@ -1607,6 +1607,8 @@
               href: ediscovery-load-non-office-365-data-into-a-review-set.md
             - name: Add data to another review set
               href: ediscovery-add-data-to-review-set-from-another-review-set.md
+            - name: Configure review set grouping settings
+              href: ediscovery-configure-review-set-settings.md
         - name: Review case content
           items: 
             - name: Query and filter content in a review set
