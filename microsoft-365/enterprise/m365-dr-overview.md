@@ -96,7 +96,7 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 
 1. Product Terms: Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams provisioned in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States have a commitment for customer data residency expressed in the [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).  For more information see the [Product Terms Data Residency page](m365-dr-product-terms-dr.md).
 1. _Multi Geo_ subscription: allows customers to assign data location for Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams to any supported _Geography_.  For more information see [Multi Geo Data Residency](microsoft-365-multi-geo.md).
-1. _Advanced Data Residency_ subscription guarantees data residency for an expanded set of Microsoft 365 services in any _Local Region Geography_ or _Expanded Local Region Geography_ (future).  For more information see the [Advanced Data Residency page](advanced-data-residency.md).
+1. _Advanced Data Residency_ subscription guarantees data residency for an expanded set of Microsoft 365 services in any _Local Region Geography_.  For more information see the [Advanced Data Residency page](advanced-data-residency.md).
 
 **Table 2: Available Data Residency by Workload**
 
@@ -112,8 +112,8 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 | Microsoft Purview <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
 
 1. Only available in the following countries/region: Australia, Brazil, Canada, France, Germany, India, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States.
-1. Available in _Local Region Geography_, _Expanded Local Region Geography_ (when the future data center is available) and _Regional Geography countries/regions_
-1. Only available for _Local Region Geography_ and _Expanded Local Region Geography_ (when the future data center is available) countries.
+1. Available in _Local Region Geography_, _Expanded Local Region Geography_ (when the future data center is launched) and _Regional Geography countries/regions_
+1. Only available for _Local Region Geography_ and _Expanded Local Region Geography_ (when the future data center is launced) countries.
 
 >[!NOTE]
 >See the [Workload Data Residency Capabilities section](m365-dr-workload-exo.md) for more details on these topics.
