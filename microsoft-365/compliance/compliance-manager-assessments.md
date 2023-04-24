@@ -91,30 +91,30 @@ To create one or more assessments based on our recommendations, select **Add Rec
 
 1. On the **Base your assessment on a regulation** page, select **Select regulation** to choose the regulatory template for the assessment. The **Select regulation** flyout page will open.
 
-1. Use the search box to find your desired regulation, then select the check bubble to the left of the regulation name. Select **Save**, confirm your selection, then select **Next**. [Learn more about regulation availability](compliance-manager-templates.md##regulation-availability-and-licensing).
+1. Use the search box to find your desired regulation, then select the check bubble to the left of the regulation name. Select **Save**, confirm your selection, then select **Next**.
 
-1. On the **Add name and group** page, enter values in the following fields.
+1. On the **Add name and group** page, enter values in the following fields:
 
-    - **Assessment name**: Assessment names must be unique. If the name matches the name of another assessment in any group, you’ll receive an error asking you to create a different name.
+    - **Assessment name**: Assessment names must be unique. If the name matches another assessment in any group, you’ll receive an error asking you to create a different name.
     - **Assessment group**: Assign your assessment to a group in one of two ways:
         - **Use existing group** to assign it to a group you've already created; or
         - **Create new group** that you'll assign this assessment to. Enter a name for this group. You also have the option to **Copy data from an existing group**, such as implementation and testing details and documents, by selecting the appropriate boxes.
 
     When finished, select **Next**.
 
-1. On the **Select services** page, designate which services this assessment will apply to. Select the **Select services** command to view a flyout pane showsingwhich services are available to assess for your chosen regulation. Place a check next to your desired services, then select **Add**.
+1. On the **Select services** page, designate which services this assessment will apply to (learn more about [multiservice support](compliance-manager-multiservice.md)). Select the **Select services** command. The flyout pane shows which services are available for your chosen regulation. Place a check next to the services you want covered by the assessment, then select **Add**. 
 
-1. If you selected a service that has more than one subscription within it (for example, an Azure subscription for your legal department, and an Azure subscription for your marketing department), you’ll arrive at a sub-step for **Select service subscriptions**. Select **Manage subscriptions**. On the flyout pane, a tab for each service displays a list of all subscriptions within that service. ….do what next?…. 
+1. If you selected a service that has more than one subscription covered by Microsoft Defender for Cloud (for example, an Azure subscription for your legal department, and an Azure subscription for your marketing department), you’ll arrive at a sub-step for **Select service subscriptions**. Select **Manage subscriptions**. On the flyout pane, a tab for each service displays a list of all subscriptions within that service. Remove any subscription you don't want the assessment to cover by selecting the **X** next to its name. Or select **Edit subscriptions** command to add or remove subscriptions. 
 
    On the Select servcies page, select **Next**.
 
-1. **Review and finish:** Review your selections and make any necessary edits. When you're satisfied ready, select **Create assessment**.
+1. **Review and finish:** Review all your selections and make any necessary edits. When you're satisfied with the settings, select **Create assessment**.
 
 The next screen confirms the assessment was created. When you select **Done**, you'll be taken to your new assessment's details page.
 
 If you see an **Assessment failed** screen after selecting **Create assessment**, select **Try again** to re-create your assessment.
 
-You can change the name of your assessment after you create it by selecting the **Edit name** button in the upper-right corner of the [assessment's details page](#monitor-assessment-progress-and-controls).
+You can change the name of your assessment after you create it by selecting the **Edit name** button in the upper-right corner of the assessment's details page.
 
 ## Monitor assessment progress and controls
 
