@@ -6,11 +6,11 @@ metadata:
   f1.keywords:
   - NOCSH
   ms.author: deniseb
-  manager: deniseb
+  manager: dansimp
   ms.topic: how-to
   ms.service: microsoft-365-security
   ms.collection:
-  - tier1
+  - tier2
   - m365-security
   ms.subservice: m365bp
   ms.date: 09/15/2022
