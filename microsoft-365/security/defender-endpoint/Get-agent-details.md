@@ -1,7 +1,7 @@
 ---
-title: Get scan history by definition
-description: Learn how to use the get scan history by definition api
-keywords: apis, graph api, supported apis, scan history, definition
+title: Get scan agent by ID
+description: Learn how to use the get agent details api
+keywords: apis, graph api, supported apis, agent details, definition
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,13 +21,12 @@ search.appverid: met150
 ms.date: 12/15/2022
 ---
 
-# Get scan history by definition
+# Get scan agent ID
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -44,7 +43,7 @@ ms.date: 12/15/2022
 
 ## API description
 
-Retrieves a list of the scan history by definitions.
+Retrieves the details for a specified agent by its ID.
 
 ## Limitations
 
@@ -67,7 +66,7 @@ Delegated (work or school account)|Machine.Read.All|Read all scan information.
 ## HTTP request
 
 ```http
-POST api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId
+GET /api/DeviceAuthenticatedScanAgents
 ```
 
 ## Request headers
@@ -75,57 +74,38 @@ POST api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId
 Name|Type|Description
 :---|:---|:---
 Authorization|String|Bearer {token}. **Required**.
-Content-Type|string|application/json. **Required**.
 
 ## Request body
 
-In the request body, supply a JSON object with the following parameters:
-
-Parameter|Type|Description
-:---|:---|:---
-ScanDefinitionIds |String|The scan Id. **Required**.
+Empty
 
 ## Response
 
-If successful, this method returns 200 - OK response code with a list of the scan history by definition.
+If successful, this method returns 200 - OK response code with the details of the specified agent.
 
 ## Example request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId
-```
-
-```json
-{
-    "ScanDefinitionIds": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae", "60c4aa57-c573-4488-8d18-230914792a92", "c6220f67-2cad-4ba3-a2fa-7ded6384da56"]
-}
+GET https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanAgents/7f3d76a6976818553e996875dc91f55df6b26625
 ```
 
 ## Response example
 
 ```json
 {
-"@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId",
+"@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#DeviceAuthenticatedScanAgents/$entity",
     "value": [
     {
-    "ScanDefinitionIds": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
-    "LastScanned": "2022-12-20T11:14:24.5561791Z",
-    "ScanStatus": "Partial Success",
-    "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
-    },
-    {
-    "ScanDefinitionIds": "60c4aa57-c573-4488-8d18-230914792a92",
-    "LastScanned": "2022-11-17T15:13:24.5561791Z",
-    "ScanStatus": "Partial Success",
-    "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
-    },
-    {
-    "ScanDefinitionIds": "c6220f67-2cad-4ba3-a2fa-7ded6384da56",
-    "LastScanned": "2022-11-10T18:15:24.5561791Z",
-    "ScanStatus": "Partial Success",
-    "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
+    "id": "47df41a0c-asad-4fd6d3-bbea-a93dbc0bfcaa_4edd75b2407a5b64d704b4e53d74f15",
+    "machineId": "4ejh675b240118fbehiuiy5b64d704b4e53d15",
+    "lastSeen": "2022-05-08T12:18:41.538203Z",
+    "computerDnsName": "TEST_DOMAIN",
+    "AssignedApplicationId": "9E0FA0EB-0A51-4357-9C87-C21BFBE07571",
+    "ScannerSoftwareVersion": "7.1.1",
+    "LastCommandExecutionTimestamp": "2022-05-08T12:18:41.538203Z",
+    "mdeClientVersion": "10.8295.22621.1195"
     },
    ]
 }
