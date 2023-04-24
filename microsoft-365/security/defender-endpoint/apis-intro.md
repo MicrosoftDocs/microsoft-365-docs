@@ -78,6 +78,11 @@ You can access Defender for Endpoint API with **Application Context** or **User 
 
      For more information, see [Get access with user context](exposed-apis-create-app-nativeapp.md).
 
+
+>[!TIP]
+>When more than one query request is required to retrieve all the results, Microsoft Graph returns an `@odata.nextLink` property in the response that contains a URL to the next page of results. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
+
+
 ## Related topics
 
 - [Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
