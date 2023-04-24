@@ -14,6 +14,7 @@ search.appverid:
 ms.collection: 
   - zerotrust-solution
   - msftsolution-secops
+  - tier1
 ms.custom:
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Office 365.
 ms.subservice: mdo

@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection:
   - m365-security-compliance
   - m365-initiative-defender-endpoint
+  - tier1
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
