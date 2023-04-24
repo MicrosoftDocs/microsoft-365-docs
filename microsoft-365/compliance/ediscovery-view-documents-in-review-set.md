@@ -23,7 +23,7 @@ ms.custom: seo-marvel-mar2020
 
 # Group and view documents in a review set in eDiscovery (Premium)
 
-eDiscovery (Premium) review sets display content using different grouping options and includes specialized viewers that you can use to examine detials about indidivual item.
+eDiscovery (Premium) review sets display content using different grouping options and include specialized viewers that you can use to examine details about individual items.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -33,17 +33,17 @@ Use the **Group** control in the command bar of a review set to view review cont
 
 ### Option 1: Group items with Group ID and Thread ID
 
-If you're new to eDiscovery or are an existing eDiscovery customer with a steady stream of new cases, grouping review set items using [Group IDs and Thread IDs](ediscovery-document-metadata-fields.md) is the recommended option. This grouping option makes it easier to find and review related items in a review set by keeping them together in the list view. With the **Enable group** option [enabled in the case settings](ediscovery-configure-review-set-settings.md), you'll see the following grouping options on the **Group** control in the command bar of a review set:
+If you're new to eDiscovery or are an existing eDiscovery customer with a steady stream of new cases, grouping review set items using [Group IDs and Thread IDs](ediscovery-document-metadata-fields.md) is the recommended option. This grouping option makes it easier to find and review related items in a review set by grouping them together in the list view. With the **Enable group** option [enabled in the case settings](ediscovery-configure-review-set-settings.md), you'll see the following grouping options on the **Group** control in the command bar of a review set:
 
 - **Group by families**: All items related to a specific file are grouped together using the same Group ID. For example, if you have a PowerPoint file in the review set that includes imbedded images or files, these images and files are grouped with the PowerPoint file and shown as nested items with the file in the item list view.
-- **Group by conversations**: All email, teams, and Yammer messages and conversations are grouped using the same Thread ID and appear as nested items. For example, if you have an email conversation that includes several email messages, some of which include attachments and some that include embedded images, all of the email messages, attachments, and images are are grouped together in the review set list view under an applicable item.
+- **Group by conversations**: All email messages, Teams conversations, and Yammer conversations are grouped using the same Thread ID and appear as nested items. Additionally, all associated content for these messages and conversations is also grouped together. For example, if you have an email conversation that includes several email messages, some of which include attachments and some that include embedded images, all of the email messages, attachments, and images are grouped together in the review set list view under an applicable item.
 
 >[!NOTE]
 > For cases created before April 28, 2023, the **Enable group** toggle is disabled and these grouping options aren't available. Item grouping in review sets for these cases is based on *Family ID* and *Converstion ID* described in Option 2.
 
 ### Option 2: Group items with Family ID and Conversation ID
 
-If you're en existing eDiscovery with a large number of existing cases or use existing internal or third-party automation to help process review set items, you may want to continue to group review set items with [Family IDs and Conversation IDs](ediscovery-document-metadata-fields.md). With the **Enable group** option [disabled in the case settings](ediscovery-configure-review-set-settings.md), you'll see the following grouping options on the **Group** control in the command bar of a review set:
+If you're an existing eDiscovery with a large number of existing cases or use existing internal or third-party automation to help process review set items, you may want to continue to group review set items with [Family IDs and Conversation IDs](ediscovery-document-metadata-fields.md). With the **Enable group** option [disabled in the case settings](ediscovery-configure-review-set-settings.md), you'll see the following grouping options on the **Group** control in the command bar of a review set:
 
 - **Group family attachments**: View review set content grouped by family. Each transcript file is displayed on a line in the list of review set items. Attachments are nested under the item.
 - **Group Teams or Yammer conversations**: View Teams and Yammer content grouped by conversation. Each conversation is displayed on a line in the list of review set items. Transcript files and attachments are nested under the top-level conversation.

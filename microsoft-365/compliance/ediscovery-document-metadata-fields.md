@@ -168,7 +168,7 @@ This table provides the following information:
 |Tags|Tags|Tags|Tags applied in a review set.|
 |Team Name|TeamName|TeamName|**Teams:** Name of team<br>**Yammer:** Community name|
 |Themes list|ThemesList|Themes_list|Themes list as calculated for analytics.|
-|Thread ID|ThreadId|Thread_ID|The Thread ID from email messages and Teams and Yammer conversations. For email messages, all reply messages and attachments share the same Thread ID. For Teams 1:1 and group chats, all transcript files and their family items within the same conversation share the same Thread ID. For more information, see [eDiscovery (Premium) workflow for content in Microsoft Teams](ediscovery-teams-workflow.md).|
+|Thread ID|ThreadId|Thread_ID|The Thread ID from email messages, Teams conversations, and Yammer conversations. For email messages, all reply messages and attachments share the same Thread ID. For Teams 1:1 and group chats, all transcript files and their associated items within the same conversation share the same Thread ID. For more information, see [View documents in a review set](ediscovery-view-documents-in-review-set.md#grouping).|
 |Title|Title|Doc_title|Title from the document metadata. Title from the document metadata. For Teams and Yammer content, this is the value from the ConversationName property.|
 |To|To|Email_to|To field for message types. The format is *DisplayName\<SmtpAddress>*|
 |Unique in email set|UniqueInEmailSet|*Not exported*|*False* if there's a duplicate of the attachment in its email set.|

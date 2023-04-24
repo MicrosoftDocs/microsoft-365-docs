@@ -38,7 +38,6 @@ You can configure settings for each Microsoft Purview eDiscovery (Premium) case 
 To configure search and analytics settings for a case:
 
 1. On the **eDiscovery (Premium)** page, select the case.
-
 2. On the **Settings** tab, under **Search & analytics**, choose **Select**. The case settings page is displayed. These settings are applied to all review sets in a case.
 
 The following sections in this article describe the analytics settings that you can configure for a case.
