@@ -20,7 +20,7 @@ ms.collection:
 description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/12/2023
+ms.date: 4/20/2023
 ---
 
 # Recommended settings for EOP and Microsoft Defender for Office 365 security
@@ -47,7 +47,7 @@ This article describes the default settings, and also the recommended Standard a
 >
 > - [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md)
 > - [About junk email settings in Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
-> - [Change the level of protection in the Junk Email Filter](https://support.microsoft.com/en-us/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
+> - [Change the level of protection in the Junk Email Filter](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
 > - [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)
 > - [Create blocked sender lists in EOP](create-block-sender-lists-in-office-365.md)
 
@@ -146,7 +146,7 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 
 Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
-The policy named AdminOnlyAccessPolicy enforces the historical capabilities for messages that were quarantined as malware as described in the table [here](quarantine-end-user.md). 
+The policy named AdminOnlyAccessPolicy enforces the historical capabilities for messages that were quarantined as malware as described in the table [here](quarantine-end-user.md).
 
 Users can't release their own messages that were quarantined as malware, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware messages.
 
@@ -188,7 +188,7 @@ Admins can create or use quarantine policies with more restrictive or less restr
 |**Phishing threshold & protection**|||||
 |**Enable spoof intelligence** <br><br> _EnableSpoofIntelligence_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Actions**|||||
-|**If message is detected as spoof** <br><br> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). <br><br> If you select **Quarantine the message** as the action for the spoof verdict, an **Apply quarantine policy** box is available.|
+|**If the message is detected as spoof by spoof intelligence** <br><br> _AuthenticationFailAction_|**Move the message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Move the message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). <br><br> If you select **Quarantine the message** as the action for the spoof verdict, an **Apply quarantine policy** box is available.|
 |**Quarantine policy** for **Spoof** <br><br> _SpoofQuarantineTag_|DefaultFullAccessPolicy¹|DefaultFullAccessPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if spoof detections are quarantined.|
 |**Show first contact safety tip** <br><br> _EnableFirstContactSafetyTips_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|For more information, see [First contact safety tip](anti-phishing-policies-about.md#first-contact-safety-tip).|
 |**Show (?) for unauthenticated senders for spoof** <br><br> _EnableUnauthenticatedSender_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Unauthenticated sender indicators](anti-phishing-policies-about.md#unauthenticated-sender-indicators).|
@@ -248,11 +248,11 @@ Admins can create or use quarantine policies with more restrictive or less restr
 |**Enable mailbox intelligence** <br><br> _EnableMailboxIntelligence_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Enable intelligence for impersonation protection** <br><br> _EnableMailboxIntelligenceProtection_|Off <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|This setting allows the specified action for impersonation detections by mailbox intelligence.|
 |**Actions**|||||
-|**If message is detected as an impersonated user** <br><br> _TargetedUserProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Quarantine the message** <br><br> `Quarantine`|**Quarantine the message** <br><br> `Quarantine`||
+|**If a message is detected as user impersonation** <br><br> _TargetedUserProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Quarantine the message** <br><br> `Quarantine`|**Quarantine the message** <br><br> `Quarantine`||
 |**Quarantine policy** for **user impersonation** <br><br> _TargetedUserQuarantineTag_|DefaultFullAccessPolicy¹|DefaultFullAccessWithNotificationPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if user impersonation detections are quarantined.|
-|**If message is detected as an impersonated domain** <br><br> _TargetedDomainProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Quarantine the message** <br><br> `Quarantine`|**Quarantine the message** <br><br> `Quarantine`||
+|**If a message is detected as domain impersonation** <br><br> _TargetedDomainProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Quarantine the message** <br><br> `Quarantine`|**Quarantine the message** <br><br> `Quarantine`||
 |**Quarantine policy** for **domain impersonation** <br><br> _TargetedDomainQuarantineTag_|DefaultFullAccessPolicy¹|DefaultFullAccessWithNotificationPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if domain impersonation detections are quarantined.|
-|**If mailbox intelligence detects an impersonated user** <br><br> _MailboxIntelligenceProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`||
+|**If mailbox intelligence detects an impersonated user** <br><br> _MailboxIntelligenceProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Move the message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`||
 |**Quarantine policy** for **mailbox intelligence impersonation** <br><br> _MailboxIntelligenceQuarantineTag_|DefaultFullAccessPolicy¹|DefaultFullAccessPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if mailbox intelligence detections are quarantined.|
 |**Show user impersonation safety tip** <br><br> _EnableSimilarUsersSafetyTips_|Off <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Show domain impersonation safety tip** <br><br> _EnableSimilarDomainsSafetyTips_|Off <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`||
@@ -300,7 +300,7 @@ In PowerShell, you use the [New-SafeAttachmentPolicy](/powershell/module/exchang
 
 Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
-The **Quarantine policy** value is blank when you create a new Safe Attachments policy in the Defender portal. This blank value means the default quarantine policy named AdminOnlyAccessPolicy is used. This policy enforces the historical capabilities for messages that were quarantined as malware by Safe Attachments as described in the table [here](quarantine-end-user.md). 
+The policy named AdminOnlyAccessPolicy enforces the historical capabilities for messages that were quarantined as malware as described in the table [here](quarantine-end-user.md).
 
 Users can't release their own messages that were quarantined as malware by Safe Attachments, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware messages.
 
@@ -320,17 +320,9 @@ Although there's no default Safe Links policy, the **Built-in protection** prese
 #### Global settings for Safe Links
 
 > [!NOTE]
-> The global settings for Safe Links are set by the **Built-in protection** preset security policy, but not by the **Standard** or **Strict** preset security policies. Either way, admins can modify these global Safe Links settings at any time.
+> The only available global setting for Safe Links is the "Block the following URLs" list. As of April 1 2023, the "Block the following URLs" list for Safe Links no longer works. For more information, see [MC373880](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC373880). Instead, use [block entries for URLs in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). Messages that are blocked by URL entries in the Tenant Allow/Block List are quarantined as high confidence phishing.
 >
-> The **Default** column shows the values before the existence of the **Built-in protection** preset security policy. The **Built-in protection** column shows the values that are set by the **Built-in protection** preset security policy, which are also our recommended values.
-
-To configure these settings, see [Configure global settings for Safe Links in Defender for Office 365](safe-links-policies-global-settings-configure.md).
-
-In PowerShell, you use the [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
-
-|Security feature name|Default|Built-in protection|Comment|
-|---|:---:|:---:|---|
-|**Block the following URLs** <br><br> _ExcludedUrls_|Blank <br><br> `$null`|Blank <br><br> `$null`|We have no specific recommendation for this setting. <br><br> For more information, see ["Block the following URLs" list for Safe Links](safe-links-about.md#block-the-following-urls-list-for-safe-links). <br><br> **Note**: You can now manage block URL entries in the [Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.|
+> To see and remove any leftover URL entries in the "Block the following URLs list, see [Configure the "Block the following URLs" list for Safe Links in Defender for Office 365](safe-links-policies-global-settings-configure.md).
 
 #### Safe Links policy settings
 
