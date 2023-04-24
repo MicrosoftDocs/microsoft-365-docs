@@ -122,8 +122,6 @@
   items:
     - name: Top 10 ways to secure your business data
       href: secure-your-business-data.md
-    - name: Glossary of security terms
-      href: m365bp-glossary.yml
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 admin content
