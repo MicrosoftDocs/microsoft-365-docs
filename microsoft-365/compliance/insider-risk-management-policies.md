@@ -198,7 +198,7 @@ Complete the following steps to manage an existing policy:
 7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering security and compliance related events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy. Guest user accounts aren't supported.
 
     > [!NOTE]
-    > To take advantage of real-time analytics (preview) for threshold settings, you must scope your policy to **Include all users and groups**. Real-time analytics enables you to see estimates of the number of users affected by changes to threshold settings in real time. Scoping your policy to **Include all users and groups** also provides better overall protection across your tenant. For more information on real-time analytics for threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
+    > To take advantage of real-time analytics (preview) for indicator threshold settings, you must scope your policy to **Include all users and groups**. Real-time analytics enables you to see the number of users that could potentially match a given set of policy conditions in real time. This helps you efficiently adjust the selection of indicators and thresholds of activity occurrence so they don’t have too few or too many policy alerts. Scoping your policy to **Include all users and groups** also provides better overall protection across your tenant. For more information on real-time analytics for threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
 
 8. Select **Next** to continue.
 9. On the **Content to prioritize** page, you can assign (if needed) the sources to prioritize, which increases the chance of generating a high severity alert for these sources. Select one of the following choices:
@@ -206,7 +206,7 @@ Complete the following steps to manage an existing policy:
     - **I want to prioritize content**. Selecting this option will enable you to prioritize *SharePoint sites*, *Sensitivity labels*, *Sensitive info types*, and *File extensions* content types. If you choose this option, you must select at least one priority content type.
 
        > [!NOTE]
-       > To take advantage of real-time analytics (preview) for threshold settings, you must choose the **I don't want to specify priority content right now** option. For more information on real-time analytics for threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
+       > At this time, real-time analytics insights for indicator thresholds doesn't account for priority content events. So, if you want to take advantage of real-time analytics (preview) for configuring threshold settings, you must choose the **I don't want to specify priority content right now** option. For more information on real-time analytics for indicator threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
 
     - **I don't want to specify priority content right now**. Selecting this option will skip the priority content detail pages in the wizard.
 
@@ -247,11 +247,11 @@ Complete the following steps to manage an existing policy:
 
     > [!NOTE]
     > If analytics is turned on, and if you've scoped the policy to include all users and haven't chosen to prioritize content, you'll see:
-    > - A gauge that shows the number of distinct users who have exceeded thresholds for at least one indicator. 
-    > - A list of the top five activities that are contributing to alert generation. If your policies are generating a lot of alerts, these are the indicators to focus on to reduce "noise".
-    > - An insight for each set of thresholds. The initial insights are based on the default threshold values. If you adjust the threshold setting, the insight changes in real time so you can see the number of estimated users that will be affected by the threshold change. 
+    > - A gauge that shows the approximate number of distinct users with activity levels exceeding the lowest daily thresholds for at least one indicator in the policy and the total count of distinct users who had activities that matched at least one indicator in the policy. This gauge can help you estimate the number of alerts that might get generated if all the users in the policy were being assigned risk scores.
+    > - A list of the top five indicators sorted by the number of users exceeding the lowest daily thresholds. If your policies are generating a lot of alerts, these are the indicators you might want to focus on to reduce "noise".
+    > - An insight for each indicator, displayed below the thresholds. The insight shows the approximate count of distinct users with activity levels that exceeded the currently specified low thresholds for this indicator. For example, if the low threshold setting for *Downloading content from SharePoint* is set to 100, the insight shows the number of distinct users in the policy who did more than 100 download activities on average in the past 10 days. If you adjust the threshold setting to 200, the insight will update in real time to show you the number of users with activity levels that exceed the new thresholds. This helps you quickly configure the right thresholds for each indicator and achieve the highest level of alert effectiveness before pushing your policies live. 
     >
-    > For more information on real-time analytics for threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
+    > For more information on real-time analytics for indicator threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
 
 23. Select **Next** to continue.
 24. On the **Review** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
