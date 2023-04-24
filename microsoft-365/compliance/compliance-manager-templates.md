@@ -38,7 +38,7 @@ Each regulatory template also comes in a universal version, which provides gener
 
 ## Regulation availability and licensing
 
-The [Microsoft data protection baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) regulatory template is available for all organizations. The regulations designated as **premium** require purchase of a license to use them. Once you purchase a license for a regulation, you can create as many assessments for that regulation as you wish. Depending on your [licensing agreement](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager), your organization may be able to use up to three additional **premium** regulatory templates for free. When you begin creating assessments, Compliance Manager tracks how many templates are active so you can monitor your usage. To learn more, see [Active and inactive templates](#active-and-inactive-regulations).
+The [Microsoft data protection baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) regulatory template is available for all organizations. The regulations designated as **premium** require purchase of a license to use them. Once you purchase a license for a regulation, you can create as many assessments for that regulation as you wish. Depending on your [licensing agreement](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager), your organization may be able to use up to three additional **premium** regulatory templates for free. When you begin creating assessments, Compliance Manager tracks how many templates are active so you can monitor your usage. To learn more, see [Active and inactive regulations](#active-and-inactive-regulations).
 
 ### Purchasing premium regulations
 
@@ -52,9 +52,7 @@ Licenses for premium regulatory templates can be obtained in various ways, depen
 
 ##### Staring a premium trial
 
-To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
-
-If your organization has a commercial license for Compliance Manager, you can learn how to start your trial at [About the free trial for Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md). If your organization is under a GCC or DOD license, choose the appropriate trial link for your organization:
+You can try out premium regulation templates by acquiring trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours. If your organization has a commercial license for Compliance Manager, you can learn how to start your trial at [About the free trial for Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md). If your organization is under a GCC or DOD license, choose the appropriate trial link for your organization:
 
 - [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
 - [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
@@ -67,7 +65,7 @@ Regulations display a status as either active or inactive:
 - **Active** indicates use in at least one assessment.
 - **Inactive** indicates it's not being used for an assessment.
 
-A regulation becomes When you use a premium regulation to create an assessment, that regulation's availability status changes to **Active** and the purchased license is active for one year. Your purchase will automatically renew unless you cancel.
+When you use a premium regulation to create an assessment, that regulation's availability status changes to **Active** and the purchased license is active for one year. Your purchase will automatically renew unless you cancel.
 
 ### Activated regulations counter
 
