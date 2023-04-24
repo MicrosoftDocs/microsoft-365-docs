@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 04/18/2023
+ms.date: 04/20/2023
 ms.reviewer: efratka, jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -23,7 +23,11 @@ ms.collection:
 
 # Set up and configure Microsoft Defender for Business
 
-After you have [signed up for Defender for Business](get-defender-business.md), and you have [added users and assigned licenses](mdb-add-users.md), you're ready to set up and configure Defender for Business. 
+This article describes the overall setup process for Defender for Business. The process includes:
+
+- Getting Defender for Business and assigning licenses to users.
+- Assigning permissions to your security team and configuring email notifications about new alerts or vulnerabilities.
+- Onboarding devices and configuring your security policies and settings.
 
 ## Setup options
 
@@ -39,6 +43,8 @@ When you're ready to set up and configure Defender for Business, you can choose 
 
 > [!IMPORTANT]
 > You must be a global administrator to run the setup wizard. See [Security roles and permissions in Defender for Business](mdb-roles-permissions.md).
+> 
+> Make sure to [add users](mdb-add-users.md) (especially members of your security team) before you run the setup wizard. 
 
 ## How to start the setup wizard
 

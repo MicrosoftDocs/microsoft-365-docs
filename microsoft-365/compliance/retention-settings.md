@@ -272,7 +272,7 @@ With these concatenated settings, users will be able to delete the item from the
 
 - If the replacement label marks the item as a record or regulatory record but can't be applied because the file is currently checked out, the relabel process is retried when the file is checked back in again, or checkout is discarded.
 
-- As a known issue for this preview, a replacement label is visible to users in Outlook only when that label is included in a published label policy for the same location, or it's configured for delete-only.
+- A replacement label is visible to users in Outlook only when that label is included in a published label policy for the same location, or it's configured for delete-only.
 
 ##### Configuration paths for relabeling
 

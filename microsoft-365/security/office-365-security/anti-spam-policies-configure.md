@@ -17,7 +17,7 @@ ms.custom:
 description: Admins can learn how to view, create, modify, and delete anti-spam policies in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/19/2023
+ms.date: 4/21/2023
 ---
 
 # Configure anti-spam policies in EOP
@@ -213,20 +213,27 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 
    2. In the flyout that opens, do the following steps:
       1. Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add senders** or **Add domains**.
-      2. In the **Add senders** or **Add domains** flyout that appears, enter the sender's email address in the **Sender** box or the domain in the **Domain** box. As you're typing, the value appears below the box. When you're finished typing the email address or domain, select the value below the box.
+      2. In the **Add senders** or **Add domains** flyout that opens, enter the sender's email address in the **Sender** box or the domain in the **Domain** box. As you're typing, the value appears below the box. When you're finished typing the value, select the value below the box.
       3. Repeat the previous step as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
       When you're finished in the **Add senders** or **Add domains** flyout, select **Add senders** or **Add domains**.
 
-      Back on the first flyout, the senders or domains that you added are listed on the flyout. To remove an entry from this flyout, select the sender or domain by selecting the round check box that appears next to the entry, and then select the :::image type="icon" source="../../media/m365-cc-sc-remove-selected-users-icon.png" border="false"::: action that appears.
+      Back on the first flyout, the senders or domains that you added are listed.
 
       To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
 
-      Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find senders or domains on the flyout.
+       Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find entries on the flyout.
 
-      When you're finished on the flyout, select **Done**.
+       To add entries, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add senders** or **Add domains** and repeat the previous steps.
 
-      Back on the **Allow & block list** page, select **Next** when you're read to continue.
+       To remove entries, do either of the following steps:
+
+       - Select one or more entries by selecting the round check box that appears in the blank area next to the sender or domain value.
+       - Select all entries at once by selecting the round check box that appears in the blank area next to the column header.
+
+       When you're finished on the flyout, select **Done** to return to the **Allow & block list** page.
+
+   When you're finished on the **Allow & block list** page, select **Next**.
 
 8. On the **Review** page, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can select **Back** or the specific page in the wizard.
 
