@@ -32,74 +32,49 @@ description: "Understand how to use and manage regulatory templates for building
 
 ## Regulations overview
 
-The **Regulations** tab displays the list of regulations and certifications for which Compliance Manager provides control-mapping templates for building assessments. Our comprehensive [set of regulatory templates](compliance-manager-templates-list.md) can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. When you build an assessment, you'll select the services you want to assess for that regulation. Setting up Compliance Manager for multicloud support provides you greater automation in testing and monitoring of controls.
+The **Regulations** tab displays the list of regulations and certifications for which Compliance Manager provides control-mapping templates. When you build an assessment, you choose the underlying regulation by selecting from among our [set of regulatory templates](compliance-manager-templates-list.md), then select the services you want to assess for that regulation. Setting up Compliance Manager for multicloud support provides you with greater automation in testing and monitoring of controls.
 
-Each regulatory template also comes in a universal version which provides general control mapping that can broadly apply to services. Universal templates provdide the most general type of implementation guidance and require manual implementation and testing by the organization. Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers cannot currently use universal templates.
+Each regulatory template also comes in a universal version, which provides general control mapping that can broadly apply to services. Universal templates provide the most general type of implementation guidance and require manual implementation and testing by the organization. Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers can't currently use universal templates.
 
 ## Regulation availability and licensing
 
-The [Microsoft data protection baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) regulatory template is available for all organizations. The regulatory templates designated as **premium** regulatory templates require purcahse of a license to use them. Once you purchase a license for a regulation, you can create as many assesments for that regulation as you wish.
+The [Microsoft data protection baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) regulatory template is available for all organizations. The regulations designated as **premium** require purchase of a license to use them. Once you purchase a license for a regulation, you can create as many assessments for that regulation as you wish. Depending on your [licensing agreement](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager), your organization may be able to use up to three additional **premium** regulatory templates for free. When you begin creating assessments, Compliance Manager tracks how many templates are active so you can monitor your usage. To learn more, see [Active and inactive templates](#active-and-inactive-regulations).
 
-Depending on your [licensing agreement](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager), your organization may be able to use up to three additional **premium** regulatory templates for free.
+### Purchasing premium regulations
 
-When you use a regulation to create an assessment, that regulation is considered **active** s used
+Licenses for premium regulatory templates can be obtained in various ways, depending on your Compliance Manager licensing agreement. Once your purchase has been finalized, the templates should become available in your tenant within 48 hours. Licenses for [activated regulations](#active-and-inactive-regulations) are good for one year.
 
-When you begin creating assessments, Compliance Manager will track how many templates are active so you can monitor your usage. To learn more, see [Active and inactive templates](compliance-manager-templates.md#active-and-inactive-templates).
+- **Commercial and GCC Moderate**: Purchase licenses in the admin center ([learn more about subscriptions, licenses, and billing](/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan.
+    - [Commercial](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
+    - [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
+    - You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+- **GCC High and DOD accounts**: Purchase through [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
 
-### Purchase premium template licenses
-
-Template licenses can be obtained by one or more of these methods, depending on your Compliance Manager licensing agreement. Once your purchase has been finalized, the templates should become available in your tenant within 48 hours.
-
-**Commercial and GCC Moderate**
-
-Commercial and GCC Moderate accounts can purchase template licenses in the admin center ([learn more about subscriptions, licenses, and billing](/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan.
-
-Purchase links:
-
-- [Commercial](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
-- [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
-
-You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
-
-**GCC High and DOD accounts**
-
-GCC High and DOD accounts must purchase template licenses through [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
-
-### Try out premium templates
+##### Staring a premium trial
 
 To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
 
-If your organization has a commercial license for Compliance Manager, you can learn how to start your trial at [About the free trial for Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
-
-If your organization is under a GCC or DOD license, choose the appropriate trial link for your organization:
+If your organization has a commercial license for Compliance Manager, you can learn how to start your trial at [About the free trial for Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md). If your organization is under a GCC or DOD license, choose the appropriate trial link for your organization:
 
 - [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
 - [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
 - [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
 
-#### Active and inactive templates
+## Active and inactive regulations
 
-Templates will display an activation status as either active or inactive:
+Regulations display a status as either active or inactive:
 
-- A template is considered **active** once you create an assessment from that template.
-- A template is considered **inactive** if your organization isn't using it for an assessment.
+- **Active** indicates use in at least one assessment.
+- **Inactive** indicates it's not being used for an assessment.
 
-If you link any assessments to a purchased premium template, that template will be active for one year. Your purchase will automatically renew unless you cancel.
+A regulation becomes When you use a premium regulation to create an assessment, that regulation's availability status changes to **Active** and the purchased license is active for one year. Your purchase will automatically renew unless you cancel.
 
-#### Activated templates counter
+### Activated regulations counter
 
-Your **Assessment templates** page has an **Activated/Regulation** counter near the top. The counter displays the number of templates in use out of the number you're eligible to use according to your licensing agreement.
+The **Activated/Regulation** counter near the top of the **Regulations** page represents the number of regulatory templates in use out of the number you're eligible to use according to your licensing agreement and any purchased licenses. For example, if your counter shows 2/5, this means your organization has activated 2 regulations out of the 5 that are available to use. If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium regulations in use.
 
-For example, if your counter shows 2/5, this means your organization has activated 2 templates out of the 5 that are available to use. If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium templates in use.
+Select **View details** the counter to view a detailed list of all regulations in use and their corresponding assessments.
 
-Templates for a pre-defined product, such as Microsoft 365, have joint licensing with the universal versions of the same template. This enables you to use the same underlying regulation across more than one product. Using either or both versions of the same template will only count as one activated template.
+## Regulations details page
 
-Similarly, templates that belong to the same regulation family are also counted as one template. The regulation family is shown in the **Overarching regulation** column on the **Assessment templates** page. When you purchase a template license for a regulation and activate the template, it counts as one activated template even if you create assessments for different levels or versions of that regulation. For example, if you use a template for CMMC Level 1 and a template for CMMC Level 2, your activated templates counter increases by only one.
-
-For further details, see [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
-
-## View and manage templates
-
-The assessment templates page in Compliance Manager displays a list of templates and key details about them. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, who created it, and whether the template is enabled for assessment creation.
-
-Select a template from its row to bring up its details page. This page contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
+Select a regulation from the list on the **Regulations** page to bring up its details page. This page contains a description of the regulation and details about applicable services, the date it was last updated, and tabs for viewing controls and improvement actions.
