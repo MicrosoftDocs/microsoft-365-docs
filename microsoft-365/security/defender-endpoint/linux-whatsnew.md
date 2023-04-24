@@ -33,8 +33,8 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
-	<summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0) </summary>
-	
+	<summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0)</summary>
+
 ## April-2023 Build: 101.98.58 | Release version: 30.123022.19858.0
 
 &ensp;Released: **April 20,2023**<br/>
@@ -53,7 +53,7 @@ This article is updated frequently to let you know what's new in the latest rele
 	- Engine Update to 1.1.20000.2 and Signatures Ver: 1.381.3067.0.
 	- Addressed a health issue in mdatp which occur due to selinux denials.
 	- Bug fixes.
-	
+
 **Known issues**
 
 - While upgrading mdatp to version 101.94.13 or later, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
