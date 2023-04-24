@@ -120,15 +120,15 @@ You can change the name of your assessment after you create it by selecting the 
 
 Each assessment has a details page that gives an at-a-glance view of your progress in completing the assessment. The page shows your progress in completing controls, and the test status of key improvement actions within those controls.
 
-### Overview tab
+The **Overview** section at the far left side gives basic details about the assessment, including its group, regulation, associated services, completion status, and a description.
 
-The overview tab contains a graph showing your percentage toward completion of the assessment. This graph contains a breakdown of points from actions you own, and points from actions owned by Microsoft, so you can see how many more points you need to complete the assessment.
+The **Progress** tab shows your percentage toward completion of the assessment, with a breakdown showing percentage according to each service covered by the assessment. Get specifc details on the progress of each of your services by [viewing service details](#assessment-progress-by-service). See all controls within the assessment and their current staus on the [Controls tab](#controls-tab). Quickly access the status of all your improvement actions for the assessment the [Your improvement actions tab](#your-improvement-actions-tab). The actions handled by Microsoft for the assessment asre listed on the [Microsoft actions tab](#microsoft-actions-tab).
 
-The key improvement actions for controls in the assessment are listed in order of greatest potential impact to earn points. The associated graph details the aggregated test status of your improvement actions so you can quickly gauge what has been tested and what still needs to be done.
+#### Assessment progress by service
 
-To access individual improvement actions, visit the **Controls** tab or the **Your improvement actions** tab.
+saeb...see word doc p 3
 
-### Controls tab
+#### Controls tab
 
 The controls tab displays detailed information for each control mapped to the assessment. A **control status breakdown** chart shows the status of controls by family, so you can see at a glance which groupings of controls need attention.
 
@@ -150,13 +150,13 @@ To view a control's details, select it from its row in the table. The control de
 
 Select an improvement action from the list to drill into the improvement action's details page. The details page shows test status and implementation notes, and launch into the recommended solution.
 
-### Your improvement actions tab
+#### Your improvement actions tab
 
 The tab for your improvement actions lists all the controls in the assessment that are managed by your organization. The status bar details the aggregated test status of your improvement actions in the assessment so you can quickly gauge what has been tested and what still needs to be done. Beneath the bar is the full list of improvement actions and key details, including: test status, the number of potential and earned points, associated regulations and standards, applicable solution, action type, and control family. Learn more about [how actions contribute to your compliance score](compliance-score-calculation.md#action-types-and-points).
 
 Select an improvement action to view its details page, and select the **Launch now** link to open the solution to take action.
 
-### Microsoft actions tab
+#### Microsoft actions tab
 
 The Microsoft actions tab appears for assessments based on templates that support Microsoft products. It lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
 
