@@ -65,7 +65,7 @@ In addition to Microsoft Teams and SharePoint, Microsoft 365 also supports guest
 - Microsoft 365 groups - [Manage guest access in Microsoft 365 groups](../create-groups/manage-guest-access-in-groups.md).
 - Yammer - [Work with external groups in Yammer networks not aligned to native mode](/yammer/work-with-external-users/create-and-manage-external-groups).
 
-For Microsoft Office applications like Microsoft Word and Excel, guest access is controlled by the location of the output file, for example, Microsoft SharePoint, Teams, and OneDrive.
+For Microsoft 365 apps like Microsoft Word and Excel, guest access is controlled by the location of the output file, for example, Microsoft SharePoint, Teams, and OneDrive.
 
 ## Next steps: Add guests in Azure Active Directory
 

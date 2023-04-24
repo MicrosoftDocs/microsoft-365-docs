@@ -67,6 +67,7 @@ If bandwidth utilization isn't a concern, you select **No limit** to allow unlim
 
 These Windows versions support advanced classification scanning and protection:
 
+- all Windows 11 versions
 - Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
 - Windows 10 versions 19H1/19H2 (KB 5007189)
 - Windows 10 RS5 (KB 5006744)
@@ -78,7 +79,7 @@ These Windows versions support advanced classification scanning and protection:
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
 > [!TIP]
-> Advanced classification must be enabled to see contextual text (in preview)  for DLP rule matched events in Activity explorer. Learn more about contextual text at [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  Be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
+> Advanced classification must be enabled to see contextual text  for DLP rule matched events in Activity explorer. Learn more about contextual text at [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  Be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
 
 ### File path exclusions
 
@@ -86,9 +87,9 @@ Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > *
 
 You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP policy enforcement on your devices because they're too noisy or don’t contain files you're interested in. Files in those locations won't be audited and any files that are created or modified in those locations won't be subject to DLP policy enforcement. You can configure path exclusions in DLP settings.
 
-#### Windows 10 devices
+#### Windows 10/11 devices
 
-You can use this logic to construct your exclusion paths for Windows 10 devices:
+You can use this logic to construct your exclusion paths for Windows 10/11 devices:
 
 - Valid file path that ends with `\`, which means only files directly under folder. <br/>For example: `C:\Temp\`
 
@@ -106,7 +107,7 @@ You can use this logic to construct your exclusion paths for Windows 10 devices:
 
 #### macOS devices
 
-Similar to Windows 10 devices you can add your own exclusions for macOS devices.
+Similar to Windows 10/11 devices you can add your own exclusions for macOS devices.
 
 - File path definitions are case insensitive, so `User` is the same as `user`.
 
@@ -124,11 +125,33 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 - /opt/*
 - /Users/*/Library/Application Support/Microsoft/Teams/*
 
+### Network share coverage and exclusions (preview)
+
+> [!IMPORTANT]
+> If you want to use Network share coverage and exclusions, you have to register your tenant at [Network share coverage](https://aka.ms/networkfileshares-edlp).
+
+**Network share coverage and exclusions (preview)** extends endpoint DLP policies and actions to new and edited files on network shares and mapped network drives. If [just in time protection (preview)](endpoint-dlp-learn-about.md#just-in-time-protection-preview) is also enabled, it will also be extended to cover network shares and mapped drives when you enable network share coverage and exclusions. If you want to exclude a specific network path for all monitored devices, add the path value in **Exclude these network share paths**.
+
+|Network share coverage and exclusions (preview) |Just in time protection (preview) |Resultant behavior  |
+|---------|---------|---------|
+|Enabled     |Disabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to.  [Devices actions](dlp-policy-reference.md#devices-actions)        |
+|Disabled    |Enabled         |- Just in time protection is applied only to the files that are on storage devices that are local to the endpoint. |
+|Enabled     |Enabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to. [Devices actions](dlp-policy-reference.md#devices-actions) </br>- Just in time protection is applied to all the network shares and mapped drives that the device is connected to.         |
+
+
+**Network share coverage and exclusions** complements [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions).
+
+|Network share coverage and exclusions|DLP on-premises repositories|Resultant behavior|
+|---------|---------|---------|
+|Enabled| Disabled|- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to. [Devices actions](dlp-policy-reference.md#devices-actions)|
+|Disabled|Enabled|- Policies that are scoped to On-premises repositories can enforce protective actions on on-premises data-at-rest in file shares and SharePoint document libraries and folders.  [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions)|
+|Enabled | Enabled|- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to.  [Devices actions](dlp-policy-reference.md#devices-actions)</br>- Policies that are scoped to On-premises repositories can enforce protective actions on on-premises data-at-rest in file shares and SharePoint document libraries and folders. [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions)  
+
 ### Restricted apps and app groups
 
 #### Restricted apps
 
-**Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10 and macOS devices.
+**Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10/11 and macOS devices.
 
 When **Access by restricted apps** is selected in a policy and a user uses an app that is on the restricted apps list to access a protected file, the activity will be `audited`, `blocked`, or `blocked with override` depending on how you configured it. That is unless the same app is a member of a **Restricted app group**, then the actions configured for activities in the **Restricted app group** override the actions configured for the access activity for the **Restricted apps** list. All activity is audited and available to review in activity explorer.
 
@@ -209,7 +232,7 @@ To prevent sensitive items from being synced to the cloud by cloud sync apps, li
 
 When enabled, Auto-quarantine kicks in when an unallowed app attempts to access a DLP protected sensitive item. Auto-quarantine moves the sensitive item to an admin configured folder and can leave a placeholder **.txt** file in the place of the original. You can configure the text in the placeholder file to tell users where the item was moved to and other pertinent information.  
 
-You can use auto-quarantine to prevent an endless chain of DLP notifications for the user and admins—see [Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)](endpoint-dlp-using.md#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview).
+You can use auto-quarantine to prevent an endless chain of DLP notifications for the user and admins—see [Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine](endpoint-dlp-using.md#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine).
 
 ### Unallowed Bluetooth apps
 
@@ -340,8 +363,6 @@ Here are some examples:
 |*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/|
 |*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
 
-
-
 ### Additional settings for endpoint DLP
 
 #### Business justification in policy tips
@@ -418,7 +439,7 @@ You can assign these policy actions to the group in a DLP policy:
 1. Add other printers as needed.
 1. Select **Close**.
 
-The most common use case is to use printers groups as an allowlist as in the above example for allowing the printing of contracts only to printers that are in the legal department. After you define a printer group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) for more information on configuring policy actions to use authorization groups.
+The most common use case is to use printers groups as an allowlist as in the above example for allowing the printing of contracts only to printers that are in the legal department. After you define a printer group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups) for more information on configuring policy actions to use authorization groups.
 
 ### Removable storage device groups
 
@@ -465,7 +486,7 @@ You can assign these policy actions to the group in a DLP policy:
 1. Add other devices to the group as needed.
 1. Select **Close**.
 
-The most common use case is to use removable storage devices groups as an allowlist as in the above example for allowing the copying of files only to devices that are in the **Backup** group. After you define a removable storage device group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) for more information on configuring policy actions to use authorization groups. While scenario 7 uses printer authorization groups as an example, the principles are identical. The only thing that changes are the names of the groups and the actions you select.
+The most common use case is to use removable storage devices groups as an allowlist as in the above example for allowing the copying of files only to devices that are in the **Backup** group. After you define a removable storage device group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups) for more information on configuring policy actions to use authorization groups. While scenario 7 uses printer authorization groups as an example, the principles are identical. The only thing that changes are the names of the groups and the actions you select.
 
 ### Network share groups
 
@@ -510,7 +531,7 @@ You can assign these policy actions to the group in a DLP policy:
 1. Select **Close**.
 
 
-The most common use case is to use network share group as an allowlist as in the above example for allowing users to save or copy protected files only to the network shares that are defined in the group. After you define a networks share group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) for more information on configuring policy actions to use authorization groups.
+The most common use case is to use network share group as an allowlist as in the above example for allowing users to save or copy protected files only to the network shares that are defined in the group. After you define a networks share group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups) for more information on configuring policy actions to use authorization groups.
 
 ### VPN settings
 
@@ -563,7 +584,7 @@ Get-VpnConnection
 1. Close the item.
 
 > [!IMPORTANT]
-> When you use the VPN list in defining the actions of a policy, you will also see **Corporate network** as an option. **Corporate network** connections are are all connections to your organizations resources.These connections can include VPNs. 
+> When you use the VPN list in defining the actions of a policy, you will also see **Corporate network** as an option. **Corporate network** connections are all connections to your organizations resources. These connections can include VPNs. 
 
 See, [Scenario 8 Network exceptions](endpoint-dlp-using.md#scenario-8-network-exceptions-preview)for more information on configuring policy actions to use network exceptions.
 

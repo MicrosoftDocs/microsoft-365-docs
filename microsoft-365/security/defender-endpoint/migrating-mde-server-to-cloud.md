@@ -22,6 +22,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -45,13 +46,13 @@ To enable Defender for Servers for Azure VMs and non-Azure machines connected th
 
 2. Enable [Microsoft Defender for Cloud](/azure/defender-for-cloud/get-started) on your subscription(s).
 
-3. Enable one of the Microsoft Defender for Server plans on your [subscription(s)](/azure/defender-for-cloud/enable-enhanced-security). In case you're using Defender for Servers Plan 2, make sure to also enable it on the Log Analytics workspace your machines are connected to; it will enable you to use optional features like File Integrity Monitoring, Adaptive Application Controls and more.
+3. Enable one of the Microsoft Defender for Server plans on your [subscription(s)](/azure/defender-for-cloud/enable-enhanced-security). In case you're using Defender for Servers Plan 2, make sure to also enable it on the Log Analytics workspace your machines are connected to; it enables you to use optional features like File Integrity Monitoring, Adaptive Application Controls and more.
 
 4. Make sure the [MDE integration](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows) is enabled on your subscription. If you have pre-existing Azure subscriptions, you may see one (or both) of the two opt-in buttons shown in the image below.
 
      :::image type="content" source="images/mde-integration.png" alt-text="Screenshot that shows how to enable MDE integration." lightbox="images/mde-integration.png":::
 
-   If you have any of these buttons in your environment, make sure to enable integration for both. On new subscriptions, both options will be enabled by default. In this case, you will not see these buttons in your environment.
+   If you have any of these buttons in your environment, make sure to enable integration for both. On new subscriptions, both options are enabled by default. In this case, you won't see these buttons in your environment.
 
 5. Make sure the connectivity requirements for Azure Arc are met. Microsoft Defender for Cloud requires all on-premises and non-Azure machines to be connected via the Azure Arc agent. In addition, Azure Arc doesn't support all MDE supported operating systems. So, learn how to plan for [Azure Arc deployments here](/azure/azure-arc/servers/plan-at-scale-deployment).
 
@@ -81,8 +82,8 @@ Once all prerequisites are met, [connect](/azure/defender-for-cloud/quickstart-o
 
 ## What happens once all migration steps are completed?
 
-Once you've completed the relevant migration steps, Microsoft Defender for Cloud will deploy the `MDE.Windows` or `MDE.Linux` extension to your Azure VMs and non-Azure machines connected through Azure Arc (including VMs in AWS and GCP compute).
+Once you've completed the relevant migration steps, Microsoft Defender for Cloud deploys the `MDE.Windows` or `MDE.Linux` extension to your Azure VMs and non-Azure machines connected through Azure Arc (including VMs in AWS and GCP compute).
 
-The extension acts as a management and deployment interface, which will orchestrate and wrap the MDE installation scripts inside the operating system and reflect its provisioning state to the Azure management plane. The installation process will recognize an existing Defender for Endpoint installation and connect it to Defender for Cloud by automatically adding Defender for Endpoint service tags.
+The extension acts as a management and deployment interface, which orchestrates and wraps the MDE installation scripts inside the operating system and reflect its provisioning state to the Azure management plane. The installation process recognizes an existing Defender for Endpoint installation and connects it to Defender for Cloud by automatically adding Defender for Endpoint service tags.
 
-In case you have Windows Server 2012 R2 or 2016 machines that are provisioned with the legacy, Log Analytics-based Microsoft Defender for Endpoint solution, Microsoft Defender for Cloud's deployment process will deploy the Defender for Endpoint [unified solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). After successful deployment, it will stop and disable the legacy Defender for Endpoint process on these machines.
+In case you have Windows Server 2012 R2 or 2016 machines that are provisioned with the legacy, Log Analytics-based Microsoft Defender for Endpoint solution, Microsoft Defender for Cloud's deployment process deploys the Defender for Endpoint [unified solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). After successful deployment, it will stop and disable the legacy Defender for Endpoint process on these machines.
