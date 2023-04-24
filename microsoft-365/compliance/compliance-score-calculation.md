@@ -1,5 +1,5 @@
 ---
-title: "Compliance Manager scoring"
+title: "Compliance score calculation"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -18,7 +18,7 @@ description: "Understand how Microsoft Purview Compliance Manager calculates a p
 ms.custom: seo-marvel-apr2020
 ---
 
-# Compliance Manager scoring
+# Compliance score calculation
 
 **In this article:** Learn how Compliance Manager calculates a compliance score for your organization. This article explains how to **interpret your score**, what the **Data Protection Baseline assessment** includes, **continuous monitoring**, and **how different types of actions are managed and scored**.
 
