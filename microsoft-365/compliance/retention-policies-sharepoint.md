@@ -69,7 +69,7 @@ The Preservation Hold library works in the following way:
 When a user changes an item that's subject to retention from a retention policy or a retention label that marks items as a record, or deletes any item subject to retention, the original content is copied to the Preservation Hold library. This behavior lets the user to change or delete the  content in their app, while keeping a copy of the original for compliance reasons.
 
  > [!NOTE]
- > Contents preserved in the Preservation Hold library is within users’ personal site. As a result, data in the Preservation Hold Library counts against the user's available storage. 
+ > Contents preserved in the Preservation Hold library are within the user’s personal site. As a result, data in the Preservation Hold library count against the user's available storage. 
 
 A timer job periodically runs on the Preservation Hold library. For content that has been in the Preservation Hold library for more than 30 days, this job compares the content to all queries used by the retention settings for that content. Content that is older than their configured retention period and isn't awaiting [disposition review](disposition.md) is then deleted from the Preservation Hold library, and from the original location if it is still there. This timer job runs every seven days, which means that together with the minimal 30 days, it can take up to 37 days for content to be deleted from the Preservation Hold library.
 
