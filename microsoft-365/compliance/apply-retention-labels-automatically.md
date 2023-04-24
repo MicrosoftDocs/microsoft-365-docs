@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/17/2023
+ms.date: 04/24/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -49,7 +49,7 @@ Use the following instructions for the two admin steps.
 > [!NOTE]
 > Auto-policies use service-side labeling with conditions to automatically apply retention labels to items. You can also automatically apply a retention label with a label policy when you do the following:
 >
-> - Apply a retention label to a document understanding model in Microsoft Syntex
+> - Apply a retention label to a Microsoft Syntex model
 > - Apply a default retention label for SharePoint and Outlook
 > - Apply a retention label to email by using Outlook rules
 >
