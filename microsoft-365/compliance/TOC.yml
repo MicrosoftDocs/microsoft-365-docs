@@ -1779,8 +1779,6 @@
           items:
             - name: Permissions and settings
               href: compliance-manager-setup.md
-            - name: Compliance Manager quickstart
-              href: compliance-manager-quickstart.md
             - name: Configuration Analyzer for Microsoft Purview
               href: compliance-manager-mcca.md
         - name: Multicloud support in Compliance Manager
