@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: Admin
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MOE150
@@ -16,11 +14,13 @@ search.appverid:
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
   - m365-security
+  - tier2
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about the spoof intelligence insight in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/01/2022
 ---
 
 # Spoof intelligence insight in EOP
@@ -61,8 +61,6 @@ The rest of this article explains how to use the spoof intelligence insight in t
 > - The spoof intelligence insight and the **Spoofed senders** tab in the Tenant Allow/Block list replace the functionality of the spoof intelligence policy that was available on the anti-spam policy page in the Security & Compliance Center.
 >
 > - The spoof intelligence insight shows 7 days worth of data. The **Get-SpoofIntelligenceInsight** cmdlet shows 30 days worth of data.
->
-> - The latest available data is 3 to 4 days old.
 
 ## What do you need to know before you begin?
 
@@ -70,18 +68,16 @@ The rest of this article explains how to use the spoof intelligence insight in t
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To modify the spoof intelligence policy or enable or disable spoof intelligence, you need to be a member of one of the following role groups:
-    - **Organization Management**
-    - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
-  - For read-only access to the spoof intelligence policy, you need to be a member of the **Global Reader** or **Security Reader** role groups.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Allow or block spoofed senders or turn on or turn off spoof intelligence_: Membership in one of the following role groups:
+      - **Organization Management**
+      - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
+    - _Read-only access to the spoof intelligence insight_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  > [!NOTE]
-  >
-  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+- For our recommended settings for anti-phishing policies, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 
 - You enable and disable spoof intelligence in anti-phishing policies in EOP and Microsoft Defender for Office 365. Spoof intelligence is enabled by default. For more information, see [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md) or [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 

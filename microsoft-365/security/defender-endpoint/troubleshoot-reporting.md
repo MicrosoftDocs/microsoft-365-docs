@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
+ms.date: 04/08/2021
 ---
 
 # Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance
@@ -34,7 +35,7 @@ search.appverid: met150
 - Windows
 
 > [!IMPORTANT]
-> On March 31, 2020, the Microsoft Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), which allows finer control over security features and updates.
+> On March 31, 2020, the Microsoft Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Intune family of products](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune), which allows finer control over security features and updates.
 
 You can use Microsoft Defender Antivirus with Update Compliance. You'll see status for E3, B, F1, VL, and Pro licenses. However, for E5 licenses, you need to use the [Microsoft Defender for Endpoint portal](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). To learn more about licensing options, see [Windows 10 product licensing options](https://www.microsoft.com/licensing/product-licensing/windows10.aspx).
 
@@ -46,7 +47,7 @@ Typically, the most common indicators of a problem are:
 - You do not see any devices at all
 - The reports and information you do see is outdated (older than a few days)
 
-For common error codes and event IDs related to the Microsoft Defender Antivirus service that are not related to Update Compliance, see [Microsoft Defender Antivirus events](troubleshoot-microsoft-defender-antivirus.md).
+For common error codes and event IDs related to the Microsoft Defender Antivirus service that are not related to Update Compliance, see [Microsoft Defender Antivirus events](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/).
 
 There are three steps to troubleshooting these problems:
 

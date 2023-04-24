@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 09/26/2022
 ---
 
 # Ask Defender Experts

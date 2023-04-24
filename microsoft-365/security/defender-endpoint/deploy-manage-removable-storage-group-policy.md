@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 11/14/2022
+ms.date: 02/13/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
@@ -45,7 +45,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 ## Deploy using group policy
 
-1. Enable or Disable Removable Storage Access Control:
+1. Enable or Disable Removable Storage Access Control (Optional):
 
    You can enable or disable Device control as follows:
 

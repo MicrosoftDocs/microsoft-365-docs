@@ -3,6 +3,7 @@ title: "Microsoft 365 integration with on-premises environments"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise

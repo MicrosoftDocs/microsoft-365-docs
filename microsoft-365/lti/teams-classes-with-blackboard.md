@@ -4,12 +4,15 @@ ms.author: danismith
 author: cichur
 manager: serdars
 ms.reviewer: amitman 
+ms.date: 05/06/2021
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-business
 f1.keywords:
 - CSH
-ms.collection: M365-modern-desktop
+ms.collection: 
+- M365-modern-desktop
+- tier2
 ms.localizationpriority: medium
 description: Use Microsoft Teams classes with Blackboard Learn Ultra.
 ---
@@ -148,7 +151,7 @@ This process can be done either before or after you have configured the LTI appl
 
 If you choose to approve the Blackboard Learn Ultra Teams Classes Azure app before configuring the LTI integrations, you'll need to redirect to the **Microsoft Identity Platform Admin Consent Endpoint**. The URL is shown:
 
-`https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
+`https://login.microsoftonline.com/{tenant}/adminconsent?client_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
 > [!NOTE]
 > You’ll replace **{Tenant}** with your specific institutional Microsoft Azure tenant ID.
@@ -172,3 +175,4 @@ You'll see a permissions window that explains you're giving permission to Blackb
    - If consent hasn’t been approved, follow the steps described to generate the URL for consent and send it to the Microsoft 365 Global Admin for approval.
 
 5. Once you've confirmation of approval, select **Retry** to confirm, and then select **Submit**.
+

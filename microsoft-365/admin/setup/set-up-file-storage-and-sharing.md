@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -38,9 +39,11 @@ description: Learn how to use OneDrive and a team site for Microsoft 365 storage
 
 # Set up file storage and sharing in Microsoft 365
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 One of the best ways to set up file storage and sharing for your business is to use OneDrive and a team site together. This is ideal if you have a small business with a few employees.
 
-## Watch: Where to store files in Office 365
+## Watch: Where to store files in Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
@@ -180,7 +183,7 @@ While you can upload almost all types of files, some file names and characters i
   
 ### Enable or disable third-party storage services
 
-You can enable third-party storage for your users in Microsoft 365 so they can store and share documents using services like Dropbox in addition to OneDrive and team sites. This can be a great way to provide services that your users may already be using or prefer to use for business projects. If you don't want people in your organization using Office to open files in a third-party service, follow these steps to turn it off.
+You can enable third-party storage for your users in Microsoft 365 so they can store and share documents using services like Dropbox in addition to OneDrive and team sites. This can be a great way to provide services that your users may already be using or prefer to use for business projects. If you don't want people in your organization using Microsoft 365 to open files in a third-party service, follow these steps to turn it off.
   
 > [!IMPORTANT]
 > Third-party storage is enabled by default so you need to perform these steps right away if you don't want it available to your users.
@@ -189,7 +192,7 @@ You can enable third-party storage for your users in Microsoft 365 so they can s
 
 2. Go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
 
-3. On the **Services** tab, select **Office on the web**.
+3. On the **Services** tab, select **Microsoft 365 for the web**.
 
 4. Select or deselect the check box to turn third-party storage on or off, then select **Save changes**.
 
@@ -197,13 +200,13 @@ You can enable third-party storage for your users in Microsoft 365 so they can s
 
 - [Customize your team site for file storage and sharing](customize-team-site.md). This step-by-step tutorial shows you how to you can take advantage of more storage and collaboration features.
 
-- **Set up Office apps on your tablets and phones.** You need to do this so you can **edit** files that are stored in OneDrive and on team sites from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files but not edit them.
+- **Set up Microsoft 365 apps on your tablets and phones.** You need to do this so you can **edit** files that are stored in OneDrive and on team sites from your tablet or phone. If you don't install the Microsoft 365 apps for your tablet or phone, you'll be able to view the files but not edit them.
 
-  - [Install and set up Office on an Android with Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
+  - [Install and set up Microsoft 365 on an Android](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
 
-  - [Install and set up Office on an iPhone or iPad with Microsoft 365](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628)
+  - [Install and set up Microsoft 365 on an iPhone or iPad](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628)
 
-  - [Set up Office on Windows Phone with Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
+  - [Set up Microsoft 365 apps and email on a mobile device](https://support.microsoft.com/office/set-up-office-apps-and-email-on-a-mobile-device-7dabb6cb-0046-40b6-81fe-767e0b1f014f)
 
 ## Related content
 

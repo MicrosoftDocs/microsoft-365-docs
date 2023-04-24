@@ -18,7 +18,7 @@ ms.topic: reference
 ms.collection: 
 - m365-security
 - tier2
-ms.date: 1/11/2023
+ms.date: 04/11/2023
 search.appverid: met150
 ---
 
@@ -152,8 +152,8 @@ Links to information about configuration management system versions referenced i
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
-- [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
-- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM is now Microsoft Endpoint Configuration Manager._
+- [Microsoft Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
+- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM is now Microsoft Configuration Manager._
 
 ## Per ASR rule alert and notification details
 
@@ -232,7 +232,7 @@ The **Block abuse of exploited vulnerable signed drivers** rule doesn't block a 
 
 > [!NOTE]
 >
-> You can configure this rule using MEM OMA-URI. See [MEM OMA-URI](enable-attack-surface-reduction.md#mem) for configuring custom rules.
+> You can configure this rule using Intune OMA-URI. See [Intune OMA-URI](enable-attack-surface-reduction.md#custom-profile-in-intune) for configuring custom rules.
 >
 > You can also configure this rule using [PowerShell](enable-attack-surface-reduction.md#powershell).
 >
@@ -328,7 +328,7 @@ This rule blocks the following file types from launching from email opened withi
 
 Intune name: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft Endpoint Manager name: `Block executable content from email client and webmail`
+Microsoft Configuration Manager name: `Block executable content from email client and webmail`
 
 GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
@@ -343,7 +343,7 @@ Dependencies: Microsoft Defender Antivirus
 > The rule **Block executable content from email client and webmail** has the following alternative descriptions, depending on which application you use:
 >
 > - Intune (Configuration Profiles): Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions).
-> - Endpoint Manager: Block executable content download from email and webmail clients.
+> - Configuration Manager: Block executable content download from email and webmail clients.
 > - Group Policy: Block executable content from email client and webmail.
 
 ### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
@@ -375,12 +375,9 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 This rule detects suspicious properties within an obfuscated script.
   
 > [!IMPORTANT]
-> PowerShell scripts have been temporarily excluded from the "Block execution of potentially obfuscated scripts" rule due to the large-scale FP issues faced in the past.
+> PowerShell scripts have been temporarily excluded from the "Block execution of potentially obfuscated scripts" rule due to a high number of false positives. We will provide an update when PowerShell scripts are included again in the scope of this rule.
 
 Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which hampers close scrutiny by humans and security software.
-
-> [!IMPORTANT]
-> Due to the high number of false positives, this rule does not currently detect PowerShell scripts; this is a temporary solution. The rule will be updated and start redetecting PowerShell scripts soon.
 
 Intune name: `Obfuscated js/vbs/ps/macro code`
 
@@ -487,7 +484,7 @@ This rule prevents malware from abusing WMI to attain persistence on a device.
 
 Fileless threats employ various tactics to stay hidden, to avoid being seen in the file system, and to gain periodic execution control. Some threats can abuse the WMI repository and event model to stay hidden.
 
-Intune name: Not available
+Intune name: `Persistence through WMI event subscription`
 
 Configuration Manager name: Not available
 

@@ -1,14 +1,15 @@
 ---
 title: "Compare groups"
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: scotv
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - Tier2
 - scotvorg
@@ -70,8 +71,6 @@ Microsoft 365 Groups can be added to one of the three SharePoint groups (Owners,
 
 Distribution groups are best for situations where you need to broadcast information to a set group of people, such as "People in Building A" or "Everyone at Contoso."
 
-Distribution groups can be [upgraded to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md).
-
 Distribution groups can be added to a team in Microsoft Teams, though only the members are added and not the group itself.
 
 Microsoft 365 Groups can't be members of distribution groups.
@@ -118,6 +117,3 @@ It's not possible to migrate a shared mailbox to a Microsoft 365 Group.
 
 [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[Upgrade distribution lists to Microsoft 365 Groups in Outlook](/microsoft-365/admin/manage/upgrade-distribution-lists)
-
-[Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
