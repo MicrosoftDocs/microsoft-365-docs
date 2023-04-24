@@ -34,6 +34,8 @@ This article is updated frequently to let you know what's new in the latest rele
 
 <details>
 	<summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0)</summary>
+	
+## April-2023 Build: 101.98.58 | Release version: 30.123022.19858.0
 
 &ensp;Released: **April 20,2023**<br/>
 &ensp;Published: **April 20, 2023**<br/>
