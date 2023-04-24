@@ -10,7 +10,7 @@
       href: /microsoft-365/business-premium/m365bp-protect-devices?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/breadcrumb/toc.json
     - name: Add Google Workspace Domain 
       href: add-google-domain.md
-    - name: Install Office apps and Microsoft Teams
+    - name: Install Microsoft 365 apps and Microsoft Teams
       href: ../setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/breadcrumb/toc.json
     - name: Migrate email, calendar, and contacts to Microsoft 365
       href: migrate-email.md

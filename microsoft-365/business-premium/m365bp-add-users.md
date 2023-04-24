@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 09/15/2022
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - tier1
 ms.custom:
@@ -59,4 +59,4 @@ And here's a quick reference to help them get started:
 
 ## See also
 
-[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](secure-your-business-data.md)

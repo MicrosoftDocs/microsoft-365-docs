@@ -9,8 +9,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 01/18/2023
-ms.localizationpriority: high
+ms.date: 03/27/2023
+ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
@@ -21,10 +21,10 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Know what to watch for in email. Train your team to guard against  malware, phishing, and other malicious cyberattacks, using the cybersecurity tools included with Microsoft 365 Business Premium."
+description: "Know what to watch for in email. Train your team to guard against malware, phishing, and other malicious cyberattacks, using the cybersecurity tools included with Microsoft 365 Business Premium."
 ---
 
-# Protect all email
+# Use email securely
 
 :::image type="content" source="media/mission4.png" alt-text="Diagram with Use email securely highlighted.":::
 

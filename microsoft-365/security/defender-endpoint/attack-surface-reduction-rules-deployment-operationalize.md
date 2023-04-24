@@ -10,7 +10,7 @@ ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
-author: dansimp
+author: Dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
@@ -26,6 +26,11 @@ search.appverid: met150
 ---
 
 # Operationalize attack surface reduction (ASR) rules
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 After you've fully deployed attack surface reduction (ASR) rules, it's vital that you have processes in place to monitor and respond to ASR-related activities. Activities include: 
 

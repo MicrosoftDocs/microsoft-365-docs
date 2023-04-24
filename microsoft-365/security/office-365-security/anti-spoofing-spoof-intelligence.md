@@ -61,8 +61,6 @@ The rest of this article explains how to use the spoof intelligence insight in t
 > - The spoof intelligence insight and the **Spoofed senders** tab in the Tenant Allow/Block list replace the functionality of the spoof intelligence policy that was available on the anti-spam policy page in the Security & Compliance Center.
 >
 > - The spoof intelligence insight shows 7 days worth of data. The **Get-SpoofIntelligenceInsight** cmdlet shows 30 days worth of data.
->
-> - The latest available data is 3 to 4 days old.
 
 ## What do you need to know before you begin?
 

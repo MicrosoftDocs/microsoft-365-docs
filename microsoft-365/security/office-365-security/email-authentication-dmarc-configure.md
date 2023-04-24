@@ -37,7 +37,7 @@ DMARC ensures the destination email systems trust messages sent from your domain
 > Visit the [Microsoft Intelligent Security Association (MISA)](https://www.microsoft.com/misapartnercatalog) catalog to view third-party vendors offering DMARC reporting for Microsoft 365.
 
 > [!TIP]
-> **Hove you seen our step-by-step guides?** Configuration 1-2-3s and no frills, for admins in a hurry. Visit for the steps to *[enable DMARC Reporting for Microsoft Online Email Routing Addresses (MOERA) and parked Domains](step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md)*.
+> **Have you seen our step-by-step guides?** Configuration 1-2-3s and no frills, for admins in a hurry. Visit for the steps to *[enable DMARC Reporting for Microsoft Online Email Routing Addresses (MOERA) and parked Domains](step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md)*.
 
 ## How do SPF and DMARC work together to protect email in Microsoft 365?
 

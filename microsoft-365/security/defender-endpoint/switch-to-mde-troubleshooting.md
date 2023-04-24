@@ -1,11 +1,7 @@
 ---
 title: Troubleshooting issues when moving to Microsoft Defender for Endpoint
 description: Learn how to troubleshoot issues when you migrate to Microsoft Defender for Endpoint.
-keywords: migration, windows defender, advanced endpoint protection, antivirus, antimalware, passive mode, active mode, troubleshooting
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
@@ -18,7 +14,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 01/12/2023
+ms.date: 04/19/2023
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.subservice: mde
 search.appverid: met150
@@ -46,18 +42,23 @@ To resolve this issue, take the following steps:
 
 Certain exclusions for Defender for Endpoint must be defined in your existing non-Microsoft endpoint protection solution. Make sure to add the following exclusions:
 
-`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`
 
-`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCnCProxy.exe`
 
-`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`
 
-`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`
 
-`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`
+
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseNdr.exe`
+
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSC.exe`
+
+`C:\Program Files\Windows Defender Advanced Threat Protection\Classification\SenseCE.exe`
 
 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollection`
-
 
 ### Set Microsoft Defender Antivirus to passive mode manually
 
@@ -95,7 +96,7 @@ If Microsoft Defender Antivirus is stuck in passive mode, set it to active mode 
 
 ## I am having trouble re-enabling Microsoft Defender Antivirus on Windows Server 2016
 
-If you are using a non-Microsoft antivirus/antimalware solution on Windows Server 2016, your existing solution might have required Microsoft Defender Antivirus to be disabled or uninstalled. You can use the[ Malware Protection Command-Line Utility](command-line-arguments-microsoft-defender-antivirus.md) to re-enable Microsoft Defender Antivirus on Windows Server 2016.
+If you are using a non-Microsoft antivirus/antimalware solution on Windows Server 2016, your existing solution might have required Microsoft Defender Antivirus to be disabled or uninstalled. You can use the [Malware Protection Command-Line Utility](command-line-arguments-microsoft-defender-antivirus.md) to re-enable Microsoft Defender Antivirus on Windows Server 2016.
 
 1. As a local administrator on the server, open Command Prompt.
 
@@ -107,4 +108,4 @@ If you are using a non-Microsoft antivirus/antimalware solution on Windows Serve
 
 - [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
 
-- [Onboarding tools and methods for Windows devices in Defender for Endpoint](configure-endpoints.md) 
+- [Onboarding tools and methods for Windows devices in Defender for Endpoint](configure-endpoints.md)

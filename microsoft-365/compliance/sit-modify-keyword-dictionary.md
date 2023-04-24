@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 05/04/2021
+ms.date: 03/01/2023
 ms.localizationpriority: medium
 ms.collection:
 - tier1

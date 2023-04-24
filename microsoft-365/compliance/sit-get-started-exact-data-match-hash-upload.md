@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.date: 09/14/2021
+ms.date: 03/01/2023
 ms.localizationpriority: medium
 ms.collection:
 - tier1
@@ -39,17 +39,17 @@ In this phase, you:
 2. Set up the EDM Upload Agent tool.
 3. Use the EDM Upload Agent tool to hash, with a salt value, the sensitive information source table, and upload it.
 
-The hashing and uploading can be done using one computer or you can separate the hashing step from the upload step for greater security.
+The hashing and uploading can be done using one computer or you can separate the hash step from the upload step for greater security.
 
-If you want to hash and upload from one computer, you need to do it from a computer that can directly connect to your Microsoft 365 tenant. This requires that your clear text sensitive information source table file is on that computer for hashing.
+If you want to hash and upload from one computer, you need to do it from a computer that can directly connect to your Microsoft 365 tenant. This requires that your clear-text sensitive information source table file is on that computer for hashing.
 
-If you don't want to expose your clear-text sensitive information source table file on the direct access computer, you can hash it on a computer in a secure location. Then you can copy the hash file and the salt file to a computer that can directly connect to your Microsoft 365 tenant for upload. In the separated hash and upload scenario, you  need the EDMUploadAgent on both computers.
+If you don't want to expose your clear-text sensitive information source table file on the direct access computer, you can hash it on a computer that's in a secure location. Then, you can copy the hash file and the salt file to a computer that can connect directly to your Microsoft 365 tenant for upload. In the separated hash and upload scenario, you'll need the EDMUploadAgent on both computers.
 
 > [!IMPORTANT]
 > If you used the Exact Data Match schema and sensitive information type wizard to create your schema file, you ***must*** download the schema for this procedure if you haven't already done so. See, [Export of the EDM schema file in XML format](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format).
 
 > [!NOTE]
-> If your organization has set up [Customer Key for Microsoft 365 at the tenant level](customer-key-overview.md), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
+> If your organization has set up [Customer Key for Microsoft 365 at the tenant level](customer-key-overview.md), an exact data match will use the encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
 
 ### Best practices
 
@@ -72,20 +72,20 @@ If the tool indicates a mismatch in number of columns, it might be due to the pr
 
 **If you find single quote characters or commas inside a value**: for example the person's name *Tom O'Neil* or the city *'s-Gravenhage*, which starts with an apostrophe character, you need to modify the data export process used to generate the sensitive information table and surround such columns with double quotes.
 
-**If double quote characters are found inside values**, it might be preferable to use the Tab-delimited format for the table that is less susceptible to such issues.
+**If double quote characters are found inside values**, it might be preferable to use the Tab-delimited format for the table, which is less susceptible to such issues.
 
 ### Prerequisites
 
 - a work or school account for Microsoft 365 to add to the **EDM\_DataUploaders** security group
 - a Windows 10, Windows Server 2016 with .NET version 4.6.2, or a Windows Server 2019 machine<!--4.7.2 un comment this around 9/29--> for running the EDMUploadAgent
-- a directory on your upload machine for the:
+- a directory on your upload machine for the following:
   - [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type)
   - your sensitive item file in .csv, .tsv or pipe (|) format, **PatientRecords.csv** in our examples
   - the output hash and salt files created in this procedure
   - the datastore name from the **edm.xml** file, for this example its `PatientRecords`
 
 > [!IMPORTANT]
-Install the [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) in a custom folder so you don't need administrator permissions. If you install it into the default (*Program Files*), administrator permissions are required.
+> Install the [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) in a custom folder so you don't need administrator permissions. If you install it into the default (*Program Files*), administrator permissions are required.
 
 #### Set up the security group and user account
 
@@ -124,7 +124,7 @@ This computer must have direct access to your Microsoft 365 tenant.
    >
    > You can upload data with the EDMUploadAgent to any given data store only twice per day.
 
-3. Authorize the EDM Upload Agent, open Command Prompt window as an administrator, switch to the **C:\EDM\Data** directory and then run the following command:
+3. Authorize the EDM Upload Agent, open Command Prompt window as an administrator, switch to the **C:\EDM\Data** directory, and then run the following command:
 
    `EdmUploadAgent.exe /Authorize`
 
@@ -152,7 +152,7 @@ This computer must have direct access to your Microsoft 365 tenant.
 
    If your sensitive information table has some incorrectly formatted values, but you still want to import the remaining data while ignoring invalid rows, you can use the */AllowedBadLinesPercentage* parameter in the command. The example above specifies a five percent threshold. This means that the tool hashes and uploads the sensitive information table, even if up to five percent of the rows are invalid.
 
-   This command automatically adds a randomly generated salt value to the hash for greater security. Optionally, if you want to use your own salt value, add the **/Salt \<saltvalue\>** to the command. This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.
+   This command automatically adds a randomly-generated salt value to the hash for greater security. Optionally, if you want to use your own salt value, add the **/Salt \<saltvalue\>** to the command. This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.
 
 6. Check the upload status by running this command:
 
@@ -177,7 +177,7 @@ OPTIONAL: If you used the Exact Data Match schema and sensitive information type
 EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
 ````
 
-1. On the computer in the secure environment, run the following command in Command Prompt windows:
+1. On the computer in the secure environment, run the following command in a Command Prompt window:
 
    ```dos
    EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /AllowedBadLinesPercentage [value]
@@ -199,7 +199,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
 2. Copy these files in a secure fashion to the computer you use to upload your sensitive information source table file (PatientRecords) to your tenant.
 
-3. Authorize the EDM Upload Agent, open Command Prompt window as an administrator, switch to the **C:\EDM\Data** directory and then run the following command:
+3. Authorize the EDM Upload Agent, open Command Prompt window as an administrator, switch to the **C:\EDM\Data** directory, and then run the following command:
 
    ```dos
    EdmUploadAgent.exe /Authorize
@@ -222,7 +222,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\**PatientRecords.EdmHash**
    ```
 
-6. To verify that your sensitive data has been uploaded, run the following command in Command Prompt window:
+6. To verify that your sensitive data has been uploaded, run the following command in a Command Prompt window:
 
    ```dos
    EdmUploadAgent.exe /GetDataStore
@@ -230,7 +230,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
    You see a list of data stores and when they were last updated.
 
-7. If you want to see all the data uploads to a particular store, run the following command in a Windows command prompt to see a list of all the data stores and when they were updated:
+7. If you want to see all the data uploads to a particular store, run the following command in a Command Prompt window to see a list of all the data stores and when they were updated:
 
    ```dos
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>

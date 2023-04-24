@@ -26,6 +26,6 @@ After UKG enables SSO for your organization, you'll need to configure the connec
 1. From the left menu, go to **Administration**, then **Application Setup**.
 1. Then, go to **System Configuration** and choose **System Settings**.
 1. Select **Global Values**.
-1. In the **global.oAuth.authCode.redirection.uris** field, enter the value: "https://flw.teams.microsoft.com/shifts-web-app/connectorauthenticationdone".
-1. In the **global.oAuthToken.redirection.domain.whiteList** field, enter the value: "flw.teams.microsoft.com".
+1. In the **global.oAuth.authCode.redirection.uris** field, enter the value: "https://aka.ms/shifts/connector/ukgdimensions/auth".
+1. In the **global.oAuthToken.redirection.domain.whiteList** field, enter the value: "aka.ms".
 1. Select **Save**.
