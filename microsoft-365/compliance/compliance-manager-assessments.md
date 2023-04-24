@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/11/2023
+ms.date: 05/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -32,7 +32,7 @@ description: "Build assessments in Microsoft Purview Compliance Manager to help 
 Compliance Manager helps you create assessments that evaluate your compliance with industry and regional regulations that apply to your organization. Compliance Manager provides ready-to-use templates for over 360 regulations that contain the necessary controls and improvement actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk. All of your assessments are listed on the **Assessments** tab of Compliance Manager.
 
 > [!IMPORTANT]
-> TThe regulations that are available for your organization's use by default depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> The regulations that are available for your organization's use by default depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 #### Data Protection Baseline default assessment
 
@@ -42,9 +42,7 @@ This assessment is used to calculate your initial compliance score the first tim
 
 ## Understand groups before creating assessments
 
-When you create an assessment, you'll need to assign it to a group. Groups are containers that allow you to organize assessments in a way that is logical to you, such as by year or regulation, or based on your organization's divisions or geographies. This is why we recommend planning a grouping strategy before you create assessments.
-
-Below are examples of two groups and their underlying assessments:
+When you create an assessment, you'll need to assign it to a group. Groups are containers that allow you to organize assessments in a way that is logical to you, such as by year or regulation, or based on your organization's divisions or geographies. This is why we recommend planning a grouping strategy before you create assessments. Below are examples of two groups and their underlying assessments:
 
 - **FFIEC IS assessment 2020**
   - FFIEC IS
@@ -91,23 +89,26 @@ To create one or more assessments based on our recommendations, select **Add Rec
 
 1. From your **Assessments** page, select **Add assessment** to begin the assessment creation wizard.
 
-2. On the **Base template** screen, select **Select template** to choose the template for your assessment.
+1. On the **Base your assessment on a regulation** page, select **Select regulation** to choose the regulatory template for the assessment. The **Select regulation** flyout page will open.
 
-3. On the flyout pane, choose the template for the regulation or certification on which to base the assessment. The list of templates divided into included and premium categories ([get details](compliance-manager-templates.md#regulation-availability-and-licensing)). The **Activated/Regulation** counter at the top of the flyout pane shows you how may templates you're using out of the total number available or your organization to use ([learn more](compliance-manager-templates.md#active-and-inactive-templates).) Select the radio button next to your chosen template, then select **Save**. You'll return to your **Base template** screen where you can review template details, then continue by selecting **Next**.
+1. Use the search box to find your desired regulation, then select the check bubble to the left of the regulation name. Select **Save**, confirm your selection, then select **Next**. [Learn more about regulation availability](compliance-manager-templates.md##regulation-availability-and-licensing).
 
-4. **Product, name, and group:** Set these properties to identify your assessment, choose which product it will be evaluating, and assign it to a group.
+1. On the **Add name and group** page, enter values in the following fields.
 
-    - **Product**: Select the product you want your assessment to apply to. If you're using a Microsoft template, such as one designed for Microsoft 365, this field will be populated for you to indicate the appropriate product and can't be changed. If you're using a universal template, select whether you're creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. You can't select a pre-defined Microsoft product when using a universal template.
-    - **Assessment name**: Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you'll receive an error asking you to create a different name.
-    - **Group**: Assign your assessment to a group. You can either:
-        - Select **Use existing group** to assign it to a group you've already created; or
-        - Select **Create new group** to create a new group and assign this assessment to it:
-            - Determine a name for your group and enter it in the field beneath the radio button.
-            - You can **copy data from an existing group**, such as implementation and testing details and documents, by selecting the appropriate boxes.
+    - **Assessment name**: Assessment names must be unique. If the name matches the name of another assessment in any group, you’ll receive an error asking you to create a different name.
+    - **Assessment group**: Assign your assessment to a group in one of two ways:
+        - **Use existing group** to assign it to a group you've already created; or
+        - **Create new group** that you'll assign this assessment to. Enter a name for this group. You also have the option to **Copy data from an existing group**, such as implementation and testing details and documents, by selecting the appropriate boxes.
 
     When finished, select **Next**.
 
-5. **Review and finish:** Review your selections and make any necessary edits. When you're satisfied ready, select **Create assessment**.
+1. On the **Select services** page, designate which services this assessment will apply to. Select the **Select services** command to view a flyout pane showsingwhich services are available to assess for your chosen regulation. Place a check next to your desired services, then select **Add**.
+
+1. If you selected a service that has more than one subscription within it (for example, an Azure subscription for your legal department, and an Azure subscription for your marketing department), you’ll arrive at a sub-step for **Select service subscriptions**. Select **Manage subscriptions**. On the flyout pane, a tab for each service displays a list of all subscriptions within that service. ….do what next?…. 
+
+   On the Select servcies page, select **Next**.
+
+1. **Review and finish:** Review your selections and make any necessary edits. When you're satisfied ready, select **Create assessment**.
 
 The next screen confirms the assessment was created. When you select **Done**, you'll be taken to your new assessment's details page.
 
