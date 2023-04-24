@@ -27,7 +27,13 @@ description: "How to install Office on all devices in Microsoft 365 Business Pre
 # Install Microsoft 365 apps on all devices
 
 Okay, you've set up Microsoft 365 Business Premium, and now you can require users to install individual Microsoft 365 apps on their Mac, PC, or mobile devices. This is something your users should do to be part of the front lines and help protect the org against attack.
-  
+
+> [!NOTE]
+> This article applies primarily to unmanaged (or BYOD) devices. Microsoft 365 admins can manage Microsoft 365 installation options instead. To learn more, see the following articles:
+> - [Managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
+> - [Manage Microsoft 365 installation options in the Microsoft 365 admin center](/DeployOffice/manage-software-download-settings-office-365).
+
+
 ## Watch: Install Microsoft 365 apps
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]

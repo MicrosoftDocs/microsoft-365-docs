@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/31/2023
+ms.date: 04/10/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -81,9 +81,11 @@ For a complete list, see the full list of supported [mailbox filters](/powershel
 
 ### Step 2: Create a role group for each agency
 
-The next step is to create the role groups in the compliance portal that will align with your agencies. We recommend that you create a role group by copying the built-in eDiscovery Managers group, adding the appropriate members, and removing roles that may not be applicable to your needs. For more information about eDiscovery-related roles, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
+The next step is to create the role groups in the compliance portal that will align with your agencies.
   
 To create the role groups, go to the **Permissions** page in the compliance portal and create a role group for each team in each agency that will use compliance boundaries and eDiscovery cases to manage investigations.
+
+We recommend that the role groups created for the compliance boundary don't have any roles attached to it. This role group should only be used to assign users to the role group. Separate built-in (eDiscovery Manager) or custom role groups should be used to assign roles to members. For more information about eDiscovery-related roles, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
   
 Using the Contoso compliance boundaries scenario, four role groups need to be created and the appropriate members added to each one.
   
@@ -91,11 +93,9 @@ Using the Contoso compliance boundaries scenario, four role groups need to be cr
 - Fourth Coffee Investigators
 - Coho Winery eDiscovery Managers
 - Coho Winery Investigators
-  
-To meet the requirements of the Contoso compliance boundaries scenario, you would also remove the **Hold** and **Export** roles from the investigators role groups to prevent investigators from placing holds on content locations and exporting content from a case.
 
 > [!IMPORTANT]
-> If a role is added or removed from a role group that you've added as a member of a case, then the role group will be automatically removed as a member of the case (or any case the role group is a member of). The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. Similarly, if a role group is deleted, it will be removed from all cases it was a member of.
+> If a role is added or removed from a role group that you've added as a member of a case, then the role group is automatically removed as a member of the case (or any case the role group is a member of). The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. If a role group is deleted, it is removed from all cases it was a member of. We recommend that the role groups created for compliance boundaries don't have any roles assigned to them. Use separate built-in/custom role groups to assign roles to members.
 
 ### Step 3: Create a search permissions filter to enforce the compliance boundary
 
@@ -116,7 +116,6 @@ Here's a description of each parameter in the command:
 - `Filters`: Specifies the search criteria for the filter. For compliance boundaries, you define the following filters. Each one applies to different content locations.
 
   - `Mailbox`: Specifies the mailboxes or OneDrive accounts that the role groups defined in the `Users` parameter can search. This filter allows members of the role group to search only the mailboxes or OneDrive accounts in a specific agency; for example, `"Mailbox_Department -eq 'FourthCoffee'"`.
-
   - `SiteContent`: This filter includes two separate filters. The first `SiteContent_Path` specifies the SharePoint sites in the agency that the role groups defined in the `Users` parameter can search. For example, `SiteContent_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee'`. The second `SiteContent_Path` filter (connected to the first `SiteContent_Path` filter by the `or` operator) specifies the agency's OneDrive domain (also called the *MySite* domain). For example, `SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'`. You can also use the `Site_Path` filter in place of the `SiteContent` filter. The `Site` and `SiteContent` filters are interchangeable, and don't affect search permissions filters described in this article.
 
     > [!IMPORTANT]
@@ -163,13 +162,10 @@ The final step is to create a eDiscovery (Standard) case or eDiscovery (Premium)
 To create a case and assign members:
 
 1. Go to the **eDiscovery (Standard)** or **eDiscovery (Premium)** page in the compliance portal and create a case.
-
 2. In the list of cases, select the name of the case you created.
-
 3. Add role groups as members to the case. For instructions, see the one of the following articles:
 
    - [Add members to a eDiscovery (Standard) case](ediscovery-standard-get-started.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
-
    - [Add members to an eDiscovery (Premium) case](ediscovery-add-or-remove-members-from-a-case.md)
 
 > [!NOTE]

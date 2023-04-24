@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/10/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -33,11 +33,8 @@ The Content search tool in the Microsoft Purview compliance portal doesn't provi
 ## Before you run a targeted collection
 
 - You have to be a member of the eDiscovery Manager role group in the compliance portal to run the script in Step 1. For more information, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
-
 - You also have to be assigned the Mail Recipients role in your Exchange Online organization. This is required to run the **Get-MailboxFolderStatistics** cmdlet, which is included in the script. By default, the Mail Recipients role is assigned to the Organization Management and Recipient Management role groups in Exchange Online. For more information about assigning permissions in Exchange Online, see [Manage role group members](/exchange/manage-role-group-members-exchange-2013-help). You could also create a custom role group, assign the Mail Recipients role to it, and then add the members who need to run the script in Step 1. For more information, see [Manage role groups](/Exchange/permissions-exo/role-groups).
-
-- The script in this article supports modern authentication. You can use the script as-is if you are a Microsoft 365 or a Microsoft 365 GCC organization. If you are an Office 365 Germany organization, a Microsoft 365 GCC High organization, or a Microsoft 365 DoD organization, you will have to edit the script to successfully run it. Specifically, you have to edit the line `Connect-ExchangeOnline` and use the *ExchangeEnvironmentName* parameter (and the appropriate value for your organization type) to connect to Exchange Online PowerShell.  Also, you have to edit the line `Connect-IPPSSession` and use the *ConnectionUri* and *AzureADAuthorizationEndpointUri* parameters (and the appropriate values for your organization type) to connect to Security & Compliance PowerShell. For more information, see the examples in [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) and [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
-
+- The script in this article supports modern authentication. You can use the script as-is if you're a Microsoft 365 or a Microsoft 365 GCC organization. If you're an Office 365 Germany organization, a Microsoft 365 GCC High organization, or a Microsoft 365 DoD organization, you'll have to edit the script to successfully run it. Specifically, you have to edit the line `Connect-ExchangeOnline` and use the *ExchangeEnvironmentName* parameter (and the appropriate value for your organization type) to connect to Exchange Online PowerShell.  Also, you have to edit the line `Connect-IPPSSession` and use the *ConnectionUri* and *AzureADAuthorizationEndpointUri* parameters (and the appropriate values for your organization type) to connect to Security & Compliance PowerShell. For more information, see the examples in [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) and [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 - Each time you run the script, a new remote PowerShell session is created. That means you can use up all the remote PowerShell sessions available to you. To prevent this from happening, run the following commands to disconnect your active remote PowerShell sessions.
 
   ```powershell
@@ -47,8 +44,7 @@ The Content search tool in the Microsoft Purview compliance portal doesn't provi
     For more information, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - The script includes minimal error handling. The primary purpose of the script is to quickly display a list of mailbox folder IDs or site paths that can be used in the search query syntax of a Content Search to perform a targeted collection.
-
-- The sample script provided in this topic isn't supported under any Microsoft standard support program or service. The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample script and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
+- The sample script provided in this article isn't supported under any Microsoft standard support program or service. The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample script and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
 ## Step 1: Run the script to get a list of folders for a mailbox or site
 
@@ -57,9 +53,7 @@ The script that you run in this first step will return a list of mailbox folders
 - **Email address or site URL**: Type an email address of the custodian to return a list of Exchange mailbox folders and folder IDs. Or type the URL for a SharePoint site or a OneDrive for Business site to return a list of paths for the specified site. Here are some examples:
 
   - **Exchange**: `stacig@contoso.onmicrosoft.com`
-
   - **SharePoint**: `https://contoso.sharepoint.com/sites/marketing`
-
   - **OneDrive for Business**: `https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
 - **Your user credentials**: The script will use your credentials to connect to Exchange Online PowerShell or Security & Compliance PowerShell using modern authentication. As previously explained, you have to be assigned the appropriate permissions to successfully run this script.
@@ -211,14 +205,112 @@ Here's an example of the output returned by the script for site folders.
 
 ![Example of the list of documentlink names for site folders returned by the script.](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
 
+### Script to pull the FolderID from multiple mailboxes
+
+If you need to group and sort the results of the FolderID conversion in Excel, complete the following steps to enable viewing multiple deleted folders for individual users:
+
+1. Create a .csv file named `UsersGatherFolderIDs` with a column heading of *UsersSMTP*.
+2. Enter the user email addresses in rows for this column of any mailbox folders you want to convert to the folder query syntax.
+3. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `GetMultiUserFolderIDseDiscovery.ps1`
+
+   ```powershell
+    #########################################################################################################
+    #This Sample Code is provided for the purpose of illustration only and is not intended to be used in a production environment. 
+    #THIS SAMPLE CODE AND ANY RELATED INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS OR A PARTICULAR PURPOSE. 
+    #We grant You a nonexclusive, royalty-free right to use and modify the Sample Code and to reproduce and distribute the object code form of the Sample Code, provided that You agree: 
+    # (1) to not use Our name, logo, or trademarks to market Your software product in which the Sample Code is embedded; 
+    # (2) to include a valid copyright notice on Your software product in which the Sample Code is embedded; and 
+    # (3) to indemnify, hold harmless, and defend Us and Our suppliers from and against any claims or lawsuits, including attorney's fees, that arise or result from the use or distribution of the Sample Code.
+    #########################################################################################################
+    " "
+    write-host "***********************************************"
+    write-host "Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
+    write-host "eDiscovery cases - FolderID report         " -foregroundColor yellow -backgroundcolor darkgreen
+    write-host "***********************************************"
+    " "
+    
+    #prompt users to specify a path to store the output files
+    $time = get-date -Format dd-MM-yyyy_hh.mm
+    $Path = Read-Host 'Enter a folder path to save the report to a .csv file (filename is created automatically).'
+    $inputPath = $Path + '\' + 'Users_GatherFolderID.csv'
+    $outputpath = $Path + '\' + 'FileID Report' + ' ' + $time + '.csv'
+    
+    #Imports list of users
+    #User List needs column "UserSMTP" with values of each mailbox's SMTP address.
+    $users = Import-CSV $inputPath
+    
+    function add-tofolderidreport {
+        Param(
+            [string]$UserEmail,
+            [String]$FolderName,
+            [String]$FolderID,
+            [String]$ConvertedFolderQuery
+        )
+        
+        $addRow = New-Object PSObject
+        Add-Member -InputObject $addRow -MemberType NoteProperty -Name "User Email" -Value $useremail
+        Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Folder Name" -Value $FolderName
+        Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Native Folder ID" -Value $FolderID
+        Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Converted Folder Query" -Value $ConvertedFolderQuery
+    
+        $folderIDReport = $addRow | Select-Object "User Email", "Folder Name", "Native Folder ID", "Converted Folder Query"
+        $folderIDReport | export-csv -path $outputPath -notypeinfo -append -Encoding ascii
+    }
+    
+    #get information on the cases and pass values to the FolderID report function
+    foreach ($u in $users) {
+        $userAddress = $u.UserSMTP
+        " "
+        write-host "Gathering list of Folders for User:" $userAddress -ForegroundColor Yellow -BackgroundColor Black
+        " "
+        if ($userAddress.IndexOf("@") -ige 0) {
+            # List the folder Ids for the target mailbox
+            $emailAddress = $userAddress
+            # Connect to Exchange Online PowerShell
+            $folderQueries = @()
+            $folderStatistics = Get-MailboxFolderStatistics $emailAddress
+            foreach ($folderStatistic in $folderStatistics) {
+                $folderId = $folderStatistic.FolderId;
+                $folderPath = $folderStatistic.FolderPath;
+                $encoding = [System.Text.Encoding]::GetEncoding("us-ascii")
+                $nibbler = $encoding.GetBytes("0123456789ABCDEF");
+                $folderIdBytes = [Convert]::FromBase64String($folderId);
+                $indexIdBytes = New-Object byte[] 48;
+                $indexIdIdx = 0;
+                $folderIdBytes | select -skip 23 -First 24 | % { $indexIdBytes[$indexIdIdx++] = $nibbler[$_ -shr 4]; $indexIdBytes[$indexIdIdx++] = $nibbler[$_ -band 0xF] }
+                $folderQuery = "folderid:$($encoding.GetString($indexIdBytes))";
+                $folderStat = New-Object PSObject
+                Add-Member -InputObject $folderStat -MemberType NoteProperty -Name FolderPath -Value $folderPath
+                Add-Member -InputObject $folderStat -MemberType NoteProperty -Name FolderQuery -Value $folderQuery
+                $folderQueries += $folderStat
+    
+                #add information to Report
+                add-tofolderidreport -UserEmail $emailAddress -FolderName $folderPath -FolderID $folderId -ConvertedFolderQuery $folderQuery
+            }
+    
+            #Outputs Exchange Folders for Single User
+            Write-Host "-----Exchange Folders-----" -ForegroundColor Yellow
+            $folderQueries | ft
+            
+        }
+        
+    }
+    
+    #Provides Path of Report
+    " "
+    Write-Host "----- Report Output Available at:" "$outputpath" " -----" -ForegroundColor Yellow -BackgroundColor Cyan
+    " "
+    ```
+4. On your local computer, open Windows PowerShell and go to the folder where you saved the script. Run the script file `GetMultiUserFolderIDseDiscovery.ps1`.
+5. Enter the folder path where you saved the *UsersGatherFolderIDs.csv* file.
+6. The script displays a list of mailbox folders or site folders for the specified users. It also creates a report in the same root folder specified in Step 4.
+
 ## Step 2: Use a folder ID or documentlink to perform a targeted collection
 
 After you've run the script to collect a list of folder IDs or document links for a specific user, the next step to go to the compliance portal and create a new Content Search to search a specific folder. You'll use the  `folderid:<folderid>` or  `documentlink:<path>` property:value pair in the search query that you configure in the Content Search keyword box (or as the value for the  *ContentMatchQuery*  parameter if you use the **New-ComplianceSearch** cmdlet). You can combine the  `folderid` or  `documentlink` property with other search parameters or search conditions. If you only include the  `folderid` or  `documentlink` property in the query, the search will return all items located in the specified folder.
 
 1. Go to <https://compliance.microsoft.com> and sign in using the account and credentials that you used to run the script in Step 1.
-
-2. In the left pane of the compliance center, click **Show all** > **Content search**, and then click **New search**.
-
+2. In the left pane of the compliance portal, select **Show all** > **Content search**, and then select **New search**.
 3. In the **Keywords** box, paste the `folderid:<folderid>` or  `documentlink:<path>/*` value that was returned by the script in Step 1.
 
     For example, the query in the following screenshot will search for any item in the Purges subfolder in the user's Recoverable Items folder (the value of the `folderid` property for the Purges subfolder is shown in the screenshot in Step 1):
@@ -227,17 +319,16 @@ After you've run the script to collect a list of folder IDs or document links fo
     > [!IMPORTANT]
     > documentlink searches require the use of a trailing  `asterisk '/*'`.  
 
-4. Under **Locations**, select **Specific locations** and then click **Modify**.
-
+4. Under **Locations**, select **Specific locations** and then select **Modify**.
 5. Do one of the following, based on whether you're searching a mailbox folder or a site folder:
 
-    - Next to **Exchange email**, click **Choose users, groups, or teams** and then add the same mailbox that you specified when you ran the script in Step 1.
+    - Next to **Exchange email**, select **Choose users, groups, or teams** and then add the same mailbox that you specified when you ran the script in Step 1.
 
       Or
 
-    - Next to **SharePoint sites**, click **Choose sites** and then add the same site URL that you specified when you ran the script in Step 1.
+    - Next to **SharePoint sites**, select **Choose sites** and then add the same site URL that you specified when you ran the script in Step 1.
 
-6. After you save the content location to search, click **Save & run**, type a name for the Content Search, and then click **Save** to start the targeted collection search.
+6. After you save the content location to search, select **Save & run**, type a name for the Content Search, and then select **Save** to start the targeted collection search.
 
 ### Examples of search queries for targeted collections
 
@@ -272,11 +363,7 @@ Here are some examples of using the  `folderid` and  `documentlink` properties i
 Keep the following things in mind when using the script in this article to perform targeted collections.
 
 - The script doesn't remove any folders from the results. So some folders listed in the results might be unsearchable (or return zero items) because they contain system-generated content or because they only contain subfolders and not mailbox items.
-
 - This script only returns folder information for the user's primary mailbox. It doesn't return information about folders in the user's archive mailbox. To return information about folders in the user's archive mailbox, you can edit the script. To do this, change the line `$folderStatistics = Get-MailboxFolderStatistics $emailAddress` to `$folderStatistics = Get-MailboxFolderStatistics $emailAddress -Archive` and then save and run the edited script. This change will return the folder IDs for folders and subfolders in the user's archive mailbox. To search the entire archive mailbox, you can connect all folder ID property:value pairs with an `OR` operator in a search query.
-
 - When searching mailbox folders, only the specified folder (identified by its `folderid` property) will be searched; subfolders won't be searched. To search subfolders, you need to use the  folder ID for the subfolder that you want to search.
-
 - When searching site folders, the folder (identified by its `documentlink` property) and all subfolders will be searched.
-
 - When exporting the results of a search in which you only specified the `folderid` property in the search query, you can choose the first export option, "All items, excluding ones that have an unrecognized format, are encrypted, or weren't indexed for other reasons." All items in the folder will always be exported regardless of their indexing status because the folder ID is always indexed.
