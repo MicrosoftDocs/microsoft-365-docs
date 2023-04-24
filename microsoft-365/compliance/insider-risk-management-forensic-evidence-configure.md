@@ -160,4 +160,4 @@ You must request that forensic evidence capturing is enabled for specific users.
 
 ## Next steps
 
-After you've configured your forensic evidence policy, it may take up to 48 hours for the first eligible clip captures to be available for review in alerts for other policies or as activity in **User Activity Reports**. For more information about managing forensic evidence and reviewing clip captures, see the [Manage information risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-manage) article.
+After you've configured your forensic evidence policy, it may take up to two hours for policy enforcement, given that the forensic evidence clients (installed at the endpoint devices) are online. When a clip is captured by the client, it may take up to one hour before the clip is available to review. For more information about managing forensic evidence and reviewing clip captures, see the [Manage information risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-manage) article.
