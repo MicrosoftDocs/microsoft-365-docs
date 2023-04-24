@@ -211,7 +211,7 @@ When you add internal or external email addresses to the **Users to protect** li
 For detected user impersonation attempts, the following actions are available:
 
 - **Don't apply any action**: This is the default action.
-- **Redirect message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
+- **Redirect the message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
 - **Move messages to the recipients' Junk Email folders**: The message is delivered to the mailbox and moved to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
   - [Quarantine in Microsoft 365](quarantine-email-messages.md)
@@ -237,7 +237,7 @@ By default, no sender domains are configured for impersonation protection, eithe
 For detected domain impersonation attempts, the following actions are available:
 
 - **Don't apply any action**: This is the default value.
-- **Redirect message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
+- **Redirect the message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
 - **Move messages to the recipients' Junk Email folders**: The message is delivered to the mailbox and moved to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
@@ -267,8 +267,8 @@ Mailbox intelligence has two specific settings:
 For impersonation attempts detected by mailbox intelligence, the following actions are available:
 
 - **Don't apply any action**: This is the default value. This action has the same result as when **Enable mailbox intelligence** is turned on but **Enable intelligence impersonation protection** is turned off.
-- **Redirect message to other email addresses**
-- **Move message to the recipients' Junk Email folders**
+- **Redirect the message to other email addresses**
+- **Move the message to the recipients' Junk Email folders**
 - **Quarantine the message**: If you select this action, you can also select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 - **Deliver the message and add other addresses to the Bcc line**
 - **Delete the message before it's delivered**

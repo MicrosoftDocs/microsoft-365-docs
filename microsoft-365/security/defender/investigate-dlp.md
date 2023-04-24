@@ -51,7 +51,7 @@ To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft
 - Microsoft 365 E5/A5 Information Protection and Governance
 
 > [!NOTE] 
-> When you are licensed and eligible for this feature, DLP alerts will automatically flow into Microsoft 365 Defender. Open a support case if you want to disable this feature. 
+> When you are licensed and eligible for this feature, DLP alerts will automatically flow into Microsoft 365 Defender. Open a support case if you want to disable this feature. If you disable this feature the behavior will be reverted to DLP alerts surfacing in the Defender portal as Microsoft Defender for Office alerts.
 
 ## DLP investigation experience in the Microsoft 365 Defender portal
 

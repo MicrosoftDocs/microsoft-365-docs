@@ -60,7 +60,7 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 
 ### Step 3: Use the setup wizard in Defender for Business (recommended)
 
-Defender for Business was designed to save small and medium-sized businesses time and effort. You can do initial setup and configuration through a setup wizard. The setup wizard helps you grant access to your security team, set up email notifications for your security team, and onboard your company's Windows devices. **[Use the setup wizard](mdb-use-wizard.md)**.
+Defender for Business was designed to save small and medium-sized businesses time and effort. You can do initial setup and configuration through a setup wizard. The setup wizard helps you grant access to your security team, set up email notifications for your security team, and onboard your company's Windows devices. **[Use the setup wizard](mdb-setup-configuration.md)**.
 
 > [!NOTE]
 > You can only use the setup wizard once.
@@ -68,7 +68,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 #### Setup wizard flow: what to expect
 
 > [!TIP]
-> **Using the setup wizard is optional.** (See [What happens if I don't use the wizard?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)). If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. See [Step 4: Set up and configure Defender for Business](#step-4-set-up-and-configure-defender-for-business).
+> **Using the setup wizard is optional.** If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. See [Step 4: Set up and configure Defender for Business](#step-4-set-up-and-configure-defender-for-business).
 
 1. **[Assign user permissions](mdb-roles-permissions.md#view-or-edit-role-assignments)**. Grant your security team access to the Microsoft 365 Defender portal.
 
@@ -77,7 +77,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 3. **[Onboard and configure Windows devices](mdb-onboard-devices.md)**. Onboarding devices right away helps protect those devices from day one.
 
    > [!NOTE]
-   > When you use the setup wizard, the system detects if you have Windows devices that are already enrolled in Intune. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once or select specific devices at first and then add more devices later. [Learn more about automatic onboarding](mdb-use-wizard.md#what-is-automatic-onboarding).
+   > When you use the setup wizard, the system detects if you have Windows devices that are already enrolled in Intune. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once or select specific devices at first and then add more devices later. 
 
    To onboard other devices, see [Step 4: Set up and configure Defender for Business](#step-4-set-up-and-configure-defender-for-business).
 
