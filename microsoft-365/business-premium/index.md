@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 04/10/2023
+ms.date: 04/18/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -44,9 +44,6 @@ You are your organization's first and best defense against hackers and cyberatta
 Completing all six missions is the most effective way to thwart hackers, protect against ransomware, and help ensure your organization’s future is safeguarded with the best cybersecurity defenses. 
 
 **Let's get started!**
-
-> [!TIP]
-> If you're new to cybersecurity, or if a term is unclear, see the [glossary of terms](m365bp-glossary.yml).
 
 ## Cybersecurity playbook
 
