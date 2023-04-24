@@ -201,7 +201,7 @@ Exchange public folders, Skype, Teams and Yammer messages don't support retentio
 
 #### Only one retention label at a time
 
-Unlike [sensitivity labels](sensitivity-labels.md), you can't configure priorities for retention labels. Use the following information to understand whether a retention label that's applied to items can be replaced or removed.
+Unlike [sensitivity labels](sensitivity-labels.md), you can't configure priorities for retention labels. Use the following information to understand label behavior for retention labels.
 
 As with sensitivity labels, an item such as an email or document can have only a single retention label applied to it at a time. A retention label can be applied [manually](create-apply-retention-labels.md#manually-apply-retention-labels) by an end user or admin, or automatically by using any of the following methods:
 
