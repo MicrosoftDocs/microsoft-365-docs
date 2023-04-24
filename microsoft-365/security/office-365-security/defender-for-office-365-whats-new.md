@@ -45,7 +45,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## April 2023
 
 - [Using machine learning to drive more effective simulations in Attack Simulation and Training](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/attack-simulation-training-using-machine-learning-to-drive-more/ba-p/3791023): Make use of intelligent predicted compromise rate (PCR) and Microsoft Defender for Office 365 payload recommendations for utilizing high-quality payloads in your simulation. 
-- [Training only campaigns available with an expanded library](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/training-only-campaign-is-now-available-with-an-expanded/ba-p/3795237): Customers can now directly assign training content to their organization without needing to tie training to a phishing simulation campaign. We have also expanded our training module library to more than 70 different modules with even more training content coming (from SANS!)
+- [Training only campaigns available with an expanded library](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/training-only-campaign-is-now-available-with-an-expanded/ba-p/3795237): Customers can now directly assign training content to their organization without needing to tie training to a phishing simulation campaign. We have also expanded our training module library to more than 70 different modules.
 
 ## March 2023
 
