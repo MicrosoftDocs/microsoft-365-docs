@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/21/2023
 audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
@@ -24,7 +24,7 @@ description: "Understand how to use and manage templates for building assessment
 
 # Learn about assessment templates in Compliance Manager
 
-**In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **extending** and **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
+**In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. 
 
 > [!IMPORTANT]
 > The assessment templates that are included by default for your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
@@ -114,27 +114,3 @@ For further details, see [Compliance Manager licensing guidance](/office365/serv
 The assessment templates page in Compliance Manager displays a list of templates and key details about them. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, who created it, and whether the template is enabled for assessment creation.
 
 Select a template from its row to bring up its details page. This page contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
-
-## Create an assessment template
-
-To create your own new template for custom assessments in Compliance Manager, you'll use a specially formatted Excel spreadsheet to assemble the necessary control data. After completing the spreadsheet, you will import it into Compliance Manager. To learn more, see [Create an assessment template](compliance-manager-templates-create.md).
-
-## Modify an assessment template
-
-When working with assessments in Compliance Manager, you may want to modify an assessment template that you've created. The process is similar to the template creation process in that you'll upload a formatted Excel file with your template data. To learn more about how to make changes and how to preserve data you still want to maintain, see [Modify an assessment template](compliance-manager-templates-modify.md).
-
-## Extend an assessment template
-
-Compliance Manager offers the option to add your own controls and improvement actions to an existing template. This process is called extending a template. To extend a template, you will use special instructions for adding to template data, depending on whether you're extending Microsoft assessment templates or universal assessment templates. To learn more, see [Extend an assessment template](compliance-manager-templates-extend.md).
-
-## Format assessment template data in Excel
-
-When creating, modifying, or extending assessment templates in Compliance Manager, you will work with Excel spreadsheets that use a specific format and schema. These specifications must be followed for the files to import correctly. To learn more, see [Format assessment template data in Excel](compliance-manager-templates-format-excel.md).
-
-## Export a template
-
-You can export an Excel file that contains all of a template's data. You'll need to export a template in order to modify it, since this will be the Excel file you edit and upload in the [modification process](compliance-manager-templates-modify.md). You can also export a template for reference if you want to use data from it while constructing a new custom template.
-
-To export your template, go to your template details page and select the **Export to Excel** button.
-
-Note that when exporting a template you extended from a Compliance Manager template, the exported file will only contain the attributes you added to the template. The exported file won’t include the original template data provided by Microsoft. To get such a report, see the instructions for [exporting an assessment report](compliance-manager-assessments.md#export-an-assessment-report).
