@@ -62,6 +62,8 @@ Download the following files:
 
 [!INCLUDE [devices-macos-onboarding-tip](../includes/devices-macos-onboarding-tip.md)]
 
+
+
 > [!NOTE]
 > To download the files:
 > 1. Right-click the link and select **Save link as...**. 
@@ -70,15 +72,18 @@ Download the following files:
 
 ### Get the device onboarding package
 
+:::image type="content" source="../media/device-macos-dnld-install-package-inline.png" alt-text="Screenshot of the Microsoft Intune Configuration settings tab with all fields populated." lightbox="../media/device-macos-dnld-install-package-expanded.png":::
+
+
 1. In **Microsoft Purview Compliance center** open **Settings** > **Device Onboarding** and then choose **Onboarding**.
  
-1. For the **Select operating system to start onboarding process** option, choose **macOS**.
+2. For the **Select operating system to start onboarding process** option, choose **macOS**.
  
-1. For **Deployment method**, choose **Mobile Device Management/Microsoft Intune**.
+3. For **Deployment method**, choose **Mobile Device Management/Microsoft Intune**.
  
-1. Choose **Download onboarding package**. 
+4. Choose **Download onboarding package**. 
 
-1. Extract the .ZIP file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
+5. Extract the .ZIP file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
 
 
 
@@ -119,17 +124,17 @@ Microsoft Endpoint data lost protection (DLP) is installed as a component of Mic
 
 1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com/), open **Apps**.
 
-1. Select **By platform** > **macOS** > **Add**.
+2. Select **By platform** > **macOS** > **Add**.
 
-1. Choose **App type**=**macOS**, and then choose **Select**.
+3. Choose **App type**=**macOS**, and then choose **Select**. Choose **Microsoft Defender for Endpoint**.
 
-1. Keep default values and then choose **Next**.
+4. Keep default values and then choose **Next**.
 
-1. Add assignments and then choose **Next**.
+5. Add assignments and then choose **Next**.
 
-1. Review and then choose **Create**.
+6. Review and then choose **Create**.
 
-1. You can visit **Apps** \> **By platform** \> **macOS** to see the new application in the list of all applications.
+7. You can visit **Apps** \> **By platform** \> **macOS** to see the new application in the list of all applications.
 
 ## Offboard macOS devices using Intune ##
 
