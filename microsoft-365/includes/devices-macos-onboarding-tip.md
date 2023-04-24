@@ -7,6 +7,6 @@ msdate: 04/18/2023
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 > - netfilter.mobileconfig
-> - systex.mobileconfig
+> - sysext.mobileconfig
 >
 > If any of these files are updated, you need to either download the updated bundle, or download each updated file individually.
