@@ -67,7 +67,7 @@ Occasionally, a user may need to be migrated back to the original source. Remove
 Keep track of any user or site you migrate back to the source from the target. After successfully migrating these users or sites back to the source, confirm that the user/sites are accessible.   Then you can remove the redirect link from Target using the **Remove-SPOSite command**.
 
 >[!Important]
->If you do not remove these links after each migration, the user/site will fail to complete because the existing redirect link still being present on the tenant you are attempting to migrate to.
+>Site URL’s must be unique. When migrating a user or site back to the source, the redirect site created on the initial move will use the original URL. This will result in a conflict and cause the migration to fail if not removed. redirect link still being present on the tenant you are attempting to migrate to.
 
 
 ## Other post migration steps
