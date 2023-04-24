@@ -12,6 +12,7 @@ ms.reviewer: dmwmsft
 ms.date: 09/20/2022
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ---
