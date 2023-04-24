@@ -72,7 +72,7 @@ When content has retention settings assigned to it, that content remains in its 
 - For Teams and Yammer messages: The copy is retained in a hidden folder named **SubstrateHolds** as a subfolder in the Exchange **Recoverable Items** folder.
 
 > [!NOTE]
-> Because the Preservation Hold library is included in the site's storage quota, you might need to increase your storage when you use retention settings for SharePoint and Microsoft 365 groups.
+> Because the Preservation Hold library is included in the site's storage quota, you might need to increase your storage when you use retention settings for SharePoint, OneDrive, and Microsoft 365 groups.
 >
 These secure locations and the retained content aren't visible to most people. In most cases, people don't even need to know that their content is subject to retention settings.
 
