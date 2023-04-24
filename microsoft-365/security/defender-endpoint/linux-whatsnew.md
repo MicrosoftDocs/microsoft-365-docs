@@ -33,7 +33,7 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
-	<summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0)</summary>
+	<summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0) </summary>
 	
 ## April-2023 Build: 101.98.58 | Release version: 30.123022.19858.0
 
@@ -86,7 +86,6 @@ sudo systemctl disable mdatp
 ```
 </details>
 
-
 <details>
 	<summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
 
@@ -98,6 +97,7 @@ sudo systemctl disable mdatp
 &ensp;Release version: **30.123012.19830.0**<br/>
 &ensp;Engine version: **1.1.19900.2**<br/>
 &ensp;Signature version: **1.379.1299.0**<br/>
+	
 **What's new**
 - This new release is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customers. There is no change for other customers and upgrade is optional. 
 	
