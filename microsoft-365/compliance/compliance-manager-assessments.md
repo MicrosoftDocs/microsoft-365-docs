@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 01/11/2023
+ms.date: 05/11/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -29,20 +29,16 @@ description: "Build assessments in Microsoft Purview Compliance Manager to help 
 
 ## Introduction to assessments
 
-Compliance Manager helps you create assessments that evaluate your compliance with industry and regional regulations that apply to your organization. Assessments are built upon the framework of assessment templates, which contain the necessary controls, improvement actions, and, where applicable, Microsoft actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk.
-
-All of your assessments are listed on the assessments tab of Compliance Manager. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
+Compliance Manager helps you create assessments that evaluate your compliance with industry and regional regulations that apply to your organization. Compliance Manager provides ready-to-use templates for over 360 regulations that contain the necessary controls and improvement actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk. All of your assessments are listed on the **Assessments** tab of Compliance Manager.
 
 > [!IMPORTANT]
-> The assessment templates that are included by default for your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> TThe regulations that are available for your organization's use by default depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
-## Data Protection Baseline default assessment
+#### Data Protection Baseline default assessment
 
-To get you started, Microsoft provides a **default** assessment in Compliance Manager for the **Microsoft 365 data protection baseline**. This baseline assessment has a set of controls for key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
+To get you started, Microsoft provides a **default** assessment for the **Microsoft 365 data protection baseline**. This baseline assessment has a set of controls for key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-This assessment is used to calculate your initial compliance score the first time you come to Compliance Manager, before you configure any other assessments. Compliance Manager collects initial signals from your Microsoft 365 solutions. You'll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
-
-Compliance Manager becomes more helpful as you build and manage your own assessments to meet your organization's particular needs.
+This assessment is used to calculate your initial compliance score the first time you come to Compliance Manager, before you configure any other assessments. Compliance Manager collects initial signals from your Microsoft 365 solutions. You'll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take. Compliance Manager becomes more helpful as you build and manage your own assessments to meet your organization's particular needs.
 
 ## Understand groups before creating assessments
 
@@ -58,13 +54,10 @@ Below are examples of two groups and their underlying assessments:
 
 Different assessments within a group or groups may share improvement actions. Improvement actions may be changes you make within technical solutions mapped to your tenant, like turning on two-factor authentication, or to non-technical actions you perform outside the system, like instituting a new workplace policy. Any updates in details or status that you make to a technical improvement action will be picked up by assessments across all groups. Non-technical improvement action updates will be recognized by assessments within the group where you apply them. This allows you to implement one improvement action and meet several requirements simultaneously.
 
-### Create a group
+#### What to know when working with groups
 
-You can create a group while creating a new assessment. Groups can't be created as standalone entities.
-
-### What to know when working with groups
-
-- A group must contain at least one assessment.
+- You can create a group during the process of creating an assessment.
+- Groups can't be standalone entities. A group must contain at least one assessment.
 - Group names must be unique within your organization.
 - Groups don't have security properties. All permissions are associated with assessments.
 - Once you add an assessment to a group, the grouping can't be changed.
@@ -73,12 +66,6 @@ You can create a group while creating a new assessment. Groups can't be created 
 - Groups can contain assessments for the same certification or regulation, but each group can only contain one assessment for a specific product-certification pair. For example, a group can't contain two assessments for Office 365 and NIST CSF. A group can contain multiple assessments for the same product only if the corresponding certification or regulation for each one is different.
 - Deleting an assessment breaks the relationship between that assessment and the group.
 - Groups can't be deleted.
-
-## Understand templates before creating assessments
-
-Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Each template exists in two versions: one for use with Microsoft 365 (or other Microsoft products as available), and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
-
-Get more details more about templates at [Learn about assessment templates in Compliance Manager](compliance-manager-templates.md).
 
 ## Create assessments
 
