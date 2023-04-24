@@ -24,38 +24,27 @@ description: "Understand how to use and manage regulatory templates for building
 
 # Learn about regulations in Compliance Manager
 
-**In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. 
 
 > [!IMPORTANT]
-> The assessment templates that are included by default for your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> The regulations that are available for your organization's use by default depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Templates overview
+## Regulations overview
 
-A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template.
+The **Regulations** tab displays the list of regulations and certifications for which Compliance Manager provides control-mapping templates for building assessments. Our comprehensive [set of regulatory templates](compliance-manager-templates-list.md) can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. When you build an assessment, you'll select the services you want to assess for that regulation. Setting up Compliance Manager for multicloud support provides you greater automation in testing and monitoring of controls.
 
-## Template versions: Microsoft and universal
+Each regulatory template also comes in a universal version which provides general control mapping that can broadly apply to services. Universal templates provdide the most general type of implementation guidance and require manual implementation and testing by the organization. Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers cannot currently use universal templates.
 
-Compliance Manger can be used to assess different types of products. All templates, except the [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) default template, come in two versions:
+## Regulation availability and licensing
 
-1. A version that applies to a pre-defined product, such as Microsoft 365, and
-2. A universal version that can be tailored to suit other products.
+The [Microsoft data protection baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) regulatory template is available for all organizations. The regulatory templates designated as **premium** regulatory templates require purcahse of a license to use them. Once you purchase a license for a regulation, you can create as many assesments for that regulation as you wish.
 
-Assessments from universal templates are more generalized but offer expanded versatility, since they can help you easily track your organization's compliance across multiple products.
+Depending on your [licensing agreement](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager), your organization may be able to use up to three additional **premium** regulatory templates for free.
 
-Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers cannot currently use universal templates.
-
-## Template availability and licensing
-
-There are two categories of templates in Compliance Manager: **included** and **premium**.
-
-1. **Included templates** are granted by your Compliance Manager license and cover key regulations and requirements. To learn more about what templates are available under your licensing agreement, see [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
-2. **Premium templates** to cover additional needs and scenarios can be obtained by purchasing template licenses.
+When you use a regulation to create an assessment, that regulation is considered **active** s used
 
 When you begin creating assessments, Compliance Manager will track how many templates are active so you can monitor your usage. To learn more, see [Active and inactive templates](compliance-manager-templates.md#active-and-inactive-templates).
-
-View the [full list of templates](compliance-manager-templates-list.md) available in Compliance Manager.
 
 ### Purchase premium template licenses
 
@@ -99,7 +88,7 @@ If you link any assessments to a purchased premium template, that template will 
 
 #### Activated templates counter
 
-Your **Assessment templates** page has an **Activated/Licensed templates** counter near the top. The counter displays the number of templates in use out of the number you're eligible to use according to your licensing agreement.
+Your **Assessment templates** page has an **Activated/Regulation** counter near the top. The counter displays the number of templates in use out of the number you're eligible to use according to your licensing agreement.
 
 For example, if your counter shows 2/5, this means your organization has activated 2 templates out of the 5 that are available to use. If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium templates in use.
 
