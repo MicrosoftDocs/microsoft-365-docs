@@ -435,10 +435,10 @@ The available context options change depending on which location you choose. If 
 - Content contains
 - Content is shared from Microsoft 365
 - Document created by
-- Document created by member of (currently deprecated for customers not already using this predicate) 
+- Document created by member of (currently deprecated for customers not already using this condition) 
 - Document name contains words or phrases
-- Document name matches patterns (currently deprecated for customers not already using this predicate) 
-- Document size over
+- Document size equals or is greater than
+- Document name matches patterns (currently deprecated for customers not already using this condition)
 - Document property is
 - File extension is
 
@@ -447,12 +447,13 @@ The available context options change depending on which location you choose. If 
 - Content contains
 - Content is shared from Microsoft 365
 - Document created by
-- Document created by member of (currently deprecated for customers not already using this predicate) 
+- Document created by member of (currently deprecated for customers not already using this condition) 
 - Document name contains words or phrases
-- Document name matches patterns (currently deprecated for customers not already using this predicate) 
-- Document size over
+- Document size equals or is greater than
+- Document name matches patterns (currently deprecated for customers not already using this condition)
 - Document property is
 - File extension is
+- Document is shared
 
 ##### Conditions Teams chat and channel messages supports
 
