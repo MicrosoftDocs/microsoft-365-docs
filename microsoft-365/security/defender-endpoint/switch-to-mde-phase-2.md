@@ -1,16 +1,12 @@
 ---
 title: Migrate to Microsoft Defender for Endpoint - Setup
 description: Move to Defender for Endpoint. Review the setup process, which includes installing Microsoft Defender Antivirus.
-keywords: migration, Microsoft Defender for Endpoint, antivirus, passive mode, setup process
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 02/16/2023
+ms.date: 04/24/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,7 +16,7 @@ ms.collection:
   - m365solution-symantecmigrate
   - highpri
   - tier1
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
