@@ -23,6 +23,8 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This article is updated frequently to let you know what's new in the latest releases of Microsoft Defender for Endpoint on Linux.
@@ -31,7 +33,62 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+	<summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0)</summary>
+
+&ensp;Released: **April 20,2023**<br/>
+&ensp;Published: **April 20, 2023**<br/>
+&ensp;Build: **101.98.58**<br/>
+&ensp;Release version: **30.123022.19858.0**<br/>
+&ensp;Engine version: **1.1.20000.2**<br/>
+&ensp;Signature version: **1.381.3067.0**<br/>
+
+**What's new**
+
+- There are multiple fixes and new changes in this release 
+	- Logging and error reporting improvements for auditd.
+	- Handle failure in reload of auditd configuration.
+	- Handling for empty auditd rule files during MDE install.
+	- Engine Update to 1.1.20000.2 and Signatures Ver: 1.381.3067.0.
+	- Addressed a health issue in mdatp which occur due to selinux denials.
+	- Bug fixes.
+	
+**Known issues**
+
+- While upgrading mdatp to version 101.94.13 or later, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+
+```bash
+echo -c >> /etc/audit/rules.d/audit.rules
+augenrules --load
+```
+
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+
+There are two ways to mitigate this upgrade issue:
+
+1. Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+	
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+	
+2. As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+If you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrading. 
+Caution: Some customers (<1%) experience issues with this method. 
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+</details>
+
+
+<details>
 	<summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
+
+## March-2023 Build: 101.98.30 | Release version: 30.123012.19830.0
 
 &ensp;Released: **March , 20,2023**<br/>
 &ensp;Published: **March 20, 2023**<br/>
@@ -70,9 +127,11 @@ mdatp health
 In case the issue reappears with some different denials. We need to run the mitigation again with a different module name(eg my-mdatpaudisppl_v2).
 
 </details>
-	
+
 <details>
 	<summary> March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)</summary>
+
+## March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)
 
 &ensp;Released: **March , 08,2023**<br/>
 &ensp;Published: **March 08, 2023**<br/>
@@ -136,6 +195,8 @@ sudo systemctl disable mdatp
 <details>
   <summary>Jan-2023 (Build: 101.94.13 | Release version: 30.122112.19413.0)</summary>
 
+## Jan-2023 (Build: 101.94.13 | Release version: 30.122112.19413.0)
+
 &ensp;Released: **January 10, 2023**<br/>
 &ensp;Published: **January 10, 2023**<br/>
 &ensp;Build: **101.94.13**<br/>
@@ -194,6 +255,8 @@ sudo systemctl disable mdatp
 <details>
   <summary>Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)</summary>
 
+## Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)
+
 &ensp;Released: **November 02, 2022**<br/>
 &ensp;Published: **November 02, 2022**<br/>
 &ensp;Build: **101.85.27**<br/>
@@ -242,6 +305,8 @@ sudo systemctl disable mdatp
 <details>
   <summary>Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)</summary>
 
+## Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)
+
 &ensp;Released: **September 14, 2022**<br/>
 &ensp;Published: **September 14, 2022**<br/>
 &ensp;Build: **101.80.97**<br/>
@@ -271,7 +336,9 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 </details>
 
 <details>
-   <summary>Aug-2022 (Build: 101.78.13, | Release version: 30.122072.17813.0)</summary>
+   <summary>Aug-2022 (Build: 101.78.13 | Release version: 30.122072.17813.0)</summary>
+
+## Aug-2022 (Build: 101.78.13 | Release version: 30.122072.17813.0)
 
  &ensp;Released: **August 24, 2022**<br/>
  &ensp;Published: **August 24, 2022**<br/>
@@ -291,6 +358,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
 <details>
   <summary>Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)</summary>
+
+## Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)
 
 &ensp;Released: **August 2, 2022**<br/>
 &ensp;Published: **August 2, 2022**<br/>
@@ -313,6 +382,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
 <details>
   <summary>Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)</summary>
+
+## Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)
 
 &ensp;Released: **July 21, 2022**<br/>
 &ensp;Published: **July 21, 2022**<br/>
@@ -357,6 +428,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 <details>
   <summary>May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)</summary>
 
+## May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)
+
 &ensp;Released: **May 23, 2022**<br/>
 &ensp;Published: **May 23, 2022**<br/>
 &ensp;Build: **101.68.80**<br/>
@@ -377,6 +450,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
 <details>
 <summary>May-2022 (Build: 101.65.77 | Release version: 30.122032.16577.0)</summary>
+
+## May-2022 (Build: 101.65.77 | Release version: 30.122032.16577.0)
 
 &ensp;Released: **May 2, 2022**<br/>
 &ensp;Published: **May 2, 2022**<br/>
@@ -406,6 +481,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 </details><details>
 <summary>Mar-2022 (Build: 101.60.93 | Release version: 30.122012.16093.0)</summary>
 
+## Mar-2022 (Build: 101.60.93 | Release version: 30.122012.16093.0)
+
 &ensp;Released: **Mar 9, 2022**<br/>
 &ensp;Published: **Mar 9, 2022**<br/>
 &ensp;Build: **101.60.93**<br/>
@@ -433,6 +510,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 </details><details>
 <summary>Feb-2022 (Build: 101.58.80 | Release version: 30.122012.15880.0)</summary>
 
+## Feb-2022 (Build: 101.58.80 | Release version: 30.122012.15880.0)
+
 &ensp;Released: **Feb 20, 2022**<br/>
 &ensp;Published: **Feb 20, 2022**<br/>
 &ensp;Build: **101.58.80**<br/>
@@ -447,6 +526,8 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 <br/><br/>
 </details><details>
 <summary>Jan-2022 (Build: 101.56.62 | Release version: 30.121122.15662.0)</summary>
+
+## Jan-2022 (Build: 101.56.62 | Release version: 30.121122.15662.0)
 
 &ensp;Released: **Jan 26, 2022**<br/>
 &ensp;Published: **Jan 26, 2022**<br/>

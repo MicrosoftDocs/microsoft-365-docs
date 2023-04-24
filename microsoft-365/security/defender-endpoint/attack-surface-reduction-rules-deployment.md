@@ -27,6 +27,11 @@ search.appverid: met150
 
 # Attack surface reduction (ASR) rules deployment overview
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to attack. Configuring Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules can help.
 
 ASR rules target certain software behaviors, such as:
