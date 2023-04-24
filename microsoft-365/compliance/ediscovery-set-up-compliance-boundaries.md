@@ -271,7 +271,7 @@ Keep the following limitations in mind when managing eDiscovery cases and invest
   
     Moving OneDrive or SharePoint content can change the ownership of the content and may include creating an arbitration mailbox. When these resources are moved, there's a chance that content search results may be available across compliance boundaries. When a OneDrive site is re-assigned, re-named or assigned to more than one owner, it's possible that the content from these sites may be available across compliance boundaries.
 
-- Compliance Boundaries for mailboxes may be impacted when:
+- Compliance boundaries for mailboxes may be impacted when:
 
      - The mailbox isn't associated with a licensed user
      - A mailbox isn't managed or synced from Azure Active Directory
