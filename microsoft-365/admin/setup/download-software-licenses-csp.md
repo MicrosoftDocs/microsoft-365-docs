@@ -46,8 +46,6 @@ You must be a Global admin to do the steps in this article. For more information
 
 Dual Use Rights keys are a benefit of some specific Dynamics 365 subscription licenses.
 
-To download Dual Use Rights keys, use the following steps:
-
 1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Choose the Dynamics 365 Service that has a Dual Use Right key.
 3. On the subscription details page, in the **Registration Keys** section, select the version to download.
