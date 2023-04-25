@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/28/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -36,9 +36,8 @@ Prior to this new capability, only the content of an email message protected by 
 
 ## Requirements for decryption in eDiscovery
 
-You have to be assigned the *RMS Decrypt* role to preview, review, and export files encrypted with Microsoft encryption technologies. You also have to be assigned this role to review and query encrypted files that are added to a review set in eDiscovery (Premium).
-
-This role is assigned by default to the eDiscovery Manager role group on the **Permissions** page in the Microsoft Purview compliance portal. For more information about the RMS Decrypt role, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md#rms-decrypt).
+- **Permissions**: You have to be assigned the *RMS Decrypt* role to preview, review, and export files encrypted with Microsoft encryption technologies. You also have to be assigned this role to review and query encrypted files that are added to a review set in eDiscovery (Premium). This role is assigned by default to the eDiscovery Manager role group on the **Permissions** page in the Microsoft Purview compliance portal. For more information about the RMS Decrypt role, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md#rms-decrypt).
+- **Run the Inbox Repair tool on exported PST files**: After you've exported PST files, we recommend that you run the [Inbox Repair tool (ScanPST.exe)](/outlook/troubleshoot/data-files/how-to-repair-personal-folder-file) to fully decrypt the contents of the PST files.
 
 ## Supported encryption technologies
 

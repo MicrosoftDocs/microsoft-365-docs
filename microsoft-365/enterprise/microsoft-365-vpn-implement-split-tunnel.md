@@ -3,7 +3,7 @@ title: Implementing VPN split tunneling for Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 3/3/2022
+ms.date: 04/18/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -94,7 +94,7 @@ At the time of writing the IP address ranges that these endpoints correspond to 
 52.104.0.0/14
 52.112.0.0/14
 52.96.0.0/14
-52.120.0.0/14
+52.122.0.0/15
 ```
 
 ### 2. Optimize access to these endpoints via the VPN

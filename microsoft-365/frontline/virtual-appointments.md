@@ -22,7 +22,7 @@ f1.keywords:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/01/2023
+ms.date: 03/27/2023
 ---
 
 # Virtual Appointments with Microsoft Teams
@@ -57,6 +57,8 @@ To learn more, see:
 - [What is Virtual Appointments?](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f)
 - [Use the Virtual Appointments app](virtual-appointments-app.md)
 - [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
+
+Users can find the Virtual Appointments app in the Teams app store, or you can share the [installation link](https://teams.microsoft.com/l/app/6e106207-4565-4312-b3ea-bbe9b3ed0a02?source=app-details-dialog) to help them find it. You can use an [app setup policy](/microsoftteams/teams-app-setup-policies) to pin the app for your organization, or your users can [pin the app themselves](https://support.microsoft.com/office/pin-an-app-for-easy-access-3045fd44-6604-4ba7-8ecc-1c0d525e89ec).
 
 ## The Bookings app
 

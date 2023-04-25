@@ -20,6 +20,7 @@ ms.collection:
 - zerotrust-solution
 - highpri
 - tier1
+- zerotrust-services
 ms.date: 1/31/2023
 ---
 
@@ -73,7 +74,7 @@ This article assumes you have already configured cloud identity. If you need gui
 
 The first step is to build your Zero Trust foundation by configuring identity and device access protection.
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="The process to configure Zero Trust identity and device access protection" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-1b.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-identities.png" alt-text="Diagram that shows the process to configure Zero Trust identity and device access protection." lightbox="../media/zero-trust/m365-zero-trust-architecture-identities.png":::
 
 Go to [**_Zero Trust identity and device access protection_**](office-365-security/microsoft-365-policies-configurations.md) for prescriptive guidance to accomplish this. This series of articles describes a set of identity and device access prerequisite configurations and a set of Azure Active Directory (Azure AD) Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
 
@@ -89,13 +90,15 @@ Start by implementing the starting-point tier. These policies do not require enr
 
 Next, enroll your devices into management and begin protecting these with more sophisticated controls.
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-2.png" alt-text="The Manage endpoints with Intune element" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-2.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-endpoints.png" alt-text="Diagram that shows the Manage endpoints with Intune element." lightbox="../media/zero-trust/m365-zero-trust-architecture-endpoints.png":::
 
 Go to [**_Manage devices with Intune_**](../solutions/manage-devices-with-intune-overview.md) for prescriptive guidance to accomplish this.
 
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|
 |Enroll devices with Intune: <ul><li>Corporate-owned devices</li><li>Autopilot/automated</li><li>enrollment</li></ul> <br> Configure policies: <ul><li>App Protection policies</li><li>Compliance policies</li><li>Device profile policies</li></ul>|Register endpoints with Azure AD|Configuring information protection capabilities, including: <ul><li>Sensitive information types</li><li>Labels</li><li>DLP policies</li></ul> <br> For these capabilities, see [Step 5. Protect and govern sensitive data](#step-5-protect-and-govern-sensitive-data) (later in this article).|
+
+For more information, see [Zero Trust for Microsoft Intune](/mem/intune/fundamentals/zero-trust-with-microsoft-intune).
 
 ## Step 3. Add Zero Trust identity and device access protection — Enterprise policies
 
@@ -118,6 +121,13 @@ Go to [**_Evaluate and pilot Microsoft 365 Defender_**](defender/eval-overview.m
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|
 |Set up the evaluation and pilot environment for all components: <ul><li>Defender for Identity</li><li>Defender for Office 365</li><li>Defender for Endpoint</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> Protect against threats <br><br> Investigate and respond to threats|See the guidance to read about the architecture requirements for each component of Microsoft 365 Defender.| Azure AD Identity Protection is not included in this solution guide. It is included in [Step 1. Configure Zero Trust identity and device access protection](#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies).|
+
+For more information, see these additional Zero Trust articles:
+
+- [Defender for Endpoint](./defender-endpoint/zero-trust-with-microsoft-defender-endpoint.md)
+- [Defender for Office 365](./office-365-security/zero-trust-with-microsoft-365-defender-office-365.md)
+- [Defender for Cloud Apps](/defender-cloud-apps/zero-trust)
+- [Defender for Identity](/defender-for-identity/zero-trust)
 
 ## Step 5. Protect and govern sensitive data
 

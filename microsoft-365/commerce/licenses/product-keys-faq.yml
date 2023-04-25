@@ -9,9 +9,12 @@ metadata:
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
-  ms.custom: commerce_vl
+  ms.custom: 
+  - commerce_vl
+  - empty
+  search.appverid: MET150
   ms.collection: 
-  - Tier1
+  - Tier2
   - scotvorg
   ms.localizationpriority: medium
   description: "Product keys Frequently Asked Questions"

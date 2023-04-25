@@ -32,6 +32,7 @@ You can use [sensitivity labels](sensitivity-labels.md) as a condition in DLP po
 - OneDrive for Business sites
 - Devices
 
+
 Sensitivity labels appear as an option in the **Content contains** list.
 
 > [!div class="mx-imgBorder"]

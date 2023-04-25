@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/27/2023
+ms.date: 04/24/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -76,7 +76,7 @@ Use the following table to help you map your business requirements to the scenar
 |Let admins and users manually apply retain and delete actions for documents and emails: <br />-  SharePoint <br />- OneDrive <br />- Outlook and Outlook on the web|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
 |Let site admins set default retain and delete actions for all content in a SharePoint library, folder, or document set|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
 |Let users automatically apply retain and delete actions to emails by using Outlook rules|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
-|Let admins apply retain and delete actions to a document understanding model, so that these are automatically applied to identified documents in a SharePoint library|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
+|Let admins apply retain and delete actions to a Microsoft Syntex model, so that these settings are automatically applied to identified files in a SharePoint library|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
 |Automatically apply retain and delete actions to documents and emails |[Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Start the retention period when an event occurs, such as:  <br />- Employees leave the organization <br />- Contracts expire <br />- End of product lifetime| [Start retention when an event occurs](event-driven-retention.md)|
 |Do custom actions or integrate with other solutions at the end of the retention period| [Customize what happens at the end of the retention period](retention-label-flow.md)|
@@ -86,7 +86,7 @@ Use the following table to help you map your business requirements to the scenar
 |Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
 |Have proof of disposition for content that is permanently deleted at the end of its retention period|[Disposition of records](disposition.md#disposition-of-records) |
 | Monitor how and where retain and delete settings are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
-| Programatically create and manage retention labels, event-based retention, and automate repetitive tasks for records management | [Microsoft Graph API for records management (preview)](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview) |
+| Programatically create and manage retention labels, event-based retention, and automate repetitive tasks for records management | [Microsoft Graph API for records management](compliance-extensibility.md#microsoft-graph-api-for-records-management) |
 
 ## End-user documentation
 
