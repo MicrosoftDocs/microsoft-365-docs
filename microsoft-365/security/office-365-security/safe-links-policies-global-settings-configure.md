@@ -19,7 +19,7 @@ ms.custom:
 description: Admins can learn how to view and configure the 'Block the following URLs' list for Safe Links in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/20/2023
+ms.date: 4/25/2023
 ---
 
 # Configure the "Block the following URLs" list for Safe Links in Microsoft Defender for Office 365
@@ -75,21 +75,33 @@ You configure the "Block the following URLs" list for Safe Links in the Microsof
 
    - Use the **Filter** drop down list to filter the list of URL entries by the following values:
      - **All**
-     - **Migrated**: Entries that were automatically migrated as [URL block entries in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#create-block-entries-for-urls) from June 2022 to December 2022.
+     - **Migrated**: Entries that were automatically migrated to [URL block entries in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#create-block-entries-for-urls) from June 2022 to December 2022.
      - **Manually migrate**: Entries that couldn't be automatically migrated to the Tenant Allow/Block List. Automatic migration of URL entries to the Tenant Allow/Block List ended in December 2022.
 
      - Use **Delete all URLs in the current list** to remove entries (affected by the **Filter** value).
 
-   When you're finished on the **Safe Links settings for your organization** flyout that opens, select **Save**.
+   When you're finished on the **Safe Links settings for your organization** flyout, select **Save**.
 
 ### Configure the "Block the following URLs" list in PowerShell
 
-You can use the [Get-AtpPolicyForO365](/powershell/module/exchange/get-atppolicyforo365) cmdlet in Exchange Online PowerShell to view existing entries in the _BlockURLs_ property.
+Use the [Get-AtpPolicyForO365](/powershell/module/exchange/get-atppolicyforo365) and [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) cmdlets in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to view and remove existing entries in the "Block the following URLs" list.
 
-For example:
+This example returns any existing entries in the "Block the following URLs" list:
 
-  ```powershell
-  Get-AtpPolicyForO365 | Format-List BlockUrls
-  ```
+```powershell
+Get-AtpPolicyForO365 | Format-List BlockUrls
+```
 
-For details about the entry syntax, see [Entry syntax for the "Block the following URLs" list](safe-links-about.md#entry-syntax-for-the-block-the-following-urls-list).
+This example removes the existing entry for fabrikam.com from the "Block the following URLs" list:
+
+```powershell
+Set-AtpPolicyForO365 -BlockUrls @{Remove="fabrikam"}
+```
+
+This example removes all entries from the "Block the following URLs" list:
+
+```powershell
+Set-AtpPolicyForO365 -BlockUrls $null
+```
+
+To add, remove, and manage block URL entries for URLs in the Tenant Allow/Block List, see the PowerShell sections for block entries in [Allow or block URLs using the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md).
