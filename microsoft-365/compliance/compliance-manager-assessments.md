@@ -138,9 +138,9 @@ You can add more subscriptions to the service that you want the assessment to co
 
 #### Controls tab
 
-The **Controls** tab displays detailed information for each control mapped to the assessment. The **Control status breakdown** chart shows the status of controls by family (for example, Confirguration Management and Incident Response) so you can see at a glance which groupings of controls need attention.
+The **Controls** tab displays detailed information for each control in the assessment. The **Control status breakdown** chart shows the status of controls by family (for example, Confirguration Management and Incident Response) so you can see at a glance which groupings of controls need attention.
 
-The table underneath the breadkdown chart lists the controls in the assessment. The information listed for each control includes:
+The table underneath the breadkdown chart lists all controls. You can filter the list by service, status, and control family. The table shows the following details about each control:
 
 - **Control title**
 - **Status**: The test status of the improvement actions within the control:
@@ -154,38 +154,18 @@ The table underneath the breadkdown chart lists the controls in the assessment. 
 - **Your improvement actions**: The number of your actions completed out of the total number to be done.
 - **Microsoft actions**: The number of actions completed by Microsoft.
 
-Select a control from the list to view its details page. A graph indicates the test status of the improvement actions within the control. A table below the graph shows key improvement actions for that control. Each improvement action is listed in the table below the graph. Select an improvement action from the list to drill into the improvement action's details page. The details page shows test status and implementation notes, and launch into the recommended solution.
-
-The information listed for each control includes:
-
-- **Control title**
-- **Status**: reflects the test status of the improvement actions within the control
-  - **Passed** - all improvement actions have a test status of "passed," or at least one is passed and the rest are "out of scope"
-  - **Failed** - at least one improvement action has a test status of "failed"
-  - **None** - all improvement actions have not been tested
-  - **Out of scope** - all improvement actions are out of scope for this assessment
-  - **In progress** - improvement actions have a status other than the ones listed above, which could include "in progress," "partial credit," or "undetected"
-- **Control ID**: the control's identification number, assigned by its corresponding regulation, standard, or policy
-- **Points achieved**: the number of points earned by completing actions, out of the total number of achievable points
-- **Your actions**: the number of your actions completed out of the total number of actions to be done
-- **Microsoft actions**: the number of actions completed by Microsoft
-
-To view a control's details, select it from its row in the table. The control details page shows a graph indicating the test status of the actions within that control. A table below the graph shows key improvement actions for that control.
-
-Select an improvement action from the list to drill into the improvement action's details page. The details page shows test status and implementation notes, and launch into the recommended solution.
+Select a control from the list to view its details page. A graph indicates the test status of the improvement actions within the control. A table below the graph lists the improvement actions for that control. Select an improvement action from the list to drill into the improvement action's details page, from where you can manage implementation and testing. Get details about [working with improvement actions](compliance-manager-improvement-actions.md).
 
 #### Your improvement actions tab
 
-The tab for your improvement actions lists all the controls in the assessment that are managed by your organization. The status bar details the aggregated test status of your improvement actions in the assessment so you can quickly gauge what has been tested and what still needs to be done. Beneath the bar is the full list of improvement actions and key details, including: test status, the number of potential and earned points, associated regulations and standards, applicable solution, action type, and control family.
+The **Improvement actions** tab on the assessment details page lists all your improvemetn actions for the control. The status bar details the aggregated test status of your improvement actions in the assessment so you can quickly gauge what has been tested and what still needs to be done. Beneath the bar is a table listing all the actions and key details, including: service, test status, the number of potential and earned points, associated regulations and standards, applicable solution, action type, and control family.
 
-Filter by **Service** to view actions related to the service and their progress. From the table, select an improvement action to go to its details page, from where you can manage implementation and testing.
+Filter by **Service** to view actions related to a service and their progress. From the table, select an improvement action to go to its details page, from where you can manage implementation and testing.
 Get details about [working with improvement actions](compliance-manager-improvement-actions.md).
 
 #### Microsoft actions tab
 
-The Microsoft actions tab appears for assessments based on templates that support Microsoft products. It lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
-
-Learn more about [how controls and improvement actions are tracked and scored.](compliance-score-calculation.md)
+The Microsoft actions tab appears for assessments based on templates that support Microsoft products. It lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: service, test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
 
 ## Grant user access to individual assessments
 
