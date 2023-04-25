@@ -353,7 +353,7 @@
             - name: Endpoint Analytics
               href: /mem/analytics/productivity-score
          - name: Usage and user sentiment
-           href: admin/misc/experience-insights-dashboard.md
+           href: misc/experience-insights-dashboard.md
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
