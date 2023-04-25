@@ -287,7 +287,7 @@ Consider these steps to get your SecOps team and organization ready for focused 
 2. Get the appropriate licenses for the Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, the app governance add-on, Defender for IoT, and Azure AD Identity Protection services.
 3. Assemble a catalog of advanced hunting queries tuned for known ransomware attack methods or attack phases.
 4. Create the set of custom detection rules for specific advanced hunting queries that create alerts for known ransomware attack methods, including their schedule, alert naming, and automated actions.
-5. Determine the set of [custom tags](../manage-incidents.md) or standards to create new one to identify incidents that are known to be part of a larger, coordinated ransomware attack
+5. Determine the set of [custom tags](./manage-incidents.md) or standards to create new one to identify incidents that are known to be part of a larger, coordinated ransomware attack
 6. Determine the set of operational tasks for ransomware incident and alert management. For example:
    - Processes for Tier 1 analyst scanning of incoming incidents and alerts and assignment to Tier 2 analysts for investigation.
    - Manually running advanced hunting queries and their schedule (daily, weekly, monthly).
