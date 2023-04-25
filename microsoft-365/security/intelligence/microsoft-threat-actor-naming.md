@@ -84,6 +84,7 @@ Use the following reference table below to understand how our previously publicl
 |OSMIUM|Opal Sleet|North Korea|Konni|
 |PARINACOTA|Wine Tempest|Financially motivated|Wadhrama|
 |PHOSPHORUS|Mint Sandstorm|Iran|APT35, Charming Kitten|
+|PLUTONIUM|Onyx Sleet|North Korea|Silent Chollima, Andariel, DarkSeoul|
 |POLONIUM|Plaid Rain|Lebanon||
 |RADIUM|Raspberry Typhoon|China|APT30, LotusBlossom|
 |RUBIDIUM|Lemon Sandstorm|Iran|Fox Kitten, UNC757, PioneerKitten|
