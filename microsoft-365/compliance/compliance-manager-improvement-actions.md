@@ -27,11 +27,27 @@ description: "Learn how to implement and test controls by working with improveme
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Manage compliance workflows with improvement actions
+## Overview
 
-Improvement actions centralize your compliance activities. Each improvement action gives detailed implementation guidance to help you align with data protection regulations and standards. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the action.
+Improvement actions help centralize your compliance activities. Each improvement action recommends an action to take, with detailed guidance intended to help you align with data protection regulations and standards. Improvement actions can be assigned to users in your organization to perform implementation and testing work. You can also store notes, documentation, notes, and record status updates within the action. Many improvement actions can be set up for automatic testing and monitoring.
 
-All of your improvement actions are listed on the improvement actions page. Learn more about [viewing your improvement actions](compliance-manager-setup.md#improvement-actions-page).
+## Automated implementation and monitoring
+
+While some improvement actions must be manually implemented and tested by your organization, many actions can be automatically implemented, tested, and continuously monitored for you. Compliance Manager automatically identifies settings in your Microsoft 365 environment and your multicloud environment that help determine when certain configurations meet improvement action implementation requirements. There are three types of automation, detailed below:
+
+#### Built-in automation
+
+Compliance Manager has built-in functionality to receive signals from other Microsoft solutions and non-Microsoft services. Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including Data Lifecycle Management, Information Protection, Data Loss Prevention, Communication Compliance, and Insider Risk Management. Compliance Manager also detects signals from Microsoft Priva (this capability is in preview). The automation applies specifically to the solution and isn’t scoped to cloud services. Learn more about [automatic testing settings](compliance-manager-setup.md#testing-source-for-automated-testing).
+
+#### Microsoft Secure Score automation
+
+Compliance Manager detects signals from complementary improvement actions that are monitored by Microsoft Secure Score. Using these signals, Compliance Manager can automatically test certain improvement actions in order to provide continuous control assessment. When an improvement action is successfully tested and implemented, you receive the maximum possible points for that action, which gets credited to your overall compliance score.
+
+#### Microsoft Defender for Cloud automation
+
+Integration with Defender for Cloud allows Compliance Manager to facilitate improvement actions and provide continuous monitoring across multiple Microsoft and non-Microsoft cloud services, such as Microsoft Azure, Amazon Web Services, and Google Cloud Platform. The cloud infrastructure of this monitoring means that action status can be evaluated and graded at the subscription level of the intended service. You can see specific implementation and testing results for each improvement action within each subscription of your service. The overall score you receive for the improvement action is an aggregate of the individual scores of each subscription within that service. Learn more about [multiservice support](compliance-manager-multiservice.md) and [scoring](compliance-score-calculation.md).
+
+In the near future, we’ll roll out a selection of data connectors built specifically for Compliance Manager to support other non-Microsoft services such as Salesforce and Zoom.
 
 ## Improvement actions details page
 

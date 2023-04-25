@@ -18,7 +18,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Build assessments in Microsoft Purview Compliance Manager to help you meet the requirements of regulations and certifications that are important to your organization."
+description: "Build assessments in Microsoft Purview Compliance Manager that help your organization track and manage compliance activities in a multicloud environment."
 ---
 
 # Build and manage assessments in Compliance Manager
