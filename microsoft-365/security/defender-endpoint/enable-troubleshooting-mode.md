@@ -112,7 +112,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 ## Advanced hunting queries
 
-Here are some pre-built advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](/defender/custom-detection-rules#create-a-custom-detection-rule) that'd alert you when the devices are in troubleshooting mode.
+Here are some pre-built advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](../defender/custom-detection-rules.md#create-a-custom-detection-rule) that'd alert you when the devices are in troubleshooting mode.
 
 ### Get troubleshooting events for a particular device
 

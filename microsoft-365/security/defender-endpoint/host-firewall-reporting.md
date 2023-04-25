@@ -130,3 +130,4 @@ Firewall reports support drilling from the card directly into **Advanced Hunting
 The query can now be executed, and all related Firewall events from the last 30 days can be explored.
 
 For more reporting, or custom changes, the query can be exported into Power BI for further analysis. Custom reporting can be facilitated by downloading the [Custom Reporting script](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) to monitor the Windows Defender Firewall activities using Power BI.
+
