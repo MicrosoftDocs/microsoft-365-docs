@@ -37,7 +37,7 @@ You can use Microsoft Intune to onboard macOS devices into Microsoft Purview sol
 - Make sure your [macOS devices are onboarded into Intune](https://learn.microsoft.co/mem/intune/fundamentals/deployment-guide-platform-macos) and are enrolled in the [Company Portal app](https://learn.microsoft.co/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Make sure you have access to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home).
 - Create the user groups that you are going to assign the configuration updates to.
-- OPTIONAL: Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
+- OPTIONAL: Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Microsoft Edge.
  
 > [!NOTE]
 > The three most recent major releases of macOS are supported.
@@ -78,7 +78,7 @@ Download the following files:
 
 ### Deploy the mobileconfig and onboarding packages
 
-1. Open the **Microsoft Intune admin center** > **Devices** > **Configuration profiles**.
+1. Open the **Microsoft Intune admin center** and navigate to **Devices** > **Configuration profiles**.
 
 1. Choose: **Create profile**.
 
@@ -89,27 +89,27 @@ Download the following files:
 
 1. Choose **Create**.
 
-1. Choose a name for the profile, such as *Microsoft Purview System MobileConfig*, and then Choose **Next**.
+1. Enter a name for the profile, such as *Microsoft Purview System MobileConfig*, and then Choose **Next**.
 
-1. Choose the `mdatp-nokext.mobileconfig` file that you downloaded in step 1 as the configuration profile file.
+1. Choose the `mdatp-nokext.mobileconfig` file that you downloaded in Step 1 as the configuration profile file.
 
 1. Choose **Next**.
 
 1. On the **Assignments** tab, add the group you want to deploy these configurations to and then choose **Next**.
 
-1. Review your settings and choose **Create** to deploy the configuration.
+1. Review your settings and then choose **Create** to deploy the configuration.
 
 1. Repeat steps 2-9 to create profiles for the:
     1. **DeviceComplianceOnboarding.xml** file. Name it *Microsoft Purview Device Onboarding Package*
     1. **com.microsoft.wdav.mobileconfig** file. Name it *Microsoft Endpoint Device Preferences*
  
-1. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
+1. Open **Devices** > **Configuration profiles**. The profiles you created now display.
 
 1. In the **Configuration profiles** page, choose the profile that you just created. Next, choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
 ### Publish the application
 
-Microsoft Endpoint data lost protection (DLP) is installed as a component of Microsoft Defender for Endpoint (MDE) on macOS. This procedure applies to onboarding devices into Microsoft Purview solutions
+Microsoft Endpoint data lost protection is installed as a component of Microsoft Defender for Endpoint on macOS. This procedure applies to onboarding devices into Microsoft Purview solutions
 
 1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com/), open **Apps**.
 
@@ -117,11 +117,11 @@ Microsoft Endpoint data lost protection (DLP) is installed as a component of Mic
 
 3. Choose **App type**=**macOS**, and then choose **Select**. Choose **Microsoft Defender for Endpoint**.
 
-4. Keep default values and then choose **Next**.
+4. Keep the default values and then choose **Next**.
 
 5. Add assignments and then choose **Next**.
 
-6. Review and then choose **Create**.
+6. Review your chosen settings and then choose **Create**.
 
 7. You can visit **Apps** \> **By platform** \> **macOS** to see the new application in the list of all applications.
 

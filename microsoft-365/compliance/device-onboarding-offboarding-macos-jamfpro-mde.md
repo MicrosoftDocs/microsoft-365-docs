@@ -42,14 +42,14 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
 
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
-Onboarding a macOS device into Compliance solutions is a multiphase process.
+Onboarding a macOS device into Compliance solutions is a multi-phase process.
 
 1. [Update the existing MDE Preference domain profile using the JAMF PRO console](#update-the-existing-mde-preference-domain-profile-using-the-jamf-pro-console)
 2. [Enable full-disk access](#enable-full-disk-access)
 3. [Enable accessibility access to Microsoft Purview data loss prevention](#enable-accessibility-access-to-microsoft-purview-data-loss-prevention)
 4. [Check the macOS device](#check-the-macos-device)
 
-### Prerequisites ###
+### Prerequisites
 
 Download the following files:
 
