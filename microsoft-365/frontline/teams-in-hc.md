@@ -101,7 +101,7 @@ Use the complete meetings platform in Teams to schedule, manage, and conduct vir
 
 Bring your health team together to coordinate care and collaborate with Teams.
 
-![Healthcare: Collaborate with your health team in Teams.](media/teams-healthcare-collaborate-in-teams.png)
+![Screenshot of Healthcare: Collaborate with your health team in Teams.](media/teams-healthcare-collaborate-in-teams.png)
 
 Teams enables physicians, clinicians, nurses, and other staff to collaborate efficiently with included collaboration features in Teams, such as:
 
