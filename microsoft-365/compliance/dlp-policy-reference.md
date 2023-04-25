@@ -894,7 +894,7 @@ To learn more about user overrides, see:
 
 #### Business justification X-Header
 
-When a user overrides a block with override action on an email, the override option and the text that they provide are stored in the [Audit log](/microsoft-365/compliance/audit-solutions-overview.md) and in the email X-header. To view the business justification overrides, open the [DLP fals positives and overrides report](/microsoft-365/compliance/view-the-dlp-reports#view-the-justification-submitted-by-a-user-for-an-override) or you can [search the audit log in the compliance portal](audit-log-search.md) for `ExceptionInfo` value for the details. Here's an example of the audit log X-header values:
+When a user overrides a block with override action on an email, the override option and the text that they provide are stored in the [Audit log](/microsoft-365/compliance/audit-solutions-overview.md) and in the email X-header. To view the business justification overrides, open the [DLP false positives and overrides report](/microsoft-365/compliance/view-the-dlp-reports#view-the-justification-submitted-by-a-user-for-an-override) or you can [search the audit log in the compliance portal](audit-log-search.md) for `ExceptionInfo` value for the details. Here's an example of the audit log X-header values:
 ```xml
 {
     "FalsePositive"; false,
