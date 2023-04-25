@@ -1795,7 +1795,7 @@
               href: compliance-manager-templates.md
             - name: Regulations list
               href: compliance-manager-templates-list.md
-        - name: Improvement actions and automation
+        - name: Improvement actions
           items:
             - name: Working with improvement actions
               href: compliance-manager-improvement-actions.md
