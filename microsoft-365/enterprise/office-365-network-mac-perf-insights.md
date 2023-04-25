@@ -23,7 +23,7 @@ description: "Microsoft 365 Network Insights"
 
 Insights are intended to help in designing network perimeters for your office locations. Each insight provides live details about the performance characteristics for a specific common issue for each geographic location where users are accessing your tenant.
 
-There are six specific network insights that may be shown for each office location:
+These are network insights that may be shown for each office location:
 
 - [Backhauled network egress](#backhauled-network-egress)
 - [Network intermediary device](#network-intermediary-device)
@@ -33,15 +33,13 @@ There are six specific network insights that may be shown for each office locati
 - [Low download speed from SharePoint front door](#low-download-speed-from-sharepoint-front-door)
 - [China user optimal network egress](#china-user-optimal-network-egress)
 
-There are two tenant-level network insights that may be shown for the tenant:
+These are tenant-level network insights that may be shown for the tenant:
 
 - [Exchange sampled connections affected by connectivity issues](#exchange-sampled-connections-affected-by-connectivity-issues)
 - [SharePoint sampled connections affected by connectivity issues](#sharepoint-sampled-connections-affected-by-connectivity-issues)
 
 These insights also appear in the productivity score pages.
 
->[!IMPORTANT]
->Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status, and is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
 
 ## Backhauled network egress
 
