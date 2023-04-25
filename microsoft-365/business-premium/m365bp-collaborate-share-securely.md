@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 01/18/2023
+ms.date: 04/14/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -29,7 +29,7 @@ description: "An overview on how to collaborate and share files and communicate 
 
 :::image type="content" source="media/mission5.png" alt-text="Diagram with Collaborate And Share Securely highlighted.":::
 
-Now that you're protected by the Microsoft 365 Apps, your next mission is to set up secure file sharing and communication. The best way to collaborate and share securely is to use Microsoft Teams. With Microsoft Teams, all your files and communications are in a protected environment and aren't being stored in unsafe ways outside of it. Your organization depends on protecting your data and information, which means that you want to protect your files by all means possible.
+The best way to collaborate and share securely is to use Microsoft Teams. With Microsoft Teams, all your files and communications are in a protected environment and aren't being stored in unsafe ways outside of it. Your organization depends on protecting your data and information, which means that you want to protect your files by all means possible. Your next mission is to set up secure file sharing and communication. 
 
 Your objectives are to:
 
