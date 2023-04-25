@@ -65,7 +65,7 @@ Select an improvement action from the list to view its details page. You can als
 
 - **Evidence** tab: Location where you can upload and view files and links related to implementation and testing work.
 
-## Implementation work
+## Implementation and testing work
 
 ### Assign improvement actions
 
