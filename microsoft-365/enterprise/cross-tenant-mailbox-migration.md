@@ -14,6 +14,7 @@ ms.custom:
   - it-pro
   - admindeeplinkMAC
   - admindeeplinkEXCHANGE
+ms.localizationpriority: high
 ms.collection:
   - scotvorg
   - M365-subscription-management
