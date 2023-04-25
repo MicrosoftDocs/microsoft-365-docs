@@ -44,7 +44,7 @@ This assessment is used to calculate your initial compliance score the first tim
 
 ## Understand groups before creating assessments
 
-When you create an assessment, you'll need to assign it to a group. Groups are containers that allow you to organize assessments in a way that is logical to you, such as by year or regulation, or based on your organization's divisions or geographies. This is why we recommend planning a grouping strategy before you create assessments. Below are examples of two groups and their underlying assessments:
+When you create an assessment, you must assign it to a group. Groups are containers that allow you to organize assessments in a way that is logical to you, such as by year or regulation, or based on your organization's divisions or geographies. This is why we recommend planning a grouping strategy before you create assessments. Below are examples of two groups and their underlying assessments:
 
 - **FFIEC IS assessment 2020**
   - FFIEC IS
@@ -104,15 +104,15 @@ To create one or more assessments based on our recommendations, select **Add Rec
 
     When finished, select **Next**.
 
-1. On the **Select services** page, designate which services this assessment will apply to (learn more about [multiservice support](compliance-manager-multiservice.md)). Select the **Select services** command. The flyout pane shows which services are available for your chosen regulation. Place a check next to the services you want covered by the assessment, then select **Add**. 
+1. On the **Select services** page, designate which services this assessment applies to (learn more about [multiservice support](compliance-manager-multiservice.md)). Select the **Select services** command. The flyout pane shows which services are available for your chosen regulation. Place a check next to the services you want covered by the assessment, then select **Add**.
 
-1. If you selected a service that has more than one subscription covered by Microsoft Defender for Cloud (for example, an Azure subscription for your legal department, and an Azure subscription for your marketing department), you’ll arrive at a sub-step for **Select service subscriptions**. Select **Manage subscriptions**. On the flyout pane, a tab for each service displays a list of all subscriptions within that service. Remove any subscription you don't want the assessment to cover by selecting the **X** next to its name. Or select **Edit subscriptions** command to add or remove subscriptions. 
+1. If you selected a service that has more than one subscription covered by Microsoft Defender for Cloud (for example, an Azure subscription for your legal department, and an Azure subscription for your marketing department), you arrive at a sub-step for **Select service subscriptions**. Select **Manage subscriptions**. On the flyout pane, a tab for each service displays a list of all subscriptions within that service. Remove any subscription you don't want the assessment to cover by selecting the **X** next to its name. Or select **Edit subscriptions** command to add or remove subscriptions. 
 
-   On the Select servcies page, select **Next**.
+   On the **Select services** page, select **Next**.
 
 1. **Review and finish:** Review all your selections and make any necessary edits. When you're satisfied with the settings, select **Create assessment**.
 
-The next screen confirms the assessment was created. When you select **Done**, you'll be taken to your new assessment's details page.
+The next screen confirms the assessment was created. When you select **Done**, you are taken to your new assessment's details page.
 
 If you see an **Assessment failed** screen after selecting **Create assessment**, select **Try again** to re-create your assessment.
 
@@ -124,23 +124,21 @@ Each assessment has a details page that gives an at-a-glance view of your progre
 
 Expand the **Overview** section at the left side of the page to see basic details about the assessment, including its group, regulation, associated services, completion status, and a description.
 
-The **Progress** tab shows the percentage of progress toward assessment completion. The progress bar displays a breakdown showing the amount of points achieved within each service covered by the assessment. Get details on each service by [viewing service details](#assessment-progress-by-service). See all controls within the assessment and their current staus on the [Controls tab](#controls-tab). Quickly access the status of all your improvement actions for the assessment the [Your improvement actions tab](#your-improvement-actions-tab). The actions handled by Microsoft for the assessment asre listed on the [Microsoft actions tab](#microsoft-actions-tab).
+The **Progress** tab shows the percentage of progress toward assessment completion. The progress bar displays a breakdown showing the number of points achieved within each service covered by the assessment. Get details on each service by [viewing service details](#assessment-progress-by-service). See all controls within the assessment and their current status on the [Controls tab](#controls-tab). Quickly access the status of all your improvement actions for the assessment the [Your improvement actions tab](#your-improvement-actions-tab). The actions handled by Microsoft for the assessment are listed on the [Microsoft actions tab](#microsoft-actions-tab).
 
 #### Assessment progress by service
 
-The services view at the top of the assessment's **Progress** tab helps you understand how you're doing with respect to a regulation with each of your services individally, even at the subscription level, and collectively across your organization. The assessment gets its data on available subscriptions and improvement action status from Microsoft Defender for Cloud. Any erros associated with subscription accessibility should be addresed in your Defender for Cloud. See [Configure cloud settings](compliance-manager-cloud-settings.md) for more information.
+The services view at the top of the assessment's **Progress** tab helps you understand how you're doing with respect to a regulation with each of your services individually, even at the subscription level, and collectively across your organization. The assessment gets its data on available subscriptions and improvement action status from Microsoft Defender for Cloud. Any errors associated with subscription accessibility should be addressed in your Defender for Cloud. See [Configure cloud settings](compliance-manager-cloud-settings.md) for more information.
 
 Select the **View service details** command, located next to or under the **Assessment progress** bar graph or in the upper-right command bar, to view a flyout pane with more details. The **View service details** flyout pane lists each service and its progress toward completing the assessment. Selecting **View** next to a service name displays another panel that lists each subscription within the service and its status.
 
-On a service's details panel, you'll see the list of subscriptions within the service that are covered by the assessment. The **Service progress** counter indicates the number of points achieved so far by improvement actions pertaining to the service for the asssessment out of the total number of achievable points.
+On a service's details panel, you see the list of subscriptions within the service that are covered by the assessment. The **Service progress** counter indicates the number of points achieved so far by improvement actions pertaining to the service for the assessment out of the total number of achievable points.
 
 You can add more subscriptions to the service that you want the assessment to cover by selecting **Add subscription**.
 
 #### Controls tab
 
-The **Controls** tab displays detailed information for each control in the assessment. The **Control status breakdown** chart shows the status of controls by family (for example, Confirguration Management and Incident Response) so you can see at a glance which groupings of controls need attention.
-
-The table underneath the breadkdown chart lists all controls. You can filter the list by service, status, and control family. The table shows the following details about each control:
+The **Controls** tab displays detailed information for each control in the assessment. The **Control status breakdown** chart shows the status of controls by family (for example, Configuration Management and Incident Response) so you can see at a glance which groupings of controls need attention. The table underneath the breakdown chart lists all controls. You can filter the list by service, status, and control family. The table shows the following details about each control:
 
 - **Control title**
 - **Status**: The test status of the improvement actions within the control:
@@ -158,7 +156,9 @@ Select a control from the list to view its details page. A graph indicates the t
 
 #### Your improvement actions tab
 
-The **Improvement actions** tab on the assessment details page lists all your improvemetn actions for the control. The status bar details the aggregated test status of your improvement actions in the assessment so you can quickly gauge what has been tested and what still needs to be done. Beneath the bar is a table listing all the actions and key details, including: service, test status, the number of potential and earned points, associated regulations and standards, applicable solution, action type, and control family.
+The **Improvement actions** tab on the assessment details page lists all your improvement actions for the control. The status bar chart details the aggregated test status of your improvement actions in the assessment so you can quickly gauge what has been tested and what still needs to be done. Hover over or select a test status label to highlight only that status on the bar.
+
+Beneath the bar, a table lists all the actions and key details, including: service, test status, the number of potential and earned points, associated regulations and standards, applicable solution, action type, and control family.
 
 Filter by **Service** to view actions related to a service and their progress. From the table, select an improvement action to go to its details page, from where you can manage implementation and testing.
 Get details about [working with improvement actions](compliance-manager-improvement-actions.md).
@@ -171,7 +171,7 @@ The Microsoft actions tab appears for assessments based on templates that suppor
 
 When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can view or edit data within all assessments by default (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). You can restrict user access to only certain assessments by managing user roles from within an assessment or assessment template. Restricting access in this way can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties.
 
-External users who need access for auditing or other purposes can also be assigned a role for viewing assessments and editing test data. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#setting-permissions-in-azure-ad).
+External users who need access for auditing or other purposes can also be assigned a role for viewing assessments and editing test data. You provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#setting-permissions-in-azure-ad).
 
 #### Steps for granting access
 
@@ -191,7 +191,7 @@ Follow the steps to grant user access to an assessment.
     > [!NOTE]
     > If you assign a role to someone who already has an existing role, the new role assignment you choose will override their existing role. In this case, you'll see a confirmation box asking you to confirm the change in role.
 
-1. The flyout pane will close and you'll arrive back at your assessment details page. A confirmation message at the top will confirm the new role assignment for that assessment.
+1. The flyout pane closes and you arrive back at your assessment details page. A confirmation message at the top confirms the new role assignment for that assessment.
 
 #### Steps for removing access
 
@@ -212,8 +212,8 @@ Learn how to get a broad [view of all users with access to assessments](complian
 
 - A user can have one role that applies to an assessment, while also holding another role that applies broadly to overall Compliance Manager access.
 
-    - For example, if you've assigned a user a **Compliance Manager Reader** role in Microsoft Purview compliance portal **Permissions,** you can also assign that user a **Compliance Manager Assessor** role for a specific assessment. In effect, the user will hold the two roles at the same time, but their ability to edit data will be limited to the assessment to which they've been assigned the **Assessor** role.
-    - Removing an assessment-based role won't remove the user's overall Compliance Manager role if they have one. If you want to change a user's overall role, you'll have to change it from the **Permissions** page in the Microsoft Purview compliance portal.
+    - For example, if you've assigned a user a **Compliance Manager Reader** role in Microsoft Purview compliance portal **Permissions,** you can also assign that user a **Compliance Manager Assessor** role for a specific assessment. In effect, the user holds the two roles at the same time, but their ability to edit data will be limited to the assessment to which they've been assigned the **Assessor** role.
+    - Removing an assessment-based role won't remove the user's overall Compliance Manager role if they have one. If you want to change a user's overall role, you have to change it from the **Permissions** page in the Microsoft Purview compliance portal.
 
 - For an individual assessment, one user can only hold one assessment-based role at a time.
     - For example, if a user holds a reader role for a GDPR assessment and you want to change them to a contributor role, you'll first need to remove their reader role, and then re-assign them the reader role.
