@@ -206,7 +206,7 @@ Complete the following steps to manage an existing policy:
     - **I want to prioritize content**. Selecting this option will enable you to prioritize *SharePoint sites*, *Sensitivity labels*, *Sensitive info types*, and *File extensions* content types. If you choose this option, you must select at least one priority content type.
 
        > [!NOTE]
-       > At this time, real-time analytics insights (preview) for indicator thresholds doesn't account for priority content events. If you want to take advantage of real-time analytics for configuring threshold settings, you must choose the **I don't want to specify priority content right now** option. For more information on real-time analytics for indicator threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
+       > At this time, real-time analytics insights (preview) for indicator threshold settings doesn't account for priority content events. If you want to take advantage of real-time analytics for configuring threshold settings, you must choose the **I don't want to specify priority content right now** option. For more information on real-time analytics for indicator threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
 
     - **I don't want to specify priority content right now**. Selecting this option will skip the priority content detail pages in the wizard.
 
