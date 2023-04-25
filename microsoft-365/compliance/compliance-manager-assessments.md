@@ -29,7 +29,9 @@ description: "Build assessments in Microsoft Purview Compliance Manager to help 
 
 ## Introduction to assessments
 
-Compliance Manager helps you create assessments that evaluate your compliance with industry and regional regulations that apply to your organization. Compliance Manager provides ready-to-use templates for over 360 regulations that contain the necessary controls and improvement actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk. All of your assessments are listed on the **Assessments** tab of Compliance Manager.
+Compliance Manager assessments help your organization evaluate  its compliance with industry and regional regulations. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk. Ready-to-use regulatory templates for over 360 regulations  contain the necessary controls and improvement actions for completing the assessment.
+
+All of your assessments are listed on the **Assessments** tab of Compliance Manager. You can create one assessment that covers multiple services. For example, you can create a single EU GDPR assessment that covers Microsoft 365, Microsoft Azure, Google Cloud Platform, and Amazon Web Services. Your assessment details page shows a breakdown of control progress by service to help you evaluate how you're doing across all your services. Learn more about [monitoring assessment progress from the assessment details page](#monitor-assessment-progress-and-controls).
 
 > [!IMPORTANT]
 > The regulations that are available for your organization's use by default depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
@@ -120,13 +122,19 @@ You can change the name of your assessment after you create it by selecting the 
 
 Each assessment has a details page that gives an at-a-glance view of your progress in completing the assessment. The page shows your progress in completing controls, and the test status of key improvement actions within those controls.
 
-The **Overview** section at the far left side gives basic details about the assessment, including its group, regulation, associated services, completion status, and a description.
+Expand the **Overview** section at the left side of the page to see basic details about the assessment, including its group, regulation, associated services, completion status, and a description.
 
-The **Progress** tab shows your percentage toward completion of the assessment, with a breakdown showing percentage according to each service covered by the assessment. Get specifc details on the progress of each of your services by [viewing service details](#assessment-progress-by-service). See all controls within the assessment and their current staus on the [Controls tab](#controls-tab). Quickly access the status of all your improvement actions for the assessment the [Your improvement actions tab](#your-improvement-actions-tab). The actions handled by Microsoft for the assessment asre listed on the [Microsoft actions tab](#microsoft-actions-tab).
+The **Progress** tab shows the percentage of progress toward assessment completion. The progress bar displays a breakdown showing the amount of points achieved within each service covered by the assessment. Get details on each service by [viewing service details](#assessment-progress-by-service). See all controls within the assessment and their current staus on the [Controls tab](#controls-tab). Quickly access the status of all your improvement actions for the assessment the [Your improvement actions tab](#your-improvement-actions-tab). The actions handled by Microsoft for the assessment asre listed on the [Microsoft actions tab](#microsoft-actions-tab).
 
 #### Assessment progress by service
 
-saeb...see word doc p 3
+The services view at the top of the assessment's **Progress** tab helps you understand, at a service level and at a subscription level, how you're doing with respect to a regulation with each of your services individally, and collectively across your organization. The assessment gets its data on available subscriptions and improvement action status from Microsoft Defender for Cloud. Any erros associated with subscription accessibility should be addresed in your Defender for Cloud. See [Configure cloud settings](compliance-manager-cloud-settings.md) for more information.
+
+Select the **View service details** command, located next to or under the **Assessment progress** bar graph or in the upper-right command bar, to view a flyout pane with more details. The **View service details** flyout pane lists each service and its progress toward completing the assessment. Selecting **View** next to a service name displays another panel that lists each subscription within the service and its status.
+
+On a service's details panel, you'll see the list of subscriptions within the service that are covered by the assessment. The **Service progress** counter indicates the number of points achieved so far by improvement actions pertaining to the service for the asssessment out of the total number of achievable points.
+
+You can add more subscriptions to the service that you want the assessment to cover by selecting **Add subscription**.
 
 #### Controls tab
 
