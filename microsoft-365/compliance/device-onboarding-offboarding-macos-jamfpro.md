@@ -107,7 +107,7 @@ Download the following files.
 ### Configure application preferences
 
 > [!IMPORTANT]
-> You must use `com.microsoft.wdav` as the **Preference Domain** value. Microsoft Defender for Endpoint uses this name and `com.microsoft.wdav.ext` to load the managed settings.
+> You must use *com.microsoft.wdav* as the **Preference Domain** value. Microsoft Defender for Endpoint uses this name and *com.microsoft.wdav.ext* to load the managed settings.
 
 1. Sign in to JAMF Pro to create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) for more information. Use these values:
     - **Name:** *MDATP MDAV configuration settings*
