@@ -39,7 +39,7 @@ If you're new to eDiscovery or are an existing eDiscovery customer with a steady
 - **Group by conversations**: All email messages, Teams conversations, and Yammer conversations are grouped using the same Thread ID and appear as nested items. Additionally, all associated content for these messages and conversations is also grouped together. For example, if you have an email conversation that includes several email messages, some of which include attachments and some that include embedded images, all of the email messages, attachments, and images are grouped together in the review set list view under an applicable item.
 
 >[!NOTE]
-> For cases created before April 28, 2023, the **Enable group** toggle is disabled and these grouping options aren't available. Item grouping in review sets for these cases is based on *Family ID* and *Converstion ID* described in Option 2.
+> For cases created before March 15, 2023, the **Enable group** toggle is disabled and these grouping options aren't available. Item grouping in review sets for these cases is based on *Family ID* and *Conversation ID* described in Option 2.
 
 ### Option 2: Group items with Family ID and Conversation ID
 
