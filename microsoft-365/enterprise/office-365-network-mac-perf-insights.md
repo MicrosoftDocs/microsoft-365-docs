@@ -43,7 +43,7 @@ These insights also appear in the productivity score pages.
 
 ## Backhauled network egress
 
-This insight will be displayed if the network insights service detects that the distance from a given user location to the network egress is greater than 500 miles (800 kilometers). This may indicate that Microsoft 365 traffic is being backhauled to a common Internet edge device or proxy.
+This insight displays if the network insights service detects that the distance from a given user location to the network egress is greater than 500 miles (800 kilometers). This may indicate that Microsoft 365 traffic is being backhauled to a common Internet edge device or proxy.
 
 This insight is abbreviated as "Egress" in some summary views.
 
@@ -66,15 +66,15 @@ Details for this insight include:
 
 ### What should I do?
 
-We recommend network egress as close as possible to the office location.  Microsoft 365 traffic should route optimally to Microsoft's global network and to the nearest Microsoft 365 service front door. Having close network egress to users office locations also allows for improved performance as Microsoft expands both network points of presence and Microsoft 365 service front doors in the future.
+We recommend network egress as close as possible to the office location. Microsoft 365 traffic should route optimally to Microsoft's global network and to the nearest Microsoft 365 service front door. Having close network egress to users office locations also allows for improved performance as Microsoft expands both network points of presence and Microsoft 365 service front doors in the future.
 
 For more information about how to resolve this issue, see [Egress network connections locally](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) in [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
 ## Network intermediary device
 
-This insight will be displayed if we detected devices between your users and Microsoft's network. We recommend that latency-sensitive Microsoft 365 network traffic bypass such devices. This recommendation is additionally described in [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
+This insight displays if we detected devices between your users and Microsoft's network. We recommend that latency-sensitive Microsoft 365 network traffic bypass such devices. This recommendation is additionally described in [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
-One network intermediary insight we show is SSL break and inspection when critical Microsoft 365 network endpoints for Exchange, SharePoint, and Teams are intercepted and decrypted by network intermediary devices.
+One network intermediary insight we show is SSL break and inspection when network intermediary devices intercept and decrypt critical Microsoft 365 network endpoints for Exchange, SharePoint, and Teams.
 
 ### What does this mean?
 
@@ -86,7 +86,7 @@ Configure the network intermediary device that was detected to bypass processing
 
 ## Better performance detected for customers near you
 
-This insight will be displayed if the network insights service detects that a significant number of customers in your metro area have better performance than users at this office location.
+This insight displays if the network insights service detects that a significant number of customers in your metro area have better performance than users at this office location.
 
 This insight is abbreviated as "Peers" in some summary views.
 
@@ -103,7 +103,7 @@ There could be many reasons for this condition, including latency in your corpor
 
 ## Use of a non-optimal Exchange Online service front door
 
-This insight will be displayed if the network insights service detects that users in a specific location are not connecting to an optimal Exchange Online service front door.
+This insight displays if the network insights service detects that users in a specific location are not connecting to an optimal Exchange Online service front door.
 
 This insight is abbreviated as "Routing" in some summary views.
 
@@ -120,24 +120,23 @@ Use of a non-optimal Exchange Online service front door could be caused by netwo
 
 ## Use of a non-optimal SharePoint Online service front door
 
-This insight will be displayed if the network insights service detects that users in a specific location are not connecting to the closest SharePoint Online service front door.
+This insight displays if the network insights service detects that users in a specific location aren't connecting to the closest SharePoint Online service front door.
 
 This insight is abbreviated as "Afd" in some summary views.
 
-> [!div class="mx-imgBorder"]
-> ![Non-optimal SPO front door.](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+:::image type=content alt-text="Screenshot of a summary view for a non-optimal SPO front door usage." source="../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png":::
 
 ### What does this mean?
 
-We identify the SharePoint Online service front door that the test client is connecting to. Then for the office location city we compare that to the expected SharePoint Online service front door for that city. If it doesn't match, then we make this recommendation.
+We identify the SharePoint Online service front door that the test client is connecting to, and then we compare the office location city to the expected SharePoint Online service front door for that city. If the test client service front door and the expected service front door match, we recommend connecting to a SharePoint service front door that is closer to the office location.
 
 ### What should I do?
 
-Use of a non-optimal SharePoint Online service front door could be caused by network backhaul before the corporate network egress in which case we recommend local and direct network egress. It could also be caused by use of a remote DNS Recursive Resolver server in which case we recommend aligning the DNS Recursive Resolver server with the network egress.
+Network backhaul before the corporate network egress could cause non-optimal SharePoint Online service front door use. If so, try local and direct network egress. Non-optimal SharePoint Online service front door use could also be caused by a remote DNS Recursive Resolver server, in which case we recommend aligning the DNS Recursive Resolver server with the network egress.
 
 ## Low download speed from SharePoint front door
 
-This insight will be displayed if the network insights service detects that bandwidth between the specific office location and SharePoint Online is less than 1 MBps.
+This insight displays if the network insights service detects that bandwidth between the specific office location and SharePoint Online is less than 1 MBps.
 
 This insight is abbreviated as "Throughput" in some summary views.
 
@@ -147,15 +146,15 @@ The download speed that a user can get from SharePoint Online and OneDrive for B
 
 ### What should I do?
 
-To improve download speeds, bandwidth may need to be increased. Alternatively, there may be network congestion between computers at the office location and the SharePoint Online service front door. This condition restricts the download speed available to users even if sufficient bandwidth is available.
+To improve download speeds, bandwidth may need to be increased. Alternatively, network congestion might exist between computers at the office location and the SharePoint Online service front door. This condition restricts the download speed available to users even if sufficient bandwidth is available.
 
 ## China user optimal network egress
 
-This insight will be displayed if your organization has users in China connecting to your Microsoft 365 tenant in other geographic locations.
+This insight displays if your organization has users in China connecting to your Microsoft 365 tenant in other geographic locations.
 
 ### What does this mean?
 
-If your organization has private WAN connectivity, we recommend configuring a network WAN circuit from your office locations in China that has network egress to the Internet in any of the following locations:
+If your organization has private WAN connectivity, we recommend configuring a network WAN circuit from your office locations in China that have network egress to the Internet in any of the following locations:
 
 - Hong Kong
 - Japan
@@ -172,23 +171,23 @@ For more information about how to mitigate performance issues related to this in
 
 ## Exchange sampled connections affected by connectivity issues
 
-This insight will show when 50% or more of the sampled connections are affected. The impact is defined by the Exchange assessment being below 60% for each sample.
+This insight shows when 50% or more of the sampled connections are affected. The impact is defined by the Exchange assessment being below 60% for each sample.
 
 ### What does this mean?
 
-This indicates that most of your users are likely experiencing issues with Outlook connecting to Exchange Online. The percentage of samples represents the percentage of users who show below 60 points.  
+This indicates that most of your users are likely experiencing issues with Outlook connecting to Exchange Online. The percentage of samples represents the percentage of users who show below 60 points.
 
 ### What should I do?
 
-Enable office location network connectivity visibility if you have not already done so. Identify which offices are affected by poor network connectivity and find ways to improve the network perimeter at each that connects the users to Microsoft's network.
+Enable office location network connectivity visibility if you haven't already done so. Identify which offices are affected by poor network connectivity and find ways to improve the network perimeter at each that connects the users to Microsoft's network.
 
 ## SharePoint sampled connections affected by connectivity issues
 
-This insight will show when 50% or more of the sampled connections are affected. The impact is defined by the SharePoint assessment being below 40% for each sample.
+This insight shows when 50% or more of the sampled connections are affected. The impact is defined by the SharePoint assessment being below 40% for each sample.
 
 ### What does this mean?
 
-This indicates that most of your users are likely experiencing issues with SharePoint and OneDrive. The percentage of samples represents the percentage of users who show below 40 points.  
+This insight indicates that most of your users are likely experiencing issues with SharePoint and OneDrive. The percentage of samples represents the percentage of users who show below 40 points.
 
 ### What should I do?
 
