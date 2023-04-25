@@ -208,10 +208,7 @@ To use real-time analytics (preview), you must:
 
 1. [Enable insider risk analytics insights](insider-risk-management-configure.md#step-3-optional-enable-and-view-insider-risk-analytics-insights).
 2. Choose the **Include all users and groups** option when you [create the policy](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy).
-3. At this time, real-time analytics insights for indicator thresholds does not account for priority content events. So, if you want to take advantage of real-time analytics (preview) for configuring threshold settings, you must choose the **I don't want to specify priority content right now** option when you [create the policy](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy). 
-
-> [!NOTE]
-> For a policy to come into scope for real-time analytics, there must also be at least one triggering event. 
+3. At this time, real-time analytics insights (preview) for indicator thresholds does not account for priority content events. If you want to take advantage of real-time analytics for configuring threshold settings, you must choose the **I don't want to specify priority content right now** option when you [create the policy](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy). 
 
 ## Policy timeframes
 
@@ -694,7 +691,7 @@ Analytics insights from scans are based on the same risk management activity sig
 
 ### Receive real-time guidance on configuring thresholds
 
-Manually tuning policies to reduce "noise" can be a very time-consuming experience that requires you to do a lot of trial and error to determine the desired configuration for your policy. If analytics is turned on, and you decide to customize your indicator threshold settings, you can take advantage of real-time analytics insights to have a guided (data-driven) threshold configuration experience that helps you quickly select the right thresholds for each indicator in your policy. Real-time analytics (preview) is based on the last 10 days of audit data in your tenant and global exclusions are taken into account. For more information on real-time analytics for threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
+Manually tuning policies to reduce "noise" can be a very time-consuming experience that requires you to do a lot of trial and error to determine the desired configuration for your policy. If analytics is turned on, and you decide to customize your indicator threshold settings, you can get real-time insights from analytics if you want to take advantage of a guided (data-driven) threshold configuration experience that will help you configure the right thresholds when you create a new policy or tune an existing one. These insights can help you efficiently adjust the selection of indicators and thresholds of activity occurrence so that you don’t receive too few or too many policy alerts. Real-time analytics (preview) is based on the last 10 days of audit data in your tenant and global exclusions are taken into account. For more information on real-time analytics for threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
 
 ### Enable analytics and start a scan of potential insider risks in your organization
 
@@ -732,7 +729,7 @@ To display more information for an insight, select **View details** to display t
 To turn off insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or Microsoft 365 *Global admin* role group. After you disable analytics:
 
 - Analytics insight reports will remain static and will not be updated for new risks. 
-- You won't be able to [see real-time analytics when you customize threshold inicator settings for your policies](#indicator-level-settings).
+- You won't be able to [see real-time analytics when you customize indicator threshold settings for your policies](#indicator-level-settings).
 
 Complete the following steps to turn off insider risk analytics:
 
