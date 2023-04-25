@@ -20,7 +20,7 @@ description: Learn about the default labels and policies for Microsoft Purview I
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Eligible customers can activate the following default labels and policies for Microsoft Purview Information Protection: 
+Eligible customers can activate default labels and policies for Microsoft Purview Information Protection: 
 
 - Sensitivity labels and a sensitivity label policy
 - Client-side auto-labeling
@@ -99,8 +99,8 @@ If you need to edit these default sensitivity labels, see [Create and configure 
 The default sensitivity label policy makes the labels available for users to start labeling their documents and emails with sensitivity labels. It has the following configuration:
 
 - Publish the default labels to all users in your tenant
-- Apply the default label of **General** \ **All Employees (unrestricted)** for unlabeled documents and emails
-- Require that users provide a justification to remove a label or lower its classification
+- Default label of **General** \ **All Employees (unrestricted)** for unlabeled documents and emails
+- Users must provide a justification to remove a label or lower its classification
 
 For more information about these policy settings, and other policy settings that are available, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do).
 
@@ -157,9 +157,9 @@ For new customers from June 23, 2022, where the Microsoft 365 tenant is in the U
 
 New customers from June 23, 2022 have two auto-labeling policies for each setting. One policy is for the Exchange location, and the other for the SharePoint and OneDrive locations. Although the policies are created at the same time, simulation isn't immediately turned on for SharePoint and OneDrive:
 - Exchange location: The auto-labeling policy is created and immediately starts simulation.
-- SharePoint and OneDrive locations: The auto-labeling policy is created but waits 25 days before it automatically starts simulation. This delay allows time for files to be created and saved to these locations.
+- SharePoint and OneDrive locations: The auto-labeling policy is created but waits 25 days before it automatically starts simulation. This delay ensures that there is time for files to be created and saved to these locations.
 
-When the simulation is complete, review the results. If you are happy with them, turn on the policies. Slowly rolling out starting June 23, 2022, by default, the policies will be automatically turned on if they're not edited within the set time period (25 days initially for new customers, otherwise 7 days).
+When the simulation is complete, review the results. If you are happy with them, turn on the policies. By default, the policies will be automatically turned on if they're not edited within the set time period (25 days initially for new customers, otherwise 7 days).
 
 For more information about simulation mode, see [Learn about simulation mode](apply-sensitivity-label-automatically.md#learn-about-simulation-mode).
 
