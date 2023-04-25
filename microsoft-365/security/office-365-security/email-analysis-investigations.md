@@ -14,6 +14,7 @@ search.appverid:
 ms.collection:
 - m365-security
 - m365initiative-defender-office365
+- tier3
 keywords: automated incident response, investigation, remediation, threat protection
 description: See how email analysis in investigations work in Microsoft Defender for Office 365.
 ms.custom:

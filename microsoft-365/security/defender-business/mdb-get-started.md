@@ -11,7 +11,7 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 09/15/2022
-ms.reviewer: shlomiakirav
+ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -57,5 +57,4 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 
 ## Next steps
 
-- [Use the setup wizard in Defender for Business](mdb-use-wizard.md)
 - [See the overall setup and configuration process](mdb-setup-configuration.md)

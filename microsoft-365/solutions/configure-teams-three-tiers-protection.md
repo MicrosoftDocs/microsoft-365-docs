@@ -62,8 +62,6 @@ The following table summarizes the configurations for each tier. Use these confi
 |Site sharing settings|**Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**.|**Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**.|**Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**.|N/A (Controlled by site-level restricted access control.)|
 |Site-level restricted access control|None|None|None|Team members only|
 
-A variation of the Highly sensitive option, [Teams with security isolation](secure-teams-security-isolation.md) uses a unique sensitivity label for one team, which provides additional security. You can use this label to encrypt files, and only members of that team will be able to read them.
-
 Baseline protection includes public and private teams. Public teams can be discovered and accessed by anybody in the organization. Private teams can only be discovered and accessed by members of the team. Both of these configurations restrict sharing of the associated SharePoint site to team owners to assist in permissions management.
 
 Teams for sensitive and highly sensitive protection are private teams in which sharing and the requesting of access for the associated site is limited and sensitivity labels are used to set policies around guest sharing, device access, and content encryption.
