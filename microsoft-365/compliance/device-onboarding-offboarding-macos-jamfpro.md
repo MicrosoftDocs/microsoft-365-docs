@@ -46,9 +46,9 @@ Onboarding a macOS device into Microsoft Purview solutions is a multi-phase proc
 1. [Deploy onboarding packages](#deploy-onboarding-packages)
 2. [Configure application preferences](#configure-application-preferences)
 3. [Upload the installation package](#upload-the-installation-package)
-4. [Deploy System Configuration Profiles ###](#deploy-system-configuration-profiles-)
+4. [Deploy System Configuration Profiles](#deploy-system-configuration-profiles)
 
-### Prerequisites ###
+### Prerequisites
 
 Download the following files.
 
@@ -64,7 +64,7 @@ Download the following files.
 > 1. Right-click the link and select **Save link as...**. 
 > 2. Choose a folder and save the file.
 
-### Get the device onboarding and installation packages ###
+### Get the device onboarding and installation packages
 :::image type="content" source="../media/device-macos-dnld-install-package-inline.png" alt-text="Screenshot of the Microsoft Intune Configuration settings tab with all fields populated." lightbox="../media/device-macos-dnld-install-package-expanded.png":::
 
 1. In the compliance portal, open **Settings** > **Device Onboarding** and then choose **Onboarding**.
@@ -77,7 +77,7 @@ Download the following files.
 
 5. Choose **Download installation package**.
 
-### Deploy onboarding packages ###
+### Deploy onboarding packages
 
 1. Create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro documentation](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use the following values:
     - **Name:** *MDATP onboarding for macOS*
@@ -104,7 +104,7 @@ Download the following files.
 
 10. Choose **Done**.
 
-### Configure application preferences ###
+### Configure application preferences
 
 > [!IMPORTANT]
 > You must use `com.microsoft.wdav` as the **Preference Domain** value. Microsoft Defender for Endpoint uses this name and `com.microsoft.wdav.ext` to load the managed settings.
@@ -144,7 +144,7 @@ Download the following files.
 
 9. On the next page, choose the **Scope** tab, select the appropriate targets for this configuration profile, and then choose **Save**.
 
-### Deploy System Configuration Profiles ###
+### Deploy System Configuration Profiles
 
 1. On the **Configuration Profiles** page of the JAMF Pro console, select **Upload** and then choose **File**.
  

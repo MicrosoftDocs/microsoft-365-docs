@@ -66,7 +66,6 @@ Download the following files:
 
 :::image type="content" source="../media/device-macos-dnld-onboarding-package_Intune_inline.png" alt-text="Screenshot of the Microsoft Intune Configuration settings tab with all fields populated." lightbox="../media/device-macos-dnld-onboarding-package_Intune_expanded.png":::
 
-
 1. In **Microsoft Purview Compliance center** open **Settings** > **Device Onboarding** and then choose **Onboarding**.
  
 2. For the **Select operating system to start onboarding process** option, choose **macOS**.
@@ -76,8 +75,6 @@ Download the following files:
 4. Choose **Download onboarding package**. 
 
 5. Extract the .ZIP file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
-
-
 
 ### Deploy the mobileconfig and onboarding packages
 
@@ -90,7 +87,7 @@ Download the following files:
     1. **Profile type** = Templates
     1. **Template name** = Custom
 
-1. Choose **Create**. 
+1. Choose **Create**.
 
 1. Choose a name for the profile, such as *Microsoft Purview System MobileConfig*, and then Choose **Next**.
 

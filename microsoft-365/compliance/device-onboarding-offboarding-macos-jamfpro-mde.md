@@ -40,14 +40,14 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
 > [!NOTE]
 > The three most recent major releases of macOS are supported.
 
-## Onboard devices into Microsoft Purview solutions using JAMF Pro ##
+## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
 Onboarding a macOS device into Compliance solutions is a multiphase process.
 
-1. [Update the existing MDE Preference domain profile using the JAMF PRO console ###](#update-the-existing-mde-preference-domain-profile-using-the-jamf-pro-console-)
-1. [Enable full-disk access ###](#enable-full-disk-access-)
-1. [Enable accessibility access to Microsoft Purview data loss prevention ###](#enable-accessibility-access-to-microsoft-purview-data-loss-prevention-)
-1. [Check the macOS device ###](#check-the-macos-device-)
+1. [Update the existing MDE Preference domain profile using the JAMF PRO console](#update-the-existing-mde-preference-domain-profile-using-the-jamf-pro-console)
+2. [Enable full-disk access](#enable-full-disk-access)
+3. [Enable accessibility access to Microsoft Purview data loss prevention](#enable-accessibility-access-to-microsoft-purview-data-loss-prevention)
+4. [Check the macOS device](#check-the-macos-device)
 
 ### Prerequisites ###
 
@@ -68,7 +68,7 @@ If any of these individual files are updated, you must download the updated bund
 > 1. Right-click the link and select **Save link as...**. 
 > 2. Choose a folder and save the file.
 
-### Update the existing MDE Preference domain profile using the JAMF PRO console ###
+### Update the existing MDE Preference domain profile using the JAMF PRO console
 
 1. Update the schema.xml profile with the **schema.json** file you just downloaded.
 
@@ -84,7 +84,7 @@ If any of these individual files are updated, you must download the updated bund
 1. Choose **Save**. 
 
 
-### Enable full-disk access ### 
+### Enable full-disk access 
 
 To update the existing full disk access profile with the `fulldisk.mobileconfig` file, upload `fulldisk.mobileconfig` to JAMF. For more information, refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
@@ -92,7 +92,7 @@ To update the existing full disk access profile with the `fulldisk.mobileconfig`
 To grant accessibility access to DLP, upload the `accessibility.mobileconfig` file you downloaded previously to JAMF, as described in [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
 
-### Check the macOS device ###
+### Check the macOS device
 
 1. Restart the macOS device.
 
