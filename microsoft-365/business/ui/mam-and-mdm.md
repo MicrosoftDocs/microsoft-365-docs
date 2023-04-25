@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 10/24/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
@@ -36,4 +37,4 @@ Microsoft 365 Business Premium lets you set up policies that protect data on you
 
 ## Mobile application management or MAM
 
-Mobile application management lets you control your business data in your users' personal devices, such as iPhones and Androids, and their personal Windows computers. You can use application management policies to prevent your users from copying business data from Office apps to their personal apps. You can also remove all data from the Office apps on their personal devices. For more information, see [Choose the device management solution that's right for you](/mem/intune/fundamentals/what-is-device-management#choose-the-device-management-solution-thats-right-for-you) and [Set up and secure managed devices](/microsoft-365/business-premium/m365bp-protect-devices).
+Mobile application management lets you control your business data in your users' personal devices, such as iPhones and Androids, and their personal Windows computers. You can use application management policies to prevent your users from copying business data from Microsoft 365 apps to their personal apps. You can also remove all data from the Microsoft 365 apps on their personal devices. For more information, see [Choose the device management solution that's right for you](/mem/intune/fundamentals/what-is-device-management#choose-the-device-management-solution-thats-right-for-you) and [Set up and secure managed devices](/microsoft-365/business-premium/m365bp-protect-devices).

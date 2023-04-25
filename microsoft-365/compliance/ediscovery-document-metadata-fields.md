@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -21,7 +22,9 @@ search.appverid:
 
 # Document metadata fields in eDiscovery (Premium)
 
-The following table lists the metadata fields for documents in a review set in a case in Microsoft Purview eDiscovery (Premium). The table provides the following information:
+The following table lists the metadata fields for documents in a review set in a case in Microsoft Purview eDiscovery (Premium). 
+
+The table provides the following information:
 
 - **Field name** and **Display field name:** The name of the metadata field and the name of the field that's displayed when viewing the file metadata of a selected document in a review set. Some metadata fields aren't included when viewing the file metadata of a document. These fields are highlighted with an asterisk (*).
 - **Searchable field name:** The name of the property that you can search for when running a [review set query](ediscovery-review-set-search.md). A blank cell means that you can't search for the field in a review set query.
@@ -37,7 +40,7 @@ The following table lists the metadata fields for documents in a review set in a
 
 |Field name and Display field name|Searchable field name|Exported field name|Description|
 |---|---|---|---|
-|Attachment Content Id|AttachmentContentId||Attachment content Id of the item.|
+|Attachment Content ID|AttachmentContentId||Attachment content Id of the item.|
 |Attorney client privilege score|AttorneyClientPrivilegeScore||Attorney-client privilege model content score.|
 |Author|Author|Doc_authors|Author from the document metadata.|
 |BCC|Bcc|Email_bcc|Bcc field for message types. Format is **DisplayName \<SMTPAddress\>**.|
@@ -47,7 +50,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Content*|Content||Extracted text of the item.|
 |Conversation Body|ConversationBody||Conversation body of the item.|
 |Conversation ID|ConversationId|Conversation_ID|Conversation Id from the message. For Teams 1:1 and group chats, all transcript files and their family items within the same conversation share the same Conversation ID. For more information, see [eDiscovery (Premium) workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
-|Conversation Family ID|ConversationFamilyID|ConversationFamilyID|The Id that identifies individual elements of a conversation as well as the related items in the conversation.|
+|Conversation Family ID|ConversationFamilyID|ConversationFamilyID|The Id that identifies individual elements of a conversation and the related items in the conversation.|
 |Conversation Index||Conversation_index|Conversation index from the message.|
 |Conversation Name||ConversationName|This field depends on content type.<br>**Teams 1:1 chat:** first 40 characters of first message.<br>**Teams 1:N chat:** Name of group chat; if not available, the first 40 characters of the first message.<br>**Teams Channel Post:** Post title or announcement subhead; if not available, the first 40 characters of the first message.|
 |Conversation Pdf Time|ConversationPdfTime||Date when the PDF version of the conversation was created.|
@@ -63,7 +66,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Document comments|DocComments|Doc_comments|Comments from the document metadata.|
 |Document company||Doc_company|Company from the document metadata.|
 |Document date created|CreatedTime|Doc_date_created|Create date from document metadata.|
-|DocIndex*|||The index in the family. **-1** or **0** means it is the root.|
+|DocIndex*|||The index in the family. **-1** or **0** means it's the root.|
 |Document keywords||Doc_keywords|Keywords from the document metadata.|
 |Document modified by||Doc_modified_by|The user who last modified the document from document metadata.|
 |Document revision|Doc_Version|Doc_Version|Revision from the document metadata.|
@@ -78,7 +81,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Ignored processing errors|ErrorIgnored|Error_Ignored|Error was ignored and not remediated.|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|The full set of email headers from the email message|
 |EmailLevel*||Email_level|Indicates a message's level within the email thread it belongs to; attachments inherit its parent message's value.|
-|Email Message Id||Email_message_ID|Internet message Id from the message.|
+|Email Message ID||Email_message_ID|Internet message Id from the message.|
 |EmailReadReceiptRequested||Email_read_receipt|Email address supplied in Internet Headers for read receipt.|
 |Email Security|EmailSecurity|Email_security|Security setting of the message: **0** - None; **1** - Signed; **2** -  Encrypted; **3** -  Encrypted and signed.|
 |Email Sensitivity|EmailSensitivity|email_sensitivity|Sensitivity setting of the message: **0** - None; **1** Personal; **2** - Private; **3** - CompanyConfidential.|
@@ -96,13 +99,13 @@ The following table lists the metadata fields for documents in a review set in a
 |File system date created||File_system_date_created|Created date from file system (only applies to non-Office 365 data).|
 |File system date modified||File_system_date_modified|Modified date from file system (only applies to non-Office 365 data).|
 |File Type|FileType||File type of the item based on file extension.|
-|Group Id|GroupId|Group_ID|Groups together all items for email and documents. For email, this includes the message and all attachments and extracted items. For documents, this includes the document and any embedded items.|
+|Group ID|GroupId|Group_ID|Groups together all items for email and documents. For email, this includes the message and all attachments and extracted items. For documents, this includes the document and any embedded items.|
 |Has attachment|EmailHasAttachment|Email_has_attachment|Indicates whether or not the message has attachments.|
 |Has attorney|HasAttorney||**True** when at least one of the participants is found in the attorney list; otherwise, the value is **False**.|
 |HasText*||Has_text|Indicates whether or not the item has text; possible values are **True** and **False**.|
 |Immutable ID||Immutable_ID|This Id is used to uniquely identify a document within a review set. This field can't be used in a review set search and the Id can't be used to access a document in its native location.|
 |Inclusive type|InclusiveType|Inclusive_type|Inclusive type calculated for analytics: **0** - not inclusive; **1** - inclusive; **2** - inclusive minus; **3** - inclusive copy.|
-|In Reply To Id||In_reply_to_ID|In reply to Id from the message.|
+|In Reply To ID||In_reply_to_ID|In reply to Id from the message.|
 |InputFileExtension||Original_file_extension|The original file extension of the file.|
 |InputFileID||Input_file_ID|The file ID of the top level item in the review set. For an attachment, this ID will be the ID of the parent. This can be used to group families together.|
 |Is modern attachment|IsModernAttachment||This file is a modern attachment or linked file.|
@@ -120,7 +123,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Meeting End Date|MeetingEndDate|Meeting_end_date|Meeting end date for meetings.|
 |Meeting Start Date|MeetingStartDate|Meeting_start_date|Meeting start date for meetings.|
 |Message kind|MessageKind|Message_kind|The type of message to search for. Possible values: **<p>contacts <br>docs <br>email <br>externaldata <br>faxes <br>im <br>journals <br>meetings <br>microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br>notes <br>posts <br>rssfeeds <br>tasks <br>voicemail**|
-|Modern Attachment Parent Id||ModernAttachment_ParentId|The Immutable Id of the document's parent.|
+|Modern Attachment Parent ID||ModernAttachment_ParentId|The Immutable Id of the document's parent.|
 |Native Extension|NativeExtension|Native_extension|Native extension of the item.|
 |Native file name|NativeFileName|Native_file_name|Native file name of the item.|
 |NativeMD5||Native_MD5|MD5 hash (128-bit hash value) of the file stream.|
@@ -179,4 +182,4 @@ The following table lists the metadata fields for documents in a review set in a
 |||||
 
 > [!NOTE]
-> For more information about searchable properties when searching Office 365 content locations when you're collecting data for an eDiscovery (Premium) case, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
+> For more information about searchable properties when searching Microsoft 365 content locations when you're collecting data for an eDiscovery (Premium) case, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).

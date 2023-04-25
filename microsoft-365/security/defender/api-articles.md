@@ -23,7 +23,7 @@ search.appverid:
   - MOE150
   - MET150
 ms.custom: api
-ms.date: 02/16/2021
+ms.date: 02/08/2023
 ---
 
 # Other security and threat protection APIs
@@ -36,6 +36,9 @@ ms.date: 02/16/2021
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 The following resources provide more information about APIs available for other Microsoft security solutions, beyond the Microsoft 365 Defender API.
 

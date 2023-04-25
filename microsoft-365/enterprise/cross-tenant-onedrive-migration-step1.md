@@ -3,6 +3,7 @@ title: OneDrive Cross-tenant OneDrive migration Step 1
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
+ms.date: 10/25/2022
 recommendations: true
 audience: ITPro
 ms.topic: article
@@ -36,7 +37,7 @@ This is Step 1 in a solution designed to complete a Cross-tenant OneDrive migrat
 
 ### Connect to both tenants
 
-1. Sign in to the Sharepoint Management Shell as a SharePoint Online admin or Microsoft 365 Global admin.
+1. Sign in to the SharePoint Management Shell as a SharePoint Online admin or Microsoft 365 Global admin.
 2. Run the following entering the **source** tenant URL: 
 
     ```powershell

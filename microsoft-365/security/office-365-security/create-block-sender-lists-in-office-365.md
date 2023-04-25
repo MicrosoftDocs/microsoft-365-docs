@@ -7,14 +7,16 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 ms.localizationpriority: medium
 search.appverid: 
   - MET150s
 description: Admins can learn about the available and preferred options to block inbound messages in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 09/13/2019
+ms.date: 1/31/2023
 ---
 
 # Create blocked sender lists in EOP
@@ -61,7 +63,7 @@ Our number one recommended option for blocking mail from specific senders or dom
 
 Email messages from these senders are marked as _high confidence spam_ (SCL = 9). What happens to the messages is determined by the [anti-spam policy](anti-spam-policies-configure.md) that detected the message for the recipient. In the default anti-spam policy and new custom policies, messages that are marked as high confidence spam are delivered to the Junk Email folder by default. In Standard and Strict [preset security policies](preset-security-policies.md), high confidence spam messages are quarantined.
 
-As an added benefit, users in the organization can't send email to these blocked domains and addresses. They'll receive the following non-delivery report (also known as an NDR or bounce message): `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.` The entire message is blocked to all recipients if email is sent to any of the entries in the list.
+As an added benefit, users in the organization can't send email to these blocked domains and addresses. They'll receive the following non-delivery report (also known as an NDR or bounce message): `5.7.703 Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy` The entire message is blocked to all recipients if email is sent to any of the entries in the list.
 
 Only if you can't use the Tenant Allow/Block List for some reason should you consider using a different method to block senders.
 

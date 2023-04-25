@@ -8,6 +8,7 @@ f1.keywords:
 - monitor device compliance
 - deploy security baselines
 manager: dougeby
+ms.date: 10/20/2021
 audience: ITPro
 description: Learn how to connect Microsoft Intune to Defender for Endpoint and monitor device risk as a condition for access.
 ms.topic: article

@@ -13,6 +13,7 @@ search.appverid:
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection: 
   - m365-security
+  - tier2
 ms.custom: 
   - seo-marvel-apr2020
 description: In this article, you'll learn about Backscatter and Microsoft Exchange Online Protection (EOP)

@@ -5,7 +5,8 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.topic: article
+ms.date: 10/21/2022
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid:
 ms.collection:
@@ -36,4 +37,3 @@ If you need to edit an existing template or to delete or unpublish a template, f
    - For **Draft templates**, select **Edit** to open the template studio where you can edit the draft template. You can also choose to delete or publish the template.
 
       ![Screenshot of the Modern templates section showing the draft templates.](../media/content-understanding/content-assembly-edit-draft.png)
-

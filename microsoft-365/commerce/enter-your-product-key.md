@@ -9,7 +9,7 @@ ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
@@ -30,10 +30,12 @@ ms.date: 08/18/2022
 
 # Enter your product key for Microsoft 365 Business Standard
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 If you bought Microsoft 365 Business Standard from a retail store, this article helps you activate your subscription.
   
  **Need something else?**
- **For help with Microsoft 365 Family or Microsoft 365 Personal**, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  
+ **For help with Microsoft 365 Family or Microsoft 365 Personal**, see [Using product keys with Microsoft 365](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  
  **Volume licensing customer?** If you bought Microsoft 365 for business through a [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298), see the article, [Enter your product key purchased from Microsoft Open](purchases-from-microsoft-open.md).
   
 ## Activate a new subscription

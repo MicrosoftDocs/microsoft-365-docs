@@ -1,10 +1,11 @@
 ---
-title: "Free trial - Microsoft Purview compliance solutions"
+title: "Free trial of Microsoft Purview compliance solutions"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 03/16/2023
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
@@ -22,7 +23,7 @@ description: "Try all Microsoft Purview risk and compliance solutions at the E5 
 
 # About the Microsoft Purview risk and compliance solutions trial
 
-The Microsoft Purview solutions trial is a free and easy way to try all the [capabilities of Microsoft Purview risk and compliance solutions](purview-compliance.md). After a quick setup taking only a couple of minutes, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
+The Microsoft Purview solutions trial is a free and easy way to try [capabilities of Microsoft Purview risk and compliance solutions](purview-compliance.md). After a quick setup taking only a couple of minutes, the features of the Microsoft E5 license package are available for you to use for up to 90 days.
 
 - [**Start now** at the Microsoft Purview compliance trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)
 - [Get detailed sign-up instructions](#how-to-sign-up-for-the-trial)
@@ -33,9 +34,9 @@ The Microsoft Purview solutions trial is a free and easy way to try all the [cap
 
 ## Eligibility and licensing
 
-Microsoft 365 E3 and Office 365 E3 customers who don't already have a Microsoft E5 license package are eligible for the Purview solutions trial. The trial isn't available for Microsoft 365 Government customers.
+Microsoft 365 E3, Office 365 E3, and Enterprise Mobility and Security E3 customers who don't already have a Microsoft E5 license package are eligible for the Purview solutions trial. The trial isn't available for Microsoft 365 Government customers.
 
-As part of the trial setup, 300 Microsoft 365 E5 compliance licenses are automatically applied to your organization. The licenses are active for 90 days.
+As part of the trial setup, 300 Microsoft 365 E5 compliance licenses are automatically applied to your organization. The licenses are active for 90 days. You may want to refer to [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) for licensing details for each solution.
 
 ## Required roles for starting the trial
 
@@ -81,7 +82,10 @@ If you decide not to upgrade to the E5 level solutions, unless stated otherwise 
 
 ## Learn more about Purview solutions
 
-Wondering what you can experience in your free trial? The Purview solutions trial includes the following solutions:
+The Purview solutions trial includes the solutions listed below.
+
+> [!NOTE]
+> Certain Purview features may appear in other Microsoft products for which a license is needed. Refer to each Purview solution's licensing details at [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 - **Audit**
 
@@ -97,10 +101,7 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
 - **Data Lifecycle Management**
 
-  Microsoft Purview Data Lifecycle Management premium capabilities give you more automation and deeper customizations for how you manage the lifecycle of data – keeping what you need and getting rid of what you don’t need across the broad scale of your organization with:
- 
-   - Adaptive policy scopes – govern data dynamically across your org by deploying retention policies and labels to groups of users, SharePoint sites, and Microsoft 365 Groups (including Microsoft Teams) using scopes that target policies to locations against attributes and properties that you define.
-  - Auto-apply retention labels – reduce manual processes by using retention labels that automatically apply to items matching your specified criteria.
+  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. Learn more about [adaptive policy scopes](purview-adaptive-scopes.md).
 
   Learn more about [Microsoft Purview Data Lifecycle Management](data-lifecycle-management.md).
  

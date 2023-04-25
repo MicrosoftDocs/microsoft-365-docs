@@ -1,6 +1,6 @@
 ---
 title: Security recommendations for priority accounts in Microsoft 365, priority accounts, priority accounts in Office 365, priority accounts in Microsoft 365
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
@@ -8,20 +8,21 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
-ms.assetid: 
-ms.collection: 
+ms.assetid:
+ms.collection:
   - m365-security
   - m365solution-overview
   - m365solution-protecthve
   - highpri
+  - tier1
 ms.custom:
 description: Admins can learn how to elevate the security settings and use reports, alerts, and investigations for priority accounts in their Microsoft 365 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/08/2022
+ms.date: 2/28/2023
 ---
 
 # Security recommendations for priority accounts in Microsoft 365
@@ -33,6 +34,8 @@ ms.date: 12/08/2022
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Not all user accounts have access to the same company information. Some accounts have access to sensitive information, such as financial data, product development information, partner access to critical build systems, and more. If compromised, accounts that have access to highly confidential information pose a serious threat. We call these types of accounts _priority accounts_. Priority accounts include (but aren't limited to) CEOs, CISOs, CFOs, infrastructure admin accounts, build system accounts, and more.
+
+Microsoft Defender for Office 365 supports priority accounts as tags that can be used in filters in alerts, reports, and investigations. For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 
 For attackers, ordinary phishing attacks that cast a random net for ordinary or unknown users are inefficient. On the other hand, _spear phishing_ or _whaling_ attacks that target priority accounts are very rewarding for attackers. So, priority accounts require stronger than ordinary protection to help prevent account compromise.
 
@@ -59,7 +62,7 @@ For instructions, see [Step 1. Increase sign-in security for remote workers with
 
 **Note**: We strongly recommend that you globally disable legacy authentication protocols for all priority users as described in the previous article. If your business requirements prevent you from doing so, Exchange Online offers the following controls to help limit the scope of legacy authentication protocols:
 
-- You can use [authentication policies](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) and [Client Access Rules](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) in Exchange Online to block or allow Basic authentication and legacy authentication protocols like POP3, IMAP4, and authenticated SMTP for specific users.
+- You can ([until October 2023](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-client-access-rules-in-exchange-online/ba-p/3638563)) use [Client Access Rules](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) in Exchange Online to block or allow Basic authentication and legacy authentication protocols like POP3, IMAP4, and authenticated SMTP for specific users.
 
 - You can disable POP3 and IMAP4 access on individual mailboxes. You can disable authenticated SMTP at the organizational level and enable it on specific mailboxes that still require it. For instructions, see the following articles:
   - [Enable or Disable POP3 or IMAP4 access for a user](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
@@ -94,9 +97,17 @@ After you secure and tag your priority users, you can use the available reports,
 |Feature|Description|
 |---|---|
 |Alerts|The user tags of affected users are visible and available as filters on the **Alerts** page in the Microsoft 365 Defender portal. For more information, see [Viewing alerts](../../compliance/alert-policies.md#view-alerts).|
+|Incidents|The user tags for all correlated alerts are visible on the **Incidents** page in the Microsoft 365 Defender portal. For more information, see [Manage incidents and alerts](mdo-sec-ops-manage-incidents-and-alerts.md).|
+|Custom alert policies|You can create alert policies based on user tags in the Microsoft 365 Defender portal. For more information, see [Alert policies in Microsoft 365](../../compliance/alert-policies.md).|
 |Explorer <p> Real-time detections|In **Explorer** (Defender for Office 365 Plan 2) or **Real-time detections** (Defender for Office 365 Plan 1), user tags are visible in the Email grid view and the Email details flyout. User tags are also available as a filterable property. For more information, see  [Tags in Explorer](threat-explorer-about.md#tags-in-threat-explorer).|
+|Email entity page|You can filter emails based on applied user tags in Microsoft Defender for Office 365 E5, and Defender for Office P1 and P2. For more information, see [Email entity page](mdo-email-entity-page.md).|
 |Campaign Views|User tags are one of many filterable properties in Campaign Views in Microsoft Defender for Office 365 Plan 2. For more information, see [Campaign Views](campaigns.md).|
 |Threat protection status report|In virtually all of the views and detail tables in the **Threat protection status report**, you can filter the results by **priority accounts**. For more information, see [Threat protection status report](reports-email-security.md#threat-protection-status-report).|
+|Top senders and recipients report|You can add this user tag to the top 20 message senders in your organization. For more information, see [Top senders and recipients report](reports-email-security.md#top-senders-and-recipients-report).|
+|Compromised user report|User accounts that are marked as **Suspicious** or **Restricted** in Microsoft 365 organizations with Exchange Online mailboxes shows up in this report. For more information, see [Compromised user report](reports-email-security.md#compromised-users-report).|
+|Admin submissions and user reported messages|Use the Submissions page in the Microsoft 365 Defender portal to submit email messages, URLs, and attachments to Microsoft for analysis. For more information, see [Admin submissions and user reported messages](submissions-admin.md).|
+|Quarantine|Quarantine is available to hold potentially dangerous or unwanted messages in Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations for **Priority accounts**. For more information, see [Quarantine email messages](quarantine-about.md).|
+|Attack simulation|To test your security policies and practices, run a benign cyberattack simulation for your target users. For more information, see [Attack simulation](attack-simulation-training-simulations.md#target-users).|
 |Email issues for priority accounts report|The **Email issues for priority accounts** report in the Exchange admin center (EAC) contains information about undelivered and delayed messages for **priority accounts**. For more information, see [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
 
 ## Train users
@@ -122,4 +133,7 @@ In addition, Microsoft recommends that users take the actions described in this 
 
 ## See also
 
-[Announcing Priority Account Protection in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)
+- [User tags in Microsoft Defender for Office 365](user-tags-about.md)
+- [Configure and review priority accounts](protection-stack-microsoft-defender-for-office365.md)
+- [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)
+- [Announcing Priority Account Protection in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

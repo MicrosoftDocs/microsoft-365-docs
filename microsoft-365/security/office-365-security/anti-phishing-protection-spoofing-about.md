@@ -16,6 +16,7 @@ ms.collection:
   - m365initiative-defender-office365
   - EngageScoreSep2022
   - ContentEngagementFY23
+  - tier2
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
