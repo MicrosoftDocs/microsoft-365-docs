@@ -352,6 +352,8 @@
               href: adoption/apps-health.md
             - name: Endpoint Analytics
               href: /mem/analytics/productivity-score
+         - name: Usage and user sentiment
+           href: misc/experience-insights-dashboard.md
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
