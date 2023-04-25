@@ -120,7 +120,7 @@ You can change the name of your assessment after you create it by selecting the 
 
 ## Monitor assessment progress and controls
 
-Each assessment has a details page that gives an at-a-glance view of your progress in completing the assessment. The page shows your progress in completing controls, and the test status of key improvement actions within those controls.
+Each assessment has a details page that gives an at-a-glance view of your progress in completing the assessment. The page shows how your services are performing, and the status of controls and improvement actions.
 
 Expand the **Overview** section at the left side of the page to see basic details about the assessment, including its group, regulation, associated services, completion status, and a description.
 
@@ -128,7 +128,7 @@ The **Progress** tab shows the percentage of progress toward assessment completi
 
 #### Assessment progress by service
 
-The services view at the top of the assessment's **Progress** tab helps you understand, at a service level and at a subscription level, how you're doing with respect to a regulation with each of your services individally, and collectively across your organization. The assessment gets its data on available subscriptions and improvement action status from Microsoft Defender for Cloud. Any erros associated with subscription accessibility should be addresed in your Defender for Cloud. See [Configure cloud settings](compliance-manager-cloud-settings.md) for more information.
+The services view at the top of the assessment's **Progress** tab helps you understand how you're doing with respect to a regulation with each of your services individally, even at the subscription level, and collectively across your organization. The assessment gets its data on available subscriptions and improvement action status from Microsoft Defender for Cloud. Any erros associated with subscription accessibility should be addresed in your Defender for Cloud. See [Configure cloud settings](compliance-manager-cloud-settings.md) for more information.
 
 Select the **View service details** command, located next to or under the **Assessment progress** bar graph or in the upper-right command bar, to view a flyout pane with more details. The **View service details** flyout pane lists each service and its progress toward completing the assessment. Selecting **View** next to a service name displays another panel that lists each subscription within the service and its status.
 
@@ -138,9 +138,25 @@ You can add more subscriptions to the service that you want the assessment to co
 
 #### Controls tab
 
-The controls tab displays detailed information for each control mapped to the assessment. A **control status breakdown** chart shows the status of controls by family, so you can see at a glance which groupings of controls need attention.
+The **Controls** tab displays detailed information for each control mapped to the assessment. The **Control status breakdown** chart shows the status of controls by family (for example, Confirguration Management and Incident Response) so you can see at a glance which groupings of controls need attention.
 
-Beneath the chart, a table lists detailed information about each control within the assessment. Controls are grouped by control family. Expand each family name to reveal the individual controls it contains. The information listed for each control includes:
+The table underneath the breadkdown chart lists the controls in the assessment. The information listed for each control includes:
+
+- **Control title**
+- **Status**: The test status of the improvement actions within the control:
+  - **Passed**: All improvement actions have a test status of "passed," or at least one is passed and the rest are "out of scope."
+  - **Failed** At least one improvement action has a test status of "failed."
+  - **None**: All improvement actions haven't been tested.
+  - **Out of scope**: All improvement actions are out of scope for this assessment.
+  - **In progress**: Improvement actions have a status other than the ones listed above, which could include "in progress," "partial credit," or "undetected."
+- **Control ID**: The control's identification number, assigned by its corresponding regulation, standard, or policy.
+- **Points achieved**: The number of points earned by completing actions, out of the total number achievable.
+- **Your improvement actions**: The number of your actions completed out of the total number to be done.
+- **Microsoft actions**: The number of actions completed by Microsoft.
+
+Select a control from the list to view its details page. A graph indicates the test status of the improvement actions within the control. A table below the graph shows key improvement actions for that control. Each improvement action is listed in the table below the graph. Select an improvement action from the list to drill into the improvement action's details page. The details page shows test status and implementation notes, and launch into the recommended solution.
+
+The information listed for each control includes:
 
 - **Control title**
 - **Status**: reflects the test status of the improvement actions within the control
@@ -160,9 +176,10 @@ Select an improvement action from the list to drill into the improvement action'
 
 #### Your improvement actions tab
 
-The tab for your improvement actions lists all the controls in the assessment that are managed by your organization. The status bar details the aggregated test status of your improvement actions in the assessment so you can quickly gauge what has been tested and what still needs to be done. Beneath the bar is the full list of improvement actions and key details, including: test status, the number of potential and earned points, associated regulations and standards, applicable solution, action type, and control family. Learn more about [how actions contribute to your compliance score](compliance-score-calculation.md#action-types-and-points).
+The tab for your improvement actions lists all the controls in the assessment that are managed by your organization. The status bar details the aggregated test status of your improvement actions in the assessment so you can quickly gauge what has been tested and what still needs to be done. Beneath the bar is the full list of improvement actions and key details, including: test status, the number of potential and earned points, associated regulations and standards, applicable solution, action type, and control family.
 
-Select an improvement action to view its details page, and select the **Launch now** link to open the solution to take action.
+Filter by **Service** to view actions related to the service and their progress. From the table, select an improvement action to go to its details page, from where you can manage implementation and testing.
+Get details about [working with improvement actions](compliance-manager-improvement-actions.md).
 
 #### Microsoft actions tab
 
