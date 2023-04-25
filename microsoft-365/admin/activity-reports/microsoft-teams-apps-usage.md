@@ -170,7 +170,7 @@ This table shows you per-user view with the following metrics for each app. A su
 
 ## Managing apps in the Teams Admin Center
 
-For more information about how to manage your Teams apps, please refer to [About apps in Microsoft Teams](/microsoftteams/deploy-apps-microsoft-teams-landing-page.md).
+For more information about how to manage your Teams apps, please refer to [About apps in Microsoft Teams](/microsoftteams/deploy-apps-microsoft-teams-landing-page).
 
 To link an app in this report to the Manage Apps experience in Teams Admin Center, you can use the following:
 
