@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -46,17 +46,17 @@ Decide before you create your retention policy whether it will be **adaptive** o
 
 Although a retention policy can support multiple services that are identified as "locations" in the retention policy, you can't create a single retention policy that includes all the supported locations:
 
-- Exchange email
-- SharePoint site
-- OneDrive accounts
-- Microsoft 365 groups
-- Skype for Business
-- Exchange public folders
-- Teams channel messages
-- Teams chats
-- Teams private channel messages
-- Yammer community messages
-- Yammer user messages
+- **Exchange mailboxes**
+- **SharePoint sites** or **SharePoint classic and communication sites**
+- **OneDrive accounts**
+- **Microsoft 365 Group mailboxes & sites**
+- **Skype for Business**
+- **Exchange public folders**
+- **Teams channel messages**
+- **Teams chats**
+- **Teams private channel messages**
+- **Yammer community messages**
+- **Yammer user messages**
 
 If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. This means that the instructions to follow depend on whether you need to include the Teams or Yammer locations.
 
@@ -111,9 +111,9 @@ For technical details about how retention works for Teams, including what elemen
 
 #### Additional retention policy needed to support Teams
 
-Teams is more than just chats and channel messages. If you have teams that were created from a Microsoft 365 group (formerly Office 365 group), you should additionally configure a retention policy that includes that Microsoft 365 group by using the **Microsoft 365 Groups** location. This retention policy applies to content in the group's mailbox, site, and files.
+Teams is more than just chats and channel messages. If you have teams that were created from a Microsoft 365 group (formerly Office 365 group), you should additionally configure a retention policy that includes that Microsoft 365 group by using the **Microsoft 365 Group mailboxes & sites** location. This retention policy applies to content in the group's mailbox, site, and files.
 
-If you have team sites that aren't connected to a Microsoft 365 group, you need a retention policy that includes the **SharePoint sites** or **OneDrive accounts** locations to retain and delete files in Teams:
+If you have team sites that aren't connected to a Microsoft 365 group, you need a retention policy that includes the **SharePoint classic and communication sites** or **OneDrive accounts** locations to retain and delete files in Teams:
 
 - Files that are shared in chat are stored in the OneDrive account of the user who shared the file.
 
@@ -165,7 +165,7 @@ For technical details about how retention works for Yammer, including what eleme
 
 #### Additional retention policies needed to support Yammer
 
-Yammer is more than just community messages and private messages. To retain and delete email messages for your Yammer network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Yammer, by using the **Microsoft 365 Groups** location.
+Yammer is more than just community messages and private messages. To retain and delete email messages for your Yammer network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Yammer, by using the **Microsoft 365 Group mailboxes & sites** location.
 
 This location will also include files that are uploaded to Yammer communities. These files are stored in the group-connected SharePoint site for the Yammer community.
 
@@ -189,14 +189,14 @@ Use the following instructions for retention policies that apply to any of these
 
 4. Depending on your selected scope:
     
-    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Exchange email** but not **SharePoint sites**. 
+    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Exchange mailboxes** but not **SharePoint sites**.
     
     - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations except the locations for Teams and Yammer. For each location, you can leave it at the default to [apply the policy to the entire location](retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
     
     Information specific to locations:
-    - [Exchange email and Exchange public folders](retention-settings.md#configuration-information-for-exchange-email-and-exchange-public-folders)
+    - [Exchange mailboxes and Exchange public folders](retention-settings.md#configuration-information-for-exchange-mailboxes-and-exchange-public-folders)
     - [SharePoint sites and OneDrive accounts](retention-settings.md#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
-    - [Microsoft 365 Groups](retention-settings.md#configuration-information-for-microsoft-365-groups)
+    - [Microsoft 365 Group mailboxes & sites](retention-settings.md#configuration-information-for-microsoft-365-group-mailboxes--sites)
     - [Skype for Business](retention-settings.md#configuration-information-for-skype-for-business)
 
 5. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
@@ -225,7 +225,7 @@ First, the retention policy needs to be distributed to the locations that you se
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - For all other policy locations, such as **Exchange email**, **SharePoint sites**, and **Teams channel messages**:
+    - For all other policy locations, such as **Exchange mailboxes**, **SharePoint classic and communication sites**, and **Teams channel messages**:
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution

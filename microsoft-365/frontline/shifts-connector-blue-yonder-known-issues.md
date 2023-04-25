@@ -26,9 +26,9 @@ This article lists known issues for the [Microsoft Teams Shifts connector for Bl
 
 ## You can map an instance to more than one team using PowerShell or your Microsoft 365 admin center
 
-A Blue Yonder Workforce Management instance should only be mapped to one team at any given time in a connection.
+A Blue Yonder Workforce Management instance should only be mapped to one team at any given time in a connection instance.
 
-However, when you use PowerShell or Microsoft 365 admin center to set up a connection, it’s possible to map an instance to more than one team. We recommend that you avoid mapping an instance to multiple teams as it can result in syncing issues and unexpected behavior.
+However, when you use PowerShell or Microsoft 365 admin center to set up a connection instance, it’s possible to map an instance to more than one team. We recommend that you avoid mapping an instance to multiple teams as it can result in syncing issues and unexpected behavior.
 
 ## Related articles
 

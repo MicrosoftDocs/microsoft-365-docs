@@ -113,6 +113,4 @@ To confirm that the group has been successfully purged, run the  *Get-AzureADMSD
 
 [Allow members to send as or send on behalf of a Microsoft 365 group](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[Upgrade distribution lists to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md)
-
 [Manage Microsoft 365 Groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)

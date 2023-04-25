@@ -1,12 +1,12 @@
 ---
-title: "Get started with eDiscovery (Standard) cases in Microsoft Purview"
+title: "Get started with eDiscovery (Standard)"
 description: "Describes how to get started using eDiscovery (Standard) in Microsoft Purview. After you assign eDiscovery permissions and create a case, you can add members, create eDiscovery holds, and then search for and export content that's relevant to your investigation."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/11/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 ---
 
-# Get started with eDiscovery (Standard) in Microsoft Purview
+# Get started with eDiscovery (Standard)
 
 Microsoft Purview eDiscovery (Standard) in Microsoft Purview provides a basic eDiscovery tool that organizations can use to search and export content in Microsoft 365 and Office 365. You can also use eDiscovery (Standard) to place an eDiscovery hold on content locations, such as Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft Teams. Nothing is needed to deploy eDiscovery (Standard), but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start using eDiscovery (Standard) to search, export, and preserve content.
 

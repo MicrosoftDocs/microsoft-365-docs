@@ -26,7 +26,7 @@ ms.date: 01/31/2023
 # Microsoft Defender for Office 365
 
 > [!IMPORTANT]
->If your browser is being blocked by Safe Links and Safe Attachment pages, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
+> If your browser is being blocked by Safe Links and Safe Attachment pages, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 

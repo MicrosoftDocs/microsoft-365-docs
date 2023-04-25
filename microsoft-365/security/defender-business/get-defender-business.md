@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 02/14/2023
+ms.date: 04/19/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -104,4 +104,4 @@ When you use Defender for Business, you'll work with two main portals: the Micro
 
 ## Next steps
 
-- Proceed to [Step 2: Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md)
+- Proceed to [Step 2: Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).

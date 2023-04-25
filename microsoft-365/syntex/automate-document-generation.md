@@ -73,6 +73,10 @@ Follow these steps to automatically generate documents using a modern template a
     > We recommend using templates that don't need users to manually add values for document generation. If the template needs manual input for a field, you can specify that value against the field rather than mapping it to a SharePoint list column.<br><br> 
     > Currently, only Word documents (.Docx) are supported using this action.  
 
+8. To generate a pdf file using this action provide **.pdf** as the extension in the file name.
+
+9. The action does not support images and tables and templates containing these fields are hidden while selecting the templates in the action 
+
 ## See also
 
  [Overview of content assembly in Microsoft Syntex](content-assembly.md)
