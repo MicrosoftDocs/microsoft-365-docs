@@ -99,6 +99,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 1. Australia
 1. Canada
 1. Japan
+1. India
 
 | Country Code | Countries/Regions | Viva Insights Advanced | Viva Learning | Planner |
 | --- | --- | --- | --- | --- |
@@ -205,7 +206,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 | HK | Hong Kong, SAR China | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | HU | Hungary | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | IS | Iceland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| IN | India | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
+| IN | India | APC<sup>2</sup>| APC<sup>2</sup>| IND<sup>7</sup>|
 | ID | Indonesia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | IQ | Iraq | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | IE | Ireland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|

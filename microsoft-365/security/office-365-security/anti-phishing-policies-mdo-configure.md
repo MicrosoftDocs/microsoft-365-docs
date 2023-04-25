@@ -399,7 +399,7 @@ Anti-phishing policies are processed in the order that they're displayed on the 
   - No two policies can have the same priority value.
 - The default anti-phishing policy always has the priority value **Lowest**, and you can't change it.
 
-Anti-phishing protection stops for a recipient after the first policy is applied. For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+Anti-phishing protection stops for a recipient after the first policy is applied (the highest priority policy for that recipient). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
 After you select the custom anti-phishing policy by clicking anywhere in the row other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
 
