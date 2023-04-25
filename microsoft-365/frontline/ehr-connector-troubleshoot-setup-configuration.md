@@ -27,7 +27,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ms.reviewer: casjacks
 description: Use this guidance to help you troubleshoot common setup and configuration issues for the Teams Electronic Health Record (EHR) connector.  
-ms.date: 01/11/2023
+ms.date: 04/21/2023
 ---
 
 # Troubleshoot Microsoft Teams EHR connector setup and configuration
@@ -135,7 +135,7 @@ Contact an admin in your organization to either grant you admin access or set up
 
 ### My organization wants to share the FHIR base URL with other organizations in my network
 
-Organizations in a healthcare network, such as a hospital with regional branches or related medical offices, might want to share an FHIR base URL. If you want to share your FHIR base URL, please email us at [TeamsForHealthcare](mailto:teamsforhealthcare@service.microsoft.com).
+If you want to share your FHIR base URL, email us with the FHIR base URL you would like to share at [TeamsForHealthcare](mailto:teamsforhealthcare@service.microsoft.com).
 
 ## Virtual Desktop Infrastructure (VDI) support
 

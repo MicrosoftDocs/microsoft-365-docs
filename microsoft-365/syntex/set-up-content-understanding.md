@@ -11,6 +11,7 @@ ms.service: microsoft-syntex
 ms.collection: 
 - enabler-strategic
 - m365initiative-syntex
+- Tier1
 ms.custom: 
 - admindeeplinkMAC
 search.appverid: MET150

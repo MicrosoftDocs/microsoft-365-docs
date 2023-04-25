@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
-description: "Learn to verify your domain and set up DNS records for email, Teams, and other services at GoDaddy for Microsoft."
+description: "Learn to verify your domain and set up DNS records for email, Microsoft Teams, and other services at GoDaddy for Microsoft."
 ---
 
 # Connect your DNS records at GoDaddy to Microsoft 365
@@ -138,6 +138,8 @@ To verify the record in Microsoft 365:
 
 4. Choose **MX** option from the filter box.
 
+  :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add-MX-records.png" alt-text="Drop down menu showing MX record selected.":::
+
 5. In the boxes for the new record, type or copy and paste the values from the following table.
 
    (Choose the **Type** and **TTL** values from the drop-down list.)
@@ -216,7 +218,7 @@ To verify the record in Microsoft 365:
 
 6. Select **Save**.
 
-## Advanced option: Skype for Business
+## Advanced option: Microsoft Teams
 
 Only select this option if your organization uses Microsoft Teams. Teams needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
 
@@ -258,13 +260,15 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
-### Add the two required CNAME records for Skype for Business
+### Add the two required CNAME records for Microsoft Teams 
   
 1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled).
 
    If you're prompted to log in, use your login credentials, select your login name in the upper right, and then select **My Products**.
 
 2. Under **Domains**, select the three dots next to the domain you want to verify, and then select **Manage DNS**.
+
+   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 3. Under **Records**, select **ADD**.
 

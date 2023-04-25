@@ -11,7 +11,7 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 01/26/2023
-ms.reviewer: shlomiakirav
+ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -65,7 +65,7 @@ The following security settings are preconfigured in Defender for Business:
 
 ## How default settings in Defender for Business correspond to settings in Microsoft Intune
 
-The following table describes settings that are preconfigured for Defender for Business and how those settings correspond to what you might see in Intune. If you're using the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md), you don't need to edit these settings.
+The following table describes settings that are preconfigured for Defender for Business and how those settings correspond to what you might see in Intune. If you're using the [simplified configuration process in Defender for Business](mdb-setup-configuration.md), you don't need to edit these settings.
 
 | Setting  | Description  |
 |---------|---------|

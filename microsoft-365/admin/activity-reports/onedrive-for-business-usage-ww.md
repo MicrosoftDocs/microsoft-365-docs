@@ -33,9 +33,6 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
   
 For example, the OneDrive card on the dashboard gives you a high-level view of the value you are getting from OneDrive for Business in terms of the total number of files and storage used across your organization. You can then drill into it to understand the trends of active OneDrive accounts, how many files are users interacting with as well as the storage used. It also gives you details for each user's OneDrive.
 
-> [!NOTE] 
-> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
-
 ## How do I get to the OneDrive usage report?
 
 1. In the admin center, go to the **Reports**, and then select **Usage**. 

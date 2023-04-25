@@ -85,7 +85,7 @@ For support of indicators on Android, see [Microsoft Defender for Endpoint on An
 
 ### IoC indicator list limitations
 
-Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](network-protection.md) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS).
+Only external IPs can be added to the indicator list. Indicators can't be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](network-protection.md) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS).
 
 ### Non Microsoft Edge and Internet Explorer processes
 
@@ -94,7 +94,7 @@ For processes other than Microsoft Edge and Internet Explorer, web protection sc
 - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS))
 - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators
 - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge)
-- Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge)
+- Encrypted URLs (FQDN only) can be blocked in third party browsers (that is, other than Internet Explorer, Edge)
 - Full URL path blocks can be applied for unencrypted URLs
 - If there are conflicting URL indicator policies, the longer path is applied. For example, the URL indicator policy `https://support.microsoft.com/office` takes precedence over the URL indicator policy `https://support.microsoft.com`.
 
@@ -119,7 +119,7 @@ For more information, see [Govern apps discovered by Microsoft Defender for Endp
 
 Policy conflict handling for domains/URLs/IP addresses differ from policy conflict handling for certs.
 
-In the case were multiple different action types are set on the same indicator (for example, **block**,  **warn**, and **allow**,  action types set for Microsoft.com), the order those action types would take effect is:
+In the case where multiple different action types are set on the same indicator (for example, **block**,  **warn**, and **allow**,  action types set for Microsoft.com), the order those action types would take effect is:
 
 1. Allow
 2. Warn

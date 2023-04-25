@@ -10,8 +10,8 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 02/14/2023
-ms.reviewer: shlomiakirav
+ms.date: 03/23/2023
+ms.reviewer: yaelbenari, efratka, jomaun
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -36,7 +36,9 @@ Watch the following video to learn more about Defender for Business: <br/><br/>
 
 > [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
 
-## What's included with Defender for Business
+## What's included with Defender for Business?
+
+Defender for Business includes a full range of device protection capabilities, as shown in the following diagram:
 
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Defender for Business features and capabilities.":::
 
@@ -60,7 +62,6 @@ With Defender for Business, you can help protect the devices and data your busin
 
 - **Learn how to set up your threat protection capabilities**. 
    - [See the trial user guide: Defender for Business](trial-playbook-defender-business.md).
-   - [Learn about the simplified configuration process](mdb-simplified-configuration.md).
    - [See how to set up and configure Defender for Business](mdb-setup-configuration.md).
 
 - **Help you get started using Defender for Business**, starting with the Microsoft 365 Defender portal. 
@@ -68,12 +69,13 @@ With Defender for Business, you can help protect the devices and data your busin
    - [Try scenarios, tutorials, and simulations](mdb-tutorials.md).
 
 - **Provide guidance on managing devices and security policies**.
+   - [Learn about new mobile threat defense capabilities (preview)](mdb-mtd.md).
    - [Monitor or manage devices](mdb-manage-devices.md).
    - [View or edit security policies](mdb-view-edit-policies.md).
 
 ## Next steps
 
 - [Try the interactive guide: Get started with Defender for Business](https://aka.ms/MDB-GetStartedGuide)
-- [Learn more about the simplified configuration process in Defender for Business](mdb-simplified-configuration.md)
+- [Learn more about the simplified configuration process in Defender for Business](mdb-setup-configuration.md)
 - [Find out how to get Defender for Business](get-defender-business.md)
 - [Get an overview of Microsoft 365 Business Premium](../../business-premium/index.md)

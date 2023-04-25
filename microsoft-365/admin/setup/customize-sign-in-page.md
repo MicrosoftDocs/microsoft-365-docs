@@ -32,6 +32,8 @@ description: "Customize the Microsoft 365 sign-in page by using the Azure Active
 
 # Add your company branding to the Microsoft 365 sign-in page
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
  You can now use the Azure Active Directory (AD) subscription that is included with your Microsoft 365 subscription to customize the sign-in page your users see. 
   
 ## Add company branding to your sign in page and Access Panel pages

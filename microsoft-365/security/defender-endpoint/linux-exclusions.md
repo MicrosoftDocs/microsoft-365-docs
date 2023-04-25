@@ -26,6 +26,7 @@ ms.date: 12/18/2020
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -61,7 +62,7 @@ File, folder, and process exclusions support the following wildcards:
 
 Wildcard|Description|Example|Matches|Does not match
 ---|---|---|---|---
-\*|Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder)|`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+\*|Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder)|`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
 ?|Matches any single character|`file?.log`|`file1.log`<br/>`file2.log`|`file123.log`
 
 ## How to configure the list of exclusions
