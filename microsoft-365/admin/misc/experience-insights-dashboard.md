@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Experience insights dashboard"
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 08/10/2020
 audience: Admin
