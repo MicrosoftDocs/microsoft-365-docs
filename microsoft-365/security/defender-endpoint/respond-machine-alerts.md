@@ -214,6 +214,7 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 > - You must have at least one the following role permissions: 'Active remediation actions'. For more information, see [Create and manage roles](user-roles.md).
 > - You must have access to the device based on the device group settings. For more information, see [Create and manage device groups](machine-groups.md).
 > - Exclusion for both macOS and Linux isolation is not supported.
+> - An isolated device is removed from isolation when an administrator modifies or adds a new iptable rule to the isolated device.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 
@@ -228,6 +229,20 @@ Once you have selected **Isolate device** on the device page, type a comment and
 
 > [!NOTE]
 > The device will remain connected to the Defender for Endpoint service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the device is isolated.
+
+### Forcibly release device from isolation
+
+The device isolation feature is an invaluable tool for safeguarding devices against external threats. However, there are instances when isolated devices become unresponsive. 
+There's a downloadable script for these instances that admins can run to forcibly release devices from isolation. The script is available through the link in the UI.
+
+> [!NOTE]
+> Only MDE admins can forcibly release devices from isolation.
+
+To forcibly release kdevice from isolation:
+
+1. On the device page, the MDE admin opens the Actions menu and selects **Download force release from isolation script**.
+1. On the right-hand side wizard, the admin selects **Download script**.
+1. The Action center shows the action as a new row with the auditing details.
 
 ### Notification on device user
 
