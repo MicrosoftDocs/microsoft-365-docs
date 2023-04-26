@@ -120,9 +120,9 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
     - Features
         - Use System Extensions: `enabled` - required for network extensions in the previous three major releases of macOS.
         - Use Data Loss Prevention: `enabled`.
-        - Use DLP_browser_only_cloud_egress: `enabled`if you want to monitor sensitive data traveling through a browser. See [OPTIONAL: Allow sensitive data to pass through forbidden domains](#optional-allow-sensitive-data-to-pass-through-forbidden-domains) for more information.
-        - Use DLP_ax_only_cloud_egress: `enabled`if you want to monitor the final destination of sensitive data traveling through a browser (i.e. the URL in the browser address bar). See [OPTIONAL: Allow sensitive data to pass through forbidden domains](#optional-allow-sensitive-data-to-pass-through-forbidden-domains) for more information.
-    - Antivirus engine > Passive mode: `true|false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
+        - Use DLP_browser_only_cloud_egress: `enabled` if you want to monitor sensitive data traveling through a browser. See [OPTIONAL: Allow sensitive data to pass through forbidden domains](#optional-allow-sensitive-data-to-pass-through-forbidden-domains) for more information.
+        - Use DLP_ax_only_cloud_egress: `enabled` if you want to monitor the final destination of sensitive data traveling through a browser (i.e. the URL in the browser address bar). See [OPTIONAL: Allow sensitive data to pass through forbidden domains](#optional-allow-sensitive-data-to-pass-through-forbidden-domains) for more information.
+    - Antivirus engine > Passive mode: `true|false`. Use `true` if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
 
 1. Choose the **Scope** tab.
 
