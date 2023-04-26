@@ -28,3 +28,7 @@ TBD
 ## Salary review letters
 
 TBD
+
+
+> [!div class="nextstepaction"]
+> [See more scenarios and use cases for Syntex](adoption-scenarios.md)
