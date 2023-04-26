@@ -57,7 +57,7 @@ When you're ready to set up and configure Defender for Business, you can choose 
 
       :::image type="content" source="media/mdb-wizard-start.png" alt-text="Screenshot of wizard home screen to set up Defender for Business." lightbox="media/mdb-wizard-start.png":::
 
-5. **Assign user permissions**. In this step, you grant your security team access to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This portal is where you and your security team will manage your security capabilities, view alerts, and take any needed actions on detected threats. Portal access is granted through roles that imply certain permissions. [Learn more about roles and permissions](mdb-roles-permissions.md). 
+5. **Assign user permissions**. In this first step of the setup wizard, you grant your security team access to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This portal is where you and your security team will manage your security capabilities, view alerts, and take any needed actions on detected threats. Portal access is granted through roles that imply certain permissions. [Learn more about roles and permissions](mdb-roles-permissions.md). 
 
    In Defender for Business, members of your security team can be assigned one of the following three roles:<br/>
    
@@ -65,16 +65,18 @@ When you're ready to set up and configure Defender for Business, you can choose 
    - **Security Administrator**: A security administrator can view and edit security settings, and take action when threats are detected.
    - **Security Reader**: A security reader can view information in reports, but can't change any security settings. 
 
-6. **Set up email notifications**. In this step, you can set up email notifications for your security team. Then, when an alert is generated or a new vulnerability is discovered, your security team won't miss it even if they're away from their desk. [Learn more about email notifications](mdb-email-notifications.md). 
+6. **Set up email notifications**. In this step of the setup wizard, you can set up email notifications for your security team using the list you created in step 3. Then, when an alert is generated or a new vulnerability is discovered, your security team won't miss it even if they're away from their desk. [Learn more about email notifications](mdb-email-notifications.md). 
 
-7. **Onboard and configure Windows devices**. In this step, you can onboard Windows devices to Defender for Business. Onboarding devices right away helps to protect those devices from day one. Note that this step of the wizard applies to Windows devices only. You can onboard other devices later. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md). 
+7. **Onboard and configure Windows devices**. In this step of the setup wizard, you can onboard Windows devices to Defender for Business. Onboarding devices right away helps to protect those devices from day one. Note that this step of the wizard applies to Windows devices only. You can onboard other devices later. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md). 
 
    > [!NOTE]
    > If your organization is using Microsoft Intune, and devices are already enrolled in Intune, Defender for Business prompts you to either continue using Intune, or switch to using the simplified configuration process in the Microsoft 365 Defender portal. See [Choose where to manage security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
    >    
    > Defender for Business also offers automatic onboarding for Windows devices enrolled in Intune. Automatic onboarding is a simplified way to onboard Windows devices to Defender for Business. We recommend selecting the "all devices enrolled" option so that as Windows devices are enrolled in Intune, they're onboarded to Defender for Business automatically. 
    
-8. **Configure your security policies**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. You can also create your own security policies. See [View and edit your security policies and settings](mdb-configure-security-settings.md).
+8. **Configure your security policies**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. You can start with your default policies, and add more later. See [View and edit your security policies and settings](mdb-configure-security-settings.md).
+
+9. **Select your next step**. Afer the setup wizard has completed, you're prompted to choose a next step. For example, you can onboard devices, view your security dashboard, or view your security policies.
 
 ## [**Manual setup**](#tab/Manual)
 
