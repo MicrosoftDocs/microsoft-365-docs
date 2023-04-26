@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -41,7 +41,7 @@ By default, new Cloud PCs are created with the Windows 11 operating system and t
 3. On the **Services** tab, select **Windows 365**.
 4. Select your preferred operating system and account type, then select **Save**.
 
-Organization settings only apply to newly-created Cloud PCs. When these settings are changed, they won’t change the OS or account type of existing Cloud PCs.
+Organization settings only apply to newly-created Cloud PCs. When these settings are changed, they won't change the OS or account type of existing Cloud PCs.
 
 ## Edit organization information
 

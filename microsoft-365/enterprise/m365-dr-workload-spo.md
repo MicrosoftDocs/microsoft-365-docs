@@ -12,6 +12,7 @@ ms.date: 09/20/2022
 ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ---
@@ -53,6 +54,40 @@ Required Conditions:
 **Commitment:**
 Customers can assign users of SharePoint Online/OneDrive for Business to any _Satellite Geography_ supported by Multi-Geo (see Section 4.1.3). The following customer data will be stored in the relevant _Satellite Geography_:
 SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business.  
+
+
+## Migration with Advanced Data Residency
+
+When SharePoint Online is moved, data for the following services is also moved:
+  
+- OneDrive for Business
+- Microsoft 365 Video services
+- Office in a browser
+- Microsoft 365 Apps for enterprise
+- Visio Pro for Microsoft 365
+
+After we've completed moving your SharePoint Online data, you might see some of the following effects.
+  
+### Microsoft 365 Video Services
+
+- The data move for video takes longer than the moves for the rest of your content in SharePoint Online.
+- After the SharePoint Online content is moved, there will be a time frame when videos aren't able to be played.
+- We're removing the trans-coded copies from the previous datacenter and transcoding them again in the new datacenter.
+
+### Search
+
+In the course of moving your SharePoint Online data, we migrate your search index and search settings to a new location. Until we've **completed** the move of your SharePoint Online data, we continue to serve your users from the index in the original location. In the new location, search automatically starts crawling your content after we've completed moving your SharePoint Online data. From this point and onwards we serve your users from the migrated index. Changes to your content that occurred after the migration aren't included in the migrated index until crawling picks them up. Most customers don't notice that results are less fresh right after we've completed moving their SharePoint Online data, but some customers might experience reduced freshness in the first 24-48 hours.
+  
+The following search features are affected:
+  
+- Search results and Search Web Parts: Results don't include changes that occurred after the migration until crawling picks them up.
+- Delve: Delve doesn't include changes that occurred after the migration until crawling picks them up.
+- Popularity and Search Reports for the site: Counts for Excel reports in the new location only include migrated counts and counts from usage reports that have run after we completed moving your SharePoint Online data. Any counts from the interim period are lost and can't be recovered. This period is typically a couple of days. Some customers might experience shorter or longer losses.
+- Video Portal: View counts and statistics for the Video Portal depend on the statistics for Excel Reports, so view counts and statistics for the Video Portal are lost for the same time period as for the Excel reports.
+- eDiscovery: Items that changed during the migration aren't shown until crawling picks up the changes.
+- Data Loss Protection (DLP): Policies aren't enforced on items that change until crawling picks up the changes.
+
+As part of the migration, the _Primary Provisioned Geography_ will change and all new content will be stored at rest in the new _Primary Provisioned Geography_. Existing content will move in the background with no impact to you for up to 90 days after the first change to the SharePoint Online data location in the admin center.
 
 ## **Multi-Geo Capabilities in SharePoint Online / OneDrive for Business**
 
@@ -510,39 +545,6 @@ To set a _Geography_ location into SPO mode, connect to the _Geography_ location
 
 >[!Note]
 >Certain caches in the service update every 24 hours, so it is possible that for a period of up to 24 hours, your _Satellite Geography_ may intermittently behave as if it was still in ODB mode. This does not cause any technical issues.
-
-## Migration
-
-When SharePoint Online is moved, data for the following services is also moved:
-  
-- OneDrive for Business
-- Microsoft 365 Video services
-- Office in a browser
-- Microsoft 365 Apps for enterprise
-- Visio Pro for Microsoft 365
-
-After we've completed moving your SharePoint Online data, you might see some of the following effects.
-  
-### Microsoft 365 Video Services
-
-- The data move for video takes longer than the moves for the rest of your content in SharePoint Online.
-- After the SharePoint Online content is moved, there will be a time frame when videos aren't able to be played.
-- We're removing the trans-coded copies from the previous datacenter and transcoding them again in the new datacenter.
-
-### Search
-
-In the course of moving your SharePoint Online data, we migrate your search index and search settings to a new location. Until we've **completed** the move of your SharePoint Online data, we continue to serve your users from the index in the original location. In the new location, search automatically starts crawling your content after we've completed moving your SharePoint Online data. From this point and onwards we serve your users from the migrated index. Changes to your content that occurred after the migration aren't included in the migrated index until crawling picks them up. Most customers don't notice that results are less fresh right after we've completed moving their SharePoint Online data, but some customers might experience reduced freshness in the first 24-48 hours.
-  
-The following search features are affected:
-  
-- Search results and Search Web Parts: Results don't include changes that occurred after the migration until crawling picks them up.
-- Delve: Delve doesn't include changes that occurred after the migration until crawling picks them up.
-- Popularity and Search Reports for the site: Counts for Excel reports in the new location only include migrated counts and counts from usage reports that have run after we completed moving your SharePoint Online data. Any counts from the interim period are lost and can't be recovered. This period is typically a couple of days. Some customers might experience shorter or longer losses.
-- Video Portal: View counts and statistics for the Video Portal depend on the statistics for Excel Reports, so view counts and statistics for the Video Portal are lost for the same time period as for the Excel reports.
-- eDiscovery: Items that changed during the migration aren't shown until crawling picks up the changes.
-- Data Loss Protection (DLP): Policies aren't enforced on items that change until crawling picks up the changes.
-
-As part of the migration, the _Primary Provisioned Geography_ will change and all new content will be stored at rest in the new _Primary Provisioned Geography_. Existing content will move in the background with no impact to you for up to 90 days after the first change to the SharePoint Online data location in the admin center.
 
 ## How can I determine customer data location?
 
