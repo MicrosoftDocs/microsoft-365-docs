@@ -3,7 +3,7 @@ title: "Managing user consent to apps in Microsoft 365"
 f1.keywords:
 - CSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin

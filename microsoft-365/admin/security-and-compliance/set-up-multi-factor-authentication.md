@@ -3,7 +3,7 @@ title: "Set up multifactor authentication for users"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/27/2023
 audience: Admin
