@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/07/2023
+ms.date: 04/26/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -77,7 +77,7 @@ These permissions are required only to create, configure, and apply retention po
 
 Now rolling out in preview, data lifecycle management supports [administrative units that have been configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
 
-- You can assign administrative units to members of custom role groups and any others that support administrative units. For example, role groups used with Microsoft Purview Information Protection. Edit these role groups and select individual members, and then the **Assign admin units** option to select administrative units from Azure Active Directory. These administrators are now restricted to managing just the users in those administrative units.
+- You can assign administrative units to members of custom role groups and any others that support administrative units. For example, role groups used with Microsoft Purview Records Management. Edit these role groups and select individual members, and then the **Assign admin units** option to select administrative units from Azure Active Directory. These administrators are now restricted to managing just the users in those administrative units.
 
 - You can define the initial scope of retention policies and retention label policies when you create or edit these policies. When you select administrative units, only the users in those administrative units will be eligible for the policy.
 
