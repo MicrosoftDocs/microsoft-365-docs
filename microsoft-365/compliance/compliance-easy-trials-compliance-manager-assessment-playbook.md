@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 12/06/2021
+ms.date: 5/01/2023
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
@@ -36,7 +36,7 @@ Using Microsoft recommendations, you'll quickly see how the premium assessment t
 Our [Compliance Manager overview page](compliance-manager.md) is the best first stop for a comprehensive review of what Compliance Manager is and how it works. You may also want to jump right to key sections of our documentation using the links below:
 
 1. [Understand your compliance score](compliance-manager.md#understanding-your-compliance-score)
-1. [Overview of key elements: controls, assessments, templates, and improvement actions](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
+1. [Overview of key elements: controls, assessments, regulation, and improvement actions](compliance-manager.md#key-elements-controls-assessments-regulations-improvement-actions)
 1. [Understand the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 1. [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 1. [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)

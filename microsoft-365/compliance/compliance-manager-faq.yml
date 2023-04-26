@@ -41,5 +41,5 @@ sections:
       - question: |
           Can I use Compliance Manager for non-Microsoft products?
         answer: |
-          Yes. Learn more about [multiservice support in Compliance Manager](compliance-manager-multiservice.md).
+          Yes. Learn more about [multicloud support in Compliance Manager](compliance-manager-multicloud.md).
       
