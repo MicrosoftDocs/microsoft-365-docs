@@ -1,5 +1,5 @@
 ---
-title: "Multiservice support in Microsoft Purview Compliance Manager"
+title: "Multicloud support in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -18,10 +18,10 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Learn how Microsoft Purview Compliance Manager provides multiservice support so you can track and manage compliance for your organization's cloud services."
+description: "Learn how Microsoft Purview Compliance Manager provides multicloud support so you can track and manage compliance for your organization's cloud services."
 ---
 
-# Multiservice support in Compliance Manager
+# Multicloud support in Compliance Manager
 
 **In this article:** Learn how Compliance Manager supports your multicloud environment.
 
@@ -29,7 +29,7 @@ description: "Learn how Microsoft Purview Compliance Manager provides multiservi
 
 ## Overview
 
-Compliance Manager now provides multiservice support. You can use Compliance Manager to track and manage your compliance activities within Microsoft 365, Microsoft Azure, and other cloud services such as Google Cloud Services (GCP) and Azure Web Services (AWS).
+You can use Compliance Manager to track and manage your compliance activities within Microsoft 365, Microsoft Azure, and other cloud services such as Google Cloud Services (GCP) and Azure Web Services (AWS).
 
 Integration with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) provides signaling to Compliance Manager. This integration allows Compliance Manger to track configurations in your organization’s Microsoft Azure environment, and detect signals from other services like GCP and AWS, so that you can assess your progress in meeting controls for the regulations you need to comply with. Compliance Manager provides guidance for implementing improvement actions in non-Microsoft services for meeting controls and earning points that count toward your overall compliance score.
 

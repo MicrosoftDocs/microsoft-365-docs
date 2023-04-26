@@ -1783,7 +1783,7 @@
               href: compliance-manager-mcca.md
         - name: Multicloud support in Compliance Manager
           items:
-            - name: Learn about multiservice support
+            - name: Learn about multicloud support
               href: compliance-manager-multiservice.md
             - name: Configure cloud settings
               href: compliance-manager-cloud-settings.md  

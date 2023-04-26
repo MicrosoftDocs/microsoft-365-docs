@@ -343,11 +343,11 @@ To remove filters:
 - At the **Applied filters** heading above your compliance score, select the **X** next to the individual filter you want to remove; or
 - Select **Filter** on the upper-right side of your dashboard, then on the **Filters** flyout pane, select **Clear filters**.
 
-## Improvement actions page
+### Improvement actions page
 
 [Improvement actions](compliance-manager-improvement-actions.md) are actions managed by your organization. Working with improvement actions helps to centralize your compliance activities and align with data protection regulations and standards. Each improvement action gives detailed implementation guidance and a link to launch you into the appropriate solution. Improvement actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
 
-### View your improvement actions
+#### View your improvement actions
 
 The Compliance Manager dashboard shows your key improvement actions. To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, which brings you to your improvement actions page. You can also select **View all improvement actions** underneath the list of key improvement actions on your dashboard to get to your improvement actions page.
 
@@ -383,15 +383,11 @@ The improvement actions page shows the following data points for each improvemen
 
 Learn [how to assign and perform work on improvement actions](compliance-manager-improvement-actions.md).
 
-## Solutions page
+### Solutions page
 
 The solutions page shows the share of earned and potential points as organized by solution. Viewing your remaining points and improvement actions from this view helps you understand which solutions need more immediate attention.
 
-Find the solutions page by selecting the **Solutions** tab on your Compliance Manager dashboard. You can also select **View all solutions** underneath **Solutions that affect your score** in the upper-right section of your dashboard.
-
-### Filtering your solutions view
-
-To filter your view of solutions:
+Find the solutions page by selecting the **Solutions** tab on your Compliance Manager dashboard. You can also select **View all solutions** underneath **Solutions that affect your score** in the upper-right section of your dashboard. To filter your view of solutions:
 
 1. Select **Filter** at the top-left corner of your assessments list.
 2. On the **Filters** flyout pane, place a check next to the desired criteria (regulations, solutions, action types, groups, categories).
@@ -399,7 +395,7 @@ To filter your view of solutions:
 
 You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
 
-### Taking action from the solution page
+#### Taking action from the solution page
 
 The solutions page displays your organization’s solutions that are connected to improvement actions. The table lists each solution’s contribution to your overall score, the points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score.
 
@@ -409,7 +405,7 @@ There are two ways you can take action from this screen:
 
 2. On the row of your intended solution, under the **Open solution** column, select **Open**. You’ll arrive at the solution's location in the Microsoft Purview compliance portal,  Microsoft 365 Defender portal, or its admin center, where you can take the recommended action.
 
-## Assessments page
+### Assessments page
 
 The assessments page lists all the [assessments](compliance-manager-assessments.md) you set up for your organization. Your compliance score denominator is determined by all your tracked assessments. As you add more assessments, you'll see more improvement actions listed on your improvement actions page, and your compliance score denominator increases.
 
@@ -430,8 +426,6 @@ The assessments page summarizes key information about each assessment:
 - **Product**: associated product, such as Microsoft 365 or another product defined for assessment
 - **Regulation**: the regulatory standard, policy, or law that applies to the assessment
 
-### Filtering your assessments view
-
 To filter your view of assessments:
 
 1. Select **Filter** at the top-left corner of your assessments list.
@@ -440,15 +434,9 @@ To filter your view of assessments:
 
 You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
 
-## Regulations page
+### Regulations page
 
-A template is a framework for creating an assessment in Compliance Manager. The assessment templates page displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created.
-
-The **Activated/Regulation** counter near the top of the page shows the number of active regulatins currently in use out of the total number available for your organization to use. See [Template availability and licensing](compliance-manager-templates.md#regulation-availability-and-licensing) for more information.
-
-Select a template from its row to bring up its details page, which contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
-
-**Learn more:** [Read how to work with assessment templates](compliance-manager-templates.md).
+A regulatory template is a framework for creating an assessment in Compliance Manager. The Regulations page displays a list of regulatory templates and key details. The **Activated/Regulation** counter near the top of the page shows the number of active regulatins currently in use out of the total number available for your organization to use. See [Regulation availability and licensing](compliance-manager-templates.md#regulation-availability-and-licensing) for more information.
 
 ## Next step
 
