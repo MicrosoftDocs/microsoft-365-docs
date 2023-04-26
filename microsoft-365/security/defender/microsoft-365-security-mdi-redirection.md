@@ -79,6 +79,9 @@ This setting can be enabled again at any time.
 
 Once disabled, accounts will no longer be routed to security.microsoft.com.
 
+> [!NOTE]
+> For tenants created after March 15, 2023, the option to disable the setting toggle is not available.
+
 ## Related information
 
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
