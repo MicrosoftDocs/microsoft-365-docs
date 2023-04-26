@@ -3,7 +3,7 @@ title: "Manage add-ins in the admin center"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 07/06/2020
 audience: Admin
