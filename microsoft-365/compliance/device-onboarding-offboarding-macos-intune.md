@@ -53,17 +53,13 @@ Onboarding a macOS device into Compliance solutions is a multi-phase process.
 
 ### Create system configuration profiles
 
-1. You'll need these files for this procedure. 
+Download the following files:
 
 |file needed for |source |
 |---------|---------|
 System mobile config file | [mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension.|
-MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig). Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension.
+MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig). Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension. 
 
-> [!NOTE] 
-> For the *upload to cloud service* activity, if you only want to monitor the browser and the URL in the browser address bar, you can enable *DLP_browser_only_cloud_egress* and *DLP_ax_only_cloud_egress*. 
->
-> Here is an example [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/cloud_egress/com.microsoft.wdav.mobileconfig).
 
 1. In **Microsoft Purview Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
  
@@ -75,22 +71,21 @@ MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/
 
 1. Extract the zip file and open the *Intune* folder. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
 
-<!--|accessibility |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
-full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
-|Network filer| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)]
-|System extensions |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
-|MDE preference     |[com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)|
-|MAU preference|[com.microsoft.autoupdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.mobileconfig)|
-|Installation package     |downloaded from the compliance portal **Installation package**, file name *\*wdav.pkg*\* |
 
-> [!TIP]
-> You can download the *.mobileconfig* files individually or in [single combined file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) that contains:
-> - accessibility.mobileconfig
-> - fulldisk.mobileconfig
-> - netfilter.mobileconfig
-> - system extensions
->
->If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.-->
+### OPTIONAL: Allow sensitive data to pass through forbidden domains
+
+Microsoft Purview DLP checks for sensitive data through all stages of its travels. So, if sensitive data is getting posted or sent to an allowed domain, but travels through a forbidden domain, it will be blocked. Let's take a closer look.
+
+Say that sending sensitive data via Outlook Live is permissible, but that sensitive data must not be exposed to Microsoft.com. However, when a user accesses Outlook Live, the data passes through Microsoft.com in the background, as shown:
+
+
+By default, because the sensitive data passes through microsoft.com on its way to outlook.live.com, DLP automatically blocks the data from being shared. 
+
+In some cases, however, you may not be concerned with the domains that data passes through on the back end, but only the ultimate destination: the URL that shows up in the address bar of the final destination. In this case, outlook.live.com. To prevent sensitive data from being blocked in our example case, you need to specifically change the default setting.
+
+So, if you only want to monitor the browser and the final destination of the data (the URL in the browser address bar), you can enable *DLP_browser_only_cloud_egress* and *DLP_ax_only_cloud_egress*. 
+
+
 
 ### Deploy the mobileconfig and onboarding packages
 
