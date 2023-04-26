@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 01/25/2023
+ms.date: 05/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -92,7 +92,7 @@ A user can only hold one role at a time. Any change in a user's role will overri
 | **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader |
 | **Edit data - for example, can create an assessment and edit improvement action data**| Compliance Manager Contribution | Compliance Administrator |
 | **Edit improvement action testing notes**| Compliance Manager Assessor | Compliance Administrator |
-| **Manage assessments, templates, and tenant data; assign improvement actions**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
+| **Manage assessments, regulatory templates, and tenant data; assign improvement actions**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
 
 ### Role-based access to assessments
 
@@ -108,7 +108,7 @@ To grant users access to an assessment, open the assessment's details page and s
 
 ## Start a premium assessments trial
 
-The Compliance Manager premium assessments trial is a great way to quickly set up assessments that are most relevant to your organization. Our library of over 300 templates correspond to governmental regulations and industry standards around the world.
+The Compliance Manager premium assessments trial is a great way to quickly set up assessments that are most relevant to your organization. Our library of over 360 regulatory templates correspond to governmental regulations and industry standards around the world.
 Learn more about the [premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
 
 You can start your trial directly from Compliance Manager and set up recommended assessments by following these steps:
