@@ -72,7 +72,7 @@ When content has retention settings assigned to it, that content remains in its 
 - For Teams and Yammer messages: The copy is retained in a hidden folder named **SubstrateHolds** as a subfolder in the Exchange **Recoverable Items** folder.
 
 > [!NOTE]
-> Because the Preservation Hold library is included in the site's storage quota, you might need to increase your storage when you use retention settings for SharePoint and Microsoft 365 groups.
+> Because the Preservation Hold library is included in the site's storage quota, you might need to increase your storage when you use retention settings for SharePoint, OneDrive, and Microsoft 365 groups.
 >
 These secure locations and the retained content aren't visible to most people. In most cases, people don't even need to know that their content is subject to retention settings.
 
@@ -206,7 +206,7 @@ Unlike [sensitivity labels](sensitivity-labels.md), you can't configure prioriti
 As with sensitivity labels, an item such as an email or document can have only a single retention label applied to it at a time. A retention label can be applied [manually](create-apply-retention-labels.md#manually-apply-retention-labels) by an end user or admin, or automatically by using any of the following methods:
 
 - [Auto-apply retention label policy](apply-retention-labels-automatically.md)
-- [Document understanding model for Microsoft Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
+- [A Microsoft Syntex model](../contentunderstanding/apply-a-retention-label-to-a-model.md)
 - [Default retention label for SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 - [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
 - [Power Automate compliance action](/power-automate/overview-cloud) of **Apply a retention label on the item**

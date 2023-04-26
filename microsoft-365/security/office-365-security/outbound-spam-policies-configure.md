@@ -232,7 +232,7 @@ Outbound spam policies are processed in the order that they're displayed on the 
   - No two outbound spam policies can have the same priority value.
 - The default outbound spam policy always has the priority value **Lowest**, and you can't change it.
 
-Outbound spam protection stops for a sender after the first policy is applied. For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+Outbound spam protection stops for a sender after the first policy is applied (the highest priority policy for that sender). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
 After you select the custom outbound spam policy by clicking anywhere in the row other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
 
