@@ -67,27 +67,14 @@ When you're ready to set up and configure Defender for Business, you can choose 
 
 6. **Set up email notifications**. In this step, you can set up email notifications for your security team. Then, when an alert is generated or a new vulnerability is discovered, your security team won't miss it even if they're away from their desk. [Learn more about email notifications](mdb-email-notifications.md). 
 
-7. **Onboard and configure Windows devices**. In this step, you can onboard your company's Windows devices to Defender for Business quickly. Onboarding devices right away helps to protect those devices from day one. Note that this step of the wizard applies to Windows devices only. You can onboard other devices later. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md). 
-
-   - **If you're not using Intune**, you can onboard devices in the Microsoft 365 Defender portal. 
-   - **If you're already using Microsoft Intune**, and your company has devices enrolled in Intune, Defender for Business prompts you to either continue using Intune, or switch to using the simplified configuration process in the Microsoft 365 Defender portal. To learn more, see [Choose where to manage security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
-   
-8. **Configure your security policies**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. You can also create your own security policies. See [View and edit your security policies and settings](mdb-configure-security-settings.md).
+7. **Onboard and configure Windows devices**. In this step, you can onboard Windows devices to Defender for Business. Onboarding devices right away helps to protect those devices from day one. Note that this step of the wizard applies to Windows devices only. You can onboard other devices later. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md). 
 
    > [!NOTE]
-   > If you're already using Intune to manage your devices and security policies, you can continue using it. See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
-
-## What is automatic onboarding?
-
-Automatic onboarding is a simplified way to onboard Windows devices to Defender for Business. Automatic onboarding is only available for Windows devices that are already enrolled in Microsoft Intune. 
-
-While you're using the setup wizard, the system will detect whether Windows devices are already enrolled in Intune. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later. 
-
-To onboard other devices, see [Onboard devices to Defender for Business](mdb-onboard-devices.md).
-
-> [!TIP]
-> - We recommend selecting the "all devices enrolled" option. That way, when Windows devices are enrolled in Intune later on, they'll be onboarded to Defender for Business automatically. 
-> - If you've been managing security policies and settings in the Intune admin center, we recommend switching to the Microsoft 365 Defender portal to manage your devices, policies, and settings. To learn more, see [Choose where to manage security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
+   > If your organization is using Microsoft Intune, and devices are already enrolled in Intune, Defender for Business prompts you to either continue using Intune, or switch to using the simplified configuration process in the Microsoft 365 Defender portal. See [Choose where to manage security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
+   >    
+   > Defender for Business also offers automatic onboarding, a simplified way to onboard Windows devices to Defender for Business. We recommend selecting the "all devices enrolled" option. That way, when Windows devices are enrolled in Intune later on, they'll be onboarded to Defender for Business automatically. 
+   
+8. **Configure your security policies**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. You can also create your own security policies. See [View and edit your security policies and settings](mdb-configure-security-settings.md).
 
 ## [**Manual setup**](#tab/Manual)
 
