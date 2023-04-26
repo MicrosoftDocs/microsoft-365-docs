@@ -53,7 +53,6 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Insider risk management
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
->>>>>>> 789553ea0e449da553ca2e7741681d97562a5e90
 
 ### Sensitivity labels
 
