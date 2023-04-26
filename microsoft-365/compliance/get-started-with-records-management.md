@@ -81,6 +81,8 @@ Now rolling out in preview, records management supports [administrative units th
 
 - Currently, retention labels and [events](event-driven-retention.md) don't support administrative units.
 
+- Currently, simulation mode for auto-apply retention policies doesn't support administrative units. Restricted administrators can view all simulation results, and from there, edit the policies and turn them on.
+
 - Currently, inactive mailboxes aren't supported in a policy when you select one or more administrative units. To include inactive mailboxes in the policy, you must be an unrestricted administrator and select **Full directory**.
 
 For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview).
