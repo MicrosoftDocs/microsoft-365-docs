@@ -232,8 +232,8 @@ Once you have selected **Isolate device** on the device page, type a comment and
 
 ### Forcibly release device from isolation
 
-The device isolation feature is an invaluable tool for safeguarding devices against external threats. However, there are instances when isolated devices become unresponsive. 
-There's a downloadable script for these instances that admins can run to forcibly release devices from isolation. The script is available through the link in the UI.
+The device isolation feature is an invaluable tool for safeguarding devices against external threats. However, there are instances when isolated devices become unresponsive.<br> 
+There's a downloadable script for these instances that admins can run to forcibly release devices from isolation. The script is available through a link in the UI.
 
 > [!NOTE]
 > Only MDE admins can forcibly release devices from isolation.
