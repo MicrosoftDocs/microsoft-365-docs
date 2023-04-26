@@ -33,7 +33,7 @@ Improvement actions help centralize your compliance activities. Each improvement
 
 ## Automated testing and monitoring
 
-While some improvement actions must be manually tested by your organization, many actions can be automatically tested monitored for you. Compliance Manager automatically identifies settings in your Microsoft 365 environment and your multicloud environment that help determine when certain configurations meet improvement action implementation requirements. Compliance Manager utilizes three types of automation, explained below.
+While some improvement actions must be manually tested by your organization, many actions can be automatically tested and monitored for you. Compliance Manager automatically identifies settings in your Microsoft 365 environment and your multicloud environment that help determine when certain configurations meet improvement action implementation requirements. Compliance Manager utilizes three types of automation, explained below.
 
 #### Built-in automation
 
@@ -41,7 +41,7 @@ Compliance Manager has built-in functionality to receive signals from other Micr
 
 #### Microsoft Secure Score automation
 
-Compliance Manager detects signals from complementary improvement actions that are monitored by Microsoft Secure Score. Using these signals, Compliance Manager can automatically test certain improvement actions in order to provide continuous control assessment. When an improvement action is successfully tested and implemented, you receive the maximum possible points for that action, which gets credited to your overall compliance score.
+Compliance Manager detects signals from complementary improvement actions that are monitored by Microsoft Secure Score. Through these signals, Compliance Manager can automatically test certain improvement actions in order to provide continuous control assessment. When an improvement action is successfully tested and implemented, you receive the maximum possible points for that action, which gets credited to your overall compliance score.
 
 #### Microsoft Defender for Cloud automation
 
@@ -93,17 +93,17 @@ You can assign multiple improvement actions to one user by following these steps
 
 ### Implementation work
 
-Implementation guidance will depend on whether the action is implemented and monitored through Microsoft Defender for Cloud, or whether the action is implemented in Microsoft 365 environment or in non-cloud environments.
+Implementation guidance will depend on whether the action is implemented and monitored through Microsoft Defender for Cloud, or whether the action is implemented in Microsoft 365 environment or in non-cloud environments. Learn more about [multicloud support](compliance-manager-multicloud.md).
 
 ##### Defender for Cloud actions
 
 Improvement actions that pertain to cloud services such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) are implemented and monitored using Compliance Manager’s integration with Defender for Cloud. The action description on the **Implementation** tab will indicate that implementation occurs in Defender for Cloud, with a deep link to take you there to perform the work.
 
-Below the implementation guidance is a list of all related subscriptions, indicating subscription type, the number of virtual resources completed, points achieved, and the assessments in which the action appears. Select a subscription from the list to view more details in a flyout pane. If the action has a manual testing source ([learn more](#testing-source)), you can input implmementation status and dates and enter notes.
+Below the implementation guidance is a list of all related subscriptions, indicating subscription type, the number of virtual resources completed, points achieved, and the assessments in which the action appears. Select a subscription from the list to view more details in a flyout pane. If the action has a manual testing source ([learn more](#testing-source)), you can input implementation status and dates and enter notes.
 
 ##### Non-Defender for Cloud actions
 
-The implementation guidance on the **Implementation** tab provides insturctions and a link into the related solution. You can record the implementation status and date for each improvement action and add notes for internal reference. These fields can be edited by any user with editing permissions, not just by the assigned person.
+The implementation guidance on the **Implementation** tab provides instructions and a link into the related solution. You can record the implementation status and date for each improvement action and add notes for internal reference. These fields can be edited by any user with editing permissions, not just by the assigned person.
 
 To edit an improvement action’s status, select **Edit implementation details** on the details page. Below are the available fields and status options:
 
@@ -122,9 +122,7 @@ Common actions synchronize across groups. When two different assessments in the 
 
 From the **Testing** tab, you can view the testing status of your improvement action, the testing date, and any notes. A user with editing permissions can select  **Edit testing details** to edit content on the **Testing** tab.
 
-#### Defender for Cloud actions
-
-For actions monitored by Defender for Cloud, the **Testing** tab dislpays a list of each subscription and its testing details. Select a subscription to view its testing details flyout pane, where you can view and edit test status, test date, and notes.
+**Defender for Cloud actions**: The **Testing** tab on these actions displays a list of each subscription and its testing details. Select a subscription to view its testing details flyout pane, where you can view and edit test status, test date, and notes.
 
 #### Testing status fields
 
@@ -220,19 +218,19 @@ Users will need a **Compliance Manager Assessor** role in order to edit improvem
 
 When an update is available for an improvement action, you’ll see a notification next to its name. You can either accept the update or defer it for a later time.
 
-#### What causes an update
+##### What causes an update
 
 An update occurs when there are changes related to scoring, automation, or scope. Changes may involve new guidance for improvement actions based on regulatory changes, or could be because of product changes. Only the improvement actions managed by your organizations receive update notifications.
 
-#### Where you’ll see assessment update notifications
+##### Where you’ll see assessment update notifications
 
 When an improvement action is updated, you’ll see a **Pending update** label next to its name on the improvement actions page, and on the details page of its related assessments.
 
 Go to the improvement action’s details page, and select the **Review update** button in the top banner to review details about the changes and accept or defer the update.
 
-#### Review update to accept or defer
+##### Review update to accept or defer
 
-After selecting **Review update** from the improvement action details page, a flyout pane appears on the right side of your screen. The flyout pane provides key details about the update, such as the assessments impacted and changes in score and scope.
+When you select **Review update** from the improvement action details page, a flyout pane appears on the right side of your screen. The flyout pane provides key details about the update, such as the assessments impacted and changes in score and scope.
 
 Select **Accept update** to accept all the changes to the improvement action. **Accepted changes are permanent**.
 
@@ -241,15 +239,11 @@ Select **Accept update** to accept all the changes to the improvement action. **
 
 If you select **Cancel**, the update won’t be applied to the improvement action. However, you’ll continue to see the **Pending update** notification until you accept the update.
 
-**Why we recommend accepting updates**
+- **Why we recommend accepting updates**: Accepting updates helps ensure you have the most updated guidance on using solutions and taking appropriate improvement actions to help you meet the requirements of the certification at hand.
 
-Accepting updates helps ensure you have the most updated guidance on using solutions and taking appropriate improvement actions to help you meet the requirements of the certification at hand.
+- **Why you might want to defer an update**: If you’re in the middle of completing an assessment that includes the improvement action, you may want to ensure you’ve finished work on it before you accept the update. You can defer the update for a later time by selecting **Cancel** on the review update flyout pane.
 
-**Why you might want to defer an update**
-
-If you’re in the middle of completing an assessment that includes the improvement action, you may want to ensure you’ve finished work on it before you accept the update. You can defer the update for a later time by selecting **Cancel** on the review update flyout pane.
-
-#### Accept all updates at once
+##### Accept all updates at once
 
 If you have multiple updates and want to accept them all at one time, select the **Accept all updates** link at the top of your improvement actions table. A flyout pane will appear which lists the number of actions to be updated. Select the **Accept updates** button to apply all updates.
 
