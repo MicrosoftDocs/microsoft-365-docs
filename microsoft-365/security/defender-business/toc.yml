@@ -29,7 +29,7 @@
       href: mdb-tutorials.md
   - name: Set up and configure Defender for Business
     items:
-    - name: How to set up and configure Defender for Business
+    - name: Setup overview
       href: mdb-setup-configuration.md
     - name: Step 1 - Get Defender for Business
       href: get-defender-business.md

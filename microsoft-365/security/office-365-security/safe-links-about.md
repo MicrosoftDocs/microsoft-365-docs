@@ -253,7 +253,7 @@ These settings apply to Safe Links in email, Teams, and Office apps:
 
 ## Priority of Safe Links policies
 
-After you create multiple policies, you can specify the order that they're applied. No two policies can have the same priority, and policy processing stops after the first policy is applied. The **Built-in protection** policy is always applied last. The Safe Links policies associated **Standard** and **Strict** preset security policies are always applied before custom Safe Links policies.
+After you create multiple policies, you can specify the order that they're applied. No two policies can have the same priority, and policy processing stops after the first policy is applied (the highest priority policy for that recipient). The **Built-in protection** policy is always applied last. The Safe Links policies associated **Standard** and **Strict** preset security policies are always applied before custom Safe Links policies.
 
 For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order of precedence for preset security policies and other policies](preset-security-policies.md#order-of-precedence-for-preset-security-policies-and-other-policies) and [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
