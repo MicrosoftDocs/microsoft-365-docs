@@ -23,7 +23,7 @@ description: "Microsoft Purview Compliance Manager provides regulattory template
 
 # Compliance Manager regulations list
 
-**In this article:** View the comprehensive list of **templates** available for creating assessments in Compliance Manager.
+**In this article:** View the comprehensive list of **regulations** available for creating assessments in Compliance Manager.
 
 > [!IMPORTANT]
 > The assessment templates that are included by default for your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
