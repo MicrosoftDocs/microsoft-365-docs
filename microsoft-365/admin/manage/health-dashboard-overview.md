@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Health Dashboard"
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 06/15/2022
 audience: Admin
