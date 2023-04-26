@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 06/26/2021
+  ms.date: 04/24/2023
   title: "Microsoft Purview Compliance Manager FAQ"
   f1.keywords:
   - NOCSH
@@ -41,5 +41,5 @@ sections:
       - question: |
           Can I use Compliance Manager for non-Microsoft products?
         answer: |
-          Yes. Get details about [Microsoft and universal templates](compliance-manager-templates.md#template-versions-microsoft-and-universal) for building assessments. You can also add custom assessments in Compliance Manager to help you manage all the controls across your digital assets.
+          Yes. Get details about [Microsoft and universal templates](compliance-manager-templates.md#template-versions-microsoft-and-universal) for building assessments.
       
