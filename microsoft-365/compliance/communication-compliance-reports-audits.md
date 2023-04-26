@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/31/2023
+ms.date: 04/14/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -97,6 +97,13 @@ Use the *Export* option to create a .csv file containing the report details for 
   - **Yammer**: Sensitive information types detected in Yammer inboxes, posts, chats, and replies.
   - **Third-party sources**: Sensitive information types detected for activities associated with third-party connectors configured in your organization. To view the breakdown of third-party sources for a specific sensitive information type in the report, hover your mouse over the value for the sensitive information type in the Third-party source column.
   - **Other**: Sensitive information types used for internal system processing. Selecting or deselecting this source for the report won't affect any values.
+
+- **Email blast senders**: Review and export the list of senders of email blast messages that were filtered out from your communication compliance policies to reduce "noise." [**Filter email blasts** is a communication compliance policy setting](communication-compliance-policies.md#filter-email-blasts). The Email blast senders report includes the following fields:
+
+   - Policy name
+   - Policy last modified date
+   - Sender
+   - Number of mails filtered
 
 ### Message details report
 

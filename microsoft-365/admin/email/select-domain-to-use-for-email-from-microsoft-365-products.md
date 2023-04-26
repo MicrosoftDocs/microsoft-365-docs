@@ -32,9 +32,6 @@ description: "Let Microsoft send notification messages from an email address wit
 
 # Select the domain to use for email from Microsoft 365 products
 
-> [!NOTE]
-> The following feature will be rolling out to public preview shortly, and may currently not be available to you.
-
 <b>In this article</b>:
 - [Configure the "Send email notifications from your domain" setting](#configure-the-send-email-notifications-from-your-domain-setting)
 - [Supported Products](#supported-products)

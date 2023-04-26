@@ -1,9 +1,9 @@
 ---
 title: Use the Frontline Worker onboarding wizard to get your frontline workforce up and running
-author: lanachin
-ms.author: v-lanachin
+author: daisyfell
+ms.author: daisyfeller
 ms.reviewer: aaglick
-manager: samanro
+manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -18,10 +18,13 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/28/2022
+ms.date: 04/24/2023
 ---
 
 # Use the Frontline Worker onboarding wizard to get your frontline workforce up and running
+
+>[!IMPORTANT]
+>The Frontline Worker onboarding wizard is no longer available starting April 24, 2023.
 
 ## Overview
 

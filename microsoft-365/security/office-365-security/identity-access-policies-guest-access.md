@@ -43,7 +43,7 @@ The following table lists the policies you either need to create and update. The
 
 |Protection level|Policies|More information|
 |---|---|---|
-|**Starting point**|[Require MFA always for guests and external users](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Create this new policy and configure: <ul><li>For **Assignments > Users and groups > Include**, choose **Select users and groups**, and then select **All guest and external users**.</li><li>For **Assignments > Conditions > Sign-in**, leave all options unchecked to always enforce multi-factor authentication (MFA).</li></ul>|
+|**Starting point**|[Require MFA always for guests and external users](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Create this new policy and configure: <ul><li>For **Assignments > Users and groups > Include**, choose **Select users and groups**, and then select **All guest and external users**.</li><li>For **Assignments > Conditions > Sign-in risk** and select all Sign-in risk levels. </li></ul>|
 ||[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modify this policy to exclude guests and external users.|
 
 To include or exclude guests and external users in Conditional Access policies, for **Assignments > Users and groups > Include** or **Exclude**, check **All guest and external users**.
