@@ -35,7 +35,6 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions l
 ## Before you begin
 
 - Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through JAMF Connect or Intune.
-- OPTIONAL: Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
 
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
@@ -121,6 +120,8 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
     - Features
         - Use System Extensions: `enabled` - required for network extensions on Catalina
         - Use Data Loss Prevention: `enabled`
+        - Use DLP_browser_only_cloud_egress: `enabled` if you want to monitor the browser.
+        - Use DLP_ax_only_cloud_egress: `enabled` if you want to monitor only the URL in the browser address bar.
     - Antivirus engine > Passive mode: `true|false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
 
 1. Choose the **Scope** tab.
@@ -128,6 +129,8 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 1. Choose the groups to deploy this configuration profile to.
 
 1. Choose **Save**.
+
+
 
 ### Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)
 

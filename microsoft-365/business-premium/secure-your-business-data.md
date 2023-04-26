@@ -9,25 +9,15 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 03/29/2023
+ms.date: 04/25/2023
 ms.localizationpriority: medium
 ms.collection:
 - highpri
 - Adm_O365
 - Adm_TOC
 - m365-security
-- tier1
-ms.custom:
-- VSBFY23
-- MSStore_Link
-- AdminSurgePortfolio
-- okr_smb
-- AdminTemplateSet
-- admindeeplinkMAC
-- admindeeplinkDEFENDER
-- adminvideo
-- admindeeplinkEXCHANGE
-- business_assist
+- tier2
+- ContentEnagagementFY23
 search.appverid:
 - BCS160
 - MET150
