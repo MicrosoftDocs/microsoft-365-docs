@@ -22,6 +22,40 @@ search.appverid:
 
 # Manage jobs in eDiscovery (Premium)
 
+## Jobs report (preview)
+
+eDiscovery (Premium) includes a jobs report tool that lists all jobs that count towards the jobs concurrency and daily limits in eDiscovery for a defined time period. eDiscovery administrators can access this report and can use this report to see the job activities across Content Search activities and eDiscovery (Standard and Premium) cases.  
+
+The job report summarizes the following key information for jobs up to the last 30 days:
+
+- All jobs that are in progress or completed (successfully or with error) in a specified time range across eDiscovery Standard and Premium.
+- Insights into how far away your organization is from reaching job-related organization-wide limits.
+- Creates a .csv report for the list of jobs.
+- Filters for job types, statuses, and for hours/days.
+- Quick access to case/job pages by selecting case name links.
+
+The following eDiscovery (Premium) job types currently don't count towards the concurrency/daily limits and aren't shown in the report:
+
+    - Prepare for export
+    - Run analytics
+    - Tag Items
+    - Compare load sets
+    - Convert redacted items to PDF
+    - Relevance train and Relevance load
+    - Prepare remediation
+
+>[!NOTE]
+>Any jobs included in the list view of the report and that have run for more than 24 hours do not contribute towards the concurrency/daily limits for your organization.
+
+eDiscovery (Premium) jobs started in classic cases don't contribute to throttling limits and aren't reflected in the report. Jobs started for cases in the New case format for the following activities are included in the report:
+
+- Adding non-Microsoft 365 data to a review set
+- Adding remediated data to a review set
+- Re-indexing custodian data
+- Adding data to a review set
+
+## Job types and descriptions
+
 Long-running processes are associated with specific jobs that support cases, collections, and reporting in Microsoft Purview eDiscovery (Premium). These jobs are triggered by user actions when using and managing cases and collections.
 
 |Job type|Description|
