@@ -35,6 +35,8 @@ This article is updated frequently to let you know what's new in the latest rele
 <details>
 	<summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0)</summary>
 
+## April-2023 Build: 101.98.58 | Release version: 30.123022.19858.0
+
 &ensp;Released: **April 20,2023**<br/>
 &ensp;Published: **April 20, 2023**<br/>
 &ensp;Build: **101.98.58**<br/>
@@ -51,7 +53,7 @@ This article is updated frequently to let you know what's new in the latest rele
 	- Engine Update to 1.1.20000.2 and Signatures Ver: 1.381.3067.0.
 	- Addressed a health issue in mdatp which occur due to selinux denials.
 	- Bug fixes.
-	
+
 **Known issues**
 
 - While upgrading mdatp to version 101.94.13 or later, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
@@ -84,7 +86,6 @@ sudo systemctl disable mdatp
 ```
 </details>
 
-
 <details>
 	<summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
 
@@ -96,6 +97,7 @@ sudo systemctl disable mdatp
 &ensp;Release version: **30.123012.19830.0**<br/>
 &ensp;Engine version: **1.1.19900.2**<br/>
 &ensp;Signature version: **1.379.1299.0**<br/>
+	
 **What's new**
 - This new release is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customers. There is no change for other customers and upgrade is optional. 
 	
