@@ -90,20 +90,6 @@ Download the following files.
 
 3. In the navigation pane, select **Application and Custom Settings** and then choose **Upload**.
 
-4. Choose **Add**.
-
-5. In the **Preference Domain** field, enter `com.microsoft.wdav.atp`. (The `com.microsoft.wdav.atp` file is the onboarding package that you downloaded earlier.)
-
-6. In the **Property List** field, paste the contents of the `com.microsoft.wdav.atp` file.
-
-7. Choose **Save**.
-
-8. Enter a name for the configuration profile and then choose **Save**.
-
-9. On the next page, choose the **scope** tab, select the appropriate targets for this configuration profile, and then choose **Save**.
-
-10. Choose **Done**.
-
 ### Configure application preferences
 
 > [!IMPORTANT]
@@ -139,10 +125,6 @@ Download the following files.
         - Choose **Passive mode**.
         - Choose **Apply**.
 
-
- 
-<!-- I'm omitting the screenshot because the version of the screenshot that I have doesn't picture all the chosen values & buttons,. -->
-
 8. Enter a name for the configuration profile and then choose **Save**.
 
 9. On the next page, choose the **Scope** tab, select the appropriate targets for this configuration profile, and then choose **Save**.
@@ -153,7 +135,7 @@ Download the following files.
  
 2. Select the `mdatp-nokext.mobileconfig` file, choose **Open**, and then choose **Upload**.
 
-## Upload the installation package ##
+## Upload the installation package
 
 1. In the JAMF Pro console, navigate to **Management Settings** > **Packages** and then choose **New**.
  

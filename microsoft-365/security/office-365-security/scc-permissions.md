@@ -53,8 +53,8 @@ Managing permissions in Defender for Office 365 or Purview compliance gives user
 
 |Role group|Description|Default roles assigned|
 |---|---|---|
-|**Attack Simulator Administrators**|Don't use this role group in these portals. Use the corresponding role in Azure AD.|Attack Simulator Admin|
-|**Attack Simulator Payload Authors**|Don't use this role group in these portals. Use the corresponding role in Azure AD.|Attack Simulator Payload Author|
+|**Attack Simulation Administrator**|Don't use this role group in these portals. Use the corresponding role in Azure AD.|Attack Simulator Admin|
+|**Attack Payload Author**|Don't use this role group in these portals. Use the corresponding role in Azure AD.|Attack Simulator Payload Author|
 |**Communication Compliance**|Provides permission to all the communication compliance roles: administrator, analyst, investigator, and viewer.|Case Management <br/><br/> Communication Compliance Admin <br/><br/> Communication Compliance Analysis <br/><br/> Communication Compliance Case Management <br/><br/> Communication Compliance Investigation <br/><br/> Communication Compliance Viewer <br/><br/> Data Classification Feedback Provider <br/><br/> Data Connector Admin <br/><br/> Scope Manager <br/><br/> View-Only Case|
 |**Communication Compliance Administrators**|Administrators of communication compliance that can create/edit policies and define global settings.|Communication Compliance Admin <br/><br/> Communication Compliance Case Management <br/><br/> Data Connector Admin <br/><br/> Scope Manager|
 |**Communication Compliance Analysts**|Analysts of communication compliance that can investigate policy matches, view message meta data, and take remediation actions.|Communication Compliance Analysis <br/><br/> Communication Compliance Case Management|
@@ -159,8 +159,8 @@ The following roles aren't assigned to the Organization Management role group by
 
 |Role|Description|Default role group assignments|
 |---|---|---|
-|**Attack Simulator Admin**|Don't use this role in the portals. Use the corresponding role in Azure AD.|Attack Simulator Administrators|
-|**Attack Simulator Payload Author**|Don't use this role in the portals. Use the corresponding role in Azure AD.|Attack Simulator Payload Authors|
+|**Attack Simulator Admin**|Don't use this role in the portals. Use the corresponding role in Azure AD.|Attack Simulation Administrator|
+|**Attack Simulator Payload Author**|Don't use this role in the portals. Use the corresponding role in Azure AD.|Attack Payload Author|
 |**Audit Logs**|Turn on and configure auditing for the organization, view the organization's audit reports, and then export these reports to a file.|Organization Management <br/><br/> Security Administrator|
 |**Case Management**|Create, edit, delete, and control access to eDiscovery cases.|Communication Compliance <br/><br/> Communication Compliance Investigators <br/><br/> Compliance Administrator <br/><br/> eDiscovery Manager <br/><br/> Insider Risk Management <br/><br/> Insider Risk Management Admins <br/><br/> Insider Risk Management Analysts <br/><br/> Insider Risk Management Investigators <br/><br/> Organization Management <br/><br/> Privacy Management <br/><br/> Privacy Management Administrators <br/><br/> Privacy Management Analysts <br/><br/> Privacy Management Investigators <br/><br/> Subject Rights Request Administrators|
 |**Communication**|Manage all communications with the custodians identified in an eDiscovery (Premium) case.  Create hold notifications, hold reminders, and escalations to management. Track custodian acknowledgment of hold notifications and manage access to the custodian portal that is used by each custodian in a case to track communications for the cases where they were identified as a custodian.|Data Investigator <br/><br/> eDiscovery Manager|
