@@ -294,8 +294,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Compliance Manager
 
-- Assessment templates that belong to the same regulation family now count as one template. The [definition of **included templates**](compliance-manager-templates-list.md#included-templates) has been updated to align with [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
-- Improvement actions now provide greater visibility into related controls and assessments. Improvement action details pages have a new [**Related controls** tab](compliance-manager-improvement-actions.md#related-controls), and the **Summary** section has a clickable **Assessments** number that, when selected, lists all the assessments related to that action.
+- Assessment templates that belong to the same regulation family now count as one template. The [definition of **included templates**](compliance-manager-templates-list.md#included-regulations) has been updated to align with [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
+- Improvement actions now provide greater visibility into related controls and assessments. Improvement action details pages have a new [**Related controls** tab](compliance-manager-improvement-actions.md#improvement-actions-details-page), and the **Summary** section has a clickable **Assessments** number that, when selected, lists all the assessments related to that action.
 
 ### Data lifecycle management and records management
 

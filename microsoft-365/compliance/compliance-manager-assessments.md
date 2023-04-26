@@ -78,7 +78,7 @@ To create an assessment, you'll use a guided process to select a template and de
 
 #### Create assessments based on recommendations for your org type
 
-Compliance Manager can indicate which assessments may be most relevant to your organization. When you provide basic information about your organization's industry and locations, we'll recommend which templates to use from our library of over 300 templates. Choose among the recommended templates for quick setup of multiple assessments all at once.
+Compliance Manager can indicate which assessments may be most relevant to your organization. When you provide basic information about your organization's industry and locations, we'll recommend which regulations to use for quick setup of multiple assessments all at once.
 
 To create one or more assessments based on our recommendations, select **Add Recommended Assessments** from your **Assessments** page and follow these steps:
 
@@ -246,7 +246,7 @@ The assessment details page may also list improvement actions that have a **Pend
 
 #### Review update to accept or defer
 
-After selecting **Review update** from the assessment details page, a flyout pane appears on the right side of your screen. The flyout pane provides the key details below about the pending update:
+When you select **Review update** from the assessment details page, a flyout pane appears on the right side of your screen. The flyout pane provides the key details below about the pending update:
 
 - The template title
 - Source of the update (Microsoft, your organization, or a specific user)
@@ -260,13 +260,9 @@ To accept the update and make the changes to your assessment, select **Accept up
 
 If you select **Cancel**, the update won't be applied to the assessment. However, you'll continue to see the **Pending update** notification until you accept the update.
 
-**Why we recommend accepting updates**
+- **Why we recommend accepting updates**: Accepting updates helps ensure you have the most updated guidance on using solutions and taking appropriate improvement actions to help you meet the requirements of the certification at hand.
 
-Accepting updates helps ensure you have the most updated guidance on using solutions and taking appropriate improvement actions to help you meet the requirements of the certification at hand.
-
-**Why you might want to defer an update**
-
-If you're in the middle of completing an assessment, you may want to ensure you've finished work on it before you accept an update to the assessment that could disrupt control mapping. You can defer the update for a later time by selecting **Cancel** on the review update flyout pane.
+- **Why you might want to defer an update**: If you're in the middle of completing an assessment, you may want to ensure you've finished work on it before you accept an update to the assessment that could disrupt control mapping. You can defer the update for a later time by selecting **Cancel** on the review update flyout pane.
 
 ## Export an assessment report
 
