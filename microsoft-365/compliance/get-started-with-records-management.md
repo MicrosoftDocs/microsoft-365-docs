@@ -69,9 +69,9 @@ Now rolling out in preview, records management supports [administrative units th
 - You can assign administrative units to members of role groups that are used with Microsoft Purview Records Management. Edit the Records Management role group or other role groups that support administrative units. From these role groups, select individual members, and then the **Assign admin units** option to select administrative units from Azure Active Directory. These administrators are now restricted to managing just the users in those administrative units.
 
 - You can define the initial scope of retention policies and retention label policies when you create or edit these policies. When you select administrative units, only the users in those administrative units will be eligible for the policy.
-
-> [!IMPORTANT]
-> Don't select administrative units for a policy that you want to apply to SharePoint sites or Exchange public folders. Because administrative units support only users and groups, if you configure policy for retention to use administrative units, you won't be able to select the locations for SharePoint sites or Exchange public folders.
+    
+    > [!IMPORTANT]
+    > Don't select administrative units for a retention label policy that you want to apply to SharePoint sites. Because administrative units support only users and groups, if you configure a retention label policy to use administrative units, you won't be able to select the locations for SharePoint sites.
 
 - Both adaptive scopes and static scopes support administrative units.
 
