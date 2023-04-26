@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/19/2023
+ms.date: 04/26/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -142,7 +142,6 @@ Assign these permissions to the Azure blob for the users role.
 
 |Object|Permissions|
 |---------|---------|
-|Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Read: Read Blob|
 |Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Write: Write Blob|
 |Microsoft.Storage/storageAccounts/blobServices/containers/blobs|Other: Add blob content|
 
@@ -175,7 +174,7 @@ The JSON for user role group should look like this:
 
 1. Set the toggle to **On**. 
 
-1. Set how long you want items to be cached on devices if they can't access the Azure storage account. You can choose, **7**, **30**, or **90** days.
+1. Set how long you want items to be cached on devices if they can't access the Azure storage account. You can choose, **7**, **30**, or **60** days.
 
 1. Select **+ Add storage** and provide the Name and URL of the Azure storage account.
 

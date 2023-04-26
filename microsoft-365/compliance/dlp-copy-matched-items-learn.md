@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/18/2023
+ms.date: 04/26/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -38,13 +38,13 @@ If you're new to Microsoft Purview DLP, here's a list of the core articles you'l
 1. [Design a DLP policy](dlp-policy-design.md) - this article walks you through creating a policy intent statement and mapping it to a specific policy configuration. 
 1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options.
 
-## Where evidence collection for file activities on devices<!--copy matched items--> fits in Purview
+## Where evidence collection for file activities on devices fits in Purview
 
 Endpoint DLP is part of the [larger DLP offering](dlp-learn-about-dlp.md) and part of the larger range of services offered in [Microsoft Purview](/microsoft-365/compliance.md). You should understand how evidence collection for file activities on devices fits into the larger set of service offerings.
-### Evidence collection for file activities on devices <!--Copy matched items--> and eDiscovery
+### Evidence collection for file activities on devices and eDiscovery
 
 This feature will only make copies of items that match DLP policies on onboarded Windows devices and place those copies in an Azure storage account. These copies aren't held in a changless state and aren't evidence in the legal sense of the term. If you need to find and hold items for legal purposes, you should use the [Microsoft Purview eDiscovery solutions](ediscovery.md). Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases.
-### Evidence collection for file activities on devices<!--Copy matched items--> and contextual summary
+### Evidence collection for file activities on devices and contextual summary
 
  When an item and the activity that a user is taking on that item match the conditions defined in a DLP policy, a **DLPRuleMatch** event shows up in [Activity explorer](data-classification-activity-explorer.md). This is true for every location that DLP supports. The **DLPRuleMatch** event contains a limited amount of the text that surrounds the matched content. This limited amount of text is called [contextual summary](dlp-learn-about-dlp.md#contextual-summary).
 It's important to understand the difference between evidence collection for file activities on devices <!--copy matched item--> and contextual summary. Evidence collection for file activities on devices <!--Copy matched items--> is only available for onboarded Windows devices and saves a copy of the entire item that matched a policy to the Azure storage account. Contextual summary is captured for every DLP policy rule match and only contains a limited amount of the text that surrounds the target text that triggered the match. 
