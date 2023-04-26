@@ -195,7 +195,7 @@ Another option for policy thresholds is to assign the policy triggering event to
 You can use real-time analytics if you want to take advantage of a guided (data-driven) threshold configuration experience that enables you to quickly select the appropriate thresholds for each policy indicator. This guided experience can help you efficiently adjust selection of indicators and thresholds of activity occurrence so you don't have too few or too many policy alerts. When analytics is turned on, you can choose the **Customize thresholds** option in the policy wizard to see:
 
 - **A**. A gauge that shows the approximate number of users in the past 10 days with activity levels that exceeded the lowest daily thresholds for at least one of the selected indicators in the policy. This gauge can help you estimate the number of alerts that might be generated if all the users in the policy scope were being assigned risk scores.
-- **B**. A list of the top five indicators sorted by the number of users exceeding the lowest daily thresholds. If your policies are generating a lot of alerts, these are the indicators you might want to focus on to reduce "noise".
+- **B**. A list of the top five indicators sorted by the number of users exceeding the lowest daily thresholds. If your policies are generating a lot of alerts, these are the indicators you might want to focus on to reduce "noise."
 - **C**. An insight for each indicator, displayed below the thresholds. The insight shows the approximate count of distinct users with activity levels that exceeded the currently specified low thresholds for this indicator. For example, if the low threshold setting for *Downloading content from SharePoint* is set to 100, the insight shows the number of distinct users in the policy who did more than 100 download activities on an average in the past 10 days. If you adjust the threshold setting to 200, the insight will update in real time to show you the number of users with activity levels that exceed the new thresholds. This helps you quickly configure the appropriate thresholds for each indicator and achieve the highest level of alert effectiveness before pushing your policies live. 
 
    ![Insider risk management real-time analytics](../media/insider-risk-management-real-time-analytics.png)
@@ -736,7 +736,7 @@ To turn off insider risk analytics, you must be a member of the *Insider Risk Ma
 Complete the following steps to turn off insider risk analytics:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**.
-2. Select **Insider risk settings** > **Analytics** page.
+2. Select **Insider risk settings** > **Analytics**.
 3. On the **Analytics** page, turn off **Scan your tenant's user activity to identify potential insider risks**.
 
 ## Admin notifications
