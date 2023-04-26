@@ -119,7 +119,7 @@ Select a template from its row to bring up its details page. This page contains 
 
 When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can access all regulations by default (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). You can restrict user access to only certain regulations by managing user roles from a regulation's details page. Restricting access in this way can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties.
 
-External users who need access for auditing or other purposes can also be assigned a role for viewing assessments and editing test data. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#setting-permissions-in-azure-ad).
+External users who need access for auditing or other purposes can also be assigned a role for viewing regulations. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#setting-permissions-in-azure-ad).
 
 #### Steps for granting access
 
