@@ -94,16 +94,17 @@ A user can only hold one role at a time. Any change in a user's role will overri
 | **Edit improvement action testing notes**| Compliance Manager Assessor | Compliance Administrator |
 | **Manage assessments, templates, and tenant data; assign improvement actions**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
 
-### Role-based access to assessments
+### Role-based access to assessments and regulations
 
-You can assign roles to users in order to grant access to specific assessments. Granting access to individual assessments is useful when you need to ensure that only the people working on certain regulatory requirements have access to that data. You can grant access to individual assessments to users outside of your organization, which helps when you have external auditors. For users outside your organization, you'll need to assign them an Azure AD role. For instructions, see [More about Azure AD](#setting-permissions-in-azure-ad).
+You can assign roles to users in order to grant access to specific assessments and regulation. Granting access to individual assessments and regulations is useful when you need to ensure that only the people working on certain regulatory requirements have access to that data. You can grant access to individual assessments to users outside of your organization, which helps when you have external auditors. For users outside your organization, you'll need to assign them an Azure AD role. For instructions, see [More about Azure AD](#setting-permissions-in-azure-ad).
 
-The four roles listed in table above provide access to assessments: Compliance Manager Reader, Compliance Manager Contribution, Compliance Manager Assessor, and Compliance Manager Administration. What you can do with each assessment remains restricted based on which activities the role allows.
+The four roles listed in table above provide access to assessments: Compliance Manager Reader, Compliance Manager Contribution, Compliance Manager Assessor, and Compliance Manager Administration. What you can do with each assessment or regulation remains restricted based on which activities the role allows.
 
-To grant users access to an assessment, open the assessment's details page and select **Manage users access** to add users by role. If a user has a role assigned to them in the Microsoft Purview compliance portal for overall access to Compliance Manager, any role you assign them for a specific assessment will apply only to that assessment.
+To grant users access to an assessment or regulation, open the its details page and select **Manage users access** to add users by role. If a user has a role assigned to them in the Microsoft Purview compliance portal for overall access to Compliance Manager, any role you assign them for a specific assessment will apply only to that assessment.
 
 **More information**:
-- See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed information and instructions.
+- See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed instructions.
+- See [Grant user access to regulations](compliance-manager-templates.md#grant-user-access-to-individual-regulations) for more detailed instructions.
 - Learn more about [managing all users' access to assessments](#user-access) in Compliance Manager settings.
 
 ## Start a premium assessments trial
