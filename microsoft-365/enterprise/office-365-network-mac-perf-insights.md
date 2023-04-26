@@ -124,7 +124,7 @@ This insight displays if the network insights service detects that users in a sp
 
 This insight is abbreviated as "Afd" in some summary views.
 
-:::image type=content alt-text="Screenshot of a summary view for a non-optimal SPO front door usage." source="../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png":::
+:::image type="content" alt-text="Screenshot of a summary view for a non-optimal SPO front door usage." source="../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png":::
 
 ### What does this mean?
 
