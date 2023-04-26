@@ -205,9 +205,6 @@ Complete the following steps to manage an existing policy:
 
     - **I want to prioritize content**. Selecting this option will enable you to prioritize *SharePoint sites*, *Sensitivity labels*, *Sensitive info types*, and *File extensions* content types. If you choose this option, you must select at least one priority content type.
 
-       > [!NOTE]
-       > At this time, real-time analytics insights (preview) for indicator threshold settings doesn't account for priority content events. If you want to take advantage of real-time analytics for configuring threshold settings, you must choose the **I don't want to specify priority content right now** option. For more information on real-time analytics for indicator threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
-
     - **I don't want to specify priority content right now**. Selecting this option will skip the priority content detail pages in the wizard.
 
 10. Select **Next** to continue.
@@ -246,12 +243,7 @@ Complete the following steps to manage an existing policy:
 22. On the **Decide whether to use default or custom indicator thresholds** page, choose custom or default thresholds for the policy indicators that you've selected. Choose either the **Use default thresholds for all indicators** or **Specify custom thresholds** for the selected policy indicators. If you've selected Specify custom thresholds, choose the appropriate level to generate the desired level of activity alerts for each policy indicator.
 
     > [!NOTE]
-    > If analytics is turned on, and if you've scoped the policy to include all users and haven't chosen to prioritize content, you'll see:
-    > - A gauge that shows the approximate number of distinct users with activity levels exceeding the lowest daily thresholds for at least one indicator in the policy and the total count of distinct users who had activities that matched at least one indicator in the policy. This gauge can help you estimate the number of alerts that might get generated if all the users in the policy were being assigned risk scores.
-    > - A list of the top five indicators sorted by the number of users exceeding the lowest daily thresholds. If your policies are generating a lot of alerts, these are the indicators you might want to focus on to reduce "noise."
-    > - An insight for each indicator, displayed below the thresholds. The insight shows the approximate count of distinct users with activity levels that exceeded the currently specified low thresholds for this indicator. For example, if the low threshold setting for *Downloading content from SharePoint* is set to 100, the insight shows the number of distinct users in the policy who did more than 100 download activities on average in the past 10 days. If you adjust the threshold setting to 200, the insight will update in real time to show you the number of users with activity levels that exceed the new thresholds. This helps you quickly configure the right thresholds for each indicator and achieve the highest level of alert effectiveness before pushing your policies live. 
-    >
-    > For more information on real-time analytics for indicator threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
+    > If analytics is turned on, and if you've scoped the policy to include all users, you can take advantage of real-time analytics to tune your threshold settings. [Learn more about real-time analytics for indicator threshold settings](insider-risk-management-settings.md#indicator-level-settings)
 
 23. Select **Next** to continue.
 24. On the **Review** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
