@@ -52,8 +52,6 @@ We’ll soon roll out a selection of data connectors built specifically for Comp
 
 ## Service subscriptions
 
-*AWS - legal, AWS - marketing, etc. But do we talk about this in relation to MDC, or in relation to the service itslef? ARe these sub-units within a service, subscriptions within a service, or subscriptions as understood only in the context of MDC?*
-
 For any of your organization's services that has more than one subscription covered by Microsoft Defender for Cloud (for example, an Azure subscription for your legal department, and an Azure subscription for your marketing department). When you create an assessment, you'll be asked to select which subscriptions within a service you want to assess. Your choice of subscription will affect the evaluation of improvement actions for that service.
 
 If you choose subscriptions that are in scope within MDC for a matching standard, your assessment results will be pulled from MDC and shown in the assessment.
