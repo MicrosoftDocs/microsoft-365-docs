@@ -56,7 +56,7 @@ This card shows how resilient your organization is to specific attacks. A higher
 ## Web content monitoring and filtering 
 Shows the number of malicious URLs that were blocked in the last month. You'll also be able to see the categories of URLs that were blocked and the number of clicks for each category. 
 
-## Incidents
+## Track incidents and alerts
 Track how many incidents and alerts were resolved in the past month using the incidents card. The card also shows all active incidents and alerts. You'll also be able to see a list of the top 10 severe incidents, their status, number of alerts, and the impacted devices and users. 
 
 
