@@ -85,7 +85,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 
 ### Step 4: Set up and configure Defender for Business
 
-If you choose not to use the setup wizard, see the following diagram that depicts the [overall setup and configuration process](mdb-setup-configuration.md#the-setup-and-configuration-process) for Defender for Business.
+If you choose not to use the setup wizard, see the following diagram that depicts the [overall setup and configuration process](mdb-setup-configuration.md) for Defender for Business.
 
 [:::image type="content" source="media/mdb-setup-process-2.png" alt-text="Setup and configuration process for Defender for Business.":::](mdb-setup-configuration.md)
 
