@@ -33,6 +33,8 @@ ms.custom: seo-marvel-apr2020
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Security breaches of a Microsoft 365 tenant, including information harvesting and phishing attacks, are typically done by compromising the credentials of a Microsoft 365 privileged account. Security in the cloud is a partnership between you and Microsoft:
   
 - Microsoft cloud services are built on a foundation of trust and security. Microsoft provides you security controls and capabilities to help you protect your data and applications.
@@ -135,9 +137,9 @@ In this step, you'll enable privileged access management in your tenant and conf
 
 Privileged access management enables your organization to operate with zero standing privileges and provide a layer of defense against vulnerabilities arising because of such standing administrative access. Privileged access requires approvals for executing any task that has an associated approval policy defined. Users needing to execute tasks included in the approval policy must request and be granted access approval.
 
-To enable privileged access management, see [Configure privileged access management](/office365/securitycompliance/privileged-access-management-configuration).
+To enable privileged access management, see [Get started with privileged access management](/microsoft-365/compliance/privileged-access-management-configuration).
 
-For more information, see [Privileged access management](/office365/securitycompliance/privileged-access-management-overview).
+For more information, see [Learn about privileged access management](/microsoft-365/compliance/privileged-access-management).
 
 ### Security information and event management (SIEM) software for Microsoft 365 logging
 

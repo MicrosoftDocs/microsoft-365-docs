@@ -3,8 +3,9 @@ title: "Share calendars with external users"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -28,10 +29,6 @@ description: "Enable calendar sharing in the Microsoft 365 admin center so users
 ---
 
 # Share Microsoft 365 calendars with external users
-
-It's sometimes necessary for your users to schedule meetings with people outside your organization. To simplify the process of finding common meeting times, Microsoft 365 enables you to make calendars available to these people. These are people who need to see free and busy times for users in your organization, but don't have user accounts for your Microsoft 365 organization.
-
-You can enable calendar sharing for all users in your organization in the Microsoft 365 admin center. Once sharing is enabled, your users can use Outlook Web App to share their calendars with anyone inside or outside the organization. People inside the organization can view the shared calendar along with their own calendar. People outside the organization will be sent a URL that they can use to view the calendar. Users in your organization decide when to share and how much to share.
 
 It's sometimes necessary for your users to schedule meetings with people outside your organization. To simplify the process of finding mutually agreeable meeting times, Microsoft 365 enables you to make calendars available to external users. These are people who need to see free and busy times for users in your organization, but don't have user accounts for your Microsoft 365 organization.
   

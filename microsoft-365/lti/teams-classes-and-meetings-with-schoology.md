@@ -4,12 +4,14 @@ ms.author: danismith
 author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman 
+ms.date: 08/08/2022
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu
+- tier2
 ms.localizationpriority: medium
 description: Create and manage Teams meetings with Microsoft Learning Tools Interoperability (LTI) for PowerSchool Unified Classroom® Schoology Learning.
 ---

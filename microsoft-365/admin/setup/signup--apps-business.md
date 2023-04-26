@@ -3,8 +3,9 @@ title: "Sign up for Microsoft 365 Apps for business"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 11/18/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -21,6 +22,8 @@ description: "Sign up for Microsoft 365 Apps for business."
 ---
 
 # Sign up for a Microsoft 365 Apps for business subscription
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Want to sign up for a Microsoft 365 Apps for business subscription?
 
@@ -76,7 +79,7 @@ Use these three factors to determine which of the two options is best for your b
 
 ### Option 1: Sign in with your Outlook, Hotmail, Yahoo, Gmail or other email account
 
-This applies to Microsoft 365 Business Standard and Microsoft 365 Apps for Business. You'll sign in to Microsoft 365 with this email address. For example, alliebellew@hotmail.com.
+This applies to Microsoft 365 Business Standard and Microsoft 365 Apps for Business. You'll sign in to Microsoft 365 with this email address. For example, somebody@example.com.
 
 :::image type="content" source="../../media/ssu-how-you-sign-in.png" alt-text="Screenshot: Sign in with your personal email.":::
 

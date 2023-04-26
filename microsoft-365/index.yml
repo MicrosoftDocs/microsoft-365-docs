@@ -125,9 +125,9 @@ conceptualContent:
             - url: solutions/deploy-threat-protection.md
               itemType: how-to-guide
               text: Deploy threat protection
-            - url: solutions/information-protection-deploy.md
+            - url: solutions/data-privacy-protection.md
               itemType: how-to-guide
-              text: Deploy information protection for data privacy regulations
+              text: Manage data privacy and data protection
             - url: business-premium/index.md
               itemType: how-to-guide
               text: Microsoft 365 for smaller businesses and campaigns

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 10/14/2022
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -13,6 +13,7 @@ search.appverid:
   - MET150
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
 description: Learn how to identify critical people in an organization and add the priority account tag to provide them with extra protection.
 ms.subservice: mdo
@@ -67,6 +68,11 @@ Microsoft Defender for Office 365 supports priority accounts as tags that can be
 
 For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 
+> [!NOTE]
+> Currently, you can only apply user tags to mailbox users.
+> Your organization can tag a maximum of 250 users using the Priority account tag.
+> Each custom tag has a maximum of 10,000 users per tag and your organization can create up to 500 custom tags.
+
 ## Review differentiated protection from priority account protection
 
 The affects of priority account protection are visible in the following features:
@@ -81,7 +87,7 @@ The affects of priority account protection are visible in the following features
 - [Attack simulation](attack-simulation-training-simulations.md#target-users)
 - [Campaign Views](campaigns.md)
 - [Admin submissions and user reported messages](submissions-admin.md)
-- [Quarantine](quarantine.md)
+- [Quarantine](quarantine-about.md)
 
 ### Threat protection status report
 

@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 12/02/2022
+ms.date: 01/06/2023
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
@@ -28,6 +28,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
@@ -150,4 +151,4 @@ You can use the Windows Security app to view the list of folders that are protec
    - To remove a folder, select it, and then select **Remove**.
 
 > [!NOTE]
-> [Windows system folders](#windows-system-folders-are-protected-by-default) are protected by default, and you cannot remove them from the list.
+> [Windows system folders](#windows-system-folders-are-protected-by-default) are protected by default, and you cannot remove them from the list. Subfolders are also included in protection when you add a new folder to the list.

@@ -5,13 +5,13 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 ms.audience: Admin
 ms.topic: conceptual
 audience: Admin
 ms.localizationpriority: high
 ms.collection: 
   - m365-security
+  - tier1
 search.appverid: 
   - MOE150
   - MET150
@@ -20,6 +20,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Microsoft Defender for Office 365 permissions in the Microsoft 365 Defender portal

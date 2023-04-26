@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 ms.reviewer: jefwan
+ms.date: 01/01/2023
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -26,7 +27,6 @@ After you create a predictive coding model in Microsoft Purview eDiscovery (Prem
 Here are two ways you can use the prediction score filter:
 
 - Prioritize the review of items in a review set that the model has predicted are relevant.
-
 - Cull items from the review set that the model has predicted are not relevant. Alternative, you can use the prediction score filter to de-prioritize the review of non-relevant items.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -34,18 +34,17 @@ Here are two ways you can use the prediction score filter:
 ## Before you apply a prediction score filter
 
 - Create a predictive coding model so that a corresponding prediction score filter is created.
-
 - You can apply a prediction score filter after any of the training rounds. But you may want to wait after performing several rounds or until the model is stable before using the prediction score filter.
 
 ## Apply a prediction score filter
 
 1. In the Microsoft Purview compliance portal, open the eDiscovery (Premium) case, select the **Review sets** tab, and then open the review set.
 
-   ![Click Filters to display the Filters flyout page.](..\media\PredictionScoreFilter0.png)   
+   ![Select Filters to display the Filters flyout page.](..\media\PredictionScoreFilter0.png)   
 
    The pre-loaded default filters are displayed at the top of the review set page. You can leave these set to **Any**.
 
-2. Click **Filters** to display the **Filters** flyout page.
+2. Select **Filters** to display the **Filters** flyout page.
 
 3. Expand the **Analytics & predictive coding** section to display a set of filters.
 
@@ -53,18 +52,18 @@ Here are two ways you can use the prediction score filter:
 
    The naming convention for prediction score filters is **Prediction score (model name)**. For example, the prediction score filter name for a model named **Model A** is **Prediction score (Model A)**.
 
-4. Select the prediction score filter that you want to use and then click **Done**.
+4. Select the prediction score filter that you want to use and then select **Done**.
 
-5. On the review set page, click the dropdown for the prediction score filter and type minimum and maximum values for the prediction score range. For example, the following screenshot shows a prediction score range between **.5** and **1.0**.
+5. On the review set page, select the dropdown for the prediction score filter and type minimum and maximum values for the prediction score range. For example, the following screenshot shows a prediction score range between **.5** and **1.0**.
 
    ![Minimum and maximum values for the prediction score filter.](..\media\PredictionScoreFilter2.png)
 
-6. Click outside the filter to automatically apply the filter to the review set.
+6. Select outside the filter to automatically apply the filter to the review set.
 
   A list of documents with a prediction score within the range you specified is displayed on the review set page. 
 
   > [!TIP]
-  > To view the actual prediction score assign to a document, you can click the **Metadata** tab in the reading pane. The prediction scores for all models in the review set are displayed in the **RelevanceScores** metadata property.
+  > To view the actual prediction score assign to a document, you can select the **Metadata** tab in the reading pane. The prediction scores for all models in the review set are displayed in the **RelevanceScores** metadata property.
 
 ## More information
 

@@ -11,6 +11,7 @@ ms.service: O365-seccomp
 ms.topic: article
 ms.author: shmehta
 ms.reviewer: krowley
+ms.date: 07/02/2020
 ms.collection: 
 - tier3
 - purview-compliance

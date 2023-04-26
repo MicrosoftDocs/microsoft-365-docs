@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date:
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -34,9 +34,7 @@ The script prompts you for the name of your organization's My Site domain (for e
 Here are the steps to make this happen:
 
 [Step 1: Install the SharePoint Online Management Shell](#step-1-install-the-sharepoint-online-management-shell)
-
 [Step 2: Generate a list of users](#step-2-generate-a-list-of-users)
-
 [Step 3: Run the script to create a hold and add users](#step-3-run-the-script-to-create-a-hold-and-add-users)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -44,19 +42,12 @@ Here are the steps to make this happen:
 ## Before you add users to a hold
 
 - You have to be a member of the eDiscovery Manager role group in the compliance portal and a SharePoint Online administrator to run the script in Step 3. For more information, see [Assign eDiscovery permissions in the Office 365 Security & Compliance Center](ediscovery-assign-permissions.md).
-
 - A maximum of 1,000 mailboxes and 100 sites can be added to a hold that's associated with an eDiscovery case in the compliance portal. Assuming that every user that you want to place on hold has a OneDrive for Business site, you can add a maximum of 100 users to a hold using the script in this article.
-
 - Be sure to save the list of users that you create in Step 2 and the script in Step 3 to the same folder. That will make it easier to run the script.
-
 - The script adds the list of users to a new hold that is associated with an existing case. Be sure the case that you want to associate the hold with is created before you run the script.
-
 - The script in this article supports modern authentication when connecting to Security & Compliance PowerShell and SharePoint Online Management Shell. You can use the script as-is if you are a Microsoft 365 or a Microsoft 365 GCC organization. If you are an Office 365 Germany organization, a Microsoft 365 GCC High organization, or a Microsoft 365 DoD organization, you will have to edit the script to successfully run it. Specifically, you have to edit the line `Connect-IPPSSession` and use the *ConnectionUri* and *AzureADAuthorizationEndpointUri* parameters (and the appropriate values for your organization type) to connect to Security & Compliance PowerShell. For more information, see the examples in [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
-
 - The script automatically disconnects from Security & Compliance PowerShell and SharePoint Online Management Shell.
-
 - The script includes minimal error handling. Its primary purpose is to quickly and easily place the mailbox and OneDrive for Business site of each user on hold.
-
 - The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
 ## Step 1: Install the SharePoint Online Management Shell
@@ -82,15 +73,10 @@ After you run this command, open the text file and remove the header that contai
 When you run the script in this step, it will prompt you for the following information. Be sure to have this information ready before you run the script.
 
 - **Your user credentials:** The script will use your credentials to connect to Security & Compliance PowerShell. It will also use these credentials to access SharePoint Online to get the OneDrive for Business URLs for the list of users.
-
 - **Name of your SharePoint domain:** The script prompts you to enter this name so it can connect to the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>. It also uses the domain name for the OneDrive URLs in your organization. For example, if the URL for your admin center is `https://contoso-admin.sharepoint.com` and the URL for OneDrive is `https://contoso-my.sharepoint.com`, then you would enter `contoso` when the script prompts you for your domain name.
-
 - **Name of the case:** The name of an existing case. The script will create a new hold that is associated with this case.
-
 - **Name of the hold:** The name of the hold the script will create and associate with the specified case.
-
 - **Search query for a query-based hold:** You can create a query-based hold so that only the content that meets the specified search criteria is placed on hold. To place all content on hold, just press **Enter** when you're prompted for a search query.
-
 - **Turning on the hold or not:** You can have the script turn on the hold after it's created or you can have the script create the hold without enabling it. If you don't have the script turn on the hold, you can turn it on later in the compliance portal or by running the following PowerShell commands:
 
   ```powershell
@@ -286,9 +272,6 @@ After you've collected the information that the script will prompt you for, the 
 After the script is finished running, it creates the following log files, and saves them to the folder where the script is located.
 
 - **LocationsOnHold.txt:** Contains a list of mailboxes and OneDrive for Business sites that the script successfully placed on hold.
-
 - **LocationsNotOnHold.txt:** Contains a list of mailboxes and OneDrive for Business sites that the script did not place on hold. If a user has a mailbox, but not a OneDrive for Business site, the user would be included in the list of OneDrive for Business sites that weren't placed on hold.
-
 - **GetCaseHoldPolicy.txt:** Contains the output of the **Get-CaseHoldPolicy** cmdlet for the new hold, which the script ran after creating the new hold. The information returned by this cmdlet includes a list of users whose mailboxes and OneDrive for Business sites were placed on hold and whether the hold is enabled or disabled.
-
 - **GetCaseHoldRule.txt:** Contains the output of the **Get-CaseHoldRule** cmdlet for the new hold, which the script ran after creating the new hold. The information returned by this cmdlet includes the search query if you used the script to create a query-based hold.

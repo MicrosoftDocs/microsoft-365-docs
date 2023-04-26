@@ -3,7 +3,7 @@ title: "Azure ExpressRoute for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -89,11 +89,11 @@ Implementing ExpressRoute requires the involvement of network and application ow
 
 <sup>1</sup> Important performance considerations. Decisions here can dramatically impact latency, which is a critical for applications such as Skype for Business.
 
-For additional references, use our [routing guide](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) in addition to the [ExpressRoute documentation](/azure/expressroute/expressroute-introduction).
+For additional references, see [What is Azure ExpressRoute?](/azure/expressroute/expressroute-introduction)
 
 To purchase ExpressRoute for Microsoft 365, you'll need to work with one or more [approved providers](/azure/expressroute/expressroute-locations) to provision the desired number and size circuits with an ExpressRoute Premium subscription. There are no additional licenses to purchase from Microsoft 365.
 
-Here's a short link you can use to come back: [https://aka.ms/expressrouteoffice365]()
+Here's a short link you can use to come back: [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
 
 Ready to sign up for [ExpressRoute for Microsoft 365](https://aka.ms/ert)?
 

@@ -3,8 +3,9 @@ title: "Multifactor authentication for Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 05/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business

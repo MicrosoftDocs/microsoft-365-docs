@@ -7,16 +7,17 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - m365-security
+  - tier1
 ms.custom:
 description: Admins can learn how to apply Standard and Strict policy settings across the protection features of Exchange Online Protection (EOP) and Microsoft Defender for Office 365
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 3/3/2023
 ---
 
 # Preset security policies in EOP and Microsoft Defender for Office 365
@@ -73,7 +74,10 @@ A profile determines the level of protection. The following profiles are availab
 
 - **Built-in protection** (Defender for Office 365 only): A profile that enables Safe Links and Safe Attachments protection only. This profile effectively provides default policies for Safe Links and Safe Attachments, which never had default policies.
 
-  For **Built-in protection**, the preset security policy is on by default for all Defender for Office 365 customers. Although we don't recommend it, you can also configure exceptions based on **Users**, **Groups**, and **Domains** so the protection isn't applied to specific users.
+  For **Built-in protection**, the preset security policy is on by default for all Defender for Office 365 customers. You can also configure exceptions based on **Users**, **Groups**, and **Domains** so the protection isn't applied to specific users.
+
+  > [!IMPORTANT]
+  > Unless you configure exceptions to **Built-in protection**, all recipients in the organization will receive Safe Links and Safe Attachments protection.
 
 Until you assign the policies to users, the **Standard** and **Strict** preset security policies are assigned to no one. In contrast, the **Built-in protection** preset security policy is assigned to all recipients by default, but you can configure exceptions.
 
@@ -84,7 +88,7 @@ Preset security policies use the corresponding policies from the various protect
 - **Exchange Online Protection (EOP) policies**: These policies are in all Microsoft 365 organizations with Exchange Online mailboxes and standalone EOP organizations without Exchange Online mailboxes:
 
   - [Anti-spam policies](anti-spam-policies-configure.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
-  - [Anti-malware policies](configure-anti-malware-policies.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
+  - [Anti-malware policies](anti-malware-policies-configure.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
   - [Anti-phishing policies (spoofing protection)](anti-phishing-policies-about.md#spoof-settings) named **Standard Preset Security Policy** and **Strict Preset Security Policy** (spoof settings).
 
   > [!NOTE]
@@ -96,13 +100,13 @@ Preset security policies use the corresponding policies from the various protect
     - [Impersonation settings](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Advanced phishing thresholds](anti-phishing-policies-about.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
   - [Safe Links policies](safe-links-policies-configure.md) named **Standard Preset Security Policy**, **Strict Preset Security Policy**, and **Built-in Protection Policy**.
-  - [Safe Attachments policies](set-up-safe-attachments-policies.md) named **Standard Preset Security Policy**, **Strict Preset Security Policy**, and **Built-in Protection Policy**.
+  - [Safe Attachments policies](safe-attachments-policies-configure.md) named **Standard Preset Security Policy**, **Strict Preset Security Policy**, and **Built-in Protection Policy**.
 
 You can apply EOP protections to different users than Defender for Office 365 protections, or you can apply EOP and Defender for Office 365 to the same recipients.
 
 ### Policy settings in preset security policies
 
-You can't modify the policy settings in the protection profiles. The **Standard**, **Strict**, and **Built-in protection** policy setting values are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+You can't modify the policy settings in the protection profiles. The **Standard**, **Strict**, and **Built-in protection** policy setting values, including the [quarantine policies](quarantine-policies.md#anatomy-of-a-quarantine-policy), are listed in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
 > [!NOTE]
 > In Defender for Office 365 protections, you need to identify the senders for [user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) and the internal or external domains for [domain impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
@@ -139,13 +143,12 @@ You might want to apply the **Standard** or **Strict** preset security policies 
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To configure preset security policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - For read-only access to preset security policies, you need to be a member of the **Global Reader** role group.
-
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Configure preset security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
+    - _Read-only access to preset security policies_: Membership in the **Global Reader** role group.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ### Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users
 
@@ -191,10 +194,12 @@ You might want to apply the **Standard** or **Strict** preset security policies 
 
    > [!NOTE]
    > All recipients automatically receive impersonation protection from [mailbox intelligence](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in preset security policies.
+   >
+   > You can specify a maximum of 350 users for user impersonation protection in the Standard or Strict preset security policy.
+   >
+   > User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message can be identified as an impersonation attempt.
 
    Each entry consists of a display name and an email address. Enter each value in the boxes and then click **Add**. Repeat this step as many times as necessary.
-
-   You can specify a maximum of 350 users, and you can't specify the same user in the user impersonation protection settings in multiple policies.
 
    To remove an existing entry from the list, click ![Remove user from impersonation protection icon.](../../media/m365-cc-sc-remove.png).
 
@@ -204,6 +209,8 @@ You might want to apply the **Standard** or **Strict** preset security policies 
 
    > [!NOTE]
    > All domains that you own ([accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) automatically receive domain impersonation protection in preset security policies.
+   >
+   > You can specify a maximum of 50 custom domains for domain impersonation protection in the Standard or Strict preset security policy.
 
    All senders in the specified domains are protected by domain impersonation protection.
 
@@ -211,11 +218,12 @@ You might want to apply the **Standard** or **Strict** preset security policies 
 
    To remove an existing entry from the list, select the entry, and then click ![Remove domain from impersonation protection icon.](../../media/m365-cc-sc-remove.png).
 
-   The maximum number of domains that you can specify for domain impersonation protection in all anti-phishing policies is 50.
-
    When you're finished, click **Next**.
 
 8. On the **Add trusted email addresses and domains to not flag as impersonation** page, enter the sender email addresses and domains that you want excluded from impersonation protection. Messages from these senders will never be flagged as an impersonation attack, but the senders are still subject to scanning by other filters in EOP and Defender for Office 365.
+
+   > [!NOTE]
+   > Trusted domain entries don't include subdomains of the specified domain. You need to add an entry for each subdomain.
 
    Enter the email address or domain in the box, and then click **Add**. Repeat this step as many times as necessary.
 

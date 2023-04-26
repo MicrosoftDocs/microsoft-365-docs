@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Cloud Apps in Microsoft 365 Defender (Preview)
+title: Microsoft Defender for Cloud Apps in Microsoft 365 Defender
 description: Learn about changes from the Microsoft Defender for Cloud Apps to Microsoft 365 Defender
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Cloud Apps
 ms.service: microsoft-365-security
@@ -23,7 +23,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ---
 
-# Microsoft Defender for Cloud Apps in Microsoft 365 Defender (Preview)
+# Microsoft Defender for Cloud Apps in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,7 +35,8 @@ ms.custom: admindeeplinkDEFENDER
 Microsoft Defender for Cloud Apps is now part of Microsoft 365 Defender. The Microsoft 365 Defender portal allows security admins to perform their security tasks in one location. This simplifies workflows, and adds the functionality of the other Microsoft 365 Defender services. Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
 
 SOC analysts will be able to triage, investigate and hunt across all Microsoft 365 Defender workloads, including cloud apps.
-Defender for Cloud Apps alerts will continue to appear in Microsoft 365 Defender's incidents queue and alerts queue, but now with relevant content inside the alert pages available in the Microsoft 365 Defender portal, in a unified format with the proper adaptations to each alerts type.
+
+Defender for Cloud Apps **alerts** will continue to appear in Microsoft 365 Defender's incidents queue and alerts queue, but now with relevant content inside the alert pages available in the Microsoft 365 Defender portal, in a unified format with the proper adaptations to each alerts type. For more information, see [Investigate incidents in Microsoft 365 Defender](/microsoft-365/security/defender/investigate-incidents).
 
 Take a look in Microsoft 365 Defender at <https://security.microsoft.com>.
 
@@ -83,7 +84,7 @@ The images and the tables below list the changes in navigation between Microsoft
 
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
-| Policies | Cloud apps -> Policy management. Note: Azure AD identity protection policies will be removed gradually from the Cloud apps policies list. To configure alerts from these policies, see [Configure AAD IP alert service](investigate-alerts.md#configure-aad-ip-alert-service) | 
+| Policies | Cloud apps -> Policy management. Note: Azure AD identity protection policies will be removed gradually from the Cloud apps policies list. To configure alerts from these policies, see [Configure AAD IP alert service](investigate-alerts.md#configure-aad-ip-alert-service) |
 | Templates | Cloud apps -> Policy templates |
 
 ### Settings
@@ -131,6 +132,28 @@ Global search in Microsoft 365 Defender (using the search bar at the top of the 
 ### Assets and identities
 
 As part of the creation of a dedicated **Assets** section that spans the entire Microsoft 365 Defender experience, the **Users and Accounts** section of Defender for Cloud Apps is rebranded as the **Identities** section. No changes to functionality are expected.
+
+### Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender
+
+You can route accounts to Microsoft 365 Defender by enabling automatic redirection from the former Microsoft Defender for Cloud Apps portal. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](microsoft-365-security-mda-redirection.md).
+
+### Preview features in Defender for Cloud Apps
+
+Turn on the preview experience setting to be among the first to try upcoming features.
+
+> [!NOTE]
+> This feature is now available in public preview.
+
+1. In the navigation pane, select **Settings**.
+1. Select **Cloud apps**.
+1. Select **Preview features** > **Enable preview features**.
+1. Select **Save**.
+
+You'll know you have preview features turned on when you see that the **Enable preview features** check box is selected.
+
+:::image type="content" source="../../media/preview-features.png" alt-text="Screenshot that shows how to enable preview features.":::
+
+For more information, see [Microsoft Defender for Cloud Apps preview features](/defender-cloud-apps/preview-features).
 
 ## Related videos
 

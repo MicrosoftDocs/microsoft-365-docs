@@ -12,11 +12,12 @@ ms.localizationpriority: medium
 search.appverid: 
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
   - MET150
 description: Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 11/30/2022
 ---
 
 # Tune anti-phishing protection
@@ -36,7 +37,7 @@ If your subscription includes Microsoft Defender for Office 365, you can use [Of
 
 - [Safe Links in Microsoft Defender for Office 365](safe-links-policies-configure.md)
 
-- [Safe Attachments in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
+- [Safe Attachments in Microsoft Defender for Office 365](safe-attachments-policies-configure.md)
 
 - [Anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
 

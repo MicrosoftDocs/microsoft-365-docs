@@ -1,11 +1,12 @@
 ---
-title: "Create and run a Content search in the Microsoft Purview compliance portal"
+title: "Get started with Content search"
 description: "Use the Content search eDiscovery tool in the compliance center to search for content in different Microsoft 365 services."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 04/11/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -23,7 +24,7 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 ---
 
-# Create a content search
+# Get started with Content search
 
 You can use the Content search eDiscovery tool in the Microsoft Purview compliance portal to search for in-place content such as email, documents, and instant messaging conversations in your organization. Use this tool to search for content in these cloud-based Microsoft 365 data sources:
   
@@ -59,7 +60,7 @@ After you run a search, the number of content locations and an estimated number 
   
    1. **Exchange mailboxes**: Set the toggle to **On** and then select **Choose users, groups, or teams** to specify the mailboxes to search. Use the search box to find user mailboxes and distribution groups. You can also search the mailbox associated with a Microsoft Team (for channel messages), Microsoft 365 Group, and Yammer Group. For more information about the application data stored in mailboxes, see [Content stored in mailboxes for eDiscovery](ediscovery-what-is-stored-in-a-mailbox.md).
 
-   2. **SharePoint sites**: Set the toggle to **On** and then select **Choose sites** to specify SharePoint sites and OneDrive accounts to search. Enter the URL for each site that you want to search. You can also add the URL for the SharePoint site for a Microsoft Team, Microsoft 365 Group, or Yammer Group.
+   2. **SharePoint sites**: Set the toggle to **On** and then select **Choose sites** to specify SharePoint sites and OneDrive sites to search. Enter the URL for each site that you want to search. You can also add the URL for the SharePoint site for a Microsoft Team, Microsoft 365 Group, or Yammer Group.
   
    3. **Exchange public folders**: Set the toggle to **On** to search all public folders in your Exchange Online organization. You can't choose specific public folders to search. Leave the toggle switch off if you don't want search all public folders.
   

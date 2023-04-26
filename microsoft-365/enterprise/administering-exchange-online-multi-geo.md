@@ -1,6 +1,7 @@
 ---
 title: "Administering Exchange Online mailboxes in a multi-geo environment"
 ms.reviewer: adwood
+ms.date: 08/10/2020
 ms.author: chrisda
 author: chrisda
 manager: serdars

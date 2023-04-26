@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -31,18 +31,17 @@ This article explains how to create organization-wide communications templates a
 ## Before you create templates in the Communications library
 
 - You must be an eDiscovery Administrator in your organization to add or remove templates in the Communications library in eDiscovery (Premium). For more information, see [Assign eDiscovery permissions in the Microsoft Purview compliance portal](ediscovery-assign-permissions.md)  
-
 - Your organization can have a maximum of 50 templates in the Communications library.
 
 ## Create a communications template
 
-1. In the compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **eDiscovery (Premium) settings**.
+1. In the compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then select **eDiscovery (Premium) settings**.
 
    ![Select eDiscovery (Premium) settings](..\media\HistoricalVersions1.png)
 
 2. On the **Settings** page, select the **Communications library** tab.
 
-3. On the **Communications library** page, click **Create**.
+3. On the **Communications library** page, select **Create**.
 
 4. Follow the procedure to create a custodian communication. For step-by-step instructions, see [Create a legal hold notification](ediscovery-create-hold-notification.md).
 
@@ -61,9 +60,9 @@ After one or more communications templates are created in the Communications lib
 
 To select a template:
 
-1. In the compliance portal, go to **eDiscovery > Advanced** to display the list of cases in your organization.
+1. In the compliance portal, go to **eDiscovery > Premium** to display the list of cases in your organization.
 
-2. Select a case, click the **Communications** tab, and then click **New communication**.
+2. Select a case, select the **Communications** tab, and then select **New communication**.
 
 3. On the **Name communication** page, use the **Select communication template** drop-down list to select a communications template to use to create the custodian notification.
 

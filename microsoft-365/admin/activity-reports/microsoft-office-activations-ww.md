@@ -1,8 +1,9 @@
 ---
 title: "Microsoft 365 admin center Office activations reports"
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 12/07/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
