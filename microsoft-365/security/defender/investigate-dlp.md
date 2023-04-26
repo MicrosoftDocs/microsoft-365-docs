@@ -6,8 +6,8 @@ f1.keywords:
   - NOCSH
 ms.service: microsoft-365-security
 ms.subservice: m365d
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro

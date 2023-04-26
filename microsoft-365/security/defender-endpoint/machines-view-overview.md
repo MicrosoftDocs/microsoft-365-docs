@@ -41,6 +41,9 @@ At a glance you'll see information such as domain, risk level, OS platform, and 
 > [!NOTE]
 > The device inventory is available in different Microsoft 365 Defender services. The information available to you will differ depending on your license. You'll get the most complete set of capabilities when using [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
 
+> [!NOTE]
+> Risk Level which can influence enforcement of conditional access and other security policies on Microsoft Intune, is available in Windows today.  
+
 There are several options you can choose from to customize the devices list view. On the top navigation you can:
 
 - Add or remove columns
