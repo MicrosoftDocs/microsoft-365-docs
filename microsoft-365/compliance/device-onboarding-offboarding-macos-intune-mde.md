@@ -110,7 +110,7 @@ Here's an [example mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/m
 
 Microsoft Purview DLP checks for sensitive data through all stages of its travels. So, if sensitive data is getting posted or sent to an allowed domain, but travels through a forbidden domain, it will be blocked. Let's take a closer look.
 
-Say that sending sensitive data via Outlook Live (*outlook.live.com*)is permissible, but that sensitive data must not be exposed to *microsoft.com*. However, when a user accesses Outlook Live, the data passes through *microsoft.com* in the background, as shown:
+Say that sending sensitive data via Outlook Live (*outlook.live.com*) is permissible, but that sensitive data must not be exposed to *microsoft.com*. However, when a user accesses Outlook Live, the data passes through *microsoft.com* in the background, as shown:
 
 :::image type="content" source="../media/devices-macos-cloud-dataflow.png" alt-text="Screenshot showing the flow of data from source to destination URL.":::
 
