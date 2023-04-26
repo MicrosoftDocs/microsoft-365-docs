@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
-ms.date: 1/31/2023
+ms.date: 4/26/2023
 search.appverid:
 - MET150
 ms.collection:
@@ -34,7 +34,9 @@ ms.service: microsoft-365-security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP or Microsoft Defender for Office 365 filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
-The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way to manually override the Defender for Office 365 or EOP filtering verdicts. The Tenant Allow/Block List is used during mail flow for incoming messages from external senders. The Tenant Allow/Block List doesn't apply to internal messages within the organization. However, If we Block external email addresses or domains to prevent communication with users in your organization using **Domains and email addresses** in the Tenant Allow/Block List, Users in the organization can't send email to these blocked domains and addresses. Similary ,Email messages from these senders are marked as high confidence spam (SCL = 9)
+The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way to manually override the Defender for Office 365 or EOP filtering verdicts. The list is used during mail flow for incoming messages from external senders.
+
+The Tenant Allow/Block List doesn't apply to internal messages within the organization. However, block entries for **Domains and email addresses** prevent users in the organization from sending email to those blocked domains and addresses.
 
 The Tenant Allow/Block list is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> \> **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
