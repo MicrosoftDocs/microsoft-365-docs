@@ -22,7 +22,7 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Learn how to download the software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
-ms.date: 04/24/2023
+ms.date: 04/26/2023
 ---
 
 # Download perpetual software and product license keys in Microsoft 365
