@@ -107,6 +107,12 @@ Download the following files:
 
 1. In the **Configuration profiles** page, choose the profile that you just created. Next, choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
+> [!NOTE] 
+> For the *upload to cloud service* activity, if you only want to monitor the browser and the URL in the browser address bar, you can enable *DLP_browser_only_cloud_egress* and *DLP_ax_only_cloud_egress*. 
+>
+> Here is an example [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/cloud_egress/com.microsoft.wdav.mobileconfig).
+
+
 ### Publish the application
 
 Microsoft Endpoint data lost protection is installed as a component of Microsoft Defender for Endpoint on macOS. This procedure applies to onboarding devices into Microsoft Purview solutions
