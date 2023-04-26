@@ -29,7 +29,7 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 ## May 2023
 
-Compliance Manager now supports both Microsoft and non-Microsoft services to provide multicloud support. This means that you can now use Compliance Manager to build assessments to track and manage your organization’s compliance in the context of both Microsoft services and those of other cloud service providers. Compliance Manager can detect signals from Azure, Google Cloud Services, and Azure Web Services to assess configurations and automatically monitor control status. Learn more about [multiservice support in Compliance Manager](compliance-manager-multiservice.md).
+Compliance Manager now supports both Microsoft and non-Microsoft services to provide multicloud support. This means that you can now use Compliance Manager to build assessments to track and manage your organization’s compliance in the context of both Microsoft services and those of other cloud service providers. Compliance Manager can detect signals from Azure, Google Cloud Services, and Azure Web Services to assess configurations and automatically monitor control status. Learn more about [multicloud support in Compliance Manager](compliance-manager-multicloud.md).
 
 ## January 2023
 
