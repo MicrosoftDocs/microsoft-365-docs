@@ -92,7 +92,7 @@ To change the settings to allow sensitive data to pass through forbidden domains
 
 2. Under the `dlp` key, Set `DLP_browser_only_cloud_egress` to *enabled* and set ` DLP_ax_only_cloud_egress` to *enabled* as shown in the following example.
 
-<pre><code class="XML">
+<code class="XML">
 ...
 <key>dlp</key>
      <dict>
@@ -111,7 +111,7 @@ To change the settings to allow sensitive data to pass through forbidden domains
                 <string>enabled</string>
     </dict>
 ...
-</code></pre>
+</code>
 
 ### Deploy the mobileconfig and onboarding packages
 
