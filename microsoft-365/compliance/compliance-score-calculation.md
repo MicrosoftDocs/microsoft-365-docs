@@ -33,11 +33,11 @@ The Compliance Manager dashboard displays your overall compliance score. This sc
 
 A score value is assigned at these levels:
 
-1. **Improvement action**: Each action has a different impact on your score depending on the potential risk involved. See [Action types and points](#action-types-and-points) below for details.
+1. **Improvement action**: Each action has a different impact on your score depending on the potential risk involved. See [Action types and points](#action-types-and-scoring) below for details.
 
 2. **Assessment**: This score is calculated using improvement action scores. Each Microsoft action and each improvement action managed by your organization is counted once, regardless of how often it's referenced in a control.
 
-The overall compliance score is calculated using action scores, where each Microsoft action is counted once, each technical action you manage is counted once, and each non-technical action you manage is counted once per group. This logic is designed to provide the most accurate accounting of how actions are implemented and tested in your organization. You may notice that this can cause your overall compliance score to differ from the average of your assessment scores. Read more below about [how actions are scored](#action-types-and-points).
+The overall compliance score is calculated using action scores, where each Microsoft action is counted once, each technical action you manage is counted once, and each non-technical action you manage is counted once per group. This logic is designed to provide the most accurate accounting of how actions are implemented and tested in your organization. You may notice that this can cause your overall compliance score to differ from the average of your assessment scores. Read more below about [how actions are scored](#action-types-and-scoring).
 
 #### Initial score based on Microsoft 365 data protection baseline
   
