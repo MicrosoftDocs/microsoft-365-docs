@@ -46,16 +46,25 @@ Before you get started, you should set up your DLP settings.
 
 |Setting |Windows 10, 1809 and later, Windows 11  |macOS (three latest released versions) |Notes  |
 |---------|---------|---------|---------|
+|Advanced classification | Supported | Supported (preview)|Advanced classification enables these features for macOS (preview): - [Document Fingerprinting](document-fingerprinting.md) </br>- [Exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) </br>- [Trainable classifiers](classifier-learn-about.md) </br>- [Learn about named entities](named-entities-learn.md) |
 |File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
+|Network share coverage and exclusions | Supported |Not Supported|
 |Restricted apps     |Supported         |Supported         |         |
-|Restricted app groups |Supported |Not supported
-|Unallowed Bluetooth apps    |Supported         |Not supported         |         |
+|Restricted app groups |Supported |Supported (preview)|
+|Unallowed Bluetooth apps    |Supported         |Supported         |         |
 |Browser and domain restrictions to sensitive items      |Supported         |Supported         |         |
 |Additional settings for Endpoint DLP     |Supported         |Supported         |Only the default business justifications are supported for macOS devices         |
 |Always audit file activity for devices     |Supported         |Supported         |         |
-|Auto-quarantine file from unallowed apps | Supported | Not supported| |
-|Advanced classification | Supported | Not supported| |
-|Business justification in policy tips | Supported | Supported| |
+|Printer groups| Supported |Not Supported| |
+|Removabled USB device groups| Supported | Not Supported | |
+|Auto-quarantine file from unallowed apps | Supported | Supported (preview)| |
+|Network share groups | Supported | Not Supported | |
+|VPN settings | Supported | Not Supported | |
+|Business justification in policy tips | Supported | Supported (preview)| |
+|Notification customization|Supported | Supported (preview)|
+|Archive file| Supported | Not supported| |
+|File type and File extension |Supported | Not supported| |
+
 
 ### Advanced classification scanning and protection
 
@@ -168,7 +177,7 @@ When **Access by restricted apps** is selected in a policy and a user uses an ap
 > [!IMPORTANT]
 > The action (`audit`, `block with override`, or `block`) defined for apps that are on the restricted apps list only applies when a user attempts to ***access*** a protected item. 
 
-#### File activities for apps in restricted app groups
+#### File activities for apps in restricted app groups (preview)
 
 Restricted app groups are collections of apps that you create in DLP settings and then add to a rule in a policy. When you add a restricted app group to a policy, you can take the actions defined in this table.
 
@@ -419,7 +428,7 @@ You define a printer by these parameters:
 	- USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 - IP range
 - Print to file - Microsoft Print to PDF or Microsoft XPS Document Writer. If you only want to enforce Microsoft Print to PDF, you should use Friendly printer name with 'Microsoft Print to PDF'.
-- Universal print deployed on a printer - See, [Set up Universal Print](/universal-print/fundamentals/universal-print-getting-started.md) for more information on universal printers
+- Universal print deployed on a printer - See, [Set up Universal Print](/universal-print/fundamentals/universal-print-getting-started) for more information on universal printers
 - Corporate printer - is a print queue shared through on-premises Windows print server in your domain. Its path might look like  \\print-server\contoso.com\legal_printer_001
 - Print to local: Any printer connecting through Microsoft print port but not any of above type, for example print through remote desktop or redirect printer.
 
