@@ -44,16 +44,17 @@ To access this report, in the navigation pane, choose **Reports > Endpoints > Mo
 
 You can generate a PDF report of the summary, by selecting **Generate PDF report**. The generated report is a summary of the last 30 days.
 
-
-## Devices
-Devices must be onboarded to the service so that they can be protected. The devices card provides information on the number of devices that were onboarded in the last month as well as devices not yet onboarded. It also shows a graph which reflects the trend of devices being onboarded. In general, an upward trend is a good indication that devices are being onboarded to the service and are receiving protection.
-
 ## Secure score
 Microsoft Secure Score is a measurement of an organization's security posture. A higher number indicates more recommended actions taken and a better posture and overall ability to predict, prevent, and respond to threats. The secure score card shows how the overall cybersecurity strength of an organization has improved in the past month and how it compares to other companies with similar number of managed devices.
 
+## Devices onboarded
+Devices must be onboarded to the service so that they can be protected. The devices card provides information on the number of devices that were onboarded in the last month as well as devices not yet onboarded. It also shows a graph which reflects the trend of devices being onboarded. In general, an upward trend is a good indication that devices are being onboarded to the service and are receiving protection.
 
-## Posture initiatives 
+## Protection against threats
 This card shows how resilient your organization is to specific attacks. A higher number indicates better defense in place against phishing and ransomware. Recommendations are provided so you can take action to increase the score and improve your defenses against these types of attacks. You'll also be able to see how the protection increased in the last month and how many malicious URLs were clicked and malware was blocked.<-- YAEL: PLEASE VERIFY THIS. IN THE SLIDES YOU SHOW, THERE ARE "ACTIONS CAN BE TAKEN" ETC... BUT IN THE STAGING, THERE IS NONE.
+
+## Web content monitoring and filtering 
+Shows the number of malicious URLs that were blocked in the last month. You'll also be able to see the categories of URLs that were blocked and the number of clicks for each category. 
 
 ## Incidents
 Track how many incidents and alerts were resolved in the past month using the incidents card. The card also shows all active incidents and alerts. You'll also be able to see a list of the top 10 severe incidents, their status, number of alerts, and the impacted devices and users. 
