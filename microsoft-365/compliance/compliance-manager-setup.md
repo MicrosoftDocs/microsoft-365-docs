@@ -142,7 +142,7 @@ Compliance Manager settings can only be accessed by users who hold a global admi
 
 ## Testing source for automated testing
 
-Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from Microsoft Priva (this capability is in preview; [learn more](/privacy/priva/priva-overview#how-priva-works-with-microsoft-purview-risk-and-compliance-solutions)). Compliance Manager also detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Using these signals, Compliance Manager can automatically test certain improvement actions in order to provide you with continuous control assessment. When an improvement action is successfully tested and implemented, you receive the maximum possible points for that action, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
+Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from Microsoft Priva (this capability is in preview; [learn more](/privacy/priva/priva-overview#how-priva-works-with-microsoft-purview-risk-and-compliance-solutions)). Compliance Manager also detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Using these signals, Compliance Manager can automatically test certain improvement actions in order to provide you with continuous control assessment. When an improvement action is successfully tested and implemented, you receive the maximum possible points for that action, which gets credited to your overall compliance score.
 
 #### Initial settings
 
@@ -154,7 +154,7 @@ While automated testing helps maximize efficiency in your compliance activities,
 
 #### How to tell which actions are tested automatically
 
-On your **Improvement actions** page, find the **Testing source** column. If the value is listed as **Automatic**, then the action is automatically tested by Compliance Manager. If the value is **Manual**, then the action is tested by your organization. If the value is **Parent**, then the action inherits the testing status of another action to which it's linked. Get details about [improvement action testing source](compliance-manager-improvement-actions.md#update-testing-source).
+On your **Improvement actions** page, find the **Testing source** column. If the value is listed as **Automatic**, then the action is automatically tested by Compliance Manager. If the value is **Manual**, then the action is tested by your organization. If the value is **Parent**, then the action inherits the testing status of another action to which it's linked. Get details about [improvement action testing source](compliance-manager-improvement-actions.md#testing-source).
 
 Note that improvement actions in templates that aren't scoped to Microsoft 365, such as templates for Microsoft Azure or Microsoft Dynamics, aren't currently eligible for automatic testing.
 
