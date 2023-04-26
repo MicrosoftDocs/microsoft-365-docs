@@ -1784,7 +1784,7 @@
         - name: Multicloud support in Compliance Manager
           items:
             - name: Learn about multicloud support
-              href: compliance-manager-multiservice.md
+              href: compliance-manager-multicloud.md
             - name: Configure cloud settings
               href: compliance-manager-cloud-settings.md  
         - name: Create assessments

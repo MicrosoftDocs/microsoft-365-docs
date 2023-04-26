@@ -35,12 +35,11 @@ Compliance Manager now supports both Microsoft and non-Microsoft services to pro
 
 In preview: Compliance Manager has new improvement actions that correspond to actions taken in Microsoft Priva to bolster your organization's compliance with data privacy regulations. Learn more about [Priva](/privacy/priva/priva-overview) and get details about [automatic testing and monitoring of improvement actions](compliance-manager-setup.md#testing-source-for-automated-testing) in Compliance Manager.
 
-
 ## December 2022
 
 Assessment templates that belong to the same regulation family now count as one template. This change means that when you purchase a premium template license for a regulation, the license will apply for all levels and versions of that regulation. Review the [list of templates](compliance-manager-templates-list.md) and a summary of [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
 
-Also new in December: Improvement actions now provide greater visibility into related controls and assessments so you can better understand the impact of completing an action. Each improvement action details page has a new [**Related controls** tab](compliance-manager-improvement-actions.md#related-controls) that lists all the controls associated to the action, with a link to each control's description. In the **Summary** section, the number underneath **Assessments** is now linked. When you select the number, you'll see a flyout pane listing all the assessments related to that action.
+Also new in December: Improvement actions now provide greater visibility into related controls and assessments so you can better understand the impact of completing an action. Each improvement action details page has a new [**Related controls** tab](compliance-manager-improvement-actions.md#improvement-actions-details-page) that lists all the controls associated to the action, with a link to each control's description. In the **Summary** section, the number underneath **Assessments** is now linked. When you select the number, you'll see a flyout pane listing all the assessments related to that action.
 
 ## November 2022
 
