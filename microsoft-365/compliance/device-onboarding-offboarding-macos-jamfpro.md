@@ -120,8 +120,8 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
     - Features
         - Use System Extensions: `enabled` - required for network extensions on Catalina
         - Use Data Loss Prevention: `enabled`
-        - Use DLP_browser_only_cloud_egress: `enabled`if you want to only monitor browser
-        - Use DLP_ax_only_cloud_egress: `enabled`if you want to only monitor URL on the browser address bar
+        - Use DLP_browser_only_cloud_egress: `enabled` if you want to monitor the browser.
+        - Use DLP_ax_only_cloud_egress: `enabled` if you want to monitor only the URL in the browser address bar.
     - Antivirus engine > Passive mode: `true|false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
 
 1. Choose the **Scope** tab.
