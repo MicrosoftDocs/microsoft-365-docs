@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/20/2023
+ms.date: 04/26/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -44,6 +44,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md) when you use auto-apply retention label policies.
+- **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Yammer.
 
 ### Data loss prevention
 
@@ -94,9 +95,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **General availability (GA)**: [Learn about the Microsoft Purview Firefox extension](dlp-firefox-extension-learn.md) and [Get started with the Microsoft Purview Firefox extension](dlp-firefox-extension-get-started.md)
 - **In preview**:
-    - [Endpoint DLP Aggregated most restrictive actions applied to endpoints](dlp-policy-reference.md#for-endpoints-preview)
+    - [Endpoint DLP Aggregated most restrictive actions applied to endpoints](dlp-policy-reference.md#for-endpoints)
     - [Just in time protection for endpoints and network shares](endpoint-dlp-learn-about.md#just-in-time-protection-preview)
-    - [Display of conditions matched when an item matches a policy](dlp-configure-view-alerts-policies.md#other-matched-conditions-preview)
+    - [Display of conditions matched when an item matches a policy](dlp-configure-view-alerts-policies.md#other-matched-conditions)
     - [Endpoint DLP policies can be applied to network shares](dlp-configure-endpoint-settings.md#network-share-coverage-and-exclusions-preview)
     - Support for [endpoint DLP policies in Azure virtual desktop, Citrix Virtual Apps and Desktops 7, Amazon virtual workspaces and Hyper-v environments](endpoint-dlp-getting-started.md#endpoint-dlp-support-for-virtualized-environments-preview)
     - [Show policy tips as an oversharing popup](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)
