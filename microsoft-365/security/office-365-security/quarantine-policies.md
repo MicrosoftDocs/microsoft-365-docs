@@ -503,7 +503,7 @@ Even if you don't customize quarantine notifications for different languages, se
 
   :::image type="content" source="../../media/quarantine-tags-esn-customization-logo.png" alt-text="A custom logo in a quarantine notification" lightbox="../../media/quarantine-tags-esn-customization-logo.png":::
 
- - **Send end-user spam notification every (days)**: Select the frequency for quarantine notifications. The default value is 3 days, but you can select 1 to 15 days.
+ - **Send end-user spam notification every (days)**: Select the frequency for quarantine notifications. You can select **Within 4 hours**, **Daily**, or **Weekly**.
 
 When you're finished in the **Quarantine notifications flyout**, select **Save**.
 
