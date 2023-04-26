@@ -201,7 +201,7 @@ remediate process 7960
 remediate list
 ```
 > [!IMPORTANT]
-> Remediating registry value for the HKCU key is not possible.
+> Remediating registry value for the `HKCU` key is not possible.
 
 
 ## `run`

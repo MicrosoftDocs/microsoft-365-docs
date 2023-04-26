@@ -238,9 +238,9 @@ There's a downloadable script for these instances that admins can run to forcibl
 > [!NOTE]
 > Only MDE admins can forcibly release devices from isolation.
 
-To forcibly release kdevice from isolation:
+To forcibly release device from isolation:
 
-1. On the device page, the MDE admin opens the Actions menu and selects **Download force release from isolation script**.
+1. On the device page, the MDE admin selects **Download force release from isolation script** from the action menu.
 1. On the right-hand side wizard, the admin selects **Download script**.
 1. The Action center shows the action as a new row with the auditing details.
 
