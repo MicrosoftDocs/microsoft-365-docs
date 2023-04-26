@@ -17,7 +17,7 @@ ms.custom:
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/12/2023
+ms.date: 4/26/2023
 ---
 
 # Quarantine policies
@@ -512,7 +512,7 @@ When you're finished in the **Quarantine notifications flyout**, select **Save**
 If you'd rather use PowerShell to configure global quarantine notification settings, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the following syntax:
 
 ```powershell
-Get-QuarantinePolicy -QuarantinePolicyType GlobalQuarantinePolicy | Set-QuarantinePolicy -MultiLanguageSetting ('Language1','Language2','Language3') -MultiLanguageCustomDisclaimer ('Language1 Disclaimer','Language2 Disclaimer','Language3 Disclaimer') -ESNCustomSubject ('Language1 Subject','Language2 Subject','Language3 Subject') -MultiLanguageSenderName ('Language1 Sender Display Name','Language2 Sender Display Name','Language3 Sender Display Name') [-EndUserSpamNotificationCustomFromAddress <InternalUserEmailAddress>] [-OrganizationBrandingEnabled <$true | $false>] [-EndUserSpamNotificationFrequencyInDays <1 to 30>]
+Get-QuarantinePolicy -QuarantinePolicyType GlobalQuarantinePolicy | Set-QuarantinePolicy -MultiLanguageSetting ('Language1','Language2','Language3') -MultiLanguageCustomDisclaimer ('Language1 Disclaimer','Language2 Disclaimer','Language3 Disclaimer') -ESNCustomSubject ('Language1 Subject','Language2 Subject','Language3 Subject') -MultiLanguageSenderName ('Language1 Sender Display Name','Language2 Sender Display Name','Language3 Sender Display Name') [-EndUserSpamNotificationCustomFromAddress <InternalUserEmailAddress>] [-OrganizationBrandingEnabled <$true | $false>] [-EndUserSpamNotificationFrequency <04:00:00 | 1.00:00:00 | 7.00:00:00>]
 ```
 
 **Notes**:
