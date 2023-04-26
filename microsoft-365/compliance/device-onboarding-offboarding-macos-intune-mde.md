@@ -92,7 +92,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
     1. Update the existing Full Disk Access configuration profile with the fulldisk.mobileconfig file. 
 
 
-1. Find the existing MDE Preferences configuration profile. See, [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences#intune-full-profile)
+2. Find the existing MDE Preferences configuration profile. See, [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences#intune-full-profile)
     1. Add a new key to the profile using these values:
 
 ```xml
@@ -106,6 +106,11 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 ``` 
 
 Here's an [example mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)
+
+> [!NOTE] 
+> For the *upload to cloud service* activity, if you only want to monitor the browser and the URL in the browser address bar, you can enable *DLP_browser_only_cloud_egress* and *DLP_ax_only_cloud_egress*. 
+>
+> Here is an example [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/cloud_egress/com.microsoft.wdav.mobileconfig).
  
 ## Offboard macOS devices using Intune
 
