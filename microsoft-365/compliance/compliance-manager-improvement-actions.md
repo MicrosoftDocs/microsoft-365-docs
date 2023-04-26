@@ -55,7 +55,7 @@ All of the improvement actions managed by your organization are listed on the **
 
 Select an improvement action from the list to view its details page. You can also select an assessment, then go to the **Your improvement actions** tab and select an action from the list. Each improvement action’s details page contains the sections below:
 
-- **Overview**: Contains a **Summary** of basic information such as the implementation and test status, points achieved, and associated assessments; and a **Testing source** section for viewing and changing [how the action is tested](#update-testing-source).
+- **Overview**: Contains a **Summary** of basic information such as the implementation and test status, points achieved, and associated assessments; and a **Testing source** section for viewing and changing [how the action is tested](#testing-source).
 
 - **Implementation** tab: Contains implementation status, date, notes, detailed instructions, and for [technical actions](compliance-score-calculation.md#technical-and-non-technical-actions), a **Launch now** link taking you to the appropriate solution or service for implementation.
 
@@ -122,18 +122,22 @@ Common actions synchronize across groups. When two different assessments in the 
 
 From the **Testing** tab, you can view the testing status of your improvement action, the testing date, and any notes. A user with editing permissions can select  **Edit testing details** to edit content on the **Testing** tab.
 
+#### Defender for Cloud actions
+
+For actions monitored by Defender for Cloud, the **Testing** tab dislpays a list of each subscription and its testing details. Select a subscription to view its testing details flyout pane, where you can view and edit test status, test date, and notes.
+
 #### Testing status fields
 
-**Test status** You can edit test status when an improvement action's implementation status is "implemented" or "alternative implementation. Below are the test status for manually tested actions:
+You can edit test status when an improvement action's implementation status is "implemented" or "alternative implementation. Below are the test status for manually tested actions:
 
   - **None**: no work has started on the action
   - **Not assessed**: action hasn't been tested
   - **Passed**: implementation has been verified by an assessor
-  - **Failed low risk**: testing failed, low risk
-  - **Failed medium risk**: testing failed, medium risk
-  - **Failed high risk**: testing failed, high risk
+  - **Failed low risk**
+  - **Failed medium risk**
+  - **Failed high risk**
   - **Out of scope**: the action is out of scope for the assessment and doesn’t contribute to your score
-  - **In progress**: testing in progress
+  - **In progress**
 
 Automatically tested actions may also show one of the following states in the **Test status** column on the **Improvement actions** page:
    - **To be detected**: awaiting signals that indicate test status
@@ -143,14 +147,8 @@ Automatically tested actions may also show one of the following states in the **
 > [!NOTE]
 > The test status and testing notes for automatically tested improvement actions can't be edited manually. Compliance Manager updates these fields for you.
 
-**Test date**: Toggle through the calendar pop-up to select the testing date.
-
-**Testing notes** and **Additional notes**: Enter notes for your own internal reference in these free text fields.
-
-**Testing history**: The testing history provides a downloaded report of all test status changes for the improvement action.
-
 #### Exporting testing history
-You can export a report that will show you a history of all changes in test status for an improvement action. These reports are especially helpful for monitoring progress on [actions that are automatically tested](#automatic-testing-source), since such actions are regularly or frequently updated based on your tenant's data.
+You can export a report that will show you a history of all changes in test status for an improvement action. These reports are especially helpful for monitoring progress on [actions that are automatically tested](#testing-source), since such actions are regularly or frequently updated based on your tenant's data.
 
 On an improvement action's details page, select the **Testing** tab. Under **Testing history**, select the **Export testing history** button. The report will download as an Excel file.
 
@@ -187,10 +185,6 @@ To set up a parent testing source, follow the steps below:
 - On the **Assign parent improvement action** flyout pane, find the improvement action you want to assign as the parent from the list, or enter the action's name in the search bar near the top. When you identify your intended action, select the checkbox that appears to the left of the action name when you hover over it, then select **Save**.
 
 You'll come back to your action's details page. Under **Testing Source** on the **Overview** section, the new action you designated as the parent is listed under **Parent action**.
-
-## Related controls
-
-The **Related controls** tab displays the controls associated with the improvement action. The table on this page lists each associated control, the control ID, and the regulation related to the control. To view a description of the control, select the control's name and a flyout pane appears with the description.
 
 ## Storing evidence
 

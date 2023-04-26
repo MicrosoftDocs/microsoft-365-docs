@@ -27,7 +27,7 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## How to read your compliance score
+## Understanding your compliance score
 
 The Compliance Manager dashboard displays your overall compliance score. This score measures your progress in completing recommended improvement actions within controls. Your score can help you understand your current compliance posture. It can also help you prioritize actions based on their potential to reduce risk.
 
@@ -39,7 +39,7 @@ A score value is assigned at these levels:
 
 The overall compliance score is calculated using action scores, where each Microsoft action is counted once, each technical action you manage is counted once, and each non-technical action you manage is counted once per group. This logic is designed to provide the most accurate accounting of how actions are implemented and tested in your organization. You may notice that this can cause your overall compliance score to differ from the average of your assessment scores. Read more below about [how actions are scored](#action-types-and-points).
 
-## Initial score based on Microsoft 365 data protection baseline
+#### Initial score based on Microsoft 365 data protection baseline
   
 Compliance Manager gives you an initial score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
@@ -47,24 +47,20 @@ Your initial score is calculated according to the default Data Protection Baseli
 
 Because every organization has specific needs, Compliance Manager relies on you to set up and manage assessments to help minimize and mitigate risk as comprehensively as possible.
 
-## How Compliance Manager continuously assesses controls
-
-Compliance Manager automatically identifies settings in your Microsoft 365 environment that help determine when certain configurations meet improvement action implementation requirements. Compliance Manager detects signals from other compliance solutions you may have deployed, including data lifecycle management, information protection, communication compliance, and insider risk management, and also leverages Microsoft Secure Score monitoring of complementary improvement actions.
-
-Your action status is updated on your dashboard within 24 hours of a change being made. Once you follow a recommendation to implement a control, you’ll typically see the control status updated the next day.
-
-For example, if you turn on multi-factor authentication (MFA) in the Azure AD portal, Compliance Manager detects the setting and reflects it in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Manager flags that as a recommended action for you to take.
-
-Learn more about [Secure Score and how it works](../security/defender/microsoft-secure-score.md).
-  
-## Action types and points
+## Action types and scoring
 
 Compliance Manager tracks two types of actions:
 
 1. **Your improvement actions**: Managed by your organization
 2. **Microsoft actions**: Managed by Microsoft
 
-Both types of actions have points that count toward your overall score when completed.
+Both types of actions have points that count toward your overall score when completed. Your action status is updated on your dashboard within 24 hours of a change being made. Once you follow a recommendation to implement a control, you’ll typically see the control status updated the next day.
+
+### Scoring for actions related and unrelated to Microsoft Defender for Cloud
+
+Improvement actions that aren't implemented in or monitored by Defender for Cloud are scored as a signle unit. For example, if the action is worth 30 points, your achieve 30 points if the action passes or 0 points if it fails.
+
+If the improvement action is implemented in or monitored by Defender for Cloud, its score is multiplied by the number of assessments in which they appear. Within a single assessment, an action's score represents the total of each subscription within the service. For example, if an action's total score within an assessment is 30 points, and the assessment has three subscriptions within that service, then the points allowed for the action within each service is 10. When the action passes in each of the three subscriptions, the total number of 30 points is awarded for that action in that assessment.
 
 ### Technical and non-technical actions
 
