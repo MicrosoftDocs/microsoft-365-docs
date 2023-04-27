@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 admin center email activity reports"
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin

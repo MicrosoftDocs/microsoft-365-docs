@@ -3,7 +3,7 @@ title: "Determine if Centralized Deployment of add-ins works for your organizati
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin

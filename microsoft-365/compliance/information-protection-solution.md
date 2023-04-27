@@ -61,7 +61,7 @@ Knowing where your sensitive data resides is often the biggest challenge for man
 
 ![Protect your data for Microsoft Purview Information Protection solution overview](../media/protect-mipsolution.png)
 
-Use the information from knowing where your sensitive data resides to help you more efficiently protect it. But there's no need to wait—you can start to protect your data immediately with a combination of manual, default, and automatic labeling. Then use [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md) from the previous section to confirm what items are labeled and how your labels are being used.
+Use the information from knowing where your sensitive data resides to help you more efficiently protect it. However, there's no need to wait—you can start to protect your data immediately with a combination of manual, default, and automatic labeling. Then, use [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md) from the previous section to confirm what items are labeled and how your labels are being used.
 
 |Step|Description|More information|
 |:---|-----------|:---------------|
@@ -77,7 +77,7 @@ If you're a developer who wants to extend sensitivity labels to line-of-business
 
 Microsoft Purview includes additional capabilities to help protect data. Not every customer needs these capabilities, and some might be superseded by more recent releases.
 
-Use the [Protect your data with Microsoft Purview](information-protection.md) page for the full list of protection capabilities.
+Refer to the [Protect your data with Microsoft Purview](information-protection.md) page for the full list of protection capabilities.
 
 ## Prevent data loss
 
@@ -87,7 +87,7 @@ Deploy Microsoft Purview Data Loss Prevention (DLP) policies to govern and preve
 
 |Step|Description|More information|
 |:---|:----------|:---------------|
-|1|Learn about DLP. <br /><br /> Organizations have sensitive information under their control, such as financial data, proprietary data, credit card numbers, health records, or social security numbers. To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it. This practice is called data loss prevention (DLP).| [Learn about data loss prevention](dlp-learn-about-dlp.md)|
+|1|Learn about DLP. <br /><br /> Organizations have sensitive information under their control, such as financial data, proprietary data, credit card numbers, health records, and social security numbers. To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it. This practice is called data loss prevention (DLP).| [Learn about data loss prevention](dlp-learn-about-dlp.md)|
 |2|Plan your DLP implementation. <br /><br /> Every organization will plan for and implement data loss prevention (DLP) differently, because every organization's business needs, goals, resources, and situation are unique to them. However, there are elements that are common to all successful DLP implementations. | [Plan for data loss prevention](dlp-overview-plan-for-dlp.md)|
 |3|Design and create a DLP policy. <br /><br /> Creating a data loss prevention (DLP) policy is quick and easy, but getting a policy to yield the intended results can be time consuming if you have to do a lot of tuning. Taking the time to design a policy before you implement it will get you to the desired results faster, and with fewer unintended issues, than tuning by trial and error alone.| [Design a DLP policy](dlp-policy-design.md) <p> [DLP policy reference](dlp-policy-reference.md) <p>[Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)|
 |4|Tune your DLP policies. <br /><br /> After you deploy a DLP policy, you'll see how well it meets the intended purpose. Use that information to adjust your policy settings for better performance. | [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)|
@@ -104,4 +104,4 @@ Learning modules for consultants and admins:
 
 To help train your users to apply and use the sensitivity labels that you configure for them, see [End-user documentation for sensitivity labels](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels).
 
-When you deploy data loss prevention policies for Teams, you might find useful the following end-user guidance as an introduction to this technology with some potential messages that they might see: [Teams messages about data loss prevention (DLP) and communication compliance policies](https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0).
+When you deploy data loss prevention policies for Teams, you might find  the following end-user guidance useful as an introduction to this technology. It includes some potential messages that users might see: [Teams messages about data loss prevention (DLP) and communication compliance policies](https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0).

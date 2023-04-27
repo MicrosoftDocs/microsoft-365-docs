@@ -34,6 +34,10 @@
       href: plan-for-security-and-compliance.md
     - name: Compliance extensibility
       href: compliance-extensibility.md
+- name: Optical Character Recognition 
+  items:
+    - name: Learn about Optical Character Recognition
+      href: ocr-learn-about.md
 - name: Onboard devices for Microsoft Purview
   items:
     - name: Onboard Windows devices
@@ -1207,6 +1211,8 @@
             href: dlp-migration-assistant-for-symantec-learn.md
           - name: Learn about adaptive protection in data loss prevention (preview)
             href: dlp-adaptive-protection-learn.md
+          - name: Learn about evidence collection for file activities on devices (preview)
+            href: dlp-copy-matched-items-learn.md
         - name: Plan for DLP
           items:
           - name: Plan for data loss prevention
@@ -1235,10 +1241,12 @@
             href: dlp-firefox-extension-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
-          - name: Get started with Data loss prevention policies for Power BI (preview)
+          - name: Get started with Data loss prevention policies for Power BI
             href: dlp-powerbi-get-started.md
           - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec
-            href: dlp-migration-assistant-for-symantec-get-started.md  
+            href: dlp-migration-assistant-for-symantec-get-started.md
+          - name: Get started with collecting files that match data loss prevention policies from devices (preview)
+            href: dlp-copy-matched-items-get-started.md  
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -1438,8 +1446,6 @@
             href: ediscovery-de-duplication-in-search-results.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
-          - name: Change the size of PST files when exporting search results
-            href: ediscovery-change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
             href: ediscovery-disable-reports-for-exported-content-search-results.md
           - name: Check your search query for errors
@@ -1767,22 +1773,12 @@
           href: compliance-manager.md
         - name: What's new in Compliance Manager
           href: compliance-manager-whats-new.md
-        - name: Compliance Manager quickstart
-          href: compliance-manager-quickstart.md
         - name: Get started with Compliance Manager
           href: compliance-manager-setup.md
         - name: Build and manage assessments
           href: compliance-manager-assessments.md
         - name: Learn about assessment templates
           href: compliance-manager-templates.md
-        - name: Create a custom template
-          href: compliance-manager-templates-create.md
-        - name: Modify a custom template
-          href: compliance-manager-templates-modify.md
-        - name: Extend a Microsoft template
-          href: compliance-manager-templates-extend.md
-        - name: Format template data in Excel
-          href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list
           href: compliance-manager-templates-list.md
         - name: Working with improvement actions
