@@ -80,14 +80,12 @@ If you can't select the **View upgrades recommended for your org** link, it mean
 | **Issue** | **Resolution** |
 |=======|============|
 | You have more users than licenses. | To change plans automatically, all users must have valid licenses. [Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) until you have the same or fewer users as your number of licenses. |
-| The current subscription isn't fully set up or the service isn't available. | For example, if a service in your existing plan has an incident, you can't change plans until all services are healthy. To see if there are provisioning or service health issues, in the admin center, go to the **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page. <br/><br/>
-If you find that a service isn't fully provisioned, or there's a service health issue, wait a few hours for the service to become available and try again. If you still have a problem, [contact support](../../admin/get-help-support.md). |
+| The current subscription isn't fully set up or the service isn't available. | For example, if a service in your existing plan has an incident, you can't change plans until all services are healthy. To see if there are provisioning or service health issues, in the admin center, go to the **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page. <br/><br/>If you find that a service isn't fully provisioned, or there's a service health issue, wait a few hours for the service to become available and try again. If you still have a problem, [contact support](../../admin/get-help-support.md). |
 | Another plan is in the process of being changed or a credit check is pending. | Wait until the credit check is complete before you change plans. Credit checks can take up to two working days. |
 | The subscription isn't currently eligible to change plans. | You can [change plans manually](#change-plans-manually). |
 | You have two or more plans for the same product. | You can only change plans automatically if all users have licenses to the same plan. For example, if you have two Microsoft 365 Business Standard plans, you can't automatically change one of them to a different plan. In this case, move all users into a single plan, cancel the unused plan, then try changing plans again. |
 | You have a government or non-profit plan. | If you have a government or non-profit plan, you can [change plans manually](#change-plans-manually). |
-| The plan that you want to change to isn't a supported option. | The plans that are available to change to are displayed based on the services in your current plan. You can only automatically change to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the change.<br/><br/>
-If you want to change to a plan with fewer services, you can [change plans manually](#change-plans-manually). |
+| The plan that you want to change to isn't a supported option. | The plans that are available to change to are displayed based on the services in your current plan. You can only automatically change to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the change.<br/><br/>If you want to change to a plan with fewer services, you can [change plans manually](#change-plans-manually). |
 | Your subscription has an add-on. | If you start to change plans and your subscription has an add-on that prevents you from continuing, remove the add-on. You can add it back later if you still need it. You can also change plans manually. |
 | Your invoice has an unpaid balance. | This only applies if you pay for your subscription by invoice. To resolve this issue, find the subscription on the **Your products** page, and select the **Pay now** or **Settle balance** link in the **Billing** section. After the payment has been made, try changing plans again. |
 | I have a different problem than what's listed here. | You can [change plans manually](#change-plans-manually) or [contact support](../../admin/get-help-support.md). |
@@ -140,12 +138,13 @@ In the admin center, go to the **Billing** > **Your products** page, then do the
 
 - **Verify that both the old and new subscriptions are listed and active.** The subscription that you're moving users from and the subscription that you're moving users to must be listed together. If the new subscription isn't there when you first check, try again later. Verify that both subscriptions are listed as **Active**.
 - **Check that you have enough licenses for each user.** Each user needs a license that matches their subscription. If you want to move 10 users to Microsoft 365 Business Premium, make sure 10 unassigned licenses are available in that subscription.
-- Need more licenses for the new subscription? **Go** to the **Your products** page, select the subscription, and [buy more licenses](../licenses/buy-licenses.md).
+- **Need more licenses for the new subscription?** Go to the **Your products** page, select the subscription, and [buy more licenses](../licenses/buy-licenses.md).
 
 #### The new subscription isn't listed, or isn't active
 
-- If you bought two subscriptions and they aren't both listed on the Your products page, they may have been bought for different organizations (for different domains). Subscriptions can't cross organization boundaries.
-- If you know you have another subscription, and it's not listed here, or isn't active, [contact support](../../admin/get-help-support.md).
+If you bought two subscriptions and they aren't both listed on the Your products page, they may have been bought for different organizations (for different domains). Subscriptions can't cross organization boundaries.
+
+If you know you have another subscription, and it's not listed here, or isn't active, [contact support](../../admin/get-help-support.md).
 
 #### What about old licenses?
 
