@@ -192,9 +192,9 @@ In certain server workloads, two issues might be observed:
 These issues may occur on servers with many events flooding AuditD.
 
 > [!NOTE]
-> As a general best practice, it is recommended to set AuditD configuration **max_log_file_action** to **rotate**.
+> As a best practice, we recommended to set AuditD configuration **max_log_file_action** to **rotate**.
 >
-> This is a crucial precautionary measure to prevent situations where AuditD logs accumulate and consume all available disk space.
+> This helps prevent situations where AuditD logs accumulate and consume all available disk space.
  
 This can happen if there are multiple consumers for AuditD, or too many rules with the combination of Microsoft Defender for Endpoint and third party consumers, or high workload that generates a lot of events.
 
