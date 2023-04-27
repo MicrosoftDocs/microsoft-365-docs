@@ -289,6 +289,17 @@ The -x flag is used to exclude access to subdirectories by specific initiators f
 
 The above will exclude monitoring of /tmp subfolder, when accessed by mv process.
 
+### Rate Limiter
+
+The XMDEClientAnalyzer support tool contains syntax that can be used to limit the number of events being reported by the auditD plugin. This option will set the rate limit globally for AuditD causing a drop in all the audit events.
+
+The ratelimit option can be used to enable/disable this rate limit.
+
+Enable: `./mde_support_tool.sh ratelimit -e true`
+Disable: `./mde_support_tool.sh ratelimit -e false`
+
+When the ratelimit is enabled a rule will be added in AuditD to handle 2500 events/sec.
+
 > [!NOTE]
 > Please contact Microsoft support if you need assistance with analyzing and mitigating AuditD related performance issues, or with deploying AuditD exclusions at scale.
 
