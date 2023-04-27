@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "business-video/TOC.yml",
+            "redirect_url": "https://www.youtube.com/channel/UCBcPPMQmVe5O3on4v5VKrYA",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "admin/top-m365-admin-articles.md",
             "redirect_url": "https://support.microsoft.com/smallbusiness",
             "redirect_document_id": false
