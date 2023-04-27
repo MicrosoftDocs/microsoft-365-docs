@@ -247,7 +247,7 @@ Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`
 
 ### AuditD Rate Limiter
 
-syntax that can be used to limit the number of events being reported by the auditD plugin. This option will set the rate limit globally for AuditD causing a drop in all the audit events. When the limiter is enabled the number of auditd events will be limited to 2500 events/sec.
+Syntax that can be used to limit the number of events being reported by the auditD plugin. This option will set the rate limit globally for AuditD causing a drop in all the audit events. When the limiter is enabled the number of auditd events will be limited to 2500 events/sec. This option can be used in cases where we see high CPU usage from AuditD side.
 
 > [!NOTE]
 > This functionality exists for Linux only
