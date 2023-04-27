@@ -63,15 +63,15 @@ For more information about volume purchased apps, see [Purchase apps in volume f
 
 ### Partner productivity apps
 
-There are several [Intune partner productivity apps](/mem/intune/apps/apps-supported-intune-apps.md#partner-productivity-apps) that support Intune configuration and protection. These apps are available from various sources and often provide support for both iOS/iPadOS and Android devices. For apps that require you to purchase a license, subscription, or account for each user to use the app, you'll need to work directly with the app vendor.
+There are several [Intune partner productivity apps](/mem/intune/apps/apps-supported-intune-apps#partner-productivity-apps) that support Intune configuration and protection. These apps are available from various sources and often provide support for both iOS/iPadOS and Android devices. For apps that require you to purchase a license, subscription, or account for each user to use the app, you'll need to work directly with the app vendor.
 
 Areas of support include the following settings:
-- [Core Intune app protection policy settings](/mem/intune/apps/apps-supported-intune-apps.md#core-app-settings)
-- [Advanced Intune app protection policy and app configuration policy settings](/mem/intune/apps/apps-supported-intune-apps.md#advanced-app-settings)
+- [Core Intune app protection policy settings](/mem/intune/apps/apps-supported-intune-apps#core-app-settings)
+- [Advanced Intune app protection policy and app configuration policy settings](/mem/intune/apps/apps-supported-intune-apps#advanced-app-settings)
 
 ### Partner UEM apps
 
-In addition to standard store apps that can be managed, you can add specific [partner UEM apps](/mem/intune/apps/apps-supported-intune-apps.md#partner-uem-apps) to Intune. These apps are also available in either the Google Play Store or the Apple App Store. However, these apps are capable of supporting advanced app protection policy and app configuration policy settings. You may need to work directly with the app vendor to purchase a license, subscription, or account for each user to use the related app.
+In addition to standard store apps that can be managed, you can add specific [partner UEM apps](/mem/intune/apps/apps-supported-intune-apps#partner-uem-apps) to Intune. These apps are also available in either the Google Play Store or the Apple App Store. However, these apps are capable of supporting advanced app protection policy and app configuration policy settings. You may need to work directly with the app vendor to purchase a license, subscription, or account for each user to use the related app.
 
 ### In-app purchases
 

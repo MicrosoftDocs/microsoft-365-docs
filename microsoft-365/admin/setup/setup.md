@@ -3,7 +3,7 @@ title: "Set up Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 02/19/2020
 audience: Admin

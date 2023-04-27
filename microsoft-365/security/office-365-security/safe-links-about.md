@@ -253,7 +253,7 @@ These settings apply to Safe Links in email, Teams, and Office apps:
 
 ## Priority of Safe Links policies
 
-After you create multiple policies, you can specify the order that they're applied. No two policies can have the same priority, and policy processing stops after the first policy is applied. The **Built-in protection** policy is always applied last. The Safe Links policies associated **Standard** and **Strict** preset security policies are always applied before custom Safe Links policies.
+After you create multiple policies, you can specify the order that they're applied. No two policies can have the same priority, and policy processing stops after the first policy is applied (the highest priority policy for that recipient). The **Built-in protection** policy is always applied last. The Safe Links policies associated **Standard** and **Strict** preset security policies are always applied before custom Safe Links policies.
 
 For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order of precedence for preset security policies and other policies](preset-security-policies.md#order-of-precedence-for-preset-security-policies-and-other-policies) and [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
@@ -262,7 +262,7 @@ For more information about the order of precedence and how multiple policies are
 > [!NOTE]
 > Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow but might still be blocked at time of click. Use [allow URL entries in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-on-the-submissions-page) to override the Safe Links URL verdict.
 
-Each Safe Links policy contains a **Do not rewrite the following URLs** list that you can use to specify URLs that aren't rewritten by Safe Links scanning. In other words, the list allows users who are included in the policy to access the specified URLs that would otherwise be blocked by Safe Links. You can configure different lists in different Safe Links policies. Policy processing stops after the first (likely, the highest priority) policy is applied to the user. So, only one **Do not rewrite the following URLs** list is applied to a user who is included in multiple active Safe Links policies.
+Each Safe Links policy contains a **Do not rewrite the following URLs** list that you can use to specify URLs that aren't rewritten by Safe Links scanning. You can configure different lists in different Safe Links policies. Policy processing stops after the first (likely, the highest priority) policy is applied to the user. So, only one **Do not rewrite the following URLs** list is applied to a user who is included in multiple active Safe Links policies.
 
 To add entries to the list in new or existing Safe Links policies, see [Create Safe Links policies](safe-links-policies-configure.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) or [Modify Safe Links policies](safe-links-policies-configure.md#use-the-microsoft-365-defender-portal-to-modify-custom-safe-links-policies).
 
