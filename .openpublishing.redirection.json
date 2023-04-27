@@ -10889,8 +10889,12 @@
     "source_path": "microsoft-365/compliance/compliance-manager-templates-format-excel.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager-templates",
     "redirect_document_id": false
-  }
-  ,
+  },
+  {
+    "source_path": "microsoft-365/enterprise/move-sharepoint-between-geo-locations.md",
+    "redirect_url": "/microsoft-365/enterprise/m365-dr-workload-spo",
+    "redirect_document_id": true
+  },
   {
     "source_path": "microsoft-365/compliance/compliance-manager-quickstart.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager-setup",
