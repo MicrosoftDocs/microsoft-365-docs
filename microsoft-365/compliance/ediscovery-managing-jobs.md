@@ -36,13 +36,13 @@ The job report summarizes the following key information for jobs up to the last 
 
 The following eDiscovery (Premium) job types currently don't count towards the concurrency/daily limits and aren't shown in the report:
 
-    - Prepare for export
-    - Run analytics
-    - Tag Items
-    - Compare load sets
-    - Convert redacted items to PDF
-    - Relevance train and Relevance load
-    - Prepare remediation
+- Prepare for export
+- Run analytics
+- Tag Items
+- Compare load sets
+- Convert redacted items to PDF
+- Relevance train and Relevance load
+- Prepare remediation
 
 >[!NOTE]
 >Any jobs included in the list view of the report and that have run for more than 24 hours do not contribute towards the concurrency/daily limits for your organization.
