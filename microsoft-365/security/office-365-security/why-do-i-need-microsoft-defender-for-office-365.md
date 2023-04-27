@@ -47,7 +47,7 @@ Microsoft Defender for Office 365 safeguards organizations against malicious thr
 
 - **[Reports](#how-to-view-microsoft-defender-for-office-365-reports)**: Sec ops can view real-time reports to monitor Defender for Office 365 performance in the organization.
 
-- **[Threat investigation and response capabilities](#use-threat-investigation-and-response-capabilities)**: These are leading-edge tools to investigate, understand, simulate, and prevent threats.
+- **[Threat investigation and response capabilities](#best-of-class-threat-investigation-and-response-capabilities)**: These are leading-edge tools to investigate, understand, simulate, and prevent threats.
 
 - **[Automated investigation and response capabilities](air-about.md)**: Save time and effort investigating and mitigating threats by automating what you can.
 
