@@ -3,7 +3,7 @@ title: "Guest users in the Microsoft 365 admin center"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 06/16/2020
 audience: Admin
