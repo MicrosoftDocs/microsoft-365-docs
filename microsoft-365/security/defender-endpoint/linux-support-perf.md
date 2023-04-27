@@ -293,6 +293,9 @@ The above will exclude monitoring of /tmp subfolder, when accessed by mv process
 
 The XMDEClientAnalyzer support tool contains syntax that can be used to limit the number of events being reported by the auditD plugin. This option will set the rate limit globally for AuditD causing a drop in all the audit events.
 
+> [!NOTE]
+> This functionality should be carefully used as limits the number of events being reported by the auditd subsystem as a whole. This could reduces the number of events for other subscribers as well.
+
 The ratelimit option can be used to enable/disable this rate limit.
 
 Enable: `./mde_support_tool.sh ratelimit -e true`
