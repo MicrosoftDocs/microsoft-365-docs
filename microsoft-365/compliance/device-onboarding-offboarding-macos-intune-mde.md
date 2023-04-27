@@ -62,33 +62,36 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 1. Open the **Microsoft Intune admin center** > **Devices** > **Configuration profiles**.
 
-1. Choose: **Create profile**. 
+2. Choose: **Create profile**. 
 
-1. Choose:
+3. Choose:
     1. **Platform = macOS**
     1. **Profile type = Templates**
     1. **Template name = Custom**
 
-1. Choose **Create**
+4. Choose **Create**
 
-1. Choose a name for the profile, like *AccessibilityformacOS* in this example. Choose **Next**.
+5. Choose a name for the profile, like *AccessibilityformacOS* in this example. Choose **Next**.
 
-1. Choose the **accessibility.mobileconfig** file that you downloaded in step 1 as the configuration profile file.
+6. Choose the **accessibility.mobileconfig** file that you downloaded in step 1 as the configuration profile file.
 
-1. Choose **Next**
+7. Choose **Next**
 
-1. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
+8. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
 
-1. Review your settings and choose **Create** to deploy the configuration.
+9. Review your settings and choose **Create** to deploy the configuration.
 
-1. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
+10. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
-1. In the **Configuration profiles** page, choose the profile that you just created, in this example *AccessibilityformacOS* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
+11. In the **Configuration profiles** page, choose the profile that you just created, in this example *AccessibilityformacOS* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
-### Update existing system configuration profiles
+### Update the existing MDE Preferences
+
+
+
 
 1. A Full Disk Access configuration profile should have been previously created and deployed for MDE.  See, [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access). Endpoint DLP requires an additional Full Disk Access permission for a new application: `com.microsoft.dlp.daemon`. 
-    1. Update the existing Full Disk Access configuration profile with the fulldisk.mobileconfig file. 
+    <br><br> Update the existing Full Disk Access configuration profile with the `fulldisk.mobileconfig` file. 
 
 
 1. Find the existing MDE Preferences configuration profile. See, [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences#intune-full-profile)
@@ -102,51 +105,11 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
     <key>dataLossPrevention</key> 
     <string>enabled</string> 
 </dict> 
-``` 
+```
 
 Here's an [example mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)
 
-### OPTIONAL: Allow sensitive data to pass through forbidden domains
-
-Microsoft Purview DLP checks for sensitive data through all stages of its travels. So, if sensitive data is getting posted or sent to an allowed domain, but travels through a forbidden domain, it will be blocked. Let's take a closer look.
-
-Say that sending sensitive data via Outlook Live (*outlook.live.com*) is permissible, but that sensitive data must not be exposed to *microsoft.com*. However, when a user accesses Outlook Live, the data passes through *microsoft.com* in the background, as shown:
-
-:::image type="content" source="../media/devices-macos-cloud-dataflow.png" alt-text="Screenshot showing the flow of data from source to destination URL.":::
-
-By default, because the sensitive data passes through microsoft.com on its way to outlook.live.com, DLP automatically blocks the data from being shared.
-
-In some cases, however, you may not be concerned with the domains that data passes through on the back end, but only with where the data ultimately ends up, as indicated by the URL that shows up in the address bar. In this case, *outlook.live.com*. To prevent sensitive data from being blocked in our example case, you need to specifically change the default setting.
-
-So, if you only want to monitor the browser and the final destination of the data (the URL in the browser address bar), you can enable *DLP_browser_only_cloud_egress* and *DLP_ax_only_cloud_egress*. Here's how.
-
-To change the settings to allow sensitive data to pass through forbidden domains on its way to a permitted domain:
-
-1. Open the [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/cloud_egress/com.microsoft.wdav.mobileconfig) file.
-
-2. Under the `dlp` key, Set `DLP_browser_only_cloud_egress` to *enabled* and set ` DLP_ax_only_cloud_egress` to *enabled* as shown in the following example.
-
-
-```xml
-
-<key>dlp</key>
-     <dict>
-         <key>features</key>
-         <array>
-            <dict>
-                <key>name</key>
-                <string>DLP_browser_only_cloud_egress</string>
-                <key>state</key>
-                <string>enabled</string>
-            </dict>
-     <dict>
-                <key>name</key>
-                 <string>DLP_ax_only_cloud_egress</string>
-                <key>state</key>
-                <string>enabled</string>
-    </dict>
-
-```
+[!INCLUDE [device-macos-check-browser-vs-end-url](../includes/device-macos-check-browser-vs-end-url.md)]
  
 ## Offboard macOS devices using Intune
 
