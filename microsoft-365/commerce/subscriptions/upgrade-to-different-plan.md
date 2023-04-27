@@ -46,11 +46,9 @@ Changing plans is the right choice when you want to move all users assigned to a
 ### If you don't have a billing profile
 
 ::: moniker range="o365-worldwide"
-1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-::: moniker-end
+1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.::: moniker-end
 ::: moniker range="o365-21vianet"
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
-::: moniker-end
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.::: moniker-end
 1. On the **Products** tab, select the subscription that you want to change.
 2. On the subscription details page, in the **Product details and upgrades** section, select **View upgrades recommended for your org**.
     > [!NOTE]
@@ -77,18 +75,18 @@ After you place the order, it might take a few minutes to finalize the change. Y
 
 If you can't select the **View upgrades recommended for your org** link, it means that you can't automatically change your plan right now. In some cases, you can resolve the issue so that you can view available plans. In other cases, you can [change plans manually](#change-plans-manually), instead. The following table lists issues you might encounter when you try to change your plan, and information about how to resolve them.
 
-| **Issue** | **Resolution** |
-|=======|============|
-| You have more users than licenses. | To change plans automatically, all users must have valid licenses. [Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) until you have the same or fewer users as your number of licenses. |
-| The current subscription isn't fully set up or the service isn't available. | For example, if a service in your existing plan has an incident, you can't change plans until all services are healthy. To see if there are provisioning or service health issues, in the admin center, go to the **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page. <br/><br/>If you find that a service isn't fully provisioned, or there's a service health issue, wait a few hours for the service to become available and try again. If you still have a problem, [contact support](../../admin/get-help-support.md). |
-| Another plan is in the process of being changed or a credit check is pending. | Wait until the credit check is complete before you change plans. Credit checks can take up to two working days. |
-| The subscription isn't currently eligible to change plans. | You can [change plans manually](#change-plans-manually). |
-| You have two or more plans for the same product. | You can only change plans automatically if all users have licenses to the same plan. For example, if you have two Microsoft 365 Business Standard plans, you can't automatically change one of them to a different plan. In this case, move all users into a single plan, cancel the unused plan, then try changing plans again. |
-| You have a government or non-profit plan. | If you have a government or non-profit plan, you can [change plans manually](#change-plans-manually). |
-| The plan that you want to change to isn't a supported option. | The plans that are available to change to are displayed based on the services in your current plan. You can only automatically change to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the change.<br/><br/>If you want to change to a plan with fewer services, you can [change plans manually](#change-plans-manually). |
-| Your subscription has an add-on. | If you start to change plans and your subscription has an add-on that prevents you from continuing, remove the add-on. You can add it back later if you still need it. You can also change plans manually. |
-| Your invoice has an unpaid balance. | This only applies if you pay for your subscription by invoice. To resolve this issue, find the subscription on the **Your products** page, and select the **Pay now** or **Settle balance** link in the **Billing** section. After the payment has been made, try changing plans again. |
-| I have a different problem than what's listed here. | You can [change plans manually](#change-plans-manually) or [contact support](../../admin/get-help-support.md). |
+|**Issue**  |**Resolution**  |
+|---------|---------|
+|You have more users than licenses.     |To change plans automatically, all users must have valid licenses. [Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) until you have the same or fewer users as your number of licenses.        |
+|The current subscription isn't fully set up or the service isn't available.     |For example, if a service in your existing plan has an incident, you can't change plans until all services are healthy. To see if there are provisioning or service health issues, in the admin center, go to the **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page. </br></br>If you find that a service isn't fully provisioned, or there's a service health issue, wait a few hours for the service to become available and try again. If you still have a problem, [contact support](../../admin/get-help-support.md).         |
+|Another plan is in the process of being changed or a credit check is pending.    |Wait until the credit check is complete before you change plans. Credit checks can take up to two working days.         |
+|The subscription isn't currently eligible to change plans.     |You can [change plans manually](#change-plans-manually).         |
+|You have two or more plans for the same product.     |You can only change plans automatically if all users have licenses to the same plan. For example, if you have two Microsoft 365 Business Standard plans, you can't automatically change one of them to a different plan. In this case, move all users into a single plan, cancel the unused plan, then try changing plans again.         |
+|You have a government or non-profit plan.     |If you have a government or non-profit plan, you can [change plans manually](#change-plans-manually).         |
+|The plan that you want to change to isn't a supported option.     |The plans that are available to change to are displayed based on the services in your current plan. You can only automatically change to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the change.</br></br>If you want to change to a plan with fewer services, you can [change plans manually](#change-plans-manually).         |
+|Your subscription has an add-on.    |If you start to change plans and your subscription has an add-on that prevents you from continuing, remove the add-on. You can add it back later if you still need it. You can also change plans manually.         |
+|Your invoice has an unpaid balance.     |This only applies if you pay for your subscription by invoice. To resolve this issue, find the subscription on the **Your products** page, and select the **Pay now** or **Settle balance** link in the **Billing** section. After the payment has been made, try changing plans again.         |
+|I have a different problem than what's listed here.     |You can [change plans manually](#change-plans-manually) or [contact support](../../admin/get-help-support.md).         |
 
 ## What does automatically changing plans do to my service and billing?
 
