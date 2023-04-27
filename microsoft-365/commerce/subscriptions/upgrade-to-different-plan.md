@@ -46,9 +46,11 @@ Changing plans is the right choice when you want to move all users assigned to a
 ### If you don't have a billing profile
 
 ::: moniker range="o365-worldwide"
-1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.::: moniker-end
+1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+::: moniker-end
 ::: moniker range="o365-21vianet"
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.::: moniker-end
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+::: moniker-end
 2. On the **Products** tab, select the subscription that you want to change.
 3. On the subscription details page, in the **Product details and upgrades** section, select **View upgrades recommended for your org**.
     > [!NOTE]
