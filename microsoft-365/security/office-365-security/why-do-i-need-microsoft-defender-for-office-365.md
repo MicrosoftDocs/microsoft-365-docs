@@ -27,7 +27,7 @@ ms.date: 04/27/2023
 # Why do I need Microsoft Defender for Office 365?
 
 > [!IMPORTANT]
-> **If your browser is being blocked by Safe Links pages**, click here: [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
+> **If you are being blocked by Safe Links pages**, go here for info: [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
