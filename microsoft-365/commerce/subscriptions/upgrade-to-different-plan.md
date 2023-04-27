@@ -49,14 +49,14 @@ Changing plans is the right choice when you want to move all users assigned to a
 1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 ::: moniker-end
 ::: moniker range="o365-21vianet"
-1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
 ::: moniker-end
-2. On the **Products** tab, select the subscription that you want to change.
-3. On the subscription details page, in the **Product details and upgrades** section, select **View upgrades recommended for your org**.
+1. On the **Products** tab, select the subscription that you want to change.
+2. On the subscription details page, in the **Product details and upgrades** section, select **View upgrades recommended for your org**.
     > [!NOTE]
     > If the View upgrades recommended for your org link is grayed out, see [Why can't I change plans?](#why-cant-i-change-plans)
-4. On the **Available upgrades** page, find a new product, then select **Upgrade**.
-5. On the **Checkout** page, select or add a payment method, then select **Place order**.
+3. On the **Available upgrades** page, find a new product, then select **Upgrade**.
+4. On the **Checkout** page, select or add a payment method, then select **Place order**.
 
 After you place the order, it might take a few minutes to finalize the change. You can start using your new subscription right away.
 
@@ -142,7 +142,7 @@ In the admin center, go to the **Billing** > **Your products** page, then do the
 
 #### The new subscription isn't listed, or isn't active
 
-If you bought two subscriptions and they aren't both listed on the Your products page, they may have been bought for different organizations (for different domains). Subscriptions can't cross organization boundaries.
+If you bought two subscriptions and they aren't both listed on the **Your products** page, they may have been bought for different organizations (for different domains). Subscriptions can't cross organization boundaries.
 
 If you know you have another subscription, and it's not listed here, or isn't active, [contact support](../../admin/get-help-support.md).
 
