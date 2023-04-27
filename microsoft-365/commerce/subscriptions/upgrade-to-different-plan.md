@@ -124,7 +124,7 @@ Most of the time, you can change plans automatically. However, sometimes this is
 - You don't want to move all your users to the same plan. Some businesses need different users licensed for different plans.
 
 > [!IMPORTANT]
-> If you're changing to a plan with fewer data-related services than your current plan, you must manually back up any data that you want to keep. For more information, see [Back up data before changing Microsoft 365 for business plans](move-users-different-subscription.md#back-up-data-before-switching-microsoft-365-for-business-plans).
+> If you're changing to a plan with fewer data-related services than your current plan, you must manually back up any data that you want to keep. For more information, see [Back up data before changing Microsoft 365 for business plans](move-users-different-subscription.md#back-up-data-before-changing-microsoft-365-for-business-plans).
 
 ### Step 1: Buy a new subscription
 
