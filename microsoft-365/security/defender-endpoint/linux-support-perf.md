@@ -296,6 +296,7 @@ The XMDEClientAnalyzer support tool contains syntax that can be used to limit th
 The ratelimit option can be used to enable/disable this rate limit.
 
 Enable: `./mde_support_tool.sh ratelimit -e true`
+
 Disable: `./mde_support_tool.sh ratelimit -e false`
 
 When the ratelimit is enabled a rule will be added in AuditD to handle 2500 events/sec.
