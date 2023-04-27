@@ -183,7 +183,7 @@ The JSON for user role group should look like this:
 
 Create a DLP policy as you normally would. Refer to [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) for policy configuration examples.
 
-Configure your policy using these settings
+Configure your policy using these settings:
 
 - Make sure that **Devices** is the only location selected.
 - In **Incident reports**, toggle **Send an alert to admins when a rule match occurs** to **On**
