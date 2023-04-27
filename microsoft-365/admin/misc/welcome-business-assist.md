@@ -6,6 +6,7 @@ ms.author: kwekua
 author: kwekua
 manager: scotv
 audience: Admin
+ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 description: "Welcome to Business Assist."
