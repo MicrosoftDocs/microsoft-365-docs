@@ -20,7 +20,7 @@ ms.custom:
 description: Is Microsoft Defender for Office 365 worth it? Let's find out. This article had info on the fastest and most recommended setup of Microsoft Defender for Office 365 including Safe Attachments, Safe Links, advanced anti-phishing tools, reporting tools, and threat intelligence capabilities.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 01/31/2023
+ms.date: 04/27/2023
 ---
 
 # Why do I need Microsoft Defender for Office 365?
