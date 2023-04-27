@@ -1,5 +1,5 @@
 ---
-title: Cross-tenant SharePoint site migration overview
+title: Cross-tenant SharePoint site migration overview (preview)
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
@@ -13,9 +13,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-migratetom365
 search.appverid: MET150
-description: "Learn about the Cross-tenant SharePoint migration solution to migrate your SharePoint sites from tenant to tenant."
+description: "Learn about the Cross-tenant SharePoint migration solution to migrate your SharePoint sites from tenant to tenant, currently in preview."
 ---
-# Cross-tenant SharePoint migration
+# Cross-tenant SharePoint migration (preview)
+
+>[!Note]
+>Cross-Tenant SharePoint migration is in a private preview stage of development. As an unfinished project any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
 
 
 SharePoint sites can now be moved from one tenant to another using the Cross-tenant SharePoint migration feature. 
@@ -24,14 +27,14 @@ Using *SharePoint Online PowerShell*, SharePoint Admins can to transition sites 
 
 Up to 4,000 SharePoint accounts can be scheduled for migration in advance at a given time. Once scheduled, migrations occur without content ever leaving the Microsoft 365 cloud and with minimal disruption. When migrations are complete, a redirect is placed in the location of the user's original SharePoint site, so any links to files and folders can continue working in the new location.
 
-> [!NOTE]
-> This feature is not supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
 
-## Licensing
+## How to participate
 
-**Cross-tenant SharePoint site Migration** is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers. Licensing is per use, per SharePoint site, with a maximum site size of 50 GB. (onetime fee). Contact your Microsoft account team for details.
- 
-Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/A3/E5/A5; Office 365 F3/E1/A1/E3/A3/E5/A5; Exchange Online; SharePoint Online; OneDrive for Business.
+The **Cross-Tenant User Content Migration** feature and licenses are currently only available to Enterprise Agreement customers. 
+
+If you are an Enterprise Agreement customer who will be purchasing Cross-Tenant User Content Migration licenses, and you would like to evaluate Cross-Tenant SharePoint migration to improve your migration experience, then please email CTMSPreview@service.microsoft.com and provide some basic information about the migration you are performing. 
+
+The team will respond to you within a couple business days with some additional questions. For more information on licensing, please see [Cross-Tenant User Content Migration Licensing](/microsoft-365/enterprise/cross-tenant-mailbox-migration?view=o365-worldwide#licensing) and contact your Microsoft account team.
 
 ## Prerequisites and settings
 
