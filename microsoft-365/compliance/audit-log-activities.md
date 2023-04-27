@@ -726,7 +726,7 @@ The following table lists user administration activities that are logged when an
 |Activity|Operation|Description|
 |:-----|:-----|:-----|
 |Added user|Add user.|A user account was created.|
-|Changed user license|Change user license.|The license assigned to a user what changed. To see what licenses were changes, see the corresponding **Updated user** activity.|
+|Changed user license|Change user license.|The license assigned to a user was changed. To see what licenses were changed, see the corresponding **Updated user** activity.|
 |Changed user password|Change user password.|A user changes their password. Self-service password reset has to be enabled (for all or selected users) in your organization to allow users to reset their password. You can also track self-service password reset activity in Azure Active Directory. For more information, see [Reporting options for Azure AD password management](/azure/active-directory/authentication/howto-sspr-reporting).
 |Deleted user|Delete user.|A user account was deleted.|
 |Reset user password|Reset user password.|Administrator resets the password for a user.|
