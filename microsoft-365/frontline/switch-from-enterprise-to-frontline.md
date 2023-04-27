@@ -1,7 +1,7 @@
 ---
 title: Changing from a Microsoft 365 E plan to a Microsoft 365 F plan
-author: LanaChin
-ms.author: v-lanachin
+author: samanro
+ms.author: samanro
 ms.reviewer: 
 manager: samanro
 ms.topic: conceptual
@@ -215,7 +215,7 @@ You can use the Microsoft 365 admin center to manually change plans or a scripte
 
 Avoid removing an existing license for a user and then reassigning a new one at a later point in time. Doing this can impact a user's data. To learn more, see [What happens to a user's data when you remove their license?](/microsoft-365/admin/manage/remove-licenses-from-users#what-happens-to-a-users-data-when-you-remove-their-license).
 
-For step-by-step guidance on how to change plans in the Microsoft admin center, see [Manually change Microsoft plans](/microsoft-365/commerce/subscriptions/upgrade-to-different-plan.md#change-plans-manually)
+For step-by-step guidance on how to change plans in the Microsoft admin center, see [Manually change Microsoft plans](/microsoft-365/commerce/subscriptions/upgrade-to-different-plan#change-plans-manually)
 
 ## What to do after switching plans
 

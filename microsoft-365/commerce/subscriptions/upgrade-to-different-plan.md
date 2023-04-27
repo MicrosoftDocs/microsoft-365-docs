@@ -48,9 +48,11 @@ Changing plans is the right choice when you want to move all users assigned to a
 ::: moniker range="o365-worldwide"
 1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 ::: moniker-end
+
 ::: moniker range="o365-21vianet"
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
 ::: moniker-end
+
 2. On the **Products** tab, select the subscription that you want to change.
 3. On the subscription details page, in the **Product details and upgrades** section, select **View upgrades recommended for your org**.
     > [!NOTE]
@@ -65,9 +67,11 @@ After you place the order, it might take a few minutes to finalize the change. Y
 ::: moniker range="o365-worldwide"
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 ::: moniker-end
+
 ::: moniker range="o365-21vianet"
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
 ::: moniker-end
+
 2. On the **Products** tab, select the subscription that you want to change.
 3. On the subscription details page, in the **Other subscription options** section, select **Change to a different subscription option**.
 4. In the right pane, select a different plan. Indicate the number of licenses you want, choose when to schedule the change, select a subscription length, and select a billing frequency.
@@ -77,7 +81,7 @@ After you place the order, it might take a few minutes to finalize the change. Y
 
 If you can't select the **View upgrades recommended for your org** link, it means that you can't automatically change your plan right now. In some cases, you can resolve the issue so that you can view available plans. In other cases, you can [change plans manually](#change-plans-manually), instead. The following table lists issues you might encounter when you try to change your plan, and information about how to resolve them.
 
-|**Issue**  |**Resolution**  |
+|Issue  |Resolution  |
 |---------|---------|
 |You have more users than licenses.     |To change plans automatically, all users must have valid licenses. [Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) until you have the same or fewer users as your number of licenses.        |
 |The current subscription isn't fully set up or the service isn't available.     |For example, if a service in your existing plan has an incident, you can't change plans until all services are healthy. To see if there are provisioning or service health issues, in the admin center, go to the **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page. </br></br>If you find that a service isn't fully provisioned, or there's a service health issue, wait a few hours for the service to become available and try again. If you still have a problem, [contact support](../../admin/get-help-support.md).         |
@@ -165,7 +169,7 @@ If you moved only some users to a different subscription, [remove licenses that 
 If you upgraded to Microsoft 365 Business Premium, use the steps in the Business Premium library to set up your new security capabilities.
 
 >[!div class="nextstepaction"]
->[Visit the Microsoft 365 Business Premium library](/microsoft-365/business-premium/index.md)
+>[Visit the Microsoft 365 Business Premium library](/microsoft-365/business-premium/index)
 
 ## Related content
 
