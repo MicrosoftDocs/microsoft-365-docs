@@ -112,7 +112,7 @@ Activity explorer gathers activity information from the audit logs on multiple s
 - Protection removed
 - Files discovered
 
-Activity explorer also gathers **DLP policy matches** events from Exchange Online, SharePoint Online, OneDrive, Teams Chat and Channel (preview), on-premises SharePoint folders and libraries, and on-premises file shares, and Windows 10 devices via **Endpoint data loss prevention (DLP)**. Some examples events from Windows 10 devices are file:
+Activity explorer also gathers **DLP policy matches** events from Exchange Online, SharePoint Online, OneDrive, Teams Chat and Channel, on-premises SharePoint folders and libraries, and on-premises file shares, and Windows 10 devices via **Endpoint data loss prevention (DLP)**. Some examples events from Windows 10 devices are file:
 
 - Deletions
 - Creations
