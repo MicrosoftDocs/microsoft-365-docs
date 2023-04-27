@@ -52,6 +52,7 @@ Before you can use copy matched items you have to onboard Windows 10/11 devices 
 ### Setup Azure storage
 
 You should have answers to these question before setting up your Azure storage and scoping the feature to users.
+
 #### Do you need to compartmentalize items and access along role or departmental lines?
 
 For example, if your organization wants to have one set of administrators or DLP event investigators who can view saved items from your senior leadership and another set of adminstrators or DLP event investigators for saved items from human resources, you should create one Azure storage account for senior leadership and another for human resources. This ensures that the Azure storage admins or DLP event investigators can only see the items that matched DLP policies from their respective groups.  
