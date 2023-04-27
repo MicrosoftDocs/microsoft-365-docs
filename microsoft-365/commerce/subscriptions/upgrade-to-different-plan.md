@@ -25,7 +25,7 @@ description: "Learned how to upgrade or change to a different plan in the Micros
 ms.date: 04/27/2023
 ---
 
-# Upgrade to a different Microsoft plan
+# Upgrade or change to a different Microsoft 365 for business plan
 
 When your business needs change, or you want more features, you can change to a different Microsoft 365 for business plan. Most of the time, you can change plans automatically. An automatic change walks you through the entire process from beginning to end. After you buy a new plan, all users are automatically assigned licenses in the new plan, and your old plan is canceled for you. In some cases, you can't automatically change to a new plan, and instead must [change plans manually](#change-plans-manually).
 
