@@ -25,13 +25,7 @@ description: "Learn best practices to protect your business from ransomware, phi
 
 # Secure your business data with Microsoft 365
 
-**Applies to**
-
-- Microsoft 365 Business Basic
-- Microsoft 365 Business Standard
-- Microsoft 365 Business Premium
-
-> [!NOTE]
+> [!TIP]
 > This article is designed for small and medium-sized businesses who have up to 300 users. 
 >
 > If you're looking for information for enterprise organizations, see [Deploy ransomware protection for your Microsoft 365 tenant](../solutions/ransomware-protection-microsoft-365.md).
