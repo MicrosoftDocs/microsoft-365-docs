@@ -248,7 +248,7 @@
           items:
             - name: Exchange Online
               href: m365-dr-workload-exo.md
-            - name: SharePoint Online and OneDrive for Business
+            - name: SharePoint and OneDrive
               href: m365-dr-workload-spo.md
             - name: Microsoft Teams
               href: m365-dr-workload-teams.md

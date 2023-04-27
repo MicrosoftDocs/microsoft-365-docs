@@ -3,13 +3,13 @@ title: "Use a QR code to sign-in to the Outlook mobile apps"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 10/26/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Tier3
 - scotvorg 

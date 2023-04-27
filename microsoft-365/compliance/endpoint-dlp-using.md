@@ -137,7 +137,7 @@ This scenario is for an unrestricted admin modifying a full directory policy.
 
 1. Check Activity explorer for the event.
 
-## Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)
+## Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine
 
 This scenario is for an unrestricted admin creating a full directory policy.
 
@@ -345,7 +345,7 @@ The user must be accessing the website through Microsoft Edge.
 
 1. Finish configuring the rule and policy and apply it.
 
-## Scenario 7 Authorization groups (preview)
+## Scenario 7 Authorization groups
 
 This scenario is for an unrestricted admin creating a full directory policy.
 
