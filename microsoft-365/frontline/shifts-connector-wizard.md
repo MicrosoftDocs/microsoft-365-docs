@@ -171,37 +171,28 @@ Then, map each instance to a team in Teams. You can map an instance to an existi
 
 1. On the **Mapping** page, choose **CSV upload tool**.
 
-2. Select **Download template** to get the CSV mapping file. The template will include a list of all your Blue Yonder WFM instances and their IDs. The template contains these columns, in the following order:
+2. Select **Download template** to get the CSV mapping file. The template will include a list of all your Blue Yonder WFM Dimensions instances and their IDs. The template contains these columns, in the following order:
 
   |Column name |Description |
   |------------|------------|
-  |Blue Yonder WFM Instance ID* |The Blue Yonder WFM instance ID |
-  |Blue Yonder WFM Instance Name* |The Blue Yonder WFM instance name |
+  |Blue Yonder WFM Dimensions Instance ID* |The Blue Yonder WFM Dimensions WFM instance ID |
+  |Blue Yonder WFM Dimensions Instance Name* |The Blue Yonder WFM Dimensions WFM instance name |
   |Team ID* |The team ID |
   |Team Name |The team name |
   |Time zone* |The time zone in tz database format. For example: Europe/London |
 
   *Required
 
-> [!TIP]
-> Get team IDs by following these steps:
->
->1. Select the **Teams** tab in Microsoft Teams.
->2. Find the team you want to map and select the ellipses (**...**).
->3. Choose **Get link to Team** to copy the link.
->4. Your Team ID is between "groupId=" and "&tenantId=".
+>[!NOTE]
+>The wizard supports approximately 460 locations. If the specific location you chose isn't supported, you'll be shown an error in the wizard. Try using the closest city or major city within the same time zone.
 
-3. Enter your desired team mappings in the CSV file. The image below shows what a mapping file might look like after being filled.
+3. On the **Mapping** page, select **Browse** to find and upload your completed CSV file.
 
-  ![Screenshot of filled out mapping file](media/by-csv-mapping.png)
+4. Choose **Done** if your file has uploaded correctly. Otherwise, review the provided error report and upload a corrected file.
 
-4. On the **Mapping** page, select **Browse** to find and upload your completed CSV file.
+5. Your new mappings will appear on the **Mappings** page.
 
-5. Choose **Done** if your file has uploaded correctly. Otherwise, review the provided error report and upload a corrected file.
-
-6. Your new mappings will appear on the **Mappings** page.
-
-7. Choose **Next**.
+6. Choose **Next**.
 
 ### Review and finish
 

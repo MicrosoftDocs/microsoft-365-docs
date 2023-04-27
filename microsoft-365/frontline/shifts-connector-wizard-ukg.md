@@ -186,25 +186,16 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 
   *Required
 
-> [!TIP]
-> Get team IDs by following these steps:
->
->1. Select the **Teams** tab in Microsoft Teams.
->2. Find the team you want to map and select the ellipses (**...**).
->3. Choose **Get link to Team** to copy the link.
->4. Your Team ID is between "groupId=" and "&tenantId=".
+>[!NOTE]
+>The wizard supports approximately 460 locations. If the specific location you chose isn't supported, you'll be shown an error in the wizard. Try using the closest city or major city within the same time zone.
 
-3. Enter your desired team mappings in the CSV file. The image below shows what a mapping file might look like after being filled.
+3. On the **Mapping** page, select **Browse** to find and upload your completed CSV file.
 
-  ![Screenshot of filled out mapping file](media/ukg-map-csv.png)
+4. Choose **Done** if your file has uploaded correctly. Otherwise, review the provided error report and upload a corrected file.
 
-4. On the **Mapping** page, select **Browse** to find and upload your completed CSV file.
+5. Your new mappings will appear on the **Mappings** page.
 
-5. Choose **Done** if your file has uploaded correctly. Otherwise, review the provided error report and upload a corrected file.
-
-6. Your new mappings will appear on the **Mappings** page.
-
-7. Choose **Next**.
+6. Choose **Next**.
 
 ### Review and finish
 
