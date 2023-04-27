@@ -10899,6 +10899,11 @@
     "source_path": "microsoft-365/compliance/compliance-manager-quickstart.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager-setup",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/office-365-security/defender-for-office-365.md",
+    "redirect_url": "/microsoft-365/security/office-365-security/why-do-i-need-microsoft-defender-for-office-365",
+    "redirect_document_id": false
   }
  ]
 }
