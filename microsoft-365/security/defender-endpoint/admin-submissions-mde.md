@@ -18,7 +18,7 @@ audience: ITPro
 ms.topic: how-to
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.custom: FPFN
 ---
 
