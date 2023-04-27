@@ -50,7 +50,7 @@ The following table lists the search limits when using the content search tool i
 |The maximum number of locations in a search that you can export items from. If the search that you're exporting has more locations than this limit, the export will fail. For more information, see [Export content search results](export-search-results.md).|100,000|
 
 > [!NOTE]
-> <sup>1</sup> Although you can search an unlimited number of mailboxes in a single search, you can only download the exported search results from a maximum of 100,000 mailboxes using the eDiscovery Export Tool in the compliance portal.
+> <sup>1</sup> Although you can search an unlimited number of mailboxes in a single search, you can only download the exported search results from a maximum of 100,000 mailboxes using the eDiscovery Export Tool in the compliance portal. If searching more than 10,000 mailboxes in a single search, we recommend creating a distribution group list and searching the distribution group list instead. The search will expand the distribution group list to all locations. More information on creating and managing Exchange distribution lists can be found here: https://learn.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups
 >
 > <sup>2</sup> The intent of the preview page is to show a limited sample of the results. Even for massive searches with thousands of results, the number of items shown on the preview page can, and often will, be much less than maximum possible value of 1000. To see the complete search results, you need to export the results.
 >
