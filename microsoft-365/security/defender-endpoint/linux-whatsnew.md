@@ -48,7 +48,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 - There are multiple fixes and new changes in this release 
 	- Health message now captures more details when auditd fails.
-	- Improve auditd by relaxing checks; Earlier any failure on augenrules lead to our auditd setup failing, now we verify if our rules are loaded or not.
+	- Improve auditd by relaxing checks; earlier any failure on augenrules lead to our auditd setup failing, now we verify if our rules are loaded or not.
 	- Implements upload of malware samples based on cloud verdict.
 	- Periodic memory cleanup in engine process.
 	- Fix for memory issue in mdatp audisp plugin which increases over time and remains unbounded.
