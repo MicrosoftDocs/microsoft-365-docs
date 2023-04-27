@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/07/2023
 audience: Admin
 ms.topic: article
 ms.custom: 
@@ -28,7 +29,7 @@ search.appverid:
 # Case study - Contoso configures a communication compliance policy to identify potentially inappropriate text for Microsoft Teams, Exchange, and Yammer communications
 
 > [!IMPORTANT]
-> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
+> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance (for example, SEC or FINRA) and business conduct violations such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
 
 [Microsoft Purview Communication Compliance](/microsoft-365/compliance/communication-compliance) helps minimize communication risks by helping you detect, capture, and act on messages with potentially inappropriate text in your organization. Potentially inappropriate text may include profanity, threats, harassment, and adult content. Pre-defined and custom [policies](/microsoft-365/compliance/communication-compliance-policies) allow you to review internal and external communications for policy matches, so they can be examined by designated reviewers. Reviewers can [investigate alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) for email, Microsoft Teams, Yammer, or third-party communications throughout your organization and take appropriate [remediation actions](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) to make sure they're compliant with your organization's message standards.
 
@@ -133,10 +134,6 @@ To access communication compliance when starting from the Microsoft 365 admin ce
 
 ![Communication compliance link.](../media/communication-compliance-case-compliance-link.png)
 
-This action opens the **Office 365 Security and Compliance center**, and they must select the link to the **Microsoft Purview compliance portal** provided in the banner at the top of the page.
-
-![Office 365 security and compliance center.](../media/communication-compliance-case-scc.png)
-
 Once in the **Microsoft Purview compliance portal**, Contoso IT administrators select **Show all** to display the full list of compliance solutions.
 
 ![Communication compliance menu.](../media/communication-compliance-case-show-all.png)
@@ -184,8 +181,8 @@ With all the prerequisites completed, the IT administrators and the compliance s
 
     ![Communication compliance detect inappropriate text template](../media/communication-compliance-case-template.png)
 
-2. On the policy template wizard, the Contoso IT administrators and compliance specialists work together to complete the three required fields: **Policy name**, **Users or groups to supervise**, and **Reviewers**.
-3. Since the policy wizard has already suggested a name for the policy, the IT administrators and compliance specialists decide to keep the suggested name and focus on the remaining fields. They select the *All users* group for the **Users or groups to supervise** field and select the compliance specialists that should investigate and remediate policy alerts for the **Reviewers** field. The last step to configure the policy and start gathering alert information is to select **Create policy**.
+2. On the policy template wizard, the Contoso IT administrators and compliance specialists work together to complete the three required fields: **Policy name**, **Users or groups in scope**, and **Reviewers**.
+3. Since the policy wizard has already suggested a name for the policy, the IT administrators and compliance specialists decide to keep the suggested name and focus on the remaining fields. They select the *All users* group for the **Users or groups in scope** field and select the compliance specialists that should investigate and remediate policy alerts for the **Reviewers** field. The last step to configure the policy and start gathering alert information is to select **Create policy**.
 
     ![Communication compliance detect inappropriate text wizard](../media/communication-compliance-case-wizard.png)
 

@@ -5,21 +5,20 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: conceptual
-
 search.appverid:
   - MET150
 ms.assetid:
 ms.collection:
   - m365-security
-  - Strat_O365_IP
+  - tier2
 ms.custom: TopSMBIssues
 ms.localizationpriority: high
 description: Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Email authentication in EOP
@@ -27,7 +26,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -47,13 +46,7 @@ DMARC prevents spoofing by examining the **From** address in messages. The **Fro
 
 However, DNS records for SPF, DKIM, and DMARC (collectively known as email authentication policies) are optional. Domains with strong email authentication policies like microsoft.com and skype.com are protected from spoofing. But domains with weaker email authentication policies, or no policy at all, are prime targets for being spoofed.
 
-As of March 2018, only 9% of domains of companies in the Fortune 500 publish strong email authentication policies. The remaining 91% of companies might be spoofed by an attacker. Unless some other email filtering mechanism is in-place, email from spoofed senders in these domains might be delivered to users.
-
-![DMARC policies of Fortune 500 companies.](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
-
-The proportion of small-to-medium sized companies that publish strong email authentication policies is smaller. And the number is even smaller for email domains outside North America and western Europe.
-
-Lack of strong email authentication policies is a large problem. While organizations might not understand how email authentication works, attackers fully understand, and they take advantage. Because of phishing concerns and the limited adoption of strong email authentication policies, Microsoft uses *implicit email authentication* to check inbound email.
+Lack of strong email authentication policies is a large problem. While organizations might not understand how email authentication works, attackers fully understand and they take advantage. Because of phishing concerns and the limited adoption of strong email authentication policies, Microsoft uses *implicit email authentication* to check inbound email.
 
 Implicit email authentication is an extension of regular email authentication policies. These extensions include: sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques. In the absence of other signals from these extensions, messages sent from domains that don't use email authentication policies will be marked as spoof.
 
@@ -160,7 +153,7 @@ Once you've gotten started with an SPF fallback policy of `?all`, you can gradua
 
 ### Configure permitted senders of unauthenticated email
 
-You can also use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
+You can also use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list-about.md) to permit senders to transmit unauthenticated messages to your organization.
 
 For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is one of the following values:
 

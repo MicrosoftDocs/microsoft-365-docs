@@ -1,7 +1,7 @@
 ---
 title: Configure Microsoft Defender Antivirus features
-description: You can configure Microsoft Defender Antivirus features with Intune, Microsoft Endpoint Configuration Manager, Group Policy, and PowerShell.
-keywords: Microsoft Defender Antivirus, antimalware, security, defender, configure, configuration, Config Manager, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, mobile device management, GP, group policy, PowerShell
+description: You can configure Microsoft Defender Antivirus features with Intune, Microsoft Configuration Manager, Group Policy, and PowerShell.
+keywords: Microsoft Defender Antivirus, antimalware, security, defender, configure, configuration, Config Manager, Microsoft Configuration Manager, SCCM, Intune, MDM, mobile device management, GP, group policy, PowerShell
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.mktglfcycl: manage
@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
+ms.date: 04/08/2021
 ---
 
 # Configure Microsoft Defender Antivirus features
@@ -35,7 +36,8 @@ search.appverid: met150
 
 You can configure Microsoft Defender Antivirus with a number of tools, such as:
 
-- Microsoft Endpoint Manager (which includes Microsoft Intune and Microsoft Endpoint Configuration Manager)
+- Microsoft Intune
+- Microsoft Configuration Manager
 - Group Policy
 - PowerShell cmdlets
 - Windows Management Instrumentation (WMI)
@@ -61,3 +63,22 @@ The following broad categories of features can be configured:
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
+> [!TIP]
+> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
+>
+> - Top paths that impact scan time
+> - Top files that impact scan time
+> - Top processes that impact scan time
+> - Top file extensions that impact scan time
+> - Combinations – for example:
+>   - top files per extension
+>   - top paths per extension
+>   - top processes per path
+>   - top scans per file
+>   - top scans per file per process
+>
+> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
+> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+>
+

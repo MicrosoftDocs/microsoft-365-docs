@@ -36,9 +36,8 @@ This article describes two deployment options, whether you want help or are doin
 
 To access a series of setup guides, sign in to your Microsoft 365 subscription, and then go to [Setup guidance](https://aka.ms/o365fasttrack).
 
->[!Note]
->You can also get help from a [Microsoft partner](https://www.microsoft.com/solution-providers/home).
->
+> [!NOTE]
+> You can also get help from a [Microsoft partner](https://www.microsoft.com/solution-providers/home).
 
 ## Do-it-yourself guided deployment of Microsoft 365 Enterprise
 
@@ -54,27 +53,25 @@ To deploy Microsoft 365 Enterprise on your own after completing your planning, t
 
    Includes determining an identity model (cloud-only or hybrid), and for hybrid identity, setting up directory synchronization between your on-premises Active Directory Domain Services (AD DS) and your Microsoft 365 subscription.
 
-3. [Implement security](/office365/securitycompliance/security-roadmap)
+3. [Implement security](/microsoft-365/security/office-365-security/defender-for-office-36)
 
    Includes configuring and rolling out basic and enhanced security, threat, and information protections for your tenant and identities in the first 30 days, 90 days, and beyond.
- 
+
 4. [Deploy client software](/DeployOffice/deployment-guide-microsoft-365-apps)
 
    Includes deploying Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus), the cloud-updated and always-current version of the Office suite (Word, Excel, PowerPoint, and others) on your devices. Every Microsoft 365 client license includes a license for Microsoft 365 Apps for enterprise.
- 
+
 5. [Set up mobile device management](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
    Microsoft 365 Enterprise includes mobile device management capabilities that help you secure and manage your users' mobile devices.
- 
+
 6. [Configure services and applications](configure-services-and-applications.md)
 
    Includes information on migration of your data and links to articles that get you started on key Microsoft 365 productivity apps such as Exchange Online, SharePoint Online, and Teams.
- 
+
 7. [Train your users](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
    Includes short videos that help your users get the most out of Microsoft 365 quickly.
- 
 
->[!Note]
->These steps are also for businesses and [nonprofits](https://go.microsoft.com/fwlink/?LinkId=627221) that want to start with a custom deployment of Microsoft 365 Enterprise. 
->
+> [!NOTE]
+> These steps are also for businesses and [nonprofits](https://go.microsoft.com/fwlink/?LinkId=627221) that want to start with a custom deployment of Microsoft 365 Enterprise. 

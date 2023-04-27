@@ -12,36 +12,39 @@ ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
-ms.collection: m365-security
+ms.collection:
+- m365-security
+- tier3
 description: Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Application Guard for Office for admins
 
 **Applies to:** Word, Excel, and PowerPoint for Microsoft 365 Apps, Windows 10 Enterprise, Windows 11 Enterprise
 
-Microsoft Defender Application Guard for Office (Application Guard for Office) helps prevent untrusted files from accessing trusted resources, keeping your enterprise safe from new and emerging attacks. This article walks admins through setting up supported devices for Application Guard for Office. 
+Microsoft Defender Application Guard for Office (Application Guard for Office) helps prevent untrusted files from accessing trusted resources, keeping your enterprise safe from new and emerging attacks. This article walks admins through setting up supported devices for Application Guard for Office.
 
 ## Prerequisites
 
 ### Licensing requirements
 
-* Microsoft 365 E5 or Microsoft 365 E5 Security
-* [Safe Documents in Microsoft 365](/microsoft-365/security/office-365-security/safe-docs)
+- Microsoft 365 E5 or Microsoft 365 E5 Security
+- [Safe Documents in Microsoft 365](/microsoft-365/security/office-365-security/safe-documents-in-e5-plus-security-about)
 
 ### Minimum hardware requirements
 
-* **CPU**: 64-bit, 4 cores (physical or virtual), virtualization extensions (Intel VT-x OR AMD-V), Core i5 equivalent or higher recommended
-* **Physical memory**: 8-GB RAM
-* **Hard disk**: 10 GB of free space on the system drive (SSD recommended)
+- **CPU**: 64-bit, 4 cores (physical or virtual), virtualization extensions (Intel VT-x OR AMD-V), Core i5 equivalent or higher recommended
+- **Physical memory**: 8-GB RAM
+- **Hard disk**: 10 GB of free space on the system drive (SSD recommended)
 
 ### Minimum software requirements
 
-* **Windows**: Windows 10 Enterprise edition, Client Build version 2004 (20H1) build 19041 or later. All versions of Windows 11 are supported.
-* **Office**: Microsoft 365 Apps with build 16.0.13530.10000 or later. For Current Channel and Monthly Enterprise Channel installations, this equals to version 2011. For Semi-Annual Enterprise Channel and Semi-Annual Enterprise Channel (Preview), the minimum version is 2108 or later. Both 32-bit and 64-bit versions are supported.
-* **Update package**: Windows 10 cumulative monthly security update [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
+- **Windows**: Windows 10 Enterprise edition, Client Build version 2004 (20H1) build 19041 or later. All versions of Windows 11 are supported.
+- **Office**: Microsoft 365 Apps with build 16.0.13530.10000 or later. For Current Channel and Monthly Enterprise Channel installations, this equals to version 2011. For Semi-Annual Enterprise Channel and Semi-Annual Enterprise Channel (Preview), the minimum version is 2108 or later. Both 32-bit and 64-bit versions are supported.
+- **Update package**: Windows 10 cumulative monthly security update [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Also, please refer to your computer manufacturer's guides on how to enable virtualization technology.
 To learn more about Microsoft 365 Apps update channels, see [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels).
@@ -50,7 +53,7 @@ To learn more about Microsoft 365 Apps update channels, see [Overview of update 
 
 ### Enable Application Guard for Office
 
-1. (Windows 10 only) Download and install **Windows 10 cumulative monthly security updates KB4571756**. 
+1. If you're running Windows 10, download and install **Windows 10 cumulative monthly security updates KB4571756**. Note that if you're running Windows 11, you don't need to download and install the security update. Simply follow the rest of the process steps.
 
 2. Select **Microsoft Defender Application Guard** under Windows Features and select **OK**. Enabling the Application Guard feature will prompt a system reboot. You can choose to reboot now or after step 3.
 
@@ -62,7 +65,7 @@ To learn more about Microsoft 365 Apps update channels, see [Overview of update 
    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
    ```
 
-3. From the Group Policy Editor window, expand **Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Application Guard**. Enable the **Turn on Microsoft Defender Application Guard in Managed Mode** setting. Set the value under Options as **2** or **3**. 
+3. From the Group Policy Editor window, expand **Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Application Guard**. Enable the **Turn on Microsoft Defender Application Guard in Managed Mode** setting. Set the value under Options as **2** or **3**.
 
    :::image type="content" source="../../media/ag04-deploy.png" alt-text="The option to turn on AG in Managed Mode" lightbox="../../media/ag04-deploy.png":::
 
@@ -89,8 +92,10 @@ For more on configuring Windows diagnostic settings, refer to [Configuring Windo
 
 ### Confirm that Application Guard for Office is enabled and working
 
-Before confirming that Application Guard for Office is enabled: 
-1. Launch Word, Excel, or PowerPoint on a device where the policies have been deployed. 
+Before confirming that Application Guard for Office is enabled:
+
+1. Launch Word, Excel, or PowerPoint on a device where the policies have been deployed.
+
 2. From the app you launched, go to **File -> Account**. On the Account page, verify that the expected license is shown.
 
 To confirm that Application Guard for Office is enabled, open an untrusted document. For example, you can open a document that was downloaded from the internet or an email attachment from someone outside your organization.
@@ -101,11 +106,11 @@ When you first open an untrusted file, you see an Office splash screen like the 
 
 After the file opens, there are a few visual indicators that signal that the file is open inside Application Guard for Office:
 
-* A callout in the ribbon
+- A callout in the ribbon
 
   :::image type="content" source="../../media/ag09-confirm.png" alt-text="The Doc file showing small App Guard note" lightbox="../../media/ag09-confirm.png":::
 
-* The application icon with a shield in the taskbar
+- The application icon with a shield in the taskbar
 
   ![Icon in taskbar.](../../media/ag12-limitations.png)
 
@@ -120,7 +125,7 @@ Office supports the following policies to configure Application Guard for Office
 |---|---|
 |Don't use Application Guard for Office|Enabling this policy forces Word, Excel, and PowerPoint to use the Protected View isolation container instead of Application Guard for Office.|
 |Configure Application Guard for Office container pre-creation|This policy determines if the Application Guard for Office container is pre-created for improved run-time performance. When you enable this policy, you can specify the number of days to continue pre-creating a container or let the Office built-in heuristic pre-create the container.
-|Don't allow copy/paste for Office documents opened in Application Guard for Office|Enabling this policy prevents a user from copying and pasting content from a document opened in Application Guard for Office to a document opened outside of the container.|
+|Configure copy and paste from Office documents opened in Application Guard|This policy setting allows you to control whether users can copy and paste content from Office to and from documents opened in Application Guard, as well as the allowed formats.|
 |Disable hardware acceleration in Application Guard for Office|This policy controls whether Application Guard for Office uses hardware acceleration to render graphics. If you enable this setting, Application Guard for Office uses software-based (CPU) rendering and won't load any third-party graphics drivers or interact with any connected graphics hardware.
 |Disable unsupported file types protection in Application Guard for Office|This policy controls whether Application Guard for Office will block unsupported file types from being opened or if it will enable the redirection to Protected View.
 |Turn off camera and microphone access for documents opened in Application Guard for Office|Enabling this policy removes Office access to the camera and microphone inside Application Guard for Office.|
@@ -131,9 +136,10 @@ Office supports the following policies to configure Application Guard for Office
 > [!NOTE]
 > For the following policies to take effect, users are required to sign out and sign in again to Windows:
 >
-> * Disable copy/paste for documents opened in Application Guard for Office
-> * Restrict printing for documents opened in Application Guard for Office
-> * Turn off camera and microphone access to documents opened in Application Guard for Office
+> - Configure copy and paste from Office documents opened in Application Guard
+> - Disable hardware acceleration in Application Guard for Office
+> - Restrict printing for documents opened in Application Guard for Office
+> - Turn off camera and microphone access to documents opened in Application Guard for Office
 
 ## Submit feedback
 
@@ -173,36 +179,36 @@ If you encounter any issues when launching Application Guard for Office, you're 
 
 ### Submit feedback via One Customer Voice
 
-You may also submit feedback from within Word, Excel, and PowerPoint if the issue happens when files are opened in Application Guard. Refer to [Provide feedback](https://insider.office.com/en-us/handbook#Provide-feedback) for detailed guidance.
+You may also submit feedback from within Word, Excel, and PowerPoint if the issue happens when files are opened in Application Guard. Refer to [Provide feedback](https://insider.office.com/handbook#Provide-feedback) for detailed guidance.
 
 ## Integration with Microsoft Defender for Endpoint and Microsoft Defender for Office 365
 
 Application Guard for Office is integrated with Microsoft Defender for Endpoint to provide monitoring and alerting on malicious activity that happens in the isolated environment.
 
-[Safe Documents in Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) is a feature that uses Microsoft Defender for Endpoint to scan documents opened in Application Guard for Office. For an additional layer of protection, users can't leave Application Guard for Office until the results of the scan have been determined.
+[Safe Documents in Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-documents-in-e5-plus-security-about) is a feature that uses Microsoft Defender for Endpoint to scan documents opened in Application Guard for Office. For an additional layer of protection, users can't leave Application Guard for Office until the results of the scan have been determined.
 
 ## Limitations and considerations
 
-* Application Guard for Office is a protected mode that isolates untrusted documents so that they can't access trusted corporate resources, an intranet, the user's identity, and arbitrary files on the computer. As a result, if a user tries to access a feature that has a dependency on such access—for example, inserting a picture from a local file on disk—the access fails and displays a prompt like the following example. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document.
+- Application Guard for Office is a protected mode that isolates untrusted documents so that they can't access trusted corporate resources, an intranet, the user's identity, and arbitrary files on the computer. As a result, if a user tries to access a feature that has a dependency on such access—for example, inserting a picture from a local file on disk—the access fails and displays a prompt like the following example. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document.
 
   :::image type="content" source="../../media/ag09-confirm.png" alt-text="The Dialog box stating safety message and the feature status" lightbox="../../media/ag09-confirm.png":::
 
   > [!NOTE]
   > Advise users to only remove protection if they trust the file and the source of the file.
 
-* Active content like macros and ActiveX controls are disabled in Application Guard for Office. To enable active content, the Application Guard protection must be removed.
+- Active content like macros and ActiveX controls are disabled in Application Guard for Office. To enable active content, the Application Guard protection must be removed.
 
-* Untrusted files from network shares or files shared from OneDrive, OneDrive for Business, or SharePoint Online open as read-only in Application Guard. Users can save a local copy of such files to continue working in the container or remove protection to directly work with the original file.
+- Untrusted files from network shares or files shared from OneDrive, OneDrive for Business, or SharePoint Online open as read-only in Application Guard. Users can save a local copy of such files to continue working in the container or remove protection to directly work with the original file.
 
-* Files that are protected by Information Rights Management (IRM) are blocked by default. If users want to open such files in Protected View, an administrator must configure policy settings for unsupported file types for the organization.
+- Files that are protected by Information Rights Management (IRM) are blocked by default. If users want to open such files in Protected View, an administrator must configure policy settings for unsupported file types for the organization.
 
-* Any customizations to Office applications in Application Guard for Office do not persist after a user signs out and signs in again or after the device restarts.
+- Any customizations to Office applications in Application Guard for Office do not persist after a user signs out and signs in again or after the device restarts.
 
-* Only Accessibility tools that use the UIA framework can provide an accessible experience for files opened in Application Guard for Office.
+- Only Accessibility tools that use the UIA framework can provide an accessible experience for files opened in Application Guard for Office.
 
-* Network connectivity is required for the first launch of Application Guard after installation. 
+- Network connectivity is required for the first launch of Application Guard after installation.
 
-* In the document's info section, the *Last Modified By* property may display **WDAGUtilityAccount** as the user. WDAGUtilityAccount is the anonymous account used by  Application Guard. The desktop user's identity isn't available inside the Application Guard container.
+- In the document's info section, the *Last Modified By* property may display **WDAGUtilityAccount** as the user. WDAGUtilityAccount is the anonymous account used by  Application Guard. The desktop user's identity isn't available inside the Application Guard container.
 
 ## Performance optimizations for Application Guard for Office
 
@@ -217,10 +223,13 @@ When this heuristic is met, Office will pre-create an Application Guard containe
 
 ## Known issues
 
-* Selecting web links (`http` or `https`) doesn't open the browser.
-* The default setting for copy-paste protection policy is to enable clipboard access to text only.
-* The default setting for unsupported file types protection policy is to block opening untrusted unsupported file types that are encrypted or have Information Rights Management (IRM) set. This includes files that are encrypted by using sensitivity labels from Microsoft Purview Information Protection.
-* CSV and HTML files are not supported at this time.
-* Application Guard for Office currently does not work with NTFS compressed volumes. If you are seeing an error "ERROR_VIRTUAL_DISK_LIMITATION" please try uncompressing the volume.
-* Updates to .NET might cause files to fail to open in Application Guard. As a workaround, users can restart their device when they come across this failure. Learn more about the issue at [Receiving an error message when attempting to open Windows Defender Application Guard or Windows Sandbox](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
-* Please see [Frequently asked questions - Microsoft Defender Application Guard for additional information.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard)
+- The default setting for unsupported file types protection policy is to block opening untrusted unsupported file types that are encrypted or have Information Rights Management (IRM) set. This includes files that are encrypted by using sensitivity labels from Microsoft Purview Information Protection.
+- HTML files are not supported at this time.
+- Application Guard for Office currently does not work with NTFS compressed volumes. If you are seeing an error "ERROR_VIRTUAL_DISK_LIMITATION" please try uncompressing the volume.
+- If you are seeing an error mentioning that the hypervisor may not be enabled, check the following items:
+  - Virtualization is enabled in the BIOS.
+  - Hyper-V is turned on.
+  - The Host Network Service is running.
+- Updates to .NET might cause files to fail to open in Application Guard. This can be resolved by restarting the machine.
+- Application Guard requires "Virtual Machines" to be granted "Logon as a service" permission, and "wdagutilityaccount" must **not** be added to the "Deny logon as a service" security policy setting.
+- Please see [Frequently asked questions - Microsoft Defender Application Guard for additional information.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard).

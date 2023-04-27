@@ -12,17 +12,18 @@ ms.localizationpriority: medium
 search.appverid: 
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
   - MET150
 description: Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 11/30/2022
 ---
 
 # Tune anti-phishing protection
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -36,7 +37,7 @@ If your subscription includes Microsoft Defender for Office 365, you can use [Of
 
 - [Safe Links in Microsoft Defender for Office 365](safe-links-policies-configure.md)
 
-- [Safe Attachments in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
+- [Safe Attachments in Microsoft Defender for Office 365](safe-attachments-policies-configure.md)
 
 - [Anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
 
@@ -44,7 +45,7 @@ Verify these Defender for Office 365 features are turned on.
 
 ## Report the phishing message to Microsoft
 
-Reporting phishing messages is helpful in tuning the filters that are used to protect all customers in Microsoft 365. For instructions, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+Reporting phishing messages is helpful in tuning the filters that are used to protect all customers in Microsoft 365. For instructions, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 ## Inspect the message headers
 
@@ -56,9 +57,9 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - On a monthly basis, run [Secure Score](../defender/microsoft-secure-score.md) to assess your organization's security settings.
 
-- For messages that end up in quarantine by mistake, or for messages that are allowed through, we recommend that you search for those messages in [Threat Explorer and real-time detections](threat-explorer.md). You can search by sender, recipient, or message ID. After you locate the message, go to details by clicking on the subject. For a quarantined message, look to see what the "detection technology" was so that you can use the appropriate method to override. For an allowed message, look to see which policy allowed the message.
+- For messages that end up in quarantine by mistake, or for messages that are allowed through, we recommend that you search for those messages in [Threat Explorer and real-time detections](threat-explorer-about.md). You can search by sender, recipient, or message ID. After you locate the message, go to details by clicking on the subject. For a quarantined message, look to see what the "detection technology" was so that you can use the appropriate method to override. For an allowed message, look to see which policy allowed the message.
 
-- Email from spoofed senders (the From address of the message doesn't match the source of the message) is classified as phishing in Defender for Office 365. Sometimes spoofing is benign, and sometimes users don't want messages from specific spoofed sender to be quarantined. To minimize the impact to users, periodically review the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md), the **Spoofed senders** tab in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md), and the [Spoof detections report](view-email-security-reports.md#spoof-detections-report). Once you have reviewed allowed and blocked spoofed senders and made any necessary overrides, you can be confident to [configure spoof intelligence in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings) to **Quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
+- Email from spoofed senders (the From address of the message doesn't match the source of the message) is classified as phishing in Defender for Office 365. Sometimes spoofing is benign, and sometimes users don't want messages from specific spoofed sender to be quarantined. To minimize the impact to users, periodically review the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md), the **Spoofed senders** tab in the [Tenant Allow/Block List](tenant-allow-block-list-about.md), and the [Spoof detections report](reports-email-security.md#spoof-detections-report). Once you have reviewed allowed and blocked spoofed senders and made any necessary overrides, you can be confident to [configure spoof intelligence in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings) to **Quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
 
 - You can repeat the above step for Impersonation (domain or user) in Microsoft Defender for Office 365. The Impersonation report is found under **Threat Management** \> **Dashboard** \> **Insights**.
 

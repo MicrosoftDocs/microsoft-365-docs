@@ -6,7 +6,7 @@ metadata:
   ms.author: chrisda
   author: chrisda
   manager: dansimp
-  ms.date:
+  ms.date: 4/12/2023
   audience: ITPro
   ms.topic: faq
 
@@ -16,7 +16,7 @@ metadata:
   ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
   ms.collection:
     - m365-security
-    - m365initiative-defender-office365
+    - tier2
   description: Admins can view frequently asked questions and answers about quarantined messages in Exchange Online Protection (EOP).
   ms.custom: seo-marvel-apr2020
   ms.subservice: mdo
@@ -27,7 +27,7 @@ summary: |
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
   **Applies to**
-  - [Exchange Online Protection](exchange-online-protection-overview.md)
+  - [Exchange Online Protection](eop-about.md)
   - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -35,9 +35,9 @@ summary: |
 
   For questions and answers about anti-spam protection, see [Anti-spam protection FAQ](anti-spam-protection-faq.yml).
 
-  For questions and answers about anti-malware protection, see [Anti-malware protection FAQ](anti-malware-protection-faq-eop.yml).
+  For questions and answers about anti-malware protection, see [Anti-malware protection FAQ](anti-malware-protection-faq.yml).
 
-  For questions and answers about anti-spoofing protection, see [Anti-spoofing protection FAQ](anti-spoofing-protection-faq.yml).
+  For questions and answers about anti-spoofing protection, see [Anti-spoofing protection FAQ](anti-phishing-protection-spoofing-faq.yml).
 
 sections:
   - name: Ignored
@@ -47,7 +47,9 @@ sections:
         answer: |
           By default, only admins can manage messages that were quarantined for malware. For more information, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md).
 
-          But, admins can create and apply _quarantine policies_ to anti-malware policies that define more capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).
+          But, admins can create and apply _quarantine policies_ to anti-malware policies that define more capabilities for users. For more information, see [Create quarantine policies](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
+
+          Users can't release their own messages that were quarantined as malware by anti-malware policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware or high-confidence phishing messages.
 
       - question: |
           How do I quarantine spam?
@@ -62,23 +64,11 @@ sections:
       - question: |
           What messages can end users access in quarantine?
         answer: |
-          Quarantine policies define whether users can access quarantined messages based on why the message was quarantined (for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). For more information, see [Quarantine policies](quarantine-policies.md).
+          Quarantine policies define whether users can access quarantined messages based on why the message was quarantined for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). 
 
-          By default, users can access the following types of quarantined messages where they're a recipient:
+          For the default access to quarantined messages, see the table in [Find and release quarantined messages as a user in EOP](quarantine-end-user.md)
 
-          - **Anti-spam policies**: Spam, bulk email, and phishing messages (not high confidence phishing messages).
-          - **Anti-phishing policies**: Spoofed senders, user impersonation protection (Defender for Office 365), domain impersonation protection (Defender for Office 365), and mailbox intelligence protection (Defender for Office 365).
-
-          For more information, see [Find and release quarantined messages as a user](quarantine-end-user.md).
-
-          By default, end users can't access the following types of quarantined messages where they are a recipient:
-
-          - **Anti-spam policies**: High confidence phishing.
-          - **Anti-malware policies**
-          - **Safe Attachments (Defender for Office 365)**: Email messages from Safe Attachments policies and files from Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
-          - **Mail flow rules (transport rules)**: Messages that were quarantined because of the **Deliver the message to the hosted quarantine** action in mail flow rules.
-
-          For more information, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md).
+          Users can't release their own messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware or high-confidence phishing messages.
 
       - question: |
           How long are messages kept in the quarantine?

@@ -14,9 +14,11 @@ search.appverid:
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection: 
   - m365-security
+  - tier1
 description: Learn about the validation of DKIM signed messages in Exchange Online Protection and Exchange Online
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Support for validation of DKIM signed messages
@@ -24,7 +26,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 

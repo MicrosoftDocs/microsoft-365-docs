@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
@@ -25,6 +26,8 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -68,6 +71,21 @@ Verify that the package you are installing matches the host distribution and ver
 |
 
 For [manual deployment](linux-install-manually.md), make sure the correct distro and version had been chosen.
+
+## Installation failed due to dependency error
+
+If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the pre-requisite dependencies. 
+
+The following external package dependencies exist for the mdatp package:
+
+- The mdatp RPM package requires "glibc >= 2.17", "audit", "policycoreutils", "semanage", "selinux-policy-targeted", "mde-netfilter" 
+- For RHEL6 the mdatp RPM package requires "audit", "policycoreutils", "libselinux", "mde-netfilter" 
+- For DEBIAN the mdatp package requires "libc6 >= 2.23", "uuid-runtime", "auditd", "mde-netfilter" 
+
+The mde-netfilter package also has the following package dependencies:
+
+- For DEBIAN the mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0"  
+- For RPM the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2" 
 
 ## Installation failed
 

@@ -1,10 +1,11 @@
 ---
-title: "About the Microsoft Purview solutions trial"
+title: "Free trial of Microsoft Purview compliance solutions"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 03/16/2023
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
@@ -12,32 +13,30 @@ ms.collection:
 - purview-compliance
 - highpri
 - tier1
+- contentengagementFY23
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to join the Microsoft Purview solutions free trial. Try all premium capabilities of Purview solutions at the E5 level, such as Audit and Information Protection, to help your organization manage data security and compliance needs. Get details about eligibility and how to sign up today."
+description: "Try all Microsoft Purview risk and compliance solutions at the E5 level for free for 90 days. Get details on trial eligibility and how to sign up."
 ---
 
-# About the Microsoft Purview solutions trial
+# About the Microsoft Purview risk and compliance solutions trial
 
-Microsoft Purview solutions help protect your organization from internal threats arising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and internal business requirements.
+The Microsoft Purview solutions trial is a free and easy way to try [capabilities of Microsoft Purview risk and compliance solutions](purview-compliance.md). After a quick setup taking only a couple of minutes, the features of the Microsoft E5 license package are available for you to use for up to 90 days.
 
-The Microsoft Purview solutions trial is the easiest way to try all the capabilities of Microsoft Purview solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
+- [**Start now** at the Microsoft Purview compliance trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)
+- [Get detailed sign-up instructions](#how-to-sign-up-for-the-trial)
+- [Check eligibility and licensing requirements](#eligibility-and-licensing)
+- [See which roles are required to start the trial](#required-roles-for-starting-the-trial)
+- [Find details about setup, support, and extending the trial](#getting-started-finding-support-and-ending-the-trial)
+- [View terms and conditions](/legal/microsoft-365/microsoft-365-trial)
 
-[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+## Eligibility and licensing
 
-## Terms and conditions
+Microsoft 365 E3, Office 365 E3, and Enterprise Mobility and Security E3 customers who don't already have a Microsoft E5 license package are eligible for the Purview solutions trial. The trial isn't available for Microsoft 365 Government customers.
 
-See the [terms and conditions](/legal/microsoft-365/microsoft-365-trial) for Microsoft 365 trials.
-
-## Eligibility
-
-Microsoft 365 E3 and Office 365 E3 customers who don't already have a Microsoft E5 license package are eligible for the Purview solutions trial. The trial isn't available for Microsoft 365 Government customers.
-
-## Licensing
-
-As part of the trial setup, 300 Microsoft 365 E5 compliance licenses are automatically applied to your organization. The licenses are active for 90 days.
+As part of the trial setup, 300 Microsoft 365 E5 compliance licenses are automatically applied to your organization. The licenses are active for 90 days. You may want to refer to [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) for licensing details for each solution.
 
 ## Required roles for starting the trial
 
@@ -83,7 +82,10 @@ If you decide not to upgrade to the E5 level solutions, unless stated otherwise 
 
 ## Learn more about Purview solutions
 
-Wondering what you can experience in your free trial? The Purview solutions trial includes the following solutions:
+The Purview solutions trial includes the solutions listed below.
+
+> [!NOTE]
+> Certain Purview features may appear in other Microsoft products for which a license is needed. Refer to each Purview solution's licensing details at [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 - **Audit**
 
@@ -99,8 +101,10 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
 - **Data Lifecycle Management**
 
-  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. Learn more about [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention).
+  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. Learn more about [adaptive policy scopes](purview-adaptive-scopes.md).
 
+  Learn more about [Microsoft Purview Data Lifecycle Management](data-lifecycle-management.md).
+ 
 - **Data Loss Prevention**
 
   Microsoft Purview Data Loss Prevention (DLP) helps you control sharing and use of sensitive info on devices, apps, and services. With trials, you can extend coverage of DLP policies to Teams and devices, protect even more sensitive content using trainable classifiers and exact data match (EDM), and get started quickly with our recommended DLP policies.  [Learn more about Data Loss Prevention](dlp-learn-about-dlp.md)
@@ -124,15 +128,15 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
   - All files and emails labeled during your trial stay labeled. You can manually remove the labels.
   - Your existing policies will stay turned on unless you turn them off.
-  - Any auto-labeling policies cannot be edited after the trial ends, but can be deleted.
+  - Any auto-labeling policies can't be edited after the trial ends, but can be deleted.
   
-  For more information about each of these preconfigured features and how they will impact users, see Learn about the [free trial for Microsoft Purview Information Protection](mip-easy-trials.md).
+  For more information about each of these preconfigured features and how they'll affect users, see Learn about the [free trial for Microsoft Purview Information Protection](mip-easy-trials.md).
 
   For more information about the full range of features for Microsoft Purview Information Protection, see [Microsoft Purview Information Protection](information-protection.md).
 
 - **Insider Risk Management**
 
-  Leverage artificial intelligence to help you quickly identify, triage, and remediate internal risks. Using logs from Microsoft 365 and Azure services, you can define policies that monitor for risk signals, then take remediation actions such as promoting user education or initiating an investigation. Learn more about [Insider Risk Management](insider-risk-management-solution-overview.md)
+  Use artificial intelligence to help you quickly identify, triage, and remediate internal risks. Using logs from Microsoft 365 and Azure services, you can define policies that monitor for risk signals, then take remediation actions such as promoting user education or initiating an investigation. Learn more about [Insider Risk Management](insider-risk-management-solution-overview.md)
 
 <!--
 - **privacy management**
@@ -142,11 +146,15 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
 - **Records Management**
 
-  Use integrated Microsoft Purview Records Management features to:
+  Use integrated Microsoft Purview Records Management features to automate the retention schedule for organizational regulatory, legal, and business-critical records. Get full content lifecycle support, from creation to collaboration, record declaration, retention, and disposition:
 
   - Classify content as a record to prevent users from editing, as required by regulations, laws, or organizational policy
   - Apply retention labels to content automatically when it matches criteria you specify, using auto-apply label policies
   - Use adaptive scope policies to dynamically target your retention label policies to locations, with no limit on how many locations are included
-  - Get full content lifecycle support, including the ability to perform disposition review on contents before they are permanently deleted at the end
+  - Get full content lifecycle support, including the ability to perform disposition review on contents before they're permanently deleted at the end
 
-  For more information on the full range of feature for Microsoft Records Management, learn more about [Records Management](records-management.md)
+  For more information on the full range of features for Microsoft Purview Records Management, learn more about [Records Management](records-management.md)
+
+## Terms and conditions
+
+See the [terms and conditions](/legal/microsoft-365/microsoft-365-trial) for Microsoft 365 trials.
