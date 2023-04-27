@@ -1,5 +1,5 @@
 ---
-title: Performing Bulk SharePoint site Cross-tenant migrations
+title: Performing Bulk SharePoint site Cross-tenant migrations (preview)
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
@@ -14,9 +14,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-migratetom365
 search.appverid: MET150
-description: "Performing Bulk SharePoint site Cross-tenant migrations"
+description: "Performing Bulk SharePoint site Cross-tenant migrations. This feature is in private preview."
 ---
-# Performing Bulk SharePoint Site Migrations
+# Performing Bulk SharePoint Site Migrations (preview)
+
+>[!Note]
+>Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
 
 This article discusses to to perform bulk SharePoint site migrations using the  Cross-tenant SharePoint migration solution. To learn more, see [Cross-tenant SharePoint migration overview](cross-tenant-SharePoint-migration.md).
 

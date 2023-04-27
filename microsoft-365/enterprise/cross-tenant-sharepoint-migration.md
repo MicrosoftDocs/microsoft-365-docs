@@ -18,7 +18,7 @@ description: "Learn about the Cross-tenant SharePoint migration solution to migr
 # Cross-tenant SharePoint migration (preview)
 
 >[!Note]
->Cross-Tenant SharePoint migration is in a private preview stage of development. As an unfinished project any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
+>Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
 
 
 SharePoint sites can now be moved from one tenant to another using the Cross-tenant SharePoint migration feature. 

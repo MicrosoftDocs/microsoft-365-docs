@@ -1,5 +1,5 @@
 ---
-title: SharePoint Cross-tenant SharePoint migration Step 3
+title: SharePoint Cross-tenant SharePoint migration Step 3 (preview)
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
@@ -16,7 +16,10 @@ ms.collection:
 search.appverid: MET150
 description: "Step 3 of the SharePoint Cross-tenant migration feature"
 ---
-# Step 3: Verifying trust
+# Step 3: Verifying trust (preview)
+
+>[!Note]
+>Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
 
 This is Step 3 in a solution designed to complete a **Cross-tenant SharePoint migration.** To learn more, see [Cross-tenant SharePoint migration overview](cross-tenant-SharePoint-migration.md).
 
