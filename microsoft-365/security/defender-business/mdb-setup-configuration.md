@@ -52,8 +52,7 @@ When you're ready to set up and configure Defender for Business, you can choose 
 
 4. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Assets** > **Devices**. 
 
-   - If Defender for Business isn't provisioned yet, that process begins now. 
-   - If Defender for Business has finished provisioning, you're promoted to use the setup wizard, which resembles the following image: 
+   If Defender for Business isn't provisioned yet, that process begins now. When Defender for Business has finished provisioning, you're prompted to use the setup wizard, as shown in the following image: 
 
       :::image type="content" source="media/mdb-wizard-start.png" alt-text="Screenshot of wizard home screen to set up Defender for Business." lightbox="media/mdb-wizard-start.png":::
 
