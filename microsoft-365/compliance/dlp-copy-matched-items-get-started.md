@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/26/2023
+ms.date: 04/27/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -43,7 +43,7 @@ See the [licensing requirements for Information Protection](/office365/servicede
 
 ## Permissions
 
-Standard DLP permissions are required. For more information, see [Permissions](dlp-create-deploy-policy.md#permissions).
+Standard Microsoft Purview Data Loss Prevention (DLP) permissions are required. For more information, see [Permissions](dlp-create-deploy-policy.md#permissions).
 
 ### Onboard devices
 
@@ -51,23 +51,24 @@ Before you can use copy matched items you have to onboard Windows 10/11 devices 
 
 ### Setup Azure storage
 
+> [!IMPORTANT]
+> Containers inherit the permissions of the storage account that they are in. You can't set different permissions per container. If you need to configure different permission for different regions, you must create multiple storage accounts, not multiple containers. 
+
 You should have answers to these question before setting up your Azure storage and scoping the feature to users.
 
 #### Do you need to compartmentalize items and access along role or departmental lines?
 
-For example, if your organization wants to have one set of administrators or DLP event investigators who can view saved items from your senior leadership and another set of adminstrators or DLP event investigators for saved items from human resources, you should create one Azure storage account for senior leadership and another for human resources. This ensures that the Azure storage admins or DLP event investigators can only see the items that matched DLP policies from their respective groups.  
+For example, if your organization wants to have one set of administrators or DLP event investigators who can view saved items from your senior leadership and another set of administrators or DLP event investigators for saved items from human resources, you should create one Azure storage account for senior leadership and another for human resources. This ensures that the Azure storage admins or DLP event investigators can only see the items that matched DLP policies from their respective groups.  
 
 #### Do you want to use containers to organize saved items? 
 
 You can create multiple different evidence containers within same storage account to sort saved items into. For example, one for items saved off from the HR department and one for IT department. 
-> [!IMPORTANT]
-> Don't use containers to separate items from multiple regions that have different legal and regulatory requirements. Containers inherit the permissions of the storage account that they are in. You can't set different permissions per container. If you need to configure different permission for different regions, you must create multiple storage accounts, not multiple containers. 
 
 #### What is your strategy for protecting against saved item deletion or modification?
 
-In the Azure Storage, data protection refers to strategies for protecting the storage account and data within it from being deleted or modified, or for restoring data after it has been deleted or modified. Azure Storage also offers options for disaster recovery, including multiple levels of redundancy to protect your data from service outages due to hardware problems or natural disasters, and customer-managed failover in the event that the data center in the primary region becomes unavailable. For more information, see [Data protection overview](/azure/storage/blobs/data-protection-overview.md).
+In the Azure Storage, data protection refers to strategies for protecting the storage account and data within it from being deleted or modified, or for restoring data after it has been deleted or modified. Azure Storage also offers options for disaster recovery, including multiple levels of redundancy to protect your data from service outages due to hardware problems or natural disasters, and customer-managed failover if the data center in the primary region becomes unavailable. For more information, see [Data protection overview](/azure/storage/blobs/data-protection-overview.md).
 
-You can also configure immutability policies for your blob data which protects against the saved items being overwritten or deleted. For more information, see [Store business-critical blobl data with immutable storage](/azure/storage/blobs/immutable-storage-overview.md)
+You can also configure immutability policies for your blob data that protects against the saved items being overwritten or deleted. For more information, see [Store business-critical blob data with immutable storage](/azure/storage/blobs/immutable-storage-overview.md)
 
 #### Create an Azure storage account
 
@@ -79,19 +80,17 @@ The procedures for setting up your Azure storage account, container and blobs ar
 
 Be sure to save the name and URL of the Azure blob container. To view the URL, open the Azure storage portal \> **Home \> **Storage Accounts** \> **Container** \> **Properties**
 
-
-
 ### Set permissions on the Azure blob storage
 
 You have to configure two sets of permissions on the blobs, one for the administrators and investigators so they can view and manage evidence and another for users whose devices need to upload items to Azure. You should [create custom role groups in Microsoft Purview compliance](../security/office-365-security/scc-permissions.md) to enforce least privileges and assign accounts to them.
 
 #### Permissions on Azure blob for administrators and investigators
 
-Once you've created the role group that DLP incident investigators will use, it must have these permissions on the Azure blob. For more information on configuring blob access, see [how to authorize access to blob data in the Azure portal](/azure/storage/blobs/authorize-data-operations-portal) and [Assign share-level permissions](/azure/storage/files/storage-files-identity-ad-ds-assign-permissions?tabs=azure-portal.md)
+Once you've created the role group that DLP incident investigators will use, it must have these permissions on the Azure blob. For more information on configuring blob access, see [how to authorize access to blob data in the Azure portal](/azure/storage/blobs/authorize-data-operations-portal) and [Assign share-level permissions](/azure/storage/files/storage-files-identity-ad-ds-assign-permissions?tabs=azure-portal.md).
 
 ##### Investigator actions
 
-Configure these permissions for these actions for investigators
+Configure these permissions for these actions for investigators:
 
 
 |Object  |Permissions  |
@@ -129,7 +128,7 @@ The JSON for the investigator role group should look like this:
 
 #### Permissions on Azure blob for users
 
-Assign these permissions to the Azure blob for the users role.
+Assign these permissions to the Azure blob for the users role:
 
 ##### User actions
 
@@ -186,7 +185,7 @@ Create a DLP policy as you normally would. Refer to [Create and Deploy data loss
 Configure your policy using these settings:
 
 - Make sure that **Devices** is the only location selected.
-- In **Incident reports**, toggle **Send an alert to admins when a rule match occurs** to **On**
+- In **Incident reports**, toggle **Send an alert to admins when a rule match occurs** to **On**.
 - In **Incident reports**, select **Collect original file as evidence for all selected file activities on Endpoint**.
 - Select the storage account you want.
 - Select the activities (**Copy to a removable USB device**, **Copy to a network share**, **Print**, **Copy or move using unallowed Bluetooth app**, **Copy or move using RDP**) you want to copy matched items to Azure storage for.
@@ -203,7 +202,7 @@ Configure your policy using these settings:
 1. During this preview, the link returns this error:
     1. `This XML file does not appear to have any style information associated with it. The document tree is shown below`
 
-1. During this preview, you'll have to copy the full hash value from the URL in the browser address bar.
+1. During this preview, you have to copy the full hash value from the URL in the browser address bar.
 
 :::image type="content" source="../media/dlp-guid-access-copy-saved-item.png" alt-text="Screen shot of a browser address bar with the hashed portion of the URL called out in a red box.":::
 
