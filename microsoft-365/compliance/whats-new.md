@@ -45,7 +45,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md) when you use auto-apply retention label policies.
 - **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Yammer.
-- **In preview**: Support for Azure Active Directory administrative units—for [data lifecycle managment](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
+- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle managment](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
 - **In preview**: You can now optionally configure [auto-approval](disposition.md#auto-approval-for-disposition) when you configure a retention label for disposition review.
 
 ### Data loss prevention
