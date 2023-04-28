@@ -113,11 +113,12 @@ Download the following files:
 
 Here's an [example mobileconfig file](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig).
 
-> [!NOTE] 
+> [!NOTE]
 > For the *upload to cloud service* activity, if you only want to monitor the browser and the URL in the browser address bar, you can enable *DLP_browser_only_cloud_egress* and *DLP_ax_only_cloud_egress*. 
 >
 > Here is an example [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/cloud_egress/com.microsoft.wdav.mobileconfig).
 
+[!INCLUDE [device-macos-check-browser-vs-end-url](../includes/device-macos-check-browser-vs-end-url.md)]
 
 ## Offboard macOS devices using Intune 
 

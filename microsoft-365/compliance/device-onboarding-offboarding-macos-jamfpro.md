@@ -132,6 +132,8 @@ Download the following files.
 
 9. On the next page, choose the **Scope** tab, select the appropriate targets for this configuration profile, and then choose **Save**.
 
+[!INCLUDE [device-macos-check-browser-vs-end-url](../includes/device-macos-check-browser-vs-end-url.md)] 
+
 ### Deploy System Configuration Profiles
 
 1. On the **Configuration Profiles** page of the JAMF Pro console, select **Upload** and then choose **File**.
@@ -159,7 +161,6 @@ Download the following files.
 9. Choose the **Scope** tab and then target computers before choosing choose **Save**.
  
 10. On the **General** page, enter a name for the new policy.
-
 
 
 ## Offboard macOS devices using JAMF Pro ##

@@ -86,7 +86,6 @@ If any of these individual files are updated, you must download the updated bund
 
 1. Choose **Save**. 
 
-
 ### Enable full-disk access 
 
 To update the existing full disk access profile with the `fulldisk.mobileconfig` file, upload `fulldisk.mobileconfig` to JAMF. For more information, refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
@@ -94,6 +93,7 @@ To update the existing full disk access profile with the `fulldisk.mobileconfig`
 ### Enable accessibility access to Microsoft Purview data loss prevention ###
 To grant accessibility access to DLP, upload the `accessibility.mobileconfig` file you downloaded previously to JAMF, as described in [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
+[!INCLUDE [device-macos-check-browser-vs-end-url](../includes/device-macos-check-browser-vs-end-url.md)]
 
 ### Check the macOS device
 

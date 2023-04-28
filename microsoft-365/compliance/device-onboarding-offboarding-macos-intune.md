@@ -131,6 +131,8 @@ Microsoft Endpoint data lost protection is installed as a component of Microsoft
 
 7. You can visit **Apps** \> **By platform** \> **macOS** to see the new application in the list of all applications.
 
+[!INCLUDE [device-macos-check-browser-vs-end-url](../includes/device-macos-check-browser-vs-end-url.md)]
+
 ## Offboard macOS devices using Intune ##
 
 > [!NOTE]
