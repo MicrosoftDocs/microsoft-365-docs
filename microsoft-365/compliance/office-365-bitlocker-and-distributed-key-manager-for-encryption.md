@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
+ms.date: 09/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -33,15 +34,14 @@ The following table describes the BitLocker key protection chain for a given ser
 | AES 256-bit External Key | Per Server | BitLocker APIs | TPM or Secret Safe | Lockbox / Access Control |
 |  |  |  | Mailbox Server Registry | TPM encrypted |
 | 48-digit Numerical Password | Per Disk | BitLocker APIs | Active Directory | Lockbox / Access Control |
-| X.509 Certificate as Data Recovery Agent (DRA) also called Public Key Protector | Environment (e.g., Exchange Online multitenant) | Microsoft CA | Build System | No one user has the full password to the private key. The password is under physical protection. |
-
+| X.509 Certificate as Data Recovery Agent (DRA) also called Public Key Protector | Environment (for example, Exchange Online multitenant) | Microsoft CA | Build System | No one user has the full password to the private key. The password is under physical protection. |
 
 BitLocker key management involves the management of recovery keys that are used to unlock/recover encrypted disks in a Microsoft datacenter. Microsoft 365 stores the master keys in a secured share, only accessible by individuals who have been screened and approved. The credentials for the keys are stored in a secured repository for access control data (what we call a "secret store"), which requires a high level of elevation and management approvals to access using a just-in-time access elevation tool.
 
 BitLocker supports keys which fall into two management categories:
 
-- BitLocker-managed keys, which are generally short-lived and tied to the lifetime of an operating system instance installed on a server or to a given disk. These keys are deleted and reset during server reinstallation or disk formatting.
+- BitLocker-managed keys, which are short-lived and tied to the lifetime of an operating system instance installed on a server or to a given disk. These keys are deleted and reset during server reinstallation or disk formatting.
 
 - BitLocker recovery keys, which are managed outside of BitLocker but used for disk decryption. BitLocker uses recovery keys for the scenario in which an operating system is reinstalled, and encrypted data disks already exist. Recovery keys are also used by Managed Availability monitoring probes in Exchange Online where a responder may need to unlock a disk.
 
-BitLocker-protected volumes are encrypted with a full volume encryption key, which in turn is encrypted with a volume master key. BitLocker uses FIPS-compliant algorithms to ensure that encryption keys are never stored or sent over the wire in the clear. The Microsoft 365 implementation of customer data-at-rest-protection does not deviate from the default BitLocker implementation.
+BitLocker-protected volumes are encrypted with a full volume encryption key, which in turn is encrypted with a volume master key. BitLocker uses FIPS-compliant algorithms to ensure that encryption keys are never stored or sent over the wire in the clear. The Microsoft 365 implementation of customer data-at-rest-protection doesn't deviate from the default BitLocker implementation.

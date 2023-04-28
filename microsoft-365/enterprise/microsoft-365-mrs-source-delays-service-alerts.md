@@ -3,12 +3,12 @@ title: "MRS service alerts"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.date: 12/13/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-search.appveyor:
+search.appverid:
 - MET150
 ms.collection:
 - scotvorg

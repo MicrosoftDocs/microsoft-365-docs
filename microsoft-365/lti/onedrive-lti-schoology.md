@@ -4,12 +4,14 @@ ms.author: danismith
 author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman 
+ms.date: 08/08/2022
 audience: admin
 ms.topic: article
 ms.service: o365-administration
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu
+- tier2
 ms.localizationpriority: medium
 description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability App for PowerSchool Unified Classroom® Schoology Learning.
 ---

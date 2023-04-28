@@ -3,6 +3,7 @@ title: "Scheduler for Microsoft 365 FAQ"
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
+ms.date: 04/15/2021
 audience: Admin
 ms.topic: article
 ms.service: scheduler

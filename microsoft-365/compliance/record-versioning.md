@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date:
+ms.date: 02/27/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -51,7 +51,7 @@ You can now do the following things:
 
 If the retention label is configured for [disposition review](disposition.md) at the end of the retention period, each version undergoes its own disposition review.
 
-By default, record versioning is automatically available for any document that has a retention label applied that marks the item as a record, and that label is [published to the site](create-apply-retention-labels.md). When a user views the document properties by using the details pane, they can toggle the **Record status** between **Locked** and **Unlocked**.
+By default, record versioning is automatically available for any document that has a retention label applied that marks the item as a record, and that label is [published to the site](create-apply-retention-labels.md). When a user views the document properties by using the details pane, they can toggle the **Record status** between **Locked** and **Unlocked**. A padlock icon might also be displayed for the document, to help identify when the file is locked.
 
 While the document is unlocked, any user with standard edit permissions can edit the file. However, users can't delete the file, because it's still a record. When editing is complete, a  user can then toggle the **Record status** from **Unlocked** to **Locked**, which prevents further edits while in this status.
 <br/><br/>

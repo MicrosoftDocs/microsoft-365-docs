@@ -5,10 +5,12 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 09/18/2020
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: overview
-ms.collection: m365-security
+ms.collection: 
+  - m365-security
+  - tier2
 ms.localizationpriority: medium
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom: 
@@ -24,7 +26,7 @@ search.appverid: met150
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -45,13 +47,13 @@ To understand how EOP works, it helps to see how it processes incoming email:
 
 1. When an incoming message enters EOP, it initially passes through connection filtering, which checks the sender's reputation. The majority of spam is stopped at this point and rejected by EOP. For more information, see [Configure connection filtering](connection-filter-policies-configure.md).
 
-2. Then the message is inspected for malware. If malware is found in the message or the attachment(s) the message is delivered to quarantine. By default, only admins can view and interact with malware quarantined messages. But, admins can create and use [quarantine policies](quarantine-policies.md) to specify what users are allowed to do to quarantined messages. To learn more about malware protection, see [Anti-malware protection in EOP](anti-malware-protection.md).
+2. Then the message is inspected for malware. If malware is found in the message or the attachment(s) the message is delivered to quarantine. By default, only admins can view and interact with malware quarantined messages. But, admins can create and use [quarantine policies](quarantine-policies.md#anatomy-of-a-quarantine-policy) to specify what users are allowed to do to quarantined messages. To learn more about malware protection, see [Anti-malware protection in EOP](anti-malware-protection-about.md).
 
 3. The message continues through policy filtering, where it's evaluated against any mail flow rules (also known as transport rules) that you've created. For example, a rule can send a notification to a manager when a message arrives from a specific sender.
 
    In on-premises organization with Exchange Enterprise CAL with Services licenses, [Microsoft Purview data loss prevention (DLP)](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) checks in EOP also happen at this point.
 
-4. The message passes through content filtering (anti-spam and anti-spoofing) where harmful messages are identified as spam, high confidence spam, phishing, high confidence phishing, or bulk (anti-spam policies) or spoofing (spoof settings in anti-phishing policies). You can configure the action to take on the message based on the filtering verdict (quarantine, move to the Junk Email folder, etc.), and what users can do to the quarantined messages using [quarantine policies](quarantine-policies.md). For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md) and [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md).
+4. The message passes through content filtering (anti-spam and anti-spoofing) where harmful messages are identified as spam, high confidence spam, phishing, high confidence phishing, or bulk (anti-spam policies) or spoofing (spoof settings in anti-phishing policies). You can configure the action to take on the message based on the filtering verdict (quarantine, move to the Junk Email folder, etc.), and what users can do to the quarantined messages using [quarantine policies](quarantine-policies.md#anatomy-of-a-quarantine-policy). For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md) and [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md).
 
 A message that successfully passes all of these protection layers is delivered to the recipients.
 
@@ -81,22 +83,22 @@ For information about requirements, important limits, and feature availability a
 |Feature|Comments|
 |---|---|
 |**Protection**||
-|Anti-malware|[Anti-malware protection in EOP](anti-malware-protection.md) <p> [Anti-malware protection FAQ](anti-malware-protection-faq-eop.yml) <p> [Configure anti-malware policies in EOP](configure-anti-malware-policies.md)|
+|Anti-malware|[Anti-malware protection in EOP](anti-malware-protection-about.md) <p> [Anti-malware protection FAQ](anti-malware-protection-faq.yml) <p> [Configure anti-malware policies in EOP](anti-malware-policies-configure.md)|
 |Inbound anti-spam|[Anti-spam protection in EOP](anti-spam-protection-about.md) <p> [Anti-spam protection FAQ](anti-spam-protection-faq.yml) <p> [Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
 |Outbound anti-spam|[Outbound spam protection in EOP](outbound-spam-protection-about.md) <p> [Configure outbound spam filtering in EOP](outbound-spam-policies-configure.md) <p> [Control automatic external email forwarding in Microsoft 365](outbound-spam-policies-external-email-forwarding.md)|
 |Connection filtering|[Configure connection filtering](connection-filter-policies-configure.md)|
 |Anti-phishing|[Anti-phishing policies in Microsoft 365](anti-phishing-policies-about.md) <p> [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)|
-|Anti-spoofing protection|[Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md) <p> [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md)|
+|Anti-spoofing protection|[Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md) <p> [Manage the Tenant Allow/Block List](tenant-allow-block-list-about.md)|
 |Zero-hour auto purge (ZAP) for delivered malware, spam, and phishing messages|[ZAP in Exchange Online](zero-hour-auto-purge.md)|
 |Preset security policies|[Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md) <p> [Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md)|
-|Tenant Allow/Block List|[Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md)|
+|Tenant Allow/Block List|[Manage the Tenant Allow/Block List](tenant-allow-block-list-about.md)|
 |Block lists for message senders|[Create blocked sender lists in EOP](create-block-sender-lists-in-office-365.md)|
 |Allow lists for message senders|[Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)|
 |Directory Based Edge Blocking (DBEB)|[Use Directory Based Edge Blocking to reject messages sent to invalid recipients](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|
 |**Quarantine and submissions**||
 |Admin submission|[Use Admin submission to submit suspected spam, phish, URLs, and files to Microsoft](submissions-admin.md)|
-|User reported message settings|[User reported message settings](submissions-user-reported-messages-files-custom-mailbox.md)|
-|Quarantine - admins|[Manage quarantined messages and files as an admin in EOP](quarantine-admin-manage-messages-files.md) <p> [Quarantined messages FAQ](quarantine-faq.yml) <p> [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md) <p> [Anti-spam message headers in Microsoft 365](message-headers-eop-mdo.md) <p> You can analyze the message headers of quarantined messages using the [Message Header Analyzer at](https://mha.azurewebsites.net/).|
+|User reported message settings|[User reported settings](submissions-user-reported-messages-custom-mailbox.md)|
+|Quarantine - admins|[Manage quarantined messages and files as an admin in EOP](quarantine-admin-manage-messages-files.md) <p> [Quarantined messages FAQ](quarantine-faq.yml) <p> [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md) <p> [Anti-spam message headers in Microsoft 365](message-headers-eop-mdo.md) <p> You can analyze the message headers of quarantined messages using the [Message Header Analyzer at](https://mha.azurewebsites.net/).|
 |Quarantine - end-users|[Find and release quarantined messages as a user in EOP](quarantine-end-user.md) <p> [Use quarantine notifications to release and report quarantined messages](quarantine-quarantine-notifications.md) <p> [Quarantine policies](quarantine-policies.md)|
 |**Mail flow**||
 |Mail flow rules|[Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Mail flow rule conditions and exceptions (predicates) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Mail flow rule actions in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Manage mail flow rules in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Mail flow rule procedures in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
@@ -105,7 +107,7 @@ For information about requirements, important limits, and feature availability a
 |Enhanced Filtering for Connectors|[Enhanced filtering for connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)|
 |**Monitoring**||
 |Message trace|[Message trace](message-trace-scc.md) <p> [Message trace in the Exchange admin center](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
-|Email & collaboration reports|[View email security reports](view-email-security-reports.md)|
+|Email & collaboration reports|[View email security reports](reports-email-security.md)|
 |Mail flow reports|[Mail flow reports in the Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 |Mail flow insights|[Mail flow insights in the Exchange admin center](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
 |Auditing reports|[Auditing reports in the Exchange admin center](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|

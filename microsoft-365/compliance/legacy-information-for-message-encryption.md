@@ -286,7 +286,7 @@ When an encrypted reply is sent from the encryption portal or through the OME Vi
 
  **Q. I am an Exchange Hosted Encryption (EHE) subscriber. Where can I learn more about the upgrade to Office 365 Message Encryption?**
 
-All EHE customers have been upgraded to Office 365 Message Encryption. For more information, visit the [Exchange Hosted Encryption Upgrade Center](../security/office-365-security/exchange-online-protection-overview.md).
+All EHE customers have been upgraded to Office 365 Message Encryption. For more information, visit the [Exchange Hosted Encryption Upgrade Center](../security/office-365-security/eop-about.md).
 
  **Q. Do I need to open any URLs, IP addresses, or ports in my organization's firewall to support Office 365 Message Encryption?**
 

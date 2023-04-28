@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 10/06/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -35,11 +35,10 @@ You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 ## Before you begin
 
 - Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and are enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
-- Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home).
+- Make sure you have access to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home).
 - This supports three most recent major releases of macOS.
 - Create the user groups that you are going to assign the configuration updates to.
-- Install the v95+ Edge browser on your macOS devices 
-
+- OPTIONAL: Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
 
 ## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 
@@ -59,7 +58,7 @@ Onboarding a macOS device into Compliance solutions is a multi-phase process.
 |file needed for |source |
 |---------|---------|
 System mobile config file | [mdatp-nokext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension.|
-MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig). Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension.
+MDE preferences| [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig). Copy and paste the contents into a text file. Save the file with the **mobileconfig** extension only, it will not be recognized if it has the .txt extension. For *upload to cloud service* activity, if you only want to monitor browser and URL on the browser address bar, you can enable *DLP_browser_only_cloud_egress* and *DLP_ax_only_cloud_egress*, here is an example [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/cloud_egress/com.microsoft.wdav.mobileconfig).
 
 ### Get the device onboarding package
 
@@ -92,7 +91,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 ### Deploy the mobileconfig and onboarding packages
 
-1. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles**.
+1. Open the **Microsoft Intune admin center** > **Devices** > **Configuration profiles**.
 
 1. Choose: **Create profile** 
 
@@ -125,7 +124,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 Microsoft Endpoint DLP is installed as a component of Microsoft Defender for Endpoint (MDE) on macOS. This procedure applies to onboarding devices into Microsoft Purview solutions
 
-1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Apps**.
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com/), open **Apps**.
 
 1. Select By platform > macOS > Add.
 
@@ -144,7 +143,7 @@ Microsoft Endpoint DLP is installed as a component of Microsoft Defender for End
 > [!NOTE]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to six months.
 
-1. In **Microsoft Endpoint Manager center**, open **Devices** > **Configuration profiles**, you should see your created profiles there.
+1. In the **Microsoft Intune admin center**, open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
 1. In the **Configuration profiles** page, choose the *wdav.pkg.intunemac* profile.
 

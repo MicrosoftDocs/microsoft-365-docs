@@ -2,9 +2,6 @@
 title: Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media
 description: A walk-through about Microsoft Defender for Endpoint
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -16,8 +13,8 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 11/14/2022
-ms.reviewer: tewchen
+ms.date: 04/25/2023
+ms.reviewer: tewchen, kurtsarens
 search.appverid: met150
 ---
 
@@ -84,7 +81,7 @@ The following table lists the properties you can use in **Group**:
 
 |Property Name|Description|Options|
 |---|---|---|
-|**GroupId**|GUID, a unique ID, represents the group and will be used in the policy.| You can generate ID through [PowerShell[(/powershell/module/microsoft.powershell.utility/new-guid)|
+|**GroupId**|GUID, a unique ID, represents the group and will be used in the policy.| You can generate the ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).|
 |**Type**|The type of the group. |**File** <p>**Device** <p> **Note**: Default type is Device that includes removable storage and printer. For any other group you define in your Group setting, make sure explicitly mark Type, for example, Type="File". |
 |**DescriptorIdList**|List the device properties you want to use to cover in the group. All properties are case sensitive. |**PrimaryId**: The Primary ID includes `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, `PrinterDevices`. <p>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. It's the `Device instance path` in the Device Manager. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId**: To transform `Device instance path` to Device ID format, see [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers), for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` <p>**HardwareId**: A string that identifies the device in the system, for example, `USBSTOR\DiskGeneric_Flash_Disk___8.07`. It's `Hardware Ids` in the Device Manager. <br>**Note**: Hardware ID isn't unique; different devices might share the same value.<p>**FriendlyNameId**: It's a string attached to the device, for example, `Generic Flash Disk USB Device`. It's the `Friendly name` in the Device Manager. <p>**BusId**: For example, USB, SCSI <p>**SerialNumberId**: You can find SerialNumberId from `Device instance path` in the Device Manager, for example, `03003324080520232521` is SerialNumberId in USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0 <p>**VID_PID**: Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device. It supports wildcard. To transform `Device instance path` to Vendor ID and Product ID format, see [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers). For example: <br>`0751_55E0`: match this exact VID/PID pair<br>`_55E0`: match any media with PID=55E0 <br>`0751_`: match any media with VID=0751 <p> **NameId**: The name of the Network or VPN Connection, support wildcard and only applicable for Network type or VPN Connection type Group.  <p> **NetworkCategoryId**:  only applicable for Network type Group and includes `Public`, `Private`, `DomainAuthenticated`. <p> **NetworkDomainId**:  only applicable for Network type Group and includes `NonDomain`, `Domain`, `DomainAuthenticated`.  <p> **VPNConnectionStatusId**:  only applicable for VPN Connection type Group and includes `Connected`, `Disconnected`. <p> **VPNServerAddressId**:  string, value of VPNServerAddress, support wildcard and only applicable for VPN Connection type Group. <p> **VPNDnsSuffixId**:  string, value of VPNDnsSuffix, support wildcard and only applicable for VPN Connection type Group. <p> **PathId**:  string, value of file path or name, support wildcard and only applicable for File type Group. <p> **Note**: See [How do I find the media property in the Device Manager?](device-control-removable-storage-access-control-faq.md#how-do-i-find-the-media-property-in-the-device-manager) to understand how to find the property in Device Manager.|
 |**MatchType**|When there are multiple device properties being used in the `DescriptorIDList`, MatchType defines the relationship.|**MatchAll**: Any attributes under the `DescriptorIdList` will be **And** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will check to see whether the USB meets both values. <p> **MatchAny**: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value. <p> **MatchExcludeAll**: The attributes under the DescriptorIdList will be And relationship, any items that do NOT meet will be covered. For example, if administrator puts DeviceID and InstancePathID and uses MatchExcludeAll, for every connected USB, system will do the enforcement as long as the USB doesn't have both identical DeviceID and InstanceID value. <p> **MatchExcludeAny**: The attributes under the DescriptorIdList will be Or relationship, any items that do NOT meet will be covered. For example, if administrator puts DeviceID and InstancePathID and uses MatchExcludeAny, for every connected USB, system will do the enforcement as long as the USB doesn't have either an identical DeviceID or InstanceID value.|
@@ -97,10 +94,10 @@ The following table lists the properties you can use in **PolicyRule**:
 
 | Property Name | Description | Options |
 |---|---|---|
-| **PolicyRule Id** | GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting. | You can generate ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)|
+| **PolicyRule Id** | GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting. | You can generate the ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).|
 | **Name** | String, the name of the policy and will display on the toast based on the policy setting. | |
-| **IncludedIdList** | The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.|The Group ID/GUID must be used at this instance. <p> The following example shows the usage of GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
-| **ExcludedIDList** | The group(s) that the policy won't  be applied to. | The Group ID/GUID must be used at this instance. |
+| **IncludedIdList** | The group(s) that the policy will be applied to. If multiple groups are added, **the media must be a member of each group in the list** to be included.|The Group ID/GUID must be used at this instance. <p> The following example shows the usage of GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
+| **ExcludedIDList** | The group(s) that the policy won't  be applied to. If multiple groups are added, **the media must be a member of a group in the list** to be excluded. | The Group ID/GUID must be used at this instance. |
 | **Entry** | One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| See Entry properties table below to get details.|
 
 
@@ -108,11 +105,11 @@ The following table lists the properties you can use in **Entry**:
 
 | Property Name | Description | Options |
 |---|---|---|
-| **Entry Id** | GUID, a unique ID, represents the entry and will be used in the reporting and troubleshooting.| You can generate ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)|
+| **Entry Id** | GUID, a unique ID, represents the entry and will be used in the reporting and troubleshooting.| You can generate the ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).|
 | **Type** | Defines the action for the removable storage groups in IncludedIDList. <p>Enforcement: Allow or Deny <p>Audit: AuditAllowed or AuditDenied<p> | Allow<p>Deny <p>AuditAllowed: Defines notification and event when access is allowed <p>AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.<p> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**. |
 | **Sid** | Local user Sid or user Sid group or the Sid of the AD object or the Object ID of the Azure AD object, defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the machine. |  |
 | **ComputerSid** | Local computer Sid or computer Sid group or the Sid of the AD object or the Object Id of the AAD object, defines whether to apply this policy over a specific machine or machine group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both SID and ComputerSID into the same Entry. |  |
-| **Options** | Defines whether to display notification or not |**When Type Allow is selected**: <p>0: nothing<p>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Allow** happens and the AuditAllowed is setting configured, the system won't send event. <p>8: capture file information and have a copy of the file as evidence for Write access. <p>16: capture file information for Write access. <p>**When Type Deny is selected**: <p>0: nothing<p>4: disable **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system won't show notification. <p>**When Type **AuditAllowed** is selected**: <p>0: nothing <p>1: nothing <p>2: send event<p> **When Type **AuditDenied** is selected**: <p>0: nothing <p>1: show notification <p>2: send event<p>3: show notification and send event |
+| **Options** | Defines whether to display notification or not |**When Type Allow is selected**: <p>0: nothing<p>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Allow** happens and the AuditAllowed is setting configured, the system won't send event. <p>8: create a copy of the file as evidence, and fire "RemovableStorageFileEvent" event, this has to be used together with 'Set location for a copy of the file' setting through Intune or Group Policy. <p>**When Type Deny is selected**: <p>0: nothing<p>4: disable **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system won't show notification. <p>**When Type **AuditAllowed** is selected**: <p>0: nothing <p>1: nothing <p>2: send event<p> **When Type **AuditDenied** is selected**: <p>0: nothing <p>1: show notification <p>2: send event<p>3: show notification and send event |
 |AccessMask|Defines the access. | **Disk level access**: <p>1: Read <p>2: Write <p>4: Execute <p>**File system level access**: <p>8: File system Read <p>16: File system Write <p>32: File system Execute <p><p>You can have multiple access by performing binary OR operation, for example, the AccessMask for Read and Write and Execute will be 7; the AccessMask for Read and Write will be 3.|
 |Parameters|Condition for this Entry, for example Network condition. | Can add groups (non Devices type) or even put Parameters into Parameters. See Parameters properties table below to get details.|
 
@@ -135,12 +132,14 @@ For specific guidance, see:
 
 The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
 
-- Microsoft 365 for E5 reporting
+- Microsoft 365 E5
+- Microsoft Defender for Endpoint Plan 2
+  
 
 If `AuditAllowed` or `AuditDenied` is configured in your policy and **Send event** is selected in **Options**, an event will be sent to Advanced hunting or the Device control report for every covered access (`AccessMask` in the entry), regardless of whether it was initiated by the system or by the user who signed in.
 
 ```kusto
-//RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
+//RemovableStoragePolicyTriggered: event triggered by Disk and file system level enforcement
 DeviceEvents
 | where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
@@ -161,7 +160,7 @@ DeviceEvents
 ```
 
 ```kusto
-//information of file written to removable storage
+//information of the evidence file
 DeviceEvents
 | where ActionType contains "RemovableStorageFileEvent"
 | extend parsed=parse_json(AdditionalFields)

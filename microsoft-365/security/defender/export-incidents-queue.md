@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: v-smandalika
-author: v-smandalika
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -24,6 +24,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 07/11/2022
 ---
 
 # Export incidents queue to CSV files
