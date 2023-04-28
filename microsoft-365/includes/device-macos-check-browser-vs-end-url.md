@@ -4,7 +4,7 @@ Microsoft Purview DLP checks for sensitive data through all stages of its travel
 
 Say that sending sensitive data via Outlook Live (*outlook.live.com*) is permissible, but that sensitive data must not be exposed to *microsoft.com*. However, when a user accesses Outlook Live, the data passes through *microsoft.com* in the background, as shown:
 
-:::image type="content" source="../media/devices-macos-cloud-dataflow.png" alt-text="Screenshot showing the flow of data from source to destination URL.":::
+:::image type="content" source="../media/devices-macos-cloud-dataflow-inline.png" alt-text="Screenshot showing the flow of data from source to destination URL.":::
 
 By default, because the sensitive data passes through microsoft.com on its way to outlook.live.com, DLP automatically blocks the data from being shared.
 
