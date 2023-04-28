@@ -122,7 +122,7 @@ This computer must have direct access to your Microsoft 365 tenant.
    > [!NOTE]
    > The EDMUploadAgent at the above links has been updated to automatically add a salt value to the hashed data. Alternately, you can provide your own salt value. Once you have used this version, you will not be able to use the previous version of the EDMUploadAgent.
    >
-   > You can upload data with the EDMUploadAgent to any given data store only twice per day.
+   > You can upload data with the EDMUploadAgent to any given data store up to five times per day.
 
 3. Authorize the EDM Upload Agent, open Command Prompt window as an administrator, switch to the **C:\EDM\Data** directory, and then run the following command:
 
