@@ -116,9 +116,12 @@ Download the following files.
 
 7. Under **Preference Domain Properties** manually update the settings as follows:
     - **Features**
-        - For **Data Loss Prevention**, select *enabled* and then choose **Save**.
-        - Use DLP_browser_only_cloud_egress: `enabled` if you want to monitor the browser.
-        - Use DLP_ax_only_cloud_egress: `enabled` if you want to monitor only the URL in the browser address bar.
+        - For **Data Loss Prevention**, select `enabled` and then choose **Save**.
+
+    - **Data Loss Prevention**
+        - **Features** 
+            - Use DLP_browser_only_cloud_egress: `enabled` if you want to monitor the browser.
+            - Use DLP_ax_only_cloud_egress: `enabled` if you want to monitor only the URL in the browser address bar.
     -  **Antivirus engine** <br>
         If you are *only* deploying data loss prevention, and not MDE, take the following steps:
         - Choose **Real-time Protection**.

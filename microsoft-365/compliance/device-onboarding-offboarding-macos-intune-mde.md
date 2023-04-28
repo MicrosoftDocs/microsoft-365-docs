@@ -45,10 +45,11 @@ You can use Microsoft Intune to onboard macOS devices into Microsoft Purview sol
 
 ## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 
-If Microsoft Defender for Endpoints (MDE) has already been deployed to your macOS device, you can still onboard that device into Compliance solutions. Doing so is a two-phase process:
+If Microsoft Defender for Endpoints (MDE) has already been deployed to your macOS device, you can still onboard that device into Compliance solutions. Doing so is multi-phase process:
 
 1. [Create system configuration profiles](#create-system-configuration-profiles)
 1. [Update existing system configuration profiles](#update-existing-system-configuration-profiles)
+1. [Update MDE preferences](#update-mde-preferences)
 
 
 ### Prerequisites
@@ -95,16 +96,19 @@ Download the following files:
 
 1. A full disk access (FDA) configuration profile should have been created and deployed previously for MDE. (For details, see [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access)). Endpoint data loss prevention (DLP) *requires additional FDA permission* for the new application (`com.microsoft.dlp.daemon`).
  
-2.  Update the existing FDA configuration profile with the modified `fulldisk.mobileconfig` file.
+2.  Update the existing FDA configuration profile with the downloaded `fulldisk.mobileconfig` file.
 
-3. Find the existing **MDE Preferences** configuration profile. See [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/security/defender-endpoint/mac-install-with-intune) for details. <br><br> Add the following key to the `fulldisk.mobileconfig` file, then save the file.
+### Update MDE preferences
+
+1. Find the existing **MDE Preferences** configuration profile. See [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/security/defender-endpoint/mac-install-with-intune) for details. <br><br>  
+2. Add the following key to the .mobileconfig file, then save the file.
 
 ```xml
     <key>features</key> 
-         <dict> 
-            <key>dataLossPrevention</key> 
-            <string>enabled</string> 
-        </dict> 
+    <dict> 
+        <key>dataLossPrevention</key> 
+        <string>enabled</string> 
+    </dict> 
 ```
 
 Here's an [example mobileconfig file](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig).
@@ -116,18 +120,18 @@ Here's an [example mobileconfig file](https://raw.githubusercontent.com/microsof
 
 
 ## Offboard macOS devices using Intune 
-=======
+
+```xml
 <key>features</key> 
 <dict> 
-    <key>systemExtensions</key> 
-    <string>enabled</string> 
     <key>dataLossPrevention</key> 
     <string>enabled</string> 
 </dict> 
 ``` 
 
-Here's an [example mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)
-    2. For *upload to cloud service* activity, if you only want to monitor browser and URL on the browser address bar, you can enable *DLP_browser_only_cloud_egress* and *DLP_ax_only_cloud_egress*, here is an example [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/cloud_egress/com.microsoft.wdav.mobileconfig).
+    1. Here's an [example mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)
+     
+    1. For *upload to cloud service* activity, if you only want to monitor browser and URL on the browser address bar, you can enable *DLP_browser_only_cloud_egress* and *DLP_ax_only_cloud_egress*, here is an example [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/cloud_egress/com.microsoft.wdav.mobileconfig).
  
 ## Offboard macOS devices using Intune
 

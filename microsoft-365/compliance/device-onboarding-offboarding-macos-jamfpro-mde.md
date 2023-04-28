@@ -73,11 +73,12 @@ If any of these individual files are updated, you must download the updated bund
 1. Update the schema.xml profile with the **schema.json** file you just downloaded.
 
 1. Under **MDE Preference Domain Properties** choose these settings:
-    - Features 
-        - Use System Extensions: `enabled` - required for network extensions on Catalina
+    - **Features**
         - Use Data Loss Prevention: `enabled`
-        - Use DLP_browser_only_cloud_egress: `enabled`if you want to only monitor browser
-        - Use DLP_ax_only_cloud_egress: `enabled`if you want to only monitor URL on the browser address bar
+    - **Data Loss Prevention**
+        - **Features**
+            - Use DLP_browser_only_cloud_egress: `enabled` if you want to only monitor browser
+            - Use DLP_ax_only_cloud_egress: `enabled` if you want to only monitor URL on the browser address bar
 
 1. Choose the **Scope** tab.
 
