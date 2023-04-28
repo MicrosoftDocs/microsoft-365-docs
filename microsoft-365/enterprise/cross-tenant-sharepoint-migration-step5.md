@@ -99,7 +99,7 @@ Users and groups are included in the same file. Depending on whether it's a user
 
 **Microsoft 365 Groups**. Enter your values as shown in this example for Microsoft 365 groups:
 
-
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-identity-mapping-example-m365-groups.png" alt-text="format for csv file for Microsoft 365 groups":::
 
 **Multiple users and groups in a CSV file:** </br>
 
