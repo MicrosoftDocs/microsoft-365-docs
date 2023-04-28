@@ -57,11 +57,11 @@ Get-SPOCrossTenantHostURL
 
 *Example:* Run command on Source tenant:
 
- :::image type="content" source="../media/cross-tenant-migration/t2t-SharePoint-hosturl-source.png" alt-text="example of how to obtain host url for source":::
+ :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-hosturl-source.png" alt-text="example of how to obtain host url for source":::
 
 *Example:* Run command on target tenant:
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-SharePoint-hosturl-target.png" alt-text="example of how to obtain host url for target":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-hosturl-target.png" alt-text="example of how to obtain host url for target":::
 
 ## Run the trust commands
 
@@ -90,7 +90,7 @@ These commands send a request to the tenant with whom you want to establish trus
 
 The following in an example of the email that is sent to global admins:
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-SharePoint-trust-email.png" alt-text="example of trust email":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-trust-email.png" alt-text="example of trust email":::
 
 **Subject:**  SPO Tenant [https://a830edad9050849mnaus093022-my.sharepoint.com/] [setuporupdate] Organization Relation [Scenario=MnA, Role=Source] with us
 

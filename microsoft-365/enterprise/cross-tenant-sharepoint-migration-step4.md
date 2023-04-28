@@ -60,7 +60,7 @@ To ensure that SharePoint permissions are retained as part of the migration, a m
 
 ## Pre-create Microsoft 365 groups connect to SharePoint sites
 
-Microsoft 365 groups connected to SharePoint sites must be pre-created using the [Exchange Online management shell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)
+Microsoft 365 groups connected to SharePoint sites must be pre-created using the [Exchange Online management shell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 These commands send a request to the tenant with whom you want to establish trust.
 

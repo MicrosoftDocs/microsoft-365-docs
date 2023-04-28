@@ -77,16 +77,16 @@ Users and groups are included in the same file. Depending on whether it's a user
 
 **Users**. Enter your values as shown in this example for guests:
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-SharePoint-csv-mapping-users-columns.png" alt-text="format to use for mapping users":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-columns.png" alt-text="format to use for mapping users":::
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-SharePoint-csv-mapping-users-example.png" alt-text="example of csv for users":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-example.png" alt-text="example of csv for users":::
 
 
 **Guest users**. You can map guest accounts in the source tenant to member accounts in the target tenant. You can also map a guest account in the source to a guest account in the target if the guest has been previously created. Enter your values as shown in this example for guests:
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-SharePoint-csv-mapping-users-guests.png" alt-text="csv example when mapping a guest to a member":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-guests.png" alt-text="csv example when mapping a guest to a member":::
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-SharePoint-identity-mapping-example-guest-to-guest.png" alt-text="csv example when mapping a guest to a guest":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-identity-mapping-example-guest-to-guest.png" alt-text="csv example when mapping a guest to a guest":::
 
 **Groups**. Enter your values as shown in this example for groups:
 </br>
@@ -99,13 +99,13 @@ Users and groups are included in the same file. Depending on whether it's a user
 
 **Microsoft 365 Groups**. Enter your values as shown in this example for Microsoft 365 groups:
 </br>
-:::image type="content" source="../media/cross-tenant-migration/t2t-sharepoint-identity-mapping-example-m365-groups.png" alt-text="format for csv file for Microsoft 365 groups":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-identity-mapping-example-m365-groups.png" alt-text="format for csv file for Microsoft 365 groups":::
 
 **Multiple users and groups in a CSV file:** </br>
 
 *Example:*
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-SharePoint-migration-csv-users-groups.png" alt-text="example of both users and groups in mapping file":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-migration-csv-users-groups.png" alt-text="example of both users and groups in mapping file":::
 
 #### Obtain the source tenant company ID
 
@@ -116,7 +116,7 @@ To obtain Source Tenant Company ID:
 3. Scroll down on the left-hand panel and select **Properties**.
 4. Locate the **Tenant ID Field**. The required Tenant ID will be in that box.
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-SharePoint-azure-tenant-id.png" alt-text="getting the source tenant ID":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-azure-tenant-id.png" alt-text="getting the source tenant ID":::
 
 #### To obtain source group object ID:
 
@@ -125,7 +125,7 @@ To obtain Source Tenant Company ID:
 3. Select the required Group instance and then **Copy to clipboard**.  Paste this value in the sourceGroupObjectId column of your mapping CSV file.
 4. If you have multiple Groups to map, then repeat these steps for each group.
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-SharePoint-source-group-objectid.png" alt-text="getting the source group object ID":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-source-group-objectid.png" alt-text="getting the source group object ID":::
 
 #### To obtain target group object ID:
 
@@ -135,7 +135,7 @@ To obtain Source Tenant Company ID:
 4. If you have multiple groups to map, then repeat the above process to obtain those specific targetGroupObjectId's.
 5. For the GroupName, use the same ID as the *TargetGroupObjectId* you obtained.
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-SharePoint-target-group-objectid.png" alt-text="how to get the target object ID":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-target-group-objectid.png" alt-text="how to get the target object ID":::
 
 ## Upload the identity map
 

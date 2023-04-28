@@ -100,7 +100,7 @@ These commands can be useful when planning bulk batches of site migrations.  Yo
 
 Before starting the migration, the users current source SharePoint status will be similar to the example below.  This example is from the users source tenant, showing their current files and folders.
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-SharePoint-status-premigration.png" alt-text="pre-migration status":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-premigration.png" alt-text="pre-migration status":::
 
 ## Cancelling a SharePoint site migration
 
