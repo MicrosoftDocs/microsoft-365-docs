@@ -98,8 +98,8 @@ Users and groups are included in the same file. Depending on whether it's a user
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-group-example.png" alt-text="example of adding groups to csv file":::
 
 **Microsoft 365 Groups**. Enter your values as shown in this example for Microsoft 365 groups:
-</br>
-:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-identity-mapping-example-m365-groups.png" alt-text="format for csv file for Microsoft 365 groups":::
+
+
 
 **Multiple users and groups in a CSV file:** </br>
 
