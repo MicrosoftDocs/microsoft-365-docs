@@ -194,7 +194,7 @@ These issues may occur on servers with many events flooding AuditD.
 > [!NOTE]
 > As a best practice, we recommend to configure AuditD logs to rotate when the maximum file size limit is reached.
 >
-> This helps prevent situations where AuditD logs accumulate and consume all available disk space.
+> This will prevent AuditD logs accumulating in a single file and the rotated log files can be moved out to save disk space.
 >
 > To achieve this, you can set the value for **max_log_file_action** to **rotate** in the [auditd.conf](https://linux.die.net/man/8/auditd.conf) file.
 
