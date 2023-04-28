@@ -36,7 +36,7 @@ This article lists the top 10 ways to secure your data with Microsoft 365 for bu
 
 ## Top 10 ways to secure your business data
 
-The following table lists the top 10 ways to secure business data and describes capabilities that are included in Microsoft 365 for business plans. For more details about what each plan includes, see [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
+The following table lists the top 10 ways to secure business data and describes capabilities that are included in Microsoft 365 for business plans. It's not intended to be an exhaustive list of all capabilities in each plan. For more details about what each plan includes, see [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
 | What to do | [Microsoft 365 Business Premium](index.md) | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)  | [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) |
 |---|---|---|---|
