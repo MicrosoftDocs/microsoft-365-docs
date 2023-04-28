@@ -24,7 +24,7 @@ You can specify which domain will be used from the domain list for Bookings usin
 
 For example: Booking pages can be created with a domain “contoso.com” instead of “contoso.onmicrosoft.com”
 
-You're also allowed to configure a domain for specific users. When users with the custom OWA policy create a Booking calendar, it will be created with the custom domain, and not the default domain.
+You can also configure a domain for specific users. When users with the custom OWA policy create a Booking calendar, it will be created with the custom domain, and not the default domain.
 
 To use these features, you'll need to run commands using Exchange Online PowerShell with Global admin access. For more information on running Exchange Online cmdlets, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true).
 
@@ -47,13 +47,13 @@ You'll need to run the following commands using Exchange Online PowerShell.
 1. Check the current default domain using the command below:
 
 ```PowerShell
-   Get-OwaMailboxPolicy -Identity <OwaMailboxPolicy-Default> | Fl BookingsMailboxDomain
+   Get-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default | Fl BookingsMailboxDomain
 ```
 
 5. Change current default domain to new domain.
 
 ```PowerShell
-   Set-OwaMailboxPolicy -Identity < OwaMailboxPolicy-Default > -BookingsMailboxDomain "<newdomain>"
+   Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -BookingsMailboxDomain "<newdomain>"
 ```
 
 This would change the default policy of all users and allow them to create a booking calendar with the new domain.

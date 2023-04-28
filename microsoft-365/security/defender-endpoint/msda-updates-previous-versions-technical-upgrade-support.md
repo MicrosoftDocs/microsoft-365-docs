@@ -10,7 +10,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 ms.reviewer: pahuijbr, mkaminska, v-vutrieu
-ms.date: 02/23/2023
+ms.date: 04/04/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -23,7 +23,36 @@ search.appverid: met150
 
 # Microsoft Defender Antivirus updates - Previous versions for technical upgrade support only
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+
+## November-2022 (Platform: 4.18.2211.5 | Engine: 1.1.19900.2)
+
+- Security intelligence update version: **1.381.144.0** 
+- Release date: **December 8, 2022**
+- Platform: **4.18.2211.5** 
+- Engine: **1.1.19900.2**
+- Support phase: **Technical upgrade support (only)**
+
+
+### What's new
+
+- Enhanced threat protection capabilities
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities
+- Enhanced enabling of tamper protection for newly onboarded devices
+- Improved reporting for [cloud protection](cloud-protection-microsoft-defender-antivirus.md)
+- Improved [controlled folder access](controlled-folders.md) notifications
+- Improved scanning of network shares
+- Enhanced processing of host files containing a wild card
+- Improved performance for [scan events](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+
+### Known Issues
+
+- None  
 
 ## October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)
 

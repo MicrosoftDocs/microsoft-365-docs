@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/04/2023
+ms.date: 04/26/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -49,7 +49,7 @@ Use the following instructions for the two admin steps.
 > [!NOTE]
 > Auto-policies use service-side labeling with conditions to automatically apply retention labels to items. You can also automatically apply a retention label with a label policy when you do the following:
 >
-> - Apply a retention label to a document understanding model in Microsoft Syntex
+> - Apply a retention label to a Microsoft Syntex model
 > - Apply a default retention label for SharePoint and Outlook
 > - Apply a retention label to email by using Outlook rules
 >
@@ -92,10 +92,12 @@ Other considerations for simulation mode for auto-apply retention policies:
 - A maximum of 100 item samples can be collected per mailbox.
 - If you use [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) for your policy:
     - A maximum of 20,000 locations (any combination of sites and mailboxes) is supported.
-    - Because these scopes use dynamic queries that run daily and can take a few days to fully populate, wait and confirm their membership before you start simulation.
+    - Because these scopes use dynamic queries that run daily and can take a few days to fully populate, wait and [confirm their membership](purview-adaptive-scopes.md#confirm-scope-membership) before you start simulation.
+    - For the **Microsoft 365 Group mailboxes & sites** location, items stored in [AuxPrimary mailboxes](/powershell/module/exchange/get-mailboxlocation#-mailboxlocationtype) aren't supported.
 - You might need to be assigned additional permissions to see the simulation results. For information about the required roles, see the next section, [Before you begin](#before-you-begin).
 - Simulation counts all items matching the policy criteria at time of simulation. However, when the policy is turned on, only content that isn't already labeled will be eligible for auto-applying retention labels.
-- Because simulation for Exchange locations always runs against emails stored in mailboxes, rather than emails sent and received, you won't see simulation results for emails when the policy condition is for sensitive information types.
+- Although auto-labeling for sensitive information types applies to emails sent and received rather than emails stored in mailboxes, simulation for Exchange locations runs against against emails stored in mailboxes. Using historical data lets you more quickly assess the effectiveness of your chosen sensitive information types and configuration.
+- For the **Microsoft 365 Group mailboxes & sites** and **OneDrive accounts** locations: Items that are stored in [arbitration mailboxes](/powershell/module/exchange/new-mailbox#-arbitration) aren't supported for simulation.
 - Because simulation results are based on items available in the specified locations at the time the simulation job runs, remember to take the following considerations into account when you turn on the policy:
     - Items that are no longer within the specified location won't be labeled.
     - Items that no longer match the policy criteria won't be labeled.
@@ -119,6 +121,9 @@ To run the policy in simulation mode:
 - To view the list of samples, you must have the **Data Classification List Viewer** role, and to view file or email contents in the source view, you must have the **Data Classification Content Viewer** role. Global admins don't have these roles by default.
 
 Make sure you have [created the retention labels](file-plan-manager.md#create-retention-labels) you want to apply to items.
+
+> [!NOTE]
+> Now in preview, you can extend your auto-labeling of retention labels to images. For more information, see [Learn about optical character recognition in Microsoft Purview](ocr-learn-about.md).
 
 ## How to create an auto-apply retention label policy
 
@@ -352,18 +357,20 @@ To consider when using trainable classifiers to auto-apply retention labels:
 > [!NOTE]
 > This option is in preview and subject to change.
 
-You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves, Exchange and Teams.
+You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves; Exchange, Teams, and Yammer.
 
 > [!IMPORTANT]
 > When you select a label to use for auto-applying retention labels for cloud attachments, ensure that the label retention setting **Start the retention period based on** is **When items were labeled**.
 
-Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. However, support for URL text links are also now gradually rolling out. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) and [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
+Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. However, support for URL text links are also now gradually rolling out. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook), [Teams](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams), and [Yammer](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-yammer).
 
 When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be [identified using eDiscovery](ediscovery-cloud-attachments.md). Users aren't aware of the copy that is stored in the Preservation Hold library. The retention label isn't applied to the message itself, or to the original file.
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library. For more information, including why you should use the **When items were labeled** label setting, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
-The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. For Teams, cloud attachments shared in chat messages, and standard and private channels are supported. Cloud attachments shared over meeting invites and apps other than Teams or Outlook aren't supported. The cloud attachments must be shared by users; cloud attachments sent via bots aren't supported.
+The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. For Teams, cloud attachments shared in chat messages, and standard and private channels are supported. For Yammer, cloud attachments shared with users in storylines, community posts, and Inbox messages are supported.
+
+Cloud attachments shared over meeting invites and apps other than Teams, Outlook, or Yammer aren't supported. The cloud attachments must be shared by users; cloud attachments sent via bots aren't supported.
 
 Although not required for this option, we recommend that you ensure versioning is enabled for your SharePoint sites and OneDrive accounts so that the version shared can be accurately captured. If versioning isn't enabled, the last available version will be retained. Documents in draft or that have never been published aren't supported.
 
@@ -375,27 +382,30 @@ When you configure the locations for this option, you can select:
 - **Microsoft 365 Groups** for shared files that are stored in team sites connected by Microsoft 365 groups.
 - **OneDrive accounts** for shared files stored in users' OneDrive.
 
-You will need to create separate retention policies if you want to retain or delete the original files, email messages, or Teams messages.
+You will need to create separate retention policies if you want to retain or delete the original files, email messages, or messages from Teams and Yammer.
 
 > [!NOTE]
-> If you want retained cloud attachments to expire at the same time as the messages that contained them, configure the retention label to have the same retain and then delete actions and timings as your retention policies for Exchange and Teams.
+> If you want retained cloud attachments to expire at the same time as the messages that contained them, configure the retention label to have the same retain and then delete actions and timings as your retention policies for Exchange, Teams, and Yammer.
 
 To consider when auto-applying retention labels to cloud attachments:
 
-- If cloud attachments and links in a Teams message are changed after the message is sent by editing the message, those changed cloud attachments and links aren't supported for retention.
+- Yammer must be in [native mode](/yammer/configure-your-yammer-network/overview-native-mode) to support cloud attachments.
+
+- If cloud attachments and links in a Teams or Yammer message are changed after the message is sent by editing the message, those changed cloud attachments and links aren't supported for retention.
 
 - When a user is added to a Teams conversation and given access to the full history of the conversation, that history can include cloud attachments and URL text links. If these attachments were shared within 48 hours of the user added to the conversation, current copies of the attachments are auto-labeled for retention. Attachments shared before this time period aren't supported for newly added users.
 
-- Attachments and links shared outside Teams and Outlook aren't supported, and the attachments and links must be content stored in SharePoint or OneDrive.
+- Attachments and links shared outside Teams, Outlook, and Yammer aren't supported, and the attachments and links must be content stored in SharePoint or OneDrive.
 
-- Cloud attachments and links in encrypted emails or encrypted messages  aren't supported.
+- Cloud attachments and links in encrypted emails or encrypted messages aren't supported.
+
+- Sharing an existing Yammer message with an attachment isn't supported.
 
 - Specific to shared documents from URL text links:
     - Supported in the message body but not in the email subject or Teams channel subject, announcement, or subheadings.
-    - Not supported for files that are uploaded to Yammer and from there, shared as URLs via email or Teams messages (typically have "https://web.yammer.com" at the beginning of the URL)
     - Not supported for previous responses in the same thread, only the current message
     - Total limit of 25 attachments in a single message, where this maximum can be any combination of cloud attachments and shared documents from URL text links
-    - Not supported beyond 5,000 characters in the initial email body or Teams message
+    - Not supported beyond 5,000 characters in the initial email body or in Teams and Yammer messages
 
 - The following items aren't supported as attachments that can be retained:
   - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages.
