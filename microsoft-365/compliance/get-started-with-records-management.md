@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/26/2023
+ms.date: 04/28/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -81,7 +81,9 @@ Now rolling out in preview, records management supports [administrative units th
 
 - Currently, retention labels and [events](event-driven-retention.md) don't support administrative units.
 
-- Currently, simulation mode for auto-apply retention policies doesn't support administrative units. Restricted administrators can view all simulation results, and from there, edit the policies and turn them on.
+- Currently, a restricted administrator can create and view adaptive scopes for all administrative units when they use PowerShell cmdlets.
+
+Scoped admins can view all adaptive scopes across AUs using cmdlets
 
 - Currently, inactive mailboxes aren't supported in a policy when you select one or more administrative units. To include inactive mailboxes in the policy, you must be an unrestricted administrator and select **Full directory**.
 
