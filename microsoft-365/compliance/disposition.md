@@ -123,7 +123,7 @@ You can optionally specify a time period (7-365 days) for auto-approval. The def
 If designated reviewers don't take manual action during this time period by using the [standard disposition review process](#viewing-and-disposing-of-content), the item automatically passes to the next review stage. If the item is in the final review stage, the item is automatically disposed with permanent deletion.
 
 > [!IMPORTANT]
-> If you configure this option and items are already pending disposition review, they automatically become auto-approved if they have already exceeded the number of days that you specified for auto-approval. The time period always starts from when the item enters disposition review and not from when you configure the option.
+> If you configure this option and items are already pending disposition review, they automatically become auto-approved if they have already exceeded the number of days that you specified for auto-approval. The time period always starts from when the item is ready for disposition review and not from when you configure the option.
 
 As with all retention label changes, allow up to 7 days if you turn on, turn off, or change the number of days for this option.
 
