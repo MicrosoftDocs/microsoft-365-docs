@@ -38,6 +38,7 @@ You can use Microsoft Intune to onboard macOS devices into Microsoft Purview sol
 - Make sure you have access to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home).
 - Create the user groups that you're going to assign the configuration updates to.
 - OPTIONAL: Install the v95+ Microsoft Edge browser on your macOS devices to have native Endpoint DLP support on Microsoft Edge.
+
  
 > [!NOTE]
 > The three most recent major releases of macOS are supported.
@@ -146,4 +147,5 @@ Microsoft Endpoint data lost protection is installed as a component of Microsoft
 
 4. Open **Properties** and then **Assignments**.
 
-5. Remove the group from the assignment. This uninstalls the *wdav.pkg.intunemac* package and offboard the macOS device from Compliance solutions.
+5. Remove the group from the assignment. This will uninstall the *wdav.pkg.intunemac* package and offboard the macOS device from Compliance solutions.
+
