@@ -111,30 +111,9 @@ Download the following files:
     </dict> 
 ```
 
-Here's an [example mobileconfig file](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig).
-
-> [!NOTE]
-> For the *upload to cloud service* activity, if you only want to monitor the browser and the URL in the browser address bar, you can enable *DLP_browser_only_cloud_egress* and *DLP_ax_only_cloud_egress*. 
->
-> Here is an example [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/cloud_egress/com.microsoft.wdav.mobileconfig).
-
 [!INCLUDE [device-macos-check-browser-vs-end-url](../includes/device-macos-check-browser-vs-end-url.md)]
 
-## Offboard macOS devices using Intune 
-
-```xml
-<key>features</key> 
-<dict> 
-    <key>dataLossPrevention</key> 
-    <string>enabled</string> 
-</dict> 
-``` 
-
-    1. Here's an [example mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)
-     
-    1. For *upload to cloud service* activity, if you only want to monitor browser and URL on the browser address bar, you can enable *DLP_browser_only_cloud_egress* and *DLP_ax_only_cloud_egress*, here is an example [com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/cloud_egress/com.microsoft.wdav.mobileconfig).
- 
-## Offboard macOS devices using Intune
+## Offboard macOS devices using Microsoft Intune
 
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal. However, data received from the device, including references to any alerts it has had, will be retained for up to six months.
@@ -145,12 +124,12 @@ Here's an [example mobileconfig file](https://raw.githubusercontent.com/microsof
 
 3. Remove these settings:
    
-    ```xml
+```xml
     <key>features</key>
     <dict>
         <key>dataLossPrevention</key>
         <string>enabled</string>
     </dict>
-    ```
+```
 
 4. Choose **Save**.
