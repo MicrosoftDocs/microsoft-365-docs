@@ -4,7 +4,7 @@ description: Manage how Microsoft Defender Antivirus receives protection and pro
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 04/04/2023
+ms.date: 04/11/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -79,6 +79,27 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### March-2023 (Platform: 4.18.2303.8 | Engine: 1.1.20200.4)
+
+- Security intelligence update version: **1.387.695.0**
+- Release date:  **April 4, 2023 (Engine) / April 11, 2023 (Platform)**
+- Platform: **4.18.2303.8** 
+- Engine: **1.1.20200.4**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Beginning in April 2023, monthly platform and engine version release information (in this article) now includes two dates: Engine and Platform
+- Increased file hash support 
+- Added support to protect registry keys against parent keys abuse 
+- Improved tamper protection of registry keys against parent keys abuse  
+- Improved log handling for DLP and Device Control 
+- Improved performance on developer drives 
+
+#### Known issues
+
+- None
+
 ### February-2023 (Platform: 4.18.2302.7 | Engine: 1.1.20100.6)
 
 - Security intelligence update version: **1.385.68.0**
@@ -123,28 +144,6 @@ All our updates contain
 - Improved [ASR rule](attack-surface-reduction-rules-reference.md) processing logic
 - Updated Sense token hardening
 - Improved [Defender CSP](/windows/client-management/mdm/defender-csp) module update channel logic
-
-#### Known Issues
-
-- None  
-
-### November-2022 (Platform: 4.18.2211.5 | Engine: 1.1.19900.2)
-
-- Security intelligence update version: **1.381.144.0** 
-- Release date: **December 8, 2022**
-- Platform: **4.18.2211.5** 
-- Engine: **1.1.19900.2**
-
-#### What's new
-
-- Enhanced threat protection capabilities
-- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities
-- Enhanced enabling of tamper protection for newly onboarded devices
-- Improved reporting for [cloud protection](cloud-protection-microsoft-defender-antivirus.md)
-- Improved [controlled folder access](controlled-folders.md) notifications
-- Improved scanning of network shares
-- Enhanced processing of host files containing a wild card
-- Improved performance for [scan events](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
 #### Known Issues
 
@@ -198,6 +197,10 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 |1607 (RS1) |`4.10.14393.3683` |`1.1.12805.0` | Technical upgrade support (only) |
 
 For Windows 10 release information, see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
+  
+> [!NOTE]  
+> Windows Server 2016 ships with the same Platform version as RS1 and falls under the same support phase: Technical upgrade support (only)  
+> Windows Server 2019 ships with the same Platform version as RS5 and falls under the same support phase: Technical upgrade support (only)  
 
 ## Updates for Deployment Image Servicing and Management (DISM)
 

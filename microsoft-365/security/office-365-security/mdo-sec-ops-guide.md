@@ -12,7 +12,8 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection: 
-  - m365-security
+  - zerotrust-solution
+  - msftsolution-secops
   - tier1
 ms.custom:
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Office 365.

@@ -22,6 +22,11 @@ ms.date: 10/11/2022
 
 # Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You'll get a brief summary of the deployment steps, learn about the system requirements, then be guided through the actual deployment steps. You'll also learn how to verify that the device has been correctly onboarded.
 
 For information about Microsoft Defender for Endpoint capabilities, see [Advanced Microsoft Defender for Endpoint capabilities](#advanced-microsoft-defender-for-endpoint-capabilities).
@@ -125,7 +130,7 @@ The following table lists the supported proxy settings:
 
 - [Network connections](microsoft-defender-endpoint-linux.md#network-connections)
 - [Full configuration profile](../defender-endpoint/linux-preferences.md#full-configuration-profile-example)
-- [Static proxy configuration](/defender-endpoint/linux-static-proxy-configuration.md)
+- [Static proxy configuration](../defender-endpoint/linux-static-proxy-configuration.md)
 - [Troubleshooting connectivity issues in static proxy scenario](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy)
 
 #### Step 3. Verify SSL inspection isn't being performed on the network traffic

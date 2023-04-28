@@ -1,16 +1,13 @@
 ---
 title: Create indicators
-ms.reviewer: 
 description: Create indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
 keywords: manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
+ms.reviewer: thdoucet
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -18,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/10/2023
 ---
 
 # Create indicators
@@ -141,6 +138,16 @@ The IoC API schema and the threat ids in advance hunting have been updated to al
 > There is a limit of 15,000 indicators per tenant. File and certificate indicators do not block [exclusions defined for Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Indicators are not supported in Microsoft Defender Antivirus when it is in passive mode.
 >
 > The format for importing new indicators (IoCs) has changed according to the new updated actions and alerts settings. We recommend downloading the new CSV format that can be found at the bottom of the import panel.
+
+## Known issues and limitations
+
+Customers may experience issues with alerts for Indicators of Compromise. The following scenarios are situations where alerts may not be created or may be created with inaccurate information. Each of these issues are being investigated by our engineering team and will be resolved in an upcoming update.
+
+- **Block indicators** – Generic alerts with informational severity only will be fired. Custom alerts (i.e. custom title and severity) will not be fired in these cases.
+- **Warn indicators** – Generic alerts and custom alerts are possible in this scenario, however, the results are not deterministic due to an issue with the alert detection logic. In some cases, customers may see a generic alert, whereas a custom alert may show in other cases.
+- **Allow** – No alerts are generated (by design).
+- **Audit** - Alerts will be generated based on the severity provided by the customer.
+- In some cases, alerts coming from EDR detections may take precedence over those stemming from AV blocks, in which case an information alert will be generated.
 
 ## Related articles
 

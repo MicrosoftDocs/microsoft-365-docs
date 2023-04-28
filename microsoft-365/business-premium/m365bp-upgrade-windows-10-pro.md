@@ -6,13 +6,13 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.collection:
 - tier1
 - m365-security
-ms.date: 09/15/2022
+ms.date: 04/20/2023
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -29,7 +29,7 @@ You can choose from several methods to upgrade:
 - [Use Windows Update](#use-windows-update) (recommended for most users)
 - [Upgrade your device using the Microsoft Software Download site](#upgrade-your-device-using-the-microsoft-software-download-site)
 - [Create installation media from the Microsoft Software Download site](#create-installation-media-from-the-microsoft-software-download-site)
-- [Purchase Windows 10 or 11 Pro to upgrade from Windows 10 Home](#purchase-windows-10-or-11-pro-to-upgrade-from-windows-10-home)
+- [Purchase Windows 10 or 11 Pro to upgrade from Windows 10 Home](#purchase-windows-10-or-11-pro-to-upgrade-from-windows-10-or-11-home)
 
 ## Use Windows Update
 
@@ -63,9 +63,9 @@ You can choose from several methods to upgrade:
 > [!NOTE]
 > If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business Premium subscription entitles you upgrade those devices to Windows Pro 10.
 
-## Purchase Windows 10 or 11 Pro to upgrade from Windows 10 Home
+## Purchase Windows 10 or 11 Pro to upgrade from Windows 10 or 11 Home
 
-*Select this option for devices that are running Windows 10 Home.*
+*Select this option for devices that are running Windows 10 or 11 Home. Note that Microsoft 365 Business Premium does not include free upgrade rights from Windows 10 or 11 Home to Windows 10 or 11 Pro.*
 
 1. On a Windows device, open the Microsoft Store app.
 
