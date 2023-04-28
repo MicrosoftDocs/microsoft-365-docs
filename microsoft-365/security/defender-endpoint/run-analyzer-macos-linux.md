@@ -47,10 +47,10 @@ If using a terminal download using the command:
 2. Verify the download
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '550EAE6FAA26972D49D3013520644E551AFA846E92CD59F5C6A6A72A6B77E9E9'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: 'E812F96A7735C746129ACD66468E2C524CB016359780AFB8CF972D281C2A2B81'
 
     ```console
-    echo '550EAE6FAA26972D49D3013520644E551AFA846E92CD59F5C6A6A72A6B77E9E9  XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo 'E812F96A7735C746129ACD66468E2C524CB016359780AFB8CF972D281C2A2B81  XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
 3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
@@ -128,7 +128,7 @@ When using a terminal, unzip the file using one of the following commands based 
 2. Verify the download
 
     ```console
-    echo 'E3119C47975A3E50A5144B0751F59BFC42327A151BDA5D8334D1ED64F7898A7F  XMDEClientAnalyzer.zip' | sha256sum -c
+    echo '01AC21ED1963E5BFA9926300029B7BC57826ED3904DE774458CD8CF7C872E896  XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\
@@ -244,6 +244,23 @@ Add exclusions for audit-d monitoring.
 ```
 
 Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`
+
+### AuditD Rate Limiter
+
+Syntax that can be used to limit the number of events being reported by the auditD plugin. This option will set the rate limit globally for AuditD causing a drop in all the audit events. When the limiter is enabled the number of auditd events will be limited to 2500 events/sec. This option can be used in cases where we see high CPU usage from AuditD side.
+
+> [!NOTE]
+> This functionality exists for Linux only.
+
+```console
+-h, --help                                  show this help message and exit
+-e <true/false>, --enable <true/false>      enable/disable the rate limit with default values
+```
+
+Usage example `sudo ./mde_support_tool.sh ratelimit -e true`
+
+> [!NOTE]
+> This functionality should be carefully used as limits the number of events being reported by the auditd subsystem as a whole. This could reduces the number of events for other subscribers as well.
 
 ## Result package contents on macOS and Linux
 
