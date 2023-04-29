@@ -64,7 +64,7 @@ Download the following files:
 
 ### Get the device onboarding package
 
-:::image type="content" source="../media/device-macos-dnld-onboarding-package_Intune_inline.png" alt-text="Screenshot of the Microsoft Intune Configuration settings tab with all fields populated." lightbox="../media/device-macos-dnld-onboarding-package_Intune_expanded.png":::
+:::image type="content" source="../media/device-macos-dnld-onboarding-package-intune-inline.png" alt-text="Screenshot of the Microsoft Intune Configuration settings tab with all fields populated." lightbox="../media/device-macos-dnld-onboarding-package-intune-expanded.png":::
 
 1. In **Microsoft Purview Compliance center** open **Settings** > **Device Onboarding** and then choose **Onboarding**.
  
