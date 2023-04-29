@@ -31,11 +31,12 @@ To change the settings to allow sensitive data to pass through forbidden domains
                 <key>state</key>
                 <string>enabled</string>
             </dict>
-     <dict>
+             <dict>
                 <key>name</key>
                  <string>DLP_ax_only_cloud_egress</string>
                 <key>state</key>
                 <string>enabled</string>
+            </dict>
+        </array>
     </dict>
-
 ```
