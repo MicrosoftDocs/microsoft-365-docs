@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 04/06/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -128,7 +128,7 @@ This table lists all policy templates and the sensitive information types (SIT) 
 
 See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to make sure you understand the difference between an unrestricted admin and an administrative unit restricted admin.
 
-DLP policies are scoped at two different levels. The first level lets an unrestricted admin scope policies to all:
+DLP policies are scoped at two different levels. The first level applies unrestricted admin scope policies to all:
 
 - users
 - groups
@@ -215,29 +215,16 @@ DLP supports using trainable classifiers as a condition to detect sensitive docu
 > DLP supports detecting sensitivity labels on emails and attachments. For more information, see [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
 
 ## Rules
-
-<!--This section introduces the classifications of content that, when detected, can be protected. Link out to [Learn about sensitive information types]() and [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) as well as labels (cross referenced by supporting workload). It will touch on the purpose of multiple conditions, confidence levels (link out to [more on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels)) and confidence levels video. How to use the confidence level to change the behavior of a policy in conjunction with the instance count.  eg. if you want your policy to trigger when it encounters situation DEF, set your conditions like HIJ.-->
-<!--
-- What is a rule in the context of a Policy?
-- when and why should I have more than one rule?
-- The purpose of rule groups
-- How do I tune the behavior of a Policy through the tuning of rules
-- what's in a rule-->
-
 Rules are the business logic of DLP policies. They consist of:
 
 - [**Conditions**](#conditions) that when matched, trigger the policy
 - [**Actions**](#actions) to take when the policy is triggered
 - [**User notifications**](#user-notifications-and-policy-tips) to inform your users when they're doing something that triggers a policy and help educate them on how your organization wants sensitive information treated
 - [**User Overrides**](#user-overrides) when configured by an admin, allow users to selectively override a blocking action
-- [**Incident Reports**](#incident-reports) that notify admins and other key stakeholders when a rule match occurs
-- [**Additional Options**](#additional-options) which define the priority for rule evaluation and can stop further rule and policy processing.
+- [**Incident reports**](#incident-reports) that notify admins and other key stakeholders when a rule match occurs
+- [**Additional options**](#additional-options) which define the priority for rule evaluation and can stop further rule and policy processing.
 
  A policy contains one or more rules. Rules are executed sequentially, starting with the highest-priority rule in each policy.
-
-<!--- [**Exceptions**](#exceptions) to the conditions
-> [!IMPORTANT]
-> The **Exceptions** UI is only available in **Classic rule builder** mode. If you have switched to the **New DLP rule builder** [mode](dlp-policy-design.md#complex-rule-design), exceptions are displayed as nested groups and joined to the other conditions by a boolean NOT function.-->
 
 ### The priority by which rules are evaluated and applied
 
@@ -262,7 +249,7 @@ For example, you might have a DLP policy that helps you detect the presence of i
 
 ![Diagram shows that DLP policy contains locations and rules](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
 
-#### For endpoints (preview)
+#### For endpoints
 
 When an item matches multiple DLP rules, DLP goes uses through a complex algorithm to decide which actions to apply. Endpoint DLP will apply the aggregate or sum of most restrictive actions. DLP uses these factors when making the calculation.
 
@@ -343,7 +330,7 @@ An item on a monitored device contains credit card number, so it matches policy 
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|
 |ABC|Audit|Audit|**Auth group A - Block**|Audit|Audit|**Auth group A - Block**|Audit|Audit|
 |MNO|Audit|Audit|**Auth group A - Block with override**|Audit|Audit|**Auth group B - block**|Audit|Audit|
-|Actions applied at runtime|Audit|Audit|**Auth group A - BLock**|Audit|Audit|**Auth group A - Block, Auth group B - Block**|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|**Auth group A - Block**|Audit|Audit|**Auth group A - Block, Auth group B - Block**|Audit|Audit|
 
 ### Conditions
 
@@ -623,7 +610,7 @@ The actions that are available in a rule are dependent on the locations that hav
 #### Devices actions
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
-- Restrice access or encrypt the content in Microsoft 365 locations.
+- Restrict access or encrypt the content in Microsoft 365 locations.
 - Audit or restricted activities when users access sensitive websites in Microsoft Edge browser on Windows devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 - Audit or restrict activities on devices
 
@@ -910,17 +897,19 @@ To learn more about user overrides, see:
 /microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
 /microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
 
-When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. The report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
+When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. The report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes the original message as an attachment that matches a DLP policy.
 
 DLP feeds incident information to other Microsoft Purview Information Protection services, like [insider risk management](insider-risk-management.md). In order to get incident information to insider risk management, you must set the **Incident reports** severity level to **High**.
-
-<!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 
 Alerts can be sent every time an activity matches a rule, which can be noisy or they can be aggregated into fewer alerts based on number of matches or volume of items over a set period of time.
 
 ![send an alert every time a rule matches or aggregate over time into fewer reports](../media/dlp-incident-reports-aggregation.png)
 
 DLP scans email differently than it does SharePoint Online or OneDrive for Business items. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
+
+#### Evidence collection for file activities on devices (preview)
+
+If you've enabled **Setup evidence collection for file activities on devices (preview)** and added Azure storage accounts, you can select **Collect original file as evidence for all selected file activities on Endpoint** and the Azure storage account you want to copy the items to. You must also choose the activities you want to copy items for. For example, if you select **Print** but not **Copy to a network share**, then only items that are printed from monitored devices will be copied to the Azure storage account.
 
 ### Additional options
 

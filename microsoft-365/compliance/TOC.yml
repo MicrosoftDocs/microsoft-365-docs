@@ -1211,6 +1211,8 @@
             href: dlp-migration-assistant-for-symantec-learn.md
           - name: Learn about adaptive protection in data loss prevention (preview)
             href: dlp-adaptive-protection-learn.md
+          - name: Learn about evidence collection for file activities on devices (preview)
+            href: dlp-copy-matched-items-learn.md
         - name: Plan for DLP
           items:
           - name: Plan for data loss prevention
@@ -1239,10 +1241,12 @@
             href: dlp-firefox-extension-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
-          - name: Get started with Data loss prevention policies for Power BI (preview)
+          - name: Get started with Data loss prevention policies for Power BI
             href: dlp-powerbi-get-started.md
           - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec
-            href: dlp-migration-assistant-for-symantec-get-started.md  
+            href: dlp-migration-assistant-for-symantec-get-started.md
+          - name: Get started with collecting files that match data loss prevention policies from devices (preview)
+            href: dlp-copy-matched-items-get-started.md  
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -1607,13 +1611,15 @@
               href: ediscovery-load-non-office-365-data-into-a-review-set.md
             - name: Add data to another review set
               href: ediscovery-add-data-to-review-set-from-another-review-set.md
+            - name: Configure review set grouping settings
+              href: ediscovery-configure-review-set-settings.md
         - name: Review case content
           items: 
             - name: Query and filter content in a review set
               href: ediscovery-review-set-search.md
             - name: Tag documents in a review set
               href: ediscovery-tagging-documents.md
-            - name: View documents in a review set
+            - name: Group and view documents in a review set
               href: ediscovery-view-documents-in-review-set.md
             - name: Use the review set dashboard
               href: ediscovery-dashboard.md
