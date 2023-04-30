@@ -146,7 +146,7 @@ These steps are required only one time on your computer. But you'll likely need 
    1.  Run the **Install-Module MSOnline** command.
    1. If you're prompted to install the NuGet provider, type **Y** and press Enter.
    1. If you're prompted to install the module from PSGallery, type **Y** and press Enter.
-   1. Run the **Import-Module MSOnline** to import the module.
+   1. Run the **Import-Module MSOnline** command to import the module.
     
 ### Step 2: Connect to Azure AD for your Microsoft 365 subscription
 
