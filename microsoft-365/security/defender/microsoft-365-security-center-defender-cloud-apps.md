@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: dacurwin
-author: dcurwin
+ms.author: bagol
+author: batamig
 manager: dansimp
 ms.date: 08/04/2022
 audience: ITPro
@@ -111,7 +111,7 @@ The images and the tables below list the changes in navigation between Microsoft
 
 The following settings pages are fully integrated into the Microsoft 365 Defender experience:
 
-- [Settings > Azure AD Identity Protection](investigate-alerts.md)** 
+- [Settings > Azure AD Identity Protection](investigate-alerts.md)
 - [Settings > App Governance](/defender-cloud-apps/app-governance-get-started.md)
 - [Settings > Microsoft Defender for Identity](/defender-for-identity/deploy-defender-identity.md)
 
