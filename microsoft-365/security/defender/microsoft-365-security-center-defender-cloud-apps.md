@@ -109,6 +109,17 @@ The images and the tables below list the changes in navigation between Microsoft
 | IP address ranges              | Settings -> Cloud apps                                      |
 | User groups                    | Settings -> Cloud apps                                      |
 
+The following settings pages are fully integrated into the Microsoft 365 Defender experience:
+
+- [Settings > Azure AD Identity Protection](investigate-alerts.md)** 
+- [Settings > App Governance](/defender-cloud-apps/app-governance-get-started.md)
+- [Settings > Microsoft Defender for Identity](/defender-for-identity/deploy-defender-identity.md)
+
+The following settings pages are available only in the standalone Defender for Cloud Apps portal:
+
+- Settings > Export settings
+- Activity log > Web traffic log
+
 ## Limitations
 
 - The new Defender for Cloud Apps experience in the Microsoft 365 Defender portal is currently available for all users detailed in [Manage admin access](/defender-cloud-apps/manage-admins), except for:
