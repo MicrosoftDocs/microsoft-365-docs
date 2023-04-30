@@ -1,5 +1,5 @@
 ---
-title: Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender (Preview)
+title: Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender
 description: How to redirect accounts and sessions from Defender for Cloud Apps to Microsoft 365 Defender.
 keywords: Microsoft 365 Defender, Getting started with Microsoft 365 Defender, security center redirection
 search.product: eADQiWindows 10XVcnh
@@ -81,4 +81,4 @@ Once disabled, accounts will no longer be routed to security.microsoft.com.
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [About Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender)
 - [Microsoft security portals and admin centers](portals.md)
-- [Microsoft Defender for Cloud Apps in Microsoft 365 Defender (Preview)](microsoft-365-security-center-defender-cloud-apps.md)
+- [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](microsoft-365-security-center-defender-cloud-apps.md)
