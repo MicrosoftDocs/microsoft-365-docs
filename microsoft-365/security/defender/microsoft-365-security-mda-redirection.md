@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ---
-# Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender (Preview)
+# Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
