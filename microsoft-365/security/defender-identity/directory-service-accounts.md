@@ -3,8 +3,8 @@ title: Configure Directory Services account in Microsoft Defender for Identity
 description: Learn how to configure the Microsoft Defender for Identity Directory Services account in Microsoft 365 Defender
 ms.date: 08/15/2021
 ms.topic: how-to
-author: dcurwin
-ms.author: dacurwin
+author: batamig
+ms.author: bagol
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
