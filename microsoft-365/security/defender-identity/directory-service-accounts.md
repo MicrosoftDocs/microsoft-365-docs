@@ -32,7 +32,6 @@ To connect the [sensor](sensor-health.md#add-a-sensor) with your Active Director
 
    :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The Identities option in the Settings page" lightbox="../../media/defender-identity/settings-identities.png":::
 
-
 1. Select **Directory Service accounts**. You'll see which accounts are associated with which domains.
 
    :::image type="content" source="../../media/defender-identity/directory-service-accounts.png" alt-text="The Directory Service accounts menu item" lightbox="../../media/defender-identity/directory-service-accounts.png":::
