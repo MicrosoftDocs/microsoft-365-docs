@@ -1,6 +1,6 @@
 ---
-title: Communication compliance with Microsoft Teams
-description: Learning about communication compliance, part of the insider risk solution set, from the Microsoft Teams perspective (this is part of the M365 communication compliance functionality).
+title: Microsoft Teams and Microsoft Purview Communication Compliance
+description: Learning about communication compliance, part of the insider risk solution set, from the Microsoft Teams perspective (this is part of the Microsoft 365 communication compliance functionality).
 author: robmazz
 ms.author: robmazz
 manager: laurawi
@@ -21,7 +21,7 @@ appliesto:
   - Microsoft Teams
 ---
 
-# Communication compliance with Microsoft Teams
+# Microsoft Teams and Microsoft Purview Communication Compliance
 
 Microsoft Purview Communication Compliance is an insider risk solution in Microsoft 365 that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization.
 
