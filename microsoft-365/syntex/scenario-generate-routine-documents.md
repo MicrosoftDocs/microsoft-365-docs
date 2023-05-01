@@ -32,13 +32,26 @@ description: Learn how to use Microsoft Syntex to automatically generate routine
    :::column-end:::
 :::row-end:::
 
-## Job descriptions
-
-TBD
-
 ## Routine maintenance reports
 
-TBD
+You can use content assembly to automate the generation of daily inspection or maintenance reports. These reports generally have a lot of boiler plate text with certain fields or values that are entered by the user after inspection.
+
+Today, users physically inspect parts and then fill in a list or a form or physical paper reports. This leads to additional work in transforming this data into actual digital reports that can be used further. 
+
+1. Set up a document library where you want to store the reports.  
+
+2. Set up a SharePoint list with the required columns that you need to be filled in by the frontline workers.  
+
+3. Go to the document library and create a modern template using an existing report. Create fields for the values that are entered by the frontline workers and then associate the fields with the columns of the list created in step 2.  
+
+4. Now create a Power Automate flow using the action “Generate document using Syntex” and use the trigger “When a list item is created.” This ensures that whenever a new entry is added by a frontline worker to the list, a new report is generated.  
+
+5. Using Microsoft Forms, you can create a form for frontline workers to enter values in the list or expose the list itself for them to add values.  
+
+You can now review all daily reports as they get created based on values that frontline workers fill in the form.  
+
+> [!Note]
+> Although this example uses a SharePoint list as a data source, you can use any data source as a trigger for generating documents if you have access to the required Power Automate connector.  
 
 
 > [!div class="nextstepaction"]
