@@ -84,7 +84,7 @@ See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 ## 3. Use preset security policies
 
-Preset security policies save time by applying recommended spam, anti-malware, and anti-phishing policies to users all at once. 
+[Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies) save time by applying recommended spam, anti-malware, and anti-phishing policies to users all at once. 
 
 Microsoft 365 Business Basic, Standard, and Premium include [Exchange Online Protection](../security/office-365-security/eop-about.md) (EOP). It includes preset security policies for anti-spam, anti-malware, and anti-phishing. 
 
