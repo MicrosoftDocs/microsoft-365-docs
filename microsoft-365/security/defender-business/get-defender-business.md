@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 04/19/2023
+ms.date: 05/01/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -22,6 +22,8 @@ ms.collection:
 # Get Microsoft Defender for Business
 
 [Defender for Business](mdb-overview.md) is a new endpoint security solution designed especially for small and medium-sized businesses (up to 300 employees). This article describes how to get and provision Defender for Business.
+
+:::image type="content" source="media/mdb-setup-step1.png" alt-text="Visual aid depicting step 1 - Get Defender for Business.":::
 
 > [!IMPORTANT]
 > You should be a global administrator to complete the tasks described in this article. The person who signs your company up for Microsoft 365 is a global administrator. [Learn more about admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).

@@ -242,6 +242,8 @@
           href: communication-compliance-configure.md
         - name: Detect channel signals with communication compliance
           href: communication-compliance-channels.md
+        - name: Microsoft Teams and communication compliance
+          href: communication-compliance-teams.md
         - name: Create and manage communication compliance policies
           href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
@@ -856,7 +858,7 @@
                 href: sit-defn-malta-physical-addresses.md
               - name: Malta tax identification number
                 href: sit-defn-malta-tax-identification-number.md
-              - name: Medical specialities
+              - name: Medical specialties
                 href: sit-defn-medical-specialities.md
               - name: Medicare Beneficiary Identifier (MBI) card
                 href: sit-defn-medicare-beneficiary-Identifier-card.md
