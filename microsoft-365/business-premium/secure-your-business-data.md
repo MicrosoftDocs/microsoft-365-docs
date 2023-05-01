@@ -38,9 +38,9 @@ This article lists the top 10 ways to secure your data with Microsoft 365 for bu
 
 [Multi-factor authentication](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent bad actors from taking over your account if they know your password. To help simplify the process of enabling MFA, [security defaults in Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) are available in Microsoft 365 Business Basic, Standard, and Premium. 
 
-Microsoft 365 Business Premium also includes Azure AD Premium P1, which enables you to set up and configure Conditional Access policies instead of security defaults, for more stringent requirements.
+Microsoft 365 Business Premium also includes Azure AD Premium P1, which enables you to set up and configure [Conditional Access](/azure/active-directory/conditional-access/overview) policies instead of security defaults, for more stringent requirements.
 
-[Turn on multi-factor authentication](m365bp-conditional-access.md).
+See [Turn on multi-factor authentication](m365bp-conditional-access.md).
 
 | Subscription | Recommendation |
 |---|---|
@@ -54,7 +54,7 @@ Administrator accounts (also called admins) have elevated privileges, making the
 
 You can use either the Microsoft 365 admin center or the Azure AD portal to set up and manage your admin accounts.
 
-[Protect your administrator accounts](m365bp-protect-admin-accounts.md).
+See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 | Subscription | Recommendation |
 |---|---|
@@ -68,7 +68,10 @@ Preset security policies save time by applying recommended spam, anti-malware, a
 
 [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) includes preset security policies for advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments. Microsoft 365 Business Premium includes Defender for Office 365 Plan 1.
 
-See [Assign preset security policies to users](../security/office-365-security/preset-security-policies.md#assign-preset-security-policies-to-users) and [Protect against malware and other cyberthreats](m365bp-increase-protection.md).
+See the following articles:
+
+- [Assign preset security policies to users](../security/office-365-security/preset-security-policies.md#assign-preset-security-policies-to-users)
+- [Protect against malware and other cyberthreats](m365bp-increase-protection.md)
 
 | Subscription | Recommendation |
 |---|---|
@@ -82,6 +85,8 @@ Every device is a possible attack avenue into your network and must be configure
 Microsoft 365 Business Standard and Premium include Microsoft 365 Apps (such as Word, PowerPoint, and Excel) that can be installed on computers, tablets, and phones. Installing the Microsoft 365 Apps helps ensure users get the latest features, new tools, security updates, and bug fixes. (PC users also get Access and Publisher.)
 
 In addition to the Microsoft 365 Apps, Microsoft 365 Business Premium includes advanced protection for devices with Microsoft Defender for Business and Microsoft Intune. 
+
+See the following articles:
 
 - [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md) 
 - [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
