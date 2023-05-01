@@ -87,8 +87,6 @@ The following table describes the different status states for jobs:
 
 |**Status**|**Description**|
 |:---------|:--------------|
-| |  |
-| |  |
 | Submitted | A new job was created. The date and time that the job was submitted is displayed in the **Created** column on the **Jobs** tab.|
 | Submission failed | The job submission failed.  You should attempt to rerun the action that triggered the job.|
 | In progress |The job is in progress, you can monitor the progress of the job in the **Jobs** tab.|
