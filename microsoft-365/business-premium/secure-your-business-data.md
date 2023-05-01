@@ -75,13 +75,11 @@ See [Preset security policies](../security/office-365-security/preset-security-p
 
 ## 4. Protect all devices
 
-Every device is a possible attack avenue into your network and must be configured properly, even those devices that are personally owned but used for work. Your security team and employees can all take steps to protect managed and unmanaged devices. For example, all users can use MFA on their devices.
+Every device is a possible attack avenue into your network and must be configured properly, even devices that are personally owned but used for work. Your security team and all employees can all take steps to protect devices. For example, all users can use MFA on their devices.
 
-Microsoft 365 Business Standard and Premium include Microsoft 365 Apps that can be installed on computers, tablets, and phones. Installing the Microsoft 365 Apps helps ensure users get the latest features, new tools, security updates, and bug fixes. (PC users also get Access and Publisher.)
+Microsoft 365 Business Standard and Premium include Microsoft 365 Apps (such as Word, PowerPoint, and Excel) that can be installed on computers, tablets, and phones. Installing the Microsoft 365 Apps helps ensure users get the latest features, new tools, security updates, and bug fixes. (PC users also get Access and Publisher.)
 
-Microsoft 365 Business Premium also includes advanced protection for devices with Microsoft Defender for Business and Microsoft Intune. 
-
-See:
+In addition to the Microsoft 365 Apps, Microsoft 365 Business Premium includes advanced protection for devices with Microsoft Defender for Business and Microsoft Intune. 
 
 - [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md) 
 - [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
