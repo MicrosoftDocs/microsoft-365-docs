@@ -46,8 +46,8 @@ See [Turn on multi-factor authentication](m365bp-conditional-access.md).
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use either security defaults or Conditional Access.  |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use security defaults. | 
+| [Microsoft 365 Business Premium](index.md) | [Use either security defaults or Conditional Access](m365bp-conditional-access.md).  |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Use security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults). | 
 
 
 ## 2. Protect your administrator accounts
@@ -62,7 +62,7 @@ See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) <br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use the [Azure AD portal](https://entra.microsoft.com) or the [Microsoft 365 admin center](https://admin.microsoft.com). |
+| [Microsoft 365 Business Premium](index.md) <br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use the [Microsoft 365 admin center](https://admin.microsoft.com) or the [Azure AD portal](https://entra.microsoft.com). |
 
 ## 3. Use preset security policies
 
