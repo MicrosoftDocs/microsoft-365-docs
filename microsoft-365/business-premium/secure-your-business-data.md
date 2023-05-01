@@ -127,25 +127,68 @@ See the following articles:
 
 The best way to collaborate and share securely is to use Microsoft Teams. With Microsoft Teams, all your files and communications are in a protected environment and aren't being stored in unsafe ways outside of it.
 
-<br/><br/>See: <br/>- [Use Microsoft Teams for collaboration](create-teams-for-collaboration.md) <br/>- [Set up meetings with Microsoft Teams](set-up-meetings.md) <br/>- [Share files and videos in a safe environment](share-files-and-videos.md)<br/>- [Defender for Office 365 support for Microsoft Teams](/microsoft-365/security/office-365-security/mdo-support-teams-about)<br/>- [Data Loss Prevention (DLP) in Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy)<br/>- [Use sensitivity labels to protect calendar items, Teams meetings, and chat](/microsoft-365/compliance/sensitivity-labels-meetings) | *Use Microsoft Teams with [Safe Links & Safe Attachments](/microsoft-365/security/office-365-security/mdo-support-teams-about), [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-meetings), and [DLP](/microsoft-365/compliance/dlp-teams-default-policy).*  | *Use Microsoft Teams.*<br/>(*Defender for Office 365 can be added on*) | *Use Microsoft Teams.*<br/>(*Defender for Office 365 can be added on*) |
+Microsoft 365 Business Basic, Standard, and Premium include OneDrive and SharePoint.
 
+Microsoft 365 Business Premium also includes:
+
+- Defender for Office 365 Plan 1, with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) for Teams, SharePoint, and OneDrive
+- [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection), with capabilities to discover, classify, protect, and govern sensitive information.
+
+See the following articles: 
+
+- [Use Microsoft Teams for collaboration](create-teams-for-collaboration.md) 
+- [Set up meetings with Microsoft Teams](set-up-meetings.md) 
+- [Share files and videos in a safe environment](share-files-and-videos.md)
+- [Defender for Office 365 support for Microsoft Teams](/microsoft-365/security/office-365-security/mdo-support-teams-about)
+- [Data Loss Prevention (DLP) in Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy)
+- [Use sensitivity labels to protect calendar items, Teams meetings, and chat](/microsoft-365/compliance/sensitivity-labels-meetings)
+
+| Subscription | Recommendation |
+|---|---|
+| [Microsoft 365 Business Premium](index.md) | Use Microsoft Teams with [Safe Links & Safe Attachments](/microsoft-365/security/office-365-security/mdo-support-teams-about), [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-meetings), and [DLP](/microsoft-365/compliance/dlp-teams-default-policy). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | Use Microsoft Teams.<br/>(*Defender for Office 365 can be added on*) | 
+| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Microsoft Teams.<br/>(*Defender for Office 365 can be added on*) |
 
 ## 7. Set sharing settings for SharePoint and OneDrive files and folders
 
-Your default sharing levels for SharePoint and OneDrive might be set to a more permissive level than you should use. We recommend reviewing and if necessary, changing the default settings to better protect your business. Grant people only the access they need to do their jobs. <br/><br/>See: <br/>- [Set sharing settings for SharePoint and OneDrive](m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)<br/>- [Sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) | *Use SharePoint and OneDrive, with Safe Links, Safe Attachments, sensitivity labels, and DLP.* | *Use SharePoint and OneDrive.* |  *Use SharePoint and OneDrive.* |
+Your default sharing levels for SharePoint and OneDrive might be set to a more permissive level than you should use. We recommend reviewing and if necessary, changing the default settings to better protect your business. Grant people only the access they need to do their jobs. See: <br/>- [Set sharing settings for SharePoint and OneDrive](m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)<br/>- [Sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) | *Use SharePoint and OneDrive, with Safe Links, Safe Attachments, sensitivity labels, and DLP.* | *Use SharePoint and OneDrive.* |  *Use SharePoint and OneDrive.* |
+
+| Subscription | Recommendation |
+|---|---|
+| [Microsoft 365 Business Premium](index.md) |  |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) |  | 
+| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) |  |
 
 ## 8. Use Microsoft 365 Apps on devices
 
-Outlook and Microsoft 365 Apps (also referred to as Office apps) enable people to work productively and more securely across devices. Start a document on one device, and pick it up later on another device. Instead of sending files as email attachments, you can share links to documents that are stored in SharePoint or OneDrive.<br/><br/>See: <br/>- [Install Microsoft 365 Apps on all devices](m365bp-install-office-apps.md).<br/>- [Train your users on Microsoft 365](https://support.microsoft.com/topic/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)<br/>- [How Safe Links works in Microsoft 365 Apps](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps)<br/>- [Sensitivity bar in Microsoft 365 Apps](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-bar)| *Use Outlook and Web, mobile, and desktop versions of Microsoft 365 Apps, with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps) and [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-office-apps).* | *Use Outlook and Web/mobile/desktop versions of Microsoft 365 Apps.* | *Use Outlook and Web/mobile versions of Microsoft 365 Apps.* | 
+Outlook and Microsoft 365 Apps (also referred to as Office apps) enable people to work productively and more securely across devices. Start a document on one device, and pick it up later on another device. Instead of sending files as email attachments, you can share links to documents that are stored in SharePoint or OneDrive.See: <br/>- [Install Microsoft 365 Apps on all devices](m365bp-install-office-apps.md).<br/>- [Train your users on Microsoft 365](https://support.microsoft.com/topic/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)<br/>- [How Safe Links works in Microsoft 365 Apps](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps)<br/>- [Sensitivity bar in Microsoft 365 Apps](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-bar)| *Use Outlook and Web, mobile, and desktop versions of Microsoft 365 Apps, with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps) and [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-office-apps).* | *Use Outlook and Web/mobile/desktop versions of Microsoft 365 Apps.* | *Use Outlook and Web/mobile versions of Microsoft 365 Apps.* | 
+
+| Subscription | Recommendation |
+|---|---|
+| [Microsoft 365 Business Premium](index.md) |  |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) |  | 
+| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) |  |
 
 ## 9. Manage calendar sharing for your business
 
-You can help people in your organization share their calendars appropriately for better collaboration. You can manage what level of detail they can share, such as by limiting the details that are shared to free/busy times only.<br/><br/>See: <br/>- [Manage calendar sharing](m365bp-increase-protection.md#manage-calendar-sharing) <br/>- [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) | *Use Outlook, Exchange Online, and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy).* | *Use Outlook and Exchange Online.* | *Use Outlook and Exchange Online.* |
+You can help people in your organization share their calendars appropriately for better collaboration. You can manage what level of detail they can share, such as by limiting the details that are shared to free/busy times only.See: <br/>- [Manage calendar sharing](m365bp-increase-protection.md#manage-calendar-sharing) <br/>- [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) | *Use Outlook, Exchange Online, and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy).* | *Use Outlook and Exchange Online.* | *Use Outlook and Exchange Online.* |
+
+| Subscription | Recommendation |
+|---|---|
+| [Microsoft 365 Business Premium](index.md) |  |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) |  | 
+| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) |  |
 
 ## 10. Maintain your environment
 
-After your initial setup and configuration of Microsoft 365 for business is complete, your organization needs a maintenance and operations plan. As employees come and go, you'll need to add or remove users, reset passwords, and maybe even reset devices to factory settings. You'll also want to make sure people have only the access they need to do their jobs.<br/><br/>See: <br/>- [Maintain your environment](m365bp-maintain-environment.md) <br/>- [Security incident management in Microsoft 365 Business Premium](m365bp-security-incident-management.md)<br/>- [Microsoft 365 Business Premium security operations guide](m365bp-security-incident-quick-start.md) | *Use the [Azure AD portal](https://entra.microsoft.com) and the [Microsoft 365 admin center](https://admin.microsoft.com) for managing user accounts.<br/>Use the [Microsoft 365 Defender portal](https://security.microsoft.com) and the [Microsoft 365 Purview compliance portal](https://compliance.microsoft.com/) for viewing and managing security & compliance capabilities. <br/>You can also use the [Intune admin center](https://intune.microsoft.com) to view or manage devices.* | *Use the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com). to view or manage user accounts.*  | *Use the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com) to view or manage user accounts.* |
+After your initial setup and configuration of Microsoft 365 for business is complete, your organization needs a maintenance and operations plan. As employees come and go, you'll need to add or remove users, reset passwords, and maybe even reset devices to factory settings. You'll also want to make sure people have only the access they need to do their jobs.See: <br/>- [Maintain your environment](m365bp-maintain-environment.md) <br/>- [Security incident management in Microsoft 365 Business Premium](m365bp-security-incident-management.md)<br/>- [Microsoft 365 Business Premium security operations guide](m365bp-security-incident-quick-start.md) | *Use the [Azure AD portal](https://entra.microsoft.com) and the [Microsoft 365 admin center](https://admin.microsoft.com) for managing user accounts.<br/>Use the [Microsoft 365 Defender portal](https://security.microsoft.com) and the [Microsoft 365 Purview compliance portal](https://compliance.microsoft.com/) for viewing and managing security & compliance capabilities. <br/>You can also use the [Intune admin center](https://intune.microsoft.com) to view or manage devices.* | *Use the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com). to view or manage user accounts.*  | *Use the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com) to view or manage user accounts.* |
 
+
+| Subscription | Recommendation |
+|---|---|
+| [Microsoft 365 Business Premium](index.md) |  |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) |  | 
+| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) |  |
 
 ## See also
 
