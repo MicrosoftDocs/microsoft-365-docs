@@ -115,7 +115,7 @@ If you haven't already done so, assign licenses to any users in your organizatio
   
 ## Step 5 - Install Microsoft 365
 
-After you've verified the users you want to upgrade all have licenses, the final step is to have them install the Microsoft 365 apps. See [Download and install or reinstall Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
+After you've verified the users you want to upgrade all have licenses, the final step is to have them install the Microsoft 365 apps. See [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
   
 > [!TIP]
 > If you don't want your users installing Office themselves, see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](/DeployOffice/manage-software-download-settings-office-365). You can use the [Deployment Tool](/DeployOffice/overview-office-deployment-tool) to download Microsoft 365 apps to your local network and then deploy using the software deployment method you typically use.
