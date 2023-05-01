@@ -49,7 +49,6 @@ See [Turn on multi-factor authentication](m365bp-conditional-access.md).
 | [Microsoft 365 Business Premium](index.md) | [Use either security defaults or Conditional Access](m365bp-conditional-access.md).  |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Use security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults). | 
 
-
 ## 2. Protect your administrator accounts
 
 Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. You'll need to set up and manage the right number of admin and user accounts for your business. 
