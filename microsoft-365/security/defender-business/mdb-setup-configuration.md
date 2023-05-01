@@ -23,6 +23,8 @@ ms.collection:
 
 # Set up and configure Microsoft Defender for Business
 
+:::image type="content" source="media/mdb-setup-overview.png" alt-text="Overview of the setup process for Microsoft Defender for Business." lightbox="media/mdb-setup-overview.png":::
+
 This article describes the overall setup process for Defender for Business. The process includes:
 
 - Getting Defender for Business and assigning licenses to users.
