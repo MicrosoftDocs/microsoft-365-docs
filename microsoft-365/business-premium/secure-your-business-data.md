@@ -82,7 +82,7 @@ See the following articles:
 
 Every device is a possible attack avenue into your network and must be configured properly, even devices that are personally owned but used for work. Your security team and all employees can all take steps to protect devices. For example, all users can use MFA on their devices.
 
-Microsoft 365 Business Standard and Premium include Microsoft 365 Apps (such as Word, PowerPoint, and Excel) that can be installed on computers, tablets, and phones. Installing the Microsoft 365 Apps helps ensure users get the latest features, new tools, security updates, and bug fixes. (PC users also get Access and Publisher.)
+Microsoft 365 Business Standard and Premium include [Microsoft 365 Apps](/deployoffice/about-microsoft-365-apps) (such as Word, PowerPoint, and Excel) that can be installed on computers, tablets, and phones. Installing the Microsoft 365 Apps helps ensure users get the latest features, new tools, security updates, and bug fixes. (PC users also get Access and Publisher.)
 
 In addition to the Microsoft 365 Apps, Microsoft 365 Business Premium includes advanced protection for devices with [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) and [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). 
 
