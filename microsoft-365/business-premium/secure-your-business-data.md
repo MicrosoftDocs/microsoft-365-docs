@@ -217,7 +217,7 @@ After your initial setup and configuration of Microsoft 365 for business is comp
 
 Microsoft 365 Business Basic, Standard, and Premium include the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com) for managing user accounts.
 
-Microsoft 365 Business Premium also includes the [Microsoft 365 Defender portal](https://security.microsoft.com) and the [Microsoft 365 Purview compliance portal](https://compliance.microsoft.com/) for viewing and managing security & compliance capabilities.
+Microsoft 365 Business Premium also includes advanced security and compliance capabilities. You can use the [Microsoft 365 Defender portal](https://security.microsoft.com) or the [Microsoft 365 Purview compliance portal](https://compliance.microsoft.com/) for viewing and managing security & compliance capabilities.
 
 See the following articles:
 
