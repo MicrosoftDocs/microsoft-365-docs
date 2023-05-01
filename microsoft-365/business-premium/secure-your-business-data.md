@@ -36,7 +36,7 @@ This article lists the top 10 ways to secure your business data with Microsoft 3
 
 Microsoft 365 Business Basic, Standard, and Premium include antiphishing, antispam, and antimalware protection. Microsoft 365 Business Premium includes even more security capabilities, such as advanced threat protection for devices (also referred to as endpoints), email, and collaboration, and information protection.
 
-For more details about what each plan includes, see [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
+For more information about what each plan includes, see [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
 ## Top 10 ways to secure your business data
 
@@ -70,7 +70,7 @@ See [Turn on multi-factor authentication](m365bp-conditional-access.md).
 
 ## 2. Protect your administrator accounts
 
-Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. You'll need to set up and manage the right number of admin and user accounts for your business. 
+Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. Make sure to set up and manage the right number of admin and user accounts for your business. 
 
 We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs. 
 
