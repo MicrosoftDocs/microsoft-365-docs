@@ -86,7 +86,9 @@ See the following articles:
 
 Every device is a possible attack avenue into your network and must be configured properly, even devices that are personally owned but used for work. Your security team and all employees can all take steps to protect devices. For example, all users can use MFA on their devices.
 
-In addition to the Microsoft 365 Apps, Microsoft 365 Business Premium includes advanced protection for devices with [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) and [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). 
+Microsoft 365 Business Basic, Standard, and Premium enable users to use MFA on their devices.
+
+Microsoft 365 Business Premium also includes advanced device protection with [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Defender for Business includes threat and vulnerability management, attack surface reduction, next-generation protection, endpoint detection and response, and automated investigation capabilities. Microsoft 365 Business Premium also includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) for managing devices. 
 
 See the following articles:
 
