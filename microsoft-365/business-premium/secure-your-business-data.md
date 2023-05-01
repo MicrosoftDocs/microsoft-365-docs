@@ -51,6 +51,8 @@ For more details about what each plan includes, see [Microsoft 365 User Subscrip
 9. [Manage calendar sharing for your business](#9-manage-calendar-sharing-for-your-business).
 10. [Maintain your environment](#10-maintain-your-environment).   
 
+The following sections describe these methods in more detail and include links to additional information.
+
 ## 1. Use multi-factor authentication
 
 [Multi-factor authentication](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent bad actors from taking over your account if they know your password. 
@@ -78,7 +80,7 @@ See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) <br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Assign admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/assign-admin-roles) |
+| [Microsoft 365 Business Premium](index.md) <br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles) |
 
 ## 3. Use preset security policies
 
@@ -112,13 +114,12 @@ See the following articles:
 - [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md) 
 - [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
 - [Set up and secure managed devices](m365bp-protect-devices.md) 
-- [What is Microsoft Defender for Business?](../security/defender-business/mdb-overview.md)
 
-| Subscription | Recommendation |
+| Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use MFA.<br/>Install Microsoft 365 Apps on devices.<br/>Protect devices with Defender for Business.<br/>If preferred, you can use Intune to manage devices. |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | Use MFA. <br/>Install Microsoft 365 Apps on devices.<br/>(*Defender for Business can be added on*) | 
-| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use MFA.<br/>(*Defender for Business can be added on*) |
+| [Microsoft 365 Business Premium](index.md) | [Turn on MFA](m365bp-conditional-access.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-install-office-apps.md).<br/>[Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Turn on MFA](m365bp-conditional-access.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-install-office-apps.md).<br/>(*Defender for Business can be added on*) | 
+| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Turn on MFA](m365bp-conditional-access.md).<br/>(*Defender for Business can be added on*) |
 
 ## 5. Train everyone on email best practices
 
