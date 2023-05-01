@@ -112,8 +112,8 @@ The images and the tables below list the changes in navigation between Microsoft
 The capabilities on the following pages are fully integrated into Microsoft 365 Defender, and therefore don't have their own standalone experience in Microsoft 365 Defender:
   
 - [Settings > Azure AD Identity Protection](investigate-alerts.md)
-- [Settings > App Governance](defender-cloud-apps/app-governance-get-started.md)
-- [Settings > Microsoft Defender for Identity](defender-for-identity/deploy-defender-identity.md)
+- [Settings > App Governance](/defender-cloud-apps/app-governance-get-started)
+- [Settings > Microsoft Defender for Identity](/defender-for-identity/deploy-defender-identity)
 
 ## Limitations
 
