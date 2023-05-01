@@ -28,7 +28,7 @@ description: Learn how to use Microsoft Syntex for generating documents in bulk.
       - Power Automate  
    :::column-end:::
    :::column span="":::
-      ![Image of a generic business people in a busy office setting.](../media/content-understanding/uc-site-template.png)
+      ![Image of a generic business people in a busy office setting.](../media/content-understanding/uc-bulk-content-assembly.png)
    :::column-end:::
 :::row-end:::
 
