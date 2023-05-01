@@ -101,6 +101,7 @@ See the following articles:
 - [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md) 
 - [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
 - [Set up and secure managed devices](m365bp-protect-devices.md) 
+- [What is Microsoft Defender for Business?](../security/defender-business/mdb-overview.md)
 
 | Subscription | Recommendation |
 |---|---|
@@ -124,11 +125,11 @@ See the following articles:
 - [Anti-phishing protection in Defender for Office 365](/microsoft-365/security/office-365-security/anti-phishing-protection-about#additional-anti-phishing-protection-in-microsoft-defender-for-office-365)
 - [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-about) 
 - [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) 
+- [Protect against threats](../security/office-365-security/protect-against-threats.md)
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use EOP and Defender for Office 365 Plan 1 (advanced protection, Safe Links, and Safe Attachments). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)  |Use EOP.<br/>(*Defender for Office 365 can be added on*)  |
+| [Microsoft 365 Business Premium](index.md)<br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)  | Follow the guidance in [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).<br/>Share [Protect yourself against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md) with everyone in your organization. |
 
 ## 6. Use Microsoft Teams for collaboration and sharing
 
@@ -173,7 +174,7 @@ See the following articles:
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) for Microsoft Teams, SharePoint, and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
+| [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) with SharePoint and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use SharePoint and OneDrive.<br/>(*Defender for Office 365 can be added on*) |
 
 ## 8. Use Microsoft 365 Apps on devices
@@ -184,7 +185,9 @@ Microsoft 365 Business Basic, Standard, and Premium include Outlook and Web/mobi
 
 Microsoft 365 Business Standard and Premium include desktop versions of Microsoft 365 Apps that can be installed on computers, tablets, and phones. Installing the Microsoft 365 Apps helps ensure users get the latest features, new tools, security updates, and bug fixes. (PC users also get Access and Publisher.)
 
-Microsoft 365 Business Premium also includes [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) (with Safe Links and Safe Attachments), and [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection) (with sensitivity labels).
+Microsoft 365 Business Premium also includes:
+- [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) (with Safe Links and Safe Attachments)
+- [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection) (with sensitivity labels)
 
 See the following articles: 
 
