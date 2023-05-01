@@ -68,7 +68,7 @@ See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 Preset security policies save time by applying recommended spam, anti-malware, and anti-phishing policies to users all at once. 
 
-[Exchange Online Protection](../security/office-365-security/eop-about.md) (EOP) includes preset security policies for anti-spam, anti-malware, and anti-phishing. EOP is included in Microsoft 365 Business Basic, Standard, and Premium. 
+[Exchange Online Protection](../security/office-365-security/eop-about.md) (EOP) includes preset security policies for anti-spam, anti-malware, and anti-phishing. Microsoft 365 Business Basic, Standard, and Premium include EOP. 
 
 [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) includes preset security policies for advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments. Microsoft 365 Business Premium includes Defender for Office 365 Plan 1.
 
