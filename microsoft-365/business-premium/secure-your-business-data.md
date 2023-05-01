@@ -201,14 +201,18 @@ See the following articles:
 
 ## 10. Maintain your environment
 
-After your initial setup and configuration of Microsoft 365 for business is complete, your organization needs a maintenance and operations plan. As employees come and go, you'll need to add or remove users, reset passwords, and maybe even reset devices to factory settings. You'll also want to make sure people have only the access they need to do their jobs.See: <br/>- [Maintain your environment](m365bp-maintain-environment.md) <br/>- [Security incident management in Microsoft 365 Business Premium](m365bp-security-incident-management.md)<br/>- [Microsoft 365 Business Premium security operations guide](m365bp-security-incident-quick-start.md) | *Use the [Azure AD portal](https://entra.microsoft.com) and the [Microsoft 365 admin center](https://admin.microsoft.com) for managing user accounts.<br/>Use the [Microsoft 365 Defender portal](https://security.microsoft.com) and the [Microsoft 365 Purview compliance portal](https://compliance.microsoft.com/) for viewing and managing security & compliance capabilities. <br/>You can also use the [Intune admin center](https://intune.microsoft.com) to view or manage devices.* | *Use the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com). to view or manage user accounts.*  | *Use the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com) to view or manage user accounts.* |
+After your initial setup and configuration of Microsoft 365 for business is complete, your organization needs a maintenance and operations plan. As employees come and go, you'll need to add or remove users, reset passwords, and maybe even reset devices to factory settings. You'll also want to make sure people have only the access they need to do their jobs.
 
+See the following articles:
+
+- [Maintain your environment](m365bp-maintain-environment.md) 
+- [Security incident management in Microsoft 365 Business Premium](m365bp-security-incident-management.md)
+- [Microsoft 365 Business Premium security operations guide](m365bp-security-incident-quick-start.md) 
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) |  |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) |  | 
-| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) |  |
+| [Microsoft 365 Business Premium](index.md) | Use the [Azure AD portal](https://entra.microsoft.com) and the [Microsoft 365 admin center](https://admin.microsoft.com) for managing user accounts.<br/>Use the [Microsoft 365 Defender portal](https://security.microsoft.com) and the [Microsoft 365 Purview compliance portal](https://compliance.microsoft.com/) for viewing and managing security & compliance capabilities. <br/>You can also use the [Intune admin center](https://intune.microsoft.com) to view or manage devices. |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com) to view or manage user accounts. |
 
 ## See also
 
