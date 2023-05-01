@@ -61,7 +61,7 @@ See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) <br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use the [Microsoft 365 admin center](https://admin.microsoft.com) or the [Azure AD portal](https://entra.microsoft.com). |
+| [Microsoft 365 Business Premium](index.md) <br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Assign admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/assign-admin-roles) |
 
 ## 3. Use preset security policies
 
@@ -78,8 +78,7 @@ See the following articles:
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use Standard or Strict preset policies in EOP and Defender for Office 365 Plan 1. |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Standard or Strict preset policies in EOP.<br/>(*Defender for Office 365 can be added on*.)  |  
+| [Microsoft 365 Business Premium](index.md)<br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Use the Microsoft 365 Defender portal to assign Standard or Strict preset security policies to users](/microsoft-365/security/office-365-security/preset-security-policies#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users) |
 
 ## 4. Protect all devices
 
@@ -168,7 +167,7 @@ See the following articles:
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive, with Safe Links, Safe Attachments, sensitivity labels, and DLP. |
+| [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) for Microsoft Teams, SharePoint, and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use SharePoint and OneDrive.<br/>(*Defender for Office 365 can be added on*) |
 
 ## 8. Use Microsoft 365 Apps on devices
