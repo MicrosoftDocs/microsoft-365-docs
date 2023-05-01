@@ -43,7 +43,7 @@ This article lists the top 10 ways to secure your data with Microsoft 365 for bu
 | [Microsoft 365 Business Premium](index.md) | Use security defaults or Conditional Access in [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use [security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). | 
 
-**[Learn about security defaults and Conditional Access](m365bp-conditional-access.md).**
+See [Learn about security defaults and Conditional Access](m365bp-conditional-access.md).
 
 ## 2. Protect your administrator accounts
 
@@ -51,7 +51,7 @@ Administrator accounts (also called admins) have elevated privileges, making the
 
 We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs.
 
-**[Protect your administrator accounts](m365bp-protect-admin-accounts.md)**
+See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 | Subscription | Recommendation |
 |---|---|
@@ -82,7 +82,11 @@ See:
 - [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
 - [Set up and secure managed devices](m365bp-protect-devices.md) 
 
-|  *Use MFA, Microsoft 365 Apps on devices, and advanced device security with [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) and [Microsoft Intune](/mem/intune/fundamentals/what-is-intune).* |  *Use MFA and Microsoft 365 Apps on devices.*<br/>(*Defender for Business can be added on*) | *Use MFA.*<br/>(*Defender for Business can be added on*) |
+| Subscription | Recommendation |
+|---|---|
+| [Microsoft 365 Business Premium](index.md) | Use MFA, Microsoft 365 Apps on devices, and advanced device security with [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). You can also use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to manage devices. |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | Use MFA and Microsoft 365 Apps on devices.<br/>(*Defender for Business can be added on*) | 
+| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use MFA.<br/>(*Defender for Business can be added on*) |
 
 
 | 5. **[Train everyone on email best practices](m365bp-avoid-phishing-and-attacks.md)**.<br/><br/>Email can contain malicious attacks cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on humans making consistently good decisions with those communications. Train everyone to know what to watch for spam or junk mail, phishing attempts, spoofing, and malware in their email. <br/><br/>See: <br/>- [Protect yourself against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md)<br/>- [Anti-phishing protection in Defender for Office 365](/microsoft-365/security/office-365-security/anti-phishing-protection-about#additional-anti-phishing-protection-in-microsoft-defender-for-office-365)<br/>- [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-about) <br/>- [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) | *Use EOP and advanced protection for email with [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).* | *Use EOP.* <br/>(*Defender for Office 365 can be added on*) |  *Use EOP.*<br/>(*Defender for Office 365 can be added on*) |
