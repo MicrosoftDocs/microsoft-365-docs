@@ -30,12 +30,12 @@ This article describes the overall setup process for Defender for Business.
 
 The process includes:
 
-1. Getting Defender for Business.
-2. Adding users and assigning licenses.
-3. Assigning security roles and permissions for your security team.
-4. Setting up email notifications for your security team.
-5. Onboarding devices so they're protected as soon as possible.
-6. Setting up and reviewing your security policies and settings.
+1. [Getting Defender for Business](get-defender-business.md).
+2. [Adding users and assigning licenses](mdb-add-users.md).
+3. [Assigning security roles and permissions for your security team](mdb-roles-permissions.md).
+4. [Setting up email notifications for your security team](mdb-email-notifications.md).
+5. [Onboarding devices so they're protected as soon as possible](mdb-onboard-devices.md).
+6. [Setting up and reviewing your security policies and settings](mdb-configure-security-settings.md).
 
 ## Setup options
 
