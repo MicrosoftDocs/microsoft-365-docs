@@ -1,5 +1,5 @@
 ---
-title: Secure your business data with Microsoft 365 for business
+title: Top 10 ways to secure your business data with Microsoft 365 for business
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -23,10 +23,10 @@ search.appverid:
 description: "Learn best practices to protect your business from ransomware, phishing, and malicious URLs or attachments with Microsoft 365 for business."
 ---
 
-# Secure your business data with Microsoft 365
+# Top 10 ways to secure your data with Microsoft 365 for business
 
 > [!TIP]
-> This article is for small and medium-sized businesses who have up to 300 users. 
+> **This article is for small and medium-sized businesses who have up to 300 users**. 
 >
 > If you're looking for information for enterprise organizations, see [Deploy ransomware protection for your Microsoft 365 tenant](../solutions/ransomware-protection-microsoft-365.md).
 > 
