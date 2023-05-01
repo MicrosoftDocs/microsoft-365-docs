@@ -40,7 +40,7 @@ You can use content assembly to generate documents in bulk using a template. Let
 
 2. Set up a SharePoint list with the required vendor details.  
 
-3. Go to the document library and create a modern template using a reminder letter. Create fields for the values that represent vendor details and associate them with the columns of the list created in step 2.  
+3. Go to the document library and create a modern template using a reminder letter. Create fields for the values that represent vendor details and associate them with the columns of the list you set up in step 2.  
 
 4. Now create a Power Automate flow using the action “Generate document using Syntex” and with a manual trigger and get items in the list. This ensures that you can generate documents when you want for all values in the list.  
 
