@@ -123,7 +123,7 @@ See the following articles:
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use EOP and advanced protection for email with Defender for Office 365 Plan 1. |
+| [Microsoft 365 Business Premium](index.md) | Use EOP and Defender for Office 365 Plan 1 (advanced protection, Safe Links, and Safe Attachments). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)  |Use EOP.<br/>(*Defender for Office 365 can be added on*)  |
 
 ## 6. Use Microsoft Teams for collaboration and sharing
@@ -134,8 +134,8 @@ Microsoft 365 Business Basic, Standard, and Premium include Microsoft Teams.
 
 Microsoft 365 Business Premium also includes:
 
-- [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet). It includes [Safe Links](/microsoft-365/security/office-365-security/safe-links-about#safe-links-settings-for-microsoft-teams) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about).
-- [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection). It includes [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-meetings) and [DLP](/microsoft-365/compliance/dlp-teams-default-policy) to discover, classify, protect, and govern sensitive information.
+- [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about#safe-links-settings-for-microsoft-teams) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) for Microsoft Teams.
+- [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection), with [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-meetings) and [DLP](/microsoft-365/compliance/dlp-teams-default-policy) to discover, classify, protect, and govern sensitive information.
 
 See the following articles: 
 
@@ -148,7 +148,7 @@ See the following articles:
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use Microsoft Teams for meetings and information sharing. <br/>Use [Safe Links & Safe Attachments](/microsoft-365/security/office-365-security/mdo-support-teams-about) with Microsoft Teams. <br/>Use [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-meetings) to protect calendar items, Teams meetings, and chat. <br/>Use the default [DLP policy](/microsoft-365/compliance/dlp-teams-default-policy) in Teams. |
+| [Microsoft 365 Business Premium](index.md) | Use Microsoft Teams for meetings and information sharing. <br/>Use [Safe Links & Safe Attachments](/microsoft-365/security/office-365-security/mdo-support-teams-about) with Microsoft Teams. <br/>Use [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-meetings) to protect calendar items, Microsoft Teams meetings, and chat. <br/>Use the default [DLP policy](/microsoft-365/compliance/dlp-teams-default-policy) in Microsoft Teams. |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Microsoft Teams.<br/>(*Defender for Office 365 can be added on*) | 
 
 ## 7. Set sharing settings for SharePoint and OneDrive files and folders
@@ -159,7 +159,7 @@ Microsoft 365 Business Basic, Standard, and Premium include OneDrive and SharePo
 
 Microsoft 365 Business Premium also includes:
 
-- [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) for Teams, SharePoint, and OneDrive.
+- [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) for Microsoft Teams, SharePoint, and OneDrive.
 - [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection), with capabilities to discover, classify, protect, and govern sensitive information.
 
 See the following articles: 
