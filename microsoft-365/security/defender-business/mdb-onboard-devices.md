@@ -25,7 +25,7 @@ ms.collection:
 
 This article describes how to onboard devices to Defender for Business.
 
-
+:::image type="content" source="media/mdb-setup-step5.png" alt-text="Visual depicting step 5 - onboarding devices to Defender for Business.":::
 
 Onboard your business devices to protect them right away. You can choose from several options to onboard your company's devices. This article walks you through your options and describes how onboarding works.
 
