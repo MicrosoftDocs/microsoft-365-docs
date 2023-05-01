@@ -47,11 +47,11 @@ If a mailbox on hold does not have an archive and reaches a critical or warning 
 
 ### Mailboxes on hold without an archive
 
-If a mailbox is on hold and is nearing or has reached its quota and does not have an archive, an admin may [enable an archive mailbox](../compliance/enable-archive-mailboxes.md) (and potentially [enable auto-expanding archiving](../compliance/enable-autoexpanding-archiving.md)) along with ensuring an MRM archive policy is applied to the mailbox. (An MRM archive policy is a retention policy in Exchange Online that moves items to the archive mailbox.) For more information about how holds interact with quotas and recommended quota sizes for the main mailbox and Recoverable Items folder, see [Increase the Recoverable Items quota for mailboxes on hold](../compliance/ediscovery-increase-the-recoverable-quota-for-mailboxes-on-hold).
+If a mailbox is on hold and is nearing or has reached its quota and does not have an archive, an admin may [enable an archive mailbox](../compliance/enable-archive-mailboxes.md) (and potentially [enable auto-expanding archiving](../compliance/enable-autoexpanding-archiving.md)) along with ensuring an MRM archive policy is applied to the mailbox. (An MRM archive policy is a retention policy in Exchange Online that moves items to the archive mailbox.) For more information about how holds interact with quotas and recommended quota sizes for the main mailbox and Recoverable Items folder, see [Increase the Recoverable Items quota for mailboxes on hold](../compliance/ediscovery-increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
 ### Mailboxes on hold with an archive
 
-If a mailbox is on hold, has an archive, and is nearing or has reached its Recoverable Items Quota, an admin may increase the quota for the Recoverable Items folder. For more information, see [Increase the Recoverable Items quota for mailboxes on hold](../compliance/ediscovery-increase-the-recoverable-quota-for-mailboxes-on-hold).
+If a mailbox is on hold, has an archive, and is nearing or has reached its Recoverable Items Quota, an admin may increase the quota for the Recoverable Items folder. For more information, see [Increase the Recoverable Items quota for mailboxes on hold](../compliance/ediscovery-increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
 If an admin increases the Recoverable Items Quota, they should also make sure that an MRM archive policy that moves items to the archive mailbox is applied to the mailboxes. The retention period for the archive policy must be short enough so that items aren't retained too long in the primary mailbox before they're moved to the archive.
 
@@ -60,7 +60,7 @@ If an admin increases the Recoverable Items Quota, they should also make sure th
 
 ### MRM retention policies in your organization
 
-Archive retention policies may be configured in a variety of ways, depending on your organization’s needs. For detailed information about retention policies, see [Retention tags and retention policies in Exchange Online](https://learn.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies). An admin may view existing retention policies by running the following command:
+Archive retention policies may be configured in a variety of ways, depending on your organization’s needs. For detailed information about retention policies, see [Retention tags and retention policies in Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies). An admin may view existing retention policies by running the following command:
 
    ```powershell
    Get-RetentionPolicy | FL
@@ -84,5 +84,5 @@ If you do not resolve the quota issues, you can expect to see this type of servi
 
 ## More information
 
-- For information about troubleshooting and resolving archive mailbox issues, see [Microsoft Purview troubleshooting](https://learn.microsoft.com/office365/troubleshoot/microsoft-365-compliance-welcome).
-- For guidance about identifying the holds placed on a mailbox, see [How to identify the type of hold placed on a mailbox](../compliance/identify-a-hold-on-an-exchange-online-mailbox).
+- For information about troubleshooting and resolving archive mailbox issues, see [Microsoft Purview troubleshooting](/office365/troubleshoot/microsoft-365-compliance-welcome).
+- For guidance about identifying the holds placed on a mailbox, see [How to identify the type of hold placed on a mailbox](../compliance/ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md).
