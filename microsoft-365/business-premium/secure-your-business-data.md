@@ -36,22 +36,21 @@ This article lists the top 10 ways to secure your data with Microsoft 365 for bu
 
 ## 1. Use multi-factor authentication
 
-[Multi-factor authentication](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent bad actors from taking over your account if they know your password.
+[Multi-factor authentication](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent bad actors from taking over your account if they know your password. To help simplify the process of enabling MFA, [security defaults in Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) are available in Microsoft 365 Business Basic, Standard, and Premium. Microsoft 365 Business Premium also includes Azure AD Premium P1, which enables you to set up and configure Conditional Access policies instead of security defaults, for more stringent requirements.
+
+[Turn on multi-factor authentication](m365bp-conditional-access.md).
 
 | Subscription | Recommendation |
 |---|---|
 | [Microsoft 365 Business Premium](index.md) | Use security defaults or Conditional Access.  |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use security defaults. | 
 
-See [Learn about security defaults and Conditional Access](m365bp-conditional-access.md).
 
 ## 2. Protect your administrator accounts
 
-Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. You'll need to set up and manage the right number of admin and user accounts for your business. 
+Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. You'll need to set up and manage the right number of admin and user accounts for your business. We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs. You can use either the Microsoft 365 admin center or the Azure AD portal to set up and manage your admin accounts.
 
-We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs.
-
-See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
+[Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 | Subscription | Recommendation |
 |---|---|
@@ -59,13 +58,13 @@ See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 ## 3. Use preset security policies
 
-Preset security policies save time by applying recommended spam, anti-malware, and anti-phishing policies to users all at once.
+Preset security policies save time by applying recommended spam, anti-malware, and anti-phishing policies to users all at once. [Exchange Online Protection](../security/office-365-security/eop-about.md) (EOP) includes preset security policies for anti-spam, anti-malware, and anti-phishing. EOP is included in Microsoft 365 Business Basic, Standard, and Premium. [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) includes preset security policies for advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments. Microsoft 365 Business Premium includes Defender for Office 365 Plan 1.
 
 See [Preset security policies](../security/office-365-security/preset-security-policies.md) and [Protect against malware and other cyberthreats](m365bp-increase-protection.md).
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use preset security policies for anti-spam, anti-malware, and anti-phishing in [Exchange Online Protection](../security/office-365-security/eop-about.md) (EOP).<br/>Use preset security policies for advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments in [Microsoft Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet). |
+| [Microsoft 365 Business Premium](index.md) | Use preset security policies for anti-spam, anti-malware, and anti-phishing in [Exchange Online Protection](../security/office-365-security/eop-about.md) (EOP).<br/>Use preset security policies for advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments in . |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use [preset security policies in EOP](../security/office-365-security/preset-security-policies.md).<br/>(*Defender for Office 365 can be added on*.)  |  
 
 ## 4. Protect all devices
