@@ -61,10 +61,7 @@ See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 Preset security policies save time by applying recommended spam, anti-malware, and anti-phishing policies to users all at once.
 
-See: 
-
-- [Preset security policies](../security/office-365-security/preset-security-policies.md)
-- [Protect against malware and other cyberthreats](m365bp-increase-protection.md) 
+See [Preset security policies](../security/office-365-security/preset-security-policies.md) and [Protect against malware and other cyberthreats](m365bp-increase-protection.md).
 
 | Subscription | Recommendation |
 |---|---|
