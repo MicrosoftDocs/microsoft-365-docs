@@ -87,8 +87,8 @@ In addition to the Microsoft 365 Apps, Microsoft 365 Business Premium includes a
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use MFA, Microsoft 365 Apps on devices, and advanced device security with [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). You can also use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to manage devices. |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | Use MFA and Microsoft 365 Apps on devices.<br/>(*Defender for Business can be added on*) | 
+| [Microsoft 365 Business Premium](index.md) | Use MFA.<br/>Install Microsoft 365 Apps on devices.<br/>Protect devices with [Defender for Business](../security/defender-business/mdb-overview.md).<br/>You can also use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to manage devices. |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | Use MFA. <br/>Install Microsoft 365 Apps on devices.<br/>(*Defender for Business can be added on*) | 
 | [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use MFA.<br/>(*Defender for Business can be added on*) |
 
 
