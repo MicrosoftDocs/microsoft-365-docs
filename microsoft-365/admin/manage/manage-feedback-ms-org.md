@@ -2,8 +2,8 @@
 title: "Manage Microsoft feedback for your organization"
 f1.keywords:
 - NOCSH
-ms.author: Kwekua
-author: Kwekua
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/26/2021
 audience: Admin
@@ -42,7 +42,7 @@ The table below represents which apps and services are currently connected to th
 |**Intune Company Portal (Android)**|Yes|Yes|Yes|Yes|
 |**Microsoft Stream (Android, iOS)**|Yes|Yes|Yes|Yes|
 |**Microsoft Whiteboard**|Yes|Yes|Yes|Yes|
-|**Office.com**|Yes|Yes|Yes|Yes|
+|**Microsoft365.com**|Yes|Yes|Yes|Yes|
 |**OneNote**|Yes|Yes|Yes|Yes|
 |**OneDrive**|[Some settings currently managed by other controls.](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook (Web, iOS)**|Coming soon|Coming soon|Coming soon|Coming soon|
@@ -99,7 +99,7 @@ Your devices must be on a minimum build number to use these policies. See the ta
 
 ## Configure policies
 
-To configure these policy settings, you can use the Office cloud policy service. For more information, see [Overview of the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service). You can search for "feedback" or "survey" within the Office cloud policy service UI to find the policy settings to configure them. 
+To configure these policy settings, you can use the Cloud Policy service for Microsoft 365. For more information, see [Overview of the Cloud Policy service for Microsoft 365](/deployoffice/overview-office-cloud-policy-service). You can search for "feedback" or "survey" within the Cloud Policy service for Microsoft 365 UI to find the policy settings to configure them. 
 
 These policy settings are also available if you use Group Policy. To use these policy settings, download at least version 5146.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), released on March 22, 2021.
 

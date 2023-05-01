@@ -1,5 +1,5 @@
 ---
-title: Add or Remove Machine Tags API
+title: Add or remove a tag for a machine
 description: Learn how to use the Add or Remove machine tags API to adds or remove a tag for a machine in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, tags, machine tags
 ms.service: microsoft-365-security
@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 02/24/2023
 ---
 
-# Add or remove machine tags API
+# Add or remove a tag for a machine
 
 **Applies to:**
 
@@ -38,7 +38,7 @@ ms.date: 02/24/2023
 
 ## API description
 
-Adds or removes tag to a specific [Machine](machine.md).
+Adds or removes a tag for a specific [Machine](machine.md).
 
 ## Limitations
 
@@ -89,7 +89,7 @@ If successful, this method returns 200 - Ok response code and the updated Machin
 
 ## Example Request
 
-Here is an example of a request that adds machine tag.
+Here is an example of a request that adds a machine tag.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/tags

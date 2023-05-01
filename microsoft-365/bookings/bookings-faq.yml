@@ -246,7 +246,7 @@ sections:
       - question: |
           Is it possible to share only one service on the Self-service page at a time?
         answer: |
-          Yes, you can either create separate Bookings calendars for each service, or you can go to the Services tab, edit a service, and at the top of the page you'll see an option to share a URL only for that specific service.
+          Yes, you can either create separate Bookings calendars for each service, or you can go to the Services tab and select Service details. You'll see a URL only for that specific service under the Service booking page. You can then share that URL which will be for that specific service.
 
       - question: |
           What options are available for embedding a consent form or disclosure for those booking an appointment?
@@ -268,7 +268,7 @@ sections:
       - question: |
           Where is Bookings data stored?
         answer: |
-          Bookings is a Microsoft 365 app, meaning all data is stored within the Microsoft 365 platform and in Exchange. Bookings follows all data storage policies that are set by Microsoft, which are the same policies that all Office apps follow. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it's stored within Exchange. Microsoft Bookings uses the same policies used by Microsoft 365, which you can find [here.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+          Bookings is a Microsoft 365 app, meaning all data is stored within the Microsoft 365 platform and in Exchange. Bookings follows all data storage policies that are set by Microsoft, which are the same policies that all Microsoft 365 apps follow. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it's stored within Exchange. Microsoft Bookings uses the same policies used by Microsoft 365, which you can find [here.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
           
       - question: |
           Is there a way to centrally manage Bookings calendars for all users?

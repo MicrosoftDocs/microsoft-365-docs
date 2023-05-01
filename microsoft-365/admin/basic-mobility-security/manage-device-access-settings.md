@@ -3,7 +3,7 @@ title: "Manage device access settings in Basic Mobility and Security"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 08/31/2020
 audience: Admin
@@ -31,18 +31,11 @@ Use these steps:
 
 1. Sign in to Microsoft 365 with your global admin account.
 
-2. In your browser, type: <https://protection.office.com/>.
+2. In your browser, type: <https://compliance.microsoft.com/basicmobilityandsecurity>.
 
-    > [!IMPORTANT]
-    > If this is the first time you're using Basic Mobility and Security for Microsoft 365 Business Standard, activate it here: [Activate Basic Security and Mobility](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). After you've activated it, manage your devices with [Office 365 Security & Compliance](https://protection.office.com/).
+3. Go to **Organization Setting** tab.
 
-3. Go to **Data loss prevention** \> **Device management** \> **Device policies**, and select **Manage organization-wide device access settings**.
-
-4. Select **Access**.
-
-    :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="Basic Mobility and Security block access checkbox.":::
-
-5. Select **Save**.
+4. Select **Access restriction for unsupported MDM device** and make sure **Allow access (device enrollment is required)** is selected.
 
 To learn what devices Basic Mobility and Security supports, see [Capabilities of Basic Mobility and Security](capabilities.md).
 

@@ -3,7 +3,7 @@ title: "Step 7 - Delete a former employee's user account"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/17/2021
 audience: Admin
@@ -51,7 +51,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Does your organization use Active Directory?
 
-If your organization synchronizes user accounts to Microsoft 365 from a local Active Directory environment, you must delete and restore those user accounts in your local Active Directory service. You can't delete or restore them in Office 365.
+If your organization synchronizes user accounts to Microsoft 365 from a local Active Directory environment, you must delete and restore those user accounts in your local Active Directory service. You can't delete or restore them in Microsoft 365.
 
 To learn how to delete and restore user account in Active Directory, see [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
   
