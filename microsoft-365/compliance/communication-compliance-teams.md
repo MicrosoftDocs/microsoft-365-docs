@@ -25,7 +25,7 @@ appliesto:
 
 Microsoft Purview Communication Compliance is an insider risk solution in Microsoft 365 that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization.
 
-For Microsoft Teams, communication compliance helps identify the [following types](communication-compliance-feature-reference.md) of inappropriate content in Teams channels, Private Teams channels, or in 1:1 and group chats:
+For Microsoft Teams, communication compliance helps identify the following types of inappropriate content in Teams channels, Private Teams channels, or in 1:1 and group chats:
 
 - Offensive, profane, and harassing language
 - Adult, racy, and gory images
