@@ -163,7 +163,7 @@ See the following articles:
 - [Data Loss Prevention (DLP) in Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy)
 - [Use sensitivity labels to protect calendar items, Teams meetings, and chat](/microsoft-365/compliance/sensitivity-labels-meetings)
 
-| Subscription | Recommendation |
+| Subscription | Recommendations |
 |---|---|
 | [Microsoft 365 Business Premium](index.md) | Use Microsoft Teams for meetings and information sharing. <br/>Use [Safe Links & Safe Attachments](/microsoft-365/security/office-365-security/mdo-support-teams-about) with Microsoft Teams. <br/>Use [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-meetings) to protect calendar items, Microsoft Teams meetings, and chat. <br/>Use the default [DLP policy](/microsoft-365/compliance/dlp-teams-default-policy) in Microsoft Teams. |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Microsoft Teams.<br/>(*Defender for Office 365 can be added on*) | 
@@ -184,7 +184,7 @@ See the following articles:
 - [Set sharing settings for SharePoint and OneDrive](m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
 - [Sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)
 
-| Subscription | Recommendation |
+| Subscription | Recommendations |
 |---|---|
 | [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) with SharePoint and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use SharePoint and OneDrive.<br/>(*Defender for Office 365 can be added on*) |
@@ -208,10 +208,9 @@ See the following articles:
 - [How Safe Links works in Microsoft 365 Apps](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps)
 - [Sensitivity bar in Microsoft 365 Apps](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-bar) 
 
-| Subscription | Recommendation |
+| Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use Outlook and Web, mobile, and desktop versions of Microsoft 365 Apps, with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps) and [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-office-apps). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | Use Outlook and Web/mobile/desktop versions of Microsoft 365 Apps. | 
+| [Microsoft 365 Business Premium](index.md)<br/> [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Install Microsoft 365 apps on all devices](m365bp-install-office-apps.md). <br/>Share the [Employee quick setup guide with users](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). | 
 | [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Web/mobile versions of Microsoft 365 Apps. |
 
 ## 9. Manage calendar sharing for your business
@@ -227,10 +226,10 @@ See the following articles:
 - [Manage calendar sharing](m365bp-increase-protection.md#manage-calendar-sharing) 
 - [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) 
 
-| Subscription | Recommendation |
+| Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use Outlook, Exchange Online, and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Exchange Online. | 
+| [Microsoft 365 Business Premium](index.md) | Use Outlook and Exchange Online for email and calendars.<br/>[Get started using your default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Exchange Online for email and calendars. | 
 
 ## 10. Maintain your environment
 
@@ -246,7 +245,7 @@ See the following articles:
 - [Security incident management in Microsoft 365 Business Premium](m365bp-security-incident-management.md)
 - [Microsoft 365 Business Premium security operations guide](m365bp-security-incident-quick-start.md) 
 
-| Subscription | Recommendation |
+| Subscription | Recommendations |
 |---|---|
 | [Microsoft 365 Business Premium](index.md) | Use the [Microsoft 365 admin center](https://admin.microsoft.com) or the [Azure AD portal](https://entra.microsoft.com) for managing user accounts.<br/>Use the [Microsoft 365 Defender portal](https://security.microsoft.com) and the [Microsoft 365 Purview compliance portal](https://compliance.microsoft.com/) for viewing and managing security & compliance capabilities. <br/>If preferred, you can use the [Intune admin center](https://intune.microsoft.com) to view or manage devices. |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use the [Microsoft 365 admin center](https://admin.microsoft.com) or the [Azure AD portal](https://entra.microsoft.com) to view or manage user accounts. |
