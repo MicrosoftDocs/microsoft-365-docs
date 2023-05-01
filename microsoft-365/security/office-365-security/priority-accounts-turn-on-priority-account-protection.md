@@ -34,7 +34,8 @@ Priority accounts are targeted by attackers more often and are generally attacke
 
 ## Configure Priority account protection
 
-Priority account protection is turned on by default for pre-identified critical users. However, the security administrator of your organization can also turn on priority account protection by following these steps:
+Priority account protection is turned on by default for pre-identified critical users. 
+Before you begin, you need to be assigned permissions before you can configure priority account protection. You have to be a Global Administrator, Organization Management or Security Administrator.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **Priority account protection**. To go directly to the **Priority account protection** page, use <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
 
