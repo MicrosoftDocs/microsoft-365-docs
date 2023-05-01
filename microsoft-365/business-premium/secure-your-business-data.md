@@ -86,8 +86,6 @@ See the following articles:
 
 Every device is a possible attack avenue into your network and must be configured properly, even devices that are personally owned but used for work. Your security team and all employees can all take steps to protect devices. For example, all users can use MFA on their devices.
 
-Microsoft 365 Business Standard and Premium include [Microsoft 365 Apps](/deployoffice/about-microsoft-365-apps) (such as Word, PowerPoint, and Excel) that can be installed on computers, tablets, and phones. Installing the Microsoft 365 Apps helps ensure users get the latest features, new tools, security updates, and bug fixes. (PC users also get Access and Publisher.)
-
 In addition to the Microsoft 365 Apps, Microsoft 365 Business Premium includes advanced protection for devices with [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) and [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). 
 
 See the following articles:
@@ -127,12 +125,6 @@ See the following articles:
 
 The best way to collaborate and share securely is to use Microsoft Teams. With Microsoft Teams, all your files and communications are in a protected environment and aren't being stored in unsafe ways outside of it.
 
-Microsoft 365 Business Basic, Standard, and Premium include OneDrive and SharePoint.
-
-Microsoft 365 Business Premium also includes:
-
-- Defender for Office 365 Plan 1, with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) for Teams, SharePoint, and OneDrive
-- [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection), with capabilities to discover, classify, protect, and govern sensitive information.
 
 See the following articles: 
 
@@ -151,23 +143,47 @@ See the following articles:
 
 ## 7. Set sharing settings for SharePoint and OneDrive files and folders
 
-Your default sharing levels for SharePoint and OneDrive might be set to a more permissive level than you should use. We recommend reviewing and if necessary, changing the default settings to better protect your business. Grant people only the access they need to do their jobs. See: <br/>- [Set sharing settings for SharePoint and OneDrive](m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)<br/>- [Sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) | *Use SharePoint and OneDrive, with Safe Links, Safe Attachments, sensitivity labels, and DLP.* | *Use SharePoint and OneDrive.* |  *Use SharePoint and OneDrive.* |
+Your default sharing levels for SharePoint and OneDrive might be set to a more permissive level than you should use. We recommend reviewing and if necessary, changing the default settings to better protect your business. Grant people only the access they need to do their jobs. 
+
+Microsoft 365 Business Basic, Standard, and Premium include OneDrive and SharePoint.
+
+Microsoft 365 Business Premium also includes:
+
+- Defender for Office 365 Plan 1, with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) for Teams, SharePoint, and OneDrive
+- [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection), with capabilities to discover, classify, protect, and govern sensitive information.
+
+See the following articles: 
+
+- [Set sharing settings for SharePoint and OneDrive](m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
+- [Sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) |  |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) |  | 
-| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) |  |
+| [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive, with Safe Links, Safe Attachments, sensitivity labels, and DLP. |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use SharePoint and OneDrive.<br/>(*Defender for Office 365 can be added on*) |
 
 ## 8. Use Microsoft 365 Apps on devices
 
-Outlook and Microsoft 365 Apps (also referred to as Office apps) enable people to work productively and more securely across devices. Start a document on one device, and pick it up later on another device. Instead of sending files as email attachments, you can share links to documents that are stored in SharePoint or OneDrive.See: <br/>- [Install Microsoft 365 Apps on all devices](m365bp-install-office-apps.md).<br/>- [Train your users on Microsoft 365](https://support.microsoft.com/topic/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)<br/>- [How Safe Links works in Microsoft 365 Apps](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps)<br/>- [Sensitivity bar in Microsoft 365 Apps](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-bar)| *Use Outlook and Web, mobile, and desktop versions of Microsoft 365 Apps, with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps) and [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-office-apps).* | *Use Outlook and Web/mobile/desktop versions of Microsoft 365 Apps.* | *Use Outlook and Web/mobile versions of Microsoft 365 Apps.* | 
+Outlook and Microsoft 365 Apps (also referred to as Office apps) enable people to work productively and more securely across devices. Start a document on one device, and pick it up later on another device. Instead of sending files as email attachments, you can share links to documents that are stored in SharePoint or OneDrive.
+
+Microsoft 365 Business Basic, Standard, and Premium include Outlook and Web/mobile versions of [Microsoft 365 Apps](/deployoffice/about-microsoft-365-apps) (such as Word, PowerPoint, and Excel). 
+
+Microsoft 365 Business Standard and Premium include desktop versions of Microsoft 365 Apps that can be installed on computers, tablets, and phones. Installing the Microsoft 365 Apps helps ensure users get the latest features, new tools, security updates, and bug fixes. (PC users also get Access and Publisher.)
+
+Microsoft 365 Business Premium also includes [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) (with Safe Links and Safe Attachments), and [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection) (with sensitivity labels).
+
+See the following articles: 
+
+- [Install Microsoft 365 Apps on all devices](m365bp-install-office-apps.md).
+- [Train your users on Microsoft 365](https://support.microsoft.com/topic/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)
+- [How Safe Links works in Microsoft 365 Apps](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps)
+- [Sensitivity bar in Microsoft 365 Apps](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-bar) 
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) |  |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) |  | 
-| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) |  |
+| [Microsoft 365 Business Premium](index.md) | Use Outlook and Web, mobile, and desktop versions of Microsoft 365 Apps, with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps) and [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-office-apps). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | Use Outlook and Web/mobile/desktop versions of Microsoft 365 Apps. | 
+| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Web/mobile versions of Microsoft 365 Apps. |
 
 ## 9. Manage calendar sharing for your business
 
