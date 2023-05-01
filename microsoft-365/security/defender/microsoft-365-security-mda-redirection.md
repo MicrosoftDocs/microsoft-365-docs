@@ -11,8 +11,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dacurwin
-author: dcurwin
+ms.author: bagol
+author: batamig
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
