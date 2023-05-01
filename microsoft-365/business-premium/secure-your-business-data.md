@@ -36,13 +36,15 @@ This article lists the top 10 ways to secure your data with Microsoft 365 for bu
 
 ## 1. Use multi-factor authentication
 
-[Multi-factor authentication](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent bad actors from taking over your account if they know your password. To help simplify the process of enabling MFA, [security defaults in Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) are available in Microsoft 365 Business Basic, Standard, and Premium. Microsoft 365 Business Premium also includes Azure AD Premium P1, which enables you to set up and configure Conditional Access policies instead of security defaults, for more stringent requirements.
+[Multi-factor authentication](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent bad actors from taking over your account if they know your password. To help simplify the process of enabling MFA, [security defaults in Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) are available in Microsoft 365 Business Basic, Standard, and Premium. 
+
+Microsoft 365 Business Premium also includes Azure AD Premium P1, which enables you to set up and configure Conditional Access policies instead of security defaults, for more stringent requirements.
 
 [Turn on multi-factor authentication](m365bp-conditional-access.md).
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use security defaults or Conditional Access.  |
+| [Microsoft 365 Business Premium](index.md) | Use either security defaults or Conditional Access.  |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use security defaults. | 
 
 
@@ -66,12 +68,12 @@ Preset security policies save time by applying recommended spam, anti-malware, a
 
 [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) includes preset security policies for advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments. Microsoft 365 Business Premium includes Defender for Office 365 Plan 1.
 
-See [Preset security policies](../security/office-365-security/preset-security-policies.md) and [Protect against malware and other cyberthreats](m365bp-increase-protection.md).
+See [Assign preset security policies to users](../security/office-365-security/preset-security-policies.md#assign-preset-security-policies-to-users) and [Protect against malware and other cyberthreats](m365bp-increase-protection.md).
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use preset security policies for EOP and Defender for Office 365. |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use [preset security policies in EOP](../security/office-365-security/preset-security-policies.md).<br/>(*Defender for Office 365 can be added on*.)  |  
+| [Microsoft 365 Business Premium](index.md) | Use Standard or Strict protection preset security policies in EOP and Defender for Office 365 Plan 1. |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Standard or Strict protection preset security policies in EOP.<br/>(*Defender for Office 365 can be added on*.)  |  
 
 ## 4. Protect all devices
 
