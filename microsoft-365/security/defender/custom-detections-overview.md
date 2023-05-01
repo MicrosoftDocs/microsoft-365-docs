@@ -20,6 +20,7 @@ ms.collection: m
     - m365-security
     - tier2
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Custom detections overview

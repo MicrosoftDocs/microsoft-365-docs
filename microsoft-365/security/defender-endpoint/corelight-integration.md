@@ -18,6 +18,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 11/22/2021
 ---
 
 # Enable Corelight as data source in Microsoft Defender for Endpoint

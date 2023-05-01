@@ -3,8 +3,9 @@ title: "Microsoft 365 feature descriptions"
 ms.author: office365servicedesc
 author: pebaum
 manager: scotv
+ms.date: 06/18/2022
 audience: ITPro
-ms.topic: reference
+ms.topic: conceptual
 f1.keywords:
 - 'microsoft-365-and-office-365-general-information'
 ms.service: microsoft-365-business

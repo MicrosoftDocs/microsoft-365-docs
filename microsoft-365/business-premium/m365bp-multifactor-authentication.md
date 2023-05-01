@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 10/18/2022
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
@@ -39,4 +39,4 @@ When MFA is enforced, the authenticator app serves as a second form of authentic
 
 ## Next objective
 
-Proceed to [install Microsoft 365 apps](m365bp-install-office-apps.md).
+Proceed to [install Microsoft 365 Apps](m365bp-install-office-apps.md).

@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 09/15/2022
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - tier1
 description: "The Microsoft 365 admin center lets you manage some Microsoft Intune roles, which map to business functions and give permissions to do specific tasks."
@@ -20,7 +20,7 @@ description: "The Microsoft 365 admin center lets you manage some Microsoft Intu
 
 Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to any users in your organization using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. Given this, these roles are only a subset of all the roles available in the Intune admin center, which includes additional roles specific to Intune itself.
 
-Before adding specific Intune roles, roles must be assigned in Azure AD. To see these roles, choose **Endpoint Manager > Tenant administration > Roles > All roles >**. You can manage the role on the following pages:
+Before adding specific Intune roles, roles must be assigned in Azure AD. To see these roles, sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > Tenant administration > Roles > All roles >**. You can manage the role on the following pages:
 
 - Properties: The name, description, permissions, and scope tags for the role.
 - Assignments: A list of role assignments defining which users have access to which users or devices. A role can have multiple assignments, and a user can be in multiple assignments.
@@ -34,7 +34,7 @@ To create, edit, or assign roles, your account must have one of the following pe
 - **Global Administrator**
 - **Intune Service Administrator** (also known as **Intune Administrator** but not to be confused with the built-in **Intune Role Administrator** role.)
 
-Find more information on [Azure Active Directory roles and RBAC](/azure/active-directory/roles/permissions-reference.md).
+Find more information on [Azure Active Directory roles and RBAC](/azure/active-directory/roles/permissions-reference).
 
 ## Microsoft Intune built-in roles
 
@@ -64,7 +64,7 @@ As with built-in roles, in order to create, edit, or assign roles, your account 
 
 To create a custom role:
 
-1. In the Microsoft Endpoint Manager admin center, choose **Tenant administration > Roles > All roles > Create**.
+1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles > Create**.
 
 1. On the **Basics** page, enter a name and description for the new role, then choose **Next**.
 
@@ -76,7 +76,7 @@ To create a custom role:
 
 To copy a role:
 
-1. In the Microsoft Endpoint Manager admin center, choose **Tenant administration > Roles > All roles >** select the checkbox for a role in the list > **Duplicate**.
+1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles >** select the checkbox for a role in the list > **Duplicate**.
 
 1. On the **Basics** page, enter a name. Make sure to use a unique name.
 
@@ -94,9 +94,9 @@ You can assign a built-in or custom role to an Intune user. To create, edit, or 
 - **Global Administrator**
 - **Intune Service Administrator** (also known as **Intune Administrator** but not to be confused with the built-in **Intune Role Administrator** role.)
 
-1. In the Microsoft Endpoint Manager admin center, choose **Tenant administration > Roles > All roles**.
+1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles**.
 
-1. On the **Endpoint Manager roles - All roles** blade, choose the built-in role you want to assign > Assignments > + Assign.
+1. Choose the built-in role you want to assign > Assignments > + Assign.
 
 1. On the **Basics** page, enter an Assignment name and optional Assignment description, and then choose **Next**.
 

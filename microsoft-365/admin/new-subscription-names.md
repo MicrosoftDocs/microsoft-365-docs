@@ -3,8 +3,9 @@ title: "Office 365 is now Microsoft 365"
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.date: 05/13/2020
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:

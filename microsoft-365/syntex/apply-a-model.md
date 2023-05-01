@@ -4,8 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 07/01/2022
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -19,13 +20,11 @@ description: Learn how to apply a published a model to a SharePoint document lib
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
 
 </br>
---->
 
 After you train an unstructured document processing model, train and publish a freeform or structured document processing model, or create a prebuilt model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
 
@@ -140,4 +139,3 @@ To run the flow:
 [Discover other trained models](discover-other-trained-models.md)
 
 [Choose the view in a document library](choose-library-view.md)
-

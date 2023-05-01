@@ -1,9 +1,9 @@
 ---
 title: Use the Frontline Worker onboarding wizard to get your frontline workforce up and running
-author: lanachin
-ms.author: v-lanachin
+author: daisyfell
+ms.author: daisyfeller
 ms.reviewer: aaglick
-manager: samanro
+manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -18,10 +18,13 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/28/2022
+ms.date: 04/24/2023
 ---
 
 # Use the Frontline Worker onboarding wizard to get your frontline workforce up and running
+
+>[!IMPORTANT]
+>The Frontline Worker onboarding wizard is no longer available starting April 24, 2023.
 
 ## Overview
 
@@ -42,7 +45,7 @@ Check out this short video for an overview of how to run the wizard to onboard y
 
 ## Run the wizard
 
-1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**. Go to the **Apps and email** section, and then under **Get your frontline workforce up and running**, select **View**. Here, you can learn more about the capabilities that Microsoft 365 for frontline workers offers.
+1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**. Go to the **Apps and email** section, and then under **Get your frontline workforce up and running**, select **Video**. Here, you can learn more about the capabilities that Microsoft 365 for frontline workers offers.
 
     :::image type="content" source="media/flw-onboarding-wizard-get-started.png" alt-text="Screenshot of the details page for the Frontline Worker onboarding experience in the Microsoft 365 admin center" lightbox="media/flw-onboarding-wizard-get-started.png":::
 

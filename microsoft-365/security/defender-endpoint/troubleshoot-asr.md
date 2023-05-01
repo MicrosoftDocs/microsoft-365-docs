@@ -8,8 +8,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: Dansimp
+ms.author: dansimp
 ms.date: 03/27/2019
 ms.reviewer:
 manager: dansimp
@@ -48,7 +48,7 @@ There are four steps to troubleshooting these problems:
 
 ## Confirm prerequisites
 
-Attack surface reduction rules will only work on devices with the following conditions:
+Attack surface reduction rules only work on devices with the following conditions:
 
 - Endpoints are running Windows 10 Enterprise, version 1709 (also known as the Fall Creators Update).
 

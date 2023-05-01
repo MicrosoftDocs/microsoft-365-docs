@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
+ms.date: 07/08/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -23,19 +24,19 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of the Users page in Microsoft 365 Lighthouse 
 
-Microsoft 365 Lighthouse lets you manage users across customer tenant accounts by selecting any of the links under **Users** in the left navigation pane. From the Users page, you can search for users and assess and act on the security state of your user accounts. You can also view insights into risky users and the status of multifactor authentication and self-service password reset.  
+Microsoft 365 Lighthouse lets you manage users across customer tenant accounts by selecting any of the links under **Users** in the left navigation pane. From the Users page, you can search for users and assess and act on the security state of your user accounts. You can also view insights into risky users and the status of multifactor authentication and self-service password reset (SSPR).  
   
 ## Account management page  
   
 On the Account management page, you can quickly search across tenants for specific users and perform common user management tasks like updating user account information, resetting passwords, assigning licenses, and managing a user's groups, mailbox, or OneDrive. You can also view inactive accounts and take the appropriate security actions and reclaim unused licenses.
 
-:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" alt-text="Screenshot of the Search and Inactive users page.":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" alt-text="Screenshot of the Account management page." lightbox="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png":::
 
-## Risky Users page
+## Risky users page
 
-The Risky Users page shows user accounts across your tenants that have been flagged for risky behavior. Select any of the users to view more information on a detected risk or to mitigate a risk by resetting a user's password or blocking sign-in. For more information about risk types and detection, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
+The Risky users page shows user accounts across your tenants that have been flagged for risky behavior. Select any of the users to view more information on a detected risk or to mitigate a risk by resetting a user's password or blocking sign-in. For more information about risk types and detection, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
 
-The Risky Users page also includes the following options:
+The Risky users page also includes the following options:
 - **Export:** Select to export device compliance data to an Excel comma-separated values (.csv) file.
 - **Refresh:** Select to retrieve the most current device compliance data.
 - **Confirm user(s) compromised:** Select to confirm the user was compromised.
@@ -43,19 +44,19 @@ The Risky Users page also includes the following options:
 - **Reset password:** Select to change or reset user password.
 - **Block Sign-in:** Select to prevent anyone from signing in as this user.
 
-:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-risky-users-tab.png" alt-text="Screenshot of the Risky users page.":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-risky-users-tab.png" alt-text="Screenshot of the Risky users page." lightbox="../media/m365-lighthouse-users-page-overview/users-risky-users-tab.png":::
 
 ## Multifactor Authentication page
 
 The Multifactor Authentication page provides detailed information on the status of multifactor authentication (MFA) enablement across your tenants. Select any tenant in the list to see more details for that tenant, including which Conditional Access policies requiring MFA are already configured and which users haven't yet registered for MFA.
 
-:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png" alt-text="Screenshot of the Multifactor Authentication page.":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png" alt-text="Screenshot of the Multifactor Authentication page." lightbox="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png":::
 
 ## Password reset page
 
-The Password reset page shows detailed information on the status of self-service password reset enablement across your tenants. It also provides insights into users who are enabled but still need to register before they can reset their password on their own.
+The Password reset page shows detailed information on the status of SSPR enablement across your tenants. It also provides insights into users who have SSPR enabled but still need to register before they can reset their password on their own.
 
-:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="Screenshot of the Password reset page.":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="Screenshot of the Password reset page." lightbox="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png":::
 
 ## Related content
 

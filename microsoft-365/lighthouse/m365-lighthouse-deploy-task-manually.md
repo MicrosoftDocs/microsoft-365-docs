@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: shcallaw, kywirpel
+ms.date: 11/29/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -40,7 +41,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 ## Deploy a task manually
 
-1. In the left navigation pane in Lighthouse, select **Tenant.**
+1. In the left navigation pane in Lighthouse, select **Tenant**.
 
 2. From the tenant list, select the tenant you want to view.
 
@@ -48,7 +49,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 4. From the task list, select the task you want to deploy manually.
 
-5. From the task details pane, select **Mark as compliant.**
+5. From the task details pane, select **Mark as compliant**.
 
 6. In the confirmation dialog box, type your name as it appears within Lighthouse.
 
@@ -58,7 +59,7 @@ The task status will be updated to **Compliant**, and the Task Details pane will
 
 If the task status changes and is no longer compliant, you can reset the status to **Not compliant**. To do this:
 
-1. In the left navigation pane in Lighthouse, select **Tenant.**
+1. In the left navigation pane in Lighthouse, select **Tenant**.
 
 2. From the tenant list, select the tenant you want to view.
 

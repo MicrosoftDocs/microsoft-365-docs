@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 10/06/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,7 +17,6 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
 description: Use a local script to deploy the configuration package on devices so that they are onboarded to the service.
-
 ---
 
 # Onboard Windows 10 and Windows 11 devices using a local script
