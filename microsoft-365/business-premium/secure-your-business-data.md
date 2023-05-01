@@ -102,14 +102,15 @@ See the following articles:
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | Use MFA. <br/>Install Microsoft 365 Apps on devices.<br/>(*Defender for Business can be added on*) | 
 | [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use MFA.<br/>(*Defender for Business can be added on*) |
 
-
 ## 5. Train everyone on email best practices
 
 Email can contain malicious attacks cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on humans making consistently good decisions with those communications. 
 
 Train everyone to know what to watch for spam or junk mail, phishing attempts, spoofing, and malware in their email. 
 
-Microsoft 365 Basic, Standard, and Premium include [EOP](../security/office-365-security/eop-about.md). Microsoft 365 Business Premium also includes [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), which provides more advanced protection for email and collaboration, with advanced anti-phishing, anti-spam, and anti-malware protection, Safe Attachments, and Safe Links.
+Microsoft 365 Basic, Standard, and Premium include [EOP](../security/office-365-security/eop-about.md), which provides anti-spam, anti-malware, and anti-phishing protection for email hosted in Exchange Online. 
+
+Microsoft 365 Business Premium also includes [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), which provides more advanced protection for email and collaboration, with advanced anti-phishing, anti-spam, and anti-malware protection, Safe Attachments, and Safe Links.
 
 See the following articles:
 
@@ -127,6 +128,9 @@ See the following articles:
 
 The best way to collaborate and share securely is to use Microsoft Teams. With Microsoft Teams, all your files and communications are in a protected environment and aren't being stored in unsafe ways outside of it.
 
+Microsoft 365 Business Basic, Standard, and Premium include Microsoft Teams.
+
+Microsoft 365 Business Premium also includes Defender for Office 365 Plan 1 (with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about#safe-links-settings-for-microsoft-teams) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about)) and [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection) (with capabilities to discover, classify, protect, and govern sensitive information).
 
 See the following articles: 
 
@@ -191,6 +195,10 @@ See the following articles:
 
 You can help people in your organization share their calendars appropriately for better collaboration. You can manage what level of detail they can share, such as by limiting the details that are shared to free/busy times only.
 
+Microsoft 365 Business Basic, Standard, and Premium include Outlook and Exchange Online.
+
+Microsoft 365 Business Premium also includes [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection), and that includes DLP policies to protect sensitive information.
+
 See the following articles:
 
 - [Manage calendar sharing](m365bp-increase-protection.md#manage-calendar-sharing) 
@@ -204,6 +212,10 @@ See the following articles:
 ## 10. Maintain your environment
 
 After your initial setup and configuration of Microsoft 365 for business is complete, your organization needs a maintenance and operations plan. As employees come and go, you'll need to add or remove users, reset passwords, and maybe even reset devices to factory settings. You'll also want to make sure people have only the access they need to do their jobs.
+
+Microsoft 365 Business Basic, Standard, and Premium include the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com) for managing user accounts.
+
+Microsoft 365 Business Premium also includes the [Microsoft 365 Defender portal](https://security.microsoft.com) and the [Microsoft 365 Purview compliance portal](https://compliance.microsoft.com/) for viewing and managing security & compliance capabilities.
 
 See the following articles:
 
