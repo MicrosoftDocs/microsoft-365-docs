@@ -62,7 +62,7 @@ See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) <br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use the [Azure AD portal](https://entra.microsoft.com) or the [Microsoft 365 admin center](https://admin.microsoft.com) to manage user accounts. |
+| [Microsoft 365 Business Premium](index.md) <br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use the [Azure AD portal](https://entra.microsoft.com) or the [Microsoft 365 admin center](https://admin.microsoft.com). |
 
 ## 3. Use preset security policies
 
