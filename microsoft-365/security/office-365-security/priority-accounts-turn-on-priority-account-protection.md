@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 1/31/2023
+ms.date: 5/1/2023
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -34,8 +34,12 @@ Priority accounts are targeted by attackers more often and are generally attacke
 
 ## Configure Priority account protection
 
-Priority account protection is turned on by default for pre-identified critical users. 
-Before you begin, you need to be assigned permissions before you can configure priority account protection. You have to be a Global Administrator, Organization Management or Security Administrator.
+Priority account protection is turned on by default for pre-identified critical users.
+
+You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+
+- [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** or **Security Administrator** role groups.
+- [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator** or **Security Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **Priority account protection**. To go directly to the **Priority account protection** page, use <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
 
@@ -71,7 +75,9 @@ For more information, see [User tags in Microsoft Defender for Office 365](user-
 
 > [!NOTE]
 > Currently, you can only apply user tags to mailbox users.
+>
 > Your organization can tag a maximum of 250 users using the Priority account tag.
+>
 > Each custom tag has a maximum of 10,000 users per tag and your organization can create up to 500 custom tags.
 
 ## Review differentiated protection from priority account protection
