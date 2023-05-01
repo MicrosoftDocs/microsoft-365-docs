@@ -48,7 +48,9 @@ This article lists the top 10 ways to secure your data with Microsoft 365 for bu
 
 ## 2. Protect your administrator accounts
 
-Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. You'll need to set up and manage the right number of admin and user accounts for your business. We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs. You can use either the Microsoft 365 admin center or the Azure AD portal to set up and manage your admin accounts.
+Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. You'll need to set up and manage the right number of admin and user accounts for your business. We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs. 
+
+You can use either the Microsoft 365 admin center or the Azure AD portal to set up and manage your admin accounts.
 
 [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
@@ -58,18 +60,26 @@ Administrator accounts (also called admins) have elevated privileges, making the
 
 ## 3. Use preset security policies
 
-Preset security policies save time by applying recommended spam, anti-malware, and anti-phishing policies to users all at once. [Exchange Online Protection](../security/office-365-security/eop-about.md) (EOP) includes preset security policies for anti-spam, anti-malware, and anti-phishing. EOP is included in Microsoft 365 Business Basic, Standard, and Premium. [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) includes preset security policies for advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments. Microsoft 365 Business Premium includes Defender for Office 365 Plan 1.
+Preset security policies save time by applying recommended spam, anti-malware, and anti-phishing policies to users all at once. 
+
+[Exchange Online Protection](../security/office-365-security/eop-about.md) (EOP) includes preset security policies for anti-spam, anti-malware, and anti-phishing. EOP is included in Microsoft 365 Business Basic, Standard, and Premium. 
+
+[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) includes preset security policies for advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments. Microsoft 365 Business Premium includes Defender for Office 365 Plan 1.
 
 See [Preset security policies](../security/office-365-security/preset-security-policies.md) and [Protect against malware and other cyberthreats](m365bp-increase-protection.md).
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use preset security policies for anti-spam, anti-malware, and anti-phishing in [Exchange Online Protection](../security/office-365-security/eop-about.md) (EOP).<br/>Use preset security policies for advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments in . |
+| [Microsoft 365 Business Premium](index.md) | Use preset security policies for EOP and Defender for Office 365. |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use [preset security policies in EOP](../security/office-365-security/preset-security-policies.md).<br/>(*Defender for Office 365 can be added on*.)  |  
 
 ## 4. Protect all devices
 
-Every device is a possible attack avenue into your network and must be configured properly, even those devices that are personally owned but used for work. Your security team and employees can all take steps to protect devices. For example, all users can use MFA on their devices.
+Every device is a possible attack avenue into your network and must be configured properly, even those devices that are personally owned but used for work. Your security team and employees can all take steps to protect managed and unmanaged devices. For example, all users can use MFA on their devices.
+
+Microsoft 365 Business Standard and Premium include Microsoft 365 Apps that can be installed on computers, tablets, and phones. Installing the Microsoft 365 Apps helps ensure users get the latest features, new tools, security updates, and bug fixes. (PC users also get Access and Publisher.)
+
+Microsoft 365 Business Premium also includes advanced protection for devices with Microsoft Defender for Business and Microsoft Intune. 
 
 See:
 
