@@ -23,7 +23,7 @@ search.appverid:
 description: "Learn best practices to protect your business from ransomware, phishing, and malicious URLs or attachments with Microsoft 365 for business."
 ---
 
-# Top 10 ways to secure your data with Microsoft 365 for business
+# Secure your data with Microsoft 365 for business
 
 > [!TIP]
 > **This article is for small and medium-sized businesses who have up to 300 users**. 
@@ -39,6 +39,19 @@ Microsoft 365 Business Basic, Standard, and Premium include antiphishing, antisp
 Microsoft 365 Business Premium includes even more security capabilities, such as advanced threat protection for devices (also referred to as endpoints), email, and collaboration, and information protection. 
 
 For more details about what each plan includes, see [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
+
+## Top 10 ways to secure your business data
+
+1. [Use multi-factor authentication](#1-use-multi-factor-authentication).
+2. [Protect your administrator accounts](#2-protect-your-administrator-accounts).
+3. [Use preset security policies](#3-use-preset-security-policies).
+4. [Protect all devices](#4-protect-all-devices).
+5. [Train everyone on email best practices](#5-train-everyone-on-email-best-practices).
+6. [Use Microsoft Teams for collaboration and sharing](#6-use-microsoft-teams-for-collaboration-and-sharing).
+7. [Set sharing settings for SharePoint and OneDrive files and folders](#7-set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
+8. [Use Microsoft 365 Apps on devices](#8-use-microsoft-365-apps-on-devices).
+9. [Manage calendar sharing for your business](#9-manage-calendar-sharing-for-your-business).
+10. [Maintain your environment](#10-maintain-your-environment).   
 
 ## 1. Use multi-factor authentication
 
